@@ -138,3 +138,18 @@ def test_at_most_one_order_a_day():
     b = bars(day)
     o = price(detect(b), b, PriceConfig(entry_kind="fail_fade", side_rule="either"))
     assert len(o) <= 1
+
+
+def test_the_evening_before_cannot_break_a_range_that_has_not_formed():
+    """A trading date opens at 18:00 ET the day before, and those bars have
+    minutes_from_midnight >= 09:35 too. They used to count as "after the
+    range": a 19:00 ET close above 140 and back below it registered as a
+    failed upside break of a range that only exists from 09:35 next morning.
+    """
+    evening = bars([(150.0, 150.0, 150.0, 150.0), (130.0, 130.0, 130.0, 130.0)],
+                   start="2024-03-04 19:00")
+    morning = bars(opening() + flat(120.0, 30))
+    s = detect(pd.concat([evening, morning], ignore_index=True))
+    assert len(s) == 1 and s.or_high[0] == 140.0
+    assert pd.isna(s.close_up_ts[0]) and pd.isna(s.fail_up_ts[0])
+    assert pd.isna(s.touch_up_ts[0])

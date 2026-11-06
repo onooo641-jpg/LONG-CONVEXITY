@@ -175,7 +175,12 @@ def generate_orders(df1m: pd.DataFrame, config: OR5Config | None = None) -> pd.D
         direction = rng["direction"]
         level = rng["high"] if direction > 0 else rng["low"]
 
-        after = day[minutes >= RANGE_END_MINUTE]
+        # After the range in time, not just by clock minute: the trading date's
+        # evening bars (from 18:00 ET the day before) also have minutes >= 09:35
+        # and come first. Same look-ahead as orb_family (ARTIFACT_CLASSES 5).
+        open_ts = day["ts"][(minutes >= OPEN_MINUTE) & (minutes < RANGE_END_MINUTE)]
+        after = day[(minutes >= RANGE_END_MINUTE)
+                    & (pd.DatetimeIndex(day["ts"]) > open_ts.iloc[-1])]
         deadline = minute_cutoff(day, config.trigger_deadline)
         if after.empty or deadline is None:
             continue

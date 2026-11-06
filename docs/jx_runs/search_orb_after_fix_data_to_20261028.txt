@@ -1,0 +1,41 @@
+2,811 sessions with an opening range
+
+900 combinations scored (22 profitable in development)
+
+development profit factor, across every combination tried:
+   median 0.82
+     90th 0.95
+     99th 1.02
+     best 1.06
+
+dev-to-oos rank correlation: +0.607   (900 combinations scored in both)
+  near zero means the ranking is noise and the winner is the luckiest draw
+
+top 8 by DEVELOPMENT profit factor, with what they then did out of sample:
+  entry        side   stop         body  exit  tgt  dev W  dev PF  oos W  oos PF   oos P&L
+  fail_fade    either height/1      0.4   645 1.00  52.5%    1.06  47.1%    0.84   -12,206
+  fail_fade    either fixed/25      0.4   720 1.00  53.1%    1.06  46.6%    0.79   -17,315
+  fail_fade    either fixed/25      0.4   645 1.00  51.9%    1.05  46.8%    0.80   -16,013
+  fail_fade    either height/1      0.4   645 0.75  58.6%    1.04  53.9%    0.82   -12,002
+  fail_fade    either fixed/25      0.4   960 1.00  51.5%    1.04  46.1%    0.79   -17,928
+  fail_fade    either height/1      0.4   720 1.00  52.8%    1.03  47.0%    0.83   -13,595
+  fail_fade    either fixed/25      0.0   720 1.00  52.4%    1.03  45.5%    0.76   -34,484
+  fail_fade    either fixed/25      0.0   960 1.00  51.8%    1.03  45.3%    0.76   -34,984
+
+profitable in BOTH periods: 0 of 900  (0.0%)
+
+by entry rule -- the share of each family profitable in BOTH periods:
+  entry             n   dev PF   oos PF   both>1
+  break_first     300     0.83     0.72     0.0%
+  break_retest    300     0.78     0.87     0.0%
+  fail_fade       300     0.86     0.74     0.0%
+
+fail_fade only -- what the payoff ratio buys and costs:
+   target   dev W   oos W  dev PF  oos PF  oos avg R   both>1
+     0.25   78.2%   75.4%    0.73    0.63     -0.069     0.0%
+     0.40   70.3%   67.3%    0.83    0.72     -0.071     0.0%
+     0.50   65.7%   62.0%    0.86    0.74     -0.080     0.0%
+     0.75   56.9%   53.0%    0.90    0.77     -0.086     0.0%
+     1.00   50.8%   46.6%    0.95    0.81     -0.083     0.0%
+
+profitable in development 2.4%, out of sample 9.4%; if the two were independent the joint rate would be 0.2%, and it is 0.0%

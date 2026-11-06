@@ -87,7 +87,13 @@ def detect(df1m: pd.DataFrame, config: DetectConfig | None = None) -> pd.DataFra
         opened, closed = float(window["open"].iloc[0]), float(window["close"].iloc[-1])
 
         cutoff = minute_cutoff(day, config.cutoff_minute)
-        after = day[(minutes >= RANGE_END_MINUTE)]
+        # After the range IN TIME, not by clock minute alone: a trading date
+        # opens at 18:00 ET the evening before, and those evening bars have
+        # minutes_from_midnight >= 09:35 too. Selecting on minutes let the
+        # previous evening "break" a range that forms the next morning --
+        # look-ahead on 53% of fail_fade trades (docs/ARTIFACT_CLASSES.md 5).
+        after = day[(minutes >= RANGE_END_MINUTE)
+                    & (pd.DatetimeIndex(day["ts"]) > window["ts"].iloc[-1])]
         after = after[pd.DatetimeIndex(after["ts"]) < cutoff] if cutoff is not None else after
         if after.empty:
             continue

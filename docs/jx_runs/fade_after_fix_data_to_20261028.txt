@@ -1,0 +1,7 @@
+selected  all  n= 1066 win 51.0% PF 0.99 avgR +0.019 net $   -2,964
+selected  dev  n=  771 win 52.5% PF 1.06 avgR +0.052 net $    9,242
+selected  oos  n=  295 win 47.1% PF 0.84 avgR -0.067 net $  -12,206
+unselectedall  n= 1855 win 50.4% PF 0.95 avgR +0.000 net $  -23,283
+unselecteddev  n= 1347 win 52.0% PF 1.01 avgR +0.034 net $    3,677
+unselectedoos  n=  508 win 46.1% PF 0.80 avgR -0.090 net $  -26,959
+recycling $900 LOCK_FIRST: 31591
