@@ -52,7 +52,8 @@ FORWARD_START = pd.Timestamp("2026-08-29", tz="UTC")
 BASELINE_START = pd.Timestamp("2024-01-01", tz="UTC")
 
 COLUMNS = ["date", "entry_et", "exit_et", "side", "entry", "stop", "target",
-           "contracts", "risk_points", "r_multiple", "net_pnl", "exit_reason"]
+           "contracts", "risk_points", "r_multiple", "net_pnl", "exit_reason",
+           "ambiguous"]
 
 
 def trade_rows(trades: pd.DataFrame) -> pd.DataFrame:
@@ -74,6 +75,7 @@ def trade_rows(trades: pd.DataFrame) -> pd.DataFrame:
         "target": f["target_price"].round(2), "contracts": f["contracts"].astype(int),
         "risk_points": f["risk_points"].round(2), "r_multiple": f["r_multiple"].round(3),
         "net_pnl": f["net_pnl"].round(2), "exit_reason": f["exit_reason"],
+        "ambiguous": f["ambiguous"],
     })
     return out[COLUMNS].reset_index(drop=True)
 
