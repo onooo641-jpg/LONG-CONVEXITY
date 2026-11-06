@@ -113,6 +113,19 @@ path), which is out of scope for a documentation/ledger replication pass. Not
 ported here; the next session that works on `bridge/live.py` should pull it in
 rather than re-deriving it.
 
+
+**Guard, ported 2026-11-07** (from commit 1a8802c on the other branch):
+`bridge/roundtrip.py`. `python -m bridge.live --roundtrip` places a one-lot
+buy limit 30% under the market, requires it in `ours(open_orders())`,
+cancels it, requires it gone, then writes `data/roundtrip_proof.json` keyed
+on account id and contract id. Without a matching proof, `--live` never ends
+the day clean: it stops at the flat time with exit 1, so the shutdown wrapper
+doesn't fire. The deadline sweep also treats an empty book as unreadable and
+cancels everything it sent. This covers the shutdown-path sites
+(`open_orders`, `open_positions`, the `ours()` contract-id filter) that the
+bar-feed preflight check does not. GO_LIVE step 4b. Four tests in
+`tests/test_live.py`.
+
 ## 4. One claim, two parameterisations, no label
 
 The same sentence in prose is backed by different settings in different
@@ -167,6 +180,6 @@ truncates the same way every time).
 |---|---|---|---|
 | 2026-09-06 | 1 | `cfddcfc`, all detectors | 1 |
 | 2026-09-09 | 2 | `7fa7f86`, engine fills | 1 |
-| 2026-11-06 | 3 | named; 0 observed, 5 sites listed. `open_orders`/`open_positions` sites implemented (round-trip proof) on the concurrent session's branch, not ported here. | 1 |
+| 2026-11-06 | 3 | named; 0 observed, 5 sites listed. `open_orders`/`open_positions` sites guarded by the round-trip proof (`bridge/roundtrip.py`, `python -m bridge.live --roundtrip`), ported here 2026-11-07. | 1 |
 | 2026-11-06 | 4 | `docs/GO_LIVE.md` net/cash conflation (this session); README "PF 0.876" (concurrent session) | 2 |
 | 2026-11-06 | 5 | `orb_family.detect` + `or5_retest`, found via a 19:53 forward-log entry on the concurrent session, ported here | 1 |
