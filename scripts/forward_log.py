@@ -51,8 +51,13 @@ FORWARD_START = pd.Timestamp("2026-08-29", tz="UTC")
 #: The out-of-sample period the forward result is compared against.
 BASELINE_START = pd.Timestamp("2024-01-01", tz="UTC")
 
+#: ``ambiguous`` is the engine's own flag: some held 1-minute bar spanned both
+#: stop and target, so the exit cannot be known from OHLC. It is not the same
+#: test as an ``*_ambiguous`` exit_reason (that one also needs the target edge
+#: cleared), so it is logged rather than inferred from exit_reason.
 COLUMNS = ["date", "entry_et", "exit_et", "side", "entry", "stop", "target",
-           "contracts", "risk_points", "r_multiple", "net_pnl", "exit_reason"]
+           "contracts", "risk_points", "r_multiple", "net_pnl", "exit_reason",
+           "ambiguous"]
 
 
 def trade_rows(trades: pd.DataFrame) -> pd.DataFrame:
@@ -74,6 +79,7 @@ def trade_rows(trades: pd.DataFrame) -> pd.DataFrame:
         "target": f["target_price"].round(2), "contracts": f["contracts"].astype(int),
         "risk_points": f["risk_points"].round(2), "r_multiple": f["r_multiple"].round(3),
         "net_pnl": f["net_pnl"].round(2), "exit_reason": f["exit_reason"],
+        "ambiguous": f["ambiguous"].astype(bool),
     })
     return out[COLUMNS].reset_index(drop=True)
 
