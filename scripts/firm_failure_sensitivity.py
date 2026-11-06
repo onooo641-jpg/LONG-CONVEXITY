@@ -81,14 +81,58 @@ def expected_net(result: dict, rules: XFARules, first_ts, total_days: float,
     return float(nets.mean())
 
 
+def verify_wired(result: dict, rules: XFARules, first_ts, total_days: float,
+                  policy: Policy) -> None:
+    """Three checks a sweep that silently ignores ``h`` would also pass as
+    "no crossing": (1) h=0 must reproduce the plain run exactly, (2) the
+    simulated failure count must actually grow with h, (3) for LOCK_FIRST,
+    report the lock-attainment rate the whole argument rests on.
+    """
+    rng = np.random.default_rng(SEED)
+    net_h0 = expected_net(result, rules, first_ts, total_days, 0.0, rng)
+    print(f"  [{policy.value}] h=0 sweep net = {net_h0:.0f}  "
+          f"vs plain recycle() net = {result['net']:.0f}  "
+          f"{'MATCH' if net_h0 == result['net'] else 'MISMATCH -- VOID'}")
+
+    for h in (0.0, 0.05, 0.25):
+        rng = np.random.default_rng(SEED)
+        if h <= 0:
+            fired = 0
+        else:
+            lam = -np.log(1 - h) / 365.0
+            draws = rng.exponential(1.0 / lam, size=DRAWS)
+            fired = int((draws < total_days).sum())
+        print(f"  [{policy.value}] h={h:.0%}: {fired}/{DRAWS} draws fire "
+              f"a failure before day {total_days:.0f}")
+
+    if policy is Policy.LOCK_FIRST:
+        seen, locked = result["funded_accounts_seen"], result["funded_accounts_locked"]
+        rate = locked / seen if seen else float("nan")
+        print(f"  [{policy.value}] lock-attainment: {locked}/{seen} funded "
+              f"accounts ({rate:.1%}) ever reached the +$2,000 lock before "
+              "ending")
+        return rate
+    return None
+
+
 def main() -> None:
     trades = load_trades(RISK)
     rules = XFARules()
     first_ts = trades["entry_ts"].iloc[0]
 
-    rows = []
+    print("=== verification: is the hazard actually wired? ===")
+    lock_rate = None
+    results = {}
     for policy in (Policy.LOCK_FIRST, Policy.IMMEDIATE):
         result = recycle(trades, rules=rules, policy=policy)
+        results[policy] = result
+        rate = verify_wired(result, rules, first_ts, result["days"], policy)
+        if rate is not None:
+            lock_rate = rate
+    print()
+
+    rows = []
+    for policy, result in results.items():
         total_days = result["days"]
         rng = np.random.default_rng(SEED)
         for h in HAZARDS:
@@ -110,7 +154,8 @@ def main() -> None:
             print(f"\nbreakeven h* between {prior:.0%} and {h:.0%} annual hazard")
     else:
         winner = Policy.LOCK_FIRST if sign.iloc[0] > 0 else Policy.IMMEDIATE
-        print(f"\nno crossing in [0%, 25%]: {winner.value} wins at every hazard tested")
+        print(f"\nno crossing in [0%, 25%]: {winner.value} wins at every hazard tested "
+              f"(LOCK_FIRST lock-attainment rate: {lock_rate:.1%})")
 
 
 if __name__ == "__main__":

@@ -243,6 +243,13 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
     combine_busts = funded_busts = resets = activations = payouts = 0
     retired_combine = retired_funded = 0
     bust_streak = worst_streak = 0
+    # Diagnostic for the LOCK_FIRST mechanism, not a strategy parameter: does
+    # a funded account's peak ever reach mll_locks_at before that account
+    # ends (bust, retirement, or run end)? Tracked regardless of policy so a
+    # caller can ask "how often does the thing LOCK_FIRST is betting on
+    # actually happen" independent of which policy produced this run.
+    account_locked = False
+    funded_accounts_seen = funded_accounts_locked = 0
     cash = gross = 0.0
     first = trades["entry_ts"].iloc[0]
     last_cash_ts, worst_dry = first, 0.0
@@ -269,7 +276,9 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
                 if funded:
                     retired_funded += 1
                     funded_days += (exit_ts - funded_since).total_seconds() / 86400
-                    funded, funded_since = False, None
+                    if account_locked:
+                        funded_accounts_locked += 1
+                    funded, funded_since, account_locked = False, None, False
                 else:
                     retired_combine += 1
                 resets += 1
@@ -281,11 +290,17 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
 
         account.balance += day
         account.peak = max(account.peak, account.balance)
+        if funded:
+            account_locked = account_locked or (
+                rules.mll_locks_at is not None
+                and account.peak >= rules.mll_locks_at)
 
         if not funded:
             if account.balance >= rules.profit_target:
                 activations += 1
                 funded, account, funded_since = True, _Account(), exit_ts
+                funded_accounts_seen += 1
+                account_locked = False
                 mark(exit_ts, "passed", at)
                 continue
             if account.balance <= account.floor(rules.loss_limit, None):
@@ -305,20 +320,21 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
                                             rules.mll_locks_at):
             funded_busts += 1
             funded_days += (exit_ts - funded_since).total_seconds() / 86400
+            if account_locked:
+                funded_accounts_locked += 1
             # A dead XFA sends you back through an evaluation, which is a
             # reset against the same subscription.
             resets += 1
             bust_streak += 1
             worst_streak = max(worst_streak, bust_streak)
-            funded, account, funded_since = False, _Account(), None
+            funded, account, funded_since, account_locked = (
+                False, _Account(), None, False)
             mark(exit_ts, "funded_bust", at)
             continue
 
-        locked = (rules.mll_locks_at is not None
-                  and account.peak >= rules.mll_locks_at)
         eligible = (account.winning_days >= rules.winning_days_required
                     and account.balance > 0
-                    and (locked or policy is Policy.IMMEDIATE))
+                    and (account_locked or policy is Policy.IMMEDIATE))
         if eligible:
             amount = min(account.balance * rules.payout_share, rules.payout_cap)
             # The balance falls; the high-water mark the limit trails does not.
@@ -337,6 +353,8 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
     end = trades["exit_ts"].iloc[-1]
     if funded and funded_since is not None:
         funded_days += (end - funded_since).total_seconds() / 86400
+        if account_locked:
+            funded_accounts_locked += 1
     worst_dry = max(worst_dry, (end - last_cash_ts).total_seconds() / 86400)
 
     days = (end - first).total_seconds() / 86400
@@ -355,6 +373,13 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
         "funded_earned": activations,
         "funded_busts": funded_busts,
         "funded_days": funded_days,
+        # Mechanism check for LOCK_FIRST: of every funded-account lifetime
+        # (ended by bust, retirement, or run end), how many ever reached
+        # mll_locks_at before ending? Tracked under any policy -- payouts
+        # change the balance path (and so the peak path) between policies,
+        # so this is NOT policy-invariant and should be read per-run.
+        "funded_accounts_seen": funded_accounts_seen,
+        "funded_accounts_locked": funded_accounts_locked,
         "payouts": payouts,
         "gross_payout": gross,
         "cash": cash,
