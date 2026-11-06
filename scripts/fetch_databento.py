@@ -163,7 +163,10 @@ def main(argv=None) -> int:
     D.RAW_DIR.mkdir(parents=True, exist_ok=True)
     df.to_parquet(out, compression="zstd", index=False)
     print(f"wrote {out}")
-    print("\nRotate this API key now: it was pasted into a chat transcript.")
+    if not os.environ.get("GITHUB_ACTIONS"):
+        # A CI secret was never pasted anywhere; this warning is for the
+        # interactive case only.
+        print("\nRotate this API key now: it was pasted into a chat transcript.")
     return 0
 
 

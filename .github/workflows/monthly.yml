@@ -1,0 +1,59 @@
+# Monthly: pull new NQ bars, extend the forward log, re-run tests and checks,
+# commit the results. See scripts/monthly_update.py.
+#
+# Needs one repository secret: DATABENTO_API_KEY
+#   GitHub -> this repo -> Settings -> Secrets and variables -> Actions
+#   -> New repository secret. Without it the run re-checks stored data only.
+#
+# Cost: Databento quoted $0.08 and $0.12 for the last two monthly pulls. The
+# fetch aborts before downloading if the quote is over $1.00.
+
+name: monthly update
+
+on:
+  schedule:
+    - cron: "17 3 2 * *"     # 03:17 UTC on the 2nd of each month (11:17 MYT)
+  workflow_dispatch: {}       # "Run workflow" button for a manual run
+
+permissions:
+  contents: write
+
+concurrency:
+  group: monthly-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+
+      - name: Install
+        run: uv sync --extra dev --extra data
+
+      - name: Update
+        env:
+          DATABENTO_API_KEY: ${{ secrets.DATABENTO_API_KEY }}
+        run: |
+          if [ -n "$DATABENTO_API_KEY" ]; then
+            uv run python scripts/monthly_update.py
+          else
+            echo "::warning::DATABENTO_API_KEY not set; re-checking stored data only"
+            uv run python scripts/monthly_update.py --skip-fetch
+          fi
+
+      - name: Commit results
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/raw docs/forward_log.csv docs/jx_runs/monthly_latest.txt
+          if git diff --cached --quiet; then
+            echo "nothing changed"
+          else
+            git commit -m "Monthly update $(date -u +%Y-%m-%d)"
+            git push
+          fi
