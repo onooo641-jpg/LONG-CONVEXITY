@@ -58,6 +58,32 @@ PRICE_TOLERANCE = 2.0
 #: ``scripts/account_lifetime.py`` recomputes it.
 STOPPING_RULE = 6
 
+#: Days between payouts, replaying 2016-2026 at $900 a trade under the
+#: account structure's default policy (LOCK_FIRST): median 21, 90th
+#: percentile 213. This only covers the evaluation-burn side of the
+#: business -- a funded account that busts before ever paying out still
+#: resets the streak above to zero the moment it was EARNED, not when it
+#: PAID. A long dry spell on a live funded account would not trip
+#: STOPPING_RULE at all. Recompute with
+#: scratchpad check in docs/NOTES_JX.md (check 7).
+PAYOUT_DROUGHT_DAYS = 213
+
+#: Trailing-trade sample and the profit-factor floor below it that marks the
+#: worst decile. Replaying the same 2016-2026 run's own trades (not the
+#: account structure) in rolling blocks of 100: median PF 0.98, 10th
+#: percentile 0.70. A live trailing-100 PF under 0.70 is as bad as the worst
+#: 10% of 100-trade stretches in eleven years of history.
+TRAILING_PF_TRADES = 100
+TRAILING_PF_MIN = 0.70
+
+#: Both of the above require inputs the bridge's own journal cannot produce:
+#: a payout is credited on Topstep's dashboard, not placed by the bridge, and
+#: a trade's win/loss is decided by the broker's fill and bracket, not
+#: logged back into data/bridge_journal.jsonl. So unlike STOPPING_RULE, which
+#: reconcile.py derives automatically from session_start records, these two
+#: are read off the broker statement by hand and passed in -- see
+#: --days-since-payout and --trailing-pf below.
+
 
 def bridge_trades(rows: list[dict]) -> pd.DataFrame:
     """Placed orders from the journal, one row per trade."""
@@ -216,6 +242,29 @@ def print_progress(ledger: list[dict], rule: int = STOPPING_RULE) -> None:
               f" re-read the forward log before buying another. ***")
 
 
+def check_business_health(days_since_payout: int | None,
+                          trailing_pf: float | None) -> list[str]:
+    """Flags for the two stopping conditions STOPPING_RULE does not cover.
+
+    Both inputs come from the broker statement, not the journal -- see the
+    module docstring above PAYOUT_DROUGHT_DAYS. Either argument left as
+    ``None`` skips its check rather than guessing.
+    """
+    warnings = []
+    if days_since_payout is not None and days_since_payout > PAYOUT_DROUGHT_DAYS:
+        warnings.append(
+            f"*** {days_since_payout} days since the last payout, worse than "
+            f"the measured 90th percentile ({PAYOUT_DROUGHT_DAYS}). Stop and "
+            f"re-read the forward log before buying another reset. ***")
+    if trailing_pf is not None and trailing_pf < TRAILING_PF_MIN:
+        warnings.append(
+            f"*** trailing {TRAILING_PF_TRADES}-trade profit factor "
+            f"{trailing_pf:.2f} is below the measured 10th percentile "
+            f"({TRAILING_PF_MIN:.2f}). Stop and re-read the forward log "
+            "before buying another reset. ***")
+    return warnings
+
+
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--journal", default=str(DEFAULT_PATH))
@@ -226,6 +275,13 @@ def main(argv=None) -> int:
     ap.add_argument("--stopping-rule", type=int, default=STOPPING_RULE,
                     help="evaluations without a pass before stopping to "
                          "re-examine (default %(default)s, measured)")
+    ap.add_argument("--days-since-payout", type=int, default=None,
+                    help="read off the broker statement by hand; flags past "
+                         f"{PAYOUT_DROUGHT_DAYS} days (measured 90th pct)")
+    ap.add_argument("--trailing-pf", type=float, default=None,
+                    help=f"trailing {TRAILING_PF_TRADES}-trade profit factor "
+                         "from the broker statement; flags below "
+                         f"{TRAILING_PF_MIN:.2f} (measured 10th pct)")
     ap.add_argument("--cutoff-minute", type=int, default=15 * 60 + 30,
                     help="must match BRIDGE_CUTOFF_MINUTE (default 930 = 15:30 ET)")
     args = ap.parse_args(argv)
@@ -268,6 +324,8 @@ def main(argv=None) -> int:
             print(f"  {day}  {', '.join(guarded[day])}")
 
     print_progress(account_ledger(rows), args.stopping_rule)
+    for warning in check_business_health(args.days_since_payout, args.trailing_pf):
+        print(f"\n{warning}")
 
     serious = [d for d in diffs if d[0] in ("logic", "settings")]
     if serious:

@@ -169,3 +169,29 @@ def test_the_rule_fires_once_the_run_is_long_enough(capsys):
 def test_a_journal_with_no_live_account_says_so(capsys):
     print_progress(account_ledger([start("PRAC", "10-01", live=False)]))
     assert "none live yet" in capsys.readouterr().out
+
+
+from scripts.reconcile import PAYOUT_DROUGHT_DAYS, TRAILING_PF_MIN, check_business_health
+
+
+def test_no_inputs_means_no_warnings():
+    assert check_business_health(None, None) == []
+
+
+def test_a_payout_drought_past_the_measured_threshold_warns():
+    warnings = check_business_health(PAYOUT_DROUGHT_DAYS + 1, None)
+    assert len(warnings) == 1 and "payout" in warnings[0]
+
+
+def test_a_payout_drought_inside_the_measured_threshold_is_silent():
+    assert check_business_health(PAYOUT_DROUGHT_DAYS, None) == []
+
+
+def test_a_trailing_profit_factor_below_the_floor_warns():
+    warnings = check_business_health(None, TRAILING_PF_MIN - 0.01)
+    assert len(warnings) == 1 and "profit factor" in warnings[0]
+
+
+def test_both_conditions_can_fire_together():
+    warnings = check_business_health(PAYOUT_DROUGHT_DAYS + 1, TRAILING_PF_MIN - 0.01)
+    assert len(warnings) == 2
