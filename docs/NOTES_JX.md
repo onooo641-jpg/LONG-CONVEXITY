@@ -306,3 +306,30 @@ About +$2,500 (≈5%). That's within the uncertainty of the inputs. Switching
 would also mean writing a new broker client (Lucid isn't TopstepX/ProjectX as
 far as I found) and getting automation confirmed in writing. **Not worth
 switching now.** Worth a second account later if Topstep is working.
+
+---
+
+## Zero-edge baseline (2026-11-07)
+
+`uv run python scripts/jx_zero_edge.py`. The same 2,185 trade sizes at $900,
+signs randomised 200 times, fees kept, current rules, LOCK_FIRST.
+
+| | pass rate | net, 11 years |
+|---|---|---|
+| real strategy | **34.0%** | $44,590 |
+| coin flip, fees kept | 26.3% (90% range 21.2–32.1%) | median $18,561, positive in 98% of runs |
+| coin flip, no fees | 31.0% | median $28,712 |
+
+- The "zero-edge ceiling = 2000/5000 = 40%" argument assumes a fixed floor.
+  Topstep's floor trails the peak, which lowers everyone's pass rate. Under
+  the real mechanics a no-edge trader passes about 26%. The strategy's 34% is
+  above the 95th percentile of that, so it beats a coin flip on this
+  structure.
+- In this model, **most of the profit comes from the account structure, not
+  from the signal**: a coin flip still nets about $18.6K. The strategy adds
+  about $26K on top. That's a model result. Real fills are worse (queueing)
+  and Topstep's rules can change.
+- Model detail found here: the Combine floor is modelled as trailing with no
+  lock. Topstep's MLL article says it locks at the starting balance in the
+  Combine too. So the model is slightly conservative on passing. Not fixed
+  yet.
