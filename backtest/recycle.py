@@ -56,6 +56,15 @@ class Policy(Enum):
     anything out; IMMEDIATE takes the cash and stays exposed.
     """
 
+    #: Default. Over 11 years this wins at every position size tested (see
+    #: scripts/recycling_report.py's policy table) by paying out before the
+    #: money has a chance to sit inside Topstep's balance sheet. That is the
+    #: point: roughly 80-100 prop firms shut down in 2024 alone (about 1 in 7
+    #: per year), and a pending payout at a firm that fails goes unpaid --
+    #: True Forex Funds left ~300 traders ~$1.2M short, and Nexgen (Oct 2026)
+    #: offered only a percentage of approved payouts. LOCK_FIRST is optimal
+    #: against Topstep's OWN rules but maximises how much of your money sits
+    #: inside that counterparty risk, which the rules do not price at all.
     IMMEDIATE = "immediate"
     LOCK_FIRST = "lock_first"
 
@@ -170,7 +179,7 @@ def costs(rules: XFARules, days: float, resets: int, activations: int) -> dict:
 
 
 def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
-            policy: Policy = Policy.LOCK_FIRST,
+            policy: Policy = Policy.IMMEDIATE,
             funded_scale: float = 1.0, risk_usd: float | None = None) -> dict:
     """Run one real sequence of trades through buy / pass / earn / lose.
 

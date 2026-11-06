@@ -75,7 +75,7 @@ def between(trades: pd.DataFrame, start, end) -> pd.DataFrame:
 
 
 def run_row(trades: pd.DataFrame, risk: float, scale: float = 1.0,
-            policy: Policy = Policy.LOCK_FIRST) -> dict:
+            policy: Policy = Policy.IMMEDIATE) -> dict:
     out = recycle(trades, policy=policy, funded_scale=scale)
     return {"risk": risk, "funded_risk": risk * scale, "trades": len(trades), **out}
 
@@ -462,9 +462,8 @@ def compute(orders: pd.DataFrame, bars: pd.DataFrame) -> dict:
     for risk in LADDER:
         trades = between(fills(orders, bars, risk), *YEAR)
         year_rows.append(run_row(trades, risk))
-        policy_rows.append((risk,
-                            run_row(trades, risk, policy=Policy.IMMEDIATE),
-                            year_rows[-1]))
+        policy_rows.append((risk, year_rows[-1],
+                            run_row(trades, risk, policy=Policy.LOCK_FIRST)))
     staged = between(fills(orders, bars, TWO_STAGE[0]), *YEAR)
     year_rows.append(run_row(staged, TWO_STAGE[0], scale=TWO_STAGE[1]))
 
@@ -473,19 +472,20 @@ def compute(orders: pd.DataFrame, bars: pd.DataFrame) -> dict:
     long_rows = []
     for risk in LADDER:
         h = between(fills(orders, bars, risk), HISTORY_START, "2027-01-01")
-        long_rows.append((risk, run_row(h, risk, policy=Policy.IMMEDIATE),
-                          run_row(h, risk)))
+        long_rows.append((risk, run_row(h, risk),
+                          run_row(h, risk, policy=Policy.LOCK_FIRST)))
 
     # The distribution is built at the plan's own size. Every risk level would
     # be six times the work and the shape of the answer does not change.
     history = between(fills(orders, bars, 900.0), HISTORY_START, "2027-01-01")
-    win = [(s, e, recycle(chunk)) for s, e, chunk in windows(history)]
+    # The distribution is reported under the default policy (IMMEDIATE).
+    win = [(s, e, recycle(chunk, policy=Policy.IMMEDIATE)) for s, e, chunk in windows(history)]
     nets = np.array([w[2]["net"] for w in win])
     # A single total can hide a policy that wins big occasionally and loses
     # most of the time. This counts the windows rather than the dollars.
-    early = np.array([recycle(chunk, policy=Policy.IMMEDIATE)["net"]
-                      for _, _, chunk in windows(history)])
-    lock_wins = float((nets > early).mean())
+    locked = np.array([recycle(chunk, policy=Policy.LOCK_FIRST)["net"]
+                       for _, _, chunk in windows(history)])
+    lock_wins = float((locked > nets).mean())
     years = [(y, run_row(chunk, 900.0)) for y, chunk in calendar_years(history)]
 
     return {
