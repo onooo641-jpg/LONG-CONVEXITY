@@ -1,0 +1,8 @@
+eval $140 reset $95 cap $2,000 LOCK_FIRST accounts 154 xfa 52 pay 44 withdrawn $61,440 cost $14,675 net $46,765
+eval $140 reset $95 cap $2,000 IMMEDIATE  accounts 167 xfa 52 pay 61 withdrawn $61,026 cost $15,910 net $45,116
+eval $140 reset $95 cap $4,000 LOCK_FIRST accounts 157 xfa 53 pay 43 withdrawn $62,065 cost $14,960 net $47,105
+eval $140 reset $95 cap $4,000 IMMEDIATE  accounts 171 xfa 54 pay 60 withdrawn $61,264 cost $16,290 net $44,974
+eval $95 reset $95 cap $2,000 LOCK_FIRST accounts 154 xfa 52 pay 44 withdrawn $61,440 cost $14,630 net $46,810
+eval $95 reset $95 cap $2,000 IMMEDIATE  accounts 167 xfa 52 pay 61 withdrawn $61,026 cost $15,865 net $45,161
+eval $95 reset $95 cap $4,000 LOCK_FIRST accounts 157 xfa 53 pay 43 withdrawn $62,065 cost $14,915 net $47,150
+eval $95 reset $95 cap $4,000 IMMEDIATE  accounts 171 xfa 54 pay 60 withdrawn $61,264 cost $16,245 net $45,019

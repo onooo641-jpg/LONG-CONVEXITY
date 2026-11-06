@@ -256,3 +256,53 @@ sent. See ARTIFACT_CLASSES class 3.
   Check at checkout.
 - `docs/recycling_report.pdf` and `docs/fade_report.html` weren't regenerated.
 - GO_LIVE's $900 → $250 / guard table was not recomputed (flagged in place).
+
+---
+
+## Capital, pass rate, other firms (2026-11-06, evening)
+
+All backtest, $900/trade, LOCK_FIRST, current Topstep rules, data to
+2026-10-28. `uv run python scripts/jx_capital.py`; output in
+`docs/jx_runs/capital_*`.
+
+**Pass rate per evaluation: 34%** (53 passes in 156 finished attempts). About
+1 in 3. Median evaluation life is 7 trades, about 10 days.
+
+**Money needed, starting a fresh chain on each of 118 monthly start dates
+(2016–2025):**
+
+| | median | 1 in 4 starts worse than | 1 in 10 worse than | worst |
+|---|---|---|---|---|
+| deepest cumulative loss before recovering | −$863 | −$1,628 | −$2,613 | −$3,568 (Jan 2016 start) |
+| days to first payout | 144 | 318 | 826 | 1,183 |
+| fees paid before first payout | $746 | $1,602 | $2,628 | $3,568 |
+
+Every start date eventually went positive. Starts from 2023 on: median
+deepest loss −$457, median 64 days to first payout. That's the good regime,
+not a promise.
+
+**Other firms — automation policy** (from third-party summaries found by
+search; official pages **not** read, except Tradeify's guidelines page):
+
+| firm | bots on funded accounts | note |
+|---|---|---|
+| Topstep | **yes**, in writing (2026-09-10) | the only one verified by us |
+| Lucid Trading | reportedly yes, evaluation and funded | best alternative on paper. Official page not read (needed approval). |
+| Tradeify | yes, **but** the bot must be used only at Tradeify, with ownership proof and a live video | can't run the same bot at Topstep too |
+| MyFundedFutures | sources conflict (semi-auto only vs allowed) | unclear |
+| Apex | reportedly semi-auto only on funded accounts | likely no |
+| Take Profit Trader, TradeDay, Funded Futures Family, Blue Guardian | no | ruled out |
+
+**LucidFlex 50K, rough model** (`scripts/jx_lucid.py`; one-time ~$95–140
+eval, ~$95 reset, no monthly or activation fee, other rules close to
+Topstep's). All third-party numbers. Payout cap unknown.
+
+| | net, 11 years |
+|---|---|
+| Topstep (current rules) | $44,590 |
+| LucidFlex estimate | $46,765–$47,150 |
+
+About +$2,500 (≈5%). That's within the uncertainty of the inputs. Switching
+would also mean writing a new broker client (Lucid isn't TopstepX/ProjectX as
+far as I found) and getting automation confirmed in writing. **Not worth
+switching now.** Worth a second account later if Topstep is working.

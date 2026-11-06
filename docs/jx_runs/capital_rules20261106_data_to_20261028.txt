@@ -1,0 +1,10 @@
+chain: evaluations 157 passed 53 pass rate 33.8%
+evaluation attempts that ended: bust 103 pass 53 -> 34.0%
+118 monthly start dates
+worst                      median     -863  p75     -425  p90     -262  worst   -3,568  n=118
+days_to_positive           median      144  p75      393  p90    1,000  worst    1,357  n=118
+days_to_first_payout       median      144  p75      318  p90      826  worst    1,183  n=118
+cost_before_first_payout   median      746  p75    1,602  p90    2,628  worst    3,568  n=118
+never positive: 0
+worst p25 p10: -1628.25 -2613.0499999999997
+starts 2023+ worst median: -456.75 days_to_first_payout median 64.0
