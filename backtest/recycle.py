@@ -58,13 +58,23 @@ class Policy(Enum):
 
     #: Default. Over 11 years this wins at every position size tested (see
     #: scripts/recycling_report.py's policy table) by paying out before the
-    #: money has a chance to sit inside Topstep's balance sheet. That is the
-    #: point: roughly 80-100 prop firms shut down in 2024 alone (about 1 in 7
-    #: per year), and a pending payout at a firm that fails goes unpaid --
-    #: True Forex Funds left ~300 traders ~$1.2M short, and Nexgen (Oct 2026)
-    #: offered only a percentage of approved payouts. LOCK_FIRST is optimal
-    #: against Topstep's OWN rules but maximises how much of your money sits
-    #: inside that counterparty risk, which the rules do not price at all.
+    #: money has a chance to sit inside Topstep's balance sheet. LOCK_FIRST is
+    #: optimal against Topstep's OWN rules but maximises how much of your
+    #: money sits inside the counterparty risk those rules do not price.
+    #:
+    #: That counterparty-risk argument is not resting on an unexamined prior.
+    #: An earlier version of this comment applied the industry-wide prop-firm
+    #: closure rate (roughly 80-100 firms in 2024, about 1 in 7 per year --
+    #: True Forex Funds left ~300 traders ~$1.2M short, Nexgen paid only a
+    #: percentage of approved payouts in Oct 2026) directly to Topstep, which
+    #: is a base-rate mismatch: that rate is mostly undercapitalised forex/CFD
+    #: shops, and Topstep is plausibly the platform-consolidation winner
+    #: (ProjectX exclusivity), so its own hazard could sit well below 1-in-7.
+    #: A Monte Carlo sweep (scripts/firm_failure_sensitivity.py,
+    #: docs/FIGURES_LEDGER.md #12) settles it without needing that rate:
+    #: IMMEDIATE beats LOCK_FIRST at every annual hazard tested from 0% to
+    #: 25%, so the choice does not depend on which estimate of Topstep's own
+    #: failure rate turns out to be right.
     IMMEDIATE = "immediate"
     LOCK_FIRST = "lock_first"
 

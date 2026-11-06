@@ -27,6 +27,8 @@ in the repo, with the closest candidates named).
 | 10 | News filter (F2) cost | removes 546/2185 trades (25.0%) over 11yr, net −$2,553→−$3,342 (worse); removes 144/574 (25.1%) OOS, net $43,064→$46,019 (better), PF 1.191→1.284 | `uv run python -c` using `LTFSweepConfig(news_filter=True)`, logic in NOTES_JX check 6 | 2026-11-06 | 2016-01-01 to data end / 2024-01-01 to data end | current |
 | 11 | Payout-drought / trailing-PF stopping thresholds | 90th-pct gap between payouts: **213 days**; 10th-pct trailing-100-trade PF: **0.70** | one-off script, now baked into `scripts/reconcile.py` as `PAYOUT_DROUGHT_DAYS` / `TRAILING_PF_MIN`, logic in NOTES_JX check 7 | 2026-11-06 | 2016-01-01 to data end, $900/trade, `Policy.LOCK_FIRST` | current |
 
+| 12 | Firm-failure hazard sweep, 0-25%/yr annual hazard, Monte Carlo (20,000 draws/point), $900/trade, 11yr | **no crossing**: `IMMEDIATE` net stays above `LOCK_FIRST` net at every hazard tested, from -$3,367 (h=0%, matches ledger #4/CANDIDATES #15) narrowing to -$895 (h=25%). No h* exists in the swept range — the policy choice does not depend on whether Topstep's own failure rate resembles the pessimistic industry-wide ~14%/yr figure or something far lower. This corrects the reasoning in `backtest/recycle.py`'s `Policy` docstring and `docs/GO_LIVE.md`, which argued from the industry rate as a prior rather than testing whether the conclusion was sensitive to it. | `uv run python scripts/firm_failure_sensitivity.py` | 2026-11-06 | 2016-01-01 to data end, swept h in {0%, 1%, ..., 25%} | current |
+
 ## Standing rule
 
 Before quoting a number anywhere in `docs/*.md`, it must have a row here with
