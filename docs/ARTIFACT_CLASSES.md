@@ -90,3 +90,73 @@ wrong." This belongs in preflight as an assertion (e.g.: an empty bar feed
 during a session that should have bars by the check time is a hard failure,
 not a quiet zero) rather than a line in a markdown checklist. Not implemented
 this session — flagged for the next one that touches `bridge/preflight.py`.
+
+**Update (same day, independent session):** a concurrent Claude Code session
+on this same repo (`Jx <onooo641@gmail.com>`, commit `1a8802c`) implemented
+exactly this for the `open_orders`/`open_positions` sites: `bridge/roundtrip.py`
+(`python -m bridge.live --roundtrip`) places a real order, requires it to show
+up non-empty, cancels it, requires it gone, and only then writes a proof file
+keyed on account + contract id. Without a matching proof, `day_done()` never
+returns clean. That code lives on `origin/claude/ict-trading-resources-ugh07b`,
+not on this branch — it touches the live-trading bridge (real-money execution
+path), which is out of scope for a documentation/ledger replication pass. Not
+ported here; the next session that works on `bridge/live.py` should pull it in
+rather than re-deriving it.
+
+## 4. One claim, two parameterisations, no label
+
+The same sentence in prose is backed by different settings in different
+places, and neither place says which — the general shape of what check 1
+(`docs/NOTES_JX.md`) found as a single instance.
+
+- **Why it survives review:** both numbers are individually real and
+  individually reproducible. The bug is only visible when they are read next
+  to each other and assumed to be the same measurement.
+- **Sightings: 2.** (1) `docs/GO_LIVE.md`'s $42,414 net vs $61,984 cash,
+  quoted together as if one figure (this session, see `FIGURES_LEDGER.md`
+  #4). (2) An independent concurrent session named this same pattern as its
+  own class 4 and found a second instance: the README's "PF 0.876" is
+  actually the payoff ratio, not profit factor (true PF 0.994) — its own
+  ledger's row S4/S5.
+- **Guard:** `docs/FIGURES_LEDGER.md`. Every standing figure names its exact
+  command; a number without a row is not a standing figure.
+
+## 5. "After time X" by clock minute, when the window spans midnight
+
+A CME trading date opens at 18:00 ET the day before. A selection like
+`day[minutes >= RANGE_END_MINUTE]` (minute-of-day only) lets the previous
+evening's bars — which also satisfy "minute >= 09:35" — count as "after the
+09:30-09:35 opening range," breaking or failing a range that does not exist
+until the next morning. Look-ahead, and the same root cause as class 1
+(self-consistent under a truncation test, since being wrong by a fixed offset
+truncates the same way every time).
+
+- **Sightings: 1 incident, 2 files** (`strategies/orb_family.py`,
+  `strategies/or5_retest.py`), found by an independent concurrent session
+  while seeding a forward log for the `fail_fade` candidate (its first entry
+  was at 19:53 ET — a time the 09:30-09:35/10:45 rule should never trade).
+  1,431 of 2,681 `fail_fade` trades were impossible this way, carrying all of
+  that candidate's apparent edge (PF 1.26 on the impossible trades vs. 0.93 on
+  the rest). After the fix: the 900-combination ORB search drops from 14% of
+  `fail_fade` profitable in both periods to **0 of 900**.
+- **Not affected:** `strategies/ltf_sweep.py` (the live strategy) bounds its
+  session on both sides, not by a one-sided minute check.
+- **Guard:** a timestamp comparison against the end of the window, not a
+  minute-of-day comparison alone. Test:
+  `test_the_evening_before_cannot_break_a_range_that_has_not_formed`
+  (`tests/test_orb_family.py`). **Rule for new code: any "after time X"
+  selection on a trading date needs an upper bound or a timestamp comparison,
+  never a bare minute-of-day inequality.**
+- **Ported to this branch** from the independent session's fix (commit
+  `a583d95`), since it is a correctness bug in files both branches share, not
+  a strategy-parameter change.
+
+## Sighting log
+
+| date | class | where | count after |
+|---|---|---|---|
+| 2026-09-06 | 1 | `cfddcfc`, all detectors | 1 |
+| 2026-09-09 | 2 | `7fa7f86`, engine fills | 1 |
+| 2026-11-06 | 3 | named; 0 observed, 5 sites listed. `open_orders`/`open_positions` sites implemented (round-trip proof) on the concurrent session's branch, not ported here. | 1 |
+| 2026-11-06 | 4 | `docs/GO_LIVE.md` net/cash conflation (this session); README "PF 0.876" (concurrent session) | 2 |
+| 2026-11-06 | 5 | `orb_family.detect` + `or5_retest`, found via a 19:53 forward-log entry on the concurrent session, ported here | 1 |

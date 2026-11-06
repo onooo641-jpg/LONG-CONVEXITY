@@ -271,3 +271,87 @@ here and pointed to from `docs/GO_LIVE.md`.
   `"target_ambiguous"` when the flag is actually `True` (`backtest/engine.py`
   lines 389-390) — so the exit-reason column itself already proves the
   backfill, no need to rerun the original backtests to check.
+
+## Check 9 (addendum, same day): an independent concurrent session, and the
+## replication it accidentally produced
+
+While this session worked, a second Claude Code session (same account,
+`Jx <onooo641@gmail.com>`, 12 commits between 14:19 and 18:15 on 2026-11-06)
+independently implemented the same brief against the same repo and pushed
+straight to the shared branch this session started from — not a hostile
+actor, just no coordination between two sessions. The two branches diverged
+without either knowing about the other.
+
+**Provenance was checked before anything else** (author/email/timestamps on
+the 12 commits) rather than assumed, per the standing instruction that
+unexplained commits in your own repo outrank any other finding.
+
+**This session's own commits were moved to a dedicated branch**
+(`jx/rules-recheck-local`) before any merge decision, so the local working
+tree stopped being the only copy of either side's work. Neither branch was
+merged into the other; this is a documentation-level reconciliation, not a
+git merge.
+
+### Replication result: AGREE / DISAGREE / UNIQUE
+
+Comparing this session's `FIGURES_LEDGER.md` / `CANDIDATES.md` /
+`ARTIFACT_CLASSES.md` against the independent session's versions on
+`origin/claude/ict-trading-resources-ugh07b`:
+
+**AGREE** (same finding, reached independently — the strongest kind of
+confirmation available here):
+- The `mll_locks_at=None` crash: **both sessions hit it and fixed it with the
+  identical line** (`locked = (rules.mll_locks_at is not None and ...)`).
+  Confirmed, not a fluke of one session's test fixtures.
+- LTF Sweep's raw 11-year P&L direction and the general shape of the
+  recycling business case (loses on its own, works inside the account
+  structure).
+- The confirmation-timing and marketable-limit-order artifact classes
+  (classes 1 and 2), independently arrived at before this session started
+  and unchanged by either branch.
+
+**DISAGREE, resolved** (at least one side was using stale information, not a
+difference of opinion):
+- **Payout policy default.** This session's own hazard-sweep argument for
+  `IMMEDIATE` and the independent session's `LOCK_FIRST` conclusion were
+  both computed correctly for the rule model each was using — the actual
+  disagreement was that the independent session had already found two real
+  Topstep payout rules (MLL locks on payout; profit-since-last-payout
+  required) that this session's rule model was missing. Ported those rules
+  in, re-verified the hazard sweep under them (see `FIGURES_LEDGER.md`
+  #13/#14), and the two sessions' conclusions now agree exactly: `net`
+  figures match to the dollar ($44,590 / $62,065 / $17,475 / 157 accounts /
+  53 XFA / 43 payouts / 151 of 161 shared bust days, all identical).
+- **ORB family search and OR5 retest results.** The independent session
+  found and fixed a genuine look-ahead bug (previous evening's bars breaking
+  a range that forms the next morning — `ARTIFACT_CLASSES.md` class 5,
+  ported here with its regression test). This was a real correctness bug in
+  shared strategy files, not a parameter choice, so porting it is a
+  mechanical fix under this project's own working rule, not tuning.
+- The "106 days" time-to-first-pass figure, previously marked `unsourced` in
+  this session's ledger: the independent session's ledger named
+  `scripts/quarterly_report.py` as the source. Verified by running it rather
+  than trusting the citation — it reproduces exactly (`FIGURES_LEDGER.md`
+  #8).
+
+**UNIQUE** (present on one side only; evaluated, not blindly folded in):
+- The independent session implemented `ARTIFACT_CLASSES.md` class 3 (the
+  empty-API-response problem this session had only documented) as a real
+  assertion in `bridge/roundtrip.py`, touching `bridge/live.py`. **Not
+  ported**: it changes the live-trading, real-money execution path, which is
+  out of scope for a documentation/ledger reconciliation pass and deserves
+  its own review rather than being pulled in as a side effect of this one.
+  Flagged in `ARTIFACT_CLASSES.md` for whoever next touches `bridge/live.py`.
+- The independent session also started `scripts/jx_capital.py` and
+  `scripts/jx_lucid.py`, modelling a second prop firm (LucidFlex) for
+  comparison. This runs against this project's own working rule (check 8:
+  concentrate on Topstep only, record the reasoning, don't build multi-firm
+  support) — not adopted, and worth raising with the other session or the
+  user rather than silently overriding it.
+
+**Operational note:** the independent session's commits ran as late as
+18:15 on 2026-11-06, the same day. It may still be active. If it keeps
+committing to the shared branch, the two histories will diverge again, and
+each side will now be building on a different, already-reconciled ledger —
+harder to reconcile a second time than this one was. Worth closing or
+confirming status before relying on the shared branch again.
