@@ -1,0 +1,37 @@
+# Figures ledger
+
+One row per standing figure. A figure not in this table is not a standing
+figure, however it appears in prose elsewhere — that is the rule this file
+exists to enforce. `docs/NOTES_JX.md` check 1 is the $19,570 drift this would
+have caught: two different metrics (net profit vs. cash withdrawn), from two
+different scripts, quoted next to each other as if they were the same number.
+
+Columns: **value** (as last verified) · **command** (exact, reproducible) ·
+**computed** (date) · **window** · **status** (`current` = reproduced this
+session on the data in the repo right now · `superseded` = reproduced, but a
+named cause changed it from an earlier published value · `unsourced` = a
+number in circulation that this session could not reproduce from any script
+in the repo, with the closest candidates named).
+
+| # | Value | Command | Computed | Window | Status |
+|---|---|---|---|---|---|
+| 1 | LTF Sweep full-history net **-$2,553**, 2,185 trades ($500/trade) | `uv run python -c` one-off (see NOTES_JX check 1/2; equivalent to the "strategy's own P&L" tile in `scripts/recycling_report.py`) | 2026-11-06 | 2016-01-01 to data end (2026-10-28) | current — supersedes -$3,044/2,161 trades, which was commit `7fa7f86`'s own stated output (10.7yr window, less data than exists now) |
+| 2 | Win rate **53.1%**, break-even **53.3%** (full history, $500/trade) | `uv run python scripts/simulator_inputs.py` | 2026-11-06 | 2016-01-01 to data end | current — matches commit `7fa7f86`'s 53.2%/53.3% within data drift |
+| 3 | Profit factor, full history | **superseded**: commit `7fa7f86` ("Refuse limit orders the market has already passed") states, as its own after-fix result, "full history 53.2% PF **0.876** -$3,044" at $500/trade over a 10.7-year window — that is where the figure comes from, not a guess. Rerunning the same $500/trade full-history config today gives PF 0.994, not 0.876. Two things changed since, not one: more data (10.7yr -> 11.0yr) and later commits touching the engine/strategy path (`c21f67c` "trade from the local engine instead of a TradingView webhook", `859ad92` "stop when the day's work is finished, not at a chosen hour"). Which share of the gap is data vs. logic was not decomposed this session. | `git show 7fa7f86` (historical); `uv run python scripts/simulator_inputs.py` (current) | 2026-11-06 | 10.7yr (then) vs 11.0yr (now) | superseded |
+| 4 | 11-year recycling: net **$48,190**, cash $65,467, cost $17,277, 52 XFA, 64 payouts | `uv run python scripts/recycling_report.py` | 2026-11-06 | 2016-01-01 to data end | current, default `Policy.IMMEDIATE` (see item 5) — supersedes both the old $42,414 (net, stale data, mislabeled as if it were cash) and $61,984/$44,868 (cash/net, `Policy.LOCK_FIRST`, stale data) |
+| 5 | 5-account recycling table ($900/trade): 1 acct $48,190 net · 5 accts $248,489 net ($49,698/acct) · cap bites at 8 | `uv run python scripts/account_lifetime.py --orders <cached LTF sweep orders parquet>` | 2026-11-06 | 2016-01-01 to data end | current, `Policy.IMMEDIATE` — supersedes the old $44,868 / $231,823 table (`Policy.LOCK_FIRST`, stale data) |
+| 6 | Longest dry spell (no payout), unbroken chain | **479 days** under `Policy.IMMEDIATE` (current default) · **1,184 days** under `Policy.LOCK_FIRST` — both reproduced this session, same trades, policy is the only difference | `recycle(history, policy=...)` from `backtest/recycle.py`, see NOTES_JX check 1 | 2026-11-06 | 2016-01-01 to data end | current — the 1,184-day figure is not wrong, it is the other policy's answer; GO_LIVE.md now states both |
+| 7 | Funded-account mortality at $900/trade | **100%** (52/52 busted, `Policy.IMMEDIATE`) | `uv run python scripts/account_lifetime.py --orders <cached orders>` | 2026-11-06 | 2016-01-01 to data end | current — supersedes the old 98%; sample is 52 accounts, so one or two classified differently moves the percentage by a couple of points, this is not a claim that the tail got worse |
+| 8 | Time from first trade to first pass | **unsourced**: `scripts/account_lifetime.py`'s evaluation-lifetime distribution gives 7 trades / 10 days at the *median* ($900/trade, current data) — the previously-quoted "106 days" does not match any current median, 75th-percentile, or 90th-percentile figure this session reproduced. It reads like a single specific replay (the one timed against the Z26→H27 contract rollover) rather than a distribution statistic, and the exact starting point was not re-derivable from the doc text alone. | none found this session | — | — | unsourced |
+| 9 | Rule-change stress test ($900/trade, 11yr, `Policy.LOCK_FIRST` baseline since that is what the guard/lock mechanics are about) | baseline net $44,823 → reset $49→$99: $43,523 (−$1,300) → MLL never locks: −$17,079 (−$61,902, policy-degenerate, see NOTES_JX check 4) → payout_cap $4,000→$2,000: $45,579 (+$756) → winning_days 5→10: $45,444 (+$621) → activation per attempt not per XFA: $29,625 (−$15,198) | one-off script, logic in NOTES_JX check 4 appendix | 2026-11-06 | 2016-01-01 to data end | current |
+| 10 | News filter (F2) cost | removes 546/2185 trades (25.0%) over 11yr, net −$2,553→−$3,342 (worse); removes 144/574 (25.1%) OOS, net $43,064→$46,019 (better), PF 1.191→1.284 | `uv run python -c` using `LTFSweepConfig(news_filter=True)`, logic in NOTES_JX check 6 | 2026-11-06 | 2016-01-01 to data end / 2024-01-01 to data end | current |
+| 11 | Payout-drought / trailing-PF stopping thresholds | 90th-pct gap between payouts: **213 days**; 10th-pct trailing-100-trade PF: **0.70** | one-off script, now baked into `scripts/reconcile.py` as `PAYOUT_DROUGHT_DAYS` / `TRAILING_PF_MIN`, logic in NOTES_JX check 7 | 2026-11-06 | 2016-01-01 to data end, $900/trade, `Policy.LOCK_FIRST` | current |
+
+## Standing rule
+
+Before quoting a number anywhere in `docs/*.md`, it must have a row here with
+a `current` status for the window being quoted. A `superseded` row means the
+old number was real but the ground it stood on moved (new data, a changed
+default, a fixed bug) — say which. An `unsourced` row means don't repeat the
+number as fact until someone finds the command that produced it; say "could
+not reproduce" instead of restating it as if it were current.
