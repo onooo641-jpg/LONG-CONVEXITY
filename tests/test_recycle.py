@@ -273,3 +273,30 @@ def test_the_guard_can_be_on_for_one_phase_only():
                   rules=rules, risk_usd=900.0)
     assert out["retired_combine"] == 0        # the evaluation ran unguarded
     assert out["retired_funded"] == 1
+
+
+def test_a_payout_moves_the_funded_floor_to_zero():
+    """Topstep, read 2026-11-06: after a payout the MLL resets to $0 for good.
+    Pass, then five $300 days (balance $1,500, peak $1,500, trailing floor
+    -$500) -> IMMEDIATE pays $750 and the balance is $750. A -$800 day leaves
+    -$50: alive under the old model (floor -$500), dead under the rule."""
+    path = seq([1000.0] * 3 + [300.0] * 5 + [-800.0])
+    new = recycle(path, policy=Policy.IMMEDIATE)
+    old = recycle(path, XFARules(payout_locks_mll=False,
+                                 profit_since_payout_required=False),
+                  policy=Policy.IMMEDIATE)
+    assert new["payouts"] == old["payouts"] == 1
+    assert new["funded_busts"] == 1
+    assert old["funded_busts"] == 0
+
+
+def test_a_second_payout_needs_profit_since_the_first():
+    """Five winning days that net to a loss since the last payout pay nothing."""
+    rules = XFARules(payout_locks_mll=False)
+    path = seq([1000.0] * 3 + [600.0] * 5 + [200.0, 200.0, 200.0, 200.0, -1100.0, 200.0])
+    out = recycle(path, rules, policy=Policy.IMMEDIATE)
+    assert out["payouts"] == 1
+    off = recycle(path, XFARules(payout_locks_mll=False,
+                                 profit_since_payout_required=False),
+                  policy=Policy.IMMEDIATE)
+    assert off["payouts"] == 2

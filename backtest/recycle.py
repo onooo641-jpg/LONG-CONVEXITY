@@ -62,7 +62,10 @@ class Policy(Enum):
 
 @dataclass(frozen=True)
 class XFARules:
-    """Topstep 50K, from their help centre on 2026-09-14.
+    """Topstep 50K, from their help centre on 2026-09-14, plus the two payout
+    rules read on 2026-11-06 (``payout_locks_mll``,
+    ``profit_since_payout_required``). The 2026-09-14 model is
+    ``XFARules(payout_locks_mll=False, profit_since_payout_required=False)``.
 
     Sources:
       - help.topstep.com/en/articles/8284233-topstep-payout-policy
@@ -94,7 +97,19 @@ class XFARules:
     #: ...and at most this many dollars. Topstep's 50K cap is $2,000; adding
     #: the optional Daily Loss Limit at purchase doubles it, and this plan
     #: keeps the Responsible Trading Advantage on, so $4,000 applies.
+    #: 2026-11-06: the payout page says the $4,000 applies only to NEW
+    #: Combines with the DLL added at checkout, as a limited-time offer from
+    #: "June 2nd". If that offer has ended, this is $2,000. Check at purchase.
     payout_cap: float = 4000.0
+    #: "After a payout: Your Maximum Loss Limit (MLL) resets to $0
+    #: permanently" -- help.topstep.com payout policy, read 2026-11-06. Not in
+    #: the 2026-09-14 model: there a payout before the lock left the trailing
+    #: floor below $0. True moves the floor to $0 on the first payout.
+    payout_locks_mll: bool = True
+    #: "Positive net profit since your last Payout" is required for every
+    #: payout after the first (same page, read 2026-11-06).
+    profit_since_payout_required: bool = True
+
     #: Trader's share. The "100% of your first $10,000" arrangement is limited
     #: to accounts on the new dashboard before 2026-01-12, which this one will
     #: not be.
@@ -130,6 +145,11 @@ class _Account:
     balance: float = 0.0
     peak: float = 0.0
     winning_days: int = 0
+    #: Set by a payout when ``XFARules.payout_locks_mll``: the limit is then $0
+    #: for good, whatever the peak was.
+    paid_out: bool = False
+    #: Balance right after the last payout, for the profit-since-payout test.
+    after_payout: float | None = None
 
     def floor(self, limit: float, locks_at: float | None) -> float:
         """The balance at which this account is closed.
@@ -139,6 +159,8 @@ class _Account:
         reaches the limit's size the floor would rise above zero, and the rule
         is that it never does.
         """
+        if self.paid_out:
+            return 0.0
         trailing = self.peak - limit
         return trailing if locks_at is None else min(trailing, 0.0)
 
@@ -301,6 +323,9 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
                   and account.peak >= rules.mll_locks_at)
         eligible = (account.winning_days >= rules.winning_days_required
                     and account.balance > 0
+                    and not (rules.profit_since_payout_required
+                             and account.after_payout is not None
+                             and account.balance <= account.after_payout)
                     and (locked or policy is Policy.IMMEDIATE))
         if eligible:
             amount = min(account.balance * rules.payout_share, rules.payout_cap)
@@ -308,6 +333,9 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
             # That is what makes an early payout expensive.
             account.balance -= amount
             account.winning_days = 0
+            account.after_payout = account.balance
+            if rules.payout_locks_mll:
+                account.paid_out = True
             gross += amount
             cash += amount * rules.profit_split
             payouts += 1

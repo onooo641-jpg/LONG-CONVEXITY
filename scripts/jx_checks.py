@@ -30,6 +30,13 @@ from ict import data as D
 from strategies.ltf_sweep import generate_orders
 
 RISK = 900.0
+#: Which rulebook. "20261106" adds the two payout rules read that day; the
+#: committed docs/jx_runs/checks_*.txt from before then used "20260914".
+RULEBOOKS = {
+    "20260914": XFARules(payout_locks_mll=False, profit_since_payout_required=False),
+    "20261106": XFARules(),
+}
+BASE = RULEBOOKS["20261106"]
 HISTORY_START = "2016-01-01"
 
 
@@ -86,7 +93,7 @@ def check_drift(rep, life):
     for name, hist in (("recycling_report slice", rep),
                        ("account_lifetime slice", life)):
         for cap in (4000.0, 2000.0):
-            rules = XFARules(payout_cap=cap)
+            rules = dataclasses.replace(BASE, payout_cap=cap)
             for pol in (Policy.LOCK_FIRST, Policy.IMMEDIATE):
                 out = recycle(hist, rules, policy=pol)
                 row(f"{name}, cap {cap:,.0f}, {pol.name}", out)
@@ -146,11 +153,11 @@ def by_year(out, label, trades):
 
 
 def stress(hist, policy):
-    base = XFARules()
+    base = BASE
     print(f"\n  policy {policy.name}")
     header()
     nets = {}
-    nets["baseline"] = row("baseline (rules as of 2026-09-14)",
+    nets["baseline"] = row("baseline (selected rulebook)",
                            recycle(hist, base, policy=policy))
     nets["reset99"] = row("reset 49 -> 99",
                           recycle(hist, dataclasses.replace(base, reset=99.0),
@@ -159,7 +166,8 @@ def stress(hist, policy):
     extra = (out["accounts_bought"] - out["funded_earned"]) * base.activation
     nets["act_attempt"] = row("activation per attempt (x accounts bought)", out, extra)
     nets["nolock"] = row("MLL never locks (mll_locks_at=None)",
-                         recycle(hist, dataclasses.replace(base, mll_locks_at=None),
+                         recycle(hist, dataclasses.replace(base, mll_locks_at=None,
+                                                     payout_locks_mll=False),
                                  policy=policy))
     nets["cap2000"] = row("payout_cap 4000 -> 2000",
                           recycle(hist, dataclasses.replace(base, payout_cap=2000.0),
@@ -168,13 +176,14 @@ def stress(hist, policy):
                        recycle(hist, dataclasses.replace(base, winning_days_required=10),
                                policy=policy))
     allr = dataclasses.replace(base, reset=99.0, mll_locks_at=None,
+                               payout_locks_mll=False,
                                payout_cap=2000.0, winning_days_required=10)
     out = recycle(hist, allr, policy=policy)
     extra = (out["accounts_bought"] - out["funded_earned"]) * allr.activation
     nets["all"] = row("ALL FIVE at once", out, extra)
 
     changes = {"reset99": {"reset": 99.0}, "act_attempt": None,
-               "nolock": {"mll_locks_at": None}, "cap2000": {"payout_cap": 2000.0},
+               "nolock": {"mll_locks_at": None, "payout_locks_mll": False}, "cap2000": {"payout_cap": 2000.0},
                "wd10": {"winning_days_required": 10}}
     keys = list(changes)
     print(f"\n  pairs (net):")
@@ -211,7 +220,13 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--end", default=None,
                     help="exclusive UTC cutoff, e.g. 2026-09-08T05:27Z")
+    ap.add_argument("--rules", choices=sorted(RULEBOOKS), default="20261106")
+    ap.add_argument("--skip-strategy", action="store_true",
+                    help="skip section 0 (re-scans the signals, ~3 min)")
     args = ap.parse_args(argv)
+    global BASE
+    BASE = RULEBOOKS[args.rules]
+    print(f"rules: {args.rules}  {BASE}")
     end = pd.Timestamp(args.end) if args.end else None
     if end is not None and end.tzinfo is None:
         end = end.tz_localize("UTC")
@@ -225,12 +240,13 @@ def main(argv=None) -> int:
                          ].reset_index(drop=True)
     life = lifetime_history(filled(orders, bars_life))
 
-    strategy_figures(end)
+    if not args.skip_strategy:
+        strategy_figures(end)
     check_drift(rep, life)
 
     print("\n2. WITHDRAWALS BY CALENDAR YEAR   (unbroken chain, $900, cap 4000)")
     for pol in (Policy.IMMEDIATE, Policy.LOCK_FIRST):
-        by_year(recycle(rep, policy=pol), f"policy {pol.name}", rep)
+        by_year(recycle(rep, BASE, policy=pol), f"policy {pol.name}", rep)
 
     print("\n3. RULE-CHANGE STRESS TEST   (one change at a time, then all five)")
     for pol in (Policy.IMMEDIATE, Policy.LOCK_FIRST):
