@@ -72,6 +72,19 @@ def test_an_unlocked_funded_account_still_dies():
     assert out["accounts_bought"] == 2
 
 
+def test_a_limit_that_never_locks_is_a_rule_the_model_can_run():
+    """mll_locks_at=None used to raise TypeError on the payout check. With no
+    lock the same fall that survives above now kills: peak $2,500 leaves a
+    trailing floor of $500, and $300 is under it. LOCK_FIRST never pays,
+    because the lock it waits for does not exist."""
+    rules = XFARules(mll_locks_at=None)
+    out = recycle(seq([1000.0] * 3 + [2500.0, -2200.0]), rules)
+    assert out["funded_busts"] == 1
+    pays = seq([1000.0] * 3 + [200.0] * 5)
+    assert recycle(pays, rules, policy=Policy.LOCK_FIRST)["payouts"] == 0
+    assert recycle(pays, rules, policy=Policy.IMMEDIATE)["payouts"] == 1
+
+
 def test_a_payout_needs_five_winning_days():
     # Funded, then four winning days: eligible on the fifth, not before.
     four = recycle(seq([1000.0] * 3 + [600.0] * 4, ))
