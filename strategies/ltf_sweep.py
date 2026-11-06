@@ -31,7 +31,9 @@ them, and the runner reports the pessimistic and optimistic readings as a band.
 
 from __future__ import annotations
 
+import pathlib
 from dataclasses import dataclass
+from functools import lru_cache
 
 import numpy as np
 import pandas as pd
@@ -42,6 +44,20 @@ from ict.fvg import find_fvgs
 from ict.structure import find_msb
 
 from .base import BaseConfig, build_order, finalize, fixed_r_target, one_trade_per_day
+
+#: Tier-1 US releases (CPI/PPI/NFP/PCE/Retail Sales, all normally 8:30 ET) and
+#: FOMC decision days, 2016-01-01 to 2026-11-06. Sources: ALFRED (St. Louis
+#: Fed) real-time release-date vintage files for the five data releases,
+#: federalreserve.gov's own historical/current meeting calendars for FOMC.
+#: Rule F2 in docs/or5_retest_spec.md: no entries on a day carrying either.
+TIER1_CALENDAR_PATH = pathlib.Path(__file__).resolve().parent.parent / "docs" / "tier1_calendar.csv"
+
+
+@lru_cache(maxsize=1)
+def load_blackout_dates(path: pathlib.Path = TIER1_CALENDAR_PATH) -> frozenset:
+    """Calendar dates (one per row, release type not distinguished) to skip."""
+    cal = pd.read_csv(path)
+    return frozenset(pd.to_datetime(cal["date"]).dt.date)
 
 
 @dataclass(frozen=True)
@@ -72,6 +88,15 @@ class LTFSweepConfig(BaseConfig):
     # passes 0 and the sanity check stays where it belongs, in the backtest,
     # where it drops 1 of 3,625 days.
     min_session_bars: int = 60
+
+    #: Rule F2 (docs/or5_retest_spec.md): no entries on a day carrying a
+    #: tier-1 release or an FOMC decision. Off by default -- this model's
+    #: registered parameters (everything above) were fixed before this was
+    #: measured, and docs/GO_LIVE.md's working rule is that a parameter does
+    #: not change because a number disappoints. This is a new, independently
+    #: toggled filter, not a retune of the existing ones: see
+    #: docs/NOTES_JX.md check 6 for what turning it on costs.
+    news_filter: bool = False
 
 
 def liquidity_pools(df15m: pd.DataFrame, lookback: int) -> pd.DataFrame:
@@ -110,8 +135,11 @@ def generate_orders(
         on="ts", direction="backward", allow_exact_matches=True,
     )
 
+    blackout = load_blackout_dates() if config.news_filter else frozenset()
     rows = []
-    for _, day in merged.groupby("trading_date", sort=True):
+    for trading_date, day in merged.groupby("trading_date", sort=True):
+        if trading_date in blackout:
+            continue
         rows.extend(_day_orders(day.reset_index(drop=True), config))
 
     if not rows:
