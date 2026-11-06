@@ -1,0 +1,53 @@
+[asof] data truncated to ts < 2026-09-08 05:27:00+00:00  (data/processed/asof_20260908T0527)
+loading 1-minute data ...
+
+====================================================================================================
+ONE TRADE PER DAY   ($500 risk per trade)
+====================================================================================================
+window                    trades    win%   avg win  avg loss   payoff    expect  breakeven%        net $
+full history 2016-2026      2161  53.2%    +0.896     1.023    0.876   -0.0028      53.3%       -3,044
+development 2016-2024       1611  52.3%    +0.895     1.045    0.856   -0.0310      53.9%      -25,001
+out-of-sample 2024+          550  55.8%    +0.897     0.952    0.942   +0.0798      51.5%      +21,957
+
+====================================================================================================
+UNRESTRICTED   ($500 risk per trade)
+====================================================================================================
+window                    trades    win%   avg win  avg loss   payoff    expect  breakeven%        net $
+full history 2016-2026     19188  56.0%    +0.903     1.035    0.872   +0.0489      53.4%     +468,960
+development 2016-2024      13196  55.5%    +0.899     1.058    0.850   +0.0287      54.1%     +189,270
+out-of-sample 2024+         5992  56.9%    +0.910     0.984    0.924   +0.0934      52.0%     +279,691
+
+====================================================================================================
+WHAT TO TYPE IN
+====================================================================================================
+Run it twice. The gap between the two is the honest uncertainty, and
+nothing in the data says which one is the future.
+
+  A. full history  (pessimistic)
+      win rate            53.2%
+      reward:risk         0.88   <-- NOT 1.0; commissions eat it
+      number of trades    2161
+      risk per trade      $500
+      starting balance    $100,000
+      (break-even win rate at this payoff: 53.3%)
+
+  B. out-of-sample (optimistic)
+      win rate            55.8%
+      reward:risk         0.94   <-- NOT 1.0; commissions eat it
+      number of trades    550
+      risk per trade      $500
+      starting balance    $100,000
+      (break-even win rate at this payoff: 51.5%)
+
+  Read this before believing either: over the full history the win rate
+  (53.2%) is BELOW the break-even it needs (53.3%).
+
+====================================================================================================
+IS A MONTE CARLO ENTITLED TO ASSUME INDEPENDENCE?
+====================================================================================================
+  lag-1 autocorrelation, R          +0.0105
+  lag-1 autocorrelation, win/loss   +0.0024
+  longest losing streak             7  (reshuffled average 7.3)
+  max drawdown                      -18.41R  (reshuffled median -13.75R, actual at the 13th percentile)
+
+  YES -- ordering carries no information here, so an i.i.d. simulator is fair.

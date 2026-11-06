@@ -1,0 +1,6 @@
+210 trades  net +19,297  win 56.2%  PF 1.24  maxDD −15,631
+breached -$2,000 at trade 10 (2025-10-16); 125/210 points below the limit
+re-buy: 9 accounts over 106 days, passed=True
+  Standard        $648  (sub $196 + resets $245 + api $58 + activation $149)
+  No-Activation   $823  (sub $340 + resets $425 + api $58 + activation $0)
+wrote /tmp/q_now.html

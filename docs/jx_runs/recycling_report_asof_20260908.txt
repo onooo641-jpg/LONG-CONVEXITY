@@ -1,0 +1,31 @@
+[asof] data truncated to ts < 2026-09-08 05:27:00+00:00  (data/processed/asof_20260908T0527)
+          risk  acct xfa pay      cash    cost       net    roi     left
+          $100     1   0   0         0     762      -762  -100%        0
+          $200     2   1   1       933     911        22    +2%    1,327
+          $250     2   1   1       924     911        13    +1%      988
+          $500     6   2   8     7,525   1,060     6,465  +610%      604
+          $900    15   6   8    12,173   1,803    10,370  +575%    1,679
+    $900->$250    10   2   7     4,749   1,060     3,689  +348%      853
+
+117 real 12-month windows, 2161 trades since 2016-01-01
+       real  median    1,653  p10   -1,305  p5   -1,501  p1   -1,546  worst   -1,552  profitable 68%
+      block  median    2,183  p10   -1,325  p5   -1,672  p1   -1,970  worst   -2,319  profitable 75%
+   shuffled  median    2,207  p10     -887  p5   -1,574  p1   -1,968  worst   -2,168  profitable 77%
+
+by calendar year
+  2016  187 trades  14 acct  1 xfa   0 pay  net    -1,009
+  2017  175 trades   7 acct  2 xfa   0 pay  net    -1,060
+  2018  208 trades  20 acct  2 xfa   0 pay  net    -1,452
+  2019  207 trades  14 acct  5 xfa   4 pay  net     2,869
+  2020  209 trades  17 acct  6 xfa   5 pay  net     6,176
+  2021  201 trades  15 acct  5 xfa   1 pay  net      -490
+  2022  214 trades  22 acct  7 xfa   3 pay  net       536
+  2023  210 trades  15 acct  8 xfa   8 pay  net     9,343
+  2024  200 trades  14 acct  7 xfa   4 pay  net     3,794
+  2025  208 trades  19 acct  6 xfa   5 pay  net     3,956
+  2026  142 trades   8 acct  6 xfa   8 pay  net    10,707
+
+straight through 2016-2026: 154 accounts, 53 XFA, 43 payouts, cash $59,728 less $17,314 = $42,414 (+245%)
+  the strategy on its own over the same trades: $-2,135
+  worst run of dead accounts 39, longest stretch with no payout 1,184 days
+wrote /tmp/r_asof.html

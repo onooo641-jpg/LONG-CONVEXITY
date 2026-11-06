@@ -1,0 +1,58 @@
+[asof] data truncated to ts < 2026-09-08 05:27:00+00:00  (data/processed/asof_20260908T0527)
+HOW LONG AN ACCOUNT LIVES   (trades, unless the column says days)
+                            n    25th  median    75th    max     days   busted
+
+  $250 a trade (29 accounts, 8 XFA, 32 payouts, net $-1,955)
+  evaluation               29      33      55      71    184       96      72%
+  funded account            8      24      44      58    176       80      88%
+
+  $500 a trade (85 accounts, 22 XFA, 49 payouts, net $17,013)
+  evaluation               85      10      17      26     55       28      74%
+  funded account           22      12      24      32     68       42      95%
+
+  $900 a trade (153 accounts, 52 XFA, 62 payouts, net $44,868)
+  evaluation              153       4       7      10     28       10      66%
+  funded account           52       8      12      18     73       20      98%
+
+
+RUNNING SEVERAL AT ONCE   (identical accounts, same signals)
+
+  $500 a trade
+   accounts       cost        cash         net  per account
+          1     11,470      28,483      17,013       17,013
+          2     21,068      56,966      35,897       17,949
+          3     30,668      85,449      54,781       18,260
+          5     49,866     142,414      92,549       18,510
+          8     78,662     142,414      63,752        7,969  <- XFA cap bites
+         10     97,860     142,414      44,554        4,455  <- XFA cap bites
+
+  $900 a trade
+   accounts       cost        cash         net  per account
+          1     17,116      61,984      44,868       44,868
+          2     32,360     123,967      91,607       45,803
+          3     47,606     185,951     138,345       46,115
+          5     78,096     309,918     231,823       46,365
+          8    123,830     309,918     186,088       23,261  <- XFA cap bites
+         10    154,320     309,918     155,598       15,560  <- XFA cap bites
+
+
+STARTING THEM A MONTH APART   (do they still die together?)
+  $500: 5 chains, net $85,702, cost $56,712
+      bust days shared by all five: 80 of 88 (90.9%)
+  $900: 5 chains, net $225,256, cost $84,496
+      bust days shared by all five: 147 of 156 (94.2%)
+
+
+WHICH PRICING PATH
+  Standard = 49(M+P) + 149A;  No-Activation = 85(M+P).
+  So No-Activation wins when 36(M+P) < 149A, i.e. (M+P)/A < 4.14.
+  The threshold is a RATIO. Quoting it as a count of months plus
+  resets is only right when exactly one funded account is earned.
+
+     risk  XFA   M+P  ratio   Standard  No-Activation         cheaper
+      250    8   129  16.12      9,384         12,836        Standard
+      500   22   129   5.86     11,470         12,836        Standard
+      900   52   153   2.94     17,116         14,876   No-Activation
+
+  Both paths scale per account, so N does not move the winner --
+  only how many funded accounts the plan expects to earn does.

@@ -1,0 +1,7 @@
+[asof] data truncated to ts < 2026-09-08 05:27:00+00:00  (data/processed/asof_20260908T0527)
+198 trades  net +17,715  win 56.1%  PF 1.24  maxDD −15,631
+breached -$2,000 at trade 10 (2025-10-16); 124/198 points below the limit
+re-buy: 9 accounts over 106 days, passed=True
+  Standard        $648  (sub $196 + resets $245 + api $58 + activation $149)
+  No-Activation   $823  (sub $340 + resets $425 + api $58 + activation $0)
+wrote /tmp/q_asof.html
