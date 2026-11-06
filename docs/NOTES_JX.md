@@ -456,3 +456,60 @@ the point at which it stops being inert. Until then it needs no action.
 Does not change the recommendation to close out the other session's
 further work on the shared branch; it changes *why* it was safe to still
 be looking at this rather than disabling it on sight.
+
+## Check 12: the GO_LIVE drift that wasn't net-vs-cash
+
+Check 1 explained one drift (net mislabeled as cash, $19,570). Asked to check
+for a second, separate one: two statements both correctly labelled "net,"
+genuinely the same metric, still disagreeing. Could not find it by line
+number in the current file (lines move every time this document is edited),
+so searched history instead: `git log --all -S"19,570"` led to commit
+`d1b8287` ("Run the three pre-purchase checks and write them down"), whose
+`docs/GO_LIVE.md` has, at its own lines 158 and 189: a summary net of
+**$42,414** (cost $17,314) and a 5-account table's 1-account row of
+**$44,868** (cost $17,116, cash $61,984). Diff: $2,454 total, $198 of it
+cost-side (cash diff alone is $2,256). Exact match to the numbers given.
+
+Root cause, found by reading `scripts/recycling_report.py` and
+`scripts/account_lifetime.py` side by side rather than guessing: the two
+scripts can silently run under different policies. `account_lifetime.py`
+has always hardcoded `POLICY = Policy.LOCK_FIRST` and passed it explicitly.
+`recycling_report.py`'s `compute()` had three places that instead inherited
+whatever `recycle()`'s or `run_row()`'s own *default* parameter happened to
+be at the time — `bootstrap()`'s inner call, the by-calendar-year table, and
+the straight-through "whole" total. At the time of commit `d1b8287`, those
+implicit defaults evidently did not match `account_lifetime.py`'s explicit
+constant (or the two scripts were reading different cached order sets —
+not fully reconstructable this far back). This is `docs/ARTIFACT_CLASSES.md`
+class 4 ("one claim, two parameterisations, no label"), and it was not a
+one-time historical accident: the same implicit-default pattern was still
+in `recycling_report.py` today, and it had already drifted internally a
+second time — a comment claiming "the distribution is reported under the
+default policy (IMMEDIATE)" went stale the moment `recycle()`'s own default
+flipped to `LOCK_FIRST` earlier today, silently making the real/block/
+shuffled comparison apples-to-oranges, and the by-year table was quietly on
+`IMMEDIATE` while the straight-through total was on `LOCK_FIRST`.
+
+**Fixed, not just ledgered**: every implicit-default call site in
+`compute()` now takes an explicit `policy=` (see `FIGURES_LEDGER.md` #19 for
+the before/after numbers). Checked today's output again afterward:
+`recycling_report.py`'s 1-account net and `account_lifetime.py`'s 1-account
+net agree to the dollar ($44,261 both), and they agree *because* both now
+pin `Policy.LOCK_FIRST` explicitly rather than because their two separate
+defaults happen to coincide this week. That coincidence is exactly what
+broke in `d1b8287` and exactly what the fix removes.
+
+## Check 13: does the business survive without 2026
+
+2026 is the one year inside the 11-year window with an open question over
+it (partial year, and the one year third-party trackers claim Topstep's own
+rules changed). Reran the base case with 2026 excluded entirely
+(`FIGURES_LEDGER.md` #18): `LOCK_FIRST` net **$31,404** over 2016-2025 alone,
+against $44,261 for the full 11 years. 2026 (roughly 7-8% of elapsed time,
+~7.6% of trades) accounts for **$12,857 of net — about 29% of the headline
+total**. The business is real on 2016-2025 alone, and the policy conclusion
+actually strengthens without 2026 (LOCK_FIRST's margin over IMMEDIATE grows
+from $1,051 to $1,650). But the headline number is not representative of a
+typical year: one partial, unusually strong year is doing close to a third
+of the work. Worth carrying into any go/no-go decision as its own line, not
+folded into "the 11-year net is $44,261."

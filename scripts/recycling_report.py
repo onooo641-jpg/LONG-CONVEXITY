@@ -120,7 +120,8 @@ def resequence(pnl: np.ndarray, contracts: np.ndarray) -> pd.DataFrame:
                          "trading_date": days.date})
 
 
-def bootstrap(pool: pd.DataFrame, block: int, runs: int, seed: int) -> np.ndarray:
+def bootstrap(pool: pd.DataFrame, block: int, runs: int, seed: int,
+              policy: Policy = Policy.IMMEDIATE) -> np.ndarray:
     """Net cash over ``runs`` synthetic years drawn from ``pool``.
 
     ``block`` of 1 is the ordinary shuffle: every trade drawn independently,
@@ -138,7 +139,7 @@ def bootstrap(pool: pd.DataFrame, block: int, runs: int, seed: int) -> np.ndarra
         else:
             starts = rng.integers(0, len(pnl) - block, BOOTSTRAP_N // block + 1)
             idx = np.concatenate([np.arange(s, s + block) for s in starts])[:BOOTSTRAP_N]
-        out[i] = recycle(resequence(pnl[idx], contracts[idx]))["net"]
+        out[i] = recycle(resequence(pnl[idx], contracts[idx]), policy=policy)["net"]
     return out
 
 
@@ -487,7 +488,14 @@ def compute(orders: pd.DataFrame, bars: pd.DataFrame) -> dict:
     # The distribution is built at the plan's own size. Every risk level would
     # be six times the work and the shape of the answer does not change.
     history = between(fills(orders, bars, 900.0), HISTORY_START, "2027-01-01")
-    # The distribution is reported under the default policy (IMMEDIATE).
+    # Pinned to IMMEDIATE explicitly, not left to recycle()'s own default --
+    # that default has flipped twice in one day (2026-11-06, see
+    # docs/CANDIDATES.md #15) and this distribution, the bootstrap() comparison
+    # just below, and "years" further down must all agree on which policy they
+    # are reporting or the real/block/shuffled and by-year/straight-through
+    # comparisons silently stop being comparisons of the same thing
+    # (docs/ARTIFACT_CLASSES.md class 4 -- this was a live instance of it, not
+    # a hypothetical one, see docs/NOTES_JX.md check 12).
     win = [(s, e, recycle(chunk, policy=Policy.IMMEDIATE)) for s, e, chunk in windows(history)]
     nets = np.array([w[2]["net"] for w in win])
     # A single total can hide a policy that wins big occasionally and loses
@@ -495,7 +503,12 @@ def compute(orders: pd.DataFrame, bars: pd.DataFrame) -> dict:
     locked = np.array([recycle(chunk, policy=Policy.LOCK_FIRST)["net"]
                        for _, _, chunk in windows(history)])
     lock_wins = float((locked > nets).mean())
-    years = [(y, run_row(chunk, 900.0)) for y, chunk in calendar_years(history)]
+    # Explicit LOCK_FIRST to match "whole" below -- this is its by-year
+    # decomposition (modulo each year resetting to a fresh $0 account; see the
+    # docstring on calendar_years()), not an independent table, and the two
+    # must be read under the same policy.
+    years = [(y, run_row(chunk, 900.0, policy=Policy.LOCK_FIRST))
+             for y, chunk in calendar_years(history)]
 
     return {
         "ladder": year_rows,
@@ -504,7 +517,10 @@ def compute(orders: pd.DataFrame, bars: pd.DataFrame) -> dict:
                          and r["funded_risk"] == 900.0),
         # One unbroken chain from 2016 to the end of the data: what someone who
         # started at the beginning and never stopped would actually hold.
-        "whole": recycle(history),
+        # Explicit LOCK_FIRST -- the shipped default, but pinned rather than
+        # inherited, so a future default change shows up as a diff here
+        # instead of silently moving this number.
+        "whole": recycle(history, policy=Policy.LOCK_FIRST),
         # The same trades with no account structure at all -- the comparison
         # the whole report exists to make.
         "raw_pnl": float(history["net_pnl"].sum()),
@@ -517,8 +533,10 @@ def compute(orders: pd.DataFrame, bars: pd.DataFrame) -> dict:
         "windows": win,
         "window_nets": nets,
         "real": pct(nets),
-        "block": pct(bootstrap(history, BOOTSTRAP_BLOCK, BOOTSTRAP_RUNS, 7)),
-        "shuffled": pct(bootstrap(history, 1, BOOTSTRAP_RUNS, 7)),
+        "block": pct(bootstrap(history, BOOTSTRAP_BLOCK, BOOTSTRAP_RUNS, 7,
+                              policy=Policy.IMMEDIATE)),
+        "shuffled": pct(bootstrap(history, 1, BOOTSTRAP_RUNS, 7,
+                                  policy=Policy.IMMEDIATE)),
         "years": years,
         "history_trades": len(history),
         "data_end": str(history["exit_ts"].max().tz_convert("America/New_York").date()),

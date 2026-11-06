@@ -82,14 +82,24 @@ item gets read once and then relied on from memory; a class gets a
 preflight assertion that fires every time regardless of whether anyone
 remembered the checklist.
 
-**Sightings: 1 so far**, documented but not yet promoted to an assertion —
-`bridge/preflight.py`'s `bar feed` check reports the array it got, and a human
-reading the preflight output is the only thing standing between "no bars
-because it's before market open" and "no bars because the contract ID is
-wrong." This belongs in preflight as an assertion (e.g.: an empty bar feed
-during a session that should have bars by the check time is a hard failure,
-not a quiet zero) rather than a line in a markdown checklist. Not implemented
-this session — flagged for the next one that touches `bridge/preflight.py`.
+**Correction (2026-11-06, later the same day):** the paragraph above is
+wrong about the current state of the code, not just stale. Checked
+`bridge/preflight.py` directly before acting on the "not yet promoted to an
+assertion" claim: `bar_feed_checks()` has hard-failed on an empty bar array
+since commit `26d253d` ("Add preflight, a decision journal, and
+reconciliation"), 2026-09-10 — a month before this class was even written.
+`run()` calls it with `reach_broker=True` by default, and both CLI entry
+points (`bridge/live.py`, `bridge/server.py`) only skip it behind an explicit
+`--offline` flag. The real gap was that nothing tested this behaviour, so a
+refactor could have quietly turned the hard FAIL back into a pass-through
+and nothing would have caught it. Closed with `tests/test_preflight.py`
+(four tests: empty array, broker exception, fresh bars pass, a
+close-stamped-not-open-stamped feed still fails the age check) rather than
+with new preflight code, since none was needed.
+
+**Sightings: 1**, at `bridge/roundtrip.py`'s site (below) — the
+`open_orders`/`open_positions` ambiguity, which is a different call site
+than `bar_feed_checks` and genuinely not addressed on this branch.
 
 **Update (same day, independent session):** a concurrent Claude Code session
 on this same repo (`Jx <onooo641@gmail.com>`, commit `1a8802c`) implemented
