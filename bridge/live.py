@@ -158,6 +158,11 @@ class LiveEngine:
     clean_checks: int = 0
     #: Newest bar seen on the last tick, for the late-publication retry.
     last_bar_ts: pd.Timestamp | None = None
+    #: Whether an empty open_orders / open_positions from this account can be
+    #: believed (bridge/roundtrip.py). main() sets it from the proof file for
+    #: --live; a dry run's broker is our own code, so it is trusted.
+    empty_proven: bool = True
+    _unproven_noted: bool = False
 
     def announce(self) -> dict:
         """Open the journal with what this run is, so the file can say so later.
@@ -278,6 +283,27 @@ class LiveEngine:
             self.clean_checks = 0
             return False
 
+        if not self.empty_proven:
+            # ARTIFACT_CLASSES class 3: an empty book from an unproven account
+            # may mean a wrong request, not a flat account. Staying up costs
+            # electricity; believing it can cost an unattended position.
+            if not self._unproven_noted:
+                self.journal.write("empty_unproven", at=now.isoformat(),
+                                   why="no round-trip proof for this account and "
+                                       "contract; not ending the day on an empty "
+                                       "answer. Run bridge.live --roundtrip")
+                log.warning("empty order book is unproven for this account; "
+                            "staying up (run --roundtrip)")
+                self._unproven_noted = True
+            self.clean_checks = 0
+            if self.flattened:
+                # Past the flat time there is nothing left for the engine to
+                # do. Stop, but not clean: exit 1, so the wrapper does not
+                # shut down and someone looks at the platform.
+                self.closed = True
+                self.journal.write("session_end_unproven", at=now.isoformat())
+            return False
+
         self.clean_checks += 1
         return self.clean_checks >= CLEAN_CHECKS_REQUIRED
 
@@ -361,6 +387,14 @@ class LiveEngine:
             self.journal.write("open_orders_failed", error=str(exc))
             log.warning("could not list open orders (%s); cancelling everything sent", exc)
             resting = None
+        if resting is not None and not resting and self.outstanding and not self.empty_proven:
+            # Empty, from an account never seen to answer non-empty: the same
+            # as unreadable. Cancelling a filled order is harmless; skipping
+            # a resting one leaves it live after the deadline.
+            self.journal.write("open_orders_unproven",
+                               why="empty answer without a round-trip proof; "
+                                   "cancelling everything sent")
+            resting = None
 
         for key, order_id in list(self.outstanding.items()):
             if resting is not None and order_id not in resting:
@@ -421,6 +455,11 @@ def main(argv=None) -> int:
                     help="actually send orders (default is a dry run)")
     ap.add_argument("--preflight", action="store_true",
                     help="check everything that can fail, send nothing, and exit")
+    ap.add_argument("--roundtrip", action="store_true",
+                    help="place one far-off 1-lot limit, see it listed, cancel it, "
+                         "see it gone; writes the proof --live needs before it "
+                         "will trust an empty order book (docs/ARTIFACT_CLASSES.md "
+                         "class 3). Sends a real order to the configured account")
     ap.add_argument("--offline", action="store_true",
                     help="with --preflight, skip the checks that need the broker")
     ap.add_argument("--journal", default=str(DEFAULT_PATH),
@@ -435,7 +474,7 @@ def main(argv=None) -> int:
     logging.basicConfig(level=logging.INFO,
                         format="%(asctime)s %(levelname)s %(message)s")
     try:
-        cfg = Config.from_env(live=args.live)
+        cfg = Config.from_env(live=args.live or args.roundtrip)
     except RuntimeError as exc:
         # Reporting what is missing IS the job here; a traceback tells the
         # reader to go and read the code instead.
@@ -451,11 +490,28 @@ def main(argv=None) -> int:
                                      need_webhook=False,
                                      risk_usd=args.risk)) else 1
 
+    if args.roundtrip:
+        from .roundtrip import PROOF_PATH, prove
+        broker = TopstepXBroker(cfg)
+        broker.authenticate()
+        ok = prove(cfg, broker, Journal(args.journal))
+        print(f"roundtrip {'OK -- proof written to ' + str(PROOF_PATH) if ok else 'FAILED'}"
+              f" (account {cfg.account_id}, contract {cfg.contract_id}); "
+              "details in the journal")
+        return 0 if ok else 1
+
     broker = TopstepXBroker(cfg) if args.live else DryRunBroker(cfg)
     broker.authenticate()
 
+    from .roundtrip import proof_holds
+    proven = proof_holds(cfg) if args.live else True
+    if not proven:
+        log.warning("no round-trip proof for account %s / %s: the engine will not "
+                    "end the day on an empty order book, so it will not exit 0. "
+                    "Run `python -m bridge.live --roundtrip` first.",
+                    cfg.account_id, cfg.contract_id)
     engine = LiveEngine(cfg=cfg, broker=broker, journal=Journal(args.journal),
-                        risk_usd=args.risk)
+                        risk_usd=args.risk, empty_proven=proven)
     engine.announce()
     log.info("%s | %s | contract %s | risk $%.0f/trade | entries until %02d:%02d ET, "
              "flat %02d:%02d, exits when nothing is left open",

@@ -68,9 +68,10 @@ subscription**」—— 沒有 Combine 就沒有 Practice。所以不可能「�
 | 2 | Dashboard → Accounts → Add-ons → 啟用 **Practice Account** | 0 | —— |
 | 3 | `--preflight --offline`（不連線，只驗設定與算術） | 0 | 全綠 |
 | 4 | `TOPSTEPX_ACCOUNT_ID` 指向 **Practice**，`--preflight` | 0 | **餘額是 ~$150,000** |
+| 4b | Practice 上 `--roundtrip` | 0 | `roundtrip OK` |
 | 5 | Practice 上 `--live` 真的送單 | 0 | journal 有 `placed` |
 | 6 | `scripts/reconcile.py` | 0 | **連續乾淨** |
-| 7 | `TOPSTEPX_ACCOUNT_ID` 換成 **Combine** | —— | —— |
+| 7 | `TOPSTEPX_ACCOUNT_ID` 換成 **Combine**，**再跑一次 `--roundtrip`** | —— | `roundtrip OK` |
 
 金鑰要買了 API Access 才拿得到，所以離線檢查排在買之後 ——
 它驗的是設定和括號單算術，**不需要連線，但需要金鑰存在**。
@@ -359,6 +360,22 @@ Practice 的部位上限是 **15 lots** —— 也就是說 **198 個訊號裡�
 考試帳戶那邊的上限是 preset 裡的 50 micros，這一年只咬到 4 筆（2%），
 引擎自己會夾並寫進 journal。
 
+### 4b. 證明「空的」真的是空的（2026-11-06 加）
+
+```bash
+uv run python -m bridge.live --roundtrip
+```
+
+`Order/searchOpen`、`Position/searchOpen` 在請求錯了的時候（帳號 ID 錯、合約 ID 格式不同）
+**一樣回 success 加一個空陣列**。引擎把空當成「沒有部位」→ 收工 → 退出碼 0 →
+wrapper 關機 —— **部位還開着，電腦已經關了**。
+
+這一步掛一張 1 口、離市價 30% 的買進限價（不可能成交），確認它出現在
+`open_orders()` 裡、取消、確認它消失，才寫下 `data/roundtrip_proof.json`。
+**沒有對應這個帳號＋這個合約的證明，`--live` 永遠不會以 0 結束**（所以不會自動關機），
+截止時間也會把送過的單全部取消，而不是相信一個空的委託簿。
+**換帳號、換月之後都要重跑。** 細節：`docs/ARTIFACT_CLASSES.md` 第 3 類。
+
 ### 5. Practice 上真的送單（官方要求的那一步）
 
 ```bash
@@ -563,6 +580,6 @@ journal 每一次 `bridge/live.py` 開機都會自己長，所以你看到的永
 ## 換月
 
 `BRIDGE_CONTRACT_ID` 要改（`CON.F.US.MNQ.Z26` → 下一個季月）。
-**改完一定要重跑 `--preflight`** ——
+**改完一定要重跑 `--preflight` 和 `--roundtrip`**（舊合約的證明對新合約無效）——
 合約 ID 錯的症狀是 `bar feed` 回空陣列，不是錯誤訊息。
 這是最容易犯又最貴的錯。

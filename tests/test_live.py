@@ -598,3 +598,64 @@ def test_the_loop_stops_once_the_session_closes():
 
     run(eng, sleep=lambda _s: None, now=clock)
     assert eng.closed
+
+
+# --- an empty answer has to be proven before it is believed ---------------
+
+def test_an_unproven_empty_book_never_ends_the_day_clean(tmp_path):
+    """ARTIFACT_CLASSES class 3: empty may be a wrong request, not a flat account."""
+    conf = cfg(cutoff_minute=EARLY, flat_minute=10 * 60 + 5)
+    eng = LiveEngine(cfg=conf, broker=DryRunBroker(conf),
+                     journal=Journal(tmp_path / "j.jsonl"), risk_usd=900.0,
+                     empty_proven=False)
+    eng.past_deadline = True
+    for minute in pd.date_range(et("10:00"), et("10:06"), freq="1min"):
+        eng.tick(minute)
+    assert eng.closed and not eng.finished_clean, "stop at the flat time, exit non-zero"
+    events = [row["event"] for row in eng.journal.read()]
+    assert "empty_unproven" in events and "session_end_unproven" in events
+
+
+def test_an_unproven_empty_book_at_the_deadline_cancels_everything(tmp_path):
+    conf = cfg(cutoff_minute=EARLY)
+    broker = DryRunBroker(conf)
+    eng = LiveEngine(cfg=conf, broker=broker, journal=Journal(tmp_path / "j.jsonl"),
+                     risk_usd=900.0, empty_proven=False)
+    eng.outstanding = {"k": 77}
+    broker.open_orders = lambda: []          # looks flat; is it?
+    eng.close_out(et("10:00"))
+    assert broker.cancelled == [77]
+    assert "open_orders_unproven" in [r["event"] for r in eng.journal.read()]
+
+
+def _probe_setup(tmp_path):
+    from bridge.roundtrip import proof_holds, prove
+    conf = cfg()
+    ts = pd.date_range("2026-11-02 14:00", periods=5, freq="1min", tz="UTC")
+    bars = pd.DataFrame({"ts": ts, "open": 25000.0, "high": 25001.0,
+                         "low": 24999.0, "close": 25000.0, "volume": 10})
+    broker = DryRunBroker(conf, bars=bars)
+    now = lambda: ts[-1] + pd.Timedelta(minutes=2)   # noqa: E731
+    return conf, broker, prove, proof_holds, now
+
+
+def test_the_roundtrip_writes_a_proof_when_the_book_answers(tmp_path):
+    cfg, broker, prove, proof_holds, now = _probe_setup(tmp_path)
+    path = tmp_path / "proof.json"
+    assert prove(cfg, broker, Journal(tmp_path / "j.jsonl"), path=path,
+                 sleep=lambda s: None, now=now)
+    assert proof_holds(cfg, path)
+    assert broker.sent[0]["limitPrice"] == 17500.0 and broker.cancelled
+    import dataclasses
+    assert not proof_holds(dataclasses.replace(cfg, contract_id="CON.F.US.MNQ.H27"), path)
+    assert not proof_holds(dataclasses.replace(cfg, account_id=2), path)
+
+
+def test_the_roundtrip_refuses_when_our_order_never_shows(tmp_path):
+    """The failure it exists for: success, empty list, order really resting."""
+    cfg, broker, prove, proof_holds, now = _probe_setup(tmp_path)
+    broker.open_orders = lambda: [{"id": -1, "contractId": "CON.F.US.MNQ.Z26 "}]
+    path = tmp_path / "proof.json"
+    assert not prove(cfg, broker, Journal(tmp_path / "j.jsonl"), path=path,
+                     sleep=lambda s: None, now=now)
+    assert not path.exists() and broker.cancelled, "probe cancelled, no proof"

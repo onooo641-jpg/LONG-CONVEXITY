@@ -12,3 +12,6 @@ data/bridge_journal.jsonl
 # enters the tree.
 run_bridge.bat
 .env
+
+# Written by `python -m bridge.live --roundtrip`; account-specific.
+data/roundtrip_proof.json

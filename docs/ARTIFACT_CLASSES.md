@@ -62,8 +62,11 @@ reading "empty" as "nothing there" then acts on a false fact.
 | `accounts()` → `out.get("accounts", [])` | no accounts | Low impact (convenience lookup; docs say set the id explicitly). |
 | `ours()` itself | not ours | Any format difference in `contractId` (int vs string — GO_LIVE already notes `retrieveBars` documents it as integer) empties every list it filters. |
 
-- **The assertion it needs (not implemented — bridge code was out of scope
-  today):** before the engine may treat an empty `open_positions` /
+- **Implemented 2026-11-06** (`bridge/roundtrip.py`, `python -m bridge.live
+  --roundtrip`, GO_LIVE step 4b). Without a proof for this account + contract,
+  `day_done()` never returns True (stops non-clean at the flat time, exit 1),
+  and the deadline sweep treats an empty book as unreadable and cancels
+  everything sent. Original design note: before the engine may treat an empty `open_positions` /
   `open_orders` as "flat", preflight on Practice has to prove the same
   call returns **non-empty** when something is known to exist. Place one
   resting order far from the market, require `ours(open_orders())` to contain
@@ -91,5 +94,5 @@ places, and neither place says which.
 |---|---|---|---|
 | 2026-09-06 | 1 | cfddcfc, all detectors | 1 |
 | 2026-09-09 | 2 | 7fa7f86, engine fills | 1 |
-| 2026-11-06 | 3 | named; 0 observed, 5 sites listed | 0 |
+| 2026-11-06 | 3 | named; 0 observed, 5 sites listed; open_orders/positions sites guarded by round-trip proof | 0 |
 | 2026-11-06 | 4 | GO_LIVE 158/189, README PF, strategy-alone size | 3 |
