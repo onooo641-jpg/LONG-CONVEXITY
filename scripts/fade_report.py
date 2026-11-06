@@ -25,9 +25,16 @@ import pandas as pd
 from backtest import metrics
 from backtest.engine import BacktestConfig, simulate
 from backtest.recycle import Policy, recycle
+
 from ict import data as D
 from reportkit import bar_chart, esc, line_chart, money, page, t, tile
 from strategies.orb_family import DetectConfig, PriceConfig, detect, price
+
+#: When to withdraw. LOCK_FIRST since 2026-11-06: with Topstep's rule that a
+#: payout resets the MLL to $0 (payout policy page, read that day) it beats
+#: IMMEDIATE at $500, $900 and $1,000 over 2016-2026. It was IMMEDIATE under the
+#: 2026-09-14 rules. See docs/NOTES_JX.md.
+POLICY = Policy.LOCK_FIRST
 
 OUT = pathlib.Path("docs/fade_report.html")
 SPLIT = pd.Timestamp("2024-01-01", tz="UTC")
@@ -362,7 +369,7 @@ def main(argv=None) -> int:
 
     ctx["topstep"] = {
         risk: recycle(run(setups, bars, risk=risk, **VARIANTS["unselected"]),
-                      policy=Policy.IMMEDIATE)
+                      policy=POLICY)
         for risk in (250.0, 500.0, 900.0)
     }
 

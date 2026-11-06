@@ -236,6 +236,29 @@ def year_table(rows: list[tuple[int, dict]]) -> str:
             f'<tbody>{body}</tbody></table></div>')
 
 
+def policy_verdict(rows, note_zh: str, note_en: str) -> str:
+    """Say which policy won over eleven years, from the numbers, at each size.
+
+    This sentence used to be written by hand ("A wins at every size"). That was
+    true under the 2026-09-14 rules and false once a payout was modelled as
+    resetting the MLL to $0 (Topstep's payout page, read 2026-11-06), so it is
+    now computed.
+    """
+    b_sizes = [f"${risk:,.0f}" for risk, a, b in rows if b["net"] > a["net"]]
+    a_sizes = [f"${risk:,.0f}" for risk, a, b in rows if b["net"] <= a["net"]]
+    zh = (f'11 年的樣本：<b>B（先鎖再領）在 {"、".join(b_sizes) or "沒有一檔"} 贏</b>，'
+          f'A（一符合就領）在 {"、".join(a_sizes) or "沒有一檔"} 贏。'
+          f'Topstep 的規則是<b>出金之後 MLL 永久重設為 $0</b>，'
+          f'所以在鎖上之前就領錢，等於把剩下的緩衝一次丟掉。{note_zh}'
+          f'這只是一條路徑，不是一個定律。')
+    en = (f'Over eleven years <b>B (lock first) wins at {", ".join(b_sizes) or "no size"}</b>'
+          f' and A (take it early) at {", ".join(a_sizes) or "no size"}. Topstep '
+          f'resets the MLL to $0 permanently after any payout, so a payout taken '
+          f'before the lock throws away the buffer that was left. {note_en}'
+          f'This is one path, not a law.')
+    return '<p>' + t(zh, en) + '</p>'
+
+
 def build(ctx: dict) -> str:
     """The page. Composed from pieces, not one f-string."""
     year = ctx["headline"]
@@ -400,22 +423,7 @@ def build(ctx: dict) -> str:
         policy_table(ctx["policies"]),
         f'<h3>{t("整整 11 年", "over the whole eleven years")}</h3>',
         policy_table(ctx["policies_long"]),
-        '<p>' + t(
-            f'一年的樣本說 B 略好，11 年的樣本說 <b>A 在每一檔都贏，而且贏 '
-            f'${abs(min(b["net"] - a["net"] for _, a, b in ctx["policies_long"])):,.0f} '
-            f'上下</b>。理由不難懂：帳戶在鎖上之前就死掉的次數夠多，'
-            f'等待那張保險的代價比保險本身貴。'
-            f'{ctx["risk_note"]}'
-            f'<b>結論是領得早比領得巧重要</b> —— 但要知道這也只是一條路徑，'
-            f'不是一個定律。',
-            f'One year says B is slightly better. Eleven years say <b>A wins at '
-            f'every size, by around '
-            f'${abs(min(b["net"] - a["net"] for _, a, b in ctx["policies_long"])):,.0f}'
-            f'</b>. The reason is not subtle: accounts die before they lock often '
-            f'enough that waiting for the insurance costs more than the insurance '
-            f'saves. {ctx["risk_note_en"]}'
-            f'<b>Taking it early beats timing it</b> &mdash; though this is still '
-            f'one path and not a law.') + '</p>',
+        policy_verdict(ctx["policies_long"], ctx["risk_note"], ctx["risk_note_en"]),
 
         f'<h2>{t("最壞的情況", "The worst cases")}</h2>',
         '<p>' + t(
