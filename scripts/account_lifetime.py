@@ -34,6 +34,12 @@ from backtest.engine import BacktestConfig, simulate
 from backtest.recycle import Policy, XFARules, costs, recycle
 from ict import data as D
 
+#: When to withdraw. LOCK_FIRST since 2026-11-06: with Topstep's rule that a
+#: payout resets the MLL to $0 (payout policy page, read that day) it beats
+#: IMMEDIATE at $500, $900 and $1,000 over 2016-2026. It was IMMEDIATE under
+#: the 2026-09-14 rules. See docs/NOTES_JX.md.
+POLICY = Policy.LOCK_FIRST
+
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 
 RULES = XFARules()
@@ -130,7 +136,7 @@ def staggered(trades: pd.DataFrame, n: int, gap_days: int = 30) -> dict:
         chunk = trades[exits >= begin].reset_index(drop=True)
         if len(chunk) < 50:
             continue
-        out = recycle(chunk, policy=Policy.IMMEDIATE)
+        out = recycle(chunk, policy=POLICY)
         chains.append(out)
         dates = {pd.Timestamp(e["ts"]).date() for e in out["timeline"]
                  if e["event"].endswith("bust")}
@@ -168,7 +174,7 @@ def main(argv=None) -> int:
     print(f"  {'':<22}{'n':>5}{'25th':>8}{'median':>8}{'75th':>8}{'max':>7}"
           f"{'days':>9}{'busted':>9}")
     for risk, trades in runs.items():
-        out = recycle(trades, policy=Policy.IMMEDIATE)
+        out = recycle(trades, policy=POLICY)
         table = lives(trades, out["timeline"])
         print(f"\n  ${risk:,.0f} a trade "
               f"({out['accounts_bought']} accounts, {out['funded_earned']} XFA, "

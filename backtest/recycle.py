@@ -56,26 +56,32 @@ class Policy(Enum):
     anything out; IMMEDIATE takes the cash and stays exposed.
     """
 
-    #: Default. Over 11 years this wins at every position size tested (see
-    #: scripts/recycling_report.py's policy table) by paying out before the
-    #: money has a chance to sit inside Topstep's balance sheet. LOCK_FIRST is
-    #: optimal against Topstep's OWN rules but maximises how much of your
-    #: money sits inside the counterparty risk those rules do not price.
-    #:
-    #: That counterparty-risk argument is not resting on an unexamined prior.
-    #: An earlier version of this comment applied the industry-wide prop-firm
-    #: closure rate (roughly 80-100 firms in 2024, about 1 in 7 per year --
-    #: True Forex Funds left ~300 traders ~$1.2M short, Nexgen paid only a
-    #: percentage of approved payouts in Oct 2026) directly to Topstep, which
-    #: is a base-rate mismatch: that rate is mostly undercapitalised forex/CFD
-    #: shops, and Topstep is plausibly the platform-consolidation winner
-    #: (ProjectX exclusivity), so its own hazard could sit well below 1-in-7.
-    #: A Monte Carlo sweep (scripts/firm_failure_sensitivity.py,
-    #: docs/FIGURES_LEDGER.md #12) settles it without needing that rate:
-    #: IMMEDIATE beats LOCK_FIRST at every annual hazard tested from 0% to
-    #: 25%, so the choice does not depend on which estimate of Topstep's own
-    #: failure rate turns out to be right.
+    #: IMMEDIATE takes the cash and stays exposed to the counterparty risk
+    #: Topstep's own rules do not price (prop-firm failures: True Forex Funds,
+    #: Nexgen, ~80-100 firms in 2024). That risk is real, but a Monte Carlo
+    #: hazard sweep (scripts/firm_failure_sensitivity.py,
+    #: docs/FIGURES_LEDGER.md #12-13) shows it is not large enough to flip the
+    #: policy choice at any hazard tested from 0% to 25%/yr: LOCK_FIRST wins
+    #: on the rules alone (see below) by more than the hazard sweep can claw
+    #: back. Kept for the $250/trade size and as an option when counterparty
+    #: risk is judged unusually high for a specific firm.
     IMMEDIATE = "immediate"
+    #: Default. Under Topstep's CURRENT payout rules (read 2026-11-06:
+    #: ``XFARules.payout_locks_mll`` and ``profit_since_payout_required``,
+    #: both True by default), this wins over 11 years at every size tested
+    #: except $250/trade (docs/FIGURES_LEDGER.md #13, docs/CANDIDATES.md #15).
+    #:
+    #: This reverses an earlier version of this default (2026-11-06, same
+    #: day): IMMEDIATE won under the OLDER rule model, where a payout taken
+    #: before the natural trailing-peak lock left the account's floor below
+    #: $0 and exposed. ``payout_locks_mll=True`` means a payout now locks the
+    #: floor at $0 immediately regardless of policy, which removes most of
+    #: IMMEDIATE's structural advantage; what is left of LOCK_FIRST's
+    #: disadvantage (waiting for the lock while a near-breakeven strategy can
+    #: die first -- docs/FIGURES_LEDGER.md #12's 45.3% lock-attainment rate)
+    #: is smaller than what ``profit_since_payout_required`` costs IMMEDIATE's
+    #: more frequent early payouts. Re-verify against the live Topstep payout
+    #: page before trusting this if it has been more than a few months.
     LOCK_FIRST = "lock_first"
 
 
@@ -113,7 +119,20 @@ class XFARules:
     #: ...and at most this many dollars. Topstep's 50K cap is $2,000; adding
     #: the optional Daily Loss Limit at purchase doubles it, and this plan
     #: keeps the Responsible Trading Advantage on, so $4,000 applies.
+    #: 2026-11-06: the payout page says the $4,000 applies only to NEW Combines
+    #: with the DLL added at checkout, as a limited-time offer. If that offer
+    #: has ended, this is $2,000 -- check at purchase.
     payout_cap: float = 4000.0
+    #: "After a payout: Your Maximum Loss Limit (MLL) resets to $0
+    #: permanently" -- help.topstep.com payout policy, read 2026-11-06. Ported
+    #: from an independent concurrent session's rule re-check (see
+    #: docs/NOTES_JX.md) rather than re-derived here. Without this, a payout
+    #: taken before the natural lock left the trailing floor below $0, which
+    #: understates how much a payout protects (or exposes) the account.
+    payout_locks_mll: bool = True
+    #: "Positive net profit since your last Payout" is required for every
+    #: payout after the first (same page, same read). Also ported.
+    profit_since_payout_required: bool = True
     #: Trader's share. The "100% of your first $10,000" arrangement is limited
     #: to accounts on the new dashboard before 2026-01-12, which this one will
     #: not be.
@@ -149,6 +168,11 @@ class _Account:
     balance: float = 0.0
     peak: float = 0.0
     winning_days: int = 0
+    #: Set by a payout when ``XFARules.payout_locks_mll``: the floor is then
+    #: $0 for good, independent of the peak-trailing lock below.
+    paid_out: bool = False
+    #: Balance right after the last payout, for the profit-since-payout test.
+    after_payout: float | None = None
 
     def floor(self, limit: float, locks_at: float | None) -> float:
         """The balance at which this account is closed.
@@ -156,8 +180,12 @@ class _Account:
         For an evaluation the limit simply trails the peak. For a funded
         account the same expression already produces the lock: once the peak
         reaches the limit's size the floor would rise above zero, and the rule
-        is that it never does.
+        is that it never does. A payout under ``payout_locks_mll`` locks the
+        floor at $0 immediately, regardless of whether the peak ever got there
+        on its own.
         """
+        if self.paid_out:
+            return 0.0
         trailing = self.peak - limit
         return trailing if locks_at is None else min(trailing, 0.0)
 
@@ -189,7 +217,7 @@ def costs(rules: XFARules, days: float, resets: int, activations: int) -> dict:
 
 
 def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
-            policy: Policy = Policy.IMMEDIATE,
+            policy: Policy = Policy.LOCK_FIRST,
             funded_scale: float = 1.0, risk_usd: float | None = None) -> dict:
     """Run one real sequence of trades through buy / pass / earn / lose.
 
@@ -334,13 +362,20 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
 
         eligible = (account.winning_days >= rules.winning_days_required
                     and account.balance > 0
+                    and not (rules.profit_since_payout_required
+                             and account.after_payout is not None
+                             and account.balance <= account.after_payout)
                     and (account_locked or policy is Policy.IMMEDIATE))
         if eligible:
             amount = min(account.balance * rules.payout_share, rules.payout_cap)
             # The balance falls; the high-water mark the limit trails does not.
-            # That is what makes an early payout expensive.
+            # That is what makes an early payout expensive -- unless
+            # payout_locks_mll fires below, which makes it free insurance.
             account.balance -= amount
             account.winning_days = 0
+            account.after_payout = account.balance
+            if rules.payout_locks_mll:
+                account.paid_out = True
             gross += amount
             cash += amount * rules.profit_split
             payouts += 1

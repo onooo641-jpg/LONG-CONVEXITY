@@ -59,14 +59,19 @@ PRICE_TOLERANCE = 2.0
 STOPPING_RULE = 6
 
 #: Days between payouts, replaying 2016-2026 at $900 a trade under the
-#: account structure's default policy (LOCK_FIRST): median 21, 90th
-#: percentile 213. This only covers the evaluation-burn side of the
+#: account structure's default policy (LOCK_FIRST): 90th percentile 239.
+#: Recomputed 2026-11-06 after two Topstep payout rules (a payout locks the
+#: MLL to $0; profit since last payout required for every payout after the
+#: first) were added to the rule model -- the prior value of 213 was measured
+#: before those rules existed in the simulation and is stale, not wrong for
+#: its own window. This only covers the evaluation-burn side of the
 #: business -- a funded account that busts before ever paying out still
 #: resets the streak above to zero the moment it was EARNED, not when it
 #: PAID. A long dry spell on a live funded account would not trip
-#: STOPPING_RULE at all. Recompute with
-#: scratchpad check in docs/NOTES_JX.md (check 7).
-PAYOUT_DROUGHT_DAYS = 213
+#: STOPPING_RULE at all. Recompute by replaying ``backtest.recycle.recycle``'s
+#: timeline and taking percentile gaps between consecutive "payout" events
+#: (see docs/FIGURES_LEDGER.md #11).
+PAYOUT_DROUGHT_DAYS = 239
 
 #: Trailing-trade sample and the profit-factor floor below it that marks the
 #: worst decile. Replaying the same 2016-2026 run's own trades (not the
