@@ -295,7 +295,8 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
             mark(exit_ts, "funded_bust", at)
             continue
 
-        locked = account.peak >= rules.mll_locks_at
+        locked = (rules.mll_locks_at is not None
+                  and account.peak >= rules.mll_locks_at)
         eligible = (account.winning_days >= rules.winning_days_required
                     and account.balance > 0
                     and (locked or policy is Policy.IMMEDIATE))
