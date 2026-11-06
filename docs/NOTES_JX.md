@@ -1,5 +1,10 @@
 # NOTES_JX — three checks before buying anything
 
+> **Update, later on 2026-11-06: Topstep's rules re-checked, and the policy
+> verdict in §1 flipped.** Read "Rules re-checked" at the end first. Sections
+> 1–3 below are as first written, using the 2026-09-14 rulebook
+> (`jx_checks.py --rules 20260914`).
+
 Run 2026-11-06. No strategy parameter was changed. One mechanical fix was
 needed (commit `e7d6950`: `XFARules(mll_locks_at=None)` raised `TypeError`).
 
@@ -163,3 +168,91 @@ no lock $21,166, all five −$11,910, worst pair $4,925. Same shape.
    in `compute()`), then regenerate the report and GO_LIVE line 158.
 3. Before going live: the empty-response class in `docs/ARTIFACT_CLASSES.md`
    (class 3) has unguarded sites in the shutdown path. Read that first.
+
+---
+
+## Rules re-checked against Topstep (2026-11-06, later)
+
+Read from Topstep's own pages that day (help.topstep.com payout policy,
+topstep.com/express-funded-account-rules, help.topstep.com MLL article).
+
+| rule | model had | Topstep says | effect |
+|---|---|---|---|
+| MLL after a payout | unchanged (could stay below $0) | **"resets to $0 permanently"** | **new, modelled** (`payout_locks_mll`) |
+| 2nd+ payout | 5 winning days | + **positive net profit since last payout** | new, modelled (`profit_since_payout_required`) |
+| MLL lock at +$2,000, $2,000 trailing, EOD | yes | yes | matches |
+| 5 winning days of $150+, 50% of balance, 90/10 | yes | yes | matches |
+| 50K payout cap | $4,000 | **$2,000**; $4,000 only for new Combines with the DLL added at checkout, as a limited-time offer from "June 2nd" | unclear if the offer is still on. Cap barely moves the result (below). |
+| Back2Funded window | 30 days (GO_LIVE) | **7 calendar days**, $599 | GO_LIVE corrected. Not in the model. |
+| Standard reset $49, activation $149 per XFA earned | yes | yes | matches |
+
+Not verified: No-Activation path pricing. Third-party sites disagree
+($85–$109 a month and per reset). Check your dashboard.
+
+### What changed (data to 2026-10-28, $900, one chain from 2016)
+
+| | old rules | **current rules** |
+|---|---|---|
+| IMMEDIATE net | $48,190 | $42,954 |
+| **LOCK_FIRST net** | $44,823 | **$44,590** |
+| winner | IMMEDIATE | **LOCK_FIRST** |
+
+The payout-resets-MLL rule makes an early payout throw away the buffer below
+$0. LOCK_FIRST now wins at $500 (+$3,883), $900 (+$1,636) and $1,000
+(+$10,982). IMMEDIATE wins only at $250, where both lose money.
+**The current policy is LOCK_FIRST.** `account_lifetime.py`, `fade_report.py`
+and the recycling report now use it explicitly.
+
+So the §1 call ("IMMEDIATE is current") was right under the old model and is
+now superseded. GO_LIVE line 158 (+$42,414, LOCK_FIRST) had the right policy
+by default. Its 1,184-day drought and 39-account streak are LOCK_FIRST
+figures, so they're current again.
+
+### Check 2 under current rules (LOCK_FIRST, data to 2026-10-28)
+
+- 2024–2026 = **50.0%** of withdrawals ($31,023 of $62,065).
+- 2016–2023 net **+$18,602** while the strategy alone lost $45,617.
+- The 5 losing years net **−$2,473**. The 6 others +$47,063.
+- Verdict unchanged: **not concentrated in the recent regime. Doesn't rule
+  out buying.**
+
+### Check 3 under current rules (LOCK_FIRST, data to 2026-10-28)
+
+| change | net |
+|---|---|
+| baseline | $44,590 |
+| reset $49 → $99 | $43,240 |
+| activation per attempt | $29,094 |
+| payout cap $4,000 → $2,000 | $44,261 |
+| 10 winning days | $43,035 |
+| **MLL never locks** (trailing never locks, payouts don't lock either) | **−$17,079** |
+| all five | −$33,825 |
+
+Pairs without the lock change all stay above +$27,000. Any pair *with* it is
+negative.
+
+Read this carefully. Under LOCK_FIRST, "no lock" means **no payouts ever**,
+because the policy waits for a lock that doesn't exist. That's a policy
+artefact: a trader would switch to IMMEDIATE. Under IMMEDIATE the same change
+gives **+$21,166** (worst pair +$4,925, all five −$11,875). So:
+
+- **If the lock rule ever changes, switch policy.** The business survives at
+  roughly half the profit.
+- Everything else Topstep could plausibly tighten costs 0–35%.
+
+Commands: `uv run python scripts/jx_checks.py --skip-strategy` (current rules
+are the default) and `--rules 20260914` for the old ones. Output is in
+`docs/jx_runs/checks_rules20261106_*.txt`.
+
+### Step 3 done: empty-book proof
+
+`python -m bridge.live --roundtrip`, GO_LIVE step 4b. Without it, `--live`
+never exits 0 (no auto-shutdown) and the deadline sweep cancels everything
+sent. See ARTIFACT_CLASSES class 3.
+
+### Still open
+
+- Which payout cap applies to the Combine you actually buy ($2,000 or $4,000).
+  Check at checkout.
+- `docs/recycling_report.pdf` and `docs/fade_report.html` weren't regenerated.
+- GO_LIVE's $900 → $250 / guard table was not recomputed (flagged in place).

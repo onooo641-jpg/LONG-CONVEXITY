@@ -23,8 +23,14 @@ Command shorthand:
 - `ORD0908` / `ORDALL` = `data/processed/jx_orders_20260908T0527.parquet` /
   `jx_orders_all.parquet`, written by the first `jx_checks.py` run on that window
 
-Recycling figures are $900/trade, one unbroken chain from 2016-01-01,
-`XFARules()` as of 2026-09-14, unless the row says otherwise.
+Rulebooks: **RB0914** = Topstep rules as read 2026-09-14
+(`jx_checks.py --rules 20260914`). **RB1106** = plus the two payout rules read
+2026-11-06 (payout resets the MLL to $0; profit since last payout). RB1106 is
+`XFARules()`'s default and the current rulebook.
+
+Recycling figures are $900/trade, one unbroken chain from 2016-01-01. Rows
+R1–R13 and A1–A4 are **RB0914** unless they say otherwise. Rows tagged N
+(below) are RB1106 and supersede them.
 
 ## Strategy alone
 
@@ -59,7 +65,27 @@ Recycling figures are $900/trade, one unbroken chain from 2016-01-01,
 | R12 | all five changes together | −$12,352 (W1028: −$11,910) | same | | 2026-11-06 | current |
 | R13 | "7/11 profitable years, first three lose" (GO_LIVE 167) | 7/11 | `ASOF scripts/recycling_report.py ...` "by calendar year" | W0908 | 2026-11-06 | superseded: LOCK_FIRST. IMMEDIATE version not computed. |
 
-## Accounts (scripts/account_lifetime.py, IMMEDIATE)
+## Recycling under current rules (RB1106) — supersedes R1–R13 where they overlap
+
+`CHKN` = `uv run python scripts/jx_checks.py --skip-strategy`;
+`CHKN0908` = the same with `--end 2026-09-08T05:27Z`.
+
+| # | figure | value | command | window | computed | status |
+|---|---|---|---|---|---|---|
+| N1 | **current policy** | **LOCK_FIRST** (beats IMMEDIATE at $500/$900/$1,000) | `CHKN` §1, plus the per-size comparison in NOTES_JX | W1028 | 2026-11-06 | **current**. Supersedes R3's "IMMEDIATE is current". |
+| N2 | chain, LOCK_FIRST: withdrawn / spent / net | $62,065 / $17,475 / **$44,590** | `CHKN` §1 | W1028 | 2026-11-06 | **current** |
+| N2b | same | $58,450 / $17,314 / $41,136 | `CHKN0908` §1 | W0908 | 2026-11-06 | current for W0908 |
+| N3 | chain, IMMEDIATE | $61,264 / $18,310 / $42,954 | `CHKN` §1 | W1028 | 2026-11-06 | current (not the policy) |
+| N4 | longest no-payout / bust streak, LOCK_FIRST | 1,184 days / 39 | `CHKN` §1 | both | 2026-11-06 | current. R5/R6's 1,184 and 39 are current again. |
+| N5 | 2024–2026 share of withdrawals | 50.0% | `CHKN` §2 | W1028 | 2026-11-06 | current |
+| N6 | 2016–2023 net / 5 losing years net | +$18,602 / −$2,473 | `CHKN` §2 | W1028 | 2026-11-06 | current |
+| N7 | stress, LOCK_FIRST: no lock / all five | −$17,079 / −$33,825 (no payouts at all) | `CHKN` §3 | W1028 | 2026-11-06 | current. Policy artefact, see NOTES_JX. |
+| N8 | stress, IMMEDIATE: no lock / all five / worst pair | $21,166 / −$11,875 / $4,925 | `CHKN` §3 | W1028 | 2026-11-06 | current |
+| N9 | 5-account table, $900, n=1/3/5/8/10 net | $44,590 / $137,539 / **$230,488** / $183,718 / $152,538 | `uv run python scripts/account_lifetime.py --orders ORDALL` | W1028 | 2026-11-06 | **current**. Supersedes A1/A1b. |
+| N10 | funded mortality, $900 | 100% of 53 XFA; median life 11 trades / 20 days | same | W1028 | 2026-11-06 | current. Supersedes A2/A3. |
+| N11 | staggered 5 chains, bust days shared | 151/161 (93.8%) | same | W1028 | 2026-11-06 | current. Supersedes A4. |
+
+## Accounts (scripts/account_lifetime.py, IMMEDIATE, RB0914) — superseded by N9–N11
 
 | # | figure | value | command | window | computed | status |
 |---|---|---|---|---|---|---|
