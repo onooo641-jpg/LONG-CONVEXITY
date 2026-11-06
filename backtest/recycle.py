@@ -60,28 +60,35 @@ class Policy(Enum):
     #: Topstep's own rules do not price (prop-firm failures: True Forex Funds,
     #: Nexgen, ~80-100 firms in 2024). That risk is real, but a Monte Carlo
     #: hazard sweep (scripts/firm_failure_sensitivity.py,
-    #: docs/FIGURES_LEDGER.md #12-13) shows it is not large enough to flip the
+    #: docs/FIGURES_LEDGER.md #16) shows it is not large enough to flip the
     #: policy choice at any hazard tested from 0% to 25%/yr: LOCK_FIRST wins
     #: on the rules alone (see below) by more than the hazard sweep can claw
     #: back. Kept for the $250/trade size and as an option when counterparty
     #: risk is judged unusually high for a specific firm.
     IMMEDIATE = "immediate"
-    #: Default. Under Topstep's CURRENT payout rules (read 2026-11-06:
-    #: ``XFARules.payout_locks_mll`` and ``profit_since_payout_required``,
-    #: both True by default), this wins over 11 years at every size tested
-    #: except $250/trade (docs/FIGURES_LEDGER.md #13, docs/CANDIDATES.md #15).
+    #: Default. Under Topstep's CURRENT payout rules (confirmed against their
+    #: own pages 2026-11-06, docs/TOPSTEP_RULES.md: ``XFARules.payout_locks_mll``
+    #: and ``profit_since_payout_required``, both True by default, plus the
+    #: $2,000 standing payout_cap, not the $4,000 promo figure this once used),
+    #: this wins over 11 years at every size tested except $250/trade
+    #: (docs/FIGURES_LEDGER.md #15-16, docs/CANDIDATES.md #15).
     #:
     #: This reverses an earlier version of this default (2026-11-06, same
-    #: day): IMMEDIATE won under the OLDER rule model, where a payout taken
+    #: day): IMMEDIATE won under an OLDER rule model, where a payout taken
     #: before the natural trailing-peak lock left the account's floor below
     #: $0 and exposed. ``payout_locks_mll=True`` means a payout now locks the
-    #: floor at $0 immediately regardless of policy, which removes most of
-    #: IMMEDIATE's structural advantage; what is left of LOCK_FIRST's
-    #: disadvantage (waiting for the lock while a near-breakeven strategy can
-    #: die first -- docs/FIGURES_LEDGER.md #12's 45.3% lock-attainment rate)
-    #: is smaller than what ``profit_since_payout_required`` costs IMMEDIATE's
-    #: more frequent early payouts. Re-verify against the live Topstep payout
-    #: page before trusting this if it has been more than a few months.
+    #: floor at $0 immediately regardless of policy -- a punitive mechanic on
+    #: an early payout (it tightens a floor that would otherwise still be
+    #: negative), not a protective one, which is why isolating it alone still
+    #: favours LOCK_FIRST rather than IMMEDIATE as naive intuition would
+    #: suggest (docs/FIGURES_LEDGER.md #17 -- checked against this class's own
+    #: floor() docstring before trusting it). What decides it is mostly
+    #: ``profit_since_payout_required`` throttling IMMEDIATE's more frequent
+    #: early payouts, against LOCK_FIRST's lower lock-attainment rate (44.2%,
+    #: #16) as the cost of waiting. Re-verify against the live Topstep payout
+    #: page before trusting this if it has been more than a few months --
+    #: third-party trackers describe 2026 rule changes Topstep's own pages did
+    #: not confirm as of this read; see docs/TOPSTEP_RULES.md.
     LOCK_FIRST = "lock_first"
 
 
@@ -116,13 +123,15 @@ class XFARules:
     winning_days_required: int = 5
     #: A payout may take at most this share of the balance...
     payout_share: float = 0.50
-    #: ...and at most this many dollars. Topstep's 50K cap is $2,000; adding
-    #: the optional Daily Loss Limit at purchase doubles it, and this plan
-    #: keeps the Responsible Trading Advantage on, so $4,000 applies.
-    #: 2026-11-06: the payout page says the $4,000 applies only to NEW Combines
-    #: with the DLL added at checkout, as a limited-time offer. If that offer
-    #: has ended, this is $2,000 -- check at purchase.
-    payout_cap: float = 4000.0
+    #: ...and at most this many dollars. CORRECTED 2026-11-06: confirmed
+    #: against Topstep's own payout-policy page that the standing 50K cap is
+    #: $2,000 ($3,000 on the Consistency path). The earlier $4,000 here was
+    #: the limited-time promo cap (DLL added at checkout on a NEW Combine) --
+    #: a promotion, not the standing rule, and this account was never bought
+    #: under that promo. See docs/TOPSTEP_RULES.md. Effect of the correction
+    #: is small either way: docs/CANDIDATES.md's own stress test already
+    #: showed cap $4,000->$2,000 moves net by <1% (-$329 of $44,590).
+    payout_cap: float = 2000.0
     #: "After a payout: Your Maximum Loss Limit (MLL) resets to $0
     #: permanently" -- help.topstep.com payout policy, read 2026-11-06. Ported
     #: from an independent concurrent session's rule re-check (see

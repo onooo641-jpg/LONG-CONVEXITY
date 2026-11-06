@@ -322,6 +322,18 @@ difference of opinion):
   #13/#14), and the two sessions' conclusions now agree exactly: `net`
   figures match to the dollar ($44,590 / $62,065 / $17,475 / 157 accounts /
   53 XFA / 43 payouts / 151 of 161 shared bust days, all identical).
+  **Caveat found afterward (same day): that exact match is evidence the port
+  was faithful, not evidence the two rules themselves were correct — once
+  ported, the two codebases were no longer independent on this point.**
+  Checked both rules against Topstep's own help pages directly: both are
+  real and confirmed (`docs/TOPSTEP_RULES.md`). But `payout_cap=4000.0` was
+  also checked and is wrong — $4,000 is a limited-time promo figure (new
+  Combine + Daily Loss Limit at checkout), not the standing $2,000 cap, and
+  this account was never bought under that promo. Corrected to `2000.0`;
+  conclusion (`LOCK_FIRST` wins) survives, margin narrows from $1,636 to
+  $1,051 at $900/trade (`FIGURES_LEDGER.md` #15/#16). The $44,590 figures
+  above are real for the rule model they were computed under, now
+  superseded — see #15 for the current numbers.
 - **ORB family search and OR5 retest results.** The independent session
   found and fixed a genuine look-ahead bug (previous evening's bars breaking
   a range that forms the next morning — `ARTIFACT_CLASSES.md` class 5,
@@ -355,3 +367,92 @@ committing to the shared branch, the two histories will diverge again, and
 each side will now be building on a different, already-reconciled ledger —
 harder to reconcile a second time than this one was. Worth closing or
 confirming status before relying on the shared branch again.
+
+## Check 10: the exact match proved the port, not the rules
+
+The AGREE-list match above (check 9) was treated as closing the question.
+It didn't — it only proved the port of the other session's rules into this
+one was faithful. The two new rules became single-sourced the moment they
+were ported; from that point on, matching to the dollar is a port-fidelity
+check, not independent replication of the rules themselves.
+
+**Both new rules confirmed against Topstep's own help pages directly**
+(not a third session's citation of them): `docs/TOPSTEP_RULES.md`.
+`payout_locks_mll` and `profit_since_payout_required` are both real.
+**One parameter was wrong**: `payout_cap=4000.0` is the limited-time promo
+figure (new Combine + DLL at checkout), not the standing $2,000 cap this
+account would actually get. Corrected. `LOCK_FIRST` still wins at $900/trade,
+margin narrows from $1,636 to $1,051 (`FIGURES_LEDGER.md` #15/#16).
+
+**Decomposition** (`scripts/payout_rule_decomposition.py`,
+`FIGURES_LEDGER.md` #17): isolated the two rules to check a mechanism
+prediction pre-registered before running it — `payout_locks_mll` alone
+should favour IMMEDIATE (it hands IMMEDIATE the same $0 floor LOCK_FIRST
+waits for, for free), `profit_since_payout_required` alone should favour
+LOCK_FIRST (it throttles IMMEDIATE's more frequent early payouts). **Both
+predictions were wrong about direction.** `payout_locks_mll` alone still
+favours LOCK_FIRST — checked against `_Account.floor()`'s own code and
+docstring before concluding this, not assumed: the rule is punitive when it
+fires on a low-peak account (pins a floor that would otherwise still be
+negative up to exactly $0, right when balance is lowest post-payout), not
+protective, and IMMEDIATE is the policy that tends to pay out before peak
+reaches $2,000. Not a bug — the code matches Topstep's own wording ("set to
+$0 regardless of where it was before") and matches its own docstring; the
+prediction's mental model was incomplete, not the implementation.
+`profit_since_payout_required` alone also favours IMMEDIATE, opposite the
+prediction, for reasons not decomposed further this session (it costs
+LOCK_FIRST more absolute dollars than IMMEDIATE off each policy's own
+baseline — aggregate-level finding only). The combined, actually-shipped
+result (c) is unaffected by either wrong prediction and still matches
+check 9's conclusion.
+
+**Unresolved, flagged rather than guessed at**: multiple third-party
+trackers describe Topstep rule changes during 2026 (an April 2026 payout
+change, a "$5K first cap," a "100/90 split") that don't match what
+Topstep's own help pages state as of this read. Not reconciled — could not
+tell from here whether the third-party pages are stale or Topstep's own
+rulebook changed more than once this year. The 11-year backtest assumes a
+constant rulebook throughout; 2026 is the one year in the window a rule
+change is actually alleged. Re-pull `docs/TOPSTEP_RULES.md`'s sources again
+before buying, and re-run the base case if anything else disagrees with the
+live page the way `payout_cap` did.
+
+## Check 11: the GitHub Actions workflow the other session added
+
+The other session's last commit on the shared branch, `0742fe9` ("Run the
+monthly update on GitHub Actions," 2026-11-06 19:37:41 +0800, authored by
+the same account under a different session ID — `session_011kRjSXx5jfPCnRSnoU7MJr`),
+adds `.github/workflows/monthly.yml` plus `scripts/monthly_update.py`. This
+is the one piece of that session's work that acts on its own rather than
+sitting inert in a branch, so it was read in full before anything else in
+this check.
+
+What it does: runs on a cron (`17 3 2 * *`, monthly) or manual
+`workflow_dispatch`; `permissions: contents: write` only (no
+`actions:write`, can't modify workflows or secrets); needs the
+`DATABENTO_API_KEY` repo secret, degrades to `--skip-fetch` (re-checks
+stored data only, no network call) if the secret is absent; the fetch step
+itself aborts before downloading if Databento's quote exceeds $1.00; the
+only side effect is a commit (as `github-actions[bot]`, not this account)
+of `data/raw`, `docs/forward_log.csv`, and
+`docs/jx_runs/monthly_latest.txt`, pushed with the token `actions/checkout`
+already holds under `contents: write`. One other change in the same commit,
+`scripts/fetch_databento.py`, suppresses an interactive "rotate this key,
+it was pasted into a chat" warning specifically when `GITHUB_ACTIONS` is
+set — read in full; it's a correct call (a CI secret was never pasted
+anywhere, the warning doesn't apply), not a cover for anything.
+
+**Risk read: low, and currently inert.** Scheduled (`schedule:`) workflows
+only fire for commits on the repository's *default* branch — this is on
+`claude/ict-trading-resources-ugh07b`, not `main`, so the cron will not
+fire on its own until/unless this branch is merged. `workflow_dispatch`
+could still be triggered manually by anyone with write access from the
+Actions tab, but that's a deliberate human action, not something that just
+happens. No secret is echoed, no exfiltration path, cost is capped, and the
+commit it produces touches only data/log files, not code.
+
+**Before merging this branch to `main`, re-review this workflow** — that's
+the point at which it stops being inert. Until then it needs no action.
+Does not change the recommendation to close out the other session's
+further work on the shared branch; it changes *why* it was safe to still
+be looking at this rather than disabling it on sight.
