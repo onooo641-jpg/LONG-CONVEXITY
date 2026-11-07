@@ -116,3 +116,26 @@ Re-run with fees at today's ratio (1.8% of risk): raw PF 1.000, raw +$79,
 It does not reproduce the 2016–2025 figure ($31,404 over 10 years). The pass
 rate (24%) is below the zero-edge coin-flip baseline (26.7%,
 `jx_zero_edge.py`).
+
+---
+
+## Addendum A — registered 2026-11-07, before running: the seven registry strategies
+
+`strategies/registry.py`'s seven pre-registered strategies have never been
+scored on 2010-07-01..2015-12-31. Their parameters were frozen long before
+this, so running them here adds no new free choice. The Asian-session caveat
+(thin overnight bars before 2013) applies to **po3_judas**, which is scored
+but marked unreliable. The other six trade inside 07:00–14:00 ET.
+
+- Command: `scripts/compare_strategies.py`'s own `run_period()` on
+  2010-07-01..2016-01-01, `BacktestConfig(risk_per_trade_usd=500.0)` (the
+  README's table setting), no hindsight, no null runs.
+- Reported per strategy: trades, win rate, net, **net PF**, **gross PF**, and
+  net PF with fees reset to today's ratio (1.8% of risk per trade, as in the
+  post-hoc check above).
+- **A strategy passes only if net PF > 1.0 at the fees of the time AND
+  net PF > 1.0 at 1.8%-of-risk fees.** Passing earns a shadow log, nothing
+  more.
+
+V1 (news days) keeps its original definition above. It is run when all six
+series' dates for 2010-06..2015-12 are in hand.
