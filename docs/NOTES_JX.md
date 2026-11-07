@@ -513,3 +513,50 @@ from $1,051 to $1,650). But the headline number is not representative of a
 typical year: one partial, unusually strong year is doing close to a third
 of the work. Worth carrying into any go/no-go decision as its own line, not
 folded into "the 11-year net is $44,261."
+
+## Check 14: does the stopping rule survive the history it was measured on
+
+`scripts/reconcile.py`'s two stopping rules (`PAYOUT_DROUGHT_DAYS=239`,
+`TRAILING_PF_MIN=0.70`) are both percentiles of this same 11-year run
+(`FIGURES_LEDGER.md` #11). A percentile is silent about whether someone
+actually holding the rule would have stopped trading before the run ever
+produced the number the percentile is itself read off. Flagged directly:
+the repo's own recorded longest dry spell is 1,184 days (`FIGURES_LEDGER.md`
+#6, #15); a 239-day drought trigger and an 1,184-day drought cannot both be
+true of someone who traded through the whole thing without stopping.
+
+Pre-registered question: apply the stopping rule retroactively to
+2016-2026, find every date it would have fired, and what net would have
+been frozen there if trading never resumed. One of two things would have to
+be true: (a) the rule is too tight and needs re-registering against the
+observed drought distribution, or (b) the rule is right and the 11-year
+headline is only achievable by trading through droughts that would not
+actually be sat through. Instructed explicitly not to adjust the thresholds
+to make (a) go away, and to commit the result either way.
+
+Ran it (`scripts/stopping_rule_retroactive.py`, `FIGURES_LEDGER.md` #20).
+Both rules fire for the first time in 2016 — eight months into the whole
+project, and well before the first payout anywhere in the 11-year run
+(2019-04-02):
+
+| trigger | first fires | frozen net |
+|---|---|---|
+| `PAYOUT_DROUGHT_DAYS=239` (current) | 2016-08-30 | −$706 |
+| `PAYOUT_DROUGHT_DAYS=213` (superseded) | 2016-08-04 | −$657 |
+| `TRAILING_PF_MIN=0.70`, 100 trailing trades | 2016-08-17 | −$706 |
+
+All three stop inside the 1,184-day dry spell, before it resolves. The
+239-day drought trigger refires four more times later in the window
+(2020-11-24 frozen $5,446; 2021-11-17 frozen $7,443; 2022-10-06 frozen
+$8,052; 2026-05-09 frozen $30,307) — each is a point where a disciplined
+trader following the rule as written, with no carve-out for "no payout has
+ever happened yet," would stop and not see what comes after.
+
+**Answer: (b), not (a).** The rule is not mismeasured or too tight; the
+11-year headline net (`FIGURES_LEDGER.md` #15, #18) is only reachable by
+sitting through a drought the project's own stopping rule says to exit.
+Thresholds were not touched to make this disappear. This is the single most
+decision-relevant fact to come out of this whole exercise: the backtest's
+return depends on a tolerance for drawdown-without-payout that the project
+has never actually tested on the person who would be holding the account —
+only on the rule that says when to stop holding it.
