@@ -360,3 +360,23 @@ signs randomised 200 times, fees kept, current rules, LOCK_FIRST.
   hour in winter than miss trades.
 - Not changed: `scripts/quarterly_report.py` has its own first-pass replay,
   which still trails without the Combine lock.
+
+---
+
+## Holdout result, 2010-2015 (2026-11-07)
+
+Pre-registered in `docs/HOLDOUT_PREREG.md` (633a258) before running; full
+result and post-hoc analysis there.
+
+- **The recycling business did not work on 5.5 unseen years.** Net −$2,505
+  at the fees of the time. At today's fee ratio it breaks even (+$164).
+  Pass rate 24% at today's fees, below a coin flip's 26.7%.
+- The strategy's edge **before fees** is thin everywhere: gross PF 1.04 on
+  the holdout, 1.12 on 2016-2026. Much of the "it got better after 2019"
+  pattern tracks fees falling from ~13–18% of risk to ~2% as NQ's price
+  rose. It is not only a regime change.
+- Filters: V3 (skip stops wider than 2× the recent median) wins by the
+  registered rule by a negligible margin. Shadow-log candidate only. V2 and
+  V4 fail. V1 is pending the 2010-2015 news calendar.
+- **Planning range, honestly stated:** 2016–2025 backtest ≈ $3,140/yr; unseen
+  2010–2015 at today's costs ≈ $0/yr. Downside in both is capped at fees.

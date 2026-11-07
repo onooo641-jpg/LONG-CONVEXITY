@@ -82,3 +82,37 @@ on the holdout (the main thesis check), and every variant on 2016-01-01 to
 
 `uv run python scripts/holdout_test.py` (written after this file, committed
 with the results).
+
+---
+
+## Result (2026-11-07, run once, commit after 633a258)
+
+`uv run python scripts/holdout_test.py` → `docs/jx_runs/holdout_test_2010_2015.txt`.
+
+**Baseline on the holdout** ($900, current Topstep rules, LOCK_FIRST):
+625 trades, win 52.3%, **PF 0.784**, raw −$67,633. Recycling: **net
+−$2,505** (withdrawn $2,431, spent $4,936), pass rate 16.7%, 3 payouts,
+longest dry spell 1,739 days.
+
+**Verdict by the pre-registered rule:**
+- V2 trend: no (recycling net lower)
+- **V3 wide stop: WIN** by the rule, but by a hair (recycling net +$373,
+  PF 0.784 → 0.788). It goes to a shadow log only, as registered.
+- V4 gap: no (recycling net lower)
+- V1 news: not run (calendar pending)
+
+## Post-hoc explanation (not pre-registered, does not change the verdict)
+
+`scripts/holdout_fee_check.py` → `docs/jx_runs/holdout_fee_check.txt`.
+Before fees the holdout is slightly positive: **gross PF 1.037** (+$10,204).
+Fees were $77,837. NQ traded around 2,000–4,500, stops were 3.5–6.6 points,
+so $900 of risk meant 70–127 micros, and fees ran **10–18% of risk per
+trade**. They are ~2% today. The same drag explains much of 2016–2018
+(12–13% of risk, all losing years). It fell steadily as the index rose.
+
+Re-run with fees at today's ratio (1.8% of risk): raw PF 1.000, raw +$79,
+**recycling net +$164** over 5.5 years, pass rate 24.0%. At 2.4%:
+−$281. So on unseen years, at today's costs, the business **breaks even**.
+It does not reproduce the 2016–2025 figure ($31,404 over 10 years). The pass
+rate (24%) is below the zero-edge coin-flip baseline (26.7%,
+`jx_zero_edge.py`).
