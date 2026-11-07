@@ -139,3 +139,35 @@ but marked unreliable. The other six trade inside 07:00–14:00 ET.
 
 V1 (news days) keeps its original definition above. It is run when all six
 series' dates for 2010-06..2015-12 are in hand.
+
+## Result — V1 and Addendum A (2026-11-07, each run once)
+
+**V1 news days**, calendar `docs/tier1_calendar_2010_2015.csv` (345 dates:
+CPI/NFP from bls.gov/schedule/<year>, PPI from BLS's historical file, FOMC
+from federalreserve.gov/fomchistorical<year>, Retail Sales and PCE from
+ALFRED's release-date files rid=9 and rid=54. ALFRED includes revision dates,
+the same method as the 2016+ calendar). Holdout: 485 trades, PF 0.768,
+recycling net −$4,787, 0 payouts. **No**: recycling net lower, PF lower.
+(`docs/jx_runs/holdout_test_2010_2015_with_v1.txt`)
+
+**Addendum A, registry strategies** (`scripts/holdout_registry.py`,
+`docs/jx_runs/holdout_registry_2010_2015.txt`, $500/trade):
+
+| strategy | trades | net PF | PF @1.8% fees | |
+|---|---|---|---|---|
+| po3_judas | 10 | 0.669 | 0.702 | fail (unreliable) |
+| silver_bullet | 480 | 0.695 | 0.885 | fail |
+| turtle_soup | 157 | 0.564 | 0.628 | fail |
+| ob_retest | 175 | 0.683 | 0.794 | fail |
+| **breaker_retest** | 122 | **1.089** | **1.267** | **pass** (+$3,687) |
+| ote_retracement | 106 | 0.535 | 0.575 | fail |
+| sfp_reversal | 515 | 0.843 | 1.045 | fail |
+
+One pass in seven is what chance alone would often give. breaker_retest's
+record across all three windows: dev 2016–2023 PF 1.04, OOS 2024+ PF 0.93
+(README), holdout 2010–2015 PF 1.089, on 122 trades. Shadow-log candidate,
+nothing more.
+
+**Final tally on the holdout:** 1 of 4 filters (V3) and 1 of 7 strategies
+(breaker_retest) pass, both by thin margins. The main business case breaks
+even at today's fees.

@@ -1,0 +1,9 @@
+strategy           trades   win%      net $  net PF gross PF  PF@1.8%  verdict
+po3_judas              10  40.0%       -935   0.669    0.730    0.702  fail (unreliable: Asian session thin pre-2013)
+silver_bullet         480  32.9%    -61,867   0.695    0.909    0.885  fail
+turtle_soup           157  26.8%    -26,068   0.564    0.647    0.628  fail
+ob_retest             175  30.3%    -22,405   0.683    0.815    0.794  fail
+breaker_retest        122  41.0%      3,687   1.089    1.301    1.267  PASS
+ote_retracement       106  25.5%    -19,270   0.535    0.592    0.575  fail
+sfp_reversal          515  36.5%    -31,595   0.843    1.073    1.045  fail
+_portfolio            662  33.1%    -75,043   0.724    0.921    0.897  - (combined, context)

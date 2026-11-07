@@ -4,7 +4,8 @@
 
 Run once. Definitions, account model and the win rule live in the
 pre-registration file (committed first, 633a258), not here; this only
-implements them. V1 (news days) is pending its calendar and is not run.
+implements them. V1 uses docs/tier1_calendar_2010_2015.csv, which only
+covers 2010-06..2015-12, so V1's SEEN-window row is not meaningful.
 """
 
 from __future__ import annotations
@@ -30,6 +31,14 @@ def daily(bars: pd.DataFrame) -> pd.DataFrame:
     g = rth.groupby("ny_date")
     return pd.DataFrame({"open": g["open"].first(), "close": g["close"].last(),
                          "range": g["high"].max() - g["low"].min()}).sort_index()
+
+
+def v1_news(orders):
+    """Pre-registered V1: skip release days for the six tier-1 series.
+    Dates: docs/tier1_calendar_2010_2015.csv (BLS, federalreserve.gov, ALFRED)."""
+    cal = pd.read_csv(D.REPO_ROOT / "docs" / "tier1_calendar_2010_2015.csv")
+    days = set(pd.to_datetime(cal["date"]).dt.date)
+    return ~orders["trading_date"].isin(days).to_numpy()
 
 
 def v2_trend(orders, day):
@@ -101,6 +110,7 @@ def main() -> int:
 
     variants = {
         "baseline": np.ones(len(orders), dtype=bool),
+        "V1 news": v1_news(orders),
         "V2 trend": v2_trend(orders, day),
         "V3 wide stop": v3_wide(orders),
         "V4 gap": v4_gap(orders, day),
