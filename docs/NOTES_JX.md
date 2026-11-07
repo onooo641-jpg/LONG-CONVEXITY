@@ -560,3 +560,28 @@ decision-relevant fact to come out of this whole exercise: the backtest's
 return depends on a tolerance for drawdown-without-payout that the project
 has never actually tested on the person who would be holding the account —
 only on the rule that says when to stop holding it.
+
+## Check 15: every start date, every rule, and a stop that doesn't always fire
+
+Check 14 tested one start date (2016-01-01) and two of reconcile.py's three
+rules. `scripts/stopping_rule_all_starts.py` (`FIGURES_LEDGER.md` #21) tests
+all 118 monthly start dates 2016-01..2025-10 with all three. Together they
+stop **118/118**. `STOPPING_RULE=6` alone stops 118/118. Median net when
+stopped: $496, 55% positive, against $37,647 and 100% for never stopping.
+
+Why it can't be fixed by tuning: each threshold is a per-event 90th
+percentile, checked continuously for years, so it fires almost surely. The
+replacement is a **cumulative cash limit** (fees paid − payouts received),
+whose false-alarm rate is measured over the whole horizon. −$3,000 fires on 6%
+of starts, −$3,600 on none. The three percentile rules stay as review
+signals. Recorded as binding in `docs/PRECOMMIT.md` ($3,600 set aside;
+reaching it stops resets pending review).
+
+Calendar months (`FIGURES_LEDGER.md` #22): 80% have no payout, median month
+−$112, average +$340 (+$262 ex-2026). The strategy alone loses in 47% of
+months; October 2026's forward-log 41.7% win rate is matched or worse in 20%
+of backtested months.
+
+Test count: **471 passed** on `965743a` (`uv run pytest`, run twice
+2026-11-07). The "347" in the 965743a hand-off was wrong; the "336" at the top
+of this file is from an earlier point on 2026-11-06.

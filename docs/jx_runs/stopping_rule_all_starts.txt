@@ -1,0 +1,34 @@
+118 start dates, 2016-01-01 .. 2025-10-01; rules 6 evals / 239 days / PF<0.7 over 100
+
+never stop
+  fires on 0/118 starts
+  net when stopped (or at end): median $37,647, mean $36,531, positive 100%
+
+all three rules
+  fires on 118/118 starts, median 284 days in
+  6 evaluations burned: 90, drought: 22, trailing PF: 6
+  net when stopped (or at end): median $496, mean $5,062, positive 55%
+
+STOPPING_RULE=6 only
+  fires on 118/118 starts, median 408 days in
+  6 evaluations burned: 118
+  net when stopped (or at end): median $877, mean $5,533, positive 63%
+
+PAYOUT_DROUGHT_DAYS=239 only (counted from start until the first payout)
+  fires on 78/118 starts, median 252 days in
+  drought: 78, never: 40
+  net when stopped (or at end): median $1,582, mean $9,719, positive 62%
+
+TRAILING_PF_MIN=0.7 only
+  fires on 29/118 starts, median 210 days in
+  never: 89, trailing PF: 29
+  net when stopped (or at end): median $33,350, mean $25,180, positive 75%
+
+cumulative cash limit: stop the first time (fees paid - payouts received) reaches -limit
+  -$1,500: fires on  34/118 (29%); net median $30,034, mean $24,226, positive 71%
+  -$2,000: fires on  23/118 (19%); net median $35,497, mean $27,342, positive 81%
+  -$2,600: fires on  12/118 (10%); net median $36,198, mean $31,712, positive 90%
+  -$3,000: fires on   7/118 (6%); net median $36,510, mean $33,708, positive 94%
+  -$3,600: fires on   0/118 (0%); net median $37,647, mean $36,531, positive 100%
+
+deepest cumulative net before recovery: median $-864, 90th pct $-2,617, worst $-3,568
