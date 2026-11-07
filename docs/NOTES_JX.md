@@ -333,3 +333,30 @@ signs randomised 200 times, fees kept, current rules, LOCK_FIRST.
   lock. Topstep's MLL article says it locks at the starting balance in the
   Combine too. So the model is slightly conservative on passing. Not fixed
   yet.
+
+---
+
+## Model and doc fixes (2026-11-07)
+
+- `XFARules.payout_cap` 4000 → **2000**, the standing 50K Standard cap per
+  Topstep's payout page. The $4,000 figure needs the limited-time DLL offer at
+  checkout.
+- New `XFARules.combine_mll_locks = True`. Topstep's MLL article says the
+  Combine's trailing limit also locks at the starting balance. The model had
+  it trailing forever. Effect is small: +$98 over 11 years, pass rate
+  34.0% → 34.4%.
+- `jx_checks.py` rulebook **20261107** (default) = both changes.
+  20261106 / 20260914 reproduce the earlier runs.
+- Current headline (data to 2026-10-28, $900, LOCK_FIRST): **net $44,359**
+  (withdrawn $61,440, spent $17,081). IMMEDIATE $43,433. No lock: −$17,130
+  (LOCK_FIRST) / $21,000 (IMMEDIATE).
+- Capital (`jx_capital.py`): deepest cumulative loss median −$863, 1 in 10
+  −$2,564, worst **−$3,520**. Days to back-to-even median 144, 1 in 10 1,000,
+  worst 1,357. **Essentially unchanged** from the $4,000-cap run.
+- Zero-edge (`jx_zero_edge.py`): coin flip passes 26.7% and nets $18,046
+  median against the strategy's 34.4% / $44,359.
+- GO_LIVE wake time corrected for US daylight saving: **22:25 MYT now**
+  (US winter), 21:25 in US summer, or 21:25 all year if you'd rather wait an
+  hour in winter than miss trades.
+- Not changed: `scripts/quarterly_report.py` has its own first-pass replay,
+  which still trails without the Combine lock.

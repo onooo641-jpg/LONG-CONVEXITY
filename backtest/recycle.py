@@ -100,7 +100,18 @@ class XFARules:
     #: 2026-11-06: the payout page says the $4,000 applies only to NEW
     #: Combines with the DLL added at checkout, as a limited-time offer from
     #: "June 2nd". If that offer has ended, this is $2,000. Check at purchase.
-    payout_cap: float = 4000.0
+    payout_cap: float = 2000.0
+    #: 2026-11-07: $2,000 is the standing 50K Standard cap on Topstep's payout
+    #: page. The $4,000 above needs the limited-time DLL offer at checkout, and
+    #: nothing shows this account would get it. Set to 2000.
+    #:
+    #: Evaluation MLL lock. Topstep's MLL article (read 2026-11-06): "In the
+    #: Trading Combine and Express Funded Account, the Maximum Loss Limit
+    #: trails your highest end-of-day balance ... Once it reaches your
+    #: starting balance, it locks in permanently." Before 2026-11-07 the model
+    #: let the evaluation floor trail forever, which is pessimistic about
+    #: passing. False reproduces that.
+    combine_mll_locks: bool = True
     #: "After a payout: Your Maximum Loss Limit (MLL) resets to $0
     #: permanently" -- help.topstep.com payout policy, read 2026-11-06. Not in
     #: the 2026-09-14 model: there a payout before the lock left the trailing
@@ -266,7 +277,8 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
         guarded = rules.funded_guard if funded else rules.combine_guard
         if guarded:
             limit = rules.funded_loss_limit if funded else rules.loss_limit
-            locks = rules.mll_locks_at if funded else None
+            locks = (rules.mll_locks_at if funded
+                     else rules.loss_limit if rules.combine_mll_locks else None)
             planned = risk_usd * (funded_scale if funded else 1.0)
             if account.balance - account.floor(limit, locks) < planned * rules.safety_mult:
                 if funded:
@@ -291,7 +303,9 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
                 funded, account, funded_since = True, _Account(), exit_ts
                 mark(exit_ts, "passed", at)
                 continue
-            if account.balance <= account.floor(rules.loss_limit, None):
+            if account.balance <= account.floor(
+                    rules.loss_limit,
+                    rules.loss_limit if rules.combine_mll_locks else None):
                 combine_busts += 1
                 resets += 1
                 bust_streak += 1

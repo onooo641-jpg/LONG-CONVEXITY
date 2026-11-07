@@ -1,0 +1,106 @@
+rules: 20261107  XFARules(profit_target=3000.0, loss_limit=2000.0, combine_max_contracts=50, funded_loss_limit=2000.0, mll_locks_at=2000.0, winning_day_min=150.0, winning_days_required=5, payout_share=0.5, payout_cap=2000.0, combine_mll_locks=True, payout_locks_mll=True, profit_since_payout_required=True, profit_split=0.9, combine_guard=False, funded_guard=False, safety_mult=1.5, monthly=49.0, reset=49.0, activation=149.0, api_monthly=14.5)
+data: 2015-11-17 00:00:00+00:00 -> 2026-10-28 23:59:00+00:00
+
+1. FIGURE DRIFT   ($900, one unbroken chain from 2016)
+                                                 acct  xfa  pay  withdrawn     spent        net
+  recycling_report slice, cap 4,000, LOCK_FIRST   155   53   43     62,065    17,377     44,688
+      longest no-payout 1,184 days, longest bust streak 38, unrealised at end $0
+  recycling_report slice, cap 4,000, IMMEDIATE    169   54   61     61,389    18,212     43,177
+      longest no-payout 479 days, longest bust streak 19, unrealised at end $0
+  recycling_report slice, cap 2,000, LOCK_FIRST   152   52   44     61,440    17,081     44,359
+  recycling_report slice, cap 2,000, IMMEDIATE    165   52   62     61,151    17,718     43,433
+  account_lifetime slice, cap 4,000, LOCK_FIRST   155   53   43     62,065    17,377     44,688
+  account_lifetime slice, cap 4,000, IMMEDIATE    169   54   61     61,389    18,212     43,177
+  account_lifetime slice, cap 2,000, LOCK_FIRST   152   52   44     61,440    17,081     44,359
+  account_lifetime slice, cap 2,000, IMMEDIATE    165   52   62     61,151    17,718     43,433
+  trades: report slice 2185, lifetime slice 2185; raw net of the report slice $-2,553
+
+2. WITHDRAWALS BY CALENDAR YEAR   (unbroken chain, $900, cap 4000)
+
+  policy IMMEDIATE
+    year  payouts  passed  busts  withdrawn   spent*      net  cum withdrawn  share  raw strat
+    2016        1       1     14        125    1,058     -933            125     0%    -30,055
+    2017        2       3     10        238    1,111     -873            363     0%     -9,479
+    2018        1       2     19         30    1,388   -1,358            393     0%    -28,955
+    2019        9       5     15      6,250    1,668    4,582          6,643    10%      6,987
+    2020        6       6     18      6,690    1,950    4,740         13,333    11%      1,369
+    2021        3       6     16      1,409    1,852     -443         14,743     2%     -1,873
+    2022        4       7     21      1,939    2,246     -307         16,682     3%     -6,581
+    2023       11       6     12     12,942    1,656   11,286         29,624    21%     22,970
+    2024        7       6     14      7,065    1,754    5,311         36,689    12%     13,496
+    2025        7       4     16      9,541    1,554    7,987         46,230    16%      1,897
+    2026       11       6      9     14,921    1,480   13,441         61,151    24%     27,671
+  * spent is booked at each event, so it lags the calendar slightly; final spend $17,718
+  2016-2023 (strategy losing)    withdrawn $  29,624 (48.4%)  spent $ 12,930  net $  16,694  raw strategy $ -45,617
+  2024-2026 (strategy winning)   withdrawn $  31,527 (51.6%)  spent $  4,788  net $  26,739  raw strategy $  43,064
+  years the strategy lost        [2016, 2017, 2018, 2021, 2022]
+                                 withdrawn $   3,741 (6.1%)  spent $  7,656  net $  -3,914  raw strategy $ -76,943
+  years the strategy made money  [2019, 2020, 2023, 2024, 2025, 2026]
+                                 withdrawn $  57,409 (93.9%)  spent $ 10,062  net $  47,347  raw strategy $  74,390
+
+  policy LOCK_FIRST
+    year  payouts  passed  busts  withdrawn   spent*      net  cum withdrawn  share  raw strat
+    2016        0       1     13          0    1,009   -1,009              0     0%    -30,055
+    2017        0       2      6          0      962     -962              0     0%     -9,479
+    2018        0       2     18          0    1,144   -1,144              0     0%    -28,955
+    2019        4       6     11      4,474    1,622    2,853          4,474     7%      6,987
+    2020        7       5     18      9,734    1,801    7,933         14,208    16%      1,369
+    2021        1       5     14      1,164    1,605     -441         15,373     2%     -1,873
+    2022        3       7     20      3,342    2,197    1,145         18,715     5%     -6,581
+    2023        8       8     14     11,586    2,052    9,534         30,302    19%     22,970
+    2024        5       6     12      6,596    1,656    4,940         36,897    11%     13,496
+    2025        7       4     16     10,221    1,554    8,667         47,118    17%      1,897
+    2026        9       6      9     14,322    1,480   12,842         61,440    23%     27,671
+  * spent is booked at each event, so it lags the calendar slightly; final spend $17,081
+  2016-2023 (strategy losing)    withdrawn $  30,302 (49.3%)  spent $ 12,391  net $  17,911  raw strategy $ -45,617
+  2024-2026 (strategy winning)   withdrawn $  31,138 (50.7%)  spent $  4,690  net $  26,448  raw strategy $  43,064
+  years the strategy lost        [2016, 2017, 2018, 2021, 2022]
+                                 withdrawn $   4,507 (7.3%)  spent $  6,916  net $  -2,410  raw strategy $ -76,943
+  years the strategy made money  [2019, 2020, 2023, 2024, 2025, 2026]
+                                 withdrawn $  56,933 (92.7%)  spent $ 10,164  net $  46,769  raw strategy $  74,390
+
+3. RULE-CHANGE STRESS TEST   (one change at a time, then all five)
+
+  policy IMMEDIATE
+                                                 acct  xfa  pay  withdrawn     spent        net
+  baseline (selected rulebook)                    165   52   62     61,151    17,718     43,433
+  reset 49 -> 99                                  165   52   62     61,151    19,468     41,683
+  activation per attempt (x accounts bought)      165   52   62     61,151    34,555     26,596
+  MLL never locks (mll_locks_at=None)             164   58   49     39,563    18,563     21,000
+  payout_cap 4000 -> 2000                         165   52   62     61,151    17,718     43,433
+  winning_days_required 5 -> 10                   107   31   40     60,761    12,874     47,887
+  ALL FIVE at once                                160   55   20     23,690    35,065    -11,375
+
+  pairs (net):
+    reset99 + act_attempt            24,846
+    reset99 + nolock                 19,300
+    reset99 + cap2000                41,683
+    reset99 + wd10                   47,887
+    act_attempt + nolock              5,206
+    act_attempt + cap2000            26,596
+    act_attempt + wd10               36,563
+    nolock + cap2000                 21,000
+    nolock + wd10                     5,770
+    cap2000 + wd10                   47,887
+
+  policy LOCK_FIRST
+                                                 acct  xfa  pay  withdrawn     spent        net
+  baseline (selected rulebook)                    152   52   44     61,440    17,081     44,359
+  reset 49 -> 99                                  152   52   44     61,440    18,181     43,259
+  activation per attempt (x accounts bought)      152   52   44     61,440    31,981     29,459
+  MLL never locks (mll_locks_at=None)             153   52    0          0    17,130    -17,130
+  payout_cap 4000 -> 2000                         152   52   44     61,440    17,081     44,359
+  winning_days_required 5 -> 10                   103   32   36     59,798    13,023     46,775
+  ALL FIVE at once                                153   52    0          0    33,329    -33,329
+
+  pairs (net):
+    reset99 + act_attempt            28,359
+    reset99 + nolock                -18,280
+    reset99 + cap2000                43,259
+    reset99 + wd10                   46,775
+    act_attempt + nolock            -32,179
+    act_attempt + cap2000            29,459
+    act_attempt + wd10               36,196
+    nolock + cap2000                -17,130
+    nolock + wd10                   -17,130
+    cap2000 + wd10                   46,775

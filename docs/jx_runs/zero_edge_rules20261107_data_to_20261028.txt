@@ -1,0 +1,3 @@
+real trades:            pass 34.4%  net $44,359
+zero edge (coin flip):  pass median 26.7% [21.6%-32.9%]  net median $18,046  profitable 98%
+zero edge, no fees:     pass median 32.2%  net median $28,579

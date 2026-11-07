@@ -300,3 +300,13 @@ def test_a_second_payout_needs_profit_since_the_first():
                                  profit_since_payout_required=False),
                   policy=Policy.IMMEDIATE)
     assert off["payouts"] == 2
+
+
+def test_the_evaluation_floor_locks_at_the_starting_balance():
+    """Topstep MLL article: in the Combine too, the trailing limit locks once
+    it reaches the starting balance. Up $2,500 (floor would trail to +$500),
+    then a fall to +$100: dead under a floor that trails forever, alive once
+    the floor locks at $0."""
+    path = seq([2500.0, -2400.0])
+    assert recycle(path)["combine_busts"] == 0
+    assert recycle(path, XFARules(combine_mll_locks=False))["combine_busts"] == 1

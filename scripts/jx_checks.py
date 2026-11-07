@@ -33,10 +33,13 @@ RISK = 900.0
 #: Which rulebook. "20261106" adds the two payout rules read that day; the
 #: committed docs/jx_runs/checks_*.txt from before then used "20260914".
 RULEBOOKS = {
-    "20260914": XFARules(payout_locks_mll=False, profit_since_payout_required=False),
-    "20261106": XFARules(),
+    "20260914": XFARules(payout_locks_mll=False, profit_since_payout_required=False,
+                         payout_cap=4000.0, combine_mll_locks=False),
+    "20261106": XFARules(payout_cap=4000.0, combine_mll_locks=False),
+    #: $2,000 standing cap, and the evaluation floor locking at the start.
+    "20261107": XFARules(),
 }
-BASE = RULEBOOKS["20261106"]
+BASE = RULEBOOKS["20261107"]
 HISTORY_START = "2016-01-01"
 
 
@@ -220,7 +223,7 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--end", default=None,
                     help="exclusive UTC cutoff, e.g. 2026-09-08T05:27Z")
-    ap.add_argument("--rules", choices=sorted(RULEBOOKS), default="20261106")
+    ap.add_argument("--rules", choices=sorted(RULEBOOKS), default="20261107")
     ap.add_argument("--skip-strategy", action="store_true",
                     help="skip section 0 (re-scans the signals, ~3 min)")
     args = ap.parse_args(argv)
