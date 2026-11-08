@@ -380,3 +380,22 @@ result and post-hoc analysis there.
   V4 fail. V1 is pending the 2010-2015 news calendar.
 - **Planning range, honestly stated:** 2016–2025 backtest ≈ $3,140/yr; unseen
   2010–2015 at today's costs ≈ $0/yr. Downside in both is capped at fees.
+
+## Commission sensitivity (2026-11-08)
+
+The engine charges MNQ $1.24 round trip. Topstep's pages disagree: $1.22 on
+the Combine/XFA commissions article, **$0.74** on the TopstepX commissions
+article (both found 2026-11-08). Not changed in the model until the actual
+fee shows on a statement. `scripts/commission_sensitivity.py`:
+
+| | $1.24 | $0.74 |
+|---|---|---|
+| 2016–2026 recycling net | $44,359 | **$50,961** |
+| 2016–2026 raw PF | 0.997 | 1.043 |
+| Holdout 2010–2015 recycling net (fees of the time) | −$2,505 | −$2,475 |
+
+Lower fees help the recent period about 15%, but they don't rescue the
+holdout. Check the real per-contract fee on your friend's first statement.
+
+Topstep's product list (help.topstep.com, 2026-11-08) includes ES/MES,
+NQ/MNQ, RTY/M2K and YM/MYM in the Combine and the funded accounts.

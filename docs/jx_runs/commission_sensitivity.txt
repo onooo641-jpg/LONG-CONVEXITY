@@ -1,0 +1,4 @@
+MNQ $1.24 RT | holdout 2010-07..2015  raw PF 0.784  raw $  -67,633 | recycle net $  -2,505  pass 16.7%
+MNQ $1.24 RT | 2016..2026-10          raw PF 0.997  raw $   -2,553 | recycle net $  44,359  pass 34.4%
+MNQ $0.74 RT | holdout 2010-07..2015  raw PF 0.879  raw $  -36,247 | recycle net $  -2,475  pass 21.4%
+MNQ $0.74 RT | 2016..2026-10          raw PF 1.043  raw $   40,569 | recycle net $  50,961  pass 36.4%
