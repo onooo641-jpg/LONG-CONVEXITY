@@ -119,6 +119,10 @@ def main(argv=None) -> int:
     ap.add_argument("--no-verify-overlap", action="store_true",
                     help="skip the bar-for-bar check against the stored data")
     ap.add_argument("--dry-run", action="store_true", help="quote the cost and stop")
+    ap.add_argument("--symbol", default=SYMBOL,
+                    help="continuous symbol, e.g. ES.v.0. Anything but NQ.v.0 is "
+                         "written under its own file prefix and skips the NQ "
+                         "overlap check, which has nothing to compare against")
     args = ap.parse_args(argv)
 
     key = os.environ.get("DATABENTO_API_KEY")
@@ -135,10 +139,10 @@ def main(argv=None) -> int:
     import databento as db  # imported here so the repo runs without it installed
 
     client = db.Historical(key)
-    req = dict(dataset=DATASET, symbols=[SYMBOL], stype_in=STYPE_IN,
+    req = dict(dataset=DATASET, symbols=[args.symbol], stype_in=STYPE_IN,
                schema=SCHEMA, start=args.start, end=args.end)
 
-    print(f"{SYMBOL}  {SCHEMA}  {args.start} -> {args.end} (end exclusive)")
+    print(f"{args.symbol}  {SCHEMA}  {args.start} -> {args.end} (end exclusive)")
     cost = client.metadata.get_cost(**req)
     print(f"  quoted cost ${cost:.4f}  (cap ${args.max_cost_usd:.2f})")
     if cost > args.max_cost_usd:
@@ -153,13 +157,14 @@ def main(argv=None) -> int:
     print(f"  {len(df):,} bars   {df.ts.min()} -> {df.ts.max()}")
     D.assert_clean(df)
 
-    if not args.no_verify_overlap:
+    if not args.no_verify_overlap and args.symbol == SYMBOL:
         print("verifying the overlap against data/processed/nq_1m.parquet ...")
         n = verify_overlap(df)
         print(f"  {n:,} overlapping bars match exactly"
               if n else "  no overlapping bars to check")
 
-    out = args.out or (D.RAW_DIR / f"NQ_v_0_1m_{args.start}_{args.end}.parquet")
+    prefix = args.symbol.replace(".", "_")
+    out = args.out or (D.RAW_DIR / f"{prefix}_1m_{args.start}_{args.end}.parquet")
     D.RAW_DIR.mkdir(parents=True, exist_ok=True)
     df.to_parquet(out, compression="zstd", index=False)
     print(f"wrote {out}")

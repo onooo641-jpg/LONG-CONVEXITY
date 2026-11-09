@@ -1,0 +1,64 @@
+# Manual: quote or download 1-minute bars for another index from Databento.
+#   Actions tab -> "fetch other index" -> Run workflow.
+#   mode=quote    prints the price in the run log and downloads nothing.
+#   mode=download downloads (aborts if the quote is over max_cost_usd) and
+#                 commits data/raw/<SYMBOL>_1m_<start>_<end>.parquet.
+# Uses the DATABENTO_API_KEY repository secret.
+
+name: fetch other index
+
+on:
+  workflow_dispatch:
+    inputs:
+      symbol:
+        description: "continuous symbol"
+        type: choice
+        options: [ES.v.0, YM.v.0, RTY.v.0, ALL_THREE]
+        default: ES.v.0
+      mode:
+        description: "quote = price only, download = buy and commit"
+        type: choice
+        options: [quote, download]
+        default: quote
+      start:
+        description: "inclusive UTC date"
+        default: "2010-06-06"
+      end:
+        description: "exclusive UTC date"
+        default: "2026-10-29"
+      max_cost_usd:
+        description: "abort if a single symbol's quote is above this"
+        default: "10"
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - run: uv sync --extra data
+      - name: Quote or download
+        env:
+          DATABENTO_API_KEY: ${{ secrets.DATABENTO_API_KEY }}
+        run: |
+          if [ -z "$DATABENTO_API_KEY" ]; then echo "::error::DATABENTO_API_KEY secret is not set"; exit 1; fi
+          syms="${{ inputs.symbol }}"
+          [ "$syms" = "ALL_THREE" ] && syms="ES.v.0 YM.v.0 RTY.v.0"
+          extra=""
+          [ "${{ inputs.mode }}" = "quote" ] && extra="--dry-run"
+          for s in $syms; do
+            uv run python scripts/fetch_databento.py --symbol "$s" \
+              --start "${{ inputs.start }}" --end "${{ inputs.end }}" \
+              --max-cost-usd "${{ inputs.max_cost_usd }}" $extra
+          done
+      - name: Commit
+        if: inputs.mode == 'download'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/raw
+          git diff --cached --quiet || { git commit -m "Fetch ${{ inputs.symbol }} 1m bars ${{ inputs.start }}..${{ inputs.end }}"; git push; }
