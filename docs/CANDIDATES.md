@@ -13,7 +13,7 @@ Rules:
 - A variant found by looking at results gets its own row, marked
   **selected-on-data**.
 
-**Tried so far: 16 rows, and row 12 alone is a 900-combination search.** So the
+**Tried so far: 28 rows, and row 12 alone is a 900-combination search.** So the
 real count of configurations looked at is about 914, plus the 0.5–3.0 target
 sweep in row 9.
 
@@ -51,6 +51,18 @@ risk, 5m signals and 1m fills.
 | 15 | LTF session cutoff 15:30 ET (spec) | Same as the spec: sweeps to 15:00, entries to 15:30, flat 16:00. Exits once the day is resolved. | OOS +$13,274, dev −$17,668, 11y −$4,394 (confirming-bar fills excluded; ledger S7, unsourced). **Kept as the spec, not selected.** | same |
 
 | 16 | failed-breakout fade, unselected member (to forward-log) | Row 12's `fail_fade`, `side_rule=either`, stop = 1.0× range height, exit 10:45, 1R, `min_body_frac=0.0` (the variant `fade_report.py` plots because nothing selected it). Formulated 2026-11-06 for a forward log starting 2026-09-08 05:27 UTC. | Before the fix: 53% of its trades were impossible and carried all the profit. After: 1,855 trades, PF 0.95, dev 1.01, **OOS 0.80, −$26,959**. **Fail. Not forward-logged.** | `docs/jx_runs/fade_after_fix_*` |
+| 17 | LTF, long only | Batch 2026-11-09 (`docs/PREREG_BATCH_20261109.md`). Drop shorts. | pending | prereg |
+| 18 | LTF, short only | Drop longs. | pending | prereg |
+| 19 | LTF, scale out, runner 2R | Half off at 1R, runner to 2R, stop to entry. | pending | prereg |
+| 20 | LTF, scale out, runner 3R | Same, runner to 3R. | pending | prereg |
+| 21 | funded size ×0.5 | `recycle(funded_scale=0.5)`. | pending | prereg |
+| 22 | funded size ×0.75 | `recycle(funded_scale=0.75)`. | pending | prereg |
+| 23 | loss-streak pause | 3 losses in a row → skip next 5 trades (streak counts shadow outcomes). | pending | prereg |
+| 24 | equity filter | Trade only if prior 20 baseline trades net > 0. | pending | prereg |
+| 25 | fee cap 5% | Skip if contracts × $1.24 > 5% of risk. | pending | prereg |
+| 26 | fee cap 3% | Same at 3%. | pending | prereg |
+| 27 | stop buffer 2.0 | `stop_buffer_points=2.0`. | pending | prereg |
+| 28 | 120-min time stop | `time_exit_ts = min(orig, valid_from + 120 min)`. | pending | prereg |
 
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
