@@ -80,9 +80,16 @@ jobs:
           while read -r sym mode start end cap; do
             extra=""
             [ "$mode" = "quote" ] && extra="--dry-run"
-            uv run python scripts/fetch_databento.py --symbol "$sym" \
-              --start "$start" --end "$end" --max-cost-usd "$cap" $extra \
-              < /dev/null 2>&1 | tee -a "$log" || rc=1   # default shell has pipefail
+            # One retry: a stream that drops mid-way ("Response ended
+            # prematurely") is billed only for what was sent.
+            ok=0
+            for attempt in 1 2; do
+              uv run python scripts/fetch_databento.py --symbol "$sym" \
+                --start "$start" --end "$end" --max-cost-usd "$cap" $extra \
+                < /dev/null 2>&1 | tee -a "$log" && { ok=1; break; }   # default shell has pipefail
+              echo "  attempt $attempt failed" | tee -a "$log"
+            done
+            [ "$ok" = 1 ] || rc=1
           done < jobs.txt
           echo "exit $rc" >> "$log"
           exit $rc
