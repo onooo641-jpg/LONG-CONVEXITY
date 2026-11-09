@@ -440,3 +440,15 @@ why the forward log and the cash-reserve stop matter.
 
 Databento spend 2026-11-09: ES $20.93, YM+RTY $31.39 twice (the first purchase
 was lost, my error), about $84 in total.
+
+## 12-idea batch (2026-11-09)
+
+Pre-registered in `docs/PREREG_BATCH_20261109.md`. To pass, an idea had to
+beat the baseline's margin over a coin flip on NQ 2016–26, NQ 2010–15, and 2
+of ES/YM/RTY.
+- These made things worse or were mixed: long-only, short-only, scaling out
+  with a runner (2R/3R), smaller funded size, a loss-streak pause, an equity
+  filter, fee caps, and a wider stop.
+- **The 120-minute time stop passed,** but weakly. The real money barely
+  changes on NQ (+$1.2K over 11 years), and one pass in twelve is about what
+  luck gives. It goes into the forward log as a shadow; live stays unchanged.

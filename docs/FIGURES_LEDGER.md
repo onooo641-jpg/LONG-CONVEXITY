@@ -135,4 +135,12 @@ R1–R13 and A1–A4 are **RB0914** unless they say otherwise. Rows tagged N
 | Y5 | **scaled hypothesis** | **not supported** (0 of 2) | same | | 2026-11-09 | current; K4 treated as chance |
 | Y6 | unchanged, beats coin flips | NQ 98%, YM 96%, ES 86%, RTY 12% | es_test.py, ym_rty_test.py | 2016→ | 2026-11-09 | current |
 
+## Idea batch (docs/PREREG_BATCH_20261109.md, pre-registered fb76f72)
+
+| # | figure | value | command | window | computed | status |
+|---|---|---|---|---|---|---|
+| B1 | batch verdict | 1 pass of 12: **#28 120-min time stop** | `uv run python scripts/idea_batch_20261109.py` | 5 datasets | 2026-11-09 | current |
+| B2 | #28 recycling net vs baseline | NQ $45,554 vs $44,359; ES $24,638 vs $20,338; YM $2,020 vs $11,744; RTY −$1,745 vs −$2,293 | same | | 2026-11-09 | current |
+| B3 | #28 margin over coin flip vs baseline | NQ-S 29,172 vs 25,548; NQ-O 1,866 vs 1,679 | same | | 2026-11-09 | current |
+
 Raw output for every command above is in `docs/jx_runs/`.

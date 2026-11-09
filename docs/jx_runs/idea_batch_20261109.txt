@@ -1,0 +1,113 @@
+warning: The `UV_NATIVE_TLS` environment variable is deprecated and will be removed in a future release. Use `UV_SYSTEM_CERTS` instead.
+NQ: 3,490 orders, 2,813 fills
+ES: 2,752 orders, 2,192 fills
+YM: 4,145 orders, 3,444 fills
+RTY: 2,097 orders, 1,641 fills
+baseline           margin: NQ-S   25,548  NQ-O    1,679  ES    9,169  YM   10,065  RTY   -8,315
+17 long only       margin: NQ-S   13,562  NQ-O      823  ES    3,474  YM      737  RTY   -3,453
+18 short only      margin: NQ-S   15,333  NQ-O        0  ES      580  YM    3,357  RTY   -3,276
+19 runner 2R       margin: NQ-S   -4,638  NQ-O      150  ES      -87  YM   -3,965  RTY  -13,301
+20 runner 3R       margin: NQ-S   -6,787  NQ-O       81  ES   -3,743  YM   -2,528  RTY  -12,988
+21 funded x0.5     margin: NQ-S   19,993  NQ-O      644  ES      110  YM    4,674  RTY     -987
+22 funded x0.75    margin: NQ-S   27,395  NQ-O    1,306  ES    5,938  YM    6,132  RTY   -7,162
+23 streak pause    margin: NQ-S   15,183  NQ-O      861  ES   11,109  YM    6,326  RTY   -4,334
+24 equity filter   margin: NQ-S   20,910  NQ-O     -298  ES    5,937  YM       61  RTY     -439
+25 fee cap 5%      margin: NQ-S   18,479  NQ-O     -149  ES    6,162  YM      222  RTY   -3,514
+26 fee cap 3%      margin: NQ-S   18,037  NQ-O        0  ES   -1,353  YM     -534  RTY    5,327
+27 stop buffer 2   margin: NQ-S   28,709  NQ-O   -1,440  ES      198  YM    6,715  RTY   -9,170
+28 time stop 120m  margin: NQ-S   29,172  NQ-O    1,866  ES   15,231  YM    1,978  RTY   -5,437
+
+=== DETAIL  (trades / PF / recycling net / flip median / margin)
+  baseline
+    NQ-S   2185  PF 0.997  net $   44,359  flip $   18,811  margin $   25,548
+    NQ-O    625  PF 0.784  net $   -2,505  flip $   -4,183  margin $    1,679
+    ES     1754  PF 0.977  net $   20,338  flip $   11,169  margin $    9,169
+    YM     2290  PF 0.858  net $   11,744  flip $    1,679  margin $   10,065
+    RTY    1632  PF 0.828  net $   -2,293  flip $    6,023  margin $   -8,315
+  17 long only
+    NQ-S   1089  PF 1.053  net $   20,854  flip $    7,292  margin $   13,562
+    NQ-O    313  PF 0.977  net $   -3,602  flip $   -4,426  margin $      823
+    ES      959  PF 1.007  net $    5,877  flip $    2,403  margin $    3,474
+    YM     1149  PF 0.892  net $   -2,287  flip $   -3,024  margin $      737
+    RTY     876  PF 0.844  net $   -3,973  flip $     -519  margin $   -3,453
+  18 short only
+    NQ-S   1096  PF 0.946  net $   20,688  flip $    5,355  margin $   15,333
+    NQ-O    312  PF 0.631  net $   -4,489  flip $   -4,489  margin $        0
+    ES      795  PF 0.942  net $      250  flip $     -330  margin $      580
+    YM     1141  PF 0.826  net $     -960  flip $   -4,317  margin $    3,357
+    RTY     756  PF 0.810  net $   -5,174  flip $   -1,898  margin $   -3,276
+  19 runner 2R
+    NQ-S   2185  PF 0.879  net $   13,902  flip $   18,540  margin $   -4,638
+    NQ-O    625  PF 0.745  net $   -4,178  flip $   -4,328  margin $      150
+    ES     1754  PF 0.845  net $   11,039  flip $   11,126  margin $      -87
+    YM     2290  PF 0.746  net $   -1,437  flip $    2,528  margin $   -3,965
+    RTY    1632  PF 0.788  net $   -5,729  flip $    7,572  margin $  -13,301
+  20 runner 3R
+    NQ-S   2185  PF 0.867  net $   16,148  flip $   22,934  margin $   -6,787
+    NQ-O    625  PF 0.721  net $   -3,929  flip $   -4,010  margin $       81
+    ES     1754  PF 0.818  net $   10,532  flip $   14,275  margin $   -3,743
+    YM     2290  PF 0.745  net $      849  flip $    3,376  margin $   -2,528
+    RTY    1632  PF 0.765  net $   -5,283  flip $    7,705  margin $  -12,988
+  21 funded x0.5
+    NQ-S   2185  PF 0.997  net $   25,131  flip $    5,138  margin $   19,993
+    NQ-O    625  PF 0.784  net $   -3,994  flip $   -4,638  margin $      644
+    ES     1754  PF 0.977  net $      788  flip $      679  margin $      110
+    YM     2290  PF 0.858  net $      155  flip $   -4,519  margin $    4,674
+    RTY    1632  PF 0.828  net $   -3,255  flip $   -2,269  margin $     -987
+  22 funded x0.75
+    NQ-S   2185  PF 0.997  net $   39,109  flip $   11,714  margin $   27,395
+    NQ-O    625  PF 0.784  net $   -3,332  flip $   -4,638  margin $    1,306
+    ES     1754  PF 0.977  net $   12,584  flip $    6,647  margin $    5,938
+    YM     2290  PF 0.858  net $    5,277  flip $     -855  margin $    6,132
+    RTY    1632  PF 0.828  net $   -4,244  flip $    2,918  margin $   -7,162
+  23 streak pause
+    NQ-S   1540  PF 0.985  net $   27,608  flip $   12,425  margin $   15,183
+    NQ-O    426  PF 0.731  net $   -3,501  flip $   -4,362  margin $      861
+    ES     1259  PF 1.026  net $   17,095  flip $    5,986  margin $   11,109
+    YM     1571  PF 0.864  net $    5,017  flip $   -1,309  margin $    6,326
+    RTY    1043  PF 0.859  net $   -3,359  flip $      975  margin $   -4,334
+  24 equity filter
+    NQ-S   1061  PF 1.015  net $   28,544  flip $    7,634  margin $   20,910
+    NQ-O    191  PF 0.958  net $   -3,812  flip $   -3,514  margin $     -298
+    ES      897  PF 0.984  net $    7,921  flip $    1,985  margin $    5,937
+    YM      863  PF 0.883  net $   -4,642  flip $   -4,703  margin $       61
+    RTY     599  PF 0.822  net $   -2,429  flip $   -1,990  margin $     -439
+  25 fee cap 5%
+    NQ-S   1394  PF 1.099  net $   36,813  flip $   18,334  margin $   18,479
+    NQ-O     21  PF 0.827  net $   -1,482  flip $   -1,334  margin $     -149
+    ES      952  PF 0.976  net $   14,188  flip $    8,025  margin $    6,162
+    YM      507  PF 1.040  net $     -879  flip $   -1,100  margin $      222
+    RTY     570  PF 0.942  net $   -2,333  flip $    1,181  margin $   -3,514
+  26 fee cap 3%
+    NQ-S    900  PF 1.061  net $   29,275  flip $   11,239  margin $   18,037
+    NQ-O      4  PF 0.977  net $     -698  flip $     -698  margin $        0
+    ES      379  PF 0.888  net $   -2,153  flip $     -800  margin $   -1,353
+    YM      109  PF 0.790  net $   -6,001  flip $   -5,467  margin $     -534
+    RTY     164  PF 1.203  net $      933  flip $   -4,394  margin $    5,327
+  27 stop buffer 2
+    NQ-S   2186  PF 0.993  net $   47,996  flip $   19,287  margin $   28,709
+    NQ-O    625  PF 0.836  net $   -5,383  flip $   -3,943  margin $   -1,440
+    ES     1754  PF 0.945  net $   16,563  flip $   16,365  margin $      198
+    YM     2292  PF 0.845  net $    9,146  flip $    2,430  margin $    6,715
+    RTY    1632  PF 0.814  net $    1,281  flip $   10,451  margin $   -9,170
+  28 time stop 120m
+    NQ-S   2185  PF 0.979  net $   45,554  flip $   16,381  margin $   29,172
+    NQ-O    625  PF 0.744  net $   -2,400  flip $   -4,266  margin $    1,866
+    ES     1754  PF 1.001  net $   24,638  flip $    9,407  margin $   15,231
+    YM     2290  PF 0.836  net $    2,020  flip $       42  margin $    1,978
+    RTY    1632  PF 0.818  net $   -1,745  flip $    3,692  margin $   -5,437
+
+=== VERDICTS  (margin beats baseline on NQ-S and NQ-O and >=2 of ES/YM/RTY)
+  17 long only       NQ-S -  NQ-O -  others 1/3  -> fail
+  18 short only      NQ-S -  NQ-O -  others 1/3  -> fail
+  19 runner 2R       NQ-S -  NQ-O -  others 0/3  -> fail
+  20 runner 3R       NQ-S -  NQ-O -  others 0/3  -> fail
+  21 funded x0.5     NQ-S -  NQ-O -  others 1/3  -> fail
+  22 funded x0.75    NQ-S +  NQ-O -  others 1/3  -> fail
+  23 streak pause    NQ-S -  NQ-O -  others 2/3  -> fail
+  24 equity filter   NQ-S -  NQ-O -  others 1/3  -> fail
+  25 fee cap 5%      NQ-S -  NQ-O -  others 1/3  -> fail
+  26 fee cap 3%      NQ-S -  NQ-O -  others 1/3  -> fail
+  27 stop buffer 2   NQ-S +  NQ-O -  others 0/3  -> fail
+  28 time stop 120m  NQ-S +  NQ-O +  others 2/3  -> PASS
+EXIT 0

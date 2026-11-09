@@ -58,3 +58,34 @@ unlikely.
     valid_from + 120 min)).
 
 Command: `uv run python scripts/idea_batch_20261109.py`
+
+## Results (2026-11-09, run once, output `docs/jx_runs/idea_batch_20261109.txt`)
+
+Margin = recycling net − coin-flip median (100 flips).
+
+| idea | NQ-S | NQ-O | ES | YM | RTY | verdict |
+|---|---|---|---|---|---|---|
+| baseline | 25,548 | 1,679 | 9,169 | 10,065 | −8,315 | |
+| 17 long only | 13,562 | 823 | 3,474 | 737 | −3,453 | fail |
+| 18 short only | 15,333 | 0 | 580 | 3,357 | −3,276 | fail |
+| 19 runner 2R | −4,638 | 150 | −87 | −3,965 | −13,301 | fail |
+| 20 runner 3R | −6,787 | 81 | −3,743 | −2,528 | −12,988 | fail |
+| 21 funded ×0.5 | 19,993 | 644 | 110 | 4,674 | −987 | fail |
+| 22 funded ×0.75 | 27,395 | 1,306 | 5,938 | 6,132 | −7,162 | fail |
+| 23 streak pause | 15,183 | 861 | 11,109 | 6,326 | −4,334 | fail |
+| 24 equity filter | 20,910 | −298 | 5,937 | 61 | −439 | fail |
+| 25 fee cap 5% | 18,479 | −149 | 6,162 | 222 | −3,514 | fail |
+| 26 fee cap 3% | 18,037 | 0 | −1,353 | −534 | 5,327 | fail |
+| 27 stop buffer 2 | 28,709 | −1,440 | 198 | 6,715 | −9,170 | fail |
+| **28 time stop 120m** | **29,172** | **1,866** | **15,231** | 1,978 | **−5,437** | **PASS** |
+
+**One pass out of twelve: 28, the 120-minute time stop.** Read it with care:
+- Most of its margin gain comes from the coin-flip median falling, because
+  shorter trades are smaller swings and the account structure pays less for
+  them. Actual recycling net barely moves: NQ $45,554 vs $44,359, ES $24,638
+  vs $20,338, YM $2,020 vs $11,744, RTY −$1,745 vs −$2,293.
+- The NQ-O improvement is $187, which is noise-sized.
+- With twelve ideas tested, one pass is roughly what luck alone could produce.
+
+Per the rule, 28 goes to the forward log as a shadow next to the baseline. It
+does not go live. Every other idea is closed.
