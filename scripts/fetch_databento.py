@@ -145,12 +145,16 @@ def main(argv=None) -> int:
     print(f"{args.symbol}  {SCHEMA}  {args.start} -> {args.end} (end exclusive)")
     cost = client.metadata.get_cost(**req)
     print(f"  quoted cost ${cost:.4f}  (cap ${args.max_cost_usd:.2f})")
+    if args.dry_run:
+        # A quote is free, so report it even when it is over the cap; the cap
+        # only guards a real download.
+        if cost > args.max_cost_usd:
+            print(f"  note: over the cap; a download would need --max-cost-usd >= {cost:.2f}")
+        print("  --dry-run: stopping before download")
+        return 0
     if cost > args.max_cost_usd:
         print(f"  ABORT: quote exceeds --max-cost-usd; nothing downloaded", file=sys.stderr)
         return 1
-    if args.dry_run:
-        print("  --dry-run: stopping before download")
-        return 0
 
     print("  downloading ...")
     df = normalise(client.timeseries.get_range(**req).to_df())
