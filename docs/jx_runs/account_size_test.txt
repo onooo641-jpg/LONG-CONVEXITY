@@ -1,0 +1,15 @@
+warning: The `UV_NATIVE_TLS` environment variable is deprecated and will be removed in a future release. Use `UV_SYSTEM_CERTS` instead.
+size  path         window      risk   net        flip med   margin     deepest   payouts  pass
+50K   Standard     2016-2026     900  $   44,359  $   18,811  $   25,548  $  -3,520      44  34.4%
+50K   Standard     2010-2015     900  $   -2,505  $   -4,183  $    1,679  $  -4,088       3  16.7%
+50K   Consistency  2016-2026     900  $   46,492  $   17,861  $   28,631  $  -3,520      44  34.4%
+50K   Consistency  2010-2015     900  $   -3,119  $   -4,251  $    1,132  $  -4,088       2  17.2%
+100K  Standard     2016-2026   1,350  $   62,660  $   18,884  $   43,776  $  -7,152      40  25.2%
+100K  Standard     2010-2015   1,350  $   -5,144  $   -6,600  $    1,456  $  -7,328       2  12.5%
+100K  Consistency  2016-2026   1,350  $   66,104  $   19,159  $   46,945  $  -7,152      37  25.9%
+100K  Consistency  2010-2015   1,350  $   -6,971  $   -6,641  $     -329  $  -7,328       1  13.0%
+150K  Standard     2016-2026   2,025  $   95,324  $   30,088  $   65,236  $  -9,952      38  26.2%
+150K  Standard     2010-2015   2,025  $   -9,484  $   -9,167  $     -317  $ -10,228       1  12.5%
+150K  Consistency  2016-2026   2,025  $  101,828  $   35,732  $   66,096  $  -9,952      37  26.2%
+150K  Consistency  2010-2015   2,025  $   -9,484  $   -9,116  $     -368  $ -10,228       1  12.5%
+EXIT 0

@@ -452,3 +452,22 @@ of ES/YM/RTY.
 - **The 120-minute time stop passed,** but weakly. The real money barely
   changes on NQ (+$1.2K over 11 years), and one pass in twelve is about what
   luck gives. It goes into the forward log as a shadow; live stays unchanged.
+
+## Account size and payout path (2026-11-09)
+
+Topstep caps funded accounts at 5, so the money each account earns sets the
+ceiling. `scripts/account_size_test.py` (NQ, risk scaled to each loss limit):
+
+| per account | 50K | 100K | 150K |
+|---|---|---|---|
+| net 2016–26 | $44,359 | $62,660 | $95,324 |
+| deepest cash | −$3,520 | −$7,152 | −$9,952 |
+| net 2010–15 | −$2,505 | −$5,144 | −$9,484 |
+
+- 150K earns about 2.1× per slot but needs about 2.8× the reserve and loses
+  about 3.8× as much in a bad period. 50K returns the most per dollar of
+  reserve.
+- The Consistency path adds 5–7% in 2016–26 and nothing in 2010–15.
+- The 100K/150K scaling ladder is assumed, not read from Topstep.
+- The model now supports `consistency_target` and `scaling_mult`. Defaults
+  are unchanged, and the baseline still reproduces $44,359.

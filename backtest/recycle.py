@@ -141,6 +141,15 @@ class XFARules:
 
     #: Standard path pricing, matching PATHS["Standard"] in the quarterly
     #: report. Every monthly rebill banks one free reset credit.
+    #: XFA Consistency path (Topstep, since 2026-02-05): payout needs at least
+    #: ``consistency_days`` trading days and the best day since the last payout
+    #: at most this share of the profit since then. None = Standard path.
+    consistency_target: float | None = None
+    consistency_days: int = 3
+    #: Multiplies the 50K funded scaling ladder for bigger accounts. Topstep's
+    #: 100K/150K ladders were not read; x2 / x3 is an assumption.
+    scaling_mult: int = 1
+
     monthly: float = 49.0
     reset: float = 49.0
     #: Charged once per funded account EARNED -- so it is charged again every
@@ -161,6 +170,9 @@ class _Account:
     paid_out: bool = False
     #: Balance right after the last payout, for the profit-since-payout test.
     after_payout: float | None = None
+    #: Consistency path: days traded and best day since the last payout.
+    days_traded: int = 0
+    best_day: float = 0.0
 
     def floor(self, limit: float, locks_at: float | None) -> float:
         """The balance at which this account is closed.
@@ -267,7 +279,7 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
     for at, (pnl, contracts, exit_ts) in enumerate(
             zip(trades["net_pnl"], trades["contracts"], trades["exit_ts"])):
         # The backtest sizes on risk alone; neither ceiling exists there.
-        cap = (scaling_tier(account.balance) if funded
+        cap = (scaling_tier(account.balance) * rules.scaling_mult if funded
                else rules.combine_max_contracts)
         scale = min(int(contracts), cap) / contracts if contracts else 0.0
         day = float(pnl) * scale * (funded_scale if funded else 1.0)
@@ -317,6 +329,8 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
         # --- funded ---
         if day >= rules.winning_day_min:
             account.winning_days += 1
+        account.days_traded += 1
+        account.best_day = max(account.best_day, day)
 
         if account.balance <= account.floor(rules.funded_loss_limit,
                                             rules.mll_locks_at):
@@ -335,7 +349,13 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
         # forever, so the account is never "locked" and LOCK_FIRST never pays.
         locked = (rules.mll_locks_at is not None
                   and account.peak >= rules.mll_locks_at)
-        eligible = (account.winning_days >= rules.winning_days_required
+        if rules.consistency_target is None:
+            days_ok = account.winning_days >= rules.winning_days_required
+        else:
+            since = account.balance - (account.after_payout or 0.0)
+            days_ok = (account.days_traded >= rules.consistency_days and since > 0
+                       and account.best_day <= rules.consistency_target * since)
+        eligible = (days_ok
                     and account.balance > 0
                     and not (rules.profit_since_payout_required
                              and account.after_payout is not None
@@ -347,6 +367,7 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
             # That is what makes an early payout expensive.
             account.balance -= amount
             account.winning_days = 0
+            account.days_traded, account.best_day = 0, 0.0
             account.after_payout = account.balance
             if rules.payout_locks_mll:
                 account.paid_out = True

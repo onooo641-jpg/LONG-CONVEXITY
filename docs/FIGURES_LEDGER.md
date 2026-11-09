@@ -143,4 +143,17 @@ R1–R13 and A1–A4 are **RB0914** unless they say otherwise. Rows tagged N
 | B2 | #28 recycling net vs baseline | NQ $45,554 vs $44,359; ES $24,638 vs $20,338; YM $2,020 vs $11,744; RTY −$1,745 vs −$2,293 | same | | 2026-11-09 | current |
 | B3 | #28 margin over coin flip vs baseline | NQ-S 29,172 vs 25,548; NQ-O 1,866 vs 1,679 | same | | 2026-11-09 | current |
 
+## Account size and payout path (scripts/account_size_test.py, NQ, risk = 0.45 × MLL)
+
+Not pre-registered; describes account choice, not the strategy. The 100K/150K
+funded scaling ladders are assumed (50K × 2 / × 3), and so is a $150 winning
+day at every size.
+
+| # | figure | value | command | window | computed | status |
+|---|---|---|---|---|---|---|
+| Z1 | net per account, 2016–26: 50K / 100K / 150K, Standard | $44,359 / $62,660 / $95,324 | `uv run python scripts/account_size_test.py` | W1028 | 2026-11-09 | current |
+| Z2 | deepest cash, same | −$3,520 / −$7,152 / −$9,952 | same | same | 2026-11-09 | current |
+| Z3 | net per account, 2010–15, Standard | −$2,505 / −$5,144 / −$9,484 | same | 2010-07..2015 | 2026-11-09 | current |
+| Z4 | Consistency path vs Standard, 2016–26 | 50K +$2,133; 100K +$3,444; 150K +$6,504. 2010–15: worse or equal | same | | 2026-11-09 | current |
+
 Raw output for every command above is in `docs/jx_runs/`.
