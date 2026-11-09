@@ -1,0 +1,31 @@
+fetch other index  run 42579041681  event push  2026-11-09T07:23:52Z
+/home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/scripts/fetch_databento.py:160: BentoWarning: The streaming request contained one or more days which have reduced quality: 2014-06-11 (degraded), 2014-06-12 (degraded), 2014-06-13 (degraded)... See: https://databento.com/docs/api-reference-historical/metadata/metadata-get-dataset-condition
+  df = normalise(client.timeseries.get_range(**req).to_df())
+ES.v.0  ohlcv-1m  2010-06-06 -> 2018-01-01 (end exclusive)
+  quoted cost $9.5730  (cap $25.00)
+  downloading ...
+  2,622,188 bars   2010-06-07 00:00:00+00:00 -> 2017-12-29 21:59:00+00:00
+wrote /home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/data/raw/ES_v_0_1m_2010-06-06_2018-01-01.parquet
+/home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/scripts/fetch_databento.py:160: BentoWarning: The streaming request contained one or more days which have reduced quality: 2018-10-21 (degraded), 2019-01-15 (degraded), 2019-02-22 (degraded)... See: https://databento.com/docs/api-reference-historical/metadata/metadata-get-dataset-condition
+  df = normalise(client.timeseries.get_range(**req).to_df())
+ES.v.0  ohlcv-1m  2018-01-01 -> 2023-01-01 (end exclusive)
+  quoted cost $6.4121  (cap $25.00)
+  downloading ...
+  1,756,356 bars   2018-01-01 23:00:00+00:00 -> 2022-12-30 21:59:00+00:00
+wrote /home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/data/raw/ES_v_0_1m_2018-01-01_2023-01-01.parquet
+/home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/scripts/fetch_databento.py:160: BentoWarning: The streaming request contained one or more days which have reduced quality: 2024-09-18 (degraded), 2025-09-17 (degraded), 2025-09-24 (degraded)... See: https://databento.com/docs/api-reference-historical/metadata/metadata-get-dataset-condition
+  df = normalise(client.timeseries.get_range(**req).to_df())
+ES.v.0  ohlcv-1m  2023-01-01 -> 2026-10-29 (end exclusive)
+  quoted cost $4.9432  (cap $25.00)
+  downloading ...
+  1,354,009 bars   2023-01-02 23:00:00+00:00 -> 2026-10-28 23:59:00+00:00
+wrote /home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/data/raw/ES_v_0_1m_2023-01-01_2026-10-29.parquet
+YM.v.0  ohlcv-1m  2010-06-06 -> 2026-10-29 (end exclusive)
+  quoted cost $20.1548  (cap $10.00)
+  note: over the cap; a download would need --max-cost-usd >= 20.15
+  --dry-run: stopping before download
+RTY.v.0  ohlcv-1m  2010-06-06 -> 2026-10-29 (end exclusive)
+  quoted cost $11.2392  (cap $10.00)
+  note: over the cap; a download would need --max-cost-usd >= 11.24
+  --dry-run: stopping before download
+exit 0
