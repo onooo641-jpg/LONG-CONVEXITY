@@ -104,4 +104,14 @@ R1–R13 and A1–A4 are **RB0914** unless they say otherwise. Rows tagged N
 | Q1b | same | 106 days, 9 accounts | `uv run python scripts/quarterly_report.py --out /tmp/q.html` | W1028 | 2026-11-06 | current |
 | Q2 | Standard vs No-Activation, first pass | $648 vs $823 | same | both | 2026-11-06 | current |
 
+## ES unseen-market test (docs/ES_PREREG.md, pre-registered e24926e)
+
+| # | figure | value | command | window | computed | status |
+|---|---|---|---|---|---|---|
+| E1 | ES recycling net, $900, 2016→2026-10-28 | **$20,338** (1,754 trades, PF 0.977, pass 32.3%) | `uv run python scripts/es_test.py` | ES 2016-01-01..2026-10-28 | 2026-11-09 | current |
+| E2 | ES coin-flip median / 95th pct | $11,002 / $24,180 (real beats 86%) | same | same | 2026-11-09 | current |
+| E3 | **ES verdict** | **does not confirm** (E1 < E2 95th pct) | same | same | 2026-11-09 | current |
+| E4 | ES 2010-07..2015 (context) | net $2,478, PF 0.873, beats 95% of flips | same | ES 2010-07-01..2015-12-31 | 2026-11-09 | current |
+| E5 | NQ reproduction via es_test.py | $44,359 / flip 95th pct $36,711 → confirms | `uv run python scripts/es_test.py --market NQ` | W1028 | 2026-11-09 | current; matches N rows |
+
 Raw output for every command above is in `docs/jx_runs/`.

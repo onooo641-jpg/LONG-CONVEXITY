@@ -399,3 +399,16 @@ holdout. Check the real per-contract fee on your friend's first statement.
 
 Topstep's product list (help.topstep.com, 2026-11-08) includes ES/MES,
 NQ/MNQ, RTY/M2K and YM/MYM in the Combine and the funded accounts.
+
+## ES unseen-market test (2026-11-09)
+
+Pre-registered in `docs/ES_PREREG.md` before running. The strategy was
+unchanged, run on MES for 2016–2026 and judged against a coin flip with the
+same trade sizes. **Result: does not confirm.** ES nets $20,338 against a
+coin-flip 95th percentile of $24,180; NQ nets $44,359 against $36,711. ES
+points the same way (it beats 86% of flips) but not by enough. Treat the NQ
+edge as possibly NQ-specific. The NQ plan is unchanged; the evidence for it is
+weaker than the NQ backtest alone suggests.
+
+Data cost: ES $20.93 (bought). Quotes for the full window: YM $20.15 and RTY
+$11.24, not bought.

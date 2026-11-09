@@ -1,0 +1,17 @@
+warning: The `UV_NATIVE_TLS` environment variable is deprecated and will be removed in a future release. Use `UV_SYSTEM_CERTS` instead.
+NQ: 4,865,580 bars  2010-06-07 00:00:00+00:00 -> 2026-10-28 23:59:00+00:00
+
+=== DECIDES 2016-01-01 .. 2026-10-28
+  trades 2,185   win 53.1%   PF 0.997   raw net $-2,553   fees $106,943   median contracts 26   median stop 16.88 pts
+  recycling: net $44,359   withdrawn $61,440   spent $17,081   pass 34.4%   payouts 44   longest dry 1,184 d
+  coin flip x200: net median $18,046   95th pct $36,711   pass median 26.7%   real beats 98% of flips
+  raw net by year: 2016 -30,055  2017 -9,479  2018 -28,955  2019 6,987  2020 1,369  2021 -1,873  2022 -6,581  2023 22,970  2024 13,496  2025 1,897  2026 27,671
+
+=== CONTEXT 2010-07-01 .. 2015-12-31 (does not decide)
+  trades 625   win 52.3%   PF 0.784   raw net $-67,633   fees $77,837   median contracts 94   median stop 4.75 pts
+  recycling: net $-2,505   withdrawn $2,431   spent $4,936   pass 16.7%   payouts 3   longest dry 1,739 d
+  coin flip x200: net median $-4,116   95th pct $-535   pass median 16.1%   real beats 83% of flips
+  raw net by year: 2010 4,259  2011 -4,520  2012 -5,719  2013 -32,232  2014 -27,519  2015 -1,901
+
+=== VERDICT (NQ, pre-registered rule, deciding window)
+  recycling net $44,359 vs coin-flip 95th pct $36,711 -> CONFIRMS

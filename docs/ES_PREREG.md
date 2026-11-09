@@ -69,3 +69,39 @@ pass rate, payouts, and the same figures for the context window.
   and NOTES_JX.
 
 Command: `uv run python scripts/es_test.py`
+
+## Results (2026-11-09, run once, `scripts/es_test.py`)
+
+Raw output: `docs/jx_runs/es_test_ES.txt`. The same script on NQ
+(`--market NQ`, `docs/jx_runs/es_test_NQ_check.txt`) reproduces the ledger:
+$44,359 net, coin flip median $18,046, holdout −$2,505.
+
+| 2016-01-01 .. 2026-10-28 (decides) | NQ (MNQ) | ES (MES) |
+|---|---|---|
+| trades / win rate / PF | 2,185 / 53.1% / 0.994 | 1,754 / 53.1% / 0.977 |
+| raw net / fees | see ledger S1b | −$18,363 / $84,972 |
+| recycling net | **$44,359** | **$20,338** |
+| coin flip median / 95th pct | $18,046 / $36,711 | $11,002 / $24,180 |
+| real beats … of flips | 98% | 86% |
+| pass rate (real / flip median) | 34.4% / 26.7% | 32.3% / 26.6% |
+
+| 2010-07-01 .. 2015-12-31 (context) | NQ | ES |
+|---|---|---|
+| PF / recycling net | 0.784 / −$2,505 | 0.873 / $2,478 |
+| real beats … of flips | 83% | 95% |
+
+**Verdict: DOES NOT CONFIRM.** ES recycling net $20,338 is below its coin-flip
+95th percentile, $24,180. Per the rule above, the NQ result is treated as
+possibly NQ-specific, and nothing is tuned on ES.
+
+What the numbers show, without changing the verdict:
+- ES points the same way as NQ: a higher pass rate than a coin flip and more
+  money than 86% of flips. The margin is too small to clear the bar set in
+  advance.
+- On both markets, the raw strategy loses (PF below 1) and the recycling
+  structure turns that into profit. Part of that profit is what a coin flip
+  also earns.
+- Fees are the largest cost on ES: $85K against a −$18K raw result, because
+  the unscaled 1-point stop buffer gives a median 5-point stop and 35 micros.
+  A lower commission or a rescaled ES config would change this. Either one is
+  a new test that would need its own pre-registration; neither was run here.
