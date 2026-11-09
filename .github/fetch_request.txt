@@ -4,6 +4,8 @@
 #
 # 2026-11-09 run 1: ES full history ($20.93), YM/RTY quotes.
 # 2026-11-09 run 2: YM ($20.15 quoted) and RTY ($11.24 quoted), approved by Jx.
+# Run 42587637552 downloaded them but the push was rejected (branch moved);
+# files lost. Re-run approved by Jx 2026-11-09.
 YM.v.0 download 2010-06-06 2018-01-01 25
 YM.v.0 download 2018-01-01 2023-01-01 25
 YM.v.0 download 2023-01-01 2026-10-29 25
