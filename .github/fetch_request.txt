@@ -1,12 +1,11 @@
 # Pushing a change to this file runs .github/workflows/fetch_index.yml.
 # One job per line:  SYMBOL MODE START END MAX_COST_USD
-# START inclusive, END exclusive (UTC). ES is split like the NQ shards so no
-# single parquet nears GitHub's 100 MB file limit.
+# START inclusive, END exclusive (UTC). Shards kept well under GitHub's 100 MB.
 #
-# 2026-11-09: ES full history (quoted $20.93 for the whole window in run #2),
-# approved by Jx; YM and RTY quote only.
-ES.v.0 download 2010-06-06 2018-01-01 25
-ES.v.0 download 2018-01-01 2023-01-01 25
-ES.v.0 download 2023-01-01 2026-10-29 25
-YM.v.0 quote 2010-06-06 2026-10-29 10
-RTY.v.0 quote 2010-06-06 2026-10-29 10
+# 2026-11-09 run 1: ES full history ($20.93), YM/RTY quotes.
+# 2026-11-09 run 2: YM ($20.15 quoted) and RTY ($11.24 quoted), approved by Jx.
+YM.v.0 download 2010-06-06 2018-01-01 25
+YM.v.0 download 2018-01-01 2023-01-01 25
+YM.v.0 download 2023-01-01 2026-10-29 25
+RTY.v.0 download 2010-06-06 2021-01-01 15
+RTY.v.0 download 2021-01-01 2026-10-29 15
