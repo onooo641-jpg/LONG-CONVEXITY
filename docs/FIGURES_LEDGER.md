@@ -124,4 +124,15 @@ R1–R13 and A1–A4 are **RB0914** unless they say otherwise. Rows tagged N
 | K4 | ES 2016–26, settings × 0.31 (post-hoc) | $31,672, beats **100%** of flips (95th pct $23,998) | same | ES SEEN | 2026-11-09 | current, exploratory; tested on YM/RTY next |
 | K5 | NQ + ES side by side | net $64,697; deepest −$4,444; payout months 32% (NQ alone 20%); flow corr 0.14 | same | SEEN | 2026-11-09 | current, descriptive |
 
+## YM / RTY unseen-market tests (docs/PREREG_YM_RTY.md, pre-registered 23b0c8a)
+
+| # | figure | value | command | window | computed | status |
+|---|---|---|---|---|---|---|
+| Y1 | YM unchanged: net / flip 95th pct | $11,744 / $10,714 → confirms (narrowly; beats 96%) | `uv run python scripts/ym_rty_test.py` | YM 2016-01..2026-10 | 2026-11-09 | current |
+| Y2 | YM scaled ×2.55 | $11,593 / $14,671 → does not confirm | same | same | 2026-11-09 | current |
+| Y3 | RTY unchanged | −$2,293 / $17,352 → does not confirm (beats 12%) | same | RTY 2017-08..2026-10 | 2026-11-09 | current |
+| Y4 | RTY scaled ×0.14 | $8,928 / $11,849 → does not confirm | same | same | 2026-11-09 | current |
+| Y5 | **scaled hypothesis** | **not supported** (0 of 2) | same | | 2026-11-09 | current; K4 treated as chance |
+| Y6 | unchanged, beats coin flips | NQ 98%, YM 96%, ES 86%, RTY 12% | es_test.py, ym_rty_test.py | 2016→ | 2026-11-09 | current |
+
 Raw output for every command above is in `docs/jx_runs/`.

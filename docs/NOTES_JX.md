@@ -424,3 +424,19 @@ Full results: `docs/PREREG_20261109.md`. In short:
   (`docs/PREREG_YM_RTY.md`).
 - **Two markets smooth cash flow:** payout months go from 20% to 32%, and the
   two chains barely move together (correlation 0.14).
+
+## YM and RTY (2026-11-09)
+
+Pre-registered in `docs/PREREG_YM_RTY.md` before the data arrived. Across four
+markets, the unchanged strategy beats a coin flip on NQ (98%) and narrowly on
+YM (96%), but not on ES (86%) or RTY (12%). Price-scaled settings help on
+neither YM nor RTY, so the ES scaled result was chance. The raw strategy loses
+on all four; the money comes from the recycling structure plus, on NQ, an edge
+that does not clearly carry over to other markets.
+
+**Conclusion:** keep trading NQ only. There's no good case for a second market.
+The NQ edge is better treated as NQ-specific, possibly partly luck, which is
+why the forward log and the cash-reserve stop matter.
+
+Databento spend 2026-11-09: ES $20.93, YM+RTY $31.39 twice (the first purchase
+was lost, my error), about $84 in total.

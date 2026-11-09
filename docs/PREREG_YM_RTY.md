@@ -52,3 +52,29 @@ the next step is a forward log of S on a second market before any money goes
 in. If it is not supported, the ES 2b result is treated as chance.
 
 Command: `uv run python scripts/ym_rty_test.py`
+
+## Results (2026-11-09, run once, `scripts/ym_rty_test.py`, output `docs/jx_runs/ym_rty_test.txt`)
+
+Data: YM from 2010-06; **RTY only from 2017-07** (it moved to CME then), so
+RTY's deciding window is 2017-08-01..2026-10-28 and it has no context window.
+k: YM 2.55, RTY 0.14. Fetched in run 42591196087. An earlier run, 42587637552,
+paid for the same data but lost it when its push was rejected.
+
+| deciding window | recycling net | coin-flip 95th pct | beats flips | raw PF | verdict |
+|---|---|---|---|---|---|
+| YM U | $11,744 | $10,714 | 96% | 0.858 | confirms (narrowly) |
+| YM S | $11,593 | $14,671 | 89% | 0.880 | does not confirm |
+| RTY U | −$2,293 | $17,352 | 12% | 0.828 | does not confirm |
+| RTY S | $8,928 | $11,849 | 85% | 0.874 | does not confirm |
+
+**Scaled hypothesis: NOT SUPPORTED** (S confirms on neither market). The ES 2b
+result is treated as chance.
+
+YM U clears its bar by $1,030. In 2010–2015 it does worse than 90% of coin
+flips. Raw, it loses $154K over 2016–2026, $223K of that in fees: 63 MYM a
+trade at $1.24 each.
+
+**Unchanged strategy across four markets, 2016–2026:** NQ beats 98% of coin
+flips, YM 96%, ES 86%, RTY 12%. The raw strategy loses on all four (PF
+0.83–0.99). NQ stands out as the only clear pass, so the evidence for the
+method in general is weak.

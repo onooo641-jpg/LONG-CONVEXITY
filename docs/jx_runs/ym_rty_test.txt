@@ -1,0 +1,50 @@
+warning: The `UV_NATIVE_TLS` environment variable is deprecated and will be removed in a future release. Use `UV_SYSTEM_CERTS` instead.
+
+==============================================================================
+YM: 5,520,671 bars  2010-06-07 00:00:00+00:00 -> 2026-10-28 23:59:00+00:00
+  k = 2.55   deciding window starts 2016-01-01
+  U DECIDES 2016-01-01 .. 2026-10-28
+    trades 2,290  win 52.9%  PF 0.858  raw $-153,909  fees $222,747  median contracts 63  median stop 28.50 pts
+    recycling net $11,744  spent $13,364  pass 22.1%  payouts 24  dry 906 d
+    coin flip x200: median $1,557  95th pct $10,714  pass median 20.6%  real beats 96%
+    raw by year: 2016 -22,217  2017 -33,415  2018 1,175  2019 -16,048  2020 -13,122  2021 -24,234  2022 8,587  2023 -28,874  2024 -14,691  2025 -1,434  2026 -9,638
+  U context 2010-07 .. 2015-12
+    trades 1,137  win 54.6%  PF 0.741  raw $-143,693  fees $186,386  median contracts 128  median stop 14.00 pts
+    recycling net $-5,000  spent $5,000  pass 11.4%  payouts 0  dry 2,008 d
+    coin flip x200: median $-4,702  95th pct $-2,835  pass median 7.5%  real beats 10%
+    raw by year: 2010 -5,808  2011 -24,649  2012 -36,551  2013 -35,634  2014 -30,812  2015 -10,239
+  S DECIDES 2016-01-01 .. 2026-10-28
+    trades 2,146  win 52.8%  PF 0.880  raw $-121,763  fees $189,308  median contracts 57  median stop 31.05 pts
+    recycling net $11,593  spent $13,713  pass 24.6%  payouts 25  dry 853 d
+    coin flip x200: median $1,738  95th pct $14,671  pass median 21.8%  real beats 89%
+    raw by year: 2016 -34,050  2017 -23,624  2018 -11,023  2019 -17,482  2020 -3,774  2021 -11,471  2022 4,753  2023 -11,668  2024 1,027  2025 5,287  2026 -19,736
+  S context 2010-07 .. 2015-12
+    trades 963  win 53.0%  PF 0.749  raw $-121,396  fees $143,324  median contracts 115  median stop 15.55 pts
+    recycling net $-5,085  spent $5,085  pass 14.6%  payouts 0  dry 2,004 d
+    coin flip x200: median $-4,638  95th pct $-1,972  pass median 10.0%  real beats 6%
+    raw by year: 2010 -8,617  2011 -10,778  2012 -30,993  2013 -31,264  2014 -22,719  2015 -17,025
+
+==============================================================================
+RTY: 3,078,560 bars  2017-07-09 22:01:00+00:00 -> 2026-10-28 23:59:00+00:00
+  k = 0.14   deciding window starts 2017-08-01
+  U DECIDES 2017-08-01 .. 2026-10-28
+    trades 1,632  win 49.2%  PF 0.828  raw $-137,357  fees $95,920  median contracts 44  median stop 4.05 pts
+    recycling net $-2,293  spent $13,103  pass 22.1%  payouts 10  dry 1,008 d
+    coin flip x200: median $5,333  95th pct $17,352  pass median 25.1%  real beats 12%
+    raw by year: 2017 -6,334  2018 -26,586  2019 -25,685  2020 -10,066  2021 -16,457  2022 -5,697  2023 -19,173  2024 -28,660  2025 6,203  2026 -4,901
+  U context: 0 trades, not enough data to report
+  S DECIDES 2017-08-01 .. 2026-10-28
+    trades 1,902  win 52.2%  PF 0.874  raw $-113,739  fees $159,528  median contracts 56  median stop 3.19 pts
+    recycling net $8,928  spent $11,625  pass 22.1%  payouts 21  dry 1,010 d
+    coin flip x200: median $2,069  95th pct $11,849  pass median 21.5%  real beats 85%
+    raw by year: 2017 -16,193  2018 -42,637  2019 -33,702  2020 -2,265  2021 -6,920  2022 5,916  2023 -4,582  2024 -27,471  2025 -1,016  2026 15,131
+  S context: 0 trades, not enough data to report
+
+==============================================================================
+VERDICTS (net above coin-flip 95th pct)
+  YM U: CONFIRMS
+  YM S: does not confirm
+  RTY U: does not confirm
+  RTY S: does not confirm
+  scaled hypothesis: NOT SUPPORTED
+EXIT 0
