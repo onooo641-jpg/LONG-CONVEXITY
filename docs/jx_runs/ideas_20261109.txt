@@ -1,0 +1,51 @@
+warning: The `UV_NATIVE_TLS` environment variable is deprecated and will be removed in a future release. Use `UV_SYSTEM_CERTS` instead.
+generating orders ...
+
+==============================================================================
+TEST 1  risk per trade  (recycling net; coin-flip median, 100 flips)
+  NQ SEEN $  500: net $   15,800  spent $ 11,682  pass 28.7%  payouts  28  dry 1,185 d  flip median $     -209
+  NQ OLD  $  500: net $   -3,553  spent $  4,638  pass 10.7%  payouts   1  dry 1,778 d  flip median $   -4,489
+  NQ SEEN $  700: net $   31,137  spent $ 14,364  pass 32.0%  payouts  37  dry 1,184 d  flip median $    8,962
+  NQ OLD  $  700: net $   -3,315  spent $  4,787  pass 14.3%  payouts   2  dry 1,765 d  flip median $   -4,489
+  NQ SEEN $  900: net $   44,359  spent $ 17,081  pass 34.4%  payouts  44  dry 1,184 d  flip median $   18,811
+  NQ OLD  $  900: net $   -2,505  spent $  4,936  pass 16.7%  payouts   3  dry 1,739 d  flip median $   -4,183
+  NQ SEEN $1,200: net $   73,960  spent $ 19,788  pass 30.7%  payouts  62  dry 1,114 d  flip median $   32,187
+  NQ OLD  $1,200: net $   -2,400  spent $  4,936  pass 16.1%  payouts   3  dry 1,739 d  flip median $   -4,222
+  NQ SEEN $1,500: net $   69,240  spent $ 22,313  pass 35.3%  payouts  58  dry   890 d  flip median $   36,930
+  NQ OLD  $1,500: net $   -2,490  spent $  4,936  pass 15.2%  payouts   3  dry 1,739 d  flip median $   -4,162
+  ES SEEN $  500: net $    4,789  spent $ 10,937  pass 26.5%  payouts  16  dry 1,332 d  flip median $   -2,286
+  ES OLD  $  500: net $   -1,071  spent $  4,787  pass 17.4%  payouts   4  dry   911 d  flip median $   -4,109
+  ES SEEN $  700: net $   14,073  spent $ 13,321  pass 29.8%  payouts  26  dry   674 d  flip median $    5,332
+  ES OLD  $  700: net $    1,778  spent $  4,787  pass 12.9%  payouts   7  dry   910 d  flip median $   -3,057
+  ES SEEN $  900: net $   20,338  spent $ 14,858  pass 32.3%  payouts  30  dry   582 d  flip median $   11,169
+  ES OLD  $  900: net $    2,478  spent $  5,085  pass 18.8%  payouts   8  dry   881 d  flip median $   -2,914
+  ES SEEN $1,200: net $   33,782  spent $ 16,971  pass 27.5%  payouts  42  dry   599 d  flip median $   18,784
+  ES OLD  $1,200: net $      847  spent $  5,234  pass 19.4%  payouts   7  dry   918 d  flip median $   -2,358
+  ES SEEN $1,500: net $   38,174  spent $ 17,614  pass 28.5%  payouts  44  dry   548 d  flip median $   22,376
+  ES OLD  $1,500: net $      656  spent $  5,234  pass 19.4%  payouts   7  dry   918 d  flip median $   -2,196
+
+  RULE: replace $900 only if higher net in all four datasets
+  $500: higher in 0/4 (none)
+  $700: higher in 0/4 (none)
+  $1,200: higher in 3/4 (NQ SEEN, NQ OLD, ES SEEN)
+  $1,500: higher in 3/4 (NQ SEEN, NQ OLD, ES SEEN)
+  VERDICT: $900 stays
+
+==============================================================================
+TEST 2  ES sensitivities  (POST-HOC, exploratory; SEEN window)
+  as registered ($1.24)              trades  1754  PF 0.977  raw $  -18,363  net $   20,338  pass 32.3%  flip 95th $   24,180  beats 86%
+  2a commission $0.74                trades  1754  PF 1.020  raw $   15,900  net $   27,587  pass 33.1%  flip 95th $   31,335  beats 90%
+  k = median ES/NQ close over SEEN = 0.31
+  2b settings x0.31 ($1.24)          trades  1977  PF 1.001  raw $      501  net $   31,672  pass 30.2%  flip 95th $   23,998  beats 100%
+
+==============================================================================
+TEST 3  NQ + ES side by side, $900 each, SEEN  (descriptive)
+/home/claude/LONG-CONVEXITY/scripts/jx_ideas_20261109.py:115: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  tl["m"] = pd.DatetimeIndex(tl["ts"]).tz_convert("America/New_York").to_period("M")
+/home/claude/LONG-CONVEXITY/scripts/jx_ideas_20261109.py:115: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  tl["m"] = pd.DatetimeIndex(tl["ts"]).tz_convert("America/New_York").to_period("M")
+  net: NQ $44,359   ES $20,338   combined $64,697
+  deepest cash position (month-end): NQ $-3,520   combined $-4,444
+  months with a payout: NQ alone 20%   either 32%  (130 months)
+  correlation of monthly cash flow NQ vs ES: 0.14
+EXIT 0

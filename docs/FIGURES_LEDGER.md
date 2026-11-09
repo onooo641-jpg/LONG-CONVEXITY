@@ -114,4 +114,14 @@ R1–R13 and A1–A4 are **RB0914** unless they say otherwise. Rows tagged N
 | E4 | ES 2010-07..2015 (context) | net $2,478, PF 0.873, beats 95% of flips | same | ES 2010-07-01..2015-12-31 | 2026-11-09 | current |
 | E5 | NQ reproduction via es_test.py | $44,359 / flip 95th pct $36,711 → confirms | `uv run python scripts/es_test.py --market NQ` | W1028 | 2026-11-09 | current; matches N rows |
 
+## Risk size, ES sensitivities, two accounts (docs/PREREG_20261109.md, pre-registered ab112d1)
+
+| # | figure | value | command | window | computed | status |
+|---|---|---|---|---|---|---|
+| K1 | risk-size verdict | **$900 stays** ($1,200/$1,500 higher in 3/4 datasets, not ES 2010–15) | `uv run python scripts/jx_ideas_20261109.py` | NQ/ES, both windows | 2026-11-09 | current |
+| K2 | NQ 2016–26 net at $500/700/900/1200/1500 | $15,800 / $31,137 / $44,359 / $73,960 / $69,240 | same | W1028 | 2026-11-09 | current |
+| K3 | ES 2016–26, $0.74 commission (post-hoc) | $27,587, beats 90% of flips | same | ES SEEN | 2026-11-09 | current, exploratory |
+| K4 | ES 2016–26, settings × 0.31 (post-hoc) | $31,672, beats **100%** of flips (95th pct $23,998) | same | ES SEEN | 2026-11-09 | current, exploratory; tested on YM/RTY next |
+| K5 | NQ + ES side by side | net $64,697; deepest −$4,444; payout months 32% (NQ alone 20%); flow corr 0.14 | same | SEEN | 2026-11-09 | current, descriptive |
+
 Raw output for every command above is in `docs/jx_runs/`.

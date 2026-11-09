@@ -412,3 +412,15 @@ weaker than the NQ backtest alone suggests.
 
 Data cost: ES $20.93 (bought). Quotes for the full window: YM $20.15 and RTY
 $11.24, not bought.
+
+## Risk size, ES sensitivities, two accounts (2026-11-09)
+
+Full results: `docs/PREREG_20261109.md`. In short:
+- **$900 stays.** Bigger risk earns more on paper, mostly from the account
+  structure: a coin flip's profit rises almost as fast. It also fails the
+  pre-registered rule on ES 2010–2015.
+- **ES with settings scaled to its price beats 100% of coin flips**, against
+  86% unscaled. This is post-hoc, so it is a hypothesis being tested on YM/RTY
+  (`docs/PREREG_YM_RTY.md`).
+- **Two markets smooth cash flow:** payout months go from 20% to 32%, and the
+  two chains barely move together (correlation 0.14).
