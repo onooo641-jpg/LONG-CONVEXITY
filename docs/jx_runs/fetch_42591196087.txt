@@ -1,0 +1,37 @@
+fetch other index  run 42591196087  event push  2026-11-09T09:09:29Z
+/home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/scripts/fetch_databento.py:160: BentoWarning: The streaming request contained one or more days which have reduced quality: 2014-06-11 (degraded), 2014-06-12 (degraded), 2014-06-13 (degraded)... See: https://databento.com/docs/api-reference-historical/metadata/metadata-get-dataset-condition
+  df = normalise(client.timeseries.get_range(**req).to_df())
+YM.v.0  ohlcv-1m  2010-06-06 -> 2018-01-01 (end exclusive)
+  quoted cost $8.8969  (cap $25.00)
+  downloading ...
+  2,436,971 bars   2010-06-07 00:00:00+00:00 -> 2017-12-29 21:59:00+00:00
+wrote /home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/data/raw/YM_v_0_1m_2010-06-06_2018-01-01.parquet
+/home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/scripts/fetch_databento.py:160: BentoWarning: The streaming request contained one or more days which have reduced quality: 2018-10-21 (degraded), 2019-01-15 (degraded), 2019-02-22 (degraded)... See: https://databento.com/docs/api-reference-historical/metadata/metadata-get-dataset-condition
+  df = normalise(client.timeseries.get_range(**req).to_df())
+YM.v.0  ohlcv-1m  2018-01-01 -> 2023-01-01 (end exclusive)
+  quoted cost $6.3898  (cap $25.00)
+  downloading ...
+  1,750,244 bars   2018-01-01 23:00:00+00:00 -> 2022-12-30 21:59:00+00:00
+wrote /home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/data/raw/YM_v_0_1m_2018-01-01_2023-01-01.parquet
+/home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/scripts/fetch_databento.py:160: BentoWarning: The streaming request contained one or more days which have reduced quality: 2024-09-18 (degraded), 2025-09-17 (degraded), 2025-09-24 (degraded)... See: https://databento.com/docs/api-reference-historical/metadata/metadata-get-dataset-condition
+  df = normalise(client.timeseries.get_range(**req).to_df())
+YM.v.0  ohlcv-1m  2023-01-01 -> 2026-10-29 (end exclusive)
+  quoted cost $4.8682  (cap $25.00)
+  downloading ...
+  1,333,456 bars   2023-01-02 23:00:00+00:00 -> 2026-10-28 23:59:00+00:00
+wrote /home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/data/raw/YM_v_0_1m_2023-01-01_2026-10-29.parquet
+/home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/scripts/fetch_databento.py:160: BentoWarning: The streaming request contained one or more days which have reduced quality: 2014-06-11 (degraded), 2014-06-12 (degraded), 2014-06-13 (degraded)... See: https://databento.com/docs/api-reference-historical/metadata/metadata-get-dataset-condition
+  df = normalise(client.timeseries.get_range(**req).to_df())
+RTY.v.0  ohlcv-1m  2010-06-06 -> 2021-01-01 (end exclusive)
+  quoted cost $3.9484  (cap $15.00)
+  downloading ...
+  1,081,521 bars   2017-07-09 22:01:00+00:00 -> 2020-12-31 21:59:00+00:00
+wrote /home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/data/raw/RTY_v_0_1m_2010-06-06_2021-01-01.parquet
+/home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/scripts/fetch_databento.py:160: BentoWarning: The streaming request contained one or more days which have reduced quality: 2021-12-05 (degraded), 2022-01-02 (degraded), 2022-11-06 (degraded)... See: https://databento.com/docs/api-reference-historical/metadata/metadata-get-dataset-condition
+  df = normalise(client.timeseries.get_range(**req).to_df())
+RTY.v.0  ohlcv-1m  2021-01-01 -> 2026-10-29 (end exclusive)
+  quoted cost $7.2908  (cap $15.00)
+  downloading ...
+  1,997,039 bars   2021-01-03 23:00:00+00:00 -> 2026-10-28 23:59:00+00:00
+wrote /home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/data/raw/RTY_v_0_1m_2021-01-01_2026-10-29.parquet
+exit 0
