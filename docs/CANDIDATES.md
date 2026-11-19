@@ -71,14 +71,14 @@ risk, 5m signals and 1m fills.
 | 34 | Back2Funded always | P1. Reactivate a lost XFA up to 2×, $599. | fail (+$11.3K 2016–26, −$4.0K 2010–15, dip −$6,660) | PREREG_20261120 |
 | 35 | Back2Funded once | P2. At most 1 reactivation per XFA. | fail (+$9.4K / −$2.2K) | PREREG_20261120 |
 | 36 | Lucid (LucidFlex 50K) instead of Topstep | `docs/PREREG_LUCID_20261120.md`. Same trades, Lucid rules in the model. | fail as a replacement ($37,523 vs $44,359; worst dip −$4,720 vs −$3,520); beats coin flips 98%, so usable as a second firm | PREREG_LUCID_20261120 |
-| 37 | new-perp funding spikes (Hyperliquid) | `docs/PREREG_TOP10_20261120.md` N1. | pending | PREREG_TOP10 |
-| 38 | utilisation-threshold arbitrage (Aave) | `docs/PREREG_TOP10_20261120.md` N2. | pending | PREREG_TOP10 |
-| 39 | liquidity incentive mispricing (DEX LPs) | `docs/PREREG_TOP10_20261120.md` N3. | pending | PREREG_TOP10 |
-| 40 | multi-outcome probability arbitrage (Polymarket) | `docs/PREREG_TOP10_20261120.md` N4. | pending | PREREG_TOP10 |
-| 41 | stETH redemption discounts | `docs/PREREG_TOP10_20261120.md` N5. | pending | PREREG_TOP10 |
-| 42 | vault allocation inefficiencies | `docs/PREREG_TOP10_20261120.md` N6. | pending | PREREG_TOP10 |
-| 43 | settlement-resolution inefficiencies | `docs/PREREG_TOP10_20261120.md` N7. | pending | PREREG_TOP10 |
-| 44 | post-listing short on new perps (Hyperliquid, unhedged) | `docs/PREREG_POSTLISTING_20261120.md`. Selected from the N1 observation; tested on unseen 2023 listings. **Selected-on-data.** | pending | PREREG_POSTLISTING |
+| 37 | new-perp funding spikes (Hyperliquid) | `docs/PREREG_TOP10_20261120.md` N1. | fail (1st half not above baseline; 2nd half negative) | PREREG_TOP10 |
+| 38 | utilisation-threshold arbitrage (Aave) | `docs/PREREG_TOP10_20261120.md` N2. | fail (fallback mode; −$19.8/event) | PREREG_TOP10 |
+| 39 | liquidity incentive mispricing (DEX LPs) | `docs/PREREG_TOP10_20261120.md` N3. | fail (n too small: 4+4) | PREREG_TOP10 |
+| 40 | multi-outcome probability arbitrage (Polymarket) | `docs/PREREG_TOP10_20261120.md` N4. | no data (Polymarket refuses US servers; not circumvented) | PREREG_TOP10 |
+| 41 | stETH redemption discounts | `docs/PREREG_TOP10_20261120.md` N5. | fail (~$40–50/yr per $10K) | PREREG_TOP10 |
+| 42 | vault allocation inefficiencies | `docs/PREREG_TOP10_20261120.md` N6. | fail (3% of vaults; −0.46%/yr before costs) | PREREG_TOP10 |
+| 43 | settlement-resolution inefficiencies | `docs/PREREG_TOP10_20261120.md` N7. | not data-testable (manual review) | PREREG_TOP10 |
+| 44 | post-listing short on new perps (Hyperliquid, unhedged) | `docs/PREREG_POSTLISTING_20261120.md`. Selected from the N1 observation; tested on unseen 2023 listings. **Selected-on-data.** | fail on unseen 2023 listings (−$111 mean, 27% squeezed ≥50%, worst −$2,936 per $1,000) | PREREG_POSTLISTING |
 
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.

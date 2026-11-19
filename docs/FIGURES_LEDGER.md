@@ -194,4 +194,12 @@ day at every size.
 | L2 | LucidFlex worst cash dip over 118 starts / beats coin flips | −$4,720 / 98% | same | W1028 | 2026-11-20 | current |
 | L3 | LucidFlex 2010–15 net | −$701 | same | 2010–15 | 2026-11-20 | current |
 
+## Crypto and prediction-market top-10 (PREREG_TOP10_20261120, bb5f06e; PREREG_POSTLISTING_20261120, 616bb9c)
+
+| # | figure | value | command | window | computed | status |
+|---|---|---|---|---|---|---|
+| X1 | top-10 verdicts N1–N7 | N1–N3, N5, N6 fail; N4 no data; N7 not testable | `uv run python scripts/top10_20261120.py` | per test | 2026-11-20 | current |
+| X2 | N5 stETH discount capture | ~$40–50 a year per $10K | same | 2023-04..2026-11 | 2026-11-20 | current |
+| X3 | post-listing short, 2023 holdout (daily) | mean −$110.86 per $1,000 per 14d; 27% squeezed ≥ 50%; worst −$2,936 → **fail** | `uv run python scripts/postlisting_20261120.py --daily` | 79 listings 2023 | 2026-11-20 | current |
+
 Raw output for every command above is in `docs/jx_runs/`.

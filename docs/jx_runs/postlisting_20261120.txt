@@ -1,0 +1,6 @@
+[v2 daily] holdout listings with data: 79 of 79
+  mean P&L $-110.86 per $1,000 per 14d  t -1.86  -> no
+  mean excess over BTC short $-70.50  t -1.20  -> no
+  median P&L $3.92  -> yes
+  share profitable 51%; rose >= 50% at some point 27%; worst $-2936; best $811
+VERDICT v2: fail

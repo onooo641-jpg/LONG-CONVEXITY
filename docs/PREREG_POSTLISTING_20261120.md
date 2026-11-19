@@ -44,3 +44,19 @@ rule, with daily candles:
 - exit at the close of the 14th daily candle;
 - funding summed over the same span;
 - pump = highest daily high ÷ entry − 1.
+
+## Result of version 2 (2026-11-20, `docs/jx_runs/postlisting_20261120.txt`)
+
+79 of 79 holdout listings had daily data.
+
+| | value | condition met |
+|---|---|---|
+| mean P&L per $1,000 per 14 days | −$110.86 (t −1.86) | no |
+| mean excess over a BTC short | −$70.50 (t −1.20) | no |
+| median P&L | +$3.92 | yes |
+| share profitable / rose ≥ 50% at some point | 51% / **27%** | |
+| worst / best | **−$2,936** / +$811 | |
+
+**Verdict: fail.** The 2024 observation didn't hold on unseen listings. About
+a quarter of new coins squeezed 50% or more, and one loss was nearly 3× the
+stake.

@@ -498,3 +498,16 @@ Pre-registered in `docs/PREREG_20261120.md`.
   - Polymarket's status for Malaysia is conflicting: a June 2026 source says
     accessible, a November 2026 source lists it as restricted.
   - So those ideas are on hold until the legal question is answered properly.
+
+## Crypto and prediction-market top-10 (2026-11-20)
+
+Pre-registered, backtested on free public data fetched through GitHub Actions
+(`.github/workflows/fetch_public.yml`).
+- **Fail:** new-perp funding, utilisation threshold (fallback data, because
+  the history is paywalled), liquidity incentives (too few with IL data),
+  stETH discounts (~$45 a year per $10K), vault switching.
+- **No data:** Polymarket, which refuses US servers. Not circumvented.
+- **Not testable:** settlement resolution.
+- **Tested and failed:** shorting new listings. It looked like +$171 per
+  $1,000 on 2024 listings, then lost $111 on unseen 2023 listings, with 27% of
+  coins squeezing 50% or more.
