@@ -13,7 +13,7 @@ Rules:
 - A variant found by looking at results gets its own row, marked
   **selected-on-data**.
 
-**Tried so far: 28 rows, and row 12 alone is a 900-combination search.** So the
+**Tried so far: 35 rows, and row 12 alone is a 900-combination search.** So the
 real count of configurations looked at is about 914, plus the 0.5–3.0 target
 sweep in row 9.
 
@@ -63,6 +63,13 @@ risk, 5m signals and 1m fills.
 | 26 | fee cap 3% | Same at 3%. | fail | PREREG_BATCH_20261109 results |
 | 27 | stop buffer 2.0 | `stop_buffer_points=2.0`. | fail (NQ-S only) | PREREG_BATCH_20261109 results |
 | 28 | 120-min time stop | `time_exit_ts = min(orig, valid_from + 120 min)`. | **PASS** by rule; real net gain small (NQ +$1.2K); NQ-O +$187. Forward-log shadow only | PREREG_BATCH_20261109 results |
+| 29 | overnight drift (own account) | `docs/PREREG_20261120.md` H1. Long RTH close → next open, micros, roll windows dropped. | pending | PREREG_20261120 |
+| 30 | turn of month (own account) | H2. Close of day −2 → close of day +3. | pending | PREREG_20261120 |
+| 31 | pre-FOMC drift (own account) | H3. 14:00 day before → 13:59 statement day. | pending | PREREG_20261120 |
+| 32 | gap fade (own account) | H5. Gaps ≥ 0.25%, fade to prior close or RTH close. | pending | PREREG_20261120 |
+| 33 | day of week (own account) | H6. Open → close per weekday, t > 2.6. | pending | PREREG_20261120 |
+| 34 | Back2Funded always | P1. Reactivate a lost XFA up to 2×, $599. | pending | PREREG_20261120 |
+| 35 | Back2Funded once | P2. At most 1 reactivation per XFA. | pending | PREREG_20261120 |
 
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
