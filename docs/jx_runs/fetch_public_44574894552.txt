@@ -1,0 +1,46 @@
+=== llama_prices
+  FAIL https://coins.llama.fi/chart/coingecko:staked-ether,coingecko:ethereum?start=1640995200&span=300&period=1d  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/coingecko:staked-ether,coingecko:ethereum?start=1666915200&span=300&period=1d  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/coingecko:staked-ether,coingecko:ethereum?start=1692835200&span=300&period=1d  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/coingecko:staked-ether,coingecko:ethereum?start=1718755200&span=300&period=1d  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/coingecko:staked-ether,coingecko:ethereum?start=1744675200&span=300&period=1d  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/coingecko:staked-ether,coingecko:ethereum?start=1770595200&span=300&period=1d  -> HTTP 400
+llama_prices: 0 rows
+=== llama_prices done in 7s  ok 0 fail 6
+=== llama_lend
+llama_lend: 17 aave-v3 pools; lendBorrow ok
+  FAIL https://yields.llama.fi/chartLendBorrow/7e382157-b1bc-406d-b17b-facba43b716e  -> HTTP 402
+  FAIL https://yields.llama.fi/chartLendBorrow/e880e828-ca59-4ec6-8d4f-27182a4dc23d  -> HTTP 402
+  FAIL https://yields.llama.fi/chartLendBorrow/f981a304-bb6c-45b8-b0c5-fd2f515ad23a  -> HTTP 402
+  FAIL https://yields.llama.fi/chartLendBorrow/7c5e69a4-2430-4fa2-b7cb-857f79d7d1bf  -> HTTP 402
+  FAIL https://yields.llama.fi/chartLendBorrow/aa70268e-4b52-42bf-a116-608b370f9501  -> HTTP 402
+  FAIL https://yields.llama.fi/chartLendBorrow/a90d554a-b548-4f50-b03e-9dcb724b7777  -> HTTP 402
+  FAIL https://yields.llama.fi/chartLendBorrow/58d18059-f1d1-45ed-acd3-f386e98cc506  -> HTTP 402
+  FAIL https://yields.llama.fi/chartLendBorrow/6f00d46b-8735-49ae-9ced-2a0fccc56ad0  -> HTTP 402
+  FAIL https://yields.llama.fi/chartLendBorrow/23405eee-97e7-4b8e-8625-19c3a36047e8  -> HTTP 402
+  FAIL https://yields.llama.fi/chartLendBorrow/e302de4d-952e-4e18-9749-0a9dc86e98bc  -> HTTP 402
+  FAIL https://yields.llama.fi/chartLendBorrow/3665ee7e-6c5d-49d9-abb7-c47ab5d9d4ac  -> HTTP 402
+  FAIL https://yields.llama.fi/chartLendBorrow/d9fa8e14-0447-4207-9ae8-7810199dfa1f  -> HTTP 402
+  FAIL https://yields.llama.fi/chartLendBorrow/82969010-fb6e-4af6-a72c-55c8da9c78cf  -> HTTP 402
+  FAIL https://yields.llama.fi/chartLendBorrow/2b9bf1c6-a018-4e93-a32f-7cf6ccd311fc  -> HTTP 402
+  FAIL https://yields.llama.fi/chartLendBorrow/29be6a85-414f-4a66-b075-98863278912a  -> HTTP 402
+  FAIL https://yields.llama.fi/chartLendBorrow/7e0661bf-8cf3-45e6-9424-31916d4c7b84  -> HTTP 402
+  FAIL https://yields.llama.fi/chartLendBorrow/e053590b-54f1-40aa-ae0d-14e701ca734c  -> HTTP 402
+llama_lend: 19355 rows, mode fallback
+=== llama_lend done in 25s  ok 19 fail 23
+=== llama_pools
+llama_pools: 300 LP pools, 30 vaults, 29 lenders
+llama_pools: 211285 chart rows
+=== llama_pools done in 789s  ok 379 fail 23
+=== poly
+  FAIL https://gamma-api.polymarket.com/events?closed=true&limit=100&offset=0&end_date_min=2024-01-01T00:00:00Z&end_date_max=20  -> HTTP 406
+poly: 0 closed events listed
+poly: 0 negRisk events with >=3 markets and one YES winner
+poly: 0 price rows from 0 token histories
+=== poly done in 0s  ok 379 fail 24
+=== hl
+hl: 235 perps in meta, 56 marked delisted
+hl: 135 listings since 2024-01-01
+hl: baseline coins ['BTC', 'ETH', 'SOL', 'XRP', 'BNB', 'LINK', 'DOGE', 'kPEPE', 'LTC', 'SUI', 'AVAX', 'ARB', 'CRV', 'LDO', 'INJ', 'BCH', 'ATOM', 'APT', 'OP', 'STX']
+hl: 554449 funding rows, 15366 candles
+=== hl done in 1994s  ok 1905 fail 24
