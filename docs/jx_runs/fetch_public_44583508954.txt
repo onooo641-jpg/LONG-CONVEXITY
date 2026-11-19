@@ -1,0 +1,10 @@
+=== llama_prices
+llama_prices: 2838 rows
+=== llama_prices done in 16s  ok 15 fail 0
+=== poly
+  FAIL https://gamma-api.polymarket.com/events?closed=true&limit=100&offset=0&end_date_min=2024-01-01&end_date_max=2026-10-31  -> HTTP 406
+  FAIL https://gamma-api.polymarket.com/events?closed=true&limit=100&offset=0  -> HTTP 406
+poly: 0 closed events listed
+poly: 0 negRisk events with >=3 markets and one YES winner
+poly: 0 price rows from 0 token histories
+=== poly done in 0s  ok 15 fail 2
