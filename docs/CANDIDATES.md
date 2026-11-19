@@ -13,7 +13,7 @@ Rules:
 - A variant found by looking at results gets its own row, marked
   **selected-on-data**.
 
-**Tried so far: 36 rows, and row 12 alone is a 900-combination search.** So the
+**Tried so far: 43 rows, and row 12 alone is a 900-combination search.** So the
 real count of configurations looked at is about 914, plus the 0.5–3.0 target
 sweep in row 9.
 
@@ -71,6 +71,13 @@ risk, 5m signals and 1m fills.
 | 34 | Back2Funded always | P1. Reactivate a lost XFA up to 2×, $599. | fail (+$11.3K 2016–26, −$4.0K 2010–15, dip −$6,660) | PREREG_20261120 |
 | 35 | Back2Funded once | P2. At most 1 reactivation per XFA. | fail (+$9.4K / −$2.2K) | PREREG_20261120 |
 | 36 | Lucid (LucidFlex 50K) instead of Topstep | `docs/PREREG_LUCID_20261120.md`. Same trades, Lucid rules in the model. | fail as a replacement ($37,523 vs $44,359; worst dip −$4,720 vs −$3,520); beats coin flips 98%, so usable as a second firm | PREREG_LUCID_20261120 |
+| 37 | new-perp funding spikes (Hyperliquid) | `docs/PREREG_TOP10_20261120.md` N1. | pending | PREREG_TOP10 |
+| 38 | utilisation-threshold arbitrage (Aave) | `docs/PREREG_TOP10_20261120.md` N2. | pending | PREREG_TOP10 |
+| 39 | liquidity incentive mispricing (DEX LPs) | `docs/PREREG_TOP10_20261120.md` N3. | pending | PREREG_TOP10 |
+| 40 | multi-outcome probability arbitrage (Polymarket) | `docs/PREREG_TOP10_20261120.md` N4. | pending | PREREG_TOP10 |
+| 41 | stETH redemption discounts | `docs/PREREG_TOP10_20261120.md` N5. | pending | PREREG_TOP10 |
+| 42 | vault allocation inefficiencies | `docs/PREREG_TOP10_20261120.md` N6. | pending | PREREG_TOP10 |
+| 43 | settlement-resolution inefficiencies | `docs/PREREG_TOP10_20261120.md` N7. | pending | PREREG_TOP10 |
 
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
