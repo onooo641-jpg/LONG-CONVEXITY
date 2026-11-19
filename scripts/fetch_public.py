@@ -259,7 +259,38 @@ def job_poly(max_calls=4000):
     print(f"poly: {len(df)} price rows from {calls} token histories", flush=True)
 
 
-JOBS = {"hl": job_hl, "llama_lend": job_llama_lend, "llama_pools": job_llama_pools,
+def job_hl2023():
+    """PREREG_POSTLISTING_20261120: listings 2023-05-20..2023-12-31 + BTC control."""
+    coins = pd.read_parquet(OUT / "hl_coins.parquet")
+    lo = pd.Timestamp("2023-05-20", tz="UTC").timestamp() * 1000
+    sel = coins[coins.first_funding_ms.notna() & (coins.first_funding_ms >= lo) & (coins.first_funding_ms < T2024)]
+    print(f"hl2023: {len(sel)} holdout listings", flush=True)
+    fund, cand = [], []
+    for coin, first in zip(sel.coin, sel.first_funding_ms):
+        first = int(first)
+        end = first + 15 * 24 * 3600 * 1000
+        for r in hl_funding(coin, first, end, max_pages=2):
+            fund.append({"coin": coin, "time": int(r["time"]), "rate": float(r["fundingRate"])})
+        c = http(HL, {"type": "candleSnapshot", "req": {"coin": coin, "interval": "1h", "startTime": first, "endTime": end}})
+        time.sleep(1.0)
+        for k in c or []:
+            cand.append({"coin": coin, "t": int(k["t"]), "o": float(k["o"]), "h": float(k["h"]), "l": float(k["l"]), "c": float(k["c"])})
+    for coin in ("BTC",):
+        for r in hl_funding(coin, int(lo), T2024 + 15 * 86400 * 1000):
+            fund.append({"coin": coin, "time": int(r["time"]), "rate": float(r["fundingRate"])})
+        t = int(lo)
+        while t < T2024 + 15 * 86400 * 1000:
+            c = http(HL, {"type": "candleSnapshot", "req": {"coin": coin, "interval": "1h", "startTime": t, "endTime": t + 4000 * 3600 * 1000}})
+            time.sleep(1.0)
+            for k in c or []:
+                cand.append({"coin": coin, "t": int(k["t"]), "o": float(k["o"]), "h": float(k["h"]), "l": float(k["l"]), "c": float(k["c"])})
+            t += 4000 * 3600 * 1000
+    pd.DataFrame(fund).to_parquet(OUT / "hl2023_funding.parquet")
+    pd.DataFrame(cand).to_parquet(OUT / "hl2023_candles.parquet")
+    print(f"hl2023: {len(fund)} funding rows, {len(cand)} candles", flush=True)
+
+
+JOBS = {"hl2023": job_hl2023, "hl": job_hl, "llama_lend": job_llama_lend, "llama_pools": job_llama_pools,
         "llama_prices": job_llama_prices, "poly": job_poly}
 
 
