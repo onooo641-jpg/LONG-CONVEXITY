@@ -13,7 +13,7 @@ Rules:
 - A variant found by looking at results gets its own row, marked
   **selected-on-data**.
 
-**Tried so far: 43 rows, and row 12 alone is a 900-combination search.** So the
+**Tried so far: 44 rows, and row 12 alone is a 900-combination search.** So the
 real count of configurations looked at is about 914, plus the 0.5–3.0 target
 sweep in row 9.
 
@@ -78,6 +78,7 @@ risk, 5m signals and 1m fills.
 | 41 | stETH redemption discounts | `docs/PREREG_TOP10_20261120.md` N5. | pending | PREREG_TOP10 |
 | 42 | vault allocation inefficiencies | `docs/PREREG_TOP10_20261120.md` N6. | pending | PREREG_TOP10 |
 | 43 | settlement-resolution inefficiencies | `docs/PREREG_TOP10_20261120.md` N7. | pending | PREREG_TOP10 |
+| 44 | post-listing short on new perps (Hyperliquid, unhedged) | `docs/PREREG_POSTLISTING_20261120.md`. Selected from the N1 observation; tested on unseen 2023 listings. **Selected-on-data.** | pending | PREREG_POSTLISTING |
 
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
