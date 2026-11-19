@@ -186,4 +186,12 @@ day at every size.
 | T3 | same, 2010–15 net | −$6,549 / −$4,737 vs −$2,505 → **fail** | same | 2010–15 | 2026-11-20 | current |
 | T4 | doubled payout caps, change in 2016–26 net: 50K / 100K / 150K | +$329 / −$6,580 / −$9,287 | same | W1028 | 2026-11-20 | current |
 
+## Lucid comparison (docs/PREREG_LUCID_20261120.md, pre-registered ddce1b3)
+
+| # | figure | value | command | window | computed | status |
+|---|---|---|---|---|---|---|
+| L1 | LucidFlex 50K net / withdrawn / spent, $900 | $37,523 / $55,723 / $18,200 | `uv run python scripts/lucid_test_20261120.py` | W1028 | 2026-11-20 | current; prices and lock rule third-party |
+| L2 | LucidFlex worst cash dip over 118 starts / beats coin flips | −$4,720 / 98% | same | W1028 | 2026-11-20 | current |
+| L3 | LucidFlex 2010–15 net | −$701 | same | 2010–15 | 2026-11-20 | current |
+
 Raw output for every command above is in `docs/jx_runs/`.

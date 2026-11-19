@@ -483,3 +483,18 @@ Pre-registered in `docs/PREREG_20261120.md`.
 - **Don't take the doubled payout cap at 100K/150K:** bigger payouts leave less
   cushion and the accounts die sooner (−$6.6K and −$9.3K). At 50K it barely
   matters.
+
+## Lucid and Malaysia access (2026-11-20)
+
+- **Lucid (LucidFlex 50K):** automation allowed per its help center. Same
+  trades: $37,523 vs Topstep's $44,359, worst dip −$4,720 vs −$3,520. It fails
+  as a replacement but works as a second firm. Needs a Tradovate or Rithmic
+  connection; ProjectX is reportedly not supported since December 2025.
+- **Malaysia access for the crypto and prediction-market ideas:**
+  - The SC regulates crypto exchanges, and only a handful are registered.
+    Bybit and Huobi were ordered out.
+  - Offshore and DeFi venues sit in a legal grey area, with no investor
+    protection.
+  - Polymarket's status for Malaysia is conflicting: a June 2026 source says
+    accessible, a November 2026 source lists it as restricted.
+  - So those ideas are on hold until the legal question is answered properly.

@@ -54,3 +54,30 @@ its own 200 coin flips, and (b) net per dollar of worst cash dip is at least
 Topstep's (C2 ÷ |C4 worst| = 44,359 / 3,520 = 12.6). 2010–2015 is reported.
 
 Command: `uv run python scripts/lucid_test_20261120.py`
+
+## Results (2026-11-20, run once, `docs/jx_runs/lucid_test_20261120.txt`)
+
+The Topstep side reproduces the ledger exactly (C2, C4, C6), so the extended
+model is consistent.
+
+| 2016–2026, $900, same trades | Topstep 50K | LucidFlex 50K |
+|---|---|---|
+| net | $44,359 | **$37,523** |
+| withdrawn / spent | $61,440 / $17,081 | $55,723 / $18,200 |
+| pass rate / payouts | 34.4% / 44 | 33.5% / 40 |
+| beats coin flips | 98% | 98% |
+| deepest cash dip, worst of 118 starts | −$3,520 | **−$4,720** |
+| net per $ of worst dip | 12.6 | 7.9 |
+| 2010–2015 net | −$2,505 | −$701 |
+
+**Verdict: fail.** (a) is met: Lucid's edge over a coin flip is the same as
+Topstep's. (b) is not: Lucid needs a deeper cash reserve for less money. The
+cost lines show why. Topstep's monthly subscription includes a free reset
+credit; Lucid charges $90 for every evaluation bust ($9,810 in resets in
+total).
+
+What it means: Lucid isn't a better first choice than Topstep. As a second
+firm, after Topstep's 5 accounts, it still adds about $37K per account slot
+over 11 years in the backtest, at about $4,700 of reserve per slot. It also
+needs a new Tradovate or Rithmic connection, and LucidLive after 5 payouts
+isn't modelled.

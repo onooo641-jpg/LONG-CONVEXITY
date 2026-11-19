@@ -1,0 +1,19 @@
+warning: The `UV_NATIVE_TLS` environment variable is deprecated and will be removed in a future release. Use `UV_SYSTEM_CERTS` instead.
+
+=== Topstep 50K
+  2016-2026: net $44,359  withdrawn $61,440  spent $17,081  pass 34.4%  payouts 44  dry 1,184 d  | flip median $18,046  95th $36,711  beats 98%
+  deepest cash dip over 118 monthly starts: median $-863  worst $-3,520
+  cost lines: subscription $6,370, paid_resets $1,078, api_access $1,885, activation $7,748
+  2010-2015: net $-2,505  withdrawn $2,431  spent $4,936  pass 16.7%  payouts 3  dry 1,739 d  | flip median $-4,116  95th $-535  beats 83%
+
+=== LucidFlex 50K
+  2016-2026: net $37,523  withdrawn $55,723  spent $18,200  pass 33.5%  payouts 40  dry 1,171 d  | flip median $18,519  95th $32,787  beats 98%
+  deepest cash dip over 118 monthly starts: median $-792  worst $-4,720
+  cost lines: evaluations $6,440, paid_resets $9,810, subscription $0, api_access $1,950, activation $0
+  2010-2015: net $-701  withdrawn $3,794  spent $4,495  pass 16.7%  payouts 4  dry 1,673 d  | flip median $-2,928  95th $2,344  beats 80%
+
+=== VERDICT (pre-registered)
+  (a) Lucid net $37,523 vs its coin-flip 95th pct $32,787: yes
+  (b) net per $ of worst dip: Lucid 7.9 vs Topstep 12.6: no
+  -> fail
+EXIT 0

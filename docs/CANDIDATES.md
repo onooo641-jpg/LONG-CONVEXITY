@@ -70,7 +70,7 @@ risk, 5m signals and 1m fills.
 | 33 | day of week (own account) | H6. Open → close per weekday, t > 2.6. | fail (NQ Monday SEEN alone passes, 1 of 20 cells) | PREREG_20261120 |
 | 34 | Back2Funded always | P1. Reactivate a lost XFA up to 2×, $599. | fail (+$11.3K 2016–26, −$4.0K 2010–15, dip −$6,660) | PREREG_20261120 |
 | 35 | Back2Funded once | P2. At most 1 reactivation per XFA. | fail (+$9.4K / −$2.2K) | PREREG_20261120 |
-| 36 | Lucid (LucidFlex 50K) instead of Topstep | `docs/PREREG_LUCID_20261120.md`. Same trades, Lucid rules in the model. | pending | PREREG_LUCID_20261120 |
+| 36 | Lucid (LucidFlex 50K) instead of Topstep | `docs/PREREG_LUCID_20261120.md`. Same trades, Lucid rules in the model. | fail as a replacement ($37,523 vs $44,359; worst dip −$4,720 vs −$3,520); beats coin flips 98%, so usable as a second firm | PREREG_LUCID_20261120 |
 
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.

@@ -298,8 +298,11 @@ Two different markets would smooth cash flow (NQ and ES chains correlate at
 0.14 [K5]), but no second market has passed its test.
 
 Other firms also cap funded accounts at about 5 per person, and most restrict
-bots. Lucid reportedly allows automation, but that hasn't been confirmed on
-Lucid's own pages, and it would need a new broker connection.
+bots. **Lucid** allows automation (its help center says so). Modelled with the
+same trades, LucidFlex 50K nets $37,523 against Topstep's $44,359, beats coin
+flips just as often, but needs a deeper reserve (−$4,720 worst) [L1–L2]. So
+it's a second firm after Topstep, not a replacement, and it would need a new
+Tradovate or Rithmic connection.
 
 ---
 

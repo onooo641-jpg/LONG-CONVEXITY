@@ -155,6 +155,22 @@ class XFARules:
     back2funded_max: int = 0
     back2funded_price: float = 599.0
 
+    #: Other firms. Defaults reproduce Topstep exactly.
+    #: Where the loss limit settles once it locks (and after a payout):
+    #: Topstep $0, Lucid +$100 above the starting balance.
+    lock_level: float = 0.0
+    #: Smallest payout the firm accepts (Lucid $500). A smaller one is skipped.
+    payout_min: float = 0.0
+    #: Payouts allowed per funded account before it ends (Lucid 5, then
+    #: "moved live"; modelled as the account finishing). None = no limit.
+    max_payouts_per_xfa: int | None = None
+    #: False = no funded scaling ladder: the evaluation's contract cap applies.
+    funded_scaling: bool = True
+    #: One-time pricing (Lucid): the first evaluation and every replacement
+    #: after a funded account ends cost this; an evaluation bust costs
+    #: ``reset``; ``monthly`` should be 0. None = Topstep's subscription model.
+    one_time_price: float | None = None
+
     monthly: float = 49.0
     reset: float = 49.0
     #: Charged once per funded account EARNED -- so it is charged again every
@@ -180,8 +196,10 @@ class _Account:
     best_day: float = 0.0
     #: Back2Funded reactivations already used on this XFA.
     reactivations: int = 0
+    #: Payouts taken from this XFA.
+    n_payouts: int = 0
 
-    def floor(self, limit: float, locks_at: float | None) -> float:
+    def floor(self, limit: float, locks_at: float | None, lock_level: float = 0.0) -> float:
         """The balance at which this account is closed.
 
         For an evaluation the limit simply trails the peak. For a funded
@@ -190,9 +208,9 @@ class _Account:
         is that it never does.
         """
         if self.paid_out:
-            return 0.0
+            return lock_level
         trailing = self.peak - limit
-        return trailing if locks_at is None else min(trailing, 0.0)
+        return trailing if locks_at is None else min(trailing, lock_level)
 
 
 def _months(days: float) -> int:
@@ -200,7 +218,8 @@ def _months(days: float) -> int:
     return max(1, int(math.ceil(days / 30.4)))
 
 
-def costs(rules: XFARules, days: float, resets: int, activations: int) -> dict:
+def costs(rules: XFARules, days: float, resets: int, activations: int,
+          rebuys: int = 0) -> dict:
     """Itemised spend. ``scripts/quarterly_report.py``'s ``path_cost`` is this
     same rule for a run that passes once; tests/test_recycle.py asserts the two
     agree on that case so the duplication cannot drift.
@@ -209,6 +228,18 @@ def costs(rules: XFARules, days: float, resets: int, activations: int) -> dict:
     none and each later month covers one reset.
     """
     months = _months(days)
+    if rules.one_time_price is not None:
+        # One-time pricing: no rebill credits. An evaluation bust is a reset;
+        # a funded account that ends is replaced by a new evaluation.
+        lines = {
+            "evaluations": (1 + rebuys) * rules.one_time_price,
+            "paid_resets": max(0, resets - rebuys) * rules.reset,
+            "subscription": months * rules.monthly,
+            "api_access": months * rules.api_monthly,
+            "activation": activations * rules.activation,
+        }
+        return {"months": months, "free_credits": 0, "reset_count": max(0, resets - rebuys),
+                **lines, "total": float(sum(lines.values()))}
     free = max(0, months - 1)
     paid = max(0, resets - free)
     lines = {
@@ -264,7 +295,7 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
         outlive the loop.
         """
         spent = (costs(rules, (ts - first).total_seconds() / 86400,
-                       resets, activations)["total"]
+                       resets, activations, rebuys)["total"]
                  + reactivations * rules.back2funded_price)
         timeline.append({"ts": ts, "event": event, "trade": at, "cash": cash,
                          "cost": spent, "net": cash - spent})
@@ -276,6 +307,7 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
     account, funded = _Account(), False
     combine_busts = funded_busts = resets = activations = payouts = 0
     reactivations = 0
+    rebuys = 0  # funded accounts ended and replaced (one-time pricing)
     retired_combine = retired_funded = 0
     bust_streak = worst_streak = 0
     cash = gross = 0.0
@@ -288,8 +320,10 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
     for at, (pnl, contracts, exit_ts) in enumerate(
             zip(trades["net_pnl"], trades["contracts"], trades["exit_ts"])):
         # The backtest sizes on risk alone; neither ceiling exists there.
-        cap = (scaling_tier(account.balance) * rules.scaling_mult if funded
-               else rules.combine_max_contracts)
+        if funded and rules.funded_scaling:
+            cap = scaling_tier(account.balance) * rules.scaling_mult
+        else:
+            cap = rules.combine_max_contracts
         scale = min(int(contracts), cap) / contracts if contracts else 0.0
         day = float(pnl) * scale * (funded_scale if funded else 1.0)
 
@@ -301,9 +335,10 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
             locks = (rules.mll_locks_at if funded
                      else rules.loss_limit if rules.combine_mll_locks else None)
             planned = risk_usd * (funded_scale if funded else 1.0)
-            if account.balance - account.floor(limit, locks) < planned * rules.safety_mult:
+            if account.balance - account.floor(limit, locks, rules.lock_level) < planned * rules.safety_mult:
                 if funded:
                     retired_funded += 1
+                    rebuys += 1
                     funded_days += (exit_ts - funded_since).total_seconds() / 86400
                     funded, funded_since = False, None
                 else:
@@ -326,7 +361,8 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
                 continue
             if account.balance <= account.floor(
                     rules.loss_limit,
-                    rules.loss_limit if rules.combine_mll_locks else None):
+                    rules.loss_limit if rules.combine_mll_locks else None,
+                    rules.lock_level):
                 combine_busts += 1
                 resets += 1
                 bust_streak += 1
@@ -342,7 +378,7 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
         account.best_day = max(account.best_day, day)
 
         if account.balance <= account.floor(rules.funded_loss_limit,
-                                            rules.mll_locks_at):
+                                            rules.mll_locks_at, rules.lock_level):
             funded_busts += 1
             if account.reactivations < rules.back2funded_max:
                 # Back2Funded: same XFA, fresh start, no Combine needed.
@@ -354,6 +390,7 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
             # A dead XFA sends you back through an evaluation, which is a
             # reset against the same subscription.
             resets += 1
+            rebuys += 1
             bust_streak += 1
             worst_streak = max(worst_streak, bust_streak)
             funded, account, funded_since = False, _Account(), None
@@ -376,6 +413,9 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
                              and account.after_payout is not None
                              and account.balance <= account.after_payout)
                     and (locked or policy is Policy.IMMEDIATE))
+        if eligible and min(account.balance * rules.payout_share,
+                            rules.payout_cap) < rules.payout_min:
+            eligible = False
         if eligible:
             amount = min(account.balance * rules.payout_share, rules.payout_cap)
             # The balance falls; the high-water mark the limit trails does not.
@@ -394,6 +434,16 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
                             (exit_ts - last_cash_ts).total_seconds() / 86400)
             last_cash_ts = exit_ts
             mark(exit_ts, "payout", at)
+            account.n_payouts += 1
+            if (rules.max_payouts_per_xfa is not None
+                    and account.n_payouts >= rules.max_payouts_per_xfa):
+                # The account ends after its last allowed payout (Lucid moves
+                # it live; not modelled) and a new evaluation is bought.
+                funded_days += (exit_ts - funded_since).total_seconds() / 86400
+                resets += 1
+                rebuys += 1
+                funded, account, funded_since = False, _Account(), None
+                mark(exit_ts, "xfa_complete", at)
 
     end = trades["exit_ts"].iloc[-1]
     if funded and funded_since is not None:
@@ -401,7 +451,7 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
     worst_dry = max(worst_dry, (end - last_cash_ts).total_seconds() / 86400)
 
     days = (end - first).total_seconds() / 86400
-    spend = costs(rules, days, resets, activations)
+    spend = costs(rules, days, resets, activations, rebuys)
     if reactivations:
         spend["back2funded"] = reactivations * rules.back2funded_price
         spend["total"] += spend["back2funded"]
