@@ -48,6 +48,10 @@ rulebook (`20261107`).
 | C6 | coin-flip baseline (same sizes, random sign, fees kept), median of 200 | $18,046; pass 26.7% | `uv run python scripts/jx_zero_edge.py` | W1028 | 2026-11-07 | current |
 | C7 | raw strategy, no recycling, $900 | −$2,553 net (S6) | `uv run python scripts/jx_checks.py` §1 last line | W1028 | 2026-11-06 | current |
 | C8 | unseen holdout 2010-07..2015-12, recycling net | −$2,505 (PF 0.784) | `uv run python scripts/holdout_test.py` | 2010–2015 | 2026-11-07 | current |
+| C9 | withdrawals by year, LOCK_FIRST cap $2,000 | 2016–18 $0 each; 2019 $4,474; 2020 $9,734; 2021 $1,164; 2022 $3,342; 2023 $11,586; 2024 $6,596; 2025 $10,221; 2026 $14,322 | `uv run python scripts/jx_checks.py --skip-strategy` §2, "policy LOCK_FIRST" | W1028 | 2026-11-07 | current |
+| C10 | rule stress, net: baseline / reset $99 / activation per attempt / MLL never locks / 10 winning days / all five | $44,359 / $43,259 / $29,459 / −$17,130 / $46,775 / −$33,329 | same, §3 "policy LOCK_FIRST" | W1028 | 2026-11-07 | current |
+| C11 | per evaluation bought: spent / withdrawn (C2 ÷ C1) | $112 / $404 | arithmetic on C1, C2 | W1028 | 2026-11-19 | current |
+| C12 | commission $0.74 instead of $1.24, 2016–26 / holdout | net $50,961 / −$2,475 | `uv run python scripts/commission_sensitivity.py` | W1028 | 2026-11-08 | current |
 
 ## Strategy alone
 
