@@ -79,9 +79,9 @@ risk, 5m signals and 1m fills.
 | 42 | vault allocation inefficiencies | `docs/PREREG_TOP10_20261120.md` N6. | fail (3% of vaults; −0.46%/yr before costs) | PREREG_TOP10 |
 | 43 | settlement-resolution inefficiencies | `docs/PREREG_TOP10_20261120.md` N7. | not data-testable (manual review) | PREREG_TOP10 |
 | 44 | post-listing short on new perps (Hyperliquid, unhedged) | `docs/PREREG_POSTLISTING_20261120.md`. Selected from the N1 observation; tested on unseen 2023 listings. **Selected-on-data.** | fail on unseen 2023 listings (−$111 mean, 27% squeezed ≥50%, worst −$2,936 per $1,000) | PREREG_POSTLISTING |
-| 45 | cross-chain lending-rate arbitrage (weekly) | `docs/PREREG_BATCH2_20261120.md` M1. | pending | PREREG_BATCH2 |
-| 46 | stablecoin depeg buying (failures included) | M2. | pending | PREREG_BATCH2 |
-| 47 | cross-chain stablecoin dislocations | M3. | pending | PREREG_BATCH2 |
+| 45 | cross-chain lending-rate arbitrage (weekly) | `docs/PREREG_BATCH2_20261120.md` M1. | fail (−0.9% to −3.9%/yr vs holding Aave Ethereum) | PREREG_BATCH2 |
+| 46 | stablecoin depeg buying (failures included) | M2. | fail (UST −94% on one buy; −$3.1K/yr per $10K) | PREREG_BATCH2 |
+| 47 | cross-chain stablecoin dislocations | M3. | no data (chain-address prices rejected) | PREREG_BATCH2 |
 
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.

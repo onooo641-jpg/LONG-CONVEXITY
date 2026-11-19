@@ -36,3 +36,14 @@ only; the legal question for a Malaysian resident still applies.
   this data can't show a real gap.
 
 Command: `uv run python scripts/batch2_20261120.py`
+
+## Results (2026-11-20, `docs/jx_runs/batch2_20261120.txt`, data run 44585291434)
+
+| Test | Verdict | Key numbers |
+|---|---|---|
+| M1 cross-chain lending, weekly rotation | **fail** | USDC −3.46% / −3.88% a year vs holding Aave v3 Ethereum; USDT −0.91% / −1.59% |
+| M2 stablecoin depeg buying | **fail** | 66 events. Most recovered for +1–4% within days, but TerraUSD lost 93.9% on the first buy. −$3,148 / −$3,301 a year per $10K, and the worst event breaks the 5% limit |
+| M3 cross-chain USDC gaps | **no data** | The coins API rejected the chain-address requests (HTTP 400) |
+
+M2 is the lesson: without the coins that collapsed, depeg buying looks like
+free money. One collapse wipes out years of small wins.

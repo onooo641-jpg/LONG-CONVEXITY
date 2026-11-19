@@ -1,0 +1,83 @@
+=== M1 cross-chain lending-rate arbitrage (weekly)
+  USDC first half: 691 days, net excess -3.46%/yr vs Aave Ethereum  -
+  USDC second half: 692 days, net excess -3.88%/yr vs Aave Ethereum  -
+  USDT first half: 688 days, net excess -0.91%/yr vs Aave Ethereum  -
+  USDT second half: 688 days, net excess -1.59%/yr vs Aave Ethereum  -
+  -> M1 fail
+
+=== M2 stablecoin depeg buying
+  coins with data: 10; events: 66
+                       coin        day    buy   sell     ret  days
+              coingecko:dai 2022-07-01 0.9878 1.0052  0.0156     1
+              coingecko:dai 2023-03-12 0.9669 1.0010  0.0333     2
+coingecko:first-digital-usd 2024-08-06 0.9895 1.0000  0.0087     2
+coingecko:first-digital-usd 2025-02-25 0.9876 0.9991  0.0096     1
+coingecko:first-digital-usd 2025-04-03 0.9858 1.0040  0.0164     8
+             coingecko:frax 2022-06-29 0.9887 1.0000  0.0094     1
+             coingecko:frax 2022-07-01 0.9861 1.0014  0.0136     1
+             coingecko:frax 2022-08-10 0.9867 1.0017  0.0131     2
+             coingecko:frax 2022-08-19 0.9853 1.0002  0.0131     7
+             coingecko:frax 2023-03-12 0.9656 1.0011  0.0348     4
+             coingecko:frax 2024-05-13 0.9867 0.9990  0.0105     5
+             coingecko:frax 2026-01-30 0.9847 0.9994  0.0129    30
+             coingecko:frax 2026-03-06 0.9878 0.9931  0.0033    60
+             coingecko:frax 2026-05-07 0.9889 1.0045  0.0138     4
+             coingecko:frax 2026-06-06 0.9886 0.9902 -0.0004    60
+             coingecko:frax 2026-09-12 0.9879 0.9891 -0.0007    60
+             coingecko:frax 2026-11-14 0.9894 0.9900 -0.0014     5
+      coingecko:liquity-usd 2023-08-18 0.9848 1.0020  0.0155     5
+      coingecko:liquity-usd 2023-12-16 0.9885 0.9994  0.0090    21
+      coingecko:liquity-usd 2024-07-09 0.9890 1.0010  0.0102     7
+   coingecko:paxos-standard 2022-07-01 0.9892 1.0037  0.0127     1
+   coingecko:paxos-standard 2022-07-26 0.9895 1.0048  0.0135     1
+   coingecko:paxos-standard 2022-11-10 0.9898 1.0030  0.0114     1
+   coingecko:paxos-standard 2023-03-09 0.9824 1.0000  0.0159     1
+   coingecko:paxos-standard 2023-03-12 0.9836 0.9997  0.0144     2
+   coingecko:paxos-standard 2026-11-06 0.9855 0.9971  0.0097    13
+         coingecko:terrausd 2022-05-10 0.7988 0.0504 -0.9389    60
+         coingecko:terrausd 2022-07-10 0.0488 0.0413 -0.1548    60
+         coingecko:terrausd 2022-09-09 0.0427 0.0354 -0.1727    60
+         coingecko:terrausd 2022-11-09 0.0281 0.0202 -0.2838    60
+         coingecko:terrausd 2023-01-09 0.0204 0.0228  0.1140    60
+         coingecko:terrausd 2023-03-11 0.0220 0.0158 -0.2828    60
+         coingecko:terrausd 2023-05-11 0.0163 0.0118 -0.2767    60
+         coingecko:terrausd 2023-07-11 0.0125 0.0120 -0.0457    60
+         coingecko:terrausd 2023-09-10 0.0132 0.0120 -0.0921    60
+         coingecko:terrausd 2023-11-10 0.0122 0.0264  1.1743    60
+         coingecko:terrausd 2024-01-10 0.0249 0.0359  0.4376    60
+         coingecko:terrausd 2024-03-11 0.0346 0.0223 -0.3583    60
+         coingecko:terrausd 2024-05-11 0.0219 0.0159 -0.2763    60
+         coingecko:terrausd 2024-07-11 0.0161 0.0157 -0.0256    60
+         coingecko:terrausd 2024-09-10 0.0163 0.0225  0.3829    60
+         coingecko:terrausd 2024-11-10 0.0242 0.0189 -0.2218    60
+         coingecko:terrausd 2025-01-10 0.0184 0.0113 -0.3856    60
+         coingecko:terrausd 2025-03-12 0.0118 0.0147  0.2439    60
+         coingecko:terrausd 2025-05-12 0.0141 0.0136 -0.0398    60
+         coingecko:terrausd 2025-07-12 0.0135 0.0135  0.0006    60
+         coingecko:terrausd 2025-09-11 0.0137 0.0073 -0.4656    60
+         coingecko:terrausd 2025-11-11 0.0076 0.0070 -0.0802    60
+         coingecko:terrausd 2026-01-11 0.0071 0.0050 -0.2984    60
+         coingecko:terrausd 2026-03-13 0.0050 0.0077  0.5147    60
+         coingecko:terrausd 2026-05-13 0.0070 0.0057 -0.1894    60
+         coingecko:terrausd 2026-07-13 0.0056 0.0050 -0.0969    60
+         coingecko:terrausd 2026-09-12 0.0051 0.0043 -0.1700    60
+         coingecko:terrausd 2026-11-12 0.0042 0.0040 -0.0652     7
+         coingecko:true-usd 2024-01-16 0.9876 1.0000  0.0105    46
+         coingecko:true-usd 2025-06-13 0.9899 1.0000  0.0082    11
+         coingecko:usd-coin 2022-07-01 0.9879 1.0027  0.0129     1
+         coingecko:usd-coin 2023-03-12 0.9603 0.9994  0.0387     2
+             coingecko:usdd 2022-06-15 0.9787 0.9998  0.0196    24
+             coingecko:usdd 2022-11-10 0.9876 0.9758 -0.0140    60
+             coingecko:usdd 2023-01-10 0.9805 1.0004  0.0183    38
+             coingecko:usdd 2023-03-12 0.9677 1.0020  0.0335     6
+             coingecko:usdd 2023-03-29 0.9889 0.9996  0.0088    34
+             coingecko:usdd 2023-11-26 0.9890 0.9999  0.0091     3
+             coingecko:usdd 2023-12-03 0.9878 0.9925  0.0027    60
+             coingecko:usdd 2024-04-16 0.9856 0.9999  0.0125    24
+  first half: 39 events, $-3,148 a year per $10K  -
+  second half: 27 events, $-3,301 a year per $10K  -
+  worst event -93.9%  (breaks the 5% loss limit)
+  -> M2 fail
+
+=== M3 cross-chain USDC dislocations
+  no chain prices returned -> no data
