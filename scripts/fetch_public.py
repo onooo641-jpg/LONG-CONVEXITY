@@ -19,7 +19,7 @@ from pathlib import Path
 import pandas as pd
 
 OUT = Path(__file__).resolve().parent.parent / "data" / "public"
-UA = {"User-Agent": "long-convexity-research/1.0", "Content-Type": "application/json"}
+UA = {"User-Agent": "long-convexity-research/1.0", "Accept": "application/json"}
 STATS = {"ok": 0, "fail": 0}
 
 
@@ -27,7 +27,8 @@ def http(url, body=None, tries=4, pause=1.0):
     data = json.dumps(body).encode() if body is not None else None
     for k in range(tries):
         try:
-            req = urllib.request.Request(url, data=data, headers=UA, method="POST" if data else "GET")
+            hdr = {**UA, **({"Content-Type": "application/json"} if data else {})}
+            req = urllib.request.Request(url, data=data, headers=hdr, method="POST" if data else "GET")
             with urllib.request.urlopen(req, timeout=60) as r:
                 STATS["ok"] += 1
                 return json.loads(r.read().decode())
@@ -179,15 +180,21 @@ def job_llama_pools():
 
 
 def job_llama_prices():
-    coins = "coingecko:staked-ether,coingecko:ethereum"
-    start = int(pd.Timestamp("2022-01-01", tz="UTC").timestamp())
+    # Run 44574894552: span=300 -> HTTP 400. Try shorter spans and the token
+    # address form; keep whichever answers.
+    variants = ["coingecko:staked-ether,coingecko:ethereum",
+                "ethereum:0xae7ab96520de3a18e5e111b5eaab095312d7fe84,coingecko:ethereum"]
+    start = int(pd.Timestamp("2023-01-01", tz="UTC").timestamp())
     rows = []
-    for k in range(6):
-        d = http(f"https://coins.llama.fi/chart/{coins}?start={start + k * 300 * 86400}&span=300&period=1d")
-        time.sleep(1.0)
-        for key, v in (d or {}).get("coins", {}).items():
-            for p in v.get("prices", []):
-                rows.append({"coin": key, "t": int(p["timestamp"]), "price": float(p["price"])})
+    for coins in variants:
+        for k in range(0, 1500, 100):
+            d = http(f"https://coins.llama.fi/chart/{coins}?start={start + k * 86400}&span=100&period=1d")
+            time.sleep(0.8)
+            for key, v in (d or {}).get("coins", {}).items():
+                for p in v.get("prices", []):
+                    rows.append({"coin": key, "t": int(p["timestamp"]), "price": float(p["price"])})
+        if rows:
+            break
     df = pd.DataFrame(rows).drop_duplicates()
     df.to_parquet(OUT / "llama_prices.parquet")
     print(f"llama_prices: {len(df)} rows", flush=True)
@@ -200,9 +207,12 @@ C = "https://clob.polymarket.com"
 
 def job_poly(max_calls=4000):
     events, offset = [], 0
+    # Run 44574894552: the ISO end_date filters -> HTTP 406. Date-only form here.
     while offset < 20000:
         page = http(f"{G}/events?closed=true&limit=100&offset={offset}"
-                    f"&end_date_min=2024-01-01T00:00:00Z&end_date_max=2026-10-31T23:59:59Z")
+                    f"&end_date_min=2024-01-01&end_date_max=2026-10-31")
+        if page is None and offset == 0:
+            page = http(f"{G}/events?closed=true&limit=100&offset={offset}")
         time.sleep(0.3)
         if not page:
             break
