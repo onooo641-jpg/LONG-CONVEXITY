@@ -307,7 +307,46 @@ def job_hl2023d():
     print(f"hl2023d: {len(rows)} daily candles for {len(sel)} listings + BTC", flush=True)
 
 
-JOBS = {"hl2023d": job_hl2023d, "hl2023": job_hl2023, "hl": job_hl, "llama_lend": job_llama_lend, "llama_pools": job_llama_pools,
+def job_batch2():
+    """PREREG_BATCH2_20261120: lending pools across chains + stablecoin prices."""
+    pools = pd.read_parquet(OUT / "llama_pools_now.parquet")
+    sel = pools[pools.symbol.isin(["USDC", "USDT"])
+                & pools.project.isin(["aave-v3", "compound-v3", "spark", "morpho-blue", "fluid-lending"])
+                & pools.chain.isin(["Ethereum", "Arbitrum", "Base", "Optimism", "Polygon", "Avalanche"])
+                & (pools.tvlUsd >= 10e6)]
+    print(f"batch2: {len(sel)} lending pools", flush=True)
+    rows = []
+    for pid in sel.pool:
+        d = http(f"{Y}/chart/{pid}")
+        time.sleep(0.6)
+        for r in (d or {}).get("data", []):
+            rows.append({"pool": pid, **r})
+    pd.DataFrame(rows).to_parquet(OUT / "batch2_lending.parquet")
+    print(f"batch2: {len(rows)} lending chart rows", flush=True)
+    ids = ["tether", "usd-coin", "dai", "terrausd", "frax", "true-usd", "usdd", "liquity-usd",
+           "paxos-standard", "first-digital-usd"]
+    chains = {"ethereum": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              "arbitrum": "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+              "base": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+              "optimism": "0x0b2c639c533813f4aa9d7837caf62653d097ff85",
+              "polygon": "0x3c499c542cef5e3811e1192ce70d8cc03d5c3359",
+              "avax": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e"}
+    groups = [",".join(f"coingecko:{i}" for i in ids[:5]), ",".join(f"coingecko:{i}" for i in ids[5:]),
+              ",".join(f"{c}:{a}" for c, a in chains.items())]
+    start = int(pd.Timestamp("2022-01-01", tz="UTC").timestamp())
+    px = []
+    for g in groups:
+        for k in range(0, 1800, 100):
+            d = http(f"https://coins.llama.fi/chart/{g}?start={start + k * 86400}&span=100&period=1d")
+            time.sleep(0.8)
+            for key, v in (d or {}).get("coins", {}).items():
+                for p in v.get("prices", []):
+                    px.append({"coin": key, "t": int(p["timestamp"]), "price": float(p["price"])})
+    pd.DataFrame(px).drop_duplicates().to_parquet(OUT / "batch2_prices.parquet")
+    print(f"batch2: {len(px)} price rows", flush=True)
+
+
+JOBS = {"batch2": job_batch2, "hl2023d": job_hl2023d, "hl2023": job_hl2023, "hl": job_hl, "llama_lend": job_llama_lend, "llama_pools": job_llama_pools,
         "llama_prices": job_llama_prices, "poly": job_poly}
 
 
