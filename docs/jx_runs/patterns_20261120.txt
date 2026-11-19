@@ -1,0 +1,124 @@
+warning: The `UV_NATIVE_TLS` environment variable is deprecated and will be removed in a future release. Use `UV_SYSTEM_CERTS` instead.
+NQ: done
+ES: done
+YM: done
+RTY: done
+
+per market and window: n events, mean net pts, t(event), t(event vs base), $/yr per micro
+
+H1  (t threshold 2.0)
+  OLD  NQ  n   552  mean     1.45  t   1.21  vs base   1.16  $     291/yr  -
+  OLD  ES  n  1115  mean    -0.27  t  -0.96  vs base   0.23  $    -269/yr  -
+  OLD  YM  n  1120  mean    -0.42  t  -0.18  vs base   0.42  $     -43/yr  -
+  OLD  RTY not enough data (0 events)
+  SEEN NQ  n  2202  mean     4.28  t   1.66  vs base   0.10  $   1,742/yr  -
+  SEEN ES  n  2202  mean     0.60  t   1.06  vs base  -0.21  $     609/yr  -
+  SEEN YM  n  2198  mean     5.31  t   1.27  vs base  -0.12  $     539/yr  -
+  SEEN RTY n  1889  mean     0.52  t   1.41  vs base   1.28  $     458/yr  -
+  -> SEEN 0/4, OLD 0/3  => fail
+
+H2  (t threshold 2.0)
+  OLD  NQ  n    36  mean     8.14  t   0.58  vs base  -0.56  $     106/yr  -
+  OLD  ES  n    56  mean     1.73  t   0.42  vs base   0.06  $      88/yr  -
+  OLD  YM  n    57  mean     4.73  t   0.14  vs base  -0.10  $      24/yr  -
+  OLD  RTY not enough data (0 events)
+  SEEN NQ  n   107  mean    69.36  t   1.88  vs base   0.92  $   1,371/yr  -
+  SEEN ES  n   107  mean    12.89  t   1.61  vs base   0.39  $     637/yr  -
+  SEEN YM  n   107  mean    79.73  t   1.35  vs base   0.05  $     394/yr  -
+  SEEN RTY n    94  mean     1.97  t   0.34  vs base  -0.23  $      85/yr  -
+  -> SEEN 0/4, OLD 0/3  => fail
+
+H3  (t threshold 2.0)
+  OLD  NQ  n    11  mean    -0.42  t  -0.07  vs base  -0.43  $      -2/yr  -
+  OLD  ES  n    27  mean     0.09  t   0.04  vs base  -0.05  $       2/yr  -
+  OLD  YM  n    27  mean    -5.92  t  -0.38  vs base  -0.57  $     -15/yr  -
+  OLD  RTY not enough data (0 events)
+  SEEN NQ  n    12  mean    28.78  t   0.45  vs base   0.23  $     244/yr  -
+  SEEN ES  n    12  mean    -2.69  t  -0.23  vs base  -0.53  $     -57/yr  -
+  SEEN YM  n    12  mean   -58.73  t  -0.67  vs base  -0.88  $    -125/yr  -
+  SEEN RTY n    12  mean    -1.83  t  -0.40  vs base  -0.55  $     -39/yr  -
+  -> SEEN 0/4, OLD 0/3  => fail
+
+H5  (t threshold 2.0)
+  OLD  NQ  n   324  mean    -0.75  t  -0.51  vs base    nan  $     -89/yr  -
+  OLD  ES  n   594  mean    -0.93  t  -2.13  vs base    nan  $    -501/yr  -
+  OLD  YM  n   570  mean   -11.24  t  -2.97  vs base    nan  $    -582/yr  -
+  OLD  RTY not enough data (0 events)
+  SEEN NQ  n  1417  mean    -1.14  t  -0.33  vs base    nan  $    -299/yr  -
+  SEEN ES  n  1226  mean    -1.19  t  -1.38  vs base    nan  $    -673/yr  -
+  SEEN YM  n  1191  mean    -5.49  t  -0.85  vs base    nan  $    -302/yr  -
+  SEEN RTY n  1278  mean    -0.09  t  -0.19  vs base    nan  $     -55/yr  -
+  -> SEEN 0/4, OLD 0/3  => fail
+
+H6-M  (t threshold 2.6)
+  OLD  NQ  n   163  mean     1.47  t   0.72  vs base   1.14  $      87/yr  -
+  OLD  ES  n   219  mean    -0.51  t  -0.68  vs base  -0.06  $    -102/yr  -
+  OLD  YM  n   219  mean    -0.46  t  -0.08  vs base   0.44  $      -9/yr  -
+  OLD  RTY not enough data (0 events)
+  SEEN NQ  n   424  mean    21.58  t   3.24  vs base   2.91  $   1,691/yr  PASS
+  SEEN ES  n   424  mean     3.58  t   2.50  vs base   2.22  $     702/yr  -
+  SEEN YM  n   424  mean    19.23  t   1.80  vs base   1.44  $     377/yr  -
+  SEEN RTY n   367  mean     0.86  t   0.83  vs base   1.35  $     145/yr  -
+  -> SEEN 1/4, OLD 0/3  => fail
+
+H6-T  (t threshold 2.6)
+  OLD  NQ  n   114  mean    -4.53  t  -1.93  vs base  -1.82  $    -188/yr  -
+  OLD  ES  n   237  mean    -0.28  t  -0.40  vs base   0.30  $     -61/yr  -
+  OLD  YM  n   238  mean    -3.10  t  -0.53  vs base  -0.05  $     -67/yr  -
+  OLD  RTY not enough data (0 events)
+  SEEN NQ  n   470  mean     3.49  t   0.54  vs base  -0.01  $     303/yr  -
+  SEEN ES  n   470  mean    -0.26  t  -0.18  vs base  -0.64  $     -57/yr  -
+  SEEN YM  n   469  mean    -6.28  t  -0.55  vs base  -1.09  $    -136/yr  -
+  SEEN RTY n   404  mean    -0.30  t  -0.28  vs base   0.15  $     -55/yr  -
+  -> SEEN 0/4, OLD 0/3  => fail
+
+H6-W  (t threshold 2.6)
+  OLD  NQ  n   105  mean    -0.47  t  -0.18  vs base   0.04  $     -18/yr  -
+  OLD  ES  n   235  mean    -1.00  t  -1.37  vs base  -0.80  $    -213/yr  -
+  OLD  YM  n   238  mean    -8.88  t  -1.46  vs base  -1.12  $    -192/yr  -
+  OLD  RTY not enough data (0 events)
+  SEEN NQ  n   468  mean     2.99  t   0.38  vs base  -0.08  $     258/yr  -
+  SEEN ES  n   468  mean     0.33  t   0.18  vs base  -0.17  $      72/yr  -
+  SEEN YM  n   468  mean     2.47  t   0.19  vs base  -0.21  $      53/yr  -
+  SEEN RTY n   401  mean    -1.76  t  -1.49  vs base  -1.29  $    -326/yr  -
+  -> SEEN 0/4, OLD 0/3  => fail
+
+H6-R  (t threshold 2.6)
+  OLD  NQ  n   111  mean     1.84  t   0.65  vs base   0.95  $      74/yr  -
+  OLD  ES  n   228  mean     0.09  t   0.12  vs base   0.82  $      19/yr  -
+  OLD  YM  n   230  mean     0.99  t   0.16  vs base   0.68  $      21/yr  -
+  OLD  RTY not enough data (0 events)
+  SEEN NQ  n   450  mean    -9.93  t  -1.25  vs base  -1.94  $    -825/yr  -
+  SEEN ES  n   450  mean    -1.16  t  -0.69  vs base  -1.17  $    -240/yr  -
+  SEEN YM  n   449  mean     5.19  t   0.44  vs base   0.03  $     108/yr  -
+  SEEN RTY n   384  mean    -0.25  t  -0.21  vs base   0.18  $     -44/yr  -
+  -> SEEN 0/4, OLD 0/3  => fail
+
+H6-F  (t threshold 2.6)
+  OLD  NQ  n   120  mean    -1.90  t  -0.66  vs base  -0.53  $     -83/yr  -
+  OLD  ES  n   228  mean    -0.66  t  -0.94  vs base  -0.29  $    -137/yr  -
+  OLD  YM  n   227  mean    -2.48  t  -0.43  vs base   0.07  $     -51/yr  -
+  OLD  RTY not enough data (0 events)
+  SEEN NQ  n   448  mean     0.67  t   0.09  vs base  -0.45  $      55/yr  -
+  SEEN ES  n   448  mean     0.70  t   0.42  vs base   0.07  $     145/yr  -
+  SEEN YM  n   447  mean     4.95  t   0.42  vs base   0.01  $     102/yr  -
+  SEEN RTY n   384  mean    -0.63  t  -0.58  vs base  -0.19  $    -111/yr  -
+  -> SEEN 0/4, OLD 0/3  => fail
+
+sanity: largest kept overnight moves (pts, before costs) by market
+  NQ: 2024-08-05 -999.2, 2026-06-23 -936.0, 2026-04-08 +830.0
+  ES: 2024-08-05 -216.8, 2025-04-03 -198.0, 2026-04-08 +174.0
+  YM: 2020-11-09 +1552.0, 2025-04-08 +1395.0, 2026-04-08 +1309.0
+  RTY: 2020-11-09 +128.7, 2024-11-06 +124.9, 2024-08-05 -113.5
+
+=== VERDICTS
+  H1     fail
+  H2     fail
+  H3     fail
+  H5     fail
+  H6-M   fail
+  H6-T   fail
+  H6-W   fail
+  H6-R   fail
+  H6-F   fail
+EXIT 0

@@ -177,4 +177,13 @@ day at every size.
 | Z3 | net per account, 2010–15, Standard | −$2,505 / −$5,144 / −$9,484 | same | 2010-07..2015 | 2026-11-09 | current |
 | Z4 | Consistency path vs Standard, 2016–26 | 50K +$2,133; 100K +$3,444; 150K +$6,504. 2010–15: worse or equal | same | | 2026-11-09 | current |
 
+## Timing patterns and Topstep cost structure (docs/PREREG_20261120.md, pre-registered 005220e)
+
+| # | figure | value | command | window | computed | status |
+|---|---|---|---|---|---|---|
+| T1 | timing patterns (overnight, turn of month, pre-FOMC, gap fade, day of week) | **all fail**; NQ overnight SEEN +4.3 pts/night, t 1.66 | `uv run python scripts/patterns_20261120.py` | OLD / SEEN, 4 markets | 2026-11-20 | current |
+| T2 | Back2Funded always / once vs never, NQ 2016–26 net | $55,663 / $53,764 vs $44,359 | `uv run python scripts/topstep_costs_20261120.py` | W1028 | 2026-11-20 | current |
+| T3 | same, 2010–15 net | −$6,549 / −$4,737 vs −$2,505 → **fail** | same | 2010–15 | 2026-11-20 | current |
+| T4 | doubled payout caps, change in 2016–26 net: 50K / 100K / 150K | +$329 / −$6,580 / −$9,287 | same | W1028 | 2026-11-20 | current |
+
 Raw output for every command above is in `docs/jx_runs/`.

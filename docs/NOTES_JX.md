@@ -471,3 +471,15 @@ ceiling. `scripts/account_size_test.py` (NQ, risk scaled to each loss limit):
 - The 100K/150K scaling ladder is assumed, not read from Topstep.
 - The model now supports `consistency_target` and `scaling_mult`. Defaults
   are unchanged, and the baseline still reproduces $44,359.
+
+## Timing patterns and Topstep cost options (2026-11-20)
+
+Pre-registered in `docs/PREREG_20261120.md`.
+- **Futures timing patterns all fail:** overnight drift, turn of month,
+  pre-FOMC drift, gap fade and day of week, on 4 markets after micro costs. The
+  well-known patterns aren't strong enough here to trade.
+- **Back2Funded fails:** it adds about $11K in 2016–26 but loses more in
+  2010–15 and nearly doubles the cash dip. Don't reactivate blown accounts.
+- **Don't take the doubled payout cap at 100K/150K:** bigger payouts leave less
+  cushion and the accounts die sooner (−$6.6K and −$9.3K). At 50K it barely
+  matters.
