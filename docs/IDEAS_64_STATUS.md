@@ -5,13 +5,22 @@ including the excluded NFT entry). "My 19" is the list of structural ideas
 written on 2026-11-19. CANDIDATES.md has the formulation behind every tested
 row, and the PREREG files have the rules and results.
 
-**Summary:**
-- **22 tested** to a verdict: 1 holds (the Topstep project), 1 partial (Lucid
-  as a second firm), the rest fail. Four tested ideas are cost or rule
-  settings whose answer goes straight into the Topstep plan.
-- **4 attempted, no data:** blocked or paywalled sources.
-- **38 not backtestable:** services, one-off promotions, speed races, cost
-  savings, or sources that need paid or account access. Each reason is below.
+**Summary** (64 active ideas: 45 plus 19, NFT excluded):
+- **19 tested** to a verdict:
+  - 1 holds in backtest: the Topstep project.
+  - 1 partial: Lucid as a second firm.
+  - 3 are settings that now feed the Topstep plan: the doubled payout cap
+    (don't take it at 100K/150K), the commission choice (+15% at $0.74), and
+    Back2Funded (don't use it).
+  - 14 fail.
+- **2 attempted, no data:** #9, where the price source rejected the request,
+  and #15, where Polymarket blocks US servers.
+- **43 not tested:**
+  - 31 can't be backtested at all: services, one-off promotions, speed races,
+    cost savings, or no data exists.
+  - 12 need data I can't get from here: a second venue's funding history,
+    Polymarket, Solana launch data, paid per-contract futures data, unlock
+    calendars, promotion history.
 
 ## The 45
 
