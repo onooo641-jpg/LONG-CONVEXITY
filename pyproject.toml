@@ -1,7 +1,7 @@
 [project]
 name = "ict-hanxin"
 version = "0.1.0"
-description = "ICT/SMC concept library and PO3 backtesting framework for NQ futures"
+description = "Topstep prop-firm account recycling: rules model, NQ futures strategy, backtests and live TopstepX bridge"
 requires-python = ">=3.11"
 dependencies = [
     "pandas>=2.2",

@@ -32,6 +32,23 @@ Recycling figures are $900/trade, one unbroken chain from 2016-01-01. Rows
 R1–R13 and A1–A4 are **RB0914** unless they say otherwise. Rows tagged N
 (below) are RB1106 and supersede them.
 
+## Current headline — rulebook 20261107, the figures README.md quotes
+
+All $900 a trade, NQ (MNQ), `Policy.LOCK_FIRST`, payout cap $2,000, one
+unbroken chain from 2016-01-01, data to 2026-10-28. Commands use the default
+rulebook (`20261107`).
+
+| # | figure | value | command | window | computed | status |
+|---|---|---|---|---|---|---|
+| C1 | chain: evaluations / funded / payouts | 152 / 52 / 44 | `uv run python scripts/jx_checks.py --skip-strategy` (§1, "cap 2,000, LOCK_FIRST") | W1028 | 2026-11-07 | **current** |
+| C2 | chain: withdrawn / spent / **net** | $61,440 / $17,081 / **$44,359** | same | W1028 | 2026-11-07 | **current** |
+| C3 | evaluation pass rate | 34.4% (52 of 151 that ended) | `uv run python scripts/jx_capital.py` | W1028 | 2026-11-07 | current |
+| C4 | deepest cash dip over 118 monthly start dates: median / worst | −$863 / −$3,520 | same | W1028 | 2026-11-07 | current |
+| C5 | days to first payout: median / p90 | 144 / 826 | same | W1028 | 2026-11-07 | current |
+| C6 | coin-flip baseline (same sizes, random sign, fees kept), median of 200 | $18,046; pass 26.7% | `uv run python scripts/jx_zero_edge.py` | W1028 | 2026-11-07 | current |
+| C7 | raw strategy, no recycling, $900 | −$2,553 net (S6) | `uv run python scripts/jx_checks.py` §1 last line | W1028 | 2026-11-06 | current |
+| C8 | unseen holdout 2010-07..2015-12, recycling net | −$2,505 (PF 0.784) | `uv run python scripts/holdout_test.py` | 2010–2015 | 2026-11-07 | current |
+
 ## Strategy alone
 
 | # | figure | value | command | window | computed | status |
