@@ -1,0 +1,4 @@
+=== hl2023
+hl2023: 79 holdout listings
+hl2023: 32684 funding rows, 1204 candles
+=== hl2023 done in 200s  ok 171 fail 0
