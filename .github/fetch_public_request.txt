@@ -1,0 +1,7 @@
+# Jobs for scripts/fetch_public.py, one per line. Pushing a change runs the fetch.
+# 2026-11-20: first full pull for PREREG_TOP10_20261120.
+llama_prices
+llama_lend
+llama_pools
+poly
+hl

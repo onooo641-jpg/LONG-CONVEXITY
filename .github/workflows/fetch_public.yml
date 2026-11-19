@@ -1,0 +1,55 @@
+# Fetch free public data (Hyperliquid, DefiLlama, Polymarket) for the
+# pre-registered tests in docs/PREREG_TOP10_20261120.md.
+#
+# Started by pushing a change to .github/fetch_public_request.txt, whose
+# non-comment lines are job names for scripts/fetch_public.py. No secrets, no
+# paid data. Output: data/public/*.parquet and docs/jx_runs/fetch_public_<run>.txt.
+
+name: fetch public data
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [claude/ict-trading-resources-ugh07b]
+    paths: [.github/fetch_public_request.txt]
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: astral-sh/setup-uv@v5
+      - run: uv sync
+      - name: Fetch
+        run: |
+          mkdir -p docs/jx_runs
+          jobs=$(grep -v '^\s*#' .github/fetch_public_request.txt | grep -v '^\s*$' | tr '\n' ' ')
+          uv run python scripts/fetch_public.py $jobs 2>&1 | tee "docs/jx_runs/fetch_public_${{ github.run_id }}.txt"
+      - name: Commit
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/jx_runs data/public
+          git diff --cached --quiet && exit 0
+          git commit -m "fetch public data: run ${{ github.run_id }}"
+          for i in 1 2 3 4 5; do
+            git pull --rebase --no-edit origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            sleep $((i * 10))
+          done
+          exit 1
+      - name: Keep the files if the push failed
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fetch-public-${{ github.run_id }}
+          path: |
+            data/public/*.parquet
+            docs/jx_runs/fetch_public_*.txt
+          retention-days: 30
