@@ -1,0 +1,44 @@
+
+=== N1 new-perp funding spikes (Hyperliquid)
+  135 listings with >= 24h of funding; delisted in meta: 56
+  first half: n 67  mean net $16.63 per $1,000 per 14d  t 2.84  baseline $7.80  vs base t 1.48  -
+  second half: n 68  mean net $-26.50 per $1,000 per 14d  t -2.81  baseline $-0.30  vs base t -2.78  -
+  median net $4.18; share with net > 0: 69%
+  rose >= 50% within 14d (liquidation risk for a 2x short leg): 9%
+  unhedged short incl. funding: mean $171.20, median $186.21
+  -> N1 fail
+
+=== N2 utilisation-threshold arbitrage (Aave v3)
+  mode: FALLBACK apyBase spike; pools 17
+  first half: n 129  mean net $-19.84 per event on $10K  t -170.47  -
+  second half: n 130  mean net $-19.18 per event on $10K  t -84.51  -
+  pools with >= 5 events: 14, positive on 0%
+  -> N2 fail
+
+=== N3 liquidity incentive mispricing (DEX LP pools)
+  first half: n 4  mean 30d net 2.67%  t 1.93  baseline n 51 1.04%  vs base t 1.17  -
+  second half: n 4  mean 30d net 1.05%  t 10.01  baseline n 81 -2.30%  vs base t 0.97  -
+  -> N3 fail
+
+=== N4 multi-outcome probability arbitrage (Polymarket, upper bound)
+  no data
+
+=== N5 stETH redemption discounts
+  days 1066, ratio min 0.9937, median 0.9994; events (runs <= 0.997): 18
+  first half: 10 events, $39 a year per $10K  -
+  second half: 8 events, $49 a year per $10K  -
+  -> N5 fail
+
+=== N6 vault allocation inefficiencies (USDC/USDT)
+  vaults 30; switching beats vault by > 1%/yr in both halves for 3%
+  median excess: first half -20.15%, second half -20.88%
+  -> N6 fail
+
+=== VERDICTS
+  N1: fail
+  N2: fail
+  N3: fail
+  N4: no data / not testable
+  N5: fail
+  N6: fail
+  N7: not data-testable (needs manual case review)

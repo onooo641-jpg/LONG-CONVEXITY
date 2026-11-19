@@ -290,7 +290,24 @@ def job_hl2023():
     print(f"hl2023: {len(fund)} funding rows, {len(cand)} candles", flush=True)
 
 
-JOBS = {"hl2023": job_hl2023, "hl": job_hl, "llama_lend": job_llama_lend, "llama_pools": job_llama_pools,
+def job_hl2023d():
+    """PREREG_POSTLISTING_20261120 v2: daily candles for the 2023 holdout + BTC."""
+    coins = pd.read_parquet(OUT / "hl_coins.parquet")
+    lo = pd.Timestamp("2023-05-20", tz="UTC").timestamp() * 1000
+    sel = coins[coins.first_funding_ms.notna() & (coins.first_funding_ms >= lo) & (coins.first_funding_ms < T2024)]
+    rows = []
+    for coin, first in list(zip(sel.coin, sel.first_funding_ms)) + [("BTC", lo)]:
+        first = int(first)
+        end = (T2024 + 20 * 86400 * 1000) if coin == "BTC" else first + 17 * 86400 * 1000
+        c = http(HL, {"type": "candleSnapshot", "req": {"coin": coin, "interval": "1d", "startTime": first - 86400 * 1000, "endTime": end}})
+        time.sleep(1.0)
+        for k in c or []:
+            rows.append({"coin": coin, "t": int(k["t"]), "o": float(k["o"]), "h": float(k["h"]), "l": float(k["l"]), "c": float(k["c"])})
+    pd.DataFrame(rows).to_parquet(OUT / "hl2023_daily.parquet")
+    print(f"hl2023d: {len(rows)} daily candles for {len(sel)} listings + BTC", flush=True)
+
+
+JOBS = {"hl2023d": job_hl2023d, "hl2023": job_hl2023, "hl": job_hl, "llama_lend": job_llama_lend, "llama_pools": job_llama_pools,
         "llama_prices": job_llama_prices, "poly": job_poly}
 
 

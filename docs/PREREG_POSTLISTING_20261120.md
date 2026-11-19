@@ -28,3 +28,19 @@ short would need more margin or be liquidated), and the worst single loss.
 If the holdout has fewer than 20 listings, the verdict is "too few to decide".
 
 Command: `uv run python scripts/postlisting_20261120.py`
+
+## Result of the hourly version (2026-11-20)
+
+**Too few to decide.** Hyperliquid's API keeps only a limited window of hourly
+candles, and **0 of 79** holdout listings from 2023 have hourly candles (run
+44583877867). The N1 observation itself rested on the 48 of 135 newer listings
+that do have hourly candles.
+
+## Version 2 — daily candles (registered 2026-11-20, before daily data was fetched)
+
+Same holdout (the 79 listings of 2023-05-20..2023-12-31), BTC control and pass
+rule, with daily candles:
+- entry at the open of the first UTC day starting after L+1h;
+- exit at the close of the 14th daily candle;
+- funding summed over the same span;
+- pump = highest daily high ÷ entry − 1.
