@@ -13,7 +13,7 @@ Rules:
 - A variant found by looking at results gets its own row, marked
   **selected-on-data**.
 
-**Tried so far: 47 rows, and row 12 alone is a 900-combination search.** So the
+**Tried so far: 48 rows, and row 12 alone is a 900-combination search.** So the
 real count of configurations looked at is about 914, plus the 0.5–3.0 target
 sweep in row 9.
 
@@ -82,6 +82,7 @@ risk, 5m signals and 1m fills.
 | 45 | cross-chain lending-rate arbitrage (weekly) | `docs/PREREG_BATCH2_20261120.md` M1. | fail (−0.9% to −3.9%/yr vs holding Aave Ethereum) | PREREG_BATCH2 |
 | 46 | stablecoin depeg buying (failures included) | M2. | fail (UST −94% on one buy; −$3.1K/yr per $10K) | PREREG_BATCH2 |
 | 47 | cross-chain stablecoin dislocations | M3. | no data (chain-address prices rejected) | PREREG_BATCH2 |
+| 48 | structure scan of bot-allowed prop-firm products (coin-flip net) | `docs/PREREG_STRUCTURE_SCAN_20261120.md`. Ranking, no pass/fail. | pending | PREREG_STRUCTURE_SCAN |
 
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
