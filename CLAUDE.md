@@ -25,7 +25,8 @@ strategy, plus a search for other structural edges. README.md explains the busin
 
 ## Benchmark every idea against
 Topstep 50K recycling, 2016–26: **$44,359 real net ($4,097/yr)**, coin-flip median $18,046
-(98% profitable), worst dip −$3,520. Multi-firm plan figures: `docs/PREREG_PORTFOLIO_20261120.md`.
+(98% profitable), worst dip −$3,520. Multi-firm plan figures: `docs/PREREG_PORTFOLIO2_20261120.md` (Topstep + Lucid + MFFU,
+Breakout dropped: no API).
 
 ## Tools in the repo
 - `backtest/recycle.py`: `XFARules` + `recycle()` model any prop-firm rule set

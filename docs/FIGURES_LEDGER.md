@@ -284,4 +284,12 @@ day at every size.
 | L4 | Topstep 50K net after 3 / 6 / 12 months, median (full) | −$338 / $96 / $1,704 | same | monthly starts | 2026-11-20 | prediction |
 | L5 | same, recent | −$244 / $713 / $8,354 | same | monthly starts 2024-01..2025-10 | 2026-11-20 | prediction |
 
+## Portfolio 2: staggered starts, corrected costs (docs/PREREG_PORTFOLIO2_20261120.md, 5fe8339)
+
+| # | figure | value | command | window | computed | status |
+|---|---|---|---|---|---|---|
+| Q1 | net 2016–26: B−c / C−sync / C−stag | $113,827 / $532,382 / $531,867 | `uv run python scripts/portfolio2_20261120.py` | 2016–26 | 2026-11-20 | current; supersedes M1 B−/C− for planning |
+| Q2 | cash on hand: B−c / C−sync / C−stag | $14,590 / $49,792 / $50,502 | same | same | 2026-11-20 | same |
+| Q3 | stagger vs sync: net / cash | −0.1% / +1.4% (not worth it) | same | same | 2026-11-20 | current |
+
 Raw output for every command above is in `docs/jx_runs/`.

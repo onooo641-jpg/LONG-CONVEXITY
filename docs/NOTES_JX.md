@@ -597,3 +597,9 @@ Lucid/MFFU cloud routing is their own call, so check each firm's device/VPS rule
   `Trade/search` (new `TopstepXBroker.trades`) and the bot's order decisions into `data/live/`.
 - `scripts/live_compare.py --backtest` writes `docs/live_report.md`. Tested with synthetic fills
   (`tests/test_live_compare.py`). Waiting on the first live data.
+
+## Plan figures corrected (2026-11-20 21:40, PREREG_PORTFOLIO2)
+- One API subscription per platform (ProjectX for Topstep, CrossTrade $49/mo for Lucid + MFFU).
+- One account at each of Topstep, Lucid, MFFU: ~$10.5K/yr (2016–26), ~$14.6K cash on hand.
+- Max accounts (5/5/3): ~$49K/yr, ~$50K cash on hand.
+- Staggering account start dates does not reduce risk: identical trades put the accounts back in step.

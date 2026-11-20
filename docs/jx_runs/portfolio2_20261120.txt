@@ -1,0 +1,20 @@
+A    Topstep x1                              net $   44,359 ($  4,097/yr) | 2016-20 $    7,671, 2021-26 $   36,687 | worst dip $   -3,520 | most out of pocket $  -3,520 | cash on hand $   3,520 | longest below peak 44.8 mo | losing years 4
+B-c  Topstep+Lucid+MFFU x1, corrected costs  net $  113,827 ($ 10,512/yr) | 2016-20 $   16,800, 2021-26 $   97,027 | worst dip $  -14,590 | most out of pocket $ -14,590 | cash on hand $  14,590 | longest below peak 50.2 mo | losing years 4
+C-sync 5T/5L/3M same start                   net $  532,382 ($ 49,166/yr) | 2016-20 $   92,543, 2021-26 $  439,839 | worst dip $  -49,792 | most out of pocket $ -49,792 | cash on hand $  49,792 | longest below peak 44.9 mo | losing years 4
+C-stag 5T/5L/3M monthly stagger              net $  531,867 ($ 49,119/yr) | 2016-20 $   91,881, 2021-26 $  439,986 | worst dip $  -50,502 | most out of pocket $ -50,502 | cash on hand $  50,502 | longest below peak 46.2 mo | losing years 3
+
+yearly income:
+          A    B-c  C-sync  C-stag
+2016 -1,009 -4,634 -13,466 -14,128
+2017   -962 -3,195 -11,357 -11,357
+2018 -1,207 -5,910 -21,792 -21,841
+2019  2,916  9,271  45,509  45,509
+2020  7,933 21,268  93,649  93,698
+2021   -441   -728     -73      25
+2022  1,145    348   7,296   7,247
+2023  9,534 32,303 141,907 141,907
+2024  4,891 15,908  70,749  70,700
+2025  8,667 13,575  67,942  67,942
+2026 12,891 35,621 152,017 152,164
+
+stagger vs sync: net -0.1%, cash on hand +1.4% -> equivalent / not worth it (pre-registered rule)

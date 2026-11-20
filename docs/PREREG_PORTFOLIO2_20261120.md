@@ -27,3 +27,18 @@ Staggering is **worth doing** if C−stag's cash on hand is at least 15% below C
 5%. Otherwise synchronized and staggered are equivalent and the simpler one (buy as cash allows) stands.
 
 Command: `uv run python scripts/portfolio2_20261120.py`
+
+## Results (2026-11-20, `docs/jx_runs/portfolio2_20261120.txt`)
+| portfolio | net 2016–26 (/yr) | cash on hand | longest below peak | losing years |
+|---|---|---|---|---|
+| A Topstep ×1 | $44,359 ($4,097) | $3,520 | 44.8 mo | 4 |
+| B−c Topstep + Lucid + MFFU, corrected costs | $113,827 ($10,512) | $14,590 | 50.2 mo | 4 |
+| C−sync max slots, same start | $532,382 ($49,166) | $49,792 | 44.9 mo | 4 |
+| C−stag max slots, monthly stagger | $531,867 ($49,119) | $50,502 | 46.2 mo | 3 |
+
+- **Staggering does nothing** (net −0.1%, cash +1.4%): with the same trades, staggered accounts fall back
+  into step after their first bust, so losses still land together. Buy accounts as cash allows; timing
+  them does not reduce risk.
+- **Corrected plan figures:** one slot per firm ≈ **$10.5K/yr, ~$14.6K cash on hand**; max slots ≈
+  **$49K/yr, ~$50K cash on hand** (one API subscription per platform instead of per account).
+- 2016–18 still lose at every scale; most income is 2023–26.
