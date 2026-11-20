@@ -19,3 +19,6 @@ base: month anchors 21814927..53350927, resume at block 36277052
   base: scanned to block 43342802/53350926 (43941 events, 126 min)
   base: scanned to block 43949802/53350926 (44264 events, 136 min)
   base: scanned to block 44106302/53350926 (44308 events, 138 min)
+  base: scanned to block 44681302/53350926 (47594 events, 148 min)
+base: BUDGET STOP in log scan at block 44778802 (window 21814927..53350926); 47605 events saved
+=== liq_base done in 9000s  ok 16864 fail 0
