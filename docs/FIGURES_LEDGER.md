@@ -219,4 +219,13 @@ day at every size.
 | H5 | Luno premium over Kraken × USD/MYR (BTC/ETH/SOL/XRP), 6 snapshots | +0.38% to +0.55% | `uv run python scripts/myx_gap_20261120.py` | 2026-11-20 02:31–03:23 UTC | 2026-11-20 | FX ref rate is daily |
 | H4 | FTMO 100K real strategy net at 1% / 2% risk | $38,694 / $142,746 | same | 2016–26 | 2026-11-20 | same caveats |
 
+## FTMO Futures vs Topstep (docs/PREREG_FTMO_FUTURES_20261120.md)
+
+| # | figure | value | command | window | computed | status |
+|---|---|---|---|---|---|---|
+| F1 | real net: Topstep 50K / FTMO Fut Growth 50K / Pro 50K (100%) / Pro (50%) | $44,359 / $34,236 / $28,452 / $27,671 | `uv run python scripts/ftmo_futures_20261120.py` | 2016–26 | 2026-11-20 | FTMO rules third-party; reset price & ladder assumed |
+| F2 | coin-flip median: same order | $18,046 / $1,906 / $1,523 / −$4,836 | same | 2016–26 | 2026-11-20 | same |
+| F3 | worst dip: same order | −$3,520 / −$9,675 / −$9,310 / −$10,825 | same | 2016–26 | 2026-11-20 | same |
+| F4 | FTMO Fut Growth / Pro net if renewal includes a free reset | $48,297 / $41,352 | sensitivity lines in the same output file | 2016–26 | 2026-11-20 | renewal-reset rule unverified |
+
 Raw output for every command above is in `docs/jx_runs/`.

@@ -171,6 +171,18 @@ class XFARules:
     #: ``reset``; ``monthly`` should be 0. None = Topstep's subscription model.
     one_time_price: float | None = None
 
+    #: Hard daily loss limit: a day that loses this much ends the account
+    #: (FTMO Futures Pro). With at most one trade a day this is "one trade may
+    #: not lose this much". None = no daily limit (Topstep on TopstepX).
+    daily_loss_limit: float | None = None
+    #: Evaluation consistency (FTMO Futures Growth 40%, Pro 50%): the
+    #: evaluation passes only once the best day is at most this share of the
+    #: profit. Exceeding it is not a breach; it just delays passing.
+    combine_consistency: float | None = None
+    #: Topstep banks one free reset per monthly rebill. False = every reset is
+    #: paid (firms that do not state a free reset).
+    free_reset_per_rebill: bool = True
+
     monthly: float = 49.0
     reset: float = 49.0
     #: Charged once per funded account EARNED -- so it is charged again every
@@ -240,7 +252,7 @@ def costs(rules: XFARules, days: float, resets: int, activations: int,
         }
         return {"months": months, "free_credits": 0, "reset_count": max(0, resets - rebuys),
                 **lines, "total": float(sum(lines.values()))}
-    free = max(0, months - 1)
+    free = max(0, months - 1) if rules.free_reset_per_rebill else 0
     paid = max(0, resets - free)
     lines = {
         "subscription": months * rules.monthly,
@@ -353,13 +365,18 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
         account.balance += day
         account.peak = max(account.peak, account.balance)
 
+        hard_dll = rules.daily_loss_limit is not None and day <= -rules.daily_loss_limit
+
         if not funded:
-            if account.balance >= rules.profit_target:
+            account.best_day = max(account.best_day, day)
+            consistent = (rules.combine_consistency is None
+                          or account.best_day <= rules.combine_consistency * account.balance)
+            if account.balance >= rules.profit_target and consistent and not hard_dll:
                 activations += 1
                 funded, account, funded_since = True, _Account(), exit_ts
                 mark(exit_ts, "passed", at)
                 continue
-            if account.balance <= account.floor(
+            if hard_dll or account.balance <= account.floor(
                     rules.loss_limit,
                     rules.loss_limit if rules.combine_mll_locks else None,
                     rules.lock_level):
@@ -377,8 +394,8 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
         account.days_traded += 1
         account.best_day = max(account.best_day, day)
 
-        if account.balance <= account.floor(rules.funded_loss_limit,
-                                            rules.mll_locks_at, rules.lock_level):
+        if hard_dll or account.balance <= account.floor(rules.funded_loss_limit,
+                                                        rules.mll_locks_at, rules.lock_level):
             funded_busts += 1
             if account.reactivations < rules.back2funded_max:
                 # Back2Funded: same XFA, fresh start, no Combine needed.

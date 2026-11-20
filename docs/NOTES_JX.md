@@ -518,3 +518,8 @@ Pre-registered, backtested on free public data fetched through GitHub Actions
 - ASM funds: 5% liquid, ~1% above best FDs; good for idle cash.
 - Luno vs global: uniform ~0.45% premium = MYR conversion cost; not exploitable.
 - Static-drawdown prop firms (FTMO 2-Step): structure pays random play at ≥2% risk; FTMO polices risk per trade; prop-related; verify rules before any test.
+
+## FTMO checked, FTMO Futures tested (2026-11-20, docs/PREREG_FTMO_FUTURES_20261120.md)
+- FTMO accepts Malaysia (18+). But FTMO recommends ≤1% risk per trade, where the CFD "structure" is worth nothing; Topstep's edge comes from allowing ~45% of the loss buffer per trade.
+- FTMO Futures: $28–34K vs Topstep $44K over 2016–26 ($48K best case if renewal resets are free); dips ~3× deeper. Not better; a possible second firm only.
+- Bulenox (bots explicitly allowed, Malaysia not listed as restricted) not modelled: rules changed recently.

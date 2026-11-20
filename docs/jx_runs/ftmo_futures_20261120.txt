@@ -1,0 +1,8 @@
+Topstep 50K (reference)                risk $900: real net $   44,359 ($ 4,098/yr; withdrawn $61,440, spent $17,081, worst dip $-3,520, funded 52, payouts 44) | coin-flip median $   18,046, profitable 98%
+FTMO Futures Growth 50K                risk $900: real net $   34,236 ($ 3,163/yr; withdrawn $69,750, spent $35,514, worst dip $-9,675, funded 51, payouts 56) | coin-flip median $    1,906, profitable 56%
+FTMO Futures Pro 50K, withdraw 100%    risk $800: real net $   28,452 ($ 2,628/yr; withdrawn $61,372, spent $32,920, worst dip $-9,310, funded 37, payouts 21) | coin-flip median $    1,523, profitable 56%
+FTMO Futures Pro 50K, withdraw 50%     risk $800: real net $   27,671 ($ 2,556/yr; withdrawn $58,656, spent $30,985, worst dip $-10,825, funded 27, payouts 38) | coin-flip median $   -4,836, profitable 30%
+Growth free_reset=False: net $34,236 spent $35,514
+Growth free_reset=True: net $48,297 spent $21,453
+Pro 100% free_reset=False: net $28,452 spent $32,920
+Pro 100% free_reset=True: net $41,352 spent $20,020

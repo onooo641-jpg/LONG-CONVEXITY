@@ -5,6 +5,7 @@ backtest is testing the data, and the point here is the accounting.
 """
 from __future__ import annotations
 
+import dataclasses
 import pathlib
 import sys
 
@@ -310,3 +311,30 @@ def test_the_evaluation_floor_locks_at_the_starting_balance():
     path = seq([2500.0, -2400.0])
     assert recycle(path)["combine_busts"] == 0
     assert recycle(path, XFARules(combine_mll_locks=False))["combine_busts"] == 1
+
+
+# --- options added 2026-11-20 for other firms (FTMO Futures) ---
+
+def test_a_hard_daily_loss_limit_ends_the_evaluation_on_one_bad_day():
+    rules = dataclasses.replace(RULES, loss_limit=3000.0, daily_loss_limit=1000.0)
+    assert recycle(seq([-1000.0]), rules)["combine_busts"] == 1
+    assert recycle(seq([-999.0]), rules)["combine_busts"] == 0
+    assert recycle(seq([-1000.0]))["combine_busts"] == 0   # default: no daily limit
+
+
+def test_evaluation_consistency_delays_but_does_not_fail_a_pass():
+    rules = dataclasses.replace(RULES, combine_consistency=0.40)
+    # one $3,000 day is 100% of the profit: not passed yet, not busted
+    out = recycle(seq([3000.0]), rules)
+    assert out["funded_earned"] == 0 and out["combine_busts"] == 0
+    # best day $3,000 needs $7,500 total before it is 40% of the profit
+    assert recycle(seq([3000.0] + [500.0] * 8), rules)["funded_earned"] == 0
+    assert recycle(seq([3000.0] + [500.0] * 9), rules)["funded_earned"] == 1
+
+
+def test_no_free_reset_per_rebill_charges_every_reset():
+    rules = dataclasses.replace(RULES, free_reset_per_rebill=False)
+    with_free = costs(RULES, 90, resets=3, activations=0)
+    without = costs(rules, 90, resets=3, activations=0)
+    assert with_free["free_credits"] > 0 and without["free_credits"] == 0
+    assert without["paid_resets"] == 3 * rules.reset

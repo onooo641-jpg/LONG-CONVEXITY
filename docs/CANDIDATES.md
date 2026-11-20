@@ -13,7 +13,7 @@ Rules:
 - A variant found by looking at results gets its own row, marked
   **selected-on-data**.
 
-**Tried so far: 52 rows, and row 12 alone is a 900-combination search.** So the
+**Tried so far: 53 rows, and row 12 alone is a 900-combination search.** So the
 real count of configurations looked at is about 914, plus the 0.5–3.0 target
 sweep in row 9.
 
@@ -86,7 +86,8 @@ risk, 5m signals and 1m fills.
 | 49 | Bursa IPO public ballot | `docs/PREREG_LOOPHOLES_20261120.md`. | FAIL pre-registered (0.40%/RM applied, 2nd half negative, 37% below issue); post-hoc avg applicant RM7.7K-17K/yr, wide | PREREG_LOOPHOLES |
 | 50 | guaranteed government matches / fixed-price funds | `docs/PREREG_LOOPHOLES_20261120.md`. | i-Saraan PASS but tiny (RM500/yr, 90% locked); ASM 5% vs FD 4% fails 2x rule | PREREG_LOOPHOLES |
 | 51 | MYR crypto exchange price gaps | `docs/PREREG_LOOPHOLES_20261120.md`. | FAIL: uniform +0.4-0.55% Luno premium on all coins = MYR conversion cost; 1-tick spreads | PREREG_LOOPHOLES |
-| 52 | static-drawdown prop firm coin-flip (control) | `docs/PREREG_LOOPHOLES_20261120.md`. | structure pays random play at >=2% risk ($33K coin flip at 2%); FTMO bans high risk-per-idea; prop-related | PREREG_LOOPHOLES |
+| 52 | static-drawdown prop firm coin-flip (control) | `docs/PREREG_LOOPHOLES_20261120.md`. | RETIRED: FTMO recommends <=1% risk, where coin flip is -$2.6K; structure pays random play at >=2% risk ($33K coin flip at 2%); FTMO bans high risk-per-idea; prop-related | PREREG_LOOPHOLES |
+| 53 | FTMO verification + FTMO Futures Growth/Pro vs Topstep 50K | `docs/PREREG_FTMO_FUTURES_20261120.md`. Ranking. | FTMO Futures Growth $34K / Pro $28K vs Topstep $44K (Growth $48K if renewal resets are free); coin flip ~$0-2K vs $18K; no structural edge | PREREG_FTMO_FUTURES |
 
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
