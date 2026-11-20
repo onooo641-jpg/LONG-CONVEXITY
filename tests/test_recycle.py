@@ -378,3 +378,14 @@ def test_a_payout_goal_needs_fresh_profit():
     # funded profit of 2,500 is under the 3,000 goal: no payout
     assert recycle(seq([3000.0, 2500.0]), rules, policy=Policy.IMMEDIATE)["payouts"] == 0
     assert recycle(seq([3000.0, 3000.0]), rules, policy=Policy.IMMEDIATE)["payouts"] == 1
+
+
+def test_static_drawdown_never_trails_and_locks_once_funded_buffer_is_built():
+    rules = dataclasses.replace(RULES, static_dd=True, mll_locks_at=2000.0, lock_level=0.0)
+    # evaluation: +1,500 then -3,000 is -1,500, above the static -2,000 floor
+    assert recycle(seq([1500.0, -3000.0]))["combine_busts"] == 1      # trailing busts
+    assert recycle(seq([1500.0, -3000.0]), rules)["combine_busts"] == 0
+    # funded before the buffer: same static -2,000 floor
+    assert recycle(seq([3000.0, 1500.0, -3000.0]), rules)["funded_busts"] == 0
+    # funded after the buffer (+2,000): floor jumps to 0, so -2,100 busts
+    assert recycle(seq([3000.0, 2000.0, -2100.0]), rules)["funded_busts"] == 1

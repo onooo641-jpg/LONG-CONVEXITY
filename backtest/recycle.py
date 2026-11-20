@@ -199,6 +199,12 @@ class XFARules:
     instant_funded: bool = False
     #: Payout needs this much fresh profit since the last payout: (first, later).
     payout_goal: tuple | None = None
+    #: Static drawdown (The Futures Desk Static plans): the floor sits at
+    #: -loss limit and never trails. In the evaluation it never moves; once
+    #: funded it jumps to ``lock_level`` when the peak reaches
+    #: ``mll_locks_at`` (TFD: the "build buffer" target, after which the live
+    #: account's floor is its $0 minimum balance). False = trailing (Topstep).
+    static_dd: bool = False
 
     monthly: float = 49.0
     reset: float = 49.0
@@ -230,7 +236,8 @@ class _Account:
     #: Time of the first trade on this account (for combine_max_days).
     opened: object = None
 
-    def floor(self, limit: float, locks_at: float | None, lock_level: float = 0.0) -> float:
+    def floor(self, limit: float, locks_at: float | None, lock_level: float = 0.0,
+              static: bool = False) -> float:
         """The balance at which this account is closed.
 
         For an evaluation the limit simply trails the peak. For a funded
@@ -240,6 +247,8 @@ class _Account:
         """
         if self.paid_out:
             return lock_level
+        if static:
+            return lock_level if locks_at is not None and self.peak >= locks_at else -limit
         trailing = self.peak - limit
         return trailing if locks_at is None else min(trailing, lock_level)
 
@@ -378,7 +387,9 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
             locks = (rules.mll_locks_at if funded
                      else rules.loss_limit if rules.combine_mll_locks else None)
             planned = risk_usd * (funded_scale if funded else 1.0)
-            if account.balance - account.floor(limit, locks, rules.lock_level) < planned * rules.safety_mult:
+            if rules.static_dd and not funded:
+                locks = None
+            if account.balance - account.floor(limit, locks, rules.lock_level, rules.static_dd) < planned * rules.safety_mult:
                 if funded:
                     retired_funded += 1
                     rebuys += 1
@@ -409,8 +420,8 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
                 continue
             if hard_dll or account.balance <= account.floor(
                     rules.loss_limit,
-                    rules.loss_limit if rules.combine_mll_locks else None,
-                    rules.lock_level):
+                    None if rules.static_dd else (rules.loss_limit if rules.combine_mll_locks else None),
+                    rules.lock_level, rules.static_dd):
                 combine_busts += 1
                 resets += 1
                 bust_streak += 1
@@ -426,7 +437,8 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
         account.best_day = max(account.best_day, day)
 
         if hard_dll or account.balance <= account.floor(rules.funded_loss_limit,
-                                                        rules.mll_locks_at, rules.lock_level):
+                                                        rules.mll_locks_at, rules.lock_level,
+                                                        rules.static_dd):
             funded_busts += 1
             if account.reactivations < rules.back2funded_max:
                 # Back2Funded: same XFA, fresh start, no Combine needed.
