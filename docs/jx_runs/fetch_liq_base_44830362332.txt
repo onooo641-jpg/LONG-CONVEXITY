@@ -1,0 +1,5 @@
+=== liq_base
+base: month anchors 21814927..53350927, resume at block 44778802
+  rpc error eth_getLogs @ https://base.api.pocket.network: {'code': -32602, 'message': 'invalid argument 0: block range exceeds maximum 500'}
+  base: scanned to block 45402302/53350926 (47811 events, 10 min)
+  base: scanned to block 45995802/53350926 (47876 events, 20 min)
