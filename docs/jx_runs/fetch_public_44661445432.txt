@@ -1,0 +1,6 @@
+=== iponews
+  FAIL https://www.bursamalaysia.com/listing/listing_resources/ipo/ipo_summary?year=2024 -> HTTP 403
+  FAIL https://www.bursamalaysia.com/listing/listing_resources/ipo/ipo_summary?year=2025 -> HTTP 403
+  FAIL https://www.bursamalaysia.com/listing/listing_resources/ipo/ipo_summary?year=2026 -> HTTP 403
+iponews: 0 IPOs, 0 with a headline oversubscription rate
+=== iponews done in 0s  ok 0 fail 3
