@@ -1,0 +1,30 @@
+single-slot totals (check vs earlier runs): Topstep $44,359, Lucid $37,523, MFFU $34,481, Breakout $38,263
+
+A  Topstep x1                                net $   44,359 ($  4,097/yr) | 2016-20 $    7,671, 2021-26 $   36,687 | worst dip $   -3,520 | most out of pocket $  -3,520 | cash on hand $   3,520 | longest below peak 44.7 mo | losing years 4
+B  one slot each (4 firms)                   net $  154,625 ($ 14,280/yr) | 2016-20 $   20,037, 2021-26 $  134,588 | worst dip $  -22,853 | most out of pocket $ -22,853 | cash on hand $  22,853 | longest below peak 50.2 mo | losing years 5
+B- one slot each, no Breakout                net $  116,362 ($ 10,746/yr) | 2016-20 $   17,970, 2021-26 $   98,392 | worst dip $  -13,829 | most out of pocket $ -13,829 | cash on hand $  13,829 | longest below peak 50.1 mo | losing years 4
+C  max slots (5 Topstep, 5 Lucid, 3 MFFU, 1 BO) net $  551,113 ($ 50,896/yr) | 2016-20 $   83,758, 2021-26 $  467,355 | worst dip $  -66,990 | most out of pocket $ -66,990 | cash on hand $  66,990 | longest below peak 50.2 mo | losing years 4
+C- max slots, no Breakout                    net $  512,850 ($ 47,362/yr) | 2016-20 $   81,691, 2021-26 $  431,159 | worst dip $  -57,966 | most out of pocket $ -57,966 | cash on hand $  57,966 | longest below peak 50.1 mo | losing years 4
+
+yearly income by portfolio:
+          A      B     B-       C      C-
+2016 -1,009 -7,908 -4,400 -21,706 -18,198
+2017   -962 -4,161 -2,961 -14,087 -12,887
+2018 -1,207 -9,592 -5,676 -27,238 -23,322
+2019  2,916 13,741  9,505  48,215  43,979
+2020  7,933 27,956 21,502  98,574  92,119
+2021   -441   -894   -494  -1,758  -1,358
+2022  1,145   -509    582   4,675   5,766
+2023  9,534 40,712 32,537 148,552 140,377
+2024  4,876 24,431 16,098  77,116  68,783
+2025  8,667 22,964 13,809  75,567  66,412
+2026 12,905 47,883 35,860 163,202 151,178
+
+monthly P&L correlation between firms:
+          Topstep  Lucid  MFFU  Breakout
+Topstep      1.00   0.87  0.80      0.82
+Lucid        0.87   1.00  0.88      0.82
+MFFU         0.80   0.88  1.00      0.85
+Breakout     0.82   0.82  0.85      1.00
+
+coin flip, portfolio B: median net $51,287, profitable 94%, 5th-pct net $-5,713, median worst dip $-20,217, 5th-pct worst dip $-36,350

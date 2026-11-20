@@ -40,3 +40,11 @@ to every firm on the same trade): median net, share profitable, 5th-percentile w
 sizes the plan. Firm-level caveats from each component's pre-registration still apply.
 
 Command: `uv run python scripts/portfolio_20261120.py`
+
+## Addendum, pre-registered after part 1 ran but before part 2 ran: start-date test
+Part 1 starts every firm on 2016-01-01, the worst stretch for this strategy. Part 2
+restarts each firm from scratch on the 1st of every month from 2016-01 to 2025-10 (118
+starts) and records, for portfolios A and B−, the first 12 months: net income, worst dip
+and most out of pocket. Reported: median, 10th percentile and share of starts that lose
+money in year one. B− is used because Breakout's bot connection is unconfirmed.
+Command: `uv run python scripts/portfolio_starts_20261120.py`
