@@ -28,7 +28,7 @@
  ],
  "next_block": 99082939,
  "logs_done": true,
- "receipts_done": false,
- "complete": false,
+ "receipts_done": true,
+ "complete": true,
  "last_flush": "2026-11-20T14:52:19Z"
 }
