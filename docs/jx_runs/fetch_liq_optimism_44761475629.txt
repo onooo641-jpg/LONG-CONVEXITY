@@ -1,0 +1,23 @@
+=== liq_optimism
+optimism: month anchors 127410212..158946212, resume at block 136575212
+  optimism: scanned to block 137865212/158946211 (21643 events, 1 min)
+  optimism: scanned to block 139205212/158946211 (22037 events, 2 min)
+  optimism: scanned to block 140545212/158946211 (23102 events, 2 min)
+  optimism: scanned to block 141845212/158946211 (23346 events, 3 min)
+  optimism: scanned to block 143185212/158946211 (25155 events, 3 min)
+  optimism: scanned to block 144475212/158946211 (25899 events, 4 min)
+  optimism: scanned to block 145815212/158946211 (26160 events, 5 min)
+  optimism: scanned to block 147155212/158946211 (27065 events, 5 min)
+  optimism: scanned to block 148365212/158946211 (28139 events, 6 min)
+  optimism: scanned to block 149705212/158946211 (28362 events, 6 min)
+  optimism: scanned to block 151005212/158946211 (28778 events, 7 min)
+  optimism: scanned to block 152345212/158946211 (28963 events, 7 min)
+  optimism: scanned to block 153635212/158946211 (31533 events, 8 min)
+  optimism: scanned to block 154975212/158946211 (31574 events, 8 min)
+  optimism: scanned to block 156315212/158946211 (31662 events, 9 min)
+  optimism: scanned to block 157615212/158946211 (32240 events, 10 min)
+  optimism: scanned to block 158946212/158946211 (32801 events, 11 min)
+optimism: log scan complete, 32801 events
+optimism: receipts: 0 cached, 25796 to fetch (sampled=False)
+  rpc exception eth_getTransactionReceipt @ https://mainnet.optimism.io: HTTP 429
+  optimism: receipts 1460/25796 (16 min)
