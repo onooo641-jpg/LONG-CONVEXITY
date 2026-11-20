@@ -589,3 +589,11 @@ API access; route 1 at $49/mo lowers 2016–26 net by ~$2.5K (to ~$113.9K, ~$10.
 C− (max slots) is unchanged or slightly better (model charged $120/mo across 8 accounts).
 Topstep's rule that trading must originate from the trader's personal device applies to Topstep;
 Lucid/MFFU cloud routing is their own call, so check each firm's device/VPS rule before going live.
+
+## Live comparison set up (2026-11-20 15:40)
+- `docs/PREREG_LIVE_20261120.md`: what gets compared (signal parity → execution → same-day R →
+  outcome bands → account milestones), predictions from history, and decision gates.
+- `scripts/export_live_trades.py` (run on the trading computer) pulls fills via ProjectX
+  `Trade/search` (new `TopstepXBroker.trades`) and the bot's order decisions into `data/live/`.
+- `scripts/live_compare.py --backtest` writes `docs/live_report.md`. Tested with synthetic fills
+  (`tests/test_live_compare.py`). Waiting on the first live data.

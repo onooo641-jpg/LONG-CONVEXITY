@@ -274,4 +274,14 @@ day at every size.
 | M5 | year-one net median, A / B− (share of starts losing) | $1,704 (32%) / $5,127 (35%) | `uv run python scripts/portfolio_starts_20261120.py` | starts 2016-01..2025-10 | 2026-11-20 | same |
 | M6 | worst year-one out of pocket, A / B− | −$1,906 / −$6,722 | same | same | 2026-11-20 | same |
 
+## Live-account predictions (docs/PREREG_LIVE_20261120.md)
+
+| # | figure | value | command | window | computed | status |
+|---|---|---|---|---|---|---|
+| L1 | trades/month; fill rate; win rate; mean net R (full / recent) | 16.8 / 16.9; 80% / 79%; 53.1% / 55.6%; −0.001 / +0.083 | `uv run python scripts/live_predictions_20261120.py` | 2016-01..2026-10 / 2024-01..2026-10 | 2026-11-20 | prediction |
+| L2 | cumulative net R after 40 trades, 5/50/95% (full / recent) | −10.8/+0.2/+11.9 / −8.7/+3.4/+14.6 | same | same | 2026-11-20 | prediction |
+| L3 | Topstep 50K days to first pass, median (full / recent) | 36 / 26 | same | monthly starts | 2026-11-20 | prediction |
+| L4 | Topstep 50K net after 3 / 6 / 12 months, median (full) | −$338 / $96 / $1,704 | same | monthly starts | 2026-11-20 | prediction |
+| L5 | same, recent | −$244 / $713 / $8,354 | same | monthly starts 2024-01..2025-10 | 2026-11-20 | prediction |
+
 Raw output for every command above is in `docs/jx_runs/`.

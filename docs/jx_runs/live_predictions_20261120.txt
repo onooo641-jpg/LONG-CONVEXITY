@@ -1,0 +1,28 @@
+
+== full 2016-01..2026-10: 2185 trades, 16.8/month, fill rate 80%, win rate 53.1%, mean -0.001R (sd 0.98), stop exits 46%, median 26 micros
+   cumulative net R after  20 trades: 5% -7.7 | 25% -2.9 | 50% -0.2 | 75% +3.2 | 95% +7.3
+   cumulative net R after  40 trades: 5% -10.8 | 25% -5.2 | 50% +0.2 | 75% +4.6 | 95% +11.9
+   cumulative net R after  60 trades: 5% -13.5 | 25% -7.2 | 50% +0.2 | 75% +6.3 | 95% +15.8
+   cumulative net R after 100 trades: 5% -20.4 | 25% -7.9 | 50% -1.0 | 75% +9.1 | 95% +20.8
+   Topstep 50K, 118 monthly starts:
+     days to first pass: 5% 6 | 25% 20 | 50% 36 | 75% 73 | 95% 293
+     evaluations bought before first pass: 5% 1 | 25% 1 | 50% 3 | 75% 5 | 95% 12
+     days to first payout: 5% 24 | 25% 63 | 50% 145 | 75% 303 | 95% 1,009 (within 90d 35%, within 180d 57%)
+     net_3m: $5% -636 | 25% -473 | 50% -338 | 75% 656 | 95% 3,205
+     net_6m: $5% -1,072 | 25% -678 | 50% 96 | 75% 1,616 | 95% 6,603
+     net_12m: $5% -1,497 | 25% -909 | 50% 1,704 | 75% 6,210 | 95% 10,228
+     share of starts losing money over 12 months: 32%
+
+== recent 2024-01..2026-10: 574 trades, 16.9/month, fill rate 79%, win rate 55.6%, mean +0.083R (sd 0.96), stop exits 43%, median 14 micros
+   cumulative net R after  20 trades: 5% -5.3 | 25% -0.7 | 50% +1.6 | 75% +5.0 | 95% +8.4
+   cumulative net R after  40 trades: 5% -8.7 | 25% +0.3 | 50% +3.4 | 75% +8.1 | 95% +14.6
+   cumulative net R after  60 trades: 5% -10.5 | 25% -0.4 | 50% +4.5 | 75% +10.1 | 95% +18.6
+   cumulative net R after 100 trades: 5% -8.1 | 25% -1.5 | 50% +5.8 | 75% +17.0 | 95% +23.5
+   Topstep 50K, 22 monthly starts:
+     days to first pass: 5% 8 | 25% 14 | 50% 26 | 75% 41 | 95% 67
+     evaluations bought before first pass: 5% 1 | 25% 1 | 50% 2 | 75% 3 | 95% 5
+     days to first payout: 5% 22 | 25% 48 | 50% 88 | 75% 153 | 95% 246 (within 90d 50%, within 180d 77%)
+     net_3m: $5% -631 | 25% -523 | 50% -244 | 75% 1,089 | 95% 4,472
+     net_6m: $5% -1,259 | 25% -580 | 50% 713 | 75% 2,836 | 95% 10,591
+     net_12m: $5% -807 | 25% 2,271 | 50% 8,354 | 75% 10,092 | 95% 12,469
+     share of starts losing money over 12 months: 18%

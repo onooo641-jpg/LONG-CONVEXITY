@@ -199,6 +199,19 @@ class DryRunBroker:
         self.position_size = 0
         return {"success": True, "errorCode": 0, "errorMessage": None, "dryRun": True}
 
+    def trades(self, start, end=None) -> list[dict[str, Any]]:
+        """Every fill on this account in a time window (ProjectX Trade/search).
+
+        Path and body from gateway.docs.projectx.com/docs/api-reference/trade/trade-search
+        (read 2026-11-20). ``profitAndLoss`` is null on the opening half of a
+        round trip; ``voided`` fills no longer count and must be dropped.
+        """
+        body = {"accountId": self.cfg.account_id,
+                "startTimestamp": pd.Timestamp(start).isoformat()}
+        if end is not None:
+            body["endTimestamp"] = pd.Timestamp(end).isoformat()
+        return self._post("/api/Trade/search", body).get("trades", [])
+
     def retrieve_bars(self, start, end, *, limit: int = 2000) -> pd.DataFrame:
         """Replay, modelling ``includePartialBar=False`` faithfully.
 
