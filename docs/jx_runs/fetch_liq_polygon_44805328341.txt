@@ -1,0 +1,18 @@
+=== liq_polygon
+polygon: month anchors 63732941..96523829, resume at block 96523829
+polygon: receipts: 22313 cached, 2420 to fetch (sampled=True)
+  rpc exception eth_getTransactionReceipt @ https://poly.api.pocket.network: HTTP 429
+  polygon: receipts 22718/24733 (4 min)
+  polygon: receipts 22973/24733 (7 min)
+polygon: retry pass 1: 1760 receipts missing
+  polygon: receipts 23368/24733 (11 min)
+  rpc exception eth_getTransactionReceipt @ https://polygon.gateway.tenderly.co: HTTP 429
+  polygon: receipts 23478/24733 (12 min)
+polygon: retry pass 2: 1255 receipts missing
+  polygon: receipts 24729/24733 (14 min)
+polygon: retry pass 3: 4 receipts missing
+  polygon: receipts 24730/24733 (15 min)
+polygon: receipts missing after retries: 3/24733 (<=1%, accepted; gas imputed, bot 'unknown')
+polygon: prices 18180 points, 32/35 coins priced
+polygon: COMPLETE 68016 events, 16 min
+=== liq_polygon done in 990s  ok 5569 fail 0
