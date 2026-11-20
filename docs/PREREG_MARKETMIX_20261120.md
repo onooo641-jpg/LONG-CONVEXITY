@@ -26,3 +26,13 @@ The mix is **worth doing** if its net ÷ cash-on-hand is at least 15% higher tha
 AND its net is at least 75% of the all-NQ net. Also reported: monthly P&L correlation NQ–ES–YM.
 
 Command: `uv run python scripts/marketmix_20261120.py`
+
+## Addendum, pre-registered after part 1 ran (2026-11-20 22:05), before part 2 runs
+Part 1 found the markets' trades sometimes overlap in time in **opposite** directions (NQ–ES 56,
+NQ–YM 98, ES–YM 62 times in 2016–26). Topstep, Lucid and MFFU prohibit hedging across accounts,
+including opposite positions in correlated contracts, so part 1's mix is not compliant as tested.
+**Part 2 adds a mechanical compliance filter** (not a strategy change): process all trades of all three
+markets in entry-time order; skip any trade whose direction is opposite to a position still open in
+another market (anywhere in the portfolio, conservatively across firms too). The skipped trade is removed
+for every account on that market. Then re-run the four portfolios with the same reading rule.
+Part 1 figures stand only as "before compliance" and are not used for planning.

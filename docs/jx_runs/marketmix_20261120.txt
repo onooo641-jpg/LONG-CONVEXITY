@@ -1,0 +1,30 @@
+check NQ: Topstep single-account net $44,359 vs earlier $44,359 -> OK
+check ES: Topstep single-account net $20,338 vs earlier $20,338 -> OK
+check YM: Topstep single-account net $11,744 vs earlier $11,744 -> OK
+
+monthly P&L correlation, one Topstep account per market:
+      NQ    ES    YM
+NQ  1.00  0.14 -0.04
+ES  0.14  1.00 -0.02
+YM -0.04 -0.02  1.00
+
+T5-NQ  5 Topstep all NQ                      net $  229,334 ($ 21,179/yr) | 2016-20 $   41,837, 2021-26 $  187,496 | worst dip $  -15,336 | most out of pocket $ -15,336 | cash on hand $  15,336 | longest below peak 44.8 mo | losing years 4
+T5-mix 5 Topstep 3NQ/1ES/1YM                 net $  172,699 ($ 15,949/yr) | 2016-20 $   32,946, 2021-26 $  139,752 | worst dip $   -9,837 | most out of pocket $  -9,837 | cash on hand $   9,837 | longest below peak 39.3 mo | losing years 2
+C-NQ   5T/5L/3M all NQ                       net $  529,425 ($ 48,893/yr) | 2016-20 $   89,341, 2021-26 $  440,084 | worst dip $  -52,994 | most out of pocket $ -52,994 | cash on hand $  52,994 | longest below peak 48.9 mo | losing years 3
+C-mix  5T/5L/3M mixed                        net $  408,959 ($ 37,768/yr) | 2016-20 $   85,268, 2021-26 $  323,692 | worst dip $  -26,843 | most out of pocket $ -26,843 | cash on hand $  26,843 | longest below peak 39.5 mo | losing years 3
+
+yearly income:
+      T5-NQ  T5-mix    C-NQ   C-mix
+2016 -4,349  -3,533 -16,668  -7,231
+2017 -4,114  -3,714 -11,357  -6,186
+2018 -5,339     221 -21,792  -9,173
+2019 15,278  15,559  45,509  47,967
+2020 40,361  24,413  93,649  59,890
+2021 -1,507   3,273     172   5,752
+2022  6,422  11,652   7,296  20,905
+2023 48,368  28,162 141,907  81,531
+2024 25,150  15,652  70,504  47,064
+2025 44,029  28,234  67,942  40,584
+2026 65,034  52,779 152,262 127,854
+T5-mix vs T5-NQ: net -24.7%, cash on hand -35.9%, net per $ of cash +17.4% -> WORTH DOING (pre-registered rule)
+C-mix vs C-NQ: net -22.8%, cash on hand -49.3%, net per $ of cash +52.5% -> WORTH DOING (pre-registered rule)
