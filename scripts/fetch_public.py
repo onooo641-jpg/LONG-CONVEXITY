@@ -615,10 +615,13 @@ def rpc(urls, method, params, tries=3):
         live = [u for u in urls if RPC_FAILS.get(u, 0) < 8] or list(urls)
         for u in live:
             try:
-                req = urllib.request.Request(u, data=json.dumps({"jsonrpc": "2.0", "id": 1, "method": method, "params": params}).encode(),
-                                             headers={**UA, "Content-Type": "application/json"}, method="POST")
-                with urllib.request.urlopen(req, timeout=60) as r:
-                    j = json.loads(r.read().decode())
+                if "etherscan.io" in u:
+                    j = _es(u, method, params)
+                else:
+                    req = urllib.request.Request(u, data=json.dumps({"jsonrpc": "2.0", "id": 1, "method": method, "params": params}).encode(),
+                                                 headers={**UA, "Content-Type": "application/json"}, method="POST")
+                    with urllib.request.urlopen(req, timeout=60) as r:
+                        j = json.loads(r.read().decode())
                 if "error" in j:
                     last = f"{u}: {j['error']}"
                     if (u, method) not in RPC_SEEN:
@@ -651,6 +654,57 @@ def rpc(urls, method, params, tries=3):
         time.sleep(2 * (k + 1))
     STATS["fail"] += 1
     raise RuntimeError(last)
+
+
+def _es(u, method, params):
+    """Etherscan V2 backend (key only from env ETHERSCAN_API_KEY, never printed). Returns a JSON-RPC-shaped dict."""
+    import os
+    key = os.environ.get("ETHERSCAN_API_KEY", "")
+    if not key:
+        raise RuntimeError("no ETHERSCAN_API_KEY")
+    time.sleep(0.25)  # free tier: 5 calls/s
+
+    def get(q):
+        for k in range(5):
+            req = urllib.request.Request(u + "&" + urllib.parse.urlencode({**q, "apikey": key}), headers=UA)
+            with urllib.request.urlopen(req, timeout=60) as r:
+                j = json.loads(r.read().decode())
+            if isinstance(j.get("result"), str) and "rate limit" in j["result"].lower():
+                time.sleep(2 * (k + 1))
+                continue
+            return j
+        return j
+    if method == "eth_getLogs":
+        f = params[0]
+        out = []
+        for page in range(1, 11):
+            j = get({"module": "logs", "action": "getLogs", "fromBlock": int(f["fromBlock"], 16), "toBlock": int(f["toBlock"], 16),
+                     "topic0": f["topics"][0], "page": page, "offset": 1000})
+            res = j.get("result")
+            if isinstance(res, list):
+                out.extend(res)
+                if len(res) < 1000:
+                    return {"result": out}
+            elif "no records" in str(j.get("message", "")).lower():
+                return {"result": out}
+            else:
+                return {"error": {"message": str(res)[:200]}}
+        raise ValueError("etherscan: >10000 results in window, range too large")
+    q = {"module": "proxy", "action": method}
+    if method == "eth_getBlockByNumber":
+        q.update(tag=params[0], boolean="false")
+    elif method == "eth_getTransactionReceipt":
+        q.update(txhash=params[0])
+    elif method == "eth_call":
+        q.update(to=params[0]["to"], data=params[0]["data"], tag=params[1])
+    elif method != "eth_blockNumber":
+        raise RuntimeError("unsupported " + method)
+    j = get(q)
+    if "result" in j and not isinstance(j["result"], str) or (isinstance(j.get("result"), str) and j["result"].startswith("0x")):
+        return {"result": j["result"]}
+    if j.get("result") is None and "error" not in j:
+        return {"result": None}
+    return {"error": j.get("error") or {"message": str(j.get("result") or j.get("message"))[:200]}}
 
 
 def _block_ts(urls, n):
@@ -687,6 +741,9 @@ def job_liq_chain(name):
     deadline = t0 + float(os.environ.get("LIQ_BUDGET_MIN", "0") or 0) * 60 if os.environ.get("LIQ_BUDGET_MIN") else None
     over = lambda: deadline is not None and time.time() > deadline  # noqa: E731
     lkey, native, urls = LIQ_CHAINS[name]
+    if os.environ.get("LIQ_USE_ETHERSCAN") == "1":
+        urls = [f"https://api.etherscan.io/v2/api?chainid={LIQ_ES_ID[name]}"]
+        print(f"{name}: using Etherscan V2 (chainid {LIQ_ES_ID[name]})", flush=True)
     OUT.mkdir(parents=True, exist_ok=True)
     sp = _liq_state_path(name)
     st = json.loads(sp.read_text()) if sp.exists() else {}
@@ -928,13 +985,41 @@ def job_liq_probe():
           "24 months of these via public RPC is not feasible, so Solana is judged on this probe only.", flush=True)
 
 
+LIQ_ES_ID = {"base": 8453, "polygon": 137, "bnb": 56, "avalanche": 43114}
+
+
+def _liq_es_job(c):
+    def run():
+        import os
+        os.environ["LIQ_USE_ETHERSCAN"] = "1"
+        job_liq_chain(c)
+    return run
+
+
+def job_liq_secretcheck():
+    import os
+    print("ETHERSCAN_API_KEY present:", bool(os.environ.get("ETHERSCAN_API_KEY")), flush=True)
+    if os.environ.get("ETHERSCAN_API_KEY"):
+        for n, cid in LIQ_ES_ID.items():
+            try:
+                r = rpc([f"https://api.etherscan.io/v2/api?chainid={cid}"], "eth_blockNumber", [], tries=1)
+                print(f"etherscan {n}: eth_blockNumber ok ({int(r, 16)})", flush=True)
+            except Exception as e:  # noqa: BLE001
+                print(f"etherscan {n}: {str(e)[:160]}", flush=True)
+            try:
+                lg = rpc([f"https://api.etherscan.io/v2/api?chainid={cid}"], "eth_getLogs", [{"fromBlock": hex(1), "toBlock": hex(1), "topics": [LIQ_TOPIC]}], tries=1)
+                print(f"etherscan {n}: getLogs ok ({len(lg)})", flush=True)
+            except Exception as e:  # noqa: BLE001
+                print(f"etherscan {n}: getLogs {str(e)[:160]}", flush=True)
+
+
 for _c in LIQ_CHAINS:
     globals()[f"job_liq_{_c}"] = (lambda c: (lambda: job_liq_chain(c)))(_c)
 
 
 JOBS = {"ipo2": job_ipo2, "iponews": job_iponews, "ipo": job_ipo, "myxsnap": job_myxsnap, "batch2": job_batch2, "hl2023d": job_hl2023d, "hl2023": job_hl2023, "hl": job_hl, "llama_lend": job_llama_lend, "llama_pools": job_llama_pools,
         "llama_prices": job_llama_prices, "poly": job_poly,
-        "liq_probe": job_liq_probe, "liq_diag": job_liq_diag, "liq_diag2": job_liq_diag2, "liq_diag3": job_liq_diag2, **{f"liq_{c}": globals()[f"job_liq_{c}"] for c in LIQ_CHAINS}}
+        "liq_probe": job_liq_probe, "liq_diag": job_liq_diag, "liq_diag2": job_liq_diag2, "liq_diag3": job_liq_diag2, "liq_secretcheck": job_liq_secretcheck, **{f"liq_{c}_es": _liq_es_job(c) for c in LIQ_ES_ID}, **{f"liq_{c}": globals()[f"job_liq_{c}"] for c in LIQ_CHAINS}}
 
 
 def main(argv):

@@ -27,6 +27,8 @@ jobs:
       - uses: astral-sh/setup-uv@v5
       - run: uv sync
       - name: Fetch
+        env:
+          ETHERSCAN_API_KEY: ${{ secrets.ETHERSCAN_API_KEY }}
         run: |
           mkdir -p docs/jx_runs
           jobs=$(grep -v '^\s*#' .github/fetch_public_request.txt | grep -v '^\s*$' | tr '\n' ' ')

@@ -41,6 +41,7 @@ jobs:
       - name: Fetch (150 min budget, periodic commits)
         env:
           LIQ_BUDGET_MIN: "150"
+          ETHERSCAN_API_KEY: ${{ secrets.ETHERSCAN_API_KEY }}
         run: |
           mkdir -p docs/jx_runs
           log="docs/jx_runs/fetch_liq_${{ matrix.chain }}_${{ github.run_id }}.txt"
