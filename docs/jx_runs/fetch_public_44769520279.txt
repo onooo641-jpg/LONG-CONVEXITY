@@ -1,0 +1,3 @@
+=== liq_prices_arbitrum
+arbitrum: prices 19097 points, 27/35 coins priced
+=== liq_prices_arbitrum done in 62s  ok 96 fail 0
