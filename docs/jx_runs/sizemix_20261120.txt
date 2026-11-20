@@ -1,0 +1,19 @@
+T5-mix 50K (risk $900; skipped 208)          net $  176,902 ($ 16,337/yr) | 2016-20 $   26,482, 2021-26 $  150,420 | worst dip $   -4,741 | most out of pocket $  -4,741 | cash on hand $   4,741 | longest below peak 38.1 mo | losing years 1
+T5-mix 100K (risk $1,350; skipped 208)       net $  254,379 ($ 23,492/yr) | 2016-20 $   23,107, 2021-26 $  231,272 | worst dip $  -22,578 | most out of pocket $ -22,578 | cash on hand $  22,578 | longest below peak 48.8 mo | losing years 4
+T5-mix 150K (risk $2,025; skipped 208)       net $  383,019 ($ 35,372/yr) | 2016-20 $   23,324, 2021-26 $  359,695 | worst dip $  -33,749 | most out of pocket $ -33,749 | cash on hand $  33,749 | longest below peak 50.3 mo | losing years 4
+
+yearly income:
+        50K    100K    150K
+2016 -3,264  -4,725 -11,080
+2017  1,856  -5,971  -7,922
+2018    368 -10,677 -12,994
+2019 12,278  18,779  16,548
+2020 15,244  25,702  38,772
+2021  8,168    -934  -5,457
+2022  8,056  15,103  22,823
+2023 30,861  83,929 112,670
+2024 15,116  19,170  42,047
+2025 28,828  19,510  34,528
+2026 59,390  94,495 153,083
+100K vs 50K: net +43.8%, cash $22,578 (+376.3%), net per $ cash 11.3 vs 37.3 -> not worth switching (pre-registered rule)
+150K vs 50K: net +116.5%, cash $33,749 (+611.9%), net per $ cash 11.3 vs 37.3 -> not worth switching (pre-registered rule)

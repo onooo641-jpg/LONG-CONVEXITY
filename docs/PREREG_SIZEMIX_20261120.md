@@ -19,3 +19,14 @@ A bigger size is **worth switching to** if its net is at least 30% above the 50K
 is no more than $15,336 (what the all-NQ 5×50K plan already needed). Also reported: net per $ of cash.
 
 Command: `uv run python scripts/sizemix_20261120.py`
+
+## Results (2026-11-20, `docs/jx_runs/sizemix_20261120.txt`)
+| 5 Topstep, 3 NQ/1 ES/1 YM | net 2016–26 (/yr) | cash on hand | net per $ cash | losing years |
+|---|---|---|---|---|
+| 50K | $176,902 ($16,337) | $4,741 | 37.3 | 1 |
+| 100K | $254,379 ($23,492) | $22,578 | 11.3 | 4 |
+| 150K | $383,019 ($35,372) | $33,749 | 11.3 | 4 |
+
+**Not worth switching** (both fail the cash limit of $15,336). Bigger accounts add income but need 5–7×
+the cash and lose in four years out of eleven; 50K stays the most cash-efficient size by far. More money
+should come from more 50K mixed accounts at more firms, not bigger accounts. (100K/150K ladders assumed.)

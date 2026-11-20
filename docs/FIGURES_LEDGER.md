@@ -301,4 +301,11 @@ day at every size.
 | X3 | 5T/5L/3M all NQ vs mixed: net / cash on hand | $529,425 / $52,994 vs $415,303 / $21,097 | same | same | 2026-11-20 | current; planning figure |
 | X4 | trades skipped by anti-hedge filter: NQ / ES / YM | 69 / 54 / 85 | same | same | 2026-11-20 | current |
 
+## Account size inside the market mix (docs/PREREG_SIZEMIX_20261120.md)
+
+| # | figure | value | command | window | computed | status |
+|---|---|---|---|---|---|---|
+| S1 | 5 Topstep mixed, net: 50K / 100K / 150K | $176,902 / $254,379 / $383,019 | `uv run python scripts/sizemix_20261120.py` | 2016–26 | 2026-11-20 | 100K/150K ladders assumed |
+| S2 | same, cash on hand | $4,741 / $22,578 / $33,749 | same | same | 2026-11-20 | same |
+
 Raw output for every command above is in `docs/jx_runs/`.
