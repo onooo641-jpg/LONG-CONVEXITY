@@ -1,0 +1,5 @@
+=== liq_base
+  rpc error eth_getBlockByNumber @ https://base.api.pocket.network: {'code': 4444, 'message': 'pruned history unavailable: requested 29988926, earliest available 56500000'}
+base: month anchors 21814927..53350927, resume at block 21814927
+  rpc error eth_getLogs @ https://base.api.pocket.network: {'code': -32602, 'message': 'eth_getLogs block range too large (max 10001 blocks)'}
+  base: scanned to block 22514802/53350926 (237 events, 15 min)
