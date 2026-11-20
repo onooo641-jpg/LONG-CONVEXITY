@@ -593,7 +593,7 @@ LIQ_CHAINS = {
     "arbitrum": ("arbitrum", "coingecko:ethereum", ["https://arb1.arbitrum.io/rpc"]),
     "optimism": ("optimism", "coingecko:ethereum", ["https://mainnet.optimism.io"]),
     "polygon": ("polygon", "coingecko:matic-network", ["https://poly.api.pocket.network", "https://polygon.gateway.tenderly.co"]),
-    "avalanche": ("avax", "coingecko:avalanche-2", ["https://avalanche-c-chain-rpc.publicnode.com", "https://api.avax.network/ext/bc/C/rpc"]),
+    "avalanche": ("avax", "coingecko:avalanche-2", ["https://avalanche.gateway.tenderly.co"]),
     "bnb": ("bsc", "coingecko:binancecoin", ["https://bsc-rpc.publicnode.com", "https://bsc-dataseed.binance.org"]),
     "gnosis": ("xdai", None, ["https://rpc.gnosischain.com"]),
     "scroll": ("scroll", "coingecko:ethereum", ["https://rpc.scroll.io"]),
