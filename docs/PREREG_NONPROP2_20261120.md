@@ -39,3 +39,26 @@ history), sports/betting promos (illegal in Malaysia), Polymarket (no data from 
 card/bank bonuses (US-only).
 
 Command: `uv run python scripts/nonprop2_20261120.py`
+
+## Results (2026-11-20, `docs/jx_runs/nonprop2_20261120.txt`)
+| # | test | result | verdict |
+|---|---|---|---|
+| 57 | rotating top-3 funding carry | 2.9%/yr on capital; halves +11.6% / −3.2%; 2024 +12.9%, 2025 −1.8%, 2026 −2.7% | **FAIL** (below 8%, 2nd half negative) |
+| 57 | control: BTC+ETH carry held | 6.4%/yr; halves +12.8% / +5.4%; 2024 +11.1%, 2025 +4.7%, 2026 +2.3% | **FAIL** (below 8%; decaying) |
+| 58 | friend's strategy on own money, $900 risk | net −$2,553 over 2016–26 (−$236/yr); max drawdown −$73,445; 2016–20 −$60,133, 2021–26 +$57,580 | **FAIL** (no edge over the full period; consistent with R9: lost $45,617 in 2016–23) |
+| 59 | broker credit bonuses | see below | **FAIL** on terms |
+
+**#59 terms (third-party summaries of broker terms, 2026):**
+- HFM 100% SuperCharged: credit is removed once equity drops below the bonus amount, so it
+  does not absorb losses past the deposit; any withdrawal cuts the credit 1:1.
+- HFM 30% Rescue: does absorb losses past the deposit, but is non-withdrawable margin credit
+  capped at $7,000 total, so at most a one-time option worth a few thousand.
+- XM: credit is non-withdrawable and withdrawals remove it (proportionally or entirely,
+  depending on the source); bonus abuse leads to account closure.
+- None is a repeatable free option like a monthly prop reset. The brokers are offshore
+  entities; Malaysian licensing not checked.
+
+**Takeaways:**
+- To match Topstep's $4,098/yr, funding carry needs about $64K (held) to $140K (rotating) of capital, and its yield has been falling since 2024.
+- #58 confirms the Topstep income is almost all structure: the same trades lose money on own money over 2016–26.
+  Any non-prop route therefore needs its own edge; reusing these trades gives none.

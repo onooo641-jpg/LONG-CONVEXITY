@@ -91,6 +91,9 @@ risk, 5m signals and 1m fills.
 | 54 | TradeDay Fast Pass / Bulenox Momentum vs Topstep (ETF, FXIFY Futures excluded: no bots) | `docs/PREREG_FIRMS2_20261120.md`. Ranking. | TradeDay $85/mo: $35.7K real, $14.0K coin flip (closest to Topstep $44.4K/$18.0K); list price $22K; Bulenox Momentum -$4K | PREREG_FIRMS2 |
 | 55 | global round 1: Breakout static 1-Step 50K; Tradeify Lightning 50K | `docs/PREREG_GLOBAL_20261120.md`. Ranking. | Breakout/Kraken Prop Classic 50K at 10x: $38-57K real, $11-25K coin flip = Topstep-level; Lightning $20-41K (cap-dependent) | PREREG_GLOBAL |
 | 56 | round 3: MFFU Rapid EOD 50K; TFD Static Core/Pro (Apex unresolved; Phidias, E2T, TPT, Top One, Blue Guardian, Alpha, FFF banned; HyroTrader crypto-only) | `docs/PREREG_ROUND3_20261120.md`. Ranking. | none beats Topstep: MFFU $34.5K real / $7.4K coin flip; TFD Pro $20.2K / $3.3K; TFD Core $10.7K / −$1.2K. MFFU usable only as an extra slot alongside Topstep | PREREG_ROUND3 results |
+| 57 | funding-rate carry (Hyperliquid majors), rotating top-3 and BTC+ETH held | `docs/PREREG_NONPROP2_20261120.md`. Pass > 8%/yr on capital, both halves positive. | fail (2.9% / 6.4%; yields falling since 2024) | PREREG_NONPROP2 results |
+| 58 | friend's NQ strategy on own money | same. Pass > 15%/yr at 25% max-DD sizing, both halves positive. | fail (−$2,553 over 2016–26; max DD −$73K) | PREREG_NONPROP2 results |
+| 59 | offshore broker credit bonuses as a loss buffer | same. Terms screen. | fail (credit does not absorb losses, or one-time capped) | PREREG_NONPROP2 results |
 
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.

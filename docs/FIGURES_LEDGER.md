@@ -254,4 +254,13 @@ day at every size.
 | R3 | worst dip, same order | −$3,520 / −$5,590 / −$3,226 / −$3,667 | same | 2016–26 | 2026-11-20 | same |
 | R4 | TFD Core if payouts may go down to the floor (unconfirmed reading) | $18,253 real / $3,068 coin flip | same | 2016–26 | 2026-11-20 | upper bound only |
 
+## Non-prop round 2 (docs/PREREG_NONPROP2_20261120.md, pre-registered f1eef1e)
+
+| # | figure | value | command | window | computed | status |
+|---|---|---|---|---|---|---|
+| P1 | funding carry return on capital: rotating top-3 / BTC+ETH held | 2.9%/yr / 6.4%/yr | `uv run python scripts/nonprop2_20261120.py` | HL 2024-01..2026-11 | 2026-11-20 | basis and venue risk not modelled |
+| P2 | capital to make $4,098/yr: rotating / held | $139,858 / $64,293 | same | same | 2026-11-20 | same |
+| P3 | friend's NQ trades on own money, $900 risk: net / max DD | −$2,553 / −$73,445 | same | 2016–26 | 2026-11-20 | current |
+| P4 | same, 2016–20 / 2021–26 | −$60,133 / +$57,580 | same | same | 2026-11-20 | current |
+
 Raw output for every command above is in `docs/jx_runs/`.

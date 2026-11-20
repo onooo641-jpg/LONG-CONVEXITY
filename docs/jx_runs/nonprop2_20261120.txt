@@ -1,0 +1,11 @@
+#57 rotating top-3   return on capital   2.9%/yr | halves +11.6% / -3.2% (on capital, whole half) | worst week -0.21% | capital to make $4,098/yr: $139,858 | weeks fully invested 100%
+#57 BTC+ETH hold     return on capital   6.4%/yr | halves +12.8% / +5.4% (on capital, whole half) | worst week -0.08% | capital to make $4,098/yr: $64,293
+#57 by calendar year (return on capital, partial years as-is):
+        rot    ctl
+y                 
+2024 +12.9% +11.1%
+2025  -1.8%  +4.7%
+2026  -2.7%  +2.3%
+#58 own money, $900 risk: 2185 trades, net $-2,553 ($-236/yr), max drawdown $-73,445, worst year $-30,055, halves 2016-20 $-60,133 / 2021-26 $57,580
+#58 capital for max DD = 25%: $293,781; return on it -0.1%/yr; capital to make $4,098/yr at that sizing: $-5,099,158
+#58 by year: 2016 $-30,055, 2017 $-9,479, 2018 $-28,955, 2019 $6,987, 2020 $1,369, 2021 $-1,873, 2022 $-6,581, 2023 $22,970, 2024 $13,496, 2025 $1,897, 2026 $27,671
