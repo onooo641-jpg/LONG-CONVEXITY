@@ -727,12 +727,13 @@ def _liq_prices(name, toks):
     lkey, native, _ = LIQ_CHAINS[name]
     keys = [f"{lkey}:{t}" for t in toks] + ([native] if native else [])
     prows = []
-    for i in range(0, len(keys), 10):
-        batch = keys[i:i + 10]
-        for k in range(0, 800, 100):
+    ndays = (LIQ_MONTHS[-1] - LIQ_START) // 86400 + 2   # window length; never request past it
+    for i in range(0, len(keys), 3):   # 3 coins x <=100 days: larger requests returned HTTP 400
+        batch = keys[i:i + 3]
+        for k in range(0, ndays, 100):
             stt = LIQ_START - 86400 + k * 86400
-            j = http("https://coins.llama.fi/chart/" + urllib.parse.quote(",".join(batch), safe=",:") + f"?start={stt}&span=100&period=1d")
-            time.sleep(0.4)
+            j = http("https://coins.llama.fi/chart/" + urllib.parse.quote(",".join(batch), safe=",:") + f"?start={stt}&span={min(100, ndays - k)}&period=1d")
+            time.sleep(0.3)
             for kk, v in ((j or {}).get("coins") or {}).items():
                 for p in v.get("prices", []):
                     prows.append({"coin": kk, "ts": int(p["timestamp"]), "price": float(p["price"])})
