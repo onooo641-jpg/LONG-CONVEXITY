@@ -1,0 +1,9 @@
+=== liq_avalanche
+avalanche: marked complete by older code without a receipt check; re-checking receipts
+avalanche: month anchors 52499565..99082939, resume at block 99082939
+avalanche: receipts: 15375 cached, 0 to fetch (sampled=False)
+avalanche: receipts missing after retries: 0/15375 (<=1%, accepted; gas imputed, bot 'unknown')
+  rpc exception eth_call @ https://avalanche.gateway.tenderly.co: HTTP 429
+avalanche: prices 17435 points, 24/25 coins priced
+avalanche: COMPLETE 21556 events, 1 min
+=== liq_avalanche done in 46s  ok 96 fail 0
