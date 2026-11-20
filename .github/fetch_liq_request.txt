@@ -1,2 +1,2 @@
-# chains for .github/workflows/fetch_liq.yml. Resumable. (run 10: polygon receipts remainder)
-polygon
+# chains for .github/workflows/fetch_liq.yml. Resumable. (run 11: base resume 46%)
+base
