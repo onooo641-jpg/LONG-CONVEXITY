@@ -1,0 +1,16 @@
+=== liq_arbitrum
+arbitrum: marked complete by older code without a receipt check; re-checking receipts
+arbitrum: month anchors 269733499..520129274, resume at block 520129274
+arbitrum: receipts: 21022 cached, 514 to fetch (sampled=False)
+  rpc error eth_getTransactionReceipt @ https://arb1.arbitrum.io/rpc: {'code': -32000, 'message': 'failed to decode receipt at block 506559301, hash b1df75b52dad146ec0b7e8765f0c712d7e6da8ee68651784349fd556899c49a4, txIndex 2: rlp: expected input string or byte for uint6
+  arbitrum: receipts 21451/21536 (3 min)
+arbitrum: retry pass 1: 85 receipts missing
+  arbitrum: receipts 21521/21536 (4 min)
+arbitrum: retry pass 2: 15 receipts missing
+  arbitrum: receipts 21533/21536 (5 min)
+arbitrum: retry pass 3: 3 receipts missing
+  arbitrum: receipts 21535/21536 (6 min)
+arbitrum: receipts missing after retries: 1/21536 (<=1%, accepted; gas imputed, bot 'unknown')
+arbitrum: prices 19097 points, 27/35 coins priced
+arbitrum: COMPLETE 37425 events, 8 min
+=== liq_arbitrum done in 473s  ok 643 fail 104
