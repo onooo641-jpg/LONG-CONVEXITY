@@ -69,3 +69,18 @@ restricted. Open items before any purchase: bot/API policy (unpublished), Breako
 prohibited-practices text on risk per trade, whether Kraken Prop rules match the
 Breakout rules used here, the fee refund, and perp funding/fees vs NQ commissions.
 Tradeify Lightning depends on its unverified withdrawal cap.
+
+## Verification, 2026-11-20 12:00 (Breakout help centre, read directly)
+- Prohibited-practices pages (evaluation and funded) list: exploiting errors/latency,
+  insider info, front-running, third-party / off-the-shelf strategies, switching strategy
+  between evaluation and funded, arbitrage between accounts, strategies "difficult to
+  replicate in the live market, or come at a heightened risk" (auto-deleverage risk,
+  large unrealised swings), copy trading, account sharing, **more than one evaluation at
+  a time**, and multiple accounts from one household/device/IP.
+- **Bots/automation are not prohibited, but not mentioned either.** No numeric
+  risk-per-trade rule; the "heightened risk" clause is discretionary.
+- Kraken's exchange explicitly welcomes bots via its API, but no Kraken Prop API for prop
+  accounts was found; the terminal is browser-based. Whether the strategy can be automated
+  there at all is **unconfirmed** — ask support.
+- One evaluation at a time matches the single-slot model used above.
+- Household rule: Jx and his friend cannot both trade Breakout accounts from one home/device/IP.

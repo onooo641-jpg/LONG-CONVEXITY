@@ -40,3 +40,11 @@ Command: `uv run python scripts/firms2_20261120.py`
   and payouts above a $3,000 buffer capped at $1,500 for 3 payouts return little.
 - Low-confidence inputs: TradeDay funded lock level, Bulenox Momentum drawdown size
   ($2,000 assumed) and what follows the third Momentum payout.
+
+## Verification, 2026-11-20 12:00
+- TradeDay automation: no API exposed; bots must run inside NinjaTrader/Tradovate/
+  TradingView (TradeDay help centre via TradersPost). The TopstepX bot would need a rewrite.
+- Discount recurrence: **not settled.** Third-party pages conflict: one says renewals bill
+  at the discounted price; another says affiliate codes cover the first month only;
+  vendor norm is first month only. TradeDay's billing FAQ does not say. Treat the $189 list
+  result ($22.2K) as the base case until confirmed at checkout or by support.
