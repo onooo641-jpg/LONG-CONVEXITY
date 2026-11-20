@@ -1,0 +1,36 @@
+19 IPOs 2024-05..2026-11; first-day close vs issue: mean +45.8%, median +28.0%, below issue 37%
+pre-registered: mean value per RM applied 0.40% (halves 1.69% / -0.76%), r<0 37% -> FAIL
+  RM10,000 pro-rata application: mean RM40 per IPO, median RM28
+
+all public: 13 IPOs. Average application RM31,358 (median); average allotment RM648 (median)
+   Sin-Kung Logistics     2024-05 r  +7.7%  X   26.5  allotment/app RM    592  profit/app RM     42
+   Oriental Kopi          2025-01 r +98.9%  X   60.0  allotment/app RM    399  profit/app RM    391
+   THMY Holdings          2025-10 r +192.9%  X   35.6  allotment/app RM    857  profit/app RM  1,650
+   PSP Energy             2025-12 r  -9.4%  X    5.9  allotment/app RM  1,281  profit/app RM   -125
+   Semico Capital         2026-01 r +50.0%  X   28.1  allotment/app RM  1,110  profit/app RM    550
+   Kee Ming Group         2026-02 r +128.9%  X   54.2  allotment/app RM    645  profit/app RM    828
+   SkyeChip               2026-05 r +151.1%  X   95.0  allotment/app RM    424  profit/app RM    638
+   Eckem Holdings         2026-07 r  +0.0%  X    8.1  allotment/app RM    728  profit/app RM     -4
+   Butterfield FB         2026-09 r  -4.2%  X   18.7  allotment/app RM  1,515  profit/app RM    -69
+   Evocom                 2026-09 r -27.8%  X    3.6  allotment/app RM    648  profit/app RM   -184
+   EcoSys                 2026-10 r +196.3%  X  206.7  allotment/app RM    243  profit/app RM    474
+   RedPlanet              2026-10 r +36.8%  X   85.3  allotment/app RM    555  profit/app RM    201
+   MyDCD                  2026-11 r -19.6%  X   36.5  allotment/app RM  1,743  profit/app RM   -349
+  profit per application: mean RM311, median RM201; x 55 IPOs/yr = RM17,114/yr (mean) or RM11,061/yr (median)
+  bootstrap 90% range for RM/yr: 5,210 .. 31,096
+
+general portion: 12 IPOs. Average application RM34,499 (median); average allotment RM642 (median)
+   Sin-Kung Logistics     2024-05 r  +7.7%  X   31.4  allotment/app RM    670  profit/app RM     48
+   Oriental Kopi          2025-01 r +98.9%  X   97.7  allotment/app RM    236  profit/app RM    231
+   THMY Holdings          2025-10 r +192.9%  X   43.2  allotment/app RM    810  profit/app RM  1,559
+   PSP Energy             2025-12 r  -9.4%  X    8.5  allotment/app RM  1,247  profit/app RM   -122
+   Semico Capital         2026-01 r +50.0%  X   36.6  allotment/app RM    931  profit/app RM    461
+   Kee Ming Group         2026-02 r +128.9%  X   81.2  allotment/app RM    613  profit/app RM    787
+   SkyeChip               2026-05 r +151.1%  X  153.9  allotment/app RM    273  profit/app RM    410
+   Eckem Holdings         2026-07 r  +0.0%  X   11.9  allotment/app RM    535  profit/app RM     -3
+   Butterfield FB         2026-09 r  -4.2%  X   16.4  allotment/app RM  1,955  profit/app RM    -88
+   Evocom                 2026-09 r -27.8%  X    5.5  allotment/app RM    518  profit/app RM   -147
+   EcoSys                 2026-10 r +196.3%  X  276.6  allotment/app RM    197  profit/app RM    384
+   MyDCD                  2026-11 r -19.6%  X   48.9  allotment/app RM  1,628  profit/app RM   -326
+  profit per application: mean RM266, median RM139; x 55 IPOs/yr = RM14,640/yr (mean) or RM7,663/yr (median)
+  bootstrap 90% range for RM/yr: 2,263 .. 27,809
