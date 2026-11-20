@@ -748,6 +748,35 @@ def _liq_prices_job(c):
     return run
 
 
+def job_liq_pxdiag():
+    """Print DefiLlama responses (incl. error bodies) for several request shapes."""
+    df = pd.read_parquet(OUT / "liq_gnosis.parquet", columns=["collateral", "debt"])
+    toks = sorted(set(df["collateral"]) | set(df["debt"]))[:12]
+    t0 = LIQ_START
+    shapes = {
+        "native span10": f"https://coins.llama.fi/chart/coingecko:ethereum?start={t0}&span=10&period=1d",
+        "native span100": f"https://coins.llama.fi/chart/coingecko:ethereum?start={t0}&span=100&period=1d",
+        "native no period": f"https://coins.llama.fi/chart/coingecko:ethereum?start={t0}&span=10",
+        "tok1 xdai span10": f"https://coins.llama.fi/chart/xdai:{toks[0]}?start={t0}&span=10&period=1d",
+        "tok1 gnosis span10": f"https://coins.llama.fi/chart/gnosis:{toks[0]}?start={t0}&span=10&period=1d",
+        "tok10 xdai span10": "https://coins.llama.fi/chart/" + ",".join(f"xdai:{t}" for t in toks[:10]) + f"?start={t0}&span=10&period=1d",
+        "tok1 historical": f"https://coins.llama.fi/prices/historical/{t0}/xdai:{toks[0]}",
+        "tok1 current": f"https://coins.llama.fi/prices/current/xdai:{toks[0]}",
+        "tok1 start-in-past-2y span10": f"https://coins.llama.fi/chart/xdai:{toks[0]}?start={t0 - 40*86400}&span=10&period=1d",
+    }
+    for k, u in shapes.items():
+        try:
+            req = urllib.request.Request(u, headers=UA)
+            with urllib.request.urlopen(req, timeout=60) as r:
+                body = r.read().decode()[:300]
+            print(f"pxdiag {k}: 200 {body}", flush=True)
+        except urllib.error.HTTPError as e:
+            print(f"pxdiag {k}: HTTP {e.code} {e.read().decode()[:300]}", flush=True)
+        except Exception as e:  # noqa: BLE001
+            print(f"pxdiag {k}: {type(e).__name__} {e}", flush=True)
+        time.sleep(1)
+
+
 def _liq_state_path(name):
     return OUT / f"liq_{name}_state.json"
 
@@ -1038,7 +1067,7 @@ for _c in LIQ_CHAINS:
 
 JOBS = {"ipo2": job_ipo2, "iponews": job_iponews, "ipo": job_ipo, "myxsnap": job_myxsnap, "batch2": job_batch2, "hl2023d": job_hl2023d, "hl2023": job_hl2023, "hl": job_hl, "llama_lend": job_llama_lend, "llama_pools": job_llama_pools,
         "llama_prices": job_llama_prices, "poly": job_poly,
-        "liq_probe": job_liq_probe, "liq_diag": job_liq_diag, "liq_diag2": job_liq_diag2, "liq_diag3": job_liq_diag2, "liq_secretcheck": job_liq_secretcheck, **{f"liq_prices_{c}": _liq_prices_job(c) for c in LIQ_CHAINS}, **{f"liq_{c}_es": _liq_es_job(c) for c in LIQ_ES_ID}, **{f"liq_{c}": globals()[f"job_liq_{c}"] for c in LIQ_CHAINS}}
+        "liq_probe": job_liq_probe, "liq_diag": job_liq_diag, "liq_diag2": job_liq_diag2, "liq_diag3": job_liq_diag2, "liq_secretcheck": job_liq_secretcheck, "liq_pxdiag": job_liq_pxdiag, **{f"liq_prices_{c}": _liq_prices_job(c) for c in LIQ_CHAINS}, **{f"liq_{c}_es": _liq_es_job(c) for c in LIQ_ES_ID}, **{f"liq_{c}": globals()[f"job_liq_{c}"] for c in LIQ_CHAINS}}
 
 
 def main(argv):

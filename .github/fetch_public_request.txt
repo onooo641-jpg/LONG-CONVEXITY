@@ -1,3 +1,2 @@
 # jobs for scripts/fetch_public.py (PREREG_LIQUIDATIONS_20261120)
-liq_prices_gnosis
-liq_prices_metis
+liq_pxdiag
