@@ -228,4 +228,12 @@ day at every size.
 | F3 | worst dip: same order | −$3,520 / −$9,675 / −$9,310 / −$10,825 | same | 2016–26 | 2026-11-20 | same |
 | F4 | FTMO Fut Growth / Pro net if renewal includes a free reset | $48,297 / $41,352 | sensitivity lines in the same output file | 2016–26 | 2026-11-20 | renewal-reset rule unverified |
 
+## TradeDay / Bulenox vs Topstep (docs/PREREG_FIRMS2_20261120.md)
+
+| # | figure | value | command | window | computed | status |
+|---|---|---|---|---|---|---|
+| F5 | real net: TradeDay FP 50K $85/mo / $189/mo / Bulenox Momentum 50K | $35,678 / $22,158 / −$4,139 | `uv run python scripts/firms2_20261120.py` | 2016–26 | 2026-11-20 | rules third-party; some assumed |
+| F6 | coin-flip median: same order | $14,035 / −$4,213 / −$14,622 | same | 2016–26 | 2026-11-20 | same |
+| F7 | worst dip: same order | −$4,835 / −$10,035 / −$10,840 | same | 2016–26 | 2026-11-20 | same |
+
 Raw output for every command above is in `docs/jx_runs/`.

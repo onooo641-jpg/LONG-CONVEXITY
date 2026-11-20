@@ -338,3 +338,28 @@ def test_no_free_reset_per_rebill_charges_every_reset():
     without = costs(rules, 90, resets=3, activations=0)
     assert with_free["free_credits"] > 0 and without["free_credits"] == 0
     assert without["paid_resets"] == 3 * rules.reset
+
+
+def test_an_evaluation_past_its_time_limit_expires_and_is_bought_again():
+    rules = dataclasses.replace(RULES, combine_max_days=30)
+    days = pd.to_datetime(["2026-01-01", "2026-01-20", "2026-02-15"], utc=True)
+    t = pd.DataFrame({"net_pnl": [1000.0, 1000.0, 1000.0], "contracts": [1] * 3,
+                      "entry_ts": days, "exit_ts": days, "trading_date": days.date})
+    out = recycle(t, rules)
+    assert out["combine_busts"] == 1 and out["funded_earned"] == 0
+    assert recycle(t)["funded_earned"] == 1          # no limit: $3,000 passes
+
+
+def test_a_payout_buffer_pays_only_what_sits_above_it():
+    rules = dataclasses.replace(RULES, payout_buffer=3000.0, payout_cap=1500.0, winning_days_required=1)
+    out = recycle(seq([3000.0] + [3500.0]), rules, policy=Policy.IMMEDIATE)
+    assert out["gross_payout"] == 500.0               # 3,500 balance - 3,000 buffer
+
+
+def test_a_firm_ladder_caps_contracts_in_both_phases():
+    rules = dataclasses.replace(RULES, ladder=((1500.0, 2), (float("inf"), 4)))
+    # 10 contracts asked, 2 allowed: P&L scales to 20%
+    out = recycle(seq([-10000.0], contracts=10), rules)
+    assert out["combine_busts"] == 1                  # -2,000 after scaling still breaches
+    out2 = recycle(seq([-9000.0], contracts=10), rules)
+    assert out2["combine_busts"] == 0                 # -1,800 after scaling does not

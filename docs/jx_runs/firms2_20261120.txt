@@ -1,0 +1,4 @@
+Topstep 50K (reference)                    real net $   44,359 ($ 4,098/yr; withdrawn $61,440, spent $17,081, worst dip $-3,520, funded 52, payouts 44, eval busts 99) | coin-flip median $   18,046, profitable 98%
+TradeDay Fast Pass 50K, list $189/mo       real net $   22,158 ($ 2,047/yr; withdrawn $48,678, spent $26,520, worst dip $-10,035, funded 34, payouts 42, eval busts 82) | coin-flip median $   -4,213, profitable 31%
+TradeDay Fast Pass 50K, $85/mo with code   real net $   35,678 ($ 3,296/yr; withdrawn $48,678, spent $13,000, worst dip $-4,835, funded 34, payouts 42, eval busts 82) | coin-flip median $   14,035, profitable 96%
+Bulenox Momentum 50K Opt 2                 real net $   -4,139 ($  -382/yr; withdrawn $18,260, spent $22,399, worst dip $-10,840, funded 43, payouts 20, eval busts 99) | coin-flip median $  -14,622, profitable 0%

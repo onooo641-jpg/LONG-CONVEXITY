@@ -182,6 +182,19 @@ class XFARules:
     #: Topstep banks one free reset per monthly rebill. False = every reset is
     #: paid (firms that do not state a free reset).
     free_reset_per_rebill: bool = True
+    #: Evaluation must pass within this many calendar days of its first trade
+    #: or it expires and is bought again (Bulenox: 30). None = no time limit.
+    combine_max_days: int | None = None
+    #: Payout needs the winning-day count AND the consistency test (TradeDay
+    #: Fast Pass since 2026-07-26). False = consistency replaces winning days.
+    payout_needs_both: bool = False
+    #: Payout is whatever sits above this balance, up to the cap (Bulenox
+    #: Momentum keeps $3,000 in the account). None = payout_share of balance.
+    payout_buffer: float | None = None
+    #: Firm-specific contract ladder in micros, ((balance below, cap), ...),
+    #: top cap last as (inf, cap); used in BOTH phases when set. None = the
+    #: Topstep funded ladder and ``combine_max_contracts``.
+    ladder: tuple | None = None
 
     monthly: float = 49.0
     reset: float = 49.0
@@ -210,6 +223,8 @@ class _Account:
     reactivations: int = 0
     #: Payouts taken from this XFA.
     n_payouts: int = 0
+    #: Time of the first trade on this account (for combine_max_days).
+    opened: object = None
 
     def floor(self, limit: float, locks_at: float | None, lock_level: float = 0.0) -> float:
         """The balance at which this account is closed.
@@ -332,7 +347,19 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
     for at, (pnl, contracts, exit_ts) in enumerate(
             zip(trades["net_pnl"], trades["contracts"], trades["exit_ts"])):
         # The backtest sizes on risk alone; neither ceiling exists there.
-        if funded and rules.funded_scaling:
+        if not funded and rules.combine_max_days is not None:
+            if account.opened is None:
+                account.opened = exit_ts
+            elif (exit_ts - account.opened).total_seconds() > rules.combine_max_days * 86400:
+                combine_busts += 1
+                resets += 1
+                bust_streak += 1
+                worst_streak = max(worst_streak, bust_streak)
+                account = _Account(opened=exit_ts)
+                mark(exit_ts, "combine_expired", at)
+        if rules.ladder is not None:
+            cap = next(c for lim, c in rules.ladder if account.balance < lim)
+        elif funded and rules.funded_scaling:
             cap = scaling_tier(account.balance) * rules.scaling_mult
         else:
             cap = rules.combine_max_contracts
@@ -424,17 +451,22 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
             since = account.balance - (account.after_payout or 0.0)
             days_ok = (account.days_traded >= rules.consistency_days and since > 0
                        and account.best_day <= rules.consistency_target * since)
+            if rules.payout_needs_both:
+                days_ok = days_ok and account.winning_days >= rules.winning_days_required
         eligible = (days_ok
                     and account.balance > 0
                     and not (rules.profit_since_payout_required
                              and account.after_payout is not None
                              and account.balance <= account.after_payout)
                     and (locked or policy is Policy.IMMEDIATE))
-        if eligible and min(account.balance * rules.payout_share,
-                            rules.payout_cap) < rules.payout_min:
+        def _amount():
+            if rules.payout_buffer is not None:
+                return min(account.balance - rules.payout_buffer, rules.payout_cap)
+            return min(account.balance * rules.payout_share, rules.payout_cap)
+        if eligible and (_amount() < rules.payout_min or _amount() <= 0):
             eligible = False
         if eligible:
-            amount = min(account.balance * rules.payout_share, rules.payout_cap)
+            amount = _amount()
             # The balance falls; the high-water mark the limit trails does not.
             # That is what makes an early payout expensive.
             account.balance -= amount
