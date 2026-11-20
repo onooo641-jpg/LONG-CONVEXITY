@@ -64,3 +64,19 @@ ROI figures below are rough estimates, not measured.
    Mainly a benchmark for "safe" capital.
 6. **Free-entry trading competitions.** Zero cost, positive expected value, small prizes and not repeatable;
    only worth it if entry is free and automatable.
+
+### Research on the ideas above (2026-11-20 16:10, web sources, not tested)
+- **Liquidations:** Ethereum mainnet is crowded: about 1,900 liquidator addresses since 2021, the ten
+  busiest handled ~70% of 2026's cleared debt, and a traced Aave V3 liquidation paid 99.66% of the bonus
+  to the block builder (Bitquery; Aave governance forum). Smaller venues are less contested (Solana guides:
+  Drift ~2% bonus less contested than Save ~8%; smaller lenders reported to leave money on the table —
+  anecdotal). Test only small chains/protocols.
+- **Polymarket rewards/rebates:** daily liquidity rewards (most markets $1–$50/day), maker rebates of
+  20–25% of taker fees since 2026-03-30, Perps rewards $75K/day split across markets (Polymarket docs).
+  Bots dominate (823 bot accounts earned $131M as of 2026-04 per a KuCoin flash). A blog estimate puts
+  retail at $5–$30/day on $5K–$20K before adverse-selection losses. **Malaysia:** not on Polymarket's
+  block list, but legal status is a grey area under the Betting Act / Common Gaming Houses Act, with
+  2026 enforcement tightening (Singapore and Indonesia blocked it). Treat as legal risk.
+- **Airdrop farming:** very crowded; Lighter paid ~$675M in Dec 2025 and ~23 perp DEXs now run points
+  programs, but one cited Nansen analysis of 10 L2 airdrops puts the median net profit per address at $47
+  (mean $1,850, whale-skewed). Cost per point rises as a farm gets popular; the first month is the edge.
