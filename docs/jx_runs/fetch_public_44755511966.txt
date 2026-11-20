@@ -1,0 +1,142 @@
+=== liq_diag2
+  rpc exception eth_getLogs @ https://base.drpc.org: HTTP 400
+diag2 base base.drpc.org recent span 1000 topic-only: ERR https://base.drpc.org: HTTPError: HTTP 400
+diag2 base base.drpc.org recent span 5000 topic-only: ERR https://base.drpc.org: HTTPError: HTTP 400
+diag2 base base.drpc.org recent span 10000 topic-only: ERR https://base.drpc.org: HTTPError: HTTP 400
+diag2 base base.drpc.org 23mo_ago span 1000 topic-only: ERR https://base.drpc.org: HTTPError: HTTP 400
+diag2 base base.drpc.org 23mo_ago span 5000 topic-only: ERR https://base.drpc.org: HTTPError: HTTP 400
+diag2 base base.drpc.org 23mo_ago span 10000 topic-only: ERR https://base.drpc.org: HTTPError: HTTP 400
+  rpc error eth_getLogs @ https://1rpc.io/base: {'code': -32602, 'message': 'eth_getLogs is limited to 0 - 50 blocks range'}
+diag2 base 1rpc.io/base recent span 1000 topic-only: ERR https://1rpc.io/base: {'code': -32602, 'message': 'eth_getLogs is limited to 0 - 50 blocks range'}
+diag2 base 1rpc.io/base recent span 5000 topic-only: ERR https://1rpc.io/base: {'code': -32602, 'message': 'eth_getLogs is limited to 0 - 50 blocks range'}
+diag2 base 1rpc.io/base recent span 10000 topic-only: ERR https://1rpc.io/base: {'code': -32602, 'message': 'eth_getLogs is limited to 0 - 50 blocks range'}
+diag2 base 1rpc.io/base 23mo_ago span 1000 topic-only: ERR https://1rpc.io/base: {'code': -32602, 'message': 'eth_getLogs is limited to 0 - 50 blocks range'}
+diag2 base 1rpc.io/base 23mo_ago span 5000 topic-only: ERR https://1rpc.io/base: {'code': -32602, 'message': 'eth_getLogs is limited to 0 - 50 blocks range'}
+diag2 base 1rpc.io/base 23mo_ago span 10000 topic-only: ERR https://1rpc.io/base: {'code': -32602, 'message': 'eth_getLogs is limited to 0 - 50 blocks range'}
+  rpc exception eth_getLogs @ https://base.meowrpc.com: HTTP 429
+diag2 base base.meowrpc.com recent span 1000 topic-only: ERR https://base.meowrpc.com: HTTPError: HTTP 429
+diag2 base base.meowrpc.com recent span 5000 topic-only: ERR https://base.meowrpc.com: {'code': -32000, 'message': 'The method eth_getLogs is not supported.'}
+diag2 base base.meowrpc.com recent span 10000 topic-only: ERR https://base.meowrpc.com: {'code': -32000, 'message': 'The method eth_getLogs is not supported.'}
+diag2 base base.meowrpc.com 23mo_ago span 1000 topic-only: ERR https://base.meowrpc.com: {'code': -32000, 'message': 'The method eth_getLogs is not supported.'}
+diag2 base base.meowrpc.com 23mo_ago span 5000 topic-only: ERR https://base.meowrpc.com: {'code': -32000, 'message': 'The method eth_getLogs is not supported.'}
+diag2 base base.meowrpc.com 23mo_ago span 10000 topic-only: ERR https://base.meowrpc.com: {'code': -32000, 'message': 'The method eth_getLogs is not supported.'}
+diag2 base base.gateway.tenderly.co recent span 1000 topic-only: 0 logs
+  rpc error eth_getLogs @ https://base.gateway.tenderly.co: {'code': -32602, 'message': 'invalid params', 'data': 'Block range too large: maximum 1000 blocks without an access key. Try [0x391a39b, 0x391a783], or use an access key for larger ranges.'}
+diag2 base base.gateway.tenderly.co recent span 5000 topic-only: ERR https://base.gateway.tenderly.co: {'code': -32602, 'message': 'invalid params', 'data': 'Block range
+diag2 base base.gateway.tenderly.co recent span 10000 topic-only: ERR https://base.gateway.tenderly.co: {'code': -32602, 'message': 'invalid params', 'data': 'Block range
+diag2 base base.gateway.tenderly.co 23mo_ago span 1000 topic-only: 0 logs
+diag2 base base.gateway.tenderly.co 23mo_ago span 5000 topic-only: ERR https://base.gateway.tenderly.co: {'code': -32602, 'message': 'invalid params', 'data': 'Block range
+diag2 base base.gateway.tenderly.co 23mo_ago span 10000 topic-only: ERR https://base.gateway.tenderly.co: {'code': -32602, 'message': 'invalid params', 'data': 'Block range
+diag2 base base.api.pocket.network recent span 1000 topic-only: 0 logs
+diag2 base base.api.pocket.network recent span 5000 topic-only: 0 logs
+diag2 base base.api.pocket.network recent span 10000 topic-only: 0 logs
+diag2 base base.api.pocket.network 23mo_ago span 1000 topic-only: 0 logs
+diag2 base base.api.pocket.network 23mo_ago span 5000 topic-only: 0 logs
+  rpc error eth_getLogs @ https://base.api.pocket.network: {'code': -32602, 'message': 'invalid argument 0: block range exceeds maximum 500'}
+diag2 base base.api.pocket.network 23mo_ago span 10000 topic-only: ERR https://base.api.pocket.network: {'code': -32602, 'message': 'invalid argument 0: block range exceed
+  rpc exception eth_blockNumber @ https://base.blockpi.network/v1/rpc/public: HTTP 503
+diag2 base base.blockpi.network/v1/rpc/public: blockNumber FAIL https://base.blockpi.network/v1/rpc/public: HTTPError: HTTP 503
+  rpc exception eth_blockNumber @ https://developer-access-mainnet.base.org: URLError: <urlopen error [Errno -5] No address associated with hostname>
+diag2 base developer-access-mainnet.base.org: blockNumber FAIL https://developer-access-mainnet.base.org: URLError: <urlopen error [Errno -5] No address associated
+  rpc exception eth_getLogs @ https://polygon.drpc.org: HTTP 400
+diag2 polygon polygon.drpc.org recent span 1000 topic-only: ERR https://polygon.drpc.org: HTTPError: HTTP 400
+diag2 polygon polygon.drpc.org recent span 5000 topic-only: ERR https://polygon.drpc.org: HTTPError: HTTP 400
+diag2 polygon polygon.drpc.org recent span 10000 topic-only: ERR https://polygon.drpc.org: HTTPError: HTTP 400
+diag2 polygon polygon.drpc.org 23mo_ago span 1000 topic-only: ERR https://polygon.drpc.org: HTTPError: HTTP 400
+diag2 polygon polygon.drpc.org 23mo_ago span 5000 topic-only: ERR https://polygon.drpc.org: HTTPError: HTTP 400
+diag2 polygon polygon.drpc.org 23mo_ago span 10000 topic-only: ERR https://polygon.drpc.org: HTTPError: HTTP 400
+  rpc error eth_getLogs @ https://1rpc.io/matic: {'code': -32602, 'message': 'eth_getLogs is limited to 0 - 50 blocks range'}
+diag2 polygon 1rpc.io/matic recent span 1000 topic-only: ERR https://1rpc.io/matic: {'code': -32602, 'message': 'eth_getLogs is limited to 0 - 50 blocks range'}
+diag2 polygon 1rpc.io/matic recent span 5000 topic-only: ERR https://1rpc.io/matic: {'code': -32602, 'message': 'eth_getLogs is limited to 0 - 50 blocks range'}
+diag2 polygon 1rpc.io/matic recent span 10000 topic-only: ERR https://1rpc.io/matic: {'code': -32602, 'message': 'eth_getLogs is limited to 0 - 50 blocks range'}
+diag2 polygon 1rpc.io/matic 23mo_ago span 1000 topic-only: ERR https://1rpc.io/matic: {'code': -32602, 'message': 'eth_getLogs is limited to 0 - 50 blocks range'}
+diag2 polygon 1rpc.io/matic 23mo_ago span 5000 topic-only: ERR https://1rpc.io/matic: {'code': -32602, 'message': 'eth_getLogs is limited to 0 - 50 blocks range'}
+diag2 polygon 1rpc.io/matic 23mo_ago span 10000 topic-only: ERR https://1rpc.io/matic: {'code': -32602, 'message': 'eth_getLogs is limited to 0 - 50 blocks range'}
+  rpc exception eth_blockNumber @ https://polygon.meowrpc.com: URLError: <urlopen error [Errno -2] Name or service not known>
+diag2 polygon polygon.meowrpc.com: blockNumber FAIL https://polygon.meowrpc.com: URLError: <urlopen error [Errno -2] Name or service not known>
+diag2 polygon poly.api.pocket.network recent span 1000 topic-only: 0 logs
+diag2 polygon poly.api.pocket.network recent span 5000 topic-only: 0 logs
+diag2 polygon poly.api.pocket.network recent span 10000 topic-only: 0 logs
+diag2 polygon poly.api.pocket.network 23mo_ago span 1000 topic-only: 1 logs
+diag2 polygon poly.api.pocket.network 23mo_ago span 5000 topic-only: 12 logs
+diag2 polygon poly.api.pocket.network 23mo_ago span 10000 topic-only: 14 logs
+diag2 polygon polygon.gateway.tenderly.co recent span 1000 topic-only: 0 logs
+diag2 polygon polygon.gateway.tenderly.co recent span 5000 topic-only: 0 logs
+diag2 polygon polygon.gateway.tenderly.co recent span 10000 topic-only: 0 logs
+diag2 polygon polygon.gateway.tenderly.co 23mo_ago span 1000 topic-only: 1 logs
+diag2 polygon polygon.gateway.tenderly.co 23mo_ago span 5000 topic-only: 12 logs
+diag2 polygon polygon.gateway.tenderly.co 23mo_ago span 10000 topic-only: 14 logs
+  rpc exception eth_blockNumber @ https://polygon.llamarpc.com: URLError: <urlopen error [Errno -2] Name or service not known>
+diag2 polygon polygon.llamarpc.com: blockNumber FAIL https://polygon.llamarpc.com: URLError: <urlopen error [Errno -2] Name or service not known>
+  rpc error eth_getLogs @ https://polygon-bor-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address in your request or, to remove restrictions, order a dedicated full node here: https://www.allnodes.com/pol/host'}
+diag2 polygon polygon-bor-rpc.publicnode.com recent span 1000 topic-only: ERR https://polygon-bor-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address in yo
+diag2 polygon polygon-bor-rpc.publicnode.com recent span 5000 topic-only: ERR https://polygon-bor-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address in yo
+diag2 polygon polygon-bor-rpc.publicnode.com recent span 10000 topic-only: ERR https://polygon-bor-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address in yo
+diag2 polygon polygon-bor-rpc.publicnode.com 23mo_ago span 1000 topic-only: ERR https://polygon-bor-rpc.publicnode.com: HTTPError: HTTP 403
+diag2 polygon polygon-bor-rpc.publicnode.com 23mo_ago span 5000 topic-only: ERR https://polygon-bor-rpc.publicnode.com: HTTPError: HTTP 403
+diag2 polygon polygon-bor-rpc.publicnode.com 23mo_ago span 10000 topic-only: ERR https://polygon-bor-rpc.publicnode.com: HTTPError: HTTP 403
+  rpc exception eth_getLogs @ https://bsc.drpc.org: HTTP 400
+diag2 bnb bsc.drpc.org recent span 1000 topic-only: ERR https://bsc.drpc.org: HTTPError: HTTP 400
+diag2 bnb bsc.drpc.org recent span 5000 topic-only: ERR https://bsc.drpc.org: HTTPError: HTTP 400
+diag2 bnb bsc.drpc.org recent span 10000 topic-only: ERR https://bsc.drpc.org: HTTPError: HTTP 400
+diag2 bnb bsc.drpc.org 23mo_ago span 1000 topic-only: ERR https://bsc.drpc.org: HTTPError: HTTP 400
+diag2 bnb bsc.drpc.org 23mo_ago span 5000 topic-only: ERR https://bsc.drpc.org: HTTPError: HTTP 400
+diag2 bnb bsc.drpc.org 23mo_ago span 10000 topic-only: ERR https://bsc.drpc.org: HTTPError: HTTP 400
+  rpc error eth_getLogs @ https://1rpc.io/bnb: {'code': -32602, 'message': 'eth_getLogs is limited to 0 - 50 blocks range'}
+diag2 bnb 1rpc.io/bnb recent span 1000 topic-only: ERR https://1rpc.io/bnb: {'code': -32602, 'message': 'eth_getLogs is limited to 0 - 50 blocks range'}
+diag2 bnb 1rpc.io/bnb recent span 5000 topic-only: ERR https://1rpc.io/bnb: {'code': -32602, 'message': 'eth_getLogs is limited to 0 - 50 blocks range'}
+diag2 bnb 1rpc.io/bnb recent span 10000 topic-only: ERR https://1rpc.io/bnb: {'code': -32602, 'message': 'eth_getLogs is limited to 0 - 50 blocks range'}
+diag2 bnb 1rpc.io/bnb 23mo_ago span 1000 topic-only: ERR https://1rpc.io/bnb: {'code': -32005, 'message': 'limit exceeded'}
+diag2 bnb 1rpc.io/bnb 23mo_ago span 5000 topic-only: ERR https://1rpc.io/bnb: {'code': -32005, 'message': 'limit exceeded'}
+diag2 bnb 1rpc.io/bnb 23mo_ago span 10000 topic-only: ERR https://1rpc.io/bnb: HTTPError: HTTP 429
+  rpc exception eth_getLogs @ https://bsc.meowrpc.com: HTTP 429
+diag2 bnb bsc.meowrpc.com recent span 1000 topic-only: ERR https://bsc.meowrpc.com: HTTPError: HTTP 429
+diag2 bnb bsc.meowrpc.com recent span 5000 topic-only: ERR https://bsc.meowrpc.com: {'code': -32000, 'message': 'The method eth_getLogs is not supported.'}
+diag2 bnb bsc.meowrpc.com recent span 10000 topic-only: ERR https://bsc.meowrpc.com: {'code': -32000, 'message': 'The method eth_getLogs is not supported.'}
+diag2 bnb bsc.meowrpc.com 23mo_ago span 1000 topic-only: ERR https://bsc.meowrpc.com: {'code': -32000, 'message': 'The method eth_getLogs is not supported.'}
+diag2 bnb bsc.meowrpc.com 23mo_ago span 5000 topic-only: ERR https://bsc.meowrpc.com: {'code': -32000, 'message': 'The method eth_getLogs is not supported.'}
+diag2 bnb bsc.meowrpc.com 23mo_ago span 10000 topic-only: ERR https://bsc.meowrpc.com: {'code': -32000, 'message': 'The method eth_getLogs is not supported.'}
+  rpc error eth_getLogs @ https://bsc-dataseed1.defibit.io: {'code': -32005, 'message': 'limit exceeded'}
+diag2 bnb bsc-dataseed1.defibit.io recent span 1000 topic-only: ERR https://bsc-dataseed1.defibit.io: {'code': -32005, 'message': 'limit exceeded'}
+diag2 bnb bsc-dataseed1.defibit.io recent span 5000 topic-only: ERR https://bsc-dataseed1.defibit.io: {'code': -32005, 'message': 'limit exceeded'}
+diag2 bnb bsc-dataseed1.defibit.io recent span 10000 topic-only: ERR https://bsc-dataseed1.defibit.io: {'code': -32005, 'message': 'limit exceeded'}
+diag2 bnb bsc-dataseed1.defibit.io 23mo_ago span 1000 topic-only: ERR https://bsc-dataseed1.defibit.io: {'code': -32005, 'message': 'limit exceeded'}
+diag2 bnb bsc-dataseed1.defibit.io 23mo_ago span 5000 topic-only: ERR https://bsc-dataseed1.defibit.io: {'code': -32005, 'message': 'limit exceeded'}
+diag2 bnb bsc-dataseed1.defibit.io 23mo_ago span 10000 topic-only: ERR https://bsc-dataseed1.defibit.io: {'code': -32005, 'message': 'limit exceeded'}
+  rpc error eth_getLogs @ https://bsc-dataseed1.ninicoin.io: {'code': -32005, 'message': 'limit exceeded'}
+diag2 bnb bsc-dataseed1.ninicoin.io recent span 1000 topic-only: ERR https://bsc-dataseed1.ninicoin.io: {'code': -32005, 'message': 'limit exceeded'}
+diag2 bnb bsc-dataseed1.ninicoin.io recent span 5000 topic-only: ERR https://bsc-dataseed1.ninicoin.io: {'code': -32005, 'message': 'limit exceeded'}
+diag2 bnb bsc-dataseed1.ninicoin.io recent span 10000 topic-only: ERR https://bsc-dataseed1.ninicoin.io: {'code': -32005, 'message': 'limit exceeded'}
+diag2 bnb bsc-dataseed1.ninicoin.io 23mo_ago span 1000 topic-only: ERR https://bsc-dataseed1.ninicoin.io: {'code': -32005, 'message': 'limit exceeded'}
+diag2 bnb bsc-dataseed1.ninicoin.io 23mo_ago span 5000 topic-only: ERR https://bsc-dataseed1.ninicoin.io: {'code': -32005, 'message': 'limit exceeded'}
+diag2 bnb bsc-dataseed1.ninicoin.io 23mo_ago span 10000 topic-only: ERR https://bsc-dataseed1.ninicoin.io: {'code': -32005, 'message': 'limit exceeded'}
+  rpc exception eth_blockNumber @ https://binance.llamarpc.com: URLError: <urlopen error [Errno -2] Name or service not known>
+diag2 bnb binance.llamarpc.com: blockNumber FAIL https://binance.llamarpc.com: URLError: <urlopen error [Errno -2] Name or service not known>
+diag2 bnb bsc.api.pocket.network recent span 1000 topic-only: 3 logs
+diag2 bnb bsc.api.pocket.network recent span 5000 topic-only: 3 logs
+  rpc exception eth_getLogs @ https://bsc.api.pocket.network: HTTP 400
+diag2 bnb bsc.api.pocket.network recent span 10000 topic-only: ERR https://bsc.api.pocket.network: HTTPError: HTTP 400
+diag2 bnb bsc.api.pocket.network 23mo_ago span 1000 topic-only: ERR https://bsc.api.pocket.network: {'code': -32602, 'message': 'invalid argument 0: hex string without 
+diag2 bnb bsc.api.pocket.network 23mo_ago span 5000 topic-only: ERR https://bsc.api.pocket.network: {'code': -32602, 'message': 'invalid argument 0: hex string without 
+diag2 bnb bsc.api.pocket.network 23mo_ago span 10000 topic-only: ERR https://bsc.api.pocket.network: {'code': -32602, 'message': 'invalid argument 0: hex string without 
+  rpc exception eth_getLogs @ https://avalanche.drpc.org: HTTP 400
+diag2 avalanche avalanche.drpc.org recent span 1000 topic-only: ERR https://avalanche.drpc.org: HTTPError: HTTP 400
+diag2 avalanche avalanche.drpc.org recent span 5000 topic-only: ERR https://avalanche.drpc.org: HTTPError: HTTP 400
+diag2 avalanche avalanche.drpc.org recent span 10000 topic-only: ERR https://avalanche.drpc.org: HTTPError: HTTP 400
+diag2 avalanche avalanche.drpc.org 23mo_ago span 1000 topic-only: ERR https://avalanche.drpc.org: HTTPError: HTTP 400
+diag2 avalanche avalanche.drpc.org 23mo_ago span 5000 topic-only: ERR https://avalanche.drpc.org: HTTPError: HTTP 400
+diag2 avalanche avalanche.drpc.org 23mo_ago span 10000 topic-only: ERR https://avalanche.drpc.org: HTTPError: HTTP 400
+  rpc error eth_getLogs @ https://1rpc.io/avax/c: {'code': -32602, 'message': 'eth_getLogs is limited to 0 - 50 blocks range'}
+diag2 avalanche 1rpc.io/avax/c recent span 1000 topic-only: ERR https://1rpc.io/avax/c: {'code': -32602, 'message': 'eth_getLogs is limited to 0 - 50 blocks range'}
+diag2 avalanche 1rpc.io/avax/c recent span 5000 topic-only: ERR https://1rpc.io/avax/c: {'code': -32602, 'message': 'eth_getLogs is limited to 0 - 50 blocks range'}
+diag2 avalanche 1rpc.io/avax/c recent span 10000 topic-only: ERR https://1rpc.io/avax/c: {'code': -32602, 'message': 'eth_getLogs is limited to 0 - 50 blocks range'}
+diag2 avalanche 1rpc.io/avax/c 23mo_ago span 1000 topic-only: ERR https://1rpc.io/avax/c: {'code': -32602, 'message': 'eth_getLogs is limited to 0 - 50 blocks range'}
+diag2 avalanche 1rpc.io/avax/c 23mo_ago span 5000 topic-only: ERR https://1rpc.io/avax/c: {'code': -32602, 'message': 'eth_getLogs is limited to 0 - 50 blocks range'}
+diag2 avalanche 1rpc.io/avax/c 23mo_ago span 10000 topic-only: ERR https://1rpc.io/avax/c: {'code': -32602, 'message': 'eth_getLogs is limited to 0 - 50 blocks range'}
+  rpc exception eth_blockNumber @ https://avalanche.public-rpc.com: HTTP 403
+diag2 avalanche avalanche.public-rpc.com: blockNumber FAIL https://avalanche.public-rpc.com: HTTPError: HTTP 403
+  rpc exception eth_blockNumber @ https://avax.meowrpc.com: URLError: <urlopen error [Errno -2] Name or service not known>
+diag2 avalanche avax.meowrpc.com: blockNumber FAIL https://avax.meowrpc.com: URLError: <urlopen error [Errno -2] Name or service not known>
+  rpc exception eth_blockNumber @ https://avalanche.api.pocket.network: HTTP 404
+diag2 avalanche avalanche.api.pocket.network: blockNumber FAIL https://avalanche.api.pocket.network: HTTPError: HTTP 404
+=== liq_diag2 done in 318s  ok 39 fail 55
