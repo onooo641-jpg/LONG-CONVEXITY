@@ -1,0 +1,3 @@
+=== liq_prices_avalanche
+avalanche: prices 17435 points, 24/25 coins priced
+=== liq_prices_avalanche done in 50s  ok 72 fail 0
