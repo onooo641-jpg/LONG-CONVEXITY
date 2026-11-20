@@ -59,3 +59,20 @@ Ranking, no pass/fail. A product **"beats Topstep"** only if both its real net
 full rules read and a support question before any purchase.
 
 Command: `uv run python scripts/round3_20261120.py`
+
+## Results (2026-11-20, `docs/jx_runs/round3_20261120.txt`)
+| product | risk | real net 2016–26 | coin-flip median (profitable) | worst dip | trades over contract cap |
+|---|---|---|---|---|---|
+| Topstep 50K (reference) | $900 | **$44,359** | **$18,046 (98%)** | −$3,520 | 25% |
+| MFFU Rapid EOD 50K | $900 | $34,481 | $7,358 (74%) | −$5,590 | 43% |
+| TFD Static Pro | $1,050 | $20,248 | $3,274 (71%) | −$3,667 | 49% |
+| TFD Static Core | $700 | $10,680 | −$1,163 (38%) | −$3,226 | 49% |
+| TFD Core, payouts to floor (sensitivity) | $700 | $18,253 | $3,068 (74%) | −$3,226 | 49% |
+
+**Nothing beats Topstep.** Why:
+- **MFFU:** uncapped payouts above a $2,100 buffer are generous, but there is no free
+  reset (every evaluation bust costs $157; 96 busts) and the 30-micro cap trims 43% of trades.
+- **TFD:** static floors help, but the daily limit forces smaller risk, the 20/30-micro
+  caps trim half the trades, the 80% split, and the $4,000/$6,000 targets are harder.
+- MFFU's $34.5K is similar to Lucid's $37.5K (#36). It is an extra slot that could run
+  **alongside** Topstep (a separate firm), not a replacement. Worst dip is larger (−$5,590).

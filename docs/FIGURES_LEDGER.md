@@ -245,4 +245,13 @@ day at every size.
 | G5 | NQ trade leverage on 50K at $950 risk: median / p10 / p90 | 13.3x / 5.5x / 29.4x | inline check in session (micros × entry × $2 / 50K) | 2016–26 | 2026-11-20 | current |
 | G6 | Tradeify Lightning 50K real net, cap $2,000 / $1,500 | $40,998 / $20,196 | same as G3 | 2016–26 | 2026-11-20 | cap unverified |
 
+## Round 3 futures firms (docs/PREREG_ROUND3_20261120.md, pre-registered 486c51f)
+
+| # | figure | value | command | window | computed | status |
+|---|---|---|---|---|---|---|
+| R1 | real net: Topstep 50K / MFFU Rapid EOD 50K / TFD Static Core / TFD Static Pro | $44,359 / $34,481 / $10,680 / $20,248 | `uv run python scripts/round3_20261120.py` | 2016–26 | 2026-11-20 | MFFU funded rules official; prices third-party; TFD from its own plans page |
+| R2 | coin-flip median, same order (share profitable) | $18,046 (98%) / $7,358 (74%) / −$1,163 (38%) / $3,274 (71%) | same | 2016–26 | 2026-11-20 | same |
+| R3 | worst dip, same order | −$3,520 / −$5,590 / −$3,226 / −$3,667 | same | 2016–26 | 2026-11-20 | same |
+| R4 | TFD Core if payouts may go down to the floor (unconfirmed reading) | $18,253 real / $3,068 coin flip | same | 2016–26 | 2026-11-20 | upper bound only |
+
 Raw output for every command above is in `docs/jx_runs/`.

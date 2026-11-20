@@ -90,6 +90,7 @@ risk, 5m signals and 1m fills.
 | 53 | FTMO verification + FTMO Futures Growth/Pro vs Topstep 50K | `docs/PREREG_FTMO_FUTURES_20261120.md`. Ranking. | FTMO Futures Growth $34K / Pro $28K vs Topstep $44K (Growth $48K if renewal resets are free); coin flip ~$0-2K vs $18K; no structural edge | PREREG_FTMO_FUTURES |
 | 54 | TradeDay Fast Pass / Bulenox Momentum vs Topstep (ETF, FXIFY Futures excluded: no bots) | `docs/PREREG_FIRMS2_20261120.md`. Ranking. | TradeDay $85/mo: $35.7K real, $14.0K coin flip (closest to Topstep $44.4K/$18.0K); list price $22K; Bulenox Momentum -$4K | PREREG_FIRMS2 |
 | 55 | global round 1: Breakout static 1-Step 50K; Tradeify Lightning 50K | `docs/PREREG_GLOBAL_20261120.md`. Ranking. | Breakout/Kraken Prop Classic 50K at 10x: $38-57K real, $11-25K coin flip = Topstep-level; Lightning $20-41K (cap-dependent) | PREREG_GLOBAL |
+| 56 | round 3: MFFU Rapid EOD 50K; TFD Static Core/Pro (Apex unresolved; Phidias, E2T, TPT, Top One, Blue Guardian, Alpha, FFF banned; HyroTrader crypto-only) | `docs/PREREG_ROUND3_20261120.md`. Ranking. | none beats Topstep: MFFU $34.5K real / $7.4K coin flip; TFD Pro $20.2K / $3.3K; TFD Core $10.7K / −$1.2K. MFFU usable only as an extra slot alongside Topstep | PREREG_ROUND3 results |
 
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
