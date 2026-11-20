@@ -21,3 +21,8 @@ optimism: log scan complete, 32801 events
 optimism: receipts: 0 cached, 25796 to fetch (sampled=False)
   rpc exception eth_getTransactionReceipt @ https://mainnet.optimism.io: HTTP 429
   optimism: receipts 1460/25796 (16 min)
+  optimism: receipts 2920/25796 (20 min)
+  optimism: receipts 4370/25796 (25 min)
+  optimism: receipts 5820/25796 (30 min)
+  optimism: receipts 7270/25796 (35 min)
+  optimism: receipts 8720/25796 (40 min)
