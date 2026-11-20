@@ -1,2 +1,2 @@
-# chains for .github/workflows/fetch_liq.yml. Resumable. (run 11: base resume 46%)
+# chains for .github/workflows/fetch_liq.yml. Resumable. (run 12: base resume)
 base
