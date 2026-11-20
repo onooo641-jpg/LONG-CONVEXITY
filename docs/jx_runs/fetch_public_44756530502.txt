@@ -1,0 +1,45 @@
+=== liq_diag3
+  rpc exception eth_blockNumber @ https://bsc.gateway.tenderly.co: HTTP 404
+diag2 bnb3 bsc.gateway.tenderly.co: blockNumber FAIL https://bsc.gateway.tenderly.co: HTTPError: HTTP 404
+  rpc exception eth_blockNumber @ https://bnb.api.onfinality.io/public: HTTP 429
+diag2 bnb3 bnb.api.onfinality.io/public: blockNumber FAIL https://bnb.api.onfinality.io/public: HTTPError: HTTP 429
+  rpc exception eth_blockNumber @ https://endpoints.omniatech.io/v1/bsc/mainnet/public: HTTP 521
+diag2 bnb3 endpoints.omniatech.io/v1/bsc/mainnet/pu: blockNumber FAIL https://endpoints.omniatech.io/v1/bsc/mainnet/public: HTTPError: HTTP 521
+  rpc exception eth_getLogs @ https://bsc.rpc.blxrbdn.com: HTTP 403
+diag2 bnb3 bsc.rpc.blxrbdn.com recent span 1000 topic-only: ERR https://bsc.rpc.blxrbdn.com: HTTPError: HTTP 403
+diag2 bnb3 bsc.rpc.blxrbdn.com recent span 5000 topic-only: ERR https://bsc.rpc.blxrbdn.com: HTTPError: HTTP 403
+diag2 bnb3 bsc.rpc.blxrbdn.com recent span 10000 topic-only: ERR https://bsc.rpc.blxrbdn.com: HTTPError: HTTP 403
+diag2 bnb3 bsc.rpc.blxrbdn.com 23mo_ago span 1000 topic-only: ERR https://bsc.rpc.blxrbdn.com: HTTPError: HTTP 403
+diag2 bnb3 bsc.rpc.blxrbdn.com 23mo_ago span 5000 topic-only: ERR https://bsc.rpc.blxrbdn.com: HTTPError: HTTP 403
+diag2 bnb3 bsc.rpc.blxrbdn.com 23mo_ago span 10000 topic-only: ERR https://bsc.rpc.blxrbdn.com: HTTPError: HTTP 403
+  rpc exception eth_blockNumber @ https://bsc-mainnet.rpc.grove.city/v1/01fdb492: URLError: <urlopen error [Errno -2] Name or service not known>
+diag2 bnb3 bsc-mainnet.rpc.grove.city/v1/01fdb492: blockNumber FAIL https://bsc-mainnet.rpc.grove.city/v1/01fdb492: URLError: <urlopen error [Errno -2] Name or service 
+  rpc exception eth_getLogs @ https://api.zan.top/bsc-mainnet: HTTP 403
+diag2 bnb3 api.zan.top/bsc-mainnet recent span 1000 topic-only: ERR https://api.zan.top/bsc-mainnet: HTTPError: HTTP 403
+diag2 bnb3 api.zan.top/bsc-mainnet recent span 5000 topic-only: ERR https://api.zan.top/bsc-mainnet: HTTPError: HTTP 403
+diag2 bnb3 api.zan.top/bsc-mainnet recent span 10000 topic-only: ERR https://api.zan.top/bsc-mainnet: HTTPError: HTTP 403
+diag2 bnb3 api.zan.top/bsc-mainnet 23mo_ago span 1000 topic-only: ERR https://api.zan.top/bsc-mainnet: HTTPError: HTTP 403
+diag2 bnb3 api.zan.top/bsc-mainnet 23mo_ago span 5000 topic-only: ERR https://api.zan.top/bsc-mainnet: HTTPError: HTTP 403
+diag2 bnb3 api.zan.top/bsc-mainnet 23mo_ago span 10000 topic-only: ERR https://api.zan.top/bsc-mainnet: HTTPError: HTTP 403
+  rpc exception eth_blockNumber @ https://bsc-pokt.nodies.app: HTTP 403
+diag2 bnb3 bsc-pokt.nodies.app: blockNumber FAIL https://bsc-pokt.nodies.app: HTTPError: HTTP 403
+diag2 avalanche3 avalanche.gateway.tenderly.co recent span 1000 topic-only: 0 logs
+diag2 avalanche3 avalanche.gateway.tenderly.co recent span 5000 topic-only: 0 logs
+diag2 avalanche3 avalanche.gateway.tenderly.co recent span 10000 topic-only: 0 logs
+diag2 avalanche3 avalanche.gateway.tenderly.co 23mo_ago span 1000 topic-only: 0 logs
+diag2 avalanche3 avalanche.gateway.tenderly.co 23mo_ago span 5000 topic-only: 0 logs
+diag2 avalanche3 avalanche.gateway.tenderly.co 23mo_ago span 10000 topic-only: 0 logs
+  rpc exception eth_blockNumber @ https://avax.api.onfinality.io/public/ext/bc/C/rpc: URLError: <urlopen error [Errno -2] Name or service not known>
+diag2 avalanche3 avax.api.onfinality.io/public/ext/bc/C/r: blockNumber FAIL https://avax.api.onfinality.io/public/ext/bc/C/rpc: URLError: <urlopen error [Errno -2] Name or serv
+  rpc exception eth_blockNumber @ https://endpoints.omniatech.io/v1/avax/mainnet/public: HTTP 521
+diag2 avalanche3 endpoints.omniatech.io/v1/avax/mainnet/p: blockNumber FAIL https://endpoints.omniatech.io/v1/avax/mainnet/public: HTTPError: HTTP 521
+  rpc exception eth_getLogs @ https://api.zan.top/avax-mainnet/ext/bc/C/rpc: HTTP 403
+diag2 avalanche3 api.zan.top/avax-mainnet/ext/bc/C/rpc recent span 1000 topic-only: ERR https://api.zan.top/avax-mainnet/ext/bc/C/rpc: HTTPError: HTTP 403
+diag2 avalanche3 api.zan.top/avax-mainnet/ext/bc/C/rpc recent span 5000 topic-only: ERR https://api.zan.top/avax-mainnet/ext/bc/C/rpc: HTTPError: HTTP 403
+diag2 avalanche3 api.zan.top/avax-mainnet/ext/bc/C/rpc recent span 10000 topic-only: ERR https://api.zan.top/avax-mainnet/ext/bc/C/rpc: HTTPError: HTTP 403
+diag2 avalanche3 api.zan.top/avax-mainnet/ext/bc/C/rpc 23mo_ago span 1000 topic-only: ERR https://api.zan.top/avax-mainnet/ext/bc/C/rpc: HTTPError: HTTP 403
+diag2 avalanche3 api.zan.top/avax-mainnet/ext/bc/C/rpc 23mo_ago span 5000 topic-only: ERR https://api.zan.top/avax-mainnet/ext/bc/C/rpc: HTTPError: HTTP 429
+diag2 avalanche3 api.zan.top/avax-mainnet/ext/bc/C/rpc 23mo_ago span 10000 topic-only: ERR https://api.zan.top/avax-mainnet/ext/bc/C/rpc: HTTPError: HTTP 429
+  rpc exception eth_blockNumber @ https://avax-pokt.nodies.app/ext/bc/C/rpc: HTTP 403
+diag2 avalanche3 avax-pokt.nodies.app/ext/bc/C/rpc: blockNumber FAIL https://avax-pokt.nodies.app/ext/bc/C/rpc: HTTPError: HTTP 403
+=== liq_diag3 done in 128s  ok 10 fail 26
