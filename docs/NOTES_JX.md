@@ -562,12 +562,30 @@ way to scale it is more firm slots running the same trades, not a different stra
 - **Topstep: confirmed.** Bots via TopstepX API (powered by ProjectX, billed separately);
   built-in TopstepX Trade Copier for Combines and XFAs (not Live); up to 5 XFAs and $750K
   buying power through a copier (help-centre text quoted by third parties).
-- **Lucid: confirmed.** Lucid help centre "Permitted Activities": automated trading systems and
-  trade copiers are permitted; HFT banned. Lucid runs on ProjectX, and one ProjectX API
-  subscription covers all firms on ProjectX, so the friend's TopstepX bot code should
-  connect to Lucid with little change (not yet tested). Max 5 funded per household.
+- **Lucid: automation confirmed.** Lucid help centre "Permitted Activities": automated trading
+  systems and trade copiers are permitted; HFT banned. Max 5 funded per household.
+  CORRECTION (13:45): Lucid is **not** on ProjectX any more. ProjectX ended third-party
+  service on 2026-02-28 and now runs only as TopstepX; Lucid lists CQG (Tradovate,
+  NinjaTrader, TradingView) and Rithmic platforms. The TopstepX bot does not connect as is.
 - **MFFU: confirmed with one porting cost.** Fair Play page allows automated strategies;
   copying between your own accounts allowed (third-party). Platforms: Tradovate,
   NinjaTrader, TradingView, Quantower; no ProjectX (HyperProp "coming soon" as of Aug 2026),
   so the bot needs a Tradovate-API version. Rapid EOD is still sold on MFFU's plan page
   (read 2026-11-20): one-time fee, $162 shown, $97 with current promotion; no end date.
+
+## How the bot can reach Lucid and MFFU (2026-11-20 13:45)
+Both firms run on Tradovate. Tradovate's own API is closed to prop and evaluation accounts
+(Tradovate API Access article, as summarised by CrossTrade), so the bot cannot log in directly.
+Routes, cheapest change first:
+1. **CrossTrade Pro ($49/mo, unlimited accounts):** partner-level OAuth link to Tradovate with a
+   REST trading API that reaches linked prop accounts. Keep the Python engine; replace only the
+   order adapter (`bridge/topstepx.py` → a CrossTrade adapter). Bars can keep coming from TopstepX.
+2. TradingView strategy alerts → webhook router (PickMyTrade $50/mo or TradersPost $49+), using the
+   repo's Pine strategy. Needs TradingView Essential ($14.95/mo; alerts expire after 2 months)
+   or Premium ($69.95/mo, open-ended). Pine-vs-Python signal parity is untested.
+3. NinjaTrader strategy (C# port) on the friend's PC: no monthly router, biggest rewrite.
+Cost effect on PREREG_PORTFOLIO B− (Topstep + Lucid + MFFU): the model charged $30/mo for
+API access; route 1 at $49/mo lowers 2016–26 net by ~$2.5K (to ~$113.9K, ~$10.5K/yr).
+C− (max slots) is unchanged or slightly better (model charged $120/mo across 8 accounts).
+Topstep's rule that trading must originate from the trader's personal device applies to Topstep;
+Lucid/MFFU cloud routing is their own call, so check each firm's device/VPS rule before going live.
