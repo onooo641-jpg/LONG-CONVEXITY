@@ -1,0 +1,11 @@
+=== liq_optimism
+optimism: month anchors 127410212..158946212, resume at block 127410212
+  optimism: scanned to block 128710212/158946211 (5662 events, 3 min)
+  optimism: scanned to block 130050212/158946211 (6792 events, 3 min)
+  optimism: scanned to block 131390212/158946211 (7533 events, 4 min)
+  optimism: scanned to block 132600212/158946211 (10397 events, 5 min)
+  optimism: scanned to block 133935212/158946211 (18488 events, 5 min)
+  optimism: scanned to block 135235212/158946211 (20712 events, 6 min)
+  optimism: scanned to block 136575212/158946211 (21264 events, 6 min)
+liq_optimism: crashed IndexError: list index out of range
+=== liq_optimism done in 415s  ok 1646 fail 0
