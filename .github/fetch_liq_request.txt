@@ -1,2 +1,2 @@
-# chains for .github/workflows/fetch_liq.yml. Resumable. (run 7: scroll receipt repair)
-scroll
+# chains for .github/workflows/fetch_liq.yml. Resumable. (run 8: optimism receipt repair)
+optimism
