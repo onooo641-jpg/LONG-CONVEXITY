@@ -1,0 +1,23 @@
+=== liq_scroll
+scroll: month anchors 10704234..35562631, resume at block 10704234
+  scroll: scanned to block 11964234/35562630 (217 events, 1 min)
+  scroll: scanned to block 13244234/35562630 (812 events, 1 min)
+  scroll: scanned to block 14524234/35562630 (7834 events, 1 min)
+  scroll: scanned to block 15164234/35562630 (7897 events, 1 min)
+  scroll: scanned to block 16444234/35562630 (7985 events, 1 min)
+  scroll: scanned to block 17724234/35562630 (8121 events, 1 min)
+  scroll: scanned to block 19004234/35562630 (8166 events, 1 min)
+  scroll: scanned to block 21564234/35562630 (8254 events, 1 min)
+  scroll: scanned to block 22844234/35562630 (8836 events, 1 min)
+  scroll: scanned to block 25404234/35562630 (9154 events, 1 min)
+  scroll: scanned to block 26684234/35562630 (9200 events, 1 min)
+  scroll: scanned to block 27964234/35562630 (9276 events, 1 min)
+  scroll: scanned to block 29244234/35562630 (9397 events, 1 min)
+  scroll: scanned to block 31804234/35562630 (9556 events, 1 min)
+  scroll: scanned to block 33084234/35562630 (9603 events, 1 min)
+  scroll: scanned to block 34364234/35562630 (9873 events, 1 min)
+  scroll: scanned to block 35562631/35562630 (10762 events, 1 min)
+scroll: log scan complete, 10762 events
+scroll: receipts: 0 cached, 5205 to fetch (sampled=False)
+  rpc exception eth_getTransactionReceipt @ https://rpc.scroll.io: HTTP 429
+  scroll: receipts 1394/5205 (7 min)
