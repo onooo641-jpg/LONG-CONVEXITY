@@ -1,0 +1,10 @@
+=== liq_polygon
+polygon: marked complete by older code without a receipt check; re-checking receipts
+polygon: month anchors 63732941..96523829, resume at block 96523829
+polygon: receipts: 10638 cached, 14095 to fetch (sampled=True)
+  rpc exception eth_getTransactionReceipt @ https://poly.api.pocket.network: HTTP 429
+  polygon: receipts 11320/24733 (5 min)
+  polygon: receipts 11905/24733 (9 min)
+  polygon: receipts 12481/24733 (13 min)
+  polygon: receipts 13105/24733 (18 min)
+  rpc exception eth_getTransactionReceipt @ https://polygon.gateway.tenderly.co: HTTP 429
