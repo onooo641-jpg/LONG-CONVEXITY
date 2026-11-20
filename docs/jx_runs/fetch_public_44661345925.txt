@@ -1,0 +1,44 @@
+=== ipo
+  FAIL https://www.bursamalaysia.com/listing/listing_resources/ipo/ipo_summary?year=2024 -> HTTP 403
+  FAIL https://www.bursamalaysia.com/listing/listing_resources/ipo/ipo_summary?year=2025 -> HTTP 403
+  FAIL https://www.bursamalaysia.com/listing/listing_resources/ipo/ipo_summary?year=2026 -> HTTP 403
+ipo: no Bursa tables
+=== ipo done in 0s  ok 0 fail 3
+=== myxsnap
+  FAIL https://query1.finance.yahoo.com/v8/finance/chart/MYR=X?range=1d&interval=1m -> HTTP 429
+  FAIL https://api.tokenize.exchange/public/v1/market/get-summaries -> URLError: <urlopen error [Errno -2] Name or service not known>
+  FAIL https://api.hata.io/orderbook/api/tickers -> HTTP 404
+  FAIL https://www.mxglobal.com/api/v1/tickers -> HTTP 404
+  FAIL https://api.sinegy.com/api/v1/tickers -> URLError: <urlopen error [Errno -5] No address associated with hostname>
+myxsnap: round 0 sources ok 4
+  FAIL https://query1.finance.yahoo.com/v8/finance/chart/MYR=X?range=1d&interval=1m -> HTTP 429
+  FAIL https://api.tokenize.exchange/public/v1/market/get-summaries -> URLError: <urlopen error [Errno -2] Name or service not known>
+  FAIL https://api.hata.io/orderbook/api/tickers -> HTTP 404
+  FAIL https://www.mxglobal.com/api/v1/tickers -> HTTP 404
+  FAIL https://api.sinegy.com/api/v1/tickers -> URLError: <urlopen error [Errno -5] No address associated with hostname>
+myxsnap: round 1 sources ok 4
+  FAIL https://query1.finance.yahoo.com/v8/finance/chart/MYR=X?range=1d&interval=1m -> HTTP 429
+  FAIL https://api.tokenize.exchange/public/v1/market/get-summaries -> URLError: <urlopen error [Errno -2] Name or service not known>
+  FAIL https://api.hata.io/orderbook/api/tickers -> HTTP 404
+  FAIL https://www.mxglobal.com/api/v1/tickers -> HTTP 404
+  FAIL https://api.sinegy.com/api/v1/tickers -> URLError: <urlopen error [Errno -5] No address associated with hostname>
+myxsnap: round 2 sources ok 4
+  FAIL https://query1.finance.yahoo.com/v8/finance/chart/MYR=X?range=1d&interval=1m -> HTTP 429
+  FAIL https://api.tokenize.exchange/public/v1/market/get-summaries -> URLError: <urlopen error [Errno -2] Name or service not known>
+  FAIL https://api.hata.io/orderbook/api/tickers -> HTTP 404
+  FAIL https://www.mxglobal.com/api/v1/tickers -> HTTP 404
+  FAIL https://api.sinegy.com/api/v1/tickers -> URLError: <urlopen error [Errno -5] No address associated with hostname>
+myxsnap: round 3 sources ok 4
+  FAIL https://query1.finance.yahoo.com/v8/finance/chart/MYR=X?range=1d&interval=1m -> HTTP 429
+  FAIL https://api.tokenize.exchange/public/v1/market/get-summaries -> URLError: <urlopen error [Errno -2] Name or service not known>
+  FAIL https://api.hata.io/orderbook/api/tickers -> HTTP 404
+  FAIL https://www.mxglobal.com/api/v1/tickers -> HTTP 404
+  FAIL https://api.sinegy.com/api/v1/tickers -> URLError: <urlopen error [Errno -5] No address associated with hostname>
+myxsnap: round 4 sources ok 4
+  FAIL https://query1.finance.yahoo.com/v8/finance/chart/MYR=X?range=1d&interval=1m -> HTTP 429
+  FAIL https://api.tokenize.exchange/public/v1/market/get-summaries -> URLError: <urlopen error [Errno -2] Name or service not known>
+  FAIL https://api.hata.io/orderbook/api/tickers -> HTTP 404
+  FAIL https://www.mxglobal.com/api/v1/tickers -> HTTP 404
+  FAIL https://api.sinegy.com/api/v1/tickers -> URLError: <urlopen error [Errno -5] No address associated with hostname>
+myxsnap: round 5 sources ok 4
+=== myxsnap done in 3152s  ok 24 fail 33
