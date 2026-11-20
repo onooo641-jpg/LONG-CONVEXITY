@@ -1,2 +1,4 @@
-# chains for .github/workflows/fetch_liq.yml. Resumable. (run 4: optimism resume after IndexError fix)
-optimism
+# chains for .github/workflows/fetch_liq.yml. Resumable. (run 5: receipt repair for chains completed by older code)
+gnosis
+metis
+arbitrum

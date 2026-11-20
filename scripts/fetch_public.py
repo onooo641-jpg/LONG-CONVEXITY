@@ -803,6 +803,10 @@ def job_liq_chain(name):
     OUT.mkdir(parents=True, exist_ok=True)
     sp = _liq_state_path(name)
     st = json.loads(sp.read_text()) if sp.exists() else {}
+    if st.get("complete") and "receipts_missing" not in st and not st.get("legacy"):
+        print(f"{name}: marked complete by older code without a receipt check; re-checking receipts", flush=True)
+        st.update(complete=False, receipts_done=False)
+        _liq_save_state(name, st)
     if st.get("complete"):
         print(f"{name}: already complete", flush=True)
         return
@@ -914,18 +918,34 @@ def job_liq_chain(name):
                     "status": int(r.get("status", "0x1"), 16)}
         except Exception:  # noqa: BLE001
             return None
-    for i in range(0, len(todo), 1500):
-        if over():
+    for attempt in range(4):
+        todo = [t for t in sample if t not in done]
+        if not todo:
+            break
+        if attempt:
+            print(f"{name}: retry pass {attempt}: {len(todo)} receipts missing", flush=True)
+            time.sleep(20 * attempt)
+        for i in range(0, len(todo), 1500):
+            if over():
+                have.to_parquet(rcp)
+                print(f"{name}: BUDGET STOP in receipts: {len(have)}/{len(sample)} receipts saved (logs complete)", flush=True)
+                st["receipts_done"] = False
+                _liq_save_state(name, st)
+                return
+            with ThreadPoolExecutor(10) as ex:
+                got = [x for x in ex.map(rec, todo[i:i + 1500]) if x]
+            have = pd.concat([have, pd.DataFrame(got)], ignore_index=True)
             have.to_parquet(rcp)
-            print(f"{name}: BUDGET STOP in receipts: {len(have)}/{len(sample)} receipts saved (logs complete)", flush=True)
-            st["receipts_done"] = False
-            _liq_save_state(name, st)
-            return
-        with ThreadPoolExecutor(10) as ex:
-            got = [x for x in ex.map(rec, todo[i:i + 1500]) if x]
-        have = pd.concat([have, pd.DataFrame(got)], ignore_index=True)
-        have.to_parquet(rcp)
-        print(f"  {name}: receipts {len(have)}/{len(sample)} ({(time.time()-t0)/60:.0f} min)", flush=True)
+            done = set(have["tx"])
+            print(f"  {name}: receipts {len(have)}/{len(sample)} ({(time.time()-t0)/60:.0f} min)", flush=True)
+    missing = len([t for t in sample if t not in done])
+    st["receipts_missing"] = missing
+    if missing > 0.01 * len(sample):
+        st["receipts_done"] = False
+        _liq_save_state(name, st)
+        print(f"{name}: INCOMPLETE receipts: {missing}/{len(sample)} still missing after retries; re-run to continue", flush=True)
+        return
+    print(f"{name}: receipts missing after retries: {missing}/{len(sample)} (<=1%, accepted; gas imputed, bot 'unknown')", flush=True)
     st["receipts_done"] = True
     # ---- phase 3: assemble (decimals, prices)
     df = df.merge(have.drop_duplicates("tx"), on="tx", how="left")
