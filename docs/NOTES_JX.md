@@ -551,3 +551,23 @@ way to scale it is more firm slots running the same trades, not a different stra
    (Topstep's help centre permits multiple XFAs; firms may deny them at their discretion).
 4. MFFU Rapid EOD still on sale; TradeDay discount recurrence; Lucid/MFFU prices.
 5. Household rules: Lucid and Breakout count per household.
+
+## Firm questions verified from public pages (2026-11-20 13:15)
+- **Breakout / Kraken Prop: ruled out for the bot.** Kraken's own Prop page: "Kraken Prop
+  does not currently offer API access ... evaluation and funded accounts. All orders on a
+  Prop account are placed manually." Third-party reviews add that copy trading across
+  accounts is prohibited. Breakout's help centre allows multiple funded accounts up to
+  $200K total, which no longer matters. Plan figures to use: B− and C− in
+  PREREG_PORTFOLIO (Topstep + Lucid + MFFU): $10,746/yr, $13,829 cash; max slots $47,362/yr, $57,966 cash.
+- **Topstep: confirmed.** Bots via TopstepX API (powered by ProjectX, billed separately);
+  built-in TopstepX Trade Copier for Combines and XFAs (not Live); up to 5 XFAs and $750K
+  buying power through a copier (help-centre text quoted by third parties).
+- **Lucid: confirmed.** Lucid help centre "Permitted Activities": automated trading systems and
+  trade copiers are permitted; HFT banned. Lucid runs on ProjectX, and one ProjectX API
+  subscription covers all firms on ProjectX, so the friend's TopstepX bot code should
+  connect to Lucid with little change (not yet tested). Max 5 funded per household.
+- **MFFU: confirmed with one porting cost.** Fair Play page allows automated strategies;
+  copying between your own accounts allowed (third-party). Platforms: Tradovate,
+  NinjaTrader, TradingView, Quantower; no ProjectX (HyperProp "coming soon" as of Aug 2026),
+  so the bot needs a Tradovate-API version. Rapid EOD is still sold on MFFU's plan page
+  (read 2026-11-20): one-time fee, $162 shown, $97 with current promotion; no end date.
