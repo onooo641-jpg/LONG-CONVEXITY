@@ -589,10 +589,10 @@ def job_ipo2():
 LIQ_TOPIC = "0xe413a321e8681d831f4dbccbca790d2952b56f977908e45be37335533e005286"  # LiquidationCall(...)
 LIQ_CHAINS = {
     # name: (llama chain key, native price key (or None = $1), rpc endpoints)
-    "base": ("base", "coingecko:ethereum", ["https://base-rpc.publicnode.com", "https://mainnet.base.org"] ),
+    "base": ("base", "coingecko:ethereum", ["https://base.api.pocket.network", "https://base.gateway.tenderly.co"] ),
     "arbitrum": ("arbitrum", "coingecko:ethereum", ["https://arb1.arbitrum.io/rpc"]),
     "optimism": ("optimism", "coingecko:ethereum", ["https://mainnet.optimism.io"]),
-    "polygon": ("polygon", "coingecko:matic-network", ["https://polygon-bor-rpc.publicnode.com", "https://polygon-rpc.com"]),
+    "polygon": ("polygon", "coingecko:matic-network", ["https://poly.api.pocket.network", "https://polygon.gateway.tenderly.co"]),
     "avalanche": ("avax", "coingecko:avalanche-2", ["https://avalanche-c-chain-rpc.publicnode.com", "https://api.avax.network/ext/bc/C/rpc"]),
     "bnb": ("bsc", "coingecko:binancecoin", ["https://bsc-rpc.publicnode.com", "https://bsc-dataseed.binance.org"]),
     "gnosis": ("xdai", None, ["https://rpc.gnosischain.com"]),
@@ -875,21 +875,27 @@ def job_liq_diag():
 
 
 LIQ_CANDIDATES = {
-    "base": ["https://base.drpc.org", "https://1rpc.io/base", "https://base.meowrpc.com", "https://base.gateway.tenderly.co",
+    "bnb3": ["https://bsc.gateway.tenderly.co", "https://bnb.api.onfinality.io/public", "https://endpoints.omniatech.io/v1/bsc/mainnet/public",
+             "https://bsc.rpc.blxrbdn.com", "https://bsc-mainnet.rpc.grove.city/v1/01fdb492", "https://api.zan.top/bsc-mainnet", "https://bsc-pokt.nodies.app"],
+    "avalanche3": ["https://avalanche.gateway.tenderly.co", "https://avax.api.onfinality.io/public/ext/bc/C/rpc",
+                   "https://endpoints.omniatech.io/v1/avax/mainnet/public", "https://api.zan.top/avax-mainnet/ext/bc/C/rpc", "https://avax-pokt.nodies.app/ext/bc/C/rpc"],
+    "base_old": ["https://base.drpc.org", "https://1rpc.io/base", "https://base.meowrpc.com", "https://base.gateway.tenderly.co",
              "https://base.api.pocket.network", "https://base.blockpi.network/v1/rpc/public", "https://developer-access-mainnet.base.org"],
-    "polygon": ["https://polygon.drpc.org", "https://1rpc.io/matic", "https://polygon.meowrpc.com", "https://poly.api.pocket.network",
+    "polygon_old": ["https://polygon.drpc.org", "https://1rpc.io/matic", "https://polygon.meowrpc.com", "https://poly.api.pocket.network",
                 "https://polygon.gateway.tenderly.co", "https://polygon.llamarpc.com", "https://polygon-bor-rpc.publicnode.com"],
-    "bnb": ["https://bsc.drpc.org", "https://1rpc.io/bnb", "https://bsc.meowrpc.com", "https://bsc-dataseed1.defibit.io",
+    "bnb_old": ["https://bsc.drpc.org", "https://1rpc.io/bnb", "https://bsc.meowrpc.com", "https://bsc-dataseed1.defibit.io",
             "https://bsc-dataseed1.ninicoin.io", "https://binance.llamarpc.com", "https://bsc.api.pocket.network"],
-    "avalanche": ["https://avalanche.drpc.org", "https://1rpc.io/avax/c", "https://avalanche.public-rpc.com",
+    "avalanche_old": ["https://avalanche.drpc.org", "https://1rpc.io/avax/c", "https://avalanche.public-rpc.com",
                   "https://avax.meowrpc.com", "https://avalanche.api.pocket.network"],
 }
 
 
 def job_liq_diag2():
     """Candidate endpoints for chains where the first diag found none with deep history."""
-    back = {"base": 31_500_000, "polygon": 31_500_000, "bnb": 140_000_000, "avalanche": 31_500_000}  # ~23 months of blocks
+    back = {"bnb3": 140_000_000, "avalanche3": 31_500_000}  # ~23 months of blocks
     for name, urls in LIQ_CANDIDATES.items():
+        if name not in back:
+            continue
         for u in urls:
             lab = f"diag2 {name} {u.split('//')[1][:40]}"
             try:
