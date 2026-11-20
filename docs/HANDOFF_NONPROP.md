@@ -93,3 +93,11 @@ catching new ones early and pricing them fast, not finding one permanent strateg
    every candidate goes straight through `backtest/recycle.py` (structure-scan coin-flip + real trades)
    so a new offer can be priced in minutes. Only bot-allowed firms reachable by the bot count.
 Pre-register the flag thresholds before looking at results.
+
+## Jx's filter (2026-11-20 16:30): only pursue Topstep-shaped opportunities
+An idea qualifies only if it is (1) repeatable many times a month or a year, (2) long-lived (has
+existed for years, not a one-off window), (3) runs on one setup that is reused, not rebuilt each time,
+(4) has a capped downside per attempt, and (5) scales by adding copies. One-off windows (single airdrops,
+limited promos) are out unless the same bot catches them repeatedly. Under this filter:
+liquidation bonuses PASS structurally (test competition first); Polymarket rewards PASS structurally but
+carry Malaysian legal risk; single airdrop farms FAIL.
