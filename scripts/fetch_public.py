@@ -472,7 +472,53 @@ def job_myxsnap():
     pd.DataFrame(snaps).to_parquet(OUT / "myx_snapshots.parquet")
 
 
-JOBS = {"ipo": job_ipo, "myxsnap": job_myxsnap, "batch2": job_batch2, "hl2023d": job_hl2023d, "hl2023": job_hl2023, "hl": job_hl, "llama_lend": job_llama_lend, "llama_pools": job_llama_pools,
+def job_iponews():
+    """Oversubscription rates from Google News headlines for every Bursa IPO 2024-2026."""
+    import io
+    import re
+    import xml.etree.ElementTree as ET
+    names = []
+    for yr in (2024, 2025, 2026):
+        html = http_raw(f"https://www.bursamalaysia.com/listing/listing_resources/ipo/ipo_summary?year={yr}")
+        if not html:
+            continue
+        for t in pd.read_html(io.BytesIO(html)):
+            t.columns = [" ".join(map(str, c)) if isinstance(c, tuple) else str(c) for c in t.columns]
+            nc = next((c for c in t.columns if "NAME" in c.upper()), None)
+            if nc is not None and len(t) > 3:
+                names += [(yr, str(n)) for n in t[nc]]
+    pat = re.compile(r"oversubscribed\D{0,12}?([\d,]+(?:\.\d+)?)\s*(?:times|x\b)", re.I)
+    rows = []
+    for yr, name in names:
+        short = re.sub(r"\s+(BERHAD|BHD)\b.*$", "", name.upper().strip(), flags=re.I).title()
+        found = []
+        for q in (f'"{short}" IPO oversubscribed', f"{short} IPO oversubscribed times"):
+            raw = http_raw("https://news.google.com/rss/search?hl=en-MY&gl=MY&ceid=MY:en&q=" + urllib.parse.quote(q))
+            time.sleep(1.2)
+            if not raw:
+                continue
+            try:
+                items = ET.fromstring(raw).findall(".//item")
+            except ET.ParseError:
+                continue
+            for it in items[:15]:
+                title = it.findtext("title") or ""
+                desc = it.findtext("description") or ""
+                if short.split()[0].lower() not in title.lower():
+                    continue
+                m = pat.search(title) or pat.search(desc)
+                found.append({"title": title[:200], "x": float(m.group(1).replace(",", "")) if m else None,
+                              "date": it.findtext("pubDate")})
+            if any(f["x"] for f in found):
+                break
+        xs = [f["x"] for f in found if f["x"]]
+        rows.append({"year": yr, "name": name, "x_headline": xs[0] if xs else None, "n_hits": len(found),
+                     "titles": " || ".join(f["title"] for f in found[:5])})
+    pd.DataFrame(rows).to_parquet(OUT / "ipo_news.parquet")
+    print(f"iponews: {len(rows)} IPOs, {sum(1 for r in rows if r['x_headline'])} with a headline oversubscription rate", flush=True)
+
+
+JOBS = {"iponews": job_iponews, "ipo": job_ipo, "myxsnap": job_myxsnap, "batch2": job_batch2, "hl2023d": job_hl2023d, "hl2023": job_hl2023, "hl": job_hl, "llama_lend": job_llama_lend, "llama_pools": job_llama_pools,
         "llama_prices": job_llama_prices, "poly": job_poly}
 
 
