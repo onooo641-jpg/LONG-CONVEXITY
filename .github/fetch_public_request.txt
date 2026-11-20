@@ -1,3 +1,3 @@
-# Jobs for scripts/fetch_public.py, one per line. Pushing a change runs the fetch.
-# 2026-11-20 run 5: PREREG_BATCH2_20261120.
-batch2
+# jobs for scripts/fetch_public.py (PREREG_LOOPHOLES_20261120)
+ipo
+myxsnap

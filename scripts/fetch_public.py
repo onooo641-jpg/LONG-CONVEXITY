@@ -13,6 +13,7 @@ import json
 import sys
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
@@ -346,7 +347,132 @@ def job_batch2():
     print(f"batch2: {len(px)} price rows", flush=True)
 
 
-JOBS = {"batch2": job_batch2, "hl2023d": job_hl2023d, "hl2023": job_hl2023, "hl": job_hl, "llama_lend": job_llama_lend, "llama_pools": job_llama_pools,
+# ------------------------------------------------- PREREG_LOOPHOLES_20261120
+BROWSER = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+           "Accept": "text/html,application/json,application/xhtml+xml,*/*;q=0.8", "Accept-Language": "en-US,en;q=0.9"}
+
+
+def http_raw(url, tries=3):
+    for k in range(tries):
+        try:
+            req = urllib.request.Request(url, headers=BROWSER)
+            with urllib.request.urlopen(req, timeout=60) as r:
+                STATS["ok"] += 1
+                return r.read()
+        except urllib.error.HTTPError as e:
+            msg = f"HTTP {e.code}"
+            if e.code in (429, 500, 502, 503, 504):
+                time.sleep(5 * (2 ** k))
+                continue
+            break
+        except Exception as e:  # noqa: BLE001
+            msg = f"{type(e).__name__}: {e}"
+            time.sleep(2 ** k)
+    STATS["fail"] += 1
+    print(f"  FAIL {url[:140]} -> {msg}", flush=True)
+    return None
+
+
+def _yahoo_symbol(name):
+    import re
+    base = re.sub(r"\b(BERHAD|BHD|HOLDINGS?|GROUP|CORPORATION|\(.*?\))\b", " ", name.upper())
+    for q in [name.upper().replace("BERHAD", "BHD"), base.strip(), base.split()[0] if base.split() else name]:
+        raw = http_raw("https://query2.finance.yahoo.com/v1/finance/search?quotesCount=6&newsCount=0&q="
+                       + urllib.parse.quote(q))
+        time.sleep(0.7)
+        if not raw:
+            continue
+        for qt in json.loads(raw).get("quotes", []):
+            if str(qt.get("symbol", "")).endswith(".KL"):
+                return qt["symbol"], qt.get("longname") or qt.get("shortname")
+    return None, None
+
+
+def job_ipo():
+    """Bursa IPO list (issue price, listing date) + first trading days from Yahoo."""
+    import io
+    import urllib.parse  # noqa: F401
+    raw_dir = OUT / "raw"
+    raw_dir.mkdir(parents=True, exist_ok=True)
+    rows = []
+    for yr in (2024, 2025, 2026):
+        html = http_raw(f"https://www.bursamalaysia.com/listing/listing_resources/ipo/ipo_summary?year={yr}")
+        if not html:
+            continue
+        (raw_dir / f"bursa_ipo_summary_{yr}.html").write_bytes(html)
+        try:
+            tabs = pd.read_html(io.BytesIO(html))
+        except Exception as e:  # noqa: BLE001
+            print(f"  ipo {yr}: read_html failed {e}", flush=True)
+            continue
+        for t in tabs:
+            t.columns = [" ".join(map(str, c)) if isinstance(c, tuple) else str(c) for c in t.columns]
+            print(f"  ipo {yr}: table {t.shape} cols {list(t.columns)[:12]}", flush=True)
+            if len(t) > 3:
+                t["year"] = yr
+                rows.append(t)
+    if not rows:
+        print("ipo: no Bursa tables", flush=True)
+        return
+    df = pd.concat(rows, ignore_index=True)
+    df.to_parquet(OUT / "ipo_bursa_summary.parquet")
+    name_col = next(c for c in df.columns if "NAME" in c.upper())
+    list_col = next((c for c in df.columns if "LISTING" in c.upper()), df.columns[-2])
+    out = []
+    for _, r in df.iterrows():
+        name = str(r[name_col])
+        sym, yname = _yahoo_symbol(name)
+        rec = {"name": name, "listing": str(r[list_col]), "symbol": sym, "yahoo_name": yname}
+        if sym:
+            try:
+                d0 = pd.Timestamp(str(r[list_col]), tz="Asia/Kuala_Lumpur")
+            except Exception:  # noqa: BLE001
+                d0 = None
+            if d0 is not None:
+                p1, p2 = int((d0 - pd.Timedelta(days=3)).timestamp()), int((d0 + pd.Timedelta(days=20)).timestamp())
+                raw = http_raw(f"https://query1.finance.yahoo.com/v8/finance/chart/{sym}?period1={p1}&period2={p2}&interval=1d")
+                time.sleep(0.7)
+                try:
+                    res = json.loads(raw)["chart"]["result"][0]
+                    q = res["indicators"]["quote"][0]
+                    bars = [(t, o, c) for t, o, c in zip(res["timestamp"], q["open"], q["close"]) if c is not None]
+                    if bars:
+                        rec.update(d1_ts=bars[0][0], d1_open=bars[0][1], d1_close=bars[0][2],
+                                   d5_close=bars[min(4, len(bars) - 1)][2])
+                except Exception as e:  # noqa: BLE001
+                    print(f"  chart {sym}: {type(e).__name__}", flush=True)
+        out.append(rec)
+    pd.DataFrame(out).to_parquet(OUT / "ipo_first_days.parquet")
+    print(f"ipo: {len(df)} Bursa rows, {sum(1 for o in out if o.get('d1_close'))} with first-day prices", flush=True)
+
+
+def job_myxsnap():
+    """Same-moment snapshot: Malaysian exchanges vs global prices vs USD/MYR."""
+    urls = {
+        "luno": "https://api.luno.com/api/1/tickers",
+        "kraken": "https://api.kraken.com/0/public/Ticker?pair=XBTUSD,ETHUSD,SOLUSD,USDTUSD,XRPUSD",
+        "coinbase_btc": "https://api.exchange.coinbase.com/products/BTC-USD/ticker",
+        "fx_yahoo": "https://query1.finance.yahoo.com/v8/finance/chart/MYR=X?range=1d&interval=1m",
+        "fx_erapi": "https://open.er-api.com/v6/latest/USD",
+        "tokenize": "https://api.tokenize.exchange/public/v1/market/get-summaries",
+        "hata": "https://api.hata.io/orderbook/api/tickers",
+        "mxglobal": "https://www.mxglobal.com/api/v1/tickers",
+        "sinegy": "https://api.sinegy.com/api/v1/tickers",
+    }
+    snaps = []
+    for k in range(6):  # six snapshots, 10 minutes apart
+        t = int(time.time())
+        for name, u in urls.items():
+            raw = http_raw(u, tries=2)
+            if raw:
+                snaps.append({"t": t, "src": name, "body": raw.decode(errors="replace")[:200000]})
+        print(f"myxsnap: round {k} sources ok {len({s['src'] for s in snaps if s['t'] == t})}", flush=True)
+        if k < 5:
+            time.sleep(600)
+    pd.DataFrame(snaps).to_parquet(OUT / "myx_snapshots.parquet")
+
+
+JOBS = {"ipo": job_ipo, "myxsnap": job_myxsnap, "batch2": job_batch2, "hl2023d": job_hl2023d, "hl2023": job_hl2023, "hl": job_hl, "llama_lend": job_llama_lend, "llama_pools": job_llama_pools,
         "llama_prices": job_llama_prices, "poly": job_poly}
 
 
