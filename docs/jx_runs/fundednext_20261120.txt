@@ -1,0 +1,7 @@
+FundedNext Rapid Pro 50K, cap $1,000, NQ single account: real net $14,482 (spent $25,118, payouts 44) | coin-flip median $-608, profitable 46%   [Topstep 50K: $44,359 real / $18,046 coin flip]
+FundedNext Rapid Pro 50K, cap $1,250, NQ single account: real net $21,416 (spent $25,758, payouts 43) | coin-flip median $4,818, profitable 69%   [Topstep 50K: $44,359 real / $18,046 coin flip]
+
+C-mix                                        net $  415,303 ($ 38,354/yr) | 2016-20 $   70,780, 2021-26 $  344,523 | worst dip $  -21,097 | most out of pocket $ -21,097 | cash on hand $  21,097 | longest below peak 39.3 mo | losing years 3
+C-mix + 5 FundedNext                         net $  461,630 ($ 42,632/yr) | 2016-20 $   68,683, 2021-26 $  392,947 | worst dip $  -39,424 | most out of pocket $ -39,424 | cash on hand $  39,424 | longest below peak 45.3 mo | losing years 3
+
+adding FundedNext: net +11.2%, cash +86.9%, net per $ cash -40.5% -> not worth adding (pre-registered rule)

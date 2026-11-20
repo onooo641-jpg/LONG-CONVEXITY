@@ -98,6 +98,7 @@ risk, 5m signals and 1m fills.
 | 61 | staggered account starts; one API subscription per platform | `docs/PREREG_PORTFOLIO2_20261120.md`. Worth doing if cash on hand ≥15% lower at ≤5% net change. | not worth it (net −0.1%, cash +1.4%); corrected plan: 1 slot/firm $10.5K/yr, $14.6K cash; max slots $49K/yr, $50K cash | PREREG_PORTFOLIO2 results |
 | 62 | market mix across accounts (NQ/ES/YM) with anti-hedge filter | `docs/PREREG_MARKETMIX_20261120.md`. Worth doing if net per $ of cash ≥ +15% and net ≥ 75% of all-NQ. | **WORTH DOING**: 5 Topstep cash $15.3K→$4.7K for −23% net; full plan cash $53K→$21K for −22% net ($38.4K/yr) | PREREG_MARKETMIX results |
 | 63 | bigger Topstep accounts (100K/150K) inside the market mix | `docs/PREREG_SIZEMIX_20261120.md`. Worth switching if net ≥ +30% and cash ≤ $15,336. | not worth switching: +44% / +117% net but cash $22.6K / $33.7K vs $4.7K; 50K mix is 3× more cash-efficient | PREREG_SIZEMIX results |
+| 64 | add FundedNext Futures Rapid Pro 50K (Tradeify excluded: bots only if not used at other firms) | `docs/PREREG_FUNDEDNEXT_20261120.md`. Worth adding if net ≥ +10% and net per $ cash falls ≤ 10%. | not worth adding: +11% net for +87% cash (net per $ cash −40%); single account $14.5K vs Topstep $44.4K | PREREG_FUNDEDNEXT results |
 
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.

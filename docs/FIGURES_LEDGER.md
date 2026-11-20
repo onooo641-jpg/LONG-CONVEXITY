@@ -308,4 +308,11 @@ day at every size.
 | S1 | 5 Topstep mixed, net: 50K / 100K / 150K | $176,902 / $254,379 / $383,019 | `uv run python scripts/sizemix_20261120.py` | 2016–26 | 2026-11-20 | 100K/150K ladders assumed |
 | S2 | same, cash on hand | $4,741 / $22,578 / $33,749 | same | same | 2026-11-20 | same |
 
+## FundedNext Futures addition (docs/PREREG_FUNDEDNEXT_20261120.md)
+
+| # | figure | value | command | window | computed | status |
+|---|---|---|---|---|---|---|
+| F8 | FundedNext Rapid Pro 50K single NQ account, real net cap $1,000 / $1,250 | $14,482 / $21,416 | `uv run python scripts/fundednext_20261120.py` | 2016–26 | 2026-11-20 | payout share, cap, lock third-party |
+| F9 | C-mix vs C-mix + 5 FundedNext: net / cash on hand | $415,303 / $21,097 vs $461,630 / $39,424 | same | same | 2026-11-20 | same |
+
 Raw output for every command above is in `docs/jx_runs/`.

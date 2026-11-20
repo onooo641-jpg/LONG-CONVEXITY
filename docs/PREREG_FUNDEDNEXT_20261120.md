@@ -27,3 +27,10 @@ FundedNext is **worth adding** if it raises C-mix net by at least 10% while net 
 falls by no more than 10%.
 
 Command: `uv run python scripts/fundednext_20261120.py`
+
+## Results (2026-11-20, `docs/jx_runs/fundednext_20261120.txt`)
+- Single NQ account: real net **$14,482** (cap $1,000) / $21,416 (cap $1,250); coin-flip median −$608 (46%
+  profitable) / $4,818 (69%). Topstep 50K: $44,359 / $18,046 (98%). Low payout caps, a 50% payout share and
+  the 5-payout limit make it a weak structure.
+- Added to C-mix (5 accounts, mixed markets): net +11.2% but cash on hand +86.9% ($21,097 → $39,424);
+  net per $ of cash −40.5%. **Not worth adding.**

@@ -620,3 +620,14 @@ Lucid/MFFU cloud routing is their own call, so check each firm's device/VPS rule
   expect the rounded price (29128.0 instead of 29127.875).
 - New, off by default: `BRIDGE_MARKET` (NQ/ES/YM presets), `BRIDGE_HEDGE_REGISTRY` (shared anti-hedge
   check across engines), `--find-contract`, per-market journals. Tests: tests/test_hedge_multimarket.py.
+
+## Can profitability still be raised? (2026-11-20 23:30) — answer: not without more cash per dollar earned
+Tested tonight, all pre-registered (#61–#64):
+- Staggered start dates: no effect.
+- Market mix NQ/ES/YM with anti-hedge filter: **yes** — the plan's best change; cash needed falls 60–69%.
+- Bigger accounts (100K/150K) in the mix: more income, but 5–7× the cash; 50K stays most efficient.
+- FundedNext Futures as a fourth firm: weak structure (single account $14.5K vs Topstep $44.4K); adding it
+  nearly doubles cash for +11% income. Tradeify excluded by its own rule (bot can't run at other firms).
+**Current best plan (2016–26 backtest):** 5 Topstep + 5 Lucid + 3 MFFU, 50K, mixed markets ≈ **$38K/yr with
+~$21K cash**; Topstep-only mixed ≈ $16K/yr with ~$4.7K cash. All-NQ max ≈ $49K/yr but needs ~$53K cash.
+Remaining income upside depends on live results, not on more backtest changes.
