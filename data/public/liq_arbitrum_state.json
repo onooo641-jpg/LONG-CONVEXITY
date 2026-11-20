@@ -26,9 +26,9 @@
   510496864,
   520129274
  ],
- "next_block": 468763499,
- "logs_done": false,
+ "next_block": 520129274,
+ "logs_done": true,
  "receipts_done": false,
  "complete": false,
- "last_flush": "2026-11-20T14:59:09Z"
+ "last_flush": "2026-11-20T15:04:00Z"
 }
