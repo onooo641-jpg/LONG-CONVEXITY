@@ -1,0 +1,226 @@
+=== liq_diag
+  rpc error eth_getLogs @ https://base-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address in your request or, to remove restrictions, order a dedicated full node here: https://www.allnodes.com/base/host'}
+diag base base-rpc.publicnode.com recent span 1000 topic: ERR https://base-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address in your request or, to
+diag base base-rpc.publicnode.com recent span 1000 addr: 0 logs
+diag base base-rpc.publicnode.com recent span 10000 topic: ERR https://base-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address in your request or, to
+diag base base-rpc.publicnode.com recent span 10000 addr: 0 logs
+diag base base-rpc.publicnode.com recent span 100000 topic: ERR https://base-rpc.publicnode.com: {'code': -32701, 'message': 'exceed maximum block range: 50000'}
+diag base base-rpc.publicnode.com recent span 100000 addr: ERR https://base-rpc.publicnode.com: {'code': -32701, 'message': 'exceed maximum block range: 50000'}
+diag base base-rpc.publicnode.com old_2yr_ish span 1000 topic: ERR https://base-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag base base-rpc.publicnode.com old_2yr_ish span 1000 addr: ERR https://base-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag base base-rpc.publicnode.com old_2yr_ish span 10000 topic: ERR https://base-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag base base-rpc.publicnode.com old_2yr_ish span 10000 addr: ERR https://base-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag base base-rpc.publicnode.com old_2yr_ish span 100000 topic: ERR https://base-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag base base-rpc.publicnode.com old_2yr_ish span 100000 addr: ERR https://base-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+  rpc exception eth_getBlockByNumber @ https://base-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag base base-rpc.publicnode.com old block header FAIL https://base-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+  rpc exception eth_getLogs @ https://mainnet.base.org: HTTPError: HTTP Error 429: Too Many Requests
+diag base mainnet.base.org recent span 1000 topic: ERR https://mainnet.base.org: HTTPError: HTTP Error 429: Too Many Requests
+diag base mainnet.base.org recent span 1000 addr: ERR https://mainnet.base.org: HTTPError: HTTP Error 429: Too Many Requests
+diag base mainnet.base.org recent span 10000 topic: ERR https://mainnet.base.org: HTTPError: HTTP Error 429: Too Many Requests
+diag base mainnet.base.org recent span 10000 addr: ERR https://mainnet.base.org: HTTPError: HTTP Error 429: Too Many Requests
+diag base mainnet.base.org recent span 100000 topic: ERR https://mainnet.base.org: HTTPError: HTTP Error 429: Too Many Requests
+diag base mainnet.base.org recent span 100000 addr: ERR https://mainnet.base.org: HTTPError: HTTP Error 429: Too Many Requests
+diag base mainnet.base.org old_2yr_ish span 1000 topic: ERR https://mainnet.base.org: HTTPError: HTTP Error 429: Too Many Requests
+diag base mainnet.base.org old_2yr_ish span 1000 addr: ERR https://mainnet.base.org: HTTPError: HTTP Error 429: Too Many Requests
+diag base mainnet.base.org old_2yr_ish span 10000 topic: ERR https://mainnet.base.org: HTTPError: HTTP Error 429: Too Many Requests
+diag base mainnet.base.org old_2yr_ish span 10000 addr: ERR https://mainnet.base.org: HTTPError: HTTP Error 429: Too Many Requests
+diag base mainnet.base.org old_2yr_ish span 100000 topic: ERR https://mainnet.base.org: HTTPError: HTTP Error 429: Too Many Requests
+diag base mainnet.base.org old_2yr_ish span 100000 addr: ERR https://mainnet.base.org: HTTPError: HTTP Error 429: Too Many Requests
+diag base mainnet.base.org old block header ok ts 1696738185
+  rpc exception eth_getLogs @ https://arbitrum-one-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag arbitrum arbitrum-one-rpc.publicnode.com recent span 1000 topic: ERR https://arbitrum-one-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag arbitrum arbitrum-one-rpc.publicnode.com recent span 1000 addr: ERR https://arbitrum-one-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag arbitrum arbitrum-one-rpc.publicnode.com recent span 10000 topic: ERR https://arbitrum-one-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag arbitrum arbitrum-one-rpc.publicnode.com recent span 10000 addr: ERR https://arbitrum-one-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag arbitrum arbitrum-one-rpc.publicnode.com recent span 100000 topic: ERR https://arbitrum-one-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag arbitrum arbitrum-one-rpc.publicnode.com recent span 100000 addr: ERR https://arbitrum-one-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag arbitrum arbitrum-one-rpc.publicnode.com old_2yr_ish span 1000 topic: ERR https://arbitrum-one-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag arbitrum arbitrum-one-rpc.publicnode.com old_2yr_ish span 1000 addr: ERR https://arbitrum-one-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag arbitrum arbitrum-one-rpc.publicnode.com old_2yr_ish span 10000 topic: ERR https://arbitrum-one-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag arbitrum arbitrum-one-rpc.publicnode.com old_2yr_ish span 10000 addr: ERR https://arbitrum-one-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag arbitrum arbitrum-one-rpc.publicnode.com old_2yr_ish span 100000 topic: ERR https://arbitrum-one-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag arbitrum arbitrum-one-rpc.publicnode.com old_2yr_ish span 100000 addr: ERR https://arbitrum-one-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag arbitrum arbitrum-one-rpc.publicnode.com old block header ok ts 1780824219
+diag arbitrum arb1.arbitrum.io/rpc recent span 1000 topic: 0 logs
+diag arbitrum arb1.arbitrum.io/rpc recent span 1000 addr: 0 logs
+diag arbitrum arb1.arbitrum.io/rpc recent span 10000 topic: 0 logs
+diag arbitrum arb1.arbitrum.io/rpc recent span 10000 addr: 0 logs
+  rpc error eth_getLogs @ https://arb1.arbitrum.io/rpc: {'code': -32602, 'message': 'query spans 100001 blocks (525755099 to 525855099), but only 30000 are allowed for this request; narrow the block range, or add an address filter'}
+diag arbitrum arb1.arbitrum.io/rpc recent span 100000 topic: ERR https://arb1.arbitrum.io/rpc: {'code': -32602, 'message': 'query spans 100001 blocks (525755099 to 525855099),
+diag arbitrum arb1.arbitrum.io/rpc recent span 100000 addr: 6 logs
+diag arbitrum arb1.arbitrum.io/rpc old_2yr_ish span 1000 topic: 0 logs
+diag arbitrum arb1.arbitrum.io/rpc old_2yr_ish span 1000 addr: 0 logs
+diag arbitrum arb1.arbitrum.io/rpc old_2yr_ish span 10000 topic: 0 logs
+diag arbitrum arb1.arbitrum.io/rpc old_2yr_ish span 10000 addr: 0 logs
+diag arbitrum arb1.arbitrum.io/rpc old_2yr_ish span 100000 topic: ERR https://arb1.arbitrum.io/rpc: {'code': -32602, 'message': 'query spans 100001 blocks (470955099 to 471055099),
+diag arbitrum arb1.arbitrum.io/rpc old_2yr_ish span 100000 addr: 0 logs
+diag arbitrum arb1.arbitrum.io/rpc old block header ok ts 1780824247
+  rpc exception eth_getLogs @ https://optimism-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag optimism optimism-rpc.publicnode.com recent span 1000 topic: ERR https://optimism-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag optimism optimism-rpc.publicnode.com recent span 1000 addr: ERR https://optimism-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag optimism optimism-rpc.publicnode.com recent span 10000 topic: ERR https://optimism-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag optimism optimism-rpc.publicnode.com recent span 10000 addr: ERR https://optimism-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag optimism optimism-rpc.publicnode.com recent span 100000 topic: ERR https://optimism-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag optimism optimism-rpc.publicnode.com recent span 100000 addr: ERR https://optimism-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag optimism optimism-rpc.publicnode.com old_2yr_ish span 1000 topic: ERR https://optimism-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag optimism optimism-rpc.publicnode.com old_2yr_ish span 1000 addr: ERR https://optimism-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag optimism optimism-rpc.publicnode.com old_2yr_ish span 10000 topic: ERR https://optimism-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag optimism optimism-rpc.publicnode.com old_2yr_ish span 10000 addr: ERR https://optimism-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag optimism optimism-rpc.publicnode.com old_2yr_ish span 100000 topic: ERR https://optimism-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag optimism optimism-rpc.publicnode.com old_2yr_ish span 100000 addr: ERR https://optimism-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag optimism optimism-rpc.publicnode.com old block header FAIL 'NoneType' object is not subscriptable
+diag optimism mainnet.optimism.io recent span 1000 topic: 0 logs
+diag optimism mainnet.optimism.io recent span 1000 addr: 0 logs
+diag optimism mainnet.optimism.io recent span 10000 topic: 0 logs
+diag optimism mainnet.optimism.io recent span 10000 addr: 0 logs
+  rpc exception eth_getLogs @ https://mainnet.optimism.io: HTTPError: HTTP Error 413: Request Entity Too Large
+diag optimism mainnet.optimism.io recent span 100000 topic: ERR https://mainnet.optimism.io: HTTPError: HTTP Error 413: Request Entity Too Large
+diag optimism mainnet.optimism.io recent span 100000 addr: ERR https://mainnet.optimism.io: HTTPError: HTTP Error 413: Request Entity Too Large
+diag optimism mainnet.optimism.io old_2yr_ish span 1000 topic: 0 logs
+diag optimism mainnet.optimism.io old_2yr_ish span 1000 addr: 0 logs
+diag optimism mainnet.optimism.io old_2yr_ish span 10000 topic: 0 logs
+diag optimism mainnet.optimism.io old_2yr_ish span 10000 addr: 0 logs
+diag optimism mainnet.optimism.io old_2yr_ish span 100000 topic: ERR https://mainnet.optimism.io: HTTPError: HTTP Error 413: Request Entity Too Large
+diag optimism mainnet.optimism.io old_2yr_ish span 100000 addr: ERR https://mainnet.optimism.io: HTTPError: HTTP Error 413: Request Entity Too Large
+diag optimism mainnet.optimism.io old block header ok ts 1685956878
+  rpc error eth_getLogs @ https://polygon-bor-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address in your request or, to remove restrictions, order a dedicated full node here: https://www.allnodes.com/pol/host'}
+diag polygon polygon-bor-rpc.publicnode.com recent span 1000 topic: ERR https://polygon-bor-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address in your request
+diag polygon polygon-bor-rpc.publicnode.com recent span 1000 addr: 0 logs
+diag polygon polygon-bor-rpc.publicnode.com recent span 10000 topic: ERR https://polygon-bor-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address in your request
+diag polygon polygon-bor-rpc.publicnode.com recent span 10000 addr: 0 logs
+diag polygon polygon-bor-rpc.publicnode.com recent span 100000 topic: ERR https://polygon-bor-rpc.publicnode.com: {'code': -32701, 'message': 'exceed maximum block range: 10000'}
+diag polygon polygon-bor-rpc.publicnode.com recent span 100000 addr: ERR https://polygon-bor-rpc.publicnode.com: {'code': -32701, 'message': 'exceed maximum block range: 10000'}
+diag polygon polygon-bor-rpc.publicnode.com old_2yr_ish span 1000 topic: ERR https://polygon-bor-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag polygon polygon-bor-rpc.publicnode.com old_2yr_ish span 1000 addr: ERR https://polygon-bor-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag polygon polygon-bor-rpc.publicnode.com old_2yr_ish span 10000 topic: ERR https://polygon-bor-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag polygon polygon-bor-rpc.publicnode.com old_2yr_ish span 10000 addr: ERR https://polygon-bor-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag polygon polygon-bor-rpc.publicnode.com old_2yr_ish span 100000 topic: ERR https://polygon-bor-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag polygon polygon-bor-rpc.publicnode.com old_2yr_ish span 100000 addr: ERR https://polygon-bor-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag polygon polygon-bor-rpc.publicnode.com old block header ok ts 1683979546
+  rpc exception eth_blockNumber @ https://polygon-rpc.com: HTTPError: HTTP Error 401: Unauthorized
+diag polygon https://polygon-rpc.com: blockNumber FAIL https://polygon-rpc.com: HTTPError: HTTP Error 401: Unauthorized
+  rpc error eth_getLogs @ https://avalanche-c-chain-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address in your request or, to remove restrictions, order a dedicated full node here: https://www.allnodes.com/avax/host'}
+diag avalanche avalanche-c-chain-rpc.publicnode recent span 1000 topic: ERR https://avalanche-c-chain-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address in your r
+diag avalanche avalanche-c-chain-rpc.publicnode recent span 1000 addr: 0 logs
+diag avalanche avalanche-c-chain-rpc.publicnode recent span 10000 topic: ERR https://avalanche-c-chain-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address in your r
+diag avalanche avalanche-c-chain-rpc.publicnode recent span 10000 addr: 0 logs
+diag avalanche avalanche-c-chain-rpc.publicnode recent span 100000 topic: ERR https://avalanche-c-chain-rpc.publicnode.com: {'code': -32701, 'message': 'exceed maximum block range: 50000'}
+diag avalanche avalanche-c-chain-rpc.publicnode recent span 100000 addr: ERR https://avalanche-c-chain-rpc.publicnode.com: {'code': -32701, 'message': 'exceed maximum block range: 50000'}
+diag avalanche avalanche-c-chain-rpc.publicnode old_2yr_ish span 1000 topic: ERR https://avalanche-c-chain-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address in your r
+diag avalanche avalanche-c-chain-rpc.publicnode old_2yr_ish span 1000 addr: ERR https://avalanche-c-chain-rpc.publicnode.com: {'code': -32000, 'message': 'not found'}
+diag avalanche avalanche-c-chain-rpc.publicnode old_2yr_ish span 10000 topic: ERR https://avalanche-c-chain-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address in your r
+diag avalanche avalanche-c-chain-rpc.publicnode old_2yr_ish span 10000 addr: 0 logs
+diag avalanche avalanche-c-chain-rpc.publicnode old_2yr_ish span 100000 topic: ERR https://avalanche-c-chain-rpc.publicnode.com: {'code': -32701, 'message': 'exceed maximum block range: 50000'}
+diag avalanche avalanche-c-chain-rpc.publicnode old_2yr_ish span 100000 addr: ERR https://avalanche-c-chain-rpc.publicnode.com: {'code': -32701, 'message': 'exceed maximum block range: 50000'}
+diag avalanche avalanche-c-chain-rpc.publicnode old block header FAIL 'NoneType' object is not subscriptable
+  rpc error eth_getLogs @ https://api.avax.network/ext/bc/C/rpc: {'code': -32602, 'message': 'block range too large: total block range in this request exceeds the maximum of 100 blocks'}
+diag avalanche api.avax.network/ext/bc/C/rpc recent span 1000 topic: ERR https://api.avax.network/ext/bc/C/rpc: {'code': -32602, 'message': 'block range too large: total block range i
+diag avalanche api.avax.network/ext/bc/C/rpc recent span 1000 addr: ERR https://api.avax.network/ext/bc/C/rpc: {'code': -32602, 'message': 'block range too large: total block range i
+diag avalanche api.avax.network/ext/bc/C/rpc recent span 10000 topic: ERR https://api.avax.network/ext/bc/C/rpc: {'code': -32602, 'message': 'block range too large: total block range i
+diag avalanche api.avax.network/ext/bc/C/rpc recent span 10000 addr: ERR https://api.avax.network/ext/bc/C/rpc: {'code': -32602, 'message': 'block range too large: total block range i
+diag avalanche api.avax.network/ext/bc/C/rpc recent span 100000 topic: ERR https://api.avax.network/ext/bc/C/rpc: {'code': -32602, 'message': 'block range too large: total block range i
+diag avalanche api.avax.network/ext/bc/C/rpc recent span 100000 addr: ERR https://api.avax.network/ext/bc/C/rpc: {'code': -32602, 'message': 'block range too large: total block range i
+diag avalanche api.avax.network/ext/bc/C/rpc old_2yr_ish span 1000 topic: ERR https://api.avax.network/ext/bc/C/rpc: {'code': -32602, 'message': 'block range too large: total block range i
+diag avalanche api.avax.network/ext/bc/C/rpc old_2yr_ish span 1000 addr: ERR https://api.avax.network/ext/bc/C/rpc: {'code': -32602, 'message': 'block range too large: total block range i
+diag avalanche api.avax.network/ext/bc/C/rpc old_2yr_ish span 10000 topic: ERR https://api.avax.network/ext/bc/C/rpc: {'code': -32602, 'message': 'block range too large: total block range i
+diag avalanche api.avax.network/ext/bc/C/rpc old_2yr_ish span 10000 addr: ERR https://api.avax.network/ext/bc/C/rpc: {'code': -32602, 'message': 'block range too large: total block range i
+diag avalanche api.avax.network/ext/bc/C/rpc old_2yr_ish span 100000 topic: ERR https://api.avax.network/ext/bc/C/rpc: {'code': -32602, 'message': 'block range too large: total block range i
+diag avalanche api.avax.network/ext/bc/C/rpc old_2yr_ish span 100000 addr: ERR https://api.avax.network/ext/bc/C/rpc: {'code': -32602, 'message': 'block range too large: total block range i
+diag avalanche api.avax.network/ext/bc/C/rpc old block header ok ts 1716649050
+  rpc error eth_getLogs @ https://bsc-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address in your request or, to remove restrictions, order a dedicated full node here: https://www.allnodes.com/bnb/host'}
+diag bnb bsc-rpc.publicnode.com recent span 1000 topic: ERR https://bsc-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address in your request or, to 
+diag bnb bsc-rpc.publicnode.com recent span 1000 addr: 0 logs
+diag bnb bsc-rpc.publicnode.com recent span 10000 topic: ERR https://bsc-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address in your request or, to 
+diag bnb bsc-rpc.publicnode.com recent span 10000 addr: 0 logs
+diag bnb bsc-rpc.publicnode.com recent span 100000 topic: ERR https://bsc-rpc.publicnode.com: {'code': -32701, 'message': 'exceed maximum block range: 50000'}
+diag bnb bsc-rpc.publicnode.com recent span 100000 addr: ERR https://bsc-rpc.publicnode.com: {'code': -32701, 'message': 'exceed maximum block range: 50000'}
+diag bnb bsc-rpc.publicnode.com old_2yr_ish span 1000 topic: ERR https://bsc-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag bnb bsc-rpc.publicnode.com old_2yr_ish span 1000 addr: ERR https://bsc-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag bnb bsc-rpc.publicnode.com old_2yr_ish span 10000 topic: ERR https://bsc-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag bnb bsc-rpc.publicnode.com old_2yr_ish span 10000 addr: ERR https://bsc-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag bnb bsc-rpc.publicnode.com old_2yr_ish span 100000 topic: ERR https://bsc-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag bnb bsc-rpc.publicnode.com old_2yr_ish span 100000 addr: ERR https://bsc-rpc.publicnode.com: HTTPError: HTTP Error 403: Forbidden
+diag bnb bsc-rpc.publicnode.com old block header ok ts 1770416135
+  rpc error eth_getLogs @ https://bsc-dataseed.binance.org: {'code': -32005, 'message': 'limit exceeded'}
+diag bnb bsc-dataseed.binance.org recent span 1000 topic: ERR https://bsc-dataseed.binance.org: {'code': -32005, 'message': 'limit exceeded'}
+diag bnb bsc-dataseed.binance.org recent span 1000 addr: ERR https://bsc-dataseed.binance.org: {'code': -32005, 'message': 'limit exceeded'}
+diag bnb bsc-dataseed.binance.org recent span 10000 topic: ERR https://bsc-dataseed.binance.org: {'code': -32005, 'message': 'limit exceeded'}
+diag bnb bsc-dataseed.binance.org recent span 10000 addr: ERR https://bsc-dataseed.binance.org: {'code': -32005, 'message': 'limit exceeded'}
+diag bnb bsc-dataseed.binance.org recent span 100000 topic: ERR https://bsc-dataseed.binance.org: {'code': -32005, 'message': 'limit exceeded'}
+diag bnb bsc-dataseed.binance.org recent span 100000 addr: ERR https://bsc-dataseed.binance.org: {'code': -32005, 'message': 'limit exceeded'}
+diag bnb bsc-dataseed.binance.org old_2yr_ish span 1000 topic: ERR https://bsc-dataseed.binance.org: {'code': -32005, 'message': 'limit exceeded'}
+diag bnb bsc-dataseed.binance.org old_2yr_ish span 1000 addr: ERR https://bsc-dataseed.binance.org: {'code': -32005, 'message': 'limit exceeded'}
+diag bnb bsc-dataseed.binance.org old_2yr_ish span 10000 topic: ERR https://bsc-dataseed.binance.org: {'code': -32005, 'message': 'limit exceeded'}
+diag bnb bsc-dataseed.binance.org old_2yr_ish span 10000 addr: ERR https://bsc-dataseed.binance.org: {'code': -32005, 'message': 'limit exceeded'}
+diag bnb bsc-dataseed.binance.org old_2yr_ish span 100000 topic: ERR https://bsc-dataseed.binance.org: {'code': -32005, 'message': 'limit exceeded'}
+diag bnb bsc-dataseed.binance.org old_2yr_ish span 100000 addr: ERR https://bsc-dataseed.binance.org: {'code': -32005, 'message': 'limit exceeded'}
+diag bnb bsc-dataseed.binance.org old block header ok ts 1770416158
+  rpc error eth_getLogs @ https://gnosis-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address in your request or, to remove restrictions, order a dedicated full node here: https://www.allnodes.com/gno/host'}
+diag gnosis gnosis-rpc.publicnode.com recent span 1000 topic: ERR https://gnosis-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address in your request or, 
+diag gnosis gnosis-rpc.publicnode.com recent span 1000 addr: 0 logs
+diag gnosis gnosis-rpc.publicnode.com recent span 10000 topic: ERR https://gnosis-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address in your request or, 
+diag gnosis gnosis-rpc.publicnode.com recent span 10000 addr: ERR https://gnosis-rpc.publicnode.com: {'code': -32602, 'message': 'Logs request reads 10001 blocks without the lo
+diag gnosis gnosis-rpc.publicnode.com recent span 100000 topic: ERR https://gnosis-rpc.publicnode.com: {'code': -32701, 'message': 'exceed maximum block range: 50000'}
+diag gnosis gnosis-rpc.publicnode.com recent span 100000 addr: ERR https://gnosis-rpc.publicnode.com: {'code': -32701, 'message': 'exceed maximum block range: 50000'}
+diag gnosis gnosis-rpc.publicnode.com old_2yr_ish span 1000 topic: ERR https://gnosis-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address in your request or, 
+diag gnosis gnosis-rpc.publicnode.com old_2yr_ish span 1000 addr: 0 logs
+diag gnosis gnosis-rpc.publicnode.com old_2yr_ish span 10000 topic: ERR https://gnosis-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address in your request or, 
+diag gnosis gnosis-rpc.publicnode.com old_2yr_ish span 10000 addr: ERR https://gnosis-rpc.publicnode.com: {'code': -32602, 'message': 'Logs request reads 10001 blocks without the lo
+diag gnosis gnosis-rpc.publicnode.com old_2yr_ish span 100000 topic: ERR https://gnosis-rpc.publicnode.com: {'code': -32701, 'message': 'exceed maximum block range: 50000'}
+diag gnosis gnosis-rpc.publicnode.com old_2yr_ish span 100000 addr: ERR https://gnosis-rpc.publicnode.com: {'code': -32701, 'message': 'exceed maximum block range: 50000'}
+diag gnosis gnosis-rpc.publicnode.com old block header ok ts 1539024185
+diag gnosis rpc.gnosischain.com recent span 1000 topic: 0 logs
+diag gnosis rpc.gnosischain.com recent span 1000 addr: 0 logs
+diag gnosis rpc.gnosischain.com recent span 10000 topic: 0 logs
+diag gnosis rpc.gnosischain.com recent span 10000 addr: 0 logs
+diag gnosis rpc.gnosischain.com recent span 100000 topic: 406 logs
+diag gnosis rpc.gnosischain.com recent span 100000 addr: 0 logs
+diag gnosis rpc.gnosischain.com old_2yr_ish span 1000 topic: 0 logs
+diag gnosis rpc.gnosischain.com old_2yr_ish span 1000 addr: 0 logs
+diag gnosis rpc.gnosischain.com old_2yr_ish span 10000 topic: 0 logs
+diag gnosis rpc.gnosischain.com old_2yr_ish span 10000 addr: 0 logs
+diag gnosis rpc.gnosischain.com old_2yr_ish span 100000 topic: 1 logs
+diag gnosis rpc.gnosischain.com old_2yr_ish span 100000 addr: 0 logs
+diag gnosis rpc.gnosischain.com old block header ok ts 1539024185
+  rpc error eth_getLogs @ https://scroll-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address in your request or, to remove restrictions, order a dedicated full node here: https://www.allnodes.com/scroll/host'}
+diag scroll scroll-rpc.publicnode.com recent span 1000 topic: ERR https://scroll-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address in your request or, 
+diag scroll scroll-rpc.publicnode.com recent span 1000 addr: 0 logs
+diag scroll scroll-rpc.publicnode.com recent span 10000 topic: ERR https://scroll-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address in your request or, 
+diag scroll scroll-rpc.publicnode.com recent span 10000 addr: 1 logs
+diag scroll scroll-rpc.publicnode.com recent span 100000 topic: ERR https://scroll-rpc.publicnode.com: {'code': -32701, 'message': 'exceed maximum block range: 50000'}
+diag scroll scroll-rpc.publicnode.com recent span 100000 addr: ERR https://scroll-rpc.publicnode.com: {'code': -32701, 'message': 'exceed maximum block range: 50000'}
+diag scroll scroll-rpc.publicnode.com old_2yr_ish span 1000 topic: ERR https://scroll-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address in your request or, 
+diag scroll scroll-rpc.publicnode.com old_2yr_ish span 1000 addr: 0 logs
+diag scroll scroll-rpc.publicnode.com old_2yr_ish span 10000 topic: ERR https://scroll-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address in your request or, 
+diag scroll scroll-rpc.publicnode.com old_2yr_ish span 10000 addr: 0 logs
+diag scroll scroll-rpc.publicnode.com old_2yr_ish span 100000 topic: ERR https://scroll-rpc.publicnode.com: {'code': -32701, 'message': 'exceed maximum block range: 50000'}
+diag scroll scroll-rpc.publicnode.com old_2yr_ish span 100000 addr: ERR https://scroll-rpc.publicnode.com: {'code': -32701, 'message': 'exceed maximum block range: 50000'}
+diag scroll scroll-rpc.publicnode.com old block header ok ts 1696917614
+diag scroll rpc.scroll.io recent span 1000 topic: 0 logs
+diag scroll rpc.scroll.io recent span 1000 addr: 0 logs
+diag scroll rpc.scroll.io recent span 10000 topic: 1 logs
+diag scroll rpc.scroll.io recent span 10000 addr: 1 logs
+diag scroll rpc.scroll.io recent span 100000 topic: 48 logs
+diag scroll rpc.scroll.io recent span 100000 addr: 48 logs
+diag scroll rpc.scroll.io old_2yr_ish span 1000 topic: 0 logs
+diag scroll rpc.scroll.io old_2yr_ish span 1000 addr: 0 logs
+diag scroll rpc.scroll.io old_2yr_ish span 10000 topic: 0 logs
+diag scroll rpc.scroll.io old_2yr_ish span 10000 addr: 0 logs
+diag scroll rpc.scroll.io old_2yr_ish span 100000 topic: 2 logs
+diag scroll rpc.scroll.io old_2yr_ish span 100000 addr: 2 logs
+diag scroll rpc.scroll.io old block header ok ts 1696917614
+diag metis andromeda.metis.io/?owner=1088 recent span 1000 topic: 0 logs
+diag metis andromeda.metis.io/?owner=1088 recent span 1000 addr: 0 logs
+diag metis andromeda.metis.io/?owner=1088 recent span 10000 topic: 0 logs
+diag metis andromeda.metis.io/?owner=1088 recent span 10000 addr: 0 logs
+diag metis andromeda.metis.io/?owner=1088 recent span 100000 topic: 8 logs
+diag metis andromeda.metis.io/?owner=1088 recent span 100000 addr: 7 logs
+diag metis andromeda.metis.io/?owner=1088 old_2yr_ish span 1000 topic: 0 logs
+diag metis andromeda.metis.io/?owner=1088 old_2yr_ish span 1000 addr: 0 logs
+diag metis andromeda.metis.io/?owner=1088 old_2yr_ish span 10000 topic: 0 logs
+diag metis andromeda.metis.io/?owner=1088 old_2yr_ish span 10000 addr: 0 logs
+diag metis andromeda.metis.io/?owner=1088 old_2yr_ish span 100000 topic: 0 logs
+diag metis andromeda.metis.io/?owner=1088 old_2yr_ish span 100000 addr: 0 logs
+diag metis andromeda.metis.io/?owner=1088 old block header ok ts 1637270379
+=== liq_diag done in 267s  ok 100 fail 79
