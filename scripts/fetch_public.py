@@ -808,6 +808,9 @@ def job_liq_chain(name):
                 continue
             for lg in logs:
                 d = lg["data"][2:]
+                if len(lg["topics"]) != 4 or len(d) < 256:  # same topic0 on a non-Aave-ABI contract: skip, count
+                    st["skipped_logs"] = st.get("skipped_logs", 0) + 1
+                    continue
                 rows.append({"venue": lg["address"].lower(), "block": int(lg["blockNumber"], 16), "tx": lg["transactionHash"],
                              "collateral": "0x" + lg["topics"][1][-40:], "debt": "0x" + lg["topics"][2][-40:],
                              "user": "0x" + lg["topics"][3][-40:], "debt_amt": float(int(d[0:64], 16)),

@@ -1,2 +1,2 @@
-# chains for .github/workflows/fetch_liq.yml. Resumable. (run 3: avalanche; others running separately)
-avalanche
+# chains for .github/workflows/fetch_liq.yml. Resumable. (run 4: optimism resume after IndexError fix)
+optimism
