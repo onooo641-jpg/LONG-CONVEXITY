@@ -85,7 +85,7 @@ risk, 5m signals and 1m fills.
 | 48 | structure scan of bot-allowed prop-firm products (coin-flip net) | `docs/PREREG_STRUCTURE_SCAN_20261120.md`. Ranking, no pass/fail. | ranking done: Topstep 150K most generous ($34K coin flip); 50K most reliable (98%); Lucid only at 50K; Tradeify weaker | PREREG_STRUCTURE_SCAN |
 | 49 | Bursa IPO public ballot | `docs/PREREG_LOOPHOLES_20261120.md`. | FAIL pre-registered (0.40%/RM applied, 2nd half negative, 37% below issue); post-hoc avg applicant RM7.7K-17K/yr, wide | PREREG_LOOPHOLES |
 | 50 | guaranteed government matches / fixed-price funds | `docs/PREREG_LOOPHOLES_20261120.md`. | i-Saraan PASS but tiny (RM500/yr, 90% locked); ASM 5% vs FD 4% fails 2x rule | PREREG_LOOPHOLES |
-| 51 | MYR crypto exchange price gaps | `docs/PREREG_LOOPHOLES_20261120.md`. | pending | PREREG_LOOPHOLES |
+| 51 | MYR crypto exchange price gaps | `docs/PREREG_LOOPHOLES_20261120.md`. | FAIL: uniform +0.4-0.55% Luno premium on all coins = MYR conversion cost; 1-tick spreads | PREREG_LOOPHOLES |
 | 52 | static-drawdown prop firm coin-flip (control) | `docs/PREREG_LOOPHOLES_20261120.md`. | structure pays random play at >=2% risk ($33K coin flip at 2%); FTMO bans high risk-per-idea; prop-related | PREREG_LOOPHOLES |
 
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /

@@ -88,3 +88,15 @@ fixed floor, expected withdrawals per funded account ≈ split × buffer
 Malaysia is not on third-party restriction maps (not verified on FTMO's site).
 The model assumes the balance resets to the start after each payout, and checks
 the daily loss only on realised P&L. Both are unverified/optimistic.
+
+### #51 MYR crypto exchange gap: FAIL (no stage 2)
+Run: `uv run python scripts/myx_gap_20261120.py` → `docs/jx_runs/myx_gap_20261120.txt`
+(six GitHub-runner snapshots, 02:31–03:23 UTC). Other registered Malaysian
+exchanges had no reachable public price feed (Tokenize/SINEGY DNS failures,
+Hata/MX Global 404).
+- Luno trades **+0.38% to +0.55% above** Kraken × USD/MYR on BTC, ETH, SOL and
+  XRP alike, with one-tick spreads (professional market makers present).
+- The gap is the same for every coin, so it reflects the cost of moving money
+  into/out of MYR (and a daily FX reference rate), not a coin mispricing.
+  Capturing it means buying offshore in USD and converting MYR back, and bank/
+  Wise FX spreads (~0.4–1%) plus fees exceed the gap + 0.3% bar → FAIL.

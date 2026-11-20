@@ -216,6 +216,7 @@ day at every size.
 | H1 | IPO value per RM applied r/(1+X), mean (halves) | 0.40% (1.69% / −0.76%) → FAIL | `uv run python scripts/ipo_test_20261120.py` | 19 IPOs 2024-05..2026-11 | 2026-11-20 | current; hand-collected sample |
 | H2 | IPO avg profit per application, mean / median; RM/yr at 55 IPOs | RM311 / RM201; RM17.1K (mean), 90% range RM5.2K–31.1K | same | same | 2026-11-20 | post-hoc metric |
 | H3 | FTMO 100K coin-flip median net at 1% / 2% / 3% risk | −$2,570 / $32,683 / $93,174 | `uv run python scripts/static_dd_20261120.py` | 2016–26 | 2026-11-20 | rules third-party; 2–3% risk may breach FTMO practices |
+| H5 | Luno premium over Kraken × USD/MYR (BTC/ETH/SOL/XRP), 6 snapshots | +0.38% to +0.55% | `uv run python scripts/myx_gap_20261120.py` | 2026-11-20 02:31–03:23 UTC | 2026-11-20 | FX ref rate is daily |
 | H4 | FTMO 100K real strategy net at 1% / 2% risk | $38,694 / $142,746 | same | 2016–26 | 2026-11-20 | same caveats |
 
 Raw output for every command above is in `docs/jx_runs/`.

@@ -1,0 +1,6 @@
+02:31 UTC | USD/MYR 4.112684 (Fri, 20 Nov 2026) | XBT gap +0.43% (Luno spread 0.00%) | ETH gap +0.39% (Luno spread 0.01%) | SOL gap +0.40% (Luno spread 0.00%) | XRP gap +0.44% (Luno spread 0.00%)
+02:41 UTC | USD/MYR 4.112684 (Fri, 20 Nov 2026) | XBT gap +0.49% (Luno spread 0.00%) | ETH gap +0.51% (Luno spread 0.01%) | SOL gap +0.49% (Luno spread 0.00%) | XRP gap +0.54% (Luno spread 0.03%)
+02:52 UTC | USD/MYR 4.112684 (Fri, 20 Nov 2026) | XBT gap +0.45% (Luno spread 0.00%) | ETH gap +0.39% (Luno spread 0.01%) | SOL gap +0.38% (Luno spread 0.00%) | XRP gap +0.51% (Luno spread 0.00%)
+03:02 UTC | USD/MYR 4.112684 (Fri, 20 Nov 2026) | XBT gap +0.47% (Luno spread 0.09%) | ETH gap +0.40% (Luno spread 0.01%) | SOL gap +0.39% (Luno spread 0.00%) | XRP gap +0.42% (Luno spread 0.00%)
+03:12 UTC | USD/MYR 4.112684 (Fri, 20 Nov 2026) | XBT gap +0.54% (Luno spread 0.00%) | ETH gap +0.41% (Luno spread 0.01%) | SOL gap +0.49% (Luno spread 0.00%) | XRP gap +0.51% (Luno spread 0.00%)
+03:23 UTC | USD/MYR 4.112684 (Fri, 20 Nov 2026) | XBT gap +0.55% (Luno spread 0.00%) | ETH gap +0.50% (Luno spread 0.01%) | SOL gap +0.50% (Luno spread 0.00%) | XRP gap +0.51% (Luno spread 0.00%)

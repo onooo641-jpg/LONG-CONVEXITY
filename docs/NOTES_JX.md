@@ -511,3 +511,10 @@ Pre-registered, backtested on free public data fetched through GitHub Actions
 - **Tested and failed:** shorting new listings. It looked like +$171 per
   $1,000 on 2024 listings, then lost $111 on unseen 2023 listings, with 27% of
   coins squeezing 50% or more.
+
+## Non-prop loophole hunt (2026-11-20, docs/PREREG_LOOPHOLES_20261120.md)
+- IPO ballot: fails the pre-registered test; average applicant makes ~RM140–310 per IPO but needs ~RM30K+ per application and late-2026 IPOs turned weak.
+- i-Saraan: the one guaranteed freebie found: RM500/yr (20% on RM2,500), RM5,000 lifetime; 90% locked in EPF.
+- ASM funds: 5% liquid, ~1% above best FDs; good for idle cash.
+- Luno vs global: uniform ~0.45% premium = MYR conversion cost; not exploitable.
+- Static-drawdown prop firms (FTMO 2-Step): structure pays random play at ≥2% risk; FTMO polices risk per trade; prop-related; verify rules before any test.
