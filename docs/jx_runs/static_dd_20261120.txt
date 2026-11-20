@@ -1,0 +1,3 @@
+risk $1,000/trade: coin-flip median net $   -2,570 ($  -237/yr), profitable 40%, 10th pct $  -10,698, median funded 2, median spent $10,822 | real net $   38,694 (funded 3, spent $7,605)
+risk $2,000/trade: coin-flip median net $   32,683 ($ 3,019/yr), profitable 91%, 10th pct $    2,675, median funded 10, median spent $29,250 | real net $  142,746 (funded 13, spent $25,155)
+risk $3,000/trade: coin-flip median net $   93,174 ($ 8,607/yr), profitable 100%, 10th pct $   42,803, median funded 20, median spent $49,140 | real net $  224,198 (funded 21, spent $42,705)

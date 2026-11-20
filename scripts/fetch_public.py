@@ -518,7 +518,74 @@ def job_iponews():
     print(f"iponews: {len(rows)} IPOs, {sum(1 for r in rows if r['x_headline'])} with a headline oversubscription rate", flush=True)
 
 
-JOBS = {"iponews": job_iponews, "ipo": job_ipo, "myxsnap": job_myxsnap, "batch2": job_batch2, "hl2023d": job_hl2023d, "hl2023": job_hl2023, "hl": job_hl, "llama_lend": job_llama_lend, "llama_pools": job_llama_pools,
+def _rss_oversub(short):
+    import re
+    import xml.etree.ElementTree as ET
+    pat = re.compile(r"oversubscribed\D{0,12}?([\d,]+(?:\.\d+)?)\s*(?:times|x\b)", re.I)
+    for q in (f'"{short}" IPO oversubscribed', f"{short} IPO oversubscribed times"):
+        raw = http_raw("https://news.google.com/rss/search?hl=en-MY&gl=MY&ceid=MY:en&q=" + urllib.parse.quote(q))
+        time.sleep(1.0)
+        if not raw:
+            continue
+        try:
+            items = ET.fromstring(raw).findall(".//item")
+        except ET.ParseError:
+            continue
+        for it in items[:15]:
+            title = it.findtext("title") or ""
+            if short.split()[0].lower() not in title.lower():
+                continue
+            m = pat.search(title)
+            if m:
+                return float(m.group(1).replace(",", "")), title[:200]
+    return None, None
+
+
+def job_ipo2():
+    """Bursa IPOs 2024+ via i3investor IPO pages (sequential stock codes), Yahoo first days, news oversubscription."""
+    import re
+    codes = [f"{c:04d}" for c in range(270, 431)] + [str(c) for c in range(5300, 5361)]
+    rows = []
+    for code in codes:
+        raw = http_raw(f"https://klse.i3investor.com/web/stock/ipo-summary/{code}", tries=2)
+        time.sleep(0.8)
+        if not raw:
+            continue
+        html = raw.decode(errors="replace")
+        txt = re.sub(r"<[^>]+>", " ", html)
+        txt = re.sub(r"\s+", " ", txt)
+        lst = re.search(r"Listing Date\s*(\d{4}-\d{2}-\d{2})", txt)
+        if not lst or lst.group(1) < "2024-01-01":
+            continue
+        name = re.search(r"<title>\s*([^<|]+)", html)
+        price = re.search(r"(?:ISSUE|OFFER|RETAIL|IPO)[ /A-Z]{0,30}?PRICE OF RM\s?([\d.]+)", txt, re.I)
+        opn = re.search(r"Opening\s*(\d{4}-\d{2}-\d{2})", txt)
+        cls = re.search(r"Closing\s*(\d{4}-\d{2}-\d{2})", txt)
+        rec = {"code": code, "name": name.group(1).strip() if name else None, "listing": lst.group(1),
+               "issue_price": float(price.group(1).rstrip(".")) if price else None,
+               "offer_open": opn.group(1) if opn else None, "offer_close": cls.group(1) if cls else None,
+               "market": "ACE" if "ACE MARKET" in txt.upper() else ("Main" if "MAIN MARKET" in txt.upper() else "?")}
+        d0 = pd.Timestamp(rec["listing"], tz="Asia/Kuala_Lumpur")
+        p1, p2 = int((d0 - pd.Timedelta(days=2)).timestamp()), int((d0 + pd.Timedelta(days=40)).timestamp())
+        cj = http_raw(f"https://query1.finance.yahoo.com/v8/finance/chart/{code}.KL?period1={p1}&period2={p2}&interval=1d")
+        time.sleep(0.6)
+        try:
+            res = json.loads(cj)["chart"]["result"][0]
+            q = res["indicators"]["quote"][0]
+            bars = [(t, o, c) for t, o, c in zip(res["timestamp"], q["open"], q["close"]) if c is not None]
+            rec.update(d1_ts=bars[0][0], d1_open=bars[0][1], d1_close=bars[0][2],
+                       d5_close=bars[min(4, len(bars) - 1)][2], d20_close=bars[min(19, len(bars) - 1)][2])
+        except Exception as e:  # noqa: BLE001
+            print(f"  yahoo {code}: {type(e).__name__}", flush=True)
+        short = re.sub(r"\s+(BERHAD|BHD)\b.*$", "", (rec["name"] or code).upper(), flags=re.I).title()
+        rec["x_headline"], rec["x_title"] = _rss_oversub(short)
+        rows.append(rec)
+        print(f"  {code} {rec['listing']} {short[:30]:<30} price {rec['issue_price']} d1 {rec.get('d1_close')} X {rec['x_headline']}", flush=True)
+    pd.DataFrame(rows).to_parquet(OUT / "ipo2.parquet")
+    print(f"ipo2: {len(rows)} IPOs since 2024", flush=True)
+
+
+JOBS = {"ipo2": job_ipo2, "iponews": job_iponews, "ipo": job_ipo, "myxsnap": job_myxsnap, "batch2": job_batch2, "hl2023d": job_hl2023d, "hl2023": job_hl2023, "hl": job_hl, "llama_lend": job_llama_lend, "llama_pools": job_llama_pools,
         "llama_prices": job_llama_prices, "poly": job_poly}
 
 

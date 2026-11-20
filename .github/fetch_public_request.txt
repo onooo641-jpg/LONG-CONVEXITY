@@ -1,2 +1,2 @@
 # jobs for scripts/fetch_public.py (PREREG_LOOPHOLES_20261120)
-iponews
+ipo2
