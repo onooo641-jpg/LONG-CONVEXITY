@@ -1,0 +1,62 @@
+=== liq_prices_gnosis
+  FAIL https://coins.llama.fi/chart/xdai:0x016e0081fcaad345691027908d5044534bca1946,xdai:0x052ad78e3aa0b0f2d3912fd3b50a9a289cf2  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0x016e0081fcaad345691027908d5044534bca1946,xdai:0x052ad78e3aa0b0f2d3912fd3b50a9a289cf2  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0x016e0081fcaad345691027908d5044534bca1946,xdai:0x052ad78e3aa0b0f2d3912fd3b50a9a289cf2  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0x016e0081fcaad345691027908d5044534bca1946,xdai:0x052ad78e3aa0b0f2d3912fd3b50a9a289cf2  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0x016e0081fcaad345691027908d5044534bca1946,xdai:0x052ad78e3aa0b0f2d3912fd3b50a9a289cf2  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0x016e0081fcaad345691027908d5044534bca1946,xdai:0x052ad78e3aa0b0f2d3912fd3b50a9a289cf2  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0x016e0081fcaad345691027908d5044534bca1946,xdai:0x052ad78e3aa0b0f2d3912fd3b50a9a289cf2  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0x016e0081fcaad345691027908d5044534bca1946,xdai:0x052ad78e3aa0b0f2d3912fd3b50a9a289cf2  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0x2a22f9c3b484c3629090feed35f17ff8f88f76f0,xdai:0x2fb7eeeece8498af2bf5b00ea29ca03005c3  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0x2a22f9c3b484c3629090feed35f17ff8f88f76f0,xdai:0x2fb7eeeece8498af2bf5b00ea29ca03005c3  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0x2a22f9c3b484c3629090feed35f17ff8f88f76f0,xdai:0x2fb7eeeece8498af2bf5b00ea29ca03005c3  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0x2a22f9c3b484c3629090feed35f17ff8f88f76f0,xdai:0x2fb7eeeece8498af2bf5b00ea29ca03005c3  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0x2a22f9c3b484c3629090feed35f17ff8f88f76f0,xdai:0x2fb7eeeece8498af2bf5b00ea29ca03005c3  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0x2a22f9c3b484c3629090feed35f17ff8f88f76f0,xdai:0x2fb7eeeece8498af2bf5b00ea29ca03005c3  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0x2a22f9c3b484c3629090feed35f17ff8f88f76f0,xdai:0x2fb7eeeece8498af2bf5b00ea29ca03005c3  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0x2a22f9c3b484c3629090feed35f17ff8f88f76f0,xdai:0x2fb7eeeece8498af2bf5b00ea29ca03005c3  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0x5e2a09064b2dca8c44aad8a5b69a69bb1854fe72,xdai:0x63a1849b47ef5913ccc5adb0e2708b11a4ba  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0x5e2a09064b2dca8c44aad8a5b69a69bb1854fe72,xdai:0x63a1849b47ef5913ccc5adb0e2708b11a4ba  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0x5e2a09064b2dca8c44aad8a5b69a69bb1854fe72,xdai:0x63a1849b47ef5913ccc5adb0e2708b11a4ba  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0x5e2a09064b2dca8c44aad8a5b69a69bb1854fe72,xdai:0x63a1849b47ef5913ccc5adb0e2708b11a4ba  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0x5e2a09064b2dca8c44aad8a5b69a69bb1854fe72,xdai:0x63a1849b47ef5913ccc5adb0e2708b11a4ba  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0x5e2a09064b2dca8c44aad8a5b69a69bb1854fe72,xdai:0x63a1849b47ef5913ccc5adb0e2708b11a4ba  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0x5e2a09064b2dca8c44aad8a5b69a69bb1854fe72,xdai:0x63a1849b47ef5913ccc5adb0e2708b11a4ba  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0x5e2a09064b2dca8c44aad8a5b69a69bb1854fe72,xdai:0x63a1849b47ef5913ccc5adb0e2708b11a4ba  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0x92ea0f03b611e7e6d056371a3c6b2bb188199c47,xdai:0x960e61f5c4107d71bd8936b010416738c250  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0x92ea0f03b611e7e6d056371a3c6b2bb188199c47,xdai:0x960e61f5c4107d71bd8936b010416738c250  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0x92ea0f03b611e7e6d056371a3c6b2bb188199c47,xdai:0x960e61f5c4107d71bd8936b010416738c250  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0x92ea0f03b611e7e6d056371a3c6b2bb188199c47,xdai:0x960e61f5c4107d71bd8936b010416738c250  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0x92ea0f03b611e7e6d056371a3c6b2bb188199c47,xdai:0x960e61f5c4107d71bd8936b010416738c250  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0x92ea0f03b611e7e6d056371a3c6b2bb188199c47,xdai:0x960e61f5c4107d71bd8936b010416738c250  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0x92ea0f03b611e7e6d056371a3c6b2bb188199c47,xdai:0x960e61f5c4107d71bd8936b010416738c250  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0x92ea0f03b611e7e6d056371a3c6b2bb188199c47,xdai:0x960e61f5c4107d71bd8936b010416738c250  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0xafa816f7fff6f252e5cdbd40b80d9ef77b7e289b,xdai:0xb2960e73b260812e4326723c7136e7b1988a  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0xafa816f7fff6f252e5cdbd40b80d9ef77b7e289b,xdai:0xb2960e73b260812e4326723c7136e7b1988a  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0xafa816f7fff6f252e5cdbd40b80d9ef77b7e289b,xdai:0xb2960e73b260812e4326723c7136e7b1988a  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0xafa816f7fff6f252e5cdbd40b80d9ef77b7e289b,xdai:0xb2960e73b260812e4326723c7136e7b1988a  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0xafa816f7fff6f252e5cdbd40b80d9ef77b7e289b,xdai:0xb2960e73b260812e4326723c7136e7b1988a  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0xafa816f7fff6f252e5cdbd40b80d9ef77b7e289b,xdai:0xb2960e73b260812e4326723c7136e7b1988a  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0xafa816f7fff6f252e5cdbd40b80d9ef77b7e289b,xdai:0xb2960e73b260812e4326723c7136e7b1988a  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0xafa816f7fff6f252e5cdbd40b80d9ef77b7e289b,xdai:0xb2960e73b260812e4326723c7136e7b1988a  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0xd88e8873e90f734c9d3e3519e9e87345478c1df2,xdai:0xda47bd33e8f5d17bb81b8752784bfb46c1c4  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0xd88e8873e90f734c9d3e3519e9e87345478c1df2,xdai:0xda47bd33e8f5d17bb81b8752784bfb46c1c4  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0xd88e8873e90f734c9d3e3519e9e87345478c1df2,xdai:0xda47bd33e8f5d17bb81b8752784bfb46c1c4  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0xd88e8873e90f734c9d3e3519e9e87345478c1df2,xdai:0xda47bd33e8f5d17bb81b8752784bfb46c1c4  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0xd88e8873e90f734c9d3e3519e9e87345478c1df2,xdai:0xda47bd33e8f5d17bb81b8752784bfb46c1c4  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0xd88e8873e90f734c9d3e3519e9e87345478c1df2,xdai:0xda47bd33e8f5d17bb81b8752784bfb46c1c4  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0xd88e8873e90f734c9d3e3519e9e87345478c1df2,xdai:0xda47bd33e8f5d17bb81b8752784bfb46c1c4  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/xdai:0xd88e8873e90f734c9d3e3519e9e87345478c1df2,xdai:0xda47bd33e8f5d17bb81b8752784bfb46c1c4  -> HTTP 400
+gnosis: prices 845 points, 3/63 coins priced
+=== liq_prices_gnosis done in 32s  ok 8 fail 48
+=== liq_prices_metis
+  FAIL https://coins.llama.fi/chart/metis:0x2583a2538272f31e9a15dd12a432b8c96ab4821d,metis:0x4200000000000000000000000000000000  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/metis:0x2583a2538272f31e9a15dd12a432b8c96ab4821d,metis:0x4200000000000000000000000000000000  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/metis:0x2583a2538272f31e9a15dd12a432b8c96ab4821d,metis:0x4200000000000000000000000000000000  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/metis:0x2583a2538272f31e9a15dd12a432b8c96ab4821d,metis:0x4200000000000000000000000000000000  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/metis:0x2583a2538272f31e9a15dd12a432b8c96ab4821d,metis:0x4200000000000000000000000000000000  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/metis:0x2583a2538272f31e9a15dd12a432b8c96ab4821d,metis:0x4200000000000000000000000000000000  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/metis:0x2583a2538272f31e9a15dd12a432b8c96ab4821d,metis:0x4200000000000000000000000000000000  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/metis:0x2583a2538272f31e9a15dd12a432b8c96ab4821d,metis:0x4200000000000000000000000000000000  -> HTTP 400
+metis: prices 0 points, 0/8 coins priced
+=== liq_prices_metis done in 5s  ok 8 fail 56
