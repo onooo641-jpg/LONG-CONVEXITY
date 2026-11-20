@@ -94,6 +94,7 @@ risk, 5m signals and 1m fills.
 | 57 | funding-rate carry (Hyperliquid majors), rotating top-3 and BTC+ETH held | `docs/PREREG_NONPROP2_20261120.md`. Pass > 8%/yr on capital, both halves positive. | fail (2.9% / 6.4%; yields falling since 2024) | PREREG_NONPROP2 results |
 | 58 | friend's NQ strategy on own money | same. Pass > 15%/yr at 25% max-DD sizing, both halves positive. | fail (−$2,553 over 2016–26; max DD −$73K) | PREREG_NONPROP2 results |
 | 59 | offshore broker credit bonuses as a loss buffer | same. Terms screen. | fail (credit does not absorb losses, or one-time capped) | PREREG_NONPROP2 results |
+| 60 | multi-firm portfolio, same trades (Topstep, Lucid, MFFU, Breakout; 1 slot each and max slots) | `docs/PREREG_PORTFOLIO_20261120.md`. Sizing, no pass/fail. | B− (Topstep+Lucid+MFFU) $116K / $10.7K/yr, cash on hand $13.8K; max slots $513K, cash $58K; firms correlate 0.80–0.88; year one median $5.1K, 35% of starts lose | PREREG_PORTFOLIO results |
 
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.

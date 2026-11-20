@@ -528,3 +528,26 @@ Pre-registered, backtested on free public data fetched through GitHub Actions
 - TradeDay Fast Pass at $85/mo (discount code): $35.7K vs Topstep $44.4K — closest futures match; bot must live inside NinjaTrader/Tradovate/TradingView. Elite Trader Funding and FXIFY Futures don't allow bots. Bulenox Momentum loses money (30-day eval limit).
 - Breakout / Kraken Prop Classic 50K: Topstep-level ($38–57K) once its 10x leverage cap is applied; uncapped numbers were a model artefact. Malaysia not restricted. Bot policy unpublished — must ask.
 - Non-prop classes screened out by reasoning (betting illegal in MY, bank bonuses US-only, airdrops untestable/grey).
+
+## Conclusion of the 2026-11-20 search (CANDIDATES #48–60)
+**Answer:** the only thing that makes Topstep-level money is prop-firm structure, and the
+way to scale it is more firm slots running the same trades, not a different strategy.
+- 60 pre-registered tests. Every non-prop idea failed (#29–33, #37–47, #49–51, #57–59).
+  The friend's trades lose money on own money over 2016–26 (#58), so the income is the
+  firms' rules, which pay even random trading (coin flips profit in 94–98% of runs).
+- No single firm beats Topstep 50K (#48, #53–56). Lucid, MFFU and Breakout come close
+  and run alongside it.
+- Plan figures (#60): Topstep + Lucid + MFFU = $10.7K/yr over 2016–26, cash on hand
+  $13.8K; at max slots (5 Topstep, 5 Lucid, 3 MFFU) $47K/yr and $58K cash on hand.
+  Firms move together (correlation 0.80–0.88), so dips stack. Year one: median $5.1K,
+  35% of start months lose money, worst $6.7K out of pocket.
+- Scale in steps: Topstep alone until the live account confirms the backtest, then add
+  Lucid and MFFU, then more slots. Breakout only once a bot can connect.
+
+**What the backtest cannot settle (needs live data or the firms):**
+1. Live Topstep results vs the model (the friend's live account).
+2. Breakout/Kraken Prop: bot connection and the "heightened risk" clause.
+3. Whether copying one strategy across 5 accounts per firm stays allowed in practice
+   (Topstep's help centre permits multiple XFAs; firms may deny them at their discretion).
+4. MFFU Rapid EOD still on sale; TradeDay discount recurrence; Lucid/MFFU prices.
+5. Household rules: Lucid and Breakout count per household.

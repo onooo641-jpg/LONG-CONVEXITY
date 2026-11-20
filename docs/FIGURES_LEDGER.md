@@ -263,4 +263,15 @@ day at every size.
 | P3 | friend's NQ trades on own money, $900 risk: net / max DD | −$2,553 / −$73,445 | same | 2016–26 | 2026-11-20 | current |
 | P4 | same, 2016–20 / 2021–26 | −$60,133 / +$57,580 | same | same | 2026-11-20 | current |
 
+## Multi-firm portfolio (docs/PREREG_PORTFOLIO_20261120.md, pre-registered 0922084; addendum before part 2)
+
+| # | figure | value | command | window | computed | status |
+|---|---|---|---|---|---|---|
+| M1 | net 2016–26: A Topstep×1 / B 4 firms ×1 / B− no Breakout / C max slots / C− | $44,359 / $154,625 / $116,362 / $551,113 / $512,850 | `uv run python scripts/portfolio_20261120.py` | 2016–26 | 2026-11-20 | firm caveats as per component prereg |
+| M2 | worst dip (= cash on hand), same order | $3,520 / $22,853 / $13,829 / $66,990 / $57,966 | same | same | 2026-11-20 | same |
+| M3 | monthly P&L correlation between firms | 0.80–0.88 | same | same | 2026-11-20 | same |
+| M4 | coin flip, B: median net / profitable / 5th-pct worst dip | $51,287 / 94% / −$36,350 | same | same | 2026-11-20 | same |
+| M5 | year-one net median, A / B− (share of starts losing) | $1,704 (32%) / $5,127 (35%) | `uv run python scripts/portfolio_starts_20261120.py` | starts 2016-01..2025-10 | 2026-11-20 | same |
+| M6 | worst year-one out of pocket, A / B− | −$1,906 / −$6,722 | same | same | 2026-11-20 | same |
+
 Raw output for every command above is in `docs/jx_runs/`.

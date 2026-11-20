@@ -48,3 +48,31 @@ starts) and records, for portfolios A and B−, the first 12 months: net income,
 and most out of pocket. Reported: median, 10th percentile and share of starts that lose
 money in year one. B− is used because Breakout's bot connection is unconfirmed.
 Command: `uv run python scripts/portfolio_starts_20261120.py`
+
+## Results part 1 (2026-11-20, `docs/jx_runs/portfolio_20261120.txt`)
+Single-slot totals reproduce earlier runs exactly (Topstep $44,359, Lucid $37,523, MFFU $34,481, Breakout $38,263).
+
+| portfolio | net 2016–26 (/yr) | 2016–20 / 2021–26 | worst dip = cash on hand | longest below peak | losing years |
+|---|---|---|---|---|---|
+| A Topstep ×1 | $44,359 ($4,097) | $7,671 / $36,687 | $3,520 | 44.7 mo | 4 |
+| B one slot at each of 4 firms | $154,625 ($14,280) | $20,037 / $134,588 | $22,853 | 50.2 mo | 5 |
+| B− same without Breakout | $116,362 ($10,746) | $17,970 / $98,392 | $13,829 | 50.1 mo | 4 |
+| C max slots (5/5/3/1) | $551,113 ($50,896) | $83,758 / $467,355 | $66,990 | 50.2 mo | 4 |
+| C− max slots without Breakout | $512,850 ($47,362) | $81,691 / $431,159 | $57,966 | 50.1 mo | 4 |
+
+- Monthly P&L correlation between firms is 0.80–0.88: adding firms adds income almost
+  linearly but also adds the dips, which line up in time (2016–18, 2021–22).
+- Coin flip, portfolio B: median $51,287, 94% profitable, 5th percentile −$5,713; median
+  worst dip −$20,217, 5th percentile −$36,350. The structure still pays without an edge.
+- Income is back-loaded: 2016–18 lose every year at every scale; 2023–26 make most of it.
+
+## Results part 2: start-date test (`docs/jx_runs/portfolio_starts_20261120.txt`)
+First 12 months after starting on the 1st of each month, 2016-01..2025-10 (118 starts):
+
+| portfolio | year-one net median (10th / 90th pct) | starts that lose in year one | worst out of pocket in year one |
+|---|---|---|---|
+| A Topstep ×1 | $1,704 (−$1,320 / $9,624) | 32% | −$1,906 |
+| B− Topstep + Lucid + MFFU | $5,127 (−$5,552 / $25,071) | 35% | −$6,722 |
+
+Median year-one net by start year (B−): 2016 −$3,546, 2017 −$5,274, 2018 $1,045,
+2019 $18,537, 2020 $5,356, 2021 $2,004, 2022 $12,140, 2023 $22,817, 2024 $22,060, 2025 $2,690.
