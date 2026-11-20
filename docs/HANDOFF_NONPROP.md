@@ -41,3 +41,26 @@ that repeat, not price patterns.
 - Bursa and i3investor return 403 to GitHub; Yahoo rate-limits.
 - WebFetch on a URL not seen in search results needs Jx's approval.
 - Work on the same branch as the main session (the fetch workflow only runs there); `git pull --rebase` before each push.
+
+## Next ideas to test, in priority order (added 2026-11-20 by the prop-firm session)
+All are "rule-based subsidies": a protocol, exchange or contest pays by rule, not by mispricing.
+ROI figures below are rough estimates, not measured.
+1. **Lending-protocol liquidation bonuses.** Aave/Compound forks pay a fixed 5–10% bonus to whoever
+   liquidates an unhealthy loan. Test: historical liquidation events per protocol/chain (on-chain or
+   indexer data), bonus paid, gas cost, and how concentrated the winners are. Look for smaller chains and
+   forks where the top bots do not take everything. Fits Jx's sniper-bot experience.
+2. **Points/airdrop farming, delta-neutral.** New perp DEXs and lending markets pay tokens for volume or
+   deposits. Test: value paid per $ of volume/deposit in past airdrops vs the cost of farming it hedged
+   (fees, funding, capital time). Not backtestable forward; the question is whether the historical
+   payout per $ cost is consistently positive.
+3. **Cross-venue funding gaps on new listings.** Different from #37/#57: long the perp on the venue with
+   low funding, short on the high one. Needs a second venue's funding history that GitHub (US servers)
+   can reach.
+4. **Polymarket liquidity rewards.** Polymarket pays makers daily rewards for quoting near the midpoint.
+   Data is blocked from US servers (#40); check first whether Polymarket is legally available in Malaysia
+   before any local run.
+5. **SPAC trust-value arbitrage.** Buy SPAC units/shares at or below trust value; the redemption right
+   floors the price, warrants are a free option. Low risk, roughly T-bill plus a few %, so capital-heavy.
+   Mainly a benchmark for "safe" capital.
+6. **Free-entry trading competitions.** Zero cost, positive expected value, small prizes and not repeatable;
+   only worth it if entry is free and automatable.
