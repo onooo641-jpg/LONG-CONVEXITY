@@ -585,8 +585,189 @@ def job_ipo2():
     print(f"ipo2: {len(rows)} IPOs since 2024", flush=True)
 
 
+# ------------------------------------------------- lending liquidations (PREREG_LIQUIDATIONS_20261120)
+LIQ_TOPIC = "0xe413a321e8681d831f4dbccbca790d2952b56f977908e45be37335533e005286"  # LiquidationCall(...)
+LIQ_CHAINS = {
+    # name: (llama chain key, native price key (or None = $1), rpc endpoints)
+    "base": ("base", "coingecko:ethereum", ["https://base-rpc.publicnode.com", "https://mainnet.base.org", "https://base.llamarpc.com"]),
+    "arbitrum": ("arbitrum", "coingecko:ethereum", ["https://arbitrum-one-rpc.publicnode.com", "https://arb1.arbitrum.io/rpc"]),
+    "optimism": ("optimism", "coingecko:ethereum", ["https://optimism-rpc.publicnode.com", "https://mainnet.optimism.io"]),
+    "polygon": ("polygon", "coingecko:matic-network", ["https://polygon-bor-rpc.publicnode.com", "https://polygon-rpc.com"]),
+    "avalanche": ("avax", "coingecko:avalanche-2", ["https://avalanche-c-chain-rpc.publicnode.com", "https://api.avax.network/ext/bc/C/rpc"]),
+    "bnb": ("bsc", "coingecko:binancecoin", ["https://bsc-rpc.publicnode.com", "https://bsc-dataseed.binance.org"]),
+    "gnosis": ("xdai", None, ["https://gnosis-rpc.publicnode.com", "https://rpc.gnosischain.com"]),
+    "scroll": ("scroll", "coingecko:ethereum", ["https://scroll-rpc.publicnode.com", "https://rpc.scroll.io"]),
+    "metis": ("metis", "coingecko:metis-token", ["https://andromeda.metis.io/?owner=1088"]),
+}
+LIQ_START = int(pd.Timestamp("2024-11-01", tz="UTC").timestamp())
+LIQ_MONTHS = [int(t.timestamp()) for t in pd.date_range("2024-11-01", "2026-11-01", freq="MS", tz="UTC")]  # 25 edges
+LIQ_RECEIPT_CAP = 40000
+
+
+def rpc(urls, method, params, tries=3):
+    """JSON-RPC with endpoint fallback. Returns result, or raises RuntimeError with the last error."""
+    last = None
+    for k in range(tries):
+        for u in urls:
+            try:
+                req = urllib.request.Request(u, data=json.dumps({"jsonrpc": "2.0", "id": 1, "method": method, "params": params}).encode(),
+                                             headers={**UA, "Content-Type": "application/json"}, method="POST")
+                with urllib.request.urlopen(req, timeout=60) as r:
+                    j = json.loads(r.read().decode())
+                if "error" in j:
+                    last = f"{u}: {j['error']}"
+                    if "range" in str(j["error"]).lower() or "limit" in str(j["error"]).lower() or "exceed" in str(j["error"]).lower() or "too many" in str(j["error"]).lower():
+                        raise ValueError(last)  # caller shrinks the window
+                    continue
+                STATS["ok"] += 1
+                return j["result"]
+            except ValueError:
+                raise
+            except Exception as e:  # noqa: BLE001
+                last = f"{u}: {type(e).__name__}: {e}"
+        time.sleep(2 * (k + 1))
+    STATS["fail"] += 1
+    raise RuntimeError(last)
+
+
+def _block_ts(urls, n):
+    return int(rpc(urls, "eth_getBlockByNumber", [hex(n), False])["timestamp"], 16)
+
+
+def _first_block_at(urls, ts, lo, hi):
+    """first block with timestamp >= ts, searching [lo, hi]."""
+    while lo < hi:
+        mid = (lo + hi) // 2
+        if _block_ts(urls, mid) >= ts:
+            hi = mid
+        else:
+            lo = mid + 1
+    return lo
+
+
+def job_liq_chain(name):
+    from concurrent.futures import ThreadPoolExecutor
+    lkey, native, urls = LIQ_CHAINS[name]
+    head = int(rpc(urls, "eth_blockNumber", []), 16)
+    anchors, lo = [], 0
+    for ts in LIQ_MONTHS:
+        lo = _first_block_at(urls, ts, lo, head)
+        anchors.append(lo)
+    print(f"{name}: head {head}, month anchors {anchors[0]}..{anchors[-1]}", flush=True)
+    a0, a1 = anchors[0], anchors[-1] - 1
+    rows, step, b = [], 20000, a0
+    while b <= a1:
+        e = min(b + step - 1, a1)
+        try:
+            logs = rpc(urls, "eth_getLogs", [{"fromBlock": hex(b), "toBlock": hex(e), "topics": [LIQ_TOPIC]}])
+        except ValueError:
+            if step <= 500:
+                print(f"  {name}: window {b}-{e} refused even at {step} blocks; skipping", flush=True)
+                b = e + 1
+                continue
+            step = max(500, step // 2)
+            continue
+        except RuntimeError as ex:
+            print(f"  {name}: getLogs failed {b}-{e}: {str(ex)[:150]}", flush=True)
+            if step > 500:
+                step = max(500, step // 4)
+                continue
+            b = e + 1
+            continue
+        for lg in logs:
+            d = lg["data"][2:]
+            rows.append({"venue": lg["address"].lower(), "block": int(lg["blockNumber"], 16), "tx": lg["transactionHash"],
+                         "collateral": "0x" + lg["topics"][1][-40:], "debt": "0x" + lg["topics"][2][-40:],
+                         "user": "0x" + lg["topics"][3][-40:], "debt_amt": int(d[0:64], 16),
+                         "coll_amt": int(d[64:128], 16), "liquidator": "0x" + d[128:192][-40:]})
+        if len(logs) < 300:
+            step = min(step * 2, 2_000_000)
+        elif len(logs) > 3000:
+            step = max(500, step // 2)
+        b = e + 1
+    print(f"{name}: {len(rows)} liquidation events", flush=True)
+    if not rows:
+        return
+    df = pd.DataFrame(rows).drop_duplicates(["tx", "venue", "user", "block", "coll_amt", "debt_amt"]).reset_index(drop=True)
+    # month index (exact) and estimated timestamp (linear within month)
+    import numpy as np
+    mi = np.searchsorted(np.array(anchors), df["block"].values, side="right") - 1
+    df["month"] = mi
+    ts_edges = np.array(LIQ_MONTHS, dtype=float)
+    a = np.array(anchors, dtype=float)
+    frac = (df["block"].values - a[mi]) / np.maximum(a[mi + 1] - a[mi], 1)
+    df["ts"] = (ts_edges[mi] + frac * (ts_edges[mi + 1] - ts_edges[mi])).astype(int)
+    # receipts
+    txs = sorted(df["tx"].unique())
+    if len(txs) > LIQ_RECEIPT_CAP:
+        k = -(-len(txs) // LIQ_RECEIPT_CAP)
+        sample = txs[::k]
+        print(f"{name}: {len(txs)} txs > cap; fetching every {k}th ({len(sample)}); gas imputed for the rest", flush=True)
+    else:
+        sample = txs
+
+    def rec(t):
+        try:
+            r = rpc(urls, "eth_getTransactionReceipt", [t])
+            return {"tx": t, "from": r["from"].lower(), "gas_used": int(r["gasUsed"], 16),
+                    "gas_price": int(r.get("effectiveGasPrice", "0x0"), 16), "l1_fee": int(r.get("l1Fee", "0x0") or "0x0", 16),
+                    "status": int(r.get("status", "0x1"), 16)}
+        except Exception:  # noqa: BLE001
+            return None
+    with ThreadPoolExecutor(6) as ex:
+        rc = [x for x in ex.map(rec, sample) if x]
+    print(f"{name}: receipts {len(rc)}/{len(sample)}", flush=True)
+    rcdf = pd.DataFrame(rc)
+    df = df.merge(rcdf, on="tx", how="left")
+    df["receipt_sampled"] = len(txs) > LIQ_RECEIPT_CAP
+    # token decimals
+    toks = sorted(set(df["collateral"]) | set(df["debt"]))
+    dec = {}
+    for t in toks:
+        try:
+            dec[t] = int(rpc(urls, "eth_call", [{"to": t, "data": "0x313ce567"}, "latest"]), 16)
+        except Exception:  # noqa: BLE001
+            dec[t] = None
+    df["coll_dec"] = df["collateral"].map(dec)
+    df["debt_dec"] = df["debt"].map(dec)
+    df.to_parquet(OUT / f"liq_{name}.parquet")
+    # prices (daily, DefiLlama)
+    keys = [f"{lkey}:{t}" for t in toks] + ([native] if native else [])
+    prows = []
+    for i in range(0, len(keys), 15):
+        batch = keys[i:i + 15]
+        for st in (LIQ_START - 86400, LIQ_START - 86400 + 365 * 86400):
+            j = http("https://coins.llama.fi/chart/" + urllib.parse.quote(",".join(batch), safe=",:") + f"?start={st}&span=365&period=1d")
+            time.sleep(0.5)
+            for k, v in ((j or {}).get("coins") or {}).items():
+                for p in v.get("prices", []):
+                    prows.append({"coin": k, "ts": int(p["timestamp"]), "price": float(p["price"])})
+    pd.DataFrame(prows).to_parquet(OUT / f"liq_{name}_prices.parquet")
+    print(f"{name}: wrote {len(df)} events, {len(prows)} price points for {len(keys)} coins", flush=True)
+
+
+def job_liq_probe():
+    """Reachability probe for Solana lenders (Kamino/MarginFi/Save/Drift): no data pulled, just what answers."""
+    sol = ["https://api.mainnet-beta.solana.com", "https://solana-rpc.publicnode.com"]
+    progs = {"kamino_klend": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD", "marginfi": "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
+             "save_solend": "So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo", "drift": "dRiftyHA39MWEi3m9aunc5MzRF1JYuBsbn6VPcn33UH"}
+    for n, pid in progs.items():
+        try:
+            r = rpc(sol, "getSignaturesForAddress", [pid, {"limit": 1000}])
+            print(f"probe {n}: {len(r)} signatures; oldest of newest 1000 = {pd.to_datetime(r[-1].get('blockTime'), unit='s') if r else None}", flush=True)
+        except Exception as e:  # noqa: BLE001
+            print(f"probe {n}: failed {str(e)[:150]}", flush=True)
+    print("probe note: signatures include every transaction of the program, not only liquidations; "
+          "24 months of these via public RPC is not feasible, so Solana is judged on this probe only.", flush=True)
+
+
+for _c in LIQ_CHAINS:
+    globals()[f"job_liq_{_c}"] = (lambda c: (lambda: job_liq_chain(c)))(_c)
+
+
 JOBS = {"ipo2": job_ipo2, "iponews": job_iponews, "ipo": job_ipo, "myxsnap": job_myxsnap, "batch2": job_batch2, "hl2023d": job_hl2023d, "hl2023": job_hl2023, "hl": job_hl, "llama_lend": job_llama_lend, "llama_pools": job_llama_pools,
-        "llama_prices": job_llama_prices, "poly": job_poly}
+        "llama_prices": job_llama_prices, "poly": job_poly,
+        "liq_probe": job_liq_probe, **{f"liq_{c}": globals()[f"job_liq_{c}"] for c in LIQ_CHAINS}}
 
 
 def main(argv):
