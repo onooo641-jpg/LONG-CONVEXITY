@@ -613,3 +613,10 @@ Lucid/MFFU cloud routing is their own call, so check each firm's device/VPS rule
 - Before trading a second market live, the bot needs: per-market contract ids (MES, MYM), one engine per
   market, and a shared check of open positions across all accounts that blocks opposite-direction entries.
 - ES's own edge is unconfirmed (86% vs coin flips); YM narrowly confirmed (96%).
+
+## Bot changes for the market mix (2026-11-20 22:55) — see docs/MULTI_MARKET.md
+- Tick-grid fix (live NQ too): limit prices are rounded to the tick, buys down and sells up, which fills in
+  exactly the backtest's cases. ~46.5% of NQ entries were between ticks before. Two live tests updated to
+  expect the rounded price (29128.0 instead of 29127.875).
+- New, off by default: `BRIDGE_MARKET` (NQ/ES/YM presets), `BRIDGE_HEDGE_REGISTRY` (shared anti-hedge
+  check across engines), `--find-contract`, per-market journals. Tests: tests/test_hedge_multimarket.py.

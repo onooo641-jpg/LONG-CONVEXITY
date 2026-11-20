@@ -67,8 +67,9 @@ from ict import data as D
 from strategies.ltf_sweep import LTFSweepConfig, generate_orders
 
 from .config import Config
-from .execute import ERROR, Decision, clamp_note, place_sized
+from .execute import BLOCKED, ERROR, Decision, clamp_note, place_sized
 from .guards import AccountState
+from .hedge import HedgeRegistry, HedgeRegistryError
 from .journal import DEFAULT_PATH, Journal
 from .topstepx import BrokerError, DryRunBroker, TopstepXBroker
 
@@ -163,6 +164,8 @@ class LiveEngine:
     #: --live; a dry run's broker is our own code, so it is trusted.
     empty_proven: bool = True
     _unproven_noted: bool = False
+    #: Shared anti-hedge check across markets (bridge/hedge.py). None = off.
+    hedge: HedgeRegistry | None = None
 
     def announce(self) -> dict:
         """Open the journal with what this run is, so the file can say so later.
@@ -188,6 +191,8 @@ class LiveEngine:
             scaling_plan=self.cfg.scaling_plan,
             cutoff_minute=self.cfg.cutoff_minute,
             flat_minute=self.cfg.flat_minute,
+            market=self.cfg.market,
+            hedge_registry=self.cfg.hedge_registry,
         )
 
     def bars(self, now: pd.Timestamp) -> pd.DataFrame:
@@ -310,6 +315,8 @@ class LiveEngine:
     def finish(self, now: pd.Timestamp) -> None:
         self.closed = True
         self.finished_clean = True
+        if self.hedge is not None:
+            self.hedge.release(self.cfg.market)
         self.journal.write("session_done", at=now.isoformat(),
                            et_minute=et_minute(now),
                            nothing_outstanding=not self.outstanding)
@@ -352,6 +359,11 @@ class LiveEngine:
         if note:
             log.warning("%s", note)
 
+        if self.hedge is not None:
+            blocked = self.hedge_check(row, key, now)
+            if blocked is not None:
+                return blocked
+
         decision = place_sized(
             broker=self.broker, journal=self.journal, state=self.state, cfg=self.cfg,
             side=side, qty=qty, entry=float(row.entry_price), stop=float(row.stop_price),
@@ -362,10 +374,37 @@ class LiveEngine:
         # journal with the same refusal sixty times an hour.
         if decision.status != ERROR:
             self.handled.add(key)
+        if self.hedge is not None and not decision.ok:
+            # Nothing is resting, so the claim must not block other markets.
+            self.hedge.release(self.cfg.market, key)
         if decision.ok and decision.order_id is not None:
             self.outstanding[key] = decision.order_id
         log.info("%s -> %s", key, decision.detail)
         return decision
+
+    def hedge_check(self, row, key: str, now: pd.Timestamp) -> Decision | None:
+        """Claim this direction for our market, or refuse the entry.
+
+        Refused when another market holds the opposite direction, and also when
+        the registry cannot be read: an unknown book must not be read as flat.
+        """
+        flat = (now.tz_convert(NY).normalize()
+                + pd.Timedelta(minutes=self.cfg.flat_minute)).tz_convert("UTC")
+        try:
+            conflict = self.hedge.claim(self.cfg.market, int(row.direction), key, now, flat)
+        except (HedgeRegistryError, TimeoutError, OSError) as exc:
+            self.handled.add(key)
+            self.journal.write("blocked_hedge", key=key, why=f"registry unreadable: {exc}")
+            log.error("hedge registry unreadable (%s); not entering %s", exc, key)
+            return Decision(BLOCKED, "hedge registry unreadable")
+        if conflict is None:
+            return None
+        self.handled.add(key)
+        self.journal.write("blocked_hedge", key=key, market=self.cfg.market,
+                           direction=int(row.direction), conflict=conflict,
+                           why="opposite direction open in another market")
+        log.warning("not entering %s: %s holds the opposite direction", key, conflict["market"])
+        return Decision(BLOCKED, f"opposite direction open in {conflict['market']}")
 
     def close_out(self, now: pd.Timestamp) -> None:
         """Entry deadline: cancel what has not filled. A position may still be
@@ -462,8 +501,11 @@ def main(argv=None) -> int:
                          "class 3). Sends a real order to the configured account")
     ap.add_argument("--offline", action="store_true",
                     help="with --preflight, skip the checks that need the broker")
-    ap.add_argument("--journal", default=str(DEFAULT_PATH),
-                    help="where to append the decision journal")
+    ap.add_argument("--journal", default=None,
+                    help="where to append the decision journal (default "
+                         "data/bridge_journal.jsonl for NQ, data/bridge_journal_<market>.jsonl otherwise)")
+    ap.add_argument("--find-contract", metavar="TEXT",
+                    help="list contract ids matching TEXT (e.g. MES, MYM) and exit")
     ap.add_argument("--risk", type=float, default=900.0,
                     help="dollars risked per trade. 2%% of a 50K is 1000, but "
                          "commissions push a full stop past that -- the worst day "
@@ -482,6 +524,18 @@ def main(argv=None) -> int:
         print("\nPREFLIGHT FAILED -- configuration incomplete"
               if args.preflight else "\nnot starting -- configuration incomplete")
         return 1
+
+    if args.journal is None:
+        args.journal = (str(DEFAULT_PATH) if cfg.market == "NQ"
+                        else str(DEFAULT_PATH.with_name(f"bridge_journal_{cfg.market}.jsonl")))
+
+    if args.find_contract:
+        broker = TopstepXBroker(cfg)
+        broker.authenticate()
+        for c in broker.search_contracts(args.find_contract, live=cfg.live_data):
+            print(c.get("id"), "|", c.get("name"), "|", c.get("description"),
+                  "| tick", c.get("tickSize"), "| tick value", c.get("tickValue"))
+        return 0
 
     if args.preflight:
         from .preflight import report, run as preflight
@@ -511,7 +565,8 @@ def main(argv=None) -> int:
                     "Run `python -m bridge.live --roundtrip` first.",
                     cfg.account_id, cfg.contract_id)
     engine = LiveEngine(cfg=cfg, broker=broker, journal=Journal(args.journal),
-                        risk_usd=args.risk, empty_proven=proven)
+                        risk_usd=args.risk, empty_proven=proven,
+                        hedge=HedgeRegistry(cfg.hedge_registry) if cfg.hedge_registry else None)
     engine.announce()
     log.info("%s | %s | contract %s | risk $%.0f/trade | entries until %02d:%02d ET, "
              "flat %02d:%02d, exits when nothing is left open",

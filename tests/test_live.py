@@ -31,6 +31,10 @@ NY = "America/New_York"
 KNOWN_DAY = "2026-09-01"
 KNOWN_CONFIRM_ET = "09:57"
 KNOWN_ENTRY = 29127.875
+#: What goes to the broker: the gap midpoint sits between ticks, so a short's
+#: limit rounds UP to the grid (bridge.topstepx.snap_entry). Same fills as the
+#: backtest's "high >= 29127.875" on 0.25 ticks, half a tick better.
+KNOWN_LIMIT = 29128.0
 
 needs_data = pytest.mark.skipif(
     not (D.PROCESSED_DIR / "nq_1m.parquet").exists(),
@@ -147,7 +151,8 @@ def test_the_engine_sends_a_setup_once_and_only_once(day):
 
     assert len(eng.broker.sent) == 1
     sent = eng.broker.sent[0]
-    assert sent["limitPrice"] == pytest.approx(KNOWN_ENTRY, abs=0.01)
+    assert sent["limitPrice"] == KNOWN_LIMIT
+    assert (sent["limitPrice"] / 0.25) % 1 == 0, "limit price must sit on the tick grid"
     assert sent["side"] == 1, "the known setup is a short"
     assert sent["stopLossBracket"]["ticks"] > 0
     assert sent["takeProfitBracket"]["ticks"] > 0
@@ -184,7 +189,7 @@ def test_the_order_goes_out_the_instant_the_setup_confirms(day):
     assert len(eng.broker.sent) == 1, "and it must go out the moment it has"
 
     order = eng.broker.sent[0]
-    assert order["limitPrice"] == pytest.approx(KNOWN_ENTRY, abs=0.01)
+    assert order["limitPrice"] == KNOWN_LIMIT
 
 
 # --------------------------------------------------------------------------

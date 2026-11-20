@@ -29,6 +29,7 @@ sent. It is the default; sending real orders takes an explicit --live.
 from __future__ import annotations
 
 import json
+import math
 import urllib.error
 import urllib.request
 from dataclasses import dataclass, field
@@ -76,22 +77,40 @@ def bracket_ticks(entry: float, level: float, tick_size: float) -> int:
     return int(ticks)
 
 
+def snap_entry(price: float, side: str, tick_size: float) -> float:
+    """Put a limit price on the contract's tick grid without changing when it fills.
+
+    The strategy's entry is a gap midpoint, so about half of NQ entries sit
+    between ticks (e.g. 1930.375 on a 0.25 grid), and every YM entry can. The
+    backtest fills a buy limit when the low trades at or below the entry; on a
+    tick grid that is exactly "low <= the tick below it", so a buy rounds DOWN
+    and a sell rounds UP. Same fills as the model, at a price no worse.
+    """
+    steps = price / tick_size
+    if abs(steps - round(steps)) < 1e-9:
+        n = round(steps)
+    else:
+        n = math.floor(steps) if side == "buy" else math.ceil(steps)
+    return round(n * tick_size, 10)
+
+
 def order_payload(order: Order, cfg: Config) -> dict[str, Any]:
     """Build the /api/Order/place body. Pure, so the tests can read it."""
     if order.size < 1:
         raise BrokerError(f"refusing to send an order for {order.size} contracts")
     if cfg.account_id is None:
         raise BrokerError("no account id; set TOPSTEPX_ACCOUNT_ID")
+    entry = snap_entry(order.entry, order.side, cfg.tick_size)
     return {
         "accountId": cfg.account_id,
         "contractId": cfg.contract_id,
         "type": ORDER_TYPE_LIMIT,
         "side": SIDE_BUY if order.side == "buy" else SIDE_SELL,
         "size": int(order.size),
-        "limitPrice": round(order.entry, 4),
-        "stopLossBracket": {"ticks": bracket_ticks(order.entry, order.stop, cfg.tick_size),
+        "limitPrice": round(entry, 4),
+        "stopLossBracket": {"ticks": bracket_ticks(entry, order.stop, cfg.tick_size),
                             "type": ORDER_TYPE_LIMIT},
-        "takeProfitBracket": {"ticks": bracket_ticks(order.entry, order.target, cfg.tick_size),
+        "takeProfitBracket": {"ticks": bracket_ticks(entry, order.target, cfg.tick_size),
                               "type": ORDER_TYPE_LIMIT},
         "customTag": order.tag[:50],
     }
@@ -198,6 +217,11 @@ class DryRunBroker:
         self.closed_positions += 1
         self.position_size = 0
         return {"success": True, "errorCode": 0, "errorMessage": None, "dryRun": True}
+
+    def search_contracts(self, text: str, live: bool = False) -> list[dict[str, Any]]:
+        """Look up contract ids by symbol text (ProjectX Contract/search), e.g. "MES"."""
+        out = self._post("/api/Contract/search", {"searchText": text, "live": bool(live)})
+        return out.get("contracts", [])
 
     def trades(self, start, end=None) -> list[dict[str, Any]]:
         """Every fill on this account in a time window (ProjectX Trade/search).

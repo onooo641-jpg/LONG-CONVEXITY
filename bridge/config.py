@@ -38,6 +38,16 @@ CONSISTENCY: dict[str, float | None] = {
     "Apex 50K EOD": None, "Apex 100K EOD": None,
 }
 
+#: Micro contracts the strategy may trade, as (tick size, $ per point). NQ is the
+#: default and keeps its old contract id default; ES and YM must name their
+#: contract id explicitly (BRIDGE_CONTRACT_ID) because the TopstepX id format for
+#: them has not been verified -- look it up with `python -m bridge.live --find-contract MES`.
+MARKETS: dict[str, tuple[float, float]] = {
+    "NQ": (0.25, 2.0),    # MNQ
+    "ES": (0.25, 5.0),    # MES
+    "YM": (1.0, 0.5),     # MYM
+}
+
 MISSING = object()
 
 
@@ -82,6 +92,12 @@ class Config:
     use_guard: bool
     scaling_plan: bool
     consistency: float | None
+    #: Which market this engine trades (MARKETS key). Defaults keep the NQ setup unchanged.
+    market: str = "NQ"
+    #: Shared file that every engine on this computer checks before entering, so no
+    #: two markets ever hold opposite directions at once (the firms' cross-account
+    #: hedging ban). None = off, which is the right setting for a single market.
+    hedge_registry: str | None = None
 
     def best_day_cap(self) -> float | None:
         """Largest single day that does not push the profit target up."""
@@ -89,6 +105,10 @@ class Config:
 
     @classmethod
     def from_env(cls, live: bool = False, need_webhook: bool = False) -> "Config":
+        market = _env("BRIDGE_MARKET", "NQ").upper()
+        if market not in MARKETS:
+            raise RuntimeError(f"BRIDGE_MARKET={market!r} is not one of {sorted(MARKETS)}")
+        tick_default, pv_default = MARKETS[market]
         preset = _env("BRIDGE_PRESET", "Topstep 50K")
         if preset not in PRESETS:
             raise RuntimeError(f"BRIDGE_PRESET={preset!r} is not one of {sorted(PRESETS)}")
@@ -98,9 +118,9 @@ class Config:
             api_key=_env("TOPSTEPX_API_KEY"),
             base_url=_env("TOPSTEPX_BASE_URL", "https://api.topstepx.com"),
             account_id=_env("TOPSTEPX_ACCOUNT_ID", None, int),
-            contract_id=_env("BRIDGE_CONTRACT_ID", "CON.F.US.MNQ.Z26"),
-            tick_size=_env("BRIDGE_TICK_SIZE", 0.25, float),
-            point_value=_env("BRIDGE_POINT_VALUE", 2.0, float),
+            contract_id=_env("BRIDGE_CONTRACT_ID", "CON.F.US.MNQ.Z26" if market == "NQ" else MISSING),
+            tick_size=_env("BRIDGE_TICK_SIZE", tick_default, float),
+            point_value=_env("BRIDGE_POINT_VALUE", pv_default, float),
             # The local signal engine has no inbound surface to protect, so the
             # secret is only required by the webhook server. Demanding one for
             # bridge.live would teach people to set a dummy, which is how a real
@@ -135,4 +155,6 @@ class Config:
             use_guard=_env("BRIDGE_USE_GUARD", "1") not in ("0", "false", "False"),
             scaling_plan=_env("BRIDGE_SCALING_PLAN", "0") not in ("0", "false", "False"),
             consistency=CONSISTENCY.get(preset),
+            market=market,
+            hedge_registry=_env("BRIDGE_HEDGE_REGISTRY", None),
         )
