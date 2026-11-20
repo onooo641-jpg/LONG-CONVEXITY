@@ -28,8 +28,8 @@
  ],
  "next_block": 158946212,
  "logs_done": true,
- "receipts_done": false,
- "complete": false,
+ "receipts_done": true,
+ "complete": true,
  "last_flush": "2026-11-20T15:27:32Z",
  "skipped_logs": 5
 }
