@@ -1,0 +1,6 @@
+=== liq_prices_gnosis
+gnosis: prices 9584 points, 61/63 coins priced
+=== liq_prices_gnosis done in 87s  ok 168 fail 0
+=== liq_prices_metis
+metis: prices 4832 points, 8/8 coins priced
+=== liq_prices_metis done in 13s  ok 192 fail 0
