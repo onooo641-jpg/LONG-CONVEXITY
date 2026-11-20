@@ -1,0 +1,9 @@
+=== liq_gnosis
+gnosis: marked complete by older code without a receipt check; re-checking receipts
+gnosis: month anchors 36792483..49045461, resume at block 49045461
+gnosis: receipts: 6834 cached, 96 to fetch (sampled=False)
+  gnosis: receipts 6930/6930 (0 min)
+gnosis: receipts missing after retries: 0/6930 (<=1%, accepted; gas imputed, bot 'unknown')
+gnosis: prices 9584 points, 61/63 coins priced
+gnosis: COMPLETE 7446 events, 2 min
+=== liq_gnosis done in 117s  ok 327 fail 0
