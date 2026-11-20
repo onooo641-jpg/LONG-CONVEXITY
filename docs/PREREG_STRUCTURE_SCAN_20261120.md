@@ -26,3 +26,32 @@ Alpha Futures (bots banned), FundedNext (80/20, small caps).
 reading the official rules in full before any purchase.
 
 Command: `uv run python scripts/structure_scan_20261120.py`
+
+## Results (2026-11-20, `docs/jx_runs/structure_scan_20261120.txt`)
+
+| rank | product | coin-flip median net, 2016–26 | coin flips that profit | real strategy net |
+|---|---|---|---|---|
+| 1 | Topstep 150K Consistency | $34,116 | 94% | $101,828 |
+| 2 | Topstep 150K Standard | $30,319 | 94% | $95,324 |
+| 3 | Topstep 100K Consistency | $18,967 | 90% | $66,104 |
+| 4 | LucidFlex 50K | $18,519 | 97% | $37,523 |
+| 5 | Topstep 50K Standard | $18,046 | **98%** | $44,359 |
+| 6 | Topstep 50K Consistency | $18,005 | 98% | $46,492 |
+| 7 | Topstep 50K No-Activation | $17,410 | 94% | $45,115 |
+| 8 | Topstep 100K Standard | $17,148 | 92% | $62,660 |
+| 9 | Tradeify Select Flex 50K | $11,110 | 84% | $32,900 |
+| 10 | LucidFlex 150K | $5,929 | 62% | $48,184 |
+| 11 | LucidFlex 25K | $3,067 | 72% | $14,973 |
+| 12 | LucidFlex 100K | $1,126 | 55% | $34,682 |
+
+What it says:
+- **Topstep is the most generous structure in the scan.** Its monthly fee
+  includes a free reset, its activation is small, and its payout caps grow with
+  account size. At 150K a coin flip nets ~$34K per account slot; at 50K
+  random play profits in 98% of runs, the most reliable.
+- **Lucid is generous at 50K only.** Its payout caps ($2,500/$3,000) barely
+  grow with size while losses do, so 100K and 150K are poor structures.
+- **Tradeify Select Flex 50K is weaker:** a monthly fee without free resets,
+  and a 5-payout limit.
+- The ranking rests on verified rules for Topstep, and partly third-party rules
+  for Lucid and Tradeify. The Topstep 100K/150K scaling ladder is assumed.

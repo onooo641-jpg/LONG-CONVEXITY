@@ -202,4 +202,11 @@ day at every size.
 | X2 | N5 stETH discount capture | ~$40–50 a year per $10K | same | 2023-04..2026-11 | 2026-11-20 | current |
 | X3 | post-listing short, 2023 holdout (daily) | mean −$110.86 per $1,000 per 14d; 27% squeezed ≥ 50%; worst −$2,936 → **fail** | `uv run python scripts/postlisting_20261120.py --daily` | 79 listings 2023 | 2026-11-20 | current |
 
+## Structure scan (docs/PREREG_STRUCTURE_SCAN_20261120.md, 3a29e05)
+
+| # | figure | value | command | window | computed | status |
+|---|---|---|---|---|---|---|
+| G1 | coin-flip median net: Topstep 150K Cons / 150K Std / 50K Std / LucidFlex 50K / Tradeify Flex 50K | $34,116 / $30,319 / $18,046 / $18,519 / $11,110 | `uv run python scripts/structure_scan_20261120.py` | 2016–26 | 2026-11-20 | current; Lucid/Tradeify rules partly third-party |
+| G2 | share of coin flips that profit, Topstep 50K Standard | 98% | same | 2016–26 | 2026-11-20 | current |
+
 Raw output for every command above is in `docs/jx_runs/`.

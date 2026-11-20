@@ -1,0 +1,28 @@
+warning: The `UV_NATIVE_TLS` environment variable is deprecated and will be removed in a future release. Use `UV_SYSTEM_CERTS` instead.
+Topstep 50K Standard         risk $  900  coin-flip median $   18,046 ($ 1,667/yr, profitable  98%, 10th pct $   6,067)  real $   44,359
+Topstep 50K Consistency      risk $  900  coin-flip median $   18,005 ($ 1,663/yr, profitable  98%, 10th pct $   5,140)  real $   46,492
+Topstep 50K No-Activation    risk $  900  coin-flip median $   17,410 ($ 1,608/yr, profitable  94%, 10th pct $   4,800)  real $   45,115
+Topstep 100K Standard        risk $1,350  coin-flip median $   17,148 ($ 1,584/yr, profitable  92%, 10th pct $   1,423)  real $   62,660
+Topstep 100K Consistency     risk $1,350  coin-flip median $   18,967 ($ 1,752/yr, profitable  90%, 10th pct $     873)  real $   66,104
+Topstep 150K Standard        risk $2,025  coin-flip median $   30,319 ($ 2,801/yr, profitable  94%, 10th pct $   6,990)  real $   95,324
+Topstep 150K Consistency     risk $2,025  coin-flip median $   34,116 ($ 3,151/yr, profitable  94%, 10th pct $   6,602)  real $  101,828
+LucidFlex 25K                risk $  450  coin-flip median $    3,067 ($   283/yr, profitable  72%, 10th pct $  -4,136)  real $   14,973
+LucidFlex 50K                risk $  900  coin-flip median $   18,519 ($ 1,711/yr, profitable  97%, 10th pct $   4,794)  real $   37,523
+LucidFlex 100K               risk $1,350  coin-flip median $    1,126 ($   104/yr, profitable  55%, 10th pct $ -13,361)  real $   34,682
+LucidFlex 150K               risk $2,025  coin-flip median $    5,929 ($   548/yr, profitable  62%, 10th pct $ -15,108)  real $   48,184
+Tradeify Select Flex 50K     risk $  900  coin-flip median $   11,110 ($ 1,026/yr, profitable  84%, 10th pct $  -3,370)  real $   32,900
+
+=== RANKING by coin-flip median net (2016-2026)
+   1. Topstep 150K Consistency     $   34,116  profitable  94%  real $  101,828
+   2. Topstep 150K Standard        $   30,319  profitable  94%  real $   95,324
+   3. Topstep 100K Consistency     $   18,967  profitable  90%  real $   66,104
+   4. LucidFlex 50K                $   18,519  profitable  97%  real $   37,523
+   5. Topstep 50K Standard         $   18,046  profitable  98%  real $   44,359
+   6. Topstep 50K Consistency      $   18,005  profitable  98%  real $   46,492
+   7. Topstep 50K No-Activation    $   17,410  profitable  94%  real $   45,115
+   8. Topstep 100K Standard        $   17,148  profitable  92%  real $   62,660
+   9. Tradeify Select Flex 50K     $   11,110  profitable  84%  real $   32,900
+  10. LucidFlex 150K               $    5,929  profitable  62%  real $   48,184
+  11. LucidFlex 25K                $    3,067  profitable  72%  real $   14,973
+  12. LucidFlex 100K               $    1,126  profitable  55%  real $   34,682
+EXIT 0
