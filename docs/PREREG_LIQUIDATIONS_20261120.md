@@ -68,3 +68,13 @@ Clarification of WHAT is measured, so no result can move it:
   reached. A partial chain cannot pass (criterion (b) needs all 12 months in each half) and is excluded from the
   overall count, but its partial data may be described, labelled as partial.
 - The 40,000-receipt cap per chain is unchanged.
+- Run 44739671810 (all chains in one job) was cancelled by Jx's instruction after ~94 minutes: it never left the
+  first Base window (every `eth_getLogs` call failed) and its parquet save would have crashed on int64 overflow, so it
+  saved no data. Its log is `docs/jx_runs/fetch_public_44739671810_cancelled.txt`. It DID contain the Solana probe:
+  public RPC answered for Kamino, MarginFi, Save and Drift, but each program's latest 1,000 signatures cover only
+  hours to ~3 months (Kamino 20 min, MarginFi 13 h, Save 1.5 days, Drift ~3 months), i.e. 24 months of history would need
+  tens of thousands of paged calls plus per-transaction parsing of liquidation instructions. Solana lenders are therefore
+  DROPPED and reported as unmeasured (as pre-registered), not tested.
+- The cancelled run's HOW-failure (blocked/failed endpoints) led to a diagnostic job `liq_diag` (prints which
+  endpoint answers which getLogs shape) and endpoint health-skipping in the fetcher. Endpoint list for Base lost
+  `base.llamarpc.com` (returned HTTP 525). HOW-only changes.

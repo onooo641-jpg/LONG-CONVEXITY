@@ -1,0 +1,767 @@
+fetch	Set up job	﻿2026-11-20T12:54:21.5102701Z Current runner version: '2.338.2'
+fetch	Set up job	2026-11-20T12:54:21.5120348Z ##[group]Runner Image Provisioner
+fetch	Set up job	2026-11-20T12:54:21.5121074Z Hosted Compute Agent
+fetch	Set up job	2026-11-20T12:54:21.5121517Z Version: 20261103.629
+fetch	Set up job	2026-11-20T12:54:21.5121998Z Commit: 15dbd9ccb5dbf34fae002b6ed1a2670f52df37bc
+fetch	Set up job	2026-11-20T12:54:21.5122519Z Build Date: 2026-11-03T17:26:59Z
+fetch	Set up job	2026-11-20T12:54:21.5122990Z Worker ID: {d10327f5-3c06-4a6a-ae9c-ef563ae3c0e0}
+fetch	Set up job	2026-11-20T12:54:21.5123548Z Region: us-east-1
+fetch	Set up job	2026-11-20T12:54:21.5123945Z Cloud: AWS
+fetch	Set up job	2026-11-20T12:54:21.5124338Z ##[endgroup]
+fetch	Set up job	2026-11-20T12:54:21.5125275Z ##[group]Operating System
+fetch	Set up job	2026-11-20T12:54:21.5125733Z Ubuntu
+fetch	Set up job	2026-11-20T12:54:21.5126095Z 26.04.1
+fetch	Set up job	2026-11-20T12:54:21.5126455Z LTS
+fetch	Set up job	2026-11-20T12:54:21.5126841Z ##[endgroup]
+fetch	Set up job	2026-11-20T12:54:21.5127493Z ##[group]Runner Image
+fetch	Set up job	2026-11-20T12:54:21.5127945Z Image: ubuntu-26.04
+fetch	Set up job	2026-11-20T12:54:21.5128363Z Version: 20261111.82.6
+fetch	Set up job	2026-11-20T12:54:21.5129406Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261111.82/images/ubuntu/Ubuntu2604-Readme.md
+fetch	Set up job	2026-11-20T12:54:21.5130653Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261111.82
+fetch	Set up job	2026-11-20T12:54:21.5131335Z ##[endgroup]
+fetch	Set up job	2026-11-20T12:54:21.5132127Z ##[group]GITHUB_TOKEN Permissions
+fetch	Set up job	2026-11-20T12:54:21.5133819Z Contents: write
+fetch	Set up job	2026-11-20T12:54:21.5134238Z Metadata: read
+fetch	Set up job	2026-11-20T12:54:21.5134636Z ##[endgroup]
+fetch	Set up job	2026-11-20T12:54:21.5136146Z Secret source: Actions
+fetch	Set up job	2026-11-20T12:54:21.5136848Z Cache mode: write
+fetch	Set up job	2026-11-20T12:54:21.5137787Z Prepare workflow directory
+fetch	Set up job	2026-11-20T12:54:21.5376521Z Prepare all required actions
+fetch	Set up job	2026-11-20T12:54:21.5428504Z Getting action download info
+fetch	Set up job	2026-11-20T12:54:21.7037285Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+fetch	Set up job	2026-11-20T12:54:23.7854043Z Download action repository 'astral-sh/setup-uv@v5' (SHA:d4b2f3b6ecc6e67c4457f6d3e41ec42d3d0fcb86)
+fetch	Set up job	2026-11-20T12:54:23.9358238Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+fetch	Set up job	2026-11-20T12:54:24.3423308Z Complete job name: fetch
+fetch	Run actions/checkout@v4	﻿2026-11-20T12:54:24.4164612Z ##[group]Run actions/checkout@v4
+fetch	Run actions/checkout@v4	2026-11-20T12:54:24.4165772Z with:
+fetch	Run actions/checkout@v4	2026-11-20T12:54:24.4166506Z   fetch-depth: 0
+fetch	Run actions/checkout@v4	2026-11-20T12:54:24.4167628Z   repository: onooo641-jpg/LONG-CONVEXITY
+fetch	Run actions/checkout@v4	2026-11-20T12:54:24.4174908Z   token: ***
+fetch	Run actions/checkout@v4	2026-11-20T12:54:24.4175628Z   ssh-strict: true
+fetch	Run actions/checkout@v4	2026-11-20T12:54:24.4176448Z   ssh-user: git
+fetch	Run actions/checkout@v4	2026-11-20T12:54:24.4177413Z   persist-credentials: true
+fetch	Run actions/checkout@v4	2026-11-20T12:54:24.4178263Z   clean: true
+fetch	Run actions/checkout@v4	2026-11-20T12:54:24.4179033Z   sparse-checkout-cone-mode: true
+fetch	Run actions/checkout@v4	2026-11-20T12:54:24.4179900Z   fetch-tags: false
+fetch	Run actions/checkout@v4	2026-11-20T12:54:24.4180688Z   show-progress: true
+fetch	Run actions/checkout@v4	2026-11-20T12:54:24.4181532Z   lfs: false
+fetch	Run actions/checkout@v4	2026-11-20T12:54:24.4182262Z   submodules: false
+fetch	Run actions/checkout@v4	2026-11-20T12:54:24.4183041Z   set-safe-directory: true
+fetch	Run actions/checkout@v4	2026-11-20T12:54:24.4183896Z   allow-unsafe-pr-checkout: false
+fetch	Run actions/checkout@v4	2026-11-20T12:54:24.4185002Z ##[endgroup]
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.4471765Z Syncing repository: onooo641-jpg/LONG-CONVEXITY
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.4473453Z ##[group]Getting Git version info
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.4473830Z Working directory is '/home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY'
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.4474571Z [command]/usr/bin/git version
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.4474887Z git version 2.56.1
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.4475810Z ##[endgroup]
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.4479270Z Temporarily overriding HOME='/home/runner/work/_temp/b32dda44-4221-4d2b-9c0f-fab1ee569700' before making global git config changes
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.4480064Z Adding repository directory to the temporary git global config as a safe directory
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.4480826Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.4932951Z Deleting the contents of '/home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY'
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.4935904Z ##[group]Initializing the repository
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.4939823Z [command]/usr/bin/git init /home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.5725966Z hint: Using 'master' as the name for the initial branch. This default branch name
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.5726945Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.5727659Z hint: to use in all of your new repositories, which will suppress this warning,
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.5728016Z hint: call:
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.5728201Z hint:
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.5728469Z hint: 	git config --global init.defaultBranch <name>
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.5728730Z hint:
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.5728987Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.5729376Z hint: 'development'. The just-created branch can be renamed via this command:
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.5729675Z hint:
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.5729868Z hint: 	git branch -m <name>
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.5730068Z hint:
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.5730394Z hint: Disable this message with "git config set advice.defaultBranchName false"
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.5750416Z Initialized empty Git repository in /home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/.git/
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.5761591Z [command]/usr/bin/git remote add origin https://github.com/onooo641-jpg/LONG-CONVEXITY
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.5824145Z ##[endgroup]
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.5824748Z ##[group]Disabling automatic garbage collection
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.5827527Z [command]/usr/bin/git config --local gc.auto 0
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.5851028Z ##[endgroup]
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.5851553Z ##[group]Setting up auth
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.5856208Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.5879503Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.9409332Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.9432130Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.9610273Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.9634441Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.9806457Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.9834197Z ##[endgroup]
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.9834560Z ##[group]Fetching the repository
+fetch	Run actions/checkout@v4	2026-11-20T12:54:27.9837945Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+fetch	Run actions/checkout@v4	2026-11-20T12:54:31.7688369Z From https://github.com/onooo641-jpg/LONG-CONVEXITY
+fetch	Run actions/checkout@v4	2026-11-20T12:54:31.7688904Z  * [new branch]      claude/ict-trading-resources-ugh07b -> origin/claude/ict-trading-resources-ugh07b
+fetch	Run actions/checkout@v4	2026-11-20T12:54:31.7689374Z  * [new branch]      jx/rules-recheck-local -> origin/jx/rules-recheck-local
+fetch	Run actions/checkout@v4	2026-11-20T12:54:31.7689817Z  * [new branch]      main                   -> origin/main
+fetch	Run actions/checkout@v4	2026-11-20T12:54:31.7697953Z [command]/usr/bin/git branch --list --remote origin/claude/ict-trading-resources-ugh07b
+fetch	Run actions/checkout@v4	2026-11-20T12:54:31.7717529Z   origin/claude/ict-trading-resources-ugh07b
+fetch	Run actions/checkout@v4	2026-11-20T12:54:31.7723652Z [command]/usr/bin/git rev-parse refs/remotes/origin/claude/ict-trading-resources-ugh07b
+fetch	Run actions/checkout@v4	2026-11-20T12:54:31.7740851Z fe457641f5c8cfd0487d5e973fecb5dc1c99b6e8
+fetch	Run actions/checkout@v4	2026-11-20T12:54:31.7742771Z ##[endgroup]
+fetch	Run actions/checkout@v4	2026-11-20T12:54:31.7743240Z ##[group]Determining the checkout info
+fetch	Run actions/checkout@v4	2026-11-20T12:54:31.7743941Z ##[endgroup]
+fetch	Run actions/checkout@v4	2026-11-20T12:54:31.7754744Z [command]/usr/bin/git sparse-checkout disable
+fetch	Run actions/checkout@v4	2026-11-20T12:54:31.7804064Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+fetch	Run actions/checkout@v4	2026-11-20T12:54:31.7822693Z ##[group]Checking out the ref
+fetch	Run actions/checkout@v4	2026-11-20T12:54:31.7825275Z [command]/usr/bin/git checkout --progress --force -B claude/ict-trading-resources-ugh07b refs/remotes/origin/claude/ict-trading-resources-ugh07b
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.0615338Z Updating files:  19% (57/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2709045Z Updating files:  20% (58/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2714794Z Updating files:  21% (61/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2715138Z Updating files:  22% (64/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2715422Z Updating files:  23% (67/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2728025Z Updating files:  24% (69/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2728444Z Updating files:  25% (72/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2728770Z Updating files:  26% (75/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2729033Z Updating files:  27% (78/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2729288Z Updating files:  28% (81/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2729558Z Updating files:  29% (84/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2729800Z Updating files:  30% (87/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2730108Z Updating files:  31% (89/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2770572Z Updating files:  32% (92/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2771122Z Updating files:  33% (95/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2772054Z Updating files:  34% (98/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2773271Z Updating files:  35% (101/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2774124Z Updating files:  36% (104/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2774899Z Updating files:  37% (107/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2775310Z Updating files:  38% (110/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2775971Z Updating files:  39% (112/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2776392Z Updating files:  40% (115/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2777204Z Updating files:  41% (118/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2777999Z Updating files:  42% (121/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2778603Z Updating files:  43% (124/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2779409Z Updating files:  44% (127/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2780184Z Updating files:  45% (130/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2780630Z Updating files:  46% (133/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2781170Z Updating files:  47% (135/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2781977Z Updating files:  48% (138/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2782493Z Updating files:  49% (141/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2783196Z Updating files:  50% (144/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2783772Z Updating files:  51% (147/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2784431Z Updating files:  52% (150/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2785080Z Updating files:  53% (153/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2788273Z Updating files:  54% (155/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2809954Z Updating files:  55% (158/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2814928Z Updating files:  56% (161/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2898344Z Updating files:  57% (164/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2903065Z Updating files:  58% (167/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2904604Z Updating files:  59% (170/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2905796Z Updating files:  60% (173/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2906784Z Updating files:  61% (176/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2908173Z Updating files:  62% (178/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2909290Z Updating files:  63% (181/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2910496Z Updating files:  64% (184/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2911228Z Updating files:  65% (187/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2912440Z Updating files:  66% (190/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2914325Z Updating files:  67% (193/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2917356Z Updating files:  68% (196/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2917947Z Updating files:  69% (199/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2919066Z Updating files:  70% (201/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2920205Z Updating files:  71% (204/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2921392Z Updating files:  72% (207/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2922412Z Updating files:  73% (210/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2923585Z Updating files:  74% (213/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2924761Z Updating files:  75% (216/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2925285Z Updating files:  76% (219/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2926542Z Updating files:  77% (221/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2930865Z Updating files:  78% (224/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2933540Z Updating files:  79% (227/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2934999Z Updating files:  80% (230/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2936614Z Updating files:  81% (233/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2938770Z Updating files:  82% (236/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2939651Z Updating files:  83% (239/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2940339Z Updating files:  84% (242/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2941757Z Updating files:  85% (244/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2943512Z Updating files:  86% (247/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2944559Z Updating files:  87% (250/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2945588Z Updating files:  88% (253/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2947632Z Updating files:  89% (256/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2949184Z Updating files:  90% (259/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2950094Z Updating files:  91% (262/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2951799Z Updating files:  92% (265/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2952687Z Updating files:  93% (267/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2953839Z Updating files:  94% (270/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2955400Z Updating files:  95% (273/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2956247Z Updating files:  96% (276/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2962694Z Updating files:  97% (279/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2965967Z Updating files:  98% (282/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2977221Z Updating files:  99% (285/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2977537Z Updating files: 100% (287/287)
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2977774Z Updating files: 100% (287/287), done.
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.2994110Z Switched to a new branch 'claude/ict-trading-resources-ugh07b'
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.3005224Z branch 'claude/ict-trading-resources-ugh07b' set up to track 'origin/claude/ict-trading-resources-ugh07b'.
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.3043094Z ##[endgroup]
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.3094079Z [command]/usr/bin/git log -1 --format=%H
+fetch	Run actions/checkout@v4	2026-11-20T12:54:33.3114221Z fe457641f5c8cfd0487d5e973fecb5dc1c99b6e8
+fetch	Run astral-sh/setup-uv@v5	﻿2026-11-20T12:54:33.3300270Z ##[group]Run astral-sh/setup-uv@v5
+fetch	Run astral-sh/setup-uv@v5	2026-11-20T12:54:33.3300541Z with:
+fetch	Run astral-sh/setup-uv@v5	2026-11-20T12:54:33.3302640Z   github-token: ***
+fetch	Run astral-sh/setup-uv@v5	2026-11-20T12:54:33.3302876Z   enable-cache: auto
+fetch	Run astral-sh/setup-uv@v5	2026-11-20T12:54:33.3303160Z   cache-dependency-glob: **/uv.lock
+fetch	Run astral-sh/setup-uv@v5	**/requirements*.txt
+fetch	Run astral-sh/setup-uv@v5	
+fetch	Run astral-sh/setup-uv@v5	2026-11-20T12:54:33.3303468Z   prune-cache: true
+fetch	Run astral-sh/setup-uv@v5	2026-11-20T12:54:33.3303685Z   ignore-nothing-to-cache: false
+fetch	Run astral-sh/setup-uv@v5	2026-11-20T12:54:33.3303961Z   ignore-empty-workdir: false
+fetch	Run astral-sh/setup-uv@v5	2026-11-20T12:54:33.3304219Z ##[endgroup]
+fetch	Run astral-sh/setup-uv@v5	2026-11-20T12:54:33.5128113Z (node:2387) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+fetch	Run astral-sh/setup-uv@v5	2026-11-20T12:54:33.5128666Z (Use `node --trace-deprecation ...` to show where the warning was created)
+fetch	Run astral-sh/setup-uv@v5	2026-11-20T12:54:33.9340385Z Downloading uv from "https://github.com/astral-sh/uv/releases/download/0.13.9/uv-x86_64-unknown-linux-gnu.tar.gz" ...
+fetch	Run astral-sh/setup-uv@v5	2026-11-20T12:54:34.0617991Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/6dee1ef0-93a4-4555-a534-c683c0f28475 -f /home/runner/work/_temp/5fd45c85-7809-410d-8a8f-72e2f107db39
+fetch	Run astral-sh/setup-uv@v5	2026-11-20T12:54:34.2607730Z Added /home/runner/.local/bin to the path
+fetch	Run astral-sh/setup-uv@v5	2026-11-20T12:54:34.2612477Z Added /opt/hostedtoolcache/uv/0.13.9/x86_64 to the path
+fetch	Run astral-sh/setup-uv@v5	2026-11-20T12:54:34.2646016Z Set UV_CACHE_DIR to /home/runner/work/_temp/setup-uv-cache
+fetch	Run astral-sh/setup-uv@v5	2026-11-20T12:54:34.2646328Z Successfully installed uv version 0.13.9
+fetch	Run astral-sh/setup-uv@v5	2026-11-20T12:54:34.2646619Z Searching files using cache dependency glob: **/uv.lock,**/requirements*.txt
+fetch	Run astral-sh/setup-uv@v5	2026-11-20T12:54:34.2838737Z /home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/uv.lock
+fetch	Run astral-sh/setup-uv@v5	2026-11-20T12:54:34.2856267Z Found 1 files to hash.
+fetch	Run astral-sh/setup-uv@v5	2026-11-20T12:54:34.3401806Z Trying to restore uv cache from GitHub Actions cache with key: setup-uv-1-x86_64-unknown-linux-gnu-3.14.4-336a67d1c4f065a66a06d180b9b86fff4ef36437644df6b1f2addff09dbd8544
+fetch	Run astral-sh/setup-uv@v5	2026-11-20T12:54:34.3839496Z Cache hit for: setup-uv-1-x86_64-unknown-linux-gnu-3.14.4-336a67d1c4f065a66a06d180b9b86fff4ef36437644df6b1f2addff09dbd8544
+fetch	Run astral-sh/setup-uv@v5	2026-11-20T12:54:34.3913011Z (node:2387) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+fetch	Run astral-sh/setup-uv@v5	2026-11-20T12:54:34.4877871Z Received 99497 of 99497 (100.0%), 1.5 MBs/sec
+fetch	Run astral-sh/setup-uv@v5	2026-11-20T12:54:34.4878303Z Cache Size: ~0 MB (99497 B)
+fetch	Run astral-sh/setup-uv@v5	2026-11-20T12:54:34.4893185Z [command]/usr/bin/tar -xf /home/runner/work/_temp/3e11bd6d-73fd-44a9-bc55-7f23074dbb70/cache.tzst -P -C /home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY --use-compress-program unzstd
+fetch	Run astral-sh/setup-uv@v5	2026-11-20T12:54:34.4947216Z Cache restored successfully
+fetch	Run astral-sh/setup-uv@v5	2026-11-20T12:54:34.4951077Z uv cache restored from GitHub Actions cache with key: setup-uv-1-x86_64-unknown-linux-gnu-3.14.4-336a67d1c4f065a66a06d180b9b86fff4ef36437644df6b1f2addff09dbd8544
+fetch	Run uv sync	﻿2026-11-20T12:54:34.5053989Z ##[group]Run uv sync
+fetch	Run uv sync	2026-11-20T12:54:34.5054240Z [36;1muv sync[0m
+fetch	Run uv sync	2026-11-20T12:54:34.5079095Z shell: /usr/bin/bash -e {0}
+fetch	Run uv sync	2026-11-20T12:54:34.5079393Z env:
+fetch	Run uv sync	2026-11-20T12:54:34.5079632Z   UV_CACHE_DIR: /home/runner/work/_temp/setup-uv-cache
+fetch	Run uv sync	2026-11-20T12:54:34.5079958Z ##[endgroup]
+fetch	Run uv sync	2026-11-20T12:54:34.5203479Z Using CPython 3.14.4 interpreter at: /usr/bin/python3
+fetch	Run uv sync	2026-11-20T12:54:34.5203780Z Creating virtual environment at: .venv
+fetch	Run uv sync	2026-11-20T12:54:34.5225506Z Resolved 36 packages in 0.77ms
+fetch	Run uv sync	2026-11-20T12:54:34.5241467Z    Building ict-hanxin @ file:///home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY
+fetch	Run uv sync	2026-11-20T12:54:34.5546656Z Downloading pandas (10.5MiB)
+fetch	Run uv sync	2026-11-20T12:54:34.5567269Z Downloading pyarrow (47.8MiB)
+fetch	Run uv sync	2026-11-20T12:54:34.5624230Z Downloading numpy (15.9MiB)
+fetch	Run uv sync	2026-11-20T12:54:34.7359828Z  Downloaded pandas
+fetch	Run uv sync	2026-11-20T12:54:34.7940919Z  Downloaded numpy
+fetch	Run uv sync	2026-11-20T12:54:34.9694826Z  Downloaded pyarrow
+fetch	Run uv sync	2026-11-20T12:54:34.9909608Z       Built ict-hanxin @ file:///home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY
+fetch	Run uv sync	2026-11-20T12:54:34.9915612Z Prepared 6 packages in 468ms
+fetch	Run uv sync	2026-11-20T12:54:35.0034642Z Installed 6 packages in 11ms
+fetch	Run uv sync	2026-11-20T12:54:35.0035118Z  + ict-hanxin==0.1.0 (from file:///home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY)
+fetch	Run uv sync	2026-11-20T12:54:35.0035508Z  + numpy==2.5.2
+fetch	Run uv sync	2026-11-20T12:54:35.0035732Z  + pandas==3.0.5
+fetch	Run uv sync	2026-11-20T12:54:35.0036048Z  + pyarrow==25.0.1
+fetch	Run uv sync	2026-11-20T12:54:35.0036288Z  + python-dateutil==2.9.0.post0
+fetch	Run uv sync	2026-11-20T12:54:35.0036532Z  + six==1.17.0
+fetch	Fetch	﻿2026-11-20T12:54:35.0119613Z ##[group]Run mkdir -p docs/jx_runs
+fetch	Fetch	2026-11-20T12:54:35.0119892Z [36;1mmkdir -p docs/jx_runs[0m
+fetch	Fetch	2026-11-20T12:54:35.0120210Z [36;1mjobs=$(grep -v '^\s*#' .github/fetch_public_request.txt | grep -v '^\s*$' | tr '\n' ' ')[0m
+fetch	Fetch	2026-11-20T12:54:35.0120639Z [36;1muv run python scripts/fetch_public.py $jobs 2>&1 | tee "docs/jx_runs/fetch_public_44739671810.txt"[0m
+fetch	Fetch	2026-11-20T12:54:35.0139462Z shell: /usr/bin/bash -e {0}
+fetch	Fetch	2026-11-20T12:54:35.0139664Z env:
+fetch	Fetch	2026-11-20T12:54:35.0139860Z   UV_CACHE_DIR: /home/runner/work/_temp/setup-uv-cache
+fetch	Fetch	2026-11-20T12:54:35.0140089Z ##[endgroup]
+fetch	Fetch	2026-11-20T12:54:36.0966277Z === liq_probe
+fetch	Fetch	2026-11-20T12:54:36.2599840Z probe kamino_klend: 1000 signatures; oldest of newest 1000 = 2026-11-20 12:35:22
+fetch	Fetch	2026-11-20T12:54:36.4150825Z probe marginfi: 1000 signatures; oldest of newest 1000 = 2026-11-20 12:07:12
+fetch	Fetch	2026-11-20T12:54:36.9341177Z probe save_solend: 1000 signatures; oldest of newest 1000 = 2026-11-19 04:37:02
+fetch	Fetch	2026-11-20T12:54:37.2252196Z probe drift: 1000 signatures; oldest of newest 1000 = 2026-08-26 05:34:10
+fetch	Fetch	2026-11-20T12:54:37.2253421Z probe note: signatures include every transaction of the program, not only liquidations; 24 months of these via public RPC is not feasible, so Solana is judged on this probe only.
+fetch	Fetch	2026-11-20T12:54:37.2254120Z === liq_probe done in 1s  ok 4 fail 0
+fetch	Fetch	2026-11-20T12:54:37.2254364Z === liq_base
+fetch	Fetch	2026-11-20T12:55:17.1682739Z base: head 59944508, month anchors 21814927..53350927
+fetch	Fetch	2026-11-20T12:55:29.9458496Z   base: getLogs failed 21814927-21834926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T12:55:42.7245234Z   base: getLogs failed 21814927-21819926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T12:55:55.5208908Z   base: getLogs failed 21814927-21816176: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T12:56:08.3102691Z   base: getLogs failed 21814927-21815426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T12:56:21.1011576Z   base: getLogs failed 21815427-21815926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T12:56:33.8926702Z   base: getLogs failed 21815927-21816426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T12:56:46.6710365Z   base: getLogs failed 21816427-21816926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T12:56:59.5626007Z   base: getLogs failed 21816927-21817426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T12:57:12.3644715Z   base: getLogs failed 21817427-21817926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T12:57:25.1473724Z   base: getLogs failed 21817927-21818426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T12:57:37.9257439Z   base: getLogs failed 21818427-21818926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T12:57:50.7163274Z   base: getLogs failed 21818927-21819426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T12:58:03.5052356Z   base: getLogs failed 21819427-21819926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T12:58:16.2890834Z   base: getLogs failed 21819927-21820426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T12:58:29.0748202Z   base: getLogs failed 21820427-21820926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T12:58:41.8469383Z   base: getLogs failed 21820927-21821426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T12:58:54.6474834Z   base: getLogs failed 21821427-21821926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T12:59:07.4119643Z   base: getLogs failed 21821927-21822426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T12:59:20.2000866Z   base: getLogs failed 21822427-21822926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T12:59:32.9833144Z   base: getLogs failed 21822927-21823426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T12:59:45.7693781Z   base: getLogs failed 21823427-21823926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T12:59:58.5555377Z   base: getLogs failed 21823927-21824426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:00:11.3612864Z   base: getLogs failed 21824427-21824926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:00:24.1818771Z   base: getLogs failed 21824927-21825426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:00:36.9666379Z   base: getLogs failed 21825427-21825926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:00:49.7893300Z   base: getLogs failed 21825927-21826426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:01:02.5886030Z   base: getLogs failed 21826427-21826926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:01:15.4105845Z   base: getLogs failed 21826927-21827426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:01:28.2361369Z   base: getLogs failed 21827427-21827926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:01:41.1085561Z   base: getLogs failed 21827927-21828426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:01:54.0441763Z   base: getLogs failed 21828427-21828926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:02:06.8911061Z   base: getLogs failed 21828927-21829426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:02:19.7142196Z   base: getLogs failed 21829427-21829926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:02:32.6541156Z   base: getLogs failed 21829927-21830426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:02:45.4886208Z   base: getLogs failed 21830427-21830926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:02:58.3212895Z   base: getLogs failed 21830927-21831426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:03:11.1894424Z   base: getLogs failed 21831427-21831926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:03:24.0927801Z   base: getLogs failed 21831927-21832426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:03:36.9319615Z   base: getLogs failed 21832427-21832926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:03:49.7367283Z   base: getLogs failed 21832927-21833426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:04:02.6283363Z   base: getLogs failed 21833427-21833926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:04:15.9679324Z   base: getLogs failed 21833927-21834426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:04:28.8441043Z   base: getLogs failed 21834427-21834926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:04:41.7054749Z   base: getLogs failed 21834927-21835426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:04:54.5645668Z   base: getLogs failed 21835427-21835926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:05:07.4044421Z   base: getLogs failed 21835927-21836426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:05:20.2409836Z   base: getLogs failed 21836427-21836926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:05:33.0976954Z   base: getLogs failed 21836927-21837426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:05:46.0129380Z   base: getLogs failed 21837427-21837926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:05:58.8142799Z   base: getLogs failed 21837927-21838426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:06:11.6419332Z   base: getLogs failed 21838427-21838926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:06:24.4385187Z   base: getLogs failed 21838927-21839426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:06:37.2201605Z   base: getLogs failed 21839427-21839926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:06:50.0733040Z   base: getLogs failed 21839927-21840426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:07:02.8946330Z   base: getLogs failed 21840427-21840926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:07:15.6578500Z   base: getLogs failed 21840927-21841426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:07:28.4563287Z   base: getLogs failed 21841427-21841926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:07:41.2533495Z   base: getLogs failed 21841927-21842426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:07:54.0517781Z   base: getLogs failed 21842427-21842926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:08:06.7832005Z   base: getLogs failed 21842927-21843426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:08:19.5860491Z   base: getLogs failed 21843427-21843926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:08:32.4048633Z   base: getLogs failed 21843927-21844426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:08:45.1887474Z   base: getLogs failed 21844427-21844926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:08:57.9914167Z   base: getLogs failed 21844927-21845426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:09:10.7759318Z   base: getLogs failed 21845427-21845926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:09:23.5720039Z   base: getLogs failed 21845927-21846426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:09:36.3815623Z   base: getLogs failed 21846427-21846926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:09:49.1588617Z   base: getLogs failed 21846927-21847426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:10:02.1741237Z   base: getLogs failed 21847427-21847926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:10:14.9667237Z   base: getLogs failed 21847927-21848426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:10:27.7881240Z   base: getLogs failed 21848427-21848926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:10:40.5977727Z   base: getLogs failed 21848927-21849426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:10:53.4275791Z   base: getLogs failed 21849427-21849926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:11:06.2016514Z   base: getLogs failed 21849927-21850426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:11:18.9744546Z   base: getLogs failed 21850427-21850926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:11:31.7715042Z   base: getLogs failed 21850927-21851426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:11:44.6929024Z   base: getLogs failed 21851427-21851926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:11:57.4984160Z   base: getLogs failed 21851927-21852426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:12:10.2873183Z   base: getLogs failed 21852427-21852926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:12:23.0799033Z   base: getLogs failed 21852927-21853426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:12:35.8613359Z   base: getLogs failed 21853427-21853926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:12:48.6540580Z   base: getLogs failed 21853927-21854426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:13:01.4847996Z   base: getLogs failed 21854427-21854926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:13:14.3193743Z   base: getLogs failed 21854927-21855426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:13:27.0929737Z   base: getLogs failed 21855427-21855926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:13:39.9708281Z   base: getLogs failed 21855927-21856426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:13:52.7564693Z   base: getLogs failed 21856427-21856926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:14:05.6060522Z   base: getLogs failed 21856927-21857426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:14:18.4265903Z   base: getLogs failed 21857427-21857926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:14:31.2275714Z   base: getLogs failed 21857927-21858426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:14:44.1553228Z   base: getLogs failed 21858427-21858926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:14:57.0120916Z   base: getLogs failed 21858927-21859426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:15:09.8338740Z   base: getLogs failed 21859427-21859926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:15:22.7724569Z   base: getLogs failed 21859927-21860426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:15:35.6000483Z   base: getLogs failed 21860427-21860926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:15:48.3843633Z   base: getLogs failed 21860927-21861426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:16:01.1672788Z   base: getLogs failed 21861427-21861926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:16:13.9733386Z   base: getLogs failed 21861927-21862426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:16:26.7833356Z   base: getLogs failed 21862427-21862926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:16:39.5837620Z   base: getLogs failed 21862927-21863426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:16:52.3604522Z   base: getLogs failed 21863427-21863926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:17:05.1410934Z   base: getLogs failed 21863927-21864426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:17:17.9990087Z   base: getLogs failed 21864427-21864926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:17:30.7909065Z   base: getLogs failed 21864927-21865426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:17:43.6110065Z   base: getLogs failed 21865427-21865926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:17:56.4271341Z   base: getLogs failed 21865927-21866426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:18:09.2358921Z   base: getLogs failed 21866427-21866926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:18:22.0132015Z   base: getLogs failed 21866927-21867426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:18:34.7789672Z   base: getLogs failed 21867427-21867926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:18:47.5601666Z   base: getLogs failed 21867927-21868426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:19:00.3933669Z   base: getLogs failed 21868427-21868926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:19:13.1821473Z   base: getLogs failed 21868927-21869426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:19:25.9871325Z   base: getLogs failed 21869427-21869926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:19:38.7923320Z   base: getLogs failed 21869927-21870426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:19:51.6175013Z   base: getLogs failed 21870427-21870926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:20:04.4106602Z   base: getLogs failed 21870927-21871426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:20:17.4161175Z   base: getLogs failed 21871427-21871926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:20:30.2226234Z   base: getLogs failed 21871927-21872426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:20:43.0114990Z   base: getLogs failed 21872427-21872926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:20:55.8029112Z   base: getLogs failed 21872927-21873426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:21:08.7134183Z   base: getLogs failed 21873427-21873926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:21:21.5628531Z   base: getLogs failed 21873927-21874426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:21:34.3545320Z   base: getLogs failed 21874427-21874926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:21:47.1634575Z   base: getLogs failed 21874927-21875426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:21:59.9376275Z   base: getLogs failed 21875427-21875926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:22:12.7821724Z   base: getLogs failed 21875927-21876426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:22:25.5825723Z   base: getLogs failed 21876427-21876926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:22:38.3598369Z   base: getLogs failed 21876927-21877426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:22:51.1326733Z   base: getLogs failed 21877427-21877926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:23:03.8618105Z   base: getLogs failed 21877927-21878426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:23:16.6476275Z   base: getLogs failed 21878427-21878926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:23:29.4125595Z   base: getLogs failed 21878927-21879426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:23:42.1813002Z   base: getLogs failed 21879427-21879926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:23:54.9650016Z   base: getLogs failed 21879927-21880426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:24:07.7610412Z   base: getLogs failed 21880427-21880926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:24:20.5673200Z   base: getLogs failed 21880927-21881426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:24:33.3879040Z   base: getLogs failed 21881427-21881926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:24:46.1729964Z   base: getLogs failed 21881927-21882426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:24:58.9647443Z   base: getLogs failed 21882427-21882926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:25:11.9135799Z   base: getLogs failed 21882927-21883426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:25:24.6884569Z   base: getLogs failed 21883427-21883926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:25:37.5099035Z   base: getLogs failed 21883927-21884426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:25:50.3370539Z   base: getLogs failed 21884427-21884926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:26:03.2184247Z   base: getLogs failed 21884927-21885426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:26:16.0296093Z   base: getLogs failed 21885427-21885926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:26:28.8323969Z   base: getLogs failed 21885927-21886426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:26:41.7361643Z   base: getLogs failed 21886427-21886926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:26:54.5222351Z   base: getLogs failed 21886927-21887426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:27:07.3320836Z   base: getLogs failed 21887427-21887926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:27:20.1111442Z   base: getLogs failed 21887927-21888426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:27:32.9250506Z   base: getLogs failed 21888427-21888926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:27:45.7509904Z   base: getLogs failed 21888927-21889426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:27:58.5317752Z   base: getLogs failed 21889427-21889926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:28:11.3066223Z   base: getLogs failed 21889927-21890426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:28:24.1044043Z   base: getLogs failed 21890427-21890926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:28:36.9134977Z   base: getLogs failed 21890927-21891426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:28:49.7118156Z   base: getLogs failed 21891427-21891926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:29:02.4801327Z   base: getLogs failed 21891927-21892426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:29:15.3066302Z   base: getLogs failed 21892427-21892926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:29:28.1000176Z   base: getLogs failed 21892927-21893426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:29:40.8919207Z   base: getLogs failed 21893427-21893926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:29:53.6920160Z   base: getLogs failed 21893927-21894426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:30:06.4729605Z   base: getLogs failed 21894427-21894926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:30:19.3029775Z   base: getLogs failed 21894927-21895426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:30:32.0829035Z   base: getLogs failed 21895427-21895926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:30:44.8857593Z   base: getLogs failed 21895927-21896426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:30:57.7024256Z   base: getLogs failed 21896427-21896926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:31:10.5107792Z   base: getLogs failed 21896927-21897426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:31:23.3009118Z   base: getLogs failed 21897427-21897926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:31:36.1865213Z   base: getLogs failed 21897927-21898426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:31:49.0973713Z   base: getLogs failed 21898427-21898926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:32:01.9650626Z   base: getLogs failed 21898927-21899426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:32:14.7795227Z   base: getLogs failed 21899427-21899926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:32:27.6748452Z   base: getLogs failed 21899927-21900426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:32:40.5003888Z   base: getLogs failed 21900427-21900926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:32:53.3109543Z   base: getLogs failed 21900927-21901426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:33:06.1186754Z   base: getLogs failed 21901427-21901926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:33:19.0158142Z   base: getLogs failed 21901927-21902426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:33:31.8505878Z   base: getLogs failed 21902427-21902926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:33:44.7149687Z   base: getLogs failed 21902927-21903426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:33:57.5623587Z   base: getLogs failed 21903427-21903926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:34:10.3682632Z   base: getLogs failed 21903927-21904426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:34:23.1972547Z   base: getLogs failed 21904427-21904926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:34:35.9845033Z   base: getLogs failed 21904927-21905426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:34:48.7928679Z   base: getLogs failed 21905427-21905926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:35:01.5858927Z   base: getLogs failed 21905927-21906426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:35:14.5487508Z   base: getLogs failed 21906427-21906926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:35:27.3578228Z   base: getLogs failed 21906927-21907426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:35:40.1818227Z   base: getLogs failed 21907427-21907926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:35:53.0313772Z   base: getLogs failed 21907927-21908426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:36:05.8736277Z   base: getLogs failed 21908427-21908926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:36:18.7190526Z   base: getLogs failed 21908927-21909426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:36:31.5119627Z   base: getLogs failed 21909427-21909926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:36:44.2996242Z   base: getLogs failed 21909927-21910426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:36:57.1620197Z   base: getLogs failed 21910427-21910926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:37:09.9826370Z   base: getLogs failed 21910927-21911426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:37:22.8429421Z   base: getLogs failed 21911427-21911926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:37:35.6529099Z   base: getLogs failed 21911927-21912426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:37:48.5860918Z   base: getLogs failed 21912427-21912926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:38:01.4506888Z   base: getLogs failed 21912927-21913426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:38:14.2870075Z   base: getLogs failed 21913427-21913926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:38:27.2479549Z   base: getLogs failed 21913927-21914426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:38:40.0476016Z   base: getLogs failed 21914427-21914926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:38:52.8461931Z   base: getLogs failed 21914927-21915426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:39:05.6177584Z   base: getLogs failed 21915427-21915926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:39:18.4780746Z   base: getLogs failed 21915927-21916426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:39:31.2972516Z   base: getLogs failed 21916427-21916926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:39:44.0942696Z   base: getLogs failed 21916927-21917426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:39:56.8806003Z   base: getLogs failed 21917427-21917926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:40:09.7247606Z   base: getLogs failed 21917927-21918426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:40:22.5341732Z   base: getLogs failed 21918427-21918926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:40:35.3645375Z   base: getLogs failed 21918927-21919426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:40:48.1800493Z   base: getLogs failed 21919427-21919926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:41:01.0390876Z   base: getLogs failed 21919927-21920426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:41:13.8422141Z   base: getLogs failed 21920427-21920926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:41:26.6947866Z   base: getLogs failed 21920927-21921426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:41:39.5260373Z   base: getLogs failed 21921427-21921926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:41:52.3739784Z   base: getLogs failed 21921927-21922426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:42:05.1678439Z   base: getLogs failed 21922427-21922926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:42:17.9521209Z   base: getLogs failed 21922927-21923426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:42:30.7450336Z   base: getLogs failed 21923427-21923926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:42:43.5521600Z   base: getLogs failed 21923927-21924426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:42:56.3394542Z   base: getLogs failed 21924427-21924926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:43:09.1702909Z   base: getLogs failed 21924927-21925426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:43:21.9450603Z   base: getLogs failed 21925427-21925926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:43:35.0142319Z   base: getLogs failed 21925927-21926426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:43:47.8836812Z   base: getLogs failed 21926427-21926926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:44:00.7113705Z   base: getLogs failed 21926927-21927426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:44:13.5663789Z   base: getLogs failed 21927427-21927926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:44:26.4187627Z   base: getLogs failed 21927927-21928426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:44:39.2398832Z   base: getLogs failed 21928427-21928926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:44:52.1709885Z   base: getLogs failed 21928927-21929426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:45:05.0369975Z   base: getLogs failed 21929427-21929926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:45:17.8834812Z   base: getLogs failed 21929927-21930426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:45:30.6724195Z   base: getLogs failed 21930427-21930926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:45:43.5118259Z   base: getLogs failed 21930927-21931426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:45:56.3126281Z   base: getLogs failed 21931427-21931926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:46:09.2589706Z   base: getLogs failed 21931927-21932426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:46:22.0712009Z   base: getLogs failed 21932427-21932926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:46:34.8733857Z   base: getLogs failed 21932927-21933426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:46:47.6834349Z   base: getLogs failed 21933427-21933926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:47:00.4643045Z   base: getLogs failed 21933927-21934426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:47:13.3314730Z   base: getLogs failed 21934427-21934926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:47:26.1397864Z   base: getLogs failed 21934927-21935426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:47:38.9355548Z   base: getLogs failed 21935427-21935926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:47:51.9104830Z   base: getLogs failed 21935927-21936426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:48:04.7000654Z   base: getLogs failed 21936427-21936926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:48:17.5114365Z   base: getLogs failed 21936927-21937426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:48:30.2938821Z   base: getLogs failed 21937427-21937926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:48:43.0945064Z   base: getLogs failed 21937927-21938426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:48:55.9125351Z   base: getLogs failed 21938427-21938926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:49:08.7038784Z   base: getLogs failed 21938927-21939426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:49:21.5460003Z   base: getLogs failed 21939427-21939926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:49:34.3776357Z   base: getLogs failed 21939927-21940426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:49:47.1833960Z   base: getLogs failed 21940427-21940926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:50:00.0004087Z   base: getLogs failed 21940927-21941426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:50:12.8360718Z   base: getLogs failed 21941427-21941926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:50:25.6495425Z   base: getLogs failed 21941927-21942426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:50:38.4719130Z   base: getLogs failed 21942427-21942926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:50:51.3105489Z   base: getLogs failed 21942927-21943426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:51:04.0979983Z   base: getLogs failed 21943427-21943926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:51:16.8965928Z   base: getLogs failed 21943927-21944426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:51:29.7014569Z   base: getLogs failed 21944427-21944926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:51:42.5134003Z   base: getLogs failed 21944927-21945426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:51:55.3080035Z   base: getLogs failed 21945427-21945926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:52:08.1634503Z   base: getLogs failed 21945927-21946426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:52:20.9679704Z   base: getLogs failed 21946427-21946926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:52:33.7468225Z   base: getLogs failed 21946927-21947426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:52:46.6025668Z   base: getLogs failed 21947427-21947926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:52:59.4180445Z   base: getLogs failed 21947927-21948426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:53:12.2538862Z   base: getLogs failed 21948427-21948926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:53:25.0559603Z   base: getLogs failed 21948927-21949426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:53:37.7789030Z   base: getLogs failed 21949427-21949926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:53:50.5647139Z   base: getLogs failed 21949927-21950426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:54:03.3498861Z   base: getLogs failed 21950427-21950926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:54:16.1800488Z   base: getLogs failed 21950927-21951426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:54:28.9702086Z   base: getLogs failed 21951427-21951926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:54:41.7878703Z   base: getLogs failed 21951927-21952426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:54:54.6150420Z   base: getLogs failed 21952427-21952926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:55:07.4522192Z   base: getLogs failed 21952927-21953426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:55:20.2265622Z   base: getLogs failed 21953427-21953926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:55:33.0070202Z   base: getLogs failed 21953927-21954426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:55:45.7970186Z   base: getLogs failed 21954427-21954926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:55:58.5950140Z   base: getLogs failed 21954927-21955426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:56:11.4088382Z   base: getLogs failed 21955427-21955926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:56:24.1945599Z   base: getLogs failed 21955927-21956426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:56:36.9884176Z   base: getLogs failed 21956427-21956926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:56:49.8304099Z   base: getLogs failed 21956927-21957426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:57:02.6445302Z   base: getLogs failed 21957427-21957926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:57:15.4666640Z   base: getLogs failed 21957927-21958426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:57:28.2394783Z   base: getLogs failed 21958427-21958926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:57:41.0567360Z   base: getLogs failed 21958927-21959426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:57:53.8614481Z   base: getLogs failed 21959427-21959926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:58:06.6560317Z   base: getLogs failed 21959927-21960426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:58:19.4800224Z   base: getLogs failed 21960427-21960926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:58:32.3116069Z   base: getLogs failed 21960927-21961426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:58:45.0907661Z   base: getLogs failed 21961427-21961926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:58:57.9288124Z   base: getLogs failed 21961927-21962426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:59:10.6959860Z   base: getLogs failed 21962427-21962926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:59:23.4908855Z   base: getLogs failed 21962927-21963426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:59:36.3068403Z   base: getLogs failed 21963427-21963926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T13:59:49.0744368Z   base: getLogs failed 21963927-21964426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:00:01.9365250Z   base: getLogs failed 21964427-21964926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:00:14.7978967Z   base: getLogs failed 21964927-21965426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:00:27.6238502Z   base: getLogs failed 21965427-21965926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:00:40.4903040Z   base: getLogs failed 21965927-21966426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:00:53.2806385Z   base: getLogs failed 21966427-21966926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:01:06.3813988Z   base: getLogs failed 21966927-21967426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:01:19.2795736Z   base: getLogs failed 21967427-21967926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:01:32.2220697Z   base: getLogs failed 21967927-21968426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:01:45.5350026Z   base: getLogs failed 21968427-21968926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:01:58.4523694Z   base: getLogs failed 21968927-21969426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:02:11.4205542Z   base: getLogs failed 21969427-21969926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:02:24.3967634Z   base: getLogs failed 21969927-21970426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:02:37.3635587Z   base: getLogs failed 21970427-21970926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:02:50.3517395Z   base: getLogs failed 21970927-21971426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:03:03.4538449Z   base: getLogs failed 21971427-21971926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:03:16.5166639Z   base: getLogs failed 21971927-21972426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:03:29.5489521Z   base: getLogs failed 21972427-21972926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:03:42.6180000Z   base: getLogs failed 21972927-21973426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:03:55.6680470Z   base: getLogs failed 21973427-21973926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:04:08.8499459Z   base: getLogs failed 21973927-21974426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:04:22.0400772Z   base: getLogs failed 21974427-21974926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:04:34.9669399Z   base: getLogs failed 21974927-21975426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:04:48.0154858Z   base: getLogs failed 21975427-21975926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:05:01.1075089Z   base: getLogs failed 21975927-21976426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:05:14.2003709Z   base: getLogs failed 21976427-21976926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:05:27.0764443Z   base: getLogs failed 21976927-21977426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:05:39.9501013Z   base: getLogs failed 21977427-21977926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:05:52.7723170Z   base: getLogs failed 21977927-21978426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:06:05.6702430Z   base: getLogs failed 21978427-21978926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:06:18.5697474Z   base: getLogs failed 21978927-21979426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:06:31.7095815Z   base: getLogs failed 21979427-21979926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:06:44.6430812Z   base: getLogs failed 21979927-21980426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:06:57.5195990Z   base: getLogs failed 21980427-21980926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:07:10.4264219Z   base: getLogs failed 21980927-21981426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:07:23.3073665Z   base: getLogs failed 21981427-21981926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:07:36.2285251Z   base: getLogs failed 21981927-21982426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:07:49.1104231Z   base: getLogs failed 21982427-21982926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:08:02.0055262Z   base: getLogs failed 21982927-21983426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:08:15.2687718Z   base: getLogs failed 21983427-21983926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:08:28.1420749Z   base: getLogs failed 21983927-21984426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:08:40.9866042Z   base: getLogs failed 21984427-21984926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:08:53.9316426Z   base: getLogs failed 21984927-21985426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:09:06.8110629Z   base: getLogs failed 21985427-21985926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:09:19.6969418Z   base: getLogs failed 21985927-21986426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:09:32.6522824Z   base: getLogs failed 21986427-21986926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:09:45.4315263Z   base: getLogs failed 21986927-21987426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:09:58.3701342Z   base: getLogs failed 21987427-21987926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:10:11.2374276Z   base: getLogs failed 21987927-21988426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:10:24.1016763Z   base: getLogs failed 21988427-21988926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:10:36.9607162Z   base: getLogs failed 21988927-21989426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:10:49.8559350Z   base: getLogs failed 21989427-21989926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:11:02.8081399Z   base: getLogs failed 21989927-21990426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:11:15.6886420Z   base: getLogs failed 21990427-21990926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:11:28.5845970Z   base: getLogs failed 21990927-21991426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:11:41.4731912Z   base: getLogs failed 21991427-21991926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:11:54.2915541Z   base: getLogs failed 21991927-21992426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:12:07.2007654Z   base: getLogs failed 21992427-21992926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:12:20.0833733Z   base: getLogs failed 21992927-21993426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:12:32.9440194Z   base: getLogs failed 21993427-21993926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:12:45.7728379Z   base: getLogs failed 21993927-21994426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:12:58.6126610Z   base: getLogs failed 21994427-21994926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:13:11.5754913Z   base: getLogs failed 21994927-21995426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:13:24.7623421Z   base: getLogs failed 21995427-21995926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:13:37.6493650Z   base: getLogs failed 21995927-21996426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:13:50.4914339Z   base: getLogs failed 21996427-21996926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:14:03.2640077Z   base: getLogs failed 21996927-21997426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:14:16.1691109Z   base: getLogs failed 21997427-21997926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:14:29.0680295Z   base: getLogs failed 21997927-21998426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:14:41.9388807Z   base: getLogs failed 21998427-21998926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:14:54.7769157Z   base: getLogs failed 21998927-21999426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:15:07.7031049Z   base: getLogs failed 21999427-21999926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:15:20.3792535Z   base: getLogs failed 21999927-22000426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:15:33.3580282Z   base: getLogs failed 22000427-22000926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:15:46.1399830Z   base: getLogs failed 22000927-22001426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:15:59.0618500Z   base: getLogs failed 22001427-22001926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:16:12.1859163Z   base: getLogs failed 22001927-22002426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:16:25.0370062Z   base: getLogs failed 22002427-22002926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:16:37.9171419Z   base: getLogs failed 22002927-22003426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:16:50.8863861Z   base: getLogs failed 22003427-22003926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:17:03.7693027Z   base: getLogs failed 22003927-22004426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:17:16.6260403Z   base: getLogs failed 22004427-22004926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:17:29.6458225Z   base: getLogs failed 22004927-22005426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:17:42.5557426Z   base: getLogs failed 22005427-22005926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:17:55.4020807Z   base: getLogs failed 22005927-22006426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:18:08.3360479Z   base: getLogs failed 22006427-22006926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:18:21.2366626Z   base: getLogs failed 22006927-22007426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:18:34.0430129Z   base: getLogs failed 22007427-22007926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:18:46.9128683Z   base: getLogs failed 22007927-22008426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:18:59.8084698Z   base: getLogs failed 22008427-22008926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:19:12.5457754Z   base: getLogs failed 22008927-22009426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:19:25.4884966Z   base: getLogs failed 22009427-22009926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:19:38.3654493Z   base: getLogs failed 22009927-22010426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:19:51.1572508Z   base: getLogs failed 22010427-22010926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:20:03.9787933Z   base: getLogs failed 22010927-22011426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:20:16.8097519Z   base: getLogs failed 22011427-22011926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:20:29.6684182Z   base: getLogs failed 22011927-22012426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:20:42.5268852Z   base: getLogs failed 22012427-22012926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:20:55.3214418Z   base: getLogs failed 22012927-22013426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:21:08.1767482Z   base: getLogs failed 22013427-22013926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:21:21.0376773Z   base: getLogs failed 22013927-22014426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:21:33.8013149Z   base: getLogs failed 22014427-22014926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:21:46.6764072Z   base: getLogs failed 22014927-22015426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:21:59.4889853Z   base: getLogs failed 22015427-22015926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:22:12.3612664Z   base: getLogs failed 22015927-22016426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:22:25.2215384Z   base: getLogs failed 22016427-22016926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:22:38.1053204Z   base: getLogs failed 22016927-22017426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:22:50.9853853Z   base: getLogs failed 22017427-22017926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:23:03.8590070Z   base: getLogs failed 22017927-22018426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:23:16.7578871Z   base: getLogs failed 22018427-22018926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:23:29.5499369Z   base: getLogs failed 22018927-22019426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:23:42.4431583Z   base: getLogs failed 22019427-22019926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:23:55.2449814Z   base: getLogs failed 22019927-22020426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:24:08.0588629Z   base: getLogs failed 22020427-22020926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:24:20.8490170Z   base: getLogs failed 22020927-22021426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:24:33.6660025Z   base: getLogs failed 22021427-22021926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:24:46.4825325Z   base: getLogs failed 22021927-22022426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:24:59.3298152Z   base: getLogs failed 22022427-22022926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:25:12.1800963Z   base: getLogs failed 22022927-22023426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:25:25.0083762Z   base: getLogs failed 22023427-22023926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:25:37.8066639Z   base: getLogs failed 22023927-22024426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:25:50.6744325Z   base: getLogs failed 22024427-22024926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:26:03.5646212Z   base: getLogs failed 22024927-22025426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:26:16.4422224Z   base: getLogs failed 22025427-22025926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:26:29.2161986Z   base: getLogs failed 22025927-22026426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:26:42.0594711Z   base: getLogs failed 22026427-22026926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:26:54.8932362Z   base: getLogs failed 22026927-22027426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:27:07.7082962Z   base: getLogs failed 22027427-22027926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:27:20.5605655Z   base: getLogs failed 22027927-22028426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:27:33.3831973Z   base: getLogs failed 22028427-22028926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:27:46.4003897Z   base: getLogs failed 22028927-22029426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:27:59.2265646Z   base: getLogs failed 22029427-22029926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:28:12.0555353Z   base: getLogs failed 22029927-22030426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:28:24.8536639Z   base: getLogs failed 22030427-22030926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:28:37.6611528Z   base: getLogs failed 22030927-22031426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:28:50.4634617Z   base: getLogs failed 22031427-22031926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:29:03.2920865Z   base: getLogs failed 22031927-22032426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:29:16.0917835Z   base: getLogs failed 22032427-22032926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:29:28.8998116Z   base: getLogs failed 22032927-22033426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:29:41.7685816Z   base: getLogs failed 22033427-22033926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:29:54.6112648Z   base: getLogs failed 22033927-22034426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:30:07.4501615Z   base: getLogs failed 22034427-22034926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:30:20.3110789Z   base: getLogs failed 22034927-22035426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:30:33.1273025Z   base: getLogs failed 22035427-22035926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:30:45.9897201Z   base: getLogs failed 22035927-22036426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:30:58.8954204Z   base: getLogs failed 22036427-22036926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:31:11.7907879Z   base: getLogs failed 22036927-22037426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:31:24.5764378Z   base: getLogs failed 22037427-22037926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:31:37.4266229Z   base: getLogs failed 22037927-22038426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:31:50.2854585Z   base: getLogs failed 22038427-22038926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:32:03.1763685Z   base: getLogs failed 22038927-22039426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:32:16.0886902Z   base: getLogs failed 22039427-22039926: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:32:28.9858252Z   base: getLogs failed 22039927-22040426: https://base.llamarpc.com: HTTPError: HTTP Error 525: <none>
+fetch	Fetch	2026-11-20T14:32:34.0577258Z ##[error]The operation was canceled.
+fetch	Commit	﻿2026-11-20T14:32:34.0613641Z ##[group]Run git config user.name "github-actions[bot]"
+fetch	Commit	2026-11-20T14:32:34.0613949Z [36;1mgit config user.name "github-actions[bot]"[0m
+fetch	Commit	2026-11-20T14:32:34.0614257Z [36;1mgit config user.email "41898282+github-actions[bot]@users.noreply.github.com"[0m
+fetch	Commit	2026-11-20T14:32:34.0614562Z [36;1mgit add docs/jx_runs data/public[0m
+fetch	Commit	2026-11-20T14:32:34.0614808Z [36;1mgit diff --cached --quiet && exit 0[0m
+fetch	Commit	2026-11-20T14:32:34.0615056Z [36;1mgit commit -m "fetch public data: run 44739671810"[0m
+fetch	Commit	2026-11-20T14:32:34.0615289Z [36;1mfor i in 1 2 3 4 5; do[0m
+fetch	Commit	2026-11-20T14:32:34.0615630Z [36;1m  git pull --rebase --no-edit origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0[0m
+fetch	Commit	2026-11-20T14:32:34.0615981Z [36;1m  sleep $((i * 10))[0m
+fetch	Commit	2026-11-20T14:32:34.0616155Z [36;1mdone[0m
+fetch	Commit	2026-11-20T14:32:34.0616302Z [36;1mexit 1[0m
+fetch	Commit	2026-11-20T14:32:34.0634756Z shell: /usr/bin/bash -e {0}
+fetch	Commit	2026-11-20T14:32:34.0634949Z env:
+fetch	Commit	2026-11-20T14:32:34.0635146Z   UV_CACHE_DIR: /home/runner/work/_temp/setup-uv-cache
+fetch	Commit	2026-11-20T14:32:34.0635419Z ##[endgroup]
+fetch	Commit	2026-11-20T14:32:34.2360432Z [claude/ict-trading-resources-ugh07b b95d7bd] fetch public data: run 44739671810
+fetch	Commit	2026-11-20T14:32:34.2360960Z  1 file changed, 463 insertions(+)
+fetch	Commit	2026-11-20T14:32:34.2361352Z  create mode 100644 docs/jx_runs/fetch_public_44739671810.txt
+fetch	Commit	2026-11-20T14:32:34.5071698Z From https://github.com/onooo641-jpg/LONG-CONVEXITY
+fetch	Commit	2026-11-20T14:32:34.5072126Z  * branch            claude/ict-trading-resources-ugh07b -> FETCH_HEAD
+fetch	Commit	2026-11-20T14:32:34.5072703Z    fe45764..3ea2646  claude/ict-trading-resources-ugh07b -> origin/claude/ict-trading-resources-ugh07b
+fetch	Commit	2026-11-20T14:32:34.5251338Z Rebasing (1/1)
+fetch	Commit	2026-11-20T14:32:34.5251830Z Successfully rebased and updated refs/heads/claude/ict-trading-resources-ugh07b.
+fetch	Commit	2026-11-20T14:32:35.7124808Z To https://github.com/onooo641-jpg/LONG-CONVEXITY
+fetch	Commit	2026-11-20T14:32:35.7293130Z    3ea2646..fe4056c  HEAD -> claude/ict-trading-resources-ugh07b
+fetch	Post Run actions/checkout@v4	﻿2026-11-20T14:32:35.7388700Z Post job cleanup.
+fetch	Post Run actions/checkout@v4	2026-11-20T14:32:35.8078854Z [command]/usr/bin/git version
+fetch	Post Run actions/checkout@v4	2026-11-20T14:32:35.8080046Z git version 2.56.1
+fetch	Post Run actions/checkout@v4	2026-11-20T14:32:35.8085374Z Temporarily overriding HOME='/home/runner/work/_temp/b2c52ddb-5917-461b-bb78-fd33080628ab' before making global git config changes
+fetch	Post Run actions/checkout@v4	2026-11-20T14:32:35.8086324Z Adding repository directory to the temporary git global config as a safe directory
+fetch	Post Run actions/checkout@v4	2026-11-20T14:32:35.8088161Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY
+fetch	Post Run actions/checkout@v4	2026-11-20T14:32:35.8116221Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+fetch	Post Run actions/checkout@v4	2026-11-20T14:32:35.8140854Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+fetch	Post Run actions/checkout@v4	2026-11-20T14:32:35.8352090Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+fetch	Post Run actions/checkout@v4	2026-11-20T14:32:35.8400160Z http.https://github.com/.extraheader
+fetch	Post Run actions/checkout@v4	2026-11-20T14:32:35.8406338Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+fetch	Post Run actions/checkout@v4	2026-11-20T14:32:35.8429664Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+fetch	Post Run actions/checkout@v4	2026-11-20T14:32:35.8607596Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+fetch	Post Run actions/checkout@v4	2026-11-20T14:32:35.8634044Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+fetch	Complete job	﻿2026-11-20T14:32:35.8915949Z Cleaning up orphan processes
+fetch	Complete job	2026-11-20T14:32:35.9025591Z Terminate orphan process: pid (2451) (uv)
+fetch	Complete job	2026-11-20T14:32:35.9042361Z Terminate orphan process: pid (2452) (tee)
+fetch	Complete job	2026-11-20T14:32:35.9057730Z Terminate orphan process: pid (2455) (python)
+fetch	Complete job	2026-11-20T14:32:35.9173978Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, astral-sh/setup-uv@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

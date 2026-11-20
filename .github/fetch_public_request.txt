@@ -1,11 +1,2 @@
 # jobs for scripts/fetch_public.py (PREREG_LIQUIDATIONS_20261120)
-liq_probe
-liq_base
-liq_arbitrum
-liq_optimism
-liq_polygon
-liq_avalanche
-liq_bnb
-liq_gnosis
-liq_scroll
-liq_metis
+liq_diag

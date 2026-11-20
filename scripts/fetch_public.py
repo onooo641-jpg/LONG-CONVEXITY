@@ -589,7 +589,7 @@ def job_ipo2():
 LIQ_TOPIC = "0xe413a321e8681d831f4dbccbca790d2952b56f977908e45be37335533e005286"  # LiquidationCall(...)
 LIQ_CHAINS = {
     # name: (llama chain key, native price key (or None = $1), rpc endpoints)
-    "base": ("base", "coingecko:ethereum", ["https://base-rpc.publicnode.com", "https://mainnet.base.org", "https://base.llamarpc.com"]),
+    "base": ("base", "coingecko:ethereum", ["https://base-rpc.publicnode.com", "https://mainnet.base.org"] ),
     "arbitrum": ("arbitrum", "coingecko:ethereum", ["https://arbitrum-one-rpc.publicnode.com", "https://arb1.arbitrum.io/rpc"]),
     "optimism": ("optimism", "coingecko:ethereum", ["https://optimism-rpc.publicnode.com", "https://mainnet.optimism.io"]),
     "polygon": ("polygon", "coingecko:matic-network", ["https://polygon-bor-rpc.publicnode.com", "https://polygon-rpc.com"]),
@@ -604,11 +604,16 @@ LIQ_MONTHS = [int(t.timestamp()) for t in pd.date_range("2024-11-01", "2026-11-0
 LIQ_RECEIPT_CAP = 40000
 
 
+RPC_FAILS, RPC_SEEN = {}, set()
+
+
 def rpc(urls, method, params, tries=3):
-    """JSON-RPC with endpoint fallback. Returns result, or raises RuntimeError with the last error."""
+    """JSON-RPC with endpoint fallback. Returns result, or raises RuntimeError with the last error.
+    An endpoint with 8 consecutive failures is skipped (unless all are); first error text per endpoint+method is printed."""
     last = None
     for k in range(tries):
-        for u in urls:
+        live = [u for u in urls if RPC_FAILS.get(u, 0) < 8] or list(urls)
+        for u in live:
             try:
                 req = urllib.request.Request(u, data=json.dumps({"jsonrpc": "2.0", "id": 1, "method": method, "params": params}).encode(),
                                              headers={**UA, "Content-Type": "application/json"}, method="POST")
@@ -616,15 +621,23 @@ def rpc(urls, method, params, tries=3):
                     j = json.loads(r.read().decode())
                 if "error" in j:
                     last = f"{u}: {j['error']}"
+                    if (u, method) not in RPC_SEEN:
+                        RPC_SEEN.add((u, method))
+                        print(f"  rpc error {method} @ {u}: {str(j['error'])[:200]}", flush=True)
                     if "range" in str(j["error"]).lower() or "limit" in str(j["error"]).lower() or "exceed" in str(j["error"]).lower() or "too many" in str(j["error"]).lower():
                         raise ValueError(last)  # caller shrinks the window
                     continue
                 STATS["ok"] += 1
+                RPC_FAILS[u] = 0
                 return j["result"]
             except ValueError:
                 raise
             except Exception as e:  # noqa: BLE001
                 last = f"{u}: {type(e).__name__}: {e}"
+                RPC_FAILS[u] = RPC_FAILS.get(u, 0) + 1
+                if (u, method) not in RPC_SEEN:
+                    RPC_SEEN.add((u, method))
+                    print(f"  rpc exception {method} @ {u}: {type(e).__name__}: {str(e)[:200]}", flush=True)
         time.sleep(2 * (k + 1))
     STATS["fail"] += 1
     raise RuntimeError(last)
@@ -715,6 +728,11 @@ def job_liq_chain(name):
                 continue
             except RuntimeError as ex:
                 print(f"  {name}: getLogs failed {b}-{e}: {str(ex)[:150]}", flush=True)
+                st["getlogs_fails"] = st.get("getlogs_fails", 0) + 1
+                if st["getlogs_fails"] >= 12 and not rows:
+                    flush(b)
+                    print(f"{name}: ABORT: 12 getLogs failures and no events yet; no working endpoint. Stopped at block {b}", flush=True)
+                    return
                 if step > 500:
                     step = max(500, step // 4)
                     continue
@@ -810,6 +828,40 @@ def job_liq_chain(name):
     print(f"{name}: COMPLETE {len(df)} events, {len(prows)} price points for {len(keys)} coins, {(time.time()-t0)/60:.0f} min", flush=True)
 
 
+def job_liq_diag():
+    """Which endpoints answer which getLogs shapes (topic-only vs address, window sizes)."""
+    pools = {"base": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5", "bnb": "0x6807dc923806fE8Fd134338EABCA509979a7e0cB",
+             "gnosis": "0xb50201558B00496A145fE76f7424749556E326D8", "scroll": "0x11fCfe756c05AD438e312a7fd934381537D3cFfe",
+             "metis": "0x90df02551bB792286e8D4f13E0e357b4Bf1D6a57"}
+    for name, (_, _, urls) in LIQ_CHAINS.items():
+        for u in urls:
+            try:
+                head = int(rpc([u], "eth_blockNumber", [], tries=1), 16)
+            except Exception as e:  # noqa: BLE001
+                print(f"diag {name} {u}: blockNumber FAIL {str(e)[:120]}", flush=True)
+                continue
+            old = head - 3_000_000
+            for label, base_b in (("recent", head - 200_000), ("old_2yr_ish", max(1, head - 55_000_000 if name in ("base", "optimism", "arbitrum") else head - 20_000_000))):
+                for span in (1_000, 10_000, 100_000):
+                    for filt in ("topic", "addr"):
+                        f_ = {"fromBlock": hex(base_b), "toBlock": hex(base_b + span), "topics": [LIQ_TOPIC]}
+                        addr = pools.get(name, "0x794a61358D6845594F94dc1DB02A252b5b4814aD")
+                        if filt == "addr":
+                            f_["address"] = addr
+                        try:
+                            r = rpc([u], "eth_getLogs", [f_], tries=1)
+                            out = f"{len(r)} logs"
+                        except Exception as e:  # noqa: BLE001
+                            out = f"ERR {str(e)[:110]}"
+                        print(f"diag {name} {u.split('//')[1][:32]} {label} span {span} {filt}: {out}", flush=True)
+                        time.sleep(0.3)
+            try:
+                nb = _block_ts([u], max(1, head - 55_000_000))
+                print(f"diag {name} {u.split('//')[1][:32]} old block header ok ts {nb}", flush=True)
+            except Exception as e:  # noqa: BLE001
+                print(f"diag {name} {u.split('//')[1][:32]} old block header FAIL {str(e)[:100]}", flush=True)
+
+
 def job_liq_probe():
     """Reachability probe for Solana lenders (Kamino/MarginFi/Save/Drift): no data pulled, just what answers."""
     sol = ["https://api.mainnet-beta.solana.com", "https://solana-rpc.publicnode.com"]
@@ -831,7 +883,7 @@ for _c in LIQ_CHAINS:
 
 JOBS = {"ipo2": job_ipo2, "iponews": job_iponews, "ipo": job_ipo, "myxsnap": job_myxsnap, "batch2": job_batch2, "hl2023d": job_hl2023d, "hl2023": job_hl2023, "hl": job_hl, "llama_lend": job_llama_lend, "llama_pools": job_llama_pools,
         "llama_prices": job_llama_prices, "poly": job_poly,
-        "liq_probe": job_liq_probe, **{f"liq_{c}": globals()[f"job_liq_{c}"] for c in LIQ_CHAINS}}
+        "liq_probe": job_liq_probe, "liq_diag": job_liq_diag, **{f"liq_{c}": globals()[f"job_liq_{c}"] for c in LIQ_CHAINS}}
 
 
 def main(argv):
