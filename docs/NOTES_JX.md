@@ -603,3 +603,13 @@ Lucid/MFFU cloud routing is their own call, so check each firm's device/VPS rule
 - One account at each of Topstep, Lucid, MFFU: ~$10.5K/yr (2016–26), ~$14.6K cash on hand.
 - Max accounts (5/5/3): ~$49K/yr, ~$50K cash on hand.
 - Staggering account start dates does not reduce risk: identical trades put the accounts back in step.
+
+## Market mix: the cheapest way to scale (2026-11-20 22:30, PREREG_MARKETMIX)
+- Same strategy on NQ, ES and YM in different accounts; markets' monthly results barely move together.
+- With an anti-hedge filter (never hold opposite directions in two index markets at once — required by
+  the firms' cross-account hedging bans):
+  - 5 Topstep accounts: all NQ $21.2K/yr needing $15.3K cash → 3 NQ/1 ES/1 YM $16.3K/yr needing **$4.7K**.
+  - Full plan (5 Topstep, 5 Lucid, 3 MFFU): all NQ $48.9K/yr, $53K cash → mixed **$38.4K/yr, $21K cash**.
+- Before trading a second market live, the bot needs: per-market contract ids (MES, MYM), one engine per
+  market, and a shared check of open positions across all accounts that blocks opposite-direction entries.
+- ES's own edge is unconfirmed (86% vs coin flips); YM narrowly confirmed (96%).

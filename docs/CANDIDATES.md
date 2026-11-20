@@ -96,6 +96,7 @@ risk, 5m signals and 1m fills.
 | 59 | offshore broker credit bonuses as a loss buffer | same. Terms screen. | fail (credit does not absorb losses, or one-time capped) | PREREG_NONPROP2 results |
 | 60 | multi-firm portfolio, same trades (Topstep, Lucid, MFFU, Breakout; 1 slot each and max slots) | `docs/PREREG_PORTFOLIO_20261120.md`. Sizing, no pass/fail. | B− (Topstep+Lucid+MFFU) $116K / $10.7K/yr, cash on hand $13.8K; max slots $513K, cash $58K; firms correlate 0.80–0.88; year one median $5.1K, 35% of starts lose | PREREG_PORTFOLIO results |
 | 61 | staggered account starts; one API subscription per platform | `docs/PREREG_PORTFOLIO2_20261120.md`. Worth doing if cash on hand ≥15% lower at ≤5% net change. | not worth it (net −0.1%, cash +1.4%); corrected plan: 1 slot/firm $10.5K/yr, $14.6K cash; max slots $49K/yr, $50K cash | PREREG_PORTFOLIO2 results |
+| 62 | market mix across accounts (NQ/ES/YM) with anti-hedge filter | `docs/PREREG_MARKETMIX_20261120.md`. Worth doing if net per $ of cash ≥ +15% and net ≥ 75% of all-NQ. | **WORTH DOING**: 5 Topstep cash $15.3K→$4.7K for −23% net; full plan cash $53K→$21K for −22% net ($38.4K/yr) | PREREG_MARKETMIX results |
 
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.

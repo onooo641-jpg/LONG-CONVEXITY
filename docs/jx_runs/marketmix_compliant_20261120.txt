@@ -1,0 +1,34 @@
+check NQ: Topstep single-account net $44,359 vs earlier $44,359 -> OK
+check ES: Topstep single-account net $20,338 vs earlier $20,338 -> OK
+check YM: Topstep single-account net $11,744 vs earlier $11,744 -> OK
+compliance filter: skipped NQ 69, ES 54, YM 85 trades
+  NQ single Topstep account after filter: $46,933
+  ES single Topstep account after filter: $17,695
+  YM single Topstep account after filter: $11,015
+
+monthly P&L correlation, one Topstep account per market:
+      NQ    ES    YM
+NQ  1.00  0.25 -0.05
+ES  0.25  1.00 -0.10
+YM -0.05 -0.10  1.00
+
+T5-NQ  5 Topstep all NQ                      net $  229,334 ($ 21,179/yr) | 2016-20 $   41,837, 2021-26 $  187,496 | worst dip $  -15,336 | most out of pocket $ -15,336 | cash on hand $  15,336 | longest below peak 44.8 mo | losing years 4
+T5-mix 5 Topstep 3NQ/1ES/1YM                 net $  176,902 ($ 16,337/yr) | 2016-20 $   26,482, 2021-26 $  150,420 | worst dip $   -4,741 | most out of pocket $  -4,741 | cash on hand $   4,741 | longest below peak 38.1 mo | losing years 1
+C-NQ   5T/5L/3M all NQ                       net $  529,425 ($ 48,893/yr) | 2016-20 $   89,341, 2021-26 $  440,084 | worst dip $  -52,994 | most out of pocket $ -52,994 | cash on hand $  52,994 | longest below peak 48.9 mo | losing years 3
+C-mix  5T/5L/3M mixed                        net $  415,303 ($ 38,354/yr) | 2016-20 $   70,780, 2021-26 $  344,523 | worst dip $  -21,097 | most out of pocket $ -21,097 | cash on hand $  21,097 | longest below peak 39.3 mo | losing years 3
+
+yearly income:
+      T5-NQ  T5-mix    C-NQ   C-mix
+2016 -4,349  -3,264 -16,668  -8,970
+2017 -4,114   1,856 -11,357    -101
+2018 -5,339     368 -21,792  -7,508
+2019 15,278  12,278  45,509  44,093
+2020 40,361  15,244  93,649  43,265
+2021 -1,507   8,168     172  10,017
+2022  6,422   8,056   7,296  19,304
+2023 48,368  30,861 141,907  91,695
+2024 25,150  15,116  70,504  38,182
+2025 44,029  28,828  67,942  41,665
+2026 65,034  59,390 152,262 143,661
+T5-mix vs T5-NQ: net -22.9%, cash on hand -69.1%, net per $ of cash +149.5% -> WORTH DOING (pre-registered rule)
+C-mix vs C-NQ: net -21.6%, cash on hand -60.2%, net per $ of cash +97.0% -> WORTH DOING (pre-registered rule)

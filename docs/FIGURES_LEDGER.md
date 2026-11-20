@@ -292,4 +292,13 @@ day at every size.
 | Q2 | cash on hand: B−c / C−sync / C−stag | $14,590 / $49,792 / $50,502 | same | same | 2026-11-20 | same |
 | Q3 | stagger vs sync: net / cash | −0.1% / +1.4% (not worth it) | same | same | 2026-11-20 | current |
 
+## Market mix across accounts (docs/PREREG_MARKETMIX_20261120.md, 871e435; addendum before part 2)
+
+| # | figure | value | command | window | computed | status |
+|---|---|---|---|---|---|---|
+| X1 | monthly correlation NQ–ES / NQ–YM / ES–YM (compliant) | 0.25 / −0.05 / −0.10 | `uv run python scripts/marketmix_20261120.py --compliant` | 2016–26 | 2026-11-20 | current |
+| X2 | 5 Topstep all NQ vs 3NQ/1ES/1YM: net / cash on hand | $229,334 / $15,336 vs $176,902 / $4,741 | same | same | 2026-11-20 | current |
+| X3 | 5T/5L/3M all NQ vs mixed: net / cash on hand | $529,425 / $52,994 vs $415,303 / $21,097 | same | same | 2026-11-20 | current; planning figure |
+| X4 | trades skipped by anti-hedge filter: NQ / ES / YM | 69 / 54 / 85 | same | same | 2026-11-20 | current |
+
 Raw output for every command above is in `docs/jx_runs/`.
