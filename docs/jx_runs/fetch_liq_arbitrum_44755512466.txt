@@ -1,0 +1,22 @@
+=== liq_arbitrum
+arbitrum: month anchors 269733499..520129274, resume at block 269733499
+  rpc error eth_getLogs @ https://arb1.arbitrum.io/rpc: {'code': -32602, 'message': 'query spans 40000 blocks (269753499 to 269793498), but only 30000 are allowed for this request; narrow the block range, or add an address filter'}
+  arbitrum: scanned to block 280053499/520129273 (470 events, 2 min)
+  arbitrum: scanned to block 290693499/520129273 (1210 events, 3 min)
+  arbitrum: scanned to block 301353499/520129273 (1803 events, 4 min)
+  arbitrum: scanned to block 310953499/520129273 (6478 events, 5 min)
+  arbitrum: scanned to block 321623499/520129273 (20271 events, 6 min)
+  arbitrum: scanned to block 331963499/520129273 (23707 events, 7 min)
+  arbitrum: scanned to block 342623499/520129273 (24047 events, 8 min)
+  arbitrum: scanned to block 352963499/520129273 (24406 events, 9 min)
+  arbitrum: scanned to block 363663499/520129273 (24663 events, 10 min)
+  arbitrum: scanned to block 374403499/520129273 (25450 events, 11 min)
+  arbitrum: scanned to block 384763499/520129273 (25721 events, 12 min)
+  arbitrum: scanned to block 395503499/520129273 (26877 events, 13 min)
+  arbitrum: scanned to block 405883499/520129273 (28470 events, 14 min)
+  arbitrum: scanned to block 416603499/520129273 (28687 events, 15 min)
+  arbitrum: scanned to block 427323499/520129273 (29955 events, 16 min)
+  arbitrum: scanned to block 437043499/520129273 (32652 events, 17 min)
+  arbitrum: scanned to block 447743499/520129273 (33219 events, 18 min)
+  arbitrum: scanned to block 458103499/520129273 (34630 events, 18 min)
+  arbitrum: scanned to block 468763499/520129273 (34920 events, 19 min)
