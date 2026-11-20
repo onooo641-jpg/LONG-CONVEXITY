@@ -1,0 +1,3 @@
+=== liq_prices_optimism
+optimism: prices 12852 points, 18/20 coins priced
+=== liq_prices_optimism done in 34s  ok 56 fail 0
