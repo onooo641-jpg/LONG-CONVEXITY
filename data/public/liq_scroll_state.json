@@ -30,5 +30,6 @@
  "logs_done": true,
  "receipts_done": true,
  "complete": true,
- "last_flush": "2026-11-20T14:40:13Z"
+ "last_flush": "2026-11-20T14:40:13Z",
+ "receipts_missing": 19
 }

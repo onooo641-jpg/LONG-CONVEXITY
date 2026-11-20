@@ -1,0 +1,18 @@
+=== liq_scroll
+scroll: marked complete by older code without a receipt check; re-checking receipts
+scroll: month anchors 10704234..35562631, resume at block 35562631
+scroll: receipts: 3217 cached, 1988 to fetch (sampled=False)
+  scroll: receipts 4717/5205 (0 min)
+  rpc exception eth_getTransactionReceipt @ https://rpc.scroll.io: HTTP 429
+  scroll: receipts 5186/5205 (2 min)
+scroll: retry pass 1: 19 receipts missing
+  scroll: receipts 5186/5205 (3 min)
+scroll: retry pass 2: 19 receipts missing
+  scroll: receipts 5186/5205 (5 min)
+scroll: retry pass 3: 19 receipts missing
+  scroll: receipts 5186/5205 (7 min)
+scroll: receipts missing after retries: 19/5205 (<=1%, accepted; gas imputed, bot 'unknown')
+  rpc exception eth_call @ https://rpc.scroll.io: HTTP 429
+scroll: prices 6575 points, 9/9 coins priced
+scroll: COMPLETE 10761 events, 12 min
+=== liq_scroll done in 745s  ok 1993 fail 84
