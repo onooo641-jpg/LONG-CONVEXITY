@@ -1,0 +1,7 @@
+# chains for .github/workflows/fetch_liq.yml (one job per chain). Resumable: push a change here to continue partial chains.
+# run 1: chains with a verified deep-history endpoint (see docs/jx_runs/fetch_public_44754595913.txt). base/polygon/bnb/avalanche wait for liq_diag2.
+gnosis
+metis
+scroll
+optimism
+arbitrum

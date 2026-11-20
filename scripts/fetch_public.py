@@ -590,13 +590,13 @@ LIQ_TOPIC = "0xe413a321e8681d831f4dbccbca790d2952b56f977908e45be37335533e005286"
 LIQ_CHAINS = {
     # name: (llama chain key, native price key (or None = $1), rpc endpoints)
     "base": ("base", "coingecko:ethereum", ["https://base-rpc.publicnode.com", "https://mainnet.base.org"] ),
-    "arbitrum": ("arbitrum", "coingecko:ethereum", ["https://arbitrum-one-rpc.publicnode.com", "https://arb1.arbitrum.io/rpc"]),
-    "optimism": ("optimism", "coingecko:ethereum", ["https://optimism-rpc.publicnode.com", "https://mainnet.optimism.io"]),
+    "arbitrum": ("arbitrum", "coingecko:ethereum", ["https://arb1.arbitrum.io/rpc"]),
+    "optimism": ("optimism", "coingecko:ethereum", ["https://mainnet.optimism.io"]),
     "polygon": ("polygon", "coingecko:matic-network", ["https://polygon-bor-rpc.publicnode.com", "https://polygon-rpc.com"]),
     "avalanche": ("avax", "coingecko:avalanche-2", ["https://avalanche-c-chain-rpc.publicnode.com", "https://api.avax.network/ext/bc/C/rpc"]),
     "bnb": ("bsc", "coingecko:binancecoin", ["https://bsc-rpc.publicnode.com", "https://bsc-dataseed.binance.org"]),
-    "gnosis": ("xdai", None, ["https://gnosis-rpc.publicnode.com", "https://rpc.gnosischain.com"]),
-    "scroll": ("scroll", "coingecko:ethereum", ["https://scroll-rpc.publicnode.com", "https://rpc.scroll.io"]),
+    "gnosis": ("xdai", None, ["https://rpc.gnosischain.com"]),
+    "scroll": ("scroll", "coingecko:ethereum", ["https://rpc.scroll.io"]),
     "metis": ("metis", "coingecko:metis-token", ["https://andromeda.metis.io/?owner=1088"]),
 }
 LIQ_START = int(pd.Timestamp("2024-11-01", tz="UTC").timestamp())
@@ -632,6 +632,16 @@ def rpc(urls, method, params, tries=3):
                 return j["result"]
             except ValueError:
                 raise
+            except urllib.error.HTTPError as e:
+                if e.code == 413 and method == "eth_getLogs":
+                    raise ValueError(f"{u}: HTTP 413") from e
+                last = f"{u}: HTTPError: HTTP {e.code}"
+                if e.code == 429:
+                    time.sleep(8)
+                RPC_FAILS[u] = RPC_FAILS.get(u, 0) + 1
+                if (u, method) not in RPC_SEEN:
+                    RPC_SEEN.add((u, method))
+                    print(f"  rpc exception {method} @ {u}: HTTP {e.code}", flush=True)
             except Exception as e:  # noqa: BLE001
                 last = f"{u}: {type(e).__name__}: {e}"
                 RPC_FAILS[u] = RPC_FAILS.get(u, 0) + 1
@@ -709,7 +719,7 @@ def job_liq_chain(name):
 
     # ---- phase 1: logs
     if not st["logs_done"]:
-        b, step, last_flush = st["next_block"], 20000, time.time()
+        b, step, last_flush, cap = st["next_block"], 20000, time.time(), 2_000_000
         month_edge = next((x for x in anchors if x > b), a1 + 1)
         while b <= a1:
             if over():
@@ -725,6 +735,7 @@ def job_liq_chain(name):
                     b = e + 1
                     continue
                 step = max(500, step // 2)
+                cap = step
                 continue
             except RuntimeError as ex:
                 print(f"  {name}: getLogs failed {b}-{e}: {str(ex)[:150]}", flush=True)
@@ -745,9 +756,10 @@ def job_liq_chain(name):
                              "user": "0x" + lg["topics"][3][-40:], "debt_amt": float(int(d[0:64], 16)),
                              "coll_amt": float(int(d[64:128], 16)), "liquidator": "0x" + d[128:192][-40:]})
             if len(logs) < 300:
-                step = min(step * 2, 2_000_000)
+                step = min(step * 2, cap)
             elif len(logs) > 3000:
                 step = max(500, step // 2)
+                cap = min(cap, step * 2)
             b = e + 1
             if b >= month_edge or time.time() - last_flush > 600:
                 flush(b)
@@ -862,6 +874,39 @@ def job_liq_diag():
                 print(f"diag {name} {u.split('//')[1][:32]} old block header FAIL {str(e)[:100]}", flush=True)
 
 
+LIQ_CANDIDATES = {
+    "base": ["https://base.drpc.org", "https://1rpc.io/base", "https://base.meowrpc.com", "https://base.gateway.tenderly.co",
+             "https://base.api.pocket.network", "https://base.blockpi.network/v1/rpc/public", "https://developer-access-mainnet.base.org"],
+    "polygon": ["https://polygon.drpc.org", "https://1rpc.io/matic", "https://polygon.meowrpc.com", "https://poly.api.pocket.network",
+                "https://polygon.gateway.tenderly.co", "https://polygon.llamarpc.com", "https://polygon-bor-rpc.publicnode.com"],
+    "bnb": ["https://bsc.drpc.org", "https://1rpc.io/bnb", "https://bsc.meowrpc.com", "https://bsc-dataseed1.defibit.io",
+            "https://bsc-dataseed1.ninicoin.io", "https://binance.llamarpc.com", "https://bsc.api.pocket.network"],
+    "avalanche": ["https://avalanche.drpc.org", "https://1rpc.io/avax/c", "https://avalanche.public-rpc.com",
+                  "https://avax.meowrpc.com", "https://avalanche.api.pocket.network"],
+}
+
+
+def job_liq_diag2():
+    """Candidate endpoints for chains where the first diag found none with deep history."""
+    back = {"base": 31_500_000, "polygon": 31_500_000, "bnb": 140_000_000, "avalanche": 31_500_000}  # ~23 months of blocks
+    for name, urls in LIQ_CANDIDATES.items():
+        for u in urls:
+            lab = f"diag2 {name} {u.split('//')[1][:40]}"
+            try:
+                head = int(rpc([u], "eth_blockNumber", [], tries=1), 16)
+            except Exception as e:  # noqa: BLE001
+                print(f"{lab}: blockNumber FAIL {str(e)[:100]}", flush=True)
+                continue
+            for label, b0 in (("recent", head - 100_000), ("23mo_ago", head - back[name])):
+                for span in (1_000, 5_000, 10_000):
+                    try:
+                        r = rpc([u], "eth_getLogs", [{"fromBlock": hex(b0), "toBlock": hex(b0 + span), "topics": [LIQ_TOPIC]}], tries=1)
+                        out = f"{len(r)} logs"
+                    except Exception as e:  # noqa: BLE001
+                        out = f"ERR {str(e)[:100]}"
+                    print(f"{lab} {label} span {span} topic-only: {out}", flush=True)
+                    time.sleep(1.5)
+
 def job_liq_probe():
     """Reachability probe for Solana lenders (Kamino/MarginFi/Save/Drift): no data pulled, just what answers."""
     sol = ["https://api.mainnet-beta.solana.com", "https://solana-rpc.publicnode.com"]
@@ -883,7 +928,7 @@ for _c in LIQ_CHAINS:
 
 JOBS = {"ipo2": job_ipo2, "iponews": job_iponews, "ipo": job_ipo, "myxsnap": job_myxsnap, "batch2": job_batch2, "hl2023d": job_hl2023d, "hl2023": job_hl2023, "hl": job_hl, "llama_lend": job_llama_lend, "llama_pools": job_llama_pools,
         "llama_prices": job_llama_prices, "poly": job_poly,
-        "liq_probe": job_liq_probe, "liq_diag": job_liq_diag, **{f"liq_{c}": globals()[f"job_liq_{c}"] for c in LIQ_CHAINS}}
+        "liq_probe": job_liq_probe, "liq_diag": job_liq_diag, "liq_diag2": job_liq_diag2, **{f"liq_{c}": globals()[f"job_liq_{c}"] for c in LIQ_CHAINS}}
 
 
 def main(argv):
