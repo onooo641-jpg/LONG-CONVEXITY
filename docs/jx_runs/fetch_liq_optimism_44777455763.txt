@@ -1,0 +1,12 @@
+=== liq_optimism
+optimism: marked complete by older code without a receipt check; re-checking receipts
+optimism: month anchors 127410212..158946212, resume at block 158946212
+optimism: receipts: 24980 cached, 816 to fetch (sampled=False)
+  rpc exception eth_getTransactionReceipt @ https://mainnet.optimism.io: HTTP 429
+  optimism: receipts 25786/25796 (2 min)
+optimism: retry pass 1: 10 receipts missing
+  optimism: receipts 25796/25796 (2 min)
+optimism: receipts missing after retries: 0/25796 (<=1%, accepted; gas imputed, bot 'unknown')
+optimism: prices 12852 points, 18/20 coins priced
+optimism: COMPLETE 32801 events, 3 min
+=== liq_optimism done in 184s  ok 891 fail 10

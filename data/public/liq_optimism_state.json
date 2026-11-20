@@ -31,5 +31,6 @@
  "receipts_done": true,
  "complete": true,
  "last_flush": "2026-11-20T15:27:32Z",
- "skipped_logs": 5
+ "skipped_logs": 5,
+ "receipts_missing": 0
 }
