@@ -363,3 +363,18 @@ def test_a_firm_ladder_caps_contracts_in_both_phases():
     assert out["combine_busts"] == 1                  # -2,000 after scaling still breaches
     out2 = recycle(seq([-9000.0], contracts=10), rules)
     assert out2["combine_busts"] == 0                 # -1,800 after scaling does not
+
+
+def test_instant_funded_accounts_skip_the_evaluation_and_rebuy_on_a_bust():
+    rules = dataclasses.replace(RULES, instant_funded=True, one_time_price=500.0, reset=500.0,
+                                monthly=0.0, activation=0.0, api_monthly=0.0)
+    out = recycle(seq([-2000.0, -2000.0]), rules)
+    assert out["combine_busts"] == 0 and out["funded_busts"] == 2
+    assert out["cost"] == 3 * 500.0                  # first account + two replacements
+
+
+def test_a_payout_goal_needs_fresh_profit():
+    rules = dataclasses.replace(RULES, winning_days_required=1, payout_goal=(3000.0, 2000.0))
+    # funded profit of 2,500 is under the 3,000 goal: no payout
+    assert recycle(seq([3000.0, 2500.0]), rules, policy=Policy.IMMEDIATE)["payouts"] == 0
+    assert recycle(seq([3000.0, 3000.0]), rules, policy=Policy.IMMEDIATE)["payouts"] == 1

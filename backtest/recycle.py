@@ -195,6 +195,10 @@ class XFARules:
     #: top cap last as (inf, cap); used in BOTH phases when set. None = the
     #: Topstep funded ladder and ``combine_max_contracts``.
     ladder: tuple | None = None
+    #: No evaluation: every account bought starts funded (Tradeify Lightning).
+    instant_funded: bool = False
+    #: Payout needs this much fresh profit since the last payout: (first, later).
+    payout_goal: tuple | None = None
 
     monthly: float = 49.0
     reset: float = 49.0
@@ -331,7 +335,7 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
         raise ValueError("a guard needs risk_usd: its test compares the room "
                          "left against the size of the next trade")
 
-    account, funded = _Account(), False
+    account, funded = _Account(), rules.instant_funded
     combine_busts = funded_busts = resets = activations = payouts = 0
     reactivations = 0
     rebuys = 0  # funded accounts ended and replaced (one-time pricing)
@@ -341,7 +345,7 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
     first = trades["entry_ts"].iloc[0]
     last_cash_ts, worst_dry = first, 0.0
     funded_days = 0.0
-    funded_since = None
+    funded_since = first if rules.instant_funded else None
     timeline: list[dict] = []
 
     for at, (pnl, contracts, exit_ts) in enumerate(
@@ -437,7 +441,7 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
             rebuys += 1
             bust_streak += 1
             worst_streak = max(worst_streak, bust_streak)
-            funded, account, funded_since = False, _Account(), None
+            funded, account, funded_since = rules.instant_funded, _Account(), (exit_ts if rules.instant_funded else None)
             mark(exit_ts, "funded_bust", at)
             continue
 
@@ -453,6 +457,9 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
                        and account.best_day <= rules.consistency_target * since)
             if rules.payout_needs_both:
                 days_ok = days_ok and account.winning_days >= rules.winning_days_required
+        if rules.payout_goal is not None:
+            goal = rules.payout_goal[0] if account.n_payouts == 0 else rules.payout_goal[1]
+            days_ok = days_ok and account.balance - (account.after_payout or 0.0) >= goal
         eligible = (days_ok
                     and account.balance > 0
                     and not (rules.profit_since_payout_required
@@ -491,7 +498,7 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
                 funded_days += (exit_ts - funded_since).total_seconds() / 86400
                 resets += 1
                 rebuys += 1
-                funded, account, funded_since = False, _Account(), None
+                funded, account, funded_since = rules.instant_funded, _Account(), (exit_ts if rules.instant_funded else None)
                 mark(exit_ts, "xfa_complete", at)
 
     end = trades["exit_ts"].iloc[-1]

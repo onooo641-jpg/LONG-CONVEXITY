@@ -236,4 +236,13 @@ day at every size.
 | F6 | coin-flip median: same order | $14,035 / −$4,213 / −$14,622 | same | 2016–26 | 2026-11-20 | same |
 | F7 | worst dip: same order | −$4,835 / −$10,035 / −$10,840 | same | 2016–26 | 2026-11-20 | same |
 
+## Global round 1 (docs/PREREG_GLOBAL_20261120.md)
+
+| # | figure | value | command | window | computed | status |
+|---|---|---|---|---|---|---|
+| G3 | Breakout Classic 50K, 10x cap: real net (risk ≤$950 refund/no; ≤$1,250 refund/no) | $44,663 / $38,263; $57,215 / $49,215 | `uv run python scripts/global_round1_20261120.py` | 2016–26 | 2026-11-20 | rules third-party; bot policy unpublished |
+| G4 | same, coin-flip median | $15,203 / $10,679; $24,507 / $17,863 | same | 2016–26 | 2026-11-20 | same |
+| G5 | NQ trade leverage on 50K at $950 risk: median / p10 / p90 | 13.3x / 5.5x / 29.4x | inline check in session (micros × entry × $2 / 50K) | 2016–26 | 2026-11-20 | current |
+| G6 | Tradeify Lightning 50K real net, cap $2,000 / $1,500 | $40,998 / $20,196 | same as G3 | 2016–26 | 2026-11-20 | cap unverified |
+
 Raw output for every command above is in `docs/jx_runs/`.

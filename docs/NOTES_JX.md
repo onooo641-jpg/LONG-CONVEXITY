@@ -523,3 +523,8 @@ Pre-registered, backtested on free public data fetched through GitHub Actions
 - FTMO accepts Malaysia (18+). But FTMO recommends ≤1% risk per trade, where the CFD "structure" is worth nothing; Topstep's edge comes from allowing ~45% of the loss buffer per trade.
 - FTMO Futures: $28–34K vs Topstep $44K over 2016–26 ($48K best case if renewal resets are free); dips ~3× deeper. Not better; a possible second firm only.
 - Bulenox (bots explicitly allowed, Malaysia not listed as restricted) not modelled: rules changed recently.
+
+## Firms round 2 + global round 1 (2026-11-20)
+- TradeDay Fast Pass at $85/mo (discount code): $35.7K vs Topstep $44.4K — closest futures match; bot must live inside NinjaTrader/Tradovate/TradingView. Elite Trader Funding and FXIFY Futures don't allow bots. Bulenox Momentum loses money (30-day eval limit).
+- Breakout / Kraken Prop Classic 50K: Topstep-level ($38–57K) once its 10x leverage cap is applied; uncapped numbers were a model artefact. Malaysia not restricted. Bot policy unpublished — must ask.
+- Non-prop classes screened out by reasoning (betting illegal in MY, bank bonuses US-only, airdrops untestable/grey).

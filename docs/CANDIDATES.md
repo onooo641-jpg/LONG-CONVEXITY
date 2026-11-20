@@ -13,7 +13,7 @@ Rules:
 - A variant found by looking at results gets its own row, marked
   **selected-on-data**.
 
-**Tried so far: 54 rows, and row 12 alone is a 900-combination search.** So the
+**Tried so far: 55 rows, and row 12 alone is a 900-combination search.** So the
 real count of configurations looked at is about 914, plus the 0.5–3.0 target
 sweep in row 9.
 
@@ -89,6 +89,7 @@ risk, 5m signals and 1m fills.
 | 52 | static-drawdown prop firm coin-flip (control) | `docs/PREREG_LOOPHOLES_20261120.md`. | RETIRED: FTMO recommends <=1% risk, where coin flip is -$2.6K; structure pays random play at >=2% risk ($33K coin flip at 2%); FTMO bans high risk-per-idea; prop-related | PREREG_LOOPHOLES |
 | 53 | FTMO verification + FTMO Futures Growth/Pro vs Topstep 50K | `docs/PREREG_FTMO_FUTURES_20261120.md`. Ranking. | FTMO Futures Growth $34K / Pro $28K vs Topstep $44K (Growth $48K if renewal resets are free); coin flip ~$0-2K vs $18K; no structural edge | PREREG_FTMO_FUTURES |
 | 54 | TradeDay Fast Pass / Bulenox Momentum vs Topstep (ETF, FXIFY Futures excluded: no bots) | `docs/PREREG_FIRMS2_20261120.md`. Ranking. | TradeDay $85/mo: $35.7K real, $14.0K coin flip (closest to Topstep $44.4K/$18.0K); list price $22K; Bulenox Momentum -$4K | PREREG_FIRMS2 |
+| 55 | global round 1: Breakout static 1-Step 50K; Tradeify Lightning 50K | `docs/PREREG_GLOBAL_20261120.md`. Ranking. | Breakout/Kraken Prop Classic 50K at 10x: $38-57K real, $11-25K coin flip = Topstep-level; Lightning $20-41K (cap-dependent) | PREREG_GLOBAL |
 
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.

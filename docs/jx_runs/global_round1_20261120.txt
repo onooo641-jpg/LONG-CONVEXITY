@@ -1,0 +1,33 @@
+Topstep 50K reference (C2/C6): real net $44,359, coin-flip median $18,046 (98% profitable), worst dip -$3,520
+Breakout Classic 50K risk $  750 (25%) lev none refund=yes | real net $   49,051 ($ 4,531/yr, spent $ 24,000, funded  21, worst dip $  -5,494) | coin-flip median $    8,726, profitable 87%
+Breakout Classic 50K risk $  750 (25%) lev  10x refund=no  | real net $   25,504 ($ 2,356/yr, spent $ 16,800, funded  15, worst dip $  -6,261) | coin-flip median $    4,233, profitable 72%
+Breakout Classic 50K risk $  750 (25%) lev  10x refund=yes | real net $   30,704 ($ 2,836/yr, spent $ 16,800, funded  15, worst dip $  -5,461) | coin-flip median $    7,746, profitable 86%
+Breakout Classic 50K risk $  750 (25%) lev   5x refund=no  | real net $   21,401 ($ 1,977/yr, spent $  7,200, funded   4, worst dip $  -3,200) | coin-flip median $      954, profitable 55%
+Breakout Classic 50K risk $  750 (25%) lev   5x refund=yes | real net $   23,001 ($ 2,125/yr, spent $  7,200, funded   4, worst dip $  -3,200) | coin-flip median $    2,964, profitable 66%
+Breakout Classic 50K risk $  950 (33%) lev none refund=yes | real net $   67,696 ($ 6,253/yr, spent $ 32,400, funded  29, worst dip $  -6,723) | coin-flip median $   25,102, profitable 96%
+Breakout Classic 50K risk $  950 (33%) lev  10x refund=no  | real net $   38,263 ($ 3,535/yr, spent $ 22,400, funded  19, worst dip $  -9,024) | coin-flip median $   10,679, profitable 88%
+Breakout Classic 50K risk $  950 (33%) lev  10x refund=yes | real net $   44,663 ($ 4,126/yr, spent $ 22,400, funded  19, worst dip $  -8,224) | coin-flip median $   15,203, profitable 94%
+Breakout Classic 50K risk $  950 (33%) lev   5x refund=no  | real net $   20,491 ($ 1,893/yr, spent $ 10,400, funded   9, worst dip $  -4,192) | coin-flip median $    2,734, profitable 65%
+Breakout Classic 50K risk $  950 (33%) lev   5x refund=yes | real net $   23,291 ($ 2,152/yr, spent $ 10,400, funded   9, worst dip $  -3,792) | coin-flip median $    5,155, profitable 74%
+Breakout Classic 50K risk $ 1250 (43%) lev none refund=yes | real net $  105,489 ($ 9,745/yr, spent $ 65,200, funded  49, worst dip $ -17,860) | coin-flip median $   50,278, profitable 99%
+Breakout Classic 50K risk $ 1250 (43%) lev  10x refund=no  | real net $   49,215 ($ 4,546/yr, spent $ 25,600, funded  22, worst dip $  -7,035) | coin-flip median $   17,863, profitable 93%
+Breakout Classic 50K risk $ 1250 (43%) lev  10x refund=yes | real net $   57,215 ($ 5,285/yr, spent $ 25,600, funded  22, worst dip $  -6,235) | coin-flip median $   24,507, profitable 96%
+Breakout Classic 50K risk $ 1250 (43%) lev   5x refund=no  | real net $   24,538 ($ 2,267/yr, spent $ 12,000, funded  11, worst dip $  -4,110) | coin-flip median $    3,923, profitable 68%
+Breakout Classic 50K risk $ 1250 (43%) lev   5x refund=yes | real net $   28,138 ($ 2,599/yr, spent $ 12,000, funded  11, worst dip $  -3,710) | coin-flip median $    6,570, profitable 80%
+Breakout Pro     50K risk $  600 (25%) lev none refund=yes | real net $   20,142 ($ 1,861/yr, spent $ 13,160, funded  14, worst dip $  -5,600) | coin-flip median $     -174, profitable 49%
+Breakout Pro     50K risk $  600 (25%) lev  10x refund=no  | real net $   11,860 ($ 1,096/yr, spent $  9,800, funded  10, worst dip $  -4,480) | coin-flip median $     -363, profitable 47%
+Breakout Pro     50K risk $  600 (25%) lev  10x refund=yes | real net $   14,380 ($ 1,328/yr, spent $  9,800, funded  10, worst dip $  -4,480) | coin-flip median $      996, profitable 56%
+Breakout Pro     50K risk $  600 (25%) lev   5x refund=no  | real net $   14,668 ($ 1,355/yr, spent $  6,160, funded   5, worst dip $  -3,080) | coin-flip median $   -1,201, profitable 36%
+Breakout Pro     50K risk $  600 (25%) lev   5x refund=yes | real net $   15,788 ($ 1,458/yr, spent $  6,160, funded   5, worst dip $  -3,080) | coin-flip median $     -407, profitable 47%
+Breakout Pro     50K risk $  800 (33%) lev none refund=yes | real net $   45,328 ($ 4,187/yr, spent $ 19,040, funded  18, worst dip $  -5,748) | coin-flip median $    6,437, profitable 81%
+Breakout Pro     50K risk $  800 (33%) lev  10x refund=no  | real net $   26,919 ($ 2,487/yr, spent $ 14,280, funded  13, worst dip $  -5,336) | coin-flip median $    3,020, profitable 71%
+Breakout Pro     50K risk $  800 (33%) lev  10x refund=yes | real net $   30,559 ($ 2,823/yr, spent $ 14,280, funded  13, worst dip $  -5,056) | coin-flip median $    5,200, profitable 82%
+Breakout Pro     50K risk $  800 (33%) lev   5x refund=no  | real net $   17,259 ($ 1,594/yr, spent $  6,720, funded   6, worst dip $  -3,248) | coin-flip median $       88, profitable 52%
+Breakout Pro     50K risk $  800 (33%) lev   5x refund=yes | real net $   18,939 ($ 1,749/yr, spent $  6,720, funded   6, worst dip $  -2,968) | coin-flip median $    1,307, profitable 58%
+Breakout Pro     50K risk $ 1050 (43%) lev none refund=yes | real net $   72,253 ($ 6,674/yr, spent $ 29,120, funded  31, worst dip $  -4,760) | coin-flip median $   23,566, profitable 95%
+Breakout Pro     50K risk $ 1050 (43%) lev  10x refund=no  | real net $   30,181 ($ 2,788/yr, spent $ 17,360, funded  18, worst dip $  -5,440) | coin-flip median $    7,675, profitable 84%
+Breakout Pro     50K risk $ 1050 (43%) lev  10x refund=yes | real net $   34,381 ($ 3,176/yr, spent $ 17,360, funded  18, worst dip $  -5,160) | coin-flip median $   10,857, profitable 90%
+Breakout Pro     50K risk $ 1050 (43%) lev   5x refund=no  | real net $   16,910 ($ 1,562/yr, spent $  6,160, funded   6, worst dip $  -2,591) | coin-flip median $      673, profitable 56%
+Breakout Pro     50K risk $ 1050 (43%) lev   5x refund=yes | real net $   18,590 ($ 1,717/yr, spent $  6,160, funded   6, worst dip $  -2,520) | coin-flip median $    2,146, profitable 65%
+Tradeify Lightning 50K cap $1,500: real net $   20,196 (spent $32,454, accounts 62, payouts 39, worst dip $-12,837) | coin-flip median $   -4,089, profitable 35%
+Tradeify Lightning 50K cap $2,000: real net $   40,998 (spent $41,802, accounts 81, payouts 46, worst dip $-11,007) | coin-flip median $   10,776, profitable 80%
