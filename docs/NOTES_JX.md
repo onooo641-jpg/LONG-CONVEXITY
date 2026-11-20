@@ -631,3 +631,12 @@ Tested tonight, all pre-registered (#61–#64):
 **Current best plan (2016–26 backtest):** 5 Topstep + 5 Lucid + 3 MFFU, 50K, mixed markets ≈ **$38K/yr with
 ~$21K cash**; Topstep-only mixed ≈ $16K/yr with ~$4.7K cash. All-NQ max ≈ $49K/yr but needs ~$53K cash.
 Remaining income upside depends on live results, not on more backtest changes.
+
+
+## Action for Jx: Etherscan API key (only needed to measure BNB Chain liquidations)
+Why: no free public node serves BNB Chain's old logs; Etherscan's V2 API can, with a free key. Free plans may exclude
+some chains (BNB is reported to need a paid plan on some tiers: unverified). Do not pay without deciding it is worth it.
+1. Go to etherscan.io, create an account, then API Dashboard -> Add -> copy the key. (One key works for all chains via V2.)
+2. In GitHub: repo onooo641-jpg/LONG-CONVEXITY -> Settings -> Secrets and variables -> Actions -> New repository secret.
+3. Name it exactly `ETHERSCAN_API_KEY`, paste the key, save. Never paste the key in chat or commit it.
+4. Tell the next session to run the `bnb_es` job (the code is ready: `liq_bnb_es` in `scripts/fetch_public.py`).

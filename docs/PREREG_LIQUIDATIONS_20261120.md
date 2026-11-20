@@ -78,3 +78,17 @@ Clarification of WHAT is measured, so no result can move it:
 - The cancelled run's HOW-failure (blocked/failed endpoints) led to a diagnostic job `liq_diag` (prints which
   endpoint answers which getLogs shape) and endpoint health-skipping in the fetcher. Endpoint list for Base lost
   `base.llamarpc.com` (returned HTTP 525). HOW-only changes.
+
+## Addendum 2 (2026-11-20, before any results were looked at; no liquidation data analysed yet)
+Endpoint diagnostics (`docs/jx_runs/fetch_public_44754595913.txt`, `_44755511966.txt`, `_44756530502.txt`) found free
+public endpoints with full history for: Gnosis, Scroll, Metis, Optimism, Arbitrum (topic-only), and Base, Polygon, Avalanche
+(topic-only; Base/Polygon via Pocket + Tenderly, Avalanche via Tenderly). BNB Chain: none (publicnode 403 on old blocks,
+the other candidates rate-limited, forbidden or capped). The `ETHERSCAN_API_KEY` secret is NOT set (checked by job
+`liq_secretcheck`, `docs/jx_runs/fetch_public_44757024529.txt`), so:
+- **BNB Chain: UNMEASURED.** No substitute data. Steps for Jx to enable it are in `docs/NOTES_JX.md` ("Action for Jx").
+- No contract-address restriction is used on any chain (topic-only scans, so forks are included automatically). Forks left out: none
+  by selection. Venues outside the Aave `LiquidationCall` ABI (Compound v2/v3 forks, Solana lenders) remain unmeasured as in the original.
+- Months and window unchanged (24 months). Chains that do not finish are recorded PARTIAL: re-run until finished or until three
+  consecutive runs add < 5% more blocks. Partial/unmeasured chains cannot pass and do not count toward the 3-venue requirement.
+- Verdict wording: BUILD / DROP / NOT YET DECIDABLE. NOT YET DECIDABLE only if so few chains are measured that the result could
+  change with the missing chains (stated explicitly).
