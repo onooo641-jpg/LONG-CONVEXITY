@@ -722,6 +722,32 @@ def _first_block_at(urls, ts, lo, hi):
     return lo
 
 
+def _liq_prices(name, toks):
+    """DefiLlama daily prices for tokens + native gas coin. span must be <= ~100 days (span=300/365 gives HTTP 400)."""
+    lkey, native, _ = LIQ_CHAINS[name]
+    keys = [f"{lkey}:{t}" for t in toks] + ([native] if native else [])
+    prows = []
+    for i in range(0, len(keys), 10):
+        batch = keys[i:i + 10]
+        for k in range(0, 800, 100):
+            stt = LIQ_START - 86400 + k * 86400
+            j = http("https://coins.llama.fi/chart/" + urllib.parse.quote(",".join(batch), safe=",:") + f"?start={stt}&span=100&period=1d")
+            time.sleep(0.4)
+            for kk, v in ((j or {}).get("coins") or {}).items():
+                for p in v.get("prices", []):
+                    prows.append({"coin": kk, "ts": int(p["timestamp"]), "price": float(p["price"])})
+    pdf = pd.DataFrame(prows, columns=["coin", "ts", "price"]).drop_duplicates()
+    pdf.to_parquet(OUT / f"liq_{name}_prices.parquet")
+    print(f"{name}: prices {len(pdf)} points, {pdf['coin'].nunique()}/{len(keys)} coins priced", flush=True)
+
+
+def _liq_prices_job(c):
+    def run():
+        df = pd.read_parquet(OUT / f"liq_{c}.parquet", columns=["collateral", "debt"])
+        _liq_prices(c, sorted(set(df["collateral"]) | set(df["debt"])))
+    return run
+
+
 def _liq_state_path(name):
     return OUT / f"liq_{name}_state.json"
 
@@ -883,21 +909,11 @@ def job_liq_chain(name):
             dec[t] = None
     df["coll_dec"] = df["collateral"].map(dec)
     df["debt_dec"] = df["debt"].map(dec)
-    keys = [f"{lkey}:{t}" for t in toks] + ([native] if native else [])
-    prows = []
-    for i in range(0, len(keys), 15):
-        batch = keys[i:i + 15]
-        for stt in (LIQ_START - 86400, LIQ_START - 86400 + 365 * 86400):
-            j = http("https://coins.llama.fi/chart/" + urllib.parse.quote(",".join(batch), safe=",:") + f"?start={stt}&span=365&period=1d")
-            time.sleep(0.5)
-            for k, v in ((j or {}).get("coins") or {}).items():
-                for p in v.get("prices", []):
-                    prows.append({"coin": k, "ts": int(p["timestamp"]), "price": float(p["price"])})
-    pd.DataFrame(prows).to_parquet(OUT / f"liq_{name}_prices.parquet")
+    _liq_prices(name, toks)
     df.to_parquet(OUT / f"liq_{name}.parquet")
     st["complete"] = True
     _liq_save_state(name, st)
-    print(f"{name}: COMPLETE {len(df)} events, {len(prows)} price points for {len(keys)} coins, {(time.time()-t0)/60:.0f} min", flush=True)
+    print(f"{name}: COMPLETE {len(df)} events, {(time.time()-t0)/60:.0f} min", flush=True)
 
 
 def job_liq_diag():
@@ -1022,7 +1038,7 @@ for _c in LIQ_CHAINS:
 
 JOBS = {"ipo2": job_ipo2, "iponews": job_iponews, "ipo": job_ipo, "myxsnap": job_myxsnap, "batch2": job_batch2, "hl2023d": job_hl2023d, "hl2023": job_hl2023, "hl": job_hl, "llama_lend": job_llama_lend, "llama_pools": job_llama_pools,
         "llama_prices": job_llama_prices, "poly": job_poly,
-        "liq_probe": job_liq_probe, "liq_diag": job_liq_diag, "liq_diag2": job_liq_diag2, "liq_diag3": job_liq_diag2, "liq_secretcheck": job_liq_secretcheck, **{f"liq_{c}_es": _liq_es_job(c) for c in LIQ_ES_ID}, **{f"liq_{c}": globals()[f"job_liq_{c}"] for c in LIQ_CHAINS}}
+        "liq_probe": job_liq_probe, "liq_diag": job_liq_diag, "liq_diag2": job_liq_diag2, "liq_diag3": job_liq_diag2, "liq_secretcheck": job_liq_secretcheck, **{f"liq_prices_{c}": _liq_prices_job(c) for c in LIQ_CHAINS}, **{f"liq_{c}_es": _liq_es_job(c) for c in LIQ_ES_ID}, **{f"liq_{c}": globals()[f"job_liq_{c}"] for c in LIQ_CHAINS}}
 
 
 def main(argv):
