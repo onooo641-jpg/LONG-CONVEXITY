@@ -1,0 +1,3 @@
+=== liq_prices_scroll
+scroll: prices 6575 points, 9/9 coins priced
+=== liq_prices_scroll done in 25s  ok 24 fail 0
