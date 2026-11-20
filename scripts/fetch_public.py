@@ -645,66 +645,120 @@ def _first_block_at(urls, ts, lo, hi):
     return lo
 
 
+def _liq_state_path(name):
+    return OUT / f"liq_{name}_state.json"
+
+
+def _liq_save_state(name, st):
+    _liq_state_path(name).write_text(json.dumps(st, indent=1))
+
+
 def job_liq_chain(name):
+    """Resumable. Progress files in data/public/: liq_<name>_state.json, _raw.parquet (events),
+    _receipts.parquet; final liq_<name>.parquet + _prices.parquet written only when complete.
+    Env LIQ_BUDGET_MIN = stop cleanly after that many minutes (state keeps the last block reached)."""
+    import os
     from concurrent.futures import ThreadPoolExecutor
+    import numpy as np
+    t0 = time.time()
+    deadline = t0 + float(os.environ.get("LIQ_BUDGET_MIN", "0") or 0) * 60 if os.environ.get("LIQ_BUDGET_MIN") else None
+    over = lambda: deadline is not None and time.time() > deadline  # noqa: E731
     lkey, native, urls = LIQ_CHAINS[name]
-    head = int(rpc(urls, "eth_blockNumber", []), 16)
-    anchors, lo = [], 0
-    for ts in LIQ_MONTHS:
-        lo = _first_block_at(urls, ts, lo, head)
-        anchors.append(lo)
-    print(f"{name}: head {head}, month anchors {anchors[0]}..{anchors[-1]}", flush=True)
-    a0, a1 = anchors[0], anchors[-1] - 1
-    rows, step, b = [], 20000, a0
-    while b <= a1:
-        e = min(b + step - 1, a1)
-        try:
-            logs = rpc(urls, "eth_getLogs", [{"fromBlock": hex(b), "toBlock": hex(e), "topics": [LIQ_TOPIC]}])
-        except ValueError:
-            if step <= 500:
-                print(f"  {name}: window {b}-{e} refused even at {step} blocks; skipping", flush=True)
+    OUT.mkdir(parents=True, exist_ok=True)
+    sp = _liq_state_path(name)
+    st = json.loads(sp.read_text()) if sp.exists() else {}
+    if st.get("complete"):
+        print(f"{name}: already complete", flush=True)
+        return
+    if not st and (OUT / f"liq_{name}.parquet").exists() and (OUT / f"liq_{name}_prices.parquet").exists():
+        print(f"{name}: legacy complete files found; marking complete", flush=True)
+        _liq_save_state(name, {"complete": True, "logs_done": True, "receipts_done": True, "legacy": True})
+        return
+    if "anchors" not in st:
+        head = int(rpc(urls, "eth_blockNumber", []), 16)
+        anchors, lo = [], 0
+        for ts in LIQ_MONTHS:
+            lo = _first_block_at(urls, ts, lo, head)
+            anchors.append(lo)
+        st.update(anchors=anchors, next_block=anchors[0], logs_done=False, receipts_done=False, complete=False)
+        _liq_save_state(name, st)
+    anchors = st["anchors"]
+    print(f"{name}: month anchors {anchors[0]}..{anchors[-1]}, resume at block {st['next_block']}", flush=True)
+    rawp = OUT / f"liq_{name}_raw.parquet"
+    rows = pd.read_parquet(rawp).to_dict("records") if rawp.exists() else []
+    a1 = anchors[-1] - 1
+
+    def flush(b):
+        pd.DataFrame(rows).to_parquet(rawp)
+        st["next_block"] = b
+        st["last_flush"] = time.strftime("%FT%TZ", time.gmtime())
+        _liq_save_state(name, st)
+
+    # ---- phase 1: logs
+    if not st["logs_done"]:
+        b, step, last_flush = st["next_block"], 20000, time.time()
+        month_edge = next((x for x in anchors if x > b), a1 + 1)
+        while b <= a1:
+            if over():
+                flush(b)
+                print(f"{name}: BUDGET STOP in log scan at block {b} (window {anchors[0]}..{a1}); {len(rows)} events saved", flush=True)
+                return
+            e = min(b + step - 1, a1)
+            try:
+                logs = rpc(urls, "eth_getLogs", [{"fromBlock": hex(b), "toBlock": hex(e), "topics": [LIQ_TOPIC]}])
+            except ValueError:
+                if step <= 500:
+                    print(f"  {name}: window {b}-{e} refused even at {step} blocks; skipping", flush=True)
+                    b = e + 1
+                    continue
+                step = max(500, step // 2)
+                continue
+            except RuntimeError as ex:
+                print(f"  {name}: getLogs failed {b}-{e}: {str(ex)[:150]}", flush=True)
+                if step > 500:
+                    step = max(500, step // 4)
+                    continue
                 b = e + 1
                 continue
-            step = max(500, step // 2)
-            continue
-        except RuntimeError as ex:
-            print(f"  {name}: getLogs failed {b}-{e}: {str(ex)[:150]}", flush=True)
-            if step > 500:
-                step = max(500, step // 4)
-                continue
+            for lg in logs:
+                d = lg["data"][2:]
+                rows.append({"venue": lg["address"].lower(), "block": int(lg["blockNumber"], 16), "tx": lg["transactionHash"],
+                             "collateral": "0x" + lg["topics"][1][-40:], "debt": "0x" + lg["topics"][2][-40:],
+                             "user": "0x" + lg["topics"][3][-40:], "debt_amt": float(int(d[0:64], 16)),
+                             "coll_amt": float(int(d[64:128], 16)), "liquidator": "0x" + d[128:192][-40:]})
+            if len(logs) < 300:
+                step = min(step * 2, 2_000_000)
+            elif len(logs) > 3000:
+                step = max(500, step // 2)
             b = e + 1
-            continue
-        for lg in logs:
-            d = lg["data"][2:]
-            rows.append({"venue": lg["address"].lower(), "block": int(lg["blockNumber"], 16), "tx": lg["transactionHash"],
-                         "collateral": "0x" + lg["topics"][1][-40:], "debt": "0x" + lg["topics"][2][-40:],
-                         "user": "0x" + lg["topics"][3][-40:], "debt_amt": int(d[0:64], 16),
-                         "coll_amt": int(d[64:128], 16), "liquidator": "0x" + d[128:192][-40:]})
-        if len(logs) < 300:
-            step = min(step * 2, 2_000_000)
-        elif len(logs) > 3000:
-            step = max(500, step // 2)
-        b = e + 1
-    print(f"{name}: {len(rows)} liquidation events", flush=True)
+            if b >= month_edge or time.time() - last_flush > 600:
+                flush(b)
+                last_flush = time.time()
+                month_edge = next((x for x in anchors if x > b), a1 + 1)
+                print(f"  {name}: scanned to block {b}/{a1} ({len(rows)} events, {(time.time()-t0)/60:.0f} min)", flush=True)
+        st["logs_done"] = True
+        flush(a1 + 1)
+        print(f"{name}: log scan complete, {len(rows)} events", flush=True)
     if not rows:
+        st["complete"] = True
+        _liq_save_state(name, st)
         return
     df = pd.DataFrame(rows).drop_duplicates(["tx", "venue", "user", "block", "coll_amt", "debt_amt"]).reset_index(drop=True)
-    # month index (exact) and estimated timestamp (linear within month)
-    import numpy as np
     mi = np.searchsorted(np.array(anchors), df["block"].values, side="right") - 1
     df["month"] = mi
     ts_edges = np.array(LIQ_MONTHS, dtype=float)
     a = np.array(anchors, dtype=float)
     frac = (df["block"].values - a[mi]) / np.maximum(a[mi + 1] - a[mi], 1)
     df["ts"] = (ts_edges[mi] + frac * (ts_edges[mi + 1] - ts_edges[mi])).astype(int)
-    # receipts
+    # ---- phase 2: receipts (incremental)
     txs = sorted(df["tx"].unique())
-    if len(txs) > LIQ_RECEIPT_CAP:
-        k = -(-len(txs) // LIQ_RECEIPT_CAP)
-        sample = txs[::k]
-        print(f"{name}: {len(txs)} txs > cap; fetching every {k}th ({len(sample)}); gas imputed for the rest", flush=True)
-    else:
-        sample = txs
+    sampled = len(txs) > LIQ_RECEIPT_CAP
+    sample = txs[:: -(-len(txs) // LIQ_RECEIPT_CAP)] if sampled else txs
+    rcp = OUT / f"liq_{name}_receipts.parquet"
+    have = pd.read_parquet(rcp) if rcp.exists() else pd.DataFrame(columns=["tx", "from", "gas_used", "gas_price", "l1_fee", "status"])
+    done = set(have["tx"])
+    todo = [t for t in sample if t not in done]
+    print(f"{name}: receipts: {len(done)} cached, {len(todo)} to fetch (sampled={sampled})", flush=True)
 
     def rec(t):
         try:
@@ -714,13 +768,22 @@ def job_liq_chain(name):
                     "status": int(r.get("status", "0x1"), 16)}
         except Exception:  # noqa: BLE001
             return None
-    with ThreadPoolExecutor(6) as ex:
-        rc = [x for x in ex.map(rec, sample) if x]
-    print(f"{name}: receipts {len(rc)}/{len(sample)}", flush=True)
-    rcdf = pd.DataFrame(rc)
-    df = df.merge(rcdf, on="tx", how="left")
-    df["receipt_sampled"] = len(txs) > LIQ_RECEIPT_CAP
-    # token decimals
+    for i in range(0, len(todo), 1500):
+        if over():
+            have.to_parquet(rcp)
+            print(f"{name}: BUDGET STOP in receipts: {len(have)}/{len(sample)} receipts saved (logs complete)", flush=True)
+            st["receipts_done"] = False
+            _liq_save_state(name, st)
+            return
+        with ThreadPoolExecutor(10) as ex:
+            got = [x for x in ex.map(rec, todo[i:i + 1500]) if x]
+        have = pd.concat([have, pd.DataFrame(got)], ignore_index=True)
+        have.to_parquet(rcp)
+        print(f"  {name}: receipts {len(have)}/{len(sample)} ({(time.time()-t0)/60:.0f} min)", flush=True)
+    st["receipts_done"] = True
+    # ---- phase 3: assemble (decimals, prices)
+    df = df.merge(have.drop_duplicates("tx"), on="tx", how="left")
+    df["receipt_sampled"] = sampled
     toks = sorted(set(df["collateral"]) | set(df["debt"]))
     dec = {}
     for t in toks:
@@ -730,20 +793,21 @@ def job_liq_chain(name):
             dec[t] = None
     df["coll_dec"] = df["collateral"].map(dec)
     df["debt_dec"] = df["debt"].map(dec)
-    df.to_parquet(OUT / f"liq_{name}.parquet")
-    # prices (daily, DefiLlama)
     keys = [f"{lkey}:{t}" for t in toks] + ([native] if native else [])
     prows = []
     for i in range(0, len(keys), 15):
         batch = keys[i:i + 15]
-        for st in (LIQ_START - 86400, LIQ_START - 86400 + 365 * 86400):
-            j = http("https://coins.llama.fi/chart/" + urllib.parse.quote(",".join(batch), safe=",:") + f"?start={st}&span=365&period=1d")
+        for stt in (LIQ_START - 86400, LIQ_START - 86400 + 365 * 86400):
+            j = http("https://coins.llama.fi/chart/" + urllib.parse.quote(",".join(batch), safe=",:") + f"?start={stt}&span=365&period=1d")
             time.sleep(0.5)
             for k, v in ((j or {}).get("coins") or {}).items():
                 for p in v.get("prices", []):
                     prows.append({"coin": k, "ts": int(p["timestamp"]), "price": float(p["price"])})
     pd.DataFrame(prows).to_parquet(OUT / f"liq_{name}_prices.parquet")
-    print(f"{name}: wrote {len(df)} events, {len(prows)} price points for {len(keys)} coins", flush=True)
+    df.to_parquet(OUT / f"liq_{name}.parquet")
+    st["complete"] = True
+    _liq_save_state(name, st)
+    print(f"{name}: COMPLETE {len(df)} events, {len(prows)} price points for {len(keys)} coins, {(time.time()-t0)/60:.0f} min", flush=True)
 
 
 def job_liq_probe():

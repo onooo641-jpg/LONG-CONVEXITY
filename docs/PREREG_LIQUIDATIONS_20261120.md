@@ -57,3 +57,14 @@ downside per attempt, scales by adding copies) and give build / drop / unknown. 
 single-bot design. No spending, no deployment.
 Realistic income is NOT the outside-top-3 total: a new bot would be one more competitor; the report will
 give a per-bot estimate = outside-top-3 net / (number of outside-top-3 bots + 1) with the caveat that it is an estimate.
+
+## Addendum 1 (2026-11-20, before any results were looked at)
+Fetch infrastructure changed (HOW, not WHAT): one GitHub Actions job per chain (`fetch_liq.yml`), resumable from
+`data/public/liq_<chain>_state.json`, 150-minute budget per job, progress committed every 20 minutes. Raw amounts
+are stored as floats (int64 overflow for 18-decimal wei amounts); decimals/prices unchanged.
+Clarification of WHAT is measured, so no result can move it:
+- The window stays the full 24 months for every chain. No month sampling, no shortened window, no chain dropped for slowness.
+- A chain whose log scan or receipt fetch is not finished after retries is reported as PARTIAL, with the last block
+  reached. A partial chain cannot pass (criterion (b) needs all 12 months in each half) and is excluded from the
+  overall count, but its partial data may be described, labelled as partial.
+- The 40,000-receipt cap per chain is unchanged.

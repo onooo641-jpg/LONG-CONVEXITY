@@ -1,0 +1,56 @@
+# Liquidation data (PREREG_LIQUIDATIONS_20261120): one job per chain, each with its own time limit,
+# resumable from data/public/liq_<chain>_state.json, progress committed every 20 minutes.
+name: fetch liquidations
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [claude/ict-trading-resources-ugh07b]
+    paths: [.github/fetch_liq_request.txt]
+
+permissions:
+  contents: write
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      chains: ${{ steps.p.outputs.chains }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: p
+        run: |
+          c=$(grep -v '^\s*#' .github/fetch_liq_request.txt | grep -v '^\s*$' | jq -R . | jq -sc .)
+          echo "chains=$c" >> "$GITHUB_OUTPUT"
+  fetch:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 175
+    strategy:
+      fail-fast: false
+      max-parallel: 5
+      matrix:
+        chain: ${{ fromJSON(needs.plan.outputs.chains) }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - uses: astral-sh/setup-uv@v5
+      - run: uv sync
+      - name: Fetch (150 min budget, periodic commits)
+        env:
+          LIQ_BUDGET_MIN: "150"
+        run: |
+          mkdir -p docs/jx_runs
+          log="docs/jx_runs/fetch_liq_${{ matrix.chain }}_${{ github.run_id }}.txt"
+          uv run python -u scripts/fetch_public.py liq_${{ matrix.chain }} > "$log" 2>&1 &
+          pid=$!
+          while kill -0 $pid 2>/dev/null; do
+            for i in $(seq 120); do kill -0 $pid 2>/dev/null || break; sleep 10; done
+            .github/scripts/commit_push.sh "${{ matrix.chain }}" || true
+          done
+          wait $pid
+      - name: Commit final
+        if: always()
+        run: .github/scripts/commit_push.sh "${{ matrix.chain }}"
