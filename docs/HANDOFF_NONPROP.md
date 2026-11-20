@@ -80,3 +80,16 @@ ROI figures below are rough estimates, not measured.
 - **Airdrop farming:** very crowded; Lighter paid ~$675M in Dec 2025 and ~23 perp DEXs now run points
   programs, but one cited Nansen analysis of 10 L2 airdrops puts the median net profit per address at $47
   (mean $1,850, whale-skewed). Cost per point rises as a farm gets popular; the first month is the edge.
+
+## Change of approach: build radars, not one-off ideas (2026-11-20 16:20)
+Loopholes are perishable: the open ones get crowded within weeks to months (MFFU Rapid EOD was
+"limited-time"; airdrop cost per point rises as farms fill up; Topstep cut payout caps). So the edge is
+catching new ones early and pricing them fast, not finding one permanent strategy.
+1. **Incentive radar (non-prop):** a scheduled job that lists new reward programs (perp-DEX points,
+   lending incentives, Polymarket/Kalshi-style maker rewards, exchange launch campaigns) with their
+   budget per day and the current volume/TVL competing for it. Flag programs where budget ÷ competing
+   capital is unusually high, in their first weeks. Data: DefiLlama (already fetched), protocol docs.
+2. **Prop-firm radar (with the main session):** watch for new firms, launch promos and rule changes;
+   every candidate goes straight through `backtest/recycle.py` (structure-scan coin-flip + real trades)
+   so a new offer can be priced in minutes. Only bot-allowed firms reachable by the bot count.
+Pre-register the flag thresholds before looking at results.
