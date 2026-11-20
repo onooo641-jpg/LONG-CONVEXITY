@@ -1,2 +1,2 @@
-# chains for .github/workflows/fetch_liq.yml. Resumable. (run 6: avalanche receipt repair)
-avalanche
+# chains for .github/workflows/fetch_liq.yml. Resumable. (run 7: scroll receipt repair)
+scroll
