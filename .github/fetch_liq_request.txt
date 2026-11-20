@@ -1,2 +1,3 @@
-# chains for .github/workflows/fetch_liq.yml. Resumable. (run 8: optimism receipt repair)
-optimism
+# chains for .github/workflows/fetch_liq.yml. Resumable. (run 9: base resume, polygon receipt repair)
+base
+polygon
