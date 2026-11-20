@@ -8,3 +8,5 @@ base: month anchors 21814927..53350927, resume at block 36277052
   base: scanned to block 38634802/53350926 (39336 events, 43 min)
   base: scanned to block 38879302/53350926 (39411 events, 47 min)
   base: scanned to block 39397302/53350926 (39692 events, 57 min)
+  base: scanned to block 39971802/53350926 (39826 events, 67 min)
+  base: scanned to block 40218302/53350926 (39854 events, 72 min)
