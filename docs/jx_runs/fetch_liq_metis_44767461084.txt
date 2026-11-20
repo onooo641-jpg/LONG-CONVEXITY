@@ -1,0 +1,8 @@
+=== liq_metis
+metis: marked complete by older code without a receipt check; re-checking receipts
+metis: month anchors 18849253..23351942, resume at block 23351942
+metis: receipts: 1220 cached, 0 to fetch (sampled=False)
+metis: receipts missing after retries: 0/1220 (<=1%, accepted; gas imputed, bot 'unknown')
+metis: prices 4832 points, 8/8 coins priced
+metis: COMPLETE 1269 events, 0 min
+=== liq_metis done in 9s  ok 31 fail 0
