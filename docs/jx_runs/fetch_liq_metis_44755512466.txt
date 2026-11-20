@@ -1,0 +1,16 @@
+=== liq_metis
+metis: month anchors 18849253..23351942, resume at block 18849253
+  metis: scanned to block 19149253/23351941 (42 events, 1 min)
+  metis: scanned to block 19469253/23351941 (115 events, 1 min)
+  metis: scanned to block 20109253/23351941 (547 events, 1 min)
+  metis: scanned to block 20749253/23351941 (703 events, 1 min)
+  metis: scanned to block 22029253/23351941 (1009 events, 1 min)
+  metis: scanned to block 23309253/23351941 (1268 events, 1 min)
+  metis: scanned to block 23351942/23351941 (1269 events, 1 min)
+metis: log scan complete, 1269 events
+metis: receipts: 0 cached, 1220 to fetch (sampled=False)
+  metis: receipts 1220/1220 (1 min)
+  FAIL https://coins.llama.fi/chart/metis:0x2583a2538272f31e9a15dd12a432b8c96ab4821d,metis:0x4200000000000000000000000000000000  -> HTTP 400
+  FAIL https://coins.llama.fi/chart/metis:0x2583a2538272f31e9a15dd12a432b8c96ab4821d,metis:0x4200000000000000000000000000000000  -> HTTP 400
+metis: COMPLETE 1269 events, 0 price points for 8 coins, 1 min
+=== liq_metis done in 87s  ok 1763 fail 2
