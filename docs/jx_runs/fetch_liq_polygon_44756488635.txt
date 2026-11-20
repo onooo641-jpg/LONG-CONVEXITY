@@ -1,0 +1,10 @@
+=== liq_polygon
+polygon: month anchors 63732941..96523829, resume at block 63732941
+  rpc error eth_getLogs @ https://poly.api.pocket.network: {'code': -32602, 'message': 'eth_getLogs block range too large (max 10001 blocks)'}
+  polygon: scanned to block 64932941/96523828 (2289 events, 7 min)
+  polygon: scanned to block 66162941/96523828 (4081 events, 10 min)
+  polygon: scanned to block 67392941/96523828 (5942 events, 12 min)
+  polygon: scanned to block 68502941/96523828 (13227 events, 15 min)
+  polygon: scanned to block 69752941/96523828 (27872 events, 17 min)
+  polygon: scanned to block 70962941/96523828 (32816 events, 19 min)
+  polygon: scanned to block 72212941/96523828 (33402 events, 20 min)
