@@ -1,0 +1,4 @@
+=== liq_base
+base: month anchors 21814927..53350927, resume at block 36277052
+  rpc error eth_getLogs @ https://base.api.pocket.network: {'code': -32602, 'message': 'eth_getLogs block range too large (max 10001 blocks)'}
+  base: scanned to block 36864302/53350926 (37181 events, 10 min)
