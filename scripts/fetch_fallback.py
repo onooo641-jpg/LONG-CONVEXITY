@@ -146,6 +146,8 @@ def _aevo(coin):
         for x in d:
             rows.append((int(x[1]) // 10**9, float(x[2])))
         oldest = min(int(x[1]) for x in d)
+        if oldest >= end:  # no progress: stop instead of looping
+            break
         if oldest <= F_START * 10**9 or len(d) < 50:
             break
         end = oldest - 1
@@ -177,6 +179,7 @@ def job_funding():
             r = fn(c)
             print(f"  {venue} {c}: {len(r)} rows" + (f" {pd.Timestamp(min(r)[0], unit='s').date()}..{pd.Timestamp(max(r)[0], unit='s').date()}" if r else ""), flush=True)
             out += [{"venue": venue, "coin": c, "t": t, "rate": v} for t, v in r]
+            pd.DataFrame(out).drop_duplicates(["venue", "coin", "t"]).to_parquet(OUT / "fundgap_funding.parquet", index=False)
     df = pd.DataFrame(out).drop_duplicates(["venue", "coin", "t"])
     df.to_parquet(OUT / "fundgap_funding.parquet", index=False)
     print(f"funding rows: {len(df)}", flush=True)
