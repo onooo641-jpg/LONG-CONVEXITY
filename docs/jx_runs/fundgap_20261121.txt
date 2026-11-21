@@ -1,0 +1,7 @@
+rows per venue: {'aevo': 206090, 'dydx': 211200, 'hl': 210816}
+TESTED: HL/dYdX/Aevo pooled: round trips 111 / 119; opened 111 / 124; invested 100% / 100% of days; Stage 1 7.58%/yr; halves 13.79% / 4.43% on capital; worst month -0.98%; $ per year $911 on $10K, $3,644 on $40K
+  VERDICT: FAIL
+  pair hl-dydx alone: round trips 190 / 180; opened 190 / 184; invested 99% / 99% of days; Stage 1 -0.10%/yr; halves -2.66% / -8.88% on capital; worst month -2.06%; $ per year $-577 on $10K, $-2,306 on $40K
+  pair hl-aevo alone: round trips 123 / 72; opened 123 / 74; invested 100% / 97% of days; Stage 1 -4.68%/yr; halves 3.61% / 1.48% on capital; worst month -1.64%; $ per year $255 on $10K, $1,019 on $40K
+  pair dydx-aevo alone: round trips 138 / 129; opened 138 / 134; invested 99% / 100% of days; Stage 1 7.04%/yr; halves 4.87% / -0.82% on capital; worst month -1.74%; $ per year $203 on $10K, $811 on $40K
+NOT ELIGIBLE (Malaysia): HL-Gate: round trips 0 / 0; opened 0 / 0; invested 0% / 0% of days; Stage 1 0.00%/yr; halves 0.00% / 0.00% on capital; worst month 0.00%; $ per year $0 on $10K, $0 on $40K

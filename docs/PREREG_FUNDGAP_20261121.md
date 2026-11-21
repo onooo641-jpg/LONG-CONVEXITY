@@ -38,3 +38,8 @@ Command: `uv run python scripts/fundgap_20261121.py | tee docs/jx_runs/fundgap_2
 A synthetic check showed that a gap that stays open for months never completes a "round trip", so the repeatability condition would fail a
 strategy that earns continuously. Condition (b) is replaced by: **≥ 20 positions opened in each half, OR invested on ≥ 50% of days in each
 half**. Thresholds, costs and the 8%/yr bar are unchanged. No real funding data had been fetched when this was written.
+
+## Result (2026-11-21, `docs/jx_runs/fundgap_20261121.txt`, re-run identical): FAIL
+Pooled HL/dYdX/Aevo: 111 / 124 positions opened by half, invested all the time; **13.8% / 4.4%/yr on capital** (Stage 1 7.6%); worst month −1.0%.
+Pairs alone: HL–dYdX −2.7% / −8.9% (fees exceed the gap), HL–Aevo 3.6% / 1.5%, dYdX–Aevo 4.9% / −0.8%. The gaps that paid in 2024–25 closed in
+2025–26. HL–Gate (report only) not measured: Gate refused the history request (HTTP 4xx). Second half below 8% → FAIL.
