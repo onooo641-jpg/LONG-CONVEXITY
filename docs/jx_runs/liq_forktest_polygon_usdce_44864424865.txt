@@ -1,0 +1,38 @@
+fork test polygon_usdce run 44864424865 2026-11-21T04:06:33Z
+== rpc https://poly.api.pocket.network
+Compiling 2 files with Solc 0.8.26
+Solc 0.8.26 finished in 309.00ms
+Compiler run successful!
+
+Ran 1 test for test/LiqExecutor.t.sol:LiqExecutorForkTest
+[FAIL: borrow: 6d305815] setUp() (block: 97685682) (gas: 0)
+Suite result: FAILED. 0 passed; 1 failed; 0 skipped; finished in 46.37s (0.00ns CPU time)
+
+Ran 1 test suite in 46.37s (46.37s CPU time): 0 tests passed, 1 failed, 0 skipped (1 total tests)
+
+Failing tests:
+Encountered 1 failing test in test/LiqExecutor.t.sol:LiqExecutorForkTest
+[FAIL: borrow: 6d305815] setUp() (block: 97685682) (gas: 0)
+
+Encountered a total of 1 failing tests, 0 tests succeeded
+
+Tip: Run `forge test --rerun` to retry only the 1 failed test
+Tip: Run `forge test --debug --match-test <TEST_NAME>` to inspect one failing test in the debugger
+== rpc https://polygon.gateway.tenderly.co
+No files changed, compilation skipped
+
+Ran 1 test for test/LiqExecutor.t.sol:LiqExecutorForkTest
+[FAIL: borrow: 6d305815] setUp() (block: 97685714) (gas: 0)
+Suite result: FAILED. 0 passed; 1 failed; 0 skipped; finished in 5.72s (0.00ns CPU time)
+
+Ran 1 test suite in 5.72s (5.72s CPU time): 0 tests passed, 1 failed, 0 skipped (1 total tests)
+
+Failing tests:
+Encountered 1 failing test in test/LiqExecutor.t.sol:LiqExecutorForkTest
+[FAIL: borrow: 6d305815] setUp() (block: 97685714) (gas: 0)
+
+Encountered a total of 1 failing tests, 0 tests succeeded
+
+Tip: Run `forge test --rerun` to retry only the 1 failed test
+Tip: Run `forge test --debug --match-test <TEST_NAME>` to inspect one failing test in the debugger
+exit 1
