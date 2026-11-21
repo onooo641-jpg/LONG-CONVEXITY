@@ -1,0 +1,5 @@
+avalanche: start, head 100942972
+avalanche: bootstrap to block 97066972/100942972 users 12693
+avalanche: bootstrap DONE, users 12990
+avalanche: head 100943388 cycles 2 tracked 12990 last_cycle 257218 ms rpc ok/err 885/217
+avalanche: head 100943876 cycles 4 tracked 12990 last_cycle 168454 ms rpc ok/err 973/409
