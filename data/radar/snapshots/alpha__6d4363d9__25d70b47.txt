@@ -1,0 +1,164 @@
+Futures Prop Firm Buffer vs Drawdown ($50K Example)
+Black Friday Early Access · EARLYBOGO40 25K Zero BOGO + 40% off · EARLYBOGO50 25K Direct BOGO + 50% off
+Home
+About
+How It Works
+Trading
+Platforms
+AlphaTrader
+Learn More
+WealthCharts
+Learn More
+Quantower
+Learn More
+View All
+Leaderboard
+Lifetime Payouts
+Learn More
+Weekly Payouts
+Learn More
+Returns of the month
+Learn More
+View All
+Market
+Equity & Index
+Learn More
+Currency
+Learn More
+Metals
+Learn More
+Crypto
+Learn More
+View All
+AlphaTrader
+Launched AlphaTrader — the next evolution of the platform. Get Early Access
+Resources
+Contact Us
+Help Center
+Start Evaluation
+Sign In
+Home
+About
+How It Works
+Trading
+Platforms
+Leaderboard
+Market
+AlphaTrader
+Launched AlphaTrader — the next evolution of the platform. Get Early Access
+Resources
+Contact Us
+Help Center
+Start Evaluation
+Sign In
+Futures Prop Firm Buffer vs Drawdown: A $50K Example Traders Get Wrong
+By the Alpha Futures Team · Updated October 1, 2026
+Part of our futures prop rules series. Start with futures prop firm rules , then read Maximum Loss Limit explained · EOD trailing drawdown vs intraday drawdown · what a daily loss limit does · futures prop firms with no daily loss limit · performance fee rules · how it works . · what a winning day is · intraday trailing drawdown ($50K Zero)
+Updated 1 October 2026. Simulated evaluations and Qualified Accounts use simulated funds. Performance fees are performance-based. Outcomes are not guaranteed. Simulated results do not reflect real trading outcomes.
+TL;DR: On Alpha Futures, the buffer is the dollar gap between your balance and the Maximum Loss Limit. It is end-of-day trailing, it only moves up, and it stops at the starting balance. A $50K Zero simulated account opens with a $2,000 buffer. Make $500 and give it back, and that buffer is $1,500, closer than the day you started. A performance fee does not add a second safety-net balance. It removes profit, and the limit stays where it was.
+Quick answer: Buffer means room to the Maximum Loss Limit. Drawdown is that limit. On a $50K Zero evaluation the opening room is $2,000. Equity can still close the account during the session if it touches the active limit.
+Traders search "futures prop firm buffer" because two different rules get the same nickname. One is the cushion above the loss limit while you trade. The other is a protected balance some firms make you clear before a fee request. Alpha Futures uses the first. The account is simulated funds. Performance fees are performance-based. Nothing here is guaranteed, and simulated results do not reflect live trading outcomes.
+What is a futures prop firm buffer?
+A futures prop firm buffer is the money still sitting between the account and the rule that closes it. On Alpha Futures that rule is the Maximum Loss Limit, an end-of-day trailing floor. The floor is calculated from the highest end-of-day balance, not from the high of an open trade. None of the accounts use an intraday trailing drawdown.
+At the open, before you have a new end-of-day high, the buffer and the Maximum Loss Limit are the same number. You can see the live floor on the dashboard. The full trail is in Maximum Loss Limit explained .
+Plan Size Opening buffer (Maximum Loss Limit) Daily Loss Guard on the evaluation
+Zero $25K $1,000 $500
+Zero $50K $2,000 $1,000
+Zero $100K $3,000 $2,000
+Standard $50K $2,000 None
+Standard $100K $3,000 None
+Standard $150K $4,500 None
+Advanced $50K $1,750 None
+Advanced $100K $3,500 None
+Advanced $150K $5,250 None
+Direct $25K $1,000 $500 from day one. Direct starts qualified
+Direct $50K $2,000 $1,000
+Direct $100K $3,000 $2,000
+Direct $150K $4,500 $3,000
+Direct has no evaluation. You start on a Qualified Account, and the daily loss limit is already on. Zero keeps a Daily Loss Guard at both stages. Standard adds one only after you qualify: $1,000, $2,000, and $3,000 on $50K, $100K, and $150K. Advanced has no preset daily guard at either stage. That split is in futures prop firms with no daily loss limit .
+The guard and the buffer are different stops. The guard can flatten the session and leave the account open. The Maximum Loss Limit liquidates the account.
+Why does a winning day fail to grow the buffer?
+This is the $50K example that catches people. Take a Zero $50K simulated account. You start at $50,000. The Maximum Loss Limit starts at $48,000. The buffer is $2,000.
+Day one you make $500. The end-of-day balance is $50,500, so the floor steps up to $48,500. The buffer is still $2,000, because $50,500 minus $48,500 is $2,000. The green day did not hand you extra room. It dragged the floor up with it.
+Day two you lose that $500. The balance is back at $50,000. The floor does not step back. It stays at $48,500. The buffer is now $1,500.
+You are flat on the two days and $500 closer to a failed account than when you opened it. That is trailing drawdown. The floor ratchets up with end-of-day balance highs and stays there for the life of that account.
+The same shape applies on every plan. Only the starting gap changes. A $50K Advanced account opens $1,750 from the floor, not $2,000. A $50K Standard account opens $2,000 away, with no Daily Loss Guard during the evaluation.
+When does the trailing floor stop moving?
+The Maximum Loss Limit stops trailing once it reaches the starting balance. It does not keep climbing through later profits.
+On the $50K Zero account, that lock arrives when an end-of-day balance hits $52,000. The floor is then $50,000, and it stays $50,000. From that point the account behaves like a static floor at the original balance. Profit above $50,000 is room you can give back without a new trail.
+On $50K Advanced the same lock arrives when end-of-day profit equals the original $1,750 gap, an end-of-day balance of $51,750. The floor parks at $50,000. Further profit does not push it higher.
+Until that lock, every new end-of-day high spends the old cushion and rebuilds a fresh one of the same size. After the lock, new profit finally sits above a floor that has stopped chasing you.
+Can the account fail while the buffer still looks fine?
+Yes. The floor updates from the end-of-day balance. The fail does not wait for the close. If floating equity or the closed balance hits the active Maximum Loss Limit during the session, the account is liquidated. Orders after that breach do not execute.
+So a $2,000 buffer at the cash open is not a promise that you can sit $1,999 underwater and survive. Touch the floor intraday and the evaluation is over. On a Qualified Account, the account is closed. The session-versus-close detail is in EOD trailing drawdown vs intraday drawdown .
+A Daily Loss Guard, where the plan has one, can stop the session earlier and still leave the account alive. On $50K Zero the guard is $1,000 and the Maximum Loss Limit buffer is $2,000. You can get flattened for the day inside a buffer that has not failed the account. On Advanced there is no preset guard, so the intraday touch of the Maximum Loss Limit is the firm stop unless you set your own in the platform. Read what a daily loss limit does .
+Contract size eats this faster than the dashboard feels. One NQ mini can cover a $1,750 or $2,000 opening buffer inside a normal swing. Micros exist so the first loss is smaller than the floor. See how many NQ contracts fit a $50K evaluation and micro vs mini .
+What happens to the buffer after a performance fee?
+Alpha Futures has no second balance you must hold, the safety net some firms set above the starting balance before they will process a fee. Your request is limited by the plan's minimum, maximum, consistency rule, and winning-day count. The loss rule underneath stays the Maximum Loss Limit.
+On Zero, Standard, and Advanced you can request up to 50% of the profit in the account, up to that plan's cap. The rest stays on the account. The amount you request is what leaves the simulated balance. You receive 90% of that request. The performance split is 90%.
+Work the locked $50K Zero account. End-of-day balance $52,000. Floor locked at $50,000. Buffer $2,000. You request half the profit, so $1,000 comes off the account. Balance is $51,000. The floor does not drop to follow it. It stays $50,000. The buffer is now $1,000.
+That is the part to plan before you click the request. The fee does not reset the Maximum Loss Limit and it does not slide the floor down. Balance falls, floor stays, room shrinks until new profit rebuilds it. Caps, the five winning days of $200 or more, and the consistency rule by plan are in performance fee rules .
+Direct is the exception on the path, not on the floor. There is no evaluation and no five-winning-day count. You still have an end-of-day Maximum Loss Limit, a daily loss limit, a 20% consistency rule, and a profit target between requests. The opening buffer on $50K Direct is still $2,000.
+A consistency miss does not fail the account. On Zero and Standard Qualified Accounts a day larger than 40% of profit since the last request simply blocks the next request until you have traded the ratio back inside the rule. Advanced Qualified Accounts have no consistency rule. The calculator is live at consistencycalculator.alpha-futures.com , and the plain-English version is what the consistency rule is .
+Alpha Capital's help centre uses "buffer" for a different rule. Alpha Direct there requires a 3% profit buffer before the first on-demand request, and that amount stays in the account. On Alpha One , once the trailing floor has locked at the starting balance, requesting all of the profit can close the account. Those are forex evaluation rules, documented on maximum total loss . They are not the Alpha Futures Maximum Loss Limit. The forex explainer is trailing drawdown vs static drawdown .
+Which plan has the buffer you actually want?
+Pick the opening gap and the daily guard together. The Maximum Loss Limit is the account. The guard is the session.
+Zero. Smallest monthly price, no consistency rule on the evaluation, and a Daily Loss Guard inside a wider Maximum Loss Limit. The $50K opening buffer is $2,000, with a $1,000 guard. After you qualify, consistency on a performance fee request is 40%.
+Standard. $2,000 opening buffer on $50K, no Daily Loss Guard while you pass, then a $1,000 guard once you are qualified. Evaluation consistency is 50%. Qualified consistency is 40%.
+Advanced. Tighter opening buffer on $50K, at $1,750, and no preset daily guard on the evaluation or the Qualified Account. Evaluation consistency is 40%. It drops off after you qualify. The performance fee cap is the largest of the four plans.
+Direct. You skip the evaluation and start qualified. The $50K opening buffer is $2,000, with a $1,000 daily loss limit already active and a 20% consistency rule before a request.
+Prices, targets, and contract caps sit on the live cards: Zero , Standard , Advanced , and Direct . Compare them on how it works .
+Frequently asked questions
+What is the buffer on a futures prop firm?
+On Alpha Futures the buffer is the distance between your current balance and the Maximum Loss Limit. It is not a second balance you have to clear before a performance fee. A $50K Zero simulated account opens with a $2,000 buffer.
+Does a profitable day increase the buffer?
+Only until the floor catches up. The Maximum Loss Limit trails the highest end-of-day balance, so a $500 green day on a $50K Zero account lifts the floor by $500. Give that $500 back the next day and the floor stays up. The buffer is smaller than it was at the start.
+Does Alpha Futures reset the drawdown after a performance fee?
+No. The floor does not move down when profit leaves the account. If you are locked at a $50,000 floor and you request $1,000 off a $52,000 balance, you continue from $51,000 with the same $50,000 floor. The buffer shrinks by the amount removed.
+Can I lose the account intraday if I still have buffer at the open?
+Yes. The floor updates at the end of the day, and the breach can happen during the session. Floating equity that touches the active Maximum Loss Limit liquidates the account. An end-of-day buffer is not an intraday shield.
+Which $50K plan has the largest opening buffer?
+Zero, Standard, and Direct open $2,000 away from the Maximum Loss Limit. Advanced opens $1,750 away. Zero and Direct also have a daily guard inside that gap. Standard has no Daily Loss Guard on the evaluation. Advanced has none at either stage.
+Related reading
+Maximum Loss Limit explained
+EOD trailing drawdown vs intraday drawdown
+What is a daily loss limit
+Futures prop firms with no daily loss limit
+Performance fee rules
+How it works
+Trailing drawdown vs static drawdown on Alpha Capital
+Compare Alpha Futures plans
+Simulated evaluations and simulated funds. Performance fees are performance-based. Outcomes are not guaranteed.
+Updated 1 October 2026. Simulated evaluations and Qualified Accounts use simulated funds. Performance fees are performance-based. Outcomes are not guaranteed. Simulated results do not reflect real trading outcomes.
+More Articles
+Sign Up for an
+Exclusive Welcome Offer
+Subscribe to Alpha Futures emails for an exclusive welcome offer, trader insights, product updates and discounts. Enter your email to stay one step ahead. You can unsubscribe at any time.
+Thank you for signing up to our newsletter
+Oops! Something went wrong while submitting the form.
+175,000+
+Qualified Analysts
+1.1Million+
+Traders
+$70M
+Performance Fees Paid
+Quick Links
+Home About How it works
+Trading
+Platforms Market Leaderboard
+Other
+Resources Contact Us Promo Codes
+2026 © Alpha Futures - All rights reserved.
+Terms of Use
+Terms and Conditions
+General Service Agreement
+Privacy Policy
+Return Policy
+"Any references to trading, analysts, revenue, and profit throughout the website are references to virtual trading, revenues, and profits, respectively."
+Alpha Futures Risk Disclosure:
+Futures trading contains substantial risk and is not for every investor. An investor could potentially lose all or more than the initial investment. Risk capital is money that can be lost without jeopardizing your financial security or lifestyle. Only risk capital should be used for trading and only those with sufficient risk capital should consider trading. Past performance is not necessarily indicative of future results.
+Hypothetical Performance Disclosure:
+Hypothetical performance results have many significant performance and other limitations, some of which are described below. No representation is being made that any account will or is likely to achieve profits or losses similar to those shown on the website or any promotional material.
+CFTC Rule 4.41:
+Hypothetical or Simulated performance results have certain limitations. Unlike an actual performance record, simulated results do not represent actual trading. Also, because the trades have not actually been executed, the results may have under-or-over compensated for the impact, if any, of certain market factors, such as lack of liquidity. Simulated trading programs, in general, are also subject to the fact that they are designed with the benefit of hindsight. No representation is being made that any account will or is likely to achieve profit or losses similar to those shown.
+English Deutsch Español Français Italiano

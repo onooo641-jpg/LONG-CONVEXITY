@@ -1,0 +1,122 @@
+LucidPro Payouts | Lucid Trading Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Lucid Home
+Lucid Home
+Search for articles...
+All Collections
+LucidPro
+LucidPro Payouts
+LucidPro Payouts
+LucidPro payouts allow traders to withdraw profits with a 90/10 split after meeting requirements like minimum profit, consistency rules, and buffer balance thresholds.
+A
+Written by AJ
+October 21, 2026
+Table of contents
+General Requirements
+To be eligible for a payout from a LucidPro account:
+You must not violate any Trading Rules, Terms & Conditions, or the LucidPro Account Agreement.
+Payout requests are final once submitted, they cannot be edited or canceled.
+Profit Split Structure
+All funded account payouts are split 90% to the trader and 10% to Lucid Trading.
+Accounts purchased or reset before 11/28/2025 at 3:00 PM EST are still eligible for 100% on the first $10k.
+Payout Eligibility Criteria
+All of the following requirements must be met to qualify for a payout. These conditions reset after every approved payout.
+1. Minimum Profit Goal
+You must earn at least the minimum goal between payout cycles to earn a payout.
+Account Size
+Minimum Profit Goal
+$25,000
+$250
+$50,000
+$500
+$100,000
+$750
+$150,000
+$1,000
+This profit goal resets after each payout.
+2. Consistency Percentage
+Your largest single-day profit must be no more than 40% of your total profit during the payout cycle.
+The 40% Consistency Percentage resets after each payout.
+This ensures that profits are earned with consistency, not via one unusually large trading day.
+3. Profit Over Buffer Balance
+To request a payout, your profits must exceed the buffer balance, which acts as a safety net to avoid hitting Max Loss Limit after a payout. You can not take payout from the buffer balance.
+The buffer is equal to: Initial Max Loss Limit + $100
+Important: If you take a trade before your payout is processed that drops your balance into the buffer, your request may be denied. Get more details at the bottom of this page.
+Payout Minimums and Maximums
+Minimum payout request: $500
+Maximum payout amounts depend on account size and payout cycle:
+Payout 1
+Account Size
+Required Buffer Balance
+Minimum Payout Request
+Minimum Balance for $500 Payout
+Maximum First Payout
+Minimum Balance for Maximum Payout
+$25,000
+$26,100
+$500
+$26,600
+$1,000
+$27,100
+$50,000
+$52,100
+$500
+$52,600
+$2,000
+$54,100
+$100,000
+$103,100
+$500
+$103,600
+$2,500
+$105,600
+$150,000
+$154,600
+$500
+$155,100
+$3,000
+$157,600
+Payouts 2+
+Account Size
+Required Buffer Balance
+Minimum Payout Request
+Minimum Balance for $500 Payout
+Maximum Payout 2+
+Minimum Balance for Maximum Payout
+$25,000
+$26,100
+$500
+$26,600
+$1,500
+$27,600
+$50,000
+$52,100
+$500
+$52,600
+$2,500
+$54,600
+$100,000
+$103,100
+$500
+$103,600
+$3,000
+$106,100
+$150,000
+$154,600
+$500
+$155,100
+$3,500
+$158,100
+Each payout cycle resets these thresholds.
+Payout Timing and Processing
+There is no fixed payout window, you may request a payout any day after meeting all eligibility criteria.
+Once approved:
+Funds will be deducted from your account within a few minutes.
+Payouts will be disbursed to your payment method within 2 business days.
+What Happens If I Trade After Requesting a Payout?
+Funds are deducted from your account within a few minutes of approval.
+If you trade after submitting but before approval and your balance drops into the buffer, the request may be denied. If your balance drops below the buffer after deduction, your account is at risk. You should trade as if the payout amount has already been removed from your balance.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Lucid Trading Help Center

@@ -1,0 +1,76 @@
+Quantower Connection Instructions | Topstep Help Center Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Skip to main content
+Discord Topstep TopstepTV
+Discord Topstep TopstepTV
+Search for articles...
+All Collections
+TopstepX™
+Quantower Connection Instructions
+Quantower Connection Instructions
+Quantower connects through TopstepX credentials. No API access needed.
+June 18, 2026
+Table of contents
+Connect using the Topstep Dashboard by selecting TopstepX as your platform. This links your account to ProjectX data — a direct CME feed for faster, cleaner market data with 10:1 Micro to Mini contract conversions.
+Quantower via TopstepX is available for the Trading Combine® and Express Funded Account® (XFA) only.
+Before You Start
+Log into TopstepX™ and sign all required platform and data agreements before launching Quantower. Skipping this step will cause a "Login Blocked" error.
+No API access required — just your TopstepX™ credentials.
+If prompted to install .NET Framework during setup, allow the installation.
+Installing Quantower for the First Time
+Download Quantower and click Extract when prompted. The platform launches with DX Feed by default — leave it.
+Click Connections at the top of the platform.
+Disconnect from DX Feed.
+Select ProjectX from the available connections.
+In the Server dropdown, choose TopstepX .
+Enter your TopstepX™ credentials and log in.
+Already Have Quantower Installed?
+Open Quantower and click Connections .
+Disconnect from any active connection.
+Select ProjectX from the available connections.
+In the Server dropdown, choose TopstepX .
+Enter your TopstepX™ credentials and log in.
+What's Included with Topstep Accounts
+Topstep accounts include the Premium Feature Bundle for free:
+DOM Surface
+TPO Chart
+Volume Analysis Tools
+Charting (max 2 indicators per chart)
+👉 Level 2 Data is required for full access to premium features.
+Not included:
+Market Replay
+Strategy Manager
+Strategy Runner
+Trading Simulator
+Please note: Additional features may require a paid Quantower license. View Quantower pricing here .
+Getting Started Tips
+How to place orders using Trading Panels
+How to monitor and flatten positions using Portfolio Panels
+FAQ: General Errors
+Quantower Support
+Contact Quantower support here or visit the Quantower online guide .
+Related Articles
+How to identify the Futures Front Month Contract
+General Platform Troubleshooting
+New to Topstep? Start here.
+TopstepX™ API Access
+TopstepX™
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Your Privacy Choices

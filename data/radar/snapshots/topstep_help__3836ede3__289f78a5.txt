@@ -1,0 +1,157 @@
+Dynamic Live Risk Expansion | Topstep Help Center Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Skip to main content
+Discord Topstep TopstepTV
+Discord Topstep TopstepTV
+Search for articles...
+All Collections
+Topstep Program
+Funded Accounts
+Live Funded Account®
+Dynamic Live Risk Expansion
+Dynamic Live Risk Expansion
+Trade well. Get rewarded. More room to run.
+Updated this week
+Table of contents
+Topstep's Dynamic Live Risk Expansion adjusts your Daily Loss Limit (DLL) and Maximum Position Size (contract limits) as your Live Funded Account® (LFA) profits grow. Earn your way to more buying power — one tier at a time.
+Starting Daily Loss Limit and Maximum Position Size
+Account Size
+Starting Daily Loss Limit
+Maximum Position Size
+25K
+$1,000
+3
+50K
+$2,000
+5
+100K
+$3,000
+10
+150K
+$4,500
+15
+250K
+$5,000
+15
+How Tiers Work
+Your net profit determines your Tier. Spend 10 Active Trading Days at each Tier to unlock the next level.
+Your Daily Loss Limit increases at end of day after 10 Active Trading Days in the new Tier.
+If your net profit falls below your Tier at end of day, your Daily Loss Limit scales down that same day.
+If you drop out of a Tier before 10 days, the counter resets when you re-enter it.
+You must move one Tier at a time. No skipping.
+Active Trading Day: Any day you place at least 1 trade — even a single micro contract. No minimum P/L required.
+👉 Important: Only profits made in the Live Funded Account count. Your Express Funded Account® transfer balance and Payouts don't affect your Tier.
+Expansion Table
+Maximum Position Size
+Profit
+Daily Loss Limit
+Up to 100 lots
+1M
+Up to $100,000
+Up to 70 lots
+550K
+Up to $50,000
+Up to 50 lots
+200K
+Up to $20,000
+Up to 30 lots
+100K
+Up to $10,000
+—
+50K
+Up to $6,000
+—
+20K
+Up to $5,500
+—
+15K
+Up to $5,000
+Position Limits remain at the max for each account size (5 lots for $50Ks, 10 lots for $100Ks, 15 lots for $150Ks) until the account reaches Tier 4 with with $100K in profit.
+For the first three tiers, +$500 is added to your starting Daily Loss Limit for each tier you achieve:
+$25K Account (Starts at $1,000 DLL)
+$15k Profit -> $1,500 DLL
+$20k Profit -> $2,000 DLL
+$50k Profit -> $2,500 DLL
+$50K Account (Starts at $2,000 DLL):
+$15k Profit -> $2,500 DLL
+$20k Profit -> $3,000 DLL
+$50k Profit -> $3,500 DLL
+$100K Account (Starts at $3,000 DLL):
+$15k Profit -> $3,500 DLL
+$20k Profit -> $4,000 DLL
+$50k Profit -> $4,500 DLL
+$150K Account (Starts at $4,500 DLL):
+$15k Profit -> $5,000 DLL
+$20k Profit -> $5,500 DLL
+$50k Profit -> $6,000 DLL
+$250K Account (Starts at $5,000 DLL):
+$15k Profit -> $5,500 DLL
+$20k Profit -> $6,000 DLL
+$50k Profit -> $6,500 DLL
+Once an account reaches $100k in net profit, Daily Loss Limits and Maximum Position Sizes align across all account types (as shown in Tier 4+).
+Net Equity Thresholds for Risk Reductions
+The Live Team may reduce your Daily Loss Limit and Maximum Position Size if your net equity falls below the thresholds listed here. This can happen even if your account is profitable overall. The review looks at your net equity relative to the threshold, not at whether you are up from where you started. These adjustments are not automatic and are made at Live teams discretion.
+​
+A reduction to your risk parameters may be considered when the net equity of a Live Funded Account dips below:
+$5,000 in a $25k account
+$10,000 in a 50K account
+$15,000 in a 100K account
+$20,000 in a 150K account
+$30,000 in a 250k account
+Daily Loss Limit Safeguard
+Regardless of account size, if your tradable balance drops to lower thresholds, the DLL and Maximum Position Size automatically adjust: ☝️ These limits update on Fridays and return to standard levels once your balance rises back above the thresholds.
+Account
+Daily Loss Limit (DLL)
+$25K
+$1,000
+$50K
+$2,000
+$100K
+$3,000
+$150K
+$4,500
+250K
+$5,000
+Regardless of account size:
+Tradable balance at or below $10,000 → DLL drops to $2,000, Max Position Size = 5
+Tradable balance at or below $5,000 → DLL drops to $1,000, Max Position Size = 3
+Example: If you have a 100K Live Funded Account and your end-of-day balance goes below $10,000, your Daily Loss Limit will be changed from $3,000 to $2,000 before the start of the next trading session. The DLL will return to $3,000 after the market closes on Friday if your balance is above $10,000.
+This safeguard is designed to limit downside risk during lower-balance periods while allowing traders to continue operating under the same risk framework across all Live account tiers.
+Expanded Contract Sizing
+Traders who demonstrate consistent performance and account stability may request permission to trade more contracts than standard limits.
+This is not automatic. All requests must be reviewed and approved by the Risk Team.
+Eligibility:
+Tier 4 or higher in the Dynamic Risk Expansion system
+Minimum $100,000 balance in your Live Funded Account
+Path to Reduction
+If your account experiences significant losses from your starting balance, the Risk Team will monitor your performance and may initiate a Shoulder Tap.
+Payouts do not count as drawdown. Drawdown is based solely on losses from your Live Funded Account starting balance.
+Warning: Reckless or undisciplined trading in a Live Funded Account may result in forfeiture of live capital.
+What is a Shoulder Tap?
+The term comes from the trading pits — where risk managers would literally tap a struggling Trader on the shoulder during a drawdown to check in and help them refocus.
+For more details, see Live Account Call-Up/Call-Down Process .
+Related Articles
+Trading Combine® Parameters
+What is the Maximum Loss Limit?
+Live Funded Account Parameters
+Risk Adjustments: High Risk/High Volatility
+What is a Pro Account?
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Your Privacy Choices

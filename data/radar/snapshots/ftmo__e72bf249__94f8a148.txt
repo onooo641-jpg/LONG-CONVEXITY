@@ -1,0 +1,361 @@
+Privacy Policy | FTMO.com
+Neu
+FTMO Instant Account
+{
+document.body.classList.toggle('no-scroll', value);
+});
+// Set scroll to true when we are scrolled 5.2% of viewport height on mobile or 6% on desktop.
+// Scroll variable is used to change navbar background from transparent to solid when scrolling.
+const checkScroll = () => {
+const isMobile = window.innerWidth threshold;
+};
+checkScroll();
+window.addEventListener('scroll', checkScroll);
+}
+}"
+@keydown.escape.prevent.stop="
+if (menuOpen || activeItem) {
+activeItem = null;
+menuOpen = false;
+}
+"
+>
+{ document.getElementById('first-mega-item-cfd')?.focus() })"
+@blur="hoveredItem = null"
+:class="{ 'bg-background-hover':
+hoveredItem === 'cfd' ||
+activeItem === 'cfd',
+'text-content-primary':
+hoveredItem === 'cfd' ||
+activeItem === 'cfd' ||
+hoveredItem === null && !menuOpen,
+'text-gray-400':
+(hoveredItem !== null && hoveredItem !== 'cfd' && (activeItem === 'cfd' ? false : true)) ||
+(menuOpen && hoveredItem === null && (activeItem === 'cfd' ? false : true))
+}"
+class="flex items-center gap-1.5 py-3 px-2 xl:px-3 transition-colors duration-200 rounded-lg focus:outline-none">
+CFD
+{ document.getElementById('first-mega-item-futures')?.focus() })"
+@blur="hoveredItem = null"
+:class="{ 'bg-background-hover':
+hoveredItem === 'futures' ||
+activeItem === 'futures',
+'text-content-primary':
+hoveredItem === 'futures' ||
+activeItem === 'futures' ||
+hoveredItem === null && !menuOpen,
+'text-gray-400':
+(hoveredItem !== null && hoveredItem !== 'futures' && (activeItem === 'futures' ? false : true)) ||
+(menuOpen && hoveredItem === null && (activeItem === 'futures' ? false : true))
+}"
+class="flex items-center gap-1.5 py-3 px-2 xl:px-3 transition-colors duration-200 rounded-lg focus:outline-none">
+New
+Futures
+{ document.getElementById('first-mega-item-trading')?.focus() })"
+@blur="hoveredItem = null"
+:class="{ 'bg-background-hover':
+hoveredItem === 'trading' ||
+activeItem === 'trading',
+'text-content-primary':
+hoveredItem === 'trading' ||
+activeItem === 'trading' ||
+hoveredItem === null && !menuOpen,
+'text-gray-400':
+(hoveredItem !== null && hoveredItem !== 'trading' && (activeItem === 'trading' ? false : true)) ||
+(menuOpen && hoveredItem === null && (activeItem === 'trading' ? false : true))
+}"
+class="flex items-center gap-1.5 py-3 px-2 xl:px-3 transition-colors duration-200 rounded-lg focus:outline-none">
+Trading
+{ document.getElementById('first-mega-item-ueber-uns')?.focus() })"
+@blur="hoveredItem = null"
+:class="{ 'bg-background-hover':
+hoveredItem === 'ueber-uns' ||
+activeItem === 'ueber-uns',
+'text-content-primary':
+hoveredItem === 'ueber-uns' ||
+activeItem === 'ueber-uns' ||
+hoveredItem === null && !menuOpen,
+'text-gray-400':
+(hoveredItem !== null && hoveredItem !== 'ueber-uns' && (activeItem === 'ueber-uns' ? false : true)) ||
+(menuOpen && hoveredItem === null && (activeItem === 'ueber-uns' ? false : true))
+}"
+class="flex items-center gap-1.5 py-3 px-2 xl:px-3 transition-colors duration-200 rounded-lg focus:outline-none">
+Über uns
+= 1024) && activeItem === 'cfd'"
+@mouseleave="activeItem = null; menuOpen = false;"
+@keydown.escape.window="
+if (activeItem || menuOpen) {
+activeItem = null;
+menuOpen = false;
+document.getElementById('mega-menu-button-cfd')?.focus();
+}
+"
+x-cloak x-transition:enter="transition ease-out duration-200"
+x-transition:enter-start="opacity-0 transform translate-y-10"
+x-transition:enter-end="opacity-100 transform translate-y-0"
+x-transition:leave="transition ease-in duration-200"
+x-transition:leave-start="opacity-0 transform translate-y-0"
+x-transition:leave-end="opacity-0 transform translate-y-10"
+>
+Jetzt starten
+CFD-Übersicht
+Ihr Weg zu FTMO
+Preise
+Wählen Sie Ihre FTMO Challenge
+Wie es funktioniert
+Werden Sie ein FTMO Trader
+Kostenloses Free Trial
+Unbegrenzte Übung für Ihre Strategie
+Handelsziele
+Wichtige Regeln zum Bestehen jeder Phase
+Mehr erreichen
+Trading-Psychologie
+Für ein stärkeres Mindset
+Premium Programm
+Werden Sie Teil der Spitzenperformer
+Skalierungsplan
+Wachsen Sie auf bis zu 2 Mio. $
+FTMO Challenge starten
+Jetzt starten
+= 1024) && activeItem === 'futures'"
+@mouseleave="activeItem = null; menuOpen = false;"
+@keydown.escape.window="
+if (activeItem || menuOpen) {
+activeItem = null;
+menuOpen = false;
+document.getElementById('mega-menu-button-futures')?.focus();
+}
+"
+x-cloak x-transition:enter="transition ease-out duration-200"
+x-transition:enter-start="opacity-0 transform translate-y-10"
+x-transition:enter-end="opacity-100 transform translate-y-0"
+x-transition:leave="transition ease-in duration-200"
+x-transition:leave-start="opacity-0 transform translate-y-0"
+x-transition:leave-end="opacity-0 transform translate-y-10"
+>
+English only
+Get Started
+Futures Overview
+Enter FTMO Futures
+Pricing
+Fees and account options
+How Futures Work
+Your path to FTMO Futures
+Trading Objectives
+Evaluation rules explained
+Start Your Evaluation
+Start now
+= 1024) && activeItem === 'trading'"
+@mouseleave="activeItem = null; menuOpen = false;"
+@keydown.escape.window="
+if (activeItem || menuOpen) {
+activeItem = null;
+menuOpen = false;
+document.getElementById('mega-menu-button-trading')?.focus();
+}
+"
+x-cloak x-transition:enter="transition ease-out duration-200"
+x-transition:enter-start="opacity-0 transform translate-y-10"
+x-transition:enter-end="opacity-100 transform translate-y-0"
+x-transition:leave="transition ease-in duration-200"
+x-transition:leave-start="opacity-0 transform translate-y-0"
+x-transition:leave-end="opacity-0 transform translate-y-10"
+>
+Grundlagen des Handels
+Wirtschaftskalender
+Wichtige Marktereignisse in Echtzeit
+Trading-Updates
+Neueste Änderungen und Informationen
+Handelbare Symbole
+Liste der Symbole
+Handelsplattformen
+Wählen Sie, was am besten zu Ihnen passt
+Tools & Dienstleistungen
+Übersicht der Tools
+Steigern Sie Ihre Trading-Performance
+Leaderboard
+Rangliste der besten FTMO Trader
+App Suite
+Entdecken Sie die App Suite von FX Blue
+Informationen
+FAQ
+Antworten auf häufig gestellte Fragen
+Blog
+Nachrichten, Tipps und Trading-Geschichten
+Academy
+Kostenlose Trading-Schulung
+= 1024) && activeItem === 'ueber-uns'"
+@mouseleave="activeItem = null; menuOpen = false;"
+@keydown.escape.window="
+if (activeItem || menuOpen) {
+activeItem = null;
+menuOpen = false;
+document.getElementById('mega-menu-button-ueber-uns')?.focus();
+}
+"
+x-cloak x-transition:enter="transition ease-out duration-200"
+x-transition:enter-start="opacity-0 transform translate-y-10"
+x-transition:enter-end="opacity-100 transform translate-y-0"
+x-transition:leave="transition ease-in duration-200"
+x-transition:leave-start="opacity-0 transform translate-y-0"
+x-transition:leave-end="opacity-0 transform translate-y-10"
+>
+Firma
+Über uns
+Erfahren Sie mehr über unsere Firma
+FTMO Group
+Erfahren Sie mehr über die FTMO Group
+Shop
+Exklusive FTMO-Produkte kaufen
+Verbinden Sie sich
+Kontaktieren Sie uns
+24/7 Support
+Für Media
+Markenressourcen und Medienmaterialien
+Karriere
+Werden Sie Teil unseres Expertenteams.
+DE
+Deutsch
+Čeština
+English
+Español
+Italiano
+Português
+Tiếng Việt
+Français
+Einloggen
+Jetzt starten
+Jetzt starten
+CFD
+Jetzt starten
+CFD-Übersicht
+Preise
+Wie es funktioniert
+Kostenloses Free Trial
+Handelsziele
+Mehr erreichen
+Trading-Psychologie
+Premium Programm
+Skalierungsplan
+Futures
+New
+Get Started
+Futures Overview
+Pricing
+How Futures Work
+Trading Objectives
+Trading
+Grundlagen des Handels
+Wirtschaftskalender
+Trading-Updates
+Handelbare Symbole
+Handelsplattformen
+Tools & Dienstleistungen
+Übersicht der Tools
+Leaderboard
+App Suite
+Informationen
+FAQ
+Blog
+Academy
+Über uns
+Firma
+Über uns
+FTMO Group
+Shop
+Verbinden Sie sich
+Kontaktieren Sie uns
+Für Media
+Karriere
+Search
+DE
+Deutsch
+Čeština
+English
+Español
+Italiano
+Português
+Tiếng Việt
+Français
+Jetzt starten
+Einloggen
+FTMO DATENSCHUTZRICHTLINIE
+FTMO DATENSCHUTZRICHTLINIE
+FTMO DATENSCHUTZRICHTLINIE
+FAQ
+So funktioniert es
+Affiliate-Programm
+Handelsziele
+FTMO Store (EN)
+Support
+Chatte mit uns
+Nachricht senden
+[email protected]
++420 910 920 304
+Folgen Sie FTMO
+CFD
+CFD-Übersicht
+Preise
+So funktionieren CFDs
+Kostenloses Free Trial
+Handelsziele
+1-Step FTMO Challenge
+2-Step FTMO Challenge
+FTMO Instant Account
+Vergleichstabelle
+Verbotene Handelspraktiken
+Mehr erreichen
+Premium Programm
+Skalierungsplan
+Futures
+EN Only
+Futures Overview
+Pricing
+How Futures Works
+Trading Objectives
+Comparison Table
+Forbidden Trading Practices
+Trading
+Wirtschaftskalender
+Trading-Updates
+Instrumente
+Handelsplattformen
+Tools & Dienstleistungen
+Trading-Tools & Dienstleistungen
+Trading Psychology
+Leaderboard
+App Suite
+Ressourcen
+FAQ
+Blog
+Academy
+Über uns
+Über uns
+Careers (EN)
+Kontaktieren Sie uns
+Pressekit
+Press Releases (EN)
+Affiliate-Programm
+Adresse
+FTMO
+Quadrio offices
+Purkynova 2121/3
+110 00 Prag
+Tschechische Republik
+Erhalten Sie exklusive Einblicke in FTMO
+Experteneinblicke in den Handel
+Neueste Updates
+Sonderangebote
+Abonnieren
+Abonnement erfolgreich abgeschlossen.
+Alle auf dieser Website bereitgestellten Informationen dienen ausschließlich Bildungszwecken im Zusammenhang mit dem Handel an den Finanzmärkten. Sie stellen weder eine spezifische Anlage- oder Geschäftsempfehlung noch eine Analyse von Investitionsmöglichkeiten oder eine allgemeine Empfehlung zum Handel mit Finanzinstrumenten dar.
+FTMO bietet ausschließlich Dienstleistungen im Bereich des simulierten Handels sowie Schulungs- und Lernwerkzeuge für Trader an. Die Informationen auf dieser Website richten sich nicht an Personen in Ländern oder Rechtsgebieten, in denen die Verbreitung oder Nutzung solcher Inhalte gegen geltende Gesetze oder Vorschriften verstoßen würde.
+Die Unternehmen der FTMO Gruppe treten nicht als Broker auf und nehmen keine Einzahlungen entgegen. Die technische Infrastruktur der FTMO Plattformen sowie die Datenübermittlung werden von externen Liquiditätsanbietern bereitgestellt.
+Copyright © 2026 FTMO s.r.o. Alle Rechte vorbehalten.
+Cookie-Einstellungen
+Cookies
+Impressum
+Allgemeine Geschäftsbedingungen
+Datenschutzrichtlinie
+Made with for trading
+Bitte beachten Sie, dass es sich bei allen Konten, die wir unseren Kunden zur Verfügung stellen, um Demokonten mit fiktiven Geldern handelt und der Handel nur in einer simulierten Umgebung stattfindet. Für weitere Informationen besuchen Sie bitte unseren FAQ-Bereich . Ja, ich verstehe.

@@ -1,0 +1,37 @@
+Workspaces and Templates in Volumetrica | My Funded Futures Help Center Skip to main content
+Go to website Discord YouTube English हिन्दी Español English
+Go to website Discord YouTube English हिन्दी Español English
+Search for articles...
+All Collections
+Trading Platforms
+Workspaces and Templates in Volumetrica
+Workspaces and Templates in Volumetrica
+Detailed description of Volumetrica's workspace and template creation in MyFundedFutures.
+August 24, 2026
+Table of contents
+We are delighted to introduce the customizable workspace layouts available on the Volumetrica web platform. These layouts are designed to adapt to the unique trading needs of each user, allowing for the integration of specialized indicators and configurations. By saving your personalized settings, you can ensure that your workspace is ready and waiting exactly as you left it for your next trading session.
+How to Create a Workspace in Volumetrica
+Step 1: Start by configuring your charts, symbols, and indicators to match your specific trading preferences. This initial setup allows you to establish the foundation of your workspace.
+Step 2: Once you have your preferred chart setup, save each chart as a template. You can do this by selecting the "Save Template" option located in the top-left corner of the chart window. This ensures that your chart layouts and indicators are consistently applied across different workspaces.
+Step 3: After your templates and layouts are in place, navigate to the top-right corner of the platform and click on the "Save" button. From the dropdown menu, select "Add a New Workspace." This feature allows you to create multiple workspaces tailored to different trading strategies or market conditions.
+Step 4: Name your workspace in a way that reflects its purpose or the strategy it supports. Once saved, this workspace will be accessible anytime, allowing you to switch between different setups quickly and efficiently as your trading needs evolve.
+Layout Options in Volumetrica
+Volumetrica offers a range of layout options that can be customized to suit various trading styles and strategies.
+If you prefer to view multiple charts simultaneously on a single screen, you can easily arrange this by using the layout button located in the top-right corner.
+Clicking on this button will display a variety of chart layout configurations available within the platform. These options allow you to arrange your charts in a manner that enhances your analysis and decision-making process.
+After selecting the layout that best meets your requirements, you can load it into your workspace. This flexibility ensures that you can adapt your trading environment to the demands of the market.
+Note: When setting up each chart, it’s important to select the correct symbol to ensure that the data displayed is accurate and relevant to your trading strategy.
+How to Customize Chart Themes and Settings
+To further personalize your trading experience, log in to Volumetrica and click on the properties button. This will open a popup window where you can adjust various chart settings and customize the appearance of your charts.
+Within this popup, you have the option to modify colors, styles, and other visual elements of your charts to align with your preferences or to improve readability.
+Once you have configured the settings to your satisfaction, save these adjustments as a template. You can then incorporate this template into your workspace, ensuring that your customized themes and settings are retained across all sessions.
+By saving your configurations, you can maintain a consistent trading environment that reflects your personal style, even after logging out of the platform.
+Should you have any questions or require further assistance, please do not hesitate to reach out to our customer support team. We are here to help you make the most of your trading experience on the Volumetrica platform.
+Related Articles
+Overview of Supported Platforms at MFFU
+Volumetrica: Getting Started
+Introduction to Volumetrica
+Trading 101 in Volumetrica
+Adding Indicators and Studies to Volumetrica
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

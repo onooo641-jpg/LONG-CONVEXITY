@@ -1,0 +1,52 @@
+Futures risk management rules | Blue Guardian Help Centre
+Skip to content Help Search the help centre ⌘K
+Website Start challenge Help Centre home Collections
+Getting started Account inactivity rule How Blue Guardian works Getting help and using your dashboard
+Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
+Payouts How payouts work
+Billing & accounts Paying for your account: methods, card rules and refunds How many accounts can I have? Futures bundle discounts
+Trading rules Prohibited trading strategies What happens if I break a rule? Futures risk management rules Trading hours and the trading day CFD news trading rules
+Platforms & instruments Trading platforms CFD trading conditions: markets, commissions and leverage Futures contract limits and funded scaling Futures instruments, codes and costs
+CFD plans Instant Standard account rules Instant Starter account rules 1 Step Standard rules 2 Step Standard rules 1 Step Nano rules 2 Step Nano rules Buy Now Pay Later (BNPL) rules
+Futures plans Reserve account rules Elite account rules Express account rules Direct account rules Elite, Reserve & Direct Path to Live Zero account rules Zero Path to Live
+Affiliates & competitions Affiliate program Monthly trading competition
+Help Centre
+Trading rules
+Futures risk management rules
+Futures risk rules: stop losses, the 5:1 maximum risk-to-reward, consistent sizing and the 2% CME price limit rule.
+Applies to: Futures Updated 13 November 2026
+Short answer
+Plan every trade with a defined risk. Keep your risk-to-reward at 5:1 or better, don't use the trailing drawdown as your stop loss, keep your position sizes consistent, and don't trade within 2% of a CME price limit.
+Stop losses
+A stop loss isn't mandatory, but every trade needs a clearly defined risk. You can't trade without stops and rely on your account's trailing threshold to close a losing trade. That's gambling, not a strategy, and it will disqualify you from moving to a Live Account.
+This applies to scalping too. For example, a scalper aiming for 10 ticks of profit might set a 30-tick initial stop. On longer-term trades, an initial stop defines the risk you accept, and trailing stops help you lock in gains when the market moves your way.
+Maximum risk-to-reward: 5:1
+Your stop loss can be at most 5 times your profit target.
+Profit target of 10 ticks: stop loss no more than 50 ticks
+Profit target of $100: stop loss no more than $500
+Mental stops are allowed, but the 5:1 limit still applies. Don't move a stop to increase your risk. Only move stops forward to trail and protect profit. Breaking this rule can lead to a warning or disqualification from payouts.
+Consistent position sizing
+Keep your contract size consistent. Increasing your size to win back losses (martingale) isn't allowed, and inconsistent sizing or "all-in" trading may lead to an account review.
+The 2% price limit rule
+You can't trade within 2% of a CME price limit . A price limit is the maximum a futures contract can move in one session. When it's reached, the market may pause, stay at the limit or halt for the day.
+Limits are set from the previous day's settlement price and differ by product, contract month and session (overnight vs regular hours).
+They update daily at 5:05 PM EST. You can find them on the CME Group price limits page .
+For equity products (ES, MES, NQ, MNQ, RTY, M2K, YM, MYM), overnight limits are 7%.
+How to stay clear: watch the % Net Change for your contract on your platform's quote board, and stop trading before it gets within 2% of the limit.
+Good habits
+Know your exit for both profit and loss before you enter.
+Use a tested system with a defined risk-to-reward.
+Set targets and stops that match your strategy and current conditions.
+Always honour your stops.
+Still need help?
+Chat with our support team. We usually reply in a few minutes.
+Chat with us
+More in Trading rules
+Applies to: CFD and Futures Prohibited trading strategies Applies to: CFD and Futures What happens if I break a rule? Applies to: CFD and Futures Trading hours and the trading day Applies to: CFD CFD news trading rules
+On this page Short answer
+Stop losses
+Maximum risk-to-reward: 5:1
+Consistent position sizing
+The 2% price limit rule
+Good habits
+© 2026 All Rights Reserved – Blue Guardian Terms Privacy Cookies

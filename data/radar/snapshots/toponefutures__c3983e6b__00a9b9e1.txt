@@ -1,0 +1,66 @@
+Elite Daily V2 – Maximum Account Rules | Top One Futures Help Center Skip to main content
+Top One Futures Home
+Top One Futures Home
+Search for articles...
+All Collections
+Elite DAILY Accounts
+Elite Daily V2 – Maximum Account Rules
+Elite Daily V2 – Maximum Account Rules
+This article explains the Maximum Limit of Elite Daily V2 Accounts you can have active at a time
+October 2, 2026
+Table of contents
+The Elite Daily plan allows traders to operate multiple accounts , subject to strict limits. These limits apply across both evaluation and funded accounts.
+The limit: a trader's household may trade a maximum of 5 Elite Daily accounts at any time. This includes evaluation accounts, funded accounts, or a combination of both. The 5 account limit is total, not per stage.
+Maximum Accounts Allowed
+A trader's household may trade a maximum of 5 Elite Daily accounts at any time. This includes evaluation accounts, funded accounts, or a combination of both. The 5 account limit is total, not per stage.
+Account Size Mixing
+You may mix account sizes within your 5 account limit. Example:
+Accounts
+Count
+$25K
+2
+$50K
+2
+$100K
+1
+Total
+5 accounts (allowed)
+Any attempt to exceed 5 active accounts is not permitted.
+Per Account Rule Enforcement
+Each account operates independently. This means:
+Daily Loss Limit applies per account
+Max Loss Limit applies per account
+Contract scaling applies per account
+Consistency is evaluated per account
+Payout caps apply per account
+Buffers apply per account
+Rules do not combine across accounts.
+Contract Limits Across Multiple Accounts
+Contract limits are enforced per account. They do not stack across accounts. Example: if you have 2 x $50K funded accounts, each account may trade up to its individual contract limit. However, traders must ensure they remain compliant on each account individually.
+Payout Rules Across Multiple Accounts
+Payout eligibility is calculated separately per account. You may request payouts from multiple accounts, hit progression rules per account and maintain the buffer per account. One account's eligibility does not impact another.
+Purchase Guidelines
+To support disciplined trading and maintain fair participation across the platform, we've implemented the following limits on evaluations, resets, and sim funded accounts:
+Limit
+Rule
+Evaluation purchases
+Up to 10 evaluation accounts within any rolling 30-day period starting from the initial purchase date.
+Resets
+Each evaluation account may be reset a maximum of 12 times within a 30-day window.
+Active funded accounts
+No more than 5 active funded accounts at any given time.
+Related articles
+Elite DAILY V2 - Overview
+Elite Daily V2 – Daily Payout Rules
+Elite Daily V2 – Contract Scaling Plan
+Maximum Accounts Explained
+Household Rule
+Related Articles
+Elite Daily V2 – Daily Loss Limit (DLL) - Funded Phase
+Elite Daily V2 – Contract Scaling Plan
+Elite Daily V2 – News Trading Rule (funded only)
+Elite DAILY V2 - Overview
+Elite Daily V2 – Daily Payout Rules
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+We run on Intercom

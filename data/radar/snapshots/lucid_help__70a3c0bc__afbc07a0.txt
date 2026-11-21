@@ -1,0 +1,30 @@
+LucidDirect Consistency Percentage | Lucid Trading Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Lucid Home
+Lucid Home
+Search for articles...
+All Collections
+LucidDirect
+LucidDirect Consistency Percentage
+LucidDirect Consistency Percentage
+How the LucidDirect consistency percentage works on instant funded accounts: the calculation, when it applies, and its effect on payout eligibility.
+D
+Written by Doug
+August 26, 2026
+Table of contents
+Consistency
+The Consistency Percentage tracks a traders ability to earn profits over multiple sessions. This demonstrates a that a trader has and can adhere to a risk management strategy.
+The Calculation
+In our LucidDirect funded accounts you must meet a Consistency Percentage of 20% to be eligible to request a payout. The Consistency Percentage resets and must be met again after each payout.
+Use the following formula to determine if you are adhering to the Consistency Percentage:
+Largest Single Day Profit / Account Profit = Consistency Percentage
+Example
+You trade your $50k LucidDirect Account and your Largest Single Day Profit was $500 and your Account Profit is $3,000. Plug the values into the above formula.
+$500 / $3,000 = 16.7%
+Congratulations, you have maintained consistency under the LucidDirect 20% requirement. You may now request a payout so long as you have met the other necessary objectives. However, if your largest day had exceeded 20% of your Account Profit, you would need to continue trading until your largest day is below 20%.
+Consistency at Live Account Status
+Once promoted to Live account status, the consistency requirement no longer applies. The 20% consistency requirement applies only during the funded account stage.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Lucid Trading Help Center

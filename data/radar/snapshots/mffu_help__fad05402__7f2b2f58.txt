@@ -1,0 +1,51 @@
+Moving from Evaluation to Sim-Funded Account | My Funded Futures Help Center Skip to main content
+Go to website Discord YouTube English हिन्दी Español English
+Go to website Discord YouTube English हिन्दी Español English
+Search for articles...
+All Collections
+Funded Accounts
+Moving from Evaluation to Sim-Funded Account
+Moving from Evaluation to Sim-Funded Account
+Things to know as a trader transitions from evaluation to the sim funded stage.
+September 4, 2026
+Table of contents
+The Transition Process:
+Transitioning from the evaluation stage to a sim-funded account is an exciting step in your trading journey. It begins with reaching your profit target during the evaluation stage. Once your end-of-day balance reflects that you've passed, you'll receive an email confirming your success. Barring an account needing to undergo a brief review (typically in less than 24 hours) you'll be notified of the results via email and have the ability to insta-upgrade to a sim-funded account via your dashboard.
+​
+** Note: dxFeed accounts will receive sim funded credentials on same day of passing.
+Looking to Get Funded?
+What Changes and What Remains:
+With your new sim-funded account, you'll notice some changes and some things that remain the same. Your sim-funded account will have 'SIM' in the account name, but you'll still use the same login credentials as before. Your maximum drawdown will now lock at +$100 after the drawdown % + $100 has been reached. Now, you'll need to consider your strategy for withdrawing profits, taking into account the buffer zone (if applicable) and payout policy, which can be found in the payout policy overview on the Intercom Help Desk article. It's important to understand these changes to make the most of your funded account.
+Managing Your New Account:
+Managing your sim-funded account is a crucial part of your trading success. The dashboard is your go-to tool, providing a comprehensive view of your analytics once the end-of-day data is updated. You can keep track of your progress in your sim-funded account, ensuring you're on the right path to meet your trading goals. Additionally, you can monitor your remaining drawdown through your trading platform, which empowers you to stay in control of your trading activities and risk management.
+This transition marks a significant step toward achieving your trading aspirations, and effectively managing your new sim-funded account is the key to long-term success in the world of trading.
+Evaluation Accounts
+Traders may hold a maximum of 10 active Evaluation Accounts at any given time.
+Sim-Funded Accounts: $25K and $50K Plans
+Traders may maintain up to 5 active Sim-Funded Accounts when holding only $25K and/or $50K account sizes.
+Any combination of $25K and $50K accounts is permitted, provided the total number of active Sim-Funded Accounts does not exceed 5 .
+Plan-Specific Limits
+Rapid EOD $25K: Maximum of 3 Sim-Funded Accounts
+Rapid EOD $50K: Maximum of 3 Sim-Funded Accounts
+Builder $25K: Maximum of 2 Sim-Funded Account
+Builder $50K: Maximum of 1 Sim-Funded Accounts
+Note: These plan-specific limits apply even if the general $25K/$50K allowance would otherwise permit more accounts.
+Sim-Funded Accounts: $100K and $150K Plans
+If a trader holds any $100K or $150K Sim-Funded Account , the maximum number of active Sim-Funded Accounts is 3 .
+The 3-account limit applies across all Sim-Funded account sizes and plan types .
+Examples
+1 × $100K + 2 × $50K = ✅ Allowed (3 total accounts)
+2 × $150K + 1 × $25K = ✅ Allowed (3 total accounts)
+1 × $100K + 4 × $50K = ❌ Not Allowed (5 total accounts)
+Account Limits Summary
+Evaluation Accounts: Up to 10 active accounts
+Only $25K/$50K Sim-Funded Accounts: Up to 5 active accounts (subject to plan-specific limits)
+Any $100K or $150K Sim-Funded Account present: Up to 3 active Sim-Funded Accounts total across all account sizes and plans.
+Related Articles
+Traders Evaluation Simplified
+Understanding Rapid Live
+Payout Policy Overview, Best and Fastest Prop-Firm Payouts
+Flex Plan - $25,000 / A Comprehensive Guide
+Comprehensive Look into Redesigned Pro Plan
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

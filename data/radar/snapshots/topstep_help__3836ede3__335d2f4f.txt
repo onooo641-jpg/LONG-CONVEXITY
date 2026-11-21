@@ -1,0 +1,98 @@
+Live Funded Account Call Up and Call Down Process | Topstep Help Center Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Skip to main content
+Discord Topstep TopstepTV
+Discord Topstep TopstepTV
+Search for articles...
+All Collections
+Topstep Program
+Funded Accounts
+Live Funded Account®
+Live Funded Account Call Up and Call Down Process
+Live Funded Account Call Up and Call Down Process
+Earn it. Get called up. Lose discipline. Get the tap.
+Updated over a week ago
+Table of contents
+Overview
+Moving to the Live Funded Account® (LFA) isn't automatic — it's earned. And staying there requires the same consistency that got you in. This article covers both the Call Up (moving to Live) and the Call Down (the Shoulder Tap back to a simulated account).
+📈 The Call Up — Moving to Live
+Moving to the Live Funded Account® (LFA) isn’t automatic. It’s earned. Unlike many other firms, we don’t start you off at $0 in your Live account. Your starting balance is 20% of your cumulative XFA balance, capped at your Account Size. If 20% of the capped amount is less than $10,000, Topstep will add in additional funds to get you to the $10,000 minimum.
+How Traders Are Evaluated for Live
+Topstep’s Live Account Team continuously monitors trader performance to determine when a trader may be ready to move to Live. Every trader is reviewed individually, so timing varies based on overall performance and history. Traders with Topstep average over $40k in lifetime payouts before being called up to our Live program. 100% of traders called to our Live program have taken a payout during their time with Topstep.
+We look at your full trading profile, not just one metric, including:
+Consistency and overall account behavior
+Risk management, position sizing, products traded, and use of stops and risk tools
+Exceptional performance in Sim
+Payout history and previous call-ups to Live
+All Live transitions occur at the discretion of the Topstep Live Accounts Team.
+Are the funds earned in my XFA forfeited when I move to Live?
+No, the funds you have earned during your XFA trading are used to determine your Live starting balance up to the size of your Live account.
+What balance will I start with in Live?
+Your starting balance is 20% of your cumulative XFA balance, capped at your Account Size. If 20% of the capped amount is less than $10,000, Topstep will add in additional funds to get you to the $10,000 minimum.. The remaining 80% is held in Reserve and can be unlocked in as few as 4 weeks through consistent trading in our Scale in, Scale up program.
+See Live Funded Account Parameters for the full breakdown of how your Account Size cap, cumulative balance, and Reserve split are calculated, including worked examples.
+📉 The Call Down — The Shoulder Tap
+What is it?
+​
+A Shoulder Tap moves a Live Trader back to a simulated account to reset and rebuild consistency while still being able to take payouts like in an XFA. This is standard risk management at proprietary trading firms.
+​
+It is not a penalty. It's an opportunity for the Risk Team to connect with a trader and help address excessive or extreme trading behaviors that could negatively impact long-term performance.
+When does it happen?
+A single trade, trading day, or isolated mistake typically won't trigger a Shoulder Tap. Instead, the Risk Team looks for recurring patterns over time, including:
+Significant drawdown of seeded capital (excluding profits and bonuses)
+Patterns of YOLO behavior or lack of discipline, including but not limited to:
+Repeatedly hitting the Daily Loss Limit
+Activity that resembles gambling rather than disciplined trading
+Inconsistent performance with a risk/reward imbalance — daily losses far exceeding typical wins.
+Improper per-trade or per-session risk sizing as a % of account
+Continuous over-leveraging, especially during inflection points
+Revenge Trading: consistently taking oversized or impulsive trades after a loss in an attempt to quickly recover, rather than following a trading plan.
+Large swings in position size
+Every case is reviewed individually.
+👉 We want our Live traders to protect and grow their accounts, as well as build the habits that lead to long-term success. Our goal is to help traders make the most of the opportunity they've earned, not gamble or take YOLO shots that put it all at risk.
+What account will I trade?
+Once in the Shoulder Tap program, you will be given one Shoulder Tap Express Funded Account with a starting balance reflecting your remaining Live capital. This account will follow the standard XFA parameters and Payout Policy You will be limited to one Shoulder Tap XFA to trade. Use it to hone in your performance, take payouts, and make your way back to the big leagues through consistent and disciplined trading.
+Can I move back to Live?
+Yes. The Risk Team continues to monitor your account and once consistency and discipline are demonstrated again, you may be moved back to Live through the standard review process. When a Trader is called back up to Live, they will continue trading in their Live Funded Account with the same balance that they had when they were called down. Any seed capital still held in reserve by Topstep will be available to unlock as the Trader reaches the designated profit targets based on account size.
+FAQs
+Do I need 5 payouts to move to Live?
+No. All decisions are based on overall performance and Live Account team review. The more payouts you take in your XFA accounts, the more likely you will to be selected for a review to move to Live. Those XFA funds are not forfeit, they are used to determine your starting balance in your Live account.
+Will I get a warning before a Shoulder Tap?
+No. There is no warning before being called down.
+Can I trade multiple accounts while in a Shoulder Tap?
+No. You are limited to 1 Shoulder Tap Express Funded Account.
+Is Back2Funded available for Shoulder Tap accounts?
+Yes. Back2Funded is available for any Shoulder Tap account.
+How long will I remain in a Shoulder Tap account?
+Until you are called back to Live or the account balance reaches zero.
+What happens if I lose my Shoulder Tap account?
+If the balance reaches zero, any remaining Live reserve is forfeited. You may restart the evaluation process by purchasing a new Trading Combine to earn funding.
+Is returning to Live guaranteed after a certain number of payouts?
+No. Returning to Live depends on demonstrated consistency and overall performance. It is never automatic.
+What happens to my Reserve Balance if I'm called down?
+When a Trader is called back up to Live, they will continue trading in their Live Funded Account with the same balance that they had when they were called down. Any seed capital still held in reserve by Topstep will be available to unlock as the Trader reaches the designated profit targets based on account size.
+If the Shoulder Tap XFA is traded to $0, the remaining seed capital will be forfeited.
+Related Articles
+Express Funded Account™ Parameters
+Topstep Payout Policy
+Live Funded Account Parameters
+TopstepX™ Live Performance Bonus
+Back2Funded: Rules, Guidelines, and How It Works
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Your Privacy Choices

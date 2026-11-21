@@ -1,0 +1,87 @@
+LucidBlack Live | Lucid Trading Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Lucid Home
+Lucid Home
+Search for articles...
+All Collections
+LucidBlack (Legacy)
+LucidBlack Live
+LucidBlack Live
+LucidBlack Live (legacy): how the live account stage works after funding, including rules, payouts, and differences from simulated accounts.
+A
+Written by AJ
+August 26, 2026
+Table of contents
+Getting Moved to Live
+Traders are transitioned from LucidBlack funded accounts to live trading under one of the following conditions:
+After completing their fourth and final LucidBlack payout
+At the discretion of the Lucid risk team, before the fourth payout
+Transition to Live
+When a trader is moved live from LucidBlack:
+Traders may have up to five live accounts
+Simulated profits from each LucidBlack account are used to calculate the live funding amount
+Each account size has a move-to-live cap, which limits how much simulated profit can be transferred
+Account Size
+Max Moved Live
+​ (Per Account)
+$25,000
+$6,000
+$50,000
+$12,000
+$100,000
+$16,000
+Any profits above the move-to-live cap will be forfeited during the transition to live.
+Day-One Capital Allocation:
+A portion of the move-to-live cap is deposited into the live account on Day 1
+The remaining capital is held in Escrow, which can be earned back by meeting performance benchmarks
+Account Size
+Max Deposited Day 1
+( Per Account)
+$25,000
+$1,800
+$50,000
+$3,600
+$100,000
+$4,800
+Example:
+A trader moves five $50,000 LucidBlack accounts live with $15,000 in simulated profit per account.
+Max allowed per account = $12,000 → excess $3,000 is forfeited
+Total live capital: $60,000 ($12,000 × 5)
+Day 1 capital = $18,000 ($3,600 × 5)
+Remaining $42,000 is held in Escrow and may be unlocked
+Live Escrow
+Escrow is the portion of your move-to-live capital not deposited on Day 1. It is released based on live performance.
+Escrow Release Criteria
+Before Escrow can begin releasing, you must meet two requirements:
+Complete 10 profitable trading days in your live account
+Earn $10,000 in live trading profits
+Once both of these conditions are met, our risk team will review your performance.
+Escrow Release Structure
+For every $10,000 in additional live profits earned, $5,000 in Escrow will be released
+Escrow is reviewed and calculated weekly, not daily
+This process continues until the full Escrow allocation has been released
+Important: Traders who engage in reckless or high-risk behavior ("yolo" trading) will not be eligible for Escrow release.
+LucidBlack Live Bonus
+LucidBlack traders may also qualify for an additional bonus pool, which functions similarly to Escrow.
+The Live Bonus is equal to 50% of the total Escrow amount
+It is only released after the entire Escrow has been unlocked
+Bonus capital is released at the same rate as Escrow:
+$5,000 bonus released for every $10,000 in live profits
+Live bonus is reviewed and calculated weekly, not daily
+Important: Traders who engage in reckless or high-risk behavior ("yolo" trading) will not be eligible for Live Bonus.
+Accessing Escrow and Live Bonus
+Requirement
+Rule
+Minimum Time to Withdraw
+Must wait 60 days from account opening
+Withdrawable Funds
+Only released Escrow and Bonus amounts may be withdrawn
+Margin Use
+Released funds may be used to meet margin requirements
+Risk Monitoring
+Significant drawdowns after release may trigger a risk review
+Escrow and Bonus rewards are designed to incentivize consistent performance and reward discipline in the live environment. Our risk team monitors behavior to ensure traders are acting responsibly as they trade live capital.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Lucid Trading Help Center

@@ -1,0 +1,144 @@
+Futures Prop Firms With No Consistency Rule (2026)
+Black Friday Early Access · EARLYBOGO40 25K Zero BOGO + 40% off · EARLYBOGO50 25K Direct BOGO + 50% off
+Home
+About
+How It Works
+Trading
+Platforms
+AlphaTrader
+Learn More
+WealthCharts
+Learn More
+Quantower
+Learn More
+View All
+Leaderboard
+Lifetime Payouts
+Learn More
+Weekly Payouts
+Learn More
+Returns of the month
+Learn More
+View All
+Market
+Equity & Index
+Learn More
+Currency
+Learn More
+Metals
+Learn More
+Crypto
+Learn More
+View All
+AlphaTrader
+Launched AlphaTrader — the next evolution of the platform. Get Early Access
+Resources
+Contact Us
+Help Center
+Start Evaluation
+Sign In
+Home
+About
+How It Works
+Trading
+Platforms
+Leaderboard
+Market
+AlphaTrader
+Launched AlphaTrader — the next evolution of the platform. Get Early Access
+Resources
+Contact Us
+Help Center
+Start Evaluation
+Sign In
+Futures Prop Firms With No Consistency Rule (2026)
+By the Alpha Futures Team · Updated October 23, 2026
+At Alpha Futures, two account stages have no consistency rule: Zero evaluations and Advanced Qualified Accounts. Every other stage has one: 50% on Standard evaluations, 40% on Advanced evaluations and on Zero and Standard Qualified Accounts, and 20% on Direct. The Maximum Loss Limit still applies everywhere, so no consistency rule does not mean no rules.
+Updated 23 October 2026. Alpha Futures currently offers Zero, Standard, Advanced, and Direct. Premium was discontinued in July 2026.
+Part of our futures prop rules series. Start with what the consistency rule is , then read the consistency calculator · performance fee rules · how to pass a futures prop evaluation · Maximum Loss Limit · how it works .
+What is a consistency rule?
+A consistency rule limits how much of your total net profit may come from your best trading day. The ratio can affect when you pass an evaluation or become eligible for a performance fee request. It is separate from the profit target, Maximum Loss Limit , and Daily Loss Guard.
+Alpha Futures consistency rules by plan
+Current plan Evaluation Qualified Account
+Zero No consistency rule 40% between performance fee requests
+Standard 50% 40% between performance fee requests
+Advanced 40% No consistency rule
+Direct No evaluation 20% for performance fee eligibility
+On the Standard Plan, the optional No Consistency in Qualified add-on removes the 40% consistency rule from your simulated Standard Qualified Account; the Standard Evaluation keeps its 50% rule. See No Consistency in Qualified: the Standard Plan add-on .
+Premium was a past plan and is not available for new purchases.
+What "no consistency rule" can mean
+Plans do not all mean the same thing by "no consistency rule".
+No rule during the evaluation. Zero is this case. You can reach the profit target in one day. The Qualified Account still has a 40% rule later.
+No rule on the Qualified Account. Advanced is this case. The evaluation has a 40% rule. After you qualify, that rule drops off.
+No rule at either stage. Alpha Futures does not offer that. Direct skips the evaluation and then uses 20% before a performance fee request.
+What still applies on Zero
+No consistency rule on the Zero evaluation does not remove the other rules. These are the published Zero 50K figures.
+Rule Zero 50K
+Profit target on the evaluation $3,000
+Maximum Loss Limit $2,000
+Daily Loss Guard $1,000
+Consistency on the evaluation None
+Consistency on the Qualified Account 40% since the last performance fee request
+Passing a Zero 50K evaluation in one day
+You make $3,000 in one session. That meets the profit target. Zero has no consistency rule on the evaluation, so that one day can be the whole target.
+Two rules still apply on that day. The account fails if it hits the Maximum Loss Limit, which starts $2,000 under the $50,000 balance. The Daily Loss Guard stops the session at a $1,000 loss and locks new trades for the day. It does not, by itself, close the account.
+After you are on the Qualified Account, a new window starts. The 40% rule applies to profit since the last performance fee request. A share of 40% or more is not eligible yet. If the best day in that window is $1,200, the total has to be above $3,000 before a request can pass the rule. $1,200 is 40% of $3,000, so that total is still short. The account is not breached for the ratio. You keep trading.
+Run the numbers in the consistency calculator . The same maths is in the prop firm consistency calculator guide.
+Which plan fits your goal?
+Pass an evaluation without a best-day ratio
+Consider Zero. You still need to hit its profit target and stay inside its Maximum Loss Limit and Daily Loss Guard. The absence of an evaluation consistency rule does not remove other plan rules.
+Trade without a qualified-stage consistency ratio
+Consider Advanced. Its evaluation has a 40% consistency rule, but its Qualified Account has none. This differs from Standard and Zero, which use 40% after qualification.
+Start Qualified without an evaluation
+Direct skips evaluation but applies 20% consistency for performance fee eligibility. Compare its price, profit target, limits, and performance fee conditions on the Direct plan .
+Common mistakes
+Assuming no consistency rule means no loss limit or no trading restrictions.
+Reading the evaluation rule and overlooking the Qualified Account rule.
+Using an old Premium comparison as if Premium were still sold.
+Treating a completed profit target as a confirmed pass before all applicable conditions are met.
+FAQs
+Does Alpha Futures have an evaluation with no consistency rule?
+Yes. Zero evaluations have no consistency rule. Direct skips the evaluation entirely.
+Does Advanced have no consistency rule?
+Advanced Qualified Accounts have no consistency rule. The Advanced evaluation has a 40% consistency rule.
+What is the 50% consistency rule at Alpha Futures?
+It applies to Standard evaluations. The largest profitable day must meet the ratio set in the current policy before the evaluation can pass.
+What happened to Premium?
+Premium was discontinued in July 2026. Current choices are Zero, Standard, Advanced, and Direct.
+All accounts use simulated funds. Eligible performance fees depend on the published rules; outcomes are not guaranteed.
+More Articles
+Sign Up for an
+Exclusive Welcome Offer
+Subscribe to Alpha Futures emails for an exclusive welcome offer, trader insights, product updates and discounts. Enter your email to stay one step ahead. You can unsubscribe at any time.
+Thank you for signing up to our newsletter
+Oops! Something went wrong while submitting the form.
+175,000+
+Qualified Analysts
+1.1Million+
+Traders
+$70M
+Performance Fees Paid
+Quick Links
+Home About How it works
+Trading
+Platforms Market Leaderboard
+Other
+Resources Contact Us Promo Codes
+2026 © Alpha Futures - All rights reserved.
+Terms of Use
+Terms and Conditions
+General Service Agreement
+Privacy Policy
+Return Policy
+ALPHA FUTURES LIMITED
+Company number 15655643
+Registered office address
+1 Allied Business Centre, Coldharbour Lane, Harpenden, England, AL5 4UT
+"Any references to trading, analysts, revenue, and profit throughout the website are references to virtual trading, revenues, and profits, respectively."
+Alpha Futures Risk Disclosure:
+Futures trading contains substantial risk and is not for every investor. An investor could potentially lose all or more than the initial investment. Risk capital is money that can be lost without jeopardizing your financial security or lifestyle. Only risk capital should be used for trading and only those with sufficient risk capital should consider trading. Past performance is not necessarily indicative of future results.
+Hypothetical Performance Disclosure:
+Hypothetical performance results have many significant performance and other limitations, some of which are described below. No representation is being made that any account will or is likely to achieve profits or losses similar to those shown on the website or any promotional material.
+CFTC Rule 4.41:
+Hypothetical or Simulated performance results have certain limitations. Unlike an actual performance record, simulated results do not represent actual trading. Also, because the trades have not actually been executed, the results may have under-or-over compensated for the impact, if any, of certain market factors, such as lack of liquidity. Simulated trading programs, in general, are also subject to the fact that they are designed with the benefit of hindsight. No representation is being made that any account will or is likely to achieve profit or losses similar to those shown.
+English Deutsch Español Français Italiano

@@ -1,0 +1,71 @@
+Alpha One 6%/10%/12% | Alpha Capital Help Center Skip to main content
+Português do Brasil English Español English
+Português do Brasil English Español English
+Search for articles...
+All Collections
+Alpha Plans
+Alpha One 6%/10%/12%
+Alpha One 6%/10%/12%
+July 22, 2026
+The Alpha One plan is Alpha Capital Group's 1-step evaluation.
+Key Features:
+Profit Targets, Drawdown Limits, Minimum profitable days:
+One 6% plan:
+Phase 1 profit target: 6%
+Max Drawdown (trailing per high water-mark*): 4%
+Max Daily Drawdown (calculated over the highest end-of-day balance or equity, whichever is greater): 3% during Evaluation, 4% on Qualified
+Minimum trading days (Evaluation): 1
+One 10% plan:
+Phase 1 profit target: 10%
+Max Drawdown (trailing per high water-mark*): 6%
+Max Daily Drawdown (calculated over the highest end-of-day balance or equity, whichever is greater): 4%
+Minimum trading days (Evaluation): 1
+One 12% plan:
+Phase 1 profit target: 12%
+Max Drawdown (trailing per high water-mark*): 8%
+Max Daily Drawdown (calculated over the highest end-of-day balance or equity, whichever is greater): 5%
+Minimum trading days (Evaluation): 1
+*Definition of high water-mark: maximum account balance achieved on the account. Example: the initial max drawdown of -6% for a $100,000 account on the One 10% plan is $94,000. As the max drawdown is trailing based on the high-water mark, if the account reaches $102,000, the new max drawdown will be set at $96,000. This process will continue until the account reaches a high-water mark equal to the trailing drawdown. In other words, once the balance reaches $106,000, the trailing drawdown will remain fixed at the initial balance of $100,000 and will not be moved any further.
+For more information on how the daily drawdown works, please refer to our dedicated article.
+Leverage & Lot Exposure:
+The Alpha One plan offers leverage of up to 1:30 across different asset classes, giving traders the ability to manage larger positions relative to their account size:
+FX: 1:30
+Metals: 1:9
+Indices: 1:10
+Oil: 1:10
+Alongside leverage, the maximum lot exposure on a One account is adjusted based on account size, as follows:
+$5k = Max 2.5 lots
+$10k = Max 5 lots
+$25k = Max 10 lots
+$50k = Max 20 lots
+$100k = Max 40 lots
+$200k = Max 80 lots
+$300k = Max 120 lots
+Please note that all Alpha One plans are available up to $200k, with the exception of the One 12% plan, which is available up to $100k.
+Please note that the maximum lot exposure will depend on your leverage requirements and available margin.
+During the account review at the withdrawal stage, should any violations of this rule be identified, we follow a strict procedure:
+Upon the first instance of violating this rule, the performance fee earned through lot sizes exceeding the permitted limit will not be eligible for withdrawal.
+Upon the second instance of violating this rule, the performance fee will be forfeited and the Qualified Analyst Account will be deactivated.
+Please note that violations are assessed per position, not per trade idea. Therefore, a sequence of trades can result in multiple violations of this rule. For example, if the maximum lot limit for an account is 10 lots, a single trade of 11 lots followed by another trade of 1 lot, while the first trade remains open, will result in two breach counts and the closure of the account.
+​
+Additional Features:
+News Trading : Trading during major news events is allowed, with a 5-minute window on both sides of the event . You are NOT allowed to execute any new trade, or close an existing trade, on the targeted instrument from 5 minutes before until 5 minutes after the release of the news announcement.
+For more information about news releases and targeted instruments , please refer to our news trading article.
+​
+Weekend Hold :
+Phase 1: Holding trades over the weekend is allowed .
+Qualified Analyst Account: Holding trades over the weekend is also allowed
+Performance fee on-demand
+For a complete explanation about the performance fee on-demand , please refer to its article.
+Important notice
+If your trailing Max Drawdown gets adjusted to the initial balance (in the situation where your account reaches profits equal to your plan's Max Drawdown %), you are advised to leave a profit buffer on your account if you want to continue trading it. In this scenario, if all profits are requested, they will be withdrawn and paid; however, this will result in the closure of the account .
+If your account has less than your plan's Max Drawdown % in profits (and the trailing Max Drawdown hasn't been adjusted to the initial balance yet), you can request a payout of all profits, but the trailing Max Drawdown will remain unchanged.
+For example, on a $100,000 account under the One 10% plan (6% trailing Max Drawdown), $2,000 in profits results in a $102,000 balance, and the trailing Max Drawdown will be set at $96,000. Should you request a payout of all available profits, you will continue to trade the account with a $100,000 balance and the same $96,000 trailing Max Drawdown threshold, after receiving the $2,000 payout.
+Maximum allocation
+The maximum allocation is $400,000, which is shared across all five plans: Pro, Swing, One, Three, and Direct.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+[email protected]
+Discord
+Website
+Dashboard
+We run on Intercom

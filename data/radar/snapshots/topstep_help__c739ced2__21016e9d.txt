@@ -1,0 +1,160 @@
+Order Types, Fills, and Slippage | Topstep Help Center Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Skip to main content
+Discord Topstep TopstepTV
+Discord Topstep TopstepTV
+Search for articles...
+All Collections
+Getting Started
+Trading Education
+Order Types, Fills, and Slippage
+Order Types, Fills, and Slippage
+Know your tools. Know your exits. Know the risks.
+September 16, 2026
+Table of contents
+The Basics
+Order types control how and when your trades fill. Slippage is what happens when the market moves between your order and your fill. Both matter — a lot.
+Order Types
+All order types below are available on TopstepX™.
+Order Type
+How It Works
+Market
+Fills at best available price. Fill guaranteed. Price is not.
+Limit
+Buy below market or sell above. Price guaranteed. Fill is not.
+Stop / Stop Market
+Becomes a market order when stop price is hit. Buy Stop = above market. Sell Stop = below.
+Trailing Stop
+Trails the market in set increments. Good for locking in breakeven exits.
+OCO (One Cancels Other)
+2 orders linked. When 1 fills, the other cancels. Used as a bracket.
+OSO (One Sends Other)
+When 1 fills, it sends the other.
+TopstepX DOM tip: Left-click = Limit. Right-click = Stop.
+👉 Learn more about each order type below
+Market Order
+Executes at the next available price. No price specified — you get the best fill available when your order hits the exchange. Use it when getting filled matters more than the exact price. Fastest way in or out.
+⚠️ Avoid in thinly traded markets. Wide bid-ask spreads mean your fill could be way off the last traded price.
+Limit Order
+Sets the worst price you'll accept. Limit buys go below current price. Limit sells go above it.
+Price execution over speed. Trade-off: the market has to trade through your price — not just touch it. You might not get filled. Partial fills happen. Order stays in the book until it's filled, canceled, or expired.
+Stop Orders
+Stop Market
+Triggers at your stop price, then executes like a market order — best available fill. Buy stops go above current price. Sell stops go below it.
+Once the stop price is "elected," you're in at whatever the market gives you. No price guarantee. Slippage can happen.
+Stop price placement
+Common use
+Buy Stop
+Above current market price
+Enter long on a breakout, or cover a short
+Sell Stop
+Below current market price
+Enter short on breakdown, or protect a long (stop-loss)
+On TopstepX: Left-click Bid or Ask column = Limit order. Right-click = Stop order. On mobile, tap the order type selector at the top of the Order Ticket to switch between Market, Limit, and Stop Market.
+Trailing Stop
+Locks in a stop at a set distance, then automatically moves it as price moves in your favor. Downside stays protected. Upside stays open.
+Set it and let it work. Useful for exit strategies and breakeven automation — especially when you don't want to babysit the position.
+OCO
+2 orders linked. 1 fills, the other cancels. Instantly. Primarily used as bracket orders — a stop and a limit wrapping your position. Cap the loss, lock in the gain. Trade management on autopilot.
+OSO
+2 orders linked. 1 fills, the other submits. Combine with OCO to fully automate your exit once the entry fills. Entry triggers → exit bracket deploys. No manual intervention needed.
+Slippage
+You set your stop. It fills somewhere else. That gap is slippage. It happens when there isn't enough market depth to fill your order at your exact price. The market moves before your order executes.
+When slippage is most likely
+Economic releases
+High volatility periods
+Illiquid markets
+Swing highs/lows
+Market open and close
+What causes Slippage
+3 main drivers: volatility, liquidity, and market gaps.
+Volatility — Fast markets create a lag between when you place an order and when it fills. Economic releases, unexpected events, sharp moves — all of it can push your execution away from your intended price. Note: extreme volatility can also trigger market safeguards like CME Velocity Logic. Learn more.
+Liquidity — Fewer buyers and sellers means it's harder to fill at a specific price. The market adjusts to absorb your order size, and that adjustment shows up in your fill.
+Market gaps — News hits while the market is closed. It reopens at a different level. Your resting orders fill at the next available price — not where you expected.
+How to Tell If Slippage Occurred
+Open your trade history
+Find the order in question
+Compare your intended fill price to your actual fill price
+Check market data around the time of the fill
+If the prices differ — that's slippage
+Slippage Mitigation Strategies
+Use limit orders — Limits let you set the worst price you'll accept. More control over execution. Trade-off: you might not get filled.
+Watch the market — High volatility means higher slippage risk. Know what's on the calendar. Reduce size or step aside during extreme conditions.
+Manage your risk — Use stop losses. Size your positions to match your risk tolerance. In volatile markets, smaller size keeps you in the game without overexposing yourself. Never risk more than you're willing to lose.
+☝️ Slippage Can Affect Your Account Limits
+Slippage can push your fill beyond your stop level. When that happens, realized losses may exceed your Maximum Loss Limit or Personal Daily Loss Limit — triggering automatic liquidation. This isn't a platform error. It's how orders fill in fast or volatile markets. Unrealized losses can also briefly cross risk thresholds before a stop executes, which can trigger an automatic account closure.
+Risk Tools & Orders — What to Expect
+Personal Daily Loss Limit (PDLL) and Personal Daily Profit Target (PDPT) are not resting orders. They don't sit at the exchange waiting for price.
+☝️ Here's what actually happens:
+The system monitors your unrealized P&L in real time.
+Your threshold gets crossed.
+The system detects the breach and generates an order.
+That order goes to the exchange and fills at the best available price.
+Fast process. But in fast-moving markets, milliseconds matter. In normal conditions, the difference is minimal. In volatile markets, it can be significant. Exact price execution is never guaranteed with a platform risk tool.
+👉 What this means for your trading:
+A resting stop order sits at the exchange and fills when price reaches it — it can execute before a platform risk tool liquidation even triggers.
+Your Personal Daily Loss Limit is a backstop. Not a substitute for a stop loss.
+If your stop is placed at a level with more risk than your loss limit threshold, your stop could fill first, depending on volatility.
+Layer your tools. Stops, loss limits, profit targets — together, not interchangeably.
+Why didn't my Personal Daily Profit Target trigger at the exact value I set?
+Platform risk tools require the system to detect a threshold breach, generate an order, and send it to the exchange. That process takes time. Even under normal conditions, exact price execution isn't guaranteed — a millisecond difference can change the outcome. In volatile markets, the gap can be more significant. This is expected behavior. Build it into your risk planning.
+Can I use my Personal Daily Loss Limit as a stop loss?
+No. The Personal Daily Loss Limit monitors your unrealized P&L and triggers when your threshold is crossed. A stop loss is a resting order already waiting at the exchange. Relying on your loss limit as your primary exit means you may not get out where you expect. Always use a stop loss to manage position-level risk. Your Personal Daily Loss Limit is a backstop — not a replacement.
+🧠 Learn more about the PDLL and PDPT here .
+Orders & Slippage — FAQs
+How does slippage affect my Maximum Loss Limit?
+Slippage can push your account past your Maximum Loss Limit faster than you expect. When that limit is hit, the system automatically liquidates your position. Build slippage into your risk planning.
+What's an OCO order?
+OCO stands for One Cancels Other. You place 2 orders simultaneously. When 1 fills, the other automatically cancels. Traders use it as a bracket — 1 side for profit target, 1 for stop loss.
+Can I eliminate slippage entirely?
+Only with limit orders — but limit orders risk not getting filled if price doesn't reach your level. It's a trade-off: price certainty vs. fill certainty.
+Does slippage affect both buy and sell orders?
+Yes. Buy orders fill higher than expected; sell orders fill lower than expected.
+Can slippage be completely avoided?
+Not reliably. Stop orders are the best protection for most situations.
+To minimize slippage:
+Avoid trading during major news events
+Trade during high-liquidity market hours
+Does slippage occur in simulated trading and other financial markets?
+Slippage occurs in both simulated and live trading across all financial markets — stocks, forex, futures, and crypto. Simulated platforms model real market conditions, including slippage, to keep the experience realistic. It's most common in low-liquidity markets or during high volatility.
+How do stop-loss orders respond to slippage?
+Stop-loss orders convert to market orders when the stop price is hit. Market orders guarantee a fill, not a price — so in fast-moving markets, your execution price may differ from your stop price, leading to larger-than-expected losses.
+When am I most exposed to slippage?
+Slippage can happen anytime, but it's most likely around:
+Economic Releases
+High volatility periods
+Illiquid markets / low market depth
+Price action around swing highs and lows
+Market open/close and opening range breakouts
+Why wasn't my order filled / It blew past my stop
+​ Why wasn't my order filled?
+Low liquidity or high volatility can make it hard to find a match at your price. Limit orders especially — if the market doesn't trade through your price, you don't get filled. Check time and sales data to see what the market was doing at the time.
+It blew past my stop!
+Slippage. In fast or volatile markets — gaps, major economic releases, sudden imbalances — your stop triggers but fills at the next available price, not the stop price. It's not a malfunction. Review your stop placement and size for high-volatility conditions to make sure they match your actual risk tolerance.
+📺 Click below to watch an informative video from Mick, one of Topstep's Risk Managers, as he explains how slippage works.👇
+Topstep Risk Disclosure
+Related Articles
+What is the Maximum Loss Limit?
+Economic Releases
+Prohibited Trading Strategies at Topstep
+CME Velocity Logic
+TopstepX™
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Your Privacy Choices

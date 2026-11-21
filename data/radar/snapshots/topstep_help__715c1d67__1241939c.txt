@@ -1,0 +1,139 @@
+TopstepX: Price Alerts | Topstep Help Center Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Skip to main content
+Discord Topstep TopstepTV
+Discord Topstep TopstepTV
+Search for articles...
+All Collections
+TopstepX™
+TopstepX: Price Alerts
+TopstepX: Price Alerts
+Set the level. Walk away. We'll tell you when price gets there.
+September 25, 2026
+Table of contents
+The Basics
+Price Alerts on TopstepX™ track the levels you care about and tell you when price gets there. Set them from the chart. Add browser notifications and your computer tells you even when you're in another tab.
+Setting up a Price Alert
+Desktop: Right-click the chart and select Create Alert .
+Mobile: Tap the 3 dots in the bottom right, tap Price Alerts , then tap +Create Alert in the top left.
+Alert conditions
+Condition
+Triggers when
+Crossing
+Price crosses your level in either direction
+Crossing Up
+Price crosses your level moving up
+Crossing Down
+Price crosses your level moving down
+What to know before you set one
+40 alert cap. Active and paused alerts both count toward it.
+Alerts are contract-specific. When a contract rolls over, its alerts are deleted. Recreate them on the new front-month contract.
+Alerts are user-specific. Every alert you create is shared across all accounts tied to your username.
+"Every time" triggers once per minute. That cap prevents lag in fast, volatile markets. There is no way to slow it down further.
+Alerts expire at midnight (12:00 AM) in the time zone of the computer you created them on. "Till Canceled" alerts run until the contract rolls over.
+Sound only plays when TopstepX is open on your machine.
+Browser notifications
+Turn on browser notifications and your computer tells you when price hits, even if you've switched to another tab or app. Same as a calendar reminder.
+Before you turn them on
+Notifications need permission in 2 places. This is where most setup problems come from.
+Your browser has to allow notifications from TopstepX. You will be asked the first time you enable them on an alert.
+Your operating system has to allow notifications from your browser. This is the one most people miss.
+Mac: System Settings → Notifications → find your browser → turn on Allow notifications. If this is off, TopstepX notifications get discarded no matter what your browser says.
+Windows: Settings → System → Notifications → make sure notifications are on and your browser is allowed. Check that Do not disturb and Focus assist are off.
+You will also need:
+Chrome, Edge, Firefox, or Safari on a desktop computer.
+Your browser running. The TopstepX tab can be closed, but if you quit the browser, notifications stop until you open it again.
+Do Not Disturb, Focus, and any presentation or game mode turned off.
+Turning browser notifications on
+Create or edit a Price Alert.
+Tick the browser notification option on the alert.
+If your browser asks whether to allow notifications from TopstepX, choose Allow .
+Give the alert a custom title and message and that is what the notification shows. Leave them blank and you get the standard alert details.
+Notifications are set up per device
+These are per computer. Tick the option on every machine you trade from. A second computer showing it switched off is expected, not a fault.
+Turning browser notifications off
+Untick the browser notification option on the alert. To stop all TopstepX notifications in that browser, block notifications for TopstepX in your browser's site settings.
+⚠️ Notifications are a convenience, not a guarantee. Delivery depends on your device, browser, operating system, and connection, and can be delayed or missed. Always check your positions and account status in the platform.
+Price Alert FAQs
+Timing, expiration, and conditions
+​ What exact time does an alert expire?
+Always midnight (12:00 AM), based on the local time zone of the computer you were on when you created the alert.
+Example: Pick End of Trading Day or One Week and both expire at midnight, either that day or a week out from the day you created it. Pick Till Canceled and the alert runs until the contract rolls over.
+​ If I select "Every time" and the market is moving fast, can I slow down that trigger?
+No. "Every time" already triggers once per minute at most, and there is no way to slow it down further right now.
+​ What happens after a "Once" alert is triggered?
+The alert moves to a paused state. Restart it from the top-right corner or from the active/paused alerts menu.
+​ What happens to my alerts during rollover?
+Alerts are contract-specific. When a contract rolls over, the alert is deleted. Recreate it on the new front-month contract.
+Managing your alerts
+​ How many alerts can I have?
+40 total. That includes both active and paused alerts.
+​ Can I show paused alerts on the chart?
+Yes. Click the alerts icon in the top-right corner, click the settings icon, and check "Show paused alerts on chart." It is off by default.
+​ Can I reactivate a paused alert?
+Yes. Go to your active alerts and scroll all the way down to the "paused alerts" section.
+​ Can I drag an alert to change the price instead of editing it?
+Yes. Drag and drop an alert on the chart at any time to change the price it triggers at.
+​ Are alerts account-specific or shared across accounts?
+Alerts are user-specific, so they are shared across every account tied to your username.
+​ Does clearing the alert log delete my active alerts?
+No. Active alerts are not affected by the "Clear alert log" action.
+​ Can Support see my alerts if I need help?
+Yes. Alerts are visible in our admin tools, so Trader Support can help if you have questions.
+Notifications and platform status
+​ Do alerts work if I'm logged out or close TopstepX?
+Yes. The alert still triggers on the server, and you will see the notification the next time you log in to the platform. Sound will not play unless the platform is open.
+If you have browser notifications turned on, you also get notified outside the platform. The TopstepX tab can be closed, as long as your browser is still running.
+​ Will alerts trigger while my computer is locked or asleep?
+The alert triggers, but you will not get the in-platform notification until you log back in or wake your computer up.
+​ My browser notifications are not showing up. What do I check?
+Work through these in order:
+Your operating system. Mac: System Settings → Notifications → your browser. Windows: Settings → System → Notifications. This is the most common cause.
+Do Not Disturb or Focus. Make sure it is off.
+Your browser's site settings for TopstepX. Notifications should be set to Allow, not Block or Ask.
+Never saw a permission prompt? Your browser may have suppressed it. This happens in Chrome after you dismiss a few prompts on any site. Reset the notification permission for TopstepX in site settings, then tick the option on the alert again.
+The basics. Confirm the alert is still active with the option ticked, that you enabled notifications on this computer, and that your browser is still running.
+Still nothing? Contact Trader Support and tell us which browser and operating system you are using.
+Notifications on Mobile
+Can I get browser notifications on my phone or tablet?
+Not supported. Browser notifications are built for a desktop browser, and that's the only setup Trader Support can troubleshoot. The steps below are a courtesy if you want to try anyway, but a desktop browser is the reliable option.
+Android
+In Chrome, tap the 3-dot menu → Settings → Site settings → Notifications. Make sure notifications are on and TopstepX is not in the Blocked list.
+Open Android Settings → Apps → Chrome → Notifications and allow notifications for Chrome.
+In Settings → Apps → Chrome → Battery, set it to Unrestricted. Battery saver can stop background notifications.
+In TopstepX, create or edit an alert, tick the browser notification option, and tap Allow when Android asks.
+Leave Chrome running in the background. Swipe it closed and notifications stop.
+iPhone and iPad
+Safari cannot send notifications from a normal browser tab on iOS. You have to add TopstepX to your home screen first. Needs iOS 16.4 or later.
+Open TopstepX in Safari and sign in. It has to be Safari.
+Tap the Share button → Add to Home Screen → Add.
+Close Safari completely, then open TopstepX from the new home screen icon. Notifications only work when you open it from that icon.
+Create or edit an alert and tick the browser notification option. Tap Allow when iOS asks.
+Confirm it stuck: Settings → Notifications → find TopstepX → make sure Allow Notifications is on.
+If TopstepX is not in your iOS notification settings at step 5, the home screen install did not register. Delete the icon and start over from step 1.
+​ Can I receive alerts by email or SMS?
+No email or SMS at this time. On a desktop computer, browser notifications cover you outside the platform. More updates are planned.
+Related Articles
+TopstepX™ API Access
+Risk Adjustments: High Risk/High Volatility
+Topstep Pricing and Payment Questions
+TopstepX™
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Your Privacy Choices

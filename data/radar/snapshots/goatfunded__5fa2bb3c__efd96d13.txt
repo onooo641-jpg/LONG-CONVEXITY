@@ -1,0 +1,330 @@
+Trading rules | Goat Funded Trader FAQ's
+Help Center / Rules / Trading rules
+Trading rules
+Allowed and not allowed News and weekends Trading days and consistency Prohibited practices
+In this tab
+Is hedging allowed?
+Can I use Expert Advisors (EAs)?
+Copy trading and signals
+Does Goat Funded Trader Allow "All or Nothing" Trading Strategies?
+What is the minimum holding time for trades?
+Is it Mandatory to use stop loss and take profit?
+GOAT Trade Copier: how it works and what it costs
+How does the 80% margin rule work?
+Is hedging allowed?
+No, hedging is strictly prohibited. This includes:
+Hedging within the same trading account.
+Hedging between multiple accounts owned by the same trader.
+Hedging between accounts owned by different traders.
+Hedging between a GoatFundedTrader (GFT) account another Firm’s account, either if the two accounts are owned by the same person or by two different people.
+Hedging is defined as opening two opposite positions on the same asset, regardless of lot size or calculated risk. This rule is in place to maintain fair and transparent trading practices and to protect the integrity of our trading environment.
+If we detect any hedging activity—especially between a GFT account and an external firm—the account will be breached immediately, and the user will be permanently banned from our platform. In the case of a Simulated Funded Account, the trader will not be eligible for any rewards.
+Can I use Expert Advisors (EAs)?
+You can use an Expert Advisor only if you developed it yourself. Third-party EAs are not allowed at any time. This includes purchased, shared and off-the-shelf EAs, and any EA marketed to pass evaluations. Our team has the right to request proof of ownership at any time, for example the source code. If you cannot provide it, the account is treated as in breach.
+High-frequency trading (HFT) systems and Gold Arbitrage EAs are not allowed in any case, and your EA must still follow the prohibited trading practices rule.
+Trade copier EAs count as third-party EAs, so they are not allowed either. To copy trades between your Goat Funded Trader accounts, use the GOAT Trade Copier in the Trader Dashboard. See Copy trading and signals .
+Note: From October 6, 2026, VPNs, VPSs, proxies and any other hosting service are not allowed during trading on any account. If your EA needs a VPS to run, you cannot use it on a Goat Funded Trader account. See Can I use a VPN, VPS, proxy, or any other hosting service while trading?
+Updated 12 October 2026
+Copy trading and signals
+Signal services and copying trades from other people are not permitted on GOAT Funded Trader accounts.
+Copying trades from signal providers, trading groups, third-party services, or other traders is considered a prohibited trading practice and may result in account termination.
+Copy trading is allowed only through the GOAT Trade Copier.
+You can copy trades between your own Goat Funded Trader accounts, including from one evaluation account to another and between evaluation and funded accounts in either direction.
+You must use the GOAT Trade Copier, which you can find in the Trader Dashboard. It works on MT5, Match-Trader and TradeLocker. This rule applies from October 12, 2026.
+Copying trades from an external account is not allowed, even if the external account is your own. Any other trade copier, copy trading tool or copier EA is not allowed either. Using one is a prohibited trading practice and may result in account termination.
+All trading decisions must be made independently by the account holder. Traders are expected to manage their own positions and execute trades based on their own analysis and judgment.
+If you are unsure whether a particular service or trading method is permitted, please contact our Support team before using it.
+Updated 11 November 2026
+Does Goat Funded Trader Allow "All or Nothing" Trading Strategies?
+At Goat Funded Trader, we have a strict policy against high-risk, "all or nothing" trading strategies. Our goal is to support traders who demonstrate strong risk management, consistent performance, and the ability to generate sustainable profits. These are the traders we partner with, offering simulated funded accounts of up to $400,000.
+We define gambling-style trading as any trade where more than 80% of available margin is used in a trading idea. Such excessive risk exposure indicates a lack of proper risk management, which goes against the principles we uphold.
+For worked examples and how to check your margin, see How does the 80% margin rule work?
+Trading strategies that rely on high-risk, all-or-nothing approaches are not permitted. If a trader engages in such activities, it may lead to profit deductions or phase resets.
+At Goat Funded Trader, we prioritize disciplined and strategic trading to ensure long-term success in the financial markets.
+Updated 17 November 2026
+What is the minimum holding time for trades?
+For funded accounts, any profit from a trade that is open for less than the minimum holding time is considered invalid and is removed when a payout is requested.
+The minimum holding time depends on when the account was purchased:
+Purchased before 6 October 2026 (00:00 UTC): 2 minutes (120 seconds)
+Purchased from 6 October 2026 (00:00 UTC) onward: 1 minute (60 seconds)
+A funded account follows the purchase date of the challenge it came from. If you reset a challenge that was purchased before 6 October 2026, it stays at 2 minutes, even if the reset happens after that date.
+Any losses from trades closed before the minimum holding time remain and are the trader's responsibility.
+This means you may open and close positions faster than the minimum holding time if you wish. Profits from those trades are not included in payout calculations, while losses still count.
+Having profits removed for this reason is not a breach or violation of funded account rules. It only affects the payout amount.
+This rule applies only to funded accounts and does not affect evaluation (challenge) accounts.
+This policy helps ensure fair trading conditions and aligns with the liquidity and risk management standards required for consistent and sustainable trading across all funded traders.
+Updated 5 October 2026
+Is it Mandatory to use stop loss and take profit?
+No, is not. While we highly encourage utilizing stop losses and take profits as part of disciplined risk management, we do not make them mandatory.
+GOAT Trade Copier: how it works and what it costs
+The GOAT Trade Copier copies trades from one of your Goat Funded Trader accounts into your other Goat Funded Trader accounts. You trade one account and the others follow it.
+From October 12, 2026, the GOAT Trade Copier is the only way copy trading is allowed on Goat Funded Trader accounts.
+What it does
+You choose one lead account . This is the account you trade. Then you tick every account that should follow it.
+Each follower has its own sizing, its own settings and its own copy log. Stopping one follower leaves the others running.
+It works on MetaTrader 5, Match-Trader and TradeLocker , and it copies between them.
+Each account gets its own cloud terminal. You don't install anything, and copying continues while your computer is off.
+Our risk checks recognise trades copied through the GOAT Trade Copier, so they are not treated as prohibited copy trading.
+Which accounts can I copy between?
+You can copy between your own Goat Funded Trader evaluation and funded accounts in any direction:
+Evaluation to Evaluation
+Evaluation to Funded
+Funded to Evaluation
+Funded to Funded
+These are not allowed :
+copying from an external account, even if the external account is your own
+copying trades from other traders, signal providers or trading groups
+using any other trade copier, copy trading tool or copier EA
+Each of these is a prohibited trading practice and may result in account termination. See Copy trading and signals .
+What does it cost?
+$2 per account per month. Every account you connect counts, including your lead account.
+You need at least two accounts to copy (one lead and one follower), so the lowest price is $4 per month .
+Accounts connected Monthly price
+2 (1 lead + 1 follower) $4
+3 (1 lead + 2 followers) $6
+5 (1 lead + 4 followers) $10
+There is no limit on how many accounts you can connect.
+The copier is a subscription, so you can only pay by card . Crypto and other payment methods are not accepted.
+How do I set it up?
+Watch the 3-minute video below, or follow the steps under it.
+Log in to your Trader Dashboard and open the Copier page at app.goatfundedtrader.com/copier .
+Subscribe. Choose how many accounts you want to connect, including your lead account , and pay by card.
+Pick your lead account. This is the account you will trade.
+Tick every account that should follow it.
+Choose the sizing for each follower (see below). You can also set a lot cap, symbol filters and a copy delay.
+Trade your lead account as usual. Your followers copy each trade automatically.
+You can change the sizing and settings while the copier is running.
+How are copied trades sized?
+You choose a sizing mode for each follower, so two followers of the same lead can be sized differently. There are six modes:
+Equity to equity
+Lot multiplier
+Risk multiplier
+Fixed lot
+Fixed % risk
+Fixed risk amount
+In short, you can match each follower to the lead by equity, multiply the lead's lot size, use a fixed lot size, or fix the risk per trade.
+On top of the sizing mode, each follower can have a lot cap (the largest lot size the copier will open on that account), symbol filters (which symbols get copied) and a copy delay .
+Want the same lot size on every account? Use Lot multiplier set to 1.
+Do my account rules still apply?
+Yes. Every account still follows the rules of its own model. Limits such as daily drawdown, maximum drawdown, floating loss and consistency are checked on each account separately.
+A trade that is fine on a $100,000 lead can break the rules on a $5,000 follower. Set each follower's sizing and lot cap so it stays inside its own limits.
+Does the VPS and IP rule apply to the copier?
+No. The GOAT Trade Copier runs in the cloud, and trades it copies into your Goat Funded Trader accounts are not treated as use of a hosting service. Any other copier running on a VPS or hosted environment is still prohibited. See the IP Address and Account Access Policy .
+Frequently asked questions
+I pay for another trade copier. Can I keep using it until my subscription runs out?
+No. From October 12, 2026, using any other trade copier is a prohibited trading practice. Switch to the GOAT Trade Copier.
+Is there a limit on how many accounts I can connect?
+No. You pay $2 per month for each account you connect, including the lead.
+Can my lead and followers be on different platforms?
+Yes. The copier copies between MT5, Match-Trader and TradeLocker in any combination.
+Does the copier copy pending orders (limit and stop orders)?
+Yes, once they are triggered. While a limit or stop order is waiting on your lead account, nothing appears on your followers. When the order is triggered on the lead, the copier opens the trade on every follower.
+This is on purpose. If the copier placed your pending orders on the followers straight away, an order could be triggered on a follower but not on the lead. The follower would then hold a trade your lead account doesn't have.
+Something isn't working. What should I do?
+Contact Support with your lead account number and a screenshot of the Copier page.
+Updated 11 November 2026
+How does the 80% margin rule work?
+You can't use more than 80% of your account's margin at once. This article shows how the margin on a trade is worked out, how traders go over the limit without noticing, and where to check your margin before you trade.
+The rule
+Margin usage = margin used by all your open trades ÷ your equity × 100
+Equity includes the floating profit or loss on your open trades, so this figure changes while your trades are open.
+Every open trade counts. If you have three trades open at the same time, their margin is added together and checked as one total.
+How much margin a trade uses
+Margin for one trade = lot size × contract size × price ÷ leverage
+Forex: 1 lot is 100,000 units of the first currency in the pair.
+Gold (XAUUSD): 1 lot is 100 ounces.
+Indices and other symbols: contract sizes differ. Open the symbol's specification in your platform to see it.
+Leverage depends on the phase (see What is the account leverage? ):
+Evaluation Funded
+Forex 1:100 1:50
+Indices 1:20 1:10
+Commodities, incl. gold 1:20 1:10
+Crypto 1:2 1:2
+Stocks 1:5 1:5
+Funded accounts start at half the evaluation leverage on forex, indices and commodities. The same trade uses twice as much margin once you're funded.
+Example 1: one trade that is too big
+$10,000 evaluation account. Gold is at $4,000 (a round number for the example). Leverage is 1:20.
+1 lot of gold uses 100 × $4,000 ÷ 20 = $20,000 of margin.
+0.30 lot uses $6,000. That's 60% of $10,000, so it's within the rule.
+0.45 lot uses $9,000. That's 90%, over the rule.
+Example 2: several small trades together
+Same account, same price. You open three gold trades of 0.15 lot each.
+Each one uses $3,000, which is 30% on its own.
+Together they use $9,000, which is 90%. Over the rule.
+The rule looks at the total, not at each trade.
+Example 3: the same lot size after you're funded
+$10,000 funded account at 1:10. Gold at $4,000.
+1 lot of gold uses 100 × $4,000 ÷ 10 = $40,000 of margin.
+0.25 lot uses $10,000. That's 100%. Over the rule.
+In the evaluation, the same 0.25 lot used $5,000, or 50%. A lot size that was fine in your evaluation can break the rule on your funded account.
+Example 4: a losing trade pushes you over
+$10,000 funded account at 1:50. You open 3.9 lots of USDJPY. The dollar is the first currency in the pair, so 1 lot is $100,000.
+Margin: 3.9 × $100,000 ÷ 50 = $7,800. That's 78%, within the rule.
+The trade goes $300 against you. Your equity drops to $9,700.
+$7,800 ÷ $9,700 = 80.4%. You're over the rule without opening anything new.
+If a floating loss alone takes you over, your trades were already close to the limit when you opened them.
+Where to check your margin
+Trading platforms don't show margin usage. They show Margin Level, which uses the same two numbers the other way round:
+Margin Level = equity ÷ margin × 100
+Margin usage (our rule) Margin Level (your platform)
+50% 200%
+80% 125%
+100% 100%
+If your Margin Level is above 125%, you're under 80%.
+MT5 desktop. Open the Toolbox (Ctrl+T) and go to the Trade tab. The line above your open trades shows Balance, Equity, Margin, Free Margin and Margin Level. Margin Level only appears while a trade is open.
+MT5 mobile. Open the Trade tab. Balance, Equity, Margin, Free margin and Margin level are at the top.
+cTrader. The TradeWatch panel at the bottom of the screen shows Balance, Equity, Margin, Free Margin and Margin Level.
+What happens if you go over
+Going over 80% doesn't close your trade or stop you opening new ones. Your trader dashboard shows flagged trades in the Flagged so far card, but the final amount is set when our Risk team reviews your payout.
+On a funded account, our Risk team removes the profit made on flagged trades when it reviews your payout. Only profit is removed. A flagged trade that closed at a loss stays in your results. Depending on the case, our Risk team can instead move a funded account back to an evaluation phase.
+On an evaluation account, nothing happens to your account while you trade. Moving from Phase 1 to Phase 2 is automatic. Our Risk team reviews flagged trades from all phases together when you pass your final phase, before your account goes live.
+Risk looks at how much of your profit came from flagged trades. If it's a small amount, your pass stands. If it's a large part of your profit, Risk removes that profit and your pass isn't validated. You get a new account for your final phase (a new Phase 2 on a 2-Step, a new account on a 1-Step), and your trading days start again:
+If you still have profit left after the deduction, it carries over to the new account.
+If the deduction would take you below your starting balance, the new account starts at your starting balance.
+Example: you pass Phase 2 of a $5,000 evaluation at $5,400. $350 of your profit came from flagged trades. Risk removes the $350 and your new Phase 2 starts at $5,050. If the flagged trades had made $500, removing it would leave you below $5,000, so your new Phase 2 would start at $5,000.
+See also: Does Goat Funded Trader allow "All or Nothing" trading strategies?
+Updated 18 November 2026
+In this tab
+Is News Trading allowed?
+Can I hold trades over the weekend?
+Do you allow trading the weekend gap?
+Is News Trading allowed?
+Can I trade during news events with Goat Funded Trader?
+Yes. Trading during news events is allowed and does not break any Goat Funded Trader rules.
+Is there a limit on profit from trades around high-impact news?
+Yes. A trade opened or closed within 5 minutes before or after a high-impact news release (marked with a red folder on ForexFactory.com or Myfxbook.com) has a maximum profit per trade. The maximum depends on when you purchased the account:
+Purchased on or after 10 November 2026: 3% of the account's initial balance per trade
+Purchased before 10 November 2026: 1% of the account's initial balance per trade
+This includes trades closed manually or automatically through:
+Stop Loss
+Take Profit
+Pending Orders
+Which limit applies to my account?
+The purchase date decides it, and nothing else. Accounts purchased before 10 November 2026 keep the 1% limit. They do not move to 3%.
+A funded account follows the purchase date of the challenge it came from. If you bought the challenge before 10 November 2026 and pass after that date, your funded account stays at 1%. If you reset an account that was purchased before 10 November 2026, it also stays at 1%, even if the reset happens after that date.
+Does this policy apply to both the challenge and funded phases?
+Yes. Both limits apply to the challenge phase and the funded phase.
+What happens if a trade makes more than the limit?
+The limit applies to each trade separately. If a single trade in the news window makes more than your limit, only the profit above the limit is removed. You keep the profit up to the limit.
+Example on a $100,000 account: a trade opened inside the 5-minute news window closes with $4,500 profit.
+Purchased on or after 10 November 2026: the limit is $3,000. You keep $3,000 and $1,500 is removed.
+Purchased before 10 November 2026: the limit is $1,000. You keep $1,000 and $3,500 is removed.
+This is not a breach and there is no penalty on the account. The deduction usually happens during account reviews.
+Updated 10 November 2026
+Can I hold trades over the weekend?
+Yes, you can hold trades over the weekend.
+Do you allow trading the weekend gap?
+At Goat Funded Trader, we fully allow traders to hold trades over the weekend. However, we do not allow opening trades solely to take advantage of the price gap that occurs when the market reopens on Monday.
+Any trades opened during the last three (3) market hours on Friday and closed within the first three (3) market hours on Monday will be subject to review. For funded accounts only, any profits generated from these trades will be removed.
+This does not constitute a violation of any kind and will not result in penalties or account termination. It is strictly a profit adjustment.
+We encourage traders to focus on consistent, strategy-based performance rather than attempting to exploit weekend market gaps.
+In this tab
+What Time Does A Trading Day Start?
+What is considered a Trading Day?
+What are the Minimum Profitable Days?
+What Is the Consistency Rule?
+Is there any inactivity limit?
+What Time Does A Trading Day Start?
+Trading days are calculated based on 5 PM EST.
+A new trading day starts at 5:00:01 PM EST and runs until 4:59:59 PM EST the next day.
+A trade counts toward the trading day in which it is closed. A trade closed after 5 PM EST counts toward the next day's trading day.
+For example:
+A trade closed on Monday at 4 PM EST counts toward Monday's trading day.
+A trade closed on Monday at 6 PM EST counts toward Tuesday's trading day.
+This timing aligns with the global forex market session rollover, ensuring consistency across all trader accounts.
+What is considered a Trading Day?
+A trading day runs from 5 PM EST to 5 PM EST.
+A day is counted as a trading day when you close at least one position during it and the minimum daily profit requirement for your model and phase is met. Opening a trade without closing it does not count.
+Where a profit requirement applies, the day must close with a profit of at least 0.5% of the initial account balance, net of fees and commissions. These days are called minimum profitable days.
+The number of days required for each model is listed in What are the Minimum Profitable Days?
+What are the Minimum Profitable Days?
+Minimum Profitable Days by Model
+To count as a Minimum Profitable Day , the trader must generate a minimum profit of 0.5% of the initial account balance, net of fees and commissions.
+Evaluation models (funded stage, per payout)
+1 Step: 4 days
+2-Step Standard: 3 days, or 4 days for accounts purchased from 25 July 2026
+2 Step GOAT: 3 days, or 4 days for accounts purchased from 25 July 2026
+2-Step Premium: 7 days
+2-Step PRO: 3 days
+3 Step: no requirement during the evaluation phases. In the funded stage, 4 days
+Pay Later: no requirement during evaluation. Once funded, 3 days, or 5 days per payout for accounts purchased from 5 September 2026
+GOAT Blitz: 5 days in evaluation, and 5 days per payout
+Instant funding models
+Instant GOAT: 5 days
+Instant PRO: 5 days
+Instant Premium: 5 days
+Instant HERO: 6 days
+Goat 1$: 3 days
+Your profitable day count resets after each payout. A new trading day starts at 5 PM EST.
+Worked example
+Initial balance = $100,000 0.5% minimum = $500 So the day counts as a minimum profitable day only if the trader makes at least +$500 during that trading day.
+Want a 90% profit split? Complete 3 extra minimum profitable days before your payout with Payout Boost. It isn't available on Goat 1$, Instant Daily or accounts with the 100% split add-on. See All about Rewards and Profit Splits .
+Models requiring Trading Days without the 0.5% valid-day rule
+(No minimum profit is required for a day to count toward the 7 trading days).
+Instant Standard Model: 7 Trading Days
+Models with no trading day requirement
+3 Step Model: No trading day requirement during Evaluation Phase
+Additional: A new trading days reset at 5 PM EST.
+Updated 11 November 2026
+What Is the Consistency Rule?
+Why Do We Have a Consistency Rule?
+The Consistency Rule is designed to encourage steady and sustainable trading performance. It helps ensure that traders are not relying on one unusually large trading day.
+What Is the Consistency Rule?
+The Consistency Rule means that no single trading day can account for X% or more of your total profits during the payout period.
+The consistency percentage may vary depending on the challenge or funding model.
+You can check whether your challenge has a Consistency Rule in our detailed model FAQs: https://help.goatfundedtrader.com/en/collections/11811982-models
+Example
+For example, if the Consistency Rule is 15% and your highest profit day should not exceed 15% of the total profit earned.
+If your total profit earned is $5000, your highest trading day should not exceed (5000 X 15% ) = $750.
+What Happens If I Do Not Meet the Consistency Rule?
+Not meeting the Consistency Rule will not result in account termination or an account breach. However, you will not be able to request a payout until your highest profit day is below X% of your total profits for the payout period.
+What Should I Do Next?
+You should continue trading and generating profits until your highest profit day represents less than X% of your total profits.
+Keep in mind that in order to decrease the consistency %, your max profit should be less than your current highest trading day.
+How Are Partial Trades Counted for the Consistency Rule?
+Each partial close counts on the trading day it happens. If you close one position in several parts on different days, the profit or loss from each part goes to the day that part was closed, and the consistency check uses those daily figures. No single day carries the whole trade.
+Example of Partial Trade Calculation
+You open one large trade and close a third on Monday, a third on Tuesday and the rest on Wednesday. Monday's part counts toward Monday's profit, Tuesday's toward Tuesday, Wednesday's toward Wednesday.
+Trading days run 5 PM to 5 PM EST, so a partial close at 6 PM EST on Monday counts toward Tuesday's trading day.
+Updated 12 September 2026
+Is there any inactivity limit?
+Understanding GoatFundedTrader's Inactivity Policy
+If no trades are placed on your account for 30 consecutive days, it will be breached due to inactivity. This rule applies to both Evaluation and Simulated Funded Accounts. Once breached, the account cannot be reinstated, and the fee will not be refunded. Make sure to stay active to keep your account in good standing.
+To ensure the account remains active, consider executing at least one trade every 29 days to provide a buffer.
+Common Questions About Inactivity
+Is there a minimum number of trading days requirement each month?
+No, the inactivity policy is solely based on ensuring at least one trade within a 30-day period. The monthly minimum trading day requirements apply only when progressing accounts or requesting payouts.
+Updated 27 July 2026
+In this tab
+What are Prohibited Trading Practices?
+Risk limitation Policy
+What happens if a rule violation is detected on my account?
+What are Prohibited Trading Practices?
+Exploit errors or latency in the pricing and/or platform(s) provided by the Broker
+Utilize non-public and/or insider information
+Front-run trades placed elsewhere
+Trade in any way that jeopardizes the relationship GoatFundedTrader has with a broker or may result in the cancelling of trades
+Trade in any way that creates regulatory issues for the Broker
+All-0r-Nothing Trading, where you can lose the account in one trade
+If we decide that your trading style is not suitable for a long-term collaboration, and no other policy violation is found, we will close your account or accounts and refund your fee in full
+We strictly prohibit hedging positions within the same trading account, between accounts owned by the same traders, and between accounts owned by different traders. Hedging is defined as the act of opening two opposite positions on the same asset, regardless of differences in lot size or calculated risk. This policy is in place to ensure fair and transparent trading practices within our community and to uphold the integrity of our trading environment. Hedging can lead to confusion in risk management and may create unfair advantages or disadvantages for traders.
+Utilize any third-party strategy, Expert Advisor, off-the-shelf strategy or one marketed to pass assessment accounts will lead to a breach of your account or reward. Only EAs you developed yourself are allowed, and our team has the right to request proof of ownership, such as the source code, at any time
+Utilize one strategy to pass an assessment and then utilizing a different strategy in a simulated funded account, refers only to the use of EA in assessment and manual trading in simulated Funded stage and vice versa, as determined by GoatFundedTrader in its sole discretion
+Copying trades from other traders, signal providers or third-party services is prohibited. You may copy trades between your own Goat Funded Trader accounts, including between evaluation and funded accounts, only through the GOAT Trade Copier in the Trader Dashboard. Copying from external accounts and using any other trade copier are prohibited. This rule applies from October 12, 2026. After successfully passing the evaluation process, you have the flexibility to either combine the Funded accounts into a single account or keep them separate, based on your personal preference.
+If Goat Funded Trader detects that your trading constitutes Prohibited Trading Practices, your participation in the program will be terminated, the fee you paid will not be refunded, and any profits or pending payouts will not be paid. Additionally, and before you shall receive a simulated funded account, your trading activity under these Terms and Conditions shall be reviewed by Goat Funded Trader to determine whether such trading activity constitutes Prohibited Trading. In the case of Prohibited Trading, you shall not receive a simulated funded account or, if trading already trading in a simulated funded account, we may close that account, in which case you will forfeit any profits therein.
+Martingale Trading - Martingale trading strategies are strictly prohibited on all Goat Funded Trader accounts.
+This includes any strategy that involves increasing lot sizes or trade volume after a loss in an attempt to recover previous losses. Such strategies are considered high-risk and violate our risk management and responsible trading policies .
+Using Martingale or similar grid-based recovery systems may result in account termination and forfeiture of any associated profits or payouts .
+We encourage all traders to use consistent, risk-managed strategies that align with our trading rules and sustainable trading practices.
+Abuse of the Simulated Environment
+Clear abuse of the simulated environment is characterized by continuously executing large-volume trades without a clear or logical trading strategy. This behaviour disregards fundamental market analysis and risk management practices and does not provide us with viable trading data. Accounts engaging in consistent, high volume trades without a coherent strategy may be flagged for review. This allows us to assess and take appropriate action to maintain a fair trading environment consistent with our mission of obtaining credible trading data. Accounts identified to be consistently executing large-volume trades without a clear strategy may face warnings, temporary limitations on trading activities, or in severe cases, suspension, or termination to uphold the platform's trading policies.
+Updated 12 October 2026
+Risk limitation Policy
+Goat Funded Trader reserves the right to set specific risk limitations on any trader’s account if we believe it is necessary to maintain responsible trading practices. Our team monitors trading behavior to ensure it aligns with our standards for a safe and fair trading environment. If we observe patterns of excessive risk-taking, we may impose limitations, such as restricting risk per trade idea to a maximum of 1% of the account’s initial balance.
+Consequences of Non-Compliance with Risk Limitations:
+If a trader does not comply with these imposed risk restrictions after being notified, it will result in an immediate breach of the account. Accounts breached under these circumstances are ineligible for any rewards, and no further entitlements will be granted.
+These risk measures are in place to encourage a disciplined approach to trading and to protect account stability. Restrictions may be reconsidered if consistent adherence to safe risk practices is observed over time.
+Updated 27 July 2026
+What happens if a rule violation is detected on my account?
+If any breach or prohibited practice violation is detected on your account, that account will be suspended and rendered ineligible for future rewards or to advance to the next stage.
+Back to top

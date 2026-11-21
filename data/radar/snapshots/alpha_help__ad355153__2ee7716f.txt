@@ -1,0 +1,22 @@
+Getting Started with Deepchart | Alpha Futures Limited Help Center Skip to main content
+Search for articles...
+All Collections
+Getting Started
+Getting Started with Deepchart
+Getting Started with Deepchart
+How to log into your Deepchart Account
+B
+Written by Benjamin Chaffee
+September 16, 2026
+Alpha Futures is excited to offer Deepchart, a trading platform by Volumetrica Trading. Alpha Futures Traders get complimentary access to the DeepChart "OrderFlow" package, upgrading to the "Full" package is available for purchase on the Deepchart website.
+​
+To use this integration, you must have an Evaluation, or Qualified Account utilizing Deepchart.
+First, log in to Deepchart using the username and password provided in your dashboard in Account Information.
+​
+​
+You can launch DeepChart directly from your user dashboard with the "Launch Deepchart" button. You may also choose to sign in directly using this link .
+Once you have launched Deepchart, you will be prompted to sign in with the credentials provided in your “Account Info”.
+Once logged in, you MUST sign your Non-Professional Agreement before your account will receive real-time data or be able to trade on Deepchart . Be sure to select the 'Simulation' when prompted to select a Trading Mode.
+​
+Once you have selected Deepchart as your trading platform, you are successfully connected and can enjoy trading your Alpha Futures Account(s) on Deepchart! Be sure to select the correct account to trade on if you have multiple accounts. ​
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃

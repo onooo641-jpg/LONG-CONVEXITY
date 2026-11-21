@@ -1,0 +1,271 @@
+Privacy Policy - Quant Tekel
+Skip to content
+BLACK FRIDAY IS LIVE - 75% OFF with BLACK75 | OR 60% OFF + a FREE same-size account with BLACK60
+Funded
+CFDs
+Futures
+QT Cap
+Evaluations
+Affiliates
+FAQs
+Company
+Careers
+EN
+Sign In
+Get funded
+Evaluations
+Affiliates
+FAQs
+Company
+Careers
+Sign In
+Get funded
+Home
+Privacy Policy
+Privacy Policy
+This privacy notice for Quant Tekel (Pty) Limited (‘we’, ‘us’, or ‘our’), describes how and why we might collect, store, use, and/or share (‘process’) your information when you use our services (‘Services’), such as when you:
+Visit our website at / or any website of ours that links to this privacy notice
+Engage with us in other related ways, including any sales, marketing, or events
+Questions or concerns? Reading this privacy notice will help you understand your privacy rights and choices. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at support@qtfunded.com
+Summary of key points
+This summary provides key points from our privacy notice, but you can find out more details about any of these topics by clicking the link following each key point or by using our table of contents below to find the section you are looking for.
+What personal information do we process?  When you visit, use, or navigate our Services, we may process personal information depending on how you interact with us and the Services, the choices you make, and the products and features you use. Learn more about personal information you disclose to us.
+Do we process any sensitive personal information?
+We do not process sensitive personal information.
+Do we receive any information from third parties?
+We may receive information from public databases, marketing partners, social media platforms, and other outside sources. Learn more about information collected from other sources.
+How do we process your information?  We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent. We process your information only when we have a valid legal reason to do so. Learn more about how we process your information.
+In what situations and with which parties do we share personal information?  We may share information in specific situations and with specific third parties. Learn more about when and with whom we share your personal information.
+How do we keep your information safe?  We have organisational and technical processes and procedures in place to protect your personal information. However, no electronic transmission over the internet or information storage technology can be guaranteed to be 100% secure, so we cannot promise or guarantee that hackers, cybercriminals, or other unauthorised third parties will not be able to defeat our security and improperly collect, access, steal, or modify your information. Learn more about how we keep your information safe.
+What are your rights?  Depending on where you are located geographically, the applicable privacy law may mean you have certain rights regarding your personal information. Learn more about your privacy rights.
+How do you exercise your rights?  The easiest way to exercise your rights is by submitting a data subject access request, or by contacting us. We will consider and act upon any request in accordance with applicable data protection laws.
+Want to learn more about what we do with any information we collect? Review the privacy notice in full.
+Table Of Contents
+What Information Do We Collect?
+How Do We Process Your Information?
+What Legal Bases Do We Rely On to Process Your Personal Information?
+When and With Whom Do We Share Your Personal Information?
+Do We Use Cookies and Other Tracking Technologies?
+How Do We Handle Your Social Logins?
+How Long Do We Keep Your Information?
+How Do We Keep Your Information Safe?
+What Are Your Privacy Rights?
+Controls for Do-Not-Track Features
+Do United States Residents Have Specific Privacy Rights?
+Do Other Regions Have Specific Privacy Rights?
+Do We Make Updates to This Notice?
+How Can You Contact Us About This Notice?
+How Can You Review, Update, or Delete the Data We Collect From You?
+Marketing Attribution & Analytics
+What information do we collect?
+Personal information you disclose to us
+In Short: We collect personal information that you provide to us.
+We collect personal information that you voluntarily provide to us when you register on the Services, express an interest in obtaining information about us or our products and Services, when you participate in activities on the Services, or otherwise when you contact us.
+Personal Information Provided by You. The personal information that we collect depends on the context of your interactions with us and the Services, the choices you make, and the products and features you use. The personal information we collect may include the following:
+passwords
+usernames
+names
+phone numbers
+email addresses
+billing addresses
+debit/credit card numbers
+contact or authentication data
+contact preferences
+Sensitive Information. We do not process sensitive information.
+Payment Data. We may collect data necessary to process your payment if you make purchases, such as your payment instrument number, and the security code associated with your payment instrument. All payment data is stored by stripe. You may find their privacy notice link(s) here: https://stripe.com/en-gb/privacy.
+Social Media Login Data. We may provide you with the option to register with us using your existing social media account details, like your Facebook, Twitter, or other social media account. If you choose to register in this way, we will collect the information described in the section called ‘HOW DO WE HANDLE YOUR SOCIAL LOGINS?‘ below.
+All personal information that you provide to us must be true, complete, and accurate, and you must notify us of any changes to such personal information.
+Information automatically collected
+In Short: Some information — such as your Internet Protocol (IP) address and/or browser and device characteristics — is collected automatically when you visit our Services.
+We automatically collect certain information when you visit, use, or navigate the Services. This information does not reveal your specific identity (like your name or contact information) but may include device and usage information, such as your IP address, browser and device characteristics, operating system, language preferences, referring URLs, device name, country, location, information about how and when you use our Services, and other technical information. This information is primarily needed to maintain the security and operation of our Services, and for our internal analytics and reporting purposes.
+Like many businesses, we also collect information through cookies and similar technologies.
+The information we collect includes:
+Log and Usage Data. Log and usage data is service-related, diagnostic, usage, and performance information our servers automatically collect when you access or use our Services and which we record in log files. Depending on how you interact with us, this log data may include your IP address, device information, browser type, and settings and information about your activity in the Services (such as the date/time stamps associated with your usage, pages and files viewed, searches, and other actions you take such as which features you use), device event information (such as system activity, error reports (sometimes called ‘crash dumps’), and hardware settings).
+Device Data. We collect device data such as information about your computer, phone, tablet, or other device you use to access the Services. Depending on the device used, this device data may include information such as your IP address (or proxy server), device and application identification numbers, location, browser type, hardware model, Internet service provider and/or mobile carrier, operating system, and system configuration information.
+Location Data. We collect location data such as information about your device’s location, which can be either precise or imprecise. How much information we collect depends on the type and settings of the device you use to access the Services. For example, we may use GPS and other technologies to collect geolocation data that tells us your current location (based on your IP address). You can opt out of allowing us to collect this information either by refusing access to the information or by disabling your Location setting on your device. However, if you choose to opt out, you may not be able to use certain aspects of the Services.
+Information collected from other sources
+In Short: We may collect limited data from public databases, marketing partners, social media platforms, and other outside sources.
+In order to enhance our ability to provide relevant marketing, offers, and services to you and update our records, we may obtain information about you from other sources, such as public databases, joint marketing partners, affiliate programs, data providers, social media platforms, and from other third parties. This information includes mailing addresses, job titles, email addresses, phone numbers, intent data (or user behaviour data), Internet Protocol (IP) addresses, social media profiles, social media URLs, and custom profiles, for purposes of targeted advertising and event promotion. If you interact with us on a social media platform using your social media account (e.g. Facebook or Twitter), we receive personal information about you such as your name, email address, and gender. Any personal information that we collect from your social media account depends on your social media account’s privacy settings.
+How do we process your information?
+In Short: We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent.
+We process your personal information for a variety of reasons, depending on how you interact with our Services, including:
+To facilitate account creation and authentication and otherwise manage user accounts. We may process your information so you can create and log in to your account, as well as keep your account in working order.
+To deliver and facilitate delivery of services to the user. We may process your information to provide you with the requested service.
+To respond to user inquiries/offer support to users. We may process your information to respond to your inquiries and solve any potential issues you might have with the requested service.
+To send administrative information to you. We may process your information to send you details about our products and services, changes to our terms and policies, and other similar information.
+To fulfil and manage your orders. We may process your information to fulfil and manage your orders, payments, returns, and exchanges made through the Services.
+To enable user-to-user communications. We may process your information if you choose to use any of our offerings that allow for communication with another user.
+To protect our Services. We may process your information as part of our efforts to keep our Services safe and secure, including fraud monitoring and prevention.
+To save or protect an individual’s vital interest. We may process your information when necessary to save or protect an individual’s vital interest, such as to prevent harm.
+What Legal Bases Do We Rely On to Process Your Information?
+In Short: We only process your personal information when we believe it is necessary and we have a valid legal reason (i.e. legal basis) to do so under applicable law, like with your consent, to comply with laws, to provide you with services to enter into or fulfil our contractual obligations, to protect your rights, or to fulfil our legitimate business interests.
+If you are located in the EU or UK, this section applies to you.
+The General Data Protection Regulation (GDPR) and UK GDPR require us to explain the valid legal bases we rely on in order to process your personal information. As such, we may rely on the following legal bases to process your personal information:
+Consent. We may process your information if you have given us permission (i.e. consent) to use your personal information for a specific purpose. You can withdraw your consent at any time. Learn more about withdrawing your consent.
+Performance of a Contract. We may process your personal information when we believe it is necessary to fulfil our contractual obligations to you, including providing our Services or at your request prior to entering into a contract with you.
+Legitimate Interests. We may process your information when we believe it is reasonably necessary to achieve our legitimate business interests and those interests do not outweigh your interests and fundamental rights and freedoms. For example, we may process your personal information for some of the purposes described in order to:
+Diagnose problems and/or prevent fraudulent activities
+Legal Obligations. We may process your information where we believe it is necessary for compliance with our legal obligations, such as to cooperate with a law enforcement body or regulatory agency, exercise or defend our legal rights, or disclose your information as evidence in litigation in which we are involved.
+Vital Interests. We may process your information where we believe it is necessary to protect your vital interests or the vital interests of a third party, such as situations involving potential threats to the safety of any person.
+If you are located in Canada, this section applies to you.
+We may process your information if you have given us specific permission (i.e. express consent) to use your personal information for a specific purpose, or in situations where your permission can be inferred (i.e. implied consent). You can withdraw your consent at any time.
+In some exceptional cases, we may be legally permitted under applicable law to process your information without your consent, including, for example:
+If collection is clearly in the interests of an individual and consent cannot be obtained in a timely way
+For investigations and fraud detection and prevention
+For business transactions provided certain conditions are met
+If it is contained in a witness statement and the collection is necessary to assess, process, or settle an insurance claim
+For identifying injured, ill, or deceased persons and communicating with next of kin
+If we have reasonable grounds to believe an individual has been, is, or may be victim of financial abuse
+If it is reasonable to expect collection and use with consent would compromise the availability or the accuracy of the information and the collection is reasonable for purposes related to investigating a breach of an agreement or a contravention of the laws of Canada or a province
+If disclosure is required to comply with a subpoena, warrant, court order, or rules of the court relating to the production of records
+If it was produced by an individual in the course of their employment, business, or profession and the collection is consistent with the purposes for which the information was produced
+If the collection is solely for journalistic, artistic, or literary purposes
+If the information is publicly available and is specified by the regulations
+When and With Whom Do We Share Your Personal Information?
+In Short: We may share information in specific situations described in this section and/or with the following third parties.
+We may need to share your personal information in the following situations:
+Business Transfers.  We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.
+Affiliates.  We may share your information with our affiliates, in which case we will require those affiliates to honour this privacy notice. Affiliates include our parent company and any subsidiaries, joint venture partners, or other companies that we control or that are under common control with us.
+Do We Use Cookies and Other Tracking Technologies? In Short: We may use cookies and other tracking technologies to collect and store your information.
+We may use cookies and similar tracking technologies (like web beacons and pixels) to access or store information.
+How Do We Handle Your Social Logins?
+In Short: If you choose to register or log in to our Services using a social media account, we may have access to certain information about you.
+Our Services offer you the ability to register and log in using your third-party social media account details (like your Facebook or Twitter logins). Where you choose to do this, we will receive certain profile information about you from your social media provider. The profile information we receive may vary depending on the social media provider concerned, but will often include your name, email address, friends list, and profile picture, as well as other information you choose to make public on such a social media platform.
+We will use the information we receive only for the purposes that are described in this privacy notice or that are otherwise made clear to you on the relevant Services. Please note that we do not control, and are not responsible for, other uses of your personal information by your third-party social media provider. We recommend that you review their privacy notice to understand how they collect, use, and share your personal information, and how you can set your privacy preferences on their sites and apps.
+How Long Do We Keep Your Information?
+In Short: We keep your information for as long as necessary to fulfil the purposes outlined in this privacy notice unless otherwise required by law.
+We will only keep your personal information for as long as it is necessary for the purposes set out in this privacy notice, unless a longer retention period is required or permitted by law (such as tax, accounting, or other legal requirements). No purpose in this notice will require us keeping your personal information for longer than   the period of time in which users have an account with us.
+When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymise such information, or, if this is not possible (for example, because your personal information has been stored in backup archives), then we will securely store your personal information and isolate it from any further processing until deletion is possible.
+How Do We Keep Your Information Safe?
+In Short: We aim to protect your personal information through a system of organisational and technical security measures.
+We have implemented appropriate and reasonable technical and organisational security measures designed to protect the security of any personal information we process. However, despite our safeguards and efforts to secure your information, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure, so we cannot promise or guarantee that hackers, cybercriminals, or other unauthorised third parties will not be able to defeat our security and improperly collect, access, steal, or modify your information. Although we will do our best to protect your personal information, transmission of personal information to and from our Services is at your own risk. You should only access the Services within a secure environment.
+What Are Your Privacy Rights?
+In Short: In some regions, such as the European Economic Area (EEA), United Kingdom (UK), Switzerland, and Canada, you have rights that allow you greater access to and control over your personal information. You may review, change, or terminate your account at any time.In some regions (like the EEA, UK, Switzerland, and Canada), you have certain rights under applicable data protection laws. These may include the right (i) to request access and obtain a copy of your personal information, (ii) to request rectification or erasure; (iii) to restrict the processing of your personal information; (iv) if applicable, to data portability; and (v) not to be subject to automated decision-making. In certain circumstances, you may also have the right to object to the processing of your personal information. You can make such a request by contacting us by using the contact details provided in the section  ‘HOW CAN YOU CONTACT US ABOUT THIS NOTICE?‘  below.We will consider and act upon any request in accordance with applicable data protection laws.If you are located in the EEA or UK and you believe we are unlawfully processing your personal information, you also have the right to complain to your Member State data protection authority or UK data protection authority.If you are located in Switzerland, you may contact the Federal Data Protection and Information Commissioner.Withdrawing your consent: If we are relying on your consent to process your personal information, which may be express and/or implied consent depending on the applicable law, you have the right to withdraw your consent at any time. You can withdraw your consent at any time by contacting us by using the contact details provided in the section  ‘HOW CAN YOU CONTACT US ABOUT THIS NOTICE?‘  below.However, please note that this will not affect the lawfulness of the processing before its withdrawal nor, when applicable law allows, will it affect the processing of your personal information conducted in reliance on lawful processing grounds other than consent.Opting out of marketing and promotional communications: You can unsubscribe from our marketing and promotional communications at any time by clicking on the unsubscribe link in the emails that we send, or by contacting us using the details provided in the section ‘HOW CAN YOU CONTACT US ABOUT THIS NOTICE?‘ below. You will then be removed from the marketing lists. However, we may still communicate with you — for example, to send you service-related messages that are necessary for the administration and use of your account, to respond to service requests, or for other non-marketing purposes.Account InformationIf you would at any time like to review or change the information in your account or terminate your account, you can:
+Controls for Do-Not-Track Features
+Most web browsers and some mobile operating systems and mobile applications include a Do-Not-Track (‘DNT’) feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. At this stage no uniform technology standard for recognising and implementing DNT signals has been finalised. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this privacy notice.
+Do United States Residents Have Specific Privacy Rights?
+In Short:  If you are a resident of California, Colorado, Connecticut, Utah or Virginia, you are granted specific rights regarding access to your personal information.What categories of personal information do we collect?We have collected the following categories of personal information in the past twelve (12) months:
+Category
+Examples
+Collected
+Identifiers
+Contact details, such as real name, alias, postal address, telephone or mobile contact number, unique personal identifier, online identifier, Internet Protocol address, email address, and account name
+NO
+Personal information as defined in the California Customer Records statute
+Name, contact information, education, employment, employment history, and financial information
+NO
+Protected classification characteristics under state or federal law
+Gender and date of birth
+NO
+Commercial information
+Transaction information, purchase history, financial details, and payment information
+NO
+Biometric information
+Fingerprints and voiceprints
+NO
+Internet or other similar network activity
+Browsing history, search history, online behaviour, interest data, and interactions with our and other websites, applications, systems, and advertisements
+NO
+Geolocation data
+Device location
+NO
+Audio, electronic, visual, thermal, olfactory, or similar information
+Images and audio, video or call recordings created in connection with our business activities
+NO
+Professional or employment-related information
+Business contact details in order to provide you our Services at a business level or job title, work history, and professional qualifications if you apply for a job with us
+NO
+Education Information
+Student records and directory information
+NO
+Inferences drawn from collected personal information
+Inferences drawn from any of the collected personal information listed above to create a profile or summary about, for example, an individual’s preferences and characteristics
+NO
+Sensitive personal Information
+–
+NO
+We will use and retain the collected personal information as needed to provide the Services or for: Category B – As long as the user has an account with usWe may also collect other personal information outside of these categories through instances where you interact with us in person, online, or by phone or mail in the context of:
+Do Other Regions Have Specific Privacy Rights?
+In Short: You may have additional rights based on the country you reside in.
+Australia And New Zealand
+We collect and process your personal information under the obligations and conditions set by Australian Privacy Act 1988 and New Zealand’s Privacy Act 2020 (Privacy Act).
+This privacy notice satisfies the notice requirements defined in both Privacy Acts, in particular: what personal information we collect from you, from which sources, for what purposes, and other recipients of your personal information.
+If you do not wish to provide the personal information necessary to fulfill their applicable purpose, it may affect our ability to provide our services, in particular:
+offer you the products or services that you want
+respond to or help with your requests
+manage your account with us
+confirm your identity and protect your account
+At any time, you have the right to request access to or correction of your personal information. You can make such a request by contacting us by using the contact details provided in the section ‘ HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU? ‘
+If you believe we are unlawfully processing your personal information, you have the right to submit a complaint about a breach of the Australian Privacy Principles to the Office of the Australian Information Commissioner and a breach of New Zealand’s Privacy Principles to the Office of New Zealand Privacy Commissioner .
+Republic of South Africa
+At any time, you have the right to request access to or correction of your personal information. You can make such a request by contacting us by using the contact details provided in the section ‘ HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU? ‘
+If you are unsatisfied with the manner in which we address any complaint with regard to our processing of personal information, you can contact the office of the regulator, the details of which are provided below:
+The Information Regulator (South Africa)
+General enquiries: enquiries@inforegulator.org.za
+Complaints (complete POPIA/PAIA form 5): PAIAComplaints@inforegulator.org.za & POPIAComplaints@inforegulator.org.za
+Do We Make Updates to This Notice?
+In Short: Yes, we will update this notice as necessary to stay compliant with relevant laws.
+We may update this privacy notice from time to time. The updated version will be indicated by an updated ‘Revised’ date and the updated version will be effective as soon as it is accessible. If we make material changes to this privacy notice, we may notify you either by prominently posting a notice of such changes or by directly sending you a notification. We encourage you to review this privacy notice frequently to be informed of how we are protecting your information.
+How Can You Contact Us About This Notice?If you have questions or comments about this notice, you may email us at  support@qtfunded.com or contact us by post at:Quant Tekel (Pty) Limited60 Noll Avenue Gatesville, Cape Town Western Cape, 7764 South Africa
+How Can You Review, Update, or Delete the Data We Collect From You?
+Based on the applicable laws of your country, you may have the right to request access to the personal information we collect from you, change that information, or delete it. To request to review, update, or delete your personal information, please fill out and submit a data subject access request.
+Marketing Attribution & Analytics
+We use our own first-party analytics and marketing-attribution tool to understand how visitors use our store and to measure which marketing touchpoints (ads, emails, referral links) lead to subscriptions or purchases. We operate this tool ourselves on our own infrastructure. It does not use third-party advertising pixels, and we do not sell or share your data with advertising networks such as Meta, Google or TikTok.
+What it collects — depending on your cookie choices and location, the tool may record: a random first-party browser identifier (a “visitor ID”); the pages and products you view, the actions you take, and when; the campaign parameters in the link you arrived from (e.g. UTM parameters or click identifiers); the website or service that referred you; your approximate country, derived from your IP address; and subscription and purchase events, including order value and currency.
+We store only the path of the pages you visit (e.g. /products/example) and an allow-listed set of campaign parameters — not full web addresses, form contents, payment details, or precise location. We do not use device fingerprinting.
+Cookies we set
+Cookie
+Purpose
+Expiry
+_qt_vid
+Random first-party visitor ID used to connect your activity into a single journey. Set only if you allow Analytics or Marketing attribution.
+180 days
+mt_consent
+Stores your cookie choices and the policy version.
+180 days
+mt_dnt
+Records that you opted out of non-essential tracking.
+180 days
+How your identity is linked — Before you identify yourself, your activity is linked only to the random visitor ID, not to your name or email. Because this can later be connected to you, we treat it as personal data (pseudonymous), not anonymous. If you subscribe, create an account, sign in, or make a purchase while you have allowed Marketing attribution, we may link your earlier activity to your customer record to see which marketing contributed to that action. For attribution we store your email address as a one-way encrypted (hashed) value; your ordinary email is used only for normal account and order purposes and is accessible only to authorised staff.
+Your choices and legal basis
+EU, EEA, UK and Switzerland: analytics and marketing attribution are off until you accept them in our cookie banner; our legal basis is your consent.
+Other regions: these may be on by default with this notice; you can opt out at any time.
+If your browser sends a Global Privacy Control (GPC) signal, we treat it as an opt-out.
+You can change or withdraw your choices at any time using the “Cookie settings” link on our site, and request a copy of your data or ask us to delete it from the same panel — or by contacting us at info@qtfunded.com .
+How long we keep it — Raw activity logs are kept for 90 days; IP addresses are used only to derive your country and are removed within 7 days; attribution history is kept for up to 13 months; cookies last up to 180 days. Order records are kept as required for our accounting and legal obligations; if you ask us to erase your data, we remove the personal details from them.
+Where it’s processed — This data is processed on our own infrastructure in the United States, with appropriate safeguards for international transfers (UK IDTA / EU Standard Contractual Clauses). It is not shared with advertising networks or data brokers.
+Similar Links
+Terms of Service
+Jurisdictional Notice
+New challenges, promo codes & trader tips - straight to your inbox.
+Subscribe
+Thanks — you're subscribed.
+Something went wrong. Please try again.
+QT Funded is a trading evaluation platform. QT Funded does not provide financial advice or act as a broker. All trading involves risk and you should only trade with funds you can afford to lose. Past performance is not indicative of future results. The information on this website is for general informational purposes only and should not be considered as financial advice.
+Jurisdictional Notice
+qtfunded.com does not offer or solicit its services in jurisdictions where such activities would be unlawful. Our virtual proprietary trading programs are not available to residents of Cyprus, Iran, North Korea, Sudan, Syria, Russia, or any other jurisdiction where the offering would be contrary to local laws or regulations. While we may onboard clients from the United States, MetaQuotes-based services (e.g., MT5) are not available to U.S. residents. U.S. clients may use alternative platforms such as TradeLocker.
+General Risk Disclaimer
+The content of this website is for general educational purposes only and does not constitute investment advice, a solicitation, or an offer to buy or sell any financial instruments. QTFunded, its affiliates, employees, and contractors do not make any representations regarding the suitability or profitability of any trading strategy or financial instrument. Trading involves significant risk. Individuals are solely responsible for their trading decisions. All content is provided “as is” without warranty of any kind, either express or implied. Quant Tekel shall not be liable for any direct, indirect, or consequential loss arising from the use of this website.
+Proprietary Trading Services
+Quant Tekel LLC – 3984 LLC 2025 provides virtual proprietary trading programs through simulated environments. These services are educational in nature and are not intended to provide access to live trading or regulated financial instruments. Participants engage in evaluations designed to assess trading performance under hypothetical market conditions. No real trading occurs, and funds paid to enter an evaluation are considered subscription fees and do not constitute client money or investment deposits.
+Brokerage Services (Separate Entity)
+Quant Tekel (Pty) Ltd is a regulated broker authorised by the Financial Sector Conduct Authority (FSP No. 53227) in South Africa. It provides brokerage services only to permitted jurisdictions within Africa and Asia via quanttekel.com. QTFunded.com does not offer brokerage, CFD trading, or live market access to clients in any jurisdiction.
+Payment Processing
+Customer payments for qtfunded.com services are processed by QT Treasury Limited (Company Number: HE 487624), a company registered in the Republic of Cyprus, as part of group treasury operations. QT Treasury Limited performs internal treasury functions for the Quant Tekel corporate group and does not provide regulated financial or trading services. All QTFunded services are provided by Quant Tekel SVG (St. Vincent and the Grenadines), an offshore entity. Customers contract with Quant Tekel SVG, not QT Treasury Limited. Registered Office: QT Treasury Limited, Savva Kouti, 10, Ineia, 8704, Paphos, Cyprus
+© 2026 QT Funded. All rights reserved.
+WANT TO GET A CHANCE TO WIN A
+$100K ACCOUNT?
+CONTINUE
+I'M NOT INTERESTED
+WANT TO GET A CHANCE TO WIN A
+$100K ACCOUNT?
+CONTINUE
+WANT MORE
+ENTRIES?
+Sign Up With Texts For 3 Extra Entries!
+By Providing Your Number And Clicking The Button, You Agree To Receive Recurring Auto-Dialed Marketing SMS (Including Cart Reminders; AI Content; Artificial Or Prerecorded Voices) And Our Terms Of Service (Including Arbitration). Consent Is Not Required To Purchase. Msg & Data Rates May Apply. Msg Frequency Varies. Reply HELP For Help; STOP To Opt-Out. View Privacy Policy.
+ACTIVATE EXTRA ENTRIES
+YOUR ENTRY HAS
+BEEN CONFIRMED!
+Use code 60PLUS at checkout. 60% off any evaluation, plus a free same-size account and 10% profit share - added to your dashboard.
+CLOSE

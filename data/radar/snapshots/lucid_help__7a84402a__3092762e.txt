@@ -1,0 +1,31 @@
+Inactivity Policy | Lucid Trading Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Lucid Home
+Lucid Home
+Search for articles...
+All Collections
+Rules and Guidelines
+Inactivity Policy
+Inactivity Policy
+Lucid Trading's inactivity policy: how long an evaluation or funded account can sit unused before it is affected, and how to keep your account active.
+A
+Written by AJ
+August 26, 2026
+Table of contents
+Active Status Policy
+You are not required to trade daily or weekly, but accounts must remain active to avoid being flagged. We must remove dormant accounts to ensure system performance and data integrity.
+Accounts that have not been traded resulting in at least a net profit or loss of 1$ within 30 calendar days will be deemed abandoned and will be permanently deleted from our systems.
+Breached Status Policy
+If an evaluation is breached (has hit Max Loss Limit), it is still eligible for a reset. However, breached accounts are cleared on a schedule to keep the platform streamlined. Accounts are marked breached when the Max Loss Limit is exceeded. Traders can confirm the breached status using the dashboard, which provides details on which limits or rules were violated.
+All breached accounts will be automatically deleted after 30 days if not reset.
+Traders can manually purchase a reset at any time before that 30-day period expires.
+- Traders can also manually remove breached accounts through the dashboard at any time prior to automatic deletion.
+Steps for Manual Account Removal
+Access your dashboard: Log in to your Lucid Trading account and navigate to the dashboard.
+Locate the "Remove Account" option: The option is under the account management section. Refresh the page if it does not appear.
+Acknowledge the deletion warning: Confirm the irreversible action by checking the required acknowledgment box.
+Finalize the removal: Follow the prompts to complete the account deletion process. Ensure this step aligns with your trading strategy. The manual process ensures a trader-controlled approach to managing breached accounts.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Lucid Trading Help Center

@@ -1,0 +1,116 @@
+FundedNext Futures Trading Objectives | General Rules
+CFDs
+Futures
+Labs
+Rewards
+More
+EN Login
+CFDs
+Futures
+Labs
+Rewards
+General Rules
+Every rule, every condition, published before you start your challenge. Same rules for every trader.
+CFDs Stellar 2-Step, 1-Step, Lite & Instant Futures Flex, Rapid, Direct
+Trading Objectives Trading Platforms Symbols & Conditions What is Allowed What is Forbidden
+1
+Profit Target
+A required profit target to complete the Challenge. Calculated on closed-position P&L.
+Rapid Pro : ⁦25K⁩: ⁦$1,500⁩ · ⁦50K⁩: ⁦$3,000⁩ · ⁦$100K⁩: ⁦$5,000⁩
+Rapid Daily : ⁦25K⁩: ⁦$1,500⁩ · ⁦50K⁩: ⁦$3,000⁩ · ⁦$100K⁩: ⁦$5,000⁩
+Flex : ⁦50K⁩: ⁦$2,500⁩ · ⁦$100K⁩: ⁦$5,000⁩ · ⁦$150K⁩: ⁦$8,000⁩
+Direct : No Profit Target
+Once the FundedNext Account stage is reached, there is no profit target.
+2
+Daily Loss Limit
+A daily loss cap that, when breached, pauses trading for the rest of the session.
+Rapid Pro : None
+Rapid Daily : ⁦25K⁩: ⁦$500⁩ · ⁦50K⁩: ⁦$1,000⁩ · ⁦$100K⁩: ⁦$1,250⁩
+Flex : No daily loss limit
+Direct : ⁦50K⁩: ⁦$1,000⁩
+Learn More →
+On Rapid and Direct, breaching the DLL is a soft breach — trading pauses for the rest of the session and resumes the next day. Resets daily at ⁦⁦5:00⁩ PM CT..
+3
+Maximum Loss Limit
+A cap on how much can be lost across the lifetime of the account. Calculated as a fixed dollar amount, set per account model and size. Breaching it closes the account.
+Rapid Pro : ⁦25K⁩: ⁦$1,000⁩ · ⁦50K⁩: ⁦$2,000⁩ · ⁦$100K⁩: ⁦$2,500⁩
+Rapid Daily : ⁦25K⁩: ⁦$1,000⁩ · ⁦50K⁩: ⁦$2,000⁩ · ⁦$100K⁩: ⁦$2,500⁩
+Flex : ⁦50K⁩: ⁦$1,500⁩ · ⁦100K⁩: ⁦$2,500⁩ · ⁦150K⁩: ⁦$4,000⁩
+Direct : ⁦50K⁩: ⁦$2,000⁩
+Learn More →
+The MLL is calculated on the highest end-of-day balance. It trails up as the account hits new closing highs, locks once it reaches the initial balance, and does not decrease during losses.
+4
+Consistency Rule
+Your largest single trading day must stay at or under ⁦40%⁩ of total profit.
+Rapid Pro : FundedNext only
+Rapid Daily : No consistency
+Flex : Challenge phase
+Direct : ⁦20%⁩ perpetual Consistency across withdrawal
+For challenge phase, when the cap is breached, the profit target recalculates upward using the formula: Highest Daily Profit ÷ ⁦40%⁩ = New Required Profit. This raises the bar instead of closing the account.
+5
+Reward Share
+The trader's share of profits generated on the FundedNext Account.
+Flex : ⁦95%⁩ reward share.
+Rapid : ⁦90%⁩ reward share.
+Direct : ⁦90%⁩ reward share.
+6
+Inactivity
+Accounts cannot stay inactive for longer than a set number of consecutive days.
+Challenge Account : ⁦30⁩ consecutive calendar days of no trades. Account is breached and deactivated.
+FundedNext Account : ⁦30⁩ consecutive calendar days of no trades. Account is marked inactive and deactivated.
+Direct Funded Account : Minimum one trade per week is required to keep your account active
+Learn More →
+A trade must be placed within the window to keep the account active. The window counts calendar days, including weekends, and resets when at least one trade is executed. Breached Challenge Accounts can be reset; deactivated FundedNext Accounts cannot.
+Start your FundedNext challenge
+Thousands of traders are already getting rewarded by FundedNext. The only one missing from that list is you. Your challenge is open now.
+Start Challenges
+Product and Offerings
+FundedNext CFDs
+FundedNext Futures
+FNmarkets
+General Rules
+Help Centre (FAQ)
+Partners
+Resources
+How Prop Trading Works
+Calculator
+Blog
+CFDs Glossary
+Trading Platforms
+Economic Calendar
+Symbols
+Market Overview
+Company
+Company
+News & Media
+Achievements & Awards
+Events
+Contact
+Public Announcements
+Privacy & Policy
+Terms of Service
+CFDs Challenge Terms
+Futures Challenge Terms
+Instant Account Terms
+Privacy Policy
+Cookie Policy
+AML Policy
+Risk Disclosure
+Partners T&C
+The services offered under the FundedNext brand are provided by GrowthNext – F.Z.E. (Reg. No. 28831) , with its registered address at Office No. 7, AI Robotics Hub, C1 Building, Ajman Free Zone (AFZ), Ajman, UAE, which is responsible for user onboarding, the administration of the services and the operation of the website fundednext.com. FundedNext™ is a trademark and brand name owned by GrowthNext – F.Z.E. Certain operational, technical, administrative and payment-related activities are performed by the following affiliated entities (together with GrowthNext – F.Z.E., the "FundedNext Entities"):
+FundedNext Ltd (Reg. No. HY01023052), Bonovo Road, Fomboni, Island of Mohéli, Union of the Comoros, which operates the simulated trading environment.
+Third-Party Platforms: Trading platforms and related software are provided by independent third-party providers. The FundedNext Entities do not control these platforms and are not responsible for their availability or performance.
+FundedNext Limited , 8/F China Hong Kong Tower, 8-12 Hennessy Road, Wan Chai, Hong Kong , which processes payments.
+Incenteco Trading Ltd , 26 Pittaou Str., 3118 Agia Fyla, Limassol, Cyprus, and Abutor Investments Ltd , 16 Foti Kolakidi, 1st floor, 3031 Agia Zoni, Limassol, Cyprus, which facilitate payment-related operations.
+Simulated Trading Only: The FundedNext Entities provide access to simulated trading programs designed solely to evaluate trading proficiency and risk-management skills. All trading takes place in a simulated environment using virtual funds and does not involve real financial risk, real financial instruments or live market orders.
+No Brokerage or Client Funds: None of the FundedNext Entities acts as a broker, dealer, exchange or investment adviser, or accepts or manages client deposits. Rewards are based solely on performance in the simulated evaluation and do not represent profits from real trading.
+No Investment Advice: All content, tools and services are provided for evaluation purposes only and do not constitute investment advice, a solicitation, or an offer to buy or sell any financial product, cryptocurrency or derivative. Participants should consult independent financial, legal or tax advisers before trading outside this program.
+Hypothetical Performance Disclosure – CFTC Rule 4.41: These results are based on simulated or hypothetical performance results that have certain inherent limitations. Unlike the results shown in an actual performance record, these results do not represent actual trading. Also, because these trades have not actually been executed, these results may have under-or over-compensated for the impact, if any, of certain market factors, such as lack of liquidity. Simulated or hypothetical trading programs in general are also subject to the fact that they are designed with the benefit of hindsight. No representation is being made that any account will or is likely to achieve profits or losses similar to these being shown.
+Jurisdictional Restrictions: The FundedNext Entities do not offer services to residents of the following jurisdictions: North Korea (DPRK), Myanmar, Belarus, Iran, and Russia, including countries on the FATF high-risk and EU/UN sanctions lists, and Vietnam. Users are responsible for ensuring that their use of the services complies with the laws applicable to them. Services are available only to persons aged 18 or over.
+Risk Warning: Trading in forex, CFDs, futures, derivatives and digital assets involve substantial risk of loss. Past performance is not indicative of future results.
+Fees and Refunds: Fees are paid solely for access to the evaluation services. They are not deposits or investments and are not used for trading. Refunds are governed by our Terms & Conditions.
+In case of any conflict, our Terms & Conditions prevail.
+Not a Deposit | Not FDIC Insured | May Lose Value
+FundedNext-Copyright © 2026
+Trust and Security |
+Subscribe to newsletter

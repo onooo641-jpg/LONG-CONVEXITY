@@ -1,0 +1,29 @@
+Getting Started with Quantower | Alpha Futures Limited Help Center Skip to main content
+Search for articles...
+All Collections
+Getting Started
+Getting Started with Quantower
+Getting Started with Quantower
+How to login to your Quantower account
+B
+Written by Benjamin Chaffee
+March 20, 2026
+Quantower is available via dxFeed and utilizing the Volumetrica Trading clearing house.
+​
+To use this integration, you must have an Evaluation, or Qualified Account utilizing Quantower.
+​
+First, in order to enable market data for your account, you must sign a non professional agreement inside of Volumetrica. You can log in to Volumetrica here .
+Once you have launched Volumetrica, you will be prompted to sign in with the credentials provided in your “Account Info”
+​
+Now that you have logged in, you MUST sign your Non-Professional Agreement before your account will receive real-time data or be able to trade on Quantower . Be sure to select the 'Simulation' when prompted to select a Trading Mode.
+Next navigate to https://www.quantower.com/download to install Quantower onto your desktop
+After installing, navigate to the connections icon
+Under the list of connections, select the “dxFeed Prop”
+Select Real and add your Quantower username and password again which is in the "Account Info" page of your user dashboard
+​
+You can verify your connection status by viewing the “recent connections” tab
+​
+Once inside of Quantower, select ACC on the menu located in the upper left hand side of your screen.
+​
+At this point, you are successfully connected and can enjoy trading your Alpha Futures Account(s) on Quantower! Be sure to select the correct account to trade on if you have multiple accounts. ​
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃

@@ -1,0 +1,66 @@
+Are There IP Address Restrictions? | Top One Futures Help Center Skip to main content
+Top One Futures Home
+Top One Futures Home
+Search for articles...
+All Collections
+General Rules
+Are There IP Address Restrictions?
+Are There IP Address Restrictions?
+Our IP address monitoring and security policy: what is allowed, what counts as a violation, VPS requirements, and why VPNs are not advised.
+October 12, 2026
+Table of contents
+At Top One Futures, safeguarding the integrity of our trading platform is a top priority. To maintain a secure and fair environment for all traders, we actively monitor IP address activity across all accounts. This article explains what is allowed, what is not, and how to use a VPS correctly.
+In short
+Allowed
+Not allowed
+Trading from different devices (mobile, desktop)
+Using multiple IPs on the same account frequently
+Using a VPS with a static IP (must notify support)
+Trading multiple accounts from the same IP
+Traveling and trading (will require verification)
+Using a VPN (strictly prohibited)
+When is proof of travel required?
+If you relocate or trade from a different country, we will ask for additional verification to ensure account security. Always use a stable and consistent IP to avoid issues.
+IP address violations
+The following actions are considered violations of our security protocols:
+Violation
+Detail
+Multiple IP addresses on the same account
+Using multiple IP addresses to access a single account may raise flags and be considered a violation
+Multiple accounts from similar IP addresses
+Trading from multiple accounts originating from the same or closely related IP addresses is not allowed
+Copying trades across different accounts
+Identical trades placed across multiple accounts under different ownership will be flagged
+Hedging across multiple accounts
+Any form of hedging across multiple accounts, including accounts from other prop firms or brokers, is strictly prohibited
+Recommendations for secure trading
+We highly recommend that traders use a single device with a unique IP address for their trading activities to avoid any security concerns. For professional traders, utilizing a Virtual Private Server (VPS) with a static IP address can provide additional security and faster execution times.
+While we understand that you may trade from different devices (such as mobile or desktop) or while traveling, this may result in multiple IP addresses being associated with your account. This is generally acceptable, but in cases where you travel or relocate to another country, we may request additional verification documents for security purposes.
+Clarification on VPS usage
+At Top One Futures, we permit the use of Virtual Private Servers (VPS) with static IP addresses for trading purposes. VPS usage is often preferred by professional traders as it provides stability and faster execution times. If you choose to use a VPS, please ensure it has a static IP address and notify us in advance to avoid any issues. To enable VPS usage for your trading account, please provide the following information:
+Requirement
+Detail
+IP address of the VPS
+This must be a static IP
+VPS service invoice
+The invoice should include the VPS's IP address to verify that it is a legitimate service
+IP registration
+Ensure the VPS IP address is shared and registered with our team to avoid connection issues such as internal server errors when using specific platform features
+Important note on VPNs
+The use of Virtual Private Networks (VPNs) is not advised . VPNs allow users to switch locations, which can lead to false positives in our location-based security checks, resulting in potential account breaches. For this reason, using a VPN may trigger location violations and lead to account suspension or breaches. To avoid any issues, always use a stable and consistent IP address, such as through a VPS, and notify us of any planned changes in your trading environment, particularly if you are traveling or using a new VPS.
+Violations
+Any serious violations of this IP policy will result in a breach of your account and forfeiture of any profits . We are committed to ensuring a safe and secure trading environment and use sophisticated fraud detection technology to monitor activity. We also maintain a global IP blacklist of fraudulent users and take action against anyone using third-party services like "pass your Evaluation" or account management companies. Violators will be blacklisted and may face legal action.
+Related articles
+Account Ownership and Registration Policies
+What is the Maximum Number of Accounts I Can Trade?
+What is the Limit for Funded Accounts Per Household?
+Prohibited Trading Practices
+Related Articles
+Prohibited Trading Practices
+Copy Trading Policy
+Elite ACCESS – News Trading Rule
+Account Ownership and Registration Policies
+Elite ACCESS Static - News Trading Rule
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+We run on Intercom

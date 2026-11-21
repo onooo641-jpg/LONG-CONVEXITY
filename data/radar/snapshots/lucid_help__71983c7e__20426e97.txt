@@ -1,0 +1,174 @@
+Live Scaling Plan | Lucid Trading Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Lucid Home
+Lucid Home
+Search for articles...
+All Collections
+Live Trading
+Live Scaling Plan
+Live Scaling Plan
+Live Trading Scaling Plan
+Written by Joel
+October 4, 2026
+Table of contents
+The scaling plan for Live accounts controls how much of your max size is available to trade based on the profits in your account. As your profits increase and decrease, your max tradable contract size moves up and down in direct correlation at the end of each trading day.
+​
+The contract limits also depend on the account size, and product traded - Certain extremely volatile contracts have adjusted position sizing to ensure traders do not exceed the live drawdown.
+​
+See the tables below for details.
+$25,000 Live account
+Profit Range
+CME
+CBOT
+NYMEX
+COMEX
+$0 - $1999.99
+1 Mini or
+10 Micros
+1 Mini or
+10 Micros
+1 Mini or
+10 Micros
+0 Minis
+5 Micros
+$2000+
+2 Minis or
+20 Micros
+2 Minis or
+20 Micros
+2 Minis or
+20 Micros
+1 Mini or
+10 Micros
+$50,000 Live account
+Profit Range
+CME
+CBOT
+NYMEX
+COMEX
+$0 - $1999.99
+2 Minis or
+20 Micros
+2 Minis or
+20 Micros
+2 Minis or
+20 Micros
+1 Mini or
+10 Micros
+$2000 - $3999
+3 Minis or
+30 Micros
+3 Minis or
+30 Micros
+3 Minis or
+30 Micros
+1 Mini or
+15 micros
+$4000+
+4 Minis or
+40 Micros
+4 Minis or
+40 Micros
+4 Minis or
+40 Micros
+2 Minis or
+20 Micros
+$100,000 Live account
+Profit Range
+CME
+CBOT
+NYMEX
+COMEX
+$0 - $1999.99
+3 Minis or
+30 Micros
+3 Minis or
+30 Micros
+3 Minis or
+30 Micros
+1 Mini or
+15 Micros
+$2000 - $3999
+4 Minis or
+40 Micros
+4 Minis or
+40 Micros
+4 Minis or
+40 Micros
+2 Minis or
+20 Micros
+$4000 - $5999
+5 Minis or
+50 Micros
+5 Minis or
+50 Micros
+5 Minis or
+50 Micros
+2 Minis or
+25 Micros
+$6000+
+6 Minis or
+60 Micros
+6 Minis or
+60 Micros
+6 Minis or
+60 Micros
+3 Minis or
+30 Micros
+$150,000 Live account
+Profit Range
+CME
+CBOT
+NYMEX
+COMEX
+$0 - $1999.99
+4 Minis or
+40 Micros
+4 Minis or
+40 Micros
+4 Minis or
+40 Micros
+2 Minis or
+20 Micros
+$2000 - $3999
+5 Minis or
+50 Micros
+5 Minis or
+50 Micros
+5 Minis or
+50 Micros
+2 Minis or
+25 Micros
+$4000 - $5999
+6 Minis or
+60 Micros
+6 Minis or
+60 Micros
+6 Minis or
+60 Micros
+3 Minis or
+30 Micros
+$6000 - $8999
+8 Minis or
+80 Micros
+8 Minis or
+80 Micros
+6 Minis or
+60 Micros
+4 Minis or
+40 Micros
+$9000+
+10 Minis or
+100 Micros
+8 Minis or
+80 Micros
+6 Minis or
+60 Micros
+5 Minis or
+50 Micros
+Circumventing the Scaling Plan
+Some traders may be inclined to try and get around the scaling plan. Our back-end systems track for this. If we see repeated behavior attempting to get around the limits, we may review your account.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Lucid Trading Help Center

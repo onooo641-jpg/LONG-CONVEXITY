@@ -1,0 +1,35 @@
+Quantower: Login Instructions | My Funded Futures Help Center Skip to main content
+Go to website Discord YouTube English हिन्दी Español English
+Go to website Discord YouTube English हिन्दी Español English
+Search for articles...
+All Collections
+Trading Platforms
+Quantower: Login Instructions
+Quantower: Login Instructions
+Quantower Download and Connection Guide
+August 24, 2026
+Table of contents
+Quantower is a versatile and intuitive trading platform that provides both novice and experienced traders with advanced tools for market analysis and seamless execution across various instruments.
+Let's Get Started!
+Click on the Downloads button from your MFFU dashboard and select Quantower to download then follow the installation process.
+Once the setup is complete:
+Launch Quantower
+On the Quantower dashboard, click dxFeed to set up connections.
+In the connections window, ensure you select MyFundedFutures . Enter your credentials, which MyFundedFutures will send to you via email, and then click Connect to proceed.
+When you are successfully connected to your MFFU trading account via Quantower, you will see the connection status. You are now online and ready to trade!
+Get Funded to Trade on Quantower
+How to trade using Quantower:
+To view your Account Information , click Acc from your dashboard.
+To see your Working Orders , click Ord . To check your Positions , click Pos from your dashboard.
+For Order Entry , click OE from your dashboard and ensure you choose the instrument you would like to trade from the Symbol tab.
+To open the Charts , click Cht from your dashboard and search for the instrument you wish to trade using the search bar.
+Get Started with MFFU Here.
+If you have any questions regarding Quantower setup or encounter connection issues, please contact our support team on the live chat or at [email protected]
+Related Articles
+NinjaTrader: Login Instructions
+DEEPCHART: Login Instructions
+ATAS: Login Instructions
+Refund & Cancellation Policy - Transparent and Trader-First
+Dispute & Chargeback Abuse Policy
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

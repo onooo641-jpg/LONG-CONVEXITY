@@ -1,0 +1,138 @@
+When and What Products Can I Trade? | Topstep Help Center Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Skip to main content
+Discord Topstep TopstepTV
+Discord Topstep TopstepTV
+Search for articles...
+All Collections
+Topstep FAQs
+When and What Products Can I Trade?
+When and What Products Can I Trade?
+Every tradeable CME Group product, with permitted hours for the Trading Combine and Funded Accounts.
+Updated over 3 weeks ago
+Table of contents
+Know what you can trade and when. Topstep is a day trading program. All positions must be closed by 3:10 PM CT every weekday. You can resume trading at 5:00 PM CT. No swing trading. No Forex.
+Trading Hours
+Session
+Hours
+Sunday open
+5:00 PM CT
+Weekday close
+3:10 PM CT
+Weekday reopen
+5:00 PM CT
+Friday close
+3:10 PM CT (closed till Sunday at 5:00 PM)
+All open positions and pending orders begin to automatically cancel at 3:10 PM CST. Avoid opening new positions after 3:08 PM CT — Risk Managers begin flattening at that time. It's still your responsibility to be flat by 3:10 PM CT.
+If you're trading a product with an earlier daily close than 3:10 PM CT, you must exit before that product's close.
+Special Trading Hours
+CBOT Commodity Products (Corn, Wheat, Soybeans, Soybean Meal, Soybean Oil):
+Sunday–Monday: 7:00 PM – 7:45 AM CT
+Monday–Friday: 8:30 AM – 1:20 PM CT
+CME Agriculture Products (Live Cattle, Lean Hogs):
+Monday–Friday: 8:30 AM – 1:05 PM CT
+CBOT Commodity Market Pause (Mon–Fri): 7:45 AM – 8:30 AM CT. No orders accepted during this window. TopstepX™ manual lockout is not available for CBOT positions held during this time.
+Permitted Products
+CME Equity Futures
+E-mini S&P 500 (ES)
+Micro E-mini S&P (MES)*
+E-mini NASDAQ 100 (NQ)
+Micro E-mini NASDAQ 100 (MNQ)*
+E-mini Russell 2000 (RTY)
+Micro E-mini Russell 2000 (M2K)*
+Nikkei NKD (NKD)
+Micro Bitcoin (MBT)*
+Micro Ether (MET)*
+CME Foreign Exchange Futures
+Australian $ (6A)
+British Pound (6B)
+Canadian $ (6C)
+Euro FX (6E)
+Japanese Yen (6J)
+Swiss Franc (6S)
+E-mini Euro FX (E7)
+Micro Euro FX (M6E)*
+Micro AUD/USD (M6A)*
+Mexican Peso (6M)*
+New Zealand $ (6N)
+Micro GBP/USD (M6B)
+CME Agricultural Futures
+Lean Hogs (HE)
+Live Cattle (LE)
+CME NYMEX Futures
+Crude Oil (CL)
+E-mini Crude Oil (QM)
+Natural Gas (NG)
+E-mini Natural Gas (QG)
+Micro Crude Oil (MCL)*
+RBOB Gasoline (RB)
+Heating Oil (HO)
+Platinum (PL)
+Micro Henry Hub Natural Gas (MNG)
+CME CBOT Agricultural Futures
+Corn (ZC)
+Wheat (ZW)
+Soybeans (ZS)
+Soybean Meal (ZM)
+Soybean Oil (ZL)
+CME CBOT Equity Futures
+Mini-DOW (YM)
+Micro Mini-DOW (MYM)*
+CME CBOT Financial/Interest Rate Futures
+2-Year Note (ZT)
+5-Year Note (ZF)
+10-Year Note (ZN)
+10-Year Ultra-Note (TN)
+30-Year Bond (ZB)
+Ultra-Bond (UB)
+CME COMEX Futures
+Gold (GC)
+Silver (SI)
+Copper (HG)
+Micro Gold (MGC)*
+Micro Silver (SIL)*
+Micro Copper (MHG)
+See Prohibited Conduct for restrictions on specific products marked with an asterisk (*).
+For full details on restricted products and volatility adjustments, visit Risk Adjustments: High Risk/High Volatility .
+TopstepX™ Product Status Color Codes
+TopstepX™ uses CME color codes in the product drop-down menus to help you quickly identify the current market state of each product. Hover over any product in the drop-down to see a tooltip with its current state, so you always know whether a market is available before you trade.
+Color
+Market State
+🔵 Blue
+Pre-Open
+🟠 Orange
+Paused
+🟢 Green
+Open
+🔴 Red
+Closed
+FAQ
+Can I swing trade or hold positions overnight?
+No. All positions must be closed by 3:10 PM CT each weekday. Topstep does not permit holding positions from one session to the next.
+Can I trade Forex?
+No. Topstep is a Futures-only program. If you have a Forex background, check out FX Futures as an alternative.
+Related Articles
+Topstep Learning
+Can I trade Forex with You?
+Trading Combine® Parameters
+TopstepX™ — Commissions and Fees
+Risk Adjustments: High Risk/High Volatility
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Your Privacy Choices

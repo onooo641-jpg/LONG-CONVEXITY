@@ -1,0 +1,166 @@
+Best Futures Prop Firms 2026: Rules and Costs of 5 Firms
+Black Friday Early Access · EARLYBOGO40 25K Zero BOGO + 40% off · EARLYBOGO50 25K Direct BOGO + 50% off
+Home
+About
+How It Works
+Trading
+Platforms
+AlphaTrader
+Learn More
+WealthCharts
+Learn More
+Quantower
+Learn More
+View All
+Leaderboard
+Lifetime Payouts
+Learn More
+Weekly Payouts
+Learn More
+Returns of the month
+Learn More
+View All
+Market
+Equity & Index
+Learn More
+Currency
+Learn More
+Metals
+Learn More
+Crypto
+Learn More
+View All
+AlphaTrader
+Launched AlphaTrader — the next evolution of the platform. Get Early Access
+Resources
+Contact Us
+Help Center
+Start Evaluation
+Sign In
+Home
+About
+How It Works
+Trading
+Platforms
+Leaderboard
+Market
+AlphaTrader
+Launched AlphaTrader — the next evolution of the platform. Get Early Access
+Resources
+Contact Us
+Help Center
+Start Evaluation
+Sign In
+Best Futures Prop Firms in 2026: 5 Firms’ Rules and Costs Compared
+By the Alpha Futures Team · Updated October 23, 2026
+The best futures prop firm is the one whose rules fit how you trade. This page compares five firms (Alpha Futures, Topstep, Apex Trader Funding, Tradeify and Lucid Trading) on total cost, drawdown type, consistency rules, payout conditions and platforms. Alpha Futures evaluations and Qualified Accounts use simulated funds.
+Alpha Futures wrote this comparison and is one of the firms listed. Details checked on October 23, 2026; check each firm’s site for current terms.
+Updated October 23, 2026.
+Five futures prop firms compared
+Scroll horizontally to view the full comparison.
+Firm Evaluation steps Pricing model Activation fee Example 50K cost Drawdown type Consistency (evaluation / funded stage) Profit split Payout conditions Platforms Checked on
+Alpha Futures One-step evaluation (Zero, Standard, Advanced); Direct skips the evaluation Monthly subscription; Direct is a one-time fee $0 Standard $129, Zero $139, Advanced $209 a month; Direct $519 one-time (simulated 50K) End-of-day trailing Maximum Loss Limit: $2,000 on 50K Zero and Standard, $1,750 on 50K Advanced Evaluation: Zero none, Standard 50%, Advanced 40%. Qualified: Zero and Standard 40%, Advanced none, Direct 20% 90% 5 winning days of $200 or more; up to 50% of profit per request, capped by plan; up to 4 requests a month AlphaTrader, TradingView (via Plus500), WealthCharts, Quantower, DeepChart October 23, 2026
+Apex Trader Funding One evaluation (30 days of access), then a Performance Account One-time fee per evaluation; no subscription and no resets One-time Performance Account activation fee after passing; a No Activation Fee evaluation is also offered End-of-day trailing, $2,000 at 50K (an intraday-trailing option is also offered) Evaluation: none. Performance Account: 50% (no single day at 50% or more of profit since the last payout) 100% of approved payouts 5 trading days of $250 or more at 50K; minimum $500; up to $1,500–$3,000 per request; at most 6 payouts per Performance Account Rithmic, Tradovate, WealthCharts October 23, 2026 · EOD evaluations · Performance Accounts · Payouts · Fees
+Lucid Trading (LucidFlex) One evaluation, then a funded account One-time fee None End-of-day trailing, $2,000 at 50K Evaluation: 40% (50% with a paid add-on). Funded: none 90% 5 days of $150 or more at 50K; up to 50% of profit, max $2,000 per request NinjaTrader, Tradovate, TradingView (via CQG) and Rithmic-based platforms such as Quantower October 23, 2026 · LucidFlex rules
+Topstep One evaluation (Trading Combine), then an Express Funded Account Monthly subscription $149 on the Standard path; $0 on the No Activation Fee path $49 a month (Standard path) or $95 a month (No Activation Fee path) Trailing Maximum Loss Limit of $2,000, updated at end of day and enforced in real time Evaluation: best day at or below 55% of the profit target. Funded: none on the Standard path, 40% on the Consistency path 90% Standard path: 5 winning days of $150 or more; up to 50% of the balance per request TopstepX October 23, 2026 · Payout policy · Consistency
+Tradeify (Growth) One evaluation, then a Simulated Funded account One-time purchase, no subscription None End-of-day trailing, $2,000 at 50K Evaluation: none. Funded: 35% 90% 5 trading days of $150 or more at 50K; balance of at least $53,000; minimum $500; up to $1,500–$3,000 per request Tradovate, WealthCharts, Rithmic, Tradesea October 23, 2026 · Growth evaluation · Payout policy · Activation fees
+Update — September 4, 2026: TradingView is back on Alpha Futures. Connectivity is powered by Plus500 and available at checkout. Use your Alpha Trader credentials from Account Info to connect. Full setup: TradingView Is Live on Alpha Futures . Confirm live options on Platforms .
+Update — July 12, 2026: Alpha Futures and NinjaTrader (including Tradovate and TradingView, which connected through Tradovate) have parted ways, and the Premium plan has been discontinued (all active Premium accounts are being refunded automatically). Existing Zero, Advanced, and Direct accounts on NinjaTrader/Tradovate/TradingView are being migrated to AlphaTrader. References below are kept for historical accuracy.
+Part of our futures prop series. Start with What is a futures prop firm? , then explore: Platforms · Alpha Futures review (2026) · Performance fee rules explained (2026) · Alpha Group · Futures vs forex prop firms (2026) · Best futures prop firms for beginners (2026) · Fastest payout futures prop firms (2026) .
+Alpha Futures: plans, rules, and platforms
+Alpha Futures is a UK-based futures prop firm and part of the Alpha Group alongside Alpha Capital Group. Since launching in 2024, it has published evaluation and Qualified rules across Zero, Standard, Advanced, and Direct.
+Plans and account structure
+Alpha Futures currently offers three one-step evaluation plans—Zero, Standard, and Advanced—and a separate Direct Qualified path that skips evaluation. Premium was discontinued in July 2026. All accounts use simulated funds.
+Zero
+No evaluation consistency rule; 40% consistency on the Qualified Account between performance fee requests. Daily Loss Guard applies. See the current Zero plan .
+Standard
+50% consistency during evaluation and 40% on the Qualified Account between performance fee requests. See the current Standard plan .
+Advanced
+40% consistency during evaluation and no consistency rule on the Qualified Account. No preset Daily Loss Guard; the performance fee cap is up to $15,000 per request. See the current Advanced plan .
+Direct
+Direct skips evaluation and starts on a Qualified Account. A 20% consistency rule applies for performance fee eligibility. See the current Direct plan .
+Compare current account sizes, fees, MLLs, and performance fee caps on the live pricing page .
+Rules that matter
+Alpha Futures allows news trading on all evaluation accounts. On Qualified Accounts, Advanced Qualified Accounts have no news restrictions; Zero Qualified Accounts restrict new orders within 2 minutes before or after high-impact news (ForexFactory red-folder events). You may hold through news on Zero Qualified Accounts — the restriction applies to executing new orders in that window.
+Hedging and reverse trading are prohibited on evaluation and Qualified stages. Overnight and session-hold rules vary by firm.
+The 50% consistency applies on Standard evaluations and 40% on Advanced evaluations; it does not apply on Advanced Qualified Accounts. Zero evaluations have no consistency rule; Zero Qualified Accounts use a 40% consistency rule between performance fee requests.
+All current plans carry a 90% performance split from day one, no tiered ladder. Performance fees are requestable up to 4 times per month after every 5 winning trading days of $200 or more.
+Alpha Futures currently supports AlphaTrader, TradingView (Plus500), WealthCharts, DeepChart, and Quantower. Active communities run on Facebook, X, Instagram, LinkedIn, YouTube, TikTok, and Discord.
+View Alpha Futures evaluations →
+What to look for in a futures prop firm
+Before you choose a firm from the table, know the six criteria that separate programmes worth your evaluation fee from programmes worth skipping.
+Rules transparency
+Can you read the profit target, drawdown model, consistency rule, and prohibited practices in plain language before you pay? At Alpha Futures, Standard evaluations have a 50% consistency rule, Advanced evaluations 40%, Zero evaluations none, and Zero Qualified Accounts 40%. Firms that bury rules in PDFs or change them without notice are a red flag.
+Drawdown model
+End-of-day trailing drawdown, intraday trailing drawdown, and static drawdown behave very differently in practice. Alpha Futures uses end-of-day trailing Maximum Loss Limit (MLL) on all plans—not intraday trailing. On Zero, MLL is 4% ($1K / $2K / $3K by size). On Advanced, 3.5% ($1,750 / $3,500 / $5,250). Check current Standard and Direct loss limits on their plan cards.
+Performance fee reliability
+A 90% performance split means little if the firm delays or denies requests. Check Trustpilot scores, independent review sites, and trader communities alongside the published performance fee policy.
+Platform quality
+Your execution environment affects fills, DOM access, and charting workflow. Alpha Futures currently offers AlphaTrader, TradingView (Plus500), WealthCharts, DeepChart, and Quantower. More platform choice means less friction when you qualify and scale.
+Trustpilot rating and review volume
+A high score on many reviews carries more weight than the same score on a handful of reviews. Volume matters because it reduces the impact of fake or incentivised reviews—use it as one filter, not the only one.
+Account sizes and scaling
+Entry-level evaluations often start at $25K or $50K simulated capital. Alpha Futures offers account sizes from $25K to $150K across three active evaluation plans: Zero, Standard, and Advanced. Direct provides a separate Qualified entry without an evaluation; Premium was discontinued in July 2026.
+Frequently asked questions
+Which futures prop firm is best for beginners?
+One with a low-cost evaluation, micro contracts and rules you can follow. At Alpha Futures, Zero 25K costs $89 a month with no activation fee and no consistency rule on the evaluation. See our futures prop firms for beginners guide.
+What is the cheapest futures prop firm?
+The one with the lowest total cost to reach a funded stage for you, counting evaluation fees, resets and activation. Compare the 50K costs in the table above; at Alpha Futures, Zero 25K costs $89 a month with no activation fee. See our cheapest futures prop firm guide.
+Are futures prop firm accounts simulated?
+At Alpha Futures, yes: evaluations and Qualified Accounts are simulated and do not give access to live markets. Check each firm’s terms for how its funded stage works.
+End-of-day vs intraday drawdown: what’s the difference?
+End-of-day trailing drawdown moves your loss limit once a day from your closing balance; intraday trailing drawdown follows your highest open equity during the session, so profit you give back mid-trade can tighten the limit. Alpha Futures uses end-of-day trailing on every account. See EOD vs intraday trailing drawdown .
+Which futures prop firms have no consistency rule?
+At Alpha Futures, Zero evaluations and Advanced Qualified Accounts have no consistency rule. In the table, the Apex and Tradeify evaluations, Lucid’s funded stage and Topstep’s Standard funded path have none. See futures prop firms with no consistency rule .
+How often can you request a payout?
+At Alpha Futures, up to 4 times a month, after 5 winning days of $200 or more, for up to 50% of profit per request, capped by plan. The other firms’ payout conditions are in the table above.
+How did we compare these firms?
+On the same criteria for every firm: evaluation steps, pricing model, activation fee, a 50K cost example, drawdown type, consistency rules, profit split, payout conditions and platforms, with the date each row was checked.
+Which futures prop firm has the best Trustpilot rating?
+Alpha Futures has 4.4 out of 5 on Trustpilot (more than 6,000 reviews, October 2026). Trustpilot scores change over time and reflect support and withdrawal experiences, not whether a firm’s rules fit your strategy. Check each firm’s public Trustpilot profile directly rather than relying on a single headline score. This page does not rank firms by review score.
+Next steps
+If Alpha Futures fits the rules and cost profile you want after reading the table, compare Zero, Standard, Advanced, and Direct on the pricing page before checkout.
+View Alpha Futures evaluations →
+Read the full evaluation process at alpha-futures.com/how-it-works .
+Related reading
+A-to-Z futures guide for beginners
+Futures Prop Maximum Loss Limit (MLL) Explained (2026)
+Alpha Futures Plans Compared: Zero vs Standard vs Advanced vs Direct (2026)
+Futures Prop Firm Rules Explained: MLL, Consistency & Limits (2026)
+Simulated evaluations, simulated funds. Performance fees are performance-based; outcomes not guaranteed. Figures and rules change — re-verify on alpha-futures.com before purchasing.
+More Articles
+Sign Up for an
+Exclusive Welcome Offer
+Subscribe to Alpha Futures emails for an exclusive welcome offer, trader insights, product updates and discounts. Enter your email to stay one step ahead. You can unsubscribe at any time.
+Thank you for signing up to our newsletter
+Oops! Something went wrong while submitting the form.
+175,000+
+Qualified Analysts
+1.1Million+
+Traders
+$70M
+Performance Fees Paid
+Quick Links
+Home About How it works
+Trading
+Platforms Market Leaderboard
+Other
+Resources Contact Us Promo Codes
+2026 © Alpha Futures - All rights reserved.
+Terms of Use
+Terms and Conditions
+General Service Agreement
+Privacy Policy
+Return Policy
+ALPHA FUTURES LIMITED
+Company number 15655643
+Registered office address
+1 Allied Business Centre, Coldharbour Lane, Harpenden, England, AL5 4UT
+"Any references to trading, analysts, revenue, and profit throughout the website are references to virtual trading, revenues, and profits, respectively."
+Alpha Futures Risk Disclosure:
+Futures trading contains substantial risk and is not for every investor. An investor could potentially lose all or more than the initial investment. Risk capital is money that can be lost without jeopardizing your financial security or lifestyle. Only risk capital should be used for trading and only those with sufficient risk capital should consider trading. Past performance is not necessarily indicative of future results.
+Hypothetical Performance Disclosure:
+Hypothetical performance results have many significant performance and other limitations, some of which are described below. No representation is being made that any account will or is likely to achieve profits or losses similar to those shown on the website or any promotional material.
+CFTC Rule 4.41:
+Hypothetical or Simulated performance results have certain limitations. Unlike an actual performance record, simulated results do not represent actual trading. Also, because the trades have not actually been executed, the results may have under-or-over compensated for the impact, if any, of certain market factors, such as lack of liquidity. Simulated trading programs, in general, are also subject to the fact that they are designed with the benefit of hindsight. No representation is being made that any account will or is likely to achieve profit or losses similar to those shown.
+English Deutsch Español Français Italiano

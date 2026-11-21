@@ -1,0 +1,489 @@
+Mối quan hệ pháp lý giữa Nhà giao dịch FTMO và FTMO sau khi ký kết các Điều khoản & Điều kiện của Tài khoản FTMO là gì? | FTMO.com
+Mới
+FTMO Instant Account
+{
+document.body.classList.toggle('no-scroll', value);
+});
+// Set scroll to true when we are scrolled 5.2% of viewport height on mobile or 6% on desktop.
+// Scroll variable is used to change navbar background from transparent to solid when scrolling.
+const checkScroll = () => {
+const isMobile = window.innerWidth threshold;
+};
+checkScroll();
+window.addEventListener('scroll', checkScroll);
+}
+}"
+@keydown.escape.prevent.stop="
+if (menuOpen || activeItem) {
+activeItem = null;
+menuOpen = false;
+}
+"
+>
+{ document.getElementById('first-mega-item-cfd')?.focus() })"
+@blur="hoveredItem = null"
+:class="{ 'bg-background-hover':
+hoveredItem === 'cfd' ||
+activeItem === 'cfd',
+'text-content-primary':
+hoveredItem === 'cfd' ||
+activeItem === 'cfd' ||
+hoveredItem === null && !menuOpen,
+'text-gray-400':
+(hoveredItem !== null && hoveredItem !== 'cfd' && (activeItem === 'cfd' ? false : true)) ||
+(menuOpen && hoveredItem === null && (activeItem === 'cfd' ? false : true))
+}"
+class="flex items-center gap-1.5 py-3 px-2 xl:px-3 transition-colors duration-200 rounded-lg focus:outline-none">
+CFD
+{ document.getElementById('first-mega-item-futures')?.focus() })"
+@blur="hoveredItem = null"
+:class="{ 'bg-background-hover':
+hoveredItem === 'futures' ||
+activeItem === 'futures',
+'text-content-primary':
+hoveredItem === 'futures' ||
+activeItem === 'futures' ||
+hoveredItem === null && !menuOpen,
+'text-gray-400':
+(hoveredItem !== null && hoveredItem !== 'futures' && (activeItem === 'futures' ? false : true)) ||
+(menuOpen && hoveredItem === null && (activeItem === 'futures' ? false : true))
+}"
+class="flex items-center gap-1.5 py-3 px-2 xl:px-3 transition-colors duration-200 rounded-lg focus:outline-none">
+New
+Futures
+{ document.getElementById('first-mega-item-giao-dich')?.focus() })"
+@blur="hoveredItem = null"
+:class="{ 'bg-background-hover':
+hoveredItem === 'giao-dich' ||
+activeItem === 'giao-dich',
+'text-content-primary':
+hoveredItem === 'giao-dich' ||
+activeItem === 'giao-dich' ||
+hoveredItem === null && !menuOpen,
+'text-gray-400':
+(hoveredItem !== null && hoveredItem !== 'giao-dich' && (activeItem === 'giao-dich' ? false : true)) ||
+(menuOpen && hoveredItem === null && (activeItem === 'giao-dich' ? false : true))
+}"
+class="flex items-center gap-1.5 py-3 px-2 xl:px-3 transition-colors duration-200 rounded-lg focus:outline-none">
+Giao dịch
+{ document.getElementById('first-mega-item-ve-chung-toi')?.focus() })"
+@blur="hoveredItem = null"
+:class="{ 'bg-background-hover':
+hoveredItem === 've-chung-toi' ||
+activeItem === 've-chung-toi',
+'text-content-primary':
+hoveredItem === 've-chung-toi' ||
+activeItem === 've-chung-toi' ||
+hoveredItem === null && !menuOpen,
+'text-gray-400':
+(hoveredItem !== null && hoveredItem !== 've-chung-toi' && (activeItem === 've-chung-toi' ? false : true)) ||
+(menuOpen && hoveredItem === null && (activeItem === 've-chung-toi' ? false : true))
+}"
+class="flex items-center gap-1.5 py-3 px-2 xl:px-3 transition-colors duration-200 rounded-lg focus:outline-none">
+Về chúng tôi
+= 1024) && activeItem === 'cfd'"
+@mouseleave="activeItem = null; menuOpen = false;"
+@keydown.escape.window="
+if (activeItem || menuOpen) {
+activeItem = null;
+menuOpen = false;
+document.getElementById('mega-menu-button-cfd')?.focus();
+}
+"
+x-cloak x-transition:enter="transition ease-out duration-200"
+x-transition:enter-start="opacity-0 transform translate-y-10"
+x-transition:enter-end="opacity-100 transform translate-y-0"
+x-transition:leave="transition ease-in duration-200"
+x-transition:leave-start="opacity-0 transform translate-y-0"
+x-transition:leave-end="opacity-0 transform translate-y-10"
+>
+Bắt đầu
+Tổng quan về CFD
+Hành trình đến với FTMO của bạn
+Phí
+Chọn Thử thách FTMO của bạn
+Quy trình hoạt động
+Trở thành Nhà giao dịch FTMO
+Bản dùng thử miễn phí
+Luyện tập chiến lược không giới hạn
+Mục tiêu giao dịch
+Các quy tắc chính cho từng giai đoạn
+Tăng trưởng
+Tâm lý giao dịch
+Vì một tư duy vững vàng hơn
+Chương trình Premium
+Dành cho những người xuất sắc
+Kế hoạch nâng cấp vốn
+Tăng trưởng lên đến $2 triệu
+Bắt đầu Thử thách FTMO
+Bắt đầu ngay
+= 1024) && activeItem === 'futures'"
+@mouseleave="activeItem = null; menuOpen = false;"
+@keydown.escape.window="
+if (activeItem || menuOpen) {
+activeItem = null;
+menuOpen = false;
+document.getElementById('mega-menu-button-futures')?.focus();
+}
+"
+x-cloak x-transition:enter="transition ease-out duration-200"
+x-transition:enter-start="opacity-0 transform translate-y-10"
+x-transition:enter-end="opacity-100 transform translate-y-0"
+x-transition:leave="transition ease-in duration-200"
+x-transition:leave-start="opacity-0 transform translate-y-0"
+x-transition:leave-end="opacity-0 transform translate-y-10"
+>
+English only
+Get Started
+Futures Overview
+Enter FTMO Futures
+Pricing
+Fees and account options
+How Futures Work
+Your path to FTMO Futures
+Trading Objectives
+Evaluation rules explained
+Start Your Evaluation
+Start now
+= 1024) && activeItem === 'giao-dich'"
+@mouseleave="activeItem = null; menuOpen = false;"
+@keydown.escape.window="
+if (activeItem || menuOpen) {
+activeItem = null;
+menuOpen = false;
+document.getElementById('mega-menu-button-giao-dich')?.focus();
+}
+"
+x-cloak x-transition:enter="transition ease-out duration-200"
+x-transition:enter-start="opacity-0 transform translate-y-10"
+x-transition:enter-end="opacity-100 transform translate-y-0"
+x-transition:leave="transition ease-in duration-200"
+x-transition:leave-start="opacity-0 transform translate-y-0"
+x-transition:leave-end="opacity-0 transform translate-y-10"
+>
+Những điều cần thiết trong giao dịch
+Lịch kinh tế
+Các sự kiện quan trọng theo thời gian thực
+Các cập nhật
+Những thay đổi và thông tin mới nhất
+Các mã giao dịch
+Danh sách mã giao dịch
+Các nền tảng giao dịch
+Chọn nền tảng hợp nhất với bạn
+Công cụ & Dịch vụ
+Tổng quan công cụ
+Nâng cao hiệu suất giao dịch của bạn
+Leaderboard
+Bảng xếp hạng trực tiếp của các nhà giao dịch FTMO hàng đầu
+App Suite
+Khám phá App Suite bởi FX Blue
+Kiến thức
+FAQ
+Giải đáp các câu hỏi thường gặp
+Blog
+Tin tức, mẹo và các câu chuyện giao dịch
+Học viện
+Đào tạo giao dịch miễn phí
+= 1024) && activeItem === 've-chung-toi'"
+@mouseleave="activeItem = null; menuOpen = false;"
+@keydown.escape.window="
+if (activeItem || menuOpen) {
+activeItem = null;
+menuOpen = false;
+document.getElementById('mega-menu-button-ve-chung-toi')?.focus();
+}
+"
+x-cloak x-transition:enter="transition ease-out duration-200"
+x-transition:enter-start="opacity-0 transform translate-y-10"
+x-transition:enter-end="opacity-100 transform translate-y-0"
+x-transition:leave="transition ease-in duration-200"
+x-transition:leave-start="opacity-0 transform translate-y-0"
+x-transition:leave-end="opacity-0 transform translate-y-10"
+>
+Công ty
+Về chúng tôi
+Tìm hiểu thêm về công ty chúng tôi
+FTMO Group
+Tìm hiểu thêm về Tập đoàn FTMO
+Shop
+Mua sắm các phụ kiện giao dịch
+Kết nối
+Liên hệ với chúng tôi
+Hỗ trợ 24/7
+Dành cho truyền thông
+Dữ liệu thương hiệu và truyền thông
+Tuyển dụng
+Tham gia đội ngũ chuyên gia của FTMO
+VI
+Tiếng Việt
+Čeština
+English
+Español
+Italiano
+Deutsch
+Português
+Français
+Đăng nhập
+Thử thách FTMO
+Thử thách FTMO
+CFD
+Bắt đầu
+Tổng quan về CFD
+Phí
+Quy trình hoạt động
+Bản dùng thử miễn phí
+Mục tiêu giao dịch
+Tăng trưởng
+Tâm lý giao dịch
+Chương trình Premium
+Kế hoạch nâng cấp vốn
+Futures
+New
+Get Started
+Futures Overview
+Pricing
+How Futures Work
+Trading Objectives
+Giao dịch
+Những điều cần thiết trong giao dịch
+Lịch kinh tế
+Các cập nhật
+Các mã giao dịch
+Các nền tảng giao dịch
+Công cụ & Dịch vụ
+Tổng quan công cụ
+Leaderboard
+App Suite
+Kiến thức
+FAQ
+Blog
+Học viện
+Về chúng tôi
+Công ty
+Về chúng tôi
+FTMO Group
+Shop
+Kết nối
+Liên hệ với chúng tôi
+Dành cho truyền thông
+Tuyển dụng
+Search
+VI
+Tiếng Việt
+Čeština
+English
+Español
+Italiano
+Deutsch
+Português
+Français
+Thử thách FTMO
+Đăng nhập
+CFDs
+Futures
+$refs.faqSearch?.focus())">
+Viết câu hỏi của bạn tại đây...
+Làm quen với FTMO
+FTMO là gì?
+Tại sao nên tham gia FTMO?
+Những ai có thể tham gia FTMO?
+FTMO có phải là một công ty uy tín?
+Văn phòng của công ty ở đâu? Làm thế nào có thể liên hệ được với công ty?
+Bắt đầu Thử Thách FTMO như thế nào?
+Đơn hàng & Thanh toán
+Những loại phí nào được tính và chúng có phải là phí định kỳ không?
+Những phương thức thanh toán nào có thể được sử dụng?
+Tôi đã thanh toán cho đơn hàng, khi nào tôi sẽ nhận được tài khoản?
+Tại sao phải trả phí?
+Phí tham gia có được hoàn trả không?
+Quy trình đánh giá
+Các loại tài khoản khác nhau do FTMO cung cấp có gì khác nhau?
+Loại tài khoản Swing là gì và hoạt động ra sao?
+Tôi đã vượt qua thành công, bây giờ phải làm gì?
+Tài khoản FTMO
+Nhà giao dịch FTMO là ai và làm thế nào để đạt được danh hiệu này?
+Mất bao lâu để trở thành nhà giao dịch FTMO?
+Danh tính FTMO là gì và khi nào tôi phải hoàn thành nó?
+Mối quan hệ pháp lý giữa Nhà giao dịch FTMO và FTMO sau khi ký kết các Điều khoản & Điều kiện của Tài khoản FTMO là gì?
+Làm thế nào để tôi rút phần thưởng của mình?
+Trading Objectives
+Các mục tiêu giao dịch là gì?
+Quy tắc nhất quán hoạt động như thế nào?
+Sự khác biệt giữa Số dư và Vốn chủ sở hữu là gì?
+Các quy tắc
+Tôi có thể giao dịch theo tin tức (Trade News) được không?
+Tôi có thể giao dịch vào cuối tuần không?
+Tôi có thể giữ vị thế qua đêm hoặc qua cuối tuần không?
+Tôi có thể đi du lịch hoặc sử dụng VPN/VPS không?
+Tôi có thể gộp các tài khoản của mình không?
+Tôi có thể thay đổi nền tảng hoặc loại tài khoản của mình không?
+Tôi có thể có bao nhiêu tài khoản?
+Điểm kỷ luật là gì?
+"Giao dịch theo thị trường thực" là gì?
+Có thể giao dịch bằng những công cụ tài chính nào và được phép sử dụng những chiến lược nào?
+Các nền tảng giao dịch
+Tôi có thể sử dụng nền tảng nào cho việc giao dịch của mình?
+Hạ tầng kỹ thuật của FTMO hoạt động như thế nào?
+Các thông số tài khoản là gì?
+Làm cách nào để đăng nhập vào MT4?
+Làm cách nào để đăng nhập vào MT5?
+Làm cách nào để đăng nhập vào cTrader?
+Làm cách nào để đăng nhập vào TradingView?
+Các ứng dụng và dịch vụ khác
+Ngoài Tài khoản FTMO, công ty có cung cấp giá trị nào khác cho các nhà giao dịch không?
+Bạn có cung cấp Bản dùng thử miễn phí không?
+Tâm lý giao dịch thì thế nào? Có sự giúp đỡ nào ở đây không?
+Điểm thưởng FTMO là gì và tôi có thể sử dụng chúng như thế nào?
+Chương trình Premium
+Làm thế nào để tôi đủ điều kiện đạt được cấp độ Prime?
+Các lợi ích của cấp độ Prime là gì?
+Làm thế nào để tôi đủ điều kiện đạt được cấp độ Supreme?
+Các lợi ích của cấp bậc Supreme là gì?
+Khi đã ở cấp độ Prime, tôi có được giữ cấp độ đó mãi mãi không?
+Chương trình Premium có tương thích với Kế hoạch nâng cấp vốn không?
+Có yêu cầu cụ thể nào về quy mô của tài khoản khi đăng ký cấp bậc Prime không?
+Có điều gì khiến tôi không đủ điều kiện tham gia chương trình Premium không?
+Tất cả FAQ
+CFDs
+Mối quan hệ pháp lý giữa Nhà giao dịch FTMO và FTMO sau khi ký kết các Điều khoản & Điều kiện của Tài khoản FTMO là gì?
+Mối quan hệ pháp lý giữa Nhà giao dịch FTMO và FTMO sau khi ký kết các Điều khoản & Điều kiện của Tài khoản FTMO là gì?
+Một Nhà giao dịch FTMO chính thức được coi là khách hàng đang được áp dụng các Điều khoản & Điều kiện của Tài khoản FTMO .
+Mối quan hệ giữa Nhà giao dịch FTMO và FTMO được xác lập dựa trên các Điều khoản & Điều kiện của Tài khoản FTMO. Các Điều khoản & Điều kiện này sẽ được ký kết sau khi bạn đáp ứng thành công các Mục tiêu giao dịch tương ứng (đối với Thử thách FTMO 1-bước, các Mục tiêu giao dịch được coi là đã đạt được khi vượt qua Thử thách FTMO. Đối với Thử thách FTMO 2-bước, các Mục tiêu giao dịch được coi là đã đạt được sau khi vượt qua cả Thử thách FTMO và Xác minh) cũng như hoàn tất quy trình KYC/KYB.
+Nếu sở hữu FTMO Instant Account , các điều khoản của tài khoản này được quy định trong 2 tài liệu mà bạn chấp nhận khi đặt mua sản phẩm. Các Điều khoản và Điều kiện của Thử thách FTMO chủ yếu quy định việc mua sản phẩm và giao dịch mô phỏng cho đến khi bạn đủ điều kiện nhận Phần thưởng đầu tiên. Tại thời điểm đó, Phần thưởng của bạn được xử lý theo Điều khoản và Điều kiện của Tài khoản FTMO, và tất cả các giao dịch mô phỏng tiếp theo sẽ tiếp tục theo Điều khoản và Điều kiện của Tài khoản FTMO.
+Các Điều khoản & Điều kiện của Tài khoản FTMO là văn bản có tính ràng buộc pháp lý , quy định quyền và nghĩa vụ của cả chúng tôi và bạn. Nếu bạn muốn xem bản mẫu hợp đồng này, vui lòng liên hệ với chúng tôi qua email [email protected] .
+Quy trình ký kết hợp đồng diễn ra như thế nào?
+Khi bạn đạt được các Mục tiêu giao dịch của Thử thách FTMO 1-bước hoặc 2-bước, mục Danh tính FTMO trong Khu vực khách hàng sẽ được mở khóa. Nếu sở hữu FTMO Instant Account, bạn sẽ thực hiện quy trình xác minh Danh tính FTMO khi yêu cầu nhận Phần thưởng đầu tiên . Bạn sẽ không cần thực hiện lại Danh tính FTMO nếu nó đã được xử lý và vẫn còn hiệu lực. Tại mục Danh tính FTMO, bạn có thể lưu thông tin cá nhân hoặc thông tin công ty cùng các tài liệu liên quan để đội ngũ tuân thủ của chúng tôi tiến hành xác minh. Quá trình kiểm tra tuân thủ thường mất chưa đến 1 ngày làm việc đối với đăng ký cá nhân và tối đa 3 ngày làm việc đối với đăng ký công ty. Sau khi mọi thông tin được đội ngũ tuân thủ xác minh, chúng sẽ được lưu trữ an toàn trong hệ thống, sẵn sàng sử dụng khi bạn muốn bắt đầu giao dịch với (các) Tài khoản FTMO hoặc ký kết các Điều khoản & Điều kiện cho Tài khoản FTMO mới.
+Có ba loại giấy tờ tùy thân khác nhau để bạn lựa chọn khi xác minh danh tính:
+Cá nhân (Trong trường hợp này, bạn cần thực hiện quy trình xác minh thông tin khách hàng (Know Your Customer – KYC). Yêu cầu bao gồm giấy tờ tùy thân hợp lệ do cơ quan nhà nước cấp có thể hiện quốc tịch và bằng chứng xác nhận địa chỉ)
+Doanh nhân (Trong trường hợp này, bạn cần thực hiện quy trình xác minh thông tin doanh nghiệp (KYB – Know Your Business). Các giấy tờ bắt buộc bao gồm: giấy tờ tùy thân hợp lệ do cơ quan nhà nước cấp có ghi rõ quốc tịch, giấy tờ xác nhận đăng ký kinh doanh với tư cách doanh nhân và bằng chứng xác nhận địa chỉ)
+Công ty (Trong trường hợp này, bạn cần thực hiện quy trình xác minh thông tin doanh nghiệp (KYB – Know Your Business). Các giấy tờ bắt buộc bao gồm: giấy tờ tùy thân hợp lệ do chính phủ cấp thể hiện quốc tịch và bằng chứng về địa chỉ của người đại diện của công ty, giấy tờ xác nhận sự tồn tại hợp pháp của công ty và bằng chứng về địa chỉ của công ty)
+Theo mặc định, hệ thống cho phép bạn xác minh tư cách pháp nhân mà bạn đã chọn khi tạo đơn hàng đầu tiên. Nếu muốn thay đổi tư cách (Cá nhân / Doanh nhân / Công ty), vui lòng gửi tin nhắn cho chúng tôi qua địa chỉ email [email protected] . Lưu ý rằng mỗi tài khoản đăng ký chỉ được phép thay đổi tư cách một lần . Bạn cũng có thể thực hiện thay đổi này vào thời điểm khác, miễn là bạn đang là Nhà giao dịch FTMO và chưa thực hiện giao dịch nào trên (các) Tài khoản FTMO hiện tại của mình, ví dụ: sau khi rút Phần thưởng và được cấp một Tài khoản FTMO mới.
+Sau khi hoàn tất quy trình xác minh KYC hoặc KYB, các Điều khoản & Điều kiện của Tài khoản FTMO sẽ được mở khóa để bạn xem và ký kết trong Khu vực khách hàng, Nhà giao dịch FTMO, Hợp đồng. Bạn sẽ có thể đọc kỹ hợp đồng và sử dụng Danh tính FTMO của mình để hoàn tất việc ký kết chỉ với vài thao tác nhấp chuột. Quy trình này không áp dụng cho FTMO Instant Account, vì bạn đã ký các Điều khoản & Điều kiện Tài khoản FTMO ngay khi mua tài khoản. Ngay sau khi Danh tính FTMO của bạn được phê duyệt, các Điều khoản & Điều kiện Tài khoản FTMO sẽ tự động có hiệu lực .
+Khu vực khách hàng được thiết kế trực quan, dễ hiểu và cung cấp hầu hết thông tin cần thiết cho bạn. Tuy nhiên, bạn luôn có thể liên hệ với bộ phận hỗ trợ khách hàng của chúng tôi nếu cần được hỗ trợ.
+Thể nhân (Cá nhân)
+Để hoàn tất các Điều khoản & Điều kiện của Tài khoản FTMO và sau đó lập hóa đơn thanh toán với tư cách là cá nhân, bạn sẽ chọn tùy chọn “ Thể nhân ” và được yêu cầu cung cấp:
+Giấy tờ tùy thân hợp lệ do cơ quan nhà nước cấp có ghi rõ quốc tịch , thường là hộ chiếu hoặc thẻ căn cước. Trong trường hợp giấy tờ tùy thân của bạn chỉ sử dụng một trong các ngôn ngữ sau, vui lòng sử dụng hộ chiếu quốc tế có thông tin được chuyển tự sang chữ Latinh: Amharic, Ả Rập, Armenia, Bengal, Miến Điện, Dari, Dhivehi, Farsi, Gruzia, Hindi, Khmer (Campuchia), Kinyarwanda, Lào, Mông Cổ, Nepal, Sinhala, Urdu. Lưu ý rằng chúng tôi không chấp nhận giấy phép lái xe, giấy phép cư trú hoặc các loại giấy tờ khác không hiển thị thông tin quốc tịch.
+Bằng chứng xác nhận địa chỉ : phải là tài liệu hoàn chỉnh, bao gồm họ tên, địa chỉ và ngày cấp, chẳng hạn như: sao kê ngân hàng, sao kê tài khoản, hợp đồng thuê nhà, văn bản từ cơ quan nhà nước có thẩm quyền hoặc hóa đơn dịch vụ tiện ích (gas, điện, nước, internet, v.v.).
+Vui lòng đảm bảo rằng giấy tờ chứng minh địa chỉ của bạn được cấp trong vòng 6 tháng trở lại đây và hiển thị rõ ràng họ tên đầy đủ, địa chỉ cư trú đầy đủ cũng như ngày cấp.
+Doanh nhân (pháp nhân)
+Để hoàn tất các Điều khoản & Điều kiện của Tài khoản FTMO và sau đó xuất hóa đơn thanh toán với tư cách là doanh nhân (thể nhân có giấy phép kinh doanh), hãy chọn tùy chọn “ Doanh nhân “. Bạn sẽ được hướng dẫn thực hiện quy trình gồm 2 bước : xác minh danh tính và thu thập thông tin về doanh nhân.
+Bước một: Xác minh danh tính
+Bước này nhằm xác minh danh tính của doanh nhân. Các tài liệu bắt buộc bao gồm:
+Giấy tờ tùy thân do cơ quan nhà nước cấp: Hộ chiếu hoặc thẻ căn cước có ghi rõ quốc tịch. Nếu giấy tờ tùy thân của bạn chỉ sử dụng một trong các ngôn ngữ sau, vui lòng sử dụng hộ chiếu quốc tế có thông tin được chuyển tự sang bảng chữ cái Latinh: Amharic, Ả Rập, Armenia, Bengal, Miến Điện, Dari, Dhivehi, Farsi, Gruzia, Hindi, Khmer (Campuchia), Kinyarwanda, Lào, Mông Cổ, Nepal, Sinhalese, Urdu. Lưu ý rằng chúng tôi không chấp nhận giấy phép lái xe, giấy phép cư trú hoặc các loại giấy tờ khác không hiển thị thông tin quốc tịch.
+Bằng chứng xác nhận địa chỉ: Ví dụ như sao kê ngân hàng, hóa đơn hoặc hóa đơn dịch vụ tiện ích (điện, nước, v.v.). Tài liệu phải bao gồm tên, địa chỉ và ngày cấp, đồng thời không được quá 6 tháng .
+Bước hai: Thu thập thông tin về doanh nhân và các tài liệu bổ trợ.
+Thông tin bắt buộc:
+Thông tin chung: Số đăng ký, mã số thuế GTGT (nếu có), địa chỉ đăng ký, quốc gia đăng ký và thông tin liên hệ.
+Thông tin về người đại diện: Họ tên, ngày sinh, quốc tịch.
+Cơ cấu sở hữu: Thông tin về bất kỳ cổ đông nào nắm giữ trên 25% cổ phần của công ty (chủ sở hữu hưởng lợi cuối cùng – UBO) – yêu cầu này áp dụng đối với các doanh nhân đến từ một số khu vực pháp lý. Trong trường hợp không có cổ đông nào khác ngoài bạn, vui lòng điền thông tin của chính bạn với tư cách là doanh nhân.
+Các tài liệu bắt buộc:
+Xác nhận đăng ký: Ví dụ như giấy chứng nhận đăng ký doanh nghiệp, trích lục gần đây từ cơ quan đăng ký nhà nước, v.v. Tài liệu không được cũ quá 12 tháng .
+Bằng chứng về địa chỉ của doanh nhân: Sao kê ngân hàng, hóa đơn, bản sao kê tài khoản, hợp đồng thuê mặt bằng, hóa đơn tiện ích, trích lục từ cơ quan đăng ký nhà nước (hoặc tài liệu tương đương do cơ quan đăng ký nhà nước cấp), giấy xác nhận tư cách pháp nhân/chức vụ, hoặc các tài liệu tương tự khác của doanh nghiệp.
+Yêu cầu về ngôn ngữ:
+Chúng tôi chấp nhận các tài liệu sử dụng bảng chữ cái Latinh, cũng như tiếng Ả Rập, tiếng Serbia, tiếng Ukraina, tiếng Nga và tiếng Nhật. Các tài liệu sử dụng bảng chữ cái Latinh sẽ được xử lý nhanh hơn. Nếu bạn nộp tài liệu bằng tiếng Ả Rập, tiếng Serbia, tiếng Ukraina, tiếng Nga hoặc tiếng Nhật, quá trình xử lý có thể mất nhiều thời gian hơn. Vui lòng cung cấp bản dịch sang tiếng Anh hoặc tiếng Pháp đối với các tài liệu sử dụng hệ thống chữ viết khác.
+Nếu các tài liệu đã nộp chưa đầy đủ, thông tin hoặc tài liệu bổ sung có thể được yêu cầu sau khi đánh giá.
+Công ty (pháp nhân)
+Để ký kết các Điều khoản & Điều kiện của Tài khoản FTMO và sau đó lập hóa đơn cho các khoản thanh toán của một pháp nhân (bạn phải là giám đốc và cổ đông của công ty liên quan), hãy chọn tùy chọn Công ty và bạn sẽ được yêu cầu cung cấp:
+Các tài liệu chính thức xác nhận thông tin cơ bản về pháp nhân:
+Tài liệu xác nhận sự tồn tại hợp pháp của công ty , chẳng hạn như giấy chứng nhận thành lập/đăng ký, bản trích lục gần đây từ cơ quan đăng ký doanh nghiệp nhà nước, giấy xác nhận người có thẩm quyền, giấy xác nhận tình trạng hoạt động tốt, bản ghi nhớ/điều lệ thành lập/đăng ký hoặc các tài liệu tương tự khác.
+Tài liệu cho phép xác định tất cả các Chủ sở hữu hưởng lợi cuối cùng (những cá nhân nắm giữ trên 25% cổ phần) của công ty, chẳng hạn như sổ đăng ký cổ đông, bản kê khai thông tin, trích lục gần đây từ cơ quan đăng ký doanh nghiệp nhà nước, giấy xác nhận tư cách người có thẩm quyền, biên bản ghi nhớ/điều lệ thành lập/đăng ký công ty, thỏa thuận tín thác hoặc các tài liệu tương tự khác. Xin lưu ý rằng sao kê ngân hàng không được chấp nhận làm tài liệu xác nhận tư cách Chủ sở hữu hưởng lợi cuối cùng.
+Bằng chứng xác nhận địa chỉ , chẳng hạn như sao kê ngân hàng, hóa đơn, bản sao kê tài khoản, hợp đồng thuê nhà/thuê mặt bằng, hóa đơn dịch vụ tiện ích, trích lục từ cơ quan đăng ký nhà nước (hoặc tài liệu tương đương do cơ quan đăng ký nhà nước cấp), giấy xác nhận tư cách pháp nhân/chức danh, hoặc các tài liệu doanh nghiệp tương tự khác.
+Các tài liệu được cung cấp không được ghi ngày quá 12 tháng trước ngày nộp và sự kết hợp giữa chúng phải cung cấp bằng chứng để xác minh:
+Tên công ty
+Mã số đăng ký của công ty
+Hình thức pháp lý (loại hình) của công ty
+Địa chỉ đăng ký của công ty
+Ngày thành lập
+Nếu nhận thấy hồ sơ chưa đầy đủ, chúng tôi có thể yêu cầu quý khách cung cấp thêm thông tin hoặc tài liệu sau khi đã xem xét các tài liệu đã nộp.
+Trong trường hợp pháp nhân có nhiều tầng cấu trúc doanh nghiệp (ví dụ: các công ty nắm giữ cổ phần trung gian), cần cung cấp các tài liệu xác nhận tư cách pháp nhân của từng công ty.
+Thông tin về các cá nhân hành động thay mặt công ty liên quan đến mối quan hệ kinh doanh với FTMO (các Nhà giao dịch FTMO).
+Giấy tờ tùy thân hợp lệ có ghi rõ quốc tịch – hộ chiếu hoặc giấy tờ tùy thân khác. Nếu giấy tờ tùy thân của bạn chỉ sử dụng một trong các ngôn ngữ sau, vui lòng sử dụng hộ chiếu quốc tế có thông tin được chuyển tự sang bảng chữ cái Latinh: Amharic, Ả Rập, Armenia, Bengal, Miến Điện, Dari, Dhivehi, Farsi, Gruzia, Hindi, Khmer (Campuchia), Kinyarwanda, Lào, Mông Cổ, Nepal, Sinhalese, Urdu. Lưu ý rằng chúng tôi không chấp nhận giấy phép lái xe, giấy phép cư trú hoặc các giấy tờ khác không hiển thị thông tin quốc tịch.
+Giấy ủy quyền đại diện cho công ty (không cần tải lên giấy ủy quyền nếu bạn là giám đốc công ty hoặc giữ chức vụ điều hành có tên trong cơ quan đăng ký doanh nghiệp của Nhà nước).
+Xin lưu ý rằng chúng tôi không thể ký hợp đồng với các tổ chức phi lợi nhuận hoặc các quỹ tín thác , cũng như với các công ty thuộc sở hữu hoặc đồng sở hữu của các tổ chức phi lợi nhuận hoặc quỹ tín thác đó.
+Tại sao nên tham gia FTMO?
+Tại sao phải trả phí?
+Nhà giao dịch FTMO là ai và làm thế nào để đạt được danh hiệu này?
+Tôi có thể thay đổi nền tảng hoặc loại tài khoản của mình không?
+Bắt đầu Thử Thách FTMO như thế nào?
+Bắt đầu giao dịch với FTMO ngay hôm nay
+Dùng bao nhiêu bản dùng thử miễn phí tùy thích
+Tài khoản với số vốn lên tới 200 000 USD
+Thời gian không hạn chế
+Giao dịch với FTMO
+Dùng thử miễn phí
+Worldwide Reviews
+Chứng minh kỹ năng của bạn cùng một công ty uy tín
+Chúng tôi đã đồng hành cùng các nhà giao dịch từ năm 2015. Hãy gia nhập cùng họ ngay hôm nay!
+4.5Triệu+
+Khách hàng trên toàn thế giới
+$650Triệu+
+Phần thưởng được chi trả trên toàn thế giới
+4.8/5
+Trustpilot
+FAQ
+Quy trình hoạt động
+Chương trình liên kết
+Mục tiêu giao dịch
+Đồ lưu niệm FTMO
+Support
+Trò chuyện với chúng tôi
+Bắt đầu trò chuyện
+[email protected]
++420 910 920 310
+CFD
+Tổng quan về CFD
+Phí
+Quy trình hoạt động của CFD
+Bản dùng thử miễn phí FTMO
+Các mục tiêu giao dịch
+Thử thách FTMO 1-bước
+Thử thách FTMO 2-bước
+FTMO Instant Account
+Bảng so sánh
+Các hoạt động giao dịch bị cấm
+Phát triển
+Chương trình Premium
+Gia tăng phần thưởng và Kế hoạch nâng cấp vốn
+Futures
+EN Only
+Futures Overview
+Pricing
+How Futures Works
+Trading Objectives
+Comparison Table
+Forbidden Trading Practices
+Giao dịch
+Lịch kinh tế
+Các cập nhật
+Các mã giao dịch
+Các nền tảng giao dịch
+Công cụ & Dịch vụ
+Tổng quan công cụ
+Trading Psychology
+Bảng xếp hạng
+App Suite
+Tài nguyên
+FAQ
+Blog
+Học viện
+Thông tin
+Về chúng tôi
+Careers (EN)
+Liên hệ
+Dành cho truyền thông
+Press Releases (EN)
+Chương trình liên kết
+Nhận các thông tin đặc biệt từ FTMO
+Góc nhìn giao dịch từ chuyên gia
+Cập nhật mới nhất
+Ưu đãi đặc biệt
+Đăng ký
+Đăng ký đã được thực hiện thành công.
+Tất cả thông tin liên quan đến giao dịch trên các thị trường tài chính được cung cấp trên trang web này chỉ nhằm mục đích nghiên cứu và không mang tính chất như một khuyến nghị đầu tư, kinh doanh cụ thể. Nó cũng không đóng vai trò như một phân tích cơ hội đầu tư hay một khuyến nghị chung có liên quan đến giao dịch của các công cụ đầu tư. FTMO chỉ cung cấp cho các nhà giao dịch những dịch vụ giao dịch được mô phỏng và công cụ mang tính giáo dục. Các thông tin trên trang web này không dành cho các cư dân ở bất kỳ quốc gia hoặc khu vực tài phán nào, nơi mà việc chia sẻ hoặc sử dụng chúng sẽ trái với luật pháp hoặc quy định của địa phương. Các công ty của FTMO không hoạt động như một nhà môi giới và không chấp nhận bất cứ khoản tiền gửi nào của các khách hàng. Giải pháp kỹ thuật cho các nền tảng giao dịch của FTMO và nguồn dữ liệu được cung cấp bởi các tổ chức cung cấp thanh khoản.
+Copyright © 2026 FTMO s.r.o. Bảo lưu mọi quyền.
+Cài đặt Cookie
+Cookie
+Thông tin về công ty
+Các điều khoản & điều kiện
+Chính sách quyền riêng tư
+Made with for trading

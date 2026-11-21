@@ -1,0 +1,557 @@
+TopstepX™ | Topstep Help Center Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Skip to main content
+Discord Topstep TopstepTV
+Discord Topstep TopstepTV
+Search for articles...
+All Collections
+TopstepX™
+TopstepX™
+TopstepX™
+One platform. Everything you need. Here’s how TopstepX™ works.
+Updated this week
+Table of contents
+The Basics
+TopstepX™ is Topstep’s trading platform built for execution, risk management, and performance tracking. Access it at topstepx.com/trade or directly from your Dashboard.
+​
+Click here to access TopstepX™. Your login credentials are the same as those you use to access your Topstep Dashboard.
+👉 Heads up! Starting November 12, 2026, your login credentials for TopstepX and the Topstep Dashboard will be the same.
+Forgot your password? Reset it here !
+Using your old login? You'll see an error message directing you to your Dashboard credentials.
+Google and Facebook sign-in will still work if they're connected to your Dashboard account.
+Have questions? Contact Support .
+You can also launch TopstepX right from your dashboard!
+Once you are logged into TopstepX™, you are ready to trade! Just be sure to select your account in the top left!
+TopstepX Features
+TopstepX Features: Select each feature drop-down below to learn more!
+Account Nicknames
+Account Nicknames
+Give your accounts names so you don't trade the wrong one.
+Click the pencil icon next to any account in the dropdown → enter nickname → Save
+Works on all account types
+Max 30 characters
+Resets clear nicknames — new account number, fresh slate
+Nicknames aren't visible to Trader Support — always provide your original account number
+Alerts
+Alerts
+Turn Sound Alerts and Visual Alerts on or off.
+Setup: Settings → Misc → Alerts → toggle Sound Alerts and/or Visual Alerts.
+Balances Font Size
+Balances Font Size
+Adjust the font size of the balances shown in your header.
+Setup: Settings → Misc → Balances Font Size.
+Concurrent Sessions Limit
+Concurrent Sessions Limit
+Exchange regulations limit your access to one concurrent user session across all devices (PC, mobile, etc.). Logging into a new device will automatically disconnect your previous session.
+Note: You can open multiple browser windows or tabs simultaneously, provided they are all running on the same device and using the same browser version.
+Contract Rollover
+Contract Rollover
+TopstepX auto-updates every futures product to the current front month — no need to track rollover dates or volume yourself.
+Contracts are automatically rolled over during the daily market close window (4:00 PM – 5:00 PM CST) based on an internal algorithm to determine the optimal time to roll active contracts prior to the next trading day based on volume, open interest, and expiration dates.
+Custom Layouts
+Custom Layouts
+Drag any component's header to rearrange your workspace. A yellow guide arrow shows where it'll land.
+Adjust your layout → "draft" appears next to the layout name.
+Click Save Layout to keep changes, or Save as New Layout to create a new one.
+Reset Layout restores the default setup.
+Delete Layout removes a saved layout you don't need anymore.
+Multiple windows: Pop out multiple windows by clicking the double-square icon in the top-right corner. Once a new window or tab opens, you can maximize individual components (Chart, DOM, Quotes, etc.) by clicking the square icon in the top-right corner of that section. There is no limit to the number of windows you can have open at once.
+👉 Important: Exchange rules limit you to 1 device/browser at a time — you cannot have it open simultaneously on a PC and a phone, on two different computers, or on two different browsers (like Chrome and Edge) at the same time. You are permitted to have multiple tabs or windows open at once on a single browser.
+Extended and Regular Trading Hours Toggle
+Extended and Regular Trading Hours Toggle
+Switch between ETH and RTH charts for better context.
+Extended Trading Hours ( ETH) — near 24-hour coverage. Lower liquidity. More volatile.
+Regular Trading Hours ( RTH) — higher participation. Better liquidity. More stable price action.
+Useful for gap trading, breakout analysis, and volume profile work.
+Exporting Trades
+Exporting Trades
+Exporting your trades is a powerful way to review performance, refine strategies, manage risk, and better understand your trading habits.
+How to Export Your Trades
+Click the Orders or Trades tab at the bottom of the page.
+Click "Export."
+Select your desired date range and click "Export."
+A confirmation will appear at the bottom-left of your screen once complete.
+From there, upload your file to Excel, Google Sheets, or any program you prefer.
+Hotkeys
+Hotkeys
+Keyboard shortcuts for faster execution. Fewer clicks. Fewer errors.
+Setup:
+Settings gear → Hotkeys
+Click Set Hotkey next to the action you want
+Press your key(s) → Confirm
+Press H on the DOM or Orderbook to enable
+Not set by default — configure your own
+Desktop only — not supported on mobile
+Avoid system-reserved keys (e.g., CTRL+R reloads the page)
+Practice in a Practice Account first
+Pressing a hotkey triggers that action across all active components where hotkeys are enabled. For example: if hotkeys are enabled across multiple order panels with different symbols selected, pressing the hotkey executes a market buy for each symbol.
+Performance Dashboard
+Performance Dashboard
+Real-time view of your trading activity. Desktop only. Available for Practice, Trading Combine, and Express Funded Accounts.
+Access: Performance Stats tab on the left.
+Includes:
+Balance High/Current/Low, Best Day %, Avg Win/Loss, Best/Worst Trade, Win Rate, Long vs. Short %, Weekly/Monthly P&L
+Trade Log with full entry/exit detail
+Trader Journal — log emotions, notes, observations
+Calendar with Daily P&L
+Social Sharing
+Stats update as trades complete. Multiple tabs open? Refresh the performance page after each trade.
+Price Alerts
+Price Alerts
+Price Alerts on TopstepX™ allow you to track key market levels and receive instant notifications when your targets are met. Learn more here !
+Track Your Preferred Products
+Track Your Preferred Products
+Starred products move to the top of the dropdown.
+No traditional watchlist. Use favorites instead:
+Open the Order Ticket or DOM
+Click the Contract dropdown
+Star ⭐ your preferred products
+Starred products move to the top of the dropdown.
+Trade Copier
+Trade Copier
+The Trade Copier lets you mirror trades from a Lead account to 1 or more Follower accounts automatically — so you can run the same strategy across multiple accounts without placing every order manually.
+Lead account — where you place your trades
+Follower account(s) — where those trades are copied to
+✋ Before you connect accounts, please know:
+The Lead account must have the lowest Maximum Position Size (MPS) of all accounts in the group. Running a 50K, 100K, and 150K? The 50K is your Lead.
+If your Lead and Follower accounts are at different Scaling Plan tiers — meaning their margin requirements differ — the Trade Copier may disconnect automatically at the start of a new trading day. Always verify your copy trading settings at the start of each session.
+Trade copying is only available for Trading Combine® and Express Funded Account® accounts. Live Funded Account® accounts cannot use the Trade Copier.
+Filled orders on Follower accounts only appear in the Order Log after they're filled — not when placed.
+While a Follower account is connected, you can't trade it directly. If the order buttons are greyed out, the account is still linked. Remove it in Settings to trade it independently.
+Executions are mirrored — but exact fill price and timing may vary slightly due to slippage, liquidity, and market conditions.
+Turning off the Trade Copier mid-trade will immediately flatten all Follower accounts.
+Only one Trade Copier group (one Lead and its Followers) can be set up at a time. Setting up a new group replaces the previous one.
+Linking / Unlinking
+If the Lead hits its Daily Loss Limit or is auto-liquidated, all Follower accounts are flattened with it and no further trades copy while the Lead is locked out. The accounts stay linked — copying resumes when the Lead can trade again. You may unlink the accounts manually to trade the followers separately.
+If the Lead hits its Maximum Loss Limit, the account is permanently violated; unlink the Followers in Settings to trade them independently.
+If you select Liquidate Only when setting your PDLL/PDPT , when one of these violations fires on a follower, that account does get dropped from the copier before it's flattened.
+If you select Liquidate and Block when setting your PDLL/PDPT , when one of these violations fires on a follower, the account is locked out. It auto-resumes the next trading and does not get removed from Trade Copier.
+If the Scaling plan does not match between the Leader and followers - follower account will be automatically removed at the start of the trading day
+When a Payout request is submitted, Follower accounts are automatically unlinked. Check your settings at the start of every session.
+⚠️ Important: Please read more about how copy trading can affect potential for hedging here .
+Risk Settings for Follower Accounts
+Follower accounts support a Personal Daily Loss Limit (PDLL) and/or Personal Daily Profit Target (PDPT). Trade Limits, Symbol Blocks, and Contract Limits are not available on Follower accounts.
+Where to find Settings: In TopstepX, Settings is the gear icon on the left side of the screen.
+Setting Up the Trade Copier
+Go to Settings → Copy Trading .
+Select your Lead account and check your Follower accounts .
+Click Save Changes .
+Turning Off the Trade Copier
+Go to Settings → Copy Trading .
+Click Clear → Save Changes .
+Adding or Removing Follower Accounts
+Go to Settings → Copy Trading .
+Check or uncheck accounts under Follow → Save Changes .
+Using the Trade Copier on Mobile
+Open TopstepX in your mobile browser.
+Tap 3 dots → Trading → Copy Trading .
+Select your Lead, check your Followers, tap Save Changes .
+Trader Hub
+Trader Hub
+Real-time market news and economic events, powered by Financial Juice.
+Market News Feed — Up-to-date, real-time breaking news and market developments.
+Economic Events Calendar — A live global schedule shown in your PC's time zone.
+Data Columns: Shows the Time/Date , the Actual observed result, the Forecast (analyst estimates), and the Previous reported value.
+Impact Levels: Events are color-coded by market impact: Red (High), Orange (Medium), and Yellow (Low).
+⚠️ Important: High-impact news events bring volatility — wider spreads, fast price swings, and slippage. Trade around them carefully.
+Trading Tones
+Trading Tones (Custom Audio Notifications)
+Upload custom sounds for key platform events.
+​
+Where: Settings → Misc → Custom Sounds
+​
+Supported events: Order Filled, TP/SL, Order Rejected, Market Open/Close, Order Cancelled, Position Closed (ITM/OTM), PDLL, MLL, DLL, PDPT
+​
+File requirements: Max 3 MB — .mp3, .wav, .ogg, .m4a, .webm
+Preview, replace, or delete sounds anytime. Desktop settings carry over to mobile if audio is enabled on your device.
+How to upload a Trading Tone
+Find the notification you want to customize
+Click the Upload icon next to it
+Select your custom audio file from your local computer
+Click Upload to apply the sound
+Important Notes
+Audio uploads are account-specific and not visible to other traders
+Desktop audio settings carry over to mobile if mobile audio is enabled
+Some notifications are new and not included in Hoag's audio pack — only a default sound is available until you upload a custom file
+TopstepX Order Management
+TopstepX Order Management: Select each feature drop-down below to learn more!
+Position Risk / Profit Brackets
+Adding Position Risk / Profit Brackets to your TopstepX Orders & Positions
+Designed to help Traders stay disciplined. Attach predefined stop-loss and take-profit levels to every position automatically. Set at the account level — different accounts can run different strategies.
+👉 Important: The minimum distance Position Brackets can be placed is 4 ticks from the entry price. If you enter a dollar value for your risk and profit amounts that would make your Position Brackets less than 4 ticks from the entry price, TopstepX will default your Position Brackets 4 ticks away automatically.
+Setup:
+Settings → Risk Settings tab
+Account Settings → Brackets
+Toggle Position Risk / Profit Brackets ON → enter Risk and Profit dollar amounts
+Save
+Adjust an active trade by dragging the P&L bar directly.
+Auto-OCO Brackets
+Auto-OCO Brackets
+Every entry gets its own take-profit and stop-loss — no manual placement needed. (OCO = One Cancels Other)
+When one fills, the other cancels automatically
+Brackets apply per entry, not across the full position
+Must be flat to enable or switch bracket types
+Using the DOM? OCO must also be enabled there.
+Setup: Settings → Risk Settings → Switch to Auto-OCO → set values → Save.
+​
+Enable Auto-OCO brackets directly on the specific interface(s) you trade from, whether that is the Chart, Order Panel, DOM, or a combination of them.
+👉 Important: If you use ticks, TopstepX requires you to enter a value greater than 5 ticks. If you use a dollar value, TopstepX will reject your orders if the dollar value entered does not place your brackets at least 4 ticks away from the entry price.
+Charting
+Charting
+TopstepX supports up to 8 charts on a single screen, each defaulting to /ES. Leave charts unlinked for independent operation, or use Symbol Link (color-coded) to keep them in sync.
+Chart Types
+TopstepX supports 16 chart types — Bars, Candles, Hollow Candles, Line, Line with Markers, Step Line, Area, HLC Area, Baseline, Columns, High-Low, Heikin Ashi, Renko, Line Break, Kagi, and Point & Figure. Change type and timeframe from the dropdowns in the chart's top-left corner. To set a custom timeframe, click the chart and type your interval — only listed timeframes are valid.
+Symbol & Component Linking
+Linking syncs a symbol change across all components (charts, DOM) assigned the same color. Click the link icon in any component header to assign a color. For charts, click "Add Chart Link" while the chart is active.
+Chart Executions
+Displays trade entries and exits directly on your charts. Useful for identifying patterns, reviewing decision-making, and journaling trades. All entry/exit points stack and remain visible even on larger candles. Disabled by default.
+To enable: Settings → Charts & Data → toggle "Show Chart Executions" → Save
+Place an order — right-click at your price and pick the order type
+Modify a working order — click and drag it to a new price
+Add a Take Profit / Stop Loss — click your position indicator and drag up or down to set a TP or SL bracket. Modify the same way
+Cancel an order — click the "X" next to the working order
+Change symbol — click the current symbol and search, or click the chart and type the symbol directly
+Chart Value Display
+TopstepX supports up to 8 charts on a single screen, each defaulting to /ES. Leave charts unlinked for independent operation, or use Symbol Link (color-coded) to keep them in sync.
+Important:
+Cannot connect to external platforms like TradingView; custom indicators are not available due to TradingView's commercial licensing terms.
+Available timeframes: 1m, 2m, 3m, 5m, 15m, 30m, 1h, 4h, 1D, 1W, 1M (no 10m)
+Charts load up to 1 year back.
+Countdown to Bar Close
+This setting is a countdown indicator that displays the time remaining until each selected bar closes. You can navigate to the Scale Settings by either right clicking on chart scale or by accessing the Chart Settings and checking "Countdown to bar close". Note: this setting does not work on Tick charts.
+Chart Drawing Tools
+Using TradingView's drawing tools, you can annotate, comment, highlight trends and patterns, measure and forecast, and calculate price levels Double-click a tool for style and visibility settings, or save a style as a template.
+Favorite a tool — star it in the dropdown menu for quick access on a floating panel
+Hide all drawings — click "Hide All Drawing Tools" in the left toolbar
+Snap to price — enable Magnet Mode (click the Magnet tool, or hold CTRL/Command while drawing) to snap drawings to the nearest OHLC price on a bar
+Copy chart style: Click "Apply to all" in Chart Settings to copy 1 chart's timeframe, indicators, and look/feel across every chart in your layout.
+News Events
+TopstepX auto-plots high-impact news events directly on your charts — click a marker to see the event. Right-click the chart and select "Hide Marks on Bars" to remove them.
+Chart Display Settings
+Chart Value Display Type — show order/position values in Dollar value, Ticks, Percent, or Points
+Hide Economic Events — hides economic news plots from your charts
+Hide Chart Plots / Chart Plot Alignment — additional display controls under Settings → Charts & Data
+NEW: Range Bars
+Range Bars
+👉 Let price — not the clock — decide when a bar prints, so trends, consolidation, and breakouts stand out without the noise of time-based charts.
+What it shows
+Each Range Bar represents a fixed price move instead of a fixed slice of time. A new bar prints only when price travels your chosen range (say, 10 ticks) — no move, no new bar, no matter how much time passes. Quiet stretches compress into a few bars; strong moves stretch into a long run of them.
+How do I add Range Bars? Range Bars live inside the Advanced Charts (Beta) component. Press the plus sign to add a component, then drag Advanced Charts (Beta) into your layout.
+What you'll see
+Long run of same-color bars — a real trend, completing bars quickly.
+Alternating bars in a tight zone — consolidation. Price isn't committing to a direction.
+Bars printing faster — volatility is rising, common around news or the session open.
+Bars slowing down — price has stalled.
+A clean break from a tight cluster — a shift from balance to directional bars.
+Trendlines, channels, and support/resistance tend to line up more consistently than on a time chart.
+Where it fits
+Range Bars work on any futures contract, on intraday charts. Range size is adjustable per instrument, since a fixed tick count behaves differently across contracts.
+👉 Please note: Range Bars have been launched in Beta as a real-time chart type. Bars build forward from when you open the chart — you can't scroll back to bars that printed before, and reloading or switching symbols starts the build fresh. Historical data (rebuilding past bars from tick history) is planned for a future release.
+Range Bars FAQs
+​ Why does my data reset?
+Beta data resets daily, on top of any reload, symbol switch, or connection drop.
+Can I customize my settings?
+Yes. At launch you can choose from 4 chart types and 7 ranges (plus a custom range), and you can change bar color, line color, and timezone.
+Can I link my chart?
+Yes, using the link control in the top-left corner of the component.
+Can I add indicators to Advanced Charts?
+Not at this time. Because it's a custom chart, a number of things aren't available yet, including indicators, drawing tools, and right-click to place chart orders.
+How do I sync the crosshairs from my main chart?
+You can't. Crosshair syncing between your main chart and Advanced Charts isn't supported.
+Order Management Overview
+Types of Orders
+Order Type
+Description
+Market Order
+Filled immediately at the current market price
+Limit Order
+Filled at a specific price you set
+Stop Market Order
+Pending until conditions are met; used to limit losses or enter after a confirmed directional move
+OCO (One Cancels the Other)
+2 linked orders — when 1 executes, the other cancels automatically
+Trailing Stop Order
+A stop that trails the market in set increments as price moves away
+Filled Order
+An order that has been executed
+Open/Pending Order
+An order waiting to be filled
+Risk (Stop)
+Amount (USD) you're willing to lose on a position. Position closes when reached; updates as size changes
+To Make (Take Profit)
+Amount (USD) you want to gain on a position. Position closes when reached; updates as size changes
+Learn more about Order Types here .
+​
+Order Ticket
+Select Buy or Sell, pick your order type (Market, Limit, Stop Market, Trailing Stop, or OCO), and access Cancel All, Flatten All, and Reverse Position.
+Time & Sales
+A live feed of all trading activity for your selected product. To filter by minimum trade size, go to System Settings.
+DOM (Depth of Market)
+The DOM (also called the ladder) displays market depth, volume profile, and price levels for one-click trading.
+Left-click Bid or Ask → Limit Order
+Right-click Bid or Ask → Stop Order
+Hover, click, and drag existing orders to move them to a new level
+Active positions appear highlighted in blue with theoretical P&L updating as your position size changes.
+​ Column Breakdown:
+​ Price — Available market price levels
+​
+​ Bid / Ask Size — how many contracts buyers/sellers want at each level
+​
+​ Volume Profile — Total traded volume per price level, useful for spotting support/resistance
+​
+​ My Bid / My Ask — Shows your working orders (Limits, Stops, Take Profits)
+​
+​ Market Data — TopstepX shows the Explicit Book — real orders traders have actually placed, not an Implied Book of synthetic, system-generated orders.
+Level 1 (Top of Book) — Default view, shows only the best bid and best ask.
+Level 2 (Full DOM) — Displays full market depth across multiple price levels.
+DOM Settings — Customize the DOM's look and layout from the gear icon at the top of the DOM.
+Fixed-width Bid/Ask volumes
+Hide Join Bid/Ask, Reverse Position, Flatten All, Close ---Position, Cancel Order, or Cancel All buttons
+Hide the ---P&L or Volume Profile column
+Always show My Ask / My Bid
+Bid/Ask background color, font size, and row padding
+☝️ TopstepX supports 1 window at a time — the DOM cannot be moved to a secondary screen. If you place orders from the DOM, make sure OCO Brackets are enabled there. If OCO is off in the DOM, Auto-OCO Brackets won't apply — even if enabled in Risk Settings.
+Trading Activity
+The bottom panel breaks down your account and activity:
+Accounts — All active accounts in one place
+Positions — View or close open positions; edit Risk (Stop) and To Make (Take Profit) in USD
+Orders — All completed and open orders for the day; cancel any pending orders
+Trades — All completed round-trip positions
+Quotes — Current market conditions for all available futures products
+Order Confirmations
+To enable: Settings → Charts & Data → Order Settings → Show Confirmations → Save
+TopstepX Risk Settings
+TopstepX Risk Settings: Select each feature drop-down below to learn more!
+Contract Limits
+Contract Limits
+Cap the number of contracts you can trade per symbol.
+Orders exceeding the limit are automatically rejected
+Applies to order entry only — won't close open positions
+Take Profit and Stop Loss bracket orders are ignored
+Enforced separately for long and short
+Setup: Settings → Risk Settings → Contract Limits → enter limits → Save.
+​
+​ This is also where you can see current contract limits according to your account type/size.
+​
+Trade Limits
+Trade Limits
+Cap total trades per day and/or week.
+Open positions can still be managed
+Every entry and exit counts as a trade
+Once the limit is hit, no new trades
+Trade limits do NOT auto-close open positions
+Setup: Settings → Risk Settings → Trade Limits → enter max daily/weekly → Save.
+Trade Limits allow you to set a maximum number of trades you can take per day and/or week.
+⚠️ Important: Any pending orders placed prior to hitting the limit must be manually cancelled. TopstepX will not automatically remove pre-existing pending orders upon a trade limit lockout.
+Daily Risk Lock
+Daily Risk Lock
+Lock your risk settings for the day. Covers PDLL, PDPT, and Trade Limits.
+Can't be changed until the next trading day
+Unlocks at 5 PM CT
+Support cannot reverse a lock once applied
+Setup: Settings → Risk Settings → set limits → Save → Lock Risk Settings for Day → Confirm.
+Scheduled Lockouts: NEW!
+​ Scheduled Lockouts
+Block yourself from trading on a schedule. Set a repeating lockout so you don’t have to reset it every day, or set a one-time lockout for later today. Per account, so set it separately for each.
+Repeating
+One-time
+How it works
+Runs on the days you pick
+Runs once later today, then disappears
+What you set
+Start time, end time, and days (M, Tu, W, Th, F, Su)
+Start time and end time
+Notes
+No Saturday
+No date picker. Can’t be set for a future day
+Overnight: an end time earlier than the start runs into the next day. Max window is 24 hours.
+Presets: New York, London, Tokyo, and Sydney start Inactive. Press play and confirm to turn one on.
+Works like a manual lockout. Positions flatten, working orders cancel, new orders are blocked, and copy trading followers exit.
+Runs whether or not you’re logged in. Unlocks at the end time.
+Once it starts, it can’t be ended, shortened, paused, or deleted. Support can’t either.
+Setup: Platform Settings → Risk Settings → Trading Controls → Scheduled Lockouts. A schedule saves when you click Continue.
+Preset
+Window (CT)
+New York
+8:30 a.m. to 4 p.m.
+London
+2 a.m. to 8:30 a.m.
+Tokyo
+5 p.m. to 2 a.m.
+Changing a schedule
+Action
+What happens
+Edit
+Right away before the start. Next trading day after.
+Pause
+Stops it from the next trading day. Today’s lockout still runs.
+Skip next lockout
+Skips 1 occurrence. Schedule stays active.
+Delete
+Gone right away before the start. If running, removed from the next trading day.
+Personal Daily Profit Target/Daily Loss Limit
+Personal Daily Profit Target/Daily Loss Limit
+The Personal Daily Profit Target (PDPT) and Personal Daily Loss Limit (PDLL) are optional risk settings in TopstepX that allow you to define daily profit and loss thresholds. Learn more about the PDLL here .
+Setup: Settings → Risk Settings → enter limits → choose action → Save.
+When a threshold is hit, your account responds based on the action you selected. Final outcome depends on market volatility, slippage, and contracts being exited at the time.
+Trailing Personal Daily Loss Limit (TPDLL)
+The TPDLL is an advanced risk management tool that allows Traders to set a loss limit that dynamically adjusts based on their highest reached account balance. Once the limit trails up, it never moves back down—locking in gains and managing your risk in real time. Learn more about the TPDLL here .
+Copy Trading Behavior
+When a threshold is reached while copy trading:
+Follower Risk Setting
+Behavior
+No PDLL/PDPT set
+Any liquidation or block on the Leader applies to the Follower
+PDLL/PDPT + Liquidate
+Follower liquidates and is removed from the copier when its limit is hit
+PDLL/PDPT + Liquidate & Block
+Follower liquidates and is blocked for the day; auto-resumes the next trading day unless manually removed
+Privacy
+Privacy
+Hide sensitive numbers from your header if you stream or share your screen. Toggle visibility for:
+Balance
+Maximum Loss Limit (MLL)
+Realized P&L (RP&L)
+Unrealized P&L (UP&L)
+Daily Loss Limit (DLL)
+Setup: Settings → Privacy → toggle Streamer Mode for each value you want hidden.
+Symbol Block
+Symbol Block
+Symbol Block allows you to restrict specific trading symbols, helping you stay focused on the products you trade best and avoid unnecessary risk.
+Doesn't close open positions
+Doesn't cancel working orders
+You must manually remove a symbol to trade it again
+Combine Symbol Block with other risk settings (e.g., Trade Limits, Daily Risk Lock)
+You can select one or more symbols to block from trading.
+Setup: Settings → Risk Settings → Symbol Block → select symbol → Add Block → Save.
+Blocked Symbols will appear in your Current Symbol Blocks list. To remove a symbol, click the “X” next to it and save.
+Trade Clock
+Trade Clock
+Pauses new entries without closing open positions or orders. Unlike Lockout — you keep control of your active trades.
+Setup: Risk Settings → set duration → Enable Trade Clock.
+Can still manage existing trades, adjust stops/targets, and use Flatten All while active.
+Trade Clock
+Lockout
+Closes open positions
+No
+Yes
+Cancels working orders
+No
+Yes
+Prevents new entries
+Yes
+Yes
+Manage existing trades
+Yes
+No
+The Tilt™
+The Tilt™
+The Tilt is Topstep's proprietary real-time sentiment indicator showing the long/short positioning of all Funded Traders on TopstepX. It gives you a visual breakdown of buy and sell interest for ES, NQ, CL, and GC — updated every 10 seconds using Express Funded Account data.
+How to Access
+The Tilt is enabled by default in the bottom panel. If you don't see it, click the "+" icon in the top-right corner and select The Tilt. If it's still missing, use Reset Layout to restore defaults — note this may remove any custom layouts you've saved.
+Best Practices
+Use alongside technical analysis and risk management — not as a replacement
+Reflects Topstep funded trader positioning only, not the broader market
+Sentiment shifts quickly; always factor in current market context like news and volatility
+Confirm Account Switching
+Confirm Account Switching
+Ensure you’re trading the right account be turning on Confirm Account Switching .
+Settings —> Charts & Data —> Confirm Account Switching
+Distance to MLL
+Distance to MLL
+Swap your header display from your Maximum Loss Limit balance to your distance from it — how much room you have left before you hit it.
+Setup: Settings → Misc → toggle Distance to MLL .
+General Troubleshooting
+If you’re experiencing latency or slow performance:
+Lower your Data Speed (Slow or Medium Recommended)
+Remove indicators and add them back one at a time
+Reduce the number of active indicators
+If you’re on mobile, try using another device such as a laptop or desktop
+Try another browser or incognito mode
+Clear your Cache and Cookies
+Use a website to check your connection quality (not speed test) to USA based servers.
+⚡️ TopstepX uses real-time exchange data with no artificial delay. On slower machines or Wi-Fi connections, this may impact performance.
+Inverted Charts
+Inverted Charts
+If your chart appears upside down, the Invert Scale setting is likely enabled.
+Right-click on the price axis on the right side of the chart
+Look for " Invert Scale "
+If it is checked, uncheck the option
+The chart should return to its normal orientation
+Data Feed & Connection
+Data Feed & Connection
+TopstepX pulls data straight from the exchange(s)— no third-party feed. Data servers sit in Northern Virginia, and every Trader connects there regardless of location for market data.
+Pick your refresh speed:
+Slow — 750ms
+Medium — 250ms (default)
+Fast — 50ms
+Chart lag does not affect trading and orders — order execution runs server-side, not through your browser. Traders are advised to monitor their Positions tab at all times.
+How to Flatten Your Trades
+How to Flatten Your Trades
+If you want to quickly exit all positions and cancel all working orders, use Flatten All.
+This will close all positions and cancel all working orders on the selected account
+It does not affect other accounts
+Flatten Your Trades
+Locate the Flatten All button (available on both the Order Ticket and DOM)
+Click Flatten All
+Click Confirm
+Daily Loss Limit Value Not Showing in Header
+If the Daily Loss Limit value isn't visible in your account header, try these steps:
+Set your browser zoom to 100% and make sure the window is fully maximized — header values can disappear when the window is too narrow.
+Check for a customization or gear option in the header and confirm "Daily Loss Limit" is enabled.
+Confirm you have the correct account selected — the header reflects the active account only.
+Discord
+If you're unable to flatten directly on the platform, you can submit a request through out #get-flat channel in Discord .
+Include:
+Account number
+Platform (TopstepX)
+Brief reason for the request
+Our team will review and process the request as quickly as possible.
+💡 Orders, stops, or take profits not showing on your chart? Check chart linking first. Click the link icon on your chart and confirm it's connected to the account you're actively trading. This is the most common reason orders don't appear visually even when they're executing correctly. Performance troubleshooting (data speed, cache) is a separate issue.
+Mobile Devices
+TopstepX is mobile-friendly and can be accessed through your phone’s web browser, allowing you to manage trades and monitor the market on the go. Most desktop features are available on mobile, providing a consistent and flexible trading experience.
+For the best experience, use a smartphone, and tablets may perform better in desktop mode. Please note there is currently no mobile app. If the mobile version is not loading correctly, ensure that “Desktop Mode” is disabled in your browser settings.
+Mobile Navigation
+Account Info —View a snapshot of your account balance, UP&L, RP&L, and parameters. Switch between accounts via the dropdown or trigger a Lockout right from this panel — once enabled, it can't be reversed.
+All Accounts —Overview of every account tied to your login, including status (Active, Temp. Liquidation, Goal Achieved, or Ineligible), Created On date, Account Name, Win Rate, Total Lots Traded, Day P&L, Open P&L, and Account Balance.
+Positions —Monitor open positions in with details on Time, Symbol, Position size, Entry Price, Risk (Stop Loss), To Make (Take Profit), P&L, and a 1-tap Close button.
+Orders —Track open, filled, canceled, or rejected orders with key price levels and a quick Cancel option.
+Trades —Review your completed round-trip trade history, including Symbol, Size, Time, Entry Price, Exit Price, P&L, and Fees.
+Mobile DOM:
+Limit Orders — tap Bid Size (buy, below market) or Ask Size (sell, above market)
+Stop Market Orders — tap Bid Size (buy, above market) or Ask Size (sell, below market)
+Breakeven ("B/E") Order — appears once a position shows a positive unrealized P&L. Tap it to place a Stop Market order at your average entry price
+Mobile Charts:
+Change symbol — tap the " " near the chart's right edge and pick from the dropdown
+TP/SL from chart — tap your position indicator, then drag up or down. A blue-outlined dot shows it's active to move
+Order types on mobile charts — Market, Limit, Stop, and Trailing Stop, all accessible from the same " " button
+🛜 Important: Because mobile performance depends on your device, Wi-Fi, and data provider, we’re unable to troubleshoot mobile-specific issues that may be related to connectivity.
+TopstepX YouTube Videos
+TopstepX offers a video library on YouTube with a variety of videos to help you get comfortable with the Platform.
+These videos are designed to provide quick, easy-to-follow guidance so you can find the information you need and learn at your own pace. Whether you’re just getting started or diving deeper into specific features, the library is a great place to find the information you’re looking for.
+You can access these videos anytime on YouTube .
+Related Articles
+Topstep Learning
+General Platform Troubleshooting
+Quantower Connection Instructions
+What is Responsible Trading?
+TopstepX™ API Access
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Your Privacy Choices

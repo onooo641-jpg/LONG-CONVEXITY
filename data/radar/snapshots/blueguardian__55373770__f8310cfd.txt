@@ -1,0 +1,86 @@
+CFD news trading rules | Blue Guardian Help Centre
+Skip to content Help Search the help centre ⌘K
+Website Start challenge Help Centre home Collections
+Getting started Account inactivity rule How Blue Guardian works Getting help and using your dashboard
+Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
+Payouts How payouts work
+Billing & accounts Paying for your account: methods, card rules and refunds How many accounts can I have? Futures bundle discounts
+Trading rules Prohibited trading strategies What happens if I break a rule? Futures risk management rules Trading hours and the trading day CFD news trading rules
+Platforms & instruments Trading platforms CFD trading conditions: markets, commissions and leverage Futures contract limits and funded scaling Futures instruments, codes and costs
+CFD plans Instant Standard account rules Instant Starter account rules 1 Step Standard rules 2 Step Standard rules 1 Step Nano rules 2 Step Nano rules Buy Now Pay Later (BNPL) rules
+Futures plans Reserve account rules Elite account rules Express account rules Direct account rules Elite, Reserve & Direct Path to Live Zero account rules Zero Path to Live
+Affiliates & competitions Affiliate program Monthly trading competition
+Help Centre
+Trading rules
+CFD news trading rules
+When CFD traders can and can't trade high-impact news, the 5-minute window, FOMC events and the full list of affected instruments.
+Applies to: CFD Updated 18 November 2026
+Short answer
+News trading is allowed during evaluations. On funded accounts and Instant Standard, don't open or close trades on affected instruments from 5 minutes before to 5 minutes after high-impact (red folder) news, or any FOMC event of any impact level (including low/yellow and medium/orange). Profit made in that window, or heavily driven by the news, will be removed, but your account won't be breached. Instant Starter allows news trading.
+Which accounts does this apply to?
+Account
+News trading
+Evaluations (1 Step, 2 Step, Nano, BNPL)
+Allowed
+Funded accounts from any evaluation
+Restricted: 5 minutes before and after
+Instant Standard
+Restricted: 5 minutes before and after
+Instant Starter
+Allowed
+What the restriction means
+Don't open or close trades on an affected instrument from 5 minutes before a high-impact news release until 5 minutes after it.
+The same applies to FOMC speeches, statements, releases and news events of ANY impact level: high (red), medium (orange) and low (yellow) FOMC events are all restricted. The red-folder-only rule applies to other news, not to FOMC. Any trades involving FOMC events are subject to profit removal.
+Profit made in the window, or significantly influenced by the news, will be removed. This isn't a rule violation, so your account won't be breached.
+Trades that try to get around the rule are treated the same way.
+Affected instruments
+News currency
+Currency pairs
+Indices and commodities
+Crypto
+USD (incl. FOMC)
+USDCAD, AUDUSD, EURUSD, GBPUSD, NZDUSD, USDCHF, USDJPY
+XAUUSD, XAGUSD, NDX100, SPX500, US30
+BTCUSD, ETHUSD
+EUR
+EURUSD, EURAUD, EURCAD, EURCHF, EURDKK, EURGBP, EURJPY, EURNZD
+GER40
+–
+GBP
+EURGBP, GBPAUD, GBPCAD, GBPCHF, GBPJPY, GBPNZD, GBPUSD
+UK100
+–
+JPY
+AUDJPY, CADJPY, CHFJPY, EURJPY, GBPJPY, NZDJPY, USDJPY
+JPN225
+–
+AUD
+AUDCAD, AUDCHF, AUDJPY, AUDNZD, AUDUSD, EURAUD, GBPAUD
+–
+–
+CAD
+AUDCAD, CADCHF, CADJPY, EURCAD, GBPCAD, NZDCAD, USDCAD
+–
+–
+CHF
+AUDCHF, CADCHF, CHFJPY, EURCHF, GBPCHF, NZDCHF, USDCHF
+–
+–
+NZD
+AUDNZD, EURNZD, GBPNZD, NZDCAD, NZDCHF, NZDJPY, NZDUSD
+–
+–
+Example: if there's high-impact GBP news at 9:30, don't open or close trades on GBPUSD, EURGBP or UK100 between 9:25 and 9:35.
+Futures
+Futures accounts have their own rules: news trading is allowed on evaluation and funded accounts, but not on the Live Account.
+Still need help?
+Chat with our support team. We usually reply in a few minutes.
+Chat with us
+More in Trading rules
+Applies to: CFD and Futures Prohibited trading strategies Applies to: CFD and Futures What happens if I break a rule? Applies to: Futures Futures risk management rules Applies to: CFD and Futures Trading hours and the trading day
+On this page Short answer
+Which accounts does this apply to?
+What the restriction means
+Affected instruments
+Futures
+© 2026 All Rights Reserved – Blue Guardian Terms Privacy Cookies

@@ -1,0 +1,40 @@
+Introduction to Volumetrica | My Funded Futures Help Center Skip to main content
+Go to website Discord YouTube English हिन्दी Español English
+Go to website Discord YouTube English हिन्दी Español English
+Search for articles...
+All Collections
+Trading Platforms
+Introduction to Volumetrica
+Introduction to Volumetrica
+MyFundedFutures is excited to announce our partnership with Volumetrica Trading Platforms.
+August 24, 2026
+Table of contents
+At My Funded Futures , we are pleased to announce our strategic partnership with Volumetrica Trading Platforms. Volumetrica is a sophisticated trading platform designed with a focus on volume-based trading tools and services.
+Recognizing the demand among our traders for a professional-grade platform in the proprietary trading space, we have identified Volumetrica as an ideal solution.
+This platform is both robust and user-friendly, catering to the needs of both novice and experienced traders.
+What Data Feed Does Volumetrica Use?
+Volumetrica Trading Platforms, including desktop applications such as VolSys and VolBook, utilize dxFeed as their primary data source. The web-based version of Volumetrica also relies on dxFeed for its real-time data feed, ensuring consistency across all platforms.
+Get Funded to Trade on Volumetrica
+Why Choose Volumetrica and dxFeed?
+Our commitment to providing superior trading solutions led us to partner with dxFeed, a reliable data provider that ensures seamless execution with minimal disruption. We recognize that many traders depend on advanced tools such as footprint charts, time and sales, and other key indicators to make informed trading decisions.
+By integrating Volumetrica, we are delivering a top-tier platform that meets the high standards of our trading community.
+Watch Forrest go through Volumetrica demo for greater insights.
+Can I Trade on a Mac?
+Absolutely. The web-based version of the Volumetrica platform is fully compatible with Mac devices and operates smoothly on Safari.
+Please Note: The desktop versions of Volumetrica platforms, such as VolSys and VolBook, are designed for Windows. However, they can be run on a Mac using Parallels VM.
+Additional Information
+For comprehensive guidance on using the Volumetrica Web Platform, please refer to the following resources:
+Workspace Layout
+Indicators
+Connection Status
+Dashboard
+We strongly recommend reviewing all relevant articles before initiating any trades. Should you require further assistance or clarification, please do not hesitate to contact our support team.
+Register here for MFFU account.
+Related Articles
+Overview of Supported Platforms at MFFU
+Volumetrica: Getting Started
+Workspaces and Templates in Volumetrica
+Trading 101 in Volumetrica
+DEEPCHART: Login Instructions
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

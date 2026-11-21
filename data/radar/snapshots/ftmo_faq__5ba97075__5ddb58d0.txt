@@ -1,0 +1,460 @@
+Dov'è il vostro ufficio? Come posso contattarvi? | FTMO.com
+Nuovo
+FTMO Instant Account
+{
+document.body.classList.toggle('no-scroll', value);
+});
+// Set scroll to true when we are scrolled 5.2% of viewport height on mobile or 6% on desktop.
+// Scroll variable is used to change navbar background from transparent to solid when scrolling.
+const checkScroll = () => {
+const isMobile = window.innerWidth threshold;
+};
+checkScroll();
+window.addEventListener('scroll', checkScroll);
+}
+}"
+@keydown.escape.prevent.stop="
+if (menuOpen || activeItem) {
+activeItem = null;
+menuOpen = false;
+}
+"
+>
+{ document.getElementById('first-mega-item-cfd')?.focus() })"
+@blur="hoveredItem = null"
+:class="{ 'bg-background-hover':
+hoveredItem === 'cfd' ||
+activeItem === 'cfd',
+'text-content-primary':
+hoveredItem === 'cfd' ||
+activeItem === 'cfd' ||
+hoveredItem === null && !menuOpen,
+'text-gray-400':
+(hoveredItem !== null && hoveredItem !== 'cfd' && (activeItem === 'cfd' ? false : true)) ||
+(menuOpen && hoveredItem === null && (activeItem === 'cfd' ? false : true))
+}"
+class="flex items-center gap-1.5 py-3 px-2 xl:px-3 transition-colors duration-200 rounded-lg focus:outline-none">
+CFD
+{ document.getElementById('first-mega-item-futures')?.focus() })"
+@blur="hoveredItem = null"
+:class="{ 'bg-background-hover':
+hoveredItem === 'futures' ||
+activeItem === 'futures',
+'text-content-primary':
+hoveredItem === 'futures' ||
+activeItem === 'futures' ||
+hoveredItem === null && !menuOpen,
+'text-gray-400':
+(hoveredItem !== null && hoveredItem !== 'futures' && (activeItem === 'futures' ? false : true)) ||
+(menuOpen && hoveredItem === null && (activeItem === 'futures' ? false : true))
+}"
+class="flex items-center gap-1.5 py-3 px-2 xl:px-3 transition-colors duration-200 rounded-lg focus:outline-none">
+New
+Futures
+{ document.getElementById('first-mega-item-trading')?.focus() })"
+@blur="hoveredItem = null"
+:class="{ 'bg-background-hover':
+hoveredItem === 'trading' ||
+activeItem === 'trading',
+'text-content-primary':
+hoveredItem === 'trading' ||
+activeItem === 'trading' ||
+hoveredItem === null && !menuOpen,
+'text-gray-400':
+(hoveredItem !== null && hoveredItem !== 'trading' && (activeItem === 'trading' ? false : true)) ||
+(menuOpen && hoveredItem === null && (activeItem === 'trading' ? false : true))
+}"
+class="flex items-center gap-1.5 py-3 px-2 xl:px-3 transition-colors duration-200 rounded-lg focus:outline-none">
+Trading
+{ document.getElementById('first-mega-item-informazioni')?.focus() })"
+@blur="hoveredItem = null"
+:class="{ 'bg-background-hover':
+hoveredItem === 'informazioni' ||
+activeItem === 'informazioni',
+'text-content-primary':
+hoveredItem === 'informazioni' ||
+activeItem === 'informazioni' ||
+hoveredItem === null && !menuOpen,
+'text-gray-400':
+(hoveredItem !== null && hoveredItem !== 'informazioni' && (activeItem === 'informazioni' ? false : true)) ||
+(menuOpen && hoveredItem === null && (activeItem === 'informazioni' ? false : true))
+}"
+class="flex items-center gap-1.5 py-3 px-2 xl:px-3 transition-colors duration-200 rounded-lg focus:outline-none">
+Informazioni
+= 1024) && activeItem === 'cfd'"
+@mouseleave="activeItem = null; menuOpen = false;"
+@keydown.escape.window="
+if (activeItem || menuOpen) {
+activeItem = null;
+menuOpen = false;
+document.getElementById('mega-menu-button-cfd')?.focus();
+}
+"
+x-cloak x-transition:enter="transition ease-out duration-200"
+x-transition:enter-start="opacity-0 transform translate-y-10"
+x-transition:enter-end="opacity-100 transform translate-y-0"
+x-transition:leave="transition ease-in duration-200"
+x-transition:leave-start="opacity-0 transform translate-y-0"
+x-transition:leave-end="opacity-0 transform translate-y-10"
+>
+Inizia
+CFD Overview
+Il tuo percorso verso FTMO
+Prezzi
+Scegli la tua FTMO Challenge
+Come funziona
+Diventa un FTMO Trader
+Free Trial
+Pratica illimitata per la tua strategia
+Obiettivi di Trading
+Regole chiave per superare ogni fase
+Cresci di più
+Psicologia del Trading
+Per una mentalità più forte
+Premium Programme
+Per i top performer
+Scaling Plan
+Cresci fino a $2M
+Inizia la FTMO Challenge
+Inizia ora
+= 1024) && activeItem === 'futures'"
+@mouseleave="activeItem = null; menuOpen = false;"
+@keydown.escape.window="
+if (activeItem || menuOpen) {
+activeItem = null;
+menuOpen = false;
+document.getElementById('mega-menu-button-futures')?.focus();
+}
+"
+x-cloak x-transition:enter="transition ease-out duration-200"
+x-transition:enter-start="opacity-0 transform translate-y-10"
+x-transition:enter-end="opacity-100 transform translate-y-0"
+x-transition:leave="transition ease-in duration-200"
+x-transition:leave-start="opacity-0 transform translate-y-0"
+x-transition:leave-end="opacity-0 transform translate-y-10"
+>
+English only
+Get Started
+Futures Overview
+Enter FTMO Futures
+Pricing
+Fees and account options
+How Futures Work
+Your path to FTMO Futures
+Trading Objectives
+Evaluation rules explained
+Inizia la tua Valutazione
+Inizia ora
+= 1024) && activeItem === 'trading'"
+@mouseleave="activeItem = null; menuOpen = false;"
+@keydown.escape.window="
+if (activeItem || menuOpen) {
+activeItem = null;
+menuOpen = false;
+document.getElementById('mega-menu-button-trading')?.focus();
+}
+"
+x-cloak x-transition:enter="transition ease-out duration-200"
+x-transition:enter-start="opacity-0 transform translate-y-10"
+x-transition:enter-end="opacity-100 transform translate-y-0"
+x-transition:leave="transition ease-in duration-200"
+x-transition:leave-start="opacity-0 transform translate-y-0"
+x-transition:leave-end="opacity-0 transform translate-y-10"
+>
+Elementi essenziali del trading
+Calendario Economico
+Eventi principali del mercato in tempo reale
+Trading Updates
+Ultime comunicazioni e informazioni
+Strumenti Negoziabili
+Elenco dei simboli
+Piattaforme di Trading
+Scegli quella che fa per te
+Zona Prestazioni
+Panoramica delle Funzionalità
+Migliora nel trading
+Leaderboard
+Classifica dei migliori FTMO Trader
+App Suite
+Scopri App Suite FX Blue
+Conoscenze
+FAQ
+Risposte alle domande frequenti
+Blog
+Notizie, consigli e storie di trading
+FTMO Accademia
+Formazione gratuita sul trading
+= 1024) && activeItem === 'informazioni'"
+@mouseleave="activeItem = null; menuOpen = false;"
+@keydown.escape.window="
+if (activeItem || menuOpen) {
+activeItem = null;
+menuOpen = false;
+document.getElementById('mega-menu-button-informazioni')?.focus();
+}
+"
+x-cloak x-transition:enter="transition ease-out duration-200"
+x-transition:enter-start="opacity-0 transform translate-y-10"
+x-transition:enter-end="opacity-100 transform translate-y-0"
+x-transition:leave="transition ease-in duration-200"
+x-transition:leave-start="opacity-0 transform translate-y-0"
+x-transition:leave-end="opacity-0 transform translate-y-10"
+>
+Azienda
+Chi Siamo
+Scopri di più sulla nostra azienda
+FTMO Group
+Scoprite di più su FTMO Group
+Shop
+Acquista i prodotti esclusivi FTMO
+Contatti
+Contattaci
+Assistenza 24 ore su 24, 7 giorni su 7
+Per i media
+Risorse multimediali e del marchio
+Careers
+Unisciti al nostro team di professionisti
+IT
+Italiano
+Čeština
+English
+Español
+Deutsch
+Português
+Tiếng Việt
+Français
+Accedi
+Inizia ora
+Inizia ora
+CFD
+Inizia
+CFD Overview
+Prezzi
+Come funziona
+Free Trial
+Obiettivi di Trading
+Cresci di più
+Psicologia del Trading
+Premium Programme
+Scaling Plan
+Futures
+New
+Get Started
+Futures Overview
+Pricing
+How Futures Work
+Trading Objectives
+Trading
+Elementi essenziali del trading
+Calendario Economico
+Trading Updates
+Strumenti Negoziabili
+Piattaforme di Trading
+Zona Prestazioni
+Panoramica delle Funzionalità
+Leaderboard
+App Suite
+Conoscenze
+FAQ
+Blog
+FTMO Accademia
+Informazioni
+Azienda
+Chi Siamo
+FTMO Group
+Shop
+Contatti
+Contattaci
+Per i media
+Careers
+Search
+IT
+Italiano
+Čeština
+English
+Español
+Deutsch
+Português
+Tiếng Việt
+Français
+Inizia ora
+Accedi
+CFDs
+Futures
+$refs.faqSearch?.focus())">
+Scrivi qui la tua domanda...
+Nuovo in FTMO?
+Che cos'é FTMO?
+Perché dovrei entrare a far parte di FTMO?
+Chi puó entrare a far parte di FTMO?
+FTMO è un'azienda affidabile?
+Dov'è il vostro ufficio? Come posso contattarvi?
+Come iniziare?
+Ordini & Fatturazione
+Quali costi vengono applicati e sono ricorrenti?
+Quali metodi di pagamento sono disponibili?
+Ho pagato il mio ordine, quando riceverò il conto?
+Perché c'è un costo iniziale?
+La quota di iscrizione viene rimborsata?
+Processo di Valutazione
+In cosa si differenziano i conti offerti da FTMO?
+Che cos'è il conto di tipo Swing e come funziona?
+Ho superato con successo la sfida, quali sono i prossimi passi?
+FTMO Account
+Chi è un FTMO Trader e come posso diventarlo?
+Quanto tempo ci vuole per diventare un FTMO Trader?
+Che cos’è l’FTMO Identity e quando devo completarla?
+Qual è il rapporto giuridico tra un FTMO Trader e FTMO dopo la firma dell’FTMO Account Terms & Conditions?
+Come posso prelevare la mia Remunerazione?
+Trading Objectives
+Quali sono gli Obiettivi di Trading?
+Come funziona la regola della Consistency?
+Qual è la differenza tra Balance (Saldo) ed Equity?
+Regolamento
+Posso operare durante le notizie?
+Posso fare trading nel weekend?
+Posso mantenere le posizioni aperte durante la notte o nel fine settimana?
+Posso viaggiare o utilizzare VPN/VPS?
+Posso unire i miei conti?
+Posso modificare la mia piattaforma di trading o il tipo di conto?
+Quanti account posso avere?
+Che cos'è il Discipline Score?
+Che cos'è il "trading in base a un mercato reale"?
+Con quali strumenti posso operare sul mercato e quali strategie posso utilizzare?
+Piattaforme
+Quali piattaforme posso utilizzare per il trading?
+Come funziona l'infrastruttura tecnica di FTMO?
+Quali sono le caratteristiche del conto?
+Come accedere a MT4?
+Come accedere a MT5?
+Come accedere a cTrader?
+Come accedere a TradingView?
+Applicazioni & altri Servizi
+Oltre all' FTMO Account, fornite altro valore aggiunto ai trader?
+Offrite una Free Trial?
+FTMO fornisce qualche tipo di aiuto riguardo alla psicologia nel trading?
+Cosa sono gli FTMO Points e come posso utilizzarli?
+Premium Programme
+Come faccio a qualificarmi per il Prime Status?
+Quali sono i vantaggi del Prime Status?
+Come posso qualificarmi per il Supreme Status?
+Quali sono i vantaggi del Supreme Status?
+Una volta entrato nel Premium Programme, posso mantenerlo in modo permanente?
+Il Premium Programme è compatibile con lo Scaling Plan?
+Sono richieste dimensioni specifiche del conto per richiedere il Prime status?
+Esistono circostanze che potrebbero impedirmi di accedere al Premium Programme?
+Affiliate programme
+Come funziona il Programma di Affiliazione FTMO?
+Qual è il processo di candidatura e approvazione?
+Ci sono restrizioni relative ai Paesi per gli affiliati e i clienti referral?
+Come guadagno commissioni come affiliato?
+Come funziona il sistema dei livelli di affiliazione?
+Come funzionano le commissioni di FTMO Futures?
+Qual è il mio codice di affiliazione e come possono utilizzarlo i trader?
+Come funziona l'attribuzione dei referral per FTMO Futures?
+I trader che ho invitato prima del lancio di FTMO Futures mi fanno guadagnare commissioni Futures?
+Come funziona il processo di approvazione delle commissioni?
+In quale valuta vengono calcolate e pagate le mie commissioni?
+Quali sono i requisiti per ricevere un payout come affiliato?
+Quali sono le principali regole promozionali che devo seguire?
+In che modo differiscono i Programmi di Affiliazione FTMO e FTMO US?
+Tutte le FAQ
+CFDs
+Dov'è il vostro ufficio? Come posso contattarvi?
+Dov'è il vostro ufficio? Come posso contattarvi?
+Abbiamo la nostra sede nel cuore dell’Europa e il nostro ufficio si trova nel centro storico di Praga. Puoi trovarci nell’edificio Quadrio Office, in Purkyňova 2121/3, 110 00 Praga 1, Repubblica Ceca .
+Puoi contattarci tramite:
+modulo di contatto online
+email [email protected]
+la nostra Live Chat disponibile 24/7
+WhatsApp
+chiamando direttamente il nostro numero di telefono
+I dettagli di contatto specifici sono disponibili nella sezione Contatti .
+Ricerche popolari
+Perché dovrei entrare a far parte di FTMO?
+Perché c'è un costo iniziale?
+Chi è un FTMO Trader e come posso diventarlo?
+Posso modificare la mia piattaforma di trading o il tipo di conto?
+Come iniziare?
+Inizia oggi a fare trading con FTMO
+Free Trials illimitate
+Conto fino a 200 000 USD
+Nessun Limite di Tempo
+Opera con FTMO
+Free Trial
+Worldwide Reviews
+Metti alla Prova le tue Abilità con una Società Affidabile
+Affianchiamo i trader dal 2015. Unisciti anche tu.
+4.5M+
+Clienti in tutto il mondo
+650 000 000 USD+
+Remunerazioni distribuite in tutto il mondo
+4.8/5
+Trustpilot
+FAQ
+Come funziona
+Programma di Affiliazione
+Obiettivi di Trading
+FTMO Store (EN)
+Support
+Contattaci
+Apri una chat
+[email protected]
++420 910 920 310
+CFD
+Panoramica sui CFD
+Pricing
+How CFDs Works
+Free Trial
+Trading Objectives
+1-Step FTMO Challenge
+2-Step FTMO Challenge
+FTMO Instant Account
+Tabella comparativa
+Pratiche di Trading Proibite
+Grow
+Premium Programme
+Crescita della Remunerazione e Scaling Plan
+Futures
+EN Only
+Futures Overview
+Pricing
+How Futures Works
+Trading Objectives
+Comparison Table
+Forbidden Trading Practices
+Trading
+Calendario Economico
+Trading Updates
+Strumenti
+Piattaforme di Trading
+Tools & Services
+Panoramica degli strumenti
+Trading Psychology
+Leaderboard
+App Suite
+Resources
+FAQ
+Blog
+FTMO Academy
+Chi siamo
+Chi siamo
+Careers (EN)
+Contattaci
+Press Kit
+Press Releases (EN)
+Affiliate Programme
+Ottieni approfondimenti esclusivi su FTMO
+Approfondimenti di Esperti sul Trading
+Ultimi Aggiornamenti
+Offerte Speciali
+Iscriviti
+Iscrizione completata con successo.
+Tutte le informazioni fornite su questo sito sono destinate esclusivamente a fini didattici relativi al trading sui mercati finanziari e non costituiscono in alcun modo una raccomandazione specifica di investimento, una raccomandazione commerciale, un'analisi delle opportunità di investimento o una raccomandazione generale simile relativa al trading di strumenti di investimento. FTMO fornisce solo servizi di trading simulato e strumenti didattici per i trader. Le informazioni presenti su questo sito non sono rivolte ai residenti in paesi o giurisdizioni in cui tale distribuzione o utilizzo sarebbe contrario alle leggi o ai regolamenti locali. Le società FTMO non agiscono in qualità di broker e non accettano alcun deposito. La soluzione tecnica offerta per le piattaforme FTMO e il feed di dati è fornita da fornitori di liquidità.
+Copyright © 2026 FTMO s.r.o. Tutti i diritti riservati.
+Impostazioni dei cookie
+Cookies
+Imprint
+Termini & Condizioni
+Privacy Policy
+Made with for trading

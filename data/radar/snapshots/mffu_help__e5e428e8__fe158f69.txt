@@ -1,0 +1,159 @@
+Builder Plan 25k - Legacy No DLL | My Funded Futures Help Center Skip to main content
+Go to website Discord YouTube English हिन्दी Español English
+Go to website Discord YouTube English हिन्दी Español English
+Search for articles...
+All Collections
+Legacy Plans
+Builder Legacy Plans
+Builder Plan 25k - Legacy No DLL
+Builder Plan 25k - Legacy No DLL
+The Builder 25k is the entry-level account of our Builder plan family, sitting below the Builder 50k (default) and 50k addon. It follows the same core structure as all Builder plans with regard to evaluations rules; catered to its smaller account size.
+September 23, 2026
+Table of contents
+Evaluation Stage
+My Funded Futures has adopted a streamlined approach to evaluations.
+There are absolutely no activation fees on any of our plans.
+Builder 25k
+Starting Balance
+$25,000
+Profit Target
+$1,500
+Max EOD Drawdown (MLL)
+$1,000
+Starting Minimum Balance
+$24,000
+Daily Loss Limit
+None
+Max Contracts
+2 Minis / 20 Micros
+Consistency Rule
+None
+Minimum Trading Days
+1 Day
+News Trading
+Allowed
+Drawdown Model
+EOD Trailing
+Sim Funded Stage
+Once you hit your $1,500 profit target with at least 1 trading day logged, you are promoted to the Sim Funded stage. Your account begins at $0, meaning the balance can go negative before the MLL trails up to breakeven. This is expected and normal.
+Traders may have up to 2 Sim Funded accounts, per user, at any time on the Builder 25k Plan. In the event of a breach, the earliest a new Sim Funded account may be activated is the following trading day.
+Builder 25k
+Starting Balance
+$0
+Max EOD Drawdown (MLL)
+$1,000
+Starting Minimum Balance
+-$1,000
+Daily Loss Limit
+None
+Max Contracts
+2 Minis / 20 Micros
+Active Accounts Allowed
+2 Builder Accounts per user
+Inactivity Rule
+7 Calendar Days
+News Trading
+Allowed
+You may request a payout 48 hours after your first trade has been placed, provided that all required payout criteria have been met.
+Payout Policy
+The Builder Plan runs on a flat $1,000 payout cap, up to 5 sim payouts, each paid at 80/20 in your favor.
+Builder 25k
+Profit Split
+80% Trader / 20% Firm
+Consistency Rule
+50%
+Minimum Qualifying Days / Cycle
+2 Days
+Net Profit Required (First Payout)
+$250 above buffer
+Net Profit Required (Subsequent Payouts)
+$250 since last payout
+Minimum Payout Amount
+$250
+Maximum Payout Per Cycle
+$1,000
+Buffer (Must Be Cleared to Request)
+$1,100
+Max Sim Payouts
+5 Payouts
+Payout Requirements - Step by Step
+Your buffer must be fully cleared before you can submit any payout request. The buffer equals your MLL + $100
+For your first payout: you must have at least $250 in net profit above the buffer.
+For all subsequent payouts: you must have at least $250 in net profit since your last approved payout.
+You must have traded on at least 2 trading days in the current cycle.
+The 50% consistency rule applies: your single largest profit day cannot represent more than 50% of your total profits in the cycle. This calculation resets after each approved payout.
+Maximum payout per cycle is $1,000. You keep 80% of what you withdraw.
+Payout Example
+Trader on this MLL plan clears the buffer and builds $2,600 in total sim profits.
+Buffer: $1,100 (cleared, payout requests now available)
+Net profit above buffer: $1,500, meets the $250 minimum for first payout
+Requested payout: $1,000 (within the $1,000 max)
+After 80/20 split, trader receives: $800
+Transition to Live
+After your 5th approved sim payout, you are eligible for promotion to a live funded account.
+Builder 25k
+Promotion Trigger
+After 5th approved sim payout
+Live Account Drawdown
+$1,000 EOD Trailing
+Max Loss Limit
+Static once MLL reaches $0
+Minimum Payout Amount
+$250
+Profit Split (Live)
+80% Trader / 20% Firm
+Live Payout Cycle
+Daily
+Daily Loss Limit (Live)
+None
+Consistency Rule (Live)
+None
+Max Live Accounts
+1
+Live payouts are processed daily, typically within minutes of your payout request. There is no consistency rule on the live account. Your MLL on live matches the option you selected at checkout.
+Live Post-Breach Cooldown Period Protocol
+Following Live account closure due to Maximum Loss breach:
+21-Day Cooldown Period initiation: All Sim Funded account trading is prohibited.
+New Evaluation purchases, account resets, or additional account acquisitions are prohibited.
+Post-Cooldown (21 calendar days):
+Cooldown restrictions are lifted.
+You can continue from your active Sim Funded account (if applicable) and/or purchase new Evaluations or accounts, unless communicated otherwise by the team.
+Account Rules
+How the EOD Trailing Drawdown Works
+The Maximum Loss Limit (MLL) is an End of Day (EOD) trailing drawdown. It does not move intraday. It only adjusts after the market closes each session, based on where your account closed.
+The MLL trails upward as your account equity reaches new end-of-day highs.
+It never moves down.
+Open equity losses are counted when determining whether your account has breached the rule at the end of the trading day.
+The MLL locks permanently once it reaches $100 above the starting balance. From that point, it does not trail further.
+News Trading
+News trading is fully unrestricted during the evaluation and sim funded stage. You may open and hold positions through any scheduled news event without limitation.
+Frequently Asked Questions
+Q: Are there any activation fees?
+No. There are no activation fees on the Builder Plan.
+Q: Is there a Daily Loss Limit (DLL)?
+No.
+Q: Is there a consistency rule during evaluation?
+No. The Builder Plan has no consistency rule during evaluation. You can pass in as little as 1 trading day, as long as you have hit the $1,500 profit target without breaching the MLL.
+Q: How does the 50% consistency rule work on payouts?
+Your single largest profit day in a payout cycle cannot account for more than 50% of your total profits in that cycle. This is calculated at the time of your payout request, and the calculation resets fully after each approved payout.
+Example: If your total net profits since the last payout are $1,000, your best single day cannot exceed $500. If it does, you will need to trade additional days to bring that ratio into compliance before requesting.
+Q: How much net profit do I need before my first payout?
+You need at least $250 in net profit above the buffer. For example, on the $2,000 option, your account balance must reach at least $2,600 before you can submit your first payout request ($2,100 buffer plus $500 net profit above it).
+Q: Can I have more than one active Sim Funded account?
+Yes. Traders may have up to 2 Sim Funded accounts, per user, at any time on the Builder 25k Plan. If your active Sim Funded account closes, a new one may be activated only after the following trading day.
+Q: Can I trade news on the Builder Plan?
+News trading is fully unrestricted on the Builder Plan.
+Q: What happens if my live account is breached?
+A live account breach triggers a 21-day cooldown period. During the cooldown, all sim funded account trading is prohibited and no new evaluations or account resets may be purchased. Once the 21 days have elapsed, all restrictions are lifted.
+Q: Can I hold positions overnight?
+No. All positions must be closed before the end of the trading session. Any open positions at session close will be automatically closed by the platform.
+Q: What is the inactivity rule on the sim funded account?
+If you do not place a trade within 7 consecutive calendar days on your sim funded account, the account will be closed due to inactivity. There is no inactivity rule on the live account.
+Related Articles
+25K Flex Plan (Legacy)
+Builder Plan 50k - A Comprehensive Guide
+Builder Plan 100k - Comprehensive Guide
+Builder Plan 150k - Comprehensive Guide
+Builder Plan 25k - A Comprehensive Look
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

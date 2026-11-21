@@ -1,0 +1,142 @@
+Elite, Reserve & Direct Path to Live | Blue Guardian Help Centre
+Skip to content Help Search the help centre ⌘K
+Website Start challenge Help Centre home Collections
+Getting started Account inactivity rule How Blue Guardian works Getting help and using your dashboard
+Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
+Payouts How payouts work
+Billing & accounts Paying for your account: methods, card rules and refunds How many accounts can I have? Futures bundle discounts
+Trading rules Prohibited trading strategies What happens if I break a rule? Futures risk management rules Trading hours and the trading day CFD news trading rules
+Platforms & instruments Trading platforms CFD trading conditions: markets, commissions and leverage Futures contract limits and funded scaling Futures instruments, codes and costs
+CFD plans Instant Standard account rules Instant Starter account rules 1 Step Standard rules 2 Step Standard rules 1 Step Nano rules 2 Step Nano rules Buy Now Pay Later (BNPL) rules
+Futures plans Reserve account rules Elite account rules Express account rules Direct account rules Elite, Reserve & Direct Path to Live Zero account rules Zero Path to Live
+Affiliates & competitions Affiliate program Monthly trading competition
+Help Centre
+Futures plans
+Elite, Reserve & Direct Path to Live
+How Elite, Reserve and Direct traders move to Live: who qualifies, how your Live Allocation and starting balance are set, Live rules, Live Bonus and Live Buyout.
+Applies to: Futures Updated 19 November 2026
+Short answer
+The Live Account is the highest level of Blue Guardian Futures: real capital, traded with real CME execution. It can't be purchased. Our Risk Team offers it to funded traders who show exceptional performance.
+When you move to Live, we deposit real funds into your Live Account. If you have a pending payout, you can choose to take it as normal or move to Live with that amount as your starting balance. If you don't have a pending payout, you start with the Live Allocation for your account sizes. Live Accounts have a static drawdown, daily uncapped payouts and a 90% profit split.
+How funded accounts merge into a Live Account Replay
+When you're promoted, your funded accounts combine into one Live Account with a single drawdown. Live Bonus milestones are paid as you reach each multiple.
+At a glance
+How to qualify
+Exceptional performance on your funded accounts, at the Risk Team's discretion
+Starting balance
+Your pending payout amount, if you have one. Otherwise, your Live Allocation
+Live Allocation
+Based on the size of your eligible funded accounts, up to $15,000 combined
+Drawdown
+Static
+Payouts
+Daily, no cap
+Profit split
+90%
+Daily loss limit / consistency rule
+None
+News trading
+Allowed
+Hedging
+Strictly prohibited
+Fees
+None
+How do I qualify?
+There's no set number of payouts, profit target or timeframe. Our Risk Team reviews funded accounts on an ongoing basis and may offer Live to any trader at any time. We look at consistency, risk management, discipline, profitability, account behaviour and any previous Live history. All decisions are made at the Risk Team's discretion.
+If you're identified for Live, our team will reach out to you directly.
+Live Allocation per funded account
+Your Live Allocation is based on the size of your eligible funded accounts. A funded account is eligible if it has received at least one payout.
+Funded account
+$25K
+$50K
+$100K
+$150K
+Live Allocation
+$1,000
+$2,000
+$3,000
+$4,500
+Allocations from multiple eligible accounts are combined, up to $15,000.
+Example: 2 × $50K Elite, 1 × $50K Reserve and 2 × $50K Express accounts, each with at least one payout, give a combined Live Allocation of $10,000.
+If your combined Live Allocation is over $15,000, it can be split across two Live Accounts. For example, five $150K accounts ($22,500) become one Live Account of $15,000 and one of $7,500.
+Your starting balance
+How much we deposit into your Live Account depends on whether you have a pending payout when our team reaches out to you.
+If you have a pending payout
+You choose one of two options:
+Take the payout. It's paid to you as normal. A 30-day cooldown then applies before you can buy a new evaluation.
+Move to Live. Your pending payout isn't paid out. Instead, the full amount is deposited into your Live Account as your starting balance, in place of the standard Live Allocation.
+Your account is closed once you've made your choice.
+Example: our team reaches out to you about Live while your $50K funded account has a $1,200 pending payout. If you choose Live, your Live Account starts with a $1,200 balance.
+If you don't have a pending payout
+We deposit your combined Live Allocation as your starting balance.
+Example: our team reaches out to you about Live with one $50K funded account and no pending payout. Your Live Account starts with a $2,000 balance.
+Maximum position size
+Combined Live Allocation
+Max position (Minis / Micros)
+Up to $2,000
+2 / 20
+$2,000–$4,500
+4 / 40
+$4,500–$6,500
+6 / 60
+$6,500–$9,500
+8 / 80
+$9,500–$15,000
+10 / 100
+Your position limit doesn't change after payouts. Some highly volatile contracts may have lower limits. Traders who show strong, consistent risk management may later qualify for larger sizes.
+Live Buyout (cash instead of Live)
+If you don't have a pending payout, you can take a one-time cash payment instead of trading Live: 50% of your combined Live Allocation .
+Example: a combined Live Allocation of $10,000 gives a $5,000 Live Buyout.
+Only available at the moment you're offered Live, and only once per trader.
+A 30-day cooldown applies before you can buy a new evaluation.
+Live Bonus (first promotion only)
+On your first move to Live, you can earn a bonus of 25% of your combined Live Allocation at each of three profit milestones.
+Before any bonus is released , you need:
+20 winning days on your Live Account, each with net profit of at least 0.5% of your starting balance.
+At least 2 withdrawals of trading profit.
+Then each bonus is released at its milestone:
+Cumulative net profit on Live
+Bonus
+1 × combined Live Allocation
+25% of combined Live Allocation
+2 × combined Live Allocation
+25% of combined Live Allocation
+3 × combined Live Allocation
+25% of combined Live Allocation
+Example: you move to Live with a combined Live Allocation of $10,000 and no pending payout, so your starting balance is $10,000. Once you've had 20 winning days of at least $50 and made 2 profit withdrawals, you receive $2,500 when your net profit reaches $10,000, another $2,500 at $20,000 and another $2,500 at $30,000: $7,500 in total.
+Good to know:
+Only withdrawals of trading profit count. Withdrawals of your starting balance or bonus funds don't.
+Each bonus is added to your Live balance as soon as you meet its conditions.
+Any bonus that hasn't been released yet is forfeited if your Live Account is breached.
+The Live Bonus can only be earned once, on your first promotion. Zero has its own Live Bonus: see Zero Path to Live .
+Live Account rules
+Drawdown: static. Your maximum loss limit is set when your Live Account opens and stays fixed. It doesn't move up as your balance grows.
+No daily loss limit and no consistency rule , whichever plan your accounts came from.
+News trading: allowed.
+Hedging: strictly prohibited. Breaking this rule can lead to permanent closure and a permanent ban.
+Household rule: while one member of a household trades a Live Account, other members of that household can't trade simulated Blue Guardian Futures accounts.
+If you breach your Live Account
+Live Accounts can't be reset, bought back or reactivated. After a breach:
+Any Live Bonus that hasn't been released yet is forfeited.
+A 30-day cooldown applies before you can buy a new evaluation.
+After that, you can only trade one funded account at a time.
+Repeated breaches through reckless risk-taking may lead to longer cooldowns.
+Still need help?
+Chat with our support team. We usually reply in a few minutes.
+Chat with us
+More in Futures plans
+Applies to: Futures Reserve account rules Applies to: Futures Elite account rules Applies to: Futures Express account rules Applies to: Futures Direct account rules Applies to: Futures Zero account rules Applies to: Futures Zero Path to Live
+There are no CFD related articles here. Switch to Futures or All to see them.
+On this page Short answer
+At a glance
+How do I qualify?
+Live Allocation per funded account
+Your starting balance
+If you have a pending payout
+If you don't have a pending payout
+Maximum position size
+Live Buyout (cash instead of Live)
+Live Bonus (first promotion only)
+Live Account rules
+If you breach your Live Account
+© 2026 All Rights Reserved – Blue Guardian Terms Privacy Cookies

@@ -1,0 +1,87 @@
+2 Step Nano rules | Blue Guardian Help Centre
+Skip to content Help Search the help centre ⌘K
+Website Start challenge Help Centre home Collections
+Getting started Account inactivity rule How Blue Guardian works Getting help and using your dashboard
+Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
+Payouts How payouts work
+Billing & accounts Paying for your account: methods, card rules and refunds How many accounts can I have? Futures bundle discounts
+Trading rules Prohibited trading strategies What happens if I break a rule? Futures risk management rules Trading hours and the trading day CFD news trading rules
+Platforms & instruments Trading platforms CFD trading conditions: markets, commissions and leverage Futures contract limits and funded scaling Futures instruments, codes and costs
+CFD plans Instant Standard account rules Instant Starter account rules 1 Step Standard rules 2 Step Standard rules 1 Step Nano rules 2 Step Nano rules Buy Now Pay Later (BNPL) rules
+Futures plans Reserve account rules Elite account rules Express account rules Direct account rules Elite, Reserve & Direct Path to Live Zero account rules Zero Path to Live
+Affiliates & competitions Affiliate program Monthly trading competition
+Help Centre
+CFD plans
+2 Step Nano rules
+CFD 2 Step Nano: 8% and 5% targets, no minimum days, 3% daily loss, 10% static drawdown, 50% funded consistency, 2% payout cap, 14-day payouts.
+Applies to: CFD Updated 20 November 2026
+Short answer
+2 Step Nano is a two-phase CFD evaluation with no minimum trading days. Reach 8% profit in Phase 1 and 5% in Phase 2, within a 3% daily loss and a 10% static drawdown. Once funded, you can request a payout every 14 days, up to 2% of your starting balance per cycle, with an 80% profit split (100% with the add-on). There's no Guardian Shield.
+Key numbers
+Profit target
+Phase 1: 8% / Phase 2: 5%
+Max daily loss
+3% of starting balance
+Max drawdown
+10% static (from starting balance)
+Minimum trading days
+None (evaluation or funded)
+Consistency
+50% (funded only)
+Payout cap
+2% of starting balance per payout cycle
+Guardian Shield
+Doesn't apply
+Profit split
+80% (100% with add-on)
+Payouts
+Every 14 days; minimum $100 crypto, $500 Rise
+News trading
+Allowed in evaluation; restricted on funded
+Minimum hold time
+2 minutes (funded only; doesn't apply during the evaluation)
+Leverage
+FX 1:50, indices and commodities 1:10, crypto 1:2
+The evaluation
+Profit targets
+Reach 8% profit in Phase 1 , then 5% in Phase 2 , while following all the rules. There's no minimum number of trading days. After Phase 2, your account has a final review, and once approved you become a funded trader.
+Maximum daily loss: 3%
+Your daily loss limit is 3% of your starting balance , measured from whichever is higher at the 5:00 PM New York reset: your balance or your equity.
+Floating profit at reset: on $100K with $2,000 floating profit, equity is $102,000, so it can't drop below $99,000 the next day.
+Floating loss at reset: with $2,000 floating loss, your $100,000 balance is higher, so equity can't drop below $97,000.
+No open trades: the limit is your closed balance minus 3% of your starting balance.
+Maximum drawdown: 10% static
+Your equity, including open trades, can never fall more than 10% below your starting balance . It doesn't trail. Example: on $100K, equity must stay above $90,000.
+Funded account
+Consistency rule: 50% (funded only)
+Within each payout period, your best day must be below 50% of your total profit. Until it is, you can't request a payout. Your account isn't breached; you just keep trading. Example: with a $1,000 best day, you need more than $2,000 total profit.
+Payouts
+When: every 14 days . There's no minimum number of trading days.
+Cap: up to 2% of your starting balance per payout cycle. Any profit above that stays in the account. Example: on $100K, you can withdraw up to $2,000 per cycle.
+Conditions: account above starting balance, 50% consistency met, no rule violations and all positions closed.
+Profit split: 80%, or 100% with the add-on.
+Guardian Shield: doesn't apply to Nano accounts.
+Trading rules
+News: allowed during both phases. On funded accounts, don't open or close trades from 5 minutes before to 5 minutes after high-impact news on affected instruments. See CFD news trading rules .
+Tick scalping: on funded accounts, hold each trade for at least 2 minutes . This doesn't apply during the evaluation.
+Overnight and weekends: allowed.
+Expert Advisors: allowed, if they're your own setup. VPNs and VPS are allowed, but not to get around copy trading, group trading or signal rules.
+Copy trading: only between accounts you legally own, including between your own evaluation and funded accounts.
+Stop losses: not mandatory, but you're responsible for staying within the rules.
+Still need help?
+Chat with our support team. We usually reply in a few minutes.
+Chat with us
+More in CFD plans
+Applies to: CFD Instant Standard account rules Applies to: CFD Instant Starter account rules Applies to: CFD 1 Step Standard rules Applies to: CFD 2 Step Standard rules Applies to: CFD 1 Step Nano rules Applies to: CFD Buy Now Pay Later (BNPL) rules
+There are no Futures related articles here. Switch to CFD or All to see them.
+On this page Short answer
+Key numbers
+The evaluation
+Profit targets
+Maximum daily loss: 3%
+Maximum drawdown: 10% static
+Funded account
+Consistency rule: 50% (funded only)
+Payouts
+Trading rules
+© 2026 All Rights Reserved – Blue Guardian Terms Privacy Cookies

@@ -1,0 +1,514 @@
+Welche rechtliche Beziehung besteht zwischen einem FTMO Trader und FTMO nach der Unterzeichnung der FTMO Account Terms & Conditions? | FTMO.com
+Neu
+FTMO Instant Account
+{
+document.body.classList.toggle('no-scroll', value);
+});
+// Set scroll to true when we are scrolled 5.2% of viewport height on mobile or 6% on desktop.
+// Scroll variable is used to change navbar background from transparent to solid when scrolling.
+const checkScroll = () => {
+const isMobile = window.innerWidth threshold;
+};
+checkScroll();
+window.addEventListener('scroll', checkScroll);
+}
+}"
+@keydown.escape.prevent.stop="
+if (menuOpen || activeItem) {
+activeItem = null;
+menuOpen = false;
+}
+"
+>
+{ document.getElementById('first-mega-item-cfd')?.focus() })"
+@blur="hoveredItem = null"
+:class="{ 'bg-background-hover':
+hoveredItem === 'cfd' ||
+activeItem === 'cfd',
+'text-content-primary':
+hoveredItem === 'cfd' ||
+activeItem === 'cfd' ||
+hoveredItem === null && !menuOpen,
+'text-gray-400':
+(hoveredItem !== null && hoveredItem !== 'cfd' && (activeItem === 'cfd' ? false : true)) ||
+(menuOpen && hoveredItem === null && (activeItem === 'cfd' ? false : true))
+}"
+class="flex items-center gap-1.5 py-3 px-2 xl:px-3 transition-colors duration-200 rounded-lg focus:outline-none">
+CFD
+{ document.getElementById('first-mega-item-futures')?.focus() })"
+@blur="hoveredItem = null"
+:class="{ 'bg-background-hover':
+hoveredItem === 'futures' ||
+activeItem === 'futures',
+'text-content-primary':
+hoveredItem === 'futures' ||
+activeItem === 'futures' ||
+hoveredItem === null && !menuOpen,
+'text-gray-400':
+(hoveredItem !== null && hoveredItem !== 'futures' && (activeItem === 'futures' ? false : true)) ||
+(menuOpen && hoveredItem === null && (activeItem === 'futures' ? false : true))
+}"
+class="flex items-center gap-1.5 py-3 px-2 xl:px-3 transition-colors duration-200 rounded-lg focus:outline-none">
+New
+Futures
+{ document.getElementById('first-mega-item-trading')?.focus() })"
+@blur="hoveredItem = null"
+:class="{ 'bg-background-hover':
+hoveredItem === 'trading' ||
+activeItem === 'trading',
+'text-content-primary':
+hoveredItem === 'trading' ||
+activeItem === 'trading' ||
+hoveredItem === null && !menuOpen,
+'text-gray-400':
+(hoveredItem !== null && hoveredItem !== 'trading' && (activeItem === 'trading' ? false : true)) ||
+(menuOpen && hoveredItem === null && (activeItem === 'trading' ? false : true))
+}"
+class="flex items-center gap-1.5 py-3 px-2 xl:px-3 transition-colors duration-200 rounded-lg focus:outline-none">
+Trading
+{ document.getElementById('first-mega-item-ueber-uns')?.focus() })"
+@blur="hoveredItem = null"
+:class="{ 'bg-background-hover':
+hoveredItem === 'ueber-uns' ||
+activeItem === 'ueber-uns',
+'text-content-primary':
+hoveredItem === 'ueber-uns' ||
+activeItem === 'ueber-uns' ||
+hoveredItem === null && !menuOpen,
+'text-gray-400':
+(hoveredItem !== null && hoveredItem !== 'ueber-uns' && (activeItem === 'ueber-uns' ? false : true)) ||
+(menuOpen && hoveredItem === null && (activeItem === 'ueber-uns' ? false : true))
+}"
+class="flex items-center gap-1.5 py-3 px-2 xl:px-3 transition-colors duration-200 rounded-lg focus:outline-none">
+Über uns
+= 1024) && activeItem === 'cfd'"
+@mouseleave="activeItem = null; menuOpen = false;"
+@keydown.escape.window="
+if (activeItem || menuOpen) {
+activeItem = null;
+menuOpen = false;
+document.getElementById('mega-menu-button-cfd')?.focus();
+}
+"
+x-cloak x-transition:enter="transition ease-out duration-200"
+x-transition:enter-start="opacity-0 transform translate-y-10"
+x-transition:enter-end="opacity-100 transform translate-y-0"
+x-transition:leave="transition ease-in duration-200"
+x-transition:leave-start="opacity-0 transform translate-y-0"
+x-transition:leave-end="opacity-0 transform translate-y-10"
+>
+Jetzt starten
+CFD-Übersicht
+Ihr Weg zu FTMO
+Preise
+Wählen Sie Ihre FTMO Challenge
+Wie es funktioniert
+Werden Sie ein FTMO Trader
+Kostenloses Free Trial
+Unbegrenzte Übung für Ihre Strategie
+Handelsziele
+Wichtige Regeln zum Bestehen jeder Phase
+Mehr erreichen
+Trading-Psychologie
+Für ein stärkeres Mindset
+Premium Programm
+Werden Sie Teil der Spitzenperformer
+Skalierungsplan
+Wachsen Sie auf bis zu 2 Mio. $
+FTMO Challenge starten
+Jetzt starten
+= 1024) && activeItem === 'futures'"
+@mouseleave="activeItem = null; menuOpen = false;"
+@keydown.escape.window="
+if (activeItem || menuOpen) {
+activeItem = null;
+menuOpen = false;
+document.getElementById('mega-menu-button-futures')?.focus();
+}
+"
+x-cloak x-transition:enter="transition ease-out duration-200"
+x-transition:enter-start="opacity-0 transform translate-y-10"
+x-transition:enter-end="opacity-100 transform translate-y-0"
+x-transition:leave="transition ease-in duration-200"
+x-transition:leave-start="opacity-0 transform translate-y-0"
+x-transition:leave-end="opacity-0 transform translate-y-10"
+>
+English only
+Get Started
+Futures Overview
+Enter FTMO Futures
+Pricing
+Fees and account options
+How Futures Work
+Your path to FTMO Futures
+Trading Objectives
+Evaluation rules explained
+Start Your Evaluation
+Start now
+= 1024) && activeItem === 'trading'"
+@mouseleave="activeItem = null; menuOpen = false;"
+@keydown.escape.window="
+if (activeItem || menuOpen) {
+activeItem = null;
+menuOpen = false;
+document.getElementById('mega-menu-button-trading')?.focus();
+}
+"
+x-cloak x-transition:enter="transition ease-out duration-200"
+x-transition:enter-start="opacity-0 transform translate-y-10"
+x-transition:enter-end="opacity-100 transform translate-y-0"
+x-transition:leave="transition ease-in duration-200"
+x-transition:leave-start="opacity-0 transform translate-y-0"
+x-transition:leave-end="opacity-0 transform translate-y-10"
+>
+Grundlagen des Handels
+Wirtschaftskalender
+Wichtige Marktereignisse in Echtzeit
+Trading-Updates
+Neueste Änderungen und Informationen
+Handelbare Symbole
+Liste der Symbole
+Handelsplattformen
+Wählen Sie, was am besten zu Ihnen passt
+Tools & Dienstleistungen
+Übersicht der Tools
+Steigern Sie Ihre Trading-Performance
+Leaderboard
+Rangliste der besten FTMO Trader
+App Suite
+Entdecken Sie die App Suite von FX Blue
+Informationen
+FAQ
+Antworten auf häufig gestellte Fragen
+Blog
+Nachrichten, Tipps und Trading-Geschichten
+Academy
+Kostenlose Trading-Schulung
+= 1024) && activeItem === 'ueber-uns'"
+@mouseleave="activeItem = null; menuOpen = false;"
+@keydown.escape.window="
+if (activeItem || menuOpen) {
+activeItem = null;
+menuOpen = false;
+document.getElementById('mega-menu-button-ueber-uns')?.focus();
+}
+"
+x-cloak x-transition:enter="transition ease-out duration-200"
+x-transition:enter-start="opacity-0 transform translate-y-10"
+x-transition:enter-end="opacity-100 transform translate-y-0"
+x-transition:leave="transition ease-in duration-200"
+x-transition:leave-start="opacity-0 transform translate-y-0"
+x-transition:leave-end="opacity-0 transform translate-y-10"
+>
+Firma
+Über uns
+Erfahren Sie mehr über unsere Firma
+FTMO Group
+Erfahren Sie mehr über die FTMO Group
+Shop
+Exklusive FTMO-Produkte kaufen
+Verbinden Sie sich
+Kontaktieren Sie uns
+24/7 Support
+Für Media
+Markenressourcen und Medienmaterialien
+Karriere
+Werden Sie Teil unseres Expertenteams.
+DE
+Deutsch
+Čeština
+English
+Español
+Italiano
+Português
+Tiếng Việt
+Français
+Einloggen
+Jetzt starten
+Jetzt starten
+CFD
+Jetzt starten
+CFD-Übersicht
+Preise
+Wie es funktioniert
+Kostenloses Free Trial
+Handelsziele
+Mehr erreichen
+Trading-Psychologie
+Premium Programm
+Skalierungsplan
+Futures
+New
+Get Started
+Futures Overview
+Pricing
+How Futures Work
+Trading Objectives
+Trading
+Grundlagen des Handels
+Wirtschaftskalender
+Trading-Updates
+Handelbare Symbole
+Handelsplattformen
+Tools & Dienstleistungen
+Übersicht der Tools
+Leaderboard
+App Suite
+Informationen
+FAQ
+Blog
+Academy
+Über uns
+Firma
+Über uns
+FTMO Group
+Shop
+Verbinden Sie sich
+Kontaktieren Sie uns
+Für Media
+Karriere
+Search
+DE
+Deutsch
+Čeština
+English
+Español
+Italiano
+Português
+Tiếng Việt
+Français
+Jetzt starten
+Einloggen
+CFDs
+Futures
+$refs.faqSearch?.focus())">
+Schreiben Sie hier Ihre Frage...
+Neu bei FTMO
+Was ist FTMO?
+Warum sollte ich FTMO beitreten?
+Wer kann FTMO beitreten?
+Ist FTMO ein vertrauenswürdiges Unternehmen?
+Wo haben Sie Ihr Büro? Wie kann ich Sie kontaktieren?
+Wie beginnt man?
+Bestellungen & Zahlung
+Welche Gebühren erheben Sie, und fallen sie wiederkehrend an?
+Welche Zahlungsmethoden gibt es?
+Ich habe meine Bestellung bezahlt, wann bekomme ich das Konto?
+Warum gibt es eine Gebühr?
+Wird die Teilnahmegebühr zurückerstattet?
+Evaluierungsprozess
+Worin unterscheiden sich die verschiedenen Konten von FTMO?
+Was ist der Kontotyp Swing und wie funktioniert er?
+Ich habe erfolgreich bestanden, was ist nun zu tun?
+FTMO Account
+Wer ist ein FTMO Trader und wie werde ich einer?
+Wie lange dauert es, um ein FTMO Trader zu werden?
+Was ist FTMO Identity und wann schließe ich sie ab?
+Welche rechtliche Beziehung besteht zwischen einem FTMO Trader und FTMO nach der Unterzeichnung der FTMO Account Terms & Conditions?
+Wie kann ich meine Belohnung erhalten?
+Trading Objectives
+Was sind die Handelsziele?
+Wie funktioniert Ihre Konsistenzregel?
+Was ist der Unterschied zwischen Balance (Kontostand) und Equity?
+Regeln
+Darf ich News traden?
+Kann ich am Wochenende handeln?
+Kann ich Positionen über Nacht oder über das Wochenende halten?
+Kann ich reisen oder VPN/VPS nutzen?
+Kann ich meine Konten zusammenführen?
+Kann ich meine Plattform oder meinen Kontotyp ändern?
+Wie viele Konten kann ich führen?
+Was ist der Discipline Score?
+Was bedeutet ‘Handeln nach einem realen Markt?’
+Welche Instrumente kann ich handeln und welche Strategien darf ich verwenden?
+Plattformen
+Welche Plattformen kann ich zum Traden nutzen?
+Wie funktioniert die technische Infrastruktur von FTMO?
+Wie sehen die Konto-Spezifikationen aus?
+Wie melde ich mich bei MT4 an?
+Wie melde ich mich bei MT5 an?
+Wie melde ich mich bei cTrader an?
+Wie melde ich mich bei TradingView an?
+Apps & andere Dienstleistungen
+Abgesehen von einem FTMO Account, bieten Sie noch weiteren Mehrwert für Trader?
+Bieten Sie ein Free Trial an?
+Wie sieht es mit der Handelspsychologie aus? Können Sie hier helfen?
+Was sind FTMO Points und wie kann ich sie verwenden?
+Premium Programm
+Wie kann ich mich für den Prime Status qualifizieren?
+Was sind die Vorteile des Prime Status?
+Wie kann ich mich für den Supreme Status qualifizieren?
+Was sind die Vorteile des Supreme Status?
+Wenn ich einmal im Premium Programm bin, behalte ich es dann dauerhaft?
+Ist das Premium Programm mit dem Scaling Plan kompatibel?
+Sind bestimmte Kontogrößen erforderlich, um sich für den Prime Status zu bewerben?
+Gibt es irgendetwas, das mich von der Teilnahme am Premium Programm ausschließen würde?
+Affiliate Programm
+Wie funktioniert das FTMO-Affiliate-Programm?
+Wie laufen Bewerbung und Freigabe ab?
+Gibt es Länderbeschränkungen für Partner und geworbene Kunden?
+Wie verdiene ich Provisionen als Affiliate?
+Wie funktioniert das Affiliate-Level-System?
+Wie funktionieren die Provisionen bei FTMO Futures?
+Was ist mein Affiliate-Code und wie nutzen ihn Trader?
+Wie funktioniert die Zuordnung bei FTMO-Futures-Empfehlungen?
+Bringen mir Trader, die ich vor dem Start von FTMO Futures geworben habe, Futures-Provisionen?
+Wie läuft der Prozess der Provisionsfreigabe ab?
+In welcher Währung werden meine Provisionen berechnet und ausgezahlt?
+Was sind die Voraussetzungen für eine Affiliate-Auszahlung?
+Was sind die wichtigsten Werberichtlinien, die ich beachten muss?
+Wie unterscheiden sich die Affiliate-Programme von FTMO und FTMO US?
+Alle FAQ
+CFDs
+Welche rechtliche Beziehung besteht zwischen einem FTMO Trader und FTMO nach der Unterzeichnung der FTMO Account Terms & Conditions?
+Welche rechtliche Beziehung besteht zwischen einem FTMO Trader und FTMO nach der Unterzeichnung der FTMO Account Terms & Conditions?
+Ein FTMO Trader gilt offiziell als Kunde, für den derzeit die FTMO Account Terms & Conditions gelten.
+Die Beziehung zwischen einem FTMO Trader und FTMO basiert auf den FTMO Account Terms & Conditions, die wir mit Ihnen unterzeichnen, nachdem Sie die anwendbaren Handelsziele (Trading Objectives) erfolgreich erreicht (beim 1-Step FTMO Challenge werden die Handelsziele durch das Bestehen der FTMO Challenge erreicht; beim 2-Step FTMO Challenge werden die Handelsziele nach dem Bestehen sowohl der FTMO Challenge als auch der Verifizierung erreicht) und den KYC/KYB-Prozess abgeschlossen haben.
+Wenn Sie einen FTMO Instant Account besitzen, sind dessen Bedingungen in zwei Dokumenten dargelegt, die Sie bei der Bestellung des Produkts akzeptieren: Die FTMO Challenge Terms and Conditions regeln primär den Kauf des Produkts und den simulierten Handel, bis Sie sich für Ihre erste Belohnung (Reward) qualifizieren. Ab diesem Zeitpunkt wird Ihre Belohnung gemäß den FTMO Account Terms and Conditions abgewickelt und der gesamte weitere simulierte Handel läuft unter diesen fort.
+Die FTMO Account Terms & Conditions sind ein rechtlich verbindliches Dokument , das sowohl unsere als auch Ihre Pflichten und Rechte definiert. Wenn Sie an einem Mustervertrag interessiert sind, kontaktieren Sie uns bitte unter [email protected] .
+Wie verläuft der Prozess des Vertragsabschlusses?
+Sobald Sie die Handelsziele Ihrer 1-Step FTMO Challenge oder Ihrer 2-Step FTMO Challenge erreichen, wird der Bereich „ FTMO Identity “ in Ihrem Client Area (Kundenbereich) freigeschaltet. Wenn Sie einen FTMO Instant Account besitzen, schließen Sie FTMO Identity ab, wenn Sie Ihre erste Belohnung (Reward) anfordern . FTMO Identity wird nicht neu erstellt, wenn Ihre Identitätsprüfung bereits bearbeitet wurde und aktiv ist. Im Bereich FTMO Identity können Sie Ihre persönlichen oder unternehmerischen Daten sowie die dazugehörige Dokumentation speichern und von unserem Compliance-Team überprüfen lassen. Die Compliance-Prüfungen dauern bei Registrierungen von Privatpersonen in der Regel weniger als 1 Werktag und bei Unternehmensregistrierungen bis zu 3 Werktage . Sobald alle Informationen von unserem Compliance-Team überprüft wurden, werden sie sicher in unserem System gespeichert und stehen für den Fall bereit, dass Sie Ihr(e) FTMO-Konto/-Konten nutzen oder neue FTMO Account Terms & Conditions abschließen möchten.
+Bei der Verifizierung Ihrer Identität stehen drei verschiedene Identitätstypen zur Auswahl:
+Natürliche Person : In diesem Fall müssen Sie den KYC-Verifizierungsprozess (Know Your Customer) durchlaufen. Ein gültiges, von einer Behörde ausgestelltes Ausweisdokument, aus dem die Staatsangehörigkeit hervorgeht, sowie ein Adressnachweis (Proof of Address) sind erforderlich.
+Unternehmer : In diesem Fall müssen Sie den KYB-Verifizierungsprozess (Know Your Business) durchlaufen. Ein gültiges, von einer Behörde ausgestelltes Ausweisdokument, aus dem die Staatsangehörigkeit hervorgeht, ein Dokument zur Bestätigung der Registrierung als Unternehmer sowie ein Adressnachweis sind erforderlich.
+Unternehmen : In diesem Fall müssen Sie den KYB-Verifizierungsprozess (Know Your Business) durchlaufen. Ein gültiges, von einer Behörde ausgestelltes Ausweisdokument, aus dem die Staatsangehörigkeit hervorgeht, und ein Adressnachweis des Unternehmensvertreters, ein Dokument zur Bestätigung der rechtlichen Existenz des Unternehmens sowie ein Adressnachweis des Unternehmens sind erforderlich.
+Standardmäßig ermöglicht es Ihnen unser System, mit der Verifizierung für die Entität fortzufahren, die Sie bei der Erstellung Ihrer ersten Bestellung ausgewählt haben. Wenn Sie Ihren Status ändern möchten (Natürliche Person / Unternehmer / Unternehmen), schreiben Sie uns an [email protected] . Bitte beachten Sie, dass die Statusänderung auf einmal pro Registrierung begrenzt ist. Die Option zur Statusänderung kann auch später genutzt werden, vorausgesetzt, Sie sind ein aktiver FTMO Trader und auf Ihrem/Ihren aktuell aktiven FTMO-Konto/-Konten wurde noch kein Trade platziert, z. B. nach der Auszahlung der Belohnung, wenn ein neues FTMO-Konto bereitgestellt wird.
+Sobald Sie Ihre KYC- oder KYB-Prüfung bestanden haben, werden die FTMO Account Terms & Conditions in Ihrem Client Area unter FTMO Traders, Contracts zur Ansicht und Unterzeichnung freigeschaltet. Sie können den Vertrag durchlesen und Ihre FTMO Identity nutzen, um ihn mit wenigen Klicks abzuschließen. Dieser Schritt gilt nicht für den FTMO Instant Account, da Sie die FTMO Account Terms & Conditions bereits beim Kauf des Kontos unterzeichnen; sobald Ihre FTMO Identity genehmigt ist, werden die FTMO Account Terms & Conditions automatisch angewendet .
+Das Client Area ist so konzipiert, dass es intuitiv und selbsterklärend ist und Ihnen die meisten notwendigen Informationen liefert, aber Sie können sich jederzeit an unseren Kundensupport wenden, wenn Sie Hilfe oder Unterstützung benötigen.
+Natürliche Person (Einzelperson)
+Um die FTMO Account Terms & Conditions abzuschließen und Auszahlungen in der Folge als natürliche Person zu fakturieren, nutzen Sie die Option „ Natürliche Person “, und Sie werden aufgefordert, Folgendes bereitzustellen:
+Ein gültiges, von einer Behörde ausgestelltes Ausweisdokument, aus dem die Staatsangehörigkeit hervorgeht (typischerweise der Reisepass oder Personalausweis). Falls Ihr Ausweisdokument ausschließlich in einer der folgenden Sprachen verfasst ist, verwenden Sie bitte einen internationalen Reisepass mit einer Transkription der Informationen in lateinischer Schrift: Amharisch, Arabisch, Armenisch, Bengali, Burmesisch, Dari, Dhivehi, Farsi, Georgisch, Hindi, Khmer (kambodschanisch), Kinyarwanda, Laotisch, Mongolisch, Nepalesisch, Singhalesisch, Urdu. Bitte beachten Sie, dass wir keine Führerscheine, Aufenthaltstitel oder andere Dokumente akzeptieren , auf denen die Staatsangehörigkeit nicht angegeben ist.
+Ein Adressnachweis (Proof of Address) , der ein vollständiges Dokument sein muss und Ihren Vor- und Nachnamen, Ihre Adresse sowie das Ausstellungsdatum enthalten muss, wie zum Beispiel: ein Bankkontoauszug, Kontoauszug, Mietvertrag, Schreiben einer anerkannten Behörde oder eine Versorgerrechnung (Gas, Strom, Wasser, Internet usw.).
+Bitte stellen Sie sicher, dass Ihr Adressnachweis nicht älter als 6 Monate ist und Ihren vollständigen Namen, Ihre vollständige Wohnanschrift sowie das Ausstellungsdatum deutlich anzeigt.
+Unternehmer (Einzelunternehmer)
+Um die FTMO Account Terms & Conditions abzuschließen und die Auszahlungen in der Folge als Unternehmer (natürliche Person mit Gewerbeschein) zu fakturieren, wählen Sie die Option „ Unternehmer “. Sie werden durch einen zweistufigen Prozess geführt: Identitätsprüfung und Sammlung von Informationen über den Unternehmer.
+Schritt 1: Identitätsprüfung
+In diesem Schritt wird die Identität des Unternehmers verifiziert. Erforderliche Dokumente umfassen:
+Von einer Behörde ausgestellter Ausweis: Reisepass oder Personalausweis, aus dem die Staatsangehörigkeit hervorgeht. Falls Ihr Ausweisdokument ausschließlich in einer der folgenden Sprachen verfasst ist, verwenden Sie bitte einen internationalen Reisepass mit einer Transkription der Informationen in lateinischer Schrift: Amharisch, Arabisch, Armenisch, Bengali, Burmesisch, Dari, Dhivehi, Farsi, Georgisch, Hindi, Khmer (kambodschanisch), Kinyarwanda, Laotisch, Mongolisch, Nepalesisch, Singhalesisch, Urdu. Bitte beachten Sie, dass wir keine Führerscheine, Aufenthaltstitel oder andere Dokumente akzeptieren , auf denen die Staatsangehörigkeit nicht angegeben ist.
+Adressnachweis: Wie z. B. ein Bankkontoauszug, eine Rechnung oder eine Versorgerrechnung. Er muss Ihren Namen, Ihre Adresse und das Ausstellungsdatum enthalten und darf nicht älter als 6 Monate sein.
+Schritt 2: Erfassung von Informationen über den Unternehmer und Belegdokumente
+Erforderliche Informationen:
+Allgemeine Informationen: Registernummer, USt-IdNr. (falls zutreffend), eingetragene Adresse, Registrierungsland und Kontaktinformationen.
+Angaben zum Vertreter: Name, Geburtsdatum, Staatsbürgerschaft.
+Eigentümerstruktur: Informationen über eventuelle Gesellschafter mit mehr als 25 % der Unternehmensanteile (UBO / wirtschaftlich Berechtigter) – relevant für Unternehmer aus einigen Rechtsordnungen; falls es keinen anderen Gesellschafter als Sie gibt, tragen Sie bitte Informationen über sich selbst als Unternehmer ein.
+Erforderliche Dokumente:
+Registrierungsbestätigung: Wie z. B. eine Gründungsurkunde (Certificate of Incorporation), ein aktueller Auszug aus einem staatlichen Register usw. Darf nicht älter als 12 Monate sein.
+Adressnachweis des Unternehmers: Bankkontoauszug, Rechnung, Kontoauszug, Mietvertrag, Versorgerrechnung, Auszug aus einem staatlichen Register / ein anderes gleichwertiges Dokument aus einem staatlichen Register, Certificate of Incumbency oder andere ähnliche Unternehmensdokumente.
+Sprachanforderungen:
+Wir akzeptieren Dokumente in lateinischer Schrift sowie auf Arabisch, Serbisch, Ukrainisch, Russisch und Japanisch. Dokumente in lateinischer Schrift werden schneller bearbeitet. Wenn Sie Dokumente auf Arabisch, Serbisch, Ukrainisch, Russisch oder Japanisch einreichen, kann die Bearbeitung mehr Zeit in Anspruch nehmen. Bitte reichen Sie für Dokumente in anderen Schriften Übersetzungen ins Englische oder Französische ein.
+Sollten die eingereichten Dokumente nicht ausreichen, können nach einer Prüfung zusätzliche Informationen oder Dokumente angefordert werden.
+Unternehmen (juristische Person)
+Um die FTMO Account Terms & Conditions abzuschließen und die Auszahlungen in der Folge über eine juristische Person zu fakturieren (Sie müssen Direktor und Gesellschafter des betreffenden Unternehmens sein), wählen Sie die Option „ Unternehmen “, und Sie werden aufgefordert, Folgendes bereitzustellen:
+Offizielle Dokumente, die grundlegende Informationen über die juristische Person belegen:
+Ein Dokument zur Bestätigung der rechtlichen Existenz des Unternehmens , wie z. B. eine Gründungs- / Registrierungsurkunde (Certificate of Incorporation/Registration), ein aktueller Auszug aus einem staatlichen Unternehmensregister, ein Certificate of Incumbency, ein Certificate of Good Standing, der Gesellschaftsvertrag / die Gründungsurkunde (Memorandum/Articles of Incorporation/Association/Registration) oder andere ähnliche Dokumente.
+Ein Dokument, das die Identifizierung aller wirtschaftlich Berechtigten (Ultimate Beneficial Owners – Personen mit mehr als 25 % Anteilen) eines Unternehmens ermöglicht, wie z. B. ein Aktienregister (Shareholder Registry), eine Informationserklärung (Statement of Information), ein aktueller Auszug aus einem staatlichen Unternehmensregister, ein Certificate of Incumbency, ein Gesellschaftsvertrag / eine Gründungsurkunde, ein Treuhandvertrag (Trust Agreement) oder andere ähnliche Dokumente. Bitte beachten Sie, dass Kontoauszüge nicht als Nachweis für den Status von wirtschaftlich Berechtigten akzeptiert werden.
+Adressnachweis , wie z. B. Bankkontoauszug, Rechnung, Kontoauszug, Mietvertrag, Versorgerrechnung, Auszug aus einem staatlichen Register / ein anderes gleichwertiges Dokument aus einem staatlichen Register, Certificate of Incumbency oder andere ähnliche Unternehmensdokumente.
+Die bereitgestellten Dokumente dürfen nicht älter als 12 Monate vor dem Einreichungsdatum sein, und ihre Kombination muss den Nachweis zur Überprüfung folgender Punkte erbringen:
+Der Name des Unternehmens
+Die Registernummer des Unternehmens
+Die Rechtsform (Art) des Unternehmens
+Die eingetragene Adresse des Unternehmens
+Das Gründungsdatum
+Sollten wir die Dokumente für unzureichend befinden, werden Sie nach Prüfung der eingereichten Dokumente möglicherweise aufgefordert, zusätzliche Informationen/Dokumente bereitzustellen.
+Falls die juristische Person über mehrere Konzernebenen verfügt (d. h. zwischengeschaltete Holdinggesellschaften), sollten die entsprechenden Dokumente zur Bestätigung der rechtlichen Existenz des Unternehmens für jede einzelne Gesellschaft vorgelegt werden.
+Informationen über Personen, die im Zusammenhang mit der Geschäftsbeziehung zu FTMO im Namen des Unternehmens handeln (FTMO Trader):
+Gültiges Ausweisdokument, aus dem die Staatsangehörigkeit hervorgeht – Reisepass oder Personalausweis. Falls Ihr Ausweisdokument ausschließlich in einer der folgenden Sprachen verfasst ist, verwenden Sie bitte einen internationalen Reisepass, in dem die Angaben in lateinischer Schrift aufgeführt sind: Amharisch, Arabisch, Armenisch, Bengalisch, Birmanisch, Dari, Dhivehi, Farsi, Georgisch, Hindi, Khmer (Kambodschanisch), Kinyarwanda, Laotisch, Mongolisch, Nepali, Singhalesisch, Urdu. Bitte beachten Sie, dass wir keine Führerscheine, Aufenthaltstitel oder sonstigen Dokumente akzeptieren , aus denen die Staatsangehörigkeit nicht hervorgeht.
+Eine Vollmacht zum Handeln im Namen des Unternehmens (die Vollmacht muss nicht hochgeladen werden, falls Sie der Direktor des Unternehmens oder eine andere offizielle Person mit Exekutivbefugnissen sind, die im jeweiligen staatlichen Register eingetragen ist).
+Bitte beachten Sie, dass wir keine Verträge mit gemeinnützigen Organisationen (Nonprofit Organizations) oder Trusts (Treuhandgesellschaften) abschließen können , ebenso wenig wie mit Unternehmen, die sich im Besitz oder Miteigentum von gemeinnützigen Organisationen oder Trusts befinden.
+Beliebte Suchanfragen
+Warum sollte ich FTMO beitreten?
+Warum gibt es eine Gebühr?
+Wer ist ein FTMO Trader und wie werde ich einer?
+Kann ich meine Plattform oder meinen Kontotyp ändern?
+Wie beginnt man?
+Beginnen Sie heute mit dem Trading bei FTMO
+So viele kostenlose Testversionen, wie Sie benötigen
+Konto bis zu 200 000 USD
+Keine zeitliche Begrenzung
+Handeln Sie mit FTMO
+Free Trial
+Worldwide Reviews
+Beweisen Sie Ihre Fähigkeiten bei einem vertrauenswürdigen Unternehmen
+Wir unterstützen Trader seit 2015. Schließen Sie sich ihnen jetzt an!
+4.5M+
+Kunden weltweit
+$650M+
+Weltweit in Belohnungen ausgezahlt
+4.8/5
+Trustpilot
+FAQ
+So funktioniert es
+Affiliate-Programm
+Handelsziele
+FTMO Store (EN)
+Support
+Chatte mit uns
+Nachricht senden
+[email protected]
++420 910 920 304
+Folgen Sie FTMO
+CFD
+CFD-Übersicht
+Preise
+So funktionieren CFDs
+Kostenloses Free Trial
+Handelsziele
+1-Step FTMO Challenge
+2-Step FTMO Challenge
+FTMO Instant Account
+Vergleichstabelle
+Verbotene Handelspraktiken
+Mehr erreichen
+Premium Programm
+Skalierungsplan
+Futures
+EN Only
+Futures Overview
+Pricing
+How Futures Works
+Trading Objectives
+Comparison Table
+Forbidden Trading Practices
+Trading
+Wirtschaftskalender
+Trading-Updates
+Instrumente
+Handelsplattformen
+Tools & Dienstleistungen
+Trading-Tools & Dienstleistungen
+Trading Psychology
+Leaderboard
+App Suite
+Ressourcen
+FAQ
+Blog
+Academy
+Über uns
+Über uns
+Careers (EN)
+Kontaktieren Sie uns
+Pressekit
+Press Releases (EN)
+Affiliate-Programm
+Adresse
+FTMO
+Quadrio offices
+Purkynova 2121/3
+110 00 Prag
+Tschechische Republik
+Erhalten Sie exklusive Einblicke in FTMO
+Experteneinblicke in den Handel
+Neueste Updates
+Sonderangebote
+Abonnieren
+Abonnement erfolgreich abgeschlossen.
+Alle auf dieser Website bereitgestellten Informationen dienen ausschließlich Bildungszwecken im Zusammenhang mit dem Handel an den Finanzmärkten. Sie stellen weder eine spezifische Anlage- oder Geschäftsempfehlung noch eine Analyse von Investitionsmöglichkeiten oder eine allgemeine Empfehlung zum Handel mit Finanzinstrumenten dar.
+FTMO bietet ausschließlich Dienstleistungen im Bereich des simulierten Handels sowie Schulungs- und Lernwerkzeuge für Trader an. Die Informationen auf dieser Website richten sich nicht an Personen in Ländern oder Rechtsgebieten, in denen die Verbreitung oder Nutzung solcher Inhalte gegen geltende Gesetze oder Vorschriften verstoßen würde.
+Die Unternehmen der FTMO Gruppe treten nicht als Broker auf und nehmen keine Einzahlungen entgegen. Die technische Infrastruktur der FTMO Plattformen sowie die Datenübermittlung werden von externen Liquiditätsanbietern bereitgestellt.
+Copyright © 2026 FTMO s.r.o. Alle Rechte vorbehalten.
+Cookie-Einstellungen
+Cookies
+Impressum
+Allgemeine Geschäftsbedingungen
+Datenschutzrichtlinie
+Made with for trading

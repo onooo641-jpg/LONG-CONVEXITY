@@ -1,0 +1,88 @@
+LucidDaily Customization | Lucid Trading Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Lucid Home
+Lucid Home
+Search for articles...
+All Collections
+LucidDaily
+LucidDaily Customization
+LucidDaily Customization
+A
+Written by AJ
+Updated this week
+Table of contents
+LucidDaily Customization
+Overview
+LucidDaily gives traders the ability to customize their account at the time of purchase. Two settings can be adjusted to create the trading experience that best fits your risk preferences. The three customization options are:
+Daily Loss Limit: On or Off
+Evaluation Drawdown: End-of-Day (EOD) or Intraday
+Consistency: 30%, 40% or 50%
+These settings create unique LucidDaily account configurations to suit the trader.
+Daily Loss Limit
+The Daily Loss Limit (DLL) determines whether a daily loss cap is enforced on your account. The DLL is a soft breach, so if you hit it you will simply be locked out until the next trading session.
+Daily Loss Limit Enabled
+A Daily Loss Limit is enforced on both evaluation and funded accounts
+Results in a lower evaluation purchase price
+Daily Loss Limit Disabled
+No Daily Loss Limit is applied during either the evaluation or funded phase
+Results in a higher evaluation purchase price
+Consistency
+30% (add-on): your largest day must be 30% or less of your evaluation profit. This is optional for accounts that use End-of-Day Drawdown in both the evaluation and funded stage to reduce the evaluation price.
+40% (standard): your largest day must be 40% or less of your evaluation profit. Mid tier price.
+50% (add-on): your largest day can be up to 50%, so you can pass in as few as 2 days. Added at checkout for a small fee. This is not available if the Funded stage has End-of-Day Drawdown enabled.
+On Demand Payouts
+With the Daily Loss Limit On , you can request payouts from your funded LucidDaily account during the trading session as soon as your dashboard shows all payout objectives are complete.
+You can submit multiple payout requests from the same account within a single session , provided all payout requirements are met for each request.
+Accounts with a News Trading Violation, or Hedging Violation, are not eligible for intraday payouts. See Prohibited: Hedging .
+With the Daily Loss Limit Off , payouts follow the regular end-of-day schedule.
+Evaluation Drawdown
+This setting determines how the Max Loss Limit is calculated during the evaluation stage . If intraday drawdown is selected in the evaluation stage, this carries through to the Funded stage.
+​
+Funded Drawdown
+This setting determines how the Max Loss Limit is calculated during the funded stage. If End-of-Day (EOD) Drawdown is selected in the evaluation stage, the drawdown type in the funded stage can also be customized, between Intraday and EOD.
+End-of-Day (EOD) Drawdown
+Drawdown is calculated using your account balance at the end of each trading session
+Unrealized gains and losses do not affect the drawdown calculation
+Results in a higher evaluation purchase price
+Intraday Drawdown
+Drawdown is monitored continuously throughout the trading session
+Unrealized profits and losses are included in the calculation
+Results in a lower evaluation purchase price
+Available Account Configurations
+LucidDaily offers many possible combinations, below are four examples:
+Option 1: Daily Loss Limit ON + Intraday Evaluation Drawdown
+Daily Loss Limit enabled
+Evaluation uses Intraday Drawdown
+Funded account uses Intraday Drawdown
+Choice of 40% or 50% Consistency
+Cheapest version of LucidDaily
+Option 2: Daily Loss Limit ON + End-of-Day Evaluation Drawdown
+Daily Loss Limit enabled
+Evaluation uses End-of-Day Drawdown
+Funded account uses Intraday Drawdown
+Choice of 40% or 50% Consistency
+Mid-tier pricing version of LucidDaily
+Option 3: Daily Loss Limit OFF + Intraday Evaluation Drawdown
+No Daily Loss Limit
+Evaluation uses Intraday Drawdown
+Funded account uses Intraday Drawdown
+Choice of 40% or 50% Consistency
+Mid-tier pricing version of LucidDaily
+Option 4: Daily Loss Limit OFF + End-of-Day Evaluation + End-of-Day Funded Drawdown
+No Daily Loss Limit
+Evaluation uses End-of-Day Drawdown
+Funded account uses End-of-Day Drawdown
+Choice of 30% or 40% Consistency
+Most expensive version of LucidDaily
+Choosing the Right Configuration
+Your LucidDaily customization should reflect your priorities:
+Choose Daily Loss Limit ON if you prefer a lower purchase price and access to on-demand payouts on your funded account.
+Choose Daily Loss Limit OFF if you prefer no daily loss cap and don’t mind paying a higher purchase price.
+Choose Intraday Drawdown in Eval and funded for a lower evaluation purchase price.
+Choose EOD Drawdown in Eval and funded if you prefer drawdown calculated at the end of the trading session and don’t mind paying a higher purchase price.
+Choose 50% Consistency if you want to pass faster
+Once selected, these settings cannot be changed for an active account. If you want a different configuration, you'll need to purchase a new LucidDaily account with your preferred options.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Lucid Trading Help Center

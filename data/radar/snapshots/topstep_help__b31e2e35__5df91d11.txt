@@ -1,0 +1,90 @@
+Funded Trader Tax Questions | Topstep Help Center Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Skip to main content
+Discord Topstep TopstepTV
+Discord Topstep TopstepTV
+Search for articles...
+All Collections
+Topstep Program
+Payout Information
+Funded Trader Tax Questions
+Funded Trader Tax Questions
+You're an independent contractor. Not an employee. Here's what that means for your taxes.
+May 29, 2026
+Table of contents
+☝️ Important: Topstep can't give tax advice. What we can do is tell you exactly what forms we send, what you're responsible for, and how your 1099-NEC works.
+2025 1099s
+Topstep sent 2025 1099s on January 31, 2026, via email to US citizens who received over $600 in Payouts in 2025.
+Not a US citizen, or under $600 in Payouts? No 1099 from Topstep.
+Check your spam folder if you qualify and haven't received one.
+Questions? Email 1099support@topstep.com .
+What Tax Forms Do You Need to Complete?
+Situation
+Form
+US citizen (anywhere in the world)
+W-9
+Resident alien with ITIN
+W-9 (enter ITIN in SSN field)
+Non-US citizen living outside the US
+W-8 BEN
+How to Report Your Earnings
+Report your Payout amounts as regular income — only the amount you actually received.
+Example: If your Funded Account earned $5,000 but you only requested a $1,000 Payout, you report $1,000.
+👉 Clarification: Are You an Employee of Topstep? No. All Traders are independent contractors.
+Can You Open a Funded Account Under a Business?
+No. Funded Accounts must be set up in your individual legal name.
+However, US-based single-member LLCs may receive Payouts and file taxes under the LLC:
+Use your personal info on the Funded Account Agreement
+Use your LLC info on bank and tax forms
+Not permitted: C-corps, S-corps, or multi-member LLCs.
+What Tax Forms Will You Receive?
+Situation
+Form
+US citizen, $600+ in Payouts
+1099-NEC
+US citizen, under $600
+No form from Topstep
+Non-US citizen
+No form from Topstep
+Why Your 1099-NEC May Show More Than You Received
+The IRS requires Topstep to report your gross Payout amount, before any fees.
+Example:
+You request a $500 Payout via ACH/Wire
+A $30 processing fee applies
+You receive $470
+Your 1099-NEC shows $500
+This is correct and IRS-compliant. Your 1099-NEC will not be corrected.
+How to deduct the fee if you're self-employed:
+Report the full $500 from your 1099-NEC as income.
+Deduct the $30 processing fee as a business expense on Schedule C.
+Net taxable income = $470.
+Note: Wise Payouts have no processing fee — gross and net amounts are the same.
+Common Questions
+Was I overreported to the IRS?
+No. The IRS requires payers to report the gross amount before fees. Your income was reported correctly.
+Can you issue a corrected 1099-NEC for the net amount?
+No. The $30 is a processing fee, not a reduction of income. The 1099-NEC must reflect the gross amount
+Why doesn't Wise have this issue?
+Wise Payouts have no processing fee — gross and net amounts are the same.
+International Traders
+Topstep cannot offer guidance on foreign tax reporting. Report your earnings per your country's local tax laws. Consult a tax or legal professional for country-specific questions.
+Important Disclaimer: This article is for informational purposes only and is not tax advice. Consult a qualified tax professional for your specific situation.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Your Privacy Choices

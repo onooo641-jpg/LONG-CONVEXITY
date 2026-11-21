@@ -1,0 +1,80 @@
+Monthly trading competition | Blue Guardian Help Centre
+Skip to content Help Search the help centre ⌘K
+Website Start challenge Help Centre home Collections
+Getting started Account inactivity rule How Blue Guardian works Getting help and using your dashboard
+Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
+Payouts How payouts work
+Billing & accounts Paying for your account: methods, card rules and refunds How many accounts can I have? Futures bundle discounts
+Trading rules Prohibited trading strategies What happens if I break a rule? Futures risk management rules Trading hours and the trading day CFD news trading rules
+Platforms & instruments Trading platforms CFD trading conditions: markets, commissions and leverage Futures contract limits and funded scaling Futures instruments, codes and costs
+CFD plans Instant Standard account rules Instant Starter account rules 1 Step Standard rules 2 Step Standard rules 1 Step Nano rules 2 Step Nano rules Buy Now Pay Later (BNPL) rules
+Futures plans Reserve account rules Elite account rules Express account rules Direct account rules Elite, Reserve & Direct Path to Live Zero account rules Zero Path to Live
+Affiliates & competitions Affiliate program Monthly trading competition
+Help Centre
+Affiliates & competitions
+Monthly trading competition
+The monthly CFD trading competition: prizes for the top 50, how to enter, dates, rules, disqualification and logging in.
+Applies to: CFD Updated 13 November 2026
+Short answer
+Every month, Blue Guardian runs a free CFD trading competition for up to 5,000 traders. The top 50 win prizes, from cash and a $200K Instant account for 1st place to a $5K Instant Starter account. Register from the Competitions page in your dashboard. EAs and trade copiers aren't allowed.
+Prizes
+Rank
+Prize
+1st
+$500 cash + $200K Instant account
+2nd
+$300 cash + $100K Instant account
+3rd
+$200 cash + $50K Instant account
+4th–5th
+$50K Instant account
+6th–10th
+$25K Instant account
+11th–25th
+$10K Instant account
+26th–50th
+$5K Instant Starter account
+After the competition ends, we review the top 50. Winners receive an email with their prize details within 3 business days.
+How to enter
+You must be 18 or older .
+Go to the Competitions page in your dashboard and click Register for the upcoming competition. Entry is free and limited to 5,000 participants.
+Only one account per email address and IP address. Registering more than one means immediate disqualification.
+Competitions run on Match-Trader and MT5 only. Platforms can't be switched.
+Dates
+Each competition starts on the 1st of the month at 8:00 AM UTC and ends on the last day of the month at 10:00 PM UTC .
+Competition rules
+Max daily loss
+4% of starting balance, measured from the higher of balance or equity at the 5:00 PM New York reset
+Max drawdown
+8% static. On $100K, equity must stay above $92,000.
+EAs and trade copiers
+Not allowed
+News trading
+Allowed (watch out for slippage)
+Lot size
+No limit; your leverage and margin are the limit
+Leverage
+FX 1:100, indices 1:20, commodities 1:20, crypto 1:2
+Overnight and weekends
+Allowed, including crypto at weekends
+Disqualification
+If you see DQ on your dashboard, your account broke one or more competition rules. Breaking any rule means immediate disqualification from all competitions, at Blue Guardian's discretion. Disqualification is final, and support can't reverse it. You can't re-enter the current competition, but you're welcome to register for next month's.
+Logging in
+Go to platform.blueguardian.com/dashboard .
+Enter the username and password from your competition welcome email.
+Click Sign in .
+New to Match-Trader? Watch this walkthrough .
+We may update these rules at any time, so check this page before each competition.
+Still need help?
+Chat with our support team. We usually reply in a few minutes.
+Chat with us
+More in Affiliates & competitions
+Applies to: CFD and Futures Affiliate program
+On this page Short answer
+Prizes
+How to enter
+Dates
+Competition rules
+Disqualification
+Logging in
+© 2026 All Rights Reserved – Blue Guardian Terms Privacy Cookies

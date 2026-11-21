@@ -1,0 +1,51 @@
+Adding Indicators and Studies to Volumetrica | My Funded Futures Help Center Skip to main content
+Go to website Discord YouTube English हिन्दी Español English
+Go to website Discord YouTube English हिन्दी Español English
+Search for articles...
+All Collections
+Trading Platforms
+Adding Indicators and Studies to Volumetrica
+Adding Indicators and Studies to Volumetrica
+Studies and Indicator suite on Volumetrica.
+August 24, 2026
+Table of contents
+Once you have configured your layouts and workspaces, you can further enhance your charts by integrating various studies and chart types that align with your trading strategy.
+Adding Indicators
+Accessing the Indicators Menu:
+Click on the "Indicators" button located at the top-right corner of the window.
+You can browse through the available indicators categorized under Volume and Technical Analysis, or use the search bar to locate specific indicators efficiently.
+Applying and Customizing Indicators:
+Select the MACD indicator from the search results. The platform will display preset values, which reflect the standard settings for the indicator.
+Customize these settings as needed to suit your trading preferences. You can adjust parameters such as periods and thresholds to align with your specific strategy.
+Click “Apply” to add the indicator to your chart. You can repeat this process to include multiple indicators as required for your analysis.
+Ensure that you save your customized indicator settings as a template and include it in your workspace to maintain consistency across trading sessions.
+If you encounter any issues with adding indicators or have suggestions for additional indicators, please contact our support team for assistance.
+Adding Drawings and Studies to the Chart
+Utilizing Charting Tools:
+On the right side of the chart, you will find toolbars for both pointer and drawing tools.
+Pointer Tools: These tools help navigate the chart and determine precise price levels. The available pointer tools are:
+Pointer Tool: Allows for general navigation.
+Hand Tool: Facilitates horizontal movement of the chart.
+Crosshair Tool: Enables precise identification of price levels on the chart.
+Use these pointer tools to make accurate adjustments and positioning of chart elements.
+Applying Drawing Tools:
+Below the pointer tools, the drawing tools available include:
+Horizontal Ray
+Vertical Ray
+Horizontal and Vertical Lines
+Parallel Lines Tool
+Box Tool
+Text Tool
+Fibonacci Retracements
+Ruler Tool
+Configuring the Fibonacci Tool:
+To draw Fibonacci lines, select the Fibonacci tool and apply it to your chart. Double-click the lines to open the settings menu.
+Click the gear icon to access the editing options, where you can adjust the Fibonacci levels to fit your analysis.
+In the “Tool Config” menu, click “Add New Template” to save your customized Fibonacci settings for future use.
+For any further questions or assistance with charting tools, please contact our support team. Our team is dedicated to providing you with comprehensive support to optimize your trading experience.
+Related Articles
+Overview of Supported Platforms at MFFU
+Introduction to Volumetrica
+Workspaces and Templates in Volumetrica
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

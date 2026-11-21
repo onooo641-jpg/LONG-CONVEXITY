@@ -1,0 +1,101 @@
+Instant Standard account rules | Blue Guardian Help Centre
+Skip to content Help Search the help centre ⌘K
+Website Start challenge Help Centre home Collections
+Getting started Account inactivity rule How Blue Guardian works Getting help and using your dashboard
+Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
+Payouts How payouts work
+Billing & accounts Paying for your account: methods, card rules and refunds How many accounts can I have? Futures bundle discounts
+Trading rules Prohibited trading strategies What happens if I break a rule? Futures risk management rules Trading hours and the trading day CFD news trading rules
+Platforms & instruments Trading platforms CFD trading conditions: markets, commissions and leverage Futures contract limits and funded scaling Futures instruments, codes and costs
+CFD plans Instant Standard account rules Instant Starter account rules 1 Step Standard rules 2 Step Standard rules 1 Step Nano rules 2 Step Nano rules Buy Now Pay Later (BNPL) rules
+Futures plans Reserve account rules Elite account rules Express account rules Direct account rules Elite, Reserve & Direct Path to Live Zero account rules Zero Path to Live
+Affiliates & competitions Affiliate program Monthly trading competition
+Help Centre
+CFD plans
+Instant Standard account rules
+CFD Instant Standard: no evaluation, 3% daily loss, 6% trailing drawdown, Guardian Shield, 20% consistency, withdrawal buffer and payouts.
+Applies to: CFD Updated 13 November 2026
+Short answer
+Instant Standard gives you a funded CFD account straight away, with no evaluation and no profit target. Stay within a 3% daily loss and a 6% trailing drawdown. You can request a payout on demand after 5 profitable days, as long as you meet the 20% consistency rule. The profit split is 80%, or 90% with the add-on.
+How the consistency rule unlocks your payout Replay
+Total profit Best single day Consistency limit (%) Enter your numbers to check.
+Your best single day must stay within the consistency limit of your total profit. Each extra profitable day raises the threshold, and the payout button turns on once your best day fits under it.
+Key numbers
+Profit target
+None
+Max daily loss
+3% of starting balance
+Max drawdown
+6% trailing (locks at starting balance once you reach +6%)
+Minimum trading days
+5 days with at least 0.5% profit each
+Consistency
+20% (15% on $300K and $400K)
+Guardian Shield
+Closes all trades at 1% floating loss
+Minimum hold time
+2 minutes
+Profit split
+80% (90% with add-on)
+Payouts
+On demand; minimum $100 crypto, $500 Rise
+Leverage
+FX 1:30, indices and commodities 1:10, crypto 1:2
+Getting started
+There's no evaluation. Once your account is issued, sign your Trader Agreement and you can start trading.
+Risk limits
+Maximum daily loss: 3%
+Your daily loss limit is 3% of your starting balance , measured from whichever is higher at the 5:00 PM New York reset: your balance or your equity.
+Floating profit at reset: on a $100K account with $2,000 floating profit, equity is $102,000, so equity can't drop below $99,000 the next day.
+Floating loss at reset: with $2,000 floating loss, your $100,000 balance is higher, so equity can't drop below $97,000 the next day.
+No open trades at reset: the limit is your closed balance minus 3% of your starting balance.
+Maximum drawdown: 6% trailing
+Your maximum drawdown trails 6% below your highest closed balance . Once your account reaches +6% profit, the drawdown locks at your starting balance and stops trailing. Drawdown includes closed profits and losses, swaps and commissions.
+Example on $100K: you start with a daily limit of $97,000 and a max drawdown of $94,000. After making $5,000 (balance $105,000), the next day's daily limit is $102,000 and your max drawdown trails up to $99,000. Once you've made more than $6,000, your max drawdown locks at $100,000.
+Guardian Shield
+If your open trades reach a combined 1% floating loss , Guardian Shield will usually close all open trades. You can keep trading straight away, but there are consequences:
+1st time: your profit split drops to 50% permanently.
+2nd time: the account is permanently breached.
+Example: on $100K with three open trades, if your combined floating loss reaches $1,000, all three are closed.
+Payouts
+Requirements
+At least 5 trading days with 0.5% profit or more. They don't need to be consecutive.
+Account above your starting balance.
+Consistency rule met (see below).
+No rule violations, and all positions closed.
+Consistency rule: 20%
+Within each payout period, your best day must be below 20% of your total profit. Until it is, the payout button stays unavailable. Your account isn't breached; you just keep trading. Example: with a $1,000 best day, you need at least $5,000 total profit. $300K and $400K accounts use a 15% consistency rule.
+1% withdrawal buffer
+Once you reach +6% and your drawdown locks at your starting balance, you must leave 1% of your starting balance in profit when you withdraw. You don't need to reach +6% to request a payout; the buffer only applies after the lock.
+Exactly $6,000 profit on $100K: you can withdraw up to $5,000, leaving a $101,000 balance.
+$8,000 profit and a $6,000 payout: your balance is $102,000, $2,000 above the locked drawdown.
+Profit split and caps
+80% profit split, or 90% with the add-on bought at checkout.
+On $200K, $300K and $400K accounts, your first two payouts are capped at $10,000 each. After that, there's no cap.
+Trading rules
+News: don't open or close trades from 5 minutes before to 5 minutes after high-impact news on affected instruments. See CFD news trading rules .
+Tick scalping: hold each trade for at least 2 minutes . Trades closed sooner may be flagged.
+Overnight and weekends: allowed.
+Expert Advisors: allowed, if they're your own setup. VPNs and VPS are allowed, but not to get around copy trading, group trading or signal rules.
+Copy trading: only between accounts you legally own, including your own external accounts.
+Stop losses: not mandatory, but you're responsible for staying within the rules.
+Still need help?
+Chat with our support team. We usually reply in a few minutes.
+Chat with us
+More in CFD plans
+Applies to: CFD Instant Starter account rules Applies to: CFD 1 Step Standard rules Applies to: CFD 2 Step Standard rules Applies to: CFD 1 Step Nano rules Applies to: CFD 2 Step Nano rules Applies to: CFD Buy Now Pay Later (BNPL) rules
+There are no Futures related articles here. Switch to CFD or All to see them.
+On this page Short answer
+Key numbers
+Getting started
+Risk limits
+Maximum daily loss: 3%
+Maximum drawdown: 6% trailing
+Guardian Shield
+Payouts
+Requirements
+Consistency rule: 20%
+1% withdrawal buffer
+Profit split and caps
+Trading rules
+© 2026 All Rights Reserved – Blue Guardian Terms Privacy Cookies

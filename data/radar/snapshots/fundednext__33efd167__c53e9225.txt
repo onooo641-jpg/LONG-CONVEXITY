@@ -1,0 +1,42 @@
+How can I calculate the daily loss limit? | FundedNext Help Center Skip to main content
+Go to Website العربية Português do Brasil English Français Deutsch हिन्दी Italiano 日本語 fa-IR 简体中文 Español ภาษาไทย Türkçe Oʻzbekcha English
+Go to Website العربية Português do Brasil English Français Deutsch हिन्दी Italiano 日本語 fa-IR 简体中文 Español ภาษาไทย Türkçe Oʻzbekcha English
+Search for articles...
+All Collections
+General FAQ
+Account Information
+How can I calculate the daily loss limit?
+How can I calculate the daily loss limit?
+April 8, 2026
+Table of contents
+For traders participating in FundedNext Challenges, each account type has a fixed daily loss limit.
+To calculate your daily loss limit, use the following formula:
+Daily Loss Limit = Initial Balance × Daily Loss Limit Percentage of Your Enrolled Challenge Account.
+When calculating the daily loss, please note that swap charges, commissions, and fees are included in the total amount. If you exceed the daily loss limit, your account will be breached and marked with a "Daily Loss Limit," and you will no longer be able to trade.
+Example 1: You have a $100,000 Stellar 2-Step Challenge Account, and your daily loss limit is 5% of your initial balance. So, $100,000 is considered the initial balance. Then, your daily loss will be ($100,000 x 0.05) = $5,000.
+Example 2: You have a $100,000 Stellar 2-Step Challenge Account. At noon (server time), you have made $2,000 profit, so the daily loss limit for that day will be ($100,000 x 0.05 + $2,000) = $7,000.
+In other words, losing more than $7,000 on closed or running trades on that day will violate the daily loss limit.
+Please keep in mind that your daily loss limit will reset every day at 00:00 (server time). Therefore, your new daily loss limit for the following day will be calculated as the initial balance (in this case, $100,000) multiplied by the daily loss limit percentage of your enrolled challenge (5%), which is $5,000.
+Let's consider an example to illustrate this calculation. Suppose you have purchased a Stellar 2-Step $100,000 Account. Here's how the calculation works:
+Case 01:
+Let's assume your daily loss limit is $5,000, and you are not allowed to lose more than $5,000 on any given day. Suppose you have lost a total of $3000 in your closed trades. In such a case, you cannot lose more than $2000, including floating losses. Note that swaps, commission rates, and fees are included in this calculation. It will be considered a violation if you lose more than $2,000 on that day.
+In other words,
+Current Daily loss = Closed Trade Results for This Day + Results from the Open Positions.
+To know more about floating losses, click here .
+Case 02:
+Similarly, let's say you gained $5,000 in profit in a single day. In such a case, you will be allowed to lose $5,000 (your profit) + $5,000 (your daily loss limit) = $10,000 for that day. Losing more than $10,000 (in both open and closed positions) will be considered a violation. Note that the daily loss limit resets at 00:00 (server time). After the reset, previous day profits will no longer count toward your daily loss limit. Instead, your daily loss limit will return to being a percentage of your initial balance (e.g., $100,000 × 5% = $5,000).
+For example, if you start a new day with $110,000 and lose $5,000 during the day, your equity will be $105,000. However, since your daily loss limit is calculated based on the initial balance ($100,000 × 5% = $5,000), losing $5,000 breaches the limit for that day. This will result in your account being paused, even though your equity has not dropped to $95,000.
+Case 03:
+Let's look at another case: You have a $100,000 trading account. In a single day, you encounter a significant loss of around $3,000. Determined to be profitable, you initiate another trade. If at any given moment your running position results in a floating loss exceeding -$2,000, your account will breach the daily loss limit, as you have crossed $5,000 for a single day, and your account will be paused.
+Case 04:
+Another thing to keep in mind is that your daily loss limit will be reset at 00:00 (server time). For example, suppose you have gained a $2,000 profit in a closed trade, and currently, you have a running trade at a $6,000 floating loss. In this case, you still have not violated your daily loss for the day because your current daily loss is $2,000 - $6,000 = -$4,000. However, if you hold this one trade with a floating loss of $6,000 after midnight, you will breach the daily loss limit because a new day begins after midnight, and you have already lost $6,000, which is more than your calculated daily loss limit of $5,000.
+Important Note Regarding Server Time
+Our server follows a seasonal time adjustment. During Daylight Saving Time, which typically occurs in the summer months, the server operates on GMT+3 . For the remainder of the year, when daylight saving time is not in effect, the server time is adjusted to GMT +2.
+Related Articles
+How can I calculate the Maximum Loss Limit?
+What is the Maximum Daily Loss Limit?
+What are Today’s Permitted Loss Limit and Maximum Permitted Loss Limit on FundedNext CFD?
+Daily Loss Limit vs. Maximum Loss Limit
+Understanding the End-of-Day (EOD) Trailing Maximum Loss Limit for the FNL: 001 NO DLL 1-Step CFDs 50K Challenge Account
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

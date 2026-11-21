@@ -1,0 +1,455 @@
+Co je FTMO Identity a kdy ji dokončím? | FTMO.com
+Nový
+FTMO Instant Account
+{
+document.body.classList.toggle('no-scroll', value);
+});
+// Set scroll to true when we are scrolled 5.2% of viewport height on mobile or 6% on desktop.
+// Scroll variable is used to change navbar background from transparent to solid when scrolling.
+const checkScroll = () => {
+const isMobile = window.innerWidth threshold;
+};
+checkScroll();
+window.addEventListener('scroll', checkScroll);
+}
+}"
+@keydown.escape.prevent.stop="
+if (menuOpen || activeItem) {
+activeItem = null;
+menuOpen = false;
+}
+"
+>
+{ document.getElementById('first-mega-item-cfd')?.focus() })"
+@blur="hoveredItem = null"
+:class="{ 'bg-background-hover':
+hoveredItem === 'cfd' ||
+activeItem === 'cfd',
+'text-content-primary':
+hoveredItem === 'cfd' ||
+activeItem === 'cfd' ||
+hoveredItem === null && !menuOpen,
+'text-gray-400':
+(hoveredItem !== null && hoveredItem !== 'cfd' && (activeItem === 'cfd' ? false : true)) ||
+(menuOpen && hoveredItem === null && (activeItem === 'cfd' ? false : true))
+}"
+class="flex items-center gap-1.5 py-3 px-2 xl:px-3 transition-colors duration-200 rounded-lg focus:outline-none">
+CFD
+{ document.getElementById('first-mega-item-futures')?.focus() })"
+@blur="hoveredItem = null"
+:class="{ 'bg-background-hover':
+hoveredItem === 'futures' ||
+activeItem === 'futures',
+'text-content-primary':
+hoveredItem === 'futures' ||
+activeItem === 'futures' ||
+hoveredItem === null && !menuOpen,
+'text-gray-400':
+(hoveredItem !== null && hoveredItem !== 'futures' && (activeItem === 'futures' ? false : true)) ||
+(menuOpen && hoveredItem === null && (activeItem === 'futures' ? false : true))
+}"
+class="flex items-center gap-1.5 py-3 px-2 xl:px-3 transition-colors duration-200 rounded-lg focus:outline-none">
+New
+Futures
+{ document.getElementById('first-mega-item-trading')?.focus() })"
+@blur="hoveredItem = null"
+:class="{ 'bg-background-hover':
+hoveredItem === 'trading' ||
+activeItem === 'trading',
+'text-content-primary':
+hoveredItem === 'trading' ||
+activeItem === 'trading' ||
+hoveredItem === null && !menuOpen,
+'text-gray-400':
+(hoveredItem !== null && hoveredItem !== 'trading' && (activeItem === 'trading' ? false : true)) ||
+(menuOpen && hoveredItem === null && (activeItem === 'trading' ? false : true))
+}"
+class="flex items-center gap-1.5 py-3 px-2 xl:px-3 transition-colors duration-200 rounded-lg focus:outline-none">
+Trading
+{ document.getElementById('first-mega-item-o-nas')?.focus() })"
+@blur="hoveredItem = null"
+:class="{ 'bg-background-hover':
+hoveredItem === 'o-nas' ||
+activeItem === 'o-nas',
+'text-content-primary':
+hoveredItem === 'o-nas' ||
+activeItem === 'o-nas' ||
+hoveredItem === null && !menuOpen,
+'text-gray-400':
+(hoveredItem !== null && hoveredItem !== 'o-nas' && (activeItem === 'o-nas' ? false : true)) ||
+(menuOpen && hoveredItem === null && (activeItem === 'o-nas' ? false : true))
+}"
+class="flex items-center gap-1.5 py-3 px-2 xl:px-3 transition-colors duration-200 rounded-lg focus:outline-none">
+O nás
+= 1024) && activeItem === 'cfd'"
+@mouseleave="activeItem = null; menuOpen = false;"
+@keydown.escape.window="
+if (activeItem || menuOpen) {
+activeItem = null;
+menuOpen = false;
+document.getElementById('mega-menu-button-cfd')?.focus();
+}
+"
+x-cloak x-transition:enter="transition ease-out duration-200"
+x-transition:enter-start="opacity-0 transform translate-y-10"
+x-transition:enter-end="opacity-100 transform translate-y-0"
+x-transition:leave="transition ease-in duration-200"
+x-transition:leave-start="opacity-0 transform translate-y-0"
+x-transition:leave-end="opacity-0 transform translate-y-10"
+>
+Začněte nyní
+Přehled CFD
+Vaše cesta k FTMO
+Ceník
+Vyberte si svou FTMO Challenge
+Jak to funguje
+Staňte se FTMO Traderem
+Free Trial
+Neomezený trénink pro vaši strategii
+Pravidla obchodování
+Klíčová pravidla pro každou fázi
+Získejte víc
+Psychologie tradingu
+Pro odolnější psychiku
+Premium Program
+Pro ty nejlepší
+Plán navyšování účtu
+Postupujte k vyšším odměnám
+Start FTMO Challenge
+Start now
+= 1024) && activeItem === 'futures'"
+@mouseleave="activeItem = null; menuOpen = false;"
+@keydown.escape.window="
+if (activeItem || menuOpen) {
+activeItem = null;
+menuOpen = false;
+document.getElementById('mega-menu-button-futures')?.focus();
+}
+"
+x-cloak x-transition:enter="transition ease-out duration-200"
+x-transition:enter-start="opacity-0 transform translate-y-10"
+x-transition:enter-end="opacity-100 transform translate-y-0"
+x-transition:leave="transition ease-in duration-200"
+x-transition:leave-start="opacity-0 transform translate-y-0"
+x-transition:leave-end="opacity-0 transform translate-y-10"
+>
+English only
+Get Started
+Futures Overview
+Enter FTMO Futures
+Pricing
+Fees and account options
+How Futures Work
+Your path to FTMO Futures
+Trading Objectives
+Evaluation rules explained
+Start Your Evaluation
+Start now
+= 1024) && activeItem === 'trading'"
+@mouseleave="activeItem = null; menuOpen = false;"
+@keydown.escape.window="
+if (activeItem || menuOpen) {
+activeItem = null;
+menuOpen = false;
+document.getElementById('mega-menu-button-trading')?.focus();
+}
+"
+x-cloak x-transition:enter="transition ease-out duration-200"
+x-transition:enter-start="opacity-0 transform translate-y-10"
+x-transition:enter-end="opacity-100 transform translate-y-0"
+x-transition:leave="transition ease-in duration-200"
+x-transition:leave-start="opacity-0 transform translate-y-0"
+x-transition:leave-end="opacity-0 transform translate-y-10"
+>
+Obchodní zázemí
+Ekonomický kalendář
+Aktuální klíčové události na trzích
+Změny v obchodování
+Nejnovější změny a informace
+Symboly
+Seznam obchodovatelných symbolů
+Obchodní platformy
+Zvolte si tu, co vám nejlépe vyhovuje
+Výkonnostní zóna
+Přehled nástrojů
+Vylepšete svou obchodní výkonnost
+Leaderboard
+Žebříček nejlepších FTMO Traderů
+App Suite
+Objevte App Suite od FX Blue
+Knowledge
+FAQ
+Odpovědi na časté otázky
+Blog
+Novinky, tipy a příběhy traderů
+Akademie
+Tradingová akademie zdarma
+= 1024) && activeItem === 'o-nas'"
+@mouseleave="activeItem = null; menuOpen = false;"
+@keydown.escape.window="
+if (activeItem || menuOpen) {
+activeItem = null;
+menuOpen = false;
+document.getElementById('mega-menu-button-o-nas')?.focus();
+}
+"
+x-cloak x-transition:enter="transition ease-out duration-200"
+x-transition:enter-start="opacity-0 transform translate-y-10"
+x-transition:enter-end="opacity-100 transform translate-y-0"
+x-transition:leave="transition ease-in duration-200"
+x-transition:leave-start="opacity-0 transform translate-y-0"
+x-transition:leave-end="opacity-0 transform translate-y-10"
+>
+Společnost
+O nás
+Zjistěte více o naší společnosti
+O FTMO Group
+Zjistěte více o FTMO Group
+FTMO Merchandise
+Nakupujte exkluzivní FTMO merch
+Kontaktujte nás
+Spojte se s námi
+Zákaznická podpora 24/7
+Pro média
+Podklady a zdroje
+Kariéra (EN)
+Přidejte se k FTMO týmu
+CS
+Čeština
+English
+Español
+Italiano
+Deutsch
+Português
+Tiếng Việt
+Français
+Přihlaste se
+Začněte
+Začněte
+CFD
+Začněte nyní
+Přehled CFD
+Ceník
+Jak to funguje
+Free Trial
+Pravidla obchodování
+Získejte víc
+Psychologie tradingu
+Premium Program
+Plán navyšování účtu
+Futures
+New
+Get Started
+Futures Overview
+Pricing
+How Futures Work
+Trading Objectives
+Trading
+Obchodní zázemí
+Ekonomický kalendář
+Změny v obchodování
+Symboly
+Obchodní platformy
+Výkonnostní zóna
+Přehled nástrojů
+Leaderboard
+App Suite
+Knowledge
+FAQ
+Blog
+Akademie
+O nás
+Společnost
+O nás
+O FTMO Group
+FTMO Merchandise
+Kontaktujte nás
+Spojte se s námi
+Pro média
+Kariéra (EN)
+Search
+CS
+Čeština
+English
+Español
+Italiano
+Deutsch
+Português
+Tiếng Việt
+Français
+Začněte
+Přihlaste se
+CFDs
+Futures
+$refs.faqSearch?.focus())">
+Zde napište svou otázku...
+První kroky s FTMO
+Co je FTMO?
+Proč bych se měl připojit k FTMO?
+Kdo se může stát FTMO Traderem?
+Je FTMO seriózní společnost?
+Kde máte kancelář a jak vás mohu kontaktovat?
+Jak začít?
+Objednávky a fakturace
+Jaké poplatky si účtujete a jsou opakované?
+Jaké jsou dostupné způsoby platby?
+Zaplatil jsem objednávku, kdy dostanu účet?
+Proč vybíráte poplatek?
+Vrací se vstupní poplatek?
+Ověřovací proces
+Jak se jednotlivé účty od FTMO liší?
+Co je Swingový typ účtů a jak funguje?
+Úspěšně jsem splnil(a) FTMO Challenge. Co dál?
+FTMO Account
+Kdo je FTMO Trader a jak se jím stanu?
+Jak dlouho trvá, než se stanete FTMO Traderem?
+Co je FTMO Identity a kdy ji dokončím?
+Jaký je právní vztah mezi FTMO Traderem a FTMO po podpisu Všeobecných obchodních podmínek FTMO Accountu?
+Jak si vyberu svou odměnu?
+Trading Objectives
+Jaká jsou Pravidla obchodování?
+Jak funguje vaše pravidlo Konzistence?
+Jaký je rozdíl mezi Zůstatkem (Balance) a Equity?
+Pravidla
+Mohu obchodovat makroekonomické zprávy?
+Mohu obchodovat o víkendu?
+Mohu držet pozice přes noc nebo přes víkend?
+Mohu cestovat nebo používat VPN/VPS?
+Mohu slučovat své účty?
+Mohu změnit svou platformu nebo typ účtu?
+Kolik můžu mít účtů?
+Co je Discipline Score?
+Co znamená “Obchodování podle reálných tržních podmínek"?
+Které instrumenty a jaké strategie jsou povoleny?
+Platformy
+Na kterých platformách mohu obchodovat?
+Jak funguje technická infrastruktura FTMO?
+Jaké jsou stanovené parametry obchodních účtů?
+Jak se přihlásím do MT4?
+Jak se přihlásím do MT5?
+Jak se přihlásím do cTraderu?
+Jak se přihlásím do TradingView?
+Aplikace & další služby
+Kromě obchodních účtů nabízíte nějaké jiné užitečné služby?
+Nabízíte Free Trial?
+A co psychologie? Nabízíte pomoc i zde?
+Co jsou FTMO body a jak je mohu použít?
+Premium program
+Jak se mohu kvalifikovat na úroveň Prime?
+Jaké jsou výhody úrovně Prime?
+Jak se mohu kvalifikovat na úroveň Supreme?
+Jaké jsou výhody úrovně Supreme?
+Jakmile se dostanu do Premium programu, zůstanu tam natrvalo?
+Je program Premium kompatibilní s Plánem navyšování účtu?
+Vyžaduje se nějaká konkrétní velikost účtu, aby bylo možné přihlásit se na úroveň Prime?
+Existuje něco, co by mě z účasti v programu Premium diskvalifikovalo?
+Partnerský program
+Jak funguje partnerský program FTMO?
+Jak probíhá proces přihlášky a schválení?
+Platí pro affiliate partnery a doporučené klienty omezení podle zemí?
+Jak získám provizi jako affiliate partner?
+Jak funguje systém úrovní affiliate partnerů?
+Jak fungují provize z FTMO Futures?
+Co je můj affiliate kód a jak ho tradeři používají?
+Jak funguje přiřazení (atribuce) u doporučení pro FTMO Futures?
+Přinesou mi provizi z FTMO Futures i tradeři, které jsem doporučil/a před spuštěním FTMO Futures?
+Jak funguje proces schvalování provizí?
+V jaké měně se počítají a vyplácejí mé provize?
+Jaké jsou požadavky pro výplatu provize affiliate partnerům?
+Jaká základní pravidla promování musím dodržovat?
+Jak se liší partnerské programy FTMO a FTMO US?
+Všechny FAQs
+CFDs
+Co je FTMO Identity a kdy ji dokončím?
+Co je FTMO Identity a kdy ji dokončím?
+FTMO Identity označuje proces ověření totožnosti ve FTMO pomocí metod KYC nebo KYB.
+U produktů 1-Step FTMO Challenge a 2-Step FTMO Challenge je proces FTMO Identity dostupný po splnění všech příslušných Pravidel obchodování Ověřovacího procesu.
+U produktu FTMO Instant Account dokončíte FTMO Identity při žádosti o svoji první odměnu .
+Pokud již máte platnou FTMO Identity, nebudeme vás žádat o vytvoření nové . Další informace o FTMO Identity najdete v tomto FAQ .
+Často vyhledávané
+Proč bych se měl připojit k FTMO?
+Proč vybíráte poplatek?
+Kdo je FTMO Trader a jak se jím stanu?
+Mohu změnit svou platformu nebo typ účtu?
+Jak začít?
+Začněte obchodovat s FTMO ještě dnes
+Tolik Free Trialů, kolik potřebujete
+Účet až do výše 200 000 USD
+Bez časového omezení
+Obchodujte s FTMO
+Free Trial
+Worldwide Reviews
+Prokažte své dovednosti s ověřenou firmou
+Podporujeme obchodníky už od roku 2015. Přidejte se k nim ještě dnes!
+4.5M+
+Klientů z celého světa
+$650M+
+Vyplaceno v odměnách
+4.8/5
+Trustpilot
+FAQ
+Jak to funguje
+Partnerský program
+Pravidla obchodování
+FTMO Store (EN)
+Support
+Live chat
+Napište nám
+[email protected]
++420 910 880 305
+CFD
+Přehled CFD
+Ceník
+Jak to funguje
+FTMO Free Trial
+Pravidla obchodování
+FTMO Challenge: 1-Step
+FTMO Challenge: 2-Step
+FTMO Instant Account
+Srovnávací tabulka
+Zakázané obchodní praktiky
+Program Premium
+Plán navyšování účtu
+Futures
+EN Only
+Futures Overview
+Pricing
+How Futures Works
+Trading Objectives
+Comparison Table
+Forbidden Trading Practices
+Trading
+Ekonomický kalendář
+Novinky z obchodování
+Nástroje
+Obchodní platformy
+Tools & Services
+Přehled nástrojů
+Trading Psychology
+Žebříček
+App Suite
+Resources
+FAQ
+Blog
+Academy (EN)
+About
+O nás
+Careers (EN)
+Zákaznická podpora
+Pro média
+Tiskové zprávy
+Partnerský program
+Získejte exkluzivní pohled do světa FTMO
+Expertní pohled na trhy
+Nejnovější aktualizace
+Speciální nabídky
+Přihlásit se k newsletteru
+Odběr byl úspěšně aktivován.
+Veškeré informace uvedené na těchto stránkách jsou určeny výhradně pro vzdělávací účely související s obchodováním na finančních trzích a v žádném případě neslouží jako konkrétní investiční doporučení, obchodní doporučení, analýza investičních příležitostí nebo podobné obecné doporučení týkající se obchodování s investičními nástroji. FTMO poskytuje pouze služby simulovaného obchodování a vzdělávací nástroje pro obchodníky. Informace na těchto stránkách nejsou určeny obyvatelům žádné země nebo jurisdikce, kde by jejich šíření nebo používání bylo v rozporu s místními zákony nebo regulacemi. Společnosti FTMO nepůsobí jako makléř a nepřijímají žádné vklady. Nabízené technické řešení platforem a datových kanálů FTMO je zajišťováno poskytovateli likvidity.
+Copyright © 2026 FTMO s.r.o. Všechna práva vyhrazena.
+Nastavení cookies
+Cookies
+Imprint
+Všeobecné obchodní podmínky
+Pravidla zpracování osobních údajů
+Made with for trading

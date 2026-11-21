@@ -1,0 +1,44 @@
+Tradovate: Login Instructions | My Funded Futures Help Center Skip to main content
+Go to website Discord YouTube English हिन्दी Español English
+Go to website Discord YouTube English हिन्दी Español English
+Search for articles...
+All Collections
+Trading Platforms
+Tradovate: Login Instructions
+Tradovate: Login Instructions
+Tradovate Login Guide
+August 24, 2026
+Table of contents
+How to Log in to Tradovate
+If this is your first Tradovate account, please follow these steps:
+1. Visit https://tradovate.com
+2. In the upper right corner of the homepage, click Login .
+3. Enter your MyFundedFutures credentials, which can be found in your MFFU dashboard .
+4. Review and sign the required agreement to complete your account setup.
+5. Click Continue below Simulation .
+6. You’re now logged in and ready to trade on the Tradovate platform! Make sure you select the correct account to trade on, if you purchased multiple evaluations.
+Get Funded to Trade on Tradovate
+How to enable TradingView trading with Tradovate
+If it’s your first time logging in, you will need to enable TradingView as an add-on to avoid errors when logging in.
+To enable TradingView:
+1. Login to https://www.tradovate.com following the steps in the "How to Login to Tradovate" guide.
+2. In the top-right corner of your dashboard, click the Application Settings button.
+3. You’ll now be in the Application settings . Select “ Add-Ons ”
+4. Click Activate on the TradingView option.
+5. You should see TradingView now greyed out with ‘ Activated ’ next to it, along with a pop-up message confirming that the activation was successfully processed.
+6. You can now log in to TradingView using Tradovate. Open your TradingView and navigate to the Trading Panel at the bottom of your window.
+7. Select ‘Tradovate’
+8. Enter your login details, which can be found in your MyFundedFutures dashboard . Ensure you are on the ‘ Demo ’ tab and enable “ Don’t remember me ” if you are on a public computer.
+9. Click Connect.
+a. If you receive an error indicating that TradingView is not enabled, please return to Step 1 and start over. If that doesn’t work, open a support ticket on our website for assistance.
+10. If you left “ Don’t remember me ” unchecked and are using the Desktop version of TradingView, you may be prompted to save the credentials.
+💡 Explore MyFundedFutures Discounts Here.
+If you have any questions regarding Tradovate setup or encounter connection issues, please contact our support team on the live chat or at [email protected]
+Related Articles
+NinjaTrader: Login Instructions
+DEEPCHART: Login Instructions
+Quantower: Login Instructions
+ATAS: Login Instructions
+Refund & Cancellation Policy - Transparent and Trader-First
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

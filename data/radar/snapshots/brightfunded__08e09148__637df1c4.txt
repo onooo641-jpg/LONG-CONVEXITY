@@ -1,0 +1,77 @@
+Which strategies are prohibited at BrightFunded? | BrightFunded CFD Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Discord 👾 Website 💻 English Deutsch Polski Português Español English
+Discord 👾 Website 💻 English Deutsch Polski Português Español English
+Search for articles...
+All Collections
+Trading Rules & Guidelines
+Which strategies are prohibited at BrightFunded?
+Which strategies are prohibited at BrightFunded?
+September 24, 2025
+Table of contents
+To maintain a fair and professional trading environment, BrightFunded prohibits any behavior or strategy that manipulates trading outcomes, exploits technical weaknesses, or misrepresents actual trading skill. The following practices are strictly forbidden. Each section includes clear examples to ensure full understanding
+1. Hedging Rule.
+Hedging—holding simultaneous long and short positions on the same or highly correlated instruments across multiple accounts—is not permitted. This includes strategies intended to minimize risk artificially or to bypass evaluation conditions.
+​
+​ For a comprehensive breakdown, please refer to our dedicated article: How the Hedging Rule Works?
+2. Exploiting Service Errors or Platform Delays.
+Traders are prohibited from taking advantage of any form of technical malfunction or delay in price display, data feeds, or order execution.
+Example:
+If there is a temporary delay in the price feed, and a trader executes an order using the outdated quote to gain an advantage over the real market price, this is considered manipulation. For instance, buying EUR/USD at 1.0820 when the actual market is already at 1.0830 due to a feed lag, then profiting as prices update, constitutes abuse of the system.
+Such actions distort the evaluation process and do not reflect legitimate trading ability. All trades must be based on accurate and real-time information.
+3. Using External or Delayed Data Feeds.
+Using third-party data feeds that are slower or inconsistent with BrightFunded’s real-time data creates an unfair advantage and is prohibited.
+Example:
+A trader receives delayed pricing from an external charting tool. They spot a move that already happened on BrightFunded’s platform but is just showing up on their screen. They place a trade based on the lagging data, essentially reacting to a price that no longer exists.
+This undermines fairness. All traders must operate using the same data source—the one provided by BrightFunded.
+4. Coordinated or Multi-Account Manipulation.
+Opening multiple accounts or working with others to place offsetting trades for the purpose of minimizing risk or gaming the system is not allowed.
+Example:
+A trader opens two accounts. In Account A, they go long on BTC/USD; in Account B, they go short for the same volume. No matter which direction the market moves, one account profits while the other loses. The trader then focuses on the winning account to pass the challenge.
+This tactic simulates risk management, but in reality, it eliminates risk entirely. It doesn’t demonstrate trading skill—it manipulates the evaluation.
+5. Violating Platform or Provider Terms.
+All trades must comply with the rules and standards set by BrightFunded and the underlying trading platform. Using methods that conflict with these terms, such as unauthorized software or execution tactics, is grounds for disqualification.
+These guidelines exist to ensure all traders operate under consistent conditions and are judged by the same criteria.
+6. Use of Automated Software, AI, or High-Speed Trading Tools.
+Any system designed to execute orders with superhuman speed or to exploit market inefficiencies on a mechanical basis is not allowed.
+Example:
+A trader uses a high-frequency trading bot capable of placing and canceling orders in milliseconds. This bot takes advantage of micro price changes that human traders cannot react to, allowing for rapid, unnatural gains.
+In a similar vein, using artificial intelligence to scan massive datasets in real time to predict price action before others can react creates a competitive imbalance. These tools may generate performance, but they bypass the intent of the evaluation—to test human trading skills.
+7. Trading During High-Impact News or Events.
+Trading during times of scheduled major news releases—such as central bank announcements, employment reports, or geopolitical events—is subject to specific limitations.
+For full guidance, see our detailed article: ​ Trading News Article.
+Traders must avoid exploiting abnormal volatility or price gaps during these periods, as such conditions often do not reflect typical market dynamics.
+8. Risk-Abusive Trading: Overleveraging, Overexposure, One-Sided Bets, and Account Rolling.
+Traders must avoid behaviors that amplify risk irresponsibly or distort evaluation outcomes.
+Overleveraging
+Using maximum available leverage on every trade increases potential profit, but also magnifies losses. A trader opening $100,000 positions on a $1,000 account (1:100 leverage) might succeed with small market moves, but such behavior is not sustainable nor indicative of consistent skill.
+Overexposure
+Opening multiple large positions on the same asset or correlated assets creates excessive directional risk. For example, going long EUR/USD, GBP/USD, and AUD/USD simultaneously exposes the trader to a single USD movement, regardless of diversification.
+One-Sided Bets
+Continuously adding to a losing position (e.g., averaging down long entries despite clear bearish signals) represents poor risk management. It may create a temporary comeback, but it reflects reckless trading.
+Account Rolling
+Closing a failing account before evaluation ends and starting a new one to reset metrics circumvents performance tracking. This practice hides inconsistency and prevents proper risk evaluation.
+All these behaviors misrepresent true ability and are incompatible with BrightFunded’s evaluation philosophy.
+9. Abusive Strategy Types: Grid Trading, Arbitrage, Tick Scalping, High-Frequency Trading (HFT).
+Grid Trading
+This strategy involves placing a series of buy and sell orders at predefined intervals. While it can generate short-term profits in flat markets, it exposes traders to massive losses in trending environments and is not based on analytical decision-making.
+Arbitrage
+Taking advantage of temporary price differences between brokers or instruments may be profitable, but it does not reflect predictive skill or risk-taking. Evaluation accounts are not meant for exploiting system discrepancies.
+Tick Scalping
+Entering and exiting trades within seconds to capture small pip movements in high volume does not test the trader’s ability to manage risk or read market conditions. It’s a volume game, not a skill-based strategy.
+High-Frequency Trading (HFT)
+Strategies that rely on executing thousands of orders per minute via specialized infrastructure fall outside the scope of this platform. BrightFunded is designed to evaluate human decision-making, not latency arbitrage or server-based tactics.
+​ Important
+​ Our mission is to evaluate traders based on discipline, strategy, and real-world skills. Any activity that compromises this standard, even if profitable in the short term, will result in account termination and disqualification from future evaluations.
+We encourage all traders to trade transparently, respect the rules, and focus on long-term growth. BrightFunded rewards skill—not shortcuts.
+​ ​
+​
+GET FUNDED!
+Related Articles
+What is BrightFunded?
+Is BrightFunded a serious company?
+What capital will I trade at BrightFunded?
+How does the Hedging Rule work?
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

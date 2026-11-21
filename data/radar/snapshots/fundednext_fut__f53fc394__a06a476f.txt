@@ -1,0 +1,34 @@
+FundedNext Futures Trading Platform FAQ | FundedNext Futures Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Go to Website العربية Português do Brasil English Français Deutsch हिन्दी Italiano 日本語 fa-IR 简体中文 Español ภาษาไทย Türkçe Oʻzbekcha English
+Go to Website العربية Português do Brasil English Français Deutsch हिन्दी Italiano 日本語 fa-IR 简体中文 Español ภาษาไทย Türkçe Oʻzbekcha English
+Search for articles...
+All Collections
+FundedNext Futures Trading Platform FAQ
+FundedNext Futures Trading Platform FAQ
+Find guides on connecting, using, and troubleshooting trading platforms like Tradovate, NinjaTrader, and TradingView.
+21 articles
+Tradovate
+How do I start trading futures after purchasing my account through FundedNext?
+How do I log in and log out of Tradovate?
+How to buy, sell, and close trades in Tradovate?
+How to trade using the DOM & Chart in Tradovate?
+How to set and manage Stop Loss & Take Profit in Tradovate?
+Why am I unable to place trades or face trade rejections?
+How can I determine an order rejection in the Orders Module?
+How to use ATM (Automated Trading Module)?
+How to check your trading performance in Tradovate?
+How to find the Risk Settings in Tradovate?
+How to place and manage Limit Orders in Tradovate?
+NinjaTrader
+How to log in and log out from NinjaTrader?
+How to buy, sell, and close trades in NinjaTrader?
+How to trade using the SuperDOM & Chart together in NinjaTrader?
+How to set and manage Stop Loss & Take Profit in NinjaTrader?
+How to place and manage Limit Orders in NinjaTrader?
+TradingView
+How do I log in and log out of TradingView?
+How to buy, sell, and close trades in TradingView?
+How do I use the charts for trading in TradingView?
+How to set and manage Stop Loss and Take Profit in TradingView?
+How to use Limit Orders in TradingView?

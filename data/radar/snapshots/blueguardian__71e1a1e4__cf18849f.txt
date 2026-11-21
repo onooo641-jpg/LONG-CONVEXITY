@@ -1,0 +1,52 @@
+Trading platforms | Blue Guardian Help Centre
+Skip to content Help Search the help centre ⌘K
+Website Start challenge Help Centre home Collections
+Getting started Account inactivity rule How Blue Guardian works Getting help and using your dashboard
+Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
+Payouts How payouts work
+Billing & accounts Paying for your account: methods, card rules and refunds How many accounts can I have? Futures bundle discounts
+Trading rules Prohibited trading strategies What happens if I break a rule? Futures risk management rules Trading hours and the trading day CFD news trading rules
+Platforms & instruments Trading platforms CFD trading conditions: markets, commissions and leverage Futures contract limits and funded scaling Futures instruments, codes and costs
+CFD plans Instant Standard account rules Instant Starter account rules 1 Step Standard rules 2 Step Standard rules 1 Step Nano rules 2 Step Nano rules Buy Now Pay Later (BNPL) rules
+Futures plans Reserve account rules Elite account rules Express account rules Direct account rules Elite, Reserve & Direct Path to Live Zero account rules Zero Path to Live
+Affiliates & competitions Affiliate program Monthly trading competition
+Help Centre
+Platforms & instruments
+Trading platforms
+Which platforms CFD and Futures accounts use: MT5 and Match Trader for new CFD accounts, NinjaTrader (Tradovate) for all new Futures accounts. Existing TradeLocker and Deepcharts accounts are unaffected.
+Applies to: CFD and Futures Updated 20 November 2026
+Short answer
+CFD: new accounts are available on MetaTrader 5 or Match Trader (US clients: Match Trader only).
+Futures: all new Futures accounts, including Zero, Elite, Reserve and Direct, trade on NinjaTrader (Tradovate) .
+TradeLocker (CFD) and Deepcharts (Futures) are no longer available to purchase. Existing TradeLocker and Deepcharts accounts stay exactly as they are. If you have an existing challenge, you'll receive your funded account on the same platform you used for the challenge.
+CFD platforms
+CFD accounts are available on:
+MetaTrader 5 (MT5)
+Match Trader
+US clients can only use Match Trader.
+TradeLocker
+TradeLocker is no longer offered from 20 November 2026 . If you have questions about an existing TradeLocker account, contact support through live chat.
+Can I change my CFD platform?
+Only if no trades have been placed on the account. Once you've traded, the account can't be moved because of platform limitations. You can also ask to change platform when you move to a new phase, as long as you haven't traded on the new account yet.
+Giveaway accounts can't change platform.
+Only the registered account holder can request a change. Requests from anyone else won't be processed.
+Every request needs internal approval.
+Futures platform: NinjaTrader (Tradovate)
+Every new Futures account, evaluation and funded, on every plan, trades on NinjaTrader. NinjaTrader and Tradovate are the same platform, so you may see either name.
+Account and execution: cloud-based and fast, usable in a browser, on desktop or on mobile.
+Charting and tools: advanced charting, custom indicators, backtesting and professional execution tools.
+NinjaTrader supports strategy automation, but our automated trading rules still apply: fully automated trading isn't allowed. See Prohibited trading strategies .
+Deepcharts (DXFeed)
+Deepcharts and the DXFeed data feed are no longer offered from 16 November 2026 . If you have questions about an existing Deepcharts account, contact support through live chat.
+Still need help?
+Chat with our support team. We usually reply in a few minutes.
+Chat with us
+More in Platforms & instruments
+Applies to: CFD CFD trading conditions: markets, commissions and leverage Applies to: Futures Futures contract limits and funded scaling Applies to: Futures Futures instruments, codes and costs
+On this page Short answer
+CFD platforms
+TradeLocker
+Can I change my CFD platform?
+Futures platform: NinjaTrader (Tradovate)
+Deepcharts (DXFeed)
+© 2026 All Rights Reserved – Blue Guardian Terms Privacy Cookies

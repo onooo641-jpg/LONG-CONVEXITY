@@ -1,0 +1,162 @@
+Maximum Contracts Explained | Top One Futures Help Center Skip to main content
+Top One Futures Home
+Top One Futures Home
+Search for articles...
+All Collections
+General Rules
+Maximum Contracts Explained
+Maximum Contracts Explained
+Maximum allowed contracts per account size and program, how contract scaling works on funded accounts, and the separate limits for Micro Bitcoin Futures.
+Updated over 3 weeks ago
+Table of contents
+At Top One Futures, here is what you need to know about the maximum allowed contracts for each account size and program, and how contract scaling works on funded accounts.
+Maximum allowed contracts: Elite, Elite ACCESS, Elite Daily, Instant Sim Funded and Ignite
+Account size
+Maximum allowed contracts
+25k
+1 Mini / 10 Micros
+50k
+3 Mini / 30 Micros
+100k
+5 Mini / 50 Micros
+150k
+7 Mini / 70 Micros
+Elite, Instant Sim Funded and Ignite limits are fixed. On funded Elite ACCESS and Elite Daily accounts, the limit scales with your profit (see the scaling plans below). During the evaluation you can use the full limit from day one.
+Maximum allowed contracts: LaunchPad
+Account
+Maximum allowed contracts
+X-Daily Spark $50K
+3 Mini / 30 Micros
+X-Ultra $50K / $100K / $150K
+5 / 10 / 15 Minis
+Funded LaunchPad accounts start lower and scale with profit. See X-Daily Spark – Contract Limits & Scaling and X-Ultra – Contract Limits & Scaling .
+Contract scaling plans (funded accounts only)
+Scaling applies only to funded accounts . There are no scaling restrictions during the evaluation phase, where you can use your full contract allocation from day one.
+How scaling works
+Once your account is funded, your maximum contract size increases as your account grows. Your allowed contract size is determined by your end-of-day (EOD) closing balance and updates once per day.
+Key principle
+Detail
+Funded only
+Scaling applies only to funded accounts
+Once per day
+Contract limits update once per day (EOD)
+Simulated profits
+Scaling is based on simulated profits
+Stay within limits
+Traders must stay within their allowed contract size at all times
+EOD results only
+Intraday profits do not unlock higher tiers. Only end-of-day results count
+Next trading day
+Contract increases apply the following trading day once your closing balance qualifies
+Elite ACCESS contract scaling plan (funded only)
+Simulated profit
+Max contracts
+$25K account
+$0 - $1,500+
+1 Mini or 10 Micros (full allocation)
+$50K account
+$0 - $1,499
+1 Mini or 10 Micros
+$1,500 - $1,999
+2 Minis or 20 Micros
+$2,000+
+3 Minis or 30 Micros (full allocation)
+$100K account
+$0 - $1,499
+2 Minis or 20 Micros
+$1,500 - $1,999
+3 Minis or 30 Micros
+$2,000 - $2,999
+4 Minis or 40 Micros
+$3,000+
+5 Minis or 50 Micros (full allocation)
+$150K account
+$0 - $1,499
+3 Minis or 30 Micros
+$1,500 - $2,499
+4 Minis or 40 Micros
+$2,500 - $3,499
+5 Minis or 50 Micros
+$3,500 - $4,499
+6 Minis or 60 Micros
+$4,500+
+7 Minis or 70 Micros (full allocation)
+For the complete breakdown, see the Elite ACCESS Contract Scaling Plan article.
+Elite Daily contract scaling plan (funded only)
+Simulated profit
+Max contracts
+$25K account
+$0 - $1,500+
+1 Mini / 10 Micros (full allocation)
+$50K account
+$0 - $1,499
+1 Mini / 10 Micros
+$1,500 - $1,999
+2 Minis / 20 Micros
+$2,000+
+3 Minis / 30 Micros (full allocation)
+$100K account
+$0 - $1,499
+2 Minis / 20 Micros
+$1,500 - $1,999
+3 Minis / 30 Micros
+$2,000 - $2,999
+4 Minis / 40 Micros
+$3,000+
+5 Minis / 50 Micros (full allocation)
+$150K account
+$0 - $1,499
+3 Minis / 30 Micros
+$1,500 - $1,999
+4 Minis / 40 Micros
+$2,000 - $2,999
+5 Minis / 50 Micros
+$3,000 - $4,499
+6 Minis / 60 Micros
+$4,500+
+7 Minis / 70 Micros (full allocation)
+For the complete breakdown, see the Elite Daily Contract Scaling Plan article.
+Important clarifications on scaling
+Scaling applies per individual account
+Contract limits do not combine across multiple accounts
+Scaling is based on simulated profit only
+Limits are determined using your end-of-day balance
+Scaling does not override other risk rules, such as the Daily Loss Limit or the Trailing Drawdown
+What does "max contracts" mean?
+The "max contracts" rule ensures you trade within safe limits for your account. Minis are standard futures contracts, while micros are one-tenth the size of minis. You can trade minis, micros, or a combination of both, as long as you stay within your limit.
+Example: on a $50,000 Elite ACCESS funded account at full allocation, you can trade up to 3 minis, 30 micros, or a combination such as 2 minis and 10 micros.
+Always check the table for your specific account type. Contract limits are not the same across all programs. Staying within these limits helps manage risk and keep your account compliant. It is the trader's personal responsibility to monitor and follow the clearly outlined contract scaling rules.
+Exceeding your contract limit
+Exceeding your allowed contract limit is considered a rule violation . If the contract scaling rules are not followed:
+Trades may be rejected or reduced
+The account may be flagged for review
+Profits generated while exceeding contract limits may be removed
+Payout requests may be deemed ineligible
+Compliance with scaling rules is mandatory for payout eligibility .
+Special note on Micro Bitcoin Futures (MBT)
+Due to the significantly higher volatility and leverage associated with cryptocurrency futures, we have implemented separate max contract limits specifically for Micro Bitcoin Futures (MBT):
+Account size
+Max Micro Bitcoin contracts
+$25,000
+1
+$50,000
+3, depending on account type
+$100,000
+5, depending on account type
+$150,000
+7, depending on account type
+Please note: these MBT limits are in place to better protect traders from the rapid price swings and amplified risk that come with trading crypto derivatives.
+Related articles
+Daily Drawdown: What You Need to Know
+Understanding the Drawdown Lock
+Prohibited Trading Practices
+Top One Futures Account Comparison: Elite vs. Instant vs. Ignite
+Related Articles
+Elite Daily V2 – Contract Scaling Plan
+Elite ACCESS – Contract Scaling Plan
+Elite ACCESS Intraday – Contract Scaling Plan
+X-Daily Spark – Contract Limits & Scaling
+Elite ACCESS Static - Contract Scaling Plan
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+We run on Intercom

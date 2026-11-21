@@ -1,0 +1,50 @@
+LucidDaily Drawdown | Lucid Trading Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Lucid Home
+Lucid Home
+Search for articles...
+All Collections
+LucidDaily
+LucidDaily Drawdown
+LucidDaily Drawdown
+A
+Written by AJ
+Updated this week
+Table of contents
+Customization
+LucidDaily evaluation accounts may have an End-of-Day drawdown or an Intraday drawdown depending on which option you select at check out.
+As standard, LucidDaily Funded accounts use an Intraday Drawdown, unless customized otherwise at the time of evaluation purchase.
+Drawdown Type
+The drawdown type dictates how your MLL is calculated
+Intraday drawdown brings your MLL up with your real-time P&L
+EOD drawdown brings your MLL up based on your P&L at the end of a session
+The MLL increases up to a defined point
+Once your account exceeds the Initial Trail Balance, the MLL locks and no longer moves
+Account Size
+MLL Amount
+Initial Trail Balance
+Locked MLL Balance
+$25,000
+$1,000
+$26,100
+$25,100
+$50,000
+$2,000
+$52,100
+$50,100
+$100,000
+$3,000
+$103,100
+$100,100
+$150,000
+$4,500
+$154,600
+$150,100
+As with the other account types:
+The MLL rises until it reaches the trail balance
+Once the account exceeds the trail, the MLL locks at the initial balance plus $100
+If your account balance reached the MLL, your account will be breached.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Lucid Trading Help Center

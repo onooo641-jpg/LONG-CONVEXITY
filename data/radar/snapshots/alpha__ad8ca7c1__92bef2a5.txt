@@ -1,0 +1,229 @@
+Alpha Futures Performance Fee Rules Explained (2026) | Alpha Futures
+Black Friday Early Access · EARLYBOGO40 25K Zero BOGO + 40% off · EARLYBOGO50 25K Direct BOGO + 50% off
+Home
+About
+How It Works
+Trading
+Platforms
+AlphaTrader
+Learn More
+WealthCharts
+Learn More
+Quantower
+Learn More
+View All
+Leaderboard
+Lifetime Payouts
+Learn More
+Weekly Payouts
+Learn More
+Returns of the month
+Learn More
+View All
+Market
+Equity & Index
+Learn More
+Currency
+Learn More
+Metals
+Learn More
+Crypto
+Learn More
+View All
+AlphaTrader
+Launched AlphaTrader — the next evolution of the platform. Get Early Access
+Resources
+Contact Us
+Help Center
+Start Evaluation
+Sign In
+Home
+About
+How It Works
+Trading
+Platforms
+Leaderboard
+Market
+AlphaTrader
+Launched AlphaTrader — the next evolution of the platform. Get Early Access
+Resources
+Contact Us
+Help Center
+Start Evaluation
+Sign In
+Alpha Futures Performance Fee Rules Explained (2026)
+By the Alpha Futures Team · Updated October 23, 2026
+Update — July 12, 2026: The Premium plan has been discontinued. All active Premium accounts are being refunded and closed automatically — no ticket needed. Zero, Advanced, and Direct plans are unaffected. References to Premium below are kept for historical accuracy.
+Part of our futures prop series. Start with What is a futures prop firm? , then explore: Platforms · Best futures prop firms (2026) · Alpha Futures review (2026) · Alpha Group · Futures vs forex prop firms (2026) · Best futures prop firms for beginners (2026) · Fastest payout futures prop firms (2026) . · what a winning day is
+On Alpha Futures, Qualified Traders may request performance fees up to 4 times per month after 5 winning trading days of $200+ (days need not be consecutive). You may request up to 50% of account profit per cycle (subject to plan minimums and maximums). You receive 90% of the requested amount; processing is five business days or less after standard approval, according to the latest operational update . Current rules differ by plan: Advanced allows up to $15,000 per request; Zero has lower caps plus a 40% consistency rule on Qualified Accounts. Premium is discontinued; its historical caps are not available to new traders.
+For the full payout rules by plan, see Alpha Futures payout rules .
+General information only, not financial advice. Simulated trading. Performance fees are performance-based; outcomes not guaranteed.
+Updated October 23, 2026: the Advanced activation fee and the FAQ answers on plans and maximum requests were corrected. Premium is no longer listed as a current plan in the FAQ.
+Core performance fee rules (all plans)
+These apply across the currently active Zero, Standard, and Advanced plans unless a plan-specific section says otherwise. Premium is discontinued; its section below is historical.
+Rule
+Detail
+Frequency
+Up to 4 requests per month per account
+Winning days
+5 trading days with $200+ profit each; not required to be consecutive
+Amount per request
+Up to 50% of profit in the account (within plan min/max)
+Your share
+90% of the requested withdrawal amount
+Processing
+five business days or less after standard approval, according to the latest operational update
+Trading environment
+Simulated funds on Qualified Accounts, not live brokerage capital
+Important: The dollar amount removed from your simulated account is the gross request. You receive 90% of that request as cash per published terms.
+Performance fees by plan
+Zero Qualified Accounts
+Zero $25K
+Zero $50K
+Zero $100K
+Minimum request
+$200
+$200
+$200
+Maximum request
+$1,000
+$1,500
+$2,500
+Consistency
+40% between requests
+40%
+40%
+Activation
+$0
+$0
+$0
+40% consistency (Zero qualified only): No single day’s profit since your last request can be ≥ 40% of net profit in that cycle. Account is not breached if you violate the ratio, you trade until eligible. Resets after each request.
+Advanced Qualified Accounts
+Rule
+Detail
+Minimum request
+$1,000
+Maximum request
+$15,000 (all Advanced sizes)
+Consistency on qualified
+None
+Activation (eval)
+$0 (accounts bought after July 8, 2026)
+Historical Premium Qualified Accounts (discontinued plan)
+Rule
+Detail
+Minimum request
+$500
+Maximum per request
+Tiered by request number (same on all Premium sizes)
+Consistency on qualified
+None
+Extra requirement
+Positive net profit in each performance fee cycle (even $1)
+Premium tiered maximums:
+Request #
+Maximum
+1st
+$3,000
+2nd
+$3,500
+3rd
+$4,000
+4th
+$5,000
+5th+
+$6,000
+Historical Premium evaluation terms used 50% consistency; Premium is discontinued. Current Standard uses 50%, Advanced 40%, and Zero none. See no consistency rule guide.
+→ Premium overview
+Step-by-step: how to request a performance fee
+Pass the evaluation → become a Qualified Trader on a Qualified Account
+Accumulate 5 winning trading days of $200+ profit each
+Meet any plan-specific rules (Zero 40% consistency, Premium positive net profit in cycle)
+Submit request for up to 50% of eligible profit, within min/max
+Receive 90% of the requested amount per policy; remainder stays on the simulated account for drawdown buffer
+News trading: No restrictions on Advanced Qualified. Zero Qualified, no new orders within 2 minutes of high-impact news; holds allowed.
+Prohibited practices: Latency abuse, hedging across accounts, etc.
+MLL and performance fees (why traders search this)
+Many firms reduce MLL toward zero after you take a performance fee. On Zero and Standard, the MLL does not slide to zero at the first request.
+That affects how much runway you keep after taking simulated profits as cash.
+Current Zero, Standard, and Advanced plan rules (Premium discontinued)
+Trader profile
+Plan
+Lowest entry, okay with 40% qualified consistency + Daily Loss Guard
+Zero
+Large single requests ($15K cap), no qualified consistency
+Advanced
+$0 activation on eval
+Zero or Standard (compare current live plan pricing)
+Plan comparison: Best Futures Prop Firms 2026 · Review
+What Alpha Futures performance fees are not
+Not guaranteed income, you must qualify and trade inside rules
+Not live account withdrawals, trading P&L is simulated; the transfer to you is real per terms
+Not the same as a broker payout, you are not withdrawing deposited margin from an FCM
+Final verdict
+Alpha Futures performance fee rules are set in one policy with plan-specific minimums, maximums, and Zero’s 40% qualified consistency. The shared backbone, 5 × $200+ days, 4× monthly, 90% split, five business days or less after standard approval, according to the latest operational update , is what most traders should memorise before checkout.
+Start your evaluation →
+Frequently Asked Questions
+What are Alpha Futures performance fee rules?
+Qualified Traders request performance fees after 5 winning days of $200+, up to 4 times per month, with 90% of the requested amount paid per policy. Minimums, maximums, and consistency differ by Zero, Standard, and Advanced.
+How often can you request performance fees at Alpha Futures?
+Up to 4 times per month per account, after every 5 winning trading days of $200 or more.
+What is the Alpha Futures performance split?
+90% to the trader on published plans — applied to the withdrawal request amount.
+What is the maximum performance fee on Alpha Futures?
+Advanced: up to $15,000 per request. Standard: $3,000 / $4,000 / $5,000 by size. Zero: $1,000 / $1,500 / $2,500 by size. Always confirm live.
+Does Alpha Futures have a consistency rule on performance fees?
+Zero Qualified Accounts: 40% between requests. Advanced Qualified: none. Standard evaluations: 50%; Advanced evaluations: 40%; Zero evaluations: none. Premium is discontinued.
+How long do Alpha Futures performance fees take?
+five business days or less after standard approval, according to the latest operational update
+Why do performance fee requests get delayed?
+Performance fee requests usually get delayed when eligibility rules are not met yet (fewer than 5 winning days of $200+, request caps, or plan consistency rules), when processing is delayed beyond the current five-business-day standard timing because of weekends, holidays, or verification checks, or when the account needs a compliance or identity check. On Alpha Futures, eligible requests are processed in five business days or less after standard approval, according to the latest operational update
+Who is the best futures prop firm?
+For most traders in 2026, Alpha Futures is the strongest starting point on Trustpilot (4.4 out of 5, more than 6,000 reviews, October 2026), 90% performance split from day one, one-step evaluations, and end-of-day MLL. See Best Futures Prop Firms 2026 and What is a Futures Prop Firm? .
+Do you need $25,000 to day trade futures?
+Not for a futures prop evaluation. You pay a monthly fee and trade simulated funds. $25,000 matters for live US broker day-trading rules, see our pillar for context.
+Is $100 enough to trade futures?
+$100 is not enough for live futures margin. Prop evaluations start higher, Zero $25K from $89/month on Alpha Futures. Confirm live on alpha-futures.com .
+Which futures prop firms have no consistency rule?
+Alpha Futures Zero evaluations have no consistency rule on the eval stage. Advanced Qualified Accounts have no consistency rule once qualified. Premium is discontinued. Zero Qualified Accounts carry a 40% consistency rule on performance fee requests. Details: Futures Prop Firms With No Consistency Rule (2026).
+Related reading
+Best Futures Prop Firms for Beginners (2026)
+Futures Prop Firm vs Forex Prop Firm (2026)
+How to Pick Your Alpha Futures Platform (2026)
+Simulated evaluations, simulated funds. Performance fees are performance-based; outcomes not guaranteed.
+More Articles
+Sign Up for an
+Exclusive Welcome Offer
+Subscribe to Alpha Futures emails for an exclusive welcome offer, trader insights, product updates and discounts. Enter your email to stay one step ahead. You can unsubscribe at any time.
+Thank you for signing up to our newsletter
+Oops! Something went wrong while submitting the form.
+175,000+
+Qualified Analysts
+1.1Million+
+Traders
+$70M
+Performance Fees Paid
+Quick Links
+Home About How it works
+Trading
+Platforms Market Leaderboard
+Other
+Resources Contact Us Promo Codes
+2026 © Alpha Futures - All rights reserved.
+Terms of Use
+Terms and Conditions
+General Service Agreement
+Privacy Policy
+Return Policy
+ALPHA FUTURES LIMITED
+Company number 15655643
+Registered office address
+1 Allied Business Centre, Coldharbour Lane, Harpenden, England, AL5 4UT
+"Any references to trading, analysts, revenue, and profit throughout the website are references to virtual trading, revenues, and profits, respectively."
+Alpha Futures Risk Disclosure:
+Futures trading contains substantial risk and is not for every investor. An investor could potentially lose all or more than the initial investment. Risk capital is money that can be lost without jeopardizing your financial security or lifestyle. Only risk capital should be used for trading and only those with sufficient risk capital should consider trading. Past performance is not necessarily indicative of future results.
+Hypothetical Performance Disclosure:
+Hypothetical performance results have many significant performance and other limitations, some of which are described below. No representation is being made that any account will or is likely to achieve profits or losses similar to those shown on the website or any promotional material.
+CFTC Rule 4.41:
+Hypothetical or Simulated performance results have certain limitations. Unlike an actual performance record, simulated results do not represent actual trading. Also, because the trades have not actually been executed, the results may have under-or-over compensated for the impact, if any, of certain market factors, such as lack of liquidity. Simulated trading programs, in general, are also subject to the fact that they are designed with the benefit of hindsight. No representation is being made that any account will or is likely to achieve profit or losses similar to those shown.
+English Deutsch Español Français Italiano

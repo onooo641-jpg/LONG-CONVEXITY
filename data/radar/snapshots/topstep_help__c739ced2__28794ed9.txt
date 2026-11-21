@@ -1,0 +1,63 @@
+Staying Outside the 2% Price Limit Zone | Topstep Help Center Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Skip to main content
+Discord Topstep TopstepTV
+Discord Topstep TopstepTV
+Search for articles...
+All Collections
+Getting Started
+Trading Education
+Staying Outside the 2% Price Limit Zone
+Staying Outside the 2% Price Limit Zone
+Know the Limits Before You Hit One.
+Updated today
+Table of contents
+Who this applies to: The 2% rule applies to all Topstep account types, including the Trading Combine®, Express Funded Account™ and Live Funded Account.
+What Are CME Price Limits?
+A price limit is the maximum price range a futures contract can move in a single trading session. When a limit is hit, the exchange may halt trading, expand limits, or stop the session entirely, depending on the product.
+Price limits are calculated from the previous day’s settlement price. They update at 4:05 PM CT after each session and vary by product, contract month, and time of day.
+Overnight limits differ from RTH limits.
+➡ Check current CME Price Limits here — they change regularly.
+📣 Update: Equity products ES, MES, NQ, MNQ, RTY, M2K, YM, and MYM overnight price limits have expanded from 5% to 7%.
+How to Stay Outside the 2% Price Limit
+☝️ Method 1: Watch % Net Change
+Add the % Net Change column to the platform’s Quote Board. Stop trading when % Net Change approaches the limit minus 2%.
+👉 Example : 5% limit → stop trading at 3% net change. 7% limit → stop trading at 5% net change.
+✌️ Method 2: Calculate from Settlement Price
+Formulas:
+Stop trading above: Settlement × (1 + Price Limit% − 2%)
+Stop trading below: Settlement × (1 − Price Limit% + 2%)
+Example using ES settlement of 2,814.00 with a 5% limit:
+Stop above: 2,814 × 1.03 = 2,898
+Stop below: 2,814 × 0.97 = 2,730
+With a 7% downside-only limit:
+Stop below: 2,814 × 0.95 = 2,673
+Why Does Topstep Enforce This?
+To protect the firm and its Traders. When a product is within 2% of a price limit, market conditions are extreme and execution is unreliable. Every Trader should know the contract specs and limits for every product they trade.
+📑 For product details, visit CME Group and select your contract.
+📺 Check out the video below to learn more about trading around price limits.
+Related Articles
+What is the Maximum Loss Limit?
+TopstepX™ — Commissions and Fees
+Order Types, Fills, and Slippage
+Topstep Holiday Trading Hours
+CME Velocity Logic
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Your Privacy Choices

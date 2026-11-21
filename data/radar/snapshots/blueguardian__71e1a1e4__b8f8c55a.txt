@@ -1,0 +1,162 @@
+Zero Path to Live | Blue Guardian Help Centre
+Skip to content Help Search the help centre ⌘K
+Website Start challenge Help Centre home Collections
+Getting started Account inactivity rule How Blue Guardian works Getting help and using your dashboard
+Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
+Payouts How payouts work
+Billing & accounts Paying for your account: methods, card rules and refunds How many accounts can I have? Futures bundle discounts
+Trading rules Prohibited trading strategies What happens if I break a rule? Futures risk management rules Trading hours and the trading day CFD news trading rules
+Platforms & instruments Trading platforms CFD trading conditions: markets, commissions and leverage Futures contract limits and funded scaling Futures instruments, codes and costs
+CFD plans Instant Standard account rules Instant Starter account rules 1 Step Standard rules 2 Step Standard rules 1 Step Nano rules 2 Step Nano rules Buy Now Pay Later (BNPL) rules
+Futures plans Reserve account rules Elite account rules Express account rules Direct account rules Elite, Reserve & Direct Path to Live Zero account rules Zero Path to Live
+Affiliates & competitions Affiliate program Monthly trading competition
+Help Centre
+Futures plans
+Zero Path to Live
+How Zero traders move to Live: the $8,000 day choice, how your Live Allocation and starting balance are set, how you earn your Live Bonus and Live rules.
+Applies to: Futures Updated 19 November 2026
+Short answer
+Zero has its own path to Live, separate from our other Futures plans. If a funded Zero account makes $8,000 profit in a single day, you choose: take a $3,600 payout for each account that reached $8,000, or move to Live with that amount as your starting balance. Our Risk Team may also offer Live to Zero traders with consistent payout performance.
+When you move to Live, we deposit real funds into your Live Account. If you have a pending payout, that amount becomes your starting balance. If you don't, you start with the Live Allocation for your account sizes.
+You can then earn a Live Bonus equal to your starting balance, released in two halves as you trade consistently and withdraw profit.
+Zero Live Accounts pay daily at a 90% split, with an end-of-day trailing drawdown and no daily loss limit or consistency rule.
+How funded Zero accounts move to Live Replay
+Moving to Live merges all your funded Zero accounts into one Live Account. You receive a Live Bonus for each funded account as soon as your Live Account is set up, and each account adds to your Live drawdown, up to the cap shown above. How the Live drawdown moves Replay
+On Live, your loss limit moves up with your highest end-of-day closing balance. It locks once your Live profit equals your starting Live drawdown, or as soon as you request a payout before that point.
+How you're considered for Live
+The $8,000 day: if a funded Zero account makes $8,000 net profit in a single trading day, we email you to choose between taking the payout and moving to Live.
+Risk Team offer: our Risk Team may also identify Zero traders with consistent payout performance for Live. If you're identified, our team will reach out to you directly. These offers are made at the Risk Team's discretion.
+Your two options after an $8,000 day
+Take the payout
+Move to Live
+You receive
+$3,600 for each account that reached $8,000 (50% of $8,000 at your 90% split)
+Your $3,600 per account deposited as your Live starting balance, plus the chance to earn a Live Bonus equal to it
+Afterwards
+A 30-day cooldown before you can buy a new evaluation
+You trade your Live Account
+Your account is closed once you've made your choice. Either way, profit above $8,000 on that day isn't kept.
+What you get when you move to Live
+Live Allocation
+Each funded Zero account that moves to Live adds to your Live Allocation.
+Funded account
+$25K
+$50K
+$100K
+$150K
+Live Allocation
+$1,000
+$2,000
+$3,000
+$4,500
+Your combined Live Allocation is capped at $15,000.
+Your starting balance
+How much we deposit into your Live Account depends on whether you have a pending payout when you move to Live.
+If you have a pending payout
+This includes the payout from an $8,000 day, or any payout pending when our team reaches out to you about Live. You choose one of two options:
+Take the payout. It's paid to you as normal. A 30-day cooldown then applies before you can buy a new evaluation.
+Move to Live. Your pending payout isn't paid out. Instead, the full amount is deposited into your Live Account as your starting balance, in place of the standard Live Allocation.
+Your account is closed once you've made your choice.
+Example: one funded $50K account reaches $8,000 in a day and you choose Live. Your Live Account starts with a $3,600 balance.
+If you don't have a pending payout
+We deposit your combined Live Allocation as your starting balance.
+Example: our team reaches out to you about Live with one funded $50K account and no pending payout. Your Live Account starts with a $2,000 balance.
+Live Bonus
+Your Live Bonus is equal to your starting balance. It's added to your Live balance in two halves.
+Before any bonus is released , you need:
+20 winning days on your Live Account, each with net profit of at least 0.5% of your starting balance.
+At least 2 withdrawals of trading profit.
+Then each half is released at its milestone:
+Release
+Amount
+Released when your total profit withdrawals reach
+First half
+50% of your starting balance
+1 × your starting balance
+Second half
+50% of your starting balance
+2 × your starting balance
+Examples:
+Starting balance
+Minimum winning day
+First half
+Second half
+Total Live Bonus
+$2,000
+$10
+$1,000 after $2,000 withdrawn
+$1,000 after $4,000 withdrawn
+$2,000
+$3,600
+$18
+$1,800 after $3,600 withdrawn
+$1,800 after $7,200 withdrawn
+$3,600
+$10,000
+$50
+$5,000 after $10,000 withdrawn
+$5,000 after $20,000 withdrawn
+$10,000
+Good to know:
+Only withdrawals of trading profit count. Withdrawals of your starting balance or bonus funds don't.
+Each half is added to your Live balance as soon as you meet its conditions.
+Any part of the bonus that hasn't been released yet is forfeited if your Live Account is breached.
+Maximum position size
+Combined Live Allocation
+Max position (Minis / Micros)
+Up to $2,000
+2 / 20
+$2,000–$4,500
+4 / 40
+$4,500–$6,500
+6 / 60
+$6,500–$9,500
+8 / 80
+$9,500–$15,000
+10 / 100
+Your position limit doesn't change after payouts or when your maximum loss limit locks. Some highly volatile contracts may have lower limits.
+Live Account rules
+Starting balance
+Your pending payout amount, if you have one. Otherwise, your Live Allocation
+Live Bonus
+Equal to your starting balance, added in two halves after 20 winning days, 2 profit withdrawals and each withdrawal milestone
+Payouts
+Daily
+Profit split
+90% to you
+Drawdown
+End-of-day trailing
+Daily loss limit
+None
+Consistency rule
+None
+News trading
+Allowed
+Hedging
+Strictly prohibited
+How the end-of-day drawdown works
+Your maximum loss limit moves up with your highest end-of-day closing balance. It's calculated at the close of each trading day, not during the day.
+It stops trailing and locks at $100 above your starting balance once your Live profit equals your Live Allocation, or as soon as you request a payout before reaching that point.
+If you breach your Live Account
+Live Accounts can't be reset or reactivated.
+Any part of your Live Bonus that hasn't been released yet is forfeited.
+A 30-day cooldown applies before you can buy a new evaluation.
+Repeated breaches through reckless risk-taking may lead to longer cooldowns.
+Still need help?
+Chat with our support team. We usually reply in a few minutes.
+Chat with us
+More in Futures plans
+Applies to: Futures Reserve account rules Applies to: Futures Elite account rules Applies to: Futures Express account rules Applies to: Futures Direct account rules Applies to: Futures Elite, Reserve & Direct Path to Live Applies to: Futures Zero account rules
+There are no CFD related articles here. Switch to Futures or All to see them.
+On this page Short answer
+How you're considered for Live
+Your two options after an $8,000 day
+What you get when you move to Live
+Live Allocation
+Your starting balance
+Live Bonus
+Maximum position size
+Live Account rules
+How the end-of-day drawdown works
+If you breach your Live Account
+© 2026 All Rights Reserved – Blue Guardian Terms Privacy Cookies

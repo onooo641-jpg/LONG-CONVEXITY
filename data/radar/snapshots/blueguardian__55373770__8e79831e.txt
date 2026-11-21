@@ -1,0 +1,96 @@
+Instant Starter account rules | Blue Guardian Help Centre
+Skip to content Help Search the help centre ⌘K
+Website Start challenge Help Centre home Collections
+Getting started Account inactivity rule How Blue Guardian works Getting help and using your dashboard
+Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
+Payouts How payouts work
+Billing & accounts Paying for your account: methods, card rules and refunds How many accounts can I have? Futures bundle discounts
+Trading rules Prohibited trading strategies What happens if I break a rule? Futures risk management rules Trading hours and the trading day CFD news trading rules
+Platforms & instruments Trading platforms CFD trading conditions: markets, commissions and leverage Futures contract limits and funded scaling Futures instruments, codes and costs
+CFD plans Instant Standard account rules Instant Starter account rules 1 Step Standard rules 2 Step Standard rules 1 Step Nano rules 2 Step Nano rules Buy Now Pay Later (BNPL) rules
+Futures plans Reserve account rules Elite account rules Express account rules Direct account rules Elite, Reserve & Direct Path to Live Zero account rules Zero Path to Live
+Affiliates & competitions Affiliate program Monthly trading competition
+Help Centre
+CFD plans
+Instant Starter account rules
+CFD Instant Starter: one-time $5K instant account, 3% daily loss, 5% trailing drawdown, 15% consistency, one crypto payout of up to $250 (profit can go higher).
+Applies to: CFD Updated 17 November 2026
+Short answer
+Instant Starter is a one-time $5,000 instant funded account for trying out instant funding. There's no evaluation. You can make more than $250 profit, but you can only request one payout of up to $250 (90% split, crypto only), after which the account closes. You can only buy one per trader. Instant Starter can only be bought through this link (it may not show on the website): https://checkout.blueguardian.com/instant-starter
+How the consistency rule unlocks your payout Replay
+Total profit Best single day Consistency limit (%) Enter your numbers to check.
+Your best single day must stay within the consistency limit of your total profit. Each extra profitable day raises the threshold, and the payout button turns on once your best day fits under it.
+Key numbers
+Account size
+$5,000
+Profit target
+None
+Max daily loss
+3% of starting balance ($150)
+Max drawdown
+5% trailing (locks at $5,000 once you reach +5%)
+Minimum trading days
+5 days with at least 0.5% profit each
+Consistency
+15%
+Payout cap
+$250 (you can make more profit, but can only request $250)
+Payouts
+One payout only; crypto only, minimum $100
+Profit split
+90%
+Guardian Shield
+Closes all trades at 1% floating loss
+News trading
+Allowed
+Minimum hold time
+2 minutes
+One per trader
+You can buy only one Instant Starter account. Any extra Instant Starter accounts bought by the same trader are breached automatically and can't be refunded. The Instant Starter fee is also not covered by the CFD refund-after-4th-payout policy.
+Risk limits
+Maximum daily loss: 3%
+Your daily loss limit is $150 (3% of $5,000), measured from whichever is higher at the 5:00 PM New York reset: your balance or your equity.
+$100 floating profit at reset: equity is $5,100, so it can't drop below $4,950 the next day.
+$100 floating loss at reset: your $5,000 balance is higher, so equity can't drop below $4,850.
+No open trades: the limit is your closed balance minus $150.
+Maximum drawdown: 5% trailing
+Your maximum drawdown trails 5% ($250) below your highest closed balance . Once you reach +5%, it locks at $5,000 and stops trailing. Drawdown includes closed profits and losses, swaps and commissions.
+Guardian Shield
+If your open trades reach a combined 1% floating loss ($50) , Guardian Shield will usually close all open trades. You can keep trading straight away, but there are consequences:
+1st time: your profit split drops to 50% permanently.
+2nd time: the account is permanently breached.
+Your payout
+Requirements
+At least 5 trading days with 0.5% profit or more. They don't need to be consecutive.
+Your best day must be below 15% of your total profit. Example: with a $30 best day, you need more than $200 total profit. The $250 cap still applies.
+Account above $5,000, no rule violations and all positions closed.
+Amount and method
+You can make more than $250 profit, but the maximum you can request is $250 . At a 90% split, that's a $225 payout.
+Crypto only , minimum $100. Rise isn't available because its $500 minimum is higher than the $250 cap, so add a crypto wallet as your payout method.
+After your payout, the account is permanently closed .
+Trading rules
+News trading: allowed.
+Tick scalping: hold each trade for at least 2 minutes .
+Overnight and weekends: allowed.
+Expert Advisors: allowed, if they're your own setup. VPNs and VPS are allowed, but not to get around copy trading, group trading or signal rules.
+Copy trading: only between accounts you legally own.
+Stop losses: not mandatory, but you're responsible for staying within the rules.
+Leverage: FX 1:30, indices and commodities 1:10, crypto 1:2.
+Still need help?
+Chat with our support team. We usually reply in a few minutes.
+Chat with us
+More in CFD plans
+Applies to: CFD Instant Standard account rules Applies to: CFD 1 Step Standard rules Applies to: CFD 2 Step Standard rules Applies to: CFD 1 Step Nano rules Applies to: CFD 2 Step Nano rules Applies to: CFD Buy Now Pay Later (BNPL) rules
+There are no Futures related articles here. Switch to CFD or All to see them.
+On this page Short answer
+Key numbers
+One per trader
+Risk limits
+Maximum daily loss: 3%
+Maximum drawdown: 5% trailing
+Guardian Shield
+Your payout
+Requirements
+Amount and method
+Trading rules
+© 2026 All Rights Reserved – Blue Guardian Terms Privacy Cookies

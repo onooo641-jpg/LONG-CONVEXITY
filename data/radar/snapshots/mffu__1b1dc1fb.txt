@@ -1,0 +1,196 @@
+Privacy Policy - My Funded Futures Data Protection
+Futures CME futures trading Perps New 24/7 perps trading Save 40% On Any Plan With Code CLUB.
+New to MFFU? Get 50% off your first eval. Claim 40% off
+PRIVACY & POLICY
+1. Overview
+MyFunded Futures, LLC, and each of their affiliates (collectively, "MFFU," "we," "us," "our") respects your privacy and is committed to protecting the information we hold about you. If you have questions, comments, or concerns about this Privacy Policy or our processing of your information, please see the bottom of this page for information about how to contact us.
+This Privacy Policy explains our practices with respect to information we collect and process in connection with your relationship with us. This includes information we collect through, or in association with, our website with a home page located at https://myfundedfutures.com/ , together with all services we may offer from time to time via our website, social media sites, mobile apps, or otherwise through your interactions with us (collectively, the "Services").
+This Privacy Policy applies to all MFFU customers and site visitors regardless of location; the references to specific jurisdictions above address additional rights that apply to individuals in those regions and do not limit the scope of this Privacy Policy.
+MFFU's United Kingdom ("UK") representative is DataRep, 107-111 Fleet Street, London, EC4A 2AB, United Kingdom. MFFU's European Union representative is DataRep, located at The Cube, Monahan Road, Cork, T12 H1XY, Republic of Ireland. This Privacy Policy further explains the manner in which MFFU collects, uses, and maintains Personal Data of individuals based in the UK and the EU, as required under the General Data Protection Regulation 2016/679 ("GDPR") or the GDPR and the Data Protection Act 2018, as applicable.
+Please review the following to understand how we process and safeguard your data. By using any of our Services and/or by voluntarily providing us with your data, you acknowledge that you have read and understand the practices contained in this Privacy Policy. This Privacy Policy may be revised from time to time, so please ensure that you check this Privacy Policy periodically to remain fully informed.
+2. Related Policies
+To access this Privacy Policy in other languages, please contact us using the contact details below. If you are applying for a role with us, please refer to our Job Applicant Privacy Policy found at https://myfundedfutures.com/job-applicant-privacy-policy .
+3. What Information Do We Collect?
+We collect certain information that identifies, relates to, describes, is reasonably capable of being associated with, or could reasonably be linked, directly or indirectly, with a particular consumer or household ("Personal Data") through the Services, including:
+When you provide it to us directly by creating an account or subscribing to the Services
+Automatically through logging and analytics tools , cookies, pixel tags, and as a result of your use of and access to the Services
+From third-party sources , including service providers, such as IP2Location, Fingerprint JS, Riseworks, and SumSub
+You have choices about certain information we collect. When you are asked to provide information, you may decline to do so; but if you choose not to provide information that is necessary to provide any aspect of our Services, you may not be able to use those Services. In addition, as noted below in the section captioned "Your Choices" it is possible to change your browser settings to block the automatic collection of certain information.
+Finally, we may collect data that is not identifiable to you or otherwise associated with you, such as aggregated data, and is not Personal Data. To the extent this data is stored or associated with Personal Data, it will be treated as Personal Data; otherwise, the data is not subject to this Privacy Policy.
+Information You Share With Us
+We collect Personal Data from you when you provide it to us, including through creating an account through the Services, undergoing a verification process in order to comply with financial regulations, connecting a bank account, or contacting us with questions or comments. For example, if you create an account to use the Services, we may collect your name, phone number, email address, physical address, billing address and company information.
+To proceed with the verification process, we may require that you provide additional personal data (including your date of birth, driver's license or passport, proof of address, and social security number) sufficient to conduct identity verification and screening consistent with our onboarding and fraud-prevention practices.
+Certain information we collect for identity verification purposes, including your social security number, driver's license or passport number, and financial account information, constitutes 'sensitive personal information' under applicable law. We use this information solely to verify your identity and comply with KYC/AML obligations, and do not use it for any other purpose.
+Participation in our Loyalty Program where you redeem points for merchandise, we or our third-party service provider on our behalf will collect shipping information such as your name, mailing address and where applicable, contact information in order to fulfill your orders.
+If you are applying for a role with us, including certain temporary or consulting roles, we may also collect personal data about you from other sources such as your current employer, employees and colleagues or through publicly available internet searches. For more information, please refer to our Job Applicant Privacy Policy found at https://myfundedfutures.com/job-applicant-privacy-policy .
+Information Collected Automatically or Indirectly from You
+When you browse or use the Services, we utilize commonly-used logging and analytics tools, including but not limited to, Google Analytics, HubSpot, Shopify, and Vercel Analytics, to collect information about your use of the Services (such as how you navigate and move around the Services).
+We also use cookies to personalize and enhance your experience with our Services, to collect data about your visit to our Services, to help diagnose problems with our servers, to administer the Services, and to gather broad demographic information about our users.
+Information collected automatically includes the software and hardware attributes of the device you use to access the Services, unique device ID information, regional and language settings, performance data about the Services, network provider, and IP address (a number assigned to your device when you use the Internet). In addition, information is collected passively in the form of log files that record website activity. For example, log file entries and analytics data are generated every time you visit a particular page on our website, and track the dates and times that you use the Services, the pages you visit, the amount of time spent on specific pages, and other similar usage information, and general data (including the name of the web page from which you entered our website).
+Please see the "Your Choices" section of this Privacy Policy for more information about cookies and other web tracking technologies on the Services; for information about how you can reject, delete, or prevent cookies from being placed on your system; and how you can opt out of, limit, or prevent certain web tracking technologies from collecting information about you.
+Information Obtained from Third Parties
+We receive Personal Data from third parties that we have engaged to provide services to us, such as payment processors, our security vendors, and other third parties from time to time. For example, we use Plaid Inc. ("Plaid"), Riseworks, Inc. ("Riseworks"), Wise Payments Limited ("Wise"), and Confirmo, s.r.o. ("Confirmo") to gather your data from financial institutions. Please review each such provider's Privacy Policy for more information regarding how it uses your Personal Data. The provider we use for this purpose may change from time to time, and the applicable provider's privacy notice will be made available to you on that provider's website.
+We may also use financial institutions to process ACH funds transfers from your funding source bank account when you use our Services.
+4. Legal Bases for Processing
+We process Personal Data for, or based on, one or more of the following legal bases:
+Your Consent. We may process your information if you have provided us with consent to use your Personal Data for a specific purpose. You have the right to revoke your consent at any time.
+Performance of a Contract. We may process Personal Data to enter into, or perform under, the agreement between us.
+Legitimate Interests. We may process Personal Data for our legitimate interests, including servicing your account; providing information about our products and/or services; to the extent necessary and proportionate for the purposes of ensuring network and information security; and for administrative, fraud detection, and legal compliance purposes.
+Compliance with Legal Obligations and Protection of Individuals. We may process Personal Data to comply with the law and our legal obligations, as well as to protect you and other individuals from certain harms.
+Purpose Legal Basis
+Sending you (personalized) marketing email and text communications We obtain your consent
+Creation of your customer account to use our Services We obtain your consent
+Management of your customer account on our Services Performance of the Terms and Conditions of our Services
+Management of our commercial relationship Performance of the Terms and Conditions of our Services
+Management of customer requests and complaints Our legitimate interest in responding to our customers' requests and complaints
+Operating, maintaining, and improving the quality and security of the Services and such content, products and/or services as we may make available through the Services Our legitimate interest in operating, maintaining, and improving the quality and security of the Services and such content, products and/or services made available through the Services
+Management of litigation and disputes Our legitimate interest to enforce our rights, those of our customers and partners in the context of litigation and disputes
+Management of requests from authorities Compliance with a legal obligation
+5. How Do We Process Personal Data?
+Operational Uses
+We process Personal Data as part of our operations, which include:
+Providing you with information tailored to your requests , responding to inquiries, and delivering services and products
+Operating, maintaining, and improving the quality of the Services and such content, products and/or services as we may make available through the Services
+Communicating with you by email and text message (SMS, MMS), in each case with your consent, if such consent is required in accordance with applicable laws
+Debugging to identify and repair errors that impair existing intended functionality
+Undertaking internal research for technological development and demonstration
+Detecting security incidents , protecting against malicious, deceptive, fraudulent, or illegal activity, and prosecuting those responsible for that activity
+Compliance with applicable laws , regulations, rules, and requests of relevant law enforcement and/or other governmental agencies, including for KYC and AML purposes
+To enforce our Terms and Conditions
+Endeavoring to protect our and our partners' rights, property, or safety, and the rights, property, and safety of our users and other third parties
+For other purposes , as permitted or required by law
+Sharing of Personal Data
+Some of the above processing involves sharing Personal Data with third parties, including service providers and other partners.
+We share Personal Data with third parties when you authorize us to do so to effectuate transactions and provide the Services
+We share Personal Data with certain affiliated third parties
+We share Personal Data with our service providers , including our banking and payment processors, background check providers, and other vendors we engage so that they may provide services to us or on our behalf
+We share Personal Data with third parties engaged to enforce our rights or collect amounts owed to us, including in connection with disputed or reversed payments
+We share Personal Data with government agencies or regulators when permitted or required to do so by law; in response to a request from a law enforcement agency or authority or any regulatory authority; and/or to protect the integrity of the Services or our interests, rights, property, or safety, and/or that of our users and others
+In certain circumstances, MyFundedFutures may share limited user account information with affiliated companies and media platforms for the purpose of publishing trader performance statistics, rankings, leaderboards, or similar informational content.
+Such disclosures may include a trader's display name or username, generalized geographic indicator (e.g., country), account size category, and performance metrics (such as profit, percentage gain, or win rate) as displayed within MyFundedFutures platforms. These publications may appear on affiliated websites, research portals, media platforms, or educational content sites operated by or associated with the MyFundedFutures. No personally identifiable information, including real names, contact information, identification documents, financial account details, or other sensitive personal data, will be disclosed in connection with these publications. Usernames or display names may be partially anonymized or truncated in publicly displayed rankings or performance summaries.
+By using the platform, users acknowledge that performance statistics and leaderboard placement may be publicly displayed on MyFunded Futures platforms and may also be republished by affiliated entities for informational, educational, or promotional purposes.
+6. Your Rights Regarding Personal Data
+You have certain rights regarding the collection and processing of Personal Data. You may exercise these rights, to the extent they apply to you, by contacting us at the information provided at the end of this Privacy Policy, or by following instructions provided in this Privacy Policy, or in communications sent to you.
+Accessing, Modifying, Rectifying, and Correcting Collected Personal Data
+We strive to maintain the accuracy of any Personal Data collected from you, and will try to respond promptly to update our records when you tell us the information in our records is not correct. However, we must rely upon you to ensure that the information you provide to us is complete, accurate, and up-to-date, and to inform us of any changes. Please review all of your information carefully before submitting it to us, and update your account with any changes or corrections.
+Depending on the laws that apply to you, you may obtain from us certain Personal Data in our records. If you wish to access, review, or make any changes to Personal Data you have provided to us through the Services, please contact us at the information provided at the end of this Privacy Policy. We reserve the right to deny access as permitted or required by applicable law.
+7. Your California Privacy Rights
+California's "Shine the Light" law permits our users who are California residents to request and obtain from us a list of what Personal Data (if any) we disclosed to third parties for their own direct marketing purposes in the previous calendar year and the names and addresses of those third parties. Requests may be made only once per year per person, must be sent to the email address below, and are free of charge. Requests may be sent through the contact methods listed below.
+California residents should refer to our California Privacy Policy at https://myfundedfutures.com/california-privacy-policy for more information about their rights.
+8. Your Nevada Privacy Rights
+Nevada law permits our users who are Nevada consumers to request that their Personal Data not be sold (as defined under applicable Nevada law), even if their Personal Data is not currently being sold. Requests may be sent through the contact methods listed below.
+9. Your Other US Privacy Rights
+If you are located in Colorado, Connecticut, Delaware, Indiana, Iowa, Kentucky, Maryland, Minnesota, Montana, Nebraska, New Hampshire, New Jersey, Oregon, Rhode Island, Texas, Tennessee, Utah and Virginia, you have certain rights regarding your Personal Data. The section describes how we collect, use, and share your Personal Data under the Colorado Privacy Act, the Connecticut Act Concerning Personal Data Privacy and Online Monitoring, the Delaware Personal Data Privacy Act, the Indiana Consumer Data Protection Act, the Iowa Consumer Data Protection Act, the Kentucky Consumer Data Protection Act, the Maryland Online Data Privacy Act, the Minnesota Consumer Data Privacy Act, the Montana Consumer Data Privacy Act, the Nebraska Data Privacy Act, New Hampshire SB 255, New Jersey SB 332, the Oregon Consumer Privacy Act, the Rhode Island Data Transparency and Privacy Protection Act, the Texas Data Privacy Act, the Tennessee Information Protection Act, the Utah Consumer Privacy Act, and the Virginia Consumer Data Protection Act, and your rights with respect to that Personal Data.
+As a Colorado, Connecticut, Delaware, Indiana, Iowa, Kentucky, Maryland, Minnesota, Montana, Nebraska, New Hampshire, New Jersey, Oregon, Rhode Island, Texas, Tennessee, Utah or Virginia resident, you have some or all of the rights listed below. However, these rights are not absolute, and we may decline your request as permitted by law. You can ask to appeal any denial of your request in the same manner through which you may submit a request. Accordingly, you may have the following rights with respect to your Personal Data, including to:
+Right to Access and Portability. You have the right to access your Personal Data and/or receive a copy of the Personal Data that we have collected about you. You also have the right to portability, meaning you may obtain a copy of certain Personal Data you provided to us in a portable, machine-readable format and, where technically feasible, request that we transmit it to another controller.
+Right to Correct. You have the right to correct inaccurate or outdated Personal Data that we have collected about you.
+Right to Delete. You have the right to delete the Personal Data we have obtained about you or that you have provided to us with certain exceptions.
+Right to Opt-out of Tracking for Targeted Advertising Purposes. You have the right to opt-out of certain tracking activities for targeted advertising purposes.
+Right to Opt-out of Profiling. If we process your Personal Data for profiling purposes as defined by the applicable state privacy law (other than the ICDPA), you can opt-out of such processing.
+Right to Non-discrimination. If you exercise any of your consumer rights, you have the right to be treated the same as a consumer who does not exercise any rights.
+Right to Opt-out of Sales. You have the right to opt out of the sale of your Personal Data to third parties.
+Right to Opt-in for Sensitive Data Processing. To the extent we process any of your sensitive Personal Data (as defined under applicable State law), we will obtain your consent, or provide you the right to opt out, as required under the applicable state privacy law.
+Right Against Automated Decision-making. You have the right to opt out of certain automated decision-making about you.
+We recognize the Global Privacy Control (GPC) as a valid request to opt out of the sale or sharing of your personal information for the browser or device on which it is enabled.
+10. Your Canadian Privacy Rights
+Residents of Canada are permitted to request and obtain from us information respecting the existence, use, and disclosure of their Personal Data as well as access to that information (subject to certain exceptions pursuant to applicable laws). Without limiting the above, residents of Canada will, upon request:
+Be informed of whether we hold Personal Data about you
+Be provided with an account of third parties to which we have disclosed your Personal Data
+Be able to challenge the accuracy and completeness of your Personal Data and have it amended as appropriate
+Be provided with information about our policies and practices with respect to the management of Personal Data, including: the name or title, and address, of the person who is accountable for our privacy policies and practices; the means of gaining access to Personal Data; a description of the type of Personal Data held by us, including a general account of its use; a copy of any brochures or other information that explain our policies, standards, or codes; and what Personal Data is made available to related organizations.
+If you are a resident of Québec, additional rights apply under Québec's Act respecting the protection of personal information in the private sector, as amended (commonly known as "Law 25"). In addition to the rights described above, and subject to the conditions and exceptions set out in Law 25, you may: request access to and correction of your Personal Data; request that we cease disseminating your Personal Data or de-index a hyperlink that provides access to it where dissemination contravenes the law or a court order or causes you serious injury to reputation or privacy (the right to de-indexation); obtain the computerized Personal Data you have provided to us in a structured, commonly used technological format (data portability); and, where a decision affecting you is based exclusively on automated processing, be informed of that decision and request that it be reviewed by a member of our personnel. You may also submit observations regarding such automated processing.
+To exercise these rights, please contact us using the details in the Contact Information section below. Québec residents may also file a complaint with the Commission d'accès à l'information du Québec ("CAI"), the provincial regulator responsible for Law 25.
+11. Your EU, UK and Swiss Privacy Rights
+If you are located outside the United States, we transfer Personal Data for processing in the United States, including Personal Data sent via e-mails or when you make an order. Under the GDPR, we are considered a "controller" of the Personal Data. By using the Services outside the United States, you acknowledge that we will transfer your data to, and store your Personal Data in, the United States, which may have different data protection rules than in your country, and Personal Data may become accessible as permitted by law in the United States, including law enforcement and/or national security authorities in the United States. For transfers of data into and out of the EEA, Switzerland, and the UK, pursuant to Article 46 of the GDPR, we use standard contractual clauses adopted by the European Commission or applicable regulator.
+Under the GDPR, you may have the following rights with respect to your Personal Data, including to:
+Right to Access and Portability. You have the right to access your Personal Data and/or receive a copy of the Personal Data that we have collected about you in a portable format. You also have the right to portability, meaning you may obtain a copy of certain Personal Data you provided to us in a portable, machine-readable format and, where technically feasible, request that we transmit it to another controller.
+Right to Object to Processing. You have the right to object to the continued processing or use of your Personal Data.
+Right to Correct. Right to update and correct inaccuracies in your Personal Data.
+Right to Object. Right to object to the continued processing or use of your Personal Data in certain situations, including for direct marketing.
+Right to Erasure. Right to have the Personal Data blocked, anonymized, or deleted, as appropriate in certain situations.
+Right to Complain. You have the right to complain to a supervisory authority, and your Personal Data may be blocked, anonymized, or deleted, as appropriate. If you are in the EU, you may contact your national data protection authority; a list is maintained by the European Data Protection Board at https://edpb.europa.eu/about-edpb/about-edpb/members_en . If you are in the UK, you may contact the Information Commissioner's Office (ICO) at https://ico.org.uk/ .
+Right to Withdraw Consent. If you have provided us with a consent to use your Personal Data you have a right to withdraw that consent easily at any time. Please contact us to do so. Withdrawing a consent will not affect the lawfulness of our use of your Personal Data in reliance on that consent before it was withdrawn.
+The right to access Personal Data may be limited in some circumstances by local law. If you qualify, in order to exercise these rights, please contact us as set forth below.
+To make any requests as listed above, please contact DataRep at datarequest@datarep.com , quoting "MyFunded Futures, LLC" in the subject line. You may also contact DataRep through its online webform at www.datarep.com/data-request . We may ask you to provide additional information for identity verification purposes, or to verify that you are in possession of an applicable email account.
+Please understand, however, that we reserve the right to retain an archive of such Personal Data for a commercially reasonable time to ensure that its deletion does not affect the integrity of our data; and we further reserve the right to retain an anonymous version of such Information.
+You may withdraw consent from receiving marketing and promotional communications by clicking the "Unsubscribe" link on the communication or sending an e-mail to support@myfundedfutures.com with the subject line "Opt Out." If European Data Subjects do not provide Personal Data to us or withdraw consent for processing such Personal Data, we may not be able to provide such individuals with certain features or functionalities of the Services or information regarding the Services, including processing.
+12. Marketing
+We may use your Personal Data to send you updates about our services. Where required by applicable law, we will obtain your consent before sending you marketing communications, and you may withdraw that consent at any time. Where we rely on legitimate interests to send you service-related or similar marketing information, we will do so only as permitted by applicable law and will provide you a clear means to opt out.
+Our websites also collect certain information automatically and store it in log files by using cookies and other automated technologies. For more information on our use of cookies, please see Section 13 below.
+If you do not wish to be contacted by us, you can follow the unsubscribe instructions that accompany any marketing e-mail or contact us using the details outlined in section 20 below. If you opt-out of such communication, we may still contact you about any problems or issues with your account, profile, or any services provided by us. We will always treat your personal data with respect and will never sell or share it with other organizations outside our group for marketing purposes.
+13. Cookies and Web Tracking
+Cookies are small text files placed on your device when you use our website, used to ensure our website functions properly, to improve performance, and to support our analytics and marketing.
+For detailed information about the cookies and similar technologies we use, why we use them, the categories of cookies and third parties involved, international data transfers, and how you can manage your preferences or withdraw consent, including through the "Cookie Preferences" tool on our website and recognized opt-out preference signals such as the Global Privacy Control, please see our Cookie Policy, available at https://www.myfundedfutures.com/cookie-policy .
+14. Protecting Personal Data
+We use reasonable and appropriate physical, technical, and organizational safeguards designed to promote the security of our systems and protect the confidentiality, integrity, availability, and resilience of Personal Data. Those safeguards include:
+The encryption of Personal Data where we deem appropriate
+Taking steps to ensure Personal Data is backed up and remains available in the event of a security incident
+Periodic testing, assessment, and evaluation of the effectiveness of our safeguards
+However, no method of safeguarding information is completely secure. While we use measures designed to protect Personal Data, we cannot guarantee that our safeguards will be effective or sufficient. In addition, you should be aware that Internet data transmission is not always secure, and we cannot warrant that information you transmit utilizing the Services is or will be secure.
+15. Retention of Personal Data
+We retain Personal Data as long as you are using our Services and for the following defined periods thereafter depending on the category of data and the purpose for which it was collected, consistent with industry standard practices for fraud prevention and regulatory compliance, or such longer period as required by applicable law:
+Customer account information: retained for a period of five (5) years following account closure or termination.
+Know Your Customer ("KYC") information: retained for a period of five (5) years following account closure or termination.
+Data retained for legal purposes: Where retention is necessary, including but not limited to compliance with applicable laws, regulations, rules and requests of relevant law enforcement and/or other governmental agencies, we retain data only for the period of these obligations.
+16. Your Choices
+You have choices about certain information we collect about you, how we communicate with you, and how we process certain data. When you are asked to provide information, you may decline to do so; but if you choose not to provide information that is necessary to provide some of our Services, you may not be able to use those Services. In addition, it is possible to change your browser settings to block the automatic collection of certain information.
+Communications Opt-Out
+You may opt out of receiving communications from us at any time through a given communications channel by following the opt-out link or other unsubscribe instructions provided in any email message received, by contacting us as provided at the end of this Privacy Policy. If you wish to opt out by sending us an email to the address provided below, please include "Opt-Out" in the email's subject line, and include your name and the email address you used to sign up for communications in the body of the email.
+Automated Decision Making
+MFFU does not use solely automated decision-making that produces legal or similarly significant effects concerning you without human involvement. Where automated tools are used to support identity verification, fraud detection, or eligibility screening, a human reviews decisions that have a significant effect on you. If you have questions about, or wish to object to, any such processing, please contact us using the details in Section 20.
+17. Other Important Information About Personal Data and the Services
+Children
+Persons under 18 years of age are not permitted to use the Services, and we do not knowingly collect information from persons under the age of 18. By using the Services, you represent that you are 18 years of age or older.
+Business Transfer
+We may, in the future, sell or otherwise transfer some or all of our business, operations or assets to a third party, whether by merger, acquisition or otherwise. Personal Data we obtain from or about you via the Services may be disclosed to any potential or actual third-party acquirers and may be among those assets transferred.
+International Use
+Your Personal Data may be stored and processed in the US, UK and the European Union. If you are using the Services from outside the US, by your use of the Services you acknowledge that we will transfer your data to, and store your Personal Data in, the US, which may have different data protection rules than in your country, and Personal Data may become accessible as permitted by law in the US, including to law enforcement and/or national security authorities in the US.
+Former Clients
+If you decide to close your account(s) or become an inactive customer, we will disconnect your account from any subscription activity, and will adhere to this Privacy Policy, which may be amended from time to time, in connection with Personal Data that we retain.
+18. Modifications and Updates to this Privacy Policy
+This Privacy Policy replaces all previous disclosures we may have provided to you about our information practices with respect to the Services. We reserve the right, at any time, to modify, alter, and/or update this Privacy Policy, and any such modifications, alterations, or updates will be effective upon our posting of the revised Privacy Policy. Your continued use of the Services following our posting of any revised Privacy Policy will constitute your acknowledgement of the amended Privacy Policy.
+19. Applicability of this Privacy Policy
+This Privacy Policy is subject to any agreements that govern your use of the Services. This Privacy Policy applies regardless of the means used to access or provide information through the Services.
+This Privacy Policy does not apply to information from or about you collected by any third-party services or websites linked from the Services, which we use to gather Personal Data from financial institutions. Any such collection or receipt of Personal Data is subject to those third parties' privacy policies and terms of use, and under no circumstances are we responsible or liable for any third party's compliance therewith.
+20. Contact Information
+If you have any questions or concerns about this Privacy Policy and/or how we process Personal Data please contact:
+Email: support@myfundedfutures.com
+Website: myfundedfutures.com
+Effective: August 2026
+Legal
+Disclaimer
+Privacy Policy
+Terms
+Cancellation
+California Privacy Policy
+Job Applicant Privacy Policy
+Cookie Preferences
+About us
+Why Us
+Community
+Careers
+Testimonials
+How it works
+Learn How It Works
+More
+NinjaTrader
+Hyperprop
+Fintevo
+Blogs
+FAQ
+© 2023- 2026    MyFundedFutures. All rights reserved.
+¹ All MFFU accounts operate in a simulated environment. Evaluation fees are non-refundable. See our Terms for full program details. All trades are executed on a demo basis and do not involve real capital. Customers who meet the required performance criteria may, at our sole discretion, receive an invitation to access live capital trading through one of our affiliated companies, by invitation only and subject to additional eligibility requirements and terms.
+² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program Terms for full eligibility conditions.
+Disclaimer: MyFundedFutures provides the information on this website for general informational and educational purposes only. It does not constitute investment, trading, tax, legal, or financial advice, and does not constitute an offer to buy or a solicitation to sell any financial product or derivative instrument. MyFundedFutures is not a broker-dealer, investment adviser, introducing broker, futures commission merchant (FCM), or money manager. You should consult your own advisors before engaging in any transaction.
+Trading futures involves a substantial risk of loss and is not appropriate for every person. The use of leverage amplifies exposure and can lead to significant losses. You should only participate using an understanding of these risks, and nothing in our programs should be relied upon in deciding whether to trade your own capital.
+Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S. exchanges, including those operated by CME Group (CME, CBOT, NYMEX, and COMEX). Equities, equity options, cryptocurrencies, contracts for difference (CFDs), and over-the-counter (OTC) products are prohibited.
+Simulated Performance: All MyFundedFutures evaluation and funded programs are conducted entirely in a simulated, non-executing environment. Participants are advised that hypothetical or simulated performance has inherent limitations. Unlike an actual performance record, simulated results do not represent real trading and may under- or over-compensate for factors such as slippage, liquidity, margin impact, and the psychological demands of live trading. Simulated results are often prepared with the benefit of hindsight. No representation is being made that any participant will or is likely to achieve profits or results comparable to those shown in any marketing, testimonials, or on-platform performance.
+Program Performance¹: The data below is provided for informational purposes only and should not be interpreted as a guarantee, prediction, or representation of any future results. During the applicable measurement period:
+19.97% of all evaluation participants completed the required objectives and advanced beyond the evaluation stage;
+approximately 19.95% of participants who began the evaluation process advanced to a simulated Funded Stage;
+39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
+4.2% of participants trading in a Simulated Funded Account were promoted to a Live Funded Account.
+All results occurred solely within a simulated environment and are not indicative of future results.
+Testimonials: Testimonials reflect the personal experiences of the individuals involved and are not necessarily typical or indicative of what any other participant may expect. They are not a guarantee of future results, payout eligibility, or trading success. No compensation has been provided in connection with the testimonials presented herein.
+For additional program terms, eligibility, jurisdictional limitations, media disclaimers, program integrity rules, intellectual property terms, and full program performance information, see our Disclaimer and Terms .
+MyFunded Perpetuals is offered by Funding Perpetuals Holdings, Inc., a company separate from MyFunded Futures, LLC. MyFunded Futures' track record and performance history do not apply to MyFunded Perpetuals or its products.

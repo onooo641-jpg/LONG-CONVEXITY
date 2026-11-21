@@ -1,0 +1,149 @@
+Express account rules | Blue Guardian Help Centre
+Skip to content Help Search the help centre ⌘K
+Website Start challenge Help Centre home Collections
+Getting started Account inactivity rule How Blue Guardian works Getting help and using your dashboard
+Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
+Payouts How payouts work
+Billing & accounts Paying for your account: methods, card rules and refunds How many accounts can I have? Futures bundle discounts
+Trading rules Prohibited trading strategies What happens if I break a rule? Futures risk management rules Trading hours and the trading day CFD news trading rules
+Platforms & instruments Trading platforms CFD trading conditions: markets, commissions and leverage Futures contract limits and funded scaling Futures instruments, codes and costs
+CFD plans Instant Standard account rules Instant Starter account rules 1 Step Standard rules 2 Step Standard rules 1 Step Nano rules 2 Step Nano rules Buy Now Pay Later (BNPL) rules
+Futures plans Reserve account rules Elite account rules Express account rules Direct account rules Elite, Reserve & Direct Path to Live Zero account rules Zero Path to Live
+Affiliates & competitions Affiliate program Monthly trading competition
+Help Centre
+Futures plans
+Express account rules
+Express Futures plan (no longer sold from 16 Nov 2026; existing accounts only): rules, daily payouts, buffer, resets and reactivation.
+Applies to: Futures Updated 14 November 2026
+Short answer
+Express is a one-phase Futures evaluation built for fast cash flow. Hit a 6% profit target while meeting a 40% consistency rule. Once funded, you can request a payout every day, up to a daily cap, from profit above your buffer, with a 90% profit split.
+How the end-of-day trailing drawdown moves Replay
+Your loss limit trails your highest end-of-day balance. It steps up after each new closing high and stops moving once it reaches its lock level just above your starting balance. Exact amounts for your plan are in the table above. What happens when you hit the daily loss limit Replay
+Reaching the daily loss limit closes your open trades and locks the account for the rest of the trading day. It isn't a failed account: trading unlocks at the 5 PM New York reset. How the consistency rule unlocks your payout Replay
+Total profit Best single day Consistency limit (%) Enter your numbers to check.
+Your best single day must stay within the consistency limit of your total profit. Each extra profitable day raises the threshold, and the payout button turns on once your best day fits under it.
+Express is no longer available to buy from 16 November 2026. If you already have an Express account, these rules still apply to it. For new accounts, see Zero account rules .
+Key numbers
+$25K
+$50K
+$100K
+$150K
+Profit target (6%)
+$1,500
+$3,000
+$6,000
+$9,000
+Max trailing drawdown (end of day)
+$1,000
+$2,000
+$2,500
+$3,500
+Daily loss limit: evaluation (soft breach)
+None
+$1,000
+$1,250
+$1,750
+Daily loss limit: funded (soft breach)
+$500
+$1,000
+$1,250
+$1,750
+Max contracts in evaluation (Minis / Micros)
+1 / 10
+4 / 40
+8 / 80
+12 / 120
+Funded buffer
+$1,100
+$2,100
+$2,600
+$3,600
+Max payout per day
+$600
+$1,100
+$1,500
+$2,500
+Minimum payout
+$250
+$250
+$500
+$500
+Consistency: 40% (evaluation only). News trading: allowed. Profit split: 90%.
+The evaluation
+Profit target
+Reach 6% profit while following all the rules and the consistency rule. Your account then has a final review, and once approved you become a funded trader.
+Consistency rule (evaluation only)
+Your best day must be less than 40% of your total profit before you can pass. If it isn't, you're not breached. You just keep trading until it is. Example: with a $1,500 best day, you need more than $3,750 total profit. At $4,000 total, your best day is 37.5%, so you can pass.
+Daily loss limit
+If your balance or equity falls below the daily loss limit, all open trades are closed and the account is disabled for the rest of the day. This is a soft breach : trading unlocks at the 5:00 PM New York rollover. The $25K evaluation has no daily loss limit, but the $25K funded account has a $500 limit.
+Maximum trailing drawdown
+Express uses an end-of-day (EOD) trailing drawdown . Your loss limit moves up only when you set a new highest end-of-day closing balance. It doesn't follow unrealised profit during the day, and it never moves down. Hitting it is a hard breach.
+Evaluation: the limit keeps trailing for the whole evaluation.
+Funded: the limit stops trailing once it reaches your starting balance + $100 , and stays fixed from then on.
+Account
+End-of-day balance where trailing stops
+Fixed loss limit
+$25K
+$26,100
+$25,100
+$50K
+$52,100
+$50,100
+$100K
+$102,600
+$100,100
+$150K
+$153,600
+$150,100
+After any payout, your drawdown floor also locks at starting balance + $100.
+Funded account
+Contract limits
+You start funded at a lower contract limit, and it scales up as your end-of-day balance grows. See Futures contract limits and funded scaling .
+Payouts
+When: every day, once your balance is above your buffer and you have at least the minimum payout available.
+Buffer: you can only withdraw profit above starting balance + buffer. Example: on $50K the buffer level is $52,100. With a balance of $53,000, you can withdraw $900, up to the daily cap.
+From your second payout: before each new payout, you need new profit of at least 50% of your previous payout . Example: after a $1,100 payout on $50K, make at least $550 more before your next request.
+Profit split: 90%.
+Resets and reactivation
+Account
+$25K
+$50K
+$100K
+$150K
+Evaluation reset fee
+$72
+$121
+$191
+$261
+Funded reactivation fee
+$180
+$330
+$450
+$750
+Evaluation reset: restart a breached evaluation for a fixed fee. Discounts and promotions don't change it.
+Funded reactivation: if your funded Express account breaches before its first payout , you can reactivate it without repeating the evaluation. You can do this up to two times, within 30 calendar days of the breach. It reopens at the start of the next trading session.
+Other rules
+News trading: allowed on evaluation and funded accounts. Expect slippage and wider spreads around high-impact news.
+Stop losses: not mandatory, but every trade needs a defined risk. See Futures risk management rules .
+Copy trading: only between accounts you legally own.
+Microscalping: less than 50% of your profit may come from trades held under 10 seconds.
+Fees: one-time purchase. No monthly or activation fees.
+Still need help?
+Chat with our support team. We usually reply in a few minutes.
+Chat with us
+More in Futures plans
+Applies to: Futures Reserve account rules Applies to: Futures Elite account rules Applies to: Futures Direct account rules Applies to: Futures Elite, Reserve & Direct Path to Live Applies to: Futures Zero account rules Applies to: Futures Zero Path to Live
+There are no CFD related articles here. Switch to Futures or All to see them.
+On this page Short answer
+Key numbers
+The evaluation
+Profit target
+Consistency rule (evaluation only)
+Daily loss limit
+Maximum trailing drawdown
+Funded account
+Contract limits
+Payouts
+Resets and reactivation
+Other rules
+© 2026 All Rights Reserved – Blue Guardian Terms Privacy Cookies

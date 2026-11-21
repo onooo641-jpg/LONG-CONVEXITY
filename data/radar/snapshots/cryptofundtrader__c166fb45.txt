@@ -1,0 +1,667 @@
+Crypto Fund Trader - FAQ
+Join the waitlist
+The new terminal is coming soon
+[ MENU ]
+[ Programs ] NEW
+[ How it works ]
+[ Affiliates ]
+[ Support
+]
+Blog
+Faq
+Contact
+FAQ
+Terms and Conditions
+Refund Policy
+Proof of Scholarship
+Affiliate Partner
+Theory Tools
+Blog
+CFT x Bybit
+Choose your challenge
+Free tournaments
+Match - Trader Platform
+MT5 Web Terminal
+BYBIT Platform
+Contact us
+Cookies
+“KYC Audit”
+Privacy Policy
+Competitive Ranking
+[ RANK ]
+[ DASHBOARD ]
+FAQs
+Frequently asked questions
+×
+Get Started
+What is Crypto Fund Trader?
+Crypto Fund Trader is a simulated trading evaluation firm that gives traders the opportunity to prove their
+skills through different evaluation programs.
+Traders who meet the program requirements may qualify for a simulated funded account with up to $300,000 in
+virtual capital and may become eligible to receive performance-based rewards.
+How do I get started?
+To get started, choose the evaluation program that best fits your trading style from the Programs section and complete
+your purchase.
+Once your purchase is complete, your account credentials will be sent to you within a few minutes. After
+that, you can log in, start trading, and work toward completing the evaluation requirements.
+What is the evaluation?
+The evaluation is a simulated trading challenge designed to test your trading skills, risk management, and
+ability to follow the program rules.
+After successfully completing the evaluation requirements, you may qualify for the final stage and become
+eligible to receive performance-based rewards.
+What account sizes are available?
+Crypto Fund Trader offers different simulated account sizes depending on the program selected. Each account
+size has its own price, rules, and evaluation requirements.
+Available account sizes may vary by program, including 1-Step (Classic, Pro and Turbo), 2-Phase, and any special programs offered
+from time to time.
+For the most up-to-date account sizes and pricing, please visit the Programs section.
+Can I earn rewards with Crypto Fund Trader?
+We focus on evaluating skilled traders. Any trader who successfully passes our evaluation and complies with
+all program rules may become eligible to receive a performance-based reward to help support their trading
+career.
+What payment methods are available?
+We accept payments by credit card, PayPal, Apple Pay, Google Pay, and cryptocurrency through our available
+payment gateways.
+Crypto payments are currently supported in multiple cryptocurrencies.
+Which countries are allowed to join Crypto Fund Trader?
+Country availability may depend on the trading platform selected.
+Match-Trader:
+There are currently no country restrictions for traders using Match-Trader.
+MetaTrader 5:
+MetaTrader 5 is not available for users residing in the United States.
+Bybit:
+Crypto Fund Trader does not apply additional country restrictions for traders who choose to use Bybit.
+However, traders must use their own personal Bybit account and are fully responsible for complying with
+Bybit’s Terms of Service, jurisdictional restrictions, and any rules that may apply in their country of
+residence.
+Traders who use Bybit do so at their own discretion and risk. Crypto Fund Trader is not responsible for any
+breach of Bybit’s terms or for any action taken by Bybit against a user’s account.
+EVALUATION PROCESS
+How do I reach the final stage?
+To reach the final stage, you must successfully complete the requirements of your selected evaluation
+program, such as the 1-Step or 2-Phase Challenge.
+After completing the evaluation, your account may be reviewed to confirm that all program rules were
+followed. If approved, you may qualify for a simulated funded account and become eligible to receive
+performance-based rewards.
+What happens after I pass Phase 1?
+If you selected a 1-Step Evaluation (Classic, Pro or Turbo), there is only one phase: once you reach the profit target of your modality, you will receive your simulated funded account within a few minutes.
+If you selected the 2-Phase Evaluation and pass Phase 1, you will receive your Phase 2 account within a few
+minutes.
+What happens after I pass Phase 2?
+If you pass Phase 2, you will receive a confirmation email and your simulated funded account will be sent
+within a few minutes.
+What happens if I breach a trading rule?
+If you exceed any drawdown limit or breach any of our program rules, your account may be deactivated and
+you will be notified by email.
+This includes the maximum daily drawdown, maximum overall drawdown, trailing drawdown in the former 1-Phase
+Evaluation and the Break Evaluation, or any other rule listed in your selected program.
+Is there a time limit to complete the evaluation?
+No. We want to give our traders as much freedom as possible, so there is no maximum time limit to complete
+the evaluation.
+You can trade at your own pace and take the time you need.
+How are the daily and overall maximum loss limits calculated?
+Drawdown breaches are calculated based on equity.
+The daily maximum loss is calculated based on your account balance at 12:05 AM UTC each day.
+For the 2-Phase Evaluation, the daily maximum loss is 5%, and the maximum overall loss is fixed at 10% of
+the initial account balance.
+For 1-Step Evaluations, the daily maximum loss is 3% in all modalities, and the maximum overall loss is static, fixed on the initial account balance: 6% for 1-Step Classic, 5% for 1-Step Pro and 3% for 1-Step Turbo. Limits are calculated in the same way as in the 2-Phase Evaluation.
+For the former 1-Phase Evaluation (existing accounts), the daily maximum loss is 4%, and the trailing drawdown rule applies instead of a fixed overall loss limit.
+How is the trailing drawdown calculated?
+The trailing drawdown applies only to the former 1-Phase Evaluation (existing accounts) and Break Evaluations. It does not apply to 1-Step Evaluations, which use a static maximum loss.
+It is calculated based on balance, meaning it follows the account’s highest balance reached and adjusts
+accordingly as the account grows.
+For former 1-Phase evaluations only, the trailing drawdown is set at 6% of the initial account balance and moves
+upward as your account reaches new highs. Once the trailing drawdown reaches the initial account balance, it
+stops moving and remains fixed.
+Example: If you start with a $100,000 account, your initial trailing drawdown limit is $94,000. If
+your account grows to $107,000, the trailing drawdown reaches $100,000. From that point, it no longer trails
+and remains fixed at the initial account balance. If your equity falls below the trailing drawdown limit at
+any time, the account will be considered breached.
+TRADING CONDITIONS
+What instruments can I trade?
+On Bybit you can currently trade more than 550 crypto futures pairs.
+On Match-Trader and MetaTrader 5 we have more than 720 instruments available thanks to our Data Feed and
+Liquidity Providers (Crypto, Forex, Indices, Commodities, Stocks...)
+556 Cryptocurrencies
+106 Forex
+15 Indices
+22 Commodities
+25 Stocks
+What trading platform can I use?
+Crypto Fund Trader currently offers access to Match-Trader, MetaTrader 5, and Bybit.
+The instruments available depend on the trading platform you choose.
+Match-Trader
+Match-Trader is available on web , desktop, iOS, and Android.
+You can try the platform using the following demo credentials:
+Email: demo@cryptofundtrader.com
+Password: DemoCFT1
+MetaTrader 5
+We also offer MetaTrader 5 ,
+one of the most popular retail trading platforms in the market.
+Demo credentials:
+Account: 123456
+Password: 7cZy-gEo
+Server: RLCrates-Live
+Crypto Fund Trader also offers access through Bybit . To use Bybit,
+you must create and use your own personal Bybit account. You do not need to complete KYC on Bybit to use it
+for your Crypto Fund Trader evaluation.
+What leverage is available?
+Leverage depends on the account type and the trading platform selected.
+BYBIT ACCOUNTS:
+Leverage is available up to 1:100, depending on the instrument and the conditions provided by Bybit.
+ADVANCED ACCOUNTS (Match-Trader & MetaTrader 5):
+Forex: 1:100 leverage
+Commodities: 1:100 leverage
+Indices: 1:100 leverage
+Cryptos: 1:100 leverage
+Stocks: 1:100 leverage
+STUDENT ACCOUNTS (CFT Platform & MetaTrader 5):
+Forex: 1:30 leverage
+Commodities: 1:30 leverage
+Indices: 1:20 leverage
+Cryptos: 1:5 leverage
+Stocks: 1:5 leverage
+What are the spreads?
+Crypto Fund Trader offers competitive spreads, with examples such as EUR/USD from 0 pips and BTC/USDT from
+1 pip.
+You can check the available spreads at any time directly through Match-Trader, MetaTrader 5, or Bybit using
+the demo access below.
+Match-Trader Demo Credentials:
+Email: demo@cryptofundtrader.com
+Password: DemoCFT1
+MetaTrader 5 Demo credentials:
+Account: 123456
+Password: 7cZy-gEo
+Server: RLCrates-Live
+BYBIT platform
+On Bybit, spreads and slippage depend entirely on Bybit’s liquidity and market conditions.
+Crypto Fund Trader does not add any markup, artificial spread, or fictitious slippage to the provider’s
+price.
+What are the commissions?
+Crypto Fund Trader offers competitive commissions depending on the platform and instrument traded.
+Bybit platform:
+For evaluations carried out through Bybit, traders are subject to Bybit’s native trading fee structure.
+These are market fees that may vary depending on the trading pair, maker/taker classification, and volume
+tier.
+Crypto Fund Trader has no control over these fees and does not apply any additional markup.
+Match-Trader & MetaTrader 5:
+Crypto: 0.0325% per side
+Commodities: 0.0005% per side
+Stocks: 0.002% per side
+Forex: $2.5 per lot per side
+Indices: 0.005% per lot per side
+Are swap fees charged?
+Yes. Swap fees may apply to CFD positions that remain open overnight on Match-Trader and MetaTrader 5.
+Swap fees are charged on trades open at 00:00 UTC on MetaTrader 5 and 22:00 UTC on Match-Trader.
+Bybit
+Bybit does not use traditional CFD swap fees. Instead, positions may be subject to funding rates, depending
+on the market and whether the trader holds a long or short position.
+Funding rates are determined by Bybit and may vary over time. Crypto Fund Trader does not control or add
+any markup to Bybit funding rates.
+Swap calculation — percentage per year
+Formula:
+(Lot × Long or Short / 100 / 360) × Open Price
+Example for 1 lot BTCUSD:
+(1 × -5 / 100 / 360) × 24,484.24 = -$3.40
+Swap calculation — points
+Formula:
+Lot × Long or Short × Contract Size × Quote Precision
+Example for 2 lots XAGUSD:
+2 × -35.673 × 100 × 0.01 = -$71.35
+Can I trade news?
+Yes. News trading is allowed. We want traders to have the freedom to trade using their own strategy and
+style.
+Can I trade on the weekends?
+Cryptocurrency markets are open 24 hours a day, 7 days a week.
+Forex markets are open 24 hours a day from Monday to Friday.
+Commodities, indices, and stocks follow their own trading schedules. You can check the schedule of each
+instrument directly inside the trading platform by clicking on the asset’s “Info” section.
+Do you allow overnight and weekend positions?
+Yes. Traders are allowed to keep positions open overnight and over the weekend, regardless of the account
+type or instrument.
+This allows traders to use swing trading strategies if they choose to do so.
+What strategies are allowed?
+We believe trader freedom is important, so most trading strategies are allowed as long as proper risk
+management is maintained and all program rules are followed.
+However, exploitative or unrealistic strategies are not allowed. This includes, but is not limited to,
+high-frequency trading, tick scalping, latency arbitrage, or any strategy that does not reflect real market
+trading conditions.
+We also do not allow gambling-style trading, all-in trading, abusive hedging, or any trading behavior that
+shows a lack of proper risk management.
+Is there a maximum lot size?
+There is no fixed maximum lot size. The maximum position size depends on your account’s available margin
+and leverage.
+Final stage account
+How are rewards structured in the final stage?
+Traders who reach the final stage may become eligible to receive performance-based rewards based on their
+simulated trading results.
+Rewards are calculated according to the rules of the selected program and are only available to traders who
+continue to comply with all program requirements.
+All trading takes place in a simulated environment. Rewards are based on simulated performance and do not
+represent actual market profits, investment returns, or real financial exposure.
+What is the maximum allocation per user?
+The maximum simulated funded allocation per user is $300,000.
+This means that the total starting balance of all active final stage accounts under the same user must not
+exceed $300,000.
+Profits generated in final stage accounts do not count toward this allocation limit and may cause the
+account balance to exceed $300,000.
+There is no limit on the number of evaluations a user can purchase or have active at the same time, as long
+as the maximum final stage allocation limit is respected.
+Ascend Accounts, Instant Accounts and Break Accounts are not included in this allocation limit, as they
+have their own separate limits.
+What scholarship payment methods are available?
+Payment methods:
+Directly via bank transfer in EUR or USD .
+Transfer directly to crypto wallet in these available currencies:
+USDT (ERC20)
+USDT (TRC20)
+Bitcoin (BTC)
+Ethereum (ETH)
+Do I need to complete KYC?
+Yes. Before any scholarship reward can be processed, your KYC must be completed and approved.
+You can complete your KYC from your dashboard, in the Withdrawals section, after you reach a simulated
+funded account, complete an Ascend Challenge, or hold an Instant Account.
+To complete KYC, you must sign the required contract and pass the verification process. You will be asked
+to provide one proof of identity document and one proof of address document.
+Accepted proof of identity documents include: Passport, Driving license, National ID document, or Residence
+permit.
+Accepted proof of address documents include: Tax bill, Utility bill, Bank statement, Credit card statement,
+Bank reference letter, Mortgage statement or contract, Lease agreement, Car or home insurance policy, Car
+registration document, Letter of employment, Company payslip, Official letter from an educational
+institution, or Letter issued by a public authority.
+Proof of address documents must clearly show your full name, address, and issue date.
+How can I request my scholarship reward?
+You can request a scholarship reward after trading for at least 15 days, or alternatively, every 30
+calendar days, as long as no program rules have been violated.
+There is no maximum number of trading days in the final stage account.
+If you have the Weekly Payouts add-on, you can request a scholarship reward every 7 traded days, as long as
+all program requirements are met.
+For 1-Step accounts (Classic, Pro and Turbo), you can request a scholarship reward every 7 traded days by default. With the 48h Payout add-on, you can request it every 2 traded days.
+To submit a request, you must do so directly from your dashboard.
+Before your scholarship reward can be processed, your KYC must be completed and approved.
+After submitting your request, you will receive an email asking for the payment details needed to process
+your scholarship reward.
+All trades must be closed before submitting a scholarship reward request. If any trades remain open, they
+may be manually closed.
+For account types offered as part of special promotions or special product lines, please refer to their
+dedicated FAQ section. This includes Break, Instant, and Ascend accounts.
+How long does it take to receive my scholarship reward?
+Our average processing time for scholarship reward payments is approximately 8 hours. However, our team may
+take up to 48 business hours to review the request, verify the information, and send the payment.
+Once the payment has been sent, the time it takes to receive the funds may depend on the selected payment
+method and provider.
+Is there any minimum or maximum trading days in final stage account?
+There is no maximum number of trading days in the final stage account. The minimum number of traded days
+required to request a scholarship reward is 15 days, or alternatively, every 30 calendar days.
+For 1-Step accounts, the minimum is 7 traded days by default, or 2 traded days with the 48h Payout add-on.
+What happens to my simulated profits if my final stage account is suspended?
+If your final stage account is suspended while it has simulated profits, you may still be eligible to
+receive a performance-based scholarship reward of up to 50%, as long as all required conditions are met.
+This applies only to Final Stage accounts under the 1-Step, former 1-Phase and 2-Phase evaluation types.
+To be eligible for this review:
+All trades on the final stage account must have had a Stop Loss.
+No individual trade may have exceeded 2% risk of the account size.
+You must have traded for at least 15 days.
+If these conditions are met, you have up to 7 calendar days after the rule violation to request a 50%
+performance reward review from the suspended final stage account.
+Can I reset my final stage account after breaking a rule?
+If your final stage account has been suspended, you may be eligible to purchase a reset account if your
+trading activity meets the following criteria:
+All trades on the final stage account must have had a Stop Loss.
+No individual trade may have exceeded 2% risk of the account size.
+Both criteria must be met to qualify for a reset account. If eligible, you have up to 30 calendar days
+after the rule violation to request the reset. This feature applies only to Final Stage accounts under the
+1-Step, former 1-Phase and 2-Phase evaluation types.
+The reset account price depends on the account size and evaluation type selected.
+2-Phase Reset Account Prices
+$5,000 2-phase reset account – $180.
+$10,000 2-phase reset account – $345.
+$25,000 2-phase reset account – $760.
+$50,000 2-phase reset account – $1140.
+$100,000 2-phase reset account – $1880.
+$200,000 2-phase reset account – $3620.
+Former 1-Phase Reset Account Prices
+$5,000 1-phase reset account – $198.
+$10,000 1-phase reset account – $380.
+$25,000 1-phase reset account – $840.
+$50,000 1-phase reset account – $1255.
+$100,000 1-phase reset account – $2079.
+$200,000 1-phase reset account – $3980.
+1-Step Classic Reset Account Prices
+$5,000 1-Step Classic reset account – $229.
+$10,000 1-Step Classic reset account – $419.
+$25,000 1-Step Classic reset account – $999.
+$50,000 1-Step Classic reset account – $1799.
+$100,000 1-Step Classic reset account – $2999.
+$200,000 1-Step Classic reset account – $5999.
+1-Step Pro Reset Account Prices
+$5,000 1-Step Pro reset account – $149.
+$10,000 1-Step Pro reset account – $299.
+$25,000 1-Step Pro reset account – $649.
+$50,000 1-Step Pro reset account – $1249.
+$100,000 1-Step Pro reset account – $2299.
+$200,000 1-Step Pro reset account – $3999.
+1-Step Turbo Reset Account Prices
+$5,000 1-Step Turbo reset account – $95.
+$10,000 1-Step Turbo reset account – $179.
+$25,000 1-Step Turbo reset account – $435.
+$50,000 1-Step Turbo reset account – $879.
+$100,000 1-Step Turbo reset account – $1499.
+$200,000 1-Step Turbo reset account – $2599.
+Evaluation rules
+ALL PHASES/FUNDED ACCOUNT
+Reverse Trading Rule
+Reverse trading is not allowed when opposite positions are opened at the same time for 60 seconds or
+longer.
+If you open a SELL position and want to trade in the opposite direction with a BUY, you must first close
+all open SELL positions before opening the BUY trade.
+Opposite trades on different pairs, such as ETH/USD and BTC/USD, are allowed.
+Opposite trades on the same asset with different quote currencies, such as BTC/USD and BTC/EUR, are not
+allowed.
+Opposite trades across different accounts are not allowed.
+Hedging between two or more accounts controlled by the same user is not allowed, even if the accounts are
+registered under different email addresses.
+You may open an opposite trade on the same instrument only if the first trade has been open for at least 24
+hours.
+Gambling / All-In Trading Rule
+Crypto Fund Trader does not allow gambling-style trading or all-in trading behavior.
+The maximum simulated profit allowed per day and/or per trade is $10,000. If the account equity reaches
+more than $10,000 in simulated profit in a single day and/or from a single trade, any active trades may be
+closed, and any amount above the $10,000 limit may be deducted.
+The daily profit difference is calculated based on the simulated account balance at 12:10 AM UTC.
+Trades closed in multiple parts, or multiple trades opened around the same time as part of the same
+strategy, may be considered a single trade for the purpose of this rule.
+BYBIT RULES
+Adding extra funds to the sub-account
+Adding extra funds to the assigned Bybit sub-account is not allowed.
+Any unauthorized deposit, transfer, or addition of funds to the sub-account may result in account
+suspension.
+Disconnecting or modifying the API
+Disconnecting, modifying, altering, or interfering with the assigned API connection is strictly prohibited.
+Any attempt to disconnect or modify the API connection may result in immediate account suspension.
+Spot trading
+Spot trading on the Bybit sub-account is strictly prohibited.
+Any spot trading activity may result in account suspension.
+USDT pairs only
+Only USDT trading pairs are allowed on Bybit accounts.
+Trades placed on USDC pairs will not be counted toward the account’s simulated profit or evaluation
+results.
+PROHIBITED EA TYPES
+High-Frequency Trading
+High-frequency trading is not allowed. This includes using programs, algorithms, bots, or automated systems
+to execute a large number of trades within very short periods of time.
+Crypto Fund Trader does not allow strategies that rely on extremely fast execution, excessive order volume,
+or trading activity that does not reflect normal market conditions.
+Tick scalping
+Tick scalping is not allowed. This includes any strategy that opens and closes trades extremely quickly,
+especially when placing a large number of trades in a short period of time to capture small price movements.
+Tick scalping is prohibited whether performed manually or through an Expert Advisor, bot, script, or
+automated system.
+Arbitrage
+Arbitrage strategies are not allowed. This includes the use of bots, Expert Advisors, or automated systems
+designed to take advantage of the simulated trading environment, pricing delays, execution differences,
+latency, or any other condition that does not reflect normal market trading.
+Prohibited strategies include, but are not limited to, news scalping EAs, arbitrage EAs, multi-account
+reverse trading EAs, or any similar system designed to exploit the platform or data feed.
+Last updates faq
+BYBIT PLATFORM
+How to create an account and connect the API key
+To participate in the evaluation through Bybit, users must create a personal Bybit account at here . Once registered,
+an
+API Key must be generated and connected to the Crypto Fund Trader dashboard. Full instructions are provided
+during the onboarding. The API Key must remain active and unchanged throughout the entire evaluation period.
+Which countries are allowed?
+Crypto Fund Trader does not apply any additional country restrictions to users who choose to complete their
+evaluation through Bybit.
+However, all traders must use their own personal Bybit account and are fully responsible for complying with
+Bybit’s Terms of Service, jurisdictional restrictions, and any rules that may apply in their country of
+residence.
+Traders who use Bybit do so at their own discretion and risk. Crypto Fund Trader is not responsible for any
+breach of Bybit’s terms or for any action taken by Bybit against the user’s account.
+Which instruments can be traded?
+You can trade more than 550 crypto futures pairs on Bybit.
+During the evaluation, only USDT crypto futures contracts are allowed. Spot trading, options trading, USDC
+pairs, or any other unsupported instruments are prohibited.
+Important information about API keys
+Once an API Key and sub-account are connected to the evaluation, they must not be edited, deleted, or
+replaced. Doing so will result in the automatic invalidation of the evaluation account. In case the API Key
+expires, the account will be paused and marked as “pending” until a new valid key is provided and approved.
+Is KYC required on Bybit?
+KYC is not required to participate in the evaluation with demo capital. However, each
+participant is responsible for complying with Bybit’s policies. Crypto Fund Trader does not enforce or
+bypass any KYC requirements imposed by the platform.
+What are the trading fees?
+Trading fees on Bybit evaluations depend on the conditions of each user’s connected master
+account .
+Fees vary based on trading pair, maker/taker status, and volume tier.
+Review the full fee structure directly on Bybit at the following link .
+What is the available leverage?
+Bybit evaluations offer leverage of up to 1:100. The available leverage may depend on the instrument traded
+and the conditions provided by Bybit.
+1-STEP EVALUATIONS
+What are the 1-Step Evaluations?
+The 1-Step Evaluations (Classic, Pro and Turbo) are single-phase evaluations with no time limit, available from $5,000 to $200,000. You pass the evaluation once you reach the profit target of your modality without breaching any rule. They replace the former 1-Phase and Instant Evaluations.
+What are the rules of each 1-Step Evaluation?
+1-Step Classic: 3% daily loss · 6% max loss · 10% profit target
+1-Step Pro: 3% daily loss · 5% max loss · 12% profit target
+1-Step Turbo: 3% daily loss · 3% max loss · 9% profit target
+The maximum loss is static and fixed on the initial balance; it does not trail. Daily loss is calculated on the balance at 12:05 AM UTC, as in the 2-Phase Evaluation.
+What is the maximum allocation in the 1-Step Evaluation?
+1-Step accounts are included in the standard maximum allocation of $300,000 per user, together with 2-Phase and former 1-Phase Final Stage accounts.
+What leverage is available in the 1-Step Evaluation?
+$5,000, $10,000 and $25,000 accounts are Student accounts. $50,000, $100,000 and $200,000 accounts are Advanced accounts.
+Check the account types here .
+How can I request a scholarship reward?
+You can request a scholarship reward every 7 traded days by default, or every 2 traded days with the 48h Payout add-on, as long as no program rules have been violated.
+To submit a request, you must do so directly from your dashboard.
+Before your scholarship reward can be processed, your KYC must be completed and approved.
+All trades must be closed before submitting a scholarship reward request. If any trades remain open, they may be manually closed.
+Can I reset my 1-Step Final Stage account?
+Yes. 1-Step Final Stage accounts can be reset under the same conditions as other evaluations. Check the reset criteria and prices in the Final Stage Account section.
+Which add-ons are available?
+48h Payout (+20%), available exclusively for 1-Step evaluations, and 90% Bonus Performance (+20%). Drawdown add-ons and the Weekly Scholarship Request are not available for 1-Step evaluations, since scholarship requests every 7 traded days are already included by default.
+BREAK EVALUATION
+What is the maximum allocation in the Break Evaluation?
+For Break accounts, traders are not allowed to hold more than five (5) Final Stage accounts at the same
+time, regardless of the account size.
+Accounts that are still in the Evaluation phase are not subject to this limit.
+What leverage is available in the Break Evaluation?
+All Break accounts have a leverage of 1:100, regardless of the asset class traded, account size, or
+platform used.
+What is the Break Trailing Loss Limit?
+The Trailing Loss Limit applies during both the Break Evaluation and the Break Final Stage.
+For $25,000 and $50,000 Break accounts, traders must not register losses in any open or closed demo trades
+which, in total, exceed 4% of the highest demo account balance reached.
+For $100,000 Break accounts, traders must not register losses in any open or closed demo trades which, in
+total, exceed 3% of the highest demo account balance reached.
+If the applicable Trailing Loss Limit is exceeded at any time, the account may be considered to have
+breached the applicable trading rules.
+What is the Consistency Rule?
+The Consistency Rule applies only to Break Final Stage accounts.
+No single trading day may account for more than 40% of the total profits generated on the account.
+When you request a scholarship reward, we review the account to ensure that no single day’s profit
+represents more than 40% of your total profits to date.
+For example, if your total profit is $5,000, your best trading day can be a maximum of $2,000. If one
+trading day exceeds this amount, you will need to continue trading until your profits are more evenly
+distributed before submitting a new request.
+The Consistency Rule is checked only when a scholarship reward request is submitted. It does not prevent
+you from continuing to trade.
+What is the Break Activation Fee?
+The Break Activation Fee is paid after successfully completing the Break Evaluation in order to proceed to
+the Break Final Stage.
+Once you complete the Break Evaluation without breaching any applicable rules, your account and trading
+activity will be manually reviewed by our team. If all applicable conditions and rules have been met, the
+option to pay the Activation Fee may become available through your personal dashboard.
+The applicable Activation Fees are:
+$25,000 Break account: $138
+$50,000 Break account: $198
+$100,000 Break account: $328
+How can I request a scholarship reward on Break accounts?
+Break accounts offer payouts on demand once the trader has successfully passed the Evaluation phase, paid
+the applicable Activation Fee, and moved to the Final Stage, provided that no program rules have been
+violated.
+There is no minimum number of traded days required to request a scholarship reward on Break accounts.
+Traders must also comply with the Consistency Rule before submitting a scholarship reward request.
+Requests must be submitted directly from the trader’s dashboard, where payment details can also be
+provided.
+Before a scholarship reward can be processed, KYC must be completed and approved.
+All trades must be closed before submitting a scholarship reward request. If any trades remain open, they
+may be manually closed.
+Is copy trading allowed in Break accounts?
+Yes, but only during the Evaluation phase and only between the trader’s own Break accounts.
+Copy trading between different traders, third parties, groups, or unrelated accounts is prohibited. This
+includes coordinated or mirrored trading activity, such as similar entries, exits, instruments, trade
+direction, timing, or position sizing that cannot reasonably be attributed to coincidence.
+Copy trading or coordinated activity is not allowed in the Final Stage.
+ASCEND EVALUATION
+What is the maximum allocation in the Ascend Evaluation?
+Ascend Evaluation accounts are not included in the standard maximum allocation limit that applies to other
+account types.
+This means that your Ascend allocation is calculated separately from any other accounts you may have.
+However, the maximum simulated profit limit per day and/or per trade still applies.
+What leverage is available in the Ascend Evaluation?
+Ascend Evaluation accounts have the following leverage:
+Forex: 1:30 leverage
+Commodities: 1:30 leverage
+Indices: 1:20 leverage
+Cryptos: 1:5 leverage
+Stocks: 1:5 leverage
+How can I request a scholarship reward?
+If you have an Ascend account, you can request a scholarship reward once you complete the Phase 2 profit
+target. No additional profit percentage is required.
+The value of each scholarship reward depends on the Ascend Evaluation selected.
+Once the Phase 2 profit target is completed, the account will be closed and converted into a redeemable
+ticket, which will be available in your dashboard under the Withdrawals section.
+If your KYC has been completed and approved, you will be able to redeem the ticket and request your
+scholarship reward.
+Is copy trading allowed in Ascend accounts?
+No. Copy trading between Ascend accounts is prohibited.
+This includes coordinated or mirrored trading activity, such as similar entries, exits, instruments, trade
+direction, timing, or position sizing that cannot reasonably be attributed to coincidence.
+If copy trading or coordinated activity is detected, Crypto Fund Trader may withhold or revoke the
+redeemable ticket, restart or cancel the evaluation, or take action based on internal data and evidence.
+News trading rule
+In the Ascend Evaluation, you cannot open new trades or increase your risk during high-impact news events
+or market openings.
+This restriction applies from 2 minutes before until 2 minutes after the event.
+During this time, you cannot open new positions, add volume to existing positions, or risk more than 2% of
+the account’s initial balance.
+Breaking this rule may result in account suspension.
+3 PHASES EVALUATION
+How are the daily and overall maximum loss limits calculated?
+Drawdown breaches are calculated based on equity.
+The daily maximum loss is 5% and is calculated based on your account balance at 12:05 AM UTC each day.
+The maximum overall loss is fixed at 5% of the initial account balance.
+The account will be considered breached if your equity falls below any of these limits.
+What leverage is available in the 3-Phase Evaluation?
+The leverage available in the 3-Phase Evaluation depends on whether you select an Advanced Account or a
+Student Account.
+ADVANCED ACCOUNTS:
+Forex: 1:100 leverage
+Commodities: 1:100 leverage
+Indices: 1:100 leverage
+Cryptos: 1:100 leverage
+Stocks: 1:100 leverage
+STUDENT ACCOUNTS:
+Forex: 1:30 leverage
+Commodities: 1:30 leverage
+Indices: 1:20 leverage
+Cryptos: 1:5 leverage
+Stocks: 1:5 leverage
+How can I request a scholarship reward?
+For the 3-Phase Evaluation, you can request your first scholarship reward after only 5 traded days, as long
+as no program rules have been violated.
+After your first request, you can request a scholarship reward after trading for at least 15 days, or
+alternatively, every 30 calendar days.
+To submit a request, you must do so directly from your dashboard .
+Before your scholarship reward can be processed, your KYC must be completed and approved.
+After submitting your request, you will receive an email asking for the payment details needed to process
+your scholarship reward.
+All trades must be closed before submitting a scholarship reward request. If any trades remain open, they
+may be manually closed.
+INSTANT EVALUATION
+The Instant Evaluation is no longer available for purchase. The information below applies to existing Instant accounts.
+What is the maximum allocation per user?
+Instant Evaluation accounts are not included in the standard maximum allocation limit that applies to other
+account types.
+This means that your Instant Evaluation allocation is calculated separately from any other accounts you may
+have.
+However, each user can only have up to three active Instant Evaluation accounts at the same time.
+What leverage is available in Instant Accounts?
+Instant Accounts have the following leverage:
+Forex: 1:30 leverage
+Commodities: 1:30 leverage
+Indices: 1:20 leverage
+Cryptos: 1:5 leverage
+Stocks: 1:5 leverage
+How can I request a scholarship reward & upgrade my Instant Account?
+If you have an Instant Account, you can request a Withdrawal & Upgrade once your account reaches 10%
+simulated profit. There is no minimum trading days requirement for this option.
+When you request a Withdrawal & Upgrade, your scholarship reward will be processed and your Instant
+Account
+will be upgraded to the next phase.
+If you want to request a scholarship reward before reaching 10% simulated profit, you may do so under the
+same conditions as other evaluations.
+How much can I scale my Instant Account?
+You can scale your Instant Account up to $1,280,000.
+Every time your account reaches 10% simulated profit and you request the “Withdrawal & Upgrade” from
+the
+dashboard, your account will double in demo size.
+You can find this information when selecting your preferred account in the “SCALE UP STRUCTURE” section.
+ADD-ONS
+What are add-ons and how do they work?
+Add-ons are optional features that can be added to your evaluation before purchase. They allow traders to
+customize certain conditions of their selected program.
+Available add-ons for 2-Phase Evaluations:
+– Weekly Scholarship Request: This add-on costs 20% of the evaluation price and allows traders to request a
+scholarship reward after 7 traded days.
+– 90% Bonus Performance: This add-on costs 20% of the evaluation price and increases the trader’s
+eligibility to receive up to 90% of the performance-based scholarship reward.
+– Daily Drawdown 6%: This add-on costs 15% of the evaluation price and increases the daily loss limit to
+6%.
+– Max Drawdown 12%: This add-on costs 25% of the evaluation price and increases the maximum loss limit to
+12%.
+Available add-ons for 1-Step Evaluations (Classic, Pro, Turbo):
+48h Payout: This add-on costs 20% of the evaluation price and allows traders to request a scholarship reward every 2 traded days. Available exclusively for 1-Step evaluations.
+90% Bonus Performance: This add-on costs 20% of the evaluation price and increases the trader's eligibility to receive up to 90% of the performance-based scholarship reward.
+1-Step evaluations include scholarship requests every 7 traded days by default.
+Can I purchase multiple evaluations with add-ons?
+Yes. You can purchase multiple evaluations with add-ons in the same order.
+The final price will be calculated based on the total price of the selected evaluations and add-ons. Each
+account will be created with the add-ons selected during purchase.
+If your cart includes a 1-Step Evaluation, drawdown add-ons and the Weekly Scholarship Request will not be available for that evaluation.
+Get in touch!
+CRYPTO FUND TRADER IS AN EVALUATION FIRM WHERE WE BOOST THE BEST
+TRADERS IN ADDITION TO TESTING THEIR QUALITIES.
+support@cryptofundtrader.com
+FAQ
+Terms and Conditions
+Refund Policy
+Proof of Scholarship
+Affiliate Partner
+Theory Tools
+Blog
+CFT x Bybit
+Choose your challenge
+Free tournaments
+Match-Trader Platform
+MT5 Web Terminal
+BYBIT Platform
+Contact us
+Cookies
+“KYC Audit”
+Privacy Policy
+Bahnhofstrasse 21, 6300, Zug, Switzerland
+SWISS RLCRATES AG (CHE-162.567.204)
+Crypto Fund Trader © 2026 All Rights Reserved.
+SWISS RLCRATES AG is a provider of educational services, all information available on our
+site is intended solely for the study purposes related to trading on financial markets. Accordingly, we do not
+offer financial, investment, tax, brokerage or other advice and/or services. Trading in financial markets is a
+high-risk activity, past performance do not guarantee future ones. It is highly advised not to risk more, than
+you can afford to lose. Brokers and operators of trading platforms are persons or entities that are separate
+from SWISS RLCRATES AG and their own terms and conditions will apply when you use their services and products.
+Neither SWISS RLCRATES AG nor RLCRATES, S.L. (the company that provides services with MT5) operate in countries
+where crypto or CFD’s activity is not allowed. The content in our platform is applicable to the extent local
+laws and/or regulations permit. SWISS RLCRATES AG acts as a payment/marketing agent for RLCRATES SL.
+SWISS RLCRATES AG is not authorized or licensed in Switzerland and does not offer any trading services with MT5
+neither conducts any regulated activities.

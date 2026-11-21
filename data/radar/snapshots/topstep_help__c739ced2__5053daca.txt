@@ -1,0 +1,102 @@
+Getting Started with the Topstep Dashboard | Topstep Help Center Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Skip to main content
+Discord Topstep TopstepTV
+Discord Topstep TopstepTV
+Search for articles...
+All Collections
+Getting Started
+Getting Started with the Topstep Dashboard
+Getting Started with the Topstep Dashboard
+Your command center for tracking progress, managing accounts, and handling Payouts and Resets — all in real time
+September 23, 2026
+Table of contents
+The Basics
+One place. Everything in real time. The Dashboard is where you track progress, manage accounts, and handle Payouts and Resets — the moment you need to. To get started, sign up here .
+What You Can Do on the Dashboard
+Instant Express Funded Account® (XFA) Activation — Hit your Profit Target and activate your XFA in real time.
+Payout Tracker & Instant Deductions — Monitor Payout requests in real time. Amounts deduct instantly so you can get back to trading.
+Resets Extend Rebill Dates — Each Reset adds 30 days to your rebill date.
+Performance Stats — Real-time trading progress and metrics.
+Account & Profile Management — Manage Resets, rebill dates, and Payouts in one place.
+IDV & Funded Trader Certificates — Submit IDV documents and view funded certificates and Payout statuses directly in the platform.
+Training Camp — Learn the basics of Futures trading in Training Camp through a series of interactive lessons.
+Set up your Trader Profile and refer a friend!
+How does the Reset Bank work?
+Every Trading Combine® Rebill adds 1 Reset Credit to your Reset Bank. Credits are tied to a specific account size and path (Standard, Daily Loss Limit, or No Activation Fee) and expire 1 year after issue.
+👉 Your Dashboard shows: how many Reset Credits you have, which sizes and paths they apply to, and expiration dates. The system always applies the oldest matching Reset Credit first.
+How to Apply a Reset
+Log into your Topstep Dashboard.
+Select the active Trading Combine® you want to Reset.
+Click Reset .
+If you have eligible Reset Credits, you'll see how many apply.
+Confirm the Reset.
+No eligible Reset Credit? You can purchase one directly for that account size and path.
+Changing Your Email Address
+To update your email, contact Trader Support with:
+Your Topstep username
+Last 4 digits of the card on file
+This verifies your identity so we can process the request quickly. Review our Single Profile Policy below before reaching out.
+Please note: this process covers email address updates only; it does not apply to converting a Google/social login to an email login, which is not currently supported.
+Changing Your Name
+Minor typos or errors in your legal name? Trader Support can correct those.
+We cannot update a profile to reflect a completely different name, and we cannot transfer profiles between individuals. Contact Trader Support to get started.
+Single Profile Policy
+Each Trader is permitted one Topstep profile . Multiple profiles violate our Terms of Use and may result in:
+Profiles or Trading Combines® closed without warning
+Temporary or permanent account suspension
+Do not create a new profile when purchasing additional Trading Combines®. All accounts must live under a single profile. Profiles cannot be transferred between individuals.
+Set up your Trader Profile
+Your Trader Profile is a public facing page where you can show who you are and share your trading journey. It's optional, and it has no effect on your Trading Combine®, funded account, or Payouts.
+Where to find it: Dashboard → Profile → Public Trader Profile.
+What you can show:
+Avatar, background, and a custom handle
+Location, bio, and time with Topstep
+Discord handle (X, Reddit, and Instagram coming soon)
+Trading preferences, badges, Proof of Payouts, stats, and Profit Calendar
+Nothing displays by default. Every section has its own toggle, so you choose what's visible and when.
+⚠️ Your handle is permanent. Pick carefully: it can't be changed after you set it. Handles are 6 to 16 characters, no numbers, special characters, or spaces.
+Trader Profile: Referral Codes
+Every Trader with an active Trader Profile can generate a referral code. Anyone new to Topstep who enters it at checkout gets 15% off their first account purchase. Once that purchase completes, the referrer gets a 15% reward discount code by email for a purchase of their own. Learn more about Referral Codes here .
+Trader Profiles FAQs
+Who can create a Trader Profile?
+All active Topstep Traders. Practice Accounts won't show up in the list of accounts you can select for your profile.
+Who can see my profile?
+Only people you share your link with. Profiles live at social.topstep.com with a unique URL and aren't discoverable on the public web.
+Will my dollar amounts be public?
+Only if you turn on All-Time Payouts, Proof of Payouts, Trading Stats, or Profit Calendar. Those show real dollar amounts and are optional.
+Can I edit, hide, or delete my profile?
+Yes, any time. Changes to your sharing preferences take effect within seconds. Your handle is the 1 thing you can't change.
+Can I have more than 1 profile?
+No. 1 profile per Trader account and email.
+Can I edit my stats?
+No. Stats pull from Topstep data for accuracy. You only choose whether to display them.
+What happens to my profile if my account closes?
+It stays as is. You can hide or delete it any time, regardless of account status.
+Go through Training Camp
+Training Camp is a guided practice mode inside your Topstep Dashboard that teaches Trading fundamentals and builds confidence. You have access to this before you even buy a Trading Combine!
+Related Articles
+Topstep Learning
+Am I Eligible to Trade with Topstep?
+Topstep® Refund Policies
+New to Topstep? Start here.
+Topstep Labs
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Your Privacy Choices

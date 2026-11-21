@@ -1,0 +1,60 @@
+LucidPro Daily Loss Limit | Lucid Trading Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Lucid Home
+Lucid Home
+Search for articles...
+All Collections
+LucidPro
+LucidPro Daily Loss Limit
+LucidPro Daily Loss Limit
+A
+Written by AJ
+July 26, 2026
+Table of contents
+Daily Loss Limit
+The Daily Loss Limit (DLL) is the maximum amount a trader can lose in a single day before trading is restricted until the next session. All DLLs at Lucid Trading are considered soft breaches, meaning you do not lose your account for hitting DLL as long as the Max Loss Limit (MLL) has not been reached.
+LucidPro Evaluation Account DLL
+LucidPro Evaluation accounts use a Fixed DLL that does not change over time.
+Account Size
+Fixed DLL Amount
+$25,000
+None
+$50,000
+$1,200
+$100,000
+$1,800
+$150,000
+$2,700
+If you reach the DLL listed for your account size, you will be restricted from placing additional trades until the next trading session, provided your account has not been liquidated.
+LucidPro Funded Account DLL
+LucidPro Funded accounts begin with the same Fixed DLL values used in the evaluation, as long as the balance remains below the Initial Trail Balance.
+Account Size
+Fixed DLL
+Initial Trail Balance
+$25,000
+None
+$26,100
+$50,000
+$1,200
+$52,100
+$100,000
+$1,800
+$103,100
+$150,000
+$2,700
+$154,600
+Once the account closes above the Initial Trail Balance, the Fixed DLL is replaced by the LucidScale DLL.
+LucidScale DLL Formula:
+Highest end-of-day account profit × 60% = LucidScale DLL
+The LucidScale DLL increases as your account grows
+It does not decrease, even if the account draws down
+This provides greater flexibility and reward for consistent profitability
+Example:
+If your highest end-of-day profit is $4,000, then:
+$4,000 × 0.60 = $2,400
+Your new DLL will be $2,400 until a higher end-of-day profit is achieved
+The LucidScale DLL was designed to promote long-term success and reflects Lucid Trading’s commitment to trader-friendly rules and risk management.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Lucid Trading Help Center

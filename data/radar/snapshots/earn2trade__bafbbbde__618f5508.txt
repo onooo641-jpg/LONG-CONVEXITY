@@ -1,0 +1,42 @@
+How Does "End of Day Drawdown" Work? | Earn2Trade Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Poppins".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Poppins".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+العربية English Français Português Español English
+العربية English Français Português Español English
+Search for articles...
+All Collections
+Rules
+Drawdown-related rules
+How Does "End of Day Drawdown" Work?
+How Does "End of Day Drawdown" Work?
+Written by Francis
+February 1, 2022
+Table of contents
+The Trader Career Path and Gauntlet Mini™ evaluations calculate drawdown based on the end of the day balance of the trading account. The drawdown is pegged to your positive account performance and is adjusted at the end of the day and updated after market close. That means if you increase your profit by $1.00, then your minimum account balance will also rise by $1.00.
+Example:
+The account size is $100.000, with a Maximum Drawdown of $3500. When the account is opened with these parameters, the minimum account balance is $96,500.
+Day 1
+After the first day of trading during which the account balance fluctuates between winning and losing trades, at the end of the day, your account balance stops at $102,000. Earn2Trade will adjust your minimum account balance to $98,500.
+Day 2
+On the second day, your account balance at the end of the day is $101,000. The minimum account balance is unchanged at $98,500.
+Day 3
+On the third trading day, the account balance at the end of the day is at $103,000. Your new minimum account balance is adjusted to $99,500.
+This continues until your Maximum Drawdown reaches the starting balance of your account, or in this case, $100,000, at which point it will no longer rise.
+Notes:
+The minimum account balance is only adjusted at the end of the trading day.
+Traders must be aware that open equity losses are taken into consideration when calculating whether or not the account failed on this rule. This means that if an open position dips your account balance below the minimum account balance, your evaluation attempt will fail.
+Disclaimer
+Rithmic processes the regularly uploaded minimum account balance every day, during the 4-5pm CT market close. The change will not take effect until these are processed. In case there is a delay in processing, we advise traders to look at the dashboard and Rithmic Trader Pro's Auto Liquidate Threshold column. If the two are not in sync, please make sure to wait until they are in sync.
+Earn2Trade reserves the right to review and revise the minimum account balance. Earn2Trade advises traders to also track their own trading account history.
+Related Articles
+What is a Trailing Drawdown?
+What Assets Can I Trade?
+How to Connect Rithmic to Bookmap?
+Drawdown types
+What is a Fixed Drawdown?
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+The Trader Career Path
+The Gauntlet Mini™
+Beginner Crash Course
+Risk Disclaimer

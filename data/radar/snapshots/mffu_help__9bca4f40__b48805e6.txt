@@ -1,0 +1,40 @@
+NinjaTrader: Login Instructions | My Funded Futures Help Center Skip to main content
+Go to website Discord YouTube English हिन्दी Español English
+Go to website Discord YouTube English हिन्दी Español English
+Search for articles...
+All Collections
+Trading Platforms
+NinjaTrader: Login Instructions
+NinjaTrader: Login Instructions
+NinjaTrader Download and Connection Guide
+August 24, 2026
+Table of contents
+If this is your first time logging in to NinjaTrader , follow these steps:
+Go to https://account.ninjatrader.com
+Enter your login details, which can be found on your MFFU Dashboard .
+Select your preferred trading platform
+NinjaTrader Desktop Setup
+If you choose to trade on NinjaTrader Desktop, follow these steps to set up your MyFundedFutures connection:
+Launch NinjaTrader Desktop.
+Enter your login credentials, available on your MFFU dashboard.
+You’re now logged in! Now let’s connect to NinjaTrader.
+Click connections on your NinjaTrader dashboard.
+Click Configure.
+Among the available connections, find and select NinjaTrader , then click add.
+Under the Configured window, click My NinjaTrader. In the properties window, enter your Username and Password using your MFFU credentials (available on your MFFU dashboard). Lastly, set the account type to “Simulation”, click Apply, and then OK.
+Once you’re back on your NinjaTrader Dashboard, click Connections again and select My NinjaTrader to connect to your MFFU account.
+At the bottom left, you will see a connection indicator:
+Green: Successful connection to your trading account. Y
+Yellow: NinjaTrader is attempting to connect to your account.
+Red: NinjaTrader has lost connection to the order server.
+Transparent: Indicates that you are completely disconnected.
+Get Funded to trade on NinjaTrader
+If you have any questions regarding NinjaTrader setup or encounter connection issues, please contact our support team on the live chat or at [email protected]
+Related Articles
+Tradovate: Login Instructions
+DEEPCHART: Login Instructions
+Quantower: Login Instructions
+ATAS: Login Instructions
+Refund & Cancellation Policy - Transparent and Trader-First
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

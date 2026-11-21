@@ -1,0 +1,30 @@
+LucidBlack Consistency Percentage | Lucid Trading Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Lucid Home
+Lucid Home
+Search for articles...
+All Collections
+LucidBlack (Legacy)
+LucidBlack Consistency Percentage
+LucidBlack Consistency Percentage
+How the LucidBlack (legacy) consistency percentage works: the 60% rule, how it is calculated, and its impact on passing and payout eligibility.
+D
+Written by Doug
+August 26, 2026
+Table of contents
+Consistency
+The Consistency Percentage tracks a traders ability to earn profits over multiple sessions. This demonstrates a that a trader has and can adhere to a risk management strategy. LucidBlack has a Consistency Percentage in both the evaluation and funded accounts.
+The Calculation
+In LucidBlack evaluation accounts you must have Consistency Percentage of 60% or less to be eligible to upgrade to a LucidBlack funded account.
+​
+In LucidBlack funded accounts you must have Consistency Percentage of 40% or less to be eligible for a payout.
+Use the following formula to determine if you are adhering to the Consistency Percentage:
+Largest Single Day Profit / Account Profit = Consistency Percentage
+Example
+You trade a 50k LucidBlack evaluation account and your Largest Single Day Profit was $750 when you reached the $3,000 profit target. Plug the values into the above formula.
+$750 / $3,000 = 25%
+Congratulations, you have maintained consistency under the LucidBlack evaluation 60% requirement. You may now upgrade to a LucidBlack funded account. However, if your largest day had exceeded 60% of your account profit, you would need to continue trading until your largest day is 60% or less.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Lucid Trading Help Center

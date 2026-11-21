@@ -1,0 +1,133 @@
+What Is the Consistency Rule in a Futures Prop Firm?
+Black Friday Early Access · EARLYBOGO40 25K Zero BOGO + 40% off · EARLYBOGO50 25K Direct BOGO + 50% off
+Home
+About
+How It Works
+Trading
+Platforms
+AlphaTrader
+Learn More
+WealthCharts
+Learn More
+Quantower
+Learn More
+View All
+Leaderboard
+Lifetime Payouts
+Learn More
+Weekly Payouts
+Learn More
+Returns of the month
+Learn More
+View All
+Market
+Equity & Index
+Learn More
+Currency
+Learn More
+Metals
+Learn More
+Crypto
+Learn More
+View All
+AlphaTrader
+Launched AlphaTrader — the next evolution of the platform. Get Early Access
+Resources
+Contact Us
+Help Center
+Start Evaluation
+Sign In
+Home
+About
+How It Works
+Trading
+Platforms
+Leaderboard
+Market
+AlphaTrader
+Launched AlphaTrader — the next evolution of the platform. Get Early Access
+Resources
+Contact Us
+Help Center
+Start Evaluation
+Sign In
+What is the Consistency Rule? (2026)
+By the Alpha Futures Team · Updated October 23, 2026
+A consistency rule limits how much of your net profit can come from your single best trading day. At Alpha Futures it depends on plan and stage: 50% on Standard evaluations, 40% on Advanced evaluations and on Zero and Standard Qualified Accounts, 20% on Direct, and none on Zero evaluations or Advanced Qualified Accounts.
+Key fact At Alpha Futures
+What it measures Your best day's profit as a share of your net profit
+Evaluations Standard 50%, Advanced 40%, Zero none. You pass only when you reach the profit target and meet the rule.
+Qualified Accounts Zero and Standard 40%, Direct 20%, Advanced none. Measured on profit since your last request.
+Going over it on a Qualified Account The account is not breached. You keep trading until the rule is met.
+Futures trading involves substantial risk. Alpha Futures evaluations and Qualified Accounts are simulated; past simulated results do not guarantee future results.
+Updated October 23, 2026: Current plans are Zero, Standard, Advanced, and Direct. Premium was discontinued in July 2026.
+Current Alpha Futures consistency rules
+Plan Evaluation Qualified Account
+Zero None 40% between performance fee requests
+Standard 50% 40% between performance fee requests
+Advanced 40% None
+Direct No evaluation 20% for performance fee eligibility
+On the Standard Plan, the optional No Consistency in Qualified add-on removes the 40% consistency rule from your simulated Standard Qualified Account; the Standard Evaluation keeps its 50% rule. See No Consistency in Qualified: the Standard Plan add-on .
+What is the 50% consistency rule?
+The 50% consistency rule means no single trading day can be more than 50% of your net profit. At Alpha Futures it applies to Standard evaluations. On a simulated $50K Standard evaluation with a $3,000 profit target, keep your best day at $1,500 or less so you can pass as soon as you reach the target. If your best day is $2,000, you need at least $4,000 of net profit before you pass, even though the target is $3,000.
+Standard evaluation (simulated) Profit target Best day to pass at the target
+$50K $3,000 $1,500 or less
+$100K $6,000 $3,000 or less
+$150K $9,000 $4,500 or less
+How the ratio works
+Suppose your best day is $2,500 and your net profit is $4,000. That day accounts for 62.5% of net profit. It would exceed a 50% Standard evaluation limit and a 40% Advanced evaluation limit. More eligible net profit spread across other trading days would be needed before the applicable ratio is satisfied. The profit target, loss limits, and other plan rules still apply.
+What happens if you break the consistency rule?
+On a Qualified Account, breaking the consistency rule does not breach the account. You just can't request a performance fee until your best day is back under the limit, which happens as you add net profit on other days. The ratio counts profit since your last request and resets after each request. In an evaluation, you don't pass until the rule is met. To check your numbers, use the consistency rule calculator .
+Evaluation and Qualified rules are different
+Zero has no evaluation consistency rule, but its Qualified Account uses 40% between performance fee requests. Advanced uses 40% during evaluation and none after qualification. Standard uses 50% during evaluation and 40% after qualification. Direct skips evaluation but uses 20% for performance fee eligibility.
+Consistency versus other rules
+Profit target: the net profit you must reach to pass an evaluation.
+Consistency: the allowed concentration of profit in your best day.
+Maximum Loss Limit: the account loss threshold.
+Daily Loss Guard: a separate daily control on plans where it applies.
+Frequently asked questions
+Does Zero have an evaluation consistency rule?
+No. Zero Qualified Accounts do have a 40% rule between performance fee requests.
+What is the Advanced evaluation consistency rule?
+Advanced evaluations use 40%; Advanced Qualified Accounts have no consistency rule.
+What is the Standard evaluation consistency rule?
+Standard evaluations use 50%; Standard Qualified Accounts use 40% between performance fee requests.
+Does Direct have an evaluation consistency rule?
+Direct has no evaluation. Its Qualified Account has a 20% consistency rule for performance fee eligibility.
+Alpha Futures accounts use simulated funds. Performance fees are based on eligible simulated results and are not guaranteed.
+More Articles
+Sign Up for an
+Exclusive Welcome Offer
+Subscribe to Alpha Futures emails for an exclusive welcome offer, trader insights, product updates and discounts. Enter your email to stay one step ahead. You can unsubscribe at any time.
+Thank you for signing up to our newsletter
+Oops! Something went wrong while submitting the form.
+175,000+
+Qualified Analysts
+1.1Million+
+Traders
+$70M
+Performance Fees Paid
+Quick Links
+Home About How it works
+Trading
+Platforms Market Leaderboard
+Other
+Resources Contact Us Promo Codes
+2026 © Alpha Futures - All rights reserved.
+Terms of Use
+Terms and Conditions
+General Service Agreement
+Privacy Policy
+Return Policy
+ALPHA FUTURES LIMITED
+Company number 15655643
+Registered office address
+1 Allied Business Centre, Coldharbour Lane, Harpenden, England, AL5 4UT
+"Any references to trading, analysts, revenue, and profit throughout the website are references to virtual trading, revenues, and profits, respectively."
+Alpha Futures Risk Disclosure:
+Futures trading contains substantial risk and is not for every investor. An investor could potentially lose all or more than the initial investment. Risk capital is money that can be lost without jeopardizing your financial security or lifestyle. Only risk capital should be used for trading and only those with sufficient risk capital should consider trading. Past performance is not necessarily indicative of future results.
+Hypothetical Performance Disclosure:
+Hypothetical performance results have many significant performance and other limitations, some of which are described below. No representation is being made that any account will or is likely to achieve profits or losses similar to those shown on the website or any promotional material.
+CFTC Rule 4.41:
+Hypothetical or Simulated performance results have certain limitations. Unlike an actual performance record, simulated results do not represent actual trading. Also, because the trades have not actually been executed, the results may have under-or-over compensated for the impact, if any, of certain market factors, such as lack of liquidity. Simulated trading programs, in general, are also subject to the fact that they are designed with the benefit of hindsight. No representation is being made that any account will or is likely to achieve profit or losses similar to those shown.
+English Deutsch Español Français Italiano

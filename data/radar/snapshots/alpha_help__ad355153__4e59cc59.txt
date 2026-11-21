@@ -1,0 +1,22 @@
+How to trade with TradingView | Alpha Futures Limited Help Center Skip to main content
+Search for articles...
+All Collections
+Getting Started
+How to trade with TradingView
+How to trade with TradingView
+Integrating your Alpha Futures Account with TradingView
+B
+Written by Benjamin Chaffee
+September 30, 2026
+Alpha Futures is excited to offer TradingView ​with our partners at Plus500.
+To use this integration, you must have an Evaluation, or Qualified Account utilizing TradingView
+You MUST sign your Non-Professional Agreement before your account will receive real-time data or be able to trade on TradingView.
+In order to sign your Non-Professional Agreement, log in to AlphaTrader using the username and password provided in your dashboard in Account Information.
+You can launch AlphaTrader directly from your user dashboard with the "Launch AlphaTrader" button. You may also choose to sign in directly using this link . ​
+Once you have launched AlphaTrader, you will be prompted to sign in with the credentials provided in your “Account Info”.
+Once logged in, you MUST sign your Non-Professional Agreement before your account to be able to trade on AlphaTrader . Be sure to select the 'Simulation' when prompted to select a Trading Mode.
+Now, you will need to sign in to TradingView.com with your personal TradingView account credentials. If you do not have a username with TradingView you will need to first create an account to use the integration.
+Please select Plus500US under the listed brokers. Be sure to select “demo” when asked to connect.
+Add “AlphaTrader” as the firm and input the username and password under your account info page
+At this point, you are successfully connected and can enjoy trading your Alpha Futures Account(s) on TradingView through AlphaTrader integration.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃

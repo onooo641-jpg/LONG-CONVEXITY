@@ -1,0 +1,33 @@
+Permitted Times to Trade | My Funded Futures Help Center Skip to main content
+Go to website Discord YouTube English हिन्दी Español English
+Go to website Discord YouTube English हिन्दी Español English
+Search for articles...
+All Collections
+Welcome Aboard
+Core Rules
+Permitted Times to Trade
+Permitted Times to Trade
+Timing of allowed trading hours.
+August 24, 2026
+What are the permitted trading hours with MFFU?
+Trades may be placed beginning at 6:00 PM EST when the Globex session opens and can remain open until the New York session closes at 4:10 PM EST.
+What happens if I do not close my trade?
+At MyFundedFutures, any open positions will be automatically closed at 4:10 PM EST on regular (non-holiday) trading days. Holiday trading hours will be communicated to traders including closure of open positions.
+​
+As a result, you do not need to be concerned about unintentionally violating this rule due to an open position.
+Note: Make sure that you don’t force a trade multiple times on the market after 4:10 PM EST, as this will sometimes cause the order to go through and disqualify your trading account.
+Can I trade the Globex Opening at 6:00pm EST, will I get the fill?
+Yes, you can trade between the specified times. However, please note that even if you are at the sim funded or sim evaluation stages, we do not recommend trading when the markets are said to be illiquid. This can cause issues with the position.
+Illiquid hours are allowed to trade, but at the traders own discretion. This is also applicable for holiday trading hours as well.
+Holiday Hour Trading:
+During holiday trading hours, auto-liquidation will not occur at the half-time market close, and the trader is responsible for closing the positions.
+Please note the times that you’re allowed to trade.
+Failure to close the positions before the market closes will result in breaching of the account unless otherwise notified.
+Take the Challenge Today
+Related Articles
+Navigating Your Dashboard
+News Trading Policy
+Fair Play and Prohibited Trading Practices
+Trading 101 in Volumetrica
+Comprehensive FAQ - Live Accounts at MyFunded Futures
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃

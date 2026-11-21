@@ -1,0 +1,90 @@
+Copy Trading Policy | Top One Futures Help Center Skip to main content
+Top One Futures Home
+Top One Futures Home
+Search for articles...
+All Collections
+General Rules
+Copy Trading Policy
+Copy Trading Policy
+Our copy trading policy: same type and same size only, what counts as prohibited copy trading, correlated assets, and your responsibility when using a trade copier.
+Updated over a week ago
+Table of contents
+Top One Futures allows you to copy trades to manage multiple accounts efficiently. However, to maintain risk integrity, copy trading is strictly limited to accounts of the exact same type and exact same size . Mixing different account programs, sizes, or trying to bypass these rules through manual mirroring or correlated assets is a strict violation of our terms.
+1. The core rule: same type, same size
+You can only copy trades between accounts that belong to the identical program and share the same size .
+Example
+Allowed?
+Elite ACCESS $50K to another Elite ACCESS $50K
+Allowed
+Ignite Instant Funding $100K to another Ignite Instant Funding $100K
+Allowed
+Elite ACCESS with Elite Daily
+Prohibited (different type)
+Instant Sim Funded with Ignite
+Prohibited (different type)
+Instant Sim Funded $50K with Instant Sim Funded $100K
+Prohibited (different size)
+The prohibited examples above are not an exhaustive list.
+2. What counts as prohibited copy trading?
+Copy trading violations are not just limited to software settings. The following actions are classified as unauthorized copy trading :
+Violation
+What it means
+A. Copying different accounts or sizes together
+Using a trade copier to link, bridge, or trade different account types or different account sizes together at the same time
+B. Manual mirroring (delayed entries)
+Manually entering the same trade across different account types or sizes to copy your own positions. If you buy or sell the same instrument across mismatched accounts, even if it is minutes or an hour later, it is still classified as copy trading. As long as the position is still active on your first account and the different account size or type goes in the same direction as well, it is classified as copy trading
+C. Correlated asset trading
+Trading the same direction on highly correlated assets across different account types or sizes. Highly correlated instruments move closely together, meaning trading them in the same direction simultaneously is a strict violation
+Correlated assets: what is and is not allowed
+Category
+Examples
+Considered correlated (prohibited), including but not limited to
+ES (S&P 500) and NQ (Nasdaq), or YM (Dow Jones) and RTY (Russell 2000) in the same direction across mismatched accounts. Mini and micro versions: ES and MES, or NQ and MNQ in the same direction across mismatched accounts
+Not considered correlated (allowed)
+Trading completely unrelated asset classes at the same time across different account types. For example, going long on NQ (Nasdaq) in your Instant Sim Funded account while simultaneously going long on CL (Crude Oil) or GC (Gold) in your Elite Daily account is acceptable
+Examples of a violation:
+You have an Instant Sim Funded account and an Elite Daily account. Opening a long position on ES in one account, and then opening a long position on NQ in the other account while the first position is still active, is a violation.
+You have an Ignite Instant Funding account and an Elite ACCESS account. Opening a long position on GC in one account, and then opening a long position on SI in the other account while the first position is still active, is a violation.
+3. Consequences of a violation
+Violating this Copy Trading Policy is treated as a prohibited trading practice. If we find a violation:
+Profits made through the violation may be removed , and any related payout request could be denied .
+In serious or repeated cases, the accounts involved may be terminated .
+For more details, see our Prohibited Trading Practices article.
+Does Top One Futures provide its own trade copier software?
+Yes! We provide a trade copier feature built directly into our trading platform, Tradovate. You can set up and manage your trade copier configurations right from within the platform. For more information about Group Trading, refer to this FAQ article from Tradovate .
+What does "individual trading responsibility" mean for copy trading?
+It means that each trader must operate independently . Even if you are using our trade copier for your own accounts, certain actions are strictly not allowed because they violate the spirit of individual trading:
+Executing the same trades as another person or account.
+Coordinated trading with relatives or friends.
+Following signal services, Telegram groups, Discord calls, or any shared trade alert system.
+Subscribing to any service that results in mirrored trades across different accounts.
+We expect unique strategies per trader, not correlated or synchronized actions between different individuals or entities.
+Note on copy trading between firms
+Top One Futures allows copy trading between your own accounts at different firms, including through third-party platforms. Your master account may be held at Top One Futures or another firm, provided all accounts involved are owned by you and all trades reflect your own strategy and discretion.
+​
+Copying trades from accounts owned by anyone else is strictly prohibited. Signal following, group trading, or mirroring someone else’s trades is also strictly prohibited.
+Your responsibility for copy trading adjustments and outcomes
+Each trader is solely responsible for the configuration, supervision, and final outcomes of all trades executed via third-party copy trading software.
+Scope of responsibility
+Detail
+Execution errors
+Top One Futures is not responsible for trades that fail to copy, copy incorrectly, or execute at unintended times or sizes
+Account outcomes
+Any account loss or breach, including but not limited to Maximum Drawdown violations or Daily Loss Limit hits resulting from third-party software activity, is the sole responsibility of the trader
+No reversals
+We cannot void losses, reset accounts, or provide refunds for trades originated by external software, regardless of whether the trader manually initiated the trade or not
+Pre-trade requirement: it is crucial that you test and verify your copy trading settings thoroughly in a simulated environment before active trading to ensure accurate replication and alignment with your risk management strategy.
+Related articles
+What is the Maximum Number of Accounts I Can Trade?
+What is the Limit for Funded Accounts Per Household?
+Prohibited Trading Practices
+Can I Use EA's/Bots?
+Related Articles
+What is the Maximum Number of Accounts I Can Trade?
+Minimum Trade Time Rule Explained
+Prohibited Trading Practices
+What is the Limit for Funded Accounts Per Household?
+Account Ownership and Registration Policies
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+We run on Intercom

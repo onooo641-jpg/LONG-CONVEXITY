@@ -1,0 +1,137 @@
+S2 protocols: 9086
+S2 new protocols (<= 30d, TVL >= $1M): 16
+S1 pools total: 14884
+S1 pools with no reward (not candidates): 13589
+S3 Merkl live opportunities: 714
+S4 Snapshot proposals (45d): 373
+  FAIL https://help.tradeify.co/ -> HTTP 403
+  FAIL https://lucidtrading.com/ -> HTTP 403
+  FAIL https://apextraderfunding.com/ -> HTTP 403
+  FAIL https://support.apextraderfunding.com/ -> HTTP 403
+  FAIL https://helpcenter.takeprofittrader.com/ -> HTTP 404
+  FAIL https://elitetraderfunding.com/ -> HTTP 403
+  FAIL https://help.tradeday.com/ -> URLError: <urlopen error [Errno -2] Name or service not known>
+  FAIL https://fundedtradingplus.com/ -> HTTP 403
+  FAIL https://propfirmmatch.com/futures-prop-firms -> HTTP 404
+  FAIL https://hyperliquid.gitbook.io/hyperliquid-docs/change-log -> HTTP 404
+  FAIL https://propvator.co/ -> URLError: <urlopen error [Errno -2] Name or service not known>
+  FAIL https://fundingpips.com/ -> HTTP 429
+  FAIL https://aquafutures.com/ -> HTTP 403
+  FAIL https://help.tradeify.co/en/articles/18370624-miami-plan-faq -> HTTP 403
+  FAIL https://tradeify.co/${btn_src}/ -> HTTP 404
+  FAIL https://help.tradeify.co/en/articles/10495915-growth-evaluation-accounts -> HTTP 403
+  FAIL https://help.tradeify.co/en/articles/12853921-select-evaluation-accounts -> HTTP 403
+  FAIL https://help.tradeify.co/en/articles/10495917-how-do-i-get-funded-after-passing-an-evaluation -> HTTP 403
+  FAIL https://help.tradeify.co/en/articles/10495938-lightning-funded-accounts -> HTTP 403
+  FAIL https://help.tradeify.co/en/articles/12268167-essential-trading-rules-overview -> HTTP 403
+  FAIL https://help.tradeify.co/en/articles/10468221-supported-platforms -> HTTP 403
+  FAIL https://help.tradeify.co/en/articles/10495897-rules-trailing-max-drawdowns -> HTTP 403
+  FAIL https://help.tradeify.co/en/articles/10468321-rules-daily-loss-limit -> HTTP 403
+  FAIL https://tradeday.com/terms-conditions/ -> HTTP 404
+  FAIL https://help.alpha-futures.com/en/articles/9492083-activation-fee -> HTTP 404
+  FAIL https://www.blueguardian.com/terms -> HTTP 404
+  FAIL https://ftmo.com/fr/faq/quelles-sont-les-principales-regles-promotionnelles-que-je-dois-respecter/ -> HTTP 301
+  FAIL https://fxify.com/all-faqs -> HTTP 404
+  FAIL https://fxify.com/general -> HTTP 404
+  FAIL https://fxify.com/instant-funded-faq -> HTTP 404
+sitemap https://propfirmmatch.com/: 18771 urls
+sitemap https://propfirmmatch.com/futures-prop-firms: 18771 urls
+  FAIL https://propvator.co/sitemap.xml -> URLError: <urlopen error [Errno -2] Name or service not known>
+sitemap https://propvator.co/: 0 urls
+sitemap https://saveonpropfirms.com/: 527 urls
+S5-S7 pages: 1317 fetched, 1287 ok, 1225 baseline/changed
+  FAIL https://yields.llama.fi/chart/37fb91f9-866e-4fb1-9339-1311c04a8a00 -> HTTP 429
+# Radar summary 2026-11-21
+
+Baseline date: 2026-11-21
+
+## Counts
+- S2 protocols: 9086
+- S1 reward pools: 1295
+- S3 Merkl live: 714
+- S4 governance hits: 67
+- pages fetched ok: 1287
+- pages total: 1317
+- candidates surviving to ranking: 93
+- of which all five filter parts verified: 12
+- near-miss rows total: 1963
+
+## Near-miss by stage/reason (top)
+
+- first_pass / below threshold: 1209
+- quality / DefiLlama outlier flag: 260
+- filter / F4 price exposure, needs hedge; F5 TVL < $1,000,000: 217
+- filter / F4 price exposure, needs hedge: 140
+- filter / F5 TVL < $1,000,000: 67
+- deep / F1 reward not persistent: 24
+- deep / F2 not long-lived: 18
+- quality / implausible APR > 1000%: 11
+- filter / F3 single pool/venue on one chain (no reused setup); F4 price exposure: 8
+- filter / F3 single pool/venue on one chain (no reused setup): 4
+- filter / F3 single pool/venue on one chain (no reused setup); F5 TVL < $1,000,0: 4
+- collect / no data (request failed): 1
+
+## Top 25 by money per competitor (reward APR on competing capital)
+
+| venue | chain | what pays | $/day | capital | reward APR % | F1 | F2 | stable | new | Malaysia |
+|---|---|---|---|---|---|---|---|---|---|---|
+| stake-dao-yield | Ethereum | PYUSD-CRVUSD Curve reward tokens ['0x5D29949F8e64f | 65,231 | 16,898,332 | 140.9 | pass | unverified | True | False | unverified-onchain |
+| curve-dex | Ethereum | BOLD-USDC nan reward tokens ['0x6440f144b7e50D6a84 | 9,403 | 8,608,623 | 39.9 | pass | unverified | True | False | unverified-onchain |
+| morpho-blue | Ethereum | RE7COUSDC nan reward tokens ['0xa12cc123ba206d4031 | 2,113 | 3,539,961 | 21.8 | fail | fail | True | False | unverified-onchain |
+| mento-v3 | Monad | AUSD-USDM nan reward tokens ['0xBC69212B8E4d445b23 | 831 | 2,101,281 | 14.4 | fail | fail | True | False | unverified-onchain |
+| sky-lending | Ethereum | USDS GROVE Farming Pool reward tokens ['0xb30FE1CF | 17,609 | 54,618,496 | 11.8 | fail | unverified | True | False | unverified-onchain |
+| lista-lending | Ethereum | USDC nan reward tokens ['coingecko:lista'] | 539 | 1,855,946 | 10.6 | pass | pass | True | False | unverified-onchain |
+| lista-lending | BSC | USDT nan reward tokens ['0xFceB31A79F71AC9CBDCF853 | 294 | 1,013,692 | 10.6 | fail | fail | True | False | unverified-onchain |
+| stake-dao-yield | Ethereum | PMUSD-CRVUSD Curve reward tokens ['0xD533a949740bb | 312 | 1,092,330 | 10.4 | pass | unverified | True | False | unverified-onchain |
+| convex-finance | Ethereum | PMUSD-CRVUSD nan reward tokens ['0xd533a949740bb33 | 308 | 1,081,300 | 10.4 | pass | unverified | True | False | unverified-onchain |
+| curve-dex | Ethereum | USDT-USDTE nan reward tokens ['0xD533a949740bb3306 | 272 | 1,011,080 | 9.8 | fail | unverified | True | False | unverified-onchain |
+| stake-dao-yield | Ethereum | FRXUSD-DUSD Curve reward tokens ['0xD533a949740bb3 | 272 | 1,086,817 | 9.2 | fail | unverified | True | False | unverified-onchain |
+| convex-finance | Ethereum | FRXUSD-DUSD nan reward tokens ['0xd533a949740bb330 | 639 | 2,638,700 | 8.8 | fail | unverified | True | False | unverified-onchain |
+| convex-finance | Ethereum | FRXUSD-MSUSD nan reward tokens ['0xd533a949740bb33 | 719 | 2,976,211 | 8.8 | pass | unverified | True | False | unverified-onchain |
+| morpho-blue | Base | RE7VENICEUSDC nan reward tokens ['0xacfe6019ed1a7d | 679 | 2,840,011 | 8.7 | fail | fail | True | False | unverified-onchain |
+| upshift | Stellar | HOLD Supply USDC in Upshift sentUSDC | 10,062 | 45,906,066 | 8.0 | unverified | pass | True | False | unverified-onchain |
+| echelon-market | Aptos | SYZUSD nan reward tokens ['0xb30a694a344edee467d9f | 240 | 1,094,983 | 8.0 | fail | fail | True | False | unverified-onchain |
+| dolomite | Ethereum | USDC nan reward tokens ['0xdA5e1988097297dCdc1f90D | 2,174 | 10,244,194 | 7.7 | pass | pass | True | False | unverified-onchain |
+| convex-finance | Ethereum | EVAUSDT-EVAUSDC nan reward tokens ['0xd533a949740b | 472 | 2,380,685 | 7.2 | fail | unverified | True | False | unverified-onchain |
+| stake-dao-yield | Ethereum | FRXUSD-MSUSD Curve reward tokens ['0xD533a949740bb | 764 | 3,915,957 | 7.1 | pass | unverified | True | False | unverified-onchain |
+| aave | Ethereum | LEND Supply RLUSD to the Aave V4 Sentora Hub | 14,718 | 76,742,054 | 7.0 | unverified | unverified | True | False | unverified-onchain |
+| flying-tulip-ftusd | Ethereum | SFTUSD staked ftUSD (FT rewards bought on open mar | 331 | 1,777,594 | 6.8 | fail | fail | True | False | unverified-onchain |
+| dolomite | Ethereum | LEND Lend USDC on Dolomite | 3,194 | 17,402,911 | 6.7 | unverified | pass | True | False | unverified-onchain |
+| bluefin-spot | Sui | USDSUI-USDC 0.01% reward tokens ['0x00000000000000 | 236 | 1,302,580 | 6.6 | pass | pass | True | False | unverified-onchain |
+| yearn-finance | Katana | VBUSDC nan reward tokens ['0x7F1f4b4b29f5058fA32CC | 1,125 | 6,217,065 | 6.6 | pass | unverified | True | False | unverified-onchain |
+| stake-dao-yield | Ethereum | EVAUSDT-EVAUSDC Curve reward tokens ['0xD533a94974 | 694 | 3,841,281 | 6.6 | pass | unverified | True | False | unverified-onchain |
+
+## Governance proposals mentioning incentives (last 45d, newest 25)
+
+- sdcrv-gov.eth: [active] Update gauge implementations on the stableswap-ng, twocrypto-ng and tricrypto-ng factories and on the https://snapshot.org/#/sdcrv-gov.eth/proposal/0x3c0e84ef6ae492abe2b54aede41e4555ca7907f364aad46f0f613540ecfe7410
+- sd-yieldbasis.eth: [active] 63# Move 2.5M YB to a multisig managing incentives for the YB/crvUSD pair https://snapshot.org/#/sd-yieldbasis.eth/proposal/0xefe4c53029244c091751001b65b884cefc6199cb0ec6a7a2dddb64c5a9f0f97f
+- assangedao.eth: [active] AIP-22: Perpetual Fund grants, paid in $JUSTICE https://snapshot.org/#/assangedao.eth/proposal/0x08acb047d8f67bdfd35ba35df1b501238f8440f2cf2b72a76be2d2d3b42a8fa5
+- sdfxn.eth: [active] Gauge vote FXN - 26/11/2026 - 9/12/2026 https://snapshot.org/#/sdfxn.eth/proposal/0xe7837bf1209b388558d4e2beed0160f73cde4fad79a7fe4012849c93195614b3
+- sd-yieldbasis.eth: [active] Gauge vote YB - 26/11/2026 - 9/12/2026 https://snapshot.org/#/sd-yieldbasis.eth/proposal/0x679ea0bfa594140cce624fc024d59bee527a490cc127fbb5f4f7716c8f69079d
+- sdfxs.eth: [active] Gauge vote FXS - 26/11/2026 - 9/12/2026 https://snapshot.org/#/sdfxs.eth/proposal/0x0d32c129ceea51c12bacf857463bffd1156e01b90d5a42e1e6348c98744ee92c
+- sdcrv.eth: [active] Gauge vote CRV - 26/11/2026 - 9/12/2026 https://snapshot.org/#/sdcrv.eth/proposal/0x7e22fd01421f9e4f05cb7ba6242486c1cb236aafa613fddf1cce3c3b7e4e3212
+- beets-gauges.eth: [active] Beets Sonic gauge vote (Round 49) https://snapshot.org/#/beets-gauges.eth/proposal/0xced87b2fc253636be39f3e2fc71e1324fd9b78ee4cb69f833cbc1cc6cd53342f
+- sdcrv-gov.eth: [closed] Add a gauge for the following stableswapNG pool: bdUSD/MUSD on Mainnet (Bitcoin Dollar https://snapshot.org/#/sdcrv-gov.eth/proposal/0x778b833a3ff714352912879d80f4b31fc23dcb97bf60aee042621bbdede1b36a
+- 1inch.eth: [active] 1INCH Governance Proposal: Restore Staking Rewards or Eliminate Early Withdrawal Penalties https://snapshot.org/#/1inch.eth/proposal/0x605afa47aecb562f3139738e674f4017ed1ab795c5eac4cadd5ac3376a2dd507
+- sdcrv-gov.eth: [closed] Add the MET/WETH pool on Ethereum to the Curve Gauge Controller https://snapshot.org/#/sdcrv-gov.eth/proposal/0xf4b5267569df45f46d2155cea7809cfc27da508d44081fd327cca91c3d01a756
+- cratos.eth: [active] CIP-47 With respect to the current reward standard, should we consider extending the deadline to Dece https://snapshot.org/#/cratos.eth/proposal/0xa78ac3f3390dc64a559a5a4e3b6f2ea0879173e3478bd8763f4f0f1ef3111536
+- puffer-gauge.eth: [active] Gauge Proposal [22 Gauges] 2026-11-14 01:00 GMT+1 to 2026-11-28 01:00 GMT+1 https://snapshot.org/#/puffer-gauge.eth/proposal/0xf2c95bb4273eb66ccf7fb5a57beaac3608e4624d7659869c660adfdd00a51104
+- sdcrv-gov.eth: [closed] Add yscvxCRV/CRV (factory-stable-ng-888) gauge 0x3a1EdF12445b3329485C486467Fa0789dd3C01bC to the Gaug https://snapshot.org/#/sdcrv-gov.eth/proposal/0x2887e0c342a8984e6648af42ec2737ceca725f7fddc9c47842c35bb7f9cdbe49
+- 1inch.eth: [closed] [1IP-107] Aqua LP Incentive Program — Season 2 https://snapshot.org/#/1inch.eth/proposal/0x6910f1e7fafaa4f1dd003503fd025752d0de4fbcc9a46c69cad59941bfd35b4d
+- stakedao.eth: [closed] (REPUSH) SDGP-69: Claim Deadline for sdPENDLE and sdBAL Voting-Power Rewards https://snapshot.org/#/stakedao.eth/proposal/0xe84f20a814602ed82a81a7d9365e4765930774595a69fc7d248f971f72b201a4
+- sdcrv-gov.eth: [closed] Activate wstGBP/crvUSD LlamaLend V2 on Ethereum: set a 80,000 crvUSD borrow cap and 10% admin fee, an https://snapshot.org/#/sdcrv-gov.eth/proposal/0xe047aae704fe64d20f617ffd656e8f6717834f0f8738071e6ada4b969521c1e5
+- ideation.shapeshiftdao.eth: [closed] [Ideation] SCP-228: Accept and distribute the Zcash retroactive grant for ShapeShift's Zcash work https://snapshot.org/#/ideation.shapeshiftdao.eth/proposal/0x6b605a315c8e86b79e3ea804d79a668a01e9bc5ca6f76f814a0ff38f2b1813c8
+- sdcrv-gov.eth: [closed] Activate wOUSD/crvUSD LlamaLend V2 on Ethereum: set a 950,000 crvUSD borrow cap and 10% admin fee, an https://snapshot.org/#/sdcrv-gov.eth/proposal/0x24100d70b5b57ca622e53bbd8776c68f83888bf4c0a589dc51e831f5984543cf
+- sdcrv-gov.eth: [closed] Add a gauge for the following stableswap-NG pool: DOLA/SwanUSD https://snapshot.org/#/sdcrv-gov.eth/proposal/0x3baa878c1450739af8428dacbd0e6e5ccfadaf385e41be51cb2861caf988fe53
+- sdcrv-gov.eth: [closed] Activate wOUSD/crvUSD LlamaLend V2 on Ethereum: set a 950,000 crvUSD borrow cap and 10% admin fee, at https://snapshot.org/#/sdcrv-gov.eth/proposal/0xae6c512df20e105b73daa1af8d2dc6bb71759fe0441aad664b707e17d6a7c2fc
+- magpiexyz.eth: [closed] MIP #102 – Cease MGP Emissions to the mWOM Pools https://snapshot.org/#/magpiexyz.eth/proposal/0x4dcea4bbe438757d0fad375ea473b8f221730e6a4622e98e158a29fe4c9ac6f7
+- qbio-phase2.eth: [closed] DP37 - Three-Month Continuation Grant Agreement https://snapshot.org/#/qbio-phase2.eth/proposal/0x9e8dbe408a08debd37a4b8ab66f6b61382cc59e4dc7fd9db90e597dec6a8d2a5
+- fusedao.eth: [closed] FIP14: Zero Inflation, 400M Cap Enforced On-Chain, 30M FUSE for Validator Rewards Through the Transit https://snapshot.org/#/fusedao.eth/proposal/0x2cba3ecb0f952ebb2d82583bb9279cc836e36c18ce2ed540299ab254dcdc5e94
+- sdfxn.eth: [closed] Gauge vote FXN - 12/11/2026 - 25/11/2026 https://snapshot.org/#/sdfxn.eth/proposal/0x6214cbfb2dd2fcd86ba05d14fd8a5297622c9ec18b1fc7447e7e3304743eb31a
+
+## Page changes today: 2
+
+- E8 Markets (firm) https://e8markets.com/: +14 / -14 lines
+- propfirmmatch (directory) https://propfirmmatch.com/: +1 / -1 lines
+
+done in 276s, requests ok 1367 fail 32

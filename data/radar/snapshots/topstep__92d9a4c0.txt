@@ -1,0 +1,137 @@
+Topstep Express Funded Account Rules | Topstep
+Skip to Main Content
+Funded Trading
+Prop Firm How It Works Topstep Octagon Instant Payouts
+Brokerage Perps TopstepX Blog Support
+Trader Support Help Center Status Page Discord
+Login
+Sign Up
+Sign Up
+Express Funded Account
+‍ trading rules
+Last updated: June 26, 2025. These rules apply to your activity in an Express Funded Account and work alongside the Express Funded Account Agreement. If there is ever a conflict between these rules and the agreement, the rules listed below will take precedence. Topstep reserves the right to update these rules at any time, with or without prior notice. It is your responsibility to review them regularly.
+Rules and objectives at a glance
+Each Express Funded Account starts with a $0 balance and includes a Max Loss Limit based on your Trading Combine® size: $2,000 for $50K accounts, $3,000 for $100K, and $4,500 for $150K. Your balance can go below $0 to accommodate your Max Loss Limit. If your Max Loss Limit balance increases to $0, your account will lock at $0. Accounts trading on platforms other than TopstepX are also subject to a Daily Loss Limit as outlined below.
+Review the full rules
+Review the full rules
+Scaling plan
+Your contract limit is based on your account balance and follows the Scaling Plan. You’ll start at the lowest level of that plan with the ability to increase your position size based on your profits.
+Stay funded. Know the rules.
+Maximum Express Funded Accounts You can have up to 5 active Express Funded Accounts at one time. This number may change depending on your activity or participation in other Topstep programs, such as the Focused Trader Program.
+Maximum Loss Limit If your account ever drops to or below the Maximum Loss Limit, the account will be permanently closed. This limit is based on your highest end-of-day balance and does not go down if you lose money the next day.
+Permitted trading hours and products Normal electronic trading hours unless otherwise noted. All positions must be closed by 3:10 PM CT or by the product’s market close, whichever comes first. Abbreviated holiday hours can be found on Topstep’s website.
+Rule adherence is determined solely by Topstep based on your account activity, not by the Trading Reports or platform metrics. These rules define how payouts are earned and processed, as well as outline the expectations for account use. By trading in an Express Funded Account, you’re agreeing to follow these rules and any updates we make.
+Additional terms and info
+Holiday trading You must follow CME holiday trading schedules. Topstep will attempt to send email reminders, but if you’ve unsubscribed, you will not receive them. If you would like to receive our email reminders, you can resubscribe to Topstep emails here .
+Payouts and monetary terms and conditions When can I request a payout?
+To be eligible for a payout:
+‍ Choose your path to payouts
+‍ You can choose between two Express Funded Account payout paths:
+‍ Express Funded Account Standard
+‍ The current payout structure.
+‍ Eligibility Requirements:
+Complete five (5) Winning Days of $150+
+Request up to 50% of your account balance , up to $5,000
+90/10 profit split
+‍ After the first payout, a Minimum Payout Balance must be met for subsequent payouts.
+‍ Express Funded Account Consistency (Consistency XFA)
+‍ An alternative payout option designed for traders who meet the consistency target.
+‍ Eligibility Requirements: Trade a minimum of three (3) days
+Achieve the 40% Consistency Target
+Request up to 50% of your account balance , up to $6,000
+90/10 profit split
+Each payout: Can be up to 50% of your account’s reward balance, with a max of $5,000 (Standard) or $6,000 (Consistency XFA) per payout.
+Once a payout is approved, the payout amount is subtracted from your account balance.
+How do profit splits work? Traders keep 90% of their profits, and Topstep keeps 10%, up to the maximum payout allowed under the selected payout policy.
+Any money in your Express account is always at risk and can be lost due to trading activity.
+Fees and commissions Your Express account includes simulated fees similar to what you’d pay in a live account. You can view the fee details here .
+Expectations If your Express Funded Account hits the Maximum Loss Limit, it will be permanently closed.
+If you choose to close your Express Funded Account and are eligible for a payout, you may receive up to 50% of your current Reward Balance, capped at $5,000. Any remaining balance will be forfeited.
+Topstep reserves the right to close your positions or disable your account at any time, with or without notice.
+You cannot receive an Express Funded Account if: You’ve been convicted of any felony or a misdemeanor involving dishonesty, fraud, or financial misconduct.
+You’ve been disciplined by the NFA or CFTC
+You have unresolved debt with a clearing firm
+You’ve used a fraudulent credit card or initiated a chargeback
+If any of the above are found to be true, you will not get a refund for any fees paid. You’re expected to follow Topsteps Terms of Use and trade responsibly. You can read more about that here .
+Back2Funded rules and guidelines
+Eligibility Back2Funded is available only for XFAs that meet all of the following:
+The XFA was originally earned through Topstep’s Trading Combine.
+The XFA was closed due to a rule violation before taking a payout.
+The XFA was lost on or after 9/3/2025.
+The XFA is on TopstepX in the new Topstep Dashboard.
+Once a payout is taken from an XFA, it is no longer eligible for Back2Funded. The trader must be in good standing with no Focused Trader Plan restrictions or compliance concerns.
+How to use Back2Funded Lose your XFA before your first payout.
+Within 7 days, decide if you want to go Back2Funded.
+Log in to the new Topstep Dashboard, select your account, and choose the Back2Funded option.
+Pay the reactivation fee for your XFA size (including sales tax).
+Your account will be reactivated and ready to trade at the start of the next trading session.
+XFA limit Traders can have a maximum of 5 active or pending XFAs at one time.
+Once you pay the reactivation fee your account will be pending until the start of the next trading session.
+A Back2Funded-eligible XFA remains eligible for 7 calendar days before expiring.
+If you are at the 5 active or pending XFA limit, you cannot activate a new XFA
+If no action is taken within 7 days, the Back2Funded offer expires and will be automatically declined .
+Expectations Each XFA can be reactivated up to 2 times.
+Reactivations must be for the same size as the original XFA.
+Pricing is based on the original XFA size (plus applicable sales tax): $50K Express Funded Account: $599
+$100K Express Funded Account: $699
+$150K Express Funded Account: $829
+Each reactivation is purchased separately and is final and non-refundable.
+Reactivation window You have seven calendar days from the time your XFA is closed to decide if you want to go Back2Funded. If no action is taken within 7 days, the Back2Funded offer expires and will be automatically declined.
+Payout policy Back2Funded XFAs follow the same payout rules as the XFA you reactivated.
+Reactivated Standard XFAs may request a payout after five (5) winning days of $150 or more.
+Reactivated Consistency XFAs may request a payout after meeting the 40% consistency target.
+Disclaimers Traders must be in good standing to participate in Back2Funded. Accounts with Focused Trader Plan (FTP) restrictions or those under review for fraud, manipulation, or compliance concerns are not eligible.
+Topstep reserves the right to modify or discontinue Back2Funded at any time.
+Back2Funded reactivations are final and non-refundable.
+Back2Funded gives you the opportunity to pay for up to 2 reactivations if you lose your Express Funded Account (XFA) before your first payout. Each reactivation lets you keep the same account size and payout policy, giving you another chance to trade for a payout without starting over in the Trading Combine.
+Looking to trade live?
+Review the official Live Funded Account Rules to understand trading expectations, risk limits, payout policies, and everything you need to know before stepping into a Live Funded Account.
+View Live Funded Account rules
+View Live Funded Account rules
+Company
+Trader Support
+Help Center
+Status Page
+Blog
+Press
+About Us
+Merch
+Our Team
+Careers
+Our program
+Live Funded Account Rules
+Express Funded Account Rules
+Responsible Trading Program
+Payout FAQs
+Instant Payouts
+Products & offerings
+Topstep (Prop firm)
+Topstep Brokerage
+Topstep Perps
+TopstepX
+TopstepTV
+Topstep Octagon
+Topstep Labs
+Legal & Regulatory
+Privacy policy
+Terms of Use
+Disclosures & Notices
+Affiliate Terms and Conditions
+Manage Cookie Preferences
+All investing involves risk
+Not a Deposit | Not FDIC Insured | May Lose Value
+Topstep and Affiliated Entities
+Topstep disclaimer. Topstep LLC and its affiliates (collectively, “Topstep”) provide information on this website for general informational purposes only. Testimonials appearing on Topstep’s websites may not be representative of other clients or customers and are not a guarantee of future performance or success. Use of the information on Topstep’s websites is at your own risk and Topstep and its partners, representatives, agents, employees, and contractors assume no responsibility or liability for any use or misuse of such information. Topstep does not provide tax, legal, investment, or accounting advice. You should consult your own advisors before engaging in any transaction.
+The following entities are affiliated but separate entities and wholly owned subsidiaries of Topstep LLC.
+‍ Introducing brokerage services are offered through Topstep Brokerage LLC (“Topstep Brokerage”), a registered introducing broker and a member of the National Futures Association. More information about the firm may be found here under NFA ID# 0567079. Please review Topstep Brokerage’s Risk Disclosures Statement . Futures accounts are not protected by the Securities Investor Protection Corporation (SIPC).
+Simulated trading program services , comprising the Trading Combine, and the Express Funded Account, and Topstep Labs experiments, are operated by TopstepTrader, LLC (“TopstepTrader”). TopstepTrader plans to offer simulated trading of perpetual futures contracts. Please review the Risk Disclosures .
+Live funded proprietary trading firm services are operated by TopstepFunded LLC (“TopstepFunded”). TopstepFunded offers live funded proprietary trading firm for individuals demonstrating proficiency in TopstepTrader’s simulated trading evaluation program. Please review the Risk Disclosures .
+The TopstepX trading platform is a trading platform designed to help retail traders develop sound habits, discipline, and risk management. It is developed and owned by ProjectX Trading LLC (“TopstepX”). Additional information and terms of use can be found here and here .
+TopstepTV is a digital media network offering real-time trading insights and education owned and operated by TopstepTV LLC (“TopstepTV”). Please review the TopstepTV Risk Disclosures .
+The Futures Desk is an online proprietary trading firm that evaluates and funds retail futures traders owned by TS TFD Buyer, LLC (“The Futures Desk”). Additional information and terms and conditions can be found here and here .
+General Risk Disclosures
+Commodity and perpetual futures trading involves substantial risk of loss. All investments involve risk, and not all risks are suitable for every investor. The value of investments may fluctuate and as a result, clients may lose more than their original investment. The past performance of a financial product does not guarantee future results or returns. Please carefully consider whether it is appropriate for you to engage in futures trading in light of your personal financial circumstances. You should only use funds that you can afford to lose without affecting your financial security or lifestyle, and only a portion of those funds should be used to support a single trade because you cannot expect to profit on every trade. To learn more about the risks of trading, please visit our Risk Disclosure .
+System Risk. Trading through an electronic trading or order routing system exposes you to risks associated with system or component failure. System response and account access times may vary due to a variety of factors, including trading volumes, market conditions, system performance, and other factors.
+Trading Combine and Topstep Labs Experiments. The Trading Combine, Express Funded Accounts and Topstep Labs experiments are realistic simulations of trading under actual market conditions and are difficult to pass even for experienced traders. Simulated performance results have certain limitations. Unlike an actual performance record, simulated results do not represent actual trading. Also, because the trades have not actually been executed, the results may have under- or over-compensated for the impact, if any, of certain market factors, such as lack of liquidity. Simulated trading programs, in general, are also subject to the fact that they are designed with the benefit of hindsight. Simulated trading does not involve financial risk, and no simulated trading record can completely account for the impact of financial risk in actual trading. For example, the ability to withstand losses or adhere to a particular trading program in spite of trading losses are material points which can also adversely affect actual trading results. No representation is being made that any account will or is likely to achieve profit or losses similar to those shown.
+2025 Trader Performance Statistics. From January through December 2025, (a) 16.8% of all Trading Combines initiated were successfully completed and afforded the opportunity to advance to the Funded Level, (b) 51.8% of individual participants who entered one or more Trading Combines advanced to the Funded Level in at least one of their Trading Combines, (c) 33.3% of all individual participants at the Funded Level received a payout, and (d) 0.71% of individual participants trading in an Express Funded Account were called up to a Live Funded Account. The Funded Level includes both Express Funded Accounts and Live Funded Accounts, with the aggregate of such accounts used in the percentage determination. These statistics reflect performance in both a simulated trading environment and a live trading environment and are not indicative of future results. These statistics do not reflect simulated trading of perpetual futures.
+NO INVESTMENT ADVICE. NOTHING CONTAINED IN THIS WEBSITE CONSTITUTES INVESTMENT ADVICE, NOR DOES IT CONSTITUTE THE SOLICITATION, ENDORSEMENT, OR RECOMMENDATION OF THE PURCHASE OR SALE OF ANY FUTURES, PERPETUAL FUTURES OR OTHER FINANCIAL PRODUCT. THE WEBSITE CONTENT IS FOR GENERAL INFORMATION ONLY AND SHOULD NOT BE REGARDED AS CONSTITUTING AN OFFER, SOLICITATION, ENDORSEMENT, OR RECOMMENDATION TO BUY OR SELL ANY FUTURES, PERPETUAL FUTURES OR OTHER FINANCIAL PRODUCT AND SHOULD NOT BE REGARDED AS INVESTMENT ADVICE.

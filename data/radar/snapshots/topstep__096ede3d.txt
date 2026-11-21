@@ -1,0 +1,151 @@
+Live Funded Account Rules | Topstep
+Skip to Main Content
+Funded Trading
+Prop Firm How It Works Topstep Octagon Instant Payouts
+Brokerage Perps TopstepX Blog Support
+Trader Support Help Center Status Page Discord
+Login
+Sign Up
+Sign Up
+Live Funded Account
+‍ trading rules
+Last updated: July 1, 2026. These rules apply to all activity in your Live Funded Account and are part of the agreement you accepted with TopstepFunded LLC (“Topstep”). By using a Live Funded Account, you confirm that you understand and agree to follow all of these rules and any updates we make.
+How these rules work
+These rules work alongside your Live Funded Account Agreement. If there is ever a conflict between the two, these rules take precedence.
+​
+Topstep reserves the right to update these rules at any time, with or without notice.
+​
+You must follow all rules outlined here or in any other communication from Topstep.
+​
+Payout eligibility and the processing of payouts are governed by these rules and the terms of the Agreement.
+​
+By trading in your Live Funded Account following any update to these rules, you confirm that you have read, understand and agree to the most current version of these rules.
+Review of activity
+Topstep determines whether you are following the rules based on your actual trading activity. This is not based on what appears in your trading reports or on your trading platform
+Live Funded Account overview
+The Live Funded Account call up is designed to help traders transition successfully from simulated performance to live trading through a performance-based capital release structure.
+When called up to Live:
+You begin with 20% of your eligible starting account balance available for trading
+The remaining balance becomes available as defined profit milestones are achieved
+Additional balance access is released as you achieve defined profit milestones
+Capital expansion is reviewed weekly
+Payout eligibility is separate from capital expansion
+This structure allows traders to safely scale in while adjusting to live market conditions, working with the risk team, and maintaining a clear path to full account access.
+Starting account balance
+Your Live Funded Account includes two key values:
+1. Live account size
+Topstep allows traders to have one active Live Funded Account at a time. This step determines the account size of your Live Funded Account if you have multiple Express Funded Account sizes .
+Your Live Funded Account size is based on the average account size of your active and eligible Express Funded Accounts.
+Only accounts with at least one payout are included
+The average is rounded up to the next tier of $50K, $100K, or $150K
+Your Live Funded Account maximum starting balance, rules, and limits are based on this capped size
+2. Starting balance and unlock structure
+Your actual Starting Balance is based on the combined total balance of your eligible Express Funded Accounts, up to your Live Account maximum starting balance.
+Example : 2×$50K + $100K + $150K → $87.5K average → rounds to $100K Live size .
+At Live activation:
+20% of your combined total balance is available for trading
+The remaining balance unlocks in 25% increments through performance milestones
+Each unlock releases 25% of your reserve balance , until you reach your Live Account starting balance
+Topstep may make discretionary exceptions for select traders based on performance and risk evaluation.
+Balance expansion through performance
+Additional available balance becomes accessible through net profit milestones achieved in the Live Funded Account. These milestones are the same profit targets achieved in the Trading Combine.
+Additional rules:
+Balance expansion does not change payout eligibility rules
+Profits must be net since the last unlocked available balance event
+Expansion is reviewed no more than once per calendar week
+Your net profits will be measured after market close on Friday of each week
+Approved unlocked available balances are typically applied by the following Tuesday
+Traders may continue unlocking balance access until 100% of the account Starting Balance has been made available for trading .
+Dynamic live risk expansion
+Your Daily Loss Limit adjusts with your account balance, so the more you profit, the more room you’ll have to trade. Once you reach $100,000, you can contact the Trade Desk to request higher contract limits. If your account enters a drawdown, a Shoulder Tap helps manage risk by tightening limits until you recover.
+Daily Loss Limit
+Your Daily Loss Limit and starting contract limits are set by your Live account size. If the Daily Loss Limit is reached, positions are flattened, orders are canceled, and trading pauses until the next session. This pause is not a rule violation.
+Review the full rules
+Review the full rules
+Your Daily Loss Limit continues to scale up or down with your available balance.
+If the Daily Loss Limit is reached:
+Positions are flattened
+Orders are canceled
+Trading is paused until the next trading session
+This pause is not a rule violation .
+*If the account is auto liquidated with a balance less than $1,000 the account will be closed and the remaining account balance will be paid out to the trader.
+The Topstep Octagon
+The Topstep Octagon is a performance bonus incentive program that allows Live Funded traders to earn monthly performance bonuses based on their net profit and loss for any calendar month.
+Performance bonuses are independent of payouts and balance expansion, and any performance bonuses will be paid directly into your Live Funded Account. You can find all the details here .
+Stay live. Know the rules.
+Daily Loss Limit Trader may not hit or exceed the Daily Loss Limit (as described here ) while trading. Hitting or exceeding the Daily Loss Limit will suspend Trader’s ability to trade for the remainder of the then current trading session, which resets for the next trading session (as set forth here ).
+Maximum Loss Limit Trader may not hit or exceed the Maximum Loss Limit (as described here ). Currently, your Maximum Loss Limit is $1,000. For the remainder of your Live Funded Account, you will need to make sure your account balance stays above $1,000 (positive).
+Permitted trading hours and products Products may be traded during normal electronic trading hours unless otherwise indicated. Abbreviated holiday hours can be found on Topstep’s website. All positions MUST be closed prior to 3:10 PM CT or prior to the market close of that product, whichever is sooner.
+Additional terms and info
+Daily Loss Limit and flatten all option The Daily Loss Limit is a protective threshold designed to help you manage risk. If your Net P&L reaches or exceeds this limit during the trading day (defined as 5:00 PM CT to 3:10 PM CT), your account will enter a soft breach.
+‍ Here’s what that means:
+Your open positions will be closed (flattened).
+Any pending orders will be canceled.
+You’ll be locked out from placing new trades until the next trading day begins (5:00 PM CT).
+This lockout is not a rule violation. It’s a pause meant to protect your account and give you time to regroup.
+To help you stay within your limits, we’ll also automatically flatten all positions about ten seconds before the trading session ends (3:10 PM CT), as determined by Topstep.
+Holiday trading Holiday hours can impact your trading schedule and data fees. Here’s what you need to know:
+Holiday Flattening Requirements: You must close all trades during the holiday hours outlined in our Holiday Schedule . These requirements may differ from standard trading days.
+Data Fees and Holidays: Data fees are not prorated for months with holiday trading restrictions. If you plan not to trade for the entire month, including holiday hours, and want to avoid being charged a data fee, you must email our team before the 26th of the previous month to request removal.
+Important: We do our best to notify you of holiday trading changes, but if you’ve unsubscribed from Topstep emails, you won’t receive alerts. To stay in the loop, please resubscribe to emails here .
+Monetary terms and conditions Payout Eligibility and Limitations
+A “Benchmark Trading Day” is a market day where you actively trade and earn at least $150 in Trading Profits (adjusted for holidays). You will not receive credit toward Live Funded Account Benchmark Trading Days for any Benchmark Trading Days earned in an Express Funded Account.
+Payout eligibility in the Live Funded Account remains separate from balance expansion .
+‍ To be eligible for a payout:
+You must have at least 5 Benchmark Trading Days since either your Live Funded Account Effective Date or your last payout, whichever is later.
+Your initial and following payouts are limited to 50% of your share of Trading Profits until you reach 30 Benchmark Trading Days in your Live Funded Account.
+Once you have 30 Benchmark Trading Days in your Live Funded Account, you may: Request 100% of your share of Trading Profits.
+Request one payout per business day, provided other rules are followed.
+To comply with exchange and regulatory guidance, Topstep will monitor your account to ensure total payouts do not exceed 90% of the Starting Balance plus net Trading Profits. If needed, deductions may be made to stay within that limit.
+Topstep will monitor your account to ensure total payouts do not exceed 90% of the Starting Balance plus net Trading Profits. If needed, deductions may be made to stay within that limit.
+Trading in an Express Funded Account?
+Make sure you’re familiar with the rules and objectives of the Express Funded Account before progressing to a Live Funded Account.
+View Express Funded Account rules
+View Express Funded Account rules
+Company
+Trader Support
+Help Center
+Status Page
+Blog
+Press
+About Us
+Merch
+Our Team
+Careers
+Our program
+Live Funded Account Rules
+Express Funded Account Rules
+Responsible Trading Program
+Payout FAQs
+Instant Payouts
+Products & offerings
+Topstep (Prop firm)
+Topstep Brokerage
+Topstep Perps
+TopstepX
+TopstepTV
+Topstep Octagon
+Topstep Labs
+Legal & Regulatory
+Privacy policy
+Terms of Use
+Disclosures & Notices
+Affiliate Terms and Conditions
+Manage Cookie Preferences
+All investing involves risk
+Not a Deposit | Not FDIC Insured | May Lose Value
+Topstep and Affiliated Entities
+Topstep disclaimer. Topstep LLC and its affiliates (collectively, “Topstep”) provide information on this website for general informational purposes only. Testimonials appearing on Topstep’s websites may not be representative of other clients or customers and are not a guarantee of future performance or success. Use of the information on Topstep’s websites is at your own risk and Topstep and its partners, representatives, agents, employees, and contractors assume no responsibility or liability for any use or misuse of such information. Topstep does not provide tax, legal, investment, or accounting advice. You should consult your own advisors before engaging in any transaction.
+The following entities are affiliated but separate entities and wholly owned subsidiaries of Topstep LLC.
+‍ Introducing brokerage services are offered through Topstep Brokerage LLC (“Topstep Brokerage”), a registered introducing broker and a member of the National Futures Association. More information about the firm may be found here under NFA ID# 0567079. Please review Topstep Brokerage’s Risk Disclosures Statement . Futures accounts are not protected by the Securities Investor Protection Corporation (SIPC).
+Simulated trading program services , comprising the Trading Combine, and the Express Funded Account, and Topstep Labs experiments, are operated by TopstepTrader, LLC (“TopstepTrader”). TopstepTrader plans to offer simulated trading of perpetual futures contracts. Please review the Risk Disclosures .
+Live funded proprietary trading firm services are operated by TopstepFunded LLC (“TopstepFunded”). TopstepFunded offers live funded proprietary trading firm for individuals demonstrating proficiency in TopstepTrader’s simulated trading evaluation program. Please review the Risk Disclosures .
+The TopstepX trading platform is a trading platform designed to help retail traders develop sound habits, discipline, and risk management. It is developed and owned by ProjectX Trading LLC (“TopstepX”). Additional information and terms of use can be found here and here .
+TopstepTV is a digital media network offering real-time trading insights and education owned and operated by TopstepTV LLC (“TopstepTV”). Please review the TopstepTV Risk Disclosures .
+The Futures Desk is an online proprietary trading firm that evaluates and funds retail futures traders owned by TS TFD Buyer, LLC (“The Futures Desk”). Additional information and terms and conditions can be found here and here .
+General Risk Disclosures
+Commodity and perpetual futures trading involves substantial risk of loss. All investments involve risk, and not all risks are suitable for every investor. The value of investments may fluctuate and as a result, clients may lose more than their original investment. The past performance of a financial product does not guarantee future results or returns. Please carefully consider whether it is appropriate for you to engage in futures trading in light of your personal financial circumstances. You should only use funds that you can afford to lose without affecting your financial security or lifestyle, and only a portion of those funds should be used to support a single trade because you cannot expect to profit on every trade. To learn more about the risks of trading, please visit our Risk Disclosure .
+System Risk. Trading through an electronic trading or order routing system exposes you to risks associated with system or component failure. System response and account access times may vary due to a variety of factors, including trading volumes, market conditions, system performance, and other factors.
+Trading Combine and Topstep Labs Experiments. The Trading Combine, Express Funded Accounts and Topstep Labs experiments are realistic simulations of trading under actual market conditions and are difficult to pass even for experienced traders. Simulated performance results have certain limitations. Unlike an actual performance record, simulated results do not represent actual trading. Also, because the trades have not actually been executed, the results may have under- or over-compensated for the impact, if any, of certain market factors, such as lack of liquidity. Simulated trading programs, in general, are also subject to the fact that they are designed with the benefit of hindsight. Simulated trading does not involve financial risk, and no simulated trading record can completely account for the impact of financial risk in actual trading. For example, the ability to withstand losses or adhere to a particular trading program in spite of trading losses are material points which can also adversely affect actual trading results. No representation is being made that any account will or is likely to achieve profit or losses similar to those shown.
+2025 Trader Performance Statistics. From January through December 2025, (a) 16.8% of all Trading Combines initiated were successfully completed and afforded the opportunity to advance to the Funded Level, (b) 51.8% of individual participants who entered one or more Trading Combines advanced to the Funded Level in at least one of their Trading Combines, (c) 33.3% of all individual participants at the Funded Level received a payout, and (d) 0.71% of individual participants trading in an Express Funded Account were called up to a Live Funded Account. The Funded Level includes both Express Funded Accounts and Live Funded Accounts, with the aggregate of such accounts used in the percentage determination. These statistics reflect performance in both a simulated trading environment and a live trading environment and are not indicative of future results. These statistics do not reflect simulated trading of perpetual futures.
+NO INVESTMENT ADVICE. NOTHING CONTAINED IN THIS WEBSITE CONSTITUTES INVESTMENT ADVICE, NOR DOES IT CONSTITUTE THE SOLICITATION, ENDORSEMENT, OR RECOMMENDATION OF THE PURCHASE OR SALE OF ANY FUTURES, PERPETUAL FUTURES OR OTHER FINANCIAL PRODUCT. THE WEBSITE CONTENT IS FOR GENERAL INFORMATION ONLY AND SHOULD NOT BE REGARDED AS CONSTITUTING AN OFFER, SOLICITATION, ENDORSEMENT, OR RECOMMENDATION TO BUY OR SELL ANY FUTURES, PERPETUAL FUTURES OR OTHER FINANCIAL PRODUCT AND SHOULD NOT BE REGARDED AS INVESTMENT ADVICE.

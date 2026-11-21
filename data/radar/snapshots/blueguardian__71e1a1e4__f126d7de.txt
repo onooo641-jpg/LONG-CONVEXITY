@@ -1,0 +1,49 @@
+Trading hours and the trading day | Blue Guardian Help Centre
+Skip to content Help Search the help centre ⌘K
+Website Start challenge Help Centre home Collections
+Getting started Account inactivity rule How Blue Guardian works Getting help and using your dashboard
+Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
+Payouts How payouts work
+Billing & accounts Paying for your account: methods, card rules and refunds How many accounts can I have? Futures bundle discounts
+Trading rules Prohibited trading strategies What happens if I break a rule? Futures risk management rules Trading hours and the trading day CFD news trading rules
+Platforms & instruments Trading platforms CFD trading conditions: markets, commissions and leverage Futures contract limits and funded scaling Futures instruments, codes and costs
+CFD plans Instant Standard account rules Instant Starter account rules 1 Step Standard rules 2 Step Standard rules 1 Step Nano rules 2 Step Nano rules Buy Now Pay Later (BNPL) rules
+Futures plans Reserve account rules Elite account rules Express account rules Direct account rules Elite, Reserve & Direct Path to Live Zero account rules Zero Path to Live
+Affiliates & competitions Affiliate program Monthly trading competition
+Help Centre
+Trading rules
+Trading hours and the trading day
+The 5 PM New York daily reset (rollover) for CFD and Futures, and Futures trading hours including the automatic 4:10 PM close.
+Applies to: CFD and Futures Updated 13 November 2026
+Short answer
+For both CFD and Futures, the trading day resets at 5:00 PM New York time (rollover). Futures can be traded from 6:00 PM to 4:10 PM, and any Futures trades still open at 4:10 PM are closed automatically. This does not count as a breach.
+The Futures trading day (New York time) Replay
+Markets open at 6 PM, open positions are closed automatically at 4:10 PM, and the trading day resets at 5 PM New York time, following US daylight saving. What happens when you hit the daily loss limit Replay
+Reaching the daily loss limit closes your open trades and locks the account for the rest of the trading day. It isn't a failed account: trading unlocks at the 5 PM New York reset.
+Daily reset (rollover): both products
+A trading day starts at 5:00 PM New York time and ends at 5:00 PM the next day. The reset affects:
+Daily profit and loss, including daily loss limits
+Open trades carried over into the new day
+Minimum trading day and winning day counts
+Rule compliance tracking
+If a Futures Reserve account is locked after hitting its optional daily loss limit (a soft breach), trading unlocks at the next reset.
+Good to know
+Trades opened after 5:00 PM count towards the next trading day.
+Profit closed after 5:00 PM counts towards the new trading day.
+Trades left open past the reset carry into the next day's calculations.
+Futures trading hours
+Opens
+Closes
+6:00 PM New York time (18:00)
+4:10 PM New York time (16:10) the next day
+All open Futures trades close automatically at 4:10 PM . This automatic close is not a rule violation and will not breach your account.
+Still need help?
+Chat with our support team. We usually reply in a few minutes.
+Chat with us
+More in Trading rules
+Applies to: CFD and Futures Prohibited trading strategies Applies to: CFD and Futures What happens if I break a rule? Applies to: Futures Futures risk management rules Applies to: CFD CFD news trading rules
+On this page Short answer
+Daily reset (rollover): both products
+Good to know
+Futures trading hours
+© 2026 All Rights Reserved – Blue Guardian Terms Privacy Cookies

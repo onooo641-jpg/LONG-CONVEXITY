@@ -1,0 +1,69 @@
+KYC verification: what you need and when | Blue Guardian Help Centre
+Skip to content Help Search the help centre ⌘K
+Website Start challenge Help Centre home Collections
+Getting started Account inactivity rule How Blue Guardian works Getting help and using your dashboard
+Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
+Payouts How payouts work
+Billing & accounts Paying for your account: methods, card rules and refunds How many accounts can I have? Futures bundle discounts
+Trading rules Prohibited trading strategies What happens if I break a rule? Futures risk management rules Trading hours and the trading day CFD news trading rules
+Platforms & instruments Trading platforms CFD trading conditions: markets, commissions and leverage Futures contract limits and funded scaling Futures instruments, codes and costs
+CFD plans Instant Standard account rules Instant Starter account rules 1 Step Standard rules 2 Step Standard rules 1 Step Nano rules 2 Step Nano rules Buy Now Pay Later (BNPL) rules
+Futures plans Reserve account rules Elite account rules Express account rules Direct account rules Elite, Reserve & Direct Path to Live Zero account rules Zero Path to Live
+Affiliates & competitions Affiliate program Monthly trading competition
+Help Centre
+Verification & KYC
+KYC verification: what you need and when
+When identity verification is required, which documents are accepted and how AML checks work. Applies to CFD and Futures.
+Applies to: CFD and Futures Updated 13 November 2026
+Short answer
+You verify your identity once, before your first payout. Have a valid photo ID and a proof of address from the last 3 months ready, and be prepared to take a live selfie.
+When is KYC required?
+Before your first payout on a funded or instant funded account
+Before your first affiliate payout
+Verification is done once per person, and only one verified profile is allowed per individual.
+What you'll need
+1. Proof of identity
+A live photo of a valid, unexpired document: passport, national ID card, driver's licence or residence permit.
+Check which documents are accepted in your country: sumsub.com/supported-documents
+2. Live selfie
+A live selfie or short video that clearly shows your face and matches your ID.
+3. Proof of address
+Dated within the last 3 months and showing your full address. Any one of these:
+Bank statement
+Utility bill (electricity, water, internet)
+Government-issued letter
+Lease agreement signed by both parties
+Credit card statement
+Employer letter confirming your address
+House purchase deed
+If you have none of these, an ID document that shows your full address may be accepted. It must be a different document from the one you used as proof of identity.
+How to verify
+Open the Verification tab in your dashboard and follow the steps.
+Complete verification on your own device and your normal internet connection. Using a virtual machine, remote desktop or proxy is not allowed and may cause verification to fail, extra checks, or payout delays.
+AML screening
+Every user is automatically screened against:
+Global sanctions and watchlists, including OFAC, UN, HMT and EU
+Politically exposed person (PEP) databases
+Adverse media reports
+Extra checks you may be asked for
+Live KYC/AML check: during a payout review we may ask for an additional live verification, for example if documents are unclear or details don't match. This is case by case, not required for everyone.
+Expired documents: your documents must stay valid. If one expires you may need to resubmit, which can delay payouts.
+Good to know
+Verification decisions are made by our third-party provider and cannot be overridden by Blue Guardian.
+Multiple profiles are not allowed. If you created a second profile by mistake, contact support@blueguardian.com before you reach a payout or funding stage.
+Still need help?
+Chat with our support team. We usually reply in a few minutes.
+Chat with us
+More in Verification & KYC
+Applies to: CFD and Futures Who can sign up: age and restricted countries Applies to: CFD and Futures Account rules: ownership, devices and fair use
+On this page Short answer
+When is KYC required?
+What you'll need
+1. Proof of identity
+2. Live selfie
+3. Proof of address
+How to verify
+AML screening
+Extra checks you may be asked for
+Good to know
+© 2026 All Rights Reserved – Blue Guardian Terms Privacy Cookies

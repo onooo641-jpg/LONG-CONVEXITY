@@ -1,0 +1,229 @@
+Futures Prop Firm Regole Spiegato (2026) | Alpha Futures
+Black Friday Early Access · EARLYBOGO40 25K Zero BOGO + 40% off · EARLYBOGO50 25K Direct BOGO + 50% off
+Home
+Chi siamo
+Come Funziona
+Trading
+Piattaforme
+AlphaTrader
+Scopri di più
+WealthCharts
+Scopri di più
+Quantower
+Scopri di più
+Visualizza tutto
+Classifica
+Pagamenti a Vita
+Scopri di più
+Pagamenti Settimanali
+Scopri di più
+Restituzioni del mese
+Scopri di più
+Visualizza tutto
+Mercato
+Azionario & Indici
+Scopri di più
+Valuta
+Scopri di più
+Metalli
+Scopri di più
+Crypto
+Scopri di più
+Visualizza tutto
+AlphaTrader
+Lanciato AlphaTrader — la prossima evoluzione della piattaforma. Ottieni l'accesso anticipato
+Risorse
+Contattaci
+Centro Assistenza
+Inizia la Valutazione
+Accedi
+Home
+Chi siamo
+Come Funziona
+Trading
+Piattaforme
+Classifica
+Mercato
+AlphaTrader
+Lanciato AlphaTrader — la prossima evoluzione della piattaforma. Ottieni l'accesso anticipato
+Risorse
+Contattaci
+Centro Assistenza
+Inizia la Valutazione
+Accedi
+Futures Prop Firm Regole Spiegato: MLL, Coerenza & Limiti (2026)
+A cura del team Alpha Futures · Aggiornato il 23 ottobre 2026
+Aggiornamento — 12 luglio 2026: Il piano Premium è stato dismesso. Tutti gli account Premium attivi vengono rimborsati e chiusi automaticamente - non è necessario un ticket. I piani Zero, Advanced e Direct non sono interessati. I riferimenti a Premium di seguito sono mantenuti per accuratezza storica.
+Parte della nostra serie di prop trading su futures. Inizia con Cosa è un futures prop firm? , quindi esplora: Piattaforme · Migliore futures prop firms (2026) · Alpha Futures recensione (2026) · Regole sui compensi per le performance spiegate (2026) · Alpha Group · Futures vs forex prop firms (2026) · Migliore futures prop firms per principianti (2026) · Pagamento più veloce futures prop firms (2026) . · regola del limite di prezzo dei futures · diario My Alpha
+Questa guida analizza futures prop firm regole — incluso il Limite di Perdita Massima (MLL), la coerenza, i limiti di perdita giornaliera e l'idoneità per le commissioni di performance — in modo che tu sappia cosa conta prima di acquistare una valutazione.
+Le regole delle futures prop firm sono gli Obiettivi di Trading di una valutazione simulata e di un Conto Qualificato: obiettivi di profitto, Maximum Loss Limit (MLL), limiti di perdita giornalieri, coerenza (dove prevista), restrizioni sulle notizie, limiti di posizione e strategie vietate. Non sono suggerimenti facoltativi. Se violi le regole pubblicate, fallisci il tentativo o perdi l'idoneità. Alpha Futures le applica.
+Informazioni generali, non costituiscono consulenza finanziaria. Trading simulato. Le commissioni di performance sono basate sulle performance; i risultati non sono garantiti.
+Perché prop firm esistono regole
+Le società gestiscono programmi di futures simulati in modo che i trader possano dimostrare il controllo del rischio prima dell'accesso a un Account Qualificato. Le regole codificano:
+Limiti di rischio (quanto puoi perdere)
+Obiettivi di rendimento (cosa significa "passare")
+Limiti di comportamento (notizie, copertura, dimensione posizione)
+Eligibilità per la commissione sulle performance (separata dal superamento della valutazione)
+Le regole variano in base al piano e alla fase (valutazione vs Qualificato). Leggere sempre l'articolo di sintesi per il proprio piano esatto prima del checkout.
+Tipi di regole ogni futures prop firm usa
+Regola
+Cosa fa
+Errore tipico
+Obiettivo di profitto
+Profit netto da raggiungere (+ mantenere) per superare la valutazione
+Fermarsi presto dopo un solo giorno di profitto quando la coerenza è ancora applicabile
+Limite di Perdita Massima (MLL)
+Livello che chiude il conto se il saldo lo raggiunge
+Trattare il profitto aperto come "sicuro" nei modelli di trailing
+Protezione Giornaliera da Perdite
+Limite giornaliero o di sessione sulle perdite (ove applicato)
+Una brutta mattinata può rovinare la giornata anche se MLL non viene raggiunto.
+Regola di Coerenza
+Limita il contributo che un singolo giorno può avere al profitto totale
+Giorni di valutazioni con passaggi a biglietto-lotteria con costanza
+Politica sui news
+Restrizioni in occasione di comunicazioni economiche
+Inserimento di nuovi ordini in una finestra vietata
+Limiti di posizione / di scalabilità
+Massimo contratti in base alla dimensione del conto e allo stage
+Aumento eccessivo su micro-contratti prima di comprendere il rischio di tick.
+Pratiche Proibite
+Copertura del rischio, trading inverso, etc.
+Sbilanciamento di posizioni correlate contro la politica
+Regole sulle commissioni di performance
+Quando potrai richiedere le commissioni dopo aver superato i requisiti
+Regole di valutazione confuse con la coerenza della fase qualificata
+Limite di Perdita Massima (MLL)
+Alpha Futures utilizza un trailing MLL alla fine della giornata su tutti i piani: il limite viene aggiornato dal saldo alla fine della sessione, non da un trailing intraday tick-by-tick.
+Esempi (valutazione)
+Zero $25K: $1.000 MLL, $1.500 obiettivo di profitto
+Avanzato $100K: $3.500 MLL, obiettivo di profitto $8.000
+Premium $50K: $2.000 MLL, $3.000 obiettivo di profitto
+Condizione di fallimento (valutazioni): Saldo del conto raggiunge o supera il MLL.
+Protezione Giornaliera Perdite (DLG)
+Daily Loss Guard limita il massimo importo che puoi perdere in un giorno di trading prima che il conto venga bloccato o fallito per il giorno.
+Piano
+DLG sulla valutazione
+DLG su Qualificato
+Zero
+Sì ($500 / $1K / $2K a seconda della dimensione)
+Sì
+Avanzato
+None
+None
+Premium
+None
+None
+Trader takeaway: Zero ha una Daily Loss Guard; Advanced no. Premium è stato interrotto. Tutti i piani attuali applicano comunque MLL.
+Coerenza è la regola
+La coerenza limita quanto può essere grande il tuo miglior giorno rispetto al profitto netto.
+Fase
+Zero
+Avanzato
+Premium (discontinued)
+Valutazione
+None
+40%
+Storico: 50%
+Account Qualificato
+40% sulle richieste di fee di performance
+None
+None
+Approfondisci: Futures Prop Firms Senza Regola di Coerenza (2026) Calcolatore: consistencycalculator.alpha-futures.com
+Obiettivi di profitto e valutazioni in un passaggio
+Alpha Futures Utilizza valutazioni in un solo passaggio per tutti i piani attivi. Non esiste una Fase 2 con una seconda tariffa sullo stesso percorso.
+Piano
+Obiettivi di profitto per dimensione
+Zero
+$1,500 / $3,000 / $6,000 ($25K / $50K / $100K)
+Avanzato
+$4,000 / $8,000 / $12,000 ($50K / $100K / $150K)
+Premium
+$3,000 / $6,000 / $9,000 ($50K / $100K / $150K)
+Passaggio logico: raggiungere e mantenere l'obiettivo; le valutazioni standard richiedono una coerenza del 50%, le valutazioni avanzate richiedono il 40% e le valutazioni Zero non hanno alcuna regola di coerenza. Il premio è stato interrotto.
+Limiti di posizione e scalabilità
+Piani di posizionamento massimo e di scalabilità dipendono dal piano e dalla dimensione. Esempi su Zero valutazione:
+$25.000: 1 mini / 10 micros
+€50.000: 3 minis / 30 micros
+$100.000: 6 mini / 60 micro
+Piano di scalabilità: Zero $25K qualificato non ha un piano di scalabilità; Zero $50K / $100K qualificato può usare la scalabilità. Advanced: nessun piano di scalabilità. Premium: scalabilità sui conti qualificati.
+Regole sulle commissioni di performance (dopo aver superato i requisiti)
+Regole di valutazione e regole sulle commissioni di performance sono correlate ma non identiche.
+Sostegno condiviso a Alpha Futures:
+5 giorni di trading vincenti con profitto di oltre $200 (non necessariamente consecutivi)
+Fino a 4 richieste al mese
+Fino al 50% di profitto per richiesta, entro il limite minimo/massimo del piano
+Il 90% dell'importo richiesto pagato a te
+cinque giorni lavorativi o meno dopo l'approvazione standard, secondo ultimo aggiornamento operativo
+Limiti specifici per il piano e Zero 40% di coerenza qualificata: Spiegazione delle regole sui compensi per le prestazioni.
+Come leggere le regole prima di pagare
+Apri la panoramica del piano per la dimensione che acquisterai
+Annota MLL, target di profitto, DLG e coerenza per la valutazione
+Leggi le regole del conto qualificato che erediterai dopo il superamento (notizie, coerenza nelle richieste, limiti).
+Screenshot o salva la pagina
+Conferma prezzo su alpha-futures.com effettua l'ordine
+→ Fiducia strutturata: Sono Futures Prop Firms Legit?
+FAQ
+Cosa futures prop firm Le regole contano di più?
+Il futures prop firm Le regole più importanti sono solitamente il target di profitto, il Limite di Perdita Massima (MLL), i limiti di perdita giornalieri (se applicabili), la coerenza (ove applicabile), le finestre per notizie/ordini, i limiti di posizione e le strategie proibite. Se si ignorano le regole pubblicate, la valutazione o il conto Qualificato potrebbero fallire — verificare sempre i documenti del piano live prima di fare trading.
+Cosa è futures prop firm MLL?
+Futures prop firm MLL (Limite di Perdita Massima) rappresenta il livello minimo di drawdown per una valutazione simulata o per un Account Qualificato. Se l'equity scende al di sotto dell'MLL, l'account viene chiuso.. Alpha Futures utilizza un trailing MLL alla chiusura della giornata sui suoi piani; gli importi e le percentuali variano in base al piano e alla dimensione. Vedi anche i nostri MLL spiegato guida.
+Cosa sono Alpha Futures prop firm regole?
+Pubblicato il help.alpha-futures.com Regole MLL, obiettivi di profitto, Daily Loss Guard (Zero), coerenza per piano e fase, politica sui notizie, limiti di posizione, strategie proibite e idoneità alla commissione sulle performance. Questo articolo mappa i tipi di regole; i numeri dei piani sono disponibili nel centro assistenza.
+Fai tutto futures prop firms usare le stesse regole?
+Tipo di drawdown, coerenza, notizie e meccanismi di commissione differiscono. Fidati solo della documentazione ufficiale di ciascun operatore.
+Dove si trova la regola di consistenza? Alpha Futures?
+Zero valutazioni: nessuna; Valutazioni standard: 50%; Valutazioni avanzate: 40%. I Conti qualificati Zero utilizzano il 40% tra le richieste di commissioni di performance; i Conti qualificati avanzati non ne hanno. Il premio è stato interrotto. Guida completa.
+Quali regole vengono respinte Alpha Futures valutazione?
+Fallimento principale: il saldo raggiunge o supera l'MLL. Inoltre: violazione del Daily Loss Guard su Zero, violazione della coerenza nelle valutazioni Standard/Advanced o pratiche vietate.
+Queste sono le regole di un broker reale?
+No. Queste sono le regole di valutazione simulato e del conto qualificato. La margine futures dal vivo presso un broker è separato. $25K spiegato.
+Chi è il migliore futures prop firm?
+Per la maggior parte dei trader nel 2026, Alpha Futures è il punto di partenza più forte su Trustpilot (4,4 su 5, più di 6.000 recensioni, ottobre 2026), split delle performance del 90% dal primo giorno, valutazioni in un solo passaggio e MLL alla fine della giornata. Vedi Futures Prop Firm Confronto 2026 , Migliore Futures Prop Firms 2026 , e Cosa è un Futures Prop Firm? .
+Hai bisogno di $25.000 per fare day trading sui futures?
+Non per una valutazione di trading con fondi propri. Paghi una tariffa di valutazione mensile e fai trading con fondi simulati. $25.000 è principalmente la regola PDT per azioni presso molti broker statunitensi, non denaro che devi depositare per un'etichetta di trading con fondi propri di $25.000 simulati. Risposta completa: Hai bisogno di $25.000 per fare day trading sui futures? .
+C'è abbastanza $100 per negoziare futures?
+$100 non bastano per il margine dei futures reali. Le valutazioni partono da $89/mese con Zero $25K. Vedi Più Economico Futures Prop Firm (2026) .
+Quale futures prop firms non hai una regola di coerenza?
+Alpha Futures Le valutazioni Zero non hanno una regola di coerenza nella fase di valutazione. Le valutazioni standard utilizzano il 50% di coerenza; le valutazioni avanzate utilizzano il 40%. Le valutazioni Zero non hanno una regola di coerenza. Il piano Premium è stato interrotto. I Conti qualificati avanzati non hanno una regola di coerenza una volta qualificati. Il piano Premium è stato interrotto. I Conti qualificati Zero hanno una regola di coerenza del 40% tra le richieste di commissioni di performance. Vedi Futures Prop Firms Senza regola di coerenza (2026).
+Lettura correlata
+Alpha Futures Recensione (2026) - Verdetto onesto di un trader
+Cosa è un Futures Prop Firm? (Guida 2026
+Migliore Futures Prop Firms (2026): Piani, Regole & Come Scegliere
+Valutazioni simulate, fondi simulati. Le commissioni sulle performance sono basate sulle performance; i risultati non sono garantiti.
+Altri Articoli
+Iscriviti a
+Esclusivo Offer Benvenuto
+Iscriviti a Alpha Futures Ricevi email per un'offerta di benvenuto esclusiva, informazioni per trader, aggiornamenti sui prodotti e sconti. Inserisci la tua email per rimanere sempre un passo avanti. Puoi disiscriverti in qualsiasi momento.
+Grazie per l'iscrizione alla nostra newsletter.
+Ops! Si è verificato un errore durante l'invio del modulo.
+175,000+
+Analisti qualificati
+1.1 Milioni+
+Trader
+$70M
+Commissioni di Performance Pagate
+Collegamenti rapidi
+Home Chi siamo Come funziona
+Trading
+Piattaforme Mercato Classifica
+Altro
+Risorse Contattaci Promo Codes
+2026 © Alpha Futures - Tutti i diritti riservati.
+Termini di Utilizzo
+Termini e Condizioni
+Accordo di Servizio Generale
+Informativa sulla privacy
+Politica di Reso
+ALPHA FUTURES LIMITATO
+Numero di azienda 15655643
+Indirizzo della sede legale
+1 Allied Business Centre, Coldharbour Lane, Harpenden, Inghilterra, AL5 4UT
+Qualsiasi riferimento al trading, agli analisti, ai ricavi e ai profitti in tutto il sito web si riferisce a trading virtuale, ricavi e profitti, rispettivamente.
+Alpha Futures Informativa sui rischi:
+Il trading di futures comporta un rischio sostanziale e non è adatto a tutti gli investitori. Un investitore potrebbe potenzialmente perdere tutto o più del capitale iniziale. Il capitale a rischio è denaro che può essere perso senza compromettere la sicurezza finanziaria o lo stile di vita. Solo il capitale a rischio dovrebbe essere utilizzato per il trading e solo coloro che dispongono di un capitale a rischio sufficiente dovrebbero considerare il trading. Le performance passate non sono necessariamente indicative dei risultati futuri.
+Informativa sulla Performance Ipotetica:
+I risultati di performance ipotetici presentano molte significative limitazioni di performance e altre caratteristiche, alcune delle quali sono descritte di seguito. Non si garantisce che qualsiasi conto raggiungerà o sia probabile che raggiunga profitti o perdite simili a quelli mostrati sul sito web o in qualsiasi materiale promozionale.
+Regola CFTC 4.41:
+I risultati di performance ipotetici o simulati presentano alcune limitazioni. A differenza di un record di performance reale, i risultati simulati non rappresentano un trading effettivo. Inoltre, poiché i trade non sono stati effettivamente eseguiti, i risultati potrebbero aver sovrastimato o sottostimato l'impatto, se presente, di determinati fattori di mercato, come la mancanza di liquidità. I programmi di trading simulati, in generale, sono inoltre soggetti al fatto che sono progettati con il vantaggio della retrospettiva. Non si fa alcuna affermazione che qualsiasi account realizzerà o è probabile che realizzi profitti o perdite simili a quelle mostrate.
+English Deutsch Español Français Italiano

@@ -1,0 +1,456 @@
+Terms and Conditions | Alpha Futures
+Black Friday Early Access · EARLYBOGO40 25K Zero BOGO + 40% off · EARLYBOGO50 25K Direct BOGO + 50% off
+Home
+About
+How It Works
+Trading
+Platforms
+AlphaTrader
+Learn More
+WealthCharts
+Learn More
+Quantower
+Learn More
+View All
+Leaderboard
+Lifetime Payouts
+Learn More
+Weekly Payouts
+Learn More
+Returns of the month
+Learn More
+View All
+Market
+Equity & Index
+Learn More
+Currency
+Learn More
+Metals
+Learn More
+Crypto
+Learn More
+View All
+AlphaTrader
+Launched AlphaTrader — the next evolution of the platform. Get Early Access
+Resources
+Contact Us
+Help Center
+Start Evaluation
+Sign In
+Home
+About
+How It Works
+Trading
+Platforms
+Leaderboard
+Market
+AlphaTrader
+Launched AlphaTrader — the next evolution of the platform. Get Early Access
+Resources
+Contact Us
+Help Center
+Start Evaluation
+Sign In
+Terms and Conditions
+Effective from July 27, 2026
+These Terms and Conditions of Service and Trading (these "Terms" ) govern rights and obligations in connection with the use of the Services (as defined below) provided by Alpha Futures Limited , incorporated in England and Wales under company number 15655643 with its principal place of business at 1 Allied Business Centre, Coldharbour Lane, Harpenden AL5 4UT ("Alpha", "we", "our") , and offered through our Site (as defined below) and effective from and including the date of User Acceptance (as defined below) ("Effective Date") .
+BACKGROUND
+(A) Alpha is in the business of providing the Available Services (as defined below).
+(B) The User (as defined below) agrees to obtain, and Alpha agrees to provide the Services, on the terms set out in these Terms.
+IT IS AGREED as follows:
+1. INTERPRETATION
+The following definitions and rules of interpretation apply in these Terms.
+1.1 Definitions
+Affiliate: with respect to any party, any other party controlling, controlled by or under common control with such party. For the purposes of this definition the term "control" (and correlative terms) means the power, whether by contract, equity ownership or otherwise, to direct the policies or management of a party.
+Alpha Futures Account(s): either an Analyst Account or a Qualified Analyst Account (as applicable).
+Analyst: a User who is virtually trading through an Analyst Account.
+Analyst Account: a Virtual Account with Challenges which Users must complete.
+Analyst Performance Fees: as defined in Schedule 4.
+Available Services: the services as set out on the "Home" page of our Site.
+Business Days: means a day other than a Saturday, Sunday, or public holiday in England when banks in London are open for business.
+Challenge(s): virtual trading challenges that a User must pass before they are eligible for a Qualified Analyst Account as further set out in condition 7.4.1 and Schedule 1.
+Checkout.com: the payment gateway provided at https://www.checkout.com/ .
+CME and CME Group: the CME Group is made up of four major exchanges Chicago Mercantile Exchange (CME), Chicago Board of Trade (CBOT), New York Mercantile Exchange (NYMEX), and Commodity Exchange Inc (COMEX).
+CoinPayments: the payment gateway provided at https://www.coinpayments.net/ .
+Lifetime Performance Fees: the cumulative total of individual performances fees paid.
+Nuvei: the payment gateway provided at https://www.nuvei.com/ .
+Proprietary Trading: the business of Alpha, at its own discretion, trading its own money, not that of its Users, to make a profit in the financial markets.
+Qualified Analyst: a User who is virtually trading through a Qualified Analyst Account.
+Qualified Analyst Account: a Virtual Account which does not contain Challenges offered to Analysts who have completed the challenge phases associated with the Analyst Account.
+Rise: the payment gateway provided at https://www.riseworks.io/ .
+Services: the services purchased by the User out of the Available Services, which includes the Support.
+Sim Profit Targets: the virtual profit targets to be achieved by Analysts as set out in Schedule 1.
+Site: Alpha Futures ( https://alpha-futures.com/ ).
+Support: as defined in condition 7.
+United States Dollars: means the official currency of the United States of America.
+User, you, your: the individual who has registered for a Virtual Account or an Alpha Futures Account and accepted the terms of these Terms.
+User Acceptance: the User’s tick box consent via our Site to these Terms.
+Veriff: the identity verification platform provided at https://www.veriff.com/ .
+Virtual Account: An account of a User that is registered with Alpha which provides Users access to the Available Services and functionality of our Site.
+Virtual Trading Rules: the virtual trading rules set out in condition 8 below.
+1.2 Any reference to “days” in these Terms shall be a reference to a calendar day.
+1.3 All references to “$” in these Terms and our Site are to United States Dollar and all references to “K” when following a number mean one thousand, for example “$200K” means 200,000 United States Dollars.
+1.4 In the case of any discrepancy between the Challenge requirements listed in the Schedules and our Site, then our Site shall take precedence.
+2. USER REGISTRATION; COMMENCEMENT AND PROVISION OF THE SERVICES
+2.1 By completing the registration form available on our Site, you create a Virtual Account and accept the terms of these Terms. We may carry out checks (including but not limited to verification of identity, fraud prevention checks and checks into your current and past activities on the Virtual Account and the Challenges (as applicable)) from time to time as we deem appropriate, including through our chosen third-party verification service providers. Our Site is accessible from the most commonly used web browsers, but we do not warrant or guarantee that the Services will be compatible with any specific equipment, browser or software.
+2.2 These Terms shall commence on the date of User Acceptance and shall continue until terminated in accordance with its terms. Alpha shall provide the Services to the User in accordance with these Terms from the date of User Acceptance.
+2.3 If Alpha’s performance of its obligations under these Terms is prevented or delayed by any act or omission of the User, then, without prejudice to any other right or remedy it may have, Alpha shall be allowed an extension of time to perform its obligations equal to the delay caused by the User.
+2.4 Alpha may make non-material changes to the Services to:
+2.4.1 reflect changes in applicable laws and regulatory requirements;
+2.4.2 to make minor technical adjustments and improvements, for example to address a security threat; and/or
+2.4.3 to update digital content, provided that the digital content always matches the description that Alpha provided to the User at the time of purchase.
+2.5 Alpha may make such changes without notice because such changes do not affect the User’s use of the Services.
+2.6 If Alpha needs to make material changes to the Services, Alpha will notify the User and the User will then have the right to contact Alpha to cancel the Services before the changes takes effect.
+3. OTHER TERMS APPLY
+3.1 These Terms refer to the following additional terms, which also apply to the User’s receipt and use of and access to the Services:
+3.1.1 Website Terms of Use: Alpha Futures ( https://alpha-futures.com/terms-of-use );
+3.1.2 Community Guidelines: Alpha Futures Help Centre ( https://help.alpha-futures.com/en/ );
+3.1.3 Privacy Policy: Alpha Futures ( https://alpha-futures.com/privacy-policy );
+3.1.4 Cookie Policy: Alpha Futures ( https://alpha-futures.com/privacy-policy );
+3.1.5 Rise Terms of Service: Rise ( https://www.riseworks.io/terms-of-service );
+3.1.6 Veriff Terms of Service: Veriff ( https://www.veriff.com/terms-of-service/ver-TOS-2302 );
+3.1.7 Checkout.com Terms of Service: Checkout.com ( https://www.checkout.com/legal/terms-and-policies );
+3.1.8 CoinPayments Terms of Service: CoinPayments ( https://www.coinpayments.net/help-terms ); and
+3.1.9 Nuvei Terms of Service: https://www.nuvei.com/ .
+4. CHANGES TO THESE TERMS AND CONDITIONS OF SERVICE AND TRADING AND THE SERVICES
+4.1 We reserve the right, in our sole discretion, to update, change or replace any part of these Terms and the Services by posting updates to these Terms on our website. We will, however, notify you by email if there is a material change to a Challenge which you are currently participating in.
+4.2 It is your responsibility to check our website periodically for changes to these Terms and the Services.
+4.3 Your continued use of the Services following the posting of any changes to these Terms or the Services (including any specific notification in respect of the Challenges) constitutes acceptance of those changes.
+5. ALPHA'S RIGHTS TO SUSPEND PROVISION OF THE SERVICES
+5.1 Alpha may suspend the supply of Services in limited circumstances. Alpha does this to:
+5.1.1 deal with technical problems or make minor technical changes;
+5.1.2 update the Services to reflect changes in relevant laws and regulatory requirements; or
+5.1.3 make changes to the Services.
+5.2 Alpha will advise Users of any suspension of the Services. Alpha will contact Users in advance to advise of the suspension of Services unless the problem is urgent or an emergency. If Alpha suspends supply, or advises it will suspend supply, for more than 30 days a User can contact Alpha’s Customer Service Team at its e-mail address or at the address listed in condition 24 of these Terms to end these Terms and will receive a refund of any fees paid in advance for Services that will not be received.
+6. ALPHA RIGHTS TO WITHDRAW FROM THIS AGREEMENT OR SUSPEND SERVICES
+6.1 Alpha may terminate and/or may suspend a User’s access to the Services (or any part thereof) if a User fails, or Alpha suspects that a User has failed, to comply with any term or provision of these Terms. The User will remain liable for all amounts due up to and including the date of termination or suspension (as applicable).
+6.2 Alpha may terminate these Terms if a User fails to make any payment to Alpha when it is due and fails to make such payment within 10 days of Alpha reminding the User that payment is due.
+6.3 If the User causes Alpha to incur losses, for example, through the provision of incomplete, untrue, or outdated information, that may damage Alpha’s business or good reputation, Alpha may terminate (and/or may suspend User access to the Services (or any part thereof)). The User will remain liable for all amounts due up to and including the date of termination or suspension (as applicable).
+7. SERVICES AND ACCOUNT TYPES
+7.1 Services We Provide: Subject to Users signing up to these Terms, we provide Users with the opportunity to trade in a virtual capacity where live market conditions are simulated offering you the opportunity to gain experience of trading risking only virtual funds. We also provide a knowledge base which includes several online resources as well as email and live chat support (the "Support" ).
+7.2 You acknowledge and agree that: (i) any trading that you perform as part of the Services is not real but simulated; (ii) any funds provided to you within an Alpha Futures Account are virtual funds which are not real and that you have no right to possess those virtual funds beyond the scope of their use within the Services; (iii) the virtual funds within an Alpha Futures Account may not be used for any actual trading; and (iv) you are not entitled to the payment of the virtual funds generated within your Alpha Futures Account, nor will you be required to pay any virtual losses.
+7.3 The Services are only intended for persons over the age of 18 residing in the country for which the Services are available. By registering for an account on our Site, you confirm that you are over 18 years of age. If you are under 18 years of age, you may not use the Services. You acknowledge and accept that your access to and use of the Services may be restricted or prohibited by law in some countries, and you undertake to only access and use the Services in accordance with applicable laws. We reserve the right to refuse, restrict or terminate the provision of any Services to any natural person who does not meet the requirements set out in this condition 7.3.
+7.4 We offer two Alpha Futures Accounts:
+7.4.1 Analyst Account
+(a) Following your registration as a User, you will be eligible for an Analyst Account with a one phase evaluation with Challenges, including Sim Profit Targets, which must be achieved before an Analyst is eligible for a Qualified Analyst Account as further set out at Schedule 1 and here: Alpha Futures ( https://alpha-futures.com/ ).
+(b) There are three assessment options to choose when selecting an Analyst Account: (1) standard; (2) advanced; or (3) zero.
+(c) For the avoidance of doubt, no Analyst Performance Fees (as defined in Schedule 4) are payable in respect of any activity undertaken through an Analyst Account.
+(d) There are no time limits applicable to the Challenges, but you must ensure that all Challenge requirements continue to be achieved throughout the time in which you are taking part in a Challenge.
+(e) Analyst Accounts are offered on a subscription-basis and recurring monthly evaluation fees will be payable on an automatic basis each month until you either pass the analyst assessment phase and open a Qualified Analyst Account or you choose to cancel your subscription. Please see condition 10.1.1 for an overview of the Charges payable in respect of an Analyst Account. Further information is also set out on the FAQ section of the Site.
+(f) You may cancel your subscription for an Analyst Account at any time and your access to the Services will cease on the date your next monthly evaluation fees would be payable.
+(g) To cancel your subscription for an Analyst Account you must notify Alpha’s Customer Service Team at accounts@alpha-futures.com or at the address listed in condition 24 of these Terms.
+(h) If you fail the analyst assessment phase within a month, you may choose to reset your account by paying an additional monthly evaluation fee. Your subscription will reset and your monthly payment date will change with your recurring monthly evaluation fees payable on a monthly basis from the date of reset.
+7.4.2 Qualified Analyst Account
+(a) If you successfully complete the analyst assessment phase within an Analyst Account, you may be eligible to operate a Qualified Analyst Account. Schedules 2 and 4 contain further details and terms and conditions applicable to the operation of a Qualified Analyst Account.
+(b) Please see condition 10.1.2 for an overview of the Charges payable in respect of a Qualified Analyst Account. Further information is also set out on the FAQ section of the Site.
+8. VIRTUAL TRADING RULES
+8.1 The Virtual Trading Rules are as set out below:
+8.1.1 each Alpha Futures Account and all virtual funds within it remain the property of Alpha (the "Account Owner" );
+8.1.2 Analysts and Qualified Analysts may receive account credentials, virtual trade execution rights and statements for their Alpha Futures Account on behalf of the Account Owner, yet are prohibited from any direct contact with, or instruction to any Account Owner broker or any other intermediary. Any such direct and non-Account Owner sanctioned contact with any Account Owner broker or intermediary will result in instant termination of the Services and the closure of your Alpha Futures Account;
+8.1.3 Analysts may hold multiple active accounts. For Analyst Accounts, there is no maximum total allocation limit. For Qualified Analyst accounts, the maximum total allocation per household is five accounts;
+8.1.4 if you fail any relevant Challenge then your Alpha Futures Account will be closed, and you will be required to open a new Alpha Futures Account to continue virtually trading;
+8.1.5 the only copy trading allowed is that from your own external account to your Alpha Futures Account. Any Analyst found copy trading other analyst’s trades will be subject to review and if found to be in breach of the Virtual Trading Rules, will result in instant termination of the Services and the closure of your Alpha Futures Account;
+8.1.6 tradeable assets:
+(a) Alpha Futures Accounts: CME Group products
+8.1.7 we reserve the right to determine, at our own discretion, whether certain virtual trades, practices, strategies, or situations are not allowed;
+8.1.8 the rules set out in Schedule 5 apply in addition to this condition 8 and may be updated from time to time on our Site and it your responsibility to check our Site regularly to see if there have been any changes, any changes will apply as soon as they are posted to our Site. If additional information is required, please reach out to the support team at support@alpha-futures.com;
+8.1.9 The standard and advanced account assessments consist of 2 and 3 minimum trading days in the one phase evaluation, due to the 50% and 40% Consistency Rule. A zero account assessment may be passed in a single trading day.
+8.1.10 position size limits:
+(a) Standard accounts: 50k = 5 contracts/50 micros, 100k = 10 contracts/10 micros, 150k = 15 contracts/150 micros.
+(b) Advanced accounts: 50k = 5 contracts/50 micros, 100k = 10 contracts/100 micros, 150k = 15 contracts/150 micros.
+(c) Zero accounts: 50k = 3 contracts/30 micros, 100k = 6 contracts/60micros.
+(d) Direct accounts: 25k = 2 contracts/20 micros, 50k = 4 contracts/40 micros, 100k = 8 contracts/80 micros, 150k = 10 contracts, 100 micros.
+9. DISCLAIMERS
+9.1 Professional Disclaimer: Alpha Futures Accounts are not live trading accounts, they are fully simulated accounts utilising real market quotes from liquidity providers. The analysts featured are representative only and include selected analysts who allow their names to be publicly disclosed. Analyst performance quoted represents past performance in a simulated environment and does not guarantee current or future performance. Further, actual financial instrument trading involves substantial risk of loss and is not suitable for every investor. The virtual trading activities referenced by or undertaken utilising the Services are designed as an educational service but are not intended to promote or encourage you to engage in live trading activity and may not be suitable for all persons.
+9.2 Ultimately, trading in financial markets is a high-risk activity and you are advised not to risk more than you can afford to lose.
+9.3 Information and materials provided by us as part of the Services is intended solely for educational purposes related to trading on financial markets and does not serve in any way as a specific investment recommendation, business recommendation, investment opportunity analysis or similar general recommendation regarding the trading of investment instruments.
+9.4 All trading activity carried out by Users is simulated or virtual trading only.
+9.5 HYPOTHETICAL PERFORMANCE RESULTS HAVE MANY INHERENT LIMITATIONS. NO REPRESENTATION IS BEING MADE THAT ANY ACCOUNT WILL OR IS LIKELY TO ACHIEVE PROFITS OR LOSSES SIMILAR TO THOSE SHOWN. IN FACT, THERE ARE FREQUENTLY SHARP DIFFERENCES BETWEEN HYPOTHETICAL PERFORMANCE RESULTS AND THE ACTUAL RESULTS SUBSEQUENTLY ACHIEVED BY ANY PARTICULAR TRADING PROGRAM. ONE OF THE LIMITATIONS OF HYPOTHETICAL PERFORMANCE RESULTS IS THAT THEY ARE GENERALLY PREPARED WITH THE BENEFIT OF HINDSIGHT. IN ADDITION, HYPOTHETICAL TRADING DOES NOT INVOLVE FINANCIAL RISK, AND NO HYPOTHETICAL TRADING RECORD CAN COMPLETELY ACCOUNT FOR THE IMPACT OF FINANCIAL RISK IN ACTUAL TRADING. FOR EXAMPLE, THE ABILITY TO WITHSTAND LOSSES OR ADHERE TO A PARTICULAR TRADING PROGRAM IN SPITE OF TRADING LOSSES ARE MATERIAL POINTS WHICH CAN ALSO ADVERSELY AFFECT ACTUAL TRADING RESULTS. THERE ARE NUMEROUS OTHER FACTORS RELATED TO THE MARKETS IN GENERAL OR TO THE IMPLEMENTATION OF ANY SPECIFIC TRADING PROGRAM WHICH CANNOT BE FULLY ACCOUNTED FOR IN THE PREPARATION OF HYPOTHETICAL PERFORMANCE RESULTS AND ALL OF WHICH CAN ADVERSELY AFFECT ACTUAL TRADING RESULTS.
+10. CHARGES AND PAYMENT
+10.1 In consideration of the provision of the Services, Alpha charges the following fees:
+10.1.1 Analyst Account – Analyst Accounts are offered on a subscription-basis and recurring monthly evaluation fees will be payable each month until you either pass the analyst assessment phase and open a Qualified Analyst Account or you choose to cancel your subscription. The recurring monthly evaluation fees will be calculated according to whether you select a standard, advanced or zero Analyst Account, the applicable rates are set out on the Site. The recurring monthly evaluation fee, as well as the monthly renewal date of your Analyst Account will be confirmed at the time you open your Analyst Account.
+10.1.2 Qualified Analyst Account – if you successfully complete the analyst assessment phase within an Analyst Account and become eligible to operate a Qualified Analyst Account.
+10.2 Alpha will charge Users the relevant fees, in fiat ($) or those cryptocurrencies accepted by us from time to time (as shown at checkout at the time of User registration) or any other method shown on our Site from time to time, and such fees will be clearly shown on our Site at the time of User Acceptance. If payment is to be taken at regular intervals this will be explained to Users during the order process. Refunds will only be issued as set out in these Terms.
+10.3 If Alpha is unable to collect any payment owed by the User, it may charge interest on the overdue amount at the rate of 2% a year above the Bank of England base rate from time to time. This interest accrues on a daily basis from the due date until the date of actual payment of the overdue amount, whether before or after judgment. A User will pay the interest together with any overdue amount.
+11. INTELLECTUAL PROPERTY RIGHTS
+11.1 The User acknowledges and agrees that Alpha and/or its licensors own all intellectual property rights in the Services. Except as expressly stated herein, these Terms does not grant the User any rights to, under or in, any patents, copyright, database right, trade secrets, trade names, trade marks (whether registered or unregistered), or any other rights or licences in respect of the Services.
+11.2 Alpha hereby grants to the User a non-exclusive, non-transferable right and licence, without the right to grant sublicences, to use the Services during the term of these Terms.
+11.3 Alpha confirms that it has all the rights in relation to the Services that are necessary to grant all the rights it purports to grant under, and in accordance with, the terms of these Terms.
+12. DATA PROTECTION
+12.1 Alpha will use personal data that the User provides as set out in Alpha’s Privacy Notice Alpha Futures ( https://alpha-futures.com/privacy-policy ).
+13. CONFIDENTIALITY
+13.1 Each party undertakes that it shall not at any time, and for a period of five years after termination or expiry of these Terms, disclose to any person any confidential information concerning the business, affairs, customers, clients or suppliers of the other party, except as permitted by condition 13.2.
+13.2 Each party may disclose the other party’s confidential information:
+13.2.1 to its employees, officers, representatives, contractors, subcontractors, or advisers who need to know such information for the purposes of exercising the party’s rights or carrying out its obligations under or in connection with these Terms. Each party shall ensure that its employees, officers, representatives, contractors, subcontractors, or advisers to whom it discloses the other party’s confidential information comply with this condition 13; and
+13.2.2 as may be required by law, a court of competent jurisdiction or any governmental or regulatory authority.
+13.3 No party shall use the other party’s confidential information for any purpose other than to exercise its rights and perform its obligations under or in connection with these Terms.
+14. LIMITATION OF LIABILITY
+14.1 Alpha will be responsible for losses suffered by Users where such losses are caused by Alpha breaching the terms of these Terms, unless:
+14.1.1 it was not obvious that such loss would happen and nothing a User said to Alpha before Alpha accepted the User as a customer meant Alpha should have expected it (so, in the law, the loss was unforeseeable);
+14.1.2 the loss was caused by a delaying event outside Alpha’s control;
+14.1.3 the loss could have avoided through the taking reasonable action by the User. For example, damage to a User’s own digital content or device, which was caused by digital content Alpha supplied and which a User could have avoided by following Alpha’s advice to apply a free update or by correctly following the installation instructions or having the minimum system requirements advised by Alpha; or
+14.1.4 the loss is a business loss which are excluded because the Services are provided for use in a User’s personal capacity only.
+15. USER'S RIGHTS TO WITHDRAW FROM THIS AGREEMENT
+15.1 Subject to condition 15.2 below, if you are a consumer for the purposes of the Consumer Contract Regulations 2013, and if you want to exercise your 14-day cooling off rights (“Cooling-Off Rights”) you must notify Alpha’s Customer Service Team at accounts@alpha-futures.com or at the address listed in condition 24 of these Terms within 14 days from opening your Alpha Futures Account. You may use the premium form that we have attached at Schedule 5, or you can send us a clear statement stating that you are cancelling and providing the details of the Services you purchased and when.
+15.2 You consent to the waiving of your Cooling-Off Rights at the time that you access your Alpha Futures Account to place your first virtual trade. You will be required to confirm such rights have been waived during the User registration process.
+15.3 You have the right to withdraw from these Terms if the Services are defective in that the Services are not as described, are not fit for purpose or are not of satisfactory quality. You must notify Alpha of the defect without undue delay at its e-mail address or at the address listed in condition 24 of these Terms. When exercising your rights under this condition 15, you may request that Alpha remedies the defect or provides a reasonable discount. If the defect cannot be remedied, you can withdraw from these Terms or claim a reasonable discount.
+15.4 These Terms are effective unless and until Alpha’s provision of the Services to the User is terminated by either Alpha or the User as set out in these Terms. In addition to your rights to terminate set out above, you may terminate your use of the Services at any time by notifying Alpha’s Customer Service Team at its e-mail address or at the address listed in condition 24 that you no longer wish to use the Services. You will remain liable for all amounts due up to and including the date of termination.
+16. FORCE MAJEURE
+If Alpha’s provision of the Services is delayed by an event outside its control, such as an act of god, collapse of buildings, fire, explosion, pandemic, epidemic or any law or action taken by a government or public authority, Alpha will inform the User of the same as soon as possible and will take reasonable steps to reduce the delay, where possible. Provided Alpha has taken these steps, it will not compensate the User for the delay.
+17. ASSIGNMENT AND OTHER DEALINGS
+Alpha may at any time transfer these Terms so that a different organisation is responsible for supplying the Services. Alpha will inform Users in writing if this happens and will ensure that the transfer won’t affect a User’s rights under these Terms.
+18. WAIVER
+18.1 A waiver of any right or remedy under these Terms or by law is only effective if given in writing and shall not be deemed a waiver of any subsequent right or remedy.
+18.2 A failure or delay by a party to exercise any right or remedy provided under these Terms or by law shall not constitute a waiver of that or any other right or remedy, nor shall it prevent or restrict any further exercise of that or any other right or remedy. No single or partial exercise of any right or remedy provided under these Terms or by law shall prevent or restrict the further exercise of that or any other right or remedy.
+19. RIGHTS AND REMEDIES
+The rights and remedies provided under these Terms are in addition to, and not exclusive of, any rights or remedies provided by law.
+20. SEVERANCE
+If any provision or part-provision of these Terms is or becomes invalid, illegal or unenforceable, it shall be deemed deleted, but that shall not affect the validity and enforceability of the rest of these Terms.
+21. ENTIRE AGREEMENT
+21.1 These Terms constitute the entire agreement between the parties and supersede and extinguish all previous agreements, promises, assurances, warranties, representations, and understandings between them, whether written or oral, relating to its subject matter.
+21.2 Each party agrees that it shall have no remedies in respect of any statement, representation, assurance, or warranty (whether made innocently or negligently) that is not set out in these Terms. Each party agrees that it shall have no claim for innocent or negligent misrepresentation based on any statement in these Terms.
+22. NO PARTNERSHIP OR AGENCY
+22.1 Nothing in these Terms is intended to, or shall be deemed to, establish any partnership or joint venture between any of the parties, constitute any party the agent of another party, or authorise any party to make or enter into any commitments for or on behalf of any other party.
+22.2 Each party confirms it is acting on its own behalf and not for the benefit of any other person.
+23. THIRD PARTY RIGHTS
+Unless it expressly states otherwise, these Terms does not give any other party a right to enforce any term of these Terms.
+24. NOTICES
+24.1 All notices, requests demand, or other communications required or permitted by the terms of these Terms will be given in writing and delivered to the respective party at the following address:
+A. Alpha Futures Limited
+10 Lower Thames Street, Billingsgate, London, EC3R 6AF
+accounts@alpha-futures.com
+B. User
+To the email address registered against the User’s Alpha Futures Account.
+25. DISPUTES CONCERNING THE SERVICES
+The Alpha Customer Service Team, who can be contacted at its e-mail address or at the address listed in condition 24 of these Terms, will do their best to resolve any problems a User has with Alpha or the Services.
+26. NON-DISPARAGEMENT &amp; REPUTATIONAL RISK
+26.1 The User irrevocably agrees for the duration of these Terms and thereafter, not to disparage or denigrate Alpha in any manner that might be harmful to Alpha’s reputation or business interests. This includes, but is not limited to, any form of public statement, whether made orally or in writing, on any social media platforms, or to any third-party, that could be construed as negative, defamatory, or disparaging. The parties further acknowledge that this condition 26.1 is made in consideration of the Defamation Act 2013 of the United Kingdom and any subsequent amendments or re-enactments thereof. Without prejudice to its other rights and remedies, in order to protect Alpha’s interests and ensure the continued uninterrupted provision of the Services for other users, Alpha reserves the right to terminate a Users access to the Site and/or the Services in the event of a breach of this condition 26.1. The User irrevocably agrees that the determination as to what is and/or amounts to a breach of this condition 26.1 is to be made by Alpha exclusively and shall be final and binding upon the parties in respect of the revocation of access to the Site and/or the Services. The parties acknowledge that this condition 26.1 is a fundamental part of these Terms, intended to protect the integrity, reputation, and business interests of Alpha. Any breach of this condition 26.1 shall entitle Alpha to seek appropriate legal remedies, including but not limited to injunctive relief and damages, under applicable laws and regulations. This condition 26.1 shall survive the termination or expiration of these Terms.
+26.2 In the event of any dispute arising out of or in connection with these Terms, where Alpha is compelled to engage in legal proceedings to enforce its rights under these Terms or to defend itself against any claims or legal actions initiated by the User or any third-party, the User shall be liable for all legal costs, expenses, and disbursements incurred by Alpha in relation to such proceedings. This includes, but is not limited to, legal and other professional fees, court costs, disbursements, and expenses, regardless of the outcome of such proceedings. The User acknowledges that this condition 26.2 is essential to protect Alpha’s interests and agrees to indemnify Alpha for such costs fully. This indemnification obligation shall survive the termination or expiration of these Terms.
+27. GOVERNING LAW
+These Terms are governed by English law and a User may bring claims against Alpha in the English courts. If a User lives in Wales, Scotland or Northern Ireland, the User can also bring claims against Alpha in the courts of the country in which they reside. Alpha can claim against a User in the courts of the country in which they reside.
+Schedule 1: Analyst Account
+Standard Evaluation
+Minimum Virtual Trading Days Virtual Profit Target Maximum Loss Limit Maximum Position Size Analyst Performance Fee Resets Daily Loss Guard Consistency Rule
+2 6% 3-4% 50k = 5 contracts/50 micros, 100k =10 contracts/100 micros, 150k = 15 contracts/150 micros None starting at $109 None 50% — One trading day cannot amount to more than 50% of your overall profit before passing. This is tracked on your dashboard.
+Advanced Evaluation
+Minimum Virtual Trading Days Virtual Profit Target Maximum Loss Limit Maximum Position Size Analyst Performance Fee Resets Daily Loss Guard Consistency Rule
+2 8% 3.5% 50k = 5 contracts/50 micros, 100k = 10 contracts/100 micros, 150k = 15 contracts/150 micros None starting at $189 None 40% — One trading day cannot amount to more than 40% of your overall profit before passing. This is tracked on your dashboard.
+Zero Evaluation
+Minimum Virtual Trading Days Virtual Profit Target Maximum Loss Limit Maximum Position Size Analyst Performance Fee Resets Daily Loss Guard Consistency Rule
+1 6% 4% 50k = 3 contracts/30 micros, 100k = 6 contracts/60 micros None starting at $79 2% of starting account balance None on Zero Evaluation
+Notes:
+Minimum Virtual Trading Days: This refers to the minimum days you may virtually trade as set out in the above table.
+Virtual Profit Target: This refers to your virtual profit target as set out in the above table.
+Maximum Loss Limited (MLL): This is a trailing drawdown set at 4% of all account sizes. This allows Analysts to pick whichever account size they wish without having to change their style.
+How is it calculated? The MLL is calculated from your Alpha Futures Account balance high at the end of each trading day, not intraday equity high. As an example, you start with a $50k account, your starting MLL will be $48,000 ($2,000 or 4%). If you make $500 on the first trading day in the $50K account, your account balance will be $50,500, which will make your MLL $48,500 ($2,000 from the account balance high). If you lose $500 the next day, your account balance would go back to $50,000, but your MLL will remain $48,500. This MLL will not go below $48,500 for the remainder of that account lifespan. Once the MLL reaches the initial starting balance, it won’t continue to trail. Meaning, if your EOD balance reaches $52,000 (+4%) your MLL will now be $50,000 and remain there for the account lifespan. You can monitor your MLL on your dashboard.
+What happens if I hit the MLL? If you break MLL at any time, your Alpha Futures Account will be liquidated. This means any attempted orders after the breach will not execute. Hitting the MLL on an Analyst Account means that account will no longer be eligible for funding opportunities. You may try again by purchasing a Reset or wait for your monthly rebill to return the account to the original starting balance to try again. Hitting MLL on a Qualified Analysts Account means such account has been breached and will be closed at the end of that trading day.
+Analyst Performance Fee: Refer to Schedule 4 for an explanation of Analyst Performance Fees and note they do not apply to Analyst Accounts, only Qualified Analyst Accounts.
+Resets: A Reset allows you to return your Analyst Account to the default settings. This includes starting account balance, Maximum Loss Limit, and Trading Days. Analysts may purchase a Reset at any point during their subscription. You can purchase Resets directly on your dashboard. Reset fees are the same price as your monthly evaluation fee, so they differ based on account size. Resets DO NOT affect your monthly rebill date. Further detail about our monthly evaluation fees can be found on our website.
+Consistency Rule: The consistency rule on standard accounts is 50%. This means that during your evaluation, profits from one single trading day cannot be larger than 50% of your total profits made. The consistency rule on advanced accounts is 40%. This means that during your evaluation, profits from one single trading day cannot be larger than 40% of your total profits made. You will not pass your evaluation Challenge until this rule is satisfied. While we don’t recommend trying to pass your evaluation as fast as possible, below are the largest/best day amounts to be able to satisfy the rule as quickly as possible.
+Standard plan (50%)
+Account size Profit target Recommended best / largest day
+$50K $3,000 $1,500 or less
+$100K $6,000 $3,000 or less
+$150K $9,000 $4,500 or less
+Advanced plan (40%)
+Account size Profit target Recommended best / largest day
+$50K $4,000 $1,600 or less
+$100K $8,000 $3,200 or less
+$150K $12,000 $4,800 or less
+Schedule 2: Qualified Analyst Account
+Account Type Minimum Virtual Trading Days Virtual Profit Target Maximum Loss Limit Maximum Position Size Analyst Performance Fee Resets Daily Loss Guard Consistency Rule
+Standard Qualified 5 None 3-4% Scaling Plan to 50k = 5 contracts/50 micros, 100k = 10 contracts/100 micros, 150k = 15 contracts/150 micros 90% split $599-$999 2% of starting account balance. This is NOT a fail, it just locks your account for the day 40% — One trading day cannot amount to more than 40% of your overall profit before payout request. This is tracked on your dashboard.
+Advanced Qualified 5 None 4% 50k = 5 contracts/50 micros, 100k = 10 contracts/100 micros, 150k = 15 contracts/150 micros 90% split None None None on Advanced Qualified Accounts
+Zero Qualified 5 None 4% Scaling Plan to 50k = 3 contracts/30 micros, 100k = 6 contracts/60 micros 90% split $399-$799 2% of starting account balance. This is NOT a fail, it just locks your account for the day 40% — One trading day cannot amount to more than 40% of your overall profit before payout request. This is tracked on your dashboard.
+Direct Qualified 5 6% for first withdrawal, 4% for second and future withdrawals 3-4% 25k = 2 contracts/20 micros, 50k = 4 contracts/40 micros, 100k = 8 contracts/80 micros, 150k = 10 contracts/100 micros 90% None 2% of starting account balance. This is NOT a fail, it just locks your account for the day 20% — One trading day cannot amount to more than 20% of your overall profit before payout request. This is tracked on your dashboard.
+Notes:
+All trades must be closed before 4:20pm ET each day on both Analyst Accounts and Qualified Analyst Accounts. Our system will automatically close them for you if you forget, but we recommend the analyst closes themselves, so they are aware of their P&L.
+Qualified Analyst Accounts
+There is a 40% Consistency Rule on Zero and Standard Qualified Analyst Accounts.
+The 40% Consistency Rule means that during the simulated funded stage, profits from one single trading day cannot be greater than or equal to 40% of total profits made.
+You will not be eligible for a payout if any of your trading day profits are greater than 40% of total profits made. This value will always be visible in your dashboard, and your payout button/feature will not be available until this rule is satisfied.
+This rule resets in between each successful withdrawal request.
+If you make more than 40% in a single day, your account will NOT be breached, but you will need to continue to trade and make more profit until the rule is satisfied.
+The equation is as follows: biggest day/total profit = 40%
+There is a 20% Consistency Rule on Direct Qualified Accounts.
+The 20% Consistency Rule states profits from any single trading day cannot be greater than or equal to 20% of net profits accumulated since last withdrawal request.
+You will not be eligible for a withdrawal if any of your trading day profits are greater than 20% of net profits made since last withdrawal request. This value will always be visible in your dashboard, and your withdrawal request button/feature will not be available until this rule is satisfied. This rule resets in between each account withdrawal request.
+If you make more than 20% in a single day, your account will NOT be breached, but you will need to continue to trade and make more profit until the rule is satisfied.
+The equation is as follows: biggest day/total net profit (since last request) = 20%
+There is NO Consistency Rule on Advanced Qualified Analyst Accounts.
+Max Allocation: this refers to the maximum allocation of Qualified Analyst Accounts per User. The maximum any single user can hold is 5 Qualified Accounts. Maximum Allocation for each account type is: Standard Account: 5 Qualified Accounts, Zero Account: 5 Qualified Accounts, Direct Account: 5 Qualified Accounts, Advanced Account: 3 Qualified Accounts. Any user that has an active Standard or Advanced Qualified account will be limited to 3. Only one username per individual is permitted, and one individual per household may use our services.
+Analyst Performance Fee: Refer to Schedule 4 for an explanation of Analyst Performance Fees and note they do not apply to Analyst Accounts, only Qualified Analyst Accounts.
+Daily Loss Guard: The Daily Loss Guard is a soft breach rule on Qualified Analyst Accounts only. If you hit the Daily Loss Guard, you do not lose your Qualified Analyst Account, but your account will be locked until the next trading day (6PM ET). The Daily Loss Guard is 2% of account balance on all of our account sizes. If your open or closed (unrealized or realized) P&L at any point reaches -2% during the trading day, all open positions will be flattened, any pending orders will be cancelled, and your Qualified Analyst Account will be prevented from placing any new trades until the start of the next trading day. This is in place because we don’t want to see our Qualified Analysts losing their accounts in one day. We want to help them build consistency and discipline. The Daily Loss Guard is based on each trading day’s P&L, which includes simulated commissions, fees, and both unrealized and realized trade P&L. You can monitor your Daily Loss Guard in your dashboard. Analysts can also make their Daily Loss Guard a smaller value, to really minimize risk, on our platform. Daily Loss Guard by account size: $50K Qualified Analyst Account = -$1,000; $100K Qualified Analyst Account = -$2,000; $150K Qualified Analyst Account = -$3,000.
+Schedule 3: Scaling Plan
+We believe at Alpha Futures in “earn your large positions”. There is no doubt a time and place to size up as an analyst, but you should only begin doing it once you have built up some profit on your Alpha Futures Account.
+The Scaling Plan ensures you do not over leverage the account and increase your buying power as your Alpha Futures Account grows.
+Maximum positions on Standard Qualified Account with the Scaling Plan:
+Profit range $50K minis $50K micros $100K minis $100K micros $150K minis $150K micros
+Less than $1,500 profit 2 20 3 30 3 30
+$1,500-2,000 profit 3 30 4 40 4 40
+$2,000-3,000 profit 5 50 5 50 5 50
+$3,000-4,500 profit 5 50 10 100 10 100
+$4,500+ profit 5 50 10 100 15 150
+Maximum positions on Zero Qualified Account with the Scaling Plan:
+Profit range $50K minis $50K micros $100K minis $100K micros
+Less than $1,500 profit 1 10 2 20
+$1,500-2,000 profit 2 20 3 30
+$2,000-3,000 profit 3 30 4 40
+$3,000-4,500 profit 5 50
+$4,500+ profit 6 60
+Schedule 4: Qualified Analyst Account: Additional Terms
+This Schedule 4 only applies to Users who are approved as Qualified Analysts and are permitted to operate Qualified Analyst Accounts.
+1.1. Qualified Analyst Account:
+1.1.1. A Qualified Analyst Account does not have a Sim Profit Target and you may be eligible for Analyst Performance Fees as defined below.
+1.2. Analyst Performance Fees:
+1.2.1. An “Analyst Performance Fee” is a payment made to a Qualified Analyst by us which represents a portion of the profit made on a live trade placed by us (or an Affiliate) based on the Analysis (as defined below).
+1.2.2. We may use analysis shared by Users in the form of virtual trades (the “Analysis”) for our own purposes including Proprietary Trading and in our sole discretion provide Analyst Performance Fees to Qualified Analysts. We may, in our sole discretion, use the Analysis as a collective of all Qualified Analysts for our own internal use and/or it may be shared with an Affiliate which at its discretion may use the data as signals to enter the live markets on its own capital (or the capital of an Affiliate). We do this independently in our name or the name of an Affiliate to generate revenue and profits. We fund such Analyst Performance Fees from our own funds. For the avoidance of doubt, you will never be provided with access to the live markets and/or control live funds through your use of the Services.
+1.2.3. You will have the opportunity to make requests of withdrawals of Analyst Performance Fees bi-weekly or on demand (please refer to the FAQ section for further details on the eligibility criteria for each pay out type). Please submit an Analyst Performance Fees request via the dashboard platform https://app.alpha-futures.com/profile .
+1.2.4. To receive any Analyst Performance Fees in connection with these Terms, you must request payment in flat ($) or cryptocurrency within the dashboard of your Qualified Analyst Account. An exchange rate fee, as set by the provider from time to time, applies when receiving Analyst Performance Fees in your domestic currencies.
+1.2.5. All virtual trades must be closed within your Qualified Analyst Account at the time of making a withdrawal request, and all virtual trading will be paused and can only resume once the withdrawal amount has been withdrawn from the Qualified Analyst Account balance.
+1.2.6. The Analyst Performance Fee will not be paid where we ascertain, in our sole discretion, that any of your virtual trades have been made in contravention of the Virtual Trading Rules set out in Schedule 5 (as well as those set out in paragraph 1.3 of this Schedule) or otherwise in contravention of these Terms.
+1.2.7. All Analyst Performance Fees withdrawal requests will be processed and paid via wire transfer or Checkout.com, CoinPayments, Nuvei or Rise within 3 Business Days unless the account requires additional verification checks (as set out above), in which case this could take up to 14 Business Days.
+1.3. Additional Virtual Trading Rules for Qualified Analyst Accounts:
+1.3.1. once an Analyst becomes a Qualified Analyst and is provided with a Qualified Analyst Account, there are no Sim Profit Targets that need to be met nor does a Qualified Analyst have to reach a minimum Sim Profit Target before requesting a withdrawal of Analyst Performance Fees on a Qualified Analyst Account;
+1.3.2. a Qualified Analyst is required to maintain the same level of risk on a Qualified Analyst Account (i.e. if a Qualified Analyst had a $100k exposure, they will need to maintain a $100k exposure on their Qualified Analyst Account), a breach of the risk will result in instant termination of the Services and the closure of your Qualified Analyst Account closure;
+1.3.3. virtual position size limits:
+1.3.3.1. Qualified Analyst Account: Qualified Analyst Accounts have a Scaling Plan to help with risk management to work up to max position size. The Scaling Plan is set out at Schedule 3.
+1.3.3.2. The max positions are the same upon reaching the upper threshold of the Scaling Plan, Standard Account 50k = 5 contracts/50 micros, 100k = 10 contracts/100 micros, 150k = 15 contracts/150 micros. Zero Account 50k = 3 contracts/30 micros, 100k = 6 contracts/60 micros.
+1.3.4. Qualified Analyst Disclaimer:
+1.3.4.1. Where a User progresses to a Qualified Analyst Account, the trading activity remains simulated or virtual, but we may use the trading data for our own purposes including Proprietary Trading and provide Analyst Performance Fees to the User. Users only pay fees for our educational and training services and never have any capital at risk on their Alpha Futures Accounts. As we are not carrying out any regulated investment business and we are not issuing any financial promotions, we are not required to be authorised and regulated by the Financial Conduct Authority and our services will not be covered by the Financial Ombudsman Service.
+1.3.4.2. Hypothetical or simulated performance results have certain limitations. Unlike an actual performance record, simulated results do not represent actual trading activity. Also, because the trades are virtual (i.e., they have not actually been executed), the results may have under-or-over compensated for the impact, if any, of certain market factors, such as lack of liquidity. Simulated trading programs, in general, are also subject to the fact that they are designed with the benefit of hindsight. No representation is being made that any Alpha Futures Account will or is likely to achieve virtual profit or losses similar to those shown.
+Schedule 5: Additional Virtual Trading Rules
+PROHIBITED TRADING PRACTICES
+Certain trading practices can exploit the simulated environment but lose when transferred to live markets. We intend to maintain the integrity of our simulated markets. A small subset of analysts, either inadvertently or with the intent to manipulate the system, engage in these practices, which are strictly prohibited.
+At Alpha Futures, we are committed to creating a sustainable and fair trading environment for all in which analysts can build their skills and learn to become profitable.
+Can I automate my trading?
+We enforce the following guidelines on automation to maintain a fair and transparent trading environment:
+We restrict the use of automated systems designed for high-frequency trading (HFT), particularly those resulting in over 100 trades per day.
+The use of AI, bots, and other automated trading mechanisms is strictly prohibited across all account types.
+Semi-Automated Trading is permissible under the condition that analysts actively monitor, manually manage, and understand the system and semi-automation’s purpose.
+Any form of hands-off, continuous day and night trading, or any other type of full automation is strictly forbidden.
+What is the prohibited conduct when executing my trades?
+We emphasize ethical trading practices and order management to ensure a stable and reliable trading environment.
+At Alpha Futures, we are looking for analysts to develop and practice strategies that can eventually translate to a live trading environment. Some of these practices that do not represent this goal would be:
+"All or Nothing" approach. As stated above, we are looking for strategies we can create long term partnerships with to transfer to live funds. We have daily loss guards in place to keep analysts from going on tilt, but it does not replace a stop loss. Using maximum leverage on a single position and using DLL as a stop loss will not be tolerated.
+"Tick or Micro Scalping" (trades less than 10 ticks).
+Consistently just opening and closing positions less than 2 minutes to make profits without any plan. There is no "must hold past X minutes" rule, and we understand that market volatility takes over sometimes. This is only an issue when it is a large sum of the analyst's profit. Taking max leverage positions then quickly closing with a favorable fill is taking advantage of the sim environment.
+Exploiting the absence of slippage and utilizing tight brackets to gain from favorable fills are not permitted.
+Simultaneously placing multiple limit orders at the same price to manipulate order fills is prohibited.
+Gambling tendencies or "account rolling" meaning taking max leverage positions with no plan, no stop loss, and hitting max loss on the account then buying more accounts and repeating the process until a trade hits.
+"Reverse Trading", meaning going short on one account, and long on the other is strictly prohibited at Evaluation and Qualified Phase.
+Initiating trades to profit from isolated fills in gapped or illiquid markets is not allowed.
+All trading activities must adhere to CME Group's rules and regulations.
+Collaborating with others to execute identical or opposite strategies across unconnected accounts is prohibited. Also referred to as “Group Trading”.
+PRICE LIMIT TRADING
+At Alpha Futures, we prioritize protecting our analysts from high volatility and hazardous market conditions. To achieve this, we enforce strict guidelines to prevent trading when a product is within 2% of a CME price limit. This policy ensures our analysts are not exposed to extreme market fluctuations that could lead to significant losses or run the risk of their trades being open while markets are halted.
+A price limit is the maximum price range permitted for a futures contract in each trading session. When markets hit the price limit, different actions occur depending on the product being traded. Markets may temporarily halt until price limits can be expanded, remain in a limit condition, or stop trading for the day based on regulatory rules.
+This prohibited conduct is enforced on ALL Alpha Futures Accounts, not just Analyst Accounts.
+How do I know what the CME price limits are for the contracts I trade?
+Price limits are calculated based on the end-of-day settlement price and vary by product, contract month, and time of day (i.e., overnight price limits differ from the price limits used during business hours).
+The price limits are updated at 5:05 PM EST after each trading session and can be found on the CME Price Limits page.
+Equity products ES, MES, NQ, MNQ, RTY, M2K, YM, and MYM overnight price limits are 7%.
+One of the most effective ways to ensure you are not trading within 2% of any price limit is to monitor the % 'Net Change’ for the contract you are participating in via your trading platform's quote board.
+For example, if you are trading one of the assets above or any other with a price limit up or down of 7%, it would be time to stop trading if that asset reach a 5% net gain or loss on the day, because any larger net change would be within 2% of a ‘Price Limit’.
+How to find the % Net Change for the contract I am trading?
+Your trading platform’s quote board/radar screen not only displays the ‘Net Change’ on the day as prices move but can also display ‘Net Change’ as a percentage or ‘% Net Change.’ If the ‘% Net Change’ is not currently displayed on your quote board, simply add that column to display how close your product is to the price limit.
+Example: In this picture taken on August 4th, 2024, directly on CME Price Limits Page we see that the reference price is 18,556.00 and the 7% limit is up and down are said to be 19846.75 and 17265.25. So, for the 2% price limit rule calculation is done on these premises.
+Stop trading when market priced above: 18556 x (1 + 0.07 - 0.02) = 19483 (+5%)
+Stop trading when market priced below: 18556 x (1 - 0.07 + 0.02) = 17628 (-5%)
+Why is this Prohibited Conduct at Alpha Futures?
+To protect our firm and our analysts, we do not allow market participation when a product is trading within 2% of a price limit. This could run the risk of an order being filled then getting "trapped" in a halt. This prohibited conduct is enforced on all Alpha Futures Accounts.
+Moreover, all speculators assuming risk in a market should have intimate knowledge of that market. It is crucial to be aware of the contract specifications and price limits for any product you trade.
+For more information about your favorite products, please reference the CME Group website. Click on your product from the home page for detailed information.
+NEWS TRADING POLICY
+There are no news trading restrictions for any Evaluation Analyst Accounts.
+Advanced Qualified Accounts do not have News Trading Restrictions, but please review the Prohibited Trading Practices. An "all or nothing" approach or gambling tendencies still will not be tolerated at any time, especially during high volatility events.
+Zero, Standard, and Direct Qualified Accounts:
+You may hold through news releases following your trading plan, but no orders may be executed within 2 minutes before or 2 minutes after high impact news events.
+Here at Alpha Futures we refer to the Calendar on ForexFactory.com . Anything with a red folder is considered high impact and this rule applies.
+Speeches
+The high impact speeches will be marked in Forex Factory with a red folder, just like other High Impact Events. The 4 minute window only applies to the start time listed of the speech event, not its entirety.
+If you violate this policy, your profits on the trade within the 4 minute window will be void, your payout will be denied, and you will have to wait until the next payout date to request again. We understand people make mistakes, and a few times violating this rule will be treated as honest accidents, but if the team starts to recognize a pattern with an analyst purposely not following this policy, Alpha Futures reserves the right to close your Qualified Analyst Account.
+WHAT HAPPENS IF A RULE IS BROKEN ON A QUALIFIED ANALYST ACCOUNT?
+If a rule is breached on a Qualified Analyst Account, please contact accounts@alpha-futures.com. Depending on the rule broken, there will be different outcomes. For example:
+We reserve the right to terminate Alpha Futures Accounts immediately in the event of any breach by the Analyst.
+Virtual profits generated from prohibited trading practices will be void.
+All passed evaluations are subject to review, and Users found guilty of policy ignorance or abuse will not advance to the qualified phase.
+PAYOUT POLICY
+Alpha Futures payout policies are extremely straight forward; follow the rules and you will be paid out. No additional hoops to jump through or hidden denials. Make sure to review our News Trading Policy and Prohibited Practices.
+There are core similarities in the payout policy across all 3 Evaluation to Qualified account types (Standard, Advanced, and Zero) at Alpha Futures:
+Traders have the ability to pay themselves up to 4 times a month. Request every 5 winning trading days of $200 profit, or more.
+The winning trading days do not need to be consecutive, but 5 need to be accumulated between each withdrawal request.
+You may request up to 50% of the profit in your account each withdrawal request (up to withdrawal limit), the rest of the balance stays on the account for drawdown or future withdrawals.
+All withdrawal requests are the amount that will be removed from your trading account, trader received 90% of this request.
+Withdrawal minimum, maximum, and consistency rule will depend on the account type chosen (outlined below).
+Direct Accounts have the same profit split, but no winning day requirement, like our Evaluation to Qualified Accounts. Full details on each:
+Advanced Qualified Accounts
+The minimum withdrawal request on Advanced Qualified Accounts is $1,000, maximum is industry leading $15,000 on all Advanced Account sizes. There is no Consistency Rule on Advanced Qualified Accounts.
+Zero Qualified Accounts
+Traders that choose the Zero Account must also adhere to a 40% Consistency Rule to be eligible for a withdrawal request. The minimum withdrawal request on Zero Accounts is $200:
+25k Zero Qualified Account maximum withdrawal is $1,000
+50k Zero Qualified Account maximum withdrawal is $1,500
+100k Zero Qualified Account maximum withdrawal is $2,500
+Standard Qualified Accounts
+Traders that choose the Standard Account also adhere to a 40% Consistency Rule to be eligible for a withdrawal request, but with larger caps than the Zero Account.
+The minimum withdrawal request on Standard Accounts is $500:
+50k Zero Qualified Account maximum withdrawal is $3,000
+100k Zero Qualified Account maximum withdrawal is $4,000
+150k Zero Qualified Account maximum withdrawal is $5,000
+Direct Qualified Accounts
+Direct Account users can enjoy skipping the Evaluation step, but they do need to reach their Withdrawal Profit Target as well as a 20% Consistency Rule in order to make a withdrawal request.
+Withdrawal Profit Targets are the profit needed to earn in between withdrawal requests. After each withdrawal, your profit target resets and you must earn fresh profit from new trades to reach the next target. Leftover profit from the previous cycle does not carry over.
+The minimum withdrawal request on Direct Qualified Accounts is $500. Details on each account size Maximum Withdrawal and Withdrawal Profit Target on Direct Qualified Accounts below:
+Account Maximum Withdrawal 1st Withdrawal Profit Target 2nd+ Withdrawal Profit Target
+25k Direct Qualified $1,000 $1,500 $1,000
+50k Direct Qualified $2,000 $3,000 $2,000
+100k Direct Qualified $2,500 $6,000 $4,000
+150k Direct Qualified $3,000 $9,000 $6,000
+Schedule 5: Example Cancellation Letter (Consumer Contracts Regulations 2013)
+Alpha Futures Limited
+1 Allied Business Centre, Coldharbour Lane, Harpenden AL5 4UT
+By email: accounts@alpha-futures.com
+I hereby give notice that I cancel my contract of sale for the supply of the following service [describe service] ordered on [date].
+IN WITNESS WHEREOF the parties have duly affixed their signatures under hand and seal on this Date: _______________
+Name: Alpha Futures Limited
+Name:_____________________
+Signature:
+Sign Up for an
+Exclusive Welcome Offer
+Subscribe to Alpha Futures emails for an exclusive welcome offer, trader insights, product updates and discounts. Enter your email to stay one step ahead. You can unsubscribe at any time.
+Thank you for signing up to our newsletter
+Oops! Something went wrong while submitting the form.
+175,000+
+Qualified Analysts
+1.1Million+
+Traders
+$70M
+Performance Fees Paid
+Quick Links
+Home
+About
+How it works
+Trading
+Platforms
+Market
+Leaderboard
+Other
+Resources
+Contact Us Promo Codes
+2026 © Alpha Futures - All rights reserved.
+Terms of Use
+Terms and Conditions
+General Service Agreement
+Privacy Policy
+Return Policy
+ALPHA FUTURES LIMITED
+Company number 15655643
+Registered office address
+1 Allied Business Centre, Coldharbour Lane, Harpenden, England, AL5 4UT
+“Any references to trading, analysts, revenue, and profit throughout the website are references to virtual trading, revenues, and profits, respectively.”
+Alpha Futures Risk Disclosure:
+Futures trading contains substantial risk and is not for every investor. An investor could potentially lose all or more than the initial investment. Risk capital is money that can be lost without jeopardizing your financial security or lifestyle. Only risk capital should be used for trading and only those with sufficient risk capital should consider trading. Past performance is not necessarily indicative of future results.
+Hypothetical Performance Disclosure:
+Hypothetical performance results have many significant performance and other limitations, some of which are described below. No representation is being made that any account will or is likely to achieve profits or losses similar to those shown on the website or any promotional material.
+CFTC Rule 4.41:
+Hypothetical or Simulated performance results have certain limitations. Unlike an actual performance record, simulated results do not represent actual trading. Also, because the trades have not actually been executed, the results may have under-or-over compensated for the impact, if any, of certain market factors, such as lack of liquidity. Simulated trading programs, in general, are also subject to the fact that they are designed with the benefit of hindsight. No representation is being made that any account will or is likely to achieve profit or losses similar to those shown. Testimonials appearing on this website may not be representative of other clients or customers and is not a guarantee of future performance or success. No representation is being made that any evaluation account will achieve profit or losses similar to those shown here.

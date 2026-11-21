@@ -1,0 +1,55 @@
+On-Demand performance fee | Alpha Capital Help Center Skip to main content
+Português do Brasil English Español English
+Português do Brasil English Español English
+Search for articles...
+All Collections
+Qualified Analyst
+On-Demand performance fee
+On-Demand performance fee
+Updated over 3 weeks ago
+The option of a performance fee on-demand, on Alpha Pro / Swing / One / Three / Direct accounts, means that traders can request a payout whenever they wish, provided they fulfil the following requirements:
+Adhere to the Best Day Rule.
+Meet the minimum profit requirement for your plan:
+Alpha Pro, Swing, One, and Three: a minimum of 2% of gross profits on the account balance.
+Alpha Direct: a 3% profit buffer must be reached first, and a minimum of 1% of gross profits is then required on top before you can request a payout.
+Best Day Rule
+This rule states that no single trading day should contribute more than a set percentage of the total generated profits. This percentage depends on your plan:
+Alpha Pro, Swing, One, and Three: 40%
+Alpha Direct: 15%
+Examples
+Using the 40% threshold: if you earn $1,000 on a particular trading day, you will be eligible to request a withdrawal only once your account balance is more than $2,500 above its initial balance. This ensures that the $1,000 trading day accounts for less than 40% of the total profits in the account balance. Similarly, if your total profits are $4,000, your best day should be equal to or below $1,600 for you to be eligible to request a withdrawal.
+For Alpha Direct, using the 15% threshold: on a $100,000 account, you first reach a 3% buffer ($3,000), then generate at least 1% more ($1,000) to request a payout, for $4,000 in total profit. In this example, your best day must stay at or below 15% of that total, so $600 or less ($4,000 x 15%). You then request a withdrawal of $1,000 above the buffer and receive $900 with Alpha Direct's 90% split.
+More Information About the Consistency Score:
+The consistency score is a simple calculation: the net profits generated on your best day are divided by the total net profits on the account.
+If the result is greater than 0.40 (40%), the trader is not complying with the consistency rule. A trader becomes eligible once the result is 0.40 (40%) or less.
+Real-life example: You receive your qualified account and generate $1,200 in net profit on day one. You continue trading, but no other trading day exceeds this $1,200 profit. Once your account balance is $3,000 above its initial balance, you are eligible to request a payout because your consistency score is exactly 40%:
+1,200 ÷ 3,000 = 0.40 (40%)
+Since the consistency score is 40% or less, the account meets the consistency rule requirements.
+FAQ :
+My consistency is "0" – what does this mean?
+This means your account is in drawdown. Since the net profit of your best day is being divided by a negative number (i.e. your account is currently at a loss), the result would technically be a negative number. However, we simply normalise the score to show as "0".
+My consistency is above "100" – what does this mean?
+This means that the net profit generated on your best day is greater than the total profit on the account. You will need to increase your total account profits so that the consistency score drops below the 40% threshold.
+I made a certain amount of profit on my best day. How much profit do I need on the account to pass the consistency rule?
+To find the required profit amount, simply multiply the net profit of your best trading day by 2.5. This works because 2.5 is the inverse of 40% (1 / 0.40), meaning the result of this calculation represents the minimum total profit your account must reach in order to meet the consistency rule and become eligible for a payout.
+I want to withdraw partial profits. How will this affect my consistency?
+When you make a partial withdrawal, your consistency score resets to 0, regardless of how much you leave in the account. This means you can request the remaining amount whenever you wish. However, once a new trade is placed, a new payout and consistency window starts.
+For example, if you have made $1,000 and choose to withdraw $800, leaving $200 in the account, and you take another trade after the withdrawal, from that point on, the consistency will be based on the current payout window alone. This means the $200 will be "locked" until you fulfil the requirements.
+Say, for example, that on Day 1 of this payout window, you make $1,000 in net profit. If no other trading day surpasses this amount, you will need to profit $2,500 within this payout window in order to pass consistency. However, note that once the account balance is $2,500 above its initial balance, you still cannot request your withdrawal, as $200 of it is from the previous payout window.
+Here is how the system interprets it:
+- Best day of this payout window: $1,000
+- Profits made in this payout window: $2,300 (account balance is $2,500 above its initial balance, but $200 is from the previous window)
+- Consistency score: 1,000 / 2,300 = 43%, therefore not compliant with the rule
+The account balance must be more than $2,700 above its initial balance for you to request a withdrawal; that is $1,000 (best day) × 2.5 = $2,500 (required profit), plus the $200 that remained from the previous window.
+To summarise:
+- A partial withdrawal resets consistency; you can request the remaining amount whenever you want.
+- If a new trade is taken, a new consistency window opens. The system will then evaluate your best day and total profits from this window to calculate consistency and determine whether any withdrawal, including the remaining balance from before, is allowed.
+My payout was rejected, and some of my profits were deducted due to a rule breach. How does this affect my consistency?
+As mentioned above, your consistency is recalculated only after you place a new trade on the account. If your account no longer meets the consistency requirements after the breach, this will only appear on your dashboard once you take another trade. If you do not place a new trade, the consistency will not update; and while you can technically submit a new withdrawal request, it will be declined by our team because your account does not meet the consistency rule with the adjusted balance.
+Bi-weekly payouts are not available for accounts that have chosen the performance fee on-demand method.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+[email protected]
+Discord
+Website
+Dashboard
+We run on Intercom

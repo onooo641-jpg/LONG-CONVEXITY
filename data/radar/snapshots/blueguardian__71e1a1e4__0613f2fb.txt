@@ -1,0 +1,48 @@
+What happens if I break a rule? | Blue Guardian Help Centre
+Skip to content Help Search the help centre ⌘K
+Website Start challenge Help Centre home Collections
+Getting started Account inactivity rule How Blue Guardian works Getting help and using your dashboard
+Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
+Payouts How payouts work
+Billing & accounts Paying for your account: methods, card rules and refunds How many accounts can I have? Futures bundle discounts
+Trading rules Prohibited trading strategies What happens if I break a rule? Futures risk management rules Trading hours and the trading day CFD news trading rules
+Platforms & instruments Trading platforms CFD trading conditions: markets, commissions and leverage Futures contract limits and funded scaling Futures instruments, codes and costs
+CFD plans Instant Standard account rules Instant Starter account rules 1 Step Standard rules 2 Step Standard rules 1 Step Nano rules 2 Step Nano rules Buy Now Pay Later (BNPL) rules
+Futures plans Reserve account rules Elite account rules Express account rules Direct account rules Elite, Reserve & Direct Path to Live Zero account rules Zero Path to Live
+Affiliates & competitions Affiliate program Monthly trading competition
+Help Centre
+Trading rules
+What happens if I break a rule?
+What happens if you break a rule during an evaluation or on a funded account, manual reviews, and soft vs hard breaches.
+Applies to: CFD and Futures Updated 13 November 2026
+Short answer
+Breaking a rule in an evaluation means the account can't progress to funded. Breaking a rule on a funded account can lead to the account being closed, your Trader Agreement being terminated and profits being removed. Not every violation is caught automatically, so accounts are also reviewed manually, especially at payout time.
+During an evaluation
+If you break a trading rule or parameter, the account is no longer eligible to move to a funded account.
+Every passed evaluation is reviewed before funding. If a policy breach is found, the account won't be funded and may not be eligible for a refund.
+On a funded account
+Depending on the violation, we may:
+Close the account
+Terminate your Trader Agreement
+Void or remove profits made through prohibited practices
+Deny a payout
+Take action on linked accounts
+Not all breaches are detected straight away
+Some violations are only found during a manual review by our Risk Team, for example during a payout request or a compliance check. We can act on any account found to break our terms, even if the system didn't flag it at the time.
+Soft breach vs hard breach
+Hard breach: the account is failed, for example by hitting the maximum drawdown.
+Soft breach: the account is locked but not failed. For example, hitting the optional daily loss limit on a Futures Reserve account locks trading for the rest of that day. Trading unlocks at the next daily reset, which is 5:00 PM New York time (rollover).
+Risk Team decisions are final
+All compliance and risk decisions made by the Blue Guardian Risk Team are final and binding.
+Still need help?
+Chat with our support team. We usually reply in a few minutes.
+Chat with us
+More in Trading rules
+Applies to: CFD and Futures Prohibited trading strategies Applies to: Futures Futures risk management rules Applies to: CFD and Futures Trading hours and the trading day Applies to: CFD CFD news trading rules
+On this page Short answer
+During an evaluation
+On a funded account
+Not all breaches are detected straight away
+Soft breach vs hard breach
+Risk Team decisions are final
+© 2026 All Rights Reserved – Blue Guardian Terms Privacy Cookies

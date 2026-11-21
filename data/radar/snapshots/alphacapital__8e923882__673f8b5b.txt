@@ -1,0 +1,194 @@
+Alpha Capital vs FundedNext (2026) | Alpha Capital
+How it works
+Trading Objectives
+Evaluation Process
+Product
+Trading
+Platforms
+Trading Tools Lot Size Calculator
+Symbols
+Economic Calendar
+Leaderboard
+About Us
+Learn
+Resources
+Interviews
+Events
+Media
+Community
+Help Center
+FAQ
+Contact Us
+Careers
+Client Area
+How it works
+Product
+Trading
+Platforms
+Trading Tools Lot Size Calculator
+Symbols
+Economic Calendar
+Leaderboard
+About Us
+Learn
+Resources
+Trader Interviews
+Events
+Media
+Community
+Merch
+Help Center
+FAQ
+Contact Us
+Careers
+Client Area
+Written by Alpha Capital Research Team
+Published May 22, 2026
+Updated May 27, 2026
+Reading time 11 Min Read
+May 22, 2026
+Updated May 27, 2026
+11 Min Read By Alpha Capital Research Team
+Alpha Capital vs FundedNext: Scaling Rules Compared (2026)
+Alpha Capital adds 10% of initial balance per scale event with no four-month wait. FundedNext's Scale-Up adds 40% after a four-month window. Compare published scaling rules and stylised maths — re-verify before buying.
+Part of our prop firm guide series. Start with What is a Prop Firm? (2026 complete guide) , then explore: are prop firms legit? , how prop firms work , prop firm vs broker , trading evaluation , simulated funds , performance fee , qualified trader , drawdown types , prop firm red flags , choose by trading style , evaluation cost , realistic performance fees , copy trading UK , Alpha Capital login , ACG vs ACG Markets , performance fee delays , evaluation attempts , prop firm comparisons hub , vs E8 Markets , vs FundingPips , vs Blue Guardian , prop firms in South Africa , prop firms in India , pass without rebuilding strategy , why traders fail evaluations , evaluation fee & refund policy .
+Quick answer: Alpha Capital's published scaling adds 10% of the initial balance per eligible scale event (no four-month wait). FundedNext's standard Scale-Up adds 40% of current balance after a four-month review window. In stylised examples both reach $140K by month 4; FundedNext can end higher by month 12 if every window is hit. Alpha allows more frequent sizing-base updates.
+Metric Alpha Capital FundedNext (Scale-Up)
+Scale events/year (max, stylised) Up to 12 Up to 3
+Increment per scale +10% of initial balance +40% of current balance
+First possible scale 10% gain at withdrawal stage After 4-month window
+Balance month 4 (stylised $100K) $140,000 $140,000
+Balance month 12 (stylised $100K) $220,000 $274,400
+When to choose Alpha Capital
+Your edge shows up monthly and you want sizing base updates without four-month waits.
+You prefer smaller, more frequent scale events on published rules.
+You trade an eligible plan: Alpha Pro, Alpha Swing or Alpha Three.
+You want a published path from evaluation to Alpha Prime — live capital for top-performing Qualified Analysts.
+When to choose FundedNext
+You can sustain performance across four-month windows and want larger 40% jumps.
+FundedNext Pro's separate scale programme fits your milestone structure.
+A higher published scaled ceiling ($4M on standard Scale-Up) matters to your plan.
+Last verified: May 22, 2026. Competitor information reflects each firm's published rules on the date above. Prop firm rules change frequently. Re-verify before making purchase decisions.
+The two questions every serious forex prop trader asks before joining a firm are how do I get paid and how do I scale. Most comparisons of Alpha Capital Group and FundedNext focus on the first question. Performance split, processing time, performance fee frequency. All of it is fair, all of it has been covered to death.
+The more important question, the one that determines the trajectory of your trading career, is the second one. How quickly can your account grow?
+Alpha Capital Group's scaling plan and FundedNext's scaling plan are structurally different. Alpha publishes scale requests each time a Qualified Analyst account hits a 10% gain threshold, with a 10% increase based on the initial account balance. FundedNext publishes a four-month review window on its standard Scale-Up plan, with a 40% balance increase when eligibility criteria are met and a separate FundedNext Pro programme (effective from 12 January 2026) with different benchmarks.
+This article walks through the published rules, the maths, and what each structure means for traders who grow their accounts month to month.
+Scaling Speed Is the Hidden Currency of Prop Trading
+Every prop firm headline focuses on what percentage of simulated profit the trader keeps. Many firms and retail communities call this a profit split; Alpha Capital publishes it as a performance fee split. Headlines compare 80% versus 90% versus 95% because the math is simple: on $1,000 in simulated profit, moving from an 80% split to a 90% split puts an extra $100 with the trader the higher the percentage, the larger the trader's share.
+The trouble with leading with splits alone is that performance splits are static day to day. Scaling changes your starting balance over time. A scaling plan that lets you reset your sizing base more often can matter as much as the split percentage especially if your edge shows up monthly rather than quarterly.
+Two traders with identical strategies who use different scaling plans can end the year on different simulated capital bases. The one whose firm allows more frequent scale events can resize positions sooner. The one whose firm publishes larger but less frequent jumps may end the year on a higher balance if every window is hit.
+This is where Alpha Capital and FundedNext part ways on published rules.
+How Alpha Capital Group's Scaling Plan Works
+Alpha Capital's scaling plan works as follows:
+Once your Qualified Analyst account achieves 10% virtual capital growth, you can request a scale-up at the performance fee withdrawal stage. The scale increases your account by 10% of the initial account balance, not 10% of the current balance. You request scaling in the notes field of your performance fee request and email support. Processing time is 24 to 48 business hours. After scaling, the new account requires a minimum of 5 trading days before the next performance fee applies.
+There is no published minimum time window between scale events. You do not need to wait four months. You do not need a specific number of prior performance fees before becoming eligible, only the published 10% gain threshold at the withdrawal stage.
+Eligible plans are Alpha Pro, Alpha Swing and Alpha Three. The maximum virtual capital growth across all scaled accounts is $2 million cumulative.
+For example, on a $100,000 initial balance, the first scale adds $10,000 to the starting balance ($100,000 → $110,000). The second scale adds another $10,000 based on the same initial balance ($110,000 → $120,000). Each successful scale adds a flat 10% of the original initial balance, not a compound percentage of the current balance.
+For a trader who hits the 10% threshold every month and requests scaling each time, that means up to 12 scale events per year on published rules.
+How FundedNext's Scaling Plan Works
+FundedNext publishes more than one scaling path. This comparison focuses on FundedNext's standard Scale-Up plan. Accounts purchased or reset after 12 January 2026 follow FundedNext's updated Scale-Up rules. FundedNext also publishes a separate FundedNext Pro scale-up programme with different criteria (25% increase per qualifying cycle, 4 performance rewards, 4% growth per cycle, 2-month minimum).
+Standard Scale-Up plan (published criteria)
+Over a four-month period, the trader must meet all of the following:
+Accumulate a minimum of 10% account growth across four consecutive months.
+Receive at least two performance rewards in that same window.
+Conclude the final trading cycle of the window in profit.
+When all three criteria are met, the trader becomes eligible for a 40% increase in account balance, up to a maximum scaled account of $4 million.
+FundedNext reviews accounts on this four-month cadence. The reward per scale is larger than Alpha's (40% of current balance versus 10% of initial balance), but the gating is stricter and the timing is locked to four-month windows.
+For a trader who hits every four-month window, that means a maximum of 3 scale events per year.
+The Math: Frequency vs Size
+Both scaling plans are reasonable. They optimise for different published structures.
+Alpha Capital — linear increments from initial balance
+On Alpha's published rules, each scale adds 10% of the initial balance. From a $100,000 starting account, each successful monthly scale adds $10,000 to the starting balance:
+Month 0: $100,000
+Month 1: $110,000
+Month 2: $120,000
+Month 3: $130,000
+Month 4: $140,000
+Month 8: $180,000
+Month 12: $220,000
+This assumes a stylised trader who hits the 10% threshold and requests scaling every month. Real trading is not this linear.
+FundedNext — 40% jumps every four months
+On FundedNext's published 40% Scale-Up plan, each eligible scale adds 40% of the current balance:
+Month 0: $100,000
+Months 1–3: $100,000 (waiting)
+Month 4: $140,000
+Months 5–7: $140,000 (waiting)
+Month 8: $196,000
+Months 9–11: $196,000 (waiting)
+Month 12: $274,400
+Again, stylised — assumes every four-month window is hit with all criteria met.
+What the comparison actually shows
+The honest read: in this stylised example, both firms reach $140,000 by month 4. After that, FundedNext's larger 40% jumps produce a higher total balance by month 8 onward — if every eligibility window is met. Alpha's advantage is frequency: an active trader can resize on a new starting balance every month rather than waiting through four-month review windows.
+This is not a guarantee of better outcomes. Missing a FundedNext cycle resets the review window. Missing Alpha's 10% threshold delays the next scale. Individual results vary.
+Why Frequency Matters for Active Traders
+The compounding effect of scaling shows up in when you can resize not just the final balance.
+A trader on Alpha Capital who scales from $100,000 to $110,000 in month 1 can immediately size the next trade on the new $110,000 starting balance. The next 10% gain threshold is measured against published rules on the account balance at withdrawal stage.
+A trader on FundedNext who hits their profit target in month 1 still waits through the remainder of the four-month window before the balance moves even if performance is strong in months 2 and 3.
+For traders whose edge shows up month to month and who want their sizing base to update frequently, Alpha's published cadence allows more scale events per year. For traders who prefer larger but less frequent balance jumps and can sustain performance across four-month windows, FundedNext's 40% Scale-Up publishes a different structure and in the stylised year-one example above, a higher ending balance if every window is cleared.
+What Alpha Capital's Published Scaling Rules Mean in Practice
+On Alpha Capital's published rules, a Qualified Analyst can request a scale-up when the account shows a 10% gain at the performance fee withdrawal stage with no mandatory four-month waiting period and no requirement to have processed a specific number of performance fees first (beyond the published gain threshold).
+The wider trading community frequently searches for "fastest scaling prop firm" or "best scaling plan for active traders". On published rules alone, Alpha allows up to 12 scale events per year versus up to 3 on FundedNext's standard four-month Scale-Up plan and the first scale can arrive as soon as the first 10% gain threshold is met, not after a four-month review.
+That frequency difference is the structural comparison. It is not a promise of higher ending balance, higher performance fees, or better trading outcomes.
+Ready to Scale on Published Rules?
+Alpha Capital Group's scaling plan lets Qualified Analysts request a scale-up at the performance fee stage once a 10% gain threshold is met with no published four-month waiting period. View evaluation plans and confirm the full scaling rules before you trade.
+Frequently Asked Questions
+Which prop firm scales faster?
+On published rules, Alpha allows more scale events per year; FundedNext's per-event increase is larger but gated to four-month windows. Outcomes depend on hitting thresholds.
+How does Alpha Capital scaling work?
+At 10% virtual capital growth at the performance fee withdrawal stage, request +10% of initial balance.
+Is FundedNext scaling better long term?
+In stylised year-one maths, FundedNext can show a higher balance by month 12 if every window is cleared. Missing windows resets progress. Not a guarantee.
+Alpha Capital Group is a proprietary trading firm based in the United Kingdom. All accounts operate in a simulated trading environment with simulated funds unless a specific product states otherwise. Performance fees are based on eligible simulated trading results and outcomes are not guaranteed. Always confirm live rules, pricing, and eligibility on alphacapitalgroup.uk/product before purchasing an evaluation.
+Save on your evaluation. See active Alpha Capital promo codes before checkout.
+On this page
+More Resources
+Comparisons
+May 13, 2026 10 Min Read
+Alpha Capital vs FTMO: Plan Variety Compared (2026)
+Five Alpha evaluation programmes vs FTMO's two-plan structure.
+Guides
+May 2, 2026 15 Min Read
+What is a Prop Firm? Complete Guide for Traders (2026)
+Evaluations, simulated funds, performance splits, and FAQ.
+Guides
+May 20, 2026 5 Min Read
+What is a Performance Fee? (2026)
+How qualified traders earn performance fees on simulated results.
+Sign Up for an Exclusive Welcome Offer
+Subscribe to Alpha Capital Group emails for an exclusive welcome offer, trader insights, product updates, and discounts. Enter your email below to stay one step ahead.
+By subscribing, you agree to receive marketing emails from Alpha Capital Group. You can unsubscribe at any time.
+Thank you! Your submission has been received!
+Oops! Something went wrong while submitting the form.
+Home
+Product Alpha One 2-Step Evaluation Alpha Pro
+Trading
+About
+Contact Us Official channels
+Events
+Resources
+Prop Firm Guide
+Prop Firm Evaluations
+Promo Codes
+Archive
+Careers
+© 2026 AlphaGroup
+Mon – Fri: 8am – 8pm (GMT)
+Info@alphacapitalgroup.uk
+All information provided on this site is intended solely for the study purposes related to virtual trading on financial markets and does not serve in any way as a specific investment recommendation, business recommendation, investment opportunity analysis or similar general recommendation regarding the trading of investment instruments.
+*Note: All instances of the term trading refer exclusively to virtual trading
+ALPHA CAPITAL GROUP LIMITED
+Company number 13719951
+Registered office: 1 Allied Business Centre, Coldharbour Lane, Harpenden, England, AL5 4UT
+Cookie Policy
+Privacy Policy
+Terms of Use
+Disclaimer
+Return Policy
+Please note that all accounts we provide to our clients are demo accounts with simulated funds and any trading is conducted in a simulated environment. References to trading, traders, revenue, and profit are references to virtual trading, revenues, and profits respectively. More details can be found in the FAQ section. Okay I Understand.
+EN ES
+DE
+FR
+PT
+CS
+HI
+EN

@@ -1,0 +1,283 @@
+EA Trading Rules: What Your Expert Advisor Can Do | CTI
+Home
+Funding Programs
+1-Step Challenge
+2-Step Challenge
+Instant Funding
+Direct Funding
+FAQs
+Academy
+Resources
+Join Community
+Blog
+Market News
+Symbols Live Feed
+Economic Calendar
+Trading Platforms
+MetaTrader 5
+Match Trader
+Calculators
+Challenge Drawdown Calculator
+Margin Calculator
+Swap Calculator
+Pip Calculator
+Position Size Calculator
+Risk Of Ruin Calculator
+MT5 Trade Manager
+More
+Become an Affiliate
+Partners
+About Us
+Shop
+Start a Prop Firm
+LOG IN
+FREE TRIAL
+LOGIN
+Home
+Funding Programs
+1-Step Challenge
+2-Step Challenge
+Instant Funding
+Direct Funding
+FAQs
+Academy
+Resources
+Join Community
+Blog
+Market News
+Symbols Live Feed
+Economic Calendar
+Trading Platforms
+MetaTrader 5
+Match Trader
+Calculators
+All Calculators
+Challenge Drawdown Calculator
+Margin Calculator
+Swap Calculator
+Pip Calculator
+Position Size Calculator
+Risk Of Ruin Calculator
+MT5 Trade Manager
+More
+Become an Affiliate
+Partners
+About Us
+Shop
+Start a Prop Firm
+Skip to content
+Home › Blog
+› Prop Trading
+› EA Trading Rules at CTI: What Your Expert Advisor Can Do
+Prop Trading
+EA Trading Rules at CTI: What Your Expert Advisor Can Do
+By Martin Najat
+·
+January 12, 2026
+·
+Updated October 7, 2026
+·
+8 min read
+Reading mode
+Dark
+In this article
+Which EAs each CTI program accepts
+The EA trading rules on every account
+Running a bought or third-party EA
+Where your EA runs: VPS, devices and platform
+Trading while you travel
+What your EA has to hit to get funded
+A pre-launch checklist for your EA
+Questions EA traders ask us
+Expert advisors are welcome on every challenge and funded account at City Traders Imperium. Our EA trading rules come down to one question: which EA are you running?
+On the 1-Step Challenge you can run any expert advisor, including one you bought from a marketplace.
+On the 2-Step Challenge , Instant Funding and Direct Funding , you run an EA you built yourself, with the source code to hand.
+Around that sit a few house rules that keep every account clean: a visible stop-loss on each trade, strategies that trade the market rather than the price feed, your EA kept to your own accounts, and a VPS approved before you start.
+Each one is below, with a link to the help center article it comes from.
+Which EAs each CTI program accepts
+Program EAs accepted Martingale Source code
+1-Step Challenge Any EA, including bought and third-party EAs Allowed Not needed
+2-Step Challenge Your own EA Not part of this program Available on request
+Instant Funding Your own EA Not part of this program Available on request
+Direct Funding Your own EA Not part of this program Available on request
+On the 2-Step Challenge, Instant Funding and Direct Funding, “your own” means an EA you hold the full source code for and that reflects your own trading strategy, so you can share the code with us if we ask.
+The full wording is in Does CTI Allow EA Trading?
+So the choice is quick.
+Trading a marketplace EA you did not write? The 1-Step Challenge is built for it.
+Wrote the EA yourself? Every program is open to you, from the 2-Step Challenge to Instant Funding and Direct Funding .
+The EA trading rules on every account
+A visible stop-loss within 60 seconds
+Every trade carries a stop-loss. Set it before entry, or add it within 60 seconds of the position opening. It needs to be visible on the platform, so place it as a real order rather than holding it inside your EA’s code.
+If a trade goes a full minute without one, the system closes it for you and the account carries on as normal. Profit counts toward your target on trades that had a stop-loss in place, which is one more reason to make it automatic. Source: Stop Loss Rule .
+For an EA this is a coding job, not a habit. Send the order with its stop attached, or fire the modify call straight after the fill. Our stop-loss strategy guide covers where to place it so it does its job.
+Strategies that trade the market, not the feed
+Your EA can trade the news, hold overnight and over the weekend, and run around the clock. What every program asks is that it makes its money from market moves.
+These styles sit outside our rules on all programs, per our trading methods guide and the EA article above:
+Strategies built on price-feed delays or errors, such as rollover scalping or news gaps.
+High-frequency or tick scalping, and emulators.
+Arbitrage of any kind: latency, reverse or hedge.
+Grid trading.
+Bracketing, with a buy-stop and a sell-stop either side of price.
+Hedging across accounts, or opposite positions on correlated symbols.
+Putting the whole drawdown limit on one trade idea.
+Martingale, which the 1-Step Challenge allows and the other programs do not.
+Most automated strategies sit well clear of this list. Trend followers, breakout systems, swing trading EAs and news traders all fit comfortably inside it.
+Running a bought or third-party EA
+You do not need the source code to run a third-party EA where the program accepts one. One tip makes the start smoother. A popular marketplace EA places the same trades for everyone running it, and identical trades across several CTI traders can look like coordinated trading.
+The simple answer is a quick email to support before you begin, naming the EA you plan to run. Our Copy Trading Policy recommends exactly that for any setup you want confirmed, and it means you start trading with the green light already in hand.
+Your EA stays yours. You keep it to your own accounts rather than sharing or renting it to other traders. Copying works outward from CTI: with a CTI account as the master, you can copy its trades to your other CTI accounts, your own broker account, or an account at another prop firm.
+Where your EA runs: VPS, devices and platform
+A VPS is a good home for an EA, and you can use one once support has approved it. Send a short email before you trade from it, and connect it directly rather than through a VPN, proxy or IP-masking service. The details are in our IP, VPS and device rules .
+You can use up to two devices: one PC or laptop and one mobile phone, kept the same from the challenge through to the funded account.
+Then pick your platform. CTI offers MetaTrader 5 for traders outside the US, and Match-Trader for everyone, including US traders. EAs written in MQL5 are built for MetaTrader 5.
+If you would like to run your automation on Match-Trader, our support team will confirm your setup before you buy a challenge.
+Trading by hand and want help with sizing and stops?
+Our free MT5 Trade Manager handles position sizing and trade management inside the platform.
+Trading while you travel
+Your account comes with you when you travel. Before you go, email support with your travel dates, the destination country and a flight or hotel booking. That way, logging in from a new country and a new IP address is already expected, and your trading carries on without interruption.
+The details are in our IP, VPS and device rules .
+If your EA runs on an approved VPS, it keeps trading from the same server while you are away.
+What your EA has to hit to get funded
+Here are the targets an automated strategy works toward on the 1-Step Challenge, our most EA-friendly program, from its help center article :
+Rule Requirement
+Profit target 8% of the starting balance
+Maximum drawdown 5% of the starting balance, trailing, balance based
+Daily drawdown None
+Minimum profitable days 3
+Time limit None
+News, overnight and weekend holds Allowed
+The trailing floor sits at the highest balance your account has reached, minus 5% of the starting balance. It rises as that high watermark rises, and withdrawals leave it where it is.
+Our balance-based drawdown explainer works through the numbers, and the Challenge Drawdown Calculator shows where your floor sits for any account size.
+Two of those rules suit automated trading especially well. With no daily limit, your EA is measured against one trailing floor rather than a fresh limit each day. With no time limit, a patient swing system can trade at its own pace.
+An EA trader who passed: Xing Tao
+Xing Tao shows what a well-built EA looks like on our side. He has been developing his system since 2011. It trades 28 currency pairs plus gold and silver around the clock, holds swing positions for 20 days or more, and its largest single loss on the account was 0.4%. Our risk team validated the account when he passed.
+Watch him walk through the system below.
+A pre-launch checklist for your EA
+The program fits the EA: a bought EA on the program that accepts any EA, your own EA with source code on every program.
+Every order carries a visible stop-loss within 60 seconds.
+Martingale only where the program allows it; grid, bracketing and arbitrage logic left out everywhere.
+Risk per trade sized well inside the drawdown limit. The Position Size Calculator and Risk of Ruin Calculator help here.
+Your VPS approved by support and connected without a VPN.
+Your platform chosen: MetaTrader 5 outside the US, Match-Trader confirmed with support if you plan to use it.
+The EA running on accounts you own, with any copying flowing out from a CTI master account.
+For a third-party EA, a quick note to support naming it.
+With all eight ticked, run it on the Challenge Free Trial first. Same platforms, same conditions, no card needed. It is the easiest way to watch your EA place its stops before you start a paid challenge.
+Questions EA traders ask us
+Do I need the source code of my EA?
+On the 1-Step Challenge, no: any EA is welcome, including bought ones. On the 2-Step Challenge, Instant Funding and Direct Funding, you run your own EA and can share its source code with us on request.
+Can I run one EA on several of my own CTI accounts?
+Yes. Set one CTI account as the master and copy its trades across your other CTI accounts.
+Can other traders use my EA?
+Your EA is for your own accounts. Each trader at CTI runs their own strategy, so the EA stays with you rather than being shared, rented or sold to other traders.
+Can my EA trade the news?
+Yes. Where the program allows news trading, it is allowed with no restrictions. Build the strategy around the market’s reaction to the release rather than gaps in the price feed, and it fits our rules on every program.
+Martin Najat
+Chief Executive Officer | CEO
+MBA, BSc Banking and Finance, 8+ years in prop firm operations.
+Martin Najat co-founded City Traders Imperium in 2018 and is the operational and strategic force behind its global trader ecosystem. With a background in banking and finance (BSc, ASCCB-accredited), an MBA, and a professional trading practice of his own, Martin built the systems that let CTI run with reliability, transparency and long-term stability.
+From payout infrastructure to risk controls and trader-support workflows, he shaped the operational backbone that grew CTI from a London startup into a respected international proprietary trading firm and continues to drive the technology that will power the next generation of prop trading. His leadership ensures traders experience a firm that is fast, fair and built to last.
+How we write and review our content: Editorial Policy
+X
+LinkedIn
+← Previous
+CTI vs FTMO: 1-Step, 2-Step and Instant Funding Compared
+Next →
+Weekly Market Sentiment – 18 January 2026
+Share
+In this article
+Which EAs each CTI program accepts
+The EA trading rules on every account
+Running a bought or third-party EA
+Where your EA runs: VPS, devices and platform
+Trading while you travel
+What your EA has to hit to get funded
+A pre-launch checklist for your EA
+Questions EA traders ask us
+Categories
+Market News
+Forex Education
+Funded Traders
+Trading Psychology
+Prop Trading
+Prop School
+CTI vs Prop Firms
+More in Prop Trading
+US Midterms 2026: What CTI Traders Did on Election Night
+You knew it was coming. The date was on every calendar. The polls had been picked apart for weeks. Everyone had a…
+10 min read
+What Is a Prop Firm?
+What Is a Prop Firm? The Ultimate 2026 Guide A prop firm, short for proprietary trading firm, is a company that gives…
+18 min read
+CTI Payout Proof: Real Trader Success Stories & Timeline
+“Show me the money.” That’s what skeptical traders ask on Reddit and Telegram when evaluating prop firms. Fair enough—you’ve seen the horror…
+8 min read
+Keep reading
+Market News
+Weekly Market Sentiment – 15 November 2026
+A hot US inflation report drove the dollar to a 52-week high and revived December Fed hike bets,…
+7 min read
+Read More →
+Market News
+Weekly Market Sentiment – 8 November 2026
+A Democratic midterm sweep sent stocks into a correction this week, while Brent oil slid hard on US-Iran…
+7 min read
+Read More →
+Prop Trading
+US Midterms 2026: What CTI Traders Did on Election Night
+You knew it was coming. The date was on every calendar. The polls had been picked apart for…
+10 min read
+Read More →
+Exit reading mode
+Follow Us
+Funding Programs
+1-Step Challenge
+2-Step Challenge
+Instant Funding
+Direct Funding
+Success Stories
+FAQs
+Free Trial
+Resources
+CTI Academy
+Join Community
+Blog
+Market News
+Symbols Live Feed
+Calculators
+MT5 Trade Manager
+More
+Become an Affiliate
+Partners
+About Us
+Shop
+Start a Prop Firm
+Contact Us
+Contact Support
+Email: support@citytradersimperium.com
+Live Chat: available on the website
+Discord: Join Community
+Terms & Conditions
+Privacy Policy
+Refund Policy
+AML Policy
+Affiliate Agreement
+Conduct Policy
+Editorial Policy
+Sitemap
+Cookie Settings
+Skill assessment programs and simulated demo trading services are provided exclusively by City Traders Imperium Limited, a company incorporated under the laws of Comoros Union with company number 15969 (License No. L15969/CTI), registered address at Hamchako, Mutsamudu, Autonomous Island of Anjouan, Comoros Union, with operating address at Edificio Faro, Oficina 4, Avenidas 12 y 14, Calle 12, Barrio Luján, San José, Costa Rica. City Traders Imperium Academy educational courses are provided by CTI FZCO (Company No. DSO-FZCO-21340), registered at Dubai Silicon Oasis, DDP, Building A1, Dubai, United Arab Emirates.
+Legal Disclosure: City Traders Imperium Limited provides access to simulated trading skill assessment programs designed solely for the evaluation of trading proficiency and risk-management skills. City Traders Imperium Academy provides structured educational courses. All trading activity occurs in a demo environment using virtual capital.
+No Client Funds / No Live Trading: Neither CTI FZCO nor City Traders Imperium Limited is a broker, dealer, exchange, or investment adviser, and neither accepts nor manages client deposits. Participants do not trade real assets or place live market orders. Any rewards are performance-based and derived from skill assessment results only.
+Evaluation & Educational Use Only: All content, tools, and services are provided for educational and evaluation purposes only and shall not be construed as investment advice, solicitation, or an offer to buy or sell any financial product, cryptocurrency, or derivative. Participants are encouraged to consult independent financial, legal, or tax advisors before engaging in any trading activity outside of these services.
+Platforms: MetaTrader 5 & Match-Trader platforms are used exclusively in connection with the simulated skill assessment environment operated by City Traders Imperium Limited.
+Hypothetical Performance Disclosure: Simulated or hypothetical trading results have inherent limitations. Unlike actual performance records, they do not represent real trading activity and may be designed with the benefit of hindsight. No representation is being made that any account will, or is likely to, achieve profits or losses similar to those shown or implied.
+Payments & Refunds: All fees paid are educational service fees for access to courses or skill assessment programs. All fees are non-refundable except as outlined in our Refund Policy .
+Jurisdictional Restrictions: Neither entity offers services to nationals or residents of the following jurisdictions: North Korea (DPRK), Iran, Syria, Cuba, Russia, or to any individual under international sanctions.
+Non-Targeted Reach: Information on these websites is not directed to residents of any country where such distribution or use would be contrary to local law or regulation. It is the user's responsibility to ensure that any use of the websites or services adheres to their local laws or regulations.
+Beware of Impersonators: This is our only official website.
+© 2026 Copyright
+City Traders Imperium & City Traders Imperium Academy.
+All Rights Reserved.
+Black Friday at City Traders Imperium: the only crash you want
+Select an offer to copy its discount code, then claim your discount.
+✕ Copy code CRASH15: Direct Funding, 15% off Copy Copy code CRASH20: 2-Step Challenge, 20% off Copy Copy code CRASH25: Instant Funding, 25% off Copy Copy code CRASH30: 1-Step Challenge, 30% off Copy Claim My Discount Already have an account? Log in

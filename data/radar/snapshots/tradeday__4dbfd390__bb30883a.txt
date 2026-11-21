@@ -1,0 +1,295 @@
+Cookie Policy
+Sobre Nós Como Funciona Preços Blog FAQs Contacto Iniciar Sessão USE O CÓDIGO "FLASH"
+Seja Financiado
+English
+Portuguese
+LEGAL
+FINANCIAMOS TRADERS DE FUTUROS
+Passe na nossa avaliação e receba financiamento para operar nos mercados reais desde o primeiro dia
+POLÍTICA DE COOKIES
+Última atualização: 04 de fevereiro de 2026, 03:27
+Valorizamos muito a sua privacidade. Leia atentamente esta Política de Cookies antes de utilizar o Website www.tradeday.com (o "Website") operado pela TradeDay LLC, uma Sociedade de Responsabilidade Limitada constituída no Illinois, Estados Unidos ("nós, nos, nosso"), uma vez que esta Política de Cookies contém informações importantes sobre a nossa definição de cookies e outras tecnologias de rastreio, a sua privacidade e a forma como podemos utilizar as informações que recolhemos sobre si. Leia também a nossa Política de Privacidade, que fornece mais informações sobre as nossas práticas de privacidade, as suas escolhas e os seus direitos de privacidade.
+O que são cookies?
+Um cookie é um pequeno ficheiro de dados enviado a partir de um Website e armazenado no seu dispositivo pelo seu navegador.
+A nossa colocação e classificação de cookies
+Este Website define os cookies identificados abaixo. Classificámos os cookies que definimos de acordo com a finalidade que servem.
+Cookies essenciais
+Os cookies essenciais são cookies indispensáveis para navegar neste Website e utilizar as suas funcionalidades. Por exemplo, estes cookies podem ser utilizados para manter a segurança, autenticar utilizadores e prevenir ações fraudulentas. Estes cookies estão ativados por predefinição e, sem eles, o Website poderá não funcionar corretamente. Este Website recolhe os seguintes cookies estritamente necessários/essenciais:
+‍
+Plataforma de Gestão de Consentimento Usercentrics
+Descrição
+Este é um serviço de gestão de consentimento. A Usercentrics GmbH é utilizada em websites e aplicações como processador para efeitos de gestão de consentimento.
+Fornecedor
+Usercentrics GmbH
+Proveniência
+Terceiros
+Finalidade
+Conformidade com obrigações legais
+Armazenamento de consentimento
+Duração
+Permanente
+JSDelivr
+Descrição
+Esta é uma CDN para projetos de código aberto.
+Fornecedor
+Volentio JSD Limited
+Proveniência
+Terceiros
+Finalidade
+Funcionalidade
+Otimização
+Apoio ao Cliente
+Análise de Dados
+‍
+Duração
+Permanente
+‍ gstatic.com
+Este é um domínio utilizado pela Google para descarregar conteúdos estáticos para um nome de domínio diferente, num esforço para reduzir a utilização de largura de banda e aumentar o desempenho da rede para o utilizador final.
+Fornecedor
+Alphabet Inc.
+Proveniência
+Terceiros
+Finalidade
+Aumento do desempenho da rede
+Redução da utilização de largura de banda
+Duração
+Permanente
+Cookies funcionais
+Os cookies funcionais são cookies que permitem que um Website se lembre das escolhas que fez no passado e da forma como utiliza o Website. Por exemplo, estes cookies podem ser utilizados para memorizar o idioma que prefere, em que páginas clicou ou qual o seu nome de utilizador e palavra-passe, para que possa iniciar sessão automaticamente na sua conta. Estes cookies estão desativados por predefinição e só serão ativados se der o seu consentimento para tal. Se der o seu consentimento, este Website recolherá os seguintes cookies funcionais:
+unpkg
+Descrição
+Esta é uma rede de distribuição de conteúdos para tudo o que se encontra no npm. É utilizada para carregar qualquer ficheiro de qualquer pacote através de um URL.
+Fornecedor
+Npm, Inc.
+Proveniência
+Terceiros
+Finalidade
+Prestação de serviço
+Responder ao pedido do utilizador
+Garantir a segurança, prevenir fraudes e depurar
+Prevenção de fraude
+Estatísticas
+Desenvolver e melhorar produtos
+Marketing
+Otimização
+Apoio técnico
+Duração
+Permanente
+Como desativar
+Visite o website do fornecedor de cookies.
+Calendly
+Descrição
+Trata-se de uma aplicação de calendário para agendar reuniões.
+Fornecedor
+Calendly
+Proveniência
+Terceiros
+Finalidade
+Funcionalidade
+Otimização
+Comunicação
+Análise de Dados
+Duração
+Permanente
+Como desativar
+Visite o website do fornecedor de cookies.
+Freshchat
+Descrição
+Trata-se de um software de chat em direto. Permite que as empresas interajam com os visitantes do seu website.
+Fornecedor
+Freshworks Inc.
+Proveniência
+Terceiros
+Finalidade
+Apoio ao cliente
+Otimização
+Duração
+Permanente
+Como desativar
+Visite o website do fornecedor de cookies.
+Freshdesk
+Descrição
+Trata-se de um software de apoio ao cliente online baseado na nuvem que fornece suporte de helpdesk.
+Fornecedor
+Freshworks, Inc.
+Proveniência
+Terceiros
+Finalidade
+Apoio ao cliente
+Prestação de serviço
+Duração
+Permanente
+Como desativar
+Visite o website do fornecedor de cookies.
+Cloudflare
+Descrição
+Este é um serviço que proporciona maior segurança e desempenho para websites. A Cloudflare oferece, por exemplo, uma rede de distribuição de conteúdos (“CDN”) para melhorar os tempos de carregamento do website. A utilização de uma CDN permite ao utilizador disponibilizar conteúdos para consulta mais rapidamente com a ajuda de servidores distribuídos regional ou internacionalmente.
+Fornecedor
+Cloudflare Inc.
+Proveniência
+Terceiros
+Finalidade
+Otimização
+Segurança do site
+Melhoria do serviço
+Redução da utilização de largura de banda
+Duração
+Permanente
+Como desativar
+Visite o website do fornecedor de cookies.
+Google AJAX
+Descrição
+Esta é uma rede de distribuição de conteúdos (“CDN”) estável, fiável, de alta velocidade e disponível globalmente para as bibliotecas JavaScript de código aberto mais populares.
+Fornecedor
+Google Ireland Limited
+Proveniência
+Terceiros
+Finalidade
+Entrega de Conteúdo
+Duração
+Permanente
+Como desativar
+https://safety.google/privacy/privacy-controls/
+Segment
+Descrição
+Este é um serviço de infraestrutura de dados de clientes.
+Fornecedor
+Segment.io, Inc.
+Proveniência
+Terceiros
+Finalidade
+Análise de Dados
+Duração
+Permanente
+Como cancelar a subscrição
+Visite o website do fornecedor de cookies.
+Sentry
+Descrição
+Esta é uma plataforma de rastreio de erros e monitorização de desempenho para aplicações Web, aplicações móveis e jogos. É utilizada para monitorizar e corrigir falhas em tempo real.
+Fornecedor
+Functional Software, Inc. a operar como Sentry
+Proveniência
+Terceiros
+Finalidade
+Rastreio
+Deteção de erros de código
+Desenvolver e melhorar produtos
+Duração
+Perpétuo
+Como cancelar a subscrição
+Visite o website do fornecedor de cookies.
+reCAPTCHA
+Descrição
+Este é um serviço que verifica se os dados são introduzidos por um ser humano ou por um programa automatizado.
+Fornecedor
+Google Ireland Limited
+Proveniência
+Terceiros
+Finalidade
+Proteção contra bots
+Prevenção de spam
+Deteção de fraude
+Duração
+6 meses
+Como cancelar a subscrição
+Visite o website do fornecedor de cookies.
+Cookies de marketing
+Os cookies de marketing são cookies que rastreiam a sua atividade online para, por exemplo, ajudar os anunciantes a apresentar anúncios mais relevantes ou para limitar o número de vezes que vê um anúncio. Estes cookies estão desativados por predefinição e só serão ativados se der o seu consentimento para tal. Se der o seu consentimento, este Website recolherá os seguintes cookies de marketing:
+BootstrapCDN
+Descrição
+Trata-se de uma rede de distribuição de conteúdos pública.
+Fornecedor
+StackPath, LLC
+Proveniência
+Terceiros
+Finalidade
+Análise de Dados
+Exibição de conteúdo
+Publicidade
+Duração
+Perpétuo
+Como cancelar a subscrição
+Visite o website do fornecedor de cookies.
+Plug-ins Sociais do Facebook
+Descrição
+Trata-se de um plug-in social do Facebook, que permite ao utilizador ligar o seu website à rede social Facebook.
+Fornecedor
+Meta Platforms Ireland Ltd.
+Proveniência
+Terceiros
+Finalidade
+Integração de funções do Facebook
+Otimização
+Marketing
+Duração
+Perpétuo
+Como cancelar a subscrição
+https://www.facebook.com/ads/preferences/?entry_product=ad_settings_screen
+Hotjar
+Descrição
+Este é um serviço de análise web. É utilizado para recolher dados sobre o comportamento dos utilizadores. O Hotjar também pode processar informações fornecidas por si através de inquéritos e funções de feedback incorporadas no nosso site.
+Fornecedor
+Hotjar Limited
+Proveniência
+Terceiros
+Finalidade
+Análise de Dados
+Feedback
+Duração
+1 ano
+Como cancelar a subscrição
+Visite o website do fornecedor de cookies.
+Google Tag Manager
+Descrição
+Este é um sistema de gestão de etiquetas. Através do Google Tag Manager, as etiquetas podem ser integradas centralmente através de uma interface de utilizador. As etiquetas são pequenas secções de código que podem monitorizar atividades. Os códigos de script de outras ferramentas são integrados através do Google Tag Manager. O Gestor de Etiquetas permite controlar quando uma determinada etiqueta é acionada.
+Fornecedor
+Google Ireland Limited
+Proveniência
+Terceiros
+Finalidade
+Gestão de etiquetas
+Marketing
+Análise de Dados
+Duração
+Perpétuo
+Como cancelar a subscrição
+Visite o website do fornecedor de cookies.
+As suas opções relativas a cookies
+Tem certas opções no que diz respeito à colocação de cookies no seu dispositivo. Pode optar por aceitar ou recusar quaisquer cookies funcionais ou de marketing. Se consentir a colocação destes cookies, mas pretender retirar o seu consentimento posteriormente, pode fazê-lo a qualquer momento através da nossa ferramenta de consentimento de cookies, que se encontra na página inicial do Website. Pode controlar as suas opções de cookies através dos seguintes meios:
+Através da nossa ferramenta de consentimento de cookies, onde pode selecionar as categorias de cookies que permite que sejam colocados no seu dispositivo e retirar esse consentimento; e
+Através do seu navegador, onde pode dar instruções para eliminar ou recusar cookies. Pode visitar o centro de ajuda do seu navegador, as páginas de "Ferramentas", "Editar" ou "Ajuda" para definir as suas preferências de cookies e eliminar cookies. Recomendamos também que visite aboutcookies.org para saber mais sobre como desativar cookies.
+Questões
+Caso tenha alguma dúvida sobre esta Política de Cookies, por favor contacte-nos através de support@tradeday.com .
+‍
+Apoio
+support@tradeday.com Disponível 24/7
+Morada
+Tradeday LLC
+2.º andar, 412 S. Wells
+Chicago, Illinois  60607
+Informação Legal
+›
+Programa de Afiliados
+›
+Termos e Condições
+›
+Política de Privacidade
+›
+Política de Cookies
+›
+Declaração de Acessibilidade
+Siga-nos
+Excelente
+Com base em milhares de avaliações
+4.6
+4.6
+4.8
+© 2026 TradeDay LLC. Todos os direitos reservados.  |  Termos de Utilização: Ao aceder à TradeDay, concorda com os nossos Termos e Condições.
+Produtos Permitidos: Os clientes apenas podem negociar os produtos permitidos listados no nosso website. A TradeDay reserva-se o direito de atualizar esta lista a qualquer momento.
+‍
+Divulgação de Risco: A negociação de futuros envolve um risco substancial de perda e não é apropriada para todos os investidores. O desempenho passado não é necessariamente indicativo de resultados futuros. O risco de perda na negociação pode ser substancial e deve considerar cuidadosamente se tal negociação é adequada para si, tendo em conta a sua situação financeira.
+‍
+Isenção de Responsabilidade do Desafio de Avaliação: A taxa de aprovação de traders no programa de avaliação foi de 36% entre janeiro de 2026 e junho de 2026. A avaliação é uma simulação realista de negociação sob condições reais de mercado e é difícil de passar, mesmo para traders experientes. Os testemunhos apresentados neste website podem não ser representativos de outros clientes e não constituem uma garantia de desempenho ou sucesso futuro.
+Negociação Simulada – Regra 4.41 da CFTC: Os programas de negociação simulada ou hipotética estão sujeitos ao facto de serem concebidos com o benefício da retrospetiva. Não é feita qualquer representação de que qualquer conta obterá lucros ou perdas semelhantes aos apresentados.
+Política de Reembolso: Todas as taxas de subscrição não são reembolsáveis, exceto quando exigido por lei. Por favor, consulte a nossa Política de Reembolso completa no nosso website.
+A TradeDay LLC não está registada junto da SEC ou da CFTC como corretora, consultora de investimento, comissária de futuros ou consultora de negociação de mercadorias.

@@ -1,0 +1,307 @@
+Trading The 2026 Midterm Elections And CTI Traders
+Home
+Funding Programs
+1-Step Challenge
+2-Step Challenge
+Instant Funding
+Direct Funding
+FAQs
+Academy
+Resources
+Join Community
+Blog
+Market News
+Symbols Live Feed
+Economic Calendar
+Trading Platforms
+MetaTrader 5
+Match Trader
+Calculators
+Challenge Drawdown Calculator
+Margin Calculator
+Swap Calculator
+Pip Calculator
+Position Size Calculator
+Risk Of Ruin Calculator
+MT5 Trade Manager
+More
+Become an Affiliate
+Partners
+About Us
+Shop
+Start a Prop Firm
+LOG IN
+FREE TRIAL
+LOGIN
+Home
+Funding Programs
+1-Step Challenge
+2-Step Challenge
+Instant Funding
+Direct Funding
+FAQs
+Academy
+Resources
+Join Community
+Blog
+Market News
+Symbols Live Feed
+Economic Calendar
+Trading Platforms
+MetaTrader 5
+Match Trader
+Calculators
+All Calculators
+Challenge Drawdown Calculator
+Margin Calculator
+Swap Calculator
+Pip Calculator
+Position Size Calculator
+Risk Of Ruin Calculator
+MT5 Trade Manager
+More
+Become an Affiliate
+Partners
+About Us
+Shop
+Start a Prop Firm
+Skip to content
+Home › Blog
+› Prop Trading
+› US Midterms 2026: What CTI Traders Did on Election Night
+Prop Trading
+US Midterms 2026: What CTI Traders Did on Election Night
+By Scott Geekie
+·
+November 4, 2026
+·
+10 min read
+Reading mode
+Dark
+In this article
+Trading the 2026 midterm elections
+Election Day: Logged In, Hands Off
+Results Night: Then Everything Moved
+Gold: The Main Event
+US Indices: Same Night, Three Different Stories
+Forex: The Dollar Pairs Went Their Separate Ways
+The scoreboard: what traders piled into, and what they ignored
+Final Thoughts: What Election Night Teaches Every Trader
+Ready for the Next One?
+Trading the Midterms: Your Questions Answered
+Sources
+You knew it was coming.
+The date was on every calendar. The polls had been picked apart for weeks. Everyone had a view on what the 2026 US midterms would do to the markets.
+And yet, when the results finally landed in the early hours of Wednesday morning, the market still caught plenty of traders off guard.
+Democrats won control of both the House and the Senate ( Forbes ). US stock futures slid, the dollar softened, and gold pushed back above $4,000 an ounce ( CNBC ).
+But we didn’t just want to know what the market did. We wanted to know what traders did.
+So we went through the activity on City Traders Imperium accounts, from election day through to the European open. What we found says a lot about patience, positioning, and where traders put their attention when it really counts.
+Trading the 2026 midterm elections
+CTI traders held back on election day, opening about half as many positions as usual. Once results came in, activity doubled, peaking at 3 – 4x the normal hourly rate between 04:00 and 06:00 UTC. Gold was the most traded market and turned bullish; US indices saw up to 4x normal activity, and Bitcoin and the DAX were largely ignored. News trading isn’t restricted at CTI, so traders were free to trade the results as they landed.
+All trader figures in this post are CTI’s own aggregated platform data, compared with a normal Tuesday or a normal night. They describe what traders did, not what they should do, and don’t indicate future performance.
+Election Day: Logged In, Hands Off
+On Tuesday, our traders showed up.
+They just didn’t do much.
+The number of active traders was only about 10% below a normal Tuesday. But each one opened roughly half as many positions as usual.
+That’s not hesitation. That’s patience.
+Before a binary event, price doesn’t move with intent. It drifts, it chops, it fakes. Any position opened at lunchtime has to survive whatever lands at midnight – and you have no idea what that will be.
+Most of our traders seemed to understand that. They watched. They waited. They let the market come to them.
+If you’re working through a challenge with a daily drawdown limit, this is the habit worth copying. Sitting out the hours before a known event costs you nothing, and it keeps your drawdown intact for when the real move arrives.
+Results Night: Then Everything Moved
+Once the results started landing, the mood flipped.
+Across the night, traders opened about twice as many positions as normal.
+The real rush came between 04:00 and 06:00 UTC on Wednesday. That’s 11 pm to 1 am in New York, right as the big calls were coming through, with the Senate projected shortly after 11:30 pm Eastern ( CBS News ).
+In that two-hour window, positions were opening at three to four times the normal hourly rate.
+And then… it was over.
+By the time Europe sat down to breakfast, activity had cooled to about 30% below the usual pace. The market had already priced in most of the news.
+If you woke up on Wednesday planning to trade the election, you were already late.
+We made this point in our blog on Trading During Global Tension : prediction gets you in too early, reaction gets you in too late. Election night was a live demonstration of both.
+Gold: The Main Event
+If election night had a headliner, it was gold.
+Positions opened on gold were up 77% on a normal night.
+But the more interesting story is how traders’ views shifted.
+Before the results, gold traders were split almost evenly. Half long. Half short. No real conviction either way.
+Once the results came in, the balance tipped:
+The number of traders going long was up 24% on a normal night.
+Longs ended up outnumbering shorts by about 13%.
+That lean lined up with price. Spot gold climbed around 2.6% to roughly $4,032 an ounce by early Wednesday in New York ( CNBC ), with a softer dollar and falling Treasury yields doing the heavy lifting.
+Still, look at the size of that edge.
+13% is a lean. Not a stampede.
+Plenty of traders were happy to fade the move, and that’s healthy. When everyone agrees on a trade, the market usually finds a way to make them pay for it.
+US Indices: Same Night, Three Different Stories
+This is where it got interesting.
+Before the results, our traders leaned long across the US indices. Afterwards, that lean turned mixed or short. But each index told its own story.
+Dow Jones (US30): Positions opened hit 4x normal, and the number of traders more than tripled. Shorts outnumbered longs by about a third – which is unusual for this market.
+S&P 500 (US500): Also 4x normal. But here, longs outnumbered shorts 3 to 1.
+Nasdaq (USTEC): Positions opened up about 50%, with traders split right down the middle.
+So on the same night, the same community was shorting the Dow and buying the S&P.
+How does that add up?
+Our read: traders used the Dow to express the “this is bad for stocks tonight” view as futures slid. And they used the S&P to buy the dip.
+There’s a well-known stat behind that second instinct. Since 1950, the S&P 500 has been higher 12 months after every one of the 19 midterm elections ( Mitrade ). Some traders clearly had that in the back of their minds.
+And the Nasdaq coin flip? Reuters reported that Democratic gains were stoking fears of tougher AI regulation ( MarketScreener ). That’s a real headwind for big tech, but nobody knows how big yet.
+A 50/50 split is exactly what uncertainty looks like in positioning.
+Forex: The Dollar Pairs Went Their Separate Ways
+The dollar softened as the results came in, with the dollar index down about 0.3% by Wednesday morning ( CNBC ).
+You might expect traders to pile into one clean “sell the dollar” trade.
+They didn’t.
+AUDUSD: Positions opened were 2.7x normal, and about 50% more traders went short than long. On a night the dollar was on the back foot, that’s a contrarian call – and a bold one.
+USDJPY: More than double the usual positions, with traders split evenly. Plenty of action. No consensus.
+GBPUSD: Long traders outnumbered shorts by more than 2 to 1, a stronger long lean than usual. For many, this was the cleanest way to sell the dollar.
+EURUSD: Barely moved. Long and short traders were level, and positions opened were about 25% below normal.
+That EURUSD number might be the most telling stat of the night.
+The most traded currency pair in the world. The biggest US political night of the year.
+And our traders mostly left it alone.
+Why? Because when there are cleaner ways to trade a story, you use them. Gold, the indices, and cable gave traders a sharper reaction. EURUSD didn’t.
+The scoreboard: what traders piled into, and what they ignored
+At the bottom of the board sit Bitcoin and the DAX (DE40), with positions opened down about 65% on a normal night.
+For Bitcoin, that’s a big drop. It’s usually the market people reach for when things get dramatic.
+Not this time.
+The DAX is easier to explain. Germany’s main index was simply too far from the story. With US indices offering a direct line to the result, nobody needed a European stand-in – least of all at 5 am Frankfurt time.
+Final Thoughts: What Election Night Teaches Every Trader
+Strip away the politics, and election night was a test.
+Not of who could predict the result. Of who could wait for it.
+Here’s what the data says:
+Waiting is a position. Our traders halved their activity before the results – and kept their drawdowns intact for the moment that mattered.
+Trade the cleanest line to the story. Gold, the US indices and GBPUSD reacted directly to the result. EURUSD, Bitcoin and the DAX didn’t, so traders looked elsewhere.
+The window is short. Most of the action happened in two hours. If you can’t be at your screen for that window, think hard before leaving positions open through it.
+Disagreement is normal. Even on gold, the clearest move of the night, longs led shorts by only 13%. You don’t need the crowd on your side. You do need a plan for being wrong.
+Know your rules before the event, not during it. News trading isn’t restricted at CTI, so nights like this are yours to trade. But freedom isn’t a plan. News brings gaps, slippage, and fast swings, so know your drawdown limits, size down, and decide your exits before the first result lands.
+There will be another night like this. A Fed decision. A jobs report. A headline at 3 am.
+The traders who come through it won’t be the ones who guessed right.
+They’ll be the ones who were patient before the move, and decisive when it finally came.
+Ready for the Next One?
+If you want to build that kind of patience with real capital on the line, City Traders Imperium has been funding traders since 2018. Every challenge comes with CTI Academy included, up to 100% profit share, and a path to scale to $4M.
+Not sure yet? Start with a free trial and see how we operate before you spend a cent.
+Trading the Midterms: Your Questions Answered
+How did markets react to the 2026 midterm elections? As Democrats won the House and Senate, US stock futures slid, Treasury yields fell, the dollar softened, and gold climbed back above $4,000 an ounce.
+Why did gold rise after the midterms? A weaker dollar and lower Treasury yields made gold more attractive, and political uncertainty added some safe-haven demand.
+When was the busiest time to trade the midterm results? Among CTI traders, activity peaked between 04:00 and 06:00 UTC on Wednesday, when positions opened at three to four times the normal hourly rate.
+Do stocks usually rise after midterm elections? Historically, yes. The S&P 500 has been higher 12 months after every midterm since 1950, though past performance doesn’t guarantee future results.
+Is it a good idea to trade during elections? It can be, if you plan for it. Volatility brings opportunity and risk in equal measure, so cut position size, know your drawdown limits, and set exits in advance.
+Can you trade news events like elections with a prop firm? It depends on the firm, as some prop firms restrict trading around high-impact news. At City Traders Imperium (CTI), news trading is not restricted, so traders can trade events like election results, NFP, CPI, and FOMC on both challenge and funded accounts.
+Trading forex, indices, and commodities on margin carries a high level of risk and may not be suitable for everyone. This article is for information only and is not investment advice. CTI trader data reflects aggregate activity on CTI accounts and does not indicate future performance.
+Sources
+CBS News: 2026 midterm live results
+Forbes: Democrats sweep House and Senate
+CNBC: Gold, silver jump, dollar dips as Democrats take control of Congress
+Reuters via Yahoo Finance: Gold rises as dollar weakens
+MarketScreener: Gold jumps over 2% after Democratic midterm wins
+Mitrade: Gold edges higher as midterm results hit the dollar
+Scott Geekie
+Chief Marketing Officer | CMO
+8+ years prop trading industry experience.
+Scott Geekie is CTI’s Chief Marketing Officer, focused on growth and retention in prop trading. He has spent 8+ years inside the model — progressing from trader to intern, client relations, marketing manager and now CMO, a path that spans the full trader lifecycle: who a firm attracts, how traders behave once funded, and what actually drives long-term retention rather than short-term spikes.
+That perspective shapes how CTI grows: deliberate about who it brings in, attentive to behavior beyond conversion metrics, and mindful that in this model small changes compound quickly. Scott is Certified in Content Marketing, SEO and AEO, and is the author of ‘The Trader in the Chair: A Story for Anyone Who’s Bled Quietly at the Charts.’
+How we write and review our content: Editorial Policy
+X
+LinkedIn
+← Previous
+Weekly Market Sentiment – 1 November 2026
+Next →
+Weekly Market Sentiment – 8 November 2026
+Share
+In this article
+Trading the 2026 midterm elections
+Election Day: Logged In, Hands Off
+Results Night: Then Everything Moved
+Gold: The Main Event
+US Indices: Same Night, Three Different Stories
+Forex: The Dollar Pairs Went Their Separate Ways
+The scoreboard: what traders piled into, and what they ignored
+Final Thoughts: What Election Night Teaches Every Trader
+Ready for the Next One?
+Trading the Midterms: Your Questions Answered
+Sources
+Categories
+Market News
+Forex Education
+Funded Traders
+Trading Psychology
+Prop Trading
+Prop School
+CTI vs Prop Firms
+More in Prop Trading
+What Is a Prop Firm?
+What Is a Prop Firm? The Ultimate 2026 Guide A prop firm, short for proprietary trading firm, is a company that gives…
+18 min read
+CTI Payout Proof: Real Trader Success Stories & Timeline
+“Show me the money.” That’s what skeptical traders ask on Reddit and Telegram when evaluating prop firms. Fair enough—you’ve seen the horror…
+8 min read
+Balance-Based Drawdown Explained: Why CTI’s Risk Model Gives You More Breathing Room
+Why Drawdown Rules Make or Break Your Challenge Many prop firm challenge failures aren’t because traders can’t hit profit targets. They’re because…
+10 min read
+Keep reading
+Market News
+Weekly Market Sentiment – 15 November 2026
+A hot US inflation report drove the dollar to a 52-week high and revived December Fed hike bets,…
+7 min read
+Read More →
+Market News
+Weekly Market Sentiment – 8 November 2026
+A Democratic midterm sweep sent stocks into a correction this week, while Brent oil slid hard on US-Iran…
+7 min read
+Read More →
+Market News
+Weekly Market Sentiment – 1 November 2026
+Four central banks held this week while oil pushed to a six-month high and gold slid to a…
+7 min read
+Read More →
+Exit reading mode
+Follow Us
+Funding Programs
+1-Step Challenge
+2-Step Challenge
+Instant Funding
+Direct Funding
+Success Stories
+FAQs
+Free Trial
+Resources
+CTI Academy
+Join Community
+Blog
+Market News
+Symbols Live Feed
+Calculators
+MT5 Trade Manager
+More
+Become an Affiliate
+Partners
+About Us
+Shop
+Start a Prop Firm
+Contact Us
+Contact Support
+Email: support@citytradersimperium.com
+Live Chat: available on the website
+Discord: Join Community
+Terms & Conditions
+Privacy Policy
+Refund Policy
+AML Policy
+Affiliate Agreement
+Conduct Policy
+Editorial Policy
+Sitemap
+Cookie Settings
+Skill assessment programs and simulated demo trading services are provided exclusively by City Traders Imperium Limited, a company incorporated under the laws of Comoros Union with company number 15969 (License No. L15969/CTI), registered address at Hamchako, Mutsamudu, Autonomous Island of Anjouan, Comoros Union, with operating address at Edificio Faro, Oficina 4, Avenidas 12 y 14, Calle 12, Barrio Luján, San José, Costa Rica. City Traders Imperium Academy educational courses are provided by CTI FZCO (Company No. DSO-FZCO-21340), registered at Dubai Silicon Oasis, DDP, Building A1, Dubai, United Arab Emirates.
+Legal Disclosure: City Traders Imperium Limited provides access to simulated trading skill assessment programs designed solely for the evaluation of trading proficiency and risk-management skills. City Traders Imperium Academy provides structured educational courses. All trading activity occurs in a demo environment using virtual capital.
+No Client Funds / No Live Trading: Neither CTI FZCO nor City Traders Imperium Limited is a broker, dealer, exchange, or investment adviser, and neither accepts nor manages client deposits. Participants do not trade real assets or place live market orders. Any rewards are performance-based and derived from skill assessment results only.
+Evaluation & Educational Use Only: All content, tools, and services are provided for educational and evaluation purposes only and shall not be construed as investment advice, solicitation, or an offer to buy or sell any financial product, cryptocurrency, or derivative. Participants are encouraged to consult independent financial, legal, or tax advisors before engaging in any trading activity outside of these services.
+Platforms: MetaTrader 5 & Match-Trader platforms are used exclusively in connection with the simulated skill assessment environment operated by City Traders Imperium Limited.
+Hypothetical Performance Disclosure: Simulated or hypothetical trading results have inherent limitations. Unlike actual performance records, they do not represent real trading activity and may be designed with the benefit of hindsight. No representation is being made that any account will, or is likely to, achieve profits or losses similar to those shown or implied.
+Payments & Refunds: All fees paid are educational service fees for access to courses or skill assessment programs. All fees are non-refundable except as outlined in our Refund Policy .
+Jurisdictional Restrictions: Neither entity offers services to nationals or residents of the following jurisdictions: North Korea (DPRK), Iran, Syria, Cuba, Russia, or to any individual under international sanctions.
+Non-Targeted Reach: Information on these websites is not directed to residents of any country where such distribution or use would be contrary to local law or regulation. It is the user's responsibility to ensure that any use of the websites or services adheres to their local laws or regulations.
+Beware of Impersonators: This is our only official website.
+© 2026 Copyright
+City Traders Imperium & City Traders Imperium Academy.
+All Rights Reserved.
+✕ Market sentiment, every Sunday
+A short read on how the majors, indices and gold are positioned before the week opens, written by the CTI desk.
+Free · Sent Sunday evening · Five minute read
+First
+Last
+Leave this field blank
+Get Weekly Market Sentiment
+Unsubscribe any time. We do not share your email.

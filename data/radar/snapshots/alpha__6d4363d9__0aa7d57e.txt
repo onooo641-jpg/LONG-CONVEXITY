@@ -1,0 +1,27 @@
+Maximum Loss Limit (MLL) | Alpha Futures Limited Help Center Skip to main content
+Search for articles...
+All Collections
+Trading Rules and Parameters
+Maximum Loss Limit (MLL)
+Maximum Loss Limit (MLL)
+Maximum Loss Limit, or Maximum Drawdown
+B
+Written by Benjamin Chaffee
+July 15, 2026
+The Maximum Loss Limit (MLL) is EOD (end of day) trailing on all of our accounts here at Alpha Futures. None of our accounts utilize intraday trailing drawdown you will see elsewhere in industry.
+​
+Maximum Loss Limit stops trailing at the account starting balance on all of our accounts.
+How is it calculated?
+The Maximum Loss Limit is calculated from your account balance high at the end of each trading day, not intraday equity high like many others out there. See the example below to understand.
+You start with a $50k Zero Account, your starting MLL will be $48,000 (-$2,000).
+If you make $500 on the first trading day in the $50K account, your account balance will be $50,500, which will make your Maximum Loss Limit $48,500 ($2,000 from the account balance high).
+If you lose $500 the next day, your account balance would go back to $50,000, but your MLL will remain $48,500. This MLL will not go below $48,500 for the remainder of that account lifespan.
+Once the Maximum Loss Limit reaches the initial starting balance, it won’t continue to trail. Meaning, if your EOD balance reaches $52,000 (+4%) your MLL will now be $50,000 and remain there for the account lifespan.
+​
+You can monitor your MLL on your dashboard.
+​
+What happens if I hit the Maximum Loss Limit?
+If you break MLL at any point, floating equity or closed balance of account, your account will be liquidated. This means any attempted orders after the breach will not execute.
+Hitting the MLL on an Evaluation Account means that account will no longer be eligible to become a Qualified Account. You may try again by purchasing a Reset , or wait for your monthly rebill to return the account to the original starting balance to try again.
+Hitting MLL on an Alpha Futures Qualified Account means the account has been breached and will be closed.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃

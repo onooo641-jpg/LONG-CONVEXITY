@@ -1,0 +1,28 @@
+How is My Daily Loss Calculated? | Earn2Trade Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Poppins".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Poppins".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+العربية English Français Português Español English
+العربية English Français Português Español English
+Search for articles...
+All Collections
+Rules
+How is My Daily Loss Calculated?
+How is My Daily Loss Calculated?
+Written by Orianna F.
+Updated this week
+Daily loss is based on your Profit & Loss, including both open (real-time/unrealized), closed trades and commissions. It’s calculated daily from 5:00 pm to 5:00 pm (Central Time).
+The PnL resets at the beginning of the trading day and is taken from the balance you start the day with.
+For example, if your trading day starts with an Account Balance of $25,000, and the Daily Loss is -$550. Imagine you have an open trade with a profit of +$500 but, then the trade goes against you, and you close it at -$100, you won't fail on the Daily Loss rule. Considering the Account Balance you started the day with ($25,000), your PnL is going to be -$100.
+However, if your PnL ever hits the -$550 limit (even if you don't close your position), your evaluation fails and will be suspended from further trading. In case you wish to retry the evaluation you will need to reset it.
+You can view the P&L column in R | Trader Pro's Trader Dashboard to see how close you are to your daily loss limit. For example if your daily loss limit is $1,100, then your daily P&L cannot go below $-1,100.
+Related Articles
+What Is “Mark to Market”?
+What is the "Maintain Consistency" Rule?
+How Does "End of Day Drawdown" Work?
+What is the Withdrawal Policy?
+What Happens When I Complete My Evaluation?
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+The Trader Career Path
+The Gauntlet Mini™
+Beginner Crash Course
+Risk Disclaimer

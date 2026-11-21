@@ -1,0 +1,71 @@
+How Identity Verification Works | Topstep Help Center Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Skip to main content
+Discord Topstep TopstepTV
+Discord Topstep TopstepTV
+Search for articles...
+All Collections
+Getting Started
+How Identity Verification Works
+How Identity Verification Works
+One-time. Required. Fast.
+Updated this week
+Table of contents
+Topstep works with third party verification software to verify all Topstep Traders. It's required before your second purchase and takes only minutes to complete. Your information is stored on an encrypted server with Topstep's verification partner.
+Additionally, identity verification is also required for requesting Payouts, ensuring compliance with Topstep’s policies.
+When Is Identity Verification Required?
+After your first purchase, you'll receive an email when it's time to verify. You'll also see a banner on your Topstep Dashboard. You can still log in and trade during this time, but no additional purchases — new accounts, Resets, etc. — will be processed until verification is complete.
+What You Need
+A valid, unexpired original physical government-issued ID: Passport, Driver's License, or National ID card
+A device with a camera (phone or computer)
+Not accepted: photocopies, images displayed on another screen, or IDs with sticky notes or coverings.
+How to Complete Identity Verification
+Prepare your unexpired, physical ID
+Open the secure link or QR code from your email
+Take clear photos of your ID (front and back where applicable)
+Take a selfie
+Submit
+Once complete, your account status updates to Verification Complete .
+Troubleshooting
+If you're having issues:
+Try a different browser (Chrome, Safari) or a different device
+Clear your browser's cache and cookies, then restart your device
+Make sure camera and microphone access are enabled
+Confirm your ID is unexpired and a physical document (not a photocopy)
+Resubmit using the secure link or QR code from your email
+Avoid using VPNs or VPS — location discrepancies can cause verification issues
+Ensure your device's time zone and location settings are accurate
+FAQ
+Why am I being asked to verify again?
+Topstep may request re-verification if a prior submission needs clarification. Respond promptly and provide the required documents.
+Can I trade while waiting to complete Identity Verification?
+Yes. You can still log in and trade. However, no additional purchases will be processed until verification is complete.
+How long does verification take?
+It should take a few minutes if your ID is ready and in good condition.
+It says my account is locked. What do I do?
+If, after attempting to complete the identity verification process, you see a banner that says your account is fully locked and to contact Trader Support, please reach out here
+Related Articles
+Prohibited Conduct
+Getting Started with the Topstep Dashboard
+TopstepX™ API Access
+Back2Funded: Rules, Guidelines, and How It Works
+Topstep Pricing and Payment Questions
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Your Privacy Choices

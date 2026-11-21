@@ -1,0 +1,145 @@
+Live Funded Account Parameters | Topstep Help Center Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Skip to main content
+Discord Topstep TopstepTV
+Discord Topstep TopstepTV
+Search for articles...
+All Collections
+Topstep Program
+Funded Accounts
+Live Funded Account®
+Live Funded Account Parameters
+Live Funded Account Parameters
+The XFA proved you belong here. Live is where it counts — real capital, real markets, no ceiling on what you can earn.
+Updated yesterday
+Table of contents
+The Basics
+Real capital. Real markets. The Live Funded Account® (LFA) is the big leagues — Topstep's money behind you, no Payout caps, and unlimited growth potential. When the call-up comes, all Express Funded Accounts (XFA) close. This is what you've been working toward.
+Live Account Size
+Your LFA size is based on the average account size (the funded tier of each XFA — $50K, $100K, or $150K — not the current balance) of all active, eligible XFAs with at least 1 Payout. If you haven't requested any Payouts yet, all XFAs are averaged together. The average is rounded up to the nearest tier ($50K, $100K, or $150K).
+Example: Four 50K XFAs + one 150K XFA = 70K average → rounds up to $100K LFA .
+Starting Balance and Reserve
+Two numbers set your Live starting balance:
+Account Size — the average of your eligible XFAs, rounded up to the nearest tier. This is a hard cap ($25K, $50K, $100K, $150K, or $250K)
+Cumulative balance — the actual balances in those XFAs, added together. Remember: what transfers is capped at the account size.
+What transfers then splits:
+20% available to trade immediately — minimum $10,000*
+80% held in Reserve — released in 4 increments of 25% as you hit profit thresholds
+*Except the $25K Live Funded Account, which has a minimum starting balance of $5,000
+Example: Four $50K XFAs holding $25K each. Account Size = $50K. Cumulative balance was $100K, so $50K is forfeited. → $10K to trade, $40K in Reserve.
+👉 Heads up: all Express Funded Accounts are averaged together, so new Topstep Labs accounts may affect your account size.
+Capital Expansion — Unlocking Your Reserve
+Reserve funds unlock in 25% increments each time you hit the Profit Target for your LFA size. The Profit Target mirrors your Trading Combine® profit target:
+LFA Size
+Profit Target to Unlock Reserve Increment
+$25K
+$2,000
+$50K
+$3,000
+$100K
+$6,000
+$150K
+$9,000
+$250K
+$15,000
+Capital Expansion is:
+Reviewed every Monday morning
+Funds deposited within 1-2 business days
+Can be delayed or denied for excessive or reckless risk behavior
+You cannot unlock multiple tiers with a single large win — each threshold requires net profit since the last expansion .
+Important: If your LFA balance drops below $1,000 , the account may be immediately liquidated and closed at end of the trading day. The remaining balance would then be sent as a final Payout.
+​
+​ Example: Account drops to $800 = auto liquidation and account closure at the end of that day. The remaining $800 is sent as a final Payout. Unlocked reserve is forfeited.
+Daily Loss Limit and Maximum Position Size
+Maximum Position Size: The maximum number of contracts you can hold open at one time, per account. Your Maximum Position Size is affected by your performance in the Live Funded Account. Learn more here: Dynamic Live Risk Expansion
+Live Funded Accounts start with a Daily Loss Limit (DLL) based on account size:
+LFA Size
+Standard DLL
+$25K
+$1,000
+$50K
+$2,000
+$100K
+$3,000
+$150K
+$4,500
+$250K
+$5,000
+Regardless of account size, if your tradable balance drops to lower thresholds, the DLL and Maximum Position Size automatically adjust:
+Tradable Balance
+DLL
+Max Position Size
+$10,000 or below
+$2,000
+5
+$5,000 or below
+$1,000
+3
+☝️ When limits change:
+Decreases: Any day of the week, usually by end of day (EOD).
+Increases: Fridays only. If your balance rose above a threshold that week, your DLL and Maximum Position Size are raised back up.
+Example: Your balance drops below a threshold on Tuesday. Your limits are lowered that day. Your balance recovers on Wednesday. Your limits stay lower until Friday.
+Shoulder Tap Express Funded Account
+A Shoulder Tap XFA is a simulated funded account created after a call down from Live. Part of the LFA risk framework — a structured path back to Live trading if needed. Call-back is discretionary, based on overall trading behavior. Learn more →
+Live Funded Account FAQs
+Can I decline the invitation to move to Live and stay in my XFA?
+No. Once the Risk Team determines you're ready, your options are to move to Live or close your Express Funded Account.
+How long does it take to create a Live Funded Account?
+7 to 10 business days. Topstep will notify you as soon as it's ready.
+How is my Live Funded Account size determined if I haven't received any Payouts yet?
+In most cases, only Express Funded Accounts with at least 1 Payout are used to calculate your LFA size. However, if you haven't received any Payouts at the time you're called up, all of your active, eligible Express Funded Accounts will be averaged together instead.
+Can I have more than one Live Funded Account?
+You can only have one (1) Live Funded Account active. When you receive a Live Funded Account, all Express Funded Accounts are closed.
+If I lose my LFA, can I go straight back to an XFA without a Trading Combine?
+No. You must pass a Trading Combine first. From there, demonstrate consistency in an XFA before being called back up to Live.
+Can I take Payouts before unlocking all my Reserve?
+Yes. Payout eligibility is not tied to capital expansion. You can take Payouts while still trading with partial account access.
+How do I request a Payout?
+👉 Check out our Payout Policy for steps
+Is the live trading capital my money?
+No. It's Topstep's prop firm capital made available as you demonstrate consistent performance. Once you withdraw funds via a Payout, those funds are yours.
+Can I unlock multiple Reserve tiers at once with a big win?
+No. Each tier requires net profit since the last expansion, reviewed weekly. Single oversized wins do not bypass this.
+Can I use automated strategies in my LFA?
+The API Gateway is built for the simulated environment and isn't available on Live, so automated strategies are not possible at this time in the Live Funded Account.
+How does trading Live benefit me over SIM?
+Everything counts here. Real capital, real consequences, real payouts with no cap. The XFA proved your strategy works — Live is where you get paid like it. Trading Live is the goal. It means managing real money, which helps develop discipline and skills under real market conditions, preparing you for real-world trading at Topstep and beyond.
+Once I have 30 winning days, can I take a 100% payout?
+Yes. We encourage Traders to take full advantage of the benefits of Live trading with Topstep, including unlimited growth potential and daily Payouts. Please note that Payouts can only be taken from your unlocked balance, not from your Live Funded Account Reserve.​ Please note: withdrawing the full balance will close your account.
+As you reach each profit target, additional funds are released from your Reserve into your unlocked balance. Once 100% of your balance has been unlocked, you may withdraw those funds as well.
+What happens if my Live account closes?
+Traders moved from the Live program may be placed in the Responsible Trading Program (RTP) .
+What happens if I lose my 20% starting balance?
+If your Live Funded Account balance drops below $1,000, the account will be liquidated immediately and closed at the end of the trading day. The remaining balance will be sent to you as a final payout before the account is closed.
+​
+​ Example: Account drops to $800 = auto liquidation and account closure at the end of that day. The remaining $800 is sent as a final Payout. Unlocked reserve is forfeited.
+What happens if I go inactive?
+Live Funded Accounts with no trading activity for more than 30 days may be closed. Live Funded Accounts can't be put on hold.
+Can I have Trading Combines while I have a Live Funded Account?
+Yes. You can have Trading Combines while actively trading a Live Funded Account. The restriction is only on activation — a passed Trading Combine cannot be activated into an Express Funded Account while your Live Funded Account is active. That option becomes available again if the Live Funded Account is lost.
+Tip: You can duplicate trades across multiple accounts using a trade copier. Learn more here .
+Related Articles
+Topstep Learning
+What is the Maximum Loss Limit?
+Express Funded Account™ Parameters
+Topstep Payout Policy
+What is a Pro Account?
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Your Privacy Choices

@@ -1,0 +1,38 @@
+DEEPCHART: Login Instructions | My Funded Futures Help Center Skip to main content
+Go to website Discord YouTube English हिन्दी Español English
+Go to website Discord YouTube English हिन्दी Español English
+Search for articles...
+All Collections
+Trading Platforms
+DEEPCHART: Login Instructions
+DEEPCHART: Login Instructions
+Deepchart/Deepdom Download and Connection Guide
+August 24, 2026
+Table of contents
+Getting started into Deepchart/Deepdom is a straightforward process. Simply click the Platforms button from your MFFU dashboard , select Deepchart/Deepdom, and you will be directed to log in to the dxFeed web platform.
+When you click the link, you will be prompted to log in with your platform credentials, which MyFunded Futures will send you via e-mail.
+Login Screen:
+When you reach the login screen, you will be prompted to enter your credentials. Please enter them carefully, as the password is case-sensitive, and you will gain access to the dxFeed dashboard.
+Looking to Get Funded to trade on DEEPCHART/DEEPDOM? Start here.
+Once you log in to dxFeed:
+Please select your preferred platform.
+2. Sign the platform agreements to proceed.
+After signing all the agreements, go to the Download Platform section on your dxFeed dashboard and download the setup for your chosen platform.
+Once the setup is complete, launch the Deepchart/Deepdom desktop platform;
+In the Startup Wizard, select the Exchange(s) from which you would like to receive market data. Please keep in mind that we only support: CME, COMEX, CBOT, NYMEX
+Select dxFeed as the Feed source and Propfirm as the server. Enter your login credentials, which are available on your MFFU dashboard.
+Feed Selection
+After completing the setup, the Volsys/Volbook dashboard will launch. To connect your MFFU trading account, ensure you select the data feed to confirm connection to dxFeed. Without selecting a data feed, trading on the platform will not be possible.
+Click Select a connection on the Volsys/Volbook dashboard.
+Select MFFU.
+Once you choose the data feed MFFU , a successful connection will be confirmed with a green dot. You are now online and ready to trade via Volsys/Volbook!
+Explore MyFundedFutures Coupon Codes Here.
+If you have any questions regarding VolSys/VolBook setup or encounter connection issues, please contact our support team on the live chat or at [email protected]
+Related Articles
+Overview of Supported Platforms at MFFU
+NinjaTrader: Login Instructions
+Quantower: Login Instructions
+ATAS: Login Instructions
+Industry Leading Futures Prop Firm: Start Trading with MyFundedFutures
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

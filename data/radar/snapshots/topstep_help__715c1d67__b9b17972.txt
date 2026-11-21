@@ -1,0 +1,151 @@
+TopstepX™ API Access | Topstep Help Center Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Skip to main content
+Discord Topstep TopstepTV
+Discord Topstep TopstepTV
+Search for articles...
+All Collections
+TopstepX™
+TopstepX™ API Access
+TopstepX™ API Access
+Your code. Your strategies. Your edge.
+September 17, 2026
+Table of contents
+TopstepX™ API Access lets advanced Traders and developers build automated strategies, connect third-party tools, and execute trades directly through TopstepX. It's powered by ProjectX and billed separately from your Topstep subscription.
+What You Can Do With API Access
+Build and run automated trading strategies
+Connect third-party tools and platforms
+Create custom risk management rules
+Pull live and historical market data
+Execute trades directly through your TopstepX account
+Who It's For
+Traders and developers comfortable coding in Python, Java, .NET, JavaScript, or similar languages who want to work with REST and WebSocket APIs. If you use third-party tools built by others, no coding required — just plug in your credentials.
+Getting Started
+Setup has four parts. Complete them in order — Part 4 will fail if you skip Part 3.
+Part
+Where
+What you'll do
+1
+ProjectX Dashboard
+Create your ProjectX account
+2
+ProjectX Dashboard
+Subscribe to API Access
+3
+TopstepX
+Link your subscription to your TopstepX profile
+4
+TopstepX
+Generate your API key
+Part 1: Create your ProjectX account
+Start here, in the ProjectX Dashboard. You don't need to do anything in TopstepX yet.
+Already have a ProjectX Dashboard account? Log in and skip to Part 2 .
+Go to dashboard.projectx.com and click Register
+Enter your email address, then create your username and password
+Click Create Account
+Part 2: Subscribe to API Access
+Log into your ProjectX Dashboard.
+In your ProjectX Dashboard, go to Subscriptions → ProjectX API Access
+Enter your payment details
+Enter promo code topstep to apply the 50% Topstep Trader discount
+Confirm your subscription
+See Cost and Billing for pricing details.
+Part 3: Link your subscription to your TopstepX profile
+Subscribing is not the same as linking. This part connects the subscription you just bought to your TopstepX profile — without it, Part 4 will fail with the error User lacks subscription.
+In TopstepX, click the Settings icon ⚙️
+Open the API tab
+Under ProjectX Linking , click Add Link
+In the confirmation pop-up, confirm that you want to link your TopstepX profile to the ProjectX Dashboard
+Open your ProjectX Dashboard and confirm your account now appears there
+If the account doesn't appear, try turning off the browser pop-up blockers or use an Incognito Chrome window. Refresh the Dashboard before retrying. Still missing? See Troubleshooting .
+Part 4: Generate your API key
+In TopstepX, go to Settings ⚙️ → API tab
+Click Add API Key
+Copy your key and store it somewhere secure — treat it like a password
+⚠️ Your API key grants full trading access to every eligible account under your profile. Never share it, never commit it to a public repository, and never paste it into a tool you don't trust. If you think it's been exposed, generate a new key immediately and update your tools
+Cost and Billing
+API Access is $29/month . Topstep Traders get 50% off with code topstep — that's $14.50/month , valid every month with no end date.
+🧾 Please note: Billing appears as Sim2Funded Solutions on your bank statement. Billing is managed separately from your Topstep subscription.
+VPNs, VPS, and Remote Servers
+All trading activity must originate from your personal device. The use of VPS, VPNs, and remote servers is prohibited by Topstep's Terms of Use. Running automation on a VPS can result in account suspension or removal from the program.
+You may still use your own private server for supporting work that doesn't touch order flow:
+Allowed on a private server
+Not allowed on a private server
+Historical data storage
+Placing, modifying, or cancelling orders
+Research and backtesting
+Any automated trigger that can reach the order endpoints
+Logging and analytics
+Routing or relaying orders on your behalf
+A read-only dashboard
+Receiving copies of your own fills, positions, and P&L
+The line is order transmission: your server can watch and record, but it cannot trade.
+Important Disclaimers
+Orders executed via the API are final — no review, adjustment, or reversal.
+Topstep does not support or take responsibility for any tool, algo, or system built on API Access, including implementation, coding, and troubleshooting.
+Some traders connect third-party applications to the ProjectX API. If you do, it's at your own risk — Topstep and ProjectX don't affiliate with, endorse, or support any external vendor or platform offering API integrations.
+Your API access remains governed by the ProjectX Terms of Use , including fair-use limits.
+All trading activity remains subject to Topstep's Trading Guidelines regardless of which platform executes the trades. A rule violation is treated the same whether it originates from manual trading or third-party automation.
+Ensure your systems are tested, stable, and compliant before connecting.
+API access can affect the potential for hedging — more here .
+👥 Getting Help
+Topstep does not provide technical support for coding or API implementation.
+What you need
+Where to go
+Endpoints, authentication, code samples
+ProjectX Gateway API Docs
+Full endpoint reference
+Swagger Documentation
+Community help and troubleshooting
+#api-trading in the Topstep Discord
+Linking, subscription, billing, cancellation
+dashboardapi@topstep.com
+FAQ
+Is there a sandbox environment for testing?
+No. There is currently no sandbox environment available.To test your strategy, use a Practice account instead — same endpoints and real-time hubs, no risk to an Evaluation account.
+Can I use 1 subscription across multiple accounts?
+Yes. One subscription and one API key cover every eligible account under your ProjectX Dashboard profile. A single authenticated session can manage all of them; you specify the target account Id on each order.
+What programming languages are supported?
+The REST API works with most modern languages including Python, Java, .NET, and JavaScript — anything that supports REST or WebSocket connections.
+Do I need to know how to code?
+Only if you're building your own tools. If you're using third-party tools, just plug in your credentials.
+Do I need a Topstep Account in order to use the API service?
+Yes, you need an active Topstep account in order to use the service.
+Can I build and use my own custom trading bot with the TopstepX / ProjectX API?
+Yes. Custom automated strategies and bots are allowed via the TopstepX / ProjectX API, subject to standard platform rules and our prohibition on highfrequency trading (HFT). You're free to develop your own system without additional restrictions beyond those standard rules. You remain the owner of your bot and are solely responsible for its design, performance, and behavior — including making sure it operates within all applicable rules.
+Can I use the ProjectX API if I'm in a Live Funded Account?
+No, Live funded accounts are not allowed to trade through the ProjectX API. The API Gateway is built for the simulated environment and isn't available on Live.
+Troubleshooting
+Error creating key: User lacks subscription
+Your subscription isn't linked to your TopstepX profile. Go back and complete Part 3, then try generating your key again. If your subscription is active and linked and you still see this, email dashboardapi@topstep.com .
+My account doesn't appear in the ProjectX Dashboard after linking
+Refresh the Dashboard and confirm you completed the linking pop-up in Part 3 . If it's still missing, email dashboardapi@topstep.com .
+Where do I find my API Key
+Generate a new one from Settings ⚙️ → API tab → Add API Key , then update every tool using the old key.
+My requests are being rejected after they worked earlier
+Session tokens expire. Confirm your client refreshes its token rather than reusing an old one. If you're being rate limited, back off and retry.
+Related Articles
+What is a Reset?
+General Platform Troubleshooting
+Quantower Connection Instructions
+New to Topstep? Start here.
+TopstepX™
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Your Privacy Choices

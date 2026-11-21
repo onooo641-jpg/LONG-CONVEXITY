@@ -1,0 +1,843 @@
+FAQ | Perguntas da Maven Trading Respondidas | Maven Trading Pular para o conteúdo principal Decole rumo à sua conta financiada. 10% off com o código"> Opere como um Diamante. 5% off com o código
+Copied
+CÓDIGO: DIAMOND
+40% off nos challenges Omo com o código
+Copied
+CÓDIGO: OMO
+Decole rumo à sua conta financiada. 10% off com o código"> Opere como um Diamante. 5% off com o código
+CÓDIGO: DIAMOND
+40% off nos challenges Omo com o código
+CÓDIGO: OMO
+Produtos Padrão 1 etapa
+Padrão 2 etapas
+Padrão 3 etapas
+Estático de 1 etapa
+Compre agora, pague depois
+Instantâneo
+Mini
+Omo 2 etapas
+Predições
+Preços
+Sobre nós
+FAQ
+Contato
+Recursos Blog
+Carreiras
+Afiliados
+Comunidade
+Avaliações
+Entrar
+Começar
+PT EN ES
+Produtos Padrão 1 etapa
+Padrão 2 etapas
+Padrão 3 etapas
+Estático de 1 etapa
+Compre agora, pague depois
+Instantâneo
+Mini
+Omo 2 etapas
+Predições
+Preços
+Sobre nós
+FAQ
+Contato
+Recursos Blog
+Carreiras
+Afiliados
+Comunidade
+Avaliações
+PT EN ES
+Entrar Começar
+Perguntas? Deixe-nos ajudar.
+Aqui você pode acessar a maioria das nossas perguntas frequentes. Se ainda precisar de ajuda, não hesite em nos contatar.
+Tópicos
+Escolha um tópico para explorar ou pesquise por uma palavra-chave
+Pesquisar nas perguntas frequentes Tipo de desafio Pesquisar por tipo de desafio Standard 1 Step Static 1 Step Standard 2 Step Standard 3 Step 2 Step OMO Buy Now, Pay Later Instant Funding Instant Mini Funding Mercados de Previsão
+Bem-vindo à Maven Começando com a Maven Trading 3 Artigos
+Geral Plataformas, tipos de drawdown, instrumentos, saques e KYC 23 Artigos
+Regras de Trading Estilos e práticas de trading que a Maven proíbe 6 Artigos
+Standard 1 Step Regras, objetivos e saques do desafio Standard 1 Step 11 Artigos
+Static 1 Step Regras, objetivos e saques do desafio Static 1 Step 10 Artigos
+Standard 2 Step Regras, objetivos e saques do desafio Standard 2 Step 11 Artigos
+Standard 3 Step Regras, objetivos e saques do desafio Standard 3 Step 11 Artigos
+2 Step OMO Regras, objetivos e saques do desafio 2 Step OMO 15 Artigos
+Buy Now, Pay Later Regras, objetivos e saques do desafio Buy Now Pay Later 16 Artigos
+Instant Funding Regras e saques do Instant Funding 12 Artigos
+Instant Mini Funding Regras e saques do Instant Mini Funding 14 Artigos
+Mercados de Previsão Tudo o que você precisa saber sobre o desafio Maven Prediction Markets 9 Artigos
+Bem-vindo à Maven
+O que é a Maven?
+Bem-vindo à Maven Trading, onde estamos reformulando o cenário das prop firms. Considere-nos seu guia para um programa simulado de traders financiados, feito sob medida para todos os traders, independentemente da experiência.
+Criamos um ambiente confortável para você aprimorar suas habilidades, fazendo trades simulados bem fundamentados sob condições reais de mercado, sem arriscar seu próprio capital. Nossa variedade exclusiva de desafios nos torna uma das principais prop firms, dedicada a ajudar você a alcançar um novo nível no trading.
+O que é uma conta financiada simulada?
+Uma conta financiada simulada é operada em ambiente demo. Os planos com avaliação liberam essa conta depois que você passa nas fases exigidas e cumpre os requisitos da conta. Instant Funding e Instant Mini Funding oferecem acesso direto, sem avaliação.
+A Maven é uma prop firm estabelecida?
+Sim!
+Operamos desde 2022 e focamos em pagamentos rápidos e um suporte melhor. Já ganhamos prêmios por isso! Recompensamos traders ao redor do mundo, somos uma das firmas mais bem avaliadas no Feefo e temos orgulho de ter construído uma presença forte no setor de prop firms.
+Geral
+Quais plataformas posso usar para trading simulado na Maven?
+A Maven Trading oferece MT5 e Match-Trader
+Posso trocar de plataforma de trading simulado?
+Sim. Você pode solicitar a troca de plataforma desde que sua conta não tenha sido operada .
+A troca de plataforma deixa de estar disponível quando a conta chega à Fase 2, à Fase 3 ou à Etapa Financiada .
+É permitido operar notícias?
+Standard 1 Step Não abra nem feche trades nos instrumentos afetados de 2 minutos antes até 2 minutos depois de uma divulgação Red Folder aplicável.
+Standard 2 Step Não abra nem feche trades nos instrumentos afetados de 2 minutos antes até 2 minutos depois de uma divulgação Red Folder aplicável.
+Standard 3 Step Não abra nem feche trades nos instrumentos afetados de 2 minutos antes até 2 minutos depois de uma divulgação Red Folder aplicável.
+2 Step OMO Sim, mas o lucro de qualquer evento de notícia individual é limitado a 0.50% do saldo da sua conta . Qualquer lucro acima do limite não contará para o seu saldo.
+(Aplica-se apenas na Etapa Financiada)
+Buy Now Pay Later Sim, sem restrições
+Instant Funding Sim, sem restrições
+Instant Mini Sim, sem restrições
+As restrições de notícias dos planos Standard seguem o calendário Red Folder da ForexFactory e a lista de instrumentos afetados da Maven. Alguns eventos macroeconômicos restringem todos os instrumentos. A janela também inclui ordens pendentes, a execução de stop-loss e take-profit e o fechamento automático ao atingir o objetivo de lucro do desafio. Durante o desafio, abrir ou fechar um trade na janela restrita é uma violação grave. Na conta financiada simulada, os lucros gerados na janela restrita são excluídos.
+Quais instrumentos são afetados pelas notícias Red Folder?
+Para Standard 1 Step, Standard 2 Step e Standard 3 Step, a restrição vai de 2 minutos antes até 2 minutos depois da divulgação correspondente.
+Instrumentos afetados Notícias relevantes
+Todos os instrumentos CPI, declarações/reuniões do FOMC e Non-Farm Employment Change.
+Ouro, prata e índices Divulgações de alto impacto de USD, AUD e CAD; decisões de taxa de juros, coletivas de imprensa, CPI e PIB de todas as moedas; Core PCE de USD.
+Pares de forex com USD e índices dos EUA Emprego/NFP, desemprego, PMI/ISM, inflação, PIB, decisões/declarações do Federal Reserve, balança comercial, pedidos de seguro-desemprego, confiança, JOLTs, resultados corporativos, leilões de títulos, setor imobiliário, bens duráveis, discursos e vendas no varejo.
+Pares de forex com EUR e índices da UE PMI, inflação, PIB, emprego, vendas no varejo, balança comercial, decisões/declarações do BCE, confiança e discursos.
+Pares de forex com GBP Inflação, PIB, PMI, emprego, setor imobiliário, vendas no varejo, balança comercial, produção, decisões do BoE e discursos.
+Pares de forex com CAD e petróleo Decisões do BoC, PMI, inflação, PIB, balança comercial, emprego, setor imobiliário, vendas e discursos.
+Pares de forex com AUD/NZD/CHF Decisões dos bancos centrais correspondentes, inflação, PIB e discursos; divulgações de emprego de AUD/NZD.
+Pares de forex com JPY e índices asiáticos Decisões do BoJ, inflação, PIB, emprego, PMI, produção, balança comercial, vendas no varejo e discursos.
+Petróleo dos EUA/Reino Unido Crude Oil Inventories; notícias de alto impacto de CAD.
+O que é drawdown baseado em equity?
+O drawdown baseado em equity calcula seu limite de perda diária usando o maior valor entre seu saldo e sua equity às 00:00 UTC . Isso significa que os lucros não realizados são incluídos na definição do seu limite de drawdown diário.
+Exemplo: Em uma conta de $10,000 , se sua equity às 00:00 UTC for de $10,300 e seu saldo for de $10,000 , o maior valor é $10,300. Com um drawdown diário de 4% , seu limite é de $412 , o que significa que sua equity não pode cair abaixo de $9,888 naquele dia.
+O que é drawdown trailing?
+O drawdown trailing é um limite de perda móvel que acompanha a maior equity da sua conta. À medida que sua equity aumenta, o limite de drawdown sobe junto.
+Exemplo: Em uma conta de $10,000 com drawdown trailing de 5% , o limite inicial é de $9,500 . Se sua equity chegar a $11,000 , o limite sobe para $10,450 . Se sua equity cair abaixo de $10,450 , a conta viola o limite de drawdown.
+O que é drawdown estático?
+O drawdown estático é um limite de perda fixo baseado no saldo inicial da sua conta. O limite de drawdown não sobe quando seu saldo ou sua equity aumentam.
+Exemplo: Em uma conta de $10,000 com drawdown estático de 8% , seu limite de drawdown é de $9,200 . Esse limite permanece fixo, mesmo que sua conta cresça.
+Posso unificar contas?
+Sim. Você pode unificar contas financiadas simuladas desde que sejam do mesmo plano .
+Conta financiada simulada Standard 1 Step + conta financiada simulada Standard 1 Step: Permitido
+Conta financiada simulada Standard 2 Step + conta financiada simulada Standard 2 Step: Permitido
+Conta financiada simulada Standard 1 Step + conta financiada simulada 2 Step OMO: Não permitido
+Você pode unificar contas até um saldo combinado máximo de $200,000 .
+Posso operar e manter posições durante a noite ou no fim de semana?
+Sim. Você pode operar e manter posições durante a noite ou no fim de semana. A Maven também oferece trading de ouro 24/7.
+Posso usar outro dispositivo para operar?
+Sim. Você pode operar a partir de outro dispositivo desde que seja você quem opera a conta e o dispositivo seja seu.
+É permitido usar VPN?
+Sim. O uso de VPN é permitido.
+Quem é a corretora do seu feed de dados?
+Nossa corretora de feed de dados é a Match-Prime.
+Quais instrumentos posso operar?
+A Maven oferece uma ampla variedade de instrumentos, incluindo Forex, commodities, índices e criptomoedas.
+Commodities
+ALUMINIUM | BRENT | COCOA | COFFEE | COPPER | CORN | COTTON | NGAS | SOYBEAN | SUGAR | WHEAT | WTI | XAGUSD | XAUUSD | XPDUSD | ZINC | XPTUSD
+Forex
+AUDCAD | AUDCHF | AUDJPY | AUDNZD | AUDUSD | CADCHF | CADJPY | CHFJPY | EURAUD | EURCAD | EURCHF | EURGBP | EURJPY | EURNOK | EURNZD | EURPLN | EURSEK | EURTRY | EURUSD | GBPAUD | GBPCAD | GBPCHF | GBPJPY | GBPNZD | GBPUSD | NZDCAD | NZDCHF | NZDJPY | NZDUSD | USDCAD | USDCHF | USDENH | USDHKD | USDJPY | USDMXN | USDPLN | USDSEK | USDSGD | USDZAR
+Índices
+AUS200 | CHNIND | EU50 | FRA40 | GER30 | HKIND | ITA40 | JAP225 | SPA35 | SUI20 | UK100 | US100 | US2000 | US30 | US500
+Criptomoedas
+BTCEUR | BTCUSD | ETHBTC | ETHUSD
+É permitido fazer copy trading?
+Sim. O copy trading é permitido apenas quando você copia seus próprios trades entre suas contas. É proibido usar um EA para copy trading . Os trades devem ser copiados manualmente .
+Qual é a política de reembolso da Maven Trading?
+A taxa inicial do seu desafio é reembolsada após sua terceira recompensa da sua conta financiada simulada. O reembolso é processado e enviado separadamente das suas recompensas.
+A política de reembolso se aplica aos seguintes programas:
+Conta financiada simulada 1 Step
+Conta financiada simulada 2 Step
+Conta financiada simulada 2 Step OMO
+Conta financiada simulada 3 Step
+Conta financiada simulada Buy Now, Pay Later
+Instant Funding
+Qual alavancagem a Maven oferece?
+Forex: 1:75
+Commodities e metais preciosos: 1:20
+Ouro: 1:100 (apenas 2 Step OMO)
+Índices: 1:20
+ETFs digitais: 1:2
+Quais são as comissões de trading?
+Padrão: $2 USD por lote operado por lado ($4 USD por lote ida e volta)
+Metais preciosos: $3 USD por lote operado por lado ($6 USD por lote ida e volta)
+Energia: $3 USD por lote operado por lado ($6 USD por lote ida e volta)
+A Maven oferece contas sem swap?
+Sim. Todos os planos de conta da Maven são sem swap.
+Quais são os spreads?
+Os spreads variam conforme as condições de mercado .
+Veja os spreads nas nossas contas de teste
+1. Match-Trader – Conta de teste Standard
+Link da plataforma: https://manager.maven.markets/
+E-mail: support@maventrading.com
+Senha: Testspread123
+2. MetaTrader 5 (MT5) – Conta de teste
+Login: 10333423
+Senha: xuhheE5!
+Servidor: MavenTradeServer
+3. Mercados de Previsão – Conta de teste Match-Trader
+Link da plataforma: https://manager.maven.markets/
+E-mail: support@maventrading.com
+Senha: Testspread123
+ID da conta: 820278
+Importante: Os spreads são variáveis e podem diferir entre instrumentos, tipos de conta e condições de mercado. Os spreads exibidos nas contas de teste refletem as condições no momento da consulta e podem mudar sem aviso prévio.
+Quais métodos de saque estão disponíveis?
+Os métodos de pagamento disponíveis dependem do seu país, conforme listado abaixo.
+Para Nigéria, Quênia e Gana:
+Transferência bancária direta
+Moedas digitais (USDT-BSC ou USDC-ERC20)
+Para outros países:
+Moedas digitais (USDT-BSC ou USDC-ERC20)
+Rise Pay
+Quais informações preciso para o KYC?
+Para concluir sua verificação KYC, certifique-se de que todas as informações pessoais fornecidas estejam corretas e correspondam ao seu documento de identidade oficial válido.
+Informações e documentos necessários
+Dados pessoais corretos: Suas informações devem corresponder aos dados do seu documento oficial. Informações incorretas ou documentos faltantes podem fazer o KYC falhar.
+E-mail único: Use o mesmo e-mail durante toda a sua jornada na Maven, inclusive ao comprar várias contas. Ter uma conta violada não significa que você precisa de um novo e-mail. Continue usando seu e-mail atual se comprar outro desafio. Usar e-mails diferentes pode afetar sua verificação KYC.
+Documento oficial: Envie um documento de identidade válido, como passaporte, carteira de motorista, autorização de residência ou carteira de identidade.
+Cartão de pagamento: Use um cartão de pagamento registrado no seu próprio nome. Cartões de terceiros podem impedir que você conclua o KYC ou receba uma conta financiada simulada.
+Traders da Nigéria: Traders da Nigéria podem precisar informar o número NIN e enviar uma selfie tirada no mesmo dia.
+Requisitos importantes do KYC
+Você deve usar sua própria identidade e suas próprias informações pessoais. Usar o documento, o e-mail ou o cartão de pagamento de outra pessoa pode resultar na rejeição automática do KYC. Ter outra pessoa no enquadramento da câmera durante a verificação KYC resultará no encerramento da conta.
+Os traders devem ter 18 anos ou mais. Menores de idade não podem concluir o KYC.
+As informações pessoais não podem ser alteradas depois que você fizer um trade na sua conta de desafio nem durante o processo de KYC.
+Documentos aceitos
+Para ver a lista completa de documentos de identidade aceitos pela Veriff, acesse:
+https://www.veriff.com/supported-countries
+Qual é a política de endereço IP?
+Seu endereço IP deve permanecer na mesma região geográfica durante toda a sua jornada na Maven, para verificar que você opera de forma independente.
+Se seu endereço IP mudar de forma significativa, a Maven pode solicitar comprovação ou uma explicação para a mudança. Isso pode incluir documentos de viagem, verificação de localização em tempo real ou outras evidências que a Maven considere adequadas.
+Mudar de localização afeta meu saque?
+Mudar de localização pode exigir verificação. Se você viajar para o exterior , poderá ser solicitado a enviar documentos comprobatórios, como uma passagem aérea ou itinerário de viagem , para verificar a mudança de localização.
+Regras de Trading
+Quais são as regras de estilo de trading da Maven?
+A Maven proíbe os seguintes estilos de trading:
+Scalping excessivo
+Trading All-In
+Gamificar o desafio
+Os traders devem seguir práticas de trading responsáveis e cumprir todas as regras de conta aplicáveis.
+O que é scalping excessivo?
+Scalping excessivo significa manter mais de 50% dos seus trades por menos de 60 segundos (1 minuto) .
+Exemplo de scalping excessivo:
+Um trader faz 50 trades no total.
+26 trades são mantidos por menos de 60 segundos.
+24 trades são mantidos por 60 segundos ou mais.
+26 de 50 trades equivalem a 52%, o que excede os 50% permitidos.
+Isso é considerado scalping excessivo e não é permitido.
+O que é a regra de trading All-In?
+Trading All-In significa arriscar em um único trade ou setup um valor que pode violar seu drawdown diário ou seu drawdown máximo .
+O trading All-In não é permitido em nenhum desafio ou conta financiada simulada da Maven.
+Isso inclui:
+Sem stop-loss: Abrir um trade sem stop-loss e mantê-lo até ser aprovado ou reprovado no desafio.
+Arriscar demais: Definir um stop-loss que arrisca mais do que o limite de drawdown permitido da sua conta.
+Empilhar posições: Abrir vários trades no mesmo instrumento e na mesma direção sem uma gestão de risco adequada, ou quando o risco combinado excede o seu limite de drawdown permitido.
+Exemplos de trading All-In
+Exemplo 1: Sem stop-loss
+Um trader abre um trade de 1 lote em EUR/USD sem stop-loss. O trader mantém a posição até a conta ser aprovada ou reprovada no desafio.
+Isso é considerado trading All-In porque o trader depende de um único trade para determinar o resultado da conta.
+Exemplo 2: Arriscar mais do que o limite de drawdown diário ou máximo
+Um trader tem um desafio de duas etapas de $10,000 com limite de drawdown diário de 4% ($400).
+O trader abre um trade em EUR/USD com um stop-loss que arrisca 6% da conta ($600).
+Se o stop-loss for atingido, a conta excederá seu limite de drawdown e será reprovada no desafio. Isso é considerado trading All-In.
+Exemplo 3: Empilhar posições
+Um trader abre vários trades em EUR/USD na mesma direção. O trader não usa stop-loss, ou o risco combinado dos trades excede o limite de drawdown da conta.
+Isso é considerado trading All-In.
+Exemplo 4: Vários trades com risco em aberto
+Um trader abre vários trades em diferentes ativos e usa stop-loss neles. No entanto, o risco combinado desses trades é maior do que os limites de drawdown.
+O que é gamificar o desafio?
+Gamificar o desafio significa usar posições opostas entre contas para criar uma chance quase garantida de aprovação , como comprar em uma conta e vender em outra.
+Exemplo: Você abre um trade de compra na conta A e um trade de venda equivalente na conta B ao mesmo tempo. Se o mercado subir, a conta A lucra enquanto a conta B perde; se o mercado cair, a conta B lucra enquanto a conta A perde. Isso é considerado gamificar o desafio, e não trading genuíno.
+Isso também inclui inverter posições entre a Maven e outra prop firm para compensar o risco.
+Operar grandes parcelas da sua conta em apostas únicas com relação risco-retorno de 1:1.25 ou menor também pode ser considerado gamificar o desafio.
+Essa abordagem não é permitida .
+O que a Maven considera trapaça?
+A Maven proíbe práticas de trading que exploram o ambiente de trading demo ou que tentam contornar as regras de trading estabelecidas.
+É proibido o seguinte:
+Trading de alta frequência (HFT): Explorar ineficiências do trader demo por meio de estratégias de alta frequência.
+Trading / fluxo de ordens tóxico: Estratégias criadas para explorar ineficiências de execução ou de preços do ambiente demo.
+Arbitragem: Arbitragem long/short e arbitragem reversa.
+Scalping de ticks: Explorar pequenos movimentos de preço no nível de tick.
+Exploração da execução do servidor: Usar ineficiências de execução do servidor para obter lucro.
+Copy trading: Copiar trades de outra pessoa. Se for detectado, ambas as contas podem ser violadas .
+Trading grid/gap: Estratégias de trading grid e gap são proibidas em todos os desafios e contas financiadas simuladas.
+Hedging reverso / em grupo: Proibido conforme descrito em Gamificar o desafio.
+Hedging exclusivo: Contas de hedging são proibidas.
+Expert Advisors (EAs): EAs e trading automatizado são proibidos em todas as plataformas da Maven. Todos os trades devem ser executados manualmente.
+Gamificar o desafio: Proibido conforme descrito acima, incluindo apostar apenas nos níveis de drawdown máximo ou take-profit.
+Para avaliação das regras, um trade pode ser composto por uma posição ou por várias entradas no mesmo par com horários e tamanhos de lote semelhantes. Entradas com tamanhos de lote muito menores não contam como trades separados.
+Sua conta será encerrada se você realizar qualquer uma dessas ações.
+A Maven tem um limite de saque?
+Nas contas financiadas simuladas Standard 1 Step, Standard 2 Step, Standard 3 Step, Buy Now Pay Later e Instant Funding, é possível sacar no máximo $10,000 antes da aplicação do split de recompensas, somando dois saques ou dentro de qualquer período móvel de 30 dias.
+Standard 1 Step
+Existe Consistency Score no desafio Standard 1 Step e na conta financiada simulada?
+Não há exigência de Consistency Score no desafio Standard 1 Step nem na conta financiada simulada.
+Qual é o objetivo de lucro do desafio Standard 1 Step?
+No desafio Standard 1 Step, os traders devem atingir um objetivo de lucro de 8%.
+Desafio Standard 1 Step Objetivo de lucro por tamanho de conta
+Tamanho da conta Objetivo de lucro (8%)
+$2,000 $160
+$5,000 $400
+$10,000 $800
+$20,000 $1,600
+$50,000 $4,000
+$100,000 $8,000
+O que acontece depois que passo no desafio Standard 1 Step?
+1. Revisão de trading e da conta (1–3 dias úteis)
+Quando você atingir o objetivo de lucro, seus trades serão fechados automaticamente e sua conta será desativada e colocada em revisão.
+2. Receba seu certificado do desafio
+Nossa equipe revisará seu histórico de trading. Após a aprovação, você receberá um e-mail de parabéns e seu certificado do desafio.
+3. Conclua o KYC e receba sua conta financiada simulada
+Você receberá um e-mail de KYC com instruções para enviar os documentos necessários. Depois que seu KYC for verificado com sucesso, normalmente em 1 dia útil , você receberá sua conta financiada simulada.
+Quais são as regras de drawdown do desafio Standard 1 Step e da conta financiada simulada?
+O desafio Standard 1 Step e a conta financiada simulada usam os mesmos limites de perda: 3% de perda diária e 5% de drawdown máximo trailing.
+Limite de perda diária: 3% (baseado em equity)
+O drawdown diário é redefinido com base no maior valor entre sua equity e seu saldo às 00:00 UTC .
+Sua conta não pode exceder uma perda de 3% dentro de um dia de trading.
+Exemplo: Você tem uma conta de $10,000 , abre um trade e o deixa aberto durante a noite. Às 00:00 UTC , sua equity é de $10,300 , enquanto seu saldo é de $10,000 . Seu drawdown diário máximo é 3% de $10,300 ($309) . Sua conta violará o drawdown diário se sua equity cair abaixo de $9,991 naquele dia.
+Drawdown máximo: 5% (trailing)
+Seu drawdown máximo sobe com sua maior equity flutuante , incluindo o lucro não realizado dos trades abertos.
+Exemplo: Com uma conta de $10,000 e drawdown trailing de 5% , seu limite inicial é de $9,500 . Se sua equity flutuante chegar a $11,000 , o limite sobe para $10,450 . Cair abaixo de $10,450 viola o limite de drawdown.
+Nota: O drawdown trailing é baseado na equity flutuante , não apenas nos trades fechados.
+Exceder qualquer um dos limites resultará na violação do desafio ou da conta financiada simulada.
+Existe um número mínimo de dias de trading na conta Standard 1 Step?
+Não há exigência de dias mínimos de trading no desafio Standard 1 Step nem nas contas financiadas simuladas. Você pode passar no desafio em um dia.
+Existe uma regra de inatividade na conta Standard 1 Step?
+As contas devem ter pelo menos uma atividade de trading a cada 30 dias para continuarem ativas.
+Existe um tempo mínimo de permanência para cada trade?
+Pelo menos 50% dos seus trades devem ser mantidos por no mínimo 60 segundos (1 minuto). Trades mantidos por exatamente 60 segundos contam.
+É permitido operar notícias na conta Standard 1 Step?
+As restrições de notícias Red Folder da seção Geral se aplicam a este desafio e à conta financiada simulada, incluindo ordens pendentes, stop-losses, take-profits e fechamentos automáticos ao atingir o objetivo de lucro.
+Exemplo: Se uma notícia Red Folder estiver programada para as 2:00 PM , você não pode abrir nem fechar um trade entre 1:58 PM e 2:02 PM .
+Qual é o split de recompensas de uma conta financiada simulada Standard 1 Step?
+O split de recompensas padrão é de 80%. Com o add-on correspondente, o split de recompensas aumenta para 90%.
+Nota : Os add-ons devem ser selecionados no checkout ao comprar a conta. Eles não podem ser adicionados depois que a conta foi comprada.
+Qual é o saque mínimo de uma conta financiada simulada Standard 1 Step?
+A solicitação de saque mínima é de $20 de lucro antes da aplicação do split de recompensas. O valor que você recebe é a sua parte correspondente desse lucro.
+Com que frequência posso solicitar um saque em uma conta financiada simulada Standard 1 Step?
+Seu primeiro saque fica disponível 10 dias úteis após seu primeiro trade na conta financiada simulada. Cada período seguinte de 10 dias úteis começa com seu primeiro trade após o saque anterior.
+Static 1 Step
+Qual é a diferença entre o desafio Static 1 Step e o Standard 1 Step?
+Ambos são desafios de uma fase com 3% de perda diária e 5% de perda máxima. A diferença é como a perda máxima é medida:
+Static 1 Step: drawdown estático . O limite fica fixo 5% abaixo do seu saldo inicial e nunca se move.
+Standard 1 Step: drawdown trailing . O limite sobe junto com o seu equity mais alto.
+O Static 1 Step tem um objetivo de lucro de 10% (8% no Standard 1 Step) e exige 4 dias lucrativos.
+Existe Consistency Score no desafio Static 1 Step e na conta financiada simulada?
+Não há exigência de Consistency Score no desafio Static 1 Step nem na conta financiada simulada.
+Qual é o objetivo de lucro do desafio Static 1 Step?
+No desafio Static 1 Step, os traders devem atingir um objetivo de lucro de 10%.
+Desafio Static 1 Step Objetivo de lucro por tamanho de conta
+Tamanho da conta Objetivo de lucro (10%)
+$2,000 $200
+$5,000 $500
+$10,000 $1,000
+$20,000 $2,000
+$50,000 $5,000
+$100,000 $10,000
+Quais são as regras de drawdown do desafio Static 1 Step e da conta financiada simulada?
+O desafio Static 1 Step e a conta financiada simulada usam os mesmos limites de perda: 3% de perda diária e 5% de drawdown máximo estático. O M2 Account Saver também se aplica, conforme descrito abaixo.
+Limite de perda diária: 3% (baseado em equity)
+O drawdown diário é redefinido com base no maior valor entre seu equity ou seu saldo às 00:00 UTC .
+Sua conta não deve ultrapassar uma perda de 3% dentro de um dia de trading.
+Drawdown máximo: 5% (estático)
+Seu drawdown máximo fica fixo 5% abaixo do seu saldo inicial . Ele não sobe quando seu saldo ou equity crescem.
+Exemplo: Com uma conta de $10,000 , seu limite é de $9,500 . Se seu equity chegar a $11,000 , o limite continua em $9,500 .
+Ultrapassar qualquer um dos limites resultará na violação do desafio ou da conta financiada simulada.
+Existe um número mínimo de dias lucrativos na conta Static 1 Step?
+Você precisa de pelo menos 4 dias lucrativos na fase de avaliação e 4 novos dias lucrativos em cada ciclo de saque da conta financiada. Cada dia válido deve render pelo menos 0.5% do saldo inicial da conta. Os dias não precisam ser consecutivos.
+É permitido operar notícias na conta Static 1 Step?
+As restrições de notícias Red Folder da seção Geral se aplicam a este desafio e à conta financiada simulada, incluindo ordens pendentes, stop-losses, take-profits e fechamentos automáticos ao atingir o objetivo de lucro.
+Exemplo: Se uma notícia Red Folder estiver programada para as 2:00 PM , você não pode abrir nem fechar um trade entre 1:58 PM e 2:02 PM .
+O que é o M2 Account Saver e como ele funciona?
+O M2 Account Saver monitora sua perda flutuante atual, calculada como Saldo − Equity. Ele é acionado quando essa perda chega a 2% do saldo atual da sua conta. Não é medido a partir da sua maior equity nem do início do dia de trading.
+Dimensionar suas posições com cuidado pode ajudar a evitar o acionamento do Account Saver.
+Exemplo: Com um saldo atual de $10,000, o M2 Account Saver é acionado quando a perda flutuante chega a $200 (2%).
+Evento Status da conta Resultado
+Primeira violação O drawdown chega a 2% Todos os trades abertos são fechados. O split de recompensas da Etapa Financiada é reduzido para 50% , seja qual for a fase da violação.
+Segunda violação O drawdown chega a 2% novamente Todos os trades abertos são fechados e a conta é desativada permanentemente .
+Se você comprou o add-on de split de recompensas de 90%, o primeiro acionamento do M2 ainda assim reduz seu split para 50% e o add-on é perdido.
+Qual é o split de recompensas de uma conta financiada simulada Static 1 Step?
+O split de recompensas padrão é de 80%. Com o add-on correspondente, o split de recompensas aumenta para 90%.
+Após o primeiro acionamento do M2 Account Saver, seu split de recompensas é reduzido permanentemente para 50% pelo restante da vida da conta.
+Nota : Os add-ons devem ser selecionados no checkout ao comprar a conta. Eles não podem ser adicionados depois que a conta foi comprada.
+Com que frequência posso solicitar um saque em uma conta financiada simulada Static 1 Step?
+Seu primeiro saque fica disponível 10 dias úteis após seu primeiro trade na conta financiada simulada. Cada período seguinte de 10 dias úteis começa com seu primeiro trade após o saque anterior.
+Existe um limite de saque em uma conta Static 1 Step?
+Sim. O limite de saque é:
+Primeiro saque: Máximo de 6% do saldo inicial da sua conta em lucro antes da aplicação do split de recompensas.
+Segundo saque: Máximo de 8% do saldo inicial da sua conta em lucro antes da aplicação do split de recompensas.
+A partir do terceiro saque: Sem limite de saque.
+Standard 2 Step
+Existe Consistency Score no desafio Standard 2 Step e na conta financiada simulada?
+Não há exigência de Consistency Score no desafio Standard 2 Step nem na conta financiada simulada.
+Qual é o objetivo de lucro do desafio Standard 2 Step?
+No desafio Standard 2 Step, os traders devem atingir um objetivo de lucro de 8% na Fase 1 e de 5% na Fase 2.
+Desafio Standard 2 Step Objetivo de lucro por tamanho de conta
+Tamanho da conta Objetivo de lucro (8%) Objetivo de lucro (5%)
+$2,000 Fase 1 - $160 Fase 2 - $100
+$5,000 Fase 1 - $400 Fase 2 - $250
+$10,000 Fase 1 - $800 Fase 2 - $500
+$20,000 Fase 1 - $1,600 Fase 2 - $1000
+$50,000 Fase 1 - $4,000 Fase 2 - $2,500
+$100,000 Fase 1 - $8,000 Fase 2 - $5,000
+O que acontece depois que passo no desafio Standard 2 Step?
+1. Revisão de trading e da conta (1–3 dias úteis)
+Você deve cumprir tanto o objetivo de lucro quanto o requisito de dias lucrativos mínimos em cada fase de avaliação. Atingir apenas o objetivo de lucro não garante a aprovação. Depois que você concluir a fase final e cumprir todos os requisitos, seus trades serão fechados automaticamente e sua conta será desativada e colocada em revisão.
+2. Receba seu certificado do desafio
+Nossa equipe revisará seu histórico de trading. Após a aprovação, você receberá um e-mail de parabéns e seu certificado do desafio.
+3. Conclua o KYC e receba sua conta financiada simulada
+Você receberá um e-mail de KYC com instruções para enviar os documentos necessários. Depois que seu KYC for verificado com sucesso, normalmente em 1 dia útil , você receberá sua conta financiada simulada.
+Quais são as regras de drawdown do desafio Standard 2 Step e da conta financiada simulada?
+O desafio Standard 2 Step e a conta financiada simulada usam os mesmos limites de perda: 4% de perda diária e 8% de drawdown máximo estático.
+Limite de perda diária: 4% (baseado em equity)
+O drawdown diário é redefinido com base no maior valor entre sua equity e seu saldo às 00:00 UTC .
+Sua conta não pode exceder uma perda de 4% dentro de um dia de trading.
+Exemplo: Você tem uma conta de $10,000 , abre um trade e o deixa aberto durante a noite. Às 00:00 UTC , sua equity é de $10,300 , enquanto seu saldo é de $10,000 . Seu drawdown diário máximo é 4% de $10,300 ($412) . Sua conta violará o drawdown diário se sua equity cair abaixo de $9,888 naquele dia.
+Drawdown máximo: 8% (estático)
+Seu drawdown máximo é 8% do saldo inicial da conta e permanece fixo.
+O limite de drawdown não aumenta quando a equity ou o saldo da sua conta crescem.
+Exemplo: Com uma conta de $10,000 , seu drawdown máximo é de $800 , então sua equity não pode cair abaixo de $9,200 .
+Exceder qualquer um dos limites resultará na violação do desafio ou da conta financiada simulada.
+Existe um número mínimo de dias lucrativos na conta Standard 2 Step?
+Você precisa de pelo menos 3 dias lucrativos em cada fase de avaliação e 3 novos dias lucrativos em cada ciclo de saque da conta financiada. Cada dia válido deve render pelo menos 0.5% do saldo inicial da conta. Os dias não precisam ser consecutivos.
+Exemplo para uma conta de $10,000:
+Os dias 1, 3 e 4 contam como os 3 dias lucrativos exigidos. O dia 2 não conta porque o lucro é inferior a 0.5%.
+Dia de trading Lucro mínimo Conta? Total de dias lucrativos
+Dia 1 0.5% ($50) ✅ 1
+Dia 2 0.3% ($30) ❌ 1
+Dia 3 0.5% ($50) ✅ 2
+Dia 4 0.5% ($50) ✅ 3
+Existe uma regra de inatividade na conta Standard 2 Step?
+As contas devem ter pelo menos uma atividade de trading a cada 30 dias para continuarem ativas.
+Existe um tempo mínimo de permanência para cada trade?
+Pelo menos 50% dos seus trades devem ser mantidos por no mínimo 60 segundos (1 minuto). Trades mantidos por exatamente 60 segundos contam.
+É permitido operar notícias na conta Standard 2 Step?
+As restrições de notícias Red Folder da seção Geral se aplicam a este desafio e à conta financiada simulada, incluindo ordens pendentes, stop-losses, take-profits e fechamentos automáticos ao atingir o objetivo de lucro.
+Exemplo: Se uma notícia Red Folder estiver programada para as 2:00 PM , você não pode abrir nem fechar um trade entre 1:58 PM e 2:02 PM .
+Qual é o split de recompensas de uma conta financiada simulada Standard 2 Step?
+O split de recompensas padrão é de 80%. Com o add-on correspondente, o split de recompensas aumenta para 90%.
+Nota : Os add-ons devem ser selecionados no checkout ao comprar a conta. Eles não podem ser adicionados depois que a conta foi comprada.
+Qual é o saque mínimo de uma conta financiada simulada Standard 2 Step?
+A solicitação de saque mínima é de $20 de lucro antes da aplicação do split de recompensas. O valor que você recebe é a sua parte correspondente desse lucro.
+Com que frequência posso solicitar um saque em uma conta financiada simulada Standard 2 Step?
+Seu primeiro saque fica disponível 10 dias úteis após seu primeiro trade na conta financiada simulada. Cada período seguinte de 10 dias úteis começa com seu primeiro trade após o saque anterior.
+Standard 3 Step
+Existe Consistency Score no desafio Standard 3 Step e na conta financiada simulada?
+Não há exigência de Consistency Score no desafio Standard 3 Step nem na conta financiada simulada.
+Qual é o objetivo de lucro do desafio Standard 3 Step?
+No desafio Standard 3 Step , os traders devem atingir um objetivo de lucro de 3% em cada uma das três fases.
+Desafio Standard 3 Step Objetivo de lucro por tamanho de conta
+Tamanho da conta Objetivo de lucro (3%) Objetivo de lucro (3%) Objetivo de lucro (3%)
+$2,000 Fase 1 - $60 Fase 2 - $60 Fase 3 - $60
+$5,000 Fase 1 - $150 Fase 2 - $150 Fase 3 - $150
+$10,000 Fase 1 - $300 Fase 2 - $300 Fase 3 - $300
+$20,000 Fase 1 - $600 Fase 2 - $600 Fase 3 - $600
+$50,000 Fase 1 - $1,500 Fase 2 - $1,500 Fase 3 - $1,500
+$100,000 Fase 1 - $3,000 Fase 2 - $3,000 Fase 3 - $3,000
+O que acontece depois que passo no desafio Standard 3 Step?
+1. Revisão de trading e da conta (1–3 dias úteis)
+Quando você atingir os objetivos de lucro, seus trades serão fechados automaticamente e sua conta será desativada e colocada em revisão.
+2. Receba seu certificado do desafio
+Nossa equipe revisará seu histórico de trading. Após a aprovação, você receberá um e-mail de parabéns e seu certificado do desafio.
+3. Conclua o KYC e receba sua conta financiada simulada
+Você receberá um e-mail de KYC com instruções para enviar os documentos necessários. Depois que seu KYC for verificado com sucesso, normalmente em 1 dia útil , você receberá sua conta financiada simulada.
+Quais são as regras de drawdown do desafio Standard 3 Step e da conta financiada simulada?
+O desafio Standard 3 Step e a conta financiada simulada usam os mesmos limites de perda: 2% de perda diária e 3% de drawdown máximo estático.
+Limite de perda diária: 2% (baseado em equity)
+O drawdown diário é redefinido com base no maior valor entre sua equity e seu saldo às 00:00 UTC .
+Sua conta não pode exceder uma perda de 2% dentro de um dia de trading.
+Exemplo: Você tem uma conta de $10,000 , abre um trade e o deixa aberto durante a noite. Às 00:00 UTC , sua equity é de $10,100 , enquanto seu saldo é de $10,000 . Seu drawdown diário máximo é 2% de $10,100 ($202) . Sua conta violará o drawdown diário se sua equity cair abaixo de $9,898 naquele dia.
+Drawdown máximo: 3% (estático)
+Seu drawdown máximo é 3% do saldo inicial da conta e permanece fixo.
+O limite de drawdown não aumenta quando a equity ou o saldo da sua conta crescem.
+Exemplo: Com uma conta de $10,000 , seu drawdown máximo é de $300 , então sua equity não pode cair abaixo de $9,700 .
+Exceder qualquer um dos limites resultará na violação do desafio ou da conta financiada simulada.
+Existe um número mínimo de dias de trading na conta Standard 3 Step?
+Não há exigência de dias mínimos de trading no desafio Standard 3 Step nem nas contas financiadas simuladas. Você pode passar no desafio em um dia.
+Existe uma regra de inatividade na conta Standard 3 Step?
+As contas devem ter pelo menos uma atividade de trading a cada 30 dias para continuarem ativas.
+Existe um tempo mínimo de permanência para cada trade?
+Pelo menos 50% dos seus trades devem ser mantidos por no mínimo 60 segundos (1 minuto). Trades mantidos por exatamente 60 segundos contam.
+É permitido operar notícias na conta Standard 3 Step?
+As restrições de notícias Red Folder da seção Geral se aplicam a este desafio e à conta financiada simulada, incluindo ordens pendentes, stop-losses, take-profits e fechamentos automáticos ao atingir o objetivo de lucro.
+Exemplo: Se uma notícia Red Folder estiver programada para as 2:00 PM , você não pode abrir nem fechar um trade entre 1:58 PM e 2:02 PM .
+Qual é o split de recompensas de uma conta financiada simulada Standard 3 Step?
+O split de recompensas padrão é de 80%. Com o add-on correspondente, o split de recompensas aumenta para 90%.
+Nota : Os add-ons devem ser selecionados no checkout ao comprar a conta. Eles não podem ser adicionados depois que a conta foi comprada.
+Qual é o saque mínimo de uma conta financiada simulada Standard 3 Step?
+A solicitação de saque mínima é de $20 de lucro antes da aplicação do split de recompensas. O valor que você recebe é a sua parte correspondente desse lucro.
+Com que frequência posso solicitar um saque em uma conta financiada simulada Standard 3 Step?
+Seu primeiro saque fica disponível 10 dias úteis após seu primeiro trade na conta financiada simulada. Cada período seguinte de 10 dias úteis começa com seu primeiro trade após o saque anterior.
+2 Step OMO
+Existe Consistency Score no desafio 2 Step OMO e na conta financiada simulada?
+Não há exigência de Consistency Score no desafio 2 Step OMO nem na conta financiada simulada.
+O que é o desafio 2 Step OMO?
+O 2 Step OMO é uma avaliação em duas fases criada para identificar traders habilidosos e disciplinados.
+Qual é o objetivo de lucro do desafio 2 Step OMO?
+No desafio 2 Step OMO, os traders devem atingir um objetivo de lucro de 6% na Fase 1 e de 8% na Fase 2.
+Desafio 2 Step OMO Objetivo de lucro por tamanho de conta
+Tamanho da conta Objetivo de lucro (6%) Objetivo de lucro (8%)
+$2,000 Fase 1 - $120 Fase 2 - $160
+$5,000 Fase 1 - $300 Fase 2 - $400
+$10,000 Fase 1 - $600 Fase 2 - $800
+$20,000 Fase 1 - $1,200 Fase 2 - $1,600
+$50,000 Fase 1 - $3,000 Fase 2 - $4,000
+$100,000 Fase 1 - $6,000 Fase 2 - $8,000
+O que acontece depois que passo no desafio 2 Step OMO?
+1. Revisão de trading e da conta (1–3 dias úteis)
+Você deve cumprir tanto o objetivo de lucro quanto o requisito de dias lucrativos mínimos em cada fase de avaliação. Atingir apenas o objetivo de lucro não garante a aprovação. Depois que você concluir a fase final e cumprir todos os requisitos, seus trades serão fechados automaticamente e sua conta será desativada e colocada em revisão.
+2. Receba seu certificado do desafio
+Nossa equipe revisará seu histórico de trading. Após a aprovação, você receberá um e-mail de parabéns e seu certificado do desafio.
+3. Conclua o KYC e receba sua conta financiada simulada
+Você receberá um e-mail de KYC com instruções para enviar os documentos necessários. Depois que seu KYC for verificado com sucesso, normalmente em 1 dia útil , você receberá sua conta financiada simulada.
+Quais são as regras de drawdown do desafio 2 Step OMO e da conta financiada simulada?
+O desafio 2 Step OMO e a conta financiada simulada usam os mesmos limites de perda: 4% de perda diária e 8% de drawdown máximo estático. O M2 Account Saver também se aplica, conforme descrito abaixo.
+Limite de perda diária: 4% (baseado em equity)
+O drawdown diário é redefinido com base no maior valor entre sua equity e seu saldo às 00:00 UTC .
+Sua conta não pode exceder uma perda de 4% dentro de um dia de trading.
+Exemplo: Você tem uma conta de $10,000 , abre um trade e o deixa aberto durante a noite. Às 00:00 UTC , sua equity é de $10,300 , enquanto seu saldo é de $10,000 . Seu drawdown diário máximo é 4% de $10,300 ($412) . Sua conta violará o drawdown diário se sua equity cair abaixo de $9,888 naquele dia.
+Drawdown máximo: 8% (estático)
+Seu drawdown máximo é 8% do saldo inicial da conta e permanece fixo.
+O limite de drawdown não aumenta quando a equity ou o saldo da sua conta crescem.
+Exemplo: Com uma conta de $10,000 , seu drawdown máximo é de $800 , então sua equity não pode cair abaixo de $9,200 .
+Exceder qualquer um dos limites resultará na violação do desafio ou da conta financiada simulada.
+Existe um número mínimo de dias lucrativos na conta 2 Step OMO?
+Você precisa de pelo menos 4 dias lucrativos em cada fase de avaliação e 4 novos dias lucrativos em cada ciclo de saque da conta financiada. Cada dia válido deve render pelo menos 0.5% do saldo inicial da conta. Os dias não precisam ser consecutivos.
+Exemplo para uma conta de $10,000:
+Os dias 1, 3, 4 e 5 contam como os 4 dias lucrativos exigidos. O dia 2 não conta porque o lucro é inferior a 0.5%.
+Dia de trading Lucro mínimo Conta? Total de dias lucrativos
+Dia 1 0.5% ($50) ✅ 1
+Dia 2 0.3% ($30) ❌ 1
+Dia 3 0.5% ($50) ✅ 2
+Dia 4 0.5% ($50) ✅ 3
+Dia 5 0.5% ($50) ✅ 4
+Existe uma regra de inatividade na conta 2 Step OMO?
+As contas devem ter pelo menos uma atividade de trading a cada 30 dias para continuarem ativas.
+Existe um limite de tempo na conta 2 Step OMO?
+O 2 Step OMO tem duração máxima de 180 dias para as duas fases de avaliação somadas. Não há prazo separado para cada fase, então você pode distribuir seu tempo de trading como precisar.
+Você deve concluir as duas fases dentro dos 180 dias, cumprindo todos os objetivos de lucro e regras de risco, para se qualificar para a Etapa Financiada.
+Existe um tempo mínimo de permanência para cada trade?
+Os trades na conta financiada simulada devem ser mantidos por no mínimo 150 segundos (2.5 minutos). O lucro de trades fechados antes de 150 segundos é removido.
+É permitido operar notícias na conta 2 Step OMO?
+Operar notícias é totalmente permitido na Fase 1 e na Fase 2, sem restrições .
+Na Etapa Financiada , operar notícias é permitido, mas o lucro de qualquer evento de notícia individual é limitado a 0.50% do saldo da sua conta . Qualquer lucro acima do limite não contará para o seu saldo.
+Exemplo: Com uma conta financiada simulada de $10,000 , o limite é 0.50% × $10,000 = $50 . Se um evento de notícia gerar $70 de lucro, apenas $50 contarão para o seu saldo. Os $20 restantes estarão sujeitos a um ajuste de lucro.
+O que é o M2 Account Saver e como ele funciona?
+O M2 Account Saver monitora sua perda flutuante atual, calculada como Saldo − Equity. Ele é acionado quando essa perda chega a 2% do saldo atual da sua conta. Não é medido a partir da sua maior equity nem do início do dia de trading.
+Dimensionar suas posições com cuidado pode ajudar a evitar o acionamento do Account Saver.
+Exemplo: Com um saldo atual de $10,000, o M2 Account Saver é acionado quando a perda flutuante chega a $200 (2%).
+Evento Status da conta Resultado
+Primeira violação O drawdown chega a 2% Todos os trades abertos são fechados. O split de recompensas da Etapa Financiada é reduzido para 50% , seja qual for a fase da violação.
+Segunda violação O drawdown chega a 2% novamente Todos os trades abertos são fechados e a conta é desativada permanentemente .
+Se você comprou o add-on de split de recompensas de 90%, o primeiro acionamento do M2 ainda assim reduz seu split para 50% e o add-on é perdido.
+Existe um limite de saque em uma conta 2 Step OMO?
+Sim. O limite de saque é:
+Primeiro saque: Máximo de 6% do saldo inicial da sua conta em lucro antes da aplicação do split de recompensas.
+Segundo saque: Máximo de 8% do saldo inicial da sua conta em lucro antes da aplicação do split de recompensas.
+A partir do terceiro saque: Sem limite de saque.
+Qual é o split de recompensas de uma conta financiada simulada 2 Step OMO?
+O split de recompensas padrão é de 80% . Com o add-on correspondente, o split de recompensas aumenta para 90% .
+Após o primeiro acionamento do M2 Account Saver, seu split de recompensas é reduzido permanentemente para 50% pelo restante da vida da conta.
+Se você comprou o add-on de split de recompensas de 90%, o primeiro acionamento do M2 ainda assim reduz seu split para 50% e o add-on é perdido.
+Qual é o saque mínimo de uma conta financiada simulada 2 Step OMO?
+A solicitação de saque mínima é de $20 de lucro antes da aplicação do split de recompensas. O valor que você recebe é a sua parte correspondente desse lucro.
+Com que frequência posso solicitar um saque em uma conta financiada simulada 2 Step OMO?
+Seu primeiro saque fica disponível 10 dias úteis após seu primeiro trade na conta financiada simulada. Cada período seguinte de 10 dias úteis começa com seu primeiro trade após o saque anterior.
+Buy Now, Pay Later
+O que é o desafio Buy Now Pay Later?
+O Buy Now Pay Later é uma avaliação 1 Step que custa $5 para começar . Se você passar na avaliação, paga o restante da taxa para ativar sua conta financiada simulada.
+A taxa restante é descontada dos meus lucros?
+Não. É um pagamento separado que você faz depois de passar na avaliação. Os lucros obtidos durante a avaliação não podem ser sacados.
+Qual é o objetivo de lucro do desafio Buy Now Pay Later?
+No desafio Buy Now Pay Later, os traders devem atingir um objetivo de lucro de 4%.
+Buy Now Pay Later Objetivo de lucro por tamanho de conta
+Tamanho da conta Objetivo de lucro (4%)
+$2,000 Fase 1 - $80
+$5,000 Fase 1 - $200
+$10,000 Fase 1 - $400
+$20,000 Fase 1 - $800
+$50,000 Fase 1 - $2,000
+$100,000 Fase 1 - $4,000
+O que acontece depois que passo no desafio Buy Now Pay Later?
+1. Revisão de trading e da conta (1–3 dias úteis)
+Quando você atingir os objetivos de lucro, seus trades serão fechados automaticamente e sua conta será desativada e colocada em revisão.
+2. Receba seu certificado Buy Now Pay Later
+Nossa equipe revisará seu histórico de trading. Após a aprovação, você receberá um e-mail de parabéns e seu certificado do desafio.
+3. Pague e receba sua conta financiada simulada
+Depois de passar na avaliação, você precisará pagar o valor restante da conta que comprou. Assim que o pagamento for concluído, sua conta financiada simulada será enviada por e-mail.
+Pedimos que você conclua o pagamento em até 14 dias. Se precisar de mais tempo, entre em contato com nossa equipe de suporte para ver as opções disponíveis.
+Se não puder pagar pelo tamanho de conta que escolheu, você também pode solicitar a mudança para um tamanho de conta menor.
+Quando preciso concluir o KYC?
+Você se torna elegível para a verificação KYC quando solicita seu primeiro saque. Você receberá um e-mail de verificação KYC com instruções. Seu saque só é processado depois que você concluir com sucesso a verificação KYC e cumprir os requisitos de saque aplicáveis.
+Depois de concluir o processo de KYC, responda ao e-mail para confirmar que ele foi concluído .
+Quais são as regras de drawdown do desafio Buy Now Pay Later?
+O desafio Buy Now Pay Later tem apenas um limite durante a fase de avaliação:
+Drawdown máximo: 10% (estático)
+Seu drawdown máximo é 10% do saldo inicial da conta e permanece fixo.
+O limite de drawdown não aumenta quando a equity ou o saldo da sua conta crescem.
+Exemplo: Com uma conta de $10,000 , seu drawdown máximo é de $1,000 , então sua equity não pode cair abaixo de $9,000 .
+Quais são as regras de drawdown da conta financiada simulada Buy Now Pay Later?
+A conta financiada simulada Buy Now Pay Later tem dois limites de perda:
+Limite de perda diária: 4% (baseado em equity)
+O drawdown diário é redefinido com base no maior valor entre sua equity e seu saldo às 00:00 UTC .
+Sua conta não pode exceder uma perda de 4% dentro de um dia de trading.
+Exemplo: Você tem uma conta de $10,000 , abre um trade e o deixa aberto durante a noite. Às 00:00 UTC , sua equity é de $10,300 , enquanto seu saldo é de $10,000 . Seu drawdown diário máximo é 4% de $10,300 ($412) . Sua conta violará o drawdown diário se sua equity cair abaixo de $9,888 naquele dia.
+Drawdown máximo: 8% (trailing)
+Seu drawdown máximo sobe com sua maior equity flutuante , incluindo o lucro não realizado dos trades abertos.
+Exemplo: Com uma conta financiada simulada de $10,000 e drawdown trailing de 8% , seu limite inicial é de $9,200 . Se sua equity flutuante chegar a $11,000 , o limite sobe para $10,120 . Cair abaixo de $10,120 viola o limite de drawdown.
+Nota: O drawdown trailing é baseado na equity flutuante , não apenas nos trades fechados.
+Exceder o limite resultará na violação da conta financiada simulada .
+O que é o M2 Account Saver e como ele funciona?
+O M2 Account Saver se aplica apenas na Etapa Financiada da conta Buy Now Pay Later. Ele não se aplica durante a fase de avaliação.
+O M2 Account Saver monitora sua perda flutuante atual, calculada como Saldo − Equity. Ele é acionado quando essa perda chega a 2% do saldo atual da sua conta. Não é medido a partir da sua maior equity nem do início do dia de trading.
+Dimensionar suas posições com cuidado pode ajudar a evitar o acionamento do Account Saver.
+Exemplo: Com um saldo atual de $10,000, o M2 Account Saver é acionado quando a perda flutuante chega a $200 (2%).
+Evento Status da conta Resultado
+Primeira violação O drawdown chega a 2% Todos os trades abertos são fechados. Na Etapa Financiada , o split de recompensas é reduzido para 50% .
+Segunda violação O drawdown chega a 2% novamente Todos os trades abertos são fechados e a conta é desativada permanentemente .
+Existe Consistency Score no desafio Buy Now Pay Later e na conta financiada simulada?
+Não há exigência de Consistency Score durante a fase de avaliação . Na fase financiada , é exigido um Consistency Score de 20% .
+Como é calculado o Consistency Score de 20%?
+Seu melhor dia vencedor não pode exceder 20% do seu lucro total no ciclo de saque atual. O lucro total conta todos os dias de trading, incluindo os dias com perda, então um dia com perda reduz o total e aumenta seu score. O cálculo é reiniciado após cada saque.
+Dia de trading Lucro diário
+Dia 1 $100
+Dia 2 $150
+Dia 3 $200 ← Melhor dia vencedor
+Dia 4 $150
+Dia 5 $150
+Dia 6 $150
+Dia 7 $100
+Lucro total $1000
+Fórmula do Consistency Score de 20%
+Consistency Score = (Melhor dia vencedor ÷ Lucro total) × 100%
+Consistency Score: $200 ÷ $1,000 × 100% = 20% ✅ Cumpre o requisito de consistência
+Seu melhor dia vencedor é de $200 e seu lucro total é de $1,000 , então o Consistency Score é exatamente 20% .
+Nota: Se seu Consistency Score estiver acima de 20% , você deve continuar operando até que seu score chegue a 20% ou menos antes de solicitar um saque.
+Como funciona o drawdown depois de um saque?
+Antes do seu primeiro saque, a conta financiada simulada usa drawdown máximo trailing de 8%. O limite acompanha sua maior equity flutuante, incluindo lucros não realizados. Depois do primeiro saque, o limite de drawdown passa a ser o saldo inicial.
+Exemplo: Conta financiada simulada de $10,000
+Se você tem uma conta de $10,000 que cresceu para $10,800 e decide sacar $600, seu novo drawdown é de $200. O limite de perda diária também continua valendo.
+Existe uma regra de inatividade na conta Buy Now Pay Later?
+As contas devem ter pelo menos uma atividade de trading a cada 30 dias para continuarem ativas.
+É permitido operar notícias na conta financiada simulada Buy Now Pay Later?
+Operar notícias é totalmente permitido durante a fase de avaliação e a fase financiada, sem restrições.
+Qual é o split de recompensas de uma conta financiada simulada Buy Now Pay Later?
+O split de recompensas é de 80% . O Buy Now Pay Later não tem add-ons.
+Qual é o valor mínimo de recompensa de uma conta financiada simulada Buy Now Pay Later?
+A solicitação de saque mínima é de $20 de lucro antes da aplicação do split de recompensas. O valor que você recebe é a sua parte correspondente desse lucro.
+Com que frequência posso solicitar um saque em uma conta financiada simulada Buy Now Pay Later?
+As contas financiadas simuladas Buy Now Pay Later não têm período de espera fixo para saques. Você pode solicitar um saque assim que cumprir o Consistency Score de 20% e os demais requisitos de saque. O pagamento é processado após a verificação KYC bem-sucedida.
+Instant Funding
+O que é o Instant Funding?
+O Instant Funding dá acesso direto a uma conta financiada simulada desde o primeiro dia . Sem avaliação, sem desafios e sem espera para se qualificar.
+Você pode começar a operar imediatamente e trabalhar rumo ao seu primeiro saque.
+Quais são as regras de drawdown da conta Instant Funding?
+O Instant Funding tem dois limites de perda:
+Limite de perda diária: 2% (baseado em equity)
+O drawdown diário é redefinido com base no maior valor entre sua equity e seu saldo às 00:00 UTC .
+Sua conta não pode exceder uma perda de 2% dentro de um dia de trading.
+Exemplo: Você tem uma conta de $10,000 , abre um trade e o deixa aberto durante a noite. Às 00:00 UTC , sua equity é de $10,300 , enquanto seu saldo é de $10,000 . Seu drawdown diário máximo é 2% de $10,300 ($206) . Sua conta violará o drawdown diário se sua equity cair abaixo de $10,094 naquele dia.
+Drawdown máximo: 3% (trailing)
+Seu drawdown máximo sobe com sua maior equity flutuante , incluindo o lucro não realizado dos trades abertos.
+Exemplo: Com uma conta financiada simulada de $10,000 e drawdown trailing de 3% , o limite de drawdown inicial é de $9,700 . Se sua equity flutuante chegar a $11,000 , o limite trailing sobe para $10,670 . Cair abaixo de $10,670 violaria o limite de drawdown.
+Nota: O drawdown trailing é baseado na equity flutuante , não apenas nos trades fechados.
+Exceder o limite resultará na violação da conta financiada simulada .
+O que é a regra de risco máximo de 1% no Instant Funding?
+A regra de risco máximo de 1% se baseia apenas na sua perda flutuante atual em relação ao saldo atual da sua conta. Não é uma regra de drawdown trailing e não é calculada a partir do seu maior lucro flutuante ou da sua maior equity.
+Fórmula: Perda flutuante = Saldo − Equity
+Exemplo: Conta de $10,000
+Saldo Equity Perda flutuante Status
+$10,000 $9,970 $30 (0.3%) ✅ Sem violação
+$10,000 $9,900 $100 (1%) ⚠️ Limite de 1% atingido
+$10,000 $9,899 $101 (1.01%) ❌ Violação
+Em uma conta de $10,000, a perda flutuante máxima permitida é de $100.
+Quando preciso concluir o KYC?
+Você se torna elegível para a verificação KYC quando solicita seu primeiro saque. Você receberá um e-mail de verificação KYC com instruções. Seu saque só é processado depois que você concluir com sucesso a verificação KYC e cumprir os requisitos de saque aplicáveis.
+Depois de concluir o processo de KYC, responda ao e-mail para confirmar que ele foi concluído .
+Existe Consistency Score na conta Instant Funding?
+Na conta Instant Funding , é exigido um Consistency Score de 20% .
+Como é calculado o Consistency Score de 20%?
+Seu melhor dia vencedor não pode exceder 20% do seu lucro total no ciclo de saque atual. O lucro total conta todos os dias de trading, incluindo os dias com perda, então um dia com perda reduz o total e aumenta seu score. O cálculo é reiniciado após cada saque.
+Fórmula: Consistency Score = (Melhor dia vencedor ÷ Lucro total) × 100%
+Dia de trading Lucro diário
+Dia 1 $100
+Dia 2 $150
+Dia 3 $200 ← Melhor dia vencedor
+Dia 4 $150
+Dia 5 $150
+Dia 6 $150
+Dia 7 $100
+Lucro total $1000
+Consistency Score: $200 ÷ $1,000 × 100% = 20% ✅ Cumpre o requisito de consistência
+Seu melhor dia de trading é de $200 e seu lucro total é de $1,000 , então o Consistency Score é exatamente 20% .
+Nota: Se seu Consistency Score estiver acima de 20% , você deve continuar operando até que seu score chegue a 20% ou menos antes de solicitar um saque.
+Existe uma regra de inatividade na conta Instant Funding?
+As contas devem ter pelo menos uma atividade de trading a cada 30 dias para continuarem ativas.
+Existe um tempo mínimo de permanência para cada trade?
+Pelo menos 50% dos seus trades devem ser mantidos por no mínimo 60 segundos (1 minuto). Trades mantidos por exatamente 60 segundos contam.
+É permitido operar notícias na conta Instant Funding?
+Operar notícias é totalmente permitido, sem restrições.
+Qual é o split de recompensas de uma conta Instant Funding?
+O split de recompensas padrão é de 80% . Com o add-on correspondente, o split de recompensas aumenta para 90% .
+Qual é o saque mínimo de uma conta Instant Funding?
+Você deve gerar pelo menos 3% do saldo inicial da sua conta em lucro antes da aplicação do split de recompensas. Este é um limite mínimo de lucro, e não um valor mínimo líquido de saque.
+Com que frequência posso solicitar um saque em uma conta Instant Funding?
+Os saques das contas Instant Funding estão disponíveis sob demanda . Você pode solicitar um saque assim que atingir o limite de lucro de 3% e um Consistency Score de 20% ou menos .
+Instant Mini Funding
+O que é o Instant Mini Funding?
+O Instant Mini Funding dá acesso direto a uma conta financiada simulada por 24 horas: sem avaliação, sem desafios e sem espera para se qualificar.
+Opere imediatamente e busque gerar lucros dentro do seu período de financiamento de 24 horas.
+Quanto tempo tenho para operar?
+Você tem 24 horas para operar na sua conta Instant Mini Funding. O cronômetro começa quando você faz seu primeiro trade .
+Você deve cumprir os requisitos de saque e enviar sua solicitação de saque dentro do período de 24 horas .
+Exemplo: Se você fizer seu primeiro trade às 2:00 PM de segunda-feira , seu período de 24 horas termina às 2:00 PM de terça-feira . Sua solicitação de saque também deve ser enviada dentro desse período de 24 horas .
+Depois que as 24 horas passarem, nenhuma solicitação de saque poderá ser feita.
+Quais são as regras de drawdown da conta Instant Mini Funding?
+O Instant Mini Funding tem dois limites de perda:
+Limite de perda diária: 2% (baseado em equity)
+O drawdown diário é redefinido com base no maior valor entre sua equity e seu saldo às 00:00 UTC .
+Sua conta não pode exceder uma perda de 2% dentro de um dia de trading.
+Exemplo: Você tem uma conta de $10,000 , abre um trade e o deixa aberto durante a noite. Às 00:00 UTC , sua equity é de $10,300 , enquanto seu saldo é de $10,000 . Seu drawdown diário máximo é 2% de $10,300 ($206) . Sua conta violará o drawdown diário se sua equity cair abaixo de $10,094 naquele dia.
+Drawdown máximo: 3% (trailing)
+Seu drawdown máximo sobe com sua maior equity flutuante , incluindo o lucro não realizado dos trades abertos.
+Exemplo: Com uma conta financiada simulada de $10,000 e drawdown trailing de 3% , o limite de drawdown inicial é de $9,700 . Se sua equity flutuante chegar a $11,000 , o limite trailing sobe para $10,670 . Cair abaixo de $10,670 violaria o limite de drawdown.
+Nota: O drawdown trailing é baseado na equity flutuante , não apenas nos trades fechados.
+Exceder o limite resultará na violação da conta financiada simulada .
+O que é a regra de risco máximo de 1% no Instant Mini Funding?
+A regra de risco máximo de 1% se baseia apenas na sua perda flutuante atual em relação ao saldo atual da sua conta. Não é uma regra de drawdown trailing e não é calculada a partir do seu maior lucro flutuante ou da sua maior equity.
+Fórmula: Perda flutuante = Saldo − Equity
+Exemplo: Conta de $10,000
+Saldo Equity Perda flutuante Status
+$10,000 $9,970 $30 (0.3%) ✅ Sem violação
+$10,000 $9,900 $100 (1%) ⚠️ Limite de 1% atingido
+$10,000 $9,899 $101 (1.01%) ❌ Violação
+Em uma conta de $10,000, a perda flutuante máxima permitida é de $100.
+Quando preciso concluir o KYC?
+Você se torna elegível para a verificação KYC quando solicita seu primeiro saque. Você receberá um e-mail de verificação KYC com instruções. Seu saque só é processado depois que você concluir com sucesso a verificação KYC e cumprir os requisitos de saque aplicáveis.
+Depois de concluir o processo de KYC, responda ao e-mail para confirmar que ele foi concluído .
+Quantos trades posso fazer na minha conta Instant Mini Funding?
+Você pode ter apenas um trade aberto por vez na sua conta Instant Mini Funding. Depois que o trade for fechado, você pode abrir outro.
+Existe Consistency Score na conta Instant Mini Funding?
+Na conta Instant Mini Funding, é exigido um Consistency Score de 15%.
+Como é calculado o Consistency Score de 15%?
+Em uma conta Instant Mini Funding de $10,000, seu melhor trade vencedor não pode exceder 15% do seu lucro total durante o período de financiamento de 24 horas.
+Fórmula:
+Consistency Score = (Melhor trade vencedor ÷ Lucro total) × 100%
+Trade Lucro (USD)
+Trade 1 $100
+Trade 2 $100
+Trade 3 $150
+Trade 4 $200 ← Melhor trade vencedor
+Trade 5 $100
+Trade 6 $100
+Trade 7 $100
+Trade 8 $100
+Trade 9 $100
+Trade 10 $100
+Trade 11 $100
+Trade 12 $100
+Lucro total $1,350
+Consistency Score = ($200 ÷ $1,350) × 100% = 14.81%.
+Isso está abaixo de 15% e cumpre o requisito de consistência.
+Nota: Se seu Consistency Score estiver acima de 15% , você deve continuar operando até que seu score chegue a 15% ou menos antes de solicitar um saque.
+Existe uma regra de inatividade na conta Instant Mini Funding?
+Não há regra de inatividade em uma conta Instant Mini Funding
+Existe um tempo mínimo de permanência para cada trade?
+Os trades na conta financiada simulada devem ser mantidos por no mínimo 150 segundos (2.5 minutos). O lucro de trades fechados antes de 150 segundos é removido.
+É permitido operar notícias na conta Instant Mini Funding?
+Operar notícias é totalmente permitido, sem restrições.
+Qual é o split de recompensas de uma conta Instant Mini Funding?
+O split de recompensas padrão é de 70% . Com o add-on correspondente, o split de recompensas aumenta para 90% .
+Qual é o saque mínimo de uma conta Instant Mini Funding?
+Você deve gerar pelo menos 3% do saldo inicial da sua conta em lucro antes da aplicação do split de recompensas. Este é um limite mínimo de lucro, e não um valor mínimo líquido de saque.
+Com que frequência posso solicitar um saque em uma conta Instant Mini Funding?
+Você pode solicitar apenas um saque por conta Instant Mini Funding . É um saque único , e não uma opção de saque recorrente.
+Para solicitar o saque, você deve atingir o limite de lucro de 3% e manter um Consistency Score de 15% ou menos . A solicitação de saque deve ser enviada dentro do período de financiamento de 24 horas .
+Mercados de Previsão
+O que é o desafio Prediction Markets?
+O desafio Prediction Markets é uma avaliação de uma única fase pensada para traders que operam em mercados de previsão e de eventos. Ele tem dois níveis:
+One-Step Essential
+One-Step Elite
+As duas opções exigem apenas uma fase antes de acessar uma conta financiada simulada.
+O que diferencia o desafio Maven Prediction Markets de um desafio de Forex?
+Como os mercados de previsão funcionam de forma diferente dos instrumentos de trading tradicionais, este desafio também tem uma estrutura de regras diferente:
+Sem limite de drawdown diário
+Sem mínimo de dias de trading
+Isso dá mais flexibilidade aos traders, mantendo o desafio estruturado e baseado em desempenho.
+Qual é a diferença entre One-Step Essential e One-Step Elite?
+A principal diferença entre os dois tipos de desafio é o modelo de drawdown:
+One-Step Essential usa Trailing Drawdown com perda máxima de 5% na Fase 1 e de 8% na conta financiada
+One-Step Elite usa Static Drawdown com perda máxima de 5% na Fase 1 e de 8% na conta financiada
+Fora isso, os parâmetros de trading e os contratos de eventos disponíveis são os mesmos nos dois tipos de desafio.
+Quais são as metas de lucro?
+A meta de lucro para os dois tipos de desafio é de 9%. Não há meta de lucro na fase financiada.
+Qual é o lucro máximo que posso gerar em uma única pergunta?
+Você pode gerar no máximo 3% do saldo inicial da sua conta em uma única pergunta. Se gerar mais, o lucro que passar desse limite será anulado.
+Como faço o saque?
+A divisão de lucros é de 70%. Ao chegar à fase financiada, você saca 70% dos lucros que gerar. Por exemplo, se lucrar $10,000, você receberá $7,000 na sua wallet. Você pode solicitar um saque assim que tiver lucro suficiente para sacar; não há período de espera.
+Quais regras de estilo de trading se aplicam?
+As regras de trading padrão da Maven se aplicam ao desafio Prediction Markets. Isso significa:
+Sem reverse hedging
+Sem espelhamento de contas (account mirroring)
+Sem uso de EAs ou scripts
+No entanto, não há restrição de trading em notícias específica para o desafio Prediction Markets. Também não há regra de consistência nem regra de 60 segundos . A regra de inatividade se aplica: pelo menos uma operação a cada 30 dias.
+De onde vêm os dados de mercado?
+O feed de dados vem da MatchTrade e acompanha os mercados da Kalshi ou da Polymarket.
+Quais são alguns exemplos de eventos que posso operar e como funciona?
+Os mercados de previsão permitem operar sobre o resultado de eventos do mundo real.
+Alguns exemplos:
+Vencedor da eleição presidencial
+Vencedor da Copa do Mundo de 2026
+Modelo de IA mais bem classificado do ano
+Digamos que você escolha operar o contrato do evento Vencedor da Eleição Presidencial. Se JD Vance está cotado a 19%, um contrato custa $0.19. Se as chances dele subirem depois para 60%, esse mesmo contrato passa a valer $0.60.
+Isso significa:
+Preço de entrada: $0.19
+Novo valor: $0.60
+Lucro por contrato: $0.41
+Então, se você comprou 1,000 contratos, seu lucro total seria: 1,000 × $0.41 = $410.
+Nenhuma pergunta corresponde à sua pesquisa. Fale conosco e nós ajudamos.
+Pronto para começar no trading?
+Tenha acesso a capital de elite, ferramentas avançadas e o suporte de uma comunidade dedicada ao seu crescimento.
+Escolher desafio Saiba mais sobre nós
+Fique à frente
+Inscreva-se em nossa newsletter para receber insights de especialistas, atualizações e ofertas exclusivas da Maven.
+Digite seu melhor e-mail Ao se inscrever, você concorda com nossos Termos e Condições, Política de Privacidade e nossas práticas de uso de cookies, conforme descrito em nossa Política de Privacidade e Política de Cookies.
+Te inscreveu com sucesso!
+Erro ao se inscrever. Por favor, tente novamente.
+Inscrevendo...
+Navegação
+Preços
+Sobre nós
+FAQ
+Contato
+Entrar
+Recursos
+Blog
+Carreiras
+Afiliados
+Comunidade
+Avaliações
+Legal
+Política de Privacidade
+Aviso de Risco
+Termos e Condições
+Regras de Day Trading
+Política de AML
+Preferências de cookies
+Redes sociais
+Discord
+Instagram
+YouTube
+TikTok
+Facebook
+LinkedIn
+X
+© 2026 Maven. Todos os direitos reservados.
+Todas as informações fornecidas neste site destinam-se exclusivamente a fins educacionais relacionados ao trading nos mercados financeiros e não constituem, de forma alguma, uma recomendação de investimento específica, recomendação comercial, análise de oportunidades de investimento ou recomendação geral semelhante sobre a negociação de instrumentos financeiros. A Maven Trading oferece apenas serviços de negociação simulada e ferramentas educacionais para traders. As informações deste site não são direcionadas a residentes de qualquer país ou jurisdição onde tal distribuição ou uso seja contrário às leis ou regulamentos locais. A Maven Trading não atua como corretora e não aceita depósitos. As informações no site não são direcionadas a nenhuma jurisdição e não se destinam a qualquer uso que seja contrário à lei ou regulamentação local. Não fornecemos acesso a nenhum país presente na lista de sanções das Nações Unidas. O Metatrader não está disponível para os Estados Unidos ou Canadá. A Maven Edu - FZCO é uma sociedade limitada registrada nos Emirados Árabes Unidos, DSO-IFZA, IFZA Properties, Dubai Silicon Oasis, sob o número de registro 006-0060823-070425, e está em conformidade com todas as leis e regulamentos necessários de acordo com as jurisdições locais e internacionais. Esteja ciente de que não oferecemos consultoria de investimento específica, consultoria empresarial, análise de oportunidades de investimento nem recomendações gerais sobre a negociação de instrumentos financeiros. Também não oferecemos negociações em mercados reais, pois todos os instrumentos são simulados e fornecidos por provedores de liquidez. Operar nos mercados financeiros envolve um alto nível de risco, e aconselhamos que você não arrisque mais do que pode se dar ao luxo de perder.
+Países restritos: Belarus, Coreia do Norte, Cuba, Irã, Mianmar, Rússia, Santa Lúcia, Síria, Venezuela, e as regiões da Crimeia (incluindo Sebastopol), Donetsk, Kherson, Luhansk e Zaporíjia da Ucrânia.
++971 50 513 1897 +44 7441445241 support@maventrading.com
+Consentimento de Cookies
+Usamos cookies para melhorar sua experiência de navegação, exibir anúncios ou conteúdo personalizado e analisar nosso tráfego. Ao clicar em "Aceitar tudo", você consente com nosso uso de cookies.
+Leia nossa Política de Cookies para mais detalhes.
+Recusar tudo Aceitar tudo
+Deixe seu e-mail e concorra a uma conta de 100k!*
+*ao fornecer seu e-mail, você aceita receber comunicações promocionais.
+Enviar Quero participar
+Sem spam, queremos você focado!
+Pronto! Verifique sua caixa de entrada.
+Erro ao se inscrever. Por favor, tente novamente.
+Inscrevendo...

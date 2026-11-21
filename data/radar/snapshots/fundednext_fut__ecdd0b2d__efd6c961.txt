@@ -1,0 +1,108 @@
+FundedNext CFDs Symbols & Conditions | General Rules
+CFDs
+Futures
+Labs
+Rewards
+More
+EN Login
+CFDs
+Futures
+Labs
+Rewards
+General Rules
+Every rule, every condition, published before you start your challenge. Same rules for every trader.
+CFDs Stellar 2-Step, 1-Step, Lite & Instant Futures Flex, Rapid, Direct
+Trading Objectives Trading Platforms Symbols & Conditions What is Allowed What is Forbidden
+1
+Available Trading Instruments
+Trade five asset classes: Forex, indices, commodities, crypto and stock.
+Forex : ⁦46⁩ symbols (majors, minors, and exotic pairs)
+Indices : ⁦SPX500⁩ (S&P ⁦500⁩), ⁦NDX100⁩ (NASDAQ), ⁦GER30⁩ (DAX), ⁦US30⁩ (Dow Jones), ⁦NIFTY50⁩ and more.
+Commodities : XAUUSD (Gold), XAGUSD (Silver), USOUSD (US Oil), and more.
+Crypto : BTC/USD, ETH/USD, XRP/USD, and more.
+Stock : AAPL, NVDA, SPCX , TSLA and more.
+Learn More →
+The full instrument list is available on the Symbols page and in the FAQ. If a symbol is not on that list, it is not tradable.
+2
+Spread & Commissions
+Raw spreads starting from ⁦0.0⁩ pips. Commission charged per side, fixed by account model.
+Commission :
+– Stellar ⁦1⁩-Step and ⁦2⁩-Step : ⁦$5⁩ on Forex and Oil, ⁦0.0016%⁩ on Metals, ⁦0.04%⁩ on Crypto, ⁦0.004%⁩ on Stock.
+– Stellar Instant : ⁦$7⁩ on Forex and Oil, ⁦0.0016%⁩ on Metals, ⁦0.04%⁩ on Crypto, ⁦0.004%⁩ on Stock.
+– Stellar Lite : ⁦$7⁩ on Forex and Oil, ⁦0.0018%⁩ on Metals, ⁦0.04%⁩ on Crypto, ⁦0.004%⁩ on Stock.
+spreads : Live spreads and instrument details are available on the Symbols page.
+3
+Leverage
+Leverage allows you to control larger positions with less capital.
+Challenge phase :
+– Stellar ⁦1⁩-Step : Forex ⁦1:30⁩, Indices ⁦1:10⁩, Commodities ⁦1:15⁩, Crypto ⁦1:1⁩, Stock ⁦1:2⁩
+– Stellar ⁦2⁩-Step and Stellar Lite : Forex ⁦1:100⁩, Indices and, Commodities ⁦1:25⁩, Crypto ⁦1:1⁩, Stock ⁦1:2⁩
+Funded phase :
+– Stellar ⁦1⁩-Step : Forex ⁦1:30⁩, Indices and Commodities ⁦1:10⁩, Crypto ⁦1:1⁩, Stock ⁦1:2⁩
+– Stellar ⁦2⁩-Step and Stellar Lite : Forex ⁦1:100⁩, Indices and Commodities ⁦1:15⁩, Crypto ⁦1:1⁩, Stock ⁦1:2⁩
+Stellar Instant : Forex ⁦1:30⁩, Indices ⁦1:5⁩, Commodities ⁦1:7.5⁩, Crypto ⁦1:1⁩, Stock ⁦1:2⁩
+Learn More →
+4
+Swap Fee
+An interest fee you either pay or earn when you hold a position overnight or over the weekend.
+Calculated on the interest rate difference between the two currencies in the pair. Swap fee is included in both DLL and MLL calculations. Triple-swap days vary by instrument and platform, check the symbol specs to see when they apply.
+Learn More →
+5
+Overnight & Weekend Holding
+Both overnight and weekend holding are allowed across every CFDs account, at every stage. Swap charges apply on positions held overnight or over the weekend.
+All CFDs accounts, all stages : Overnight and weekend holding allowed.
+Swap charges apply : Swap fees on overnight and weekend positions.
+Triple swap days : ⁦3x⁩ swap is charged on Wednesday for Forex and Commodities, and on Friday for Indices, Crypto and Stock. A position held through Wednesday night, for example, accumulates three days of swap on Forex pairs.
+Start your FundedNext challenge
+Thousands of traders are already getting rewarded by FundedNext. The only one missing from that list is you. Your challenge is open now.
+Start Challenges
+Product and Offerings
+FundedNext CFDs
+FundedNext Futures
+FNmarkets
+General Rules
+Help Centre (FAQ)
+Partners
+Resources
+How Prop Trading Works
+Calculator
+Blog
+CFDs Glossary
+Trading Platforms
+Economic Calendar
+Symbols
+Market Overview
+Company
+Company
+News & Media
+Achievements & Awards
+Events
+Contact
+Public Announcements
+Privacy & Policy
+Terms of Service
+CFDs Challenge Terms
+Futures Challenge Terms
+Instant Account Terms
+Privacy Policy
+Cookie Policy
+AML Policy
+Risk Disclosure
+Partners T&C
+The services offered under the FundedNext brand are provided by GrowthNext – F.Z.E. (Reg. No. 28831) , with its registered address at Office No. 7, AI Robotics Hub, C1 Building, Ajman Free Zone (AFZ), Ajman, UAE, which is responsible for user onboarding, the administration of the services and the operation of the website fundednext.com. FundedNext™ is a trademark and brand name owned by GrowthNext – F.Z.E. Certain operational, technical, administrative and payment-related activities are performed by the following affiliated entities (together with GrowthNext – F.Z.E., the "FundedNext Entities"):
+FundedNext Ltd (Reg. No. HY01023052), Bonovo Road, Fomboni, Island of Mohéli, Union of the Comoros, which operates the simulated trading environment.
+Third-Party Platforms: Trading platforms and related software are provided by independent third-party providers. The FundedNext Entities do not control these platforms and are not responsible for their availability or performance.
+FundedNext Limited , 8/F China Hong Kong Tower, 8-12 Hennessy Road, Wan Chai, Hong Kong , which processes payments.
+Incenteco Trading Ltd , 26 Pittaou Str., 3118 Agia Fyla, Limassol, Cyprus, and Abutor Investments Ltd , 16 Foti Kolakidi, 1st floor, 3031 Agia Zoni, Limassol, Cyprus, which facilitate payment-related operations.
+Simulated Trading Only: The FundedNext Entities provide access to simulated trading programs designed solely to evaluate trading proficiency and risk-management skills. All trading takes place in a simulated environment using virtual funds and does not involve real financial risk, real financial instruments or live market orders.
+No Brokerage or Client Funds: None of the FundedNext Entities acts as a broker, dealer, exchange or investment adviser, or accepts or manages client deposits. Rewards are based solely on performance in the simulated evaluation and do not represent profits from real trading.
+No Investment Advice: All content, tools and services are provided for evaluation purposes only and do not constitute investment advice, a solicitation, or an offer to buy or sell any financial product, cryptocurrency or derivative. Participants should consult independent financial, legal or tax advisers before trading outside this program.
+Hypothetical Performance Disclosure – CFTC Rule 4.41: These results are based on simulated or hypothetical performance results that have certain inherent limitations. Unlike the results shown in an actual performance record, these results do not represent actual trading. Also, because these trades have not actually been executed, these results may have under-or over-compensated for the impact, if any, of certain market factors, such as lack of liquidity. Simulated or hypothetical trading programs in general are also subject to the fact that they are designed with the benefit of hindsight. No representation is being made that any account will or is likely to achieve profits or losses similar to these being shown.
+Jurisdictional Restrictions: The FundedNext Entities do not offer services to residents of the following jurisdictions: North Korea (DPRK), Myanmar, Belarus, Iran, and Russia, including countries on the FATF high-risk and EU/UN sanctions lists, and Vietnam. Users are responsible for ensuring that their use of the services complies with the laws applicable to them. Services are available only to persons aged 18 or over.
+Risk Warning: Trading in forex, CFDs, futures, derivatives and digital assets involve substantial risk of loss. Past performance is not indicative of future results.
+Fees and Refunds: Fees are paid solely for access to the evaluation services. They are not deposits or investments and are not used for trading. Refunds are governed by our Terms & Conditions.
+In case of any conflict, our Terms & Conditions prevail.
+Not a Deposit | Not FDIC Insured | May Lose Value
+FundedNext-Copyright © 2026
+Trust and Security |
+Subscribe to newsletter

@@ -1,0 +1,82 @@
+Level 1 and Level 2 Market Data | Topstep Help Center Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Skip to main content
+Discord Topstep TopstepTV
+Discord Topstep TopstepTV
+Search for articles...
+All Collections
+Topstep FAQs
+Level 1 and Level 2 Market Data
+Level 1 and Level 2 Market Data
+Level 1 is free. Level 2 costs more. Here's the breakdown.
+June 18, 2026
+Table of contents
+The Basics
+Topstep covers Level 1 market data (Top of Book) for all 4 exchanges on Trading Combine® and Express Funded Account® (XFA) accounts at no cost. Level 2 (Depth of Market) is available as an upgrade for $38/month.
+Level 1 vs. Level 2 Data
+Level 1 (Top of Book)
+Level 2 (Depth of Market)
+What you see
+Best bid and best ask
+5–10 best bids and asks
+Use case
+Chart trading
+DOM / Matrix trading
+Cost
+Free (Topstep covers it)
+$38/month
+The CME requires payment for all market data on simulated accounts. Topstep covers Level 1 for all 4 exchanges at no cost to you.
+What Is CME Agreement and why do I need to sign it?
+The CME Market Data Agreement is a legally binding document that lets you access real-time exchange data. As part of signing, you must declare whether you're a professional or non-professional user.
+⚠️ Topstep Traders must always select non-professional status.
+How to Sign It
+The non-professional CME Agreement appears automatically the first time you log into TopstepX™. Just follow the prompts.
+Troubleshooting
+If you're having trouble getting the agreement to load or submit:
+Reset your password from the dashboard
+Clear your browser cookies and cache, or try Incognito/Private mode
+Make sure all profile fields are filled in — including a 5-digit ZIP code. Clear any pre-populated fields and retype them manually
+Try completing the agreement on a mobile device — many Traders have better results there
+How to Purchase Level 2 Data
+Go to the Accounts tab in your Topstep Dashboard.
+Click Add Ons .
+Select Depth of Market Bundle .
+👉 Important: You'll be charged immediately and Rebilled on the 28th of each month. Data is not pro-rated — you pay the full amount regardless of when you sign up.
+FAQs
+Why is Level 2 Data not free?
+The CME charges for all market data on simulated accounts. Topstep covers Level 1 for everyone. Level 2 requires an upgrade at $38/month.
+Can I cancel Level 2 Data?
+Yes, cancel anytime from your Billing page. Cancellation takes effect immediately — you lose access right away. Cancel on the last day you want access.
+Is Level 2 Data pro-rated?
+No. You'll be charged the full $38 regardless of when you sign up. Billing renews on the 28th of each month.
+Can I get a refund for Level 2 Data?
+No. Once billing is processed, refunds are not issued. Cancel by the 27th to avoid the next charge. You'll automatically move back to Level 1 after cancellation.
+Do I need to pay for data in an Express Funded Account®?
+Level 1 is free for all simulated accounts including the XFA. Level 2 requires an upgrade — you can do it anytime from your dashboard.
+If I already have Level 2 Data, does it carry over to new accounts?
+Yes. An active Level 2 subscription applies to all Trading Combines® under the same username.
+Related Articles
+Quantower Connection Instructions
+Trading Combine® Parameters
+Express Funded Account™ Parameters
+What are the costs in the Live Funded Account?
+Topstep Pricing and Payment Questions
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Your Privacy Choices

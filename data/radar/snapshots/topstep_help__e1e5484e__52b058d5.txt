@@ -1,0 +1,357 @@
+Risk Adjustments: High Risk/High Volatility | Topstep Help Center Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Skip to main content
+Discord Topstep TopstepTV
+Discord Topstep TopstepTV
+Search for articles...
+All Collections
+TopstepX™
+Risk Adjustments: High Risk/High Volatility
+Risk Adjustments: High Risk/High Volatility
+Markets can go haywire. When they do, Topstep may reduce position limits. That's protection, not punishment.
+Updated this week
+Table of contents
+Position Limit Adjustments
+Markets get wild sometimes. Expanding price limits. Velocity Logic halts. Historic ranges in minutes. When that happens, even experienced Traders can get caught on the wrong side fast — and fast losses can end a trading career before it really starts.
+During extreme volatility, we may temporarily tighten position limits on affected products. We're talking about conditions like:
+Expanding price limits
+Velocity Logic halts
+Historic price ranges
+Rapid, sustained price movement
+This isn't punishment. It's protection — guardrails to keep you in the game when the market is doing something it's never done before. Our job is to help you trade another day.
+How Position Limits Are Adjusted
+When a product is deemed high-risk due to volatility, we may implement one or both of the following adjustments:
+Micro Contract Limits
+Mini Contract Restrictions
+Trading on mini-sized contracts or larger may be temporarily halted for affected products
+Current Restrictions
+👉 Restrictions below are organized by account size. The numbers shown use a 3-tier format: $50K / $100K / $150K. For example, "GC = 3/6/9" means 3 minis for $50K accounts, 6 minis for $100K accounts, and 9 minis for $150K accounts.
+Trading Combine, Express Funded Account,
+Pro Account
+Live Funded Account
+Energies Restriction
+RBOB Gasoline (RB) = 3/6/9
+Heating Oil (HO) = 3/6/9
+Crude Oil (CL) = 3/6/9
+Micro Crude Oil (MCL) = 30/60/90
+E-Mini Crude Oil (QM) = 3/6/9
+RBOB Gasoline (RB) = 3/6/9
+Heating Oil (HO) = 3/6/9
+Crude Oil (CL) = 3/6/9
+Micro Crude Oil (MCL) = 3/6/9
+E-Mini Crude Oil (QM) = 3/6/9
+Metals Restriction
+Gold (GC) = 3/6/9
+Micro Gold (MGC) = 30/60/90
+Silver (SI) = 0
+Micro Silver (SIL) = 2/5/7
+Copper (HG) = 0
+Micro Copper (MHG) = 2/5/7
+Platinum (PL) = 0
+Gold (GC) = 3/6/9
+Micro Gold (MGC) = 5/10/15
+Silver (SI) = 0
+Micro Silver (SIL) = 2/4/6
+Copper (HG) = 0
+Micro Copper (MHG) = 2/4/6
+Platinum (PL) = 0
+Bitcoin Restrictions
+Micro Bitcoin (MBT) = 5/10/15
+---
+🧪 Labs: Restricted Products (Expand to learn more)
+In the $25K Static Trading Combine , restricted products are set to a max contract size of 1 mini/12 micros.
+In the $250K Trading Combine , restricted energies are set to a max contract size of 15 minis/156 micros. For SIL/MHG, 12 micros. SI, HG, and PL are still 0.
+​
+In the $3K Challenge , you cannot trade MHG, MET, MBT, or SIL. Trading during Tier 1 News Events is also restricted to 0. Additionally, MGC and MCL is limited to 6 micros.
+​
+In the $1.5K Challenge , you cannot trade MHG, MET, MBT, or SIL. MGC/MCL are limited to 1. Trading during Tier 1 News Events is also restricted to 0.
+​
+In the $6K Challenge , you cannot trade MHG, SIL, HG, SI, CL, GC, HO, QM, PL, or RB. Trading during Tier 1 News Events is also restricted to 0. Additionally, MGC and MCL is limited to 6 micros.
+​
+In the $50K Static Trading Combine , MCL and MGC are set to a max of 25 lots, and CL, GC, HO, QM, RB, MHG, and SIL are set to a max of 2 lots. MBT is set to a max of 4 lots.
+​
+In the $1.5K Challenge - Powered Up , Traders can trade up to 12 contracts of MCL/MGC, 1 contract of CL, GC, HO, QM, RB, MHG, SIL, and 0 of HG, PL, SI.
+In the Return of the $3K Undead Challenge , MCL and MGC are limited to 31 lots. MBT and MET are limited to 5 lots. CL, GC, HO, QM, and RB are limited to 3 lots. MHG and SIL are limited to 2 lots. HG, PL, and SI are 0. During Tier 1 News Events, GC is 0, and MES, MNQ, MYM, M2K, and MGC are limited to 3 lots.
+In the Revenge of the $3K Slasher Challenge , MCL and MGC are limited to 12 lots. MBT and MET are limited to 2 lots. CL, GC, HO, QM, RB, MHG, and SIL are limited to 1 lot. HG, PL, and SI are 0. During Tier 1 News Events, GC is 0, and MES, MNQ, MYM, M2K, and MGC are limited to 1 lot.
+In the Launchpad Challenge , products are capped at 1 micro contract. However, you cannot trade MGC or MCL. During Tier 1 News Events, all trading is blocked.
+​
+The $100K & $150K Static Trading Combines have the same limitations as standard $100K and $150K Trading Combines listed in the table above.
+⚠️ Please note: For Express Funded Accounts, position limits for restricted products have a ceiling of the contracts listed above (CL = 3/6/9, for example).
+​
+However, a trader's actual limit may be lower depending on their current account balance, as the Scaling Plan applies independently. Learn more below. 👇
+Example of the Scaling Plan for restricted symbols on the 3/6/9 plan
+Symbols this applies to:
+Crude Oil (CL)
+E-Mini Crude Oil (QM)
+Micro Crude Oil (MCL)
+Heating Oil (HO)
+RBOB Gasoline (RB)
+Gold (GC)
+Micro Gold (MGC)
+50K Express Funded Account
+Below $1500 balance = 1 mini / 12 micros
+$1,500 balance = 1 mini / 18 micros
+$2,000 balance = 3 mini / 31 micros
+100K Express Funded Account
+Below $1500 balance = 1 mini / 18 micros
+$1,500 balance = 2 mini / 25 micros
+$2,000 balance = 3 minis / 31 micros
+$3,000 balance = 6 minis / 62 micros
+150K Express Funded Account
+Below $1500 balance = 1 mini / 18 micros
+$1,500 balance = 2 minis / 25 micros
+$2,000 balance = 3 minis / 31 micros
+$3,000 balance = 6 minis / 62 micros
+$4,500 balance = 9 minis / 93 micros
+250K Express Funded Account
+Below $1500 balance = 1 mini / 18 micros
+$1,500 balance = 2 minis / 25 micros
+$2,000 balance = 3 minis / 31 micros
+$3,000 balance = 6 minis / 62 micros
+$4,500 balance = 9 minis / 93 micros
+$6,000 balance = 12 minis / 125 micros
+$8,000+ balance = 15 minis / 156 micros
+Example of the Scaling Plan for restricted symbols on the 2/5/7 plan
+Symbols this applies to:
+Micro Silver (SIL)
+Micro Copper (MHG)
+50K Express Funded Account
+Below $1,500 balance = 1 micro
+$1,500 balance = 1 micro
+$2,000 balance = 2 micros
+100K Express Funded Account
+Below $1,500 balance = 1 micro
+$1,500 balance = 2 micros
+$2,000 balance = 2 micros
+$3,000 balance = 5 micros
+150K Express Funded Account
+Below $1,500 balance = 1 micro contract
+$1,500 balance = 2 micros
+$2,000 balance = 2 micros
+$3,000 balance = 5 micros
+$4,500 balance = 7 micros
+250K Express Funded Account
+Below $1,500 balance = 1 micro contract
+$1,500 balance = 2 micros
+$2,000 balance = 2 micros
+$3,000 balance = 5 micros
+$4,500 balance = 7 micros
+$6,000 balance = 10 micros
+$8,000+ balance = 12 micros
+When Do These Restrictions Apply?
+Position limit adjustments are:
+Temporary : Restrictions remain in place only while volatility levels are elevated
+Product-specific : Only products experiencing extreme volatility are affected
+Actively monitored : Our Risk Team continuously evaluates market conditions to determine when normal limits can be reinstated
+What You Can Still Do
+Continue trading with adjusted position sizes in affected products
+Trade other products with standard position limits
+Focus on risk management and strategic opportunities
+Use this time to refine your trading plan and review your strategy
+Understanding Market Volatility
+Historic volatility means historic losses can happen faster than normal. When markets move unpredictably:
+Slippage increases
+Risk management becomes more challenging
+Even well-planned trades can move against you quickly
+These temporary adjustments give you the opportunity to participate in volatile markets while managing your risk appropriately.
+How You'll Be Notified
+When position limits are adjusted, you'll receive notification through:
+Email communication
+Dashboard banners
+Social media updates (@Topstep on X)
+We'll also notify you when restrictions are lifted and normal position limits are reinstated.
+Tier 1 News Events Restrictions
+Ahead of Tier 1 News Events (for example, CPI, FOMC, NFP, PPI), Topstep temporarily restricts new opening positions on equity index products and metals in SIM to protect Traders from extreme volatility.
+Minis (ES, RTY, YM, NQ, NKD, GC, SI, HG, PL): No new opening transactions permitted during the 10-minute window surrounding the release (5 minutes before, 5 minutes after).
+Micros (MES, M2K, MYM, MNQ, MGC): Opening transactions limited to 1, 3, 6, 9, and 15 contracts for the $25K, $50K, $100K, $150K, and $250K account sizes, respectively, during the window (see table below)
+MHG and SIL: Opening transactions limited to 1, 2, 5, 7, 12 contracts for the $25K, $50K, $100K, $150K, and $250K account sizes, respectively, during the window (see table below)
+Other products (energies, rates, FX, etc.) are unaffected.
+Existing Positions: Traders holding existing positions in equity index products and metals prior to 5 minutes before the news event may keep them open and manage them through the Tier 1 News Events window. TopstepX™ automatically enforces these limits , so no manual adjustment is required for existing trades.
+Live Account Restrictions: Live traders with a balance below $3,000 will be limited to 1 contract during Tier 1 News Events to reduce the potential for a catastrophic loss should markets shift rapidly.
+Pending orders: Pending orders are not open positions. They will not fill during the 10-minute window, and new pending orders intended to execute during this timeframe cannot be placed. TP/SL brackets that are reducing/closing positions will be accepted during the window.
+How you'll be alerted: we'll email you and you'll see a banner at the top of the platform, so you're always prepared.
+Tier 1 News Events
+Event
+Announcement (CT)
+Window (CT)
+Consumer Price Index (CPI)
+7:30 AM
+7:25 to 7:35 AM
+FOMC rate decision
+1:00 PM
+12:55 to 1:05 PM
+FOMC press conference
+1:30 PM
+1:25 to 1:35 PM
+Non Farm Payroll (NFP/Unemployment Rate)
+7:30 AM
+7:25 to 7:35 AM
+Producer Price Index (PPI)
+7:30 AM
+7:25 to 7:35 AM
+The tables below show contract limits during Tier 1 News events for restricted products only (outlined above).
+Challenges
+Account
+Margin
+Max micros
+Equity Minis
+Effect during window
+$1.5K Challenge (Powered Up)
+$20,000
+1
+Blocked
+Capped at 1 micro
+$3K Challenge Undead
+$50,000
+3
+Blocked
+Capped at 3 micros
+$3K Challenge Slasher
+$20,000
+1
+Blocked
+Capped at 1 micro
+$6K Challenge
+$20,000
+1
+Blocked
+Capped at 1 micro
+Launchpad Challenge
+$1,000
+0
+Blocked
+No Trading available
+Trading Combines
+Account
+Margin
+Max micros
+Equity Minis
+Effect during window
+$25K Static
+$20,000
+1
+Blocked
+Capped at 1 micro
+$50K Standard
+$50,000
+3
+Blocked
+Capped at 3 micros
+$50K Static
+$40,000
+2
+Blocked
+Capped at 2 micros
+$100K Standard and Static
+$100,000
+6
+Blocked
+Capped at 6 micros
+$150K Standard and Static
+$150,000
+9
+Blocked
+Capped at 9 micros
+$250K Standard and Static
+$250,000
+15
+Blocked
+Capped at 15 micros
+Express Funded Accounts
+Express Funded Accounts (XFAs) have margin that scales with balance. This is called the Scaling Plan . See details on your Maximum Position Size when accounting for both Tier 1 News Event restrictions, and the Scaling Plan.
+Account
+Balance
+Margin
+Minis/Micros
+SIL & MHG
+$50K XFA
+Below $1500
+$20,000
+0/1
+0/1
+$50K XFA
+$1500-$2000
+$30,000
+0/1
+0/1
+$50K XFA
+Above $2000
+$50,000
+0/3
+0/2
+$100K XFA
+Below $1500
+$30,000
+0/1
+0/1
+$100K XFA
+$1500-$2000
+$40,000
+0/2
+0/2
+$100K XFA
+$2,000-3,000
+$50,000
+0/3
+0/2
+$100K XFA
+Above $3,000
+$100,000
+0/6
+0/5
+$150K XFA
+Below $1500
+$30,000
+0/1
+0/1
+$150K XFA
+$1500-$2000
+$40,000
+0/2
+0/2
+$150K XFA
+$2,000-3,000
+$50,000
+0/3
+0/2
+$150K XFA
+$3,000-$4,500
+$100,000
+0/6
+0/5
+$150K XFA
+Above $4,500
+$150,000
+0/9
+0/7
+Have Questions?
+Our Trader Support Team is here to help. If you have questions about current position limits or how these adjustments affect your trading, please contact support .
+Related Articles:
+CME Velocity Logic
+When and What Products Can I Trade?
+Topstep Program Overview
+Related Articles
+Topstep Learning
+When and What Products Can I Trade?
+TopstepX™ — Commissions and Fees
+What is the Scaling Plan?
+Topstep Labs
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Your Privacy Choices

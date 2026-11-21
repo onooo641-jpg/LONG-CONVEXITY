@@ -3,57 +3,60 @@
 Baseline date: 2026-11-21
 
 ## Counts
-- S2 protocols: 0
-- S1 reward pools: 0
+- S2 protocols: 9086
+- S1 reward pools: 1295
 - S3 Merkl live: 714
 - S4 governance hits: 67
-- pages fetched ok: 261
-- pages total: 275
-- candidates surviving to ranking: 28
-- of which all five filter parts verified: 0
-- near-miss rows total: 687
+- pages fetched ok: 1287
+- pages total: 1317
+- candidates surviving to ranking: 93
+- of which all five filter parts verified: 12
+- near-miss rows total: 1963
 
 ## Near-miss by stage/reason (top)
 
-- first_pass / below threshold: 492
-- filter / F4 price exposure, needs hedge; F5 TVL < $1,000,000: 93
-- filter / F4 price exposure, needs hedge: 80
-- quality / implausible APR > 1000%: 10
-- filter / F5 TVL < $1,000,000: 6
-- filter / F3 single pool/venue on one chain (no reused setup); F4 price exposure: 3
+- first_pass / below threshold: 1209
+- quality / DefiLlama outlier flag: 260
+- filter / F4 price exposure, needs hedge; F5 TVL < $1,000,000: 217
+- filter / F4 price exposure, needs hedge: 140
+- filter / F5 TVL < $1,000,000: 67
+- deep / F1 reward not persistent: 24
+- deep / F2 not long-lived: 18
+- quality / implausible APR > 1000%: 11
+- filter / F3 single pool/venue on one chain (no reused setup); F4 price exposure: 8
+- filter / F3 single pool/venue on one chain (no reused setup): 4
+- filter / F3 single pool/venue on one chain (no reused setup); F5 TVL < $1,000,0: 4
 - collect / no data (request failed): 1
-- filter / F3 single pool/venue on one chain (no reused setup); F5 TVL < $1,000,0: 1
-- filter / F3 single pool/venue on one chain (no reused setup): 1
 
 ## Top 25 by money per competitor (reward APR on competing capital)
 
 | venue | chain | what pays | $/day | capital | reward APR % | F1 | F2 | stable | new | Malaysia |
 |---|---|---|---|---|---|---|---|---|---|---|
-| upshift | Stellar | HOLD Supply USDC in Upshift sentUSDC | 10,062 | 45,906,066 | 8.0 | unverified | unverified | True | False | unverified-onchain |
+| stake-dao-yield | Ethereum | PYUSD-CRVUSD Curve reward tokens ['0x5D29949F8e64f | 65,231 | 16,898,332 | 140.9 | pass | unverified | True | False | unverified-onchain |
+| curve-dex | Ethereum | BOLD-USDC nan reward tokens ['0x6440f144b7e50D6a84 | 9,403 | 8,608,623 | 39.9 | pass | unverified | True | False | unverified-onchain |
+| morpho-blue | Ethereum | RE7COUSDC nan reward tokens ['0xa12cc123ba206d4031 | 2,113 | 3,539,961 | 21.8 | fail | fail | True | False | unverified-onchain |
+| mento-v3 | Monad | AUSD-USDM nan reward tokens ['0xBC69212B8E4d445b23 | 831 | 2,101,281 | 14.4 | fail | fail | True | False | unverified-onchain |
+| sky-lending | Ethereum | USDS GROVE Farming Pool reward tokens ['0xb30FE1CF | 17,609 | 54,618,496 | 11.8 | fail | unverified | True | False | unverified-onchain |
+| lista-lending | Ethereum | USDC nan reward tokens ['coingecko:lista'] | 539 | 1,855,946 | 10.6 | pass | pass | True | False | unverified-onchain |
+| lista-lending | BSC | USDT nan reward tokens ['0xFceB31A79F71AC9CBDCF853 | 294 | 1,013,692 | 10.6 | fail | fail | True | False | unverified-onchain |
+| stake-dao-yield | Ethereum | PMUSD-CRVUSD Curve reward tokens ['0xD533a949740bb | 312 | 1,092,330 | 10.4 | pass | unverified | True | False | unverified-onchain |
+| convex-finance | Ethereum | PMUSD-CRVUSD nan reward tokens ['0xd533a949740bb33 | 308 | 1,081,300 | 10.4 | pass | unverified | True | False | unverified-onchain |
+| curve-dex | Ethereum | USDT-USDTE nan reward tokens ['0xD533a949740bb3306 | 272 | 1,011,080 | 9.8 | fail | unverified | True | False | unverified-onchain |
+| stake-dao-yield | Ethereum | FRXUSD-DUSD Curve reward tokens ['0xD533a949740bb3 | 272 | 1,086,817 | 9.2 | fail | unverified | True | False | unverified-onchain |
+| convex-finance | Ethereum | FRXUSD-DUSD nan reward tokens ['0xd533a949740bb330 | 639 | 2,638,700 | 8.8 | fail | unverified | True | False | unverified-onchain |
+| convex-finance | Ethereum | FRXUSD-MSUSD nan reward tokens ['0xd533a949740bb33 | 719 | 2,976,211 | 8.8 | pass | unverified | True | False | unverified-onchain |
+| morpho-blue | Base | RE7VENICEUSDC nan reward tokens ['0xacfe6019ed1a7d | 679 | 2,840,011 | 8.7 | fail | fail | True | False | unverified-onchain |
+| upshift | Stellar | HOLD Supply USDC in Upshift sentUSDC | 10,062 | 45,906,066 | 8.0 | unverified | pass | True | False | unverified-onchain |
+| echelon-market | Aptos | SYZUSD nan reward tokens ['0xb30a694a344edee467d9f | 240 | 1,094,983 | 8.0 | fail | fail | True | False | unverified-onchain |
+| dolomite | Ethereum | USDC nan reward tokens ['0xdA5e1988097297dCdc1f90D | 2,174 | 10,244,194 | 7.7 | pass | pass | True | False | unverified-onchain |
+| convex-finance | Ethereum | EVAUSDT-EVAUSDC nan reward tokens ['0xd533a949740b | 472 | 2,380,685 | 7.2 | fail | unverified | True | False | unverified-onchain |
+| stake-dao-yield | Ethereum | FRXUSD-MSUSD Curve reward tokens ['0xD533a949740bb | 764 | 3,915,957 | 7.1 | pass | unverified | True | False | unverified-onchain |
 | aave | Ethereum | LEND Supply RLUSD to the Aave V4 Sentora Hub | 14,718 | 76,742,054 | 7.0 | unverified | unverified | True | False | unverified-onchain |
-| dolomite | Ethereum | LEND Lend USDC on Dolomite | 3,194 | 17,402,911 | 6.7 | unverified | unverified | True | False | unverified-onchain |
-| morpho | Arc | BORROW Borrow USDC on syrupUSDC/USDC 91.5% | 661 | 3,949,346 | 6.1 | unverified | unverified | True | False | unverified-onchain |
-| aave | Avalanche | LEND Lend USDt on Aave V4 | 226 | 6,105,288 | 5.9 | unverified | unverified | True | False | unverified-onchain |
-| fluid | Plasma | BORROW Borrow GHO-USDT0 from Fluid GHO-USDT0/GHO-U | 178 | 1,115,428 | 5.8 | unverified | unverified | True | False | unverified-onchain |
-| aave | Avalanche | LEND Supply USDe to the Aave V4 Ethena Ecosystem S | 14,687 | 97,468,345 | 5.5 | unverified | unverified | True | False | unverified-onchain |
-| aave | Avalanche | LEND Supply USDe to the Aave V4 Core Hub | 14,687 | 97,468,345 | 5.5 | unverified | unverified | True | False | unverified-onchain |
-| aave | Ethereum | LEND Lend USDG on Aave V4 | 2,731 | 34,448,663 | 5.5 | unverified | unverified | True | False | unverified-onchain |
-| aave | Ethereum | LEND Lend USDC on Aave V4 | 3,752 | 75,345,397 | 5.4 | unverified | unverified | True | False | unverified-onchain |
-| fluid | Plasma | LEND Lend GHO-USDT0 on Fluid GHO-USDT0/GHO-USDT0 V | 178 | 1,235,779 | 5.3 | unverified | unverified | True | False | unverified-onchain |
-| aave | Ethereum | LEND Lend USDe on Aave V4 (looping required) | 4,133 | 28,744,385 | 5.2 | unverified | unverified | True | False | unverified-onchain |
-| aave | Ethereum | LEND Lend USDe on Aave V4 | 6,703 | 46,604,582 | 5.2 | unverified | unverified | True | False | unverified-onchain |
-| aave | Ethereum | LEND Lend USDG on Aave V4 | 1,349 | 21,703,172 | 5.0 | unverified | unverified | True | False | unverified-onchain |
-| morpho | Base | LEND Deposit USDe as collateral on USDe/USDC 91.5% | 16,879 | 129,703,894 | 4.8 | unverified | unverified | True | False | unverified-onchain |
-| morpho | Robinhood Chain | LEND Deposit USDe as collateral on USDe/USDG 91.5% | 46,136 | 354,516,247 | 4.8 | unverified | unverified | True | False | unverified-onchain |
-| morpho | Ethereum | BORROW Deposit USDe as collateral on USDe/PYUSD 91 | 2,997 | 23,032,804 | 4.7 | unverified | unverified | True | False | unverified-onchain |
-| morpho | Ethereum | BORROW Deposit USDe as collateral on USDe/RLUSD 91 | 8,042 | 61,798,832 | 4.7 | unverified | unverified | True | False | unverified-onchain |
-| morpho | Ethereum | BORROW Borrow USDC on OETH/USDC 86% | 957 | 7,442,332 | 4.7 | unverified | unverified | True | False | unverified-onchain |
-| morpho | Ethereum | LEND Supply USDC on fxSAVE/USDC 91.5% | 2,507 | 19,508,348 | 4.7 | unverified | unverified | True | False | unverified-onchain |
-| aave | Avalanche | LEND Lend USDC on Aave V4 | 37 | 2,115,832 | 4.4 | unverified | unverified | True | False | unverified-onchain |
-| morpho | World Chain | LEND Deposit in Re7 USDC - Metamorpho - Verified u | 134 | 1,115,020 | 4.4 | unverified | unverified | True | False | unverified-onchain |
-| morpho | World Chain | BORROW Borrow USDC on WETH/USDC 86% | 251 | 2,210,555 | 4.1 | unverified | unverified | True | False | unverified-onchain |
-| morpho | Pharos | LEND Supply to RockawayX Reservoir Ecosystem V2 va | 1,843 | 20,031,749 | 3.4 | unverified | unverified | True | False | unverified-onchain |
-| zyfai | Base | DROP Stakers Rewards ZFI | 67 | 7,692,027 | 3.2 | unverified | unverified | True | False | unverified-onchain |
+| flying-tulip-ftusd | Ethereum | SFTUSD staked ftUSD (FT rewards bought on open mar | 331 | 1,777,594 | 6.8 | fail | fail | True | False | unverified-onchain |
+| dolomite | Ethereum | LEND Lend USDC on Dolomite | 3,194 | 17,402,911 | 6.7 | unverified | pass | True | False | unverified-onchain |
+| bluefin-spot | Sui | USDSUI-USDC 0.01% reward tokens ['0x00000000000000 | 236 | 1,302,580 | 6.6 | pass | pass | True | False | unverified-onchain |
+| yearn-finance | Katana | VBUSDC nan reward tokens ['0x7F1f4b4b29f5058fA32CC | 1,125 | 6,217,065 | 6.6 | pass | unverified | True | False | unverified-onchain |
+| stake-dao-yield | Ethereum | EVAUSDT-EVAUSDC Curve reward tokens ['0xD533a94974 | 694 | 3,841,281 | 6.6 | pass | unverified | True | False | unverified-onchain |
 
 ## Governance proposals mentioning incentives (last 45d, newest 25)
 
@@ -83,5 +86,7 @@ Baseline date: 2026-11-21
 - fusedao.eth: [closed] FIP14: Zero Inflation, 400M Cap Enforced On-Chain, 30M FUSE for Validator Rewards Through the Transit https://snapshot.org/#/fusedao.eth/proposal/0x2cba3ecb0f952ebb2d82583bb9279cc836e36c18ce2ed540299ab254dcdc5e94
 - sdfxn.eth: [closed] Gauge vote FXN - 12/11/2026 - 25/11/2026 https://snapshot.org/#/sdfxn.eth/proposal/0x6214cbfb2dd2fcd86ba05d14fd8a5297622c9ec18b1fc7447e7e3304743eb31a
 
-## Page changes today: 0
+## Page changes today: 2
 
+- E8 Markets (firm) https://e8markets.com/: +14 / -14 lines
+- propfirmmatch (directory) https://propfirmmatch.com/: +1 / -1 lines

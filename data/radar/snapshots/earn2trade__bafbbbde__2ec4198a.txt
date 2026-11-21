@@ -1,0 +1,120 @@
+What is the Withdrawal Policy? | Earn2Trade Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Poppins".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Poppins".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+العربية English Français Português Español English
+العربية English Français Português Español English
+Search for articles...
+All Collections
+Funding
+What is the Withdrawal Policy?
+What is the Withdrawal Policy?
+Written by Orianna F.
+Updated over 2 weeks ago
+Table of contents
+Minimum Number of Profitable Trading Days
+Traders must complete at least 5 profitable trading days before each withdrawal request . These days do not need to be consecutive.
+To qualify as a profitable trading day, the account must generate a minimum daily profit based on its account size and program, as outlined below.
+Trader Career Path® (TCP)
+Account Size
+Minimum Daily Profit
+TCP 25
+$100
+TCP 50
+$150
+TCP 100
+$200
+Gauntlet Mini™
+Account Size
+Minimum Daily Profit
+GM 50
+$150
+GM 100
+$200
+GM 150
+$250
+GM 200
+$350
+Additional Conditions
+Before every withdrawal: Traders must complete 5 new qualifying profitable trading days before submitting each withdrawal request. Profitable trading days counted toward a previous withdrawal cannot be reused.
+Non-consecutive days: The 5 profitable trading days do not need to occur consecutively.
+Account balance: A profitable trading day counts toward the requirement even if the account balance remains below its original starting balance, provided the minimum daily profit threshold is met.
+Example
+A trader with a Trader Career Path® $50,000 (TCP50) account starts the trading day with a balance of $49,000 and closes the day at $49,150. Although the account balance remains below the original $50,000 starting balance, the trader has generated a daily profit of $150. This counts as 1 of the 5 required profitable trading days toward the next withdrawal request.
+Profit Split
+The profit split depends on withdrawal size, is not based on accumulated profit, it is based on the single withdrawal size. The targets and percentages are:
+Trader Career Path® (TCP)
+Account Size
+50% Profit Split
+80% Profit Split
+LiveSim Max Withdrawal*
+TCP 25
+Under $1,500
+$1,500+
+$1,750
+TCP 50
+Under $2,250
+$2,250+
+$3,000
+TCP 100
+Under $3,000
+$3,000+
+$6,000
+TCP 150
+Under $4,000
+$4,000+
+N/A
+TCP 200
+Under $5,000
+$5,000+
+N/A
+TCP 400
+Fixed 60/40 Split
+Fixed 60/40 Split
+N/A
+Gauntlet Mini™
+Account Size
+50% Profit Split
+80% Profit Split
+LiveSim Max Withdrawal*
+GM 50
+Under $2,250
+$2,250+
+$5,000
+GM 100
+Under $3,000
+$3,000+
+$5,000
+GM 150
+Under $4,000
+$4,000+
+$5,000
+GM 200
+Under $5,000
+$5,000+
+$5,000
+*LiveSim Max Withdrawal is the total you can withdraw from a LiveSim account before you are automatically moved to a Live account. It is not a limit on any single withdrawal.
+Withdrawals are processed weekly on Wednesdays via Rise or other platforms. Requests must be emailed to the proprietary firm by 2:00 PM CT on the preceding Friday. The minimum net withdrawal amount is $100. Due to regulatory compliance, Rise does not support payouts for traders in certain U.S. territories (Iowa, Minnesota, South Carolina, Guam, Puerto Rico, U.S. Virgin Islands) or Haiti.
+Withdrawal methods are not optional, and the prop firm retains the right to onboard customers to their payment provider of choice, with some options available only in select regions. Direct crypto withdrawals are only available in select cases.
+Withdrawal Method
+Fees
+Rise
+$50 per withdrawal for non-US customers
+1.5% for US customers
+Deel
+$50 per withdrawal
+Bayzat
+$5-$40
+Direct Crypto
+0.735%
+Related Articles
+What is the Fee Structure on the Live or LiveSim® Accounts?
+What is the LiveSim®?
+What is the "Maintain Consistency" Rule?
+What Happens When I Complete My Evaluation?
+What is Earn2Trade?
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+The Trader Career Path
+The Gauntlet Mini™
+Beginner Crash Course
+Risk Disclaimer

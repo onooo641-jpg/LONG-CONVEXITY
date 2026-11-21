@@ -1,0 +1,64 @@
+Consistency Rule | Alpha Futures Limited Help Center Skip to main content
+Search for articles...
+All Collections
+Trading Rules and Parameters
+Consistency Rule
+Consistency Rule
+Consistency Rule on Evaluation and Qualified Accounts
+B
+Written by Benjamin Chaffee
+July 27, 2026
+Table of contents
+Evaluations
+The Consistency Rule on Advanced Evaluations is 40%. This means that during your Evaluation, profits from one single trading day cannot be larger than 40% of your net profits made.
+The Consistency Rule on Standard Evaluations is 50%. This means that during your Evaluation, profits from one single trading day cannot be larger than 50% of your net profits made
+You will not pass your Evaluation until this rule is satisfied.
+​
+While we don't recommend trying to pass your Evaluation as fast as possible. Below are the suggested largest/best days to satisfy the consistency rule as efficiently as possible on Advanced and Standard Accounts.
+Advanced Account Size
+Profit Target
+Recommended Best/Largest Day
+50k
+$4,000
+$1,600 or less
+100k
+$8,000
+$3,200 or less
+150k
+$12,000
+$4,800 or less
+Standard Account Size
+Profit Target
+Recommended Best/Largest Day
+50k
+$3,000
+$1,500 or less
+100k
+$6,000
+$3,000 or less
+150k
+$9,000
+$4,500 or less
+Qualified Accounts
+There is a 40% Consistency Rule on Zero and Standard Qualified Accounts.
+The 40% Consistency Rule states during the Qualified stage, profits from any single trading day cannot be greater than or equal to 40% of net profits accumulated since last withdrawal request.
+You will not be eligible for a withdrawal if any of your trading day profits are greater than 40% of net profits made since last withdrawal request. This value will always be visible in your dashboard, and your withdrawal request button/feature will not be available until this rule is satisfied.
+​
+This rule resets in between each account withdrawal request.
+If you make more than 40% in a single day, your account will NOT be breached, but you will need to continue to trade and make more profit until the rule is satisfied.
+The equation is as follows: biggest day/total net profit (since last request) = 40%
+​
+There is a 20% Consistency Rule on Direct Qualified Accounts.
+The 20% Consistency Rule states profits from any single trading day cannot be greater than or equal to 20% of net profits accumulated since last withdrawal request.
+You will not be eligible for a withdrawal if any of your trading day profits are greater than 20% of net profits made since last withdrawal request. This value will always be visible in your dashboard, and your withdrawal request button/feature will not be available until this rule is satisfied.
+​
+This rule resets in between each account withdrawal request.
+If you make more than 20% in a single day, your account will NOT be breached, but you will need to continue to trade and make more profit until the rule is satisfied.
+The equation is as follows: biggest day/total net profit (since last request) = 20%
+​
+​ There is NO Consistency Rule on Advanced Qualified Accounts.
+​
+Use this calculator for help on your consistency rule at any time:
+​ https://consistencycalculator.alpha-futures.com/
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

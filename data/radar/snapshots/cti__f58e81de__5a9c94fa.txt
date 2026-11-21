@@ -1,0 +1,397 @@
+How To Pass A Funded Account Challenge In 2026
+Home
+Funding Programs
+1-Step Challenge
+2-Step Challenge
+Instant Funding
+Direct Funding
+FAQs
+Academy
+Resources
+Join Community
+Blog
+Market News
+Symbols Live Feed
+Economic Calendar
+Trading Platforms
+MetaTrader 5
+Match Trader
+Calculators
+Challenge Drawdown Calculator
+Margin Calculator
+Swap Calculator
+Pip Calculator
+Position Size Calculator
+Risk Of Ruin Calculator
+MT5 Trade Manager
+More
+Become an Affiliate
+Partners
+About Us
+Shop
+Start a Prop Firm
+LOG IN
+FREE TRIAL
+LOGIN
+Home
+Funding Programs
+1-Step Challenge
+2-Step Challenge
+Instant Funding
+Direct Funding
+FAQs
+Academy
+Resources
+Join Community
+Blog
+Market News
+Symbols Live Feed
+Economic Calendar
+Trading Platforms
+MetaTrader 5
+Match Trader
+Calculators
+All Calculators
+Challenge Drawdown Calculator
+Margin Calculator
+Swap Calculator
+Pip Calculator
+Position Size Calculator
+Risk Of Ruin Calculator
+MT5 Trade Manager
+More
+Become an Affiliate
+Partners
+About Us
+Shop
+Start a Prop Firm
+Skip to content
+Home › Blog
+› Prop Trading
+› How to Pass a Funded Account Challenge in 2026
+Prop Trading
+How to Pass a Funded Account Challenge in 2026
+By Martin Najat
+·
+March 10, 2026
+·
+Updated September 2, 2026
+·
+12 min read
+Reading mode
+Dark
+In this article
+How to Pass a Forex Funded Account Challenge in 2026 (Step-by-Step)
+Why most traders fail prop-firm challenges in 2026
+Step 1 – Read the Small Print (Know the Rules)
+Step 2 – Pick the Right Challenge Model (1-Step vs 2-Step vs Instant Funding)
+Step 3 – Reverse-Engineer Your Daily Risk Budget
+Step 4: Trade a Strategy You’ve Back-Tested
+Step 5 – Use a Prop-Challenge Demo Mimic for 20 Trades
+Step 6 – Journal Every Decision (Build Your Trading Database)
+Step 7 – Obsess Over Risk-to-Reward, Not Win Rate
+Step 8 – Control Emotions: Break the Revenge Trading Cycle
+Step 9: Scale Position Size Slowly After Breakeven
+Step 10: When to Request Verification & Payout
+Frequently Asked Questions
+How to Pass a Forex Funded Account Challenge in 2026 (Step-by-Step)
+Most forex traders who attempt prop firm challenges never make it past the evaluation phase. But it’s rarely about trading ability. The biggest killer? Time pressure .
+When you’re racing against a deadline, even solid traders start making desperate moves that blow their accounts.
+What if you could eliminate that pressure? Some prop firms (such as City Traders Imperium) offer unlimited time to pass their challenges , so you can focus purely on executing your strategy rather than watching the calendar.
+Still, while removing time constraints helps, other factors include proper risk management, emotional control, and systematic execution.
+Follow our exact 10-step system that consistently gets traders funded.
+Why most traders fail prop-firm challenges in 2026
+Success rates are surprisingly low.
+According to extensive industry research, between 80 and 95 percent of all traders fail prop firm challenges (1).
+Some studies show that approximately 94% of traders fail to complete the challenges during the first or second phase, with only 6% successfully meeting the profitability and drawdown requirements (2).
+What’s actually revealing about these failures is that they follow predictable patterns:
+Failure Cause
+Impact
+Why It Happens
+Deadline Stress
+Forces rushed decisions
+30-60 day time limits create artificial pressure
+Over-leveraging
+Amplifies losses
+Traders take excessive risks to meet targets quickly
+Lack of Plan
+Inconsistent execution
+Winging it without a systematic approach
+Daily Drawdown Violations
+Immediate disqualification
+Panic trading after initial losses
+In many cases, the solution isn’t necessarily becoming a better trader. It’s about removing the artificial constraints that cause good traders to make poor decisions.
+This is where unlimited-time evaluation models prove their worth, allowing traders to focus on execution rather than calendar anxiety.
+Step 1 – Read the Small Print (Know the Rules)
+Before risking a single pip, master your challenge’s specific parameters. Most traders skim the rules and pay dearly for overlooking crucial details.
+Essential Rule Checklist:
+✓ Profit Target: Understand both percentage and dollar amounts
+✓ Maximum Daily Drawdown: Know your daily risk ceiling (usually 5% of starting balance)
+✓ Maximum Total Drawdown: Your overall loss limit (typically 10% of account)
+✓ Consistency Rules: Some firms require no single day to exceed 50% of total profits
+✓ Prohibited Trading: News trading restrictions, weekend holds, hedging limitations
+✓ Minimum Trading Days: The Required number of active trading days before payout eligibility
+💡Pro Trader Tip: Create a rule summary card and keep it visible during trading sessions.
+Step 2 – Pick the Right Challenge Model (1-Step vs 2-Step vs Instant Funding)
+Your challenge structure directly impacts your success probability. Different models suit different trading styles and experience levels.
+Here’s how our main options compare:
+Challenge Type
+Phases
+Profit Targets
+Best For
+1-Step Challenge
+One phase
+8% profit target
+Experienced traders who want faster access to funding
+2-Step Challenge
+Two phases
+10% then 5% profit targets
+Methodical traders who prefer gradual progression
+Instant Funding
+No evaluation
+No targets (start trading immediately)
+Confident traders willing to pay higher fees for immediate access
+Whether you choose a 1-step or 2-step challenge, having unlimited time to pass Phase 1 removes the biggest cause of challenge failures and lets you trade your actual strategy rather than a rushed version of it.
+Instead of:
+– Racing against arbitrary deadlines.
+– Forcing trades to meet time requirements.
+– Panic scaling after drawdowns.
+– Making rushed decisions under pressure.
+You can:
+– Wait for optimal setups that match your strategy.
+– Recover from drawdowns without time pressure.
+– Build confidence through consistent execution.
+– Focus purely on risk management and execution.
+Want to learn more about these challenge types? Read our article 2-Step vs 1-Step vs Instant Funding: Prop-Firm Models Compared
+Step 3 – Reverse-Engineer Your Daily Risk Budget
+Most traders approach risk management backward — they decide on a position size first and then hope it fits their risk tolerance. Successful challenge passers work in reverse.
+The Daily Risk Budget Formula:
+Maximum Daily Drawdown: 5% of account balance.
+Conservative Buffer: Use only 60% of maximum (3% daily risk).
+Position Size Calculation: Risk per trade = Daily budget ÷ Number of planned trades.
+Example for $100,000 Account:
+– Maximum daily drawdown: $5,000.
+– Conservative daily budget: $3,000.
+– Planning 3 trades daily: $1,000 risk per trade maximum.
+Essential Risk Management Tools: Use these calculators to automate your risk calculations and maintain discipline:
+Position Size Calculator : Determines exact position size based on your risk budget and stop loss distance
+Risk of Ruin Calculator : Shows the probability of losing your account with different risk levels
+Step 4: Trade a Strategy You’ve Back-Tested
+Challenge accounts aren’t the place for experimentation. Your strategy should have at least 100 back-tested trades with documented results before you begin.
+Use a system you’ve tested thoroughly in different market conditions. Your goal is not to learn new skills — it’s to prove consistency.
+Back-testing lets you:
+Understand performance metrics (win rate, drawdown, expectancy).
+Prepare for drawdowns and losing streaks.
+Spot weaknesses in the strategy.
+Use tools like ForexTester or TradingView’s built-in strategy tester.
+Traders who know their system inside out won’t panic after three losses. They’ll know it’s part of the plan.
+Step 5 – Use a Prop-Challenge Demo Mimic for 20 Trades
+Psychology often matters more than strategy. Before risking real money, simulate the exact challenge conditions on a demo account.
+Demo Rehearsal Process:
+Mirror Exact Conditions : Same account size, same rules, same platform.
+Trade Your Strategy: Execute exactly as planned for the real challenge.
+Document Everything: Record every decision, emotion, and outcome.
+Identify Pressure Points: Note where you feel tempted to deviate from your plan.
+This 20-trade rehearsal period typically reveals critical insights about your psychological readiness and helps identify potential rule violations before they matter.
+Key Benefits:
+✓ Builds muscle memory for the trading platform
+✓ Reveals emotional triggers in a risk-free environment
+✓ Confirms your strategy works under challenge conditions
+✓ Identifies any gaps in your rule understanding
+Sign up for our free demo trial and practice with our MT5 or Match-Trader platforms before starting your actual challenge.
+Test Drive Our Platform for Free Here
+💡 ProTrader Tip : Treat your demo trades exactly like real money. Set the same risk per trade, follow your rules religiously, and document your emotional state throughout each trade.
+Step 6 – Journal Every Decision (Build Your Trading Database)
+Elite traders treat their trading journal as their most valuable asset. During challenges, this documentation becomes even more critical — it’s the difference between repeating mistakes and learning from them.
+Think of your journal as building a personal trading database . Every entry, exit, and decision becomes data you can analyze to spot patterns in both your wins and losses. Most traders focus only on the outcome (profit/loss), but the real gold lies in understanding the process that led to each result.
+What to Track in Every Trade:
+✓ Market Context : What’s driving price action today?
+✓ Entry Reasoning : Why this specific setup caught your attention
+✓ Emotional State: Confident, anxious, rushed, or patient?
+✓ Risk Calculation: Position size rationale and stop loss placement
+✓ Exit Strategy: Planned vs. actual exit and why they differed
+The Weekly Review Process: Rather than just logging trades, schedule 30 minutes each week to review patterns. Look for emotional triggers that lead to rule violations, setups that consistently work (or don’t), and times of day when you trade best.
+💡 Pro Trader Tip: Screenshot every setup before entering. When reviewing later, you’ll see things you missed in the heat of the moment — this builds pattern recognition faster than any textbook.
+Step 7 – Obsess Over Risk-to-Reward, Not Win Rate
+A common misconception among failing traders is believing high win rates guarantee success. In reality, risk-reward ratio determines long-term profitability.
+The Mathematics of Success:
+– 50% win rate with 1:2 risk-reward = 25% profit.
+– 70% win rate with 1:1 risk-reward = 10% profit.
+– 30% win rate with 1:3 risk-reward = 20% profit.
+Three-Trade Example:
+– Trade 1: Risk $100, Reward $200 (Loss) = -$100.
+– Trade 2 : Risk $100, Reward $200 (Loss) = -$100.
+– Trade 3: Risk $100, Reward $200 (Win) = +$200.
+Net Result : $0 (breakeven with 33% win rate)
+💡 Pro Trader Tip: Screenshot every setup before entering. When reviewing later, you’ll see things you missed in the heat of the moment — this builds pattern recognition faster than any textbook.
+This mathematical principle reveals why successful prop traders focus relentlessly on finding trades where the potential reward significantly exceeds the risk, even if it means accepting more losing trades.
+The insight to take away here is learning to protect your risk (the 1R) religiously while letting your winners run to achieve their full reward potential.
+Many traders make the mistake of cutting winners short while letting losers grow, which destroys even the best risk-reward setups.
+Challenge passers understand that consistent 1:2 or 1:3 risk-reward ratios create sustainable profitability regardless of win rate.
+This mathematical edge becomes your competitive advantage when others chase the illusion of high win rates that often come with poor risk-reward ratios.
+Step 8 – Control Emotions: Break the Revenge Trading Cycle
+Emotional trading poses more challenges than poor strategy. The solution is rigid emotional circuit breakers that protect you from your own impulses.
+Fear and greed are the two primary emotions that destroy prop traders.
+Fear makes you exit trades too early, missing potential profits.
+Greed causes you to hold positions too long or take excessive risks.
+But the most dangerous emotion is the need for revenge after losses — this leads to impulsive trades that compound your problems.
+Proven Emotional Management Strategies:
+Fixed Risk Rule
+Based on recent results, never vary your risk per trade . Many traders increase risk after wins (overconfidence) or after losses (desperation). Pick a consistent risk amount (typically 0.5-1% per trade) and stick to it regardless of your recent performance.
+The Daily Loss Limit
+Set a maximum daily loss threshold and stick to it religiously. If you hit this limit, close your platform and walk away. Successful traders use 50-60% of their maximum daily drawdown as their stop point.
+Process Over Outcome
+Focus on executing your strategy correctly rather than the profit/loss of individual trades. Document whether you followed your rules perfectly — this shifts your mindset from results-driven to process-driven thinking.
+💡 Pro Trader Tip : Write down your maximum loss for the day and your planned number of trades before each trading session. This pre-commitment helps prevent emotional decisions when you’re in the heat of the moment.
+Step 9: Scale Position Size Slowly After Breakeven
+Once you’ve broken even, it’s tempting to double your position size and race toward the profit target. But this is where many traders blow their challenge. One or two bad trades with oversized positions can undo weeks of steady gains. The solution? Slow, strategic scaling.
+Use a position-sizing growth curve to increase risk gradually as your consistency improves:
+Start at 0.25R (risking 0.25% per trade) until you reach breakeven.
+Raise to 0.5R after at least two weeks of profitable, disciplined trading.
+Increase to 0.75R only after 10+ solid trades with proper journaling.
+Go to 1.0R or higher (1.25R max) if you’re in drawdown recovery mode or scaling a funded account.
+This method not only protects your capital but also trains your psychological resilience. Your brain needs time to adjust to larger figures. If you jump too quickly from risking $100 per trade to $1,000, you’ll make emotional decisions even if your strategy remains sound.
+In this curve, you can see that the growth is not linear. It starts slowly, encouraging caution, and increases only as the account (and trader) stabilize. You earn the right to risk more by proving you can handle the pressure.
+Traders who scale too fast often do so because they’re chasing profits or trying to “make up” for lost time. But with an unlimited-time challenge, there is no need to rush. Let your edge compound gradually.
+Stick to the curve, and your risk exposure will match your confidence and experience — the hallmark of a professional trader.
+Step 10: When to Request Verification & Payout
+Reaching your profit target is a big deal, but don’t rush the finish line.
+Many traders lose their funded status by getting careless right after they “win.” Let’s make sure you lock it in.
+Start by reviewing the challenge rules one final time:
+– Have you met the minimum trading days?
+– Have you stayed within daily and overall drawdown limits?
+– Have you avoided violations like news trading, lot size limits, or restricted instruments?
+If everything looks good, resist the urge to overtrade . Some traders get greedy after hitting the target and give back profits, trying to pad their results. Don’t do it . Scale risk down, or take a breather while your trades settle.
+Once you’re ready, request verification:
+– Submit any documents required (trading log, ID, etc.).
+– Wait for the review — some firms reply in hours, others take 1–3 business days.
+– Respond promptly if they ask for clarifications.
+Once approved, you’ll either get your funded account access or your first payout. CTI’s unlimited-time challenge streamlines this transition, making it quicker and smoother than multi-step firms.
+💡 Final tip: Treat your funded account like the challenge never ended. That means the same discipline, the same journal, and the same risk rules. Funded trading is not a finish line — it’s a new beginning.
+For detailed payout timelines and real trader verification experiences, check our CTI Payout Proof: Real Trader Statements & Timeline analysis .
+Frequently Asked Questions
+Can I hold trades over the weekend?
+Rules vary by prop firm. CTI allows weekend holds. Don’t forget to document your weekend trading strategy in your journal.
+What happens if I break a rule?
+Even one rule break can void your challenge. Always double-check.
+What if I lose money in the first week?
+Drawdowns are normal. Stick to your plan, document lessons learned, and remember that unlimited-time challenges remove the pressure to recover quickly.
+Can I withdraw profits during the challenge?
+No, profits can only be withdrawn after passing the challenge and receiving your funded account. Challenge accounts are evaluation tools, not live trading accounts.
+How long does it take to pass a challenge?
+With our unlimited-time challenge, you can pass in a few weeks or several months — there’s no rush. We do require a minimum number of trading days, but we encourage patience.
+Martin Najat
+Chief Executive Officer | CEO
+MBA, BSc Banking and Finance, 8+ years in prop firm operations.
+Martin Najat co-founded City Traders Imperium in 2018 and is the operational and strategic force behind its global trader ecosystem. With a background in banking and finance (BSc, ASCCB-accredited), an MBA, and a professional trading practice of his own, Martin built the systems that let CTI run with reliability, transparency and long-term stability.
+From payout infrastructure to risk controls and trader-support workflows, he shaped the operational backbone that grew CTI from a London startup into a respected international proprietary trading firm and continues to drive the technology that will power the next generation of prop trading. His leadership ensures traders experience a firm that is fast, fair and built to last.
+How we write and review our content: Editorial Policy
+X
+LinkedIn
+← Previous
+Prop Firms with Monthly Salary
+Next →
+Balance-Based Drawdown Explained: Why CTI’s Risk Model Gives You More Breathing Room
+Share
+In this article
+How to Pass a Forex Funded Account Challenge in 2026 (Step-by-Step)
+Why most traders fail prop-firm challenges in 2026
+Step 1 – Read the Small Print (Know the Rules)
+Step 2 – Pick the Right Challenge Model (1-Step vs 2-Step vs Instant Funding)
+Step 3 – Reverse-Engineer Your Daily Risk Budget
+Step 4: Trade a Strategy You’ve Back-Tested
+Step 5 – Use a Prop-Challenge Demo Mimic for 20 Trades
+Step 6 – Journal Every Decision (Build Your Trading Database)
+Step 7 – Obsess Over Risk-to-Reward, Not Win Rate
+Step 8 – Control Emotions: Break the Revenge Trading Cycle
+Step 9: Scale Position Size Slowly After Breakeven
+Step 10: When to Request Verification & Payout
+Frequently Asked Questions
+Categories
+Market News
+Forex Education
+Funded Traders
+Trading Psychology
+Prop Trading
+Prop School
+CTI vs Prop Firms
+More in Prop Trading
+US Midterms 2026: What CTI Traders Did on Election Night
+You knew it was coming. The date was on every calendar. The polls had been picked apart for weeks. Everyone had a…
+10 min read
+What Is a Prop Firm?
+What Is a Prop Firm? The Ultimate 2026 Guide A prop firm, short for proprietary trading firm, is a company that gives…
+18 min read
+CTI Payout Proof: Real Trader Success Stories & Timeline
+“Show me the money.” That’s what skeptical traders ask on Reddit and Telegram when evaluating prop firms. Fair enough—you’ve seen the horror…
+8 min read
+Keep reading
+Market News
+Weekly Market Sentiment – 15 November 2026
+A hot US inflation report drove the dollar to a 52-week high and revived December Fed hike bets,…
+7 min read
+Read More →
+Market News
+Weekly Market Sentiment – 8 November 2026
+A Democratic midterm sweep sent stocks into a correction this week, while Brent oil slid hard on US-Iran…
+7 min read
+Read More →
+Prop Trading
+US Midterms 2026: What CTI Traders Did on Election Night
+You knew it was coming. The date was on every calendar. The polls had been picked apart for…
+10 min read
+Read More →
+Exit reading mode
+Follow Us
+Funding Programs
+1-Step Challenge
+2-Step Challenge
+Instant Funding
+Direct Funding
+Success Stories
+FAQs
+Free Trial
+Resources
+CTI Academy
+Join Community
+Blog
+Market News
+Symbols Live Feed
+Calculators
+MT5 Trade Manager
+More
+Become an Affiliate
+Partners
+About Us
+Shop
+Start a Prop Firm
+Contact Us
+Contact Support
+Email: support@citytradersimperium.com
+Live Chat: available on the website
+Discord: Join Community
+Terms & Conditions
+Privacy Policy
+Refund Policy
+AML Policy
+Affiliate Agreement
+Conduct Policy
+Editorial Policy
+Sitemap
+Cookie Settings
+Skill assessment programs and simulated demo trading services are provided exclusively by City Traders Imperium Limited, a company incorporated under the laws of Comoros Union with company number 15969 (License No. L15969/CTI), registered address at Hamchako, Mutsamudu, Autonomous Island of Anjouan, Comoros Union, with operating address at Edificio Faro, Oficina 4, Avenidas 12 y 14, Calle 12, Barrio Luján, San José, Costa Rica. City Traders Imperium Academy educational courses are provided by CTI FZCO (Company No. DSO-FZCO-21340), registered at Dubai Silicon Oasis, DDP, Building A1, Dubai, United Arab Emirates.
+Legal Disclosure: City Traders Imperium Limited provides access to simulated trading skill assessment programs designed solely for the evaluation of trading proficiency and risk-management skills. City Traders Imperium Academy provides structured educational courses. All trading activity occurs in a demo environment using virtual capital.
+No Client Funds / No Live Trading: Neither CTI FZCO nor City Traders Imperium Limited is a broker, dealer, exchange, or investment adviser, and neither accepts nor manages client deposits. Participants do not trade real assets or place live market orders. Any rewards are performance-based and derived from skill assessment results only.
+Evaluation & Educational Use Only: All content, tools, and services are provided for educational and evaluation purposes only and shall not be construed as investment advice, solicitation, or an offer to buy or sell any financial product, cryptocurrency, or derivative. Participants are encouraged to consult independent financial, legal, or tax advisors before engaging in any trading activity outside of these services.
+Platforms: MetaTrader 5 & Match-Trader platforms are used exclusively in connection with the simulated skill assessment environment operated by City Traders Imperium Limited.
+Hypothetical Performance Disclosure: Simulated or hypothetical trading results have inherent limitations. Unlike actual performance records, they do not represent real trading activity and may be designed with the benefit of hindsight. No representation is being made that any account will, or is likely to, achieve profits or losses similar to those shown or implied.
+Payments & Refunds: All fees paid are educational service fees for access to courses or skill assessment programs. All fees are non-refundable except as outlined in our Refund Policy .
+Jurisdictional Restrictions: Neither entity offers services to nationals or residents of the following jurisdictions: North Korea (DPRK), Iran, Syria, Cuba, Russia, or to any individual under international sanctions.
+Non-Targeted Reach: Information on these websites is not directed to residents of any country where such distribution or use would be contrary to local law or regulation. It is the user's responsibility to ensure that any use of the websites or services adheres to their local laws or regulations.
+Beware of Impersonators: This is our only official website.
+© 2026 Copyright
+City Traders Imperium & City Traders Imperium Academy.
+All Rights Reserved.
+Black Friday at City Traders Imperium: the only crash you want
+Select an offer to copy its discount code, then claim your discount.
+✕ Copy code CRASH15: Direct Funding, 15% off Copy Copy code CRASH20: 2-Step Challenge, 20% off Copy Copy code CRASH25: Instant Funding, 25% off Copy Copy code CRASH30: 1-Step Challenge, 30% off Copy Claim My Discount Already have an account? Log in

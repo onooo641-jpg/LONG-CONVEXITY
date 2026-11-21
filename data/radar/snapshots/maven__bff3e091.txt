@@ -1,0 +1,843 @@
+FAQ | Maven Trading Questions Answered | Maven Trading Skip to main content Rocket to funded. 10% off with code"> Trade like a Diamond. 5% off with code
+Copied
+CODE: DIAMOND
+40% OFF Omo Challenges with code
+Copied
+CODE: OMO
+Rocket to funded. 10% off with code"> Trade like a Diamond. 5% off with code
+CODE: DIAMOND
+40% OFF Omo Challenges with code
+CODE: OMO
+Products Standard 1-step
+Standard 2-step
+Standard 3-step
+Static 1-step
+Buy now pay later
+Instant
+Mini
+Omo 2-step
+Predictions
+Pricing
+About us
+FAQ
+Contact
+Resources Blog
+Careers
+Affiliates
+Community
+Reviews
+Log In
+Get started
+EN ES PT
+Products Standard 1-step
+Standard 2-step
+Standard 3-step
+Static 1-step
+Buy now pay later
+Instant
+Mini
+Omo 2-step
+Predictions
+Pricing
+About us
+FAQ
+Contact
+Resources Blog
+Careers
+Affiliates
+Community
+Reviews
+EN ES PT
+Log In Get started
+Questions? Let us help with that.
+Here you can access most of our frequently asked questions. If you still need help, don't hesitate and reach out to us.
+Topics
+Choose a topic to explore or search for a keyword
+Search the FAQ Challenge type Search by challenge type Standard 1 Step Static 1 Step Standard 2 Step Standard 3 Step 2 Step OMO Buy Now, Pay Later Instant Funding Instant Mini Funding Prediction Markets
+Welcome to Maven Getting started with Maven Trading 3 Articles
+General Platforms, drawdown types, instruments, payouts and KYC 23 Articles
+Trading Rules Trading styles and practices Maven prohibits 6 Articles
+Standard 1 Step Rules, targets and payouts for the Standard 1 Step Challenge 11 Articles
+Static 1 Step Rules, targets and payouts for the Static 1 Step Challenge 10 Articles
+Standard 2 Step Rules, targets and payouts for the Standard 2 Step Challenge 11 Articles
+Standard 3 Step Rules, targets and payouts for the Standard 3 Step Challenge 11 Articles
+2 Step OMO Rules, targets and payouts for the 2 Step OMO Challenge 15 Articles
+Buy Now, Pay Later Rules, targets and payouts for the Buy Now Pay Later Challenge 16 Articles
+Instant Funding Rules and payouts for Instant Funding 12 Articles
+Instant Mini Funding Rules and payouts for Instant Mini Funding 14 Articles
+Prediction Markets Everything you need to know about the Maven Prediction Markets challenge 9 Articles
+Welcome to Maven
+What is Maven?
+Welcome to Maven Trading, where we’re reshaping the prop trading landscape. Consider us as your guide to a simulated funded trader program tailor-made for all traders, regardless of experience.
+We’ve created a comfortable environment for you to refine your skills, making informed simulated trades under real market conditions—minus the risk to your own capital. Our distinctive array of challenges make us one of the top prop firms, dedicated to helping you unlock a new level of trading expertise.
+What is a Simulated Funded Account?
+A Simulated Funded Account is traded in a demo environment. Evaluation plans provide this account after you pass the required stages and meet the account requirements. Instant Funding and Instant Mini Funding provide direct access without an evaluation.
+Is Maven an established prop firm?
+Yes!
+We have been operating since 2022 and are focused on fast payouts and better support. We’ve even won awards for it! We’ve rewarded traders around the world, are one of the highest-rated firms on Feefo , and are proud to have established ourselves with a strong presence in the prop firm industry.
+General
+Which Platforms can I use for simulated trading at Maven?
+Maven Trading offers MT5 and Match Trader
+Can I switch between simulated trading platforms?
+Yes. You may request to switch platforms as long as your account has not been traded .
+Platform changes are no longer available once the account reaches Phase 2, Phase 3, or the Funded Stage .
+Is News Trading Allowed?
+Standard 1 Step Do not open or close trades on affected instruments from 2 minutes before until 2 minutes after an applicable Red Folder release.
+Standard 2 Step Do not open or close trades on affected instruments from 2 minutes before until 2 minutes after an applicable Red Folder release.
+Standard 3 Step Do not open or close trades on affected instruments from 2 minutes before until 2 minutes after an applicable Red Folder release.
+2 Step OMO Yes, but profit from any single news event is capped at 0.50% of your account balance . Any profit above the cap will not count toward your balance.
+(Applicable in Funded Stage only)
+Buy Now Pay Later Yes, without restriction
+Instant Funding Yes, without restriction
+Instant Mini Yes, without restriction
+Standard-plan news restrictions follow the ForexFactory Red Folder calendar and Maven’s affected-instrument list. Some macroeconomic events restrict all instruments. The window also covers pending orders, stop-loss and take-profit execution, and automatic closure on reaching the challenge profit target. During the Challenge, opening or closing a trade in the restricted window is a hard breach. In the Simulated Funded Account, profits generated in the restricted window are excluded.
+Which instruments are affected by Red Folder news?
+For Standard 1 Step, Standard 2 Step and Standard 3 Step, the restriction runs from 2 minutes before until 2 minutes after the relevant release.
+Affected instruments Relevant news
+All instruments CPI, FOMC statements/meetings and Non-Farm Employment Change.
+Gold, silver and indices USD, AUD and CAD high-impact releases; interest-rate decisions, press conferences, CPI and GDP across currencies; USD Core PCE.
+USD forex pairs and US indices Employment/NFP, unemployment, PMI/ISM, inflation, GDP, Federal Reserve decisions/statements, trade, jobless claims, confidence, JOLTs, earnings, bond auctions, housing, durable goods, speeches and retail sales.
+EUR forex pairs and EU indices PMI, inflation, GDP, employment, retail sales, trade, ECB decisions/statements, confidence and speeches.
+GBP forex pairs Inflation, GDP, PMI, employment, housing, retail sales, trade, production, BoE decisions and speeches.
+CAD forex pairs and oil BoC decisions, PMI, inflation, GDP, trade, employment, housing, sales and speeches.
+AUD/NZD/CHF forex pairs Relevant central-bank decisions, inflation, GDP and speeches; AUD/NZD employment releases.
+JPY forex pairs and Asian indices BoJ decisions, inflation, GDP, employment, PMI, production, trade, retail sales and speeches.
+US/UK oil Crude Oil Inventories; CAD high-impact news.
+What is Equity-Based Drawdown?
+Equity-based drawdown calculates your daily loss limit using the higher of your balance or equity at 00:00 UTC . This means unrealized profits are included when determining your daily drawdown limit.
+Example: On a $10,000 account , if your equity at 00:00 UTC is $10,300 and your balance is $10,000 , the higher amount is $10,300. With a 4% daily drawdown , your limit is $412 , meaning your equity must not fall below $9,888 that day.
+What is Trailing Drawdown?
+Trailing drawdown is a moving loss limit that follows your highest account equity. As your equity increases, the drawdown limit moves up with it.
+Example: On a $10,000 account with a 5% trailing drawdown , the initial limit is $9,500 . If your equity reaches $11,000 , the limit moves to $10,450 . If your equity falls below $10,450 , the account breaches the drawdown limit.
+What is Static Drawdown?
+Static drawdown is a fixed loss limit based on your initial account balance. The drawdown limit does not move up as your balance or equity increases.
+Example: On a $10,000 account with an 8% static drawdown , your drawdown limit is $9,200 . This limit remains fixed, even if your account grows.
+Can I merge accounts?
+Yes. You can merge Simulated Funded Accounts as long as they are from the same plan .
+Standard 1 Step Simulated Funded Account + Standard 1 Step Simulated Funded Account: Allowed
+Standard 2 Step Simulated Funded Account + Standard 2 Step Simulated Funded Account: Allowed
+Standard 1 Step Simulated Funded Account + 2 Step OMO Simulated Funded Account: Not allowed
+You can merge accounts up to a maximum combined balance of $200,000 .
+Can I trade and hold positions overnight or over the weekend?
+Yes. You may trade and hold positions overnight or over the weekend. Maven also offers 24/7 gold trading.
+Can I Use a Different Device for Trading?
+Yes. You may trade from a different device as long as you are the person trading on the account and the device belongs to you.
+Is VPN Allowed?
+Yes. VPN usage is allowed.
+Who Is Your DataFeed Broker?
+Our data feed broker is Match-Prime.
+What Instruments Can I Trade?
+Maven offers a wide range of instruments, including Forex, Commodities, Indices, and Cryptocurrencies.
+Commodities
+ALUMINIUM | BRENT | COCOA | COFFEE | COPPER | CORN | COTTON | NGAS | SOYBEAN | SUGAR | WHEAT | WTI | XAGUSD | XAUUSD | XPDUSD | ZINC | XPTUSD
+Forex
+AUDCAD | AUDCHF | AUDJPY | AUDNZD | AUDUSD | CADCHF | CADJPY | CHFJPY | EURAUD | EURCAD | EURCHF | EURGBP | EURJPY | EURNOK | EURNZD | EURPLN | EURSEK | EURTRY | EURUSD | GBPAUD | GBPCAD | GBPCHF | GBPJPY | GBPNZD | GBPUSD | NZDCAD | NZDCHF | NZDJPY | NZDUSD | USDCAD | USDCHF | USDENH | USDHKD | USDJPY | USDMXN | USDPLN | USDSEK | USDSGD | USDZAR
+Indices
+AUS200 | CHNIND | EU50 | FRA40 | GER30 | HKIND | ITA40 | JAP225 | SPA35 | SUI20 | UK100 | US100 | US2000 | US30 | US500
+Cryptocurrencies
+BTCEUR | BTCUSD | ETHBTC | ETHUSD
+Is copy trading allowed?
+Yes. Copy trading is allowed only when copying your own trades between your accounts. Using an EA for copy trading is prohibited . Trades must be copied manually .
+What is the refund policy of Maven Trading?
+Your initial challenge fee is refunded after your third reward from your Simulated Funded Account. The refund is processed and sent separately from your rewards.
+The refund policy applies to the following programs:
+1 Step Simulated Funded Account
+2 Step Simulated Funded Account
+2 Step OMO Simulated Funded Account
+3 Step Simulated Funded Account
+Buy Now, Pay Later Simulated Funded Account
+Instant Funding
+What Leverage Does Maven Offer?
+Forex: 1:75
+Commodities and Precious Metals: 1:20
+Gold: 1:100 (2 Step OMO Only)
+Indices: 1:20
+Digital ETFs: 1:2
+What Are the Trading Commissions?
+Standard: $2 USD per lot traded per side ($4 USD per lot round trip)
+Precious Metals: $3 USD per lot traded per side ($6 USD per lot round trip)
+Energy: $3 USD per lot traded per side ($6 USD per lot round trip)
+Does Maven Offer Swap-Free Accounts?
+Yes. All Maven account plans are swap-free.
+What Are the Spreads?
+Spreads vary depending on market conditions .
+View Spreads on Our Test Accounts
+1. Match-Trader – Standard Test Account
+Platform Link: https://manager.maven.markets/
+Email: support@maventrading.com
+Password: Testspread123
+2. MetaTrader 5 (MT5) – Test Account
+Login: 10333423
+Password: xuhheE5!
+Server: MavenTradeServer
+3. Prediction Markets – Match-Trader Test Account
+Platform Link: https://manager.maven.markets/
+Email: support@maventrading.com
+Password: Testspread123
+Account ID: 820278
+Important: Spreads are variable and may differ between instruments, account types, and market conditions. The spreads displayed on the test accounts reflect conditions at the time of checking and may change without notice.
+What withdrawal methods are available?
+Available payout methods depend on your country, as listed below.
+For Nigeria, Kenya, and Ghana:
+Direct Bank Transfer
+Digital Currencies (USDT-BSC or USDC-ERC20)
+For other countries:
+Digital Currencies (USDT-BSC or USDC-ERC20)
+Rise Pay
+What information do I need for KYC?
+To complete your KYC verification, please ensure that all personal information you provide is accurate and matches your valid government-issued identity document.
+Required Information and Documents
+Accurate Personal Details: Your information must match the details on your government-issued ID. Inaccurate information or missing documents may result in KYC failure.
+Consistent Email Address: Use the same email address throughout your Maven journey, including when purchasing multiple accounts. Breaching an account does not mean you need a new email address. Continue using your existing email address if you purchase another challenge. Using different email addresses may affect your KYC verification.
+Government-Issued ID: Submit a valid identity document, such as a passport, driver's license, residence permit, or national ID card.
+Payment Card: Use a payment card registered in your own name. Third-party payment cards may prevent you from completing KYC or receiving a Simulated Funded Account.
+Nigerian Traders: Nigerian traders may be required to provide a NIN number and a Selfie taken on the same day.
+Important KYC Requirements
+You must use your own identity and personal information. Using another person's ID, email address, or payment card may result in automatic KYC rejection. Having another person in the camera frame during the KYC verification process will result in account termination.
+Traders must be 18 years of age or older. Underage traders are not eligible to complete KYC.
+Personal information cannot be changed once you have placed a trade in your Challenge account or during the KYC process.
+Accepted Documents
+For the complete list of identity documents accepted by Veriff, please visit:
+https://www.veriff.com/supported-countries
+What Is the IP Address Policy?
+Your IP address should remain within the same geographical region throughout your Maven journey to verify that you are trading independently.
+If your IP address changes significantly, Maven may request proof or an explanation for the change. This may include travel documents, live location verification, or other supporting evidence deemed appropriate by Maven.
+Will Changing My Location Affect My Payout?
+Changing your location may require verification. If you travel overseas , you may be asked to provide supporting documents, such as a plane ticket or travel itinerary , to verify the location change.
+Trading Rules
+What Are Maven’s Trading Style Rules?
+Maven prohibits the following trading styles:
+Excessive Scalping
+All-In Trading
+Gamifying the Challenge
+Traders must follow responsible trading practices and comply with all applicable account rules.
+What is excessive scalping?
+Excessive scalping means holding more than 50% of your trades for less than 60 seconds (1 minute) .
+Example of Excessive Scalping:
+A trader makes 50 trades in total.
+26 trades are held for less than 60 seconds.
+24 trades are held for 60 seconds or longer.
+26 out of 50 trades is 52%, which exceeds the permitted 50%.
+This is considered excessive scalping and is not allowed.
+What is All-in Trading rule?
+All-in trading refers to risking an amount that could breach your daily drawdown or maximum drawdown in a single trade or setup .
+All-in trading is not permitted on any Maven Challenge or Simulated Funded Account.
+This includes:
+No stop-loss: Opening a trade without a stop-loss and holding it until you pass or fail the challenge.
+Risking too much: Setting a stop-loss that risks more than your account's allowed drawdown limit.
+Layering positions: Opening multiple trades on the same instrument and in the same direction without proper risk management, or when the combined risk exceeds your allowed drawdown limit.
+Examples of All-in trading
+Example 1: No stop-loss
+A trader opens a 1-lot EUR/USD trade without a stop-loss. The trader holds the position until the account either passes or fails the challenge.
+This is considered all-in trading because the trader is relying on one trade to determine the outcome of the account.
+Example 2: Risking more than the daily or maximum drawdown limit
+A trader has a $10,000 Two-Step Challenge with a 4% daily drawdown limit ($400).
+The trader opens a EUR/USD trade with a stop-loss that risks 6% of the account ($600).
+If the stop-loss is hit, the account will exceed its drawdown limit and fail the challenge. This is considered all-in trading.
+Example 3: Layering positions
+A trader opens multiple EUR/USD trades in the same direction The trader does not use a stop-loss, or the combined risk of the trades exceeds the account's drawdown limit.
+This is considered all-in trading.
+Example 4: Multiple trades with open risk
+A trader opens multiple trades across multiple assets, using stop-loss for these trades. However, the combined risk of these trades is greater than the drawdown limits.
+What Is Gamifying the Challenge?
+Gamifying the challenge means using opposing positions across accounts to create a near-guaranteed chance of passing , such as going long on one account and short on another.
+Example: You open a buy trade on Account A and an equal sell trade on Account B at the same time. If the market moves up, Account A profits while Account B loses; if the market moves down, Account B profits while Account A loses. This is considered gamifying the challenge rather than genuine trading.
+This also includes reversing positions between Maven and another prop firm to offset risk.
+Trading large portions of your account on single bets with a 1:1.25 or lower risk-to-reward ratio may also be considered gamifying the challenge.
+This approach is not permitted .
+What Does Maven Classify as Cheating?
+Maven prohibits trading practices that exploit the demo-trading environment or attempt to bypass the intended trading rules.
+The following are prohibited:
+High-Frequency Trading (HFT): Exploiting demo-trader inefficiencies through high-frequency strategies.
+Toxic Trading / Order Flow: Strategies designed to exploit demo execution or pricing inefficiencies.
+Arbitrage: Long/short arbitrage and reverse arbitrage.
+Tick Scalping: Exploiting small tick-level price movements.
+Server Execution Exploitation: Using server execution inefficiencies for profit.
+Copy Trading: Copying trades from another individual. If detected, both accounts may be breached .
+Grid/Gap Trading: Grid and gap trading strategies are prohibited across all Challenge and Simulated Funded Accounts.
+Reverse/Group Hedging: Prohibited as described under Gamifying the Challenge.
+Exclusive Hedging: Hedging accounts are prohibited.
+Expert Advisors (EAs): EAs and automated trading are prohibited across all Maven platforms. All trades must be executed manually.
+Gamifying the Challenge: Prohibited as described above, including betting solely on maximum drawdown or take-profit levels.
+For rule assessment, a trade may comprise one position or multiple entries on the same pair with similar timings and lot sizes. Entries with vastly smaller lot sizes do not count as separate trades.
+Your account will be terminated if you perform any of these actions.
+Does Maven have a withdrawal cap?
+For Standard 1 Step, Standard 2 Step, Standard 3 Step, Buy Now Pay Later and Instant Funding Simulated Funded Accounts, a maximum of $10,000 before the reward split may be withdrawn across two payouts or within any rolling 30-day period.
+Standard 1 Step
+Is there a Consistency score in the Standard 1 Step Challenge and Simulated Funded Account?
+There is no Consistency Score requirement for the Standard 1 Step Challenge or Simulated Funded Account.
+What is the profit target for the Standard 1 Step Challenge?
+In the Standard 1 Step Challenge , traders must meet a profit target of 8%.
+Standard 1 Step Challenge Profit Target Breakdown by Account Size
+Account Size Profit Target (8%)
+$2,000 $160
+$5,000 $400
+$10,000 $800
+$20,000 $1,600
+$50,000 $4,000
+$100,000 $8,000
+What happens after I pass the Standard 1 Step Challenge?
+1. Trading & Account Review (1–3 Business Days)
+Once you reach the profit target, your trades will automatically close, and your account will be disabled and placed under review.
+2. Receive Your Challenge Certificate
+Our team will review your trading history. Once approved, you’ll receive a congratulatory email and your Challenge Certificate.
+3. Complete KYC & Receive Your Simulated Funded Account
+You’ll receive a KYC email with instructions to submit the required documents. Once your KYC is successfully verified, typically within 1 business day , you’ll receive your Simulated Funded Account.
+What are the Drawdown Rules for the Standard 1 Step Challenge and Simulated Funded Account?
+The Standard 1 Step Challenge and Simulated Funded Account use the same loss limits: 3% daily loss and 5% trailing maximum drawdown.
+Daily Loss Limit: 3% (Equity-Based)
+The daily drawdown resets based on the higher of your equity or balance at 00:00 UTC .
+Your account must not exceed a 3% loss within a trading day.
+Example: You have a $10,000 account , open a trade, and leave it running overnight. At 00:00 UTC , your equity is $10,300 , while your balance is $10,000 . Your maximum daily drawdown is 3% of $10,300 ($309) . Your account will breach the daily drawdown if your equity falls below $9,991 that day.
+Maximum Drawdown: 5% (Trailing)
+Your maximum drawdown moves up with your highest running equity , including unrealized profit from open trades.
+Example: With a $10,000 account and a 5% trailing drawdown , your initial limit is $9,500 . If your running equity reaches $11,000 , the limit moves to $10,450 . Falling below $10,450 breaches the drawdown limit.
+Note: The trailing drawdown is based on running equity , not just closed trades.
+Exceeding either limit will result in a breach of the Challenge or Simulated Funded Account.
+Is there a minimum number of trading days required for the Standard 1 Step Account?
+There is no minimum trading days requirement for the Standard 1 Step Challenge or Simulated Funded Accounts. You may pass the challenge in a day.
+Is there an Inactivity Rule in the Standard 1 Step Account?
+Accounts must have at least one trading activity within every 30 days to remain active.
+Is there a Minimum Holding time for each trade?
+At least 50% of your trades must be held for at least 60 seconds (1 minute). Trades held for exactly 60 seconds qualify.
+Is News Trading Allowed in the Standard 1 Step Account?
+The Red Folder news restrictions in the General FAQ apply to this Challenge and Simulated Funded Account, including pending orders, stop-losses, take-profits and automatic profit-target closures.
+Example: If a Red Folder news release is scheduled for 2:00 PM , you cannot open or close a trade between 1:58 PM and 2:02 PM .
+What is the Reward Split for a Standard 1 Step Simulated Funded Account?
+The standard reward split is 80%. With the applicable add-on, the reward split increases to 90%.
+Note : Add-ons must be selected at checkout when purchasing the account. They cannot be added after the account has been purchased.
+What is the Minimum Withdrawal for a Standard 1 Step Simulated Funded Account?
+The minimum withdrawal request is $20 in profit before the reward split is applied. The amount you receive is your applicable share of that profit.
+How Often Can I Request a Payout for a Standard 1 Step Simulated Funded Account?
+Your first payout is available 10 business days after your first trade on the Simulated Funded Account. Each subsequent 10-business-day period starts with your first trade after the previous payout.
+Static 1 Step
+How is the Static 1 Step Challenge different from the Standard 1 Step?
+Both are one-phase challenges with a 3% daily loss and a 5% maximum loss. The difference is how the maximum loss is measured:
+Static 1 Step: static drawdown. The limit is fixed at 5% below your starting balance and never moves.
+Standard 1 Step: trailing drawdown. The limit follows your highest equity up.
+The Static 1 Step has a 10% profit target (8% on the Standard 1 Step) and needs 4 profitable days.
+Is there a Consistency score in the Static 1 Step Challenge and Simulated Funded Account?
+There is no Consistency Score requirement for the Static 1 Step Challenge or Simulated Funded Account.
+What is the profit target for the Static 1 Step Challenge?
+In the Static 1 Step Challenge , traders must meet a profit target of 10%.
+Static 1 Step Challenge Profit Target Breakdown by Account Size
+Account Size Profit Target (10%)
+$2,000 $200
+$5,000 $500
+$10,000 $1,000
+$20,000 $2,000
+$50,000 $5,000
+$100,000 $10,000
+What are the Drawdown Rules for the Static 1 Step Challenge and Simulated Funded Account?
+The Static 1 Step Challenge and Simulated Funded Account use the same loss limits: 3% daily loss and 5% static maximum drawdown. The M2 Account Saver also applies as described below.
+Daily Loss Limit: 3% (Equity-Based)
+The daily drawdown resets based on the higher of your equity or balance at 00:00 UTC .
+Your account must not exceed a 3% loss within a trading day.
+Maximum Drawdown: 5% (Static)
+Your maximum drawdown is fixed at 5% below your starting balance . It does not move up as your balance or equity grows.
+Example: With a $10,000 account , your limit is $9,500 . If your equity reaches $11,000 , the limit stays at $9,500 .
+Exceeding either limit will result in a breach of the Challenge or Simulated Funded Account.
+Is there a minimum number of profitable days required for the Static 1 Step Account?
+You need at least 4 profitable days in the evaluation phase and 4 new profitable days for each funded payout cycle. Each qualifying day must earn at least 0.5% of the initial account balance. The days do not need to be consecutive.
+Is News Trading Allowed in the Static 1 Step Account?
+The Red Folder news restrictions in the General FAQ apply to this Challenge and Simulated Funded Account, including pending orders, stop-losses, take-profits and automatic profit-target closures.
+Example: If a Red Folder news release is scheduled for 2:00 PM , you cannot open or close a trade between 1:58 PM and 2:02 PM .
+What is the M2 Account Saver and How Does It Work?
+The M2 Account Saver monitors your current floating loss, calculated as Balance − Equity. It activates when this loss reaches 2% of your current account balance. It is not measured from your highest equity or from the start of the trading day.
+Careful position sizing can help you avoid triggering the Account Saver.
+Example: With a current balance of $10,000, the M2 Account Saver triggers when floating loss reaches $200 (2%).
+Event Account Status Result
+First breach Drawdown reaches 2% All open trades are closed. The Funded Stage reward split is reduced to 50% , whichever phase the breach happens in.
+Second breach Drawdown reaches 2% again All open trades are closed, and the account is permanently deactivated .
+If you bought the 90% Profit Split add-on, the first M2 trigger still reduces your split to 50% and the add-on is lost.
+What is the Reward Split for a Static 1 Step Simulated Funded Account?
+The standard reward split is 80%. With the applicable add-on, the reward split increases to 90%.
+After the first M2 Account Saver trigger, your reward split is permanently reduced to 50% for the remainder of the account.
+Note : Add-ons must be selected at checkout when purchasing the account. They cannot be added after the account has been purchased.
+How Often Can I Request a Payout for a Static 1 Step Simulated Funded Account?
+Your first payout is available 10 business days after your first trade on the Simulated Funded Account. Each subsequent 10-business-day period starts with your first trade after the previous payout.
+Is there a Withdrawal Cap in a Static 1 Step Account?
+Yes. The withdrawal cap is:
+First payout: Maximum of 6% of your initial account balance in profit before the reward split is applied.
+Second payout: Maximum of 8% of your initial account balance in profit before the reward split is applied.
+Third payout onward: No withdrawal cap.
+Standard 2 Step
+Is there a Consistency score in the Standard 2 Step Challenge and Simulated Funded Account?
+There is no Consistency Score requirement for the Standard 2 Step Challenge or Simulated Funded Account.
+What is the profit target for the Standard 2 Step Challenge?
+In the Standard 2 Step Challenge, traders must meet a profit target of 8% in Phase 1 and a 5% profit target in Phase 2.
+Standard 2 Step Challenge Profit Target Breakdown by Account Size
+Account Size Profit Target (8%) Profit Target (5%)
+$2,000 Phase 1 - $160 Phase 2 - $100
+$5,000 Phase 1 - $400 Phase 2 - $250
+$10,000 Phase 1 - $800 Phase 2 - $500
+$20,000 Phase 1 - $1,600 Phase 2 - $1000
+$50,000 Phase 1 - $4,000 Phase 2 - $2,500
+$100,000 Phase 1 - $8,000 Phase 2 - $5,000
+What happens after I pass the Standard 2 Step Challenge?
+1. Trading & Account Review (1–3 Business Days)
+You must meet both the profit target and the minimum profitable-day requirement for each evaluation phase. Reaching the profit target alone does not qualify you to pass. After you complete the final phase and satisfy all requirements, your trades will automatically close, and your account will be disabled and placed under review.
+2. Receive Your Challenge Certificate
+Our team will review your trading history. Once approved, you’ll receive a congratulatory email and your Challenge Certificate.
+3. Complete KYC & Receive Your Simulated Funded Account
+You’ll receive a KYC email with instructions to submit the required documents. Once your KYC is successfully verified, typically within 1 business day , you’ll receive your Simulated Funded Account.
+What are the Drawdown Rules for the Standard 2 Step Challenge and Simulated Funded Account?
+The Standard 2 Step Challenge and Simulated Funded Account use the same loss limits: 4% daily loss and 8% static maximum drawdown.
+Daily Loss Limit: 4% (Equity-Based)
+The daily drawdown resets based on the higher of your equity or balance at 00:00 UTC .
+Your account must not exceed a 4% loss within a trading day.
+Example: You have a $10,000 account , open a trade, and leave it running overnight. At 00:00 UTC , your equity is $10,300 , while your balance is $10,000 . Your maximum daily drawdown is 4% of $10,300 ($412) . Your account will breach the daily drawdown if your equity falls below $9,888 that day.
+Maximum Drawdown: 8% (Static)
+Your maximum drawdown is 8% of the initial account balance and remains fixed.
+The drawdown limit does not increase when your account equity or balance grows.
+Example: With a $10,000 account , your maximum drawdown is $800 , so your equity must not fall below $9,200 .
+Exceeding either limit will result in a breach of the Challenge or Simulated Funded Account.
+Is there a minimum number of profitable days required for the Standard 2 Step Account?
+You need at least 3 profitable days in each evaluation phase and 3 new profitable days for each funded payout cycle. Each qualifying day must earn at least 0.5% of the initial account balance. The days do not need to be consecutive.
+Example for a $10,000 account:
+Days 1, 3, and 4 count as the 3 required profitable days. Day 2 does not qualify because the profit is below 0.5%.
+Trading Day Minimum Profit Qualifies? Total Profitable Days
+Day 1 0.5% ($50) ✅ 1
+Day 2 0.3% ($30) ❌ 1
+Day 3 0.5% ($50) ✅ 2
+Day 4 0.5% ($50) ✅ 3
+Is there an inactivity rule in the Standard 2 Step Account?
+Accounts must have at least one trading activity within every 30 days to remain active.
+Is there a minimum holding time for each trade?
+At least 50% of your trades must be held for at least 60 seconds (1 minute). Trades held for exactly 60 seconds qualify.
+Is News Trading allowed in the Standard 2 Step Account?
+The Red Folder news restrictions in the General FAQ apply to this Challenge and Simulated Funded Account, including pending orders, stop-losses, take-profits and automatic profit-target closures.
+Example: If a Red Folder news release is scheduled for 2:00 PM , you cannot open or close a trade between 1:58 PM and 2:02 PM .
+What is the reward split for a Standard 2 Step Simulated Funded Account?
+The standard reward split is 80%. With the applicable add-on, the reward split increases to 90%.
+Note : Add-ons must be selected at checkout when purchasing the account. They cannot be added after the account has been purchased.
+What is the Minimum Withdrawal for a Standard 2 Step Simulated Funded Account?
+The minimum withdrawal request is $20 in profit before the reward split is applied. The amount you receive is your applicable share of that profit.
+How Often Can I Request a Payout for a Standard 2 Step Simulated Funded Account?
+Your first payout is available 10 business days after your first trade on the Simulated Funded Account. Each subsequent 10-business-day period starts with your first trade after the previous payout.
+Standard 3 Step
+Is there a Consistency score in the Standard 3 Step Challenge and Simulated Funded Account?
+There is no Consistency Score requirement for the Standard 3 Step Challenge or Simulated Funded Account.
+What is the profit target for the Standard 3 Step Challenge?
+In the Standard 3 Step Challenge , traders must achieve a 3% profit target in each of the three phases.
+Standard 3 Step Challenge Profit Target Breakdown by Account Size
+Account Size Profit Target (3%) Profit Target (3%) Profit Target (3%)
+$2,000 Phase 1 - $60 Phase 2 - $60 Phase 3 - $60
+$5,000 Phase 1 - $150 Phase 2 - $150 Phase 3 - $150
+$10,000 Phase 1 - $300 Phase 2 - $300 Phase 3 - $300
+$20,000 Phase 1 - $600 Phase 2 - $600 Phase 3 - $600
+$50,000 Phase 1 - $1,500 Phase 2 - $1,500 Phase 3 - $1,500
+$100,000 Phase 1 - $3,000 Phase 2 - $3,000 Phase 3 - $3,000
+What happens after I pass the Standard 3 Step Challenge?
+1. Trading & Account Review (1–3 Business Days)
+Once you reach the profit targets, your trades will automatically close, and your account will be disabled and placed under review.
+2. Receive Your Challenge Certificate
+Our team will review your trading history. Once approved, you’ll receive a congratulatory email and your Challenge Certificate.
+3. Complete KYC & Receive Your Simulated Funded Account
+You’ll receive a KYC email with instructions to submit the required documents. Once your KYC is successfully verified, typically within 1 business day , you’ll receive your Simulated Funded Account.
+What are the Drawdown Rules for the Standard 3 Step Challenge and Simulated Funded Account?
+The Standard 3 Step Challenge and Simulated Funded Account use the same loss limits: 2% daily loss and 3% static maximum drawdown.
+Daily Loss Limit: 2% (Equity-Based)
+The daily drawdown resets based on the higher of your equity or balance at 00:00 UTC .
+Your account must not exceed a 2% loss within a trading day.
+Example: You have a $10,000 account , open a trade, and leave it running overnight. At 00:00 UTC , your equity is $10,100 , while your balance is $10,000 . Your maximum daily drawdown is 2% of $10,100 ($202) . Your account will breach the daily drawdown if your equity falls below $9,898 that day.
+Maximum Drawdown: 3% (Static)
+Your maximum drawdown is 3% of the initial account balance and remains fixed.
+The drawdown limit does not increase when your account equity or balance grows.
+Example: With a $10,000 account , your maximum drawdown is $300 , so your equity must not fall below $9,700 .
+Exceeding either limit will result in a breach of the Challenge or Simulated Funded Account.
+Is there a minimum number of trading days required for the Standard 3 Step Account?
+There is no minimum trading days requirement for the Standard 3 Step Challenge or Simulated Funded Accounts. You may pass the challenge in a day.
+Is there an Inactivity Rule in the Standard 3 Step Account?
+Accounts must have at least one trading activity within every 30 days to remain active.
+Is there a Minimum Holding time for each trade?
+At least 50% of your trades must be held for at least 60 seconds (1 minute). Trades held for exactly 60 seconds qualify.
+Is News Trading Allowed in the Standard 3 Step Account?
+The Red Folder news restrictions in the General FAQ apply to this Challenge and Simulated Funded Account, including pending orders, stop-losses, take-profits and automatic profit-target closures.
+Example: If a Red Folder news release is scheduled for 2:00 PM , you cannot open or close a trade between 1:58 PM and 2:02 PM .
+What is the Reward Split for a Standard 3 Step Simulated Funded Account?
+The standard reward split is 80%. With the applicable add-on, the reward split increases to 90%.
+Note : Add-ons must be selected at checkout when purchasing the account. They cannot be added after the account has been purchased.
+What is the Minimum Withdrawal for a Standard 3 Step Simulated Funded Account?
+The minimum withdrawal request is $20 in profit before the reward split is applied. The amount you receive is your applicable share of that profit.
+How Often Can I Request a Payout for a Standard 3 Step Simulated Funded Account?
+Your first payout is available 10 business days after your first trade on the Simulated Funded Account. Each subsequent 10-business-day period starts with your first trade after the previous payout.
+2 Step OMO
+Is there a Consistency score in the 2 Step OMO Challenge and Simulated Funded Account?
+There is no Consistency Score requirement for the 2 Step OMO Challenge or Simulated Funded Account.
+What Is the 2-Step OMO Challenge?
+The 2-Step OMO is a two-phase evaluation designed to identify skilled and disciplined traders.
+What is the profit target for the 2 Step OMO Challenge?
+In the Standard 2 Step OMO Challenge, traders must achieve a 6% profit target in Phase 1 and an 8% profit target in Phase 2.
+2 Step OMO Challenge Profit Target Breakdown by Account Size
+Account Size Profit Target (6%) Profit Target (8%)
+$2,000 Phase 1 - $120 Phase 2 - $160
+$5,000 Phase 1 - $300 Phase 2 - $400
+$10,000 Phase 1 - $600 Phase 2 - $800
+$20,000 Phase 1 - $1,200 Phase 2 - $1,600
+$50,000 Phase 1 - $3,000 Phase 2 - $4,000
+$100,000 Phase 1 - $6,000 Phase 2 - $8,000
+What happens after I pass the 2 Step OMO Challenge?
+1. Trading & Account Review (1–3 Business Days)
+You must meet both the profit target and the minimum profitable-day requirement for each evaluation phase. Reaching the profit target alone does not qualify you to pass. After you complete the final phase and satisfy all requirements, your trades will automatically close, and your account will be disabled and placed under review.
+2. Receive Your Challenge Certificate
+Our team will review your trading history. Once approved, you’ll receive a congratulatory email and your Challenge Certificate.
+3. Complete KYC & Receive Your Simulated Funded Account
+You’ll receive a KYC email with instructions to submit the required documents. Once your KYC is successfully verified, typically within 1 business day , you’ll receive your Simulated Funded Account.
+What are the Drawdown Rules for the 2 Step OMO Challenge and Simulated Funded Account?
+The 2 Step OMO Challenge and Simulated Funded Account use the same loss limits: 4% daily loss and 8% static maximum drawdown. The M2 Account Saver also applies as described below.
+Daily Loss Limit: 4% (Equity-Based)
+The daily drawdown resets based on the higher of your equity or balance at 00:00 UTC .
+Your account must not exceed a 4% loss within a trading day.
+Example: You have a $10,000 account , open a trade, and leave it running overnight. At 00:00 UTC , your equity is $10,300 , while your balance is $10,000 . Your maximum daily drawdown is 4% of $10,300 ($412) . Your account will breach the daily drawdown if your equity falls below $9,888 that day.
+Maximum Drawdown: 8% (Static)
+Your maximum drawdown is 8% of the initial account balance and remains fixed.
+The drawdown limit does not increase when your account equity or balance grows.
+Example: With a $10,000 account , your maximum drawdown is $800 , so your equity must not fall below $9,200 .
+Exceeding either limit will result in a breach of the Challenge or Simulated Funded Account.
+Is there a minimum number of profitable days required for the 2 Step OMO Account?
+You need at least 4 profitable days in each evaluation phase and 4 new profitable days for each funded payout cycle. Each qualifying day must earn at least 0.5% of the initial account balance. The days do not need to be consecutive.
+Example for a $10,000 account:
+Days 1, 3, 4, and 5 count as the 4 required profitable days. Day 2 does not qualify because the profit is below 0.5%.
+Trading Day Minimum Profit Qualifies? Total Profitable Days
+Day 1 0.5% ($50) ✅ 1
+Day 2 0.3% ($30) ❌ 1
+Day 3 0.5% ($50) ✅ 2
+Day 4 0.5% ($50) ✅ 3
+Day 5 0.5% ($50) ✅ 4
+Is there an Inactivity Rule in the 2 Step OMO Account?
+Accounts must have at least one trading activity within every 30 days to remain active.
+Is there a Time Limit for the 2-Step OMO Account?
+The 2-Step OMO has a maximum duration of 180 days across both evaluation phases combined. There is no separate deadline for each phase, so you can distribute your trading time as needed.
+You must complete both phases within the 180 days while meeting all profit targets and risk rules to qualify for the Funded Stage.
+Is there a Minimum Holding time for each trade?
+Trades on the Simulated Funded Account must be held for at least 150 seconds (2.5 minutes). Profit from trades closed before 150 seconds is removed.
+Is News Trading Allowed in the 2 Step OMO Account?
+News trading is fully permitted during Phase 1 and Phase 2 with no restrictions .
+In the Funded Stage , news trading is allowed, but profit from any single news event is capped at 0.50% of your account balance . Any profit above the cap will not count toward your balance.
+Example: With a $10,000 Simulated Funded Account , the cap is 0.50% × $10,000 = $50 . If a news event generates $70 in profit, only $50 will count toward your balance. The remaining $20 will be subject to a profit adjustment.
+What is the M2 Account Saver and How Does It Work?
+The M2 Account Saver monitors your current floating loss, calculated as Balance − Equity. It activates when this loss reaches 2% of your current account balance. It is not measured from your highest equity or from the start of the trading day.
+Careful position sizing can help you avoid triggering the Account Saver.
+Example: With a current balance of $10,000, the M2 Account Saver triggers when floating loss reaches $200 (2%).
+Event Account Status Result
+First breach Drawdown reaches 2% All open trades are closed. The Funded Stage reward split is reduced to 50% , whichever phase the breach happens in.
+Second breach Drawdown reaches 2% again All open trades are closed, and the account is permanently deactivated .
+If you bought the 90% Profit Split add-on, the first M2 trigger still reduces your split to 50% and the add-on is lost.
+Is there a Withdrawal Cap in a 2 Step OMO Account?
+Yes. The withdrawal cap is:
+First payout: Maximum of 6% of your initial account balance in profit before the reward split is applied.
+Second payout: Maximum of 8% of your initial account balance in profit before the reward split is applied.
+Third payout onward: No withdrawal cap.
+What is the Reward Split for a 2 Step OMO Simulated Funded Account?
+The standard reward split is 80% . With the applicable add-on, the reward split increases to 90% .
+After the first M2 Account Saver trigger, your reward split is permanently reduced to 50% for the remainder of the account.
+If you bought the 90% Profit Split add-on, the first M2 trigger still reduces your split to 50% and the add-on is lost.
+What is the Minimum Withdrawal for a 2 Step OMO Simulated Funded Account?
+The minimum withdrawal request is $20 in profit before the reward split is applied. The amount you receive is your applicable share of that profit.
+How Often Can I Request a Payout for a 2 Step OMO Simulated Funded Account?
+Your first payout is available 10 business days after your first trade on the Simulated Funded Account. Each subsequent 10-business-day period starts with your first trade after the previous payout.
+Buy Now, Pay Later
+What Is the Buy Now Pay Later Challenge?
+The Buy Now Pay Later is a 1 Step evaluation that costs $5 to start . If you pass the evaluation, you pay the remaining fee to activate your Simulated Funded Account.
+Is the remaining fee deducted from my profits?
+No. It is a separate payment you make after passing the evaluation. Profits made during the evaluation can't be withdrawn.
+What is the profit target for the Buy Now Pay Later Challenge?
+In the Buy Now Pay Later Challenge, traders must achieve a 4% profit target.
+Buy Now Pay Later Profit Target Breakdown by Account Size
+Account Size Profit Target (4%)
+$2,000 Phase 1 - $80
+$5,000 Phase 1 - $200
+$10,000 Phase 1 - $400
+$20,000 Phase 1 - $800
+$50,000 Phase 1 - $2,000
+$100,000 Phase 1 - $4,000
+What happens after I pass the Buy Now Pay Later Challenge?
+1. Trading & Account Review (1–3 Business Days)
+Once you reach the profit targets, your trades will automatically close, and your account will be disabled and placed under review.
+2. Receive Your Buy Now Pay Later Certificate
+Our team will review your trading history. Once approved, you’ll receive a congratulatory email and your Challenge Certificate.
+3. Pay & Receive Your Simulated Funded Account
+After passing the evaluation, you’ll need to pay the remaining balance for the account you purchased. Once payment is completed, your Simulated Funded Account will be sent to you via email.
+We ask you to complete the payment within 14 days. If you need more time, contact our Support Team to discuss available arrangements.
+If you’re unable to pay for the account size you selected, you may also request to downgrade to a lower account size.
+When Do I Need to Complete KYC?
+You will be eligible for KYC verification once you request your first payout. You will receive a KYC verification email with instructions. Your payout is processed only after you have successfully completed KYC verification and met the applicable payout requirements.
+Once you complete the KYC process, reply to the email to confirm that it has been completed .
+What are the Drawdown Rules for the Buy Now Pay Later Challenge?
+The Buy Now Pay Later Challenge has only one limit during the Evaluation Phase:
+Maximum Drawdown: 10% (Static)
+Your maximum drawdown is 10% of the initial account balance and remains fixed.
+The drawdown limit does not increase when your account equity or balance grows.
+Example: With a $10,000 account , your maximum drawdown is $1,000 , so your equity must not fall below $9,000 .
+What are the Drawdown Rules for the Buy Now Pay Later Simulated Funded Account?
+The Buy Now Pay Later Simulated Funded Account has two loss limits:
+Daily Loss Limit: 4% (Equity-Based)
+The daily drawdown resets based on the higher of your equity or balance at 00:00 UTC .
+Your account must not exceed a 4% loss within a trading day.
+Example: You have a $10,000 account , open a trade, and leave it running overnight. At 00:00 UTC , your equity is $10,300 , while your balance is $10,000 . Your maximum daily drawdown is 4% of $10,300 ($412) . Your account will breach the daily drawdown if your equity falls below $9,888 that day.
+Maximum Drawdown: 8% (Trailing)
+Your maximum drawdown moves up with your highest running equity , including unrealized profit from open trades.
+Example: With a $10,000 Simulated Funded Account and an 8% trailing drawdown , your initial limit is $9,200 . If your running equity reaches $11,000 , the limit moves to $10,120 . Falling below $10,120 breaches the drawdown limit.
+Note: The trailing drawdown is based on running equity , not just closed trades.
+Exceeding the limit will result in a breach of the Simulated Funded Account .
+What is the M2 Account Saver and How Does It Work?
+The M2 Account Saver applies only in the Funded Stage of the Buy Now Pay Later account. It does not apply during the Evaluation Phase.
+The M2 Account Saver monitors your current floating loss, calculated as Balance − Equity. It activates when this loss reaches 2% of your current account balance. It is not measured from your highest equity or from the start of the trading day.
+Careful position sizing can help you avoid triggering the Account Saver.
+Example: With a current balance of $10,000, the M2 Account Saver triggers when floating loss reaches $200 (2%).
+Event Account Status Result
+First breach Drawdown reaches 2% All open trades are closed. In the Funded Stage , reward split is reduced to 50% .
+Second breach Drawdown reaches 2% again All open trades are closed, and the account is permanently deactivated .
+Is there a Consistency score in the Buy Now Pay Later Challenge and Simulated Funded Account?
+There is no Consistency Score requirement during the Evaluation Phase . In the Funded Phase , a 20% Consistency Score is required .
+How Is the 20% Consistency Score Calculated?
+Your largest winning day must not exceed 20% of your total profit in the current payout cycle. Total profit counts all trading days, including losing days, so a losing day lowers the total and raises your score. The calculation resets after each payout.
+Trading Day Daily Profit
+Day 1 $100
+Day 2 $150
+Day 3 $200 ← Best Winning Day
+Day 4 $150
+Day 5 $150
+Day 6 $150
+Day 7 $100
+Total Profit $1000
+Formula for the 20% consistency score
+Consistency Score = (Best Winning Day ÷ Total Profit) × 100%
+Consistency Score: $200 ÷ $1,000 × 100% = 20% ✅ Meets the consistency requirement
+Your best winning day is $200 , and your total profit is $1,000 , so the Consistency Score is exactly 20% .
+Note: If your Consistency Score is above 20% , you must continue trading until your score reaches 20% or below before requesting a payout.
+How Does Drawdown Work After a Withdrawal?
+Before your first withdrawal, the Simulated Funded Account uses 8% trailing maximum drawdown. The limit follows your highest running equity, including unrealized profits. After the first withdrawal the drawdown limit is set to the initial balance.
+Example: $10,000 Simulated Funded Account
+If you have a $10,000 account that has grown to $10,800, you decide to withdraw $600, your new drawdown is $200. The daily loss limit also continues to apply.
+Is there an Inactivity Rule in the Buy Now Pay Later Account?
+Accounts must have at least one trading activity within every 30 days to remain active.
+Is News Trading Allowed in the Buy Now Pay Later Simulated Funded Account?
+News trading is fully permitted during the evaluation and funded phase with no restrictions.
+What is the Reward Split for a Buy Now Pay Later Simulated Funded Account?
+The reward split is 80% . Buy Now Pay Later has no add-ons.
+What is the minimum reward amount for a Buy Now Pay Later Simulated Funded Account?
+The minimum withdrawal request is $20 in profit before the reward split is applied. The amount you receive is your applicable share of that profit.
+How Often Can I Request a Payout for a Buy Now Pay Later Simulated Funded Account?
+Buy Now Pay Later Simulated Funded Accounts have no fixed payout waiting period. You may request a withdrawal once you meet the 20% Consistency Score and other payout requirements. Payment is processed after successful KYC verification.
+Instant Funding
+What is Instant Funding?
+Instant Funding gives you direct access to a Simulated Funded Account from day one . No evaluation, no challenges, and no waiting to qualify.
+You can start trading immediately and work toward your first payout.
+What are the Drawdown Rules for the Instant Funding Account?
+The Instant Funding has two loss limits:
+Daily Loss Limit: 2% (Equity-Based)
+The daily drawdown resets based on the higher of your equity or balance at 00:00 UTC .
+Your account must not exceed a 2% loss within a trading day.
+Example: You have a $10,000 account , open a trade, and leave it running overnight. At 00:00 UTC , your equity is $10,300 , while your balance is $10,000 . Your maximum daily drawdown is 2% of $10,300 ($206) . Your account will breach the daily drawdown if your equity falls below $10,094 that day.
+Maximum Drawdown: 3% (Trailing)
+Your maximum drawdown moves up with your highest running equity , including unrealized profit from open trades.
+Example: With a $10,000 simulated funded account and a 3% trailing drawdown , the initial drawdown limit is $9,700 . If your running equity reaches $11,000 , the trailing limit moves up to $10,670 . Falling below $10,670 would breach the drawdown limit.
+Note: The trailing drawdown is based on running equity , not just closed trades.
+Exceeding the limit will result in a breach of the Simulated Funded Account .
+What is the 1% Max Risk rule in Instant Funding?
+The 1% Maximum Risk Rule is based only on your current floating loss relative to your current account balance. It is not a trailing drawdown rule and is not calculated from your highest floating profit or equity.
+Formula: Floating Loss = Balance − Equity
+Example: $10,000 Account
+Balance Equity Floating Loss Status
+$10,000 $9,970 $30 (0.3%) ✅ No breach
+$10,000 $9,900 $100 (1%) ⚠️ 1% threshold reached
+$10,000 $9,899 $101 (1.01%) ❌ Breach
+For a $10,000 account, the maximum permitted floating loss is $100.
+When Do I Need to Complete KYC?
+You will be eligible for KYC verification once you request your first payout. You will receive a KYC verification email with instructions. Your payout is processed only after you have successfully completed KYC verification and met the applicable payout requirements.
+Once you complete the KYC process, reply to the email to confirm that it has been completed .
+Is there a Consistency score in Instant Funding Account?
+In Instant Funding Account , a 20% Consistency Score is required .
+How Is the 20% Consistency Score Calculated?
+Your largest winning day must not exceed 20% of your total profit in the current payout cycle. Total profit counts all trading days, including losing days, so a losing day lowers the total and raises your score. The calculation resets after each payout.
+Formula: Consistency Score = (Best Winning Day ÷ Total Profit) × 100%
+Trading Day Daily Profit
+Day 1 $100
+Day 2 $150
+Day 3 $200 ← Best Winning Day
+Day 4 $150
+Day 5 $150
+Day 6 $150
+Day 7 $100
+Total Profit $1000
+Consistency Score: $200 ÷ $1,000 × 100% = 20% ✅ Meets the consistency requirement
+Your best trade day is $200 , and your total profit is $1,000 , so the Consistency Score is exactly 20% .
+Note: If your Consistency Score is above 20% , you must continue trading until your score reaches 20% or below before requesting a payout.
+Is there an Inactivity Rule in Instant Funding Account?
+Accounts must have at least one trading activity within every 30 days to remain active.
+Is there a Minimum Holding time for each trade?
+At least 50% of your trades must be held for at least 60 seconds (1 minute). Trades held for exactly 60 seconds qualify.
+Is News Trading Allowed in Instant Funding Account?
+News trading is fully permitted with no restrictions.
+What is the Reward Split for an Instant Funding Account?
+The standard reward split is 80% . With the applicable add-on, the reward split increases to 90% .
+What is the Minimum Withdrawal for an Instant Funding Account?
+You must earn at least 3% of your initial account balance in profit before the reward split is applied. This is a minimum profit threshold, rather than a minimum net payout amount.
+How Often Can I Request a Payout for an Instant Funding Account?
+Payouts for Instant Funding Accounts are available on demand . You may request a withdrawal once you meet the required 3% profit threshold and 20% Consistency Score or below .
+Instant Mini Funding
+What is Instant Mini Funding?
+Instant Mini Funding gives you direct access to a Simulated Funded Account for 24 hours—no evaluation, no challenges, and no waiting to qualify.
+Trade immediately and aim to generate profits within your 24-hour funding period.
+How Long Do I Have to Trade?
+You have 24 hours to trade on your Instant Mini Funding Account. The timer starts when you place your first trade .
+You must meet the payout requirements and submit your withdrawal request within the 24-hour period .
+Example: If you place your first trade at 2:00 PM on Monday , your 24-hour period ends at 2:00 PM on Tuesday . Your payout request must also be submitted within this 24-hour period .
+Once the 24 hours have passed, no withdrawal request can be made.
+What are the Drawdown Rules for the Instant Mini Funding Account?
+The Instant Mini Funding has two loss limits:
+Daily Loss Limit: 2% (Equity-Based)
+The daily drawdown resets based on the higher of your equity or balance at 00:00 UTC .
+Your account must not exceed a 2% loss within a trading day.
+Example: You have a $10,000 account , open a trade, and leave it running overnight. At 00:00 UTC , your equity is $10,300 , while your balance is $10,000 . Your maximum daily drawdown is 2% of $10,300 ($206) . Your account will breach the daily drawdown if your equity falls below $10,094 that day.
+Maximum Drawdown: 3% (Trailing)
+Your maximum drawdown moves up with your highest running equity , including unrealized profit from open trades.
+Example: With a $10,000 simulated funded account and a 3% trailing drawdown , the initial drawdown limit is $9,700 . If your running equity reaches $11,000 , the trailing limit moves up to $10,670 . Falling below $10,670 would breach the drawdown limit.
+Note: The trailing drawdown is based on running equity , not just closed trades.
+Exceeding the limit will result in a breach of the Simulated Funded Account .
+What is the 1% Max Risk rule in Instant Mini Funding?
+The 1% Maximum Risk Rule is based only on your current floating loss relative to your current account balance. It is not a trailing drawdown rule and is not calculated from your highest floating profit or equity.
+Formula: Floating Loss = Balance − Equity
+Example: $10,000 Account
+Balance Equity Floating Loss Status
+$10,000 $9,970 $30 (0.3%) ✅ No breach
+$10,000 $9,900 $100 (1%) ⚠️ 1% threshold reached
+$10,000 $9,899 $101 (1.01%) ❌ Breach
+For a $10,000 account, the maximum permitted floating loss is $100.
+When Do I Need to Complete KYC?
+You will be eligible for KYC verification once you request your first payout. You will receive a KYC verification email with instructions. Your payout is processed only after you have successfully completed KYC verification and met the applicable payout requirements.
+Once you complete the KYC process, reply to the email to confirm that it has been completed .
+How many trades can I place in my Instant Mini Funding Account?
+You can have only one open trade at a time in your Instant Mini Funding Account. Once the trade is closed, you can open another trade.
+Is there a Consistency score in Instant Mini Funding Account?
+In the Instant Mini Funding Account, a 15% Consistency Score is required.
+How is the 15% Consistency Score Calculated?
+For a $10,000 Instant Mini Funding Account, your largest winning trade must not exceed 15% of your total profit during the 24-hour funding period.
+Formula:
+Consistency Score = (Best Winning Trade ÷ Total Profit) × 100%
+Trade Profit (USD)
+Trade 1 $100
+Trade 2 $100
+Trade 3 $150
+Trade 4 $200 ← Best Winning Trade
+Trade 5 $100
+Trade 6 $100
+Trade 7 $100
+Trade 8 $100
+Trade 9 $100
+Trade 10 $100
+Trade 11 $100
+Trade 12 $100
+Total Profit $1,350
+Consistency Score = ($200 ÷ $1,350) × 100% = 14.81%.
+This is below 15% and meets the consistency requirement.
+Note: If your Consistency Score is above 15% , you must continue trading until your score reaches 15% or below before requesting a payout.
+Is there an Inactivity Rule in Instant Mini Funding Account?
+There is no Inactivity rule in an Instant Mini Funding Account
+Is there a Minimum Holding time for each trade?
+Trades on the Simulated Funded Account must be held for at least 150 seconds (2.5 minutes). Profit from trades closed before 150 seconds is removed.
+Is News Trading Allowed in Instant Mini Funding Account?
+News trading is fully permitted with no restrictions.
+What is the Reward Split for an Instant Mini Funding Account?
+The standard reward split is 70% . With the applicable add-on, the reward split increases to 90% .
+What is the Minimum Withdrawal for an Instant Mini Funding Account?
+You must earn at least 3% of your initial account balance in profit before the reward split is applied. This is a minimum profit threshold, rather than a minimum net payout amount.
+How Often Can I Request a Payout for an Instant Mini Funding Account?
+You are eligible to request only one withdrawal per Instant Mini Funding Account . This is a one-time payout , not a recurring withdrawal option.
+To request the payout, you must achieve the 3% profit threshold and maintain a 15% Consistency Score or lower . The withdrawal request must be submitted within the 24-hour funding period .
+Prediction Markets
+What is the Prediction Markets challenge?
+The Prediction Markets challenge is a one-step evaluation designed for traders operating in prediction and event-driven markets. It comes in two tiers:
+One-Step Essential
+One-Step Elite
+Both options require just one phase before accessing a simulated funded account.
+What makes a Maven Prediction Markets challenge different from a Forex challenge?
+Because prediction markets work differently from traditional trading instruments, this challenge also comes with a different rule structure. There are:
+No daily drawdown limits
+No minimum trading days
+This gives traders more flexibility while still keeping the challenge structured and performance-based.
+What's the difference between One-Step Essential and One-Step Elite?
+The main difference between the two challenge types is the drawdown model:
+One-Step Essential uses Trailing Drawdown with a 5% max loss in Phase 1 and 8% when funded
+One-Step Elite uses Static Drawdown with a 5% max loss in Phase 1 and 8% when funded
+Aside from that, the trading parameters and available event contracts are the same across both challenge types.
+What are the profit targets?
+The profit target for both challenge types is 9%. There is no profit target on the funded stage.
+What is the maximum amount of profit I can generate in one question?
+You can generate a maximum of 3% of your starting account balance from any one question. If you generate more than this, the remaining profits will be nulled.
+How do I withdraw?
+The profit split is 70%. Once you reach the funded stage, you withdraw 70% of the profits you make. For example, if you profit $10,000, you will receive $7,000 into your wallet. You can request a payout as soon as you have enough profit to withdraw; there is no waiting period.
+What trading style rules apply?
+The standard Maven trading rules apply to the Prediction Markets challenge. This means:
+No reverse hedging
+No account mirroring
+No use of EAs or scripts
+However, there is no news trading restriction specific to the Prediction Markets challenge. There is also no consistency rule and no 60-second rule . The inactivity rule applies: at least one trade every 30 days.
+Where does the data feed come from?
+The data feed comes from MatchTrade and follows the markets on Kalshi or Polymarket.
+What are some examples of instances I can trade, and how does it work?
+Prediction markets let you trade on the outcome of real-world events.
+Examples include:
+Presidential election winner
+2026 World Cup winner
+Top ranked AI model this year
+Let’s say you choose to trade the Presidential Election Winner event event contract. If JD Vance is currently priced at 19%, one event contract would cost $0.19. If his odds later rise to 60%, that same event contract would now be worth $0.60.
+That means:
+Entry price: $0.19
+New value: $0.60
+Profit per event contract: $0.41
+So if you bought 1,000 event contracts, your total profit would be: 1,000 × $0.41 = $410.
+No questions match your search. Get in touch and we'll help.
+Are you ready to start trading?
+Gain access to elite funding, cutting-edge tools, and the support of a whole community dedicated to your growth.
+Choose your challenge Learn more about us
+Stay ahead
+Subscribe to our newsletter for expert insights, updates, and exclusive offers from Maven.
+Enter your best e-mail By signing up, you are agreeing to our Terms and Conditions, Privacy Policy, and our cookie handling practices as described in our Privacy Policy and Cookie Policy.
+Successfully subscribed to our newsletter!
+Subscription failed. Please try again.
+Subscribing...
+Navigation
+Pricing
+About us
+FAQ
+Contact
+Log in
+Resources
+Blog
+Careers
+Affiliates
+Community
+Reviews
+Legal
+Privacy Policy
+Risk Disclosure
+Terms & Conditions
+Day Trading Rules
+AML Policy
+Cookie Preferences
+Socials
+Discord
+Instagram
+YouTube
+TikTok
+Facebook
+LinkedIn
+X
+© 2026 Maven. All rights reserved.
+All information provided on this site is intended solely for educational purposes related to trading on financial markets and does not serve in any way as a specific investment recommendation, business recommendation, investment opportunity analysis or similar general recommendation regarding the trading of investment instruments. Maven Trading only provides services of simulated trading and educational tools for traders. The information on this site is not directed at residents in any country or jurisdiction where such distribution or use would be contrary to local laws or regulations. Maven Trading does not act as a broker and do not accept any deposits. The information on the website is not directed at any jurisdiction and is not intended for any use that would be contrary to local law or regulation. We do not provide access to any country on any sanctions list of the United Nations. Metatrader is not available for United States or Canada. Maven Edu - FZCO is a registered limited corporation in United Arab Emirates, DSO-IFZA, IFZA Properties, Dubai Silicon Oasis with the registration number 006-0060823-070425 and is compliant with all necessary laws and regulations provided in accordance with local and international jurisdictions. Please be aware that we do not offer specific investment advice, business consulting, analysis of investment opportunities, or any general recommendations on trading investment instruments.Nor do we offer any trading on real markets as all instruments are simulated and fed to use through liquidity providers.Trading in financial markets carries a high level of risk, and we advise against risking more than you can afford to lose.
+Restricted Countries: Belarus, Cuba, Iran, Myanmar, North Korea, Russia, Saint Lucia, Syria, Venezuela, and the Crimea (including Sevastopol), Donetsk, Kherson, Luhansk and Zaporizhzhia regions of Ukraine.
++971 50 513 1897 +44 7441445241 support@maventrading.com
+Cookie Consent
+We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.
+Read our Cookie Policy for more details.
+Decline all Accept all
+Enter your e-mail for a chance to win a 100k account!*
+*by providing your e-mail, you are opting in to promotional messages.
+Send Claim offer
+No spam, we want you focused!
+You're in! Check your inbox.
+Subscription failed. Please try again.
+Subscribing...

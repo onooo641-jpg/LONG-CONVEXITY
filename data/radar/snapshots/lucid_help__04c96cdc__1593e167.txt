@@ -1,0 +1,43 @@
+LucidBlack Drawdown | Lucid Trading Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Lucid Home
+Lucid Home
+Search for articles...
+All Collections
+LucidBlack (Legacy)
+LucidBlack Drawdown
+LucidBlack Drawdown
+LucidBlack (legacy) drawdown rules: max loss limits by account size and how drawdown is calculated on evaluation and funded accounts.
+A
+Written by AJ
+August 26, 2026
+Table of contents
+End of Day Drawdown
+LucidBlack evaluation and funded accounts use an End-of-Day Drawdown (EOD Drawdown) system to calculate the Max Loss Limit (MLL).
+At the end of each trading session, the system calculates the account’s highest closing balance
+The MLL increases as your balance grows, up to a defined point
+Once your account exceeds the Initial Trail Balance, the MLL locks and no longer moves
+Account Size
+MLL Amount
+Initial Trail Balance
+Locked MLL Balance
+$25,000
+$1,000
+$26,100
+$25,100
+$50,000
+$2,000
+$52,100
+$50,100
+$100,000
+$3,000
+$103,100
+$100,100
+As with the other account types:
+The MLL rises with your closing balance until it reaches the trail
+Once the account exceeds the trail, the MLL locks at the initial balance plus $100
+If your account balance reached the MLL, your account will be breached.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Lucid Trading Help Center

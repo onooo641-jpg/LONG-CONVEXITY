@@ -1,0 +1,272 @@
+Funded Trader Tax Guide: How Prop Firm Profits Are Taxed
+Home
+Funding Programs
+1-Step Challenge
+2-Step Challenge
+Instant Funding
+Direct Funding
+FAQs
+Academy
+Resources
+Join Community
+Blog
+Market News
+Symbols Live Feed
+Economic Calendar
+Trading Platforms
+MetaTrader 5
+Match Trader
+Calculators
+Challenge Drawdown Calculator
+Margin Calculator
+Swap Calculator
+Pip Calculator
+Position Size Calculator
+Risk Of Ruin Calculator
+MT5 Trade Manager
+More
+Become an Affiliate
+Partners
+About Us
+Shop
+Start a Prop Firm
+LOG IN
+FREE TRIAL
+LOGIN
+Home
+Funding Programs
+1-Step Challenge
+2-Step Challenge
+Instant Funding
+Direct Funding
+FAQs
+Academy
+Resources
+Join Community
+Blog
+Market News
+Symbols Live Feed
+Economic Calendar
+Trading Platforms
+MetaTrader 5
+Match Trader
+Calculators
+All Calculators
+Challenge Drawdown Calculator
+Margin Calculator
+Swap Calculator
+Pip Calculator
+Position Size Calculator
+Risk Of Ruin Calculator
+MT5 Trade Manager
+More
+Become an Affiliate
+Partners
+About Us
+Shop
+Start a Prop Firm
+Skip to content
+Home › Blog
+› Prop School
+› The Ultimate Funded Trader Tax Guide
+Prop School
+The Ultimate Funded Trader Tax Guide
+By Martin Najat
+·
+August 12, 2025
+·
+Updated October 28, 2026
+·
+6 min read
+Reading mode
+Dark
+In this article
+Why Taxes Matter for Funded Traders
+You’re Self-Employed, Not an Employee
+How Your Payouts Are Taxed
+What Records to Keep
+How to File, Step by Step
+Costs Most Funded Traders Can Deduct
+Common Mistakes and How to Avoid Them
+Frequently Asked Questions
+Final Thoughts
+Got your first prop firm payout and not sure how to pay tax on it? You’re not alone. Most funded traders get paid before they’ve thought about tax at all.
+This guide explains, in plain English, how funded trader payouts are usually taxed in the US and the UK, what records to keep, and how to file.
+Disclaimer: This article is based on our research and is not tax advice. Tax rules change and depend on where you live, so always check with a qualified tax adviser.
+Why Taxes Matter for Funded Traders
+Every profit share you get from a prop firm is income, and income is taxed.
+If you don’t report your funded trading profit tax correctly, you could end up paying fines, interest and penalties.
+The simple fix is to put aside part of every payout for tax. That way a tax bill never catches you out.
+You’re Self-Employed, Not an Employee
+Most prop firms, including City Traders Imperium, work with traders as independent contractors . In simple terms, you’re self-employed.
+That means no one takes tax off your payouts for you. You report them and pay the tax yourself.
+If You Live in the US
+Schedule C (Form 1040): This is where you report your payouts and take off your business costs.
+Self-employment tax: If you make $400 or more in a year, you also pay 15.3% for Social Security and Medicare. You work this out on Schedule SE.
+If You Live in the UK
+Self Assessment: Register with HMRC as self-employed and add your payouts to your tax return. Register by 5 October after the end of the tax year you started in.
+National Insurance: You pay 6% on profits between £12,570 and £50,270, and 2% on anything above that. If your profits are very low, you can choose to pay a small weekly amount (Class 2) to protect your State Pension.
+Costs You Can Deduct
+You can take business costs off your profit before tax. These are things you pay for only because of your trading, such as software, data, challenge fees, courses and accountant fees.
+💡 Quick tip : Write down every payout and every cost as it happens. It makes your tax return much easier.
+How Your Payouts Are Taxed
+Income tax: Your payouts count as income from your trading business, so they’re taxed at your normal income tax rate.
+Not capital gains: You’re paid a share of the profit for trading the firm’s account. You’re not selling your own investments, so capital gains tax usually doesn’t apply.
+What Records to Keep
+Keep these three things:
+Payouts: the date, amount and payment method of each one.
+Receipts: for everything you spend on your trading, like charting tools, data, challenge fees and courses.
+Your trader agreement: including the profit split and scaling rules.
+💡Tip: A spreadsheet works fine, or a trading journal like TradeZella can import your trades for you.
+How to File, Step by Step
+Treat your payouts as self-employment income.
+Gather your paperwork: payout records, any payout summaries your firm gives you, and your receipts.
+Fill in the right forms:
+US: Schedule C and Schedule SE.
+UK: your Self Assessment return, including the self-employment pages.
+Work out your profit: your total payouts minus your business costs.
+Claim your costs: home office, courses, tools and so on.
+File online: with IRS e-file in the US or HMRC online in the UK.
+Pay on time: 15 April in the US, 31 January in the UK. In the US you can ask for more time to file, but not more time to pay.
+Costs Most Funded Traders Can Deduct
+Software and platforms: TradingView, MetaTrader and other subscriptions.
+Market data: paid data and news services.
+Learning: trading courses, books and seminars.
+Home office: a fair share of rent, bills and internet if you trade from home.
+Professional help: accountant fees and tax software.
+Keep the receipts. If the tax office ever asks, you’ll need to show them.
+Common Mistakes and How to Avoid Them
+Mixing your money: Use a separate bank account for payouts and trading costs. It keeps your records simple.
+Leaving out small payouts: Every payout counts, however small. Report them all.
+Registering late (UK): Register for Self Assessment by 5 October after your first tax year, or you may get a penalty.
+Missing quarterly payments (US): You may need to pay tax every quarter to avoid a penalty.
+Frequently Asked Questions
+Why am I a contractor and not an employee?
+You trade the firm’s account under a trader agreement and get a share of the profit, not a salary. That makes you self-employed, which also means you can deduct your business costs.
+Are prop firm payouts taxed as capital gains?
+Usually not. They’re treated as income, because you’re paid for trading the firm’s account, not for selling your own investments.
+Do I need to pay tax every quarter?
+In the US, yes, if you expect to owe $1,000 or more for the year.
+In the UK, you pay after the tax year ends. If your bill is big enough, you’ll also pay part of next year’s tax in advance, on 31 January and 31 July. These are called “payments on account”.
+Final Thoughts
+Trading funded accounts can be one of the fastest ways to grow your income, but it comes with tax to pay.
+The good news is that a little planning goes a long way. Put money aside from every payout, keep your records, and when in doubt, ask an accountant in your country. Rules outside the US and UK can be very different.
+Ready to put this into practice?
+Choose the CTI funding program that suits the way you trade:
+1-Step Challenge : one evaluation phase with no daily drawdown.
+2-Step Challenge : the classic two-phase route, with a 10% static drawdown.
+Instant Funding : no challenge to pass, with a static drawdown and up to 100% profit share.
+Direct Funding : a funded account from day one, with payouts on demand from day 5.
+Not ready to pay yet? Try the free Challenge trial first.
+Happy trading, and may your profits always beat your tax bill!
+Martin Najat
+Chief Executive Officer | CEO
+MBA, BSc Banking and Finance, 8+ years in prop firm operations.
+Martin Najat co-founded City Traders Imperium in 2018 and is the operational and strategic force behind its global trader ecosystem. With a background in banking and finance (BSc, ASCCB-accredited), an MBA, and a professional trading practice of his own, Martin built the systems that let CTI run with reliability, transparency and long-term stability.
+From payout infrastructure to risk controls and trader-support workflows, he shaped the operational backbone that grew CTI from a London startup into a respected international proprietary trading firm and continues to drive the technology that will power the next generation of prop trading. His leadership ensures traders experience a firm that is fast, fair and built to last.
+How we write and review our content: Editorial Policy
+X
+LinkedIn
+← Previous
+Weekly Market Sentiment – 10 August 2025
+Next →
+Emotional Trauma In Trading and How it Hijacks Your Results
+Share
+In this article
+Why Taxes Matter for Funded Traders
+You’re Self-Employed, Not an Employee
+How Your Payouts Are Taxed
+What Records to Keep
+How to File, Step by Step
+Costs Most Funded Traders Can Deduct
+Common Mistakes and How to Avoid Them
+Frequently Asked Questions
+Final Thoughts
+Categories
+Market News
+Forex Education
+Funded Traders
+Trading Psychology
+Prop Trading
+Prop School
+CTI vs Prop Firms
+More in Prop School
+Optimizing Payouts and Scaling with the 1-Step Challenge
+Getting paid from a prop firm should be straightforward, but the details matter. When can you request your first payout at CTI?…
+9 min read
+How Funded Account Payouts Really Work?
+Have you ever sat at your screen, staring at different prop firms, and wondered: “How do funded account payouts actually work? Is…
+7 min read
+What Is Drawdown In Prop Trading? | How Does it work?
+Introduction Drawdowns can make or break your journey with City Traders Imperium If you’re currently funded by a prop firm — or…
+12 min read
+Keep reading
+Market News
+Weekly Market Sentiment – 15 November 2026
+A hot US inflation report drove the dollar to a 52-week high and revived December Fed hike bets,…
+7 min read
+Read More →
+Market News
+Weekly Market Sentiment – 8 November 2026
+A Democratic midterm sweep sent stocks into a correction this week, while Brent oil slid hard on US-Iran…
+7 min read
+Read More →
+Prop Trading
+US Midterms 2026: What CTI Traders Did on Election Night
+You knew it was coming. The date was on every calendar. The polls had been picked apart for…
+10 min read
+Read More →
+Exit reading mode
+Follow Us
+Funding Programs
+1-Step Challenge
+2-Step Challenge
+Instant Funding
+Direct Funding
+Success Stories
+FAQs
+Free Trial
+Resources
+CTI Academy
+Join Community
+Blog
+Market News
+Symbols Live Feed
+Calculators
+MT5 Trade Manager
+More
+Become an Affiliate
+Partners
+About Us
+Shop
+Start a Prop Firm
+Contact Us
+Contact Support
+Email: support@citytradersimperium.com
+Live Chat: available on the website
+Discord: Join Community
+Terms & Conditions
+Privacy Policy
+Refund Policy
+AML Policy
+Affiliate Agreement
+Conduct Policy
+Editorial Policy
+Sitemap
+Cookie Settings
+Skill assessment programs and simulated demo trading services are provided exclusively by City Traders Imperium Limited, a company incorporated under the laws of Comoros Union with company number 15969 (License No. L15969/CTI), registered address at Hamchako, Mutsamudu, Autonomous Island of Anjouan, Comoros Union, with operating address at Edificio Faro, Oficina 4, Avenidas 12 y 14, Calle 12, Barrio Luján, San José, Costa Rica. City Traders Imperium Academy educational courses are provided by CTI FZCO (Company No. DSO-FZCO-21340), registered at Dubai Silicon Oasis, DDP, Building A1, Dubai, United Arab Emirates.
+Legal Disclosure: City Traders Imperium Limited provides access to simulated trading skill assessment programs designed solely for the evaluation of trading proficiency and risk-management skills. City Traders Imperium Academy provides structured educational courses. All trading activity occurs in a demo environment using virtual capital.
+No Client Funds / No Live Trading: Neither CTI FZCO nor City Traders Imperium Limited is a broker, dealer, exchange, or investment adviser, and neither accepts nor manages client deposits. Participants do not trade real assets or place live market orders. Any rewards are performance-based and derived from skill assessment results only.
+Evaluation & Educational Use Only: All content, tools, and services are provided for educational and evaluation purposes only and shall not be construed as investment advice, solicitation, or an offer to buy or sell any financial product, cryptocurrency, or derivative. Participants are encouraged to consult independent financial, legal, or tax advisors before engaging in any trading activity outside of these services.
+Platforms: MetaTrader 5 & Match-Trader platforms are used exclusively in connection with the simulated skill assessment environment operated by City Traders Imperium Limited.
+Hypothetical Performance Disclosure: Simulated or hypothetical trading results have inherent limitations. Unlike actual performance records, they do not represent real trading activity and may be designed with the benefit of hindsight. No representation is being made that any account will, or is likely to, achieve profits or losses similar to those shown or implied.
+Payments & Refunds: All fees paid are educational service fees for access to courses or skill assessment programs. All fees are non-refundable except as outlined in our Refund Policy .
+Jurisdictional Restrictions: Neither entity offers services to nationals or residents of the following jurisdictions: North Korea (DPRK), Iran, Syria, Cuba, Russia, or to any individual under international sanctions.
+Non-Targeted Reach: Information on these websites is not directed to residents of any country where such distribution or use would be contrary to local law or regulation. It is the user's responsibility to ensure that any use of the websites or services adheres to their local laws or regulations.
+Beware of Impersonators: This is our only official website.
+© 2026 Copyright
+City Traders Imperium & City Traders Imperium Academy.
+All Rights Reserved.
+Black Friday at City Traders Imperium: the only crash you want
+Select an offer to copy its discount code, then claim your discount.
+✕ Copy code CRASH15: Direct Funding, 15% off Copy Copy code CRASH20: 2-Step Challenge, 20% off Copy Copy code CRASH25: Instant Funding, 25% off Copy Copy code CRASH30: 1-Step Challenge, 30% off Copy Claim My Discount Already have an account? Log in

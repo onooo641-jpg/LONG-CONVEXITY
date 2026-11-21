@@ -1,0 +1,229 @@
+Xing: Achieving Trading Success With A Fully Automated EA
+Home
+Funding Programs
+1-Step Challenge
+2-Step Challenge
+Instant Funding
+Direct Funding
+FAQs
+Academy
+Resources
+Join Community
+Blog
+Market News
+Symbols Live Feed
+Economic Calendar
+Trading Platforms
+MetaTrader 5
+Match Trader
+Calculators
+Challenge Drawdown Calculator
+Margin Calculator
+Swap Calculator
+Pip Calculator
+Position Size Calculator
+Risk Of Ruin Calculator
+MT5 Trade Manager
+More
+Become an Affiliate
+Partners
+About Us
+Shop
+Start a Prop Firm
+LOG IN
+FREE TRIAL
+LOGIN
+Home
+Funding Programs
+1-Step Challenge
+2-Step Challenge
+Instant Funding
+Direct Funding
+FAQs
+Academy
+Resources
+Join Community
+Blog
+Market News
+Symbols Live Feed
+Economic Calendar
+Trading Platforms
+MetaTrader 5
+Match Trader
+Calculators
+All Calculators
+Challenge Drawdown Calculator
+Margin Calculator
+Swap Calculator
+Pip Calculator
+Position Size Calculator
+Risk Of Ruin Calculator
+MT5 Trade Manager
+More
+Become an Affiliate
+Partners
+About Us
+Shop
+Start a Prop Firm
+Skip to content
+Home › Blog
+› Funded Traders
+› Xing: Achieving Trading Success with a Fully Automated EA
+Funded Traders
+Xing: Achieving Trading Success with a Fully Automated EA
+By Scott Geekie
+·
+April 30, 2023
+·
+Updated October 7, 2026
+·
+3 min read
+Reading mode
+Dark
+In this article
+From Struggles to Stability: The Evolution of Xing’s EA
+The Early Struggles in Forex Trading
+Risk Management: The Key to Xing’s Success
+The Power of Automation: A Hands-Off Trading Strategy
+The Strategy Behind the EA: Simple Yet Effective
+Advice for Aspiring Funded Traders
+Why City Traders Imperium Is a Perfect Fit
+What Traders Can Learn From Xing’s Story
+Xing Tao, a seasoned trader with over 11 years of experience, has achieved what many traders dream of—a fully automated trading system that does all the work for him. In this interview, Xing shares his journey of developing an EA (Expert Advisor) that handles every aspect of his trading, allowing him to pass the City Traders Imperium evaluation effortlessly.
+Field Details
+Program CTI Funded Account
+Result PASSED ✅
+Trader Type 100% Automated (EA runs 24/7)
+EA Development 11+ years (since 2011)
+Average Loss Less than 0.1%
+Largest Loss 0.4%
+Assets Traded 28 currency pairs + Gold & Silver
+Holding Time Swing Trader (up to 20+ days)
+Profit Target 9%
+Validation ✅ Validated by CTI Risk Team
+From Struggles to Stability: The Evolution of Xing’s EA
+Xing’s system did not arrive finished. It is the product of more than a decade of building, testing and rebuilding, and today it handles his trading end to end: a fully automated EA that runs around the clock across 28 currency pairs plus gold and silver, holding swing positions for up to 20 days or more. Here is how it got there.
+The Early Struggles in Forex Trading
+Xing began developing his EA in 2011, but it wasn’t a smooth start. Like many traders, he faced numerous challenges and setbacks. Over the years, he refined his approach, learning valuable lessons about risk management and patience. Through countless modifications and a shift in mindset, Xing’s EA evolved into a robust system capable of consistent performance.
+Risk Management: The Key to Xing’s Success
+One of the standout features of Xing’s trading approach is his meticulous risk management. He controls his total risk across all open positions, keeping it within a small percentage of his total equity. This disciplined approach has allowed him to maintain an average loss of less than 0.1%, with his largest loss being only 0.4%.
+The Power of Automation: A Hands-Off Trading Strategy
+What makes Xing’s journey unique is the completely hands-off nature of his trading. His EA runs 24/7, making decisions without any manual intervention. Xing has learned to trust his system entirely, understanding that human emotions often lead to mistakes. By allowing his EA to operate independently, he has removed the pitfalls of emotional trading.
+The Strategy Behind the EA: Simple Yet Effective
+Xing’s EA is based on straightforward strategies that can be found online, but the edge lies in his intensive backtesting and optimization. Using software like MetaTrader 5 (MT5), he conducts rigorous tests to refine his strategies and ensure they are effective in various market conditions. This combination of simplicity and thorough testing has been crucial to his success.
+Advice for Aspiring Funded Traders
+When asked for advice, Xing emphasizes the importance of mindset and patience. He encourages traders to understand the markets deeply through years of practice and to manage their expectations realistically. According to Xing, success in trading is a marathon, not a sprint.
+Why City Traders Imperium Is a Perfect Fit
+Xing has found the conditions and support at City Traders Imperium to be an excellent match for his swing trading style. He appreciates the flexibility and structure provided by the funding program, which allows him to focus on his long-term trading goals.
+What Traders Can Learn From Xing’s Story
+Xing Tao’s story is a testament to the power of automation and disciplined trading. By dedicating years to developing and refining his EA, he has created a system that works tirelessly while he enjoys the freedom it brings. His journey is an inspiration for traders looking to achieve consistent success with a hands-off approach.
+Scott Geekie
+Chief Marketing Officer | CMO
+8+ years prop trading industry experience.
+Scott Geekie is CTI’s Chief Marketing Officer, focused on growth and retention in prop trading. He has spent 8+ years inside the model — progressing from trader to intern, client relations, marketing manager and now CMO, a path that spans the full trader lifecycle: who a firm attracts, how traders behave once funded, and what actually drives long-term retention rather than short-term spikes.
+That perspective shapes how CTI grows: deliberate about who it brings in, attentive to behavior beyond conversion metrics, and mindful that in this model small changes compound quickly. Scott is Certified in Content Marketing, SEO and AEO, and is the author of ‘The Trader in the Chair: A Story for Anyone Who’s Bled Quietly at the Charts.’
+How we write and review our content: Editorial Policy
+X
+LinkedIn
+← Previous
+Muka: Unlocking Success with Smart Money Concepts
+Next →
+Sean’s Journey to Trading Freedom with CTI
+Share
+In this article
+From Struggles to Stability: The Evolution of Xing’s EA
+The Early Struggles in Forex Trading
+Risk Management: The Key to Xing’s Success
+The Power of Automation: A Hands-Off Trading Strategy
+The Strategy Behind the EA: Simple Yet Effective
+Advice for Aspiring Funded Traders
+Why City Traders Imperium Is a Perfect Fit
+What Traders Can Learn From Xing’s Story
+Categories
+Market News
+Forex Education
+Funded Traders
+Trading Psychology
+Prop Trading
+Prop School
+CTI vs Prop Firms
+More in Funded Traders
+Rees’ Trading Journey: From Technician to Forex Success
+In this episode of the CTI podcast, we sit down with Rees, a relatively new trader who has quickly navigated the path…
+3 min read
+Justin Hammond: From Psychology to Prop Trading Success
+Lessons and Insights Justin’s journey from psychology to trading underscores the importance of discipline, continuous learning, and adaptability. His background in psychology…
+3 min read
+Nikki Limitless: From Life Insurance Sales to Forex Mastery
+Lessons and Insights Nikki Limitless’ journey into trading began in an unexpected place—selling life insurance. The constant pressure and rejection in sales…
+3 min read
+Keep reading
+Market News
+Weekly Market Sentiment – 15 November 2026
+A hot US inflation report drove the dollar to a 52-week high and revived December Fed hike bets,…
+7 min read
+Read More →
+Market News
+Weekly Market Sentiment – 8 November 2026
+A Democratic midterm sweep sent stocks into a correction this week, while Brent oil slid hard on US-Iran…
+7 min read
+Read More →
+Prop Trading
+US Midterms 2026: What CTI Traders Did on Election Night
+You knew it was coming. The date was on every calendar. The polls had been picked apart for…
+10 min read
+Read More →
+Exit reading mode
+Follow Us
+Funding Programs
+1-Step Challenge
+2-Step Challenge
+Instant Funding
+Direct Funding
+Success Stories
+FAQs
+Free Trial
+Resources
+CTI Academy
+Join Community
+Blog
+Market News
+Symbols Live Feed
+Calculators
+MT5 Trade Manager
+More
+Become an Affiliate
+Partners
+About Us
+Shop
+Start a Prop Firm
+Contact Us
+Contact Support
+Email: support@citytradersimperium.com
+Live Chat: available on the website
+Discord: Join Community
+Terms & Conditions
+Privacy Policy
+Refund Policy
+AML Policy
+Affiliate Agreement
+Conduct Policy
+Editorial Policy
+Sitemap
+Cookie Settings
+Skill assessment programs and simulated demo trading services are provided exclusively by City Traders Imperium Limited, a company incorporated under the laws of Comoros Union with company number 15969 (License No. L15969/CTI), registered address at Hamchako, Mutsamudu, Autonomous Island of Anjouan, Comoros Union, with operating address at Edificio Faro, Oficina 4, Avenidas 12 y 14, Calle 12, Barrio Luján, San José, Costa Rica. City Traders Imperium Academy educational courses are provided by CTI FZCO (Company No. DSO-FZCO-21340), registered at Dubai Silicon Oasis, DDP, Building A1, Dubai, United Arab Emirates.
+Legal Disclosure: City Traders Imperium Limited provides access to simulated trading skill assessment programs designed solely for the evaluation of trading proficiency and risk-management skills. City Traders Imperium Academy provides structured educational courses. All trading activity occurs in a demo environment using virtual capital.
+No Client Funds / No Live Trading: Neither CTI FZCO nor City Traders Imperium Limited is a broker, dealer, exchange, or investment adviser, and neither accepts nor manages client deposits. Participants do not trade real assets or place live market orders. Any rewards are performance-based and derived from skill assessment results only.
+Evaluation & Educational Use Only: All content, tools, and services are provided for educational and evaluation purposes only and shall not be construed as investment advice, solicitation, or an offer to buy or sell any financial product, cryptocurrency, or derivative. Participants are encouraged to consult independent financial, legal, or tax advisors before engaging in any trading activity outside of these services.
+Platforms: MetaTrader 5 & Match-Trader platforms are used exclusively in connection with the simulated skill assessment environment operated by City Traders Imperium Limited.
+Hypothetical Performance Disclosure: Simulated or hypothetical trading results have inherent limitations. Unlike actual performance records, they do not represent real trading activity and may be designed with the benefit of hindsight. No representation is being made that any account will, or is likely to, achieve profits or losses similar to those shown or implied.
+Payments & Refunds: All fees paid are educational service fees for access to courses or skill assessment programs. All fees are non-refundable except as outlined in our Refund Policy .
+Jurisdictional Restrictions: Neither entity offers services to nationals or residents of the following jurisdictions: North Korea (DPRK), Iran, Syria, Cuba, Russia, or to any individual under international sanctions.
+Non-Targeted Reach: Information on these websites is not directed to residents of any country where such distribution or use would be contrary to local law or regulation. It is the user's responsibility to ensure that any use of the websites or services adheres to their local laws or regulations.
+Beware of Impersonators: This is our only official website.
+© 2026 Copyright
+City Traders Imperium & City Traders Imperium Academy.
+All Rights Reserved.
+Black Friday at City Traders Imperium: the only crash you want
+Select an offer to copy its discount code, then claim your discount.
+✕ Copy code CRASH15: Direct Funding, 15% off Copy Copy code CRASH20: 2-Step Challenge, 20% off Copy Copy code CRASH25: Instant Funding, 25% off Copy Copy code CRASH30: 1-Step Challenge, 30% off Copy Claim My Discount Already have an account? Log in

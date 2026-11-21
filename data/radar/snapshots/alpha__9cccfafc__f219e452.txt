@@ -1,0 +1,42 @@
+Prohibited Trading Practices | Alpha Futures Limited Help Center Skip to main content
+Search for articles...
+All Collections
+Trading Rules and Parameters
+Prohibited Trading Practices
+Prohibited Trading Practices
+Prohibited Conduct
+B
+Written by Benjamin Chaffee
+Updated this week
+Table of contents
+Certain trading practices can exploit the simulated environment, but lose when transferred to live markets. We intend to maintain the integrity of our simulated markets here at Alpha Futures. A small subset of traders, either inadvertently or with the intent to manipulate the system, engage in these practices, which are strictly prohibited at Alpha Futures, in Evaluation and Qualified stages .
+We are committed to creating a sustainable and fair trading environment for all here at Alpha Futures, in which traders can build their skills and learn to become profitable.
+Can I automate my trading?
+Alpha Futures enforces the following guidelines on automation to maintain a fair and transparent trading environment:
+Alpha Futures restricts the use of automated systems designed for high-frequency trading (HFT), particularly those resulting in over 100 trades per day. Alpha Futures & Alpha Prime team are not interested in working with strategies taking 100+ trades per day, automated or not.
+The use of AI, bots, and other automated trading mechanisms is strictly prohibited across all account types.
+Semi-Automated Trading, such as a custom indicator that gives buy or sell signals, is permissible under the condition that the user manually places, monitors, and manages the trade while understanding the system and semi-automation's purpose.
+Any form of hands-off, continuous day and night trading, or any other type of full automation is strictly forbidden.
+What is the prohibited conduct when executing my trades?
+Alpha Futures emphasizes ethical trading practices and order management to ensure a stable and reliable trading environment:
+​
+At Alpha Futures, we are looking for traders to develop and practice strategies that can eventually translate to a live trading environment. Some of these practices that do not represent this goal would be:
+"All or Nothing" approach. As stated above, we are looking for strategies we can create long term partnerships with to transfer to live funds. We have Daily Loss Guards in place to keep traders from going on tilt, but it does not replace a stop loss. Using maximum leverage on a single position and using DLL as a stop loss will not be tolerated.
+"Order Book Spamming" we have no rules against reasonable DCA on positions, but excessively stacking orders (known as order book spamming) is taking advantage of the sim environment and will not be tolerated.
+"Tick or Micro Scalping" (trades less than 10 ticks AND less than 2 minutes)
+Consistently just opening and closing positions less than 2 minutes to make profits without any plan, this is tick scalping. This is only an issue when it is a clear pattern in the trader's profit (50%+). Taking max leverage positions then quickly closing with a favorable fill is taking advantage of the sim environment.
+Exploiting the absence of slippage and utilizing tight brackets to gain from favorable fills are not permitted.
+Simultaneously placing multiple limit orders at the same price to manipulate order fills is prohibited.
+Gambling tendencies or "Account Rolling", taking max leverage positions with no plan, no stop loss, and hitting max loss on the account then buying more accounts and repeating the process until a trade hits. More examples of Account Rolling are also known as "Account Stacking", meaning excessive Evaluations and storing multiple passed accounts, so when you withdraw or hit MLL, you can roll right into your next Qualified Account.
+"Reverse Trading" or Hedging, meaning going short on one account, and long on the other is strictly prohibited at Evaluation and Qualified Phase. Long NQ and short MNQ on the same account is another example, and strictly prohibited.
+Initiating trades to profit from isolated fills in gapped or illiquid markets is not allowed.
+All trading activities must adhere to CME Group's rules and regulations.
+Collaborating with others to execute identical or opposite strategies across unconnected accounts is prohibited. Also referred to as “Group Trading”. This includes sharing devices with other traders.
+The use of VPS is permitted in your trading, however the use of VPN attempting to hide or change you IP address is not.
+What happens if I violate any of these?
+Alpha Futures holds the right to enforce strict consequences in the event of policy violation:
+Alpha Futures reserves the right to terminate agreements immediately in the event of any breach by the trader.
+Profits generated from prohibited trading practices will be void.
+All passed Evaluations are subject to review, and traders found guilty of policy ignorance or abuse will not advance to the Qualified phase.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

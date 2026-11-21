@@ -1,0 +1,99 @@
+Futures contract limits and funded scaling | Blue Guardian Help Centre
+Skip to content Help Search the help centre ⌘K
+Website Start challenge Help Centre home Collections
+Getting started Account inactivity rule How Blue Guardian works Getting help and using your dashboard
+Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
+Payouts How payouts work
+Billing & accounts Paying for your account: methods, card rules and refunds How many accounts can I have? Futures bundle discounts
+Trading rules Prohibited trading strategies What happens if I break a rule? Futures risk management rules Trading hours and the trading day CFD news trading rules
+Platforms & instruments Trading platforms CFD trading conditions: markets, commissions and leverage Futures contract limits and funded scaling Futures instruments, codes and costs
+CFD plans Instant Standard account rules Instant Starter account rules 1 Step Standard rules 2 Step Standard rules 1 Step Nano rules 2 Step Nano rules Buy Now Pay Later (BNPL) rules
+Futures plans Reserve account rules Elite account rules Express account rules Direct account rules Elite, Reserve & Direct Path to Live Zero account rules Zero Path to Live
+Affiliates & competitions Affiliate program Monthly trading competition
+Help Centre
+Platforms & instruments
+Futures contract limits and funded scaling
+Futures contract limits for Zero, Elite, Reserve, Direct and Express, and how funded scaling works on Zero, Reserve and Express.
+Applies to: Futures Updated 15 November 2026
+Short answer
+Each account has a maximum number of contracts you can hold open at once, where 1 Mini = 10 Micros. Elite and Direct have the same limit from start to finish. Zero, Reserve and Express give you full size during the evaluation, then start lower once funded and scale up as your end-of-day balance grows.
+How contract limits work
+Limits apply to the contracts you hold open at the same time .
+1 Mini = 10 Micros , so you can mix them. For example, a 4 Mini / 40 Micro limit allows 4 Minis, 40 Micros, or 2 Minis + 20 Micros.
+Orders that would take you over your limit are rejected automatically.
+Maximum contracts (Minis / Micros)
+Plan
+$25K
+$50K
+$100K
+$150K
+Zero: evaluation
+2 / 20
+4 / 40
+8 / 80
+12 / 120
+Reserve: evaluation
+2 / 20
+4 / 40
+8 / 80
+12 / 120
+Elite: evaluation and funded
+1 / 10
+4 / 40
+8 / 80
+12 / 120
+Direct: funded from day one
+1 / 10
+4 / 40
+8 / 80
+12 / 120
+Express (existing accounts): evaluation
+1 / 10
+4 / 40
+8 / 80
+12 / 120
+Funded scaling: Zero, Reserve and Express
+When your Zero, Reserve or Express account is funded, you start at a lower limit. As your end-of-day closing balance grows past each profit trigger, your limit increases. If your end-of-day balance drops back below a trigger, your limit may go down again. Elite and Direct accounts don't use scaling.
+Profit above starting balance (at end of day)
+$25K
+$50K
+$100K
+$150K
+Starting limit
+1 / 10
+2 / 20
+3 / 30
+3 / 30
++$1,500
+2 / 20
+3 / 30
+4 / 40
+4 / 40
++$2,000
+–
+4 / 40
+5 / 50
+5 / 50
++$3,000
+–
+–
+8 / 80
+8 / 80
++$4,500
+–
+–
+–
+12 / 120
+Example
+You pass a $100K Zero or Reserve account. During the evaluation you could trade 8 Minis. Once funded, you start at 3 Minis / 30 Micros. When you close a day $1,500 or more above your starting balance, you unlock 4 Minis / 40 Micros. At +$2,000 you unlock 5 / 50, and so on.
+Still need help?
+Chat with our support team. We usually reply in a few minutes.
+Chat with us
+More in Platforms & instruments
+Applies to: CFD and Futures Trading platforms Applies to: CFD CFD trading conditions: markets, commissions and leverage Applies to: Futures Futures instruments, codes and costs
+On this page Short answer
+How contract limits work
+Maximum contracts (Minis / Micros)
+Funded scaling: Zero, Reserve and Express
+Example
+© 2026 All Rights Reserved – Blue Guardian Terms Privacy Cookies

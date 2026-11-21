@@ -1,0 +1,211 @@
+Path to Trading Live | Top One Futures Help Center Skip to main content
+Top One Futures Home
+Top One Futures Home
+Search for articles...
+All Collections
+General Rules
+Path to Trading Live
+Path to Trading Live
+How you move from a sim funded account to Pre-Live and Live trading: the transition, live account parameters, scaling, payout policy, and FAQ.
+October 1, 2026
+Table of contents
+The following outlines your path to becoming a live trader at Top One Futures without any need to risk your own personal funds: a clear path to live , daily payouts , no maximum withdrawal limits , the consistency rule removed , and the ability to scale up to 5 live accounts .
+Transitioning to Pre-Live / Live
+After 3 successful payouts from one sim funded account, a risk manager will review your account and either keep you in the sim funded environment for further review, or transition you to a live account. Top One Futures may transition you to a live account sooner than your third payout depending on your trading history.
+When transitioning to a live / pre-live account, all other accounts are temporarily disabled while the risk manager evaluates the trader's performance. Trading on sim funded accounts is not permitted during this review period.
+How do we move funds to Live / Pre-Live?
+Rather than carrying over a capped amount of sim profits as was our previous policy, traders will receive live accounts (scaling up to 5, when you are fully on live stage) in proportion to the account size traded in sim with the following parameters:
+Live acct size
+Starting balance
+MLL (EOD drawdown)
+EOD balance to trigger DD lock
+Drawdown lock
+DLL
+Max contracts
+$25K
+$0
+$1,000
+$1,100
+$100
+None
+1
+$50K
+$0
+$2,000
+$2,100
+$100
+None
+3
+$100K
+$0
+$3,000
+$3,100
+$100
+None
+5
+$150K
+$0
+$4,000
+$4,100
+$100
+None
+7
+What is the Pre-Live stage and why does it exist?
+Based on trader behavior and breach patterns, many successful SIM traders struggle with the psychological transition to live trading. To bridge that gap, we created the Pre-Live stage : an opportunity for you to continue earning sim profits with the same benefits of the live program, while making the shift to trading fully live capital.
+The Pre-Live environment allows us to:
+Assess how a trader handles live-market psychology and risk management under real-time pressure with the same starting balance as their sim account.
+Protect firm capital from immediate exposure to high-risk behavior.
+Smooth out the Live transition by evaluating traders in a realistic yet controlled setting.
+What traders gain in Pre-Live
+Trader receives all these benefits trading a Pre-Live account:
+Benefit
+Detail
+Same parameters as live
+The same drawdown levels and contract sizing as live
+No Consistency Rule
+The consistency rule does not apply
+No Daily Loss Limit
+There is no DLL on Pre-Live
+Daily payouts
+Payouts are available every 24 hours after the previous payout is approved (minimum payout $200)
+Profit split
+80/20 profit splits
+Withdrawable profits
+Profits created in excess of your starting balance
+Contract scaling plan Pre-Live / Live (Minis / Micros)
+Simulated profits
+25K (max 1)
+50K (max 3)
+100K (max 5)
+150K (max 7)
+$0 - $1,499
+1 / 10
+1 / 10
+2 / 20
+3 / 30
+$1,500 - $1,999
+n/a
+2 / 20
+3 / 30
+4 / 40
+$2,000 - $2,999
+n/a
+3 / 30
+4 / 40
+5 / 50
+$3,000 - $4,499
+n/a
+n/a
+5 / 50
+6 / 60
+$4,500+
+n/a
+n/a
+n/a
+7 / 70
+What comes next?
+Once you have shown profitability and discipline in Pre-Live by achieving the following milestones, you will be upgraded to a brokerage account , where real capital is deployed and you will begin trading under full Live conditions.
+Live account size
+Max withdrawals
+Transition to fully Live
+$25K
+$2,000
+Yes
+$50K
+$4,000
+Yes
+$100K
+$8,000
+Yes
+$150K
+$12,000
+Yes
+Pre-Live Evaluation purchase and progression rules
+While in the Pre-Live stage, you are allowed to purchase and trade on one Evaluation account only . During this stage:
+Trading is only allowed on ONE Evaluation account (no sim funded)
+No payouts can be requested from newly purchased Evaluation accounts
+Progression to a Funded account is restricted until you exit Pre-Live/Live
+Moving from Pre-Live to Live
+Traders will start with one (1) live account . Based on the number of qualifying sim accounts, traders will receive another live account each time the previously granted live account reaches the following balance:
+Live account size
+EOD balance
+Receive another live account
+$25K
+$1,100
+Yes
+$50K
+$2,100
+Yes
+$100K
+$3,100
+Yes
+$150K
+$4,100
+Yes
+Example: when a $50K live account achieves an end of day balance of $2,100, the trader will be granted their 2nd $50K live account. When the trader achieves an end of day balance of $2,100 on their 2nd live $50K account, the trader will be granted their 3rd $50K live account.
+Live payout policy
+Policy
+Detail
+Payout caps
+No payout caps, unlimited withdrawals
+Consistency Rule
+None
+Daily Loss Limit
+None
+Daily payouts
+Payouts are available every 24 hours after the previous payout is approved (minimum payout $200)
+Profit split
+When a trader is moved to a live account, their profit split will go from 90/10 to 80/20
+Withdrawable profits
+Profits created in excess of your starting balance
+Scaling
+Up to 5 accounts
+Breach policy
+Should the trader breach their Pre-Live or Live account, there is a mandatory 3-week cooling off period before new sim accounts are available to be purchased, and the trader may purchase and trade one sim funded account at a time.
+Frequently asked questions
+How many payouts do I need before I can go live?
+For most accounts, you need 3 successful payouts. Elite Daily accounts are the exception and require 5 successful payouts. In some cases a trader may be transitioned to a Live Account sooner, but the numbers above are the standard requirement.
+If I get selected to move to live, can I choose to stay in Sim Funding?
+No. If you are selected to move to live, your options are to begin trading live or to close your Sim Funded account. You may not voluntarily close your live account and move back to Sim. Sim trading should be seen as a gateway to trading live, having your consistency rule removed, receiving unlimited payouts, and scaling your capital. Any attempts to intentionally breach accounts to remain in Sim is strictly prohibited and may result in having trading privileges revoked.
+What are the benefits of trading a Live account versus Sim?
+If you are selected to move to trading live, you have the ability to earn an unlimited income with no withdrawal limits as a professional trader. Not only will your consistency rule be removed, you will have the ability to withdraw profits every 24 hours.
+How long does it take to receive my live account?
+Once you have been approved to move to live, your live account will be set up with the broker in 2 to 3 weeks.
+What is the minimum withdrawal?
+The minimum withdrawal amount is $200.
+Can I withdraw from my starting balance?
+No. Withdrawals are available from profits created on top of your starting balance. Example: on a live account, you will start with a $0 balance. You must have a positive balance in order to withdraw.
+Can I purchase or continue to trade an Evaluation account or Sim Funded account if I am trading in a live account?
+No, once you are trading live, you may not purchase additional accounts unless you are in the Pre-Live stage. If you are in the Pre-Live stage, you may purchase and trade on one Evaluation account. However, you will not be eligible for payouts on that Evaluation account, and you will not be able to upgrade to a SIM Funded account while in Pre-Live.
+What will happen to my Sim Funded accounts when I am in a live account?
+If you have an active account when you transition to a Live Account, that account will be closed.
+What if I lose my live account?
+Should you lose your Live Account, the risk management team will determine the appropriate next steps for the trader, based on their trading activities across all accounts associated with their profile.
+What are the costs in the Live account?
+There are no account or platform costs in live, but as a live trader, you are responsible for the professional market data. You will need to subscribe to receive Professional Data Subscription(s). Top One Futures does not make a profit on these data fees. Our trading platform charges us these fees that are passed along to you as the trader.
+Exchange
+Monthly fee
+CME Exchange
+$140/mo
+NYMEX Exchange
+$140/mo
+COMEX Exchange
+$140/mo
+CBOT Exchange
+$140/mo
+Most traders choose one exchange, but you may subscribe to multiple. Note: this is only available for Live Accounts, we do not offer professional or Level 2 data on SIM Accounts.
+Am I trading real capital once I go live? Yes, Top One Futures does provide access to real capital, but most traders will first be placed in a pre-live trading environment that mirrors their Sim Funded account conditions. This stage is designed to validate consistent, disciplined performance.
+Related articles
+Top One Futures Account Comparison: Elite vs. Instant vs. S2F Sim Pro vs. Ignite
+Understanding the Drawdown Lock
+Maximum Contracts Explained
+What is the Maximum Number of Accounts I Can Trade?
+Related Articles
+Maximum Payout Until Live Explained
+Overview of the Instant Sim Funded Program
+🏆 Elite Sim Funded Account: Payout Requirements
+📈 Instant Sim Funded Account: Payout Requirements
+Elite ACCESS Static - Payout Requirements
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+We run on Intercom

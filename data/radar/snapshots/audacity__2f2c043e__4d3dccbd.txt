@@ -1,0 +1,210 @@
+Yasaklanmış Ticaret Uygulamaları ve Ticaret Kısıtlamaları | Audacity Capital
+Kutlama 14 yıl, %14 İNDİRİM Tüm Programlar İçin Kutlama 14 yıl, %14 İNDİRİM Tüm Programlar İçin
+Kutlama 14 yıl, %14 İNDİRİM Tüm Programlar İçin
+Kutlama 14 yıl, %14 İNDİRİM Tüm Programlar İçin
+Kutlama 14 yıl, %14 İNDİRİM Tüm Programlar İçin
+Kutlama 14 yıl, %14 İNDİRİM Tüm Programlar İçin
+Kutlama 14 yıl, %14 İNDİRİM Tüm Programlar İçin
+🎓 Trader University'ye Katılın
+Hakkında
+Finansman
+Hikayeler
+Rekabet
+Bağlı Kuruluşlar
+Kaynaklar
+TR English Türkçe Español Français Italiano Português Deutsch Filippino Русский العربية हिन्दी 日本語
+Oturum aç
+Yasaklanmış Ticaret Uygulamaları Tam Kılavuzu
+Audacity Capital'de tüccarların bağımsız, bilinçli ticaret kararları almaları ve riski sorumlu bir şekilde yönetmeleri beklenir. Adil ve tutarlı bir ticaret ortamını teşvik etmek için, aşağıdaki uygulamalar yasaktır. Bu kılavuz her bir kısıtlamayı, neden geçerli olduğunu ve yaygın örneklerin nasıl tanınacağını açıklar.
+Bir ticaret stratejisine veya otomatik araca izin verilip verilmediğinden emin değilseniz, hesabınızda kullanmadan önce destek ekibimizle iletişime geçin.
+Açıklama
+Yüksek Frekanslı Ticaret (HFT)
+Kene Scalping
+Birden Çok Hesapta Riskten Korunma veya Grup Riskinden Korunma
+Ortalama Düşüşü/Martingale Stratejileri
+Üçüncü Taraf Uzman Danışmanların (EA) Kullanımı
+Dolar Maliyet Ortalaması (DCA)
+Üçüncü Taraflar Tarafından Hesap Yönetimi
+Kopyalama Ticareti
+Şebeke Ticareti
+Sistem Güvenlik Açıklarından Yararlanma
+Otomatik Çoklu Ticaret Etkinliği
+Lot Boyutu Kötüye Kullanımı
+Hafta Sonu Boşluğu Ticaret Kuralı
+Tek Yönlü Bahis
+Jump To
+Açıklama
+Adil, istikrarlı ve şeffaf bir ticaret ortamı sağlamak için aşağıdaki ticaret stratejileri ve davranışları kesinlikle yasaktır:
+Yüksek Frekanslı Ticaret (HFT)
+Bu nedir Veri akışlarındaki küçük, kısa ömürlü fiyat hareketlerinden veya boşluklardan yararlanarak büyük hacimli işlemleri saniyenin kesirleri içinde açmak ve kapatmak için Uzman Danışmanlar (EAlar), botlar veya algoritmalar kullanmak.
+Neden izin verilmiyor HFT, piyasa analizinden ziyade hız ve altyapıya dayanır ve haksız avantajlar, fiyat manipülasyonu veya istikrarsızlık yaratabilir. Bu kısıtlama aynı zamanda gecikme arbitrajını da kapsar: ticaret yürütme ile piyasa verileri güncellemeleri arasındaki gecikmelerden yararlanma.
+Nasıl görünebilir
+Çok sayıda işlem saniyenin kesirleri içinde açıldı ve kapandı.
+Piyasa görünümünden ziyade fiyat gecikmelerini, kısa ömürlü fiyat tutarsızlıklarını veya besleme zamanlamasını hedefleyen otomatik sistemler.
+Örnekler
+Bir EA, EUR/USD'de dakikada 50'den fazla işlem gerçekleştirir ve her işlem, platform beslemesi ile daha hızlı bir harici besleme arasındaki alt pip tutarsızlıklarını hedeflemek için saniyenin çok kısa bir sürede kapatılır.
+Bir bot, yinelenen besleme gecikmelerini tanımlar ve gecikmiş fiyat güncellemelerinden önce sistematik olarak işlemlere girer.
+Önemli açıklama Alışılmadık derecede hızlı kapanan izole bir ticaret, kendi başına bir HFT stratejisi oluşturmaz. Tekrarlanan hız veya gecikmeye dayalı bir yaklaşım endişe kaynağıdır.
+Kene Scalping
+Bu nedir Gerçek bir yön görünümünde işlem yapmak yerine küçük fiyat dalgalanmalarını yakalamayı amaçlayan çok kısa bir pencerede (2 dakika veya daha az) işlemleri açmak ve kapatmak.
+Neden izin verilmiyor Tick scalping, analiz veya tanımlanmış bir stratejiden ziyade piyasa gürültüsüne dayanır. Manuel olarak veya otomatik araçlarla gerçekleştirilebilir.
+Nasıl görünebilir
+İki dakika veya daha kısa sürede tekrarlanan girişler ve çıkışlar.
+Küçük fiyat titreşmelerinden kaynaklanan küçük ve sık hedefler.
+Örnekler
+10:00:00 — 1.00 lot EUR/USD satın alın; 10:01:35 — 3 pip kar için kapatın. Bu kısa süreli işlemlerin minimum fiyat hareketine dayalı olarak tekrarlanması yasaklanmış tik scalping anlamına gelir.
+Bir tüccar, bir veya iki pipi hedefleyen işlemleri defalarca açar ve her birini daha geniş bir piyasa gerekçesi olmadan birkaç saniye sonra kapatır.
+Önemli açıklama Kaybı durdurma veya kar alma işlemine beklenmedik bir şekilde ulaşıldığı için iki dakika içinde kapanan tek bir pozisyonun mutlaka bir tick scalping stratejisinin kanıtı değildir. Ticaret kalıpları ve koşulları önemlidir.
+Birden Çok Hesapta Riskten Korunma veya Grup Riskinden Korunma
+Bu nedir Piyasa maruziyetini dengelemek veya risksiz bir sonuç oluşturmak için aynı enstrümana, tek bir hesapta veya tüccara ait veya başkalarıyla koordine edilen birden fazla hesapta karşıt alım satım pozisyonları yerleştirmek.
+Neden izin verilmiyor Karşıt pozisyonlar, kayıpları bir hesaba kaydırırken diğerinde kar üretebilir ve gerçek piyasa riski almaktan ziyade arbitraj tarzı bir düzenleme yaratabilir.
+Nasıl görünebilir
+Aynı cihazda eşleşen veya yakın zamanlamalı zıt yön konumları.
+Ayrı hesaplar veya tüccarlar arasında koordineli alım satım.
+Örnekler
+Hesap A GBP/USD satın alırken, aynı tüccar veya koordineli bir ortak tarafından işletilen Hesap B, aynı anda eşit büyüklükte bir GBP/USD pozisyonu satar.
+Bir tüccar, orijinal riski kapatmak yerine mevcut bir alım pozisyonunu dengelemek için aynı enstrüman üzerinde bir satış pozisyonu açar.
+Önemli açıklama Farklı piyasalarda farklı performans gösteren ilgisiz pozisyonlar, kendi başlarına koordineli riskten korunmanın kanıtı değildir. Yasaklanan davranış, riski dengelemek için kasıtlı olarak düzenlenmiş karşıt pozisyonlarla ilgilidir.
+Ortalama Düşüşü/Martingale Stratejileri
+Bu nedir Bir nihai kazanan işlemle önceki kayıpları telafi etmek amacıyla, aynı kayıp alım satım fikrinde bir kayıptan sonra pozisyon büyüklüğünün artırılması.
+Neden izin verilmiyor Bu yöntem, kayıp serileri sırasında giderek daha fazla sermaye gerektirebilir ve bir ticaret hesabının sabit çekme limitlerini hızla ihlal edebilir.
+Nasıl görünebilir
+Ardışık kayıplar veya olumsuz fiyat hareketlerinden sonra artan lot boyutları.
+Aynı kayıp ticaret fikrini savunmak için maruziyeti ikiye katlamak veya başka bir şekilde artırmak.
+Örnekler
+Bir tüccar 0.50 lot USD/JPY satın alır, ardından işlem kendilerine karşı hareket ederken 1.00 lot ve 2.00 lot ekler ve tüm kayıpları tek bir tersine çevirmeye çalışır.
+Kaybeden bir altın ticaretinden sonra, bir tüccar yalnızca önceki zararı geri almak için giderek daha büyük lot boyutlarıyla tekrar aynı yöne girer.
+Önemli açıklama Yasak, maruziyetteki kayıplara dayalı artışlarla ilgilidir. Bir stratejiyi “planlı” olarak tanımlamak, bir kayıptan sonra martingale tarzı bir artışı muaf tutmaz.
+Üçüncü Taraf Uzman Danışmanların (EA) Kullanımı
+Bu nedir: Kişisel olarak geliştirmediğiniz bir Uzman Danışman (EA), ticaret botu veya otomatik ticaret algoritması kullanmak. Bu, ticari olarak satın alınan EA'ları, kiralık EA'ları, indirilen botları, paylaşılan algoritmaları veya başka bir kişi veya şirket tarafından oluşturulan otomatik ticaret sistemlerini içerir.
+Neden izin verilmiyor: Audacity Capital'de, tüccarların yalnızca kişisel olarak geliştirdikleri EA'ları kullanmalarına izin verilir. Bu, tüccarların ticaret stratejileri üzerinde tam sahiplik ve kontrol sahibi olmalarını ve ticaret faaliyetlerinin kendi ticaret kararlarını ve metodolojilerini yansıtmasını sağlar.
+Ticari olarak satılan EA'lar, üçüncü taraf kodlu EA'lar, sinyal tabanlı ticaret botları veya harici kaynaklardan elde edilen herhangi bir otomatik ticaret yazılımına, yazılımın ücretsiz veya ücretli olmasına bakılmaksızın izin verilmez.
+Yasaklanmış faaliyetlere örnekler:
+Bir çevrimiçi pazardan veya üçüncü taraf satıcıdan bir EA satın almak ve hesabınızda kullanmak.
+İşlem tercihleriniz için özelleştirilmiş olsa bile, başka bir kişi tarafından geliştirilen veya kodlanmış bir EA kullanmak.
+Çevrimiçi forumlardan, web sitelerinden veya ticaret topluluklarından ücretsiz EA'ları indirme ve çalıştırma.
+Kiralanan, paylaşılan veya abonelik tabanlı otomatik ticaret sistemlerini kullanma.
+Harici bir hizmet veya üçüncü taraf tarafından sağlanan sinyallere veya stratejilere dayalı alım satımları yürüten bir EA çalıştırmak.
+Başka bir tüccar, arkadaş, geliştirici veya ticaret grubu tarafından geliştirilen bir EA'yı kullanmak, bunun için ödeme yapıp yapmadığınıza bakılmaksızın.
+Örnek: Bir tüccar, üçüncü taraf bir web sitesinden ticari olarak temin edilebilen bir scalping EA satın alır ve finanse edilen hesabına yükler. Tüccar yazılımı kişisel olarak çalıştırsa ve ayarlarını kontrol etse de, EA onlar tarafından geliştirilmemiştir. Bu nedenle, kullanmak bu kuralı ihlal eder.
+Neye izin verilir? Yatırımcılar, EA'nın diğer tüm Audacity Capital ticaret kurallarına ve yasaklanmış ticaret uygulamalarına uyması koşuluyla, kendi kişisel olarak geliştirilmiş EA'larını kullanabilirler. Bir EA'nın kişisel olarak geliştirilmiş olması, onu yasaklanmış stratejiler veya ticaret davranışları üzerindeki kısıtlamalardan muaf tutmaz.
+Dolar Maliyet Ortalaması (DCA)
+Bu nedir İster eklenen pozisyonlar ister aynı ister farklı lot boyutlarını kullansın, fiyat orijinal girişe karşı daha da ilerledikçe mevcut kayıp pozisyona eklenir, bir tersine dönme umuduyla.
+Neden izin verilmiyor Kaybeden bir pozisyona ek maruz kalma, piyasa tersine dönmezse düşüş riskini artırır ve tanımlanmış bir çıkış planının yerini umut alabilir.
+Nasıl görünebilir
+Orijinal işlem açık kalırken ve değişken bir kayıpta iken aynı yönde ek pozisyonlar.
+Fiyat ilk girişe karşı hareket ettikçe maruz kalmayı artıran birden fazla giriş.
+Örnekler
+1.1000'den 1.00 lot EUR/USD satın alın; ilk pozisyon hala kaybederken, 1.0980'den 1.00 lot daha satın alın ve tekrar 1.0960'dan satın alın.
+Bir tüccar kayıp bir petrol satın alma pozisyonuna sahiptir ve ortalama giriş fiyatını düşürmek için petrol her düştüğünde başka bir alım ekler.
+Önemli açıklama Orijinal kayıp pozisyonu kapatıldıktan sonra bağımsız olarak değerlendirilen yeni bir işlem açmak, mevcut bir değişken zarara eklemekten farklıdır. Diğer geçerli kurallar hala geçerlidir.
+Üçüncü Taraflar Tarafından Hesap Yönetimi
+Bu nedir Başkasının kararlarına göre hareket eden başka bir kişinin, ekibin, ücretli hizmetin, arkadaşın veya otomatik hizmetin hesap sahibi adına işlem yapmasına izin vermek.
+Neden izin verilmiyor Hesap, o tüccarın bağımsız karar vermesini kullanarak kayıtlı sahibi tarafından işlem görmelidir. Üçüncü tarafa ödeme, bu kuralın uygulanması için bir gereklilik değildir.
+Nasıl görünebilir
+Hesaba giriş yapan ve işlem yapan başka bir kişi.
+Ticaret kararları veren ve yürüten bir harici yönetim hizmeti.
+Örnekler
+Hesap sahibi, çalışma saatleri içinde işlem yapmak için profesyonel bir yöneticiye ödeme yapar.
+Sahibi, bir arkadaşına hesabına erişim sağlar ve arkadaşın pozisyonları ödeme yapmadan yönetmesine izin verir.
+Önemli açıklama Genel piyasa fikirlerini diğer insanlarla tartışmak, hesabın alım satım kararlarını veya yürütmesini onlara devretmekten farklıdır.
+Kopyalama Ticareti
+Bu nedir Başka bir tüccarın pozisyonlarını manuel olarak veya kopya alım satım yazılımı veya otomatik bir araç aracılığıyla bir hesaba yansıtmak veya çoğaltmak.
+Neden izin verilmiyor Yansıtılmış işlemler, hesap sahibinin bağımsız analiz ve karar vermesini göstermez.
+Nasıl görünebilir
+Başka bir tüccarın girişlerini, çıkışlarını, zamanlamasını ve pozisyon boyutlarını eşleştirme.
+Ana hesap veya sinyal sağlayıcı kopyalama hizmetlerini kullanma.
+Örnekler
+Bir tüccar, hesabı bir sinyal sağlayıcısının pozisyonlarını otomatik olarak kopyalayan bir kopya alım satım platformuna bağlar.
+Bir tüccar, başka bir tüccarın canlı girişlerini tekrar tekrar izler ve bağımsız analiz olmadan bunları manuel olarak kopyalar.
+Önemli açıklama Halka açık piyasa yorumlarından öğrenmek, başka bir tüccarın yürütmesini sistematik olarak yansıtmaktan farklıdır. Hesap sahibi bağımsız ticaret kararları vermelidir.
+Şebeke Ticareti
+Bu nedir Mevcut fiyatın üstünde ve altında sabit fiyat aralıklarında önceden ayarlanmış bir alım satım emirleri dizisi yerleştirmek, yön analizinden bağımsız olarak bir ızgara oluşturur.
+Neden izin verilmiyor Mekanik, aralığa dayalı düzenleme, gerçek yönlü piyasa katılımından ziyade arbitraj tarzı sonuçlar için kullanılabilir.
+Nasıl görünebilir
+Düzenli, önceden belirlenmiş fiyat aralıklarında konumlandırılmış birden fazla sipariş.
+Fiyat ızgarada hareket ettikçe siparişler otomatik olarak tetiklenir.
+Örnekler
+Bir tüccar, mevcut altın fiyatının her 20 pipinde bir altında bekleyen Satın Alma emirleri verir ve bunun üzerindeki her 20 pipte bir Satış emirleri verir.
+Piyasa yukarı ve aşağı hareket ettikçe EA, her sabit aralıkta otomatik olarak ek siparişler verir.
+Önemli açıklama Farklı, analitik olarak tanımlanmış seviyelerde bağımsız olarak verilen siparişler mutlaka bir ızgara değildir. Önceden ayarlanmış, tekrarlanan aralık yapısı ilgili göstergedir.
+Sistem Güvenlik Açıklarından Yararlanma
+Bu nedir İşlem sonuçları elde etmek için hatalı fiyatlar, bayat teklifler, gecikme boşlukları veya veri beslemesi başarısızlıkları gibi teknik kusurların kullanılması, ister kasıtlı olarak tanımlanmış ister keşiften sonra tekrar tekrar istismar edilir.
+Neden izin verilmiyor Gerçek piyasa koşullarından ziyade teknik hatalardan elde edilen karlar, ticaret becerisini göstermez ve platform bütünlüğünü tehlikeye atabilir.
+Nasıl görünebilir
+Bilinen sunucu veya teklif hataları etrafında tekrarlanan ticaret.
+Yanlış fiyatlandırılmış veya gecikmiş tekliflerden kasıtlı olarak alım satımlara girmek.
+Örnekler
+Bir tüccar, bir sunucu sorununun platform teklifinin piyasayı birkaç saniye geciktirmesine neden olduğunu ve bu gecikmeyi tekrar tekrar kullandığını fark eder.
+Bir tüccar, feed düzeltilmeden önce defalarca açıkça hatalı bir enstrüman fiyatına girer.
+Önemli açıklama Şüpheli bir platform hatası tespit edilirse, onu kullanmayı bırakın ve destek ekibiyle iletişime geçin. İzole edilmiş bir tesadüfi etkileşim bağlam içinde gözden geçirilmelidir.
+Otomatik Çoklu Ticaret Etkinliği
+Bu nedir Her bir işlemi aktif olarak denetlemeden veya yönetmeden enstrümanlar veya hesaplar arasında aynı anda birden fazla pozisyon açmak için otomatik araçları kullanmak.
+Neden izin verilmiyor Büyük gözetimsiz işlem grupları, tüccarın bireysel pozisyonları gerçek zamanlı olarak doğrudan ve gerekçeli yönetimini yansıtmaz.
+Nasıl görünebilir
+Sinyal alındığında çok sayıda işlem yapan otomatik komut dosyaları.
+Bireysel ticaret incelemesi olmadan semboller veya hesaplar arasında eşzamanlı siparişler.
+Örnekler
+Bir web kancası, herhangi bir manuel inceleme yapmadan aynı anda farklı döviz çiftlerinde 15 işlem açmak için bir komut dosyasını tetikler.
+Gözetimsiz bir araç harici bir uyarı alır ve hemen birkaç hesapta birden fazla pozisyon açar.
+Önemli açıklama Bireysel bir ticaret için otomasyonun kullanılması bu ihlali otomatik olarak belirlemez; endişe, aktif gözetim olmaksızın otomatik, eşzamanlı çoklu ticaret faaliyetidir. Diğer tüm EA ve ticaret kısıtlamaları geçerli olmaya devam ediyor.
+Lot Boyutu Kötüye Kullanımı
+Bu nedir Özellikle piyasa açılış veya kapanış zamanları veya yüksek etkili haberler etrafında, hesap büyüklüğüne göre orantısız derecede büyük lot büyüklüklerine sahip pozisyonların açılması, gerçekçi olmayan riske maruz kalmaya neden olur.
+Neden izin verilmiyor Büyük maruziyet, disiplinli ticaretten ziyade pervasız risk almayı gösterebilir ve tek bir işlemde kar hedeflerine ulaşmaya çalışmak için kullanılabilir.
+Nasıl görünebilir
+Riski hesap özkaynakları veya geçerli çekme limitleri ile orantısız olan pozisyonlar.
+Hareketsiz veya likit olmayan piyasa dönemlerinde aniden büyük boyutlu siparişler.
+Örnekler
+Bir tüccar, piyasa açıkken 10.000 dolarlık bir hesapta 5.00 lot GBP/USD pozisyonu açar ve hesabı büyük bir potansiyel kayba maruz bırakır.
+Bir tüccar aniden büyük bir piyasa olayından hemen önce normal boyutundan çok daha büyük bir pozisyon yerleştirir.
+Önemli açıklama Bu kılavuzda sabit bir lot büyüklüğü-denge eşiği belirtilmemiştir. Maruz kalma, enstrüman, stop-loss ve hesap riski dahil olmak üzere bağlamda değerlendirilmelidir.
+Hafta Sonu Boşluğu Ticaret Kuralı
+Bu nedir Kapanıştan kısa bir süre önce işlemlere girmek veya özellikle beklenen boşluklardan kar elde etmek için bekleyen emirleri belirlemek de dahil olmak üzere, Cuma günkü piyasa kapanışı ile Pazar veya Pazartesi günü piyasanın yeniden açılması arasındaki fiyat farklarından kasıtlı olarak yararlanmak.
+Neden izin verilmiyor Hafta sonu fiyat boşlukları, emirlerin istenen stop-loss veya kar alma seviyesi yerine bir sonraki mevcut piyasa fiyatında yürütülmesine neden olabilir. Hafta sonu boyunca pozisyon tutan tüccarlar bu riski kabul eder ve ortaya çıkan kayıplardan veya düşüş ihlallerinden sorumlu olmaya devam ederler.
+Nasıl görünebilir
+Özellikle beklenen açılış boşluğunu yakalamak için Cuma günü geç saatlerde pozisyonların açılması.
+Öncelikle önümüzdeki hafta sonu açılış boşluğundan kar elde etmek için tasarlanmış bekleyen siparişler vermek.
+Örnekler
+Bir tüccar, yalnızca daha yüksek bir Pazar açılış fiyatı beklediği için Cuma gününden kısa bir süre önce EUR/USD satın alır, ardından boşluktan hemen sonra çıkar.
+Bir tüccar, özellikle piyasa yeniden açıldığında fiyat sıçramasını yakalamak için haftalık kapanıştan kısa bir süre önce bekleyen siparişleri belirler.
+Önemli açıklama Hafta sonu boyunca bir pozisyonu açık tutmak otomatik olarak yasak olarak tanımlanmamaktadır. Kural, kasıtlı boşluk sömürüsünü hedefler. İncelemenin ardından tespit edilen ihlaller, ilişkili karların kaldırılmasına, ödemenin reddedilmesine veya hesabın feshedilmesine neden olabilir.
+Tek Yönlü Bahis
+Tek Yönlü Bahis, bir tüccarın bir piyasa yönüne veya belirli bir ticaret fikrine aşırı derecede güvendiği ve tek bir piyasa hareketine orantısız olarak bağlı olan konsantre maruz kalma veya alım satım performansıyla sonuçlanan alım satım davranışını ifade eder.
+Audacity Capital, tüccarların bireysel stratejilerine bağlı olarak yönlü bir önyargıya sahip olabileceğini kabul eder. Bununla birlikte, alım satım kararları yapılandırılmış, disiplinli kalmalı ve uygun risk yönetimi ile desteklenmelidir.
+Bu Davranışı Neden İzliyoruz
+Bir piyasa yönüne aşırı güven, konsantre risk oluşturabilir ve bir hesabın genel performansını tek bir piyasa hareketine bağlı hale getirebilir.
+Amacımız meşru ticaret stratejilerini veya yönlü piyasa inançlarını kısıtlamak değildir. Bunun yerine, yatırımcıların sorumlu riske maruz kalmalarını, yapılandırılmış ticaret kararları vermelerini ve sürdürülebilir risk yönetimi uygulamaları göstermelerini sağlamayı amaçlıyoruz.
+Risk Yönetimi ve Hesap Önlemleri
+Mücadele ve Doğrulama aşamalarında, Tek Yönlü Bahis için belirlenen yatırımcılar, ticaret davranışlarını gözden geçirme ve iyileştirme fırsatı veren bir uyarı alabilir.
+Örneğin, bir tüccar bir uyarı aldıktan sonra aynı yönde birden fazla pozisyon oluşturmaya devam ederse, Finansman aşamasına ulaştığında işlem başına maksimum %1 risk kısıtlaması uygulanabilir. Uyarı ve kısıtlamaya rağmen benzer davranışların devam etmesi, hesabın sonlandırılması da dahil olmak üzere başka işlemlere neden olabilir.
+FTP hesapları için, Tek Yönlü Bahis için tanımlanan yatırımcılar doğrudan daha sıkı işlem başına %1 risk kuralına tabi tutulabilir.
+Yatırımcılar, kontrollü piyasa maruziyetini koruyarak, pozisyonların açık bir ticaret mantığı ile desteklenmesini sağlayarak ve yalnızca bireysel işlemlere odaklanmak yerine birden fazla pozisyonun birleşik riskini yöneterek yaklaşımlarını geliştirebilirler.
+Audacity Capital, alım satım faaliyetlerini inceleme ve yürürlükteki kurallara ve Hüküm ve Koşullara uygun olarak uygun önlemleri alma hakkını saklı tutar.
+Bu kurallar neden var
+Ortak ilke, ticaret performansının bağımsız analizi, disiplinli risk yönetimini ve gerçek piyasa katılımını yansıtması gerektiğidir. Teknik zayıflıklardan yararlanan, dengeleyici sonuçlar üreten, kontrolsüz risk artışına dayanan veya ticaret kararlarını üçüncü taraflara devreden uygulamalar bu ilkeyi baltalamaktadır.
+Yeni bir strateji kullanmadan önce
+Stratejinin nasıl alım satım ürettiğini, maruz kalmayı nasıl yönettiğini, başka bir kişiye mi yoksa üçüncü taraf otomasyonuna mı bağlı olup olmadığını ve birden fazla kısıtlamaya girip girmeyeceğini gözden geçirin. Yaklaşımın herhangi bir kısmı belirsizse Audacity Capital Support ile iletişime geçin.
+Bu, mevcut SSS"ye dayalı bir web sitesi içerik taslağıdır. Geçerli hesap hüküm ve koşulları geçerli olmaya devam eder; örnekler açıklayıcıdır ve bağımsız istisnalar veya sayısal sınırlar oluşturmaz.
+ŞİRKETİ
+Kullanım Koşulları Bize Ulaşın Ortaklık Programı Hakkımızda AML Politikası Yasaklanmış Ticaret Uygulamaları Davranış Kuralları
+Topluluk
+SSS Başarı Öyküleri Gösterge paneli İndir Sorumlu Ticaret Kariyer Bir Arkadaşa Tavsiye Edin
+Yasal
+Şartlar ve Koşullar Gizlilik Politikası Dolandırıcılık Uyarısı İhbarcı Politikası Şikayet İşleme Basın & Medya Sahte İncelemeler Politikası
+Platformlar
+Ticaret Platformları DXTrade MT5
+Bülten
+Özellikler ve sürümlerden haberdar olmak için bültenimize katılın.
+abone
+Abone olarak Gizlilik Politikamızı kabul etmiş
+ve şirketimizden güncelleme almak için onay vermiş olursunuz..
+© 2012—2026 Audacity Sermayesi. Tüm hakları saklıdır.
+Gizlilik Politikası Şartlar ve Koşullar Cookies Settings
+Yasal ve Uyum Sorumluluk Reddi
+Dubai Silicon Oasis, DDP, Building A1/A2, Dubai, Birleşik Arap Emirlikleri adresinde DSO-FZCO 38282 lisansı altında kayıtlı olan AudaCity International FZCO, yalnızca bir ödeme kolaylaştırıcısı olarak hareket eder. Ticaretle ilgili tüm faaliyetler, Komorlar Birliği tarafından verilen Uluslararası Aracılık ve Takas Merkezi Lisansı (L15850/WL) altında lisanslanan ve Hamchako, Mutsamudu, Anjouan, Komorlar Birliği adresinde kayıtlı ofisi olan AudaCity Global LTD (Kayıt Numarası: 15850) aracılığıyla yürütülmektedir. Ayrıca 25 Cabot Square, Level 11, Londra, E14 4QZ adresinde bir Birleşik Krallık ofisi işletiyoruz ve ek bir ödeme ortağı olarak hareket eden Kıbrıs Limasol'da bulunan Propmetry Limited (Şirket Numarası: HE469039) ile ortaklık kuruyoruz.
+Bu web sitesi ve tüm hizmetler, https://audacity.capital adresindeki tek alan adımız ve şu adresten gösterge panomuz aracılığıyla sunulmaktadır. https://trade.audacity.capital ; diğer herhangi bir alan adı, sosyal medya profili veya bizi bu web sitesi dışında temsil ettiğini iddia eden kişi hileli olarak kabul edilmeli ve rapor edilmelidir. Her zaman yasal Audacity Capital web sitesiyle etkileşim kurduğunuzdan emin olun ve şüpheniz varsa doğrulanmış kanallarımız aracılığıyla ekibimizle doğrudan iletişime geçin.
+AudaCity Capital, 2012'den beri, spekülasyona değil beceri geliştirmeye odaklanan profesyonel düzeyde simüle edilmiş bir ticaret altyapısı içinde yapılandırılmış değerlendirme ve eğitim yoluyla ticaret yeteneğini geliştirmeye kendini adamıştır. Bu, canlı sermaye ile ticaret yapmak için gerçek yetenekleri bulmaya ve geliştirmeye yardımcı olur.
+Bu web sitesindeki hiçbir açıklama yatırım, finansal, yasal veya vergi tavsiyesi teşkil etmez ve aracılık, saklama veya portföy yönetimi hizmetleri sunmuyoruz. Tüm içerik yalnızca genel bilgilendirme amaçlıdır ve yatırım veya ticaret yapma talebi olarak yorumlanmamalıdır..
+Bu web sitesinin kullanımı ve programlarımıza katılım yerel yasalara tabidir ve hizmetlerimiz Suriye, İran, Venezuela ve Kuzey Kore dahil ancak bunlarla sınırlı olmamak üzere bu tür faaliyetlerin kısıtlandığı veya yasaklandığı yargı bölgelerinde mevcut değildir. ABD'de ikamet edenler yalnızca izin verilen durumlarda DX Trade platformu üzerinden katılabilirler. Kullanıcılar yerel düzenlemelerine uyulmasını sağlamaktan sorumludur.
+Gerçek veya simüle edilmiş ticaret, önemli risk taşır ve varsayımsal performans gerçek sonuçları tahmin etmez. Sadece ilgili riskleri tam olarak anladıysanız katılın.
+Apple, iPad, iPhone ve App Store, Apple Inc.'in ticari markalarıdır; Android, Google Inc.'in ticari markasıdır ve bunların burada kullanılması herhangi bir bağlantı veya onay anlamına gelmez.

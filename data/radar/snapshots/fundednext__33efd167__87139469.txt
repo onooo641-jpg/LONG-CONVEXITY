@@ -1,0 +1,120 @@
+What are the Restricted/Prohibited Trading Strategies? | FundedNext Help Center Skip to main content
+Go to Website العربية Português do Brasil English Français Deutsch हिन्दी Italiano 日本語 fa-IR 简体中文 Español ภาษาไทย Türkçe Oʻzbekcha English
+Go to Website العربية Português do Brasil English Français Deutsch हिन्दी Italiano 日本語 fa-IR 简体中文 Español ภาษาไทย Türkçe Oʻzbekcha English
+Search for articles...
+All Collections
+Trading Rules & Guidelines
+What are the Restricted/Prohibited Trading Strategies?
+What are the Restricted/Prohibited Trading Strategies?
+Updated over a week ago
+Table of contents
+TLDR:  FundedNext prohibits abusive or exploitative strategies including Gambling behavior, All in One trading, Quick Strike Method, High Frequency Trading, Copy Trading across accounts, Group Hedging, Arbitrage, Tick Scalping, Grid Trading, Latency Trading, Account Rolling, One sided Betting, Hyperactivity, exploiting Demo server errors, Guarantee of profit during low liquidity, and Account or Device Sharing. Such methods distort markets, bypass fair rules, or show unsustainable trading behavior. Violations lead to account termination, reward denial, or permanent bans.
+FundedNext strictly prohibits any form of cheating or exploitation of the platform, as it goes against our Terms of Service (TOS) agreed upon during registration. Traders are urged to thoroughly read our Terms of Service and understand the following guidelines to prevent unintended consequences.
+Abuse of the System means that trading styles that do not reflect real market trading are not allowed and will result in a breach of our Terms of Service without any warning. Strategies that produce risk-free, consistent profits exclusively on Challenge Accounts are strictly forbidden. Traders are expected to trade on their accounts as if they were FundedNext Accounts. Utilizing strategies that exploit Challenge Accounts will lead to the termination of a FundedNext Trader's Account, whether in the Challenge phase or while a FundedNext Account, "Pass Your Challenge", "Copy Trading Services" or "Signal Services" are also strictly prohibited, resulting in the denial of any FundedNext Accounts and a permanent ban from all FundedNext services.
+Example Strategies That Violate Our Terms of Service:
+Gambling Behavior:
+At FundedNext, disciplined and responsible trading is a core requirement. Gambling behaviors such as overleveraging, over-risking, a non-repeatable trading style, or taking high-risk trades without a stop-loss fall outside sound risk management and are subject to enforcement under the Risk parameter.
+Inconsistent risk management is often an indicator of gambling behavior. This may include patterns such as losses that consistently outweigh average gains, breaching several accounts in a short span, heavy or repeated over-leveraging, trading without defined risk parameters, staking large amounts of capital repeatedly over a brief period, or pursuing unrealistic profit targets without sustained trading consistency.
+To help realign trading with sound risk management, the trader is given a choice between two arrangements:
+The first is an On-Demand Performance Reward arrangement that rewards consistent trading with the flexibility of On-Demand Performance Rewards, subject to a 40% Consistency Rule. This option recognises and supports traders who demonstrate steady, disciplined performance.
+The second is an adjusted Profit Split arrangement, which allows the trader to continue trading with full flexibility under a revised Profit Split on their FundedNext Accounts.
+Once a trader selects an arrangement, it applies across all active FundedNext Accounts. Both arrangements remain eligible for new account purchases.
+For detailed information on the risk parameter and its consequences, refer to our FAQ: What are the Risk Limits on a FundedNext Account?
+Quick Strike Method:
+FundedNext defines Quick Strike trades as positions closed within 30 seconds of opening. A high concentration of such trades raises concerns about market integrity — rapid, ultra-short positions can inflate trading volumes, contribute to artificial price movements, and create conditions inconsistent with fair and stable market participation.
+The Quick Strike percentage represents the proportion of total recorded profit derived from trades closed within 30 seconds, evaluated on a per-cycle basis. A Quick Strike percentage of 30% or higher constitutes a violation.
+On Challenge Accounts, a warning is issued at 20%. At 30% or above, advancement is placed on hold until the threshold is cleared. On FundedNext Accounts, a warning is issued at 20%. If the 30% threshold is subsequently breached, the account is terminated at the end of the trading cycle, and all Quick Strike profit is forfeited in full.
+For detailed information on the Quick Strike parameter and its consequences, refer to our FAQ: What is the Quick Strike policy on FundedNext?
+High-Frequency Trading:
+High-Frequency Trading (HFT) is a trading strategy characterized by the use of sophisticated expert advisors and high-speed telecommunication networks to execute an excessive number of trades within miliseconds to seconds. This strategy aims to capitalize on minuscule price fluctuations and exploit market inefficiencies. While HFT may seem enticing due to its potential for rapid profit generation, it poses significant risks and can have detrimental effects on the market.
+Here's why HFT is restricted on the FundedNext platform:
+HFT trading can distort market prices and create artificial demand or supply. By executing a large volume of trades within seconds, HFT traders can create false impressions of market activity, influencing other participants' decisions and leading to market manipulation. Excessive trading volumes generated by high-frequency trading can disrupt market stability. The rapid influx and outflow of orders can create volatility, leading to erratic price fluctuations and increased market uncertainty, making it challenging for other traders to make informed decisions. Due to huge amounts of trades in a short period of time, the servers usually freeze and create consequences.
+Note: If a trader receives a warning for hyperactivity and later engages in HFT (or vice versa), this may result in a more severe penalty, including account suspension. Warnings are cumulative, and the system may immediately suspend accounts in cases of extreme or repeated Hyperactivity or HFT that causes major strain on our servers.
+Copy Trading From Others:
+At FundedNext, copy trading is allowed between FundedNext Challenge Accounts, under specific guidelines ​​to ensure fairness, transparency, and compliance with the platform’s policies.
+However, Copy-Trading between multiple accounts not owned by the same individual, including those of relatives, family members, or friends, is strictly prohibited.
+To get more details regarding Copy-Trading,  click here
+Hedging or Group Hedging Across Various Accounts:
+Hedging is a risk management strategy where a trader opens two opposite trades (buy and sell) on the same asset to reduce potential losses. For example, if the market moves against one trade, the other trade may gain, minimizing overall risk.  Hedging across multiple accounts undermines a sound trading strategy.
+At FundedNext, hedging is allowed only within the same account. This means traders can place both buy and sell orders on the same asset within one account to hedge their positions. Hedging across multiple accounts undermines a sound trading strategy.
+What is Not Allowed?
+Hedging across multiple accounts is prohibited. Trading behavior like taking the risk of a full or close to daily loss limit in one trade will be suspected as a multi-platform hedge with FundedNext. Doing so is not considered a genuine trading strategy and can result in account termination.
+​
+​
+Example of Allowed Hedging: You buy 1 lot of EUR/USD on Account A and simultaneously sell 1 lot of EUR/USD on Account A to hedge the position. This is allowed within the same account.
+Example of Prohibited Hedging: You buy 1 lot of EUR/USD on Account A and simultaneously sell 1 lot of EUR/USD on Account B to hedge the position across two accounts. This is not allowed at FundedNext.
+Group Hedging Across Various Accounts:
+Hedging or group hedging across multiple accounts involves opening multiple accounts and placing opposite direction trades on the same asset across those accounts. The aim of this approach is to reduce market risk by taking advantage of price fluctuations. However, this strategy is not considered a legitimate trading practice and is prohibited as it does not reflect proper trading methodology.
+Any form of Arbitrage Trading:
+Arbitrage trading refers to the practice of exploiting price discrepancies or time lags across different markets or platforms to generate risk-free profits. At FundedNext, any form of arbitrage trading is strictly prohibited due to its unethical nature and potential to disrupt fair market conditions.
+Example: Arbitrage trading can distort market prices and hinder the efficient allocation of resources. By capitalizing on price discrepancies, arbitrage traders can cause prices to deviate from their true fundamental values, creating inconsistencies in market pricing. A trader engages in statistical arbitrage by simultaneously buying and selling related instruments based on historical price patterns. Their trading activity distorts the market pricing of these instruments, creating misalignments between their perceived value and their actual worth. Also, Large-scale arbitrage activities can trigger rapid price movements, creating artificial market fluctuations and destabilizing the normal price discovery process.
+Tick Scalping:
+Tick scalping refers to a trading strategy where traders aim to profit from small price fluctuations by executing a high volume of trades within a short time frame. At FundedNext, limitations have been imposed on tick scalping as a result of its capacity for market manipulation and disruptive trading practices.
+Example: A tick scalper uses automated trading algorithms to scalp ticks on instruments. By executing trades at lightning speed, they can exploit even the smallest price movements, effectively front-running other market participants and gaining an unfair advantage. The rapid influx of orders and subsequent cancellations can strain market liquidity, making it challenging for other traders to execute their trades at fair prices.
+Consequences of Tick Scalping Violations
+Depending on the severity of the violation, a Tick Scalping violation may result in immediate Account Termination or Permanent Termination from the Platform, with the Performance Reward or Refund denied or adjusted accordingly.
+Grid Trading:
+Grid trading is a strategy where a trader places multiple buy and sell orders at different price levels above and below the current market price. The goal is to profit from price fluctuations as the market moves up and down, hitting various price points.
+Why is Grid Trading prohibited at FundedNext?
+Grid trading is prohibited because it can lead to market manipulation and create artificial activity. It also increases risk, as a large market movement in one direction can trigger many losses simultaneously. This strategy is not in line with FundedNext's fair trading principles.
+Example: A trader places multiple buy orders at $100, $105, and $110, and sell orders at $115, $120, and $125. If the market moves between these levels, the trader profits. However, if the market drops sharply below $100, all your buy orders will lose value, which can cause significant losses.
+Consequences of Grid Trading Violations
+Depending on the severity of the violation, a Grid Trading violation may result in immediate Account Termination or Permanent Termination from the Platform, with the Performance Reward or Refund denied or adjusted accordingly.
+Market Settlement Trading:
+Financial markets enter a settlement window at specific points within the 24-hour trading cycle. During these windows, participating liquidity providers scale back or temporarily withdraw from the market, significantly reducing depth and stability. Price movements during settlement periods do not reflect genuine market sentiment — they are a byproduct of reduced participation and compressed order books, not real economic conditions.
+The settlement window on FundedNext runs from 00:00 to 02:00 server time.
+Trading strategies that consistently and disproportionately generate profit during this window are not considered a reflection of trading skill or sustainable market analysis. In a live funded environment, positions opened during settlement periods are typically subject to slippage, requotes, or post-trade corrections that would eliminate or reverse any apparent gains. When a significant portion of a trader's profit is generated exclusively during these brief low-liquidity periods, it indicates reliance on the settlement window as the edge rather than any skill-based approach to the market.
+FundedNext actively monitors trading behaviour across all accounts. Where patterns consistent with settlement window exploitation are identified, FundedNext reserves the right to review the account, void relevant trades, or terminate the account in accordance with our Terms and Conditions. This applies across all account types and phases.
+Latency Trading:
+Latency trading refers to the practice of executing trades based on delayed market data or exploiting delays in the execution of trades to secure guaranteed profits. At FundedNext, latency trading is strictly prohibited due to its unethical nature and violation of fair trading practices in the financial markets.
+Example: Latency trading goes against the principles of fair and transparent trading. It undermines the integrity of the financial markets by introducing an element of unfairness and eroding trust among market participants. A latency trader identifies a delay in trade execution and takes advantage of the price discrepancy between the delayed trade execution and the current market price. They execute a large volume of trades within seconds to capitalize on the price difference, creating artificial buying or selling pressure and manipulating the market. By knowingly engaging in such practices, they compromise the fairness and transparency that underpin a healthy trading ecosystem.
+Account Rolling:
+Account rolling is a high-risk practice where multiple evaluation accounts are purchased in quick succession, with some accounts being intentionally sacrificed while focusing on passing others. This method relies on probability rather than skill, disregarding proper risk management and market analysis. It resembles gambling more than trading, as success is based on sheer luck rather than a structured strategy.
+Why Account Rolling is Not Allowed at FundedNext
+FundedNext is designed to support traders who demonstrate consistency, discipline, and long-term profitability. Account rolling undermines the integrity of the evaluation process by bypassing the core principles of responsible trading. The evaluation phase is meant to assess a trader’s ability to manage risk effectively, not to test how many accounts can be rolled through aggressive, unsustainable tactics. Traders who engage in account rolling fail to showcase real trading proficiency, making it an unfair practice that goes against the foundation of a professional trading environment.
+To maintain a fair and transparent system, account rolling is actively monitored, and violations may result in restrictions on purchasing new accounts or adjustments to the lifetime allocation limit. These measures ensure that only traders who genuinely develop and apply sound trading strategies can progress, reinforcing a platform built on skill, discipline, and sustainable success.
+One-sided Betting:
+One-Sided Betting is a gambling-like trading behavior where a trader takes concentrated directional exposure , opens multiple trades in the same direction , or enters reactive positions without sufficient consideration of market conditions, fundamental news, or technical analysis. For example, a trader might continuously open consecutive "Buy" positions on a specific asset despite volatile market fluctuations or a clear downward trend, ignoring technical signals in the hope that a single market reversal will cover their exposure. As a result, the overall trading outcome becomes disproportionately dependent on a single trade or a single trade idea .
+This approach indicates that trading decisions are driven more by reaction than by structured planning, and that outcomes rely on chance rather than demonstrable, repeatable trading skill.
+At FundedNext, One-Sided Betting is restricted because it reflects Gambling behavior rather than professional trading . When trading performance depends almost entirely on the outcome of a single directional move, it represents luck—not the consistent skill set FundedNext seeks to evaluate and support.
+Why This Matters
+Successful trading is built on consistency, discipline, and repeatability , not isolated profit spikes. A strategy that hinges on a single trade outcome does not demonstrate the ability to manage risk, adapt to changing conditions, or sustain performance over time.
+FundedNext’s evaluation framework is designed to identify traders with genuine, long-term trading capability. Strategies where results are driven by one-off outcomes or concentrated exposure do not provide a reliable measure of professional trading proficiency.
+Consequences of One-sided Betting Violations
+Depending on the severity of the violation, a One-sided Betting violation may result in immediate Account Termination or Permanent Termination from the Platform, with the Performance Reward or Refund denied or adjusted accordingly.
+Hyperactivity:
+Hyperactivity in trading refers to an excessive level of trading activity by a trader, characterized by the frequent and rapid execution of trades within a short period of time. This also includes frequent modifications to orders, such as adjusting stop-loss or take-profit levels and updating limit orders.
+Here's why hyperactivity is restricted on the FundedNext platform:
+While trading is an essential aspect of our platform, excessive trading actions can lead to some challenges. The primary concern is the potential slowdown of the platform due to the overwhelming number of server messages/logs generated by numerous trades. This can result in delayed trade executions, which can be extremely frustrating for traders. In extreme cases, it might even freeze or crash the whole platform.
+​
+To ensure that all our traders have a smooth and reliable experience, we're taking measures to avoid hyperactivity. The industry defines an account as hyperactive if it hits or surpasses 200 trades or 2,000 server messages in a single day. This count also includes messages associated with frequent modifications to orders, such as adjusting stop-loss or take-profit levels and updating limit orders.
+Consequences of Exceeding the Limit:
+The FundedNext team will issue the first warning to adjust trading strategies when an account exceeds or reaches 2,000 messages for the initial occurrence. Subsequently, a second warning will be sent should the account exceed this message limit once more. If an account reaches this limit for the third time, it will be considered hyperactive, and the account will be breached. Furthermore, if an account generates 15,000 messages in a day, the account will be forcefully disabled to prevent further strain on the system.
+Please note that warnings are cumulative across accounts. This means that if you receive a first warning on one account and later engage in hyperactivity on another account, you will receive a second warning. If you’ve already received a second warning, any further occurrence of hyperactivity in any account will result in a third warning, leading to the account being breached.
+Additionally, warnings may be skipped entirely if we detect excessive hyperactivity that causes significant strain on the server, leading to issues for other clients on our platform.
+Note : If a trader receives a warning for hyperactivity and later engages in HFT (or vice versa), this may result in a more severe penalty, including account suspension. Warnings are cumulative, and the system may immediately suspend accounts in cases of extreme or repeated Hyperactivity or HFT that causes major strain on our servers.
+Use of Platform or Data Freezing Due to Demo Server Errors:
+The use of any unfair advantage, such as platform or data freezing due to demo server errors, is strictly prohibited. This ensures a level playing field for all traders and prevents misleading or deceiving practices. Traders found engaging in such behavior will be investigated, and appropriate actions, including the revocation of access to our demo servers, may be taken. In the event of server issues, traders are encouraged to report the problem to FundedNext's support team promptly.
+​
+​ Use of guarantee of profit during the low liquid market:
+In accordance with FundedNext's commitment to maintaining market integrity and fairness, we have implemented restrictions on the use of a guarantee of profit during low-liquidity market conditions.
+Low liquidity in financial markets, particularly during the transition from the U.S. to Asian sessions, presents heightened risks of market manipulation. Referred to colloquially as the "dead zone," this period is characterized by limited market depth and heightened vulnerability to deceptive trading practices.
+The implementation of guaranteed adherence to trades during low-liquidity markets enables traders to potentially evade order executions that would occur under normal market conditions. This behavior undermines the authenticity of financial market operations and contravenes the principles of fair and transparent trading upheld by FundedNext.
+Consequently, this type of trading activity violates FundedNext's Terms of Service.
+Account Sharing/Device Sharing:
+Account sharing refers to the unauthorized practice of sharing or reselling FundedNext accounts with other individuals or entities. Sharing devices with other traders is strictly prohibited, regardless of the relationship. This behavior violates FundedNext's Terms of Service. FundedNext maintains a zero-tolerance stance on account sharing and device sharing.
+Consequences for Account/Device Sharing:
+In the event of account or device sharing, FundedNext will terminate the account , and the Performance Reward or Refund may be adjusted or denied based on the severity of the violation.
+Account Management Service:
+Account management service refers to any arrangement in which a FundedNext account is accessed, operated, or traded by a third party or individual other than the registered account holder, whether paid or unpaid. This includes external traders, trading groups, or automated services operated by another party on behalf of the account holder.
+Granting account access to any third party, or using any account management service to trade on the account holder’s behalf, is strictly prohibited and constitutes a severe breach of FundedNext's Terms of Service.
+Consequences for Using Account Management Services:
+FundedNext will permanently terminate the account, with the Performance Reward denied or adjusted and the Refund denied.
+Related Articles
+How does FundedNext ensure Fairness & Transparency in trading?
+Are there any restrictions on my trading strategy?
+Does FundedNext allow HFT (High-Frequency Trading)?
+Is scalping allowed in FundedNext?
+Is tick scalping legal?
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

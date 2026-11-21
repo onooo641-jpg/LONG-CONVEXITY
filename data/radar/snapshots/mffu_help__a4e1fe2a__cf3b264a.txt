@@ -1,0 +1,210 @@
+Comprehensive Look into Redesigned Pro Plan | My Funded Futures Help Center Skip to main content
+Go to website Discord YouTube English हिन्दी Español English
+Go to website Discord YouTube English हिन्दी Español English
+Search for articles...
+All Collections
+Pro Plan
+Comprehensive Look into Redesigned Pro Plan
+Comprehensive Look into Redesigned Pro Plan
+Updated yesterday
+Table of contents
+At MyFundedFutures, we believe that a trader's career hinges on their ability to progress without compromise. Our goal is to support this progression from simulated funding stages to live funding stages, ensuring every trader has the opportunity to succeed.
+Introducing the new Pro Plan at MyFundedFutures!
+The Pro Plan is designed for experienced traders, offering frequent payout schedules and high maximum withdrawals. This article will break down each stage of the Pro plan.
+Benefits of the Pro Account
+Path to Live Funding
+No Daily Loss Limit
+Opportunity for Larger Payouts
+Competitive Pricing
+Register for MFFU here.
+Pro Plan Evaluation Account Parameters
+Parameters
+Pro 50k
+Pro 100k
+Pro 150k
+Pro 50k - One Day
+Profit Target
+$3,000
+$6,000
+$9,000
+$4,000
+Maximum Loss Limit (EOD)
+$2,000
+$3,000
+$4,500
+$2,000
+Daily Loss Limit (DLL)
+None
+None
+None
+None
+Consistency
+50%
+50%
+50%
+None
+Minimum Trading Days
+2 Days
+2 Days
+2 Days
+1 Day
+Scaling / Max Contacts
+3 mini / 30 micro
+6 mini / 60 micro
+9 mimi / 90 micro
+3 mini / 30 micro
+T1 News Trading
+Yes
+Yes
+Yes
+Yes
+Pro Plan Sim-Funded Account Parameters
+Parameters
+Pro 50k
+Pro 100k
+Pro 150k
+Profit Split
+80/20
+80/20
+80/20
+Maximum Loss Limit (EOD)
+$2,000
+$3,000
+$4,500
+Daily Loss Limit (DLL)
+None
+None
+None
+Activation Fee
+$0
+$0
+$0
+Consistency
+None
+None
+None
+Scaling / Max Contacts
+3 mini / 3 micro
+6 mini / 6 micro
+9 mini / 9 micro
+T1 News Trading
+Not Allowed
+Not Allowed
+Not Allowed
+Pro Plan Payout Policy
+The Pro Plan allows for frequent payouts once a profit buffer has been cleared.
+Pro 50k
+Pro 100k
+Pro 150k
+Qualification for Payouts
+14 calendar days from day of first trade.
+Buffer must be cleared
+14 calendar days from day of first trade.
+Buffer must be cleared
+14 calendar days from day of first trade.
+Buffer must be cleared
+Payout Buffer Requirement
+$2,100
+$3,100
+$4,600
+Minimum Payout Request
+$1,000
+$1,000
+$1,000
+Maximum Payout
+(per user)
+$100,000
+$100,000
+$100,000
+Maximum Loss Limit (MLL)
+After first payout, MLL moves to $50,100 and remains static.
+After first payout, MLL moves to $100,100 and remains static.
+After first payout, MLL moves to $150,100 and remains static.
+Live Account Transition
+Our Pro Plan is designed to reward traders for consistent performance. The parameters for transitioning to a live account are dynamic and aim to provide greater payouts.
+A trader is reviewed for a transition to a live account as a result of any of the below:
+Three (3) consecutive payouts on the same Pro account.
+Reaching the $100,000 payout cap. Profits above $100,000 are forfeited.
+An invitation from the risk managements team. This invitation can happen at any time.
+Reaching $20,000 in profit. This triggers a review only. It does not guarantee a transition to a live account.
+Live Account Parameters
+Pro 50k
+Pro 100k
+Pro 150k
+Starting Balance
+$0
+$0
+$0
+Max Loss Limit
+(EOD Trailing)
+-$2,000
+-$3,000
+-$4,500
+Daily Loss Limit
+None
+None
+None
+Max Contracts
+2
+3
+4
+Minimum Payout
+$250
+$250
+$250
+Profit Split
+80 / 20
+80 / 20
+80 / 20
+Pro 50k One Day account follow the same rules as the Pro 50k.
+Live accounts start at $0. The account can go negative up to max of the max loss limits above. The Reserve covers only negative balance.
+The Reserve
+The Reserve is Sim Funded profit that MyFundedFutures holds while the trader is on a live account. It ends in one of two ways.
+Up to $5,000 is placed in the Reserve Program and any remaining amount in excess of the Sim Funded Cap is forfeited.
+1. Performance Bonus
+The trader receives the remaining Reserve as a Performance Bonus when both of these are met:
+Pro 50K
+Pro 100K
+Pro 150K
+Profitable Live Trading Days
+20
+20
+20
+Cumulative Gross Live Payouts
+$10,000
+$20,000
+$30,000
+If the trader moved more than one Pro account to Live, the Reserves pay out as one bonus. The payout threshold goes up with the number of accounts moved.
+2. Live Account Hits the Max Loss Limit
+The Reserve pays off the negative Live balance.
+Any Reserve left over goes back to the Dormant Sim Funded account. The trader can only withdraw from it. The trader cannot trade it.
+Profit above the buffer is paid at 80/20.
+The buffer is paid based on how long the Sim Funded account was traded:
+Fewer than 30 trading days: 50% of the buffer.
+30 trading days or more: 80% of the buffer.
+After that withdrawal, the Sim Funded account closes.
+A 21-day cooldown starts.
+Example (Pro 50K): The Reserve holds $5,000. The Live account closes at -$1,500.
+$1,500 comes out of the Reserve to cover the Live loss.
+$3,500 goes back to the Dormant Sim Funded account.
+The first $2,100 of that is the buffer. The account was traded for fewer than 30 days, so the trader receives 50%: $1,050.
+The remaining $1,400 is above the buffer. The trader receives 80%: $1,120.
+Live Post-Breach Cooldown
+For 21 calendar days after the Live account closes:
+The trader cannot trade any Sim Funded account.
+The trader cannot buy new evaluations, resets or accounts.
+After 21 days, the restrictions end. Dormant accounts are turned back on.
+Existing Pro Accounts
+Accounts on the old Pro products keep every old rule.
+Old Live accounts keep a Static drawdown and the old unlock (20 winning days at 4% of start + 3 payouts).
+Old Pro Sim Funded accounts do not go into Reserve when the trader moves to Live.
+​
+Take the Challenge Now
+Related Articles
+Legacy Pro Plan Sim-Funded and Live Account Highlights
+Rapid Plan 100k - A Comprehensive Look
+Builder Plan 100k - Comprehensive Guide
+Builder Plan 150k - Comprehensive Guide
+Builder Plan 25k - A Comprehensive Look
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

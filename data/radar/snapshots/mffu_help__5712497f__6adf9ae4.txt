@@ -1,0 +1,335 @@
+Futures Instrument List | My Funded Futures Help Center Skip to main content
+Go to website Discord YouTube English हिन्दी Español English
+Go to website Discord YouTube English हिन्दी Español English
+Search for articles...
+All Collections
+Welcome Aboard
+Core Rules
+Futures Instrument List
+Futures Instrument List
+Includes Contract Specifications, Commissions, and Trading Fees
+August 24, 2026
+NOTE: The below times specify general market hours. MyFundedFutures trading hours are between 6:00pm EST through 4:10pm EST.
+As of February 7th:
+Due to increased market volatility, MFFU is implementing temporary commodities trading restrictions to align with current industry standards. These adjustments are temporary and intended to promote more consistent trading conditions and reduce the impact of extreme volatility while markets remain elevated.
+​
+The following products are currently restricted from trading:
+Silver (SI)
+Copper (HG)
+Platinum (PL)
+Natural Gas (NG)
+E-Mini Natural Gas (QG)
+As of April 17th , new limits have been implemented for micro contracts on metals trading:
+$25k account → maximum 3 micro contracts
+$50k account → maximum 5 micro contracts
+$100k account → maximum 10 micro contracts
+$150k account → maximum 15 micro contracts
+Also note that due to volatility, MBT is treated as a mini contract. If you have 3 minis max, you have access to 3 MBT contracts max.
+CME
+Instrument Name
+Code
+Trading Hours
+Tick Size
+Tick Value
+Total Cost Round Trip
+Australian Dollar
+6A
+Sunday - Friday 17:00 - 16:00 CT
+Daily Break: 16:00 - 17:00 CT
+0.00005
+$5.00
+$5.04
+British Pound
+6B
+Sunday - Friday 17:00 - 16:00 CT
+Daily Break: 16:00 - 17:00 CT
+0.0001
+$6.25
+$5.12
+Canadian Dollar
+6C
+Sunday - Friday 17:00 - 16:00 CT
+Daily Break: 16:00 - 17:00 CT
+0.00005
+$5.00
+$5.12
+E-mini NASDAQ 100
+NQ
+Sunday - Friday 17:00 - 16:00 CT
+Daily Break: 16:00 - 17:00 CT
+0.25
+$5
+$4.68
+E-mini Russell 2000
+RTY
+Sunday - Friday 17:00 - 16:00 CT
+Daily Break: 16:00 - 17:00 CT
+0.10
+$5.00
+$4.68
+E-mini S&P 500
+ES
+Sunday - Friday 17:00 - 16:00 CT
+Daily Break: 16:00 - 17:00 CT
+0.25
+$12.50
+$4.68
+Euro FX
+6E
+Sunday - Friday 17:00 - 16:00 CT
+Daily Break: 16:00 - 17:00 CT
+0.00005
+$6.25
+$5.12
+Japanese Yen
+6J
+Sunday - Friday 17:00 - 16:00 CT
+Daily Break: 16:00 - 17:00 CT
+0.0000005
+$6.25
+$5.12
+Lean Hog
+HE
+Monday - Friday 08:30 - 13:05 CT
+0.00025
+$10.00
+$6.12
+Live Cattle
+LE
+Monday - Friday 08:30 - 13:05 CT
+0.00025
+$10.00
+$6.12
+Micro AUD/USD
+M6A
+Sunday - Friday 17:00 - 16:00 CT
+Daily Break: 16:00 - 17:00 CT
+0.0001
+$1.00
+$1.44
+Micro Bitcoin
+MBT
+Sunday - Friday 17:00 - 16:00 CT
+Daily Break: 16:00 - 17:00 CT
+5.00
+$0.50
+$3.50
+Micro E-mini Nasdaq-100
+MNQ
+Sunday - Friday 17:00 - 16:00 CT
+Daily Break: 16:00 - 17:00 CT
+0.25
+$0.50
+$1.90
+Micro E-mini Russell 2000
+M2K
+Sunday - Friday 17:00 - 16:00 CT
+Daily Break: 16:00 - 17:00 CT
+0.10
+$0.50
+$1.90
+Micro E-mini S&P 500
+MES
+Sunday - Friday 17:00 - 16:00 CT
+Daily Break: 16:00 - 17:00 CT
+0.25
+$1.25
+$1.90
+Micro EUR/USD
+M6E
+Sunday - Friday 17:00 - 16:00 CT
+Daily Break: 16:00 - 17:00 CT
+0.0001
+$1.25
+$1.44
+Micro Ethereum
+MET
+Sunday - Friday 17:00 - 16:00 CT
+Daily Break: 16:00 - 17:00 CT
+0.50
+$0.05
+$1.16
+New Zealand Dollar
+6N
+Sunday - Friday 17:00 - 16:00 CT
+Daily Break: 16:00 - 17:00 CT
+0.00005
+$5.00
+$5.12
+Nikkei/USD
+NKD
+Sunday - Friday 17:00 - 16:00 CT
+Daily Break: 16:00 - 17:00 CT
+5.00
+$25.00
+$6.22
+Swiss Franc
+6S
+Sunday - Friday 17:00 - 16:00 CT
+Daily Break: 16:00 - 17:00 CT
+0.00005
+$6.25
+$5.12
+COMEX
+Instrument Name
+Code
+Trading Hours
+Tick Size
+Tick Value
+Total Cost Round Trip
+Copper
+HG
+Sunday - Friday 17:00 - 16:00 CT
+Daily Break: 16:00 - 17:00 CT
+0.0005
+$12.50
+$5.12
+Gold
+GC
+Sunday - Friday 17:00 - 16:00 CT
+Daily Break: 16:00 - 17:00 CT
+0.10
+$10.00
+$5.12
+Micro Gold
+MGC
+Sunday - Friday 17:00 - 16:00 CT
+Daily Break: 16:00 - 17:00 CT
+0.10
+$1.00
+$2.20
+Platinum
+PL
+Sunday - Friday 17:00 - 16:00 CT
+Daily Break: 16:00 - 17:00 CT
+0.10
+$10.00
+$4.12
+Silver
+SI
+Sunday - Friday 17:00 - 16:00 CT
+Daily Break: 16:00 - 17:00 CT
+0.005
+$25.00
+$5.12
+Micro Silver
+SIL
+Sunday - Friday 17:00 - 16:00 CT
+Daily Break: 16:00 - 17:00 CT
+0.005
+$5.00
+$2.84
+CBOT
+Instrument Name
+Code
+Trading Hours
+Tick Size
+Tick Value
+Total Cost Round Trip
+Corn
+ZC
+Sunday - Friday 19:00 - 07:45 CT
+Monday - Friday 08:30 - 13:20 CT
+0.0025
+$12.50
+$6.12
+E-mini Dow Jones
+YM
+Sunday - Friday 17:00 - 16:00 CT
+Daily Break: 16:00 - 17:00 CT
+1.00
+$5.00
+$5.76
+Micro E-mini dow Jones
+MYM
+Sunday - Friday 17:00 - 16:00 CT
+Daily Break: 16:00 - 17:00 CT
+1.00
+$0.50
+$1.90
+Soybean
+ZS
+Sunday - Friday 19:00 - 19:45 CT
+Daily Break: 08:30 - 13:20 CT
+0.0025
+$12.50
+$6.12
+Soybean Meal
+ZM
+Sunday - Friday 19:00 - 19:45 CT
+Daily Break: 08:30 - 13:20 CT
+0.10
+$10.00
+$6.12
+Soybean Oil
+ZL
+Sunday - Friday 19:00 - 19:45 CT
+Daily Break: 08:30 - 13:20 CT
+0.0001
+$6.00
+$6.12
+Wheat
+ZW
+Sunday - Friday 19:00 - 19:45 CT
+Daily Break: 08:30 - 13:20 CT
+0.0025
+$12.50
+$6.12
+NYMEX
+Instrument Name
+Code
+Trading Hours
+Tick Size
+Tick Value
+Total Cost Round Trip
+Crude Oil
+CL
+Sunday - Friday 17:00 - 16:00 CT
+Daily Break: 16:00 - 17:00 CT
+0.01
+$10.00
+$4.92
+E-mini Crude Oil
+QM
+Sunday - Friday 17:00 - 16:00 CT
+Daily Break: 16:00 - 17:00 CT
+0.025
+$12.50
+$4.32
+Heating Oil
+HO
+Sunday - Friday 17:00 - 16:00 CT
+Daily Break: 16:00 - 17:00 CT
+0.0001
+$4.20
+$4.92
+Micro Crude Oil
+MCL
+Sunday - Friday 17:00 - 16:00 CT
+Daily Break: 16:00 - 17:00 CT
+0.01
+$1.00
+$1.16
+Natural Gas
+NG
+Sunday - Friday 17:00 - 16:00 CT
+Daily Break: 16:00 - 17:00 CT
+0.00025
+$2.50
+$5.12
+RBOB Gasoline
+RB
+Sunday - Friday 17:00 - 16:00 CT
+Daily Break: 16:00 - 17:00 CT
+0.0001
+$4.20
+$6.00
+E-Mini Natural Gas
+QG
+Sunday - Friday 17:00 - 16:00 CT
+Daily Break: 16:00 - 17:00 CT
+0.005
+$12.50
+$2.92
+To get funded to trade the instruments, start here.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃

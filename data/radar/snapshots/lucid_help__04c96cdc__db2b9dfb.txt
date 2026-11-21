@@ -1,0 +1,56 @@
+LucidBlack Scaling Plan | Lucid Trading Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Lucid Home
+Lucid Home
+Search for articles...
+All Collections
+LucidBlack (Legacy)
+LucidBlack Scaling Plan
+LucidBlack Scaling Plan
+The LucidBlack (legacy) scaling plan: how contract limits grow as your account builds profit and the milestones that unlock additional size.
+A
+Written by AJ
+August 26, 2026
+Table of contents
+LucidBlack Funded Account Scaling Plan
+The scaling plan controls how much of your max size is available to trade based on the simulated profits in your account. As your simulated profits increase and decrease, your max tradable contract size moves up and down based. See the table below for details.
+​
+The scaling plan updates at the end of each session, so your limits will not update in real-time throughout the day. Please see the table below for details:
+Simulated Profits
+$25,000
+​ Contract Limits
+$50,000
+​ Contract Limits
+$100,000
+​ Contract Limits
+$0 - $999
+1 mini or
+10 micros
+2 minis or
+20 micros
+3 minis or
+30 micros
+$1,000 - $1,999
+2 minis or
+20 micros
+3 minis or
+30 micros
+4 minis or
+40 micros
+$2,000 - $2,999
+-
+4 minis or
+40 micros
+5 minis or
+50 micros
+$3,000+
+-
+-
+6 minis or
+60 micros
+Circumventing the Scaling Plan
+Some trader may be inclined to try and get around the scaling plan. Our back-end systems track for this. If we see repeated behavior attempting to get around the limits, we may review your account.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Lucid Trading Help Center

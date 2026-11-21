@@ -1,0 +1,74 @@
+Practice Account | Topstep Help Center Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Skip to main content
+Discord Topstep TopstepTV
+Discord Topstep TopstepTV
+Search for articles...
+All Collections
+Topstep Program
+Trading Combine®
+Practice Account
+Practice Account
+Zero stakes. Real practice. The Practice Account is your sandbox.
+July 28, 2026
+Table of contents
+The Practice Account is a free 150K simulated account available to any Trader with an active Trading Combine subscription. Test strategies and products without touching your primary account. Hit the Maximum Loss Limit (MLL)? Reset for free, anytime.
+Practice Account Details
+Detail
+Value
+Account size
+150K, regardless of Trading Combine size
+Maximum Position Size
+15 lots
+Max accounts at once
+1
+Cost
+Free with active Trading Combine
+Resets
+Always free
+Label in platform
+"PRACTICE" in account drop-down
+How to Activate
+Log in to the Topstep Dashboard
+Click Accounts on the left side
+Click Add-ons on the top left
+Click Activate on the Practice Account option
+👉 To close your Practice Account, follow the same steps and click Unsubscribe instead.
+👉 To Reset your Practice Account: click Unsubscribe, then click Activate to create a new one.
+Practice Account FAQs
+I can't activate my Practice Account — what should I check?
+In order to have a Practice Account, you must have an active Trading Combine subscription. If your subscription is canceled or you only have an Express Funded Account, the Practice Account add-on will not work.
+Additionally, an incomplete IDV verification may be the cause. Check your email for the IDV form, complete it, then return to the Add-ons page and try again. IDV is also required for new Trading Combine purchases.
+My Practice Account shows as Ineligible and I can't Unsubscribe — what do I do?
+My Practice Account shows as Ineligible and I can't Unsubscribe — what do I do?
+If your Trading Combine subscription is already canceled and your Practice Account shows as Ineligible, the Unsubscribe button may not be available. In this case, please contact our Support Team and we'll close the account for you.
+Is there a limit to how many times I can Reset a Practice Account each day?
+Yes, you can Reset a Practice Account up to 10 times per day. All Practice Account Resets are free, but the limit applies.
+​
+How long do I have access to the Practice Account?
+As long as you have an active Trading Combine subscription.
+Related Articles
+Trading Combine Subscriptions
+What is a Reset?
+Getting Started with the Topstep Dashboard
+Live Funded Account Parameters
+Topstep Labs
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Your Privacy Choices

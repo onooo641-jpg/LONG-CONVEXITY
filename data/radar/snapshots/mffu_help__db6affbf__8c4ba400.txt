@@ -1,0 +1,132 @@
+Builder Plan 150k - Comprehensive Guide | My Funded Futures Help Center Skip to main content
+Go to website Discord YouTube English हिन्दी Español English
+Go to website Discord YouTube English हिन्दी Español English
+Search for articles...
+All Collections
+Builder Plan
+Builder Plan 150k - Comprehensive Guide
+Builder Plan 150k - Comprehensive Guide
+The Builder 150K is a new addition to the Builder plan family. It follows the same core structure as all Builder plans; 1-day evaluation, EOD trailing MLL, 80/20 payout split. Plans sized to carry a soft daily loss limit (DLL) from day one.
+September 25, 2026
+Table of contents
+Evaluation Stage
+MyFundedFutures has adopted a streamlined approach to evaluations.
+There are absolutely no activation fees on any of our plans.
+Plan Parameters (Evaluation Stage)
+Builder 150K
+Starting Balance
+$150,000
+Profit Target (6%)
+$9,000
+Max EOD Drawdown (MLL)
+$4,500
+Soft Daily Loss Limit (Soft Pause)
+$2,500
+Max Contracts
+9 Minis / 90 Micros
+Consistency Rule
+None
+Minimum Trading Days
+1 Day
+T1 News Trading
+Allowed
+Drawdown Model
+EOD Trailing
+Soft DLL does not breach your account. Hitting the $2,500 Soft DLL soft‑pauses trading for the rest of the trading session. The account remains open and the evaluation continues the next trading session. Only breaching the Max Loss Limit (MLL) closes the account.
+Sim Funded Stage
+Once you hit your $9,000 profit target with at least 1 trading day logged, you are promoted to the Sim Funded stage. Your account begins with a $0 balance.
+​
+Traders can hold one active Builder Sim Funded account at a time on the Builder 150K plan.
+Builder 150K
+Starting Balance
+$0
+Max EOD Drawdown (MLL)
+$4,500
+Soft Daily Loss Limit (Soft Pause)
+$2,500
+Max Contracts
+9 Minis / 90 Micros
+Buffer Required
+$4,600
+Inactivity Rule
+7 Calendar Days
+T1 News Trading
+Allowed
+Payout Policy
+The Builder 150K runs on a $4,500 payout cap per cycle, up to 5 sim payouts, each paid at 80/20 in your favor.
+Builder 150K
+Profit Split
+80/20 - 80% to the Trader
+Consistency Rule
+50%
+Minimum Qualifying Days / Cycle
+2 Days
+Minimum Payout Amount
+$1,500
+Maximum Payout Per Cycle
+$4,500
+Buffer (Must Be Cleared to Request)
+$4,600
+Payout Requirements – Step by Step
+Your buffer must be fully cleared before you can submit any payout request. The buffer equals MLL + $100 or $4,500
+For your first payout: you must have at least $1,500 in net profit above the buffer.
+For all subsequent payouts: you must have at least $1,500 in net profit since your last approved payout.
+You must have traded on at least 2 trading days in the current cycle.
+The 50% consistency rule applies: your single largest profit day cannot represent more than 50% of your total profits in the cycle. This calculation resets after each approved payout.
+Maximum payout per cycle is $4,500. You keep 80% of what you withdraw.
+Payout Example
+Trader on the Builder 150K clears the buffer and builds $8,600 in total sim profits.
+Buffer: $4,600 (cleared, payout requests now available)
+Net profit above buffer: $4,000, meets the $1,500 minimum for first payout
+Requested payout: $3,500 (within the $4,500 max)
+After 80/20 split, trader receives: $2,800
+Transition to Live
+After your 5th approved sim payout, you are eligible for a live funded account with Blue Row Capital .
+Builder 150K
+Promotion Trigger
+After 5th approved sim payout
+Live Account Drawdown
+$4,500 EOD Trailing
+Max Loss Limit
+Locks and remains static once it reaches $100 above the starting balance
+Max Contracts
+4 Minis / 40 Micros
+Minimum Payout Amount
+$250
+Profit Split (Live)
+80% Trader / 20% Firm
+Live Payout Cycle
+Daily
+Daily Loss Limit (Live)
+None
+Consistency Rule (Live)
+None
+Max Live Accounts
+1
+Live payouts are processed daily and there is no consistency rule on the live account.
+Live Post-Breach Cooldown Period Protocol
+Following Live account closure due to Maximum Loss breach:
+21-Day Cooldown Period initiation: All Sim Funded account trading is prohibited.
+New Evaluation purchases, account resets, or additional account acquisitions are prohibited.
+Post-Cooldown (21 calendar days):
+Cooldown restrictions are lifted.
+You can continue from your active Sim Funded account (if applicable) and/or purchase new Evaluations or accounts, unless communicated otherwise by the team.
+Account Rules
+How the EOD Trailing Drawdown Works
+The Maximum Loss Limit (MLL) is an End of Day (EOD) trailing drawdown. It does not move intraday. It only adjusts after the market closes each session, based on where your account closed.
+The MLL trails upward as your account equity reaches new end-of-day highs.
+It never moves down.
+The MLL locks permanently once it reaches $100 above the starting balance. From that point, it does not trail further.
+How the Soft Daily Loss Limit Works
+The Soft DLL ($2,500 on the Builder 150K) is a soft pause, not a breach. If your intraday losses reach the Soft DLL, trading stops for the remainder of that trading session. Your account remains active, and you resume the next trading session as normal.
+It applies during both the Evaluation and Sim Funded stages. The only rule that can close your account is breaching the MLL.
+News Trading
+T1 news trading is allowed during the Evaluation and Sim Funded stages. You may open and hold positions through any scheduled T1 news event without limitation.
+Related Articles
+Builder Plan 50k - A Comprehensive Guide
+Builder Plan 25k - Legacy No DLL
+Builder Plan 100k - Comprehensive Guide
+Builder Plan 25k - A Comprehensive Look
+Comprehensive Look into Redesigned Pro Plan
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

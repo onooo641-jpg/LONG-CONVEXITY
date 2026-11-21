@@ -1,0 +1,66 @@
+LucidFlex Customization | Lucid Trading Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Lucid Home
+Lucid Home
+Search for articles...
+All Collections
+LucidFlex
+LucidFlex Customization
+LucidFlex Customization
+O
+Written by Operations Lead
+October 20, 2026
+Table of contents
+LucidFlex Customization
+Overview
+LucidFlex gives traders the ability to customize their account at the time of purchase. Two settings can be adjusted to create the trading experience that best fits your risk preferences. The customization options are:
+Daily Loss Limit: On or Off
+Consistency: 40% or 50%
+These settings create four unique LucidFlex account configurations .
+Daily Loss Limit
+The Daily Loss Limit (DLL) determines whether a daily loss cap is enforced on your account. The DLL is a soft breach, so if you hit it you will simply be locked out until the next trading session.
+Daily Loss Limit On
+A Daily Loss Limit is enforced on both evaluation and funded accounts
+Results in a lower evaluation purchase price
+Your funded account gets On Demand Payouts (see below)
+Daily Loss Limit Off
+No Daily Loss Limit is applied during either the evaluation or funded phase
+Results in a higher evaluation purchase price
+Payouts follow the regular end-of-day schedule
+Consistency
+40% (standard): your largest day must be 40% or less of your evaluation profit. Lowest price.
+50% (add-on): your largest day can be up to 50%, so you can pass in as few as 2 days. Added at checkout for a small fee.
+Consistency applies to the evaluation only. Funded LucidFlex accounts have no consistency rule. See LucidFlex Consistency Percentage .
+On Demand Payouts
+Keep the Daily Loss Limit On and your funded account can request payouts during the trading session, from profit made that session (6:00 PM to 3:45 PM ET).
+After requesting an intraday payout, trading on your funded LucidFlex account is paused until the end of the trading day.
+Accounts with a Hedging Violation are not eligible for intraday payouts. See Prohibited: Hedging .
+With the Daily Loss Limit Off , payouts follow the regular end-of-day schedule.
+Available Account Configurations
+LucidFlex offers four possible combinations.
+Option 1: Daily Loss Limit ON + 40% Consistency
+Daily Loss Limit enabled for evaluation and funded
+On Demand Payouts
+Cheapest version of LucidFlex
+Option 2: Daily Loss Limit ON + 50% Consistency
+Daily Loss Limit enabled for evaluation and funded
+On Demand Payouts
+Pass in as few as 2 days
+Option 3: Daily Loss Limit OFF + 40% Consistency
+No Daily Loss Limit
+Regular end-of-day payouts
+Option 4: Daily Loss Limit OFF + 50% Consistency
+No Daily Loss Limit
+Regular end-of-day payouts
+Pass in as few as 2 days
+Highest pricing version of LucidFlex
+Choosing the Right Configuration
+Your customization should reflect your priorities:
+Choose Daily Loss Limit ON if you prefer a lower purchase price and On Demand Payouts
+Choose Daily Loss Limit OFF if you want more flexibility and don't mind paying a premium for it
+Choose 50% Consistency if you want to pass faster
+Once selected, these settings cannot be changed for an active account. If you want a different configuration, you'll need to purchase a new LucidFlex account with your preferred options.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Lucid Trading Help Center

@@ -1,0 +1,316 @@
+Futures instruments, codes and costs | Blue Guardian Help Centre
+Skip to content Help Search the help centre ⌘K
+Website Start challenge Help Centre home Collections
+Getting started Account inactivity rule How Blue Guardian works Getting help and using your dashboard
+Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
+Payouts How payouts work
+Billing & accounts Paying for your account: methods, card rules and refunds How many accounts can I have? Futures bundle discounts
+Trading rules Prohibited trading strategies What happens if I break a rule? Futures risk management rules Trading hours and the trading day CFD news trading rules
+Platforms & instruments Trading platforms CFD trading conditions: markets, commissions and leverage Futures contract limits and funded scaling Futures instruments, codes and costs
+CFD plans Instant Standard account rules Instant Starter account rules 1 Step Standard rules 2 Step Standard rules 1 Step Nano rules 2 Step Nano rules Buy Now Pay Later (BNPL) rules
+Futures plans Reserve account rules Elite account rules Express account rules Direct account rules Elite, Reserve & Direct Path to Live Zero account rules Zero Path to Live
+Affiliates & competitions Affiliate program Monthly trading competition
+Help Centre
+Platforms & instruments
+Futures instruments, codes and costs
+Every Futures contract you can trade, with codes, tick sizes, tick values, cost per side, market hours in New York time and month codes.
+Applies to: Futures Updated 13 November 2026
+Short answer
+Below are all the Futures contracts you can trade, with their codes, tick sizes, tick values and total cost per side. At Blue Guardian you can trade from 6:00 PM to 4:10 PM New York time , within each market's own hours.
+Market hours
+All times are New York time.
+Most contracts (equity indices, currencies, metals, energy, interest rates, crypto): Sunday–Friday, 6:00 PM–5:00 PM, with a daily break from 5:00 PM to 6:00 PM.
+Livestock (GF, HE, LE): Monday–Friday, 9:30 AM–2:05 PM.
+Grains (ZC, ZS, ZM, ZL, ZW): Sunday–Friday, 8:00 PM–8:45 AM, and Monday–Friday, 9:30 AM–2:20 PM.
+Equity indices
+Instrument
+Code
+Tick size
+Tick value
+Cost per side
+E-mini S&P 500
+ES
+0.25
+$12.50
+$2.88
+Micro E-mini S&P 500
+MES
+0.25
+$1.25
+$0.80
+E-mini Nasdaq-100
+NQ
+0.25
+$5.00
+$2.88
+Micro E-mini Nasdaq-100
+MNQ
+0.25
+$0.50
+$0.95
+E-mini Russell 2000
+RTY
+0.10
+$5.00
+$1.90
+Micro E-mini Russell 2000
+M2K
+0.10
+$0.50
+$0.80
+E-mini Dow Jones
+YM
+1.00
+$5.00
+$1.90
+Micro E-mini Dow Jones
+MYM
+1.00
+$0.50
+$0.62
+Nikkei/USD
+NKD
+5.00
+$25.00
+$2.77
+Currencies
+Instrument
+Code
+Tick size
+Tick value
+Cost per side
+Australian Dollar
+6A
+0.00005
+$5.00
+$2.22
+British Pound
+6B
+0.0001
+$6.25
+$2.22
+Canadian Dollar
+6C
+0.00005
+$5.00
+$2.22
+Euro FX
+6E
+0.00005
+$6.25
+$2.88
+Japanese Yen
+6J
+0.0000005
+$6.25
+$2.22
+New Zealand Dollar
+6N
+0.00005
+$5.00
+$2.22
+Swiss Franc
+6S
+0.00005
+$6.25
+$2.22
+Micro AUD/USD
+M6A
+0.0001
+$1.00
+$0.56
+Micro EUR/USD
+M6E
+0.0001
+$1.25
+$0.80
+Metals
+Instrument
+Code
+Tick size
+Tick value
+Cost per side
+Gold
+GC
+0.10
+$10.00
+$2.17
+E-mini Gold
+QO
+0.25
+$12.50
+$1.37
+Micro Gold
+MGC
+0.10
+$1.00
+$1.20
+Silver
+SI
+0.005
+$25.00
+$2.17
+Copper
+HG
+0.0005
+$12.50
+$2.17
+Platinum
+PL
+0.10
+$10.00
+$1.37
+Energy
+Instrument
+Code
+Tick size
+Tick value
+Cost per side
+Crude Oil
+CL
+0.01
+$10.00
+$2.12
+E-mini Crude Oil
+QM
+0.025
+$12.50
+$1.82
+Micro Crude Oil
+MCL
+0.01
+$1.00
+$0.82
+Natural Gas
+NG
+0.00025
+$2.50
+$2.12
+Heating Oil
+HO
+0.0001
+$4.20
+$2.12
+RBOB Gasoline
+RB
+0.0001
+$4.20
+$2.12
+Interest rates
+Instrument
+Code
+Tick size
+Tick value
+Cost per side
+US 2-Year Note
+ZT
+0.00390625
+$7.8125
+$1.22
+US 5-Year Note
+ZF
+0.0078125
+$7.8125
+$1.27
+US 10-Year Note
+ZN
+0.015625
+$15.625
+$1.37
+Micro 10-Year Yield
+10Y
+0.001
+$1.00
+$0.92
+Agriculture
+Instrument
+Code
+Tick size
+Tick value
+Cost per side
+Corn
+ZC
+0.0025
+$12.50
+$2.67
+Soybean
+ZS
+0.0025
+$12.50
+$2.67
+Soybean Meal
+ZM
+0.10
+$10.00
+$2.67
+Soybean Oil
+ZL
+0.0001
+$6.00
+$2.67
+Wheat
+ZW
+0.0025
+$12.50
+$2.67
+Feeder Cattle
+GF
+0.00025
+$12.50
+$2.65
+Live Cattle
+LE
+0.00025
+$10.00
+$2.65
+Lean Hog
+HE
+0.00025
+$10.00
+$2.65
+Crypto
+Instrument
+Code
+Tick size
+Tick value
+Cost per side
+Micro Bitcoin
+MBT
+5.00
+$0.50
+$3.12
+Micro Ether
+MET
+0.50
+$0.05
+$0.80
+Contract month codes
+A contract's symbol adds a month code and year. For example, E-mini Nasdaq-100 expiring in December 2026 is NQZ2026 .
+Jan F
+Feb G
+Mar H
+Apr J
+May K
+Jun M
+Jul N
+Aug Q
+Sep U
+Oct V
+Nov X
+Dec Z
+Still need help?
+Chat with our support team. We usually reply in a few minutes.
+Chat with us
+More in Platforms & instruments
+Applies to: CFD and Futures Trading platforms Applies to: CFD CFD trading conditions: markets, commissions and leverage Applies to: Futures Futures contract limits and funded scaling
+On this page Short answer
+Market hours
+Equity indices
+Currencies
+Metals
+Energy
+Interest rates
+Agriculture
+Crypto
+Contract month codes
+© 2026 All Rights Reserved – Blue Guardian Terms Privacy Cookies

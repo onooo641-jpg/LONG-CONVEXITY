@@ -1,0 +1,81 @@
+How to identify the Futures Front Month Contract | Topstep Help Center Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Skip to main content
+Discord Topstep TopstepTV
+Discord Topstep TopstepTV
+Search for articles...
+All Collections
+Getting Started
+Trading Education
+How to identify the Futures Front Month Contract
+How to identify the Futures Front Month Contract
+TopstepX™ handles it. But knowing why matters.
+June 8, 2026
+Table of contents
+The Basics
+TopstepX™ automatically updates your contract to the front month — you don't need to manually roll or switch. That said, understanding what the front month is and how it's identified makes you a sharper trader.
+What Is the Front Month?
+The front month is the futures contract with the highest trading volume at any given time. At Topstep, this is the contract you're required to trade. When volume shifts to the next expiration, that becomes the new front month.
+How to Identify It
+If you ever want to verify which contract is the front month, check the CME product page for your instrument. The front month is whichever expiration has the highest volume.
+Quick links to common products:
+ES | MES | NQ | MNQ | YM | MYM | RTY | M2K | CL | GC | SI | ZN | ZB | NG | 6E | 6B
+Reading a Contract Symbol
+Each futures contract symbol is built from 3 parts: Product + Month Code + Year
+Month
+Code
+Month
+Code
+Month
+Code
+January
+F
+May
+K
+September
+U
+February
+G
+June
+M
+October
+V
+March
+H
+July
+N
+November
+X
+April
+J
+August
+Q
+December
+Z
+Example: Crude Oil (CL), front month is December 2024 → CLZ24
+Note: Some platforms use a single digit for the year (CLZ4), others use 2 (CLZ24). Check your platform's format.
+Related Articles
+When and What Products Can I Trade?
+What are the costs in the Live Funded Account?
+Risk Adjustments: High Risk/High Volatility
+TopstepX™
+Topstep Labs
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Your Privacy Choices

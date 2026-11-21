@@ -1,0 +1,178 @@
+Can I trade news? | Alpha Capital Help Center Skip to main content
+Português do Brasil English Español English
+Português do Brasil English Español English
+Search for articles...
+All Collections
+Trading Rules
+Can I trade news?
+Can I trade news?
+August 25, 2026
+During the evaluation phases, you can trade freely during all news releases.
+After you pass the evaluation and become a Qualified Analyst, you should be careful when trading during news releases.
+On our Qualified Analyst Pro / One / Three / Direct accounts, you are NOT permitted to execute any new trades or close existing trades on the targeted instruments (as listed in the table) within the window of 5 minutes before and 5 minutes after the release of the news announcements below.
+To clarify, we define executing a trade as opening or closing a trade, either through a pending order (including a stop-loss or take-profit) or market execution. You are allowed to hold trades on the targeted instrument(s), provided they were opened more than 5 minutes before the restricted news event.
+If your Stop Gain (an adjusted Stop Loss in profit territory) or Take Profit is triggered/filled during the restricted time window, it will be considered a violation. This will be classified as a Soft Breach, and any profits earned will not be eligible for a performance fee.
+Any losses incurred during news trading are the trader's responsibility and will not be removed. (Please refer to the Important Trading Terms article for information on potential slippage when trading under high-impact news conditions.)
+Summary
+Alpha Pro 6% / 8% / 10% Plan:
+Can't open trades 5 minutes before or 5 minutes after the news release.
+Can't close trades 5 minutes before or 5 minutes after the news release.
+10-minute window (5 minutes on either side of the news): NO trades to be executed.
+Alpha One Plan:
+Can't open trades 5 minutes before or 5 minutes after the news release.
+Can't close trades 5 minutes before or 5 minutes after the news release.
+10-minute window (5 minutes on either side of the news): NO trades to be executed.
+Alpha Three Plan:
+Can't open trades 5 minutes before or 5 minutes after the news release.
+Can't close trades 5 minutes before or 5 minutes after the news release.
+10-minute window (5 minutes on either side of the news): NO trades to be executed.
+Alpha Direct Plan:
+Can't open trades 5 minutes before or 5 minutes after the news release.
+Can't close trades 5 minutes before or 5 minutes after the news release.
+10-minute window (5 minutes on either side of the news): NO trades to be executed.
+Alpha Swing Plan:
+Trading during major news events is allowed. However, if a trade is initiated within 2 minutes before or up to 2 minutes after a news release (a 4-minute window), its duration must exceed 2 minutes for the trade to be valid.
+Please note that Swing accounts are also subject to gambling rules .
+Affected Instruments
+Macroeconomic Announcements
+ALL INSTRUMENTS
+USD CPI/Inflation Rate
+Federal Funds Rates and Statements + Press conference
+Non-Farm Employment Change
+XAUUSD.pro
+XAUUSD.raw
+XAGUSD.pro
+XAGUSD.raw
+ALL USD HIGH-IMPACT NEWS/SPEECHES
+ALL AUD HIGH-IMPACT NEWS/SPEECHES
+ALL CAD HIGH-IMPACT NEWS/SPEECHES
+ALL EUR HIGH-IMPACT SPEECHES
+ALL GBP HIGH-IMPACT SPEECHES
+ALL CURRENCIES - INTEREST RATE DECISION + PRESS CONFERENCE
+ALL CURRENCIES - CPI/Inflation Rate
+ALL CURRENCIES - GDP GROWTH RATE
+ALL CURRENCIES - PCE
+ALL CURRENCIES - PMI
+ALL CURRENCIES - UNEMPLOYMENT CHANGE/RATE
+ALL CURRENCIES - EMPLOYMENT CHANGE/RATE
+USD (related to Forex, Commodities & US indices, US30.PRO/RAW, US100.PRO/RAW, US500.PRO/RAW)
+Employment Change/Rate
+Unemployment Change/Rate
+Non-Farm Payrolls and Employment
+PMI
+ISM
+CPI/Inflation Rate
+PPI
+GDP
+Federal Funds Rates and Statements + Press conference
+Balance of Trade
+Jobless Claims
+Consumer Confidence/Sentiment
+JOLTs Job Openings
+Average Hourly Earnings
+10Y Note Auction
+30Y Bond Auction
+Existing and New Home Sales
+Durable Goods Orders
+Speeches
+Empire State Manufacturing Index
+Retail Sales
+Core PCE
+EUR (FOREX, EU Indices)
+PMI
+CPI/Inflation Rate
+GDP
+Employment Change/Rate
+Unemployment Change/Rate
+Retail Sales
+Balance of Trade
+ECB Rates and Statements + Press conference
+Deposit Facility Rate
+Economic Sentiment Index
+Business Climate
+Consumer Confidence
+Speeches
+ALL GBP HIGH-IMPACT NEWS/SPEECHES
+GBP (FOREX, UK indices)
+PMI
+CPI/Inflation Rate
+GDP
+Nationwide House Prices
+Mortgage Approvals
+Retail Sales
+Retail Price Index
+Housing Price Balance
+BoE Rates and Statements + Press conference
+Trade Balances
+Industrial and Manufacturing Production
+Employment Change/Rate
+Unemployment Change/Rate
+Claimant Count Change
+Consumer Confidence
+Speeches
+ALL EUR HIGH-IMPACT NEWS/SPEECHES
+CAD (FOREX, Oil)
+BoC Rates and Statements + Press conference
+PMI
+CPI/Inflation Rate
+GDP
+International Merchandise Trade
+Wholesale Sales
+Housing Starts
+Balance of Trade
+Employment Change/Rate
+Unemployment Change/Rate
+Retail Sales
+Speeches
+AUD (FOREX Only)
+Cash Rate & RBA Statement + Press conference
+Employment Change/Rate
+Unemployment Change/Rate
+CPI/Inflation Rate
+GDP
+Retail Sales
+Speeches
+NZD (FOREX Only)
+Official Cash Rate & RBNZ Rate Statement + Press conference
+Employment Change/Rate
+Unemployment Change/Rate
+CPI/Inflation Rate
+GDP
+Speeches
+CHF (FOREX Only)
+CPI/Inflation Rate
+GDP
+SNB Policy Rate + Press conference
+Speeches
+JPY (FOREX, Asian Indices)
+PMI
+CPI/Inflation Rate
+GDP
+Monetary Base
+Leading Economic Index
+Japan to Sell Bonds
+Industrial Production
+Merchandise Trade Balance
+BoJ Rates and Statements + Press conference
+Retail Trade
+Consumer Confidence
+Balance of Trade
+Speeches
+OTHER INSTRUMENTS
+Announcements
+USOIL.PRO/RAW
+UKOIL.PRO/RAW
+ALL CAD HIGH IMPACT NEWS
+Crude Oil Inventories
+For a visual summary of all news events and their affected instruments, please expand the illustration below.
+You may refer to the following Economic Calendars for comprehensive insight into significant market-moving news events. Note that while one platform may designate an event as "Orange" (medium impact), another might classify it as "Red" (high impact). What ultimately matters to us is whether the news release is listed above and is considered high-impact by at least one of the calendar sources below:
+Myfxbook Forex Economic Calendar
+Forex Factory Economic Calendar
+Regarding speeches and conferences, traders should treat the no-trade window as covering their entire duration . For example, under the Alpha Pro 10% plan, you should not trade starting 5 minutes before they begin, during the speech or conference itself, or for up to 5 minutes after they end.
+Engaging in trades that contravene our standards for achieving unrealistic fills during high-impact news events may result in the invalidation of the profits from such trades. However, please note that this does not jeopardise the status of your account.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+[email protected]
+Discord
+Website
+Dashboard
+We run on Intercom

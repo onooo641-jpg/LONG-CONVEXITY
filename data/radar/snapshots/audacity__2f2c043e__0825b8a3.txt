@@ -1,0 +1,210 @@
+Ipinagbabawal na Mga Kasanayan sa Pangangalakal at Mga Paghihigpit sa
+Pagdiriwang 14 taon, 14% OFF Para sa Lahat ng Mga Programa Pagdiriwang 14 taon, 14% OFF Para sa Lahat ng Mga Programa
+Pagdiriwang 14 taon, 14% OFF Para sa Lahat ng Mga Programa
+Pagdiriwang 14 taon, 14% OFF Para sa Lahat ng Mga Programa
+Pagdiriwang 14 taon, 14% OFF Para sa Lahat ng Mga Programa
+Pagdiriwang 14 taon, 14% OFF Para sa Lahat ng Mga Programa
+Pagdiriwang 14 taon, 14% OFF Para sa Lahat ng Mga Programa
+🎓 Sumali sa Trader University
+Tungkol sa
+Pagpopondo
+Mga kwento
+Kumpetisyon
+Mga Kaakibat
+Mapagkukunan
+TL English Türkçe Español Français Italiano Português Deutsch Filippino Русский العربية हिन्दी 日本語
+Mag-login
+Buong Patnubay sa Mga Ipinagbabawal na
+Sa Audacity Capital, inaasahang gumawa ng mga negosyante ng independiyenteng, matalinong desisyon sa pangangalakal at pamahalaan ang panganib nang responsable Upang itaguyod ang isang patas at parehong kapaligiran sa pangangalakal, ipinagbabawal ang mga kasanayan sa Ipinapaliwanag ng gabay na ito ang bawat paghihigpit, kung bakit nalalapat ito, at kung paano makikilala ang
+Kung hindi ka sigurado kung pinapayagan ang isang diskarte sa pangangalakal o awtomatikong tool, makipag-ugnay sa aming koponan ng suporta bago gamitin ito sa iyong account.
+Paglalarawan
+Mataas na Dalas na Kalakalan (HFT)
+Tika ang Scalping
+Hedge o Group Hedge Sa Maramihang Mga Account
+Averaging Down/ Mga Diskarte sa Martingale
+Paggamit ng Third-Party Expert Advisors (EA)
+Average ng Gastos ng Dollar (DCA)
+Pamamahala ng Account ng Mga Ikatlong Parti
+Kopyahin ang Trading
+Pangangalakal sa Grid
+Pagsasamantala ng Mga Kahinaan ng System
+Awtomatikong Multi-Trade na Aktibidad
+Pag-aabuso sa Laki ng
+Panuntunan sa Kalakalan sa Week
+Isang Direksyon na Pagtaya
+Jump To
+Paglalarawan
+Upang mapanatili ang isang patas, matatag, at transparent na kapaligiran sa kalakalan, mahigpit na ipinagbabawal ang mga sumusunod na diskarte at pag-uu
+Mataas na Dalas na Kalakalan (HFT)
+Ano ito Paggamit ng Expert Advisors (EA), bot, o algorithm upang buksan at isara ang malaking dami ng mga kalakalan sa loob ng mga partisyon ng isang segundo, samantalahin ang maliliit, maikling paggalaw ng presyo o mga puwang sa data feed.
+Bakit hindi ito pinapayagan Ang HFT ay umaasa sa bilis at imprastraktura sa halip na pagsusuri sa merkado at maaaring lumikha ng hindi patas na pakinabang, pagmamanipula ng presyo Saklaw din ng paghihigpit na ito ang latency arbitrage: pagsasamantala sa mga pagkaantala sa pagitan ng pagpapatupad ng kalakalan at mga update sa data
+Paano ito maaaring lumitaw
+Malaking bilang ng mga kalakalan na binuksan at sarado sa loob ng mga partisyon ng isang segundo.
+Mga awtomatikong sistema na nag-target sa mga pagkaantala ng quote, panandaliang pagkakaiba sa presyo, o pag-time ng feed sa halip na pananaw sa merkado.
+Mga halimbawa
+Ang isang EA ay nagpapatakbo ng higit sa 50 trading bawat minuto sa EUR/USD, na ang bawat kalakalan ay sarado sa loob ng isang bahagi ng segundo upang i-target ang mga pagkakaiba-iba sa sub-pip sa pagitan ng feed ng platform at isang mas mabilis na panlabas na feed.
+Kinikilala ng isang bot ang mga paulit-ulit na pagkaantala sa feed at sistematikong pumapasok sa mga trade bago ang naantala
+Mahalagang paglilinaw Ang isang nakahiwalay na kalakalan na nagsasara nang hindi pangkaraniwang mabilis ay hindi, sa sarili nito, nagtatatag ng diskarte sa HFT. Ang isang paulit-ulit na diskarte na nakabatay sa bilis o latensya ang nag-aalala.
+Tika ang Scalping
+Ano ito Pagbubukas at pagsasara ng mga kalakalan sa loob ng isang napakaikling window (2 minuto o mas mababa), na naglalayong makuha ang maliit na pagbabagu-bago ng presyo sa halip na makipagkalakalan ng tunay
+Bakit hindi ito pinapayagan Ang tick scalping ay umaasa sa ingay sa merkado sa halip na pagsusuri o isang tinukoy na diskarte. Maaari itong isagawa nang manu-mano o sa pamamagitan ng mga awtomatikong tool.
+Paano ito maaaring lumitaw
+Paulit-ulit na mga entry at paglabas sa loob ng dalawang minuto o mas kaunti.
+Maliit at madalas na mga target na hinihimok ng maliit na mga pag-ikot ng presyo
+Mga halimbawa
+10:00:00 - Bumili ng 1.00 lot EUR/USD; 10:01:35 - isara para sa isang 3-pip kita. Ang pag-uulit ng mga maikling pangangalakal na ito batay sa kaunting paggalaw ng presyo ay bumubuo ng ipinagbab
+Paulit-ulit na binubuksan ng isang negosyante ang mga kalakalan na nag-target sa isa o dalawang pips, na nagsasara ang bawat isa pagkatapos ng ilang segundo nang walang mas malawak na pang
+Mahalagang paglilinaw Ang isang solong posisyon na nagsasara sa loob ng dalawang minuto dahil hindi inaasahang naabot ang stop-loss o take-profit nito ay hindi kinakailangang katibayan ng isang diskarte sa tick-scalping. Ang mga pattern at pangyayari sa kalagayan ay may kaugnayan.
+Hedge o Group Hedge Sa Maramihang Mga Account
+Ano ito Paglalagay ng mga salungat na posisyon sa pagbili at pagbebenta sa parehong instrumento, sa loob ng isang account o sa maraming account na kabilang sa negosyante o nakikipag-ugnay sa iba, upang i-offset ang pagkakalantad sa merkado o lumikha ng isang resulta na walang panganib.
+Bakit hindi ito pinapayagan Ang mga salungat na posisyon ay maaaring ilipat ang mga pagkalugi sa isang account habang bumubuo ng kita sa isa pa, na lumilikha ng isang pag-aayos ng estilo ng arbitrage sa halip na tunay na pagkuha ng pelisiko
+Paano ito maaaring lumitaw
+Pagtutugma o malapit na naka-oras na posisyon sa kabaligtaran na direksyon sa parehong instrumento.
+Nakikipag-ugnay na pagbili at pagbebenta sa pagitan ng hiwalay na mga account o
+Mga halimbawa
+Ang Account A ay bumili ng GBP/USD habang ang Account B, na pinapatakbo ng parehong negosyante o isang nakikipag-ugnay na kasosyo, ay nagbebenta ng isang pantay na laki na posisyon ng GBP/USD nang sabay.
+Nagbubukas ng isang negosyante ang posisyon ng pagbebenta sa parehong instrumento upang i-offset ang umiiral na posisyon sa pagbili sa halip na isara ang orihinal na pagkakalantad
+Mahalagang paglilinaw Ang mga hindi nauugnay na posisyon sa hiwalay na mga merkado na nangyayari na gumaganap nang iba ay hindi, sa kanilang sarili, patunay ng nakaayos na hedging. Ang ipinagbabawal na pag-uugali ay may kaugnayan sa mga salungat na posisyon na sinasadyang
+Averaging Down/ Mga Diskarte sa Martingale
+Ano ito Pagtaas ng laki ng posisyon pagkatapos ng pagkawala sa parehong nawalang ideya sa kalakalan, sa isang pagtatangka na mabawi ang mga nakaraang pagkalugi sa isang pangwakas na pananalong kalakalan.
+Bakit hindi ito pinapayagan Ang pamamaraang ito ay maaaring mangangailangan ng unti-unting mas maraming kapital sa panahon ng pagkawala ng mga streaks at maaaring mabilis na lumabag sa mga nakapirming limitasyon ng drawdown ng isang trading account.
+Paano ito maaaring lumitaw
+Pagtaas ng laki ng lot pagkatapos ng magkakasunod na pagkalugi o masamang
+Pagdobleng o kung paano lumalaki ang pagkakalantad upang ipagtanggol ang parehong nawawalang ideya sa kalakalan.
+Mga halimbawa
+Ang isang negosyante ay bumili ng 0.50 lot ng USD/JPY, pagkatapos ay nagdaragdag ng 1.00 lot at 2.00 lot habang gumagalaw ang kalakalan laban sa kanila, na sinusubukang mabawi ang lahat ng pagkalugi sa pamamagitan ng isang pagbabalik.
+Matapos ang nawawalang kalakalan ng ginto, paulit-ulit na pumapasok ang isang negosyante sa parehong direksyon na may mas malaking laki ng lot lamang upang mabawi ang naunang pagkawala.
+Mahalagang paglilinaw Ang pagbabawal ay may kinalaman sa mga pagtaas sa pagkakalantad na hinihimok Ang paglalarawan ng isang diskarte bilang “nakaplano” ay hindi naglalabas ng pagtaas ng istilo ng martingale pagkatapos ng pagkawala.
+Paggamit ng Third-Party Expert Advisors (EA)
+Ano ito: Paggamit ng isang Expert Advisor (EA), trading bot, o awtomatikong algorithm ng pangangalakal na hindi mo personal na binuo. Kabilang dito ang mga EA na binili sa komersyal, inuupahan na mga EA, na-download na bot, ibinahaging algorithm, o mga awtomatikong sistema ng pangangalakal na nilikha ng isa pang indibidwal
+Bakit hindi ito pinapayagan: Sa Audacity Capital, pinahihintulutan lamang ng mga mangangalakal na gumamit ng mga EA na personal nilang binuo. Tinitiyak nito na pinapanatili ng mga mangangalakal ang buong pagmamay-ari at kontrol sa kanilang mga diskarte sa pangangalakal at ang kanilang aktibidad sa pangangalakal ay sumasalamin sa kanilang sariling mga
+Hindi pinapayagan ang mga ibinebenta sa komersyal na mga EA, third-party na naka-code na mga EA, signal based trading bots, o anumang awtomatikong software sa pangangalakal na nakuha mula sa mga panlabas na mapagkukunan, anuman kung ang software ay libre o binayaran.
+Mga halimbawa ng ipinagbabawal na gawain
+Pagbili ng isang EA mula sa isang online marketplace o third-party vendor at paggamit nito sa iyong account.
+Paggamit ng isang EA na binuo o naka-code ng ibang tao, kahit na na-customize ito para sa iyong mga kagustuhan sa pangangalakal.
+Pag-download at pagpapatakbo ng mga libreng EA mula sa mga online na forum, website, o komunidad ng pangangalakal.
+Paggamit ng mga inuupahan, ibinahagi, o nakabatay sa subscription na mga awtomatikong sistema ng kalakalan.
+Pagpapatakbo ng isang EA na nagpapatupad ng mga kalakalan batay sa mga signal o diskarte na ibinigay ng isang panlabas na serbisyo o third party.
+Paggamit ng isang EA na binuo ng isa pang negosyante, kaibigan, developer, o pangkat ng pangangalakal, anuman kung binayaran mo ito.
+Halimbawa: Ang isang negosyante ay bumili ng isang komersyal na magagamit na scalping EA mula sa isang website ng third-party at i-install ito sa kanilang pinondohan na account. Bagaman personal na pinapatakbo ng negosyante ang software at kinokontrol ang mga setting nito, ang EA ay hindi binuo ng mga ito. Samakatuwid, ang paggamit nito ay lumalabag sa patakarang ito.
+Ano ang pinapayagan? Maaaring gamitin ng mga mangangalakal ang kanilang sariling personal na binuo na mga EA, sa kondisyon na sumusunod ang EA sa lahat ng iba pang mga patakaran sa pangangalakal ng Audacity Capital at ipinagbabawal na mga Ang katotohanan na ang isang EA ay personal na binuo ay hindi ito inilalabas mula sa mga paghihigpit sa mga ipinagbabawal na diskarte o pag-uugali sa kalak
+Average ng Gastos ng Dollar (DCA)
+Ano ito Pagdaragdag sa isang umiiral na nawawalang posisyon habang gumagalaw pa ang presyo laban sa orihinal na entry, kung ang mga idinagdag na posisyon ay gumagamit ng pareho o iba't ibang laki ng lot, sa pag-asa na mababalik.
+Bakit hindi ito pinapayagan Ang karagdagang pagkakalantad sa isang pagkawala na posisyon ay nagpapataas ng panganib sa drawdown kung hindi bumalik ang merkado at maaaring palitan ang pag-asa para sa isang tinukoy na plano ng paglabas.
+Paano ito maaaring lumitaw
+Mga karagdagang posisyon sa parehong direksyon habang ang orihinal na kalakalan ay nananatiling bukas at lumulutang na pagkawala.
+Maramihang mga entry na nagdaragdag ng pagkakalantad habang gumagalaw ang presyo laban sa paun
+Mga halimbawa
+Bumili ng 1.00 lot EUR/USD sa 1.1000; na may nawala pa rin ang unang posisyon, bumili ng isa pang 1.00 lot sa 1.0980 at muli sa 1.0960.
+Ang isang negosyante ay may hawak ng nawawalang posisyon sa pagbili ng langis at nagdaragdag ng isa pang pagbili sa tuwing bumabagsak pa ang langis upang mabawasan ang average na presyo
+Mahalagang paglilinaw Ang pagbubukas ng isang bago, nakapag-iisa na nasuri na kalakalan pagkatapos isara ang orihinal na pagkawala na posisyon ay naiiba sa pagdaragdag sa isang umiiral na lumut Nalalapat pa rin ang iba pang naaangkop na mga patakaran
+Pamamahala ng Account ng Mga Ikatlong Parti
+Ano ito Pinapayagan ang ibang tao, koponan, bayad na serbisyo, kaibigan, o awtomatikong serbisyo na kumikilos sa mga desisyon ng ibang tao na ipagpalit ang account sa ngalan ng may-ari.
+Bakit hindi ito pinapayagan Ang account ay dapat ipagpalit ng rehistradong may-ari nito, gamit ang independiyenteng pagpapasya ng negosyante na iyon. Ang pagbabayad sa third party ay hindi kinakailangan para mailapat ang panuntunang ito.
+Paano ito maaaring lumitaw
+Isa pang tao na nag-log in sa account at nagsasagawa ng mga kalakalan.
+Isang panlabas na serbisyo sa pamamahala na gumagawa at pagpapatupad ng mga
+Mga halimbawa
+Nagbabayad ang may-ari ng account sa isang propesyonal na tagapamahala upang maglagay ng mga kalakalan
+Nagbibigay ang may hawak ng access sa account ng kaibigan at hinahayaan ang kaibigan na iyon na pamahalaan ang mga posisyon
+Mahalagang paglilinaw Ang pagtalakay sa mga pangkalahatang ideya sa merkado sa ibang tao ay naiiba mula sa pagtatalaga ng mga desisyon sa kalakalan o pagpapatupad ng account sa kanila
+Kopyahin ang Trading
+Ano ito Pag-mirror o pag-double ng mga posisyon ng ibang negosyante sa isang account, manu-mano o sa pamamagitan ng software ng copy-trading o isang awtomatikong tool.
+Bakit hindi ito pinapayagan Ang mga salamin na kalakalan ay hindi nagpapakita ng independiyenteng pagsusuri at pagpapasya ng may-ari ng account.
+Paano ito maaaring lumitaw
+Pagtutugma sa mga entry, exit, time, at laki ng posisyon ng ibang negosyante.
+Paggamit ng mga serbisyo sa pagkopya ng master-account o signal-provider.
+Mga halimbawa
+Ikinokonekta ng isang negosyante ang account sa isang copy-trading platform na awtomatikong nagdukopya ng mga posisyon ng isang signal provider.
+Paulit-ulit na pinapanood ng isang negosyante ang mga live na entry ng ibang negosyante at manu-manong duplikado ang mga ito nang walang indepen
+Mahalagang paglilinaw Ang pag-aaral mula sa komento sa pampublikong merkado ay naiiba mula sa sistematikong pagpapatupad ng ibang negosyante. Dapat gumawa ng independiyenteng desisyon sa pangangalakal ang may hawak
+Pangangalakal sa Grid
+Ano ito Paglalagay ng isang preset na pagkakasunud-sunod ng mga order sa pagbili at pagbebenta sa mga nakapirming agwat ng presyo sa itaas at sa ibaba ng kasalukuyang presyo, na bumubuo ng isang grid anuman
+Bakit hindi ito pinapayagan Ang mekanikal na pag-aayos na nakabatay sa interval ay maaaring gamitin para sa mga resulta ng estilo ng arbitrage sa halip na tunay na direksyon na pakikilahok sa merkad
+Paano ito maaaring lumitaw
+Maramihang mga order na posisyon sa regular, paunang natukoy na agwat ng presyo.
+Awtomatikong nagpapatakbo ang mga order habang lumilipat ang presyo sa grid.
+Mga halimbawa
+Ang isang negosyante ay naglalagay ng mga nakabinbing Buy order tuwing 20 pips sa ibaba ng kasalukuyang presyo ng ginto at Ibenta ang mga order tuwing 20 pips sa itaas nito.
+Awtomatikong naglalagay ng isang EA ang mga karagdagang order sa bawat nakapirming agwat habang gumagalaw pataas at pababa ang merkad
+Mahalagang paglilinaw Ang mga order na nakapag-iisa na inilalagay sa natatanging at analitikal na antas ay hindi kinakailangang isang grid. Ang isang preset, paulit-ulit na istraktura ng agwat ay ang may-katuturang tagapagpa
+Pagsasamantala ng Mga Kahinaan ng System
+Ano ito Paggamit ng mga teknikal na depekto tulad ng mga maling presyo, matatang mga quote, latency gap, o mga pagkabigo sa data-feed upang makakuha ng mga resulta sa pangangalakal, sinasadyang nakilala man o paulit-ulit na sinamantala pagkatapos
+Bakit hindi ito pinapayagan Ang mga kita na nagmula sa mga teknikal na error sa halip na tunay na kondisyon sa merkado ay hindi nagpapakita ng kasanayan sa pangangalakal at maaaring makompromiso
+Paano ito maaaring lumitaw
+Paulit-ulit na pangangalakal sa mga kilalang error sa server o quote.
+Sadyang pagpasok ng mga kalakalan sa maling presyo o naantala na mga quote.
+Mga halimbawa
+Napansin ng isang negosyante na ang isang isyu sa server ay nagiging sanhi ng pagkawala ng quote ng platform sa merkado ng ilang segundo at paulit-ulit na ginagamit ang pagkaantala na iyon
+Paulit-ulit na pumapasok ang isang negosyante sa isang malinaw na maling presyo ng instrumento bago itama ang feed.
+Mahalagang paglilinaw Kung natuklasan ang isang pinahihinalaang depekto sa platform, itigil ang pagsasamantala nito at makipag-ugnay sa suporta. Ang isang hiwalay na hindi sinasadyang pakikipag-ugnayan ay dapat suriin sa konteksto.
+Awtomatikong Multi-Trade na Aktibidad
+Ano ito Paggamit ng mga awtomatikong tool upang magbukas ng maraming mga posisyon nang sabay-sabay sa buong mga instrumento o account nang hindi aktibong pinangangasiwaan o pamamahala
+Bakit hindi ito pinapayagan Ang malalaking batch ng mga walang pangangasiwa na kalakalan ay hindi sumasalamin sa direktang, makatuwiran na pamamahala ng negosyante ng mga indibidwal na posisyon sa real time.
+Paano ito maaaring lumitaw
+Mga awtomatikong script na naglalagay ng maraming mga kalakalan sa pagtanggap ng isang signal.
+Sabay-sabay na order sa buong mga simbolo o account na walang indibidwal na pagsusuri sa kalak
+Mga halimbawa
+Nagpapatuloy ng isang webhook ang isang script upang buksan ang 15 trading sa iba't ibang pares ng pera nang sabay-sabay nang walang anumang manu-manong pagsusuri.
+Ang isang walang pangangasiwa na tool ay tumatanggap ng isang panlabas na alerto at agad na nagbubukas ng maraming posisyon sa maraming mga account.
+Mahalagang paglilinaw Ang paggamit ng awtomatiko para sa isang indibidwal na kalakalan ay hindi awtomatikong nagtatatag ng paglabag na ito; ang pag-aalala ay awtomatiko, sabay-sabay na aktibidad ng multi-trade nang walang aktib Ang lahat ng iba pang mga paghihigpit sa EA at pangangalakal ay patuloy na
+Pag-aabuso sa Laki ng
+Ano ito Ang mga posisyon sa pagbubukas na may laki ng lot na hindi proporsyonal na malaki na nauugnay sa laki ng account, lalo na sa paligid ng mga oras ng pagbubukas o pagsasara ng merkado o balita na may mataas na epekto,
+Bakit hindi ito pinapayagan Ang labis na pagkakalantad ay maaaring magpahiwatig ng walang pag-iingat na pagkuha ng panganib sa halip na disiplinadong pangangalakal at maaaring magamit upang subukang makamit ang mga target ng kita sa isang solong kalakalan
+Paano ito maaaring lumitaw
+Mga posisyon na ang panganib ay hindi katutubong sa account equity o naaangkop na mga limitasyon sa drawdown.
+Bigla na labis na laki ng mga order sa paligid ng pagbabago o hindi likidong mga panahon ng merkado.
+Mga halimbawa
+Ang isang negosyante ay nagbubukas ng 5.00 lot na posisyon ng GBP/USD sa isang $10,000 account sa market open, na inilalantad ang account sa isang malaking potensyal na pagkawala.
+Biglang naglalagay ng isang negosyante ang posisyon na mas malaki kaysa sa kanilang normal na laki kaagad bago ang isang pangunahing kaganapan sa merkado.
+Mahalagang paglilinaw Walang nakapirming lot-size-to-balance border ang tinukoy sa gabay na ito. Ang pagkakalantad ay dapat suriin sa konteksto, kabilang ang instrumento, stop-loss, at panganib sa account.
+Panuntunan sa Kalakalan sa Week
+Ano ito Sinasadyang pagsasamantalita ng mga puwang sa presyo sa pagitan ng pagsara ng merkado ng Biyernes at muling pagbubukas ng merkado sa Linggo o Lunes, kabilang ang pagpasok ng mga kalakal ilang sandali bago isara o pagtatakda ng mga nakabin
+Bakit hindi ito pinapayagan Ang mga gap sa presyo sa katapusan ng linggo ay maaaring maging sanhi ng pagpapatupad ng mga order sa susunod na magagamit na presyo ng merkado sa halip na hiniling na stop-loss o take-profit level. Tinatanggap ng mga mangangalakal na may posisyon sa katapusan ng linggo ang panganib na ito at nananatiling responsable para sa mga nagreresulta na pagkalugi o paglabag
+Paano ito maaaring lumitaw
+Partikular na pagbubukas ng mga posisyon sa huling Biyernes upang makuha ang inaasahang agwat ng
+Paglalagay ng mga nakabinbing order na idinisenyo lalo na upang kumita mula sa agwat ng pagbubukas ng
+Mga halimbawa
+Ang isang negosyante ay bumili ng EUR/USD ilang sandali bago isara ang Biyernes dahil inaasahan nila ang mas mataas na presyo ng pagbubukas sa Linggo, pagkatapos ay lumabas kaagad pagkatapos ng puwang
+Ang isang negosyante ay nagtatakda ng mga nakabinbing order ilang sandali bago ang lingguhang pagsara partikular upang makakuha ng tumalon ng presyo kapag muling magbukas
+Mahalagang paglilinaw Ang pagpapanatiling bukas ng posisyon sa katapusan ng linggo ay hindi awtomatikong inilarawan bilang ipinagbabawal. Nag-target ng panuntunan ang sinasadyang pagsasamantala Kasunod ng pagsusuri, ang mga natukoy na paglabag ay maaaring magresulta sa pag-alis ng nauugnay na kita, pagtanggi sa bayad, o pagwawakas ng account
+Isang Direksyon na Pagtaya
+Ang Single Directional Betting ay tumutukoy sa pag-uugali sa pangangalakal kung saan ang isang negosyante ay labis na umaasa sa isang direksyon ng merkado o isang partikular na ideya sa pangangalakal, na nagreresulta sa nakatuon na pagkakalantad o pagganap sa kalakalan na hindi proporsyonal
+Kinikilala ng Audacity Capital na ang mga mangangalakal ay maaaring magkaroon ng direksyon na bias batay sa kanilang mga indibidwal na diskarte. Gayunpaman, ang mga desisyon sa pangangalakal ay dapat manatiling nakabalangkas, disiplinado, at sinusuportahan ng naaangkop
+Bakit Sinusubaybayan namin ang Ugali na Ito
+Ang labis na pag-asa sa isang direksyon ng merkado ay maaaring lumikha ng nakatuon na pagkakalantad at gawing nakasalalalay sa isang solong kilusan ng merkado ang pangkalahat
+Ang aming layunin ay hindi limitahan ang mga lehitimong diskarte sa pangangalakal o direksyon na paniniwala sa merkado. Sa halip, nilalayon naming matiyak na mapanatili ng mga mangangalakal ang responsableng pagkakalantad sa panganib, gumawa ng mga nakabalangkas na desisyon sa pangangalakal, at mag
+Mga Panukala sa Pamamahala ng Panganib at
+Sa mga yugto ng Hamon at Pagpapatunay, ang mga mangangalakal na nakilala para sa Single Directional Betting ay maaaring makatanggap ng babala, na nagbibigay-daan sa kanila ng pagkakataon na suriin at mapabuti
+Halimbawa, kung ang isang negosyante ay patuloy na nagtatayo ng maraming posisyon sa parehong direksyon pagkatapos makatanggap ng babala, maaaring mailapat ang maximum na 1% na paghihigpit sa risk-per-trade kapag maabot ang yugto ng Pinondohan. Ang patuloy na magkatulad na pag-uugali sa kabila ng babala at paghihigpit ay maaaring magresulta sa karagdagang pagkilos, kabilang
+Para sa mga FTP account, ang mga mangangalakal na nakilala para sa Single Directional Betting ay maaaring ilagay nang direkta sa ilalim ng mas mahigpit na 1% risk-per-trade rule.
+Maaaring mapabuti ng mga mangangalakal ang kanilang diskarte sa pamamagitan ng pagpapanatili ng kontroladong pagkakalantad sa merkado, pagtiyak na sinusuportahan ang mga posisyon ng isang malinaw na pangangailangan sa pangangalakal, at pamamahala ng pinagsamang panganib ng maraming posisyon
+Ang Audacity Capital ay may karapatang suriin ang aktibidad ng pangangalakal at gumawa ng naaangkop na aksyon alinsunod sa naaangkop na mga patakaran at Mga Tuntunin at Kundisyon nito.
+Bakit umiiral ang mga patakaran na ito
+Ang karaniwang prinsipyo ay ang pagganap ng kalakalan ay dapat sumasalamin sa independiyenteng pagsusuri, disiplinadong pamamahala ng pelisiko, at Ang mga kasanayan na nagsasamantala sa mga teknikal na kahinaan, gumagawa ng mga kinalabasan na naka-oversetting, umaasa sa hindi kontroladong pagtaas ng panganib, o nagtataguyod ng mga desisyon sa kalakalan
+Bago ka gumamit ng isang bagong diskarte
+Suriin kung paano bumubuo ng kalakalan ang diskarte, kung paano nito pinamamamahalaan ang pagkakalantad, nakasalalay kung ito sa ibang tao o sa pag-automate ng third-party, at kung maaari itong mahulog sa ilalim ng higit sa isang paghihi Makipag-ugnay sa Audacity Capital Support kung ang anumang bahagi ng diskarte ay hindi malinaw.
+Ito ay isang draft ng nilalaman ng website batay sa kasalukuyang FAQ. Ang mga naaangkop na mga tuntunin at kundisyon ng account ay nananatiling may kaugnayan; ang mga halimbawa ay paliwanag at hindi lumilikha ng mga independiyenteng
+Kumpanya
+Mga Tuntunin ng Paggamit Makipag-ugnay sa amin Programang Kaakibat Tungkol sa Amin Patakaran sa AML Ipinagbabawal na Kasanayan Code ng Pag-uugali
+Pamayanan
+FAQ Mga Kwento ng Tagumpay Dashboard I-download Responsable Trading Mga Karera Sumangguni sa isang Kaibigan
+Legal
+Mga Tuntunin at Kundisyon Patakaran sa Privacy Alerta sa Scam Patakaran sa Whistleblower Paghawak ng Reklamo Pindutin at Media Patakaran sa Pekeng Mga Review
+Mga Platform
+Mga Platform sa Kalakalan DxTrade MT5
+Newsletter
+Sumali sa aming newsletter upang manatiling napapanahon sa mga tampok at paglabas.
+Mag-subscribe
+Sa pamamagitan ng pag-subscribe sumasang-ayon ka sa aming Patakaran sa Pagkapribado
+at nagbibigay ng pahintulot upang makatanggap ng mga update mula sa aming kumpanya.
+© 2012—2026 Audacity Capital. Nakareserba ang lahat ng mga karapatan.
+Patakaran sa Privacy Mga Tuntunin at Kundisyon Cookies Settings
+Legal at Pagsunod Disclaimer
+Ang AudaCity International FZCO, nakarehistro sa ilalim ng lisensya DSO-FZCO 38282 sa Dubai Silicon Oasis, DDP, Building A1/A2, Dubai, United Arab Emirates, ay kumikilos lamang bilang isang facilitator ng pagbabayad. Ang lahat ng mga aktibidad na nauugnay sa kalakalan ay pinapatakbo sa pamamagitan ng AudaCity Global LTD (Registration Number: 15850), na lisensyado sa ilalim ng International Brokerage and Clearing House License (L15850/WL) na ibinigay ng Union of Comoros, na may rehistradong tanggapan sa Hamchako, Mutsamudu, Anjouan, Union of Comoros. Nagpapatakbo din kami ng isang tanggapan sa UK sa 25 Cabot Square, Level 11, London, E14 4QZ, at nagpapanatili ng pakikipagsosyo sa Propmetry Limited (Numero ng Kumpanya: HE469039), na nakabase sa Limassol, Cyprus, na kumikilos bilang karagdagang kasosyo sa pagbabayad.
+Ang website na ito at lahat ng mga serbisyo ay inaalok sa pamamagitan ng aming nag-iisang domain sa https://audacity.capital at sa pamamagitan ng aming dashboard sa https://trade.audacity.capital ; anumang iba pang domain, profile ng social media, o indibidwal na nagsasabing kumakatawan sa amin sa labas ng website na ito ay dapat ituring na mapanlinlang at naiulat. Palaging tiyaking nakikipag-ugnayan ka sa lehitimong website ng AudaCity Capital at makipag-ugnay sa aming koponan nang direkta sa pamamagitan ng aming mga na-verify na channel kung may pag-aalinlangan.
+Mula noong 2012, ang AudaCity Capital ay nakatuon sa pagbuo ng talento sa pangangalakal sa pamamagitan ng nakabalangkas na pagsusuri at edukasyon sa loob ng isang propesyonal-grade simulated na imprastraktura ng kalakalan na nakatuon sa pagbuo ng kasanayan Nakakatulong ito sa paghahanap at bumuo ng tunay na talento upang makipagkalakalan sa live na kapital
+Walang pahayag sa website na ito ang bumubuo ng payo sa pamumuhunan, pananalapi, ligal, o buwis, at hindi kami nag-aalok ng mga serbisyo sa broker, pangangalaga, o pamamahala ng portfolio. Ang lahat ng nilalaman ay para sa pangkalahatang layunin ng impormasyon lamang at hindi dapat bigyang kahulugan bilang isang kahilingan upang mamuhunan o makipagkalakalan.
+Ang paggamit ng website na ito at pakikilahok sa aming mga programa ay napapailalim sa mga lokal na batas, at ang aming mga serbisyo ay hindi magagamit sa mga hurisdiksyon kung saan ang mga naturang aktibidad ay pinaghihigpitan o ipinagbabawal, kabilang ngunit hindi limitado sa Syria, Iran, Venezuela at Hilagang Korea. Ang mga residente ng US ay maaari lamang lumahok sa pamamagitan ng platform ng DX Trade kung pinapayagan. Responsable ang mga gumagamit sa pagtiyak ng pagsunod sa kanilang mga lokal na regulasyon.
+Ang pangangalakal—tunay o simulad—ay nagdadala ng makabuluhang panganib, at hindi hinuhulaan ng hipotetikal na pagganap ang mga aktwal na resulta. Lumahok lamang kung ganap mong nauunawaan ang mga panganib na kasangkot.
+Ang Apple, iPad, iPhone, at App Store ay mga trademark ng Apple Inc.; Ang Android ay isang trademark ng Google Inc., at ang kanilang paggamit dito ay hindi nagpapahiwatig ng anumang kaakibat o pag-endorsman.

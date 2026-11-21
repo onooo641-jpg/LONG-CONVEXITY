@@ -1,0 +1,210 @@
+Prácticas comerciales prohibidas y restricciones comerciales | Audacity Capital
+Celebrando 14 años, 14% de descuento Para todos los programas Celebrando 14 años, 14% de descuento Para todos los programas
+Celebrando 14 años, 14% de descuento Para todos los programas
+Celebrando 14 años, 14% de descuento Para todos los programas
+Celebrando 14 años, 14% de descuento Para todos los programas
+Celebrando 14 años, 14% de descuento Para todos los programas
+Celebrando 14 años, 14% de descuento Para todos los programas
+🎓 Únete a Trader University
+Acerca de
+Financiamiento
+Historias
+Competencia
+Afiliados
+Recursos
+ES English Türkçe Español Français Italiano Português Deutsch Filippino Русский العربية हिन्दी 日本語
+Iniciar sesión
+Guía completa de prácticas comerciales prohibidas
+En Audacity Capital, se espera que los operadores tomen decisiones comerciales independientes e informadas y que gestionen el riesgo de manera responsable. Para promover un entorno comercial justo y coherente, se prohíben las siguientes prácticas. En esta guía se explica cada restricción, por qué se aplica y cómo reconocer los ejemplos más comunes.
+Si no estás seguro de si está permitido utilizar una estrategia de negociación o una herramienta automatizada, ponte en contacto con nuestro equipo de asistencia antes de utilizarla en tu cuenta.
+Descripción
+Negociación de alta frecuencia (HFT)
+Raspado de garrapatas
+Cobertura o cobertura grupal en varias cuentas
+Promediar estrategias de baja/martingala
+Uso de asesores expertos (EA) de terceros
+Promedio de costos en dólares (DCA)
+Administración de cuentas por parte de terceros
+Comercio de copias
+Comercio en red
+Explotación de las vulnerabilidades del sistema
+Actividad de comercio múltiple automatizada
+Abuso del tamaño del lote
+Regla de negociación con brechas de fin
+Apuestas unidireccionales
+Jump To
+Descripción
+Para mantener un entorno comercial justo, estable y transparente, están estrictamente prohibidas las siguientes estrategias y comportamientos comerciales:
+Negociación de alta frecuencia (HFT)
+Qué es Utilizar asesores expertos (EA), bots o algoritmos para abrir y cerrar grandes volúmenes de operaciones en fracciones de segundo, aprovechando los pequeños y efímeros movimientos de precios o las brechas en las fuentes de datos.
+Por qué no está permitido El HFT se basa en la velocidad y la infraestructura más que en el análisis del mercado y puede generar ventajas injustas, manipulación de precios o inestabilidad. Esta restricción también cubre el arbitraje de latencia: aprovechar los retrasos entre la ejecución de una operación y la actualización de los datos del mercado.
+Cómo puede aparecer
+Un gran número de operaciones se abrieron y cerraron en fracciones de segundo.
+Sistemas automatizados que se centran en los retrasos en las cotizaciones, las discrepancias de precios efímeras o los tiempos de publicación, en lugar de ofrecer una visión del mercado.
+Ejemplos
+Un EA lanza más de 50 operaciones por minuto en el EUR/USD, y cada operación se cierra en una fracción de segundo para corregir las discrepancias por debajo del pip entre el feed de la plataforma y un feed externo más rápido.
+Un bot identifica los retrasos recurrentes en los feeds e introduce operaciones de forma sistemática antes de que se actualicen los precios retrasados.
+Aclaración importante Una operación aislada que cierra inusualmente rápido no establece, por sí sola, una estrategia de HFT. Lo que preocupa es un enfoque repetido basado en la velocidad o la latencia.
+Raspado de garrapatas
+Qué es Abrir y cerrar operaciones en un período muy corto (2 minutos o menos), con el objetivo de captar pequeñas fluctuaciones de precios en lugar de operar con una visión direccional genuina.
+Por qué no está permitido El scalping de las garrapatas se basa en el ruido del mercado más que en el análisis o en una estrategia definida. Se puede llevar a cabo de forma manual o mediante herramientas automatizadas.
+Cómo puede aparecer
+Entradas y salidas repetidas en dos minutos o menos.
+Objetivos pequeños y frecuentes impulsados por pequeños cambios en los precios.
+Ejemplos
+10:00:00 — Compra 1,00 lotes de EUR/USD; 10:01:35 — cierra con una ganancia de 3 pips. La repetición de estas operaciones de corta duración basándose en un movimiento mínimo de precios constituye una práctica prohibida de scalping.
+Un operador abre operaciones repetidamente con el objetivo de uno o dos pips, cerrando cada una después de unos segundos sin una justificación de mercado más amplia.
+Aclaración importante El hecho de que una sola posición cierre en dos minutos porque se alcanzó inesperadamente su límite de pérdidas o obtención de beneficios no es necesariamente una prueba de una estrategia de scalping. Los patrones y circunstancias de negociación son relevantes.
+Cobertura o cobertura grupal en varias cuentas
+Qué es Colocar posiciones opuestas de compra y venta en el mismo instrumento, dentro de una cuenta o en varias cuentas pertenecientes al operador o coordinadas con otras, para compensar la exposición al mercado o crear un resultado libre de riesgo.
+Por qué no está permitido Las posiciones opuestas pueden transferir las pérdidas a una cuenta y, al mismo tiempo, generar beneficios en otra, creando un acuerdo similar al de un arbitraje en lugar de una genuina toma de riesgos de mercado.
+Cómo puede aparecer
+Posiciones coincidentes o sincronizadas estrechamente en direcciones opuestas en el mismo instrumento.
+Compra y venta coordinadas entre cuentas o operadores separados.
+Ejemplos
+La cuenta A compra el par GBP/USD, mientras que la cuenta B, gestionada por el mismo operador o un asociado coordinado, vende una posición del mismo tamaño en el par GBP/USD al mismo tiempo.
+Un operador abre una posición de venta en el mismo instrumento para compensar una posición de compra existente en lugar de cerrar la exposición original.
+Aclaración importante Las posiciones no relacionadas en mercados distintos que por casualidad tienen un comportamiento diferente no son, por sí mismas, una prueba de una cobertura coordinada. La conducta prohibida se refiere a posiciones opuestas dispuestas deliberadamente para compensar el riesgo.
+Promediar estrategias de baja/martingala
+Qué es Aumentar el tamaño de la posición después de una pérdida en la misma idea de negociación perdedora, en un intento de recuperar las pérdidas anteriores con una operación eventualmente ganadora.
+Por qué no está permitido Este método puede requerir cada vez más capital durante las rachas perdedoras y puede superar rápidamente los límites de reducción fijos de una cuenta de operaciones.
+Cómo puede aparecer
+Aumento del tamaño de los lotes después de pérdidas consecutivas o movimientos adversos de precios.
+Duplicar o aumentar la exposición para defender la misma idea comercial perdedora.
+Ejemplos
+Un operador compra 0,50 lotes de USD/JPY y, a continuación, añade 1,00 lotes y 2,00 lotes a medida que la operación se mueve en su contra, intentando recuperar todas las pérdidas mediante una reversión.
+Tras perder una operación con oro, un operador vuelve a entrar repetidamente en la misma dirección con lotes cada vez más grandes únicamente para recuperar la pérdida anterior.
+Aclaración importante La prohibición se refiere a los aumentos de la exposición impulsados por pérdidas. Describir una estrategia como «planificada» no exime al aumento similar al de una martingala después de una pérdida.
+Uso de asesores expertos (EA) de terceros
+Qué es: Utilizar un asesor experto (EA), un robot de negociación o un algoritmo de negociación automatizado que no hayas desarrollado personalmente. Esto incluye los EA adquiridos comercialmente, los EA alquilados, los bots descargados, los algoritmos compartidos o los sistemas de negociación automatizados creados por otra persona o empresa.
+Por qué no está permitido: En Audacity Capital, los operadores solo pueden usar EA que hayan desarrollado personalmente. Esto garantiza que los operadores mantengan la propiedad y el control totales sobre sus estrategias de negociación y que su actividad comercial refleje sus propias decisiones y metodología de negociación.
+No se permiten los EA vendidos comercialmente, los EA codificados de terceros, los bots comerciales basados en señales ni ningún software comercial automatizado obtenido de fuentes externas, independientemente de si el software es gratuito o de pago.
+Ejemplos de actividades prohibidas:
+Comprar un EA en un mercado online o en un proveedor externo y usarlo en tu cuenta.
+Usar un EA desarrollado o codificado por otra persona, incluso si se ha personalizado según tus preferencias comerciales.
+Descargar y ejecutar EA gratuitos desde foros en línea, sitios web o comunidades comerciales.
+Uso de sistemas de negociación automatizados alquilados, compartidos o basados en suscripciones.
+Dirigir un EA que ejecute operaciones en función de las señales o estrategias proporcionadas por un servicio externo o un tercero.
+Usar un EA desarrollado por otro comerciante, amigo, desarrollador o grupo comercial, independientemente de si has pagado por él.
+Ejemplo: Un comerciante compra un EA de scalping disponible en el mercado en un sitio web de terceros y lo instala en su cuenta con fondos. Aunque el comerciante maneja personalmente el software y controla su configuración, el EA no fue desarrollado por él. Por lo tanto, su uso infringe esta regla.
+¿Qué está permitido? Los operadores pueden usar sus propios EA desarrollados personalmente, siempre que el EA cumpla con todas las demás reglas de negociación y prácticas comerciales prohibidas de Audacity Capital. El hecho de que un EA se desarrolle personalmente no lo exime de las restricciones sobre las estrategias o el comportamiento bursátil prohibidos.
+Promedio de costos en dólares (DCA)
+Qué es Se suma a una posición perdedora existente a medida que el precio siga moviéndose con respecto a la entrada original, independientemente de que las posiciones añadidas utilicen tamaños de lote iguales o diferentes, con la esperanza de que se produzca una reversión.
+Por qué no está permitido La exposición adicional a una posición perdedora aumenta el riesgo de retirada si el mercado no se invierte y puede sustituir la esperanza por un plan de salida definido.
+Cómo puede aparecer
+Posiciones adicionales en la misma dirección mientras la operación original permanezca abierta y con pérdidas flotantes.
+Varias entradas que aumentan la exposición a medida que el precio se mueve en comparación con la entrada inicial.
+Ejemplos
+Compra un lote EUR/USD de 1,00 a 1,1000; si la primera posición sigue perdiendo, compra otro lote de 1,00 a 1,0980 y de nuevo a 1,0960.
+Un operador mantiene una posición perdedora de compra de petróleo y añade otra compra cada vez que el petróleo cae aún más para reducir el precio de entrada promedio.
+Aclaración importante Abrir una nueva operación evaluada de forma independiente después de que se haya cerrado la posición perdedora original es diferente a aumentar una pérdida flotante existente. Se siguen aplicando otras reglas aplicables.
+Administración de cuentas por parte de terceros
+Qué es Permitir a otra persona, equipo, servicio pago, amigo o servicio automatizado que actúe en función de las decisiones de otra persona negociar la cuenta en nombre del titular.
+Por qué no está permitido La cuenta debe ser negociada por su titular registrado, utilizando la toma de decisiones independiente de ese operador. El pago a un tercero no es un requisito para que se aplique esta regla.
+Cómo puede aparecer
+Otra persona que inicia sesión en la cuenta y ejecuta operaciones.
+Un servicio de gestión externo que toma y ejecuta decisiones comerciales.
+Ejemplos
+El titular de la cuenta paga a un administrador profesional para que realice operaciones durante las horas de trabajo.
+El titular da acceso a la cuenta de un amigo y le permite gestionar las posiciones sin pagar nada.
+Aclaración importante Discutir las ideas generales del mercado con otras personas es distinto de delegarles las decisiones comerciales o la ejecución de la cuenta.
+Comercio de copias
+Qué es Reflejar o duplicar las posiciones de otro operador en una cuenta, ya sea manualmente o mediante un software de intercambio de copias o una herramienta automatizada.
+Por qué no está permitido Las operaciones reflejadas no demuestran un análisis ni una toma de decisiones independientes por parte del titular de la cuenta.
+Cómo puede aparecer
+Hacer coincidir las entradas, las salidas, los tiempos y los tamaños de las posiciones de otro operador.
+Utilizar los servicios de copia de la cuenta maestra o del proveedor de señales.
+Ejemplos
+Un operador conecta la cuenta a una plataforma de negociación de copias que duplica automáticamente las posiciones de un proveedor de señales.
+Un operador observa repetidamente las entradas en vivo de otro operador y las duplica manualmente sin un análisis independiente.
+Aclaración importante Aprender de los comentarios del mercado público es diferente a reflejar sistemáticamente la ejecución de otro operador. El titular de la cuenta debe tomar decisiones comerciales independientes.
+Comercio en red
+Qué es Colocar una secuencia preestablecida de órdenes de compra y venta a intervalos de precios fijos por encima y por debajo del precio actual, formando una cuadrícula independientemente del análisis direccional.
+Por qué no está permitido El arreglo mecánico basado en intervalos puede utilizarse para obtener resultados similares a los de un arbitraje en lugar de una verdadera participación direccional en el mercado.
+Cómo puede aparecer
+Múltiples pedidos realizados a intervalos de precios regulares y predeterminados.
+Los pedidos se activan automáticamente a medida que el precio se mueve por la red.
+Ejemplos
+Un operador coloca órdenes de compra pendientes cada 20 pips por debajo del precio actual del oro y órdenes de venta cada 20 pips por encima de ese precio.
+Un EA coloca automáticamente pedidos adicionales en cada intervalo fijo a medida que el mercado sube y baja.
+Aclaración importante Los pedidos realizados de forma independiente en niveles distintos e identificados analíticamente no son necesariamente una cuadrícula. El indicador relevante es una estructura de intervalos repetidos y preestablecida.
+Explotación de las vulnerabilidades del sistema
+Qué es Utilizar fallas técnicas como precios erróneos, cotizaciones obsoletas, brechas de latencia o fallas en la alimentación de datos para obtener resultados comerciales, ya sea que se identifiquen deliberadamente o se exploten repetidamente después del descubrimiento.
+Por qué no está permitido Los beneficios derivados de errores técnicos en lugar de condiciones de mercado genuinas no demuestran habilidad comercial y pueden comprometer la integridad de la plataforma.
+Cómo puede aparecer
+Operaciones repetidas en torno a errores conocidos de cotizaciones o servidores.
+Ingresar deliberadamente a operaciones con precios incorrectos o con cotizaciones retrasadas.
+Ejemplos
+Un operador se da cuenta de que un problema con el servidor hace que la cotización de la plataforma se retrase varios segundos con respecto al mercado y aprovecha ese retraso repetidamente.
+Un operador introduce repetidamente un precio de instrumento obviamente erróneo antes de que el feed se corrija.
+Aclaración importante Si se descubre una supuesta falla en la plataforma, deja de explotarla y ponte en contacto con el servicio de asistencia. Una interacción accidental aislada debe revisarse en su contexto.
+Actividad de comercio múltiple automatizada
+Qué es Uso de herramientas automatizadas para abrir múltiples posiciones simultáneamente en instrumentos o cuentas sin supervisar ni gestionar activamente cada operación.
+Por qué no está permitido Los grandes lotes de operaciones desatendidas no reflejan la gestión directa y razonada de las posiciones individuales por parte del operador en tiempo real.
+Cómo puede aparecer
+Secuencias de comandos automatizadas que realizan numerosas operaciones al recibir una señal.
+Pedidos simultáneos en símbolos o cuentas sin revisión comercial individual.
+Ejemplos
+Un webhook activa un script para abrir 15 operaciones en diferentes pares de divisas simultáneamente sin ninguna revisión manual.
+Una herramienta desatendida recibe una alerta externa e inmediatamente abre varias posiciones en varias cuentas.
+Aclaración importante El uso de la automatización para una operación individual no establece automáticamente esta infracción; la preocupación es la actividad automática y simultánea de múltiples operaciones sin supervisión activa. Todas las demás restricciones comerciales y de EA siguen aplicándose.
+Abuso del tamaño del lote
+Qué es Abrir posiciones con tamaños de lote desproporcionadamente grandes en relación con el tamaño de la cuenta, especialmente en torno a las horas de apertura o cierre del mercado o las noticias de alto impacto, lo que resulta en una exposición al riesgo poco realista.
+Por qué no está permitido Una exposición sobredimensionada puede indicar una toma de riesgos imprudente en lugar de una negociación disciplinada y puede utilizarse para intentar alcanzar los objetivos de beneficios en una sola operación.
+Cómo puede aparecer
+Posiciones cuyo riesgo sea desproporcionado con respecto al capital de la cuenta o a los límites de reducción aplicables.
+Órdenes sobredimensionadas abruptamente en períodos de mercado volátiles o ilíquidos.
+Ejemplos
+Un operador abre una posición de 5,00 lotes en GBP/USD en una cuenta de 10.000$ al abrir el mercado, exponiendo la cuenta a una gran pérdida potencial.
+Un operador coloca repentinamente una posición mucho mayor que su tamaño normal inmediatamente antes de un evento importante del mercado.
+Aclaración importante En esta guía no se especifica ningún umbral fijo entre el tamaño del lote y el saldo. La exposición debe evaluarse en su contexto, incluido el riesgo del instrumento, del límite de pérdidas y de la cuenta.
+Regla de negociación con brechas de fin
+Qué es Aprovechar intencionadamente las brechas de precios entre el cierre del mercado del viernes y la reapertura del mercado el domingo o el lunes, lo que incluye iniciar operaciones poco antes del cierre o fijar órdenes pendientes específicamente para aprovechar las brechas anticipadas.
+Por qué no está permitido Las brechas de precios del fin de semana pueden provocar que las órdenes se ejecuten al siguiente precio de mercado disponible en lugar del nivel de stop-loss o toma de beneficios solicitado. Los operadores que mantengan posiciones durante el fin de semana aceptan este riesgo y siguen siendo responsables de las pérdidas resultantes o de las infracciones a la baja.
+Cómo puede aparecer
+Abrir posiciones a última hora del viernes específicamente para capturar la brecha de apertura esperada.
+La colocación de pedidos pendientes está diseñada principalmente para aprovechar la brecha de apertura del próximo fin de semana.
+Ejemplos
+Un operador compra el EUR/USD poco antes del cierre del viernes únicamente porque espera un precio de apertura más alto el domingo y sale inmediatamente después de la brecha.
+Un operador establece las órdenes pendientes poco antes del cierre semanal específicamente para detectar un salto de precio cuando el mercado vuelve a abrir.
+Aclaración importante Mantener una posición abierta durante el fin de semana no se describe automáticamente como prohibido. La regla apunta a la explotación intencional de las brechas. Tras la revisión, las infracciones identificadas pueden provocar la eliminación de las ganancias asociadas, el rechazo del pago o la cancelación de la cuenta.
+Apuestas unidireccionales
+Las apuestas unidireccionales se refieren a un comportamiento de negociación en el que un operador confía excesivamente en una dirección del mercado o en una idea de negociación en particular, lo que resulta en una exposición concentrada o un rendimiento de negociación que depende desproporcionadamente de un solo movimiento del mercado.
+Audacity Capital reconoce que los operadores pueden tener un sesgo direccional en función de sus estrategias individuales. Sin embargo, las decisiones de negociación deben permanecer estructuradas, disciplinadas y respaldadas por una gestión de riesgos adecuada.
+Por qué monitorizamos este comportamiento
+La confianza excesiva en una dirección del mercado puede generar una exposición concentrada y hacer que el rendimiento general de una cuenta dependa de un movimiento del mercado único.
+Nuestro objetivo no es restringir las estrategias comerciales legítimas ni las convicciones direccionales del mercado. Por el contrario, nuestro objetivo es garantizar que los operadores mantengan una exposición responsable al riesgo, tomen decisiones comerciales estructuradas y demuestren prácticas sostenibles de gestión de riesgos.
+Gestión de riesgos y medidas contables
+Durante las etapas de desafío y verificación, los operadores identificados para las apuestas unidireccionales pueden recibir una advertencia, lo que les da la oportunidad de revisar y mejorar su comportamiento bursátil.
+Por ejemplo, si un operador continúa acumulando varias posiciones en la misma dirección después de recibir una advertencia, se le puede aplicar una restricción de riesgo por operación como máximo del 1% al llegar a la fase de financiación. La continuación de un comportamiento similar a pesar de la advertencia y la restricción puede conllevar la adopción de nuevas medidas, incluida la cancelación de la cuenta.
+En el caso de las cuentas FTP, los operadores identificados para las apuestas unidireccionales pueden optar directamente por la regla más estricta de riesgo por operación del 1%.
+Los operadores pueden mejorar su enfoque manteniendo una exposición al mercado controlada, asegurándose de que las posiciones estén respaldadas por una lógica comercial clara y gestionando el riesgo combinado de múltiples posiciones en lugar de centrarse únicamente en las operaciones individuales.
+Audacity Capital se reserva el derecho de revisar la actividad bursátil y tomar las medidas apropiadas de acuerdo con sus reglas y términos y condiciones aplicables.
+Por qué existen estas reglas
+El principio común es que el rendimiento de las operaciones debe reflejar un análisis independiente, una gestión de riesgos disciplinada y una participación genuina en el mercado. Las prácticas que aprovechan las debilidades técnicas, generan resultados compensatorios, se basan en un aumento descontrolado del riesgo o delegan las decisiones comerciales en terceros socavan este principio.
+Antes de usar una nueva estrategia
+Revise cómo la estrategia genera operaciones, cómo gestiona la exposición, si depende de la automatización de otra persona o de un tercero y si podría estar sujeta a más de una restricción. Póngase en contacto con Audacity Capital Support si alguna parte del enfoque no está clara.
+Este es un borrador del contenido del sitio web basado en las preguntas frecuentes actuales. Los términos y condiciones de cuenta aplicables siguen siendo relevantes; los ejemplos son explicativos y no crean excepciones ni límites numéricos independientes.
+Empresa
+Condiciones de uso Póngase en contacto con nosotros Programa de afiliados Acerca de nosotros Política AML Prácticas comerciales prohibidas Código de conducta
+Comunidad
+PREGUNTAS MÁS FRECUENTES Historias de éxito Tablero Descargar Comercio responsable Carreras Recomiende a un amigo
+Legal
+Términos y condiciones Política de privacidad Alerta de estafa Política de denunciantes Manejo de quejas Prensa y medios Política de reseñas falsas
+Plataformas
+Plataformas de negociación DXtrade MT5
+Boletín
+Suscríbase a nuestro boletín para mantenerse actualizado sobre las funciones y lanzamientos.
+Suscríbase
+Al suscribirse, acepta nuestra Política de privacidad
+y da su consentimiento para recibir actualizaciones de nuestra empresa.
+© 2012-2026 Audacity Capital. Todos los derechos reservados.
+Política de privacidad Términos y condiciones Cookies Settings
+Descargo de responsabilidad legal y de cumplimiento
+AudaCity International FZCO, registrada con la licencia DSO-FZCO 38282 en Dubai Silicon Oasis, DDP, edificio A1/A2, Dubái (Emiratos Árabes Unidos), actúa únicamente como facilitador de pagos. Todas las actividades relacionadas con el comercio se llevan a cabo a través de AudaCity Global LTD (número de registro: 15850), licenciada en virtud de la licencia internacional de corretaje y cámara de compensación (L15850/WL) emitida por la Unión de las Comoras, con domicilio social en Hamchako, Mutsamudu, Anjouan, Unión de las Comoras. También operamos una oficina en el Reino Unido en 25 Cabot Square, Level 11, Londres, E14 4QZ, y mantenemos una asociación con Propmetry Limited (número de empresa: HE469039), con sede en Limassol (Chipre), que actúa como un socio de pago adicional.
+Este sitio web y todos los servicios se ofrecen a través de nuestro único dominio en https://audacity.capital y a través de nuestro panel de control en https://trade.audacity.capital ; cualquier otro dominio, perfil de redes sociales o persona que afirme representarnos fuera de este sitio web debe considerarse fraudulento y denunciarse. Asegúrese siempre de interactuar con el sitio web legítimo de AudaCity Capital y, en caso de duda, póngase en contacto con nuestro equipo directamente a través de nuestros canales verificados.
+Desde 2012, AudaCity Capital se ha comprometido a desarrollar el talento bursátil mediante una evaluación estructurada y una educación dentro de una infraestructura bursátil simulada de nivel profesional centrada en el desarrollo de habilidades, no en la especulación. Esto ayuda a encontrar y desarrollar talento real para operar con capital real.
+Ninguna declaración de este sitio web constituye asesoramiento sobre inversiones, financiero, legal o fiscal, y no ofrecemos servicios de corretaje, custodia o gestión de carteras. Todo el contenido tiene únicamente fines informativos generales y no debe interpretarse como una solicitud para invertir o comerciar.
+El uso de este sitio web y la participación en nuestros programas están sujetos a las leyes locales, y nuestros servicios no están disponibles en las jurisdicciones donde dichas actividades están restringidas o prohibidas, incluidas, entre otras, Siria, Irán, Venezuela y Corea del Norte. Los residentes de EE. UU. solo pueden participar a través de la plataforma DX Trade cuando esté permitido. Los usuarios son responsables de garantizar el cumplimiento de sus normativas locales.
+La negociación, real o simulada, conlleva un riesgo significativo, y el rendimiento hipotético no predice los resultados reales. Solo participe si comprende completamente los riesgos involucrados.
+Apple, iPad, iPhone y App Store son marcas comerciales de Apple Inc.; Android es una marca comercial de Google Inc., y su uso aquí no implica afiliación ni aprobación alguna.

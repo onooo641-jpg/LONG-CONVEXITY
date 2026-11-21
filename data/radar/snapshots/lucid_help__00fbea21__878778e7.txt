@@ -1,0 +1,90 @@
+LucidFlex Live (Legacy) | Lucid Trading Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Lucid Home
+Lucid Home
+Search for articles...
+All Collections
+LucidFlex
+LucidFlex Live (Legacy)
+LucidFlex Live (Legacy)
+LucidFlex Live (legacy) account rules: how the live stage works for legacy LucidFlex traders, including drawdown, payouts, and transition details.
+A
+Written by AJ
+August 26, 2026
+Table of contents
+This is for accounts purchased/reset on 2/27/26 and prior.
+Getting Moved to Live
+Traders are transitioned from LucidFlex funded accounts to live trading under one of the following conditions:
+After completing their sixth and final LucidFlex payout
+At the discretion of the Lucid risk team, before the sixth payout
+Transition to Live
+When a trader is moved live from LucidFlex:
+Traders may have up to five live accounts
+Simulated profits from each LucidFlex account are used to calculate the live funding amount
+Each account size has a move-to-live cap, which limits how much simulated profit can be transferred
+Account Size
+Max Moved Live
+​ (Per Account)
+$25,000
+$4,000
+$50,000
+$8,000
+$100,000
+$12,000
+$150,000
+$16,000
+Any profits above the move-to-live cap will be forfeited during the transition to live.
+Day-One Capital Allocation:
+A portion of the move-to-live cap is deposited into the live account on Day 1
+The remaining capital is held in Escrow, which can be earned back by meeting performance benchmarks
+Account Size
+Max Deposited Day 1
+( Per Account)
+$25,000
+$1,200
+$50,000
+$2,400
+$100,000
+$3,600
+$150,000
+$4,800
+Example:
+A trader moves five $50,000 LucidFlex accounts live with $10,000 in simulated profit per account.
+Max allowed per account = $8,000 → excess $2,000 is forfeited
+Total live capital: $40,000 ($8,000 × 5)
+Day 1 capital = $12,000 ($2,400 × 5)
+Remaining $28,000 is held in Escrow and may be unlocked
+Live Escrow
+Escrow is the portion of your move-to-live capital not deposited on Day 1. It is released based on live performance.
+Escrow Release Criteria
+Before Escrow can begin releasing, you must meet two requirements:
+Complete 10 profitable trading days in your live account
+Earn $10,000 in live trading profits
+Once both of these conditions are met, our risk team will review your performance.
+Escrow Release Structure
+For every $10,000 in additional live profits earned, $5,000 in Escrow will be released
+Escrow is reviewed and calculated weekly, not daily
+This process continues until the full Escrow allocation has been released
+Important: Traders who engage in reckless or high-risk behavior ("yolo" trading) will not be eligible for Escrow release.
+Accessing Escrow
+Requirement
+Rule
+Minimum Time to Withdraw
+Must wait 60 days from account opening
+Withdrawable Funds
+Only released Escrow amounts may be withdrawn
+Margin Use
+Released funds may be used to meet margin requirements
+Risk Monitoring
+Significant drawdowns after release may trigger a risk review
+Escrow rewards are designed to incentivize consistent performance and reward discipline in the live environment. Our risk team monitors behavior to ensure traders are acting responsibly as they trade live capital.
+​
+Legacy Flex Transition to Live
+The below structure applies to traders currently mid onboarding and those that get move to live email on 1/31 or earlier. These traders may choose between the below legacy structure or the and above new structure.
+The simulated profits from your LucidFlex account are used to calculate your starting LucidLive balance.
+There is a $5,000 move to live cap for each LucidFlex account, regardless of account size.
+Any excess profits left over will be forfeit upon the move to live.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Lucid Trading Help Center

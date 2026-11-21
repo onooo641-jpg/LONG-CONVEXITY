@@ -1,0 +1,316 @@
+Futures Trading Strategies to Pass Prop Evaluations
+Get 30% Off with code "NOV"
+40% OFF GROWTH ACCOUNTS
+ENDS 13 NOVEMBER, 11:59PM EST
+How it works
+Pricing
+Help Center
+Join Discord
+Sign in
+Sign in
+Get funded
+Trading
+>
+Trading platforms
+12 minutes
+by
+Brett Simba
+Futures Trading Strategies to Pass Prop Evaluations
+Mechanics-first guide to passing futures prop firm evaluations: consistency math, intraday vs EOD drawdown, day-1 psychology, and the rules that fail most traders.
+Share this post.
+Copy link
+TL;DR How to Pass a Prop Firm Evaluation
+To pass a prop firm evaluation, start with the account rules before you choose the setup. Build the plan around daily loss limits, max drawdown, position caps, consistency requirements, trading hours, and your own stop-trading rule. A strategy can be simple and still work if the risk budget is clear, the trade size fits the account, and you stop before one bad session controls the evaluation.
+Table of Contents
+What Is a Futures Trading Strategy?
+Build the Evaluation Plan Before the Strategy
+Use a Simple Evaluation Risk Budget
+Rules to Check Before You Pick a Strategy
+Top 10 Futures Trading Strategies for Prop Firm Success
+Match futures trading strategies to the account
+Common Mistakes That Fail Prop Firm Evaluations
+Prop Firm Evaluation Strategies FAQ
+Evaluation strategy takeaways
+What Is a Futures Trading Strategy?
+A futures trading strategy is the rule set you follow before money is on the line. It tells you when to enter, when to exit, how much to risk, and when to stop trading.
+For Tradeify evaluations , a strategy must do more than generate profits. It must align with specific parameters like daily loss limits , drawdown tracking methods , position limits , and consistency requirements . Without a strategy that fits these parameters, even profitable trading can fail evaluation requirements.
+Build the Evaluation Plan Before the Strategy
+A profitable setup can still fail a prop firm evaluation when it conflicts with the rules. Before the first trade, write down the profit target, daily loss limit , max drawdown, consistency requirement, allowed contracts, trading hours, and the point where you stop trading for the day.
+Evaluation rule
+Decision to make before trading
+Profit target
+Set a daily pace that does not require one oversized trade or a rushed final day.
+Daily loss and max drawdown
+Use a personal stop below the firm limit so one bad session does not decide the account.
+Position size
+Choose contract size so two or three normal losses still leave room to trade cleanly.
+Consistency
+Plan repeatable profit days instead of relying on one large winner.
+Trading hours
+Set an alert before the close deadline and flatten positions manually before the platform has to act.
+Use a Simple Evaluation Risk Budget
+A useful evaluation plan starts with the loss boundary you can actually survive, not the profit you want to make. First check the tighter available limit: remaining Daily Loss Limit if the account has one, remaining max-drawdown headroom, and any personal stop you set below both. For a Select evaluation with no Daily Loss Limit, use the remaining max-drawdown headroom and keep a safety buffer for commissions and slippage.
+After that, divide the personal stop by the number of planned losing trades you can tolerate and size each trade below that number. For example, if the checked loss boundary leaves room for a hypothetical $600 personal stop and you allow three losses, the maximum all-in planned loss per trade is $200, including estimated commissions and slippage. If you hit the personal stop, the next action is to stop trading, review the journal, and wait for the next session. The firm limit should be the emergency boundary, not the normal stop loss.
+Rules to Check Before You Pick a Strategy
+Before you pick a futures trading strategy for prop firm challenges , you must understand the rule set. The deadlines and position-limit guidance below are broadly stated in Tradeify rules, while microscalping, hedging, consistency, activation, and payout checks can depend on account type and review stage. Always confirm the current Help Center rule for your specific account before trading.
+⚠️ Critical Warning: The Microscalping Rule
+This Tradeify rule is critical for success. Tradeify says noncompliance can prevent account activation or payout requests at the relevant review stage, so you MUST meet both criteria:
+Time Requirement: Over 50% of your trades must be held longer than 10 seconds.
+Profit Requirement: Over 50% of your profit must come from trades held longer than 10 seconds.
+If the ratios are not met at review time, Tradeify says activation or payout requests may be blocked until the account satisfies the policy.
+No Overnight Positions
+Sleep Flat: All positions must be closed by Tradeify's daily close deadline.
+Regular Days: Close manually by 4:45 PM Eastern Time.
+Holiday Early-Close Days: Close manually by 12:59 PM Eastern Time only when Tradeify designates a holiday early-close schedule. Confirm the current notice before trading.
+The Consequence: Tradeify says open positions are automatically closed when the market closes, but traders should still flatten before the listed daily deadline to reduce slippage risk.
+Hedging and Contract-Mixing Rules
+Rule scope: Tradeify prohibits hedging and treats simultaneous mini/micro contract mixing as hedging under its position-limit guidance.
+Specifics: Do not hold opposing positions, and do not trade minis and micros simultaneously on the same account.
+Strict Position Limits
+Know Your Cap: Maximum contracts vary by account size. For accounts purchased after September 12, 2025:
+$25k: 1 mini / 10 micros.
+$50k: 4 minis / 40 micros.
+$100k: 8 minis / 80 micros.
+$150k: 12 minis / 120 micros.
+‍
+Top 10 Futures Trading Strategies for Prop Firm Success
+These ten futures trading strategies can fit prop firm evaluations when the risk plan comes first. Choose the one that fits your behavior, account rules, and trade frequency.
+Day Trading with Defined Targets
+Day trading can fit Tradeify evaluations because closing positions intraday aligns with the no-overnight rule.
+The Setup: Enter trades based on technical setups like support and resistance or chart patterns.
+The Exit: Set defined profit targets from the setup structure, current volatility, contract tick value, and your evaluation risk budget. Use strict stop losses to protect capital.
+Why It Works: Intraday-only execution keeps the plan aligned with no-overnight rules and reduces gap exposure.
+Possible fit: Select Accounts when you need no Daily Loss Limit during evaluation but still respect the max drawdown, or Growth Accounts when the Daily Loss Limit soft breach helps enforce a stop for the session.
+Trend Following With Defined Pullbacks
+Trend following captures sustained directional movements using mechanical indicators.
+The Setup: Use moving average crossovers (e.g., 50/200 period) to identify the trend.
+The Execution: Enter on pullbacks to the moving average. Trail stops can help manage open risk or protect part of an unrealized gain, subject to slippage and execution risk.
+Possible fit: Growth Accounts , if trend trades stay within the active drawdown floor, Daily Loss Limit, and open-trade risk budget.
+Controlled Scalping With Rule Checks
+Controlled scalping targets comparatively small, tested moves with quick entries and exits. The target must fit the instrument's tick value, liquidity, current volatility, setup invalidation, and permitted dollar risk.
+The Compliance: The rule is based on trades held longer than 10 seconds. Over 50% of trades and over 50% of profit must come from trades held longer than 10 seconds.
+The Method: Target high-liquidity instruments like ES or NQ. Use order flow or Level 2 data.
+Possible fit: Select Accounts. No Daily Loss Limit during Select evaluation does not remove the max drawdown, position limits, or the need for a personal stop.
+Mean Reversion With Clear Invalidations
+Prices sometimes return toward an estimated average after extreme moves. The strategy seeks to profit from that reversion, but extreme conditions can persist or turn into a trend.
+The Setup: Use Bollinger Bands at 2 standard deviations or RSI at 30/70 levels.
+The Execution: Enter when price touches outer bands. Target a return to the middle band.
+Possible fit: Choppy, range-bound markets where the stop and target fit the risk budget. Growth Accounts can fit controlled risk plans, but the Daily Loss Limit and active drawdown floor still control the session.
+Breakout Trading With Confirmation
+Captures explosive moves when price exceeds established support or resistance levels.
+The Setup: Identify consolidation ranges. Wait for a decisive close beyond a key level.
+The Confirmation: Increased volume can help confirm the breakout, but the exact threshold should be tested by instrument and timeframe.
+Risk Warning: Avoid positions immediately before major economic releases like FOMC or NFP unless you have a tested news plan, defined risk, enough loss-boundary headroom, and clear account-rule compliance.
+Support and Resistance Trading
+One of the most straightforward futures trading strategies . Uses established price levels where buying or selling pressure historically emerged.
+The Setup: Identify key levels on Daily or 4-hour charts.
+The Execution: Enter on retests of broken levels or bounces from support. Set stops beyond the invalidation level using current volatility, tick value, position size, and permitted dollar risk.
+Possible fit: Multiple account types , when the level, stop, and target fit the account rules.
+Momentum Trading with Indicators
+Systematic and rule-based. Predefined indicator rules can reduce discretion, but they do not remove judgment, false signals, or execution risk.
+The Setup: Use MACD crossovers confirmed by RSI direction. Look for RSI above 50 for longs and below 50 for shorts.
+The Execution: Enter on the first pullback after momentum establishes.
+Possible fit: Growth Accounts , if the momentum trade stays inside the active drawdown floor, Daily Loss Limit, and personal risk budget.
+Time-Based Range Trading
+Different trading windows can behave differently, but volatility depends on the instrument, news calendar, liquidity, and daylight-saving shifts.
+Early Globex hours: Often quieter for some index futures, but confirm current liquidity and volatility before using mean reversion.
+European morning overlap: Can bring more movement in some markets, so use tested breakout rules instead of assuming every open will trend.
+U.S. cash open: Can be active for equity index futures, but treat it as a higher-attention window rather than a guaranteed momentum period.
+News Fade Strategy
+Trade a tested overreaction setup only when your data supports it. An initial news spike may retrace, stall, or continue.
+The Method: Some traders wait for the first reaction to settle before looking for overextension, but the timing must be tested for the specific instrument, release, liquidity, and risk budget.
+The Risks: Bid-ask spreads can widen and slippage can occur, especially during fast markets or major releases. Stop orders can fill worse than expected.
+Critical Rule: Never rely on the Daily Loss Limit as your stop loss during news events.
+Algorithmic Trading
+Automation can reduce discretionary execution, but it does not remove the need for testing, monitoring, shutdown rules, and human oversight.
+The Conditions: You must prove sole ownership. No commercial or shared systems allowed.
+The Restriction: High-frequency trading (HFT) is strictly prohibited.
+Verification: Be prepared to demonstrate your strategy on live video.
+Match futures trading strategies to the account
+Do not trade every account type the same way. Use this table to match your futures trading strategy to the rules that matter most for the evaluation.
+Strategy Type
+Possible account fit
+Why It Fits
+Risk note
+Active Scalping
+Select
+No Daily Loss Limit during Select evaluation gives more intraday flexibility, but max drawdown and position limits still apply.
+Needs a strict personal stop
+Trend Following
+Growth
+EOD drawdown recalculates after the session, but the active drawdown floor and Daily Loss Limit still matter while the trade is open.
+Monitor open risk
+Mean Reversion
+Growth
+Can fit if the stop, target, and position size stay inside the evaluation risk budget.
+Avoid averaging down
+Breakout Trading
+Select or Growth evaluations
+Can fit when entries are planned, slippage is considered, and the stop is not beyond the risk budget.
+Watch news and false breaks
+Common Mistakes That Fail Prop Firm Evaluations
+These are common ways a trader can lose control of an otherwise workable evaluation plan.
+Ignoring the Clock: Leaving positions open past the close deadline results in automatic closure. On regular days, close manually by 4:45 PM ET.
+Revenge Trading: Abandoning your plan to recover losses quickly can push the account into rule trouble. Stop when your predefined daily stop or documented plan condition is reached.
+The "One Hit Wonder": The Consistency Rule can affect pass, activation, or payout eligibility depending on account stage. Check the current percentage for the account type, then avoid relying on one outsized day to meet the target.
+Microscalping Violations: Failing either microscalping criterion can block account activation or payout requests at the relevant review stage: over 50% of trades and over 50% of profit must come from trades held longer than 10 seconds.
+Position Limit Breaches: Know your limits. For example, a $50k account purchased after Sept 12, 2025 allows strictly 4 minis or 40 micros.
+‍
+Prop Firm Evaluation Strategies FAQ
+Q: What strategy works best for passing Tradeify evaluations?
+A: There is no single best strategy. Day trading, trend following, and support/resistance can fit when the tested setup, holding time, stop size, and position size match Tradeify's requirements .
+Q: Can I swing trade at Tradeify?
+A: No. All positions must be closed before the daily close deadline. On regular days, Tradeify lists that deadline as 4:45 PM ET. You cannot hold positions overnight.
+Q: Is hedging allowed in Tradeify evaluations?
+A: Tradeify prohibits hedging and treats simultaneous mini/micro contract mixing as hedging under its current position-limit guidance.
+Q: Can I use trading bots in Tradeify evaluations?
+A: Tradeify allows bots and algorithms only under its current guidelines. You must be able to prove sole ownership, shared or cross-firm use is restricted, and HFT bots are prohibited.
+Evaluation strategy takeaways
+Discipline Before Outcome: Focus on following your plan consistently. Discipline supports cleaner execution and rule compliance, but it does not guarantee profits or passage.
+Check Current Rules: Use the published Help Center rules and dashboard notices before you trade, especially around deadlines, drawdown, consistency, and payout eligibility.
+Compliance First: A smaller profit within rules beats a larger profit that violates parameters.
+Long-Term Vision: Passing the evaluation is just step one. Sustainable careers require professional habits.
+Start Your Path: Ready to prove your skills? Visit Tradeify.co to explore account options.
+‍
+‍
+Get up to $750k instant sim funding
+Start earning payouts instantly
+Super fast automated payouts
+Free journal to improve
+Get funded now
+Join 80,000+ happy traders
+Summarize and ask questions with AI
+ChatGPT
+Claude
+Perplexity
+Grok
+Google
+Recommended for you
+8 minutes
+Futures Trading Strategies
+Entry and Exit Rules Guide for Planning Every Trade
+How to write entry and exit rules that define when a trade is allowed, what invalidates it, and how it ends, then test them without hindsight.
+Read article
+11 minutes
+Futures Trading Strategies
+How Many Trades Per Day to Take and How to Set Your Maximum
+Set a maximum trades per day cap from your tested setup frequency and all-in costs, with a loss budget that ends the session.
+Read article
+17 min read
+Futures Trading Strategies
+What Is a Gamma Squeeze?
+A gamma squeeze explained for futures traders: dealer hedging mechanics, the downside version, and how to manage the volatility without breaking account rules.
+Read article
+18 min read
+Futures Trading Strategies
+Crypto Trading Strategies and How to Build One
+A workable crypto trading strategy defines the market condition, entry, invalidation, exit, position size, and daily risk limit before you place the trade.
+Read article
+17 min read
+Futures Trading Strategies
+Double Bottom Pattern Guide for Better Trade Planning
+How to read a double bottom pattern, from the two support tests and neckline break to invalidation, measured moves, and position sizing for futures traders.
+Read article
+22 min read
+Futures Trading Strategies
+ABCD Pattern Trading Explained
+The ABCD pattern explained for futures traders, with the ratios that define the D zone, entry and invalidation rules, and how it compares with other formations.
+Read article
+10x your trading with up to $750k simulated funds
+Free built-in journal
+Get Instant Funding, or take an Evaluation
+Automated payouts
+Get funded now
+Be the first to get limited time deals
+Get one email per week filled with deals, insights and tips.
+Please enter valid email
+Subscribe
+We promise no spam. See our privacy policy
+Thank you! Your submission has been received!
+Oops! Something went wrong while submitting the form.
+Making trading accessible to everyone
+Company
+Home
+Pricing
+PTL Leaderboard
+Become an affiliate
+Careers
+Merchandise
+Resources
+Help Center
+Blog
+Privacy Policy
+Terms of Use
+Funded Trader Agreement
+Contact
+Support
+Discord community
+Partners and media
+Trading education All education →
+Trading for Beginners
+Market Mechanics
+Technical Analysis
+Trading Strategies
+Risk Management
+Trading Psychology
+Futures Trading
+Options Trading
+Stock Market
+Forex Trading
+Commodities
+Fundamental Analysis
+Glossary
+© 2026 - Tradeify Holdings, Corp . All rights reserved. Tradeify is a registered trademark of Tradeify Holdings Corp.
+1700 S. Dixie Highway, Suite 305 Boca Raton, FL 33432
+Important Disclaimers:
+The materials and content provided by Tradeify Holdings, Corp. (“Tradeify”), whether on our website, through distributed documents, TradeifyTV, or other communications, are intended solely for educational and general informational purposes (the “Information”).  This Information should not be viewed as an offer or solicitation to buy or sell futures, futures-related products/derivatives, or any futures products of any kind, or otherwise constitute any type of trading or investment advice, recommendation or strategy, or an endorsement of any financial instruments, companies, or funds. Users are encouraged to do their own research, should not interpret such Information as personalized financial advice, and should consult with a qualified financial adviser before making any financial decisions.  The Information presented herein does not consider your personal financial situation, risk tolerance, or investment goals. The Information provided is not targeted at any specific jurisdiction and should not be used in any manner that would contravene local laws or regulations.
+Hypothetical/Simulated Performance.  Hypothetical or simulated performance results have many inherent limitations, some of which are described below. Unlike an actual performance record, simulated results do not represent actual trading. Also, because the trades have not actually been executed, the results may have under-or-over compensated for the impact, if any, of certain market factors, such as lack of liquidity.  No representation is being made that any account will or is likely to achieve profits or losses similar to those shown. In fact, there are frequently sharp differences between hypothetical performance results and the actual results subsequently achieved by any particular trading program. One of the limitations of hypothetical performance results is that they are generally prepared with the benefit of hindsight. In addition, hypothetical trading does not involve financial risk, and no hypothetical trading record can completely account for the impact of financial risk in actual trading. For example, the ability to withstand losses or to adhere to a particular trading program in spite of trading losses are material points which can also adversely affect actual trading results. There are numerous other factors related to the markets in general or to the implementation of any specific trading program which cannot be fully accounted for in the preparation of hypothetical performance results and all of which can adversely affect actual trading results.
+Trader Performance Statistics (August 2025 – July 2026, calculated as of 9 August 2026): Across Tradeify's Growth, Advanced and Select evaluation products, (a) 17.2% of evaluation accounts initiated were successfully completed and afforded the opportunity to advance to the Funded Level; (b) 40.3% of individual participants who initiated one or more evaluations advanced to the Funded Level in at least one of their evaluations - participants may purchase multiple evaluations and resets, and initiated a median of 3 each over the period; (c) 28.5% of individual participants at the Funded Level received a payout; and (d) 3.0% of individual participants trading in a Funded Account were called up to a Live Funded Account. The Funded Level includes both Funded Accounts and Live Funded Accounts.
+Trade examples presented for compensation purposes are hypothetical and should not be expected to reflect live trading results. Simulated results do not necessarily imply future profits. The risk of loss in trading forex or commodity contracts can be substantial. You should therefore, carefully consider whether such trading is suitable for you in light of your financial condition.
+Engaging in futures, forex, and other financial trading involves significant risk and is not appropriate for all investors. It is possible to lose the entire amount of your investment, or even more. Only use risk capital—money you can afford to lose without impacting your financial security or lifestyle. Trading should only be undertaken by individuals who have the necessary risk capital and fully understand the risks involved. Past trading results do not guarantee future performance. Tradeify Holdings, Corp. does not warrant the accuracy or completeness of the Information provided and is not responsible for any losses or damages resulting from reliance on this Information.  Certain investment products present heightened risks:
+Security Futures.   Securities futures products are not suitable for all investors.  Supporting documentation is available upon request for all comparisons, recommendations, statistics or other technical data presented.  Past performance regarding securities futures (as applicable) is subject the following Risk Disclosure Statement for Security Futures Products .
+Forex Futures.  The prices of forex futures contracts may be highly volatile and while generally liquid, there may be times (e.g., during market stress or outside of regular trading hours) when it is difficult to execute trades at desired prices.  Forex futures are traded on margin and present risks associated with the use of leverage – this enables an investor to control a large position with a relatively small amount of capital and may amplify gains, but may also magnify losses.
+Virtual Currency Derivatives/Products. Virtual currency derivatives may experience significant price volatility and the initial margin for virtual currency derivatives may be set as a percentage of the value of a particular contract, which means that margin requirements for long positions can increase if the price of the contract rises.  Certain restrictions may be imposed on customer trading activity in virtual currency derivatives, such as requiring additional margin, imposing position limits, prohibiting naked shorting or prohibiting give-in transactions.  The rules of certain designated contract markets impose trading halts that may restrict a market participant's ability to exit a position during a period of high volatility.  Given the material characteristics of these products, including the lack of a centralized pricing source and the opaque nature of the virtual currency market, there currently is no widely accepted practice to verify the ownership and control of a virtual currency or the valuation attributed to a virtual currency.
+Testimonials. Testimonials provided herein, as well as those presented via TrustPilot may not be representative of the experience of other Tradeify account holders and such testimonials are not indicative of, or a guarantee of, future performance or success.  No compensation has been provided in connection with such testimonials.
+Tradeify Brokerage Disclaimer: Tradeify Brokerage LLC d/b/a Slay Markets is an introducing broker registered with the Commodity Futures Trading Commission ("CFTC") and guaranteed by NinjaTrader Clearing, LLC d/b/a NinjaTrader, Kraken Derivatives US, and Tradovate ("NTC"), and is a National Futures Association Member (NFA ID: 0575972). Tradeify Brokerage LLC's principal place of business is 1700 S. Dixie Highway, Suite 305, Boca Raton, FL 33432.
+Novaflame LTD (Registration No. HE 480295 ), with its registered address at Archiepiskopou Makariou III, 228, Agios Pavlos Court, Block A, 1st Floor, Flat/Office 113, 3030 Limassol, Cyprus, acts as a payment agent processing funds on behalf of Tradeify Holdings, Corp.
+We use cookies
+We use cookies to ensure you get the best
+experience on our website. For more information on
+how we use cookies, please see our Privacy Policy .
+Decline Accept
+This Month's Prize
+Win a Travis Head Signed Bat
+Yes, enter prize drawing
+No, I’m not interested
+First Name Please enter first name
+Email Address Please enter valid email
+Enter prize drawing
+By subscribing, you agree to receive emails from us. We promise no spam. See our privacy policy
+You’re in! Winners announced every 30th of the month.
+Oops! Something went wrong while submitting the form.
+Do you want a chance to
+Win a $150k Growth Account?
+Yes, enter prize drawing
+No, I’m not interested
+First Name Please enter first name
+Email Address Please enter valid email
+Enter prize drawing
+By subscribing, you agree to receive emails from us. We promise no spam. See our privacy policy
+You’re in! Winners announced every 30th of the month.
+Oops! Something went wrong while submitting the form.
+Do you want a chance to
+Win a $150k Growth Account?
+Yes, enter prize drawing
+No, I’m not interested
+First Name Please enter first name
+Email Address Please enter valid email
+Enter prize drawing
+By subscribing, you agree to receive emails from us. We promise no spam. See our privacy policy
+You’re in! Winners announced every 30th of the month.
+Oops! Something went wrong while submitting the form.
+We use cookies
+We use cookies to ensure you get the best
+experience on our website. For more information on
+how we use cookies, please see our Privacy Policy .
+Decline Accept

@@ -1,0 +1,40 @@
+What are the Daily Risk Limits and how do they work? | Alpha Capital Help Center Skip to main content
+Português do Brasil English Español English
+Português do Brasil English Español English
+Search for articles...
+All Collections
+Trading Rules
+What are the Daily Risk Limits and how do they work?
+What are the Daily Risk Limits and how do they work?
+Updated over 2 weeks ago
+Daily Loss Limit Calculation:
+Alpha Pro 6% - Based on balance or equity, whichever is greater: 3%
+Alpha Pro 8% - Balance-based: 4%
+Alpha Pro 10% - Balance-based: 5%
+Alpha One 6% - Based on balance or equity, whichever is greater: 3% during Evaluation / 4% on Qualified
+Alpha One 10% - Based on balance or equity, whichever is greater: 4%
+Alpha One 12% - Based on balance or equity, whichever is greater: 5%
+Alpha Swing - Balance-based: 5%
+Alpha Three - Based on balance or equity, whichever is greater: 4%
+Alpha Direct - Based on balance or equity, whichever is greater: 3%
+The daily loss limit is determined based on the percentages above, calculated from your starting balance and/or equity for each trading day.
+The starting balance and equity refer to the account balance and equity at the end of the trading day/beginning of the daily candle (broker time), which is 00:00 GMT+2 .
+Example for Alpha Pro 10% / Alpha Swing:
+If your account balance is $100,000 and your equity is $101,000 at the end of the daily candle, your maximum daily risk for the next day will be 5% of the starting balance ($100,000), resulting in a $5,000 maximum daily loss. This means your equity must remain above $95,000 at all times.
+The open equity (including any floating gains or losses) from the previous trading day is not factored into the maximum daily loss calculation. Therefore, even if your balance is $100,000 and equity is $101,000, the minimum equity requirement remains $95,000. This allows for a theoretical loss of up to $6,000 during the day when considering floating unrealised profit or loss.
+If your account balance is $100,000 and your equity is $99,000 at the close of the daily candle, the maximum daily risk for the following day will still be $5,000 (5% of the $100,000 starting balance). The minimum equity requirement remains $95,000. Thus, if you have open trades with a floating loss of -$1,000 carried over from the previous day, the maximum daily loss of $5,000 will be reduced by $1,000, since your equity is $99,000, and you will have $4,000 remaining in your maximum daily loss limit for that day.
+Example for Alpha One 10% / Alpha Three:
+If your account balance is $100,000 and your equity is $101,000 at the end of the daily candle, your maximum daily risk for the next day will be 4% of the equity (since $101,000 equity is greater than the $100,000 balance). This results in a maximum daily loss of $4,040. Consequently, your minimum equity must remain above $96,960 (calculated as the equity at the start of the trading day, $101,000, minus the 4% maximum daily loss, $4,040).
+If your account balance is $100,000 and your equity is $99,000 at the close of the daily candle, the maximum daily risk for the following day will be 4% of the balance (since the $100,000 balance is greater than the $99,000 equity). In this case, the minimum equity requirement will be $96,000 (calculated as the balance at the start of the trading day, $100,000, minus the 4% maximum daily loss, $4,000).
+Example for Alpha Direct
+If your account balance is $100,000 and your equity is $101,000 at the end of the daily candle, your maximum daily risk for the next day will be 3% of the equity (since $101,000 equity is greater than the $100,000 balance). This results in a maximum daily loss of $3,030. Consequently, your minimum equity must remain above $97,970 (calculated as the equity at the start of the trading day, $101,000, minus the 3% maximum daily loss, $3,030).
+If your account balance is $100,000 and your equity is $99,000 at the close of the daily candle, the maximum daily risk for the following day will be 3% of the balance (since the $100,000 balance is greater than the $99,000 equity). In this case, the minimum equity requirement will be $97,000 (calculated as the balance at the start of the trading day, $100,000, minus the 3% maximum daily loss, $3,000).
+Important Notes
+Regardless of whether balance or equity is used for the daily drawdown calculation, breaches are always applied based on open trades (unrealised losses) and, therefore, on the account's current equity value.
+If your account's equity falls below the minimum equity limit according to the daily drawdown calculations for that day, it will result in a hard breach. In such cases, all trades will be automatically closed by our system, followed by the closure of the account.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+[email protected]
+Discord
+Website
+Dashboard
+We run on Intercom

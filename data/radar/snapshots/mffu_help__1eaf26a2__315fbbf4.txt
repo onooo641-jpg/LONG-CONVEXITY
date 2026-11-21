@@ -1,0 +1,27 @@
+End of Day (EOD) Drawdown Explained | My Funded Futures Help Center Skip to main content
+Go to website Discord YouTube English हिन्दी Español English
+Go to website Discord YouTube English हिन्दी Español English
+Search for articles...
+All Collections
+Traders Evaluation
+End of Day (EOD) Drawdown Explained
+End of Day (EOD) Drawdown Explained
+Max EOD
+August 24, 2026
+At MyFundedFutures , we wanted to eliminate the max daily drawdown (MDD) so that our traders could relax without having to worry about the constant drawdowns affecting their accounts and mindset.
+We do not have a daily drawdown but we will have a Max EOD (End of Day) Drawdown. Also to be noted the Max EOD trailing locks in at $100 plus the initial starting balance.
+​
+​ NOTE: You must be aware that open equity losses are taken into consideration when calculating whether or not the account failed on this rule. This means that if an open position dips your account balance below the minimum account balance, your evaluation attempt will fail
+​
+Take the Challenge to Get Funded
+Examples:
+50k is 52k +$100 which is 52.1k 50K Accounts have 4% DD
+100k is 103k +$100 which is 103.1k
+150k is 154.5k +100 which is 154.6k
+Related Articles
+Traders Evaluation Simplified
+Rapid EOD 50k – A Comprehensive Look
+Builder Plan 150k - Comprehensive Guide
+Comprehensive Look into Redesigned Pro Plan
+Rapid EOD with DLL - A Detailed Look
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃

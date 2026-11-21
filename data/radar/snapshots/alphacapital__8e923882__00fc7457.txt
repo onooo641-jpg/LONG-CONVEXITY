@@ -1,0 +1,341 @@
+Alpha Capital Rules: Drawdown, Daily Loss & Evaluation 2026
+How it works
+Trading Objectives
+Evaluation Process
+Product
+Trading
+Platforms
+Trading Tools Lot Size Calculator
+Symbols
+Economic Calendar
+Leaderboard
+About Us
+Learn
+Resources
+Interviews
+Events
+Media
+Community
+Help Center
+FAQ
+Contact Us
+Careers
+Client Area
+How it works
+Product
+Trading
+Platforms
+Trading Tools Lot Size Calculator
+Symbols
+Economic Calendar
+Leaderboard
+About Us
+Learn
+Resources
+Trader Interviews
+Events
+Media
+Community
+Merch
+Help Center
+FAQ
+Contact Us
+Careers
+Client Area
+Written by Alpha Capital Research Team
+Published 20 May 2026
+Updated 5 November 2026
+Reading time 12 Min Read
+20 May 2026
+Updated 5 November 2026
+12 Min Read By Alpha Capital Research Team
+Alpha Capital Rules Explained: Drawdown, Daily Loss & Evaluation (2026)
+Alpha Capital rules for 2026: profit targets, daily loss, max drawdown, leverage, weekend holds and minimum trading days for Alpha One, Pro, Swing and Direct. Always confirm the live version before trading.
+Part of our prop firm guide series. Start with What is a Prop Firm? (2026 complete guide) , then explore: are prop firms legit? , how prop firms work , prop firm vs broker , trading evaluation , simulated funds , performance fee , qualified trader , drawdown types , prop firm red flags , choose by trading style , evaluation cost , realistic performance fees , copy trading UK , Alpha Capital login , ACG vs ACG Markets , performance fee delays , evaluation attempts , prop firm comparisons hub , vs E8 Markets , vs FundingPips , vs Blue Guardian , prop firms in South Africa , prop firms in India , pass without rebuilding strategy , why traders fail evaluations , evaluation fee & refund policy , first evaluation checklist , free monthly trading competition
+Before paying for an Alpha Capital evaluation, you need the firm's published limits: profit targets, daily loss, max drawdown, leverage, weekend holds, and the programme-specific rules for Alpha One, Pro, Swing, Three and Direct.
+Alpha Capital evaluations run on simulated accounts with simulated funds. You pay an assessment fee, trade through one or more evaluation phases, and if you meet the profit targets without breaking a rule, you advance to a Qualified Account where you can earn performance fees on your simulated profits.
+General information only. Simulated accounts, simulated funds. Performance fees are performance-based and outcomes are not guaranteed. Always confirm live rules on help.alphacapitalgroup.uk before trading.
+Looking for the no-evaluation rule set? Read Instant Funding rules (Alpha Direct).
+Quick answer
+Alpha Capital publishes separate rules for each programme. Here are the published figures:
+Plan
+Steps
+Phase targets
+Max drawdown
+Daily loss
+Min trading days
+Max leverage (FX)
+Alpha One 10%
+1
+P1 10%
+6% trailing (high-water mark)
+4%
+1
+1:30
+Alpha Pro 6%
+2
+P1 6%, P2 6%
+6% static
+3%
+3 per phase
+1:100
+Alpha Pro 8%
+2
+P1 8%, P2 5%
+8% static
+4%
+3 per phase
+1:100
+Alpha Pro 10%
+2
+P1 10%, P2 5%
+10% static
+5%
+3 per phase
+1:100
+Alpha Three
+3
+P1 8%, P2 4%, P3 4%
+6% static
+4%
+3 per phase
+1:50
+Alpha Swing
+2
+P1 10%, P2 5%
+10% static
+5%
+3 per phase
+1:30
+Alpha Direct
+0 (no evaluation)
+None
+5% trailing (high-water mark)
+3%
+n/a
+1:30
+The maximum combined allocation across your Alpha Capital accounts is $400,000. The performance split depends on the plan and any add-on; performance fees are calculated from eligible simulated profit.
+Alpha One (1-step evaluation)
+Alpha One is the single-phase path: no Phase 2. The trade-off is a trailing drawdown based on the high-water mark: 4%, 6% or 8% depending on the plan (One 6%, One 10%, One 12%; see the Alpha One rules ). The example below uses One 10% (6%).
+Here is how the trailing actually works, because this is where most traders get confused:
+The starting floor on a $100,000 account is $94,000 (6% below the start).
+As your balance climbs, the floor trails up by the same $6,000. At $102,000 the floor moves to $96,000.
+The floor keeps trailing only until your balance reaches +6% ($106,000). At that point the floor locks at your initial balance ($100,000) and never moves again.
+So once you are up 6% or more, your risk floor is simply your starting balance. It does not keep tightening as you grow further.
+Weekend holds on Alpha One are allowed at every stage, including the Qualified Account.
+Leverage: FX 1:30, Metals 1:9, Indices 1:10, Oil 1:10. Minimum trading days: 1.
+Alpha Pro (2-step evaluation)
+Alpha Pro comes in three variants. You choose your risk profile at purchase. A lower variant (Pro 6%) has a lower profit target but a tighter drawdown and daily loss. A higher variant (Pro 10%) gives more drawdown room in exchange for a higher target.
+Pro variant
+Phase 1
+Phase 2
+Max drawdown (static)
+Daily loss
+Pro 6%
+6%
+6%
+6%
+3%
+Pro 8%
+8%
+5%
+8%
+4%
+Pro 10%
+10%
+5%
+10%
+5%
+Leverage on all Pro variants: FX 1:100, Metals 1:30, Indices 1:20, Oil 1:10. Minimum trading days: 3 per phase.
+Weekend holds on Alpha Pro are allowed during the evaluation phases (Phase 1 and Phase 2) but are not permitted on the Qualified Account stage. If holding through weekends is core to your strategy on an ongoing basis, Alpha One or Alpha Swing are the better fit (both allow weekend holds at every stage). Alpha Three also allows weekend holds at every stage.
+Alpha Three (3-step evaluation)
+Alpha Three spreads qualification across three phases with smaller per-phase targets: 8%, then 4%, then 4%. Max drawdown is 6% static, daily loss is 4%, and you need 3 minimum trading days per phase. Leverage: FX 1:50, Metals 1:9, Indices 1:10, Oil 1:10.
+Weekend holds on Alpha Three are allowed at every stage, including the Qualified Account.
+Alpha Swing (2-step evaluation)
+Alpha Swing carries the largest drawdown allowance at 10% static and the widest daily loss at 5%, built for the wider stops and longer holds that swing trading needs. Phase targets are 10% then 5%, with 3 minimum trading days per phase. Leverage: FX 1:30, Metals 1:9, Indices 1:10, Oil 1:10.
+Weekend holds are allowed at every stage, including the Qualified Account. The news rule is a duration rule: a trade opened within 2 minutes before or after a high-impact release (a 4-minute window) must stay open longer than 2 minutes to be valid. Alpha Swing performance fees are on-demand only.
+Alpha Direct (Instant Funding, no evaluation)
+Alpha Direct is a Qualified Account from purchase: there is no evaluation to pass and no profit target. Because there is no evaluation stage, its risk rules apply from your first trade and are tighter than on the evaluation plans.
+Rule
+Alpha Direct
+Profit target
+None (Qualified from purchase)
+Max drawdown
+5% trailing (high-water mark)
+Daily loss
+3% (from the higher of the previous end-of-day balance or equity)
+Max risk per asset
+1% open loss on any one asset
+Leverage
+FX 1:30, Metals 1:9, Indices 1:10, Oil 1:10
+News trading
+No new or closing trades on the affected instrument from 5 minutes before to 5 minutes after the release
+Weekend holds
+Not allowed
+Expert Advisors (EAs)
+Not allowed
+The trailing drawdown works like Alpha One's, at 5%: on a $100,000 account the starting floor is $95,000; it trails up with your highest balance until the balance reaches $105,000, then locks at the initial $100,000.
+Max Risk Rule: if the combined open loss on any single asset reaches 1% of the account size, the account is closed. Losing positions on the same asset are added together, and profitable positions do not offset them. If you close a trade and open a new one on the same asset, in the same direction, within 10 minutes, the losses from both trades count together. Trading costs count too. See the Max Risk Rule section below for the details.
+Performance fees on Alpha Direct are on demand, with a 90% performance split. Before your first request you need a 3% profit buffer, which stays in the account. You can then request profits above the buffer, with a minimum of 1% of gross profit, and the 15% Best Day Rule applies: no single trading day can contribute more than 15% of total profit. Illustration only, not a typical result: on a $100,000 account, after the $3,000 buffer and a further $1,000 of eligible simulated profit, a request for the $1,000 would give a performance fee of $900.
+Alpha Direct accounts cannot be merged or scaled, and your identity verification (KYC) takes place when you first become eligible to request a performance fee. See the full Alpha Direct rules .
+Leverage and margin by plan
+Leverage changes by plan and asset class, and it directly sets the margin you need per position. These figures apply to both the Assessment and the Qualified Account stage.
+Plan
+FX
+Indices
+Metals
+Oil
+Alpha One
+1:30
+1:10
+1:9
+1:10
+Alpha Three
+1:50
+1:10
+1:9
+1:10
+Alpha Pro (6%, 8%, 10%)
+1:100
+1:20
+1:30
+1:10
+Alpha Swing
+1:30
+1:10
+1:9
+1:10
+Alpha Direct
+1:30
+1:10
+1:9
+1:10
+Higher leverage means less margin to hold the same position. On FX, a $100,000 position needs roughly $1,000 of margin at 1:100 (Alpha Pro), about $2,000 at 1:50 (Alpha Three), and about $3,333 at 1:30 (Alpha One and Swing).
+Weekend holds and overnight positions
+This is one of the most misunderstood areas, so here are the exact rules.
+There is no separate "overnight hold" rule. You can hold positions overnight, you simply pay or receive swap (also called rollover or overnight interest) on any position carried into the next trading day. The rule that actually governs holding is the weekend hold rule, which depends on your plan and stage:
+Plan
+Evaluation phases
+Qualified Account
+Alpha One
+Allowed
+Allowed
+Alpha Three
+Allowed
+Allowed
+Alpha Swing
+Allowed
+Allowed
+Alpha Pro (6%, 8%, 10%)
+Allowed
+Not allowed
+Alpha Direct
+n/a (no evaluation)
+Not allowed
+On Alpha Pro, holding over the weekend on a Qualified Account is a soft breach (profits from those trades are removed, the account stays active as long as it does not fall below the maximum drawdown). Alpha Direct does not allow weekend holds. For the full news and weekend breakdown, see Alpha Capital news and weekend hold rules .
+The Qualified Account stage
+Once you pass all evaluation phases, you advance to a Qualified Account with a 0% profit target. This is the qualified stage, on a simulated account, where you can request performance fees.
+Performance split: depends on the plan and any add-on; performance fees are calculated from eligible simulated profit.
+Schedule: bi-weekly or on-demand depending on programme. Alpha Swing is on-demand only. Bi-weekly is available on Alpha Pro and Alpha Three.
+On-demand requirements: a minimum of 2% gross profit on the account, plus the 40% Best Day Rule.
+Bi-weekly requirements: a minimum of $100 profit, and at least 5 trading days for your first request.
+Max allocation: a maximum combined allocation of $400,000 across all Alpha Capital simulated accounts.
+Key rules that close accounts
+Maximum drawdown
+If your balance falls below the drawdown floor, the account closes. Static drawdown is fixed from your initial balance and never moves. Trailing drawdown (Alpha One) follows your high-water mark and then locks at the initial balance once you are up by the drawdown percentage (6% on One 10%), as explained above. See trailing vs static drawdown .
+Daily loss limit
+The maximum you can lose in one trading day, measured from the start of the daily candle (00:00 GMT+3). On Alpha One, Alpha Three, and Alpha Pro 6%, it is based on the higher of that day's starting balance or equity. On Alpha Pro 8%, Alpha Pro 10%, and Alpha Swing, it is balance-based. Either way, a breach is judged on your live equity, so open (unrealised) losses count, not just closed trades.
+Max Risk Rule
+The Max Risk Rule applies to Qualified Accounts bought after 21 July 2026. It limits open drawdown, meaning floating losses, on any one asset. The limit is 3% on $5,000 to $25,000 accounts, 2% on $50,000 to $200,000 accounts, and 1% on Alpha Direct at all sizes. Each asset is tracked separately, and the first one to reach its limit closes the account, however your other positions are doing.
+Losing positions on the same asset are combined, and profitable ones do not offset them. All trading costs, including commissions, swaps and slippage, count towards the limit, so leave a buffer below it.
+If you close a trade and open a new one on the same asset, in the same direction, within 10 minutes, the losses from both trades count together towards the limit. This carries on with each further trade, so a run of quick re-entries can form one continuous chain. The chain only ends once more than 10 minutes pass between one trade closing and the next one opening. Switching direction does not end it, because trades the other way on the same asset form a separate chain.
+Minimum trading days
+Alpha One requires 1 trading day. Alpha Pro, Alpha Swing, and Alpha Three require 3 per phase. A trading day counts when you open and close at least one position.
+30-day inactivity
+If no trade is placed for 30 consecutive days, the account is deactivated. This applies to all accounts in all stages, so keep the account active even while waiting for a setup.
+Minimum trade duration (anti-HFT)
+Alpha Capital expects a genuine trading style, not latency or high-frequency exploitation of the simulated feed. Your average trade duration must be above 2 minutes, and at least 50% of your profit (targeted profit during evaluations, gross profit on a Qualified Account) must come from trades held longer than 2 minutes. Occasional individual trades under 2 minutes are fine. This rule applies to all accounts. See prohibited trading strategies for the full compliance list. For what counts as hedging and how Alpha Capital treats it, see what hedging is in trading .
+The 40% Best Day Rule
+If you request performance fees on-demand, no single trading day can represent more than 40% of your total cumulative profit. Example: if you have $10,000 cumulative profit and your best day produced $4,500 (45%), you cannot request on-demand yet. It does not apply to bi-weekly schedules. For the maths and worked examples, see what the consistency rule is and how it works .
+Common mistakes that breach accounts
+Misreading Alpha One trailing. On One 10%, once you are up 6%, the floor is your starting balance, not a moving 6% below your peak. Plan your buffer around that.
+Forgetting unrealised losses. Open drawdown counts toward your daily limit. Watch equity, not just closed P&L.
+Stacking size into news. One bad release can erase a daily limit in seconds. Treat news as volatility, not opportunity to size up.
+Not counting trading days correctly. Count days where you completed at least one round trip, not calendar days.
+Leaving the account dormant. 30 days without a trade closes it.
+Frequently Asked Questions
+What is the maximum drawdown on Alpha Capital?
+Alpha One uses a trailing drawdown from the high-water mark: 4% on One 6%, 6% on One 10% and 8% on One 12%. It locks at the starting balance once you are up by that percentage. Alpha Pro is static at 6%, 8%, or 10% depending on variant. Alpha Three is 6% static. Alpha Swing is 10% static.
+What is the daily loss limit on Alpha Capital?
+Alpha One 4%, Alpha Three 4%, Alpha Swing 5%, Alpha Pro 6% is 3%, Pro 8% is 4%, Pro 10% is 5%. Alpha One, Alpha Three, and Pro 6% use the higher of the day's starting balance or equity; Pro 8%, Pro 10%, and Swing are balance-based. Open losses always count.
+How many trading days do I need to pass Alpha Capital?
+Alpha One requires 1 minimum trading day. Alpha Pro, Alpha Swing, and Alpha Three require 3 per phase. A trading day counts when at least one position is opened and closed.
+Can I hold trades overnight or over the weekend on Alpha Capital?
+There is no separate overnight rule, you simply pay or receive swap on positions held overnight. For weekends: Alpha One, Alpha Three, and Alpha Swing allow weekend holds at every stage, including the Qualified Account. Alpha Pro allows them during the evaluation phases but not on the Qualified Account stage.
+What is the difference between static and trailing drawdown?
+Static drawdown is fixed from your initial balance and never moves. Trailing drawdown follows your high-water mark; on Alpha One it trails up until you are in profit by the drawdown percentage (6% on One 10%), then locks permanently at your starting balance.
+What is the 40% Best Day Rule?
+If you request performance fees on demand, no single trading day can represent more than 40% of your total cumulative profit. It does not apply to bi-weekly schedules.
+What are the Alpha Direct rules?
+Alpha Direct has no evaluation: it is a Qualified Account from purchase with a 5% trailing drawdown, a 3% daily loss limit, a 1% max risk per asset, no weekend holds and no EAs. Performance fees are on demand with a 90% performance split, after a 3% profit buffer and under a 15% Best Day Rule.
+Related Alpha Capital pages
+Alpha Capital news and weekend hold rules
+Alpha Swing account explained
+Trailing vs static drawdown
+Prohibited trading strategies on Alpha Capital
+Alpha Capital Group is a proprietary trading firm based in the United Kingdom. Accounts operate in a simulated environment with simulated funds. Performance fees are performance-based and outcomes are not guaranteed. Rules can change, so always confirm the live version for your specific programme on alphacapitalgroup.uk and help.alphacapitalgroup.uk before purchasing an evaluation.
+On this page
+Continue reading
+Guides
+May 20, 2026
+9 Min Read
+Alpha Capital News Trading and Overnight Rules Explained (2026)
+Alpha Capital’s news and hold rules vary by programme, so traders need to understand the exact limits before entering around major releases. In general, news trading is permitted, but high-impact events come with short restriction windows that affect when trades can be opened or closed. Overnight and weekend flexibility is strongest on Alpha Swing, which is built for traders who hold positions beyond a single session.
+Guides
+May 20, 2026
+8 Min Read
+Alpha Capital Swing Account Explained: Rules, Conditions and Who It Is For?
+Alpha Swing is Alpha Capital Group’s dedicated evaluation programme built specifically for swing traders who hold positions overnight, through weekends, and across major news events. Unlike standard prop firm challenges that limit longer-term strategies, Alpha Swing offers flexible rules including weekend holds, overnight trading, and a 10% static drawdown designed to suit daily and weekly timeframe traders. Traders who pass the two-phase evaluation become eligible for performance fees on a simulated Qualified Account, making Alpha Swing a strong fit for disciplined traders who rely on patience, wider stops, and macro-driven setups.
+Guides
+May 12, 2026
+3 Min Read
+What is Slippage in Forex?
+Slippage is the difference between the expected price of a trade and the price at which the trade is actually executed. It primarily occurs during periods of high volatility (like major news releases) or low liquidity (like market rollovers) when prices change faster than orders can be filled. To protect their accounts during evaluations (frequently known as prop firm challenges) and ensure consistent performance fees (or payouts), professional traders manage slippage by avoiding high-impact news and adjusting their stop-loss placements.
+Sign Up for an Exclusive Welcome Offer
+Subscribe to Alpha Capital Group emails for an exclusive welcome offer, trader insights, product updates, and discounts. Enter your email below to stay one step ahead.
+By subscribing, you agree to receive marketing emails from Alpha Capital Group. You can unsubscribe at any time.
+Thank you! Your submission has been received!
+Oops! Something went wrong while submitting the form.
+Home
+Product Alpha One 2-Step Evaluation Alpha Pro
+Trading
+About
+Contact Us Official channels
+Events
+Resources
+Prop Firm Guide
+Prop Firm Evaluations
+Promo Codes
+Archive
+Careers
+© 2026 AlphaGroup
+Mon – Fri: 8am – 8pm (GMT)
+Info@alphacapitalgroup.uk
+All information provided on this site is intended solely for the study purposes related to virtual trading on financial markets and does not serve in any way as a specific investment recommendation, business recommendation, investment opportunity analysis or similar general recommendation regarding the trading of investment instruments.
+*Note: All instances of the term trading refer exclusively to virtual trading
+ALPHA CAPITAL GROUP LIMITED
+Company number 13719951
+Registered office: 1 Allied Business Centre, Coldharbour Lane, Harpenden, England, AL5 4UT
+Cookie Policy
+Privacy Policy
+Terms of Use
+Disclaimer
+Return Policy
+Please note that all accounts we provide to our clients are demo accounts with simulated funds and any trading is conducted in a simulated environment. References to trading, traders, revenue, and profit are references to virtual trading, revenues, and profits respectively. More details can be found in the FAQ section. Okay I Understand.
+EN ES
+DE
+FR
+PT
+CS
+HI
+EN

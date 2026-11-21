@@ -1,0 +1,51 @@
+How many accounts can I have? | Blue Guardian Help Centre
+Skip to content Help Search the help centre ⌘K
+Website Start challenge Help Centre home Collections
+Getting started Account inactivity rule How Blue Guardian works Getting help and using your dashboard
+Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
+Payouts How payouts work
+Billing & accounts Paying for your account: methods, card rules and refunds How many accounts can I have? Futures bundle discounts
+Trading rules Prohibited trading strategies What happens if I break a rule? Futures risk management rules Trading hours and the trading day CFD news trading rules
+Platforms & instruments Trading platforms CFD trading conditions: markets, commissions and leverage Futures contract limits and funded scaling Futures instruments, codes and costs
+CFD plans Instant Standard account rules Instant Starter account rules 1 Step Standard rules 2 Step Standard rules 1 Step Nano rules 2 Step Nano rules Buy Now Pay Later (BNPL) rules
+Futures plans Reserve account rules Elite account rules Express account rules Direct account rules Elite, Reserve & Direct Path to Live Zero account rules Zero Path to Live
+Affiliates & competitions Affiliate program Monthly trading competition
+Help Centre
+Billing & accounts
+How many accounts can I have?
+How many evaluations and funded accounts you can hold on CFD and Futures, what happens over the limit, and the CFD scaling plan.
+Applies to: CFD and Futures Updated 15 November 2026
+Short answer
+You can buy as many evaluations as you like. The limit is on funded accounts: CFD caps your total active funded balance at $400,000, and Futures allows up to 5 funded accounts at once, across all Futures plans including Zero. Extra funded accounts wait in a queue until there's room.
+Limits at a glance
+CFD
+Futures
+Evaluations
+No limit
+No limit
+Funded accounts
+Up to $400,000 active funded balance in total, across all funded and instant accounts
+Up to 5 funded accounts traded at the same time, across all Futures plans (Zero, Elite, Reserve, Direct and Express), of any size
+What happens if I go over the limit?
+If passing an evaluation or buying an instant account (CFD Instant or Futures Direct) would take you over your limit, the new account stays inactive until there's room. That happens when one of your active funded accounts is closed, breached or otherwise stops counting towards your limit. The next eligible account is then activated.
+CFD example: you already have a $200,000 Instant account. You can add up to $200,000 more in funded or instant accounts across any plan. Anything beyond that waits in the queue.
+Futures example: you have 3 funded Zero accounts and 2 funded Reserve accounts. That's 5 funded Futures accounts, so any new funded account waits in the queue until one of them closes.
+Futures: Zero accounts
+Zero accounts count towards your 5 funded Futures accounts. If a funded Zero account makes $8,000 profit in one day, all your funded Zero accounts close or move to Live, depending on the option you choose. See Zero account rules .
+CFD: queued accounts and inactivity
+The normal 30-day inactivity rule still applies to CFD accounts. However, if an account breaches only because it was inactive while waiting in the allocation queue, our team will reactivate it.
+To avoid this, place a minimum trade (0.01 lots) on each queued account at least once every 30 days.
+CFD: scaling plan
+You can grow your CFD allocation up to $4,000,000 over time. To qualify, make 12% profit within 3 months while following all the rules. Each time you qualify, your account size increases by 30% of your initial balance .
+Still need help?
+Chat with our support team. We usually reply in a few minutes.
+Chat with us
+More in Billing & accounts
+Applies to: CFD and Futures Paying for your account: methods, card rules and refunds Applies to: Futures Futures bundle discounts
+On this page Short answer
+Limits at a glance
+What happens if I go over the limit?
+Futures: Zero accounts
+CFD: queued accounts and inactivity
+CFD: scaling plan
+© 2026 All Rights Reserved – Blue Guardian Terms Privacy Cookies

@@ -1,0 +1,229 @@
+Futures Prop Firm Rules Explained (2026) | Alpha Futures
+Black Friday Early Access · EARLYBOGO40 25K Zero BOGO + 40% off · EARLYBOGO50 25K Direct BOGO + 50% off
+Home
+About
+How It Works
+Trading
+Platforms
+AlphaTrader
+Learn More
+WealthCharts
+Learn More
+Quantower
+Learn More
+View All
+Leaderboard
+Lifetime Payouts
+Learn More
+Weekly Payouts
+Learn More
+Returns of the month
+Learn More
+View All
+Market
+Equity & Index
+Learn More
+Currency
+Learn More
+Metals
+Learn More
+Crypto
+Learn More
+View All
+AlphaTrader
+Launched AlphaTrader — the next evolution of the platform. Get Early Access
+Resources
+Contact Us
+Help Center
+Start Evaluation
+Sign In
+Home
+About
+How It Works
+Trading
+Platforms
+Leaderboard
+Market
+AlphaTrader
+Launched AlphaTrader — the next evolution of the platform. Get Early Access
+Resources
+Contact Us
+Help Center
+Start Evaluation
+Sign In
+Futures Prop Firm Rules Explained: MLL, Consistency & Limits (2026)
+By the Alpha Futures Team · Updated October 23, 2026
+Update — July 12, 2026: The Premium plan has been discontinued. All active Premium accounts are being refunded and closed automatically — no ticket needed. Zero, Advanced, and Direct plans are unaffected. References to Premium below are kept for historical accuracy.
+Part of our futures prop series. Start with What is a futures prop firm? , then explore: Platforms · Best futures prop firms (2026) · Alpha Futures review (2026) · Performance fee rules explained (2026) · Alpha Group · Futures vs forex prop firms (2026) · Best futures prop firms for beginners (2026) · Fastest payout futures prop firms (2026) . · futures price limit rule · My Alpha journal
+This guide breaks down futures prop firm rules — including Maximum Loss Limit (MLL), consistency, daily loss limits, and performance-fee eligibility — so you know what matters before you buy an evaluation.
+Futures prop firm rules are the Trading Objectives on a simulated evaluation and Qualified Account: profit targets, Maximum Loss Limit (MLL), daily loss limits, consistency (where applicable), news restrictions, position limits, and prohibited strategies. They are not optional tips. Breach the published rules and you fail the attempt or lose eligibility. This page explains what each rule type means and where Alpha Futures applies them.
+General information only, not financial advice. Simulated trading. Performance fees are performance-based; outcomes not guaranteed.
+Why prop firm rules exist
+Firms run simulated futures programmes so traders can prove risk control before Qualified Account access. Rules encode:
+Risk caps (how much you can lose)
+Objective targets (what “pass” means)
+Behaviour limits (news, hedging, position size)
+Performance fee eligibility (separate from passing the evaluation)
+Rules vary by plan and stage (evaluation vs Qualified). Always read the overview article for your exact plan before checkout.
+Rule types every futures prop firm uses
+Rule
+What it does
+Typical mistake
+Profit target
+Net profit you must reach (+ maintain) to pass the evaluation
+Stopping early after one green day when consistency still applies
+MLL (Maximum Loss Limit)
+Floor that fails the account if balance touches it
+Treating open profit as “safe” on trailing models
+Daily Loss Guard
+Intraday or session cap on losses (where used)
+One bad morning ends the day even if MLL not hit
+Consistency rule
+Limits how much one day can contribute to total profit
+Lottery-ticket pass days on evals with consistency
+News policy
+Restrictions around economic releases
+Placing new orders inside a banned window
+Position / scaling limits
+Max contracts by account size and stage
+Oversizing on micros before you understand tick risk
+Prohibited practices
+Hedging, reverse trading, etc.
+Offsetting correlated positions against policy
+Performance fee rules
+When you may request fees after qualifying
+Confusing eval rules with qualified-stage consistency
+MLL (Maximum Loss Limit)
+Alpha Futures uses end-of-day trailing MLL on all plans: the limit updates from end-of-session balance, not tick-by-tick intraday trailing.
+Examples (evaluation):
+Zero $25K: $1,000 MLL, $1,500 profit target
+Advanced $100K: $3,500 MLL, $8,000 profit target
+Premium $50K: $2,000 MLL, $3,000 profit target
+Fail condition (evaluations): Account balance hits or exceeds the MLL.
+Daily Loss Guard (DLG)
+Daily Loss Guard caps how much you can lose in a trading day before the account is restricted or failed for the day.
+Plan
+DLG on evaluation
+DLG on Qualified
+Zero
+Yes ($500 / $1K / $2K by size)
+Yes
+Advanced
+None
+None
+Premium
+None
+None
+Trader takeaway: Zero has a Daily Loss Guard; Advanced does not. Premium is discontinued. All current plans still enforce MLL.
+Consistency rules
+Consistency limits how large your best day can be relative to net profit.
+Stage
+Zero
+Advanced
+Premium (discontinued)
+Evaluation
+None
+40%
+Historical: 50%
+Qualified Account
+40% between performance fee requests
+None
+None
+Deep dive: Futures Prop Firms With No Consistency Rule (2026) · Calculator: consistencycalculator.alpha-futures.com
+Profit targets and one-step evaluations
+Alpha Futures uses one-step evaluations on all active plans. There is no Phase 2 with a second fee on the same path.
+Plan
+Profit targets by size
+Zero
+$1,500 / $3,000 / $6,000 ($25K / $50K / $100K)
+Advanced
+$4,000 / $8,000 / $12,000 ($50K / $100K / $150K)
+Premium
+$3,000 / $6,000 / $9,000 ($50K / $100K / $150K)
+Pass logic: reach and maintain the target; Standard evaluations require 50% consistency, Advanced evaluations require 40%, and Zero evaluations have no consistency rule. Premium is discontinued.
+Position limits and scaling
+Max position and scaling plans depend on plan and size. Examples on Zero evaluation:
+$25K: 1 mini / 10 micros
+$50K: 3 minis / 30 micros
+$100K: 6 minis / 60 micros
+Scaling plan: Zero $25K qualified has no scaling plan; Zero $50K / $100K qualified may use scaling. Advanced: no scaling plan. Premium: scaling on qualified accounts.
+Performance fee rules (after you qualify)
+Evaluation rules and performance fee rules are related but not identical.
+Shared backbone at Alpha Futures:
+5 winning trading days of $200+ profit (not required consecutive)
+Up to 4 requests per month
+Up to 50% of profit per request, within plan min/max
+90% of the request amount paid to you
+five business days or less after standard approval, according to the latest operational update
+Plan-specific caps and Zero 40% qualified consistency: Performance fee rules explained.
+How to read rules before you pay
+Open the plan overview for the size you will buy
+Write down MLL, profit target, DLG, and consistency for evaluation
+Read Qualified Account rules you will inherit after pass (news, consistency on requests, caps)
+Screenshot or save the page
+Confirm price on alpha-futures.com checkout
+→ Trust framing: Are Futures Prop Firms Legit?
+FAQs
+What futures prop firm rules matter most?
+The futures prop firm rules that matter most are usually profit target, Maximum Loss Limit (MLL), daily loss limits (if any), consistency (where it applies), news/order windows, position limits, and prohibited strategies. Miss the published rule set and the evaluation or Qualified Account can fail — always verify the live plan docs before you trade.
+What is futures prop firm MLL?
+Futures prop firm MLL (Maximum Loss Limit) is the drawdown floor on a simulated evaluation or Qualified Account. If equity breaches the MLL, the account closes. Alpha Futures uses end-of-day trailing MLL on its plans; dollar amounts and percentages vary by plan and size. See also our MLL explained guide.
+What are Alpha Futures prop firm rules?
+Published on help.alpha-futures.com : MLL, profit targets, Daily Loss Guard (Zero), consistency by plan and stage, news policy, position limits, prohibited strategies, and performance fee eligibility. This article maps rule types; plan numbers live in the help centre.
+Do all futures prop firms use the same rules?
+No. Drawdown type, consistency, news, and fee mechanics differ. Only trust each operator’s official documentation.
+Where is the consistency rule on Alpha Futures?
+Zero evaluations: none; Standard evaluations: 50%; Advanced evaluations: 40%. Zero Qualified Accounts use 40% between performance fee requests; Advanced Qualified Accounts have none. Premium is discontinued. Full guide.
+What rules fail an Alpha Futures evaluation?
+Primary fail: balance hits or exceeds MLL. Also breach Daily Loss Guard on Zero, violate consistency on Standard/Advanced evals, or break prohibited practices.
+Are these live brokerage rules?
+No. These are simulated evaluation and Qualified Account rules. Live futures margin at a broker is separate. $25K explained.
+Who is the best futures prop firm?
+For most traders in 2026, Alpha Futures is the strongest starting point on Trustpilot (4.4 out of 5, more than 6,000 reviews, October 2026), 90% performance split from day one, one-step evaluations, and end-of-day MLL. See Futures Prop Firm Comparison 2026 , Best Futures Prop Firms 2026 , and What is a Futures Prop Firm? .
+Do you need $25,000 to day trade futures?
+Not for a futures prop evaluation. You pay a monthly evaluation fee and trade simulated funds. $25,000 is mainly the stock PDT rule at many US brokers, not cash you must deposit for a prop $25K simulated label. Full answer: Do You Need $25K to Day Trade Futures? .
+Is $100 enough to trade futures?
+$100 is not enough for live futures margin. Evaluations start at $89/month on Zero $25K. See Cheapest Futures Prop Firm (2026) .
+Which futures prop firms have no consistency rule?
+Alpha Futures Zero evaluations have no consistency rule on the evaluation stage. Standard evaluations use 50% consistency; Advanced evaluations use 40%. Zero evaluations have no consistency rule. Premium is discontinued. Advanced Qualified Accounts have no consistency rule once qualified. Premium is discontinued. Zero Qualified Accounts carry a 40% consistency rule between performance fee requests. See Futures Prop Firms With No Consistency Rule (2026).
+Related reading
+Alpha Futures Review (2026) - Honest Trader Verdict
+What Is a Futures Prop Firm? (2026 Guide)
+Best Futures Prop Firms (2026): Plans, Rules & How to Pick
+Simulated evaluations, simulated funds. Performance fees are performance-based; outcomes not guaranteed.
+More Articles
+Sign Up for an
+Exclusive Welcome Offer
+Subscribe to Alpha Futures emails for an exclusive welcome offer, trader insights, product updates and discounts. Enter your email to stay one step ahead. You can unsubscribe at any time.
+Thank you for signing up to our newsletter
+Oops! Something went wrong while submitting the form.
+175,000+
+Qualified Analysts
+1.1Million+
+Traders
+$70M
+Performance Fees Paid
+Quick Links
+Home About How it works
+Trading
+Platforms Market Leaderboard
+Other
+Resources Contact Us Promo Codes
+2026 © Alpha Futures - All rights reserved.
+Terms of Use
+Terms and Conditions
+General Service Agreement
+Privacy Policy
+Return Policy
+ALPHA FUTURES LIMITED
+Company number 15655643
+Registered office address
+1 Allied Business Centre, Coldharbour Lane, Harpenden, England, AL5 4UT
+"Any references to trading, analysts, revenue, and profit throughout the website are references to virtual trading, revenues, and profits, respectively."
+Alpha Futures Risk Disclosure:
+Futures trading contains substantial risk and is not for every investor. An investor could potentially lose all or more than the initial investment. Risk capital is money that can be lost without jeopardizing your financial security or lifestyle. Only risk capital should be used for trading and only those with sufficient risk capital should consider trading. Past performance is not necessarily indicative of future results.
+Hypothetical Performance Disclosure:
+Hypothetical performance results have many significant performance and other limitations, some of which are described below. No representation is being made that any account will or is likely to achieve profits or losses similar to those shown on the website or any promotional material.
+CFTC Rule 4.41:
+Hypothetical or Simulated performance results have certain limitations. Unlike an actual performance record, simulated results do not represent actual trading. Also, because the trades have not actually been executed, the results may have under-or-over compensated for the impact, if any, of certain market factors, such as lack of liquidity. Simulated trading programs, in general, are also subject to the fact that they are designed with the benefit of hindsight. No representation is being made that any account will or is likely to achieve profit or losses similar to those shown.
+English Deutsch Español Français Italiano

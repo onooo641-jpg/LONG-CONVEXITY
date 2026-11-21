@@ -1,0 +1,53 @@
+How to Trade with TradingView | My Funded Futures Help Center Skip to main content
+Go to website Discord YouTube English हिन्दी Español English
+Go to website Discord YouTube English हिन्दी Español English
+Search for articles...
+All Collections
+Trading Platforms
+How to Trade with TradingView
+How to Trade with TradingView
+TradingView Guideline
+August 24, 2026
+Table of contents
+There are a few options for trading on TradingView.
+​
+Here are the most popular options:
+Long/Short Position Tool Entry (Recommended)
+This is the recommended way to trade on TradingView, especially if you intend to utilize Limit Orders.
+1. Login to Tradovate via TradingView’s Trading Panel - if you have trouble, review the “ Tradovate: Login Instructions ” guide.
+2. Change to your Futures symbol of choice.
+3. Select your Long/Short position tool depending on if you’re buying or selling. We will be shorting for this example.
+4. Now place your tool on your chart, adjust the entry, stop loss, and take profit to the desired levels.
+If you’re looking to market in, you can simply place the entry-level to where the market currently is trading. If utilizing limit orders, you would place the tool entry price where you intend to limit in.
+Take the Challenge to get Funded and trade futures on TradingView
+Example of limit order:
+Example of market order:
+Right-click the tool when you’re ready to adjust your risk and place your order and select ‘Create Limit Order’ –even if you’re looking to market enter.
+6. Once the pop-up appears, make sure to select the entry of choice first, Limit or Market.
+7. Now, you can adjust your risk, entry price, etc.
+8. Once ready, you can press “Buy” or “Sell” and your trade will be entered into the market.
+9. Once you’ve submitted your entry, it should look something like this with your Stop and Take profit in place.
+10. Keep in mind if you ever would like to close/flatten your position, you can press the X next to your order and it will cancel it.
+Quick Market Entry
+1. Login to Tradovate via TradingView’s Trading Panel - if you have trouble, review the “ Tradovate: Login Instructions ” guide.
+2. Change to your Futures symbol of choice.
+3. On the top left of your TradingView, you should see the option to sell, buy, or change quantity. Click on the quantity to change the amount of contracts you wish to enter with.
+4. Once you press either the buy or sell button, understand that you will be marketing in. This is not the option for
+you if you’d like to limit in. You can not place a stop loss and take profit prior to entering with this option either.You need to manually add it.
+5. To manually add your stop loss and take profit after entering your trade, do the following:
+a. For stop loss, hover over the price of choice, click the + symbol, and select the “Stop” option
+i. For example, if you are short (like in the example) you’d select the “Buy [quantity] Stop” as you are buying your sells to cancel it out.
+ii. Vice versa for longs, if you are buying, you’d click the + symbol where you’d want your stop to be, and then select the Sell [quantity] Stop” as you are selling your buys to cancel it out.
+b. For taking profit, it’s the same idea. Hover over the price you’d like to take profit, and select the “Sell/Buy [quantity] Limit” depending on if you’re long or short.
+i. For taking profit on shorts, select Buy [quantity] limit:
+ii. For taking profit on longs, select Sell [quantity] limit:
+6. Keep in mind if you ever would like to close/flatten your position, you can press the X next to your order and it will cancel it.
+Explore MyFundedFutures Discounts
+Related Articles
+Navigating Your Dashboard
+Fair Play and Prohibited Trading Practices
+Overview of Supported Platforms at MFFU
+Trading 101 in Volumetrica
+Industry Leading Futures Prop Firm: Start Trading with MyFundedFutures
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

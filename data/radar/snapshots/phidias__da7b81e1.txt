@@ -1,0 +1,668 @@
+TOU | Phidias Propfirm
+Skip to content
+Up to 60% off evaluations Limited time
+PHIDIAS
+How It Works
+Accounts
+Rules
+Resources
+FAQ
+Contact Support
+Blog
+Discord
+Sign In
+Get Funded
+How It Works
+Accounts
+Rules
+FAQ
+Contact Support
+Blog
+Discord
+Sign In
+Get Funded
+Terms Of Use
+Terms of Use
+GENERAL TERMS OF USE PHIDIAS PROPFIRM
+These general terms of use (hereinafter the “GTU”) govern the rights and obligations of any person using the services provided by Phidias Propfirm LTD (hereinafter “the Services”) via the website phidiaspropfirm.com (hereinafter the “Site”) and set out the terms and conditions of use of the Site.
+Any person using the Services provided by Phidias Propfirm LTD will hereinafter be referred to as “User” or “Client”.
+Phidias Propfirm LTD will hereinafter be referred to as the “Company”. This term will also be used in reference to the entities, agents, affiliates, employees and officers of Phidias Propfirm LTD.
+The use of the Site, creation of an account and/or subscription to a membership is subject to compliance, by all Users, with these GTU. The use of the Site implies acceptance by the User of the GTU.
+These GTU may be subject to modifications. The applicable conditions are those in force on the Site at the date of use of the Services.
+1. PRELIMINARY PROVISIONS
+1.1. The Services are only intended for persons over 18 years of age.
+1.2. The Services are strictly intended for persons who engage professionally with the Company and who have professional status (see article 4: Professional status).
+1.3. The Services are only intended for persons residing in certain countries. For greater clarity, the Company has established a list (see Annex No. 1), subject to modification, of countries in which the Services are unavailable. This list, while respecting the demands of regulators and regulatory requirements of various jurisdictions, is established at the Company’s discretion, particularly with regard to its capabilities. The reasons why certain countries are not eligible for the Company’s Services include:
+Sanctions and embargos : certain countries subject to international sanctions or embargos that restrict or prohibit international financial transactions, which has the consequence of preventing the provision of the Company’s Services in these regions;
+Fraud risks : certain countries historically presenting a higher level of fraud risks, whether by credit card, identity theft, hacking, online scams and other types of financial fraud. Given these risks, the Company must protect Users and its activities by limiting risks from these countries;
+Company’s management capacity : in certain countries, the Company’s partners, brokers, technical support companies or data providers are unable or unwilling to open real accounts, so as not to hinder the Company’s ability to effectively serve Users.
+Furthermore, the following are also excluded from the scope of Services provided by the Company:
+Persons listed on financial sanctions lists, persons with criminal records related to financial crime or terrorism, as well as persons banned due to breach of a previous contract.
+In these regards, the Company reserves the right to request the necessary information to verify that Users of its Services comply with these prerequisites.
+1.4. The User accepts and understands that these restrictions are put in place to guarantee the security, compliance and quality of the Services.
+1.5. None of the services provided by the Company can be considered as an investment service in accordance with applicable laws. The Company does not provide any guidance, instruction or information on how the User should perform transactions using the Services or otherwise, nor any similar information on traded investment tools. None of the Services constitutes investment advice or recommendation.
+1.6. The Company cannot provide tax advice or answer questions related to taxes, declarations, citizenship, work visas or other tax questions. No tax questions should be sent to the support service. It is advisable to contact a tax advisor or accountant.
+1.7. The Company cannot provide any guarantee regarding profits that could be realized by Users. Users are informed that they therefore risk not recovering the “investment” constituted by the payment of their subscriptions. However, the Company is able to guarantee that the User can never lose more than the amounts paid as part of their subscription, which are detailed below. Indeed, the User pays a subscription but does not invest money in the trading operations they might perform, all operations on funded accounts being performed with the Company’s funds.
+1.8. The following terms should be defined beforehand:
+“CASH Account” : virtual currency account where performance is paid by the Company and allows the User to withdraw profits under certain conditions.
+“LIVE Account” : account fully funded by the Company with real money from the Company’s funds.
+2. SERVICES PROVIDED BY THE COMPANY
+The Company offers Site Users trading Services that are divided into two phases: first the evaluation phase and, in case of success, the granting of a CASH account.
+The evaluation phase, described below, allows Users to test their trading skills in a virtual space, through virtual currency, in exchange for payment of a monthly fee depending on the type of account chosen.
+The performance achieved during this evaluation phase determines whether the User has the profile to obtain a CASH account.
+In case of success in the evaluation phase, the Company may grant the User a CASH account. This CASH account allows the User to perform trading operations through a virtual space that replicates financial markets, with virtual funds made available on the account funded by the Company, according to the selected account format.
+The Company reserves the right to replicate operations performed by Users on real markets, which allows Users to be remunerated by the Company, via payments called “Payouts” on the operations they transmit to the Company.
+The User will therefore not perform any trading operations with their own funds, but only with the Company’s funds. If the User has a particularly interesting profile for the Company, the latter reserves the right to grant them a LIVE account, under the conditions stated below.
+In case of failure in the evaluation phase, the User may start a new evaluation, or if applicable, cancel their account. Evaluation accounts function either:
+As a monthly subscription. Once the registration is subscribed, the monthly fee will be acquired by the Company, except for express termination of the account by the User.
+By a single payment (Lifetime). Once the single payment is made, it will be acquired by the Company.
+2.1. PRELIMINARY PHASE: REGISTRATION
+Users wishing to use the services offered by the Site must register according to the procedures provided below.
+Any User wishing to open an account on the Site must:
+Choose an account from the different offers listed below;
+Complete their registration form and provide all required information (including first and last name, email address, username, password, address);
+Check the boxes on the registration form attesting that the User has read and accepted:
+Data disclaimer,
+Billing conditions,
+Privacy policy,
+30-day renewal and account balance reset,
+The GTU.
+Provide information concerning the payment method, which can be any credit/debit card in the User’s name, in order to pay the monthly fees or single payment of the chosen subscription.
+The different accounts to which Users have access, to date, are the following accounts:
+The E2L (Express to Live) 25K account = 2 E-mini lots or 20 micro-lots;
+The E2L (Express to Live) 50K account = 5 E-mini lots or 50 micro-lots;
+The E2L (Express to Live) 100K account = 7 E-mini lots or 70 micro-lots;
+The E2L (Express to Live) 150K account = 9 E-mini lots or 90 micro-lots;
+The FUNDAMENTAL 50K account = 10 mini-lots or 100 micro-lots;
+The FUNDAMENTAL 100K account = 14 mini-lots or 140 micro-lots;
+The FUNDAMENTAL 150K account = 17 mini-lots or 170 micro-lots;
+The PREMIUM 50K account = 10 mini-lots or 100 micro-lots;
+The PREMIUM 100K account = 14 mini-lots or 140 micro-lots;
+The PREMIUM 150K account = 17 mini-lots or 170 micro-lots;
+The 10K DRAWDOWN account (available only to Users registering for the 10K DRAWDOWN challenge) = 8 E-mini-lots or 8 micro-lots;
+The ELITE account = $25,000 additional risk capital on the User’s LIVE account;
+The MASTER LIVE account = $50,000 additional risk capital on the user’s LIVE account.
+The Company may freely modify its offers, the conditions that appear on the site will apply Mutatis mutandis to these conditions.
+An account activation confirmation will be sent to the user at the email address provided.
+The user must then sign the data feed agreement corresponding to their account: the Rithmic agreement via Rtrader Pro, or the dxFeed agreement from the Phidias Propfirm dashboard.
+The trading platforms available to the User depend on the data feed attached to their account. Platforms are not interchangeable from one data feed to another. The compatible platforms include, but are not limited to:
+Rithmic data feed : Quantower, MotiveWave, ATAS, Sierra Chart, Bookmap;
+dxFeed data feed : DeepCharts;
+NinjaTrader / Tradovate accounts : NinjaTrader and Tradovate, through a NinjaTrader or Tradovate subscription.
+NinjaTrader and Tradovate are not compatible with the Rithmic data feed. The User is invited to check the data feed attached to their account before purchasing or downloading a trading platform.
+The costs of using these platforms are borne by the Users.
+Registration automatically results in the opening of an account in the User’s name, giving them access to a personal space that allows them to manage their use of the Site’s Services.
+The Company informs the User, who accepts, that all accounts are accounts on which the Company may decide, at its sole discretion, whether or not to copy positions using its own software.
+2.2. EVALUATION PHASE
+From the email containing the identifiers, the User can begin their evaluation phase via the trading platform of their choice from the list of platforms compatible with the Services provided by the Company.
+To succeed in this evaluation, the User must reach the profit objectives set by the Company, without violating the rules established by the latter.
+In case of non-compliance with one of these rules during the evaluation, the User benefits from 2 options:
+Start a new evaluation by purchasing a reset,
+Wait 30 days after purchase to benefit from automatic account reset, which only occurs in case of evaluation failure.
+Any failure in the evaluation opens the right to automatic account reset, allowing the start of a new evaluation phase.
+Evaluation attempts are not limited in number, but are all subject to payment of the monthly price indicated for the chosen account. The monthly subscription must be paid by the User as long as the account has not been validated following a successful evaluation or canceled by the User.
+These fees cover access to data feeds as well as access to tools and services enabling evaluation success and made available to the User.
+In case of evaluation success by achieving the objectives set by the Company, requiring a minimum of 3 trading days (Fundamental), 1 trading day (Premium), or 0 trading days (Express to Live), the User will be eligible to obtain their account. The User’s account will be automatically audited within 24 to 72 business hours, without need to send an email or open a support ticket, so that the account is examined by risk managers.
+2.3. GRANTING OF A FUNDED ACCOUNT
+CASH ACCOUNT
+In case of success in the evaluation phase, the Company grants the new User a CASH account. This CASH account is subject to general or specific rules depending on the type of account, and allows the User to perform trading operations from capital determined by the type of account chosen.
+The User has the possibility to pay the rates for Phidias-cash accounts, either monthly or all at once. The one-time payment being valid for the entire life of the account.
+The User has the possibility to pay in euros (€) or dollars ($).
+ACCOUNT
+LIFETIME PAYMENT (in € or $)
+25K E2L (Express to Live)
+80 € / 83 $
+50K E2L (Express to Live)
+139 € / 149 $
+100K E2L (Express to Live)
+139 € / 149 $
+150K E2L (Express to Live)
+159 € / 169 $
+50K FUNDAMENTAL
+139 €/ LIFETIME / 149 $/ LIFETIME
+100K FUNDAMENTAL
+139 €/ LIFETIME / 149 $/ LIFETIME
+150K FUNDAMENTAL
+159 €/ LIFETIME / 169 $/ LIFETIME
+50K PREMIUM
+139 €/ LIFETIME / 149 $/ LIFETIME
+100K PREMIUM
+139 €/ LIFETIME / 149 $/ LIFETIME
+150K PREMIUM
+159 €/ LIFETIME / 169 $/ LIFETIME
+The prices stated above are to be considered for reference, subject to any promotion applied by the Company.
+LIVE ACCOUNT
+Particularly performing Users who meet all objectives set by the conditions of different accounts, or when they have an interesting profile for the Company, may obtain the evolution of a CASH account into a LIVE account. This evolution is decided by the Company alone. Where the Company decides on such an evolution, the User may not object to it, nor elect to remain on their CASH account.
+This LIVE account thus allows the User to benefit from an account funded with real money, and not virtual as on CASH accounts. Moreover, the User will be able to perform their operations directly on markets, without the Company’s intermediary. On a LIVE account, the profit split is fixed at 80% for the User and 20% for the Company, regardless of the type of account the User comes from and of the profit split level reached on their CASH account.
+2.4. TERMINATION OF A PHIDIAS-CASH ACCOUNT
+The termination of a funded account or evaluation account may occur at any time, at the User’s initiative.
+However, any termination of an account cannot result in any refund of monthly fees paid subsequently, including fees for the current month.
+Termination is in no case automatic and must be performed for each of the accounts held by the User if they hold several.
+The termination of a funded account or evaluation account may occur at any time, at the Company’s initiative, if the User violates a mandatory rule provided in these GTU.
+3. GENERAL RULES APPLICABLE TO PHIDIAS-CASH ACCOUNTS
+The rules set out below apply in principle to all CASH accounts, namely Fundamental, Premium, Express to Live (E2L) and 10K Drawdown accounts.
+By exception, different accounts may be subject to derogatory rules which will be specified in the specific rules set out below.
+3.1.1. NUMBER OF AUTHORIZED ACCOUNTS AND COPY TRADING
+NUMBER OF AUTHORIZED ACCOUNTS
+There is no limit to the number of evaluation accounts subscribed by a User.
+The total limit for the number of simultaneous funded accounts is 15 accounts. The maximum number authorized by types of accounts simultaneously is as follows:
+5 Premium accounts (50k or 100k),
+5 Fundamental accounts (50k or 100k),
+5 Express to Live (E2L) accounts (all sizes combined, CASH or LIVE). E2L 150K is limited to 1 account.
+1 10k drawdown account,
+2 150k Fundamental accounts,
+2 150k Premium accounts.
+Any exceeding of this number of accounts is prohibited.
+Examples of authorized combinations:
+5 Fundamental accounts + 5 Premium accounts + 5 Express to Live (E2L) accounts;
+3 Fundamental accounts + 2 Premium accounts + 3 Express to Live (E2L) accounts + 1 10k drawdown account.
+This limit on number of accounts is calculated based on either the tax household, or the same company, or the internet connection used. Thus, the same tax household, the same company or persons benefiting from the same internet connection are limited to 15 funded accounts, regardless of the number of persons included in this unit.
+The User understands that this precaution is necessary for the Company to prevent any potential fraud to the rules it has established, and thus avoid a single User having more than 15 accounts.
+If the total number of authorized accounts is exceeded by a User, no payment will be made for their benefit and the account(s) exceeding the authorized number will be lost. Furthermore, the Company reserves the right to suspend all accounts of this User, at its own discretion.
+COPY TRADING
+The Company authorizes the use of copy trading, as long as the use of this method respects the Company’s guidelines regarding the number of authorized accounts.
+Copy trading is an investment strategy that consists of reproducing the operations of experienced Users. This allows Users to automatically copy the positions of another User, whether they are opened or closed.
+This means that Users have the freedom to use third-party software or platforms that offer copy trading functionalities. However, any use of these tools is the responsibility of the User. The Company assumes no responsibility in case of any failure or technical problem on these third-party platforms.
+It is each User’s responsibility to ensure that the use of these copy trading software or platforms complies with the Company’s rules regarding the number of funded accounts. Any exceeding of this limit will be considered a violation of the Company’s policy and no payment will be made to the User for accounts in violation. In case of violation of this policy, the Company reserves the right to suspend the accounts of the User concerned.
+3.1.2. RESET RULES
+In case of failure during the evaluation phase, Users have the possibility to purchase a reset of their account.
+Indeed, in case of violation of one of the mandatory rules resulting in immediate failure of the evaluation, Users have the possibility to reset their account instead of waiting for the end of the 30-day evaluation.
+Any reset is done at the following rate, which is independent of all monthly fees paid by the User to the Company as part of the evaluation phase:
+ACCOUNT
+RESET AMOUNT (EUR)
+RESET AMOUNT (USD)
+50K FUNDAMENTAL
+40€
+$40
+100K FUNDAMENTAL
+64€
+$64
+150K FUNDAMENTAL
+104€
+$104
+50K PREMIUM
+40€
+$40
+100K PREMIUM
+64€
+$64
+150K PREMIUM
+104€
+$104
+The prices stated above are to be considered for reference, subject to any promotion applied by the Company.
+No reset can occur as part of 10K Drawdown or Express to Live (E2L) account evaluations.
+Premium CASH accounts benefit from an exclusive Cash Account Reset (1x per account): 50K Premium = $399, 100K Premium = $499, 150K Premium = $599.
+3.1.3. CONSISTENCY AND REGULARITY POLICY
+The Company attaches great importance to discipline, consistency and security in trading operations. The Company’s commitment to Users is based on strict principles aimed at maintaining the integrity of activities and promoting stable growth for all parties involved.
+The Company’s main guidelines applicable to Users’ funded accounts are as follows:
+Definition of a trading system : the Company seeks Users who develop a precise and proven trading system, which must include clear rules for entries, stops, profit taking, drawdown management and exits;
+Consistency of operations : Users must maintain consistency in the size of their positions, number of trading days and risk management. The Company encourages stability and consistency of operations rather than erratic movements or attempts to “reload” contracts for the sole purpose of achieving specific objectives. Results attributed to the User are calculated based on operations actually executed and entered into the market. Any attempt to exploit the simulated environment results in loss of account access. To maintain consistency, the Company imposes profit limits for funded accounts. Under no circumstances should the profit balance of a trading day exceed 30% of the total balance. This rule aims to discourage excessively risky transactions. If applicable, if the User realizes profits exceeding 30% of the total balance in one day, they must continue trading to smooth their profit and thus respect the consistency rule imposed by the Company.
+Prohibition of automated trading and High frequency trading : the use of robots, fully automated trading algorithms or any form of automated trading is not authorized, except for semi-automated software, provided the User actively monitors and manually adjusts all operations;
+Avoid lottery transactions : the Company strongly discourages Users from seeking exceptional transactions or attempting to quickly accumulate funds by taking excessive risks. The Company rejects “single withdrawal” strategies or fraud attempts and encourages Users to respect a responsible trading approach.
+Authorization of economic news trading : operations based on economic news are authorized.
+Respect and professionalism : the Company expects Users to interact with the Company’s staff, partners and other Users with respect and professionalism in all circumstances.
+Contract expiration : the User is required to trade the highest volume and most recent contract for the instrument to be used. Thus, trading in illiquid, low-volume contracts is not authorized. It is therefore forbidden to practice spread trading between two maturities on the same product.
+The User can never be both buyer in one account and seller in another account at the same time. This applies to the User’s personal accounts or in collaboration with other Users. Any attempt at groups or partnerships will result in complete closure and confiscation of accounts of both parties, as well as a ban from the Site, tools and programs of the Company;
+Treasury bonds (US, UB, ZB, ZN, ZF and ZT) : arbitrage strategies on Treasury bonds are prohibited by the Company, both on evaluation accounts and funded accounts. Indeed, arbitrage strategies exploiting rapid price movements on simulated markets, characterized by artificial liquidity and specific latencies, are not representative of real market conditions. Due to differences in liquidity and structure between simulated markets and real markets, these strategies cannot be reproduced in an effective trading environment. The use of such strategies aimed at taking advantage of the specificities of simulated flow to generate performance not reproducible in real conditions is strictly prohibited. Any User wishing to use Treasury bonds is required to contact the Company to activate CBOT market data. Other Treasury bond strategies are authorized.
+3.1.4. END OF THE DAY RULES
+The Company defines drawdown as the measure of loss, and therefore risk, of a trading strategy. The maximum drawdown over a given period corresponds to the maximum loss recorded by a trading strategy over this period. This drawdown can be calculated as an amount or percentage.
+Regarding authorized drawdown management: the authorized drawdown is calculated at the end of each trading day, and consequently, it is not modified during the day.
+However, if the User’s balance reaches and exceeds the value of the drawdown limit, the account will be liquidated. It is possible for the User to follow their results at any time using the trading dashboard on R Trader Pro (see “Account Balance” tab). When the account balance reaches a new profit peak at the end of the trading day, the drawdown is calculated taking into account only the profits realized, excluding, a fortiori, the profits missed throughout the day.
+Regarding trailing end of the day, it consists of automatically adjusting the daily stop-loss level as the User’s capital evolves upward.
+The end of the day drawdown:
+On evaluation accounts always persists until the end of the evaluation, this means that for a 50k account, the User will always have a maximum of $2,500 authorized losses and for a 100k account, the User will always have a maximum of $3,000 authorized losses;
+On funded accounts stops at $50,100 for 50k accounts and at $100,100 for a 100k account. This means that when the drawdown reaches these limits, it will no longer follow if the User continues to make gains on their account.
+Express to Live (E2L) accounts use a static drawdown that never trails. The EOD rules described in this section do not apply to E2L accounts.
+3.1.5. WITHDRAWAL RULES
+The withdrawal rules in this section apply to Fundamental and Premium CASH accounts only. Express to Live (E2L) accounts are not subject to these rules and use a separate automatic bonus system (see section 3.2.3).
+To provide financial flexibility to Users, the Company has implemented the following system regarding payments from funded accounts.
+To verify the number of accumulated trading days, the User can consult their Phidias client Dashboard.
+Regarding earnings, payments are made, after any withdrawal request, via RISEWORKS.io. The Company commits to offering a simple, transparent and fast payment process.
+FIRST WITHDRAWAL
+Regarding withdrawals, any User can only make a withdrawal request after a period of 10 distinct and individual trading days, provided that the account reaches or exceeds the minimum threshold:
+For a 50k account (Fundamental or Premium): the minimum threshold is $52,600,
+For a 100k account (Fundamental or Premium): the minimum threshold is $103,700,
+For a 150k account (Fundamental or Premium): the minimum threshold is $154,500,
+For a Master account: refer to specific conditions,
+For a 10k Drawdown account: refer to specific conditions,
+For an Express to Live (E2L) account: refer to specific conditions (section 3.2.3).
+It is important to note that the Company only considers a trading day complete after market closure and at the beginning of the 11th day. The system being automated, no exceptions can be made outside these rules. In case of non-compliance with a deadline, the payment request will be carried over to the next payment request period, where it will be processed.
+The minimum withdrawal amount can never be less than $1,000. In addition, a required minimum balance must be maintained after payment. During this initial three-month period, there is also a maximum payment amount, regardless of the number of payments made in the month.
+If the User’s balance falls below the minimum threshold, this does not constitute a fault but prevents any withdrawal request. The User can only reformulate a withdrawal request from the moment their account has reached the minimum threshold.
+Regarding the account balance after withdrawal: to avoid any risk, the Company limits withdrawals using a minimum threshold. Thus, the account balance after withdrawal can under no circumstances be below:
+$50,100 for a 50k account (Fundamental or Premium),
+$100,100 for a 100k account (Fundamental or Premium),
+$150,100 for a 150k account (Fundamental or Premium),
+Master: refer to specific conditions,
+10k Drawdown: refer to specific conditions,
+Express to Live (E2L): refer to specific conditions (section 3.2.3).
+Therefore, the maximum withdrawal amount for each payment period depends on the account size:
+50k account (Fundamental or Premium): the User can withdraw up to $2,000 per payment period.
+100k account (Fundamental or Premium): the User can withdraw up to $2,500 per payment period.
+150k account (Fundamental or Premium): the User can withdraw up to $2,750 per payment period.
+Premium accounts: payouts every 5 trading days (instead of 10). Premium accounts use a progressive profit split: 75/25 on payout 1, 80/20 on payout 2, 85/15 on payout 3, 90/10 on payout 4, 100/0 from payout 5 onwards.
+If the User has multiple accounts, they can withdraw up to the maximum amount from each account during each payment period.
+Any withdrawal initiated and processed results in the Company deducting a commission according to the applicable profit split (20% for Fundamental and E2L, progressive from 25% to 0% for Premium) on the withdrawal amount, while the remainder will be credited to the User’s bank account.
+Furthermore, for the first withdrawal requests, each request also requires a minimum of 10 distinct trading days between them (5 trading days for Premium accounts). It is important to note that these active trading days extend from one request to another and are not linked to the approval dates of previous requests, when funds were deducted from the trading account, or when payments were sent or received. In other words, a minimum of 10 distinct trading days (5 for Premium) must be respected between each withdrawal request, whether it was approved or refused.
+TRANSITION TO LIVE ACCOUNT
+The transition to a LIVE account is decided by the Company alone and is strictly discretionary. Reaching the thresholds set out below does not automatically trigger a transition and creates no right to a LIVE account.
+A trader becomes eligible for consideration upon reaching 5 successful payouts or $100,000 in cumulative profits. Express to Live (E2L) payouts and bonuses are not counted toward these thresholds. The final decision rests with the Phidias risk management team.
+Where the Phidias risk management team decides to convert a CASH account into a LIVE account, that decision is final and binding on the User. The User may not refuse the transition, nor elect to remain on their CASH account. Upon transition, the profit split becomes 80% for the User and 20% for the Company, whatever profit split level had been reached on the CASH account.
+The maximum limits remain in force until the trader transitions to a LIVE account. On a LIVE account, there is no longer a maximum withdrawal limit, as long as the account maintains the required minimum balance.
+3.1.6. ACCESS TO MARKET DATA
+During the evaluation phase, a non-professional User will obtain top of book data for CME (Chicago Mercantile Exchange) free of charge. CME Top of Book data corresponds to the most advantageous buying (bid) and selling (ask) prices for instruments traded within the CME clearing house.
+To obtain market depth, the User can purchase on the Site:
+for $16, Rithmic market depth for one of the following markets: CME, CBOT, NYMEX, COMEX,
+for $46, Rithmic depth for all 4 aforementioned markets.
+EUREX (Level 1 + Level 2) = 22€/ 25$
+It is possible to make these purchases in the section dedicated to this purpose: “Rithmic or dxFeed market depth”.
+3.1.7. OVER-NIGHT AND OVER-WEEK OPEN POSITIONS
+Over-night positions are trading positions that are neither closed nor liquidated at the end of the trading day. Over-Week positions are positions that are not closed at the end of the week and remain open when the Monday Globex session resumes.
+In accordance with the Company’s trading rules:
+all positions must be CLOSED before the end of the trading day for Fundamental accounts;
+positions on PREMIUM accounts can remain open Over-night and Over-Week, with a lot size corresponding to the size of your account.
+Failure to close a position before market closure will result in account disqualification. This rule is only valid for FUNDAMENTAL accounts. PREMIUM accounts are excluded from this rule, as we authorize Over-Night and Over-Week with these types of accounts.
+Express to Live (E2L) accounts: overnight and over-week positions are not authorized on any E2L account (25K, 50K, 100K, 150K).
+3.1.8. 30% CONSISTENCY RULE
+To evaluate the regularity of trading performance of funded accounts, a consistency rule is applied. This imposes that no profit day exceeds 30% of the total profit accumulated by the User.
+Calculation example: If your total profit is $1,000, then the maximum gain authorized on a single day is $300 (30% of $1,000).
+If, however, you realize a gain of $330 in one day, you will need to increase your total profit to $1,100 to respect the consistency rule (since 30% of $1,100 equals $330).
+Minimum duration to apply the rule: The consistency rule cannot be calculated on a single day, because in this case, the daily gain would represent 100% of the total profit. It is therefore applied over a minimum of four days.
+Example over four days: • If you realize $1,000 profit distributed equitably ($250 per day), your most profitable day represents 25% of the total, which complies with the rule.
+• On the other hand, if over these four days, you record $350 one day, $150 another day, and $250 the two remaining days, the total remains $1,000, but the day at $350 exceeds the 30% limit ($350 represents 35% of the total).
+Impact of the consistency rule on performance: The consistency calculation allows objective evaluation of the stability of a trader’s gains.
+• Over a long period (e.g. 400 trading days), an exceptional gain will only have a small impact on overall consistency.
+• Conversely, over a short period (e.g. 2 to 3 trading days), a significant gain will distort the perception of real performance, making it more difficult to maintain 30% consistency over the long term.
+Consistency is calculated day by day. It also takes into account losses: high gains followed by significant losses require more profits to regain balance. However, these losses do not directly increase the consistency value at a given moment.
+The 30% consistency rule does not apply to Express to Live (E2L) accounts.
+3.1.9. LIST OF AUTHORIZED PRODUCTS
+Stock indices
+E-mini S&P 500 (ES)
+Nikkei NKD (NKD)
+E-mini NASDAQ 100 (NQ)
+Mini-DOW (YM)
+Russell 2000 (RTY)
+Micro-E-Mini S&P 500 (MES)
+Micro-E-Mini Dow Jones (MYM)
+Micro-E-Mini Nasdaq-100 (MNQ)
+Micro-E-Mini Russell 2000 (M2K)
+Interest rate futures
+2-year note (ZT)*
+5-year note (ZF)*
+10-year note (ZN)*
+30-year bond (ZB)*
+Ultra-Bond (UB)*
+Currency and cryptocurrency futures
+Australian dollar (6A)
+British pound (6B)
+Canadian dollar (6C)
+Euro FX (6E)
+Japanese Yen (6J)
+New Zealand Dollar (6N)
+Bitcoin Micro Futures (MBT)
+Ethereum Micro Futures (MET)
+Agriculture
+Lean hogs (HE)
+Live cattle (LE)
+Feeder cattle (GF)
+Wheat (ZW)
+Soybeans (ZS)
+Energy
+Crude oil (CL)
+E-mini crude oil (QM)
+Natural gas (GN)
+E-mini Natural gas (QG)
+Heating oil (HO)
+New York Harbor (RB)
+Micro crude oil (MCL)
+Metals
+Gold (GC)
+Silver (SI)
+Copper (HG)
+Platinum (PL)
+Palladium (PA)
+Micro-Gold (MGC)
+*If the User wants a specific product that is not available, do not hesitate to contact the team at the following link: Contact us.
+3.2. SPECIFIC RULES
+The general rules set out above are intended to apply to all funded accounts (Fundamental, Premium, Master, Express to Live (E2L) and 10K Drawdown).
+By exception, certain specific rules cancel or complement the general rules depending on the accounts concerned.
+In case of conflict or misunderstanding, the existence of a specific rule will always prevail over a general rule. In the absence of a specific rule, the general rule will apply.
+3.2.1. FUNDAMENTAL ACCOUNTS
+All instruments for Fundamental accounts only must be traded during the following opening hours (UTC time):
+Regarding CME Globex: Sunday to Friday from 11:00 PM to 9:59 PM (UTC);
+Regarding Clearport: (clearing time, please find information on the CME group website): https://www.cmegroup.com/clearport.html
+The User is required to consult each exchange’s website for official hours and holidays. CME normal trading hours: https://www.cmegroup.com/trading-hours.html#foi=F&tradeDate=2023-11-23&pageNumber=1 Holiday calendar: https://www.cmegroup.com/tools-information/holiday-calendar.html
+Depending on the User’s location, it is advisable to consult the following time converters:
+https://savvytime.com/converter
+https://www.worldtimebuddy.com/
+3.2.2. 10K DRAWDOWN ACCOUNT
+OPERATION
+The 10K DRAWDOWN account is a specific account accessible only to participants of the 10K DRAWDOWN challenge.
+This 10K DRAWDOWN challenge is a virtual challenge that is launched by the Company at regular intervals, whose launch dates appear, for each challenge, on the 10K DRAWDOWN page, accessible from the Site, via the “10K DRAWDOWN Challenge” tab.
+The challenge has a duration of 1 month. When the challenge is in progress, the User can decide to participate at any time and up to 5 days before the challenge closure. After this deadline, registrations are no longer possible before the launch of the next challenge launched by the Company.
+To participate in this challenge, the User is required to pay a registration fee of €19.
+Once the registration is paid by the User, they receive a 10K DRAWDOWN account and are registered in the pool of Users participating in the challenge for 1 month.
+Each challenge participant can register multiple times, without restriction on the number of participations, to obtain access to multiple 10K DRAWDOWN accounts and increase their chances of success. Each participation requires payment of the aforementioned registration fee of €19.
+The objective for 10K DRAWDOWN challenge participants is to rank first, or failing that, among the top 10 Users, by achieving maximum profit during the challenge month.
+Each participant will have access to a ranking in their Dashboard space, which will be updated every day, at the end of the day, throughout the challenge duration.
+Each participant, whether they have one or multiple accounts for the challenge, will be represented in the ranking by the account through which they achieved the best performance. Other accounts will not be counted in the ranking. Thus, each participant, regardless of the number of accounts created for the challenge, can only appear in the ranking once. The entirety of a participant’s accounts will therefore not be listed in the ranking, for clarity purposes.
+The total prize pool is $24,000 in cash, distributed as follows.
+Top 10 cash prizes:
+1st place: $12,000,
+2nd place: $3,000,
+3rd place: $2,160,
+4th place: $1,680,
+5th place: $1,320,
+6th place: $1,080,
+7th place: $840,
+8th place: $720,
+9th place: $660,
+10th place: $540.
+Tier rewards (in addition to the cash prizes above):
+Top 10% (excluding top 10): a 50K Fundamental account with all fees included and no activation fees to access the funded account,
+Top 50% (excluding top 10 and top 10%): a 90% discount code valid on any evaluation (excluding OTP),
+Top 100% (all other participants): an 80% discount code valid on any evaluation (excluding OTP).
+3.2.3. EXPRESS TO LIVE (E2L) ACCOUNTS
+Overview
+Express to Live (E2L) accounts provide a fast, simplified path to a live trading environment. E2L accounts are available in four sizes: 25K, 50K, 100K and 150K. Each User can hold up to five (5) E2L accounts (all sizes combined, CASH or LIVE). E2L 150K is limited to 1 account per User.
+E2L accounts are not subject to standard withdrawal rules. Instead, they use an automatic bonus system triggered when the CASH account objective is reached.
+E2L CASH Account Specifications
+Specification
+E2L 25K
+E2L 50K
+E2L 100K
+E2L 150K
+Starting Capital
+$25,000
+$50,000
+$100,000
+$150,000
+Static Drawdown
+$500
+$650
+$800
+$1,000
+Profit Target
+$1,500
+$2,500
+$3,500
+$4,500
+Max Contracts (E-mini)
+2
+5
+7
+9
+Bonus Payout
+$1,000
+$2,000
+$3,000
+$4,500
+Live Account Credit
+$500
+$1,000
+$1,500
+$2,000
+Liquidation Threshold
+$24,500
+$49,350
+$99,200
+$149,000
+Activation Fee
+$83
+$149
+$149
+$169
+E2L Specific Rules
+Static drawdown that never trails. No EOD trailing drawdown rules.
+0 minimum trading days for Evaluation, CASH and LIVE accounts.
+No consistency rule applies.
+No daily loss limit.
+Overnight and over-week positions are not authorized.
+Profit split: 80% for the User, 20% for the Company.
+Available assets for trading: CME, CBOT, NYMEX and COMEX.
+How It Works
+Step 1 : The User purchases and passes an E2L evaluation (0 minimum trading days required).
+Step 2 : Upon passing, the User receives a CASH E2L account and pays the activation fee.
+Step 3 : Once the profit target is reached on the CASH account, the bonus payout is automatically credited.
+Step 4 : The User presses the “Switch to Live” button in their dashboard to transition to a LIVE E2L account, receiving the live account credit.
+E2L LIVE Account Details
+Specification
+E2L LIVE 25K
+E2L LIVE 50K
+E2L LIVE 100K
+E2L LIVE 150K
+Max Contracts (E-mini)
+2
+3
+4
+5
+Static Drawdown
+$500
+$650
+$800
+$1,000
+Validated CASH E2L accounts can be accumulated, up to a maximum of 5 accounts per User. The total credit on the LIVE account will be adjusted based on the number of validated CASH accounts.
+Example: A User validates 5 CASH E2L 25K accounts. They will receive a total bonus of $5,000 (5 x $1,000) and their LIVE account will be credited with a cumulative $2,500 (5 x $500) in live credit, with 2 lots (or 20 micro-lots) per validated account and an authorized loss of $2,500 in total.
+E2L Payouts and Live Transition Thresholds
+E2L payouts and bonuses are not counted toward the 5-payout or $100,000 cumulative profit threshold for the standard CASH-to-LIVE transition (Fundamental and Premium accounts). E2L accounts have their own independent transition path via the “Switch to Live” button.
+Transition to LIVE account and challenge participation
+A User can only possess one LIVE account.
+Transition to LIVE account via a Fundamental or Premium account:
+Can no longer participate in Fundamental and Premium challenges.
+Can only participate in 10K Drawdown and E2L challenges.
+Transition to LIVE account via an E2L account:
+A Trader can convert up to 5 E2L accounts into LIVE accounts.
+Once the Trader has a LIVE account with the equivalent of 5 E2L accounts, they can no longer participate in E2L challenges.
+They can only participate in 10K Drawdown, Fundamental and Premium challenges.
+Transition to LIVE account via a 10K Drawdown account:
+Can no longer participate in 10K Drawdown challenges.
+Can only participate in E2L, Fundamental and Premium challenges.
+In case of failure on a LIVE account, the User cannot subscribe to a new E2L challenge for a period of one (1) month.
+Credit for success in new challenges
+If a User who already has a LIVE account succeeds in another challenge normally leading to the opening of a LIVE account, they will not receive a second LIVE account. Instead, the amounts intended for this account will be credited directly to their active LIVE account.
+3.2.4. ELITE LIVE AND MASTER LIVE ACCOUNTS
+ELITE LIVE and MASTER LIVE accounts are accounts benefiting from additional risk capital on the User’s LIVE account.
+Therefore, the ELITE LIVE Account and MASTER LIVE Account are accessible to Users with a live history:
+ELITE LIVE account: minimum 60 days of live trading, with an account balance reaching $125,000 and/or accumulated with payouts on the LIVE account;
+MASTER LIVE account: minimum 120 days of live trading, with an account balance reaching $250,000 and/or accumulated with payouts on the LIVE account.
+For each transition, an addition to the starting balance of the live account is made:
+$25,000 for the ELITE equivalent.
+$50,000 for the MASTER equivalent.
+The transition from CASH to LIVE is now subject to discretionary review. A trader becomes eligible for consideration upon reaching 5 successful payouts or $100,000 in cumulative profits (previously 3 payouts / $75,000). The minimum duration requirements (60 days ELITE / 120 days MASTER) remain unchanged.
+Express to Live (E2L) payouts and bonuses are not counted toward these thresholds.
+Reaching the thresholds set out above does not automatically trigger a transition. Where the Phidias risk management team decides to proceed with the transition, that decision is final and binding on the User: the User may not refuse it, nor elect to remain on their CASH account.
+4. PROFESSIONAL STATUS
+All Users are considered professionals with respect to the services they provide to the Company.
+However, regarding market operations, whether performed on a fictitious account (evaluation account) or real account (funded account), they are classified as non-professionals. Indeed, they do not possess the status of investment fund, company exercising regulated financial activity, or any other entity subject to specific regulation.
+It is therefore essential to distinguish between: • Professional status as an intervener, linked to services rendered to the company; • Professional status in the sense of financial markets, determined by market data providers according to distinct criteria.
+Furthermore, when the User receives income from the Company, they are automatically treated as an individual entrepreneur and not as an employee.
+In this regard, it is essential for the Company that the User maintain up-to-date information, particularly their business address and banking details, to enable the Company to send their funds to the User. Thus, payment information must correspond to the User’s registration information.
+The Company may at any time request from the User justification of their registration in the commercial register or any other similar entity according to the territory in which they are established.
+5. INTELLECTUAL PROPERTY
+The Company remains the owner of all intellectual property rights including but not limited to copyrights, trademarks, models, designs, know-how, trade name, database rights, etc., associated with the Services provided by the Company.
+The User is therefore prohibited from any reproduction or exploitation of said rights without the express, written and prior authorization of the Company, which may condition it to financial consideration.
+All content present on the Site, including, non-exhaustively, graphics, images, logos, videos, icons and software, are the exclusive property of the Company or its partners and are protected by national and international laws relating to intellectual property.
+Any reproduction, representation, modification, publication, adaptation of all or part of the Site’s elements, whatever the means or process used, is strictly prohibited without the prior written authorization of the Company.
+6. COMPANY’S LIABILITY
+Neither the Company nor its subsidiaries or their respective officers, directors, employees, agents, suppliers, sponsors or advertisers are responsible or liable for any indirect, incidental, consequential, special, exemplary, punitive or other damages under any contract, negligence, strict liability or other theory arising in any way from any Service provided by the Company. The Company’s maximum exclusive liability to Users is for all damages, losses and causes of action (whether in contract, in tort, including, without limitation, negligence), or otherwise, will be the total amount that the Trader will have paid, if any, directly to the Company for the Services. Applicable law may not allow limitation of liability, in which case the above limitations may not apply to you.
+Any technical problem, service interruption, data, platform, software, indicators, trading computers, internet provider or tools used for trading or access to trading is not the Company’s responsibility. Each User is responsible and must manage technical problems that might arise.
+All information, content, services and documents are provided “as is” and “as available”. To the fullest extent permitted by applicable law, the Company hereby disclaims any representation or warranty of any kind, express or implied, regarding the availability, operations and use of the site or information, content, material or services, on or accessible via the Site.
+Under no circumstances may the Company be held responsible to the User or any third party for damages of any nature resulting from the use, access, reliance, inability to use or inappropriate use of the site, any information, content, material or services available on the Site.
+7. USER’S LIABILITY
+The User undertakes to provide correct and updated information to the Company and not to cause any harm through their use of the Site and Services provided.
+The User assumes risks and responsibility if they choose to use the Site or any of the tools, services or programs. The User’s use of the site and any publications, presentations, financial transaction information, pricing data, trading data, performance information, blogs, publications or other information, content, services and documents, accessible through, or described on the site is at the User’s own risk.
+The User acknowledges that they are responsible for acquiring and maintaining any telephone, computer and other equipment necessary to access and use information, products and services, including websites, and all related charges. The User assumes full responsibility and risks related to their use and dependence on the Services provided by the Company. No opinion, advice or statement from the Company, its subsidiaries or their respective officers, directors, employees, agents, suppliers, sponsors and advertisers, whether made on a website or otherwise, will create a warranty. The Company does not represent any platform, such as rithmic, or other platforms.
+The User understands that the Company does not manage platforms and that it does not provide data. Data is provided by Rithmic or dxFeed. They understand that the Company has no capacity to control or create data or executions or the absence thereof. The Company does not guarantee that data will be correct, timely or useful for particular use.
+Neither the User nor a third party will hold the Company responsible for any change, cancellation or suspension of the Company’s services.
+Any purchase resulting in a chargeback or payment dispute will result in immediate deactivation of the User’s membership. The username will be permanently banned from the Company’s authorized user database.
+Any chargeback initiated by the User will be thoroughly investigated, and they will no longer be able to purchase services from the company. Any additional purchases will be refunded immediately.
+International Users outside Gibraltar understand that they are responsible for compliance with laws of their local jurisdiction regarding import or export regulations concerning any service or site operated by the Company. It is prohibited to access content or services from any Company website if they are in violation of any local law of the User.
+8. BILLING AND REFUND CONDITIONS
+BILLING
+Billing begins for each User on the day of their registration and will continue every month (30-day cycle), regardless of the account situation. Billing being established on a 30-day cycle, the User accepts that the debit date may differ from one monthly payment to another, within the limit of 3 days before and 2 days after the billing date of the previous cycle.
+Under these conditions, the User authorizes the debit of their credit card and its processing via the Company’s merchant account, for the payment of each monthly payment.
+Automatic monthly billing will only end in case of account cancellation by the User. Account cancellation only occurs at the User’s initiative. The account will be active until the end of the 30-day cycle after cancellation.
+REFUND
+All subscriptions made are final.
+Unless otherwise indicated, each subscription term will automatically renew on each expiration date, unless the User cancels their subscription before the expiration of the then-current subscription term.
+Non-participation or non-use of such purchased service does not entitle to a refund.
+No returns, refunds or exchanges, partial or otherwise, for any reason whatsoever can be requested from the Company. Once the order is placed and the User’s credit card is charged or the encrypted payment is processed, there are no returns or credits. It is not possible to return the product and demand a refund, as intellectual property has also been provided.
+9. PERSONAL DATA
+Information collected on the Site is intended for the Company and is used for the following purposes: enable Clients to benefit from Services offered on the Site, inform them and manage the Company-Client relationship, secure the Site and comply with regulatory and legal obligations.
+The data collected is as follows: identification data, contact details, transactional and account management information, identity documents, connection data.
+Data is kept for the duration necessary for their use. Data is subsequently anonymized or deleted, when no longer necessary, to satisfy the indicated purposes, unless legislation requires keeping them longer.
+In accordance with the “Data Protection and Freedom of Information” law of January 6, 1978 and the General Data Protection Regulation (GDPR) of May 23, 2018, the Client has a right of access, rectification and deletion of data concerning them.
+For more information, refer to the privacy policy available on the Site.
+10. APPLICABLE LAW – LANGUAGE
+These GTU and operations resulting therefrom are governed by Gibraltar law.
+They are written in French. In the case where they would be translated into one or more languages, only the French text would be authoritative in case of dispute.
+11. DISPUTES
+All disputes to which the use of Services and the Site in application of these GTU could give rise will be submitted to competent courts under common law conditions.
+12. VAT INFORMATION
+The rates displayed on our site are excluding taxes (ET).
+Individual clients – European zone (EU)
+If you are an individual residing in the European Union, VAT will be automatically added at the rate in force in your country of residence. You can consult the list of countries and standard VAT rates below.
+Professional clients – European zone (EU)
+If you are a professional established in an EU member country, you can benefit from VAT self-assessment, in accordance with current legislation. For this, you must provide a valid intra-Community VAT number when paying. Once validated, you will be billed excluding tax (ET).
+Clients outside the European Union
+All clients located outside the European Union, whether individuals or professionals, are not subject to VAT. You will therefore only pay the amount excluding tax (ET).
+Austria: 20%
+Belgium: 21%
+Cyprus: 19%
+Czech Republic: 21%
+Germany: 19%
+Denmark: 25%
+Estonia: 20%
+Greece: 24%
+Spain: 21%
+Spain (Santa Cruz): 0%
+Spain (Las Palmas): 0%
+Finland: 24%
+France: 20%
+Guadeloupe: 8.5%
+Martinique: 8.5%
+Réunion: 8.5%
+French Guiana: 0%
+Mayotte: 0%
+United Kingdom: 20%
+Ireland: 23%
+Italy: 22%
+Luxembourg: 17%
+Netherlands: 21%
+Portugal: 23%
+Slovakia: 20%
+Hungary: 27%
+Isle of Man: 20%
+Lithuania: 21%
+Latvia: 21%
+Poland: 23%
+Sweden: 25%
+Monaco: 20%
+ANNEX No. 1: List of countries in which Services are unavailable
+Afghanistan
+Algeria
+Angola
+Albania
+Bosnia and Herzegovina
+Bulgaria
+Belarus
+Botswana
+Burkina Faso
+Burundi
+Croatia
+Central African Republic
+Cuba
+Democratic Republic of Congo
+North Korea
+Ecuador
+Ethiopia
+Guyana
+Haiti
+Iran
+Indonesia
+Iraq
+Jamaica
+Kenya
+Kosovo
+Laos
+Lebanon
+Libya
+Mauritius
+Macedonia
+Montenegro
+Mali
+Malta
+Mozambique
+Namibia
+Nicaragua
+Nigeria
+Myanmar (former Burma)
+Pakistan
+Papua New Guinea
+Philippines
+Romania
+Russia
+Senegal
+Serbia
+Somalia
+South Africa
+Sudan/Darfur
+South Sudan
+Syria
+Crimea (region of Ukraine)
+Sri Lanka
+Slovenia and Yugoslavia
+Tanzania
+Trinidad and Tobago
+Tunisia
+Venezuela
+Yemen
+Zimbabwe
+Get exclusive deals and trading insights
+One email per week. No spam. Unsubscribe anytime.
+Subscribe
+The fastest, fairest futures prop firm. Static and EOD drawdown, daily uncapped payouts, and $15M+ paid to traders.
+Support by Tickly
+Accounts
+Configurator
+How It Works
+Rules
+Resources
+Help Center
+Blog
+Become Affiliate
+Company
+About
+Contact
+Join Discord
+The website (phidiaspropfirm.com) is owned and operated by Phidias Propfirm LTD, registered in Gibraltar. © 2026 All rights reserved.
+Privacy
+Terms Of Usage
+Disclosures
+CFTC Required Disclaimer: Trading futures and options presents great potential rewards, but also great potential risk. You need to be aware of the risks and be willing to accept them to invest in the futures markets. Don't trade with money you can't afford to lose. This is neither a solicitation nor an offer to buy or sell futures contracts, shares or options thereon. No representation is made that any account will or is likely to realize profits or losses similar to those discussed on this website. Past performance of any trading system or methodology is not necessarily indicative of future results.
+CFTC RULE 4.41: Hypothetical or simulated performance results have certain limitations. Unlike an actual performance record, simulated results do not represent actual trades. Furthermore, since the trades have not been executed, the results may have under- or over-compensated for the impact, if any, of certain market factors, such as lack of liquidity. Simulated trading programs in general are also subject to the fact that they are designed with hindsight. No representation is made that any account will or is likely to generate profits or losses similar to those shown. No representation is made that any account will or is likely to realize profits or losses similar to those discussed in this site, medium and texts. Our courses, products and services are to be used as learning aids only and are not to be used to invest real money. If you decide to invest real money, all business decisions must be your own.
+Testimonial Disclosure: Testimonials appearing on this website may not be representative of other customers and do not constitute a guarantee of future performance or success.
+Free Account Giveaway
+Win a free account
+and grab 80% off
+Enter our giveaway for a free trading account , and everyone who joins gets an instant 80% off code on any evaluation. One email. One entry. That is it.
+Yes, I want in
+No thanks, I would rather not win a free account or get a code
+Last Step
+Where do we send your entry and code?
+Drop your best email below. We enter you in the draw for a free account and hand you your 80 % off code on the spot.
+Yes, enter me in the draw
+No spam. Unsubscribe anytime. One address, one entry.
+No thanks, I would rather not win a free account or get a code
+You are entered
+You are in the draw.
+Your entry is locked in. We will email you if you win the free account. In the meantime, here is your 80 % off code to use right now.
+Your discount code
+PHIDIAS80
+Copy
+Copied
+Up to 80 % off, applied at checkout.
+Browse accounts and use my code
+Close this window
+Live now
+Join us on YouTube

@@ -1,0 +1,43 @@
+Payout Methods | Lucid Trading Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Lucid Home
+Lucid Home
+Search for articles...
+All Collections
+Fees, Payments and Payouts
+Payout Methods
+Payout Methods
+How Lucid Trading pays traders: available withdrawal methods and processing speed, with payouts averaging about 15 minutes once approved.
+A
+Written by AJ
+Updated this week
+Table of contents
+Payout Providers
+Lucid Trading currently supports the following payout methods for approved withdrawals:
+Plaid
+Instant bank transfers for U.S.-based traders
+To connect your bank account to Plaid for instant transfers:
+Go to your dashboard > Payouts > Add Bank Account
+WorkMarket by ADP
+Available for both U.S. and international traders
+Can withdraw via bank transfer or Paypal
+Funds can typically be received as early as the next business day
+Echlon
+Instant bank transfers for international traders
+A staged rollout is in progress for Echlon to introduce instant bank transfers to our international userbase.
+Currently supported countries include:
+United Kingdom
+Germany
+Spain
+Crypto
+Available for International Traders
+Crypto Currency Payout Options
+BTC
+ETH
+LTC
+USDT
+USDC
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Lucid Trading Help Center

@@ -1,0 +1,210 @@
+Práticas comerciais proibidas e restrições comerciais | Audacity Capital
+Celebrando 14 anos, 14% de desconto Para todos os programas Celebrando 14 anos, 14% de desconto Para todos os programas
+Celebrando 14 anos, 14% de desconto Para todos os programas
+Celebrando 14 anos, 14% de desconto Para todos os programas
+Celebrando 14 anos, 14% de desconto Para todos os programas
+Celebrando 14 anos, 14% de desconto Para todos os programas
+Celebrando 14 anos, 14% de desconto Para todos os programas
+🎓 Junte-se à Trader University
+Sobre
+Financiamento
+Histórias
+Competição
+Afiliados
+Recursos
+PT English Türkçe Español Français Italiano Português Deutsch Filippino Русский العربية हिन्दी 日本語
+Login
+Guia completo de práticas comerciais proibidas
+Na Audacity Capital, espera-se que os traders tomem decisões comerciais independentes e informadas e gerenciem os riscos com responsabilidade. Para promover um ambiente de negociação justo e consistente, as práticas abaixo são proibidas. Este guia explica cada restrição, por que ela se aplica e como reconhecer exemplos comuns.
+Se você não tiver certeza se uma estratégia de negociação ou uma ferramenta automatizada é permitida, entre em contato com nossa equipe de suporte antes de usá-la em sua conta.
+Descrição
+Negociação de alta frequência (HFT)
+Escalpelamento de carraças
+Cobertura ou cobertura de grupo em várias contas
+Estratégias de redução da média /Martingale
+Uso de consultores especializados (EAs) terceirizados
+Média de custo em dólares (DCA)
+Gerenciamento de contas por terceiros
+Comércio de cópias
+Comércio em rede
+Exploração de vulnerabilidades do sistema
+Atividade automatizada de várias negociações
+Abuso de tamanho de lote
+Regra de negociação de lacunas de fim
+Apostas direcionais únicas
+Jump To
+Descrição
+Para manter um ambiente de negociação justo, estável e transparente, as seguintes estratégias e comportamentos de negociação são estritamente proibidos:
+Negociação de alta frequência (HFT)
+O que é Usando Expert Advisors (EAs), bots ou algoritmos para abrir e fechar grandes volumes de negociações em frações de segundo, explorando pequenos movimentos de preços de curta duração ou lacunas nos feeds de dados.
+Por que não é permitido A HFT depende de velocidade e infraestrutura em vez de análise de mercado e pode criar vantagens injustas, manipulação de preços ou instabilidade. Essa restrição também abrange a arbitragem de latência: exploração de atrasos entre a execução da negociação e as atualizações dos dados de mercado.
+Como isso pode aparecer
+Um grande número de negociações abertas e fechadas em frações de segundo.
+Sistemas automatizados que visam atrasos nas cotações, discrepâncias de preços de curta duração ou tempo de alimentação, em vez de uma visão do mercado.
+Exemplos
+Um EA realiza mais de 50 negociações por minuto em EUR/USD, com cada negociação fechada em uma fração de segundo para atingir discrepâncias de subpip entre o feed da plataforma e um feed externo mais rápido.
+Um bot identifica atrasos recorrentes no feed e inicia negociações sistematicamente antes das atualizações de preço atrasadas.
+Esclarecimento importante Uma negociação isolada que fecha com rapidez incomum não estabelece, por si só, uma estratégia de HFT. Uma abordagem repetida baseada em velocidade ou latência é a preocupação.
+Escalpelamento de carraças
+O que é Abrir e fechar negociações em uma janela muito curta (2 minutos ou menos), com o objetivo de capturar pequenas flutuações de preço em vez de negociar uma visão direcional genuína.
+Por que não é permitido O escalpelamento de carrapatos depende do ruído do mercado e não da análise ou de uma estratégia definida. Ele pode ser realizado manualmente ou por meio de ferramentas automatizadas.
+Como isso pode aparecer
+Entradas e saídas repetidas em dois minutos ou menos.
+Metas pequenas e frequentes impulsionadas por pequenas oscilações de preços.
+Exemplos
+10:00:00 — Compre 1,00 lote EUR/USD; 10:01:35 — feche com um lucro de 3 pip. A repetição dessas negociações de curta duração com base em um movimento mínimo de preços constitui uma proibição de escalpelamento de carrapatos.
+Um trader abre repetidamente negociações visando um ou dois pips, fechando cada uma após alguns segundos sem uma lógica de mercado mais ampla.
+Esclarecimento importante O fechamento de uma única posição em dois minutos porque seu stop-loss ou take-profit foram alcançados inesperadamente não é necessariamente evidência de uma estratégia de escalpelamento de ticks. Os padrões e circunstâncias comerciais são relevantes.
+Cobertura ou cobertura de grupo em várias contas
+O que é Colocar posições opostas de compra e venda no mesmo instrumento, em uma conta ou em várias contas pertencentes ao negociador ou coordenadas com outras pessoas, para compensar a exposição ao mercado ou criar um resultado sem risco.
+Por que não é permitido Posições opostas podem transferir perdas para uma conta e gerar lucros em outra, criando um acordo no estilo de arbitragem em vez de assumir riscos genuínos de mercado.
+Como isso pode aparecer
+Posições de direção oposta correspondentes ou cronometradas de perto no mesmo instrumento.
+Compra e venda coordenadas entre contas ou comerciantes separados.
+Exemplos
+A Conta A compra GBP/USD, enquanto a Conta B, operada pelo mesmo trader ou por um associado coordenado, vende uma posição GBP/USD de igual tamanho ao mesmo tempo.
+Um trader abre uma posição de venda no mesmo instrumento para compensar uma posição de compra existente em vez de fechar a exposição original.
+Esclarecimento importante Posições não relacionadas em mercados separados que apresentam desempenho diferente não são, por si só, prova de cobertura coordenada. A conduta proibida diz respeito a posições opostas deliberadamente arranjadas para compensar o risco.
+Estratégias de redução da média /Martingale
+O que é Aumentar o tamanho da posição após uma perda na mesma ideia de negociação perdedora, na tentativa de recuperar as perdas anteriores com uma eventual negociação vencedora.
+Por que não é permitido Esse método pode exigir progressivamente mais capital durante sequências de perdas e pode violar rapidamente os limites fixos de saque de uma conta de negociação.
+Como isso pode aparecer
+Aumentar o tamanho dos lotes após perdas consecutivas ou movimentos adversos de preços.
+Dobrar ou aumentar a exposição para defender a mesma ideia de negociação perdedora.
+Exemplos
+Um trader compra 0,50 lotes de USD/JPY e, em seguida, adiciona 1,00 lote e 2,00 lotes à medida que a negociação se move contra eles, tentando recuperar todas as perdas por meio de uma reversão.
+Depois de uma negociação de ouro perdida, um trader entra repetidamente na mesma direção com lotes cada vez maiores, apenas para recuperar a perda anterior.
+Esclarecimento importante A proibição diz respeito a aumentos de exposição causados por perdas. Descrever uma estratégia como “planejada” não isenta um aumento no estilo martingale após uma perda.
+Uso de consultores especializados (EAs) terceirizados
+O que é: Usando um Expert Advisor (EA), bot de negociação ou algoritmo de negociação automatizado que você não desenvolveu pessoalmente. Isso inclui EAs comprados comercialmente, EAs alugados, bots baixados, algoritmos compartilhados ou sistemas de negociação automatizados criados por outro indivíduo ou empresa.
+Por que não é permitido: Na Audacity Capital, os comerciantes só podem usar EAs que eles desenvolveram pessoalmente. Isso garante que os negociantes mantenham total propriedade e controle sobre suas estratégias de negociação e que sua atividade de negociação reflita suas próprias decisões e metodologia de negociação.
+EAs vendidos comercialmente, EAs codificados por terceiros, bots de negociação baseados em sinais ou qualquer software de negociação automatizado obtido de fontes externas não são permitidos, independentemente de o software ser gratuito ou pago.
+Exemplos de atividades proibidas:
+Comprar um EA de um mercado on-line ou de um fornecedor terceirizado e usá-lo em sua conta.
+Usando um EA desenvolvido ou codificado por outra pessoa, mesmo que tenha sido personalizado de acordo com suas preferências de negociação.
+Baixar e executar EAs gratuitos em fóruns on-line, sites ou comunidades comerciais.
+Usando sistemas de negociação automatizados alugados, compartilhados ou baseados em assinatura.
+Executar um EA que executa negociações com base em sinais ou estratégias fornecidos por um serviço externo ou por terceiros.
+Usando um EA desenvolvido por outro trader, amigo, desenvolvedor ou grupo de negociação, independentemente de você ter pago por ele.
+Exemplo: Um trader compra um EA de scalping disponível comercialmente em um site de terceiros e o instala em sua conta financiada. Embora o trader opere pessoalmente o software e controle suas configurações, o EA não foi desenvolvido por ele. Portanto, usá-lo viola essa regra.
+O que é permitido? Os comerciantes podem usar seus próprios EAs desenvolvidos pessoalmente, desde que o EA cumpra todas as outras regras de negociação da Audacity Capital e práticas comerciais proibidas. O fato de um EA ser desenvolvido pessoalmente não o isenta de restrições sobre estratégias proibidas ou comportamento comercial.
+Média de custo em dólares (DCA)
+O que é Aumento de uma posição perdedora existente à medida que o preço se move ainda mais em relação à entrada original, independentemente de as posições adicionadas usarem tamanhos de lote iguais ou diferentes, na esperança de uma reversão.
+Por que não é permitido A exposição adicional a uma posição perdedora aumenta o risco de redução se o mercado não reverter e pode substituir a esperança por um plano de saída definido.
+Como isso pode aparecer
+Posições adicionais na mesma direção enquanto a negociação original permanece aberta e com perda flutuante.
+Várias entradas que aumentam a exposição à medida que o preço se move em relação à entrada inicial.
+Exemplos
+Compre 1,00 lote EUR/USD a 1,1000; com a primeira posição ainda perdendo, compre outro lote de 1,00 a 1,0980 e novamente a 1,0960.
+Um trader mantém uma posição perdedora de compra de petróleo e adiciona outra compra cada vez que o petróleo cai ainda mais para reduzir o preço médio de entrada.
+Esclarecimento importante Abrir uma nova negociação avaliada de forma independente após o fechamento da posição perdedora original é diferente de adicionar uma perda flutuante existente. Outras regras aplicáveis ainda se aplicam.
+Gerenciamento de contas por terceiros
+O que é Permitir que outra pessoa, equipe, serviço pago, amigo ou serviço automatizado atuando de acordo com as decisões de outra pessoa negocie a conta em nome do titular.
+Por que não é permitido A conta deve ser negociada por seu titular registrado, usando a tomada de decisão independente desse trader. O pagamento a terceiros não é um requisito para que essa regra seja aplicada.
+Como isso pode aparecer
+Outra pessoa fazendo login na conta e executando negociações.
+Um serviço de gerenciamento externo que toma e executa decisões comerciais.
+Exemplos
+O titular da conta paga a um gerente profissional para fazer negócios durante o horário de trabalho.
+O titular dá acesso à conta de um amigo e permite que esse amigo gerencie posições sem pagamento.
+Esclarecimento importante Discutir ideias gerais de mercado com outras pessoas é diferente de delegar as decisões de negociação ou execução da conta a elas.
+Comércio de cópias
+O que é Espelhar ou duplicar as posições de outro trader em uma conta, manualmente ou por meio de software de negociação de cópias ou de uma ferramenta automatizada.
+Por que não é permitido As negociações espelhadas não demonstram análises e tomadas de decisão independentes pelo titular da conta.
+Como isso pode aparecer
+Combinando as entradas, saídas, horários e tamanhos de posição de outro trader.
+Usando serviços de cópia de conta principal ou provedor de sinal.
+Exemplos
+Um trader conecta a conta a uma plataforma de negociação de cópias que duplica automaticamente as posições de um provedor de sinais.
+Um trader assiste repetidamente às entradas ao vivo de outro trader e as duplica manualmente sem análise independente.
+Esclarecimento importante Aprender com os comentários do mercado público é diferente de espelhar sistematicamente a execução de outro trader. O titular da conta deve tomar decisões comerciais independentes.
+Comércio em rede
+O que é Colocar uma sequência predefinida de ordens de compra e venda em intervalos de preços fixos acima e abaixo do preço atual, formando uma grade independentemente da análise direcional.
+Por que não é permitido O arranjo mecânico baseado em intervalos pode ser usado para resultados no estilo de arbitragem, em vez de uma participação direcional genuína no mercado.
+Como isso pode aparecer
+Vários pedidos posicionados em intervalos de preços regulares e predeterminados.
+Pedidos acionados automaticamente conforme o preço se move pela grade.
+Exemplos
+Um trader coloca ordens de compra pendentes a cada 20 pips abaixo do preço atual do ouro e ordens de venda a cada 20 pips acima dele.
+Um EA coloca automaticamente pedidos adicionais em cada intervalo fixo à medida que o mercado sobe e desce.
+Esclarecimento importante Pedidos feitos de forma independente em níveis distintos e identificados analiticamente não são necessariamente uma grade. Uma estrutura de intervalo predefinida e repetida é o indicador relevante.
+Exploração de vulnerabilidades do sistema
+O que é Usar falhas técnicas, como preços errôneos, cotações obsoletas, lacunas de latência ou falhas no feed de dados, para obter resultados comerciais, sejam eles deliberadamente identificados ou explorados repetidamente após a descoberta.
+Por que não é permitido Lucros derivados de erros técnicos, em vez de condições genuínas de mercado, não demonstram habilidade de negociação e podem comprometer a integridade da plataforma.
+Como isso pode aparecer
+Negociações repetidas em torno de erros conhecidos de servidor ou cotação.
+Entrar deliberadamente em negociações com cotações incorretas ou atrasadas.
+Exemplos
+Um trader percebe que um problema no servidor faz com que a cotação da plataforma fique atrasada no mercado em vários segundos e explora repetidamente esse atraso.
+Um trader insere repetidamente um preço de instrumento obviamente errado antes que o feed seja corrigido.
+Esclarecimento importante Se uma suspeita de falha na plataforma for descoberta, pare de explorá-la e entre em contato com o suporte. Uma interação acidental isolada deve ser analisada no contexto.
+Atividade automatizada de várias negociações
+O que é Usando ferramentas automatizadas para abrir várias posições simultaneamente em instrumentos ou contas sem supervisionar ou gerenciar ativamente cada negociação.
+Por que não é permitido Grandes lotes de negociações autônomas não refletem o gerenciamento direto e fundamentado de posições individuais pelo trader em tempo real.
+Como isso pode aparecer
+Scripts automatizados que realizam várias negociações ao receber um sinal.
+Pedidos simultâneos em símbolos ou contas sem análise comercial individual.
+Exemplos
+Um webhook aciona um script para abrir 15 negociações em diferentes pares de moedas simultaneamente, sem qualquer revisão manual.
+Uma ferramenta autônoma recebe um alerta externo e abre imediatamente várias posições em várias contas.
+Esclarecimento importante Usar a automação para uma negociação individual não estabelece automaticamente essa violação; a preocupação é uma atividade automatizada e simultânea de várias negociações sem supervisão ativa. Todas as outras restrições comerciais e de EA continuam sendo aplicadas.
+Abuso de tamanho de lote
+O que é Abrindo posições com tamanhos de lote desproporcionalmente grandes em relação ao tamanho da conta, especialmente nos horários de abertura ou fechamento do mercado ou em notícias de alto impacto, resultando em exposição irreal ao risco.
+Por que não é permitido A exposição excessiva pode indicar uma tomada de riscos imprudente em vez de uma negociação disciplinada e pode ser usada para tentar atingir metas de lucro em uma única negociação.
+Como isso pode aparecer
+Posições cujo risco é desproporcional ao patrimônio líquido da conta ou aos limites de saque aplicáveis.
+Pedidos abruptamente superdimensionados em períodos de mercado voláteis ou ilíquidos.
+Exemplos
+Um trader abre uma posição GBP/USD de 5,00 lotes em uma conta de $10.000 na abertura do mercado, expondo a conta a uma grande perda potencial.
+De repente, um trader coloca uma posição muito maior do que seu tamanho normal imediatamente antes de um grande evento de mercado.
+Esclarecimento importante Nenhum limite fixo entre o tamanho do lote e o saldo é especificado neste guia. A exposição deve ser avaliada no contexto, incluindo o risco do instrumento, do stop-loss e da conta.
+Regra de negociação de lacunas de fim
+O que é Explorar intencionalmente as diferenças de preço entre o fechamento do mercado na sexta-feira e a reabertura do mercado no domingo ou na segunda-feira, incluindo entrar em negociações pouco antes do fechamento ou definir pedidos pendentes especificamente para lucrar com as lacunas previstas.
+Por que não é permitido As diferenças de preço no fim de semana podem fazer com que os pedidos sejam executados pelo próximo preço de mercado disponível, em vez do nível de stop-loss ou take-profit solicitado. Os negociadores que mantêm posições no fim de semana aceitam esse risco e permanecem responsáveis pelas perdas resultantes ou violações de saque.
+Como isso pode aparecer
+Abrindo posições no final da sexta-feira especificamente para capturar a lacuna inicial esperada.
+Fazer pedidos pendentes com o objetivo principal de lucrar com a lacuna de abertura do próximo fim de semana.
+Exemplos
+Um trader compra EUR/USD pouco antes do fechamento de sexta-feira apenas porque espera um preço de abertura mais alto no domingo e sai imediatamente após a lacuna.
+Um trader define pedidos pendentes pouco antes do fechamento semanal, especificamente para obter um aumento de preço quando o mercado reabrir.
+Esclarecimento importante Manter uma posição aberta durante o fim de semana não é automaticamente descrito como proibido. A regra visa a exploração intencional de lacunas. Após a análise, as violações identificadas podem resultar na remoção dos lucros associados, na rejeição do pagamento ou no encerramento da conta.
+Apostas direcionais únicas
+Single Directional Betting refers to trading behaviour where a trader relies excessively on one market direction or a particular trading idea, resulting in concentrated exposure or trading performance that depends disproportionately on a single market movement.
+A Audacity Capital reconhece que os traders podem ter um viés direcional com base em suas estratégias individuais. No entanto, as decisões de negociação devem permanecer estruturadas, disciplinadas e apoiadas por um gerenciamento de risco apropriado.
+Por que monitoramos esse comportamento
+A dependência excessiva de uma direção do mercado pode criar exposição concentrada e tornar o desempenho geral de uma conta dependente de um único movimento do mercado.
+Nosso objetivo não é restringir estratégias de negociação legítimas ou convicções direcionais do mercado. Em vez disso, nosso objetivo é garantir que os negociantes mantenham uma exposição responsável ao risco, tomem decisões comerciais estruturadas e demonstrem práticas sustentáveis de gerenciamento de risco.
+Gerenciamento de riscos e medidas contábeis
+Durante os estágios de Desafio e Verificação, os negociadores identificados para apostas direcionais únicas podem receber um aviso, dando-lhes a oportunidade de revisar e melhorar seu comportamento de negociação.
+Por exemplo, se um trader continuar construindo várias posições na mesma direção após receber um aviso, uma restrição máxima de risco por negociação de 1% poderá ser aplicada ao atingir o estágio Financiado. Um comportamento semelhante contínuo, apesar do aviso e da restrição, pode resultar em ações adicionais, incluindo o encerramento da conta.
+Para contas de FTP, os negociadores identificados para apostas direcionais únicas podem ser colocados diretamente sob a regra mais rígida de risco por negociação de 1%.
+Os negociadores podem melhorar sua abordagem mantendo uma exposição controlada ao mercado, garantindo que as posições sejam apoiadas por uma lógica de negociação clara e gerenciando o risco combinado de várias posições, em vez de se concentrar apenas em negociações individuais.
+A Audacity Capital se reserva o direito de revisar a atividade de negociação e tomar as medidas apropriadas de acordo com as regras aplicáveis e os Termos e Condições.
+Por que essas regras existem
+O princípio comum é que o desempenho comercial deve refletir análises independentes, gerenciamento disciplinado de riscos e participação genuína no mercado. Práticas que exploram fraquezas técnicas, fabricam resultados compensatórios, dependem da escalada descontrolada de riscos ou delegam decisões comerciais a terceiros minam esse princípio.
+Antes de usar uma nova estratégia
+Analise como a estratégia gera negócios, como ela gerencia a exposição, se ela depende da automação de outra pessoa ou de terceiros e se ela pode se enquadrar em mais de uma restrição. Entre em contato com o Audacity Capital Support se alguma parte da abordagem não estiver clara.
+Este é um rascunho do conteúdo do site baseado nas perguntas frequentes atuais. Os termos e condições aplicáveis da conta permanecem relevantes; os exemplos são explicativos e não criam exceções independentes ou limites numéricos.
+Companhia
+Termos de uso Entre em contato conosco Programa de afiliados Sobre nós Política de AML Práticas comerciais proibidas Código de conduta
+Comunidade
+PERGUNTAS FREQUENTES Histórias de sucesso Painel de controle Baixar Negociação responsável Carreiras Indique um amigo
+Legal
+Termos e condições Política de privacidade Alerta de fraude Política de denúncias Tratamento de reclamações Imprensa e mídia Política de avaliações falsas
+Plataformas
+Plataformas de negociação DXTrade MT5
+Newsletter
+Junte-se ao nosso boletim informativo para se manter atualizado sobre os recursos e lançamentos.
+Inscrever-se
+Ao se inscrever, você concorda com nossa Política de Privacidade
+e concorda em receber atualizações de nossa empresa.
+© 2012—2026 Audacity Capital. Todos os direitos reservados.
+Política de privacidade Termos e condições Cookies Settings
+Isenção de responsabilidade legal e de conformidade
+O AudaCity International FZCO, registrado sob a licença DSO-FZCO 38282 no Dubai Silicon Oasis, DDP, Building A1/A2, Dubai, Emirados Árabes Unidos, atua exclusivamente como facilitador de pagamento. Todas as atividades relacionadas à negociação são operadas pela AudaCity Global LTD (número de registro: 15850), licenciada sob a Licença Internacional de Corretagem e Câmara de Compensação (L15850/WL) emitida pela União das Comores, com sede em Hamchako, Mutsamudu, Anjouan, União das Comores. Também operamos um escritório no Reino Unido em 25 Cabot Square, Level 11, Londres, E14 4QZ, e mantemos uma parceria com a Propmetry Limited (número da empresa: HE469039), com sede em Limassol, Chipre, que atua como um parceiro de pagamento adicional.
+Este site e todos os serviços são oferecidos por meio de nosso domínio exclusivo em https://audacity.capital e por meio de nosso painel em https://trade.audacity.capital ; qualquer outro domínio, perfil de mídia social ou indivíduo que alegue nos representar fora deste site deve ser considerado fraudulento e denunciado. Sempre certifique-se de estar interagindo com o site legítimo da AudaCity Capital e entre em contato com nossa equipe diretamente por meio de nossos canais verificados em caso de dúvida.
+Desde 2012, a AudaCity Capital está comprometida com o desenvolvimento de talentos comerciais por meio de avaliação e educação estruturadas dentro de uma infraestrutura de negociação simulada de nível profissional focada na construção de habilidades, não na especulação. Isso ajuda a encontrar e desenvolver talentos reais para negociar com capital vivo.
+Nenhuma declaração neste site constitui consultoria financeira, jurídica ou tributária sobre investimentos, e não oferecemos serviços de corretagem, custódia ou gerenciamento de portfólio. Todo o conteúdo é apenas para fins informativos gerais e não deve ser interpretado como uma solicitação para investir ou negociar.
+O uso deste site e a participação em nossos programas estão sujeitos às leis locais, e nossos serviços não estão disponíveis em jurisdições onde tais atividades são restritas ou proibidas, incluindo, mas não se limitando à Síria, Irã, Venezuela e Coreia do Norte. Residentes dos EUA só podem participar por meio da plataforma DX Trade quando permitido. Os usuários são responsáveis por garantir a conformidade com as regulamentações locais.
+A negociação — real ou simulada — acarreta riscos significativos, e o desempenho hipotético não prevê resultados reais. Só participe se você compreender totalmente os riscos envolvidos.
+Apple, iPad, iPhone e App Store são marcas registradas da Apple Inc.; Android é marca comercial da Google Inc., e seu uso aqui não implica nenhuma afiliação ou endosso.

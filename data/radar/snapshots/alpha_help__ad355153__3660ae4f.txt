@@ -1,0 +1,25 @@
+Getting Started with WealthCharts | Alpha Futures Limited Help Center Skip to main content
+Search for articles...
+All Collections
+Getting Started
+Getting Started with WealthCharts
+Getting Started with WealthCharts
+How to log into your WealthCharts Account
+B
+Written by Benjamin Chaffee
+May 7, 2026
+Alpha Futures is excited to offer WealthCharts , a powerful web based platform designed by real, live fund trading champions.​
+To use this integration, you must have an Evaluation, or Qualified Account utilizing WealthCharts.
+​
+First, check your emails from [email protected] for your login credentials
+You can launch WealthCharts directly from your user dashboard with the "Launch WealthCharts" button. You may also choose to sign in directly using this link .
+Once you have launched WealthCharts, you will be prompted to sign in with the credentials sent to your email.
+Next, you will be prompted to set your language preference
+Following this you will be required to set your permanent password.
+Next, you will be asked to set your display name
+Once logged in, you MUST sign your Non-Professional Agreement before your account will receive real-time data or be able to trade on WealthCharts.
+Once completed, you will be required to confirm your account
+After confirming your account, you must sign your WealthCharts trading disclaimer
+Once complete, you are free to select Alpha Futures from the list of prop firm options, and select your desired trading account
+You are now successfully connected and can enjoy trading your Alpha Futures Account(s) on WealthCharts!
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃

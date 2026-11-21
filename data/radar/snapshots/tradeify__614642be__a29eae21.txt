@@ -1,0 +1,355 @@
+Instant Funding Prop Firm vs Eval Funded Account
+Get 30% Off with code "NOV"
+40% OFF GROWTH ACCOUNTS
+ENDS 13 NOVEMBER, 11:59PM EST
+How it works
+Pricing
+Help Center
+Join Discord
+Sign in
+Sign in
+Get funded
+Trading
+>
+Trading platforms
+8 minutes
+by
+Brett Simba
+Instant Funding Prop Firm Accounts vs Evaluation Challenges
+Eval funded account or instant funding? Compare Tradeify's Growth/Select evaluations and Lightning instant funding side by side to pick the right prop firm path.
+Share this post.
+Copy link
+Data Summary for Evaluation and Instant Funding Accounts
+Tradeify offers two primary capital access routes: the Evaluation Prop Firm model (Growth/Select) and the Instant Funding model (Lightning). The Growth Evaluation ($50k account) costs approximately $97/month , requires a 1-day minimum assessment, charges zero activation fees, and enforces a 35% consistency rule on funded payouts. The Select Evaluation requires a 3-day assessment, charges zero activation fees, enforces a 40% consistency rule during evaluation, and allows daily payouts with 0% consistency restrictions once funded. The Instant Funding (Lightning) model grants immediate payout eligibility for a one-time fee ( $244-$510 ), subjecting traders to a progressive consistency rule starting at 20%, increasing to 25% after the first payout and 30% after the second payout. Funded accounts utilize an End-of-Day (EOD) trailing drawdown that stops trailing (locks) once the balance exceeds the starting capital plus the maximum drawdown amount plus $100 (e.g., $52,100 for a $50k account with $2,000 drawdown). This lock applies to funded account s only — on the Growth and Select evaluations the EOD drawdown keeps trailing and never locks. Profit splits are 90% across all account types.
+Table of Contents
+The Evolution of Prop Firm Market Access
+Prop Firm Philosophy: Evaluation vs. Instant Models
+Evaluation Prop Firm Accounts: Growth and Select
+How the Lightning Instant Funding Account Works
+Eval Funded Account vs Instant Funding: Quick Comparison
+How Tradeify Eval Compares to Apex Trader Funding
+Profit Targets and Account Specifications
+EOD Trailing Drawdown Mechanics
+Cost Per Funded Dollar by Account Type
+Risk Management Considerations
+Strategic Decision Framework
+Eval Funded Account and Instant Funding FAQ
+Conclusion
+The Evolution of Prop Firm Market Access
+Futures prop firm trading has changed a lot in the last ten years. It used to be only for traders with deep pockets. Now, prop firms let you trade real-sized contracts (like ES, NQ, MES, MNQ, CL, and RTY on the CME) without putting up tens of thousands of dollars in margin. Today there are two main paths to a funded account. One is the eval funded account path, where you pass an evaluation first and then get funded. The other is the instant funding path, where you skip the test and start trading a funded account on day one.
+For a trader using Tradeify, the choice between Growth and Select Evaluations and a Lightning Funded (Instant) account is more than a budget call. It shapes your daily loss limits, your stress level, and how fast you can pull money out. Each path uses the same NinjaTrader, Tradovate, or Rithmic platforms and the same CME futures (ES, NQ, MES, MNQ, CL, RTY). What changes is the rule set you live by.
+How Evaluation and Instant Funding Prop Firm Models Differ
+To pick the right account, it helps to break down how each model works. Each one is built to handle a different mix of risk sharing, finding skilled traders, and keeping firm capital safe.
+The Evaluation Prop Firm Model as a Skill-First Path
+The evaluation model , often called a "combine" or "challenge," works like a skill test. You pay a small one-time fee. You trade in a simulated account. If you hit the profit target without breaking the rules, you get funded. The firm only puts up real capital after you prove you can trade well. This is the most common way most traders earn an eval funded account today.
+For Tradeify, the evaluation accounts (Growth and Select) act as a filter. They look for two traits every long-term trader needs:
+An edge: The proven ability to pull profit out of the market over time.
+Risk discipline: The ability to stick to drawdown limits, daily loss caps , and consistency rules without slipping up.
+💡 Key Insight: Because the firm assumes zero financial risk during the evaluation phase (as all trading occurs in a simulation), the cost of entry remains deliberately low. This democratized access makes the Evaluation model the ideal environment for developing traders, those refining a new strategy, or those with limited risk capital who cannot afford to lose principal in a live brokerage account.
+However, the implicit cost of this model is time and psychological endurance. The trader must overcome the performance anxiety of the test itself (the requirement to hit a specific profit target, such as $3,000 on a Growth $50k account) without breaching strict drawdown rules.
+The Instant Funding Model as a Shortcut Past the Evaluation
+The Instant Funding model, represented by Tradeify's Lightning Funded accounts, inverts the traditional value proposition. In this setup, the trader skips the time-gated testing phase entirely. They pay a significantly higher, one-time upfront fee to access a simulated funded account that is eligible for payouts from day one.
+This model is engineered for the proven trader who views the evaluation process primarily as an opportunity cost. If a professional trader knows they can generate $2,000 a week in profits, spending four weeks in an evaluation represents an $8,000 loss in potential earnings. Thus, the higher upfront fee of a Lightning account (ranging from $244 to $510 depending on size) serves as a premium paid for speed and efficiency.
+⚠️ Important Consideration: Because the firm grants immediate access to payout-eligible accounts without the safety net of a testing phase, the risk parameters are often tighter. The "skin in the game" (the substantial upfront fee) acts as the primary deterrent against gambling behavior. Unlike the evaluation model, where a reset is cheap, failing a Lightning account results in the total loss of the upfront capital.
+How Tradeify Eval Compares to Apex Trader Funding
+Many traders shopping for an eval funded account also look at Apex Trader Funding. Here is how Tradeify’s Growth eval lines up against the Apex one-step eval at the same $50K account size, based on published Apex specs and Tradeify’s own plan details.
+Spec ($50K account) Tradeify Growth Eval Apex 1-Step Eval
+Eval steps 1 step 1 step
+Profit target $3,000 $3,000
+Drawdown $2,000 EOD trailing (locks at $52,100) $2,500 trailing
+Minimum pass time 1 day No fixed minimum days listed
+Activation fee $0 Yes (monthly funded-account fee applies)
+Consistency rule (funded) 35% (Growth funded) Not the same model; uses safety-net and 5:1 contract rules
+Both firms list the same $3,000 profit target on a $50K eval. The big differences are the drawdown size and the post-pass cost structure. Tradeify’s Growth uses a tighter $2,000 EOD trailing drawdown that locks once the account closes above $52,100 on the funded account, while Apex uses a $2,500 trailing drawdown. Tradeify charges $0 activation on the funded account; Apex layers a monthly fee on the funded account on top of the eval fee. Sources: livestreamtrading.com Apex review and propfirmapp.com Apex $50K specs page.
+Bottom line: If you want the lowest total cost to a funded account and you do not mind a tighter drawdown, the Tradeify eval funded account (Growth) is the cheaper path. If brand familiarity matters more than total cost, Apex is the more recognized name. Either way, check the consistency rule on the funded side, not just the eval headline.
+Growth and Select Evaluation Accounts
+Tradeify offers two distinct variations of the evaluation model: Growth and Select . While they share the same fundamental goal of funding, they cater to diametrically opposite trading styles. Understanding the nuance between these two is critical. Selecting the wrong vehicle can lead to unnecessary failure even for a profitable strategy.
+Growth Plan
+1-day minimum pass time
+No evaluation consistency rule
+35% consistency when funded
+~$97 (one-time)
+Zero activation fees
+Select Plan
+3-day minimum pass time
+40% evaluation consistency
+0% consistency when funded
+~$111 (one-time)
+Daily payout option
+Lightning Plan
+Instant funding (0 days)
+Progressive consistency (20%→30%)
+One-time fee
+$244-$510
+No evaluation needed
+Growth Evaluation for Fast Scaling
+The Growth plan supports the trader who prioritizes speed and rapid scaling over flexibility. It is the sprinter's choice, designed to facilitate the quickest possible transition from evaluation to funding.
+Velocity of Funding: A trader can pass the Growth evaluation in as little as 1 day. This is a massive differentiator in an industry where competitors often enforce minimum trading days ranging from 5 to 15 days. This allows a trader who catches a significant market trend to capitalize immediately and move to the funded stage.
+Evaluation Consistency: During the evaluation phase, there is no consistency rule. This absence of restriction is significant. A trader could theoretically catch one massive trend move (e.g., a Non-Farm Payroll release), hit the entire profit target in a single session, and pass the evaluation .
+Cost Efficiency: There are no activation fees on the Growth plan. Once the evaluation is passed, the account becomes active without further expense. One-time pricing starts around $97 depending on account size.
+The Post-Funding Constraint: While the evaluation is lenient, the funded stage introduces a protective 35% Consistency Rule. This rule dictates that once funded, no single trading day can account for more than 35% of the total profits at the time of a payout request.
+Strategic Note: The Growth account favors aggressive strategies during the evaluation , such as news trading or high-frequency scalping. However, it requires a strategic pivot to a long-term mindset once funded. The trader must shift from hitting a target to managing a portfolio, ensuring that large wins do not skew their consistency metrics to the point where withdrawals are delayed.
+Select Evaluation for Flexible Funded Trading
+The Select plan introduces more friction upfront but offers significantly greater flexibility in the funded stage. It is designed for the trader who waits for high-probability setups that may yield outsized returns and does not want to be penalized for them.
+Structural Requirements: The Select evaluation requires a minimum of 3 days to pass. This serves as a minor verification step to ensure the trader's success was not a singular fluke.
+Evaluation Consistency: The Select plan imposes a 40% consistency rule during the evaluation phase itself. This ensures that the trader demonstrates repeatability over at least three days; one cannot simply rely on luck to pass.
+Funded Freedom: The defining feature of the Select plan is that once the trader reaches Sim Funded status, there is no consistency rule. This is the ideal scenario for swing traders or those with variable performance (e.g., huge wins followed by break-even days).
+Zero Activation Fees: Despite offering no consistency rules in the funded stage, Tradeify charges zero activation fees for the Select plan. One-time pricing ranges from approximately $111 to $251 depending on account size.
+Daily Payout Option: Select accounts offer a daily payout path, allowing traders to withdraw profits with minimal delay.
+Professional Advantage: The Select account is the superior choice for professional traders who treat trading as a business. The ability to withdraw daily (on the Daily Payout path) and the absence of funded consistency rules allow the trader to operate without artificial constraints. A Select trader can have a $10,000 day and withdraw it without worrying that it creates a consistency imbalance that prevents payout.
+How the Lightning Instant Funding Account Works
+The Lightning Funded account is Tradeify's implementation of the Instant Funding setup. It is designed to be the fastest path to payout eligibility, eliminating the evaluation stage entirely. However, it introduces its own unique ruleset that must be carefully understood.
+Core Structure of Lightning Accounts
+The Lightning account operates as a simulated funded account from day one. The trader pays a one-time fee (ranging from $244 for smaller accounts to $510 for larger accounts) and receives immediate access to a funded account that is payout eligible.
+The Lightning Progressive Consistency Rule
+The most significant risk parameter of the Lightning account is its progressive consistency rule. Unlike the static 35% consistency rule of the Growth funded account, the Lightning account implements a three-tier system:
+Phase 1 (Initial Trading): 20% consistency rule applies until the first payout.
+Phase 2 (After First Payout): Consistency rule increases to 25%.
+Phase 3 (After Second Payout): Consistency rule increases to 30%.
+💡 Understanding Progressive Consistency: This progressive structure is designed to ensure that traders demonstrate consistent profitability over multiple payout cycles rather than relying on a single large win. The increasing strictness of the consistency rule forces the trader to distribute their profits more evenly across trading days.
+The Psychological Reality of Instant Funding
+The Lightning account creates a fundamentally different psychological environment than the evaluation accounts. Because the trader has paid a significant upfront fee, there is immediate financial consequence to failure. This transforms the account from a "testing ground" into a "live account" in the trader's mind, which can be both beneficial and detrimental.
+For disciplined traders, this psychological weight enforces better risk management. The knowledge that a blown account means a total loss of $244-$510 creates a natural brake on over-leveraging and gambling behavior. However, for less experienced traders, this same pressure can lead to hesitation, over-analysis, and the inability to pull the trigger on valid setups.
+Profit Targets and Account Specifications
+Here are the profit targets that apply to each account size. They are the same on Growth, Select, and Lightning. Tradeify accounts trade CME futures including ES, NQ, MES, MNQ, CL, and RTY through supported platforms like NinjaTrader, Tradovate, and Rithmic.
+$50k Account: $3,000 (Growth) or $3,000 (Select) profit target.
+$100k Account: $6,000 profit target (6% of account size)
+$150k Account: $9,000 profit target (6% of account size)
+Profit Split: All accounts feature a 90% profit split, meaning traders keep 90% of their profits once they reach the funded stage and request payouts.
+EOD Trailing Drawdown Mechanics
+All Tradeify accounts use an End-of-Day (EOD) trailing drawdown while you trade, but the drawdown only locks on funded accounts (Lightning, and Growth or Select once funded). On the Growth and Select evaluation stage it keeps trailing and never locks. This is a critical technical detail that influences intraday strategy and position management.
+How the EOD Drawdown Works
+The EOD drawdown is calculated at the end of each trading day and trails the account's high-water mark. On funded accounts, the drawdown stops trailing (locks) once the account balance exceeds the starting capital plus the maximum drawdown amount plus $100. For example, a funded $50k account with a $2,000 drawdown will lock once the EOD balance reaches $52,100. On the Growth and Select evaluation stage there is no lock — the drawdown keeps trailing the entire time. This means:
+A trader can experience significant intraday heat without breaching their drawdown.
+The drawdown resets daily based on the previous day's closing balance.
+On a funded account, once the balance reaches the lock threshold (e.g., $52,100 for a $50k account), the drawdown locks at $50,100, providing permanent protection of that capital floor (evaluation accounts do not lock).
+Strategic Advantage: This structure favors traders who are comfortable holding positions through volatility. A trader can be up $1,000 intraday on a $50k account, give back those gains, and close the day at break-even—and the EOD drawdown remains completely unaffected. With an intraday trailing drawdown system, that $1,000 peak would have permanently raised the drawdown floor, consuming $1,000 of your buffer even though you ended flat. This is a significant advantage for traders who experience normal intraday fluctuations.
+Realized vs Unrealized Drawdown on a 50K Account
+The single biggest reason traders fail an eval funded account is misreading the drawdown. Here is how Tradeify’s EOD trailing drawdown plays out on a $50,000 Growth funded account with a $2,000 max drawdown. (The lock only happens once you are funded — during the Growth or Select evaluation the same drawdown keeps trailing and never locks.) The starting drawdown floor sits at $48,000.
+Day 1, intraday peak: You go long 2 MES contracts and your unrealized P&L hits +$1,200, taking your equity to $51,200. With an intraday trailing drawdown, your floor would have already trailed up by $1,200. On Tradeify’s EOD model, your floor stays at $48,000 until the close. Unrealized gains do not move the line.
+Day 1, close: You give the trade back and close at $50,000 flat. Because EOD only looks at your realized end-of-day balance, the drawdown floor still sits at $48,000. No buffer consumed.
+Day 5, close: You close the day at $50,800. Now the floor trails up to $48,800 (new close minus $2,000 max drawdown).
+Day 12, close above lock point: You close at $52,100 (start + $2,000 + $100). The drawdown locks . From here on, your floor is permanently $50,100, no matter what happens to your end-of-day balance.
+The takeaway: intraday heat does not hurt you, only the close does. That is friendlier than the intraday trailing drawdown most evals use, and it is one of the few places where the math actually favors the trader.
+Cost Per Funded Dollar by Account Type
+To make an informed decision, it is necessary to calculate the true cost of capital access across the three primary account types.
+Growth Evaluation Economics
+Assume a trader on a $50k Growth account passes efficiently within the first month:
+One-Time Fee: ~$97 (one-time)
+Time to Pass: 1 week (Hypothetical scenario; minimum 1 day)
+Activation Fee: $0
+Total Cost to Funded: $97 (one-time fee)
+Cost Per $1,000 of Buying Power: $1.94
+Select Evaluation Economics
+Assume a trader on a $50k Select account passes efficiently within the first month:
+One-Time Fee: ~$111 (one-time)
+Time to Pass: 1 week (Hypothetical scenario; minimum 3 days)
+Activation Fee: $0
+Total Cost to Funded: $111 (one-time fee)
+Cost Per $1,000 of Buying Power: $2.22
+Lightning Instant Funding Economics
+Assume a trader on a $50k Lightning account:
+One-Time Fee: $356
+Time to Funded: 0 days (immediate)
+Activation Fee: $0 (included in upfront cost)
+Total Cost to Funded: $356
+Cost Per $1,000 of Buying Power: $7.12
+Economic Interpretation
+The Growth and Select accounts have the lowest barrier to entry. If a trader utilizes the speed of the Growth or Select options and passes within one month, as detailed in our hypothetical, the total cost is only $97-$111 , which is significantly cheaper than the Lightning entry fee.
+💡 Break-Even Analysis: The Lightning account, however, eliminates time risk entirely. The trader pays $356 and is immediately funded. For a professional trader who values time over money, this is a superior deal. The "break-even" point in this logic is typically around month three; if an evaluation takes you longer than multiple resets and repurchases to pass, the one-time fee of a Lightning account may be the more economical choice.
+Risk Management Considerations
+Each account type imposes different risk management constraints that must be factored into strategic planning.
+Consistency Rule Impact on Strategy
+The consistency rule is the single most important constraint that differentiates account types:
+Growth Funded (35% Consistency): Requires a balanced approach. A trader cannot rely on a single large win to carry their payout. They must demonstrate consistent profitability across multiple days.
+Select Funded (0% Consistency): Allows for maximum flexibility. A trader can have highly variable performance, with huge wins interspersed with break-even or small loss days.
+Lightning Funded (20%→25%→30% Progressive): Starts lenient but becomes increasingly strict. This forces the trader to prove consistency over multiple payout cycles.
+Position Sizing and Leverage Management
+The EOD drawdown system creates unique opportunities for leverage management. Because intraday heat does not violate the account, traders can use larger position sizes than they might in an intraday drawdown system. However, this also creates the risk of catastrophic loss if a position moves violently against the trader and cannot be closed before the EOD calculation.
+Strategic Decision Framework
+Choosing between Growth , Select , and Lightning requires a strategic assessment of four key factors:
+Capital Availability: How much upfront capital can you allocate to this venture?
+Time Horizon: How quickly do you need to be funded and generating income?
+Trading Style: Does your strategy generate consistent, small wins, or variable, large wins?
+Risk Tolerance: How much financial and psychological pressure can you handle?
+Decision Matrix by Trader Profile
+The Learning Trader Scenario
+Profile: New to futures, testing a strategy, cannot afford to lose significant capital.
+Constraint: Needs cheap access to test ideas without risking personal capital.
+Recommended: Growth Evaluation
+Why: Lowest cost of entry ( ~$97 (one-time) ) with no activation fee. The 1-day pass option allows for speed if the skill is present, but the one-time fee model allows for affordable failures while learning the ropes.
+The Cash Flow Scalper Scenario
+Profile: A full-time trader who relies on trading profits for living expenses. High win rate, high frequency.
+Constraint: Needs reliable, frequent access to funds and liquidity.
+Recommended: Select Evaluation (Daily Payout)
+Why: The ability to withdraw daily is the killer feature. The upfront friction (3-day pass + 40% evaluation consistency) is an investment in the infrastructure of daily pay. The lack of consistency rules in the funded stage matches a scalper who might have massive volume days and needs to withdraw immediately.
+The Portfolio Builder Scenario
+Profile: Has a job or business; trading is for wealth accumulation. Wants to build a desk of multiple accounts to diversify risk.
+Constraint: Wants to minimize time wasted on hoops and evaluations .
+Recommended: Lightning Funded
+Why: Time is the most valuable asset for this trader. The higher upfront cost ( $244-$510 ) is negligible compared to the time saved bypassing the evaluation . The progressive consistency rule (20%→25%→30%) acts as a beneficial governor, forcing the trader to treat the account as a slow-growth yield instrument rather than a casino. The strategy here is to buy 2-3 Lightning accounts and trade them with conservative sizing to mitigate risk and spread exposure.
+Eval Funded Account and Instant Funding FAQ
+What is an eval funded account?
+An eval funded account is a prop firm account you earn by passing an evaluation. You pay a small one-time fee, trade a simulated account to a profit target without breaking the rules, and then get moved to a sim-funded account that pays out real cash on profits. It is the most common path into prop firm trading.
+How much does an eval funded account cost?
+Eval fees usually run $80–$300 one-time depending on the account size. A Tradeify Growth $50K eval is around $97 one-time with $0 activation. Instant funding skips the eval but costs more upfront ($244–$510 for a $50K Lightning account).
+Is evaluation or instant funding better?
+An evaluation is better if you want the lowest cost to get funded and you are still proving your edge. Instant funding is better if you already trade profitably and value your time more than the price difference. Most new traders should start with an eval; most full-time pros lean toward instant funding.
+How fast can you get a funded account?
+With an eval like Tradeify Growth, the minimum is 1 trading day if you hit the $3,000 target. With Select it is 3 days. Instant funding (Lightning) is same-day — you are funded the moment you pay.
+What happens if I break a rule on my eval funded account?
+If you breach the max drawdown or daily loss limit during the eval, the account fails and you start over with a new eval fee. On a funded account, breaching the drawdown ends the account and stops payouts. The fix is always the same: respect the drawdown line, watch the consistency rule, and do not try to make it back on one trade.
+Do eval funded accounts pay real money?
+Yes. Once you pass the eval and reach the funded stage, profits are paid out in real cash at the firm’s profit split (Tradeify pays 90%). The trading itself is on a simulated account, but the payouts are real and come from the firm’s capital.
+What platforms and contracts can I trade?
+Tradeify supports NinjaTrader, Tradovate, and Rithmic for order routing. You can trade CME futures including the E-mini and Micro E-mini index contracts (ES, NQ, MES, MNQ), crude oil (CL), and Russell 2000 (RTY), plus other approved CME products.
+Choosing Between Instant Funding and an Evaluation
+The choice between Instant Funding and Evaluation is not a test of your trading skill. It is a test of your self-awareness. It requires an honest assessment of your financial situation, your psychological triggers, and your strategic goals.
+If you are Tradeify's Growth candidate, you are likely building your bankroll. You accept the grind of the evaluation as a necessary tuition, using the lenient evaluation rules to prove your concept before dealing with the 35% consistency rule in the funded stage. If you are Tradeify's Select candidate, you are a professional seeking infrastructure. You are willing to endure a stricter 3-day evaluation with 40% consistency requirements for the ultimate prize: a funded account with no consistency rules and daily payouts. If you are Tradeify's Lightning candidate, you are buying speed. You have the capital to absorb the higher upfront risk ( $244-$510 ) and the discipline to manage the progressive consistency rule (20%→25%→30%). You view the account not as a challenge to be beaten, but as an immediate extension of your portfolio.
+Ultimately, the market does not care which account you trade; it only cares about your execution. Choose the model that quiets your mind, protects your downside, and allows your edge to flourish.
+Key Takeaways Checklist
+New to Futures? Start with Growth . The cost of failure is low ( ~$97 (one-time) ), and the environment is forgiving during evaluation.
+Need Daily Cash? Aim for Select . The daily payout option with zero consistency rules in the funded stage is unique and powerful for full-time traders.
+Hate Tests? Go Lightning , but only if you have strict risk discipline and can adhere to the progressive consistency rule (20%→25%→30%).
+Watch the Consistency: 35% for Growth (Funded), 0% for Select (Funded), 20%→25%→30% progressive for Lightning .
+Know Your Profit Targets: $3,000 (Growth 50k), $3,000 (Select 50k) , $6,000 (100k), $9,000 (150k) across all account types.
+Mind the Drawdown: All accounts use an EOD trailing drawdown , but the lock is funded-only. On a funded account it locks once you've profited beyond your drawdown amount plus $100 (e.g., $2,100 profit on a 50k account triggers the lock at $52,100, securing a $50,100 floor); on the Growth and Select evaluations the drawdown keeps trailing and never locks. This favors holding trades through volatility. Use this technical advantage to your benefit.
+Zero Activation Fees: Tradeify charges no activation fees on any account type, keeping your path to funding cost-efficient.
+Get up to $750k instant sim funding
+Start earning payouts instantly
+Super fast automated payouts
+Free journal to improve
+Get funded now
+Join 80,000+ happy traders
+Summarize and ask questions with AI
+ChatGPT
+Claude
+Perplexity
+Grok
+Google
+Recommended for you
+16 min read
+Tradeify Rules & Accounts
+Futures Prop Firm Rules Beginners Misunderstand Most
+Learn how futures prop firm drawdown, daily loss, consistency, payout, trading-day, contract, and funded-account rules actually work.
+Read article
+Tradeify Rules & Accounts
+Tradeify 3.0 Is Here and Everything Just Changed
+Tradeify 3.0 is here. New plans, new platforms, instant activations, and a massive Elite Live Performance Reward Pool. Everything just changed.
+Read article
+Tradeify Rules & Accounts
+Why Do Prop Firms Deny Payouts and How to Prevent It
+Review the most common prop firm payout-denial triggers, the checklist to run before requesting funds, and the questions to ask if a payout is paused.
+Read article
+6 min read
+Tradeify Rules & Accounts
+How Many Prop Firm Accounts Can You Have and How to Manage Them
+How many prop firm accounts can you have? Compare same-firm and cross-firm limits, household rules, copy-trading permissions, and risk controls before you scale.
+Read article
+Tradeify Rules & Accounts
+Consistency Rule Calculator for Prop Firm Payout Planning
+Use this consistency rule calculator to enter best day, total profit, and rule %, then read within-limit, near-limit, or breach-risk status.
+Read article
+5 minute read
+Tradeify Rules & Accounts
+Tradeify Futures Prop Firm With Instant Funding
+Tradeify is an instant funding prop firm that provides financing for skilled traders. This means you can access capital immediately to scale your strategies without using personal funds.
+Read article
+10x your trading with up to $750k simulated funds
+Free built-in journal
+Get Instant Funding, or take an Evaluation
+Automated payouts
+Get funded now
+Be the first to get limited time deals
+Get one email per week filled with deals, insights and tips.
+Please enter valid email
+Subscribe
+We promise no spam. See our privacy policy
+Thank you! Your submission has been received!
+Oops! Something went wrong while submitting the form.
+Making trading accessible to everyone
+Company
+Home
+Pricing
+PTL Leaderboard
+Become an affiliate
+Careers
+Merchandise
+Resources
+Help Center
+Blog
+Privacy Policy
+Terms of Use
+Funded Trader Agreement
+Contact
+Support
+Discord community
+Partners and media
+Trading education All education →
+Trading for Beginners
+Market Mechanics
+Technical Analysis
+Trading Strategies
+Risk Management
+Trading Psychology
+Futures Trading
+Options Trading
+Stock Market
+Forex Trading
+Commodities
+Fundamental Analysis
+Glossary
+© 2026 - Tradeify Holdings, Corp . All rights reserved. Tradeify is a registered trademark of Tradeify Holdings Corp.
+1700 S. Dixie Highway, Suite 305 Boca Raton, FL 33432
+Important Disclaimers:
+The materials and content provided by Tradeify Holdings, Corp. (“Tradeify”), whether on our website, through distributed documents, TradeifyTV, or other communications, are intended solely for educational and general informational purposes (the “Information”).  This Information should not be viewed as an offer or solicitation to buy or sell futures, futures-related products/derivatives, or any futures products of any kind, or otherwise constitute any type of trading or investment advice, recommendation or strategy, or an endorsement of any financial instruments, companies, or funds. Users are encouraged to do their own research, should not interpret such Information as personalized financial advice, and should consult with a qualified financial adviser before making any financial decisions.  The Information presented herein does not consider your personal financial situation, risk tolerance, or investment goals. The Information provided is not targeted at any specific jurisdiction and should not be used in any manner that would contravene local laws or regulations.
+Hypothetical/Simulated Performance.  Hypothetical or simulated performance results have many inherent limitations, some of which are described below. Unlike an actual performance record, simulated results do not represent actual trading. Also, because the trades have not actually been executed, the results may have under-or-over compensated for the impact, if any, of certain market factors, such as lack of liquidity.  No representation is being made that any account will or is likely to achieve profits or losses similar to those shown. In fact, there are frequently sharp differences between hypothetical performance results and the actual results subsequently achieved by any particular trading program. One of the limitations of hypothetical performance results is that they are generally prepared with the benefit of hindsight. In addition, hypothetical trading does not involve financial risk, and no hypothetical trading record can completely account for the impact of financial risk in actual trading. For example, the ability to withstand losses or to adhere to a particular trading program in spite of trading losses are material points which can also adversely affect actual trading results. There are numerous other factors related to the markets in general or to the implementation of any specific trading program which cannot be fully accounted for in the preparation of hypothetical performance results and all of which can adversely affect actual trading results.
+Trader Performance Statistics (August 2025 – July 2026, calculated as of 9 August 2026): Across Tradeify's Growth, Advanced and Select evaluation products, (a) 17.2% of evaluation accounts initiated were successfully completed and afforded the opportunity to advance to the Funded Level; (b) 40.3% of individual participants who initiated one or more evaluations advanced to the Funded Level in at least one of their evaluations - participants may purchase multiple evaluations and resets, and initiated a median of 3 each over the period; (c) 28.5% of individual participants at the Funded Level received a payout; and (d) 3.0% of individual participants trading in a Funded Account were called up to a Live Funded Account. The Funded Level includes both Funded Accounts and Live Funded Accounts.
+Trade examples presented for compensation purposes are hypothetical and should not be expected to reflect live trading results. Simulated results do not necessarily imply future profits. The risk of loss in trading forex or commodity contracts can be substantial. You should therefore, carefully consider whether such trading is suitable for you in light of your financial condition.
+Engaging in futures, forex, and other financial trading involves significant risk and is not appropriate for all investors. It is possible to lose the entire amount of your investment, or even more. Only use risk capital—money you can afford to lose without impacting your financial security or lifestyle. Trading should only be undertaken by individuals who have the necessary risk capital and fully understand the risks involved. Past trading results do not guarantee future performance. Tradeify Holdings, Corp. does not warrant the accuracy or completeness of the Information provided and is not responsible for any losses or damages resulting from reliance on this Information.  Certain investment products present heightened risks:
+Security Futures.   Securities futures products are not suitable for all investors.  Supporting documentation is available upon request for all comparisons, recommendations, statistics or other technical data presented.  Past performance regarding securities futures (as applicable) is subject the following Risk Disclosure Statement for Security Futures Products .
+Forex Futures.  The prices of forex futures contracts may be highly volatile and while generally liquid, there may be times (e.g., during market stress or outside of regular trading hours) when it is difficult to execute trades at desired prices.  Forex futures are traded on margin and present risks associated with the use of leverage – this enables an investor to control a large position with a relatively small amount of capital and may amplify gains, but may also magnify losses.
+Virtual Currency Derivatives/Products. Virtual currency derivatives may experience significant price volatility and the initial margin for virtual currency derivatives may be set as a percentage of the value of a particular contract, which means that margin requirements for long positions can increase if the price of the contract rises.  Certain restrictions may be imposed on customer trading activity in virtual currency derivatives, such as requiring additional margin, imposing position limits, prohibiting naked shorting or prohibiting give-in transactions.  The rules of certain designated contract markets impose trading halts that may restrict a market participant's ability to exit a position during a period of high volatility.  Given the material characteristics of these products, including the lack of a centralized pricing source and the opaque nature of the virtual currency market, there currently is no widely accepted practice to verify the ownership and control of a virtual currency or the valuation attributed to a virtual currency.
+Testimonials. Testimonials provided herein, as well as those presented via TrustPilot may not be representative of the experience of other Tradeify account holders and such testimonials are not indicative of, or a guarantee of, future performance or success.  No compensation has been provided in connection with such testimonials.
+Tradeify Brokerage Disclaimer: Tradeify Brokerage LLC d/b/a Slay Markets is an introducing broker registered with the Commodity Futures Trading Commission ("CFTC") and guaranteed by NinjaTrader Clearing, LLC d/b/a NinjaTrader, Kraken Derivatives US, and Tradovate ("NTC"), and is a National Futures Association Member (NFA ID: 0575972). Tradeify Brokerage LLC's principal place of business is 1700 S. Dixie Highway, Suite 305, Boca Raton, FL 33432.
+Novaflame LTD (Registration No. HE 480295 ), with its registered address at Archiepiskopou Makariou III, 228, Agios Pavlos Court, Block A, 1st Floor, Flat/Office 113, 3030 Limassol, Cyprus, acts as a payment agent processing funds on behalf of Tradeify Holdings, Corp.
+We use cookies
+We use cookies to ensure you get the best
+experience on our website. For more information on
+how we use cookies, please see our Privacy Policy .
+Decline Accept
+This Month's Prize
+Win a Travis Head Signed Bat
+Yes, enter prize drawing
+No, I’m not interested
+First Name Please enter first name
+Email Address Please enter valid email
+Enter prize drawing
+By subscribing, you agree to receive emails from us. We promise no spam. See our privacy policy
+You’re in! Winners announced every 30th of the month.
+Oops! Something went wrong while submitting the form.
+Do you want a chance to
+Win a $150k Growth Account?
+Yes, enter prize drawing
+No, I’m not interested
+First Name Please enter first name
+Email Address Please enter valid email
+Enter prize drawing
+By subscribing, you agree to receive emails from us. We promise no spam. See our privacy policy
+You’re in! Winners announced every 30th of the month.
+Oops! Something went wrong while submitting the form.
+Do you want a chance to
+Win a $150k Growth Account?
+Yes, enter prize drawing
+No, I’m not interested
+First Name Please enter first name
+Email Address Please enter valid email
+Enter prize drawing
+By subscribing, you agree to receive emails from us. We promise no spam. See our privacy policy
+You’re in! Winners announced every 30th of the month.
+Oops! Something went wrong while submitting the form.
+We use cookies
+We use cookies to ensure you get the best
+experience on our website. For more information on
+how we use cookies, please see our Privacy Policy .
+Decline Accept

@@ -1,0 +1,47 @@
+What is the Max Risk Rule, and how does it work? | Alpha Capital Help Center Skip to main content
+Português do Brasil English Español English
+Português do Brasil English Español English
+Search for articles...
+All Collections
+Trading Rules
+What is the Max Risk Rule, and how does it work?
+What is the Max Risk Rule, and how does it work?
+Updated over 2 weeks ago
+The Max Risk Rule is designed to protect traders from excessive open drawdown exposure on any single asset. On a Qualified Analyst account, if your open drawdown on any given asset reaches the maximum risk threshold for your account size, this rule will be breached and you will receive a closure notification via email.
+Account Size
+Max Risk per Asset
+$5,000
+3%
+$10,000
+3%
+$25,000
+3%
+$50,000
+2%
+$100,000
+2%
+$200,000
+2%
+Alpha Direct - All sizes
+1%
+This limit is tracked per asset, in open drawdown, meaning it applies to your floating/unrealised losses on each individual instrument while trades remain open.
+How does the rule work?
+This rule applies to Qualified Accounts only. It takes effect for accounts purchased after the announcement date of 21/07/2026; accounts acquired before this date are not subject to it.
+If you have multiple open positions on the same asset, all losing positions will be combined and treated as a single trade for the purpose of this rule. Profitable positions do not offset the losses from losing positions. The combined losses will be measured against the applicable threshold.
+Each asset is tracked separately. If you are trading multiple instruments simultaneously, the first asset to breach its threshold will trigger the account closure, regardless of the performance of your other open positions in different assets.
+All trading costs, including commissions, swaps and slippage, count toward the threshold. We recommend leaving a buffer below the threshold, as these costs can take a loss beyond the level you planned.
+What is the 10-minute cool-down period?
+If a trade on a given asset is closed and a new trade on the same asset, in the same direction, is opened within 10 minutes, the losses from both trades are combined toward the 1/2/3% threshold. This applies to each further trade opened within 10 minutes of the previous trade closing, so a sequence of trades can form a single continuous chain. The chain ends once more than 10 minutes pass between one trade closing and the next trade opening. Trades in the opposite direction on the same asset form a separate chain and do not interrupt this one.
+Example: You have a $100,000 Alpha Pro Qualified Analyst account, are trading XAU/USD and close a position with a 1.5% loss. You then reopen a trade on XAU/USD in the same direction within 10 minutes, and that new trade loses a further 0.5%. The combined loss of 2.0% will be counted toward the threshold, resulting in a breach of the Max Risk Rule.
+Example: You have a $100,000 Alpha Pro Qualified Analyst account and close an XAU/USD buy with a $1,000 loss. You open another XAU/USD buy 5 minutes later and close it with a $500 loss, then open a third XAU/USD buy 7 minutes later. The three trades form one chain, and the Max Risk Rule is breached once the third trade reaches $500 in open drawdown, as the combined loss reaches $2,000 (2%). Had the third trade been opened 12 minutes after the second one closed, it would start a new chain, and only its own loss would count toward the threshold.
+What happens if I breach this rule?
+If your open drawdown on any single asset reaches the maximum risk limit for your account size, your account will be closed. All open trades will be closed by our system, and you will receive an account closure notification via email.
+Breaches are assessed based on equity (unrealised losses).
+The first asset to reach the threshold triggers account closure. Other open positions are closed simultaneously.
+Please note that this rule is in addition to, and independent of, the Daily Drawdown and Maximum Drawdown rules already in place.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+[email protected]
+Discord
+Website
+Dashboard
+We run on Intercom

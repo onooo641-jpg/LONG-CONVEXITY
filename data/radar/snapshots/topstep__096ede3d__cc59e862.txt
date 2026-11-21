@@ -1,0 +1,133 @@
+Topstep Holiday Trading Hours | Topstep Help Center Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Skip to main content
+Discord Topstep TopstepTV
+Discord Topstep TopstepTV
+Search for articles...
+All Collections
+Getting Started
+Topstep Holiday Trading Hours
+Topstep Holiday Trading Hours
+Holidays bring shortened or closed markets. Know before you trade.
+September 18, 2026
+Table of contents
+Overview
+Holidays bring shortened or closed markets. All account types must close positions 15 minutes before any early close. Positions still open at the cutoff are auto-liquidated. Topstep emails details before each holiday.
+Position Close Rule
+Close all positions 15 minutes before early close (e.g., close by 11:45 CT for a 12:00 CT close)
+Applies to: Trading Combine®, Express Funded Account® (XFA), Live Funded Account® (LFA)
+Open positions at the cutoff will be auto-liquidated
+⚠️ Holiday trading hours are subject to change per the exchange. Always confirm with CME holiday hours when planning trades.
+2026 Holiday Schedule
+Holiday
+Date
+Close Positions By
+Reopen After
+New Year's Day
+Thu Jan 1, 2026
+Markets closed
+17:00 CT (for 1/2 trade date)
+MLK Day
+Mon Jan 19, 2026
+11:45 CT
+17:00 CT Mon Jan 19
+Presidents' Day
+Mon Feb 16, 2026
+11:45 CT
+17:00 CT Mon Feb 16
+Good Friday
+Fri Apr 3, 2026
+08:00 CT
+17:00 CT Sun Apr 5
+Memorial Day
+Mon May 25, 2026
+11:45 CT
+17:00 CT Mon May 25
+Juneteenth
+Fri Jun 19, 2026
+SIM: 11:45 CT
+​Fri Jun 19, 2026
+​
+​Live: 11:10 CT
+​Fri Jun 19, 2026
+17:00 CT
+​Sun Jun 21
+Independence Day
+Fri Jul 3, 2026
+11:45 CT
+17:00 CT Sun Jul 5
+Labor Day
+Mon Sep 7, 2026
+11:45 CT
+17:00 CT Mon Sep 7
+Thanksgiving
+Thu Nov 26, 2026
+11:45 CT
+17:00 CT Thu Nov 26
+Day After Thanksgiving
+Fri Nov 27, 2026
+12:00 CT
+17:00 CT Sun Nov 29
+Christmas Eve
+Thu Dec 24, 2026
+12:00 CT
+—
+Christmas Day
+Fri Dec 25, 2026
+Markets closed
+17:00 CT Sun Dec 27
+New Year's Day
+Fri Jan 1, 2027
+Markets closed
+17:00 CT Sun Jan 3
+👉 Please note: Payouts are not available during holiday hours.
+CME Protocol
+What Is the CME Holiday Protocol?
+On certain holidays, the CME (Chicago Mercantile Exchange) operates on a shortened trading schedule. Rather than treating each calendar day as a separate trading session, the CME may blend multiple calendar days into a single trading day — meaning all profits, losses, and drawdowns accumulated across that window are counted together as one session.
+Example: If a holiday falls on a Monday with reduced trading hours, the CME may treat the period from Sunday's market open through Tuesday's market close as a single trading day.
+How Does a Blended Trade Date Affect Your Daily Loss Limit (DLL)?
+This is an important distinction that can directly impact your ability to trade. Your DLL applies to the entire blended session — not each calendar day within it. Here's what that means in practice:
+If you hit your DLL during the abbreviated holiday session (e.g., Monday), your account will be locked for the remainder of that blended trading day — which may extend into Tuesday's session.
+Even though Tuesday feels like a brand new day, the platform will still consider you to be within the same trade date until the blended session officially closes.
+You would not be able to resume trading until the blended session ends and a new trade date begins.
+Bottom line: On a blended trade date, hitting your DLL earlier in the session can prevent you from trading further into what you may think of as the "next" calendar day.
+​
+​ What If My Platform Does NOT Follow the CME Protocol?
+If your platform does not follow the CME Protocol, each calendar day is treated independently — regardless of holidays or shortened hours.
+​
+​ Does My Platform Follow the CME Protocol?
+If you trade a Live Funded Account on TopstepX , you are subject to blended trade dates during CME holidays and should plan your risk accordingly. See table below.
+Account Type
+CME Protocol
+Live Funded Account®
+Yes
+Trading Combine®
+No
+Express Funded Account®
+No
+Key Takeaway: Before trading around a holiday, always confirm whether your account type follows the CME Protocol. If it does, treat the entire blended session as a single trading day when managing your daily risk.
+Related Articles
+Am I Eligible to Trade with Topstep?
+When and What Products Can I Trade?
+Consistency at Topstep
+Staying Outside the 2% Price Limit Zone
+Topstep Payout Policy
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Your Privacy Choices

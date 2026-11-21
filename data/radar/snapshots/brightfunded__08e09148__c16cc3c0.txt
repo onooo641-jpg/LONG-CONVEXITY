@@ -1,0 +1,48 @@
+Can I trade news? | BrightFunded CFD Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Discord 👾 Website 💻 English Deutsch Polski Português Español English
+Discord 👾 Website 💻 English Deutsch Polski Português Español English
+Search for articles...
+All Collections
+Trading Rules & Guidelines
+Can I trade news?
+Can I trade news?
+Updated this week
+NOTE: The following takes effect from May 9 2024, 00:00 CET
+At BrightFunded, our trading guidelines are designed to support both the flexibility and the integrity of your trading experience. Below are the detailed rules for news trading across different account phases:
+Phase 1 & Phase 2 Trading:
+During Phase 1 and Phase 2, you can trade around news events freely, with no restrictions. This allows you to leverage news-based trading strategies without limitation.
+Funded Account Restrictions:
+Once you transition to a Funded Account, specific rules apply during major news events. Trading within a 10-minute window surrounding significant news releases—defined as 5 minutes before and 5 minutes after the event—is prohibited. Trading during this window will result in a deduction of the profit that you made on that particular trade.
+Instant accounts: Instant has no evaluation, so this restriction applies from day one.
+Executed trades during this period that lead to a loss won't be compensated.
+⚠️ Important : Please note that this is a soft breach and will not result in your account being breached.
+Definition of Trading Execution:
+Executing a trade involves either opening or closing a market execution, or the execution of a pending order, which includes stop loss and take profit orders.
+You are permitted to hold and modify trades on targeted instruments that were opened more than 5 minutes prior to the restricted news event. However, if your stop loss or take profit is activated or filled within the 5-minute window before or after the news release, it will be considered a soft breach.
+During the 10-minute window, users are prohibited from:
+Opening New Trades (Market Execution/Limit orders).
+Closing Trades (Market Execution/Limit orders).
+Stop Loss and Take Profit
+Buy Stop and Sell Stop
+48-Hour Window:
+To accommodate Swing Traders in our ecosystem, all take profits from trades that have a minimum duration of 48 hours are exempt from the news trading restrictions. This means that if you have a trade opened 48 hours before the specific red folder news event and the take profit is hit during the 10-minute window, the profits will NOT be deducted.
+Guidance on News Events:
+To determine which news events fall under this restriction, please refer to the economic calendar table attached at the end of this article.
+Trading Non-Targeted Instruments:
+You may continue to trade other non-targeted instruments normally during these times. This means if the news event does not directly affect the instrument you are trading, you may proceed as usual.
+Policy Updates:
+All references to previous rules allowing news trading in Funded accounts are now null and void. The updated rules stated here are in effect immediately and supersede any prior guidelines.
+📅 Economic Calendar: https://www.forexfactory.com/calendar
+It's crucial for all traders to understand and follow these rules closely to avoid potential penalties or breaches. Being aware of the timing and impact of scheduled news events will help you plan your trading activities effectively.
+Our objective with these rules is to promote a risk-managed trading environment. By controlling trading during periods of potential high volatility, we aim to protect both our clients and our platform from unpredictable market movements.
+Remember: Responsible trading within the outlined guidelines is essential for maintaining the health and success of your trading career at BrightFunded.
+GET FUNDED!
+Related Articles
+BrightFunded 1-Step (OLD)
+1-Step Daily: evaluation rules
+2-Step Bright: evaluation rules
+Instant: account rules
+What are the current rules for the evaluation process?
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃

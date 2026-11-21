@@ -1,0 +1,50 @@
+Prohibited: Hedging | Lucid Trading Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Lucid Home
+Lucid Home
+Search for articles...
+All Collections
+Rules and Guidelines
+Prohibited: Hedging
+Prohibited: Hedging
+Lucid Trading's hedging rule: Which hedging practices are prohibited across accounts and why, with examples so you can stay compliant while trading.
+A
+Written by AJ
+Updated this week
+Table of contents
+What Is It?
+Hedging refers to the use of multiple accounts to take opposing positions on the same trade. This tactic artificially reduces risk by ensuring one account profits regardless of the market’s direction. It is a form of system manipulation, not genuine trading.
+Example:
+A trader goes long on one NQ in one account and short NQ on another. No matter which way the market moves, one account gains while the other loses, manipulating the program structure to secure profits unfairly.
+Prohibited Forms of Hedging
+Lucid Trading strictly prohibits all forms of hedging, including but not limited to:
+Hedging across multiple accounts held by the same user
+Hedging between different users' accounts
+Hedging between different firms or funded platforms
+Any other form of hedging designed to bypass risk management rules
+What Happens If I Hedge?
+Lucid Trading has automated risk systems in place to detect hedging behavior. If your account is flagged:
+You will receive an email notice & the associated accounts will be reset to prior days balance. Despite the balance reset, this does not reset the total remaining drawdown on these accounts.
+Accounts with a Hedging Violation are not eligible for On-Demand payouts, or Intraday account upgrades.
+After repeated offenses all involved accounts will be breached and you may be permanently restricted from using Lucid Trading services.
+Why Is It Prohibited?
+Lucid Trading is committed to funding skilled, consistent traders, not those exploiting structural loopholes. Hedging:
+Misrepresents a trader’s actual risk and skill
+Undermines the evaluation process
+Threatens the long-term sustainability of the firm
+Allowing hedging would make it impossible to identify and reward legitimate trading performance.
+Common Questions
+Can I go long X contract and short X contract?
+No, you cannot go long / short the same contract in the same or separate accounts. This is strictly prohibited.
+Can I go long X contract Mini and short X contract Micros?
+You can go long / short the same contract but one is micros and one is minis in the same account.
+However, you cannot go long / short the same contract but one is minis or micros in separate accounts. This is strictly prohibited.
+Can I go long X contract and short Y contract?
+You can go long / short different contracts in the same account.
+However, you cannot go long / short different contracts in separate accounts with correlated assets. This is strictly prohibited.
+Example: You cannot go long ES in one account and short NQ in a separate account.
+Correlated assets go for groupings in equities, metals, energies, etc.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Lucid Trading Help Center

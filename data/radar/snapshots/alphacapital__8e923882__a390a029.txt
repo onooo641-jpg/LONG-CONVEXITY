@@ -1,0 +1,154 @@
+What is a Trading Evaluation? (2026) | Alpha Capital
+How it works
+Trading Objectives
+Evaluation Process
+Product
+Trading
+Platforms
+Trading Tools Lot Size Calculator
+Symbols
+Economic Calendar
+Leaderboard
+About Us
+Learn
+Resources
+Interviews
+Events
+Media
+Community
+Help Center
+FAQ
+Contact Us
+Careers
+Client Area
+How it works
+Product
+Trading
+Platforms
+Trading Tools Lot Size Calculator
+Symbols
+Economic Calendar
+Leaderboard
+About Us
+Learn
+Resources
+Trader Interviews
+Events
+Media
+Community
+Merch
+Help Center
+FAQ
+Contact Us
+Careers
+Client Area
+Written by Alpha Capital Research Team
+Published May 9, 2026
+Reading time 5 Min Read
+May 9, 2026
+Updated May 28, 2026
+5 Min Read By Alpha Capital Research Team
+What is a Trading Evaluation? (2026)
+A trading evaluation tests skill on simulated funds before you qualify for performance fees. Learn how prop firm challenges work and Alpha One vs Alpha Pro paths (2026).
+Part of our prop firm guide series. Start with What is a Prop Firm? (2026 complete guide) , then explore: are prop firms legit? , how prop firms work , prop firm vs broker , simulated funds , performance fee , qualified trader , drawdown types , prop firm red flags , choose by trading style , evaluation cost , realistic performance fees , copy trading UK , Alpha Capital login , ACG vs ACG Markets , performance fee delays , evaluation attempts , prop firm comparisons hub , vs E8 Markets , vs FundingPips , vs Blue Guardian , prop firms in South Africa , prop firms in India , pass without rebuilding strategy , why traders fail evaluations , evaluation fee & refund policy ., first evaluation checklist , free monthly trading competition · CFD trading vs forex trading in the UK · using an EA on a prop firm · My Alpha journal
+Quick answer: A trading evaluation is Alpha Capital's structured assessment on simulated funds . Traders must hit profit targets without breaching drawdown limits. Many traders and other firms call the same step a prop firm challenge — the mechanics are identical.
+A trading evaluation is a structured assessment used by proprietary trading firms to identify disciplined, profitable traders before granting access to simulated funds . At Alpha Capital Group, passing the evaluation is the required gateway to becoming a Qualified Analyst and earning performance fees on simulated profits.
+For the full picture of how prop firms work — including performance splits, drawdown types, and how evaluations fit the wider model — start with our complete prop firm guide (2026) .
+Prefer to skip the evaluation path? Alpha Capital also offers Instant Funding — a Qualified Account from purchase.
+How a Trading Evaluation Works
+The evaluation phase acts as a filter. You trade on simulated capital and must meet specific objectives while staying inside strict risk parameters:
+Profit targets: Hit a predefined percentage of simulated profit (for example 6%, 8%, or 10% depending on programme) to prove your edge.
+Maximum drawdown: Do not lose more than the allowed percentage from your starting balance (static) or peak balance (trailing).
+Daily loss limit: Caps how much you can lose in a single session — prevents emotional revenge trading.
+Minimum trading days: Ensures consistency across multiple sessions, not one lucky trade.
+All trading during an evaluation uses simulated funds in a demo environment. The only capital at risk is the one-time evaluation fee you paid upfront.
+Prop Firm Challenge vs Trading Evaluation
+While Alpha Capital Group refers to this process as an evaluation , many retail traders and the broader industry call the same step a prop firm challenge . The terminology differs; the mechanics do not. Both describe the same gate: demonstrate consistent edge without breaching drawdown limits, then advance to a qualified simulated account. If you are new to the process, our guide explains how a prop firm challenge works , step by step.
+Successful completion is the only path from applicant to Qualified Analyst. There is no shortcut around the rules — and that is by design. The evaluation protects both the firm and the trader by filtering for professional-grade discipline before any performance split applies.
+Alpha One vs Alpha Pro: Which Evaluation Path?
+Alpha Capital offers four evaluation programmes. For most day traders choosing between speed and flexibility, the decision comes down to Alpha One vs Alpha Pro .
+Alpha One — one-step evaluation
+Alpha One is the fastest route. You complete a single phase — no verification step. Account sizes run from $5K to $200K, with evaluations starting from $50 on the smallest tier. See prop firm evaluation cost (2026) for full pricing tables.
+The trade-off is a trailing drawdown (6%), which tightens as your balance grows. If you build a large cushion and then give back too much from your peak, the account closes. Alpha One suits traders with a proven intraday strategy who want the shortest path to qualification. Minimum trading day requirement: 1.
+Alpha Pro — two-step evaluation
+Alpha Pro spreads qualification across two phases (evaluation, then verification). You choose your risk profile at purchase across three variants:
+Pro 6%: Lower profit target, tighter 6% static drawdown and 3% daily loss — for conservative strategies.
+Pro 8%: Mid-range targets and 8% static drawdown with 4% daily loss.
+Pro 10%: Higher profit target in exchange for 10% static drawdown and 5% daily loss — more room for wider stops.
+Static drawdown is calculated from your initial balance and does not move when you profit — giving swing-friendly headroom compared to trailing. Minimum trading days: 3 per phase. Full rule tables are in our Alpha Capital rules explained (2026) guide.
+Which to pick? Choose Alpha One if you want speed and your strategy fits trailing drawdown. Choose Alpha Pro if you prefer static limits and want to match profit targets to your natural risk profile. Hold positions overnight or through weekends? Look at Alpha Swing instead.
+Why the Evaluation Phase Matters
+The evaluation instils the discipline required for long-term simulated trading. As Arman, an Alpha Capital Qualified Trader, noted in a recent interview:
+"For traders looking to pass our evaluations, or as the trading community commonly knows them, prop firm challenges, my advice is simple: collect at least six months of backtested data, forward-test it on a simulated account for three months, and only then attempt an evaluation. If your data is solid, you will succeed."
+Frequently Asked Questions
+What is a trading evaluation?
+A structured assessment on simulated funds. You must hit profit targets without breaching drawdown or daily loss limits. Passing qualifies you for a simulated account where you may earn performance fees.
+What is a prop firm challenge?
+Industry slang for the same evaluation step. Alpha Capital uses evaluation language; the profit targets, drawdown rules, and simulated environment are identical.
+What is the difference between Alpha One and Alpha Pro?
+Alpha One is one step with trailing drawdown — fastest path. Alpha Pro is two steps with static drawdown and three risk variants (6%, 8%, 10%) so you pick targets that match your strategy.
+How long does a trading evaluation take?
+With Alpha One and active trading, some traders pass in five to ten trading days. Alpha Pro requires two phases with minimum trading days each, so typically two to four weeks.
+What happens if you fail a prop firm evaluation?
+If you breach drawdown, daily loss, or other rules, the simulated account closes. You lose the evaluation fee and must purchase a new assessment. Your personal savings beyond the fee are not at risk.
+Ready to Start Your Evaluation?
+Compare Alpha One, Alpha Pro, Alpha Swing, Alpha Three and Alpha Direct on our product page — accounts from $2.5K (Alpha Direct) to $200K with an 80% performance split as standard (90% with the add-on or on Alpha Direct).
+View Alpha Capital evaluation plans
+Compare Alpha Capital. Published side-by-side guides based on each firm's own rules — re-verify before buying: vs FTMO (plan variety) · vs FundedNext (scaling) · vs The5ers (account size & leverage) · vs Blue Guardian (swing path) · vs E8 Markets (FX leverage) · vs FundingPips (performance fee split) .
+Author: Alpha Capital Research Team · Updated: May 28, 2026 · Related: Prop firm guide · Simulated funds · Evaluations
+Save on your evaluation. See active Alpha Capital promo codes before checkout.
+On this page
+Continue reading
+Guides
+May 20, 2026
+10 Min Read
+Alpha Capital Rules Explained  Drawdown, Profit Targets, Daily Loss and Evaluation Rules (2026)
+Alpha Capital’s rules are built around controlled risk. Each programme has different drawdown, daily loss, and holding requirements, so traders should confirm the exact limits before starting an evaluation. Understanding these rules helps avoid preventable breaches and keeps the focus on consistent trading.
+Guides
+May 20, 2026
+9 Min Read
+Alpha Capital News Trading and Overnight Rules Explained (2026)
+Alpha Capital’s news and hold rules vary by programme, so traders need to understand the exact limits before entering around major releases. In general, news trading is permitted, but high-impact events come with short restriction windows that affect when trades can be opened or closed. Overnight and weekend flexibility is strongest on Alpha Swing, which is built for traders who hold positions beyond a single session.
+Guides
+May 20, 2026
+8 Min Read
+Alpha Capital Swing Account Explained: Rules, Conditions and Who It Is For?
+Alpha Swing is Alpha Capital Group’s dedicated evaluation programme built specifically for swing traders who hold positions overnight, through weekends, and across major news events. Unlike standard prop firm challenges that restrict longer-term strategies, Alpha Swing offers flexible rules including weekend holds, overnight trading, and a 10% static drawdown designed to suit daily and weekly timeframe traders. Traders who pass the two-phase evaluation become eligible for performance fees on a simulated Qualified Account, making Alpha Swing a strong fit for disciplined traders who rely on patience, wider stops, and macro-driven setups.
+Sign Up for an Exclusive Welcome Offer
+Subscribe to Alpha Capital Group emails for an exclusive welcome offer, trader insights, product updates, and discounts. Enter your email below to stay one step ahead.
+By subscribing, you agree to receive marketing emails from Alpha Capital Group. You can unsubscribe at any time.
+Thank you! Your submission has been received!
+Oops! Something went wrong while submitting the form.
+Home
+Product Alpha One 2-Step Evaluation Alpha Pro
+Trading
+About
+Contact Us Official channels
+Events
+Resources
+Prop Firm Guide
+Prop Firm Evaluations
+Promo Codes
+Archive
+Careers
+© 2026 AlphaGroup
+Mon – Fri: 8am – 8pm (GMT)
+Info@alphacapitalgroup.uk
+All information provided on this site is intended solely for the study purposes related to virtual trading on financial markets and does not serve in any way as a specific investment recommendation, business recommendation, investment opportunity analysis or similar general recommendation regarding the trading of investment instruments.
+*Note: All instances of the term trading refer exclusively to virtual trading
+ALPHA CAPITAL GROUP LIMITED
+Company number 13719951
+Registered office: 1 Allied Business Centre, Coldharbour Lane, Harpenden, England, AL5 4UT
+Cookie Policy
+Privacy Policy
+Terms of Use
+Disclaimer
+Return Policy
+Please note that all accounts we provide to our clients are demo accounts with simulated funds and any trading is conducted in a simulated environment. References to trading, traders, revenue, and profit are references to virtual trading, revenues, and profits respectively. More details can be found in the FAQ section. Okay I Understand.
+EN ES
+DE
+FR
+PT
+CS
+HI
+EN

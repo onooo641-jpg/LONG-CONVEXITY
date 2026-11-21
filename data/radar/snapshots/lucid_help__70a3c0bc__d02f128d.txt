@@ -1,0 +1,52 @@
+LucidDirect Daily Loss Limit | Lucid Trading Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Lucid Home
+Lucid Home
+Search for articles...
+All Collections
+LucidDirect
+LucidDirect Daily Loss Limit
+LucidDirect Daily Loss Limit
+LucidDirect daily loss limit explained: the DLL by account size on instant funded accounts, how it is measured, and what a breach means for traders.
+O
+Written by Operations Lead
+October 19, 2026
+Table of contents
+Daily Loss Limit
+The Daily Loss Limit (DLL) is the maximum amount a trader can lose in a single day before trading is restricted until the next session. All DLLs at Lucid Trading are considered soft breaches, meaning you do not lose your account for hitting DLL as long as the Max Loss Limit (MLL) has not been reached. If you reach the DLL listed for your account size, you will be restricted from placing additional trades until the next trading session.
+LucidDirect Funded Account DLL
+LucidDirect accounts start with a Fixed DLL, which transitions to LucidScale after surpassing the Initial Trail Balance.
+Account Size
+Fixed DLL
+Initial Trail Balance
+$25,000
+None
+None
+$50,000
+$1,200
+$52,100
+$100,000
+$2,100
+$103,600
+$150,000
+$3,000
+$155,100
+Once the account closes above the Initial Trail Balance, the Fixed DLL is replaced by the LucidScale DLL.
+LucidScale DLL Formula:
+Highest end-of-day account profit × 60% = LucidScale DLL
+The LucidScale DLL increases as your account grows
+It does not decrease, even if the account draws down
+This provides greater flexibility and reward for consistent profitability
+Example:
+If your highest end-of-day profit is $4,000, then:
+$4,000 × 0.60 = $2,400
+Your new DLL will be $2,400 until a higher end-of-day profit is achieved
+The LucidScale DLL was designed to promote long-term success and reflects Lucid Trading’s commitment to trader-friendly rules and risk management.
+On Demand Payouts
+$50,000, $100,000 and $150,000 LucidDirect accounts have a Daily Loss Limit, so they can request payouts during the trading session, from profit made that session (6:00 PM to 3:45 PM ET).
+$25,000 LucidDirect accounts have no Daily Loss Limit, so their payouts follow the regular end-of-day schedule.
+LucidDirect has no add-ons; the Daily Loss Limit is set by account size.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Lucid Trading Help Center

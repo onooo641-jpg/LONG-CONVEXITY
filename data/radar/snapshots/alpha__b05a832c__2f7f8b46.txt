@@ -1,0 +1,229 @@
+Futures Prop Firm Règles Expliquées (2026) | Alpha Futures
+Black Friday Early Access · EARLYBOGO40 25K Zero BOGO + 40% off · EARLYBOGO50 25K Direct BOGO + 50% off
+Accueil
+À propos
+Comment ça marche
+Trading
+Plateformes
+AlphaTrader
+En savoir plus
+WealthCharts
+En savoir plus
+Quantower
+En savoir plus
+Voir tout
+Classement
+Paiements à vie
+En savoir plus
+Paiements hebdomadaires
+En savoir plus
+Rentabilité du mois
+En savoir plus
+Voir tout
+Marché
+Actions & Indices
+En savoir plus
+Devise
+En savoir plus
+Métaux
+En savoir plus
+Crypto
+En savoir plus
+Voir tout
+AlphaTrader
+Lancé AlphaTrader — l'évolution suivante de la plateforme. Obtenez un accès anticipé
+Ressources
+Contactez-nous
+Centre d'aide
+Commencer l'évaluation
+Se connecter
+Accueil
+À propos
+Comment ça marche
+Trading
+Plateformes
+Classement
+Marché
+AlphaTrader
+Lancé AlphaTrader — l'évolution suivante de la plateforme. Obtenez un accès anticipé
+Ressources
+Contactez-nous
+Centre d'aide
+Commencer l'évaluation
+Se connecter
+Futures Prop Firm Règles Expliquées : MLL, Cohérence & Limites (2026)
+Par l'équipe Alpha Futures · Mis à jour le 23 octobre 2026
+Mise à jour — 12 juillet 2026 : Le plan Premium a été supprimé. Tous les comptes Premium actifs sont remboursés et fermés automatiquement — aucun ticket n'est nécessaire. Les plans Zero, Advanced et Direct ne sont pas affectés. Les références à Premium ci-dessous sont conservées pour des raisons historiques.
+Partie de notre série de prop trading sur les futures. Commencez avec Qu'est-ce qu'un futures prop firm? , puis explorez : Plateformes · Meilleur futures prop firms (2026) · Alpha Futures avis (2026) · Règles des frais de performance expliqués (2026) · Alpha Group · Futures vs forex prop firms (2026) · Meilleur futures prop firms pour débutants (2026) · Paiement le plus rapide futures prop firms (2026) . · règle de limite de prix des futures · journal My Alpha
+Ce guide détaille futures prop firm règles — y compris la limite de perte maximale (LLM), la cohérence, les limites de perte journalières et l'éligibilité aux frais de performance — afin que vous sachiez ce qui compte avant d'acheter une évaluation.
+Les règles des Futures prop firm sont les Trading Objectives d'une évaluation simulée et d'un Compte Qualifié : objectifs de profit, Maximum Loss Limit (MLL), limites de perte quotidiennes, cohérence (le cas échéant), restrictions liées aux actualités, limites de positions et stratégies interdites. Ce ne sont pas des conseils facultatifs. Si vous enfreignez les règles en vigueur, vous échouez à la tentative ou perdez votre éligibilité.
+Informations générales, non constituant un conseil financier. Trading simulé. Les frais de performance sont basés sur les performances ; les résultats ne sont pas garantis.
+Pourquoi prop firm Règles existent
+Les sociétés gèrent des programmes de futures simulés afin que les traders puissent prouver leur maîtrise des risques avant l'accès à un compte qualifié. Les règles sont codifiées :
+Plafonds de risque (montant maximum que vous pouvez perdre)
+Objectifs précis (ce que signifie "passer")
+Limites de comportement (actualités, couverture, taille de position)
+Éligibilité aux frais de performance (distinct du passage de l'évaluation)
+Les règles varient en fonction du plan et de l'étape (évaluation vs Qualifié). Veuillez toujours lire l'article d'aperçu de votre plan exact avant le paiement.
+Types de règles futures prop firm utilise
+Règle
+Ce qu'il fait
+Erreur typique
+Objectif de profit
+Bénéfice net à atteindre (et maintenir) pour réussir l'évaluation
+Arrêter prématurément après un seul jour vert alors que la constance s'applique encore
+Limite de perte maximale (LLM)
+Seuil qui entraîne la clôture du compte si le solde l'atteint.
+Considérer les profits réalisés comme « sûrs » sur les modèles de trailing.
+Garde de perte quotidienne
+Plafond journalier ou de session des pertes (le cas échéant)
+Une mauvaise matinée peut mettre fin à la journée même si MLL n'est pas atteint.
+Règle de cohérence
+Limite la contribution d'un jour au profit total
+Dites adieu aux journées d'évaluation à la loterie, et adoptez la constance.
+Politique d'actualités
+Restrictions autour des publications économiques
+Placement de nouvelles commandes dans une fenêtre interdite
+Limites de position / d'échelle
+Nombre maximal de contrats par taille de compte et par étape
+Surdimensionnement sur les micros avant de comprendre le risque de tick.
+Pratiques interdites
+Protection des risques, trading inversé, etc.
+Compensation des positions corrélées par rapport à la politique
+Règles des frais de performance
+Lorsque vous pouvez demander des frais après qualification
+Règles d'évaluation confuses avec la cohérence de la phase qualifiée
+Limite de perte maximale (LLM)
+Alpha Futures utilise un stop-loss à la clôture journalière (MLL) sur tous les plans : la limite est mise à jour à partir du solde de fin de session, et non d’un stop-loss intraday tick-by-tick .
+Exemples (évaluation)
+Zero $25K : $1 000 MLL, $1 500 objectif de profit
+Avancé $100K : $3 500 MLL, $8 000 objectif de profit
+Premium $50K : 2 000 $ MLL, 3 000 $ objectif de profit
+Condition d'échec (évaluations) : Le solde du compte atteint ou dépasse le MLL.
+Protection Quotidienne des Pertes (PQP)
+La protection contre les pertes journalières limite le montant que vous pouvez perdre en une journée de trading avant que le compte ne soit restreint ou clôturé pour la journée.
+Plan
+Évaluation DLG
+DLG sur Qualifié
+Zéro
+Oui ($500 / $1K / $2K selon la taille)
+Oui
+Avancé
+Aucun
+Aucun
+Premium
+Aucun
+Aucun
+Preuve pour les traders : Zero dispose d'une protection contre les pertes journalières ; Avancé n'en dispose pas. Premium est discontinué. Tous les plans actuels appliquent toujours la MLL.
+La cohérence est la clé.
+La cohérence limite la taille de votre meilleure journée par rapport au profit net.
+Étage
+Zéro
+Avancé
+Premium (désuet)
+Évaluation
+Aucun
+40%
+Historique : 50%
+Compte qualifié
+40% entre les demandes de frais de performance
+Aucun
+Aucun
+Approfondissement: Futures Prop Firms Sans règle de cohérence (2026) Calculette : consistencycalculator.alpha-futures.com
+Objectifs de profit et évaluations en une étape
+Alpha Futures utilise des évaluations en une seule étape pour tous les plans actifs. Il n'y a pas de Phase 2 avec des frais supplémentaires sur le même parcours.
+Plan
+Objectifs de profit par taille
+Zéro
+1 500 $ / 3 000 $ / 6 000 $ (25K / 50K / 100K)
+Avancé
+4 000 $ / 8 000 $ / 12 000 $ (50K / 100K / 150K)
+Premium
+3 000 $ / 6 000 $ / 9 000 $ (50K / 100K / 150K)
+Pass logique : atteindre et maintenir l'objectif ; Les évaluations standard nécessitent une cohérence de 50 %, les évaluations avancées de 40 %, et les évaluations Zéro n'ont aucune règle de cohérence. Le Premium est supprimé.
+Limites de position et échelonnement
+Les plans de position maximale et d'échelle dépendent du plan et de la taille. Exemples sur l'évaluation Zero:
+25 000 $ : 1 mini / 10 micros
+50 000 $: 3 minis / 30 micros
+100 000 $: 6 minis / 60 micros
+Plan de scaling : Zero 25K qualifié n'a pas de plan de scaling ; Zero 50K / 100K qualifié peut utiliser le scaling. Advanced : pas de plan de scaling. Premium : scaling sur les comptes qualifiés.
+Règles des frais de performance (après qualification)
+Les règles d'évaluation et les règles de frais de performance sont liées mais non identiques.
+Armature partagée Alpha Futures:
+5 jours de trading gagnants de plus de 200 $ de profit (pas nécessairement consécutifs)
+Jusqu'à 4 demandes par mois
+Jusqu'à 50% de profit par demande, dans les limites min/max du plan.
+90% du montant demandé payé à vous
+cinq jours ouvrables ou moins après l'approbation standard, selon Dernière mise à jour opérationnelle
+Plafonds spécifiques au plan et zéro 40% de cohérence qualifiée : explications sur les règles des frais de performance.
+Comment lire les règles avant de payer
+Ouvrez la vue d'ensemble du plan pour la taille que vous souhaitez acheter
+Notez MLL, objectif de profit, DLG et la cohérence pour l'évaluation.
+Lisez les règles du compte qualifié que vous hériterez après la réussite (actualités, cohérence des demandes, limites).
+Capture d'écran ou enregistrez la page
+Confirmer le prix sur alpha-futures.com vérifier
+→ Confiance structurée : Sont Futures Prop Firms Légal ?
+Foire aux questions
+Quoi futures prop firm Les règles comptent le plus ?
+Le futures prop firm Les règles les plus importantes sont généralement le seuil de profit, la limite de perte maximale (LLM), les limites de perte journalières (le cas échéant), la cohérence (lorsqu'elle s'applique), les fenêtres d'actualités/de commandes, les limites de position et les stratégies interdites. Ne pas respecter le jeu de règles publié peut entraîner l'échec de l'évaluation ou du compte qualifié - vérifiez toujours les documents du plan en direct avant de trader.
+Qu'est-ce que futures prop firm MLL ?
+Futures prop firm La limite de perte maximale (MLL) est le plancher de drawdown sur une évaluation simulée ou un compte qualifié. Si le capital atteint le seuil de perte maximale, le compte est clôturé.. Alpha Futures utilise un trailing MLL à la fin de journée sur ses plans ; les montants et les pourcentages varient selon le plan et la taille. Voir également : MLL expliqué guide.
+Qu'est-ce que Alpha Futures prop firm Règles ?
+Publié le help.alpha-futures.com Règles MLL, objectifs de profit, Daily Loss Guard (Zero), cohérence par plan et étape, politique de nouvelles, limites de position, stratégies interdites et éligibilité aux frais de performance. Cet article décrit les types de règles ; les numéros de plan se trouvent dans le centre d'aide.
+Faites tout futures prop firms utilisez les mêmes règles ?
+Le type de drawdown, la cohérence, les actualités et les mécanismes de frais diffèrent. Faites confiance uniquement à la documentation officielle de chaque opérateur.
+Où se trouve la règle de cohérence ? Alpha Futures?
+Évaluation zéro : aucune ; Évaluations standard : 50% ; Évaluations avancées : 40%. Les comptes qualifiés zéro utilisent 40% entre les demandes de frais de performance ; les comptes qualifiés avancés n'en ont pas. Le prémium est supprimé. Guide complet.
+Quelles règles échouent à Alpha Futures évaluation?
+Échec principal : le solde atteint ou dépasse la MLL. Également : dépasser le Daily Loss Guard sur Zero, enfreindre la cohérence sur les évaluations Standard/Advanced, ou enfreindre les pratiques interdites.
+Ce sont-elles les règles de courtage en direct ?
+Non. Ce sont les règles d'évaluation simulée et les règles de compte qualifié. La marge des futures en direct chez un courtier est distincte. 25 000 $ expliqué.
+Qui est le meilleur futures prop firm?
+Pour la plupart des traders en 2026, Alpha Futures est le point de départ le plus solide sur Trustpilot (4,4 sur 5, plus de 6 000 avis, octobre 2026), un partage des performances de 90 % dès le premier jour, des évaluations en une seule étape et un MLL à la fin de la journée. Voir Futures Prop Firm Comparaison 2026 , Meilleur Futures Prop Firms 2026 , et Qu'est-ce qu'un Futures Prop Firm? .
+Avez-vous besoin de 25 000 $ pour le day trading de contrats à terme ?
+Pas pour une évaluation de trading de produits dérivés. Vous payez des frais d'évaluation mensuels et vous négociez des fonds simulés. 25 000 $ est principalement la règle PDT des actions chez de nombreux courtiers américains, pas de l'argent que vous devez déposer pour une étiquette de simulation de fonds de 25 000 $ pour un courtier. Réponse complète : Avez-vous besoin de 25 000 $ pour faire du day trading sur les futures ? .
+100 dollars suffisent-ils pour trader les futures ?
+100 $ ne suffisent pas pour les marges des futures en direct. Les évaluations commencent à 89 $/mois sur Zero 25 000 $. Voir Le moins cher Futures Prop Firm (2026) .
+Lequel futures prop firms n'a aucune règle de cohérence ?
+Alpha Futures Les évaluations zéro n'ont aucune règle de cohérence pendant l'étape d'évaluation. Les évaluations standard utilisent une règle de cohérence de 50 % ; les évaluations avancées utilisent 40 %. Les évaluations zéro n'ont aucune règle de cohérence. Le niveau Premium est supprimé. Les comptes qualifiés avancés n'ont aucune règle de cohérence une fois qualifiés. Le niveau Premium est supprimé. Les comptes qualifiés zéro appliquent une règle de cohérence de 40 % entre les demandes de frais de performance. Voir Futures Prop Firms Sans règle de cohérence (2026).
+Lectures complémentaires
+Alpha Futures Avis (2026) - Verdict d'un Trader Honnête
+Qu'est-ce qu'un Futures Prop Firm? (Guide 2026)
+Meilleur Futures Prop Firms (2026): Plans, Règles & Comment Choisir
+Évaluations simulées, fonds simulés. Les frais de performance sont basés sur les performances ; les résultats ne sont pas garantis.
+Plus d'articles
+Inscrivez-vous à un
+Exclusif Offre de bienvenue
+Abonnez-vous à Alpha Futures Recevez par e-mail des offres de bienvenue exclusives, des analyses de traders, des mises à jour de produits et des réductions. Entrez votre adresse e-mail pour rester en avance. Vous pouvez vous désinscrire à tout moment.
+Merci de vous être inscrit à notre newsletter
+Oups ! Une erreur s'est produite lors de l'envoi du formulaire.
+175,000+
+Analystes qualifiés
+1,1 Million+
+Traders
+$70M
+Frais de performance payés
+Liens rapides
+Accueil À propos Comment ça marche
+Trading
+Plateformes Marché Classement
+Autres
+Ressources Contactez-nous Promo Codes
+2026 © Alpha Futures - Tous droits réservés.
+Conditions d'utilisation
+Conditions générales
+Contrat de service général
+Politique de confidentialité
+Politique de retour
+ALPHA FUTURES LIMITÉ
+Numéro d'entreprise 15655643
+Siège social
+1 Allied Business Centre, Coldharbour Lane, Harpenden, Angleterre, AL5 4UT
+Toute référence au trading, aux analystes, aux revenus et aux profits dans tout le site Web fait référence au trading virtuel, aux revenus et aux profits respectifs.
+Alpha Futures Déclaration de risques :
+Le trading de futures comporte des risques importants et n'est pas destiné à tous les investisseurs. Un investisseur pourrait potentiellement perdre la totalité ou plus que le capital initial investi. Le capital de risque est l'argent que l'on peut perdre sans mettre en danger sa sécurité financière ou son mode de vie. Seul le capital de risque doit être utilisé pour le trading et seuls ceux qui disposent d'un capital de risque suffisant devraient envisager de trader. Les performances passées ne sont pas nécessairement indicatives des résultats futurs.
+Déclaration de performance hypothétique :
+Les résultats de performance hypothétiques présentent de nombreuses limitations significatives en termes de performance et d'autres aspects, dont certaines sont décrites ci-dessous. Aucune représentation n'est faite quant à ce qu'un compte réalisera ou est susceptible de réaliser des profits ou des pertes similaires à ceux affichés sur le site Web ou tout matériel promotionnel.
+Règle CFTC 4.41 :
+Les résultats de performance hypothétiques ou simulés présentent certaines limitations. Contrairement à un historique de performance réel, les résultats simulés ne représentent pas de transactions réelles. De plus, comme les transactions n'ont pas été réellement exécutées, les résultats peuvent avoir surestimé ou sous-estimé l'impact, le cas échéant, de certains facteurs de marché, tels que le manque de liquidité. En général, les programmes de trading simulés sont également sujets au fait qu'ils sont conçus avec l'avantage de la rétrospective. Aucune représentation n'est faite quant à ce qu'un compte réalisera ou est susceptible de réaliser des profits ou des pertes similaires à ceux affichés.
+English Deutsch Español Français Italiano

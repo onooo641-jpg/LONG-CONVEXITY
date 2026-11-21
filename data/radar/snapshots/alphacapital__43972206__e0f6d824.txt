@@ -1,0 +1,94 @@
+Focused Trader Group | Alpha Capital Help Center Skip to main content
+Português do Brasil English Español English
+Português do Brasil English Español English
+Search for articles...
+All Collections
+Qualified Analyst
+Focused Trader Group
+Focused Trader Group
+September 7, 2026
+What is the Focused Trader Group?
+This is a temporary group into which Qualified Analyst accounts may be moved, depending on the trading style and approach to risk on the account (see the qualifying categories below).
+What is the leverage reduction?
+Pro / One / Three - up to 1:30 leverage:
+FX
+Metals
+Indices
+Oil
+1:30 (3%)
+1:9 (11%)
+1:10 (10%)
+1:10 (10%)
+In line with the leverage reduction, the maximum lot exposure on Pro / One / Three accounts is also reduced within the group:
+5k
+10k
+25k
+50k
+100k
+200k
+Max 1.25lots
+Max 2.5lots
+Max 5lots
+Max 10lots
+Max 20 lots
+Max 40 lots
+Swing - up to 1:15 leverage:
+FX
+Metals
+Indices
+Oil
+1:15 (6%)
+1:4 (20%)
+1:5 (20%)
+1:5 (20%)
+In line with the leverage reduction, the maximum lot exposure on Swing accounts is also reduced within the group:
+5k
+10k
+25k
+50k
+100k
+200k
+Max 0.63 lots
+Max 1.25 lots
+Max 2.5 lots
+Max 5 lots
+Max 10 lots
+Max 20 lots
+During the account review at the withdrawal stage, should any violations of this rule be identified, we follow a strict procedure:
+Upon the first instance of violating this rule, the performance fee earned through lot sizes exceeding the permitted limit will not be eligible for withdrawal.
+Upon the second instance of violating this rule, the performance fee will be forfeited and the Qualified Analyst Account will be deactivated.
+Please note that violations are assessed per position, not per trade idea. Therefore, a sequence of trades can result in multiple violations of this rule. For example, if the maximum lot limit for an account is 10 lots, a single trade of 11 lots followed by another trade of 1 lot, while the first trade remains open, will result in two breach counts and the closure of the account.
+Restrictions within the group
+Single Position Limit: the maximum allowable risk for any single position is 1% of your initial balance. This holds true even when trading multiple entries and multiple symbols at the same time, where the cumulative risk must not exceed 1%.
+Reduced Leverage: your account leverage is set as per the tables above (1:30 for Pro / One / Three, 1:15 for Swing) when the account is re-enabled for trading. The same margin requirement applies to the different symbols on which you open new trades.
+Cooling-Off Period: If you incur a loss of 1% or more on a specific symbol, even across separate trades that were not open simultaneously, you must wait until the next trading day before opening a new trade on that symbol. Trades on other assets that have not exceeded this limit are permitted. Failing to comply with this rule will result in a breach.
+Expert Advisors: EAs are not permitted on accounts within the Focused Trader Group. Any EA previously enabled on the account is disabled while the account remains in the group.
+Depending on the trading style, a trader in this group may also be placed under the Focused Trader On-Demand classification. Where this applies, any further purchases are available with the On-Demand payout type only, and the Bi-Weekly option is temporarily restricted. Both payout options can be restored once the account is removed from the group (please see below).
+Qualifying Categories:
+Extreme scalping (a high frequency of short-duration trades relative to the entire trading history).
+An all-or-nothing style approach.
+Excessive max lot / max margin usage.
+Using a swing trading account primarily for scalping or frequent intraday strategies, without any swing trading activity.
+Gambling through high-impact news (both during the evaluation and as a soft breach on qualified accounts).
+Account rolling * (full risk on evaluation or qualified accounts to either pass or fail, and/or a large quantity of accounts passing and failing within a short timeframe. Previous failed accounts are taken into consideration.)
+*Account rolling: This may also lead to a 30-day pause of services, to help prevent clients from consistently mistreating our evaluation and qualified accounts by not taking a serious approach to risk management and the longevity of the account.
+Can an account be removed from the Focused Trader Group?
+Yes. This is not an automatic process, but a discretionary review conducted by our Risk team. The procedure depends on when the account was purchased.
+Accounts purchased on or before 21 July 2026
+To be eligible, the account must have achieved two consecutive successful performance fee payouts*, be at its original starting balance**, and have no open positions at the time of the request. Once eligible, the account can be reviewed to return to normal leverage and, where applicable, to have both payout options restored. Each review applies only to the specific account submitted; if you manage multiple accounts, a separate request must be submitted for each one.
+Accounts purchased after 21 July 2026
+Following the introduction of the Max Risk Rule , the account must have achieved one successful performance fee payout* to be eligible for review. The account must also be at its original starting balance** and have no open positions at the time of the request. If approved, your entire profile will be removed from the Focused Trader Group, not only the individual account.
+Traders operating under the Focused Trader On-Demand classification are restricted to purchasing On-Demand account types only.
+To become eligible for removal from the Focused Trader On-Demand classification, the trader must accumulate a minimum of 30 calendar days of trading data on a Qualified Analyst account operating under the On-Demand payout structure.
+Performance fee payouts achieved on Bi-Weekly account types cannot be used towards this review or the 30-day trading-data requirement. Eligibility for removal from the Focused Trader On-Demand classification must be established specifically through trading data accumulated on an account operating under the On-Demand payout structure.
+To request a review, contact [email protected] . Performance fees that are separated by a denied payout due to a rule violation will not be considered consecutive and therefore will not qualify towards eligibility for removal from the group. Please allow up to 48 hours from the time of your request for a response.
+*For the On-Demand payout type, a minimum of 30 calendar days of trading data is required. If the required performance fee payout is achieved in less than 30 days, the review still cannot be conducted.
+**Alpha One accounts are not required to follow the starting-balance rule, due to their trailing maximum drawdown.
+Can an account be scaled or merged?
+No. Accounts under the Focused Trader Group need to be moved back to normal leverage before they can participate in our scaling plan or be merged.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+[email protected]
+Discord
+Website
+Dashboard
+We run on Intercom

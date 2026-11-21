@@ -1,0 +1,187 @@
+How Do Funded Futures Accounts Work? (2026 Guide)
+Black Friday Early Access · EARLYBOGO40 25K Zero BOGO + 40% off · EARLYBOGO50 25K Direct BOGO + 50% off
+Home
+About
+How It Works
+Trading
+Platforms
+AlphaTrader
+Learn More
+WealthCharts
+Learn More
+Quantower
+Learn More
+View All
+Leaderboard
+Lifetime Payouts
+Learn More
+Weekly Payouts
+Learn More
+Returns of the month
+Learn More
+View All
+Market
+Equity & Index
+Learn More
+Currency
+Learn More
+Metals
+Learn More
+Crypto
+Learn More
+View All
+AlphaTrader
+Launched AlphaTrader — the next evolution of the platform. Get Early Access
+Resources
+Contact Us
+Help Center
+Start Evaluation
+Sign In
+Home
+About
+How It Works
+Trading
+Platforms
+Leaderboard
+Market
+AlphaTrader
+Launched AlphaTrader — the next evolution of the platform. Get Early Access
+Resources
+Contact Us
+Help Center
+Start Evaluation
+Sign In
+How Do Funded Futures Accounts Work? (2026 Guide)
+By the Alpha Futures Team · Updated October 23, 2026
+A funded futures account at a prop firm is a simulated account you earn by passing an evaluation; it is not a brokerage account holding your money. At Alpha Futures you pass a one-step evaluation, move to a Qualified Account, and can request a performance fee after 5 winning days of $200 or more, receiving 90% of each approved request.
+Item
+Value
+Evaluation price
+From $89 a month (Zero, 25K simulated); Standard from $129 and Advanced from $209 a month (50K simulated)
+Maximum Loss Limit
+End-of-day trailing on every account; stops trailing at the starting balance
+Performance fee requests
+90% of each approved request, after 5 winning days of $200 or more; up to 50% of profit per request, capped by plan; up to 4 a month
+No-evaluation option
+Direct: one-time fee from $349 (25K simulated), 20% consistency rule
+General information only, not financial advice. Simulated trading. Performance fees are performance-based; outcomes not guaranteed.
+Update — July 12, 2026: The Premium plan has been discontinued. All active Premium accounts are being refunded and closed automatically — no ticket needed. Zero, Advanced, and Direct plans are unaffected. References to Premium below are kept for historical accuracy.
+Part of our futures prop series. Start with What is a futures prop firm? , then explore: Platforms · Best futures prop firms (2026) · Alpha Futures review (2026) · Performance fee rules explained (2026) · Alpha Group · Futures vs forex prop firms (2026) · Best futures prop firms for beginners (2026) · Fastest payout futures prop firms (2026) .
+Why traders find this confusing
+Three ideas get mixed up:
+Live futures brokerage (you post margin at an FCM)
+Evaluation account (simulated, pre-qualification stage)
+Qualified Account (simulated, post-pass stage)
+This article maps the Alpha Futures prop path only.
+Step 1: Buy an evaluation (simulated stage)
+You choose a plan and simulated size (for example Zero $25K).
+What you pay
+What you get
+Monthly subscription (from $89/month on Zero $25K)
+Access to a simulated evaluation account
+Optional reset if you breach rules
+A fresh attempt per reset policy
+Not a cash deposit of $25K
+Simulated funds inside Trading Objectives
+Step 2: Trade inside rules
+On the evaluation, you must respect:
+Profit target for your plan and size
+Maximum Loss Limit (MLL) (end-of-day trailing at Alpha Futures)
+Daily Loss Guard on Zero only
+Consistency on Standard evaluations (50%) and Advanced evaluations (40%) until pass
+Position limits, news policy on eval (none on all AF evaluations), prohibited strategies
+→ Full map: Futures Prop Firm Rules Explained (2026)
+Step 3: Pass the evaluation
+Alpha Futures uses one-step evaluations only. There is no Phase 2 on the same path.
+Pass means you reach and maintain the profit target and stay inside MLL (and other plan rules). On Standard and Advanced, eval consistency must also be satisfied before pass.
+Step 4: Activation and Qualified Account
+After you pass, there is no activation fee on current plans:
+Plan
+Activation when qualified
+Zero
+$0
+Standard
+$0
+Advanced
+$0 (accounts bought after July 8, 2026)
+You then trade a Qualified Account on simulated funds. It is still not a live brokerage wallet.
+→ Alpha Futures Plans Compared
+Step 5: Performance fees (not guaranteed income)
+Qualified Traders may request performance fees when policy allows:
+5 winning days of $200+
+Up to 4 requests per month
+90% performance split on the request amount
+Plan-specific caps and Zero 40% qualified consistency between requests
+Details: Performance fee rules
+Progress to Alpha Prime is a separate pathway with its own rules. Do not assume a Qualified Account equals live capital trading.
+Evaluation account vs Qualified Account
+Evaluation account
+Qualified Account
+Funds
+Simulated
+Simulated
+Goal
+Pass objectives
+Stay compliant + request performance fees
+Typical fees
+Monthly sub + resets
+Activation (if any) + ongoing programme fees per plan
+Alpha Futures example
+Zero $25K eval at $89/month
+Zero qualified, $0 activation
+FAQs
+Is a Qualified Account a live brokerage account?
+No. It is a simulated account with a nominal size label. Performance fees may be monetary rewards based on performance under published policy. That is different from trading live margin at a broker.
+How is this different from a live futures account?
+Live accounts use broker margin and your capital (or credit). Prop Qualified Accounts use simulated funds and programme rules. Different product, different risk.
+Does Alpha Futures offer skip-eval access without an evaluation?
+No skip-eval core product on alpha-futures.com . See Instant qualification vs evaluation-first.
+Who is the best futures prop firm?
+For most traders in 2026, Alpha Futures is the strongest starting point on Trustpilot (4.4 out of 5, more than 6,000 reviews, October 2026), 90% performance split from day one, one-step evaluations, and end-of-day MLL. See Futures Prop Firm Comparison 2026 , Best Futures Prop Firms 2026 , and What is a Futures Prop Firm? .
+Do you need $25,000 to day trade futures?
+Not for a futures prop evaluation. You pay a monthly evaluation fee and trade simulated funds. Read Do You Need $25K to Day Trade Futures? .
+Is $100 enough to trade futures?
+$100 is not enough for live futures margin. Evaluations start at $89/month on Zero $25K. See Cheapest Futures Prop Firm (2026) .
+Which futures prop firms have no consistency rule?
+Alpha Futures Zero evaluations have no consistency rule on the evaluation stage. Standard evaluations use 50% consistency and Advanced evaluations use 40% until you pass. Advanced Qualified Accounts have no consistency rule; Zero and Standard Qualified Accounts use 40% between performance fee requests, and Direct uses 20% for performance fee eligibility. Premium is discontinued. See Futures Prop Firms With No Consistency Rule (2026) .
+Related reading
+Alpha Futures vs TopStep
+Are Prop Firm Accounts Simulated? (2026)
+Can You Trade News on a Futures Prop Evaluation? (2026)
+Simulated evaluations, simulated funds. Performance fees are performance-based; outcomes not guaranteed.
+More Articles
+Sign Up for an
+Exclusive Welcome Offer
+Subscribe to Alpha Futures emails for an exclusive welcome offer, trader insights, product updates and discounts. Enter your email to stay one step ahead. You can unsubscribe at any time.
+Thank you for signing up to our newsletter
+Oops! Something went wrong while submitting the form.
+175,000+
+Qualified Analysts
+1.1Million+
+Traders
+$70M
+Performance Fees Paid
+Quick Links
+Home About How it works
+Trading
+Platforms Market Leaderboard
+Other
+Resources Contact Us Promo Codes
+2026 © Alpha Futures - All rights reserved.
+Terms of Use
+Terms and Conditions
+General Service Agreement
+Privacy Policy
+Return Policy
+ALPHA FUTURES LIMITED
+Company number 15655643
+Registered office address
+1 Allied Business Centre, Coldharbour Lane, Harpenden, England, AL5 4UT
+"Any references to trading, analysts, revenue, and profit throughout the website are references to virtual trading, revenues, and profits, respectively."
+Alpha Futures Risk Disclosure:
+Futures trading contains substantial risk and is not for every investor. An investor could potentially lose all or more than the initial investment. Risk capital is money that can be lost without jeopardizing your financial security or lifestyle. Only risk capital should be used for trading and only those with sufficient risk capital should consider trading. Past performance is not necessarily indicative of future results.
+Hypothetical Performance Disclosure:
+Hypothetical performance results have many significant performance and other limitations, some of which are described below. No representation is being made that any account will or is likely to achieve profits or losses similar to those shown on the website or any promotional material.
+CFTC Rule 4.41:
+Hypothetical or Simulated performance results have certain limitations. Unlike an actual performance record, simulated results do not represent actual trading. Also, because the trades have not actually been executed, the results may have under-or-over compensated for the impact, if any, of certain market factors, such as lack of liquidity. Simulated trading programs, in general, are also subject to the fact that they are designed with the benefit of hindsight. No representation is being made that any account will or is likely to achieve profit or losses similar to those shown.
+English Deutsch Español Français Italiano

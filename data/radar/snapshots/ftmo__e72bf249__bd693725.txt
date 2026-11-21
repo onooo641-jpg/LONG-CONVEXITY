@@ -1,0 +1,352 @@
+Privacy Policy | FTMO.com
+Mới
+FTMO Instant Account
+{
+document.body.classList.toggle('no-scroll', value);
+});
+// Set scroll to true when we are scrolled 5.2% of viewport height on mobile or 6% on desktop.
+// Scroll variable is used to change navbar background from transparent to solid when scrolling.
+const checkScroll = () => {
+const isMobile = window.innerWidth threshold;
+};
+checkScroll();
+window.addEventListener('scroll', checkScroll);
+}
+}"
+@keydown.escape.prevent.stop="
+if (menuOpen || activeItem) {
+activeItem = null;
+menuOpen = false;
+}
+"
+>
+{ document.getElementById('first-mega-item-cfd')?.focus() })"
+@blur="hoveredItem = null"
+:class="{ 'bg-background-hover':
+hoveredItem === 'cfd' ||
+activeItem === 'cfd',
+'text-content-primary':
+hoveredItem === 'cfd' ||
+activeItem === 'cfd' ||
+hoveredItem === null && !menuOpen,
+'text-gray-400':
+(hoveredItem !== null && hoveredItem !== 'cfd' && (activeItem === 'cfd' ? false : true)) ||
+(menuOpen && hoveredItem === null && (activeItem === 'cfd' ? false : true))
+}"
+class="flex items-center gap-1.5 py-3 px-2 xl:px-3 transition-colors duration-200 rounded-lg focus:outline-none">
+CFD
+{ document.getElementById('first-mega-item-futures')?.focus() })"
+@blur="hoveredItem = null"
+:class="{ 'bg-background-hover':
+hoveredItem === 'futures' ||
+activeItem === 'futures',
+'text-content-primary':
+hoveredItem === 'futures' ||
+activeItem === 'futures' ||
+hoveredItem === null && !menuOpen,
+'text-gray-400':
+(hoveredItem !== null && hoveredItem !== 'futures' && (activeItem === 'futures' ? false : true)) ||
+(menuOpen && hoveredItem === null && (activeItem === 'futures' ? false : true))
+}"
+class="flex items-center gap-1.5 py-3 px-2 xl:px-3 transition-colors duration-200 rounded-lg focus:outline-none">
+New
+Futures
+{ document.getElementById('first-mega-item-giao-dich')?.focus() })"
+@blur="hoveredItem = null"
+:class="{ 'bg-background-hover':
+hoveredItem === 'giao-dich' ||
+activeItem === 'giao-dich',
+'text-content-primary':
+hoveredItem === 'giao-dich' ||
+activeItem === 'giao-dich' ||
+hoveredItem === null && !menuOpen,
+'text-gray-400':
+(hoveredItem !== null && hoveredItem !== 'giao-dich' && (activeItem === 'giao-dich' ? false : true)) ||
+(menuOpen && hoveredItem === null && (activeItem === 'giao-dich' ? false : true))
+}"
+class="flex items-center gap-1.5 py-3 px-2 xl:px-3 transition-colors duration-200 rounded-lg focus:outline-none">
+Giao dịch
+{ document.getElementById('first-mega-item-ve-chung-toi')?.focus() })"
+@blur="hoveredItem = null"
+:class="{ 'bg-background-hover':
+hoveredItem === 've-chung-toi' ||
+activeItem === 've-chung-toi',
+'text-content-primary':
+hoveredItem === 've-chung-toi' ||
+activeItem === 've-chung-toi' ||
+hoveredItem === null && !menuOpen,
+'text-gray-400':
+(hoveredItem !== null && hoveredItem !== 've-chung-toi' && (activeItem === 've-chung-toi' ? false : true)) ||
+(menuOpen && hoveredItem === null && (activeItem === 've-chung-toi' ? false : true))
+}"
+class="flex items-center gap-1.5 py-3 px-2 xl:px-3 transition-colors duration-200 rounded-lg focus:outline-none">
+Về chúng tôi
+= 1024) && activeItem === 'cfd'"
+@mouseleave="activeItem = null; menuOpen = false;"
+@keydown.escape.window="
+if (activeItem || menuOpen) {
+activeItem = null;
+menuOpen = false;
+document.getElementById('mega-menu-button-cfd')?.focus();
+}
+"
+x-cloak x-transition:enter="transition ease-out duration-200"
+x-transition:enter-start="opacity-0 transform translate-y-10"
+x-transition:enter-end="opacity-100 transform translate-y-0"
+x-transition:leave="transition ease-in duration-200"
+x-transition:leave-start="opacity-0 transform translate-y-0"
+x-transition:leave-end="opacity-0 transform translate-y-10"
+>
+Bắt đầu
+Tổng quan về CFD
+Hành trình đến với FTMO của bạn
+Phí
+Chọn Thử thách FTMO của bạn
+Quy trình hoạt động
+Trở thành Nhà giao dịch FTMO
+Bản dùng thử miễn phí
+Luyện tập chiến lược không giới hạn
+Mục tiêu giao dịch
+Các quy tắc chính cho từng giai đoạn
+Tăng trưởng
+Tâm lý giao dịch
+Vì một tư duy vững vàng hơn
+Chương trình Premium
+Dành cho những người xuất sắc
+Kế hoạch nâng cấp vốn
+Tăng trưởng lên đến $2 triệu
+Bắt đầu Thử thách FTMO
+Bắt đầu ngay
+= 1024) && activeItem === 'futures'"
+@mouseleave="activeItem = null; menuOpen = false;"
+@keydown.escape.window="
+if (activeItem || menuOpen) {
+activeItem = null;
+menuOpen = false;
+document.getElementById('mega-menu-button-futures')?.focus();
+}
+"
+x-cloak x-transition:enter="transition ease-out duration-200"
+x-transition:enter-start="opacity-0 transform translate-y-10"
+x-transition:enter-end="opacity-100 transform translate-y-0"
+x-transition:leave="transition ease-in duration-200"
+x-transition:leave-start="opacity-0 transform translate-y-0"
+x-transition:leave-end="opacity-0 transform translate-y-10"
+>
+English only
+Get Started
+Futures Overview
+Enter FTMO Futures
+Pricing
+Fees and account options
+How Futures Work
+Your path to FTMO Futures
+Trading Objectives
+Evaluation rules explained
+Start Your Evaluation
+Start now
+= 1024) && activeItem === 'giao-dich'"
+@mouseleave="activeItem = null; menuOpen = false;"
+@keydown.escape.window="
+if (activeItem || menuOpen) {
+activeItem = null;
+menuOpen = false;
+document.getElementById('mega-menu-button-giao-dich')?.focus();
+}
+"
+x-cloak x-transition:enter="transition ease-out duration-200"
+x-transition:enter-start="opacity-0 transform translate-y-10"
+x-transition:enter-end="opacity-100 transform translate-y-0"
+x-transition:leave="transition ease-in duration-200"
+x-transition:leave-start="opacity-0 transform translate-y-0"
+x-transition:leave-end="opacity-0 transform translate-y-10"
+>
+Những điều cần thiết trong giao dịch
+Lịch kinh tế
+Các sự kiện quan trọng theo thời gian thực
+Các cập nhật
+Những thay đổi và thông tin mới nhất
+Các mã giao dịch
+Danh sách mã giao dịch
+Các nền tảng giao dịch
+Chọn nền tảng hợp nhất với bạn
+Công cụ & Dịch vụ
+Tổng quan công cụ
+Nâng cao hiệu suất giao dịch của bạn
+Leaderboard
+Bảng xếp hạng trực tiếp của các nhà giao dịch FTMO hàng đầu
+App Suite
+Khám phá App Suite bởi FX Blue
+Kiến thức
+FAQ
+Giải đáp các câu hỏi thường gặp
+Blog
+Tin tức, mẹo và các câu chuyện giao dịch
+Học viện
+Đào tạo giao dịch miễn phí
+= 1024) && activeItem === 've-chung-toi'"
+@mouseleave="activeItem = null; menuOpen = false;"
+@keydown.escape.window="
+if (activeItem || menuOpen) {
+activeItem = null;
+menuOpen = false;
+document.getElementById('mega-menu-button-ve-chung-toi')?.focus();
+}
+"
+x-cloak x-transition:enter="transition ease-out duration-200"
+x-transition:enter-start="opacity-0 transform translate-y-10"
+x-transition:enter-end="opacity-100 transform translate-y-0"
+x-transition:leave="transition ease-in duration-200"
+x-transition:leave-start="opacity-0 transform translate-y-0"
+x-transition:leave-end="opacity-0 transform translate-y-10"
+>
+Công ty
+Về chúng tôi
+Tìm hiểu thêm về công ty chúng tôi
+FTMO Group
+Tìm hiểu thêm về Tập đoàn FTMO
+Shop
+Mua sắm các phụ kiện giao dịch
+Kết nối
+Liên hệ với chúng tôi
+Hỗ trợ 24/7
+Dành cho truyền thông
+Dữ liệu thương hiệu và truyền thông
+Tuyển dụng
+Tham gia đội ngũ chuyên gia của FTMO
+VI
+Tiếng Việt
+Čeština
+English
+Español
+Italiano
+Deutsch
+Português
+Français
+Đăng nhập
+Thử thách FTMO
+Thử thách FTMO
+CFD
+Bắt đầu
+Tổng quan về CFD
+Phí
+Quy trình hoạt động
+Bản dùng thử miễn phí
+Mục tiêu giao dịch
+Tăng trưởng
+Tâm lý giao dịch
+Chương trình Premium
+Kế hoạch nâng cấp vốn
+Futures
+New
+Get Started
+Futures Overview
+Pricing
+How Futures Work
+Trading Objectives
+Giao dịch
+Những điều cần thiết trong giao dịch
+Lịch kinh tế
+Các cập nhật
+Các mã giao dịch
+Các nền tảng giao dịch
+Công cụ & Dịch vụ
+Tổng quan công cụ
+Leaderboard
+App Suite
+Kiến thức
+FAQ
+Blog
+Học viện
+Về chúng tôi
+Công ty
+Về chúng tôi
+FTMO Group
+Shop
+Kết nối
+Liên hệ với chúng tôi
+Dành cho truyền thông
+Tuyển dụng
+Search
+VI
+Tiếng Việt
+Čeština
+English
+Español
+Italiano
+Deutsch
+Português
+Français
+Thử thách FTMO
+Đăng nhập
+CHÍNH SÁCH BẢO MẬT CỦA FTMO
+CHÍNH SÁCH BẢO MẬT CỦA FTMO
+CHÍNH SÁCH BẢO MẬT CỦA FTMO
+FAQ
+Quy trình hoạt động
+Chương trình liên kết
+Mục tiêu giao dịch
+Đồ lưu niệm FTMO
+Support
+Trò chuyện với chúng tôi
+Bắt đầu trò chuyện
+[email protected]
++420 910 920 310
+CFD
+Tổng quan về CFD
+Phí
+Quy trình hoạt động của CFD
+Bản dùng thử miễn phí FTMO
+Các mục tiêu giao dịch
+Thử thách FTMO 1-bước
+Thử thách FTMO 2-bước
+FTMO Instant Account
+Bảng so sánh
+Các hoạt động giao dịch bị cấm
+Phát triển
+Chương trình Premium
+Gia tăng phần thưởng và Kế hoạch nâng cấp vốn
+Futures
+EN Only
+Futures Overview
+Pricing
+How Futures Works
+Trading Objectives
+Comparison Table
+Forbidden Trading Practices
+Giao dịch
+Lịch kinh tế
+Các cập nhật
+Các mã giao dịch
+Các nền tảng giao dịch
+Công cụ & Dịch vụ
+Tổng quan công cụ
+Trading Psychology
+Bảng xếp hạng
+App Suite
+Tài nguyên
+FAQ
+Blog
+Học viện
+Thông tin
+Về chúng tôi
+Careers (EN)
+Liên hệ
+Dành cho truyền thông
+Press Releases (EN)
+Chương trình liên kết
+Nhận các thông tin đặc biệt từ FTMO
+Góc nhìn giao dịch từ chuyên gia
+Cập nhật mới nhất
+Ưu đãi đặc biệt
+Đăng ký
+Đăng ký đã được thực hiện thành công.
+Tất cả thông tin liên quan đến giao dịch trên các thị trường tài chính được cung cấp trên trang web này chỉ nhằm mục đích nghiên cứu và không mang tính chất như một khuyến nghị đầu tư, kinh doanh cụ thể. Nó cũng không đóng vai trò như một phân tích cơ hội đầu tư hay một khuyến nghị chung có liên quan đến giao dịch của các công cụ đầu tư. FTMO chỉ cung cấp cho các nhà giao dịch những dịch vụ giao dịch được mô phỏng và công cụ mang tính giáo dục. Các thông tin trên trang web này không dành cho các cư dân ở bất kỳ quốc gia hoặc khu vực tài phán nào, nơi mà việc chia sẻ hoặc sử dụng chúng sẽ trái với luật pháp hoặc quy định của địa phương. Các công ty của FTMO không hoạt động như một nhà môi giới và không chấp nhận bất cứ khoản tiền gửi nào của các khách hàng. Giải pháp kỹ thuật cho các nền tảng giao dịch của FTMO và nguồn dữ liệu được cung cấp bởi các tổ chức cung cấp thanh khoản.
+Copyright © 2026 FTMO s.r.o. Bảo lưu mọi quyền.
+Cài đặt Cookie
+Cookie
+Thông tin về công ty
+Các điều khoản & điều kiện
+Chính sách quyền riêng tư
+Made with for trading
+Xin lưu ý rằng, tất cả các tài khoản chúng tôi cung cấp cho các khách hàng đều là tài khoản demo với số tiền vốn ảo và mọi giao dịch được thực hiện chỉ trong môi trường mô phỏng. Để biết thêm thông tin, xin vui lòng truy cập phần các Câu hỏi thường gặp ( FAQs ) của chúng tôi. Tôi hiểu

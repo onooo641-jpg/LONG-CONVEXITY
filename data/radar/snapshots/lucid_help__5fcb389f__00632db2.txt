@@ -1,0 +1,50 @@
+LucidDaily Daily Loss Limit | Lucid Trading Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Lucid Home
+Lucid Home
+Search for articles...
+All Collections
+LucidDaily
+LucidDaily Daily Loss Limit
+LucidDaily Daily Loss Limit
+A
+Written by AJ
+August 19, 2026
+Table of contents
+Customization
+Depending on what option you choose at checkout, you may or may not have a Daily Loss Limit for your LucidDaily accounts.
+If you chose DLL ON then you will have a fixed DLL on both your LucidDaily evaluation and funded accounts
+If you chose DLL OFF then you will not have a DLL on either your LucidDaily evaluation or funded accounts
+So, depending on your option you either have a DLL on both phases, or none in either phase.
+Daily Loss Limit
+The Daily Loss Limit (DLL) is the maximum amount a trader can lose in a single day before trading is restricted until the next session. All DLLs at Lucid Trading are considered soft breaches, meaning you do not lose your account for hitting DLL as long as the Max Loss Limit (MLL) has not been reached.
+Please note: The DLL remains fixed throughout the trading session and does not trail upward with the Max Loss Limit (MLL). If the MLL trails above the DLL during the session, the MLL becomes the more restrictive threshold. Reaching the MLL at that point will result in a hard breach.
+LucidDaily Evaluation Account DLL
+LucidDaily Evaluation accounts use a Fixed DLL that does not change over time.
+Account Size
+Fixed DLL Amount
+$25,000
+$600
+$50,000
+$1,200
+$100,000
+$1,800
+$150,000
+$2,700
+If you reach the DLL listed for your account size, you will be restricted from placing additional trades until the next trading session, provided your account has not been liquidated.
+LucidDaily Funded Account DLL
+LucidDaily Funded accounts use the same Fixed DLL values used in the evaluation.
+Account Size
+Fixed DLL Amount
+$25,000
+$600
+$50,000
+$1,200
+$100,000
+$1,800
+$150,000
+$2,700
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Lucid Trading Help Center

@@ -1,0 +1,92 @@
+LucidBlack Payout Objectives | Lucid Trading Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Lucid Home
+Lucid Home
+Search for articles...
+All Collections
+LucidBlack (Legacy)
+LucidBlack Payout Objectives
+LucidBlack Payout Objectives
+LucidBlack (legacy) payout objectives: the profit milestones required before withdrawals on LucidBlack funded accounts, listed by account size.
+A
+Written by AJ
+August 26, 2026
+Table of contents
+General Requirements
+To be eligible for a payout from a LucidBlack account:
+You must not violate any Trading Rules, Terms & Conditions, or the LucidBlack Account Agreement.
+Payout requests are final once submitted, they cannot be edited or canceled.
+Profit Split Structure
+All LucidBlack funded account payouts are split 90% to the trader and 10% to Lucid Trading.
+Payout Eligibility Criteria
+There are two requirements that must be met in LucidBlack to qualify for a payout, and there is a third optional requirement to earn a Bonus Payout.
+​
+1. Consistency Percentage
+Your largest single-day profit must be no more than 40% of your total profit during the payout cycle.
+The 40% Consistency Percentage resets after each payout.
+This ensures that profits are earned with consistency, not via one unusually large trading day.
+See the Rules section for full details on consistency calculations.
+2. Payout Profit Goal
+To be eligible for a payout, you must reach a minimum Profit Goal during each payout cycle. This profit goal resets to $0 after each approved payout.
+Account Size
+Profit Goal
+$25,000
+$1,500
+$50,000
+$3,000
+$100,000
+$4,500
+3. Bonus Payout Profit Goal (Optional)
+LucidBlack offers traders the opportunity to earn a Bonus Payout by hitting a higher profit target during a payout cycle.
+The Bonus Payout is available on Payouts 2-4
+Not available on Payout 1
+It allows traders to earn larger payouts by exceeding the standard Profit Goal
+It is completely optional, you can still receive a standard payout without qualifying for the bonus
+There is no additional fee for having the Bonus Payout feature enabled
+To be eligible for a Bonus Payout, you must reach the Bonus Profit Goal during each payout cycle. This profit goal resets to $0 after each approved payout.
+Account Size
+Bonus Profit Goal
+$25,000
+$2,500
+$50,000
+$5,000
+$100,000
+$7,000
+Standard Payout Minimums and Maximums
+Minimum payout request: $500
+Maximum payout amounts depend on account size:
+Account Size
+Standard Payout Maximum
+$25,000
+$750
+$50,000
+$1,500
+$100,000
+$2,000
+There is no buffer balance that must be maintained in LucidBlack funded accounts.
+Bonus Payout Maximums
+The Bonus Payout is earned after the full Bonus Profit Goal is reached
+When earned, the Bonus Payout is added to the standard payout
+Example: 50k LucidBlack account
+Trader meets standard Profit Goal: may request up to $1,500
+Trader meet Bonus Profit Goal: may request additional $1,500
+Trader may request up to $3,000 for that payout cycle
+Please see the table below:
+Account Size
+Bonus Payout Maximum
+$25,000
+$750
+$50,000
+$1,500
+$100,000
+$2,000
+Payout Timing and Processing
+There is no fixed payout window, you may request a payout any day after meeting all eligibility criteria.
+Once approved:
+Funds will be deducted from your account within a few minutes.
+Payouts will be disbursed to your payment method within 2 business days.
+Important: If you take a trade before your payout is processed that drops your balance below the required amount, your request may be denied.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Lucid Trading Help Center

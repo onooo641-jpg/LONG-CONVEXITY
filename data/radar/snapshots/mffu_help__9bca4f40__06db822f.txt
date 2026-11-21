@@ -1,0 +1,40 @@
+Volumetrica: Getting Started | My Funded Futures Help Center Skip to main content
+Go to website Discord YouTube English हिन्दी Español English
+Go to website Discord YouTube English हिन्दी Español English
+Search for articles...
+All Collections
+Trading Platforms
+Volumetrica: Getting Started
+Volumetrica: Getting Started
+August 24, 2026
+Table of contents
+Getting started into Volumetrica web platform is the most user-friendly experience. You need to click on the Login to Volumetrica button from your dashboard and you’ll be able to login to the web-platform.
+Once you click the link you’ll be prompted to login with your platform credentials, which will be sent to you via email by MyFundedFutures.
+Looking to Get Funded to Trade on Volumetrica?
+Login Screen:
+Once you click on the login screen you’ll be prompted to enter your credentials. Please enter your credentials with the password [case sensitive], and you’ll be able to login to the web-platform.
+Selecting the Feed:
+Once you’ve logged into the Volumetrica web-platform you’ll need to select the feed to make sure that you’re connected to dxFeed. Without selecting the feed you’ll be unable to trade in the platform.
+How to select the feed?
+Click → Web Platform on the left side menu.
+After clicking the connect to the data feed, you will be able to see the charts and the respective assets to trade.
+Once you click the data feed ie MyFundedFutures you will be confirmed with a green dot to make sure that you’re now online and ready to trade.
+How to select the asset to Trade?
+Step 1 : Click on the upper right corner near the timeframes and click on it.
+Step 2 : It will show a pop-up box to enter in your asset that is to be traded.
+Step 3: Enter in the assets first two letters of the nomenclature.
+Example: NQ for NASDAQ, CL for Brent Crude Oil.
+Step 4: Click on the continuous contract, and then when clicking on it your chart will be loaded.
+Selecting the timeframes to trade:
+Once the chart is loaded then move to the Top Left where you enter the symbol and the timeframe selection will pop up.
+Then select the time frame that you want to trade in. And finally click Apply to make sure the time frame is applied.
+If you have any questions regarding the connection status and entering the asset class, please contact our support team and we shall gladly assist you.
+Explore MyFundedFutures (MFFU) Coupon Codes here.
+Related Articles
+Tradovate: Login Instructions
+Introduction to Volumetrica
+Workspaces and Templates in Volumetrica
+Trading 101 in Volumetrica
+DEEPCHART: Login Instructions
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

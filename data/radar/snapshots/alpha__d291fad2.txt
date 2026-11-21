@@ -1,0 +1,94 @@
+Direct Account Overview | Alpha Futures Limited Help Center Skip to main content
+Search for articles...
+All Collections
+Trading Rules and Parameters
+Direct Account Overview
+Direct Account Overview
+Alpha Futures Direct Account Rules and Parameters
+B
+Written by Benjamin Chaffee
+July 9, 2026
+In an effort to implement trader feedback and diversify our offerings, Alpha Futures has launched the Alpha Direct Account. The Direct Account is available as of July 7th, 2026.
+All Direct Accounts are one time fee, no monthly subscription.
+​
+​Benefits of Direct Account:
+1.) No Evaluation, jump straight into a Qualified Account from day one
+2.) 90% profit split on every withdrawal
+3.) Pay yourself up to 4 times per month. Withdraw when you want as soon as your Profit Target and Consistency Rule are satisfied
+4.) One time fee, no subscription payments
+5.) No Scaling Plan on Direct Qualified Accounts
+​
+Users that select the Direct Account can skip the Evaluation stage and trade in a Qualified Account straight away. Full payout policy can be reviewed here , but in order to eligible for a withdrawal request, user must satisfy the Withdrawal Profit Target, and 20% Consistency Rule .
+​
+Withdrawal Profit Targets are the profit needed to earn in between withdrawal requests. After each withdrawal, your profit target resets and you must earn fresh profit from new trades to reach the next target. Leftover profit from the previous cycle does not carry over.
+​Direct Account Parameters
+Parameters
+Direct 25K
+Direct 50K
+Direct 100K
+Direct 150K
+Maximum Loss Limit
+$1,000
+$2,000
+$3,000
+$4,500
+Daily Loss Guard
+$500
+$1,000
+$2,000
+$3,000
+One Time Fee
+$349
+$519
+$689
+$859
+Max Position
+2 minis, 20 micros
+4 minis, 40 micros
+8 minis, 80 micros
+10 minis, 100 micros
+Scaling Rule
+No
+No
+No
+No
+Consistency Rule
+20%
+20%
+20%
+20%
+News Trading
+Restrictions on Major Events here .
+Restrictions on Major Events here .
+Restrictions on Major Events here .
+Restrictions on Major Events here .
+1st Withdrawal Profit Target
+$1,500
+$3,000
+$6,000
+$9,000
+2nd Withdrawal Profit Target
+$1,000
+$2,000
+$4,000
+$6,000
+Withdrawal Details
+Satisfy Withdrawal Profit Target and Consistency Rule.
+Satisfy Withdrawal Profit Target and Consistency Rule.
+Satisfy Withdrawal Profit Target and Consistency Rule.
+Satisfy Withdrawal Profit Target and Consistency Rule.
+Withdrawal Limit
+$500 minimum,
+$1,000 maximum
+$500 minimum,
+$2,000 maximum
+$500 minimum,
+$2,500 maximum
+$500 minimum,
+$3,000 maximum
+Profit Split
+90%
+90%
+90%
+90%
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃

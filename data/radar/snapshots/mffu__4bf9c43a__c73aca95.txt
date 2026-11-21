@@ -1,0 +1,116 @@
+Rapid EOD 50k – A Comprehensive Look | My Funded Futures Help Center Skip to main content
+Go to website Discord YouTube English हिन्दी Español English
+Go to website Discord YouTube English हिन्दी Español English
+Search for articles...
+All Collections
+Rapid Plans
+End of Day Drawdown Rapid Plans
+Rapid EOD 50k – A Comprehensive Look
+Rapid EOD 50k – A Comprehensive Look
+August 24, 2026
+Table of contents
+My Funded Futures has adopted a streamlined approach to evaluations. Traders can now follow a standardized evaluation process on their path to simulated funding and live account trading. The evaluation rules remain consistent, regardless of the account type you choose.
+Rapid EOD Plan Evaluation Stage Account Parameters
+Parameters
+Rapid EOD - $50,000
+Profit Target
+$3,000
+Maximum Loss Limit (EOD)
+$2,000
+Daily Loss Limit
+None
+Max Contract
+3 mini / 30 micro
+Consistency
+30% (Eval Only)
+Minimum Trading Days
+4 Days
+T1 News Trading
+Yes
+Inactivity Rule
+7 Days
+There are no activation fees on this plan.
+Rapid EOD Plan Sim Funded Stage Account Parameters
+Parameters
+Rapid EOD - $50,000
+Initial Balance
+$0
+Maximum Drawdown (MLL)
+$2,000
+Drawdown Type
+End-of-Day (EOD) Trailing
+Daily Loss Limit
+None
+Max Contract
+3 mini / 30 micro
+T1 News Trading
+No
+Max # of Funded Accounts
+Three (3)
+Inactivity Rule
+7 Days
+1. Sim Funded Account Parameters
+How the Max Loss works
+Your Max Loss trails upward each time your account closes at a new end-of-day high.
+It does not move intraday – only at the close of each trading session.
+The distance between your account and the Max Loss Limit is always $2,000 while it's trailing.
+It never moves down.
+​
+Max Loss Lock at $100
+Once your trailing Max Loss reaches $100 , it locks there .
+From that point on, it does not trail anymore .
+You must always keep at least $100 in the account.
+If your balance goes below $100 → the account is breached .
+​
+News trading
+No T1 news trading is not allowed on this Sim Funded account.
+​
+Contract limits
+You may trade up to 3 minis and/or 30 micros total.
+Exceeding a total of 3 minis or its equivalent in micros (30 micros) can result in a breach of the trading account.
+​
+2. Payouts on Sim Funded (Rapid EOD)
+Payout requirements
+Required Buffer: $2,100
+You must first build at least $2,100 in realized profits in the account before requesting your first payout.
+Payout Unlock Rule: Once the buffer clears, each payout after that unlocks once your net profit since your last payout reaches $500 .
+Consistency Requirement: None (you don't need to meet a consistency rule to get paid).
+​
+Timing & frequency
+Payout Frequency: Daily
+There is no cap on how much you can request per payout cycle.
+Amounts & split
+Minimum Payout Request: $500
+Profit Split:
+90% to the trader
+10% to MyFundedFutures
+In summary, the Rapid EOD Sim Funded stage requires:
+Respecting the end-of-day trailing Max Loss, which locks at $100, and
+Clearing the $2,100 buffer for your first payout, then reaching $500 in net profit since your last payout to unlock each payout after that, under the 90/10 split.
+3. Live Account Transition
+For details on transitioning to a Live account, the Reserve Program, and Live account parameters, see Understanding Rapid Live . Live transition on Rapid EOD 50k follows the same rules as standard Rapid 50k.
+Frequently Asked Question:
+Q. Are there any consistency rules in the Rapid EOD evaluation?
+A. Yes, there is a 30% consistency rule in the evaluation phase of the Rapid EOD Plan, and it can be passed in as little as 4 days.
+Q. Is there a Daily Loss Limit (DLL) on the Rapid EOD Plan?
+A. No, there is no daily loss limit in the evaluation or sim funded stages of the Rapid EOD Plan.
+Q. How is the drawdown different from the standard Rapid Plan?
+A. The standard Rapid Plan trails intraday at the sim-funded stage. Rapid EOD trails end-of-day instead – your Max Loss only moves based on where your account closes each session, not on intraday swings.
+Q. Are there any buffer zones in the Rapid EOD payout policy?
+A. Yes, you cannot request your first payout until you clear the $2,100 buffer. After that, each additional payout unlocks once you've made $500 in net profit since your last payout.
+Q. What's the minimum payout per request on the Rapid EOD Plan?
+A. The minimum payout amount on the Rapid EOD Plan is $500.
+Q. Are there any activation fees on the Rapid EOD Plan?
+A. Our Rapid EOD account does not have an activation fee.
+Q. How do I transition to a Live account on Rapid EOD?
+A. See Understanding Rapid Live for transition triggers, Live account parameters, and the Reserve Program. Rapid EOD 50k follows the same rules as standard Rapid 50k.
+Q. Can I trade on live and sim at the same time?
+A. No, once you have a live account, you cannot trade on the sim and live environment simultaneously.
+Related Articles
+Rapid Plan 50k - A Comprehensive Look
+Rapid Plan 25k - A Comprehensive Look
+Builder Plan 50k - A Comprehensive Guide
+Rapid EOD 25k - A Comprehensive Look
+Rapid EOD with DLL - A Detailed Look
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

@@ -1,0 +1,37 @@
+ATAS: Login Instructions | My Funded Futures Help Center Skip to main content
+Go to website Discord YouTube English हिन्दी Español English
+Go to website Discord YouTube English हिन्दी Español English
+Search for articles...
+All Collections
+Trading Platforms
+ATAS: Login Instructions
+ATAS: Login Instructions
+ATAS Download and Connection Guide
+August 24, 2026
+Table of contents
+ATAS Download
+Click on the Downloads button from your MFFU dashboard and select ATAS .
+Once you select ATAS, you will be directed to the ATAS download page. You must register with ATAS to obtain the platform license. Make sure to use accurate information, as ATAS will email you your password for platform login.
+On the download page, click Get ATAS for Windows and follow the installation instructions.
+Once the download is complete, install the ATAS software.
+Get Funded to Trade on ATAS
+ATAS Login and MFFU Connection
+After the installation is complete, launch ATAS.
+Enter your login credentials, which were provided by ATAS via e-mail during the registration process , and click Connect.
+Once logged in, you'll arrive at your ATAS dashboard.
+Click Connections from the ATAS dashboard.
+From the Connections window, click Add .
+In the " Data Provider " pop-up window, make sure to select dxFeed prop , then click Next .
+Next, you will need to add your MFFU connection. Enter your MFFU credentials, which can be found on your MFFU dashboard , and then click Finish .
+After adding your MyFundedFutures connection, return to the Connections window and click Connect .
+When you are successfully connected to the server, the state of your connection will be highlighted in green "Connected" status, along with your MFFU accounts displayed in the accounts window.
+Looking for MFFU Coupon Codes?
+If you have any questions regarding ATAS setup or encounter connection issues, please contact our support team on the live chat or at [email protected]
+Related Articles
+Tradovate: Login Instructions
+NinjaTrader: Login Instructions
+DEEPCHART: Login Instructions
+Quantower: Login Instructions
+Refund & Cancellation Policy - Transparent and Trader-First
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

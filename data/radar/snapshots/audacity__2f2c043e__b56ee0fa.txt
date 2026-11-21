@@ -1,0 +1,210 @@
+Verbotene Handelspraktiken und Handelsbeschränkungen | Audacity Capital
+Wir feiern 14 Jahre, 14% Rabatt Für alle Programme Wir feiern 14 Jahre, 14% Rabatt Für alle Programme
+Wir feiern 14 Jahre, 14% Rabatt Für alle Programme
+Wir feiern 14 Jahre, 14% Rabatt Für alle Programme
+Wir feiern 14 Jahre, 14% Rabatt Für alle Programme
+Wir feiern 14 Jahre, 14% Rabatt Für alle Programme
+Wir feiern 14 Jahre, 14% Rabatt Für alle Programme
+🎓 Treten Sie der Trader University bei
+Über
+Finanzierung
+Geschichten
+Wettkampf
+Affiliates
+Ressourcen
+DE English Türkçe Español Français Italiano Português Deutsch Filippino Русский العربية हिन्दी 日本語
+Einloggen
+Vollständiger Leitfaden zu verbotenen Handelspraktiken
+Bei Audacity Capital wird von Händlern erwartet, dass sie unabhängige, fundierte Handelsentscheidungen treffen und verantwortungsbewusst mit Risiken umgehen. Um ein faires und konsistentes Handelsumfeld zu fördern, sind die folgenden Praktiken verboten. In diesem Leitfaden wird jede Einschränkung erklärt, warum sie gilt und wie man gängige Beispiele erkennt.
+Wenn Sie sich nicht sicher sind, ob eine Handelsstrategie oder ein automatisiertes Tool zulässig ist, wenden Sie sich an unser Support-Team, bevor Sie es auf Ihrem Konto verwenden.
+Beschreibung
+Hochfrequenzhandel (HFT)
+Zecken-Scalping
+Absicherung oder Gruppenabsicherung über mehrere Konten
+Mittelwertbildung nach unten//Martingale-Strategien
+Einsatz von Expertenberatern (EAs) von Drittanbietern
+Durchschnittsberechnung der Dollarkosten (DCA)
+Kontoverwaltung durch Dritte
+Copy-Trading
+Netzhandel
+Ausnutzung von Sicherheitslücken im System
+Automatisierte Multi-Trade-Aktivität
+Missbrauch der Losgröße
+Weekend Gap Trading-Regel
+Single-Directional-Wetten
+Jump To
+Beschreibung
+Um ein faires, stabiles und transparentes Handelsumfeld aufrechtzuerhalten, sind die folgenden Handelsstrategien und Verhaltensweisen strengstens verboten:
+Hochfrequenzhandel (HFT)
+Was es ist Mithilfe von Expert Advisors (EAs), Bots oder Algorithmen können große Handelsvolumen innerhalb von Sekundenbruchteilen geöffnet und geschlossen werden, wobei winzige, kurzlebige Kursbewegungen oder Lücken in Datenfeeds ausgenutzt werden.
+Warum ist es nicht erlaubt HFT setzt eher auf Geschwindigkeit und Infrastruktur als auf Marktanalysen und kann zu unfairen Vorteilen, Preismanipulationen oder Instabilität führen. Diese Beschränkung gilt auch für Latenz-Arbitrage, d. h. die Ausnutzung von Verzögerungen zwischen der Ausführung von Handelsgeschäften und der Aktualisierung der Marktdaten.
+Wie es aussehen kann
+Eine große Anzahl von Trades wurde innerhalb von Sekundenbruchteilen eröffnet und geschlossen.
+Automatisierte Systeme, die auf Angebotsverzögerungen, kurzlebige Preisunterschiede oder Feed-Zeitpunkte statt auf Marktansichten abzielen.
+Beispiele
+Ein EA feuert mehr als 50 Trades pro Minute auf EUR/USD ab, wobei jeder Trade innerhalb eines Bruchteils einer Sekunde geschlossen wird, um Sub-Pip-Diskrepanzen zwischen dem Plattform-Feed und einem schnelleren externen Feed auszugleichen.
+Ein Bot identifiziert wiederkehrende Feed-Verzögerungen und gibt systematisch Trades ein, bevor die verzögerten Preisaktualisierungen erfolgen.
+Wichtige Klarstellung Ein isolierter Handel, der ungewöhnlich schnell geschlossen wird, begründet für sich genommen keine HFT-Strategie. Ein wiederholter geschwindigkeits- oder latenzbasierter Ansatz ist besorgniserregend.
+Zecken-Scalping
+Was es ist Eröffnung und Schließung von Trades innerhalb eines sehr kurzen Zeitfensters (2 Minuten oder weniger) mit dem Ziel, winzige Kursschwankungen zu erfassen, anstatt aus einer echten Richtungssicht zu handeln.
+Warum ist es nicht erlaubt Tick Scalping stützt sich eher auf Marktlärm als auf Analysen oder eine definierte Strategie. Es kann manuell oder mit automatisierten Tools durchgeführt werden.
+Wie es aussehen kann
+Wiederholte Ein- und Ausstiege in zwei Minuten oder weniger.
+Kleine und häufige Ziele, die auf geringfügige Kursschwankungen zurückzuführen sind.
+Beispiele
+10:00:00 — Kaufen Sie 1,00 Lot EUR/USD; 10:01:35 — schließen Sie, um einen Gewinn von 3 Pips zu erzielen. Die Wiederholung dieser kurzfristigen Trades auf der Grundlage minimaler Kursbewegungen stellt ein verbotenes Tick-Scalping dar.
+Ein Trader eröffnet wiederholt Trades mit einem oder zwei Pips und schließt jeweils nach ein paar Sekunden, ohne dass eine breitere Marktbegründung vorliegt.
+Wichtige Klarstellung Eine einzelne Position, die innerhalb von zwei Minuten geschlossen wird, weil ihr Stop-Loss oder Take-Profit unerwartet erreicht wurde, ist nicht unbedingt ein Beweis für eine Tick-Scalping-Strategie. Handelsmuster und -umstände sind relevant.
+Absicherung oder Gruppenabsicherung über mehrere Konten
+Was es ist Platzierung entgegengesetzter Kauf- und Verkaufspositionen auf demselben Instrument, innerhalb eines Kontos oder auf mehreren Konten, die dem Händler gehören oder mit anderen koordiniert werden, um das Marktrisiko auszugleichen oder ein risikofreies Ergebnis zu erzielen.
+Warum ist es nicht erlaubt Gegensätzliche Positionen können Verluste auf ein Konto verlagern und gleichzeitig Gewinne auf einem anderen Konto generieren, wodurch eher eine Arbitragevereinbarung als echtes Marktrisiko entsteht.
+Wie es aussehen kann
+Passende oder eng aufeinander abgestimmte Positionen in entgegengesetzter Richtung auf demselben Instrument.
+Koordinierter Kauf und Verkauf zwischen getrennten Konten oder Händlern.
+Beispiele
+Konto A kauft GBP/USD, während Konto B, das von demselben Händler oder einem koordinierten Partner betrieben wird, gleichzeitig eine gleiche GBP/USD-Position verkauft.
+Ein Händler eröffnet eine Verkaufsposition für dasselbe Instrument, um eine bestehende Kaufposition auszugleichen, anstatt das ursprüngliche Engagement zu schließen.
+Wichtige Klarstellung Unabhängige Positionen auf verschiedenen Märkten, die sich zufällig unterschiedlich entwickeln, sind für sich genommen kein Beweis für eine koordinierte Absicherung. Das verbotene Verhalten betrifft gegensätzliche Positionen, die bewusst zum Risikoausgleich vereinbart wurden.
+Mittelwertbildung nach unten//Martingale-Strategien
+Was es ist Erhöhung der Positionsgröße nach einem Verlust aufgrund derselben verlorenen Handelsidee, um frühere Verluste mit einem möglichen Gewinntrade auszugleichen.
+Warum ist es nicht erlaubt Diese Methode kann in Verlustserien zunehmend mehr Kapital erfordern und kann schnell die festen Drawdown-Limits eines Handelskontos überschreiten.
+Wie es aussehen kann
+Zunehmende Losgrößen nach aufeinanderfolgenden Verlusten oder negativen Preisbewegungen.
+Verdoppelung oder anderweitige Eskalation des Engagements zur Verteidigung derselben Verlusthandelsidee.
+Beispiele
+Ein Trader kauft 0,50 Lots in USD/JPY und fügt dann 1,00 Lot und 2,00 Lots hinzu, wenn sich der Handel gegen ihn bewegt, und versucht, alle Verluste durch eine Umkehrung auszugleichen.
+Nach einem verlorenen Goldhandel geht ein Händler wiederholt in dieselbe Richtung mit immer größeren Losgrößen zurück, nur um den vorherigen Verlust auszugleichen.
+Wichtige Klarstellung Das Verbot betrifft eine durch Verluste verursachte Erhöhung der Exposition. Wenn eine Strategie als „geplant“ bezeichnet wird, ist eine Erhöhung im Martingal-Stil nach einem Verlust nicht ausgeschlossen.
+Einsatz von Expertenberatern (EAs) von Drittanbietern
+Was es ist: Verwenden Sie einen Expert Advisor (EA), einen Handelsbot oder einen automatisierten Handelsalgorithmus, den Sie nicht persönlich entwickelt haben. Dazu gehören kommerziell gekaufte EAs, gemietete EAs, heruntergeladene Bots, gemeinsam genutzte Algorithmen oder automatisierte Handelssysteme, die von einer anderen Person oder einem anderen Unternehmen erstellt wurden.
+Warum es nicht erlaubt ist: Bei Audacity Capital dürfen Händler nur EAs verwenden, die sie persönlich entwickelt haben. Dies stellt sicher, dass Händler die volle Verantwortung und Kontrolle über ihre Handelsstrategien behalten und dass ihre Handelsaktivitäten ihre eigenen Handelsentscheidungen und -methoden widerspiegeln.
+Kommerziell verkaufte EAs, von Drittanbietern codierte EAs, signalbasierte Handelsbots oder jegliche automatisierte Handelssoftware, die aus externen Quellen bezogen wurde, sind nicht zulässig, unabhängig davon, ob die Software kostenlos oder kostenpflichtig ist.
+Beispiele für verbotene Aktivitäten:
+Du kaufst einen EA auf einem Online-Marktplatz oder einem Drittanbieter und verwendest ihn für dein Konto.
+Verwenden Sie einen EA, der von einer anderen Person entwickelt oder codiert wurde, auch wenn er an Ihre Handelspräferenzen angepasst wurde.
+Herunterladen und Ausführen kostenloser EAs aus Online-Foren, Websites oder Handelsgemeinschaften.
+Verwendung gemieteter, gemeinsam genutzter oder abonnementbasierter automatisierter Handelssysteme.
+Betrieb eines EA, das Trades auf der Grundlage von Signalen oder Strategien ausführt, die von einem externen Dienst oder Dritten bereitgestellt werden.
+Verwenden Sie einen EA, der von einem anderen Händler, Freund, Entwickler oder einer Handelsgruppe entwickelt wurde, unabhängig davon, ob Sie dafür bezahlt haben.
+Beispiel: Ein Händler kauft einen kommerziell erhältlichen Scalping-EA von einer Website eines Drittanbieters und installiert ihn auf seinem Konto mit Guthaben. Obwohl der Händler die Software persönlich bedient und ihre Einstellungen kontrolliert, wurde der EA nicht von ihm entwickelt. Daher verstößt seine Verwendung gegen diese Regel.
+Was ist erlaubt? Händler können ihre eigenen, persönlich entwickelten EAs verwenden, sofern die EA alle anderen Handelsregeln und verbotenen Handelspraktiken von Audacity Capital einhält. Die Tatsache, dass ein EA persönlich entwickelt wurde, befreit ihn nicht von Beschränkungen in Bezug auf verbotene Strategien oder Handelsverhalten.
+Durchschnittsberechnung der Dollarkosten (DCA)
+Was es ist Eine bestehende Verlustposition wird erhöht, wenn sich der Kurs gegenüber dem ursprünglichen Eintrag weiter bewegt, unabhängig davon, ob die hinzugefügten Positionen dieselben oder unterschiedliche Losgrößen verwenden, in der Hoffnung auf eine Umkehrung.
+Warum ist es nicht erlaubt Das zusätzliche Risiko, eine Position zu verlieren, erhöht das Verlustrisiko, wenn der Markt nicht umkehrt, und kann die Hoffnung auf einen definierten Ausstiegsplan ersetzen.
+Wie es aussehen kann
+Zusätzliche Positionen in derselben Richtung, während der ursprüngliche Handel offen bleibt und einen variablen Verlust aufweist.
+Mehrere Einträge, die das Risiko erhöhen, wenn sich der Preis gegenüber dem ursprünglichen Eintrag bewegt.
+Beispiele
+Kaufen Sie 1,00 Lot EUR/USD zu 1,1000; da die erste Position immer noch verliert, kaufen Sie ein weiteres 1,00 Lot bei 1,0980 und erneut bei 1,0960.
+Ein Händler hält eine Verlustposition beim Ölkauf und kauft jedes Mal, wenn der Ölpreis weiter fällt, einen weiteren Kauf, um den durchschnittlichen Einstiegspreis zu senken.
+Wichtige Klarstellung Die Eröffnung eines neuen, unabhängig bewerteten Handels, nachdem die ursprüngliche Verlustposition geschlossen wurde, unterscheidet sich von der Erhöhung eines bestehenden variablen Verlusts. Andere geltende Regeln gelten weiterhin.
+Kontoverwaltung durch Dritte
+Was es ist Ermöglichen Sie einer anderen Person, einem Team, einem kostenpflichtigen Dienst, einem Freund oder einem automatisierten Dienst, der auf die Entscheidungen einer anderen Person reagiert, das Konto im Namen des Inhabers zu handeln.
+Warum ist es nicht erlaubt Das Konto muss von seinem registrierten Inhaber nach der unabhängigen Entscheidungsfindung dieses Händlers gehandelt werden. Eine Zahlung an Dritte ist keine Voraussetzung für die Anwendung dieser Regel.
+Wie es aussehen kann
+Eine andere Person loggt sich in das Konto ein und führt Trades aus.
+Ein externer Managementdienst, der Handelsentscheidungen trifft und ausführt.
+Beispiele
+Der Kontoinhaber bezahlt einen professionellen Manager, der während der Arbeitszeit Geschäfte tätigt.
+Der Inhaber gewährt einem Freund Zugriff auf das Konto und ermöglicht es diesem Freund, Positionen ohne Bezahlung zu verwalten.
+Wichtige Klarstellung Die Diskussion allgemeiner Marktideen mit anderen Personen unterscheidet sich davon, die Handelsentscheidungen oder die Ausführung des Kontos an sie zu delegieren.
+Copy-Trading
+Was es ist Spiegeln oder duplizieren Sie die Positionen eines anderen Händlers auf einem Konto, entweder manuell oder über eine Copy-Trading-Software oder ein automatisiertes Tool.
+Warum ist es nicht erlaubt Gespiegelte Geschäfte belegen keine unabhängige Analyse und Entscheidungsfindung durch den Kontoinhaber.
+Wie es aussehen kann
+Abgleich der Ein- und Ausstiege, des Zeitpunkts und der Positionsgrößen eines anderen Traders.
+Verwendung von Kopierdiensten für Masterkonten oder Signalanbieter.
+Beispiele
+Ein Händler verbindet das Konto mit einer Copy-Trading-Plattform, die automatisch die Positionen eines Signalanbieters dupliziert.
+Ein Händler beobachtet wiederholt die Live-Einträge eines anderen Händlers und dupliziert sie manuell ohne unabhängige Analyse.
+Wichtige Klarstellung Aus öffentlichen Marktkommentaren zu lernen, unterscheidet sich davon, die Ausführung eines anderen Traders systematisch widerzuspiegeln. Der Kontoinhaber muss unabhängige Handelsentscheidungen treffen.
+Netzhandel
+Was es ist Platzieren einer voreingestellten Abfolge von Kauf- und Verkaufsaufträgen in festen Preisintervallen über und unter dem aktuellen Preis, wodurch unabhängig von der Richtungsanalyse ein Raster entsteht.
+Warum ist es nicht erlaubt Die mechanische, auf Intervallen beruhende Vereinbarung kann eher für Ergebnisse im Arbitrage-Stil als für eine echte gerichtete Marktbeteiligung verwendet werden.
+Wie es aussehen kann
+Mehrere Bestellungen in regelmäßigen, vorher festgelegten Preisintervallen.
+Bestellungen werden automatisch ausgelöst, wenn sich der Preis durch das Raster bewegt.
+Beispiele
+Ein Händler platziert alle 20 Pips unter dem aktuellen Goldpreis ausstehende Kaufaufträge und alle 20 Pips darüber Verkaufsaufträge.
+Ein EA platziert automatisch in jedem festen Intervall zusätzliche Bestellungen, wenn sich der Markt auf und ab bewegt.
+Wichtige Klarstellung Bestellungen, die unabhängig voneinander auf unterschiedlichen, analytisch identifizierten Ebenen aufgegeben werden, sind nicht unbedingt ein Raster. Eine voreingestellte, sich wiederholende Intervallstruktur ist der relevante Indikator.
+Ausnutzung von Sicherheitslücken im System
+Was es ist Nutzung technischer Fehler wie falsche Preise, veraltete Notierungen, Latenzlücken oder Datenfeedfehler, um Handelsergebnisse zu erzielen, unabhängig davon, ob sie bewusst erkannt oder nach ihrer Entdeckung wiederholt ausgenutzt werden.
+Warum ist es nicht erlaubt Gewinne, die eher auf technische Fehler als auf echte Marktbedingungen zurückzuführen sind, zeugen nicht von Handelsfähigkeiten und können die Integrität der Plattform gefährden.
+Wie es aussehen kann
+Wiederholter Handel mit bekannten Server- oder Kursfehlern.
+Absichtlicher Abschluss von Geschäften zu falsch bewerteten oder verspäteten Notierungen.
+Beispiele
+Ein Händler bemerkt, dass ein Serverproblem dazu führt, dass die Plattformquote dem Markt um mehrere Sekunden hinterherhinkt, und nutzt diese Verzögerung wiederholt aus.
+Ein Händler gibt wiederholt einen offensichtlich falschen Instrumentenpreis ein, bevor der Feed korrigiert wird.
+Wichtige Klarstellung Wenn ein vermuteter Plattformfehler entdeckt wird, hören Sie auf, ihn auszunutzen, und wenden Sie sich an den Support. Eine isolierte versehentliche Interaktion sollte im Kontext überprüft werden.
+Automatisierte Multi-Trade-Aktivität
+Was es ist Verwendung automatisierter Tools zur gleichzeitigen Eröffnung mehrerer Positionen über Instrumente oder Konten hinweg, ohne jeden Handel aktiv zu überwachen oder zu verwalten.
+Warum ist es nicht erlaubt Große Mengen unbeaufsichtigter Geschäfte spiegeln nicht die direkte, begründete Verwaltung einzelner Positionen durch den Händler in Echtzeit wider.
+Wie es aussehen kann
+Automatisierte Skripte, die zahlreiche Trades beim Empfang eines Signals platzieren.
+Gleichzeitige Bestellungen über Symbole oder Konten hinweg ohne individuelle Handelsüberprüfung.
+Beispiele
+Ein Webhook löst ein Skript aus, um 15 Trades für verschiedene Währungspaare gleichzeitig zu öffnen, ohne dass eine manuelle Überprüfung erforderlich ist.
+Ein unbeaufsichtigtes Tool erhält eine externe Warnung und öffnet sofort mehrere Positionen in mehreren Konten.
+Wichtige Klarstellung Der Einsatz der Automatisierung für einen einzelnen Handel stellt diesen Verstoß nicht automatisch fest; es geht um automatisierte, gleichzeitige Aktivitäten mehrerer Geschäfte ohne aktive Überwachung. Alle anderen EA- und Handelsbeschränkungen gelten weiterhin.
+Missbrauch der Losgröße
+Was es ist Eröffnung von Positionen mit Lotgrößen, die im Verhältnis zur Kontogröße unverhältnismäßig groß sind, insbesondere zu Marktöffnungs- oder -schließungszeiten oder bei wichtigen Nachrichten, was zu einem unrealistischen Risiko führt.
+Warum ist es nicht erlaubt Ein zu großes Engagement kann eher auf rücksichtsloses Eingehen von Risiken als auf disziplinierten Handel hindeuten und kann verwendet werden, um zu versuchen, Gewinnziele mit einem einzigen Trade zu erreichen.
+Wie es aussehen kann
+Positionen, deren Risiko in keinem Verhältnis zum Eigenkapital oder zu den geltenden Drawdown-Limits steht.
+Abrupt überdimensionierte Orders in volatilen oder illiquiden Marktperioden.
+Beispiele
+Ein Händler eröffnet bei Marktöffnung eine GBP/USD-Position mit 5,00 Lot auf einem Konto in Höhe von 10.000$, wodurch das Konto einem großen potenziellen Verlust ausgesetzt ist.
+Ein Trader platziert plötzlich unmittelbar vor einem großen Marktereignis eine Position, die erheblich größer ist als seine normale Größe.
+Wichtige Klarstellung In diesem Handbuch ist kein fester Schwellenwert für das Verhältnis von Losgröße zu Saldo angegeben. Das Risiko sollte im Kontext bewertet werden, einschließlich des Instrument-, Stop-Loss- und Kontorisikos.
+Weekend Gap Trading-Regel
+Was es ist Absichtliches Ausnutzen der Kursunterschiede zwischen dem Börsenschluss am Freitag und der Wiedereröffnung am Sonntag oder Montag, einschließlich des Abschlusses von Geschäften kurz vor Handelsschluss oder der Festlegung ausstehender Orders, um gezielt von erwarteten Preislücken zu profitieren.
+Warum ist es nicht erlaubt Preisunterschiede am Wochenende können dazu führen, dass Orders zum nächsten verfügbaren Marktpreis und nicht zum angeforderten Stop-Loss- oder Take-Profit-Niveau ausgeführt werden. Händler, die über das Wochenende Positionen halten, akzeptieren dieses Risiko und bleiben für daraus resultierende Verluste oder Drawdown-Verstöße verantwortlich.
+Wie es aussehen kann
+Eröffnung von Positionen am späten Freitag, speziell um die erwartete Eröffnungslücke zu schließen.
+Die Platzierung ausstehender Bestellungen dient in erster Linie dazu, von der Eröffnungslücke am nächsten Wochenende zu profitieren.
+Beispiele
+Ein Trader kauft EUR/USD kurz vor Handelsschluss am Freitag ausschließlich, weil er einen höheren Eröffnungskurs am Sonntag erwartet, und steigt dann unmittelbar nach der Lücke aus.
+Ein Trader legt kurz vor dem Wochenschluss ausstehende Orders fest, um bei Wiedereröffnung des Marktes einen Kurssprung abzufangen.
+Wichtige Klarstellung Eine Position über das Wochenende offen zu halten, wird nicht automatisch als verboten bezeichnet. Die Regel zielt auf die vorsätzliche Ausnutzung von Lücken ab. Nach einer Überprüfung können festgestellte Verstöße zur Entfernung der damit verbundenen Gewinne, zur Ablehnung von Auszahlungen oder zur Kündigung des Kontos führen.
+Single-Directional-Wetten
+Singledirektionale Wetten beziehen sich auf ein Handelsverhalten, bei dem sich ein Händler übermäßig auf eine Marktrichtung oder eine bestimmte Handelsidee verlässt, was zu einem konzentrierten Engagement oder einer Handelsleistung führt, die unverhältnismäßig stark von einer einzelnen Marktbewegung abhängt.
+Audacity Capital ist sich bewusst, dass Händler aufgrund ihrer individuellen Strategien möglicherweise eine Richtungsneigung haben. Handelsentscheidungen müssen jedoch strukturiert und diszipliniert bleiben und durch ein angemessenes Risikomanagement unterstützt werden.
+Warum wir dieses Verhalten überwachen
+Wenn Sie sich zu sehr auf eine Marktrichtung verlassen, kann dies zu einem konzentrierten Engagement führen und die Gesamtleistung eines Kontos von einer Bewegung auf dem Binnenmarkt abhängig machen.
+Unser Ziel ist es nicht, legitime Handelsstrategien oder richtungsweisende Marktüberzeugungen einzuschränken. Stattdessen wollen wir sicherstellen, dass Händler verantwortungsbewusst Risiken eingehen, strukturierte Handelsentscheidungen treffen und nachhaltige Risikomanagementpraktiken an den Tag legen.
+Risikomanagement und Kontomaßnahmen
+Während der Phase „Herausforderung“ und „Verifizierung“ erhalten Trader, die für Single-Directional-Wetten ausgewählt wurden, möglicherweise eine Warnung, die ihnen die Möglichkeit gibt, ihr Handelsverhalten zu überprüfen und zu verbessern.
+Wenn ein Trader beispielsweise nach Erhalt einer Warnung weiterhin mehrere Positionen in dieselbe Richtung aufbaut, kann bei Erreichen der Finanzierungsphase eine maximale Risikobegrenzung von 1% pro Trade gelten. Ein anhaltendes ähnliches Verhalten trotz der Warnung und Beschränkung kann zu weiteren Maßnahmen, einschließlich der Kündigung des Kontos, führen.
+Bei FTP-Konten können Händler, die für Single-Directional-Wetten identifiziert wurden, direkt der strengeren Regel für das Risiko pro Trade von 1% unterliegen.
+Händler können ihren Ansatz verbessern, indem sie ein kontrolliertes Marktrisiko aufrechterhalten, sicherstellen, dass die Positionen durch klare Handelsgrundlagen gestützt werden, und das kombinierte Risiko mehrerer Positionen verwalten, anstatt sich ausschließlich auf einzelne Geschäfte zu konzentrieren.
+Audacity Capital behält sich das Recht vor, die Handelsaktivitäten zu überprüfen und gemäß den geltenden Regeln und Allgemeinen Geschäftsbedingungen geeignete Maßnahmen zu ergreifen.
+Warum es diese Regeln gibt
+Das gemeinsame Prinzip ist, dass die Handelsleistung unabhängige Analysen, diszipliniertes Risikomanagement und echte Marktbeteiligung widerspiegeln sollte. Praktiken, die technische Schwächen ausnutzen, ausgleichende Ergebnisse erzielen, auf einer unkontrollierten Risikoeskalation beruhen oder Handelsentscheidungen an Dritte delegieren, untergraben diesen Grundsatz.
+Bevor Sie eine neue Strategie anwenden
+Prüfen Sie, wie die Strategie Trades generiert, wie sie mit dem Risiko umgeht, ob sie von einer anderen Person oder der Automatisierung durch Dritte abhängt und ob sie unter mehr als eine Beschränkung fallen könnte. Wenden Sie sich an den Audacity Capital Support, wenn ein Teil des Ansatzes unklar ist.
+Dies ist ein Entwurf für den Inhalt der Website, der auf den aktuellen FAQs basiert. Die geltenden Kontobedingungen bleiben relevant; die Beispiele dienen lediglich der Erläuterung und stellen keine unabhängigen Ausnahmen oder numerischen Beschränkungen dar.
+Unternehmen
+Nutzungsbedingungen Kontaktiere uns Affiliate-Programm Über uns AML-Richtlinie Verbotene Handelspraktiken Verhaltenskodex
+Gemeinschaft
+FAQ Erfolgsgeschichten Armaturenbrett Herunterladen Verantwortungsvoller Handel Karrieren Empfehlen Sie einen Freund
+Rechtlich
+Allgemeine Geschäftsbedingungen Datenschutzrichtlinie Betrugswarnung Whistleblower-Richtlinie Bearbeitung von Beschwerden Presse und Medien Richtlinie für gefälschte Bewertungen
+Plattformen
+Handelsplattformen DXTrade MT5
+Newsletter
+Abonnieren Sie unseren Newsletter, um über Funktionen und Veröffentlichungen auf dem Laufenden zu bleiben.
+Abonniere
+Mit dem Abonnieren stimmen Sie unseren Datenschutzbestimmungen zu
+und erklären sich damit einverstanden, Updates von unserem Unternehmen zu erhalten.
+© 2012—2026 Audacity Capital. Alle Rechte vorbehalten.
+Datenschutzrichtlinie Allgemeine Geschäftsbedingungen Cookies Settings
+Haftungsausschluss für Recht und Einhaltung von Vorschriften
+AudaCity International FZCO, registriert unter der Lizenz DSO-FZCO 38282 in Dubai Silicon Oasis, DDP, Gebäude A1/A2, Dubai, Vereinigte Arabische Emirate, fungiert ausschließlich als Zahlungsvermittler. Alle Handelsaktivitäten werden über AudaCity Global LTD (Registrierungsnummer: 15850) betrieben, das unter der von der Union der Komoren ausgestellten International Brokerage and Clearing House Licence (L15850/WL) lizenziert ist und seinen Sitz in Hamchako, Mutsamudu, Anjouan, Union of Comoros hat. Wir betreiben auch ein britisches Büro am 25 Cabot Square, Level 11, London, E14 4QZ, und pflegen eine Partnerschaft mit Propmetry Limited (Firmennummer: HE469039) mit Sitz in Limassol, Zypern, das als zusätzlicher Zahlungspartner fungiert.
+Diese Website und alle Dienste werden über unsere einzige Domain unter https://audacity.capital und über unser Dashboard unter angeboten https://trade.audacity.capital ; jede andere Domain, jedes Profil in sozialen Netzwerken oder jede andere Person, die behauptet, uns außerhalb dieser Website zu vertreten, sollte als betrügerisch betrachtet und gemeldet werden. Stellen Sie immer sicher, dass Sie mit der legitimen AudaCity Capital-Website interagieren, und wenden Sie sich im Zweifelsfall direkt über unsere verifizierten Kanäle an unser Team.
+Seit 2012 engagiert sich AudaCity Capital für die Entwicklung von Handelstalenten durch strukturierte Bewertung und Ausbildung innerhalb einer professionellen simulierten Handelsinfrastruktur, die sich auf den Aufbau von Fähigkeiten und nicht auf Spekulation konzentriert. Dies hilft, echte Talente für den Handel mit Live-Kapital zu finden und zu entwickeln.
+Keine Aussage auf dieser Website stellt eine Anlage-, Finanz-, Rechts- oder Steuerberatung dar, und wir bieten keine Makler-, Depot- oder Portfoliomanagementdienstleistungen an. Der gesamte Inhalt dient nur allgemeinen Informationszwecken und sollte nicht als Aufforderung zur Investition oder zum Handel interpretiert werden.
+Die Nutzung dieser Website und die Teilnahme an unseren Programmen unterliegen den lokalen Gesetzen, und unsere Dienste sind in Ländern, in denen solche Aktivitäten eingeschränkt oder verboten sind, nicht verfügbar, einschließlich, aber nicht beschränkt auf Syrien, Iran, Venezuela und Nordkorea. Einwohner der USA dürfen nur über die DX-Trade-Plattform teilnehmen, sofern dies zulässig ist. Die Benutzer sind dafür verantwortlich, die Einhaltung ihrer lokalen Vorschriften sicherzustellen.
+Der Handel — ob real oder simuliert — birgt ein erhebliches Risiko, und die hypothetische Wertentwicklung sagt keine tatsächlichen Ergebnisse voraus. Nehmen Sie nur teil, wenn Sie die damit verbundenen Risiken vollständig verstehen.
+Apple, iPad, iPhone und App Store sind Marken von Apple Inc.; Android ist eine Marke von Google Inc. Ihre Verwendung hier bedeutet keine Zugehörigkeit oder Billigung.

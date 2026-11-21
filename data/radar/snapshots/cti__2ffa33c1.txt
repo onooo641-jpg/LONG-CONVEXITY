@@ -1,0 +1,384 @@
+Balance-Based Drawdown: Get More Trading Breathing Room
+Home
+Funding Programs
+1-Step Challenge
+2-Step Challenge
+Instant Funding
+Direct Funding
+FAQs
+Academy
+Resources
+Join Community
+Blog
+Market News
+Symbols Live Feed
+Economic Calendar
+Trading Platforms
+MetaTrader 5
+Match Trader
+Calculators
+Challenge Drawdown Calculator
+Margin Calculator
+Swap Calculator
+Pip Calculator
+Position Size Calculator
+Risk Of Ruin Calculator
+MT5 Trade Manager
+More
+Become an Affiliate
+Partners
+About Us
+Shop
+Start a Prop Firm
+LOG IN
+FREE TRIAL
+LOGIN
+Home
+Funding Programs
+1-Step Challenge
+2-Step Challenge
+Instant Funding
+Direct Funding
+FAQs
+Academy
+Resources
+Join Community
+Blog
+Market News
+Symbols Live Feed
+Economic Calendar
+Trading Platforms
+MetaTrader 5
+Match Trader
+Calculators
+All Calculators
+Challenge Drawdown Calculator
+Margin Calculator
+Swap Calculator
+Pip Calculator
+Position Size Calculator
+Risk Of Ruin Calculator
+MT5 Trade Manager
+More
+Become an Affiliate
+Partners
+About Us
+Shop
+Start a Prop Firm
+Skip to content
+Home › Blog
+› Prop Trading
+› Balance-Based Drawdown Explained: Why CTI’s Risk Model Gives You More Breathing Room
+Prop Trading
+Balance-Based Drawdown Explained: Why CTI’s Risk Model Gives You More Breathing Room
+By Martin Najat
+·
+March 17, 2026
+·
+Updated September 22, 2026
+·
+10 min read
+Reading mode
+Dark
+In this article
+Why Drawdown Rules Make or Break Your Challenge
+Drawdown 101: The Two Main Types
+Side-by-Side Scenario: One Trade, Two Outcomes
+How Balance-Based Drawdown Works
+The Numbers: Our Max & Daily Drawdown Rules Explained
+Why We Chose Balance-Based Drawdown
+Five Risk-Management Tips to Stay Compliant
+FAQs
+Benefits at a Glance
+Why Drawdown Rules Make or Break Your Challenge
+Many prop firm challenge failures aren’t because traders can’t hit profit targets. They’re because of drawdown violations. The difference between passing and failing often comes down to how your prop firm calculates risk, not just your trading ability.
+You could have a winning swing trade setup, perfect technical analysis, and still get stopped out mid-position because your prop firm uses equity-based drawdown rules that punish you for temporary unrealized profits.
+Since 2018, we’ve taken a different approach. While other firms create moving targets with equity-based calculations, we use balance-based drawdown across all funding programs. This focuses on actual losses, not market noise.
+This guide explains why our balance-based system gives you more breathing room than other firms and how it can make the difference in your challenge success. We start with the two ways a firm can measure drawdown, then show the same trade under both, then walk through exactly how our rules work and how to trade inside them.
+Drawdown 101: The Two Main Types
+What Is Drawdown?
+Drawdown represents how much your trading account drops from a peak to a low point during a losing streak. At CTI, we define drawdown as “a benchmark for the prop firm’s risk tolerance” and the key metric that determines whether you keep or lose your funded account.
+Different prop firms calculate drawdowns in entirely different ways, affecting whether you pass or fail your challenge.
+Balance-Based vs. Equity-Based: The Key Difference
+Balance-Based Drawdown (✅ Our Choice):
+Uses only closed trade results to measure drawdown.
+Ignores floating (unrealized) profits and losses in calculations.
+Provides consistent, predictable risk parameters that don’t shift mid-trade.
+Equity-Based Drawdown (🚩 The Red Flag):
+Includes unrealized profit when setting drawdown thresholds.
+Creates moving targets that tighten whenever you show paper profits.
+Can terminate accounts for losing unrealized profit, not actual money.
+How Floating Profits Become Traps
+Equity-based drawdown operates on a cruel irony: success can sabotage you. Every time your account equity reaches a new high, including unrealized profits, it adjusts your risk parameters, creating a tightening noose.
+The Floating Profit Trap
+Example Scenario:
+Starting balance: $100,000.
+Daily drawdown limit: 5% ($5,000).
+You enter trades showing $8,000 unrealized profit.
+Your equity-based stop-out jumps from $95,000 to $103,000. A normal pullback to $2,500 of unrealized profit is now a violation, even though you never lost a cent of closed balance.
+Why We Call This a Red Flag
+Our research shows that equity-based drawdown “can catch many traders off guard” and often punishes normal strategy fluctuations. Our guidance is clear: “If you see a prop firm using an equity-based drawdown, this is your red flag to avoid it.”
+That is the theory. Here is what it looks like on one real trade.
+Side-by-Side Scenario: One Trade, Two Outcomes
+Let’s examine how identical trading plays out under both systems using our example methodology:
+The Setup
+Account: $100,000
+Strategy: Long EURUSD swing trade
+Daily Drawdown: 5% ($5,000)
+Trade Sequence: Initial move against, then strong reversal
+Trade Development
+Time
+Price Action
+Open Trade P&L (floating)
+Equity
+CTI Balance-Based
+Equity-Based Competitor
+Entry (Long EURUSD)
+1.1000
+$0
+$100,000
+✅ Stop-out: $95,000
+✅ Stop-out: $95,000
+Hour 2
+Dips to 1.0970
+-$600
+$99,400
+✅ Stop-out: $95,000
+✅ Stop-out: $95,000 (no new high)
+Mid-Day
+Rallies to 1.1400
++$8,000
+$108,000
+✅ Stop-out: $95,000
+❌ New equity high, stop-out trails up to $103,000
+Afternoon
+Retests to 1.1050
++$1,000
+$101,000
+✅ Safe, $6,000 above $95,000
+❌ VIOLATION : $101,000 is below $103,000
+The Outcome
+CTI Balance-Based Trader: Continues holding through normal market volatility, with the potential to capture the full move for a profit.
+Equity-Based Trader: Account terminated during the afternoon retest while still $1,000 in profit on a trade that goes on to win. The pullback from the mid-day equity high triggered a violation.
+Same trade, same market, same strategy, completely different outcomes based purely on drawdown calculation method.
+So how does the CTI side of that table actually work? The rules are simple enough to fit on one line.
+How Balance-Based Drawdown Works
+The Formula That Protects You
+Balance used for drawdown = Initial Balance + Net P&L from closed trades only
+Stop-out level = Initial Balance minus your drawdown limit
+This elegantly simple approach is what makes our system so trader-friendly. Your risk threshold is calculated using only the trades you’ve actually closed, not the temporary fluctuations of open positions that create psychological pressure.
+The Protection Mechanism
+Here’s where our approach shines: while your position might show a temporary $3,000 floating loss, our balance-based drawdown calculation doesn’t panic.
+It understands that unrealized losses are just that, unrealized . They haven’t actually cost you money yet.
+As it’s balance-based, you’re protected from being penalized for price movement against your open trade.
+Real-World Example: The $100K Challenge Account
+Account Setup:
+Starting balance: $100,000.
+Our 2-Step Challenge: 5% daily drawdown ($5,000).
+Today’s daily stop-out level: $95,000 (start-of-day balance $100,000 minus $5,000). Fixed for the whole day.
+The Scenario: Earlier in the session your open trade showed +$2,000 unrealized (equity $102,000). It then reverses and moves against you by -$3,000 (equity $97,000). Competitors that use equity-based daily drawdown trail the day’s equity high: $102,000 minus $5,000 moves their stop-out up to $97,000, so this dip is a breach.
+With our balance-based approach, the daily stop-out level stays locked at $95,000 all day, giving your trade room to develop.
+The Safety Net: Floating losses do count toward the stop-out check. If your equity (balance plus floating losses) reaches $95,000, positions are closed and the daily limit is breached. What never happens is the level moving against you mid-day.
+The Result: Your trade has breathing room to work through temporary adverse movement without triggering premature violations.
+The example above uses the 2-Step numbers. Here is the full set for every program.
+The Numbers: Our Max & Daily Drawdown Rules Explained
+We offer transparent, static drawdown parameters across all programs. Here’s exactly how each works:
+2-Step Challenge: Maximum Flexibility
+Maximum Drawdown: 10% (Static)
+Formula: Starting Balance minus (Starting Balance × 0.10).
+$100K example: $90,000 stop-out level (never changes).
+Daily Drawdown: 5% (Balance-Based)
+Formula: Start of Day Balance minus (Initial Balance × 0.05).
+Example: Start day at $105K, daily stop-out = $100K.
+Why This Works: The 10% cushion gives you substantial room for strategy development, while the 5% daily limit prevents catastrophic single-day losses.
+1-Step Challenge: Faster but Tighter
+Maximum Drawdown: 5% (Trailing Balance-Based)
+Trails behind your closed balance highs, not equity spikes.
+Locks in portions of realized profits as you grow.
+Daily Drawdown: None
+Pure swing trading freedom without daily constraints.
+Focus entirely on overall risk management.
+Instant Funding: Ultimate Simplicity
+Maximum Drawdown: 6% (Static)
+Formula: Starting Balance minus (Starting Balance × 0.06).
+$100K example: $94,000 stop-out level.
+No daily limits whatsoever.
+We describe this as “a funding program with no rules.” The only exception is that you should not lose more than 6% of the initial account balance.
+If you’re ready to trade with rules that work for you? Get started at citytradersimperium.com .
+Those are the rules. This is why we set them up that way.
+Why We Chose Balance-Based Drawdown
+Our decision to use balance-based drawdown across all programs stems from our core philosophy: giving traders room to succeed rather than trapping them with technicalities.
+Room for Swing Traders to Breathe
+Traditional prop firms effectively punish position traders. Their equity-based systems force scalping behavior, with quick profits taken to avoid drawdown adjustments. Our balance-based approach respects that quality setups need time to develop .
+Perfect Alignment With Our No-Time-Limit Policy
+There is no clock on CTI evaluations, and a static, balance-based drawdown is what makes that meaningful. You can hold a position for days or weeks without a shifting equity threshold forcing you out. You get time to let a setup mature, and a risk limit that does not move while you wait.
+Eliminates Equity Curve “Noise”
+Trading psychology research shows that obsessing over real-time equity fluctuations destroys decision-making.
+By focusing on closed trades only, balance-based drawdown removes the psychological pressure of constantly shifting risk parameters.
+Our Core Philosophy
+Our approach reflects our belief in sustainable trader development: “We believe in giving traders the tools and flexibility they need to succeed. That means stable, predictable risk parameters that don’t change mid-trade.”
+A forgiving drawdown model is not a license to trade loosely. These five habits keep you well inside the limits.
+Five Risk-Management Tips to Stay Compliant
+Based on our guidance to thousands of funded traders, here are the proven strategies to avoid drawdown violations:
+1. Pre-Size Positions at 1% Risk
+The Golden Rule: Never risk more than 1-2% of your account balance per trade.
+Our Logic: “Proper position sizing is your first line of defense. It ensures no single trade can blow your account.”
+Implementation:
+$100K account = maximum $1,000 risk per trade.
+Set stop-losses before entry based on technical levels.
+Calculate position size mathematically, not emotionally.
+Protection: At 1% risk you can absorb nine straight losses (9%) and still be inside the 10% maximum drawdown limit on the 2-Step Challenge.
+2. Use Equity Alerts at 80% of Limit
+The Early Warning System: Set platform alerts when approaching 80% of your drawdown limit.
+Example for $100K Account:
+10% drawdown limit = $90K stop-out.
+Set alert at $92K (80% of $10K drawdown used).
+Gives you a $2K buffer for rational decisions.
+Psychological Benefit: Prevents panic-closing positions when you still have room to manage risk properly.
+3. Pause Trading After 3R Day
+The Circuit-Breaker Rule: If you lose 3× your normal daily risk, stop trading immediately.
+Example:
+Normal risk: $1,000 per day (1% of $100K).
+Circuit-breaker: $3,000 daily loss.
+Automatic trading halt to prevent a revenge trading spiral.
+Our Insight: “This mimics the circuit-breaker approach used by institutional desks to prevent decision fatigue and emotional re-entry.”
+4. Split Swing Entries
+The Staged Entry Strategy: Scale into positions over 2-3 entries rather than full size immediately.
+Implementation:
+Entry 1: 40% of planned position.
+Entry 2: 35% on setup confirmation.
+Entry 3: 25% on final validation.
+Advantage: Reduces initial floating losses that create psychological pressure, even in balance-based systems.
+5. Journal Daily Balance
+The Awareness Builder: Track your daily balance and distance to stop-out level every session.
+Simple Template:
+Starting Balance: ___
+Ending Balance: ___
+Distance to Stop-Out: ___
+Largest Floating Loss: ___
+Value: Builds conscious awareness of risk usage and prevents gradual drift toward danger zones.
+FAQs
+Is 6% Max Loss Too Strict?
+Not when it’s balance-based. Our 6% limit on Instant Funding accounts provides the same practical trading room as a 10% equity-based limit at other firms. The key difference: your limit doesn’t shrink when you show unrealized profits.
+Does Balance Reset After Scaling?
+Yes. When your account scales, the drawdown limit is recalculated as the same percentage of the new starting balance. Scale from $100,000 to $150,000 on a 10% limit and your buffer grows from $10,000 to $15,000.
+What If I Hold Trades Overnight?
+Balance-based drawdown is perfect for overnight positions. Your stop-out level remains constant regardless of after-hours price action. However, your equity is still monitored to prevent catastrophic losses if floating losses become extreme.
+Can I Recover From a Brief Violation?
+No. We’re crystal clear: “All prop firms consider hitting the drawdown threshold a hard breach, even if your account later recovers. The violation usually results in disqualification the moment the limit is exceeded.”
+Benefits at a Glance
+Our balance-based drawdown protects you from being penalized for price movement against your open trade, giving swing traders the needed breathing room during temporary adverse moves.
+Static approach prevents moving goalposts: your maximum loss threshold stays constant, unlike equity-based systems that tighten when you show unrealized profits.
+No surprise stop-outs due to floating equity, enabling focused, disciplined trade planning without micromanaging every tick.
+Pick the program whose limits fit your style, size every trade at 1%, and let the rules work for you rather than against you.
+Martin Najat
+Chief Executive Officer | CEO
+MBA, BSc Banking and Finance, 8+ years in prop firm operations.
+Martin Najat co-founded City Traders Imperium in 2018 and is the operational and strategic force behind its global trader ecosystem. With a background in banking and finance (BSc, ASCCB-accredited), an MBA, and a professional trading practice of his own, Martin built the systems that let CTI run with reliability, transparency and long-term stability.
+From payout infrastructure to risk controls and trader-support workflows, he shaped the operational backbone that grew CTI from a London startup into a respected international proprietary trading firm and continues to drive the technology that will power the next generation of prop trading. His leadership ensures traders experience a firm that is fast, fair and built to last.
+How we write and review our content: Editorial Policy
+X
+LinkedIn
+← Previous
+How to Pass a Funded Account Challenge in 2026
+Next →
+CTI Payout Proof: Real Trader Success Stories & Timeline
+Share
+In this article
+Why Drawdown Rules Make or Break Your Challenge
+Drawdown 101: The Two Main Types
+Side-by-Side Scenario: One Trade, Two Outcomes
+How Balance-Based Drawdown Works
+The Numbers: Our Max & Daily Drawdown Rules Explained
+Why We Chose Balance-Based Drawdown
+Five Risk-Management Tips to Stay Compliant
+FAQs
+Benefits at a Glance
+Categories
+Market News
+Forex Education
+Funded Traders
+Trading Psychology
+Prop Trading
+Prop School
+CTI vs Prop Firms
+More in Prop Trading
+US Midterms 2026: What CTI Traders Did on Election Night
+You knew it was coming. The date was on every calendar. The polls had been picked apart for weeks. Everyone had a…
+10 min read
+What Is a Prop Firm?
+What Is a Prop Firm? The Ultimate 2026 Guide A prop firm, short for proprietary trading firm, is a company that gives…
+18 min read
+CTI Payout Proof: Real Trader Success Stories & Timeline
+“Show me the money.” That’s what skeptical traders ask on Reddit and Telegram when evaluating prop firms. Fair enough—you’ve seen the horror…
+8 min read
+Keep reading
+Market News
+Weekly Market Sentiment – 15 November 2026
+A hot US inflation report drove the dollar to a 52-week high and revived December Fed hike bets,…
+7 min read
+Read More →
+Market News
+Weekly Market Sentiment – 8 November 2026
+A Democratic midterm sweep sent stocks into a correction this week, while Brent oil slid hard on US-Iran…
+7 min read
+Read More →
+Prop Trading
+US Midterms 2026: What CTI Traders Did on Election Night
+You knew it was coming. The date was on every calendar. The polls had been picked apart for…
+10 min read
+Read More →
+Exit reading mode
+Follow Us
+Funding Programs
+1-Step Challenge
+2-Step Challenge
+Instant Funding
+Direct Funding
+Success Stories
+FAQs
+Free Trial
+Resources
+CTI Academy
+Join Community
+Blog
+Market News
+Symbols Live Feed
+Calculators
+MT5 Trade Manager
+More
+Become an Affiliate
+Partners
+About Us
+Shop
+Start a Prop Firm
+Contact Us
+Contact Support
+Email: support@citytradersimperium.com
+Live Chat: available on the website
+Discord: Join Community
+Terms & Conditions
+Privacy Policy
+Refund Policy
+AML Policy
+Affiliate Agreement
+Conduct Policy
+Editorial Policy
+Sitemap
+Cookie Settings
+Skill assessment programs and simulated demo trading services are provided exclusively by City Traders Imperium Limited, a company incorporated under the laws of Comoros Union with company number 15969 (License No. L15969/CTI), registered address at Hamchako, Mutsamudu, Autonomous Island of Anjouan, Comoros Union, with operating address at Edificio Faro, Oficina 4, Avenidas 12 y 14, Calle 12, Barrio Luján, San José, Costa Rica. City Traders Imperium Academy educational courses are provided by CTI FZCO (Company No. DSO-FZCO-21340), registered at Dubai Silicon Oasis, DDP, Building A1, Dubai, United Arab Emirates.
+Legal Disclosure: City Traders Imperium Limited provides access to simulated trading skill assessment programs designed solely for the evaluation of trading proficiency and risk-management skills. City Traders Imperium Academy provides structured educational courses. All trading activity occurs in a demo environment using virtual capital.
+No Client Funds / No Live Trading: Neither CTI FZCO nor City Traders Imperium Limited is a broker, dealer, exchange, or investment adviser, and neither accepts nor manages client deposits. Participants do not trade real assets or place live market orders. Any rewards are performance-based and derived from skill assessment results only.
+Evaluation & Educational Use Only: All content, tools, and services are provided for educational and evaluation purposes only and shall not be construed as investment advice, solicitation, or an offer to buy or sell any financial product, cryptocurrency, or derivative. Participants are encouraged to consult independent financial, legal, or tax advisors before engaging in any trading activity outside of these services.
+Platforms: MetaTrader 5 & Match-Trader platforms are used exclusively in connection with the simulated skill assessment environment operated by City Traders Imperium Limited.
+Hypothetical Performance Disclosure: Simulated or hypothetical trading results have inherent limitations. Unlike actual performance records, they do not represent real trading activity and may be designed with the benefit of hindsight. No representation is being made that any account will, or is likely to, achieve profits or losses similar to those shown or implied.
+Payments & Refunds: All fees paid are educational service fees for access to courses or skill assessment programs. All fees are non-refundable except as outlined in our Refund Policy .
+Jurisdictional Restrictions: Neither entity offers services to nationals or residents of the following jurisdictions: North Korea (DPRK), Iran, Syria, Cuba, Russia, or to any individual under international sanctions.
+Non-Targeted Reach: Information on these websites is not directed to residents of any country where such distribution or use would be contrary to local law or regulation. It is the user's responsibility to ensure that any use of the websites or services adheres to their local laws or regulations.
+Beware of Impersonators: This is our only official website.
+© 2026 Copyright
+City Traders Imperium & City Traders Imperium Academy.
+All Rights Reserved.
+Black Friday at City Traders Imperium: the only crash you want
+Select an offer to copy its discount code, then claim your discount.
+✕ Copy code CRASH15: Direct Funding, 15% off Copy Copy code CRASH20: 2-Step Challenge, 20% off Copy Copy code CRASH25: Instant Funding, 25% off Copy Copy code CRASH30: 1-Step Challenge, 30% off Copy Claim My Discount Already have an account? Log in

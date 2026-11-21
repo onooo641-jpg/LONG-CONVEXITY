@@ -1,0 +1,21 @@
+Getting Started with AlphaTrader | Alpha Futures Limited Help Center Skip to main content
+Search for articles...
+All Collections
+Getting Started
+Getting Started with AlphaTrader
+Getting Started with AlphaTrader
+How to log into your AlphaTrader account
+B
+Written by Benjamin Chaffee
+May 27, 2026
+Alpha Futures is excited to offer AlphaTrader .
+Please find the tutorial video for the platform here and instructions to login below!
+To use this integration, you must have an Evaluation, or Qualified Account utilizing AlphaTrader.
+First, log in to AlphaTrader using the username and password provided in your dashboard in Account Information.
+You can launch AlphaTrader directly from your user dashboard with the "Launch AlphaTrader" button. You may also choose to sign in directly using this link .
+https://futures.alphatrader.com/signin
+Once you have launched AlphaTrader, you will be prompted to sign in with the credentials provided in your “Account Info”.
+​
+Once logged in, you MUST sign your Non-Professional Agreement before your account will receive real-time data or be able to trade on AlphaTrader . Be sure to select the 'Simulation' when prompted to select a Trading Mode.
+You are now successfully connected and can enjoy trading your Alpha Futures Account(s) on AlphaTrader!
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃

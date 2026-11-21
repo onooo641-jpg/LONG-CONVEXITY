@@ -1,0 +1,30 @@
+What is a Trailing Drawdown? | Earn2Trade Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Poppins".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Poppins".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+العربية English Français Português Español English
+العربية English Français Português Español English
+Search for articles...
+All Collections
+Rules
+Drawdown-related rules
+What is a Trailing Drawdown?
+What is a Trailing Drawdown?
+Written by Francis
+October 30, 2023
+A trailing drawdown is a drawdown that is pegged to your positive account performance. That means that if you increase your profit by $1.00, then your trailing drawdown will also rise by $1.00. All rules, including trailing, use closed and open equity intraday.
+For example, in a $50,000.00 account your starting trailing drawdown is $48,000.00.
+On your first trade as you make $100.00 in profit it will bring your account balance to $50,100.00. This correspondingly raises your trailing drawdown to $48,100.00.
+This continues until your trailing drawdown reaches the starting balance of your account, or in this case $50,000.00, at which point the drawdown will no longer trail above $50,000.00.
+You can check your current maximum drawdown in R | Trader Pro's Trader Dashboard by looking at the Auto Liquidate Threshold Value column. It'll tell you exactly what balance your account is liquidated at.
+Traders who pass the Trader Career Path® or Gauntlet Mini™ challenges and go to a Live account will have to adhere to the trailing drawdown rule as described above. Traders who go to a LiveSim account will have to follow the EOD Drawdown rule, as described here .
+Related Articles
+What is the Maximum Drawdown on The Trader Career Path® and The Gauntlet Mini™ Challenges?
+How Does "End of Day Drawdown" Work?
+What Are the Evaluation Rules?
+Drawdown types
+What is a Fixed Drawdown?
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+The Trader Career Path
+The Gauntlet Mini™
+Beginner Crash Course
+Risk Disclaimer

@@ -1,0 +1,135 @@
+Kripto prop trading için HyroTrader işlem kuralları
+Fonlanın
+Destek Discord'umuz
+Nasıl başlanır Süreci öğren
+Challenge'ı başlat Değerlendirmeye başla
+Ücretsiz deneme Risksiz dene
+İşlem kuralları Güvenle işlem yap
+Ölçekleme planı Daha yüksek paylaşımlar ve finansman
+İşlem platformları Desteklenen kripto platformları
+Değerlendirme Nasıl fonlanırsınız
+Sonuçlar
+Destek Discord'umuz
+Özgürce Ticaret Yapın
+Başlayın
+Referanslar Trader başarı hikayeleri
+Akademi
+Akademi Kripto ticaretinde uzmanlaşın
+Discord Topluluğumuza katılın
+Ortaklar SSS Blog Hakkımızda
+Hakkımızda Misyonumuz ve vizyonumuz
+Destek Anında yardım alın
+Giriş yap Ücretsiz deneme
+English
+Deutsch
+Русский
+Español
+Français
+Italiano
+Português
+Ελληνικά
+Polski
+Magyar
+Română
+Български
+Türkçe
+Українська
+Indonesia
+한국어
+ไทย
+中文
+Čeština
+English
+Deutsch
+Русский
+Español
+Français
+Italiano
+Português
+Ελληνικά
+Polski
+Magyar
+Română
+Български
+Türkçe
+Українська
+Indonesia
+한국어
+ไทย
+中文
+Čeština
+Giriş yap Başlayın
+Kripto prop platformumuzun kuralları
+Disiplinli traderları, tutarlı biçimde uygulandığında kısa vadeli spekülasyon yerine uzun vadeli büyümeyi mümkün kılan sistemli kurallarla destekliyoruz.
+Başlayın Ücretsiz deneme
+Discord'a katılın
+Kripto işlem kuralları
+İki kayıp limiti Challenge sürecinizi sonlandırabilir: günlük limit ve toplam limit. Ayrıca 30 gün işlem yapmazsanız hesabınız kapanır. Diğer tüm kurallar aşağıda.
+One-Step Two-Step
+One-Step
+1. adım Challenge
+2. adım Fonlanan hesap
+İşlem süresi
+Sınırsız
+Sınırsız
+Minimum işlem günü
+3 gün
+-
+Stop loss
+Zorunlu değil
+Zorunlu değil
+Günlük drawdown
+%4
+%4
+Maksimum kayıp
+%8
+%8
+Kâr hedefi
+%10
+-
+Kâr dağılımı
+Günlük %40
+Yok
+Kâr paylaşımı
+-
+%80 → %90
+Deposit or fee
+-
+İade
+Risk yönetimi koşulları hakkında daha fazla bilgi için SSS bölümümüzü ziyaret edin.
+Yasak olan diğer işlemler
+Spot işlemler, USDC sürekli vadeli işlemleri, COIN-M vadeli işlemleri ve opsiyonlar
+Martingale stratejisini kullanmak
+Birden fazla hesap arasında hedge yapmak
+Kaldıraç dâhil, başlangıç bakiyenizin %5'inden fazlasını düşük piyasa değerli coinlerde tutmak
+Ek demo fonu talep etmek veya bakiyeleri değiştirmek
+Aynı hesapta spot ve marjin işlemlerini birleştirmek
+Yalnızca haberlere dayanarak işlem yapmak
+Kurallara uymak için ipuçları
+Kurallara uygun işlem yapmak ve fonlanan hesabınızı korumak için bu önerileri uygulayın.
+1
+Riski doğru yönetin
+İşlem başına alacağınız riski önceden belirleyin. Stop loss emri zorunlu değildir, ancak kullanmanızı öneririz.
+2
+Toplam risk maruziyetinizi izleyin
+İzin verilen risk maruziyeti ve kaldıraç sınırları içinde kalmak için açık pozisyonlarınızın toplamını takip edin.
+3
+Kârınızı günlere yayın
+One-Step ve Two-Step modellerinde tek bir işlem gününün hedefe katkısı %40'ı, Zero-Step modelinde tek bir işlemin katkısı %50'yi aşamaz.
+4
+İstikrarlı performans gösterin
+İstikrarlı işlem yapın; değerlendirme veya drawdown koşullarını ihlal etmenize yol açabilecek düzensiz davranışlardan kaçının.
+Challenge sürecine güvenle başlayın
+Net kurallar, şeffaf bir Gösterge Paneli ve destekleyici ekibimiz, fonlanmaya doğru ilerlerken planınıza bağlı kalmanıza yardımcı olur.
+Başlayın Discord'a katılın
+Topluluk tarafından desteklenmektedir
+Tüm sistemler çalışıyor
+Şirket
+Ücretsiz anında demo hesabı HyroTrader Hakkında Ortaklar İletişim Kripto prop firm altyapısı
+Değerlendirme
+HyroTrader değerlendirmesi İşlem platformları Kripto işlem kuralları
+Dokümantasyon
+Blog SSS Gizlilik politikası Şartlar ve koşullar Affiliate terms and conditions Bilgi tabanı
+Bu sitede sağlanan tüm bilgiler yalnızca finansal piyasalarda işlem yapmayla ilgili eğitim amaçlıdır ve hiçbir şekilde özel bir yatırım tavsiyesi, iş tavsiyesi, yatırım fırsatı analizi veya yatırım araçlarının ticaretine ilişkin benzer genel bir öneri niteliği taşımamaktadır. Finansal piyasalarda işlem yapmak yüksek riskli bir faaliyettir ve kişinin kaybetmeyi göze alabileceğinden fazlasını riske atmaması önerilir! Hyro Finance j.s.a., Sermaye Piyasası İşlemleri Kanunu No. 256/2004 Coll. kapsamında listelenen yatırım hizmetlerinden hiçbirini sunmamaktadır. Bu sitedeki bilgiler, söz konusu dağıtımın veya kullanımın yerel yasa ya da düzenlemelere aykırı olacağı herhangi bir ülke veya yargı bölgesindeki kişilere yönelik değildir. Hyro Finance j.s.a. bir aracı kurum değildir ve mevduat kabul etmemektedir.
+Hyro Finance, j. s. a. © 2026
+Çerez ayarları

@@ -1,0 +1,143 @@
+Intraday Trailing Drawdown: A $50K Zero Example
+Black Friday Early Access · EARLYBOGO40 25K Zero BOGO + 40% off · EARLYBOGO50 25K Direct BOGO + 50% off
+Home
+About
+How It Works
+Trading
+Platforms
+AlphaTrader
+Learn More
+WealthCharts
+Learn More
+Quantower
+Learn More
+View All
+Leaderboard
+Lifetime Payouts
+Learn More
+Weekly Payouts
+Learn More
+Returns of the month
+Learn More
+View All
+Market
+Equity & Index
+Learn More
+Currency
+Learn More
+Metals
+Learn More
+Crypto
+Learn More
+View All
+AlphaTrader
+Launched AlphaTrader — the next evolution of the platform. Get Early Access
+Resources
+Contact Us
+Help Center
+Start Evaluation
+Sign In
+Home
+About
+How It Works
+Trading
+Platforms
+Leaderboard
+Market
+AlphaTrader
+Launched AlphaTrader — the next evolution of the platform. Get Early Access
+Resources
+Contact Us
+Help Center
+Start Evaluation
+Sign In
+Intraday Trailing Drawdown Explained: A $50K Zero Example
+By the Alpha Futures Team · Updated October 9, 2026
+Part of our futures prop rules series. Start with Maximum Loss Limit explained , then read EOD trailing drawdown vs intraday drawdown · buffer vs drawdown · Daily Loss Guard explained · how it works · Zero plan .
+Updated 9 October 2026. Simulated evaluations and Qualified Accounts use simulated funds. Passing does not guarantee a performance fee. Simulated results do not reflect live trading outcomes.
+TL;DR: Alpha Futures does not use intraday trailing drawdown. The Maximum Loss Limit is end-of-day trailing on every account, calculated from the end-of-day balance high, not the intraday equity high. On a $50K Zero account it starts at $48,000. A $500 gain moves it to $48,500. A $500 loss the next day leaves it at $48,500. Hit that limit on floating equity or the closed balance and the account is liquidated.
+Quick answer: Elsewhere in the industry, intraday trailing drawdown uses the intraday equity high. Alpha Futures calculates the Maximum Loss Limit from the end-of-day balance high. On a $50K Zero account it starts at $48,000.
+Does Alpha Futures use intraday trailing drawdown?
+No. The Maximum Loss Limit is end-of-day trailing on every account. No Alpha Futures account uses the intraday trailing drawdown you will see elsewhere in the industry.
+The limit is calculated from the account’s balance high at the end of each trading day, not from the intraday equity high. It stops trailing once it reaches the account’s starting balance. You can monitor it on your dashboard.
+What does the $50K Zero example look like?
+A $50K Zero account starts at $50,000. The Maximum Loss Limit starts at $48,000, which is $2,000 under the start.
+Scenario Balance Maximum Loss Limit
+Start $50,000 $48,000
+Day 1 close, +$500 $50,500 $48,500
+Day 2 close, −$500 $50,000 $48,500
+End-of-day balance reaches $52,000 $52,000 $50,000, and it stays there
+Make $500 on the first day and the balance is $50,500. The Maximum Loss Limit becomes $48,500, still $2,000 under that end-of-day balance high.
+Lose $500 the next day and the balance is $50,000 again. The limit stays $48,500. It does not go below $48,500 for the rest of that account’s life.
+Once an end-of-day balance reaches $52,000, the Maximum Loss Limit is $50,000. It stays at $50,000. It does not keep trailing.
+The same path is in buffer versus drawdown . Plan pages are on how it works .
+What happens if you hit the Maximum Loss Limit?
+If you hit it at any point, on floating equity or the closed balance, the account is liquidated. Orders after the breach do not execute.
+On an evaluation, that account can no longer become a Qualified Account. You can buy a reset , or wait for the monthly rebill, which returns the account to the original starting balance.
+On a Qualified Account, the account is closed.
+What does the Daily Loss Guard do on a $50K Zero account?
+The Daily Loss Guard is a separate rule. Hit it and you do not lose the account. The account locks until the next trading day, 6:00 p.m. Eastern.
+Zero evaluations have one. It is 2% of the starting balance. On a 50K Zero account that is $1,000. On 25K it is $500. On 100K it is $2,000.
+If open or closed profit and loss reaches −2% at any point in the trading day, open positions are flattened, pending orders are canceled, and the account cannot place new trades until the next trading day starts. The day’s result includes simulated commissions, fees, and both unrealized and realized trades.
+It should not replace a stop. The flatten is a market order, and the fill will not be an exact 2% loss. Fills vary with the market.
+There is no preset Daily Loss Guard on Advanced evaluations, or on Advanced accounts. A trader can set one in the platform. On the platform, a trader can also set a smaller Daily Loss Guard than the published one. The session rule is in what a daily loss limit does .
+What else matters on a $50K Zero account?
+Does a losing close move the limit down?
+No. After the $50,500 close, the limit is $48,500. After the next close back at $50,000, the limit is still $48,500.
+When does the trail stop?
+When an end-of-day balance reaches $52,000. The Maximum Loss Limit is then $50,000, the starting balance, and it stays there.
+Can the account fail during the day?
+Yes. Floating equity or the closed balance can hit the limit before the close. The account is liquidated, and later orders do not execute.
+Where do you see the limit?
+You can see the limit on the dashboard.
+Alpha Futures evaluations and Qualified Accounts use simulated funds. Passing does not guarantee a performance fee, and simulated results are not live trading results.
+Frequently asked questions
+Does Alpha Futures use intraday trailing drawdown?
+No. The Maximum Loss Limit is end-of-day trailing on every account. It is calculated from the account balance high at the end of each trading day, not from the intraday equity high.
+Does a losing close move the Maximum Loss Limit down on a $50K Zero account?
+No. After a $50,500 close the limit is $48,500. After the next close back at $50,000, the limit is still $48,500.
+When does the trail stop on a $50K Zero account?
+When an end-of-day balance reaches $52,000. The Maximum Loss Limit is then $50,000, the starting balance, and it stays there.
+Can the account fail during the day before the session close?
+Yes. Floating equity or the closed balance can hit the Maximum Loss Limit before the close. The account is liquidated and later orders do not execute.
+Compare plans
+Compare plans on how it works or read the current Zero plan before checkout.
+Related reading
+What is a futures prop firm?
+Buffer versus drawdown
+What a daily loss limit does
+How it works
+EOD trailing drawdown vs intraday drawdown
+Alpha Futures
+More Articles
+Sign Up for an
+Exclusive Welcome Offer
+Subscribe to Alpha Futures emails for an exclusive welcome offer, trader insights, product updates and discounts. Enter your email to stay one step ahead. You can unsubscribe at any time.
+Thank you for signing up to our newsletter
+Oops! Something went wrong while submitting the form.
+175,000+
+Qualified Analysts
+1.1Million+
+Traders
+$70M
+Performance Fees Paid
+Quick Links
+Home About How it works
+Trading
+Platforms Market Leaderboard
+Other
+Resources Contact Us Promo Codes
+2026 © Alpha Futures - All rights reserved.
+Terms of Use
+Terms and Conditions
+General Service Agreement
+Privacy Policy
+Return Policy
+"Any references to trading, analysts, revenue, and profit throughout the website are references to virtual trading, revenues, and profits, respectively."
+Alpha Futures Risk Disclosure:
+Futures trading contains substantial risk and is not for every investor. An investor could potentially lose all or more than the initial investment. Risk capital is money that can be lost without jeopardizing your financial security or lifestyle. Only risk capital should be used for trading and only those with sufficient risk capital should consider trading. Past performance is not necessarily indicative of future results.
+Hypothetical Performance Disclosure:
+Hypothetical performance results have many significant performance and other limitations, some of which are described below. No representation is being made that any account will or is likely to achieve profits or losses similar to those shown on the website or any promotional material.
+CFTC Rule 4.41:
+Hypothetical or Simulated performance results have certain limitations. Unlike an actual performance record, simulated results do not represent actual trading. Also, because the trades have not actually been executed, the results may have under-or-over compensated for the impact, if any, of certain market factors, such as lack of liquidity. Simulated trading programs, in general, are also subject to the fact that they are designed with the benefit of hindsight. No representation is being made that any account will or is likely to achieve profit or losses similar to those shown.
+English Deutsch Español Français Italiano

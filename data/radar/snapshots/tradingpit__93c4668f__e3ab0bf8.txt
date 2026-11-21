@@ -1,0 +1,169 @@
+Futures Prime Rules | The Trading Pit Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Poppins".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Website Community Client Area العربية English Deutsch Italiano 日本語 Bahasa Melayu Português 简体中文 Español Türkçe Tiếng Việt English
+Website Community Client Area العربية English Deutsch Italiano 日本語 Bahasa Melayu Português 简体中文 Español Türkçe Tiếng Việt English
+Search for articles...
+All Collections
+FUTURES
+Futures Prime
+Futures Prime Rules
+Futures Prime Rules
+Everything that applies to your Futures Prime account, in one place — what to hit to pass, the limits you can’t breach, and what’s allowed.
+Updated over 2 weeks ago
+Table of contents
+These are the rules for your Futures Prime account. We group them into two types:
+Hard rules — breaking one breaches the account: it fails and is disabled.
+Soft rules — requirements or adjustments that don’t fail your account.
+Your Profit Target, Max Drawdown and Daily Pause amounts depend on your account size — see the table in “Futures Prime — how it works”.
+At A Glance
+Rule
+Applies In
+Type
+Profit Target (6% of Account)
+Challenge
+Objective To Pass
+Minimum 3 Trading Days
+Challenge
+Soft — No Breach
+40% Consistency (Raises The Target) *
+Challenge only
+Soft — Adjusts Target
+Max Drawdown (Trailing EOD)
+Challenge & Earning
+Hard — Breach
+Daily Pause (Daily Loss Limit)
+Challenge & Earning
+Auto-Close For The Day
+No Overnight / Weekend Positions
+Challenge & Earning
+Force-Closed 14:55 CT
+Max Contracts Per Account Size
+Challenge & Earning
+Position Limit
+Inactivity (21 days)
+Challenge & Earning
+Hard — Breach
+Gap, Grid, Martingale, HFT
+Challenge & Earning
+Prohibited — Breach
+Account Rolling
+Challenge & Earning
+Prohibited — Breach
+* How the 40% Consistency Rule recalculates your Profit Target depends on when your account was created — see “40% Consistency Rule” below.
+What you must do to pass (objectives)
+Profit Target (Objective)
+Reach the Profit Target for your account size — 6% of the balance ($3,000 on $50K, $6,000 on $100K, $9,000 on $150K) — within the 30-day Challenge and without breaking any rules.
+Minimum Trading Days (Soft — No Breach)
+For the Challenge to register as passed you must place a trade on at least 3 unique trading days.
+Holding a position overnight does not count as a new trading day.
+40% Consistency Rule (Soft — Adjusts Target)
+Applies to the Challenge only — never to a Futures Earning Account — and it never fails your account. Your highest trading day is capped at 40% of your Profit Target; going over simply raises the target.
+How the new target is calculated depends on when your account was created:
+Created on or after 14 July 2026 — the target is recalculated so your highest day equals 40% of it (Highest Day ÷ 0.40 = new target). Example: a $1,500 best day on a $3,000 target → $3,750.
+Created before 14 July 2026 — the amount over the 40% cap is added to the target. Example: on a $3,000 target the cap is $1,200; a $1,500 best day is $300 over, so the target becomes $3,300.
+Limits You Must Not Breach (Hard Rules)
+Max Drawdown (Trailing On End-Of-Day Balance) (Hard Rule)
+Your Max Drawdown (see the table) trails your end-of-day balance — based on closed P&L, not intraday peaks — upward, until it reaches your starting balance, then locks.
+If your balance falls to the drawdown level, the account is breached.
+Example:
+$100,000 account with a $3,000 Max Drawdown → initial level $97,000.
+End-of-day balance rises to $102,000 → level trails to $99,000.
+End-of-day balance reaches $103,000 → level locks at $100,000 (your starting balance) and won’t trail higher.
+Daily Pause (Daily Loss Limit) (Auto-Close For The Day)
+The Daily Pause is your maximum daily loss (see the table). When your loss reaches it, the system closes all open positions and pauses trading until the next trading day.
+The limit updates daily at 16:15 CT and is shown on your dashboard.
+Applies during the Challenge phase only. It was removed from Futures Prime Earning accounts on 14 July 2026.
+Important: the Daily Pause is a safety feature, not a guaranteed hard stop. In fast markets, slippage can push your loss past the Daily Pause — and past your Max Drawdown, which breaches the account.
+Do not use the Daily Pause as a substitute for a stop-loss.
+No Overnight Or Weekend Positions (Force-Closed)
+Holding positions overnight is not allowed on Futures Prime.
+Any position still open 5 minutes before the market close (14:55 CT) is force-closed by our Risk Team.
+Maximum Contracts (Position Limit)
+Your maximum position size depends on your account:
+$50K → 5 standard / 50 micro
+$100K → 10 / 100
+$150K → 15 / 150
+There is no minimum, and the lower your current balance, the fewer contracts you’re allowed to trade.
+Inactivity (Hard Rule )
+If 21 consecutive days pass without placing a single trade, the account is considered inactive and breached.
+Holding a position overnight or leaving a pending order doesn’t count as activity, and the countdown starts as soon as the account is purchased.
+What’s Allowed, With Conditions
+News Trading (Allowed)
+Allowed on Futures Prime in both the Challenge and Earning Phase.
+Be mindful of the heightened volatility and large, unpredictable price swings around high-impact news.
+​
+​ Important: While news trading is permitted on Futures Prime accounts, traders are expected to maintain a disciplined and professional approach to risk management.
+If our Risk Team identifies a consistent pattern of trading exclusively around news events in a way that resembles gambling behavior, excessive risk-taking, or an attempt to exploit extreme market volatility rather than sustainable trading performance, the Risk Team reserves the right to review the account and take appropriate measures in accordance with our Terms & Conditions.
+Stop-Loss & Take-Profit (Allowed)
+Not mandatory on every trade, but strongly recommended.
+If the majority of your trades are placed without a stop-loss, the Risk Team may reach out and require you to use them.
+Copy Trading (Allowed, With Limits)
+You may copy trades, manually or automatically, across up to 5 of your own Challenges or 5 of your own Earning accounts.
+You may only copy from your own accounts. Copying from other traders or sources is prohibited. Copying between Futures Challenges and Futures Earning accounts is allowed.
+Running the same strategy across more than 5 accounts can lead to upgrades being denied.
+If you use a trade copier, you're responsible for it.
+• Any software errors, malfunctions or unintended trades caused by the copier are your responsibility. If the copier fails, you'll need to troubleshoot or fix the tool on your side.
+• Account resets or balance adjustments are not given for individual technical issues. Only verified firm-wide outages affecting many traders may qualify.
+​
+Prohibited Practices
+Hedging (Prohibited )
+A BUY and a SELL held at the same time is prohibited.
+Hedging involves holding a BUY and a SELL position on the same instrument simultaneously, so the two positions offset each other and the net market exposure is removed. This includes opposing positions in a single account, a BUY on one account and a SELL on another, and offsetting positions opened in correlated instruments across accounts.
+Micro-Scalping (Prohibited)
+The Trading Pit prohibits micro-scalping because it exploits execution mechanics rather than reflecting genuine market participation. Traders are expected to use realistic, scalable strategies that can be applied consistently in live markets.
+• What is micro-scalping? Targeting very small price moves with large position sizes and holding trades for only a few seconds.
+• Is all scalping prohibited? No. Short-term trading based on market conditions with realistic execution is allowed. It's prohibited when results depend on execution mechanics and wouldn't transfer to real markets.
+• How is it detected? Automated monitoring flags accounts where, for example, over 50% of profits come from trades held 15 seconds or less, or where ultra-fast entries and exits are combined with disproportionate sizing.
+• What happens if flagged? The account undergoes manual review. Confirmed violations may result in a warning, profit removal, restrictions, or permanent closure.
+High-Frequency Trading (HFT) (Prohibited )
+Not allowed on any account: executing multiple trades per second, dozens of trades within a minute, rapid-fire entries and exits, or any attempt to exploit speed, latency or feed delays.
+Violations result in account termination.
+Accounts & Other Rules
+How Many Accounts
+There is no limit on how many Futures accounts you can purchase.
+In the Earning Phase you can hold a maximum of 5 active Earning accounts; if you pass a Challenge while already at the cap, the upgrade is queued until one of your Earning accounts closes.
+Trading Device, IP & Network
+An IP that changes every few days (e.g. while travelling) is fine.
+An IP that changes several times within the same day can raise suspicion of account sharing, which is forbidden.
+See our Trading Device, IP & Network Policy for the full rules on devices, IPs and shared access.
+Account Rolling
+What Account Rolling Means
+Account rolling is the practice of using an account as a one-time bet and not as a trading strategy. It usually follows this sequence:
+1. An all-in first move. Early in the funded phase, the trader opens an outsized position that uses most or all of the available drawdown. The outcome depends on a single move in the market.
+2. If the trade works, most of the account's profit (more than 40%) comes from that one trade or day.
+3. Then the account is run at minimum effort. The trader switches to very small positions or short, fixed-target trades, often one per day, placed only to reach the minimum daily profit and complete the required number of profitable days.
+4. If the trade fails, the account reaches its Max Drawdown, and the trader moves to a new account and repeats the same approach until a bet pays off.
+The cost of a failed attempt to the trader is the product fee. The cost of a successful attempt is paid by the firm. This is why we treat it as a misuse of the program and not as trading.
+Common Signs
+• One trade or one day produces more than 40% of the net profit.
+• Position size drops sharply right after the large result, often from a full contract to micro contracts.
+• The remaining profitable days are consistently just above the minimum daily profit requirement.
+• The later trades repeat the same size, the same point target or the same profit amount.
+• The same approach appears on multiple accounts.
+No single sign is decisive. We review the whole picture.
+Why It Is Not Allowed
+• It is gambling , not skill. A result that depends on one all-or-nothing trade does not show that a trader can manage risk over time.
+• It does not meet the purpose of the reward rules. The profitable day requirement exists to measure consistent performance. Padding the remaining days to reach the minimum meets the rule on paper, but not in substance.
+Account rolling falls under Clause 6.4 and Schedule B of our Terms & Conditions (Prohibited Trading Practices). It is also an impermissible risk allocation and an excessive concentration on a very small number of trades under Clause 6.5.1.
+What We Expect From You
+We expect a consistent, repeatable strategy with proportional market risk, with profit built across your trading days rather than concentrated in a single trade or day. Traders who trade this way have no problem receiving their payouts.
+What Happens If We Identify Account Rolling?
+Under Clause 6.7 of our Terms & Conditions, measures can include:
+• Removal of the offending trades and exclusion of their results from the assessment of your payout request (Clause 6.7.2).
+• Denial of the related payout request.
+• Termination of the affected accounts, or of all associated accounts, for confirmed breaches (Clause 6.7.4).
+• Permanent denial of access to our Services after repeated breaches following notice (Clause 6.7.5).
+If a profit removal brings the account balance below the Max Drawdown level, the account is automatically breached. If the balance stays above that level, you can keep trading.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Risk Disclosure:
+All material published and disseminated by The Trading Pit should be considered as general information only. The information provided by the The Trading Pit or included herein is not intended to serve as (a) investment advice, (b) an offer or solicitation to buy or sell any securities, or (c) a recommendation, endorsement, or sponsorship of any security, company, or fund. Testimonials featured on the The Trading Pit’s website(s) may not reflect the experiences of other clients or customers and do not guarantee future performance or success. Using the information on the The Trading Pit’s website(s) is at your own risk. The Trading Pit, along with its partners, representatives, agents, employees, and contractors, does not accept any responsibility or liability for the use or misuse of such information.
+Trading leveraged instruments carries significant risk and is not suitable for all investors. Investors may lose all or more than their initial investment. Only risk capital—money that can be lost without affecting one’s financial security or lifestyle—should be used for trading, and only those with sufficient risk capital should engage in trading. This document is not a solicitation or an offer to buy or sell futures, options, or forex. Past performance does not necessarily predict future results.
+Hypothetical or simulated performance results have inherent limitations. Unlike an actual performance record, simulated results do not reflect real trading. Additionally, because these trades have not been executed, the results may have under- or overcompensated for the impact of certain market factors, such as lack of liquidity. Simulated trading programs are also typically designed with the benefit of hindsight. There is no guarantee that any account will achieve profits or losses similar to those shown.
+The Trading Pit does not offer Contracts for Difference to residents of certain jurisdictions including the USA, Canada and Russia. For a full list of restricted countries for our services please see our FAQs.
+This website is owned and operated by The Trading Pit Challenge GmbH with registration number FL-0002.693.417-1 and registered address at Heiligkreuz 6, 9490, Vaduz, Liechtenstein.
+The Trading Pit Challenge GmbH is part of The Trading Pit Group ("TTP Group") which provides the following services:
+The Trading Pit AG with registration number FL-0002.688.743-6 is the holding company of the Group.
+The Trading Pit Champions GmbH with registration number FL-0002.693.413-9 provides platform services to The Trading Pit Challenge GmbH
+The Trading Pit Limited with registration number ΗΕ 431291 provides business and administration services to the Group companies.
+© 2026 The Trading Pit Challenge GmbH. All Rights Reserved.

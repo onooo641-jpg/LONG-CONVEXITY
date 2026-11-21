@@ -1,0 +1,30 @@
+Allowed Trading Times | Lucid Trading Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Lucid Home
+Lucid Home
+Search for articles...
+All Collections
+Rules and Guidelines
+Allowed Trading Times
+Allowed Trading Times
+When you can trade Lucid Trading accounts: allowed trading hours, session windows, and holiday schedules for futures evaluations and funded accounts.
+A
+Written by AJ
+August 26, 2026
+Table of contents
+LucidPro, LucidFlex and LucidDirect Accounts
+All positions must be closed by 4:45 PM EST, Monday through Friday
+Any open positions will be automatically closed by Lucid Trading at 4:45 PM EST
+Important: Holding a position past this time does not result in a failed account
+Market Reopen Times:
+Trading resumes at 6:00 PM EST, Sunday through Thursday
+On market holidays with altered closing times, all positions must be closed before the market closes, regardless of the usual 4:45 PM cutoff
+LucidLive Accounts
+Swing trading is not allowed in the new LucidLive accounts
+Traders may hold positions until 4:45 PM EST on Tradovate Live accounts, or 4:15 PM EST on Rithmic Live accounts
+For added risk control, an auto-liquidate option can be enabled to automatically close positions before the aforementioned times
+Auto-liquidation settings and other risk configurations are handled during the LucidLive onboarding process.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Lucid Trading Help Center

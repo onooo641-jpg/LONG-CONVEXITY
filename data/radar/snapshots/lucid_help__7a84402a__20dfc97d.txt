@@ -1,0 +1,38 @@
+Prohibited: Microscalping | Lucid Trading Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Lucid Home
+Lucid Home
+Search for articles...
+All Collections
+Rules and Guidelines
+Prohibited: Microscalping
+Prohibited: Microscalping
+Lucid Trading's microscalping rule: how microscalping is defined, why it is prohibited on evaluation and funded accounts, and how to avoid violations.
+A
+Written by AJ
+August 26, 2026
+Table of contents
+What Is Microscalping?
+Microscalping refers to a trading tactic where a trader attempts to capture very small price movements using very large size within extremely short time frames, often just a few seconds. The goal is typically to exploit how simulated fills work rather than to execute a sustainable trading strategy.
+This is not the same as genuine scalping, which involves short-term trades without attempting to manipulate platform behavior. Genuine scalping is permitted as long as it reflects realistic market activity and order execution.
+What Happens If I Microscalp?
+Lucid Trading uses automated systems to detect Microscalping patterns. You will be flagged if:
+More than 50% of your profits are generated from trades held for 5 seconds or less
+Enforcement Process:
+If your account is flagged, Lucid will initiate a manual review to verify whether the behavior violates company policies
+If bad faith activity is confirmed, you may receive a written warning
+If flagged behavior continues after a warning:
+All profits from microscalping activity will be forfeited
+You may be permanently restricted from using Lucid Trading services
+Traders may request an appeal if they believe the flagged activity was incorrectly identified.
+Why Is It Prohibited?
+Microscalping is not a valid or transferable strategy in the live market. Lucid Trading is committed to helping traders develop realistic, long-term strategies that are viable in professional trading environments.
+Allowing Microscalping:
+Undermines the integrity of the evaluation process
+Makes it difficult to identify genuinely profitable traders
+Threatens the sustainability of the firm
+Lucid Trading’s mission is to support traders building durable careers, not to facilitate system gaming.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Lucid Trading Help Center

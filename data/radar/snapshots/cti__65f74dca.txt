@@ -1,0 +1,230 @@
+Challenge Drawdown Calculator | CTI
+Home
+Funding Programs
+1-Step Challenge
+2-Step Challenge
+Instant Funding
+Direct Funding
+FAQs
+Academy
+Resources
+Join Community
+Blog
+Market News
+Symbols Live Feed
+Economic Calendar
+Trading Platforms
+MetaTrader 5
+Match Trader
+Calculators
+Challenge Drawdown Calculator
+Margin Calculator
+Swap Calculator
+Pip Calculator
+Position Size Calculator
+Risk Of Ruin Calculator
+MT5 Trade Manager
+More
+Become an Affiliate
+Partners
+About Us
+Shop
+Start a Prop Firm
+LOG IN
+FREE TRIAL
+LOGIN
+Home
+Funding Programs
+1-Step Challenge
+2-Step Challenge
+Instant Funding
+Direct Funding
+FAQs
+Academy
+Resources
+Join Community
+Blog
+Market News
+Symbols Live Feed
+Economic Calendar
+Trading Platforms
+MetaTrader 5
+Match Trader
+Calculators
+All Calculators
+Challenge Drawdown Calculator
+Margin Calculator
+Swap Calculator
+Pip Calculator
+Position Size Calculator
+Risk Of Ruin Calculator
+MT5 Trade Manager
+More
+Become an Affiliate
+Partners
+About Us
+Shop
+Start a Prop Firm
+Skip to content
+Free Trading Tools
+Forex Drawdown Calculator
+See what a losing run does to your account, how much you need to gain to get back to level, and exactly where it would breach your drawdown limit. Choose daily, maximum, or trailing drawdown to match the rules you actually trade under.
+1
+Pick your drawdown type. Maximum is fixed from your starting balance, daily resets each day, trailing follows your peak, and end of day trailing only moves when a day closes higher.
+2
+Enter your account and risk. Your starting balance, what you lose on a losing trade, and how many trades to model.
+3
+Watch the red limit line. If the blue balance line crosses below it, that scenario would end your challenge.
+Your Numbers
+Results update automatically as you type. There is nothing to submit.
+Drawdown Type
+Maximum drawdown (from starting balance)
+Daily drawdown (resets each day)
+Trailing drawdown (follows your peak)
+End of day trailing (futures style)
+Drawdown Limit %
+Scenario
+Consecutive losing run
+Mixed wins and losses
+Starting Balance
+Avg. Loss Per Trade %
+Consecutive Losses
+Trades Per Day
+Avg. Gain Per Win %
+Profit Target %
+Win Rate %
+Reset To Defaults
+Your Result
+Balance
+Drawdown Limit
+Starting Balance
+0%
+Worst Drawdown
+0
+Lowest Balance
+0%
+Gain Needed To Recover
+0
+Winning Trades To Recover
+0%
+Gain Needed To Reach Target
+0
+Winning Trades To Reach Target
+Trade By Trade
+How The Balance Moves
+Trade
+Result
+Balance Before
+Change
+Drawdown
+Limit Floor
+Getting The Most From It
+How This Calculator Works
+The calculator runs your numbers through a sequence of trades and tracks what happens to your balance after each one. It then reports the deepest point you reached, how far that sits from your limit, and what it would take to climb back. Everything updates the moment you change a figure, so it is built for trying scenarios rather than getting one answer. A useful habit is to enter the risk you actually trade, then increase the number of losses until something breaks, because that tells you how much room you really have.
+Reading The Result
+The blue line is your balance and the red dashed line is the level that ends your account. If blue crosses below red, that scenario fails. The recovery figure matters just as much: it is always larger than the loss, because you are rebuilding from a smaller balance.
+Choosing A Scenario
+A consecutive losing run is the stress test, showing the worst realistic case. The mixed sequence is closer to normal trading and is better for judging whether your win rate and reward can absorb the losses along the way.
+Being Honest With Inputs
+Use your real average loss rather than your best case, and remember that losing trades cluster together in practice. If a scenario only survives when everything goes to plan, it is not survivable.
+Match Your Account
+When To Use Each Drawdown Type
+Maximum Drawdown
+CFD prop firms
+Your floor is set from your starting balance and never moves. Use this when your firm gives you a fixed loss limit for the whole account. It is the most forgiving type, because profit you make builds a genuine buffer above the floor.
+Daily Drawdown
+CFD prop firms
+Measured from the balance you opened the day with, and it resets each day. Use this to check whether your trading frequency is the real risk, since several losses in one session can end a challenge even when your total loss is modest.
+Trailing Drawdown
+CFD and futures prop firms
+The floor follows your highest balance upward and never comes back down. Use this when your firm trails your peak, and watch how giving back a strong run can breach the limit while you are still in profit overall.
+End Of Day Trailing
+Futures prop firms
+The floor only moves up when a day closes at a new high, so profit made and given back inside the same session never raises it. Use this for futures style accounts where the limit is locked in at the close rather than intraday.
+Common Questions
+Drawdown Questions Answered
+What is drawdown in trading?
+Drawdown is the drop in your account balance from a reference point down to its lowest value. On a funded account that reference point is set by your firm, and it is usually either your starting balance, the balance you opened the day with, or the highest balance you have reached. Once your account falls past the allowed drawdown, the account is closed.
+What is the difference between daily, maximum and trailing drawdown?
+Daily drawdown is measured from the balance you started the day with and resets every day. Maximum drawdown is measured from your starting balance and never moves. Trailing drawdown follows your highest balance upward and never falls back, so it tightens as you make profit. Most funded accounts apply a daily limit and one overall limit at the same time, and breaching either one ends the account.
+What is end of day trailing drawdown?
+End of day trailing drawdown is common on futures accounts. The limit only moves up when a trading day closes at a new high, so profit you make and then give back within the same session never raises your floor. It is more forgiving than trailing drawdown that follows your balance in real time, because intraday spikes do not lock in a higher limit.
+Why do I need a bigger percentage gain than the loss to recover?
+Because the gain is calculated on a smaller balance than the loss was. Losing 10 percent of 100,000 leaves 90,000, and making 10 percent of 90,000 only returns 9,000, which leaves you short. You actually need 11.11 percent to get back to level. The gap widens fast as the loss deepens, so a 50 percent drawdown requires a 100 percent gain to recover.
+How many losing trades in a row can I survive?
+It depends on your risk per trade and your drawdown limit. Risking 1 percent per trade against a 10 percent maximum drawdown gives you roughly 10 consecutive losses before the account fails. Since losing runs of five or six trades are normal even with a solid strategy, a good rule is to keep enough room to absorb at least ten losses in a row.
+Does this calculator work for futures accounts?
+Yes. Choose the end of day trailing option, which is the drawdown type most futures prop firms apply, and set your trades per day so the calculator knows where each trading day ends. The other three types cover the rules used by CFD prop firms.
+Is this drawdown calculator free?
+Yes. It is free, it runs in your browser, and there is no sign up or account required. Nothing you enter is sent anywhere, and results update as you type.
+Please note: This calculator works only from the numbers you enter and is an educational tool. Prop firms differ in how they apply these rules, particularly trailing drawdown, which at some firms stops trailing once you reach a set profit and at others trails on open equity rather than closed balance. End of day trailing is modeled on daily closing balances, which is the common futures approach, but some futures firms trail on intraday highs instead, so check which version your account uses. The mixed sequence spreads wins and losses evenly, which is a simplification, since in real trading they arrive in clusters and a genuine losing streak is usually worse than an even spread suggests. Results are illustrative rather than a prediction of your performance, and nothing here is financial or investment advice. Always check the official rules of the program you are trading.
+Keep Planning
+Our Other Free Calculators
+Become A
+CTI Funded Trader
+Prove your skills. Get rewarded. It’s as simple as that.
+✓ 8 years of consistent payouts
+✓ Keep up to 100% profit share
+✓ Scale up to $4M in funding
+100,000+
+Traders Worldwide
+178+
+Countries
+Highly Rated
+Google Rating
+Get Funded Now →
+Start Free Trial
+*No card needed
+Follow Us
+Funding Programs
+1-Step Challenge
+2-Step Challenge
+Instant Funding
+Direct Funding
+Success Stories
+FAQs
+Free Trial
+Resources
+CTI Academy
+Join Community
+Blog
+Market News
+Symbols Live Feed
+Calculators
+MT5 Trade Manager
+More
+Become an Affiliate
+Partners
+About Us
+Shop
+Start a Prop Firm
+Contact Us
+Contact Support
+Email: support@citytradersimperium.com
+Live Chat: available on the website
+Discord: Join Community
+Terms & Conditions
+Privacy Policy
+Refund Policy
+AML Policy
+Affiliate Agreement
+Conduct Policy
+Editorial Policy
+Sitemap
+Cookie Settings
+Skill assessment programs and simulated demo trading services are provided exclusively by City Traders Imperium Limited, a company incorporated under the laws of Comoros Union with company number 15969 (License No. L15969/CTI), registered address at Hamchako, Mutsamudu, Autonomous Island of Anjouan, Comoros Union, with operating address at Edificio Faro, Oficina 4, Avenidas 12 y 14, Calle 12, Barrio Luján, San José, Costa Rica. City Traders Imperium Academy educational courses are provided by CTI FZCO (Company No. DSO-FZCO-21340), registered at Dubai Silicon Oasis, DDP, Building A1, Dubai, United Arab Emirates.
+Legal Disclosure: City Traders Imperium Limited provides access to simulated trading skill assessment programs designed solely for the evaluation of trading proficiency and risk-management skills. City Traders Imperium Academy provides structured educational courses. All trading activity occurs in a demo environment using virtual capital.
+No Client Funds / No Live Trading: Neither CTI FZCO nor City Traders Imperium Limited is a broker, dealer, exchange, or investment adviser, and neither accepts nor manages client deposits. Participants do not trade real assets or place live market orders. Any rewards are performance-based and derived from skill assessment results only.
+Evaluation & Educational Use Only: All content, tools, and services are provided for educational and evaluation purposes only and shall not be construed as investment advice, solicitation, or an offer to buy or sell any financial product, cryptocurrency, or derivative. Participants are encouraged to consult independent financial, legal, or tax advisors before engaging in any trading activity outside of these services.
+Platforms: MetaTrader 5 & Match-Trader platforms are used exclusively in connection with the simulated skill assessment environment operated by City Traders Imperium Limited.
+Hypothetical Performance Disclosure: Simulated or hypothetical trading results have inherent limitations. Unlike actual performance records, they do not represent real trading activity and may be designed with the benefit of hindsight. No representation is being made that any account will, or is likely to, achieve profits or losses similar to those shown or implied.
+Payments & Refunds: All fees paid are educational service fees for access to courses or skill assessment programs. All fees are non-refundable except as outlined in our Refund Policy .
+Jurisdictional Restrictions: Neither entity offers services to nationals or residents of the following jurisdictions: North Korea (DPRK), Iran, Syria, Cuba, Russia, or to any individual under international sanctions.
+Non-Targeted Reach: Information on these websites is not directed to residents of any country where such distribution or use would be contrary to local law or regulation. It is the user's responsibility to ensure that any use of the websites or services adheres to their local laws or regulations.
+Beware of Impersonators: This is our only official website.
+© 2026 Copyright
+City Traders Imperium & City Traders Imperium Academy.
+All Rights Reserved.
+Black Friday at City Traders Imperium: the only crash you want
+Select an offer to copy its discount code, then claim your discount.
+✕ Copy code CRASH15: Direct Funding, 15% off Copy Copy code CRASH20: 2-Step Challenge, 20% off Copy Copy code CRASH25: Instant Funding, 25% off Copy Copy code CRASH30: 1-Step Challenge, 30% off Copy Claim My Discount Already have an account? Log in

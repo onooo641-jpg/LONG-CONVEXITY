@@ -1,0 +1,256 @@
+TopstepX™ Indicators | Topstep Help Center Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Skip to main content
+Discord Topstep TopstepTV
+Discord Topstep TopstepTV
+Search for articles...
+All Collections
+TopstepX™
+TopstepX™ Indicators
+TopstepX™ Indicators
+Custom Indicators for TopstepX Traders
+July 2, 2026
+Table of contents
+The Basics
+TopstepX comes with a growing set of custom indicators built right into the platform. They're mathematical formulas plotted on price charts — used to confirm trade ideas, track momentum, and manage risk. They don't predict. They provide context. Use them together to build a clearer picture of the day: where price has been, where it's reacting, and how much room it has to move. This article covers custom indicators rolling out this year (2026), and a few classics.
+Topstep's Daily Levels Indicator
+Hoag's key market levels — shared daily on TopstepTV — are built directly into TopstepX as a charting indicator. No plugins, no added cost. Available for ES, NQ, CL, and GC.
+Available for: ES, NQ, CL, and GC.
+Abbreviation
+Level
+Description
+LWH / LWL
+Last Week's High / Low
+Highest and lowest prices in last week's extended hours range
+YH / YL
+Yesterday's High / Low
+Highest and lowest prices in yesterday's extended hours range
+YVAH / YVAL
+Yesterday's Value Area High / Low
+Upper and lower bounds of where 70% of the previous day's volume occurred
+YPOC
+Yesterday's Volume Point of Control
+Price level with the highest trading volume from the previous day
+WKOH / WKOL
+Weekly Kickoff High / Low
+Key levels above/below market price used as potential resistance/support
+Settlement
+Settlement Price
+Official closing price of a futures contract for the trading day
+On Mondays, all "Yesterday's" levels will display Friday's values. Daily levels update each trading day. Weekly levels update once per week.
+How to Access
+Click the Indicators tab on your chart.
+Search "Topstep's Daily Levels" and select it from the dropdown.
+Click the star icon to favorite it for easy access.
+To customize colors or labels, click the Settings gear.
+New Indicators
+🙌 Check back often — New indicators will be added here as they roll out. For the video walkthroughs on every new Indicator dropping this summer, checkout our playlist here: Summer of TopstepX Indicators
+This first set answers the 3 questions every futures day-trader asks throughout the session: where did today's range start, what's happening right now, and where is the price stalling? Together, they're the structural skeleton of the trading day — and the foundation everything else builds from.
+Sessions 🕝
+👉 Shade the Asia, London, and NY CME futures sessions and track each session's High/low with dashed lines.
+What it shows
+3 background-shaded windows: Asia (17:00–02:00 CT), London (02:00–08:30 CT), NY (08:30–16:00 CT). A small label pops at the first bar of each session.
+😎 You asked, we delivered. Optional dashed High/Low lines — a feature you requested — now lock at session close and persist through the day.
+Settings
+Session times — defaults for CME equity index futures; adjust for other contracts
+Show/hide High/Low — toggle dashed lines per session
+Hide High/Low During Session — hides the running line; only shows locked level after close
+Show Session Labels — default on; turn off to reduce clutter
+Background opacity — dial down when stacking other overlays
+👯‍♀️ Pairs well with: Opening Range, Initial Balance, VWAP
+Opening Range 📐
+👉 Capture the initial range of the session and project breakout extension targets based on that range.
+What it shows
+High/low of the first 15 minutes from a configurable open time (default 08:30 CT). Projects ±0.5R, ±1.0R, and ±2.0R extensions using the range height as the unit. All lines extend through the day and break across sessions.
+Settings
+OR length (minutes) — default 15; increase to 30–60 for slower markets
+Extension multipliers — default 0.5, 1.0, 2.0
+Open time — default 09:30; adjust for your session
+Display Mode — Stepped (builds bar-by-bar) or Straight (flat line after OR locks)
+⚖️ Pairs well with: Initial Balance, Sessions, ATR-based stops
+Initial Balance ⏰
+👉 The first hour's high/low — a Market Profile staple defining the day's value range and anchoring extension targets.
+What it shows
+Same math as Opening Range, but with a 60-minute default window. IB high/low shown in purple/orange (distinct from OR's teal/red), plus ±0.5R, ±1.0R, and ±2.0R extensions.
+Settings
+IB length (minutes) — default 60
+Extension multipliers — default 0.5, 1.0, 2.0
+Open time — default 09:30
+Display Mode — Stepped or Straight
+👯‍♂️ Pairs well with: Opening Range, Sessions, VWAP
+Heikin-Ashi (HA) Trend 🕯️
+👉 Recolor candle bodies using Heikin-Ashi direction to smooth noise and reveal directional flow — without replacing your real bars.
+What it shows
+Computes HA values and paints each candle body green (HA close > HA open) or red (HA close < HA open). Real price bars stay intact — only the body color changes, so true highs/lows and fills remain visible.
+Settings
+HA smoothing — default 0 (raw HA); increase to 5–10 for extra noise reduction
+Up/down colors — customize to match your chart theme
+🪄 Pairs well with: Trend Magic, SSL Hybrid, Wave Trend, any MA-based system
+Price Info ℹ️
+👉 Right-axis price tags for the real close, the HA close, and a round-number ladder — no chart clutter, no auto-scale distortion.
+What it shows
+3 independent features, all rendered as right-axis tags by default:
+Close — actual bar close
+HA Close — projected Heikin-Ashi close; smoothed "fair value" next to the real close
+Round Numbers — price ladder snapped to a configurable increment (default 25), with up to 5 levels above and below the current price
+Settings
+Show Close / Show HA Close — both default on
+Show Historical Line — default off; turn on to draw a chart-spanning line for Close or HA Close
+Show Round Numbers — default off
+Round Number Increment — default 25 (ES); set to 50 for NQ, 1 for CL, etc.
+Levels Above / Levels Below — default 3 each
+👯‍♀️ Pairs well with: Sessions, Opening Range, Initial Balance, Wave Trend, TDI
+Trend direction. Early reversals. Noise filtered out. These four indicators keep you on the right side of the move.
+Trend Magic 🧲
+👉 An ATR-based trailing stop line that shifts color when momentum flips.
+What it shows
+Trend Magic plots a single stair-step line that tracks price at a volatility-adjusted distance. The line stays blue when the Commodity Channel Index (CCI) is positive (uptrend) and flips red when CCI goes negative (downtrend). It ratchets with the trend and never reverses until momentum changes direction.
+Settings
+CCI Period (default 20) — shorter catches faster momentum shifts; longer smooths out noise
+ATR Period (default 5) — controls how responsive the stop is to recent volatility
+ATR Multiplier (default 1.0) — increase to widen the stop distance; decrease to tighten it
+🌊 Pairs well with: Wave Trend, SSL Hybrid, Squeeze Momentum
+SLL Hybrid 📊
+👉 Two moving averages that flip roles when the trend changes.
+What it shows
+SSL Hybrid plots a moving average of highs and a moving average of lows, then swaps which one is on top based on where price closes. When price breaks above the high MA
+, the indicator goes bullish and shades green. When price breaks below the low MA, it goes bearish and shades red. The space between the two lines forms a channel that tracks the current trend.
+Settings
+SSL Length (default 10) — shorter reacts faster to price moves; longer smooths the channel
+MA Type (default SMA) — switch to EMA for faster response to recent price action
+👯‍♀️ Pairs well with: Trend Magic, Range Filter, Opening Range
+T3 📈
+👉 A six-stage smoothed moving average that stays responsive without lag.
+What it shows
+T3 runs price through six cascading exponential smoothing stages, then blends them with a volume factor to produce a line that's both smooth and quick to react. It filters out market noise better than a simple EMA while still turning with the trend before traditional moving averages catch up.
+Settings
+Length (default 8) — increase for a smoother line; decrease for faster reaction
+Volume Factor (default 0.7) — higher values increase smoothing; lower values make it more EMA-like; try 0.618 for golden ratio weighting
+👯‍♂️ Pairs well with: VIDYA, SSL Hybrid, Zero Lag MACD
+VIDYA 🌀
+👉 An adaptive moving average that speeds up in trends and slows down in chop.
+What it shows
+VIDYA adjusts its smoothing speed based on the Chande Momentum Oscillator (CMO). When the market is trending strongly, VIDYA tightens up and tracks price like a fast EMA. When momentum is balanced and the market is choppy, VIDYA slows down and nearly flattens, reducing false signals.
+Settings
+Length (default 9) — base smoothing period; shorter for a faster baseline; longer for a smoother line
+CMO Length (default 9) — controls how quickly the indicator adapts to momentum changes; match to your trading timeframe
+🪄 Pairs well with: T3, Trend Magic, Wave Trend
+These four indicators answer two common trader questions: how do you spot momentum shifts without traditional MACD lag, and how do you know when RSI conditions are truly extreme versus just noise?
+Wave Trend 🌊
+​ What it Shows
+Wave Trend tracks price momentum through 2 smoothed lines that oscillate around a zero centerline — similar to RSI or MACD but with extra smoothing to cut out market noise. The fast line (wt1) reacts to price changes; the slow line (wt2) confirms. The shaded area between them shows their divergence.
+Best for scalpers and short-term traders who need momentum signals that react fast without whipsawing on every tick. The double-smoothing makes it ideal for choppy markets where standard RSI throws too many false signals.
+Settings:
+Channel Length (default 10) — lower = more responsive, noisier
+Average Length (default 21) — higher = less whipsaws, more lag
+Overbought/Oversold levels (default ±60/±53) — adjust for your instrument's volatility
+⇉ Pairs well with: SSL Hybrid, Range Filter, Opening Range
+Traders Dynamic Index (TDI) 🎯
+​ What it Shows
+TDI adds fast and slow moving averages of RSI, plus volatility bands that expand and contract with market conditions. The indicator displays 3 layers of information: direction (RSI price line vs. signal line), momentum (MA crossovers), and context (bands reflect when RSI is compressed or extended).
+​
+Settings:
+RSI Length (default 13) — controls the RSI calculation period
+Fast MA Length (default 2) — controls green RSI Price Line responsiveness
+Band Length and Multiplier (defaults 34, 1.6185) — adjusts the width of the volatility envelope
+Pairs well with: Trend Magic, SSL Hybrid, Wave Trend, Sessions
+Zero Lag MACD ⚡️
+​ What it Shows
+Zero Lag MACD applies a lag-correction technique to both the MACD line and signal line, so crossovers and divergences appear earlier than with standard MACD. The familiar MACD line, signal line, and histogram are all present — the difference is in the math, which removes the delay built into traditional exponential moving averages.
+Settings:
+Fast Length (default 12) — lower values increase responsiveness
+Slow Length (default 26) — the baseline moving average period
+Signal Length (default 9) — controls smoothing on the signal line; lower values speed up crossovers
+Pairs well with: SSL Hybrid, HA Trend, Range Filter, Squeeze Momentum
+Trend Cycle 🔁
+​ What it Shows
+Trend Cycle runs a stochastic calculation on MACD, then smooths the result with a second stochastic layer. The output is a momentum indicator that cycles between 0 and 100 — combining MACD-style trend detection with the bounded, oscillating behavior of a stochastic. The line color reflects direction: green when rising, red when falling.
+Settings:
+MACD Fast/Slow Lengths (defaults 23, 50) — controls baseline trend sensitivity
+Cycle Length (default 10) — stochastic lookback period; lower values increase reactivity
+Smoothing Factor (default 0.5) — higher values smooth the output but add lag
+Pairs well with: Trend Magic, VWMA Bands, Wave Trend
+Built to spot the coil before it springs, these four indicators detect compression, directional bias, and volume-weighted context to tell you whether the market is building energy or releasing it.
+Range Filter 🎢
+​👉 A stair-step trend line that only moves when price breaks through a smoothed range gate. ​
+What it shows
+Price has to earn a direction change here. The filter holds flat until price pushes past a smoothed threshold — built on average range or ATR. When it breaks through, the line steps up or down and color-shifts. Bands frame the gate, giving you a visual buffer zone.
+Settings
+Range Quantity (default 2.618): Higher = wider gate, fewer updates. Lower = tighter tracking.
+Range Period (default 14): Window for smoothed range calculation.
+Range Type (default Average Change): Switch to ATR for volatility-adjusted gating.
+Smoothing Period (default 27): Extra EMA pass — higher smooths more.
+Pairs well with: Squeeze Momentum, SSL Hybrid, Wave Trend.
+Squeeze Momentum 💥
+​👉 Detects volatility compression and shows momentum direction via histogram — catch the coil before the spring.
+What it shows
+Bollinger Bands squeezing inside Keltner Channels means volatility is compressed. This indicator watches for that moment. A dot at the zero line tracks the squeeze state. The histogram shows momentum direction and strength via linear regression of price deviation from a midpoint reference.
+Settings
+BB Length / KC Length (default 20): Lookback for both bands. Shorter = more sensitive squeezes.
+BB MultFactor (default 2.0): Bollinger width. Higher = fewer squeezes.
+KC MultFactor (default 1.5): Keltner width. Lower = more squeezes.
+Pairs well with Range Filter, Trend Magic, VWMA Bands.
+VWMA Bands 📊
+​👉 Volume-weighted moving average with standard deviation bands — price meets participation.
+What it shows
+A simple moving average treats every bar the same. VWMA doesn't. It weights price by volume, so the line tracks where real participation lives. 2 pairs of deviation bands frame the range, expanding and contracting with volume-weighted volatility. 1σ captures ~68% of price action. 2σ captures ~95%.
+Settings
+Length (default 20): Rolling window size. Shorter = more reactive, longer = smoother.
+Inner σ Mult (default 1.0): First deviation band. Lower = tighter zone.
+Outer σ Mult (default 2.0): Second deviation band. Higher = wider extremes.
+Pairs well with Squeeze Momentum, CVO, Range Filter.
+VWAP Bands 📈
+​👉 Volume-weighted average price with standard deviation bands — price meets participation.
+What it shows
+VWAP weights price by volume, so the line tracks where real participation lives — not just where price went. 2 pairs of deviation bands frame the range, expanding and contracting with volume-weighted volatility. 1σ captures ~68% of price action. 2σ captures ~95%.
+Pairs well with Squeeze Momentum, CVO, Volume Profile, RSI, MACD.
+This bundle covers three closely related Smart Money Concepts (SMC) that together map price inefficiency on the chart: where it was created, where it failed, and where two opposing gaps overlap into a magnet zone.
+Fair Value Gap 📐
+👉 Highlight three-candle price imbalances where the market moved too fast to trade both sides, leaving a gap that price is drawn back to fill.
+What it shows
+A Fair Value Gap (FVG) forms when a large middle candle moves so aggressively that a gap opens between the first candle's wick and the third candle's wick — meaning no trading occurred across that price range. A bullish FVG is the zone between candle 1's high and candle 3's low; a bearish FVG is the zone between candle 1's low and candle 3's high. The indicator shades these zones on the chart as they form and keeps them visible until price returns to close them (mitigate them).
+Pairs well with: Inverse Fair Value Gap, Balanced Price Range, Sessions, Opening Range
+Inverse Fair Value Gap 🔄
+👉 Track Fair Value Gaps that have been violated and flipped — imbalances that failed become the new draw for the opposite move.
+​
+What it shows
+An Inverse Fair Value Gap (IFVG) forms when price closes through an existing Fair Value Gap rather than respecting it. A violated bullish FVG flips to a bearish IFVG; a violated bearish FVG flips to a bullish IFVG. The indicator auto-detects the flip and reshades the zone in the new direction, keeping it active until price returns to retest it.
+Pairs well with: Fair Value Gap, Balanced Price Range, HA Trend
+Balanced Price Range ⚖️
+👉 Find the overlap zone where a bullish and bearish Fair Value Gap collide — the price range the market has visited from both sides.
+​
+​ What it shows
+A Balanced Price Range (BPR) forms when a bullish FVG and a bearish FVG on the same timeframe overlap in price. The indicator identifies these overlapping pairs automatically and shades the specific intersection — a zone where both imbalances converge. The overlap is typically narrower than either source gap individually and remains active until price closes through it.
+Pairs well with: Fair Value Gap (BPRs are built from FVGs), Inverse Fair Value Gap, Sessions, Opening Range
+Raw volume tells you how much. These tell you who. CVD tracks the cumulative tally of buying versus selling aggression; CVO smooths it into an oscillator to surface divergence and momentum shifts at a glance.
+Cumulative Volume Delta (CVD) 📈
+👉 Track the running balance of buying versus selling aggression to see whether price moves are backed by conviction or running out of fuel.
+What it shows
+Volume Delta is the difference between market-buy volume and market-sell volume on each candle — positive when buyers are more aggressive, negative when sellers are. Cumulative Volume Delta adds those values up over a chosen period (typically the session or trading day), giving you a running score of who has been in control. The indicator displays this as a line or histogram below the price chart.
+Pairs well with: Cumulative Volume Oscillator (CVO), Sessions, Opening Range, Price Info
+Cumulative Volume Oscillator (CVO) 〰️
+👉 Convert the raw running delta of buying versus selling aggression into a smoothed oscillator — making momentum shifts and divergences easier to read at a glance.
+What it shows
+The Cumulative Volume Oscillator takes Cumulative Volume Delta and applies 2 moving averages of different lengths to it, then plots the difference — similar in concept to MACD, but applied to delta rather than price. The result oscillates above and below a zero line, rising when short-term buying aggression is outpacing its longer-term average and falling when selling aggression is accelerating.
+Pairs well with: Cumulative Volume Delta (CVD), HA Trend, Sessions
+Related Articles
+TopstepX™
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Your Privacy Choices

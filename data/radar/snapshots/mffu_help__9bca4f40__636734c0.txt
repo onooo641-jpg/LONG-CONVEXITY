@@ -1,0 +1,60 @@
+Trading 101 in Volumetrica | My Funded Futures Help Center Skip to main content
+Go to website Discord YouTube English हिन्दी Español English
+Go to website Discord YouTube English हिन्दी Español English
+Search for articles...
+All Collections
+Trading Platforms
+Trading 101 in Volumetrica
+Trading 101 in Volumetrica
+Trading panels in Volumetrica by MyFunded Futures
+August 24, 2026
+Table of contents
+Placing trades on the Volumetrica platform is designed to be intuitive and efficient, offering various methods to execute your trading strategies effectively. The platform supports OCO (One Cancels Other) orders, which automatically cancel one order if the other is executed, helping to manage your trades more effectively.
+Types of Orders
+Market Orders : Execute a trade immediately at the current market price.
+Limit Orders : Set a specific price at which you wish to buy or sell an asset.
+Stop Orders : Trigger a trade once a specified price level is reached.
+Looking to Get Funded to Trade on Volumetrica?
+How to Place a Trade
+1. Enable Trading:
+Before placing any trade, ensure that trading is enabled by toggling the button located in the top-right corner of the platform. This action activates trading functionalities for your account.
+Confirm that the correct trading account is selected for executing your trades.
+2. Configure the Trade:
+Step 1: Select the quantity of the asset you wish to trade.
+Step 2: Choose the appropriate account number to ensure that the trade is processed through the intended account.
+Step 3: Decide on the type of order you wish to place: Market, Limit, or Stop.
+Step 4: Before finalizing the order by clicking the buy or sell button, you have the option to configure Multi OCO or Single OCO settings for order brackets.
+Note: You can also adjust your Stop Loss (SL) and Take Profit (TP) levels directly on the chart by dragging the respective levels.
+Placing a Stop and Limit Order
+Initiate the Order:
+Click on the Limit (LMT) buy or sell button.
+Hover your cursor over the desired price level on the chart where you want to place the order.
+Brackets will appear at the price level; left-click to confirm the order placement.
+If you decide not to place the order, right-click to cancel it.
+Configuring OCO Orders
+Single OCO:
+Toggle the OCO button to activate the OCO functionality.
+Set your Stop Loss (SL) and Take Profit (TP) levels in ticks to define the order brackets.
+Once you place the order, the system will display the SL and TP levels along with estimated potential loss and profit projections.
+Multiple OCO:
+Select "Multi" from the mode dropdown to enable multiple OCO configurations.
+Click the gear icon to open the settings popup.
+In the popup window, click "Add New Strategy."
+Enter the quantity and the stop tick value while ensuring the stop toggle is selected. Confirm by clicking the "Add Bracket" button.
+To set the target, toggle the Target option, adjust the quantities according to your strategy, and specify the bracket trims with the corresponding TP targets.
+Click on New Strategy.
+After placing the Stops and TP's Save the strategy with the name.
+Your strategy will be saved in the desired name. In this case it is saved as MFFU.
+Flattening Trades
+If you need to quickly close all open positions, use the "FLAT" button. This action will flatten all positions, ensuring that no trades remain open if a mis click or issue arises.
+For further assistance or inquiries, please do not hesitate to contact our customer support team. We are committed to providing you with the necessary support to make the most of your trading experience on Volumetrica.
+​
+Explore MyFundedFutures (MFFU) Coupons Code.
+Related Articles
+News Trading Policy
+Fair Play and Prohibited Trading Practices
+Overview of Supported Platforms at MFFU
+Introduction to Volumetrica
+Workspaces and Templates in Volumetrica
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

@@ -1,0 +1,32 @@
+Crypto Payments | Alpha Futures Limited Help Center Skip to main content
+Search for articles...
+All Collections
+Getting Started
+Crypto Payments
+Crypto Payments
+Can I pay for my Evaluation with Crypto?
+B
+Written by Benjamin Chaffee
+March 25, 2026
+Table of contents
+Evaluation Accounts may be purchased via crypto currency.
+Crypto payments are processed via CoinPayments.
+The supported currencies and networks:
+ETH (Ethereum network ERC-20)
+USDT (Ethereum network ERC-20)
+USDC (Ethereum network ERC-20)
+USDT (Tron network TRC-20)
+SOL (Solana network SOL)
+USDC (Solana network USDC.SOL
+Resets and Rebills via crypto
+Automatic billing is not possible via crypto and will need to manually make this payment via the dashboard on your rebill date.
+Purchasing a reset of your account via crypto is a similar process to any other payment.
+Select the account you wish to reset and select CoinPayments and you will be redirected to the coin payments website with an option to select one of the four currencies we accept.
+An address and amount will then be provided for the payment to be made within a one hour time frame
+Rebills via crypto can be done within the “Billing details” tap within the dashboard.
+Select the account you wish to rebill and press the three dots under the action section and select “rebill”. This will then prompt the coin payments page and upon a successful payment the selected accounts expiry will extend by a month.
+It is the traders responsibility to ensure the correct amount is sent and on the correct network.
+Sending on the wrong network may result in the funds being lost. Alpha has no way of retrieving these funds for the trader. We would not receive this payment and the user will need to reach out to CoinPayments directly for assistance in returning these funds. CoinPayments may be able to assist in returning these funds but it is not guaranteed.
+Sending less than the amount stated during the checkout will result in the trading account not being issued and an email will be received from CoinPayments within 48 hours outlining steps to claim these funds back. Ensure take fees into account when sending a payment as this may be deducted of the amount sent and result with a under payment.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

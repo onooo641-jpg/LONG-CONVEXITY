@@ -1,0 +1,117 @@
+Futures Instant Rules | The Trading Pit Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Poppins".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Website Community Client Area العربية English Deutsch Italiano 日本語 Bahasa Melayu Português 简体中文 Español Türkçe Tiếng Việt English
+Website Community Client Area العربية English Deutsch Italiano 日本語 Bahasa Melayu Português 简体中文 Español Türkçe Tiếng Việt English
+Search for articles...
+All Collections
+FUTURES
+Futures Instant
+Futures Instant Rules
+Futures Instant Rules
+All the rules for your Futures Instant account: drawdown, Daily Pause, consistency, contract limits, holding and prohibited practices.
+Updated over 2 weeks ago
+Table of contents
+These are the rules for your Futures Instant account. Because Futures Instant has no Challenge, they all apply throughout the Earning Phase. Two outcomes are used:
+Daily Pause — trading stops for the rest of the day, but your account stays active.
+Hard Breach — the account is closed.
+Exact limits depend on your account size and are shown on your dashboard.
+At A Glance
+Rule
+Type
+Maximum Drawdown — EOD, Trailing To Static
+Hard — Breaches The Account
+Daily Pause — Dynamic
+Pauses Trading Until The Next Day (Not A Breach)
+Maximum Contracts
+Set By Account Size
+20% Consistency Rule
+Blocks Payouts (Not A Breach)
+Profit Target
+Payout Requirement
+Overnight & Weekend Holding
+Not Allowed — Positions Closed Automatically
+News Trading
+Allowed
+Copy Trading
+Allowed Between Your Own 2 Accounts
+Inactivity
+14 Days — Breaches The Account
+Hedging (Opposing Positions)
+Strictly Prohibited
+Micro-Scalping
+Prohibited
+High-Frequency Trading (HFT)
+Prohibited
+Loss limits
+Maximum Drawdown (Hard Breach)
+Your maximum drawdown is $2,000 on a $50,000 account and $3,500 on a $100,000 account. It's calculated on your end-of-day (EOD) balance and works on a trailing-to-static model: the drawdown level trails your highest EOD balance upward until it reaches your starting balance, then locks there and stops trailing. If your balance falls to the drawdown level, the account is breached.
+Example ($50,000 account):
+• Starting balance $50,000 → initial drawdown level $48,000.
+• You end the day at $51,000 → level trails to $49,000.
+• You end a later day at $52,000 → level reaches $50,000 (your starting balance) and locks there — it won't trail higher even if your balance keeps rising.
+Daily Pause (Dynamic)
+Your Daily Pause starts at $1,200 on a $50,000 account and $2,200 on a $100,000 account. It is dynamically recalculated daily as 60% of your best accumulated EOD profit to date. It only ever increases as your profit grows.
+If your loss for the day reaches your Daily Pause, your open positions are closed and trading is paused until the next day. Your account is not breached.
+Example ($50,000 account):
+• Until your accumulated EOD profit passes $2,000, your Daily Pause stays at $1,200 (60% of $2,000 = $1,200).
+• Your accumulated EOD profit reaches $2,300 → Daily Pause rises to $1,380.
+• You lose $300 the next day (accumulated profit $2,000) → Daily Pause stays at $1,380. It never decreases.
+• Your accumulated EOD profit reaches a new high of $2,900 → Daily Pause rises to $1,740
+Maximum Contracts
+The number of contracts you can hold depends on your account size:
+• $50,000 account: up to 4 Mini or 40 Micro contracts.
+• $100,000 account: up to 8 Mini or 80 Micro contracts.
+Consistency
+20% Consistency Rule (Blocks Payouts)
+Your biggest profitable day must not exceed 20% of your total profit before you request a payout.
+The rule resets after every approved payout.
+Example:
+• Biggest profitable day $600 ÷ 0.20 = $3,000 total profit required.
+Profit Target (Payout Requirement)
+To request a reward, you need at least $3,000 profit on a $50,000 account or $6,000 on a $100,000 account. If you haven't stayed within the 20% Consistency Rule, your profit target may increase. Your dashboard always shows your current profit target.
+Trading conditions
+Overnight & Weekend Holding (Not Allowed)
+Futures Instant is intraday only. Positions can't be held overnight or over the weekend. The daily trading session runs from 17:00 CT to 15:55 CT, and any position still open at the end of the session is closed automatically.
+News Trading (Allowed)
+Allowed on all Futures Instant accounts.
+Be mindful of the heightened volatility and large, unpredictable price swings around high-impact news.
+Important: While news trading is permitted on Futures Instant accounts, traders are expected to maintain a disciplined and professional approach to risk management. If our Risk Team identifies a consistent pattern of trading exclusively around news events in a way that resembles gambling behavior, excessive risk-taking, or an attempt to exploit extreme market volatility rather than sustainable trading performance, the Risk Team reserves the right to review the account and take appropriate measures in accordance with our Terms & Conditions.
+Copy Trading (Allowed, With Limits)
+You can copy trades between your own two Futures Instant accounts.
+Shared or mirrored trading between different users, or copying signals from an account that isn't yours, is strictly prohibited.
+If you use a trade copier, you're responsible for it.
+• Any software errors, malfunctions or unintended trades caused by the copier are your responsibility. If the copier fails, you'll need to troubleshoot or fix the tool on your side.
+• Account resets or balance adjustments are not given for individual technical issues. Only verified firm-wide outages affecting many traders may qualify.
+Inactivity (Hard Breach)
+If no trade is placed for 14 days, the account is breached.
+Prohibited practices
+Hedging — Opposing Positions (Strictly Prohibited)
+The Trading Pit prohibits hedging across accounts to ensure fair trading conditions, accurate performance evaluation, and compliance with CME exchange standards. Traders are expected to maintain genuine market exposure at all times.
+• What's not allowed? Holding opposing positions across accounts you own or control, or coordinating opposite trades with another trader.
+• Does it include related instruments? Yes, correlated products count too (e.g., NQ vs. MNQ, ES vs. MES), even with different contract sizes.
+• What are the consequences? Position closure, account liquidation, profit removal, and possible permanent bans, even if unintentional.
+Micro-Scalping (Prohibited)
+The Trading Pit prohibits micro-scalping because it exploits execution mechanics rather than reflecting genuine market participation. Traders are expected to use realistic, scalable strategies that can be applied consistently in live markets.
+• What is micro-scalping? Targeting very small price moves with large position sizes and holding trades for only a few seconds.
+• Is all scalping prohibited? No. Short-term trading based on market conditions with realistic execution is allowed. It's prohibited when results depend on execution mechanics and wouldn't transfer to real markets.
+• How is it detected? Automated monitoring flags accounts where, for example, over 50% of profits come from trades held 15 seconds or less, or where ultra-fast entries and exits are combined with disproportionate sizing.
+• What happens if flagged? The account undergoes manual review. Confirmed violations may result in a warning, profit removal, restrictions, or permanent closure.
+High-Frequency Trading (HFT) (Prohibited)
+The Trading Pit prohibits high-frequency trading to protect platform stability, ensure fair access for all traders, and support strategies that reflect real-world market conditions. Trading should demonstrate skill-based decision-making rather than speed or technological advantage.
+• What is HFT? Automated or algorithmic trading that submits large numbers of orders within seconds or milliseconds to capture small price discrepancies.
+• Why is it prohibited? It strains platform infrastructure, creates speed-based advantages over other traders, and can distort execution data.
+• How is it detected? Monitoring systems flag exceptionally high order volume, rapid placement and cancellation cycles, and activity inconsistent with manual trading.
+• What happens if flagged? The account undergoes internal review. Confirmed violations may result in a warning, profit removal, account closure, or permanent loss of access.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Risk Disclosure:
+All material published and disseminated by The Trading Pit should be considered as general information only. The information provided by the The Trading Pit or included herein is not intended to serve as (a) investment advice, (b) an offer or solicitation to buy or sell any securities, or (c) a recommendation, endorsement, or sponsorship of any security, company, or fund. Testimonials featured on the The Trading Pit’s website(s) may not reflect the experiences of other clients or customers and do not guarantee future performance or success. Using the information on the The Trading Pit’s website(s) is at your own risk. The Trading Pit, along with its partners, representatives, agents, employees, and contractors, does not accept any responsibility or liability for the use or misuse of such information.
+Trading leveraged instruments carries significant risk and is not suitable for all investors. Investors may lose all or more than their initial investment. Only risk capital—money that can be lost without affecting one’s financial security or lifestyle—should be used for trading, and only those with sufficient risk capital should engage in trading. This document is not a solicitation or an offer to buy or sell futures, options, or forex. Past performance does not necessarily predict future results.
+Hypothetical or simulated performance results have inherent limitations. Unlike an actual performance record, simulated results do not reflect real trading. Additionally, because these trades have not been executed, the results may have under- or overcompensated for the impact of certain market factors, such as lack of liquidity. Simulated trading programs are also typically designed with the benefit of hindsight. There is no guarantee that any account will achieve profits or losses similar to those shown.
+The Trading Pit does not offer Contracts for Difference to residents of certain jurisdictions including the USA, Canada and Russia. For a full list of restricted countries for our services please see our FAQs.
+This website is owned and operated by The Trading Pit Challenge GmbH with registration number FL-0002.693.417-1 and registered address at Heiligkreuz 6, 9490, Vaduz, Liechtenstein.
+The Trading Pit Challenge GmbH is part of The Trading Pit Group ("TTP Group") which provides the following services:
+The Trading Pit AG with registration number FL-0002.688.743-6 is the holding company of the Group.
+The Trading Pit Champions GmbH with registration number FL-0002.693.413-9 provides platform services to The Trading Pit Challenge GmbH
+The Trading Pit Limited with registration number ΗΕ 431291 provides business and administration services to the Group companies.
+© 2026 The Trading Pit Challenge GmbH. All Rights Reserved.

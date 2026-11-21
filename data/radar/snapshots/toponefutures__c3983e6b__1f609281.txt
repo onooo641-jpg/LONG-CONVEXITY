@@ -1,0 +1,125 @@
+🔥 Ignite Accounts Overview | Top One Futures Help Center Skip to main content
+Top One Futures Home
+Top One Futures Home
+Search for articles...
+All Collections
+Ignite Accounts
+🔥 Ignite Accounts Overview
+🔥 Ignite Accounts Overview
+Everything you need to know about the Ignite account in one place.
+Updated over a week ago
+Table of contents
+Ignite is a plan designed to help traders start fast: simple rules, flexible payout options, no recurring fees, and our lowest-cost instant funded account . It is perfect for traders who want a clean, affordable entry into futures with the ability to scale quickly. All plans are one-time fees with no monthly or activation charges.
+Account sizes
+Ignite is available in $25,000, $50,000, $100,000 and $150,000 .
+Rules at a glance
+Rule
+$25K
+$50K
+$100K
+$150K
+Trading
+Daily loss limit (soft breach)
+$500
+$1,000
+$2,000
+$3,000
+Max loss limit (EOD trailing)
+$1,000
+$2,000
+$4,000
+$6,000
+Max contracts
+1 mini (10 micros)
+3 minis (30 micros)
+5 minis (50 micros)
+7 minis (70 micros)
+Payouts
+Profit target per payout (5%)
+$1,250
+$2,500
+$5,000
+$7,500
+Max per payout
+$500
+$1,000
+$1,500
+$2,000
+Minimum payout
+$250
+$250
+$250
+$250
+Same for every account size
+15% consistency rule: no single day may represent more than 15% of your total profit.
+No minimum trading days. You can reach your payout target in any number of days as long as you meet the consistency requirement.
+End-of-day trailing drawdown. Your breach level is active from the moment you start: starting balance minus your max drawdown (e.g. $50,000 − $2,000 = $48,000).
+It trails upward as your account reaches new highs.
+It moves up only at the end of the day, based on your closing balance. Intraday highs don’t move it.
+It does not move down if your balance decreases.
+The breach level is checked in real time. If your equity goes at or below it at any moment, the account is breached.
+90% / 10% profit split. You keep 90% of your payout amount.
+The 5% profit target resets after every payout cycle.
+Why traders pick Ignite: the lowest-cost instant funded account, one-time fee, simple rules and payouts as soon as you hit 5% profit with the consistency rule met.
+Daily Loss Limit (DLL)
+If your DLL is hit, your account is paused for the rest of the trading day and resumes when markets reopen at 6:00 pm ET .
+Overnight trading and EAs
+Overnight trading and expert advisors or bots are not allowed .
+All trades must be closed by 4:00 pm ET .
+Minimum trade time is 10 seconds . See our prohibited trading practices for the details of the 10-second rule.
+Payouts
+First payout: available once you have achieved a 5% profit and met the 15% consistency rule . No minimum trading day requirement.
+Subsequent payouts: each payout requires another 5% profit relative to the balance after your last payout.
+You can request a payout as soon as you reach your consistency and profit target.
+Minimum payout: $250 . Profit split: 90% to you , 10% stays with the firm.
+See Payout Requirements for worked examples.
+Drawdown lock
+Once your profits reach the drawdown amount plus $100 , your trailing drawdown locks at $100 above your starting balance and no longer follows account growth. This gives more stability as you scale. The lock also activates after your first payout .
+Account size
+Lock triggers at
+Drawdown locks at
+$25,000
+$26,100
+$25,100
+$50,000
+$52,100
+$50,100
+$100,000
+$104,100
+$100,100
+$150,000
+$156,100
+$150,100
+Transition to live trading
+After three successful Ignite payouts from a single account, your trading performance is reviewed by our Risk Team.
+The Risk Team may keep you in the sim-funded environment for further review, or transition you to a live account.
+Top One Futures may transition you to live before your third payout at its discretion.
+When moving to live, you begin with one live account . Any additional accounts are closed.
+Copy trading rules
+You may hold and copy trade up to 10 Ignite accounts of the same size .
+Allowed
+Not allowed
+Ignite 25K to Ignite 25K
+Between different plan types (Ignite to Instant, Elite Daily, Elite Access)
+Ignite 50K to Ignite 50K
+Between different Ignite sizes (25K to 50K or 100K)
+Ignite 100K to Ignite 100K
+Ignite 150K to Ignite 150K
+Violating copy trading or group trading policies may result in account termination and forfeiture of payouts. For the full policy, see our Copy and Group Trading rules.
+Common questions
+Can I copy trade Ignite with other plan types? No. Copy trading is allowed only between Ignite accounts of the same size.
+How is the consistency rule calculated? No single trading day should represent more than 15% of your total profit. This ensures steady, sustainable results before payouts. See the 15% Consistency Rule article .
+Related articles
+Ignite Accounts – Payout Requirements
+Ignite Accounts – 15% Consistency Rule
+Prohibited Trading Practices
+Copy Trading Policy
+Related Articles
+Overview of the Instant Sim Funded Program
+🔥 Ignite Accounts : Payout Requirements
+Elite ACCESS Accounts – Overview
+Elite ACCESS Intraday Accounts - Overview
+Elite ACCESS Static Accounts - Overview
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+We run on Intercom

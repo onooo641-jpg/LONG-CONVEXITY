@@ -1,0 +1,60 @@
+What is the Maximum Number of Accounts I Can Trade? | Top One Futures Help Center Skip to main content
+Top One Futures Home
+Top One Futures Home
+Search for articles...
+All Collections
+General Rules
+What is the Maximum Number of Accounts I Can Trade?
+What is the Maximum Number of Accounts I Can Trade?
+The maximum number of active funded accounts per account category, the total capacity, the Live Funded restriction, and copy trading limits.
+Updated over a month ago
+Table of contents
+Each account category at Top One Futures has its own independent limit on the number of active funded accounts you can hold. This article lists the maximum per category, the total capacity, and the restrictions that apply to Live Funded accounts and copy trading .
+Maximum active accounts per category
+Account category
+Maximum active accounts
+Size rule
+Elite Daily Funded
+5
+All 5 must be the exact same account size
+Elite ACCESS Funded + Elite ACCESS Intraday Funded (combined)
+10 in total (Elite ACCESS and Elite ACCESS Intraday count together toward one shared limit)
+All 10 must be the exact same account size
+Instant Sim Funded
+3 (100K or 150K sizes) or 5 (25K or 50K sizes)
+All accounts must be the exact same size, sizes cannot be mixed (all 25K, or all 50K, or all 100K)
+Elite Sim Funded
+3 (100K or 150K sizes) or 5 (25K or 50K sizes)
+All accounts must be the exact same size, sizes cannot be mixed (all 25K, or all 50K, or all 100K)
+Ignite Funded
+10
+All 10 must be the exact same account size
+LaunchPad accounts (X-Ultra, X-Daily Spark and future LaunchPad accounts)
+3 in total (all LaunchPad accounts count together toward one shared limit)
+All 3 must be the exact same account size
+Note: the limits above are our standard account limits. During certain promotional periods, we may allow traders to hold more accounts than these standard limits. This applies only to accounts purchased during that promotion. Please check our homepage for the account limits currently in effect, or ask our support team for the current promotional limits.
+Total capacity: because each category has its own independent limit, you can hold a grand total of up to 38 active funded accounts at one time (when using the 25K/50K limits for the Instant Sim and Elite Sim categories), or up to 34 when using the 100K/150K limits for those categories.
+The Live Funded account restriction
+There is one important exception to the limits above: if you have an active Top One Futures Live Funded account, you are not permitted to hold any additional Sim Funded accounts. This is strictly enforced. Once you transition to a Live Funded account, you may not activate or trade on any Sim Funded account.
+Copy trading restrictions
+You are welcome to hold and trade multiple accounts of your own, subject to the limits above. However, the following forms of copy trading are strictly prohibited :
+Copy trading between your accounts and another person's accounts, regardless of your relationship to that trader (even a family member or roommate).
+Copy trading across different account types or different account sizes, for example mirroring the same trades between an Elite ACCESS account and an Ignite account, or between a 50K and a 150K account.
+Any of the above violates our Terms of Service and will result in the immediate closure of all associated accounts. See our Copy Trading Policy for the full details.
+Why do we have these rules?
+Account limits and copy trading restrictions are standard industry practices designed to protect the integrity of the trading ecosystem. They ensure a level playing field, maintain transparency, and prevent excessive multi-account manipulation or coordinated strategies.
+Please note: it is your responsibility to monitor your combined active account count and trading activity to ensure you remain compliant with these limits.
+Related articles
+What is the Limit for Funded Accounts Per Household?
+Copy Trading Policy
+Account Ownership and Registration Policies
+Are There IP Address Restrictions?
+Related Articles
+Maximum Contracts Explained
+Path to Trading Live
+What is the Limit for Funded Accounts Per Household?
+🔥 Ignite Accounts Overview
+Elite Daily V2 – Maximum Account Rules
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+We run on Intercom

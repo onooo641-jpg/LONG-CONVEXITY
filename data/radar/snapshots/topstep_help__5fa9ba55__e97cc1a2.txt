@@ -1,0 +1,154 @@
+Understanding Hedging | Topstep Help Center Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Skip to main content
+Discord Topstep TopstepTV
+Discord Topstep TopstepTV
+Search for articles...
+All Collections
+Topstep FAQs
+Understanding Hedging
+Understanding Hedging
+Cross-account hedging is prohibited at Topstep. This article explains what hedging is, why we prohibit it, and how to ensure your trading stays compliant.
+July 27, 2026
+Table of contents
+What is Cross-Account Hedging?
+Cross-account hedging means simultaneously going long and short the same or correlated instrument across multiple accounts — such as MES/ES, MNQ/NQ.
+☝️ Simple Example:
+Express Funded Account (Account A): Long 5 contracts of ES
+Trading Combine (Account B): Short 5 contracts of ES
+When positions are hedged across accounts, you're protected from market risk — if the market moves up, Account A profits while Account B loses, and vice versa. The net result is roughly break-even, but a trader can show simulated profits from the winning account while only sacrificing the cost of the Trading Combine or Express Funded Account (XFA).
+Why Institutional Hedging Is Different From Cross-Account Hedging
+👉 These two things are not the same. The difference matters.
+What institutional hedging actually is: A market maker balancing inventory. A firm reducing exposure before a major news event. A hedge fund protecting a long portfolio. The goal is risk management — not risk elimination. A professional tool used for legitimate reasons.
+What cross-account hedging looks like at a prop firm: Long in 1 account. Short in another. Directional risk is gone — but so is the point. Instead of trading on skill and conviction, you're offsetting losses, passing the Trading Combine® artificially, or gaming the Payout structure. That's not risk management. That's gaming the system.
+Why Topstep prohibits it: The Combine exists to evaluate real Traders — consistency, decision-making, risk management under pressure. Cross-account hedging distorts all of it. One account is set up to lose so the other can win.
+Not the same thing. Not even close.
+The Simple Version
+Institutional hedging → managing real market risk.
+Cross-account hedging → manipulating prop firm outcomes.
+Hedging itself isn't bad, but using it to pass evaluations or take payouts you haven't earned? That undermines every trader who put in the reps and did it the right way. We protect those traders. That's our job.
+The Bottom Line
+👉 By maintaining the same standards as professional exchanges, we ensure that:
+Success reflects genuine trading skill
+All traders compete on a level playing field
+You're prepared for the rules you'll face in live markets
+Capital is allocated to skilled traders, not loophole exploiters
+CME Group Rule 534 states:
+​ "Performing, alone or in concert with any other persons, including between connected accounts, or accounts held with different Parties, trades, or combinations of trades, the purpose of which is to manipulate, abuse, or give User an unfair advantage while using the Site or Services, for example, by engaging in any short term or high-frequency trades or simultaneously entering into opposite positions"
+How Topstep Detects Hedging
+We use advanced monitoring systems to identify hedging patterns across your accounts. Our systems analyze:
+Position Timing: Are opposite positions opened and closed in coordinated patterns?
+Position Size: Are positions sized to offset each other's risk?
+Duration: How long are opposite positions held simultaneously?
+Intent: Does the pattern suggest intentional risk elimination rather than independent trading?
+How Enforcement Works
+1. First Hedging Attempt — Real-Time Warning
+If our system detects that you’ve become hedged across accounts:
+You’ll receive a real-time modal notification
+You will have a brief window to un-hedge your positions using the options in the modal notification:
+If you successfully un-hedge within the time window , you may continue trading
+You will receive a follow-up email notification
+If You Do Not Un-Hedge
+Your hedged positions will be automatically liquidated
+Your account will be flagged for hedging behavior
+You may continue trading
+This first instance serves as a warning and educational step .
+2. Repeat Hedging Attempt(s) on the Same Day
+If hedging occurs again on the same trading day :
+You will have a brief window to un-hedge
+If you do not un-hedge in time :
+Your hedged positions will be automatically liquidated
+You may continue trading
+Please note: There will not be a timer shown on this violation. Please un-hedge immediately to continue trading.
+3. Next Trading Day — Required Acknowledgement
+After the first Hedging attempt, you'll be required to sign an acknowledgement upon login on the next trading day.
+A modal notification will appear upon login
+You must acknowledge the Terms of Use related to hedging by typing "I agree" in the text box
+The modal will include:
+Explanation of the hedging policy
+Details of when the hedging occurred
+Requirement to acknowledge before trading
+You will not be able to trade until this acknowledgment is completed.
+4. Future Hedging Attempts — Immediate Liquidation
+After acknowledgement:
+Any future hedging attempt will trigger immediate liquidation:
+After liquidation, you may continue trading
+You will not be given time to unhedge
+5. Excessive Hedging Attempts — Temporary Violation
+After excessive hedging attempts:
+Your positions will be immediately liquidated
+You will not have the opportunity to unhedge
+A Temporary Hedging Violation will be issued and you will be prohibited from trading for the remainder of the trading day.
+The violation will apply across the hedged accounts
+Please note: after numerous warnings, your account may be permanently closed without further notice if you continue to hedge your positions. This action is irreversible. For this reason, it's very important that you review our Hedging Policy and trade responsibly.Additionally, accounts closed for hedging violations are not eligible for payouts, and any associated profits cannot be withdrawn.
+Important Notes
+Monitoring applies in real-time
+Time windows may be adjusted by Risk & Leadership teams
+Violations apply across all accounts involved in hedging
+This policy applies to the Trading Combine, Express, and Live Accounts
+Copy Trading and Technical Errors
+Technical glitches and copy trading software can create temporary opposite positions — our system accounts for that. But you're still fully responsible for all activity across your accounts, including anything created by automated systems or third-party tools. Manual errors, such as switching directions without closing prior positions, can also result in unintentional hedging.
+⚠️ If a hedged position meets our criteria (size, duration, intent), enforcement happens. No exceptions.
+How to Avoid Hedging Violations
+Best Practices
+Trade a single account to completely avoid the possibility of hedging
+Trade each account independently based on your own analysis
+Don't coordinate positions across accounts (or other traders) to offset risk
+Monitor copy trading tools to ensure they're not creating opposite positions
+Close any accidental hedges immediately if they occur
+Contact Support before implementing any strategy you're unsure about
+Flatten Positions Before Switching Directions: Ensure all open positions are closed and any working orders are canceled before entering a new trade in the opposite direction.
+Frequently Asked Questions
+Can I trade the same instrument across multiple accounts?
+Yes! You can trade the same markets across different accounts. What's prohibited is holding opposite positions simultaneously in a way that eliminates market risk.
+What if I disagree with an enforcement decision?
+Confirmed hedging violations are final and cannot be appealed. Accounts closed due to these violations cannot be reopened or reinstated. We encourage you to review our trading policies to ensure full compliance moving forward. If you have general questions about the policy itself, we are happy to clarify.
+Are hedging attempts tracked at the account level or trader level?
+Hedging attempts are tracked at the Trader level. If a Trader received a first-time warning and acknowledged the hedging policy, subsequent hedging activity in any newly purchased account is treated as a post-acknowledgment violation.
+​
+Are Practice Accounts included in Hedging Alerts?
+No. Practice Accounts are not included in Hedging detection.
+What happens if I fail to close an accidental overlap?
+If a hedging violation is not resolved within the warning window, positions will be automatically liquidated, and accounts flagged.
+Does Topstep allow brief or unintentional overlaps of opposing positions?
+No. Opposing positions are prohibited even if the overlap is brief or unintentional. However, first-time violations are treated as warnings with a brief window to un-hedge, as described in our enforcement policy above.
+Will a hedging warning affect my payout request?
+No, warnings alone do not impact your payouts.
+Are hedging violations appealable?
+No. Confirmed hedging violations are final and not eligible for appeal.
+Can accounts closed for hedging violations be reopened?
+No. Accounts closed due to hedging violations cannot be reopened or reinstated.
+What happens to profits/payouts if my account is closed for hedging?
+Accounts closed for hedging violations are not eligible for payouts, and any associated profits cannot be withdrawn.
+Additional Resources
+Topstep Terms of Use
+CME Group Rule 534
+Prohibited Conduct Policy
+Contact Support
+​
+Our commitment: Topstep maintains a fair trading environment where success is based on skill and discipline. We appreciate your commitment to trading with integrity as we prepare you for live markets.
+Related Articles
+Topstep Learning
+Trading Combine® Parameters
+Prohibited Conduct
+Prohibited Trading Strategies at Topstep
+Daily Loss Limit in the Trading Combine and Express Funded Account
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Your Privacy Choices

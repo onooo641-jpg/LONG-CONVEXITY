@@ -1,0 +1,127 @@
+General Platform Troubleshooting | Topstep Help Center Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Skip to main content
+Discord Topstep TopstepTV
+Discord Topstep TopstepTV
+Search for articles...
+All Collections
+TopstepX™
+General Platform Troubleshooting
+General Platform Troubleshooting
+Platform acting up? Start here. If it’s happening mid-trade, stop trading first.
+Updated this week
+Table of contents
+⚠️ Please note: If you experience any issue while trading, stop immediately and contact the Trader Support Team . If you continue trading after an issue, exception requests may not be reviewed or approved in most cases.
+Recommendations
+Hardwire your connection
+Use a wired connection whenever possible. WiFi can drop for a split second and interrupt order submission or log you out. Mobile data can cause IP address changes. Trade from a stable, high-speed wired connection.
+Limit open sessions
+Too many tabs or sessions degrade performance. Use a single tab or the desktop version of the platform.
+Reduce charts and indicators
+Multiple charts running multiple indicators in fast markets can cause lag or freezing. Reduce active charts and indicators if you notice performance issues.
+Update and restart
+Restart your device regularly. Keep your platform, operating system, and graphics drivers up to date.
+Check device specs
+Component
+Minimum
+Recommended
+RAM
+8GB
+16GB
+Processor
+4–6 core (i5)
+i7, i9, or M1
+Storage
+250GB SSD
+250GB+ SSD
+Switch from tick charts to time-based charts
+Tick charts are resource-intensive. If you’re experiencing lag, switch to a larger timeframe chart.
+Close background programs & refresh your browser
+Close anything not needed while trading. Try refreshing your browser.
+Supported Browsers
+Desktop Browser
+Fully supported
+Chrome
+149 or newer
+Edge
+149 or newer
+Firefox
+152 or newer
+Safari (on a Mac)
+17, 18, or 26
+Mobile Browser
+Fully supported
+iPhone or iPad — any browser (Safari, Chrome, Firefox, Edge)
+iOS 17, 18, or 26
+Chrome on Android
+149 or newer
+👉 Recommended browser: Google Chrome.
+Note: Topstep does not offer courtesy adjustments for connectivity issues. Internet instability is outside Topstep’s control and responsibility.
+💻 Login Issues
+👉 IMPORTANT: Your Topstep Dashboard login and your platform (TopstepX) login are the SAME login. They share the same email and the same password. Use your Dashboard email and password on both. If you reset your password, it changes for both.
+Confirm your subscription is active. If your Trading Combine closed due to cancellation or past-due payment, you won’t be able to log in. Check your billing page .
+Check your credentials. Usernames and passwords are case-sensitive.
+Type credentials manually. Auto-fill tools can cause login failures.
+📱Trading on Mobile
+Topstep recommends trading on a desktop or laptop for best stability. We’re unable to troubleshoot mobile-specific issues. If you do trade on mobile:
+Use stop-loss orders to protect against unexpected disconnections
+Use a hardwired connection over WiFi when possible
+🚫 Why Are My Orders Being Rejected?
+Hit the Maximum Loss Limit (MLL) — Account auto-liquidates; orders rejected for the rest of the trading day. The account will be ineligible or closed depending on account type.
+Trading outside permitted hours — Orders placed outside Topstep’s permitted trading hours are rejected.
+Exceeded Maximum Position Size — Your open position is larger than the contract limit for your account size.
+Inactive subscription — A cancelled or past-due subscription can trigger rejected orders or error messages.
+Trading during a holiday — Markets are closed on certain holidays. Check the holiday trading hours article.
+Hit the Personal Daily Loss Limit — Account auto-liquidates; orders rejected for the rest of the trading day.
+Velocity Logic Events — This is a CME-controlled market mechanism and not something managed by Topstep. Learn more here .
+👥 Escalating to Support
+If you’ve gone through all the troubleshooting steps and still have issues, contact the Trader Support Team. Be prepared to provide order IDs and, if applicable, HAR files (captured while the lag is occurring , not after) and a Task Manager Performance screenshot.
+Please note: Continuing to trade after an issue occurs may prevent us from reviewing or approving exception requests. Providing accurate Order IDs speeds up every investigation. Here’s how to find them.
+🔍 Finding Order IDs in TopstepX™
+Select the affected account from the account dropdown.
+Navigate to the Orders tab in the Orders component.
+​
+Screenshot the affected orders (PrtSc on Windows; Shift-Command-5 on Mac). If you can’t screenshot, list the Order IDs manually.
+​
+👉 Important: Provide Order IDs , not Trade IDs. These are different.
+If the order is no longer in the Orders tab (issue occurred more than a few days ago):
+Click Export on the bottom right of the Orders module
+Select the date the order was placed
+Download the CSV and locate the Order ID in column A
+Share the specific Order ID only — do not send the entire CSV
+​
+If the account is closed:
+Go to the Topstep Dashboard → Accounts tab
+Enable Show Closed Accounts to access Order IDs
+☝️ What to Include When Reporting an Issue
+Order IDs for each affected trade
+Affected account number(s)
+Date and time of the trades
+Description of the issue (lags, discrepancies, etc.)
+Screenshots or screen recording (tools like Loom capture timestamps, account numbers, and platform view)
+Bottom line: The market's unpredictable enough. Your setup shouldn't be.
+Related Articles
+Topstep Learning
+New to Topstep? Start here.
+Prohibited Conduct
+What is Responsible Trading?
+TopstepX™
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Your Privacy Choices

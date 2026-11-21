@@ -1,0 +1,105 @@
+CME Velocity Logic | Topstep Help Center Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Skip to main content
+Discord Topstep TopstepTV
+Discord Topstep TopstepTV
+Search for articles...
+All Collections
+Getting Started
+Trading Education
+CME Velocity Logic
+CME Velocity Logic
+The market hit the brakes. Here's why.
+June 10, 2026
+Table of contents
+CME Velocity Logic is a technical safety mechanism, not a volatility halt or regulatory circuit breaker. Its purpose is to protect market integrity when prices move faster than available liquidity can support. Velocity Logic addresses mechanical breakdowns in market structure, not expected volatility from news or the market open.
+It may help to think of Velocity Logic as an airbag — it activates only when something mechanically fails.
+CME Velocity Logic: Quick Guide
+What It Is
+Mechanical safety pause
+Triggers when Price outruns liquidity
+Protects market structure (not volatility)
+What Triggers It
+Extreme speed + distance
+Order book can't refill fast enough
+Pause lasts ~2-10 seconds
+What Happens
+Trading pauses
+Aggressive orders canceled
+Liquidity refresh → trading resumes
+What It is NOT
+Not news, open, or volatility driven
+Not a trading signal
+Stops are NOT protected
+Trader Mindset
+Liquidity failure = higher risk
+Expect slippage
+Don't chase immediately
+Bottom Line
+Velocity Logic activates when the market's mechanics break —not when volatility is high.
+What Is a Velocity Logic Event?
+A Velocity Logic Event is a brief, automatic pause that occurs when the price moves too far, too fast within a micro-time window, and the order book cannot refresh with sufficient liquidity.
+The CME monitors:
+Tick distance (how far the price moves)
+Speed (how fast it moves)
+Liquidity replenishment behind the move
+If predefined speed thresholds are exceeded without enough resting liquidity, trading in that contract is temporarily paused.
+What Happens During a Velocity Logic Event?
+Duration: Typically 2–10 seconds
+Market State: Reserved / Pre-Open
+Trading Activity:
+No trades are matched
+Aggressive orders that caused the event are canceled
+Purpose:
+Stabilize the order book
+Allow liquidity providers to refresh quotes
+☝️ Following the Velocity Logic Event, trading resumes normally, often with a small price gap.
+This is a CME-controlled market mechanism and not something managed by Topstep. We do not make exceptions or offer adjustments for these types of market events.
+Why does Velocity Logic Exist?
+Velocity Logic protects the matching engine and market structure by preventing:
+Runaway algorithms from clearing the book
+Liquidity vacuums are causing unrealistic price moves
+Stop-loss cascades driven by an empty order book
+Short-term mechanical instability
+Velocity Logic vs. Volatility
+High volatility alone does NOT trigger a Velocity Logic Event. During news events like CPI, FOMC, or NFP, or at the market open:
+Liquidity remains continuous
+Market makers are active (though with wider spreads)
+Orders continue filling normally
+Velocity Logic only triggers when liquidity collapses or the market’s mechanics cannot keep pace with price movement.
+When Velocity Logic Events Typically Occur
+Overnight or low-liquidity sessions
+Algorithmic malfunctions
+Stop cascades after sudden book thinning
+Data feed or quote disruptions
+👉 Velocity Logic events rarely occur during high-participation periods.
+Key Takeaways
+A Velocity Logic Event is a liquidity warning, not a volatility signal
+Stop orders are not protected and may suffer severe slippage
+Position sizing must assume worst-case fills, not ideal execution
+Chasing price immediately after a Velocity Logic Event increases risk
+Related Articles
+General Platform Troubleshooting
+When and What Products Can I Trade?
+Economic Releases
+Order Types, Fills, and Slippage
+Risk Adjustments: High Risk/High Volatility
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Your Privacy Choices

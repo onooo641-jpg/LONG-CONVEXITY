@@ -1,0 +1,252 @@
+Rewards and payouts | Goat Funded Trader FAQ's
+Help Center / Rewards / Rewards and payouts
+Rewards and payouts
+Profit split and eligibility Request and timeline Caps, limits and fees KYC and payout details
+In this tab
+All about Rewards and Profit Splits
+Reward on Demand Eligibility Criteria
+What is the "Triple Payday" reward schedule?
+GFT Monthly Competitions: how they work
+All about Rewards and Profit Splits
+REWARD
+At Goat Funded Trader, we offer multiple reward structures tailored to different account models, ensuring traders have flexibility in withdrawing their profits. Below is a breakdown of how rewards work for each model:
+1-Step Model
+Bi-weekly rewards : Traders can withdraw their profits every 14 days after placing their first trade.
+2-Step Model
+Standard Model
+No longer available for new purchases. Existing accounts keep these terms, except that resets are no longer available.
+Bi-weekly rewards : Traders can withdraw their profits every 14 days after placing their first trade.
+Simply request a reward, and your earnings will be processed accordingly.
+GOAT Model
+Traders have the flexibility to choose between: On-demand first reward (withdraw at any time once eligible).
+After the first reward, subsequent rewards will be processed bi-weekly.
+PRO Model
+Bi-weekly rewards : Traders can withdraw their profits every 14 days after placing their first trade.
+Premium Model
+Anytime rewards : Traders can withdraw their profits at any time once they have completed 7 minimum profitable days, each with at least 0.5% profit. The 7 days reset after each payout.
+3-Step Model
+Bi-weekly rewards : Traders can withdraw their profits every 14 days after placing their first trade.
+Instant Funding Model
+Standard Instant Funding
+Triple payday rewards , allowing traders to withdraw profits every 10 days .
+GOAT Instant Funding
+Bi-weekly rewards : Traders can withdraw profits every 14 days after placing their first trade.
+Goat Blitz Model
+Bi-weekly rewards : Traders can withdraw profits every 14 days after placing their first trade.
+General Reward Conditions
+All rewards must be requested through the trader dashboard.
+To access the first on-demand reward, traders must have a minimum of 3% profit on their account.
+Traders must have no open trades or pending orders to receive a reward.
+Minimum withdrawal amount: $100 for funded account rewards and affiliate withdrawals.
+Withdrawals are processed through Rise, Crypto, Skrill and Bank transfer (Bank transfer available in Kenya, South Africa, Egypt, Nigeria, Côte d'Ivoire, Tanzania, Cameroon and Ghana only).
+Your first payout includes an identity verification (KYC) step and signing the Trader Agreement, both completed when you request the payout. See " How are withdrawal/reward requests processed? " for details.
+Once a payout is requested, your selected payout method is locked and cannot be changed.
+PROFIT SPLIT
+We offer competitive profit splits across all account models. Traders can also opt for an upgrade to a 100% profit split during checkout. Below is a detailed breakdown of profit splits for each model:
+What is Payout Boost?
+Payout Boost raises your profit split from 80% to 90% on a payout. It's free and optional, and you never pay for it.
+To get it, complete 3 more minimum profitable days than your model requires before you request the payout. Each extra day needs at least 0.5% profit on the initial balance, the same as your other minimum profitable days. If you request the payout with only the normal minimum, that payout is paid at 80%.
+Example : a 1 Step funded account needs 4 minimum profitable days per payout. Complete 7 and that payout is paid at 90%. On a $5,000 profit you receive $4,500 instead of $4,000 .
+Payout Boost works one payout at a time. Your day count resets after each payout, so you need the 3 extra days again to get 90% on the next one.
+Payout Boost is available on funded accounts from evaluations and on Instant accounts with the standard 80% split. It doesn't apply to Goat 1$ or Instant Daily. If you bought the 100% profit split add-on, every payout is already paid at 100%, so Payout Boost doesn't apply.
+1-Step Model
+Traders receive 80% of their profits. Example : If a trader earns a profit of $5,000 , they will receive $4,000 as their total reward.
+Upon checkout, you have the option to upgrade with an add-on to: 100% PROFIT SPLIT
+2-Step Model
+Standard Model
+No longer available for new purchases. Existing accounts keep these terms, except that resets are no longer available.
+Traders receive 80% of their profits. Example : If a trader earns a profit of $5,000 , they will receive $4,000 as their total reward.
+Upon checkout, you have the option to upgrade with an add-on to: 100% PROFIT SPLIT
+ON-DEMAND REWARD
+PRO Model
+Traders receive 80% of their profits. Example : If a trader earns a profit of $5,000 , they will receive $4,000 as their total reward.
+Upon checkout, you have the option to upgrade with an add-on to: 100% PROFIT SPLIT
+ON-DEMAND REWARD
+GOAT Model
+Traders receive 80% of their profits. Example : If a trader earns a profit of $5,000 , they will receive $4,000 as their total reward.
+On-Demand Reward Option(first reward only) :
+If traders choose this option, they will receive a 40% profit split for that specific reward.
+Upon checkout, you have the option to upgrade with an add-on to: 100% PROFIT SPLIT
+Premium Model
+Traders receive 85% of their profits. Example : If a trader earns a profit of $5,000 , they will receive $4,250 as their total reward.
+Upon checkout, you have the option to upgrade with an add-on to: 100% PROFIT SPLIT
+Updated 11 November 2026
+Reward on Demand Eligibility Criteria
+First Reward on Demand is available as an add-on for all our 1-Step, 2-Steps, 3-Steps and Goat Blitz challenges. It is not available on 2-Step Premium.
+To qualify for a Reward on Demand while trading on a funded account, traders must meet the following criteria:
+Minimum Profit & Trading Days: Traders must achieve a minimum profit of 3% in their account over at least 3 trading days.
+Minimum Daily Profit: Traders must generate at least 0.5% profit per day on a minimum of 3 trading days.
+For the first Reward on Demand, a 40% profit split will be applied. After this, traders become eligible for subsequent rewards every 14 or 30 days, at the usual full 80% profit split.
+Please note that failing to meet any of the above criteria will result in ineligibility for Reward on Demand. Ensure compliance with these requirements to take advantage of expedited reward processing.
+Please note that The 100% Profit Split add-on does not change the Reward on Demand profit split from 40% on first payout. Regardless of add-ons purchased, the first Reward on Demand will always be paid at a 40% profit split .
+Updated 4 November 2026
+What is the "Triple Payday" reward schedule?
+The "Triple Payday" reward schedule is the standard payout schedule for our Instant Funding Standard Account. This allows traders to request a reward on the 5th, 15th, and 25th of every month, providing more frequent access to earnings.
+To be eligible for a reward under this schedule, traders must meet the following conditions:
+The first reward can be requested after the account has been active for a minimum of 10 days.
+For each subsequent reward, traders must accumulate at least 7 trading days.
+This schedule is automatically applied to all Instant Funding Standard Accounts and cannot be changed.
+GFT Monthly Competitions: how they work
+Every month Goat Funded Trader runs a free trading competition on a demo account. You trade against other participants, the ranking is based on profit, and the top 30 win prizes.
+WHO CAN JOIN?
+The monthly competition is free to join .
+Traders in the USA cannot take part.
+Only one competition account per person is permitted.
+No password is needed for the monthly competition.
+HOW DO I JOIN?
+Log in to your Goat Funded Trader dashboard and open the Competitions tab.
+Select the monthly competition and join it.
+Your competition account credentials appear in the same tab, under Credentials .
+You can register before the competition begins. Trading is enabled on the start date of the competition, not before.
+THE COMPETITION ACCOUNT
+Entry Free
+Account size $100,000 demo account
+Platform MT5
+Profit target None. You aim for the highest profit you can reach.
+Maximum daily loss 5%
+Maximum overall loss 10%
+News trading Allowed
+Overnight and weekend holding Allowed
+Expert Advisors (EAs) Not allowed
+Accounts per person One
+Withdrawals None. Profit on a competition account cannot be withdrawn.
+Password Not needed
+WHEN DOES IT START AND END?
+The monthly competition starts on the 1st of the month at 00:00 UTC and runs until the last day of that month. The exact dates are shown on the competition page in your dashboard.
+When the competition ends, trading on the competition account is disabled. This is not a breach. It only means the competition is over.
+WHAT ARE THE RULES?
+Maximum daily loss: 5%. It is calculated from the higher of your balance or equity, recorded at the 5 PM EST reset.
+Maximum overall loss: 10%. It is fixed from the starting balance, so on a $100,000 account your equity must stay above $90,000.
+News trading is allowed.
+Holding trades overnight and over the weekend is permitted.
+Expert Advisors (EAs) are not allowed.
+One account per person. Multiple competition accounts for the same person are not permitted.
+If a loss limit is breached, the competition account is closed and can no longer take part in that competition.
+HOW IS THE RANKING DECIDED?
+There is no profit target. Participants are ranked by the profit on their competition account, and the final ranking is the one on the leaderboard when the competition ends.
+You can follow your position on the leaderboard in the Competitions tab of your dashboard.
+HOW DO PRIZES WORK?
+The top 30 participants are eligible for a prize each month.
+Prizes change from month to month. They can include cash for the top 5 or top 10, physical prizes such as iPhones, Samsung phones, tablets, MacBooks and smartwatches, and Instant GOAT, Instant Hero or 2-Step accounts.
+The prize for each position is listed on the competition page in your dashboard.
+After the competition ends, our team reviews the accounts of the top-ranked traders.
+The top 5 winners are asked to attend a short interview with our marketing team before their prize is issued. The interview may be used in our public content.
+No KYC is required to receive a prize.
+Winners are contacted by email. You do not need to open a request to claim a prize.
+All prizes are sent out within 10 days of the end of the competition month .
+COMMON QUESTIONS
+The competition asks me for a password. Where do I get it?
+The monthly competition never needs a password. Only the weekly live stream competition and competitions run together with partners are password-protected. That password is shared by the host during the live stream or on their social channels. Support cannot provide competition passwords.
+I cannot log in, or my account is read-only.
+Use the MT5 login, the trading password and the exact server shown under Credentials in the Competitions tab. Read-only mode usually means you logged in with the investor password. Also check that the competition has started, because trading is only enabled from the start date.
+My account was in profit but trading is disabled.
+The competition has ended. Competition accounts are disabled at the end of the competition, whatever their result.
+Can I withdraw the profit from my competition account?
+No. Competition accounts have no withdrawals. Only the prizes listed for the competition are awarded.
+I finished in a winning position and have not heard back.
+Prizes are sent within 10 days of the end of the competition month. If that time has passed and you have not been contacted, write to support with your full name, email address, competition account number, the name of the competition, your final position and a screenshot of the leaderboard showing your name.
+Updated 8 October 2026
+In this tab
+How payouts work: eligibility, request, processing and arrival
+How long does it take to receive my reward?
+How payouts work: eligibility, request, processing and arrival
+Reward requests can be initiated from your dashboard and will be processed within 2 business days. A minimum withdrawal amount of $100 is required to submit a request. Instant Daily accounts have no $100 minimum. Each request on Instant Daily must be between 1% and 3% of the initial balance instead.
+You can't request a payout on Saturday or Sunday. Submit your request on a weekday. If your account has an expiry date that falls on a weekend, request your payout by Friday.
+We process rewards via Rise, Crypto, Skrill and Bank transfer . The name on your Goat Funded Trader (GFT) account must match the name on your payout account, and the payout address must not be in use on any other GFT account. See "Your payout details must belong to you" below.
+Your payout eligibility date and time shown on the dashboard are in UTC. The 5PM EST reset referenced elsewhere in these FAQs applies to trading days and daily drawdown, not to payout timing.
+Payout methods and limits
+Method Maximum per payout
+Rise No limit
+Bank Transfer $10,000
+Skrill $5,000
+Crypto $5,000
+These amounts are per payout . Each payout request must be for the full profit amount in your account (GFT does not offer partial withdrawals, except on Instant Daily), and you can have only one payout request pending on an account at a time. If your profit is higher than a method's per-payout maximum, choose Rise, which has no limit.
+Bank transfer is currently available in Kenya, South Africa, Egypt, Nigeria, Côte d'Ivoire, Tanzania, Cameroon and Ghana only. If it isn't offered for your region, please choose another method.
+Processing timeline
+You receive your payout within 2 business days of submitting the request. Weekends and public holidays do not count toward the 2 days.
+Submit on Monday: expect it by Wednesday.
+Submit on Friday: expect it by Tuesday.
+On your first payout, identity verification (KYC) runs first, and the 2 business day window starts once your verification is complete. Completing KYC promptly when prompted is the single best way to avoid delay.
+Our commitment: if we fail to process your payout within 2 business days, we add a $1,000 bonus to it. The bonus does not apply when the delay is caused by pending or incomplete KYC, or by our team needing additional information from you.
+If your payout is past the window, the cause is almost always one of two things: incomplete KYC, or a pending review with our risk team. In both cases you will have been contacted; check your email and dashboard first.
+Identity verification (KYC) and Trader Agreement at payout
+When you request your first payout , you'll be asked to complete a quick identity verification (KYC) and to electronically sign our Trader Agreement. These steps are required before any payout can be processed.
+If you request your payout via Crypto, Skrill or bank transfer , verification is completed through Veriff . If Veriff is unable to verify you, we'll invite you to verify through Rise . Once completed, your payout will be processed using the method you originally selected.
+If you request your payout via Rise , verification is completed on the Rise platform. If Rise is unable to verify you, we'll offer verification through Veriff ; in that case your payout method will need to be changed to Crypto or Skrill , since a Rise payout requires Rise verification.
+If your identity cannot be verified through either method, we're unable to process the payout. Our support team will reach out to you with the next steps.
+Changing your payout method
+Once a payout has been requested, your selected payout method is locked and cannot be changed . The only exception is when your Rise verification is unsuccessful and you need to switch to a Veriff-verified method (Crypto or Skrill) to receive your payout. Please choose your payout method carefully before submitting your request.
+Your payout details must belong to you, and only you
+The payout method you submit for a payout must be in your name and used by nobody else on Goat Funded Trader. When you submit a request you confirm that this is the case.
+If the payout address on your request matches an address that is already on another GFT account, this counts as a breach. We do not ask for an explanation and we do not offer the option to swap in a different address. The check runs automatically at the point of request, and the result is final.
+This includes situations where the other account belongs to a family member, a friend, or someone who used your address without telling you. We have no way to confirm who really controls a shared address, so we treat every match the same way. Before you request a payout, make sure the address is one nobody else has used with us.
+Best trade vs worst trade
+For funded accounts purchased on or after 8 October 2026, there is one more payout condition. Your largest winning trade must be at least as big as your largest losing trade.
+Every closed trade counts on its own. If you close a position in parts, each part is a separate trade. Each trade's result includes commission and swap.
+Until your first payout, the check covers every trade since you bought the account. Each payout resets it, and from then on it only looks at trades closed after your last payout.
+Example: if your largest loss this payout cycle is $400, your largest win needs to be $400 or more.
+This is not a breach and does not affect your account. If you are otherwise eligible but haven't met this condition, keep trading until you do. You can't submit a payout request until it's met.
+Funded Account Reward Guidelines
+At Goat Funded Trader, we prioritize a fair and secure trading environment. To maintain stability, we have implemented the following rules for funded accounts:
+Daily Profit Limit
+Traders on funded accounts can generate a maximum profit of $3,000 per trading day.
+Any profits exceeding this limit will be deducted from the account.
+This is not considered a breach; the deduction is only to maintain a controlled and sustainable trading system.
+Profit Withdrawal Limits for Initial Rewards
+For the first two reward requests, traders can withdraw a maximum of 6% of the initial account balance or $10,000, whichever is lower.
+Exception: For $5k Two-Step accounts (Goat, Goat 1% Floating and Standard), the cap is 4% of the initial account balance instead of 6%. This applies only to accounts purchased from July 25th, 2026 onward. For $5K Instant HERO accounts purchased from 6 October 2026 onward, the cap is also 4%. This cap does not apply to Goat 1$ accounts.
+Any profits beyond this limit will be deducted from the account balance.
+After the first two rewards, this restriction is removed, and there are no further withdrawal limits.
+Giveaway Accounts
+Each payout from a giveaway account is capped at 4% of the starting balance or $1,000, whichever is lower. On a $10K account that's $400 per payout. From $25K up, it's $1,000.
+Once your payouts add up to $1,000, the account is closed and you can't request any more payouts from it.
+If your plan's normal payout cap is lower, the lower cap applies.
+Reward Processing Fee
+All rewards are subject to a 3% processing fee. The fee is calculated on the final reward amount after applying the applicable profit split and any deductions, if applicable. The remaining amount is then paid to the trader.
+Why Are These Limits Necessary?
+These limits help create a stable and secure trading environment while allowing us to properly assess each trader's performance. The period between purchasing the program and receiving the first rewards is often too short for a full evaluation of trading behavior. By implementing these temporary restrictions, we ensure fairness, sustainability, and long-term opportunities for all traders. If you have any questions or need further clarification, please contact our support team.
+Updated 20 November 2026
+How long does it take to receive my reward?
+Once you submit your reward request, you can expect to receive your payout within 2 business days. This means weekends and public holidays are not counted toward the 2-day period.
+You can only submit a payout request from Monday to Friday. Requests can't be made on Saturday or Sunday.
+Please note: your first payout includes an identity verification (KYC) step. The 2 business day processing window begins once your verification is complete, so we recommend completing KYC promptly when prompted.
+Examples
+If you submit your payout request on Monday, you can expect to receive it by Wednesday.
+If you submit it on Friday, your payout will be processed by Tuesday, since Saturday and Sunday are not business days.
+We stand by our commitment to timely payouts. If we fail to process your reward within this timeframe, we will add a $1,000 bonus to your payout as compensation. However, this bonus will not be applied if the delay is caused by:
+Pending KYC verification or incomplete identity confirmation.
+Requests for additional data clarification from our team.
+We recommend ensuring that all necessary information is up to date to avoid any processing delays.
+For the full process, including methods, limits and verification, see How payouts work .
+Updated 14 November 2026
+Funded Account Reward Guidelines
+At Goat Funded Trader, we prioritize a fair and secure trading environment. To maintain stability, we have implemented the following rules for funded accounts:
+Daily Profit Limit
+Traders on funded accounts can generate a maximum profit of $3,000 per trading day.
+Any profits exceeding this limit will be deducted from the account.
+This is not considered a breach; the deduction is only to maintain a controlled and sustainable trading system.
+Profit Withdrawal Limits for Initial Rewards
+For the first two reward requests, traders can withdraw a maximum of 6% of the initial account balance or $10,000, whichever is lower. For $5K Two-Step accounts (Goat, Goat 1% Floating and Standard) purchased from 25 July 2026 onward, the cap is 4% of the initial account balance. The same 4% cap applies to $5K Instant HERO accounts purchased from 6 October 2026 onward. This cap does not apply to Goat 1$ accounts.
+Any profits beyond this limit will be deducted from the account balance.
+After the first two rewards, this restriction is removed, and there are no further withdrawal limits.
+Why Are These Limits Necessary?
+These limits help create a stable and secure trading environment while allowing us to properly assess each trader’s performance. The period between purchasing the program and receiving the first rewards is often too short for a full evaluation of trading behavior. By implementing these temporary restrictions, we ensure fairness, sustainability, and long-term opportunities for all traders.
+If you have any questions or need further clarification, please contact our support team. We are committed to transparency and efficiency in serving our traders.
+Updated 9 November 2026
+Identity verification (KYC) - what to expect
+Before we can process your first payout, we need to verify your identity (KYC) and have you sign our Trader Agreement. This keeps payouts secure and meets our verification requirements. Here's how it works.
+When does KYC happen?
+KYC and the Trader Agreement are completed when you request your first payout , not when you receive your funded account. You can start trading your funded account right away; you'll only be asked to verify your identity and sign the agreement when you request your first withdrawal.
+How verification works
+The verification provider depends on the payout method you choose:
+Crypto, Skrill or bank transfer → verified through Veriff . When you request your payout, a Veriff link is sent to you automatically. If Veriff is unable to verify you, we'll invite you to verify through Rise instead. Once completed, your payout is processed using the method you originally chose.
+Rise → verified on the Rise platform. If Rise is unable to verify you, we'll offer verification through Veriff . In that case your payout method will be changed to Crypto or Skrill , since a Rise payout requires Rise verification.
+If your identity can't be verified through either provider, we're unable to process the payout. Our support team will contact you with the next steps.
+Where to find payout details
+For the available payout methods, per-method limits, and how the payout-method lock works, see " How are withdrawal/reward requests processed? " .
+Tips for smooth verification
+Make sure the name on your GFT account matches your identity documents and your payout account.
+Use a clear, valid, government-issued ID.
+Complete verification promptly as your payout's 2 business day processing window starts once verification is complete.
+Updated 27 July 2026
+Back to top

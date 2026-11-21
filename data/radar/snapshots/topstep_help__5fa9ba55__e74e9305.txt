@@ -1,0 +1,93 @@
+What is a Pro Account? | Topstep Help Center Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Skip to main content
+Discord Topstep TopstepTV
+Discord Topstep TopstepTV
+Search for articles...
+All Collections
+Topstep Program
+Funded Accounts
+Live Funded Account®
+What is a Pro Account?
+What is a Pro Account?
+You proved yourself. A Pro Account keeps you in the game while Live access is limited.
+September 11, 2026
+Table of contents
+A Pro Account is offered to Traders who would typically earn a Live Funded Account (LFA), but whose jurisdiction currently doesn’t support live market access ( learn more here ). It’s a simulated account with parameters similar to an LFA. Topstep offers it so you can keep progressing while they work to expand access.
+Pro Account Parameters
+1. One Pro Account maximum
+Traders are limited to 1 Pro Account at a time.
+2. Account size (if you have multiple XFAs)
+Size is based on the average of all open Express Funded Account (XFA) sizes, rounded up to the nearest standard size.
+Example: 2 × $50K + $100K + $150K = $87,500 average → rounds up to $100K Pro Account
+3. Starting balance
+The starting balance will equal the amount from transferred XFAs, up to 20% of the account size.
+Pro Account Size
+Starting Balance
+$50K
+$10,000
+$100K
+$20,000
+$150K
+$30,000
+4. Maximum Loss Limit (MLL)
+The Maximum Loss Limit in a Pro Account mirrors the Express Funded Account ® (XFA) Maximum Loss Limit.
+5. Daily Loss Limit (DLL)
+Pro Account Size
+Daily Loss Limit
+$50K
+$1,000
+$100K
+$2,000
+$150K
+$3,000
+6. No Balance Expansion
+Pro Accounts do not have the Balance Expansion feature available in the Live Funded Account. Balance adjusts only through P&L and Payouts. Pro Accounts are subject to the contract size Scaling Plan .
+Payouts
+Payout rules are the same as a standard Express Funded Account: 5 or more winning days of $150 (non-consecutive), Payout up to 50% of the account and up to $5,000, and net positive after your first Payout.
+​
+Account Size
+Payout Cap
+$50K
+$2,000
+$100K
+$3,000
+$150K
+$5,000
+Call Up Process
+Topstep's Risk team will reach out when you're ready to move to a Pro Account. Your XFAs will be closed as part of this process. This is expected and not an error.
+If Your Pro Account Is Closed
+If your Pro Account breaches the Maximum Loss Limit and closes:
+You can continue trading in Trading Combines and activate XFAs as they become available
+Back2Funded is not available for Pro Accounts
+Strong, consistent performance in your XFAs may make you eligible for another Pro Account in the future
+FAQ
+Why did I get a Pro Account instead of a Live Funded Account?
+In some jurisdictions, Topstep is not currently able to offer live market access. The Pro Account lets you keep progressing in the program while Topstep works to expand access.
+What happens if Live Funded Account access becomes available in my country?
+Topstep will reach out to notify you if their Live Funded Account policy or live market access changes for your jurisdiction.
+Related Articles
+What is the Maximum Loss Limit?
+Express Funded Account™ Parameters
+Live Funded Account Parameters
+Risk Adjustments: High Risk/High Volatility
+Topstep Labs
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Your Privacy Choices

@@ -1,0 +1,347 @@
+Optimizing Payouts And Scaling With The 1-Step Challenge | CTI
+Home
+Funding Programs
+1-Step Challenge
+2-Step Challenge
+Instant Funding
+Direct Funding
+FAQs
+Academy
+Resources
+Join Community
+Blog
+Market News
+Symbols Live Feed
+Economic Calendar
+Trading Platforms
+MetaTrader 5
+Match Trader
+Calculators
+Challenge Drawdown Calculator
+Margin Calculator
+Swap Calculator
+Pip Calculator
+Position Size Calculator
+Risk Of Ruin Calculator
+MT5 Trade Manager
+More
+Become an Affiliate
+Partners
+About Us
+Shop
+Start a Prop Firm
+LOG IN
+FREE TRIAL
+LOGIN
+Home
+Funding Programs
+1-Step Challenge
+2-Step Challenge
+Instant Funding
+Direct Funding
+FAQs
+Academy
+Resources
+Join Community
+Blog
+Market News
+Symbols Live Feed
+Economic Calendar
+Trading Platforms
+MetaTrader 5
+Match Trader
+Calculators
+All Calculators
+Challenge Drawdown Calculator
+Margin Calculator
+Swap Calculator
+Pip Calculator
+Position Size Calculator
+Risk Of Ruin Calculator
+MT5 Trade Manager
+More
+Become an Affiliate
+Partners
+About Us
+Shop
+Start a Prop Firm
+Skip to content
+Home › Blog
+› Prop School
+› Optimizing Payouts and Scaling with the 1-Step Challenge
+Prop School
+Optimizing Payouts and Scaling with the 1-Step Challenge
+By Martin Najat
+·
+December 2, 2025
+·
+Updated October 27, 2026
+·
+9 min read
+Reading mode
+Dark
+In this article
+Why This Matters
+How the 1-Step Challenge Works
+From Profits to Payouts: What You Really Earn
+The Fine Print Made Simple: KYC, Stop-Losses & Device Rules
+Coaching That Grows With You
+Quick Reality Check: Common Trader Myths
+Scaling & Advanced Perks
+Getting paid from a prop firm should be straightforward, but the details matter. When can you request your first payout at CTI? What happens to your drawdown limit after a withdrawal? How do you qualify for weekly payouts instead of monthly?
+These aren’t minor details when you’re managing cash flow and planning your trading career. This guide walks through CTI’s 1-Step Challenge payout system, from your first withdrawal to scaling up to $400k in total allocation.
+Why This Matters
+Predictable payouts improve cash-flow planning. When you know you can request your first payout after 7 profitable trading days and 2% profit, you can plan ahead instead of waiting indefinitely. Monthly payouts become weekly at the Bronze tier, then on-demand at the Silver tier in the CTI VIP Program.
+Balance-based trailing drawdown stays consistent. Your 5% MTD is calculated from your balance, not equity. This means intraday fluctuations won’t trigger violations. Withdrawals do not affect your stop-out level (SOL).
+Strategy freedom reduces friction. News trading, weekend holds, overnight positions, and Expert Advisors (including martingale) are all permitted on the 1-Step Challenge. You trade your way without worrying about EA restrictions.
+How the 1-Step Challenge Works
+The 1-Step Challenge streamlines prop trading by removing the typical two-phase evaluation. You have one clear target to hit, then you’re funded.
+Phase 1: Evaluation Requirements
+Requirement
+Details
+Profit Target
+8% of starting balance
+Maximum Drawdown
+5% trailing
+Daily Drawdown
+None
+Minimum Trading Days
+3 Profitable Trading Days
+Time Limit
+Unlimited
+Trading Freedoms
+Unlike many prop firms, CTI allows:
+✓ News trading – Trade NFP, FOMC, and all high-impact events
+✓ Weekend positions – Hold trades over weekends without penalty
+✓ Overnight holds – No restrictions on holding duration
+✓ Expert Advisors – Personal and third-party EAs permitted
+✓ Martingale – Higher-risk strategies allowed with proper management
+After You Pass: Funded Account Rules
+The same 5% trailing drawdown from your evaluation carries into your funded account. This drawdown trails upward with profits but never increases beyond the initial 5% of your starting balance.
+What Changes When You’re Funded
+Stays the Same:
+5% maximum trailing drawdown
+All trading freedoms (news, EAs, weekend holds)
+Stop-loss requirements (60 seconds)
+No daily drawdown limits
+What’s New:
+Profit share starts at 80%
+First payout available after 7 PTDs and 2% profit
+Monthly payout schedule (last 5 days)
+Eligible for VIP program progression
+Profitable Trading Days Explained
+A Profitable Trading Day (PTD) means closing the day with at least 0.5% profit of your initial account balance. For a $100,000 account, that’s $500 in closed profit. These days are tracked automatically on your dashboard and prove consistency.
+During evaluation : You need 3 PTDs minimum
+For first payout: You need 7 PTDs total
+From Profits to Payouts: What You Really Earn
+Once you’re funded, payouts become part of your trading routine. It’s essential to understand how your profit split, drawdown rules, and withdrawals work together. Then, you can plan your trades and manage your cash flow effectively without surprises.
+Profit Split and Payout Timing
+CTI’s 1-Step Challenge starts you with an 80% profit share , which increases as you move up the VIP Program tiers – 90% at Bronze, 100% at Silver , and exclusive salary potential at Gold.
+After hitting the required Profitable Trading Days, you can request your 1st payout on demand. Any subsequent payouts can be processed monthly during the final 5 days of each month or more frequently as you move up the VIP tiers.
+Tier
+Payout Frequency
+Profit Share
+Funded Account
+Monthly
+80%
+VIP Bronze
+Weekly
+90%
+VIP Silver
+On-Demand
+100%
+VIP Gold
+On-Demand
+100% + 1-year salary opportunity
+Payouts are usually processed within ~24 hours, depending on your withdrawal method.
+Trading Costs and Conditions
+All 1-Step funded accounts trade with 1:30 leverage and a $5 per lot commission on standard forex pairs. These are fixed, transparent conditions to keep trading costs predictable while maintaining institutional-grade execution.
+Understanding the Math: Example on a $100,000 Account
+Let’s walk through how payouts interact with your Maximum Trailing Drawdown (MTD) :
+Starting balance: $100,000
+MTD: 5% of initial balance = $5,000
+Profit target: 8% = $8,000
+Achieved profit: $5,000
+At an 80% profit share , your payout would be $4,000 . After that withdrawal, your new Stop-Out Level (SOL) is recalculated using CTI’s formula:
+SOL = (Highest Balance − Last Withdrawal) − MTD
+= ($105,000 − $4,000) − $5,000 = $96,000
+Your account can now drop to $96,000 before hitting the stop-out — a key figure to track once you start withdrawing profits.
+Why This Transparency Matters
+Many firms use equity-based trailing drawdowns that move with open positions, making payouts riskier over time. CTI’s balance-based trailing model only adjusts after closed profits , protecting you from temporary market swings.
+It’s a payout structure designed for consistent traders. One that rewards steady performance without penalising volatility.
+The Fine Print Made Simple: KYC, Stop-Losses & Device Rules
+This is the part many traders skim. The “boring fine print” that only seems important once something goes wrong. But knowing how we handle verification, stop-losses, and devices can save you hours of frustration (and possibly your account).
+KYC and Verification
+CTI is legally required to verify your identity. That means you’ll need to complete a quick KYC verification after passing Phase 1 of the 1-Step Challenge.
+It’s not there to make your life difficult; it’s there because payouts go through regulated payment channels.
+Once verified, all your funded accounts are linked under that profile. Future payouts go straight through without delay.
+The Stop-Loss Rule (and Why It Exists)
+If you’ve traded with other firms, you might’ve noticed a gray area around risk controls. CTI does it differently. The Stop-Loss rule is crystal clear:
+Every trade must have a visible stop-loss set within 60 seconds of execution .
+Stealth stop-losses (hidden from the platform) don’t count.
+EAs must be coded to place the SL automatically when opening a trade.
+If the system doesn’t detect a stop-loss, it may automatically close your trade. It’s not personal; it’s just the algorithm doing its job.
+💡 Trader Pro tip:  If you’re using automation, test your EA in a demo first to ensure it places visible SLs correctly. “It worked on my VPS” isn’t a great defense after a violation.
+Devices, IPs & VPS Use
+This one catches traders off guard more often than it should. CTI allows flexibility – just not chaos.
+You can trade from up to two devices without prior approval. That’s enough for your main setup and a backup.
+Beyond that, just message support for a quick whitelist. They’ll approve additional devices if you have a legitimate reason, such as portfolio management, travel, or multiple workstations.
+Here’s what is and isn’t a problem:
+✅ Allowed:
+Running your EA on a VPS for uptime and latency
+Logging in from a VPN (as long as the IP is stable)
+Traveling and accessing from new IPs
+❌ Not Allowed:
+Logging in from five countries in 24 hours (CTI’s compliance bots will assume you’ve been cloned)
+Sharing your login with other traders
+If something changes, such as a new device, a new region, or extended travel, let support know in advance. It’s faster than trying to explain after a flag.
+Don’t lose your funded status because of preventable technical or compliance issues. Once you’ve got KYC sorted and your devices whitelisted, the system just works. You focus on trading; CTI handles the rest.
+Trading Platforms: MT5 and Match-Trader
+CTI offers two trading platforms, depending on where you’re based, both reliable, both fully supported.
+MT5 (MetaTrader 5)
+The go-to choice for most traders outside the U.S. It supports Expert Advisors, custom indicators, and advanced charting. If your automation runs on MQL5, this is your playground.
+Match-Trader
+Required for traders in the U.S. It’s a web-based platform with no downloads, strong execution speed, and native copy-trading tools. If you’re running EAs, double-check compatibility or talk to support before funding.
+Both platforms run under CTI’s approved symbol and spread list , with tight spreads, clear commissions, and identical trading conditions.
+Coaching That Grows With You
+As you progress through the tiers, you’ll access coaching guidance to help you stay consistent and scale with confidence.
+Funded Accounts
+On the 1-Step Challenge, your performance dashboard becomes your first coach. It tracks metrics such as drawdown, trade duration, and profit consistency, providing a clear picture of your strengths and habits before you ever sit down with a mentor.
+VIP Bronze
+Bronze members unlock one free 1-on-1 coaching session with CTI’s trading coaches. It’s a chance to review your performance, discuss risk management, and identify small changes that can improve consistency.
+One session might sound simple, but for many traders, it’s a turning point seeing their trading through an objective lens for the first time.
+VIP Silver
+Silver traders receive monthly VIP coaching sessions , free of charge. These go deeper into performance patterns, psychology, and long-term sustainability. You’ve already proven you can perform; now it’s about maintaining that edge across payout cycles and larger capital allocations.
+VIP Gold
+Gold continues the same monthly VIP coaching access . At this level, coaching becomes less about fixing mistakes and more about refining professional habits, the kind that keep traders successful for years, not just months.
+Quick Reality Check: Common Trader Myths
+Let’s clear up a few things that still pop up in trader chats about the 1-Step Challenge:
+Myth: “Trailing drawdown kills you after a payout.”
+Fact: It only shifts after you withdraw – not during open trades. CTI uses a balance-based model, not equity.
+Reality Check: Know your new Stop-Out Level (SOL) and size trades accordingly. You’ll be fine.
+Myth: “CTI bans EAs, martingale, or news trading.”
+Fact: All allowed on the 1-Step – just trade responsibly and follow the Stop-Loss rule.
+Reality Check: Automation’s fine. Reckless risk isn’t.
+Myth: “You have to finish the challenge in a set time.”
+Fact: Nope. Unlimited time for evaluation. Take it slow if needed.
+Reality Check: Quality beats speed — the market will still be there tomorrow.
+Myth: “Payouts take forever.”
+Fact: Usually processed within ~24 hours ; banks just move more slowly than traders.
+Reality Check: If your payment provider drags its feet, it’s not CTI, it’s the banking system doing what it does best: queue.
+Scaling & Advanced Perks
+Once you’re trading consistently, you can grow your allocation without having to restart. The rules are simple and based on rolling 4-month reviews :
+Qualify: +10% total profit, 2 of the last 4 months profitable, and account in profit at review.
+Increments: From $100k, accounts scale to $112.5k → $125k → $150k → $175k → $200k .
+Caps: $200k per account, up to $400k total allocation.
+Account count: Up to two accounts (e.g., 2×$100k) at once.
+Each increase adds 50% of your original balance , giving you more capital while maintaining the same 5% trailing drawdown structure.
+💡 Pro tip: You don’t need to rush scaling as it’s reviewed automatically when you meet the criteria. Focus on consistency; the numbers follow.
+Martin Najat
+Chief Executive Officer | CEO
+MBA, BSc Banking and Finance, 8+ years in prop firm operations.
+Martin Najat co-founded City Traders Imperium in 2018 and is the operational and strategic force behind its global trader ecosystem. With a background in banking and finance (BSc, ASCCB-accredited), an MBA, and a professional trading practice of his own, Martin built the systems that let CTI run with reliability, transparency and long-term stability.
+From payout infrastructure to risk controls and trader-support workflows, he shaped the operational backbone that grew CTI from a London startup into a respected international proprietary trading firm and continues to drive the technology that will power the next generation of prop trading. His leadership ensures traders experience a firm that is fast, fair and built to last.
+How we write and review our content: Editorial Policy
+X
+LinkedIn
+← Previous
+Weekly Market Sentiment – 30 November 2025
+Next →
+Weekly Market Sentiment – 7 December 2025
+Share
+In this article
+Why This Matters
+How the 1-Step Challenge Works
+From Profits to Payouts: What You Really Earn
+The Fine Print Made Simple: KYC, Stop-Losses & Device Rules
+Coaching That Grows With You
+Quick Reality Check: Common Trader Myths
+Scaling & Advanced Perks
+Categories
+Market News
+Forex Education
+Funded Traders
+Trading Psychology
+Prop Trading
+Prop School
+CTI vs Prop Firms
+More in Prop School
+The Ultimate Funded Trader Tax Guide
+Got your first prop firm payout and not sure how to pay tax on it? You’re not alone. Most funded traders get…
+6 min read
+How Funded Account Payouts Really Work?
+Have you ever sat at your screen, staring at different prop firms, and wondered: “How do funded account payouts actually work? Is…
+7 min read
+What Is Drawdown In Prop Trading? | How Does it work?
+Introduction Drawdowns can make or break your journey with City Traders Imperium If you’re currently funded by a prop firm — or…
+12 min read
+Keep reading
+Market News
+Weekly Market Sentiment – 15 November 2026
+A hot US inflation report drove the dollar to a 52-week high and revived December Fed hike bets,…
+7 min read
+Read More →
+Market News
+Weekly Market Sentiment – 8 November 2026
+A Democratic midterm sweep sent stocks into a correction this week, while Brent oil slid hard on US-Iran…
+7 min read
+Read More →
+Prop Trading
+US Midterms 2026: What CTI Traders Did on Election Night
+You knew it was coming. The date was on every calendar. The polls had been picked apart for…
+10 min read
+Read More →
+Exit reading mode
+Follow Us
+Funding Programs
+1-Step Challenge
+2-Step Challenge
+Instant Funding
+Direct Funding
+Success Stories
+FAQs
+Free Trial
+Resources
+CTI Academy
+Join Community
+Blog
+Market News
+Symbols Live Feed
+Calculators
+MT5 Trade Manager
+More
+Become an Affiliate
+Partners
+About Us
+Shop
+Start a Prop Firm
+Contact Us
+Contact Support
+Email: support@citytradersimperium.com
+Live Chat: available on the website
+Discord: Join Community
+Terms & Conditions
+Privacy Policy
+Refund Policy
+AML Policy
+Affiliate Agreement
+Conduct Policy
+Editorial Policy
+Sitemap
+Cookie Settings
+Skill assessment programs and simulated demo trading services are provided exclusively by City Traders Imperium Limited, a company incorporated under the laws of Comoros Union with company number 15969 (License No. L15969/CTI), registered address at Hamchako, Mutsamudu, Autonomous Island of Anjouan, Comoros Union, with operating address at Edificio Faro, Oficina 4, Avenidas 12 y 14, Calle 12, Barrio Luján, San José, Costa Rica. City Traders Imperium Academy educational courses are provided by CTI FZCO (Company No. DSO-FZCO-21340), registered at Dubai Silicon Oasis, DDP, Building A1, Dubai, United Arab Emirates.
+Legal Disclosure: City Traders Imperium Limited provides access to simulated trading skill assessment programs designed solely for the evaluation of trading proficiency and risk-management skills. City Traders Imperium Academy provides structured educational courses. All trading activity occurs in a demo environment using virtual capital.
+No Client Funds / No Live Trading: Neither CTI FZCO nor City Traders Imperium Limited is a broker, dealer, exchange, or investment adviser, and neither accepts nor manages client deposits. Participants do not trade real assets or place live market orders. Any rewards are performance-based and derived from skill assessment results only.
+Evaluation & Educational Use Only: All content, tools, and services are provided for educational and evaluation purposes only and shall not be construed as investment advice, solicitation, or an offer to buy or sell any financial product, cryptocurrency, or derivative. Participants are encouraged to consult independent financial, legal, or tax advisors before engaging in any trading activity outside of these services.
+Platforms: MetaTrader 5 & Match-Trader platforms are used exclusively in connection with the simulated skill assessment environment operated by City Traders Imperium Limited.
+Hypothetical Performance Disclosure: Simulated or hypothetical trading results have inherent limitations. Unlike actual performance records, they do not represent real trading activity and may be designed with the benefit of hindsight. No representation is being made that any account will, or is likely to, achieve profits or losses similar to those shown or implied.
+Payments & Refunds: All fees paid are educational service fees for access to courses or skill assessment programs. All fees are non-refundable except as outlined in our Refund Policy .
+Jurisdictional Restrictions: Neither entity offers services to nationals or residents of the following jurisdictions: North Korea (DPRK), Iran, Syria, Cuba, Russia, or to any individual under international sanctions.
+Non-Targeted Reach: Information on these websites is not directed to residents of any country where such distribution or use would be contrary to local law or regulation. It is the user's responsibility to ensure that any use of the websites or services adheres to their local laws or regulations.
+Beware of Impersonators: This is our only official website.
+© 2026 Copyright
+City Traders Imperium & City Traders Imperium Academy.
+All Rights Reserved.
+Black Friday at City Traders Imperium: the only crash you want
+Select an offer to copy its discount code, then claim your discount.
+✕ Copy code CRASH15: Direct Funding, 15% off Copy Copy code CRASH20: 2-Step Challenge, 20% off Copy Copy code CRASH25: Instant Funding, 25% off Copy Copy code CRASH30: 1-Step Challenge, 30% off Copy Claim My Discount Already have an account? Log in

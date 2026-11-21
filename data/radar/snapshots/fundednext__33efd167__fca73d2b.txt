@@ -1,0 +1,53 @@
+How can I complete the KYC Verification process? | FundedNext Help Center Skip to main content
+Go to Website العربية Português do Brasil English Français Deutsch हिन्दी Italiano 日本語 fa-IR 简体中文 Español ภาษาไทย Türkçe Oʻzbekcha English
+Go to Website العربية Português do Brasil English Français Deutsch हिन्दी Italiano 日本語 fa-IR 简体中文 Español ภาษาไทย Türkçe Oʻzbekcha English
+Search for articles...
+All Collections
+FundedNext Dashboard FAQ
+Verification Center
+How can I complete the KYC Verification process?
+How can I complete the KYC Verification process?
+July 31, 2026
+Table of contents
+TL;DR: Completing the KYC Verification process at FundedNext is mandatory for account activation and security. Once you pass the challenge, you’ll be prompted to verify your identity in the Verification Center by submitting a valid government-issued docuemnt. The process takes about  48 hours , and additional address verification (via a recent utility bill or bank statement) may be required in some cases.
+Completing the KYC (Know Your Customer) Verification process is a necessary step to ensure the security and compliance of our trading platform. Here's a detailed guide on how to complete the process:
+Once you become eligible for the KYC Verification process, you will see a pop-up on your dashboard that will prompt you to sign and submit the agreement. After clicking it, you will be directed to the "Agreement Signing" page in the “Verification Center” of your dashboard profile. Here, you will have to enter your full name and address and agree to the terms and conditions. After that, click "Submit." After doing so, you will have the option to submit your KYC documents for verification.
+Step-by-Step KYC Verification Process
+Step 1
+Once you have successfully completed the challenge, you will receive a notification on your dashboard prompting you to initiate the KYC Verification process. Simply click on the "Verify Now" button provided, and you will be directed to the "Verification Center" page. Alternatively, you can access the "Verification Center" through the "My Profile" section of your account.
+Step 2
+On the "Verification Center" page, you will find instructions along with the "Start Verification" button. Click on this button to reveal two options for verification: scanning the QR code or sending a verification link via SMS. Choose the option that is most convenient for you and follow the provided instructions to obtain the link for document submission.
+Step 3
+To complete the KYC Verification process, you will need to provide one of the specific documents mentioned.
+The following documents should be valid photo IDs:
+Government-issued identity card showing nationality
+Passport
+Residence Permit
+Traders from the following countries can submit their driver's license for the KYC Verification:
+United States
+American Samoa
+Puerto Rico
+Australia
+New Zealand
+Canada
+KYC Verification cannot be completed if you provide expired documents. Please ensure that you submit the most recent and valid documents to proceed with the verification process.
+Step 4
+Once you have gathered the necessary documents, submit them through the provided link. After successful submission, you will receive a notification on your dashboard confirming that your verification data has been received.
+Step 5
+After completing all the required steps, a window will appear indicating that your documents are under review. The verification process typically takes 48 hours. Upon successful completion, you will receive a notification in the Verification Center confirming that your verification has been successful. At this point, you will be eligible to receive your FundedNext Account.
+Additional Verification Requirement
+In certain instances, as part of the KYC Verification process, you may be required to complete an address verification step to finalize your KYC Verification. If this applies to your case, you will receive a separate, secure link for document submission.
+To fulfill the address verification requirement, you must provide one of the following officially recognized documents:
+Utility Bill
+Bank Statement
+Please ensure that the document submitted was issued within the last three months.
+This additional verification measure is in place to enhance security and compliance, ensuring a seamless and reliable experience on our platform.
+It's important to note that failure to pass the KYC Verification process will result in the rejection of your FundedNext Account application. Should you encounter any difficulties or have questions during the KYC Verification process, please reach out to the FundedNext Support Team for guidance and assistance.
+Related Articles
+What is the purpose of the Verification Center?
+Identity Verification: Name Consistency Policy
+Understanding the KYC Verification Process at FundedNext
+What are FundedNext's KYC Compliance and Identity Integrity rules?
+Stellar 1-Step Account
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

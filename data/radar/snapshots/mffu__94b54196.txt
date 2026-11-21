@@ -1,0 +1,140 @@
+California Privacy Policy - MyFundedFutures
+Futures CME futures trading Perps New 24/7 perps trading Save 40% On Any Plan With Code CLUB.
+New to MFFU? Get 50% off your first eval. Claim 40% off
+California Privacy Policy
+This California Privacy Notice ("California Notice") supplements the Global Privacy Notice at https://myfundedfutures.com/privacy-policy , and applies to you only if you are a resident of the State of California and in accordance with the California Consumer Privacy Act ("CCPA"), as amended by the California Privacy Rights Act ("CPRA").
+I. NOTICE OF COLLECTION AND USE OF PERSONAL DATA
+We collect certain information that identifies, relates to, describes, is reasonably capable of being associated with, or could reasonably be linked, directly or indirectly, with you ("Personal Data"), as further described below. In addition, we may collect data that is not identifiable to you or otherwise associated with you, such as aggregated data, and is not Personal Data. To the extent this data is stored or associated with Personal Data, it will be treated as Personal Data; otherwise, the data is not subject to this notice.
+Categories of Personal Data
+In the last twelve (12) months, we have collected the following categories of Personal Data:
+Identifiers such as name, postal address, email address, account name, driver's license number, passport number, or other similar identifiers.
+Personal Data categories listed in the California Customer Records statute (Cal. Civ. Code 1798.80(e)), such as name, contact information, signature, government ID numbers, insurance and financial account information, and education and employment information;
+Protected classifications under California or federal law, such as gender and marital status.
+Commercial information , such as transaction and transaction history.
+Internet or other electronic network activity information , including, browsing history, search history, and information regarding a consumer's interaction with our website.
+Geolocation data , such as device location for OFAC compliance and fraud prevention.
+electronic , for customer requests or issues.
+Inferences drawn from any of the information above to create a profile about an individual reflecting an individual's preferences and characteristics.
+Sensitive personal data, such as social security number, driver's license, state identification card, or passport number, and financial account credentials potentially to process payments by Plaid and Rise.
+We will not collect additional categories of Personal Data other than those categories listed above. If we intend to collect additional categories of Personal Data, we will provide you with a new notice at or before the time of collection.
+Retention of Personal Data
+We retain Personal Data as long as you are using the Services, and as well as to the extent we deem necessary to carry out the processing activities described above, including but not limited to compliance with applicable laws, regulations, rules and requests of relevant law enforcement and/or other governmental agencies, and to the extent we reasonably deem necessary to protect our and our partners' rights, property, or safety, and the rights, property, and safety of our users and other third parties.
+How We Safeguard Your Personal Data
+We use reasonable and appropriate physical, technical, and organizational safeguards designed to promote the security of our systems and protect the confidentiality, integrity, availability, and resilience of Personal Data. Those safeguards include: (i) the encryption of Personal Data where we deem appropriate; (ii) taking steps to ensure Personal Data is backed up and remains available in the event of a security incident; and (iii) periodic testing, assessment, and evaluation of the effectiveness of our safeguards.
+However, no method of safeguarding information is completely secure. While we use measures designed to protect Personal Data, we cannot guarantee that our safeguards will be effective or sufficient. In addition, you should be aware that Internet data transmission is not always secure, and we cannot warrant that information you transmit utilizing the Services is or will be secure.
+Use of Personal Data
+We collect and process your Personal Data for the following business and commercial purposes:
+Providing, predicting, or performing, including maintaining or servicing accounts, providing customer service, processing or fulfilling orders and transactions, verifying customer information, and processing payments.
+Marketing our products and services to you, including sending you messages about the products and services we offer, which may include events and special offers for products and services.
+Communicating with you by email, mail, text message (SMS, MMS), telephone, push notification, and other methods of communication, about products, services, order status, and information tailored to your requests or inquiries.
+Auditing related to a current interaction with the consumer and concurrent transactions, including, but not limited to, counting ad impressions to unique visitors, verifying positioning and quality of ad impressions, and auditing compliance with this specification and other standards.
+Detecting security incidents, protecting against malicious, deceptive, fraudulent, or illegal activity, and prosecuting those responsible for that activity.
+Debugging to identify and repair errors that impair existing intended functionality.
+Short-term, transient use, including, but not limited to, the contextual customization of ads shown as part of the same interaction.
+Undertaking internal research for technological development and demonstration.
+Undertaking activities to verify or maintain the quality or safety of the services or devices owned, manufactured, manufactured for, or controlled by us, and to improve, upgrade, or enhance the services or devices owned, manufactured, manufactured for, or controlled by us.
+Complying with applicable laws, regulations, rules and requests of relevant law enforcement and/or other governmental agencies, or for other purposes, as permitted or required by law.
+As necessary or appropriate to protect the rights, property, and safety of our users, us, and other third parties.
+We will not use the Personal Data we collected for materially different, unrelated, or incompatible purposes without providing you with notice.
+Sources of Personal Data
+We may collect Personal Data:
+Directly from you . When you provide it to us directly whether online, by email, phone, or in-person, for example, when you create an account, sign-up to receive emails from us, or contact us.
+Automatically or indirectly from you . For example, through analytics tools, cookies, pixel tags (such as Google Analytics), or through your interactions with us on social media websites (such as LinkedIn).
+Operating Systems and Platforms . For example, we automatically collect information relating to the device used to access our Services, such as IP address, device identifiers, and browser information.
+Advertising Networks . For example, ad networks (such as Google) to serve advertisements across the Internet. These advertisers use cookies, pixel tags, and other tracking technologies to collect information about your online activity and provide online behavioral advertising.
+Social Networks . For example, from social media networks (such as LinkedIn, YouTube, Instagram, X and Reddit), including if you contact us for customer service support through our social media pages.
+Data Analytics Providers . For example, through technology and analytics providers (such as Google Analytics). These providers use cookies, pixel tags, and other tracking technologies to collect information about your online activity to allow us to personalize your online experience, including sending you messages about the products and services we offer.
+From our Service Providers For example background check providers, payment processing providers, commercial email providers, security consultants, and other Service Providers we engage.
+II. DISCLOSING OF PERSONAL DATA
+We have disclosed the following categories of Personal Data for a business purpose with the following categories of third parties:
+Our affiliated entities.
+Our Service Providers, including, our auditors, insurers, accountants, lawyers, IT consultants, and others who provide sales, marketing, analytics, data security and other similar services.
+Our partners or prospective partners in order to provide us and/or our affiliates and partners with information about the use of the Services and levels of engagement with the Services, to allow us to enter into new business relationships, and to allow us to market products or services on their behalf.
+Third parties, such as data analytics providers, advertising networks and social media networks (further described in the section in this Privacy Notice captioned "How We Obtain Your Personal Data").
+Other third parties in connection with a corporate reorganization, merger, sale, joint venture, assignment, transfer or other disposition of all or any portion of our business, assets or capital, including in connection with any bankruptcy or similar proceedings.
+Finally, we may also share Personal Data with government agencies or regulators when permitted or required to do so by law; in response to a request from a law enforcement agency or authority or any regulatory authority; and/or to protect the integrity of the Services or our interests, rights, property, health, or safety, and/or that of our users, visitors and others.
+Within the last twelve (12) months, we have shared the following categories of personal data for a business purpose with the following categories of third parties:
+Category 1 (Identifiers) : Service Providers, Third Parties
+Category 2 (California Customer Records) : Service Providers.
+Category 3 (Protected Classifications) : Service Providers and Government Agencies.
+Category 4 (Commercial Information) : Service Providers and Third Parties.
+Category 6 (Biometric Information) : Service Providers and Third Parties.
+Category 5 (Internet or Network Activity) : Service Providers and Third Parties.
+Category 6 (Geolocation Data) : Service Providers and Third Parties.
+Category 7 (Audio, Visual or Similar Information) : Service Providers.
+Category 8 (Professional or Employment Information) : Service Providers and Third Parties.
+Category 9 (Education) : Service Providers and Third Parties.
+Category 10 (Inferences) : Service Providers and Third Parties.
+Category 11 (Sensitive Personal Data) : Service Providers.
+In certain circumstances, MyFunded Futures may share limited user account information with affiliated companies and media platforms within the MyFunded group of companies for the purpose of publishing trader performance statistics, rankings, leaderboards, or similar informational content.
+Such disclosures may include a trader's display name or username, generalized geographic indicator (e.g., country), account size category, and performance metrics (such as profit, percentage gain, or win rate) as displayed within MyFunded Futures platforms. These publications may appear on affiliated websites, research portals, media platforms, or educational content sites operated by or associated with the MyFunded group. No personally identifiable information, including real names, contact information, identification documents, financial account details, or other sensitive personal data, will be disclosed in connection with these publications. Usernames or display names may be partially anonymized or truncated in publicly displayed rankings or performance summaries.
+By using the platform, users acknowledge that performance statistics and leaderboard placement may be publicly displayed on MyFunded Futures platforms and may also be republished by affiliated entities for informational, educational, or promotional purposes.
+III. DO-NOT-TRACK
+Many web browsers, mobile OS and apps have a Do-Not-Track ("DNT") feature to signal your preference for not having your online browsing activities monitored and collected. However, as there is no agreed technology standard for DNT, we do not currently respond to DNT browser signals or any other mechanism that communicates your preference not to be tracked. If a future standard for online tracking is adopted, we will update this privacy notice and inform you.
+IV. YOUR CALIFORNIA PRIVACY RIGHTS
+California's "Shine the Light" law permits our users who are California residents to request and obtain from us a list of what Personal Data (if any) we disclosed to third parties for their own direct marketing purposes in the previous calendar year and the names and addresses of those third parties. Requests may be made only once per year per person, must be sent to the email address below, and are free of charge. However, we do not disclose Personal Data protected under the "Shine the Light" law to third parties for their own direct marketing purposes.
+The CCPA provides our users who are California residents the following additional rights:
+Right to Know the categories of Personal Data we collected about you; the categories of sources from which we collected your Personal Data; the business or commercial purpose for collecting, selling or sharing Personal Data; the categories of third parties to who we disclose Personal Data; and the specific pieces of Personal Data we have collected about you.
+Right to Access certain information we hold about you.
+Right to Delete Personal Data we collected from you and maintained, subject to certain exceptions.
+Right to Correct inaccurate Personal Data about you. Once we receive and verify your request, we will use commercially reasonable efforts to correct the inaccurate Personal Data about you.
+Right to Non-Discrimination for the exercise of your CCPA privacy rights.
+Right to Opt-Out/In of the sale or sharing of your Personal Data.
+Right to Restrict or Limit the Use of Sensitive Personal Data to certain purposes related to the offering of goods or services as listed in the CCPA. However, we do not use your Sensitive Personal Data in such a manner.
+Some of our Services, however, may require your Personal Data. If you choose not to provide your Personal Data that is necessary to provide any aspect of our products or services, you may not be able to use those products or services. In addition, as described in the section captioned " Your Choices " in the Global Privacy Notice at https://myfundedfutures.com/privacy-policy , it is possible to change your browser settings to block the automatic collection of certain information.
+V. SALE AND SHARING OF PERSONAL DATA
+We may disclose your Personal Data by allowing certain third parties (such as online advertising services, advertising networks and social networks) to collect Personal Data via automated technologies on our websites for cross-context behavioral advertising purposes. Under California law, these kinds of disclosures may be considered a "sale" when the Personal Data is exchanged for non-monetary consideration, or "sharing" when the Personal Data is disclosed for cross-context behavioral advertising purposes. You have the right to opt out of these types of disclosures of your information.
+We may sell or share for cross-context behavioral advertising purposes (and may have sold or shared during the 12-month period prior to the effective date of this California Notice) the following categories of Personal Data about you to online advertising services and advertising networks:
+Category 1 (Identifiers)
+Category 5 (Internet or Network Activity)
+Inferences10 (Inferences)
+We do not have actual knowledge that we sell or share the personal information of minors under 16 years of age.
+VI. SUBMITTING A VERIFIED CONSUMER REQUEST
+To exercise your rights, you must provide us with sufficient information to allow us to verify your identity, and describe your request with sufficient detail that allows us to properly understand, evaluate, and respond to it. Once we receive the information you provide to us, we will review it and determine if more information is necessary to verify your identity as required by law, and we may request additional information in order to do so.
+If you would like further information regarding your legal rights under California law or would like to exercise any of them, please contact us by:
+Email: support@myfundedfutures.com
+Website: myfundedfutures.com
+VII. MODIFICATIONS AND UPDATES TO THIS CALIFORNIA NOTICE
+This California Notice replaces all previous disclosures we may have provided to you about our information practices with respect to the Services. We reserve the right, at any time, to modify, alter, and/or update this California Notice, and any such modifications, alterations, or updates will be effective upon our posting of the revised California Notice. We will use reasonable efforts to notify you in the event material changes are made to our processing activities and/or this California Notice, such as by posting a notice on the Services or sending you an email. Your continued use of the Services following our posting of any revised California Notice will constitute your acknowledgement of the amended California Notice.
+If you have any questions or concerns about this California Notice and/or how we process Personal Data, please contact us at:
+Address: 108 Lakeland Ave. Dover, DE 19901
+Email: support@myfundedfutures.com
+Website: myfundedfutures.com
+Last Updated: May 30, 2025
+Legal
+Disclaimer
+Privacy Policy
+Terms
+Cancellation
+California Privacy Policy
+Job Applicant Privacy Policy
+Cookie Preferences
+About us
+Why Us
+Community
+Careers
+Testimonials
+How it works
+Learn How It Works
+More
+NinjaTrader
+Hyperprop
+Fintevo
+Blogs
+FAQ
+© 2023- 2026    MyFundedFutures. All rights reserved.
+¹ All MFFU accounts operate in a simulated environment. Evaluation fees are non-refundable. See our Terms for full program details. All trades are executed on a demo basis and do not involve real capital. Customers who meet the required performance criteria may, at our sole discretion, receive an invitation to access live capital trading through one of our affiliated companies, by invitation only and subject to additional eligibility requirements and terms.
+² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program Terms for full eligibility conditions.
+Disclaimer: MyFundedFutures provides the information on this website for general informational and educational purposes only. It does not constitute investment, trading, tax, legal, or financial advice, and does not constitute an offer to buy or a solicitation to sell any financial product or derivative instrument. MyFundedFutures is not a broker-dealer, investment adviser, introducing broker, futures commission merchant (FCM), or money manager. You should consult your own advisors before engaging in any transaction.
+Trading futures involves a substantial risk of loss and is not appropriate for every person. The use of leverage amplifies exposure and can lead to significant losses. You should only participate using an understanding of these risks, and nothing in our programs should be relied upon in deciding whether to trade your own capital.
+Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S. exchanges, including those operated by CME Group (CME, CBOT, NYMEX, and COMEX). Equities, equity options, cryptocurrencies, contracts for difference (CFDs), and over-the-counter (OTC) products are prohibited.
+Simulated Performance: All MyFundedFutures evaluation and funded programs are conducted entirely in a simulated, non-executing environment. Participants are advised that hypothetical or simulated performance has inherent limitations. Unlike an actual performance record, simulated results do not represent real trading and may under- or over-compensate for factors such as slippage, liquidity, margin impact, and the psychological demands of live trading. Simulated results are often prepared with the benefit of hindsight. No representation is being made that any participant will or is likely to achieve profits or results comparable to those shown in any marketing, testimonials, or on-platform performance.
+Program Performance¹: The data below is provided for informational purposes only and should not be interpreted as a guarantee, prediction, or representation of any future results. During the applicable measurement period:
+19.97% of all evaluation participants completed the required objectives and advanced beyond the evaluation stage;
+approximately 19.95% of participants who began the evaluation process advanced to a simulated Funded Stage;
+39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
+4.2% of participants trading in a Simulated Funded Account were promoted to a Live Funded Account.
+All results occurred solely within a simulated environment and are not indicative of future results.
+Testimonials: Testimonials reflect the personal experiences of the individuals involved and are not necessarily typical or indicative of what any other participant may expect. They are not a guarantee of future results, payout eligibility, or trading success. No compensation has been provided in connection with the testimonials presented herein.
+For additional program terms, eligibility, jurisdictional limitations, media disclaimers, program integrity rules, intellectual property terms, and full program performance information, see our Disclaimer and Terms .
+MyFunded Perpetuals is offered by Funding Perpetuals Holdings, Inc., a company separate from MyFunded Futures, LLC. MyFunded Futures' track record and performance history do not apply to MyFunded Perpetuals or its products.

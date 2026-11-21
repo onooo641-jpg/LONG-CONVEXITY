@@ -1,0 +1,244 @@
+Entry and Exit Rules Guide for Planning Every Trade
+Get 30% Off with code "NOV"
+40% OFF GROWTH ACCOUNTS
+ENDS 13 NOVEMBER, 11:59PM EST
+How it works
+Pricing
+Help Center
+Join Discord
+Sign in
+Sign in
+Get funded
+Trading
+>
+Trading platforms
+8 minutes
+by
+Brett Simba
+Entry and Exit Rules Guide for Planning Every Trade
+How to write entry and exit rules that define when a trade is allowed, what invalidates it, and how it ends, then test them without hindsight.
+Share this post.
+Copy link
+TL;DR:  Entry and exit rules define when a trade is allowed, how it is opened, what invalidates it, and how it ends. Specify the market, session, setup, confirmation, order type, initial stop, target or trailing method, and time-based exit before trading. Size the position around the planned risk and include costs. Test the complete rule set without using information unavailable at entry, then review rule adherence separately from the trade’s profit or loss.
+Table of Contents
+Separate a setup from an entry rule
+Build complete entry rules
+Define exit rules before position size
+Choose a profit exit that matches the hypothesis
+Write a hypothetical entry and exit plan
+Set order handling rules for entries and exits
+Add entry rules for when to stand aside
+Test entry and exit rules without hindsight
+Review rule adherence separately from results
+Start with one entry and exit rule set
+Frequently asked questions
+You can identify a setup and still have no clear trade. The missing pieces are often the exact trigger, the point where the idea is wrong, and what you will do if price stalls.
+Entry and exit rules turn an observation into an executable plan. They reduce the decisions you must improvise while money is at risk.
+The rules do not need to predict every path. They need to make your response to the important paths clear enough to follow and test.
+Separate a setup from an entry rule
+A setup describes the conditions that make a trade worth considering. An entry trigger describes the event that actually permits an order.
+For example, a pullback in an uptrend is a setup description. A completed bar breaking a defined pullback high may be an entry trigger. The trend definition, bar interval, and acceptable pullback still need to be specified.
+Without that separation, “the setup was there” can become an excuse for entering at almost any point in the move.
+Write the context first, then the trigger. If the trigger never occurs, no trade has been missed under that rule set.
+Build complete entry rules
+A complete entry rule should cover the instrument, contract, session, market condition, trigger, and order type. Include any spread, liquidity, or event restriction that affects whether the trade can be executed sensibly.
+Decide whether confirmation requires a completed bar or can occur intrabar. A rule using the final high, low, and close of a bar cannot act as though those values were known earlier.
+Order type matters too. A market order prioritizes execution, while a limit order controls the acceptable price but may not fill. A stop entry can trigger into changing liquidity.
+Schwab’s thinkorswim entry and exit strategy documentation  illustrates the distinction between defined strategy conditions and the orders they represent. Your live platform’s order behavior needs its own verification.
+Define exit rules before position size
+The initial stop should connect to invalidation or another explicitly tested risk rule. It should not be moved farther away because the position is larger than the account can support.
+After defining the stop distance, calculate the dollar risk from contract value and quantity . Add a realistic allowance for costs and execution differences.
+If the minimum available position is still too large, the setup does not fit the account at that moment. Skipping it is a complete decision.
+Never treat a prop firm’s account-failure threshold as the planned stop for an ordinary trade. The trade should have its own risk boundary, with room remaining before an account-level breach.
+Choose a profit exit that matches the hypothesis
+A fixed target, a structure-based exit, a trailing stop, and a time exit test different ideas.
+A fixed target asks whether the setup can reach a specified reward before the stop. A trailing method asks whether staying with directional movement compensates for giving back part of open profit. A time exit asks whether the opportunity loses value after a defined interval.
+The table below compares the four exit rules side by side, so you can match the method to the idea you are testing.
+Exit method What the exit rule tests Main tradeoff
+Fixed target Whether the setup reaches a set reward before the stop Can close the trade before a larger move
+Structure-based exit Whether price keeps respecting the level or swing that defined the trade Needs a written definition of the structure
+Trailing stop Whether staying with directional movement pays for giving back open profit Gives back part of open profit on the exit
+Time exit Whether the opportunity loses value after a defined interval Can close a trade shortly before it moves
+Partial exits add another decision. They can reduce exposure, but they also change average win size, costs, and the remaining position’s behavior.
+Specify which method applies before entry. Switching from a fixed target to a trailing exit because price is moving quickly creates a different strategy whose results should be tracked separately.
+Write a hypothetical entry and exit plan
+Consider a practice setup built around a clearly defined session range. The following is a test structure, not a claim of profitability:
+Trade only the specified futures contract during the planned session window.
+Require a completed bar above the range, followed by a pullback that meets the written condition.
+Enter only after the defined confirmation trigger.
+Place the initial stop beyond the invalidation level identified before entry.
+Use a target or trailing rule chosen during strategy development.
+Exit at the time cutoff if neither price-based exit occurs.
+Now add a hypothetical numerical check. If the stop is six points away and the contract is worth $5 per point, one contract carries $30 of price risk before costs. Three contracts carry $90.
+Those figures are illustrative. Use the actual contract specification and your own tested rules when calculating a real order.
+Set order handling rules for entries and exits
+An exit rule is incomplete without an order-handling rule. A stop-market order can fill beyond its trigger in a fast market. A stop-limit order can remain unfilled when price moves past its permitted range. Choose the behavior you can manage rather than assuming a displayed stop guarantees a maximum loss.
+Define how long an entry order remains valid and cancel it when the setup expires. If the order fills only partly, decide how protection and targets adjust to the filled quantity. After a manual exit, confirm that leftover orders cannot open an unintended position.
+For a bracket or one-cancels-other arrangement, test the platform and connection you actually use. Verify where the orders are held and what happens after a disconnect. Rehearse the emergency flatten procedure in simulation, including the follow-up check that the account is flat and no entry orders remain. These operational rules belong beside the chart trigger because they determine how the plan reaches the account.
+Add entry rules for when to stand aside
+Exclusion conditions are part of a strategy. They might cover scheduled announcements, unusual spreads, insufficient data, a disconnected platform, or a completed daily loss budget.
+Do not create exclusions retrospectively to remove losing trades. Define them in advance and apply them to winners as well.
+For example, if your rule avoids a release window, a profitable trade during that window still violated the plan. Counting it as proof that the rule should disappear confuses outcome with process.
+Review potential changes on a broader sample outside the trading session.
+Test entry and exit rules without hindsight
+Use information available at the decision time. If a bar touches both the stop and target, its high and low alone may not establish which happened first.
+Use finer data or a conservative ambiguity rule. Include missed limit fills, costs, and plausible slippage rather than assuming every chart touch was executable.
+Test the complete sequence. An entry that looks good in isolation may perform poorly with the exit you can actually follow.
+Keep a separate sample for validation . Repeatedly changing thresholds to improve the same historical result can create rules that fit noise rather than repeatable behavior.
+Review rule adherence separately from results
+For every trade, record whether the setup qualified, whether the trigger occurred, whether size was correct, and whether the exit followed the plan.
+A losing trade can be a valid observation from the strategy. A winning trade can reveal a serious process error. Both belong in the account record, but they answer different review questions.
+If the rules themselves are too vague to classify the trade, improve the definitions before collecting another large sample.
+Start with one entry and exit rule set
+Choose one setup and write its complete lifecycle on a single page. Practice executing it in simulation, including cancellations, stop placement, and the no-trade conditions.
+Then review whether the rules are clear enough to reproduce and whether the results justify further testing. A written plan does not remove futures risk, but it makes the decisions behind that risk visible.
+Frequently asked questions
+What are entry and exit rules in trading?
+Entry and exit rules are written conditions that decide when a trade is allowed, how the order is placed, what invalidates the idea, and how the position ends. They cover the setup, trigger, order type, initial stop, profit exit, and time cutoff before any money is at risk.
+What should an entry rule include?
+A complete entry rule names the instrument, contract, session, market condition, trigger, and order type. It also states whether confirmation needs a completed bar and lists any spread, liquidity, or event restriction that blocks the trade.
+Should you set exit rules before entering a trade?
+Yes. The initial stop, profit exit, and time exit should be fixed before entry, and position size should follow from the stop distance. Changing the exit method mid-trade creates a different strategy whose results should be tracked separately.
+How do you test entry and exit rules without hindsight?
+Use only information available at the decision time and test the full entry and exit sequence together. Include costs, missed limit fills, and plausible slippage, apply a conservative rule when one bar touches both the stop and target, and keep a separate sample for validation.
+Get up to $750k instant sim funding
+Start earning payouts instantly
+Super fast automated payouts
+Free journal to improve
+Get funded now
+Join 80,000+ happy traders
+Summarize and ask questions with AI
+ChatGPT
+Claude
+Perplexity
+Grok
+Google
+Recommended for you
+11 minutes
+Futures Trading Strategies
+How Many Trades Per Day to Take and How to Set Your Maximum
+Set a maximum trades per day cap from your tested setup frequency and all-in costs, with a loss budget that ends the session.
+Read article
+17 min read
+Futures Trading Strategies
+What Is a Gamma Squeeze?
+A gamma squeeze explained for futures traders: dealer hedging mechanics, the downside version, and how to manage the volatility without breaking account rules.
+Read article
+18 min read
+Futures Trading Strategies
+Crypto Trading Strategies and How to Build One
+A workable crypto trading strategy defines the market condition, entry, invalidation, exit, position size, and daily risk limit before you place the trade.
+Read article
+17 min read
+Futures Trading Strategies
+Double Bottom Pattern Guide for Better Trade Planning
+How to read a double bottom pattern, from the two support tests and neckline break to invalidation, measured moves, and position sizing for futures traders.
+Read article
+22 min read
+Futures Trading Strategies
+ABCD Pattern Trading Explained
+The ABCD pattern explained for futures traders, with the ratios that define the D zone, entry and invalidation rules, and how it compares with other formations.
+Read article
+12 min read
+Futures Trading Strategies
+How Many Trades Should You Backtest?
+How many trades a strategy backtest needs, why 100 is only a checkpoint, and how bias, costs, and market conditions affect sample reliability.
+Read article
+10x your trading with up to $750k simulated funds
+Free built-in journal
+Get Instant Funding, or take an Evaluation
+Automated payouts
+Get funded now
+Be the first to get limited time deals
+Get one email per week filled with deals, insights and tips.
+Please enter valid email
+Subscribe
+We promise no spam. See our privacy policy
+Thank you! Your submission has been received!
+Oops! Something went wrong while submitting the form.
+Making trading accessible to everyone
+Company
+Home
+Pricing
+PTL Leaderboard
+Become an affiliate
+Careers
+Merchandise
+Resources
+Help Center
+Blog
+Privacy Policy
+Terms of Use
+Funded Trader Agreement
+Contact
+Support
+Discord community
+Partners and media
+Trading education All education →
+Trading for Beginners
+Market Mechanics
+Technical Analysis
+Trading Strategies
+Risk Management
+Trading Psychology
+Futures Trading
+Options Trading
+Stock Market
+Forex Trading
+Commodities
+Fundamental Analysis
+Glossary
+© 2026 - Tradeify Holdings, Corp . All rights reserved. Tradeify is a registered trademark of Tradeify Holdings Corp.
+1700 S. Dixie Highway, Suite 305 Boca Raton, FL 33432
+Important Disclaimers:
+The materials and content provided by Tradeify Holdings, Corp. (“Tradeify”), whether on our website, through distributed documents, TradeifyTV, or other communications, are intended solely for educational and general informational purposes (the “Information”).  This Information should not be viewed as an offer or solicitation to buy or sell futures, futures-related products/derivatives, or any futures products of any kind, or otherwise constitute any type of trading or investment advice, recommendation or strategy, or an endorsement of any financial instruments, companies, or funds. Users are encouraged to do their own research, should not interpret such Information as personalized financial advice, and should consult with a qualified financial adviser before making any financial decisions.  The Information presented herein does not consider your personal financial situation, risk tolerance, or investment goals. The Information provided is not targeted at any specific jurisdiction and should not be used in any manner that would contravene local laws or regulations.
+Hypothetical/Simulated Performance.  Hypothetical or simulated performance results have many inherent limitations, some of which are described below. Unlike an actual performance record, simulated results do not represent actual trading. Also, because the trades have not actually been executed, the results may have under-or-over compensated for the impact, if any, of certain market factors, such as lack of liquidity.  No representation is being made that any account will or is likely to achieve profits or losses similar to those shown. In fact, there are frequently sharp differences between hypothetical performance results and the actual results subsequently achieved by any particular trading program. One of the limitations of hypothetical performance results is that they are generally prepared with the benefit of hindsight. In addition, hypothetical trading does not involve financial risk, and no hypothetical trading record can completely account for the impact of financial risk in actual trading. For example, the ability to withstand losses or to adhere to a particular trading program in spite of trading losses are material points which can also adversely affect actual trading results. There are numerous other factors related to the markets in general or to the implementation of any specific trading program which cannot be fully accounted for in the preparation of hypothetical performance results and all of which can adversely affect actual trading results.
+Trader Performance Statistics (August 2025 – July 2026, calculated as of 9 August 2026): Across Tradeify's Growth, Advanced and Select evaluation products, (a) 17.2% of evaluation accounts initiated were successfully completed and afforded the opportunity to advance to the Funded Level; (b) 40.3% of individual participants who initiated one or more evaluations advanced to the Funded Level in at least one of their evaluations - participants may purchase multiple evaluations and resets, and initiated a median of 3 each over the period; (c) 28.5% of individual participants at the Funded Level received a payout; and (d) 3.0% of individual participants trading in a Funded Account were called up to a Live Funded Account. The Funded Level includes both Funded Accounts and Live Funded Accounts.
+Trade examples presented for compensation purposes are hypothetical and should not be expected to reflect live trading results. Simulated results do not necessarily imply future profits. The risk of loss in trading forex or commodity contracts can be substantial. You should therefore, carefully consider whether such trading is suitable for you in light of your financial condition.
+Engaging in futures, forex, and other financial trading involves significant risk and is not appropriate for all investors. It is possible to lose the entire amount of your investment, or even more. Only use risk capital—money you can afford to lose without impacting your financial security or lifestyle. Trading should only be undertaken by individuals who have the necessary risk capital and fully understand the risks involved. Past trading results do not guarantee future performance. Tradeify Holdings, Corp. does not warrant the accuracy or completeness of the Information provided and is not responsible for any losses or damages resulting from reliance on this Information.  Certain investment products present heightened risks:
+Security Futures.   Securities futures products are not suitable for all investors.  Supporting documentation is available upon request for all comparisons, recommendations, statistics or other technical data presented.  Past performance regarding securities futures (as applicable) is subject the following Risk Disclosure Statement for Security Futures Products .
+Forex Futures.  The prices of forex futures contracts may be highly volatile and while generally liquid, there may be times (e.g., during market stress or outside of regular trading hours) when it is difficult to execute trades at desired prices.  Forex futures are traded on margin and present risks associated with the use of leverage – this enables an investor to control a large position with a relatively small amount of capital and may amplify gains, but may also magnify losses.
+Virtual Currency Derivatives/Products. Virtual currency derivatives may experience significant price volatility and the initial margin for virtual currency derivatives may be set as a percentage of the value of a particular contract, which means that margin requirements for long positions can increase if the price of the contract rises.  Certain restrictions may be imposed on customer trading activity in virtual currency derivatives, such as requiring additional margin, imposing position limits, prohibiting naked shorting or prohibiting give-in transactions.  The rules of certain designated contract markets impose trading halts that may restrict a market participant's ability to exit a position during a period of high volatility.  Given the material characteristics of these products, including the lack of a centralized pricing source and the opaque nature of the virtual currency market, there currently is no widely accepted practice to verify the ownership and control of a virtual currency or the valuation attributed to a virtual currency.
+Testimonials. Testimonials provided herein, as well as those presented via TrustPilot may not be representative of the experience of other Tradeify account holders and such testimonials are not indicative of, or a guarantee of, future performance or success.  No compensation has been provided in connection with such testimonials.
+Tradeify Brokerage Disclaimer: Tradeify Brokerage LLC d/b/a Slay Markets is an introducing broker registered with the Commodity Futures Trading Commission ("CFTC") and guaranteed by NinjaTrader Clearing, LLC d/b/a NinjaTrader, Kraken Derivatives US, and Tradovate ("NTC"), and is a National Futures Association Member (NFA ID: 0575972). Tradeify Brokerage LLC's principal place of business is 1700 S. Dixie Highway, Suite 305, Boca Raton, FL 33432.
+Novaflame LTD (Registration No. HE 480295 ), with its registered address at Archiepiskopou Makariou III, 228, Agios Pavlos Court, Block A, 1st Floor, Flat/Office 113, 3030 Limassol, Cyprus, acts as a payment agent processing funds on behalf of Tradeify Holdings, Corp.
+We use cookies
+We use cookies to ensure you get the best
+experience on our website. For more information on
+how we use cookies, please see our Privacy Policy .
+Decline Accept
+This Month's Prize
+Win a Travis Head Signed Bat
+Yes, enter prize drawing
+No, I’m not interested
+First Name Please enter first name
+Email Address Please enter valid email
+Enter prize drawing
+By subscribing, you agree to receive emails from us. We promise no spam. See our privacy policy
+You’re in! Winners announced every 30th of the month.
+Oops! Something went wrong while submitting the form.
+Do you want a chance to
+Win a $150k Growth Account?
+Yes, enter prize drawing
+No, I’m not interested
+First Name Please enter first name
+Email Address Please enter valid email
+Enter prize drawing
+By subscribing, you agree to receive emails from us. We promise no spam. See our privacy policy
+You’re in! Winners announced every 30th of the month.
+Oops! Something went wrong while submitting the form.
+Do you want a chance to
+Win a $150k Growth Account?
+Yes, enter prize drawing
+No, I’m not interested
+First Name Please enter first name
+Email Address Please enter valid email
+Enter prize drawing
+By subscribing, you agree to receive emails from us. We promise no spam. See our privacy policy
+You’re in! Winners announced every 30th of the month.
+Oops! Something went wrong while submitting the form.
+We use cookies
+We use cookies to ensure you get the best
+experience on our website. For more information on
+how we use cookies, please see our Privacy Policy .
+Decline Accept

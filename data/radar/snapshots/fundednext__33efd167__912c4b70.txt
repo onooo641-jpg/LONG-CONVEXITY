@@ -1,0 +1,57 @@
+What Is The Copy Trading Rule at FundedNext? | FundedNext Help Center Skip to main content
+Go to Website العربية Português do Brasil English Français Deutsch हिन्दी Italiano 日本語 fa-IR 简体中文 Español ภาษาไทย Türkçe Oʻzbekcha English
+Go to Website العربية Português do Brasil English Français Deutsch हिन्दी Italiano 日本語 fa-IR 简体中文 Español ภาษาไทย Türkçe Oʻzbekcha English
+Search for articles...
+All Collections
+Trading Rules & Guidelines
+What Is The Copy Trading Rule at FundedNext?
+What Is The Copy Trading Rule at FundedNext?
+September 18, 2026
+Table of contents
+TL;DR: Yes, FundedNext allows copy trading between your own FundedNext Challenge Accounts , as long as the total combined capital does not exceed $300,000 and one account is clearly designated as the master account . However, copy trading between different individuals , including using cloud-based copy tools like Social Trader Tools or Duplikum, is strictly prohibited . Violations can result in warnings or account termination.
+At FundedNext , copy trading is allowed between FundedNext Challenge Accounts, under specific guidelines ​​to ensure fairness, transparency, and compliance with the platform’s policies. Please review the guidelines carefully to understand when copy trading is allowed and what constitutes a violation.
+Allowed Copy Trading Practices
+Copy Trading Between Your Own FundedNext Challenge Accounts
+FundedNext allows copy trading between multiple FundedNext Challenge Accounts owned by the same individual. However, the total capital allocation across all these accounts cannot exceed $300,000 .
+One of these accounts must be designated as the "Master" Account , while the others function as "Slave" Accounts under the same ownership.
+Prohibited Copy Trading Practices
+Copy Trading Between FundedNext Accounts
+Copy trading is strictly prohibited between a FundedNext Account and any other FundedNext Account or FundedNext Challenge Account, whether it belongs to the same individual or another entity. This applies to both manual and automated trading setups, including third-party software or tools.
+Copy Trading With Other Individuals
+Traders are not permitted to copy trades between accounts owned by different individuals , including family members, friends, or third parties. Engaging in account management services or participating in a “Pass Your Challenge” scheme also violates FundedNext’s policies.
+Use of Third-Party Copy Trading Software (Cloud-Based Copiers)
+Using external cloud-based copy trading services, such as Social Trader Tools, Traders Connect, or Duplikum, is not allowed.
+​
+Using a VPS-based trade copier is permitted , but only between a trader’s own FundedNext Challenge Accounts.
+Merging FundedNext Accounts
+Traders may choose to merge FundedNext Accounts instead of copy trading, and this approach allows for simplified account management.
+​
+The maximum allocation for merged accounts is $300,000 , ensuring compliance with FundedNext’s policies while making trading more efficient. Learn more about merging accounts here .
+How Does FundedNext Detect Violations?
+FundedNext uses both automated systems and manual reviews to detect potential copy trading violations. We monitor the following key aspects:
+​
+Identical Trades : If multiple accounts show the same entry price , exit price , lot size , symbols , or trade time .
+Synchronized Trading Patterns : If multiple accounts show similar trading patterns , such as opening trades at the same time with identical parameters.
+Group Trading : If several accounts show identical strategies or trades, especially if the owners of those accounts are not the same.
+Consequences for Violating Copy Trading Rules
+The enforcement action applied depends on the nature of the copy trading violation. Two cases are outlined below.
+Copy Trading Between a Trader's Own Accounts Involving a FundedNext Account
+This applies where copy trading is detected between a FundedNext Account and any other FundedNext Account or FundedNext Challenge Account, including a Stellar Instant FundedNext Account belonging to the same individual , regardless of whether the setup is manual or automated , including through third-party software or tools.
+Violation
+Enforcement Action
+First Violation
+A formal warning will be issued. No Performance Reward will be issued for the affected cycle.
+Subsequent Violation
+Account Termination. No Performance Reward or Refund will be issued.
+Copy Trading With Other Individuals
+This applies where copy trading is detected between accounts owned by different individuals , including family members, friends, or third parties, or where account management services or "Pass Your Challenge" schemes are involved. The account will be terminated immediately , and the Performance Reward or Refund may be adjusted or denied based on the severity of the violation.
+Why Are These Copy Trading Rules in Place?
+FundedNext enforces these rules to uphold fairness and maintain a level playing field for all traders. By preventing unethical practices, these measures safeguard the platform’s integrity and protect it from manipulative actions that could create an unfair advantage. Additionally, these guidelines are essential for ensuring system stability, allowing traders to operate in a seamless and efficient environment without disruptions caused by excessive or coordinated trading activities. Ultimately, these policies promote responsible trading and contribute to a sustainable ecosystem where every trader has an equal opportunity to succeed.
+Related Articles
+Am I allowed to merge my accounts in FundedNext?
+What are the Restricted/Prohibited Trading Strategies?
+How many accounts can I have with FundedNext?
+What are the Risk Limits on a FundedNext Account?
+Stellar 1-Step Account
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

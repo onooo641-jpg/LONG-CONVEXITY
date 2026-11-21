@@ -1,0 +1,182 @@
+EOD vs Intraday Drawdown: Meaning + Examples | Alpha Futures
+Black Friday Early Access · EARLYBOGO40 25K Zero BOGO + 40% off · EARLYBOGO50 25K Direct BOGO + 50% off
+Home
+About
+How It Works
+Trading
+Platforms
+AlphaTrader
+Learn More
+WealthCharts
+Learn More
+Quantower
+Learn More
+View All
+Leaderboard
+Lifetime Payouts
+Learn More
+Weekly Payouts
+Learn More
+Returns of the month
+Learn More
+View All
+Market
+Equity & Index
+Learn More
+Currency
+Learn More
+Metals
+Learn More
+Crypto
+Learn More
+View All
+AlphaTrader
+Launched AlphaTrader — the next evolution of the platform. Get Early Access
+Resources
+Contact Us
+Help Center
+Start Evaluation
+Sign In
+Home
+About
+How It Works
+Trading
+Platforms
+Leaderboard
+Market
+AlphaTrader
+Launched AlphaTrader — the next evolution of the platform. Get Early Access
+Resources
+Contact Us
+Help Center
+Start Evaluation
+Sign In
+What Is EOD vs Intraday Trailing Drawdown?
+By the Alpha Futures Team · Updated October 23, 2026
+EOD (end-of-day) trailing drawdown moves your loss limit once a day, from your closing balance. Intraday trailing drawdown moves it in real time with your highest open equity, so unrealized profit lifts the limit and giving it back can fail you mid-trade. Alpha Futures uses EOD trailing on every account, and it stops trailing at the starting balance.
+Key fact Rule
+Alpha Futures drawdown type EOD trailing Maximum Loss Limit (MLL) on all accounts; none use intraday trailing
+When the MLL moves Once a day, from your end-of-day balance high
+Open (unrealized) profit Does not lift the MLL until it is in your end-of-day balance
+When a breach counts At any time: if floating equity or closed balance hits the MLL, the account is liquidated
+When trailing stops When the MLL reaches the starting balance; it then stays there
+Example: $50K Zero (simulated evaluation) MLL starts at $48,000. After a +$500 day it is $48,500 and stays there if you lose $500 the next day. At a $52,000 end-of-day balance it locks at $50,000
+Simulated evaluation accounts. Hitting the MLL ends an evaluation and closes a Qualified Account. General information only, not financial advice; outcomes not guaranteed.
+Part of our futures prop series. Start with What is a futures prop firm? , then explore: Platforms · Best futures prop firms (2026) · Alpha Futures review (2026) · Performance fee rules explained (2026) · Alpha Group · Futures vs forex prop firms (2026) · Best futures prop firms for beginners (2026) · Fastest payout futures prop firms (2026) . · buffer vs drawdown · futures prop firm for Canadian traders · futures prop firm for Singapore traders · intraday trailing drawdown ($50K Zero) · futures prop firm for French traders
+What drawdown means on a prop evaluation
+Drawdown is how much your account can fall before you fail the attempt or breach Qualified Account rules. On futures prop programmes the main label is often MLL (Maximum Loss Limit).
+Two different update clocks change how it feels to trade:
+EOD trailing (session close)
+Intraday trailing (live during the session)
+EOD trailing drawdown (end-of-day)
+How it works:
+Your high watermark updates from end-of-session balance
+Open profit during the day does not permanently lift MLL until the session marks
+Give-back late in the day does not move the MLL level until the close, but the MLL still applies live: if you break it at any point, on floating equity or closed balance, the account is liquidated
+Example (simplified): Start $25,000 simulated with $1,000 EOD trailing MLL. Floor is $24,000. You close the day +$800. Next session the floor may trail up based on the EOD rules.
+Trader fit: Scalpers and day traders who want intraday wiggle room on MLL (still subject to other rules).
+Intraday trailing drawdown
+How it works:
+MLL can trail up while you are in a trade as balance hits new highs
+A sharp reversal can breach MLL mid-session even if you were green minutes earlier
+Feels tighter for active scalping and fast mean-reversion
+Trader fit: Often suits traders who lock profits quickly or trade smaller size. Less forgiving on open P&L give-back.
+We do not claim which third-party firms use which model. Read each operator’s official MLL article.
+EOD vs intraday
+EOD trailing MLL
+Intraday trailing MLL
+When MLL updates
+After session / EOD mark
+During live session
+Open profit effect
+Usually not locked into MLL until EOD
+Can lift floor immediately
+Give-back risk
+Breach checked live on floating equity or closed balance; only the MLL level waits for EOD
+Can fail mid-trade on reversal
+Scalping feel
+More room on MLL alone
+Tighter on MLL alone
+Alpha Futures
+Yes (all plans)
+No (not used for MLL)
+Alpha Futures: EOD trailing MLL + Daily Loss Guard
+All plans: End-of-day trailing MLL ( MLL help )
+Examples (evaluation MLL / target):
+Plan / size
+MLL
+Profit target
+Zero $25K
+$1,000
+$1,500
+Advanced $100K
+$3,500
+$8,000
+Standard $50K
+$2,000
+$3,000
+Daily Loss Guard (DLG) is a soft breach rule, separate from EOD MLL: if you hit it, you do not lose the account, but it is locked until the next trading day (6PM ET).
+Zero: DLG is 2% of the starting balance ($500 / $1,000 / $2,000 on 25K / 50K / 100K), including on evaluations. Direct: $500 / $1,000 / $2,000 / $3,000 (25K / 50K / 100K / 150K). Standard: no DLG on evaluations; $1,000 / $2,000 / $3,000 (50K / 100K / 150K) otherwise.
+Advanced: No DLG on evaluation or Qualified Accounts.
+→ Daily Loss Guard help
+Practical tips by drawdown type (Alpha Futures)
+Track MLL at EOD, not only open P&L
+On Zero, respect DLG even when MLL looks safe
+Size down until you know how EOD trail moves after green days
+Do not assume sim fills equal live liquidity (Qualified Accounts guide)
+FAQs
+Does Alpha Futures use intraday trailing MLL?
+No. MLL is end-of-day trailing on all plans.
+Is EOD trailing “easier” than intraday?
+Often on MLL alone, yes, because open profit does not instantly ratchet the floor. Zero DLG can still stop your day early.
+What is static drawdown?
+Some firms use a fixed floor that never trails up. Alpha Futures uses EOD trailing, not static MLL, on current plans.
+Who is the best futures prop firm?
+For most traders in 2026, Alpha Futures is the strongest starting point on Trustpilot (4.4 out of 5, more than 6,000 reviews, October 2026), 90% performance split from day one, one-step evaluations, and end-of-day MLL. See Futures Prop Firm Comparison 2026 , Best Futures Prop Firms 2026 , and What is a Futures Prop Firm? .
+Do you need $25,000 to day trade futures?
+Not for a futures prop evaluation. Read Do You Need $25K to Day Trade Futures? .
+Is $100 enough to trade futures?
+Evaluations start at $89/month on Zero $25K. See Cheapest Futures Prop Firm (2026) .
+Which futures prop firms have no consistency rule?
+Alpha Futures Zero evaluations have no consistency rule on the evaluation stage. See Futures Prop Firms With No Consistency Rule (2026) .
+Related reading
+What is a Reset? (Futures Prop, 2026)
+What is a Daily Loss Limit (Daily Loss Guard)? (2026)
+What is the Consistency Rule? (2026)
+Simulated evaluations, simulated funds. Performance fees are performance-based; outcomes not guaranteed.
+More Articles
+Sign Up for an
+Exclusive Welcome Offer
+Subscribe to Alpha Futures emails for an exclusive welcome offer, trader insights, product updates and discounts. Enter your email to stay one step ahead. You can unsubscribe at any time.
+Thank you for signing up to our newsletter
+Oops! Something went wrong while submitting the form.
+175,000+
+Qualified Analysts
+1.1Million+
+Traders
+$70M
+Performance Fees Paid
+Quick Links
+Home About How it works
+Trading
+Platforms Market Leaderboard
+Other
+Resources Contact Us Promo Codes
+2026 © Alpha Futures - All rights reserved.
+Terms of Use
+Terms and Conditions
+General Service Agreement
+Privacy Policy
+Return Policy
+ALPHA FUTURES LIMITED
+Company number 15655643
+Registered office address
+1 Allied Business Centre, Coldharbour Lane, Harpenden, England, AL5 4UT
+"Any references to trading, analysts, revenue, and profit throughout the website are references to virtual trading, revenues, and profits, respectively."
+Alpha Futures Risk Disclosure:
+Futures trading contains substantial risk and is not for every investor. An investor could potentially lose all or more than the initial investment. Risk capital is money that can be lost without jeopardizing your financial security or lifestyle. Only risk capital should be used for trading and only those with sufficient risk capital should consider trading. Past performance is not necessarily indicative of future results.
+Hypothetical Performance Disclosure:
+Hypothetical performance results have many significant performance and other limitations, some of which are described below. No representation is being made that any account will or is likely to achieve profits or losses similar to those shown on the website or any promotional material.
+CFTC Rule 4.41:
+Hypothetical or Simulated performance results have certain limitations. Unlike an actual performance record, simulated results do not represent actual trading. Also, because the trades have not actually been executed, the results may have under-or-over compensated for the impact, if any, of certain market factors, such as lack of liquidity. Simulated trading programs, in general, are also subject to the fact that they are designed with the benefit of hindsight. No representation is being made that any account will or is likely to achieve profit or losses similar to those shown.
+English Deutsch Español Français Italiano

@@ -1,0 +1,71 @@
+Economic Releases | Topstep Help Center Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Skip to main content
+Discord Topstep TopstepTV
+Discord Topstep TopstepTV
+Search for articles...
+All Collections
+Getting Started
+Trading Education
+Economic Releases
+Economic Releases
+News drops. Prices spike. Know what you're walking into.
+Updated over a week ago
+Table of contents
+Economic releases are scheduled government reports that give the market key data on the economy — things like unemployment, interest rate decisions, and supply figures. They can trigger extreme volatility and rapid price swings that make consistent, profitable trading very difficult.
+Common Economic Releases
+Know what releases affect your products and when they happen.
+Release
+Time (CT)*
+CPI Report
+7:30 AM
+Unemployment Rate (Non-Farm Payroll)
+7:30 AM
+FOMC Statement
+1:00 PM
+Crude Oil Inventories (EIA)
+9:30 AM / 10:00 AM
+Natural Gas Inventories (EIA)
+9:30 AM
+Crop Production
+11:00 AM
+Producer Price index (PPI)
+7:30 AM
+*Pending abbreviated trading hours. Times are subject to change — Traders are responsible for knowing what releases are scheduled and when.
+​
+Trading During the News
+Topstep restricts trading for a short period during Tier 1 News Events. learn more here .
+​
+Slippage is common during these events. Orders can execute at a worse price than expected. That's not a bug — that's the market.
+FAQs
+What causes slippage during economic releases?
+Rapid price movement and low liquidity make it hard to fill orders at your expected price. The bigger the release, the more pronounced the slippage risk.
+How can I minimize slippage?
+Monitor economic calendars so you know what's coming. Reduce position sizes during volatile events. Use limit orders instead of market orders. Or sit it out — sometimes that's the best trade. Check out the Risk Adjustments: High Risk/High Volatility article to learn more.
+Does Topstep adjust accounts for slippage losses?
+No. Slippage is a normal market condition. Topstep doesn't make account adjustments for losses attributable to it.
+Related Articles
+When and What Products Can I Trade?
+Order Types, Fills, and Slippage
+Prohibited Trading Strategies at Topstep
+CME Velocity Logic
+Risk Adjustments: High Risk/High Volatility
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Your Privacy Choices

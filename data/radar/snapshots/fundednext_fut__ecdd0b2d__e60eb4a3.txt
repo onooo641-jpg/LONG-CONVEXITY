@@ -1,0 +1,27 @@
+What is the Maximum Daily Loss Limit? | FundedNext Help Center Skip to main content
+Go to Website العربية Português do Brasil English Français Deutsch हिन्दी Italiano 日本語 fa-IR 简体中文 Español ภาษาไทย Türkçe Oʻzbekcha English
+Go to Website العربية Português do Brasil English Français Deutsch हिन्दी Italiano 日本語 fa-IR 简体中文 Español ภาษาไทย Türkçe Oʻzbekcha English
+Search for articles...
+All Collections
+General FAQ
+Account Information
+What is the Maximum Daily Loss Limit?
+What is the Maximum Daily Loss Limit?
+September 21, 2026
+For Evaluation, Express, and Stellar 2-Step:
+Traders are allowed to lose 5% of their initial account balance on any given day as their Daily Loss. If your initial account balance is $100,000, then 5% of the amount is $5000. At any point in a day, if the (running + closed) loss exceeds $5000, it will be considered a Daily Loss rule violation.
+For Stellar 1-Step:
+Traders are allowed to lose 3% of their initial account balance on any given day as their Daily Loss in the Stellar 1-Step account. If your initial account balance is $100,000, then 3% of the amount is $3000. At any point during the day, if your total running and closed losses exceed $3,000, it will be considered a violation of the Daily Loss Limit.
+For Stellar Lite:
+In the Stellar Lite Account, traders are permitted to lose up to 4% of their initial account balance as their Daily Loss Limit. For instance, with an initial balance of $100,000, this equates to $4000. At any point during the day, if your total running and closed losses exceed this, it will be considered a violation of the Daily Loss Limit.
+To get more information regarding how the Daily Loss Limit is calculated, kindly click here
+A client will be able to reset their account to start trading again after their accounts get breached due to hitting the Daily Loss Limit. For more information regarding this, kindly visit here
+Please refer to the image below for details about the Daily Loss:
+Please note that, effective March 18th, 2025, we no longer offer the Express and Evaluation model to our new clients. Existing clients currently using this account plan will continue to have access as usual. For more details, please click here .
+Related Articles
+How can I calculate the daily loss limit?
+How can I calculate the Maximum Loss Limit?
+What is the Maximum Loss Limit?
+What are Today’s Permitted Loss Limit and Maximum Permitted Loss Limit on FundedNext CFD?
+Daily Loss Limit vs. Maximum Loss Limit
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃

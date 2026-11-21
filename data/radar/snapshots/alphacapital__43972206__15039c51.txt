@@ -1,0 +1,54 @@
+Alpha Three | Alpha Capital Help Center Skip to main content
+Português do Brasil English Español English
+Português do Brasil English Español English
+Search for articles...
+All Collections
+Alpha Plans
+Alpha Three
+Alpha Three
+July 22, 2026
+The Alpha Three plan is Alpha Capital Group's 3-step evaluation.
+Key Features:
+Profit Targets, Drawdown Limits:
+Phase 1 profit target: 8%
+Phase 2 profit target: 4%
+Phase 3 profit target: 4%
+Max Drawdown (static): 6%
+Max Daily Drawdown (calculated over the highest end-of-day balance or equity, whichever is greater): 4%
+Minimum trading days (for each phase): 3
+For more information on how the daily drawdown works, please refer to our dedicated article.
+Leverage & Lot Exposure:
+The Alpha Three plan offers leverage of up to 1:50 across different asset classes, giving traders the ability to manage larger positions relative to their account size:
+FX: 1:50
+Metals: 1:9
+Indices: 1:10
+Oil: 1:10
+Alongside leverage, the maximum lot exposure on a Three account is adjusted based on account size, as follows:
+$5k = Max 2.5 lots
+$10k = Max 5 lots
+$25k = Max 10 lots
+$50k = Max 20 lots
+$100k = Max 40 lots
+$200k = Max 80 lots
+$300k = Max 120 lots
+Please note that the maximum lot exposure will depend on your leverage requirements and available margin.
+During the account review at the withdrawal stage, should any violations of this rule be identified, we follow a strict procedure:
+Upon the first instance of violating this rule, the performance fee earned through lot sizes exceeding the permitted limit will not be eligible for withdrawal.
+Upon the second instance of violating this rule, the performance fee will be forfeited and the Qualified Analyst Account will be deactivated.
+Please note that violations are assessed per position, not per trade idea. Therefore, a sequence of trades can result in multiple violations of this rule. For example, if the maximum lot limit for an account is 10 lots, a single trade of 11 lots followed by another trade of 1 lot, while the first trade remains open, will result in two breach counts and the closure of the account.
+​
+Additional Features:
+News Trading : Trading during major news events is allowed, with a 5 -minute window on both sides of the event . You are NOT allowed to execute any new trade, or close an existing trade, on the targeted instrument from 5 minutes before until 5 minutes after the release of the news announcement.
+For more information about news releases and targeted instruments , please refer to our news trading article.
+​
+Weekend Hold :
+Phase 1/2/3: Holding trades over the weekend is allowed .
+Qualified Analyst Account: Holding trades over the weekend is also allowed .
+Maximum allocation
+The maximum allocation is $400,000, which is shared across all five plans: Pro, Swing, One, Three, and Direct.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+[email protected]
+Discord
+Website
+Dashboard
+We run on Intercom

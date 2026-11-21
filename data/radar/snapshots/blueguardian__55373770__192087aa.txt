@@ -1,0 +1,69 @@
+Account rules: ownership, devices and fair use | Blue Guardian Help Centre
+Skip to content Help Search the help centre ⌘K
+Website Start challenge Help Centre home Collections
+Getting started Account inactivity rule How Blue Guardian works Getting help and using your dashboard
+Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
+Payouts How payouts work
+Billing & accounts Paying for your account: methods, card rules and refunds How many accounts can I have? Futures bundle discounts
+Trading rules Prohibited trading strategies What happens if I break a rule? Futures risk management rules Trading hours and the trading day CFD news trading rules
+Platforms & instruments Trading platforms CFD trading conditions: markets, commissions and leverage Futures contract limits and funded scaling Futures instruments, codes and costs
+CFD plans Instant Standard account rules Instant Starter account rules 1 Step Standard rules 2 Step Standard rules 1 Step Nano rules 2 Step Nano rules Buy Now Pay Later (BNPL) rules
+Futures plans Reserve account rules Elite account rules Express account rules Direct account rules Elite, Reserve & Direct Path to Live Zero account rules Zero Path to Live
+Affiliates & competitions Affiliate program Monthly trading competition
+Help Centre
+Verification & KYC
+Account rules: ownership, devices and fair use
+Account ownership, login sharing, the CID device rule, accurate information, multiple accounts and chargebacks, for CFD and Futures.
+Applies to: CFD and Futures Updated 17 November 2026
+Short answer
+Your account is for you alone. It must be in your legal name, only you may log in and trade, you must only use your own devices, and everything you give us must be true. Breaking these rules can lead to account closure and a permanent ban.
+Your account must be in your own name
+Register with your legal name . Payouts are sent directly to the account holder, so the account holder and the payout recipient must be the same person.
+Only you can trade your account
+Don't share your login details or let anyone else access your account.
+Don't let anyone place or manage trades for you.
+Copy trading is only allowed between accounts you legally own.
+If we detect someone else trading your account, it will be terminated immediately.
+Use your own devices (CID rule)
+Every device you use to log in has a unique device identifier, known as a CID . Our systems record the CID of every login and check whether the same device has been used for other traders' accounts.
+The CID rule: you must not log in to your account from a device that has been used to log in to another trader's account, and you must not use your device to log in to anyone else's account. If the same CID appears on your account and another trader's account, this is a CID match , and the accounts are treated as linked.
+This includes devices belonging to friends, family members, colleagues, trading communities, signal providers or account managers, as well as shared computers and VPS services.
+What happens with a CID match
+Accounts with a CID match are flagged and reviewed, usually during a payout review. Depending on the review, this can lead to:
+Payout denial or disqualification
+Removal of profits earned on the account
+Suspension or permanent closure of the account
+All decisions by our Risk Team are final.
+How to stay within the rule
+Only log in from your own personal phone, computer or laptop.
+Never log in to someone else's account on your device, even to help them.
+Don't use public, shared or work computers, or shared VPS services.
+If you've ever used a device that someone else has also used to log in to their Blue Guardian account, contact support before you trade.
+Give us accurate information
+These are serious violations:
+Fake names, fake or altered documents, or false verification details
+Using someone else's identity or payment details
+Trying to bypass KYC or hide who is really operating the account
+Any of these can lead to an immediate hard breach, payout denial and a permanent blacklist.
+Don't use multiple accounts to abuse offers
+Creating multiple profiles or accounts to abuse promotions, discount codes, resets or payout conditions is not allowed. All related accounts may be closed, profits voided and the trader permanently blacklisted.
+Chargebacks
+Filing a dishonest chargeback, or trying to recover money fraudulently through your payment provider after receiving access, services or payouts, leads to an immediate permanent ban.
+CFD: platform password
+You must log in to your trading platform with the password Blue Guardian provides. Changing your platform password is not allowed.
+Still need help?
+Chat with our support team. We usually reply in a few minutes.
+Chat with us
+More in Verification & KYC
+Applies to: CFD and Futures KYC verification: what you need and when Applies to: CFD and Futures Who can sign up: age and restricted countries
+On this page Short answer
+Your account must be in your own name
+Only you can trade your account
+Use your own devices (CID rule)
+What happens with a CID match
+How to stay within the rule
+Give us accurate information
+Don't use multiple accounts to abuse offers
+Chargebacks
+CFD: platform password
+© 2026 All Rights Reserved – Blue Guardian Terms Privacy Cookies
