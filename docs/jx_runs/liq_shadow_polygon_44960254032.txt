@@ -1,0 +1,8 @@
+polygon: v2 start, head 97731361
+polygon: loaded 18472 cached positions
+polygon: recalibrated 488 cached positions
+polygon: positions ready: 18472 users, 5617 with debt
+polygon: reopened 21 recorded unhealthy episodes
+polygon: head 97731593 cycles 43 debtors 5626 cand 715 last_cycle 5201 ms rpc ok/err 394/None
+polygon: head 97731795 cycles 87 debtors 5626 cand 713 last_cycle 10267 ms rpc ok/err 747/None
+polygon: head 97731999 cycles 131 debtors 5626 cand 716 last_cycle 5087 ms rpc ok/err 1094/None
