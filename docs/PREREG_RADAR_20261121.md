@@ -138,3 +138,10 @@ the main sweep (coin flip 200 runs seed 1; real trades; 3-min delay for alert-as
   50% of profit, min $500, cap $2,000, 90%, no consistency or buffer; $128 (only figure shown).
 Not priced (rules or prices not readable): The Trading Pit Futures, E8 Futures, Traders Launch, DayTraders, Funded Futures Network, BluSky,
 Finotive, AquaFunded, Purdia, YLOS, Hola Prime, The5ers Futures, IQ Capital, Trade The Pool, NexGen, Legends.
+
+## Addendum 6 (2026-11-21): FuturesElite rules now read, before re-pricing
+The first FuturesElite run (flagged, $44,000) used two assumptions. A post-hoc sensitivity (`scripts/radar_fe_sens_20261121.py`) showed the
+result depends on them (never-locking floor → −$4,480; $200 price → $35,504). FuturesElite's own article "Elite drawdown, daily loss limit and
+contracts" (2026-10-18) states the 50K floor **locks at start + $100** and funded contracts **scale 20 / 30 / 40 micros** (below $2,500 / from
+$2,500 / from $3,499). The model is corrected to those rules (scaling applied in both phases: conservative) and re-priced; the corrected run
+replaces the first. The $128 price stays third-party (directory, "With DLL" plan).

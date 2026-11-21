@@ -1,0 +1,4 @@
+FuturesElite Elite 50K, 3-min delay, as priced ($128, lock at start)  real $   44,000 | coin flip $  11,143 (87%) | dip $ -4,224
+FuturesElite Elite 50K, 3-min delay, price $200                       real $   35,504 | coin flip $     785 (54%) | dip $ -6,600
+FuturesElite Elite 50K, 3-min delay, funded floor never locks         real $   -4,480 | coin flip $ -13,248 (0%) | dip $ -4,480
+FuturesElite Elite 50K, 3-min delay, price $200 + never locks         real $   -7,000 | coin flip $ -20,700 (0%) | dip $ -7,000

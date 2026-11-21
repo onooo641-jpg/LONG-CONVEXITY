@@ -14,6 +14,9 @@ TFD Static Pro               full_bots              delay 0 min | real $   20,24
 Alpha Futures Standard 50K   alert_assisted         delay 3 min | real $   40,155 | coin-flip median $    8,998 (profitable 81%) | worst dip $ -4,773 | -
 Blue Guardian Elite 50K, price $141 [sens] alert_assisted         delay 3 min | real $   43,877 | coin-flip median $    6,442 (profitable 74%) | worst dip $ -4,653 | -
 Blue Guardian Elite 50K, price $350 [sens] alert_assisted         delay 3 min | real $   37,398 | coin-flip median $   -1,457 (profitable 46%) | worst dip $ -5,698 | -
+Blueberry Ascent 50K         full_bots              delay 0 min | real $   23,397 | coin-flip median $   -4,016 (profitable 37%) | worst dip $-10,982 | -
+Goat Flex 50K                full_bots              delay 0 min | real $   23,784 | coin-flip median $   -3,419 (profitable 32%) | worst dip $ -6,322 | -
+FuturesElite Elite 50K       alert_assisted         delay 3 min | real $   31,071 | coin-flip median $    5,903 (profitable 79%) | worst dip $ -2,560 | EXTRA SLOT CANDIDATE
 
 RANKING by coin-flip median
   LucidFlex 50K                flip $   18,519  real $   37,523  EXTRA SLOT CANDIDATE
@@ -22,10 +25,13 @@ RANKING by coin-flip median
   Alpha Futures Standard 50K   flip $    8,998  real $   40,155  
   MFFU Rapid EOD 50K           flip $    7,358  real $   34,481  
   Blue Guardian Elite 50K, price $141 [sens] flip $    6,442  real $   43,877  
+  FuturesElite Elite 50K       flip $    5,903  real $   31,071  EXTRA SLOT CANDIDATE
   TFD Static Pro               flip $    3,274  real $   20,248  
   FTMO Futures Growth 50K      flip $    1,906  real $   34,236  
   FTMO Futures Pro 50K         flip $    1,810  real $   27,428  
   TFD Static Core              flip $   -1,163  real $   10,680  
   Blue Guardian Elite 50K, price $350 [sens] flip $   -1,457  real $   37,398  
+  Goat Flex 50K                flip $   -3,419  real $   23,784  
+  Blueberry Ascent 50K         flip $   -4,016  real $   23,397  
   TradeDay $189                flip $   -4,213  real $   22,158  
   Bulenox Momentum 50K         flip $  -14,622  real $   -4,139  

@@ -45,9 +45,13 @@ BLUEBERRY_ASCENT50 = dataclasses.replace(
     funded_loss_limit=2000, mll_locks_at=2100, lock_level=100.0, funded_scaling=False, winning_day_min=200.0,
     winning_days_required=5, consistency_target=0.35, payout_needs_both=True, payout_buffer=2100.0, payout_cap=2500.0,
     payout_min=500.0, profit_split=0.90, one_time_price=245.0, reset=125.0, monthly=0.0, activation=0.0, api_monthly=0.0)
+# Addendum 6: lock and contract scaling read from "Elite drawdown, daily loss limit and contracts" (2026-10-18): floor locks at start + $100;
+# funded contracts 2 / 3 / 4 minis below $2,500 / from $2,500 / from $3,499 (the model's ladder applies in both phases: conservative,
+# since the evaluation really has 4 from day one).
 FE_ELITE50 = dataclasses.replace(
-    B, profit_target=3000, loss_limit=2000, combine_max_contracts=40, combine_consistency=0.50, combine_mll_locks=False,
-    funded_loss_limit=2000, mll_locks_at=2000, lock_level=0.0, funded_scaling=False, winning_day_min=150.0,
+    B, profit_target=3000, loss_limit=2000, combine_max_contracts=40, combine_consistency=0.50, combine_mll_locks=True,
+    funded_loss_limit=2000, mll_locks_at=2100, lock_level=100.0, funded_scaling=False,
+    ladder=((2500.0, 20), (3499.0, 30), (float("inf"), 40)), winning_day_min=150.0,
     winning_days_required=6, payout_share=0.50, payout_cap=2000.0, payout_min=500.0, profit_split=0.90,
     one_time_price=128.0, reset=128.0, monthly=0.0, activation=0.0, api_monthly=0.0)
 

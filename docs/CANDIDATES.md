@@ -107,6 +107,10 @@ risk, 5m signals and 1m fills.
 | 202 | Dolomite stablecoin supply (Ethereum), radar week 1 | same | FAIL at Stage 1 (6.4%/yr) | same |
 | 203 | Bluefin USDSUI-USDC LP (Sui), radar week 1 | same | FAIL: 22.9% / 16.3% net by half but loss-event proxy hit (TVL to 32% of 7-day high); near-miss | same |
 
+| 204 | stablecoin yield rotation (DefiLlama, top 5 monthly) — non-prop fallback | `docs/PREREG_FALLBACK_20261121.md`. Pass ≥ 8%/yr net both halves. | pending data | PREREG_FALLBACK |
+| 205 | Hyperliquid HLP vault — non-prop fallback | same. Pass ≥ 8%/yr both halves, drawdown > −15%. | pending data | PREREG_FALLBACK |
+| 206 | FuturesElite Elite 50K, manual entry (alert-assisted), extra prop slot | PREREG_RADAR addenda 5–6. Flag rule as #200. | **flagged at $128** (third-party price): $31,071 real / $5,903 coin flip (79%) / dip −$2,560 vs Topstep at same delay $37,348 / $14,701; fails above ~$150. Needs: price confirmed, a person at the screen, signal clause read | PREREG_RADAR addendum 6; ledger RP5–RP6 |
+
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.
