@@ -1,0 +1,12 @@
+base: start, head 60222060
+base: bootstrap to block 52861685/60222060 users 33139
+base: bootstrap to block 53232935/60222060 users 35172
+base: bootstrap to block 54130435/60222060 users 36389
+base: bootstrap to block 55660435/60222060 users 36776
+base: bootstrap to block 57065435/60222060 users 37345
+base: bootstrap to block 58460435/60222060 users 37914
+base: bootstrap to block 59912935/60222060 users 38305
+base: bootstrap DONE, users 38489
+base: loop error https://base.api.pocket.network: {'code': -32602, 'message': 'block range extends beyond current head block: requested 60226850, head 60226848'}
+base: loop error https://base.api.pocket.network: {'code': -32602, 'message': 'block range extends beyond current head block: requested 60227865, head 60227864'}
+base: head 60227885 cycles 6 tracked 38495 last_cycle 30770 ms rpc ok/err 1097/168
