@@ -1,0 +1,85 @@
+EOD Challenge | Goat Funded Futures FAQ's
+Help Center / Choose a model / EOD Challenge
+EOD Challenge
+EOD Challenge: specifications, rules and payouts
+Everything for EOD 50K, 100K and 150K: profit target, trailing drawdown, daily loss limit, daily profit cap, consistency rule and payouts.
+Values by account size: EOD 50K / EOD 100K / EOD 150K
+Profit target : $3,000 (6%) / $6,000 (6%) / $9,000 (6%)
+Activation fee : $0 / $0 / $0
+Time limit : None / None / None
+Plan overview Drawdown and limits Consistency Rewards Trading rules
+EOD 50K EOD 100K EOD 150K
+Profit target $3,000 (6%) $6,000 (6%) $9,000 (6%)
+Activation fee $0 $0 $0
+Time limit None None None
+The EOD Challenge is a one-phase evaluation with end of day trailing drawdown and no time limit. Positions must be closed before the market closes.
+Key benefits
+No time limit to pass the evaluation
+No daily loss limit during the evaluation phase
+End of day trailing max drawdown, which locks once it reaches your starting balance
+80/20 profit split by default, with an optional 90/10 add-on
+$0 activation fee, so your funded account is activated at no extra cost
+Pricing and targets
+Prices change with our promotions. For the current price and reset fee, see the pricing page or ask us in chat.
+Two resets are available per challenge. You can hold up to 5 funded accounts.
+How to pass
+Reach the profit target of 6% of your starting balance.
+Stay within the trading rules and loss limits below.
+There is no minimum number of trading days. Once you pass, your evaluation period is reviewed, and your funded account is activated within 2 business days.
+Maximum drawdown (end of day trailing)
+Your maximum drawdown is the level your balance or equity cannot fall below. It trails up with your profits at the end of each trading day, and stops trailing once it reaches your starting balance. That lock applies in both the evaluation and funded phases.
+Breaching it is a hard breach, which closes the account immediately.
+Account size Max drawdown
+50K $2,000 (4%)
+100K $3,000 (3%)
+150K $4,500 (3%)
+Daily loss limit
+Evaluation: none.
+Funded: 2.5% of your starting balance.
+Account size Daily loss limit (funded)
+50K $1,250
+100K $2,500
+150K $3,750
+This is a soft breach, not a hard one. If you drop below the limit, your open positions are liquidated and the account is paused until the next trading day. The account is not closed.
+Contract limits
+The same limits apply in evaluation and funded. They are fixed for the life of the account.
+Account size Max contracts
+50K 5 mini / 50 micro
+100K 9 mini / 90 micro
+150K 12 mini / 120 micro
+Consistency rule
+The consistency rule limits how much of your total profit can come from a single trading day, so that profits are steady and sustainable.
+Evaluation: no single day may account for more than 50% of your total profit.
+Funded: no single day may account for more than 30% of your total profit during a payout period.
+Example on an EOD 50K. You make $1,500 in one trading day on your funded account. Your total profit for that period needs to reach at least $5,000 before you can request a payout, which puts your best day at 30% of the total.
+If you go over the threshold: your account is not terminated. You simply cannot request a payout until your highest profit day falls back to the threshold or below. Keep trading and building profit until it does, then you are eligible again.
+Payouts
+Eligibility: every 7 winning days. A winning day is a net profit of at least 0.2% of your starting balance, so $100 on a 50K.
+Request window: payout requests are submitted through your dashboard between the 5th and 8th, or the 20th and 23rd, of each month.
+Minimum request: $500, across all account sizes. There is no profit buffer to build up first, so any amount above $500 qualifies.
+Maximum request: 50% of your profit, capped by account size and payout number. The cap rises as you build a track record.
+Payout 50K 100K 150K
+1st $1,500 $2,000 $2,500
+2nd $2,000 $2,750 $3,250
+3rd $2,500 $3,250 $3,750
+4th and later $2,750 $3,750 $4,250
+The remaining 50% of your profit stays in the account and supports your equity into the next payout cycle.
+Profit split: 80/20 by default. You can add the optional 90/10 Profit Share Add-On for an extra 20% of the challenge price.
+News trading
+Evaluation: no restrictions.
+Funded: a 2 minute buffer applies around high impact news events. You cannot open, close, or trigger pending orders within 2 minutes before or after a scheduled release. Positions opened before the window began may be held through the event.
+Overnight and weekend holding
+Overnight holding is not permitted. Any position still open is closed automatically at 15:55 CT, five minutes before the session ends.
+Weekend holding is not permitted.
+Holding time: the 1 minute rule
+At each payout request, both of the following must be true for that payout cycle:
+at least 70% of your closed trades were held longer than 1 minute, and
+at least 70% of your net profit came from trades held longer than 1 minute.
+If either is not met, we deduct the profit from winning trades held under 1 minute in that cycle from your payout and pay the rest. If that profit is more than the amount you requested, we decline the payout and deduct the requested amount from the account instead. This is not an account breach, and your account stays open.
+It is also checked when you pass the evaluation. This replaced the 2 minute microscalping rule on 9 November 2026. It is separate from the 2 minute news buffer above.
+Tick scalping , meaning opening and closing positions within seconds to capture small tick profits, is not permitted on any account. Profit generated this way may be reviewed and deducted.
+Inactivity
+Place at least one trade every 14 days. If no trades are placed for 14 consecutive days the account is breached and closed, and the fee is not refunded. This 14-day rule applies from 7 November 2026. There is no time limit on passing the evaluation, but the account does need to stay active. If you are going to be away, tell support in advance.
+Please monitor our website and Discord for announcements about trading parameters, updates, or system changes.
+Updated 18 November 2026
+Back to top

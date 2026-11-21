@@ -1,0 +1,39 @@
+Can I use EAs, Bots, or Copy Trading? | Blueberry Futures Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Noto Sans".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Sign Up Login English हिन्दी 日本語 Español English
+Sign Up Login English हिन्दी 日本語 Español English
+Search for articles...
+All Collections
+Trading Rules & Risk Management
+Prohibited Strategies & Ethics
+Can I use EAs, Bots, or Copy Trading?
+Can I use EAs, Bots, or Copy Trading?
+Automated trading software is allowed on Blueberry Futures only if it is proprietary, runs your own strategy, and has been disclosed to us with consent received before you run it. Commercial and third-party systems are not allowed.
+October 1, 2026
+Table of contents
+You can use automated trading software on your Blueberry Futures account only if it meets all three of these conditions:
+It is proprietary. You built it yourself. Not bought, rented, shared, or commissioned from someone else.
+It runs your own strategy. The trading logic and risk decisions in it are yours.
+You disclosed it and received our consent before running it. Contact support, tell us what the tool is and what it does, and wait for our confirmation before it places a single trade.
+This applies on every account and at every stage.
+What's allowed
+Automated strategies you built yourself , running your own logic, disclosed and approved before use. You must be able to demonstrate that you own the source code.
+Risk and execution tools that assist with trades you decide on, such as position sizers, risk calculators and partial-close managers.
+Copying your own trades between your own Blueberry Futures accounts.
+What's not allowed
+Commercial or commercial-license systems , whether paid or free. Being able to change the settings does not make one yours.
+Systems built for you by a developer, freelancer or third party on commission.
+Systems obtained from a friend, a Discord group, a signal group or a marketplace.
+Any automated system run without disclosing it and receiving our consent first , including one you built yourself.
+Signal copying. Mirroring trades from an external signal provider or copytrading service.
+Third-party account management. Letting anyone else trade your account, including granting login access.
+Why the line is drawn here
+We fund traders, not software vendors. A system you built around your own strategy is your skill, automated, and we support that. A system someone else built, sold, or runs on your behalf is not your edge, so it falls outside what we allow.
+How to get consent
+Contact our support team before you run anything automated. Tell us what the tool is, what it does, and confirm you own the source code. Running automated execution without prior consent can put your account and payouts at risk.
+Related Articles
+What trading behaviors are prohibited?
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Blueberry Futures

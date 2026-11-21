@@ -1,0 +1,37 @@
+Hedging policy | FuturesElite FAQ Skip to main content
+Back to Website Discord
+Back to Website Discord
+Search for articles...
+All Collections
+Trading rules
+Hedging policy
+Hedging policy
+Every form of hedging we don't allow.
+October 13, 2026
+Table of contents
+Hedging means opening offsetting positions so one side profits whatever the market does. It is strictly prohibited across the platform. Example: buying 1 CL in one account and selling 1 CL in another at the same time.
+Situation
+Allowed?
+Long and short the same contract at the same time, in one account or several
+No
+Long the Mini and short the Micro of the same product
+No
+Opposite positions on correlated products, e.g. long GC and short SI
+No
+Offsetting positions with friends, family or a group
+No
+Offsetting against an account at another prop firm
+No
+Correlation applies broadly across product families such as equity indices, metals and energies. Automated systems detect hedging on every account.
+Consequences
+Account termination, immediately and without warning.
+Hedging profits voided.
+Passed evaluations reviewed.
+Permanent restriction for repeated or severe cases.
+On live accounts: immediate permanent ban, all accounts closed and locked Reserve forfeited.
+Related Articles
+Allowed and prohibited trading practices
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+FuturesElite FAQ
+We run on Intercom

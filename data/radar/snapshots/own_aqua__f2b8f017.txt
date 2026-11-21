@@ -1,0 +1,194 @@
+Forex Rules | AquaFunded
+Black Friday 35 % off every account Use code BLACKFRIDAY
+Markets Rewards Labs More
+Help Help Center CFDs Futures
+Log In Log in to CFDs Futures
+Get Funded
+Pick a market CFD CFDs Forex, indices, metals and energies
+FUT Futures CME index, metal and energy contracts
+PRP Perps New Tokenized assets across global markets
+Competitions Browse and join competitions for free in your dashboard 1 Alex M. +18.4%
+2 Sara K. +15.1%
+3 You +12.7%
+Log in to join CFDs Futures
+App Trade and track your rewards on mobile Welcome back $108,420 +4.2% today Request reward
+✓ Reward paid $2,450 · 12 min
+Download on the App Store Get it on Google Play
+Company About
+Affiliate
+Contact
+Markets CFDs Futures Perps New Explore Rewards Labs Company About Affiliate Contact
+Help Log In
+Get Funded Competitions Browse and join competitions for free in your dashboard
+Log in to join CFDs Futures
+App Trade and track your rewards on mobile
+Download on the App Store Get it on Google Play
+CFDs
+Crypto
+Futures
+TV
+EN
+EN
+25% OFF
+Limited Time
+Code:
+HONOR
+Markets
+CFDs
+Futures
+How it works
+How It Works
+Scaling Plan
+Rules
+How it Works
+Scaling Plan
+Rules
+Rewards
+Affiliate
+About
+FAQ
+CFDs
+Futures
+Contact
+Select language
+EN
+EN
+Forex
+Futures
+TV
+FAQ
+FAQ
+CFDs
+Futures
+Contact
+Get Funded
+Login
+Login CFDs
+Login Futures
+Get Funded
+Forex General Rules
+Challenge Requirements
+Trading Conditions
+What We Allow at AquaFunded
+What Is Not Allowed at AquaFunded
+Challenge Requirements
+Daily Drawdown
+Does not apply to instant standard
+The “Daily Drawdown” is the maximum amount you can lose in a single trading day. This limit is set at 4% of your previous day’s highest balance or equity.
+At 00:00 UTC, a new daily drawdown limit is calculated. We take whichever value is higher at that time, your account balance or equity, and subtract 4% of the previous day’s highest balance or equity.
+This sets the daily loss limit for the new trading day.
+If your combined closed and open losses for the day hit or pass this limit at any time, it is considered a violation of the rule.
+Maximum Drawdown
+The Maximum Drawdown is the total loss limit on your account. It is set at 8% of your initial account balance, and includes both closed and open trades. If your equity drops below this level at any time, the account will breach
+Initial Balance:
+$100,000
+Balance with drawdown
+$92,000
+− 8%
+Initial Balance:
+$100,000
+Max Drawdown
+92%
+Your Max Drawdown level is fixed based on your starting balance. Once your equity falls to 92% of your initial account balance, including any floating losses, the limit is hit and the account is considered breached.
+Profit Target
+The Profit Target is the required profit you must reach within each phase of your Challenge in order to progress to the next stage.
+For our 2-Step Challenge model, your target is:
+Phase 1: reach 8% profit , Phase 2: reach 5% profit
+Only closed profits count toward your Profit Target. Floating (unclosed) trades do not count.
+Before progressing to the next phase, you must close all open positions.
+For example:
+If you complete Phase 1 with more than 8% profit and all positions are closed, you move to Phase 2.
+= 800px)" srcset="/images/wfcdn-69805ccd330103e072e137fb-frame-2147226558.svg" class="hide">
+In Phase 2, the Profit Target resets to 5%, meaning your performance begins fresh in that phase.
+= 800px)" srcset="/images/wfcdn-69805c9e880cd465d6539e7b-frame-2147226558-1.svg" class="hide">
+Once you complete Phase 2 at 5% profit and meet all risk rules, you are eligible to receive your funded account.
+Minimum Profitable Days
+The minimum profitable days required to pass the challenge for our One-Step models is 3 days.
+You must trade on at least 3 separate days for them to count. For a day to qualify as profitable , you must finish the day with a gain of at least 0.5% compared to the previous end-of-day balance.
+If you reach the profit target before completing all 3 profitable days, you must continue trading until the requirement is met. Once all criteria are satisfied, you can progress to the next stage.
+Three-Step Model No minimum profitable days required
+Inactivity Rule
+You must place at least one trade within any 30-day period.
+If no trades are placed within 30 days, the account will be marked inactive and will result in a breach.
+This rule applies from the moment you place your first trade.
+Trading Conditions
+Leverage
+For all Evaluation Phases, you have a leverage of 1:100 for Forex, 1:20 for Indices,
+1:20 for Commodities, and 1:2 for Crypto.
+The leverage for the Funded Stage is adjusted to 1:50 for Forex, 1:10 for Indices,
+1:10 for Commodities, and 1:2 for Crypto.
+For Instant Funding Accounts, the leverage is 1:50 for Forex, 1:10 for Indices,
+1:10 for Commodities,  and 1:2 for Crypto.
+Spread
+Our spreads are floating, meaning they change throughout the day based on market liquidity and conditions. Spreads may widen during periods of high volatility, low liquidity, or major market events.
+You can view live spreads at any time by checking our spread accounts here:
+MT5
+Account 484410
+Password - Pp4Ob5f!J1
+Server: AquaFunded-Server
+TradeLocker
+Email - spreadaquafunded@icloud.com
+Password - dE:g53g88K}A@
+Server - AQUA
+Swap Fees
+Swap fees apply when a position is held overnight. These are overnight charges or credits applied to your account based on the instrument you are trading.
+Swap fees can vary depending on market conditions, interest rate differences, broker pricing, and how long the position is held. In some cases, a swap may result in a credit rather than a charge.
+Swap fees are calculated automatically and are visible directly on your trading platform.
+What We Allow at AquaFunded
+Expert Advisors (EAs)
+Expert Advisors are allowed. You may use EAs that are customized to your own trading strategy or trading style.
+Trade Copiers
+Trade copiers are permitted, allowing you to manage multiple accounts more efficiently.
+All trading must still comply with our risk and trading rules.
+News Trading
+News trading is allowed on all accounts.
+However, any profit made from trades opened or closed within 5 minutes before or after high-impact red folder news events is capped at 0.5% of the account starting balance per payout cycle.This also applies to FOMC statements, speeches and related high-impact events.
+Any profit above the 0.5% cap will be removed from the payout, but no account breach or violation will occur.
+Weekend Trade Holding
+You are free to hold trades overnight and over the weekend with no restrictions.
+Crypto markets are also available 24/7, including weekends
+Trading Styles
+We support a wide range of trading styles, including scalping, day trading, and swing trading.
+Trade in a way that suits your strategy, as long as all risk and account rules are respected.
+What Is Not Allowed at AquaFunded
+Platform & Data Abuse
+Using platform freezing, demo server errors, delayed data feeds, or delayed charts to gain an unfair advantage.
+Prohibited Trading Strategies
+Tick scalping, high-frequency trading, arbitrage strategies including reverse arbitrage, latency arbitrage, hedge arbitrage, or any strategy designed to exploit pricing or execution delays.
+Copy Trading & Account Sharing
+Copy trading between other traders accounts, shared devices used to mirror trades, or any form of coordinated trading that compromises individual account integrity.
+Account Integrity Violations
+Each account must be traded independently by the account holder.
+Any activity that compromises personal account integrity may result in breach or termination
+Hedging
+Hedging is allowed within the same account.
+Hedging between multiple accounts or across different accounts is not permitted
+For more questions and details please visit our FAQ
+FAQ
+Link to home
+Our socials
+Twitter link
+Trade
+CFDs
+Futures
+Product
+Home
+How it Works
+Rewards
+Affiliate
+Forex Funding
+About
+About
+Blogs
+Guides
+Support
+FAQ
+Contact
+All content published and distributed by Aqua Funded FZCO t/a AquaFunded(“AquaFunded”) located at IFZA Business Park, DDP, Premises No.- 35882 - 001 Dubai Silicon Oasis Dubai, United Arab Emirates and its affiliates (collectively the “Company”) is to be treated as general and for information purposes only. Information provided by the Company or contained herein throughout the www.aquafunded.com website is not intended as (a) investment advice; (b) as an offer or solicitation of an offer to buy or sell; and (c) as a recommendation, endorsement or sponsorship of any security company or investment fund. Testimonials appearing may not be representative of other traders and is not a guarantee of future trading performance or success. Company is not a financial broker, financial advisor, or financial representative, and does not accept client deposits. The Company does not carryout any regulated activities; the Company’s exclusive activity is simulated trading as defined in the Terms of Use. The foreign exchange market and currency trading is highly speculative in nature and as such, currency prices may become extremely volatile. You may sustain a total loss of your funds. Foreign exchange trading carries a high level of risk and may not be suitable for all traders.The highly leveraged nature of trading means that even small price movements may have a great impact on a trading account, potentially resulting insubstantial losses or gains. Always consult a financial professional before making any decisions associated with the Company. It is possible you will sustain a loss of some or all of your initial capital. No representation is being made that any account will or is likely to achieve profits or losses. Aqua Funded does not offer or provide trading recommendations, and any trading decisions you make are entirely your responsibility and at your own risk. Past performance is not indicative of future results. Individual results vary and no representation is made that you will or are likely to achieve profits or incur losses comparable to those that may be shown. You acknowledge and agree that no promise or guarantee of success or profitability has been made between you, and Aqua Funded. For further information, please review our Terms of Use, Privacy Policy, and Risk Disclosures.
+‍
+AquaFunded LTD, a Saint Lucia Corporation, located at The Sotheby Building, Ground Floor, Rodney Village, Rodney Bay, Gros-Islet, SW18 1TA, St. Lucia, with company number 2004-00597, provides the simulated trading services advertised on www.aquafunded.com . For more information on simulated trading services provided by Aqua Funded please contact support@aquafunded.com.
+CFTC RULE 4.41-Hypothetical or simulated performance results have certain limitations. Unlike an actual performance record, simulated results do not represent actual trading. Also, since the trades have not been executed, the results may have under-or-over compensated for the impact, if any, of certain market factors, including but not limited to, lack of liquidity. Simulated trading programs in general, are also subject to the fact that they are designed with the benefit of hindsight. No representation is being made that any account will or is likely to achieve profit or losses similar to those depicted on the www.aquafunded.com website.
+Refund Policy
+Privacy Policy
+Terms of Service
+© 2025 AquaFunded. All rights reserved.

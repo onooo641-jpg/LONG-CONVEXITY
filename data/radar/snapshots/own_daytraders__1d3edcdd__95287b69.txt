@@ -1,0 +1,97 @@
+Live Accounts | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Moving from Pro or S2F to Live
+S2L Evaluation
+S2L Consistency
+S2L Daily Loss Limit
+S2L Drawdown
+Live Payouts
+Live Scaling
+Live Accounts
+Platforms
+Trading Rules and Guidelines
+Affiliate Program
+Agreements and Disclaimers
+All Collections Live & S2L Program Live Accounts Live Accounts
+Live accounts from S2L at a glance: contracts, drawdown, DLL, multiple accounts and platforms.
+Updated over a month ago
+Copy for LLM
+A live account trades in live markets. You get one by passing an S2L evaluation, or by invitation from the firm. This article covers live accounts from S2L.
+Converted S2L accounts at a glance
+Core
+Edge
+Ultra
+Starting balance
+$50,000
+$150,000
+$300,000
+Max contracts
+1 (10 micros)
+2 (20 micros)
+3 (30 micros)
+Max drawdown
+$2,000
+$4,500
+$7,000
+Drawdown type
+Intraday trailing; stops at starting balance
+Intraday trailing; stops at starting balance
+Intraday trailing; stops at starting balance
+Daily Loss Limit
+$1,000
+$1,750
+$3,250
+Profit split
+80 / 20
+80 / 20
+80 / 20
+Min. daily profit / consistency
+None
+None
+None
+Activation fee
+Free
+Free
+Free
+Setup time
+1–5 business days
+1–5 business days
+1–5 business days
+Scaling
+Yes
+Yes
+Yes
+More than one live account
+You can have up to 5 live accounts from S2L at a time. All of them appear in your trading platform, but only one is tradeable at a time:
+Your first live account is tradeable.
+Once its drawdown locks at your starting balance, or the account is breached, a Risk Manager makes the next account tradeable during business hours.
+This repeats for each of your live accounts.
+The reason for this is to give traders the best chance at staying in the live environment longer as well as preventing 1-2 day wash outs.
+If you've passed more than 5 S2L evaluations, you'll see the first 5. The others are loaded as earlier accounts are closed and removed from your Dashboard.
+Platforms
+Onyx is offered on live accounts and the free version of Quantower is available. Other platforms need a paid license; NinjaTrader isn't supported, but some have reported success connecting.
+Good to know
+Once you're live, all your simulated accounts are closed and you can't buy new S2L evaluations while trading live. You cannot trade in sim and live at the same time.
+If the account touches the drawdown level, it's closed. You can qualify again with a new S2L evaluation; there's no cooldown.
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+Trail Evaluation
+Trail Pro Account
+S2F Account
+S2L Evaluation
+Plan Comparison Overview
+On this page
+Converted S2L accounts at a glance
+More than one live account
+Platforms
+Good to know

@@ -1,0 +1,67 @@
+Futures Evaluation Rules
+Futures Crypto
+Traders Launch How It Works Results Affiliates FAQ Join Discord
+Sign In Get Funded
+Futures Rules
+Futures Evaluation Rules
+The rules for the futures program: the one-step evaluation, the EOD drawdown, account limits and the payout rules for SimFunded accounts.
+Last reviewed July 16, 2026
+Evaluation Type One-step evaluation
+Trading Days No minimum
+Account Limit Up to 5 live Futures accounts per user at a time, evaluations and funded accounts combined
+Payout Eligibility SimFunded account above +1%
+Drawdown EOD drawdown, no intraday trailing
+Fees Once Funded $0 activation or ongoing fees
+On This Page
+01 Evaluation Rules
+02 SimFunded Account Rules
+03 Markets and Profit Split
+04 Multiple Accounts
+See Futures Pricing
+01 Evaluation Rules
+One-step evaluation with no Phase 2
+Profit in one session cannot go above 40% of the profit target (50% on static plans)
+No minimum trading days on futures plans; a plan card that shows one has it
+60-day maximum time limit to pass
+At least 1 trade in any 7 days on every account; an evaluation with no trade for 7 days in a row is breached
+EOD drawdown locks at starting balance with no intraday trailing
+Hedging is not permitted, including same-instrument, correlated-instrument, or coordinated cross-trader hedging
+Reasonable scaling and averaging are allowed; excessive martingale-style trading may trigger an account review
+Scalping trades held for 5–30 seconds are allowed; HFT-style trading is not permitted, and accounts may be paused for review when more than 10% of trades are opened and fully closed within two seconds
+Stay outside the price limit zone: while an index future is within 2% of its CME daily limit (7% today, so a 5% move from the previous settlement, up or down), close your position and do not trade it until it is back out
+02 SimFunded Account Rules
+Eligible for payouts once funded account profit is above +1%
+Stay outside the price limit zone: while an index future is within 2% of its CME daily limit (7% today, so a 5% move from the previous settlement, up or down), close your position and do not trade it until it is back out
+One payout request every 24 hours per trader, across all accounts
+No per-payout cap; at $100,000 in total payouts the next request pauses for a review of up to 5 business days
+No consistency rules once funded
+No activation fees
+No additional fees once funded
+Payouts and funded account restrictions are subject to program rules and Terms
+03 Markets and Profit Split
+Trade common contracts including NQ, ES, GC, YM and CL. Standard accounts offer a 60% or 80% profit split with full-session trading.
+04 Multiple Accounts
+You can hold up to five funded futures accounts at a time. Payouts and SimFunded account restrictions are subject to program rules and Terms.
+Compare Futures Accounts
+Account sizes, one-time fees and profit targets, side by side.
+See Futures Pricing
+Traders Launch Futures and crypto evaluations with daily payouts.
+Evaluations
+Futures
+Crypto
+Pricing
+Rules
+Futures Rules
+Crypto Rules
+Payout Rules
+FAQ
+Company
+Results
+Affiliates
+Facts
+Evaluation and funded accounts operate in a simulated trading environment. Payouts are real. Trading futures and crypto involves substantial risk of loss and is not suitable for every trader. Passing an evaluation does not guarantee funding, and payouts are not guaranteed; all payouts are subject to program rules. See terms .
+Traders Launch LLC · 1700 Market Street Suite 1005, Philadelphia, PA 19103
+© 2026 Traders Launch LLC . All rights reserved.
+Privacy Policy
+Terms of Service
+Your Privacy Choices

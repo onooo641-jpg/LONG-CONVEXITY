@@ -1,0 +1,386 @@
+End of Day vs Trailing Drawdown | Which Is Better for Funded Trading?
+Home
+Products
+Live
+Payouts
+DT Games
+Arcade New
+Giveaways
+Help Desk
+Learn
+Getting Started
+What Is a Prop Firm?
+How to Start Prop Trading
+Futures Prop Firms
+Prop Funding Explained
+How Evaluations Work
+Are Prop Firms
+Legit?
+Programs
+Straight to Live (S2L)
+Live Funded Trading
+Account Scaling
+Profit Splits Explained
+Challenge Cost vs Real
+Risk
+Dashboard Guide
+Rules and Risk
+Trailing Drawdown Explained
+EOD vs Trailing Drawdown
+Daily Loss Limits Explained
+Consistency Rules
+Explained
+Rules That Kill
+Profitable Traders
+Overnight Trading
+Rules
+News Trading Rules
+Trader Development
+Psychology and Risk
+Control
+Why Traders Fail
+Evaluations
+How Long to Pass an
+Evaluation
+Can You Make a Living
+Trading?
+Best Prop Firms
+Best Prop Firms Ranked
+Best for Scalpers
+Best for Swing Traders
+Best for Small
+Accounts
+Best Futures Markets
+Firm Comparisons
+All Comparisons
+DayTraders vs Topstep
+DayTraders vs MFFU
+DayTraders vs TPT
+DayTraders vs Bulenox
+DayTraders vs Tradeify
+DayTraders vs FTMO
+DayTraders vs FundedNext
+Company
+Press
+Login
+Sign Up
+Rules & Guidelines
+End of Day vs Trailing Drawdown
+The drawdown type determines how much room you have, when your account gets terminated, and how you manage every single trade. Picking the wrong one for your strategy is avoidable pain.
+Resources
+Core Concepts
+Prop Trading Basics
+What is a Prop Firm?
+Funding Explained
+How Evaluations Work
+Finding Legit Firms
+Firm Recommendations
+Best Prop Firms
+Futures Prop Firms
+Best for Small Accounts
+Best for Swing Traders
+Best Firms for Scalpers
+Best Futures Markets
+Firm Comparisons
+All Comparisons
+DayTraders vs Topstep
+DayTraders vs TPT
+DayTraders vs MFFU
+DayTraders vs FTMO
+DayTraders vs Funded Next
+DayTraders vs Tradeify
+DayTraders vs Bulenox
+Rules & Guidelines
+Trailing Drawdown
+EOD vs Trailing Drawdown
+Daily Loss Limits
+Consistency Rules
+News Trading Rules
+Overnight Rules
+Psychology & Risk
+Psychology & Risk
+Time to Pass
+Why Traders Fail
+Rules That Kill Profits
+Cost vs Real Risk
+Post-Funding
+Profit Splits
+Account Scaling
+Making a Living
+Live Funded Trading
+There are three main drawdown types used across prop firms: intraday trailing, end-of-day (EOD), and static. Each one handles risk differently, and each one rewards a different kind of trader.
+Intraday Trailing
+Tightest
+Floor adjusts in real time. Every new equity high (including unrealized) pushes the floor up permanently.
+DayTraders: Trailing evals, S2L live
+End-of-Day (EOD)
+Swing-Friendly
+Floor only updates at session close. Intraday peaks do not count. Most room during active sessions.
+DayTraders: S2F program
+Static
+Most Forgiving
+Fixed floor that never moves. Cushion grows as your account grows. Simplest mental model.
+DayTraders: Static evals (25K-150K)
+How Intraday Trailing Drawdown Works
+An intraday trailing drawdown adjusts in real time as your equity changes during the session. Every new equity high pushes the floor up. The floor never moves back down. This applies to both realized profits and unrealized gains on open positions.
+Intraday Trailing Example
+Start of day Equity: $51,000 / Floor: $48,500
+Trade runs +$1,500 unrealized Equity: $52,500 / Floor: $50,000
+Close at breakeven Equity: $51,000 / Floor: $50,000
+Room remaining $1,000 (was $2,500)
+Intraday trailing is the tightest drawdown type. It demands constant awareness of where the floor is and how each trade affects it.
+How End-of-Day Drawdown Works
+End-of-day drawdown only evaluates your account balance at the close of the trading session. Intraday equity peaks do not count. If your account hits $55,000 during the session but closes at $51,000, the floor only adjusts based on the $51,000 close.
+EOD drawdown is the most swing-friendly structure because it does not penalize normal intraday volatility. You can absorb drawdowns, let trades work through pullbacks, and take profits without worrying that every unrealized peak is permanently raising the floor.
+DayTraders.com uses EOD drawdown on the Straight to Funded (S2F) program, which also has no daily loss limit on the 25K tier.
+How Static Drawdown Works
+Static drawdown uses a fixed floor that never moves, regardless of how high your equity goes. If you start with a $50,000 account and a $1,000 static drawdown, the floor is $49,000. Whether your equity reaches $55,000 or $60,000, the floor stays at $49,000.
+This is the most forgiving drawdown type. It gives you a permanent safety cushion that grows larger as your account grows. The tradeoff is that static accounts typically have lower contract limits and tighter profit targets.
+Which Drawdown Type Fits Your Style?
+Best For: Scalpers & Active Day Traders
+Intraday Trailing
+Works if you can track the floor in real time and manage size after winning streaks. Highest contract limits. Every peak raises the floor immediately.
+Best For: Swing Traders & Overnight Holders
+EOD (S2F)
+Swing strategies need room to breathe. S2F with EOD drawdown and no daily loss limit is purpose-built for this style.
+Best For: New Traders Building Consistency
+Static
+Reduces complexity. Floor never changes. Focus on learning execution. Small static accounts are the simplest entry point.
+Side-by-Side Comparison at DayTraders.com
+50K Trailing
+50K Static
+50K S2F (EOD)
+Price
+$379
+$200
+$570
+Profit Target
+$3,000
+$3,750
+None (funded)
+Drawdown
+$2,500 trailing
+$1,000 fixed
+$2,500 EOD
+Contracts
+10 (100 micros)
+6 (60 micros)
+10 (100 micros)
+Consistency
+50%
+50%
+20%
+Each option serves a different trader. The trailing offers the most contracts. The static offers the most predictable risk. The S2F offers the fastest path to funded with the most forgiving drawdown timing.
+Same Trade, Different Outcomes
+2 ES contracts on a 50K account. Long entry. Runs 30 ticks (+$750 unrealized). Pulls back 20 ticks. You hold. Reverses and you close at +15 ticks ($375 realized).
+Intraday Trailing
+Floor moved up $750 during the unrealized peak. Closed at +$375 but floor locked in $750. Effective room shrunk by $375 even though the trade won.
+Room reduced on a winning trade
+EOD Trailing
+Floor only updates at session close. Closed the day at +$375, floor moves up $375. The intraday peak of $750 was invisible to the calculation.
+Full credit for realized profit
+Static
+Floor does not move at all. $375 profit adds to your cushion above the fixed floor. No adjustment, no trailing, no reduction.
+Cushion grows, floor unchanged
+The same trade. The same entry. The same exit. Three completely different impacts on your account's survival margin. This is why drawdown type selection matters more than most traders realize.
+How Other Prop Firms Handle Drawdown
+Firm
+Drawdown Type
+Notes
+DayTraders.com
+All three types
+Intraday trailing, static, EOD. Rules stay the same between eval and funded. No mid-transition switches.
+Topstep
+EOD trailing
+All accounts. Maximum Loss Limit updates at session close. One of the more forgiving models.
+Take Profit Trader
+EOD → Intraday
+EOD during evaluation. Switches to intraday trailing on funded PRO. Behavioral gap between phases.
+Tradeify
+EOD trailing
+All account types. One of the most consistent EOD implementations.
+My Funded Futures
+Varies by plan
+Core/Pro use EOD. Rapid uses intraday with tighter 4% buffer. Drawdown type varies by plan, not phase.
+Decision Framework: Picking the Right Drawdown
+Answer these three questions:
+1
+Do you hold positions through pullbacks?
+Yes → Intraday trailing is your worst enemy. Unrealized peaks permanently raise the floor. Use EOD (S2F) or Static.
+2
+Do you need the highest possible contract limits?
+Yes → Intraday trailing accounts offer the most contracts (up to 40 on 300K). Tradeoff: tightest drawdown model.
+3
+Do you want a floor that never moves?
+Yes → Static is the only option. Simplest mental model. Easiest to manage for newer traders .
+There is no wrong answer. There is only a mismatch between your strategy and the drawdown type. Read about how trailing drawdown works and which rules create the most friction .
+Match the drawdown to your strategy, not the other way around.
+Trailing Drawdown Guide
+View Pricing
+×
+LIMITED TIME ONLY
+Get a FREE, 100% Off demo trading account!
+Try out the new ArcTrader platform at no cost today.
+Claim Now!
+Secure Platform
+Full data encryption, with security in transit and at rest to prevent breaches.
+DayTraders.com
+2300 W Sahara Ave. Suite 800, Las Vegas, Nevada 89102
+Customer First
+We put your needs first in everything we do, ensuring a transparent and responsive
+experience.
+Access funded trading accounts, manage risk within defined rules, and withdraw your earnings.
+DayTraders.com provides the infrastructure for disciplined futures traders.
+Links
+Logos
+Promo
+Essentials
+Services
+Affiliates
+Community
+Partners
+Explore
+About
+Careers
+Bounty
+Contact Us
+DayTraders.com provides
+simulated trading environments for educational purposes. Evaluation and Pro accounts are simulated and
+do not involve real capital. Live funded accounts through the S2L program involve real market execution.
+All income figures shown on this site are hypothetical illustrations that assume consistent
+profitability. Most traders do not achieve consistent profits. Past simulated performance is not
+indicative of future results. Trading futures involves significant risk of loss. Only trade with capital
+you can afford to lose. DayTraders.com does not provide financial advice. Please review the full
+disclosures below.
+Disclosures
+Risk
+Disclosure
+Hypothetical
+Performance
+Available
+Instruments
+Evaluation
+Disclaimer
+Customer
+Compensation
+© 2026 DayTraders.com . All rights reserved.
+Privacy
+Terms
+EU UK Data
+Cookies
+Risk Disclosure
+DayTraders.com provides educational resources and access to simulated trading environments. We do not
+facilitate the deposit or trading of actual funds. Participation in the futures markets involves
+significant risk, and it is essential that individuals fully understand these risks before engaging
+in trading activities elsewhere. Below are key points regarding the risks.
+Educational Purpose Only: All content and resources provided by DayTraders.com, including simulated
+trading environments, are for educational purposes. We do not offer real-money trading accounts, and
+no actual funds are deposited with or traded through our platform.
+High Risk of Loss in Actual Trading: While DayTraders.com offers simulated trading environments,
+actual futures and derivatives trading conducted through a brokerage firm involves significant risk.
+In real trading, substantial financial loss can occur. Participants should only trade with capital
+they can afford to lose.
+Leverage and Margin Risks: In actual trading environments, using leverage or trading on margin can
+significantly magnify both gains and losses. Traders should be aware of these risks and fully
+understand the implications of margin before engaging in real-money trading outside DayTraders.com.
+Market Volatility: The financial markets are subject to rapid and unpredictable changes. While the
+simulated environment on DayTraders.com may help users practice strategies, real market volatility
+can lead to substantial losses. This volatility can be influenced by economic data, geopolitical
+events, and other factors beyond anyone's control.
+No Guarantees of Profit: DayTraders.com does not guarantee profit or success in actual trading. Past
+performance in our simulated environment, whether favorable or not, is not indicative of future
+results when trading real funds in the marketplace.
+Technological and Operational Risks: While DayTraders.com provides a stable simulated environment for
+educational purposes, participants in actual trading may experience technical failures such as
+system errors, connection issues, or trade execution delays, which can result in losses.
+Personal Responsibility: Individuals are responsible for their own trading decisions. Any use of
+educational content or simulated trading provided by DayTraders.com should not be considered
+financial advice or an endorsement of specific trading strategies (simulated or actual).
+Participants should conduct thorough research and consult with professional financial advisors
+before engaging in actual trading.
+Close
+Hypothetical Performance Disclosure
+The performance results displayed on DayTraders.com are based on hypothetical or simulated trading
+activities and do not represent actual trading results. Below are important points to consider
+regarding the limitations of hypothetical performance results.
+Simulated Trading Environment: All trading conducted on DayTraders.com is within a simulated,
+educational environment. No real funds are used, and all performance outcomes are hypothetical in
+nature. These results may differ significantly from real-world trading outcomes where actual capital
+is at risk.
+Limitations of Hypothetical Results: Hypothetical results are based on controlled conditions and do
+not reflect real market conditions, such as slippage, order execution delays, or liquidity issues.
+As such, these results may not accurately represent the challenges of actual trading.
+No Guarantee of Future Performance: Hypothetical performance, whether positive or negative, should
+not be interpreted as an indication of future success in real-money trading. Actual trading results
+are influenced by many unpredictable factors, including market conditions and individual
+decision-making.
+Psychological Factors: Simulated trading does not account for the psychological pressures experienced
+when trading with real funds. In actual trading, emotions such as fear and greed can affect
+decision-making, which is not reflected in the hypothetical results from DayTraders.com's simulated
+environment.
+Educational and Demonstration Purposes Only: All hypothetical performance results displayed on
+DayTraders.com are for educational and demonstration purposes. They do not constitute an endorsement
+of any particular trading strategy or financial product. Participants should assess any trading
+strategy based on their own financial situation and risk tolerance before engaging in real-world
+trading.
+By using DayTraders.com, you acknowledge that all trading activities are simulated and that
+hypothetical performance results may not reflect actual future trading performance.
+Close
+Available Instruments
+DayTraders.com strictly limits the instruments available for trading to ensure consistency with our
+educational goals and supported platforms. Customers are permitted to trade only simulated futures
+contracts listed on the following regulated exchanges: the Chicago Mercantile Exchange (CME), the
+Commodity Exchange (COMEX), the New York Mercantile Exchange (NYMEX), and the Chicago Board of Trade
+(CBOT). These exchanges offer a broad range of futures products, providing ample opportunities for
+traders to engage in diverse market sectors.
+Please note that trading in other financial instruments, including but not limited to spot currencies
+(Forex), contracts for difference (CFDs), individual stocks, options, and cryptocurrencies, is
+strictly prohibited within the DayTraders.com ecosystem. Our programs, vendors, and platforms do not
+support or facilitate trading in these instruments, as they fall outside the scope of our
+futures-focused educational services and evaluation programs.
+This restriction is in place to maintain a clear focus on futures trading, as well as to ensure
+compliance with the guidelines established by our service providers and the regulatory frameworks
+governing the markets we support. Engaging in simulated trading activities outside these approved
+instruments is a violation of our policies and may result in account suspension or termination.
+Close
+Evaluation Disclaimer
+Pass rates for the DayTraders.com evaluation program vary by program type, account size, market
+conditions, and individual trader experience. Not all participants who purchase an evaluation will
+pass. The evaluation is designed to be challenging and to assess a trader's ability to generate
+consistent simulated profits while adhering to defined risk management rules. Participants should
+not interpret any historical pass rate as a guarantee or prediction of their individual likelihood
+of success.
+Our Evaluation and Pro Level Account programs are structured to simulate live market conditions as
+accurately as possible. This includes incorporating commissions, fees, and other relevant factors
+that traders would encounter in an actual trading environment. The primary purpose of the evaluation
+is to assess a trader's skill, discipline, and strategy in a realistic and controlled setting. It is
+important to emphasize that these programs are designed as comprehensive tests of trading
+competency, not as training platforms. Participants are expected to have a solid foundation in
+trading principles and risk management strategies before attempting the evaluation.
+Passing the evaluation requires a high level of proficiency and is intentionally challenging, even
+for traders with significant experience. The evaluation is structured to measure a trader's ability
+to adhere to risk management rules, execute trades effectively, and maintain consistency over time.
+Due to its demanding nature, this program is not recommended for individuals with little or no
+trading experience. Novice traders may find the evaluation process particularly difficult and are
+encouraged to seek further education and practice before considering participation.
+We recommend that individuals carefully evaluate their level of trading knowledge, experience, and
+preparedness prior to enrolling in the evaluation program. While the evaluation can serve as a
+valuable benchmark for experienced traders, it is not intended as a learning tool for beginners. By
+participating, traders acknowledge the inherent challenges and accept full responsibility for their
+trading decisions and performance outcomes.
+Close
+Customer Compensation Disclosure
+All trading results and performance metrics displayed in relation to customer compensation should be
+considered hypothetical in nature and may not accurately represent outcomes that would be achieved
+in live trading environments. Pro Level Accounts referenced on this platform may consist of
+simulated, live, or mirrored trading accounts, and the results presented are intended for
+illustrative purposes only.
+Please be aware that testimonials, account performances, and payout figures featured on this website
+are not necessarily indicative of the typical experiences of all customers. These testimonials are
+individual accounts and should not be relied upon as a predictor of future performance or success.
+Past performance is not a guarantee of future results, and trading involves inherent risks that may
+result in substantial financial loss.
+We encourage all participants to carefully evaluate their own risk tolerance and trading objectives
+before engaging in any trading activities. The results showcased are not intended to provide
+assurances or expectations of specific outcomes for other customers.
+Close

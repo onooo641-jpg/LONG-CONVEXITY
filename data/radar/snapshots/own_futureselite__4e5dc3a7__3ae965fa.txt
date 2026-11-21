@@ -1,0 +1,109 @@
+Nitro rules at a glance | FuturesElite FAQ Skip to main content
+Back to Website Discord
+Back to Website Discord
+Search for articles...
+All Collections
+Nitro accounts
+Nitro rules at a glance
+Nitro rules at a glance
+Every Nitro number for 25K, 50K, 100K and 150K.
+October 13, 2026
+Table of contents
+Evaluation
+Rule
+25K
+50K
+100K
+150K
+Profit target
+$1,250
+$3,000
+$6,000
+$9,000
+Max Loss Limit (EOD trailing)
+$1,000
+$2,000
+$3,000
+$4,500
+Daily loss limit
+None
+None
+None
+None
+Minimum trading days
+2
+None
+None
+None
+Consistency
+50%
+50%
+50%
+50%
+Contracts
+2
+5
+8
+10
+Tier-1 news
+Allowed
+Allowed
+Allowed
+Allowed
+Sim Funded
+Rule
+25K
+50K
+100K
+150K
+Max Loss Limit (intraday trailing)
+$1,000
+$2,000
+$3,000
+$4,500
+Floor locks at
+$25,100
+$50,100
+$100,100
+$150,100
+Buffer (never withdrawable)
+$1,100
+$2,100
+$3,100
+$4,600
+Balance for first payout
+$26,600
+$52,600
+$103,600
+$155,100
+Minimum request
+$500
+$500
+$500
+$500
+Cap per payout
+$1,000
+$2,000
+$2,500
+$2,800
+Maximum Daily Profit (go live)
+$4,000
+$6,000
+$8,000
+$10,000
+Profit split
+90%
+90%
+90%
+90%
+No scaling plan, no daily loss limit and no consistency rule on payouts. Tier-1 news trading is not permitted on Sim Funded.
+Related Articles
+Elite rules at a glance
+Prime rules at a glance
+OLD Instant rules at a glance
+The Live Trading Program
+Instant rules at a glance
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+FuturesElite FAQ
+We run on Intercom

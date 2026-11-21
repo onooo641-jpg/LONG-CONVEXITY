@@ -1,0 +1,38 @@
+Live accounts: loss floor, cushion and reserve | FuturesElite FAQ Skip to main content
+Back to Website Discord
+Back to Website Discord
+Search for articles...
+All Collections
+Live accounts
+Live accounts: loss floor, cushion and reserve
+Live accounts: loss floor, cushion and reserve
+How a live account protects capital and pays you.
+October 18, 2026
+Table of contents
+Loss floor
+Every live account starts at $0 with a loss floor below it ($2,000 on a 50K).
+The floor moves only at the daily close, to sit one floor-width below your best close. Intraday dips below it are safe if the day closes above.
+Once it reaches $0 it stops there permanently.
+If a trading day closes below the floor, the account is lost, including any cushion it holds. There is no daily loss limit.
+Cushion
+Half the starting floor ($1,000 on a 50K). Your first profits fill it.
+Profit above the cushion is withdrawable from day one.
+The cushion is released after 15 profitable days, not necessarily in a row. A day counts when realised profit reaches the daily minimum ($150 on a 50K).
+Withdrawals never move the floor.
+Reserve
+Unlocks begin after 15 profitable live days and $5,000 of total live profit.
+Then every extra $5,000 of profit unlocks $2,500.
+Locked Reserve can't be withdrawn. Released Reserve can be withdrawn or used for margin.
+Gambling, oversizing or reckless trading forfeits Reserve unlocks.
+Getting paid
+Payouts are daily with a $200 minimum: live profit above the cushion plus any released Reserve. The split is 90%.
+Related Articles
+Elite drawdown, daily loss limit and contracts
+Maximum Daily Profit and going live
+The Live Trading Program
+Instant rules at a glance
+Instant Max Loss Limit and Daily Loss Limit
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+FuturesElite FAQ
+We run on Intercom

@@ -1,0 +1,293 @@
+Plans at a glance | Goat Funded Futures FAQ's
+Help Center / Start here / Plans at a glance
+Plans at a glance
+The plans Specifications Profit targets
+In this tab
+What plans do you offer?
+What is the difference between our plans?
+Daily Payouts or Flex Challenge: which should I choose?
+Can I upgrade or switch from one plan to another?
+What plans do you offer?
+1. EOD Challenge. One-phase evaluation with end of day trailing drawdown. Best for traders who want the most forgiving drawdown and room to manage intraday swings. 50K / 100K / 150K.
+2. 1-Day-Pass-Plan. One-phase evaluation with end of day trailing drawdown. An optional daily loss limit, chosen at checkout, applies in both phases and closes the account if hit, the split is 80/20 with an optional 90/10 add-on, and payouts open after 5 winning days. 25K / 50K / 100K.
+3. Instant. No evaluation. Start trading a funded account immediately. Choose 15% or 20% consistency, with or without a daily loss limit. 25K / 50K / 100K / 150K.
+4. Flex Challenge. One-phase evaluation built for flexibility. 50K / 100K / 150K.
+No time limit to pass
+No daily loss limit by default. You can add one at checkout for a lower price, and hitting it closes the account
+The 1 minute holding rule applies at payout, as on every plan, see the holding time article
+End of day trailing drawdown
+80/20 split by default, with an optional 90/10 add-on for 20% of the challenge price
+5. Daily Payouts. One-phase evaluation built around payout frequency. 25K / 50K / 100K / 150K.
+Request a payout every 24 hours once funded, with no fixed windows and no winning day requirement
+90/10 split from your first payout, with no add-on to buy
+Full contract limits from day one, no scaling plan
+An optional daily loss limit, chosen at checkout, applies in both phases and closes the account if hit
+End of day trailing drawdown during the evaluation, intraday trailing on the funded account
+40% or 50% consistency rule during the evaluation (your choice at checkout), none once funded
+See the Daily Payouts specifications for the full rules.
+All five are a one-time fee. There is no monthly subscription on any GFF product.
+Instant Classic and Instant Lite are no longer on sale. Accounts bought before 18 November 2026 keep their original rules.
+Updated 19 November 2026
+What is the difference between our plans?
+We offer several paths to funding, each with different rules and trading mechanics.
+Here is a comparison at a glance based on the 50K account.
+EOD Challenge 1-Day-Pass-Plan Instant Flex Challenge Daily Payouts
+Drawdown type, evaluation Trailing EOD Trailing EOD N/A Trailing EOD Trailing EOD
+Drawdown type, funded Trailing EOD Trailing EOD Trailing EOD Trailing EOD Trailing intraday
+Max drawdown $2,000 (4%) $2,000 (4%) $2,000 (4%) $2,000 (4%) $2,000 (4%)
+Drawdown lock point Starting balance Starting balance Starting balance + $100 Starting balance Starting balance + $100
+Daily loss limit, evaluation None Optional $1,000 at checkout, closes the account if hit N/A None by default. Optional $1,000, closes the account if hit Optional $1,000 at checkout, closes the account if hit
+Daily loss limit, funded $1,250 Optional $1,000 at checkout, closes the account if hit Optional $1,000 at checkout, closes the account if hit None by default. Optional $1,000, closes the account if hit Optional $1,000 at checkout, closes the account if hit
+Consistency, evaluation 50% None N/A 50% 40% or 50%
+Consistency, funded 30% 35% 15% or 20% (your choice) None None
+Profit split 80/20, 90/10 add-on 80/20, 90/10 add-on 80/20, 90/10 add-on 80/20, 90/10 add-on 90/10 from the first payout
+Winning days to payout 7 5 None. First reward at 6%, then 5% per cycle 5 None
+Payout frequency Two windows a month Two windows a month Two windows a month Two windows a month Every 24 hours, no windows
+News, evaluation Unrestricted Unrestricted N/A Unrestricted 2 minute buffer
+Overnight holding Not permitted Not permitted Not permitted Not permitted Not permitted
+Reset Two available Two available Not available Two available Two available
+Flex Challenge notes
+Default profit split: 80/20
+Optional 90/10 add-on available for an additional 20% of the challenge price
+The 1 minute holding rule applies at payout, as on every plan, see the holding time article
+Drawdown by size: Flex 50K $2,000 (4%), Flex 100K $3,000 (3%), Flex 150K $4,500 (3%)
+No daily loss limit by default. You can add one at checkout for a lower price. It applies in both phases, hitting it closes the account, and it can't be changed after purchase. See Can I add a daily loss limit to my Flex account?
+Daily Payouts notes
+90/10 profit split from the first payout, with no add-on to buy
+Request a payout every 24 hours, with no fixed windows and no winning day count
+Full contract limits from day one: 2/20 on the 25K, 4/40 on the 50K, 6/60 on the 100K, 8/80 on the 150K
+The 1 minute holding rule applies at payout, as on every plan, see the holding time article
+At least 50% of every payout request must be profit made since your last payout
+Manual trading only. Bots and automated strategies are not permitted
+Drawdown by size: 25K $1,000 (4%), 50K $2,000 (4%), 100K $3,000 (3%), 150K $4,500 (3%)
+Full rules in the Daily Payouts specifications
+What all plans have in common
+$0 activation fee.
+News trading is unrestricted during the evaluation phase on EOD, 1-Day-Pass-Plan and Flex. Daily Payouts applies the 2 minute buffer in both phases. On all funded accounts a 2 minute buffer applies around high impact news events, with no opening, closing or triggering of pending orders within 2 minutes before or after a scheduled release.
+One holding time rule on every plan: the 1 minute rule, checked when you pass an evaluation and at each payout request: at least 70% of your closed trades and at least 70% of your net profit must come from trades held longer than 1 minute.
+No time limit to pass the evaluation on EOD, 1-Day-Pass-Plan, Flex and Daily Payouts.
+Instant Classic and Instant Lite are no longer on sale. Accounts bought before 18 November 2026 keep their original rules: see the Instant Classic and Instant Lite articles.
+Updated 19 November 2026
+Daily Payouts or Flex Challenge: which should I choose?
+Both are one-phase evaluations with a 6% profit target, no time limit and the same drawdown percentages. They are built for different things.
+Flex is the freedom plan. No daily loss limit unless you add one at checkout, no news restriction during the evaluation, and larger payouts when they come.
+Daily is the cash flow plan. Money out every 24 hours at a better split, in exchange for tighter rails while you trade.
+Side by side comparison for a 50K Plan
+Daily Payouts 50K Flex 50K
+Profit target $3,000 (6%) $3,000 (6%)
+Max drawdown $2,000 (4%) $2,000 (4%)
+Drawdown, evaluation End of day trailing End of day trailing
+Drawdown, funded Intraday trailing End of day trailing
+Drawdown lock point Starting balance + $100 Starting balance
+Daily loss limit Optional $1,000 at checkout, one hit closes the account None by default. Optional $1,000 at checkout, one hit closes the account
+Consistency, evaluation 40% or 50% 50%
+Consistency, funded None None
+News, evaluation 2 minute buffer No restriction
+News, funded 2 minute buffer 2 minute buffer
+Profit split 90/10 from the first payout 80/20, 90/10 available as a paid add-on
+Winning days before payout None 5
+Payout frequency Every 24 hours, no windows Two windows a month
+Maximum per payout $1,000 50% of profit, up to $2,000
+Holding time rule 1 minute rule, 70% 1 minute rule, 70%
+Contract limits 4 mini / 40 micro from day one 3 mini / 30 micro in the evaluation. Funded starts at 2 mini / 20 micro and goes up to 4 mini / 40 micro as your simulated profit grows
+Automated strategies Not permitted See the automated strategies article
+Prices change with our promotions. For the current price and reset fee, see the pricing page or ask us in chat.
+Choose Daily if
+You want to take money out regularly rather than in larger amounts twice a month
+You are already trading profitably and want the cash flow, not the challenge
+You trade manually and can work inside a daily loss limit
+You are comfortable watching peak equity, because your funded drawdown trails intraday
+Choose Flex if
+You want no daily loss limit at all
+You want to trade news freely during the evaluation
+You prefer fewer, larger payouts
+You want your funded drawdown to trail end of day rather than in real time
+Can I hold both?
+Yes, within the account limits for each plan.
+Updated 19 November 2026
+Can I upgrade or switch from one plan to another?
+Plans cannot be converted or upgraded after purchase. Each account type is a separate product with its own rules and drawdown mechanics. If you'd like to try a different plan, you would need to purchase a new account.
+The same goes for the daily loss limit option on Flex. You choose it at checkout, and it can't be added or removed afterwards.
+This includes moving between Flex and Daily Payouts. You can hold both at the same time, since account limits are counted separately for each product type. If you are weighing the two up, see Daily Payouts or Flex Challenge: which should I choose?
+What are the specifications of each Type and Account Size?
+Prices change with our promotions. For the current price and reset fee, see the pricing page or ask us in chat.
+EOD Challenge
+A one-phase evaluation with End of Day Trailing drawdown. Positions must be closed before market close.
+Rules (All Sizes)
+Challenge Type: One Evaluation Phase
+Profit Target: 6%
+Drawdown Type: End of Day Trailing (locks at starting balance)
+Daily Drawdown (Challenge Phase): None
+Daily Drawdown (Funded Phase): 2.5% (Soft Breach)
+Consistency Rule (Challenge): 50%
+Consistency Rule (Funded): 30%
+Profit Split: 80/20 by default, with an optional 90/10 add-on
+Activation Fee: None
+Minimum Payout: $500
+Max Funded Accounts: 5
+Account Sizes
+Account Size Max Contracts (Mini / Micro) Max Drawdown
+$50,000 5 / 50 4% ($2,000)
+$100,000 9 / 90 3% ($3,000)
+$150,000 12 / 120 3% ($4,500)
+1-Day-Pass-Plan
+A fast-paced one-phase evaluation with End-of-Day (EOD) Trailing Drawdown and faster payout eligibility.
+Rules (All Sizes)
+Challenge Type: One Evaluation Phase
+Profit Target: 6%
+Drawdown Type: End-of-Day (EOD) Trailing (locks at starting balance)
+Daily Drawdown: optional at checkout. If chosen: 25K 2.4%, 50K 2%, 100K 1.5% in both phases, a hard breach on the first hit (accounts bought before 18 November 2026: applies in both phases as a soft pause)
+Consistency Rule (Challenge): None
+Consistency Rule (Funded): 35%
+Profit Split: 80/20 by default, with an optional 90/10 add-on
+Activation Fee: None
+Minimum Payout: $500
+Max Funded Accounts: 5
+Account Sizes
+Account Size Max Contracts (Mini / Micro) Max Drawdown
+$25,000 2 / 20 4% ($1,000)
+$50,000 4 / 40 4% ($2,000)
+$100,000 6 / 60 3% ($3,000)
+Instant
+Skip the evaluation and start trading a funded account immediately. Full rules in the Instant specifications .
+Rules (All Sizes)
+Challenge Type: Instant (No Evaluation Phase)
+Drawdown Type: End of Day Trailing (locks at starting balance + $100)
+Daily Drawdown: optional at checkout. If chosen, a hard breach on the first hit
+Consistency Rule: 15% or 20%, chosen at checkout and fixed on every reward
+First Reward: at 6% profit, no minimum days
+Later Rewards: at 5% profit per cycle, within the payout windows
+Profit Split: 80/20 by default, with an optional 90/10 add-on
+Activation Fee: None
+Reset: Not available
+Minimum Payout: $500
+Max Funded Accounts: 3
+Account Sizes
+Account Size Max Contracts (Mini) Max Drawdown Daily Loss Limit (if chosen) Reward Cap, 15% option Reward Cap, 20% option
+$25,000 2 $1,000 $500 $600 $1,000
+$50,000 4 $2,000 $1,000 $1,200 $2,000
+$100,000 6 $3,000 $1,500 $1,800 $3,000
+$150,000 8 $4,500 $2,250 $2,400 $4,000
+Instant Classic (no longer on sale)
+Instant Classic is no longer on sale. These rules apply to accounts bought before 18 November 2026.
+Rules (All Sizes)
+Challenge Type: Instant Classic (No Evaluation Phase)
+Drawdown Type: Intraday Trailing on Highest Equity (locks at starting balance)
+Daily Drawdown: 3% (Soft Breach)
+Max Drawdown: 5%
+Consistency Rule: 20%
+Profit Split: 100% on the first $10,000, then 90/10
+Activation Fee: None
+Reset: Not available
+Minimum Payout: $500
+Max Funded Accounts: 3
+Account Sizes
+Account Size Max Contracts (Mini / Micro) Max Drawdown
+$25,000 3 / 30 5% ($1,250)
+$50,000 4 / 40 5% ($2,500)
+$100,000 6 / 60 5% ($5,000)
+$150,000 8 / 80 5% ($7,500)
+Flex Challenge
+A premium one-phase evaluation with End of Day Trailing drawdown, no consistency rule on funded accounts, and maximum flexibility.
+Rules (All Sizes)
+Challenge Type: One Evaluation Phase
+Profit Target: 6%
+Drawdown Type: End of Day Trailing (locks at starting balance)
+Daily Drawdown: None by default (both Challenge and Funded phases). Optional at checkout for a lower price. It applies in both phases and is a hard breach, see Can I add a daily loss limit to my Flex account?
+Consistency Rule (Challenge): 50%
+Consistency Rule (Funded): None
+Profit Split: 80/20 by default, with an optional 90/10 add-on for an additional 20% of the challenge price
+Activation Fee: None
+Minimum Payout: $500
+Max Payout Request: 50% per cycle (remaining profit stays in the account as buffer)
+Max Funded Accounts: 5
+Holding Time: the 1 minute rule at payout, 70% of trades and profit, same as every plan. See the holding time article
+Account Sizes
+Account Size Max Contracts (Mini / Micro) Max Drawdown
+$50,000 Evaluation 3 / 30. Funded 2 / 20, up to 4 / 40 4% ($2,000)
+$100,000 Evaluation 5 / 50. Funded 3 / 30, up to 6 / 60 3% ($3,000)
+$150,000 Evaluation 8 / 80. Funded 4 / 40, up to 10 / 100 3% ($4,500)
+From 10 November 2026, the contract limit on a funded Flex account goes up with your simulated profit. The full table is in Flex Challenge: specifications, rules and payouts .
+Daily Payouts
+A one-phase evaluation built around payout frequency. Request a payout every 24 hours on the funded account, with no fixed windows and no winning day requirement. Full rules in the Daily Payouts specifications .
+Rules (All Sizes)
+Challenge Type: One Evaluation Phase
+Profit Target: 6%
+Drawdown Type (Evaluation): End of Day Trailing
+Drawdown Type (Funded): Intraday Trailing on Highest Equity
+Drawdown Lock Point: Starting balance + $100
+Daily Loss Limit: optional at checkout. If chosen, it applies in both phases and closes the account on the first hit (accounts bought before 18 November 2026: three hits in a rolling 30 day period is a hard breach)
+Consistency Rule (Evaluation): 40% or 50%, chosen at checkout
+Consistency Rule (Funded): None
+Profit Split: 90/10 from the first payout, no add-on required
+Activation Fee: None
+Minimum Payout: $500
+Payout Frequency: every 24 hours, no fixed windows
+Progression Rule: at least 50% of each request must be profit made since the last payout
+Holding Time: the 1 minute rule at payout, 70% of trades and profit, same as every plan
+Automated Strategies: not permitted
+Resets: two per evaluation
+Payout Processing Fee: 3%
+Max Funded Accounts: 5, counted separately from the other plans
+Account Sizes
+Account Size Max Contracts (Mini / Micro) Max Drawdown Daily Loss Limit (if chosen)
+$25,000 2 / 20 4% ($1,000) $500 (2%)
+$50,000 4 / 40 4% ($2,000) $1,000 (2%)
+$100,000 6 / 60 3% ($3,000) $1,500 (1.5%)
+$150,000 8 / 80 3% ($4,500) $2,250 (1.5%)
+Payout Limits
+Account Size Profit Buffer Minimum Balance to Request Maximum Per Payout
+$25,000 $1,100 $26,100 $650
+$50,000 $2,100 $52,100 $1,000
+$100,000 $3,100 $103,100 $1,500
+$150,000 $4,600 $154,600 $2,500
+Optional 90/10 Profit Share Add-On
+Traders may upgrade an EOD, 1-Day-Pass-Plan, Flex Challenge or Instant purchase to a 90/10 profit split for an additional 20% of the challenge price.
+Daily Payouts is 90/10 by default and has no add-on.
+General Information (All Plans)
+Payout Eligibility
+EOD: 7 days of minimum 0.2% of the starting balance
+1-Day-Pass-Plan: 5 days of minimum 0.2% of the starting balance
+Instant: 7 days of minimum 0.2% of the starting balance
+Flex: 5 winning days. The minimum profit for a winning day depends on the account size: $250 (0.5%) on 50K, $400 (0.4%) on 100K, and $450 (0.3%) on 150K.
+Daily Payouts: no winning days. Your first request is available 24 hours after your first funded trade, then one request every 24 hours.
+Minimum payout amount: $500
+News Trading
+Evaluation phase: allowed on EOD, 1-Day-Pass-Plan and Flex. A 2 minute buffer applies on Daily Payouts.
+Funded phase: restricted on all plans. 2 minute buffer before and after high impact news events.
+Platforms
+NinjaTrader, Tradovate, TradingView (via Tradovate), TickBlaze, DeepCharts, ATAS, Quantower, TradeSea.
+Updated 19 November 2026
+What are the profit targets for each plan?
+EOD Challenge
+Account Size Profit Target
+50K $3,000
+100K $6,000
+150K $9,000
+1-Day-Pass-Plan
+Account Size Profit Target
+25K $1,500
+50K $3,000
+100K $6,000
+Instant
+Instant has no evaluation. The first reward opens at 6% profit, then 5% per cycle.
+Account Size First Reward Target (6%)
+25K $1,500
+50K $3,000
+100K $6,000
+150K $9,000
+Instant Classic accounts bought before 18 November 2026 keep the 7% first payout target: $1,750 / $3,500 / $7,000 / $10,500.
+Flex Challenge
+Account Size Profit Target
+50K $3,000 (6%)
+100K $6,000 (6%)
+150K $9,000 (6%)
+Daily Payouts
+Account Size Profit Target
+25K $1,500 (6%)
+50K $3,000 (6%)
+100K $6,000 (6%)
+150K $9,000 (6%)
+There is no time limit on reaching the target. On Daily Payouts the consistency rule during the evaluation is 40% or 50%, chosen at checkout. With 40%, your profit needs to be spread across at least three trading days.
+Updated 19 November 2026
+Back to top

@@ -1,0 +1,96 @@
+Commissions, exchange fees and market data | FuturesElite FAQ Skip to main content
+Back to Website Discord
+Back to Website Discord
+Search for articles...
+All Collections
+Payouts, fees and billing
+Commissions, exchange fees and market data
+Commissions, exchange fees and market data
+Per-symbol fees and data options.
+October 13, 2026
+Table of contents
+All fees are per round turn: a $0.04 regulatory fee plus the exchange fee.
+Symbol
+Product
+Total
+/ES · /NQ · /RTY · /EMD · /YM
+E-mini equity index
+$2.80
+/MES · /MNQ · /M2K · /MYM
+Micro equity index
+$0.74
+/NKD
+Nikkei
+$4.34
+/MBT
+Micro Bitcoin
+$2.04
+/MET
+Micro Ether
+$0.24
+/6A · /6B · /6C · /6E · /6J · /6S · /6M · /6N
+Currency futures
+$3.24
+/M6A · /M6B · /M6C · /M6E
+Micro currency futures
+$0.52
+/CL · /RB · /HO
+Crude, gasoline, heating oil
+$3.04
+/MCL · /QG
+Micro crude, E-mini nat gas
+$1.04
+/QM
+E-mini crude
+$2.44
+/NG
+Natural gas
+$3.24
+/MNG
+Micro natural gas
+$1.24
+/GC · /SI · /HG · /PL
+Gold, silver, copper, platinum
+$3.24
+/MGC
+Micro gold
+$1.04
+/SIL
+Micro silver
+$2.04
+/MHG
+Micro copper
+$1.24
+/ZT · /ZF
+2- and 5-year notes
+$1.34
+/ZN · /TN
+10-year and Ultra notes
+$1.64
+/ZB
+30-year bond
+$1.78
+/UB
+Ultra bond
+$1.94
+/ZQ
+30-day Fed funds
+$1.96
+/SR3
+3-month SOFR
+$2.54
+/ZC · /ZW · /ZS · /ZM · /ZL
+Grains and soy
+$4.24
+/LE · /HE · /GF
+Livestock
+$4.24
+DX Feed commissions: $1.60 for micros and $5.00 for standard contracts, round trip.
+Market data
+Level 1 data is free in the challenge and Sim Funded stages: bid/ask, volume, open interest, time and sales.
+Level 2 data is $39 a month from your dashboard: ladders, market depth and order sizes.
+Live accounts buy and maintain their own exchange data.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+FuturesElite FAQ
+We run on Intercom

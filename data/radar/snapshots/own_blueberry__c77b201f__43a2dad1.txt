@@ -1,0 +1,118 @@
+Detailed Parameters of our Challenges | Blueberry Futures Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Noto Sans".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Sign Up Login English हिन्दी 日本語 Español English
+Sign Up Login English हिन्दी 日本語 Español English
+Search for articles...
+All Collections
+Evaluation Accounts (The Challenge)
+Account Specs & Comparison (Start Here)
+Detailed Parameters of our Challenges
+Detailed Parameters of our Challenges
+Side-by-side breakdown of the Ascent (EOD) and Accelerated (Trailing) challenges, comparing drawdown type, profit targets, minimum trading days, and max contracts for each account size.
+December 20, 2025
+Table of contents
+Overview of Evaluation Programs
+Blueberry Futures offers two distinct evaluation programs to match your trading style: the Ascent (EOD) challenge and the Accelerated (Trailing) challenge. Both programs require a specific Profit Target to be met while adhering to a Drawdown limit, but they differ primarily in how the Drawdown is calculated and the minimum time required to pass.
+If you’re not familiar with these drawdown models, see Drawdown Types: EOD vs. Trailing Explained for a full breakdown of EOD vs. Trailing.
+Ascent - EOD:
+This plan uses an End-of-Day (EOD) Drawdown , which is calculated only at the end of the trading day. This offers more flexibility during intraday trading. It requires a minimum of 2 trading days to pass.
+Accelerated - Trailing:
+This plan uses a Real-Time Trailing Drawdown that follows your peak profit level. It offers a faster path, requiring only 1 trading day to pass.
+Comparison Table
+Ascent - EOD
+(25K)
+Accelerated - Trailing
+(25K)
+Ascent - EOD
+(50K)
+Accelerated - Trailing
+(50K)
+Ascent - EOD
+(100K)
+Accelerated - Trailing
+(100K)
+Ascent - EOD
+(150K)
+Accelerated - Trailing
+(150K)
+Drawdown Type
+Time to Complete
+30 Days
+30 Days
+30 Days
+30 Days
+30 Days
+30 Days
+30 Days
+30 Days
+Price After Discount (60%)
+$55.60
+$51.60
+$98.00
+$73.61
+$147.21
+$110.40
+$242.80
+$181.61
+Drawdown Limit
+$1,000.00
+$1,000.00
+$2,000.00
+$2,000.00
+$3,000.00
+$3,000.00
+$4,500.00
+$4,500.00
+Profit Target
+$1,500.00
+$1,500.00
+$3,000.00
+$3,000.00
+$6,000.00
+$6,000.00
+$10,000.00
+$10,000.00
+Min Days to Pass
+2
+1
+2
+1
+2
+1
+2
+1
+Maximum Contracts
+1 Mini and 10 Micro
+1 Mini and 10 Micro
+2 Mini and 20 Micro
+2 Mini and 20 Micro
+6 Mini and 60 Micro
+6 Mini and 60 Micro
+9 Mini and 90 Micro
+9 Mini and 90 Micro
+Challenge Reset
+$47.04
+$41.40
+$125.00
+$79.00
+$188.70
+$118.00
+$310.00
+$194.00
+Funded Reset
+$250
+$250
+$500
+$500
+$750
+$750
+$1000
+$1000
+Related Articles
+Which account is right for me?
+Ascent Account Specs: Rules & Targets
+Accelerated Account Specs: Rules & Targets
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Blueberry Futures

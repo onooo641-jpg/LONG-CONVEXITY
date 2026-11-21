@@ -1,0 +1,41 @@
+Prime drawdown and Daily Loss Limit | FuturesElite FAQ Skip to main content
+Back to Website Discord
+Back to Website Discord
+Search for articles...
+All Collections
+Prime accounts
+Prime drawdown and Daily Loss Limit
+Prime drawdown and Daily Loss Limit
+The End of Day Max Loss Limit and the soft-breach Daily Loss Limit.
+October 18, 2026
+Table of contents
+End of Day Max Loss Limit
+The most your account can ever lose: $1,000 (25K), $2,000 (50K), $3,000 (100K) or $4,500 (150K). It is checked on your end-of-day balance. On a 50K Prime it starts at $48,000.
+If an end-of-day balance closes at or below the limit, it is a hard breach : the account is closed permanently.
+Daily Loss Limit
+Daily loss limit: on Elite only if you chose it at checkout; always on for Prime, Ultra and Oracle; Nitro and Instant have none.
+The most you can lose in one trading day. The level is measured from the higher of your balance and equity at the previous daily close.
+Size
+Daily Loss Limit
+25K
+$600
+50K
+$1,200
+100K
+$1,800
+150K
+$2,700
+Example, 50K Prime: yesterday closed at $51,000, so today's limit level is $49,800.
+Hitting it is a soft breach : if your equity reaches it, trading is locked for 24 hours from that moment; the account stays open.
+Contracts
+No scaling plan: your full allowance applies from day one in both stages. One mini equals ten micros, and you can mix them as long as the total never exceeds your mini limit. On a 50K, 2 minis + 20 micros = 4 minis.
+Related Articles
+Elite drawdown, daily loss limit and contracts
+Elite checkout options
+Prime rules at a glance
+OLD Instant drawdown and staying active
+Instant Max Loss Limit and Daily Loss Limit
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+FuturesElite FAQ
+We run on Intercom

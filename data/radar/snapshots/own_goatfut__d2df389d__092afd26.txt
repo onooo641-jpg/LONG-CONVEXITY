@@ -1,0 +1,115 @@
+Daily Payouts | Goat Funded Futures FAQ's
+Help Center / Choose a model / Daily Payouts
+Daily Payouts
+Daily Payouts: specifications, rules and payouts
+Everything for Daily 25K, 50K, 100K and 150K: profit target, drawdown, the daily loss limit, contract limits, and how the 24 hour payout cycle works.
+Values by account size: Daily 25K / Daily 50K / Daily 100K / Daily 150K
+Activation fee : $0 / $0 / $0 / $0
+Profit target : $1,500 (6%) / $3,000 (6%) / $6,000 (6%) / $9,000 (6%)
+Time limit : None / None / None / None
+Plan overview Drawdown and limits Consistency Rewards Trading rules Platforms, KYC and live
+Daily Payouts is a one-phase evaluation with no time limit, no consistency rule once you are funded, and payout eligibility every 24 hours on the funded account.
+Key benefits
+Request a payout every 24 hours once funded, with no fixed payout windows and no minimum winning days
+One-time fee, no monthly subscription
+90/10 profit split from your first payout, with no add-on required
+No consistency rule on the funded account
+No daily profit cap
+Full contract limits from day one, with no scaling plan
+$0 activation fee
+Two things to understand before you buy
+Daily Payouts is not a faster version of Flex. Two rules are stricter, and both catch traders out:
+Your funded account uses intraday trailing drawdown, not end of day. The limit moves in real time with your highest equity, including open positions. The evaluation runs end of day trailing.
+The daily loss limit is optional. You choose at checkout whether to trade with it or without it, and the choice carries into your funded account. If you choose it, hitting it closes the account on the first hit.
+Both are explained in full below.
+Pricing and targets
+Daily 25K Daily 50K Daily 100K Daily 150K
+Activation fee $0 $0 $0 $0
+Profit target $1,500 (6%) $3,000 (6%) $6,000 (6%) $9,000 (6%)
+Time limit None None None None
+Prices change with our promotions. For the current price and reset fee, see the pricing page or ask us in chat.
+Two resets are available per evaluation. A reset keeps the options you originally bought, and the reset fee depends on those options. Funded accounts cannot be reset. If a funded account is breached, you need to buy a new evaluation.
+How to pass
+Reach the profit target of 6% of your starting balance.
+Satisfy the consistency rule you chose at checkout (40% or 50%). With 40%, your profit needs to be spread across at least three trading days.
+Stay within the trading rules and loss limits below.
+There is no time limit. Once you pass, your evaluation period is reviewed and your funded account is activated within 2 business days.
+Maximum trailing drawdown
+Your maximum drawdown is the level your balance or equity cannot fall below. How it trails depends on the phase:
+Evaluation. End of day trailing. The limit moves up with your profits at the end of each trading day.
+Funded. Intraday trailing. The limit moves in real time with your highest equity, including open positions, rather than waiting for the end of the day.
+In both phases the limit stops trailing permanently once it reaches your starting balance plus $100. Breaching it is a hard breach and closes the account immediately.
+Account size Max drawdown Evaluation Funded Lock point
+25K $1,000 (4%) End of day trailing Intraday trailing Starting balance + $100
+50K $2,000 (4%) End of day trailing Intraday trailing Starting balance + $100
+100K $3,000 (3%) End of day trailing Intraday trailing Starting balance + $100
+150K $4,500 (3%) End of day trailing Intraday trailing Starting balance + $100
+Example on a funded Daily 50K: Your equity reaches $51,400 during the session. Your drawdown limit immediately moves to $49,400 and does not move back down, even if the position reverses later. Once your equity reaches $52,100 the limit locks at $50,100 for the life of the account.
+Requesting a payout does not move or lock your drawdown limit.
+Daily loss limit
+If you chose the daily loss limit at checkout, it applies in both the evaluation and the funded phase. It is the most you may lose in a single trading day. Accounts bought without it have no daily loss limit.
+Account size Daily loss limit
+25K $500 (2%)
+50K $1,000 (2%)
+100K $1,500 (1.5%)
+150K $2,250 (1.5%)
+Hitting it is a hard breach. The account is closed on the first hit, in the evaluation or funded. There is no pause and no strike count.
+On EOD funded accounts the daily loss limit is a soft breach. On Flex, 1-Day-Pass-Plan and Instant it is optional at checkout and closes the account on the first hit, the same as here.
+Accounts bought before 18 November 2026: the daily loss limit is always on. Hitting it is a soft breach that pauses trading for the rest of the day, and a third hit within any rolling 30 day period closes the account.
+Contract limits
+Full contract limits are available from your first trading day, in both phases. There is no scaling plan.
+Account size Evaluation Funded
+25K 2 mini / 20 micro 2 mini / 20 micro
+50K 4 mini / 40 micro 4 mini / 40 micro
+100K 6 mini / 60 micro 6 mini / 60 micro
+150K 8 mini / 80 micro 8 mini / 80 micro
+Consistency rule, evaluation only
+The consistency rule limits how much of your total profit can come from a single trading day.
+Evaluation: no single day can account for more than 40% or 50% of your total profit, depending on the option you chose at checkout. Landing exactly on the threshold is allowed.
+Funded: no consistency rule. Trade without a per-day profit cap.
+Example on a Daily 25K. Your best day produced $800. With $1,500 in total profit, that day is 53% of the total, so the evaluation is not complete yet. Your total profit needs to reach $2,000 before that $800 day is no longer above 40%.
+Exceeding the threshold does not terminate your account. You simply cannot complete the evaluation until your best day is no longer above 40% of your total profit, so keep trading.
+The daily progression rule
+At least 50% of every payout request must be profit generated since your last approved payout. Put another way, you can request up to twice the profit you have made since your last payout, within the minimum and maximum above. For your first payout, all profit above the buffer counts as new profit.
+Example on a funded Daily 50K: Your balance is $53,400, which is $1,300 above the $52,100 buffer. Your last payout was approved yesterday and you have made $700 since. The progression rule lets you request up to $1,400, twice your new profit. The 50K maximum is $1,000, so you request $1,000 and receive $900 after the 90/10 split, less the 3% processing fee, so $873 arrives. Your balance becomes $52,400 and your drawdown limit stays locked at $50,100.
+If you do not meet the progression rule, the request is declined. That is not a breach. Keep trading and request again once at least half of the amount you want is profit made since your last payout.
+Two checks run on every request. The progression rule above is one. The 1 minute holding rule below is the other. Both have to pass, and a request can fail either one on its own.
+Payouts
+Profit split: 90/10 in your favour from your very first payout. No add-on to buy.
+Eligibility: submit your first request 24 hours after you place your first trade on the funded account, then one request every 24 hours. The clock starts when the trade is placed, not when it closes. No fixed windows, no minimum trading days, no winning day requirement.
+Profit buffer: your balance must be at or above the buffer level below before you can request. The buffer stays in the account and is not withdrawable.
+Minimum payout: $500 on every account size.
+Processing: within 2 business days of your request.
+Processing fee: 3% is deducted from every payout to cover payment and transaction costs, so the amount that arrives is slightly below the figure on your payout certificate.
+Account size Profit buffer Minimum balance to request Maximum per payout
+25K $1,100 $26,100 $650
+50K $2,100 $52,100 $1,000
+100K $3,100 $103,100 $1,500
+150K $4,600 $154,600 $2,500
+Profit above the payout maximum stays in the account and continues to support your equity into the next request.
+Holding time: the 1 minute rule
+Daily Payouts uses the same 1 minute holding rule as every GFF plan.
+When you pass the evaluation, and at each payout request for the period since your last payout, both of the following must be true: at least 70% of your closed trades were held longer than 1 minute, and at least 70% of your net profit came from trades held longer than 1 minute. If either is not met, we deduct the profit from winning trades held under 1 minute in that period from your payout and pay the rest. If that profit is more than the amount you requested, we decline the payout and deduct the requested amount from the account instead. This is not a breach and your account stays open.
+Tick scalping, meaning opening and closing positions within seconds to capture small tick profits, is not permitted on any GFF account including Daily Payouts. Profit generated that way may be reviewed and deducted.
+Trading style restrictions
+Daily Payouts is a manual trading product. Bots, Expert Advisors and automated strategies are not permitted. Grid, martingale and high frequency strategies are not permitted.
+News trading
+A 2 minute buffer applies around high impact news events in both the evaluation and the funded phase. You cannot open, close, or trigger pending orders within 2 minutes before or after a scheduled release. Positions opened before the window began may be held through the event.
+This is stricter than our other evaluations, which have no news restriction during the evaluation phase.
+Overnight and weekend holding
+Neither is permitted. Any position still open is closed automatically at 15:55 CT, five minutes before the session ends.
+Inactivity
+Place at least one trade every 14 calendar days, in both phases. If no trades are placed for 14 consecutive days the account is breached and closed, and the fee is not refunded. This 14-day rule applies from 7 November 2026. There is no time limit on passing the evaluation, but the account does need to stay active. Tell support in advance if you are going to be away.
+Account limits and copy trading
+You can hold up to 5 funded Daily Payouts accounts. This is a separate allowance from the other plans, so 5 Daily accounts can sit alongside your EOD, 1-Day-Pass-Plan or Flex funded accounts.
+Copy trading is permitted between your own Daily Payouts accounts only. Copying to or from another trader's account is not permitted, and copying between a Daily Payouts account and any other plan is not permitted.
+Platforms and instruments
+Platforms: NinjaTrader, Tradovate, TradingView (via Tradovate), TickBlaze, DeepCharts, ATAS.
+Instruments: CME index, energy, metals and FX futures.
+KYC
+KYC verification must be completed before your first payout. On a plan built around a 24 hour cadence it is worth starting verification as soon as your funded account is activated, rather than waiting until your first request.
+Path to Live
+Daily Payouts funded traders are eligible for GFF's Path to Live programme. Selection is at the discretion of the risk team. See the Path to Live articles for how the transition works and for the live account specifications.
+Please keep an eye on our website and Discord for announcements about trading parameters, updates or system changes.
+Updated 19 November 2026
+Back to top

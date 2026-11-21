@@ -1,0 +1,27 @@
+Can I hold trades overnight or over the weekend? | Blueberry Futures Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Noto Sans".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Sign Up Login English हिन्दी 日本語 Español English
+Sign Up Login English हिन्दी 日本語 Español English
+Search for articles...
+All Collections
+Trading Rules & Risk Management
+Trading Limits & Restrictions
+Can I hold trades overnight or over the weekend?
+Can I hold trades overnight or over the weekend?
+🌙 All trades must be closed before the session ends. No exceptions.
+November 24, 2025
+Table of contents
+Overnight & Weekend Policy
+To manage gap risk and protect both traders and the firm, we do not allow positions to be held overnight or over the weekend on our evaluation and funded accounts.
+The Rule
+Overnight: ❌ Not allowed . You must close all active positions and delete pending orders before the market session closes for the day (typically 4:45 PM ET).
+Weekend: ❌ Not allowed. Positions may not be held into the weekend gap. All trades must be closed before the final session close of the week.
+Consequence
+If you do not close your positions in time, the system will automatically liquidate all open trades around 4:45 PM ET .
+Auto-closure does not make it acceptable to ignore the rule – repeated or deliberate violations may be treated as a breach of trading conditions and can lead to further action on the account.
+Related Articles
+Can I use EAs, Bots, or Copy Trading?
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Blueberry Futures

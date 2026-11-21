@@ -1,0 +1,382 @@
+Prop Firm Consistency Rules Explained | What They Mean for Your Trading
+Home
+Products
+Live
+Payouts
+DT Games
+Arcade New
+Giveaways
+Help Desk
+Learn
+Getting Started
+What Is a Prop Firm?
+How to Start Prop Trading
+Futures Prop Firms
+Prop Funding Explained
+How Evaluations Work
+Are Prop Firms
+Legit?
+Programs
+Straight to Live (S2L)
+Live Funded Trading
+Account Scaling
+Profit Splits Explained
+Challenge Cost vs Real
+Risk
+Dashboard Guide
+Rules and Risk
+Trailing Drawdown Explained
+EOD vs Trailing Drawdown
+Daily Loss Limits Explained
+Consistency Rules
+Explained
+Rules That Kill
+Profitable Traders
+Overnight Trading
+Rules
+News Trading Rules
+Trader Development
+Psychology and Risk
+Control
+Why Traders Fail
+Evaluations
+How Long to Pass an
+Evaluation
+Can You Make a Living
+Trading?
+Best Prop Firms
+Best Prop Firms Ranked
+Best for Scalpers
+Best for Swing Traders
+Best for Small
+Accounts
+Best Futures Markets
+Firm Comparisons
+All Comparisons
+DayTraders vs Topstep
+DayTraders vs MFFU
+DayTraders vs TPT
+DayTraders vs Bulenox
+DayTraders vs Tradeify
+DayTraders vs FTMO
+DayTraders vs FundedNext
+Company
+Press
+Login
+Sign Up
+Rules & Guidelines
+Consistency Rules Explained
+One of the most debated topics in prop firm trading. They filter out randomness and reward repeatable execution. Here is how they work and how to trade within them.
+Resources
+Core Concepts
+Prop Trading Basics
+What is a Prop Firm?
+Funding Explained
+How Evaluations Work
+Finding Legit Firms
+Firm Recommendations
+Best Prop Firms
+Futures Prop Firms
+Best for Small Accounts
+Best for Swing Traders
+Best Firms for Scalpers
+Best Futures Markets
+Firm Comparisons
+All Comparisons
+DayTraders vs Topstep
+DayTraders vs TPT
+DayTraders vs MFFU
+DayTraders vs FTMO
+DayTraders vs Funded Next
+DayTraders vs Tradeify
+DayTraders vs Bulenox
+Rules & Guidelines
+Trailing Drawdown
+EOD vs Trailing Drawdown
+Daily Loss Limits
+Consistency Rules
+News Trading Rules
+Overnight Rules
+Psychology & Risk
+Psychology & Risk
+Time to Pass
+Why Traders Fail
+Rules That Kill Profits
+Cost vs Real Risk
+Post-Funding
+Profit Splits
+Account Scaling
+Making a Living
+Live Funded Trading
+Consistency rules exist to prevent a specific failure mode: the trader who passes an evaluation on one lucky day and then loses the funded account within a week. By requiring profits to be distributed across multiple sessions, the rule filters out randomness and rewards repeatable execution.
+What Is a Consistency Rule?
+A consistency rule limits how much of your total profit can come from a single trading day.
+Example: $3,000 target with 50% rule
+Day 1 Profit
+$2,000
+66% of target
+That is 66% from one day. You need to continue trading until $2,000 represents 50% or less of total profits.
+Required additional
+$2,000+
+Brings ratio to 50%
+The rule does not mean you cannot have a great day. It means you cannot rely exclusively on one great day to pass the evaluation.
+Consistency Rules at DayTraders.com
+50%
+Evaluation Phase
+Trailing, EOD & Static
+No single day can exceed 50% of total profits when you finish the evaluation.
+30%
+Pro (Funded) Phase
+After passing eval
+Tighter rule because funded trading is about sustained performance, not evaluation sprints.
+20%
+S2F Program
+Straight to Funded
+No evaluation phase, so the tighter rule ensures funded performance is distributed across enough sessions.
+25%
+S2L Evaluation
+Straight to Live
+Applied during the S2L evaluation phase. Live funded accounts have no consistency rule.
+How to Trade Within Consistency Rules
+The key is consistency in your approach, not suppression of your edge. You do not need to artificially limit profits on good days. You need to show up and trade well on enough days that no single session dominates.
+Practical Target Distribution
+Profit Target
+$3,000
+Consistency Rule
+50%
+Aim Per Session
+$500 to $800
+Sessions Needed
+4 to 6
+If you have an unexpectedly large day, do not panic. Just continue trading your normal plan on subsequent sessions. As your total profit grows, the percentage from that big day shrinks naturally.
+The worst thing you can do: Stop trading after a great day and try to "protect" the profit. This often leads to tentative trading on subsequent sessions, which creates its own problems.
+Common Mistakes With Consistency Rules
+✕
+Not knowing the rule exists
+Some traders reach the profit target and expect to pass, then fall short because one session contributed too much. Always check the consistency requirements before you start.
+✕
+Treating the rule as a ceiling on daily profits
+It is not. You can make as much as you want on any day. The rule only measures the percentage of total profits from your best day when you submit for evaluation or request a payout.
+✕
+Overcomplicating it
+If you trade your plan consistently across 4+ sessions, the rule almost always takes care of itself. It only becomes a problem when traders try to pass in 2 days with one massive session carrying the weight.
+Consistency Rules and Different Strategies
+Easier Compliance
+Scalpers
+Trade frequently with small, distributed profits across many sessions. The risk is having one outlier session that skews the ratio.
+Harder Compliance
+Swing Traders
+Profits cluster around trade exits. A swing trade that closes for a large profit can dominate total P&L. Use partial exits across multiple sessions.
+Regardless of style, the consistency rule reinforces the same principle: traders who succeed in funded programs are the ones who can repeat their performance, not the ones who got lucky once.
+How DayTraders.com Compares to Other Firms
+Firm
+Evaluation
+Funded
+DayTraders.com
+50% (Trail/EOD/Static), 25% (S2L)
+30% (Pro), 20% (S2F), None (Live)
+Topstep
+None
+None
+Bulenox
+40%
+40% on Master Account
+Take Profit Trader
+None
+None
+Tradeify
+40% (Select)
+None (Select Flex)
+DayTraders.com's rules are moderate. The 50% evaluation rule is passable for any trader who distributes activity across 3+ sessions. The 30% funded rule is tighter but manageable with a steady approach.
+Worked Example: Passing With the 50% Rule
+50K Trailing account. Profit target: $3,000. Consistency rule: 50%. Minimum 2 qualifying days.
+Session 1
++$1,400
+Total: $1,400
+Day 1 = 100%
+Session 2
++$1,000
+Total: $2,400
+Day 1 = 58%
+Session 3
++$800
+Total: $3,200
+Day 1 = 43.75%
+Day 1's percentage dropped naturally as more sessions were added. You did not need to limit Day 1's profit. You just needed to keep trading until the ratio came into compliance. The consistency rule almost always resolves itself if you trade 3+ sessions with reasonable distribution.
+Why the Consistency Rule Is Good for You
+It is easy to see the consistency rule as a restriction. But it is actually a filter that protects your long-term success.
+Without Consistency Rule
+Pass in 1-2 days on luck. High failure rate on funded accounts. Edge was never proven. Account lost within a week.
+With Consistency Rule
+Prove your edge works across different market conditions, different days, and different emotional states. Stay funded for months.
+DayTraders.com's approach is deliberate. The evaluation builds the habits that the funded phase requires. If you can pass with the consistency rule, you can trade funded with it. No adjustment needed. No surprises.
+The rule builds the habits. The habits build the income.
+Why Traders Fail
+View Pricing
+×
+LIMITED TIME ONLY
+Get a FREE, 100% Off demo trading account!
+Try out the new ArcTrader platform at no cost today.
+Claim Now!
+Secure Platform
+Full data encryption, with security in transit and at rest to prevent breaches.
+DayTraders.com
+2300 W Sahara Ave. Suite 800, Las Vegas, Nevada 89102
+Customer First
+We put your needs first in everything we do, ensuring a transparent and responsive
+experience.
+Access funded trading accounts, manage risk within defined rules, and withdraw your earnings.
+DayTraders.com provides the infrastructure for disciplined futures traders.
+Links
+Logos
+Promo
+Essentials
+Services
+Affiliates
+Community
+Partners
+Explore
+About
+Careers
+Bounty
+Contact Us
+DayTraders.com provides
+simulated trading environments for educational purposes. Evaluation and Pro accounts are simulated and
+do not involve real capital. Live funded accounts through the S2L program involve real market execution.
+All income figures shown on this site are hypothetical illustrations that assume consistent
+profitability. Most traders do not achieve consistent profits. Past simulated performance is not
+indicative of future results. Trading futures involves significant risk of loss. Only trade with capital
+you can afford to lose. DayTraders.com does not provide financial advice. Please review the full
+disclosures below.
+Disclosures
+Risk
+Disclosure
+Hypothetical
+Performance
+Available
+Instruments
+Evaluation
+Disclaimer
+Customer
+Compensation
+© 2026 DayTraders.com . All rights reserved.
+Privacy
+Terms
+EU UK Data
+Cookies
+Risk Disclosure
+DayTraders.com provides educational resources and access to simulated trading environments. We do not
+facilitate the deposit or trading of actual funds. Participation in the futures markets involves
+significant risk, and it is essential that individuals fully understand these risks before engaging
+in trading activities elsewhere. Below are key points regarding the risks.
+Educational Purpose Only: All content and resources provided by DayTraders.com, including simulated
+trading environments, are for educational purposes. We do not offer real-money trading accounts, and
+no actual funds are deposited with or traded through our platform.
+High Risk of Loss in Actual Trading: While DayTraders.com offers simulated trading environments,
+actual futures and derivatives trading conducted through a brokerage firm involves significant risk.
+In real trading, substantial financial loss can occur. Participants should only trade with capital
+they can afford to lose.
+Leverage and Margin Risks: In actual trading environments, using leverage or trading on margin can
+significantly magnify both gains and losses. Traders should be aware of these risks and fully
+understand the implications of margin before engaging in real-money trading outside DayTraders.com.
+Market Volatility: The financial markets are subject to rapid and unpredictable changes. While the
+simulated environment on DayTraders.com may help users practice strategies, real market volatility
+can lead to substantial losses. This volatility can be influenced by economic data, geopolitical
+events, and other factors beyond anyone's control.
+No Guarantees of Profit: DayTraders.com does not guarantee profit or success in actual trading. Past
+performance in our simulated environment, whether favorable or not, is not indicative of future
+results when trading real funds in the marketplace.
+Technological and Operational Risks: While DayTraders.com provides a stable simulated environment for
+educational purposes, participants in actual trading may experience technical failures such as
+system errors, connection issues, or trade execution delays, which can result in losses.
+Personal Responsibility: Individuals are responsible for their own trading decisions. Any use of
+educational content or simulated trading provided by DayTraders.com should not be considered
+financial advice or an endorsement of specific trading strategies (simulated or actual).
+Participants should conduct thorough research and consult with professional financial advisors
+before engaging in actual trading.
+Close
+Hypothetical Performance Disclosure
+The performance results displayed on DayTraders.com are based on hypothetical or simulated trading
+activities and do not represent actual trading results. Below are important points to consider
+regarding the limitations of hypothetical performance results.
+Simulated Trading Environment: All trading conducted on DayTraders.com is within a simulated,
+educational environment. No real funds are used, and all performance outcomes are hypothetical in
+nature. These results may differ significantly from real-world trading outcomes where actual capital
+is at risk.
+Limitations of Hypothetical Results: Hypothetical results are based on controlled conditions and do
+not reflect real market conditions, such as slippage, order execution delays, or liquidity issues.
+As such, these results may not accurately represent the challenges of actual trading.
+No Guarantee of Future Performance: Hypothetical performance, whether positive or negative, should
+not be interpreted as an indication of future success in real-money trading. Actual trading results
+are influenced by many unpredictable factors, including market conditions and individual
+decision-making.
+Psychological Factors: Simulated trading does not account for the psychological pressures experienced
+when trading with real funds. In actual trading, emotions such as fear and greed can affect
+decision-making, which is not reflected in the hypothetical results from DayTraders.com's simulated
+environment.
+Educational and Demonstration Purposes Only: All hypothetical performance results displayed on
+DayTraders.com are for educational and demonstration purposes. They do not constitute an endorsement
+of any particular trading strategy or financial product. Participants should assess any trading
+strategy based on their own financial situation and risk tolerance before engaging in real-world
+trading.
+By using DayTraders.com, you acknowledge that all trading activities are simulated and that
+hypothetical performance results may not reflect actual future trading performance.
+Close
+Available Instruments
+DayTraders.com strictly limits the instruments available for trading to ensure consistency with our
+educational goals and supported platforms. Customers are permitted to trade only simulated futures
+contracts listed on the following regulated exchanges: the Chicago Mercantile Exchange (CME), the
+Commodity Exchange (COMEX), the New York Mercantile Exchange (NYMEX), and the Chicago Board of Trade
+(CBOT). These exchanges offer a broad range of futures products, providing ample opportunities for
+traders to engage in diverse market sectors.
+Please note that trading in other financial instruments, including but not limited to spot currencies
+(Forex), contracts for difference (CFDs), individual stocks, options, and cryptocurrencies, is
+strictly prohibited within the DayTraders.com ecosystem. Our programs, vendors, and platforms do not
+support or facilitate trading in these instruments, as they fall outside the scope of our
+futures-focused educational services and evaluation programs.
+This restriction is in place to maintain a clear focus on futures trading, as well as to ensure
+compliance with the guidelines established by our service providers and the regulatory frameworks
+governing the markets we support. Engaging in simulated trading activities outside these approved
+instruments is a violation of our policies and may result in account suspension or termination.
+Close
+Evaluation Disclaimer
+Pass rates for the DayTraders.com evaluation program vary by program type, account size, market
+conditions, and individual trader experience. Not all participants who purchase an evaluation will
+pass. The evaluation is designed to be challenging and to assess a trader's ability to generate
+consistent simulated profits while adhering to defined risk management rules. Participants should
+not interpret any historical pass rate as a guarantee or prediction of their individual likelihood
+of success.
+Our Evaluation and Pro Level Account programs are structured to simulate live market conditions as
+accurately as possible. This includes incorporating commissions, fees, and other relevant factors
+that traders would encounter in an actual trading environment. The primary purpose of the evaluation
+is to assess a trader's skill, discipline, and strategy in a realistic and controlled setting. It is
+important to emphasize that these programs are designed as comprehensive tests of trading
+competency, not as training platforms. Participants are expected to have a solid foundation in
+trading principles and risk management strategies before attempting the evaluation.
+Passing the evaluation requires a high level of proficiency and is intentionally challenging, even
+for traders with significant experience. The evaluation is structured to measure a trader's ability
+to adhere to risk management rules, execute trades effectively, and maintain consistency over time.
+Due to its demanding nature, this program is not recommended for individuals with little or no
+trading experience. Novice traders may find the evaluation process particularly difficult and are
+encouraged to seek further education and practice before considering participation.
+We recommend that individuals carefully evaluate their level of trading knowledge, experience, and
+preparedness prior to enrolling in the evaluation program. While the evaluation can serve as a
+valuable benchmark for experienced traders, it is not intended as a learning tool for beginners. By
+participating, traders acknowledge the inherent challenges and accept full responsibility for their
+trading decisions and performance outcomes.
+Close
+Customer Compensation Disclosure
+All trading results and performance metrics displayed in relation to customer compensation should be
+considered hypothetical in nature and may not accurately represent outcomes that would be achieved
+in live trading environments. Pro Level Accounts referenced on this platform may consist of
+simulated, live, or mirrored trading accounts, and the results presented are intended for
+illustrative purposes only.
+Please be aware that testimonials, account performances, and payout figures featured on this website
+are not necessarily indicative of the typical experiences of all customers. These testimonials are
+individual accounts and should not be relied upon as a predictor of future performance or success.
+Past performance is not a guarantee of future results, and trading involves inherent risks that may
+result in substantial financial loss.
+We encourage all participants to carefully evaluate their own risk tolerance and trading objectives
+before engaging in any trading activities. The results showcased are not intended to provide
+assurances or expectations of specific outcomes for other customers.
+Close

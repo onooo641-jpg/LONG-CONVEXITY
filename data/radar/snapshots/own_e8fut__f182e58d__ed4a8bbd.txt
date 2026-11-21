@@ -1,0 +1,84 @@
+Payout request from E8 Zero | E8 Markets Help Center Futures Skip to main content
+E8X Dashboard E8 Markets Website Classic Markets & Perpetuals Helpcenter Čeština English हिन्दी Português Español English
+E8X Dashboard E8 Markets Website Classic Markets & Perpetuals Helpcenter Čeština English हिन्दी Português Español English
+Search for articles...
+All Collections
+Payouts
+Payout request from E8 Zero
+Payout request from E8 Zero
+E8 Zero
+July 14, 2026
+Before you request a payout from E8 Zero Starter or E8 Zero Max, make sure to understand how the payout mechanism works with the combination of EOD Dynamic Drawdown , because in certain situations, you need to leave a buffer.
+Payout Request:
+The moment your first payout is processed, the EOD loss level moves up to your initial balance and stays there permanently.
+Every payout request reduces your balance
+Your buffer is always the gap between your current balance and initial balance.
+Example with $100,000 account (profit below/same as payout cap of $5,000)
+Scenario
+Balance Before
+Payout
+New Balance
+Loss Level
+Buffer
+Result
+Safe
+$105,000
+$2,500
+$102,500
+$100,000
+$2,500
+✅
+Risky
+$105,000
+$4,000
+$101,000
+$100,000
+$1,000
+⚠️
+Full
+$104,000
+$4,000
+$100,000
+$100,000
+$0
+❌ BREACHED
+Example with $100,000 account (profit above payout cap of $5,000)
+Scenario
+Balance Before
+Payout
+New Balance
+Loss Level
+Buffer
+Result
+Safe
+$106,000
+$3,500
+$102,500
+$100,000
+$2,500
+✅
+Full
+$106,000
+$5,000
+$101,000
+$100,000
+$1,000
+⚠️
+Coach Play:
+​
+Always calculate your remaining buffer before requesting a payout. The loss level is permanently locked at your initial balance after the first payout — never request an amount that brings your balance to that level.
+​ Current Balance − Payout Amount = New Remaining Balance
+​ New Remaining Balance must stay above $100,000 (your initial balance)
+​
+A good rule of thumb: leave at least $2,000 above your loss level after every payout to give yourself room to trade.
+What happens with the remaining amount I left in the account? Can I request it later?
+​ ​
+The amount you request from the account is yours, but the amount from the previous payout cycle acts only as a buffer.
+​
+​ Let's say your payout cap is $7,000, and you make $10,000 profit with an 80% payout on the account.
+​
+​ $7,000 is being requested; $3,000 is left there as a buffer, and you can not request this amount, and it is not being counted towards your next payout. You will keep $5,600 from the $7,000 amount, as 80% is the payout.
+​
+The next day, for the another payout request, you would have to simply make at least another $100.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+The information provided here is for general informational purposes only and should not be considered financial advice.

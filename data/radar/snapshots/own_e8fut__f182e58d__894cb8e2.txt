@@ -1,0 +1,67 @@
+What is Payout On Demand? | E8 Markets Help Center Futures Skip to main content
+E8X Dashboard E8 Markets Website Classic Markets & Perpetuals Helpcenter Čeština English हिन्दी Português Español English
+E8X Dashboard E8 Markets Website Classic Markets & Perpetuals Helpcenter Čeština English हिन्दी Português Español English
+Search for articles...
+All Collections
+Payouts
+Payout rules (On-Demand)
+What is Payout On Demand?
+What is Payout On Demand?
+Updated over a week ago
+Table of contents
+Most platforms make you wait. Payout On Demand does not.
+​
+Once you reach the SimFi Performance Account stage on E8 One or E8 Signature and meet the eligibility conditions , you can request a payout at any time - no fixed schedule, no unnecessary waiting.
+​ Payout On Demand was introduced to reward the right trading behaviours:
+Consistent performance over time
+Disciplined risk management
+Clean, verifiable performance data
+How it works:
+To take advantage of the Payout On Demand feature, you must satisfy a few rules (which vary depending on the product you have chosen).
+On demand for For the E8 One :
+40% Best Day rule : With a 40% best-day rule, you must ensure that no single trading day exceeds more than 40% of your total generated profits.
+Your net profit (payout) must be greater than 50% of your daily drawdown.
+Example: If you have a $100,000 account and your daily drawdown is 4%, the minimum amount required for a payout is $2,000.01
+The earliest first payout (E8 One) can be requested is 3 days from the start of your trading period in the performance stage. This is not a separate waiting rule - it is simply how the Best Day Rule works in practice, as 3 days is the fastest the math can work in your favour.
+On-demand does not apply to E8 Pro and E8 Zero models, as these products have daily payouts. With E8 Pro, the minimum is 1%, and with E8 Zero, it's $100.
+On-demand rules for the E8 Signature:
+35% Best Day rule : With a 35% best-day rule, you must ensure that no single trading day exceeds more than 35% of your total generated profits.
+Minimum payout is $100.
+​
+Amounts are taken from your net profit. Meaning, with 80% payout, you need to request at least $125.
+Minimum profitable days between each payout: 5 (does not apply for first payout)
+A profitable day is considered as a day where the realized closed PnL equals to 0.3% or more.
+You also have to achieve profitable days between each payout cycle. After requesting a payout, your previously achieved profitable trading days will reset to 0.
+Payout buffer : Before you can start requesting payout, you need to leave a buffer in your account in the same size as your EOD Dynamic Drawdown.The buffer can not be requested. The reason for this is to protect trades from violating EOD by requesting full profit from the account.
+​
+If your EOD is 4% and your initial balance $100,000, the buffer is $4000.
+Payout caps -Payout caps determine how much you can request in a single payout.
+Account size
+$25,000
+$50,000
+$100,000
+$150,000
+1. Payout
+$1,000
+$1,250
+$2,000
+$3,000
+2. Payout
+$1,000
+$1,250
+$2,000
+$3,000
+3. Payout
+$1,250
+$2,000
+$3,000
+$3,500
+4. Payout
+$1,250
+$2,000
+$3,000
+$3,500
+The earliest first payout (E8 Signature/ E8 One) can be requested is 3 days from the start of your trading period in the performance stage. This is not a separate waiting rule - it is simply how the Best Day Rule works in practice, as 3 days is the fastest the math can work in your favour.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+The information provided here is for general informational purposes only and should not be considered financial advice.

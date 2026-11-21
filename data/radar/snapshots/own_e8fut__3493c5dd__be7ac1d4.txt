@@ -1,0 +1,95 @@
+Stop Trading the Wrong Contract Month | E8 Markets Help Center Futures Skip to main content
+E8X Dashboard E8 Markets Website Classic Markets & Perpetuals Helpcenter Čeština English हिन्दी Português Español English
+E8X Dashboard E8 Markets Website Classic Markets & Perpetuals Helpcenter Čeština English हिन्दी Português Español English
+Search for articles...
+All Collections
+Trading Platforms
+Stop Trading the Wrong Contract Month
+Stop Trading the Wrong Contract Month
+Front Month, Expiration, Rollover
+October 1, 2026
+You might have already noticed that each symbol comes with a number and a letter in its name. The first two letters, "NQ," indicates name of the instrument (E-mini NASDAQ100), while the third letter indicates the contract month, and the number indicates the year.
+The key difference between each symbol is the specific date at which each contract expires and settles.
+The contract closest to expiration has the highest trading volume and liquidity.
+Pricing can differ between contracts.
+Which one is the correct Month Contract that I must trade?
+To easily identify which contract is the best to trade right now, it is based on the current liquidity (Volume). In the Table below, you can find links to each instrument where you can track the volume of each month's contract.
+EMD / E-mini S&P MidCap 400
+6A / Australian $
+CL / Crude Oil
+ES / E-mini S&P 500
+M6A / Micro AUD/USD
+MCL / Micro Crude Oil
+MES / Micro E-mini S&P
+6B / British Pound
+QM / E-mini Crude Oil
+NKD / Nikkei
+M6B / Micro British Pound
+NG / Natural Gas
+NQ / E-mini NASDAQ 100
+6C / Canadian $
+QG / E-mini Natural Gas
+MNQ / Micro E-mini NASDAQ 100
+6E / Euro FX
+RTY / E-mini Russell 2000
+E7 / E-mini Euro FX
+HO / Heating Oil
+M2K / Micro E-mini Russell 2000
+M6E / Micro Euro
+ZC / Corn
+MBT / Micro E-mini Bitcoin
+MCD / Micro CAD/USD
+ZW / Wheat
+MET / Micro E-mini Ether
+6J / Japanese Yen
+ZS / Soybeans
+GC / Gold
+6S / Swiss Franc
+ZM / Soybean Meal
+MGC / Micro Gold
+6M / Mexican Peso
+ZL / Soybean Oil
+SI / Silver
+6N / New Zealand $
+LE / Live Cattle
+HG / Copper
+YM / Mini-DOW
+HE / Lean Hogs
+PL / Platinum
+MYM / Micro Mini-DOW
+PA / Palladium
+Make sure you are always trading the Front Month Contract, which is the one with the highest Volume. We are not responsible if you fail account due to trading the wrong contract month. Trading in the incorrect Month Contract may also result in termination of your account or deduction of profit made from trades on the incorrect contract.
+In the example below, for the Micro Bitcoin instrument, the Front Month Contract is MBTG6. This might change in the future, once the contract is heading to expiration date and the volume starts to decrease.
+Futures contract month code s table
+Code
+Month
+Code
+Month
+H
+March
+X
+November
+M
+June
+J
+April
+U
+September
+K
+May
+Z
+December
+N
+July
+F
+January
+Q
+August
+G
+February
+V
+October
+​
+​
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+The information provided here is for general informational purposes only and should not be considered financial advice.

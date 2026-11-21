@@ -1,0 +1,24 @@
+Available Trading platforms for Futures | E8 Markets Help Center Futures Skip to main content
+E8X Dashboard E8 Markets Website Classic Markets & Perpetuals Helpcenter Čeština English हिन्दी Português Español English
+E8X Dashboard E8 Markets Website Classic Markets & Perpetuals Helpcenter Čeština English हिन्दी Português Español English
+Search for articles...
+All Collections
+Trading Platforms
+Available Trading platforms for Futures
+Available Trading platforms for Futures
+Offered trading platforms for simulated trading
+Updated over a month ago
+Table of contents
+At this moment, Tradovate is the only available trading platform for Futures SimFi trading. To see how to use and log into the trading platform, you can check the articles below:
+​
+​ How to log into the Tradovate trading platform
+​
+​ How to use the Tradovate Trading Platform
+Hedging account vs netting account
+Hedging and netting are systems that platforms use to manage multiple trades on the same instrument. Right now, all Forex and Crypto Challenges and Performance accounts are using a hedging system , while Futures products are using a netting system.
+With the Netting system, if you hold a position and open a new position in the opposite direction with the same volume, the new position will effectively cancel out the original position.
+With the hedging system , if you open a buy position for EUR/USD with a volume of 1 and later on you open a sell position for the same instrument, same size, both positions are active, resulting in 1 lot of EUR/USD bought and 1 lot sold, effectively locking the trader's positions. If you later open another position in the same direction as the initial buy, a new order will appear in the Trade section, reflecting the new price and volume.
+Note: Apart from the Hedging system, there is also a Hedging strategy with the same logic. While the platform allows multiple positions, opening equal Long and Short trades on the same instrument across multiple accounts is strictly prohibited. You are only permitted to hedge positions within the same single Challenge or Performance account.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+The information provided here is for general informational purposes only and should not be considered financial advice.

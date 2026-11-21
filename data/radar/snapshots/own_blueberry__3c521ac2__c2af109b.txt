@@ -1,0 +1,56 @@
+Max Contracts by Account Size | Blueberry Futures Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Noto Sans".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Sign Up Login English हिन्दी 日本語 Español English
+Sign Up Login English हिन्दी 日本語 Español English
+Search for articles...
+All Collections
+Trading Rules & Risk Management
+Trading Limits & Restrictions
+Max Contracts by Account Size
+Max Contracts by Account Size
+Explains the maximum number of mini and micro contracts each account size can hold, and how the system enforces these limits.
+December 21, 2025
+Table of contents
+To keep risk controlled and account behavior consistent, each Blueberry Futures account size has a built-in cap on how many contracts you can hold at one time.
+These limits are enforced by the platform , so if you try to exceed them, your order will be rejected or not fully accepted . You won’t be able to open more than the allowed size.
+Contract Limits by Account Size
+$25,000 account
+Max 1 Mini Contract
+Max 10 Micro Contracts
+$50,000 account
+Max 2 mini contracts
+Max 20 micro contracts
+$100,000 account
+Max 6 mini contracts
+Max 60 micro contracts
+$150,000 account
+Max 9 mini contracts
+Max 90 micro contracts
+These caps apply to your net open exposure on that account.
+The system continuously checks your open positions and prevents you from going beyond these limits.
+What this means in practice
+If you are at your max size and try to add more contracts, the platform will block the extra size .
+You may still scale in (DCA) within these limits, as long as:
+Your total contracts stay under the cap, and
+You respect the separate DCA & Position Stacking rule (max 3 entries per instrument/direction).
+Examples
+50K account – minis
+You open 2 ES minis → system allows it.
+You try to buy a 3rd ES mini → system will not allow you to exceed 2 minis.
+100K account – micros
+You build up to 90 total micros on allowed instruments → system allows it.
+You try to add more micros beyond that → extra size is blocked .
+Relationship to the DCA & Position Stacking Rule
+The Max Contracts limits are enforced automatically by the system.
+However, the DCA & Position Stacking rule is a behavior rule , not a hard platform cap:
+You can only enter the same instrument and direction up to 3 times (1 initial entry + 2 adds), even if the system would technically let you click more.
+For details on that behavior rule, see:
+DCA & Position Stacking Limits .
+Related Articles
+What are the Maximum Position Limits (Contract Caps)?
+Ascent Account Specs: Rules & Targets
+Are there limits on DCA? (Stacking)
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Blueberry Futures

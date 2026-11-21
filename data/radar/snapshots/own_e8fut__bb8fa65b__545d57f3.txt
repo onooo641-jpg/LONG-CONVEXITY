@@ -1,0 +1,31 @@
+How to properly secure my account? | E8 Markets Help Center Futures Skip to main content
+E8X Dashboard E8 Markets Website Classic Markets & Perpetuals Helpcenter Čeština English हिन्दी Português Español English
+E8X Dashboard E8 Markets Website Classic Markets & Perpetuals Helpcenter Čeština English हिन्दी Português Español English
+Search for articles...
+All Collections
+General Questions
+How to properly secure my account?
+How to properly secure my account?
+2FA security and changing Trading Platform password.
+May 28, 2026
+Table of contents
+As a user who wants to become a performance trader, you should pay close attention to the security. Users are responsible for ensuring that no one gets into their accounts. Users should not share their login credentials with anyone else.
+​
+Setting up 2FA adds an extra layer of protection and will ensure that only you have access to your data and credentials.
+If you have any suspicion that someone is using your account, please let us know as soon as possible. Late complaints will not be accepted. You can be sure that your credentials and account details are safe with us.
+How to set up 2FA:
+First, log in to your dashboard and then go to account settings.
+Then click on the User settings.
+In the upper right corner, turn on your two-factor security.
+After that, you can scan the QR code below with an authentication application, such as Google Authenticator (Or enter the code below).
+In the last step, you need to type the code created by the authenticator app, and your 2FA is set up.
+​
+(This is only an example, do not use the QR code from this picture)
+If you need to remove 2FA and you are having trouble with it, kindly contact our team at support@E8markets.com
+How to change the Trading Platform password.
+In the account overview (Forex in this example), you will click on the key symbol on which you want to change the Trading Platform password. Next to your password, you can see a "regenerate" button.
+If you want to change your Trading Platform password, you need to have 2FA security.
+​
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+The information provided here is for general informational purposes only and should not be considered financial advice.

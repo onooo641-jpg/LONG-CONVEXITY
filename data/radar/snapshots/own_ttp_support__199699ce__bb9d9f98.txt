@@ -1,0 +1,129 @@
+Futures Prime Platforms & Conditions | The Trading Pit Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Poppins".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Website Community Client Area العربية English Deutsch Italiano 日本語 Bahasa Melayu Português 简体中文 Español Türkçe Tiếng Việt English
+Website Community Client Area العربية English Deutsch Italiano 日本語 Bahasa Melayu Português 简体中文 Español Türkçe Tiếng Việt English
+Search for articles...
+All Collections
+FUTURES
+Futures Prime
+Futures Prime Platforms & Conditions
+Futures Prime Platforms & Conditions
+Platforms, market data, commissions and instruments for Futures Prime.
+Updated over 2 weeks ago
+Table of contents
+Which Platforms Can I Use For Futures Prime?
+Futures Prime is supported on ATAS, Quantower, Volsys and R/Trader, plus Tradovate, NinjaTrader and TradingView.
+Some platforms are compatible but unsupported and need your own licence (Sierra Charts, MotiveWave, Jigsaw and Volfix). Mobile trading is available.
+Can I use Replikanto with NinjaTrader?
+Yes, but only Replikanto FlowBots – Compliance Edition is permitted. Standard, modified, or any other non-compliance versions of Replikanto are not allowed.
+How Do I Set Up My Platform?
+All Futures Prime trading is on a demo account.
+To connect, log in to your chosen platform with the demo credentials The Trading Pit sends you — your login/username, password and the server (system) to connect to.
+Use the connection guide for your platform, and the vendor’s own help for using the platform itself:
+Platform
+How To Connect
+Platform Help
+Tradovate
+How To Connect
+Platform Help
+NinjaTrader
+How To Connect
+Platform Help
+Quantower
+How To Connect
+Platform Help
+ATAS
+How To Connect
+Platform Help
+R/Trader Pro (Rithmic)
+How To Connect
+Platform Help
+TradingView
+How To Connect
+Platform Help
+Choosing your connection — when a platform asks which system or server to connect to, choose The Trading Pit’s connection.
+For Rithmic, select The Trading Pit gateway specifically — not a generic Rithmic system — so you’re routed to the correct servers with your demo account.
+If login fails — first check you’re using the correct credentials and server for your account; if it still fails, contact our Trader Support team.
+What About Market Data?
+With futures, pricing comes directly from the exchange in real time. Level 1 (top of book) is included free on all accounts; deeper market depth (Level 2) is a paid monthly subscription:
+Level 1 (Top of Book) — the highest bid and lowest ask, either across multiple exchanges (NBBO) or on a single exchange.
+Level 2 (Depth of Book) — multiple price levels of bids and asks. Available as Market-by-Price (aggregated volume at each price) or Market-by-Order (every individual order at each level).
+​
+Level 1 data remains active as long as your account is open.
+Which Provider Your Account Uses
+You choose your trading platform at purchase — the market data provider is set automatically from that platform, not chosen separately.
+By default accounts use DxFeed, except R/Trader Pro (which uses Rithmic) and Tradovate/NinjaTrader (which use Tradovate).
+Once your account is created, the platform and data provider can’t be changed.
+Pricing
+Data Package
+Price
+Covers
+Level 1 (Top of Book)
+Free
+Included by default on all accounts
+Level 2 — CME
+$16/mo
+Market depth for CME instruments — E-mini S&P 500, E-mini Nasdaq, Eurodollar and other popular CME contracts
+Level 2 — Comprehensive
+$41/mo
+Market depth for CME, NYMEX, COMEX and CBOT — Gold, Crude Oil, agricultural products, Dow Jones and equity index futures
+EUREX
+€25/mo
+FDAX (DAX Index), Euro Stoxx 50, Bund Futures and other leading European contracts
+Subscriptions are valid for all active accounts and expire at the end of the month .
+Professional vs Non-Professional
+When you subscribe in your dashboard, select Non-Professional status.
+Professional status is charged significantly higher fees.
+This applies to DxFeed, Rithmic and Tradovate data.
+What Are The Commissions?
+Standard and mini contracts: $0.50 per contract.
+Micro contracts: $0.20 per contract, except Micro Bitcoin at $0.50.
+Which Instruments Can I Trade?
+Futures Prime covers a wide range of instruments across several exchanges, including
+Currency futures (e.g. 6E, 6B, 6J).
+Energy (CL, NG, RB).
+Equity indices (ES, NQ, YM, RTY and their micros).
+Metals (GC, SI, HG).
+Agriculture (ZC, ZS, LE), interest rates.
+Micro crypto (MBT, MET).
+European instruments (DAX/FDAX, EURO STOXX 50/FESX, Euro-Bund/FGBL).
+How Many Contracts Can I Trade?
+There is no minimum.
+The maximum depends on your account size
+$50K up to 5 standard / 50 micro
+$100K up to 10 / 100
+$150K up to 15 / 150
+The lower your current balance, the fewer contracts you can trade.
+Temporary Restrictions
+Energy: Crude Oil (CL), Natural Gas (NG), E-Mini Natural Gas (QG)
+Metals: Gold (GC), Silver (SI), Copper (HG), Platinum (PL)
+​
+Micro Commodity Position Limits (Micro Contracts Only)
+​
+$50k — Maximum Open Contracts: 2
+$100k — Maximum Open Contracts: 4
+$150k — Maximum Open Contracts: 6
+​
+Applies to the following Micro Products:
+​
+Micro Crude Oil (MCL)
+Micro Gold (MGC)
+Micro Silver (SIL)
+Micro Copper (MHG)
+Micro Natural Gas (MNG)
+​
+Our Risk Team is actively monitoring the overall geopolitical situation and its potential impact on the markets. Until conditions stabilize and tensions ease, the current restrictions and limitations will remain in place to help ensure a safe and secure trading environment for all our clients.
+We appreciate your understanding and will provide updates if there are any changes.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Risk Disclosure:
+All material published and disseminated by The Trading Pit should be considered as general information only. The information provided by the The Trading Pit or included herein is not intended to serve as (a) investment advice, (b) an offer or solicitation to buy or sell any securities, or (c) a recommendation, endorsement, or sponsorship of any security, company, or fund. Testimonials featured on the The Trading Pit’s website(s) may not reflect the experiences of other clients or customers and do not guarantee future performance or success. Using the information on the The Trading Pit’s website(s) is at your own risk. The Trading Pit, along with its partners, representatives, agents, employees, and contractors, does not accept any responsibility or liability for the use or misuse of such information.
+Trading leveraged instruments carries significant risk and is not suitable for all investors. Investors may lose all or more than their initial investment. Only risk capital—money that can be lost without affecting one’s financial security or lifestyle—should be used for trading, and only those with sufficient risk capital should engage in trading. This document is not a solicitation or an offer to buy or sell futures, options, or forex. Past performance does not necessarily predict future results.
+Hypothetical or simulated performance results have inherent limitations. Unlike an actual performance record, simulated results do not reflect real trading. Additionally, because these trades have not been executed, the results may have under- or overcompensated for the impact of certain market factors, such as lack of liquidity. Simulated trading programs are also typically designed with the benefit of hindsight. There is no guarantee that any account will achieve profits or losses similar to those shown.
+The Trading Pit does not offer Contracts for Difference to residents of certain jurisdictions including the USA, Canada and Russia. For a full list of restricted countries for our services please see our FAQs.
+This website is owned and operated by The Trading Pit Challenge GmbH with registration number FL-0002.693.417-1 and registered address at Heiligkreuz 6, 9490, Vaduz, Liechtenstein.
+The Trading Pit Challenge GmbH is part of The Trading Pit Group ("TTP Group") which provides the following services:
+The Trading Pit AG with registration number FL-0002.688.743-6 is the holding company of the Group.
+The Trading Pit Champions GmbH with registration number FL-0002.693.413-9 provides platform services to The Trading Pit Challenge GmbH
+The Trading Pit Limited with registration number ΗΕ 431291 provides business and administration services to the Group companies.
+© 2026 The Trading Pit Challenge GmbH. All Rights Reserved.

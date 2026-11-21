@@ -1,0 +1,45 @@
+Elite drawdown, daily loss limit and contracts | FuturesElite FAQ Skip to main content
+Back to Website Discord
+Back to Website Discord
+Search for articles...
+All Collections
+Elite accounts
+Elite drawdown, daily loss limit and contracts
+Elite drawdown, daily loss limit and contracts
+How the Max Loss Limit trails and locks, and how contract scaling works.
+October 18, 2026
+Table of contents
+End of Day trailing drawdown
+The Max Loss Limit is based on your closed balance at the end of each trading day.
+A profitable day can move it up. A losing day leaves it where it is. Intraday swings and open profit never move it.
+25K: once the account has made $1,000 of profit, the floor locks at $25,000 and stops trailing.
+50K, 100K, 150K: the floor locks at $100 above the starting balance.
+Close a day at or below the Max Loss Limit and the account is breached. A breach is final: reset the account or start a new challenge.
+Daily loss limit
+You choose at checkout, on every size: no daily loss limit (the default), or a soft-lock daily loss limit of $600 (25K), $1,200 (50K), $1,800 (100K) or $2,700 (150K). Choosing it lowers the price.
+If you choose it, it applies in the evaluation and once funded. The level is measured from the higher of your balance and equity at the previous daily close.
+A soft lock is not a breach. If your equity reaches it, trading is locked for 24 hours from that moment; the account stays open.
+Daily loss limit: on Elite only if you chose it at checkout; always on for Prime, Ultra and Oracle; Nitro and Instant have none.
+Contracts
+In the evaluation you have the full allowance from day one: 2, 4, 8 or 12 contracts. Once funded, contracts scale with profit:
+Size
+Contracts by profit on the account
+25K
+1 below $1,000 · 2 from $1,000
+50K
+2 below $2,500 · 3 from $2,500 · 4 from $3,499
+100K
+2 below $2,000 · 4 from $2,000 · 6 from $3,499 · 8 from $4,499
+150K
+3 below $2,500 · 6 from $2,500 · 9 from $4,499 · 12 from $5,499
+The limit counts contracts held at the same time across all instruments. Going over it is a rule breach.
+Related Articles
+Elite rules at a glance
+Elite checkout options
+Prime drawdown and Daily Loss Limit
+OLD Instant drawdown and staying active
+Instant Max Loss Limit and Daily Loss Limit
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+FuturesElite FAQ
+We run on Intercom

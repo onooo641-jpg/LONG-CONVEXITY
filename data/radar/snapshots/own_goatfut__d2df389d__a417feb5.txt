@@ -1,0 +1,73 @@
+IP, VPS and accounts | Goat Funded Futures FAQ's
+Help Center / Rules / IP, VPS and accounts
+IP, VPS and accounts
+IP address policy VPS Accounts and sharing
+IP Address Policy
+During the Evaluation / Challenge
+The geographic region of the IP you use to purchase a challenge on https://app.goatfundedfutures.com should match the region you log in and trade from while completing it.
+What this means:
+The region used at purchase needs to align with where you actually trade.
+A notable mismatch between the two can trigger a security review.
+This is designed to prevent account sharing and block unauthorized access.
+On a Funded Account
+Once funded, the IP region you use to access the account needs to stay consistent.
+Monitoring & Verification
+If our Risk Management team detects a change in your IP region, we may contact you to confirm your identity. We might request proof of location, such as:
+A travel or boarding ticket
+A passport stamp
+A live video verification from your current location
+This only ever happens to protect your account.
+Travelling or Changing Location?
+If you plan to trade from a different region:
+Notify the support team in advance.
+Failing to let us know first may result in: A temporary account restriction
+Verification delays
+Interrupted trading
+Worth Knowing
+VPNs, proxies, or other location-masking tools may set off IP flags.
+Repeated, unexplained IP changes may lead to an account review or restriction.
+Account sharing is strictly prohibited.
+Updated 19 November 2026
+Can I use a VPS?
+No. The use of Virtual Private Servers (VPS), cloud-hosted machines, or any form of remote server to access or trade your GFF account is strictly prohibited — on both evaluation and funded accounts, with no exceptions.
+What exactly counts as a VPS or remote server?
+Any setup where your trading platform runs on a machine that is not your own local, physical device. This includes:
+Virtual Private Servers (VPS) from any provider, including trading-specific services (e.g. ChartVPS, NinjaTrader VPS partners, ForexVPS)
+Cloud computing instances (AWS, Google Cloud, Microsoft Azure, Vultr, Contabo, etc.)
+Dedicated servers or datacenter-hosted machines
+Remote desktop connections (RDP, AnyDesk, TeamViewer, Parsec) into any machine that is not physically yours
+Cloud PC services (e.g. Windows 365, Shadow PC)
+If your platform is running on hardware you cannot physically touch, it falls under this policy.
+Why does GFF prohibit VPS usage?
+VPS and remote server access undermine the integrity of our program in several ways:
+Account sharing and copy trading. Remote servers make it trivial for multiple people to access the same account, or for one operator to run coordinated strategies across many accounts — both of which are prohibited under our Terms & Conditions.
+Automation abuse. VPS environments are commonly used to run unattended automated systems 24/7, which conflicts with our requirement that you personally place and manage your trades.
+Identity and location masking. Datacenter IPs obscure who is actually trading and from where, which prevents us from meeting our compliance obligations, including restricted-country checks.
+Updated 11 August 2026
+In this tab
+How many accounts can I have?
+I want to buy 5 accounts, how do I trade them simultaneously?
+How many emails can I register?
+Can I share my account with someone else?
+How many accounts can I have?
+How many accounts can I have?
+You can hold funded accounts at the same time, subject to the following limits:
+EOD Challenge, 1-Day-Pass-Plan, Flex Challenge and Daily Payouts: up to 5 funded accounts each
+Instant and Instant Classic: up to 3 funded accounts
+The limits are counted separately for each product type, so they do not compete with each other. You can combine account types freely. For example:
+3 Instant accounts and 2 Flex funded accounts
+2 EOD funded accounts and 3 Daily Payouts funded accounts
+5 Daily Payouts funded accounts alongside 5 Flex funded accounts
+As long as you stay within the maximum for each product type.
+There is no limit on the number of evaluation accounts you may purchase.
+Updated 19 November 2026
+I want to buy 5 accounts, how do I trade them simultaneously?
+You can buy 5 accounts for a discounted bundle price on our checkout, and then you can indeed copy trades into all 5 accounts.
+On Daily Payouts, copy trading is permitted between your own Daily Payouts accounts only. Daily Payouts also has its own allowance of 5 funded accounts, counted separately from the other plans.
+On TradeSea you can use its built-in copier, SecureCopy, between your own accounts. Followers can copy at 2x or 3x the leader's size, so check that each follower stays inside the contract limit for its plan and size. See Can I trade on TradeSea?
+To set up copy trading varies depending on platform. We suggest you visit the help center of the relevant platform you are trading on to find out more on how to navigate it or set up certain processes.
+How many emails can I register?
+You can register only one email address with Goat Funded Futures. The email & name cannot be changed after signup. This email is used to link your trading accounts, and your Riseworks account if you are paid through Rise.
+Can I share my account with someone else?
+Your account is personal and non-transferable. Only the registered account holder may trade on the account. Sharing credentials or allowing others to trade on your behalf is a violation of our terms and will result in account termination.
+Back to top

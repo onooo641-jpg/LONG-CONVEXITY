@@ -1,0 +1,111 @@
+Payout caps and buffers for E8 Signature explained | E8 Markets Help Center Futures Skip to main content
+E8X Dashboard E8 Markets Website Classic Markets & Perpetuals Helpcenter Čeština English हिन्दी Português Español English
+E8X Dashboard E8 Markets Website Classic Markets & Perpetuals Helpcenter Čeština English हिन्दी Português Español English
+Search for articles...
+All Collections
+Payouts
+Payout rules (On-Demand)
+Payout caps and buffers for E8 Signature explained
+Payout caps and buffers for E8 Signature explained
+Updated over a week ago
+Payout caps and buffers are part of the payout requirements on the performance stage of E8 Signature.
+Payout buffer:
+​
+Before you can start requesting a payout, you need to leave a buffer in your account of the same size as your EOD Dynamic Drawdown. The buffer is in place to protect traders from violating EOD by requesting full profit from the account, and no matter how many payouts you request, the buffer will always stay there.
+​
+Payout caps for E8 Signature:
+Payout caps determine the maximum you can request in a single payout.
+Account size
+$25,000
+$50,000
+$100,000
+$150,000
+1. Payout
+$1,000
+$1,250
+$2,000
+$3,000
+2. Payout
+$1,000
+$1,250
+$2,000
+$3,000
+3. Payout
+$1,250
+$2,000
+$3,000
+$3,500
+4. Payout
+$1,250
+$2,000
+$3,000
+$3,500
+You can see the balance requirement for each account size and payout cycle in the tables below.
+​
+Please note that the last column in the following tables represents the minimum balance needed for the maximum payout you can request for each payout cycle, and you can still request with less balance as long as you fulfill the buffer requirements and minimum payout amounts.
+Balance requirement for first and second payout requests
+Account size
+Buffer
+Maximum available payout request (Payout cap)
+Minimum balance needed for maximum payout request
+$25,000
+$1,000
+$1,000
+$27,000
+$50,000
+$2,000
+$1,250
+$53,250
+$100,000
+$3,000
+$2,000
+$105,000
+$150,000
+$4,500
+$3,000
+$157,500
+Balance requirement for third payout requests
+Account size
+Buffer
+Maximum available payout request (Payout cap)
+Minimum balance needed for maximum payout request
+$25,000
+$1,000
+$1,250
+$27,250
+$50,000
+$2,000
+$2,000
+$54,000
+$100,000
+$3,000
+$3,000
+$106,000
+$150,000
+$4,500
+$3,500
+$158,000
+Balance requirement for fourth payout requests
+Account size
+Buffer
+Maximum available payout request (Payout cap)
+Minimum balance needed for maximum payout request
+$25,000
+$1,000
+$1,250
+$27,250
+$50,000
+$2,000
+$2,000
+$54,000
+$100,000
+$3,000
+$3,000
+$106,000
+$150,000
+$4,500
+$3,500
+$158,000
+On E8 Signature Futures, there is a maximum number of payouts per account: 4. This is the same rule as on E8 Zero, and this determines how many payouts you can request in total from one account. After you request 4 payouts, no matter the remaining buffer or how much you requested in total payouts, the cycle is closed, the account is deactivated, and you move on with the free Challenge of the same size.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+The information provided here is for general informational purposes only and should not be considered financial advice.

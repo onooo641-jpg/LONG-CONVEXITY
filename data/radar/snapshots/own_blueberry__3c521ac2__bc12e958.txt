@@ -1,0 +1,51 @@
+What trading behaviors are prohibited? | Blueberry Futures Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Noto Sans".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Sign Up Login English हिन्दी 日本語 Español English
+Sign Up Login English हिन्दी 日本語 Español English
+Search for articles...
+All Collections
+Trading Rules & Risk Management
+Prohibited Strategies & Ethics
+What trading behaviors are prohibited?
+What trading behaviors are prohibited?
+The trading conduct and platform behaviours prohibited on Blueberry Futures accounts, covering evaluation exploitation, market conduct, non-proprietary automated systems, third-party involvement and platform misuse.
+August 27, 2026
+Table of contents
+All trading on Blueberry Futures must reflect real-market standards and responsible behaviour. Anything that exploits the evaluation environment, misrepresents your performance, or would not be viable in live futures markets is prohibited. You are solely responsible for all activity on your account.
+The list below is not exhaustive.
+Exploiting the evaluation environment
+Exploiting the simulated or evaluation environment to achieve unrealistic outcomes, for example avoiding slippage, taking advantage of queue priority, or exploiting artificial fills.
+Using any strategy designed to manipulate the platform or Services, including exploiting price delays, display errors or other system irregularities.
+Attempting to circumvent rules or performance metrics in any way.
+Market conduct
+Trading outside of the best bid or offer.
+Trading using delayed or external data feeds.
+Trading within 2% of an exchange-imposed price lock limit .
+Coordinating trades across multiple accounts, connected or unconnected, to manipulate outcomes or offset risk.
+High-frequency, opposite-position or latency arbitrage strategies that would not be viable in a regulated live trading environment.
+Any tactic considered manipulative, uncommercial or irresponsible, at the sole discretion of Blueberry Futures.
+Automated trading
+Automated trading software is permitted only when it is proprietary. That means you built it, it runs your own strategy and risk decisions, and you disclosed it to us and received our consent before running it.
+Running a commercial or commercial-license system, whether paid or free.
+Running a system built for you by a developer, freelancer or third party on commission.
+Running a system obtained from a friend, a Discord group, a signal group or a marketplace.
+Running any automated system, including one you built yourself, without disclosing it and receiving our consent first.
+See Can I use EAs, Bots, or Copy Trading? for the full detail and how to get consent.
+Third-party involvement
+Trading on behalf of others, account sharing, or entering into third-party incentive arrangements.
+Subscribing to a signal service that executes trades on your behalf.
+Granting login access to any individual or service to trade your account.
+Platform and account misuse
+Posting, sharing or distributing unsolicited advertising, spam or promotional material.
+Using scraping, crawling or data harvesting tools to access or extract information from the platform.
+Using VPNs, VPSs or similar tools to obscure your location or activity. Use of such services may result in account closure and forfeiture of any profits.
+Accessing the platform to gather competitive intelligence, or for any activity that competes with Blueberry Futures.
+Harvesting, collecting or misusing the personal or contact information of other users.
+If you are unsure whether a specific strategy or tool is permitted, contact us before you use it.
+Related Articles
+Can I use EAs, Bots, or Copy Trading?
+What counts as "Gambling" or Prohibited Strategies?
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Blueberry Futures

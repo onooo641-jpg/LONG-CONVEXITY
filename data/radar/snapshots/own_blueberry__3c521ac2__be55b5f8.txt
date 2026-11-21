@@ -1,0 +1,63 @@
+Are there limits on DCA? (Stacking) | Blueberry Futures Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Noto Sans".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Sign Up Login English हिन्दी 日本語 Español English
+Sign Up Login English हिन्दी 日本語 Español English
+Search for articles...
+All Collections
+Trading Rules & Risk Management
+Trading Limits & Restrictions
+Are there limits on DCA? (Stacking)
+Are there limits on DCA? (Stacking)
+🧱 Yes. You may stack a maximum of 3 positions per trade idea.
+November 24, 2025
+Table of contents
+DCA & Position Stacking Limits
+We allow you to scale into trades (Dollar Cost Averaging), but we also limit how many times you can “stack” into the same idea. This keeps trading behavior controlled and prevents excessive, high-frequency averaging down.
+This is a behavior rule that applies independently of account size .
+The DCA / Stacking Rule
+You may enter the same instrument, same direction up to 3 times total for a single trade idea:
+1 initial entry
+Up to 2 additional adds (DCA entries)
+​
+This 3-entry limit is the same for:
+$50,000 accounts
+$100,000 accounts
+$150,000 accounts
+Even if your total contracts are under your Max Contracts limit, a 4th entry into the same instrument/direction for the same idea is considered stacking behavior and is not allowed.
+​
+Examples
+Example 1 – Rule respected (100K account)
+Plan max contracts: 6 minis
+Trader does:
+Buy 2 ES → add 2 ES → add 2 ES
+Result:
+3 entries total , 6 minis → ✅ Within DCA rule and ✅ within max contracts
+Example 2 – DCA behavior violation (any account size)
+Trader does:
+Buy 1 ES → add 1 ES → add 1 ES → add 1 ES
+Result:
+4 separate entries in the same direction on ES → ❌ violates DCA rule , even if total minis are still under the contract cap
+Example 3 – Contract violation despite OK DCA (50K account)
+50K account max: 2 minis
+Trader does:
+Buy 1 ES → add 1 ES → add 1 ES
+Result:
+3 entries (OK for DCA), but 3 minis open when the max allowed is 2 → ❌ breaches Max Contracts rule
+Why this rule exists
+The 3-entry limit is there to:
+Prevent uncontrolled “spray and pray” averaging behavior
+Keep trade data cleaner and more consistent for risk management
+Still allow planned scaling in without turning trades into a grid/martingale pattern
+You must always respect both :
+DCA & Position Stacking Limits (max 3 entries per idea), and
+Max Contracts by Account Size (2 / 6 / 9 minis or 20 / 60 / 60 micros).
+Related Articles
+What are the Maximum Position Limits (Contract Caps)?
+Ascent Account Specs: Rules & Targets
+Accelerated Account Specs: Rules & Targets
+Max Contracts by Account Size
+What counts as "Gambling" or Prohibited Strategies?
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Blueberry Futures

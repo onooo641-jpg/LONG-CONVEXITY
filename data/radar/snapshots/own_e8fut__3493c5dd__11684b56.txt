@@ -1,0 +1,40 @@
+How to use the Tradovate Trading Platform | E8 Markets Help Center Futures Skip to main content
+E8X Dashboard E8 Markets Website Classic Markets & Perpetuals Helpcenter Čeština English हिन्दी Português Español English
+E8X Dashboard E8 Markets Website Classic Markets & Perpetuals Helpcenter Čeština English हिन्दी Português Español English
+Search for articles...
+All Collections
+Trading Platforms
+Tradovate Platform Guide
+How to use the Tradovate Trading Platform
+How to use the Tradovate Trading Platform
+May 22, 2026
+Table of contents
+Unlock the full potential of the Tradovate WebTrader Platform with our Trading Guide.
+How to place a trade
+1. Select an instrument, either by adding a new one or selecting one of your previously added.
+2. Select contract size and execute the position based on the order type you want.
+How to close a trade
+1. Exit at Mkt & CXL
+​
+This option will close all pending orders and open positions on the instrument you have selected
+​
+2. If you have multiple positions open on different instruments, you can individually close pending orders and open positions by selecting either the Positions or orders tab (based on the type of order).
+3. After you right-click on the position, this window will pop up, where you can clsoe it.
+Buy Bid vs Sell Ask
+When you Buy Bid , you are opening an order limit for buy at the current bid price
+When you use a regular market buy, you will open a buy position at the current ask price
+When you Buy Ask , you are opening an order limit for sell at the current ask price
+When you use a regular market sell, you will open a sell position at the current bid price
+Troubleshooting Common Issues
+1: Failed accounts are not removed from the Tradovate or dashboard and appear to be active
+If you are trading on Signature Futures with the Tradovate platform, sometimes you can encounter a situation where you hit your drawdown limits, but the accounts still appear active in your dashboard in the section with active accounts.
+​
+That can also happen for the Tradovate platform.
+​
+In such instances, please contact our support@E8markets.com and provide the account numbers of accounts that should be removed.
+2: Newly issued accounts are in your dashboard, but can not be found in the Tradovate Trading platform.
+If you encounter something like this, please contact our support@E8markets.com and provide the account numbers of accounts that are not appearing in the Tradovate platform.
+​
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+The information provided here is for general informational purposes only and should not be considered financial advice.

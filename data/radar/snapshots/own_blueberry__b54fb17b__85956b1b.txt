@@ -1,0 +1,83 @@
+How is the payout cycle structured? | Blueberry Futures Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Noto Sans".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Sign Up Login English हिन्दी 日本語 Español English
+Sign Up Login English हिन्दी 日本語 Español English
+Search for articles...
+All Collections
+Payouts & Withdrawals
+How is the payout cycle structured?
+How is the payout cycle structured?
+🔄 Understand the cycle: 5 profitable days ($200+), account pauses, and repeatable consistency.
+December 21, 2025
+Table of contents
+The Payout Cycle Explained
+The payout cycle at Blueberry Futures is designed to reward consistent performance.
+To request a withdrawal, you must meet specific trading conditions, consistency rules, and profit thresholds.
+1. Eligibility Requirements
+Before a payout button becomes available, you must meet ALL of the following criteria within the current cycle:
+Active Trading: You must have traded at least 5 profitable days .
+Profitable Day Definition: A day is only counted if you generate a net profit of $200 or more . (Days with less than $200 profit do not count).
+Consistency Rule: No single day can account for more than a specific % of your total profit.
+Accelerated: Max 20% from a single day.
+Ascent: Max 35% from a single day.
+2. Limits & Buffer Rules
+You can only withdraw funds that are in excess of your Required Buffer, up to the Maximum Cap.
+Account Size
+Minimum Payout
+Maximum Payout (Cap)
+Required Buffer (Must remain after payout)
+$25,000
+$250
+$1,500
+$1,100
+$50,000
+$500
+$2,500
+$2,100
+$100,000
+$750
+$3,500
+$3,100
+$150,000
+$1,000
+$4,500
+$4,600
+3. How the Buffer Works (Real-Examples)
+Here is exactly how to calculate what you can withdraw based on your total profit.
+$25k Account Example
+Total Profit Made: $2,000
+The Rules: Max Cap ($1,500) | Buffer ($1,100)
+The Math: $2,000 (Profit) - $1,100 (Buffer) = $900 Available .
+Result: You can withdraw $900 right now.
+To get the full $1,500 max payout, you would need to build your profit to $2,600.
+$50k Account Example
+Total Profit Made: $4,000
+The Rules: Max Cap ($2,500) | Buffer ($2,100)
+The Math: $4,000 (Profit) - $2,100 (Buffer) = $1,900 Available .
+Result: You can withdraw $1,900 right now.
+To get the full $2,500 max payout, you would need to build your profit to $4,600.
+$100k Account Example
+Total Profit Made: $6,000
+The Rules: Max Cap ($3,500) | Buffer ($3,100)
+The Math: $6,000 (Profit) - $3,100 (Buffer) = $2,900 Available .
+Result: You can withdraw $2,900 right now.
+To get the full $3,500 max payout, you would need to build your profit to $6,600.
+$150k Account Example
+Total Profit Made: $9,000
+The Rules: Max Cap ($4,500) | Buffer ($4,600)
+The Math: $9,000 (Profit) - $4,600 (Buffer) = $4,400 Available .
+Result: You can withdraw $4,400 right now.
+To get the full $4,500 max payout, you would need to build your profit to $9,100.
+4. Account Pause & Reset
+Processing: Once you request a payout, your account is temporarily paused (read-only) while we process the funds. You can resume trading immediately after approval.
+Cycle Reset: After a payout, your "5 Day Count" resets. You must complete 5 new profitable days, maintain consistency within the new cycle to qualify for the next withdrawal.
+Related Articles
+Do you have payout caps?
+What is the minimum withdrawal amount?
+What is the Consistency Rule?
+When can I get my first Payout?
+How long does my payout take to arrive?
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Blueberry Futures

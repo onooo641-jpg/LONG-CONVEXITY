@@ -1,0 +1,28 @@
+Nitro drawdown: End of Day, then intraday | FuturesElite FAQ Skip to main content
+Back to Website Discord
+Back to Website Discord
+Search for articles...
+All Collections
+Nitro accounts
+Nitro drawdown: End of Day, then intraday
+Nitro drawdown: End of Day, then intraday
+Why the drawdown changes when you're funded.
+October 13, 2026
+Table of contents
+Evaluation: End of Day trailing
+Your Max Loss Limit moves only after each session close, based on your end-of-day balance. It never moves intraday and never moves down. A dip below it during the day is fine as long as you recover by the close; open positions count in the closing check.
+Sim Funded: intraday trailing
+Your Max Loss Limit trails your equity high in real time, not just at the close. A spike in open profit lifts the floor immediately, even if you give it back. Any moment below the floor is a breach.
+Once the floor reaches $100 above your starting balance ($25,100, $50,100, $100,100 or $150,100) it stops trailing and stays there.
+Live
+Live accounts go back to End of Day trailing, which stops at the starting balance.
+Related Articles
+Elite drawdown, daily loss limit and contracts
+Nitro rules at a glance
+Drawdown types explained
+Credits and pack rules
+Instant Max Loss Limit and Daily Loss Limit
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+FuturesElite FAQ
+We run on Intercom

@@ -1,0 +1,140 @@
+CFD Instant Rules | The Trading Pit Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Poppins".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Website Community Client Area العربية English Deutsch Italiano 日本語 Bahasa Melayu Português 简体中文 Español Türkçe Tiếng Việt English
+Website Community Client Area العربية English Deutsch Italiano 日本語 Bahasa Melayu Português 简体中文 Español Türkçe Tiếng Việt English
+Search for articles...
+All Collections
+CFDs
+CFD Instant
+CFD Instant Rules
+CFD Instant Rules
+Everything that applies to your CFD Instant account, in one place.
+Updated this week
+Table of contents
+These are the rules for your CFD Instant account. Because CFD Instant has no Challenge, they all apply throughout the Earning Phase. Two breach types are used:
+Soft Breach — the offending position is closed automatically, but your account stays active.
+Hard Breach — the account is closed.
+Exact limits depend on your account size and are shown in your Client Area.
+At A Glance
+Rule
+Type
+Maximum Drawdown — 6% Trailing
+Hard — Breaches The Account
+Daily Drawdown
+None On CFD Instant
+Max Position Loss Rule
+Soft Breach ×2, Then Hard Breach
+Consistency Rule
+Blocks Payouts (Not A Breach)
+Weekend holding
+Allowed, Except Commodities/Energies/Metals/Crypto
+News trading
+Allowed On All Account Types
+Maximum Accounts
+2 Per User
+Loss limits
+Maximum Drawdown (Hard Breach)
+A 6% trailing maximum drawdown based on your highest account balance. It trails your highest balance upward until it reaches your starting balance, then locks and stops trailing. If your balance falls to the drawdown level, the account is breached.
+Example:
+Starting balance $100,000 → initial drawdown level $94,000.
+Balance rises to $103,000 → level trails to $97,000.
+Balance rises to $106,000 → level reaches $100,000 (your starting balance) and locks there — it won’t trail higher even if your balance keeps rising.
+Daily Drawdown (None)
+CFD Instant accounts do not have a daily drawdown rule.
+Max Position Loss Rule (Soft ×2, Then Hard)
+Your potential loss across all open positions in the same symbol is capped at a percentage of your starting balance:
+​
+Account Size
+Maximum Risk
+$5,000 – $20,000
+1% of starting balance
+$50,000 – $100,000
+0.5% of starting balance
+For example, on a $10,000 account your maximum risk is $100, and on a $100,000 account it's $500.
+All open positions on the same symbol are counted together as one trade.
+If you've set a stop-loss, the platform uses it to calculate the potential loss; if you haven't, it uses your worst-case exposure.
+The first and second violations are a Soft Breach — the position closes automatically but your account stays active.
+A third violation is a Hard Breach — the account is closed.
+Consistency
+Consistency Rule (Blocks Payouts )
+Your biggest profitable day must not exceed a set percentage of your total profit before you request a payout. The percentage depends on your account size:
+Account Size
+Consistency Limit
+$5,000 – $20,000
+30%
+$50,000
+25%
+$100,000
+20%
+It does not breach the account — it simply delays payouts until you're within the limit.
+How to calculate it: divide your biggest profitable day by your limit.
+The result is the minimum total profit you need before requesting a payout.
+Example — biggest profitable day of $900:
+On a $10,000 account (30%): $900 ÷ 0.30 = $3,000 total profit required.
+On a $50,000 account (25%): $900 ÷ 0.25 = $3,600 total profit required.
+On a $100,000 account (20%): $900 ÷ 0.20 = $4,500 total profit required.
+If your total profit is below the required amount, keep trading until your biggest day is within your limit.
+Trading conditions
+Weekend Holding (Allowed, With Exceptions )
+Weekend holding is allowed on CFD Instant, except for Commodities, Energies, Metals and Crypto. Positions in those instruments are closed automatically 10 minutes before the Friday session closes. Affected instruments:
+Commodities: Cocoa, Coffee, Corn, Soybeans, Sugar, Wheat.
+Energies: Brent, WTI, Natural Gas.
+Metals: Gold, Silver, Copper, Palladium, Platinum.
+Crypto: ADAUSD, AVAXUSD, BCHUSD, BTCUSD, DOGEUSD, EOSUSD, ETHUSD, LINKUSD, LTCUSD, MATICUSD, SOLUSD, SUIUSD, TRUMPUSD, XLMUSD, XRPUSD.
+News Trading (Allowed)
+News trading is allowed on all CFD Instant account types, with no window restriction.
+Maximum Accounts
+Each user can have a maximum of 2 CFD Instant accounts.
+Scalping (Allowed)
+Allowed on CFD Prime, including trades held for under a minute.
+What is not allowed is High-Frequency Trading, where the majority of your trades last only a few seconds or less.
+A single trade that closes in seconds because your stop-loss or take-profit was hit won’t breach your account, but deliberately placing stops or targets extremely close to entry as a strategy is treated as prohibited HFT-style trading.
+Stop-Loss & Take-Profit (Allowed)
+Not mandatory on every trade, but strongly recommended.
+If the majority of your trades are placed without a stop-loss, the Risk Team may reach out and require you to use them.
+Expert Advisors (EAs) (Allowed, With Limits)
+Allowed, provided they don’t copy signals that aren’t yours, scalp against the rules, run latency/reverse/hedge/arbitrage or HFT, use emulators.
+VPS (Allowed)
+You may use a VPS to run your Expert Advisor.
+Hedging (Allowed, With Limits )
+Allowed within the same account for risk management (no hedging arbitrage).
+Hedging across two accounts — a BUY on one and a SELL on the other, including on correlated assets — is prohibited.
+Copy Trading (Allowed, With Limits .)
+Shared or mirrored trading between different people, or copying signals from an account that isn’t yours, is treated as a breach.
+Prohibited practices
+Gap Trading (Prohibited )
+Trading to profit from price gaps is not allowed. This includes:
+Opening trades within 2 hours of a market close when the market will stay closed for 2 or more hours, ahead of major news, earnings or events likely to cause a price gap.
+Holding positions through corporate earnings announcements or material corporate actions when they are exposed to significant price gaps, especially announcements made before the market opens or after it closes.
+Profits from this activity may be adjusted or removed, and the account may be terminated.
+Grid Strategies (Prohibited )
+Not allowed.
+A grid strategy involves placing multiple buy and/or sell orders at predetermined price intervals, creating a series or “grid” of positions around a price level.
+This includes systematically adding multiple positions as the market moves up or down to profit from price fluctuations rather than using independent trade setups.
+Martingale Strategies (Prohibited )
+Not allowed.
+A martingale strategy involves increasing the position size after a losing trade or series of losing trades, with the aim of recovering previous losses and generating a profit from a subsequent winning trade. This includes systematically increasing exposure as losses accumulate.
+High-Frequency Trading (HFT) (Prohibited )
+Not allowed on any account: executing multiple trades per second, dozens of trades within a minute, rapid-fire entries and exits, or any attempt to exploit speed, latency or feed delays.
+Violations result in account termination
+Gambling (Prohibited )
+Excessive risk-taking is prohibited — overleveraging, overexposure to one asset, one-sided bets without analysis, and hyperactive impulsive trading.
+Violations can lead to restricted trading privileges, revoked rewards, reduced leverage or account termination.
+See our full Gambling Policy for the details.
+Trading Device, IP & Network (Prohibited )
+An IP that changes every few days (e.g. while travelling) is fine.
+An IP that changes several times within the same day can raise suspicion of account sharing, which is forbidden.
+See our Trading Device, IP & Network Policy for the full rules on devices, IPs and shared access.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Risk Disclosure:
+All material published and disseminated by The Trading Pit should be considered as general information only. The information provided by the The Trading Pit or included herein is not intended to serve as (a) investment advice, (b) an offer or solicitation to buy or sell any securities, or (c) a recommendation, endorsement, or sponsorship of any security, company, or fund. Testimonials featured on the The Trading Pit’s website(s) may not reflect the experiences of other clients or customers and do not guarantee future performance or success. Using the information on the The Trading Pit’s website(s) is at your own risk. The Trading Pit, along with its partners, representatives, agents, employees, and contractors, does not accept any responsibility or liability for the use or misuse of such information.
+Trading leveraged instruments carries significant risk and is not suitable for all investors. Investors may lose all or more than their initial investment. Only risk capital—money that can be lost without affecting one’s financial security or lifestyle—should be used for trading, and only those with sufficient risk capital should engage in trading. This document is not a solicitation or an offer to buy or sell futures, options, or forex. Past performance does not necessarily predict future results.
+Hypothetical or simulated performance results have inherent limitations. Unlike an actual performance record, simulated results do not reflect real trading. Additionally, because these trades have not been executed, the results may have under- or overcompensated for the impact of certain market factors, such as lack of liquidity. Simulated trading programs are also typically designed with the benefit of hindsight. There is no guarantee that any account will achieve profits or losses similar to those shown.
+The Trading Pit does not offer Contracts for Difference to residents of certain jurisdictions including the USA, Canada and Russia. For a full list of restricted countries for our services please see our FAQs.
+This website is owned and operated by The Trading Pit Challenge GmbH with registration number FL-0002.693.417-1 and registered address at Heiligkreuz 6, 9490, Vaduz, Liechtenstein.
+The Trading Pit Challenge GmbH is part of The Trading Pit Group ("TTP Group") which provides the following services:
+The Trading Pit AG with registration number FL-0002.688.743-6 is the holding company of the Group.
+The Trading Pit Champions GmbH with registration number FL-0002.693.413-9 provides platform services to The Trading Pit Challenge GmbH
+The Trading Pit Limited with registration number ΗΕ 431291 provides business and administration services to the Group companies.
+© 2026 The Trading Pit Challenge GmbH. All Rights Reserved.

@@ -1,0 +1,39 @@
+How to log into the Tradovate trading platform | E8 Markets Help Center Futures Skip to main content
+E8X Dashboard E8 Markets Website Classic Markets & Perpetuals Helpcenter Čeština English हिन्दी Português Español English
+E8X Dashboard E8 Markets Website Classic Markets & Perpetuals Helpcenter Čeština English हिन्दी Português Español English
+Search for articles...
+All Collections
+Trading Platforms
+Tradovate Platform Guide
+How to log into the Tradovate trading platform
+How to log into the Tradovate trading platform
+August 20, 2026
+​ 1. Locate your account credentials
+After you purchase your challenge, you will be able to locate your account credentials in your dashboard.
+2. Log in to the trading platform
+Select the Trading platform and insert your login credentials and access the trading platform.
+​
+(Keep in mind that login credentials to our dashboard E8X is different from the login to the Tradovate trading platform.)
+Tradovate WebTrader
+Tradovate Windows Desktop
+Tradovate Mac Dekstop
+Tradovate Android Mobile
+​ Tradovate Iphone Mobile
+Always select Simulations as a Trading mode
+3. Start trading
+You are ready to go!
+​
+Before you start, make sure you have selected the proper account on which you want to place a trade. You can also check this guide on how to use the WebTrader Tradovate.
+​
+Having login issues with Tradovate?
+Make sure you are using the copy from the clipboard function
+​
+2. If you want to use Tradingview, you need to first log in to the Tradovate platform and accept all documents; otherwise, you won't be able to connect the account to the Tradingview platform.
+3. You are not allowed to change your username inside the Tradovate platform , because you won't be able to use credentials from the dashboard, which can cause login issues.
+If you have accidentally changed your username in the Tradovate platform, you need to change it back.
+​ This can be done in your profile under Tradovate Settings
+​
+The Username must be changed to the Login number that can be found in your dashboard under account credentials
+​
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+The information provided here is for general informational purposes only and should not be considered financial advice.

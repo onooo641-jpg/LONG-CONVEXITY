@@ -1,0 +1,140 @@
+Which assets can I trade at Blueberry Futures? | Blueberry Futures Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Noto Sans".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Sign Up Login English हिन्दी 日本語 Español English
+Sign Up Login English हिन्दी 日本語 Español English
+Search for articles...
+All Collections
+Trading Platforms & Connection
+Blackarrow
+Which assets can I trade at Blueberry Futures?
+Which assets can I trade at Blueberry Futures?
+November 20, 2025
+Ticker BA
+Ticker
+Market
+Asset Type
+Tick Size
+Tick value
+ESFUT
+ES
+E-Mini S&P 500
+E-mini Indices
+0.25
+$12.50
+NYFUT
+NKD
+Nikkei 225
+Indices
+5
+$25
+NQFUT
+NQ
+E-mini Nasdaq 100
+E-mini Indices
+0.25
+$5
+MDTFUT
+EMD
+E-mini S&P Midcap 400
+Indices
+0.1
+$10
+QRFUT
+RTY
+E-mini Russell 2000
+E-mini Indices
+0.1
+$5
+A6FUT
+6A
+Australian Dollar
+Currencies
+0.00005
+$5
+B6FUT
+6B
+British Pound
+Currencies
+0.0001
+$6.25
+D6FUT
+6C
+Canadian Dollar
+Currencies
+0.00005
+$5
+E6FUT
+6E
+Euro FX
+Currencies
+0.00005
+$6.25
+J6FUT
+6J
+Japanese Yen
+Currencies
+0.0000005
+$6.25
+S6FUT
+6S
+Swiss Franc
+Currencies
+0.00005
+$6.25
+N6FUT
+6N
+New Zealand Dollar
+Currencies
+0.00005
+$5
+HEFUT
+HE
+Lean Hogs
+Meats
+0.025
+$10
+LEFUT
+LE
+Live Cattle
+Meats
+0.025
+$10
+GFFUT
+GF
+Feeder Cattle
+Meats
+0.025
+$12.50
+ETFUT
+MES
+Micro E-mini S&P 500
+Micro Indices
+0.25
+$1.25
+NMFUT
+NQ
+Micro E-mini NASDAQ 100
+Micro Indices
+0.25
+$5
+RXFUT
+M2K
+Micro E-mini Russell 2000
+Micro Indices
+0.1
+$0.50
+BAFUT
+MBT
+Micro Bitcoin
+Micro Indices
+5
+$0.50
+TAFUT
+MET
+Micro Ether
+Micro Indices
+0.5
+$0.05
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Blueberry Futures

@@ -1,0 +1,102 @@
+CFD Intraday Platforms & Trading Conditions | The Trading Pit Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Poppins".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Website Community Client Area العربية English Deutsch Italiano 日本語 Bahasa Melayu Português 简体中文 Español Türkçe Tiếng Việt English
+Website Community Client Area العربية English Deutsch Italiano 日本語 Bahasa Melayu Português 简体中文 Español Türkçe Tiếng Việt English
+Search for articles...
+All Collections
+CFDs
+CFD Intraday
+CFD Intraday Platforms & Trading Conditions
+CFD Intraday Platforms & Trading Conditions
+Platforms and setup, leverage, position sizing, trading hours and how orders are priced on CFD Intraday.
+Updated this week
+Table of contents
+Which Platforms Can I Use, And Can I Change Later?
+CFD Intraday is available on cTrader and MT5. You choose your platform in the Client Area before purchase, and your Challenge is bound to that platform — it can't be changed during the Challenge.
+What Must I Download To Start Trading?
+Download the platform that matches your CFD Challenge from your Dashboard.
+How Do I Connect To MT5?
+Download TTP – MT5 using one of the links below, then follow the steps to connect your account.
+• Desktop Terminal: https://download.terminal.free/cdn/web/ttp.ltd/mt5/ttpmarkets5setup.exe
+• Mobile iOS: https://download.terminal.free/cdn/mobile/mt5/ios?server=TTPMarkets-Server
+• Mobile Android: https://download.terminal.free/cdn/mobile/mt5/android?server=TTPMarkets-Server
+• Web Terminal: https://mt5.thetradingpit.com/
+Option 1: Login to Trade Account (recommended)
+1. Open MT5 and click File .
+2. Select Login to Trade Account .
+3. Enter your details:
+Login: your trading account number
+Password: your trading account password
+Server: TTPMarkets-Server
+4. Click OK .
+Option 2: Open an Account
+1. Open MT5 and click File .
+2. Select Open an Account .
+3. Select TTP Trading Ltd. from the list of companies and click Next .
+4. Select Connect with an existing trade account .
+5. Enter your details:
+Login: your trading account number
+Password: your trading account password
+Server: TTPMarkets-Server
+6. Click Finish .
+Tip: Copy and paste your Login and Password instead of typing them. Most connection issues come from typos or extra spaces.
+How Do I Connect To cTrader?
+• After purchase, you'll receive an email from cTrader ( [email protected] ) with your cTrader ID and a link to set your password.
+• Select the login button in that email and set your password.
+• Log in to cTrader Web, Desktop or Mobile with your cTrader ID and new password.
+• In the platform, choose "Login with cTrader ID", enter your details and log in to your Trading Pit demo account.
+If the email is missing, check your spam or junk folder. If you can't log in, check your details or contact support.
+What Leverage Applies To My Account?
+CFD Intraday offers leverage of up to 1:100 on FX Majors. Leverage depends on the asset class:
+Asset Class
+Intraday Max
+Swing Max
+FX Majors currency pairs
+1:100
+1:50
+FX Exotics currency pairs
+1:50
+1:50
+Indices
+1:50
+1:15
+Metals
+1:40
+1:10
+Energies
+1:40
+1:10
+Commodities
+1:10
+1:10
+Stocks
+1:2
+1:2
+Cryptocurrencies
+1:2
+1:2
+When Must I Close My Positions?
+Close all your positions 10 minutes before market close. Positions can't be held overnight or over the weekend.
+Any position still open at the end of an instrument's trading session is closed automatically by the system. You can check each instrument's trading session directly in the trading platform.
+How Many Lots Can I Trade?
+There's no hard limit on lots. Your maximum position size is limited by the margin each instrument requires — the more margin you use, the fewer additional lots you can open.
+Margin = (Volume × Contract Size × Asset Price) ÷ Leverage
+Example: 1 lot of EUR/USD at 1.1000, with 1:100 leverage and a 100,000 contract size, requires (1 × 100,000 × 1.1000) ÷ 100 = 1,100 USD margin.
+As good practice, we recommend keeping margin use below 30% per trade idea and risk below 1.5%. These are recommendations, not rules.
+Can I Trade Spot Forex?
+No. Only CFDs are offered, not Spot Forex.
+The Chart Price Never Reached My Order — Why Was It Executed?
+A chart shows two prices, the bid and the ask; the difference between them is the spread. The chart shows the bid by default, but buy orders fill at the ask and sell orders fill at the bid. So the visible bid may not appear to reach your order level even though the ask has already triggered it. To see both, right-click the chart, open Properties and enable "Show Ask price line".
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Risk Disclosure:
+All material published and disseminated by The Trading Pit should be considered as general information only. The information provided by the The Trading Pit or included herein is not intended to serve as (a) investment advice, (b) an offer or solicitation to buy or sell any securities, or (c) a recommendation, endorsement, or sponsorship of any security, company, or fund. Testimonials featured on the The Trading Pit’s website(s) may not reflect the experiences of other clients or customers and do not guarantee future performance or success. Using the information on the The Trading Pit’s website(s) is at your own risk. The Trading Pit, along with its partners, representatives, agents, employees, and contractors, does not accept any responsibility or liability for the use or misuse of such information.
+Trading leveraged instruments carries significant risk and is not suitable for all investors. Investors may lose all or more than their initial investment. Only risk capital—money that can be lost without affecting one’s financial security or lifestyle—should be used for trading, and only those with sufficient risk capital should engage in trading. This document is not a solicitation or an offer to buy or sell futures, options, or forex. Past performance does not necessarily predict future results.
+Hypothetical or simulated performance results have inherent limitations. Unlike an actual performance record, simulated results do not reflect real trading. Additionally, because these trades have not been executed, the results may have under- or overcompensated for the impact of certain market factors, such as lack of liquidity. Simulated trading programs are also typically designed with the benefit of hindsight. There is no guarantee that any account will achieve profits or losses similar to those shown.
+The Trading Pit does not offer Contracts for Difference to residents of certain jurisdictions including the USA, Canada and Russia. For a full list of restricted countries for our services please see our FAQs.
+This website is owned and operated by The Trading Pit Challenge GmbH with registration number FL-0002.693.417-1 and registered address at Heiligkreuz 6, 9490, Vaduz, Liechtenstein.
+The Trading Pit Challenge GmbH is part of The Trading Pit Group ("TTP Group") which provides the following services:
+The Trading Pit AG with registration number FL-0002.688.743-6 is the holding company of the Group.
+The Trading Pit Champions GmbH with registration number FL-0002.693.413-9 provides platform services to The Trading Pit Challenge GmbH
+The Trading Pit Limited with registration number ΗΕ 431291 provides business and administration services to the Group companies.
+© 2026 The Trading Pit Challenge GmbH. All Rights Reserved.

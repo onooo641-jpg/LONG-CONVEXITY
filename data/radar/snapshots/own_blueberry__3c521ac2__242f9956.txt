@@ -1,0 +1,85 @@
+What is the Consistency Rule? | Blueberry Futures Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Noto Sans".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Sign Up Login English हिन्दी 日本語 Español English
+Sign Up Login English हिन्दी 日本語 Español English
+Search for articles...
+All Collections
+Trading Rules & Risk Management
+Prohibited Strategies & Ethics
+What is the Consistency Rule?
+What is the Consistency Rule?
+📉 We fund consistent traders. Learn about the 20% (Accelerated) and 35% (Ascent) profit rules.
+August 3, 2026
+Table of contents
+Why we have a Consistency Rule
+To make sure you're using a sustainable strategy, and not just getting lucky on one massive trade, we enforce a Consistency Rule on all Funded Accounts. The specific percentage depends on the account type you chose.
+​
+The Rule
+No single trading day can account for more than a set percentage of your total profit at the time of a withdrawal request.
+Account Type
+Max Profit per Day
+🚀 Accelerated
+20% of Total Profit
+🏔️ Ascent
+35% of Total Profit
+How to read your Consistency figure on the dashboard
+Your dashboard shows a Consistency percentage. It represents your largest single trading day as a proportion of your total profit :
+Consistency % = (Largest single-day profit ÷ Total profit) × 100
+To be eligible for a withdrawal, this figure must be at or below your account's limit (20% for Accelerated, 35% for Ascent).
+Largest day under the limit → ✅ you pass the consistency test.
+Largest day over the limit → ❌ keep trading to grow your total profit until that day represents a smaller share.
+⏰ Important: Time Zones, why your numbers might not match the dashboard
+This is the single most common reason a trader's own math disagrees with the dashboard. Please read this before assuming there's a calculation bug.
+Your trades on BlackArrow are displayed in UTC. But every Challenge calculation, including the Consistency Rule, is measured in CST, the Challenge Time Zone configured for your account.
+​
+Why that matters:
+A trading "day" runs from midnight to midnight.
+CST (US Central Time) is behind UTC by roughly 5–6 hours (depending on daylight saving).
+So a trade placed close to midnight can land on one calendar day in UTC but a different calendar day in CST .
+When trades shift between days, the profit attributed to each day changes , which changes your largest day , your totals , and therefore your consistency figure .
+Example: Two sessions that look like two separate days in UTC may actually fall on the same day in CST, combining into a single, larger day. That one larger day can raise your consistency percentage even though your total profit hasn't changed at all.
+​
+✅ Always evaluate your consistency using the CST view. That's the time zone the rule is enforced on. If you calculate from the UTC / BlackArrow view, your numbers can look different from the dashboard even when nothing is wrong, and any manual correction based on UTC won't "stick," because the system always recalculates on CST.
+🔄 How to switch your view from UTC to CST
+To check your figures the same way the system does:
+Open your Dashboard (or the trades view in BlackArrow).
+Locate the time-zone toggle (Top Right corner of the PnL Day Calendar) .
+​
+​
+​
+Switch the view from UTC to CST .
+Re-check your daily profit breakdown and your largest single day, these now match how the Consistency Rule is calculated.
+Tip: If your dashboard consistency figure ever looks "impossible" compared with your own math, switch to CST first and recompute. The discrepancy almost always disappears.
+Worked examples
+Withdrawal minimums ($100k account): To request a withdrawal on a $100k account, you must have at least $3,850 in profit (the $3,100 buffer + $750 minimum withdrawal).
+​
+Scenario 1 — Accelerated Trader (20% rule)
+Total profit: $4,000
+The limit: $4,000 × 20% = $800
+Best day (CST): $1,500
+$1,500 is greater than $800 → Withdrawal denied. Continue trading until that $1,500 day is less than 20% of your total.
+Scenario 2 — Ascent Trader (35% rule)
+Total profit: $4,000
+The limit: $4,000 × 35% = $1,400
+Best day (CST): $1,500
+$1,500 is still slightly above $1,400 → Withdrawal denied , but you're much closer than the Accelerated trader.
+How to become eligible
+If your largest day is over the limit, you have two levers:
+Grow your total profit. As your total rises, your largest day becomes a smaller share of it. To find the total profit you need, divide your largest day by the limit: Largest day ÷ limit % .
+Example (Ascent, 35%): an $1,855 largest day needs $1,855 ÷ 0.35 = $5,300 in total profit before that day is within range.
+Keep future days balanced. Avoid concentrating profit in one outsized session.
+Quick FAQ
+My manual calculation doesn't match the dashboard. Is it a bug? Almost always this is the UTC vs CST difference explained above. Switch to the CST view and recompute, the rule is enforced on CST.
+​
+My consistency figure changed to a different number and then reverted. Why? Temporary or manual values based on UTC won't hold, because the system recalculates on CST. The CST figure is the one that governs withdrawals.
+​
+Which number counts for my withdrawal? The CST consistency figure shown on your dashboard at the time you submit the withdrawal request.
+Related Articles
+How is the payout cycle structured?
+Ascent Account Specs: Rules & Targets
+What is the Minimum Trading Days rule?
+When can I get my first Payout?
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Blueberry Futures

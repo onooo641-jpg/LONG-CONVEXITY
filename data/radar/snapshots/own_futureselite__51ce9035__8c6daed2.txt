@@ -1,0 +1,30 @@
+Elite checkout options | FuturesElite FAQ Skip to main content
+Back to Website Discord
+Back to Website Discord
+Search for articles...
+All Collections
+Elite accounts
+Elite checkout options
+Elite checkout options
+Choose your daily loss limit and consistency rule when you buy.
+October 18, 2026
+Table of contents
+Every Elite size has two rules you configure at checkout. The price updates with your choices, and settings can't be changed after purchase. Your dashboard shows which settings each account uses.
+Daily loss limit
+None (default): the only loss rule is the Max Loss Limit.
+Soft lock: $600 (25K), $1,200 (50K), $1,800 (100K) or $2,700 (150K), at a lower price. If your equity reaches it, trading is locked for 24 hours from that moment; the account stays open. The level is measured from the higher of your balance and equity at the previous daily close. It never counts as a breach, and it stops one bad session from ending the account. It applies in the evaluation and once funded.
+Evaluation consistency
+40% (default): no single day may be more than 40% of the profit used to pass. On a 25K ($1,250 target) your best day can be $500; on a 50K ($3,000 target), $1,200.
+50%: more room and a minimum of 2 trading days, for a small extra fee. On a 25K your best day can be $625; on a 50K, $1,500.
+Consistency in evaluation: your best single day may be at most 40% of your total profit (50% if you chose the 50% option at checkout). Exactly 40% (or 50%) passes. Elite evaluation needs at least 2 trading days; with the 40% rule you will in practice need at least 3 profitable days. Elite cannot be passed in one day. Elite funded accounts have no consistency rule.
+Going over never fails the account: the target rises until your best day fits. Example at 40%: a $700 best day means you pass at $1,750 of profit.
+Related Articles
+Elite rules at a glance
+Elite drawdown, daily loss limit and contracts
+Elite payouts
+Prime drawdown and Daily Loss Limit
+Credits and pack rules
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+FuturesElite FAQ
+We run on Intercom

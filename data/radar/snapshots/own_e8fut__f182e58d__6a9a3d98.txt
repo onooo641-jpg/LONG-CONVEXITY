@@ -1,0 +1,82 @@
+35% Best Day Rule | E8 Markets Help Center Futures Skip to main content
+E8X Dashboard E8 Markets Website Classic Markets & Perpetuals Helpcenter Čeština English हिन्दी Português Español English
+E8X Dashboard E8 Markets Website Classic Markets & Perpetuals Helpcenter Čeština English हिन्दी Português Español English
+Search for articles...
+All Collections
+Payouts
+Payout rules (On-Demand)
+35% Best Day Rule
+35% Best Day Rule
+Updated over a week ago
+Table of contents
+This rule is available for E8 Signature Futures in the Performance stage.
+With a 35% Best Day Rule, you must ensure that no single trading day exceeds more than 35% of your total generated profits.
+​
+Why it exists (your upside): Whether you are trading simulated capital with E8 or your own capital elsewhere, consistency is the only thing that scales. This rule protects you from the "one-hit wonder" syndrome, helping you develop the discipline needed to manage performance accounts over the long term and building the track record that payout eligibility is based on.
+​
+Quick Explanation (Read this first)
+Your top profit day (Best day) must be no more than 35% of your total profit for the period you want to request a payout.
+If one day exceeds this limit, you don't lose your account; you simply need to continue trading to increase your total profit.
+Plain English: You need to stay consistent: if you have one massive profit day, you'll just need to keep trading and making steady gains until that big day no longer makes up more than 35% of your total. Ideally, if you make a similar amount three days in a row, you can request a first payout in just 3 days.
+Numbers in context
+Fast math: If your best day = $1,000, total profit must be ≥ $1,000 ÷ 0.35 = $2,857 before you request.
+​
+Or you can multiply your Total profit
+​
+​ A) Payout Request is possible
+Day 1
++$500
+Day 2
++$550
+Day 3
+-$150
+Day 4
++$600 (Best Day)
+Day 5
++$400
+Total profit
+$1,900
+35% of Total profit ($1,900 × 0.40)
+$665
+Best Day
+$600 Eligible for Payout (Below $665
+Note: The best day is lower than 35% of the total profit
+​
+​ B) Payout Request is not possible
+Day 1
++$1,100
+Day 2
++$1,500 (Best Day)
+Day 3
++$900
+Day 4
+-$400
+Total profit
+$3,100
+35% of Total profit ($3,100 × 0.35)
+$1,085
+Best Day
+$1,500 Ineligible (Above $1,085)
+Note: In Scenario B, the trader simply needs to keep trading (without increasing the current best day) until their Total Profit reaches $4,286 ($1,500 ÷ 0.35).
+How to use the Dashboard to your advantage
+Remember that you can always rely on your Dashboard data
+Go to your Dashboard, check your payout overview, and hover over the (i) icon in the best day rule section, and you will be able to check:
+​
+1. What is the total amount of profits your account must reach.
+2. How much is remaining to fulfill the best day rule.
+Intentionally attempting to bypass the Best Day Rule by splitting a large winning position through hedging or partial closures is not allowed and may result in all profit from that position being consolidated into a single day.
+Example: Partially closing a large winning position across multiple days. It may be viewed as an attempt to bypass the rule, especially if the profit is generated during a single-day market movement.
+Example: Opening several positions on a given instrument on one day and closing them across multiple days. Such positions may be considered a single trade idea. It may be viewed as an attempt to bypass the rule, especially if the trade idea capitalizes on a single-day market movement.
+Example: Immediate opening, closing and re-opening a position held across multiple days. It may be viewed as an attempt to bypass the rule because such positions are considered a single trade idea with identical market exposure.
+Best day after payout
+When you request a payout, your "Current Best Day" and "Current Performance" are reset. To qualify for your next payout, you must meet the consistency requirements based strictly on new profits .
+Key Point:
+Any profit left in the account from a previous cycle is not included in the new consistency calculation.
+Example:
+Profit left in account from previous cycle: $1,000
+New profit: $1,000
+Consistency Check: The 35% rule is applied only to the new $1,000 made this cycle, not the $2,000 total balance (current performance+ left "buffer" from previous payout/s).
+​
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+The information provided here is for general informational purposes only and should not be considered financial advice.

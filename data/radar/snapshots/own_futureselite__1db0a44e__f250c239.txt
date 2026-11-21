@@ -1,0 +1,35 @@
+Logging in to your trading platform | FuturesElite FAQ Skip to main content
+Back to Website Discord
+Back to Website Discord
+Search for articles...
+All Collections
+Identity and compliance
+Logging in to your trading platform
+Logging in to your trading platform
+Tradovate, NinjaTrader, Deepchart and ATAS.
+October 13, 2026
+Table of contents
+Tradovate and NinjaTrader
+In your dashboard, open the account and click Credentials .
+Copy your username and password.
+Click Tradovate Login (or NinjaTrader Login) and paste your details.
+When Tradovate asks for a mode, choose Simulation .
+Deepchart
+Open Credentials in your dashboard and copy your login.
+Click Login to open the dxFeed login page and sign in.
+Sign the dxFeed Agreement at the top right.
+Download the platform or use Deepchart web. Your license key is shown there.
+ATAS
+Register at atas.net/dxfeedprop and install ATAS from the link in the email.
+Log in with your ATAS details, which are separate from your FuturesElite login.
+Open Menu → Connections, disconnect any default connection, click + Add and choose dxFeedProp.
+Set Environment to Production , enter your FuturesElite credentials, then Connect and Apply.
+If login fails
+Check for extra spaces when pasting.
+Reload the login page, reopen Credentials and copy again.
+Still stuck? Contact Support.
+Never share your login credentials, and log out after each session.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+FuturesElite FAQ
+We run on Intercom

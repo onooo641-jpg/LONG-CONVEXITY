@@ -1,0 +1,40 @@
+What counts as "Gambling" or Prohibited Strategies? | Blueberry Futures Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Noto Sans".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Sign Up Login English हिन्दी 日本語 Español English
+Sign Up Login English हिन्दी 日本語 Español English
+Search for articles...
+All Collections
+Trading Rules & Risk Management
+Prohibited Strategies & Ethics
+What counts as "Gambling" or Prohibited Strategies?
+What counts as "Gambling" or Prohibited Strategies?
+🚫 Hedging, One-Sided Bets, and HFT are strictly banned.
+November 24, 2025
+Table of contents
+Prohibited Strategies
+To maintain a fair trading environment, the following activities are banned. Detecting these will lead to immediate account termination.
+​
+Please note: This list represents common violations but is not limited to only these examples. Our Risk Team reserves the right to review any suspicious trading behavior.
+​
+The "Red List"
+1. Hedging
+You cannot hold a Long and Short position on the same asset simultaneously.
+Specific Violation: This includes cross-contract hedging. For example, holding a Long position on a Mini contract (e.g., NQ) while simultaneously holding a Short position on the Micro equivalent (e.g., MNQ) is a strict violation.
+2. One-Sided Bets
+Using max leverage on a single trade idea without technical justification.
+One-Sided Trading
+This includes consistently across many accounts taking advantage of one single market direction to keep placing one-sided trades. We understand this behavior as intentional one-sided trading rather than legitimate strategy.
+3. Gaming the System
+Any attempt to manipulate the platform or trade in an exploitative manner.
+Bulk Account Exploitation
+Buying many accounts to trade in an exploitative manner.
+Arbitrage
+Exploiting platform freezes, data delays, or price feed errors.
+4. HFT (High-Frequency Trading)
+Strategies that enter and exit positions in sub-second intervals to exploit server latency.
+Related Articles
+What trading behaviors are prohibited?
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Blueberry Futures

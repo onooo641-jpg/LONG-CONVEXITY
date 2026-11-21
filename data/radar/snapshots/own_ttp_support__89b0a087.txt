@@ -1,0 +1,183 @@
+CFD Prime (Swing) Rules | The Trading Pit Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Poppins".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Website Community Client Area العربية English Deutsch Italiano 日本語 Bahasa Melayu Português 简体中文 Español Türkçe Tiếng Việt English
+Website Community Client Area العربية English Deutsch Italiano 日本語 Bahasa Melayu Português 简体中文 Español Türkçe Tiếng Việt English
+Search for articles...
+All Collections
+CFDs
+CFD Prime (Swing)
+CFD Prime (Swing) Rules
+CFD Prime (Swing) Rules
+Everything that applies to your CFD Prime (Swing) account, in one place — what you must do to pass, the limits you can’t breach, and what’s allowed.
+Updated this week
+Table of contents
+These are the rules for your CFD Prime (Swing) account. Most apply in both the Challenge and the Earning Phase. We group them into two types:
+Hard rules — breaking one breaches the account: it fails and is disabled.
+Soft rules — requirements you must meet, but breaking them does not fail your account; you simply keep trading until you meet them.
+Exact limits (your Profit Target and drawdown amounts) depend on your account size and are shown in your Client Area. Some rules also depend on when the account was purchased — those dates are noted below.
+At A Glance
+Rule
+Applies In
+Type
+Profit Target
+Challenge
+Objective To Pass
+Minimum 3 Profitable Days
+Challenge & Earning
+Soft — No Breach
+Consistency 50% (1-Phase $100K/$200K)
+Challenge & Earning
+Soft — No Breach
+Daily Drawdown
+Challenge & Earning
+Hard — Breach
+Maximum Drawdown (Static or Trailing)
+Challenge & Earning
+Hard — Breach
+Stop-Out (100% Margin Level)
+Active account
+Auto-Closes Positions
+Margin Per Trade Idea (Max 40%) *
+Challenge & Earning
+Hard — 2nd Violation Breaches
+Risk Per Trade Idea (Max 1.5%) *
+Challenge & Earning
+Hard — 2nd Violation Breaches
+Inactivity (21 days)
+Challenge & Earning
+Hard — Breach
+Gap, Grid, Martingale, HFT, Cross-Account Hedging, Cross-Client Copy
+Challenge & Earning
+Prohibited — Breach
+* The risk-per-trade-idea rule applies to accounts created before 29/05/2026, and to CFD Prime (Swing) 1-Phase $100K and $200K accounts regardless of creation date. For accounts up to and including $50K, both the margin and risk rules are monitored manually by the Risk Team rather than enforced automatically.
+What You Must Do To Pass (Objectives)
+Profit Target (Objective )
+Reach the Profit Target set for your account size (shown in your Client Area and on the CFD product page) without breaking any rules.
+Minimum Profitable Days (Soft — No Breach)
+You need at least 3 profitable trading days (accounts purchased or upgraded on or after 2 June 2025; earlier accounts need 5 trading days). A day is profitable when your account gains at least 0.5% of the initial balance, measured at the end-of-day cut-off (16:15 CT) using the lower of your balance or equity versus the previous day’s balance. Profitable days do not need to be consecutive.
+Consistency Rule (Soft — No Breach)
+Applies only to 1-Phase $100K and $200K accounts (new accounts on or after 6 July 2026), in both phases. Your Best Day (single most profitable day) must not exceed 50% of your Positive Days’ Profit (the sum of all profitable days; losing days are excluded).
+Going over 50% does not fail your account — you simply keep trading and add profit on other days until your Best Day is 50% or less
+Limits You Must Not Breach (Hard Rules)
+Daily Drawdown (Hard Rule)
+The most you can lose in a single day. It’s measured on your closed balance (Closed P&L, commissions included) and updated at the end of each day (16:15 CT).
+If your equity drops below the limit, the account is breached and permanently disabled.
+Example:
+On a $100,000 account with a $3,000 daily drawdown, the limit is $97,000.
+If the day closes at $97,100, the next day’s limit becomes $94,100 (previous close − $3,000).
+Maximum Drawdown (Hard Rule )
+This is your overall loss limit. Your account has either a Static or a Trailing limit, depending on the account type and the date you bought it.
+Which one applies to my account?
+Account
+Bought before 29 April 2026
+Bought on or after 29 April 2026
+CFD Prime (Swing) 1-Phase $100K / $200K
+Static
+Trailing (based on End-of-Day balance)
+CFD Prime (Swing) 1-Phase $5K–$50K
+Static
+Static
+CFD Prime (Swing) 2-Phase ($5K–$100K)
+Static
+Static
+All other accounts
+Static
+Static
+You can also see your account's drawdown type in the order summary at checkout.
+Static The limit is fixed, based on your starting balance, and never moves. Example: 10% on a $100,000 account gives a fixed limit of $90,000, even if your balance grows.
+Trailing (based on End-of-Day balance) The limit moves up with your end-of-day closed balance until the limit itself reaches your starting balance. After that, it locks and doesn't move again. Example: You start at $100,000 with a 10% limit, so your limit is $90,000. Once your closed balance reaches $110,000, the limit has moved up to $100,000. It locks there and won't move any further.
+For both types:
+If your equity reaches or falls below the limit at any time, the account is breached.
+Your limit doesn't move down after a payout. See CFD Prime (Swing) Rewards .
+Stop-Out (Auto-Closes Positions)
+If your Margin Level falls to 100%, the system automatically closes one or more open positions to protect the account.
+Margin Used Per Trade Idea (Hard Rule*)
+The total margin across all positions in the same trade idea (one instrument, or a group of correlated instruments) is capped at 40% of your initial balance.
+Splitting trades does not reduce it.
+You get a reminder at 30%; a first violation triggers a warning and forced position closure; a second violation breaches the account.
+For accounts up to and including $50K, it is monitored manually by the Risk Team rather than automatically.
+Applies to CFD Prime (Swing) 1-Phase and 2-Phase $5K, $10K, $20K and $50K accounts, and CFD Prime (Swing) 2-Phase $100K accounts, created before 29/05/2026
+Applies to CFD Prime (Swing) 1-Phase $100K and $200K accounts created before 06/07/2026.
+Risk Per Trade Idea (Hard Rule*)
+The maximum potential loss across all positions in the same trade idea (based on your stop-losses, or worst-case exposure if you have none) is capped at 1.5% of your initial balance.
+Reminder at 1%; first violation = warning + forced closure; second = breach. Trading without stop-losses raises your calculated risk and can trigger warnings faster.
+Applies to accounts created before 29/05/2026, and continues to apply to CFD Prime 1-Phase $100K and $200K accounts regardless of creation date.
+For accounts up to and including $50K, it is monitored manually by the Risk Team rather than automatically.
+Inactivity (Hard Rule)
+If 21 consecutive days pass without placing a single trade, the account is considered inactive and breached.
+Holding a position overnight or leaving a pending order does not count as activity. The countdown starts as soon as the account is created.
+What’s Allowed, With Conditions
+Scalping (Allowed)
+Allowed on CFD Prime (Swing), including trades held for under a minute.
+What is not allowed is High-Frequency Trading, where the majority of your trades last only a few seconds or less.
+A single trade that closes in seconds because your stop-loss or take-profit was hit won’t breach your account, but deliberately placing stops or targets extremely close to entry as a strategy is treated as prohibited HFT-style trading.
+Stop-Loss & Take-Profit (Allowed)
+Not mandatory on every trade, but strongly recommended.
+If the majority of your trades are placed without a stop-loss, the Risk Team may reach out and require you to use them.
+News Trading (Allowed, With Limits )
+Allowed on CFD accounts up to $50,000 (you may open and close trades during high-impact news).
+Not permitted on $100,000 and $200,000 accounts during the Challenge or Earning Phase.
+Where restricted, you may not open new trades — or have pending orders triggered — within 2 minutes before or after a high-impact release; trades already open beforehand may be closed during the window.
+Expert Advisors (EAs) (Allowed, With Limits )
+Allowed, provided they don’t copy signals that aren’t yours, scalp against the rules, run latency/reverse/hedge/arbitrage or HFT, use emulators, or trade within 2 minutes of high-impact news on $100K/$200K accounts.
+Accounts using prohibited EAs are denied any upgrade or payout, and the Challenge is not refunded.
+VPS (Allowed)
+You may use a VPS to run your Expert Advisor.
+Hedging (Allowed, With Limits )
+Allowed within the same account for risk management (no hedging arbitrage).
+Hedging across two accounts — a BUY on one and a SELL on the other, including on correlated assets — is prohibited.
+Copy Trading (Allowed, With Limits )
+Allowed only between accounts you own (effective 02/06/2025).
+Shared or mirrored trading between different people, or copying signals from an account that isn’t yours, is treated as a breach.
+Holding Overnight & Over The Weekend [Swing] (Allowed)
+Allowed on all CFD accounts. Be mindful that price gaps when markets reopen can breach the daily drawdown.
+Cryptocurrency trades seven days a week on select platforms (from 7 July 2025).
+Prohibited Practices
+Gap Trading (Prohibited )
+Trading to profit from price gaps is not allowed. This includes:
+Opening trades within 2 hours of a market close when the market will stay closed for 2 or more hours, ahead of major news, earnings or events likely to cause a price gap.
+Holding positions through corporate earnings announcements or material corporate actions when they are exposed to significant price gaps, especially announcements made before the market opens or after it closes.
+Profits from this activity may be adjusted or removed, and the account may be terminated.
+Grid Strategies (Prohibited )
+Not allowed.
+A grid strategy involves placing multiple buy and/or sell orders at predetermined price intervals, creating a series or “grid” of positions around a price level.
+This includes systematically adding multiple positions as the market moves up or down to profit from price fluctuations rather than using independent trade setups.
+Martingale Strategies (Prohibited )
+Not allowed.
+A martingale strategy involves increasing the position size after a losing trade or series of losing trades, with the aim of recovering previous losses and generating a profit from a subsequent winning trade. This includes systematically increasing exposure as losses accumulate.
+High-Frequency Trading (HFT) (Prohibited )
+Not allowed on any account: executing multiple trades per second, dozens of trades within a minute, rapid-fire entries and exits, or any attempt to exploit speed, latency or feed delays.
+Violations result in account termination.
+Gambling (Prohibited )
+Excessive risk-taking is prohibited — overleveraging, overexposure to one asset, one-sided bets without analysis, and hyperactive impulsive trading.
+Violations can lead to restricted trading privileges, revoked rewards, reduced leverage or account termination. See our full Gambling Policy for the details.
+Accounts & Other Rules
+How Many Accounts / Allocation
+There is no limit on how many accounts you can purchase, all managed from one Dashboard.
+In the Earning Phase you can hold a maximum of 8 active Earning Accounts with a combined initial balance cap of $400,000. Example: if you pass three $200,000 Challenges, only two can convert to Earning Accounts ($400,000 total); the third stays pending until an active Earning Account closes or breaches.
+Scaling Up
+Your Earning Account balance can increase by 25% of its starting balance every 4 months, up to a combined $2,000,000 across your CFD Intraday and Prime (Swing) accounts. CFD Instant accounts (up to 2) aren't counted towards it.
+• What do I need to qualify? You need all of the following: at least 4 months of trading since you received the account or since its last scale-up, a net profit of at least 10% of the starting balance in that period, at least 2 processed payouts in that period, and the account in profit at the time of the scale-up.
+• How do I get it? Submit a scale-up request. Our Risk team reviews it and approves or declines it.
+• How much is added? 25% of the original starting balance each time. It doesn't compound, so a $100,000 account grows by $25,000 at every scale-up. If a scale-up would take you over $2,000,000, only the amount up to the limit is added.
+• What happens to my loss limits? They keep the same percentages and are recalculated on your new balance.
+• Are my accounts assessed separately? Yes. Each account must qualify on its own, and accounts can't be merged. Only the $2,000,000 limit is combined.
+Trading Device, IP & Network
+An IP that changes every few days (e.g. while travelling) is fine.
+An IP that changes several times within the same day can raise suspicion of account sharing, which is forbidden.
+See our Trading Device, IP & Network Policy for the full rules on devices, IPs and shared access.
+How Can I Check Why My Account Has Been Breached?
+Log into your Client Area , select Accounts, and click the account number you want to review. At the top centre of that account’s Dashboard, next to the account number, you’ll see the reason it was breached (for example, a Scalping-rule violation, exceeding a drawdown, or a rule breach while reaching the Profit Target).
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Risk Disclosure:
+All material published and disseminated by The Trading Pit should be considered as general information only. The information provided by the The Trading Pit or included herein is not intended to serve as (a) investment advice, (b) an offer or solicitation to buy or sell any securities, or (c) a recommendation, endorsement, or sponsorship of any security, company, or fund. Testimonials featured on the The Trading Pit’s website(s) may not reflect the experiences of other clients or customers and do not guarantee future performance or success. Using the information on the The Trading Pit’s website(s) is at your own risk. The Trading Pit, along with its partners, representatives, agents, employees, and contractors, does not accept any responsibility or liability for the use or misuse of such information.
+Trading leveraged instruments carries significant risk and is not suitable for all investors. Investors may lose all or more than their initial investment. Only risk capital—money that can be lost without affecting one’s financial security or lifestyle—should be used for trading, and only those with sufficient risk capital should engage in trading. This document is not a solicitation or an offer to buy or sell futures, options, or forex. Past performance does not necessarily predict future results.
+Hypothetical or simulated performance results have inherent limitations. Unlike an actual performance record, simulated results do not reflect real trading. Additionally, because these trades have not been executed, the results may have under- or overcompensated for the impact of certain market factors, such as lack of liquidity. Simulated trading programs are also typically designed with the benefit of hindsight. There is no guarantee that any account will achieve profits or losses similar to those shown.
+The Trading Pit does not offer Contracts for Difference to residents of certain jurisdictions including the USA, Canada and Russia. For a full list of restricted countries for our services please see our FAQs.
+This website is owned and operated by The Trading Pit Challenge GmbH with registration number FL-0002.693.417-1 and registered address at Heiligkreuz 6, 9490, Vaduz, Liechtenstein.
+The Trading Pit Challenge GmbH is part of The Trading Pit Group ("TTP Group") which provides the following services:
+The Trading Pit AG with registration number FL-0002.688.743-6 is the holding company of the Group.
+The Trading Pit Champions GmbH with registration number FL-0002.693.413-9 provides platform services to The Trading Pit Challenge GmbH
+The Trading Pit Limited with registration number ΗΕ 431291 provides business and administration services to the Group companies.
+© 2026 The Trading Pit Challenge GmbH. All Rights Reserved.

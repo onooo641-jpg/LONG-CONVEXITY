@@ -178,6 +178,32 @@
 ## Alpha Futures — https://help.alpha-futures.com/en/articles/9820801-activating-your-qualified-account
 - AUTO: We recommend this be done DURING or BEFORE your Evaluation since our Compliance Team needs to manually approve.
 
+## AquaFunded Futures — https://aquafunded.com/forex-funded-account
+- AUTO: If you breach the rules or parameters of our forex prop firm challenge, you will automatically be disqualified and will have to start again.
+
+## AquaFunded Futures — https://aquafunded.com/forex-rules
+- AUTO: Swap fees are calculated automatically and are visible directly on your trading platform.
+- AUTO: Expert Advisors (EAs)
+- AUTO: Expert Advisors are allowed.
+- AUTO: You may use EAs that are customized to your own trading strategy or trading style.
+- AUTO: We support a wide range of trading styles, including scalping, day trading, and swing trading.
+- AUTO: Tick scalping, high-frequency trading, arbitrage strategies including reverse arbitrage, latency arbitrage, hedge arbitrage, or any strategy designed to exploit pricing or execution delays.
+- AUTO: Copy Trading & Account Sharing
+- AUTO: Copy trading between other traders accounts, shared devices used to mirror trades, or any form of coordinated trading that compromises individual account integrity.
+
+## AquaFunded Futures — https://aquafunded.com/legal/privacy-policy
+- AUTO: Automatically through the use of cookies, server logs, and other similar technologies when you interact with the Site, promotional material, advertisements and emails; and
+- AUTO: We collect information, including your browser type, operating system, Internet Protocol (IP) address (a number that is automatically assigned to a computer when the internet is used), domain name, click-activity, referring website, and/or a date/time stamp for visitors.
+- AUTO: Automatically Collected Information
+- AUTO: Information about your computer hardware and software may be automatically collected by AQUAFUNDED.
+- AUTO: Most Web browsers automatically accept cookies, but you can usually modify your browser setting to decline cookies if you prefer.
+- AUTO: We do not currently recognize the “Do Not Track” signal.
+- AUTO: From time to time, AQUAFUNDED may contact you via email for the purpose of providing announcements, promotional offers, alerts, confirmations, surveys, and/or other general communication.
+- AUTO: GDPR applies to personal data processed through purely automatic means or through non- automatic means.
+
+## AquaFunded Futures — https://aquafunded.com/legal/terms-and-conditions
+- COUNTRY: You agree that you will not use Company content accessed through the Site in any country or in any manner prohibited by any applicable laws, regulations or requirements.
+
 ## Audacity Capital — https://audacitycapital.co.uk/
 - AUTO: EAs Allowed / Copy Trading Upgraded
 - AUTO: EAs Allowed / Copy Trading
@@ -1167,6 +1193,123 @@
 ## Blue Guardian — https://www.blueguardian.com/terms-and-conditions
 - COUNTRY: You agree that you will not use Company content accessed through the Site in any country or in any manner prohibited by any applicable laws, regulations or requirements.
 
+## Blueberry Futures — http://help.blueberryfutures.com/en/articles/11196005-what-trading-behaviors-are-prohibited
+- AUTO: The trading conduct and platform behaviours prohibited on Blueberry Futures accounts, covering evaluation exploitation, market conduct, non-proprietary automated systems, third-party involvement and platform misuse.
+- AUTO: High-frequency, opposite-position or latency arbitrage strategies that would not be viable in a regulated live trading environment.
+- AUTO: Automated trading software is permitted only when it is proprietary.
+- AUTO: Running a system obtained from a friend, a Discord group, a signal group or a marketplace.
+- AUTO: Running any automated system, including one you built yourself, without disclosing it and receiving our consent first.
+- AUTO: See Can I use EAs, Bots, or Copy Trading?
+- AUTO: Subscribing to a signal service that executes trades on your behalf.
+- AUTO: Can I use EAs, Bots, or Copy Trading?
+
+## Blueberry Futures — http://help.blueberryfutures.com/en/articles/11196009-can-i-share-or-transfer-my-account
+- AUTO: Can I use EAs, Bots, or Copy Trading?
+
+## Blueberry Futures — http://help.blueberryfutures.com/en/articles/11196018-how-do-i-qualify-for-a-live-trading-account
+- AUTO: Meeting one of these milestones makes you eligible for review , but promotion to a live account is not automatic and remains at the sole discretion of Blueberry Futures .
+
+## Blueberry Futures — http://help.blueberryfutures.com/en/articles/11196026-what-payment-methods-do-you-accept
+- AUTO: To maintain the speed of our automated setup process, we do not currently support Cryptocurrency, PayPal, or Wire Transfers for purchasing challenges or subscriptions.
+
+## Blueberry Futures — http://help.blueberryfutures.com/en/articles/11196090-how-does-the-affiliate-program-work
+- AUTO: Your referrals are tracked automatically
+
+## Blueberry Futures — http://help.blueberryfutures.com/en/articles/12909698-what-is-blackarrow
+- AUTO: Can I use EAs, Bots, or Copy Trading?
+
+## Blueberry Futures — http://help.blueberryfutures.com/en/articles/12913586-how-to-cancel-your-subscription
+- AUTO: Can I use EAs, Bots, or Copy Trading?
+
+## Blueberry Futures — http://help.blueberryfutures.com/en/articles/12914492-do-i-need-to-be-verified-kyc-to-request-a-payout
+- AUTO: However, if a manual review is required, it may take up to 24-48 hours.
+
+## Blueberry Futures — http://help.blueberryfutures.com/en/articles/12915301-rise-payouts-the-complete-setup-guide
+- AUTO: Automated: Most accounts are approved instantly.
+- AUTO: Manual Review: May take 1–3 business days.
+- AUTO: If your Rise email matches your Blueberry Futures email, verification is usually automatic.
+
+## Blueberry Futures — http://help.blueberryfutures.com/en/articles/12915670-which-account-is-right-for-me
+- AUTO: Scalpers & Aggressive Traders
+
+## Blueberry Futures — http://help.blueberryfutures.com/en/articles/12921219-accelerated-account-specs-rules-targets
+- AUTO: Best for scalpers and aggressive traders.
+
+## Blueberry Futures — http://help.blueberryfutures.com/en/articles/12921327-are-there-limits-on-dca-stacking
+- AUTO: This keeps trading behavior controlled and prevents excessive, high-frequency averaging down.
+
+## Blueberry Futures — http://help.blueberryfutures.com/en/articles/12921418-news-trading-policy-3-minute-rule
+- AUTO: Closures: You may manually close trades to lock in profit or prevent loss at any time.
+
+## Blueberry Futures — http://help.blueberryfutures.com/en/articles/12921439-can-i-hold-trades-overnight-or-over-the-weekend
+- AUTO: If you do not close your positions in time, the system will automatically liquidate all open trades around 4:45 PM ET .
+- AUTO: Can I use EAs, Bots, or Copy Trading?
+
+## Blueberry Futures — http://help.blueberryfutures.com/en/articles/12921623-max-contracts-by-account-size
+- AUTO: The Max Contracts limits are enforced automatically by the system.
+
+## Blueberry Futures — http://help.blueberryfutures.com/en/articles/12921661-is-scalping-allowed-minimum-position-time
+- AUTO: Is Scalping Allowed?
+- AUTO: Is Scalping Allowed?
+- AUTO: Is Scalping Allowed?
+- AUTO: ⚡ Yes, manual scalping is allowed.
+- AUTO: Tick-scalping and HFT are not.
+- AUTO: Scalping & Minimum Position Time
+- AUTO: We welcome scalpers who profit from quick market moves.
+- AUTO: However, we strictly distinguish between Legitimate Scalping (Skill) and Tick Scalping (Manipulation).
+- AUTO: However, our Risk Team monitors for Tick Scalping behavior.
+- AUTO: Trades that are consistently opened and closed in sub-second intervals (e.g., 0-5 seconds) are characteristic of High-Frequency Trading (HFT) and arbitrage bots.
+- AUTO: If you are manually entering and exiting trades based on market structure, you have nothing to worry about.
+- AUTO: Legitimate scalping typically lasts significantly longer than the latency of a data feed.
+
+## Blueberry Futures — http://help.blueberryfutures.com/en/articles/12921692-can-i-use-eas-bots-or-copy-trading
+- AUTO: Can I use EAs, Bots, or Copy Trading?
+- AUTO: Can I use EAs, Bots, or Copy Trading?
+- AUTO: Can I use EAs, Bots, or Copy Trading?
+- AUTO: Automated trading software is allowed on Blueberry Futures only if it is proprietary, runs your own strategy, and has been disclosed to us with consent received before you run it.
+- AUTO: You can use automated trading software on your Blueberry Futures account only if it meets all three of these conditions:
+- AUTO: Automated strategies you built yourself , running your own logic, disclosed and approved before use.
+- AUTO: Systems obtained from a friend, a Discord group, a signal group or a marketplace.
+- AUTO: Any automated system run without disclosing it and receiving our consent first , including one you built yourself.
+- AUTO: Mirroring trades from an external signal provider or copytrading service.
+- AUTO: A system you built around your own strategy is your skill, automated, and we support that.
+- AUTO: Contact our support team before you run anything automated.
+- AUTO: Running automated execution without prior consent can put your account and payouts at risk.
+
+## Blueberry Futures — http://help.blueberryfutures.com/en/articles/12921710-what-counts-as-gambling-or-prohibited-strategies
+- AUTO: 🚫 Hedging, One-Sided Bets, and HFT are strictly banned.
+- AUTO: HFT (High-Frequency Trading)
+
+## Blueberry Futures — http://help.blueberryfutures.com/en/articles/12921739-what-is-the-consistency-rule
+- AUTO: If you calculate from the UTC / BlackArrow view, your numbers can look different from the dashboard even when nothing is wrong, and any manual correction based on UTC won't "stick," because the system always recalculates on CST.
+- AUTO: My manual calculation doesn't match the dashboard.
+- AUTO: Temporary or manual values based on UTC won't hold, because the system recalculates on CST.
+
+## Blueberry Futures — http://help.blueberryfutures.com/en/articles/12922431-do-you-have-a-daily-loss-limit
+- AUTO: You’re able to configure the system to automatically block new orders when any of the following exceeds a value you set (X):
+
+## Blueberry Futures — http://help.blueberryfutures.com/en/articles/12923291-i-passed-what-happens-next
+- AUTO: System Review: Our risk team automatically reviews passed accounts.
+- AUTO: Note : You do not need to cancel your monthly subscription manually; Your subscription will end once you activate the account
+
+## Blueberry Futures — http://help.blueberryfutures.com/en/articles/12942861-what-is-the-maximum-capital-allocation
+- AUTO: 👉 [ Can I use EAs, Bots, or Copy Trading?
+
+## Blueberry Futures — http://help.blueberryfutures.com/en/articles/12942982-the-road-to-live-graduating-to-a-live-account
+- AUTO: The Review: Once you reach this milestone, our Risk Management Team automatically reviews your trading history to determine if you are ready for the Live Market.
+- AUTO: You cannot request to transfer to the Live Program manually.
+- AUTO: The review is triggered automatically by your performance milestones.
+
+## Blueberry Futures — http://help.blueberryfutures.com/en/collections/16780169-trading-rules-risk-management
+- AUTO: Is Scalping Allowed?
+- AUTO: Can I use EAs, Bots, or Copy Trading?
+
+## Blueberry Futures — http://help.blueberryfutures.com/en/collections/16868331-trading-limits-restrictions
+- AUTO: Is Scalping Allowed?
+
+## Blueberry Futures — http://help.blueberryfutures.com/en/collections/16869412-prohibited-strategies-ethics
+- AUTO: Can I use EAs, Bots, or Copy Trading?
+
 ## Breakout — https://breakoutprop.com/
 - AUTO: Your account upgrades to 'funded' automatically when you hit your target.
 
@@ -1552,6 +1695,152 @@
 - AUTO: Once you complete the Break Evaluation without breaching any applicable rules, your account and trading activity will be manually reviewed by our team.
 - AUTO: normally automatically renewed each year.
 - COUNTRY: country or in any manner prohibited by applicable laws, restrictions, or regulations.
+
+## DayTraders — https://daytraders.com/
+- AUTO: Automated Payout Approval
+- AUTO: Fast, automated payouts.
+- AUTO: Automated Payout Approval
+- AUTO: Our payout approval process is transparent, automated, and lightning-fast.
+- AUTO: Our in-house engine runs the automation and risk controls for every
+- AUTO: Imagine payouts that are automatically approved, fast, seamless, and stress-free.
+- AUTO: Get updates and alerts on up-to-the-moment market conditions.
+
+## DayTraders — https://daytraders.com/daytraders-vs-funded-next
+- AUTO: Best Firms for Scalpers
+- AUTO: DayTraders.com is built exclusively for futures markets with proprietary technology, automated risk enforcement, and a live funded trading path.
+- AUTO: FundedNext's lack of DLL and automatic contract scaling are trader-friendly features.
+- AUTO: Automated payout processing
+- AUTO: Automatic contract scaling fits your progression style
+
+## DayTraders — https://daytraders.com/daytraders-vs-my-funded-futures
+- AUTO: Best Firms for Scalpers
+- AUTO: DayTraders.com was built from the ground up for futures with proprietary automation,
+
+## DayTraders — https://daytraders.com/end-of-day-vs-trailing-drawdown
+- AUTO: Best Firms for Scalpers
+- AUTO: Best For: Scalpers & Active Day Traders
+
+## DayTraders — https://daytraders.com/help/articles/17697924-live-scaling
+- AUTO: We can also increase the maximum loss limits or issue additional live accounts to copy trade across.
+
+## DayTraders — https://daytraders.com/help/articles/17697925-moving-from-pro-or-s2f-to-live
+- COUNTRY: If you're in a restricted country, the Risk Manager will discuss your options.
+
+## DayTraders — https://daytraders.com/help/collections/19788884-trading-rules-and-guidelines
+- AUTO: No High-Frequency Trading
+- AUTO: Automation, AI and Trade Copiers
+- AUTO: No High-Frequency Trading
+- AUTO: Automation, AI and Trade Copiers
+
+## DayTraders — https://daytraders.com/how-futures-funding-evaluations-work
+- AUTO: Best Firms for Scalpers
+- AUTO: Best for active day traders and scalpers.
+
+## DayTraders — https://daytraders.com/how-long-to-pass-prop-firm-evaluation
+- AUTO: Best Firms for Scalpers
+
+## DayTraders — https://daytraders.com/live-funded-trading
+- AUTO: Best Firms for Scalpers
+- AUTO: The automated risk engine still protects your account.
+
+## DayTraders — https://daytraders.com/news-trading-rules-by-prop-firm
+- AUTO: Best Firms for Scalpers
+
+## DayTraders — https://daytraders.com/overnight-trading-rules-prop-firms
+- AUTO: Best Firms for Scalpers
+- AUTO: Scalpers & Day Traders
+
+## DayTraders — https://daytraders.com/prop-firm-consistency-rules-explained
+- AUTO: Best Firms for Scalpers
+
+## DayTraders — https://daytraders.com/prop-firm-profit-splits-explained
+- AUTO: Best Firms for Scalpers
+- AUTO: Higher-frequency traders ( scalpers ) pay more in total commissions.
+
+## DayTraders — https://daytraders.com/prop-firm-rules-that-kill-profitable-traders
+- AUTO: Best Firms for Scalpers
+- AUTO: Contract Limits That Starve Scalping Strategies
+- AUTO: Scalping depends on adequate position size.
+- AUTO: Scalping becomes viable.
+- AUTO: Full scalping capacity.
+
+## DayTraders — https://daytraders.com/trailing-drawdown-explained
+- AUTO: Best Firms for Scalpers
+- AUTO: Best for: Scalpers, active day traders
+- AUTO: Best for scalpers and active day traders who can manage rapid equity changes.
+
+## DayTraders — https://daytraders.com/why-traders-fail-prop-firm-evaluations
+- AUTO: Best Firms for Scalpers
+- AUTO: A trader starts the evaluation scalping ES.
+
+## E8 Futures — https://helpfutures.e8markets.com/en/articles/10155917-max-available-contract-sizes
+- AUTO: The account scales automatically at the start of each new trading day.
+
+## E8 Futures — https://helpfutures.e8markets.com/en/articles/10209270-trading-policies-and-prohibited-trading-strategies
+- AUTO: Semi-Automated or Fully-Automated Trading, such as trading bots, AI tools, HFT trading (more than 300 trades per day), etc.
+- AUTO: Tick Scalping - A minimum of 50% of all profits must come from trades with a holding period of no less than 10 seconds.
+- AUTO: This includes, but is not limited to, reliance on micro-scalping during illiquid market hours, trading illiquid instruments, excessive or disproportionate risk-taking, account rolling, or any behavior that would not reasonably translate to real market execution.
+- AUTO: We do not allow teams to make the same trades or copy trades on our simulated platform, and we also do NOT permit signal services.
+- AUTO: ​ Copy trading across your own accounts is allowed, including across SimFi Challenge Accounts, SimFi Performance Accounts, or any personal accounts, as long as all accounts belong to you and you alone.
+
+## E8 Futures — https://helpfutures.e8markets.com/en/articles/11755943-e8-signature
+- AUTO: E8 Markets allows copy trading across all accounts, including SimFi™ challenge and SimFI™ Performance accounts or personal accounts, as long as these accounts belong to you.
+
+## E8 Futures — https://helpfutures.e8markets.com/en/articles/11864596-eod-dynamic-drawdown
+- AUTO: After the account breaches your loss level, the system will enforce closing the position automatically, which might take a while.
+
+## E8 Futures — https://helpfutures.e8markets.com/en/articles/13941837-tax-information
+- AUTO: W-8 Form is being automatically provided by our third-party processors for payouts (such as WorkMarket or Rise).
+
+## E8 Futures — https://helpfutures.e8markets.com/en/articles/14352481-thomas-gibbs-promotion
+- AUTO: This is an automatic process, and you will receive a new account within 60-120 minutes after the failure.
+
+## E8 Futures — https://helpfutures.e8markets.com/en/articles/15030237-friends-program
+- AUTO: Any credits you have collected are automatically deducted from the total price of the Challenge at checkout.
+
+## E8 Futures — https://helpfutures.e8markets.com/en/articles/15272556-everything-about-payouts-when-how-how-fast
+- COUNTRY: ​ Rise unsupported countries and unsupported States or Territories in the USA
+
+## E8 Futures — https://helpfutures.e8markets.com/en/articles/15501317-hyper-cup-tournament
+- AUTO: After this, the Tournament account will be automatically created in your dashboard.
+
+## E8 Futures — https://helpfutures.e8markets.com/en/articles/15935817-e8-zero-starter-and-max
+- AUTO: E8 Markets allows copy trading across all accounts, including SimFi™ challenge and SimFI™ Performance accounts or personal accounts, as long as these accounts belong to you.
+
+## E8 Futures — https://helpfutures.e8markets.com/en/articles/5514275-can-i-try-e8-markets-for-free
+- AUTO: Please note that all trial accounts are automatically closed after 30 days from the date the account was created.
+- AUTO: If you're within your limit (2 free trials every 28 days), your trial account is created automatically - no checkout, no manual setup.
+- AUTO: All the same conditions and limits above still apply - trial accounts are not eligible for payouts and close automatically after 30 days.
+
+## E8 Futures — https://helpfutures.e8markets.com/en/articles/5514278-accepted-countries
+- COUNTRY: List of restricted countries.
+- COUNTRY: Restricted country list (Classic markets + Perpetuals):
+- COUNTRY: Restricted country list (Futures):
+- COUNTRY: ​ Rise unsupported countries and unsupported States or Territories in the USA
+
+## E8 Futures — https://helpfutures.e8markets.com/en/articles/6463833-is-verification-required
+- AUTO: This process is automated and usually takes only a few minutes.
+- AUTO: Our relevant team will then manually check your provided KYC information within 24 hours to verify if everything is in order.
+- AUTO: To sign ESPA, you need to access it with a password code that is automatically sent to your email.
+- COUNTRY: If you are traveling to a country that is not accepted, you can still trade there.
+
+## E8 Futures — https://helpfutures.e8markets.com/en/articles/9448427-can-i-get-a-custom-discount-code-for-my-community
+- AUTO: If they use your affiliate link, the custom code will be automatically applied at checkout when making the purchase.
+- AUTO: Before it is approved, we need to manually check it if it meets our guidelines.
+
+## E8 Futures — https://helpfutures.e8markets.com/en/articles/9453469-can-i-copy-trades-or-trade-as-a-team
+- AUTO: Can I copy trades or trade as a team?
+- AUTO: Can I copy trades or trade as a team?
+- AUTO: Can I copy trades or trade as a team?
+- AUTO: Copy trading, signals, team trading
+- AUTO: E8 Markets allows copy trading across all accounts, including SimFi™ Challenge account and SimFi™ Performance account or personal accounts, as long as these accounts belong to you.
+- AUTO: We do not allow teams to make the same trades or copy trades on our simulated platform, and we also do NOT permit signal services.
+
+## E8 Futures — https://helpfutures.e8markets.com/en/collections/10983843-products-rules
+- AUTO: Can I copy trades or trade as a team?
+
+## E8 Futures — https://helpfutures.e8markets.com/en/collections/11069608-general-rules
+- AUTO: Can I copy trades or trade as a team?
 
 ## E8 Markets — https://e8markets.com/
 - AUTO: ALG Algorand ALGOUSD
@@ -2000,6 +2289,20 @@
 - AUTO: Advancement to FFONE's Professional Stage, or to live market execution, is not automatic and is never guaranteed.
 - COUNTRY: FFONE's services are not available to residents of certain countries and regions, as listed in our Help Center (Restricted Countries / Regions).
 
+## Funded Futures Network — https://fundedfuturesnetwork.com/
+- AUTO: Real humans available around the clock, not bots.
+
+## Funded Futures Network — https://fundedfuturesnetwork.com/faq
+- AUTO: How many accounts can I copy trade?
+- AUTO: You can copy trade a maximum of 5 accounts.
+- AUTO: Can I use my trading bot?
+- AUTO: Automated trading is allowed but at the discretion of FFN.
+- AUTO: Any traders implementing HFT trading bots or attempting to exploit the simulated environment will lose access to their account.
+- AUTO: This amount is cumulative across all of your accounts and you are not permitted to request several withdrawals across several accounts if they are copy traded.
+- AUTO: For example, if you copy trade 5 accounts and withdraw from 2 of them, only those 2 accounts have their consistency reset: the other 3 are unaffected.
+- COUNTRY: Which Countries Are Restricted?
+- COUNTRY: For the full list of restricted countries and available trading products, see our Country Restrictions & Product List article.
+
 ## FundedNext — https://fundednext.com/aml-policy
 - AUTO: In adherence to the legal obligations, a meticulous manual approval process is diligently undertaken for each transaction, employing the principles of due diligence.
 - AUTO: Within GrowthNext F.Z.E., a distinct and dedicated risk management unit exists, tasked with the meticulous manual examination of individual client profiles.
@@ -2241,6 +2544,168 @@
 ## FundedNext Futures — https://helpfutures.fundednext.com/en/collections/19764742-trading-rules-and-guidelines
 - AUTO: What is the Micro-Scalping policy in FundedNext Futures?
 - AUTO: Does FundedNext Futures Allow High-Frequency Trading (HFT)?
+
+## FuturesElite — https://faq.futureselite.com/en/articles/17584128-how-many-accounts-can-i-have
+- AUTO: Accounts can't be merged, but you can trade several at once with our in-house copy trader.
+
+## FuturesElite — https://faq.futureselite.com/en/articles/17584271-elite-payouts
+- AUTO: The profit split is 90%, applied automatically.
+
+## FuturesElite — https://faq.futureselite.com/en/articles/17584395-prime-funded-stage-and-payouts
+- AUTO: The profit split is 90%, applied automatically.
+
+## FuturesElite — https://faq.futureselite.com/en/articles/17584535-maximum-daily-profit-and-going-live
+- AUTO: The moment your net profit for the day reaches the cap, your Sim Funded account goes dormant and your live account is created automatically, with no review step.
+
+## FuturesElite — https://faq.futureselite.com/en/articles/17584610-old-instant-payouts
+- AUTO: You must reach it again every cycle, and scalped profit doesn't count toward it.
+
+## FuturesElite — https://faq.futureselite.com/en/articles/17584626-allowed-and-prohibited-trading-practices
+- AUTO: Day trading, swing trading, scalping within our limits, Martingale and grid trading.
+- AUTO: Manual, hands-on trading.
+- AUTO: Fully automated trading with AI or bots, and high-frequency trading.
+
+## FuturesElite — https://faq.futureselite.com/en/articles/17584655-hedging-policy
+- AUTO: Automated systems detect hedging on every account.
+
+## FuturesElite — https://faq.futureselite.com/en/articles/17584702-scalping-rules
+- AUTO: Scalping rules | FuturesElite FAQ Skip to main content
+- AUTO: When a trade counts as a scalp and what happens.
+- AUTO: A scalp is a trade held 10 seconds or less, or making a net profit of $20 or less per contract ($2 on micro contracts).
+- AUTO: Scalping is never a breach.
+- AUTO: Evaluation: if your scalp profit is more than 50% of the profit target, the upgrade is held for a manual review.
+- AUTO: Funded: scalping is never a breach.
+- AUTO: Scalp profit is added to your payout target and removed from the withdrawable amount.
+- AUTO: New Instant: scalped profit doesn't count toward the payout profit goal.
+
+## FuturesElite — https://faq.futureselite.com/en/articles/17584731-high-frequency-and-automated-trading
+- AUTO: High-frequency and automated trading | FuturesElite FAQ Skip to main content
+- AUTO: High-frequency and automated trading
+- AUTO: High-frequency and automated trading
+- AUTO: Why HFT is prohibited.
+- AUTO: High-frequency trading means automated strategies that submit and execute large numbers of orders in seconds or milliseconds.
+- AUTO: Automated detection monitors every account.
+
+## FuturesElite — https://faq.futureselite.com/en/articles/17584810-trading-hours-and-the-2-price-limit-rule
+- AUTO: All positions must be closed by 4:55 PM ET every trading day; open positions are closed automatically at that time.
+- AUTO: If a trader leaves a position open and the system fails to automatically close it, the trader remains fully responsible for any resulting profit or loss.
+
+## FuturesElite — https://faq.futureselite.com/en/articles/17585022-what-happens-if-a-rule-is-broken
+- AUTO: Permanent restriction for repeated or severe HFT or hedging.
+- AUTO: High-frequency and automated trading
+
+## FuturesElite — https://faq.futureselite.com/en/articles/17585223-payments-refunds-and-the-one-time-fee
+- AUTO: ACH payments take 3–5 business days to settle and your accounts are created automatically when it settles; please don't cancel or dispute the transfer.
+
+## FuturesElite — https://faq.futureselite.com/en/articles/17585385-one-trader-per-household-ips-vpns-and-copiers
+- AUTO: If you use a VPN, VPS, trade copier, copy trading software or any tool that routes your connection through a shared or dynamic IP, tell Support in advance .
+- AUTO: Copying trades between your own accounts with our in-house copy trader is allowed.
+
+## FuturesElite — https://faq.futureselite.com/en/articles/17585620-live-account-rules-and-costs
+- AUTO: Close all positions at least 15 minutes before the market closes, or they are liquidated automatically.
+- AUTO: Commissions and fees are deducted automatically.
+- AUTO: Commissions and exchange fees on every trade, deducted automatically.
+
+## FuturesElite — https://faq.futureselite.com/en/collections/11652242-trading-rules
+- AUTO: High-frequency and automated trading
+
+## Goat Funded Futures — https://goatfundedfutures.com/
+- AUTO: All available for you EOD: Daily drawdown for scalpers & intraday
+- AUTO: Every trade is journaled automatically.
+- AUTO: Every trade is journaled automatically.
+- COUNTRY: Not available in some countries.
+- COUNTRY: Not available in some countries.
+
+## Goat Funded Futures — https://goatfundedfutures.com/daily-payout-futures-prop-firm
+- AUTO: Open positions are closed automatically at 15:55 CT.
+- AUTO: Prohibited: Tick scalping, grid, martingale, and HFT strategies.
+- AUTO: GOAT Daily is a manual trading product, so bots, Expert Advisors, and automated strategies are not permitted.
+- AUTO: Accounts and copy trading: Up to 5 funded GOAT Daily accounts.
+- AUTO: Copy trading is permitted between your own accounts only.
+- AUTO: Trading futures manually with a repeatable intraday approach.
+- AUTO: Running bots, Expert Advisors, or automated strategies.
+- AUTO: Copy trading between your own accounts is permitted, but copying trades to or from another trader’s account is not allowed.
+- AUTO: Copy trading between your own accounts is permitted, but copying trades to or from another trader’s account is not allowed.
+- AUTO: Copy trading between your own accounts is permitted, but copying trades to or from another trader’s account is not allowed.
+
+## Goat Funded Futures — https://goatfundedfutures.com/privacy-policy
+- AUTO: Device and usage data IP address, approximate location, device and browser identifiers, login history, pages visited, cookie data Collected automatically
+- AUTO: Trading data, risk monitoring and automated decisions
+- AUTO: Some rule checks (for example, drawdown or daily loss limits) are applied automatically and can result in an account being failed or closed, as set out in our Terms.
+- AUTO: request human review of an automated decision (Section 4).
+- AUTO: We honour Global Privacy Control signals.
+- COUNTRY: Verifying identity, preventing fraud, multi-accounting and abuse, and enforcing restricted-country rules Legal obligation and our legitimate interest in protecting the Services
+
+## Goat Funded Futures — https://goatfundedfutures.com/terms-and-condition
+- AUTO: You agree that these activities may be performed automatically without any further consent, consultation, or approval on your part, and that you are not entitled to any remuneration or revenue associated with the use of the Data by GFF.
+
+## Goat Funded Futures — https://help.goatfundedfutures.com/1-day-pass.html
+- AUTO: If you bought the 90/10 Profit Share Add-On with your challenge, it carries over automatically.
+- AUTO: Any position still open is closed automatically at 15:55 CT, five minutes before the session ends.
+- AUTO: Tick scalping , meaning opening and closing positions within seconds to capture small tick profits, is not permitted on any account.
+
+## Goat Funded Futures — https://help.goatfundedfutures.com/account-security.html
+- AUTO: Account sharing and copy trading.
+- AUTO: VPS environments are commonly used to run unattended automated systems 24/7, which conflicts with our requirement that you personally place and manage your trades.
+- AUTO: You can buy 5 accounts for a discounted bundle price on our checkout, and then you can indeed copy trades into all 5 accounts.
+- AUTO: On Daily Payouts, copy trading is permitted between your own Daily Payouts accounts only.
+- AUTO: To set up copy trading varies depending on platform.
+- COUNTRY: Datacenter IPs obscure who is actually trading and from where, which prevents us from meeting our compliance obligations, including restricted-country checks.
+
+## Goat Funded Futures — https://help.goatfundedfutures.com/daily-payouts.html
+- AUTO: Tick scalping, meaning opening and closing positions within seconds to capture small tick profits, is not permitted on any GFF account including Daily Payouts.
+- AUTO: Daily Payouts is a manual trading product.
+- AUTO: Bots, Expert Advisors and automated strategies are not permitted.
+- AUTO: Grid, martingale and high frequency strategies are not permitted.
+- AUTO: Any position still open is closed automatically at 15:55 CT, five minutes before the session ends.
+- AUTO: Account limits and copy trading
+- AUTO: Copy trading is permitted between your own Daily Payouts accounts only.
+
+## Goat Funded Futures — https://help.goatfundedfutures.com/drawdown.html
+- AUTO: It trails your highest equity point in real time, meaning as your account reaches new equity highs, the drawdown floor automatically moves up by the same amount.
+- AUTO: Requesting or receiving a payout does not automatically move or lock your drawdown at the starting balance.
+- AUTO: It resumes automatically on the next trading day, and the account is not closed.
+- AUTO: It resumes automatically on the next trading day, and your account is not closed.
+
+## Goat Funded Futures — https://help.goatfundedfutures.com/eod-challenge.html
+- AUTO: Any position still open is closed automatically at 15:55 CT, five minutes before the session ends.
+- AUTO: Tick scalping , meaning opening and closing positions within seconds to capture small tick profits, is not permitted on any account.
+
+## Goat Funded Futures — https://help.goatfundedfutures.com/flex-challenge.html
+- AUTO: Tick scalping , meaning opening and closing positions within seconds to capture small tick profits, is not permitted on any account, including Flex.
+- AUTO: Any position still open is closed automatically at 15:55 CT, five minutes before the session ends.
+
+## Goat Funded Futures — https://help.goatfundedfutures.com/plans.html
+- AUTO: Manual trading only.
+- AUTO: Bots and automated strategies are not permitted
+- AUTO: Automated strategies Not permitted See the automated strategies article
+- AUTO: You trade manually and can work inside a daily loss limit
+- AUTO: Automated Strategies: not permitted
+
+## Goat Funded Futures — https://help.goatfundedfutures.com/trading-rules.html
+- AUTO: News Overnight holding Holding time Prohibited practices Bots and copy trading
+- AUTO: Any position still open is closed automatically at 15:55 CT, five minutes before the session ends.
+- AUTO: Therefore our system will automatically flatten any positions left open 5 minutes before market close at 15:55 CT.
+- AUTO: Tick Scalping & Unrealistic Trading Practices
+- AUTO: You may copy your own trades across your own accounts, but copying other users' trades or signals — manually, via copy services, or EAs — is prohibited, as is coordinating trades with other clients, holding opposing or hedged positions across accounts, group trading, trade signaling, or sharing devices, VPS instances, or IPs to enable linked trading.
+- AUTO: Scalping & high-frequency abuse
+- AUTO: HFT systems, tick scalping, bulk order-entry, and volume inflation are prohibited, and 100+ trades in a single day may trigger a risk review.
+- AUTO: Tick Scalping & Unrealistic Trading Practices
+- AUTO: Tick scalping refers to extremely short-term trading where positions are opened and closed within seconds to capture very small price movements, often using high position sizes.
+- AUTO: Signals, copy trading and automated strategies
+- AUTO: Can I use trading bots or automated strategies (EAs)?
+- AUTO: Signals, copy trading and automated strategies
+- AUTO: On Daily Payouts, copy trading is permitted between your own Daily Payouts accounts only.
+- AUTO: Trading someone else's calls, whether from a signal provider, a trading group, a third party service, a copy or mirror service, or an EA that follows an external source, is a prohibited trading practice and may result in account termination.
+- AUTO: Where that is detected, every account and user involved may be suspended, including people who did not know others were following the same signals.
+- AUTO: Automated strategies
+- AUTO: On EOD, 1-Day-Pass-Plan, Flex and Instant Classic, your own automated strategies and EAs are allowed, as long as they reflect your own trading and do not exploit latency, data feed anomalies or system vulnerabilities.
+- AUTO: Daily Payouts and Instant Lite are manual trading products.
+- AUTO: Bots, Expert Advisors and automated strategies are not permitted on either, and neither are grid, martingale or high frequency strategies.
+- AUTO: Can I use trading bots or automated strategies (EAs)?
+- AUTO: On EOD, 1-Day-Pass-Plan, Flex and Instant Classic, personal automated strategies and EAs are allowed, as long as they are consistent with your trading style and do not exploit system vulnerabilities, latency, or data feed anomalies.
+- AUTO: Daily Payouts and Instant Lite are manual trading products.
+- AUTO: Bots, Expert Advisors and automated strategies are not permitted on either, and neither are grid, martingale or high frequency strategies.
 
 ## Goat Funded Trader — https://goatfundedtrader.com/legal/privacy-policy
 - AUTO: Information Automatically Collected
@@ -2744,6 +3209,9 @@
 ## Maven Trading — https://maventrading.com/pricing
 - COUNTRY: Restricted Countries: Belarus, Cuba, Iran, Myanmar, North Korea, Russia, Saint Lucia, Syria, Venezuela, and the Crimea (including Sevastopol), Donetsk, Kherson, Luhansk and Zaporizhzhia regions of Ukraine.
 
+## Maven Trading — https://maventrading.com/privacy-policy
+- COUNTRY: Restricted Countries: Belarus, Cuba, Iran, Myanmar, North Korea, Russia, Saint Lucia, Syria, Venezuela, and the Crimea (including Sevastopol), Donetsk, Kherson, Luhansk and Zaporizhzhia regions of Ukraine.
+
 ## Maven Trading — https://maventrading.com/pt/aml-policy
 - AUTO: Abordagem baseada em risco: Uma equipe dedicada de gerenciamento de risco revisará manualmente os perfis dos clientes e realizará a devida diligência conforme o nível de risco.
 
@@ -3158,102 +3626,6 @@
 ## The Trading Pit — https://support.thetradingpit.com/en/
 - COUNTRY: For a full list of restricted countries for our services please see our FAQs.
 
-## The Trading Pit — https://support.thetradingpit.com/en/articles/835084-cfd-prime-swing-rules
-- AUTO: Gap, Grid, Martingale, HFT, Cross-Account Hedging, Cross-Client Copy
-- AUTO: For accounts up to and including $50K, both the margin and risk rules are monitored manually by the Risk Team rather than enforced automatically.
-- AUTO: If your Margin Level falls to 100%, the system automatically closes one or more open positions to protect the account.
-- AUTO: For accounts up to and including $50K, it is monitored manually by the Risk Team rather than automatically.
-- AUTO: For accounts up to and including $50K, it is monitored manually by the Risk Team rather than automatically.
-- AUTO: What is not allowed is High-Frequency Trading, where the majority of your trades last only a few seconds or less.
-- AUTO: A single trade that closes in seconds because your stop-loss or take-profit was hit won’t breach your account, but deliberately placing stops or targets extremely close to entry as a strategy is treated as prohibited HFT-style trading.
-- AUTO: Expert Advisors (EAs) (Allowed, With Limits )
-- AUTO: Allowed, provided they don’t copy signals that aren’t yours, scalp against the rules, run latency/reverse/hedge/arbitrage or HFT, use emulators, or trade within 2 minutes of high-impact news on $100K/$200K accounts.
-- AUTO: Accounts using prohibited EAs are denied any upgrade or payout, and the Challenge is not refunded.
-- AUTO: You may use a VPS to run your Expert Advisor.
-- AUTO: Copy Trading (Allowed, With Limits )
-- AUTO: Shared or mirrored trading between different people, or copying signals from an account that isn’t yours, is treated as a breach.
-- AUTO: High-Frequency Trading (HFT) (Prohibited )
-- AUTO: At the top centre of that account’s Dashboard, next to the account number, you’ll see the reason it was breached (for example, a Scalping-rule violation, exceeding a drawdown, or a rule breach while reaching the Profit Target).
-- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
-
-## The Trading Pit — https://support.thetradingpit.com/en/articles/835380-cfd-instant-rules
-- AUTO: Soft Breach — the offending position is closed automatically, but your account stays active.
-- AUTO: The first and second violations are a Soft Breach — the position closes automatically but your account stays active.
-- AUTO: Positions in those instruments are closed automatically 10 minutes before the Friday session closes.
-- AUTO: What is not allowed is High-Frequency Trading, where the majority of your trades last only a few seconds or less.
-- AUTO: A single trade that closes in seconds because your stop-loss or take-profit was hit won’t breach your account, but deliberately placing stops or targets extremely close to entry as a strategy is treated as prohibited HFT-style trading.
-- AUTO: Expert Advisors (EAs) (Allowed, With Limits)
-- AUTO: Allowed, provided they don’t copy signals that aren’t yours, scalp against the rules, run latency/reverse/hedge/arbitrage or HFT, use emulators.
-- AUTO: You may use a VPS to run your Expert Advisor.
-- AUTO: Copy Trading (Allowed, With Limits .)
-- AUTO: Shared or mirrored trading between different people, or copying signals from an account that isn’t yours, is treated as a breach.
-- AUTO: High-Frequency Trading (HFT) (Prohibited )
-- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
-
-## The Trading Pit — https://support.thetradingpit.com/en/articles/836071-futures-prime-rules
-- AUTO: Gap, Grid, Martingale, HFT
-- AUTO: Copy Trading (Allowed, With Limits)
-- AUTO: You may copy trades, manually or automatically, across up to 5 of your own Challenges or 5 of your own Earning accounts.
-- AUTO: Micro-Scalping (Prohibited)
-- AUTO: The Trading Pit prohibits micro-scalping because it exploits execution mechanics rather than reflecting genuine market participation.
-- AUTO: • What is micro-scalping?
-- AUTO: • Is all scalping prohibited?
-- AUTO: Automated monitoring flags accounts where, for example, over 50% of profits come from trades held 15 seconds or less, or where ultra-fast entries and exits are combined with disproportionate sizing.
-- AUTO: The account undergoes manual review.
-- AUTO: High-Frequency Trading (HFT) (Prohibited )
-- AUTO: If a profit removal brings the account balance below the Max Drawdown level, the account is automatically breached.
-- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
-
-## The Trading Pit — https://support.thetradingpit.com/en/articles/836375-stocks-rules
-- AUTO: 1-Minute Minimum Hold (No Scalping)
-- AUTO: Grid, Martingale, Gap, HFT
-- AUTO: All open positions and pending orders are automatically liquidated 10 minutes before the market close, on both Challenge and Earning accounts.
-- AUTO: Smaller gains are automatically excluded and don’t contribute to your performance — they don’t breach the account.
-- AUTO: Stocks accounts don’t allow true scalping: each trade must stay open for at least 1 minute before it’s closed (buy-sell or sell-buy on the same stock).
-- AUTO: Profit from trades closed sooner is automatically excluded.
-- AUTO: Expert Advisors (EAs) & VPS (Allowed, With Limits )
-- AUTO: EAs are allowed provided they don’t copy signals that aren’t yours, run latency/arbitrage or HFT, or use emulators.
-- AUTO: You may use a VPS to run your EA.
-- AUTO: Copy trading (Allowed, With Limits )
-- AUTO: You may copy trades across your own accounts (you can hold up to 2).
-- AUTO: High-Frequency Trading (HFT) (Reviewed)
-- AUTO: All accounts are managed from one Dashboard, and you may copy trades across your own accounts.
-- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
-
-## The Trading Pit — https://support.thetradingpit.com/en/articles/857316-futures-instant-rules
-- AUTO: Not Allowed — Positions Closed Automatically
-- AUTO: High-Frequency Trading (HFT)
-- AUTO: The daily trading session runs from 17:00 CT to 15:55 CT, and any position still open at the end of the session is closed automatically.
-- AUTO: Copy Trading (Allowed, With Limits)
-- AUTO: You can copy trades between your own two Futures Instant accounts.
-- AUTO: Shared or mirrored trading between different users, or copying signals from an account that isn't yours, is strictly prohibited.
-- AUTO: Micro-Scalping (Prohibited)
-- AUTO: The Trading Pit prohibits micro-scalping because it exploits execution mechanics rather than reflecting genuine market participation.
-- AUTO: • What is micro-scalping?
-- AUTO: • Is all scalping prohibited?
-- AUTO: Automated monitoring flags accounts where, for example, over 50% of profits come from trades held 15 seconds or less, or where ultra-fast entries and exits are combined with disproportionate sizing.
-- AUTO: The account undergoes manual review.
-- AUTO: High-Frequency Trading (HFT) (Prohibited)
-- AUTO: The Trading Pit prohibits high-frequency trading to protect platform stability, ensure fair access for all traders, and support strategies that reflect real-world market conditions.
-- AUTO: Automated or algorithmic trading that submits large numbers of orders within seconds or milliseconds to capture small price discrepancies.
-- AUTO: Monitoring systems flag exceptionally high order volume, rapid placement and cancellation cycles, and activity inconsistent with manual trading.
-- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
-
-## The Trading Pit — https://support.thetradingpit.com/en/collections/1461315-getting-started
-- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
-
-## The Trading Pit — https://support.thetradingpit.com/en/collections/1461316-cfds
-- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
-
-## The Trading Pit — https://support.thetradingpit.com/en/collections/1461317-futures
-- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
-
-## The Trading Pit — https://support.thetradingpit.com/en/collections/1461318-stocks
-- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
-
-## The Trading Pit — https://support.thetradingpit.com/en/collections/1461319-affiliate-program
-- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
-
 ## The Trading Pit — https://thetradingpit.com/
 - AUTO: After passing your Challenge, sign your Signal Provider agreement and get your share of trading profits.
 - COUNTRY: For a full list of restricted countries for our services please see our FAQs.
@@ -3628,6 +4000,226 @@
 - AUTO: In the case of automated processing based on your consent or the performance of the contract, you have the right to receive the data in a structured, commonly used, and machine-readable format and to have us transfer it to another controller responsible for processing personal data.
 - COUNTRY: For a full list of restricted countries for our services please see our FAQs.
 
+## The Trading Pit Futures — https://support.thetradingpit.com/
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/articles/835064-how-it-works-getting-started
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/articles/835065-eligibility-requirements
+- COUNTRY: Which Are The Restricted Countries For Your Services?
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/articles/835066-costs-fees-extras
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/articles/835067-refunds-breaches-account-changes
+- AUTO: If an automated or Risk-Team decision affected your account — for example a breach — you can ask for a human to review it.
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/articles/835070-trading-device-ip-network-policy
+- AUTO: We may assess it on its own or alongside other signals — such as trading behaviour, execution patterns and account-linkage indicators — when deciding whether a breach has occurred.
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/articles/835071-gambling-policy
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/articles/835083-cfd-prime-swing-how-it-works
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/articles/835084-cfd-prime-swing-rules
+- AUTO: Gap, Grid, Martingale, HFT, Cross-Account Hedging, Cross-Client Copy
+- AUTO: For accounts up to and including $50K, both the margin and risk rules are monitored manually by the Risk Team rather than enforced automatically.
+- AUTO: If your Margin Level falls to 100%, the system automatically closes one or more open positions to protect the account.
+- AUTO: For accounts up to and including $50K, it is monitored manually by the Risk Team rather than automatically.
+- AUTO: For accounts up to and including $50K, it is monitored manually by the Risk Team rather than automatically.
+- AUTO: What is not allowed is High-Frequency Trading, where the majority of your trades last only a few seconds or less.
+- AUTO: A single trade that closes in seconds because your stop-loss or take-profit was hit won’t breach your account, but deliberately placing stops or targets extremely close to entry as a strategy is treated as prohibited HFT-style trading.
+- AUTO: Expert Advisors (EAs) (Allowed, With Limits )
+- AUTO: Allowed, provided they don’t copy signals that aren’t yours, scalp against the rules, run latency/reverse/hedge/arbitrage or HFT, use emulators, or trade within 2 minutes of high-impact news on $100K/$200K accounts.
+- AUTO: Accounts using prohibited EAs are denied any upgrade or payout, and the Challenge is not refunded.
+- AUTO: You may use a VPS to run your Expert Advisor.
+- AUTO: Copy Trading (Allowed, With Limits )
+- AUTO: Shared or mirrored trading between different people, or copying signals from an account that isn’t yours, is treated as a breach.
+- AUTO: High-Frequency Trading (HFT) (Prohibited )
+- AUTO: At the top centre of that account’s Dashboard, next to the account number, you’ll see the reason it was breached (for example, a Scalping-rule violation, exceeding a drawdown, or a rule breach while reaching the Profit Target).
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/articles/835093-cfd-prime-swing-rewards
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/articles/835334-cfd-prime-swing-platforms-trading-conditions
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/articles/835378-cfd-instant-how-it-works
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/articles/835380-cfd-instant-rules
+- AUTO: Soft Breach — the offending position is closed automatically, but your account stays active.
+- AUTO: The first and second violations are a Soft Breach — the position closes automatically but your account stays active.
+- AUTO: Positions in those instruments are closed automatically 10 minutes before the Friday session closes.
+- AUTO: What is not allowed is High-Frequency Trading, where the majority of your trades last only a few seconds or less.
+- AUTO: A single trade that closes in seconds because your stop-loss or take-profit was hit won’t breach your account, but deliberately placing stops or targets extremely close to entry as a strategy is treated as prohibited HFT-style trading.
+- AUTO: Expert Advisors (EAs) (Allowed, With Limits)
+- AUTO: Allowed, provided they don’t copy signals that aren’t yours, scalp against the rules, run latency/reverse/hedge/arbitrage or HFT, use emulators.
+- AUTO: You may use a VPS to run your Expert Advisor.
+- AUTO: Copy Trading (Allowed, With Limits .)
+- AUTO: Shared or mirrored trading between different people, or copying signals from an account that isn’t yours, is treated as a breach.
+- AUTO: High-Frequency Trading (HFT) (Prohibited )
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/articles/835431-cfd-instant-rewards
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/articles/835434-cfd-instant-platforms-trading-conditions
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/articles/836068-futures-prime-how-it-works
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/articles/836071-futures-prime-rules
+- AUTO: Gap, Grid, Martingale, HFT
+- AUTO: Copy Trading (Allowed, With Limits)
+- AUTO: You may copy trades, manually or automatically, across up to 5 of your own Challenges or 5 of your own Earning accounts.
+- AUTO: Micro-Scalping (Prohibited)
+- AUTO: The Trading Pit prohibits micro-scalping because it exploits execution mechanics rather than reflecting genuine market participation.
+- AUTO: • What is micro-scalping?
+- AUTO: • Is all scalping prohibited?
+- AUTO: Automated monitoring flags accounts where, for example, over 50% of profits come from trades held 15 seconds or less, or where ultra-fast entries and exits are combined with disproportionate sizing.
+- AUTO: The account undergoes manual review.
+- AUTO: High-Frequency Trading (HFT) (Prohibited )
+- AUTO: If a profit removal brings the account balance below the Max Drawdown level, the account is automatically breached.
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/articles/836079-futures-prime-rewards
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/articles/836080-futures-prime-platforms-conditions
+- AUTO: You choose your trading platform at purchase — the market data provider is set automatically from that platform, not chosen separately.
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/articles/836370-stocks-how-it-works
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/articles/836375-stocks-rules
+- AUTO: 1-Minute Minimum Hold (No Scalping)
+- AUTO: Grid, Martingale, Gap, HFT
+- AUTO: All open positions and pending orders are automatically liquidated 10 minutes before the market close, on both Challenge and Earning accounts.
+- AUTO: Smaller gains are automatically excluded and don’t contribute to your performance — they don’t breach the account.
+- AUTO: Stocks accounts don’t allow true scalping: each trade must stay open for at least 1 minute before it’s closed (buy-sell or sell-buy on the same stock).
+- AUTO: Profit from trades closed sooner is automatically excluded.
+- AUTO: Expert Advisors (EAs) & VPS (Allowed, With Limits )
+- AUTO: EAs are allowed provided they don’t copy signals that aren’t yours, run latency/arbitrage or HFT, or use emulators.
+- AUTO: You may use a VPS to run your EA.
+- AUTO: Copy trading (Allowed, With Limits )
+- AUTO: You may copy trades across your own accounts (you can hold up to 2).
+- AUTO: High-Frequency Trading (HFT) (Reviewed)
+- AUTO: All accounts are managed from one Dashboard, and you may copy trades across your own accounts.
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/articles/836378-stocks-rewards
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/articles/836379-stocks-platform-conditions
+- AUTO: A video manual is available in your Dashboard under Web Platform.
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/articles/836530-commissions-payouts
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/articles/836534-getting-started
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/articles/857315-futures-instant-how-it-works
+- AUTO: You can hold up to 2 Futures Instant accounts and copy trades between your own accounts.
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/articles/857316-futures-instant-rules
+- AUTO: Not Allowed — Positions Closed Automatically
+- AUTO: High-Frequency Trading (HFT)
+- AUTO: The daily trading session runs from 17:00 CT to 15:55 CT, and any position still open at the end of the session is closed automatically.
+- AUTO: Copy Trading (Allowed, With Limits)
+- AUTO: You can copy trades between your own two Futures Instant accounts.
+- AUTO: Shared or mirrored trading between different users, or copying signals from an account that isn't yours, is strictly prohibited.
+- AUTO: Micro-Scalping (Prohibited)
+- AUTO: The Trading Pit prohibits micro-scalping because it exploits execution mechanics rather than reflecting genuine market participation.
+- AUTO: • What is micro-scalping?
+- AUTO: • Is all scalping prohibited?
+- AUTO: Automated monitoring flags accounts where, for example, over 50% of profits come from trades held 15 seconds or less, or where ultra-fast entries and exits are combined with disproportionate sizing.
+- AUTO: The account undergoes manual review.
+- AUTO: High-Frequency Trading (HFT) (Prohibited)
+- AUTO: The Trading Pit prohibits high-frequency trading to protect platform stability, ensure fair access for all traders, and support strategies that reflect real-world market conditions.
+- AUTO: Automated or algorithmic trading that submits large numbers of orders within seconds or milliseconds to capture small price discrepancies.
+- AUTO: Monitoring systems flag exceptionally high order volume, rapid placement and cancellation cycles, and activity inconsistent with manual trading.
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/articles/857320-futures-instant-rewards
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/articles/857324-futures-instant-platforms-trading-conditions
+- AUTO: You choose your platform at checkout, and your market data provider is assigned automatically:
+- AUTO: Futures Instant is intraday only, so any position still open at the end of the session is closed automatically.
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/articles/882550-cfd-intraday-how-it-works
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/articles/882551-cfd-intraday-rules
+- AUTO: Gap, Grid, Martingale, HFT, Cross-Account Hedging, Cross-Client Copy
+- AUTO: Any position still open at the end of an instrument's trading session is closed automatically by the system.
+- AUTO: If your Margin Level falls to 100%, the system automatically closes one or more open positions to protect your account.
+- AUTO: What isn't allowed is High-Frequency Trading, where the majority of your trades last only a few seconds or less.
+- AUTO: A single trade that closes in seconds because your stop-loss or take-profit was hit won't breach your account, but deliberately placing stops or targets extremely close to entry as a strategy is treated as prohibited HFT-style trading.
+- AUTO: Expert Advisors (EAs) (Allowed, With Limits)
+- AUTO: Allowed, provided they don't copy signals that aren't yours, scalp against the rules, run latency, reverse, hedge, arbitrage or HFT strategies, use emulators, or trade high-impact news in the Earning Phase.
+- AUTO: Accounts using prohibited EAs are denied any upgrade or payout, and the Challenge is not refunded.
+- AUTO: You may use a VPS to run your Expert Advisor.
+- AUTO: Copy Trading (Allowed, With Limits)
+- AUTO: Shared or mirrored trading between different people, or copying signals from an account that isn't yours, is treated as a breach.
+- AUTO: High-Frequency Trading (HFT) (Prohibited)
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/articles/882552-cfd-intraday-rewards
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/articles/882553-cfd-intraday-platforms-trading-conditions
+- AUTO: Any position still open at the end of an instrument's trading session is closed automatically by the system.
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/collections/1461315-getting-started
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/collections/1461316-cfds
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/collections/1461317-futures
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/collections/1461318-stocks
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/collections/1461319-affiliate-program
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/collections/1461320-policy
+- AUTO: Our formal trading policies — device, IP and network use, gambling and no-genuine-strategy, micro-scalping, inactivity, and prohibited trading practices.
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/collections/1461326-cfd-prime-swing
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/collections/1461368-cfd-instant
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/collections/1464262-futures-prime
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/collections/1464263-futures-instant
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://support.thetradingpit.com/en/collections/1468446-cfd-intraday
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
 ## The5ers — https://the5ers.com/cookie-policy/
 - AUTO: This cookie is used to distinguish between humans and bots.
 - AUTO: This cookie is used to distinguish between humans and bots.
@@ -3685,6 +4277,9 @@
 - AUTO: User acknowledges that the Company may require advance testing of Automated Trading Software in its sole discretion.
 - AUTO: Notwithstanding the foregoing, the Company prohibits use of any Automated Trading Software owned or developed by any third party other than the User.
 - AUTO: The use of Automated Trading Software does not guarantee the User’s success at the Evaluation of Professional stage and the Company’s approval of any Automated Trading Software shall not be deemed as endorsement or guarantee of success.
+
+## The5ers Futures — https://the5ers.com/futures/
+- AUTO: Is High-Frequency Trading, Algorithmic Trading, or Hedging Permitted?
 
 ## Top One Futures — https://help.toponefutures.com/en/articles/10907463-what-is-the-maximum-number-of-accounts-i-can-trade
 - AUTO: The maximum number of active funded accounts per account category, the total capacity, the Live Funded restriction, and copy trading limits.
@@ -4134,6 +4729,76 @@
 - AUTO: If we do waive a default by you, we will only do so in writing, and that will not mean that we will automatically waive any later default by you.
 - COUNTRY: government list of prohibited or restricted persons, including the SDN list, (b) you are not located in, ordinarily resident in, or accessing Topstep Products and Content from any country or region subject to comprehensive U.S.
 
+## Trade The Pool — https://tradethepool.com/
+- AUTO: Tesla Earnings Reports signal the end of the carmaker era—Tesla is one of the S&P 500’s 7 biggest companies by market cap, despite a Q4 2025 revenue miss at $24.9B (-3.1% YoY vs $25.12B expected).
+
+## Trade The Pool — https://tradethepool.com/cookie-policy/
+- AUTO: This cookie is used to distinguish between humans and bots.
+- AUTO: This cookie is used to distinguish between humans and bots.
+- AUTO: This cookie is used to distinguish between humans and bots.
+- AUTO: This cookie is used to distinguish between humans and bots.
+- AUTO: This cookie is used to distinguish between humans and bots.
+- AUTO: This cookie is used to distinguish between humans and bots.
+- AUTO: This cookie is used to distinguish between humans and bots.
+- AUTO: This cookie is used to distinguish between humans and bots.
+- AUTO: This cookie is used to distinguish between humans and bots.
+- AUTO: This cookie is used to distinguish between humans and bots.
+
+## Trade The Pool — https://tradethepool.com/copy-trading/
+- AUTO: Copy Trading - Trade The Pool - Stock Trading Prop Firm
+- AUTO: Built-in Copy Trading that lets you manage two Evaluation accounts simultaneously — with one action, full control, and zero complexity.
+- AUTO: Learn more about copytrading
+- AUTO: Take advantage of copytrading
+- AUTO: How does the copy trading feature work at Trade The Pool?
+- AUTO: Copy trading is allowed at Trade The Pool, provided it is used to manage your own trading strategy across a maximum of two accounts and follows the rules below.
+- AUTO: You may copy trades between a maximum of two accounts only.
+- AUTO: The use of any external or automated third-party copying tools/software is strictly prohibited.
+- AUTO: TraderEvolution, Copy Trading Feature:
+- AUTO: The rules for the TraderEvolution copy trading feature follow the same guidelines.
+- AUTO: Take Profit or Stop Loss orders will not be automatically created for the follower accounts.
+- AUTO: For more information about copy trading, please refer to the Program Terms .
+- AUTO: Which programs and accounts support copy trading?
+- AUTO: What happens to the old manual copy trading rule?
+- AUTO: Manual copy trading is allowed for evaluation and funded accounts.
+- AUTO: start copytrading now
+
+## Trade The Pool — https://tradethepool.com/privacy-policy
+- AUTO: Automatically through your use of our Website and Services (for example, device and usage data collected via cookies and similar technologies).
+
+## Trade The Pool — https://tradethepool.com/privacy-policy/
+- AUTO: Automatically through your use of our Website and Services (for example, device and usage data collected via cookies and similar technologies).
+
+## Trade The Pool — https://tradethepool.com/program-terms/
+- AUTO: While all Users are encouraged to take advantage of the vendor manual, the TTP system has been customized and packaged for its Users, and some features may have been added, customized, or removed.
+- AUTO: A symbol may be subject to an automatic halt, without notice, after the asset moved 10% within 5 regular trading minutes.
+- AUTO: Beginning 10 minutes before the end of each day (regular trading hours), all open orders and positions will be automatically fully liquidated.
+- AUTO: Note: It is the User’s responsibility to ensure compliance with buying power limits; if the User wishes control over the closing price, all positions should be closed manually before this deadline.
+- AUTO: In case a user fails to renew in time using the automated system, CS should be contacted immediately if extension is desired.
+- AUTO: Copy trading is defined as entering any position within 30 minutes of entering the same position in another account, regardless of size or entry price.
+- AUTO: Copy trading is allowed only between 2 accounts (not more) that are each Mini BP, Super BP, or MAX/FLEX of the following sizes:
+- AUTO: Support for automated trading, including the specific integration with SignalStack, is currently in a beta state.
+- AUTO: As stated in the overall program terms, the trader is responsible for all trades conducted on the account regardless of whether manually or automatically created.
+- AUTO: Besides the Company’s right to reserve approval for any algorithm, integration, or client, determination of service load is at the Company’s judgement; the Company may request or require adjustments to make any automation less demanding, whether on an individual basis or across the board.
+- AUTO: As noted above, TTP may revoke authorization for automated trading in general as well.
+
+## Trade The Pool — https://tradethepool.com/terms-and-conditions/
+- AUTO: You agree that these activities may be performed automatically without any further consent, consultation, or approval on Your part being necessary, and that You are not entitled to any remuneration or revenue associated with the use of the data by Us.
+- AUTO: Users may complete checkout using either automated wallet integration (“Connect Wallet”) or manual crypto transfer (“Manual Payment”).
+- AUTO: Users who select the Manual Payment option bear sole and exclusive responsibility for accurately transferring the exact required amount, selecting the correct network, and providing all required order identifiers.
+- AUTO: Where a manual fund recovery or transaction adjustment is approved and executed by the payment service provider, the Recovery Fee will be deducted directly from the recovered funds by the payment service provider or required to be settled prior to account activation.
+- AUTO: Payment Mismatches or transaction discrepancies where the total affected amount is less than or equal to the applicable Recovery Fee threshold set by the payment service provider are strictly ineligible for manual recovery or adjustment by the payment service provider or the Company.
+- AUTO: Neither the Company nor the payment service provider will undertake investigation, tracing, or manual processing for any mismatched or erroneous manual crypto transfer below such threshold.
+- AUTO: Users acknowledge and accept that any uncoordinated or mismatched manual crypto transfer below the applicable threshold will be deemed unrecoverable and irrevocably forfeited.
+- AUTO: Payments sent from crypto exchanges or service providers established in Russia, or from platforms, exchanges, or payment agents listed under EU restrictive measures (including Annex XLV to Regulation (EU) No 833/2014, as amended from time to time), or any other sanctioned entities, cannot be processed and will be automatically placed on hold by the payment processor.
+- AUTO: High-frequency trading in which the majority of trades duration span is measured within a few seconds or less;
+- AUTO: Trade coordination or copy trading with other traders or accounts;
+- AUTO: Expert advisors which scalp during the rollover-night to take advantage of the price feed;
+- AUTO: Expert advisors from a third party where other traders have the same trades open;
+- AUTO: Using an expert advisors from a provider where the trader does not own the source code;
+- AUTO: You manipulated Our systems, whether manually or through any use of an automated system (e.g.
+- AUTO: bot) or any other tool or method which deviated from normal, typical and intended use of Our system.
+- AUTO: The User may not use any custom, algorithmic, or other automated trading software (collectively, “ Automated Trading Software ”) to execute trades.
+
 ## TradeDay — https://tradeday.com/privacy-policy/
 - AUTO: “Log Data” means information that your browser sends whenever you visit a website; this information is automatically recorded by our servers.
 - AUTO: You agree that such activities may be performed automatically and in no circumstance shall you be entitled to any payment or compensation.
@@ -4262,6 +4927,69 @@
 
 ## Tradeify — https://tradeify.co/terms-of-use
 - AUTO: use any robot, spider, scraper or other automatic device, manual process or application or data mining, scraping or extraction tool to access, harvest, monitor, copy or use the Site without the express written permission of Tradeify;
+
+## Traders Launch — https://traderslaunch.com/
+- AUTO: Buffer account opens automatically.
+- AUTO: When You Pass Buffer account opens automatically
+- AUTO: If you haven't passed by day 60 but you're above 50% of your profit target, you get a free 30-day extension automatically, at no extra cost.
+- AUTO: That includes copying trades by hand, with a trade copier or with an automated strategy.
+- AUTO: Are scalping and high-frequency trading allowed?
+- AUTO: Scalping is allowed; HFT-style trading is not.
+- AUTO: For this rule, scalping means trades held for 5–30 seconds.
+- AUTO: If more than 10% of your trades are opened and fully closed within two seconds, our HFT filter may flag your account and pause it for review.
+- AUTO: Hedging, HFT-style trading and holding or trading an index future while it is within 2% of its CME price limit are prohibited, and excessive martingale-style trading may result in an account review.
+- AUTO: Scalping and reasonable scaling and averaging are allowed, within the rules described here and in the Terms of Service.
+
+## Traders Launch — https://traderslaunch.com/crypto
+- AUTO: If you haven't passed by day 60 but you're above 50% of your profit target, you get a free 30-day extension automatically, at no extra charge.
+- AUTO: If you haven't passed by day 60 but you're above 50% of your profit target, you get a free 30-day extension automatically, at no extra cost.
+- AUTO: Are scalping and high-frequency trading allowed?
+- AUTO: Scalping is allowed; HFT-style trading is not.
+- AUTO: For this rule, scalping means trades held for 5–30 seconds.
+- AUTO: If more than 10% of your trades are opened and fully closed within two seconds, our HFT filter may flag your account and pause it for review.
+- AUTO: Hedging, HFT-style trading and holding or trading an index future while it is within 2% of its CME price limit are prohibited, and excessive martingale-style trading may result in an account review.
+- AUTO: Scalping and reasonable scaling and averaging are allowed, within the rules described here and in the Terms of Service.
+- AUTO: That includes copying trades by hand, with a trade copier or with an automated strategy.
+- COUNTRY: Are there any restricted countries?
+
+## Traders Launch — https://traderslaunch.com/faq
+- AUTO: If you haven't passed by day 60 but you're above 50% of your profit target, you get a free 30-day extension automatically, at no extra charge.
+- AUTO: If you haven't passed by day 60 but you're above 50% of your profit target, you get a free 30-day extension automatically, at no extra cost.
+- AUTO: Are scalping and high-frequency trading allowed?
+- AUTO: Scalping is allowed; HFT-style trading is not.
+- AUTO: For this rule, scalping means trades held for 5–30 seconds.
+- AUTO: If more than 10% of your trades are opened and fully closed within two seconds, our HFT filter may flag your account and pause it for review.
+- AUTO: Hedging, HFT-style trading and holding or trading an index future while it is within 2% of its CME price limit are prohibited, and excessive martingale-style trading may result in an account review.
+- AUTO: Scalping and reasonable scaling and averaging are allowed, within the rules described here and in the Terms of Service.
+- AUTO: That includes copying trades by hand, with a trade copier or with an automated strategy.
+- COUNTRY: Are there any restricted countries?
+
+## Traders Launch — https://traderslaunch.com/futures/rules
+- AUTO: Scalping trades held for 5–30 seconds are allowed; HFT-style trading is not permitted, and accounts may be paused for review when more than 10% of trades are opened and fully closed within two seconds
+
+## Traders Launch — https://traderslaunch.com/pricing
+- AUTO: If you haven't passed by day 60 but you're above 50% of your profit target, you get a free 30-day extension automatically, at no extra cost.
+- AUTO: That includes copying trades by hand, with a trade copier or with an automated strategy.
+- AUTO: Are scalping and high-frequency trading allowed?
+- AUTO: Scalping is allowed; HFT-style trading is not.
+- AUTO: For this rule, scalping means trades held for 5–30 seconds.
+- AUTO: If more than 10% of your trades are opened and fully closed within two seconds, our HFT filter may flag your account and pause it for review.
+- AUTO: Hedging, HFT-style trading and holding or trading an index future while it is within 2% of its CME price limit are prohibited, and excessive martingale-style trading may result in an account review.
+- AUTO: Scalping and reasonable scaling and averaging are allowed, within the rules described here and in the Terms of Service.
+
+## Traders Launch — https://traderslaunch.com/results
+- AUTO: Scalping trades held for 5–30 seconds are allowed.
+- AUTO: HFT-style trading is not permitted; if more than 10% of your trades are opened and fully closed within two seconds, your account may be flagged and paused for review.
+
+## Traders Launch — https://traderslaunch.com/terms
+- AUTO: This license shall automatically terminate if you violate any of these restrictions and may be terminated by Traders Launch LLC at any time.
+- AUTO: Each user will automatically get all necessary applications sent to them by email.
+- AUTO: Scalping & High Frequency Trading Rules
+- AUTO: Scalping is allowed.
+- AUTO: For purposes of this rule, scalping means trades held for 5–30 seconds.
+- AUTO: HFT-style trading is not permitted.
+- AUTO: If more than 10% of your trades are opened and fully closed within two seconds, your account may be flagged by our HFT filter and paused for review.
+- AUTO: As soon as an Evaluation Funded Trader reaches the set profit goals set forth upon signup, and satisfies the consistency rule, without violating any risk rules and trade restrictions, the Evaluation Account will automatically be paused and a Traders Launch funding specialist will reach out to schedule a funding call.
 
 ## aquafunded-futures (via propfirmmatch) — https://propfirmmatch.com/futures/prop-firms/aquafunded-futures
 - AUTO: Expert Advisors, HFTs, Automation

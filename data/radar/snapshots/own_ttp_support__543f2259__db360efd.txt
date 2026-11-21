@@ -1,0 +1,162 @@
+CFD Intraday Rules | The Trading Pit Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Poppins".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Website Community Client Area العربية English Deutsch Italiano 日本語 Bahasa Melayu Português 简体中文 Español Türkçe Tiếng Việt English
+Website Community Client Area العربية English Deutsch Italiano 日本語 Bahasa Melayu Português 简体中文 Español Türkçe Tiếng Việt English
+Search for articles...
+All Collections
+CFDs
+CFD Intraday
+CFD Intraday Rules
+CFD Intraday Rules
+Everything that applies to your CFD Intraday account, in one place — what you must do to pass, the limits you can't breach, and what's allowed.
+Updated this week
+Table of contents
+These are the rules for your CFD Intraday account. Most apply in both the Challenge and the Earning Phase. There are two types of rules:
+• Hard rules — breaking one breaches the account: it fails and is disabled.
+• Soft rules — requirements you must meet. Breaking them doesn't fail the account; you keep trading until the requirement is met.
+Exact Profit Target and loss limit amounts depend on your account size and are shown in your Client Area.
+At A Glance
+Rule
+Applies In
+Type
+Profit Target (1-Phase 10%; 2-Phase 10% then 5%)
+Challenge
+Objective To Pass
+Minimum 3 Profitable Days / Trading Days
+Challenge & Earning
+Soft — No Breach
+Consistency 50% (1-Phase $100K/$200K)
+Challenge & Earning
+Soft — No Breach
+Daily Loss Limit (1-Phase 3%; 2-Phase 5%)
+Challenge & Earning
+Hard — Breach
+Maximum Loss (Static or Trailing)
+Challenge & Earning
+Hard — Breach
+No Overnight Or Weekend Holding
+Challenge & Earning
+Auto-Closes Positions
+News Trading
+Challenge: Allowed / Earning: Not Allowed
+Trading Blocked — No Breach
+Stop-Out (100% Margin Level)
+Active account
+Auto-Closes Positions
+Inactivity (21 days)
+Challenge & Earning
+Hard — Breach
+Gap, Grid, Martingale, HFT, Cross-Account Hedging, Cross-Client Copy
+Challenge & Earning
+Prohibited — Breach
+What You Must Do To Pass (Objectives)
+Profit Target (Objective)
+• 1-Phase: reach a 10% Profit Target.
+• 2-Phase: reach 10% in Phase 1, then 5% in Phase 2.
+You must reach it without breaking any rules. The exact amount for your account size is shown in your Client Area.
+Minimum Profitable Days / Trading Days (Soft — No Breach)
+• All 2-Phase accounts and 1-Phase $2,500 to $50,000: at least 3 profitable days. A day is profitable when your account gains at least 0.5% of the initial balance, measured at the 16:15 CT end-of-day cut-off.
+• 1-Phase $100,000 and $200,000: at least 3 trading days. These days don't need to be profitable.
+The days don't need to be consecutive.
+Consistency Rule (Soft — No Breach)
+Applies to 1-Phase $100,000 and $200,000 accounts only, in both phases. Your Best Day (your single most profitable day) must not exceed 50% of your Positive Days' Profit (the sum of all your profitable days; losing days are excluded).
+Going over 50% doesn't fail the account. Keep trading and add profit on other days until your Best Day is 50% or less.
+Limits You Must Not Breach (Hard Rules)
+Account
+Daily Loss Limit
+Maximum Loss
+Drawdown Type
+1-Phase $2,500 to $50,000
+3%
+6%
+Static
+1-Phase $100,000 and $200,000
+3%
+10%
+Trailing (end-of-day balance)
+2-Phase $2,500 to $100,000
+5%
+10%
+Static
+Daily Loss Limit (Hard Rule)
+This is the maximum loss allowed in a single day: 3% on 1-Phase accounts and 5% on 2-Phase accounts. It's measured on your end-of-day balance (closed P&L, commissions included) and updated at the end of each day at 16:15 CT. If your equity drops below the limit, the account is breached.
+Example (2-Phase $100,000 account):
+• 5% daily loss limit = $5,000 → today's limit is $95,000.
+• If the day closes at $96,100, tomorrow's limit becomes $91,100.
+Maximum Loss (Hard Rule)
+This is your overall loss limit. Which version applies depends on your account:
+• Static — 1-Phase $2,500 to $50,000 (6%) and every 2-Phase account (10%). The limit is fixed from your initial balance and never moves. Example: 10% on a 2-Phase $100,000 account is a fixed $90,000 limit, however much your balance grows.
+• Trailing on end-of-day balance — 1-Phase $100,000 and $200,000 (10%). The limit moves up with your end-of-day balance until it reaches your starting balance, then locks. Example: on a $100,000 account, once your closed balance reaches $110,000, the limit fixes at $100,000 and stops moving.
+In both versions, if your equity falls below the limit at any time, the account is breached.
+No Overnight Or Weekend Holding (Auto-Closes Positions)
+CFD Intraday is for day trading. Close all your positions 10 minutes before market close, and don't hold positions over the weekend.
+Any position still open at the end of an instrument's trading session is closed automatically by the system. This also applies to crypto, on a daily basis. You can check each instrument's trading session directly in the trading platform.
+If you want to hold positions overnight or over the weekend, choose Swing at checkout.
+Stop-Out (Auto-Closes Positions)
+If your Margin Level falls to 100%, the system automatically closes one or more open positions to protect your account.
+Do The Margin And Risk Per Trade Idea Rules Apply?
+No. The Margin Used Per Trade Idea and Risk Per Trade Idea rules don't apply to CFD Intraday.
+Inactivity (Hard Rule)
+If 21 consecutive days pass without a single trade, the account is considered inactive and breached. Leaving a pending order doesn't count as activity. The countdown starts when the account is created.
+What's Allowed, With Conditions
+News Trading (Allowed In The Challenge Only)
+News trading is allowed during the Challenge.
+In the Earning Phase, it isn't allowed. Trading is blocked from 2 minutes before to 2 minutes after major news releases, so make sure you're flat (no open positions) during that window.
+Scalping (Allowed)
+Allowed, including trades held for under a minute. What isn't allowed is High-Frequency Trading, where the majority of your trades last only a few seconds or less.
+A single trade that closes in seconds because your stop-loss or take-profit was hit won't breach your account, but deliberately placing stops or targets extremely close to entry as a strategy is treated as prohibited HFT-style trading.
+Stop-Loss & Take-Profit (Allowed)
+Not mandatory on every trade, but strongly recommended. If the majority of your trades are placed without a stop-loss, the Risk Team may contact you and require you to use them.
+Expert Advisors (EAs) (Allowed, With Limits)
+Allowed, provided they don't copy signals that aren't yours, scalp against the rules, run latency, reverse, hedge, arbitrage or HFT strategies, use emulators, or trade high-impact news in the Earning Phase. Accounts using prohibited EAs are denied any upgrade or payout, and the Challenge is not refunded.
+VPS (Allowed)
+You may use a VPS to run your Expert Advisor.
+Hedging (Allowed, With Limits)
+Allowed within the same account for risk management (no hedging arbitrage). Hedging across two accounts — a BUY on one and a SELL on the other, including on correlated assets — is prohibited.
+Copy Trading (Allowed, With Limits)
+Allowed only between accounts you own. Shared or mirrored trading between different people, or copying signals from an account that isn't yours, is treated as a breach.
+Prohibited Practices
+Gap Trading (Prohibited)
+Trading to profit from price gaps is not allowed. This includes:
+Opening trades within 2 hours of a market close when the market will stay closed for 2 or more hours, ahead of major news, earnings or events likely to cause a price gap.
+Holding positions through corporate earnings announcements or material corporate actions when they are exposed to significant price gaps, especially announcements made before the market opens or after it closes.
+Profits from this activity may be adjusted or removed, and the account may be terminated.
+Grid Strategies (Prohibited)
+Not allowed.
+A grid strategy involves placing multiple buy and/or sell orders at predetermined price intervals, creating a series or "grid" of positions around a price level.
+This includes systematically adding multiple positions as the market moves up or down to profit from price fluctuations rather than using independent trade setups.
+Martingale Strategies (Prohibited)
+Not allowed.
+A martingale strategy involves increasing the position size after a losing trade or series of losing trades, with the aim of recovering previous losses and generating a profit from a subsequent winning trade. This includes systematically increasing exposure as losses accumulate.
+High-Frequency Trading (HFT) (Prohibited)
+Not allowed on any account: executing multiple trades per second, dozens of trades within a minute, rapid-fire entries and exits, or any attempt to exploit speed, latency or feed delays. Violations result in account termination.
+Gambling (Prohibited)
+Excessive risk-taking is prohibited — overleveraging, overexposure to one asset, one-sided bets without analysis, and hyperactive impulsive trading. Violations can lead to restricted trading privileges, revoked rewards, reduced leverage or account termination. See our full Gambling Policy for the details.
+Accounts & Other Rules
+How Many Accounts / Allocation
+There's no limit on how many Challenges you can buy, and all accounts are managed from one Dashboard.
+In the Earning Phase, you can have up to 8 active Earning Accounts, with a combined initial balance of up to $400,000. This limit is shared across your CFD Intraday, Swing and Prime accounts. CFD Instant accounts (up to 2) aren't counted towards it.
+Scaling Up
+Your Earning Account balance can increase by 25% of its starting balance every 4 months, up to a combined $2,000,000 across your CFD Intraday and Prime (Swing) accounts. CFD Instant accounts (up to 2) aren't counted towards it.
+• What do I need to qualify? You need all of the following: at least 4 months of trading since you received the account or since its last scale-up, a net profit of at least 10% of the starting balance in that period, at least 2 processed payouts in that period, and the account in profit at the time of the scale-up.
+• How do I get it? Submit a scale-up request. Our Risk team reviews it and approves or declines it.
+• How much is added? 25% of the original starting balance each time. It doesn't compound, so a $100,000 account grows by $25,000 at every scale-up. If a scale-up would take you over $2,000,000, only the amount up to the limit is added.
+• What happens to my loss limits? They keep the same percentages and are recalculated on your new balance.
+• Are my accounts assessed separately? Yes. Each account must qualify on its own, and accounts can't be merged. Only the $2,000,000 limit is combined.
+Trading Device, IP & Network
+Trade from your own personal device, don't share it, and don't access more than one account from the same IP address or network. You can trade from anywhere and switch networks freely, and VPNs are allowed as long as they aren't used to share access or hide coordinated activity. Read the full policy .
+How Can I Check Why My Account Has Been Breached?
+Log in to your Client Area, select Accounts and click the account number. The reason for the breach is shown at the top centre of the account's Dashboard, next to the account number.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Risk Disclosure:
+All material published and disseminated by The Trading Pit should be considered as general information only. The information provided by the The Trading Pit or included herein is not intended to serve as (a) investment advice, (b) an offer or solicitation to buy or sell any securities, or (c) a recommendation, endorsement, or sponsorship of any security, company, or fund. Testimonials featured on the The Trading Pit’s website(s) may not reflect the experiences of other clients or customers and do not guarantee future performance or success. Using the information on the The Trading Pit’s website(s) is at your own risk. The Trading Pit, along with its partners, representatives, agents, employees, and contractors, does not accept any responsibility or liability for the use or misuse of such information.
+Trading leveraged instruments carries significant risk and is not suitable for all investors. Investors may lose all or more than their initial investment. Only risk capital—money that can be lost without affecting one’s financial security or lifestyle—should be used for trading, and only those with sufficient risk capital should engage in trading. This document is not a solicitation or an offer to buy or sell futures, options, or forex. Past performance does not necessarily predict future results.
+Hypothetical or simulated performance results have inherent limitations. Unlike an actual performance record, simulated results do not reflect real trading. Additionally, because these trades have not been executed, the results may have under- or overcompensated for the impact of certain market factors, such as lack of liquidity. Simulated trading programs are also typically designed with the benefit of hindsight. There is no guarantee that any account will achieve profits or losses similar to those shown.
+The Trading Pit does not offer Contracts for Difference to residents of certain jurisdictions including the USA, Canada and Russia. For a full list of restricted countries for our services please see our FAQs.
+This website is owned and operated by The Trading Pit Challenge GmbH with registration number FL-0002.693.417-1 and registered address at Heiligkreuz 6, 9490, Vaduz, Liechtenstein.
+The Trading Pit Challenge GmbH is part of The Trading Pit Group ("TTP Group") which provides the following services:
+The Trading Pit AG with registration number FL-0002.688.743-6 is the holding company of the Group.
+The Trading Pit Champions GmbH with registration number FL-0002.693.413-9 provides platform services to The Trading Pit Challenge GmbH
+The Trading Pit Limited with registration number ΗΕ 431291 provides business and administration services to the Group companies.
+© 2026 The Trading Pit Challenge GmbH. All Rights Reserved.

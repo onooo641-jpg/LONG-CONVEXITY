@@ -1,0 +1,114 @@
+FAQ | Funded Futures Network
+Futures
+Perps New 24/7 · 134 Markets
+70% OFF on Nexus or 50% OFF + Buy 1, Get 1 Free on Max Accounts
+Rules
+FAQ's
+Blog
+Payouts
+Competition
+Resources
+About
+Why FFN
+Preferred Platforms
+Affiliate Program
+Merch
+Contact
+Login
+Signup
+Frequently Asked Questions
+Straight answers on accounts, rules, payouts and platforms. Still stuck? Talk to us .
+How many accounts can I copy trade?
+You can copy trade a maximum of 5 accounts. You cannot have more than 5 accounts trading at one time on the same product simultaneously. If that happens, none of the accounts that took that trade will be eligible for funding.
+What are the preferred platforms?
+At FFN, we offer the following platforms: Onyx, Quantower (FundX), EdgeProX, MotiveWave Mobile. To learn more, head over to our Preferred Platforms page .
+How much does it cost to Reset my Exhibition Account?
+Instead of starting over in the Evaluation account, you can reset your Exhibition account for the following fees:
+$25k: $312.50
+$50k: $625
+$100k: $1,250
+$150k: $1,875
+$250k: $3,125
+Can I have more than one account?
+Yes. There is no limit on how many evaluations you can buy or hold. You can have up to 5 active Sim Funded accounts at one time. If you pass an evaluation while you already hold 5, the pass waits in your queue and its Sim Funded account activates when one of your 5 slots opens. Note that MAX accounts skip the exhibition stage entirely. All final decisions are at the sole discretion of FFN.
+Do you offer an affiliate program?
+Yes! Click HERE to join Funded Futures Network's affiliate program.
+What fees do I pay once I pass the evaluation?
+Professional market data fees apply to FFN Institution accounts only and do not apply to Sim Funded accounts. The Institution market data fee is TBD . It is paid from your Institution account balance.
+What are the commissions on each product & what products can I trade?
+For detailed information on each of the trading products we offer, see our Country Restrictions & Product List article in our Help Center, which includes the full product and commission table.
+Am I (The Trader) responsible for fees?
+During your evaluation period, the fees and commissions WILL be calculated and applied to your evaluation SIM balance, so it's important when tracking your PnL to account for the costs involved in each transaction.
+Am I allowed to trade Micro products? Which Micros do I have access to?
+Yes, you may trade E-micro products such as MES, MNQ, M2K, MYM, MCL, MBT, and MET . If there is a particular Micro product that you wish to trade, and it is not listed as one of our available products, feel free to reach out to the support team and we are likely to make the necessary adjustments for you to trade that product.
+We currently list Micro ES, Micro NQ, Micro Dow, Micro Crude Oil, Micro Bitcoin, Micro Eth, and soon to come Nano-BTC (an even smaller Bitcoin contract!).
+Can I trade during high impact news events?
+During the Evaluation period: Yes.
+While trading the Exhibition or Funded-Pro Account: For details on trading during high impact news events in both the Exhibition and Funded-Pro Accounts, please take the time to watch our video found HERE .
+You must make use of Financial Juice news calendar: no other news calendar is accepted.
+What is considered a T1 News Event?
+T1 News Events cannot be traded. Tier 1 News includes:
+For All Traders in Exhibition and Funded Accounts: FOMC Meetings (Wednesdays 2pm ET), FOMC Minutes, Employment Report (NFP), CPI
+For Energy Traders: EIA
+For Agricultural Traders: Agricultural Reports
+You must be flat , meaning no positions or orders (including limit orders) can be open 1 minute before and 1 minute after the release. Having a resting order on your chart is not considered flat. All positions must be flattened at least one minute before the scheduled T1 News event, you must remain flat until 1 minute after the event's start time.
+For example, if news is at 8:30, positions must be closed by 8:29:00 or earlier, and may only be reopened after 8:31:00.
+Although news Trading Protocols are in place, you are permitted to trade around other news releases if you so choose. However, it's important to recognize that broker data issues or disruptions can happen during these events. Therefore, it is highly recommended to avoid trading during news releases to minimize potential risks. FFN does not assume responsibility for any problems that may occur if you decide to trade during these times.
+Can I hold trades overnight, or through multiple trading sessions?
+No. ALL positions opened by our traders MUST be closed by 04:50pm EST . Traders are permitted to trade DURING the overnight session if they wish to do so, beginning at 06:00 pm EST , all the way through to 04:50 pm EST the following day.
+How does the Trailing Drawdown work?
+Check out our video to understand exactly how the Trailing Maximum Drawdown works, by clicking HERE .
+Why should I choose FFN?
+At FFN we pride ourselves on being the most trader-focused remote prop firm in existence. FFN is a company created by REAL traders with REAL experience, and a passion for running a shop that operates with honesty, integrity, and transparency.
+FFN's main goal is to bring as many funded traders on board as possible. Others in the funded trading space require overly restrictive stipulations that hinder trading, and trap traders in a frustrating cycle. FFN puts the funding of profitable traders, and the education of aspiring funded traders of the future, at the forefront of their entire operation.
+FFN's founders are made up of active traders and successful business owners, who know exactly what it takes to succeed in trading, and most importantly, achieve consistency and longevity in the business of being an active trader.
+You can learn a little more about us by clicking HERE .
+Can I use my trading bot?
+Automated trading is allowed but at the discretion of FFN. Any traders implementing HFT trading bots or attempting to exploit the simulated environment will lose access to their account.
+How do Payouts work?
+Be aware of the restricted times you are not allowed to trade during news events. Please refer to the rules page "trading the news" text and "Allowed Hours" video on our website.
+Sim Funded Pro Account: Payouts can be requested the same day you're eligible, provided you have met your account minimum threshold and are within the consistency rule (40% for OG and Standard MAX funded accounts, 25% for Express MAX funded accounts). This account has an 80/20 profit split . When a withdrawal is initiated & processed, FFN will take 20% and distribute the remaining 80% to the trader. Maximum withdrawal of $10,000 per user per payout . This amount is cumulative across all of your accounts and you are not permitted to request several withdrawals across several accounts if they are copy traded.
+FFN Institution (Live) Account: No consistency rule, and same-business-day payouts. Traders promoted to the FFN Institution start with $3,000 of real FFN capital , which can never be withdrawn. Institution accounts have a 90/10 profit split : you keep 90% of eligible live profit, and FFN's 10% generally stays in your account as additional FFN capital. Payouts must leave your Permanent Risk Buffer in place to keep the account open (see Article 4.3).
+Consistency Reset: When you make a withdrawal, your consistency rule resets on that account. The consistency reset is per account after each payout. For example, if you copy trade 5 accounts and withdraw from 2 of them, only those 2 accounts have their consistency reset: the other 3 are unaffected. Note: your best day P&L never resets.
+Minimum withdrawal: $500
+Account Minimum Thresholds (your balance must be at least $500 above the threshold to qualify for a withdrawal):
+25K Account: $26,500
+50K Account: $52,000
+100K Account: $103,600
+150K Account: $155,000
+250K Account: $256,000
+A balance below the Account Minimum Threshold alone does not mean a broken rule, but you will have to meet the Account Minimum Threshold before withdrawing again.
+Payout methods: PayPal, Rise, or Wise.
+Which Countries Are Restricted?
+For the full list of restricted countries and available trading products, see our Country Restrictions & Product List article.
+Can I Hedge?
+No. When you are in the Evaluation, Exhibition and Funded stage, hedging is considered a broken rule making you no longer eligible for funding. Hedging means holding a long and a short position at the same time in the same product, or across the ES and NQ index futures.
+The same product includes its mini and micro contracts. For example, you cannot go long on NQ and short on MNQ, or long on ES and short on MES.
+ES, MES, NQ and MNQ count as one family in any size. A long in one and a short in another is hedging in any combination, for example ES against NQ, MES against MNQ, ES against MNQ, or MES against NQ. No other pair of different products is covered by the hedging rule.
+Can I keep all the funds I make if I decide to close out all of my accounts?
+If you choose to close your accounts, you will forfeit your profits on any accounts closed. This includes funded accounts.
+No questions match. Ask us directly .
+99 Wall Street #1660
+New York NY 10006
+Company
+About
+Why FFN
+Preferred Platforms
+Payouts
+Rules
+FAQ's
+Affiliate Program
+Contact
+Legal
+Privacy Policy
+Terms of Use
+Cookie Policy
+Consent Preferences
+Risk Disclosure
+© 2022 Funded Futures Network LLC. The FFN logo is a trademark of Funded Futures Network LLC. Futures trading involves substantial risk of loss and is not suitable for every investor. You could lose all or more than your initial investment, so only risk capital should be used. Past performance is not indicative of future results, and hypothetical or simulated results have inherent limitations. Testimonials on this site are not a guarantee of future performance or success. Read the full risk disclosure .
+Black Friday. Pick yours.
+Want the best platform out there? Use Nexus. Take 70% off any Steady or Max account with code NEXUS . A 50K Max comes to $53.40.
+Want two? Max accounts are 50% off + Buy 1, Get 1 Free on Rithmic, Onyx or DeepCharts, no code needed.
+Trading Steady? It's 50% off on Rithmic, Onyx or DeepCharts.
+Black Friday pricing ends Nov 30. No Buy 1, Get 1 on Steady or Nexus. Skip the Eval not included. Terms apply. 1 free active account at a time.
+Claim Offer

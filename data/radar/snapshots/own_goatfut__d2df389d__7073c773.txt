@@ -1,0 +1,57 @@
+Instant | Goat Funded Futures FAQ's
+Help Center / Choose a model / Instant
+Instant
+Instant: specifications, rules and payouts
+Everything for Instant 25K to 150K: no evaluation, the 15% or 20% consistency option, the optional daily loss limit, end of day trailing drawdown, and how rewards work.
+Values by account size: Instant 25K / Instant 50K / Instant 100K / Instant 150K
+Max drawdown (end of day trailing) : $1,000 / $2,000 / $3,000 / $4,500
+Daily loss limit, if chosen : $500 / $1,000 / $1,500 / $2,250
+Max contracts : 2 minis / 4 minis / 6 minis / 8 minis
+First reward target (6%) : $1,500 / $3,000 / $6,000 / $9,000
+Later reward targets (5%), per cycle : $1,250 / $2,500 / $5,000 / $7,500
+Reward cap, 15% option : $600 / $1,200 / $1,800 / $2,400
+Plan overview Drawdown and limits Consistency Rewards Trading rules
+Instant is our no-evaluation plan: you start on a funded account straight away. It replaces Instant Lite and Instant Classic for accounts bought from 18 November 2026. At checkout you choose your consistency option (15% or 20%) and whether to trade with or without a daily loss limit. Your choices stay with the account.
+Key points
+No evaluation. Trade a funded account from day one.
+Consistency: 15% or 20%, chosen at checkout and fixed on every reward.
+Daily loss limit: optional at checkout. If you choose it, hitting it closes the account.
+End of day trailing drawdown that locks at your starting balance plus $100.
+First reward at 6% profit, with no minimum number of days. Later rewards at 5% per cycle.
+No daily profit cap.
+80/20 profit split, with 90/10 as a paid add-on (+20% on the price).
+Resets are not available.
+$0 activation fee.
+Specifications by size
+Instant 25K Instant 50K Instant 100K Instant 150K
+Max drawdown (end of day trailing) $1,000 $2,000 $3,000 $4,500
+Daily loss limit, if chosen $500 $1,000 $1,500 $2,250
+Max contracts 2 minis 4 minis 6 minis 8 minis
+First reward target (6%) $1,500 $3,000 $6,000 $9,000
+Later reward targets (5%), per cycle $1,250 $2,500 $5,000 $7,500
+Reward cap, 15% option $600 $1,200 $1,800 $2,400
+Reward cap, 20% option $1,000 $2,000 $3,000 $4,000
+Prices change with our promotions and depend on the options you choose. For the current price, see the pricing page or ask us in chat.
+Instant Classic and Instant Lite
+Instant Classic and Instant Lite are no longer on sale. Accounts bought before 18 November 2026 keep their original rules: see the Instant Classic and Instant Lite articles.
+Maximum drawdown
+Instant uses end of day trailing drawdown. The limit moves up with your closing balance at the end of each trading day, and it stops trailing once it reaches your starting balance plus $100.
+Example on an Instant 50K: your limit starts at $48,000. Once your end of day balance reaches $52,100, the limit locks at $50,100 for the life of the account.
+Falling to or below the limit is a hard breach and closes the account.
+Daily loss limit
+The daily loss limit is optional. You choose at checkout whether to trade with it or without it. If you choose it, hitting it is a hard breach: the account is closed on the first hit. There is no pause and no strike count. Accounts bought without it have no daily loss limit.
+Consistency rule
+You choose 15% or 20% at checkout, and it stays fixed on every reward. No single trading day can make up more than that share of your profit for the reward. Your option also sets your reward cap, see the table above.
+Rewards
+Your first reward opens once you reach 6% profit. There is no minimum number of days.
+After that, each reward opens at 5% profit in the new cycle.
+Each reward is capped by your consistency option (table above).
+Rewards are requested within the payout windows, the same as our other plans (Daily Payouts is the only exception).
+The minimum reward is $500, and KYC verification is required before your first reward.
+The 1 minute holding rule applies at each reward request, as on every plan.
+Trading rules
+Funded accounts have a 2 minute buffer around high impact news: no opening, closing or triggering of pending orders within 2 minutes before or after a scheduled release.
+Positions cannot be held overnight.
+Resets are not available. If the account is breached, you need to buy a new one.
+Updated 19 November 2026
+Back to top

@@ -1,0 +1,78 @@
+Drawdown Types: EOD vs. Trailing Explained | Blueberry Futures Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Noto Sans".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Sign Up Login English हिन्दी 日本語 Español English
+Sign Up Login English हिन्दी 日本語 Español English
+Search for articles...
+All Collections
+Evaluation Accounts (The Challenge)
+Account Specs & Comparison (Start Here)
+Drawdown Types: EOD vs. Trailing Explained
+Drawdown Types: EOD vs. Trailing Explained
+November 24, 2025
+Table of contents
+Understanding how your maximum loss limit is calculated is the single most important rule for passing your challenge. Blueberry Futures offers two distinct drawdown models to suit different trading styles: End-of-Day (EOD) Drawdown and Real-Time Trailing Drawdown .
+Accelerated Challenge : Trailing Drawdown
+The Trailing Drawdown is a dynamic loss limit that tracks your account's peak value in real-time throughout the trading day.
+How it Works:
+Dynamic Limit
+The Drawdown Limit follows your highest live account equity (this includes both closed profits and unrealized profits from open positions).
+​
+The Rule
+Your Trailing Drawdown Limit is always your maximum allowed loss amount (e.g., $2,000 for the $50K plan) subtracted from your highest peak equity.
+Current Limit = Highest Peak Equity - Max Drawdown Amount
+​
+Movement
+When your account makes new equity highs, the Drawdown Limit moves up accordingly.
+Lock-in
+Once the limit moves up, it never moves back down , even if your account equity falls. It is locked in at the highest point achieved, protecting the firm's capital.
+Breach
+If your live account equity drops below the most recently adjusted Trailing Drawdown Limit at any point during the trading day, your challenge is failed.
+Trailing Example:
+Trailing Drawdown Example
+(50K Plan with $2,000 Max Drawdown)
+Start Balance
+$50,000
+Initial Drawdown Limit
+$48,000
+Equity Peak
+$51,000 (Achieved intra-day)
+New Drawdown Limit
+$49,000 (Locked in at $51,000 - $2,000)$
+Account Fails If...
+Equity drops below $49,000
+Ascent Challenge: End-of-Day (EOD) Drawdown
+The EOD Drawdown is a loss limit that only updates when the trading session is officially closed. This gives traders more room to manage intra-day volatility.
+​
+How it Works:
+End-of-Day Limit
+The Drawdown Limit is calculated only from your end-of-day closed balance . On days you finish in profit, your minimum required balance trails upward ; on flat or losing days, it stays the same.
+Updates
+The minimum balance is only adjusted at the end of the trading day and is always based on closed profits , not intraday spikes. Unrealized (floating) profits during the day do not move the drawdown.
+The Rule
+Current Minimum Balance = Highest End-of-Day Closing Balance Reached So Far − Max Drawdown Amount
+Intraday Risk
+Although the limit only recalculates once per day after the session closes, your live equity (including open positions) must never fall below the current Minimum Balance at any time. If it does, the challenge is breached .
+​
+Trader Advantage: Because the limit only moves at end-of-day and does not follow intraday peaks, you can experience larger intraday pullbacks from your peak equity without breaching, as long as your equity never falls below the current Minimum Balance .
+EOD Example:
+EOD Drawdown Example (50K Plan with $2,000 Max Drawdown)
+Day 1 Start Balance
+$50,000
+Initial Minimum Balance
+$48,000
+Day 1 Max Equity Peak
+$53,000 (Intra-day)
+Day 1 Closing Balance
+$51,500
+Day 2 Minimum Balance
+$49,500 (Adjusted to $51,500 - $2,000)
+Related Articles
+How do I qualify for a live trading account?
+Detailed Parameters of our Challenges
+Which account is right for me?
+Ascent Account Specs: Rules & Targets
+Accelerated Account Specs: Rules & Targets
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Blueberry Futures

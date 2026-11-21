@@ -1,0 +1,44 @@
+S2L Consistency | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Moving from Pro or S2F to Live
+S2L Evaluation
+S2L Consistency
+S2L Daily Loss Limit
+S2L Drawdown
+Live Payouts
+Live Scaling
+Live Accounts
+Platforms
+Trading Rules and Guidelines
+Affiliate Program
+Agreements and Disclaimers
+All Collections Live & S2L Program S2L Consistency S2L Consistency
+S2L 25% consistency rule with an example. Live accounts have no consistency rule.
+Updated over a month ago
+Copy for LLM
+S2L evaluations use a 25% consistency rule : your best day can't be more than 25% of your total profit. Live accounts have no consistency rule .
+How it's calculated
+Largest single-day profit ÷ total profit = consistency %
+Example (Core): total profit $3,200, best day $900. 900 ÷ 3,200 = 28%, over 25%. Once total profit reaches $3,600, you're back within the rule.
+If you're over the limit
+Consistency is checked at the end of every trading day. A day that ends over 25% isn't a Qualifying Day, and you can't pass until you're back within the rule. Keep trading to bring it down, and check your numbers with the Consistency Calculator .
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+Trail Consistency
+Static Consistency
+S2F Consistency
+S2L Evaluation
+Live Accounts
+On this page
+How it's calculated
+If you're over the limit

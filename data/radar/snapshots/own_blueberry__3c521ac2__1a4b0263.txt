@@ -1,0 +1,24 @@
+Do you have a Daily Loss Limit? | Blueberry Futures Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Noto Sans".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Sign Up Login English हिन्दी 日本語 Español English
+Sign Up Login English हिन्दी 日本語 Español English
+Search for articles...
+All Collections
+Trading Rules & Risk Management
+Trading Limits & Restrictions
+Do you have a Daily Loss Limit?
+Do you have a Daily Loss Limit?
+🚫 No. Unlike some other firms, we do not enforce a mandatory Daily Pause rule.
+November 24, 2025
+However, you can use the Risk Manager inside BlackArrow to create your own daily limits and protections. You’re able to configure the system to automatically block new orders when any of the following exceeds a value you set (X):
+Total loss > X
+Total gain > X
+Drawdown > X
+Number of consecutive losing trades > X
+Number of assets traded > X
+Number of closed trades > X
+Specific time period reached
+This gives you full control to build your own Daily Pause-style protection if you want it, without it being a hard rule from the firm.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Blueberry Futures

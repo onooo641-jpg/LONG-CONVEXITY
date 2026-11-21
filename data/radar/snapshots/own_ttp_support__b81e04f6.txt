@@ -1,0 +1,133 @@
+Stocks Rules | The Trading Pit Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Poppins".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Website Community Client Area العربية English Deutsch Italiano 日本語 Bahasa Melayu Português 简体中文 Español Türkçe Tiếng Việt English
+Website Community Client Area العربية English Deutsch Italiano 日本語 Bahasa Melayu Português 简体中文 Español Türkçe Tiếng Việt English
+Search for articles...
+All Collections
+STOCKS
+Stocks Rules
+Stocks Rules
+Everything that applies to your Stocks account, in one place — what to hit to pass, the limits you can’t breach, and what counts.
+Updated this week
+Table of contents
+These are the rules for your Stocks account. We group them into two types:
+Hard rules — breaking one breaches the account: it fails and is disabled.
+Soft rules — requirements, or conditions that decide whether a trade counts; they don’t fail your account.
+Your Profit Target, Max Drawdown and Daily Pause depend on your account size — see the table in “Stocks — how it works”. None of the Stocks rules depends on when your account was created.
+At A Glance
+Rule
+Applies In
+Type
+Profit Target (7%)
+Challenge
+Objective To Pass
+Minimum 3 Trading Days
+Challenge
+Soft — No Breach
+40% Consistency (Raises The Target)
+Challenge only
+Soft — AdjustsTarget
+Max Drawdown (trailing EOD, 4%)
+Challenge & Earning
+Hard — Breach
+Daily Pause (2%)
+Challenge & Earning
+Auto-Pause For The Day
+No Overnight (10-Min Pre-Close Liquidation)
+Challenge & Earning
+Force-Closed
+Inactivity (14 days)
+Challenge & Earning
+Hard — Breach
+Min $0.10/Share Per Trade
+Challenge & Earning
+Soft — Trade Doesn’t Count
+1-Minute Minimum Hold (No Scalping)
+Challenge & Earning
+Soft — Profit Excluded
+Min 200,000-Share Average Volume
+Challenge & Earning
+Blocks The Trade
+Halt Trading
+Challenge & Earning
+No Trading + Cooldown
+Grid, Martingale, Gap, HFT
+Challenge & Earning
+Prohibited / Reviewed
+What You Must Do To Pass (Objectives)
+Profit Target (Objective)
+Reach the Profit Target for your account size — 7% ($1,750 on $25K, $3,500 on $50K) — without breaking any rules. There is no time limit.
+Minimum Trading Days (Soft — No Breach)
+You must trade on at least 3 days to complete the Challenge.
+40% Consistency Rule (Soft — Adjusts Target)
+Applies to the Challenge only — never to a Stocks Earning Account — and it never fails your account. Your most profitable day must not exceed 40% of your Profit Target; any amount over that cap is added to the target. Example: on a $1,750 target the cap is $700; a $800 best day is $100 over, so the target becomes $1,850.
+Limits You Must Not Breach (Hard Rules)
+Max Drawdown (Trailing on End-of-Day Balance) (Hard Rule)
+Your Max Drawdown is 4% of your account. It trails your end-of-day balance (closed P&L, not intraday peaks) upward, never downward, and stops once it reaches your starting balance. If your balance falls to the drawdown level, the account is breached.
+Example:
+$25,000 account with a $1,250 Max Drawdown → initial level $23,750.
+End-of-day $25,500 → level trails to $24,250; end-of-day $26,000 → $24,750 (an intraday $26,200 is ignored).
+Once the level reaches your $25,000 starting balance it locks and won’t trail higher.
+Daily Pause (Daily Loss Limit) (Auto-Pause For The Day)
+The Daily Pause is 2% of your account. It’s based on your equity (including unrealised P&L); when your equity falls to the limit, all open trades are closed and the account is paused for the rest of the trading day. The limit recalculates each day from the previous day’s closing balance.
+Important: the Daily Pause is a safety feature, not a guaranteed hard stop. In fast markets, slippage can push your loss past it — and past your Max Drawdown, which breaches the account. Don’t rely on the Daily Pause instead of a stop-loss.
+No Overnight Positions (Force-Closed)
+Positions are not held overnight. All open positions and pending orders are automatically liquidated 10 minutes before the market close, on both Challenge and Earning accounts.
+Inactivity (Hard rule)
+If your account is inactive for more than 14 days, it is breached.
+What Counts As A Valid Trade
+Minimum $0.10 Per Share (Trade Range) (Soft — Trade Doesn’t Count )
+A trade only counts as profitable if it gains at least $0.10 per share.
+Example: if you buy at $50.10, you must sell at $50.20 or higher.
+Smaller gains are automatically excluded and don’t contribute to your performance — they don’t breach the account.
+1-Minute Minimum Hold (Soft — Profit Excluded )
+Stocks accounts don’t allow true scalping: each trade must stay open for at least 1 minute before it’s closed (buy-sell or sell-buy on the same stock). Profit from trades closed sooner is automatically excluded.
+Minimum Trading Volume (Blocks The Trade)
+During regular trading hours you can only open a new position in a stock whose average daily trading volume over the past 14 days is greater than 200,000 shares. Stocks below that threshold can’t be opened on the platform — this protects you from illiquid markets and slippage
+Halt Trading (No trading + Cooldown)
+No trading is allowed during a trading halt — symbol-specific halts, market-wide circuit breakers, or any disruption declared by The Trading Pit. After a halt, there is a 1-minute cooldown before you can open or add to positions. You are responsible for monitoring halts (we reference the official NYSE halt feed).
+What’s Allowed, With Conditions
+News Trading (Allowed)
+Allowed on Stocks accounts, in both the Challenge and Earning Phase, with no time window. Be mindful of the heightened volatility around news.
+Stop-Loss & Take-Profit (Allowed)
+Not mandatory on every trade, but strongly recommended. If the majority of your trades are placed without a stop-loss, the Risk Team may reach out and require you to use them.
+Hedging (Allowed, With Limits )
+Allowed within the same account for risk management (no hedging arbitrage). Hedging across two accounts is prohibited.
+Expert Advisors (EAs) & VPS (Allowed, With Limits )
+EAs are allowed provided they don’t copy signals that aren’t yours, run latency/arbitrage or HFT, or use emulators. You may use a VPS to run your EA.
+Copy trading (Allowed, With Limits )
+You may copy trades across your own accounts (you can hold up to 2). Copying from other traders or external sources is not allowed.
+Prohibited practices
+High-Frequency Trading (HFT) (Reviewed)
+Strategies where the majority of your trades last only a few seconds or less are subject to Risk Team review and are not permitted as a trading style.
+Grid Strategies (Prohibited)
+Not allowed.
+A grid strategy involves placing multiple buy and/or sell orders at predetermined price intervals, creating a series or “grid” of positions around a price level. This includes systematically adding multiple positions as the market moves up or down to profit from price fluctuations rather than using independent trade setups.
+Martingale Strategies (Prohibited)
+Not allowed.
+A martingale strategy involves increasing the position size after a losing trade or series of losing trades, with the aim of recovering previous losses and generating a profit from a subsequent winning trade. This includes systematically increasing exposure as losses accumulate.
+Gap Trading (Prohibited)
+Do not open trades within 2 hours of a market close when it will stay closed for 2 or more hours, or ahead of major news, earnings or events likely to cause a price gap.
+This may result in account termination without compensation.
+Accounts & Other Rules
+How Many Accounts
+You can hold up to 2 active Stocks Challenges (using the same email) and up to 2 active Stocks Earning accounts. All accounts are managed from one Dashboard, and you may copy trades across your own accounts.
+Trading Device, IP & Network
+An IP that changes every few days (e.g. while travelling) is fine.
+An IP that changes several times within the same day can raise suspicion of account sharing, which is forbidden.
+See our Trading Device, IP & Network Policy for the full rules on devices, IPs and shared access.
+Rules That Also Apply
+Stocks also follows our shared Basic Rules for CFD, Futures & Stocks — including Prohibited Trading Practices and Inactivity — as well as our firm-wide Gambling Policy and Trading Device, IP & Network Policy. See those articles for the full details.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Risk Disclosure:
+All material published and disseminated by The Trading Pit should be considered as general information only. The information provided by the The Trading Pit or included herein is not intended to serve as (a) investment advice, (b) an offer or solicitation to buy or sell any securities, or (c) a recommendation, endorsement, or sponsorship of any security, company, or fund. Testimonials featured on the The Trading Pit’s website(s) may not reflect the experiences of other clients or customers and do not guarantee future performance or success. Using the information on the The Trading Pit’s website(s) is at your own risk. The Trading Pit, along with its partners, representatives, agents, employees, and contractors, does not accept any responsibility or liability for the use or misuse of such information.
+Trading leveraged instruments carries significant risk and is not suitable for all investors. Investors may lose all or more than their initial investment. Only risk capital—money that can be lost without affecting one’s financial security or lifestyle—should be used for trading, and only those with sufficient risk capital should engage in trading. This document is not a solicitation or an offer to buy or sell futures, options, or forex. Past performance does not necessarily predict future results.
+Hypothetical or simulated performance results have inherent limitations. Unlike an actual performance record, simulated results do not reflect real trading. Additionally, because these trades have not been executed, the results may have under- or overcompensated for the impact of certain market factors, such as lack of liquidity. Simulated trading programs are also typically designed with the benefit of hindsight. There is no guarantee that any account will achieve profits or losses similar to those shown.
+The Trading Pit does not offer Contracts for Difference to residents of certain jurisdictions including the USA, Canada and Russia. For a full list of restricted countries for our services please see our FAQs.
+This website is owned and operated by The Trading Pit Challenge GmbH with registration number FL-0002.693.417-1 and registered address at Heiligkreuz 6, 9490, Vaduz, Liechtenstein.
+The Trading Pit Challenge GmbH is part of The Trading Pit Group ("TTP Group") which provides the following services:
+The Trading Pit AG with registration number FL-0002.688.743-6 is the holding company of the Group.
+The Trading Pit Champions GmbH with registration number FL-0002.693.413-9 provides platform services to The Trading Pit Challenge GmbH
+The Trading Pit Limited with registration number ΗΕ 431291 provides business and administration services to the Group companies.
+© 2026 The Trading Pit Challenge GmbH. All Rights Reserved.

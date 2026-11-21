@@ -1,0 +1,246 @@
+Tick size and profit per tick Calculation | E8 Markets Help Center Futures Skip to main content
+E8X Dashboard E8 Markets Website Classic Markets & Perpetuals Helpcenter Čeština English हिन्दी Português Español English
+E8X Dashboard E8 Markets Website Classic Markets & Perpetuals Helpcenter Čeština English हिन्दी Português Español English
+Search for articles...
+All Collections
+Trading Platforms
+Tick size and profit per tick Calculation
+Tick size and profit per tick Calculation
+August 20, 2026
+The following calculations are intended for Futures products on the Tradovate platform.
+Profit/loss calculation:
+​
+Example for 3 E-Mini on GC- Gold
+Symbol Name
+Tick Size
+Profit Per Tick
+GC
+0.1
+$10.00
+Entry Price: 2,667.7
+Exit Price: 2,668.9
+Total move: 12 Ticks
+Size of the position: 3
+​
+The equation: Total Move * Profit Per Tick * Size of the position
+​
+Final equation: 12 * $10 * 3 = $360 PnL
+​
+Tick size and profit per tick breakdown:
+CME Equity Futures:
+Symbol
+Instrument
+Tick Size
+Profit Per Tick
+EMD
+E-mini S&P MidCap 400
+0.1
+$10.00
+ES
+E-mini S&P 500
+0.25
+$12.50
+MES
+Micro E-mini S&P
+0.25
+$1.25
+NKD
+Nikkei
+5
+$25.00
+NQ
+E-mini NASDAQ 100
+0.25
+$5.00
+MNQ
+Micro E-mini NASDAQ 100
+0.25
+$0.50
+RTY
+E-mini Russell 2000
+0.1
+$5.00
+M2K
+Micro E-mini Russell 2000
+0.1
+$0.50
+MBT
+Micro E-mini Bitcoin
+5
+$0.50
+MET
+Micro E-mini Ether
+0.05
+$0.50
+CME Foreign Exchange Futures:
+Symbol
+Instrument
+Tick Size
+Profit Per Tick
+6A
+Australian $
+0.0001
+$10.00
+M6A
+Micro AUD/USD
+0.0001
+$1.00
+6B
+British Pound
+0.0001
+$6.25
+M6B
+Micro British Pound
+0.0001
+$0.63
+6C
+Canadian $
+0.0001
+$10.00
+6E
+Euro FX
+0.0001
+$12.50
+7E
+E-mini Euro FX
+0.0001
+$6.25
+M6E
+Micro Euro
+0.0001
+$1.25
+MCD
+MCD
+0.0001
+$1.00
+6J
+Japanese Yen
+0.0000001
+$12.50
+6S
+Swiss Franc
+0.0001
+$12.50
+6M
+Mexican Peso
+0.00005
+$5.00
+6N
+New Zealand $
+0.0001
+$10.00
+CME Agricultural Futures:
+Symbol
+Instrument
+Tick Size
+Profit Per Tick
+LE
+Live Cattle
+0.025
+$10.00
+HE
+Lean Hogs
+0.025
+$10.00
+NYMEX Futures:
+symbolsa
+Instrument
+Tick Size
+Profit Per Tick
+CL
+Crude Oil
+0.01
+$10.00
+MCL
+Micro Crude Oil
+0.01
+$1.00
+QM
+E-mini Crude Oil
+0.025
+$12.50
+NQ
+Natural Gas
+0.001
+$10.00
+QG
+E-mini Natural Gas
+0.005
+$12.50
+RB
+RBOB Gasoline
+0.0001
+$4.20
+HO
+Heating Oil
+0.0001
+$4.20
+CBOT Commodity Futures:
+Symbol
+Instrument
+Tick Size
+Profit Per Tick
+ZC
+Corn
+0.25
+$12.50
+ZW
+Wheat
+0.25
+$12.50
+ZS
+Soybeans
+0.25
+$12.50
+ZM
+Soybean Meal
+0.1
+$10.00
+ZL
+Soybean Oil
+0.01
+$6.00
+CME CBOT Equity Futures:
+Symbol
+Instrument
+Tick Size
+Profit Per Tick
+YM
+Mini-DOW
+1
+$5.00
+MYM
+Micro Mini-DOW
+1
+$0.50
+COMEX Futures:
+Symbol
+Instrument
+Tick Size
+Profit Per Tick
+GC
+Gold
+0.1
+$10.00
+MGC
+Micro Gold
+0.1
+$1.00
+SI
+Silver
+0.005
+$25.00
+HG
+Copper
+0.0005
+$12.50
+PL
+Platinum
+0.1
+$10.00
+PA
+Palladium
+0.1
+$10.00
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+The information provided here is for general informational purposes only and should not be considered financial advice.

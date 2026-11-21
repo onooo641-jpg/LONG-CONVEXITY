@@ -1,0 +1,1181 @@
+Cookie Policy - Trade The Pool - Stock Trading Prop Firm
+Skip to content
+Program Features
+The Program
+24/5 Trading
+Copy Trading
+Markets
+Funded Phase
+FAQs
+Blog
+Trading Education
+Video on Demand
+Trading books
+Forex to Stocks
+Futures to Stocks
+Inside TTP
+About us
+TTP’s Partners
+Meet the Mentors
+Meet Your Coaches
+TTP Gear
+Trader’s Area
+Sign Up Sign up to the hub and get a FREE 14-day trial
+Cookie Policy
+Cookie Policy
+Last update – Aug. 2026
+Cookies (which are a small text file) are installed on the device via which You visit or access the Website or Services. The cookies allow Us to collect information about You and Your behavior to improve Your user experience, to remember Your preferences and settings, and to customize and offer You products and services that may interest You. Cookies are also used to collect statistics and perform analytics.
+Some of the cookies We use are session cookies, which are downloaded temporarily to Your device and last until You close Your web browser, while others are persistent cookies, which last on Your device after You cease browsing the Service and are used to help the Service remember You as a returning visitor when You return to the Service.
+Types of cookies:
+The cookies We may use have been classified according to their functionality, as follows:
+Type of Cookie
+Purpose
+Additional Information
+Strictly Necessary Cookies
+These cookies are strictly necessary to enable You to navigate the Website and use features You have requested. They are used to provide You with Our content, products, and Website that You have requested.
+Such cookies are essential to help Your device download or stream information so that You can navigate around the Website, use its features, and return to pages You have previously visited.
+These cookies collect Personal Data about You, such as username and last login date, and identify You as being logged in to the Website.
+These cookies are deleted when You close Your web browser (session cookies).
+Functionality Cookies
+These cookies are used to recognize You when You return to the Website and allow Us to remember Your choices and preferences and measure how You use Our website.
+These cookies survive the closing of Your web browser, and last until their applicable expiry time.
+Performance Cookies
+These cookies are used to provide aggregated statistics in respect of the performance of the Website and to test and improve such performance to provide better user experience. In addition, they allow Us to carry out analytical functions on the Website.
+These cookies collect anonymized data that is not related to an identified or identifiable natural person.
+These cookies are valid for varying periods; some are deleted once You close Your browser, while others have an indefinite validity period.
+Third Party Marketing / Targeting Cookies
+These cookies are used to deliver ads and marketing communications, and to display the Website in a manner that is more relevant to You. They are also used to measure the effectiveness of an advertising campaign. These cookies record Your visit to the Website and the pages You have visited.
+Some of these cookies are provided and used by third parties.
+These cookies are valid for varying periods; some are deleted once You close Your browser, while others have an indefinite validity period.
+The Cookies incorporated in Our Website are as follows:
+Third Party
+Cookie Name
+Provider
+Retention
+Type
+Function
+Yes
+__cf_bm
+activehosted.com
+1 day
+Necessary
+This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.
+Yes
+__cf_bm
+in.tradethepool.com
+1 day
+Necessary
+This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.
+Yes
+__cf_bm
+jp.tradethepool.com
+1 day
+Necessary
+This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.
+Yes
+__cf_bm
+onesignal.com
+1 day
+Necessary
+This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.
+Yes
+__cf_bm
+t.co
+1 day
+Necessary
+This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.
+Yes
+__cf_bm
+tradethepool.com
+1 day
+Necessary
+This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.
+Yes
+__cf_bm
+twitter.com
+1 day
+Necessary
+This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.
+Yes
+__cf_bm
+vimeo.com
+1 day
+Necessary
+This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.
+Yes
+__mp_opt_in_out_#
+tradethepool.com
+Session
+Necessary
+Stores the user’s cookie consent state for the current domain
+Yes
+ac_enable_tracking
+tradethepool.com
+30 days
+Necessary
+Used to detect if the visitor has accepted the marketing category in the cookie banner. This cookie is necessary for GDPR-compliance of the website.
+Yes
+CookieConsent
+tradethepool.com
+1 year
+Necessary
+Stores the user’s cookie consent state for the current domain
+Yes
+elementor
+tradethepool.com
+Persistent
+Necessary
+Used in context with the website’s WordPress theme. The cookie allows the website owner to implement or change the website’s content in real-time.
+Yes
+PHPSESSID
+tradethepool.com
+3 months
+Necessary
+Preserves user session state across page requests.
+Yes
+SERVERID
+eyeota.net
+1 day
+Necessary
+This cookie is used to assign the visitor to a specific server – this function is necessary for the functionality of the website.
+Yes
+test_cookie
+doubleclick.net
+1 day
+Necessary
+Used to check if the user’s browser supports cookies.
+Yes
+__lc_cid
+accounts.livechatinc.com
+400 days
+Preferences
+Necessary for the functionality of the website’s chat-box function.
+Yes
+__lc_cst
+accounts.livechatinc.com
+400 days
+Preferences
+Necessary for the functionality of the website’s chat-box function.
+Yes
+__oauth_redirect_detector
+accounts.livechatinc.com
+1 day
+Preferences
+Allows the website to recoqnise the visitor, in order to optimize the chat-box functionality.
+Yes
+adroll#adroll
+tradethepool.com
+Persistent
+Preferences
+Stores the user’s cookie consent state for the current domain
+Yes
+ONE_SIGNAL_SDK_DB#Ids
+tradethepool.com
+Persistent
+Preferences
+Detects whether the user should be presented with a notification-bar upon entry on the website.
+Yes
+ONE_SIGNAL_SDK_DB#NotificationClicked
+tradethepool.com
+Persistent
+Preferences
+Used by the website to determine which support notifications the user has been shown.
+Yes
+ONE_SIGNAL_SDK_DB#NotificationOpened
+tradethepool.com
+Persistent
+Preferences
+Contains the widget state on whether it has been minimized or opened for internal statistics.
+Yes
+ONE_SIGNAL_SDK_DB#NotificationReceived
+tradethepool.com
+Persistent
+Preferences
+Used by the website to determine which support notifications the user has been shown.
+Yes
+ONE_SIGNAL_SDK_DB#Sessions
+tradethepool.com
+Persistent
+Preferences
+Used to maintain visitors’ preferences throughout the visit and sub-pages.
+Yes
+_clck
+tradethepool.com
+1 year
+Statistics
+Collects data on the user’s navigation and behavior on the website. This is used to compile statistical reports and heatmaps for the website owner.
+Yes
+_clsk
+tradethepool.com
+1 day
+Statistics
+Registers statistical data on users’ behaviour on the website. Used for internal analytics by the website operator.
+Yes
+_cltk
+scripts.clarity.ms
+Session
+Statistics
+Registers statistical data on users’ behaviour on the website. Used for internal analytics by the website operator.
+Yes
+_livechat_has_visited
+cdn.livechatinc.com
+Persistent
+Statistics
+Identifies the visitor across devices and visits, in order to optimize the chat-box function on the website.
+Yes
+_omappvp
+tradethepool.com
+11 years
+Statistics
+This cookie is used to determine if the visitor has visited the website before, or if it is a new visitor on the website.
+Yes
+_omappvs
+tradethepool.com
+1 day
+Statistics
+This cookie is used to determine if the visitor has visited the website before, or if it is a new visitor on the website.
+Yes
+_tt_enable_cookie
+tradethepool.com
+1 year
+Statistics
+Used by the social networking service, TikTok, for tracking the use of embedded services.
+Yes
+c.gif
+c.clarity.ms
+Session
+Statistics
+Collects data on the user’s navigation and behavior on the website. This is used to compile statistical reports and heatmaps for the website owner.
+Yes
+omVisitsFirst
+a.omappapi.com
+Persistent
+Statistics
+This cookie is used to count how many times a website has been visited by different visitors – this is done by assigning the visitor an ID, so the visitor does not get registered twice.
+Yes
+onesignal-pageview-count
+cdn.onesignal.com
+Session
+Statistics
+Contains data on the visitor’s interaction and navigation on the website – This statistics service is provided by Onesignal.com.
+Yes
+os_pageViews
+cdn.onesignal.com
+Persistent
+Statistics
+Used to assess user’s visits to the website, such as which pages have been visited or the frequency of visits.
+Yes
+personalization_id
+twitter.com
+400 days
+Statistics
+This cookie is set by Twitter – The cookie allows the visitor to share content from the website onto their Twitter profile.
+Yes
+PugT
+pubmatic.com
+30 days
+Statistics
+Used to determine the number of times the cookies have been updated in the visitor’s browser. Used to optimize the website’s server efficiency.
+Yes
+sentryReplaySession
+embed-cdn.spotifycdn.com
+Session
+Statistics
+Registers data on visitors’ website-behaviour. This is used for internal analysis and website optimization.
+Yes
+visa_1_#
+app-worker.visitor-analytics.io
+Session
+Statistics
+Registers statistical data on users’ behaviour on the website. Used for internal analytics by the website operator.
+Yes
+__adroll
+d.adroll.com
+13 months
+Marketing
+Registers a unique ID that identifies a returning user’s device. The ID is used for targeted ads.
+Yes
+__adroll_consent_params
+tradethepool.com
+Session
+Marketing
+Collects information on user behaviour on multiple websites. This information is used in order to optimize the relevance of advertisement on the website.
+Yes
+__adroll_fpc
+tradethepool.com
+1 year
+Marketing
+Used to identify the visitor across visits and devices. This allows the website to present the visitor with relevant advertisement – The service is provided by third party advertisement hubs, which facilitate real-time bidding for advertisers.
+Yes
+__adroll_shared
+adroll.com
+13 months
+Marketing
+Collects data on the user across websites – This data is used to make advertisement more relevant.
+Yes
+__ar_v4
+tradethepool.com
+1 year
+Marketing
+Optimises ad display based on the user’s movement combined and various advertiser bids for displaying user ads.
+Yes
+__Host-GAPS
+accounts.google.com
+2 years
+Marketing
+Collects data on the user’s visits to the website, such as the number of visits, average time spent on the website and what pages have been loaded with the purpose of generating reports for optimising the website content.
+Yes
+__Secure-ROLLOUT_TOKEN
+youtube.com
+180 days
+Marketing
+Used to track user’s interaction with embedded content.
+Yes
+__Secure-YEC
+youtube.com
+Session
+Marketing
+Stores the user’s video player preferences using embedded YouTube video
+Yes
+__Secure-YNID
+youtube.com
+180 days
+Marketing
+Used to track user’s interaction with embedded content.
+Yes
+_fbp
+tradethepool.com
+3 months
+Marketing
+Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers.
+Yes
+_ga
+tradethepool.com
+2 years
+Marketing
+Used to send data to Google Analytics about the visitor’s device and behavior. Tracks the visitor across devices and marketing channels.
+Yes
+_ga_#
+tradethepool.com
+2 years
+Marketing
+Used to send data to Google Analytics about the visitor’s device and behavior. Tracks the visitor across devices and marketing channels.
+Yes
+_gcl_au
+tradethepool.com
+3 months
+Marketing
+Used by Google AdSense for experimenting with advertisement efficiency across websites using their services.
+Yes
+_gcl_ls
+googletagmanager.com
+Persistent
+Marketing
+Tracks the conversion rate between the user and the advertisement banners on the website – This serves to optimise the relevance of the advertisements on the website.
+Yes
+_rdt_uuid
+tradethepool.com
+3 months
+Marketing
+Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor’s preferences.
+Yes
+_te_
+tradethepool.com
+Session
+Marketing
+Registers a unique ID that identifies a returning user’s device. The ID is used for targeted ads.
+Yes
+_ttp
+tiktok.com
+1 year
+Marketing
+Used by the social networking service, TikTok, for tracking the use of embedded services.
+Yes
+_ttp
+tradethepool.com
+1 year
+Marketing
+Used by the social networking service, TikTok, for tracking the use of embedded services.
+Yes
+1/i/adsct
+t.co
+Session
+Marketing
+Collects data on user behaviour and interaction in order to optimize the website and make advertisement on the website more relevant.
+Yes
+1/i/adsct
+twitter.com
+Session
+Marketing
+Collects data on user behaviour and interaction in order to optimize the website and make advertisement on the website more relevant.
+Yes
+adroll_dqs
+s.adroll.com
+Session
+Marketing
+Collects information on user preferences and/or interaction with web-campaign content – This is used on CRM-campaign-platform used by website owners for promoting events or products.
+Yes
+adroll_flgs
+s.adroll.com
+Session
+Marketing
+Presents the user with relevant content and advertisement. The service is provided by third-party advertisement hubs, which facilitate real-time bidding for advertisers.
+Yes
+AdServer/Pug
+pubmatic.com
+Session
+Marketing
+Sets a timestamp for when the visitor entered the website. This is used for analytical purposes on the website.
+Yes
+ANONCHK
+c.clarity.ms
+1 day
+Marketing
+Registers data on visitors from multiple visits and on multiple websites. This information is used to measure the efficiency of advertisement on websites.
+Yes
+cm/#/out
+d.adroll.com
+Session
+Marketing
+Collects information on user behaviour on multiple websites. This information is used in order to optimize the relevance of advertisement on the website.
+Yes
+cm/g/in
+d.adroll.com
+Session
+Marketing
+Presents the user with relevant content and advertisement. The service is provided by third-party advertisement hubs, which facilitate real-time bidding for advertisers.
+Yes
+CMID
+casalemedia.com
+1 year
+Marketing
+Collects visitor data related to the user’s visits to the website, such as the number of visits, average time spent on the website and what pages have been loaded, with the purpose of displaying targeted ads.
+Yes
+CMPRO
+casalemedia.com
+3 months
+Marketing
+Collects data on visitor behaviour from multiple websites, in order to present more relevant advertisement – This also allows the website to limit the number of times that they are shown the same advertisement.
+Yes
+CMPS
+casalemedia.com
+3 months
+Marketing
+Collects visitor data related to the user’s visits to the website, such as the number of visits, average time spent on the website and what pages have been loaded, with the purpose of displaying targeted ads.
+Yes
+guest_id
+twitter.com
+400 days
+Marketing
+Collects data related to the user’s visits to the website, such as the number of visits, average time spent on the website and which pages have been loaded, with the purpose of personalising and improving the Twitter service.
+Yes
+guest_id_ads
+twitter.com
+400 days
+Marketing
+Collects information on user behaviour on multiple websites. This information is used in order to optimize the relevance of advertisement on the website.
+Yes
+guest_id_marketing
+twitter.com
+400 days
+Marketing
+Collects information on user behaviour on multiple websites. This information is used in order to optimize the relevance of advertisement on the website.
+Yes
+IDE
+doubleclick.net
+400 days
+Marketing
+Used by Google DoubleClick to register and report the website user’s actions after viewing or clicking one of the advertiser’s ads with the purpose of measuring the efficacy of an ad and to present targeted ads to the user.
+Yes
+idsync/ex/receive/check
+tapad.com
+Session
+Marketing
+This cookie is set by the audience manager of the website to determine the time and frequencies of visitor data synchronization – cookie data synchronization is used to synchronize and gather visitor data from several websites.
+Yes
+KRTBCOOKIE_#
+pubmatic.com
+3 months
+Marketing
+Registers a unique ID that identifies the user’s device during return visits across websites that use the same ad network. The ID is used to allow targeted ads.
+Yes
+LAST_RESULT_ENTRY_KEY
+youtube.com
+Session
+Marketing
+Used to track user’s interaction with embedded content.
+Yes
+LAST_RESULT_ENTRY_KEY
+youtube.googleapis.com
+Session
+Marketing
+Used to track user’s interaction with embedded content.
+Yes
+lastExternalReferrer
+connect.facebook.net
+Persistent
+Marketing
+Detects how the user reached the website by registering their last URL-address.
+Yes
+lastExternalReferrerTime
+connect.facebook.net
+Persistent
+Marketing
+Detects how the user reached the website by registering their last URL-address.
+Yes
+LogsDatabaseV2:V#||LogsRequestsStore
+youtube.com
+Persistent
+Marketing
+Used to track user’s interaction with embedded content.
+Yes
+LogsDatabaseV2:V#||LogsRequestsStore
+youtube.googleapis.com
+Persistent
+Marketing
+Used to track user’s interaction with embedded content.
+Yes
+mp_#_mixpanel
+tradethepool.com
+1 year
+Marketing
+Unclassified
+Yes
+MR
+bing.com
+7 days
+Marketing
+Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor’s preferences.
+Yes
+MR
+c.clarity.ms
+7 days
+Marketing
+Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor’s preferences.
+Yes
+muc_ads
+t.co
+400 days
+Marketing
+Collects data on user behaviour and interaction in order to optimize the website and make advertisement on the website more relevant.
+Yes
+MUID
+bing.com
+1 year
+Marketing
+Used widely by Microsoft as a unique user ID. The cookie enables user tracking by synchronising the ID across many Microsoft domains.
+Yes
+MUID
+clarity.ms
+1 year
+Marketing
+Used widely by Microsoft as a unique user ID. The cookie enables user tracking by synchronising the ID across many Microsoft domains.
+Yes
+NID
+content-workspacevideo-pa.googleapis.com
+6 months
+Marketing
+Registers a unique ID that identifies a returning user’s device. The ID is used for targeted ads.
+Yes
+NID
+google.com
+6 months
+Marketing
+Registers a unique ID that identifies a returning user’s device. The ID is used for targeted ads.
+Yes
+ONE_SIGNAL_SDK_DB#Options
+tradethepool.com
+Persistent
+Marketing
+Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor’s preferences.
+Yes
+pagead/1p-user-list/#
+google.com
+Session
+Marketing
+Tracks if the user has shown interest in specific products or events across multiple websites and detects how the user navigates between sites. This is used for measurement of advertisement efforts and facilitates payment of referral-fees between websites.
+Yes
+prism_#
+prism.app-us1.com
+30 days
+Marketing
+Collects information on user preferences and/or interaction with web-campaign content – This is used on CRM-campaign-platform used by website owners for promoting events or products.
+Yes
+prism_#
+tradethepool.com
+30 days
+Marketing
+Collects information on user preferences and/or interaction with web-campaign content – This is used on CRM-campaign-platform used by website owners for promoting events or products.
+Yes
+receive-cookie-deprecation
+adroll.com
+13 months
+Marketing
+Collects information on user behaviour on multiple websites. This information is used in order to optimize the relevance of advertisement on the website.
+Yes
+receive-cookie-deprecation
+d.adroll.com
+13 months
+Marketing
+Collects information on user behaviour on multiple websites. This information is used in order to optimize the relevance of advertisement on the website.
+Yes
+rp.gif
+alb.reddit.com
+Session
+Marketing
+Necessary for the implementation of the Reddit.com’s share-button function.
+Yes
+rum
+casalemedia.com
+Session
+Marketing
+Collects data related to the user’s visits to the website, such as the number of visits, average time spent on the website and what pages have been loaded, with the purpose of displaying targeted ads.
+Yes
+ServiceWorkerLogsDatabase#SWHealthLog
+youtube.com
+Persistent
+Marketing
+Necessary for the implementation and functionality of YouTube video-content on the website.
+Yes
+SM
+c.clarity.ms
+Session
+Marketing
+Registers a unique ID that identifies the user’s device during return visits across websites that use the same ad network. The ID is used to allow targeted ads.
+Yes
+sp_landing
+spotify.com
+1 day
+Marketing
+Used to implement audio-content from Spotify on the website. Can also be used to register user interaction and preferences in context with audio-content – This can serve statistics and marketing purposes.
+Yes
+sp_t
+spotify.com
+1 year
+Marketing
+Used to implement audio-content from Spotify on the website. Can also be used to register user interaction and preferences in context with audio-content – This can serve statistics and marketing purposes.
+Yes
+SRM_B
+bing.com
+1 year
+Marketing
+Tracks the user’s interaction with the website’s search-bar-function. This data can be used to present the user with relevant products or services.
+Yes
+sync
+bidswitch.net
+Session
+Marketing
+Collects data on user behaviour and interaction in order to optimize the website and make advertisement on the website more relevant.
+Yes
+TapAd_3WAY_SYNCS
+tapad.com
+2 months
+Marketing
+Used for data-synchronization with advertisement networks.
+Yes
+TapAd_DID
+tapad.com
+2 months
+Marketing
+Used to determine what type of devices (smartphones, tablets, computers, TVs etc.) is used by a user.
+Yes
+TapAd_TS
+tapad.com
+2 months
+Marketing
+Used to determine what type of devices (smartphones, tablets, computers, TVs etc.) is used by a user.
+Yes
+TESTCOOKIESENABLED
+youtube.com
+1 day
+Marketing
+Used to track user’s interaction with embedded content.
+Yes
+tt_appInfo
+analytics.tiktok.com
+Session
+Marketing
+Used by the social networking service, TikTok, for tracking the use of embedded services.
+Yes
+tt_pixel_session_index
+analytics.tiktok.com
+Session
+Marketing
+Used by the social networking service, TikTok, for tracking the use of embedded services.
+Yes
+tt_sessionId
+analytics.tiktok.com
+Session
+Marketing
+Used by the social networking service, TikTok, for tracking the use of embedded services.
+Yes
+ttcsid
+tradethepool.com
+1 year
+Marketing
+Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor’s preferences.
+Yes
+ttcsid_#
+tradethepool.com
+1 year
+Marketing
+Tracks the conversion rate between the user and the advertisement banners on the website – This serves to optimise the relevance of the advertisements on the website.
+Yes
+VISITOR_INFO1_LIVE
+youtube.com
+180 days
+Marketing
+Tries to estimate the users’ bandwidth on pages with integrated YouTube videos.
+Yes
+w/1.0/sd
+openx.net
+Session
+Marketing
+Registers data on visitors such as IP addresses, geographical location and advertisement interaction. This information is used optimize the advertisement on websites that make use of OpenX.net services.
+Yes
+xuid
+3lift.com
+Session
+Marketing
+Presents the user with relevant content and advertisement. The service is provided by third-party advertisement hubs, which facilitate real-time bidding for advertisers.
+Yes
+YSC
+youtube.com
+Session
+Marketing
+Registers a unique ID to keep statistics of what videos from YouTube the user has seen.
+Yes
+yt-icons-last-purged
+youtube.com
+Persistent
+Marketing
+Necessary for the implementation and functionality of YouTube video-content on the website.
+Yes
+YtIdbMeta#databases
+youtube.com
+Persistent
+Marketing
+Used to track user’s interaction with embedded content.
+Yes
+YtIdbMeta#databases
+youtube.googleapis.com
+Persistent
+Marketing
+Used to track user’s interaction with embedded content.
+Yes
+yt-player-caption-persistence
+youtube.com
+Persistent
+Marketing
+Unclassified
+Yes
+yt-remote-cast-available
+youtube.googleapis.com
+Session
+Marketing
+Stores the user’s video player preferences using embedded YouTube video
+Yes
+yt-remote-cast-installed
+youtube.googleapis.com
+Session
+Marketing
+Stores the user’s video player preferences using embedded YouTube video
+Yes
+yt-remote-connected-devices
+youtube.googleapis.com
+Persistent
+Marketing
+Stores the user’s video player preferences using embedded YouTube video
+Yes
+yt-remote-device-id
+youtube.googleapis.com
+Persistent
+Marketing
+Stores the user’s video player preferences using embedded YouTube video
+Yes
+yt-remote-fast-check-period
+youtube.googleapis.com
+Session
+Marketing
+Stores the user’s video player preferences using embedded YouTube video
+Yes
+yt-remote-session-app
+youtube.googleapis.com
+Session
+Marketing
+Stores the user’s video player preferences using embedded YouTube video
+Yes
+yt-remote-session-name
+youtube.googleapis.com
+Session
+Marketing
+Stores the user’s video player preferences using embedded YouTube video
+Yes
+@@lc_auth_token:d146c86e-9427-4b2c-87e7-3fa274236278
+cdn.livechatinc.com
+Persistent
+Unclassified
+Unclassified
+Yes
+@@lc_privacy_policy:d146c86e-9427-4b2c-87e7-3fa274236278
+cdn.livechatinc.com
+Persistent
+Unclassified
+Unclassified
+Yes
+_twpid
+tradethepool.com
+Session
+Unclassified
+Unclassified
+Yes
+currentBtnTitle
+tradethepool.com
+Persistent
+Unclassified
+Unclassified
+Yes
+d146c86e-9427-4b2c-87e7-3fa274236278:state
+cdn.livechatinc.com
+Persistent
+Unclassified
+Unclassified
+Yes
+LD_R
+tradethepool.com
+100 years
+Unclassified
+Unclassified
+Yes
+LD_S
+tradethepool.com
+1 day
+Unclassified
+Unclassified
+Yes
+LD_T
+tradethepool.com
+100 years
+Unclassified
+Unclassified
+Yes
+LD_U
+tradethepool.com
+100 years
+Unclassified
+Unclassified
+Yes
+mixpanelBrowserDb#mixpanelRecordingEvents
+tradethepool.com
+Persistent
+Unclassified
+Unclassified
+Yes
+mixpanelBrowserDb#mixpanelRecordingRegistry
+tradethepool.com
+Persistent
+Unclassified
+Unclassified
+Yes
+mixpanelFlagsDb#mixpanelFlags
+tradethepool.com
+Persistent
+Unclassified
+Unclassified
+Yes
+mp_gen_new_tab_id_mixpanel_c0a73b9f92b54d13c331d55e7d5ce56a
+cdn.mxpnl.com
+Session
+Unclassified
+Unclassified
+Yes
+mp_tab_id_mixpanel_c0a73b9f92b54d13c331d55e7d5ce56a
+cdn.mxpnl.com
+Session
+Unclassified
+Unclassified
+Yes
+ONE_SIGNAL_SDK_DB#emailSubscriptions
+tradethepool.com
+Persistent
+Unclassified
+Unclassified
+Yes
+ONE_SIGNAL_SDK_DB#identity
+tradethepool.com
+Persistent
+Unclassified
+Unclassified
+Yes
+ONE_SIGNAL_SDK_DB#operations
+tradethepool.com
+Persistent
+Unclassified
+Unclassified
+Yes
+ONE_SIGNAL_SDK_DB#Outcomes.NotificationClicked
+tradethepool.com
+Persistent
+Unclassified
+Unclassified
+Yes
+ONE_SIGNAL_SDK_DB#Outcomes.NotificationReceived
+tradethepool.com
+Persistent
+Unclassified
+Unclassified
+Yes
+ONE_SIGNAL_SDK_DB#properties
+tradethepool.com
+Persistent
+Unclassified
+Unclassified
+Yes
+ONE_SIGNAL_SDK_DB#pushSubscriptions
+tradethepool.com
+Persistent
+Unclassified
+Unclassified
+Yes
+ONE_SIGNAL_SDK_DB#SentUniqueOutcome
+tradethepool.com
+Persistent
+Unclassified
+Unclassified
+Yes
+ONE_SIGNAL_SDK_DB#smsSubscriptions
+tradethepool.com
+Persistent
+Unclassified
+Unclassified
+Yes
+ONE_SIGNAL_SDK_DB#subscriptions
+tradethepool.com
+Persistent
+Unclassified
+Unclassified
+Yes
+popup-132132-impressions-count
+tradethepool.com
+Session
+Unclassified
+Unclassified
+Yes
+ServiceWorkerLogsDatabase#SWHealthLog
+youtube.googleapis.com
+Persistent
+Unclassified
+Unclassified
+Yes
+singlePostVisits
+tradethepool.com
+Persistent
+Unclassified
+Unclassified
+Yes
+userConsent
+cdn.onesignal.com
+Persistent
+Unclassified
+Unclassified
+Yes
+__cf_bm
+airwallex.com
+1 day
+Necessary
+This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.
+Yes
+__cf_bm
+auth.hub.tradethepool.com
+1 day
+Necessary
+This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.
+Yes
+_cfuvid
+airwallex.com
+Session
+Necessary
+This cookie is a part of the services provided by Cloudflare – Including load-balancing, deliverance of website content and serving DNS connection for website operators.
+Yes
+_cfuvid
+auth.hub.tradethepool.com
+Session
+Necessary
+This cookie is a part of the services provided by Cloudflare – Including load-balancing, deliverance of website content and serving DNS connection for website operators.
+Yes
+CookieConsent
+hub.tradethepool.com
+1 year
+Necessary
+Stores the user’s cookie consent state for the current domain
+Yes
+sentryReplaySession
+hub.tradethepool.com
+Session
+Statistics
+Registers data on visitors’ website-behaviour. This is used for internal analysis and website optimization.
+Yes
+__mpq_#_#
+hub.tradethepool.com
+Persistent
+Marketing
+Collects data on user behaviour and interaction in order to optimize the website and make advertisement on the website more relevant.
+Yes
+_rdt_uuid
+hub.tradethepool.com
+Session
+Marketing
+Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor’s preferences.
+Yes
+mp_#_mixpanel
+hub.tradethepool.com
+1 year
+Marketing
+Unclassified
+Yes
+descopeFlowNonce3HElufdUpjjWjaM2AAjAMRPfqhS
+hub.tradethepool.com
+Persistent
+Unclassified
+Unclassified
+Yes
+descopeFlowNonce3HElvefpMmudL7dR70ZLBdobEta
+hub.tradethepool.com
+Persistent
+Unclassified
+Unclassified
+No
+DFN-3HElufdUpjjWjaM2AAjAMRPfqhS-1785441332709
+hub.the5ers.com
+2 days
+Unclassified
+Unclassified
+No
+DFN-3HElvefpMmudL7dR70ZLBdobEta-1785441340665
+hub.the5ers.com
+2 days
+Unclassified
+Unclassified
+Yes
+dls_ab_testing_id
+hub.tradethepool.com
+Persistent
+Unclassified
+Unclassified
+Yes
+ffCache
+hub.tradethepool.com
+Persistent
+Unclassified
+Unclassified
+Yes
+is-logged-out
+hub.tradethepool.com
+Persistent
+Unclassified
+Unclassified
+Yes
+LD_T
+hub.tradethepool.com
+100 years
+Unclassified
+Unclassified
+Yes
+loginAttempts
+hub.tradethepool.com
+Persistent
+Unclassified
+Unclassified
+Yes
+mixpanelBrowserDb#mixpanelRecordingEvents
+hub.tradethepool.com
+Persistent
+Unclassified
+Unclassified
+Yes
+mixpanelBrowserDb#mixpanelRecordingRegistry
+hub.tradethepool.com
+Persistent
+Unclassified
+Unclassified
+Yes
+mp_gen_new_tab_id_mixpanel_fbd9712c235e18b36ccabe9bf0343547
+hub.tradethepool.com
+Session
+Unclassified
+Unclassified
+Yes
+mp_tab_id_mixpanel_fbd9712c235e18b36ccabe9bf0343547
+hub.tradethepool.com
+Session
+Unclassified
+Unclassified
+Yes
+mui-mode
+hub.tradethepool.com
+Persistent
+Unclassified
+Unclassified
+Yes
+ttp-theme
+hub.tradethepool.com
+Persistent
+Unclassified
+Unclassified
+Yes
+CookieConsent
+ac.tradethepool.com
+1 year
+Necessary
+Stores the user’s cookie consent state for the current domain
+You can change Your browser settings to block and delete some or all cookies. Please see the links below for instructions on how to do this in some of the most popular web browsers:
+Firefox
+Edge
+Google Chrome
+Safari
+Please note, however, that if You do so, some or all the Service’s features and functionalities might not perform as intended.
+Changes to the Cookie Policy
+We may amend the terms of this Cookie Policy, from time to time. Whenever we amend this Cookie Policy, we will notify you of such amendments by publishing the updated Cookie Policy on our website. In addition, when we make significant amendments to our Cookie Policy, we will strive to inform You about such amendments via means of communication we believe are reasonably appropriate to inform you of such amendments and by publishing a notice about such amendments on our website. Unless stated otherwise, all amendments will enter into force upon publication of the updated Cookie Policy on our website or the designated page on the website.
+Contact Us
+For any queries relating to this Policy and data protection, please contact Us at Help@TradeThePool.com .
+Part of 5% group-
+Join Us Now
+Add as a preferred
+source on Google
+Find Us On
+We work with
+Download our app
+Get Started
+FAQs
+Terms and conditions
+Copyright Infringement Policy
+Program Terms
+Trading Hub
+Program Cheat Sheet
+The Program In a nutshell
+The program
+Funded Phase
+About us
+About us
+Contact us
+Privacy Policy
+Cookie Policy
+Affiliates Program
+AML Policy
+Contact
+Office Hours
+Sunday – Thursday
+07:00 – 17:00 GMT
+Fridays
+07:00 – 12:00 GMT
+Email
+Help@TradeThePool.com
+UK Branch
+Enstar House, 168, Praed Street, London
+Website Disclaimers
+Five Percent Online Ltd. (“We”, “Our”, “Us”, or “Company”) operates as a proprietary trading firm. The Company is not a custodian, exchange, financial institution, trading platform, fiduciary or insurance business outside the purview of financial regulatory authorities. “Trade The Pool” is a brand name operated by the Company.
+All trading activities conducted through the Company Hub are executed in a simulated environment. Users should be aware that the trading results in this environment do not reflect real trading outcomes. The simulated trading environment in the Hub is designed for educational and evaluation purposes only. The “funds” provided to you for the evaluation are fictitious, do not represent any currency, and that you have no right to possess those fictitious funds beyond the scope of their use within the Hub and for the sole purpose of the evaluation, and in particular that they may not and cannot be used for any actual trading and that you are not entitled to any payment or other right in or of those funds.
+Becoming a pro user is not guaranteed. The eligibility for becoming a pro user is contingent upon meeting specific performance criteria and compliance with the Company’s evaluation processes. Not all users will qualify for pro accounts, and past performance in the simulated environment is not indicative of future success.
+All content published and distributed by Us and Our affiliates is to be treated as general information only. None of the information provided contained herein is intended as (a) investment advice, (b) an offer or solicitation of an offer to buy or sell, or (c) a recommendation, endorsement, or sponsorship of any security, company, or fund. Testimonials appearing on the website may not be representative of other clients or customers and is not a guarantee of future performance or success. Use of the information contained on the website is at your own risk and the Company and its partners, representatives, agents, employees, and contractors assume no responsibility or liability for any use or misuse of such information.
+Hypothetical or simulated performance results have certain limitations. Unlike an actual performance record, simulated results do not represent actual trading. Also, because the trades have not actually been executed, the results may have under-or-over compensated for the impact, if any, of certain market factors, such as lack of liquidity. Simulated trading programs, in general, are also subject to the fact that they are designed with the benefit of hindsight. No representation is being made that any account will or is likely to achieve profit or losses similar to those shown.
+Five Percent Online LTD – Copyright © 2026.

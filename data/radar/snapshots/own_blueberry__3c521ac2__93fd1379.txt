@@ -1,0 +1,28 @@
+Do I need to use a Stop Loss? | Blueberry Futures Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Noto Sans".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Sign Up Login English हिन्दी 日本語 Español English
+Sign Up Login English हिन्दी 日本語 Español English
+Search for articles...
+All Collections
+Trading Rules & Risk Management
+Trading Limits & Restrictions
+Do I need to use a Stop Loss?
+Do I need to use a Stop Loss?
+🛡️ Not mandatory, but you are 100% responsible for your risk.
+September 15, 2026
+Table of contents
+Stop Loss Policy
+We do not force you to place a hard StopLoss (SL) on every ticket, but we highly recommend it.
+​
+Why use one?
+Protection: In the event of a platform disconnect, internet outage, or extreme market flash crash, a hard stop loss is your only protection against hitting your Max Drawdown limit instantly.
+​
+Liability: If a sudden move blows your account because you didn't have an SL, the breach is valid and cannot be reversed.
+Best Practice
+Always protect your downside. A stop loss is cheaper than a new evaluation.
+Related Articles
+Do you have a Daily Loss Limit?
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Blueberry Futures

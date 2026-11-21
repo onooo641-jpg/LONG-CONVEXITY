@@ -1,0 +1,59 @@
+What is the Maximum Capital Allocation? | Blueberry Futures Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Noto Sans".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Sign Up Login English हिन्दी 日本語 Español English
+Sign Up Login English हिन्दी 日本語 Español English
+Search for articles...
+All Collections
+Trading Rules & Risk Management
+Trading Limits & Restrictions
+What is the Maximum Capital Allocation?
+What is the Maximum Capital Allocation?
+📊 Understanding our limits: You can have up to $450k in total funding across a maximum of 3 active accounts.
+November 26, 2025
+Table of contents
+Account Limits & Allocation Rules
+We allow traders to diversify their strategies by holding multiple accounts. However, different limits apply depending on whether you are in the Evaluation phase or the Funded phase.
+1. Evaluation Phase (The Challenge)
+During the evaluation, limits are applied per account type .
+Limit: You can hold a maximum of 3 Active Accounts of the same type at one time.
+The Math:
+Since we have two distinct account types (Ascent and Accelerated), you can theoretically hold:
+✅ 3 Active Ascent Accounts
+✅ 3 Active Accelerated Accounts
+Total: 6 Active Evaluations simultaneously.
+2. Funded Phase (Live)
+Once you pass, the rules tighten to ensure fair risk management across the firm. The limit becomes a Total Cap , regardless of account type.
+Max Funded Accounts: 3 Accounts Total .
+Max Capital Allocation: $450,000 .
+Allocation Examples
+You can mix and match account sizes ($50k, $100k, $150k) as long as you don't exceed the limits.
+Portfolio Combination
+Total Capital
+Status
+3x $150k Accounts
+$450,000
+✅ Max Allocation
+1x $50k + 1x $100k + 1x $150k
+$300,000
+✅ Allowed
+2x $50k Accounts
+$100,000
+✅ Allowed
+4x $50k Accounts
+$200,000
+❌ Prohibited (Exceeds 3 accounts)
+What if I pass a 4th account?
+If you pass more than 3 evaluations, the extra accounts are placed on Standby. You can activate them only when a slot opens up in your portfolio (e.g., if you close or breach one of your active 3 accounts).
+💡 Managing Multiple Accounts
+Now that you know you can hold multiple accounts, you might be wondering how to trade them all efficiently. Are you allowed to copy your own trades across your portfolio?
+​
+Check out our policy on tools and copiers here:
+👉 [ Can I use EAs, Bots, or Copy Trading? ]
+Related Articles
+How much does an Account Reset cost? (Evaluation & Funded)
+What are the Maximum Position Limits (Contract Caps)?
+What is the Minimum Trading Days rule?
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Blueberry Futures

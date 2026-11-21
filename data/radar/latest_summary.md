@@ -7,15 +7,15 @@ Baseline date: 2026-11-21
 - S1 reward pools: 1297
 - S3 Merkl live: 713
 - S4 governance hits: 67
-- pages fetched ok: 1307
-- pages total: 1337
+- pages fetched ok: 1668
+- pages total: 1711
 - candidates surviving to ranking: 90
 - of which all five filter parts verified: 20
-- near-miss rows total: 2955
+- near-miss rows total: 2965
 
 ## Near-miss by stage/reason (top)
 
-- first_pass / below threshold: 2175
+- first_pass / below threshold: 2185
 - quality / DefiLlama outlier flag: 261
 - filter / F4 price exposure, needs hedge; F5 TVL < $1,000,000: 218
 - filter / F4 price exposure, needs hedge: 142
@@ -92,7 +92,7 @@ Baseline date: 2026-11-21
 - fusedao.eth: [closed] FIP14: Zero Inflation, 400M Cap Enforced On-Chain, 30M FUSE for Validator Rewards Through the Transit https://snapshot.org/#/fusedao.eth/proposal/0x2cba3ecb0f952ebb2d82583bb9279cc836e36c18ce2ed540299ab254dcdc5e94
 - sdfxn.eth: [closed] Gauge vote FXN - 12/11/2026 - 25/11/2026 https://snapshot.org/#/sdfxn.eth/proposal/0x6214cbfb2dd2fcd86ba05d14fd8a5297622c9ec18b1fc7447e7e3304743eb31a
 
-## Page changes today: 63
+## Page changes today: 71
 
 - E8 Markets (firm) https://e8markets.com/: +14 / -14 lines
 - propfirmmatch (directory) https://propfirmmatch.com/: +1 / -1 lines

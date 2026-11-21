@@ -1,0 +1,72 @@
+Instant Max Loss Limit and Daily Loss Limit | FuturesElite FAQ Skip to main content
+Back to Website Discord
+Back to Website Discord
+Search for articles...
+All Collections
+Instant accounts
+Instant Max Loss Limit and Daily Loss Limit
+Instant Max Loss Limit and Daily Loss Limit
+End of Day Max Loss Limit, the hard breach Daily Loss Limit and the Remove Daily Loss option.
+Updated this week
+Table of contents
+Max Loss Limit (End of Day)
+5% of the starting balance, based on your end of day balance. It moves up only after a profitable day and locks at your starting balance plus $100.
+Size
+Max Loss
+Starting floor
+Locks at
+25K
+$1,250
+$23,750
+$25,100
+50K
+$2,500
+$47,500
+$50,100
+100K
+$5,000
+$95,000
+$100,100
+150K
+$7,500
+$142,500
+$150,100
+Daily Loss Limit (hard breach, removable at checkout)
+3% of the starting balance, measured from your equity at the previous day's close. Reaching it closes the account.
+Size
+Daily Loss Limit
+25K
+$750
+50K
+$1,500
+100K
+$3,000
+150K
+$4,500
+Remove Daily Loss
+The account has no Daily Loss Limit. The Max Loss Limit becomes 3% intraday and locks at the starting balance.
+Size
+Max Loss (3% intraday)
+Locks at
+25K
+$750
+$25,000
+50K
+$1,500
+$50,000
+100K
+$3,000
+$100,000
+150K
+$4,500
+$150,000
+Related Articles
+Elite drawdown, daily loss limit and contracts
+Prime drawdown and Daily Loss Limit
+Nitro rules at a glance
+OLD Instant drawdown and staying active
+Instant rules at a glance
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+FuturesElite FAQ
+We run on Intercom

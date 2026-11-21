@@ -1,0 +1,44 @@
+What are the Maximum Position Limits (Contract Caps)? | Blueberry Futures Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Noto Sans".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Sign Up Login English हिन्दी 日本語 Español English
+Sign Up Login English हिन्दी 日本語 Español English
+Search for articles...
+All Collections
+Evaluation Accounts (The Challenge)
+Account Specs & Comparison (Start Here)
+What are the Maximum Position Limits (Contract Caps)?
+What are the Maximum Position Limits (Contract Caps)?
+How many contracts can you trade? Check the max limits for each account size.
+December 20, 2025
+Table of contents
+Maximum Contract Limits
+Risk management is key. We place hard caps on the number of contracts you can open simultaneously to protect your account from over-leveraging.
+The Limits:
+Account Size
+Max Mini Contracts
+Max Micro Contracts
+$25k Account
+1 Mini
+10 Micros
+$50k Account
+2 Minis
+20 Micros
+$100k Account
+6 Minis
+60 Micros
+$150k Account
+9 Minis
+90 Micros
+⚠️ Important Rules:
+No Mixing to Exceed Caps: You can mix Minis and Micros (e.g., 1 Mini + 10 Micros on a 50k), but you cannot exceed the total equivalent leverage.
+Violation: Attempting to open more than the allowed limit will result in the order being rejected by the platform.
+Related Articles
+Detailed Parameters of our Challenges
+Are there limits on DCA? (Stacking)
+Max Contracts by Account Size
+What is the Minimum Trading Days rule?
+What is the Maximum Capital Allocation?
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Blueberry Futures

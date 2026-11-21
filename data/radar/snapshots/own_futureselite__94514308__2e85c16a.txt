@@ -1,0 +1,45 @@
+OLD Instant drawdown and staying active | FuturesElite FAQ Skip to main content
+Back to Website Discord
+Back to Website Discord
+Search for articles...
+All Collections
+Instant accounts
+OLD Instant drawdown and staying active
+OLD Instant drawdown and staying active
+How the Max Loss Limit locks and the 7-day trading rule.
+Updated this week
+Table of contents
+Max Loss Limit
+The drawdown is End of Day: based on your closed balance, unchanged after a losing day and raised only after a profitable day. Once your equity reaches your starting balance plus the Max Loss Limit, the limit locks at your starting balance.
+Size
+Max Loss
+Lowest balance
+Locks at start once equity reaches
+25K
+$1,000
+$24,000
+$26,000
+50K
+$1,800
+$48,200
+$51,800
+100K
+$3,000
+$97,000
+$103,000
+150K
+$4,500
+$145,500
+$154,500
+Keep the account active
+Place at least one trade every 7 calendar days. Instant accounts bought after 23 November 2025 are breached if no trade is placed for 7 days.
+Related Articles
+Elite drawdown, daily loss limit and contracts
+Elite checkout options
+Prime drawdown and Daily Loss Limit
+OLD Instant rules at a glance
+Instant Max Loss Limit and Daily Loss Limit
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+FuturesElite FAQ
+We run on Intercom

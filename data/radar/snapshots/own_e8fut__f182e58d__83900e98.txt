@@ -1,0 +1,89 @@
+Everything about Payouts (When, How, How fast..) | E8 Markets Help Center Futures Skip to main content
+E8X Dashboard E8 Markets Website Classic Markets & Perpetuals Helpcenter Čeština English हिन्दी Português Español English
+E8X Dashboard E8 Markets Website Classic Markets & Perpetuals Helpcenter Čeština English हिन्दी Português Español English
+Search for articles...
+All Collections
+Payouts
+Everything about Payouts (When, How, How fast..)
+Everything about Payouts (When, How, How fast..)
+What are the payout methods? How fast can you receive them? This is the article
+Updated this week
+Table of contents
+When?
+Payouts can be requested only in the SimFi™ Performance stage. Generally, there is no fixed schedule, no unnecessary waiting , with our programs, you can request daily or anytime, as long as all on-demand requirements, such as Best day, are fulfilled.
+Full on-demand rules can be found at this link
+With on-demand rules on products such as E8 One or E8 Signature, the earliest first payout can be requested is 3 days from the start of your trading period in the performance stage. This is not a separate waiting rule - it is simply how the Best Day Rule works in practice, as 3 days is the fastest the math can work in your favour.
+On-demand does not apply to E8 Classic, E8 Pro, and E8 Zero models, as these products have daily payouts. With E8 Pro, the minimum is 1%, and with E8 Zero/E8 Classic, it's $100.
+Who?
+At this moment, payouts are processed through our third-party providers, such as:
+WorkMarket - this option provides fast bank transfers to your account.
+​
+Rise - With Rise, you have the quickest and most flexible solution for onboarding and making global payments in either cash or cryptocurrency, all accessible from a single platform.
+​
+Aeoropay - A direct bank-to-bank payout option connecting to 12,000+ U.S. banks, with same-day-or-faster settlement. Available only for U.S. clients. This process might seem easier for some clients, as the whole process is done within our E8X Dashboard and you do not need to register anywhere else.
+To receive the payout, you need to be allowed to onboard by WorkMarket or Riseworks
+​ WorkMarket supported countries
+​ Rise unsupported countries and unsupported States or Territories in the USA
+If you can't undergo WorkMarket and Riseworks KYC, we cannot provide you with a payout payment. There are no direct crypto payment solutions, and all payouts can be processed only through our partners.
+We don’t charge any commissions or fees for payouts, but the processor of the payouts may charge depending on the option you are using.
+How?
+Payouts can be requested within the SimFi performance stage directly from the dashboard, as you can see below.
+​
+Once you are eligible for a payout, the request payout button will light up. If you are unable to click on it, it is most likely due to not fulfilling all your requirements. For such an unfinished objective, you will see the status as "pending" in the Payout overview within your dashboard.
+​
+Please note that the minimum payout that you can request with every product type is $100.
+​
+Amounts are taken from your payout %. Meaning, with 80% payout, you need to request at least $125.
+Canceling payout
+Made a mistake on your payout request? As long as our team has not yet confirmed it or sent you an invitation to Rise/WorkMarket, you can cancel the request and resubmit with the correct amount and provider.
+​
+This request is possible once per 24 hours on your account.
+Payout progress can be tracked in the Payout history of your dashboard. If the payout is only in stage 1 of the request, the payout can be canceled.
+How fast?
+Let's take a look at our two main median payout stats (January 1 – May 1, 2026):
+11 hours from Payout request to approval by our team (you can start trading after approval)
+24 hours from payout request to funds arriving in your Rise or Workmarket account
+This means that:
+50% of all payouts are approved within 11 hours
+Payments for 50% of all payouts are received by users within 24 hours
+What is important to know is that these are median times. The overall process can also take up to 5 business days sometimes, and the length of the process may depend on various factors such as:
+Day of request (During the weekend, payouts are not being processed)
+Onboarding time of the user (Make sure that everything is done on your side within your Rise/Workmarket account)
+individual characteristics (Rise/Workmarket may request additional information)
+Full Process for Payout Request:
+After your request a payout, we will send you an invitation link for WorkMarket / Riseworks.io
+When you receive an invitation, you need to sign and fill out the necessary documents like PSA agreements, fill out Tax information, and you might be required to provide additional KYC information like proof of address.
+After everything is processed and approved by our partners, we will send the payment to your Rise/Workmarket account. The invoice regarding the payout payment can also be found within your Rise/workmarket environment.
+What if my Rise/Workmarket accounts are already verified?
+If this is your first payout and you already have a Rise/WorkMarket account, simply follow the steps via the onboarding link to connect your account on Rise/WorkMarket that we will send trough an email.
+If you have already received a payout with us before, you can skip the previous steps and simply wait for the payment that will arrive in your Rise/Workmarket account.
+Please ensure the email address registered with us matches the one used on your Rise and WorkMarket profiles.
+​
+How to change email with Rise
+How to change email with Workmarket
+Aeropay process:
+During your first payout request with Aeropay, you will have to complete phone verification and link your bank account.
+After that, you need to complete the W-8/W-9 tax Form (the button for that will appear within the specific account dashboard on which you request a payout).
+Once all of those steps are completed, we will process your approval and send the payment to your bank account.
+If you have already received a payout from us using this payment method, you can skip these steps and simply wait for the payment to arrive in your bank account.
+The length of time it takes to receive money from the Rise / Workmarket account depends on the payment method you choose. Crypto payments through Rise will be faster than Wire Transfer from Workmarket, for example.
+Do I need to leave Buffer in the account when requesting a payout?
+Since the payout amount you are requesting is being deducted from the Performance account, in certain situations and products, it is crucial to leave a buffer; otherwise, your Dynamic/EOD/Static drawdowns might be negatively affected.
+E8 One - Yes, in specific situations, it is better to leave a buffer in the account. There is a dedicated article explaining the whole process. Article.
+​
+E8 Pro - Thanks to the built-in payout mechanism on these accounts, there is no need to leave a buffer, and you can always request as much as the account allows you.
+​
+​ Note: Daily Drawdown or Daily Pause is never affected by payout requests. Once the payout is requested, those limits are calculated from your new balance.
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+The information provided here is for general informational purposes only and should not be considered financial advice.

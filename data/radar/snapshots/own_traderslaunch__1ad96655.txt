@@ -1,0 +1,122 @@
+Futures Crypto
+Traders Launch How It Works Results Affiliates FAQ Join Discord
+Sign In Get Funded
+Pricing
+One-Time Evaluation Fees
+Every futures evaluation is a one-time fee. Once you pass, there are no activation or ongoing platform fees.
+Last reviewed: 2026-07-16
+Futures 100K
+80% Profit Split
+$100,000 starting capital
+$159
+One-Time Fee
+Get Funded Evaluation
+Profit Target $2,000
+Max Drawdown $1,000 EOD Locks at starting balance
+Session Profit Limit 40% of profit target
+Days to Pass No minimum
+SimFunded
+Get Paid Daily Eligible for payouts once +1%
+Profit Split 80%
+Consistency Rule None
+Payout Caps None
+Activation Fee None
+Starts at 2 minis or 20 micros; that is your fixed limit.
+Futures 200K
+80% Profit Split
+$200,000 starting capital
+$299
+One-Time Fee
+Get Funded Evaluation
+Profit Target $4,000
+Max Drawdown $2,000 EOD Locks at starting balance
+Session Profit Limit 40% of profit target
+Days to Pass No minimum
+SimFunded
+Get Paid Daily Eligible for payouts once +1%
+Profit Split 80%
+Consistency Rule None
+Payout Caps None
+Activation Fee None
+Starts at 4 minis or 40 micros; that is your fixed limit.
+Futures 300K
+80% Profit Split
+$300,000 starting capital
+$599
+One-Time Fee
+Get Funded Evaluation
+Profit Target $6,000
+Max Drawdown $3,000 EOD Locks at starting balance
+Session Profit Limit 40% of profit target
+Days to Pass No minimum
+SimFunded
+Get Paid Daily Eligible for payouts once +1%
+Profit Split 80%
+Consistency Rule None
+Payout Caps None
+Activation Fee None
+Starts at 6 minis or 60 micros; that is your fixed limit.
+Swipe to see all 3 sizes →
+Trading hours: 6:00pm – 4:00pm ET the following day. At least 1 trade in any 7 days, or the evaluation is breached.
+No Consistency Rules Trade your way once funded
+Daily Payouts Request a payout any day you profit
+No Payout Caps Withdraw your profits in full
+Futures Pricing at a Glance
+Choose a 60 % profit split from $99 or an 80% profit split from $159 .
+FAQ
+Quick Answers Before You Decide
+Rules laid out before you pay: fees, drawdown, payouts, and what you can and can't do.
+See All 30 Questions
+What are the contract limits?
+Your starting contract limit depends on account size and type. Standard 60% and 80% accounts start at 2 minis or 20 micros on $100K, 4 minis or 40 micros on $200K, and 6 minis or 60 micros on $300K. Legacy NYC accounts start at 5 micros on $100K, 1 mini or 10 micros on $200K, and 2 minis or 20 micros on $300K. Your starting size is your limit; it does not grow over time.
+What is the 40% rule?
+During the evaluation, your profit in one session cannot go above 40% of the profit target (50% on static plans). When you reach it, positions are closed and trading pauses until the next session. It is not a breach. The 40% rule does not apply in your SimFunded account.
+How and when do I get paid?
+You can request one payout every 24 hours, counted from your last accepted request. The limit is per trader, across all your accounts. Methods: crypto, ACH bank transfer and wire.
+Are there any activation fees or hidden costs?
+No. You pay the evaluation fee once. There is no activation fee when you pass, no recurring charge once you're SimFunded, and no hidden cost at any stage.
+How does the drawdown work?
+Traders Launch uses an end-of-day (EOD) drawdown, not an intraday trailing one. Your drawdown level is calculated from your closing balance each session, and it only moves up, never down. Once your account grows enough that the drawdown floor would reach your starting balance, it locks there permanently. On standard 60% and 80% accounts the drawdown is $1,000 on $100K, $2,000 on $200K, and $3,000 on $300K. On Legacy NYC accounts it is $1,000 on $100K, $1,000 on $200K, and $2,000 on $300K. We don't use intraday trailing drawdown, which we consider predatory.
+Is there a maximum time limit to pass?
+Yes. The evaluation window is 60 days. If you haven't passed by day 60 but you're above 50% of your profit target, you get a free 30-day extension automatically, at no extra cost. SimFunded accounts have no time limit once you're funded.
+What trading platforms are available?
+TradingView (in the browser, no download), Volumetrica (desktop and web), and Quantower (desktop) work for evaluation and SimFunded accounts. Hyperprop (web and app) runs with your own Hyperprop login. MES and MNQ come preloaded on every account; MGC (micro gold), MCL (micro crude oil), SIL (micro silver), and MYM (micro Dow) are available on request.
+How many accounts can I have?
+You can have up to 5 live futures accounts at a time, counting evaluations and funded accounts together, across every account type and trading platform. You can still buy more: extra accounts wait in a queue and become available when one of your live accounts ends. You can't place the same trades or run the same strategy on more than 5 accounts at any one time. That includes copying trades by hand, with a trade copier or with an automated strategy. For example, copying a trade to a sixth account is not allowed. Crypto accounts have the same limit, counted separately.
+Are there restrictions on hedging?
+Yes. Hedging is not permitted. That includes hedging the same instrument across multiple accounts, such as long NQ in one account and short NQ in another; hedging through correlated instruments, such as long NQ and short ES; and coordinating with another trader or group of traders to create offsetting positions across separate accounts. The rule applies whether the accounts belong to the same trader or to different traders acting together.
+Can I average into positions?
+Yes. Reasonable scaling and averaging are allowed. Repeatedly adding size to losing positions, especially as a routine part of most trades, is considered excessive martingale-style trading and may result in an account review.
+Are scalping and high-frequency trading allowed?
+Scalping is allowed; HFT-style trading is not. For this rule, scalping means trades held for 5–30 seconds. If more than 10% of your trades are opened and fully closed within two seconds, our HFT filter may flag your account and pause it for review.
+Are there any prohibited trading rules?
+Yes. Hedging, HFT-style trading and holding or trading an index future while it is within 2% of its CME price limit are prohibited, and excessive martingale-style trading may result in an account review. Scalping and reasonable scaling and averaging are allowed, within the rules described here and in the Terms of Service.
+Read the Futures Rules
+Can I trade near a price limit?
+No. CME limits how far an index future (ES, NQ, YM and their micros) can move in a day: 7% today. While it is within 2% of that limit, that is at a 5% move from the previous settlement, up or down, close your position and do not trade it. You can trade it again once it is back out. Holding or opening a position inside the zone is a rule breach.
+Read the Futures Rules
+What are the payout rules?
+You can request a payout once your SimFunded account is above +1% profit from its starting balance. You keep the profit split of the plan you chose at purchase: 60% or 80% on standard accounts, 55% or 80% on Legacy NYC and earlier 55% accounts. There is no consistency rule once you're SimFunded. You can request one payout every 24 hours. No per-payout cap. When your total payouts reach $100,000, your next request pauses for a review of up to 5 business days.
+Read the Payout Rules
+See All 30 Questions
+Traders Launch Futures and crypto evaluations with daily payouts.
+Evaluations
+Futures
+Crypto
+Pricing
+Rules
+Futures Rules
+Crypto Rules
+Payout Rules
+FAQ
+Company
+Results
+Affiliates
+Facts
+Evaluation and funded accounts operate in a simulated trading environment. Payouts are real. Trading futures and crypto involves substantial risk of loss and is not suitable for every trader. Passing an evaluation does not guarantee funding, and payouts are not guaranteed; all payouts are subject to program rules. See terms .
+Traders Launch LLC · 1700 Market Street Suite 1005, Philadelphia, PA 19103
+© 2026 Traders Launch LLC . All rights reserved.
+Privacy Policy
+Terms of Service
+Your Privacy Choices
+Pricing | Traders Launch

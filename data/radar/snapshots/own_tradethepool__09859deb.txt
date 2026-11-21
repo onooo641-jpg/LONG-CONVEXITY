@@ -1,0 +1,409 @@
+Program Terms - Trade The Pool - Stock Trading Prop Firm
+Skip to content
+Program Features
+The Program
+24/5 Trading
+Copy Trading
+Markets
+Funded Phase
+FAQs
+Blog
+Trading Education
+Video on Demand
+Trading books
+Forex to Stocks
+Futures to Stocks
+Inside TTP
+About us
+TTP’s Partners
+Meet the Mentors
+Meet Your Coaches
+TTP Gear
+Trader’s Area
+Sign Up Sign up to the hub and get a FREE 14-day trial
+Program Terms
+Program details
+Premable
+All information provided on this page is subject to the Terms of Use and in case of any contradiction the Terms of Use will prevail.
+All activity described in this document takes place exclusively within the Company’s simulated trading environment (the “Simulated Environment”). All references to “trading”, “trades”, “orders”, “positions”, “balance”, “buying power”, “profits” and “losses” refer solely to simulated activity, and do not refer to any actual transaction in any financial instrument, currency or asset. No order placed by a User is transmitted to, or executed in, any market or exchange. The virtual capital allocated to a User’s account is fictitious and cannot be used for any actual trading.
+Basics and Prerequisites
+Purpose and Goals
+Trade The Pool is centered around enabling and growing consistently profitable stock traders.
+The Professional programs, including the passing criteria for the evaluation phase and the general trading requirements, are designed to allow the maximum flexibility for the trader while fitting with TTP’s risk management requirements. While some rules may seem arbitrary from the standpoint of the individual trader, they are set up to protect the funding pool for all traders against even “edge cases” or “perfect storms”.
+TTP welcomes feedback and continually evaluates efficacy of the rules along with overall trader performance; however, at the end of the day it is the User’s responsibility to adapt strategy and trading style to the specific rules as currently defined. This is what allows TTP to offer these opportunities to traders.
+Document Structure and Interpretation
+This document is intended to allow the User to understand the structure of the overall framework and specific Professional programs, along with the spirit and letter of individual rules.
+While every effort has been made to make the purpose and intent of the rules clear, the rules themselves are what matters.
+This document contains 2 kinds of information:
+normative content is prescriptive, providing rules and requirements which must be followed
+non-normative content (also called “informative content”) provides background, examples, notes, and other information
+Because examples are specific rather than general, they may not illustrate all aspects or be the only way to approach a given situation. Therefore all examples are non-normative, and the wording of the rule itself always takes precedence.
+Knowledge Prerequisites
+Capital markets in general, and stock markets in particular, are a lifelong pursuit to understand. However, some basic knowledge is essential and the User should always seek to improve knowledge throughout a trading career, to avoid surprises and have a better understanding of events.
+It is the User’s responsibility to understand basic trading concepts, the unique characteristics of stock markets, and the specific venue and platform used by TTP.
+Specifically, with regards to trading, the User must fully familiarize themselves with the following terms and implications of the following terms: Market Hours, Economic Releases, Spreads, Commission, Slippage, Variable Spread Conditions, Volatility, Cents, Point Value, Share Size, Stop Loss, Quantity, Take Profit, Market Order, Stop Order, Limit Order, Ask, Bid, Risk Per Day, Pump and Dump Risk, Drawdown, Daily loss.
+Requirement Levels
+The key words “must“, “must not“, “required“, “shall“, “shall not“, “should“, “should not“, “recommended“, “may“, and “optional” in this document are to be interpreted as described in RFC 2119.
+Trading Platform
+Trade The Pool provides a trading platform based on TraderEvolution. While all Users are encouraged to take advantage of the vendor manual, the TTP system has been customized and packaged for its Users, and some features may have been added, customized, or removed. Accordingly TTP’s own documentation is critical especially in terms of using the platform in compliance with the program terms.
+Several interfaces and client software packages are available to Users on this trading platform. The Windows desktop client is the flagship and offers the most functionality. At this time, the Company also provides access to mobile clients for Android and iOS, plus the Web-based client for support on a wide variety of systems and devices.
+The Company may change its suppliers and systems to any other solution and technology, at any time.
+Core Program Framework
+By joining the Program after passing the Evaluation stage, the User is receiving a Level 1 Professional account, in which the User is expected to demonstrate a profitable trading performance.
+Besides these general rules and principles, see also the sections Trading Scope and Detailed Rules and Additional Parameters to understand all restrictions and allowances.
+Account Stages
+This describes the general process; details of specific Professional programs and account types are detailed in the subsection Account-Specific Parameters and Special Programs.
+Evaluation
+In order to become a Professional User, the User must:
+Reach the program profit target
+Trade at least as often as the activity minimum, if any
+Do at least the minimum number of positions (following your trading strategy)
+Show a consistent track record of attempting to follow all consistency and other rules (see also the volume and other rules later in this document)
+Review
+Upon reaching the targets, the risk department will review your trades to ensure compliance with the other rules and compatibility with TTP’s risk model. A Professional Account may be created but disabled while this review is in progress. As described more fully in the overall Terms of Use, you may also be asked to submit “know-your-customer” identity documentation for compliance with anti-money-laundering regulations.
+Exceptions are rare but must be addressed to ensure responsible access to the Company’s buying power and to protect the pool for all TTP traders. If there is substantive non-compliance, the evaluation may be rejected, reset, or asked to continue to the target with invalid trades removed. In cases of trivial non-compliance or heightened risk profile, the User may be passed to the Professional account with requests, reminders, or restrictions (e.g., on the number of shares of highly volatile instruments).
+You may be invited to a video interview; this is TTP’s chance to get to know you as a trader, and to discuss your trading style and experience with the program on a more holistic basis. Usually you will be allowed to begin trading before the interview, but on rare occasions this may be a prerequisite to ensure mutual understanding of how your style aligns with TTP’s rules and approach. The interview may be published to give guidance and encouragement to other traders and to allow you to share your achievement with friends and family (in case of serious privacy risks this can be made optional). The recorded interview may also be retained by TTP for quality, compliance, and other concerns, as well as to incorporate feedback from traders.
+Professional Account
+Once you are qualified for a Professional account, every time you satisfy the scaling criteria we will increase your Buying Power and Daily Pause.
+Upon scaling, the active account is closed and a new account is opened with new parameters and/or rolled-over split balance, according to the circumstance and program type. The new account will be locked until risk review of the trades is complete.
+The primary scaling criterion is the target level of valid profit. Some accounts have other requirements to be eligible for scaling and reward, including minimum activity levels to keep the account active. See the rest of this document for details.
+Volatility Rules
+Actively trading is not permitted during an applicable trading halt.
+An applicable trading halt consists of any of the following:
+A trading pause, for any reason, on the specific symbol
+A market-wide circuit breaker or any other exchange- or market-wide trading outage
+Any condition disrupting a fair and orderly market, on a given symbol or the market as a whole, which may be declared in advance or at the time by TTP in its sole judgment at its sole discretion
+Any condition causing the trading system to display a symbol as untradeable
+For the purposes of this section, each symbol affected by such a halt is designated a halted symbol and a position (actual or potential) on any such symbol is designated a halted position.
+For the purposes of this section, actively trading consists of any of the following:
+The execution of any order on a halted symbol
+(Note: Execution of such orders during a technically implemented halt is generally impossible but, in the event the system inadvertently purports to record such execution, TTP reserves the right to reverse or delete the trade in question)
+Placing an order to open or add to a halted position
+It is the User’s responsibility to be aware of potential halts, and to manage open positions and orders appropriately.
+A symbol may be subject to an automatic halt, without notice, after the asset moved 10% within 5 regular trading minutes.
+Users should familiarize themselves with regulatory and exchange halt rules (e.g., Nasdaq LULD).
+Minimum Volume Rule (The 5% Rule) is as follows:
+The volume of any opening trades (opening or adding to a position) must not exceed 5% of the trading volume in the previous one-minute candle for that instrument.
+The total volume of any new position in an instrument (including partial entries and multiple orders) must not exceed 5% of the trading volume in the previous one-minute candle for that instrument, as measured by the data provided in our system.
+Opening multiple positions within the same one-minute period, or layering entries in an instrument that collectively exceed the 5% limit, is prohibited.
+For enforcement, all trades executed in the same instrument within the same minute are aggregated and treated as a single position.
+Enforcement:
+Any trades in an instrument that violate this rule, whether through a single oversized order or multiple smaller orders intended to bypass the limit, may be invalidated and could result in additional restrictions or account review.
+Consistency/Validity Rules
+The maximum position profit ratio is 30% unless otherwise specified; that is, the User’s best position cannot be responsible for more than 30% (or the relevant ratio) of the total valid profit earned. This applies to all evaluations, and to payouts and scaling from those Professional accounts with this rule.
+For evaluation accounts, the User should close each position via pending limit orders or other appropriate mechanisms prior to this amount, relative to the profit target (original or adjusted; see below).
+Note: This is ideal, because it demonstrates the discipline the Company is looking for and makes the evaluation easier for the User, but not required.
+The User must earn sufficient overall simulated profit so that this ratio is not exceeded by any retained position relative to overall profit, regardless of whether any position profit exceeds the ratio relative to the profit target.
+The lowest profit amount which allows this condition to be satisfied for all valid trades is the adjusted profit target.
+Some account types (see Detailed Rules and Additional Parameters) impose a requirement of a minimum number of profitable days in a payout cycle.
+In order for profit from any position to be counted, the following distance and duration requirements must be met:
+Each position must yield at least 10 price ticks of profit (that is, 10.0 cents difference between average entry and average exit price).
+Example:
+Buy 100 at $50.10, sell 100 at $50.20 (at least).
+Buy 100 at $50.10, buy 100 at $50.15, sell 200 at $50.23 (at least).
+There must be at least a 60.0-second range (except otherwise specified, including 30.0 seconds for MAX/FLEX) between each opening/adding execution and the next subsequent closing/reducing execution over the lifetime of that position.
+Note: All rules corresponding to “positions” apply to any profit from the entire lifetime of any position (i.e., from the opening trade until completely “flat” again).
+Incorporating Risk Management
+Trade The Pool encourages its Users to perform their trading with a suggested risk management discipline.
+Risk management is mandatory. Deciding to self-enforce the Program’s suggested risk management will benefit the User with better simulated funding conditions on future stages of the Program, as described in this document, in chapter IDEAL RISK MANAGEMENT REQUIREMENTS.
+The conditions in an Professional Account may differ from those in an Evaluation account, as determined by the Company at its sole discretion. Certain instruments available for simulated short trading in an Evaluation account may not be available in an Professional Account.
+Some assets that will be available for short trading during the evaluation account, might not be available on the Professional account.
+Payouts
+Company pays the Professional User a Reward calculated as an agreed portion of the hypothetical net profits recorded in the Professional Account, upon request, a minimum of 14 days since the last payout (or, for the first payout on a given account, since beginning Professional trading or the creation of a newly scaled account). Payouts will be paid only to a Professional User who has a balance of $300.00 or more in the account (after subtracting any starting virtual capital) after closing all positions and orders, and the payout will be calculated only according to the profitable performance of the Users according to the Trading Rules.
+Any transaction or withdrawal of profits may be subject to a processing fee.
+In order to ensure you build up an adequate buffer and stay trading for a longer period, once the account has reached 3 x DLs in equity (i.e., “projected balance” including unrealized profits) the max drawdown for the account will move to the initial balance, going below which will result in the account being terminated.
+It is permitted to bypass this by withdrawing prior to reaching this threshold, but be aware that building a buffer is the preferred model and that the move is performed instantly based on intraday projected balance.
+For example (for reference only; the specific terms above control):
+Assume for this example an account with $100,000 initial balance, $2000 DL and $4000 max DD (minimum equity $96,000).
+When this account reaches $106,000 in equity the minimum equity will now move to $100,000 without a buffer.
+If after this point the trader decides to withdraw the full $6000, or the projected balance on the account moves below $100,000, the account will be terminated.
+To continue to trade the trader needs to ensure that after any withdrawal there is an amount greater than $100,000 remaining, which will provide the sole drawdown buffer.
+For legacy accounts with a starting balance of $0, the process is the same (minimum equity moves to $0, so going negative terminates the account).
+Scaling
+Scaling of Professional accounts depends on the account type.
+Previously split profit is not subject to additional splitting upon payout/scaling.
+Deductions against previously split profits are permanent; profitable trades which match or exceed these losses do not replenish the previously split profit but generate new profit. Accordingly, a realized loss within a given scaling tier which was not preceded by greater realized profits in that scaling tier will require additional profit to restore the same withdrawable amount. These deductions include anything which reduces the balance, when insufficient new profit remains in the account to cover them:
+Commissions
+Realized trading losses
+Payouts
+Each time the account balance reaches a new lowest point below the starting balance, the corresponding portion of previously split profit will be reduced.
+Upon each Scaling Event, the applicable Profit Split (70% Customer / 30% TTP) is applied to remaining eligible Profit. The User’s portion is posted to the next-level Scaled Account as Credits.
+Credits are applied on a first-loss basis. To the extent equity falls below the Initial Balance, the loss is charged against Credits until exhausted.
+Subsequent gains or recoveries do not restore previously reduced or exhausted Credits. Profits generated after a Scaling Event are treated as new profit and are subject to the then applicable Profit Split and reward/scaling rules.
+MAX/FLEX
+Only day-trading accounts available; swing to come.
+The tier balance is the nominal portion of the notional capital providing the buying power to the account, excluding both trading profits and any drawdown once available profits have been exhausted.
+For the first tier, the tier balance is the same as the notional capital providing the buying power to the account. The scaled account will have a starting trading balance of the previous tier balance plus 5% (which becomes the new tier balance), plus the User’s portion of the profit earned in the previous tier. The max drawdown in the scaled account is set again to the overall loss limit for the account type, meaning the minimum equity is the new tier balance minus the overall loss limit. For example:
+A newly Professional $200k FLEX account earns $20k valid profit and fulfills all scaling criteria. The account is closed and a new account is opened, with a starting trading balance of $224k: the tier balance of $210k (the previous tier balance + 5%) plus $14k of rolled-over profit (70% of $20k earned in previous tier). The max drawdown is $22k, meaning the minimum equity is $202,000.
+If the User earns $10k additional valid profit, the trading balance will be $234,000. The maximum split payout is 21,000(14k already split profit + 70% of new profit), though withdrawing all of it will close the account.
+If the User requests payout of $5k (of account balance, potentially pre-split), a new account is again created. The starting trading balance is $227,500: the same tier balance plus 17,500(14k old profit + 70% of the remaining $5000 of new profit). The trader receives $3500 (70% of $5000 requested). The max drawdown is $25,500, leaving minimum equity the same at $202,000.
+Note: As described elsewhere, whenever 3 × DL of new profit is earned (whether realized or unrealized) in any of these accounts, the max drawdown is reset to the amount of rolled-over profit (whether $0 or some other amount). This makes the minimum equity the same as the tier balance, in this example $200,000 for the initial Professional account or $210,000 for the first scaled account, meaning that the User may lose all earned profit but no more (until the next splitting event results in a new account).
+Legacy accounts
+When the account is scaled, the daily loss limit is increased by a percentage, and the buying power is increased by a fixed amount according to the account type.
+For details, refer to documentation for the specific account.
+Account-Specific Parameters and Special Programs
+Account parameters are broken down along multiple axes:
+day/swing
+MAX/FLEX/ Other
+A given parameter value may apply only to day- or to swing-trading accounts, or only to MAX or only to FLEX, or to particular combinations.
+The categorizations by which parameters and their values are broken down here should be mutually exclusive per parameter; that is, for a given account and parameter there should be only one value/rule which applies. However, in the event conflicting rules are listed here, the most specific applies.
+Note: Multiple subsections may apply to a given account type here (for example, a legacy Limited Edition day-trading account is affected by both subsections).
+MAX/FLEX
+Rewardsplit is 70/30 (trader/TTP) across the board.
+Legacy programs
+Reward split depends on account size.
+MAX
+14-day inactivity timeout on Professional account, not on evaluation.
+Over the weekend purchased:
+If a User joins TTP on Friday, we will add an extra 3 days to the evaluation period.
+If a User joins TTP on Saturday, we will add an extra 2 days to the evaluation period.
+If a User joins TTP on Sunday, we will add an extra 1 day to the evaluation period.
+FLEX
+The evaluation period is unlimited.
+Maximum position profit ratio: 50% (evaluation and Pro).
+14-day inactivity timeout (evaluation and Pro).
+Minimum 3 × 0.5% profitable days per reward cycle.
+MAX/FLEX Day
+Starts with virtual capital according to account selected:
+$5k intraday or $800 overnight
+$25k intraday or $4k overnight
+$50k intraday or $8k overnight
+$100k intraday or $16k overnight
+$200k intraday or $32k overnight
+MAX/FLEX Swing
+Minimum 5 positions.
+Starts with virtual capital according to account selected:
+$2k intraday/overnight
+$10k intraday/overnight
+$20k intraday/overnight
+$40k intraday/overnight
+MAX Day
+Minimum 20 positions.
+Maximum position profit ratio: 30% (eval only).
+Evaluation period is 60 calendar days.
+MAX Swing
+Maximum position profit ratio: 30% eval, 70% funded.
+Evaluation period is 100 calendar days.
+FLEX Day
+Minimum 10 positions.
+Legacy Limited Edition Program
+Minimum 10 positions.
+Maximum position profit ratio: 50% (eval and funded).
+Minimum 3 × 0.5% profitable days per payout cycle.
+Legacy Day-Trading Programs
+Minimum 20 positions (except Limited Edition).
+Maximum position profit ratio: 30% (except Limited Edition; eval only).
+Evaluation period is 45 calendar days.
+No inactivity timeout.
+Starts with $0 virtual capital; buying power according to account selected:
+$20k intraday or $3k overnight for Mini BP
+$80k intraday or $12k overnight for Super BP
+$160k intraday or $24k overnight for Extra BP
+$260k intraday or $39k overnight for Ultimate BP
+Legacy Swing-Trading Programs
+Maximum position profit ratio: 30% (eval only).
+Evaluation period is 100 calendar days.
+No inactivity timeout.
+Starts with $0 virtual capital; buying power according to account selected:
+$3k for Mini BP
+$12k for Super BP
+$24k for Extra BP
+$39k for Ultimate BP
+Partnerships and Add-Ons
+Trade-Ideas / TrendSpider / BookMap
+Due to our collaboration with Trade-Ideas & TrendSpider, BookMap any new User that signs up for Trade The pool program (excluding Mini BP) will be eligible for a FREE Trade-Ideas or TrendSpider or BookMap user for 30 days.
+Please be aware, once a User gets Professional, he or she will pay for their subscription to one of the platforms (if he/she would like to use them).
+Tradersync / Stock Traders Daily / Tradervue
+Due to our collaboration with Tradersync / Stock Traders Daily / Tradervue any new User that signs up for Trade The Pool program (including Mini BP) will be eligible for a FREE Tradersync / Stock Traders Daily / Tradervue user for 30 days.
+Please be aware, once a User gets Professional, he or she will pay for their subscription to one of the platforms (if he/she would like to use them).
+Trading Scope
+Trading Instruments
+Simulated trading activity is limited to those simulated instruments which are available on the platform, generally consisting of simulated instruments referencing stocks, warrants, exchange-traded notes (ETNs), exchange-traded funds (ETFs), and other exchange-traded products (ETPs) listed on Nasdaq.
+Actual trades on these instruments are further subject to the limitations described elsewhere in this document.
+Ideal Risk Management Requirements
+Ideal Risk Management Requirements apply to all Users in the programs, and they are committed to limiting their risk and exposure –
+The Program suggests a risk management discipline, which Users can choose whether to embrace or not.
+Upon meeting profit targets, the Program promises to accommodate a guaranteed account growth for all Users demonstrating either risk management approaches.
+Ideal Risk Management Discipline
+The following are the characteristics of the recommended Risk Management required and its definitions, which the User should fully comprehend and self-enforce for optimizing a growth milestone target.
+Stop Loss and Quantity
+Stop and Quantity:
+Daily loss X 30% = the maximum $ risk you can take on each trade (each execution)
+Entry Price – Stop Loss Price = Stop size
+Max $ Risk / Stop size = Number of shares to buy/sell
+Example: Stock price is $100, Entry price $101, Stop loss at $99.
+Stop size = $2
+Daily loss = $700
+Max money risk 30% of Daily Loss = $210
+Quantity = $210 / $2 = 105 shares to buy/sell
+Buying Power Calculation
+Stock price X number of shares
+When calculating available buying power, open orders are incorporated as well.
+Multiple positions of the same asset, are considered the same trade and will be added together (netting account).
+Day Trading Programs
+Beginning 10 minutes before the end of each day (regular trading hours), all open orders and positions will be automatically fully liquidated. Once the after-market session begins, Users may initiate a new position with the “overnight exposure”.
+Note: It is the User’s responsibility to ensure compliance with buying power limits; if the User wishes control over the closing price, all positions should be closed manually before this deadline.
+Swing Trading Programs
+Exposure will be the same for the entire day (out and inside regular trading hours).
+Detailed Rules and Additional Parameters
+The following are the definitions of the Program end targets:
+Calendar Days
+Unless otherwise specified, all references to “days” in this document refer to calendar days.
+Reference Market Values
+Unless otherwise specified, all references to “volume”, “price”, or “bid”/”ask” (including but not limited to entry restrictions) are in terms of the data presented through the TTP platform).
+Profit Target
+Each step in the Program has a specified target milestone in terms of USD net profit. The amount specified is net profit after deduction of all trading costs, spread and commission.
+Daily Loss Limit
+The account Daily Loss is the current equity (projected balance) at each moment minus the balance (realized) at the start of the day. Each account has a Daily Loss Limit determined by the account type and any scaling. If the Daily Loss exceeds the Daily Loss Limit, the Daily Pause is triggered: all open positions and orders are closed and the account is prevented from opening trades until the opening of the next trading day.
+The system may provide the User an opportunity to reset the Daily Pause, which will allow trading to resume with an additional Daily Loss Limit’s worth of losses allowed in the current trading day.
+Account Stop out Value
+Is the account value by equity, which determines the maximum loss allowed in the account.
+Once the Account Stop out value is breached below, termination for the account will be announced, all unrealized positions, and orders will be closed by the authorized personnel.
+Account Renewal, Extension, Resumption, and Termination
+Extension of Evaluation
+Active evaluations may be extended by purchasing a renewal on the Hub within the final 3 calendar days of the evaluation, until 23:59 ET on the expiration day.
+In case a user fails to renew in time using the automated system, CS should be contacted immediately if extension is desired.
+No Extensions Required on Professional Accounts
+Professional accounts do not require any purchase to open beyond the evaluation cost, nor do they need to be extended, renewed, or subscribed to. They remain active indefinitely until scaled, paid out, or terminated.
+Terminations Due to Loss/Risk Rules
+Terminations due to risk violations, such as breaching the overall loss limit, are permanent and effective immediately.
+Terminations Due to Inactivity
+A User who knows of an upcoming inability to trade which is likely to extend past the inactivity period must let CS know ahead of time.
+Minimum Trades
+The minimum number of trades to pass the evaluation phase is 20, unless otherwise specified.
+Flat Portfolio on Targets
+A User must close all trades and pending orders once reaching the milestone target or the drawdown.
+Copy/Wash Trading
+Copy trading is defined as entering any position within 30 minutes of entering the same position in another account, regardless of size or entry price. Copy trading is allowed only between 2 accounts (not more) that are each Mini BP, Super BP, or MAX/FLEX of the following sizes:
+MAX/FLEX day-trading
+$5k
+$25k
+$50k
+MAX/FLEX swing
+$2k
+$10k
+Any copying of activities must be performed by the User.
+Wash trading is defined as entering any position within 30 minutes of entering the opposing position in another account, regardless of size or entry price. Wash trading is forbidden.
+Minimum Volume Per Asset
+Regular Trading Volume
+During regular trading hours, a User may open or add to a position only if the number of shares that have been traded on that day is more than 200,000 shares.
+Example:
+ABC ticker has a volume of 150,000 at 09:50 ET – must not open/add
+ABC ticker has a volume of 203,000 at 09:57 ET – may open/add
+Extended Trading Volume
+During extended trading (pre-/after-market), a User may open or add to a position only if the number of shares that have been traded on that day is more than 20,000 shares.
+Example:
+ABC ticker has a volume of 15,000 at 08:50 ET – must not open/add
+ABC ticker has a volume of 23,000 at 08:53 ET – may open/add
+Special Case – Threshold Reached During the Entry Minute
+If an order is opened in an instrument during a minute when its daily trading volume had not yet met the required threshold but the threshold was reached during that same minute, the following calculation is applied:
+Take the total trading volume of that instrument in the one-minute candle.
+Divide the total candle volume by 60 seconds (per-second average).
+Multiply the per-second average by the number of seconds elapsed in the candle at the time of entry.
+Add this to the instrument’s daily volume at the start of the candle.
+If the calculated daily volume for that instrument at the entry time meets or exceeds the required minimum (400k in regular trading hours, 40k in extended hours), the trade is valid. Otherwise, it is invalid.
+Example:
+Valid trade:
+Daily volume before candle = 398,000.
+Entry at 20 seconds into the candle.
+Candle adds 12,000 shares → 200 shares/second.
+200 × 20 = 4,000 → 398,000 + 4,000 = 402,000.
+Trade valid (threshold met).
+Invalid Trade:
+Same candle, entry at 10 seconds.
+200 × 10 = 2,000 → 398,000 + 2,000 = 400,000 (still below threshold).
+Trade invalid.
+Swing Trading Accounts
+In swing trading accounts, in order to open a position to hold overnight, there must be an average of at least 500,000 shares/day traded over previous 14 calendar days.
+Accumulated Buying Power
+Purchasing multiple evaluation accounts is permitted. However, the total base buying power of all accounts should not exceed $450K of Simulated Buying Power (before scaling).
+Trading Commission
+Simulated commissions are applied within the Simulated Environment at a fixed rate set by the Company, in order to mirror the conditions of trading in live markets and to ensure consistency between Evaluation and Professional accounts. Such commissions are notional only, are deducted solely from the virtual balance of the account for purposes of calculating hypothetical results, and are not charged to, or payable by, the User.
+The cost of commission is 1/2 cent per share, with a minimum cost of $0.75, per filled order:
+When buying 50 shares of AAPL in 1 order you will pay $0.75 (the minimum)
+When buying 200 shares of AAPL in 1 order you will pay $1 (by number of shares)
+Simultaneous Connections
+1 server connection is allowed at a time for each client application class (mobile or desktop).
+Restrictions for Overnight Positions
+Earnings
+During the earning season the User will not be allowed to hold an overnight position on a reporting company.
+Example:
+AAPL reporting on July 20th, after market close.
+A User will be able to trade it on the 20th intraday, but won’t be able to hold it overnight.
+On the 21st, once the market opens at 9:30 ET, the User will be able to trade it as normal.
+Stock Splits
+All positions must be closed before splits (if it was announced at least the day before).
+Dividends
+All positions must be closed by the User before the stock trades ex-dividend, and may be reopened once it begins trading ex-dividend, if desired. For example:
+Declaration Date: Monday, 1 July 2024
+Record Date: Sunday, 14 July 2024
+Ex-Dividend Date: Friday, 12 July 2024
+Payable Date: Tuesday, 17 July 2024
+It is forbidden to hold this stock short on the night of Thursday, 11 July 2024. The short position may be re-established (subject to other rules) on Friday, 12 July 2024, or at a later time.
+Automated Trading
+Support for automated trading, including the specific integration with SignalStack, is currently in a beta state. As such its availability is not guaranteed and the specific features and parameters may change. Additional conditions may be required for particular accounts, instruments, or strategies at the Company’s discretion at any time.
+As stated in the overall program terms, the trader is responsible for all trades conducted on the account regardless of whether manually or automatically created.
+It is important to avoid overloading the server. Therefore a rate of no more than 2 requests/min should be targeted. Besides the Company’s right to reserve approval for any algorithm, integration, or client, determination of service load is at the Company’s judgement; the Company may request or require adjustments to make any automation less demanding, whether on an individual basis or across the board.
+As noted above, TTP may revoke authorization for automated trading in general as well. This is a courtesy (currently in beta) and not a service guarantee (as the Professional trader is performing services for the Company, the Company is the arbiter of which approaches or implementations are of benefit to the Company).
+Trading Conditions
+Trading performance may also be affected by various conditions, as such:
+Variable Spread
+Spreads vary according to the market liquidity, at rigid times such as during high-impact economic events, the spread difference of ask and bid prices can expand multiple times.
+Simulated spreads are derived from market data provided by third-party data providers reflecting Nasdaq pricing.
+Stop Pending Orders
+Ordering at a specifically requested price is not a functionality of stop orders – once triggered, the simulated order will be filled at the next available price according to the market data recorded in the Simulated Environment.
+Trading Gaps
+At times of extreme liquidity in the market, the differences from one tick quote for the next may significantly increase. This is also known as ‘A Gap’. Any orders that are placed at prices with no tick quote will be filled at the next available quote. This may result in execution at a less preferred price.
+Economic Event Releases
+At times of releasing any Economic Data, the price tends to form gaps, and spreads may increase in multiples, and execution is not guaranteed by price. It is advised to pay attention to the event release schedule, to reduce position exposure and shift further limit and stop orders.
+Stocks Market Trading Hours
+Market hours are based on the ET time zone. During normal days the stock market open hours are from 09:30 to 16:00, Monday to Friday.
+However, on US holidays the market will close early or won’t be active at all.
+It’s the User’s responsibility to check and be aware of holidays, days and hours of activity.
+Complaint and Disputes
+In the unlikely event that you are dissatisfied with the service provided by Trade The Pool, please contact our helpdesk as soon as possible via email at help@TradeThePool.com, by submitting a contact form under the contact us page, or by contacting our live support chat when available.
+In case of filing a complaint, please include as much detailed information to describe your case. To allow us to easily investigate your complaint, associate your full name, email, account id, time of the event, and further detailed information related, You may also provide screenshots images of software, log files, and any other evidence that can be helpful for the claim.
+If a 3rd party service is involved, before you take formal steps, first to contact us by email. telephone or chat, when available. Often it is possible to find a solution without instigating formal procedures.
+The above is provided in addition and subject to the Terms of Use
+Start trading now
+Part of 5% group-
+Join Us Now
+Add as a preferred
+source on Google
+Find Us On
+We work with
+Download our app
+Get Started
+FAQs
+Terms and conditions
+Copyright Infringement Policy
+Program Terms
+Trading Hub
+Program Cheat Sheet
+The Program In a nutshell
+The program
+Funded Phase
+About us
+About us
+Contact us
+Privacy Policy
+Cookie Policy
+Affiliates Program
+AML Policy
+Contact
+Office Hours
+Sunday – Thursday
+07:00 – 17:00 GMT
+Fridays
+07:00 – 12:00 GMT
+Email
+Help@TradeThePool.com
+UK Branch
+Enstar House, 168, Praed Street, London
+Website Disclaimers
+Five Percent Online Ltd. (“We”, “Our”, “Us”, or “Company”) operates as a proprietary trading firm. The Company is not a custodian, exchange, financial institution, trading platform, fiduciary or insurance business outside the purview of financial regulatory authorities. “Trade The Pool” is a brand name operated by the Company.
+All trading activities conducted through the Company Hub are executed in a simulated environment. Users should be aware that the trading results in this environment do not reflect real trading outcomes. The simulated trading environment in the Hub is designed for educational and evaluation purposes only. The “funds” provided to you for the evaluation are fictitious, do not represent any currency, and that you have no right to possess those fictitious funds beyond the scope of their use within the Hub and for the sole purpose of the evaluation, and in particular that they may not and cannot be used for any actual trading and that you are not entitled to any payment or other right in or of those funds.
+Becoming a pro user is not guaranteed. The eligibility for becoming a pro user is contingent upon meeting specific performance criteria and compliance with the Company’s evaluation processes. Not all users will qualify for pro accounts, and past performance in the simulated environment is not indicative of future success.
+All content published and distributed by Us and Our affiliates is to be treated as general information only. None of the information provided contained herein is intended as (a) investment advice, (b) an offer or solicitation of an offer to buy or sell, or (c) a recommendation, endorsement, or sponsorship of any security, company, or fund. Testimonials appearing on the website may not be representative of other clients or customers and is not a guarantee of future performance or success. Use of the information contained on the website is at your own risk and the Company and its partners, representatives, agents, employees, and contractors assume no responsibility or liability for any use or misuse of such information.
+Hypothetical or simulated performance results have certain limitations. Unlike an actual performance record, simulated results do not represent actual trading. Also, because the trades have not actually been executed, the results may have under-or-over compensated for the impact, if any, of certain market factors, such as lack of liquidity. Simulated trading programs, in general, are also subject to the fact that they are designed with the benefit of hindsight. No representation is being made that any account will or is likely to achieve profit or losses similar to those shown.
+Five Percent Online LTD – Copyright © 2026.

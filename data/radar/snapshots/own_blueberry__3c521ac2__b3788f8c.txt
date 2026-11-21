@@ -1,0 +1,28 @@
+Is Scalping Allowed? (Minimum Position Time) | Blueberry Futures Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Noto Sans".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Sign Up Login English हिन्दी 日本語 Español English
+Sign Up Login English हिन्दी 日本語 Español English
+Search for articles...
+All Collections
+Trading Rules & Risk Management
+Trading Limits & Restrictions
+Is Scalping Allowed? (Minimum Position Time)
+Is Scalping Allowed? (Minimum Position Time)
+⚡ Yes, manual scalping is allowed. Tick-scalping and HFT are not.
+November 24, 2025
+Table of contents
+Scalping & Minimum Position Time
+We welcome scalpers who profit from quick market moves. However, we strictly distinguish between Legitimate Scalping (Skill) and Tick Scalping (Manipulation).
+Is there a minimum time I must hold a trade? We do not enforce a hard "1-minute" rule for every single trade. However, our Risk Team monitors for Tick Scalping behavior.
+​
+❌ The Red Flag
+Trades that are consistently opened and closed in sub-second intervals (e.g., 0-5 seconds) are characteristic of High-Frequency Trading (HFT) and arbitrage bots. This trading behavior is prohibited.
+​
+✅ The Safe Zone
+If you are manually entering and exiting trades based on market structure, you have nothing to worry about. Legitimate scalping typically lasts significantly longer than the latency of a data feed.
+Related Articles
+What counts as "Gambling" or Prohibited Strategies?
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Blueberry Futures

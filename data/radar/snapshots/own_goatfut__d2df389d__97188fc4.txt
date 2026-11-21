@@ -1,0 +1,113 @@
+Flex Challenge | Goat Funded Futures FAQ's
+Help Center / Choose a model / Flex Challenge
+Flex Challenge
+Flex Challenge: specifications, rules and payouts
+Everything for Flex 50K, 100K and 150K: profit targets, drawdown, the optional daily loss limit, contract limits, payout caps, the 1 minute holding rule, and how big trading days are treated.
+Values by account size: Flex 50K / Flex 100K / Flex 150K
+Profit Target : $3,000 (6%) / $6,000 (6%) / $9,000 (6%)
+Activation Fee : $0 / $0 / $0
+Time Limit : None / None / None
+Plan overview Drawdown and limits Consistency Rewards Trading rules
+Flex 50K Flex 100K Flex 150K
+Profit Target $3,000 (6%) $6,000 (6%) $9,000 (6%)
+Activation Fee $0 $0 $0
+Time Limit None None None
+The Flex Challenge is a one-phase evaluation with no time limit, no daily loss limit unless you add one at checkout, and no consistency rule once you are funded.
+Key benefits
+No time limit to pass the evaluation
+No daily loss limit, in evaluation or funded. You can add one at checkout for a lower price
+No consistency rule on the funded account
+No per-trade holding deduction: the 1 minute rule is checked only at payout
+End of day trailing max drawdown, which locks once it reaches your starting balance
+80/20 profit split by default, with an optional 90/10 add-on
+$0 activation fee, so your funded account is activated at no extra cost
+Pricing & Targets
+Prices change with our promotions. For the current price and reset fee, see the pricing page or ask us in chat.
+Two resets are available per challenge. You can hold up to 5 funded accounts. If your account has the daily loss limit option, the reset account keeps it.
+How to pass
+Reach the profit target of 6% of your starting balance.
+Stay within the trading rules and loss limits below.
+There is no minimum number of trading days. Once you pass, your evaluation period is reviewed, and your funded account is activated within 2 business days.
+Maximum drawdown (end of day trailing)
+Your maximum drawdown is the level your balance or equity cannot fall below. It trails up with your profits at the end of each trading day, and stops trailing once it reaches your starting balance. That lock applies in both the evaluation and funded phases.
+Breaching it is a hard breach, which closes the account immediately.
+Account Size Max Drawdown
+50K $2,000 (4%)
+100K $3,000 (3%)
+150K $4,500 (3%)
+Daily loss limit
+None by default. A Flex account has no daily loss limit in the evaluation phase or on the funded account.
+You can add one at checkout and pay less for the account. The limit is $1,000 on a 50K, $1,500 on a 100K and $2,500 on a 150K. It applies in both phases, and hitting it is a hard breach that closes the account. You can't add or remove it after purchase, and a reset keeps it. See Can I add a daily loss limit to my Flex account?
+Contract Limits
+The evaluation has a fixed contract limit. From 10 November 2026, every funded Flex account uses the limits in the second table. Your limit depends on your simulated profit and goes up as that profit grows.
+Account Size Evaluation
+50K 3 mini / 30 micro
+100K 5 mini / 50 micro
+150K 8 mini / 80 micro
+Funded contract limits by simulated profit
+Simulated profit 50K 100K 150K
+$0 to $999 2 mini / 20 micro 3 mini / 30 micro 4 mini / 40 micro
+$1,000 to $1,999 3 mini / 30 micro 4 mini / 40 micro 5 mini / 50 micro
+$2,000 to $2,999 4 mini / 40 micro 5 mini / 50 micro 6 mini / 60 micro
+$3,000 to $4,499 4 mini / 40 micro 6 mini / 60 micro 8 mini / 80 micro
+$4,500 and above 4 mini / 40 micro 6 mini / 60 micro 10 mini / 100 micro
+The top limit is 4 mini on a 50K, 6 mini on a 100K and 10 mini on a 150K. Profit above that level does not raise it further.
+Example on a funded 100K. You start at 3 mini / 30 micro. Once your simulated profit reaches $1,000 you can trade 4 mini, and from $3,000 you can trade 6 mini, the most a 100K allows.
+Consistency rule: evaluation only
+The consistency rule limits how much of your total profit can come from a single trading day, so that profits are steady and sustainable.
+During the evaluation, no single day may account for more than 50% of your total profit. If you go over, you cannot complete the evaluation until your best day falls back to 50% or below. Keep trading and building profit until it does.
+On a funded account there is no consistency percentage.
+Payouts
+Eligibility: every 5 winning days.
+Request window: payout requests are submitted through your dashboard between the 5th and 8th, or the 20th and 23rd, of each month.
+Minimum request: $500. There is no profit buffer to build up first, so any amount above $500 qualifies.
+Maximum request: 50% of the total profit on your account, capped by account size.
+Note: The minimum net profit required for a winning day depends on the account size:
+Flex 50K: 0.5% — $250
+Flex 100K: 0.4% — $400
+Flex 150K: 0.3% — $450
+Account Size Payout Maximum
+$50,000 50% of Profit up to $2,000
+$100,000 50% of Profit up to $2,500
+$150,000 50% of Profit up to $3,000
+The 50% and the caps above are measured against the total profit on your account, before the profit split is applied. The remaining 50% stays in the account and supports your equity into the next payout cycle.
+Example on a 50K account. You have made $4,700 in total profit. Half of that is $2,350, which is above the $2,000 cap for a 50K, so you can request $2,000. At the default 80/20 split you receive $1,600. With the 90/10 add-on you receive $1,800.
+Profit split
+80/20 by default. You can add the optional 90/10 Profit Share Add-On for an extra 20% of the challenge price. The checkout shows the exact amount.
+Traders who do not buy the add-on are paid under the default 80/20 structure.
+Holding time: the 1 minute rule
+Flex uses the same 1 minute holding rule as every GFF plan.
+When you pass the evaluation and at each payout request, both of the following must be true:
+at least 70% of your closed trades were held longer than 1 minute, and
+at least 70% of your net profit came from trades held longer than 1 minute.
+If either is not met, we deduct the profit from winning trades held under 1 minute in that cycle from your payout and pay the rest. If that profit is more than the amount you requested, we decline the payout and deduct the requested amount from the account instead. This is not an account breach, and your account stays open.
+Examples on a 50K Flex account
+Example 1: too few trades held longer than 1 minute. You have $5,000 total profit and request a $2,000 payout.
+Total trades: 25
+Held longer than 1 minute: 15 (60%)
+Profit from winning trades held under 1 minute: $500, which is 10% of your profit
+Only 60% of your trades were held longer than 1 minute, below the 70% needed. We deduct $500 from your payout and pay the remaining $1,500. Your account stays open.
+Example 2: too little profit from trades held longer than 1 minute. You have $6,000 total profit and request a $2,000 payout.
+Total trades: 25
+Held longer than 1 minute: 20 (80%)
+Profit from winning trades held under 1 minute: $2,400, which is 40% of your profit
+You meet the trade requirement, but only 60% of your profit came from trades held longer than 1 minute. The $2,400 deduction is more than the $2,000 you requested, so we decline the payout and deduct $2,000 from your account. Your account stays open.
+How this fits with the other rules
+The 1 minute rule , above, applies to every GFF plan.
+The 2 minute microscalping rule no longer applies on any plan.
+Tick scalping , meaning opening and closing positions within seconds to capture small tick profits, is not permitted on any account, including Flex. Profit generated this way may be reviewed and deducted.
+Can I make one big day and get paid?
+Yes. No consistency rule on funded means we do not dictate how your profit is spread across your trading days. You can have big days and quiet days and still qualify for a payout. That freedom stays.
+What it does not allow is deliberately loading nearly all of your profit into one day, then placing bare minimum trades purely to tick off the remaining winning days and unlock a withdrawal. That is not a strategy with an edge, it is gaming the payout requirement. It also closely mirrors external and cross account hedging, where one leg of a position is offset on a separate account or at another firm, so the losing side is sacrificed and the winning side is withdrawn here as profit. Where this is detected the payout may be withheld, the concentrated day's profit voided, and the account closed.
+Example on a 50K account. A $2,500 day alongside $500 to $600 on your other days is exactly how Flex is meant to work, and you will be paid. A $2,500 day followed by aiming for the minimum qualifying profit of $250 on every other day, purely to complete your winning days, is what this rule addresses.
+News trading
+Evaluation: no restrictions.
+Funded: a 2 minute buffer applies around high impact news events. You cannot open, close, or trigger pending orders within 2 minutes before or after a scheduled release. Positions opened before the window began may be held through the event.
+Overnight and weekend holding
+Overnight holding is not permitted. Any position still open is closed automatically at 15:55 CT, five minutes before the session ends.
+Weekend holding is not permitted.
+Inactivity
+Place at least one trade every 14 days. If no trades are placed for 14 consecutive days the account is breached and closed, and the fee is not refunded. This 14-day rule applies from 7 November 2026. There is no time limit on passing the evaluation, but the account does need to stay active. If you are going to be away, tell support in advance.
+Please monitor our website and Discord for announcements about trading parameters, updates, or system changes.
+Updated 19 November 2026
+Back to top

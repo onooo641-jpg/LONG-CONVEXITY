@@ -1,0 +1,47 @@
+How long does my payout take to arrive? | Blueberry Futures Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Noto Sans".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Sign Up Login English हिन्दी 日本語 Español English
+Sign Up Login English हिन्दी 日本語 Español English
+Search for articles...
+All Collections
+Payouts & Withdrawals
+How long does my payout take to arrive?
+How long does my payout take to arrive?
+Payouts usually reach a crypto wallet in 3 to 5 business days and a bank account in 5 to 7. Some payouts are currently taking longer while we upgrade our payment infrastructure.
+August 18, 2026
+Table of contents
+Counted from the moment you submit your request, a payout usually takes:
+3 to 5 business days to reach a crypto wallet
+5 to 7 business days to reach a bank account
+Some payouts are currently taking longer than that. See below.
+Current processing times
+We're upgrading a large part of our payment infrastructure to make payments more efficient and easier to forecast. While that work is underway, step 2 below is taking up to 7 to 14 business days instead of the usual 24 to 48 hours. Add that to the standard timeline to work out where your payout sits.
+We're sorry for the inconvenience. Once the upgrade is complete, payouts will be faster and more predictable.
+Your payout is still moving during this time. You don't need to submit a new request or follow up to keep it in the queue.
+The three stages of a payout
+1. Internal review, 24 to 48 hours
+Our risk team checks that your request meets the consistency and trading rules. This step is unaffected by the current delay.
+2. Funds sent to your Rise Wallet, normally 24 to 48 hours
+Once approved, we release the transfer to your Rise Wallet. This is the step currently taking up to 7 to 14 business days.
+3. Withdrawal from Rise to your final destination
+You move the funds from Rise to your bank or wallet yourself. Timing depends on the method:
+Crypto (USDT/USDC): usually 30 minutes to a few hours
+Bank transfer / ACH: usually 1 to 3 business days, depending on your bank
+Step 3 sits with Rise and your provider, not with us, so the current delay doesn't affect it.
+What "PAID" means on your dashboard
+PAID means the funds have left our system and are sitting in your Rise Wallet . It does not mean the money has reached your bank or crypto wallet.
+To finish the payout, log in to your Rise account and withdraw the funds to your chosen destination. Nothing moves out of Rise until you do this.
+If your dashboard has shown PAID for more than 24 hours and the funds aren't visible in Rise, contact support.
+If it's taking longer than expected
+Contact our support team if:
+your request was approved more than 14 business days ago and your dashboard still doesn't show PAID
+your dashboard shows PAID but nothing has appeared in Rise after 24 hours
+you've withdrawn from Rise and the funds haven't arrived after your provider's normal clearing time
+Include your account ID and the date you submitted your request. That lets us trace the payment straight away instead of asking you for it first.
+Related Articles
+Which payout methods are available?
+Rise Payouts: The Complete Setup Guide
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Blueberry Futures

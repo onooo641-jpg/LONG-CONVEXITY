@@ -1,0 +1,33 @@
+Drawdown types explained | FuturesElite FAQ Skip to main content
+Back to Website Discord
+Back to Website Discord
+Search for articles...
+All Collections
+Trading rules
+Drawdown types explained
+Drawdown types explained
+End of Day trailing vs intraday trailing.
+October 13, 2026
+Both models keep a fixed distance below a reference point and only ever move up. The difference is the reference point.
+End of Day trailing
+Intraday trailing
+Moves on
+Your closing balance
+Your equity high, in real time
+Intraday dips below it
+Fine if the day closes above
+Breach
+Open profit
+Never moves it
+Moves it immediately
+Used by
+Elite, Prime, Nitro evaluation, Instant, Live
+Nitro Sim Funded
+Intraday trailing is the stricter model. Check your account's collection for exactly where the floor locks.
+Related Articles
+Elite drawdown, daily loss limit and contracts
+Prime drawdown and Daily Loss Limit
+Nitro drawdown: End of Day, then intraday
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+FuturesElite FAQ
+We run on Intercom

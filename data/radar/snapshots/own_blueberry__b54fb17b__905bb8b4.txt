@@ -1,0 +1,90 @@
+Rise Payouts: The Complete Setup Guide | Blueberry Futures Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Noto Sans".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Sign Up Login English हिन्दी 日本語 Español English
+Sign Up Login English हिन्दी 日本語 Español English
+Search for articles...
+All Collections
+Payouts & Withdrawals
+Rise Payouts: The Complete Setup Guide
+Rise Payouts: The Complete Setup Guide
+Step-by-step instructions on how to set up your Riseworks account to receive your funds securely.
+November 26, 2025
+Table of contents
+Setting Up Rise for Blueberry Futures Payouts
+When you request your first payout, Blueberry Futures sends your funds through Rise Pay —a secure, global payment platform for professional contractors. From Rise, you can withdraw funds directly to your local bank account or crypto wallet.
+📋 What You'll Need
+Government-issued photo ID (Passport, Driver's License, or National ID)
+A clear selfie (taken during the process)
+Bank account or crypto wallet details
+Tax ID (SSN/ITIN for US; National Tax ID for International)
+🚀 Step-by-Step Setup
+Step 1: Open Your Invitation Email
+Once your payout is approved, check your email for an official invitation from Blueberry Futures .
+Action: Click the link in the email to begin signup.
+Can't find it? Check your Spam folder or contact support.
+Step 2: Create Your Rise Account
+Visit the link in your email or go to pay.riseworks.io/sign-up .
+Name: Enter your First and Last name exactly as they appear on your ID.
+Email: Use the same email address connected to your Blueberry Futures account.
+Note: Rise uses secure magic links for login. You will not create a traditional password yet.
+Step 3: Complete Your Profile
+Account Type: Select "Receive Payments" (This is free).
+Details: Fill in your current residential address and date of birth.
+Tax Info: Select "Individual" (unless you are a registered business entity) and enter your Tax ID.
+Agreement: Sign the Master Service Agreement.
+Step 4: Identity Verification (KYC)
+To prevent fraud, Rise requires strict identity verification.
+You will need to upload:
+A Live Selfie: Well-lit, no glasses/hats.
+ID Photo: A clear photo of your physical document.
+✅ DO
+❌ DON'T
+Take a photo of the physical ID card .
+Upload a scan or a photocopy.
+Include all four corners .
+Crop the image or use filters.
+Ensure text is readable/sharp.
+Submit an expired ID.
+Step 5: Wait for Verification
+Automated: Most accounts are approved instantly.
+Manual Review: May take 1–3 business days. Keep an eye on your email in case Rise requests more documents.
+Step 6: Security & Recovery Code (⚠️ CRITICAL)
+Once approved, you will secure your account.
+Create a Password: We recommend 18+ characters.
+Save Your Recovery Code: You will be given a 12-word recovery phrase .
+STOP AND READ: This code is the ONLY way to recover your account if you lose access. Blueberry Futures cannot recover this for you.
+Action: Write it down on paper and store it safely. Do not save it in a plain text file or share it with anyone.
+Step 7: Add Withdrawal Method
+Go to the "Withdraw" section and select "External Accounts" to link your preferred method:
+Bank Transfer (ACH/Wire): 1–3 Business Days.
+Crypto Tokens (USDC/USDT): Hours to 1 Day.
+Step 8: Join the Blueberry Futures Team
+⚠️ Do not skip this step. Even after creating your account, you must link it to us.
+Log in to Rise.
+Click "Action Items" in the left navigation menu.
+Find the team invitation from "Blueberry Futures" (or our legal entity name).
+Click "Accept."
+Without accepting this invite, we cannot send money to your wallet.
+❓ Troubleshooting & FAQ
+I already have a Rise account. Do I need a new one?
+No. If your Rise email matches your Blueberry Futures email, verification is usually automatic. Just log in and check your "Action Items" to accept the Blueberry Futures team invite.
+Where is my invitation email?
+First, check your Spam/Junk folder. If it’s not there, ensure you are checking the email address linked to your Blueberry Futures account. Contact our support if you need a resend.
+How long do withdrawals take?
+Once the funds leave your Rise wallet:
+Crypto: Usually within minutes to hours.
+Bank: 1–3 business days depending on your country.
+Why was my ID rejected?
+Common reasons include: Blurry text, flash glare hiding details, or the ID corners being cut off. Please retake the photo using the original physical card (not a screenshot of a photo).
+🔒 Security Reminders
+Never share your 12-word recovery phrase with anyone, including support staff.
+Blueberry Futures will never ask for your Rise password or recovery code.
+For technical issues with the Rise platform, visit the Rise Help Center .
+Related Articles
+Refund & Cancellation Policy
+I Passed! What happens next?
+How long does my payout take to arrive?
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Blueberry Futures
