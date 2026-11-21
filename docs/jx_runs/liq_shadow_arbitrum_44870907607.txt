@@ -1,0 +1,8 @@
+arbitrum: v2 start, head 526149006
+arbitrum: loaded 34264 cached positions
+arbitrum: recalibrated 13757 cached positions
+arbitrum: positions 34266/34266 (0.0 min)
+arbitrum: positions ready: 34266 users, 13756 with debt
+arbitrum: head 526150636 cycles 465 debtors 13759 cand 1698 last_cycle 874 ms rpc ok/err 3946/None
+arbitrum: head 526151700 cycles 944 debtors 13759 cand 1697 last_cycle 569 ms rpc ok/err 6561/None
+arbitrum: head 526152768 cycles 1423 debtors 13765 cand 1694 last_cycle 595 ms rpc ok/err 9178/None
