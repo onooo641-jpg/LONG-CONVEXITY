@@ -1,0 +1,1008 @@
+All Our Rules | Phidias Propfirm
+Skip to content
+Up to 60% off evaluations Limited time
+PHIDIAS
+How It Works
+Accounts
+Rules
+Resources
+FAQ
+Contact Support
+Blog
+Discord
+Sign In
+Get Funded
+How It Works
+Accounts
+Rules
+FAQ
+Contact Support
+Blog
+Discord
+Sign In
+Get Funded
+THE PHIDIAS PROPFIRM RULES
+Our rules will never be a problem, they are designed to be selective, never punitive!
+×
+All
+Express to Live
+Fundamental
+Premium
+Challenge
+Table of Contents
+Getting Started
+Foreword
+How It Works
+General Rules
+Risk & Drawdown
+EOD Rules
+Overnight & Over-Week
+Trading Hours
+Trading Rules
+News Trading
+Commissions
+Authorized Products
+Consistency Policy
+30% Consistency Rule
+Payouts & Withdrawals
+Withdrawal Rules
+Activation Fees
+Phidias Wallet
+Account Types
+Express to Live
+Fundamental
+Premium
+10K Challenge
+ELITE & MASTER LIVE
+Account Limits & Copy Trading
+Policies
+Country Restrictions
+Refund Policy
+Market Data
+Getting Started
+1
+Foreword
+All Accounts
+At Phidias Propfirm, we firmly believe in your autonomy when it comes to trading. Your trading style is an expression of your personality and your strategy, and we are here to support you without hindrance. Whether you prefer scalping, intraday or swing trading, you have carte blanche as long as your trading is legitimate, in phase with market conditions, and we can replicate your trades on our corporate accounts.
+You can trade a wide range of instruments and assets, from Forex to Indices, commodities, rates, and Cryptocurrencies. You will find a complete list of available symbols in the Authorized Products section below.
+Trading Styles
+Scalping, Intraday, Swing
+Your Freedom
+Trade any style, any authorized instrument
+We encourage all our traders to avoid gambling practices unrelated to trading. In case of intentional or repetitive non-conforming behavior on one or more accounts, we reserve the right to take measures to reduce risks, ranging from removing conflicting positions to rebalancing the account, reducing contracts or closing the account completely and terminating our cooperation.
+2
+How Phidias Propfirm Works
+All Accounts
+We bear the risk and share the profits. Trading with Phidias Propfirm is as simple as it gets:
+1
+Registration
+Register on our platform and choose a subscription via our registration form. You can buy your evaluation pack using any credit/debit card.
+2
+Platform Connection
+Download and install Rtrader Pro, or connect via NinjaTrader / Tradovate , then download and install your preferred trading platform. See Partner Platforms
+3
+Evaluation Phase
+Trade according to your strategies, following the Phidias Propfirm guidelines defined in the evaluation plan you have chosen. Express to Live, Fundamental, Premium, and 10K Challenge accounts each have their own rule set — see the dedicated sections below.
+4
+Become a Phidias CASH Trader
+Once your evaluation account is validated and you have met the requirements, you can start earning money by trading on our Phidias-CASH accounts.
+5
+Switch to Live (Discretionary)
+For Fundamental and Premium accounts: after 5 successful payouts or $100,000 in cumulative profits , you may become eligible for a LIVE funded account. The final decision is made by the Phidias risk management team at its sole discretion.
+For Express to Live accounts: after reaching the profit target on the CASH account, click the "Switch to Live" button to automatically trigger the fixed Bonus Payout and convert to LIVE. See the Express to Live Account Rules section.
+3
+General Rules
+All Accounts
+Choose your account size: You choose and purchase the account size that best fits your goals and trading style.
+The monthly subscription is recurring as long as the account is not validated or canceled. These fees cover access to data feeds and a number of our tools and services.
+Start the evaluation account: Once registered and you have paid the subscription, we will send you an explanatory email. You can start your evaluation account via the trading platform of your choice (DeepCharts with dxFeed, any platform compatible with Rithmic, or NinjaTrader / Tradovate). Connection guides here
+Available account types: Phidias offers four account categories:
+Express to Live (E2L) — 25K, 50K, 100K, 150K sizes. Static drawdown, zero minimum trading days, and your first payout converts straight to a LIVE funded account.
+Fundamental — 50K, 100K, 150K sizes. Intraday trading with EOD trailing drawdown. Standard 80/20 profit split.
+Premium — 50K, 100K, 150K sizes. Overnight and weekend holds allowed, cash funded in 1 trading day, payouts every 5 days, progressive profit split from 75% up to 100%, and an exclusive Cash Account Reset option.
+10K Drawdown Challenge — monthly competition with $24K cash prizes.
+Reach the profit target without breaking any rules: The main objective is to make profits while respecting our trading rules. Keep an eye on your maximum authorized loss, as this criterion is one of the most important for success. See EOD Rules
+Failed Evaluation?
+Purchase a reset or wait 30 days for automatic reset
+Min. Trading Days to Pass
+3 days
+CASH Account Activation
+Automatic after paying activation fees + signing contract
+Risk & Drawdown
+4
+End of Day (EOD) Rules
+Fundamental
+Premium
+During the evaluation phase, we carefully monitor your performance and apply risk management mechanisms to help you succeed as a trader.
+Authorized Drawdown Management
+Your authorized drawdown is calculated at the end of each trading day, and this calculation does not change during the day. However, if your balance reaches and exceeds the value of your drawdown limit, you will be liquidated. When your account balance reaches a new profit peak at the end of the trading day, the drawdown is calculated taking into account only the profits realized at that time, excluding unrealized profits.
+Trailing End of Day
+Trailing end of day involves automatically adjusting the daily stop-loss level as your capital moves upward. The daily stop-loss level is adjusted at the end of each trading session, which ends at 10:00 PM UTC+2 .
+50K Eval Drawdown
+$2,500 max loss
+100K Eval Drawdown
+$3,000 max loss
+50K Funded Floor
+$50,100 (trailing stops here)
+100K Funded Floor
+$100,100 (trailing stops here)
+Session End
+10:00 PM UTC+2
+How It Works — Example
+If your starting capital is $50,000, you have a stop-loss of $2,500 for the day. You cannot go below $47,500 or you will be liquidated. If you end the day at +$500 profit, your stop-loss will be automatically adjusted to -$2,500 against your new balance at the end of the day, bringing your liquidation price to $48,000 instead of $47,500.
+On evaluation accounts: The EOD Drawdown always persists until the end of the evaluation.
+On funded accounts: Your EOD Drawdown stops at $50,100 for a 50K account and at $100,100 for a 100K account. Once the EOD Drawdown reaches these limits, it will no longer trail.
+Important: Your liquidation price remains fixed for the day. Regardless of the gains made during the day, you will only be liquidated when your capital reaches the day's limit. For example, if you start with $50,000 and your liquidation value is $47,500, even if you make $1,000 in the morning, your EOD stop loss remains at $47,500 — allowing a maximum loss of $3,500 for the rest of that day.
+Note — Express to Live accounts: E2L accounts use a static drawdown , not EOD trailing. The EOD rules described above do not apply to E2L accounts. See the Express to Live Account Rules section for details.
+5
+Overnight & Over-Week Positions
+Fundamental
+Premium
+Fundamental
+All positions must be CLOSED before end of day
+Premium
+Overnight & over-week positions ALLOWED
+Express to Live
+Overnight & over-week positions NOT allowed
+Over-night positions are trading positions that are neither closed nor liquidated at the end of the trading day. Over-week positions are positions that are not closed at the end of the week and remain open when the Monday Globex session resumes.
+In accordance with Phidias Propfirm trading rules, all positions must be closed before the end of the trading day for Fundamental and Express to Live (25K/50K/100K/150K) accounts . Positions on Premium accounts can remain open overnight and over-week, with a lot size corresponding to the size of your account.
+Failure to close a position before market close will result in account disqualification. This rule applies to Fundamental and Express to Live accounts. Premium accounts are excluded from this rule.
+6
+Trading Hours
+Fundamental Only
+All instruments for Fundamental accounts must be traded during the following business hours (UTC time). Premium accounts are excluded from this rule.
+CME Globex
+Sun–Fri, 11:00 PM – 9:59 PM (UTC)
+Daily Break
+60 min from 9:59 PM UTC
+Close All Positions By
+9:59 PM UTC
+Failure to close a position before the deadline results in account disqualification. Premium accounts are excluded.
+CME Normal Trading Hours: cmegroup.com/trading-hours
+Holiday Calendar: cmegroup.com/holiday-calendar
+Time converters: savvytime.com | worldtimebuddy.com
+Trading Rules
+7
+Economic News Trading
+All Accounts
+News Trading
+Authorized on ALL accounts
+Yes, you are authorized to trade during news events on all accounts.
+8
+Commissions per Asset
+All Accounts
+Commissions depend on the broker and data feed used by your account . Refer to the block that matches your setup: the same instrument can carry a different rate from one broker to another.
+CME Group (Rithmic)
+Instrument Commission
+10Y $0.74 / side
+6A $2.42 / side
+6B $2.42 / side
+6C $2.42 / side
+6E $2.42 / side
+6J $2.42 / side
+6N $2.42 / side
+6S $2.42 / side
+CL $2.32 / side
+EMD $2.15 / side
+ES $2.20 / side
+GC $2.42 / side
+GF $2.92 / side
+H0 $2.32 / side
+HE $2.92 / side
+HG $2.42 / side
+LE $2.92 / side
+M2K $0.79 / side
+M6A $0.94 / side
+M6E $0.94 / side
+M6J $0.94 / side
+MBT $2.86 / side
+MCL $0.94 / side
+MES $0.79 / side
+MET $0.98 / side
+MGC $0.94 / side
+MNQ $0.79 / side
+MYM $0.79 / side
+NG $2.32 / side
+NKD $2.20 / side
+NQ $2.20 / side
+PA $2.42 / side
+PL $1.36 / side
+QG $1.32 / side
+QI $1.72 / side
+QM $1.92 / side
+QO $1.72 / side
+RB $2.20 / side
+RTY $2.20 / side
+SI $2.42 / side
+SIL $0.94 / side
+UB $1.66 / side
+YM $2.20 / side
+ZB $1.69 / side
+ZF $2.01 / side
+ZL $2.92 / side
+ZM $2.92 / side
+ZN $1.52 / side
+ZS $2.92 / side
+ZT $2.01 / side
+ZW $2.92 / side
+EUREX (dxFeed)
+Instrument Commission
+FDXS 0.55€ / side
+FSXE 0.51€ / side
+FDAX 2.02€ / side
+FDXM 1.01€ / side
+FESX 1.17€ / side
+FSTX 1.15€ / side
+FGBL 1.04€ / side
+FGBM 1.04€ / side
+FGBS 1.04€ / side
+FGBX 1.04€ / side
+FVS 0.974€ / side
+Tradovate / NinjaTrader · Standard Contracts
+These rates apply to accounts on the Tradovate / NinjaTrader broker (same broker path, either name). All commissions are charged per side, per contract, in USD , and are deducted automatically at execution. The amounts below include the broker commission as well as exchange and NFA fees. NinjaTrader schedule effective August 14, 2026, updated quarterly.
+Instrument Commission
+Equity Indices
+ES $2.68 / side
+NQ $2.68 / side
+RTY $2.68 / side
+YM $2.68 / side
+NKD $3.45 / side
+FDAX $2.79 / side
+FDXM $1.59 / side
+FESX $1.71 / side
+FXXP $1.50 / side
+Currencies
+6E $2.90 / side
+6B $2.90 / side
+6J $2.90 / side
+6A $2.90 / side
+6C $2.90 / side
+6S $2.90 / side
+6N $2.90 / side
+6M $2.90 / side
+E7 $2.15 / side
+Energy
+CL $2.80 / side
+QM $2.50 / side
+NG $2.90 / side
+QG $1.80 / side
+HO $2.80 / side
+RB $2.80 / side
+Metals
+GC $2.95 / side
+SI $2.95 / side
+HG $2.95 / side
+PL $2.95 / side
+Interest Rates
+ZT $1.95 / side
+ZF $1.95 / side
+ZN $2.10 / side
+TN $2.10 / side
+ZB $2.17 / side
+UB $2.25 / side
+FGBS $1.54 / side
+FGBM $1.54 / side
+FGBL $1.54 / side
+FGBX $1.66 / side
+FBTP Please contact us
+Agriculture
+ZC $3.45 / side
+ZW $3.45 / side
+ZS $3.43 / side
+ZL $3.45 / side
+ZM $3.43 / side
+HE $3.40 / side
+LE $3.40 / side
+Tradovate / NinjaTrader · Micro Contracts
+Instrument Commission
+Equity Indices
+MES $0.75 / side
+MNQ $0.75 / side
+M2K $0.75 / side
+MYM $0.75 / side
+FDXS $0.51 / side
+FSXE $0.48 / side
+Currencies
+M6E $0.64 / side
+M6A $0.64 / side
+M6B $0.64 / side
+Commodities
+MCL $0.90 / side
+MGC $1.10 / side
+SIL $1.50 / side
+MHG $1.10 / side
+Crypto
+MBT $1.55 / side
+MET $0.50 / side
+These amounts are indicative and may change following pricing updates from the broker and the exchanges.
+9
+Authorized Products
+All Accounts
+Stock Indices
+E-mini S&P 500 (ES)
+Nikkei NKD (NKD)
+E-mini NASDAQ 100 (NQ)
+Mini-DOW (YM)
+Russell 2000 (RTY)
+Micro E-Mini S&P 500 (MES)
+Micro E-Mini Dow Jones (MYM)
+Micro E-Mini Nasdaq-100 (MNQ)
+Micro E-Mini Russell 2000 (M2K)
+Interest Rate Futures
+2-year note (ZT) *
+5-year note (ZF) *
+10-year note (ZN) *
+30-year bond (ZB) *
+Ultra-Bond (UB) *
+* Arbitrage strategies on Treasury bonds for one tick are prohibited. Any Treasury bond trader must contact us to request activation of CBOT market data. All other bond strategies are authorized.
+Currency & Crypto Futures
+Australian dollar (6A)
+British pound (6B)
+Canadian dollar (6C)
+Euro FX (6E)
+Japanese Yen (6J)
+New Zealand Dollar (6N)
+Bitcoin Micro Futures (MBT)
+Ethereum Micro Futures (MET)
+Agriculture
+Lean hogs (HE)
+Live cattle (LE)
+Feeder cattle (GF)
+Wheat (ZW)
+Soybeans (ZS)
+Energy
+Crude oil (CL)
+E-mini crude oil (QM)
+Natural gas (NG)
+E-mini Natural gas (QG)
+Heating oil (HO)
+New York Harbor (RB)
+Micro crude oil (MCL)
+Metals
+Gold (GC)
+Silver (SI)
+Copper (HG)
+Platinum (PL)
+Palladium (PA)
+Micro-Gold (MGC)
+Micro-Silver (SIL)
+Eurex (DXFEED & TRADOVATE)
+Micro-DAX (FDXS)
+Micro-EURO STOXX 50 (FSXE)
+DAX (FDAX)
+Mini-DAX (FDXM)
+EURO STOXX 50 (FESX)
+STOXX Europe 50 (FSTX)
+Euro-Bund (FGBL)
+Euro-Bobl (FGBM)
+Euro-Schatz (FGBS)
+Euro-Buxl (FGBX)
+VSTOXX (FVS)
+10
+Consistency Policy
+Fundamental
+Premium
+At Phidias Propfirm, we attach great importance to discipline, consistency and security in our trading operations.
+1. Defined Trading System
+We are looking for traders who have developed a precise and well-defined trading system. This system must include clear rules for entries, stops, profit taking, drawdown management and exits.
+2. Consistency of Operations
+Traders must maintain consistency in their position sizes, number of trading days, and risk management. DCA (Dollar Cost Averaging) is authorized to smooth entry points. The results attributed to the Trader are calculated on the basis of trades actually executed and entered into the market.
+3. No Automated / HFT Trading
+The use of robots, fully automated trading algorithms, or any other form of automated trading is not permitted. Only semi-automated software is permitted, provided the trader actively monitors and manually adjusts all trades.
+4. No Lottery Transactions
+We strongly discourage seeking exceptional trades or attempting to accumulate funds quickly by taking excessive risks. We do not support "one-time withdrawal" strategies. Example: inverse operation (buy vs sell) via multiple accounts on the same asset. Full margin trading during high volatility economic announcements.
+5. News Trading
+Economic news trading is permitted on all account types.
+6. Respect & Professionalism
+Traders must treat our staff, partners and other traders with respect and professionalism at all times.
+7. Profit Consistency
+For CASH accounts only: under no circumstances should the profit balance from a single trading day exceed 30% of the total balance. See 30% Consistency Rule for details.
+8. Contract Expiration
+You are required to trade the highest volume and most recent contract for the instrument you wish to trade. Trading in illiquid, low-volume contracts is not permitted. Spread trading between two maturities on the same product is forbidden.
+9. Treasury Bonds
+Arbitrage strategies on Treasury bonds for one tick cannot be replicated in real conditions. This practice is prohibited on evaluation and funded accounts. Any trader wishing to use Treasury bonds must contact us to activate the necessary market data.
+Note — Express to Live accounts: The Profit Consistency Policy does not apply to Express to Live accounts (25K, 50K, 100K, 150K). E2L accounts have no profit consistency rule and no daily loss limit.
+11
+30% Consistency Rule
+Fundamental
+Premium
+Applies To
+CASH accounts only
+Rule
+No single day can exceed 30% of total profit
+Min. Calculation Period
+4 trading days
+How It Works
+If your total profit is $1,000 on your account, one of the previous days cannot exceed $300 (30% of $1,000 = $300). But if it does, no worries — you just need to increase your total profit. For example, if you make $330 on your best day, you just need to increase your total profit from $1,000 to $1,100 and you enter the consistency rule (30% of $1,100 = $330).
+Example
+If you make $1,000 in 4 days ($250 each day), your best profit day is $250, and $250 out of $1,000 total profit represents 25% — you pass.
+But if, out of those 4 days, you have one day at $350, one day at $150 and two other days at $250, it is still $1,000. However, your best profit day is $350. That is 35% of $1,000 total profit, exceeding the 30% rule.
+Note — Express to Live accounts: The 30% Consistency Rule does not apply to Express to Live accounts (25K, 50K, 100K, 150K). E2L accounts have no consistency rule.
+Payouts & Withdrawals
+12
+Withdrawal Rules
+Fundamental
+Premium
+Express to Live
+The rules in this section describe the standard withdrawal process for Fundamental and Premium CASH accounts. Express to Live (E2L) accounts use a separate automatic bonus system described in the Express to Live Account Rules section — the standard payout rules do not apply to E2L.
+Min. Withdrawal
+$500
+Trading Days (Fundamental)
+10 days between payouts
+Trading Days (Premium)
+5 days between payouts
+Profit Split (Fundamental)
+80% Trader / 20% Phidias
+Profit Split (Premium)
+Progressive 75% → 100%
+Payment Method
+RISEWORKS.io
+Premium Progressive Profit Split
+Premium CASH accounts use a progressive profit split that climbs as the trader stacks payouts. The split applies to the payout cap for the account size.
+Payout 1
+75% Trader / 25% Phidias
+Payout 2
+80% Trader / 20% Phidias
+Payout 3
+85% Trader / 15% Phidias
+Payout 4
+90% Trader / 10% Phidias
+Payout 5 and onwards
+100% Trader / 0% Phidias
+From the 5th payout onwards on a Premium CASH account, the trader keeps the full payout cap.
+Account Minimum Thresholds
+50K Account
+$52,600 ($2,600 above start)
+100K Account
+$103,700 ($3,700 above start)
+150K Account
+$154,500 ($4,500 above start)
+Balance After Withdrawal Cannot Fall Below
+50K Account
+$50,100
+100K Account
+$100,100
+150K Account
+$150,100
+Maximum Withdrawal per Period
+50K Account
+Up to $2,000
+100K Account
+Up to $2,500
+150K Account
+Up to $2,750
+If you have multiple accounts, you can withdraw up to the maximum amount from each account during each payment period.
+Trading Day Requirement
+A trading day is counted only if it shows a positive PnL of at least:
+50K Account
+$150 min daily PnL
+100K Account
+$200 min daily PnL
+150K Account
+$250 min daily PnL
+The system only considers a trading day as complete after market close and at the start of the 11th day.
+Transition to LIVE Account (Fundamental & Premium)
+For Fundamental and Premium accounts, the live transition is strictly discretionary . A trader becomes eligible for consideration upon reaching 5 successful payouts or $100,000 in cumulative profits across all accounts. Meeting these thresholds does not guarantee transition — the final decision rests with the Phidias risk management team, based on a holistic review of the trader's track record, consistency, risk profile, and overall conduct.
+Previous thresholds (3 payouts / $75,000) are deprecated and no longer in effect.
+Important — Express to Live (E2L) accounts: E2L payouts and bonuses are not counted toward the 5 payout threshold or the $100,000 cumulative profit threshold for the LIVE transition. E2L uses a separate automatic "Switch to Live" mechanism that is independent from the Fundamental and Premium live transition process. E2L payouts do not influence the discretionary review in any way.
+LIVE Account Credit (Fundamental & Premium)
+Per Active CASH 50K
+Up to $750 LIVE credit
+Per Active CASH 100K
+Up to $1,000 LIVE credit
+Per Active CASH 150K
+Up to $1,250 LIVE credit
+LIVE credits are calculated based on active balances remaining at the time of transition, provided they are greater than the initial balance +$100.
+Express to Live — Separate Bonus System
+Express to Live accounts are not subject to the withdrawal rules above . E2L operates via an automatic bonus system triggered by the "Switch to Live" button. When the trader reaches the profit target and clicks "Switch to Live", a predefined fixed bonus is automatically credited to the Phidias Wallet (subject to the 80/20 profit split), and the account is converted to a LIVE account. See the Express to Live Account Rules section for bonus amounts per account size.
+E2L 25K Bonus
+$1,000 bonus + $500 LIVE credit
+E2L 50K Bonus
+$2,000 bonus + $1,000 LIVE credit
+E2L 100K Bonus
+$3,000 bonus + $1,500 LIVE credit
+E2L 150K Bonus
+$4,500 bonus + $2,000 LIVE credit
+LIVE Account Rules
+A trader can only have one LIVE account . Once switched:
+Via Fundamental or Premium: No longer eligible for new Fundamental or Premium challenges. Can only participate in 10K Drawdown and Express to Live.
+Via Express to Live: No longer eligible for new E2L challenges (5 accounts max, all sizes combined). Can participate in 10K Drawdown, Fundamental, and Premium.
+Via 10K Drawdown: No longer eligible for 10K Drawdown. Can participate in Express to Live, Fundamental, and Premium.
+If a trader with a LIVE account completes another challenge, the amounts will be credited directly to their active LIVE account (no second LIVE account).
+13
+CASH Account Activation Fees
+All Accounts
+You have reached your evaluation account target and would like to upgrade to a Phidias CASH account. Activation fees are Lifetime on each account (one-time payment per account until failure, no monthly fees).
+Monthly Subscription Activation Fees
+E2L 25K $83 Lifetime
+E2L 50K $149 Lifetime
+E2L 100K $149 Lifetime
+E2L 150K $169 Lifetime
+50K Fundamental $149 Lifetime
+100K Fundamental $149 Lifetime
+150K Fundamental $169 Lifetime
+50K Premium $149 Lifetime
+100K Premium $149 Lifetime
+150K Premium $169 Lifetime
+One-Time Payment (Evaluation + CASH)
+No activation fees for switching to CASH account. The evaluation and CASH account remains Lifetime, without any additional fees. All prices are show in the pricing configurator .
+14
+Phidias Wallet
+All Accounts
+The Phidias Wallet is an internal system designed to centralize your earnings and facilitate the management of your operations on the platform.
+General Operation
+The Wallet is automatically credited as soon as a payout is validated
+Bank transfers via Rise (any day of the week)
+The Wallet is linked to your Phidias account and cannot be used outside the platform
+Use of Wallet Funds
+Purchase new evaluation accounts
+Pay activation fees or add-ons (e.g., Rithmic Market Depth)
+Fund a live account directly with your earnings
+Make a payout request to a Rise account (any day of the week)
+Live Account Funding
+Min. Wallet to LIVE Transfer
+$500
+Default Position Size
+1 mini / 10 micro contracts
+If no live account is yet open, an account will be automatically created with our partner Dorman Trading via Sweet Futures when funding from the Wallet.
+The amount transferred to the live account corresponds to the trader's maximum authorized loss. We automatically add the necessary margin required by the exchanges.
+Example: A deposit of $500 will allow the opening of a live account with margin added automatically (about $2,500 total). The maximum loss will always remain fixed at the amount sent ($500).
+Key Characteristics
+Closed System
+Cannot be funded by external deposit
+Withdrawals
+Only to Rise account
+LIVE Profits
+Go directly to Rise, not back to Wallet
+Size Extension
+To increase the number of authorized contracts, the trader must make a written request by email to support. The Risk Management team will evaluate the trader's risk profile and can accept, refuse or adjust the maximum authorized size.
+Phidias Points
+The platform uses an internal currency called the Phidias Point. This unit of account is used for internal operations such as purchasing accounts, paying fees and awarding potential bonuses. Phidias Points are not transferable outside the Phidias ecosystem and cannot be considered as an official currency or cryptocurrency.
+Account Types
+15
+Express to Live (E2L) Account Rules
+Express to Live
+Express to Live (E2L) accounts offer immediate and simplified access to a LIVE funded account , with no subscription and no hidden fees. The E2L range is available in 4 sizes: 25K, 50K, 100K, and 150K . Every E2L account uses a fixed static drawdown (never trails), has zero minimum trading days , no consistency rule , and allows news trading at every stage (Evaluation, CASH, LIVE).
+E2L Account Grid — All 4 Sizes
+E2L 25K — Capital $25,000
+E2L 25K — Static Drawdown $500
+E2L 25K — Profit Target $1,500
+E2L 25K — Max Contracts 2 E-mini / 20 micro
+E2L 25K — Bonus Payout $1,000 (80/20 split)
+E2L 25K — LIVE Credit $500
+E2L 25K — Total Reward $1,500
+E2L 25K — Liquidation $24,500
+E2L 50K — Capital $50,000
+E2L 50K — Static Drawdown $650
+E2L 50K — Profit Target $2,500
+E2L 50K — Max Contracts 5 E-mini / 50 micro
+E2L 50K — Bonus Payout $2,000 (80/20 split)
+E2L 50K — LIVE Credit $1,000
+E2L 50K — Total Reward $3,000
+E2L 50K — Liquidation $49,350
+E2L 100K — Capital $100,000
+E2L 100K — Static Drawdown $800
+E2L 100K — Profit Target $3,500
+E2L 100K — Max Contracts 7 E-mini / 70 micro
+E2L 100K — Bonus Payout $3,000 (80/20 split)
+E2L 100K — LIVE Credit $1,500
+E2L 100K — Total Reward $4,500
+E2L 100K — Liquidation $99,200
+E2L 150K — Capital $150,000
+E2L 150K — Static Drawdown $1,000
+E2L 150K — Profit Target $4,500
+E2L 150K — Max Contracts 9 E-mini / 90 micro
+E2L 150K — Bonus Payout $4,500 (80/20 split)
+E2L 150K — LIVE Credit $2,000
+E2L 150K — Total Reward $6,500
+E2L 150K — Liquidation $149,000
+Common Rules — All E2L Sizes
+Drawdown Type Static (never trails)
+Consistency Rules None
+Min. Trading Days None
+Daily Loss Limit None
+News Trading Authorized (Eval, CASH, LIVE)
+Overnight / Over-Week Not permitted
+Max E2L Accounts 5 per trader (all sizes combined)
+Liquidation formula: Liquidation Threshold = Initial Capital − Static Drawdown. The account is liquidated if the balance reaches or falls below this threshold. The static drawdown never trails.
+How It Works — E2L Path to LIVE
+1
+Choose Your E2L Size
+Pick 25K, 50K, 100K, or 150K based on your capital appetite. Each size has its own profit target, static drawdown, and LIVE credit.
+2
+Evaluation Phase
+Trade until you reach the profit target for your account size. Static drawdown, no minimum days, no consistency rule, no daily loss limit. News trading allowed.
+3
+Funded CASH Account
+Once the evaluation is passed, your account is converted to a funded CASH account with the same rules. Reach the profit target again on the CASH account.
+4
+Click "Switch to Live"
+When the target is reached on the CASH account, click the "Switch to Live" button. The fixed Bonus Payout is automatically credited to your Phidias Wallet (subject to the 80/20 profit split), the LIVE credit is applied to your new LIVE account, and your CASH account is converted to a LIVE trading account. No withdrawal request needed, no minimum trading days, no balance threshold.
+LIVE Account — From E2L
+When an E2L CASH account is converted to LIVE, the following parameters apply:
+LIVE from E2L 25K — Max Contracts 2 lots
+LIVE from E2L 50K — Max Contracts 3 lots
+LIVE from E2L 100K — Max Contracts 4 lots
+LIVE from E2L 150K — Max Contracts 5 lots
+Static Loss (LIVE) Extensible — grows with cumulative credits
+Exchanges CME, CBOT, NYMEX, COMEX
+Minimum Balance Equals total cumulative LIVE credit
+Monthly Fees $122/month (waived)
+Profit Split 80% Trader / 20% Phidias
+LIVE Payout Every day, no max limit ($500 min)
+Overnight / Over-Week Not permitted (unless agreed)
+The static loss is "extensible" — it grows as the trader accumulates additional LIVE credits from validating more E2L accounts. The LIVE account balance minimum equals the total cumulative LIVE credit.
+Cumulative LIVE Credits — Multiple E2L Accounts
+Traders can validate multiple E2L accounts (up to 5, all sizes combined). Each validated E2L account adds a cumulative LIVE credit to the trader's LIVE account:
+1x E2L 25K validated +$500 LIVE credit
+2x E2L 25K validated +$1,000 cumulative LIVE credit
+1x E2L 50K validated +$1,000 LIVE credit
+1x E2L 100K validated +$1,500 LIVE credit
+1x E2L 150K validated +$2,000 LIVE credit
+Maximum 5 E2L accounts per trader (all types combined: CASH + LIVE). All E2L sizes — including the 150K — count toward this 5-account total and can be cumulated freely within it. In case of failure on a LIVE trading account derived from E2L, the trader will not be able to subscribe to a new E2L challenge for 1 month.
+16
+Fundamental Account Rules
+Fundamental
+Fundamental accounts are built for intraday traders who want professional-grade capital with EOD trailing drawdown and a fixed 80/20 profit split. The Fundamental range is available in 3 sizes: 50K, 100K, and 150K . Fundamental accounts use EOD trailing drawdown , require 3 minimum trading days during evaluation and 10 minimum days on the funded CASH account , apply a 30% daily consistency rule on the funded phase , and allow news trading at every stage. Overnight and over-week positions are not permitted.
+Fundamental Account Grid — All 3 Sizes
+Fundamental 50K — Capital $50,000
+Fundamental 50K — EOD Trailing Drawdown $2,500
+Fundamental 50K — Profit Target (Eval) $4,000
+Fundamental 50K — Min. Trading Days (Eval) 3
+Fundamental 50K — Max Contracts 10 E-mini / 100 micro
+Fundamental 50K — Activation Fee $149
+Fundamental 50K — Funded Min. Daily PNL $150
+Fundamental 50K — Payout Cap (per cycle) $2,000
+Fundamental 50K — Withdrawal Threshold $52,600
+Fundamental 100K — Capital $100,000
+Fundamental 100K — EOD Trailing Drawdown $3,000
+Fundamental 100K — Profit Target (Eval) $6,000
+Fundamental 100K — Min. Trading Days (Eval) 3
+Fundamental 100K — Max Contracts 14 E-mini / 140 micro
+Fundamental 100K — Activation Fee $149
+Fundamental 100K — Funded Min. Daily PNL $200
+Fundamental 100K — Payout Cap (per cycle) $2,500
+Fundamental 100K — Withdrawal Threshold $103,700
+Fundamental 150K — Capital $150,000
+Fundamental 150K — EOD Trailing Drawdown $4,500
+Fundamental 150K — Profit Target (Eval) $9,000
+Fundamental 150K — Min. Trading Days (Eval) 3
+Fundamental 150K — Max Contracts 17 E-mini / 170 micro
+Fundamental 150K — Activation Fee $169
+Fundamental 150K — Funded Min. Daily PNL $250
+Fundamental 150K — Payout Cap (per cycle) $2,750
+Fundamental 150K — Withdrawal Threshold $154,500
+Common Rules — All Fundamental Sizes
+Drawdown Type EOD trailing
+Consistency (Eval) None
+Consistency (Funded) 30% max per day
+Min. Trading Days (Eval) 3
+Min. Trading Days (Funded) 10
+Daily Loss Limit None
+News Trading Authorized (Eval, CASH, LIVE)
+Overnight / Over-Week Not permitted
+Profit Split 80% Trader / 20% Phidias
+Reset (Eval failure) Unlimited · price shown in the account configurator
+Detailed rules per topic are documented in the dedicated sections:
+EOD Trailing Drawdown Rules
+Overnight & Over-Week Restrictions
+Trading Hours
+Consistency Policy
+30% Consistency Rule
+Withdrawal Rules
+Activation Fees
+Path to LIVE — Discretionary Review
+Fundamental accounts use a discretionary path to LIVE. After 5 successful payouts or $100,000 in cumulative profits across all accounts , traders may become eligible for a LIVE funded account. The final decision is made by the Phidias risk management team at its sole discretion. See the ELITE & MASTER LIVE Accounts section for complete eligibility details.
+17
+Premium Account Rules
+Premium
+Premium accounts are the most flexible accounts at Phidias, built for traders who want to hold positions overnight and over the weekend, get funded faster, and earn an escalating profit split. The Premium range is available in 3 sizes: 50K, 100K, and 150K . Premium accounts use EOD trailing drawdown , allow overnight and over-week positions , fund the CASH account in 1 trading day after evaluation pass, process payouts every 5 days , apply a progressive profit split that climbs from 75% to 100% over the first 5 payouts, and include an exclusive Cash Account Reset safety net. News trading is authorized at every stage.
+Premium Account Grid — All 3 Sizes
+Premium 50K — Capital $50,000
+Premium 50K — EOD Trailing Drawdown $2,500
+Premium 50K — Profit Target (Eval) $4,000
+Premium 50K — Min. Trading Days (Eval) 1
+Premium 50K — Max Contracts 10 E-mini / 100 micro
+Premium 50K — Activation Fee $149
+Premium 50K — Funded Min. Daily PNL $150
+Premium 50K — Payout Cap (per cycle) $2,000
+Premium 50K — Withdrawal Threshold $52,600
+Premium 50K — Cash Account Reset $399 (1x per account)
+Premium 100K — Capital $100,000
+Premium 100K — EOD Trailing Drawdown $3,000
+Premium 100K — Profit Target (Eval) $6,000
+Premium 100K — Min. Trading Days (Eval) 1
+Premium 100K — Max Contracts 14 E-mini / 140 micro
+Premium 100K — Activation Fee $149
+Premium 100K — Funded Min. Daily PNL $200
+Premium 100K — Payout Cap (per cycle) $2,500
+Premium 100K — Withdrawal Threshold $103,700
+Premium 100K — Cash Account Reset $499 (1x per account)
+Premium 150K — Capital $150,000
+Premium 150K — EOD Trailing Drawdown $4,500
+Premium 150K — Profit Target (Eval) $9,000
+Premium 150K — Min. Trading Days (Eval) 1
+Premium 150K — Max Contracts 17 E-mini / 170 micro
+Premium 150K — Activation Fee $169
+Premium 150K — Funded Min. Daily PNL $250
+Premium 150K — Payout Cap (per cycle) $2,750
+Premium 150K — Withdrawal Threshold $154,500
+Premium 150K — Cash Account Reset $599 (1x per account)
+Common Rules — All Premium Sizes
+Drawdown Type EOD trailing
+Consistency (Eval) None
+Consistency (Funded CASH) 30% max per day
+Min. Trading Days (Eval) 1
+Min. Days Between Payouts (Funded) 5
+CASH Account Funded 1 trading day after eval pass
+Daily Loss Limit None
+News Trading Authorized (Eval, CASH, LIVE)
+Overnight / Over-Week Authorized
+Profit Split Progressive 75% to 100%
+Reset (Eval failure) Unlimited · price shown in the account configurator
+Cash Account Reset Available (1x per CASH account)
+Progressive Profit Split — Premium Exclusive
+Premium accounts apply a profit split that climbs with each successful payout on the funded CASH account. After the 5th payout, traders keep 100% of every dollar earned.
+1st Payout 75% Trader / 25% Phidias
+2nd Payout 80% Trader / 20% Phidias
+3rd Payout 85% Trader / 15% Phidias
+4th Payout 90% Trader / 10% Phidias
+5th Payout and after 100% Trader / 0% Phidias
+Cash Account Reset — Premium Exclusive
+If a funded Premium CASH account is liquidated due to a drawdown breach, the trader can reset it once at a flat fee. This is a Premium-only safety net not available on Fundamental or E2L accounts.
+Premium 50K Reset $399
+Premium 100K Reset $499
+Premium 150K Reset $599
+Maximum Resets 1 per CASH account
+Reset Window 24h after liquidation
+24-hour reset window. The Cash Account Reset is only available within 24 hours of the account being liquidated. After that window closes, the account is removed from the trader's dashboard and the reset is no longer available. Traders who want to keep the safety net must act on the reset within the same day the breach occurs.
+Detailed rules per topic are documented in the dedicated sections:
+EOD Trailing Drawdown Rules
+Overnight & Over-Week (Premium permits holds)
+Consistency Policy
+30% Consistency Rule
+Withdrawal Rules
+Activation Fees
+Path to LIVE — Discretionary Review
+Premium accounts use a discretionary path to LIVE. After 5 successful payouts or $100,000 in cumulative profits across all accounts , traders may become eligible for a LIVE funded account. The final decision is made by the Phidias risk management team at its sole discretion. See the ELITE & MASTER LIVE Accounts section for complete eligibility details.
+18
+10K Drawdown Challenge
+Challenge
+Prizes & Rewards
+Place Prize Payout
+1st $12,000 Phidias Wallet
+2nd $3,000 Phidias Wallet
+3rd $2,160 Phidias Wallet
+4th $1,680 Phidias Wallet
+5th $1,320 Phidias Wallet
+6th $1,080 Phidias Wallet
+7th $840 Phidias Wallet
+8th $720 Phidias Wallet
+9th $660 Phidias Wallet
+10th $540 Phidias Wallet
+Tier Rewards
+Top 10% (excl. top 10)
+50K OTP Fundamental account, no activation fees
+Top 50% (excl. top 10 & 10%)
+-90% promo code (excl. OTP)
+All Other Participants
+-80% promo code (excl. OTP)
+How to Use Your Phidias Wallet
+Top 10 winnings are deposited into your Phidias Wallet. From your wallet, you can:
+Direct withdrawal to your bank account via Rise
+Transfer to a live account (if you have one)
+Create a live account (if you don't have one)
+Use in the Phidias store for all products and evaluations
+Challenge Rules
+Account Size $10,000 USD
+Price $30 (use code "PHIDIAS")
+Max Volume 25 E-mini contracts
+Drawdown Trailing $10,000 EOD
+Instruments All CME CBOT NYMEX COMEX
+Overnight Allowed (limit 25 contracts / 250 micros)
+Weekend Allowed
+Multiple Registrations Unlimited, simultaneous multi-account
+Ranking System
+Daily EOD update (after market reopening +2h)
+Ranked by total profit
+Multi-accounts: best account counted
+100% of participants win a reward
+19
+ELITE & MASTER LIVE Accounts
+Fundamental
+Premium
+The ELITE LIVE and MASTER LIVE Accounts are accessible to traders with a live trading history:
+ELITE LIVE
+60 days live + $125,000 balance (and/or cumulated with payouts)
+MASTER LIVE
+120 days live + $250,000 balance (and/or cumulated with payouts)
+Balance Addition on Transition
+ELITE Transition
++$25,000 to starting balance
+MASTER Transition
++$50,000 to starting balance
+Switch to Live — Updated Policy
+Updated Eligibility Threshold
+5 payouts OR $100,000 cumulative profits
+Previous (deprecated)
+3 payouts OR $75,000 cumulative profits
+ELITE Minimum Duration
+60 days (unchanged)
+MASTER Minimum Duration
+120 days (unchanged)
+Key Principles:
+Traders on simulated CASH accounts keep their full profit split (up to 100% on Premium). There is no financial penalty for staying simulated.
+The LIVE transition is initiated by Phidias, not requested by the trader. It is offered exclusively to traders whose performance, consistency, and risk management justify allocation of real capital.
+Phidias reserves full discretion to approve, defer, or decline a LIVE transition regardless of whether thresholds are met.
+Express to Live (E2L) accounts are not subject to this discretionary review . E2L uses an automatic "Switch to Live" mechanism. E2L payouts and bonuses are not counted toward the 5 payout or $100,000 cumulative profit thresholds. See the Express to Live Account Rules section.
+20
+Account Limits & Copy Trading
+All Accounts
+Max CASH Premium 5 accounts
+Max CASH Fundamental 5 accounts
+Max E2L (all sizes incl. 150K) 5 CASH / LIVE accounts
+Max 150K CASH (Fund / Premium) 4 accounts (2 Fund / 2 Premium)
+Evaluation Accounts No limit
+150K CASH accounts (Fundamental or Premium) are considered equivalent to two standard accounts (50K or 100K). They count double in the total authorized accounts per category. E2L 150K accounts have no such doubling — each E2L 150K counts as one slot within the 5-account E2L cap. The limits set above apply across all of the user's login credentials, any user account or person residing at the same address, same IP address, etc.
+Valid Combinations
+5 CASH Fundamental + 5 CASH Premium + 5 E2L (any mix of 25K/50K/100K/150K) = OK
+3 CASH Fundamental + 2 CASH Premium + 3 E2L 25K = OK
+2 CASH Fund 150K + 1 CASH Fund 50K + 1 CASH Fund 100K + 2 CASH Premium 150K + 3 E2L 25K = OK
+Any CASH account beyond this threshold will be considered lost.
+Copy Trading
+Copy trading is allowed within our guidelines regarding the number of authorized accounts. Each person, company or Internet connection can own up to 5 CASH Premium + 5 CASH Fundamental + 5 CASH/LIVE Express to Live accounts.
+You may use third-party copy trading software, but Phidias assumes no responsibility for failures or technical problems on these platforms. If we discover identical strategies exceeding the maximum allowed capital, we reserve the right to suspend these accounts.
+Policies
+21
+Country Restrictions
+All Accounts
+Due to various regulations and legal considerations, we are currently unable to offer our trading services in certain countries. This list is not exhaustive and is subject to changes at any time.
+Reasons for Restrictions
+Sanctions and Embargos: International sanctions or embargos restricting financial transactions.
+Management Capacity: Partners, brokers, or data providers unable to open real accounts in certain regions.
+Fraud Risk: Countries with historically higher fraud risk.
+Services: Language barriers and lack of local service representatives.
+Individuals: People on sanctions lists, with financial crime records, or previously banned.
+Restricted Countries
+Afghanistan Albania Algeria
+Angola Belarus Bosnia and Herzegovina
+Botswana Bulgaria Burkina Faso
+Burundi Central African Republic Croatia
+Cuba Dem. Rep. Congo Ecuador
+Ethiopia Guyana Haiti
+Indonesia Iran Iraq
+Jamaica Kenya Kosovo
+Laos Lebanon Libya
+Macedonia Mali Malta
+Mauritius Montenegro Mozambique
+Myanmar (Burma) Namibia Nicaragua
+Nigeria North Korea (DPRK) Pakistan
+Papua New Guinea Philippines Romania
+Russia Senegal Serbia
+Slovenia Somalia South Africa
+South Sudan Sri Lanka Sudan/Darfur
+Syria Tanzania Trinidad and Tobago
+Tunisia Crimea (Ukraine) Venezuela
+Yemen Zimbabwe
+Canada · LIVE Account Onboarding
+Canada is not a restricted country. Canadian residents can register, purchase, and trade evaluation and funded (CASH) accounts normally. The only country-specific rule concerns the brokerage route at the point of conversion to a LIVE funded account .
+Due to broker onboarding regulations, LIVE funded accounts on Tradovate and NinjaTrader can currently only be opened by residents of Ontario , which is at this time the only Canadian province authorized for Tradovate and NinjaTrader onboarding.
+This does not prevent Canadian traders from reaching a LIVE funded account. Canadian residents outside Ontario are onboarded to their LIVE funded account through our partner Dorman Trading , using Rithmic data feeds. The LIVE account, the payout terms, and the trading conditions are the same. Only the brokerage route differs.
+Ontario residents
+LIVE onboarding on Tradovate / NinjaTrader
+Rest of Canada
+LIVE onboarding via Dorman Trading (Rithmic feeds)
+For details on Tradovate account availability in Canada, see Tradovate's official documentation: Opening a Tradovate Account in Canada .
+22
+Refund Policy
+All Accounts
+Refund Policy
+All subscriptions are final. No returns, refunds or exchanges.
+Unless otherwise specified, each subscription term will automatically renew on each expiration date, unless you have canceled before the expiration of the current subscription term.
+Your participation or non-use of any purchased service does not entitle you to a refund.
+Chargebacks: Any purchase resulting in a chargeback or payment dispute will result in immediate deactivation of your membership. Your username will be permanently banned from our database.
+23
+Market Data Access
+All Accounts
+Evaluation & Funded (CASH) Accounts
+During the evaluation phase, a non-professional trader will obtain top-of-book data for the CME free of charge.
+Top-of-Book CME
+Free
+Rithmic Market Depth (per exchange)
+$16/month
+Rithmic Depth, All 4 Exchanges
+$46/month (CME, CBOT, NYMEX, COMEX)
+You can purchase market depth as an add-on module from your member area (Addons tab).
+LIVE Accounts on NinjaTrader / Tradovate · Data Feed Fees
+This rule applies only to accounts using the NinjaTrader / Tradovate broker (same broker path, either name). On Rithmic and dxFeed , no data feed fees are charged.
+On a LIVE account through NinjaTrader / Tradovate, the CME data feed fees are automatically debited from your trading account .
+The other exchanges (CBOT, COMEX, NYMEX, and others) are optional . NinjaTrader / Tradovate charges $156/month per exchange , and you subscribe to them yourself from your Phidias Propfirm dashboard.
+CME feed
+Automatically debited from your trading account
+Other exchanges (CBOT, COMEX, NYMEX...)
+Optional · $156/month per exchange, subscribed by you
+Rithmic & dxFeed accounts
+No data feed fees
+Optional exchange feeds are subscribed directly from your Phidias Propfirm dashboard .
+Need More Information?
+Open a support ticket and our team will help you.
+Contact Support
+Table of Contents
+Getting Started
+Foreword
+How It Works
+General Rules
+Risk & Drawdown
+EOD Rules
+Overnight & Over-Week
+Trading Hours
+Trading Rules
+News Trading
+Commissions
+Authorized Products
+Consistency Policy
+30% Consistency Rule
+Payouts & Withdrawals
+Withdrawal Rules
+Activation Fees
+Phidias Wallet
+Account Types
+Express to Live
+Fundamental
+Premium
+10K Challenge
+ELITE & MASTER LIVE
+Account Limits & Copy Trading
+Policies
+Country Restrictions
+Refund Policy
+Market Data
+Top
+Get exclusive deals and trading insights
+One email per week. No spam. Unsubscribe anytime.
+Subscribe
+The fastest, fairest futures prop firm. Static and EOD drawdown, daily uncapped payouts, and $15M+ paid to traders.
+Support by Tickly
+Accounts
+Configurator
+How It Works
+Rules
+Resources
+Help Center
+Blog
+Become Affiliate
+Company
+About
+Contact
+Join Discord
+The website (phidiaspropfirm.com) is owned and operated by Phidias Propfirm LTD, registered in Gibraltar. © 2026 All rights reserved.
+Privacy
+Terms Of Usage
+Disclosures
+CFTC Required Disclaimer: Trading futures and options presents great potential rewards, but also great potential risk. You need to be aware of the risks and be willing to accept them to invest in the futures markets. Don't trade with money you can't afford to lose. This is neither a solicitation nor an offer to buy or sell futures contracts, shares or options thereon. No representation is made that any account will or is likely to realize profits or losses similar to those discussed on this website. Past performance of any trading system or methodology is not necessarily indicative of future results.
+CFTC RULE 4.41: Hypothetical or simulated performance results have certain limitations. Unlike an actual performance record, simulated results do not represent actual trades. Furthermore, since the trades have not been executed, the results may have under- or over-compensated for the impact, if any, of certain market factors, such as lack of liquidity. Simulated trading programs in general are also subject to the fact that they are designed with hindsight. No representation is made that any account will or is likely to generate profits or losses similar to those shown. No representation is made that any account will or is likely to realize profits or losses similar to those discussed in this site, medium and texts. Our courses, products and services are to be used as learning aids only and are not to be used to invest real money. If you decide to invest real money, all business decisions must be your own.
+Testimonial Disclosure: Testimonials appearing on this website may not be representative of other customers and do not constitute a guarantee of future performance or success.
+Free Account Giveaway
+Win a free account
+and grab 80% off
+Enter our giveaway for a free trading account , and everyone who joins gets an instant 80% off code on any evaluation. One email. One entry. That is it.
+Yes, I want in
+No thanks, I would rather not win a free account or get a code
+Last Step
+Where do we send your entry and code?
+Drop your best email below. We enter you in the draw for a free account and hand you your 80 % off code on the spot.
+Yes, enter me in the draw
+No spam. Unsubscribe anytime. One address, one entry.
+No thanks, I would rather not win a free account or get a code
+You are entered
+You are in the draw.
+Your entry is locked in. We will email you if you win the free account. In the meantime, here is your 80 % off code to use right now.
+Your discount code
+PHIDIAS80
+Copy
+Copied
+Up to 80 % off, applied at checkout.
+Browse accounts and use my code
+Close this window
+Live now
+Join us on YouTube

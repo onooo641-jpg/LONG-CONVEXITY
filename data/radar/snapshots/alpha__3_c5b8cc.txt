@@ -1,0 +1,101 @@
+Scaling Plan | Alpha Futures Limited Help Center Skip to main content
+Search for articles...
+All Collections
+Trading Rules and Parameters
+Scaling Plan
+Scaling Plan
+Scaling Plan on Qualified Accounts that affects buying power and maximum position sizing
+B
+Written by Benjamin Chaffee
+July 24, 2026
+We are firm believers here at Alpha Futures in “earn your large positions”. There is a time and place to size up as a trader, no doubt, but you should only begin doing it once you have built up some profit on your account. The Scaling Plan ensures you do not over leverage the account, and increase your buying power as the account grows.
+​
+There is no Scaling Plan on Advanced Accounts.
+​ Maximum positions with the Scaling Plan on Zero Qualified Accounts :
+Account Size
+50k
+50k
+100k
+100k
+Contracts
+minis
+micros
+minis
+micros
+Less than $1,500 profit
+1
+10
+2
+20
+$1,500-2,000 profit
+2
+20
+3
+30
+$2,000-3,000 profit
+3
+30
+4
+40
+$3,000-4,500 profit
+-
+-
+5
+50
+$4,500+ profit
+-
+-
+6
+60
+Scaling Plan for Standard Qualified Accounts:
+Account Size
+50k
+50k
+100k
+100k
+150k
+150k
+Contracts
+minis
+micros
+minis
+micros
+minis
+micros
+Less than $1,500 profit
+2
+20
+3
+30
+3
+30
+$1,500-2,000 profit
+3
+30
+4
+40
+4
+40
+$2,000-3,000profit
+5
+50
+5
+50
+5
+50
+$3,000-4,500 profit
+5
+50
+10
+100
+10
+100
+$4,500+ profit
+5
+50
+10
+100
+15
+150
+​
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃

@@ -1,0 +1,37 @@
+Get Started | Morpho Docs
+Docs Get Started Learn Curate Developers Morpho API
+Search ⌘ K
+Launch App
+Get Started
+Introduction Morpho Products Customer Stories Resources Whitepapers Morpho Apps Morpho Interface Listing Policy Contract Addresses Morpho Blog Landing Page Data Page Brand Assets Disclaimer
+Morpho Docs
+Learn how Morpho works, explore its products, and build on the open credit network.
+What can I help you with?
+How do I integrate Morpho with agents? How do Morpho Vaults work? How does borrowing on Morpho work?
+Build with AI agents
+Morpho Agents is experimental and pre-v1.0: tool schemas and commands may change without notice. Do not build production systems against it yet; production agents should call the REST API directly.
+Morpho MCP
+Connect Claude Code, Codex, or Cursor to live Morpho data and unsigned transactions. No API key needed.
+Set up MCP
+Morpho Skills
+Give your coding agent the Earn and Borrow integration skills to build and review Morpho products.
+Install skills
+Use cases
+For app builders
+Add lending and borrowing features to any app
+Integrate Earn Integrate Borrow
+For vault curators
+Build and manage lending vaults
+Create a vault Setup vault roles
+For protocol developers
+Build onchain with Morpho primitives
+Explore contracts
+Integration methods
+API
+Query markets, vaults, and positions over REST.
+→
+Typescript SDK
+Typed, viem-based libraries for reading data and building transactions.
+→
+Products
+Build powerful financial applications with Morpho's decentralized lending infrastructure.

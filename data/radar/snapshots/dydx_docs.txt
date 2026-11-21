@@ -1,0 +1,31 @@
+dYdX Integration Documentation – dYdX Documentation
+Skip to content
+Guide
+API
+Concepts
+Nodes
+Policies
+Search...
+Menu
+dYdX Integration Documentation
+On this page
+dYdX Integration Documentation
+This documentation is crafted specifically for developers who want to build trading applications, bots, analytics tools, or integrate dYdX into their own platforms.
+You'll find everything you need—from REST & WebSocket API references to integration guides . Whether you're creating a high-frequency trading bot or building a DeFi dashboard, this doc will help you get up and running quickly and securely.
+Pick a scenario
+Depending on your use case, you can quickly jump to the sections that will help you start integrating right away.
+Build a Trading Bot
+Use the libraries to automate trading: fetch market data, place and manage orders.
+Quick Start Python → Quick Start TypeScript → Quick Start Rust → Connecting to dYdX → Wallet Setup → Trading Guide → Third-Party Integrations →
+Stream Real-Time Updates
+Receive live market and account data using WebSocket connections.
+WebSocket Data Feeds → WebSocket API Reference → Watch Orderbook → Full Node Streaming →
+Integrate into Your App
+Display market, order, and position data directly in your application.
+Integration Guide → Indexer HTTP API → Market Data Guide → Account Data Guide → Get Perpetual Markets →
+Access Account Data
+Use the Indexer API to query account info, balances, and positions. For actions requiring authentication, use private Node API methods.
+Indexer Accounts API → Private Node API → Account Management → Accounts and Subaccounts → Permissioned Keys →
+Onboarding FAQ
+Check out the onboarding FAQ.
+Onboarding FAQs →

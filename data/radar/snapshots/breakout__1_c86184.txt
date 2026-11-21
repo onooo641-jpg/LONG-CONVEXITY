@@ -1,0 +1,161 @@
+Mastering Drawdown: A Guide to Equity Limits at Breakout - Breakout
+Pricing
+How It Works
+FAQ
+Learn
+Intro to Trading Course
+Drawdown Rules
+More
+Newsletter
+Blog
+Symbols
+Kraken
+Affiliates
+Merch
+Advanced Charts
+Contact
+Log in
+Cart
+Cart
+Blog
+Mastering Drawdown: A Guide to Equity Limits at Breakout
+August 28, 2025
+·
+5 min read
+On this page
+Introduction
+Definitions
+Maximum Daily Loss
+Maximum Drawdown
+Monitoring Your Equity Limits
+Breaching
+Conclusion
+Introduction
+Good risk management is a core characteristic of any successful trader.
+In order to get funded and stay funded, traders must stay within their equity limits at all times.
+Rather than relying on confusing or subjective rules, our system simply tracks the account’s equity in relation to its equity limits.
+This is an objective, automated process to ensure fairness and transparency.
+These equity limits – the maximum daily loss and the maximum drawdown – are the most important metrics to track at all stages as they ultimately determine whether an account is breached (all positions closed, permanently disabled from further trading).
+There are no margin calls, liquidation levels, or other layers of complexity.
+The equity limits are the primary risk management guardrails for the account.
+Definitions
+Balance: Total value of the account based solely on closed trades (realised PnL). This excludes open positions.
+Equity: Real-time value of the account, including both closed trades and the floating PnL of all open positions.
+Equity Limit: The equity level at which a breach is automatically triggered.
+Breach: Automatic closure of all positions. Trading is permanently disabled on the account. Payouts are not available (if applicable).
+Maximum Daily Loss: Daily equity limit for the account. Recalculated every day at 0030 UTC based on the account balance at that time.
+Maximum Drawdown: Overall equity limit for the account. Static across all account types.
+What’s the TL;DR?
+Your account has two equity limits in force at all times in all stages – maximum daily loss and maximum drawdown.
+If your equity, which includes your open positions/floating PnL, reaches either equity limit at any point for any amount of time, the account is breached (all positions closed, account forfeited permanently).
+You’re not on the hook for any trading losses if you breach. You just lose the account. If you want to try another evaluation and/or get funded once again, you must undertake another evaluation.
+Your Breakout Dashboard displays your equity limits. You must keep your account equity above both equity limits at all times.
+The maximum daily loss is recalculated every day at 0030 UTC based on your balance at that time. The appropriate % deduction is applied to that balance to create an equity limit e.g. $105,000 balance on a 1-Step Classic account (3% maximum daily loss) would mean a $101,850 equity limit for the next 24 hours.
+The maximum drawdown is static across all account types – it is set at a fixed percentage below your starting balance and never moves. The percentage depends on your account type: 6% for 1-Step Classic, 5% for 1-Step Pro, and 3% for 1-Step Turbo. For example, a $100,000 1-step Classic has a permanent maximum drawdown equity limit of $94,000.
+These are equity limits. If your equity – which includes open positions – reaches or falls below either the maximum daily loss or the maximum drawdown, the account will be permanently forfeited. Keep your equity above both equity limits at all times to avoid a breach.
+Maximum Daily Loss
+The maximum daily loss is an account’s daily equity limit.
+This daily equity limit is recalculated (not reset) every day at 0030 UTC.
+This recalculation is based on the account balance at the time.
+For all 1-Step accounts (Classic, Pro, and Turbo), the maximum daily loss equity limit is the 0030 UTC balance – 3%.
+For example, if a 1-Step Classic account has a balance of $101,000 and an open position with +$5,000 of floating PnL, then the account balance is still $101,000 and the account equity is $106,000. The calculation is based on the balance, which means that at 0030 UTC the maximum daily loss equity limit for that account is $97,970 ($101,000 – 3%).
+For the next 24 hours, the maximum daily loss equity limit for that account is $97,970. If the account’s equity reaches or falls below this equity limit, it will be breached.
+Get Breakout updates in your inbox
+Platform releases, trader interviews, and product updates from the Breakout team. No spam, unsubscribe anytime.
+Leave this field blank
+Continue
+I agree to receive marketing emails. You can unsubscribe at any time.
+Subscribe
+Maximum Drawdown
+The maximum drawdown is an account’s overall equity limit.
+The maximum drawdown is static across all account types. It is set at a fixed percentage below your starting balance and never moves in any direction, regardless of account performance.
+The maximum drawdown equity limits by account type are:
+6% for 1-Step Classic accounts
+5% for 1-Step Pro accounts
+3% for 1-Step Turbo accounts
+For example, for a $100,000 1-Step Classic, the maximum drawdown equity limit is $94,000. This will always be $94,000.
+If an account’s equity reaches or falls below this equity limit, it will be breached.
+Monitoring Your Equity Limits
+Traders must always monitor their account equity and ensure it stays above both the maximum daily loss and the maximum drawdown equity limits.
+There is no guesswork required: your equity is visible in your trading terminal at all times, and your equity limits are available via the Breakout Dashboard (not the trading terminal).
+Breaching
+A breach occurs when our automated risk engine detects that an account’s equity has reached or fallen below one of its equity limits (maximum daily loss, maximum drawdown).
+Upon detecting a breach, all positions are automatically closed and trading is permanently disabled on that account. This applies to both the evaluation stage and the funded stage.
+Traders are not responsible or otherwise liable for any losses in the trading account in both the evaluation stage and the funded stage.
+If they wish to undertake another evaluation, they may immediately purchase another one via their Breakout Dashboard and retry.
+There are no resets or refunds available for breaches or failed evaluations.
+There are also no ‘soft’ breaches – reaching or falling below any of the equity limits at any stage, at any time, for whatever reason will result in permanent forfeiture of that specific trading account.
+A common misconception is that you need to realise or close a trade in order to breach.
+This is not the case.
+If we were to use ‘balance limits’ then traders would be able to incur any amount of losses without breaching as long as they didn’t close the trade (e.g. $100,000 balance with –$90,000 in floating PnL is still $100,000 in balance).
+This would render the drawdown rules entirely redundant and make effective risk management impossible.
+As a result, traders must pay attention to their equity limits via the Breakout Dashboard and ensure their account equity stays above both equity limits at all times.
+Conclusion
+Breakout’s drawdown limits are automated, trader-friendly, and enforce good risk management habits.
+At the end of the day, you have two equity limits and you must keep your equity above both of those limits at all times.
+If your equity, including open positions, falls below either limit, the account is breached and closed permanently. There are no exceptions or resets. The complete rulebook is public before you buy.
+The risk rules are the main trading rules at Breakout.
+There is no profit cap, consistency rule, risk per trade rule, anti-gambling rule, or other artificial restrictions placed on your trading.
+Our rules allow you to focus on what matters most: good risk management and trading your edge.
+Ready to get funded? Start your evaluation today.
+On this page
+Introduction
+Definitions
+Maximum Daily Loss
+Maximum Drawdown
+Monitoring Your Equity Limits
+Breaching
+Conclusion
+Share this article
+Copy link
+Breakout's evaluation program is intentionally rigorous and designed to verify a trader's risk-management skill and strategy discipline before any proprietary capital is allocated by Payward Oceanic Ltd. Most applicants do not pass on their first attempt and there is no guarantee that your performance will improve or that you will pass any future evaluations. Prospective traders should purchase an evaluation only if they are confident in their trading ability and knowingly accept the risk of not qualifying for a funded account. Evaluation fees are non-refundable for each attempt once trading begins, regardless of outcome. See breakoutprop.com for more disclosures.
+Keep reading
+View all articles →
+Breakout After Hours: Crypto’s Ugly Weekend and What’s Next
+Bitcoin hit a four-month low near $62,000, Nvidia, the Fed and Anthropic's IPO all land inside 48 hours, and Breakout got a new look.
+2 minutes read
+18. 11. 2026
+Read post
+Breakout After Hours: Nvidia Probe, Hot CPI, Bitcoin Struggles
+Nvidia opened a probe into its CEO, October CPI ran hot and Bitcoin fell to an 11-week low. Breakout After Hours, week of November 10, 2026.
+2 minutes read
+11. 11. 2026
+Read post
+Breakout After Hours: The Binance Hack and a Tech Wipeout
+Binance lost $6.3 billion to hackers, tech shed $1 trillion in a day and Bitcoin held near $77K. Breakout After Hours, week of November 3, 2026.
+2 minutes read
+4. 11. 2026
+Read post
+Become a Crypto Prop Trader
+Start trading with Breakout’s capital today.
+Choose an Evaluation
+Trade crypto without depositing your own money.
+[email protected]
+Product
+Pricing
+FAQ
+Contact
+Learn
+How To Trade Market Structure Like a Pro
+10 Years of Crypto Trading Knowledge in 10 Minutes
+Smart Money Concepts
+Breakers Explained
+Legal
+Terms and Conditions
+Privacy Policy
+Cookie Settings
+Refer-a-friend: Terms and Conditions
+Join Our Mailing List
+Leave this field blank
+Continue
+I agree to receive marketing emails. You can unsubscribe at any time.
+Get Free Access
+Kraken
+Kraken Pro
+Krak
+xStocks
+NinjaTrader
+CF Benchmarks
+Reap
+Payward Services
+© 2026 BREAKOUT TRADING GROUP, LLC.

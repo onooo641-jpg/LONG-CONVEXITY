@@ -1,0 +1,130 @@
+What is a Futures Prop Evaluation? (2026) | Alpha Futures
+Black Friday Early Access · EARLYBOGO40 25K Zero BOGO + 40% off · EARLYBOGO50 25K Direct BOGO + 50% off
+Home
+About
+How It Works
+Trading
+Platforms
+AlphaTrader
+Learn More
+WealthCharts
+Learn More
+Quantower
+Learn More
+View All
+Leaderboard
+Lifetime Payouts
+Learn More
+Weekly Payouts
+Learn More
+Returns of the month
+Learn More
+View All
+Market
+Equity & Index
+Learn More
+Currency
+Learn More
+Metals
+Learn More
+Crypto
+Learn More
+View All
+AlphaTrader
+Launched AlphaTrader — the next evolution of the platform. Get Early Access
+Resources
+Contact Us
+Help Center
+Start Evaluation
+Sign In
+Home
+About
+How It Works
+Trading
+Platforms
+Leaderboard
+Market
+AlphaTrader
+Launched AlphaTrader — the next evolution of the platform. Get Early Access
+Resources
+Contact Us
+Help Center
+Start Evaluation
+Sign In
+What is a Futures Prop Evaluation? (2026)
+By the Alpha Futures Team · Updated September 4, 2026
+Update — September 4, 2026: TradingView is back on Alpha Futures. Connectivity is powered by Plus500 and available at checkout. Use your Alpha Trader credentials from Account Info to connect. Full setup: TradingView Is Live on Alpha Futures . Confirm live options on Platforms .
+Update — July 12, 2026: Alpha Futures and NinjaTrader (including Tradovate and TradingView, which connected through Tradovate) have parted ways, and the Premium plan has been discontinued (all active Premium accounts are being refunded automatically). Existing Zero, Advanced, and Direct accounts on NinjaTrader/Tradovate/TradingView are being migrated to AlphaTrader. References below are kept for historical accuracy.
+Quick answer: A futures prop evaluation is Alpha Futures' structured assessment on simulated funds . You must hit a profit target without breaching the Maximum Loss Limit (MLL) or daily rules. Many traders call the same step a futures prop challenge — the mechanics are identical.
+Part of our futures prop series. Start with What is a futures prop firm? , then explore: Platforms · Best futures prop firms (2026) · Alpha Futures review (2026) · Performance fee rules explained (2026) · Alpha Group · Futures vs forex prop firms (2026) · Best futures prop firms for beginners (2026) · Fastest payout futures prop firms (2026) . · CFD vs futures · futures price limit rule · My Alpha journal
+What is a futures prop evaluation?
+A futures prop evaluation is the assessment stage a proprietary trading firm uses to identify disciplined traders before granting access to simulated futures funds on a Qualified Account. At Alpha Futures, passing the evaluation is the gateway to becoming a qualified futures trader and earning performance fee on eligible simulated profits.
+Alpha Futures uses the term evaluation for the assessment stage. Many traders call the same step a futures prop challenge — Alpha Futures uses evaluation language, but the profit targets, maximum loss limit (MLL) rules, and simulated environment are identical. For the full model, start with our What is a Futures Prop Firm? (2026 guide) .
+How a futures prop evaluation works
+Profit target — a percentage gain you must reach to pass; it varies by plan and account size.
+Maximum Loss Limit (MLL) — the floor that closes the account if breached. Alpha Futures uses end-of-day trailing MLL on all plans, not intraday trailing.
+Consistency rule — caps how much of total profit can come from one session: 50% on Standard evaluations, 40% on Advanced evaluations, and none on Zero evaluations.
+Minimum trading days and contract limits apply by plan — verify on the help centre.
+Simulated funds only — you trade in a simulated futures environment; your personal savings beyond the fee are not at risk.
+Futures prop challenge vs evaluation
+"Futures prop challenge" is industry slang for the same evaluation step. The difference is terminology, not mechanics. Alpha Futures runs one-step evaluations on Zero, Advanced, and Premium — there is no multi-phase combine unless rules change. On Zero there is no consistency rule on the evaluation, so a strong single session can qualify you, provided the MLL holds.
+How Alpha Futures fits in
+Alpha Futures evaluations start from $89/month on Zero $25K and run up to $150K simulated sizes on Standard and Advanced, all with a published 90% performance split. Platforms include AlphaTrader, TradingView (via Plus500), WealthCharts, DeepChart, and Quantower. See how funded futures accounts work for what happens after you pass.
+Frequently Asked Questions
+What is a futures prop evaluation?
+A structured assessment on simulated futures funds. You must hit a profit target without breaching the Maximum Loss Limit (MLL) or daily rules. Passing qualifies you for a Qualified Account where you may earn performance fees.
+What is a futures prop challenge?
+Industry slang for the same evaluation step. Alpha Futures uses evaluation language; the profit targets, MLL rules, and simulated environment are identical.
+What happens if you fail a futures prop evaluation?
+If you breach the MLL, daily rules, or other conditions, the simulated account closes. You lose the evaluation fee and must purchase a new assessment or reset. Your personal savings beyond the fee are not at risk.
+Is a futures prop evaluation on real money?
+No. Trading happens on simulated funds in a simulated futures environment. Performance fees paid to Qualified Traders are real money on published terms, but the evaluation balance itself is simulated.
+How do I pass a futures prop evaluation at Alpha Futures?
+Hit the profit target without breaching the end-of-day trailing MLL. On Standard evaluations the largest day must stay within 50% of net profit; on Advanced it must stay within 40%. Zero evaluations have no consistency rule.
+Is the Alpha Futures evaluation one-step or two-step?
+Alpha Futures runs one-step evaluations on Zero, Standard, and Advanced — there is no multi-phase combine unless rules change.
+Ready to Start Your Evaluation?
+Compare Alpha Futures evaluation plans — simulated accounts from $25K to $150K with a published 90% performance split.
+View Alpha Futures evaluation plans
+Related: Futures prop guide · simulated futures funds · Evaluations
+Related reading
+What is a Reset? (Futures Prop, 2026)
+What is a Daily Loss Limit (Daily Loss Guard)? (2026)
+What is the Consistency Rule? (2026)
+General information only, not financial advice. Simulated futures trading. Performance fees are performance-based; outcomes not guaranteed.
+More Articles
+Sign Up for an
+Exclusive Welcome Offer
+Subscribe to Alpha Futures emails for an exclusive welcome offer, trader insights, product updates and discounts. Enter your email to stay one step ahead. You can unsubscribe at any time.
+Thank you for signing up to our newsletter
+Oops! Something went wrong while submitting the form.
+175,000+
+Qualified Analysts
+1.1Million+
+Traders
+$70M
+Performance Fees Paid
+Quick Links
+Home About How it works
+Trading
+Platforms Market Leaderboard
+Other
+Resources Contact Us Promo Codes
+2026 © Alpha Futures - All rights reserved.
+Terms of Use
+Terms and Conditions
+General Service Agreement
+Privacy Policy
+Return Policy
+ALPHA FUTURES LIMITED
+Company number 15655643
+Registered office address
+1 Allied Business Centre, Coldharbour Lane, Harpenden, England, AL5 4UT
+"Any references to trading, analysts, revenue, and profit throughout the website are references to virtual trading, revenues, and profits, respectively."
+Alpha Futures Risk Disclosure:
+Futures trading contains substantial risk and is not for every investor. An investor could potentially lose all or more than the initial investment. Risk capital is money that can be lost without jeopardizing your financial security or lifestyle. Only risk capital should be used for trading and only those with sufficient risk capital should consider trading. Past performance is not necessarily indicative of future results.
+Hypothetical Performance Disclosure:
+Hypothetical performance results have many significant performance and other limitations, some of which are described below. No representation is being made that any account will or is likely to achieve profits or losses similar to those shown on the website or any promotional material.
+CFTC Rule 4.41:
+Hypothetical or Simulated performance results have certain limitations. Unlike an actual performance record, simulated results do not represent actual trading. Also, because the trades have not actually been executed, the results may have under-or-over compensated for the impact, if any, of certain market factors, such as lack of liquidity. Simulated trading programs, in general, are also subject to the fact that they are designed with the benefit of hindsight. No representation is being made that any account will or is likely to achieve profit or losses similar to those shown.
+English Deutsch Español Français Italiano

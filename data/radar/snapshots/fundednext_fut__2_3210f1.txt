@@ -1,0 +1,210 @@
+CFD Challenge Terms – FundedNext Trading Conditions
+CFDs
+Futures
+Labs
+Rewards
+More
+EN Login
+CFDs
+Futures
+Labs
+Rewards
+CFDs Challenge Terms
+Last updated: 5 May 2026
+On this page
+Overview
+1. Nature of the Programme
+2. Incorporation by Reference
+3. Structure of the CFDs Challenge
+4. Definitions
+5. Challenge Parameters
+6. Customer Obligations
+7. Risk Controls; Automatic Restrictions; Platform Integrity
+8. Prohibited Trading Practices
+9. Enforcement; Investigations; Cross-Account Actions
+10. Fees; Activation; Refund Policy
+11. Chargebacks and Payment Disputes (No Parallel Policy)
+12. Programme Verification
+13. Passing, Verification and Progression
+14. Costs
+15. Contact
+16. General Legal Terms (Incorporated)
+Overview
+These CFDs Challenge Terms (these "Challenge Terms") govern participation in the FundedNext CFDs Challenge programme (the "CFDs Challenge") operated by GrowthNext – F.Z.E., a company duly registered under Business Registration No. 28831, with its registered office at Office No. 7, AI Robotics HUB, C1 Building, Ajman Free Zone (AFZ), Ajman, United Arab Emirates acting under the brand "FundedNext" (the "Provider", "FundedNext", "we", "us", "our"). Payments connected to the Services may be processed by Incenteco Trading LTD. (HE 307114), a subsidiary of GrowthNext – F.Z.E., as disclosed at checkout and/or in the General Terms.
+By purchasing, accessing, activating, or using any Challenge Account, the customer (the "Customer", "Trader", "you") agrees to be bound by these Challenge Terms.
+If you do not agree to these Challenge Terms, you must not purchase, access, activate, or use the CFDs Challenge.
+Certain operational, technical or administrative components of the Services and the simulated trading environment may be delivered by the Provider's affiliates and third-party providers, as described in the Terms and Conditions of Use and Provision of Services ("Terms").
+1. Nature of the Programme
+1.1. The CFDs Challenge is an evaluation programme conducted in a simulated trading environment designed to assess trading discipline, risk management, and adherence to defined parameters.
+1.2. The Provider does not provide brokerage, dealing, execution, portfolio management, investment advice, or any regulated investment service to the Customer under these Challenge Terms. The Customer does not place live-market CFD transactions through the Provider under these Challenge Terms.
+1.3. The Customer does not deposit funds with the Provider for the purpose of executing live trades. Any fee paid is a programme fee for the evaluation service.
+1.4. Any references to "trading", "accounts", "profit", "loss", "positions", "orders", "execution", "equity", "balance", "drawdown", "swaps", "commissions", "spread" or similar concepts refer solely to simulated evaluation metrics and programme rules.
+1.5. The Provider owes no fiduciary duty, suitability duty, or advisory duty to the Customer. Participation is at the Customer's own risk.
+1.6. All trading activity within the CFDs Challenge occurs exclusively within a simulated environment. No orders are executed in the live market, and no financial instruments are purchased, sold, or traded on behalf of the Customer. The simulated results do not represent actual trading performance or financial returns.
+1.7. Any simulated profits generated within the Challenge Account have no monetary value and do not constitute real funds, assets, or entitlements unless and until expressly converted into a Performance Reward under applicable programme rules and the General Terms.
+1.8. The Customer is responsible for complying with all local laws and regulations applicable to their participation and confirms they are at least 18 years old, or the age of majority in their jurisdiction, if higher.
+2. Incorporation by Reference
+2.1. These Challenge Terms are supplemental to, and shall be read together with, the Provider's Terms and any policies, disclosures, operating rules, FAQs, risk disclosures and platform rules expressly incorporated therein or made applicable to the Customer's use of the Services (together, the "General Terms"). The General Terms are incorporated by reference into these Challenge Terms as if set out in full herein.
+2.2. Capitalised terms not defined in these Challenge Terms shall have the meaning given in the General Terms.
+2.3. Marketing statements, summaries, or promotional materials do not override these Challenge Terms or the General Terms.
+3. Structure of the CFDs Challenge
+3.1. The Provider offers multiple CFDs Challenge models. The models covered by these Challenge Terms include:
+Evaluation Model
+Express Model
+Stellar 1-Step Model
+Stellar 2-Step Model
+Stellar Lite Model
+3.2. Each model has specific parameters (profit targets, loss limits, minimum trading days and any additional conditions) disclosed at purchase and/or in the Customer dashboard. Those parameters form part of these Challenge Terms.
+3.3. Where a model has multiple phases (e.g., Phase 1 / Phase 2), each phase is evaluated separately under the applicable parameters.
+3.4. The Provider reserves the right, acting reasonably and in good faith, to modify programme parameters, models, or structure for future purchases, provided such changes shall not retroactively affect an active Challenge Account unless necessary to protect platform integrity or comply with legal or operational requirements.
+4. Definitions
+4.1. "Challenge Account" means a simulated evaluation account provided to the Customer for the purpose of participating in the CFDs Challenge.
+4.2. "Initial Account Size" means the nominal starting balance of the Challenge Account for the purchased model.
+4.3. "Trading Day" means a calendar day (in the platform's system time) on which the Customer opens and/or closes at least one trade on the Challenge Account, as recorded by the platform.
+4.4. "Daily Loss Limit (DLL)" means the maximum permitted loss within a single Trading Day, calculated as a percentage of the Initial Account Size.
+4.5. "Maximum Loss Limit (MLL)" means the maximum permitted loss relative to the Initial Account Size or such other reference balance/equity metric as defined in the applicable programme model and platform calculations.
+4.6. "Profit Target" means the minimum profit percentage required for the relevant phase/model.
+4.7. "Pass / Passing the Challenge" means the Customer has (i) achieved the applicable Profit Target; (ii) satisfied the minimum Trading Days; (iii) not breached the DLL/MLL; (iv) not engaged in Prohibited Trading Practices; and (v) successfully completed any verification/review steps required by the Provider for progression.
+4.8. "Fail / Failing the Challenge" means the Customer fails to meet any requirement for Passing the Challenge or breaches any applicable rule, including any loss limit or Prohibited Trading Practice.
+4.9. "Prohibited Trading Practices" means the practices described in Section 8 (and any programme rules/FAQs incorporated/ General Terms by reference).
+4.10. "Performance Reward" means any reward, compensation, or other monetary or non-monetary benefit that may be granted by the Provider in connection with programme progression or performance, subject at all times to the General Terms, these Challenge Terms, and successful completion of all verification and compliance requirements.
+5. Challenge Parameters
+5.1. The Customer must not exceed the following Daily Loss Limit (DLL), calculated as a percentage of the Initial Account Size (including commissions, swaps, and charges): Evaluation and Express Models — 5%; Stellar 1-Step Model — 3%; Stellar 2-Step Model — 5%; Stellar Lite Model — 4%.
+5.2. The Customer must not exceed the following Maximum Loss Limit (MLL), calculated as a percentage of the Initial Account Size (including commissions, swaps, and charges): Evaluation and Express Models — 10%; Stellar 1-Step Model — 6%; Stellar 2-Step Model — 10%; Stellar Lite Model — 8%.
+5.3. The Customer must complete at least the following minimum Trading Days: Evaluation Model — 5 days; Express Model — 10 days; Stellar 1-Step Model — 2 days; Stellar 2-Step Model — 5 days; Stellar Lite Model — 5 days.
+5.4. The Customer must achieve the following Profit Targets: Evaluation Model — Phase 1: 10%, Phase 2: 5%; Express Model — 25%; Stellar 1-Step Model — 10%; Stellar 2-Step Model — Phase 1: 8%, Phase 2: 5%; Stellar Lite Model — Phase 1: 8%, Phase 2: 4%.
+5.5. Where the Customer purchases add-ons or participates in special offers, the applicable parameters may be modified for the duration and scope stated at checkout and/or in the dashboard. Such modifications apply only as expressly described and do not otherwise amend these Challenge Terms.
+5.6. Where the Express Model is purchased with a "Consistency" designation, the Customer shall comply with the Provider's consistency requirements applicable to that Express Model, which are intended to ensure that trading performance is not generated through irregular, one-off, or disproportionately concentrated activity and is broadly consistent with the trading approach represented during participation. Where the Express Model is purchased with a "Non-Consistency" designation, such consistency requirements shall not apply to that Express Model participation. Any additional operational guidance, examples, and parameters relating to consistency may be described in the applicable FAQ/Rules, as updated from time to time, provided that such guidance shall not materially expand the Customer's obligations beyond what is set out in this Agreement.
+6. Customer Obligations
+6.1. The Customer must comply with these Challenge Terms, the General Terms (as incorporated), the platform rules, and any programme rules/FAQs incorporated by reference.
+6.2. The Customer must not attempt to circumvent any parameter, restriction, or enforcement mechanism.
+6.3. The Challenge Account is personal to the Customer; it must not be shared, sold, transferred, assigned, sublicensed, or used for the benefit of any third party.
+6.4. The Customer must provide accurate information and promptly update it if it becomes inaccurate. Misrepresentation may result in termination.
+6.5. The Customer acknowledges that risk controls and enforcement measures may be applied automatically, including restricting trading and/or disabling functions when loss limits are reached.
+7. Risk Controls; Automatic Restrictions; Platform Integrity
+7.1. When the Customer reaches or exceeds any DLL/MLL threshold, or when the platform detects a breach, the Provider may automatically restrict the Challenge Account, including placing it into read-only mode, disabling the ability to open, modify, and close trades, or revoking platform access.
+7.2. To the maximum extent permitted under the General Terms and applicable law, the Provider is not liable for any losses, missed opportunities, inability to close positions, or account outcomes arising from automated or manual enforcement of programme rules.
+7.3. The platform's recorded data, logs, and system time will be used to determine Trading Days, profit/loss, drawdown, breaches, and compliance, unless the Provider determines (acting reasonably) that there was a material technical error affecting integrity. The Provider's determination shall be final, subject to applicable law.
+7.4. If the Customer alleges a technical incident, the Customer must notify support promptly with sufficient details. The Provider may investigate and, where appropriate, apply corrective measures consistent with programme integrity. Nothing in this clause obliges the Provider to waive or reverse a breach unless there is clear evidence of a platform-side material fault.
+7.5. The Customer acknowledges that the simulated environment may not replicate real-market conditions, including liquidity, execution speed, slippage, or pricing, and that differences between simulated and live trading environments do not constitute defects or grounds for claim.
+8. Prohibited Trading Practices
+8.1. The Customer must use the Website, Platform, and any Challenge Account (or other simulated account made available under the Services) strictly for the legitimate purpose of evaluating trading skills in a simulated environment. The Customer must not engage in any conduct that (i) constitutes abuse, manipulation, circumvention, or exploitation of simulation constraints, pricing/display/execution mechanics, or programme rules; (ii) creates an unfair advantage; (iii) undermines the integrity of the evaluation programme; or (iv) exposes the Provider, its Affiliates, or Third Parties (including liquidity/technology providers, brokers, or payment partners) to reputational, regulatory, operational or security risk.
+8.2. Exploitation of Errors; Latency and Feed Abuse. The Customer must not exploit any error, delay, mismatch, glitch, defect, vulnerability, limitation, or anomaly affecting price display, simulated execution, quotes, market data, data-feed updates, order handling, platform mechanics, calculation logic, rule monitoring, or any other system component. Without limitation, the Customer must not engage in latency trading, latency arbitrage, quote stuffing, feed arbitrage, trading based on slow/fast feed discrepancies, data-feed manipulation, or any conduct intended to benefit from delayed, stale, off-market, erroneous, incomplete, or inconsistent data.
+8.3. Technical Flaw Exploitation; System Vulnerabilities. Using any system flaw, bug, technical error, security weakness, vulnerability, reverse-engineering, interference technique or other technical method to obtain an advantage is prohibited, including any attempt to degrade, overload, probe, interfere with, bypass, or otherwise compromise the security, stability, integrity or availability of the Website, the Platform, or any Provider or Third Party system.
+8.4. Arbitrage (Any Form) and Riskless/Artificial Profit Strategies. Any form of arbitrage intended primarily to exploit pricing differences, delays, simulation limitations, or execution/data mechanics (rather than genuine market exposure and risk-taking) is prohibited. Without limitation, prohibited arbitrage includes latency arbitrage, spatial arbitrage, triangular arbitrage, statistical arbitrage, market-making arbitrage, pairs arbitrage, volatility arbitrage, and any method designed to generate riskless or near-riskless profits through price discrepancies, execution anomalies, simulation constraints, or improper exploitation of platform mechanics.
+8.5. Gap Trading; Off-Market Exploitation; Illiquid Prints; Execution Anomalies. Trading strategies designed to exploit gaps, illiquid market prints, off-market quotes, abnormal spreads, outlier ticks, simulated execution anomalies, irregular pricing events, or conditions that would not reasonably reflect real market trading conditions are prohibited, where such conduct is primarily intended to game programme outcomes, circumvent risk parameters, or obtain an unfair advantage incompatible with the evaluation purpose.
+8.6. Fraud, Manipulation, and Falsification. The Customer must not commit fraud, manipulate, distort, or falsify results, records, activity, performance metrics, trading logs, account history, or any information related to the Services. Prohibited conduct includes any device, scheme, arrangement, or practice intended to obtain an advantage incompatible with the legitimate purpose of evaluating skills in simulated trading, including the exploitation of systemic failures or any artificial behaviour designed to trigger or manufacture evaluation outcomes.
+8.7. Group Trading; Coordinated Trading; Collusion. Any coordinated trading designed to manipulate programme outcomes is prohibited. Without limitation, the Customer must not: (i) open opposite or offsetting positions across multiple accounts (whether the Customer's own accounts or other persons' accounts); (ii) engage in synchronised entries/exits intended to game rules or platform calculations; (iii) use collusive patterns, coordinated strategies, or any arrangement that defeats realistic evaluation; or (iv) participate in any group trading scheme (including by agreement, instruction, signalling, or shared strategy execution) intended to manipulate results or circumvent programme parameters.
+8.8. Hedging and Cross-Account Risk Neutralisation. Multiple hedged positions may be permissible within a single Challenge Account only to the extent permitted under the applicable programme rules and platform calculations. However, cross-account hedging (including hedging, mirroring, cross-hedging, or coordinated hedging) is prohibited where it undermines the evaluation programme, including any arrangement designed to neutralise risk, manipulate outcomes, or circumvent limits across: (i) the Customer's own accounts; (ii) related accounts; and/or (iii) accounts maintained at other firms.
+8.9. Copy Trading; Mirroring; Signal Following (Without Authorisation). Copy trading, mirroring, signal following, trade replication or any substantially similar activity (whether manual or automated) is prohibited unless expressly authorised in writing by the Provider and permitted under the applicable programme rules. For the avoidance of doubt, any replication of another person's trading activity, or systematic execution of trades based primarily on external signals, shared instructions, or third-party trade streams, may be treated as prohibited copying/mirroring.
+8.10. Account Management; Account Sharing; Third-Party Trading; "Passing Services". The Customer must not allow any third party to access, manage, control, or trade the Customer's account, and must not trade on behalf of any third party. The Customer must not sell, assign, lease, sublicense, share credentials, grant remote access, permit use by third parties, or use account management services, unauthorised copy trading, "passing services", or any third-party management arrangement (whether paid or unpaid).
+8.11. Abusive Multiple Accounts; Circumvention of Limits, Promotions or Geofences. The Customer must not create, operate or use multiple accounts in a manner intended to circumvent limits, parameters, promotions, geographical restrictions, eligibility rules, maximum account allocations, rule enforcement logic, or other programme rules. The Provider may treat patterns consistent with "account stacking", "account rolling", serial re-entries, or coordinated multi-account usage as abusive circumvention.
+8.12. Identity, Eligibility and Documentation; Misrepresentation. The Customer must not use a false identity, invalid, altered or third-party documents, misleading information, or any form of impersonation or misrepresentation to create, verify, access, or operate accounts. Any attempt to conceal identity, beneficial ownership, residency/jurisdiction, eligibility status, or sanction exposure is prohibited.
+8.13. Circumvention of Controls; Technical Restrictions; KYC/AML Bypass. The Customer must not attempt to bypass or defeat geographical blocks, KYC/AML verifications, eligibility requirements, antifraud controls, monitoring systems, device fingerprinting, IP/geo controls, or any technical restrictions imposed by the Provider. This includes use of VPNs, proxies, emulators, device spoofing, automation intended to circumvent controls, or any similar method.
+8.14. Unauthorised Automation; HFT; Mass-Order Behaviour; Platform Overload. The Customer must not use bots, scripts, algorithms, software, AI agents, or automated methods not expressly authorised by the Provider. Even where certain tools may be permitted under programme rules, the Customer must not use automation, high-frequency execution, mass-order behaviour, or mass data entry intended to manipulate platform behaviour, overload systems, interfere with monitoring, degrade performance, or create an unfair advantage.
+8.15. Unrealistic Trading Behaviour; Simulation Constraint Abuse; Platform Integrity. The Customer must not engage in trading behaviour that is inconsistent with typical market operations or that is primarily designed to exploit simulation constraints or programme calculations. Without limitation, prohibited patterns may include excessive one-sided exposure, repeated "all-in" bets, grid trading, tick scalping, unrealistic order patterns, artificial trade fragmentation, account rolling, abusive patterns, or any comparable pattern which the Provider reasonably determines to be inconsistent with the evaluation purpose and indicative of abuse, manipulation, or circumvention.
+8.16. Abusive Position Sizing Anomalies. Opening positions that are conspicuously inconsistent with the Customer's own prior trading pattern, whether materially larger or materially smaller, may be flagged for review where indicative of rule circumvention, abuse, manipulation, or attempts to game evaluation metrics. The Provider may require additional verification, impose restrictions, or take enforcement action where such anomalies are reasonably determined to be abusive.
+8.17. Manipulative Practices; Artificial Conditions. Any manipulation of the evaluation environment, including attempts to trigger artificial conditions, exploit low-liquidity mechanics, force unrealistic fills (including limit order fills) in abnormal conditions, or otherwise manufacture outcomes inconsistent with a realistic trading evaluation, is prohibited.
+8.18. Unlawful Activities; Sanctions; Financial Crime. The Customer must not engage in, attempt to engage in, facilitate or benefit from money laundering, terrorist financing, violation of international sanctions, financial crimes, payment fraud, chargeback fraud, identity fraud, or any other unlawful activity in connection with the Services.
+8.19. Abuse of Promotions, Vouchers, Discounts and Referral Programmes. The Customer must not improperly exploit discounts, vouchers, campaigns, referral programmes, or any incentive mechanism in a manner incompatible with their legitimate purpose, including through multiple accounts, collusion, circumvention patterns, fabricated referrals, or other abusive conduct.
+8.20. Technical Interference; Security and Integrity. The Customer must not interfere with, disrupt, probe, scan, test, or compromise the security, stability, or integrity of the Website, Platform, or any Provider or Third Party systems, and must not introduce malware, bots, harmful code, or perform any action that could impair or degrade operations.
+8.21. Non-exhaustive. The list of Prohibited Trading Practices is not exhaustive. Any behaviour that the Provider determines to be abusive, manipulative, or intended to circumvent the evaluation may be treated as prohibited.
+9. Enforcement; Investigations; Cross-Account Actions
+9.1. The Provider may apply measures, including through automated or manual systems, it deems appropriate to protect programme integrity, including warnings, restrictions, suspensions, profit adjustments, disqualification, termination, denial of progression, and permanent bans, and/or the withholding, suspension, adjustment, reversal, denial, or set-off of any Performance Reward.
+9.2. The Provider may take immediate action without prior notice where necessary to protect the platform, the programme, or other users, including where abuse is suspected.
+9.3. The Provider may investigate suspected breaches using platform logs, behavioural analytics, device/IP indicators, account-linkage data, and other integrity tools.
+9.4. If the Provider determines that a Customer has engaged in a breach of these Challenge Terms, the General Terms, or any applicable programme rules in connection with any Challenge Account, the Provider may apply enforcement measures across all Challenge Accounts and any other accounts, programmes, or services controlled by, associated with, or reasonably linked to the Customer. Such measures may include, without limitation, account restriction, suspension, or termination, disqualification, cancellation of progression or eligibility, permanent denial of access to the Services, and/or the withholding, suspension, adjustment, reversal, denial, or set-off of any pending, accrued, or future Performance Reward, whether or not such reward has already been calculated, credited, or scheduled for payment.
+9.5. Where the Provider determines that multiple accounts are linked through collusion or coordinated activity, the Provider may take action against any or all such accounts.
+9.6. The Customer may request a review by contacting support and providing a clear explanation and evidence. The Provider may, but is not obliged to, review decisions; the Provider's determination will be final to the extent permitted by the General Terms and applicable law.
+9.7. Unless required by applicable law, no compensation is payable for enforcement actions taken in good faith to protect programme integrity.
+9.8. Without prejudice to any other rights or remedies (including injunctive relief and claims for additional damages to the extent permitted by applicable law), where the Provider determines that the Customer has engaged in any Prohibited Trading Practices (including any attempt, facilitation, collusion, or circumvention) under these Challenge Terms, the General Terms, and/or the Trading Rules, the Customer shall pay the Provider a contractual penalty of twenty-five hundred American dollars ($2,500) for each such breach and/or, where relevant, for each trade, strategy pattern, account, device, campaign, or coordinated arrangement constituting or evidencing a breach (as reasonably determined by the Provider). The Parties acknowledge that such Prohibited Trading Practices may cause the Provider immediate and significant harm (including reputational, regulatory, security, operational, and partner/PSP impact) that may be difficult to quantify at the time of breach, and agree that the contractual penalty is a genuine pre-estimate of loss and reasonable in the circumstances.
+9.9. The Provider may set off any contractual penalty and/or any amounts owed by the Customer under this Clause 9 against any amounts otherwise payable to the Customer (including any Performance Reward, refunds, credits, or other sums), to the maximum extent permitted by applicable law. The Customer shall indemnify the Provider for reasonable costs incurred in enforcing this Clause 9, including administrative, investigation, legal, expert, forensic, and collection costs. Any unpaid amount shall accrue interest at the maximum rate permitted by applicable law, from the due date until payment in full.
+10. Fees; Activation; Refund Policy
+10.1. The Customer pays a programme fee for access to the CFDs Challenge and the Challenge Account. Fees and payment methods are disclosed at checkout.
+10.2. The service is deemed commenced when the Customer receives access credentials and/or activates the Challenge Account and/or places the first trade, depending on the programme flow.
+10.2.1. By activating the Challenge Account and/or placing the first trade, the Customer acknowledges that the Provider begins delivering the digital service immediately. This does not affect any non-waivable statutory rights the Customer may have under applicable law; refund eligibility remains governed by Section 10.
+10.3. The Customer may request a refund within seven (7) days from the date of purchase only if no trading activity has occurred on the relevant Challenge Account. "No trading activity" means no trade has been opened or executed as recorded by the platform.
+10.4. Once trading activity has occurred, the fee becomes non-refundable, and no full or partial refunds will be granted.
+10.5. No refund is available where the Customer fails the Challenge, breaches any rule, is disqualified, engages in Prohibited Trading Practices, fails KYC/verification, or is terminated for cause.
+10.6. Where add-ons or third-party platform fees are purchased, their refundability (if any) is governed by the applicable checkout disclosure and the General Terms, except where expressly stated otherwise.
+10.7. If the Customer does not activate the Challenge Account and/or does not commence trading activity within thirty (30) calendar days of purchase (or such other period disclosed at checkout), the Provider may suspend access. Reactivation may be requested via Support and may be subject to verification and any applicable conditions disclosed at checkout and/or under the General Terms.
+10.8. The Customer may request termination by contacting Support. Upon termination, access to the Services, including the Challenge Account, dashboard and platform, will cease. Refund eligibility (if any) remains governed exclusively by this Section 10 and the General Terms.
+11. Chargebacks and Payment Disputes (No Parallel Policy)
+11.1. Any chargeback, dispute, or reversal request is governed exclusively by the General Terms (Payments/Chargebacks provisions), which are incorporated by reference.
+11.2. Without limiting the General Terms, if the Customer initiates, authorises, or is reasonably suspected of initiating or authorising any chargeback, payment dispute, reversal request, or fraudulent or unjustified dispute in connection with any payment made to the Provider, the Provider may, acting reasonably and in good faith, suspend or restrict access to the Services, restrict or terminate any Challenge Account or related account, deny progression or eligibility, and/or withhold, suspend, adjust, reverse, deny, or set-off any pending, accrued, or future Performance Reward, whether or not such reward has already been calculated, credited, or scheduled for payment, until the matter is fully resolved to the Provider's reasonable satisfaction.
+11.3. Where a chargeback or payment dispute is raised, the Provider may place the relevant account(s) in a paused and/or restricted state pending review.
+11.4. Where the Customer seeks reactivation, the Customer must withdraw the dispute and provide reasonable documentary proof of withdrawal. The Provider may require additional verification.
+11.5. Verification and reactivation (if granted) may take forty-five (45) to sixty (60) business days, depending on the payment channel and third-party processing timelines.
+12. Programme Verification
+12.1. The Provider may require the Customer to complete KYC/verification at any stage, including after Passing a phase and prior to progression or any reward eligibility, in accordance with the General Terms.
+12.2. KYC must be completed by the account holder only. Any attempt to use another person to complete verification is prohibited and may result in termination.
+12.3. The Provider may conduct Customer Due Diligence to verify identity and assess integrity risks, including reviewing trading behaviour for consistency with programme purpose.
+12.4. Where heightened risk is identified, Enhanced Due Diligence may be required, including additional documentation or verification steps.
+12.5. Failure to complete or pass KYC may result in denial of progression and/or termination, without refund except where required by applicable law and consistent with Section 10.
+12.6. KYC/verification may be performed by third-party service providers, and the Provider may not store verification data, which will be processed in accordance with the Privacy Policy and the General Terms.
+13. Passing, Verification and Progression
+13.1. The Customer passes only if all requirements in these Challenge Terms are satisfied (profit target, trading days, loss limits, compliance, and any required verification).
+13.2. The Provider may require time to review and verify compliance prior to confirming pass/progression.
+13.3. Passing the Challenge does not create any entitlement to employment, partnership, funding, or compensation except as expressly determined by the Provider under the programme rules and the General Terms.
+13.4. Any Performance Reward is discretionary and conditional upon full compliance with these Challenge Terms, the General Terms, and all applicable programme rules, and shall not be deemed earned, vested, or payable unless and until expressly approved and paid by the Provider.
+14. Costs
+14.1. Internal costs of providing the programme are borne by the Provider.
+14.2. The Customer may be responsible for fees disclosed at checkout or under the General Terms, including third-party platform fees, add-ons, payment processing fees, FX conversion fees, taxes, or similar charges.
+15. Contact
+Support: [email protected]
+Registered Office: Office No. 7, AI Robotics HUB, C1 Building, Ajman Free Zone, Ajman, UAE
+16. General Legal Terms (Incorporated)
+16.1. Governing law, dispute resolution, limitation of liability, indemnities, notices, amendments, privacy and other general legal terms are set out in the General Terms and are incorporated by reference.
+16.2. In the event of conflict between these Challenge Terms and the General Terms, these Challenge Terms shall prevail solely with respect to the CFDs Challenge programme, and only to the extent of such conflict.
+16.3. The Provider may amend these Challenge Terms from time to time. Updated versions will be made available via the website and/or dashboard. Continued use of the Services after the effective date of an update constitutes acceptance of the updated Challenge Terms, subject to applicable law.
+16.4. The headings and section titles in these Challenge Terms are included for convenience and reference only and shall not affect the interpretation, construction, or meaning of any provision of these Challenge Terms.
+Product and Offerings
+FundedNext CFDs
+FundedNext Futures
+FNmarkets
+General Rules
+Help Centre (FAQ)
+Partners
+Resources
+How Prop Trading Works
+Calculator
+Blog
+CFDs Glossary
+Trading Platforms
+Economic Calendar
+Symbols
+Market Overview
+Company
+Company
+News & Media
+Achievements & Awards
+Events
+Contact
+Public Announcements
+Privacy & Policy
+Terms of Service
+CFDs Challenge Terms
+Futures Challenge Terms
+Instant Account Terms
+Privacy Policy
+Cookie Policy
+AML Policy
+Risk Disclosure
+Partners T&C
+The services offered under the FundedNext brand are provided by GrowthNext – F.Z.E. (Reg. No. 28831) , with its registered address at Office No. 7, AI Robotics Hub, C1 Building, Ajman Free Zone (AFZ), Ajman, UAE, which is responsible for user onboarding, the administration of the services and the operation of the website fundednext.com. FundedNext™ is a trademark and brand name owned by GrowthNext – F.Z.E. Certain operational, technical, administrative and payment-related activities are performed by the following affiliated entities (together with GrowthNext – F.Z.E., the "FundedNext Entities"):
+FundedNext Ltd (Reg. No. HY01023052), Bonovo Road, Fomboni, Island of Mohéli, Union of the Comoros, which operates the simulated trading environment.
+Third-Party Platforms: Trading platforms and related software are provided by independent third-party providers. The FundedNext Entities do not control these platforms and are not responsible for their availability or performance.
+FundedNext Limited , 8/F China Hong Kong Tower, 8-12 Hennessy Road, Wan Chai, Hong Kong , which processes payments.
+Incenteco Trading Ltd , 26 Pittaou Str., 3118 Agia Fyla, Limassol, Cyprus, and Abutor Investments Ltd , 16 Foti Kolakidi, 1st floor, 3031 Agia Zoni, Limassol, Cyprus, which facilitate payment-related operations.
+Simulated Trading Only: The FundedNext Entities provide access to simulated trading programs designed solely to evaluate trading proficiency and risk-management skills. All trading takes place in a simulated environment using virtual funds and does not involve real financial risk, real financial instruments or live market orders.
+No Brokerage or Client Funds: None of the FundedNext Entities acts as a broker, dealer, exchange or investment adviser, or accepts or manages client deposits. Rewards are based solely on performance in the simulated evaluation and do not represent profits from real trading.
+No Investment Advice: All content, tools and services are provided for evaluation purposes only and do not constitute investment advice, a solicitation, or an offer to buy or sell any financial product, cryptocurrency or derivative. Participants should consult independent financial, legal or tax advisers before trading outside this program.
+Hypothetical Performance Disclosure – CFTC Rule 4.41: These results are based on simulated or hypothetical performance results that have certain inherent limitations. Unlike the results shown in an actual performance record, these results do not represent actual trading. Also, because these trades have not actually been executed, these results may have under-or over-compensated for the impact, if any, of certain market factors, such as lack of liquidity. Simulated or hypothetical trading programs in general are also subject to the fact that they are designed with the benefit of hindsight. No representation is being made that any account will or is likely to achieve profits or losses similar to these being shown.
+Jurisdictional Restrictions: The FundedNext Entities do not offer services to residents of the following jurisdictions: North Korea (DPRK), Myanmar, Belarus, Iran, and Russia, including countries on the FATF high-risk and EU/UN sanctions lists, and Vietnam. Users are responsible for ensuring that their use of the services complies with the laws applicable to them. Services are available only to persons aged 18 or over.
+Risk Warning: Trading in forex, CFDs, futures, derivatives and digital assets involve substantial risk of loss. Past performance is not indicative of future results.
+Fees and Refunds: Fees are paid solely for access to the evaluation services. They are not deposits or investments and are not used for trading. Refunds are governed by our Terms & Conditions.
+In case of any conflict, our Terms & Conditions prevail.
+Not a Deposit | Not FDIC Insured | May Lose Value
+FundedNext-Copyright © 2026
+Trust and Security |
+Subscribe to newsletter

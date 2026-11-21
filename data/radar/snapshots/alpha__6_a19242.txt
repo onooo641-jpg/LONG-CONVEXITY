@@ -1,0 +1,88 @@
+Standard Account Overview | Alpha Futures Limited Help Center Skip to main content
+Search for articles...
+All Collections
+Trading Rules and Parameters
+Standard Account Overview
+Standard Account Overview
+Alpha Futures Standard Account Rules & Parameters
+B
+Written by Benjamin Chaffee
+July 27, 2026
+Standard Account is back with some upgrades!.
+​
+In order to pass a Standard Evaluation: there are two conditions to be met, the trader must reach (+ maintain) the profit target, and satisfy the 50% consistency rule .
+There is only one way to fail on Evaluation Accounts, do not allow the Account Balance to hit or exceed the Maximum Loss Limit .
+​
+​ Benefits of Standard Account:
+1.) Double the withdrawal caps of the Zero Account
+2.) No Daily Loss Guard on Evaluations.
+3.) No Activation Fee
+4.) 90% profit split from the start, no tiered system.
+5.) Pay yourself up to 4 times per month. Withdraw when you want after 5 winning days of $200 or more, no assigned payout dates.
+6.) No "MLL slides to $0 at first withdrawal" rule. Other firms punish you for taking small payouts, not here. If MLL was at $49,200 before payout, it will be after as well.
+​
+​ Standard Account Parameters
+Parameters
+Standard 50K
+Standard 100K
+Standard 150K
+Profit Target
+$3,000
+$6,000
+$9,000
+Maximum Loss Limit
+$2,000
+$3,000
+$4,500
+Daily Loss Guard
+(NONE on Evaluation!)
+$1,000
+$2,000
+$3,000
+Price
+$129/month
+$239/month
+$349/month
+Evaluation Reset
+$109
+$199
+$289
+Max Position
+5 minis, 50 micros
+10 minis, 100 micros
+15 minis, 150 micros
+Scaling Rule
+(Qualified Only)
+Yes
+Yes
+Yes
+Consistency
+50% on Evaluation
+40% on Qualified
+50% on Evaluation
+40% on Qualified
+50% on Evaluation
+40% on Qualified
+News Trading
+No restrictions on Evaluations.
+​
+Restrictions on Qualified here .
+No restrictions on Evaluations.
+​
+Restrictions on Qualified here .
+No restrictions on Evaluations.
+​
+Restrictions on Qualified here .
+Qualification for Payouts
+Withdraw up to 50% of your profits every 5 winning days of $200 or more.
+Withdraw up to 50% of your profits every 5 winning days of $200 or more.
+Withdraw up to 50% of your profits every 5 winning days of $200 or more.
+Withdrawal Limit
+$500 minimum $3,000 maximum
+$500 minimum $4,000 maximum
+$500 minimum $5,000 maximum
+Profit Split
+90%
+90%
+90%
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃

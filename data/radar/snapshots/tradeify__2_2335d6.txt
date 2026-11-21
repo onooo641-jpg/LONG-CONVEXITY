@@ -1,0 +1,249 @@
+How to Get a Funded Trading Account
+Get 30% Off with code "NOV"
+40% OFF GROWTH ACCOUNTS
+ENDS 13 NOVEMBER, 11:59PM EST
+How it works
+Pricing
+Help Center
+Join Discord
+Sign in
+Sign in
+Get funded
+Trading
+>
+Trading platforms
+3 minutes
+by
+Brett Simba
+How to Get a Funded Trading Account
+A funded trading account is an account where a proprietary trading firm provides you with capital to trade. With Tradeify, you trade using their money while following clearly defined guidelines and risk management rules.
+Share this post.
+Copy link
+TL;DR: To get a funded trading account, choose a prop firm and account type, read the profit target, drawdown, daily loss, consistency, payout, platform, trading-hours, and account-cost rules before you buy, then pass the evaluation or select an instant funded path if the firm offers one. A $50K or $100K funded account does not have one standard price because fees, subscriptions, resets, activation costs, and payout deductions vary by firm. The real work is not just hitting a profit target. You need a risk plan that keeps one trade, one day, or one payout request from breaking the account.
+Table of contents
+What is a funded trading account?
+How to get a funded trading account step by step
+Funded account rules to check before you buy
+Evaluation vs instant funded accounts
+Risk plan for passing a funded account evaluation
+Funded account payout rules to verify
+Is a funded trading account worth it?
+Funded account path example by account type
+Funded account FAQ
+What is a funded trading account?
+A funded trading account gives you access to a larger account under a firm's rules. In most modern prop firm programs , you first trade an evaluation or simulated funded account. You keep trading privileges only while you stay inside the account rules.
+The benefit is controlled access to a larger notional account size or permitted exposure than many traders would use in a personal account. Whether trades stay simulated, are copied, or move into a live account depends on the firm and program. The tradeoff is that the firm can limit products, platforms, position size, drawdown, payout timing, and account behavior.
+Do not treat a funded account as free money. Your personal market loss may be limited to account, reset, or evaluation costs, but futures trading still carries risk and rule breaches can end the account.
+How to get a funded trading account step by step
+Most funded account paths follow the same broad sequence:
+Choose the market and firm. Confirm whether the account is for futures, forex, stocks, crypto, or another product set.
+Pick an account size. Larger accounts usually come with larger profit targets, drawdown limits, and position limits.
+Read the rule page before paying. Focus on profit target, maximum drawdown, daily loss limit, consistency rule, minimum trading days, product restrictions, platform choices, and payout conditions.
+Trade the evaluation or funded path. The goal is to reach the target without creating a rule breach.
+Request payout only when eligible. Check whether the firm requires winning days, fresh profit after a prior payout, minimum balances, payout caps, or a consistency calculation.
+If a firm offers an instant funded path, the evaluation step may be skipped. That does not remove the rules. It just moves the pressure into the funded phase sooner.
+Funded account rules to check before you buy
+Most traders ask, "What do I need to do to get funded?" The better question is, "What can disqualify me after I pay?" Use this checklist before choosing any funded trading account.
+Requirement What to verify Why it matters
+Profit target The exact dollar target for your account size You need a realistic plan for reaching it without oversizing.
+Account cost Advertised fee, subscription terms, platform or data fees, reset costs, activation fees, and payout deductions A larger account can look cheap until recurring costs or reset behavior change the real risk-to-reward.
+Drawdown Whether the drawdown is end-of-day, intraday, trailing, static, or locked A drawdown breach can end the account before the profit target is reached.
+Daily loss limit Whether the account has a daily pause rule, a hard breach, or no daily loss limit A daily loss rule changes how much risk you can carry in one session.
+Consistency rule Whether a consistency rule applies and how profit concentration is calculated Some programs measure the largest trading day as a percentage of total profit, so one oversized day can delay passing or block a payout.
+Minimum trading days Whether the firm requires a set number of trading or winning days Some accounts cannot be passed or paid out immediately even after reaching the target.
+Products and platforms Allowed instruments, connection options, platform access, and market hours A strategy that needs unsupported products or overnight holds may not fit the account.
+Payout rules Profit split, payout caps, fresh-profit rules, payout windows, and payment method Passing the evaluation does not automatically mean cash can be withdrawn right away.
+Drawdown terms need special attention. End-of-day drawdown usually describes when the threshold is calculated or adjusted from the account's closing balance, while intraday drawdown rules can monitor account equity during the session. A trailing threshold can move as the account reaches new highs. A static threshold generally stays fixed, and a locked threshold usually means a formerly trailing threshold has stopped moving after a rule-defined point. The exact formula and breach timing vary by program, so read the account-specific rule page before you size trades around it.
+Evaluation vs instant funded accounts
+An evaluation account asks you to prove control first. You usually need to hit a profit target while respecting drawdown, daily loss, consistency, and product rules. This path can be slower, but it gives you a test phase before the funded account.
+An instant funded account skips the evaluation. That can be useful if you already understand the rules and have a tested plan. It can also expose weak risk habits faster because payout and drawdown rules apply immediately.
+Neither path is automatically better. Choose the one that matches your current discipline, not the one that sounds fastest.
+Risk plan for passing a funded account evaluation
+Passing a funded trading evaluation is usually a risk-control problem first and a strategy problem second. Before the first trade, write down:
+Your maximum loss per trade.
+Your maximum loss per day before you stop voluntarily.
+Your maximum number of trades per session.
+The setup types you are allowed to take.
+The time of day you stop trading if execution gets sloppy.
+The account rule that is closest to being breached after each trade.
+This matters because funded account rules punish emotional recovery trading. You can be directionally right and still fail by holding too many contracts, averaging into a loser, trading after the daily limit is too close, or trying to fix a bad morning in one trade.
+Funded account payout rules to verify
+Before choosing a funded account, separate passing rules from payout rules. They are not always the same.
+Look for these payout details:
+Profit split: the percentage of approved payout the trader keeps.
+Minimum payout: the smallest amount that can be requested.
+Payout caps: the maximum amount per request or per cycle.
+Winning-day rules: whether you need a set number of profitable days before requesting.
+Fresh-profit rules: whether profits left after one payout count toward the next one.
+Consistency checks: whether one trading day can block the request.
+If a page advertises fast payouts, read the rule page behind the claim. Speed only matters after eligibility is met.
+Is a funded trading account worth it?
+A funded trading account can make sense when the account fee is small compared with the personal capital you would otherwise put at risk, and when the rules match a strategy you already trade cleanly. It is a poor fit if you need the larger account size to force bigger trades, recover losses, or trade products and hours the program does not allow.
+Before you pay, separate the costs by stage. Start with mandatory upfront or recurring costs, such as the account fee, subscription fee, platform fee, or data fee. Then check failure costs such as resets or repurchases, post-pass costs such as activation fees, and payout-related deductions that apply only if you reach withdrawal eligibility. Calculate the costs that apply to your likely path instead of adding every possible charge into one number.
+Then compare those costs with your planned risk per trade and the distance to the drawdown limit. If one normal losing streak can breach the account, the drawdown and loss limits may be too tight for your strategy's normal risk profile.
+The right question is not only whether you can get funded. Ask whether the rules help you trade with more discipline or push you toward oversizing, overtrading, and payout pressure.
+Funded account path example by account type
+Tradeify is one example of how the process can differ by account type. The current Help Center separates Growth Evaluation , Select Evaluation , and Lightning Funded accounts, so the right path depends on whether you want the fastest evaluation, more payout-policy choice, or no evaluation step.
+Tradeify path How it works Rule details to check
+Growth Evaluation Evaluation account sizes include 25K, 50K, 100K, and 150K. Tradeify's Growth page says Growth can be passed in as few as 1 trading day because there is no evaluation consistency requirement. Growth has a soft-breach daily loss limit and a fixed payout policy after moving to the Growth Simulated Funded account.
+Select Evaluation Evaluation account sizes include 25K, 50K, 100K, and 150K. Tradeify's Select page says Select requires at least 3 trading days because of the 40% consistency rule. Select has no daily loss limit during evaluation and lets the trader choose Flex or Daily payout policy after passing.
+Lightning Funded This path skips the evaluation and starts as a simulated funded account. Tradeify's Lightning page says payouts can be requested once the consistency rule and profit objective are met, and its Lightning payout policy adds payout caps, minimum payout amounts, reset rules, and account-size-specific conditions to review before trading for withdrawal.
+After a Tradeify evaluation is passed and all evaluation conditions are met, Tradeify's Help Center says there is no activation fee and no waiting period for Growth or Select. The trader activates the funded account from the dashboard with the Activate Account button. The same page states that the funded account starts at the base account size, such as 50K, 100K, or 150K, and that evaluation profits do not carry over into the funded account. See the current funded-after-evaluation Help Center page before planning around the post-pass balance.
+Tradeify's essential rules page also states that all positions must be closed before the market closes each day, with regular trading days requiring positions to close by 4:45 PM Eastern Time and holiday early-close days requiring positions to close by 12:59 PM Eastern Time. That is the kind of operational rule you should know before entering a funded account, because overnight or swing trading may not fit the program.
+For platform access, Tradeify's Supported Platforms page says traders choose among Tradovate, Rithmic, and WealthCharts connection options at checkout. Tradovate credentials can support TradingView, Rithmic credentials can support platforms such as Tradesea, Quantower, and R|Trader, and NinjaTrader connects through Tradovate only.
+Account rules change over time, so use the current rule pages before buying or resetting an account. You can also compare current Tradeify account options from the pricing section .
+Funded account FAQ
+What are the requirements to get a funded trading account?
+You usually need to choose an account, pay the evaluation or account fee, trade only allowed products, hit the profit target, avoid drawdown and daily-loss breaches, and meet any consistency or minimum-day rules. The exact requirements depend on the firm and account type.
+How much does a funded account cost?
+There is no universal funded account price, including for common $50K or $100K account sizes. Compare the current firm pricing page for that exact account size, then add any subscription, reset, activation, platform, data, and payout-related costs that apply to your likely path. A lower upfront fee is not automatically cheaper if the account has tighter drawdown, expensive resets, or payout conditions that do not fit your strategy.
+Can you get a funded account without an evaluation?
+Some firms offer instant funded or straight-to-funded paths. These paths can remove the evaluation step, but they can still impose drawdown, consistency, product, platform, and payout rules. Verify which requirements apply to the specific account before assuming the faster path is easier.
+What is the biggest risk after getting funded?
+One major controllable risk is behavior under pressure. Oversizing, revenge trading, ignoring daily loss limits, holding positions too close to required close times, or chasing a payout can end an account even when the strategy has an edge.
+How fast can you get paid from a funded account?
+Payout timing depends on eligibility first. Some accounts allow faster requests than others, but you still need to satisfy the account's profit, trading-day, payout-cap, and consistency rules before a request can be approved.
+How to choose the right funded account
+Pick the funded account only after you can explain the rules in your own words. If you cannot name the profit target, drawdown type, daily loss rule, consistency rule, platform limits, close time, and payout requirements, you are not ready to trade the account cleanly.
+The goal is not to get funded once. The goal is to trade in a way that keeps the account alive long enough for the opportunity to matter. When you are ready to compare current Tradeify options, use the account pricing section , then check the matching Help Center rule page before buying.
+Get up to $750k instant sim funding
+Start earning payouts instantly
+Super fast automated payouts
+Free journal to improve
+Get funded now
+Join 80,000+ happy traders
+Summarize and ask questions with AI
+ChatGPT
+Claude
+Perplexity
+Grok
+Google
+Recommended for you
+24 minutes
+Getting Started
+What Is a Prop Firm and How Does Prop Trading Work?
+How prop firms and evaluation accounts work, the rules that decide pass or fail, the real costs, and how to choose a firm.
+Read article
+26 minutes
+Getting Started
+What Is Day Trading? A Beginner's Guide to Getting Started
+A beginner's guide to day trading: how it works, the rules that apply, what it really costs, and how to build a first plan.
+Read article
+8 minutes
+Getting Started
+Free Resources to Learn Prop Trading
+A free-learning path through exchange education, contract specs, regulator resources, platform guides, and official prop firm rulebooks.
+Read article
+9 minutes
+Getting Started
+How to Find a Trading Mentor
+How to choose a trading mentor, compare mentorship formats, send a specific first message, and measure whether the guidance is helping.
+Read article
+15 minutes
+Getting Started
+Best Trading YouTube Channels to Follow in 2026
+The best trading YouTube channels of 2026, how we ranked them, the red flags to avoid, and a 30-day plan for turning videos into testable trading skills.
+Read article
+11 minutes
+Getting Started
+Best Trading Discord Servers and How to Vet Them
+A neutral guide to established trading Discord communities, how to assess them, and how to avoid alerts, scams, and rule conflicts.
+Read article
+10x your trading with up to $750k simulated funds
+Free built-in journal
+Get Instant Funding, or take an Evaluation
+Automated payouts
+Get funded now
+Be the first to get limited time deals
+Get one email per week filled with deals, insights and tips.
+Please enter valid email
+Subscribe
+We promise no spam. See our privacy policy
+Thank you! Your submission has been received!
+Oops! Something went wrong while submitting the form.
+Making trading accessible to everyone
+Company
+Home
+Pricing
+PTL Leaderboard
+Become an affiliate
+Careers
+Merchandise
+Resources
+Help Center
+Blog
+Privacy Policy
+Terms of Use
+Funded Trader Agreement
+Contact
+Support
+Discord community
+Partners and media
+Trading education All education →
+Trading for Beginners
+Market Mechanics
+Technical Analysis
+Trading Strategies
+Risk Management
+Trading Psychology
+Futures Trading
+Options Trading
+Stock Market
+Forex Trading
+Commodities
+Fundamental Analysis
+Glossary
+© 2026 - Tradeify Holdings, Corp . All rights reserved. Tradeify is a registered trademark of Tradeify Holdings Corp.
+1700 S. Dixie Highway, Suite 305 Boca Raton, FL 33432
+Important Disclaimers:
+The materials and content provided by Tradeify Holdings, Corp. (“Tradeify”), whether on our website, through distributed documents, TradeifyTV, or other communications, are intended solely for educational and general informational purposes (the “Information”).  This Information should not be viewed as an offer or solicitation to buy or sell futures, futures-related products/derivatives, or any futures products of any kind, or otherwise constitute any type of trading or investment advice, recommendation or strategy, or an endorsement of any financial instruments, companies, or funds. Users are encouraged to do their own research, should not interpret such Information as personalized financial advice, and should consult with a qualified financial adviser before making any financial decisions.  The Information presented herein does not consider your personal financial situation, risk tolerance, or investment goals. The Information provided is not targeted at any specific jurisdiction and should not be used in any manner that would contravene local laws or regulations.
+Hypothetical/Simulated Performance.  Hypothetical or simulated performance results have many inherent limitations, some of which are described below. Unlike an actual performance record, simulated results do not represent actual trading. Also, because the trades have not actually been executed, the results may have under-or-over compensated for the impact, if any, of certain market factors, such as lack of liquidity.  No representation is being made that any account will or is likely to achieve profits or losses similar to those shown. In fact, there are frequently sharp differences between hypothetical performance results and the actual results subsequently achieved by any particular trading program. One of the limitations of hypothetical performance results is that they are generally prepared with the benefit of hindsight. In addition, hypothetical trading does not involve financial risk, and no hypothetical trading record can completely account for the impact of financial risk in actual trading. For example, the ability to withstand losses or to adhere to a particular trading program in spite of trading losses are material points which can also adversely affect actual trading results. There are numerous other factors related to the markets in general or to the implementation of any specific trading program which cannot be fully accounted for in the preparation of hypothetical performance results and all of which can adversely affect actual trading results.
+Trader Performance Statistics (August 2025 – July 2026, calculated as of 9 August 2026): Across Tradeify's Growth, Advanced and Select evaluation products, (a) 17.2% of evaluation accounts initiated were successfully completed and afforded the opportunity to advance to the Funded Level; (b) 40.3% of individual participants who initiated one or more evaluations advanced to the Funded Level in at least one of their evaluations - participants may purchase multiple evaluations and resets, and initiated a median of 3 each over the period; (c) 28.5% of individual participants at the Funded Level received a payout; and (d) 3.0% of individual participants trading in a Funded Account were called up to a Live Funded Account. The Funded Level includes both Funded Accounts and Live Funded Accounts.
+Trade examples presented for compensation purposes are hypothetical and should not be expected to reflect live trading results. Simulated results do not necessarily imply future profits. The risk of loss in trading forex or commodity contracts can be substantial. You should therefore, carefully consider whether such trading is suitable for you in light of your financial condition.
+Engaging in futures, forex, and other financial trading involves significant risk and is not appropriate for all investors. It is possible to lose the entire amount of your investment, or even more. Only use risk capital—money you can afford to lose without impacting your financial security or lifestyle. Trading should only be undertaken by individuals who have the necessary risk capital and fully understand the risks involved. Past trading results do not guarantee future performance. Tradeify Holdings, Corp. does not warrant the accuracy or completeness of the Information provided and is not responsible for any losses or damages resulting from reliance on this Information.  Certain investment products present heightened risks:
+Security Futures.   Securities futures products are not suitable for all investors.  Supporting documentation is available upon request for all comparisons, recommendations, statistics or other technical data presented.  Past performance regarding securities futures (as applicable) is subject the following Risk Disclosure Statement for Security Futures Products .
+Forex Futures.  The prices of forex futures contracts may be highly volatile and while generally liquid, there may be times (e.g., during market stress or outside of regular trading hours) when it is difficult to execute trades at desired prices.  Forex futures are traded on margin and present risks associated with the use of leverage – this enables an investor to control a large position with a relatively small amount of capital and may amplify gains, but may also magnify losses.
+Virtual Currency Derivatives/Products. Virtual currency derivatives may experience significant price volatility and the initial margin for virtual currency derivatives may be set as a percentage of the value of a particular contract, which means that margin requirements for long positions can increase if the price of the contract rises.  Certain restrictions may be imposed on customer trading activity in virtual currency derivatives, such as requiring additional margin, imposing position limits, prohibiting naked shorting or prohibiting give-in transactions.  The rules of certain designated contract markets impose trading halts that may restrict a market participant's ability to exit a position during a period of high volatility.  Given the material characteristics of these products, including the lack of a centralized pricing source and the opaque nature of the virtual currency market, there currently is no widely accepted practice to verify the ownership and control of a virtual currency or the valuation attributed to a virtual currency.
+Testimonials. Testimonials provided herein, as well as those presented via TrustPilot may not be representative of the experience of other Tradeify account holders and such testimonials are not indicative of, or a guarantee of, future performance or success.  No compensation has been provided in connection with such testimonials.
+Tradeify Brokerage Disclaimer: Tradeify Brokerage LLC d/b/a Slay Markets is an introducing broker registered with the Commodity Futures Trading Commission ("CFTC") and guaranteed by NinjaTrader Clearing, LLC d/b/a NinjaTrader, Kraken Derivatives US, and Tradovate ("NTC"), and is a National Futures Association Member (NFA ID: 0575972). Tradeify Brokerage LLC's principal place of business is 1700 S. Dixie Highway, Suite 305, Boca Raton, FL 33432.
+Novaflame LTD (Registration No. HE 480295 ), with its registered address at Archiepiskopou Makariou III, 228, Agios Pavlos Court, Block A, 1st Floor, Flat/Office 113, 3030 Limassol, Cyprus, acts as a payment agent processing funds on behalf of Tradeify Holdings, Corp.
+We use cookies
+We use cookies to ensure you get the best
+experience on our website. For more information on
+how we use cookies, please see our Privacy Policy .
+Decline Accept
+This Month's Prize
+Win a Travis Head Signed Bat
+Yes, enter prize drawing
+No, I’m not interested
+First Name Please enter first name
+Email Address Please enter valid email
+Enter prize drawing
+By subscribing, you agree to receive emails from us. We promise no spam. See our privacy policy
+You’re in! Winners announced every 30th of the month.
+Oops! Something went wrong while submitting the form.
+Do you want a chance to
+Win a $150k Growth Account?
+Yes, enter prize drawing
+No, I’m not interested
+First Name Please enter first name
+Email Address Please enter valid email
+Enter prize drawing
+By subscribing, you agree to receive emails from us. We promise no spam. See our privacy policy
+You’re in! Winners announced every 30th of the month.
+Oops! Something went wrong while submitting the form.
+Do you want a chance to
+Win a $150k Growth Account?
+Yes, enter prize drawing
+No, I’m not interested
+First Name Please enter first name
+Email Address Please enter valid email
+Enter prize drawing
+By subscribing, you agree to receive emails from us. We promise no spam. See our privacy policy
+You’re in! Winners announced every 30th of the month.
+Oops! Something went wrong while submitting the form.
+We use cookies
+We use cookies to ensure you get the best
+experience on our website. For more information on
+how we use cookies, please see our Privacy Policy .
+Decline Accept

@@ -1,0 +1,169 @@
+Aave Documentation
+Skip to Content
+docs Search Use Aave
+Introduction
+Overview
+Aave 101
+Aave V4
+Overview
+Getting Started React
+TypeScript
+GraphQL
+Solidity
+Liquidity Model Overview
+Hubs
+Assets
+Spokes
+Reserves
+Chains
+Incentives
+User Positions Overview
+Open Positions
+Supply Assets
+Borrow Assets
+Repay Loans
+Withdraw Assets
+Position Conditions
+Swap Supply Asset
+Swap Borrow Asset
+Repay with Supply
+Positions Managers
+Liquidations
+Tools User Balances
+User Activities
+Exchange Rates
+Swap Features
+Reference React Hooks
+BigDecimal
+Aave V3
+Overview
+Getting Started React
+TypeScript
+GraphQL
+Concepts Liquidity Pool
+Reserve
+Incentives
+Aave Markets Markets Data
+User Positions
+Supply Assets
+Borrow Assets
+Repay Loans
+Withdraw Assets
+Health Factor Preview
+Incentive Programs
+Advanced Features
+Guides Flash Loans
+Credit Delegation
+Testing & Debugging
+Smart Contracts Overview
+Pool
+L2 Pool
+Pool Configurator
+Access Control Manager
+Pool Addresses Provider
+Tokenization
+Oracles
+Interest Rate Strategy
+Incentives
+Wrapped Token Gateway
+Swap Features
+Vaults
+View Contracts
+Aave V3 on Aptos Overview
+Smart Contracts Overview
+Pool
+Access Control Manager
+Pool Configurator
+Oracles
+Tokenization
+Aave Logic
+Incentives
+Periphery
+Umbrella
+Aave Horizon
+Vaults
+Stable Vaults Overview
+Features
+Architecture
+Yield Strategies
+Simple Earn Vaults Overview
+Deploy Earn Vault
+Earn Vault Management
+Earn Vault Data
+Earn Vault Operations
+Aave MCP
+Overview
+Getting Started
+Tools
+Skills
+Safety
+Ecosystem
+AAVE
+GHO
+Savings GHO (sGHO)
+Governance
+Oracle
+Reference
+Addresses
+Parameters
+Access Controls
+Resources
+Glossary
+Risks
+Changelog
+Web3
+Code Licensing
+Legacy Versions V1
+V2
+LLMs.txt
+FAQ
+Security
+Get Familiar with Aave
+Integrate Aave V4
+Build More
+Quick Links
+Copy for LLMs
+View as Markdown
+Scroll to Top
+Introducing Aave MCP
+One MCP endpoint for Aave V3 and V4.
+Get Started
+Aave Documentation
+Aave is a decentralized, non-custodial liquidity protocol where users supply assets to earn yield and borrow against collateral. Interest rates, collateral checks, and liquidations run onchain, so integrators build on shared liquidity instead of operating their own.
+Integrate with AaveKit, the React, TypeScript, and GraphQL SDKs, or call the Aave smart contracts directly.
+Every page is also available as Markdown for agents, listed in LLMs.txt .
+Get Familiar with Aave
+Aave 101
+Learn the protocol basics
+Aave V4
+The Hub and Spoke model
+Aave V3
+Pools, reserves and markets
+Aave Horizon
+Borrow stablecoins with RWAs
+GHO
+The Aave-native stablecoin
+Umbrella
+Native coverage for bad debt
+Integrate Aave V4
+React
+Build with AaveKit React
+TypeScript
+Build with AaveKit TypeScript
+GraphQL
+Query the AaveKit API
+Solidity
+Call the smart contracts
+Building on Aave V3? Start with AaveKit React , TypeScript or GraphQL , or browse Aave V3 Market Data .
+Build More
+Vaults
+Stable Vaults and Simple Earn Vaults
+Aave MCP
+Give AI agents access to Aave
+Quick Links
+Addresses
+Deployed contract addresses
+Parameters
+Risk parameters by market
+Building on Aave
+Next Aave 101

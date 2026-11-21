@@ -1,0 +1,52 @@
+Introduction to Velocity | Velocity Protocol
+Search ⌘ K
+Discord App Introduction to Velocity What a perpetual is A first trade, end to end Using Velocity
+Getting Started
+Trading
+Borrow & Lend
+Referrals How Velocity Works
+Mechanics
+Insurance Fund
+Market makers Risk & Safety
+Risks Liquidation and bankruptcy Guard rails Contract tiers Admin keys and upgrade authority Delisting Audits Bug bounty Reference
+Glossary Terms
+Terms of Use Disclaimer Privacy Policy
+Velocity Protocol Developers
+Introduction to Velocity
+Copy as Markdown View as Markdown
+Introduction to Velocity
+Where perpetual futures and lending meet on one balance, what a fill costs, and where to start reading.
+Velocity is a perpetual futures exchange and a money market, deployed as a single Solana program. Each subaccount holds one pool of collateral, that pool backs every perpetual position opened against it, and the same tokens are lent to borrowers while they sit there. Trading is perpetuals only.
+Spot trading has been removed from the Velocity program. Spot markets exist only for collateral and borrow-lend. Spot assets can still be exchanged through swaps .
+One deposit doing two jobs
+On most venues margin is money parked: it backs positions and earns nothing, and moving it somewhere that pays means it stops being margin. Velocity never separates the two balances. A deposit lands in that asset's spot market vault, counts toward the account's margin at the asset's collateral weight, and is lendable inventory from the same moment. Three things follow:
+Margin earns the lending rate while it backs a trade. Interest accrues to the spot balance continuously, priced off that market's utilization.
+There is no borrow instruction. A borrow is what a withdrawal becomes once it passes the account's balance in that market.
+A withdrawal is checked twice. The account's own margin has to survive it, and so does the market's withdrawal limit, because the tokens requested have partly been lent out. The second check is usually why a withdrawal is refused, and it usually clears on its own.
+Not every asset counts for its full value as collateral: the quote asset does, anything more volatile is weighted down. Collateral and margin has the weights; Borrow and lend has the utilization curve.
+What a trade costs
+Perpetual fills charge the taker a fee on the filled notional, in the quote asset: 4 bps of notional at the base tier, 3 bps above $5,000,000 and 2 bps above $80,000,000 of trailing 30-day volume. The maker on that fill is paid 0.25 bps of notional out of it, flat at every tier. Individual markets can add to the taker fee, capped at 10 bps on top, so a tier rate is a floor rather than a promise.
+Spot markets and the direct swap path charge no maker or taker fee. Funding is not a fee: it is an hourly payment between longs and shorts, and a position can receive it as readily as pay it. See Trading fees and Funding rates .
+How an order is filled
+There is no central matching engine. Orders live onchain as accounts, an offchain network of keepers and market makers watches them, and anyone can submit the transaction that fills one. Three sources of liquidity can end up on the other side of a taker order: resting orders on the decentralized orderbook (DLOB), market makers quoting just in time, and the protocol's own AMM. They are not three stages in a fixed order, and one taker order can fill from more than one of them in a single transaction.
+Every perpetual market order also carries a short Dutch auction, so its price starts somewhere favorable to the taker and walks toward the limit price while makers compete to take it. The exchange enforces a minimum auction duration, and each market sets its own default. See How fills work and Auctions .
+Where to go next
+The app is at app.velocity.exchange . Starting from nothing, read What a perpetual is , then A first trade , which follows one $10,000 account from deposit to withdrawal. The rest is reference:
+Opening an account : Wallet setup , Subaccounts , Delegated accounts
+Trading : Collateral and margin , Order types , Auctions , Trading fees , Funding rates , Liquidations
+Lending and borrowing : Borrow and lend , Interest rates , Withdrawal limits
+The machinery : How fills work , Velocity AMM , Orderbook and keepers , Oracles , Where the money sits
+Sizing risk : Risks , Contract tiers , Guard rails , Insurance fund , Admin keys
+Building on it : TypeScript SDK , Keeper bots , Market makers
+Source and audits
+The Velocity program is not open source yet. The source will be published once the post-fork audit report is final. The TypeScript SDK is on npm today, and this documentation site is open to contributions. See Velocity for Developers .
+OtterSec audited Velocity's own program after the fork, and the final report is published: 154 findings, no Critical, and every High fixed in the deployed code. The Drift Protocol v2 codebase Velocity forked carries earlier audits by Trail of Bits and Neodyme. See Audits for the record, and the migration guide for porting an existing integration.
+Edit on GitHub
+What a perpetual is
+A futures contract settles on a fixed date, and that date is the problem. What removing it breaks, how funding fixes it, and what the position actually is.
+On this page
+One deposit doing two jobs
+What a trade costs
+How an order is filled
+Where to go next
+Source and audits

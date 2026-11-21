@@ -1,0 +1,30 @@
+Daily Loss Guard | Alpha Futures Limited Help Center Skip to main content
+Search for articles...
+All Collections
+Trading Rules and Parameters
+Daily Loss Guard
+Daily Loss Guard
+Daily Loss Guard, also known as Daily Loss Limit, Daily Drawdown
+B
+Written by Benjamin Chaffee
+July 15, 2026
+The Daily Loss Limit also referred to as the Daily Loss Guard is a soft breach rule on Alpha Futures Accounts. If you hit the Daily Loss Guard, you do not lose your Account, but your account will be locked until the next trading day (6PM ET).
+​
+​ There is no Daily Loss Guard on Advanced Evaluations, but there is on Zero Evaluations.
+​
+The Daily Loss Guard is 2% of starting account balance on Zero Accounts.
+​
+Daily Loss Guard by Zero Account Size:
+25k Zero Account = $500
+50K Zero Account = -$1,000
+100K Zero Account = -$2,000
+​
+Advanced Accounts, there is no preset Daily Loss Guard, but traders may set one themselves at any time in their trading platform.
+​
+If your open or closed (unrealized or realized) P&L at any point reaches -2% during the trading day, all open positions will be flattened, any pending orders will be canceled, and your account will be prevented from placing any new trades until the start of the next trading day.
+This is in place because we don’t want to see our Qualified Traders losing their accounts in one day. We want to help them build consistency and discipline, but this feature should not replace stop losses.
+The Daily Loss Guard is based on each trading day’s P&L, which includes simulated commissions, fees, and both unrealized and realized trade P&L.
+You can monitor your Daily Loss Guard in your dashboard. Traders can also make their Daily Loss Guard a smaller value on their selected trading platform.
+​
+​ PLEASE NOTE: DLL should NOT replace a stop loss nor will it return exact fills of a 2% loss. It is a threshold that triggers the system to send out liquidation market orders, depending on market volatility fills will vary.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃

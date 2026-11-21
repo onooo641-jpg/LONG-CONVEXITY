@@ -1,0 +1,178 @@
+Instant Account Terms – FundedNext Trader Rules
+CFDs
+Futures
+Labs
+Rewards
+More
+EN Login
+CFDs
+Futures
+Labs
+Rewards
+Instant Account Terms
+Last updated: 5 May 2026
+On this page
+Preamble
+Section 1 – Account Parameters
+Section 2 – Prohibited Trading Practices
+Section 3 – Know Your Customer (KYC)
+Section 4 – Refund Policy
+Section 5 – Dispute Resolution Policy
+Section 6 – Entire Agreement
+Section 7 – Governing Law
+Section 8 – Local Law
+Section 9 – Changes to FundedNext CFDs Instant Account Terms
+Section 10 – Contact Information
+Preamble
+These FundedNext CFD Instant Account Terms (referred to as the "Terms") govern your participation in the FundedNext CFD Instant Account Program offered by FundedNext, a brand of GrowthNext F.Z.E. (Business Registration No. 28831), with its registered office at Office No. 7, Al Robotics HUB, C1 Building, AFZ, Ajman, UAE. Incenteco Trading LTD. processes payments in connection with the Services.
+By entering the FundedNext CFD Instant Account Program, you (referred to as "you", "your", "Provider") agree to be bound by these Terms at the time of purchase. Please read the following Terms carefully. If you do not agree to these Terms, you are not eligible to participate in the FundedNext CFD Instant Account Program.
+Section 1 – Account Parameters
+1.1 Program Overview
+The FundedNext CFD Instant Account Program provides the Provider with immediate access to a simulated funded trading account without the requirement to pass any Challenge or Evaluation Phase. Detailed information regarding the model is provided during registration.
+1.2 Trading Guidelines
+The Provider must adhere to the guidelines listed below. Failure to do so may result in account termination.
+1.2.1 Maximum Loss Limit
+The Provider's account equity must not, at any point, fall below 94% of the initial account balance. This represents a 6% Maximum Trailing Drawdown. Breaching this limit at any point will result in immediate account termination.
+1.2.2 Hedging
+While hedging positions within a single Instant Account is permissible, cross-account hedging with other FundedNext accounts or external firms is strictly prohibited.
+1.2.3 Technical Flaw Exploitation
+Using system flaws for advantage is prohibited and may lead to immediate suspension.
+1.2.4 Applicable Rules
+The terms outlined in the FAQ/Rules govern FundedNext Instant Account.
+1.2.5 Modification by Add-ons and Special Offers
+Add-ons and Special Offers selected during the FundedNext Instant Account may modify the trading guidelines in this section. These modifications take precedence over the standard guidelines for their applicable duration.
+Section 2 – Prohibited Trading Practices
+2.1 The Provider is prohibited from conducting trades that contravene the stipulations outlined in this section or the FAQ. Any trades that are in violation of these stipulations are strictly forbidden. The Provider must adhere to the rules and guidelines set forth in this section, as well as those established by the FAQ when utilizing the Services.
+2.1.1 The Provider must not intentionally or unintentionally use trading strategies that exploit errors in the Services, such as inaccuracies in displayed prices or delays in their updates, including but not limited to practices commonly known as Latency Trading.
+2.1.2 Executing trades using an external or slow data feed or performing gap trading is prohibited for the Provider.
+2.1.3 Engaging, either alone or in cooperation with others, in any trades or combinations of trades across connected accounts or accounts held within the platform, if the purpose is to manipulate trading, commonly referred to as "Group Trading," is forbidden. Examples of such manipulation include entering into opposite positions simultaneously.
+2.1.4 The use of any software, artificial intelligence, ultra-high speed, high-frequency trading, or mass data entry that could manipulate or abuse the Provider's systems or services, or provide an unfair advantage, is prohibited for the Provider.
+2.1.5 Performing arbitrage (of any kind), including but not limited to triangular arbitrage, statistical arbitrage, latency arbitrage, market-making arbitrage, spatial arbitrage, pairs trading arbitrage, risk arbitrage, convertible arbitrage, volatility arbitrage, dividend arbitrage, tax arbitrage, yield curve arbitrage, or any other form of arbitrage that may exploit pricing differences between different markets or exchanges, is prohibited for the Provider.
+2.1.6 Employing strategies that guarantee the execution of limit orders during periods of low liquidity is prohibited for the Provider, as such practices do not reflect actual market conditions and therefore contravene the realistic trading simulation standards maintained by the Provider.
+2.1.7 Performing trades that are inconsistent with typical forex or any other financial market operations is prohibited for the Provider. They should also avoid any activities that may cause financial or other harm to The Provider, such as over-leveraging, over-exposure, making one-sided bets, grid trading, tick scalping, or account rolling. Engaging in any of these activities may raise valid concerns about intentionally harming The Customer.
+2.1.8 Engaging in copy trading, where trades mimic or replicate the trading activities of other traders or entities without prior authorization, is prohibited for the Provider.
+2.1.9 The Provider, or any third party, is prohibited from participating in or collaborating to have a third party execute trades for the Provider, whether such third party is a private individual or a professional, or to permit access to or trading on their FundedNext Account by any third party.
+2.1.10 Accessing any third-party FundedNext Account, trading on behalf of any third party, or conducting any account management or similar services where the Provider commits to trade, run, or manage a FundedNext Account on behalf of another user, whether professionally or otherwise, is prohibited for the Provider.
+2.1.11 Opening positions with sizes that are noticeably larger than those of the Provider's other trades, whether on this account or another one of theirs, is prohibited.
+2.1.12 Opening positions with numbers that are noticeably smaller or larger than those of the Provider's other trades, whether on this account or another one of theirs, is prohibited.
+2.1.13 Using a high level of margin or extremely risky trading strategy is prohibited for the Provider.
+2.2 FundedNext retains the exclusive right to impose trading restrictions, modify account parameters, or terminate trading accounts at its sole discretion to ensure the stability and integrity of its trading environment and platform. This right may be exercised under circumstances including, but not limited to:
+2.2.1 If FundedNext determines that a client's trading strategy, behavior, or specific trade(s) pose a risk that is deemed excessive, or unmanageable under current market conditions, and that such risk could adversely affect FundedNext or its platform.
+2.2.2 If trading practices are found to be incompatible with standard market operations or FundedNext's risk management policies, including but not limited to the use of high leverage, over-exposure, unusually large or small lot sizes, or strategies that could potentially disrupt market equilibrium.
+2.2.3 If there are inconsistencies in trading patterns, such as a significant deviation from the client's historical trading behavior, or if the client's trading behavior significantly deviates from generally accepted market practices.
+2.2.4 If it is determined that a client's trading activities could lead to financial harm or operational disruption to FundedNext or any third parties, FundedNext reserves the right to limit or restrict the client's trading activities.
+2.2.5 FundedNext may impose restrictions to ensure compliance with applicable regulatory requirements, operational protocols, or internal policies designed to maintain a secure trading environment.
+2.3 To maintain transparency and ensure effective management of trading practices, FundedNext will take the following actions when implementing trading restrictions or modifications:
+2.3.1 FundedNext will make reasonable efforts to notify the client of any trading restrictions, modifications, or account terminations, providing the reasons for such actions. However, in cases where immediate action is required to protect the integrity of the platform, FundedNext may implement changes without prior notice.
+2.3.2 Clients will have the opportunity to request a review of any imposed restrictions or account actions. FundedNext will consider appeals on a case-by-case basis but reserves the right to uphold its original decision to ensure the protection of its trading environment.
+2.3.3 FundedNext shall not be liable for any direct, indirect, incidental, or consequential losses or damages resulting from the imposition of trading restrictions or account termination. Clients agree to hold FundedNext harmless against any claims arising from such actions.
+2.4 If any or all of the Prohibited Trading Practices are carried out on one or more FundedNext Instant Funding Account or on accounts of different clients, or by combining trading through any FundedNext Accounts, FundedNext is entitled to cancel all Services and terminate all relevant contracts in respect of all FundedNext Accounts of the Provider. FundedNext may take any actions set forth in Section 2.2 and this Section 2.3 at its sole discretion. In such a case, the Provider shall not be entitled to a refund of the fees paid.
+2.5 If the Provider repeatedly engages in any of the practices described in Article 2.1, and FundedNext has previously notified the Provider thereof, FundedNext may deny the Provider access to all or part of the Services, including access to the Dashboard and the Trading Platform, without any compensation.
+2.6 FundedNext shall not bear any responsibility for trading or other investment activities that the Provider performs outside the relationship with FundedNext, e.g., by using data or other information from the Portal, the trading platform, or in any other way in connection with the services in real trading on the financial markets, even if the Provider uses the same trading platform for such trading that it uses for demo trading. This shall also apply in particular to any services of third parties that the Provider uses via the platform.
+Section 3 – Know Your Customer (KYC)
+GrowthNext F.Z.E. is to implement robust and comprehensive procedures in accordance with legal and regulatory requirements pertaining to Know Your Customer (KYC).
+3.1 Know Your Customer (KYC):
+The objectives of the Know Your Customer (KYC) procedures are to:
+3.1.1 Establish a streamlined and efficient mechanism for identifying and vetting prospective Counterparties.
+3.1.2 Mitigate the risks of money laundering by acquiring and analyzing relevant information.
+3.1.3 Facilitate the detection of suspicious transactions by identifying inconsistencies with the information received.
+KYC verification must be conducted solely by the individual account holder. Multiple individuals attempting KYC verification for a single account are strictly prohibited. If such violations are detected, the Provider holds the right to terminate the account with immediate effect.
+3.2 Customer Due Diligence (CDD):
+CDD is a mandatory process for initiating and maintaining engagements with Counterparties. The CDD protocol mandates:
+3.2.1 Collecting verifiable identification data from Counterparties to unequivocally establish their identity.
+3.2.2 Understanding the intended nature and purpose of the Counterparty's trading activities, including the strategies to be employed and the financial market knowledge to be assessed.
+3.2.3 Performing ongoing monitoring of trading activities to ensure they are consistent with the Counterparty's stated trading strategy, risk profile, and financial resources.
+3.3 Enhanced Due Diligence (EDD):
+For business relationships or transactions that present a heightened risk, as determined by risk assessment, EDD will be implemented. These enhanced measures exceed standard CDD requirements and include:
+3.3.1 Obtaining additional identity verification documents, particularly in cases where standard documentation has proven insufficient or questionable.
+3.3.2 Conducting a detailed verification session, which may include a video call, to personally engage with the Counterparty and better assess their legitimacy.
+3.3.3 Gaining deeper insight into the Counterparty's trading methodology to ensure it aligns with our risk tolerance and the ethical trading standards set forth by GrowthNext F.Z.E.
+3.3.4 Implementing intensified and ongoing monitoring of the Counterparty's trading activities, to dynamically evaluate adherence to agreed-upon practices and risk parameters.
+3.4 Know Your Customer (KYC) Procedures by GrowthNext F.Z.E.:
+FundedNext shall undertake KYC measures for all proposed transactions and business relationships. The Provider must successfully complete KYC verification before they can initiate their first performance reward request.
+Upon purchasing an Instant Account, the Provider will be prompted via on-site notifications to complete KYC. If KYC is not completed, the option to request a performance reward will be disabled. When the Provider becomes eligible for a performance reward, they will receive a pop-up notification reminding them to complete KYC to proceed.
+Under general KYC measures, FundedNext shall take the following steps to ensure a transparent KYC process:
+3.4.1 The Provider shall be asked to submit specific documents. The documents submitted for verification must be issued by a government authority or an official body. The documents may include a valid photo ID such as: National ID or Passport.
+3.4.2 KYC verification shall not be completed if expired documents are provided. Only the most recent and valid documents will be accepted to proceed with the verification process.
+3.4.3 FundedNext requires strict compliance with these measures. The Provider reserves the right to refuse or discontinue any business engagement with a Counterparty if the CDD, EDD, or KYC criteria, as outlined herein, are not satisfactorily met.
+3.4.4 It is to be noted that failure to pass the KYC verification process shall result in the rejection of the performance reward.
+3.4.5 The Provider conducts the KYC process through trusted third-party service providers such as Veriff, Sumsub, or other equivalent providers. It is hereby clarified that the KYC verification is not performed directly by FundedNext.
+3.4.6 FundedNext does not store or hold any KYC data on its systems. All KYC information submitted by the Provider is processed and secured by the respective third-party service providers. The handling of data is governed by FundedNext's Privacy Policy.
+Section 4 – Refund Policy
+4.1 Termination Request: If the Provider wishes to terminate the Provider from the Client Section, the Provider must send a request to [email protected] . Such a request constitutes a desire to end the contractual relationship, resulting in loss of access to all Services, including the Client Section and Trading Platform. FundedNext will confirm receipt of the request via email, officially ending the contract. Under these circumstances, FundedNext forfeits any right to refunds of fees or other expenditures previously paid.
+4.2 Severe Violations: In cases where the Provider engages in prohibited practices of a serious nature, FundedNext reserves the right to restrict access to all Services and terminate the Provider's account immediately, without compensation. This may occur without prior warning, and no refunds will be issued for any fees paid in such instances. Additionally, any payments made for add-ons will not be refunded, regardless of eligibility. FundedNext retains full discretion in determining the severity of the violation and appropriate corrective action.
+4.3 Activation of Services: Upon paying the fee for the FundedNext Instant Account program, the Provider will receive login data. By executing the first trade, the Provider acknowledges and agrees that FundedNext completes the Services before the withdrawal period ends, waiving the right to contract withdrawal.
+4.4 Non-Activation: If the Provider does not activate the FundedNext Instant Account within 30 calendar days, access will be suspended. Renewal of access can be requested via email to [email protected] , subject to any applicable terms.
+4.5 Disputes and Chargebacks: In the event of an unjustifiable fee dispute or chargeback by the Provider, FundedNext reserves the right to cease services and deny future services at its discretion.
+4.6 Refunds: A refund request must be made within 7 days of registration if no trading activity has occurred. Once trading commences, fees become nonrefundable, with no provision for full or partial refunds.
+Section 5 – Dispute Resolution Policy
+5.1 In the event that the Provider raises a dispute regarding a transaction made to FundedNext, the trading account associated with the disputed transaction will be paused as per our FundedNext CFDs Instant Terms.
+5.2 FundedNext reserves the right to permanently suspend any Provider found to have raised a false dispute. A false dispute is defined as a situation where the services provided by FundedNext were delivered without issue, yet the Provider initiated a dispute against the transaction.
+5.3 If the Provider wishes to reactivate a trading account for which a dispute was raised, they must first withdraw the dispute and provide FundedNext with official proof of the dispute withdrawal. Upon receipt of this proof, our Risk Management Team will verify the provided documents. Once the verification process is successfully completed, the trading account will be reactivated.
+5.4 Please note that the verification of dispute withdrawals and the subsequent account reactivation process may take 45 to 60 business days. The Provider is strongly encouraged to contact our support team before initiating any disputes to address their concerns promptly.
+5.5 If the Provider experiences any issues related to their trading account or transactions, they are advised to reach out to the support team for assistance.
+For any further queries, please reach out to our Support Team via our designated Intercom channel or [email protected] .
+Section 6 – Entire Agreement
+FundedNext's decision not to exercise or enforce any right or provision of these Terms shall not be deemed a waiver of such right or provision. Any waiver of rights under these Terms will be effective only if it is in writing and signed by FundedNext.
+These Terms, along with any policies or operating rules posted by FundedNext on this site or in relation to the Service, constitute the full and exclusive understanding and agreement between FundedNext and the Provider. This agreement governs the Provider's use of the Service, overriding all prior or contemporaneous agreements, communications, and proposals, whether oral or written, between the Provider and FundedNext (including, but not limited to, any prior versions of the Terms).
+Should any ambiguity or question regarding intent or interpretation arise, it shall be resolved in a neutral manner and not automatically against the drafting party. This approach does not override any statutory rights the Provider may hold under applicable consumer protection laws that are not subject to contractual waiver.
+Section 7 – Governing Law
+These Terms, as well as any additional agreements under which FundedNext gives Customer Services, are regulated and construed in accordance with FundedNext's legal jurisdiction i.e., United Arab Emirates.
+Section 8 – Local Law
+The Provider is advised to be fully aware of and comply with all local laws and regulations pertaining to their participation in the Services.
+The Provider acknowledges that they are engaging in the Service at their own risk and assumes all responsibility for their participation. By using the Services, the Provider affirms they are over the age of 18 years and acknowledges that FundedNext is not responsible for any actions taken by the Provider that may violate local laws. Any such violations are the sole responsibility of the Provider.
+Section 9 – Changes to FundedNext CFDs Instant Account Terms
+FundedNext reserves the right to modify, update, or revise these Terms at any time at its sole discretion. Any such changes will be communicated to Providers through appropriate means, including but not limited to notifications on the website or via email. The Provider is responsible for reviewing the Terms regularly to stay informed of any updates.
+By continuing to access or use the services after such changes have been notified, the Provider agrees to be bound by the revised Terms. The Provider must acknowledge and accept that these Terms are subject to change. It is the Provider's responsibility to review and understand the current Terms before engaging in any of the Services provided.
+Section 10 – Contact Information
+Office Address: Office No. 7, AI Robotics HUB, C1 Building, AFZ, Ajman, UAE
+Product and Offerings
+FundedNext CFDs
+FundedNext Futures
+FNmarkets
+General Rules
+Help Centre (FAQ)
+Partners
+Resources
+How Prop Trading Works
+Calculator
+Blog
+CFDs Glossary
+Trading Platforms
+Economic Calendar
+Symbols
+Market Overview
+Company
+Company
+News & Media
+Achievements & Awards
+Events
+Contact
+Public Announcements
+Privacy & Policy
+Terms of Service
+CFDs Challenge Terms
+Futures Challenge Terms
+Instant Account Terms
+Privacy Policy
+Cookie Policy
+AML Policy
+Risk Disclosure
+Partners T&C
+The services offered under the FundedNext brand are provided by GrowthNext – F.Z.E. (Reg. No. 28831) , with its registered address at Office No. 7, AI Robotics Hub, C1 Building, Ajman Free Zone (AFZ), Ajman, UAE, which is responsible for user onboarding, the administration of the services and the operation of the website fundednext.com. FundedNext™ is a trademark and brand name owned by GrowthNext – F.Z.E. Certain operational, technical, administrative and payment-related activities are performed by the following affiliated entities (together with GrowthNext – F.Z.E., the "FundedNext Entities"):
+FundedNext Ltd (Reg. No. HY01023052), Bonovo Road, Fomboni, Island of Mohéli, Union of the Comoros, which operates the simulated trading environment.
+Third-Party Platforms: Trading platforms and related software are provided by independent third-party providers. The FundedNext Entities do not control these platforms and are not responsible for their availability or performance.
+FundedNext Limited , 8/F China Hong Kong Tower, 8-12 Hennessy Road, Wan Chai, Hong Kong , which processes payments.
+Incenteco Trading Ltd , 26 Pittaou Str., 3118 Agia Fyla, Limassol, Cyprus, and Abutor Investments Ltd , 16 Foti Kolakidi, 1st floor, 3031 Agia Zoni, Limassol, Cyprus, which facilitate payment-related operations.
+Simulated Trading Only: The FundedNext Entities provide access to simulated trading programs designed solely to evaluate trading proficiency and risk-management skills. All trading takes place in a simulated environment using virtual funds and does not involve real financial risk, real financial instruments or live market orders.
+No Brokerage or Client Funds: None of the FundedNext Entities acts as a broker, dealer, exchange or investment adviser, or accepts or manages client deposits. Rewards are based solely on performance in the simulated evaluation and do not represent profits from real trading.
+No Investment Advice: All content, tools and services are provided for evaluation purposes only and do not constitute investment advice, a solicitation, or an offer to buy or sell any financial product, cryptocurrency or derivative. Participants should consult independent financial, legal or tax advisers before trading outside this program.
+Hypothetical Performance Disclosure – CFTC Rule 4.41: These results are based on simulated or hypothetical performance results that have certain inherent limitations. Unlike the results shown in an actual performance record, these results do not represent actual trading. Also, because these trades have not actually been executed, these results may have under-or over-compensated for the impact, if any, of certain market factors, such as lack of liquidity. Simulated or hypothetical trading programs in general are also subject to the fact that they are designed with the benefit of hindsight. No representation is being made that any account will or is likely to achieve profits or losses similar to these being shown.
+Jurisdictional Restrictions: The FundedNext Entities do not offer services to residents of the following jurisdictions: North Korea (DPRK), Myanmar, Belarus, Iran, and Russia, including countries on the FATF high-risk and EU/UN sanctions lists, and Vietnam. Users are responsible for ensuring that their use of the services complies with the laws applicable to them. Services are available only to persons aged 18 or over.
+Risk Warning: Trading in forex, CFDs, futures, derivatives and digital assets involve substantial risk of loss. Past performance is not indicative of future results.
+Fees and Refunds: Fees are paid solely for access to the evaluation services. They are not deposits or investments and are not used for trading. Refunds are governed by our Terms & Conditions.
+In case of any conflict, our Terms & Conditions prevail.
+Not a Deposit | Not FDIC Insured | May Lose Value
+FundedNext-Copyright © 2026
+Trust and Security |
+Subscribe to newsletter

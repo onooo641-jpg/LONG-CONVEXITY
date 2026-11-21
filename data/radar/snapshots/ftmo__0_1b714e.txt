@@ -1,0 +1,1961 @@
+Futures Trading Objectives & Rules | FTMO.com
+{
+document.body.classList.toggle('no-scroll', value);
+});
+// Set scroll to true when we are scrolled 5.2% of viewport height on mobile or 6% on desktop.
+// Scroll variable is used to change navbar background from transparent to solid when scrolling.
+const checkScroll = () => {
+const isMobile = window.innerWidth threshold;
+};
+checkScroll();
+window.addEventListener('scroll', checkScroll);
+}
+}"
+@keydown.escape.prevent.stop="
+if (menuOpen || activeItem) {
+activeItem = null;
+menuOpen = false;
+}
+"
+>
+{ document.getElementById('first-mega-item-cfd')?.focus() })"
+@blur="hoveredItem = null"
+:class="{ 'bg-background-hover':
+hoveredItem === 'cfd' ||
+activeItem === 'cfd',
+'text-content-primary':
+hoveredItem === 'cfd' ||
+activeItem === 'cfd' ||
+hoveredItem === null && !menuOpen,
+'text-gray-400':
+(hoveredItem !== null && hoveredItem !== 'cfd' && (activeItem === 'cfd' ? false : true)) ||
+(menuOpen && hoveredItem === null && (activeItem === 'cfd' ? false : true))
+}"
+class="flex items-center gap-1.5 py-3 px-2 xl:px-3 transition-colors duration-200 rounded-lg focus:outline-none">
+CFD
+{ document.getElementById('first-mega-item-futures')?.focus() })"
+@blur="hoveredItem = null"
+:class="{ 'bg-background-hover':
+hoveredItem === 'futures' ||
+activeItem === 'futures',
+'text-content-primary':
+hoveredItem === 'futures' ||
+activeItem === 'futures' ||
+hoveredItem === null && !menuOpen,
+'text-gray-400':
+(hoveredItem !== null && hoveredItem !== 'futures' && (activeItem === 'futures' ? false : true)) ||
+(menuOpen && hoveredItem === null && (activeItem === 'futures' ? false : true))
+}"
+class="flex items-center gap-1.5 py-3 px-2 xl:px-3 transition-colors duration-200 rounded-lg focus:outline-none">
+New
+Futures
+{ document.getElementById('first-mega-item-trading')?.focus() })"
+@blur="hoveredItem = null"
+:class="{ 'bg-background-hover':
+hoveredItem === 'trading' ||
+activeItem === 'trading',
+'text-content-primary':
+hoveredItem === 'trading' ||
+activeItem === 'trading' ||
+hoveredItem === null && !menuOpen,
+'text-gray-400':
+(hoveredItem !== null && hoveredItem !== 'trading' && (activeItem === 'trading' ? false : true)) ||
+(menuOpen && hoveredItem === null && (activeItem === 'trading' ? false : true))
+}"
+class="flex items-center gap-1.5 py-3 px-2 xl:px-3 transition-colors duration-200 rounded-lg focus:outline-none">
+Trading
+{ document.getElementById('first-mega-item-about')?.focus() })"
+@blur="hoveredItem = null"
+:class="{ 'bg-background-hover':
+hoveredItem === 'about' ||
+activeItem === 'about',
+'text-content-primary':
+hoveredItem === 'about' ||
+activeItem === 'about' ||
+hoveredItem === null && !menuOpen,
+'text-gray-400':
+(hoveredItem !== null && hoveredItem !== 'about' && (activeItem === 'about' ? false : true)) ||
+(menuOpen && hoveredItem === null && (activeItem === 'about' ? false : true))
+}"
+class="flex items-center gap-1.5 py-3 px-2 xl:px-3 transition-colors duration-200 rounded-lg focus:outline-none">
+About
+= 1024) && activeItem === 'cfd'"
+@mouseleave="activeItem = null; menuOpen = false;"
+@keydown.escape.window="
+if (activeItem || menuOpen) {
+activeItem = null;
+menuOpen = false;
+document.getElementById('mega-menu-button-cfd')?.focus();
+}
+"
+x-cloak x-transition:enter="transition ease-out duration-200"
+x-transition:enter-start="opacity-0 transform translate-y-10"
+x-transition:enter-end="opacity-100 transform translate-y-0"
+x-transition:leave="transition ease-in duration-200"
+x-transition:leave-start="opacity-0 transform translate-y-0"
+x-transition:leave-end="opacity-0 transform translate-y-10"
+>
+Get started
+CFD Overview
+Your path to FTMO
+Pricing
+Choose your FTMO Challenge
+How It Works
+Become an FTMO Trader
+Free Trial
+Unlimited practice for your strategy
+Trading Objectives
+Key rules to pass each phase
+Grow
+Trading Psychology
+For stronger mindset
+Premium programme
+Join the top performers
+Scaling plan
+Grow up to $2M
+Start FTMO Challenge
+Start now
+= 1024) && activeItem === 'futures'"
+@mouseleave="activeItem = null; menuOpen = false;"
+@keydown.escape.window="
+if (activeItem || menuOpen) {
+activeItem = null;
+menuOpen = false;
+document.getElementById('mega-menu-button-futures')?.focus();
+}
+"
+x-cloak x-transition:enter="transition ease-out duration-200"
+x-transition:enter-start="opacity-0 transform translate-y-10"
+x-transition:enter-end="opacity-100 transform translate-y-0"
+x-transition:leave="transition ease-in duration-200"
+x-transition:leave-start="opacity-0 transform translate-y-0"
+x-transition:leave-end="opacity-0 transform translate-y-10"
+>
+Get Started
+Futures Overview
+Enter FTMO Futures
+Pricing
+Fees and account options
+How Futures Work
+Your path to FTMO Futures
+Trading Objectives
+Evaluation rules explained
+Start Your Evaluation
+Start now
+= 1024) && activeItem === 'trading'"
+@mouseleave="activeItem = null; menuOpen = false;"
+@keydown.escape.window="
+if (activeItem || menuOpen) {
+activeItem = null;
+menuOpen = false;
+document.getElementById('mega-menu-button-trading')?.focus();
+}
+"
+x-cloak x-transition:enter="transition ease-out duration-200"
+x-transition:enter-start="opacity-0 transform translate-y-10"
+x-transition:enter-end="opacity-100 transform translate-y-0"
+x-transition:leave="transition ease-in duration-200"
+x-transition:leave-start="opacity-0 transform translate-y-0"
+x-transition:leave-end="opacity-0 transform translate-y-10"
+>
+Trading Esssentials
+Economic Calendar
+Key market events in real time
+Trading Updates
+Latest changes and information
+Instruments
+List of symbols
+Trading Platforms
+Choose what suits you best
+Tools & Services
+Tools Overview
+Elevate your trading performance
+Leaderboard
+Live rankings of top FTMO Traders
+App Suite
+Discover App Suite by FX Blue
+Knowledge
+FAQ
+Answers to common questions
+Blog
+News, tips and trading stories
+Academy
+Free trading education
+= 1024) && activeItem === 'about'"
+@mouseleave="activeItem = null; menuOpen = false;"
+@keydown.escape.window="
+if (activeItem || menuOpen) {
+activeItem = null;
+menuOpen = false;
+document.getElementById('mega-menu-button-about')?.focus();
+}
+"
+x-cloak x-transition:enter="transition ease-out duration-200"
+x-transition:enter-start="opacity-0 transform translate-y-10"
+x-transition:enter-end="opacity-100 transform translate-y-0"
+x-transition:leave="transition ease-in duration-200"
+x-transition:leave-start="opacity-0 transform translate-y-0"
+x-transition:leave-end="opacity-0 transform translate-y-10"
+>
+Company
+About Us
+Learn more about our company
+FTMO Group
+Learn more about FTMO Group
+FTMO Store
+Shop for trading accessories
+Connect
+Contact us
+24/7 Support
+Press Kit
+Brand assets and media resources
+Careers
+Join our team of professionals
+Log In
+Get Started
+Get Started
+CFD
+Get started
+CFD Overview
+Pricing
+How It Works
+Free Trial
+Trading Objectives
+Grow
+Trading Psychology
+Premium programme
+Scaling plan
+Futures
+New
+Get Started
+Futures Overview
+Pricing
+How Futures Work
+Trading Objectives
+Trading
+Trading Esssentials
+Economic Calendar
+Trading Updates
+Instruments
+Trading Platforms
+Tools & Services
+Tools Overview
+Leaderboard
+App Suite
+Knowledge
+FAQ
+Blog
+Academy
+About
+Company
+About Us
+FTMO Group
+FTMO Store
+Connect
+Contact us
+Press Kit
+Careers
+Search
+Get Started
+Log In
+Futures Trading Objectives & Rules
+Every rule you need to meet on each account, from Evaluation to your first daily payout.
+Growth
+Affordable start, softer rules
+Show Trading Objectives
+Pro
+Full withdrawals, higher caps
+Show Trading Objectives
+Start Your Evaluation Today
+Unlimited Evaluation Accounts
+Trade with up to 3 Sim-Funded accounts
+Up to $450,000 in simulated capital
+Keep up to 90% of your simulated profits
+Trade Futures
+Worldwide Reviews
+Prove Your Skills with a Trusted Firm
+We've been empowering traders since 2015. Join them now!
+4.5M+
+Customers worldwide
+$650M+
+Paid in rewards
+4.8/5
+Trustpilot
+Futures Trading Objectives & Rules
+Every rule you need to meet on each account, from Evaluation to your first daily payout.
+Filter
+Account type
+Growth
+Pro
+Account size
+50K
+100K
+150K
+Evaluation
+Sim-Funded
+Subscription & Fees
+Live Funded
+Evaluation
+Sim-Funded
+Subscription & Fees
+Live Funded
+Evaluation
+The Evaluation is the first phase of your FTMO Futures journey. To pass the Evaluation and have the option to advance to a Sim-Funded Account, you must demonstrate consistent, rules-compliant trading and meet all the required Trading Objectives concurrently. Accounts are assessed for eligibility to pass after the end of the trading day.
+For the purposes of Trading Objectives and other rules and conditions, a trading day is defined as the period beginning at 6:00 p.m. ET and ending at 4:10 p.m. ET on the following calendar day.
+Trading Objectives
+Profit Target
+$3,000
+To complete the Profit Target , you must achieve a defined minimum profit above the Initial Simulated Capital on the account.
+You will meet this objective once your account balance exceeds the Initial Simulated Capital by the required Profit Target, with all positions closed.
+The Profit Target is $3,000 .
+Example
+Profit Target = $3,000
+Balance required for passing = $53,000
+Profit Target
+$6,000
+To complete the Profit Target , you must achieve a defined minimum profit above the Initial Simulated Capital on the account.
+You will meet this objective once your account balance exceeds the Initial Simulated Capital by the required Profit Target, with all positions closed.
+The Profit Target is $6,000 .
+Example
+Profit Target = $6,000
+Balance required for passing = $106,000
+Profit Target
+$9,000
+To complete the Profit Target , you must achieve a defined minimum profit above the Initial Simulated Capital on the account.
+You will meet this objective once your account balance exceeds the Initial Simulated Capital by the required Profit Target, with all positions closed.
+The Profit Target is $9,000 .
+Example
+Profit Target = $9,000
+Balance required for passing = $159,000
+Profit Target
+$3,000
+To complete the Profit Target , you must achieve a defined minimum profit above the Initial Simulated Capital on the account.
+You will meet this objective once your account balance exceeds the Initial Simulated Capital by the required Profit Target, with all positions closed.
+The Profit Target is $3,000 .
+Example
+Profit Target = $3,000
+Balance required for passing = $53,000
+Profit Target
+$6,000
+To complete the Profit Target , you must achieve a defined minimum profit above the Initial Simulated Capital on the account.
+You will meet this objective once your account balance exceeds the Initial Simulated Capital by the required Profit Target, with all positions closed.
+The Profit Target is $6,000 .
+Example
+Profit Target = $6,000
+Balance required for passing = $106,000
+Profit Target
+$9,000
+To complete the Profit Target , you must achieve a defined minimum profit above the Initial Simulated Capital on the account.
+You will meet this objective once your account balance exceeds the Initial Simulated Capital by the required Profit Target, with all positions closed.
+The Profit Target is $9,000 .
+Example
+Profit Target = $9,000
+Balance required for passing = $159,000
+Max Drawdown
+EOD Trailing
+$2,000
+The Maximum Drawdown rule establishes an end-of-day trailing limit (the Maximum Drawdown Limit ) which your account equity (i.e., Balance + Open Positions P&L – Commissions ) cannot hit at any point. If equity hits this limit, the rule is considered violated and the Evaluation is unsuccessful.
+The Maximum Drawdown Limit is calculated at the start of each trading day as the difference between the highest account balance recorded at the close of any preceding trading day (or the Initial Simulated Capital if higher) and the applicable Maximum Drawdown Amount .
+The limit can only increase , never decrease. Once the Maximum Drawdown Limit reaches the Initial Simulated Capital , it locks permanently at that figure for the remaining duration of the Evaluation, unless (i) you pay a Reset Fee, or (ii) you breach the Maximum Drawdown Limit and wait for the next monthly subscription.
+The Maximum Drawdown Amount is $2,000 .
+Example
+Limit for Day 1:
+Initial Simulated Capital = $50,000
+Calculation = $50,000 – $2,000 = $48,000
+Limit for Day 1 = $48,000
+Limit for Day 2:
+Closing Balance of Day 1 = $51,000
+Calculation = $51,000 – $2,000 = $49,000
+Limit for Day 2 = $49,000
+Limit for Day 3:
+Closing Balance of Day 2 = $50,500
+Calculation = $51,000 – $2,000 = $49,000 (Because the Closing Balance of Day 1 was higher than that of Day 2, the highest preceding balance of $51,000 is used for the calculation of the limits.)
+Limit for Day 3 = $49,000
+Limit for Day 4:
+Closing Balance of Day 3 = $52,500
+Calculation = $52,500 – $2,000 = $50,500 (The calculated limit exceeds the Initial Simulated Capital, so the Maximum Drawdown Limit locks at the Initial Simulated Capital instead.)
+Limit for Day 4 = $50,000 (From now on, the limit is equal to the Initial Simulated Capital.)
+Max Drawdown
+Updated
+EOD Trailing
+$3,000
+The Maximum Drawdown rule establishes an end-of-day trailing limit (the Maximum Drawdown Limit ) which your account equity (i.e., Balance + Open Positions P&L – Commissions ) cannot hit at any point. If equity hits this limit, the rule is considered violated and the Evaluation is unsuccessful. The Maximum Drawdown Limit is calculated at the start of each trading day as the difference between the highest account balance recorded at the close of any preceding trading day (or the Initial Simulated Capital if higher) and the applicable Maximum Drawdown Amount . The limit can only increase , never decrease. Once the Maximum Drawdown Limit reaches the Initial Simulated Capital , it locks permanently at that figure for the remaining duration of the Evaluation, unless (i) you pay a Reset Fee, or (ii) you breach the Maximum Drawdown Limit and wait for the next monthly subscription. The Maximum Drawdown Amount is $3,000 .
+Example
+Limit for Day 1:
+Initial Simulated Capital = $100,000
+Calculation = $100,000 – $3,000 = $97,000
+Limit for Day 1 = $97,000
+Limit for Day 2:
+Closing Balance of Day 1 = $102,500
+Calculation = $102,500 – $3,000 = $99,500
+Limit for Day 2 = $99,500
+Limit for Day 3:
+Closing Balance of Day 2 = $102,000
+Calculation = $102,500 – $3,000 = $99,500 (Because the Closing Balance of Day 1 was higher than that of Day 2, the highest preceding balance of $102,500 is used for the calculation of the limits.)
+Limit for Day 3 = $99,500
+Limit for Day 4:
+Closing Balance of Day 3 = $104,000
+Calculation = $104,000 – $3,000 = $101,000 (The calculated limit exceeds the Initial Simulated Capital, so the Maximum Drawdown Limit locks at the Initial Simulated Capital instead.)
+Limit for Day 4 = $100,000 (From now on, the limit is equal to the Initial Simulated Capital.)
+Max Drawdown
+Updated
+EOD Trailing
+$4,500
+The Maximum Drawdown rule establishes an end-of-day trailing limit (the Maximum Drawdown Limit ) which your account equity (i.e., Balance + Open Positions P&L – Commissions ) cannot hit at any point. If equity hits this limit, the rule is considered violated and the Evaluation is unsuccessful. The Maximum Drawdown Limit is calculated at the start of each trading day as the difference between the highest account balance recorded at the close of any preceding trading day (or the Initial Simulated Capital if higher) and the applicable Maximum Drawdown Amount . The limit can only increase , never decrease. Once the Maximum Drawdown Limit reaches the Initial Simulated Capital , it locks permanently at that figure for the remaining duration of the Evaluation, unless (i) you pay a Reset Fee, or (ii) you breach the Maximum Drawdown Limit and wait for the next monthly subscription. The Maximum Drawdown Amount is $4,500 .
+Example
+Limit for Day 1:
+Initial Simulated Capital = $150,000
+Calculation = $150,000 – $4,500 = $145,500
+Limit for Day 1 = $145,500
+Limit for Day 2:
+Closing Balance of Day 1 = $154,000
+Calculation = $154,000 – $4,500 = $149,500
+Limit for Day 2 = $149,500
+Limit for Day 3:
+Closing Balance of Day 2 = $153,500
+Calculation = $154,000 – $4,500 = $149,500 (Because the Closing Balance of Day 1 was higher than that of Day 2, the highest preceding balance of $154,000 is used for the calculation of the limits.)
+Limit for Day 3 = $149,500
+Limit for Day 4:
+Closing Balance of Day 3 = $155,500
+Calculation = $155,500 – $4,500 = $151,000 (The calculated limit exceeds the Initial Simulated Capital, so the Maximum Drawdown Limit locks at the Initial Simulated Capital instead.)
+Limit for Day 4 = $150,000 (From now on, the limit is equal to the Initial Simulated Capital.)
+Max Drawdown
+EOD Trailing
+$3,000
+The Maximum Drawdown rule establishes an end-of-day trailing limit (the Maximum Drawdown Limit ) which your account equity (i.e., Balance + Open Positions P&L – Commissions ) cannot hit at any point. If equity hits this limit, the rule is considered violated and the Evaluation is unsuccessful.
+The Maximum Drawdown Limit is calculated at the start of each trading day as the difference between the highest account balance recorded at the close of any preceding trading day (or the Initial Simulated Capital if higher) and the applicable Maximum Drawdown Amount .
+The limit can only increase , never decrease. Once the Maximum Drawdown Limit reaches the Initial Simulated Capital , it locks permanently at that figure for the remaining duration of the Evaluation, unless (i) you pay a Reset Fee, or (ii) you breach the Maximum Drawdown Limit or Daily Loss Limit and wait for the next monthly subscription.
+The Maximum Drawdown Amount is $3,000 .
+Example
+Limit for Day 1:
+Initial Simulated Capital = $50,000
+Calculation = $50,000 – $3,000 = $47,000
+Limit for Day 1 = $47,000
+Limit for Day 2:
+Closing Balance of Day 1 = $52,000
+Calculation = $52,000 – $3,000 = $49,000
+Limit for Day 2 = $49,000
+Limit for Day 3:
+Closing Balance of Day 2 = $51,000
+Calculation = $52,000 – $3,000 = $49,000 (Because the Closing Balance of Day 1 was higher than that of Day 2, the highest preceding balance of $52,000 is used for the calculation of the limits.)
+Limit for Day 3 = $49,000
+Limit for Day 4:
+Closing Balance of Day 3 = $54,000
+Calculation = $54,000 – $3,000 = $51,000 (The calculated limit exceeds the Initial Simulated Capital, so the Maximum Drawdown Limit locks at the Initial Simulated Capital instead.)
+Limit for Day 4 = $50,000 (From now on, the limit is equal to the Initial Simulated Capital.)
+Max Drawdown
+EOD Trailing
+$4,500
+The Maximum Drawdown rule establishes an end-of-day trailing limit (the Maximum Drawdown Limit ) which your account equity (i.e., Balance + Open Positions P&L – Commissions ) cannot hit at any point. If equity hits this limit, the rule is considered violated and the Evaluation is unsuccessful.
+The Maximum Drawdown Limit is calculated at the start of each trading day as the difference between the highest account balance recorded at the close of any preceding trading day (or the Initial Simulated Capital if higher) and the applicable Maximum Drawdown Amount .
+The limit can only increase , never decrease. Once the Maximum Drawdown Limit reaches the Initial Simulated Capital , it locks permanently at that figure for the remaining duration of the Evaluation, unless (i) you pay a Reset Fee, or (ii) you breach the Maximum Drawdown Limit or Daily Loss Limit and wait for the next monthly subscription.
+The Maximum Drawdown Amount is $4,500 .
+Example
+Limit for Day 1:
+Initial Simulated Capital = $100,000
+Calculation = $100,000 – $4,500 = $95,500
+Limit for Day 1 = $95,500
+Limit for Day 2:
+Closing Balance of Day 1 = $103,500
+Calculation = $103,500 – $4,500 = $99,000
+Limit for Day 2 = $99,000
+Limit for Day 3:
+Closing Balance of Day 2 = $102,500
+Calculation = $103,500 – $4,500 = $99,000 (Because the Closing Balance of Day 1 was higher than that of Day 2, the highest preceding balance of $103,500 is used for the calculation of the limits.)
+Limit for Day 3 = $99,000
+Limit for Day 4:
+Closing Balance of Day 3 = $105,500
+Calculation = $105,500 – $4,500 = $101,000 (The calculated limit exceeds the Initial Simulated Capital, so the Maximum Drawdown Limit locks at the Initial Simulated Capital instead.)
+Limit for Day 4 = $100,000 (From now on, the limit is equal to the Initial Simulated Capital.)
+Max Drawdown
+EOD Trailing
+$6,000
+The Maximum Drawdown rule establishes an end-of-day trailing limit (the Maximum Drawdown Limit ) which your account equity (i.e., Balance + Open Positions P&L – Commissions ) cannot hit at any point. If equity hits this limit, the rule is considered violated and the Evaluation is unsuccessful.
+The Maximum Drawdown Limit is calculated at the start of each trading day as the difference between the highest account balance recorded at the close of any preceding trading day (or the Initial Simulated Capital if higher) and the applicable Maximum Drawdown Amount .
+The limit can only increase , never decrease. Once the Maximum Drawdown Limit reaches the Initial Simulated Capital , it locks permanently at that figure for the remaining duration of the Evaluation, unless (i) you pay a Reset Fee, or (ii) you breach the Maximum Drawdown Limit or Daily Loss Limit and wait for the next monthly subscription.
+The Maximum Drawdown Amount is $6,000 .
+Example
+Limit for Day 1:
+Initial Simulated Capital = $150,000
+Calculation = $150,000 – $6,000 = $144,000
+Limit for Day 1 = $144,000
+Limit for Day 2:
+Closing Balance of Day 1 = $155,000
+Calculation = $155,000 – $6,000 = $149,000
+Limit for Day 2 = $149,000
+Limit for Day 3:
+Closing Balance of Day 2 = $154,000
+Calculation = $155,000 – $6,000 = $149,000 (Because the Closing Balance of Day 1 was higher than that of Day 2, the highest preceding balance of $155,000 is used for the calculation of the limits.)
+Limit for Day 3 = $149,000
+Limit for Day 4:
+Closing Balance of Day 3 = $157,000
+Calculation = $157,000 – $6,000 = $151,000 (The calculated limit exceeds the Initial Simulated Capital, so the Maximum Drawdown Limit locks at the Initial Simulated Capital instead.)
+Limit for Day 4 = $150,000 (From now on, the limit is equal to the Initial Simulated Capital.)
+Daily Loss Limit
+None
+There is no Daily Loss Limit during the Evaluation phase for the Growth Account.
+Daily Loss Limit
+None
+There is no Daily Loss Limit during the Evaluation phase for the Growth Account.
+Daily Loss Limit
+None
+There is no Daily Loss Limit during the Evaluation phase for the Growth Account.
+Daily Loss Limit
+$1,000
+The Daily Loss Limit rule establishes a limit (the Daily Loss Limit ) which your account equity (i.e., Balance + Open Positions P&L – Commissions ) cannot hit in a single trading day. If the equity hits this limit, the rule is considered violated.
+The Daily Loss Limit is calculated at the start of each trading day as the difference between the account balance at the start of that trading day and the applicable Daily Loss Limit Amount .
+The Daily Loss Limit Amount is $1,000 .
+On the first day, the account balance used for the limit calculation is the Initial Simulated Capital.
+The Pro Account applies a Hard Daily Loss Limit in the Evaluation. If the limit is breached, the Evaluation is unsuccessful.
+Example
+Limit for Day 1:
+Initial Simulated Capital = $50,000
+Calculation = $50,000 – $1,000 = $49,000
+Limit for Day 1 = $49,000
+Limit for Day 2:
+Balance at the start of Day 2 = $53,000
+Calculation = $53,000 – $1,000 = $52,000
+Limit for Day 2 = $52,000
+Limit for Day 3:
+Balance at the start of Day 3 = $52,000
+Calculation = $52,000 – $1,000 = $51,000
+Limit for Day 3 = $51,000 (Because the balance at the start of Day 3 is lower than at the start of Day 2, the Daily Loss Limit decreases as well. Unlike the Maximum Drawdown Limit, it can both increase and decrease.)
+Daily Loss Limit
+$1,500
+The Daily Loss Limit rule establishes a limit (the Daily Loss Limit ) which your account equity (i.e., Balance + Open Positions P&L – Commissions ) cannot hit in a single trading day. If the equity hits this limit, the rule is considered violated.
+The Daily Loss Limit is calculated at the start of each trading day as the difference between the account balance at the start of that trading day and the applicable Daily Loss Limit Amount .
+The Daily Loss Limit Amount is $1,500 .
+On the first day, the account balance used for the limit calculation is the Initial Simulated Capital.
+The Pro Account applies a Hard Daily Loss Limit in the Evaluation. If the limit is breached, the Evaluation is unsuccessful.
+Example
+Limit for Day 1:
+Initial Simulated Capital = $100,000
+Calculation = $100,000 – $1,500 = $98,500
+Limit for Day 1 = $98,500
+Limit for Day 2:
+Balance at the start of Day 2 = $104,500
+Calculation = $104,500 – $1,500 = $103,000
+Limit for Day 2 = $103,000
+Limit for Day 3:
+Balance at the start of Day 3 = $103,000
+Calculation = $103,000 – $1,500 = $101,500
+Limit for Day 3 = $101,500 (Because the balance at the start of Day 3 is lower than at the start of Day 2, the Daily Loss Limit decreases as well. Unlike the Maximum Drawdown Limit, it can both increase and decrease.)
+Daily Loss Limit
+$2,000
+The Daily Loss Limit rule establishes a limit (the Daily Loss Limit ) which your account equity (i.e., Balance + Open Positions P&L – Commissions ) cannot hit in a single trading day. If the equity hits this limit, the rule is considered violated.
+The Daily Loss Limit is calculated at the start of each trading day as the difference between the account balance at the start of that trading day and the applicable Daily Loss Limit Amount .
+The Daily Loss Limit Amount is $2,000 .
+On the first day, the account balance used for the limit calculation is the Initial Simulated Capital.
+The Pro Account applies a Hard Daily Loss Limit in the Evaluation. If the limit is breached, the Evaluation is unsuccessful.
+Example
+Limit for Day 1:
+Initial Simulated Capital = $150,000
+Calculation = $150,000 – $2,000 = $148,000
+Limit for Day 1 = $148,000
+Limit for Day 2:
+Balance at the start of Day 2 = $156,000
+Calculation = $156,000 – $2,000 = $154,000
+Limit for Day 2 = $154,000
+Limit for Day 3:
+Balance at the start of Day 3 = $154,000
+Calculation = $154,000 – $2,000 = $152,000
+Limit for Day 3 = $152,000 (Because the balance at the start of Day 3 is lower than at the start of Day 2, the Daily Loss Limit decreases as well. Unlike the Maximum Drawdown Limit, it can both increase and decrease.)
+Consistency Rule
+40%
+To pass the Evaluation, the Consistency Rule requires that your single most profitable trading day (the Best Day ) does not represent more than 40% of your total profit .
+The total profit is the cumulative sum of closed profits and losses across all trading days in the Evaluation phase. The Best Day is defined as the single day on which the highest closed profit was achieved, measured at the end of the trading day.
+Exceeding the Consistency Rule limit is not treated as a rule breach. However, you must continue trading to accumulate additional profit until your Best Day represents 40% or less of your total profit in order to pass the Evaluation.
+Example
+P&L per Day:
+Day 1 = closed profit = $2,000
+Day 2 = closed profit = $1,000
+Results at the end of Day 2:
+Total Profit = $3,000
+The Best Day is Day 1. On this day, 66.7% of the total profit was achieved ( $2,000 of $3,000 = 66.7%).
+Because the profit achieved on the Best Day exceeds the 40% allowed limit, the Consistency Rule is not satisfied. If Day 1 remains your Best Day, your total profit will need to reach at least $5,000 to pass.
+Consistency Rule
+40%
+To pass the Evaluation, the Consistency Rule requires that your single most profitable trading day (the Best Day ) does not represent more than 40% of your total profit .
+The total profit is the cumulative sum of closed profits and losses across all trading days in the Evaluation phase. The Best Day is defined as the single day on which the highest closed profit was achieved, measured at the end of the trading day.
+Exceeding the Consistency Rule limit is not treated as a rule breach. However, you must continue trading to accumulate additional profit until your Best Day represents 40% or less of your total profit in order to pass the Evaluation.
+Example
+P&L per Day:
+Day 1 = closed profit = $4,000
+Day 2 = closed profit = $2,000
+Results at the end of Day 2:
+Total Profit = $6,000
+The Best Day is Day 1. On this day, 66.7% of the total profit was achieved ( $4,000 of $6,000 = 66.7%).
+Because the profit achieved on the Best Day exceeds the 40% allowed limit, the Consistency Rule is not satisfied. If Day 1 remains your Best Day, your total profit will need to reach at least $10,000 to pass.
+Consistency Rule
+40%
+To pass the Evaluation, the Consistency Rule requires that your single most profitable trading day (the Best Day ) does not represent more than 40% of your total profit .
+The total profit is the cumulative sum of closed profits and losses across all trading days in the Evaluation phase. The Best Day is defined as the single day on which the highest closed profit was achieved, measured at the end of the trading day.
+Exceeding the Consistency Rule limit is not treated as a rule breach. However, you must continue trading to accumulate additional profit until your Best Day represents 40% or less of your total profit in order to pass the Evaluation.
+Example
+P&L per Day:
+Day 1 = closed profit = $6,000
+Day 2 = closed profit = $3,000
+Results at the end of Day 2:
+Total Profit = $9,000
+The Best Day is Day 1. On this day, 66.7% of the total profit was achieved ( $6,000 of $9,000 = 66.7%).
+Because the profit achieved on the Best Day exceeds the 40% allowed limit, the Consistency Rule is not satisfied. If Day 1 remains your Best Day, your total profit will need to reach at least $15,000 to pass.
+Consistency Rule
+50%
+To pass the Evaluation, the Consistency Rule requires that your single most profitable trading day (the Best Day ) does not represent more than 50% of your total profit .
+The total profit is the cumulative sum of closed profits and losses across all trading days in the Evaluation phase. The Best Day is defined as the single day on which the highest closed profit was achieved, measured at the end of the trading day.
+Exceeding the Consistency Rule limit is not treated as a rule breach. However, you must continue trading to accumulate additional profit until your Best Day represents 50% or less of your total profit in order to pass the Evaluation.
+Example
+P&L per Day:
+Day 1 = closed profit = $2,500
+Day 2 = closed profit = $500
+Results at the end of Day 2:
+Total Profit = $3,000
+The Best Day is Day 1. On this day, 83.3% of the total profit was achieved ( $2,500 of $3,000 = 83.3%).
+Because the profit achieved on the Best Day exceeds the 50% allowed limit, the Consistency Rule is not satisfied. If Day 1 remains your Best Day, your total profit will need to reach at least $5,000 to pass.
+Consistency Rule
+50%
+To pass the Evaluation, the Consistency Rule requires that your single most profitable trading day (the Best Day ) does not represent more than 50% of your total profit .
+The total profit is the cumulative sum of closed profits and losses across all trading days in the Evaluation phase. The Best Day is defined as the single day on which the highest closed profit was achieved, measured at the end of the trading day.
+Exceeding the Consistency Rule limit is not treated as a rule breach. However, you must continue trading to accumulate additional profit until your Best Day represents 50% or less of your total profit in order to pass the Evaluation.
+Example
+P&L per Day:
+Day 1 = closed profit = $5,000
+Day 2 = closed profit = $1,000
+Results at the end of Day 2:
+Total Profit = $6,000
+The Best Day is Day 1. On this day, 83.3% of the total profit was achieved ( $5,000 of $6,000 = 83.3%).
+Because the profit achieved on the Best Day exceeds the 50% allowed limit, the Consistency Rule is not satisfied. If Day 1 remains your Best Day, your total profit will need to reach at least $10,000 to pass.
+Consistency Rule
+50%
+To pass the Evaluation, the Consistency Rule requires that your single most profitable trading day (the Best Day ) does not represent more than 50% of your total profit .
+The total profit is the cumulative sum of closed profits and losses across all trading days in the Evaluation phase. The Best Day is defined as the single day on which the highest closed profit was achieved, measured at the end of the trading day.
+Exceeding the Consistency Rule limit is not treated as a rule breach. However, you must continue trading to accumulate additional profit until your Best Day represents 50% or less of your total profit in order to pass the Evaluation.
+Example
+P&L per Day:
+Day 1 = closed profit = $7,500
+Day 2 = closed profit = $1,500
+Results at the end of Day 2:
+Total Profit = $9,000
+The Best Day is Day 1. On this day, 83.3% of the total profit was achieved ( $7,500 of $9,000 = 83.3%).
+Because the profit achieved on the Best Day exceeds the 50% allowed limit, the Consistency Rule is not satisfied. If Day 1 remains your Best Day, your total profit will need to reach at least $15,000 to pass.
+Account Limits
+Max Contracts
+5 contracts
+The Max Contracts rule limits the maximum number of contracts you may hold simultaneously at any given time, across all instruments.
+The Max Contracts limit on your Evaluation Account is 5 contracts :
+One Standard or Mini contract counts as one contract
+Ten Micro contracts count as one Standard / Mini contract
+You can hold 5 Standard / Mini contracts, 50 Micro contracts, or any mix within the limit.
+Example
+You can hold:
+4 Standard + 10 Micro, or
+2 Mini + 30 Micro
+Max Contracts
+10 contracts
+The Max Contracts rule limits the maximum number of contracts you may hold simultaneously at any given time, across all instruments.
+The Max Contracts limit on your Evaluation Account is 10 contracts :
+One Standard or Mini contract counts as one contract
+Ten Micro contracts count as one Standard / Mini contract
+You can hold 10 Standard / Mini contracts, 100 Micro contracts, or any mix within the limit.
+Example
+You can hold:
+8 Standard + 20 Micro, or
+4 Mini + 60 Micro
+Max Contracts
+15 contracts
+The Max Contracts rule limits the maximum number of contracts you may hold simultaneously at any given time, across all instruments.
+The Max Contracts limit on your Evaluation Account is 15 contracts :
+One Standard or Mini contract counts as one contract
+Ten Micro contracts count as one Standard / Mini contract
+You can hold 15 Standard / Mini contracts, 150 Micro contracts, or any mix within the limit.
+Example
+You can hold:
+12 Standard + 30 Micro, or
+6 Mini + 90 Micro
+Max Contracts
+5 contracts
+The Max Contracts rule limits the maximum number of contracts you may hold simultaneously at any given time, across all instruments.
+The Max Contracts limit on your Evaluation Account is 5 contracts :
+One Standard or Mini contract counts as one contract
+Ten Micro contracts count as one Standard / Mini contract
+You can hold 5 Standard / Mini contracts, 50 Micro contracts, or any mix within the limit.
+Example
+You can hold:
+4 Standard + 10 Micro, or
+2 Mini + 30 Micro
+Max Contracts
+10 contracts
+The Max Contracts rule limits the maximum number of contracts you may hold simultaneously at any given time, across all instruments.
+The Max Contracts limit on your Evaluation Account is 10 contracts :
+One Standard or Mini contract counts as one contract
+Ten Micro contracts count as one Standard / Mini contract
+You can hold 10 Standard / Mini contracts, 100 Micro contracts, or any mix within the limit.
+Example
+You can hold:
+8 Standard + 20 Micro, or
+4 Mini + 60 Micro
+Max Contracts
+15 contracts
+The Max Contracts rule limits the maximum number of contracts you may hold simultaneously at any given time, across all instruments.
+The Max Contracts limit on your Evaluation Account is 15 contracts :
+One Standard or Mini contract counts as one contract
+Ten Micro contracts count as one Standard / Mini contract
+You can hold 15 Standard / Mini contracts, 150 Micro contracts, or any mix within the limit.
+Example
+You can hold:
+12 Standard + 30 Micro, or
+6 Mini + 90 Micro
+Forbidden Trading Practices
+Certain trading behaviours are prohibited across all FTMO Futures accounts, regardless of phase or account type. These are defined in full on the Forbidden Trading Practices page. Breaching any Forbidden Trading Practices may result in account termination or other action as described in the applicable Terms and Conditions.
+Forbidden Trading Practices
+Certain trading behaviours are prohibited across all FTMO Futures accounts, regardless of phase or account type. These are defined in full on the Forbidden Trading Practices page. Breaching any Forbidden Trading Practices may result in account termination or other action as described in the applicable Terms and Conditions.
+Forbidden Trading Practices
+Certain trading behaviours are prohibited across all FTMO Futures accounts, regardless of phase or account type. These are defined in full on the Forbidden Trading Practices page. Breaching any Forbidden Trading Practices may result in account termination or other action as described in the applicable Terms and Conditions.
+Forbidden Trading Practices
+Certain trading behaviours are prohibited across all FTMO Futures accounts, regardless of phase or account type. These are defined in full on the Forbidden Trading Practices page. Breaching any Forbidden Trading Practices may result in account termination or other action as described in the applicable Terms and Conditions.
+Forbidden Trading Practices
+Certain trading behaviours are prohibited across all FTMO Futures accounts, regardless of phase or account type. These are defined in full on the Forbidden Trading Practices page. Breaching any Forbidden Trading Practices may result in account termination or other action as described in the applicable Terms and Conditions.
+Forbidden Trading Practices
+Certain trading behaviours are prohibited across all FTMO Futures accounts, regardless of phase or account type. These are defined in full on the Forbidden Trading Practices page. Breaching any Forbidden Trading Practices may result in account termination or other action as described in the applicable Terms and Conditions.
+Sim-Funded
+Upon successfully completing the Evaluation, you will receive access to a Sim-Funded Account. The Sim-Funded Account size mirrors the size of your Evaluation account and operates with simulated capital as well. There is no Profit Target or Consistency Rule on the Sim-Funded Account.
+For the purposes of Trading Objectives and other rules and conditions, a trading day is defined as the period beginning at 6:00 p.m. ET and ending at 4:10 p.m. ET on the following calendar day.
+Trading Objectives
+Max Drawdown
+EOD Trailing
+$2,000
+The Maximum Drawdown rule establishes an end-of-day trailing limit (the Maximum Drawdown Limit ) which your account equity (i.e., Balance + Open Positions P&L – Commissions ) cannot hit at any point. If equity hits this limit, the rule is considered violated and the account is terminated.
+The Maximum Drawdown Limit is calculated at the start of each trading day as the difference between the highest account balance recorded at the close of any preceding trading day (or the Initial Simulated Capital if higher) and the applicable Maximum Drawdown Amount .
+The limit can only increase , never decrease. Once the Maximum Drawdown Limit reaches the Initial Simulated Capital , it locks permanently at that figure for the remaining life of the account.
+The Maximum Drawdown Amount is $2,000 .
+Example
+Limit for Day 1:
+Initial Simulated Capital = $50,000
+Calculation = $50,000 – $2,000 = $48,000
+Limit for Day 1 = $48,000
+Limit for Day 2:
+Closing Balance of Day 1 = $51,500
+Calculation = $51,500 – $2,000 = $49,500
+Limit for Day 2 = $49,500
+Limit for Day 3:
+Closing Balance of Day 2 = $51,000
+Calculation = $51,500 – $2,000 = $49,500 (Because the Closing Balance of Day 1 was higher than that of Day 2, the highest preceding balance of $51,500 is used for the calculation of the limits.)
+Limit for Day 3 = $49,500
+Limit for Day 4:
+Closing Balance of Day 3 = $53,000
+Calculation = $53,000 – $2,000 = $51,000 (The calculated limit exceeds the Initial Simulated Capital, so the Maximum Drawdown Limit locks at the Initial Simulated Capital instead.)
+Limit for Day 4 = $50,000 (From now on, the limit is equal to the Initial Simulated Capital.)
+Max Drawdown
+Updated
+EOD Trailing
+$3,000
+The Maximum Drawdown rule establishes an end-of-day trailing limit (the Maximum Drawdown Limit ) which your account equity (i.e., Balance + Open Positions P&L – Commissions ) cannot hit at any point. If equity hits this limit, the rule is considered violated and the account is terminated. The Maximum Drawdown Limit is calculated at the start of each trading day as the difference between the highest account balance recorded at the close of any preceding trading day (or the Initial Simulated Capital if higher) and the applicable Maximum Drawdown Amount . The limit can only increase , never decrease. Once the Maximum Drawdown Limit reaches the Initial Simulated Capital , it locks permanently at that figure for the remaining life of the account. The Maximum Drawdown Amount is $3,000 .
+Example
+Limit for Day 1:
+Initial Simulated Capital = $100,000
+Calculation = $100,000 – $3,000 = $97,000
+Limit for Day 1 = $97,000
+Limit for Day 2:
+Closing Balance of Day 1 = $102,500
+Calculation = $102,500 – $3,000 = $99,500
+Limit for Day 2 = $99,500
+Limit for Day 3:
+Closing Balance of Day 2 = $102,000
+Calculation = $102,500 – $3,000 = $99,500 (Because the Closing Balance of Day 1 was higher than that of Day 2, the highest preceding balance of $102,500 is used for the calculation of the limits.)
+Limit for Day 3 = $99,500
+Limit for Day 4:
+Closing Balance of Day 3 = $104,500
+Calculation = $104,500 – $3,000 = $101,500 (The calculated limit exceeds the Initial Simulated Capital, so the Maximum Drawdown Limit locks at the Initial Simulated Capital instead.)
+Limit for Day 4 = $100,000 (From now on, the limit is equal to the Initial Simulated Capital.)
+Max Drawdown
+Updated
+EOD Trailing
+$4,500
+The Maximum Drawdown rule establishes an end-of-day trailing limit (the Maximum Drawdown Limit ) which your account equity (i.e., Balance + Open Positions P&L – Commissions ) cannot hit at any point. If equity hits this limit, the rule is considered violated and the account is terminated. The Maximum Drawdown Limit is calculated at the start of each trading day as the difference between the highest account balance recorded at the close of any preceding trading day (or the Initial Simulated Capital if higher) and the applicable Maximum Drawdown Amount . The limit can only increase , never decrease. Once the Maximum Drawdown Limit reaches the Initial Simulated Capital , it locks permanently at that figure for the remaining life of the account. The Maximum Drawdown Amount is $4,500 .
+Example
+Limit for Day 1:
+Initial Simulated Capital = $150,000
+Calculation = $150,000 – $4,500 = $145,500
+Limit for Day 1 = $145,500
+Limit for Day 2:
+Closing Balance of Day 1 = $154,000
+Calculation = $154,000 – $4,500 = $149,500
+Limit for Day 2 = $149,500
+Limit for Day 3:
+Closing Balance of Day 2 = $153,500
+Calculation = $154,000 – $4,500 = $149,500 (Because the Closing Balance of Day 1 was higher than that of Day 2, the highest preceding balance of $154,000 is used for the calculation of the limits.)
+Limit for Day 3 = $149,500
+Limit for Day 4:
+Closing Balance of Day 3 = $156,000
+Calculation = $156,000 – $4,500 = $151,500 (The calculated limit exceeds the Initial Simulated Capital, so the Maximum Drawdown Limit locks at the Initial Simulated Capital instead.)
+Limit for Day 4 = $150,000 (From now on, the limit is equal to the Initial Simulated Capital.)
+Max Drawdown
+EOD Trailing
+$3,000
+The Maximum Drawdown rule establishes an end-of-day trailing limit (the Maximum Drawdown Limit ) which your account equity (i.e., Balance + Open Positions P&L – Commissions ) cannot hit at any point. If equity hits this limit, the rule is considered violated and the account is terminated.
+The Maximum Drawdown Limit is calculated at the start of each trading day as the difference between the highest account balance recorded at the close of any preceding trading day (or the Initial Simulated Capital if higher) and the applicable Maximum Drawdown Amount .
+The limit can only increase , never decrease. Once the Maximum Drawdown Limit reaches the Initial Simulated Capital , it locks permanently at that figure for the remaining life of the account.
+The Maximum Drawdown Amount is $3,000 .
+Example
+Limit for Day 1:
+Initial Simulated Capital = $50,000
+Calculation = $50,000 – $3,000 = $47,000
+Limit for Day 1 = $47,000
+Limit for Day 2:
+Closing Balance of Day 1 = $51,500
+Calculation = $51,500 – $3,000 = $48,500
+Limit for Day 2 = $48,500
+Limit for Day 3:
+Closing Balance of Day 2 = $50,500
+Calculation = $51,500 – $3,000 = $48,500 (Because the Closing Balance of Day 1 was higher than that of Day 2, the highest preceding balance of $51,500 is used for the calculation of the limits.)
+Limit for Day 3 = $48,500
+Limit for Day 4:
+Closing Balance of Day 3 = $53,500
+Calculation = $53,500 – $3,000 = $50,500 (The calculated limit exceeds the Initial Simulated Capital, so the Maximum Drawdown Limit locks at the Initial Simulated Capital instead.)
+Limit for Day 4 = $50,000 (From now on, the limit is equal to the Initial Simulated Capital.)
+Max Drawdown
+EOD Trailing
+$4,500
+The Maximum Drawdown rule establishes an end-of-day trailing limit (the Maximum Drawdown Limit ) which your account equity (i.e., Balance + Open Positions P&L – Commissions ) cannot hit at any point. If equity hits this limit, the rule is considered violated and the account is terminated.
+The Maximum Drawdown Limit is calculated at the start of each trading day as the difference between the highest account balance recorded at the close of any preceding trading day (or the Initial Simulated Capital if higher) and the applicable Maximum Drawdown Amount .
+The limit can only increase , never decrease. Once the Maximum Drawdown Limit reaches the Initial Simulated Capital , it locks permanently at that figure for the remaining life of the account.
+The Maximum Drawdown Amount is $4,500 .
+Example
+Limit for Day 1:
+Initial Simulated Capital = $100,000
+Calculation = $100,000 – $4,500 = $95,500
+Limit for Day 1 = $95,500
+Limit for Day 2:
+Closing Balance of Day 1 = $103,000
+Calculation = $103,000 – $4,500 = $98,500
+Limit for Day 2 = $98,500
+Limit for Day 3:
+Closing Balance of Day 2 = $102,000
+Calculation = $103,000 – $4,500 = $98,500 (Because the Closing Balance of Day 1 was higher than that of Day 2, the highest preceding balance of $103,000 is used for the calculation of the limits.)
+Limit for Day 3 = $98,500
+Limit for Day 4:
+Closing Balance of Day 3 = $105,000
+Calculation = $105,000 – $4,500 = $100,500 (The calculated limit exceeds the Initial Simulated Capital, so the Maximum Drawdown Limit locks at the Initial Simulated Capital instead.)
+Limit for Day 4 = $100,000 (From now on, the limit is equal to the Initial Simulated Capital.)
+Max Drawdown
+EOD Trailing
+$6,000
+The Maximum Drawdown rule establishes an end-of-day trailing limit (the Maximum Drawdown Limit ) which your account equity (i.e., Balance + Open Positions P&L – Commissions ) cannot hit at any point. If equity hits this limit, the rule is considered violated and the account is terminated.
+The Maximum Drawdown Limit is calculated at the start of each trading day as the difference between the highest account balance recorded at the close of any preceding trading day (or the Initial Simulated Capital if higher) and the applicable Maximum Drawdown Amount .
+The limit can only increase , never decrease. Once the Maximum Drawdown Limit reaches the Initial Simulated Capital , it locks permanently at that figure for the remaining life of the account.
+The Maximum Drawdown Amount is $6,000 .
+Example
+Limit for Day 1:
+Initial Simulated Capital = $150,000
+Calculation = $150,000 – $6,000 = $144,000
+Limit for Day 1 = $144,000
+Limit for Day 2:
+Closing Balance of Day 1 = $154,500
+Calculation = $154,500 – $6,000 = $148,500
+Limit for Day 2 = $148,500
+Limit for Day 3:
+Closing Balance of Day 2 = $153,500
+Calculation = $154,500 – $6,000 = $148,500 (Because the Closing Balance of Day 1 was higher than that of Day 2, the highest preceding balance of $154,500 is used for the calculation of the limits.)
+Limit for Day 3 = $148,500
+Limit for Day 4:
+Closing Balance of Day 3 = $156,500
+Calculation = $156,500 – $6,000 = $150,500 (The calculated limit exceeds the Initial Simulated Capital, so the Maximum Drawdown Limit locks at the Initial Simulated Capital instead.)
+Limit for Day 4 = $150,000 (From now on, the limit is equal to the Initial Simulated Capital.)
+Daily Loss Limit
+Soft
+$1,000
+The Daily Loss Limit rule on the Growth Sim-Funded Account establishes a soft limit (the Daily Loss Limit ) which your account equity (i.e., Balance + Open Positions P&L – Commissions ) cannot hit in a single trading day. If the equity hits this limit, all open positions are automatically closed and trading is suspended for the remainder of that trading day. The account is not terminated, and trading resumes at the start of the next trading day.
+The Daily Loss Limit is calculated at the start of each trading day as the difference between the account balance at the start of that trading day and the applicable Daily Loss Limit Amount .
+The Daily Loss Limit Amount is $1,000 .
+On the first day, the account balance used for the limit calculation is the Initial Simulated Capital.
+Example
+Limit for Day 1:
+Initial Simulated Capital = $50,000
+Calculation = $50,000 – $1,000 = $49,000
+Limit for Day 1 = $49,000
+Limit for Day 2:
+Balance at the start of Day 2 = $53,000
+Calculation = $53,000 – $1,000 = $52,000
+Limit for Day 2 = $52,000
+Limit for Day 3:
+Balance at the start of Day 3 = $52,000
+Calculation = $52,000 – $1,000 = $51,000
+Limit for Day 3 = $51,000 (Because the balance at the start of Day 3 is lower than at the start of Day 2, the Daily Loss Limit decreases as well. Unlike the Maximum Drawdown Limit, it can both increase and decrease.)
+Daily Loss Limit
+Soft
+$2,000
+The Daily Loss Limit rule on the Growth Sim-Funded Account establishes a soft limit (the Daily Loss Limit ) which your account equity (i.e., Balance + Open Positions P&L – Commissions ) cannot hit in a single trading day. If the equity hits this limit, all open positions are automatically closed and trading is suspended for the remainder of that trading day. The account is not terminated, and trading resumes at the start of the next trading day.
+The Daily Loss Limit is calculated at the start of each trading day as the difference between the account balance at the start of that trading day and the applicable Daily Loss Limit Amount .
+The Daily Loss Limit Amount is $2,000 .
+On the first day, the account balance used for the limit calculation is the Initial Simulated Capital.
+Example
+Limit for Day 1:
+Initial Simulated Capital = $100,000
+Calculation = $100,000 – $2,000 = $98,000
+Limit for Day 1 = $98,000
+Limit for Day 2:
+Balance at the start of Day 2 = $106,000
+Calculation = $106,000 – $2,000 = $104,000
+Limit for Day 2 = $104,000
+Limit for Day 3:
+Balance at the start of Day 3 = $104,000
+Calculation = $104,000 – $2,000 = $102,000
+Limit for Day 3 = $102,000 (Because the balance at the start of Day 3 is lower than at the start of Day 2, the Daily Loss Limit decreases as well. Unlike the Maximum Drawdown Limit, it can both increase and decrease.)
+Daily Loss Limit
+Soft
+$3,000
+The Daily Loss Limit rule on the Growth Sim-Funded Account establishes a soft limit (the Daily Loss Limit ) which your account equity (i.e., Balance + Open Positions P&L – Commissions ) cannot hit in a single trading day. If the equity hits this limit, all open positions are automatically closed and trading is suspended for the remainder of that trading day. The account is not terminated, and trading resumes at the start of the next trading day.
+The Daily Loss Limit is calculated at the start of each trading day as the difference between the account balance at the start of that trading day and the applicable Daily Loss Limit Amount .
+The Daily Loss Limit Amount is $3,000 .
+On the first day, the account balance used for the limit calculation is the Initial Simulated Capital.
+Example
+Limit for Day 1:
+Initial Simulated Capital = $150,000
+Calculation = $150,000 – $3,000 = $147,000
+Limit for Day 1 = $147,000
+Limit for Day 2:
+Balance at the start of Day 2 = $159,000
+Calculation = $159,000 – $3,000 = $156,000
+Limit for Day 2 = $156,000
+Limit for Day 3:
+Balance at the start of Day 3 = $156,000
+Calculation = $156,000 – $3,000 = $153,000
+Limit for Day 3 = $153,000 (Because the balance at the start of Day 3 is lower than at the start of Day 2, the Daily Loss Limit decreases as well. Unlike the Maximum Drawdown Limit, it can both increase and decrease.)
+Daily Loss Limit
+$1,000
+The Daily Loss Limit rule establishes a limit (the Daily Loss Limit ) which your account equity (i.e., Balance + Open Positions P&L – Commissions ) cannot hit in a single trading day. If the equity hits this limit, the rule is considered violated.
+The Daily Loss Limit is calculated at the start of each trading day as the difference between the account balance at the start of that trading day and the applicable Daily Loss Limit Amount .
+The Daily Loss Limit Amount is $1,000 .
+On the first day, the account balance used for the limit calculation is the Initial Simulated Capital.
+The Pro Account applies a Hard Daily Loss Limit on the Sim-Funded Account. If the limit is breached, the account is immediately and permanently terminated.
+Example
+Limit for Day 1:
+Initial Simulated Capital = $50,000
+Calculation = $50,000 – $1,000 = $49,000
+Limit for Day 1 = $49,000
+Limit for Day 2:
+Balance at the start of Day 2 = $53,000
+Calculation = $53,000 – $1,000 = $52,000
+Limit for Day 2 = $52,000
+Limit for Day 3:
+Balance at the start of Day 3 = $52,000
+Calculation = $52,000 – $1,000 = $51,000
+Limit for Day 3 = $51,000 (Because the balance at the start of Day 3 is lower than at the start of Day 2, the Daily Loss Limit decreases as well. Unlike the Maximum Drawdown Limit, it can both increase and decrease.)
+Daily Loss Limit
+$1,500
+The Daily Loss Limit rule establishes a limit (the Daily Loss Limit ) which your account equity (i.e., Balance + Open Positions P&L – Commissions ) cannot hit in a single trading day. If the equity hits this limit, the rule is considered violated.
+The Daily Loss Limit is calculated at the start of each trading day as the difference between the account balance at the start of that trading day and the applicable Daily Loss Limit Amount .
+The Daily Loss Limit Amount is $1,500 .
+On the first day, the account balance used for the limit calculation is the Initial Simulated Capital.
+The Pro Account applies a Hard Daily Loss Limit on the Sim-Funded Account. If the limit is breached, the account is immediately and permanently terminated.
+Example
+Limit for Day 1:
+Initial Simulated Capital = $100,000
+Calculation = $100,000 – $1,500 = $98,500
+Limit for Day 1 = $98,500
+Limit for Day 2:
+Balance at the start of Day 2 = $104,500
+Calculation = $104,500 – $1,500 = $103,000
+Limit for Day 2 = $103,000
+Limit for Day 3:
+Balance at the start of Day 3 = $103,000
+Calculation = $103,000 – $1,500 = $101,500
+Limit for Day 3 = $101,500 (Because the balance at the start of Day 3 is lower than at the start of Day 2, the Daily Loss Limit decreases as well. Unlike the Maximum Drawdown Limit, it can both increase and decrease.
+Daily Loss Limit
+$2,000
+The Daily Loss Limit rule establishes a limit (the Daily Loss Limit ) which your account equity (i.e., Balance + Open Positions P&L – Commissions ) cannot hit in a single trading day. If the equity hits this limit, the rule is considered violated.
+The Daily Loss Limit is calculated at the start of each trading day as the difference between the account balance at the start of that trading day and the applicable Daily Loss Limit Amount .
+The Daily Loss Limit Amount is $2,000 .
+On the first day, the account balance used for the limit calculation is the Initial Simulated Capital.
+The Pro Account applies a Hard Daily Loss Limit on the Sim-Funded Account. If the limit is breached, the account is immediately and permanently terminated.
+Example
+Limit for Day 1:
+Initial Simulated Capital = $150,000
+Calculation = $150,000 – $2,000 = $148,000
+Limit for Day 1 = $148,000
+Limit for Day 2:
+Balance at the start of Day 2 = $156,000
+Calculation = $156,000 – $2,000 = $154,000
+Limit for Day 2 = $154,000
+Limit for Day 3:
+Balance at the start of Day 3 = $154,000
+Calculation = $154,000 – $2,000 = $152,000
+Limit for Day 3 = $152,000 (Because the balance at the start of Day 3 is lower than at the start of Day 2, the Daily Loss Limit decreases as well. Unlike the Maximum Drawdown Limit, it can both increase and decrease.)
+Account Limits
+Max Contracts
+2 → 5 contracts
+The Max Contracts rule limits the maximum number of contracts you may hold simultaneously at any given time, across all instruments.
+The Max Contracts limit is 2 contracts at the start of your Sim-Funded Account and can increase through the Scaling Plan.
+The Scaling Plan allows you to increase your Max Contracts limit as your trading performance grows. As you demonstrate consistent profitability on the Sim-Funded Account, additional contract capacity becomes available without the need to purchase a new account.
+The Scaling Plan operates on a milestone-based system: each time your end-of-day (EOD) Profit above the Initial Simulated Capital reaches a defined threshold, your Max Contracts limit adjusts by a set amount.
+The following list describes the range of the Profit above the Initial Simulated Capital, together with the number of contracts allowed to be opened:
+$0–$999 → 2 minis or standard / 20 micros contracts
+$1,000–$1,999 → 3 minis or standard / 30 micros contracts
+$2,000–$2,999 → 5 minis or standard / 50 micros contracts
+$3,000–$4,499 → 5 minis or standard / 50 micros contracts
+$4,500+ → 5 minis or standard / 50 micros contracts
+Example
+You open your Sim-Funded Account with $50,000 and a limit of 2 contracts . After a run of profitable trading days, your account balance closes at $53,000 . Starting from the next trading day, your Max Contracts limit automatically increases to 5 contracts .
+If the following day the end-of-day balance decreases back to $50,000 , the number of contracts will be adjusted the next trading day back to 2 contracts .
+Max Contracts
+4 → 10 contracts
+The Max Contracts rule limits the maximum number of contracts you may hold simultaneously at any given time, across all instruments.
+The Max Contracts limit is 4 contracts at the start of your Sim-Funded Account and can increase through the Scaling Plan.
+The Scaling Plan allows you to increase your Max Contracts limit as your trading performance grows. As you demonstrate consistent profitability on the Sim-Funded Account, additional contract capacity becomes available without the need to purchase a new account.
+The Scaling Plan operates on a milestone-based system: each time your end-of-day (EOD) Profit above the Initial Simulated Capital reaches a defined threshold, your Max Contracts limit adjusts by a set amount.
+The following list describes the range of the Profit above the Initial Simulated Capital, together with the number of contracts allowed to be opened:
+$0–$999 → 4 minis or standard / 40 micros contracts
+$1,000–$1,999 → 5 minis or standard / 50 micros contracts
+$2,000–$2,999 → 8 minis or standard / 80 micros contracts
+$3,000–$4,499 → 10 minis or standard / 100 micros contracts
+$4,500+ → 10 minis or standard / 100 micros contracts
+Example
+You open your Sim-Funded Account with $100,000 and a limit of 4 contracts . After a run of profitable trading days, your account balance closes at $103,000 . Starting from the next trading day, your Max Contracts limit automatically increases to 10 contracts .
+If the following day the end-of-day balance decreases back to $100,000 , the number of contracts will be adjusted the next trading day back to 4 contracts .
+Max Contracts
+6 → 15 contracts
+The Max Contracts rule limits the maximum number of contracts you may hold simultaneously at any given time, across all instruments.
+The Max Contracts limit is 6 contracts at the start of your Sim-Funded Account and can increase through the Scaling Plan.
+The Scaling Plan allows you to increase your Max Contracts limit as your trading performance grows. As you demonstrate consistent profitability on the Sim-Funded Account, additional contract capacity becomes available without the need to purchase a new account.
+The Scaling Plan operates on a milestone-based system: each time your end-of-day (EOD) Profit above the Initial Simulated Capital reaches a defined threshold, your Max Contracts limit adjusts by a set amount.
+The following list describes the range of the Profit above the Initial Simulated Capital, together with the number of contracts allowed to be opened:
+$0–$999 → 6 minis or standard / 60 micros contracts
+$1,000–$1,999 → 8 minis or standard / 80 micros contracts
+$2,000–$2,999 → 10 minis or standard / 100 micros contracts
+$3,000–$4,499 → 12 minis or standard / 120 micros contracts
+$4,500+ → 15 minis or standard / 150 micros contracts
+Example
+You open your Sim-Funded Account with $150,000 and a limit of 6 contracts . After a run of profitable trading days, your account balance closes at $153,000 . Starting from the next trading day, your Max Contracts limit automatically increases to 12 contracts .
+If the following day the end-of-day balance decreases back to $150,000 , the number of contracts will be adjusted the next trading day back to 6 contracts .
+Max Contracts
+2 → 5 contracts
+The Max Contracts rule limits the maximum number of contracts you may hold simultaneously at any given time, across all instruments.
+The Max Contracts limit is 2 contracts at the start of your Sim-Funded Account and can increase through the Scaling Plan.
+The Scaling Plan allows you to increase your Max Contracts limit as your trading performance grows. As you demonstrate consistent profitability on the Sim-Funded Account, additional contract capacity becomes available without the need to purchase a new account.
+The Scaling Plan operates on a milestone-based system: each time your end-of-day (EOD) Profit above the Initial Simulated Capital reaches a defined threshold, your Max Contracts limit adjusts by a set amount.
+The following list describes the range of the Profit above the Initial Simulated Capital, together with the number of contracts allowed to be opened:
+$0–$999 → 2 minis or standard / 20 micros contracts
+$1,000–$1,999 → 3 minis or standard / 30 micros contracts
+$2,000–$2,999 → 5 minis or standard / 50 micros contracts
+$3,000–$4,499 → 5 minis or standard / 50 micros contracts
+$4,500+ → 5 minis or standard / 50 micros contracts
+Example
+You open your Sim-Funded Account with $50,000 and a limit of 2 contracts . After a run of profitable trading days, your account balance closes at $53,000 . Starting from the next trading day, your Max Contracts limit automatically increases to 5 contracts .
+If the following day the end-of-day balance decreases back to $50,000 , the number of contracts will be adjusted the next trading day back to 2 contracts .
+Max Contracts
+4 → 10 contracts
+The Max Contracts rule limits the maximum number of contracts you may hold simultaneously at any given time, across all instruments.
+The Max Contracts limit is 4 contracts at the start of your Sim-Funded Account and can increase through the Scaling Plan.
+The Scaling Plan allows you to increase your Max Contracts limit as your trading performance grows. As you demonstrate consistent profitability on the Sim-Funded Account, additional contract capacity becomes available without the need to purchase a new account.
+The Scaling Plan operates on a milestone-based system: each time your end-of-day (EOD) Profit above the Initial Simulated Capital reaches a defined threshold, your Max Contracts limit adjusts by a set amount.
+The following list describes the range of the Profit above the Initial Simulated Capital, together with the number of contracts allowed to be opened:
+$0–$999 → 4 minis or standard / 40 micros contracts
+$1,000–$1,999 → 5 minis or standard / 50 micros contracts
+$2,000–$2,999 → 8 minis or standard / 80 micros contracts
+$3,000–$4,499 → 10 minis or standard / 100 micros contracts
+$4,500+ → 10 minis or standard / 100 micros contracts
+Example
+You open your Sim-Funded Account with $100,000 and a limit of 4 contracts . After a run of profitable trading days, your account balance closes at $103,000 . Starting from the next trading day, your Max Contracts limit automatically increases to 10 contracts .
+If the following day the end-of-day balance decreases back to $100,000 , the number of contracts will be adjusted the next trading day back to 4 contracts .
+Max Contracts
+6 → 15 contracts
+The Max Contracts rule limits the maximum number of contracts you may hold simultaneously at any given time, across all instruments.
+The Max Contracts limit is 6 contracts at the start of your Sim-Funded Account and can increase through the Scaling Plan.
+The Scaling Plan allows you to increase your Max Contracts limit as your trading performance grows. As you demonstrate consistent profitability on the Sim-Funded Account, additional contract capacity becomes available without the need to purchase a new account.
+The Scaling Plan operates on a milestone-based system: each time your end-of-day (EOD) Profit above the Initial Simulated Capital reaches a defined threshold, your Max Contracts limit adjusts by a set amount.
+The following list describes the range of the Profit above the Initial Simulated Capital, together with the number of contracts allowed to be opened:
+$0–$999 → 6 minis or standard / 60 micros contracts
+$1,000–$1,999 → 8 minis or standard / 80 micros contracts
+$2,000–$2,999 → 10 minis or standard / 100 micros contracts
+$3,000–$4,499 → 12 minis or standard / 120 micros contracts
+$4,500+ → 15 minis or standard / 150 micros contracts
+Example
+You open your Sim-Funded Account with $150,000 and a limit of 6 contracts . After a run of profitable trading days, your account balance closes at $153,000 . Starting from the next trading day, your Max Contracts limit automatically increases to 12 contracts .
+If the following day the end-of-day balance decreases back to $150,000 , the number of contracts will be adjusted the next trading day back to 6 contracts .
+Max Concurrent Accounts
+3 accounts
+You may hold a maximum of 3 concurrent Sim-Funded Accounts at any one time, across all account sizes and product types
+Max Concurrent Accounts
+3 accounts
+You may hold a maximum of 3 concurrent Sim-Funded Accounts at any one time, across all account sizes and product types
+Max Concurrent Accounts
+3 accounts
+You may hold a maximum of 3 concurrent Sim-Funded Accounts at any one time, across all account sizes and product types
+Max Concurrent Accounts
+3 accounts
+You may hold a maximum of 3 concurrent Sim-Funded Accounts at any one time, across all account sizes and product types.
+Max Concurrent Accounts
+3 accounts
+You may hold a maximum of 3 concurrent Sim-Funded Accounts at any one time, across all account sizes and product types.
+Max Concurrent Accounts
+3 accounts
+You may hold a maximum of 3 concurrent Sim-Funded Accounts at any one time, across all account sizes and product types
+Forbidden Trading Practices
+Certain trading behaviours are prohibited across all FTMO Futures accounts, regardless of phase or account type. These are defined in full on the Forbidden Trading Practices page. Breaching any Forbidden Trading Practices may result in account termination or other action as described in the applicable Terms and Conditions.
+Forbidden Trading Practices
+Certain trading behaviours are prohibited across all FTMO Futures accounts, regardless of phase or account type. These are defined in full on the Forbidden Trading Practices page. Breaching any Forbidden Trading Practices may result in account termination or other action as described in the applicable Terms and Conditions.
+Forbidden Trading Practices
+Certain trading behaviours are prohibited across all FTMO Futures accounts, regardless of phase or account type. These are defined in full on the Forbidden Trading Practices page. Breaching any Forbidden Trading Practices may result in account termination or other action as described in the applicable Terms and Conditions.
+Forbidden Trading Practices
+Certain trading behaviours are prohibited across all FTMO Futures accounts, regardless of phase or account type. These are defined in full on the Forbidden Trading Practices page. Breaching any Forbidden Trading Practices may result in account termination or other action as described in the applicable Terms and Conditions.
+Forbidden Trading Practices
+Certain trading behaviours are prohibited across all FTMO Futures accounts, regardless of phase or account type. These are defined in full on the Forbidden Trading Practices page. Breaching any Forbidden Trading Practices may result in account termination or other action as described in the applicable Terms and Conditions.
+Forbidden Trading Practices
+Certain trading behaviours are prohibited across all FTMO Futures accounts, regardless of phase or account type. These are defined in full on the Forbidden Trading Practices page. Breaching any Forbidden Trading Practices may result in account termination or other action as described in the applicable Terms and Conditions.
+Payouts
+Payout Eligibility
+4 days @ $150+
+To become eligible to request a payout, you must trade on a minimum number of trading days within the payout cycle, each meeting a minimum daily profit threshold.
+Minimum number of Qualifying Days: 4 trading days
+Minimum daily P&L required: $150 per Qualifying Day
+Qualifying Days are reviewed at the end of the trading day.
+Example
+Trader achieves the following end-of-day P&L on 4 different trading days:
+Day 1: $180
+Day 2: $220
+Day 3: $120
+Day 4: $190
+Result: The end-of-day P&L of Day 3 did not reach the $150+ requirement in the closed P&L, which is required to consider the trading day a Qualifying Day.
+Since the other 3 days met the requirement, 3 out of 4 Qualifying Days are currently met. You are not yet eligible to request a payout and must continue trading until all 4 days within a payout cycle meet the threshold.
+Payout Eligibility
+Updated
+4 days @ $300+
+To become eligible to request a payout, you must trade on a minimum number of trading days within the payout cycle, each meeting a minimum daily profit threshold.
+Minimum number of Qualifying Days: 4 trading days
+Minimum daily P&L required: $300 per Qualifying Day
+Qualifying Days are reviewed at the end of the trading day.
+Example
+Trader achieves the following end-of-day P&L on 4 different trading days:
+Day 1: $330
+Day 2: $370
+Day 3: $270
+Day 4: $340
+Result: The end-of-day P&L of Day 3 did not reach the $300+ requirement in the closed P&L, which is required to consider the trading day a Qualifying Day. Since the other 3 days met the requirement, 3 out of 4 Qualifying Days are currently met. You are not yet eligible to request a payout and must continue trading until all 4 days within a payout cycle meet the threshold.
+Payout Eligibility
+Updated
+4 days @ $450+
+To become eligible to request a payout, you must trade on a minimum number of trading days within the payout cycle, each meeting a minimum daily profit threshold.
+Minimum number of Qualifying Days: 4 trading days
+Minimum daily P&L required: $450 per Qualifying Day
+Qualifying Days are reviewed at the end of the trading day.
+Example
+Trader achieves the following end-of-day P&L on 4 different trading days:
+Day 1: $480
+Day 2: $520
+Day 3: $420
+Day 4: $490
+Result: The end-of-day P&L of Day 3 did not reach the $450+ requirement in the closed P&L, which is required to consider the trading day a Qualifying Day. Since the other 3 days met the requirement, 3 out of 4 Qualifying Days are currently met. You are not yet eligible to request a payout and must continue trading until all 4 days within a payout cycle meet the threshold.
+Payout Eligibility
+5 days @ $200+
+To become eligible to request a payout, you must trade on a minimum number of trading days within the payout cycle, each meeting a minimum daily profit threshold.
+Minimum number of Qualifying Days: 5 trading days
+Minimum daily P&L required: $200 per Qualifying Day
+Qualifying Days are reviewed at the end of the trading day.
+Example
+Trader achieves the following end-of-day P&L on 5 different trading days:
+Day 1: $250
+Day 2: $310
+Day 3: $180
+Day 4: $400
+Day 5: $220
+Result: The end-of-day P&L of Day 3 did not reach the $200+ requirement in the closed P&L, which is required to consider the trading day a Qualifying Day.
+Since the other 4 days met the requirement, 4 out of 5 Qualifying Days are currently met. You are not yet eligible to request a payout and must continue trading until all 5 days within a payout cycle meet the threshold.
+Payout Eligibility
+5 days @ $300+
+To become eligible to request a payout, you must trade on a minimum number of trading days within the payout cycle, each meeting a minimum daily profit threshold.
+Minimum number of Qualifying Days: 5 trading days
+Minimum daily P&L required: $300 per Qualifying Day
+Qualifying Days are reviewed at the end of the trading day.
+Example
+Trader achieves the following end-of-day P&L on 5 different trading days:
+Day 1: $375
+Day 2: $465
+Day 3: $270
+Day 4: $600
+Day 5: $330
+Result: The end-of-day P&L of Day 3 did not reach the $300+ requirement in the closed P&L, which is required to consider the trading day a Qualifying Day.
+Since the other 4 days met the requirement, 4 out of 5 Qualifying Days are currently met. You are not yet eligible to request a payout and must continue trading until all 5 days within a payout cycle meet the threshold.
+Payout Eligibility
+5 days @ $500+
+To become eligible to request a payout, you must trade on a minimum number of trading days within the payout cycle, each meeting a minimum daily profit threshold.
+Minimum number of Qualifying Days: 5 trading days
+Minimum daily P&L required: $500 per Qualifying Day
+Qualifying Days are reviewed at the end of the trading day.
+Example
+Trader achieves the following end-of-day P&L on 5 different trading days:
+Day 1: $625
+Day 2: $775
+Day 3: $450
+Day 4: $1,000
+Day 5: $550
+Result: The end-of-day P&L of Day 3 did not reach the $500+ requirement in the closed P&L, which is required to consider the trading day a Qualifying Day.
+Since the other 4 days met the requirement, 4 out of 5 Qualifying Days are currently met. You are not yet eligible to request a payout and must continue trading until all 5 days within a payout cycle meet the threshold.
+Min New Profit for Request
+50%
+To submit a payout request, at least 50% of the requested amount must represent new profit generated during the current payout cycle, not carried-over profit from prior cycles.
+Example
+Profit above the Initial Simulated Capital kept from the previous payout cycle = $2,000
+New profit generated during the current payout cycle = $400
+Maximum requestable payout = $800 ( $400 from the new cycle and $400 from the previous payout cycle)
+Min New Profit for Request
+50%
+To submit a payout request, at least 50% of the requested amount must represent new profit generated during the current payout cycle, not carried-over profit from prior cycles.
+Example
+Profit above the Initial Simulated Capital kept from the previous payout cycle = $4,000
+New profit generated during the current payout cycle = $800
+Maximum requestable payout = $1,600 ( $800 from the new cycle and $800 from the previous payout cycle)
+Min New Profit for Request
+50%
+To submit a payout request, at least 50% of the requested amount must represent new profit generated during the current payout cycle, not carried-over profit from prior cycles.
+Example
+Profit above the Initial Simulated Capital kept from the previous payout cycle = $6,000
+New profit generated during the current payout cycle = $1,200
+Maximum requestable payout = $2,400 ( $1,200 from the new cycle and $1,200 from the previous payout cycle)
+Min New Profit for Request
+50%
+To submit a payout request, at least 50% of the requested amount must represent new profit generated during the current payout cycle, not carried-over profit from prior cycles.
+Example
+Profit above the Initial Simulated Capital kept from the previous payout cycle = $2,000
+New profit generated during the current payout cycle = $400
+Maximum requestable payout = $800 ( $400 from the new cycle and $400 from the previous payout cycle)
+Min New Profit for Request
+50%
+To submit a payout request, at least 50% of the requested amount must represent new profit generated during the current payout cycle, not carried-over profit from prior cycles.
+Example
+Profit above the Initial Simulated Capital kept from the previous payout cycle = $4,000
+New profit generated during the current payout cycle = $800
+Maximum requestable payout = $1,600 ( $800 from the new cycle and $800 from the previous payout cycle)
+Min New Profit for Request
+50%
+To submit a payout request, at least 50% of the requested amount must represent new profit generated during the current payout cycle, not carried-over profit from prior cycles.
+Example
+Profit above the Initial Simulated Capital kept from the previous payout cycle = $6,000
+New profit generated during the current payout cycle = $1,200
+Maximum requestable payout = $2,400 ( $1,200 from the new cycle and $1,200 from the previous payout cycle)
+Withdrawable Amount
+50%
+You may request to withdraw up to 50% of your Profit above the Initial Simulated Capital. Please note that the final amount of your payout is further influenced by the payout cap and payout ratio.
+The minimum amount available for payout is $20 .
+Example
+If the Profit above the Initial Simulated Capital is $4,000 , you may request up to $2,000 in a single payout. The remaining $2,000 stays in your account and, if applicable Payout conditions are fulfilled, can be included in your next payout request.
+Withdrawable Amount
+50%
+You may request to withdraw up to 50% of your Profit above the Initial Simulated Capital. Please note that the final amount of your payout is further influenced by the payout cap and payout ratio.
+The minimum amount available for payout is $20 .
+Example
+If the Profit above the Initial Simulated Capital is $5,000 , you may request up to $2,500 in a single payout. The remaining $2,500 stays in your account and, if applicable Payout conditions are fulfilled, can be included in your next payout request.
+Withdrawable Amount
+50%
+You may request to withdraw up to 50% of your Profit above the Initial Simulated Capital. Please note that the final amount of your payout is further influenced by the payout cap and payout ratio.
+The minimum amount available for payout is $20 .
+Example
+If the Profit above the Initial Simulated Capital is $7,000 , you may request up to $3,500 in a single payout. The remaining $3,500 stays in your account and, if applicable Payout conditions are fulfilled, can be included in your next payout request.
+Withdrawable Amount
+100%
+You may request to withdraw up to 100% of your Profit above the Initial Simulated Capital. Please note that the final amount of your payout is further influenced by the payout cap and payout ratio.
+The minimum amount available for payout is $20 .
+Example
+If the Profit above the Initial Simulated Capital is $4,000 , you may request up to $4,000 in a single payout.
+Withdrawable Amount
+100%
+You may request to withdraw up to 100% of your Profit above the Initial Simulated Capital. Please note that the final amount of your payout is further influenced by the payout cap and payout ratio.
+The minimum amount available for payout is $20 .
+Example
+If the Profit above the Initial Simulated Capital is $5,000 , you may request up to $5,000 in a single payout.
+Withdrawable Amount
+100%
+You may request to withdraw up to 100% of your Profit above the Initial Simulated Capital. Please note that the final amount of your payout is further influenced by the payout cap and payout ratio.
+The minimum amount available for payout is $20 .
+Example
+If the Profit above the Initial Simulated Capital is $7,000 , you may request up to $7,000 in a single payout.
+Payout Cap
+$2,500
+The Payout Cap is the maximum amount you can request in a single payout, regardless of the total Profit above the Initial Simulated Capital accumulated.
+The Payout Cap is $2,500 per request.
+Example
+If you have accumulated $4,000 in Profit above the Initial Simulated Capital during the current payout cycle, you may request up to $2,500 in a single payout. The remaining $1,500 stays in your account and, if applicable Payout conditions are fulfilled, can be included in your next payout request.
+Payout Cap
+$3,000
+The Payout Cap is the maximum amount you can request in a single payout, regardless of the total Profit above the Initial Simulated Capital accumulated.
+The Payout Cap is $3,000 per request.
+Example
+If you have accumulated $4,500 in Profit above the Initial Simulated Capital during the current payout cycle, you may request up to $3,000 in a single payout. The remaining $1,500 stays in your account and, if applicable Payout conditions are fulfilled, can be included in your next payout request.
+Payout Cap
+$4,000
+The Payout Cap is the maximum amount you can request in a single payout, regardless of the total Profit above the Initial Simulated Capital accumulated.
+The Payout Cap is $4,000 per request.
+Example
+If you have accumulated $5,500 in Profit above the Initial Simulated Capital during the current payout cycle, you may request up to $4,000 in a single payout. The remaining $1,500 stays in your account and, if applicable Payout conditions are fulfilled, can be included in your next payout request.
+Payout Cap
+$5,000
+The Payout Cap is the maximum amount you can request in a single payout, regardless of the total Profit above the Initial Simulated Capital accumulated.
+The Payout Cap is $5,000 per request.
+Example
+If you have accumulated $8,000 in Profit above the Initial Simulated Capital during the current payout cycle, you may request up to $5,000 in a single payout. The remaining $3,000 stays in your account and, if applicable Payout conditions are fulfilled, can be included in your next payout request.
+Payout Cap
+$6,000
+The Payout Cap is the maximum amount you can request in a single payout, regardless of the total Profit above the Initial Simulated Capital accumulated.
+The Payout Cap is $6,000 per request.
+Example
+If you have accumulated $9,000 in Profit above the Initial Simulated Capital during the current payout cycle, you may request up to $6,000 in a single payout. The remaining $3,000 stays in your account and, if applicable Payout conditions are fulfilled, can be included in your next payout request.
+Payout Cap
+$8,000
+The Payout Cap is the maximum amount you can request in a single payout, regardless of the total Profit above the Initial Simulated Capital accumulated.
+The Payout Cap is $8,000 per request.
+Example
+If you have accumulated $11,000 in Profit above the Initial Simulated Capital during the current payout cycle, you may request up to $8,000 in a single payout. The remaining $3,000 stays in your account and, if applicable Payout conditions are fulfilled, can be included in your next payout request.
+Payout Ratio
+90/10
+FTMO Futures operates on a 90/10 ratio . You may withdraw 90% of the amount you requested for withdrawal after applying the other applicable Payout conditions such as the Payout Cap.
+Example
+Requested Payout = $2,000
+Payout receivable by the FTMO Trader (90% of $2,000 ) = $1,800
+Payout Ratio
+90/10
+FTMO Futures operates on a 90/10 ratio . You may withdraw 90% of the amount you requested for withdrawal after applying the other applicable Payout conditions such as the Payout Cap.
+Example
+Requested Payout = $2,500
+Payout receivable by the FTMO Trader (90% of $2,500 ) = $2,250
+Payout Ratio
+90/10
+FTMO Futures operates on a 90/10 ratio . You may withdraw 90% of the amount you requested for withdrawal after applying the other applicable Payout conditions such as the Payout Cap.
+Example
+Requested Payout = $3,500
+Payout receivable by the FTMO Trader (90% of $3,500 ) = $3,150
+Payout Ratio
+90/10
+FTMO Futures operates on a 90/10 ratio . You may withdraw 90% of the amount you requested for withdrawal after applying the other applicable Payout conditions such as the Payout Cap.
+Example
+Requested Payout = $2,000
+Payout receivable by the FTMO Trader (90% of $2,000 ) = $1,800
+Payout Ratio
+90/10
+FTMO Futures operates on a 90/10 ratio . You may withdraw 90% of the amount you requested for withdrawal after applying the other applicable Payout conditions such as the Payout Cap.
+Example
+Requested Payout = $4,000
+Payout receivable by the FTMO Trader (90% of $4,000 ) = $3,600
+Payout Ratio
+90/10
+FTMO Futures operates on a 90/10 ratio . You may withdraw 90% of the amount you requested for withdrawal after applying the other applicable Payout conditions such as the Payout Cap.
+Example
+Requested Payout = $6,000
+Payout receivable by the FTMO Trader (90% of $6,000 ) = $5,400
+Subscription & Fees
+Monthly Fee
+$119/month
+Access to your FTMO Futures Growth Evaluation Account is billed on a monthly subscription basis. There is no activation fee . Your subscription remains active even if the Evaluation Account is breached. If your account is not breached, your Evaluation simply continues into the next billing cycle. If your account is breached, you will receive a new account on the Trading Platform on the next billing date to continue trading.
+The monthly fee is $119/month .
+Monthly Fee
+$169/month
+Access to your FTMO Futures Growth Evaluation Account is billed on a monthly subscription basis. There is no activation fee . Your subscription remains active even if the Evaluation Account is breached. If your account is not breached, your Evaluation simply continues into the next billing cycle. If your account is breached, you will receive a new account on the Trading Platform on the next billing date to continue trading.
+The monthly fee is $169/month .
+Monthly Fee
+$229/month
+Access to your FTMO Futures Growth Evaluation Account is billed on a monthly subscription basis. There is no activation fee . Your subscription remains active even if the Evaluation Account is breached. If your account is not breached, your Evaluation simply continues into the next billing cycle. If your account is breached, you will receive a new account on the Trading Platform on the next billing date to continue trading.
+The monthly fee is $229/month .
+Monthly Fee
+$139/month
+Access to your FTMO Futures Pro Evaluation Account is billed on a monthly subscription basis. There is no activation fee . Your subscription remains active even if the Evaluation Account is breached. If your account is not breached, your Evaluation simply continues into the next billing cycle. If your account is breached, you will receive a new account on the Trading Platform on the next billing date to continue trading.
+The monthly fee is $139/month .
+Monthly Fee
+$199/month
+Access to your FTMO Futures Pro Evaluation Account is billed on a monthly subscription basis. There is no activation fee . Your subscription remains active even if the Evaluation Account is breached. If your account is not breached, your Evaluation simply continues into the next billing cycle. If your account is breached, you will receive a new account on the Trading Platform on the next billing date to continue trading.
+The monthly fee is $199/month .
+Monthly Fee
+$269/month
+Access to your FTMO Futures Pro Evaluation Account is billed on a monthly subscription basis. There is no activation fee . Your subscription remains active even if the Evaluation Account is breached. If your account is not breached, your Evaluation simply continues into the next billing cycle. If your account is breached, you will receive a new account on the Trading Platform on the next billing date to continue trading.
+The monthly fee is $269/month .
+Reset Fee
+$109
+If you wish to restart your Evaluation with the original Initial Simulated Capital sooner, without purchasing a new account or waiting for the next billing period, you may apply a Reset. The Reset Fee returns your account to its original starting conditions.
+The Reset Fee is $109 .
+Please note that applying a Reset does not alter your monthly billing cycle. Your regular subscription fee will still be charged on its originally scheduled date. From technical perspective you will be issued a new account on the trading platform after the Reset.
+Reset Fee
+$159
+If you wish to restart your Evaluation with the original Initial Simulated Capital sooner, without purchasing a new account or waiting for the next billing period, you may apply a Reset. The Reset Fee returns your account to its original starting conditions.
+The Reset Fee is $159 .
+Please note that applying a Reset does not alter your monthly billing cycle. Your regular subscription fee will still be charged on its originally scheduled date. From technical perspective you will be issued a new account on the trading platform after the Reset.
+Reset Fee
+$219
+If you wish to restart your Evaluation with the original Initial Simulated Capital sooner, without purchasing a new account or waiting for the next billing period, you may apply a Reset. The Reset Fee returns your account to its original starting conditions.
+The Reset Fee is $219 .
+Please note that applying a Reset does not alter your monthly billing cycle. Your regular subscription fee will still be charged on its originally scheduled date. From a technical perspective, you will be issued a new account on the trading platform after the Reset.
+Reset Fee
+$129
+If you wish to restart your Evaluation with the original Initial Simulated Capital sooner, without purchasing a new account or waiting for the next billing period, you may apply a Reset. The Reset Fee returns your account to its original starting conditions.
+The Reset Fee is $129 .
+Please note that applying a Reset does not alter your monthly billing cycle. Your regular subscription fee will still be charged on its originally scheduled date. From technical perspective you will be issued a new account on the trading platform after the Reset.
+Reset Fee
+$189
+If you wish to restart your Evaluation with the original Initial Simulated Capital sooner, without purchasing a new account or waiting for the next billing period, you may apply a Reset. The Reset Fee returns your account to its original starting conditions.
+The Reset Fee is $189 .
+Please note that applying a Reset does not alter your monthly billing cycle. Your regular subscription fee will still be charged on its originally scheduled date. From a technical perspective, you will be issued a new account on the trading platform after the Reset.
+Reset Fee
+$259
+If you wish to restart your Evaluation with the original Initial Simulated Capital sooner, without purchasing a new account or waiting for the next billing period, you may apply a Reset. The Reset Fee returns your account to its original starting conditions.
+The Reset Fee is $259 .
+Please note that applying a Reset does not alter your monthly billing cycle. Your regular subscription fee will still be charged on its originally scheduled date. From a technical perspective, you will be issued a new account on the trading platform after the Reset.
+Live Funded
+Daily payouts · the only rule is your Max Drawdown.
+Trading Objectives
+Max Drawdown
+EOD Trailing
+$2,000
+The Maximum Drawdown rule establishes an end-of-day trailing limit (the Maximum Drawdown Limit ) which your account equity (i.e., Balance + Open Positions P&L – Commissions ) cannot hit at any point. If equity hits this limit, the rule is considered violated and the account is terminated.
+The Maximum Drawdown Limit is calculated daily as the difference between the highest account balance recorded at the close of any preceding trading day (or the Initial Capital if higher) and the applicable Maximum Drawdown Amount .
+The limit can only increase , never decrease. Once the Maximum Drawdown Limit reaches the Initial Capital , it locks permanently at that figure for the remaining life of the account.
+The Maximum Drawdown Amount is $2,000 .
+Example
+Limit for Day 1:
+Initial Capital = $2,000
+Calculation = $2,000 – $2,000 = $0
+Limit for Day 1 = $0
+Limit for Day 2:
+Closing Balance of Day 1 = $3,000
+Calculation = $3,000 – $2,000 = $1,000
+Limit for Day 2 = $1,000
+Limit for Day 3:
+Closing Balance of Day 2 = $2,500
+Calculation = $3,000 – $2,000 = $1,000 (Because the Closing Balance of Day 1 was higher than that of Day 2, the highest preceding balance of $3,000 is used for the calculation of the limits.)
+Limit for Day 3 = $1,000
+Limit for Day 4:
+Closing Balance of Day 3 = $4,500
+Calculation = $4,500 – $2,000 = $2,500 (The calculated limit exceeds the Initial Capital, so the Maximum Drawdown Limit locks at the Initial Capital instead.)
+Limit for Day 4 = $2,000 (From now on, the limit is equal to the Initial Capital.)
+Max Drawdown
+Updated
+EOD Trailing
+$3,000
+The Maximum Drawdown rule establishes an end-of-day trailing limit (the Maximum Drawdown Limit ) which your account equity (i.e., Balance + Open Positions P&L – Commissions ) cannot hit at any point. If equity hits this limit, the rule is considered violated and the account is terminated. The Maximum Drawdown Limit is calculated daily as the difference between the highest account balance recorded at the close of any preceding trading day (or the Initial Capital if higher) and the applicable Maximum Drawdown Amount . The limit can only increase , never decrease. Once the Maximum Drawdown Limit reaches the Initial Capital , it locks permanently at that figure for the remaining life of the account. The Maximum Drawdown Amount is $3,000 .
+Example
+Limit for Day 1:
+Initial Capital = $3,000
+Calculation = $3,000 – $3,000 = $0
+Limit for Day 1 = $0
+Limit for Day 2:
+Closing Balance of Day 1 = $5,500
+Calculation = $5,500 – $3,000 = $2,500
+Limit for Day 2 = $2,500
+Limit for Day 3:
+Closing Balance of Day 2 = $5,000
+Calculation = $5,500 – $3,000 = $2,500 (Because the Closing Balance of Day 1 was higher than that of Day 2, the highest preceding balance of $5,500 is used for the calculation of the limits.)
+Limit for Day 3 = $2,500
+Limit for Day 4:
+Closing Balance of Day 3 = $8,000
+Calculation = $8,000 – $3,000 = $5,000 (The calculated limit exceeds the Initial Capital, so the Maximum Drawdown Limit locks at the Initial Capital instead.)
+Limit for Day 4 = $3,000 (From now on, the limit is equal to the Initial Capital.)
+Max Drawdown
+Updated
+EOD Trailing
+$4,500
+The Maximum Drawdown rule establishes an end-of-day trailing limit (the Maximum Drawdown Limit ) which your account equity (i.e., Balance + Open Positions P&L – Commissions ) cannot hit at any point. If equity hits this limit, the rule is considered violated and the account is terminated. The Maximum Drawdown Limit is calculated daily as the difference between the highest account balance recorded at the close of any preceding trading day (or the Initial Capital if higher) and the applicable Maximum Drawdown Amount . The limit can only increase , never decrease. Once the Maximum Drawdown Limit reaches the Initial Capital , it locks permanently at that figure for the remaining life of the account. The Maximum Drawdown Amount is $4,500 .
+Example
+Limit for Day 1:
+Initial Capital = $4,500
+Calculation = $4,500 – $4,500 = $0
+Limit for Day 1 = $0
+Limit for Day 2:
+Closing Balance of Day 1 = $7,500
+Calculation = $7,500 – $4,500 = $3,000
+Limit for Day 2 = $3,000
+Limit for Day 3:
+Closing Balance of Day 2 = $7,000
+Calculation = $7,500 – $4,500 = $3,000 (Because the Closing Balance of Day 1 was higher than that of Day 2, the highest preceding balance of $7,500 is used for the calculation of the limits.)
+Limit for Day 3 = $3,000
+Limit for Day 4:
+Closing Balance of Day 3 = $11,000
+Calculation = $11,000 – $4,500 = $6,500 (The calculated limit exceeds the Initial Capital, so the Maximum Drawdown Limit locks at the Initial Capital instead.)
+Limit for Day 4 = $4,500 (From now on, the limit is equal to the Initial Capital.)
+Max Drawdown
+EOD Trailing
+$3,000
+The Maximum Drawdown rule establishes an end-of-day trailing limit (the Maximum Drawdown Limit ) which your account equity (i.e., Balance + Open Positions P&L – Commissions ) cannot hit at any point. If equity hits this limit, the rule is considered violated and the account is terminated.
+The Maximum Drawdown Limit is calculated daily as the difference between the highest account balance recorded at the close of any preceding trading day (or the Initial Capital if higher) and the applicable Maximum Drawdown Amount .
+The limit can only increase , never decrease. Once the Maximum Drawdown Limit reaches the Initial Capital , it locks permanently at that figure for the remaining life of the account.
+The Maximum Drawdown Amount is $3,000 .
+Example
+Limit for Day 1:
+Initial Capital = $3,000
+Calculation = $3,000 – $3,000 = $0
+Limit for Day 1 = $0
+Limit for Day 2:
+Closing Balance of Day 1 = $5,000
+Calculation = $5,000 – $3,000 = $2,000
+Limit for Day 2 = $2,000
+Limit for Day 3:
+Closing Balance of Day 2 = $4,000
+Calculation = $5,000 – $3,000 = $2,000 (Because the Closing Balance of Day 1 was higher than that of Day 2, the highest preceding balance of $5,000 is used for the calculation of the limits.)
+Limit for Day 3 = $2,000
+Limit for Day 4:
+Closing Balance of Day 3 = $7,000
+Calculation = $7,000 – $3,000 = $4,000 (The calculated limit exceeds the Initial Capital, so the Maximum Drawdown Limit locks at the Initial Capital instead.)
+Limit for Day 4 = $3,000 (From now on, the limit is equal to the Initial Capital.)
+Max Drawdown
+EOD Trailing
+$4,500
+The Maximum Drawdown rule establishes an end-of-day trailing limit (the Maximum Drawdown Limit ) which your account equity (i.e., Balance + Open Positions P&L – Commissions ) cannot hit at any point. If equity hits this limit, the rule is considered violated and the account is terminated.
+The Maximum Drawdown Limit is calculated daily as the difference between the highest account balance recorded at the close of any preceding trading day (or the Initial Capital if higher) and the applicable Maximum Drawdown Amount .
+The limit can only increase , never decrease. Once the Maximum Drawdown Limit reaches the Initial Capital , it locks permanently at that figure for the remaining life of the account.
+The Maximum Drawdown Amount is $4,500 .
+Example
+Limit for Day 1:
+Initial Capital = $4,500
+Calculation = $4,500 – $4,500 = $0
+Limit for Day 1 = $0
+Limit for Day 2:
+Closing Balance of Day 1 = $7,500
+Calculation = $7,500 – $4,500 = $3,000
+Limit for Day 2 = $3,000
+Limit for Day 3:
+Closing Balance of Day 2 = $6,500
+Calculation = $7,500 – $4,500 = $3,000 (Because the Closing Balance of Day 1 was higher than that of Day 2, the highest preceding balance of $7,500 is used for the calculation of the limits.)
+Limit for Day 3 = $3,000
+Limit for Day 4:
+Closing Balance of Day 3 = $10,000
+Calculation = $10,000 – $4,500 = $5,500 (The calculated limit exceeds the Initial Capital, so the Maximum Drawdown Limit locks at the Initial Capital instead.)
+Limit for Day 4 = $4,500 (From now on, the limit is equal to the Initial Capital.)
+Max Drawdown
+EOD Trailing
+$6,000
+The Maximum Drawdown rule establishes an end-of-day trailing limit (the Maximum Drawdown Limit ) which your account equity (i.e., Balance + Open Positions P&L – Commissions ) cannot hit at any point. If equity hits this limit, the rule is considered violated and the account is terminated.
+The Maximum Drawdown Limit is calculated daily as the difference between the highest account balance recorded at the close of any preceding trading day (or the Initial Capital if higher) and the applicable Maximum Drawdown Amount .
+The limit can only increase , never decrease. Once the Maximum Drawdown Limit reaches the Initial Capital , it locks permanently at that figure for the remaining life of the account.
+The Maximum Drawdown Amount is $6,000 .
+Example
+Limit for Day 1:
+Initial Capital = $6,000
+Calculation = $6,000 – $6,000 = $0
+Limit for Day 1 = $0
+Limit for Day 2:
+Closing Balance of Day 1 = $9,000
+Calculation = $9,000 – $6,000 = $3,000
+Limit for Day 2 = $3,000
+Limit for Day 3:
+Closing Balance of Day 2 = $8,000
+Calculation = $9,000 – $6,000 = $3,000 (Because the Closing Balance of Day 1 was higher than that of Day 2, the highest preceding balance of $9,000 is used for the calculation of the limits.)
+Limit for Day 3 = $3,000
+Limit for Day 4:
+Closing Balance of Day 3 = $13,000
+Calculation = $13,000 – $6,000 = $7,000 (The calculated limit exceeds the Initial Capital, so the Maximum Drawdown Limit locks at the Initial Capital instead.)
+Limit for Day 4 = $6,000 (From now on, the limit is equal to the Initial Capital.)
+Daily Loss Limit
+None
+There is no Daily Loss Limit on the Live Funded Account .
+Daily Loss Limit
+None
+There is no Daily Loss Limit on the Live Funded Account .
+Daily Loss Limit
+None
+There is no Daily Loss Limit on the Live Funded Account .
+Daily Loss Limit
+None
+There is no Daily Loss Limit on the Live Funded Account .
+Daily Loss Limit
+None
+There is no Daily Loss Limit on the Live Funded Account .
+Daily Loss Limit
+None
+There is no Daily Loss Limit on the Live Funded Account .
+Account Limits
+Max Contracts
+Same as Evaluation
+The Max Contracts rule limits the maximum number of contracts you may hold simultaneously at any given time, across all instruments.
+The Max Contracts limit on your Live Funded Account is the same as on your Evaluation Account, unless communicated to you individually.
+Max Contracts
+Same as Evaluation
+The Max Contracts rule limits the maximum number of contracts you may hold simultaneously at any given time, across all instruments.
+The Max Contracts limit on your Live Funded Account is the same as on your Evaluation Account, unless communicated to you individually.
+Max Contracts
+Same as Evaluation
+The Max Contracts rule limits the maximum number of contracts you may hold simultaneously at any given time, across all instruments.
+The Max Contracts limit on your Live Funded Account is the same as on your Evaluation Account, unless communicated to you individually.
+Max Contracts
+Same as Evaluation
+The Max Contracts rule limits the maximum number of contracts you may hold simultaneously at any given time, across all instruments.
+The Max Contracts limit on your Live Funded Account is the same as on your Evaluation Account, unless communicated to you individually.
+Max Contracts
+Same as Evaluation
+The Max Contracts rule limits the maximum number of contracts you may hold simultaneously at any given time, across all instruments.
+The Max Contracts limit on your Live Funded Account is the same as on your Evaluation Account, unless communicated to you individually.
+Max Contracts
+Same as Evaluation
+The Max Contracts rule limits the maximum number of contracts you may hold simultaneously at any given time, across all instruments.
+The Max Contracts limit on your Live Funded Account is the same as on your Evaluation Account, unless communicated to you individually.
+Max Concurrent Accounts
+3 accounts
+Can I hold other accounts alongside a Live Funded Account?
+Once you hold a Live Funded Account, you cannot hold Evaluation or Sim-Funded Accounts. You may hold a maximum of 3 concurrent Live Funded Accounts at any one time, across all account sizes and product types.
+When you move to a Live Funded Account:
+Sim-Funded Accounts with at least one approved payout are eligible to move to Live Funded.
+Sim-Funded Accounts without a payout and any ongoing Evaluations are closed.
+For each closed account, we refund the last payment made for it. For a Sim-Funded Account, this is the last payment you made for the Evaluation you passed. Refunds cover the amount you actually paid, after any discounts. Reset fees are not refunded.
+Max Concurrent Accounts
+3 accounts
+Can I hold other accounts alongside a Live Funded Account?
+Once you hold a Live Funded Account, you cannot hold Evaluation or Sim-Funded Accounts. You may hold a maximum of 3 concurrent Live Funded Accounts at any one time, across all account sizes and product types.
+When you move to a Live Funded Account:
+Sim-Funded Accounts with at least one approved payout are eligible to move to Live Funded.
+Sim-Funded Accounts without a payout and any ongoing Evaluations are closed.
+For each closed account, we refund the last payment made for it. For a Sim-Funded Account, this is the last payment you made for the Evaluation you passed. Refunds cover the amount you actually paid, after any discounts. Reset fees are not refunded.
+Max Concurrent Accounts
+3 accounts
+Can I hold other accounts alongside a Live Funded Account?
+Once you hold a Live Funded Account, you cannot hold Evaluation or Sim-Funded Accounts. You may hold a maximum of 3 concurrent Live Funded Accounts at any one time, across all account sizes and product types.
+When you move to a Live Funded Account:
+Sim-Funded Accounts with at least one approved payout are eligible to move to Live Funded.
+Sim-Funded Accounts without a payout and any ongoing Evaluations are closed.
+For each closed account, we refund the last payment made for it. For a Sim-Funded Account, this is the last payment you made for the Evaluation you passed. Refunds cover the amount you actually paid, after any discounts. Reset fees are not refunded.
+Max Concurrent Accounts
+3 accounts
+Can I hold other accounts alongside a Live Funded Account?
+Once you hold a Live Funded Account, you cannot hold Evaluation or Sim-Funded Accounts. You may hold a maximum of 3 concurrent Live Funded Accounts at any one time, across all account sizes and product types.
+When you move to a Live Funded Account:
+Sim-Funded Accounts with at least one approved payout are eligible to move to Live Funded.
+Sim-Funded Accounts without a payout and any ongoing Evaluations are closed.
+For each closed account, we refund the last payment made for it. For a Sim-Funded Account, this is the last payment you made for the Evaluation you passed. Refunds cover the amount you actually paid, after any discounts. Reset fees are not refunded.
+Max Concurrent Accounts
+3 accounts
+Can I hold other accounts alongside a Live Funded Account?
+Once you hold a Live Funded Account, you cannot hold Evaluation or Sim-Funded Accounts. You may hold a maximum of 3 concurrent Live Funded Accounts at any one time, across all account sizes and product types.
+When you move to a Live Funded Account:
+Sim-Funded Accounts with at least one approved payout are eligible to move to Live Funded.
+Sim-Funded Accounts without a payout and any ongoing Evaluations are closed.
+For each closed account, we refund the last payment made for it. For a Sim-Funded Account, this is the last payment you made for the Evaluation you passed. Refunds cover the amount you actually paid, after any discounts. Reset fees are not refunded.
+Max Concurrent Accounts
+3 accounts
+Can I hold other accounts alongside a Live Funded Account?
+Once you hold a Live Funded Account, you cannot hold Evaluation or Sim-Funded Accounts. You may hold a maximum of 3 concurrent Live Funded Accounts at any one time, across all account sizes and product types.
+When you move to a Live Funded Account:
+Sim-Funded Accounts with at least one approved payout are eligible to move to Live Funded.
+Sim-Funded Accounts without a payout and any ongoing Evaluations are closed.
+For each closed account, we refund the last payment made for it. For a Sim-Funded Account, this is the last payment you made for the Evaluation you passed. Refunds cover the amount you actually paid, after any discounts. Reset fees are not refunded.
+Forbidden Trading Practices
+Certain trading behaviours are prohibited across all FTMO Futures accounts, regardless of phase or account type. These are defined in full on the Forbidden Trading Practices page. Breaching any Forbidden Trading Practices may result in account termination or other action as described in the applicable Terms and Conditions.
+Forbidden Trading Practices
+Certain trading behaviours are prohibited across all FTMO Futures accounts, regardless of phase or account type. These are defined in full on the Forbidden Trading Practices page. Breaching any Forbidden Trading Practices may result in account termination or other action as described in the applicable Terms and Conditions.
+Forbidden Trading Practices
+Certain trading behaviours are prohibited across all FTMO Futures accounts, regardless of phase or account type. These are defined in full on the Forbidden Trading Practices page. Breaching any Forbidden Trading Practices may result in account termination or other action as described in the applicable Terms and Conditions.
+Forbidden Trading Practices
+Certain trading behaviours are prohibited across all FTMO Futures accounts, regardless of phase or account type. These are defined in full on the Forbidden Trading Practices page. Breaching any Forbidden Trading Practices may result in account termination or other action as described in the applicable Terms and Conditions.
+Forbidden Trading Practices
+Certain trading behaviours are prohibited across all FTMO Futures accounts, regardless of phase or account type. These are defined in full on the Forbidden Trading Practices page. Breaching any Forbidden Trading Practices may result in account termination or other action as described in the applicable Terms and Conditions.
+Forbidden Trading Practices
+Certain trading behaviours are prohibited across all FTMO Futures accounts, regardless of phase or account type. These are defined in full on the Forbidden Trading Practices page. Breaching any Forbidden Trading Practices may result in account termination or other action as described in the applicable Terms and Conditions.
+Payouts
+90 / 10
+Payout ratio
+100%
+Withdrawal
+Daily
+Payout frequency
+None
+Payout cap
+Safety Net
+$2,000
+Your Live Funded Account starts with an Initial Capital equal to the Maximum Drawdown Amount . The Safety Net is the same amount.
+The Safety Net is $2,000 .
+Because the Maximum Drawdown Limit is an end-of-day trailing limit, it rises with your closing balance until it locks at the Initial Capital . This happens once your balance has grown by the amount of the Safety Net .
+To become eligible to request a payout, you must clear the Safety Net. Payouts are available from the balance above the Initial Capital.
+Example
+Initial Capital = $2,000
+Safety Net = $2,000
+Balance after building the Safety Net = $4,000 (the Maximum Drawdown Limit locks at $2,000 )
+Balance later = $5,500
+Withdrawable amount = $3,500 (everything above $2,000 )
+If equity hits $2,000 , the account is terminated due to a breach of the Maximum Drawdown.
+Safety Net
+Updated
+$3,000
+Your Live Funded Account starts with an Initial Capital equal to the Maximum Drawdown Amount . The Safety Net is the same amount. The Safety Net is $3,000 . Because the Maximum Drawdown Limit is an end-of-day trailing limit, it rises with your closing balance until it locks at the Initial Capital . This happens once your balance has grown by the amount of the Safety Net . To become eligible to request a payout, you must clear the Safety Net. Payouts are available from the balance above the Initial Capital.
+Example
+Initial Capital = $3,000
+Safety Net = $3,000
+Balance after building the Safety Net = $6,000 (the Maximum Drawdown Limit locks at $3,000 )
+Balance later = $8,500
+Withdrawable amount = $5,500 (everything above $3,000 )
+If equity hits $3,000 , the account is terminated due to a breach of the Maximum Drawdown.
+Safety Net
+Updated
+$4,500
+Your Live Funded Account starts with an Initial Capital equal to the Maximum Drawdown Amount . The Safety Net is the same amount. The Safety Net is $4,500 . Because the Maximum Drawdown Limit is an end-of-day trailing limit, it rises with your closing balance until it locks at the Initial Capital . This happens once your balance has grown by the amount of the Safety Net . To become eligible to request a payout, you must clear the Safety Net. Payouts are available from the balance above the Initial Capital.
+Example
+Initial Capital = $4,500
+Safety Net = $4,500
+Balance after building the Safety Net = $9,000 (the Maximum Drawdown Limit locks at $4,500 )
+Balance later = $12,500
+Withdrawable amount = $8,000 (everything above $4,500 )
+If equity hits $4,500 , the account is terminated due to a breach of the Maximum Drawdown.
+Safety Net
+$3,000
+Your Live Funded Account starts with an Initial Capital equal to the Maximum Drawdown Amount . The Safety Net is the same amount.
+The Safety Net is $3,000 .
+Because the Maximum Drawdown Limit is an end-of-day trailing limit, it rises with your closing balance until it locks at the Initial Capital . This happens once your balance has grown by the amount of the Safety Net .
+To become eligible to request a payout, you must clear the Safety Net. Payouts are available from the balance above the Initial Capital.
+Example
+Initial Capital = $3,000
+Safety Net = $3,000
+Balance after building the Safety Net = $6,000 (the Maximum Drawdown Limit locks at $3,000 )
+Balance later = $7,500
+Withdrawable amount = $4,500 (everything above $3,000 )
+If equity hits $3,000 , the account is terminated due to a breach of the Maximum Drawdown.
+Safety Net
+$4,500
+Your Live Funded Account starts with an Initial Capital equal to the Maximum Drawdown Amount . The Safety Net is the same amount.
+The Safety Net is $4,500 .
+Because the Maximum Drawdown Limit is an end-of-day trailing limit, it rises with your closing balance until it locks at the Initial Capital . This happens once your balance has grown by the amount of the Safety Net .
+To become eligible to request a payout, you must clear the Safety Net. Payouts are available from the balance above the Initial Capital.
+Example
+Initial Capital = $4,500
+Safety Net = $4,500
+Balance after building the Safety Net = $9,000 (the Maximum Drawdown Limit locks at $4,500 )
+Balance later = $11,000
+Withdrawable amount = $6,500 (everything above $4,500 )
+If equity hits $4,500 , the account is terminated due to a breach of the Maximum Drawdown.
+Safety Net
+$6,000
+Your Live Funded Account starts with an Initial Capital equal to the Maximum Drawdown Amount . The Safety Net is the same amount.
+The Safety Net is $6,000 .
+Because the Maximum Drawdown Limit is an end-of-day trailing limit, it rises with your closing balance until it locks at the Initial Capital . This happens once your balance has grown by the amount of the Safety Net .
+To become eligible to request a payout, you must clear the Safety Net. Payouts are available from the balance above the Initial Capital.
+Example
+Initial Capital = $6,000
+Safety Net = $6,000
+Balance after building the Safety Net = $12,000 (the Maximum Drawdown Limit locks at $6,000 )
+Balance later = $15,000
+Withdrawable amount = $9,000 (everything above $6,000 )
+If equity hits $6,000 , the account is terminated due to a breach of the Maximum Drawdown.
+Payout Eligibility
+None
+There is no minimum number of Qualifying Days or daily profit threshold on the Live Funded Account. To request a payout, you only need to clear the Safety Net.
+Payout Eligibility
+None
+There is no minimum number of Qualifying Days or daily profit threshold on the Live Funded Account. To request a payout, you only need to clear the Safety Net.
+Payout Eligibility
+None
+There is no minimum number of Qualifying Days or daily profit threshold on the Live Funded Account. To request a payout, you only need to clear the Safety Net.
+Payout Eligibility
+None
+There is no minimum number of Qualifying Days or daily profit threshold on the Live Funded Account. To request a payout, you only need to clear the Safety Net.
+Payout Eligibility
+None
+There is no minimum number of Qualifying Days or daily profit threshold on the Live Funded Account. To request a payout, you only need to clear the Safety Net.
+Payout Eligibility
+None
+There is no minimum number of Qualifying Days or daily profit threshold on the Live Funded Account. To request a payout, you only need to clear the Safety Net.
+Min New Profit for Request
+None
+There is no minimum new profit required to request a payout on the Live Funded Account.
+Min New Profit for Request
+None
+There is no minimum new profit required to request a payout on the Live Funded Account.
+Min New Profit for Request
+None
+There is no minimum new profit required to request a payout on the Live Funded Account.
+Min New Profit for Request
+None
+There is no minimum new profit required to request a payout on the Live Funded Account.
+Min New Profit for Request
+None
+There is no minimum new profit required to request a payout on the Live Funded Account.
+Min New Profit for Request
+None
+There is no minimum new profit required to request a payout on the Live Funded Account.
+Withdrawable Amount
+100%
+You may request to withdraw up to 100% of your balance above the Initial Capital. Please note that the final amount of your payout is further influenced by the payout ratio.
+The minimum amount available for payout is $20 .
+Example
+If your balance is $5,500 , you may request up to $3,500 in a single payout (everything above $2,000 ).
+Withdrawable Amount
+100%
+You may request to withdraw up to 100% of your balance above the Initial Capital. Please note that the final amount of your payout is further influenced by the payout ratio.
+The minimum amount available for payout is $20 .
+Example
+If your balance is $8,500 , you may request up to $5,500 in a single payout (everything above $3,000 ).
+Withdrawable Amount
+100%
+You may request to withdraw up to 100% of your balance above the Initial Capital. Please note that the final amount of your payout is further influenced by the payout ratio.
+The minimum amount available for payout is $20 .
+Example
+If your balance is $12,500 , you may request up to $8,000 in a single payout (everything above $4,500 ).
+Withdrawable Amount
+100%
+You may request to withdraw up to 100% of your balance above the Initial Capital. Please note that the final amount of your payout is further influenced by the payout ratio.
+The minimum amount available for payout is $20 .
+Example
+If your balance is $7,500 , you may request up to $4,500 in a single payout (everything above $3,000 ).
+Withdrawable Amount
+100%
+You may request to withdraw up to 100% of your balance above the Initial Capital. Please note that the final amount of your payout is further influenced by the payout ratio.
+The minimum amount available for payout is $20 .
+Example
+If your balance is $11,000 , you may request up to $6,500 in a single payout (everything above $4,500 ).
+Withdrawable Amount
+100%
+You may request to withdraw up to 100% of your balance above the Initial Capital. Please note that the final amount of your payout is further influenced by the payout ratio.
+The minimum amount available for payout is $20 .
+Example
+If your balance is $15,000 , you may request up to $9,000 in a single payout (everything above $6,000 ).
+Payout Cap
+None
+There is no Payout Cap on the Live Funded Account .
+Payout Cap
+None
+There is no Payout Cap on the Live Funded Account .
+Payout Cap
+None
+There is no Payout Cap on the Live Funded Account .
+Payout Cap
+None
+There is no Payout Cap on the Live Funded Account .
+Payout Cap
+None
+There is no Payout Cap on the Live Funded Account .
+Payout Cap
+None
+There is no Payout Cap on the Live Funded Account .
+Payout Ratio
+90/10
+FTMO Futures operates on a 90/10 ratio . You may withdraw 90% of the amount you requested for withdrawal after applying the other applicable Payout conditions.
+Example
+Requested Payout = $2,000
+Payout receivable by the trader (90% of $2,000 ) = $1,800
+Payout Ratio
+90/10
+FTMO Futures operates on a 90/10 ratio . You may withdraw 90% of the amount you requested for withdrawal after applying the other applicable Payout conditions.
+Example
+Requested Payout = $2,000
+Payout receivable by the trader (90% of $2,000 ) = $1,800
+Payout Ratio
+90/10
+FTMO Futures operates on a 90/10 ratio . You may withdraw 90% of the amount you requested for withdrawal after applying the other applicable Payout conditions.
+Example
+Requested Payout = $2,000
+Payout receivable by the trader (90% of $2,000 ) = $1,800
+Payout Ratio
+90/10
+FTMO Futures operates on a 90/10 ratio . You may withdraw 90% of the amount you requested for withdrawal after applying the other applicable Payout conditions.
+Example
+Requested Payout = $2,000
+Payout receivable by the trader (90% of $2,000 ) = $1,800
+Payout Ratio
+90/10
+FTMO Futures operates on a 90/10 ratio . You may withdraw 90% of the amount you requested for withdrawal after applying the other applicable Payout conditions.
+Example
+Requested Payout = $2,000
+Payout receivable by the trader (90% of $2,000 ) = $1,800
+Payout Ratio
+90/10
+FTMO Futures operates on a 90/10 ratio . You may withdraw 90% of the amount you requested for withdrawal after applying the other applicable Payout conditions.
+Example
+Requested Payout = $2,000
+Payout receivable by the trader (90% of $2,000 ) = $1,800
+Market Data
+Market Data Fee
+A market data fee applies for access to live market data. FTMO covers one exchange for you (CME). Any additional market data feeds are paid for by you, directly to the platform provider, from your own card.
+Market Data Fee
+A market data fee applies for access to live market data. FTMO covers one exchange for you (CME). Any additional market data feeds are paid for by you, directly to the platform provider, from your own card.
+Market Data Fee
+A market data fee applies for access to live market data. FTMO covers one exchange for you (CME). Any additional market data feeds are paid for by you, directly to the platform provider, from your own card.
+Market Data Fee
+A market data fee applies for access to live market data. FTMO covers one exchange for you (CME). Any additional market data feeds are paid for by you, directly to the platform provider, from your own card.
+Market Data Fee
+A market data fee applies for access to live market data. FTMO covers one exchange for you (CME). Any additional market data feeds are paid for by you, directly to the platform provider, from your own card.
+Market Data Fee
+A market data fee applies for access to live market data. FTMO covers one exchange for you (CME). Any additional market data feeds are paid for by you, directly to the platform provider, from your own card.
+Link copied
+Start Your Evaluation Today
+Unlimited Evaluation Accounts
+Trade with up to 3 Sim-Funded accounts
+Up to $450,000 in simulated capital
+Keep up to 90% of your simulated profits
+Trade Futures
+Worldwide Reviews
+Prove Your Skills with a Trusted Firm
+We've been empowering traders since 2015. Join them now!
+4.5M+
+Customers worldwide
+$650M+
+Paid in rewards
+4.8/5
+Trustpilot
+Top Searches
+FAQ
+How it Works
+Affiliate Programme
+Trading Objectives
+FTMO Shop
+Support
+Chat with us
+Start the chat
+[email protected]
++420 910 920 310
+Follow FTMO
+Follow FTMO Futures
+CFD
+CFDs Overview
+Pricing
+How CFDs Work
+FTMO Free Trial
+Trading Objectives
+1-Step FTMO Challenge
+2-Step FTMO Challenge
+FTMO Instant Account
+Comparison Table
+Forbidden Trading Practices
+Grow
+Premium Programme
+Scaling plan
+Futures
+Futures Overview
+Pricing
+How Futures Works
+Trading Objectives
+Comparison Table
+Forbidden Trading Practices
+Trading
+Economic Calendar
+Trading Updates
+Instruments
+Trading Platforms
+Tools & Services
+Tools Overview
+Trading Psychology
+Leaderboard
+App Suite
+Resources
+FAQ
+Blog
+Academy
+About
+About Us
+Careers
+Contact us
+Press Kit
+Press Releases
+Affiliate programme
+ADDRESS
+FTMO
+Quadrio offices
+Purkynova 2121/3
+110 00 Prague
+Czech Republic
+Get Exclusive FTMO Insights
+Expert Trading Insights
+Latest Updates
+Special Offers
+Subscribe
+You’re subscribed successfully.
+All information provided on this site is intended solely for educational purposes related to trading on financial markets and does not serve in any way as a specific investment recommendation, business recommendation, investment opportunity analysis or similar general recommendation regarding the trading of investment instruments. FTMO only provides services of simulated trading and educational tools for traders. The information on this site is not directed at residents in any country or jurisdiction where such distribution or use would be contrary to local laws or regulations. FTMO companies do not act as a broker and do not accept any deposits. The offered technical solution for the FTMO platforms and data feed is powered by liquidity providers.
+Copyright © 2026 FTMO s.r.o. All rights reserved.
+Cookie settings
+Cookies
+Imprint
+Terms & Conditions
+Privacy Policy
+Made with for trading
+FTMO Futures is English only
+The rest of the site stays in your language.
+Continue
+Back to CFD
+Please note that all accounts we provide to our clients are demo accounts with fictitious funds and any trading is in a simulated environment only. For more information, please feel free to visit our FAQ section. Ok, I understand.

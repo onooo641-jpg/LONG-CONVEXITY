@@ -1,0 +1,258 @@
+Studio Plans - A Comprehensive Guide | My Funded Futures Help Center Skip to main content
+Go to website Discord YouTube English हिन्दी Español English
+Go to website Discord YouTube English हिन्दी Español English
+Search for articles...
+All Collections
+Studio Plans
+Studio Plans - A Comprehensive Guide
+Studio Plans - A Comprehensive Guide
+Updated over 3 weeks ago
+Table of contents
+Studio is MyFundedFutures’ space for trying new plan structures. Each Studio release is its own plan with its own evaluation and payout rules.
+The first two releases are Studio #001 and Studio #002 . They share the same rules and payouts at two account sizes, with one loss rule to remember: a static Max Loss Limit (MLL) .
+Effective October 14th, 2026 we have now added the #003 to our Studio line up.
+Studio plans are sold only on the dedicated Studio page ( myfundedfutures.com/studio ). Availability is limited, and each plan has a daily purchase cap.
+At a glance
+Studio #001
+Studio #002
+Studio #003
+Account size
+$10,000
+$20,000
+$5,000
+Price (one-time)
+$140
+$280
+$75
+Activation fee
+$0
+$0
+$0
+Profit target (Evaluation)
+$1,000
+$2,000
+$500
+Max Loss Limit (static)
+$500
+$1,000
+$250
+Max contracts
+10 micros (no minis)
+20 micros (no minis)
+5 micros (no minis)
+Daily Loss Limit
+None
+None
+None
+Consistency rule
+None
+None
+None
+Minimum trading days
+None
+None
+None
+Sim Funded daily profit cap
+$5,000
+$10,000
+$2,500
+Profit split (Sim Funded)
+80/20
+80/20
+80/20
+Profit split (Live)
+90/10
+90/10
+90/10
+What makes Studio different
+Static Max Loss Limit — Your MLL is set when the account starts and never moves. There is no trailing drawdown and no end-of-day reset of the floor during Evaluation or Sim Funded.
+No Daily Loss Limit — There is no soft pause or hard daily loss limit on Studio.
+No consistency rule — Not in Evaluation and not in Sim Funded.
+Payouts anytime — On Sim Funded, you can request all (or part) of your net profits anytime once positions are closed. Minimum $100/$250 before the split. No waiting period, buffer, or qualifying days.
+Evaluation stage
+Hit the profit target without breaching the Max Loss Limit to pass. There is no minimum trading-day requirement and no consistency rule.
+Parameter
+Studio #001
+Studio #002
+Studio #003
+Starting balance
+$10,000
+$20,000
+$5,000
+Profit target
+$1,000
+$2,000
+$500
+Max Loss Limit
+$500 (static)
+$1,000 (static)
+$250 (static)
+Daily Loss Limit
+None
+None
+None
+Consistency
+None
+None
+None
+Minimum trading days
+None
+None
+None
+Max contracts
+10 micros · no minis
+20 micros · no minis
+5 micros · no minis
+News trading
+Allowed
+Allowed
+Allowed
+Inactivity
+7 calendar days
+7 calendar days
+7 calendar days
+Once you reach the profit target without breaching the MLL, you are promoted to Sim Funded.
+Sim Funded stage
+Your Sim Funded account begins at a $0 balance. The same static MLL and contract limits from Evaluation carry through.
+Parameter
+Studio #001
+Studio #002
+Studio #003
+Starting balance
+$0
+$0
+$0
+Max Loss Limit
+$500 (static)
+$1,000 (static)
+$250 (static)
+Daily Loss Limit
+None
+None
+None
+Consistency
+None
+None
+None
+Daily profit cap
+$5,000
+$10,000
+$2,500
+Max contracts
+10 micros · no minis
+20 micros · no minis
+5 micros · no minis
+News trading
+Allowed
+Allowed
+Allowed
+Inactivity
+7 calendar days
+7 calendar days
+7 calendar days
+Active accounts
+1 Studio Account
+(Evaluation or Sim Funded)
+1 Studio Account
+(Evaluation or Sim Funded)
+1 Studio Account
+(Evaluation or Sim Funded)
+Daily profit cap
+On a Sim Funded account, net realized profit above the daily cap in a single trading day is forfeited and cannot be withdrawn:
+Studio #001: $5,000
+Studio #002: $10,000
+Studio #003: $2,500
+Anything at or under the cap for that day remains available under normal payout rules.
+Payout policy (Sim Funded)
+Parameter
+Studio #001 & #002
+Profit split
+80/20 - 80% to the trader
+When you can request
+Anytime
+What you can request
+Net profits above $0 — all or part
+Minimum request
+Studios #001 and #002 - $250
+Studio #003 - $100
+All requests are gross profits before profit split.
+Waiting period / buffer / qualifying days
+None
+Payout request steps
+Close all positions and request at least
+$250 in the dashboard for Studio #001 and #002
+$100 in the dashboard for Studio #0003
+Wait until the amount is deducted before trading again.
+Our team will review your request and process your payout.
+Requests are subject to plan terms, eligibility, and review.
+Transition to Live
+You become eligible for a Live account after 5 approved payouts or
+$5,000 total requested
+Parameter
+Studio #001 & #002
+Studio #003
+Live starting balance
+40% of total amount requested, capped at $2,000
+40% of total amount requested, capped at $2,000
+Live drawdown
+End-of-day trailing Max Loss Limit
+End-of-day trailing Max Loss Limit
+Live MLL
+Equal to Live starting balance; trails EOD and locks at $100
+Equal to Live starting balance; trails EOD and locks at $100
+Live profit split
+90/10
+90/10
+Live minimum payout
+$250
+$250
+Live payout frequency
+One request per day
+One request per day
+Live max contracts
+Same as the plan (10 or 20 micros · no minis)
+1 mini / 10 micro
+Our team may contact you at any point during your Sim Funded stage to initiate a transition to a Live account.
+When you move to Live, the Sim Funded account that triggered the move is closed. Your other accounts stay dormant.
+How to buy Studio
+Visit the Studio page .
+Choose one of the Studio plans and follow the checkout steps.
+Pay by card or crypto.
+If a plan is sold out for today, check again after 00:00 ET.
+Studio offers may be limited.
+FAQ
+What is the difference between Studio #001, #002 and #003?
+Same plan shape at two sizes:
+#001 is $10K at $140 (MLL $500, 10 micros, $5K daily profit cap).
+#002 is $20K at $280 (MLL $1,000, 20 micros, $10K daily profit cap).
+#003 is $5k at $75 (MLL $250, 5 micros, $2,500 daily profit cap).
+Rules and payouts are otherwise the same.
+How does the Max Loss Limit work?
+It is static. It is set when the account starts and never moves during Evaluation or Sim Funded.
+When can I request a payout?
+Anytime on Sim Funded once your positions are closed.
+Minimum $250 on #001 and #002
+Minimum $100 on #003
+Is there a limit on daily profits?
+Yes, on Sim Funded only. Net realized profit above $5,000 (#001), $10,000 (#002) or $2,500 (#003) in a single trading day is forfeited.
+Can I have more than one Studio account?
+No. One active Studio account at a time — either Evaluation or Sim Funded.
+Which platform do Studio accounts use?
+Hyperprop only. More platforms coming soon.
+When do I become eligible for Live?
+After 5 approved payouts or $5,000 total requested. Live starts at 40% of total requested, up to $2,000. Our team may also move you earlier.
+​ Are there activation fees?
+No. There are no activation fees for any of our Studio Plans.
+Is news trading allowed?
+Yes.
+The page says “Sold out for today.”
+That plan hit its daily purchase cap. Try again after 00:00 ET, or check whether the other Studio size is still available.
+Studio plan terms are defined in your Sim Funded agreements.
+Related Articles
+Builder Plan 50k - A Comprehensive Guide
+Flex Plan - $50,000 / A Comprehensive Guide
+Builder Plan 100k - Comprehensive Guide
+Builder Plan 150k - Comprehensive Guide
+Comprehensive Look into Redesigned Pro Plan
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

@@ -1,0 +1,58 @@
+Introduction | Lighter Docs
+For the complete documentation index, see llms.txt . Markdown versions of documentation pages are available by appending .md to page URLs.
+Skip to content
+⌘ Ctrl k
+Open app More
+Learn
+Developers
+API Reference
+Lighter EVM
+Programs
+GitBook Assistant
+I'm here to help you with the docs.
+What is this page about? What should I read next? Can you give an example?
+⌘ Ctrl i
+AI Based on your context
+Send
+Introduction
+About Lighter
+Technical Architecture: Lighter Core
+LIT Utility
+Lighter on Robinhood Chain
+Trading
+Trading Fees
+Unified Trading Accounts
+Order Types & Matching
+Real World Assets (RWAs)
+RFQ
+Public Pools
+Contract Specifications
+Prelaunch Markets
+Binary Options
+Liquidations & LLP (Insurance Fund)
+Multi-Asset Margin
+Funding
+PnL And Total Account Value
+Fair Price Marking
+Internal Pricing Mechanism
+Self-Trade Prevention
+API
+Guilds
+Security
+Security / Vulnerability Disclosure Policy
+Security Audits
+Powered by GitBook
+On this page
+Copy
+On this page
+Learn
+Introduction
+Lighter is a decentralized trading platform designed for security, scale, and performance in a zero-fee trading environment for Standard accounts. It is the first exchange to offer verifiable order matching and liquidations while delivering performance comparable to traditional exchanges.
+The Lighter platform is available at:
+https://app.lighter.xyz/
+https://app.lighter.xyz/
+Next Technical Architecture: Lighter Core
+Last updated 28 days ago
+Was this helpful?
+Lighter
+Was this helpful?

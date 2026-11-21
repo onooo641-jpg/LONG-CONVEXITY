@@ -1,0 +1,650 @@
+Terms and Conditions - Crypto Fund Trader
+[ MENU ]
+[ Programs ] NEW
+[ How it works ]
+[ Affiliates ]
+[ Support
+]
+Blog
+Faq
+Contact
+FAQ
+Terms and Conditions
+Refund Policy
+Proof of Scholarship
+Affiliate Partner
+Theory Tools
+Blog
+CFT x Bybit
+Choose your challenge
+Free tournaments
+Match - Trader Platform
+MT5 Web Terminal
+BYBIT Platform
+Contact us
+Cookies
+“KYC Audit”
+Privacy Policy
+Competitive Ranking
+[ RANK ]
+[ DASHBOARD ]
+Terms and Conditions
+TERMS AND CONDITIONS
+Welcome to Crypto Fund Trader!
+At Crypto Fund Trader, we focus on two things: on one hand, the education of traders, and on the other, enabling
+them to obtain performance-based reward as a result of such training. These TERMS AND CONDITIONS (“Terms”) set
+out the rights and obligations of all users (“You”) in relation to the use of this website SWISS RLCRATES AG
+(“Company”, “our”, or “us”) domiciled at Bahnhofstrasse 21, 6300 ZUG. By using any of our services on the
+Company’s Platform, you declare and warrant that you have the authority to bind yourself to these Terms. If you
+do not agree with these terms, you will not be able to access or use our services.
+Please read the terms completely and carefully.
+1.  Our platform
+1.1  Crypto Fund Trader Services
+1.1.1. We provide a platform and tools for training and education in simulated trading in the
+forex and cryptocurrency market or trading with other instruments in other financial markets. Accordingly, we
+offer an opportunity for traders to train and apply their financial knowledge by operating from demo accounts.
+1.1.2. You must first pass one of our evaluations program before you can access the final
+simulation stage, where you may become eligible for internal performance-based rewards, based on the knowledge
+acquired, through our rewards in the form of scholarships.
+1.1.3. In each of our phases, you will have continuous assistance from our team of tutors, who
+will accompany you 24 hours a day, as well as various materials and explanatory videos that provide you with the
+necessary training.
+1.1.4. Successfully training in our phase evaluation program will give you the option to trade
+in a final phase where, if your performance is positive, you will receive a diploma and may become eligible for
+an internal incentive based on your training performance.
+1.1.5. . You acknowledge that any operation you perform through our service is not real, based on
+a mere simulated environment that facilitates your training.
+1.1.6. By using our services, you agree to be governed by our Trading Objectives.
+1.2 Third Party Services
+1.2.1. You acknowledge and accept that the Company provides access to third-party applications.
+1.2.2. You may connect your account to third-party accounts. By connecting your account to the
+third-party account, you acknowledge and accept that you are consenting to the ongoing disclosure of information
+about you to third parties (in accordance with your privacy settings on those third-party sites). If you do not
+want information about you to be shared in this way, do not use this feature.
+1.3 Modifications to the conditions
+1.3.1 The Company may modify these Conditions or any Policy at any time at its sole discretion.
+1.3.2 You are responsible for reviewing such updates and any applicable changes.
+1.3.3 Your continued participation in the Platform, the use of any of the Company’s Services, or
+the use of any of the Company’s Tools constitutes your acceptance of such changes.
+1.3.4 If you do not agree with any of the posted changes, you must immediately cease using the
+Company’s Platform, the Company’s Services, or the Company’s Tools.
+1.4 Privacy
+Your use of cryptofundtrader.com is subject to the terms of our
+Privacy Policy.
+Please review our Privacy Policy, which also governs the site and informs users of our data collection practices.
+1.5 Electronic Communication
+Visiting cryptofundtrader.com or sending us emails constitutes
+electronic communications. You consent to receive electronic communications and agree that all agreements,
+notices, disclosures, and other communications that we provide to you electronically, via email, and on the
+Site, satisfy any legal requirement that such communications be in writing.
+2. Accessibility
+You understand and admit that occasionally the Company’s platform may be inaccessible or inoperable for any
+reason, including, without limitation, due to:
+i. equipment malfunctions;
+ii. periodic maintenance procedures or repairs that the Company may carry out occasionally; or
+iii. causes beyond the Company’s control or that are not reasonably foreseeable by the Company.
+3. Account management
+3.1.   Account Registration
+3.1.1 When you purchase one of our training packages, you will receive credentials to trade demo
+on the Crypto Fund Trader platform, the MetaTrader 5 platform or the Bybit platform.
+3.1.2 You may not share your password with anyone except authorized employees.
+3.1.3 You must always provide accurate, current, and complete information, and must update such
+information in a timely manner to maintain its accuracy and completeness. Providing false information of any
+kind will result in the cancellation or rejection of your account.
+3.1.4 Any use of the site through your account will be deemed to have been used by you.
+3.1.5 In all cases of our service you will only get DEMO account credentials, proper to our
+training program.
+3.1.6 The Company has the right to rely on the contact and other information provided to us
+through your Account.
+3.1.7 Your Account is NON-TRANSFERABLE and NON-ASSIGNABLE.
+3.1.8 You have the right to cancel your registration.
+3.1.9 We are not responsible for third-party access to and from your Account resulting from
+theft or misappropriation of your account.
+3.1.10 We and our associates reserve the right to refuse or cancel service, terminate accounts,
+or remove or edit content at our sole discretion, without providing any reason and with immediate effect.
+3.1.11 Upon signing the contract to receive payment for your good training, the client will have
+to fill out a mandatory KYC form before processing any internal incentive associated with the scholarship
+program.
+3.2. Setup
+3.2.1 Once your registration is complete, you can set up your account for our evaluation process in any of the available evaluation modalities.
+3.2.2 After you place your order and have paid our training fees, we will email your credentials within minutes
+to 48 hours for the trading platform you have chosen.
+3.2.3 Crypto Fund Trader has disabled free training trials until further notice.
+3.2.4 It is strictly prohibited to lend or receive services from/for third parties of any kind, whether to boost
+accounts, offer benefits in exchange for accounts, profits, or any benefit from the site. This will be penalized
+with the suspension of all active accounts of both parties.
+3.2.5 Any promotion, offer, giveaway, discount, free account, tournament prize or other benefit launched by Crypto Fund Trader is limited to one (1) natural person, unless the terms of that specific promotion expressly state otherwise. It is prohibited to register or use multiple accounts, emails, identities or third-party details, directly or through other persons, in order to obtain the same benefit more than once. Crypto Fund Trader may verify eligibility using, among other data, identity and KYC information, payment details, devices and IP addresses. If it is determined, at the Company's sole discretion and at any time, that a person has obtained benefits in breach of this point, Crypto Fund Trader may cancel or withdraw the accounts, evaluations, scholarships, prizes, physical items or any other benefits obtained, without the right to compensation or refund for the benefits withdrawn.
+3.3. API Key and Subaccount Setup on Bybit Evaluations
+3.3.1 Clients taking evaluations via Bybit must provide a dedicated API Key and Subaccount at the time of
+activation. This API Key and Subaccount must remain unchanged throughout the entire evaluation process.
+3.3.2 If the user deletes, modifies, or replaces their API Key or Subaccount at any time, the evaluation account
+will be automatically invalidated and closed. No refunds or reactivations will be granted.
+3.3.3 If the API Key expires, the evaluation account will be marked as pending activation until a new valid API
+Key is provided.
+3.3.4 Users are allowed a maximum of twenty (20) active Subaccounts simultaneously under the same Bybit master
+account, in accordance with Bybit policies.
+3.3.5 The same API Key or Subaccount may not be reused across multiple evaluations. Each evaluation must be
+linked to a unique and exclusive Subaccount and API Key.
+4. Non-permitten usage/ usage by minors
+Subject to the age of majority in your jurisdiction, generally, the Company’s platform is for people over 18
+years old. If you are under 18 years old, you are not permitted to use this site.
+5. Fees and other payments
+5.1 You must pay a registration fee to access the training course before using our service. The
+registration fee is paid to access our Evaluation Process, in any of its modalities. You will not be entitled to
+any diploma, reward, or refund if you do not fully complete the phases of our training process.
+5.2 The funds provided to you during Phase 1, Phase 2, Phase 3 or ‘Final Stage’ phase are DEMO
+funds. These funds are not real funds and cannot be used for real operations. The demo profits you generate
+through our “Phase 1”, “Phase 2” or “Phase 3” level are not real profits, you are not entitled to those profits,
+nor can you request a scholarship withdrawal during this period; regardless of the evaluation modality you have opted for. In ‘Final Stage’ phase of the evaluation these benefits are still not real,
+although in this case the program may grant a performance-based incentive classified as an educational
+scholarship as specified in section 1.1.
+5.3 The fees for our services are denominated in DOLLARS. In case of payment of the fees in any
+currency other than DOLLAR, the amount of the fees corresponding to the selected option will be converted to
+DOLLARS using the exchange rate of your payment processor. You acknowledge that, if payment is made in a
+currency different from the one you have chosen on the website, the amount will be converted according to the
+exchange rates in force at the time of payment.
+5.4 Service charges include the corresponding taxes.
+5.5 You can pay the fees for our “Training Process” using a payment card or cryptocurrencies.
+Payment will be made immediately.
+5.6 List of fees for the Crypto Fund Trader Evaluation Process
+5.6.1 Two Phases:
+58 USD for the Crypto Fund Trader Evaluation Process with an initial demo capital of 5,000 USD
+110 USD for the Crypto Fund Trader Evaluation Process with an initial demo capital of 10,000 USD
+240 USD for the Crypto Fund Trader Evaluation Process with an initial demo capital of 25,000 USD
+389 USD for the Crypto Fund Trader Evaluation Process with an initial demo capital of 50,000 USD
+660 USD for the Crypto Fund Trader Evaluation Process with an initial demo capital of 100,000 USD
+1250 USD for the Crypto Fund Trader Evaluation Process with an initial demo capital of 200,000 USD
+5.6.2 1-Step Evaluations:
+1-Step Classic:
+59 USD for the Crypto Fund Trader 1-Step Classic Evaluation Process with an initial demo capital of 5,000 USD
+109 USD for the Crypto Fund Trader 1-Step Classic Evaluation Process with an initial demo capital of 10,000 USD
+269 USD for the Crypto Fund Trader 1-Step Classic Evaluation Process with an initial demo capital of 25,000 USD
+495 USD for the Crypto Fund Trader 1-Step Classic Evaluation Process with an initial demo capital of 50,000 USD
+949 USD for the Crypto Fund Trader 1-Step Classic Evaluation Process with an initial demo capital of 100,000 USD
+1999 USD for the Crypto Fund Trader 1-Step Classic Evaluation Process with an initial demo capital of 200,000 USD
+1-Step Pro:
+39 USD for the Crypto Fund Trader 1-Step Pro Evaluation Process with an initial demo capital of 5,000 USD
+79 USD for the Crypto Fund Trader 1-Step Pro Evaluation Process with an initial demo capital of 10,000 USD
+179 USD for the Crypto Fund Trader 1-Step Pro Evaluation Process with an initial demo capital of 25,000 USD
+349 USD for the Crypto Fund Trader 1-Step Pro Evaluation Process with an initial demo capital of 50,000 USD
+689 USD for the Crypto Fund Trader 1-Step Pro Evaluation Process with an initial demo capital of 100,000 USD
+1299 USD for the Crypto Fund Trader 1-Step Pro Evaluation Process with an initial demo capital of 200,000 USD
+1-Step Turbo:
+25 USD for the Crypto Fund Trader 1-Step Turbo Evaluation Process with an initial demo capital of 5,000 USD
+49 USD for the Crypto Fund Trader 1-Step Turbo Evaluation Process with an initial demo capital of 10,000 USD
+119 USD for the Crypto Fund Trader 1-Step Turbo Evaluation Process with an initial demo capital of 25,000 USD
+249 USD for the Crypto Fund Trader 1-Step Turbo Evaluation Process with an initial demo capital of 50,000 USD
+449 USD for the Crypto Fund Trader 1-Step Turbo Evaluation Process with an initial demo capital of 100,000 USD
+849 USD for the Crypto Fund Trader 1-Step Turbo Evaluation Process with an initial demo capital of 200,000 USD
+The former One Phase Evaluation is no longer available for purchase. Existing One Phase accounts remain subject to their current conditions.
+5.6.3 Three Phases:
+30 USD for the Crypto Fund Trader Evaluation Process with an initial demo capital of 5,000 USD
+59 USD for the Crypto Fund Trader Evaluation Process with an initial demo capital of 10,000 USD
+145 USD for the Crypto Fund Trader Evaluation Process with an initial demo capital of 25,000 USD
+255 USD for the Crypto Fund Trader Evaluation Process with an initial demo capital of 50,000 USD
+399 USD for the Crypto Fund Trader Evaluation Process with an initial demo capital of 100,000 USD
+798 USD for the Crypto Fund Trader Evaluation Process with an initial demo capital of 200,000 USD
+5.6.4 Zero Phases/Instant:
+125 USD for the Crypto Fund Trader Evaluation Process with an initial demo capital of 2,500 USD
+240 USD for the Crypto Fund Trader Evaluation Process with an initial demo capital of 5,000 USD
+475 USD for the Crypto Fund Trader Evaluation Process with an initial demo capital of 10,000 USD
+The Zero Phases/Instant Evaluation is no longer available for purchase. Existing Instant accounts remain subject to their current conditions.
+5.6.5 ‘Ascend’ Evaluation:
+39 USD for the Crypto Fund Trader Evaluation Process with an initial demo capital of 5,000 USD
+78 USD for the Crypto Fund Trader Evaluation Process with an initial demo capital of 10,000 USD
+195 USD for the Crypto Fund Trader Evaluation Process with an initial demo capital of 25,000 USD
+390 USD for the Crypto Fund Trader Evaluation Process with an initial demo capital of 50,000 USD
+780 USD for the Crypto Fund Trader Evaluation Process with an initial demo capital of 100,000 USD
+1560 USD for the Crypto Fund Trader Evaluation Process with an initial demo capital of 200,000 USD
+5.6.6 'Break' Evaluation:
+70 USD for the Crypto Fund Trader Evaluation Process with an initial demo capital of 25,000 USD
+140 USD for the Crypto Fund Trader Evaluation Process with an initial demo capital of 50,000 USD
+200 USD for the Crypto Fund Trader Evaluation Process with an initial demo capital of 100,000 USD
+5.6.7 'Activation FEE' for Break Evaluations:
+138 USD as the Activation Fee for the Crypto Fund Trader Break Evaluation with an initial demo capital of 25,000 USD
+198 USD as the Activation Fee for the Crypto Fund Trader Break Evaluation with an initial demo capital of 50,000 USD
+328 USD as the Activation Fee for the Crypto Fund Trader Break Evaluation with an initial demo capital of 100,000 USD
+5.7 Crypto Fund Trader Training Process Options:
+Crypto Fund Trader Evaluation Process 1-Step (Classic, Pro or Turbo), 2 Phases or 3 Phases with an initial demo capital of 5,000 USD
+Crypto Fund Trader Evaluation Process 1-Step (Classic, Pro or Turbo), 2 Phases or 3 Phases with an initial demo capital of 10,000 USD
+Crypto Fund Trader Evaluation Process 1-Step (Classic, Pro or Turbo), 2 Phases or 3 Phases with an initial demo capital of 25,000 USD
+Crypto Fund Trader Evaluation Process 1-Step (Classic, Pro or Turbo), 2 Phases or 3 Phases with an initial demo capital of 50,000 USD
+Crypto Fund Trader Evaluation Process 1-Step (Classic, Pro or Turbo), 2 Phases or 3 Phases with an initial demo capital of 100,000 USD
+Crypto Fund Trader Evaluation Process 1-Step (Classic, Pro or Turbo), 2 Phases or 3 Phases with an initial demo capital of 200,000 USD
+5.8 The commissions charged to traders in different financial markets can be modified as long as
+they contribute to the sustainability of the company and with prior notice; always with the intention of being
+able to replicate the real market in the best way and achieve the most accurate and complete practical training
+possible.
+At the current time, the fees are as follows:
+Match-Trader & MetaTrader 5:
+Crypto.- 0.0325% per side.
+Commodities.- 0.0005% per side.
+Stocks.- 0.002% per side.
+Forex.- 2.5$ per lot per side.
+Indices.- 0.005% per lot per side.
+Bybit platform:
+For evaluations carried out through Bybit, users will be subject to Bybit native trading fee structure. These are
+real market fees that vary depending on the trading pair, maker/taker classification, and volume tier. Crypto
+Fund Trader has no control over these fees and does not apply any additional markups.
+5.9  The evaluations will have the option of adding AddOns in which, by making an extra
+contribution, it will be possible to modify and improve their study conditions. There are different types of
+AddOns with different characteristics, which are listed below:
+2-Phase Evaluations:
+Weekly Scholarship Request: Costs 20% of the evaluation price and allows participants to become eligible for
+scholarship consideration after just 7 active trading days within the simulation program.
+90% Bonus Performance: Costs 20% of the evaluation price and increases your eligibility to receive up to 90%
+of the internal reward granted based on your performance in the simulation program.
+Daily Drawdown 6%: Costs 15% of the evaluation value and increases your daily loss limit to 6%.
+Maximum Drawdown 12%: Costs 25% of the value of the assessment and increases your maximum loss limit to 12%.
+1-Step Evaluations (Classic, Pro and Turbo):
+48h Payout: Costs 20% of the evaluation price and allows participants to become eligible for scholarship consideration every 2 active trading days in the Final Stage, instead of the default 7 active trading days. This AddOn is available exclusively for 1-Step evaluations.
+90% Bonus Performance: Costs 20% of the evaluation price and increases your eligibility to receive up to 90% of the internal reward granted based on your performance in the simulation program.
+The Weekly Scholarship Request, Daily Drawdown 6% and Maximum Drawdown 12% AddOns are not available for 1-Step evaluations. Existing accounts keep the AddOns purchased with them.
+6. Rules of demo trading
+During demo trading on the Trading Platform, you may carry out any transaction, unless they constitute prohibited
+trading strategies or operations as defined in Section 7. Restrictions may also be imposed by the conditions of
+the Trading Platform you have selected.
+You acknowledge that the Provider has access to information about the demo operations you perform on the Trading
+Platform. You authorize the Provider to share this information with persons/entities that are part of a group
+with the Provider or that are otherwise affiliated with the Provider, and you grant the Provider and these
+persons/entities your consent and authorization to handle this information at their free will. You agree that
+these activities are carried out automatically without any kind of consent, consultation, or approval on your
+part and that you have no right to any compensation or income associated with the use of this information.
+The Provider is aware that you do not provide any investment advice or recommendation through your demo
+operations. You acknowledge that you may suspend your demo operations on the Trading Platform at any time.
+You are aware that there may be updates/modifications including or removing new Liquidity or Data Feed Providers
+as the company deems appropriate at any time, without the obligation of prior notice.
+The conditions of slippage, spread, or available platforms may vary depending on the company’s new partnerships
+as well as new Data Feed or Liquidity Providers or the integration or suspension of new platforms.
+Slippage and spread depend entirely on the liquidity or data feed provider. In no case do we add markups, spread,
+or fictitious slippage to the provider’s price.
+The demo profits generated by the user during the account lock period in case of not closing the trades after
+requesting a scholarship withdrawal will not be valid and may be withdrawn by the team.
+The Crypto Fund Trader team may, at any time and at its sole discretion, impose, modify, or remove operational
+restrictions on any account, evaluation, or live stage, with prior notice, to protect program integrity, risk
+management, compliance, or security. Restrictions may include, without limitation, leverage limits, per-trade or
+aggregate risk caps, maximum position size or number of simultaneous positions, news trading limits, instrument
+or symbol bans, prohibitions or limitations on VPS/VPN or remote access and anti-copy-trading controls. Where
+feasible, the firm will communicate material changes in a timely manner; however, immediate action may be taken
+when operationally necessary.
+The Crypto Fund Trader team may require an interview at any time as a condition to continue in the program, to
+receive a Ticket, or to process a scholarship. The interview may be conducted via live video, voice, screen
+share and written verification, as reasonably designated by the firm, and may include questions about trading
+approach, risk management, platform setup, and compliance with program rules. The participant must cooperate and
+complete the interview within the timeframe communicated by the firm. Refusal to participate, failure to
+complete the interview, or providing incomplete or misleading information may result in withholding or
+revocation of the Ticket, cancellation of the scholarship and suspension or cancellation of the evaluation. The
+interview process and any information obtained are handled in accordance with the Crypto Fund Trader privacy
+policy.
+The Crypto Fund Trader team reserves the right to decide whether a user is eligible to reset their final stage
+account regardless of the requirements established in the FAQ. The team may choose a Reset limit at their
+discretion.
+At this time, leverage would be as follows:
+BYBIT ACCOUNTS:
+Up to 1:100. Depending on the instrument according to the Bybit platform.
+ADVANCED ACCOUNTS (Match-Trader & MetaTrader 5):
+Forex; leverage limited to 1:100
+Commodities; leverage limited to 1:100
+Indices; leverage limited to 1:100
+Cryptos; leverage limited to 1:100
+Stocks; leverage limited to 1:100
+STUDENT ACCOUNTS (Match-Trader & MetaTrader 5):
+Forex; leverage limited to 1:30
+Commodities; leverage limited to 1:30
+Indices; leverage limited to 1:20
+Cryptos; leverage limited to 1:5
+Stocks; leverage limited to 1:5
+STUDENT ACCOUNTS:
+$1,000 2-Phase Evaluation
+$5,000 2-Phase Evaluation
+$10,000 2-Phase Evaluation
+$25,000 2-Phase Evaluation
+$5,000 1-Phase Evaluation
+$10,000 1-Phase Evaluation
+$25,000 1-Phase Evaluation
+$5,000 Ascend Evaluation
+$10,000 Ascend Evaluation
+$25,000 Ascend Evaluation
+$50,000 Ascend Evaluation
+$100,000 Ascend Evaluation
+$200,000 Ascend Evaluation
+$2,500 Instant Evaluation
+$5,000 Instant Evaluation
+$10,000 Instant Evaluation
+$25,000 Break Evaluation
+$50,000 Break Evaluation
+$100,000 Break Evaluation
+$5,000 1-Step Classic, Pro and Turbo Evaluation
+$10,000 1-Step Classic, Pro and Turbo Evaluation
+$25,000 1-Step Classic, Pro and Turbo Evaluation
+ADVANCED ACCOUNTS:
+$50,000 2-Phase Evaluation
+$100,000 2-Phase Evaluation
+$200,000 2-Phase Evaluation
+$50,000 1-Phase Evaluation
+$100,000 1-Phase Evaluation
+$200,000 1-Phase Evaluation
+$50,000 1-Step Classic, Pro and Turbo Evaluation
+$100,000 1-Step Classic, Pro and Turbo Evaluation
+$200,000 1-Step Classic, Pro and Turbo Evaluation
+7. Prohibited trading strategies or transactions
+7.1 DURING THE EVALUATION OPERATIONS AND “FINAL STAGE TRADER”, IT IS STRICTLY PROHIBITED TO
+CARRY OUT ANY OF THE ACTIONS MENTIONED BELOW:
+i. It is expressly prohibited to use the Services to violate any law, statute, ordinance,
+regulation, or treaty, whether local, state, provincial, national, or international, or to infringe the rights
+of a third party, including, among others, intellectual property rights, privacy rights, publicity rights, or
+other personal or property rights.
+ii. In addition, it is expressly prohibited to scrape, crawl, frame, post unauthorized links,
+aggregate, hack, carry out denial-of-service attacks, reverse engineer, or circumvent the technological
+protection measures of the Services or the Company’s website.
+iii. It is also prohibited to use the Services or the Company’s website to transmit unsolicited
+commercial products or services to third parties or to Company Merchants. Although the Company is not
+responsible for any content posted by its Merchants and has no obligation to monitor such content, it reserves
+the right to remove any such content from any company communication channel.
+iv. You are also prohibited from using any trading strategy that is expressly prohibited by our
+Data Feed or Liquidity Providers, which will include, but not be limited to:
+Taking advantage of errors or latency in pricing and/or platform(s) provided.
+Using non-public and/or privileged information.
+Using any third-party strategy, a strategy marketed to overcome the requirements of the valuation or
+evaluation phase.
+Manipulating operations for fraudulent purposes.
+v. Attempting to arbitrage your account with another Company or third-party account, as
+determined by the Company at its sole and absolute discretion.
+vi. The use of trading strategies that are difficult to replicate in the real market, or come
+with a higher risk when trying to do so. This includes, but is not limited to: operations that use all the
+available margin for individual positions, operations that result in excessively large fluctuations in
+unrealized gains/losses, etc.
+vii. Executing trade ideas that belong to or are inspired by third parties, including, among
+other things, copying ideas from other traders and analysts and copying trade signals from any type of trading
+community, social networks, research reports, crowdsourcing ideas, etc.
+viii. Sharing accounts of any nature, including but not limited to sharing credentials with
+other users and/or operating multiple accounts from the same household, devices, or IP address/VPS. The user is
+responsible for the risk of using VPNs, as these could lead to IP matches with other users.
+ix. The Trader declares, warrants, and agrees not to make any public statement in any type of
+social media or public access medium disputing, challenging, disputing, or criticizing in any way the
+application by the Crypto Fund Trader Account.
+x. A contradiction with the Terms and Conditions of the Provider.
+xi. Purpose that contradicts the way trading is carried out in the real market or in a manner
+that the Provider may suffer losses or damages as a result of the Client’s activity.
+xii. Exceeding the maximum capital allocation allowed as determined in the website’s FAQ.
+xiii. Obtain all the demo profit in a single trade. Once the capital reaches $10,000 of demo
+profit per day and/or per trade, active trades will be closed and the amount that exceeds $10,000 will be
+deducted. The demo profit limit is applied per user, the difference will be calculated based on the balance at
+12:10 AM UTC. Any operation closed in several parts or several operations executed in similar time counts as a
+single operation.
+While in this case, future modification could be made if deemed appropriate.
+xiv. Hedging or reverse trading.
+xv. We are a trading training company, so we do not allow in any case the non-investment, i.e.,
+gambling; being the company’s choice the right to decide on such consideration.
+xvi. The use of the platforms as well as resets or migrations in MT5 to all new users belonging
+to the United States is restricted.
+xvii. Any disrespect by the user to the Staff or to the Crypto Fund Trader company through any
+communication channel will result in the indefinite suspension of the user.
+xviii. Attempting to request funds from the Bybit demo account used during the evaluation. This
+is considered a soft breach. All open trades will be immediately closed and the requested amount will be
+deducted from the account balance. Repeated violations may lead to full disqualification.
+xix. On evaluations conducted through Bybit, is strictly limited to trading USDT crypto
+futures/derivatives contracts. Engaging in transactions involving other instruments, such as spot trading or
+options is expressly prohibited. Violation of this rule will result in the immediate termination of the
+evaluation account.
+xx.  IN ASCEND ACCOUNTS, copy trading is strictly prohibited, whether between a
+participant’s own accounts or between different participants. Prohibited conduct includes mirrored or
+coordinated trading that reproduces substantially the same exposure such as matching instrument and direction
+with materially similar size, risk parameters, and entry/exit timing within narrow time windows whether executed
+manually, via signals, or through automation. Attempts to evade this policy by staggering timestamps, splitting
+or recombining orders, using multiple accounts to replicate exposure, or otherwise arranging near-identical
+trades to bypass evaluation rules are likewise prohibited. This policy is intended to ensure genuine,
+independent trading results; the firm’s determination on replication or coordination is final.
+xxi. IN ASCEND ACCOUNTS, within two minutes before and after high-impact news or market opening,
+the user must not open or add new positions, raise or aggregate maximum theoretical loss above 2% of the account
+initial balance. The firm may withhold or revoke the Ticket, restart or cancel the evaluation, and act on
+internal data evidence.
+The firm publishes weekly materials identifying upcoming high-impact events as a
+courtesy, but such materials are non-exhaustive and do not limit the scope of news covered by program rules.
+Events not included in the weekly materials may be designated high-impact at the firm’s discretion in UTC, and
+all news-related restrictions apply.
+If the Company determines, at its discretion, that your operations constitute the aforementioned Prohibited
+Operations, or that they violate the Risk Management and Program Rules, or that your public statements violate
+the Non-Discrimination Clause, your participation will be terminated, which may include the loss of the
+established returns.
+xxii. IN BREAK ACCOUNTS, it is prohibited to hold more than five (5) Final Stage accounts
+at the same time, regardless of the account size. Accounts that are still in the evaluation
+phase are not subject to this limit.
+xxiii. IN BREAK ACCOUNTS, copy trading is permitted only during the Evaluation phase and
+only between Break accounts owned by the same trader.
+Copy trading, coordinated trading, mirrored trading, or substantially similar trading activity
+between different traders, third parties, groups, or unrelated accounts is strictly prohibited.
+Copy trading or coordinated trading activity is not permitted on Break Final Stage accounts,
+including between accounts owned by the same trader.
+If prohibited copy trading or coordinated activity is detected, the Provider reserves the right
+to restart or cancel the Evaluation, deny access to the Final Stage, reject any scholarship
+reward request, suspend or terminate the account, or take any further action deemed necessary.
+xxiv. IN BREAK ACCOUNTS FINAL STAGE, the consistency rule set forth below must be
+strictly followed. On a Crypto Fund Trader Break Final Stage account, the consistency rule is a 40% limit on
+how much of your total profits can come from a single trading day.
+So, when you request a payout, we check that no one day’s profit is more than 40% of your
+total profits to date.
+Example: if your total profits are $5,000, your best day can be at most $2,000 (40%). If one
+day is over $2,000, you just need to keep trading until your profits are more evenly
+distributed, then request the payout again.
+It’s only checked at payout time, and it does not stop you from trading in the meantime.
+Please note that if a payout is requested and this requirement is not met, the payout request
+shall be rejected until the requirement is fulfilled. These conditions reset after every approved payout.
+7.2 If you engage in any of the practices described in section 7.1:
+i. The company may consider it a breach of the conditions of the particular Evaluation Process
+if you carry out any of the practices as a “Final Stage Trader”. The Provider may consider it a violation of our
+rules and will remove the ‘Final Stage Account’ provided to you, and you will be expelled from the training
+program.
+ii. If you have carried out or are suspected of having carried out the Prohibited Trading
+Practices described in Section 7.1, the Provider may consider this a breach of the terms and conditions and
+educational purposes of the Crypto Fund Trader evaluation. The Provider may:
+Remove the transactions that violate the prohibition from the user trading history and/or not count their
+results in the demo profits and/or losses achieved by the demo trading.
+Cancel all services provided to the user.
+Terminate the Agreement.
+Reduce the leverage offered on the account(s).
+Failure to comply with this point is at the discretion and review of Crypto Fund Trader team, as well as managing
+the conditions in case of non-compliance. In case of account(s) cancellation, you will not be entitled to the
+performance-based reward or the refund of the fees paid.
+7.3. Country Restrictions and Platform
+Availability
+Platform access is subject to regional regulations and platform-specific compliance requirements:
+Match-Trader:
+No country restrictions.
+MetaTrader 5:
+Access to this platform is not available to users residing in the United
+States.
+Bybit platform:
+Crypto Fund Trader does not impose any country restrictions on users who
+choose to evaluate via Bybit. However, all traders must use their own personal Bybit accounts and are fully
+responsible for complying with Bybit Terms of Service and jurisdictional restrictions.
+Traders from such countries may use Bybit demo accounts at their own discretion and risk. Crypto Fund Trader is
+not responsible for any breaches of Bybit terms, nor for any actions taken by Bybit against the user’s account.
+8. Crypto fund trader evaluation process
+In order for you to meet our conditions of the Evaluation Process, you must fulfill all of the following
+parameters at the same time by the end of the trading period:
+i. At no time during the ‘2 Phases’ Evaluation or ‘Ascend’ Evaluation Process or Final Stage account have you
+registered losses in any open or closed demo trades on the same day, which exceeded in total 5% of your balance
+at 12:05 AM UTC or 10% of the initial demo balance.
+ii. At no time during the former ‘1 Phase’ Evaluation Process (accounts purchased before the launch of the 1-Step evaluations) or Final Stage have you registered losses in any open or
+closed demo trades on the same day, which exceeded in total 4% of your balance at 12:05 AM UTC or 6% based on
+the maximum demo balance until you make a 6% demo profit, at which point your trailing drawdown will remain
+static at the account’s opening balance.
+iii. At no time during the $25,000 and $50,000 ‘Break’ Evaluation process or ‘Break’ Final Stage
+may the trader register losses in any open or closed demo trades on the same day which, in
+total, exceed 4% of the maximum demo account balance.
+For $100,000 Break accounts, during both the Evaluation process and Final Stage, the limit
+that must not be exceeded under the same conditions is 3%, calculated based on the
+maximum demo account balance. Once your account has made profits over 4% in the 25k and 50k accounts and 3% in the 100k account,
+the trailing drawdown locks in the initial accounts balance.
+iv. If you have reached the demo Profit Goal of 8% of the demo initial capital in Phase 1 or the
+demo Profit Goal of 5% of the demo initial capital in Phase 2, in the 2-phase or ‘Ascend’
+evaluations; or 10% in the former 1-phase evaluation; or 10% in the 1-Step Classic, 12% in the 1-Step Pro and 9% in the 1-Step Turbo evaluation; or the demo Profit Target of 5% of the initial
+demo capital in Phase 1, Phase 2 and Phase 3 of the 3-phase evaluation; or, in the case of
+‘Break’ evaluations, the demo Profit Target of 5% of the initial demo capital for $25,000
+evaluations, or 6% of the initial demo capital for $50,000 and $100,000 evaluations, and
+have not violated the terms, particularly the rules of demo trading under Section 7, the
+Provider will assess your current Phase in our Service as successful. For the avoidance of
+doubt, in the case of Break accounts, the trader shall only be fully moved to the Final Stage
+once the Activation Fee, if applicable, as set out in the section below, has been paid.
+v. In the evaluation of 0 phases (no longer available for purchase; applicable to existing accounts) the particular conditions are the following: the total demo
+loss limit is limited to 6% of the account; in the same way, only a demo loss of 4% of the account is allowed on
+a daily basis. Likewise, in order to scale, 10% of the account must be exceeded, request a scholarship at the
+same time the amount generated in the scholarship without the obligation of having a minimum number of days
+traded. You can request a scholarship before reaching the 10% if you have traded a minimum of 15 days or 30
+calendar days as stipulated on the website.
+vi. The ‘Ascend’ evaluation will have the same conditions as the 2-phase evaluation. Once both
+phases are passed and if no rule has been violated, the student will obtain a scholarship stablished below and
+the study plan will be finished, no further evaluation will be created.
+A scholarship of 210 USD for the USD 5,000 ‘Ascend’ evaluation.
+A scholarship of 420 USD for the USD 10,000 ‘Ascend’ evaluation.
+A scholarship of 1050 USD for the USD 25,000 ‘Ascend’ evaluation.
+A scholarship of 2100 USD for the USD 50,000 ‘Ascend’ evaluation.
+A scholarship of 4200 USD for the USD 100,000 ‘Ascend’ evaluation.
+A scholarship of 8400 USD for the USD 200,000 ‘Ascend’ evaluation.
+The rest of the conditions are subject to the description of what is indicated on the cryptofundtrader.com
+website.
+vii. The Break Activation Fee is paid after successfully completing the Break Evaluation in order to proceed to the Break Final Stage.
+Once you complete the Break Evaluation without breaching any applicable rules, your account and trading activity will be manually reviewed by our team. If all applicable conditions and rules have been met, the option to pay the Activation Fee may become available through your personal dashboard.
+After the option becomes available, the trader will have 30 days to pay the Activation Fee. If the Activation Fee is not paid within this period, the option may expire and access to the Break Final Stage may no longer be available.
+The applicable Activation Fees are as follows:
+An activation fee of 138 USD for the USD 25,000 ‘Break’ evaluation.
+An activation fee of 198 USD for the USD 50,000 ‘Break’ evaluation.
+An activation fee of 328 USD for the USD 100,000 ‘Break’ evaluation.
+viii. At no time during the '1-Step' Evaluation Process or its Final Stage may the trader register losses in any open or closed demo trades on the same day which exceed in total 3% of the balance at 12:05 AM UTC, or which exceed in total the following percentage of the initial demo balance: 6% in the 1-Step Classic, 5% in the 1-Step Pro and 3% in the 1-Step Turbo. This maximum loss limit is static and remains fixed on the initial demo balance, without moving with demo profits. The '1-Step' evaluations consist of a single phase with no time limit, and the Provider will assess the evaluation as successful once the demo Profit Target set out in point iv has been reached without violating the terms, particularly the rules of demo trading under Section 7. In the Final Stage, the trader may request a scholarship after 7 traded days, or every 2 traded days if the 48h Payout AddOn has been purchased. The 1-Step Final Stage accounts are included in the maximum capital allocation set out in the website's FAQ.
+ix. The purpose of the Evaluation Process is to assess the trading approach that the trader will apply in the Final Stage. Accordingly, the trading strategy, risk management and general trading style used during the evaluation phase(s) are expected to be reasonably consistent with those used in the Final Stage. The Crypto Fund Trader team may review the trading activity of any account, including before processing a scholarship request, and may consider, among other factors, position sizing, risk per trade, instruments traded, holding times and the overall risk profile across both stages. Natural adaptations to market conditions are part of normal trading and are not, by themselves, considered a change of strategy. Where the review identifies a substantial difference between the trading approach used in the evaluation and the one used in the Final Stage, the team may, at its discretion, contact the trader for clarification, request an interview as set out in Section 6, ask the trader to continue trading before a request is processed, adjust the eligible scholarship amount, or apply any of the measures set out in Section 7.2. These measures are assessed on a case-by-case basis and do not, by themselves, imply the termination of the account.
+9. Crypto fund trader ‘final stage trader’
+In case the Client successfully completes the Evaluation Process of the selected modality, the Client must sign an
+individual agreement signed between the Client and SWISS RLCRATES AG.
+10. Ownership of information
+You retain all rights and interests in all information you provide on the Platform.
+You grant the Company permission to use all content for advertising the Company’s platform and for the Company.
+The Company will NOT sell your data to third parties.
+11. Duration
+The rights and obligations arising from these conditions will last as long as the user’s active contracts,
+normally automatically renewed each year.
+12. Disputes
+The parties are encouraged to attempt to resolve disputes amicably. If for any reason this fails, the Courts of
+Zug (Switzerland) are established as the dispute forum, with express waiver of any other jurisdiction.
+13. Limitation of liability and indemnification
+13.1. You will use the platform at your own risk.
+Crypto Fund Trader is not responsible for losses caused to the user in cases of force majeure that cannot be
+controlled by the company and do not include an error on our part.
+13.2. The information, software, products, and services included or available through the site
+may include inaccuracies or typographical errors. Changes are periodically added to the information herein.
+13.3. Crypto Fund Trader and/or its suppliers may make improvements and/or changes in the site
+at any time, reserving the right to migrate users’ accounts from one available platform to another when the
+company requires such action due to force majeure or the sustainability of the same.
+13.4. Neither crypto fund trader nor its tutors, agents, directors, shareholders, members,
+partners, managers, officers, employees, information providers, attorneys, or affiliates shall have any
+liability to you and hereby waive, release, and agree not to sue any of them, any claim for any special,
+indirect, incidental, or consequential damages suffered or incurred by you in connection with, arising out of,
+or in any way related to this agreement or with the use by you of any of our services, even if we have been
+advised of the possibility of such damages occurring. if you are not satisfied with the platform or the
+services, or with any content of the same your sole and exclusive remedy is to cease using the platform and the
+services, as used herein.
+13.5. This limitation applies to the extent permitted by law.
+13.6. You agree: To indemnify, defend, and hold harmless us, our tutors, directors, employees,
+agents, and third parties, for any loss, cost, liability, and expense (including reasonable attorneys’ fees)
+related to or arising from your use or inability to use the Site or the services, any user postings made by you,
+your violation of any terms of this Site or the services by you, your violation of any terms of this Agreement
+or your violation of any rights of a third party, or your violation of any applicable laws, rules, or
+regulations. We reserve the right, at our cost, to assume the exclusive defense and control of any matter
+subject to indemnification by you, in which case you will cooperate fully with us in asserting any available
+defenses.
+14. Disclaimer
+14.1. Crypto fund trader is a provider of online financial education services. Accordingly, we
+do not offer financial services, nor financial, tax, brokerage, or other advice.
+You also acknowledge that we do not accept any deposits. We only charge fees for the training carried out, for
+the settlement of costs and/or operational expenses of personnel and technology, for the proper functioning of
+our services.
+14.2. SWISS RLCRATES AG does not provide any of the investment services listed in the capital
+markets law and only uses a demo version of investment scenarios, so it does not guarantee the payment of the
+paid scholarship to the trader.
+The parties agree that SWISS RLCRATES AG may, under certain circumstances, not pay the paid scholarship despite
+the trader’s achievement, waiving any subsequent claim. All this on the basis that it is a training program that
+experiments on investment scenarios in demo mode and that the main motivation of the participants is the
+perception of financial training and not the obtaining of the possible scholarship. In the event that, for
+whatever reason, such a scholarship could not be integrated into the trader, he/she will have the right only and
+exclusively to the return of the fees paid for participation in the program, exempting SWISS RLCRATES AG from
+the payment of the remuneration.
+14.3. The content of our platform is applicable to the extent that local laws and/or regulations
+allow.
+14.4. All information on the platform is provided “as is”, without warranty of completeness,
+accuracy, timeliness, or of the results obtained from the use of this information, and without warranty of any
+kind, express or implied, including, but not limited to, warranties of performance, merchantability, and fitness
+for a particular purpose and fitness for a particular purpose.
+15. Intellectual property
+15.1. The Company’s Services and the content of the Platform (excluding Content provided by You
+or other users), features, and functionality are and will remain the exclusive property of the Company and its
+licensors.
+15.2. The Company’s trademarks may not be used in connection with any product or service without
+the prior written consent of the Company.
+15.3. The Company is protected by copyright, trademark, and other laws of both the Country and
+foreign countries.
+15.4. The Company grants You a temporary and non-exclusive license to use such services,
+including third-party services, on the Platform to the limited extent of facilitating this Agreement.
+15.5. The Company also owns all transaction information and any other information related to
+orders, including, among others, the information that is created after a transaction, and the ratings and
+reviews provided by the Clients. All this information is subject to any existing Privacy Policy on the Company’s
+Platform.
+16. Applicable law
+16.1. The Service is controlled, operated, and administered by the Company from our offices. To
+the fullest extent permitted by law, this agreement is governed by the laws of Switzerland, and hereby you
+consent to the exclusive jurisdiction and venue of courts in Switzerland (canton of Zug), in all disputes
+arising out of or relating to the use of the Site. The use of the Site is unauthorized in any jurisdiction that
+does not give effect to all provisions of these Terms, including, without limitation, this section.
+16.2. If you access the Site from anywhere in the world, you will be responsible for compliance
+with all local laws. You agree that you will not use our Content accessed through cryptofundtrader.com in any
+country or in any manner prohibited by applicable laws, restrictions, or regulations.
+17. Termination
+17.1. We reserve the right, at our sole discretion, to terminate your access to the Site and the
+related services or any portion thereof at any time, without notice, being able to claim only the return of the
+payment for the training account in case it was still active at that time.
+17.2. You will continue to be bound by these terms, even if your account is cancelled.
+Specifically, any of your obligations related to the limitations of liability, and indemnification, as well as
+any other obligation under this Agreement that by its nature are intended to survive, including any obligation
+of payment or services, will survive the termination of this Agreement.
+17.3. The termination of this Agreement shall be without prejudice to the rights of either Party
+against the other in connection with any claim prior to or breach of any of the provisions of this Agreement.
+18. Entirety
+These terms and the Privacy Policy represent the entire Agreement between both parties and supersede any prior
+written or oral agreement.
+Contact us!
+If you have any questions or concerns about any of these terms, do not hesitate to contact us.
+Our contact: support@cryptofundtrader.com
+Start evaluation
+CRYPTO FUND TRADER IS AN EVALUATION FIRM WHERE WE BOOST THE BEST
+TRADERS IN ADDITION TO TESTING THEIR QUALITIES.
+support@cryptofundtrader.com
+FAQ
+Terms and Conditions
+Refund Policy
+Proof of Scholarship
+Affiliate Partner
+Theory Tools
+Blog
+CFT x Bybit
+Choose your challenge
+Free tournaments
+Match-Trader Platform
+MT5 Web Terminal
+BYBIT Platform
+Contact us
+Cookies
+“KYC Audit”
+Privacy Policy
+Bahnhofstrasse 21, 6300, Zug, Switzerland
+SWISS RLCRATES AG (CHE-162.567.204)
+Crypto Fund Trader © 2026 All Rights Reserved.
+SWISS RLCRATES AG is a provider of educational services, all information available on our
+site is intended solely for the study purposes related to trading on financial markets. Accordingly, we do not
+offer financial, investment, tax, brokerage or other advice and/or services. Trading in financial markets is a
+high-risk activity, past performance do not guarantee future ones. It is highly advised not to risk more, than
+you can afford to lose. Brokers and operators of trading platforms are persons or entities that are separate
+from SWISS RLCRATES AG and their own terms and conditions will apply when you use their services and products.
+Neither SWISS RLCRATES AG nor RLCRATES, S.L. (the company that provides services with MT5) operate in countries
+where crypto or CFD’s activity is not allowed. The content in our platform is applicable to the extent local
+laws and/or regulations permit. SWISS RLCRATES AG acts as a payment/marketing agent for RLCRATES SL.
+SWISS RLCRATES AG is not authorized or licensed in Switzerland and does not offer any trading services with MT5
+neither conducts any regulated activities.

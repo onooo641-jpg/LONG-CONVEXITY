@@ -1,0 +1,802 @@
+The Modern Prop Trading Firm since 2015 | FTMO
+New
+FTMO Instant Account
+{
+document.body.classList.toggle('no-scroll', value);
+});
+// Set scroll to true when we are scrolled 5.2% of viewport height on mobile or 6% on desktop.
+// Scroll variable is used to change navbar background from transparent to solid when scrolling.
+const checkScroll = () => {
+const isMobile = window.innerWidth threshold;
+};
+checkScroll();
+window.addEventListener('scroll', checkScroll);
+}
+}"
+@keydown.escape.prevent.stop="
+if (menuOpen || activeItem) {
+activeItem = null;
+menuOpen = false;
+}
+"
+>
+{ document.getElementById('first-mega-item-cfd')?.focus() })"
+@blur="hoveredItem = null"
+:class="{ 'bg-background-hover':
+hoveredItem === 'cfd' ||
+activeItem === 'cfd',
+'text-content-primary':
+hoveredItem === 'cfd' ||
+activeItem === 'cfd' ||
+hoveredItem === null && !menuOpen,
+'text-gray-400':
+(hoveredItem !== null && hoveredItem !== 'cfd' && (activeItem === 'cfd' ? false : true)) ||
+(menuOpen && hoveredItem === null && (activeItem === 'cfd' ? false : true))
+}"
+class="flex items-center gap-1.5 py-3 px-2 xl:px-3 transition-colors duration-200 rounded-lg focus:outline-none">
+CFD
+{ document.getElementById('first-mega-item-futures')?.focus() })"
+@blur="hoveredItem = null"
+:class="{ 'bg-background-hover':
+hoveredItem === 'futures' ||
+activeItem === 'futures',
+'text-content-primary':
+hoveredItem === 'futures' ||
+activeItem === 'futures' ||
+hoveredItem === null && !menuOpen,
+'text-gray-400':
+(hoveredItem !== null && hoveredItem !== 'futures' && (activeItem === 'futures' ? false : true)) ||
+(menuOpen && hoveredItem === null && (activeItem === 'futures' ? false : true))
+}"
+class="flex items-center gap-1.5 py-3 px-2 xl:px-3 transition-colors duration-200 rounded-lg focus:outline-none">
+New
+Futures
+{ document.getElementById('first-mega-item-trading')?.focus() })"
+@blur="hoveredItem = null"
+:class="{ 'bg-background-hover':
+hoveredItem === 'trading' ||
+activeItem === 'trading',
+'text-content-primary':
+hoveredItem === 'trading' ||
+activeItem === 'trading' ||
+hoveredItem === null && !menuOpen,
+'text-gray-400':
+(hoveredItem !== null && hoveredItem !== 'trading' && (activeItem === 'trading' ? false : true)) ||
+(menuOpen && hoveredItem === null && (activeItem === 'trading' ? false : true))
+}"
+class="flex items-center gap-1.5 py-3 px-2 xl:px-3 transition-colors duration-200 rounded-lg focus:outline-none">
+Trading
+{ document.getElementById('first-mega-item-about')?.focus() })"
+@blur="hoveredItem = null"
+:class="{ 'bg-background-hover':
+hoveredItem === 'about' ||
+activeItem === 'about',
+'text-content-primary':
+hoveredItem === 'about' ||
+activeItem === 'about' ||
+hoveredItem === null && !menuOpen,
+'text-gray-400':
+(hoveredItem !== null && hoveredItem !== 'about' && (activeItem === 'about' ? false : true)) ||
+(menuOpen && hoveredItem === null && (activeItem === 'about' ? false : true))
+}"
+class="flex items-center gap-1.5 py-3 px-2 xl:px-3 transition-colors duration-200 rounded-lg focus:outline-none">
+About
+= 1024) && activeItem === 'cfd'"
+@mouseleave="activeItem = null; menuOpen = false;"
+@keydown.escape.window="
+if (activeItem || menuOpen) {
+activeItem = null;
+menuOpen = false;
+document.getElementById('mega-menu-button-cfd')?.focus();
+}
+"
+x-cloak x-transition:enter="transition ease-out duration-200"
+x-transition:enter-start="opacity-0 transform translate-y-10"
+x-transition:enter-end="opacity-100 transform translate-y-0"
+x-transition:leave="transition ease-in duration-200"
+x-transition:leave-start="opacity-0 transform translate-y-0"
+x-transition:leave-end="opacity-0 transform translate-y-10"
+>
+Get started
+CFD Overview
+Your path to FTMO
+Pricing
+Choose your FTMO Challenge
+How It Works
+Become an FTMO Trader
+Free Trial
+Unlimited practice for your strategy
+Trading Objectives
+Key rules to pass each phase
+Grow
+Trading Psychology
+For stronger mindset
+Premium programme
+Join the top performers
+Scaling plan
+Grow up to $2M
+Start FTMO Challenge
+Start now
+= 1024) && activeItem === 'futures'"
+@mouseleave="activeItem = null; menuOpen = false;"
+@keydown.escape.window="
+if (activeItem || menuOpen) {
+activeItem = null;
+menuOpen = false;
+document.getElementById('mega-menu-button-futures')?.focus();
+}
+"
+x-cloak x-transition:enter="transition ease-out duration-200"
+x-transition:enter-start="opacity-0 transform translate-y-10"
+x-transition:enter-end="opacity-100 transform translate-y-0"
+x-transition:leave="transition ease-in duration-200"
+x-transition:leave-start="opacity-0 transform translate-y-0"
+x-transition:leave-end="opacity-0 transform translate-y-10"
+>
+Get Started
+Futures Overview
+Enter FTMO Futures
+Pricing
+Fees and account options
+How Futures Work
+Your path to FTMO Futures
+Trading Objectives
+Evaluation rules explained
+Start Your Evaluation
+Start now
+= 1024) && activeItem === 'trading'"
+@mouseleave="activeItem = null; menuOpen = false;"
+@keydown.escape.window="
+if (activeItem || menuOpen) {
+activeItem = null;
+menuOpen = false;
+document.getElementById('mega-menu-button-trading')?.focus();
+}
+"
+x-cloak x-transition:enter="transition ease-out duration-200"
+x-transition:enter-start="opacity-0 transform translate-y-10"
+x-transition:enter-end="opacity-100 transform translate-y-0"
+x-transition:leave="transition ease-in duration-200"
+x-transition:leave-start="opacity-0 transform translate-y-0"
+x-transition:leave-end="opacity-0 transform translate-y-10"
+>
+Trading Esssentials
+Economic Calendar
+Key market events in real time
+Trading Updates
+Latest changes and information
+Instruments
+List of symbols
+Trading Platforms
+Choose what suits you best
+Tools & Services
+Tools Overview
+Elevate your trading performance
+Leaderboard
+Live rankings of top FTMO Traders
+App Suite
+Discover App Suite by FX Blue
+Knowledge
+FAQ
+Answers to common questions
+Blog
+News, tips and trading stories
+Academy
+Free trading education
+= 1024) && activeItem === 'about'"
+@mouseleave="activeItem = null; menuOpen = false;"
+@keydown.escape.window="
+if (activeItem || menuOpen) {
+activeItem = null;
+menuOpen = false;
+document.getElementById('mega-menu-button-about')?.focus();
+}
+"
+x-cloak x-transition:enter="transition ease-out duration-200"
+x-transition:enter-start="opacity-0 transform translate-y-10"
+x-transition:enter-end="opacity-100 transform translate-y-0"
+x-transition:leave="transition ease-in duration-200"
+x-transition:leave-start="opacity-0 transform translate-y-0"
+x-transition:leave-end="opacity-0 transform translate-y-10"
+>
+Company
+About Us
+Learn more about our company
+FTMO Group
+Learn more about FTMO Group
+FTMO Store
+Shop for trading accessories
+Connect
+Contact us
+24/7 Support
+Press Kit
+Brand assets and media resources
+Careers
+Join our team of professionals
+EN
+English
+Čeština
+Español
+Italiano
+Deutsch
+Português
+Tiếng Việt
+Français
+Log In
+Get Started
+Get Started
+CFD
+Get started
+CFD Overview
+Pricing
+How It Works
+Free Trial
+Trading Objectives
+Grow
+Trading Psychology
+Premium programme
+Scaling plan
+Futures
+New
+Get Started
+Futures Overview
+Pricing
+How Futures Work
+Trading Objectives
+Trading
+Trading Esssentials
+Economic Calendar
+Trading Updates
+Instruments
+Trading Platforms
+Tools & Services
+Tools Overview
+Leaderboard
+App Suite
+Knowledge
+FAQ
+Blog
+Academy
+About
+Company
+About Us
+FTMO Group
+FTMO Store
+Connect
+Contact us
+Press Kit
+Careers
+Search
+EN
+English
+Čeština
+Español
+Italiano
+Deutsch
+Português
+Tiếng Việt
+Français
+Get Started
+Log In
+Modern Prop Trading — Since 2015
+Grow & Monetize
+Your Demo Trading
+Improve your trading skills on our simulated platform and earn rewards
+Trade with FTMO
+Free Trial
+FTMO Instant Account
+Your direct access to an FTMO Account with 10% Max Loss,
+90% Reward Ratio, and up to 1:100 leverage.
+Trade for rewards from day one.
+Get Started
+Learn More
+New
+The founders of FTMO, Marek Vašíček and Otakar Šuffner, received the prestigious award EY Entrepreneur Of The Year in the category Technological Entrepreneur 2022.
+2022
+"
+class="cursor-help"
+>
+Featured in Forbes: In 2024 FTMO increased its revenue by a quarter to five billion CZK.
+July 2024
+"
+class="cursor-help"
+>
+Up to $200,000 FTMO Account
+Support in 21 Languages
+4 Trading Platforms
+Why People Choose FTMO
+More Power, Less Risk Up to $200K simulated capital
+Rewards
+Fast and easy rewards withdrawals
+Advanced Support
+Dedicated support via Live chat, email, or WhatsApp
+Tools & Services
+Tailored tools & services to support your growth
+Free Trial
+As many Free Trials as you need
+Choose Your
+Path with FTMO
+Pick the way you start. The standard stays the same.
+Trusted by Millions of Traders
+4.5M+
+Customers worldwide
+$650M+
+Paid in rewards
+140+
+Countries served
+{
+this.$refs.video.play().catch(() => {});
+});
+},
+pauseVideo() {
+const video = this.$refs.video;
+video.pause();
+video.currentTime = 0;
+this.videoSrc = '';
+}
+}"
+@mouseenter="playVideo"
+@mouseleave="pauseVideo"
+@click="openPopup($el.dataset.id, $el.dataset.name)"
+>
+YouTube • 81K
+Views
+Maik
+Germany
+Rewards Earned
+$114,907
+Trading Style
+Swing trader
+{
+this.$refs.video.play().catch(() => {});
+});
+},
+pauseVideo() {
+const video = this.$refs.video;
+video.pause();
+video.currentTime = 0;
+this.videoSrc = '';
+}
+}"
+@mouseenter="playVideo"
+@mouseleave="pauseVideo"
+@click="openPopup($el.dataset.id, $el.dataset.name)"
+>
+YouTube • 62K
+Views
+Cinthya
+Ecuador
+Rewards Earned
+$41,018
+Trading Style
+Day trader
+{
+this.$refs.video.play().catch(() => {});
+});
+},
+pauseVideo() {
+const video = this.$refs.video;
+video.pause();
+video.currentTime = 0;
+this.videoSrc = '';
+}
+}"
+@mouseenter="playVideo"
+@mouseleave="pauseVideo"
+@click="openPopup($el.dataset.id, $el.dataset.name)"
+>
+YouTube • 56K
+Views
+Bjorn
+Belgium
+Rewards Earned
+$40,931
+Trading Style
+Swing trader
+{
+this.$refs.video.play().catch(() => {});
+});
+},
+pauseVideo() {
+const video = this.$refs.video;
+video.pause();
+video.currentTime = 0;
+this.videoSrc = '';
+}
+}"
+@mouseenter="playVideo"
+@mouseleave="pauseVideo"
+@click="openPopup($el.dataset.id, $el.dataset.name)"
+>
+YouTube • 66K
+Views
+Tarhata
+USA
+Rewards Earned
+$25,607
+Trading Style
+Day trader
+{
+this.$refs.video.play().catch(() => {});
+});
+},
+pauseVideo() {
+const video = this.$refs.video;
+video.pause();
+video.currentTime = 0;
+this.videoSrc = '';
+}
+}"
+@mouseenter="playVideo"
+@mouseleave="pauseVideo"
+@click="openPopup($el.dataset.id, $el.dataset.name)"
+>
+YouTube • 459K
+Views
+Pepijn
+The Netherlands
+Rewards Earned
+$76,000
+Trading Style
+Scalper
+{
+this.$refs.video.play().catch(() => {});
+});
+},
+pauseVideo() {
+const video = this.$refs.video;
+video.pause();
+video.currentTime = 0;
+this.videoSrc = '';
+}
+}"
+@mouseenter="playVideo"
+@mouseleave="pauseVideo"
+@click="openPopup($el.dataset.id, $el.dataset.name)"
+>
+YouTube • 83K
+Views
+Andi
+United Kingdom
+Rewards Earned
+$37,676
+Trading Style
+Day trader
+{
+this.$refs.video.play().catch(() => {});
+});
+},
+pauseVideo() {
+const video = this.$refs.video;
+video.pause();
+video.currentTime = 0;
+this.videoSrc = '';
+}
+}"
+@mouseenter="playVideo"
+@mouseleave="pauseVideo"
+@click="openPopup($el.dataset.id, $el.dataset.name)"
+>
+YouTube • 46K
+Views
+Fabian
+USA
+Rewards Earned
+$96,649
+Trading Style
+Scalper
+{
+this.$refs.video.play().catch(() => {});
+});
+},
+pauseVideo() {
+const video = this.$refs.video;
+video.pause();
+video.currentTime = 0;
+this.videoSrc = '';
+}
+}"
+@mouseenter="playVideo"
+@mouseleave="pauseVideo"
+@click="openPopup($el.dataset.id, $el.dataset.name)"
+>
+YouTube • 193K
+Views
+Choon Chiat
+Malaysia
+Rewards Earned
+$30,182
+Trading Style
+Scalper
+{
+this.$refs.video.play().catch(() => {});
+});
+},
+pauseVideo() {
+const video = this.$refs.video;
+video.pause();
+video.currentTime = 0;
+this.videoSrc = '';
+}
+}"
+@mouseenter="playVideo"
+@mouseleave="pauseVideo"
+@click="openPopup($el.dataset.id, $el.dataset.name)"
+>
+YouTube • 37K
+Views
+Ugnius
+Lithuania
+Rewards Earned
+$99,706
+Trading Style
+Day trader
+{
+this.$refs.video.play().catch(() => {});
+});
+},
+pauseVideo() {
+const video = this.$refs.video;
+video.pause();
+video.currentTime = 0;
+this.videoSrc = '';
+}
+}"
+@mouseenter="playVideo"
+@mouseleave="pauseVideo"
+@click="openPopup($el.dataset.id, $el.dataset.name)"
+>
+YouTube • 119K
+Views
+Richard
+Canada
+Rewards Earned
+$32,500
+Trading Style
+Swing trader
+{
+this.$refs.video.play().catch(() => {});
+});
+},
+pauseVideo() {
+const video = this.$refs.video;
+video.pause();
+video.currentTime = 0;
+this.videoSrc = '';
+}
+}"
+@mouseenter="playVideo"
+@mouseleave="pauseVideo"
+@click="openPopup($el.dataset.id, $el.dataset.name)"
+>
+YouTube • 350K
+Views
+Paul
+USA
+Rewards Earned
+$500,180
+Trading Style
+Scalper
+Trader Name
+Show more on Trustpilot
+How It Works
+Evaluation Process
+Prove your skills
+Pass the 1-Step or 2-Step Evaluation Process to gain your FTMO Account, or trade towards your Rewards from day one with the FTMO Instant Account.
+FTMO Account
+Earn real-money rewards
+Trade in a simulated environment and earn performance-based rewards.
+Premium Programme
+Achieve More.
+Gain More.
+Access exclusive benefits with Premium Programme and Quantlane by FTMO. Learn more
+Trade with FTMO
+How it works
+We Support Major Platforms
+At FTMO, we want to give you options. That’s why we offer the flexibility to tailor your experience and choose between MT4, MT5, TradingView and cTrader. Pick the professional trading platform that suits you best.
+Show more
+Elevate Your Trading with FTMO
+Learn with FTMO Academy, gain inspiration from our YouTube channel and connect with thousands of traders on Discord. Join our trading community!
+Academy
+Expand Your Trading Knowledge With FTMO Academy
+Enhance your knowledge and learn to understand your ups and downs with our Psychology Course.
+Expand your trading knowledge
+Perfect for beginners and intermediate traders
+Includes the Trading Psychology Course
+Start course
+Your browser does not support the video tag.
+100K+ Awesome members
+Join Our FTMO Discord. Trade Smarter. Together.
+Share in our trading community and get inspired.
+Start the chat
+40K+ Awesome members
+Create your verified trading profile
+Highlight your top trades and have your certificates in one place under official FTMO Community Profile.
+Join FTMO Community
+400K+ Subscribers
+Watch. Learn. Trade
+Get inspired by the stories of successful traders. Learn about trading psychology and stay connected for more trading content!
+FTMO on Youtube
+People of FTMO
+Our modern prop firm grew from a handful of young day traders, including the future founders who pursued the idea in 2015.
+About Us
+Careers
+Since
+2015
+Team Members
+300+
+Countries Served
+140+
+Arabic
+Czech
+Spanish
+French
+German
+Italian
+Japanese
+Polish
+Portuguese
+Russian
+Serbian
+Swahili
+Philipino
+Turkish
+Ukrainian
+English
+Vietnamese
+Romanian
+Swedish
+Korean
+Persian
+60+
+Customer
+Team Members
+21
+Languages
+Spoken
+Available 24/7
+Customer Support
+Our dedicated in-house customer support team is available 24/7. We provide assistance in 21 languages. We ensure fast and reliable support to help you whenever you need it.
+Chat with us
+Start the chat
+E-mail
+[email protected]
+Phone
++420 910 920 310
+Show All Contacts
+Frequently Asked Questions
+Find your answers here.
+How to start?
+Before you decide to start an FTMO Challenge, we want to make sure that you understand how the process works and what is expected from you.
+After you sign up , you can either start the FTMO Challenge: 1-Step or the FTMO Challenge: 2-Step right away, or — as we usually recommend — begin with our Free Trial. The Free Trial is a free, simplified version of the FTMO Challenge experience designed for practice purposes.
+Within the Free Trial, you…
+Read more about How to start?
+I have successfully passed, what to do now?
+What happens next depends on whether you are participating in the FTMO Challenge: 1-Step or the FTMO Challenge: 2-Step, as each product follows a different structure.
+FTMO Challenge: 1-Step
+The FTMO Challenge: 1-Step does not include a Verification phase. After you successfully pass all the Trading Objectives in your FTMO Challenge, you will see a notification in your Account MetriX confirming that the Trading Objectives have been passed and your account is set for review, which typically takes 1-4 business…
+Read more about I have successfully passed, what to do now?
+Can I trade news?
+Restrictions for trading during selected news releases apply only to the Standard account type . The Swing account type have no restrictions on trading during news releases.
+For Standard accounts, these restrictions apply only once you start trading on an FTMO Account . They do not apply during the Evaluation Process .
+Evaluation Process
+While trading during the Evaluation Process, the restriction does not apply regardless of the account type (Standard account or Swing). You may trade freely during all…
+Read more about Can I trade news?
+Who is an FTMO Trader, and how do I become one?
+To become an FTMO Trader, you must successfully meet the conditions of one of our two products: FTMO Challenge: 1-Step or FTMO Challenge: 2-Step . Each product follows a different structure, which is outlined below.
+FTMO Challenge: 2-Step
+The FTMO Challenge: 2-Step consists of a two-step process.
+Phase 1: FTMO Challenge
+A demo account with fictitious capital where you trade according to our Trading Objectives . You will benefit from our proprietary FTMO trading solution with very low commissions and…
+Read more about Who is an FTMO Trader, and how do I become one?
+Can I modify my platform or account type?
+Our system allows you to modify certain parameters of your account, provided that no trade has been placed on the current account. For FTMO Accounts, the modification can be processed after each Reward withdrawal.
+Available modifications for FTMO Challenge: 1-Step or subsequent FTMO Account:
+Platform modification
+The modification from the Standard account type to the Swing account type is unavailable because the Swing account type is not offered for the FTMO Challenge: 1-Step.
+Available modification for FTMO Challenge: 2-Step or…
+Read more about Can I modify my platform or account type?
+Can I hold positions overnight or over the weekend?
+Overnight and weekend position restrictions apply only to the Standard account type . The Swing account type does not have any restrictions on holding positions overnight or over the weekend.
+For Standard accounts, these restrictions apply only once you start trading on an FTMO Account . They do not apply during the Evaluation Process .
+Evaluation Process
+While trading during the Evaluation Process, the restriction does not apply regardless of the account type (Standard account or Swing). You are allowed…
+Read more about Can I hold positions overnight or over the weekend?
+Can’t find the answer you’re looking for? Show all FAQs .
+Start Trading With FTMO Today
+As many Free Trials as you need
+Up to $200,000 account
+No time limit
+Trade with FTMO
+Free Trial
+Worldwide Reviews
+Prove Your Skills with a Trusted Firm
+We've been empowering traders since 2015. Join them now!
+4.5M+
+Customers worldwide
+$650M+
+Paid in rewards
+4.8/5
+Trustpilot
+Top Searches
+FAQ
+How it Works
+Affiliate Programme
+Trading Objectives
+FTMO Shop
+Support
+Chat with us
+Start the chat
+[email protected]
++420 910 920 310
+Follow FTMO
+Follow FTMO Futures
+CFD
+CFDs Overview
+Pricing
+How CFDs Work
+FTMO Free Trial
+Trading Objectives
+1-Step FTMO Challenge
+2-Step FTMO Challenge
+FTMO Instant Account
+Comparison Table
+Forbidden Trading Practices
+Grow
+Premium Programme
+Scaling plan
+Futures
+Futures Overview
+Pricing
+How Futures Works
+Trading Objectives
+Comparison Table
+Forbidden Trading Practices
+Trading
+Economic Calendar
+Trading Updates
+Instruments
+Trading Platforms
+Tools & Services
+Tools Overview
+Trading Psychology
+Leaderboard
+App Suite
+Resources
+FAQ
+Blog
+Academy
+About
+About Us
+Careers
+Contact us
+Press Kit
+Press Releases
+Affiliate programme
+ADDRESS
+FTMO
+Quadrio offices
+Purkynova 2121/3
+110 00 Prague
+Czech Republic
+Get Exclusive FTMO Insights
+Expert Trading Insights
+Latest Updates
+Special Offers
+Subscribe
+You’re subscribed successfully.
+All information provided on this site is intended solely for educational purposes related to trading on financial markets and does not serve in any way as a specific investment recommendation, business recommendation, investment opportunity analysis or similar general recommendation regarding the trading of investment instruments. FTMO only provides services of simulated trading and educational tools for traders. The information on this site is not directed at residents in any country or jurisdiction where such distribution or use would be contrary to local laws or regulations. FTMO companies do not act as a broker and do not accept any deposits. The offered technical solution for the FTMO platforms and data feed is powered by liquidity providers.
+Copyright © 2026 FTMO s.r.o. All rights reserved.
+Cookie settings
+Cookies
+Imprint
+Terms & Conditions
+Privacy Policy
+Made with for trading
+FTMO + TradingView
+Learn more
+FTMO + TradingView
+Introducing TradingView
+Charts, indicators or alerts. All on one platform. Execute your FTMO simulated trades directly on TradingView via the OANDA Broker Profile.
+Start FTMO Challenge on TradingView
+Please note that all accounts we provide to our clients are demo accounts with fictitious funds and any trading is in a simulated environment only. For more information, please feel free to visit our FAQ section. Ok, I understand.

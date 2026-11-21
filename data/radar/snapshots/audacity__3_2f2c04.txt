@@ -1,0 +1,210 @@
+Prohibited Trading Practices & Trading Restrictions | Audacity Capital
+Black Friday Offer: 50% OFF on Ability Challenge (2- Step) and 30% OFF on Ability Challenge (1-Step) and FTP (Instant Funding) Black Friday Offer: 50% OFF on Ability Challenge (2- Step) and 30% OFF on Ability Challenge (1-Step) and FTP (Instant Funding)
+Black Friday Offer: 50% OFF on Ability Challenge (2- Step) and 30% OFF on Ability Challenge (1-Step) and FTP (Instant Funding)
+Black Friday Offer: 50% OFF on Ability Challenge (2- Step) and 30% OFF on Ability Challenge (1-Step) and FTP (Instant Funding)
+Black Friday Offer: 50% OFF on Ability Challenge (2- Step) and 30% OFF on Ability Challenge (1-Step) and FTP (Instant Funding)
+Black Friday Offer: 50% OFF on Ability Challenge (2- Step) and 30% OFF on Ability Challenge (1-Step) and FTP (Instant Funding)
+Black Friday Offer: 50% OFF on Ability Challenge (2- Step) and 30% OFF on Ability Challenge (1-Step) and FTP (Instant Funding)
+🎓 Join Trader University
+About
+Funding
+Stories
+Competition
+Affiliates
+Resources
+EN English Türkçe Español Français Italiano Português Deutsch Filippino Русский العربية हिन्दी 日本語
+Login
+Prohibited Trading Practices Full Guide
+At Audacity Capital, traders are expected to make independent, informed trading decisions and manage risk responsibly. To promote a fair and consistent trading environment, the practices below are prohibited. This guide explains each restriction, why it applies, and how to recognise common examples.
+If you are unsure whether a trading strategy or automated tool is permitted, contact our support team before using it on your account.
+Description
+High-Frequency Trading (HFT)
+Tick Scalping
+Hedging or Group Hedging Across Multiple Accounts
+Averaging Down / Martingale Strategies
+Use of Third-Party Expert Advisors (EAs)
+Dollar Cost Averaging (DCA)
+Account Management by Third Parties
+Copy Trading
+Grid Trading
+Exploitation of System Vulnerabilities
+Automated Multi-Trade Activity
+Lot Size Abuse
+Weekend Gap Trading Rule
+Single Directional Betting
+Jump To
+Description
+To maintain a fair, stable, and transparent trading environment, the following trading strategies and behaviors are strictly forbidden:
+High-Frequency Trading (HFT)
+What it is Using Expert Advisors (EAs), bots, or algorithms to open and close large volumes of trades within fractions of a second, exploiting tiny, short-lived price movements or gaps in data feeds.
+Why it is not allowed HFT relies on speed and infrastructure rather than market analysis and can create unfair advantages, price manipulation, or instability. This restriction also covers latency arbitrage: exploiting delays between trade execution and market-data updates.
+How it may appear
+Large numbers of trades opened and closed within fractions of a second.
+Automated systems targeting quote delays, short-lived price discrepancies, or feed timing rather than a market view.
+Examples
+An EA fires more than 50 trades per minute on EUR/USD, with each trade closed within a fraction of a second to target sub-pip discrepancies between the platform feed and a faster external feed.
+A bot identifies recurring feed delays and systematically enters trades before the delayed price updates.
+Important clarification An isolated trade that closes unusually quickly does not, by itself, establish an HFT strategy. A repeated speed- or latency-based approach is the concern.
+Tick Scalping
+What it is Opening and closing trades within a very short window (2 minutes or below), aiming to capture tiny price fluctuations rather than trading a genuine directional view.
+Why it is not allowed Tick scalping relies on market noise rather than analysis or a defined strategy. It can be carried out manually or through automated tools.
+How it may appear
+Repeated entries and exits in two minutes or less.
+Small and frequent targets driven by minor price flickers.
+Examples
+10:00:00 — Buy 1.00 lot EUR/USD; 10:01:35 — close for a 3-pip profit. Repeating these short-duration trades based on minimal price movement constitutes prohibited tick scalping.
+A trader repeatedly opens trades targeting one or two pips, closing each after a few seconds without a broader market rationale.
+Important clarification A single position closing within two minutes because its stop-loss or take-profit was reached unexpectedly is not necessarily evidence of a tick-scalping strategy. Trading patterns and circumstances are relevant.
+Hedging or Group Hedging Across Multiple Accounts
+What it is Placing opposing buy and sell positions on the same instrument, within one account or across multiple accounts belonging to the trader or coordinated with others, to offset market exposure or create a risk-free outcome.
+Why it is not allowed Opposing positions can shift losses to one account while generating profits in another, creating an arbitrage-style arrangement rather than genuine market risk-taking.
+How it may appear
+Matching or closely timed opposite-direction positions on the same instrument.
+Coordinated buying and selling between separate accounts or traders.
+Examples
+Account A buys GBP/USD while Account B, operated by the same trader or a coordinated associate, sells an equal-sized GBP/USD position at the same time.
+A trader opens a sell position on the same instrument to offset an existing buy position rather than closing the original exposure.
+Important clarification Unrelated positions in separate markets that happen to perform differently are not, by themselves, proof of coordinated hedging. The prohibited conduct concerns opposing positions deliberately arranged to offset risk.
+Averaging Down / Martingale Strategies
+What it is Increasing position size after a loss on the same losing trading idea, in an attempt to recover previous losses with one eventual winning trade.
+Why it is not allowed This method may require progressively more capital during losing streaks and can rapidly breach the fixed drawdown limits of a trading account.
+How it may appear
+Increasing lot sizes after consecutive losses or adverse price moves.
+Doubling or otherwise escalating exposure to defend the same losing trade idea.
+Examples
+A trader buys 0.50 lots of USD/JPY, then adds 1.00 lot and 2.00 lots as the trade moves against them, attempting to recover all losses through one reversal.
+After a losing gold trade, a trader repeatedly re-enters in the same direction with increasingly larger lot sizes solely to recover the prior loss.
+Important clarification The prohibition concerns loss-driven increases in exposure. Describing a strategy as “planned” does not exempt a martingale-style increase after a loss.
+Use of Third-Party Expert Advisors (EAs)
+What it is: Using an Expert Advisor (EA), trading bot, or automated trading algorithm that you did not personally develop. This includes commercially purchased EAs, rented EAs, downloaded bots, shared algorithms, or automated trading systems created by another individual or company.
+Why it's not allowed: At Audacity Capital, traders are only permitted to use EAs that they have personally developed. This ensures that traders maintain full ownership and control over their trading strategies and that their trading activity reflects their own trading decisions and methodology.
+Commercially sold EAs, third-party coded EAs, signal-based trading bots, or any automated trading software obtained from external sources are not permitted, regardless of whether the software is free or paid.
+Examples of prohibited activities:
+Purchasing an EA from an online marketplace or third-party vendor and using it on your account.
+Using an EA developed or coded by another person, even if it has been customised for your trading preferences.
+Downloading and running free EAs from online forums, websites, or trading communities.
+Using rented, shared, or subscription-based automated trading systems.
+Running an EA that executes trades based on signals or strategies provided by an external service or third party.
+Using an EA developed by another trader, friend, developer, or trading group, regardless of whether you paid for it.
+Example: A trader purchases a commercially available scalping EA from a third-party website and installs it on their funded account. Although the trader personally operates the software and controls its settings, the EA was not developed by them. Therefore, using it violates this rule.
+What is permitted? Traders may use their own personally developed EAs, provided that the EA complies with all other Audacity Capital trading rules and prohibited trading practices. The fact that an EA is personally developed does not exempt it from restrictions on prohibited strategies or trading behaviour.
+Dollar Cost Averaging (DCA)
+What it is Adding to an existing losing position as price moves further against the original entry, whether the added positions use the same or different lot sizes, in the hope of a reversal.
+Why it is not allowed Additional exposure to a losing position increases drawdown risk if the market does not reverse and can substitute hope for a defined exit plan.
+How it may appear
+Additional positions in the same direction while the original trade remains open and in a floating loss.
+Multiple entries that increase exposure as price moves against the initial entry.
+Examples
+Buy 1.00 lot EUR/USD at 1.1000; with the first position still losing, buy another 1.00 lot at 1.0980 and again at 1.0960.
+A trader holds a losing oil buy position and adds another buy each time oil falls further to reduce the average entry price.
+Important clarification Opening a new, independently assessed trade after the original losing position has been closed is different from adding to an existing floating loss. Other applicable rules still apply.
+Account Management by Third Parties
+What it is Allowing another person, team, paid service, friend, or automated service acting on someone else’s decisions to trade the account on the holder’s behalf.
+Why it is not allowed The account must be traded by its registered holder, using that trader’s independent decision-making. Payment to the third party is not a requirement for this rule to apply.
+How it may appear
+Another person logging into the account and executing trades.
+An external management service making and executing trading decisions.
+Examples
+The account holder pays a professional manager to place trades during working hours.
+The holder gives a friend account access and lets that friend manage positions without payment.
+Important clarification Discussing general market ideas with other people is distinct from delegating the account’s trading decisions or execution to them.
+Copy Trading
+What it is Mirroring or duplicating another trader’s positions onto an account, either manually or through copy-trading software or an automated tool.
+Why it is not allowed Mirrored trades do not demonstrate independent analysis and decision-making by the account holder.
+How it may appear
+Matching another trader’s entries, exits, timing, and position sizes.
+Using master-account or signal-provider copying services.
+Examples
+A trader connects the account to a copy-trading platform that automatically duplicates a signal provider’s positions.
+A trader repeatedly watches another trader’s live entries and manually duplicates them without independent analysis.
+Important clarification Learning from public market commentary is different from systematically mirroring another trader’s execution. The account holder must make independent trading decisions.
+Grid Trading
+What it is Placing a preset sequence of buy and sell orders at fixed price intervals above and below the current price, forming a grid irrespective of directional analysis.
+Why it is not allowed The mechanical, interval-based arrangement may be used for arbitrage-style outcomes rather than genuine directional market participation.
+How it may appear
+Multiple orders positioned at regular, predetermined price intervals.
+Orders triggered automatically as price moves through the grid.
+Examples
+A trader places pending Buy orders every 20 pips below the current gold price and Sell orders every 20 pips above it.
+An EA automatically places additional orders at every fixed interval as the market moves up and down.
+Important clarification Orders independently placed at distinct, analytically identified levels are not necessarily a grid. A preset, repeated interval structure is the relevant indicator.
+Exploitation of System Vulnerabilities
+What it is Using technical flaws such as erroneous prices, stale quotes, latency gaps, or data-feed failures to obtain trading results, whether deliberately identified or repeatedly exploited after discovery.
+Why it is not allowed Profits derived from technical errors rather than genuine market conditions do not demonstrate trading skill and can compromise platform integrity.
+How it may appear
+Repeated trading around known server or quote errors.
+Deliberately entering trades at mispriced or delayed quotes.
+Examples
+A trader notices that a server issue causes the platform quote to lag the market by several seconds and repeatedly exploits that delay.
+A trader repeatedly enters at an obviously erroneous instrument price before the feed corrects.
+Important clarification If a suspected platform flaw is discovered, stop exploiting it and contact support. An isolated accidental interaction should be reviewed in context.
+Automated Multi-Trade Activity
+What it is Using automated tools to open multiple positions simultaneously across instruments or accounts without actively overseeing or managing each trade.
+Why it is not allowed Large batches of unattended trades do not reflect the trader’s direct, reasoned management of individual positions in real time.
+How it may appear
+Automated scripts placing numerous trades on receiving a signal.
+Simultaneous orders across symbols or accounts with no individual trade review.
+Examples
+A webhook triggers a script to open 15 trades across different currency pairs simultaneously without any manual review.
+An unattended tool receives an external alert and immediately opens multiple positions across several accounts.
+Important clarification Using automation for an individual trade does not automatically establish this violation; the concern is automated, simultaneous multi-trade activity without active oversight. All other EA and trading restrictions continue to apply.
+Lot Size Abuse
+What it is Opening positions with lot sizes disproportionately large relative to account size, especially around market opening or closing times or high-impact news, resulting in unrealistic risk exposure.
+Why it is not allowed Oversized exposure can indicate reckless risk-taking rather than disciplined trading and may be used to attempt to achieve profit targets in a single trade.
+How it may appear
+Positions whose risk is disproportionate to account equity or applicable drawdown limits.
+Abruptly oversized orders around volatile or illiquid market periods.
+Examples
+A trader opens a 5.00 lot GBP/USD position on a $10,000 account at market open, exposing the account to a large potential loss.
+A trader suddenly places a position vastly larger than their normal size immediately before a major market event.
+Important clarification No fixed lot-size-to-balance threshold is specified in this guide. Exposure should be evaluated in context, including instrument, stop-loss, and account risk.
+Weekend Gap Trading Rule
+What it is Intentionally exploiting price gaps between Friday’s market close and the market reopening on Sunday or Monday, including entering trades shortly before closure or setting pending orders specifically to profit from anticipated gaps.
+Why it is not allowed Weekend price gaps may cause orders to execute at the next available market price rather than the requested stop-loss or take-profit level. Traders who hold positions over the weekend accept this risk and remain responsible for resulting losses or drawdown violations.
+How it may appear
+Opening late-Friday positions specifically to capture the expected opening gap.
+Placing pending orders designed primarily to profit from the next weekend opening gap.
+Examples
+A trader buys EUR/USD shortly before Friday’s close solely because they expect a higher Sunday opening price, then exits immediately after the gap.
+A trader sets pending orders shortly before the weekly close specifically to catch a price jump when the market reopens.
+Important clarification Keeping a position open over the weekend is not automatically described as prohibited. The rule targets intentional gap exploitation. Following review, identified violations may result in removal of associated profits, payout rejection, or account termination.
+Single Directional Betting
+Single Directional Betting refers to trading behaviour where a trader relies excessively on one market direction or a particular trading idea, resulting in concentrated exposure or trading performance that depends disproportionately on a single market movement.
+Audacity Capital recognises that traders may have a directional bias based on their individual strategies. However, trading decisions must remain structured, disciplined, and supported by appropriate risk management.
+Why We Monitor This Behaviour
+Excessive reliance on one market direction can create concentrated exposure and make an account's overall performance dependent on a single market movement.
+Our objective is not to restrict legitimate trading strategies or directional market convictions. Instead, we aim to ensure that traders maintain responsible risk exposure, make structured trading decisions, and demonstrate sustainable risk management practices.
+Risk Management and Account Measures
+During the Challenge and Verification stages, traders identified for Single Directional Betting may receive a warning, allowing them an opportunity to review and improve their trading behaviour.
+For example, if a trader continues to build multiple positions in the same direction after receiving a warning, a maximum 1% risk-per-trade restriction may be applied upon reaching the Funded stage. Continued similar behaviour despite the warning and restriction may result in further action, including account termination.
+For FTP accounts, traders identified for Single Directional Betting may be placed directly under the tighter 1% risk-per-trade rule.
+Traders can improve their approach by maintaining controlled market exposure, ensuring positions are supported by a clear trading rationale, and managing the combined risk of multiple positions rather than focusing solely on individual trades.
+Audacity Capital reserves the right to review trading activity and take appropriate action in accordance with its applicable rules and Terms and Conditions.
+Why these rules exist
+The common principle is that trading performance should reflect independent analysis, disciplined risk management, and genuine market participation. Practices that exploit technical weaknesses, manufacture offsetting outcomes, rely on uncontrolled risk escalation, or delegate trade decisions to third parties undermine this principle.
+Before you use a new strategy
+Review how the strategy generates trades, how it manages exposure, whether it depends on another person or third-party automation, and whether it could fall under more than one restriction. Contact Audacity Capital Support if any part of the approach is unclear.
+This is a website content draft based on the current FAQ. Applicable account terms and conditions remain relevant; the examples are explanatory and do not create independent exceptions or numerical limits.
+Company
+Terms of Use Contact Us Affiliate Program About Us AML Policy Prohibited Trading Practices Code of Conduct
+Community
+FAQ Success Stories Dashboard Download Responsible Trading Careers Refer a Friend
+Legal
+Terms & Conditions Privacy Policy Scam Alert Whistleblower Policy Complaints Handling Press & Media Fake Reviews Policy
+Platforms
+Trading Platforms DXTrade MT5
+Newsletter
+Join our newsletter to stay up to date on features and releases.
+Subscribe
+By subscribing you agree to with our Privacy Policy
+and provide consent to receive updates from our company.
+© 2012–2026 Audacity Capital. All rights reserved.
+Privacy Policy Terms and Conditions Cookies Settings
+Legal & Compliance Disclaimer
+AudaCity International FZCO, registered under license DSO-FZCO 38282 at Dubai Silicon Oasis, DDP, Building A1/A2, Dubai, United Arab Emirates, acts solely as a payment facilitator. All trading-related activities are operated through AudaCity Global LTD (Registration Number: 15850), licensed under the International Brokerage and Clearing House Licence (L15850/WL) issued by the Union of Comoros, with a registered office at Hamchako, Mutsamudu, Anjouan, Union of Comoros. We also operate a UK office at 25 Cabot Square, Level 11, London, E14 4QZ, and maintain a partnership with Propmetry Limited (Company Number: HE469039), based in Limassol, Cyprus, which acts as an additional payment partner.
+This website and all services are offered through our sole domain at https://audacity.capital and through our dashboard at https://trade.audacity.capital ; any other domain, social media profile, or individual claiming to represent us outside of this website should be considered fraudulent and reported. Always ensure you are interacting with the legitimate AudaCity Capital website and contact our team directly through our verified channels if in doubt.
+Since 2012, AudaCity Capital has been committed to developing trading talent through structured evaluation and education within a professional-grade simulated trading infrastructure focused on skill-building, not speculation. This helps find and develop real talent to trade with live capital.
+No statement on this website constitutes investment, financial, legal, or tax advice, and we do not offer brokerage, custodial, or portfolio management services. All content is for general informational purposes only and should not be interpreted as a solicitation to invest or trade.
+Use of this website and participation in our programs is subject to local laws, and our services are not available in jurisdictions where such activities are restricted or prohibited, including but not limited to Syria, Iran,Venezuela and North Korea. U.S. residents may only participate via the DX Trade platform where permitted. Users are responsible for ensuring compliance with their local regulations.
+Trading—real or simulated—carries significant risk, and hypothetical performance does not predict actual results. Only participate if you fully understand the risks involved.
+Apple, iPad, iPhone, and App Store are trademarks of Apple Inc.; Android is a trademark of Google Inc., and their use here does not imply any affiliation or endorsement.

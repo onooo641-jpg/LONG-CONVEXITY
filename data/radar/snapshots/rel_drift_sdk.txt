@@ -1,0 +1,5 @@
+2026-04-01 docker-swift-v0.1.13: Merge pull request #209 from velocity-exchange/fix/swift-sim-fee-payer
+2026-03-19 What's Changed
+2026-03-12 v2.159.0
+2026-02-09 v2.157.0
+2026-01-21 v2.155.0

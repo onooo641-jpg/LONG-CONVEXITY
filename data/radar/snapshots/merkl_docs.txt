@@ -1,0 +1,13 @@
+Merkl | Docs
+Docs
+Toggle Sidebar
+Ctrl K
+Merkl Documentation Portal Merkl mechanisms Technical Overview Incentive Mechanisms Campaign Types
+Non-EVM Integrations
+Distribution Types Scoring Types Reward Forwarding Customization Options Additional Features Keep Custody with Token Wrappers Campaign Configuration
+Distribute with Merkl Before You Start Create Campaigns Create from a multisig or Safe Point Programs Credits Pre-TGE Campaigns Private Campaigns Campaign Management Fee Model Merkl Services
+Reward Claiming Advanced Reward Claiming Autoclaim
+Integrate Merkl Integrate Merkl API
+Security at Merkl Bug Bounty Program
+Docs
+Documentation

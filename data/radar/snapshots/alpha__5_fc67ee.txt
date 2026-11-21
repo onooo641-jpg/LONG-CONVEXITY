@@ -1,0 +1,88 @@
+Zero Account Overview | Alpha Futures Limited Help Center Skip to main content
+Search for articles...
+All Collections
+Trading Rules and Parameters
+Zero Account Overview
+Zero Account Overview
+Alpha Futures Zero Account Rules and Parameters
+B
+Written by Benjamin Chaffee
+Updated over 3 weeks ago
+In an effort to implement trader feedback and diversify our offerings, Alpha Futures has launched the ZERO Plan. An account type with $0 Activation Fee, permanently.
+​
+In order to take a Trading Evaluation, a monthly subscription is required.
+There is only one way to fail on Evaluation Accounts, do not allow the Account Balance to hit or exceed the Maximum Loss Limit .
+​
+​ Benefits of Zero Account:
+1.) ONE DAY PASS! No Consistency Rule on Zero Evaluations means you may pass in one day.
+2.) NO ACTIVATION FEE, ever. These accounts are named after their $0 Activation Fee .
+3.) Offered in 25k, 50k, and 100k account size, ideal for traders getting started with low barrier to market.
+4.) 90% profit split from the start, no tiered system.
+5.) Pay yourself up to 4 times per month. Withdraw when you want after 5 winning days of $200 or more, no assigned payout dates.
+6.) No "MLL slides to $0 at first withdrawal" rule. Other firms punish you for taking small payouts, not here. If MLL was at $49,200 before payout, it will be after as well
+​
+​ Zero Account Parameters
+Parameters
+Zero 25k
+Zero 50K
+Zero 100K
+Profit Target
+$1,500
+$3,000
+$6,000
+Maximum Loss Limit
+$1,000
+$2,000
+$3,000
+Daily Loss Guard
+$500
+$1,000
+$2,000
+Price
+$89/month
+$169/month
+$279/month
+Evaluation Reset
+$79
+$149
+$249
+Max Position
+1 mini, 10 micros
+3 minis, 30 micros
+6 minis, 60 micros
+Scaling Rule
+(Qualified only)
+No
+Yes
+Yes
+Consistency
+40% on Qualified only
+40% on Qualified only
+40% on Qualified only
+News Trading
+No restrictions on Evaluations.
+​
+Restrictions on Qualified here .
+No restrictions on Evaluations.
+​
+Restrictions on Qualified here .
+No restrictions on Evaluations.
+​
+Restrictions on Qualified here .
+Qualification for Payouts
+Withdraw up to 50% of your profits every 5 winning days of $200 or more.
+Withdraw up to 50% of your profits every 5 winning days of $200 or more.
+Withdraw up to 50% of your profits every 5 winning days of $200 or more.
+Withdrawal Limit
+$200 minimum $1,000 maximum
+$200 minimum $1,500 maximum
+$200 minimum $2,500 maximum
+Profit Split
+90%
+90%
+90%
+Activation Fee
+$0
+$0
+$0
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃

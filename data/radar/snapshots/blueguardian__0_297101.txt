@@ -1,0 +1,195 @@
+Zero account rules | Blue Guardian Help Centre
+Skip to content Help Search the help centre ⌘K
+Website Start challenge Help Centre home Collections
+Getting started Account inactivity rule How Blue Guardian works Getting help and using your dashboard
+Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
+Payouts How payouts work
+Billing & accounts Paying for your account: methods, card rules and refunds How many accounts can I have? Futures bundle discounts
+Trading rules Prohibited trading strategies What happens if I break a rule? Futures risk management rules Trading hours and the trading day CFD news trading rules
+Platforms & instruments Trading platforms CFD trading conditions: markets, commissions and leverage Futures contract limits and funded scaling Futures instruments, codes and costs
+CFD plans Instant Standard account rules Instant Starter account rules 1 Step Standard rules 2 Step Standard rules 1 Step Nano rules 2 Step Nano rules Buy Now Pay Later (BNPL) rules
+Futures plans Reserve account rules Elite account rules Express account rules Direct account rules Elite, Reserve & Direct Path to Live Zero account rules Zero Path to Live
+Affiliates & competitions Affiliate program Monthly trading competition
+Help Centre
+Futures plans
+Zero account rules
+Zero Futures plan: options, profit target, drawdown, optional daily loss limit, daily payouts, the $8,000 daily profit limit, resets and FAQs.
+Applies to: Futures Updated 15 November 2026
+Short answer
+Zero is a one-phase Futures evaluation built around daily payouts with no payout cap. Hit a 6% profit target while meeting your chosen consistency rule and staying within the drawdown. You build your account at checkout: end-of-day or intraday drawdown for the evaluation, with or without a daily loss limit, and 30%, 40% or 50% consistency. Once funded, you can withdraw profit above your buffer every day, with a 90% profit split. Zero is available on NinjaTrader.
+How the end-of-day drawdown option moves Replay
+If you chose end-of-day drawdown for your evaluation, your loss limit moves up only when you set a new highest end-of-day closing balance, and it never moves down. Funded Zero accounts always use an intraday trailing drawdown instead, which stops trailing at your starting balance + $100. What happens when you hit the daily loss limit Replay
+This applies only if you chose an account with a daily loss limit. Hitting it closes your open trades and locks trading for the rest of the day. It isn't a failed account: trading unlocks at the 5 PM New York rollover. How the consistency rule lets you pass Replay
+Total profit Best single day Consistency limit (%) Enter your numbers to check.
+During the evaluation, your best day can't be more than the consistency limit you chose (30%, 40% or 50%) of your total profit. Each extra profitable day raises the threshold, and you can pass once your best day fits under it. Funded Zero accounts have no consistency rule.
+Key numbers
+$25K
+$50K
+$100K
+$150K
+Profit target (6%)
+$1,500
+$3,000
+$6,000
+$9,000
+Max trailing drawdown
+$1,000
+$2,000
+$3,000
+$4,500
+Optional daily loss limit (soft breach)
+$600
+$1,200
+$1,700
+$3,000
+Max contracts in evaluation (Minis / Micros)
+2 / 20
+4 / 40
+8 / 80
+12 / 120
+Payout buffer balance (funded)
+$26,100
+$52,100
+$103,100
+$154,600
+Max daily profit (funded)
+$8,000
+$8,000
+$8,000
+$8,000
+Payouts: daily, no cap, minimum $500. Profit split: 90%. News trading: evaluation only. Up to 5 funded Zero accounts. Platform: NinjaTrader.
+Build your account
+Choose these options at checkout. Each option changes the price.
+Option
+Choices
+Applies to
+Evaluation drawdown
+End-of-day or intraday trailing
+Evaluation only. Funded is always intraday trailing.
+Daily loss limit
+None (default) or with daily loss limit
+Evaluation and funded
+Consistency
+30%, 40% or 50%
+Evaluation only
+Your choices stay with the account for its whole life, including after you're funded.
+The evaluation
+Profit target
+Reach 6% profit while following all the rules. Your account then has a final review, and once approved you become a funded trader. There's no time limit and no minimum number of trading days.
+Consistency rule
+Your best day can't make up more than your chosen percentage of total profit: 30%, 40% or 50%. If it does, you're not breached. You just keep trading until your best day falls below the limit.
+Example: on $50K with 40% consistency and a $2,000 best day, you need at least $5,000 total profit to pass.
+Funded Zero accounts have no consistency rule.
+Drawdown in the evaluation
+End-of-day (EOD) trailing: your loss limit moves up only when you set a new highest end-of-day closing balance. It doesn't follow unrealised profit during the day.
+Intraday trailing: your loss limit follows your highest equity in real time, including open profit.
+Either way, the limit never moves down, and hitting it is a hard breach.
+Daily loss limit (if chosen)
+If you chose an account with a daily loss limit, hitting it is a soft breach : open trades are closed, trading locks for the rest of the day, and it unlocks at the 5:00 PM New York rollover. The account isn't failed. The same limit carries into your funded account.
+Funded account
+Contract limits
+You start funded at a lower contract limit, and it scales up as your end-of-day balance grows, the same as Reserve. See Futures contract limits and funded scaling .
+Drawdown
+Funded Zero accounts always use an intraday trailing drawdown that follows your highest equity, including open profit. It stops trailing once it reaches your starting balance + $100 , and stays fixed from then on.
+Account
+Equity where trailing stops
+Fixed loss limit
+$25K
+$26,100
+$25,100
+$50K
+$52,100
+$50,100
+$100K
+$103,100
+$100,100
+$150K
+$154,600
+$150,100
+Example: on $50K funded, your loss limit starts at $48,000 and trails your highest equity. Once equity reaches $52,100, it locks at $50,100.
+Payouts
+Buffer: each account size has its own buffer balance (see Key numbers). You can withdraw profit above it, and the buffer must stay intact when you request a payout. Example: on $50K the buffer is $52,100, so with a $53,000 balance you can withdraw $900.
+How often: every day, once the buffer is cleared. There's no payout cap.
+Minimum: $500, by crypto or Rise.
+Profit split: 90%.
+The $8,000 daily profit limit
+Every funded Zero account, whatever its size, has a maximum daily profit of $8,000 . If an account makes $8,000 net profit in a single trading day, it's closed and we email you with two options:
+Option
+What you get
+What happens next
+Take the payout
+$3,600 for each account that hit $8,000 (50% of $8,000 at your 90% split)
+All your funded Zero accounts close. A 30-day cooldown applies before you can buy a new evaluation.
+Move to Live
+A Live Bonus of $1,000 ($25K and $50K) or $1,500 ($100K and $150K) for each funded Zero account, plus Live drawdown
+All your funded Zero accounts merge into one Live Account. See Zero Path to Live .
+Example: one $50K account hits $8,000. You can take a $3,600 payout, or move to Live with $2,000 of Live drawdown and a $1,000 Live Bonus.
+Profit above $8,000 on that day isn't kept, so plan your trades with this in mind.
+How many funded Zero accounts you can hold
+Up to 5 funded Zero accounts at a time, of any size.
+Resets and inactivity
+Evaluation reset: if you breach your evaluation, you can reset it from your dashboard. The reset costs the same as the evaluation's current sale price.
+Funded accounts: can't be reset or reactivated after a breach.
+Inactivity: evaluation and funded accounts are closed after 10 days without a trade. See Account inactivity rule .
+Other rules
+News trading: allowed on the evaluation. Not allowed on funded accounts.
+Trading hours: 6:00 PM to 4:10 PM New York time. Open positions close automatically at 4:10 PM, so you can't hold overnight. See Trading hours and the trading day .
+Stop losses: not mandatory, but every trade needs a defined risk. See Futures risk management rules .
+Copy trading: only between accounts you legally own.
+Microscalping: less than 50% of your profit may come from trades held under 10 seconds.
+Fees: one-time purchase. No monthly or activation fees.
+Zero FAQs
+How is Zero different from Reserve?
+Both have the same profit target, drawdown sizes and contract limits. Zero pays out daily with no cap once you clear your buffer, uses an intraday drawdown when funded, and lets you choose your evaluation drawdown type and a 30%, 40% or 50% consistency rule. Reserve pays up to 50% of profit after 5 winning days, with a cap per payout.
+Which option should I pick?
+End-of-day drawdown gives you more room during the day, because it ignores open profit until the close. A daily loss limit and a stricter consistency rule lower the price. Pick the mix that suits how you trade.
+Can I change my options after buying?
+No. Your options are set at checkout and stay with the account.
+Can I reset a Zero account?
+You can reset a breached evaluation from your dashboard, at the evaluation's current sale price. Funded Zero accounts can't be reset.
+Does the daily loss limit fail my account?
+No. It's a soft breach. Trading locks for the rest of the day and unlocks at the 5:00 PM New York rollover.
+Can I trade the news?
+Yes during the evaluation. Once you're funded, news trading isn't allowed.
+How fast can I get paid?
+Once your balance is above the buffer, you can request a payout every day. Requests are processed within 24 business hours. See How payouts work .
+What happens if I make $8,000 in one day?
+That account is closed and we email you with two options: take a $3,600 payout for each account that hit $8,000, followed by a 30-day cooldown; or move to Live with a Live Bonus for each funded Zero account. Profit above $8,000 that day isn't kept.
+How many Zero accounts can I have?
+Up to 5 funded Zero accounts at a time, of any size.
+Which platform can I use?
+Zero is available on NinjaTrader.
+Still need help?
+Chat with our support team. We usually reply in a few minutes.
+Chat with us
+More in Futures plans
+Applies to: Futures Reserve account rules Applies to: Futures Elite account rules Applies to: Futures Express account rules Applies to: Futures Direct account rules Applies to: Futures Elite, Reserve & Direct Path to Live Applies to: Futures Zero Path to Live
+There are no CFD related articles here. Switch to Futures or All to see them.
+On this page Short answer
+Key numbers
+Build your account
+The evaluation
+Profit target
+Consistency rule
+Drawdown in the evaluation
+Daily loss limit (if chosen)
+Funded account
+Contract limits
+Drawdown
+Payouts
+The $8,000 daily profit limit
+How many funded Zero accounts you can hold
+Resets and inactivity
+Other rules
+Zero FAQs
+How is Zero different from Reserve?
+Which option should I pick?
+Can I change my options after buying?
+Can I reset a Zero account?
+Does the daily loss limit fail my account?
+Can I trade the news?
+How fast can I get paid?
+What happens if I make $8,000 in one day?
+How many Zero accounts can I have?
+Which platform can I use?
+© 2026 All Rights Reserved – Blue Guardian Terms Privacy Cookies

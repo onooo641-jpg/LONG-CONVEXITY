@@ -1,0 +1,319 @@
+CTI Payout Proof & Success Stories
+Home
+Funding Programs
+1-Step Challenge
+2-Step Challenge
+Instant Funding
+Direct Funding
+FAQs
+Academy
+Resources
+Join Community
+Blog
+Market News
+Symbols Live Feed
+Economic Calendar
+Trading Platforms
+MetaTrader 5
+Match Trader
+Calculators
+Challenge Drawdown Calculator
+Margin Calculator
+Swap Calculator
+Pip Calculator
+Position Size Calculator
+Risk Of Ruin Calculator
+MT5 Trade Manager
+More
+Become an Affiliate
+Partners
+About Us
+Shop
+Start a Prop Firm
+LOG IN
+FREE TRIAL
+LOGIN
+Home
+Funding Programs
+1-Step Challenge
+2-Step Challenge
+Instant Funding
+Direct Funding
+FAQs
+Academy
+Resources
+Join Community
+Blog
+Market News
+Symbols Live Feed
+Economic Calendar
+Trading Platforms
+MetaTrader 5
+Match Trader
+Calculators
+All Calculators
+Challenge Drawdown Calculator
+Margin Calculator
+Swap Calculator
+Pip Calculator
+Position Size Calculator
+Risk Of Ruin Calculator
+MT5 Trade Manager
+More
+Become an Affiliate
+Partners
+About Us
+Shop
+Start a Prop Firm
+Skip to content
+Home › Blog
+› Prop Trading
+› CTI Payout Proof: Real Trader Success Stories & Timeline
+Prop Trading
+CTI Payout Proof: Real Trader Success Stories & Timeline
+By Martin Najat
+·
+March 24, 2026
+·
+Updated October 27, 2026
+·
+8 min read
+Reading mode
+Dark
+In this article
+How Our Payout Pipeline Works
+5 Days to Payout: How It Works
+Real Trader Case Studies
+Payout Proof From Our Funded Traders
+How Our Payout Speed Compares
+Security & Compliance Checklist
+FAQs
+Conclusion: Our Transparency Sets Us Apart
+“Show me the money.” That’s what skeptical traders ask on Reddit and Telegram when evaluating prop firms. Fair enough—you’ve seen the horror stories of firms that delay, deny, or disappear when withdrawal time comes. Traders want undeniable payout proof before risking their time and capital. At CTI, we don’t just talk about paying traders; we provide the verifiable payout proof you need, and we’ve built our entire reputation on it.
+How Our Payout Pipeline Works
+We operate a straightforward 4-step payout process: profit qualification, internal transfer to your Dashboard Wallet within two business days, withdrawal request processing within one business day, and final transfer to your bank or crypto wallet.
+We process withdrawal requests within 24 hours, faster than most prop firms. We offer multiple payout methods, including bank transfers and cryptocurrency wallets.
+Our Requirements:
+– Minimum 10 active trading days.
+– Minimum $100 profit (or 2% of account balance).
+– All withdrawals must be to accounts under your name (no third-party transfers).
+– KYC verification completed before your first payout.
+5 Days to Payout: How It Works
+Many say this is a bold claim, but it’s true: with our Instant Funding program , you can receive your first payout in as little as five days .
+There’s no evaluation phase, waiting period, or fixed monthly cycle.
+When you’re ready to trade, you’re ready to earn — and if you trade profitably from day one, you can request your first withdrawal just five days later.
+Here’s how it works, step by step:
+Your 5-Day Payout Timeline
+Day
+Action
+What’s Happening
+Day 0
+Instant Funding Activated
+Start trading immediately — no challenge needed.
+Day 1–5
+Profitable Trading Days Logged
+You trade consistently, close at least 0.5% profit per day, and reach a total profit of 2% (or $100 minimum).
+Day 5
+Payout Requested
+You submit your withdrawal through the dashboard wallet, choosing crypto for same-day speed.
+Same Day or Next
+Funds Received
+We process approved payouts within 24 hours. Crypto often lands the same day.
+Is 5 Days to Payout Really Possible?
+Yes — and it has been done.
+We’ve had traders use Instant Funding, log five profitable days in a row, and receive their payout within 24 hours of their request.
+But understand this is the fastest possible timeline. It requires immediate KYC completion, consistent profitable trading from day one, and selecting crypto as your withdrawal method .
+It’s not typical, but it is achievable.
+What’s a More Typical Timeline?
+Most traders don’t trade profitably five days in a row right out of the gate. Some skip days, take losses, or hit their 2% profit threshold a bit slower.
+In these more common cases, the first payout usually happens within 7 to 14 calendar days , still among the fastest in the industry.
+Also, keep in mind: weekends don’t count as trading days , and our team processes withdrawal approvals on business days.
+If your fifth profitable day falls on a Friday and you request your payout that evening, your transaction may not process until Monday.
+That’s why we always emphasize: 5 days is the earliest possible, but not the average.
+What About 1-Step and 2-Step Challenge Accounts?
+If you’re on one of our challenge models, the timeline is a little longer, but still faster than most firms.
+However, you’ll need at least 7 Profitable Trading Days to request your first payout. Like Instant Funding, payouts are typically processed within 24 hours once approved.
+Again, this is a great deal faster than many firms that enforce 30-day holding periods. We’re proud to offer one of the fastest and most flexible payout systems in prop trading, with real traders backing that up every week.
+Want to compare challenges? Read our Funding Challenges Comparison Guide
+Real Trader Case Studies
+The best way to prove our payout system works is to show you the traders who’ve actually used it. These aren’t fictional success stories or carefully crafted marketing case studies – they’re real CTI traders who’ve shared their complete journeys, including the challenges, setbacks, and ultimately, the results that made it all worthwhile.
+Case Study #1: Rees – From Warehouse Worker to Gold Scalper
+Background: Night shift supermarket warehouse worker balancing trading with family life
+Strategy: Gold scalping on 1-minute charts using support/resistance levels
+Timeline: Started with $10k account, hit the 10% profit target to scale to $40k
+Key Achievement: 12% profit in just 3 days through disciplined risk management
+Rees’s story stands out because of his complete transparency about both wins and losses.
+After a serious car accident in 2020 left him unemployed during recovery, he used the time to master scalping techniques.
+His approach focuses on 30-minute trades during high-volatility sessions, keeping losses below 2% per trade.
+→ Follow Rees’s complete trading journey
+Case Study #2: Xing – Automated Trading Success
+Background: Systematic trader using Expert Advisors (EAs) for hands-off trading
+Strategy: Fully automated EA on MT5 platform with strict risk management
+Risk Management: Maintains ultra-conservative <0.1% risk per trade
+Key Achievement: Successfully passed evaluation entirely through automated trading
+Xing’s case proves that our payout system works regardless of trading style – manual or automated.
+Xing openly discusses his automated approach and minimal risk-per-trade strategy.
+His ultra-conservative risk management (<0.1% per trade) showcases how systematic traders can build steady profits while staying well within our drawdown limits.
+For traders concerned about payout reliability with EAs, Xing’s journey provides concrete evidence that our system fairly evaluates automated strategies without bias, making payouts accessible to systematic traders who prefer hands-off approaches.
+→ Learn more about Xing’s automated trading profits
+Case Study #3: Emmanuel – The Comeback Portfolio Manager
+Background: Swing trader managing $200,000 across multiple CTI accounts as portfolio manager
+Strategy: Multi-day setups with 2-2.5R risk-to-reward ratio, strict entry criteria
+Key Achievement: Lost initial $50k account due to overtrading, then rebuilt with discipline.
+After losing his first $50k funded account to overtrading and forced trades, Emmanuel spent two months analyzing every failed trade, discovering that 60% didn’t meet his strict criteria.
+Rather than giving up, he purchased two direct-funded $50k accounts and passed both through disciplined execution.
+Now spending just 30-60 minutes daily on charts, he maintains a low 3.16% drawdown while managing six-figure capital.
+His business mindset treats losses as “cost of goods sold,” demonstrating the mental framework needed for sustainable payout success.
+→ Read Emmanuel’s complete comeback story
+Payout Proof From Our Funded Traders
+Real payout certificates from our funded trader community.
+Payout Proof From Our Funded Traders | Get Funded with CTI Today!
+How Our Payout Speed Compares
+Speed matters — especially when you’ve done the work, passed your funding requirements, and are ready to enjoy the rewards.
+While many prop firms enforce fixed cycles or monthly lock-ins, our model is built to allow traders to withdraw profits as soon as they’re eligible.
+Here’s how our payout system compares to some of the biggest names in the prop trading space:
+Firm
+Earliest First Payout
+Processing Time (After Approval
+City Traders Imperium (Instant Funding)
+5 days
+Within 24 hours
+FundedNext
+30 days (standard challenge)
+1–2 business days
+TopTier Trader
+10–14 days (after first trade)
+1–2 business days
+FTMO
+30 days (fixed payout cycle)
+1–2 business days
+Note: The figures above reflect each firm’s standard payout policies as of 2025. Some may offer faster timelines through add-ons or premium programs. Always check with each provider for their most up-to-date terms.
+Even with our 1-Step and 2-Step challenge models, we remain among the fastest . Once you complete 10 active trading days and hit 7 profitable days, you’re free to request your first payout, without being forced into a 30-day cycle.
+Security & Compliance Checklist
+We maintain strict compliance standards, including:
+✓ KYC/AML Verification: Required before any funded account or payout processing, typically completed in under 5 minutes
+✓ Trading Audit: All trades undergo our automated and manual review for rule compliance
+✓ Identity Verification: Government-issued ID and proof of address mandatory
+✓ EA Documentation: For algorithm traders, we may request proof of EA ownership per our terms and conditions
+City Traders Imperium Limited is registered in England & Wales (registration number 11463147), but we operate globally from Dubai, maintaining regulatory compliance across jurisdictions.
+FAQs
+How can I verify that CTI actually pays traders?
+Check our Discord’s ‘payout-proof’ section, where we showcase certificates for successful withdrawals. Watch our YouTube channel , which features real trader interviews discussing their payout experiences. We also have many detailed case studies on our website.
+How do I know you won’t change the rules when I request a payout?
+Our terms are clearly outlined here . Changing payout rules mid-contract would destroy our reputation and business model.
+What happens if my payout request is refused?
+Payout refusals are rare and always justified. They only occur for rule violations, which are clearly documented and communicated. Our support team provides detailed explanations for any declined requests.
+For detailed information about payout processing times, methods, and requirements, visit our complete funded account payouts guide .
+Conclusion: Our Transparency Sets Us Apart
+Our Trustpilot reviews and verified payouts are proof of real results.
+Our combination of 5-day qualification periods, 24-hour processing, and up to 100% profit splits creates an industry-leading proposition for serious traders.
+Martin Najat
+Chief Executive Officer | CEO
+MBA, BSc Banking and Finance, 8+ years in prop firm operations.
+Martin Najat co-founded City Traders Imperium in 2018 and is the operational and strategic force behind its global trader ecosystem. With a background in banking and finance (BSc, ASCCB-accredited), an MBA, and a professional trading practice of his own, Martin built the systems that let CTI run with reliability, transparency and long-term stability.
+From payout infrastructure to risk controls and trader-support workflows, he shaped the operational backbone that grew CTI from a London startup into a respected international proprietary trading firm and continues to drive the technology that will power the next generation of prop trading. His leadership ensures traders experience a firm that is fast, fair and built to last.
+How we write and review our content: Editorial Policy
+X
+LinkedIn
+← Previous
+Balance-Based Drawdown Explained: Why CTI’s Risk Model Gives You More Breathing Room
+Next →
+The Real Reason Most Traders Fail: It’s Not the Markets.
+Share
+In this article
+How Our Payout Pipeline Works
+5 Days to Payout: How It Works
+Real Trader Case Studies
+Payout Proof From Our Funded Traders
+How Our Payout Speed Compares
+Security & Compliance Checklist
+FAQs
+Conclusion: Our Transparency Sets Us Apart
+Categories
+Market News
+Forex Education
+Funded Traders
+Trading Psychology
+Prop Trading
+Prop School
+CTI vs Prop Firms
+More in Prop Trading
+US Midterms 2026: What CTI Traders Did on Election Night
+You knew it was coming. The date was on every calendar. The polls had been picked apart for weeks. Everyone had a…
+10 min read
+What Is a Prop Firm?
+What Is a Prop Firm? The Ultimate 2026 Guide A prop firm, short for proprietary trading firm, is a company that gives…
+18 min read
+Balance-Based Drawdown Explained: Why CTI’s Risk Model Gives You More Breathing Room
+Why Drawdown Rules Make or Break Your Challenge Many prop firm challenge failures aren’t because traders can’t hit profit targets. They’re because…
+10 min read
+Keep reading
+Market News
+Weekly Market Sentiment – 15 November 2026
+A hot US inflation report drove the dollar to a 52-week high and revived December Fed hike bets,…
+7 min read
+Read More →
+Market News
+Weekly Market Sentiment – 8 November 2026
+A Democratic midterm sweep sent stocks into a correction this week, while Brent oil slid hard on US-Iran…
+7 min read
+Read More →
+Prop Trading
+US Midterms 2026: What CTI Traders Did on Election Night
+You knew it was coming. The date was on every calendar. The polls had been picked apart for…
+10 min read
+Read More →
+Exit reading mode
+Follow Us
+Funding Programs
+1-Step Challenge
+2-Step Challenge
+Instant Funding
+Direct Funding
+Success Stories
+FAQs
+Free Trial
+Resources
+CTI Academy
+Join Community
+Blog
+Market News
+Symbols Live Feed
+Calculators
+MT5 Trade Manager
+More
+Become an Affiliate
+Partners
+About Us
+Shop
+Start a Prop Firm
+Contact Us
+Contact Support
+Email: support@citytradersimperium.com
+Live Chat: available on the website
+Discord: Join Community
+Terms & Conditions
+Privacy Policy
+Refund Policy
+AML Policy
+Affiliate Agreement
+Conduct Policy
+Editorial Policy
+Sitemap
+Cookie Settings
+Skill assessment programs and simulated demo trading services are provided exclusively by City Traders Imperium Limited, a company incorporated under the laws of Comoros Union with company number 15969 (License No. L15969/CTI), registered address at Hamchako, Mutsamudu, Autonomous Island of Anjouan, Comoros Union, with operating address at Edificio Faro, Oficina 4, Avenidas 12 y 14, Calle 12, Barrio Luján, San José, Costa Rica. City Traders Imperium Academy educational courses are provided by CTI FZCO (Company No. DSO-FZCO-21340), registered at Dubai Silicon Oasis, DDP, Building A1, Dubai, United Arab Emirates.
+Legal Disclosure: City Traders Imperium Limited provides access to simulated trading skill assessment programs designed solely for the evaluation of trading proficiency and risk-management skills. City Traders Imperium Academy provides structured educational courses. All trading activity occurs in a demo environment using virtual capital.
+No Client Funds / No Live Trading: Neither CTI FZCO nor City Traders Imperium Limited is a broker, dealer, exchange, or investment adviser, and neither accepts nor manages client deposits. Participants do not trade real assets or place live market orders. Any rewards are performance-based and derived from skill assessment results only.
+Evaluation & Educational Use Only: All content, tools, and services are provided for educational and evaluation purposes only and shall not be construed as investment advice, solicitation, or an offer to buy or sell any financial product, cryptocurrency, or derivative. Participants are encouraged to consult independent financial, legal, or tax advisors before engaging in any trading activity outside of these services.
+Platforms: MetaTrader 5 & Match-Trader platforms are used exclusively in connection with the simulated skill assessment environment operated by City Traders Imperium Limited.
+Hypothetical Performance Disclosure: Simulated or hypothetical trading results have inherent limitations. Unlike actual performance records, they do not represent real trading activity and may be designed with the benefit of hindsight. No representation is being made that any account will, or is likely to, achieve profits or losses similar to those shown or implied.
+Payments & Refunds: All fees paid are educational service fees for access to courses or skill assessment programs. All fees are non-refundable except as outlined in our Refund Policy .
+Jurisdictional Restrictions: Neither entity offers services to nationals or residents of the following jurisdictions: North Korea (DPRK), Iran, Syria, Cuba, Russia, or to any individual under international sanctions.
+Non-Targeted Reach: Information on these websites is not directed to residents of any country where such distribution or use would be contrary to local law or regulation. It is the user's responsibility to ensure that any use of the websites or services adheres to their local laws or regulations.
+Beware of Impersonators: This is our only official website.
+© 2026 Copyright
+City Traders Imperium & City Traders Imperium Academy.
+All Rights Reserved.
+Black Friday at City Traders Imperium: the only crash you want
+Select an offer to copy its discount code, then claim your discount.
+✕ Copy code CRASH15: Direct Funding, 15% off Copy Copy code CRASH20: 2-Step Challenge, 20% off Copy Copy code CRASH25: Instant Funding, 25% off Copy Copy code CRASH30: 1-Step Challenge, 30% off Copy Claim My Discount Already have an account? Log in

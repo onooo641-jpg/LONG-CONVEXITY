@@ -1,0 +1,199 @@
+Trading Rules - Lux Trading Firm
+We use cookies, and by continuing to use this site or clicking “Agree” you agree to their use. Full details are in our   Cookie Policy AGREE
+Home
+Account Types
+1-Step Evaluation
+Instant Funding
+Prediction Markets
+Rules
+New Trading Rules
+Old Trading Rules
+Prediction Market Rules
+Lux Services
+Lux Affiliates
+Lux Elite
+Lux Mentors
+About
+Lux Events
+Blog
+Contact
+LOGIN
+RULES OF ENGAGEMENT
+The Lux Career Trading Program – An Overview
+The Lux Trading Firm Evaluation account’s objective is to assess if you can adhere to our rules for trading our live accounts. The rules are simple, and the limits are in place to protect our capital and your profits.
+Please do not request exclusion from any of these rules. They are there for both our benefits.
+What is the Profit Target, and What is the Profit Share?
+Evaluation and Advanced stage target according to our different trading models.
+At Lux Trading Firm, we offer three different accounts:
+$50,000 – Evaluation and Advanced Acc stage – The target for this account is respectively $3,000 and $2,000.‎
+$200,000 – Evaluation and Advanced Acc stage–The target for this account is respectively $12,000 and $8,000.
+$1MM Special Account – 1 Evaluation stage only – The target for this account $150,000
+Once a trader successfully completes the Evaluation stage, he will receive a refund of 50% of the paid fees. He will receive another 50% once he passes the advanced stage. The 1 stage evaluation accounts are completely excluded from this refund deal.
+Once you have reached the Professional Account stage, and up, the profit targets are 10% to grow to the next stage (there are no time limits to reach any of our profit targets)
+We shall split the profits in a ratio of 75% to the trader and 25% to the Lux Trading Firm.‎
+In the Professional and above stages, the trader can request a withdrawal only once per month. The transactions will be processed within 3-5 business days.
+What is my maximum loss limit?
+At lux Trading Firm, we believe that all traders should get a fair chance to enable them to trade and remain within their risk limit. As many of you may know, Institutional traders are risk-averse and generally make excellent trading decisions that lead to profitability and consistency.
+The MAXIMUM RELATIVE DRAWDOWN is 6% on our Evaluation and Advanced stages in the Lux Career Plan Funded Trading Program.
+What does relative drawdown mean?
+The Maximum allowed Relative Draw Down is the highest realized account balance minus 6% and is compared to equity and balance.‎
+The losses can never exceed the value of the Maximum Relative Drawdown specified at the start of the Evaluation.
+For example, for the $100K Evaluation and Advanced Account stage, the max relative Drawdown is $6,000. If the starting account balance was $100,000, and at a later time, the trader made a profit of $2,000, bringing the max account balance to $102,000. Then the stop-out level based on the Relative Drawdown would be $102,000 – $6,120 = $95,880 .
+The MAXIMUM HYBRID DRAWDOWN is 6% on our Professional and Expert stages in the Lux Career Plan Funded Trading Program.
+Our 6%  hybrid drawdown level works like a combination of a fixed and relative drawdown.
+After a trader withdraws their profits on the professional live trading stages, the account balance and maximum high are reset to the initial balance (or scaled up). This also resets the maximum drawdown level to 6%  of the starting balance. So, every month you make a profit and withdraw; you also start with a new drawdown.
+We implemented relative drawdown to create consistency in the risk our trades take and to ensure the safekeeping of profits already earned.
+We don’t want traders to use gained profits to increase the amount of risk they can take. It really doesn’t make sense in our environment where the account size is scaled up after accumulating 10% profit anyway.
+Your account will be immediately disabled when you hit your max loss allowed.
+Should this happen, you can apply for a new account by paying a reset fee (fees listed at the bottom of this page), dependent on your account size, but not related to your current stage. You will go back to 2 stages in the program, that is, if you were on stage 4 you will start again on stage 2.
+From stage 2 onward in career plans, and beginning at stage 1 in Elite plans, you will be assigned a personal risk manager that will help you with anything that is necessary to reach your goal/target. Your risk manager is there to advise, support, and guide you in any way that is beneficial to both of us. Therefore, you are required to follow his advice diligently. In the case of serious negligence, or poor risk management, your account might be closed at our discretion, and you will be expelled from the program.
+Trading Strategy and Stop-Loss (SL) Settings
+To ensure a fair and consistent trading environment, we have specific rules for Stop-Loss (SL) settings tailored for different types of traders: scalpers, day traders, and swing traders. These rules align with industry standards observed by investors, banks, hedge funds, and asset management trading departments.
+Trader Classification
+Scalpers: Engage in very short-term trades, often holding positions for only a few minutes to a few hours. Their targets are less than 15 pips on Forex, or equivalent.
+Day Traders: Open and close positions within the same trading day without holding any overnight positions.Their targets are 15-60 pips on Forex, or equivalent.
+Swing Traders: Hold positions for several days to weeks, aiming to profit from expected short- to medium-term price movements.Their targets are more than 60 pips on Forex, or equivalent; and their stop loss is usually larger than the true average range of one day in a given symbol.
+Stop-Loss (SL) Settings
+Scalpers: Can use minimum SL settings according to the specific rules outlined.
+Day Traders: Must use SL settings at least 3 times larger than the minimum SL settings outlined.
+Swing Traders: Must use SL settings at least 10 times larger than the minimum SL settings outlined.
+Assessment of SL Settings
+We evaluate SL settings based on the trader’s classification and respective targets.
+Traders must ensure their SL settings are reasonable and in line with their trading strategy. Unusually small SL settings for the trader’s classification will be reviewed.
+General Guidelines
+Mandatory SL Order: Every trader must place a Stop-Loss order before entering the market. The sum of all Stop-Loss orders must be within the 6% DrawDown limit and cannot exceed the maximum allowed risk capital. For example, on a $1MM account, the total value of all active Stop-Losses cannot be larger than 5% of the total available risk at trade opening time.
+Profit Exclusion: Any profits or active trading days made by such trades will not count towards the account growth profit target.
+Minimum SL Distance: A minimum stop-loss of at least 0.0005 pips on forex pairs (or an equivalent on other asset classes) is required. The minimum opening stop-loss distances for every symbol can be found here: Minimum Stop Loss.pdf .
+Stock SL Settings: For stocks in the USD30, S&P 500, and Nasdaq 100, the minimum Stop-Loss should be at least 0.3% of the share price, and no less than 0.5% for other stocks.
+News Release Exception: During news releases, the minimum required Stop-Loss distance must be increased by 100%.
+Manual Exit and SL Adjustment
+Manual Exit: Traders can exit their trades manually with a loss smaller than the minimum required Stop-Loss. Traders can also move their Stop-Loss to break even or to profit once the trade has moved favorably.
+Real Market Conditions: It’s important to note that during high volatility or unexpected events, trades might close at the next available price, which can differ significantly from the intended Stop-Loss price.
+Important
+News Event Rule: No Stop-Loss adjustments are allowed within 30 seconds before or after a news event to prevent increasing risk of market volatility.
+Recommendations
+Trade Classification: We recommend every trader decides before their trade, if it will be a scalp, day trade, or a swing trade and set their SL and Take Profit accordingly.
+These rules are designed to protect investors’ funds and ensure a disciplined approach to trading, while still allowing traders the flexibility to manage their trades responsibly.
+What are the time limits and trading days criteria?
+At Lux trading firm, we do not believe that a trader should really be restricted to time, as this can severely hamper the chances of profitable traders. So let us put your mind at rest by letting you know there are no maximum time limits for the Evaluation, Advanced or Professional account stages to reach any of the profit targets to continue to the next stage.
+The only major stipulation that we do have is a minimum of active trading days on the first stage of our Lux Career Trading Plan Program.
+Being a trader is not about being a one-hit-wonder. It’s about finding a suitable strategy that works with consistency and one that deems profitable to you.
+Lux Trading Firm Traders need to have traded a minimum of 29 Trading Days on the Evaluation Account, Further stages (2 and up) do not require a minimum amount of trading days.
+However, an exception applies to swing traders. If a trader keeps a trade open for a longer period with an average of at least two days, then a minimum of 15 trading days is required for Evaluation Account stage. (Our definition of a swing trader is a trader who does not take more than one trade at a time and takes a new trade after closing his last position. Furthermore, this swing trader does not take more than two trades per week, and his trades are always longer than 48 hours on average)
+Lux Trading Firm defines a trading day as the day the funded trader opens a new trade on a new day. For example, if the funded trader opens GBP-USD trade on Tuesday and closes the same trade on Wednesday, this counts as 1 trading day. The active trading day that counts is the day GBP-USD has opened and not the full duration of the trade.
+Active trading days are Monday until Friday, weekends and holidays excluded.
+The Evaluation Account stage’s minimum is to track the trader over a period of 29 active days. The minimum active trading days are there to keep the trader on the same track to not rush to the next profit targets. We will not accept significant differences in risk size, or trading style to fulfill the active trades or trading days. If we do see a big difference to only fulfill these active trades or trading days, we will not count these days as active, and then you will still need to fulfill these days before continuing to the next stage.
+Here are 2 examples of traders who have reached their profit target with high risk in a short period. They then change their trading style, lot size, and risk management to complete the remaining active trading days (these days will not be counted as active trading days). Therefore, we advise reducing your lot size and risk management from the beginning since you have no time limit to reach your profit target
+List of securities permitted to trade
+The Lux Career Trading Program allows you to trade any symbol on our trading platforms that we currently offer. The MT5 & Lux Trader platforms, that are linked directly to the liquidity provider, offer Forex, Indices, Metals, and Energy (Commodities), Single Stock CFDs and Cryptos.
+LIST OF ALL SYMBOLS ⇓
+The Lux Career Trading Plan
+At lux, unlike many proprietary trading firms, we want our traders to grow as they trade consistently, with proficiency, and profitability. Lux Trading Firm is more than willing to support our traders in their growth, hence the reason we developed The Lux Career Trading Plan.
+Once you have completed your evaluation account, Lux Trading Firm will fund the advanced account with the same amount as the evaluation account size. Once the advanced account stage has been completed (when you reach the 4% profit target), Lux Trading Firm will fund a live account (professional) with the same amount as your advanced account. 1 stage evaluation accounts go directly to a funded live account.
+All professional 25k, 50k, 100k, or 200k Account stages, plus the $1MM special account can grow up to the Fund Manager $10Mill stage:
+Every time the funded trader generates a trading profit equivalent to 10%, Lux Trading Firm will raise the account size (25k, 50k, 100k, 200k, 500k, 1 million, 2,5 million, and finally, to $10 million‎.
+Allowed Trading Strategies, and what not to do
+Evaluation, Advanced, and the Professional Accounts have the leverage of 1:30 on FX, Indices, Energies, and Metals; and 1:5 on Equity CFDs and Cryptos. Each trader is allowed to have multiple accounts under the condition they do not take the same trades between the accounts. Copy trading between accounts is strictly prohibited. (For example: One account can be scalping forex, other one swing trading. Or one could trade USD/EUR, and the other GBP/JPY. Etc.)
+Self-developed EAs, news trading, and holding trades over the weekend are allowed.
+Risk Consistency
+We require that there is consistency in risk size per trade (%) during the entire stage. You can choose your own amount of risk per trade in the evaluation. You must use the same trading style, and your risk must be the same percentage of your total available risk capital at that moment, per trade, in the complete evaluation stage. If you have multiple positions open at the same time, the total concurrent risk must be the same.
+The formula to calculate your risk is:
+% risk per trade = ($ risk per trade / total available risk capital at that moment) * 100
+Total available risk capital = current balance – drawdown limit
+Drawdown limit = highest achieved balance – 6%
+How to keep your concurrent risk consistent:
+The first thing you need to do is decide what % of your Remaining Risk Capital (RRC) you’re willing to risk. In the evaluation stage you can decide this, in later stages your risk manager will set a risk limit for you.
+Let’s risk 5% of RRC for example.
+If you only open 1 trade:
+In case you only want to have one trade open at the time it’s simple – you should risk the same percentage of your remaining risk capital on every trade. In this example, you would enter a trade with 5% risk.
+Note: We allow for a small variation of up to 20% (meaning you can risk between 5-6% of your RRC, for example).
+If you have more than 1 trade open at the same time:
+If you want to open multiple trades at the same time, you have a couple of options:
+A) If you don’t have any open trades, and you want to open multiple trades (we’ll open 3 trades in this example) what you should do is:
+1. Decide on your risk limit. (In this example, we decided we will risk 5% of RRC)
+2. Decide how many trades you want to open
+3. Divide your risk between the trades
+For example: Trade1 = 1%; Trade2 = 2%; Trade3 = 2% ; Total = 5% risk
+4. Enter your trades.
+B) If you already have some trades open, and you want to add another trade, you have two options:
+1. Move the stop-loss of one (or more) of your open trades to break-even (this will nullify the risk of that position), and only then open another position.
+Note: The newly opened position should risk as much as the position(s) you moved to break-even.
+2. Close one (or more) of your open trades (this will nullify the risk of that position), and only then open another position.
+Note: The newly opened position should risk as much as the position(s) you closed.
+The easiest way to find out how much remaining risk capital you have is to check your Trader Dashboard. You’ll find it on the top, labeled ‘Available Risk’.
+For the $1MM special account, the risk per trade is limited to 5% of the total available risk at the moment of opening the trade.
+In case of too large an inconsistency in risk, you will have to redo the stage partially or entirely.
+We allow EAs that are created by the trader (trader’s intellectual property). EAs that are developed by a third party, are prohibited since this does not show the individual trading skills of the trader. If this EA is no longer available to the trader/public, for whatever reason, the trader will be unable to update, upgrade or make changes to it for the better. One can use a third-party EA as a tool to support your strategy without a trade execution option. Always make sure the EA places a stop with the order; together with the order, not afterward (modify order) as our risk management will most likely discard the trade! The use of “Magic Keys” EA is prohibited as it is incompatible with our dashboard and analysis application.
+Copy trading
+Starting November 1, 2024, limited copy trading will be allowed. You will be allowed to copy-in trades from accounts in your name, but only to take advantage of the use of self-created automatic EAS, self-created signals, or standard tools, that might not be available on the Match Trader platform. It is still strictly forbidden to copy-in commercial or free signals from 3rd parties, or trades from commercial full auto EAs. Our anti-scam algorithms will pick up this kind of undesired behaviour, and all the parties involved will be expelled from the program. and no refund or reset will be possible. This replaces the previous text which was “ Lux Trading Firm prohibits duplicating trades and orders by using a copy trading service ‎offered, no matter the provider. No trades are allowed to be copied into a Lux Trading account, no matter the provider. No signals are allowed to be used, no matter the provider. No copying trades or signals from any external programs is allowed. Using an EA to get trades from outside programs is not allowed. ”
+Lux Trading Firm allows traders with a self-developed strategy to use the Lux trading platform as the Master account and copy the trades to other (Slave) accounts that belong to the trader or his/her company. It is prohibited to copy your trades to any other than your own trading account(s). Our algorithms will recognize when trades are duplicated to different trading accounts with us and will alert management. All the parties involved will be expelled from the program. and no refund or reset will be possible.
+Trading the accounts of friends, family, or any other relationship managed by you at Lux, using the same strategy is prohibited. All the parties involved will be expelled from the program and no refund or reset will be possible.
+Account Sharing and Management: We do not allow account sharing or management by anyone other than the approved trader. We only provide funds to traders who can manage and trade the accounts themselves. Violation of this rule will result in immediate disqualification.
+Arbitrage trading is not allowed under any circumstance. Abusing this rule will result in disqualification, without the right to a reset, or refund. If you notice any latency in quotes, you are required to inform Lux asap.
+Using short-duration and/or small volume trades, with the obvious reason to fill up remaining trading days, is considered cheating. Your account will be disabled if you engage in such practices.
+In the evaluation demo account, you are only allowed to trade a system or strategy, either traded manually or automated, which will also work on real money live accounts, and is accepted by our A-book broker and their liquidity providers. Examples of systems that are not allowed include, but are not limited to:
+Any system that is based on the guaranteed stops of demo accounts.
+Any system based on luck, or with its origins in gambling, like Martingale, going long and short just before a mayor news update, going “All-In”.
+Any system using giant stops, which, when hit, will make it realistically impossible to come back from this loss. And yes, that is “when hit”, not “if hit”.
+Any system that was originally devised to work without the placement of a Stop Loss, then adapted to our requirements to use Stop Loss by using full or near-full max risk.
+Any system based on “negative outcome” of the original trade, like averaging down, or Martingale.
+Grid systems, although not “bad” per se, they are incompatible with our risk consistency rules.
+Any system with a risk management that would not be accepted by your future Lux risk desk and risk manager, which use internationally accepted risk management standards.
+High-Frequency Trading (generating more than 2,500 server messages per 24 hours), or the use of full automatic EAs, robots, or automated systems in general, that generate excessive trades, at either Lux’s or the broker’s discretion, is forbidden, and will result in the termination of your account.
+Consistent Trading Requirement: To qualify for evaluation, traders must demonstrate consistent trading over a period of 29 active trading days. This includes managing both good and bad trading periods with consistent risk. The goal is to ensure traders are employing a reliable trading strategy rather than relying on a few lucky trades.
+Not accepting Lucky Trades: Traders who attempt to qualify through a couple of lucky trades, with minimal trading activity otherwise, will not pass evaluation. Any trades that constitute more than 10% of the profit target (5% in the case of 1 million accounts) will not be accepted. For example, making $10,000 with only $1,000 risk in a few trades does not constitute a valid trading strategy.
+News Bracketing Strategy: Traders are NOT allowed to place buy and sell stops around high-impact news events to exploit the resulting volatility. Such methods are known by LP’s, and do NOT work in live accounts. Violation of this rule will result in the trades not being accepted.
+Our terms and conditions for withdrawals
+We hope you have taken the time to read all the above terms. This is the most anticipated stage for all traders, so we would like to give you clear guidelines on our withdrawal policy.
+The Profit Payment Process:‎
+Once a trader successfully completes the Evaluation account, he can withdraw a refund of 50% of paid fees, After completing the Advanced account, he can withdraw the other 50%.
+Traders can only take their 75% profit split of the professional and expert account stages if there is a net profit.
+All professional and expert trading accounts can receive their profits payments within the first week of the new month.
+What is the withdrawal process?
+1) Fill in the form on the profit-split page in your trader dashboard at the end of the month requesting the withdrawal and shall process your request within 3-5 business days.
+2) Fill in all correct details on the form, and the exact funds of your profit split of the month are on the top of the form.
+‎3) The withdrawal request will not influence the 10% profit target to grow in The Lux Career Trading Plan.
+4) Once you have made your withdrawal, it’s back to your trading account, and begins to aim for your next target on The Lux Career Trading Plan.‎
+The Fee Structure
+Lux Trading Firm asks for an enrollment fee. T he fee covers the use of all our unique applications, such as MT5, Trading View Libraries for TLT, Trader dashboard with all your metrics, and Account analysis by a professional risk management desk.
+Every new trader who signs up after 10-10-2021 that passes the Evaluation (Demo) Account stage will receive a 50% refund of their enrollment fee (excluding any reset fees or for elite packages). The other 50% will be paid out after completing the Advanced stage. 1 stage evaluation accounts (like the Elite plan and the special $1MM account) are excluded from this offer.
+Even though we have no other cost than the enrollment fee, if you pass the Max Draw-down Limit, you’ll need to reset your trading account to continue being eligible for funding. The reset prices are listed below, your account will be reset to its starting balance regardless of your account balance at the time of the breach.
+The Enrollment Fee Refund Policy
+The moment the trader has paid the enrollment fee and Lux Trading Firm has sent the email with login details of their evaluation account, from that moment, there will be no more refund possible.‎
+Practical Assessment Reset Fee
+You should only reset your account under the following conditions:
+You have been advised that you have breached the Maximum Drawdown.
+You voluntarily wish to reset your account for whatever reason.
+When you reset your account, you will be provided with another fresh trading account, and you will be sent your new account log in details for your selected trading platform. You will have to pay
+50k account: reset fee 139GBP
+200k account: reset fee 299GBP
+$1MM account: reset fee 699GBP
+¿Por qué hay que pagar?
+La cuota cubre el uso de todas nuestras aplicaciones exclusivas, como las plataformas MT4, Trading View y Trader Evolution, el panel de control del trader con todas sus métricas, el análisis de la cuenta.
+La tarifa también sirve para filtrar sólo a los traders serios de aquellos que sólo lo intentan. Nuestras capacidades y recursos son limitados, y como nuestro programa tiene altos costes diarios, simplemente no podemos ofrecerlo gratis a todos los traders.
+Todos los operadores que pasen la etapa de Evaluación (Demo) Acc recibirán un reembolso del 100% de su cuota pagada.
+X
+Why is there a fee ?
+The fee covers the use of all our unique applications, such as MT4, Trading View and Trader Evolution platforms, Trader dashboard with all your metrics, Account analysis by a professional risk management desk.
+The fee also serves to filter out only the serious traders from those who just keep on trying. Our capacities and resources are limited, and as our program has daily high costs we simply can’t offer this for free to all the traders out there.
+Every trader that passes the Evaluation (Demo) Acc stage will receive a 100% refund for their paid fee.
+X
+Trading
+Trading Rules
+Mentors
+Lux Events
+Elite Traders
+Legal
+Terms & Conditions
+Risk warning
+Privacy Policy
+Terms of use
+Company
+About
+Contact
+Blog
+Affliate
+Social
+Stay connected with us, and keep up to date with all our news
+© 2020-26 Lux Trading Firm | All Rights Reserved
+Lux Trading Firm Ltd (Company registration number: 13160991) 128 City Road, London ECTV 2NX, United Kingdom, with phone number +44 (0)20 7193 9534; and Lux Trading Firm ME L.L.C-FZ (company registration number 2311235.01) Office 104/105, Emaar Square 4, Dubai, UAE, with phone number +971 4 4070582; with email address info@luxtradingfirm.com, themselves do not carry out any regulated activities, the only and exclusive activities they carry out are Prop Trading and Professional Training. Consequently, we are not required to be authorized by the regulatory authority. All of Lux Trading Firm preferred cleaning firms do conduct regulated activities and are authorized to do so by the respective regulatory authority, Lux Trading Firm is not a broker, and does not accept deposits. The clearing firms and institutional liquidity providers power the offered technical solution for the Lux Trading Firm trading platforms and data feeds.

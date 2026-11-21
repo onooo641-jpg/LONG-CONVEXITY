@@ -1,0 +1,160 @@
+Trading Combine® Parameters | Topstep Help Center Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Skip to main content
+Discord Topstep TopstepTV
+Discord Topstep TopstepTV
+Search for articles...
+All Collections
+Topstep Program
+Trading Combine®
+Trading Combine® Parameters
+Trading Combine® Parameters
+Pass the Trading Combine. Get funded. Here's how.
+Updated yesterday
+Table of contents
+Overview
+The Trading Combine® is a simulated account where you prove your trading ability without risking your own capital. Follow 1 rule, hit 2 objectives, and you earn an Express Funded Account® (XFA) .
+Rule
+Do not let your account balance hit or go below the Maximum Loss Limit (MLL)
+Objectives
+Reach and maintain your Profit Target
+Meet the Consistency Target
+Parameters at a glance
+Parameter
+$50K
+$100K
+$150K
+Starting Balance
+$50,000
+$100,000
+$150,000
+Profit Target
+$3,000
+$6,000
+$9,000
+Maximum Loss Limit
+$2,000
+$3,000
+$4,500
+Consistency Target
+55% of Profit Target
+55% of Profit Target
+55% of Profit Target
+Best Day Recommendation
+Less than $1,650
+Less than $3,300
+Less than $4,950
+Maximum Position Size
+5 mini / 50 micro
+10 mini / 100 micro
+15 mini / 150 micro
+Daily Loss Limit (optional)
+$1,000
+$2,000
+$3,000
+Minimum trading days
+2
+2
+2
+Time limit to pass
+None
+None
+None
+Parameters in Depth
+Profit Target
+The net profit you need to make in order to pass
+You can't hit it in 1 day. The Consistency Target applies.
+Example: $50K account, $3,000 Profit Target. Earn $3,000 and your balance is $53,000.
+Maximum Loss Limit
+The lowest your account balance can go. It cannot be adjusted.
+It trails up with your end-of-day balance, never down. Once it reaches your starting balance, it locks permanently.
+Touch it at any point, even on unrealized P&L, and your account is liquidated for the rest of the trading day.
+Your account is ineligible for funding until you Reset . You can still practice trade.
+Example: $50K account, $50,000 balance, $48,000 MLL. Make $500 and the MLL moves to $48,500.
+Consistency Target
+Your best single day must stay below 55% of your Profit Target. Stay below the Best Day Recommendation in the table above.
+Go over and your Profit Target increases. You need to earn more to pass.
+Losses do not reset your best day.
+Your best day locks in at 3:10 PM CT.
+Example: $50K account, $3,000 Profit Target. A $2,200 best day raises it to $4,000.
+See Consistency at Topstep for the full rules.
+Maximum Position Size
+The maximum number of contracts you can hold open at one time, per account
+Minis and micros share the same limit at a 10:1 ratio. 1 mini = 10 micros.
+Example: $50K account, 5 mini limit. Hold 2 minis and you have room for 30 micros.
+Hint: You're never required to trade the maximum. Fewer contracts is always allowed.
+Position limits can tighten temporarily during high volatility and Tier 1 News Events. See Risk Adjustments: High Risk/High Volatility .
+⚠️ Please note: The Micro to Mini ratio functionality is available for the Trading Combine and Express Funded Account. It is not currently available for the Live Funded Account® (LFA).
+Daily Loss Limit
+Optional. Add it at checkout when you purchase a Trading Combine.
+It's fixed at purchase and can't be changed later. It carries into your XFA.
+Hit it and open positions are flattened, pending orders are canceled, and no new trades are allowed until 5 PM CT.
+It is not a rule violation. Your account stays eligible for funding.
+No Daily Loss Limit at purchase? You can set a Personal Daily Loss Limit in Risk Settings. It can be adjusted or removed.
+See Daily Loss Limit for details.
+Trading Hours and Products
+Topstep is a day trading program. No swing trading. Futures only.
+The trading day runs from 5:00 PM CT to 3:10 PM CT the next calendar day. All positions must be closed by 3:10 PM CT.
+Avoid opening new positions after 3:08 PM CT. Risk Managers begin flattening then.
+Friday closes at 3:10 PM CT and reopens Sunday at 5:00 PM CT.
+Some products close earlier. See When and What Products Can I Trade?
+FAQs
+Can I have more than one Trading Combine?
+Yes. There's no limit to the number of Trading Combines you can have.
+If you have multiple accounts, double-check which one you're trading on before you start. Topstep isn't responsible for trades made on the wrong account.
+⚠️ Single Profile Policy:
+All Trading Combines, Express Funded Accounts, and Live Funded Accounts must be under 1 Topstep profile.
+Multiple profiles are a Terms of Use violation and can result in account closure or suspension.
+If you've accidentally created a second profile, contact Trader Support .
+To update your name or email, follow these steps instead .
+Do I need to purchase a data subscription?
+No. Level 1 (Top of Book) live data is included in your Topstep membership at no extra cost. Level 2 (Depth of Market) is available as an upgrade for DOM or Ladder traders. See Level 1 and Level 2 Market Data for details.
+Can I pass the Trading Combine in one day?
+No. Big spike days don't build funded traders, consistency does. You can pass in as few as two days, but keep your best day below 55% of your Profit Target.
+What happens after I pass?
+What happens after I pass?
+When a 50K, 100K, or 150K Trading Combine® (account prefix: 50KTC, 100KTC, or 150KTC) passes, the account closes and the subscription is canceled. You'll receive a confirmation email and can activate your Express Funded Account® directly from your Dashboard. See step-by-step activation instructions here .
+​
+​ Please note: The status update can take up to 30 minutes. If it still shows Active after 30 minutes, verify your Consistency Target has been met.
+👉 A few things to keep in mind:
+Passed on a Friday? You can pay the Activation Fee immediately, but your XFA won't be available to trade until markets reopen at 5 PM CT Sunday.
+Trading day hours: The trading day runs from 5:00 PM CT through 3:10 PM CT the next calendar day. Trades placed after 5:00 PM CT (e.g., 6:30 PM CT Tuesday) count toward Wednesday's activity.
+Profits don't transfer. Money made in the Trading Combine does not carry over to your Express Funded Account.
+Can I change my account size?
+No. Account sizes can't be changed after purchase. If your purchase was made within the last 28 days and your account has had no trading activity, contact Trader Support to review your account for a refund so you can purchase the correct size. After 28 days or if any trading has occurred, refunds are not available.
+Can I use automated trading strategies?
+Yes, with conditions. Topstep won't help set up or troubleshoot automated strategies, and no exceptions are made for errant trades or malfunctions. Test on your Practice Account first and review Prohibited Conduct and Prohibited Trading Strategies before going live. You can also use a trade copier to duplicate trades across multiple accounts. See What is a Trade Copier?
+📚 If you're new to Topstep or the Trading Combine, reading the following resources will enhance your experience:
+Trading Combine Subscriptions
+What is the Reset?
+Prohibited Conduct
+Prohibited Trading Strategies
+Maximum Loss Limit
+Daily Loss Limit
+Consistency Target
+Permitted Products and Trading Hours
+Related Articles
+Topstep Learning
+When and What Products Can I Trade?
+Express Funded Account™ Parameters
+Topstep Payout Policy
+Topstep Labs
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Your Privacy Choices
