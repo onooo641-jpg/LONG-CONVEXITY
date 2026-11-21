@@ -245,7 +245,7 @@ FAMILY = {"ETH": ["STETH", "WSTETH", "RETH", "CBETH", "WEETH", "EZETH", "RSETH",
           "SOL": ["SOL", "JITOSOL", "MSOL", "JUPSOL", "BSOL", "INF", "BNSOL", "HSOL"], "HYPE": ["HYPE", "KHYPE", "STHYPE", "WHYPE"],
           "BTC": ["BTC", "WBTC", "CBBTC", "TBTC", "LBTC"], "AVAX": ["AVAX", "SAVAX", "WAVAX"], "BNB": ["BNB", "SLISBNB", "BNBX", "WBNB"],
           # #214 governance tokens with staking / vote-escrow yields (hedgeable on HL)
-          "CRV": ["CRV", "CVXCRV", "SDCRV", "YCRV", "ST-YCRV", "SCRVUSD", "ASDCRV"], "AAVE": ["AAVE", "STKAAVE", "STKGHO"],
+          "CRV": ["CRV", "CVXCRV", "SDCRV", "YCRV", "ST-YCRV", "SCRVUSD", "ASDCRV"], "AAVE": ["AAVE", "STKAAVE"],
           "ENA": ["ENA", "SENA"], "PENDLE": ["PENDLE", "VEPENDLE", "SPENDLE", "MPENDLE", "PENPIE", "EQBPENDLE", "SDPENDLE"],
           "LDO": ["LDO"], "MORPHO": ["MORPHO"], "AERO": ["AERO", "VEAERO"], "FXS": ["FXS", "CVXFXS", "SDFXS"],
           "PAXG": ["PAXG", "XAUT"]}
