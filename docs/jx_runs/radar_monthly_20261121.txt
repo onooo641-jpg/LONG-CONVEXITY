@@ -1,0 +1,18 @@
+product                                      delay  avg $/mo  median mo  % months paid  avg paid mo  last 24 mo avg  worst 12 mo
+Topstep 50K                                      0       341       -112            20%        2,257           1,006       -1,561
+Blue Guardian Elite 50K, price $141 [sens]       3       338       -141            20%        2,262             962       -2,256
+Alpha Futures Standard 50K                       3       309       -129            21%        1,955             979       -2,064
+LucidFlex 50K                                    0       289       -105            22%        1,885             644       -2,045
+Blue Guardian Elite 50K, price $350 [sens]       3       288       -141            20%        2,190             918       -3,092
+Topstep 50K, 3-min delay (ref)                   3       287        -64            23%        1,585             872       -1,400
+TradeDay $85 (code)                              0       274        -15            22%        1,587             588       -2,065
+MFFU Rapid EOD 50K                               0       265       -172            18%        2,356             819       -3,642
+FTMO Futures Growth 50K                          0       263       -243            28%        1,630             952       -3,897
+FuturesElite Elite 50K                           3       239          0            19%        1,688           1,022       -2,048
+FTMO Futures Pro 50K                             0       211       -154            12%        3,407             754       -4,270
+Goat Flex 50K                                    0       183       -218            25%        1,574             790       -4,136
+Blueberry Ascent 50K                             0       180       -125            13%        2,566           1,084       -3,475
+TradeDay $189                                    0       170        -15            22%        1,508             531       -4,353
+TFD Static Pro                                   0       156          0            14%        1,702             507       -1,518
+TFD Static Core                                  0        82          0            14%        1,134             309       -1,438
+Bulenox Momentum 50K                             0       -32       -158            12%        1,069             171       -3,469
