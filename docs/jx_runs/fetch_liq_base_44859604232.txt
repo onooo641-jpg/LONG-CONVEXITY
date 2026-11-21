@@ -1,0 +1,13 @@
+=== liq_base
+base: month anchors 21814927..53350927, resume at block 53350927
+base: receipts: 26938 cached, 1269 to fetch (sampled=False)
+  rpc exception eth_getTransactionReceipt @ https://base.api.pocket.network: HTTP 429
+  base: receipts 27382/28207 (3 min)
+base: retry pass 1: 825 receipts missing
+  rpc exception eth_getTransactionReceipt @ https://base.gateway.tenderly.co: HTTP 429
+  base: receipts 28207/28207 (4 min)
+base: receipts missing after retries: 0/28207 (<=1%, accepted; gas imputed, bot 'unknown')
+  rpc exception eth_call @ https://base.gateway.tenderly.co: HTTP 429
+base: prices 20951 points, 30/32 coins priced
+base: COMPLETE 50417 events, 6 min
+=== liq_base done in 353s  ok 2213 fail 0
