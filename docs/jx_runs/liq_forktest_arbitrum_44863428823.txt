@@ -1,0 +1,38 @@
+fork test arbitrum run 44863428823 2026-11-21T03:54:29Z
+== rpc https://arb1.arbitrum.io/rpc
+Compiling 2 files with Solc 0.8.26
+Solc 0.8.26 finished in 309.81ms
+Compiler run successful!
+
+Ran 1 test for test/LiqExecutor.t.sol:LiqExecutorForkTest
+[FAIL: borrow: 4e487b710000000000000000000000000000000000000000000000000000000000000011] setUp() (block: 526127794) (gas: 0)
+Suite result: FAILED. 0 passed; 1 failed; 0 skipped; finished in 8.42s (0.00ns CPU time)
+
+Ran 1 test suite in 8.42s (8.42s CPU time): 0 tests passed, 1 failed, 0 skipped (1 total tests)
+
+Failing tests:
+Encountered 1 failing test in test/LiqExecutor.t.sol:LiqExecutorForkTest
+[FAIL: borrow: 4e487b710000000000000000000000000000000000000000000000000000000000000011] setUp() (block: 526127794) (gas: 0)
+
+Encountered a total of 1 failing tests, 0 tests succeeded
+
+Tip: Run `forge test --rerun` to retry only the 1 failed test
+Tip: Run `forge test --debug --match-test <TEST_NAME>` to inspect one failing test in the debugger
+== rpc https://arbitrum-one-rpc.publicnode.com
+No files changed, compilation skipped
+
+Ran 1 test for test/LiqExecutor.t.sol:LiqExecutorForkTest
+[FAIL: borrow: 4e487b710000000000000000000000000000000000000000000000000000000000000011] setUp() (block: 526127831) (gas: 0)
+Suite result: FAILED. 0 passed; 1 failed; 0 skipped; finished in 10.08s (0.00ns CPU time)
+
+Ran 1 test suite in 10.08s (10.08s CPU time): 0 tests passed, 1 failed, 0 skipped (1 total tests)
+
+Failing tests:
+Encountered 1 failing test in test/LiqExecutor.t.sol:LiqExecutorForkTest
+[FAIL: borrow: 4e487b710000000000000000000000000000000000000000000000000000000000000011] setUp() (block: 526127831) (gas: 0)
+
+Encountered a total of 1 failing tests, 0 tests succeeded
+
+Tip: Run `forge test --rerun` to retry only the 1 failed test
+Tip: Run `forge test --debug --match-test <TEST_NAME>` to inspect one failing test in the debugger
+exit 1
