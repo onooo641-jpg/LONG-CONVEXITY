@@ -1,0 +1,6 @@
+arbitrum: start, head 526133770
+arbitrum: bootstrap to block 513935770/526133770 users 32010
+arbitrum: bootstrap DONE, users 34216
+arbitrum: head 526135420 cycles 11 tracked 34218 last_cycle 15963 ms rpc ok/err 4053/108
+arbitrum: head 526136403 cycles 19 tracked 34218 last_cycle 84162 ms rpc ok/err 5334/270
+arbitrum: head 526137616 cycles 28 tracked 34219 last_cycle 105702 ms rpc ok/err 6591/432
