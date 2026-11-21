@@ -217,7 +217,31 @@ def job_lendborrow():
     print(f"charts: {df['pool'].nunique() if len(df) else 0} pools, {len(df)} rows", flush=True)
 
 
-JOBS = {"stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+def job_pendle_probe():
+    """#211 structure probe: endpoints and field NAMES only (no values printed)."""
+    for u in ["https://api-v2.pendle.finance/core/v1/chains",
+              "https://api-v2.pendle.finance/core/v1/1/markets?limit=2&skip=0",
+              "https://api-v2.pendle.finance/core/v1/1/markets/active",
+              "https://api-v2.pendle.finance/core/v1/1/markets/inactive",
+              "https://api-v2.pendle.finance/core/v2/markets/all?limit=2"]:
+        d = get(u)
+        if d is None:
+            print(f"PROBE {u}: no answer", flush=True)
+            continue
+        def shape(x, depth=0):
+            if isinstance(x, dict):
+                return "{" + ", ".join(f"{k}:{shape(v, depth + 1) if depth < 1 else type(v).__name__}" for k, v in list(x.items())[:25]) + "}"
+            if isinstance(x, list):
+                return f"list[{len(x)}] of {shape(x[0], depth) if x else 'empty'}"
+            return type(x).__name__
+        print(f"PROBE {u}: {shape(d)[:1500]}", flush=True)
+        if isinstance(d, dict):
+            items = d.get("results") or d.get("markets") or d.get("data")
+            if isinstance(items, list) and items and isinstance(items[0], dict):
+                print(f"  item keys: {sorted(items[0].keys())}", flush=True)
+
+JOBS = {"pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys
