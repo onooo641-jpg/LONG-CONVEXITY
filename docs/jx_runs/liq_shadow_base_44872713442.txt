@@ -1,0 +1,16 @@
+base: v2 start, head 60249371
+base: positions 600/38494 (0.4 min)
+base: positions 3600/38494 (1.8 min)
+base: positions 6600/38494 (3.3 min)
+base: positions 9600/38494 (4.8 min)
+base: positions 12600/38494 (6.3 min)
+base: positions 15600/38494 (7.8 min)
+base: positions 18600/38494 (9.2 min)
+base: positions 21600/38494 (10.8 min)
+base: positions 24600/38494 (12.3 min)
+base: positions 27600/38494 (13.8 min)
+base: positions 30600/38494 (15.4 min)
+base: positions 33600/38494 (16.9 min)
+base: positions 36600/38494 (18.3 min)
+base: positions ready: 38494 users, 11423 with debt
+base: reopened 0 recorded unhealthy episodes
