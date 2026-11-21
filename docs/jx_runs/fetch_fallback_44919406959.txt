@@ -1,0 +1,260 @@
+=== lendborrow
+borrowable stable pools with TVL >= $5M: 48 (of 2517 lendBorrow rows)
+  FAIL https://yields.llama.fi/chartLendBorrow/6a0fd885-93ba-52d4-b554-267a12e80c6e HTTP Error 402: Payment Required
+  0/48
+  FAIL https://yields.llama.fi/chartLendBorrow/3917d415-5e61-5209-a0f7-bf70116849d2 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/0a1131e6-a59d-537c-b18f-826b9583f01f HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/3fdf7baa-8ca7-4ad5-bf0c-f934878c0c96 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/f981a304-bb6c-45b8-b0c5-fd2f515ad23a HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/995b269a-8409-4c55-b97e-868f443b432e HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/d9fa8e14-0447-4207-9ae8-7810199dfa1f HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/6cd85774-b80b-5fd4-8194-7b4126b24634 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/42eaf290-24c3-4ce0-82ab-c1276444871b HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/9f3a6015-5045-4471-ba65-ad3dc7c38269 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/2d3b68a8-33d3-47e0-a4c0-0bafef4b01d5 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/76b70b33-d8a4-4e61-8092-9bd1f2be2fc9 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/34f65227-f3f9-5c3f-9182-f6eca85ae729 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/41683a7c-20a2-4cd7-83a7-3ccedaad0db1 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/c4b05318-88af-4536-a834-f5fc8940d2d3 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/e26ce7d9-db75-4aa4-b1db-cc21ae17bdfb HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/76ffb695-7fcf-418c-a368-4a9a2dc76f70 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/aa70268e-4b52-42bf-a116-608b370f9501 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/86e18974-35ca-4948-9c82-694facf9d082 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/0ed981dc-b49d-426d-ade5-6014728b1ef9 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/7e7821a2-3d20-4ae7-9c3d-04cd57904555 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/29be6a85-414f-4a66-b075-98863278912a HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/40ebf860-f7b0-55a1-a39b-fe61a3fc8663 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/8bba1554-1318-54ad-9143-0972406e9428 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/8fbe28b8-140d-4e37-8804-5d2aba4daded HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/3ede2f4c-7fc8-5e56-9b0e-f5cd6fa8fb22 HTTP Error 402: Payment Required
+  25/48
+  FAIL https://yields.llama.fi/chartLendBorrow/7da72d09-56ca-4ec5-a45f-59114353e487 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/3665ee7e-6c5d-49d9-abb7-c47ab5d9d4ac HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/0cdd7f84-711e-4cd4-916d-da318857559a HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/ca537616-5cc3-429a-aded-ebe307121d1f HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/1e00ac2b-0c3c-4b1f-95be-9378f98d2b40 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/e8be6376-dd6b-5304-a5c1-d7d96d456c10 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/1b8b4cdb-0728-42a8-bf13-2c8fea7427ee HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/7e0661bf-8cf3-45e6-9424-31916d4c7b84 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/80e30152-4021-5b61-ad4c-000884b62abc HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/f4d5b566-e815-4ca2-bb07-7bcd8bc797f1 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/d3ed814d-9763-5436-8b25-66bdbabd36f8 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/4d48ed69-2a14-4609-91c0-bc129a6dc586 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/e338c687-a5d8-4abf-bc04-127990811b0a HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/a0860ad8-ba2a-4ff8-8a13-348788864f23 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/20e45c3e-7de7-4d34-89e7-20858ecdf252 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/b7cb0bfb-87e8-552e-82b8-6ed837472d27 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/9b0c3b21-d47b-4b0c-855d-d1b78cd35350 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/98d07333-f5e4-4a48-8061-cfb4b73ccf79 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/d2141a59-c199-4be7-8d4b-c8223954836b HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/4d296741-940d-44c1-a729-f6bd1f330f6f HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/21e1ac8a-b3aa-4576-9506-0b40137721a0 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/ecf788e3-d2ef-4fdd-9ece-8a2d96226ddf HTTP Error 402: Payment Required
+charts: 0 pools, 0 rows
+=== pendle_probe
+PROBE https://api-v2.pendle.finance/core/v1/chains: {chainIds:list[13] of int}
+PROBE https://api-v2.pendle.finance/core/v1/1/markets?limit=2&skip=0: {total:int, limit:int, skip:int, results:list[2] of {id:str, chainId:int, address:str, symbol:str, expiry:str, pt:dict, yt:dict, sy:dict, lp:dict, accountingAsset:dict, underlyingAsset:dict, basePricingAsset:dict, protocol:str, proSymbol:str, proIcon:str, assetRepresentation:str, isWhitelistedPro:bool, isWhitelistedSimple:bool, votable:bool, isActive:bool, isWhitelistedLimitOrder:bool, accentColor:str, totalPt:float, totalSy:float, totalLp:float}}
+  item keys: ['accentColor', 'accountingAsset', 'address', 'aggregatedApy', 'assetRepresentation', 'basePricingAsset', 'categoryIds', 'chainId', 'dataUpdatedAt', 'expiry', 'extendedInfo', 'farmName', 'farmProIcon', 'farmProName', 'farmProSymbol', 'farmSimpleIcon', 'farmSimpleName', 'farmSimpleSymbol', 'farmSymbol', 'id', 'impliedApy', 'initialAnchor', 'isActive', 'isFeatured', 'isNew', 'isPopular', 'isWhitelistedLimitOrder', 'isWhitelistedPro', 'isWhitelistedSimple', 'liquidity', 'lp', 'lpRewardApy', 'maxBoostedApy', 'name', 'pendleApy', 'proIcon', 'proName', 'proSymbol', 'protocol', 'pt', 'ptDiscount', 'ptRoi', 'scalarRoot', 'simpleIcon', 'simpleName', 'simpleSymbol', 'swapFeeApy', 'sy', 'symbol', 'timestamp', 'totalLp', 'totalPt', 'totalSy', 'tradingVolume', 'underlyingApy', 'underlyingAsset', 'underlyingInterestApy', 'underlyingRewardApy', 'votable', 'voterApy', 'whitelistedProAt', 'yt', 'ytFloatingApy', 'ytRoi']
+PROBE https://api-v2.pendle.finance/core/v1/1/markets/active: {markets:list[52] of {name:str, address:str, expiry:str, pt:str, yt:str, sy:str, underlyingAsset:str, details:dict, isNew:bool, isPrime:bool, timestamp:str, categoryIds:list}}
+  item keys: ['address', 'categoryIds', 'details', 'expiry', 'isNew', 'isPrime', 'name', 'pt', 'sy', 'timestamp', 'underlyingAsset', 'yt']
+PROBE https://api-v2.pendle.finance/core/v1/1/markets/inactive: {markets:list[462] of {name:str, address:str, expiry:str, pt:str, yt:str, sy:str, underlyingAsset:str, details:dict, isNew:bool, isPrime:bool, timestamp:str, categoryIds:list}}
+  item keys: ['address', 'categoryIds', 'details', 'expiry', 'isNew', 'isPrime', 'name', 'pt', 'sy', 'timestamp', 'underlyingAsset', 'yt']
+PROBE https://api-v2.pendle.finance/core/v2/markets/all?limit=2: {total:int, limit:int, skip:int, results:list[2] of {name:str, protocol:str, icon:str, address:str, expiry:str, pt:str, yt:str, sy:str, underlyingAsset:str, accountingAsset:str, rewardTokens:list, inputTokens:list, outputTokens:list, details:dict, isNew:bool, isPrime:bool, timestamp:str, categoryIds:list, marketType:str, underlyingRewardApyBreakdown:list, lpRewardApyBreakdown:list, ytApyBreakdown:dict, lpApyBreakdown:dict, chainId:int, limitOrderIncentive:dict}}
+  item keys: ['accountingAsset', 'address', 'categoryIds', 'chainId', 'details', 'expiry', 'icon', 'inputTokens', 'isNew', 'isPrime', 'limitOrderIncentive', 'lpApyBreakdown', 'lpRewardApyBreakdown', 'marketInfo', 'marketType', 'name', 'outputTokens', 'pendleEmission', 'protocol', 'pt', 'rewardTokens', 'sy', 'timestamp', 'underlyingAsset', 'underlyingRewardApyBreakdown', 'yt', 'ytApyBreakdown']
+=== hedged
+hedged universe: 133 pools; categories {'Lending': 88, 'Liquid Staking': 23, 'CDP': 7, 'Yield': 4, 'Liquid Restaking': 2, 'Basis Trading': 2, 'Yield Aggregator': 2, 'Restaked BTC': 1}
+hedged charts: 133 pools, 108603 rows
+  hl funding ETH: 17568
+  hl funding SOL: 17568
+  hl funding HYPE: 16694
+  hl funding BTC: 17568
+  hl funding AVAX: 17568
+  hl funding BNB: 17568
+  hl funding CRV: 17568
+  hl funding AAVE: 17568
+  hl funding ENA: 17568
+  hl funding PENDLE: 17568
+  hl funding LDO: 17568
+  hl funding MORPHO: 15663
+  hl funding AERO: 8513
+  hl funding FXS: 17568
+  hl funding PAXG: 13760
+=== lendborrow_corr
+corr lendBorrow rows: 176
+  FAIL https://yields.llama.fi/chartLendBorrow/31d8accf-ea88-4c74-ac05-99c835547654 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/1170b465-309b-4026-b10d-abdf7b1ac369 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/0b70c11c-75b6-4faa-a3af-0c17f4b3b38f HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/dbddf880-255a-4754-83ca-4580fea4ad7b HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/36b2a6c9-1b11-4f94-97a6-bd7c74699322 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/fdf02dc0-c38d-4850-8d61-74668d281325 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/85c57261-b75b-4447-a115-d79b1a7de8ed HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/2b9bf1c6-a018-4e93-a32f-7cf6ccd311fc HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/361f0a3c-6adb-4b1c-bf35-f9cd79f2341c HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/0a1131e6-a59d-537c-b18f-826b9583f01f HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/e69b7f18-9ea0-42f6-9f83-06010ffa0f63 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/e705187b-da56-463d-a429-4e17bfb7e0d4 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/51eb4b5c-6d62-42fe-99d6-92ba6eecd2d5 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/f78c355d-df33-44bf-96b1-39481a0dd89e HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/4a1b9d9b-a752-406a-8fb4-4ed8a8fe0981 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/7d114ce1-2af1-42c3-a719-406fbbc3ed92 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/be65ac8e-2b80-4582-a9d9-f8ff8ff73cb7 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/e040bdef-6e6e-4627-bc88-75a0b26605b0 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/cbb9fc26-2b9e-436a-95d0-c75e2c0f5869 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/3fdf7baa-8ca7-4ad5-bf0c-f934878c0c96 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/f981a304-bb6c-45b8-b0c5-fd2f515ad23a HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/d3be212c-f337-40e2-87fc-fb636a3de38f HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/b1986007-81f3-4150-9565-94d5a4066ce4 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/e043585f-923f-4009-934f-005232f34a27 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/15baa435-9e38-4688-a345-6fe5783235ae HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/69b12bf9-edb6-46d9-b5bc-761cf9efe137 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/d9fa8e14-0447-4207-9ae8-7810199dfa1f HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/6cd85774-b80b-5fd4-8194-7b4126b24634 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/db58e292-3f7b-58d0-901c-d24bf9c55439 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/504d25f6-9720-4bc3-bac3-3d4cb2e528c3 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/51d2f8d4-1fb5-4f6b-938b-e9cd17ca1ceb HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/91eed93a-e7e0-49fa-92c1-40f2b2768fd9 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/e875c975-b9f7-4987-9b4b-a27f3633115f HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/c4f1e434-3386-4f48-b0ac-dc89782dfa55 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/525b2dab-ea6a-4cbc-a07f-84ce561d1f83 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/a980d165-d64a-45d8-b9c9-de2d628f5f23 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/f0131970-afac-4835-b22c-520f192e01d5 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/dac406f6-5600-437e-849d-f03daa383864 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/9e60948f-e16f-4e07-9311-759f81bcc78e HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/58e1b97d-4391-4444-9160-7eef2e159013 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/7d33d57d-36dc-414b-9538-22a223250468 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/812e0485-4799-5b31-8595-36b1bca01a3c HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/867aff4c-33fc-4591-940a-019549d5a8af HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/29932dea-cd71-44c3-95bd-3e1525f4e3dd HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/db678df9-3281-4bc2-a8bb-01160ffd6d48 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/9f3a6015-5045-4471-ba65-ad3dc7c38269 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/c17dcd78-e16e-474a-8661-443a2959c078 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/6cf9108a-4832-4681-95d7-757d51d3b24a HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/30c079fc-209d-439e-ac91-a6c25817c435 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/2ee0b92f-49ed-4cc1-83b6-3c63357f50d6 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/ff17b423-bccc-4d12-9a72-68bde120ac62 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/c4b05318-88af-4536-a834-f5fc8940d2d3 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/0ba9d450-b306-4889-85ed-83dfca983e60 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/e26ce7d9-db75-4aa4-b1db-cc21ae17bdfb HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/ccc467d1-bdf5-4062-81cd-7aed7dd9050b HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/946c7197-7b0b-438b-a3a0-6de4288c534a HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/989973a1-8bd7-4a5d-8ca8-91095a3931e3 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/0da4a9c7-e79d-49b1-8753-2bf18cbb37f8 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/b7444791-ecab-4bc4-85dc-9eb351064d98 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/b8872d86-c39e-423c-83dd-8b32f7eea91d HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/00d1e1f8-b3c8-4350-a247-5da693d2d4dd HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/3dacc646-46d0-4c49-b135-2f25b955316c HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/03f97f6b-3e17-4ccd-8687-0b3f736441b3 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/aa70268e-4b52-42bf-a116-608b370f9501 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/d541708e-1283-4feb-bc7a-457fc5f8db2c HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/0ed981dc-b49d-426d-ade5-6014728b1ef9 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/f7067019-e44f-4e03-aeb0-b717dfd8d7c7 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/2c20c54c-f42d-4fb0-b474-28dad8f7b1b4 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/7e7821a2-3d20-4ae7-9c3d-04cd57904555 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/29be6a85-414f-4a66-b075-98863278912a HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/8bba1554-1318-54ad-9143-0972406e9428 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/f9092b5c-b9ea-47d2-8db7-58fb38da7c83 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/e880e828-ca59-4ec6-8d4f-27182a4dc23d HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/27433ad7-56c1-5dec-a61f-c79b25ef6e26 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/8751078b-6be1-403b-ac44-9f11fe87d400 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/8fbe28b8-140d-4e37-8804-5d2aba4daded HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/3d43975f-8365-4cbb-bd03-b61ab2bcfe64 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/660e240a-ab18-43af-9d24-0245828f903f HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/ddd25534-e3d5-4e4e-9b99-d3102323ac61 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/c1ca08e4-d618-415e-ad63-fcec58705469 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/072f6554-daa7-4708-80ba-371b896a89db HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/7da72d09-56ca-4ec5-a45f-59114353e487 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/3665ee7e-6c5d-49d9-abb7-c47ab5d9d4ac HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/dd998393-9abe-4c08-b5db-b181babb235e HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/747b58ab-aefd-42e1-a312-01ad5a0ab7f5 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/a4a3f225-e908-4575-b567-9efbfb9d7596 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/94657e4e-5345-48f0-9132-f7a709e2021e HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/eec88a7a-789c-4953-b33c-56d5fb3db8cf HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/f1a22245-a1f1-4389-8ff2-dde4914b272d HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/4eb6bb50-3d3a-4211-afef-aade21696f8d HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/ca537616-5cc3-429a-aded-ebe307121d1f HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/7c4da504-8972-466c-8b74-57132d939dc9 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/e278d5a4-b0b5-43d5-8064-c65a3f386b8a HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/3b45941c-16cb-48c5-a490-16c6c4f1d86a HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/9da8a761-eb0f-4d41-ad05-0ebb2ed82913 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/63339201-f070-41e4-94cf-85dc19637da4 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/2d1aa052-64c0-4c2c-82a0-db39062f04ab HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/49585253-1f0d-46df-9284-6ece1880fbef HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/e053590b-54f1-40aa-ae0d-14e701ca734c HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/9380e5ac-3b75-468c-951c-c24ff6497e80 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/a7262f82-b4fd-4e5d-adea-43fb1e5df68d HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/7ee6c38b-ac42-4388-88dc-389140276cf8 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/89bc7c4c-d71c-435c-ab28-56c803d51320 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/de8928ad-d03a-423d-92d7-3c4648e3ffd2 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/3b074bee-390c-488c-8d1e-4ab2009b1645 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/a334a33e-4e77-433d-8221-1fa6316eaac1 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/9afa50b4-4cc0-43b8-914a-34d17066a3b6 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/a1e18d7d-9a5f-4251-acb4-a87e005fe2c5 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/7c5e69a4-2430-4fa2-b7cb-857f79d7d1bf HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/1b8b4cdb-0728-42a8-bf13-2c8fea7427ee HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/7e0661bf-8cf3-45e6-9424-31916d4c7b84 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/23405eee-97e7-4b8e-8625-19c3a36047e8 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/54470a44-22f4-4508-bbbb-2d8e2770ab77 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/d44d0684-a5a4-44cb-be02-f53623b52efd HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/ae255d3e-5f02-4edd-aab3-ba43eead3a06 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/d41dc00f-5891-4917-ae2f-5c1151cc9b7d HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/c19dd7b2-fab0-4137-a2d5-1031b03695d0 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/1da10c92-fd2e-4506-a4d1-8c8fa22ff744 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/1914a267-f123-46ed-baa0-d1474d33c399 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/58d18059-f1d1-45ed-acd3-f386e98cc506 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/f4d5b566-e815-4ca2-bb07-7bcd8bc797f1 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/317747cc-b7b2-4acd-9047-73569916befe HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/da5e182c-b440-4b80-ab54-c1bc94a4ffd4 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/0827aa12-5831-47f0-b5ba-549294a2032b HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/4ce0c458-2171-463b-92ce-458afe367a4e HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/c037a916-a462-4c65-b217-100db0fdc0e0 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/0d999bae-a3d5-4c08-93f6-98abb32ce290 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/5580410c-7b2f-4481-9556-ff4a87646570 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/007d03bd-4987-4b3b-b7d2-2f3af42fa4b4 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/e338c687-a5d8-4abf-bc04-127990811b0a HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/9c7b08ec-6d39-468a-980b-fe80e0842760 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/a0860ad8-ba2a-4ff8-8a13-348788864f23 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/462c6f50-ceab-4235-aa0e-21ee1e345908 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/6ba6f041-d775-46c3-b92a-e1a1a0c95313 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/c47eea82-1e3d-4b66-8777-278b8db1dd77 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/ca969cae-bbcb-4cd7-985e-be4df9815e15 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/20e45c3e-7de7-4d34-89e7-20858ecdf252 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/54600482-cfb9-4dd9-a73b-342cffd4644a HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/cfd777a2-f8b2-4ae7-99ea-79c9db1ac934 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/59955098-843f-4173-a761-04c50b6d424d HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/b7cb0bfb-87e8-552e-82b8-6ed837472d27 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/9ca5ee67-cfd6-479d-b780-eb4e5eaa6665 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/3c46f16f-b35f-4d51-b130-c3e5817eca60 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/7e382157-b1bc-406d-b17b-facba43b716e HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/03a0cf78-c2f0-4ce5-85a8-2d5b77349276 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/671ce3a4-6cb1-449c-b784-d54e16006766 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/ec8af777-6c9e-440a-9a3d-355f556baa04 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/9b0c3b21-d47b-4b0c-855d-d1b78cd35350 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/4e678acf-4fd2-4f2b-b2fb-13130f8c6f27 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/e6435aae-cbe9-4d26-ab2c-a4d533db9972 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/1262521f-3ba5-47d7-b035-ace072a0d0df HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/23676f13-f8c7-4865-ae69-e757395828ee HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/aa5b3bd6-dda8-4bea-9c95-48e12982eebd HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/c066bc5e-fbb7-5d52-b76e-c2faeaae5106 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/25e50b68-1e0c-47c6-9088-44749ce971b2 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/d2141a59-c199-4be7-8d4b-c8223954836b HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/7b27438b-1aa6-43f4-90c0-5a0d975045cd HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/b039004a-df3c-4813-97b8-a15ec488212c HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/71418c17-d2aa-4eff-b68a-806fff9ec951 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/24195b31-d749-445f-bf9e-b65aa025ebdd HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/03406d3a-fcc4-4fe3-8809-7a95222951b6 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/4d296741-940d-44c1-a729-f6bd1f330f6f HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/e302de4d-952e-4e18-9749-0a9dc86e98bc HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/e62bcb01-ed4c-4ec9-8cfa-e86e7ccf7688 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/3df9ffeb-8c72-438c-a9ae-026488d8f2b2 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/32f04d80-25f9-439f-838d-3b15becf2d21 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/d70d42b1-4ba3-4572-bf76-0ac12781bde4 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/ebe53ee0-db95-478e-8476-b8aa420be700 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/ecf788e3-d2ef-4fdd-9ece-8a2d96226ddf HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/ef228ebf-a7c7-4651-b057-d51f496f9ff3 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/bd335b46-3daf-4507-adb2-6fd4337ea33b HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/bddbe936-e0e3-4bb4-9ffc-f34717df1358 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/b14f07b5-1fd9-4366-ae5d-bf4734038cc6 HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/5f79c82d-8722-4464-b91b-f07b96fec13c HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/fbc21237-26d7-49d1-8993-7e7e1625ddda HTTP Error 402: Payment Required
+  FAIL https://yields.llama.fi/chartLendBorrow/79af7462-170a-4e77-886d-898dc2145c78 HTTP Error 402: Payment Required
+corr charts: 176 pools, 148527 rows
