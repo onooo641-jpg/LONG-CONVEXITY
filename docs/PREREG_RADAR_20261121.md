@@ -122,3 +122,19 @@ Blueberry Futures, Finotive Futures, FuturesElite, Goat Funded Futures, Hola Pri
 E8 Futures, BrightFunded Futures, The5ers Futures, The Trading Pit Futures, AquaFunded Futures. Their directory pages (third-party) are
 added as `directory_firm` rows so their automation sentences are collected; a firm is classified only from its own pages, so each
 needs its own site added once its domain is known. Scanner change only; no thresholds changed.
+
+## Addendum 5 (2026-11-21): pricing the directory-found firms (before running)
+Own help centres crawled (radar run 9). Priced where the 50K plan's rules are readable on the firm's own pages; the purchase price comes from
+the directory listing (third-party, the higher/list figure where two are shown) because the firms load prices by script. Same procedure as
+the main sweep (coin flip 200 runs seed 1; real trades; 3-min delay for alert-assisted; flag rule unchanged). Products:
+- **Goat Funded Futures Flex 50K** (full bots, own strategy): target 6% $3,000, EOD trailing $2,000 locking at start (both phases), eval
+  consistency 50%, funded none, no DLL, 30 micros, payouts after 5 winning days ≥ $250, 50% of profit up to $2,000, min $500, split 80%;
+  $218 one-time, resets priced as a rebuy.
+- **Blueberry Futures Ascent 50K** (full bots only if self-built and disclosed; "systems obtained from a friend" banned → usable only if the
+  friend holds the account): target $3,000, EOD $2,000, **2 minis / 20 micros**, 30-day limit, reset $125; funded buffer $2,100, cap $2,500,
+  min $500, 5 days ≥ $200, 35% consistency; $245; split and funded lock not stated → assumed 90% and start + $100.
+- **FuturesElite Elite 50K, with DLL** (alert-assisted: "Fully automated trading using AI or bots is not permitted"): target $3,000, EOD
+  trailing $2,000 (funded lock not stated → assumed at start), 50% eval consistency, DLL $1,200, 40 micros, no time limit; funded: 6 days ≥ $150,
+  50% of profit, min $500, cap $2,000, 90%, no consistency or buffer; $128 (only figure shown).
+Not priced (rules or prices not readable): The Trading Pit Futures, E8 Futures, Traders Launch, DayTraders, Funded Futures Network, BluSky,
+Finotive, AquaFunded, Purdia, YLOS, Hola Prime, The5ers Futures, IQ Capital, Trade The Pool, NexGen, Legends.

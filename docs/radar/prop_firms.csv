@@ -29,14 +29,14 @@ BluSky Trading Company,,full_bots,third-party (directory),saveonpropfirms: 'Auto
 DayTraders,,full_bots,third-party (directory),"saveonpropfirms: 'Bots, AI tools and scripts are allowed if they trade at normal speed'",unverified,
 Funded Futures Network,,full_bots,third-party (directory),saveonpropfirms: 'EAs/bots permitted to run the account holder's own strategy on their own accounts only',unverified,
 IQ Capital,,full_bots_conditional,third-party (directory),saveonpropfirms: bots only with full source-code access; external commercial bots banned,unverified,
-Blueberry Futures,,full_bots_conditional,third-party (directory),propfirmmatch: automated software allowed only if it meets three conditions,unverified,
+Blueberry Futures,,full_bots,"verified (own help centre): self-built, disclosed, own strategy only; price third-party",propfirmmatch: automated software allowed only if it meets three conditions,unverified,blueberry_ascent50
 Finotive Futures,,full_bots,third-party (directory),propfirmmatch: 'Trading bots ... allowed in Instant and One step accounts',unverified,
-Goat Funded Futures,,full_bots,third-party (directory),"propfirmmatch: 'Personal automated strategies and EAs are allowed on EOD, One Day Pass, Flex and Instant Classic'",unverified,
+Goat Funded Futures,,full_bots,verified (own help centre); price third-party,"propfirmmatch: 'Personal automated strategies and EAs are allowed on EOD, One Day Pass, Flex and Instant Classic'",unverified,goat_flex50
 Traders Launch,,full_bots_conditional,third-party (directory),propfirmmatch: 'EAs are allowed but require pre-approval',unverified,
 The Trading Pit Futures,,full_bots,third-party (directory),propfirmmatch: 'Allowed to trade using your own Expert Advisor (EA)',unverified,
 Purdia Capital,,alert_assisted,third-party (directory),saveonpropfirms: 'Semi-automated tools are permitted while the trader keeps active oversight'; fully automated prohibited,unverified,
 AquaFunded Futures,,alert_assisted,third-party (directory),propfirmmatch: fully automated prohibited; semi-automated only with trader fully present,unverified,
-FuturesElite,,alert_assisted,third-party (directory),propfirmmatch: 'Fully automated trading using AI or bots is not permitted' (manual entry not restricted),unverified,
+FuturesElite,,alert_assisted,verified (own FAQ); price third-party,propfirmmatch: 'Fully automated trading using AI or bots is not permitted' (manual entry not restricted),unverified,fe_elite50
 Hola Prime Futures,,alert_assisted,third-party (directory),propfirmmatch: 'Prohibited to employ any kind of semi or fully automated trading' (pure manual entry only),unverified,
 YLOS Trading,,alert_assisted,third-party (directory),propfirmmatch: 'no type of automation is allowed' except the Order Replicator (pure manual only),unverified,
 The5ers Futures,,alert_assisted,third-party (directory),"propfirmmatch: 'HFT, Hedging and Algo Trading: not allowed'",unverified,

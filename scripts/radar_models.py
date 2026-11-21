@@ -34,7 +34,27 @@ BG_ELITE50 = dataclasses.replace(
     consistency_days=3, payout_buffer=2100.0, payout_cap=2500.0, payout_min=500.0, profit_split=0.90,
     one_time_price=141.0, reset=141.0, monthly=0.0, activation=0.0, api_monthly=0.0)
 
+# Addendum 5: directory-found firms (rules own help centre; price third-party directory listing).
+GOAT_FLEX50 = dataclasses.replace(
+    B, profit_target=3000, loss_limit=2000, combine_max_contracts=30, combine_consistency=0.50, combine_mll_locks=True,
+    funded_loss_limit=2000, mll_locks_at=2000, lock_level=0.0, funded_scaling=False, winning_day_min=250.0,
+    winning_days_required=5, payout_share=0.50, payout_cap=2000.0, payout_min=500.0, profit_split=0.80,
+    one_time_price=218.0, reset=218.0, monthly=0.0, activation=0.0, api_monthly=0.0)
+BLUEBERRY_ASCENT50 = dataclasses.replace(
+    B, profit_target=3000, loss_limit=2000, combine_max_contracts=20, combine_max_days=30, combine_mll_locks=False,
+    funded_loss_limit=2000, mll_locks_at=2100, lock_level=100.0, funded_scaling=False, winning_day_min=200.0,
+    winning_days_required=5, consistency_target=0.35, payout_needs_both=True, payout_buffer=2100.0, payout_cap=2500.0,
+    payout_min=500.0, profit_split=0.90, one_time_price=245.0, reset=125.0, monthly=0.0, activation=0.0, api_monthly=0.0)
+FE_ELITE50 = dataclasses.replace(
+    B, profit_target=3000, loss_limit=2000, combine_max_contracts=40, combine_consistency=0.50, combine_mll_locks=False,
+    funded_loss_limit=2000, mll_locks_at=2000, lock_level=0.0, funded_scaling=False, winning_day_min=150.0,
+    winning_days_required=6, payout_share=0.50, payout_cap=2000.0, payout_min=500.0, profit_split=0.90,
+    one_time_price=128.0, reset=128.0, monthly=0.0, activation=0.0, api_monthly=0.0)
+
 MODELS = {
+    "goat_flex50": [("Goat Flex 50K", GOAT_FLEX50, 900)],
+    "blueberry_ascent50": [("Blueberry Ascent 50K", BLUEBERRY_ASCENT50, 900)],
+    "fe_elite50": [("FuturesElite Elite 50K", FE_ELITE50, 900)],
     "alpha_std50": [("Alpha Futures Standard 50K", ALPHA_STD50, 875)],
     "bg_elite50": [("Blue Guardian Elite 50K, price $141 [sens]", BG_ELITE50, 875),
                    ("Blue Guardian Elite 50K, price $350 [sens]", dataclasses.replace(BG_ELITE50, one_time_price=350.0), 875)],
