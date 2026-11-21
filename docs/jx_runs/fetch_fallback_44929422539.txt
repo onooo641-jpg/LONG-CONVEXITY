@@ -1,0 +1,28 @@
+=== wrappers
+  FAIL https://coins.llama.fi/chart/ethereum:0xFCc5c47bE19d06BF83eB04298b026F81069ff65b,ethereum:0x27B5739e HTTP Error 400: Bad Request
+  FAIL https://coins.llama.fi/chart/ethereum:0xFCc5c47bE19d06BF83eB04298b026F81069ff65b,ethereum:0x27B5739e HTTP Error 400: Bad Request
+  FAIL https://coins.llama.fi/chart/ethereum:0xFCc5c47bE19d06BF83eB04298b026F81069ff65b,ethereum:0x27B5739e HTTP Error 400: Bad Request
+  FAIL https://coins.llama.fi/chart/ethereum:0xFCc5c47bE19d06BF83eB04298b026F81069ff65b,ethereum:0x27B5739e HTTP Error 400: Bad Request
+  FAIL https://coins.llama.fi/chart/ethereum:0xFCc5c47bE19d06BF83eB04298b026F81069ff65b,ethereum:0x27B5739e HTTP Error 400: Bad Request
+  FAIL https://coins.llama.fi/chart/ethereum:0xFCc5c47bE19d06BF83eB04298b026F81069ff65b,ethereum:0x27B5739e HTTP Error 400: Bad Request
+  FAIL https://coins.llama.fi/chart/ethereum:0xFCc5c47bE19d06BF83eB04298b026F81069ff65b,ethereum:0x27B5739e HTTP Error 400: Bad Request
+  FAIL https://coins.llama.fi/chart/ethereum:0xFCc5c47bE19d06BF83eB04298b026F81069ff65b,ethereum:0x27B5739e HTTP Error 400: Bad Request
+  FAIL https://coins.llama.fi/chart/ethereum:0xFCc5c47bE19d06BF83eB04298b026F81069ff65b,ethereum:0x27B5739e HTTP Error 400: Bad Request
+wrapper prices: none
+=== lendborrow_now
+lendborrow_now rows: 2060
+=== staking_apr
+  ATOM: inflation 0.100000000000000000, tax 0.020000000000000000, bonded ok, supply ok
+  FAIL https://celestia-rest.publicnode.com/cosmos/mint/v1beta1/inflation HTTP Error 501: Not Implemented
+  TIA: inflation None, tax 0.020000000000000000, bonded ok, supply ok
+  INJ: inflation 0.044000000000000000, tax 0.050000000000000000, bonded ok, supply ok
+  FAIL https://sei-rest.publicnode.com/cosmos/mint/v1beta1/inflation HTTP Error 501: Not Implemented
+  FAIL https://sei-rest.publicnode.com/cosmos/bank/v1beta1/supply/by_denom?denom=usei HTTP Error 500: Internal Server Error
+  SEI: inflation None, tax 0.000000000000000000, bonded ok, supply none
+  FAIL https://dydx-rest.publicnode.com/cosmos/mint/v1beta1/inflation HTTP Error 501: Not Implemented
+  DYDX: inflation None, tax 0.000000000000000000, bonded ok, supply ok
+=== pendle_pilot
+pendle stable markets expiring >= 2026-05: 131 on 9 chains
+  history keys: ['results', 'timestamp_end', 'timestamp_start', 'total']
+pendle history rows: 14399; markets with history: 131
+underlying prices: 104 of 115
