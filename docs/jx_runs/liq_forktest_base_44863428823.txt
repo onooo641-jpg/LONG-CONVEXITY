@@ -1,0 +1,15 @@
+fork test base run 44863428823 2026-11-21T03:54:36Z
+== rpc https://base-rpc.publicnode.com
+Compiling 2 files with Solc 0.8.26
+Solc 0.8.26 finished in 183.37ms
+Compiler run successful!
+
+Ran 4 tests for test/LiqExecutor.t.sol:LiqExecutorForkTest
+[PASS] test_profitable_liquidation_repays_flash_loan() (gas: 839699)
+[PASS] test_reverts_on_healthy_position() (gas: 1170590)
+[PASS] test_reverts_on_unusable_route() (gas: 525287)
+[PASS] test_reverts_when_below_min_profit() (gas: 2465120)
+Suite result: ok. 4 passed; 0 failed; 0 skipped; finished in 17.44s (12.03s CPU time)
+
+Ran 1 test suite in 17.44s (17.44s CPU time): 4 tests passed, 0 failed, 0 skipped (4 total tests)
+exit 0
