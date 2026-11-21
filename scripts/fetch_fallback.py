@@ -502,7 +502,24 @@ def job_pendle_pilot():
     pd.DataFrame(mk).to_parquet(OUT / "pendle_pilot_markets.parquet", index=False)
     print(f"underlying prices: {sum(1 for x in px if x['price_at_expiry_or_now'])} of {len(px)}", flush=True)
 
-JOBS = {"pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+def job_staking_apr():
+    """#229 Stage 0.5 input: current staking APR inputs per Cosmos chain (inflation, community tax, bonded, total supply of the bond denom)."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    chains = {"ATOM": ("https://cosmos-rest.publicnode.com", "uatom"), "TIA": ("https://celestia-rest.publicnode.com", "utia"),
+              "INJ": ("https://injective-rest.publicnode.com", "inj"), "SEI": ("https://sei-rest.publicnode.com", "usei"),
+              "DYDX": ("https://dydx-rest.publicnode.com", "adydx")}
+    out = []
+    for c, (base, denom) in chains.items():
+        infl = (get(base + "/cosmos/mint/v1beta1/inflation") or {}).get("inflation")
+        pool = (get(base + "/cosmos/staking/v1beta1/pool") or {}).get("pool") or {}
+        tax = ((get(base + "/cosmos/distribution/v1beta1/params") or {}).get("params") or {}).get("community_tax")
+        sup = ((get(base + f"/cosmos/bank/v1beta1/supply/by_denom?denom={denom}") or {}).get("amount") or {}).get("amount")
+        out.append({"coin": c, "inflation": infl, "community_tax": tax, "bonded": pool.get("bonded_tokens"), "supply": sup})
+        print(f"  {c}: inflation {infl}, tax {tax}, bonded {'ok' if pool else 'none'}, supply {'ok' if sup else 'none'}", flush=True)
+    pd.DataFrame(out).astype(str).to_parquet(OUT / "staking_apr.parquet", index=False)
+
+JOBS = {"staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys
