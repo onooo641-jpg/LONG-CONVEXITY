@@ -124,3 +124,8 @@
 {"block_seen": 100960490, "chain": "avalanche", "healed": true, "user": "0x47add99a2817612b992ac096c37e16412c1b20ff", "ver": 2, "wall": 1795250332.5370998}
 {"block_seen": 100960615, "chain": "avalanche", "healed": true, "user": "0x24fceacbcb97bb33fb6380135b523bdb1ab0ae10", "ver": 2, "wall": 1795250441.225707}
 {"block_seen": 100960782, "chain": "avalanche", "healed": true, "user": "0x3eb04de355c1a55336b8a5c2a407251ff2c718c7", "ver": 2, "wall": 1795250576.9591408}
+{"block_seen": 100961338, "chain": "avalanche", "healed": true, "user": "0x9763c35f598d80e90a73dbd4f690eef04baa7ddd", "ver": 2, "wall": 1795251038.1531603}
+{"block_seen": 100961363, "chain": "avalanche", "detect_ms": 41231, "hf": 0.999226066744451, "n_ready": 100961410, "sim": {"coll": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7", "debt": "0xd24c2ad096400b6fbcd2ad8b24e7acbc21a1da64", "ok": false, "reason": "no_quote", "user": "0x9763c35f598d80e90a73dbd4f690eef04baa7ddd"}, "user": "0x9763c35f598d80e90a73dbd4f690eef04baa7ddd", "ver": 2, "wall": 1795251100.2255986}
+{"block_seen": 100961410, "chain": "avalanche", "healed": true, "user": "0x9763c35f598d80e90a73dbd4f690eef04baa7ddd", "ver": 2, "wall": 1795251101.9573748}
+{"block_seen": 100961544, "chain": "avalanche", "detect_ms": 39810, "hf": 0.9988727841823302, "n_ready": 100961588, "sim": {"coll": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7", "debt": "0xd24c2ad096400b6fbcd2ad8b24e7acbc21a1da64", "ok": false, "reason": "no_quote", "user": "0x9763c35f598d80e90a73dbd4f690eef04baa7ddd"}, "user": "0x9763c35f598d80e90a73dbd4f690eef04baa7ddd", "ver": 2, "wall": 1795251253.4054155}
+{"block_seen": 100962430, "chain": "avalanche", "healed": true, "user": "0x9763c35f598d80e90a73dbd4f690eef04baa7ddd", "ver": 2, "wall": 1795251944.0708234}
