@@ -1,0 +1,1 @@
+{"block": 526191563, "buckets": {"1.00-1.02": {"debt_usd": 3066857.890369392, "users": 79}, "1.02-1.05": {"debt_usd": 36937362.030487105, "users": 149}, "1.05-1.10": {"debt_usd": 8034451.438974671, "users": 527}}, "chain": "arbitrum", "eligible_liq_1h": 0, "kind": "hour", "stress": false, "ver": 2, "wall": 1795250822.9753308, "wn_move_pct": 0.0}
