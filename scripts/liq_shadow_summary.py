@@ -67,7 +67,8 @@ def load(d: Path):
         up = rows(cd / "uptime.jsonl")
         bj = cd / "borrowers.json"
         data[c] = dict(unh=rows(cd / "unhealthy.jsonl"), liq=rows(cd / "liquidations.jsonl"), up=up, iv=intervals(up),
-                       tracked=set(json.loads(bj.read_text())) if bj.exists() else set(),
+                       tracked=(set(json.loads(bj.read_text())) if bj.exists() else set())
+                       | ({x.strip() for x in (cd / "borrowers_new.jsonl").read_text().splitlines() if x.strip()} if (cd / "borrowers_new.jsonl").exists() else set()),
                        stats=json.loads((cd / "stats.json").read_text()) if (cd / "stats.json").exists() else {})
     return data
 

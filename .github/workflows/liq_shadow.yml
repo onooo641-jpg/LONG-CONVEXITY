@@ -1,0 +1,61 @@
+# Liquidation SHADOW watcher (PREREG_LIQ_SHADOW_20261121). Simulate-only: reads public RPCs, sends nothing, no keys.
+# One job per chain, ~6 h each, restarted by cron (this branch is the repo's default branch, so schedule works).
+# Chains enabled: .github/liq_shadow_chains.txt (only chains whose fork tests passed).
+name: liquidation shadow
+
+on:
+  schedule:
+    - cron: "7 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [claude/ict-trading-resources-ugh07b]
+    paths: [.github/liq_shadow_request.txt]
+
+permissions:
+  contents: write
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      chains: ${{ steps.p.outputs.chains }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: p
+        run: |
+          c=$(grep -v '^\s*#' .github/liq_shadow_chains.txt | grep -v '^\s*$' | jq -R . | jq -sc .)
+          echo "chains=$c" >> "$GITHUB_OUTPUT"
+  watch:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 358
+    strategy:
+      fail-fast: false
+      matrix:
+        chain: ${{ fromJSON(needs.plan.outputs.chains) }}
+    concurrency:
+      group: liq-shadow-${{ matrix.chain }}
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - uses: astral-sh/setup-uv@v5
+      - run: uv sync
+      - name: Watch (350 min budget, commit every 20 min)
+        env:
+          LIQ_BUDGET_MIN: "350"
+        run: |
+          mkdir -p docs/jx_runs
+          log="docs/jx_runs/liq_shadow_${{ matrix.chain }}_${{ github.run_id }}.txt"
+          uv run python -u scripts/liq_shadow.py ${{ matrix.chain }} > "$log" 2>&1 &
+          pid=$!
+          while kill -0 $pid 2>/dev/null; do
+            for i in $(seq 120); do kill -0 $pid 2>/dev/null || break; sleep 10; done
+            .github/scripts/commit_push.sh "shadow-${{ matrix.chain }}" || true
+          done
+          wait $pid
+      - name: Commit final
+        if: always()
+        run: .github/scripts/commit_push.sh "shadow-${{ matrix.chain }}"

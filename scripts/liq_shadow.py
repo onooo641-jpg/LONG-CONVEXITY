@@ -361,6 +361,9 @@ class Chain:
             return
         st = self.jload("state.json", {})
         users = set(self.jload("borrowers.json", []))
+        newp = self.dir / "borrowers_new.jsonl"
+        if newp.exists():
+            users |= {x.strip() for x in newp.read_text().splitlines() if x.strip()}
         hf = {}                    # user -> (hf, last_checked)
         open_rec = {}              # user -> record written, awaiting heal/liquidation
         log_next = st.get("log_next", head + 1)
@@ -385,6 +388,8 @@ class Chain:
                             if u not in users:
                                 users.add(u)
                                 hf.pop(u, None)
+                                with open(newp, "a") as nf:
+                                    nf.write(u + "\n")
                         else:
                             self.log_liquidation(lg)
                             open_rec.pop("0x" + lg["topics"][3][-40:], None)
@@ -440,7 +445,6 @@ class Chain:
             if time.time() - last_flush > 300:
                 st["log_next"] = log_next
                 self.jsave("state.json", st)
-                self.jsave("borrowers.json", sorted(users))
                 self.jsave("stats.json", self.stats)
                 last_flush = time.time()
                 print(f"{self.name}: head {head} cycles {n_cycles} tracked {len(users)} last_cycle {self.stats.get('last_cycle_ms')} ms "
@@ -448,7 +452,9 @@ class Chain:
             time.sleep(max(0.0, 0.4 - (time.time() - t0)))
         st["log_next"] = log_next
         self.jsave("state.json", st)
-        self.jsave("borrowers.json", sorted(users))
+        self.jsave("borrowers.json", sorted(users))      # consolidated once per run (file is large)
+        if newp.exists():
+            newp.unlink()
         self.jsave("stats.json", self.stats)
         self.jappend("uptime.jsonl", dict(kind="stop", wall=time.time(), block=head))
         print(f"{self.name}: budget reached, stopped cleanly at block {head}", flush=True)
