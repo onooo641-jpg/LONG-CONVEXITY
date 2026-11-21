@@ -1,2 +1,2 @@
-# chains for .github/workflows/fetch_liq.yml. Resumable. (run 12: base resume)
+# chains for .github/workflows/fetch_liq.yml. Resumable. (run 13: base receipts + assembly)
 base
