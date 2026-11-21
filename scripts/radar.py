@@ -136,8 +136,11 @@ def collect_protocols():
         la = p.get("listedAt")
         rows.append({"slug": str(p.get("slug", "")).lower(), "name": str(p.get("name", "")), "category": p.get("category"),
                      "tvl": p.get("tvl") or 0.0, "n_chains": len(p.get("chains") or []),
-                     "listed_at": pd.to_datetime(la, unit="s", utc=True) if la else pd.NaT, "url": p.get("url")})
+                     "listed_at": pd.to_datetime(la, unit="s", utc=True) if la else pd.NaT, "url": p.get("url"),
+                     "parent": p.get("parentProtocol") or p.get("slug")})
     df = pd.DataFrame(rows)
+    # F2 uses the protocol family's first listing (a new version of an old protocol is not a new venue)
+    df["listed_at"] = df.groupby("parent")["listed_at"].transform("min")
     print(f"S2 protocols: {len(df)}", flush=True)
     return df
 
@@ -412,7 +415,7 @@ def collect_pages():
 
 # ------------------------------------------------------------------ screening
 def deep_check(top):
-    rows = []
+    rows, hist = [], []
     for x in top.itertuples():
         d = jget(f"https://yields.llama.fi/chart/{x.pool_id}")
         pts = (d or {}).get("data") or []
@@ -422,10 +425,15 @@ def deep_check(top):
         df = pd.DataFrame(pts)
         df["ts"] = pd.to_datetime(df["timestamp"], utc=True)
         df["apyReward"] = pd.to_numeric(df.get("apyReward"), errors="coerce").fillna(0)
+        for c in ("apy", "apyBase", "tvlUsd"):
+            df[c] = pd.to_numeric(df.get(c), errors="coerce")
+        hist.append(df[["ts", "apy", "apyBase", "apyReward", "tvlUsd"]].assign(item_id=x.item_id, pool_id=x.pool_id, venue=x.venue))
         last = df[df["ts"] >= NOW - timedelta(days=F1_DAYS)]
         rows.append({"item_id": x.item_id, "hist_days": (df["ts"].max() - df["ts"].min()).days,
                      "reward_share_180d": float((last["apyReward"] > 0).mean()) if len(last) else 0.0})
         time.sleep(0.25)
+    if hist:  # full daily history of every deep-checked pool, for the pre-registered tests
+        save(pd.concat(hist, ignore_index=True), "charts")
     return pd.DataFrame(rows)
 
 
@@ -496,7 +504,11 @@ def screen(cand, prot):
     c["f1"], c["f2"] = "unverified", "unverified"
     # deep check on the top slice of S1 rows
     s1 = c[c["source"] == "S1"].sort_values("reward_apr_pct", ascending=False).head(DEEP_TOP)
-    deep = deep_check(s1) if len(s1) else pd.DataFrame()
+    tp = CFG / "test_pools.csv"  # pools under a pre-registered test: always fetch their history
+    extra = pd.read_csv(tp) if tp.exists() else pd.DataFrame(columns=["pool_id", "venue"])
+    extra = extra.assign(item_id="S1:" + extra["pool_id"].astype(str))[["item_id", "pool_id", "venue"]]
+    extra = extra[~extra["item_id"].isin(s1["item_id"])]
+    deep = deep_check(pd.concat([s1[["item_id", "pool_id", "venue"]], extra], ignore_index=True)) if len(s1) or len(extra) else pd.DataFrame()
     if not deep.empty:
         save(deep, "deep")
         dm = deep.set_index("item_id")
