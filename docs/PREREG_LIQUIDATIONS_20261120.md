@@ -92,3 +92,15 @@ the other candidates rate-limited, forbidden or capped). The `ETHERSCAN_API_KEY`
   consecutive runs add < 5% more blocks. Partial/unmeasured chains cannot pass and do not count toward the 3-venue requirement.
 - Verdict wording: BUILD / DROP / NOT YET DECIDABLE. NOT YET DECIDABLE only if so few chains are measured that the result could
   change with the missing chains (stated explicitly).
+
+## Addendum 3 (2026-11-21; written after one look at the per-chain COVERAGE lines only, before looking at any venue pass/fail result)
+First analysis run (`docs/jx_runs/liquidations_20261120.txt` as first generated; it will be overwritten by the final run) showed two data-quality
+problems, both unrelated to pass/fail:
+1. Token decimals: `eth_call decimals()` failed for some tokens (Scroll: all; Metis, Gnosis: some), so those events had no USD value. Fix (HOW): job
+   `liq_decimals` retries the call and falls back to DefiLlama's `decimals` field; analysis merges `liq_<chain>_decimals.parquet`. No change to WHAT is measured.
+2. Polygon exceeded the 40,000-receipt cap (49,466 txs), so every 2nd tx got a receipt (pre-registered cap). Unsampled events have no bot identity.
+   Handling (fixed now, applies to any capped chain): bot-based metrics (top-3/top-10 share, outside-top-3 net, bot counts) use ONLY events whose tx has a
+   receipt (a uniform deterministic half-sample); dollar sums are scaled by (events / events with receipt) for that chain; shares and medians are not scaled;
+   bot counts are lower bounds for sampled chains. The earlier code lumped unsampled events into one "unknown_sampled" bot, which would have made the
+   top-3 share meaningless; that behaviour is dropped.
+Unpriced tokens (no DefiLlama price) stay excluded from value metrics; coverage is reported per chain and unpriced share is listed.

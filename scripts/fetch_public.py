@@ -778,6 +778,40 @@ def job_liq_pxdiag():
         time.sleep(1)
 
 
+def job_liq_decimals():
+    """Fill token decimals missing from liq_<chain>.parquet (eth_call failed there): eth_call with retries, then DefiLlama current."""
+    for name, (lkey, _, urls) in LIQ_CHAINS.items():
+        f = OUT / f"liq_{name}.parquet"
+        if not f.exists():
+            continue
+        df = pd.read_parquet(f, columns=["collateral", "debt", "coll_dec", "debt_dec"])
+        have = {}
+        for a, b in (("collateral", "coll_dec"), ("debt", "debt_dec")):
+            for t, d in zip(df[a], df[b]):
+                if pd.notna(d):
+                    have[t] = int(d)
+        toks = sorted(set(df["collateral"]) | set(df["debt"]))
+        missing = [t for t in toks if t not in have]
+        got = {}
+        for t in missing:
+            for k in range(4):
+                try:
+                    got[t] = int(rpc(urls, "eth_call", [{"to": t, "data": "0x313ce567"}, "latest"], tries=1), 16)
+                    break
+                except Exception:  # noqa: BLE001
+                    time.sleep(1.5 * (k + 1))
+        still = [t for t in missing if t not in got]
+        for i in range(0, len(still), 10):
+            batch = still[i:i + 10]
+            j = http("https://coins.llama.fi/prices/current/" + urllib.parse.quote(",".join(f"{lkey}:{t}" for t in batch), safe=",:"))
+            for kk, v in ((j or {}).get("coins") or {}).items():
+                if "decimals" in v:
+                    got[kk.split(":", 1)[1]] = int(v["decimals"])
+        out = pd.DataFrame([{"token": t, "dec": d} for t, d in {**have, **got}.items()])
+        out.to_parquet(OUT / f"liq_{name}_decimals.parquet")
+        print(f"decimals {name}: tokens {len(toks)}, had {len(have)}, missing {len(missing)}, resolved now {len(got)}, still unknown {len(missing) - len(got)}", flush=True)
+
+
 def _liq_state_path(name):
     return OUT / f"liq_{name}_state.json"
 
@@ -1088,7 +1122,7 @@ for _c in LIQ_CHAINS:
 
 JOBS = {"ipo2": job_ipo2, "iponews": job_iponews, "ipo": job_ipo, "myxsnap": job_myxsnap, "batch2": job_batch2, "hl2023d": job_hl2023d, "hl2023": job_hl2023, "hl": job_hl, "llama_lend": job_llama_lend, "llama_pools": job_llama_pools,
         "llama_prices": job_llama_prices, "poly": job_poly,
-        "liq_probe": job_liq_probe, "liq_diag": job_liq_diag, "liq_diag2": job_liq_diag2, "liq_diag3": job_liq_diag2, "liq_secretcheck": job_liq_secretcheck, "liq_pxdiag": job_liq_pxdiag, **{f"liq_prices_{c}": _liq_prices_job(c) for c in LIQ_CHAINS}, **{f"liq_{c}_es": _liq_es_job(c) for c in LIQ_ES_ID}, **{f"liq_{c}": globals()[f"job_liq_{c}"] for c in LIQ_CHAINS}}
+        "liq_probe": job_liq_probe, "liq_diag": job_liq_diag, "liq_diag2": job_liq_diag2, "liq_diag3": job_liq_diag2, "liq_secretcheck": job_liq_secretcheck, "liq_pxdiag": job_liq_pxdiag, "liq_decimals": job_liq_decimals, **{f"liq_prices_{c}": _liq_prices_job(c) for c in LIQ_CHAINS}, **{f"liq_{c}_es": _liq_es_job(c) for c in LIQ_ES_ID}, **{f"liq_{c}": globals()[f"job_liq_{c}"] for c in LIQ_CHAINS}}
 
 
 def main(argv):
