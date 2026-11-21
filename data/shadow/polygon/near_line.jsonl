@@ -1,0 +1,1 @@
+{"block": 97696930, "buckets": {"1.00-1.02": {"debt_usd": 1522765.3521038075, "users": 88}, "1.02-1.05": {"debt_usd": 502404.04845129064, "users": 147}, "1.05-1.10": {"debt_usd": 5630180.344962182, "users": 379}}, "chain": "polygon", "eligible_liq_1h": 0, "kind": "hour", "stress": false, "ver": 2, "wall": 1795250866.548203, "wn_move_pct": 0.0}
