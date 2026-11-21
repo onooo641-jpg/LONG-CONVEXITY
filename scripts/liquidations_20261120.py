@@ -42,6 +42,12 @@ def load(chain):
     if not os.path.exists(f) or not str(status(chain)).startswith("COMPLETE"):
         return None
     df = pd.read_parquet(f)
+    dpath = f"{D}/liq_{chain}_decimals.parquet"
+    if os.path.exists(dpath):
+        dm = pd.read_parquet(dpath)
+        dm = dict(zip(dm["token"], dm["dec"]))
+        df["coll_dec"] = df["coll_dec"].fillna(df["collateral"].map(dm))
+        df["debt_dec"] = df["debt_dec"].fillna(df["debt"].map(dm))
     pr = pd.read_parquet(f"{D}/liq_{chain}_prices.parquet")
     prices = {c: (g.sort_values("ts")["ts"].values, g.sort_values("ts")["price"].values) for c, g in pr.groupby("coin")}
     lk = LKEY[chain]
@@ -59,6 +65,8 @@ def load(chain):
     df["coll_usd"], df["debt_usd"] = cv, dv
     df["gross"] = cv - dv
     df["valid"] = cv.notna() & dv.notna() & (cv > 0) & ((df["gross"] / cv).between(-0.02, 0.30))
+    df["why_invalid"] = np.where(df["valid"], "", np.where(df["coll_dec"].isna() | df["debt_dec"].isna(), "no_decimals",
+                       np.where(np.isnan(pc) | np.isnan(pdb), "no_price", "bonus_out_of_band")))
     nat = NATIVE[chain]
     npx = px(prices, nat, ts) if nat else np.ones(len(df))
     df["n_in_tx"] = df.groupby("tx")["tx"].transform("size")
@@ -66,11 +74,13 @@ def load(chain):
     df["gas_usd"] = gas_native * npx / df["n_in_tx"]
     # sampled receipts: impute gas by mean of observed per-event gas in the same venue/month, bot unknown
     df["gas_imputed"] = df["gas_usd"].isna()
+    df["has_receipt"] = df["from"].notna()
     if df["gas_imputed"].any():
         mean = df.groupby(["venue", "month"])["gas_usd"].transform("mean")
         df["gas_usd"] = df["gas_usd"].fillna(mean).fillna(df["gas_usd"].mean())
-        df["from"] = df["from"].fillna("unknown_sampled")
     df["bot"] = df["from"].fillna("unknown")
+    # PREREG addendum 3: on capped (sampled) chains only events with a receipt are used for bot-based metrics
+    df["use_for_bots"] = df["has_receipt"] | (not bool(df["receipt_sampled"].iloc[0]))
     df["net"] = df["gross"] - df["gas_usd"]
     df["net_flash"] = df["net"] - FLASH * df["debt_usd"]
     df["chain"] = chain
@@ -81,8 +91,11 @@ def venue_stats(v):
     res = {}
     for half, months in (("H1", range(0, 12)), ("H2", range(12, 24))):
         h = v[v["month"].isin(months)]
-        val = h[h["valid"]]
-        r = {"events": len(h), "valid": len(val), "months_with_liq": h["month"].nunique(), "gross": val["gross"].sum(), "gas": val["gas_usd"].sum()}
+        val_all = h[h["valid"]]
+        val = val_all[val_all["use_for_bots"]]
+        scale = len(val_all) / max(len(val), 1)
+        r = {"events": len(h), "valid": len(val_all), "months_with_liq": h["month"].nunique(), "scale": scale,
+             "gross": val["gross"].sum() * scale, "gas": val["gas_usd"].sum() * scale}
         if len(val):
             by = val.groupby("bot")["gross"].sum().sort_values(ascending=False, kind="mergesort")
             tot = by.sum()
@@ -90,8 +103,8 @@ def venue_stats(v):
             r["top3"] = by.head(3).sum() / tot if tot > 0 else np.nan
             r["top10"] = by.head(10).sum() / tot if tot > 0 else np.nan
             out = val[~val["bot"].isin(by.head(3).index)]
-            r["out_net_pm"] = out["net"].sum() / 12
-            r["out_net_flash_pm"] = out["net_flash"].sum() / 12
+            r["out_net_pm"] = out["net"].sum() * scale / 12
+            r["out_net_flash_pm"] = out["net_flash"].sum() * scale / 12
             r["out_bots"] = out["bot"].nunique()
             r["median_net"] = val["net"].median()
         else:
@@ -112,7 +125,9 @@ def main():
     pd.set_option("display.width", 250, "display.max_columns", 50)
     print("== coverage per chain: events, price-valid %, receipts-imputed %")
     for c, g in allv.groupby("chain"):
-        print(f"{c:10s} events {len(g):7d} valid {g['valid'].mean()*100:5.1f}% gas_imputed {g['gas_imputed'].mean()*100:5.1f}% venues {g['venue'].nunique()}")
+        w = g["why_invalid"].value_counts()
+        print(f"{c:10s} events {len(g):7d} valid {g['valid'].mean()*100:5.1f}% no_receipt {(~g['has_receipt']).mean()*100:5.1f}% sampled={bool(g['receipt_sampled'].iloc[0])} "
+              f"invalid: no_decimals {w.get('no_decimals',0)} no_price {w.get('no_price',0)} bonus_out_of_band {w.get('bonus_out_of_band',0)} venues {g['venue'].nunique()}")
     print("\n== monthly per venue (valid events only): n, gross$, gas$, bots, top3, top10, median net$")
     summary = []
     for (c, ven), v in allv.groupby(["chain", "venue"]):
@@ -122,7 +137,7 @@ def main():
         print(f"\n--- {c} {ven} [{label}] total events {len(v)}")
         rows = []
         for m in range(24):
-            g = v[(v["month"] == m) & v["valid"]]
+            g = v[(v["month"] == m) & v["valid"] & v["use_for_bots"]]
             if len(g) == 0:
                 rows.append((m, 0, 0, 0, 0, np.nan, np.nan, np.nan)); continue
             by = g.groupby("bot")["gross"].sum().sort_values(ascending=False, kind="mergesort"); tot = by.sum()
