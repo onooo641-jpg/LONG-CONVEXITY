@@ -13,6 +13,9 @@ interface Vm {
     function startPrank(address) external;
     function stopPrank() external;
     function mockCall(address, bytes calldata, bytes calldata) external;
+    function load(address, bytes32) external view returns (bytes32);
+    function store(address, bytes32, bytes32) external;
+    function envOr(string calldata, string calldata) external view returns (string memory);
 }
 
 interface IProvider {
@@ -66,6 +69,18 @@ contract LiqExecutorForkTest {
         return string(o);
     }
 
+    // set a plain ERC20 balance by finding its balances mapping slot (no forge-std needed)
+    function _dealToken(address token, address to, uint256 amt) internal {
+        for (uint256 k = 0; k < 150; k++) {
+            bytes32 slot = keccak256(abi.encode(to, k));
+            bytes32 old = vm.load(token, slot);
+            vm.store(token, slot, bytes32(amt));
+            if (IERC20(token).balanceOf(to) == amt) return;
+            vm.store(token, slot, old);
+        }
+        revert("balance slot not found");
+    }
+
     function _u(uint256 v) internal pure returns (string memory) {
         if (v == 0) return "0";
         uint256 t = v;
@@ -89,9 +104,15 @@ contract LiqExecutorForkTest {
 
         uint256 amt = 10 * (10 ** uint256(IDec(coll).decimals()));
         // collateral is the chain's wrapped native token (WETH9-style): fund the borrower with native token and wrap it
-        vm.deal(borrower, amt);
-        vm.startPrank(borrower);
-        try IWrapped(coll).deposit{value: amt}() {} catch (bytes memory r) { revert(string.concat("deposit: ", _hex(r))); }
+        bool slotMode = keccak256(bytes(vm.envOr("FUND", "wrap"))) == keccak256(bytes("slot"));
+        if (slotMode) {
+            _dealToken(coll, borrower, amt);
+            vm.startPrank(borrower);
+        } else {
+            vm.deal(borrower, amt);
+            vm.startPrank(borrower);
+            try IWrapped(coll).deposit{value: amt}() {} catch (bytes memory r) { revert(string.concat("deposit: ", _hex(r))); }
+        }
         IERC20(coll).approve(address(pool), type(uint256).max);
         try pool.supply(coll, amt, borrower, 0) {} catch (bytes memory r) { revert(string.concat("supply: ", _hex(r))); }
         (,, uint256 avail,,,) = pool.getUserAccountData(borrower);
