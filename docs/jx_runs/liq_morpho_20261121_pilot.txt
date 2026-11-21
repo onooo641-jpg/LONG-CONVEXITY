@@ -1,0 +1,3 @@
+warning: The `UV_NATIVE_TLS` environment variable is deprecated and will be removed in a future release. Use `UV_SYSTEM_CERTS` instead.
+PILOT (2026-08-01..2026-10-31): events 6600, valid 6266, gross bonus $2,385,364, eligible(>$50) 1912, unique winners 848, top-3 share 0.28
+PILOT RULE: KILL if gross < $3,750 -> proceed to stage 2

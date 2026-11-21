@@ -944,7 +944,8 @@ def job_liq_morpho(name):
     budget = float(os.environ.get("LIQ_BUDGET_MIN", "150")) * 60
     urls_all = ["https://base.api.pocket.network", "https://base.gateway.tenderly.co"]
     lkey, native, urls_aave = LIQ_CHAINS["base"]
-    pilot = name.endswith("_pilot")
+    SHARDS = {"morphobase_pilot": (21, 24), "morphobase_s0": (0, 12), "morphobase_s1": (12, 18), "morphobase_s2": (18, 24), "morphobase": (0, 24)}
+    first, last_i = SHARDS[name]
     sp = _liq_state_path(name)
     st = json.loads(sp.read_text()) if sp.exists() else {}
     if st.get("complete"):
@@ -952,7 +953,6 @@ def job_liq_morpho(name):
         return
     base_state = json.loads((OUT / "liq_base_state.json").read_text())
     anchors = base_state["anchors"]
-    first = 21 if pilot else 0
     if "next_block" not in st:
         st.update(anchors=anchors, next_block=anchors[first], logs_done=False, receipts_done=False, complete=False)
     rawp = OUT / f"liq_{name}_raw.parquet"
@@ -972,7 +972,7 @@ def job_liq_morpho(name):
         st["next_block"] = b
         _liq_save_state(name, st)
 
-    a1 = anchors[-1] - 1
+    a1 = anchors[last_i] - 1
     if not st["logs_done"]:
         b, step, cap, last = st["next_block"], 10000, 2_000_000, time.time()
         month_edge = next((x for x in anchors if x > b), a1 + 1)
@@ -1407,7 +1407,8 @@ for _c in LIQ_CHAINS:
 
 JOBS = {"ipo2": job_ipo2, "iponews": job_iponews, "ipo": job_ipo, "myxsnap": job_myxsnap, "batch2": job_batch2, "hl2023d": job_hl2023d, "hl2023": job_hl2023, "hl": job_hl, "llama_lend": job_llama_lend, "llama_pools": job_llama_pools,
         "llama_prices": job_llama_prices, "poly": job_poly,
-        "liq_probe": job_liq_probe, "liq_diag": job_liq_diag, "liq_diag2": job_liq_diag2, "liq_diag3": job_liq_diag2, "liq_secretcheck": job_liq_secretcheck, "liq_pxdiag": job_liq_pxdiag, "liq_morphobase_pilot": lambda: job_liq_morpho("morphobase_pilot"), "liq_morphobase": lambda: job_liq_morpho("morphobase"), **{f"liq_replay_{c}": globals()[f"job_liq_replay_{c}"] for c in ("arbitrum", "base", "avalanche", "polygon", "optimism")}, "liq_decimals": job_liq_decimals, **{f"liq_prices_{c}": _liq_prices_job(c) for c in LIQ_CHAINS}, **{f"liq_{c}_es": _liq_es_job(c) for c in LIQ_ES_ID}, **{f"liq_{c}": globals()[f"job_liq_{c}"] for c in LIQ_CHAINS}}
+        "liq_probe": job_liq_probe, "liq_diag": job_liq_diag, "liq_diag2": job_liq_diag2, "liq_diag3": job_liq_diag2, "liq_secretcheck": job_liq_secretcheck, "liq_pxdiag": job_liq_pxdiag, "liq_morphobase_pilot": lambda: job_liq_morpho("morphobase_pilot"), "liq_morphobase": lambda: job_liq_morpho("morphobase"), "liq_morphobase_s0": lambda: job_liq_morpho("morphobase_s0"),
+        "liq_morphobase_s1": lambda: job_liq_morpho("morphobase_s1"), "liq_morphobase_s2": lambda: job_liq_morpho("morphobase_s2"), **{f"liq_replay_{c}": globals()[f"job_liq_replay_{c}"] for c in ("arbitrum", "base", "avalanche", "polygon", "optimism")}, "liq_decimals": job_liq_decimals, **{f"liq_prices_{c}": _liq_prices_job(c) for c in LIQ_CHAINS}, **{f"liq_{c}_es": _liq_es_job(c) for c in LIQ_ES_ID}, **{f"liq_{c}": globals()[f"job_liq_{c}"] for c in LIQ_CHAINS}}
 
 
 def main(argv):
