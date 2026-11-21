@@ -1,0 +1,4 @@
+=== liq_replay_optimism
+optimism: oracle 0xd81eb3728a631871a7ebbad631b5f424909f0c77, source updates in window for 3 assets
+optimism: replay stage 2 wrote 141 rows
+=== liq_replay_optimism done in 269s  ok 863 fail 0
