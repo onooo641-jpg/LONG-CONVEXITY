@@ -1,4 +1,2 @@
 # jobs for scripts/fetch_fallback.py (one per line)
-funding
-# rerun 1795262769
-# rerun 1795270014
+lendborrow
