@@ -1,0 +1,19 @@
+arbitrum: v2 start, head 526143074
+arbitrum: bootstrap to block 492735074/526143074 users 28852
+arbitrum: bootstrap to block 521655074/526143074 users 33053
+arbitrum: bootstrap DONE, users 34223
+arbitrum: positions 600/34223 (0.0 min)
+arbitrum: positions 3600/34223 (0.3 min)
+arbitrum: positions 6600/34223 (0.5 min)
+arbitrum: positions 9600/34223 (0.8 min)
+arbitrum: positions 12600/34223 (1.0 min)
+arbitrum: positions 15600/34223 (1.2 min)
+arbitrum: positions 18600/34223 (1.5 min)
+arbitrum: positions 21600/34223 (1.7 min)
+arbitrum: positions 24600/34223 (2.0 min)
+arbitrum: positions 27600/34223 (2.2 min)
+arbitrum: positions 30600/34223 (2.4 min)
+arbitrum: positions 33600/34223 (2.6 min)
+arbitrum: positions ready: 34223 users, 13746 with debt
+arbitrum: head 526145732 cycles 453 debtors 13755 cand 1886 last_cycle 599 ms rpc ok/err 5851/None
+arbitrum: head 526146758 cycles 921 debtors 13757 cand 1873 last_cycle 601 ms rpc ok/err 8317/None
