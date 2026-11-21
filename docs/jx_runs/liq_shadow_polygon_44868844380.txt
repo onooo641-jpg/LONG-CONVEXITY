@@ -1,0 +1,15 @@
+polygon: v2 start, head 97687886
+polygon: bootstrap to block 90901886/97687886 users 16552
+polygon: bootstrap to block 91961886/97687886 users 16798
+polygon: bootstrap to block 94151886/97687886 users 17382
+polygon: bootstrap DONE, users 18217
+polygon: positions 600/18217 (0.1 min)
+polygon: positions 3600/18217 (0.4 min)
+polygon: positions 6600/18217 (0.7 min)
+polygon: positions 9600/18217 (1.1 min)
+polygon: positions 12600/18217 (1.4 min)
+polygon: positions 15600/18217 (1.7 min)
+polygon: positions 18217/18217 (2.0 min)
+polygon: positions ready: 18217 users, 5553 with debt
+polygon: head 97688472 cycles 347 debtors 5557 cand 1236 last_cycle 845 ms rpc ok/err 3127/117
+polygon: head 97688672 cycles 710 debtors 5557 cand 1258 last_cycle 724 ms rpc ok/err 4858/122
