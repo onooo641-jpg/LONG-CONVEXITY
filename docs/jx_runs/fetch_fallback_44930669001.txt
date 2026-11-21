@@ -1,0 +1,16 @@
+=== wrappers
+  YCRV: 776 prices
+  ST-YCRV: 724 prices
+  CVXCRV: 780 prices
+  SDCRV: 777 prices
+  CRV: 781 prices
+  SDPENDLE: 69 prices
+  PENDLE: 389 prices
+  GM_ETH: 778 prices
+  GM_BTC: 778 prices
+  ETH: 781 prices
+  BTC: 781 prices
+wrapper prices: {'BTC': 781, 'CRV': 781, 'CVXCRV': 780, 'ETH': 781, 'GM_BTC': 778, 'GM_ETH': 778, 'PENDLE': 389, 'SDCRV': 777, 'SDPENDLE': 69, 'ST-YCRV': 724, 'YCRV': 776}
+=== sky_funding
+  SKY: 9834
+  TRX: 17568
