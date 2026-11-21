@@ -1,0 +1,12 @@
+universe: 728 stable single-exposure pools with TVL >= $1M (of 14874)
+  charts 0/728
+  FAIL https://yields.llama.fi/chart/6cf9108a-4832-4681-95d7-757d51d3b24a HTTP Error 429: Too Many Requests
+  charts 100/728
+  charts 200/728
+  charts 300/728
+  charts 400/728
+  charts 500/728
+  charts 600/728
+  charts 700/728
+charts: 727 pools, 246762 rows
+HLP: 103 points 2023-05-10 22:45:00.034000+00:00 .. 2026-11-21 11:41:46.385000+00:00
