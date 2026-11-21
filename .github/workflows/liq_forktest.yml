@@ -83,6 +83,22 @@ jobs:
             fund: slot
             amt_usd: "3000"
             rpcs: "https://avalanche.gateway.tenderly.co https://avalanche-c-chain-rpc.publicnode.com"
+          - chain: polygon_weth
+            pool: "0x794a61358d6845594f94dc1db02a252b5b4814ad"
+            coll: "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619"
+            debt: "0x3c499c542cef5e3811e1192ce70d8cc03d5c3359"
+            router: "0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45"
+            fund: slot
+            amt_usd: "20000"
+            rpcs: "https://poly.api.pocket.network https://polygon.gateway.tenderly.co"
+          - chain: polygon_wbtc
+            pool: "0x794a61358d6845594f94dc1db02a252b5b4814ad"
+            coll: "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6"
+            debt: "0x3c499c542cef5e3811e1192ce70d8cc03d5c3359"
+            router: "0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45"
+            fund: slot
+            amt_usd: "20000"
+            rpcs: "https://poly.api.pocket.network https://polygon.gateway.tenderly.co"
     steps:
       - uses: actions/checkout@v4
         with:
