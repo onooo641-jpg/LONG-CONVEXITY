@@ -1,3 +1,4 @@
 # jobs for scripts/fetch_fallback.py (one per line)
 wrappers
 lendborrow_now
+pendle_pilot

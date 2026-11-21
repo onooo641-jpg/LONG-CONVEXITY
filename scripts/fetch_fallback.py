@@ -439,7 +439,70 @@ def job_lendborrow_now():
     m.to_parquet(OUT / "lendborrow_now.parquet", index=False)
     print(f"lendborrow_now rows: {len(m)}", flush=True)
 
-JOBS = {"wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+PENDLE_CHAIN = {1: "ethereum", 42161: "arbitrum", 8453: "base", 56: "bsc", 146: "sonic", 999: "hyperliquid", 9745: "plasma",
+                5000: "mantle", 80094: "berachain", 10: "optimism"}
+import re as _re  # noqa: E402
+STABLE_RE = _re.compile(r"usd|dai|gho|frax|usr|usx|ausd|usde|usdai|usdf|usdg|usd0|eusd|deusd|reusd|syrup", _re.I)
+
+
+def job_pendle_pilot():
+    """#211 Stage-1 data: stable-underlying Pendle markets live since 2026-05 (active + inactive), daily history, underlying price at expiry."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    chains = (get("https://api-v2.pendle.finance/core/v1/chains") or {}).get("chainIds", [])
+    mk = []
+    for cid in chains:
+        for kind in ("active", "inactive"):
+            for m in (get(f"https://api-v2.pendle.finance/core/v1/{cid}/markets/{kind}") or {}).get("markets", []):
+                if STABLE_RE.search(m.get("name", "")) and pd.Timestamp(m["expiry"]) >= pd.Timestamp("2026-05-01", tz="UTC"):
+                    mk.append({"chain": cid, "kind": kind, "name": m["name"], "address": m["address"], "expiry": m["expiry"],
+                               "underlying": m.get("underlyingAsset"), "pt": m.get("pt")})
+    print(f"pendle stable markets expiring >= 2026-05: {len(mk)} on {len(set(x['chain'] for x in mk))} chains", flush=True)
+    rows, shown = [], False
+    for m in mk:
+        d = None
+        for u in (f"https://api-v2.pendle.finance/core/v2/{m['chain']}/markets/{m['address']}/historical-data?time_frame=day",
+                  f"https://api-v2.pendle.finance/core/v1/{m['chain']}/markets/{m['address']}/historical-data?time_frame=day"):
+            d = get(u)
+            if d:
+                break
+        if not d:
+            continue
+        if not shown:
+            print(f"  history keys: {sorted(d.keys())[:20] if isinstance(d, dict) else type(d)}", flush=True)
+            shown = True
+        res = d.get("results") if isinstance(d, dict) else d
+        if isinstance(res, list):
+            for r in res:
+                rows.append({**{k: m[k] for k in ("chain", "address", "name", "expiry")}, **{k: r.get(k) for k in r if k in
+                             ("timestamp", "impliedApy", "underlyingApy", "tvl", "ptPrice", "liquidity", "maxApy", "baseApy")}})
+        elif isinstance(d, dict) and "timestamp" in d:  # columnar format
+            n = len(d["timestamp"])
+            for i in range(n):
+                rows.append({**{k: m[k] for k in ("chain", "address", "name", "expiry")},
+                             **{k: (d[k][i] if isinstance(d.get(k), list) and len(d[k]) == n else None) for k in
+                                ("timestamp", "impliedApy", "underlyingApy", "tvl", "ptPrice", "liquidity")}})
+        time.sleep(0.3)
+    h = pd.DataFrame(rows)
+    h.to_parquet(OUT / "pendle_pilot_history.parquet", index=False)
+    print(f"pendle history rows: {len(h)}; markets with history: {h['address'].nunique() if len(h) else 0}", flush=True)
+    px = []
+    for m in mk:
+        slug = PENDLE_CHAIN.get(m["chain"])
+        ua = str(m.get("underlying") or "")
+        addr = ua.split("-")[-1] if "-" in ua else ua
+        if not slug or not addr.startswith("0x"):
+            continue
+        ts = int(min(pd.Timestamp(m["expiry"]), pd.Timestamp.now(tz="UTC")).timestamp())
+        d = get(f"https://coins.llama.fi/prices/historical/{ts}/{slug}:{addr}")
+        c = ((d or {}).get("coins") or {}).get(f"{slug}:{addr}") or {}
+        px.append({"address": m["address"], "underlying": addr, "price_at_expiry_or_now": c.get("price"), "symbol": c.get("symbol")})
+        time.sleep(0.2)
+    pd.DataFrame(px).to_parquet(OUT / "pendle_pilot_underlying.parquet", index=False)
+    pd.DataFrame(mk).to_parquet(OUT / "pendle_pilot_markets.parquet", index=False)
+    print(f"underlying prices: {sum(1 for x in px if x['price_at_expiry_or_now'])} of {len(px)}", flush=True)
+
+JOBS = {"pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys
