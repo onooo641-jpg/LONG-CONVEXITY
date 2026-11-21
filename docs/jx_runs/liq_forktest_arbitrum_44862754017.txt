@@ -1,0 +1,15 @@
+fork test arbitrum run 44862754017 2026-11-21T03:45:58Z
+== rpc https://arb1.arbitrum.io/rpc
+Compiling 2 files with Solc 0.8.26
+Solc 0.8.26 finished in 213.61ms
+Compiler run successful!
+
+Ran 4 tests for test/LiqExecutor.t.sol:LiqExecutorForkTest
+[PASS] test_profitable_liquidation_repays_flash_loan() (gas: 863099)
+[PASS] test_reverts_on_healthy_position() (gas: 1184882)
+[PASS] test_reverts_on_unusable_route() (gas: 540953)
+[PASS] test_reverts_when_below_min_profit() (gas: 6122662)
+Suite result: ok. 4 passed; 0 failed; 0 skipped; finished in 62.49s (57.51s CPU time)
+
+Ran 1 test suite in 62.49s (62.49s CPU time): 4 tests passed, 0 failed, 0 skipped (4 total tests)
+exit 0
