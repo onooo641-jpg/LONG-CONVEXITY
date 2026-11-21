@@ -17,3 +17,20 @@ Bar for all: **≥ 8.0%/yr on capital in both halves** (2024-11..2025-10, 2025-1
 
 Ceilings use the most favourable current values (hindsight); a high ceiling never counts as a pass.
 Command (Stage 0.5): `uv run python scripts/batch4_ceiling_20261121.py | tee docs/jx_runs/batch4_ceiling_20261121.txt`
+
+## Results (2026-11-21, `docs/jx_runs/batch4_20261121.txt`, re-run identical)
+- #221 GMX GM hedged: Stage 1 8.2%; halves **21.8% / 10.1%** → passes the rule as registered (universe only 2 pools: ETH-USDC, BTC-USDC on Arbitrum).
+- #224 stable-pair LPs: Stage 1 −12.0% (7 stress hits) → FAIL.
+- #227 other savings rates: 3.7% / −16.8% (5 stress hits) → FAIL.
+- #225 trader-counterparty vaults: primary rule (best-ceiling vault, Gains USDC) 9.7% / 4.4% → **FAIL**; secondary (equal weight of 4 Gains vaults)
+  10.7% / 13.2%. The primary rule decides: FAIL (near-miss; the largest vault has ~$2.5M TVL, so capacity is tiny anyway).
+- #222 dYdX MegaVault: only 67 days of history (< 180) → FAIL (Stage 1 8.2%).
+- #220 Jupiter JLP: DefiLlama lists only JLP *lending* markets (not JLP holding); Jupiter's API gives the current APR only → not testable (no history).
+- #223 Lighter LLP: API answers with current pool metadata only → not testable (no history).
+
+## Addendum (before fetching): #221 must survive real GM token prices
+DefiLlama's GM APY is fee APY; a GM pool also wins/loses against traders and its index exposure is not exactly 50%. Robustness check (decides whether
+#221 counts as passed): daily return = Δlog(GM token price) − h × Δlog(index price) + h × (HL short funding)/365, on capital (1 + h/3), with
+h = 0.5 as registered, using DefiLlama coin prices for the GM tokens (ETH-USDC 0x70d95587d40A2caf56bd97485aB3Eec10Bee6336, BTC-USDC
+0x47c031236e19d024b42f8AE6780E44A573170703 on Arbitrum). Same bar (≥ 8% both halves, equal weight of the two pools, held). If GM prices are not
+available, #221 is reported as "passes fee-APY rule, not verified".

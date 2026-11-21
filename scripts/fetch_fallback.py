@@ -404,7 +404,9 @@ def job_batch5():
 WRAPPERS = {"YCRV": "ethereum:0xFCc5c47bE19d06BF83eB04298b026F81069ff65b", "ST-YCRV": "ethereum:0x27B5739e22ad9033bcBf192059122d163b60349D",
             "CVXCRV": "ethereum:0x62B9c7356A2Dc64a1969e19C23e4f579F9810Aa7", "SDCRV": "ethereum:0xD1b5651E55D4CeeD36251c61c50C889B36F6abB5",
             "CRV": "ethereum:0xD533a949740bb3306d119CC777fa900bA034cd52", "SDPENDLE": "ethereum:0x5Ea630e00D6eE438d3deA1556A110359ACdc10A9",
-            "PENDLE": "ethereum:0x808507121B80c02388fAd14726482e061B8da827"}
+            "PENDLE": "ethereum:0x808507121B80c02388fAd14726482e061B8da827",
+            "GM_ETH": "arbitrum:0x70d95587d40A2caf56bd97485aB3Eec10Bee6336", "GM_BTC": "arbitrum:0x47c031236e19d024b42f8AE6780E44A573170703",
+            "ETH": "coingecko:ethereum", "BTC": "coingecko:bitcoin"}
 
 
 def job_wrappers():

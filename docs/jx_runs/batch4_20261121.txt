@@ -1,0 +1,16 @@
+bar 8.0%/yr both halves; Stage 1 kill < 4.0% (2026-08..10)
+
+#221 GMX GM pools hedged: Stage 1 8.24%/yr; halves 21.82% / 10.10% (729 days); $1,596/yr on $10K; stress hits 0; last holdings gmx-evm/ETH-USDC 8.0%, gmx-evm/WBTC.B-USDC 6.8% -> VERDICT: PASS
+
+#224 stable-pair DEX LPs (top 5 monthly): Stage 1 (2026-08..10) -12.03%/yr -> KILL. VERDICT: FAIL (Stage 1); 73 pools; stress hits 7; last holdings uniswap-v4/APXUSD-USDC 30.0%, curve-dex/APYUSD-APXUSD 8.1%, curve-dex/REUSD-SCRVUSD 7.9%, stake-dao-yield/SCRVUSD-SDOLA 6.7%, curve-dex/SCRVUSD-SDOLA 6.5%
+
+#227 other savings rates (top 5 monthly): Stage 1 5.79%/yr; halves 3.65% / -16.81% (699 days); $-702/yr on $10K; 31 pools; stress hits 5; last holdings unitas-usdu/SUSDU 11.6%, avant-avusd/SAVUSD 8.0%, usd-ai/SUSDAI 7.1%, inverse-finance-firm/SDOLA 6.2%, frax/SFRXUSD 4.9% -> VERDICT: FAIL
+
+#225 trader-counterparty vault, best ceiling (gains-network/USDC): Stage 1 5.21%/yr; halves 9.69% / 4.39% (907 days); $745/yr on $10K -> VERDICT: FAIL
+
+#225 trader-counterparty vaults, equal weight: Stage 1 15.87%/yr; halves 10.74% / 13.22% (907 days); $1,179/yr on $10K; 4 vaults -> VERDICT: PASS
+
+#222 dYdX MegaVault: Stage 1 8.23%/yr; halves nan% / 8.23% (67 days); $823/yr on $10K; 65 daily points -> VERDICT: FAIL
+
+#223 Lighter LLP: see PROBE lines in the fetch log; no history endpoint fetched -> not testable (no data)
+
