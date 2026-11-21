@@ -28,6 +28,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          ref: ${{ github.ref_name }}   # latest branch head: the radar diffs against its own previous outputs
       - uses: astral-sh/setup-uv@v5
       - run: uv sync
       - name: Radar
@@ -43,7 +44,7 @@ jobs:
           git diff --cached --quiet && exit 0
           git commit -m "radar: run ${{ github.run_id }}"
           for i in 1 2 3 4 5; do
-            git pull --rebase --no-edit origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            git pull --rebase -X theirs --no-edit origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
             sleep $((i * 10))
           done
           exit 1
