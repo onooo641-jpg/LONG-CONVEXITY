@@ -11,10 +11,10 @@ Paid out by Bank transfer Crypto Card
 Providers
 Latest payouts Live
 7h ago $25,000 Classic Markets +$487
-8h ago $50,000 Classic Markets +$306
+9h ago $50,000 Classic Markets +$306
 15h ago $5,000 Perpetual +$127
 15h ago $10,000 Classic Markets +$170
-19h ago $5,000 Classic Markets +$111
+20h ago $5,000 Classic Markets +$111
 20h ago $5,000 Classic Markets +$104
 22h ago $2,000 Classic Markets +$553
 23h ago $25,000 Perpetual +$203
@@ -41,10 +41,10 @@ Latest payouts Live
 1d ago $100,000 Classic Markets +$1,620
 1d ago $200,000 Classic Markets +$7,723
 7h ago $25,000 Classic Markets +$487
-8h ago $50,000 Classic Markets +$306
+9h ago $50,000 Classic Markets +$306
 15h ago $5,000 Perpetual +$127
 15h ago $10,000 Classic Markets +$170
-19h ago $5,000 Classic Markets +$111
+20h ago $5,000 Classic Markets +$111
 20h ago $5,000 Classic Markets +$104
 22h ago $2,000 Classic Markets +$553
 23h ago $25,000 Perpetual +$203
@@ -79,10 +79,10 @@ Average payout time 18 hours
 Average payout amount $3,219
 Date Account size Market Amount
 7 hours ago Latest $25,000 Classic Markets +$487 $25,000 account
-8 hours ago $50,000 Classic Markets +$306 $50,000 account
+9 hours ago $50,000 Classic Markets +$306 $50,000 account
 15 hours ago $5,000 Perpetual +$127 $5,000 account
 15 hours ago $10,000 Classic Markets +$170 $10,000 account
-19 hours ago $5,000 Classic Markets +$111 $5,000 account
+20 hours ago $5,000 Classic Markets +$111 $5,000 account
 20 hours ago $5,000 Classic Markets +$104 $5,000 account
 22 hours ago $2,000 Classic Markets +$553 $2,000 account
 23 hours ago $25,000 Perpetual +$203 $25,000 account
