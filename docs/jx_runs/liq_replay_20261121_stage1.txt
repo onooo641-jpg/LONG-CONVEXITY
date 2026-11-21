@@ -1,0 +1,68 @@
+== A. gas bidding by bonus size (eligible events, last 12 months, main pools)
+chain      bucket        events   median gas/bonus  p90 gas/bonus  share gas_price>2x month-p10
+arbitrum      50-  200     1846             0.0011         0.0251        0.61
+arbitrum     200- 1000     1727             0.0004         0.0070        0.68
+arbitrum    1000- 5000      564             0.0001         0.0017        0.75
+arbitrum    5000-  inf      190             0.0000         0.0004        0.77
+base          50-  200     1337             0.0097         0.0812        0.97
+base         200- 1000     1057             0.0034         0.0422        0.98
+base        1000- 5000      424             0.0005         0.0607        0.98
+base        5000-  inf      133             0.0001         0.0091        0.98
+avalanche     50-  200      808             0.0055         0.0930        0.96
+avalanche    200- 1000      797             0.0023         0.0848        0.96
+avalanche   1000- 5000      306             0.0003         0.0420        0.95
+avalanche   5000-  inf      107             0.0001         0.0409        0.98
+polygon       50-  200     1639             0.0062         0.0105        0.75
+polygon      200- 1000      878             0.0017         0.0028        0.72
+polygon     1000- 5000      429             0.0003         0.0005        0.76
+polygon     5000-  inf       33             0.0001         0.0001        0.76
+optimism      50-  200      322             0.0001         0.3794        0.80
+optimism     200- 1000      286             0.0000         0.3029        0.70
+optimism    1000- 5000      122             0.0000         0.2668        0.70
+optimism    5000-  inf       32             0.0000         0.1280        0.69
+
+== B. competition by bonus size (winner = liquidator field)
+chain      bucket         events  winners  top3   top10  repeat(>=50 wins) share
+arbitrum      50-  200     1846       74  0.69   0.91   0.93
+arbitrum     200- 1000     1727       61  0.66   0.85   0.90
+arbitrum    1000- 5000      564       29  0.71   0.91   0.89
+arbitrum    5000-  inf      190       27  0.58   0.88   0.72
+base          50-  200     1337      121  0.34   0.63   0.70
+base         200- 1000     1057      108  0.36   0.58   0.61
+base        1000- 5000      424       92  0.27   0.48   0.41
+base        5000-  inf      133       49  0.37   0.69   0.53
+avalanche     50-  200      808       26  0.46   0.90   0.91
+avalanche    200- 1000      797       29  0.44   0.88   0.92
+avalanche   1000- 5000      306       24  0.51   0.91   0.93
+avalanche   5000-  inf      107       11  0.61   1.00   0.97
+polygon       50-  200     1639       58  0.35   0.72   0.93
+polygon      200- 1000      878       54  0.49   0.78   0.89
+polygon     1000- 5000      429       31  0.59   0.87   0.90
+polygon     5000-  inf       33       12  0.61   0.96   0.91
+optimism      50-  200      322       37  0.25   0.62   0.32
+optimism     200- 1000      286       36  0.34   0.72   0.36
+optimism    1000- 5000      122       22  0.42   0.77   0.41
+optimism    5000-  inf       32       15  0.63   0.92   0.50
+
+== C. replay gap (stage 1): reachable = no price update of the collateral/debt feed within L blocks before the liquidation
+arbitrum   rows 79  median detect_ms 5244 (n=44)  L blocks: actions 26, ideal 3
+base: no replay data
+avalanche  rows 69  median detect_ms 574234 (n=104)  L blocks: actions 289, ideal 2
+polygon    rows 93  median detect_ms 11726 (n=35)  L blocks: actions 8, ideal 2
+optimism   rows 36  median detect_ms 5208 (n=33)  L blocks: actions 5, ideal 2
+
+chain      arm      resolved  R(events)  R(value)  gap==0  gap<=1  no-update-in-window  null R
+arbitrum   actions        73     0.082     0.029   0.658   0.740               0.000   0.945
+arbitrum   ideal          73     0.096     0.032   0.658   0.740               0.000   1.000
+avalanche  actions        68     0.000     0.000   0.632   0.838               0.000   0.221
+avalanche  ideal          68     0.074     0.078   0.632   0.838               0.000   0.971
+polygon    actions        90     0.056     0.052   0.711   0.789               0.000   0.500
+polygon    ideal          90     0.178     0.095   0.711   0.789               0.000   0.789
+optimism   actions        26     0.962     0.991   0.038   0.038               0.885   0.923
+optimism   ideal          26     0.962     0.991   0.038   0.038               0.885   0.962
+
+pooled actions: resolved 257  R 0.140
+
+pooled ideal: resolved 257  R 0.206
+
+verdict (ideal arm, pooled R 0.206, R_value 0.163, venues with R >= 10%: 2/5): STAGE 1: not killed, run stage 2
