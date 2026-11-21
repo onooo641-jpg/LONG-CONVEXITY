@@ -52,6 +52,37 @@ jobs:
             debt: "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
             router: "0x2626664c2603336e57b271c5c0b26f421741e481"
             rpcs: "https://base-rpc.publicnode.com https://base.api.pocket.network https://mainnet.base.org"
+          - chain: polygon_usdce
+            pool: "0x794a61358d6845594f94dc1db02a252b5b4814ad"
+            coll: "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270"
+            debt: "0x2791bca1f2de4661ed88a30c99a7a9449aa84174"
+            router: "0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45"
+            amt_usd: "20000"
+            rpcs: "https://poly.api.pocket.network https://polygon.gateway.tenderly.co"
+          - chain: avalanche_btcb
+            pool: "0x794a61358d6845594f94dc1db02a252b5b4814ad"
+            coll: "0x152b9d0fdc40c096757f570a51e494bd4b943e50"
+            debt: "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e"
+            router: "0xbb00ff08d01d300023c629e8ffffcb65a5a578ce"
+            fund: slot
+            amt_usd: "3000"
+            rpcs: "https://avalanche.gateway.tenderly.co https://avalanche-c-chain-rpc.publicnode.com"
+          - chain: avalanche_wbtce
+            pool: "0x794a61358d6845594f94dc1db02a252b5b4814ad"
+            coll: "0x50b7545627a5162f82a992c33b87adc75187b218"
+            debt: "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e"
+            router: "0xbb00ff08d01d300023c629e8ffffcb65a5a578ce"
+            fund: slot
+            amt_usd: "3000"
+            rpcs: "https://avalanche.gateway.tenderly.co https://avalanche-c-chain-rpc.publicnode.com"
+          - chain: avalanche_savax
+            pool: "0x794a61358d6845594f94dc1db02a252b5b4814ad"
+            coll: "0x2b2c81e08f1af8835a78bb2a90ae924ace0ea4be"
+            debt: "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e"
+            router: "0xbb00ff08d01d300023c629e8ffffcb65a5a578ce"
+            fund: slot
+            amt_usd: "3000"
+            rpcs: "https://avalanche.gateway.tenderly.co https://avalanche-c-chain-rpc.publicnode.com"
     steps:
       - uses: actions/checkout@v4
         with:
