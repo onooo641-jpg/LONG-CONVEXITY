@@ -129,6 +129,15 @@ def part_c(stage):
         n = sum(a for a, _, _ in v)
         if n:
             print(f"pooled (feed-ok chains) {name:12s} resolved {n}  R {sum(a * b for a, b, _ in v) / n:.3f}  R_value {sum(a * c_ for a, _, c_ in v) / n:.3f}")
+    print("\n== post-hoc, descriptive: reachable share R(events) / R(value) if our delay were L blocks (gap > L), feed-ok chains marked *")
+    Ls_ = (1, 2, 3, 5, 8, 12)
+    print("chain        " + "  ".join(f"L={x:<2d}        " for x in Ls_))
+    for c, d, Lid, bad in monthly:
+        cells = []
+        for x in Ls_:
+            reach = (d["g_ev"] == -1) | (d["g_ev"] > x)
+            cells.append(f"{reach.mean():5.3f}/{(d['gross'] * reach).sum() / d['gross'].sum():5.3f}")
+        print(f"{c:10s}{'' if bad else '*'}   " + "  ".join(cells))
     a = r[r["arm"] == "ideal"]
     if len(a):
         n = a["n"].sum()
@@ -140,7 +149,7 @@ def part_c(stage):
         else:
             verdict = ("DROP fast price-triggered bot (ideal arm R < 5% and R_value < 5%)" if (R < 0.05 and Rv < 0.05)
                        else "PLAUSIBLE (R >= 10% and R >= 10% on >= 3 venues)" if (R >= 0.10 and ven10 >= 3) else "MARGINAL")
-        print(f"\nverdict (ideal arm, pooled R {R:.3f}, R_value {Rv:.3f}, venues with R >= 10%: {ven10}/5): {verdict}")
+        print(f"\nverdict (ideal arm, pooled R {R:.3f}, R_value {Rv:.3f}, venues with R >= 10% among the {len(a)} feed-ok venues: {ven10}/{len(a)}): {verdict}")
 
 
 def main():
