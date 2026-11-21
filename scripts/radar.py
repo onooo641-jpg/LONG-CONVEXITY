@@ -429,8 +429,10 @@ def deep_check(top):
             df[c] = pd.to_numeric(df.get(c), errors="coerce")
         hist.append(df[["ts", "apy", "apyBase", "apyReward", "tvlUsd"]].assign(item_id=x.item_id, pool_id=x.pool_id, venue=x.venue))
         last = df[df["ts"] >= NOW - timedelta(days=F1_DAYS)]
+        l90 = df[df["ts"] >= NOW - timedelta(days=90)]
         rows.append({"item_id": x.item_id, "hist_days": (df["ts"].max() - df["ts"].min()).days,
-                     "reward_share_180d": float((last["apyReward"] > 0).mean()) if len(last) else 0.0})
+                     "reward_share_180d": float((last["apyReward"] > 0).mean()) if len(last) else 0.0,
+                     "yield90": float((l90["apyBase"].fillna(0) + 0.9 * l90["apyReward"]).mean()) if len(l90) else None})
         time.sleep(0.25)
     if hist:  # full daily history of every deep-checked pool, for the pre-registered tests
         save(pd.concat(hist, ignore_index=True), "charts")
@@ -512,6 +514,8 @@ def screen(cand, prot):
     if not deep.empty:
         save(deep, "deep")
         dm = deep.set_index("item_id")
+        c["yield90"] = c["item_id"].map(dm["yield90"])
+        c["hist_days"] = c["item_id"].map(dm["hist_days"])
         for i, r in s1.iterrows():
             d = dm.loc[r["item_id"]]
             share = d["reward_share_180d"]
@@ -576,6 +580,11 @@ def summary(cand, nm, pg, ch, counts):
           "| venue | chain | what pays | $/day | capital | reward APR % | F1 | F2 | stable | new | Malaysia |", "|---|---|---|---|---|---|---|---|---|---|---|"]
     for x in r.itertuples():
         L.append(f"| {x.venue} | {x.chain} | {x.what_pays[:50]} | {x.budget_usd_day:,.0f} | {x.competing_capital_usd:,.0f} | {x.reward_apr_pct:.1f} | {x.f1} | {x.f2} | {x.stablecoin} | {x.is_new} | {x.malaysia} |")
+    if "yield90" in cand:  # addendum 3: weekly test queue = top 3 venues by 90-day realised yield among fully verified rows
+        q = cand[cand["verified_all"] & (cand["hist_days"].fillna(0) >= 90)].sort_values("yield90", ascending=False)
+        q = q.drop_duplicates("venue").head(3)
+        L += ["", "## Test queue (addendum 3: top 3 venues by 90-day mean of base + 0.9 x reward APR)", ""]
+        L += [f"- {x.venue} ({x.chain}) {x.what_pays[:60]}: {x.yield90:.2f}%/yr over 90 d, TVL ${x.competing_capital_usd:,.0f}, pool {x.pool_id}" for x in q.itertuples()]
     g = cand[cand["source"] == "S4"].head(25)
     if len(g):
         L += ["", "## Governance proposals mentioning incentives (last 45d, newest 25)", ""]
