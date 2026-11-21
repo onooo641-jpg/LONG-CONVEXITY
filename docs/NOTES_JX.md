@@ -677,7 +677,7 @@ Base $4.6, Avalanche $5.8, Optimism $7.8 (the last three show bidding for priori
 against the benchmark: Topstep recycling is $4,097/yr per slot; a liquidation bot in the middle of the pack on these five venues would be roughly $13–28K/yr before costs and variance, with no capital at risk if it uses flash loans. Treat that as a hypothesis, not a forecast.
 
 **Five-part filter (HANDOFF_NONPROP).**
-1. Repeatable: PASS (measured). 6,000–25,000 events a year on each main pool; every month had liquidations in both halves.
+1. Repeatable: PASS (measured). about 6,000–29,000 events per year on each main pool; every month had liquidations in both halves.
 2. Long-lived: PASS (measured 24 months; Aave v3 has existed since 2022, third-party knowledge). Risk: the bonus is a governance parameter and could be cut.
 3. One reusable setup: PASS. The same event and functions on all measured chains: one codebase, one config entry per chain.
 4. Capped downside per attempt: PASS by design if the bot uses a flash loan and reverts unless profit exceeds a threshold: loss per failed attempt = gas (cents on Arbitrum/Polygon, a few dollars on Base/Optimism/Avalanche when bidding). Not yet tested live: contract bugs and key theft are the real risks.
