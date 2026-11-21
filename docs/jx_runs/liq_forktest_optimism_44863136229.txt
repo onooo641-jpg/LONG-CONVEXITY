@@ -1,0 +1,15 @@
+fork test optimism run 44863136229 2026-11-21T03:50:40Z
+== rpc https://mainnet.optimism.io
+Compiling 2 files with Solc 0.8.26
+Solc 0.8.26 finished in 171.01ms
+Compiler run successful!
+
+Ran 4 tests for test/LiqExecutor.t.sol:LiqExecutorForkTest
+[PASS] test_profitable_liquidation_repays_flash_loan() (gas: 1807600)
+[PASS] test_reverts_on_healthy_position() (gas: 1151542)
+[PASS] test_reverts_on_unusable_route() (gas: 534508)
+[PASS] test_reverts_when_below_min_profit() (gas: 7424276)
+Suite result: ok. 4 passed; 0 failed; 0 skipped; finished in 143.84s (147.13s CPU time)
+
+Ran 1 test suite in 143.84s (143.84s CPU time): 4 tests passed, 0 failed, 0 skipped (4 total tests)
+exit 0
