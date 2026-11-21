@@ -344,6 +344,7 @@ class Chain:
             rec["bonus_usd"] = rec["coll_amt"] / dc * px[coll] - rec["debt_amt"] / dd * px[debt]
             rec["gas_usd"] = rec["gas_wei"] / 1e18 * px[self.c["wn"]]
             rec["seen_wall"] = time.time()
+            rec["ts"] = int(self.rpc.call("eth_getBlockByNumber", [hex(rec["block"]), False])["timestamp"], 16)
         except Exception as e:  # noqa: BLE001
             rec["err"] = str(e)[:100]
         self.jappend("liquidations.jsonl", rec)
