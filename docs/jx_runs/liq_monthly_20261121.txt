@@ -1,0 +1,40 @@
+== month table, five main Aave v3 pools (gross bonus = valid events; net = bonus - gas, outside-top-3 active bots; USD)
+month     gross_bonus   active_bots  won_in_month   median(all)  p75(all)   median(won)  p75(won)   outside_top3_net_total
+2024-11       223,613         476          116            0         0            5        25             7,623
+2024-12     2,283,626         476          170            0         3           28       268           162,428
+2025-01       925,425         476          138            0         0           28       365            71,122
+2025-02    11,996,959         476          263            1     2,001        1,677     6,998         2,130,085
+2025-03     2,205,080         476          306           85       769          490     1,153           526,520
+2025-04     3,055,989         476          311          248     1,949          943     3,137         1,123,177
+2025-05       182,008         476          138            0         0           14        40            20,664
+2025-06       481,496         476          156            0         4           28       162            56,106
+2025-07        67,513         476          123            0         0            4        15             8,923
+2025-08       672,929         476          139            0         1            7        32            50,173
+2025-09       658,249         476          108            0         0           16       127           130,999
+2025-10     6,917,246         476          187            0        48          351     2,980         1,820,418
+2025-11     4,181,267         340          149            0       124          196     1,218           511,501
+2025-12       160,059         340           89            0         0            4        30            30,686
+2026-01     3,032,432         340          181            2       790          675     2,105           755,035
+2026-02     5,439,491         340          217           89     1,179          807     2,719         1,006,636
+2026-03        63,068         340          116            0         0            0         9             6,064
+2026-04        38,529         340           96            0         0            1        42            22,827
+2026-05        74,440         340           75            0         0            3       241            50,983
+2026-06     1,942,411         340          160            0       664          776     3,801         1,296,777
+2026-07        17,773         340           55            0         0            1        60            12,015
+2026-08       126,251         340           61            0         0            4       378            77,987
+2026-09        73,266         340           57            0         0           12       331            62,458
+2026-10       130,075         340           60            0         0           40       922            67,078
+
+== summary (primary median: all active non-top-3 bots, zeros included)
+months with median bot < $200: 23/24 (96%);  $200-$1,000: 1/24 (4%);  > $1,000: 0/24 (0%)
+secondary (median over bots that won at least once that month): < $200: 17/24 (71%);  $200-$1,000: 6/24 (25%);  > $1,000: 1/24 (4%)
+24-month gross bonus 44,949,194; top 3 months 54.2%; top 5 months 70.3%; top 5 months: 2025-02 12.0M, 2025-10 6.9M, 2026-02 5.4M, 2025-11 4.2M, 2025-04 3.1M
+months with gross bonus < $200K: 10/24
+24-month outside-top-3 net (pooled active bots) 10,008,284; top 3 months 52.4%; top 5 months 73.7%
+
+== comparison: Topstep payout-month share 20% (one market) / 32% (two markets), repo figure (docs/NOTES_JX.md, source docs/PREREG_20261109.md, not re-derived)
+liquidation months in which a median active bot (zeros included) made > $1,000: 0%; >= $200: 4%
+liquidation months in which the median bot that won at least once made > $1,000: 4%; >= $200: 29%
+
+== quoted-figure check: Jx quoted Feb 2025 11.2M, Oct 2025 6.6M, Feb 2026 5.1M, Nov 2025 4.0M, 5 biggest ~71%, 11 of 24 under $200K
+measured here: {'2025-02': np.float64(12.0), '2025-10': np.float64(6.92), '2026-02': np.float64(5.44), '2025-11': np.float64(4.18), '2025-04': np.float64(3.06)} top5 70.3% under200K 10
