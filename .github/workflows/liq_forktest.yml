@@ -1,0 +1,83 @@
+# Fork tests for contracts/src/LiqExecutor.sol (PREREG_LIQ_SHADOW_20261121, stage 1 gate).
+# Runs on a local fork of each chain in CI only. No keys, no deployment, nothing sent on-chain.
+name: liquidation fork tests
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [claude/ict-trading-resources-ugh07b]
+    paths: [.github/liq_forktest_request.txt]
+
+permissions:
+  contents: write
+
+jobs:
+  fork:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - chain: arbitrum
+            pool: "0x794a61358d6845594f94dc1db02a252b5b4814ad"
+            coll: "0x82af49447d8a07e3bd95bd0d56f35241523fbab1"
+            debt: "0xaf88d065e77c8cc2239327c5edb3a432268e5831"
+            router: "0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45"
+            rpcs: "https://arb1.arbitrum.io/rpc https://arbitrum-one-rpc.publicnode.com"
+          - chain: optimism
+            pool: "0x794a61358d6845594f94dc1db02a252b5b4814ad"
+            coll: "0x4200000000000000000000000000000000000006"
+            debt: "0x0b2c639c533813f4aa9d7837caf62653d097ff85"
+            router: "0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45"
+            rpcs: "https://mainnet.optimism.io https://optimism-rpc.publicnode.com"
+          - chain: polygon
+            pool: "0x794a61358d6845594f94dc1db02a252b5b4814ad"
+            coll: "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619"
+            debt: "0x3c499c542cef5e3811e1192ce70d8cc03d5c3359"
+            router: "0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45"
+            rpcs: "https://poly.api.pocket.network https://polygon.gateway.tenderly.co https://polygon-bor-rpc.publicnode.com"
+          - chain: avalanche
+            pool: "0x794a61358d6845594f94dc1db02a252b5b4814ad"
+            coll: "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7"
+            debt: "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e"
+            router: "0xbb00ff08d01d300023c629e8ffffcb65a5a578ce"
+            rpcs: "https://avalanche.gateway.tenderly.co https://avalanche-c-chain-rpc.publicnode.com https://api.avax.network/ext/bc/C/rpc"
+          - chain: base
+            pool: "0xa238dd80c259a72e81d7e4664a9801593f98d1c5"
+            coll: "0x4200000000000000000000000000000000000006"
+            debt: "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+            router: "0x2626664c2603336e57b271c5c0b26f421741e481"
+            rpcs: "https://base-rpc.publicnode.com https://base.api.pocket.network https://mainnet.base.org"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - uses: foundry-rs/foundry-toolchain@v1
+      - name: Fork test
+        env:
+          POOL: ${{ matrix.pool }}
+          COLL: ${{ matrix.coll }}
+          DEBT: ${{ matrix.debt }}
+          ROUTER: ${{ matrix.router }}
+          FEES: "500,3000,100,10000"
+        run: |
+          mkdir -p docs/jx_runs
+          log="docs/jx_runs/liq_forktest_${{ matrix.chain }}_${{ github.run_id }}.txt"
+          echo "fork test ${{ matrix.chain }} run ${{ github.run_id }} $(date -u +%FT%TZ)" > "$log"
+          rc=1
+          for u in ${{ matrix.rpcs }}; do
+            if cast block-number --rpc-url "$u" >/dev/null 2>&1; then
+              echo "== rpc $u" | tee -a "$log"
+              export RPC_URL="$u"
+              if forge test --root contracts -vv --fork-retries 8 --fork-retry-backoff 3000 2>&1 | tee -a "$log"; then rc=0; break; fi
+            else
+              echo "== rpc $u unreachable" | tee -a "$log"
+            fi
+          done
+          echo "exit $rc" | tee -a "$log"
+          exit $rc
+      - name: Commit log
+        if: always()
+        run: .github/scripts/commit_push.sh "forktest-${{ matrix.chain }}"
