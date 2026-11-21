@@ -1,0 +1,12 @@
+base: v2 start, head 60242269
+base: bootstrap DONE, users 38494
+base: positions 600/38494 (0.4 min)
+base: positions 3600/38494 (2.2 min)
+base: positions 6600/38494 (4.2 min)
+base: positions 9600/38494 (6.0 min)
+base: positions 12600/38494 (7.9 min)
+base: positions 15600/38494 (9.7 min)
+base: positions 18600/38494 (11.6 min)
+base: positions 21600/38494 (13.6 min)
+base: positions 24600/38494 (15.5 min)
+base: positions 27600/38494 (17.4 min)
