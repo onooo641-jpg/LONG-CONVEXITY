@@ -14,3 +14,4 @@ base: positions 33600/38494 (16.9 min)
 base: positions 36600/38494 (18.3 min)
 base: positions ready: 38494 users, 11423 with debt
 base: reopened 0 recorded unhealthy episodes
+base: head 60255154 cycles 1 debtors 11451 cand 567 last_cycle 620547 ms rpc ok/err 2189/263
