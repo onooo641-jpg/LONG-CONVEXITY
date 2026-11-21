@@ -1,2 +1,2 @@
-# shadow start request
-run 4 (reopen recorded episodes)
+# shadow restart request
+run 5 (addendum 4: near-line log, stress flag; same measurement)
