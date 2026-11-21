@@ -1,0 +1,16 @@
+=== liq_replay_avalanche
+  rpc exception eth_getLogs @ https://avalanche.gateway.tenderly.co: HTTP 429
+avalanche: oracle 0xebd36016b3ed09d4693ed4251c67bd858c3c7c9c, source updates in window for 2 assets
+  rpc error eth_call @ https://avalanche.gateway.tenderly.co: {'code': 3, 'message': 'execution reverted'}
+  avalanche: 25/274 (9.8 min)
+  avalanche: 50/274 (10.6 min)
+  avalanche: 75/274 (11.2 min)
+  avalanche: 100/274 (11.9 min)
+  avalanche: 125/274 (12.7 min)
+  avalanche: 150/274 (13.3 min)
+  avalanche: 175/274 (14.0 min)
+  avalanche: 200/274 (14.6 min)
+  avalanche: 225/274 (15.2 min)
+  avalanche: 250/274 (15.7 min)
+avalanche: replay stage 2 wrote 274 rows
+=== liq_replay_avalanche done in 978s  ok 2533 fail 6
