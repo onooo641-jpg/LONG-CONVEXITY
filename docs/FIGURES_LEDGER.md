@@ -336,3 +336,16 @@ Raw output for every command above is in `docs/jx_runs/`.
 | LQ6 | Same, 75th percentile H2 | $839 / $473 / $1,892 / $56 / $516 | same | H2 | 2026-11-21 | measured, same caveats |
 | LQ7 | Debt repaid in passing Aave v3 pools, H1 → H2 | roughly halved ($70M → $41M Arbitrum; $42M → $32M Base) | same | halves | 2026-11-21 | measured; income depends on volatility |
 | LQ8 | Chains complete / unmeasured | 8 complete; BNB unmeasured | `data/public/liq_*_state.json`; `docs/jx_runs/fetch_liq_*` | | 2026-11-21 | measured |
+
+## Liquidation monthly lumpiness (docs/PREREG_LIQ_MONTHLY_20261121.md)
+
+| # | figure | value | command | window | computed | status |
+|---|---|---|---|---|---|---|
+| M1 | 24-month gross bonus, five main pools; share from top 3 / top 5 months | $44.95M; 54.2% / 70.3% | `uv run python -I scripts/liq_monthly_20261121.py` (output `docs/jx_runs/liq_monthly_20261121.txt`, re-run identical) | 2024-11..2026-10 | 2026-11-21 | measured |
+| M2 | Months with gross bonus under $200K | 10 of 24 | same | same | 2026-11-21 | measured (Jx quoted 11) |
+| M3 | Biggest months, gross bonus | 2025-02 $12.0M, 2025-10 $6.9M, 2026-02 $5.4M, 2025-11 $4.2M, 2025-04 $3.1M | same | same | 2026-11-21 | measured (Jx quoted $11.2M / $6.6M / $5.1M / $4.0M) |
+| M4 | Months above $3M / above $1M gross | 6 of 24 / 9 of 24 (counted from the month table) | same | same | 2026-11-21 | measured |
+| M5 | Median active non-top-3 bot (zeros included): months under $200 / $200–1,000 / over $1,000 | 23 / 1 / 0 of 24 | same | same | 2026-11-21 | measured, gas only |
+| M6 | Median bot that won at least once: months under $200 / $200–1,000 / over $1,000 | 17 / 6 / 1 of 24 | same | same | 2026-11-21 | measured, gas only |
+| M7 | Outside-top-3 net, 24 months pooled; share from top 3 / top 5 months | $10.0M; 52.4% / 73.7% | same | same | 2026-11-21 | measured, gas only |
+| M8 | Months since the March 2026 SVR switch with gross bonus above $1M | 1 of 8 (June 2026, $1.94M); the other 7 were $18K–$130K | same | 2026-03..2026-10 | 2026-11-21 | measured |
