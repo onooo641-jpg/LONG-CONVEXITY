@@ -99,3 +99,12 @@ its tokens were stablecoins. Borrow/collateral positions carry liquidation risk,
 no "collateral/looping/leverage" in the name** (this applies the existing F4 "no price exposure" rule; it does not loosen anything).
 (c) Firm help centres hide the bot policy in articles, so page following is now two levels deep (≤30 + ≤15 links per firm),
 and directory sitemaps are fetched to enumerate firms.
+
+## Addendum 2 (2026-11-21, before pricing the newly classified firms)
+From the crawled pages (own help centres): Blue Guardian and Phidias allow semi-automated trading with active human management;
+Alpha Futures and Top One Futures ban automation but not manual entry → classified `alert_assisted` (priced with the 3-minute delay).
+New models in `scripts/radar_models.py`: **Alpha Futures Standard 50K** (all rules readable) and **Blue Guardian Elite 50K** (all rules
+readable except the purchase price, which the static pages do not contain). Blue Guardian is therefore run at two bracket prices ($141 = its
+fixed reset fee, $350) as **sensitivity only, not ranked or flagged**, consistent with "if a rule is unreadable the product is not priced".
+Phidias and Top One: plan target/price not in crawled pages → not priced. FundedNext's crawled terms now prohibit bots "not expressly
+authorised" → `unclear`, no longer priced as full_bots (reported for the prop-firm workstream).
