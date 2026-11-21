@@ -1,0 +1,22 @@
+firm,product,automation,evidence,source,malaysia,model_key
+Topstep,50K,full_bots,verified-in-repo,README.md / bridge docs (TopstepX API in live use),ok-in-use,topstep50
+Lucid Trading,LucidFlex 50K,full_bots,verified-in-repo,PREREG_LUCID_20261120 ("automated trading systems and trade copiers are permitted"),not-on-third-party-list,lucidflex50
+MyFundedFutures,Rapid EOD 50K,full_bots,verified-in-repo,PREREG_ROUND3_20261120 (Fair Play page),unverified,mffu_rapid50
+Tradeify,Select Flex 50K,full_bots_conditional,third-party,PREREG_FUNDEDNEXT_20261120 (bots only if strategy not used at other firms),unverified,tradeify_flex50
+TradeDay,Fast Pass $85,full_bots_no_api,verified-in-repo,PREREG_FIRMS2_20261120 (bots inside NinjaTrader/Tradovate/TradingView),not-on-third-party-list,tradeday
+Bulenox,Momentum,full_bots,verified-in-repo,PREREG_FIRMS2_20261120,not-on-third-party-list,bulenox
+FundedNext Futures,Rapid Pro 50K,full_bots,verified-in-repo,PREREG_FUNDEDNEXT_20261120,unverified,fundednext_rapid
+FTMO Futures,Growth/Pro,full_bots,third-party,PREREG_FTMO_FUTURES_20261120 (CrossTrade citing FTMO forbidden practices),not-on-ftmo-list,ftmo_growth
+The Futures Desk,Static Core/Pro,full_bots,verified-in-repo,PREREG_ROUND3_20261120,unverified,tfd_core
+Breakout,Classic 1-Step,unclear,assumed,PREREG_GLOBAL_20261120 (bot policy unpublished),not-on-ineligible-list,breakout
+Apex Trader Funding,,unclear,third-party,PREREG_ROUND3_20261120 (conflicting reports),unverified,
+Phidias,,banned_full_bots,third-party,PREREG_ROUND3_20261120,unverified,
+Take Profit Trader,,banned_full_bots,third-party,PREREG_LUCID_20261120,unverified,
+Alpha Futures,,banned_full_bots,third-party,PREREG_LUCID_20261120,unverified,
+Blue Guardian,,banned_full_bots,third-party,PREREG_ROUND3_20261120,unverified,
+Earn2Trade,,banned_full_bots,third-party,PREREG_ROUND3_20261120,unverified,
+Top One Futures,,banned_full_bots,verified-in-repo,PREREG_ROUND3_20261120 (own help centre),unverified,
+Funded Futures Family,,banned_full_bots,third-party,PREREG_ROUND3_20261120,unverified,
+Elite Trader Funding,,banned_full_bots,verified-in-repo,PREREG_FIRMS2_20261120 (terms: automated systems unless authorised in writing),unverified,
+FXIFY Futures,,banned_full_bots,verified-in-repo,PREREG_FIRMS2_20261120,unverified,
+HyroTrader,crypto only,full_bots,verified-in-repo,PREREG_ROUND3_20261120 (crypto only: strategy is NQ),unverified,

@@ -1,0 +1,49 @@
+# Radar (workstream C): daily collection from public primary sources, screening, near-miss log.
+# Design and thresholds: docs/PREREG_RADAR_20261121.md. Code: scripts/radar.py. Output: data/radar/.
+# Runs daily (this branch is the default branch, so schedule works), on manual dispatch, and when the
+# watch lists / script change. No secrets, no paid data.
+
+name: radar
+
+on:
+  schedule:
+    - cron: "41 2 * * *"
+  workflow_dispatch: {}
+  push:
+    branches: [claude/ict-trading-resources-ugh07b]
+    paths: [.github/radar_request.txt, docs/radar/**, scripts/radar.py]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: radar
+  cancel-in-progress: false
+
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: astral-sh/setup-uv@v5
+      - run: uv sync
+      - name: Radar
+        run: |
+          mkdir -p docs/jx_runs
+          uv run python scripts/radar.py 2>&1 | tee "docs/jx_runs/radar_${{ github.run_id }}.txt"
+      - name: Commit
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/radar docs/jx_runs
+          git diff --cached --quiet && exit 0
+          git commit -m "radar: run ${{ github.run_id }}"
+          for i in 1 2 3 4 5; do
+            git pull --rebase --no-edit origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            sleep $((i * 10))
+          done
+          exit 1

@@ -1,0 +1,4 @@
+match,status,note
+polymarket,grey-area,Not on Polymarket block list but betting-law grey area (HANDOFF_NONPROP 2026-11-20); treated as not testable
+kalshi,blocked,US-regulated venue; non-US access not available (assumed; verify at desk check)
+default_onchain,unverified-onchain,Permissionless contract; front-end geoblock and local law not checked

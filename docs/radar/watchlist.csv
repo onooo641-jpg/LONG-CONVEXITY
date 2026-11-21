@@ -1,0 +1,78 @@
+slug,name,kind,url
+topstep,Topstep,firm,https://www.topstep.com/
+topstep_help,Topstep,firm,https://help.topstep.com/en/
+lucid,Lucid Trading,firm,https://lucidtrading.com/
+lucid_help,Lucid Trading,firm,https://support.lucidtrading.com/
+mffu,MyFundedFutures,firm,https://myfundedfutures.com/
+mffu_help,MyFundedFutures,firm,https://help.myfundedfutures.com/
+tradeify,Tradeify,firm,https://tradeify.co/
+tradeify_help,Tradeify,firm,https://help.tradeify.co/
+tradeday,TradeDay,firm,https://www.tradeday.com/
+tradeday_help,TradeDay,firm,https://help.tradeday.com/
+bulenox,Bulenox,firm,https://bulenox.com/
+apex,Apex Trader Funding,firm,https://apextraderfunding.com/
+apex_help,Apex Trader Funding,firm,https://support.apextraderfunding.com/
+tpt,Take Profit Trader,firm,https://www.takeprofittrader.com/
+tpt_help,Take Profit Trader,firm,https://helpcenter.takeprofittrader.com/
+alpha,Alpha Futures,firm,https://alpha-futures.com/
+alpha_help,Alpha Futures,firm,https://help.alpha-futures.com/
+blueguardian,Blue Guardian,firm,https://www.blueguardian.com/
+phidias,Phidias,firm,https://phidiaspropfirm.com/
+earn2trade,Earn2Trade,firm,https://www.earn2trade.com/
+toponefutures,Top One Futures,firm,https://www.toponefutures.com/
+fff,Funded Futures Family,firm,https://www.fundedfuturesfamily.com/
+tfd,The Futures Desk,firm,https://thefuturesdesk.com/
+fundednext_fut,FundedNext Futures,firm,https://fundednext.com/futures
+fundednext,FundedNext,firm,https://fundednext.com/
+ftmo,FTMO,firm,https://ftmo.com/en/
+ftmo_faq,FTMO,firm,https://ftmo.com/en/faq/
+breakout,Breakout,firm,https://breakoutprop.com/
+fxify,FXIFY,firm,https://fxify.com/
+elitetraderfunding,Elite Trader Funding,firm,https://elitetraderfunding.com/
+legends,Legends Trading,firm,https://legendstrading.com/
+aquafutures,Aqua Futures,firm,https://aquafutures.com/
+fundingticks,Funding Ticks,firm,https://fundingticks.com/
+goatfunded,Goat Funded Trader,firm,https://goatfundedtrader.com/
+the5ers,The5ers,firm,https://the5ers.com/
+fundingpips,Funding Pips,firm,https://fundingpips.com/
+e8,E8 Markets,firm,https://e8markets.com/
+maven,Maven Trading,firm,https://maventrading.com/
+alphacapital,Alpha Capital Group,firm,https://alphacapitalgroup.uk/
+fintokei,Fintokei,firm,https://fintokei.com/
+brightfunded,BrightFunded,firm,https://brightfunded.com/
+audacity,Audacity Capital,firm,https://audacitycapital.co.uk/
+hyrotrader,HyroTrader,firm,https://hyrotrader.com/
+cryptofundtrader,Crypto Fund Trader,firm,https://cryptofundtrader.com/
+tradingpit,The Trading Pit,firm,https://thetradingpit.com/
+cti,City Traders Imperium,firm,https://citytradersimperium.com/
+seacrest,Seacrest Funded,firm,https://seacrestfunded.com/
+lux,Lux Trading Firm,firm,https://luxtradingfirm.com/
+fundedtradingplus,Funded Trading Plus,firm,https://fundedtradingplus.com/
+qtfunded,QT Funded,firm,https://qtfunded.com/
+propfirmmatch,propfirmmatch,directory,https://propfirmmatch.com/
+propfirmmatch_fut,propfirmmatch,directory,https://propfirmmatch.com/futures-prop-firms
+propvator,propvator,directory,https://propvator.co/
+saveonpropfirms,saveonpropfirms,directory,https://saveonpropfirms.com/
+polymarket_docs,Polymarket,docs,https://docs.polymarket.com/changelog
+kalshi_docs,Kalshi,docs,https://docs.kalshi.com/changelog
+hyperliquid_docs,Hyperliquid,docs,https://hyperliquid.gitbook.io/hyperliquid-docs
+hyperliquid_changelog,Hyperliquid,docs,https://hyperliquid.gitbook.io/hyperliquid-docs/change-log
+aave_docs,Aave,docs,https://aave.com/docs
+merkl_docs,Merkl,docs,https://docs.merkl.xyz/
+drift_docs,Drift,docs,https://docs.drift.trade/
+lighter_docs,Lighter,docs,https://docs.lighter.xyz/
+dydx_docs,dYdX,docs,https://docs.dydx.xyz/
+gmx_docs,GMX,docs,https://docs.gmx.io/
+morpho_docs,Morpho,docs,https://docs.morpho.org/
+pendle_docs,Pendle,docs,https://docs.pendle.finance/
+ethena_docs,Ethena,docs,https://docs.ethena.fi/
+kamino_docs,Kamino,docs,https://docs.kamino.finance/
+jupiter_docs,Jupiter,docs,https://station.jup.ag/docs
+rel_hl_sdk,Hyperliquid python SDK,release,https://github.com/hyperliquid-dex/hyperliquid-python-sdk/releases.atom
+rel_poly_clob,Polymarket py-clob-client,release,https://github.com/Polymarket/py-clob-client/releases.atom
+rel_poly_agents,Polymarket agents,release,https://github.com/Polymarket/agents/releases.atom
+rel_aave_origin,Aave v3 origin,release,https://github.com/aave-dao/aave-v3-origin/releases.atom
+rel_morpho_blue,Morpho blue,release,https://github.com/morpho-org/morpho-blue/releases.atom
+rel_drift_sdk,Drift protocol-v2,release,https://github.com/drift-labs/protocol-v2/releases.atom
+rel_dydx_v4,dYdX v4,release,https://github.com/dydxprotocol/v4-chain/releases.atom
+rel_merkl,Merkl contracts,release,https://github.com/AngleProtocol/merkl-contracts/releases.atom
