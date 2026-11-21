@@ -30,7 +30,7 @@ def get(url, body=None, tries=4):
     return None
 
 
-def main():
+def job_stable_hlp():
     OUT.mkdir(parents=True, exist_ok=True)
     d = get("https://yields.llama.fi/pools")
     pools = pd.DataFrame(d["data"])
@@ -67,5 +67,43 @@ def main():
     print(f"HLP: {len(h)} points {h['ts'].min()} .. {h['ts'].max()}", flush=True)
 
 
+PROBES = {
+    "kraken_futures": "https://futures.kraken.com/derivatives/api/v4/historicalfundingrates?symbol=PF_XBTUSD",
+    "deribit": "https://www.deribit.com/api/v2/public/get_funding_rate_history?instrument_name=BTC-PERPETUAL&start_timestamp=1730419200000&end_timestamp=1730505600000",
+    "dydx_v4": "https://indexer.dydx.trade/v4/historicalFunding/BTC-USD?limit=5",
+    "paradex": "https://api.prod.paradex.trade/v1/funding/data?market=BTC-USD-PERP&page_size=5",
+    "lighter": "https://mainnet.zklighter.elliot.ai/api/v1/fundings?market_id=1&resolution=1h&start_timestamp=1730419200&end_timestamp=1730505600&count_back=5",
+    "drift": "https://data.api.drift.trade/fundingRates?marketName=BTC-PERP",
+    "binance": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&limit=5",
+    "bybit": "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=BTCUSDT&limit=5",
+    "okx": "https://www.okx.com/api/v5/public/funding-rate-history?instId=BTC-USDT-SWAP&limit=5",
+    "bitget": "https://api.bitget.com/api/v2/mix/market/history-fund-rate?symbol=BTCUSDT&productType=usdt-futures&pageSize=5",
+    "gate": "https://api.gateio.ws/api/v4/futures/usdt/funding_rate?contract=BTC_USDT&limit=5",
+    "kucoin": "https://api-futures.kucoin.com/api/v1/contract/funding-rates?symbol=XBTUSDTM&from=1730419200000&to=1730505600000",
+    "mexc": "https://contract.mexc.com/api/v1/contract/funding_rate/history?symbol=BTC_USDT&page_num=1&page_size=5",
+    "coinbase_intl": "https://api.international.coinbase.com/api/v1/instruments/BTC-PERP/funding?result_limit=5",
+    "bitmex": "https://www.bitmex.com/api/v1/funding?symbol=XBTUSD&count=5&reverse=true",
+    "aevo": "https://api.aevo.xyz/funding-history?instrument_name=BTC-PERP&limit=5",
+    "gmx_arb": "https://arbitrum-api.gmxinfra.io/markets/info",
+}
+
+
+def job_probe():
+    """Which perp venues answer from GitHub's US runners (reachability only, first 160 chars of body)."""
+    for k, u in PROBES.items():
+        try:
+            req = urllib.request.Request(u, headers=UA)
+            with urllib.request.urlopen(req, timeout=30) as r:
+                b = r.read(400).decode("utf-8", "replace").replace("\n", " ")
+                print(f"PROBE {k}: HTTP {r.status} {b[:160]}", flush=True)
+        except Exception as e:  # noqa: BLE001
+            print(f"PROBE {k}: FAIL {str(e)[:120]}", flush=True)
+
+
+JOBS = {"stable_hlp": job_stable_hlp, "probe": job_probe}
+
 if __name__ == "__main__":
-    main()
+    import sys
+    for j in (sys.argv[1:] or ["stable_hlp"]):
+        print(f"=== {j}", flush=True)
+        JOBS[j]()

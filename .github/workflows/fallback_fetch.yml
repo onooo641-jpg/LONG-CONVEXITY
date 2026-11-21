@@ -23,7 +23,8 @@ jobs:
       - run: uv sync
       - run: |
           mkdir -p docs/jx_runs
-          uv run python scripts/fetch_fallback.py 2>&1 | tee docs/jx_runs/fetch_fallback_${{ github.run_id }}.txt
+          jobs=$(grep -v '^\s*#' .github/fallback_request.txt | grep -v '^\s*$' | tr '\n' ' ')
+          uv run python scripts/fetch_fallback.py $jobs 2>&1 | tee docs/jx_runs/fetch_fallback_${{ github.run_id }}.txt
       - name: Commit
         if: always()
         run: |
