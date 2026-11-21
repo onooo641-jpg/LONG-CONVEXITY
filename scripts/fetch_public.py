@@ -722,7 +722,7 @@ def _first_block_at(urls, ts, lo, hi):
     return lo
 
 
-def _liq_prices(name, toks):
+def _liq_prices(name, toks, out_name=None):
     """DefiLlama daily prices for tokens + native gas coin. span must be <= ~100 days (span=300/365 gives HTTP 400)."""
     lkey, native, _ = LIQ_CHAINS[name]
     keys = [f"{lkey}:{t}" for t in toks] + ([native] if native else [])
@@ -738,7 +738,7 @@ def _liq_prices(name, toks):
                 for p in v.get("prices", []):
                     prows.append({"coin": kk, "ts": int(p["timestamp"]), "price": float(p["price"])})
     pdf = pd.DataFrame(prows, columns=["coin", "ts", "price"]).drop_duplicates()
-    pdf.to_parquet(OUT / f"liq_{name}_prices.parquet")
+    pdf.to_parquet(OUT / f"liq_{out_name or name}_prices.parquet")
     print(f"{name}: prices {len(pdf)} points, {pdf['coin'].nunique()}/{len(keys)} coins priced", flush=True)
 
 
@@ -930,6 +930,172 @@ SEL_PROVIDER = "0x0542975c"
 SEL_ORACLE = "0xfca513a8"
 for _c in ("arbitrum", "base", "avalanche", "polygon", "optimism"):
     globals()[f"job_liq_replay_{_c}"] = (lambda c: (lambda: job_liq_replay_chain(c)))(_c)
+
+MORPHO = "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb"
+T_MORPHO_LIQ = "0xa4946ede45d0c6f06a0f5ce92c9ad3b4751452d2fe0e25010783bcab57a67e41"
+
+
+def job_liq_morpho(name):
+    """PREREG_LIQ_MORPHO_20261121: Morpho Blue `Liquidate` events on Base. name = morphobase (24 months) or morphobase_pilot (last 3 months).
+    Same resumable layout as liq_<chain>; final liq_<name>.parquet uses the Aave schema so liquidations_20261120.load() can read it."""
+    import os
+    import numpy as np
+    t0 = time.time()
+    budget = float(os.environ.get("LIQ_BUDGET_MIN", "150")) * 60
+    urls_all = ["https://base.api.pocket.network", "https://base.gateway.tenderly.co"]
+    lkey, native, urls_aave = LIQ_CHAINS["base"]
+    pilot = name.endswith("_pilot")
+    sp = _liq_state_path(name)
+    st = json.loads(sp.read_text()) if sp.exists() else {}
+    if st.get("complete"):
+        print(f"{name}: already complete", flush=True)
+        return
+    base_state = json.loads((OUT / "liq_base_state.json").read_text())
+    anchors = base_state["anchors"]
+    first = 21 if pilot else 0
+    if "next_block" not in st:
+        st.update(anchors=anchors, next_block=anchors[first], logs_done=False, receipts_done=False, complete=False)
+    rawp = OUT / f"liq_{name}_raw.parquet"
+    rows = pd.read_parquet(rawp).to_dict("records") if rawp.exists() else []
+
+    def glogs(b, e):
+        errs = 0
+        for u in urls_all:
+            try:
+                return rpc([u], "eth_getLogs", [{"fromBlock": hex(b), "toBlock": hex(e), "address": MORPHO, "topics": [T_MORPHO_LIQ]}], tries=2)
+            except (ValueError, RuntimeError):
+                errs += 1
+        raise ValueError("no endpoint accepted this window")
+
+    def flush(b):
+        pd.DataFrame(rows).to_parquet(rawp)
+        st["next_block"] = b
+        _liq_save_state(name, st)
+
+    a1 = anchors[-1] - 1
+    if not st["logs_done"]:
+        b, step, cap, last = st["next_block"], 10000, 2_000_000, time.time()
+        month_edge = next((x for x in anchors if x > b), a1 + 1)
+        while b <= a1:
+            if time.time() - t0 > budget:
+                flush(b)
+                print(f"{name}: BUDGET STOP in log scan at block {b}/{a1}; {len(rows)} events saved", flush=True)
+                return
+            e = min(b + step - 1, a1)
+            try:
+                logs = glogs(b, e)
+            except ValueError:
+                if step <= 500:
+                    print(f"  {name}: window {b}-{e} refused even at {step}; skipping", flush=True)
+                    b = e + 1
+                    continue
+                step = max(500, step // 2)
+                cap = step
+                continue
+            for lg in logs:
+                d = [int(lg["data"][2:][i:i + 64], 16) for i in range(0, len(lg["data"]) - 2, 64)]
+                if len(lg["topics"]) != 4 or len(d) < 5:
+                    continue
+                rows.append({"venue": lg["address"].lower(), "block": int(lg["blockNumber"], 16), "tx": lg["transactionHash"], "mid": lg["topics"][1],
+                             "liquidator": "0x" + lg["topics"][2][-40:], "user": "0x" + lg["topics"][3][-40:], "debt_amt": float(d[0]), "coll_amt": float(d[2])})
+            if len(logs) < 100:
+                step = min(step * 2, cap)
+            b = e + 1
+            if b >= month_edge or time.time() - last > 600:
+                flush(b)
+                last = time.time()
+                month_edge = next((x for x in anchors if x > b), a1 + 1)
+                print(f"  {name}: scanned to block {b}/{a1} ({len(rows)} events, {(time.time()-t0)/60:.0f} min)", flush=True)
+        st["logs_done"] = True
+        flush(a1 + 1)
+        print(f"{name}: log scan complete, {len(rows)} events", flush=True)
+    if not rows:
+        st["complete"] = True
+        _liq_save_state(name, st)
+        return
+    df = pd.DataFrame(rows).drop_duplicates(["tx", "mid", "user", "block", "coll_amt", "debt_amt"]).reset_index(drop=True)
+    mi = np.searchsorted(np.array(anchors), df["block"].values, side="right") - 1
+    df["month"] = mi
+    ts_edges = np.array(LIQ_MONTHS, dtype=float)
+    a = np.array(anchors, dtype=float)
+    frac = (df["block"].values - a[mi]) / np.maximum(a[mi + 1] - a[mi], 1)
+    df["ts"] = (ts_edges[mi] + frac * (ts_edges[mi + 1] - ts_edges[mi])).astype(int)
+    # market tokens
+    mk = {}
+    for mid in sorted(df["mid"].unique()):
+        for k in range(3):
+            try:
+                w_ = [int(x, 16) for x in [rpc(urls_all, "eth_call", [{"to": MORPHO, "data": "0x2c3c9157" + mid[2:]}, "latest"])[2:][i:i + 64] for i in range(0, 320, 64)]]
+                mk[mid] = ("0x" + format(w_[1], "x").rjust(40, "0"), "0x" + format(w_[0], "x").rjust(40, "0"))   # (collateral, loan)
+                break
+            except Exception:  # noqa: BLE001
+                time.sleep(2)
+    df["collateral"] = df["mid"].map(lambda m: mk.get(m, (None, None))[0])
+    df["debt"] = df["mid"].map(lambda m: mk.get(m, (None, None))[1])
+    df = df[df["collateral"].notna()].reset_index(drop=True)
+    print(f"{name}: {len(mk)} markets resolved, {len(df)} events with tokens", flush=True)
+    # receipts (incremental)
+    txs = sorted(df["tx"].unique())
+    sampled = len(txs) > LIQ_RECEIPT_CAP
+    sample = txs[:: -(-len(txs) // LIQ_RECEIPT_CAP)] if sampled else txs
+    rcp = OUT / f"liq_{name}_receipts.parquet"
+    have = pd.read_parquet(rcp) if rcp.exists() else pd.DataFrame(columns=["tx", "from", "gas_used", "gas_price", "l1_fee", "status"])
+    done = set(have["tx"])
+    from concurrent.futures import ThreadPoolExecutor
+
+    def rec(t):
+        try:
+            r = rpc(urls_all, "eth_getTransactionReceipt", [t])
+            return {"tx": t, "from": r["from"].lower(), "gas_used": int(r["gasUsed"], 16), "gas_price": int(r.get("effectiveGasPrice", "0x0"), 16),
+                    "l1_fee": int(r.get("l1Fee", "0x0") or "0x0", 16), "status": int(r.get("status", "0x1"), 16)}
+        except Exception:  # noqa: BLE001
+            return None
+    for attempt in range(4):
+        todo = [t for t in sample if t not in done]
+        if not todo:
+            break
+        for i in range(0, len(todo), 1500):
+            if time.time() - t0 > budget:
+                have.to_parquet(rcp)
+                print(f"{name}: BUDGET STOP in receipts {len(have)}/{len(sample)}", flush=True)
+                return
+            with ThreadPoolExecutor(10) as ex:
+                got = [x for x in ex.map(rec, todo[i:i + 1500]) if x]
+            have = pd.concat([have, pd.DataFrame(got)], ignore_index=True)
+            have.to_parquet(rcp)
+            done = set(have["tx"])
+            print(f"  {name}: receipts {len(have)}/{len(sample)} ({(time.time()-t0)/60:.0f} min)", flush=True)
+    missing = len([t for t in sample if t not in done])
+    st["receipts_missing"] = missing
+    if missing > 0.01 * len(sample):
+        _liq_save_state(name, st)
+        print(f"{name}: INCOMPLETE receipts {missing}/{len(sample)} missing; re-run", flush=True)
+        return
+    df = df.merge(have.drop_duplicates("tx"), on="tx", how="left")
+    df["receipt_sampled"] = sampled
+    toks = sorted(set(df["collateral"]) | set(df["debt"]))
+    dec = {}
+    for t in toks:
+        for k in range(3):
+            try:
+                dec[t] = int(rpc(urls_all, "eth_call", [{"to": t, "data": "0x313ce567"}, "latest"]), 16)
+                break
+            except Exception:  # noqa: BLE001
+                time.sleep(1.5)
+    missing_dec = [t for t in toks if t not in dec]
+    for i in range(0, len(missing_dec), 10):
+        j = http("https://coins.llama.fi/prices/current/" + urllib.parse.quote(",".join(f"base:{t}" for t in missing_dec[i:i + 10]), safe=",:"))
+        for kk, v in ((j or {}).get("coins") or {}).items():
+            if "decimals" in v:
+                dec[kk.split(":", 1)[1]] = int(v["decimals"])
+    df["coll_dec"] = df["collateral"].map(dec)
+    df["debt_dec"] = df["debt"].map(dec)
+    _liq_prices("base", toks, out_name=name)
+    df.drop(columns=["mid"]).to_parquet(OUT / f"liq_{name}.parquet")
+    st["complete"] = True
+    _liq_save_state(name, st)
+    print(f"{name}: COMPLETE {len(df)} events, {len(toks)} tokens, {(time.time()-t0)/60:.0f} min", flush=True)
+
 
 def _liq_state_path(name):
     return OUT / f"liq_{name}_state.json"
@@ -1241,7 +1407,7 @@ for _c in LIQ_CHAINS:
 
 JOBS = {"ipo2": job_ipo2, "iponews": job_iponews, "ipo": job_ipo, "myxsnap": job_myxsnap, "batch2": job_batch2, "hl2023d": job_hl2023d, "hl2023": job_hl2023, "hl": job_hl, "llama_lend": job_llama_lend, "llama_pools": job_llama_pools,
         "llama_prices": job_llama_prices, "poly": job_poly,
-        "liq_probe": job_liq_probe, "liq_diag": job_liq_diag, "liq_diag2": job_liq_diag2, "liq_diag3": job_liq_diag2, "liq_secretcheck": job_liq_secretcheck, "liq_pxdiag": job_liq_pxdiag, **{f"liq_replay_{c}": globals()[f"job_liq_replay_{c}"] for c in ("arbitrum", "base", "avalanche", "polygon", "optimism")}, "liq_decimals": job_liq_decimals, **{f"liq_prices_{c}": _liq_prices_job(c) for c in LIQ_CHAINS}, **{f"liq_{c}_es": _liq_es_job(c) for c in LIQ_ES_ID}, **{f"liq_{c}": globals()[f"job_liq_{c}"] for c in LIQ_CHAINS}}
+        "liq_probe": job_liq_probe, "liq_diag": job_liq_diag, "liq_diag2": job_liq_diag2, "liq_diag3": job_liq_diag2, "liq_secretcheck": job_liq_secretcheck, "liq_pxdiag": job_liq_pxdiag, "liq_morphobase_pilot": lambda: job_liq_morpho("morphobase_pilot"), "liq_morphobase": lambda: job_liq_morpho("morphobase"), **{f"liq_replay_{c}": globals()[f"job_liq_replay_{c}"] for c in ("arbitrum", "base", "avalanche", "polygon", "optimism")}, "liq_decimals": job_liq_decimals, **{f"liq_prices_{c}": _liq_prices_job(c) for c in LIQ_CHAINS}, **{f"liq_{c}_es": _liq_es_job(c) for c in LIQ_ES_ID}, **{f"liq_{c}": globals()[f"job_liq_{c}"] for c in LIQ_CHAINS}}
 
 
 def main(argv):
