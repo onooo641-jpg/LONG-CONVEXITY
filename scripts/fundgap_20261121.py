@@ -95,8 +95,7 @@ def main() -> int:
     df = pd.read_parquet("data/public/fundgap_funding.parquet")
     print("rows per venue:", df.groupby("venue").size().to_dict())
     H = hourly(df)
-    s, trips = run(H, TESTED)
-    report("TESTED: HL/dYdX/Aevo pooled", s, trips)
+    report("TESTED: HL/dYdX/Aevo pooled", *run(H, TESTED))
     for p in TESTED:
         report(f"  pair {p[0]}-{p[1]} alone", *run(H, [p]), verdict=False)
     report("NOT ELIGIBLE (Malaysia): HL-Gate", *run(H, [("hl", "gate")]), verdict=False)
