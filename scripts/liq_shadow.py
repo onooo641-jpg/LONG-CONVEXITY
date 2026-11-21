@@ -412,6 +412,17 @@ class Chain:
                         pos["c"].append((j, ww[0] / unit, inc[j], c["lt"] / 10000.0))
                     if ww[2] + ww[1] > 0:
                         pos["d"].append((j, ww[4] / unit, ww[1] / unit))   # scaled variable debt, stable debt (units)
+        # calibrate: k = exact health factor / local health factor now. Absorbs eMode and any LT differences, so that
+        # local_hf (raw x k) tracks the exact value as prices and indexes move.
+        debtors = [u for u, p in out.items() if p and p["d"]]
+        for i in range(0, len(debtors), 60):
+            batch = debtors[i:i + 60]
+            rr = self.rpc.multicall([(self.pool, SEL["getUserAccountData"] + w(u)) for u in batch])
+            for u, (ok, d) in zip(batch, rr):
+                ww = words(d) if ok else []
+                raw = self.local_hf(dict(c=out[u]["c"], d=out[u]["d"], t=0), mk)
+                if len(ww) >= 6 and ww[1] > 0 and 0 < raw < 98:
+                    out[u]["k"] = (ww[5] / 1e18) / raw
         return out
 
     @staticmethod
@@ -427,7 +438,7 @@ class Chain:
             if px[j] is None or vd[j] is None:
                 continue
             debt += (sc * vd[j] + st) * px[j]
-        return (coll / debt) if debt > 0 else 99.0
+        return (coll / debt * pos.get("k", 1.0)) if debt > 0 else 99.0
 
     def pos_file(self):
         d = ROOT / "cache" / "shadow" / self.name
@@ -465,6 +476,11 @@ class Chain:
                 print(f"{self.name}: position cache unreadable ({e}); rebuilding", flush=True)
                 positions = {}
         mk = self.market()
+        stale = [u for u, p in positions.items() if p and "k" not in p]
+        for i in range(0, len(stale), 300):
+            positions.update(self.snapshot(stale[i:i + 300], mk))
+        if stale:
+            print(f"{self.name}: recalibrated {len(stale)} cached positions", flush=True)
         todo = [u for u in sorted(users) if u not in positions]
         t_b = time.time()
         for i in range(0, len(todo), 600):

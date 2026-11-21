@@ -1,2 +1,2 @@
 # shadow start request
-run 2 (v2 watcher)
+run 3 (v2 + calibrated local HF)
