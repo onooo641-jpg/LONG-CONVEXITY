@@ -46,3 +46,9 @@ is dropped by an addendum (committed before any shadow results) and the GO rules
   the share of misses where our detection came within 3 blocks of the winner, and the cost of the cheaper faster setup goes under "Action for Jx" in NOTES_JX. The GO rules above are not relaxed by this.
 - Weekly: `docs/jx_runs/liq_shadow_week<k>.txt` (from `scripts/liq_shadow_summary.py`) committed with the logs under `data/shadow/`. The final verdict goes in `docs/NOTES_JX.md` "Liquidation shadow test: verdict".
 - Costs: none. No keys with funds, no deployment. Any live pilot needs Jx's explicit approval.
+
+## Addendum 1 (2026-11-21, before any shadow data exists): refresh tiers (HOW the watcher polls; no GO/KILL rule changes)
+Refreshing every tracked user every 60 s is not feasible on public RPCs (thousands of tracked users). Tiers instead, by last seen health factor: HF < 1.05 every cycle;
+1.05–1.2 every 10 s; 1.2–1.5 every 60 s; >= 1.5 every 300 s; users with no debt only after a new Borrow event. A position that falls from HF >= 1.5 to < 1 inside 5 minutes
+can be seen late: that is counted as a miss ("in set but not seen unhealthy 2+ blocks earlier"), not excluded. Multicall batches are 60 users, max 600 users per cycle.
+The tracked set bootstraps from 180 days of Borrow events; coverage (share of actual liquidated users that were in the set) is reported.
