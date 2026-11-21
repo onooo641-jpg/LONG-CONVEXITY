@@ -7,15 +7,15 @@ Baseline date: 2026-11-21
 - S1 reward pools: 1295
 - S3 Merkl live: 714
 - S4 governance hits: 67
-- pages fetched ok: 1287
-- pages total: 1317
+- pages fetched ok: 1282
+- pages total: 1312
 - candidates surviving to ranking: 92
-- of which all five filter parts verified: 17
-- near-miss rows total: 2147
+- of which all five filter parts verified: 19
+- near-miss rows total: 2152
 
 ## Near-miss by stage/reason (top)
 
-- first_pass / below threshold: 1377
+- first_pass / below threshold: 1382
 - quality / DefiLlama outlier flag: 260
 - filter / F4 price exposure, needs hedge; F5 TVL < $1,000,000: 217
 - filter / F4 price exposure, needs hedge: 142
@@ -58,6 +58,12 @@ Baseline date: 2026-11-21
 | yearn-finance | Katana | VBUSDC nan reward tokens ['0x7F1f4b4b29f5058fA32CC | 1,125 | 6,217,065 | 6.6 | pass | pass | True | False | unverified-onchain |
 | stake-dao-yield | Ethereum | EVAUSDT-EVAUSDC Curve reward tokens ['0xD533a94974 | 694 | 3,841,281 | 6.6 | pass | fail | True | False | unverified-onchain |
 
+## Test queue (addendum 3: top 3 venues by 90-day mean of base + 0.9 x reward APR)
+
+- ember (Sui) USDC Ember Concentrated Liquidity reward tokens ['0x00000000: 15.66%/yr over 90 d, TVL $1,564,974, pool 0a3c5663-73bd-4d8a-bdcc-5e529a8b741d
+- bluefin-spot (Sui) USDSUI-USDC 0.01% reward tokens ['0x000000000000000000000000: 15.35%/yr over 90 d, TVL $1,302,580, pool e3887972-24e6-45a9-8ef5-bcc22b6b5739
+- dolomite (Ethereum) USD1 nan reward tokens ['0xdA5e1988097297dCdc1f90D4dFE7909e8: 7.79%/yr over 90 d, TVL $50,905,028, pool 86e18974-35ca-4948-9c82-694facf9d082
+
 ## Governance proposals mentioning incentives (last 45d, newest 25)
 
 - sdcrv-gov.eth: [active] Update gauge implementations on the stableswap-ng, twocrypto-ng and tricrypto-ng factories and on the https://snapshot.org/#/sdcrv-gov.eth/proposal/0x3c0e84ef6ae492abe2b54aede41e4555ca7907f364aad46f0f613540ecfe7410
@@ -86,7 +92,7 @@ Baseline date: 2026-11-21
 - fusedao.eth: [closed] FIP14: Zero Inflation, 400M Cap Enforced On-Chain, 30M FUSE for Validator Rewards Through the Transit https://snapshot.org/#/fusedao.eth/proposal/0x2cba3ecb0f952ebb2d82583bb9279cc836e36c18ce2ed540299ab254dcdc5e94
 - sdfxn.eth: [closed] Gauge vote FXN - 12/11/2026 - 25/11/2026 https://snapshot.org/#/sdfxn.eth/proposal/0x6214cbfb2dd2fcd86ba05d14fd8a5297622c9ec18b1fc7447e7e3304743eb31a
 
-## Page changes today: 31
+## Page changes today: 40
 
 - E8 Markets (firm) https://e8markets.com/: +14 / -14 lines
 - propfirmmatch (directory) https://propfirmmatch.com/: +1 / -1 lines
@@ -119,3 +125,12 @@ Baseline date: 2026-11-21
 - FundedNext Futures (firm_sub) https://fundednext.com/aml-policy: +44 / -89 lines
 - E8 Markets (firm_sub) https://e8markets.com/e8-traders-stories: +44 / -44 lines
 - MyFundedFutures (firm_sub) https://myfundedfutures.com/coupons: +0 / -22 lines
+- FXIFY (firm) https://fxify.com/: +2 / -2 lines
+- E8 Markets (firm) https://e8markets.com/: +14 / -14 lines
+- propfirmmatch (directory) https://propfirmmatch.com/: +5 / -5 lines
+- MyFundedFutures (firm_sub) https://myfundedfutures.com/studio: +15 / -36 lines
+- MyFundedFutures (firm_sub) https://myfundedfutures.com/plans/builder: +15 / -36 lines
+- MyFundedFutures (firm_sub) https://myfundedfutures.com/plans/pro: +15 / -15 lines
+- Blue Guardian (firm_sub) https://www.blueguardian.com/payouts: +13 / -13 lines
+- FundedNext Futures (firm_sub) https://fundednext.com/cookie-policy: +3 / -0 lines
+- MyFundedFutures (firm_sub) https://myfundedfutures.com/coupons: +22 / -0 lines
