@@ -1,0 +1,62 @@
+=== funding
+  hl BTC: 17568 rows 2024-10-30..2026-10-31
+  hl ETH: 17568 rows 2024-10-30..2026-10-31
+  hl SOL: 17568 rows 2024-10-30..2026-10-31
+  hl XRP: 17568 rows 2024-10-30..2026-10-31
+  hl DOGE: 17568 rows 2024-10-30..2026-10-31
+  hl AVAX: 17568 rows 2024-10-30..2026-10-31
+  hl LINK: 17568 rows 2024-10-30..2026-10-31
+  hl SUI: 17568 rows 2024-10-30..2026-10-31
+  hl ARB: 17568 rows 2024-10-30..2026-10-31
+  hl OP: 17568 rows 2024-10-30..2026-10-31
+  hl LTC: 17568 rows 2024-10-30..2026-10-31
+  hl BNB: 17568 rows 2024-10-30..2026-10-31
+  dydx BTC: 17600 rows 2024-10-28..2026-10-31
+  dydx ETH: 17600 rows 2024-10-28..2026-10-31
+  dydx SOL: 17600 rows 2024-10-28..2026-10-31
+  dydx XRP: 17600 rows 2024-10-28..2026-10-31
+  dydx DOGE: 17600 rows 2024-10-28..2026-10-31
+  dydx AVAX: 17600 rows 2024-10-28..2026-10-31
+  dydx LINK: 17600 rows 2024-10-28..2026-10-31
+  dydx SUI: 17600 rows 2024-10-28..2026-10-31
+  dydx ARB: 17600 rows 2024-10-28..2026-10-31
+  dydx OP: 17600 rows 2024-10-28..2026-10-31
+  dydx LTC: 17600 rows 2024-10-28..2026-10-31
+  dydx BNB: 17600 rows 2024-10-28..2026-10-31
+  aevo BTC: 17569 rows 2024-10-30..2026-11-01
+  aevo ETH: 17569 rows 2024-10-30..2026-11-01
+  aevo SOL: 17569 rows 2024-10-30..2026-11-01
+  aevo XRP: 17569 rows 2024-10-30..2026-11-01
+  aevo DOGE: 17569 rows 2024-10-30..2026-11-01
+  aevo AVAX: 17569 rows 2024-10-30..2026-11-01
+  aevo LINK: 17569 rows 2024-10-30..2026-11-01
+  aevo SUI: 17569 rows 2024-10-30..2026-11-01
+  aevo ARB: 17569 rows 2024-10-30..2026-11-01
+  aevo OP: 17569 rows 2024-10-30..2026-11-01
+  aevo LTC: 12831 rows 2025-05-15..2026-11-01
+  aevo BNB: 17569 rows 2024-10-30..2026-11-01
+  FAIL https://api.gateio.ws/api/v4/futures/usdt/funding_rate?contract=BTC_USDT&limit=1000&from=1730246400& HTTP Error 400: Bad Request
+  gate BTC: 0 rows
+  FAIL https://api.gateio.ws/api/v4/futures/usdt/funding_rate?contract=ETH_USDT&limit=1000&from=1730246400& HTTP Error 400: Bad Request
+  gate ETH: 0 rows
+  FAIL https://api.gateio.ws/api/v4/futures/usdt/funding_rate?contract=SOL_USDT&limit=1000&from=1730246400& HTTP Error 400: Bad Request
+  gate SOL: 0 rows
+  FAIL https://api.gateio.ws/api/v4/futures/usdt/funding_rate?contract=XRP_USDT&limit=1000&from=1730246400& HTTP Error 400: Bad Request
+  gate XRP: 0 rows
+  FAIL https://api.gateio.ws/api/v4/futures/usdt/funding_rate?contract=DOGE_USDT&limit=1000&from=1730246400 HTTP Error 400: Bad Request
+  gate DOGE: 0 rows
+  FAIL https://api.gateio.ws/api/v4/futures/usdt/funding_rate?contract=AVAX_USDT&limit=1000&from=1730246400 HTTP Error 400: Bad Request
+  gate AVAX: 0 rows
+  FAIL https://api.gateio.ws/api/v4/futures/usdt/funding_rate?contract=LINK_USDT&limit=1000&from=1730246400 HTTP Error 400: Bad Request
+  gate LINK: 0 rows
+  FAIL https://api.gateio.ws/api/v4/futures/usdt/funding_rate?contract=SUI_USDT&limit=1000&from=1730246400& HTTP Error 400: Bad Request
+  gate SUI: 0 rows
+  FAIL https://api.gateio.ws/api/v4/futures/usdt/funding_rate?contract=ARB_USDT&limit=1000&from=1730246400& HTTP Error 400: Bad Request
+  gate ARB: 0 rows
+  FAIL https://api.gateio.ws/api/v4/futures/usdt/funding_rate?contract=OP_USDT&limit=1000&from=1730246400&t HTTP Error 400: Bad Request
+  gate OP: 0 rows
+  FAIL https://api.gateio.ws/api/v4/futures/usdt/funding_rate?contract=LTC_USDT&limit=1000&from=1730246400& HTTP Error 400: Bad Request
+  gate LTC: 0 rows
+  FAIL https://api.gateio.ws/api/v4/futures/usdt/funding_rate?contract=BNB_USDT&limit=1000&from=1730246400& HTTP Error 400: Bad Request
+  gate BNB: 0 rows
+funding rows: 628106
