@@ -356,7 +356,51 @@ def job_batch4():
         d = get(url)
         print(f"PROBE {name}: {'answered, keys ' + str(sorted(d.keys())[:15]) if isinstance(d, dict) else ('list' if isinstance(d, list) else 'no answer')}", flush=True)
 
-JOBS = {"batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+def job_batch5():
+    """#228/#229 Stage-0.5/1 data: 90-day HL funding, staking-chain APR inputs, TRX-energy and SKY pool histories."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    start = int((pd.Timestamp.now(tz="UTC") - pd.Timedelta(days=95)).timestamp() * 1000)
+    rows = []
+    for c in ["TRX", "SKY", "ATOM", "TIA", "INJ", "DOT", "NEAR", "APT", "SEI", "DYDX"]:
+        t = start
+        while True:
+            d = get("https://api.hyperliquid.xyz/info", {"type": "fundingHistory", "coin": c, "startTime": t})
+            if not d:
+                break
+            rows += [{"coin": c, "t": int(x["time"]) // 1000, "rate": float(x["fundingRate"])} for x in d]
+            if len(d) < 500:
+                break
+            t = int(d[-1]["time"]) + 1
+            time.sleep(0.3)
+        print(f"  hl 90d funding {c}: {sum(1 for r in rows if r['coin'] == c)}", flush=True)
+    pd.DataFrame(rows).to_parquet(OUT / "batch5_hlfunding.parquet", index=False)
+    lcd = {"ATOM": "https://cosmos-rest.publicnode.com", "TIA": "https://celestia-rest.publicnode.com", "INJ": "https://injective-rest.publicnode.com",
+           "SEI": "https://sei-rest.publicnode.com", "DYDX": "https://dydx-rest.publicnode.com"}
+    apr = []
+    for c, base in lcd.items():
+        infl = get(base + "/cosmos/mint/v1beta1/inflation")
+        pool = get(base + "/cosmos/staking/v1beta1/pool")
+        supply = get(base + "/cosmos/bank/v1beta1/supply?pagination.limit=1000")
+        dist = get(base + "/cosmos/distribution/v1beta1/params")
+        apr.append({"coin": c, "inflation": (infl or {}).get("inflation"), "bonded": ((pool or {}).get("pool") or {}).get("bonded_tokens"),
+                    "community_tax": ((dist or {}).get("params") or {}).get("community_tax"), "supply_n": len((supply or {}).get("supply", []))})
+        print(f"  lcd {c}: inflation {'ok' if infl else 'none'}, pool {'ok' if pool else 'none'}", flush=True)
+    pd.DataFrame(apr).to_parquet(OUT / "batch5_staking.parquet", index=False)
+    pools = pd.DataFrame((get("https://yields.llama.fi/pools") or {}).get("data", []))
+    u = pools[(pools["project"].isin(["tr-energy"])) | ((pools["project"] == "sky-lending") & (pools["symbol"].str.upper() == "SKY"))]
+    out = []
+    for p in u["pool"]:
+        for x in (get(f"https://yields.llama.fi/chart/{p}") or {}).get("data", []):
+            out.append({"pool": p, "ts": x.get("timestamp"), "tvlUsd": x.get("tvlUsd"), "apyBase": x.get("apyBase"), "apyReward": x.get("apyReward")})
+    ch = pd.DataFrame(out)
+    if len(ch):
+        ch["ts"] = pd.to_datetime(ch["ts"], utc=True)
+    ch.to_parquet(OUT / "batch5_charts.parquet", index=False)
+    u[["pool", "project", "symbol", "chain", "tvlUsd"]].to_parquet(OUT / "batch5_pools.parquet", index=False)
+    print(f"batch5 pools {len(u)}, chart rows {len(ch)}", flush=True)
+
+JOBS = {"batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys
