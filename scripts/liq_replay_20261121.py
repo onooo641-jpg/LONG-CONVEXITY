@@ -68,16 +68,24 @@ def latency(chain):
 
 def part_c(stage):
     print(f"\n== C. replay gap (stage {stage}): reachable = no price update of the collateral/debt feed within L blocks before the liquidation")
-    rows = []
+    rows, excluded, monthly = [], [], []
     for c in S.POOL:
         f = ROOT / "data" / "public" / f"liq_replay_gaps_s{stage}_{c}.parquet"
         if not f.exists():
             print(f"{c}: no replay data")
             continue
         d = pd.read_parquet(f)
+        smp = pd.read_parquet(ROOT / "data" / "public" / "liq_replay_sample.parquet")
+        d = d.merge(smp[["tx", "user", "month"]], on=["tx", "user"], how="left")
         med, nrec, Ls = latency(c)
         print(f"{c:10s} rows {len(d)}  median detect_ms {med:.0f} (n={nrec})  L blocks: actions {Ls['actions']}, ideal {Ls['ideal']}")
         d = d[(d["has_c"] | d["has_d"]) & d["g_ev"].notna() & ~d["err_ev"].fillna(False)]
+        # addendum 2 feed check: exclude the chain if > 50% of >= 10 resolved events show no update of the feed in the window
+        bad = len(d) >= 10 and (d["g_ev"] == -1).mean() > 0.50
+        print(f"           feed check: no-update-in-window share {(d['g_ev'] == -1).mean():.2f} -> {'EXCLUDED from pooled verdict' if bad else 'ok'}")
+        if bad:
+            excluded.append(c)
+        monthly.append((c, d, Ls["ideal"], bad))
         for arm in ("actions", "ideal"):
             L_ = Ls[arm]
             if L_ is None:
@@ -85,7 +93,7 @@ def part_c(stage):
             reach = (d["g_ev"] == -1) | (d["g_ev"] > L_)
             nul = d["g_null"].notna() & ~d["err_null"].fillna(False)
             nreach = ((d["g_null"] == -1) | (d["g_null"] > L_))[nul]
-            rows.append(dict(chain=c, arm=arm, n=len(d), R=reach.mean() if len(d) else np.nan, Rv=(d["gross"] * reach).sum() / d["gross"].sum() if len(d) else np.nan,
+            rows.append(dict(chain=c, arm=arm, excluded=bad, n=len(d), R=reach.mean() if len(d) else np.nan, Rv=(d["gross"] * reach).sum() / d["gross"].sum() if len(d) else np.nan,
                              g0=(d["g_ev"] == 0).mean(), g1=((d["g_ev"] >= 0) & (d["g_ev"] <= 1)).mean(), inf=(d["g_ev"] == -1).mean(), null=nreach.mean() if len(nreach) else np.nan))
     r = pd.DataFrame(rows)
     if r.empty:
@@ -94,6 +102,7 @@ def part_c(stage):
     print("\nchain      arm      resolved  R(events)  R(value)  gap==0  gap<=1  no-update-in-window  null R")
     for _, x in r.iterrows():
         print(f"{x['chain']:10s} {x['arm']:8s} {x['n']:8d}  {x['R']:8.3f}  {x['Rv']:8.3f}  {x['g0']:6.3f}  {x['g1']:6.3f}  {x['inf']:18.3f}  {x['null']:6.3f}")
+    r = r[~r["excluded"]]
     for arm in ("actions", "ideal"):
         a = r[r["arm"] == arm]
         n = a["n"].sum()
@@ -101,6 +110,25 @@ def part_c(stage):
             continue
         R = (a["R"] * a["n"]).sum() / n
         print(f"\npooled {arm}: resolved {n}  R {R:.3f}")
+    print("\n== post-hoc, descriptive month split (PREREG_LIQ_REPLAY addendum 3): ideal arm R and R_value, June 2026 (month 19) vs the other window months")
+    print("chain      group        resolved  R(events)  R(value)")
+    pool_rows = {"June 2026": [], "other months": []}
+    for c, d, Lid, bad in monthly:
+        if Lid is None:
+            continue
+        for name, mask in (("June 2026", d["month"] == 19), ("other months", d["month"] != 19)):
+            x = d[mask]
+            if not len(x):
+                print(f"{c:10s} {name:12s} {0:8d}  n/a")
+                continue
+            reach = (x["g_ev"] == -1) | (x["g_ev"] > Lid)
+            print(f"{c:10s} {name:12s} {len(x):8d}  {reach.mean():8.3f}  {(x['gross'] * reach).sum() / x['gross'].sum():8.3f}" + ("   (chain excluded by feed check)" if bad else ""))
+            if not bad:
+                pool_rows[name].append((len(x), reach.mean(), (x["gross"] * reach).sum() / x["gross"].sum()))
+    for name, v in pool_rows.items():
+        n = sum(a for a, _, _ in v)
+        if n:
+            print(f"pooled (feed-ok chains) {name:12s} resolved {n}  R {sum(a * b for a, b, _ in v) / n:.3f}  R_value {sum(a * c_ for a, _, c_ in v) / n:.3f}")
     a = r[r["arm"] == "ideal"]
     if len(a):
         n = a["n"].sum()
