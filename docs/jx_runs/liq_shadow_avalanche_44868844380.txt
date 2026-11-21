@@ -1,0 +1,9 @@
+avalanche: v2 start, head 100945885
+avalanche: bootstrap to block 98219885/100945885 users 12805
+avalanche: bootstrap DONE, users 12990
+avalanche: positions 600/12990 (0.1 min)
+avalanche: positions 3600/12990 (0.4 min)
+avalanche: positions 6600/12990 (0.7 min)
+avalanche: positions 9600/12990 (1.0 min)
+avalanche: positions 12600/12990 (1.3 min)
+avalanche: positions ready: 12990 users, 2727 with debt
