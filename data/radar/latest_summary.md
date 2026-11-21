@@ -7,19 +7,19 @@ Baseline date: 2026-11-21
 - S1 reward pools: 1295
 - S3 Merkl live: 714
 - S4 governance hits: 67
-- pages fetched ok: 1287
-- pages total: 1317
+- pages fetched ok: 1282
+- pages total: 1312
 - candidates surviving to ranking: 93
 - of which all five filter parts verified: 12
-- near-miss rows total: 1963
+- near-miss rows total: 2061
 
 ## Near-miss by stage/reason (top)
 
-- first_pass / below threshold: 1209
+- first_pass / below threshold: 1305
 - quality / DefiLlama outlier flag: 260
 - filter / F4 price exposure, needs hedge; F5 TVL < $1,000,000: 217
-- filter / F4 price exposure, needs hedge: 140
-- filter / F5 TVL < $1,000,000: 67
+- filter / F4 price exposure, needs hedge: 141
+- filter / F5 TVL < $1,000,000: 68
 - deep / F1 reward not persistent: 24
 - deep / F2 not long-lived: 18
 - quality / implausible APR > 1000%: 11
@@ -51,9 +51,9 @@ Baseline date: 2026-11-21
 | dolomite | Ethereum | USDC nan reward tokens ['0xdA5e1988097297dCdc1f90D | 2,174 | 10,244,194 | 7.7 | pass | pass | True | False | unverified-onchain |
 | convex-finance | Ethereum | EVAUSDT-EVAUSDC nan reward tokens ['0xd533a949740b | 472 | 2,380,685 | 7.2 | fail | unverified | True | False | unverified-onchain |
 | stake-dao-yield | Ethereum | FRXUSD-MSUSD Curve reward tokens ['0xD533a949740bb | 764 | 3,915,957 | 7.1 | pass | unverified | True | False | unverified-onchain |
-| aave | Ethereum | LEND Supply RLUSD to the Aave V4 Sentora Hub | 14,718 | 76,742,054 | 7.0 | unverified | unverified | True | False | unverified-onchain |
+| aave | Ethereum | LEND Supply RLUSD to the Aave V4 Sentora Hub | 14,718 | 76,744,398 | 7.0 | unverified | unverified | True | False | unverified-onchain |
 | flying-tulip-ftusd | Ethereum | SFTUSD staked ftUSD (FT rewards bought on open mar | 331 | 1,777,594 | 6.8 | fail | fail | True | False | unverified-onchain |
-| dolomite | Ethereum | LEND Lend USDC on Dolomite | 3,194 | 17,402,911 | 6.7 | unverified | pass | True | False | unverified-onchain |
+| dolomite | Ethereum | LEND Lend USDC on Dolomite | 3,189 | 17,402,915 | 6.7 | unverified | pass | True | False | unverified-onchain |
 | bluefin-spot | Sui | USDSUI-USDC 0.01% reward tokens ['0x00000000000000 | 236 | 1,302,580 | 6.6 | pass | pass | True | False | unverified-onchain |
 | yearn-finance | Katana | VBUSDC nan reward tokens ['0x7F1f4b4b29f5058fA32CC | 1,125 | 6,217,065 | 6.6 | pass | unverified | True | False | unverified-onchain |
 | stake-dao-yield | Ethereum | EVAUSDT-EVAUSDC Curve reward tokens ['0xD533a94974 | 694 | 3,841,281 | 6.6 | pass | unverified | True | False | unverified-onchain |
@@ -86,7 +86,22 @@ Baseline date: 2026-11-21
 - fusedao.eth: [closed] FIP14: Zero Inflation, 400M Cap Enforced On-Chain, 30M FUSE for Validator Rewards Through the Transit https://snapshot.org/#/fusedao.eth/proposal/0x2cba3ecb0f952ebb2d82583bb9279cc836e36c18ce2ed540299ab254dcdc5e94
 - sdfxn.eth: [closed] Gauge vote FXN - 12/11/2026 - 25/11/2026 https://snapshot.org/#/sdfxn.eth/proposal/0x6214cbfb2dd2fcd86ba05d14fd8a5297622c9ec18b1fc7447e7e3304743eb31a
 
-## Page changes today: 2
+## Page changes today: 17
 
 - E8 Markets (firm) https://e8markets.com/: +14 / -14 lines
 - propfirmmatch (directory) https://propfirmmatch.com/: +1 / -1 lines
+- E8 Markets (firm) https://e8markets.com/: +14 / -14 lines
+- Crypto Fund Trader (firm) https://cryptofundtrader.com/: +6 / -6 lines
+- propfirmmatch (directory) https://propfirmmatch.com/: +1 / -1 lines
+- MyFundedFutures (firm_sub) https://myfundedfutures.com/studio: +15 / -15 lines
+- MyFundedFutures (firm_sub) https://myfundedfutures.com/plans/builder: +15 / -15 lines
+- MyFundedFutures (firm_sub) https://myfundedfutures.com/plans/rapid-eod: +15 / -15 lines
+- MyFundedFutures (firm_sub) https://myfundedfutures.com/plans/pro: +36 / -36 lines
+- Blue Guardian (firm_sub) https://www.blueguardian.com/payouts: +13 / -13 lines
+- FundedNext Futures (firm_sub) https://fundednext.com/terms-of-service: +3 / -0 lines
+- FundedNext Futures (firm_sub) https://fundednext.com/privacy-policy: +3 / -0 lines
+- FundedNext Futures (firm_sub) https://fundednext.com/cookie-policy: +3 / -0 lines
+- FundedNext Futures (firm_sub) https://fundednext.com/aml-policy: +3 / -0 lines
+- E8 Markets (firm_sub) https://e8markets.com/e8-traders-stories: +9 / -9 lines
+- HyroTrader (firm_sub) https://hyrotrader.com/transparency/: +1 / -1 lines
+- FTMO (firm_sub) https://trader.ftmo.com/traders/contracts: +43 / -3 lines
