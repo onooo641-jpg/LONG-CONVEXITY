@@ -101,3 +101,23 @@ existed for years, not a one-off window), (3) runs on one setup that is reused, 
 limited promos) are out unless the same bot catches them repeatedly. Under this filter:
 liquidation bonuses PASS structurally (test competition first); Polymarket rewards PASS structurally but
 carry Malaysian legal risk; single airdrop farms FAIL.
+
+## Radar sources, reworked (2026-11-21, Jx: niche opportunities never reach media)
+Collect from where rules and money are created, not from news or "airdrop lists". Public but obscure only;
+never private or insider information.
+1. **Rule-change watcher.** Snapshot and diff the actual rule pages on a schedule: prop-firm help centres,
+   pricing and plan pages; exchange and protocol docs and docs changelogs (e.g. Polymarket's docs showed the
+   maker-rebate and Perps reward programmes). Loopholes appear when rules change (MFFU Rapid EOD was a
+   quiet "limited-time" plan). Flag new plans, fee or payout changes, promos.
+2. **Money at the source.** Incentive budgets are visible before anyone writes about them: on-chain reward
+   distributors and campaign APIs (e.g. Merkl's public campaign list with daily reward amounts), DAO governance
+   forums / Snapshot / Tally proposals that approve incentive budgets, new reward contracts.
+3. **Quant anomaly scan.** Compute payout per $ of competing capital directly from data, not from articles:
+   incentive APR vs TVL (DefiLlama), new perp listings and funding outliers (Hyperliquid), maker-reward pools vs
+   quoted depth, liquidation bonus vs number of active liquidators. Rank by "money per competitor".
+4. **Our own pricing engine.** Every new prop-firm offer found by (1) goes straight through backtest/recycle.py
+   with the coin-flip test, so it is priced in minutes rather than read about.
+5. **Builder signals.** New open-source bots and SDKs on GitHub for a venue, and venue changelogs/API releases,
+   often mark a new incentive before media do.
+Each source writes candidates to one table (source, venue, what pays, budget/day, competing capital, start date);
+only candidates passing the five-part filter go to a pre-registered test.
