@@ -1,0 +1,6 @@
+polygon: start, head 97686220
+polygon: bootstrap to block 91800220/97686220 users 16768
+polygon: bootstrap to block 95740220/97686220 users 17749
+polygon: bootstrap DONE, users 18213
+polygon: head 97686582 cycles 3 tracked 18214 last_cycle 138220 ms rpc ok/err 1282/206
+polygon: head 97686809 cycles 5 tracked 18216 last_cycle 212146 ms rpc ok/err 1781/409
