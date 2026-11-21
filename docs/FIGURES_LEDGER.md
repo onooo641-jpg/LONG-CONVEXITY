@@ -323,3 +323,16 @@ day at every size.
 | D2 | same, 2024–26 | $25,172 / $20,401 / $22,720 / $21,028 / $15,077 | same | 2024–26 | 2026-11-21 | current |
 
 Raw output for every command above is in `docs/jx_runs/`.
+
+## Liquidation bonuses (docs/PREREG_LIQUIDATIONS_20261120.md)
+
+| # | figure | value | command | window | computed | status |
+|---|---|---|---|---|---|---|
+| LQ1 | Registered test: venues passing / overall | 7 pass; OVERALL PASS = True | `uv run python -I scripts/liquidations_20261120.py` | 2024-11..2026-10, 8 chains | 2026-11-21 | measured (net = bonus − gas only; BNB, Solana, Compound forks unmeasured) |
+| LQ2 | Combined outside-top-3 net bonus, passing venues, H1 / H2 | $1.70M / $1.09M per month | same | halves | 2026-11-21 | measured; sum over all other winners, not one bot |
+| LQ3 | Top-3 share (tx from) H1 / H2: Arbitrum v3, Base v3, Avalanche v3, Polygon v3, Optimism v3 | 0.30/0.09, 0.36/0.11, 0.41/0.26, 0.17/0.09, 0.19/0.38 | same | halves | 2026-11-21 | measured |
+| LQ4 | Same with winner = liquidator field: venues passing | 5 (Arbitrum v3 fails, H2 top-3 0.62) | same | halves | 2026-11-21 | measured sensitivity |
+| LQ5 | Median active (>= 12 wins) bot outside top 3, net $/month H2: Arbitrum / Base / Avalanche / Optimism / Polygon (Aave v3) | $226 / $31 / $729 / $0 / $83 | same | H2 | 2026-11-21 | measured, gas-only, survivor-biased |
+| LQ6 | Same, 75th percentile H2 | $839 / $473 / $1,892 / $56 / $516 | same | H2 | 2026-11-21 | measured, same caveats |
+| LQ7 | Debt repaid in passing Aave v3 pools, H1 → H2 | roughly halved ($70M → $41M Arbitrum; $42M → $32M Base) | same | halves | 2026-11-21 | measured; income depends on volatility |
+| LQ8 | Chains complete / unmeasured | 8 complete; BNB unmeasured | `data/public/liq_*_state.json`; `docs/jx_runs/fetch_liq_*` | | 2026-11-21 | measured |

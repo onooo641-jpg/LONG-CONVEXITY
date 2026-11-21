@@ -161,3 +161,8 @@ See CLAUDE.md "Staged tests". For a liquidation-style test this would have been:
 Stopping early on a FAIL is safe; stopping early on a PASS, or changing the full test after peeking, is not.
 - Delay test done (#65): manual entry within **3 minutes** keeps ≥80% of the recycling result, so semi-automated firms
   stay in scope. The prop-firm sweep should now list every firm whose written rules allow alert-assisted manual entry.
+
+## Result for idea 1, liquidation bonuses (2026-11-21, candidate #100)
+Tested on 8 chains, 24 months (`docs/PREREG_LIQUIDATIONS_20261120.md`). PASS: 7 venues pass, main Aave v3 pools on Arbitrum, Base, Avalanche, Polygon, Optimism; top-3 share 9–41%.
+Median active small bot ~$30–$800/month per venue before unobserved costs. Verdict BUILD in simulate-only mode first. Unmeasured: BNB (needs Etherscan key), Solana, Compound forks.
+See `docs/NOTES_JX.md` "Liquidation test #100: verdict".

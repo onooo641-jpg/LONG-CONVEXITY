@@ -640,3 +640,58 @@ some chains (BNB is reported to need a paid plan on some tiers: unverified). Do 
 2. In GitHub: repo onooo641-jpg/LONG-CONVEXITY -> Settings -> Secrets and variables -> Actions -> New repository secret.
 3. Name it exactly `ETHERSCAN_API_KEY`, paste the key, save. Never paste the key in chat or commit it.
 4. Tell the next session to run the `bnb_es` job (the code is ready: `liq_bnb_es` in `scripts/fetch_public.py`).
+
+## Liquidation test #100: verdict (2026-11-21) — BUILD, in simulate-only mode first
+Pre-registered in `docs/PREREG_LIQUIDATIONS_20261120.md` (four addenda, all committed before the numbers they affect). Raw output:
+`docs/jx_runs/liquidations_20261120.txt` (re-run once, identical). Figures: `docs/FIGURES_LEDGER.md` LQ1–LQ8. Candidate row: #100.
+
+**What was measured (24 months, Nov 2024 – Oct 2026).** Every liquidation on 8 chains using the Aave liquidation event (229,691 events, 67 venues, free public
+nodes). Complete: Base, Arbitrum, Optimism, Polygon, Avalanche, Gnosis, Scroll, Metis. **Not measured:** BNB Chain (no free source; needs the Etherscan key in
+"Action for Jx" above), Solana lenders (Kamino, MarginFi, Save, Drift: public RPC can't return 24 months), Compound-style lenders (different event; not decoded).
+Bonus = collateral value − debt repaid, using daily DefiLlama prices; minus gas paid by the winner. Flash-loan fees, swap slippage, bribes and failed attempts are
+NOT in the numbers, so every net figure is an upper bound.
+
+**Which venues pass (registered test).** 7 of the 67 venues, and the idea passes overall (needed 3 venues and $2,000/month; got 7 and $1.1–1.7 million/month
+paid to everyone outside the top 3). The five that matter are the main Aave v3 pools:
+| venue | top-3 share (H1 / H2) | winning addresses per half | what the non-top-3 winners earned together per month (H1 / H2) |
+|---|---|---|---|
+| Arbitrum Aave v3 | 0.30 / 0.09 | ~1,400 | $697K / $433K |
+| Base Aave v3 | 0.36 / 0.11 | 823 / 1,611 | $324K / $317K |
+| Avalanche Aave v3 | 0.41 / 0.26 | 283 / 236 | $288K / $158K |
+| Polygon Aave v3 (half-sample of receipts) | 0.17 / 0.09 | 1,450 / 1,653 (lower bounds) | $263K / $132K |
+| Optimism Aave v3 | 0.19 / 0.38 | 487 / 598 | $106K / $41K |
+Two small forks also pass (Polygon 0x8dff…, Avalanche 0x4f01…) but pay a median bot about $0–$17/month: ignore them. Gnosis, Metis and Scroll fail (top bots take 80–98%, or
+too little left). Dollar amounts are before the costs listed above and are the whole pool, not one bot's share.
+
+**How crowded.** Not crowded by the registered measure (top-3 share 9–41%), but winners are many and mostly occasional: on Arbitrum/Base/Polygon, 36–64% of value in H2 went
+to addresses that won three times or fewer. Caution: if the same operator uses many addresses, "tx sender" understates concentration. Using the `liquidator` field instead,
+Arbitrum's H2 top-3 share is 0.62 (fails the 60% rule); the other four still pass and 5 venues in total still pass, but combined outside-top-3 income falls to $854K / $458K a month.
+The top 10 liquidator addresses hold 58–94% of the value, so a small bot competes with a small group of professionals for the big events.
+
+**Realistic monthly income for a small bot (ESTIMATE, built from measured bots).** Look at bots that were active (12+ wins in the half) and not in the top 3. Median net per month in H2 (gas only):
+Arbitrum $226, Base $31, Avalanche $729, Optimism $0, Polygon $83; 75th percentile $839 / $473 / $1,892 / $56 / $516; 90th percentile $2.8K / $2.0K / $6.1K / $0.2K / $0.9K.
+Run on all five venues at once, a median bot made roughly $2.3K a month in H1 and $1.1K in H2; a 75th-percentile bot about $3.8K in H2. Expect less: those figures skip flash-loan fees (the
+0.09% sensitivity only takes 1–3% off), swap slippage, reverted attempts and bribes, and they exclude bots that quit. The pool also shrank: debt liquidated in H2 was
+roughly half of H1 (Arbitrum $70M → $41M; Base $42M → $32M), because liquidations follow market stress. Gas per winning liquidation: Arbitrum $0.8, Polygon $0.6,
+Base $4.6, Avalanche $5.8, Optimism $7.8 (the last three show bidding for priority). **A new bot's real capture rate is unknown and unmeasurable without running one.** For scale
+against the benchmark: Topstep recycling is $4,097/yr per slot; a liquidation bot in the middle of the pack on these five venues would be roughly $13–28K/yr before costs and variance, with no capital at risk if it uses flash loans. Treat that as a hypothesis, not a forecast.
+
+**Five-part filter (HANDOFF_NONPROP).**
+1. Repeatable: PASS (measured). 6,000–25,000 events a year on each main pool; every month had liquidations in both halves.
+2. Long-lived: PASS (measured 24 months; Aave v3 has existed since 2022, third-party knowledge). Risk: the bonus is a governance parameter and could be cut.
+3. One reusable setup: PASS. The same event and functions on all measured chains: one codebase, one config entry per chain.
+4. Capped downside per attempt: PASS by design if the bot uses a flash loan and reverts unless profit exceeds a threshold: loss per failed attempt = gas (cents on Arbitrum/Polygon, a few dollars on Base/Optimism/Avalanche when bidding). Not yet tested live: contract bugs and key theft are the real risks.
+5. Scales by adding copies: PARTIAL. Adding chains/venues adds income without adding capital; adding capital does not raise income, and extra bots on one venue split the same pool.
+
+**Verdict: BUILD, but only simulate-only first.** The structural test passes and survives the stricter identity check. What is still unknown, and only a shadow-mode bot can measure: how many liquidations a new bot wins against the professionals, and the real after-slippage profit. Nothing here authorises spending or deployment.
+
+**Design: one reusable bot for the passing venues (Arbitrum, Base, Avalanche, Polygon, Optimism; skip the two small forks and all failing venues).**
+- Watcher (per chain): follow new blocks via a public RPC; keep the set of open borrowers from Borrow/Repay/Supply events; each block re-score only accounts with health factor < 1.05 via the pool's `getUserAccountData`; re-score all when an oracle price moves.
+- Executor contract (one Solidity contract per chain, identical code): `flashLoanSimple(debtAsset, amount)` → `liquidationCall(collateral, debt, user, amount, false)` → swap collateral to debt asset on the best DEX route → repay loan + premium → send the remainder to the owner wallet; **revert unless profit ≥ min_profit**. This is the downside cap.
+- Before sending: `eth_call` simulation; only send if simulated profit > gas cost × margin; priority fee capped at a fixed share of expected profit.
+- Per-chain config: pool address, flash-loan source, DEX router, gas cap, daily gas budget, max debt per attempt, kill switch.
+- Shadow mode (stage 0, no money): run the watcher and simulations only; log for each on-chain liquidation the simulated profit we could have made and whether our trigger would have fired before the winner's block. Output: would-win rate and simulated profit per venue per month. Pre-register the go/no-go thresholds before starting.
+- Stage 1 (needs Jx's explicit approval, not part of this verdict): tiny live budget (gas only, no capital) on the best venue, with a hard daily loss cap.
+- Risks to price: smart-contract bug, key management (hot wallet holds only gas money), governance cutting bonuses, volatile income, and competition from professionals on the largest events.
+
+**Next step (no spending).** Write the shadow-mode watcher and the executor contract with a local fork test; pre-register the stage-0 pass criteria (for example: simulated net ≥ $X per venue per month over 4 weeks and a would-win rate ≥ Y%) before it runs.

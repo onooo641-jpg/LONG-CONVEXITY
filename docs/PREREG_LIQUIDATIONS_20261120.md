@@ -116,3 +116,16 @@ what a NEW small bot could win, these descriptive/sensitivity statistics are add
    swap slippage, bribes and failed attempts.
 4. Plausibility: median bonus as % of collateral value, total debt repaid, share of events invalid by reason.
 Polygon values use the half-sample of receipts (bot counts are lower bounds; dollar sums scaled).
+
+## Results (2026-11-21; raw: `docs/jx_runs/liquidations_20261120.txt`, reproduced byte-identical on a second run)
+Command: `uv run python -I scripts/liquidations_20261120.py` (reads committed `data/public/liq_*`; fetch logs in `docs/jx_runs/fetch_liq_*`, `fetch_public_*`).
+Chains COMPLETE (24 months): Base, Arbitrum, Optimism, Polygon (receipt half-sample, addendum 3), Avalanche, Gnosis, Scroll, Metis. BNB: UNMEASURED (no free
+deep-history endpoint, no Etherscan key). Solana lenders and Compound-style forks: unmeasured (see top). 229,691 events decoded over 67 venues.
+Registered result: **OVERALL PASS = True**. 7 venues pass in both halves (outside-top-3 net $/month, H1 / H2; top-3 share H1 / H2):
+Arbitrum Aave v3 $697K / $433K (0.30 / 0.09); Base Aave v3 $324K / $317K (0.36 / 0.11); Avalanche Aave v3 $288K / $158K (0.41 / 0.26);
+Polygon Aave v3 $263K / $132K (0.17 / 0.09); Optimism Aave v3 $106K / $41K (0.19 / 0.38); Polygon fork 0x8dff.. $21K / $6K (0.47 / 0.25);
+Avalanche fork 0x4f01.. $4.0K / $1.7K (0.27 / 0.30). Combined $1.70M / $1.09M per month: this is what ALL non-top-3 winners earned together, not one bot.
+Fail: Gnosis Aave v3 (top-3 0.80 / 0.85), Metis (0.84 / 0.98), Scroll Aave v3 (H2 outside-top-3 $409 < $500), all other forks (concentrated or too small).
+Sensitivity (addendum 4, not registered): with winner = `liquidator` field, 5 venues still pass (Base, Avalanche v3, Optimism, Polygon v3, Polygon fork 0x8dff);
+Arbitrum Aave v3 fails (H2 top-3 0.62). Pass count (>= 3) survives; the dollar totals drop to $854K / $458K.
+Unobserved costs (flash-loan fees, swap slippage, bribes, reverted attempts) are not in any figure: all net figures are upper bounds on what a bot keeps.
