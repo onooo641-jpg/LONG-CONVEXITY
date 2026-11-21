@@ -1,0 +1,9 @@
+=== liq_base
+base: month anchors 21814927..53350927, resume at block 53350927
+base: receipts: 2943 cached, 25264 to fetch (sampled=False)
+  rpc exception eth_getTransactionReceipt @ https://base.api.pocket.network: HTTP 429
+  base: receipts 3799/28207 (4 min)
+  base: receipts 4605/28207 (8 min)
+  base: receipts 5432/28207 (12 min)
+  base: receipts 6379/28207 (16 min)
+  base: receipts 7216/28207 (20 min)
