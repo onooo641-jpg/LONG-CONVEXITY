@@ -1,21 +1,13 @@
-Traceback (most recent call last):
-  File "/home/user/LONG-CONVEXITY/.venv/lib/python3.13/site-packages/pandas/core/indexes/base.py", line 3641, in get_loc
-    return self._engine.get_loc(casted_key)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
-  File "pandas/_libs/index.pyx", line 168, in pandas._libs.index.IndexEngine.get_loc
-  File "pandas/_libs/index.pyx", line 197, in pandas._libs.index.IndexEngine.get_loc
-  File "pandas/_libs/hashtable_class_helper.pxi", line 7668, in pandas._libs.hashtable.PyObjectHashTable.get_item
-  File "pandas/_libs/hashtable_class_helper.pxi", line 7676, in pandas._libs.hashtable.PyObjectHashTable.get_item
-KeyError: 'ts'
+price days per token: {'BTC': 649, 'CRV': 620, 'CVXCRV': 694, 'ETH': 635, 'GM_BTC': 719, 'GM_ETH': 719, 'PENDLE': 318, 'SDCRV': 695, 'SDPENDLE': 66, 'ST-YCRV': 698, 'YCRV': 725}
+  YCRV/CRV ratio: start 0.977, end 0.555, min 0.382
+  ST-YCRV/CRV ratio: start 1.847, end 1.486, min 1.204
+  CVXCRV/CRV ratio: start 0.949, end 0.419, min 0.331
+  SDCRV/CRV ratio: start 1.021, end 0.556, min 0.492
+  SDPENDLE/PENDLE ratio: start 0.820, end 0.894, min 0.687
+#214 with wrapper discount: universe 6 pools; stress events 1
+    2026-08: convex-finance/CVXCRV 248.5%, stake-dao-yield/SDCRV 63.3%, aave-v3/AAVE 7.1%, yearn-finance/YCRV -302.3%, stake-dao-yield/SDPENDLE -307.1%
+    2026-09: aave-v4/AAVE 10.3%, aave-v3/AAVE 10.3%, stake-dao-yield/SDCRV 2.4%, convex-finance/CVXCRV -97.0%, yearn-finance/YCRV -494.0%
+    2026-10: aave-v4/AAVE 8.3%, aave-v3/AAVE 8.3%, convex-finance/CVXCRV -4.2%, stake-dao-yield/SDCRV -73.1%, stake-dao-yield/SDPENDLE -337.5%
+  Stage 1 (2026-08..10): -162.54%/yr -> KILL
+  VERDICT: FAIL (Stage 1)
 
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/home/user/LONG-CONVEXITY/scripts/hedged_wrappers_20261121.py", line 18, in <module>
-    px["day"] = pd.to_datetime(px["ts"], unit="s", utc=True).dt.floor("D")
-                               ~~^^^^^^
-  File "/home/user/LONG-CONVEXITY/.venv/lib/python3.13/site-packages/pandas/core/frame.py", line 4378, in __getitem__
-    indexer = self.columns.get_loc(key)
-  File "/home/user/LONG-CONVEXITY/.venv/lib/python3.13/site-packages/pandas/core/indexes/base.py", line 3648, in get_loc
-    raise KeyError(key) from err
-KeyError: 'ts'

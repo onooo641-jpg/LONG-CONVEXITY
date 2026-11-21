@@ -122,13 +122,16 @@ risk, 5m signals and 1m fills.
 | 216 | gold carry (PAXG + HL short) | `docs/PREREG_GOLDCARRY_20261121.md` | FAIL: 7.1% / 5.1% | goldcarry_20261121.txt |
 | 219 | correlated-pair loops (LST/ETH, sUSDe/USDC) | PREREG_HEDGED | Stage 0.5 KILL (corrected ceiling 6.8%; e-mode LTV not in data) | borrow_ceiling_20261121.txt |
 | 220 | hedged Jupiter JLP | `docs/PREREG_BATCH4_20261121.md` | not testable (no history: DefiLlama lists only JLP lending; Jupiter API current APR only) | batch4_20261121.txt |
-| 221 | hedged GMX GM pools | same | passes fee-APY rule (21.8% / 10.1%); robustness with real GM prices pending | batch4_20261121.txt |
+| 221 | hedged GMX GM pools | same | FAIL: fee-APY rule 21.8% / 10.1% but with real GM token prices 3.6% / 3.2% (Stage 1 −32.9%) | batch4 + gm_robust_20261121.txt |
 | 222 | dYdX MegaVault | same | FAIL (only 67 days of history; Stage 1 8.2%) | same |
 | 223 | Lighter LLP | same | not testable (no history) | same |
 | 224 | stable-pair DEX LPs | same | FAIL at Stage 1 (−12.0%) | same |
 | 225 | trader-counterparty USDC vaults (Gains) | same | FAIL on the primary rule (9.7% / 4.4%); equal-weight 10.7% / 13.2% (near-miss; ~$2.5M capacity) | same |
 | 227 | other savings rates (sUSDu, savUSD, sUSDai, sDOLA, sfrxUSD...) | same | FAIL (3.7% / −16.8%) | same |
 | 229 | hedged native L1 staking | `docs/PREREG_BATCH5_20261121.md` | ATOM Stage 0.5 KILL (4.9%); INJ ceiling 12.1% but no free APR history → not testable beyond Stage 0.5; TIA/SEI/DYDX/APT/NEAR/DOT no APR data | batch5_20261121.txt |
+
+| 214 | hedged governance-token yields (yCRV, cvxCRV, sdCRV, sdPENDLE, AAVE) | PREREG_HEDGED (+ wrapper addendum) | FAIL: rule 8.3% / 15.5% but wrappers lost 40–60% vs CRV (yCRV 0.98→0.56); with discount Stage 1 −162% | hedged_wrappers_20261121.txt |
+| 228 | hedged resource/revenue staking (TRX energy, SKY staking) | `docs/PREREG_BATCH5_20261121.md` | TRX KILL (shorts pay 13%); SKY FAIL on history (112 d < 180) at 12.9% / 16.9% — near-miss, re-test ≈ 2027-01-07 | batch5 + sky_stage2_20261121.txt |
 
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.

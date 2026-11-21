@@ -1,0 +1,4 @@
+  GM_ETH: price days 719, first 2024-10-01
+  GM_BTC: price days 719, first 2024-10-01
+#221 with real GM prices: Stage 1 -32.91%/yr; halves 3.62% / 3.18% on capital; worst drawdown -11.0%; $342/yr on $10K
+VERDICT: FAIL (Stage 1)

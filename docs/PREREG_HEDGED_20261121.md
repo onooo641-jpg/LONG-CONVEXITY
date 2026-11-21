@@ -62,3 +62,8 @@ families (ETH, SOL, HYPE, BTC, AVAX, BNB) only.
 - #219 first ceiling printed 0%: the rule's supply yield s used only the lending market's supply APY (≈ 0 for LST collateral) and left out the
   token's own staking/savings yield. Mechanical fix (no threshold changed): s = intrinsic yield of the supplied token (its own DefiLlama
   liquid-staking / savings pool, highest-TVL match by symbol) + market supply APY. Re-run as `scripts/borrow_ceiling_20261121.py`.
+
+## #214 robustness result (2026-11-21, `docs/jx_runs/hedged_wrappers_20261121.txt`, re-run identical): FAIL
+With the wrapper discount included, Stage 1 is −162.5%/yr → KILL. Over 2024-10..2026-11 the wrappers lost most of their value against the hedged
+token: yCRV/CRV 0.977 → 0.555 (min 0.382), cvxCRV/CRV 0.949 → 0.419 (min 0.331), sdCRV/CRV 1.021 → 0.556, sdPENDLE/PENDLE 0.820 → 0.894 (min 0.687).
+The high reward APR of these wrappers is paid for by a falling price against CRV; the fee-APY "pass" was an artifact of leaving the discount out.

@@ -71,3 +71,25 @@ Stage 0.5 ceiling check from data already in the repo (`scripts/ceiling_20261121
   #214 hedged governance-token yields (ceiling 25%: yCRV), #216 gold carry, #219 correlated-pair loops.
 **Prop-firm monthly view** (`docs/jx_runs/radar_monthly_20261121.txt`): average $/month 2016–26 Topstep $341, Alpha Std (3-min manual) $309,
 Lucid $289, TradeDay $85 $274, MFFU $265, FuturesElite (3-min) $239; payouts land in only ~1 month in 5; last 24 months ~3× the 10-year average.
+
+## Radar update (2026-11-21, night): verdicts for the 16 queued tests — no pass, no flag
+| # | idea | verdict |
+|---|---|---|
+| 209 | paid-to-borrow stable loops | survives ceiling (11.4%); not testable further (borrow history paywalled, HTTP 402) |
+| 211 | Pendle PTs to maturity | FAIL Stage 1 (−7.0%; apxUSD depeg) |
+| 212 | hedged liquid staking | FAIL Stage 1 (churn costs; buy-and-hold also < 8% in year 2) |
+| 213 | hedged reward farming | FAIL Stage 1 |
+| 214 | hedged governance-token yields | FAIL: passed the fee-APY rule, but wrappers lost 40–60% vs CRV |
+| 216 | gold carry (PAXG) | FAIL (7.1% / 5.1%) |
+| 219 | correlated-pair loops | KILL at ceiling (6.8%) |
+| 220 | hedged JLP | not testable (no history) |
+| 221 | hedged GMX GM | FAIL: passed fee-APY rule, real GM prices 3.6% / 3.2% |
+| 222 | dYdX MegaVault | FAIL (67 days of history) |
+| 223 | Lighter LLP | not testable (no history) |
+| 224 | stable-pair DEX LPs | FAIL Stage 1 (−12%) |
+| 225 | Gains/trader-counterparty vaults | FAIL on primary rule (equal-weight 10.7% / 13.2%, ~$2.5M capacity) |
+| 227 | other savings rates | FAIL |
+| 228 | hedged TRX energy / SKY staking | TRX KILL; SKY 12.9% / 16.9% but only 112 days → FAIL, re-test ≈ 2027-01-07 |
+| 229 | hedged native staking | ATOM KILL; INJ ceiling 12.1% but no APR history → not testable |
+Lesson: two apparent passes (#214, #221) came from DefiLlama "APY" fields that leave out the price of the token earning the yield; the robustness
+checks (real token prices) removed both. Watch list: #228 SKY (re-test at 180 days), #209 Dolomite loops, #229 INJ, #205 HLP, #225 Gains.

@@ -1,0 +1,2 @@
+757c2df5-5689-5d8f-9c99-1184b656fdd7: no overlapping data
+#228 SKY pool 370a27ed (TVL $371,246,651): 112 days from 2026-07-11; Stage 1 15.38%; halves 12.85% / 16.86%; pool yield mean 5.37%, SKY short funding mean 14.41% -> FAIL

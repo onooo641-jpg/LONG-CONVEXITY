@@ -34,3 +34,7 @@ DefiLlama's GM APY is fee APY; a GM pool also wins/loses against traders and its
 h = 0.5 as registered, using DefiLlama coin prices for the GM tokens (ETH-USDC 0x70d95587d40A2caf56bd97485aB3Eec10Bee6336, BTC-USDC
 0x47c031236e19d024b42f8AE6780E44A573170703 on Arbitrum). Same bar (≥ 8% both halves, equal weight of the two pools, held). If GM prices are not
 available, #221 is reported as "passes fee-APY rule, not verified".
+
+## #221 robustness result (2026-11-21, `docs/jx_runs/gm_robust_20261121.txt`, re-run identical): FAIL
+With real GM token prices (DefiLlama, ETH-USDC and BTC-USDC GM on Arbitrum) and the registered 50% hedge: Stage 1 −32.9%/yr; halves 3.6% / 3.2%;
+worst drawdown −11.0%. The fee APY overstated the pool's return (trader PnL against the pool and imperfect hedge). #221 = FAIL.
