@@ -241,7 +241,77 @@ def job_pendle_probe():
             if isinstance(items, list) and items and isinstance(items[0], dict):
                 print(f"  item keys: {sorted(items[0].keys())}", flush=True)
 
-JOBS = {"pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+FAMILY = {"ETH": ["STETH", "WSTETH", "RETH", "CBETH", "WEETH", "EZETH", "RSETH", "METH", "SFRXETH", "OSETH", "WBETH", "ETHX", "WETH", "ETH"],
+          "SOL": ["SOL", "JITOSOL", "MSOL", "JUPSOL", "BSOL", "INF", "BNSOL", "HSOL"], "HYPE": ["HYPE", "KHYPE", "STHYPE", "WHYPE"],
+          "BTC": ["BTC", "WBTC", "CBBTC", "TBTC", "LBTC"], "AVAX": ["AVAX", "SAVAX", "WAVAX"], "BNB": ["BNB", "SLISBNB", "BNBX", "WBNB"]}
+TOK2COIN = {t: c for c, ts in FAMILY.items() for t in ts}
+YSTABLE = {"SUSDE": "USD", "SUSDS": "USD", "SDAI": "USD", "SFRXUSD": "USD"}
+
+
+def _protocol_categories():
+    d = get("https://api.llama.fi/protocols") or []
+    return {str(p.get("slug", "")).lower(): p.get("category") for p in d}
+
+
+def job_hedged():
+    """#212/#213: mapped single-exposure non-stable pools (TVL >= $20M) + histories; HL funding incl. HYPE."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    pools = pd.DataFrame((get("https://yields.llama.fi/pools") or {}).get("data", []))
+    pools["tvlUsd"] = pd.to_numeric(pools["tvlUsd"], errors="coerce")
+    pools["coin"] = pools["symbol"].str.upper().map(TOK2COIN)
+    u = pools[(pools["exposure"] == "single") & (pools["stablecoin"] != True) & pools["coin"].notna() & (pools["tvlUsd"] >= 20e6)].copy()  # noqa: E712
+    cats = _protocol_categories()
+    u["category"] = u["project"].str.lower().map(cats)
+    print(f"hedged universe: {len(u)} pools; categories {u['category'].value_counts().head(8).to_dict()}", flush=True)
+    u[["pool", "chain", "project", "symbol", "coin", "category", "tvlUsd"]].to_parquet(OUT / "hedged_pools.parquet", index=False)
+    rows = []
+    for i, p in enumerate(u["pool"]):
+        for x in (get(f"https://yields.llama.fi/chart/{p}") or {}).get("data", []):
+            rows.append({"pool": p, "ts": x.get("timestamp"), "tvlUsd": x.get("tvlUsd"), "apyBase": x.get("apyBase"), "apyReward": x.get("apyReward")})
+        time.sleep(0.3)
+    ch = pd.DataFrame(rows)
+    ch["ts"] = pd.to_datetime(ch["ts"], utc=True)
+    for c in ("tvlUsd", "apyBase", "apyReward"):
+        ch[c] = pd.to_numeric(ch[c], errors="coerce")
+    ch.to_parquet(OUT / "hedged_charts.parquet", index=False)
+    print(f"hedged charts: {ch['pool'].nunique()} pools, {len(ch)} rows", flush=True)
+    f = []
+    for c in FAMILY:
+        r = _hl(c)
+        print(f"  hl funding {c}: {len(r)}", flush=True)
+        f += [{"coin": c, "t": t, "rate": v} for t, v in r]
+    pd.DataFrame(f).to_parquet(OUT / "hedged_hlfunding.parquet", index=False)
+
+
+def job_lendborrow_corr():
+    """#219: lendBorrow rows for LSTs / yield-bearing stables and their base assets, with supply and borrow histories."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    lb = pd.DataFrame(get("https://yields.llama.fi/lendBorrow") or [])
+    pools = pd.DataFrame((get("https://yields.llama.fi/pools") or {}).get("data", []))
+    m = lb.merge(pools[["pool", "chain", "project", "symbol", "tvlUsd"]], on="pool", how="inner")
+    sym = m["symbol"].str.upper()
+    want = set(TOK2COIN) | set(YSTABLE) | {"USDC", "USDT", "USDT0", "USDS", "DAI"}
+    m = m[sym.isin(want) & (pd.to_numeric(m["tvlUsd"], errors="coerce") >= 5e6)]
+    print(f"corr lendBorrow rows: {len(m)}", flush=True)
+    keep = [c for c in ("pool", "chain", "project", "symbol", "tvlUsd", "ltv", "borrowable") if c in m]
+    m[keep].to_parquet(OUT / "corrloop_pools.parquet", index=False)
+    rows = []
+    for p in m["pool"]:
+        b = {pd.Timestamp(x["timestamp"]).floor("D"): x for x in (get(f"https://yields.llama.fi/chartLendBorrow/{p}") or {}).get("data", [])}
+        sup = {pd.Timestamp(x["timestamp"]).floor("D"): x for x in (get(f"https://yields.llama.fi/chart/{p}") or {}).get("data", [])}
+        for d in sorted(set(sup)):
+            bb = b.get(d, {})
+            rows.append({"pool": p, "day": d, "apyBase": sup[d].get("apyBase"), "apyReward": sup[d].get("apyReward"), "tvlUsd": sup[d].get("tvlUsd"),
+                         "apyBaseBorrow": bb.get("apyBaseBorrow"), "apyRewardBorrow": bb.get("apyRewardBorrow")})
+        time.sleep(0.4)
+    df = pd.DataFrame(rows)
+    for c in df.columns[2:]:
+        df[c] = pd.to_numeric(df[c], errors="coerce")
+    df.to_parquet(OUT / "corrloop_charts.parquet", index=False)
+    print(f"corr charts: {df['pool'].nunique() if len(df) else 0} pools, {len(df)} rows", flush=True)
+
+
+JOBS = {"hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys

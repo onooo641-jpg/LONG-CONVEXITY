@@ -1,3 +1,5 @@
 # jobs for scripts/fetch_fallback.py (one per line)
 lendborrow
 pendle_probe
+hedged
+lendborrow_corr
