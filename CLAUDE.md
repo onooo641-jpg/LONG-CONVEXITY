@@ -47,6 +47,9 @@ Breakout dropped: no API) and `docs/PREREG_MARKETMIX_20261120.md` (NQ/ES/YM mix 
 - Tests: `uv run pytest -q`.
 
 ## Where results live
+- **`docs/INDEX.md` first:** the repo has three workstreams (A prop-firm recycling, B liquidation bot #100,
+  C non-prop search/radar). Write prop-firm notes to `docs/NOTES_JX.md` and non-prop notes to
+  `docs/NOTES_NONPROP.md` (except verdict sections a pre-registration already names in NOTES_JX).
 - `docs/NOTES_JX.md`: running log and conclusions (latest: "Conclusion of the 2026-11-20 search").
 - `docs/IDEAS_64_STATUS.md`: status of the original 64 ideas.
 - `docs/HANDOFF_NONPROP.md`: what non-prop ideas were tried, why they failed, what is left.

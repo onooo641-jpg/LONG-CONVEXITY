@@ -1,5 +1,8 @@
 # LONG-CONVEXITY — prop-firm account recycling on Topstep
 
+> **Repo map:** this README covers the prop-firm business. The repo also holds a separate liquidation-bot
+> project and a non-prop search; see [`docs/INDEX.md`](docs/INDEX.md).
+
 **This is not a trading strategy that is expected to make money by itself.**
 It is a system for running a small business on top of a prop firm's account
 rules. It buys cheap Topstep evaluations and trades them with one fixed,
