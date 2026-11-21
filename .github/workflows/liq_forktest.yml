@@ -71,8 +71,8 @@ jobs:
             if cast block-number --rpc-url "$u" >/dev/null 2>&1; then
               echo "== rpc $u" | tee -a "$log"
               export RPC_URL="$u"
-              forge test --root contracts -vv --fork-retries 8 --fork-retry-backoff 3000 > "$log.tmp" 2>&1
-              frc=$?
+              frc=0
+              forge test --root contracts -vv --fork-retries 8 --fork-retry-backoff 3000 > "$log.tmp" 2>&1 || frc=$?
               cat "$log.tmp" | tee -a "$log"
               rm -f "$log.tmp"
               if [ "$frc" = "0" ]; then rc=0; break; fi
