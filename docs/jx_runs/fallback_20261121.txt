@@ -1,0 +1,22 @@
+bar: net >= 8.0%/yr in both halves (2024-11..2025-10, 2025-11..2026-10); pilot kill < 4.0%
+
+#204 stablecoin yield rotation (top 5 by trailing 30-day yield, monthly)
+  universe 727 pools; loss-stress events 7
+  2026-08: 47e72726 28.2%, 1a9c61c7 15.5%, 145810df 14.7%, cb6139f9 14.0%, a99bb965 13.5%
+  2026-09: 47e72726 17.9%, a99bb965 14.7%, 1a9c61c7 14.3%, cb6139f9 13.1%, d85a7f5f 12.9%
+  2026-10: da8c4ac9 36.2%, ae3397ed 17.4%, 47e72726 14.7%, a99bb965 13.0%, cb6139f9 12.6%
+  Stage 1 (2026-08..10): 13.23%/yr -> continue
+  half 1 -6.53%/yr, half 2 4.79%/yr, whole -0.87%/yr; worst month -6.16%; months negative 6
+  baseline Aave v3 USDC Ethereum: 5.16% / 3.46%
+  $ per year: $-87 on $10K, $-348 on $40K (Topstep slot $4,097/yr on ~$3.5K at risk)
+  last month's holdings (projects): 3jane-lending, apyx-protocol, brix, saturn, veranta
+  VERDICT: FAIL (a half below 8.0%/yr)
+
+#205 Hyperliquid HLP vault
+  102 daily points 2023-05-10..2026-11-21; in window 54
+  largest gap between points: 14.0 days
+  Stage 1 (2026-08..10): 4.89%/yr -> continue
+  half 1 27.65%/yr, half 2 7.88%/yr, whole 18.45%/yr; worst drawdown -0.80%; worst month -0.76%; months negative 3
+  $ per year: $1,845 on $10K, $7,381 on $40K
+  VERDICT: FAIL
+

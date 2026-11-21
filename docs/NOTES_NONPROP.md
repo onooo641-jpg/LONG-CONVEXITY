@@ -41,3 +41,18 @@ pre-registered loss-event proxy (TVL fell to 32% of its 7-day high) → near-mis
 BOLD-USDC (39.9% reward APR, $8.6M TVL); it will be queued only if its 90-day realised yield ranks it top-3.
 For workstream A (not acted on here): Alpha Futures Standard 50K could be a manual-entry slot (real net above Topstep at the same delay),
 needs a person at the screen 22:30–00:30 MYT and the copy/third-party-signal clauses read by hand.
+
+## Radar update (2026-11-21, afternoon): new firms priced, non-prop fallback tests
+**New firms.** Sitemaps of propfirmmatch and saveonpropfirms gave 20 futures firms not on the watch list; their own help centres were
+crawled. Priced (rules from own pages, prices from directories = third-party):
+- **FuturesElite Elite 50K, manual entry 3 min late: $31,071 real / $5,903 coin flip (79%) / dip −$2,560 → meets the pre-registered
+  "extra slot" flag** (Topstep at the same delay: $37,348 / $14,701 / −$3,094). Fragile: at $160 → $28.0K / $2.4K; at $200 → $24.2K / −$2.2K.
+  The first run ($44,000) used an assumed funded lock and was corrected from FuturesElite's own page before reporting (addendum 6).
+- Goat Flex 50K (bots): $23,784 / −$3,419; Blueberry Ascent 50K (bots, self-built only): $23,397 / −$4,016. Both below Topstep.
+- Bot policy (directory text, third-party) for the rest: bots allowed at BluSky, DayTraders, Funded Futures Network, Finotive, The Trading Pit,
+  IQ Capital / Traders Launch (conditions); manual only at Purdia, AquaFunded, Hola Prime, YLOS, The5ers Futures. Their 50K rules or prices
+  were not readable, so not priced. Several firms allow only bots running "your own strategy": usable only while the friend holds the accounts.
+**Non-prop fallback tests (`docs/PREREG_FALLBACK_20261121.md`): both FAIL.** Stablecoin yield rotation −6.5% / 4.8% by half after loss stress
+(the highest yields are the pools that collapse); Hyperliquid HLP 27.7% / 7.9% by half (near-miss, yield falling).
+**Flag to Jx:** FuturesElite passes the prop-firm pricing flag (not a non-prop opportunity); it needs the price confirmed and a person placing
+trades by hand within 3 minutes. No non-prop flag.

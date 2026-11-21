@@ -36,3 +36,14 @@ seen). A PASS is a fallback candidate, not a recommendation to deposit; any depo
 
 Commands: data via `.github/workflows/fallback_fetch.yml` (`scripts/fetch_fallback.py`); test
 `uv run python scripts/fallback_20261121.py | tee docs/jx_runs/fallback_20261121.txt`.
+
+## Results (2026-11-21, `docs/jx_runs/fallback_20261121.txt`, re-run identical)
+| # | idea | Stage 1 (Aug–Oct 2026) | half 1 / half 2 | verdict |
+|---|---|---|---|---|
+| 204 | stablecoin yield rotation, top 5 | 13.2%/yr | **−6.5% / 4.8%** (7 loss-stress events; 6 negative months) | **FAIL** |
+| 205 | Hyperliquid HLP vault | 4.9%/yr | **27.7% / 7.9%** (drawdown −0.8% on sparse points) | **FAIL** (half 2 below 8.0% by 0.1 point) |
+
+Reading: chasing the highest stablecoin yields picks the pools that later collapse (7 TVL crashes among 120 pool-months held; with the
+assumed 20% loss each, the strategy loses money; baseline Aave USDC paid 5.2% / 3.5%). HLP paid well in 2024–25 but its yield is falling
+(7.9% in the second year, 4.9% in the last three months); the history API returns only ~weekly points (102 over 3.5 years), so the drawdown
+is understated. Neither is a fallback at the pre-registered bar; HLP is a near-miss to re-check in 6 months (on $40K it paid ~$3.2K in year two).
