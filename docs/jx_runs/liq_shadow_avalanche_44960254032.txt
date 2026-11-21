@@ -1,0 +1,8 @@
+avalanche: v2 start, head 101018719
+avalanche: loaded 13204 cached positions
+avalanche: recalibrated 150 cached positions
+avalanche: positions ready: 13204 users, 2786 with debt
+avalanche: reopened 52 recorded unhealthy episodes
+avalanche: head 101019039 cycles 265 debtors 2785 cand 78 last_cycle 5515 ms rpc ok/err 1365/24
+avalanche: head 101019342 cycles 552 debtors 2785 cand 78 last_cycle 945 ms rpc ok/err 2811/31
+avalanche: head 101019627 cycles 844 debtors 2785 cand 78 last_cycle 1044 ms rpc ok/err 4253/38
