@@ -1,0 +1,4 @@
+=== liq_morphobase_s1
+  rpc error eth_getLogs @ https://base.api.pocket.network: {'code': -32602, 'message': 'eth_getLogs block range too large (max 10001 blocks)'}
+  rpc error eth_getLogs @ https://base.gateway.tenderly.co: {'code': -32602, 'message': 'invalid params', 'data': 'Block range too large: maximum 1000 blocks without an access key. Try [0x23d9f5f, 0x23da347], or use an access key for larger ranges.'}
+  morphobase_s1: scanned to block 38233552/45402126 (1293 events, 10 min)
