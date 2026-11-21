@@ -1,0 +1,48 @@
+# PREREG: liquidation shadow test (candidate #100, stage 2) — written 2026-11-21, before any shadow data exists
+
+Question: could a small bot, running our watcher and executor, have fired BEFORE the actual winner on enough Aave v3 liquidations to earn real money after the costs
+the earlier test could not see (flash-loan premium, DEX slippage, gas)? Follows `docs/PREREG_LIQUIDATIONS_20261120.md` (registered pass, verdict BUILD in simulate-only mode).
+Simulate-only: nothing is sent on-chain, no private key with funds exists, nothing is paid for. The executor contract runs only on local forks inside CI.
+
+## Stage 0: desk check (done now, no data)
+- Protocol rules: Aave v3 `liquidationCall` is permissionless; anyone may call it. No platform rule is being evaded. (Verified: public Aave docs/ABI, third-party knowledge; contract behaviour is re-verified by the fork tests.)
+- Bot policy: liquidation bots are an intended protocol role (the bonus exists to pay them). No detection or geoblock circumvention is used: only public RPC endpoints and GitHub Actions, as already used for data.
+- Malaysia: no check done on legality of operating a liquidation bot from Malaysia; the Aave web front end may restrict some regions but this bot never uses it. Treat as UNVERIFIED legal risk; Jx must decide before any live use.
+- Five-part filter: already passed in the #100 verdict (repeatable, long-lived, one setup, capped downside by design, scales by adding chains).
+
+## Stage 1: gate before shadow starts
+Fork tests (Foundry, GitHub Actions, one local fork per chain) must pass on each venue before that venue enters the shadow test:
+(i) liquidates an artificially unhealthy position (oracle mocked) and leaves profit > 0 in the executor; (ii) reverts when profit < min_profit; (iii) flash loan is repaid
+(premium paid) in the success case; (iv) reverts on a healthy position and on an unusable swap route, losing nothing but simulated gas. A venue whose tests cannot be made to pass
+is dropped by an addendum (committed before any shadow results) and the GO rules below then apply to the remaining venues; they are not loosened.
+
+## Stage 2: shadow test
+- Venues: the Aave v3 main pool on Arbitrum (0x794a…14ad), Base (0xa238…d1c5), Avalanche (0x794a…14ad), Polygon (0x794a…14ad), Optimism (0x794a…14ad). Forks excluded.
+- Duration: 4 consecutive weeks (week k = hours 168(k-1) to 168k after `data/shadow/start.json` `start_ts`, set when the first run starts watching all venues). Watching runs in GitHub Actions
+  (chained ~5.9-hour jobs, free on a public repo). Watcher uptime per chain is logged; events while a chain was not being watched are EXCLUDED from every denominator and reported as a gap.
+- Watcher: tracked borrower set per chain = borrowers from Borrow events in the 180 days before start, plus users liquidated in the 24-month dataset, plus new Borrow events live.
+  Each cycle (as fast as the public RPC allows; measured and logged): head block, `getUserAccountData` for the tracked set via Multicall3 (risky tier HF < 1.05 every cycle, all others at least every 60 s).
+  First time a user's health factor < 1 is seen, the watcher builds the simulated transaction immediately: debt = largest variable-debt reserve, collateral = largest usable collateral reserve,
+  debtToCover = min(close factor x debt, USD 250,000), close factor 50% (100% if HF < 0.95); seized collateral = debtToCover x price_debt / price_collateral x liquidationBonus (capped at the user's collateral balance);
+  DEX proceeds from Uniswap v3 QuoterV2 `quoteExactInputSingle` at the current head (best of fee tiers 100/500/3000/10000, direct pair, else via the chain's wrapped native token). Record `N_ready` = head block number read
+  right after the simulation finished, and wall time.
+- Every actual liquidation on the venue (LiquidationCall logs, scanned continuously) is logged with block B_w, user, assets, amounts, tx sender, and the winner's receipt (gasUsed x effectiveGasPrice + L1 fee).
+  Actual bonus USD = collateral amount x oracle price - debt amount x oracle price (Aave oracle, read within seconds of the event).
+- Definitions (fixed now):
+  * ELIGIBLE liquidation: on one of the five venues, inside watcher uptime, actual bonus > USD 50.
+  * FIRE-FIRST: an eligible liquidation whose user has a simulated record with N_ready + 1 < B_w (our transaction could have been included in a block strictly before the winner's), record created after the user's previous liquidation or healthy observation, and simulated net > 0.
+    Records are matched to the first liquidation of that user after them; later liquidations of the same user need a new record.
+  * SIMULATED NET (USD) for a fire-first event = proceeds from the quote (at the oracle price of the debt asset) - debtToCover x (1 + flash premium) - the winner's actual gas cost (USD, native token at oracle price).
+    Flash premium = pool `FLASHLOAN_PREMIUM_TOTAL()`. The winner's gas is deliberately used as our cost (we would have had to outbid it). Events with simulated net <= 0 are not fired (count in neither numerator nor net).
+  * Miss reasons are logged: not in tracked set; in set but not seen unhealthy 2+ blocks earlier; simulated net <= 0.
+- GO, evaluated after week 4 (all must hold):
+  (a) fire-first on >= 10% of eligible liquidations, all venues pooled;
+  (b) simulated net >= USD 500 per month across all venues (4-week sum x 30/28);
+  (c) simulated net sum positive in at least 3 of the 4 weeks.
+- KILLED EARLY: after week 1, if fire-first < 2% of eligible liquidations AND week-1 simulated net < USD 50. Stop and write the verdict. A stage may stop the test early; nothing may declare GO early.
+- NO-GO: week 4 completed and GO not met.
+- INCONCLUSIVE: fewer than 200 eligible liquidations over the 4 weeks, or any single venue unwatched more than 25% of the time; then extend once by 2 weeks, re-evaluating the same rules on the extended window.
+- Latency caveat (stated now, not a rule change): the watcher runs from GitHub Actions with public RPCs, which is slower than a VPS with a paid node. A NO-GO or KILL caused by latency is reported as "latency-limited" together with
+  the share of misses where our detection came within 3 blocks of the winner, and the cost of the cheaper faster setup goes under "Action for Jx" in NOTES_JX. The GO rules above are not relaxed by this.
+- Weekly: `docs/jx_runs/liq_shadow_week<k>.txt` (from `scripts/liq_shadow_summary.py`) committed with the logs under `data/shadow/`. The final verdict goes in `docs/NOTES_JX.md` "Liquidation shadow test: verdict".
+- Costs: none. No keys with funds, no deployment. Any live pilot needs Jx's explicit approval.
