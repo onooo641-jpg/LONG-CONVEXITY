@@ -1,0 +1,18 @@
+=== liq_replay_base
+base: oracle 0x2cc0fc26ed4563a5ce5e8bdcfe1a2878676ae156, source updates in window for 0 assets
+  rpc error eth_call @ https://base.gateway.tenderly.co: {'code': 3, 'message': 'execution reverted'}
+  rpc exception eth_getLogs @ https://base.gateway.tenderly.co: HTTP 429
+  base: 25/321 (0.9 min)
+  base: 50/321 (1.6 min)
+  base: 75/321 (2.3 min)
+  base: 100/321 (2.8 min)
+  base: 125/321 (3.0 min)
+  base: 150/321 (3.6 min)
+  base: 175/321 (3.8 min)
+  base: 200/321 (4.1 min)
+  base: 225/321 (4.3 min)
+  base: 250/321 (4.6 min)
+  base: 275/321 (4.9 min)
+  base: 300/321 (5.4 min)
+base: replay stage 2 wrote 321 rows
+=== liq_replay_base done in 337s  ok 863 fail 8
