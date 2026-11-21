@@ -1,0 +1,7 @@
+=== liq_replay_polygon
+  rpc exception eth_getLogs @ https://poly.api.pocket.network: HTTP 400
+polygon: oracle 0xb023e699f5a33916ea823a16485e259257ca8bd1, source updates in window for 3 assets
+  rpc error eth_call @ https://polygon.gateway.tenderly.co: {'code': 3, 'message': 'execution reverted', 'data': '0x'}
+  polygon: 225/372 (16.9 min)
+  polygon: 250/372 (18.3 min)
+  polygon: 275/372 (19.3 min)
