@@ -1,2 +1,2 @@
 # shadow start request
-run 3 (v2 + calibrated local HF)
+run 4 (reopen recorded episodes)

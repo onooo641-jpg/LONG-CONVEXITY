@@ -497,7 +497,30 @@ class Chain:
         debtors = len([1 for p in positions.values() if p])
         print(f"{self.name}: positions ready: {len(positions)} users, {debtors} with debt", flush=True)
         log_next = st.get("log_next", head + 1)
+        # reopen unhealthy episodes that were already recorded (no duplicate records after a restart)
         open_rec = {}
+        last_rec, closed = {}, {}
+        for line in (self.dir / "unhealthy.jsonl").read_text().splitlines() if (self.dir / "unhealthy.jsonl").exists() else []:
+            try:
+                r = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            if r.get("ver") != 2:
+                continue
+            if r.get("healed"):
+                closed[r["user"]] = max(closed.get(r["user"], 0), r["wall"])
+            else:
+                last_rec[r["user"]] = r
+        for line in (self.dir / "liquidations.jsonl").read_text().splitlines() if (self.dir / "liquidations.jsonl").exists() else []:
+            try:
+                r = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            closed[r["user"]] = max(closed.get(r["user"], 0), r.get("seen_wall", 0))
+        for u, r in last_rec.items():
+            if closed.get(u, 0) < r["wall"]:
+                open_rec[u] = r
+        print(f"{self.name}: reopened {len(open_rec)} recorded unhealthy episodes", flush=True)
         up_start = time.time()
         self.jappend("uptime.jsonl", dict(kind="start", wall=up_start, block=head, ver=2))
         last_flush = last_hb = last_pos = last_refresh = time.time()
@@ -545,10 +568,10 @@ class Chain:
                 for u, p in positions.items():
                     if p:
                         h = self.local_hf(p, mk)
-                        if h < 1.03:
+                        if h < 1.03 and not (u in open_rec and h < 1.0):   # known-unhealthy users stay out of the way until they look healthy
                             cands.append((h, u))
                 cands.sort()
-                for i in range(0, min(len(cands), 120), 60):
+                for i in range(0, min(len(cands), 180), 60):
                     batch = [u for _, u in cands[i:i + 60]]
                     rr = self.rpc.multicall([(self.pool, SEL["getUserAccountData"] + w(u)) for u in batch])
                     for u, (ok, d) in zip(batch, rr):
