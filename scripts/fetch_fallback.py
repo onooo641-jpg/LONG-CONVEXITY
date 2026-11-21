@@ -100,7 +100,89 @@ def job_probe():
             print(f"PROBE {k}: FAIL {str(e)[:120]}", flush=True)
 
 
-JOBS = {"stable_hlp": job_stable_hlp, "probe": job_probe}
+COINS = ["BTC", "ETH", "SOL", "XRP", "DOGE", "AVAX", "LINK", "SUI", "ARB", "OP", "LTC", "BNB"]
+F_START = int(pd.Timestamp("2024-10-30", tz="UTC").timestamp())
+F_END = int(pd.Timestamp("2026-11-01", tz="UTC").timestamp())
+
+
+def _hl(coin):
+    rows, t = [], F_START * 1000
+    while t < F_END * 1000:
+        d = get("https://api.hyperliquid.xyz/info", {"type": "fundingHistory", "coin": coin, "startTime": t, "endTime": F_END * 1000})
+        if not d:
+            break
+        rows += [(int(x["time"]) // 1000, float(x["fundingRate"])) for x in d]
+        if len(d) < 2:
+            break
+        t = int(d[-1]["time"]) + 1
+        time.sleep(0.3)
+    return rows
+
+
+def _dydx(coin):
+    rows, before = [], pd.Timestamp(F_END, unit="s", tz="UTC")
+    for _ in range(400):
+        u = f"https://indexer.dydx.trade/v4/historicalFunding/{coin}-USD?limit=100&effectiveBeforeOrAt={before.strftime('%Y-%m-%dT%H:%M:%S.000Z')}"
+        d = (get(u) or {}).get("historicalFunding") or []
+        if not d:
+            break
+        for x in d:
+            rows.append((int(pd.Timestamp(x["effectiveAt"]).timestamp()), float(x["rate"])))
+        last = pd.Timestamp(d[-1]["effectiveAt"])
+        if last.timestamp() <= F_START or len(d) < 100:
+            break
+        before = last - pd.Timedelta(seconds=1)
+        time.sleep(0.15)
+    return rows
+
+
+def _aevo(coin):
+    rows, end = [], F_END * 10**9
+    for _ in range(800):
+        u = f"https://api.aevo.xyz/funding-history?instrument_name={coin}-PERP&start_time={F_START * 10**9}&end_time={end}&limit=50"
+        d = (get(u) or {}).get("funding_history") or []
+        if not d:
+            break
+        for x in d:
+            rows.append((int(x[1]) // 10**9, float(x[2])))
+        oldest = min(int(x[1]) for x in d)
+        if oldest <= F_START * 10**9 or len(d) < 50:
+            break
+        end = oldest - 1
+        time.sleep(0.15)
+    return rows
+
+
+def _gate(coin):
+    rows, to = [], F_END
+    for _ in range(50):
+        d = get(f"https://api.gateio.ws/api/v4/futures/usdt/funding_rate?contract={coin}_USDT&limit=1000&from={F_START}&to={to}") or []
+        if not d:
+            break
+        rows += [(int(x["t"]), float(x["r"])) for x in d]
+        oldest = min(int(x["t"]) for x in d)
+        if oldest <= F_START or len(d) < 1000:
+            break
+        to = oldest - 1
+        time.sleep(0.2)
+    return rows
+
+
+def job_funding():
+    """#208: funding histories (rate per settlement; Gate per its interval) for HL, dYdX v4, Aevo, Gate."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    out = []
+    for venue, fn in (("hl", _hl), ("dydx", _dydx), ("aevo", _aevo), ("gate", _gate)):
+        for c in COINS:
+            r = fn(c)
+            print(f"  {venue} {c}: {len(r)} rows" + (f" {pd.Timestamp(min(r)[0], unit='s').date()}..{pd.Timestamp(max(r)[0], unit='s').date()}" if r else ""), flush=True)
+            out += [{"venue": venue, "coin": c, "t": t, "rate": v} for t, v in r]
+    df = pd.DataFrame(out).drop_duplicates(["venue", "coin", "t"])
+    df.to_parquet(OUT / "fundgap_funding.parquet", index=False)
+    print(f"funding rows: {len(df)}", flush=True)
+
+
+JOBS = {"stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding}
 
 if __name__ == "__main__":
     import sys
