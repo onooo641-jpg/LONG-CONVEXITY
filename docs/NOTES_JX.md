@@ -703,3 +703,10 @@ If the shadow result is "latency-limited", the cheapest upgrade is, in order (al
 2. A paid or free-tier private RPC (Alchemy/QuickNode/Chainstack class). Free tiers may be enough for the watcher; websocket/low-latency tiers are roughly US$50–100+/month per the vendors' public pricing.
 3. For a later LIVE pilot (needs your explicit approval, not part of this test): a fresh hot wallet funded with only gas money (assumed US$50–100 per chain, loss capped by design), executor deployment gas (assumed under US$5 per L2 chain, more on Polygon/Avalanche spikes), plus items 1–2. Rough total: US$300–500 one-off + US$10–110/month. Risks: contract bug, key theft, governance cutting bonuses, competition.
 Nothing above is purchased or started.
+
+## Liquidation shadow test: progress (2026-11-21)
+Pre-registered: `docs/PREREG_LIQ_SHADOW_20261121.md` (3 addenda). Executor contract (`contracts/src/LiqExecutor.sol`) passed all four fork tests on all five venues (Arbitrum, Base, Optimism, Polygon, Avalanche); logs `docs/jx_runs/liq_forktest_*`.
+Watcher v2 (`scripts/liq_shadow.py`) runs on GitHub Actions (cron every 6 h, one job per chain, free on this public repo): ~0.6–2 s per cycle on Arbitrum/Optimism/Avalanche, Polygon and Base slower; positions cached with `actions/cache`; logs committed to `data/shadow/`.
+The 4-week clock started about 2026-11-21 06:10 UTC (when all five venues were watching). Scheduled checks: 2026-11-22 (health), 2026-11-28 (week 1, includes the pre-registered early-kill rule), 2026-12-05, 2026-12-12, and the final verdict 2026-12-19; each fires a fresh session that runs `scripts/liq_shadow_summary.py` and commits the result.
+Honest expectation: the public-RPC watcher is slower than a VPS with a private node, so a poor fire-first rate may be latency-limited; the final report separates that from "no opportunity" using the near-miss counts.
+Nothing is bought, deployed or sent on-chain; no keys with funds exist.
