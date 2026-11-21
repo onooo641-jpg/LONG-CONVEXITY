@@ -1,0 +1,13 @@
+optimism: v2 start, head 159819259
+optimism: bootstrap to block 154603259/159819259 users 16243
+optimism: bootstrap to block 156913259/159819259 users 16431
+optimism: bootstrap DONE, users 16686
+optimism: positions 600/16686 (0.1 min)
+optimism: positions 3600/16686 (0.5 min)
+optimism: positions 6600/16686 (0.8 min)
+optimism: positions 9600/16686 (1.2 min)
+optimism: positions 12600/16686 (1.5 min)
+optimism: positions 15600/16686 (1.9 min)
+optimism: positions ready: 16686 users, 4504 with debt
+optimism: head 159819647 cycles 313 debtors 4505 cand 1898 last_cycle 946 ms rpc ok/err 2780/3
+optimism: head 159819797 cycles 633 debtors 4505 cand 1892 last_cycle 893 ms rpc ok/err 4286/7
