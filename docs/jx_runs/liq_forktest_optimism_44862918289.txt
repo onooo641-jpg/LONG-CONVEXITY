@@ -1,0 +1,16 @@
+fork test optimism run 44862918289 2026-11-21T03:47:56Z
+== rpc https://mainnet.optimism.io
+Compiling 2 files with Solc 0.8.26
+Solc 0.8.26 finished in 191.56ms
+Compiler run successful!
+[2m2026-11-21T03:48:59.883480Z[0m [31mERROR[0m [2msharedbackend[0m[2m:[0m Failed to send/recv `storage` [3merr[0m[2m=[0mfailed to get storage for 0xeb0D8D9e19B749eFB20c67D71EE50b46dFE5755F at 113899900689118390888773283031165620577991710373874270560509618600911826852138: Max retries exceeded HTTP error 429 with body: {"jsonrpc":"2.0","error":{"code":-32016,"message":"Your IP has exceeded its requests per second capacity. Please consider using a dedicated API provider: https://community.optimism.io/docs/useful-tools/providers"},"id":324} [3maddress[0m[2m=[0m0xeb0D8D9e19B749eFB20c67D71EE50b46dFE5755F [3mindex[0m[2m=[0m113899900689118390888773283031165620577991710373874270560509618600911826852138
+
+Ran 4 tests for test/LiqExecutor.t.sol:LiqExecutorForkTest
+[PASS] test_profitable_liquidation_repays_flash_loan() (gas: 1873078)
+[PASS] test_reverts_on_healthy_position() (gas: 1151542)
+[PASS] test_reverts_on_unusable_route() (gas: 534508)
+[PASS] test_reverts_when_below_min_profit() (gas: 3199614)
+Suite result: ok. 4 passed; 0 failed; 0 skipped; finished in 71.08s (74.90s CPU time)
+
+Ran 1 test suite in 71.08s (71.08s CPU time): 4 tests passed, 0 failed, 0 skipped (4 total tests)
+exit 0
