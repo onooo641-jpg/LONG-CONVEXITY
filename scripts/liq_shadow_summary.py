@@ -109,7 +109,7 @@ def match(chain, dd, start_ts):
             else:
                 net = sim["net_before_gas_usd"] - ev["gas_usd"]
                 cls = "fire_first" if net > 0 else "sim_net_le0"
-        out.append(dict(chain=chain, week=int((ev["ts"] - start_ts) // WEEK), cls=cls, net=net if cls == "fire_first" else 0.0,
+        out.append(dict(chain=chain, ts=ev["ts"], week=int((ev["ts"] - start_ts) // WEEK), cls=cls, net=net if cls == "fire_first" else 0.0,
                         bonus=ev["bonus_usd"], gap_blocks=(ev["block"] - rec["n_ready"]) if rec else None))
     return out
 

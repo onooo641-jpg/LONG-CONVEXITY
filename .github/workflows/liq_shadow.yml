@@ -24,9 +24,12 @@ jobs:
       - id: p
         run: |
           c=$(grep -v '^\s*#' .github/liq_shadow_chains.txt | grep -v '^\s*$' | jq -R . | jq -sc .)
+          # log-only extension ends at a completed CRASH WINDOW or 2027-06-30 (PREREG_LIQ_SHADOW addendum 4d)
+          if [ -f data/shadow/crash_window_done ] || [ "$(date -u +%F)" \> "2027-06-30" ]; then c='[]'; fi
           echo "chains=$c" >> "$GITHUB_OUTPUT"
   watch:
     needs: plan
+    if: needs.plan.outputs.chains != '[]'
     runs-on: ubuntu-latest
     timeout-minutes: 358
     strategy:

@@ -135,3 +135,49 @@ def test_local_hf_calibration_factor():
     pos = dict(c=[(0, 10.0, 1.00, 0.8)], d=[(1, 9900.0, 0.0)], t=0, k=1.5)
     mk = ([2000.0, 1.0], [1.0, 1.0], [1.0, 1.0])
     assert abs(ls.Chain.local_hf(pos, mk) - 1.5 * (10 * 2000 * 0.8) / 9900) < 1e-9
+
+
+# ---- addendum 4: near-the-line buckets, stress flag, alert dedupe, crash window
+import liq_alert as al  # noqa: E402
+import liq_crash_window as cw  # noqa: E402
+
+
+def test_hf_buckets_sums():
+    items = [(1.001, 100.0), (1.019, 50.0), (1.02, 10.0), (1.049, 5.0), (1.05, 1.0), (1.099, 2.0), (1.10, 999.0), (0.99, 777.0)]
+    b = ls.hf_buckets(items)
+    assert b["1.00-1.02"] == {"users": 2, "debt_usd": 150.0}
+    assert b["1.02-1.05"] == {"users": 2, "debt_usd": 15.0}
+    assert b["1.05-1.10"] == {"users": 2, "debt_usd": 3.0}      # 1.10 and below 1.00 are outside every bucket
+
+
+def test_stress_flag():
+    assert ls.stress_flag(10, [2000.0, 2001.0])[0] is True                 # count rule
+    assert ls.stress_flag(9, [2000.0, 2001.0])[0] is False
+    flag, move = ls.stress_flag(0, [2000.0, 2100.0, 2050.0])              # 5% range within the hour
+    assert flag and abs(move - 5.0) < 1e-9
+    assert ls.stress_flag(0, [2000.0, 2099.0])[0] is False
+    assert ls.stress_flag(0, [])[0] is False
+
+
+def test_alert_decide_dedupe():
+    status = {"arbitrum": 5.0, "base": 90.0, "polygon": 200.0, "optimism": None}
+    # base has an open issue already: no duplicate; polygon needs one; arbitrum is fine; optimism has no data: silent
+    acts = al.decide(status, {"liq watcher down: base"})
+    assert acts == [("create", "liq watcher down: polygon")]
+    # recovery closes the open issue
+    assert al.decide({"base": 3.0}, {"liq watcher down: base"}) == [("close", "liq watcher down: base")]
+    # exactly at threshold is not down
+    assert al.decide({"base": 60.0}, set()) == []
+
+
+def test_crash_window_detection():
+    d0 = 1_800_000_000 - 1_800_000_000 % 86400
+    ev = [(d0 + 3 * 86400 + 100, 400_000.0), (d0 + 10 * 86400, 700_000.0), (d0 + 80 * 86400, 5_000_000.0)]
+    now = d0 + 100 * 86400
+    start, end, state = cw.find_window(ev, d0, now)
+    assert start == d0 and end == d0 + 30 * 86400 and state == "complete"      # first start day whose 30d sum > 1M
+    # no window when the sum stays under the line
+    assert cw.find_window([(d0 + 86400, 900_000.0)], d0, now)[2] == "none"
+    # window still open when `now` is inside it
+    s, e, st = cw.find_window([(d0 + 86400, 600_000.0), (d0 + 2 * 86400, 600_000.0)], d0, d0 + 5 * 86400)
+    assert st == "open" and s == d0

@@ -1,0 +1,30 @@
+# Uptime alert + CRASH WINDOW report for the liquidation shadow watcher (PREREG_LIQ_SHADOW_20261121 addendum 4c, 4d).
+# Opens one issue per chain ("liq watcher down: <chain>") when the last committed heartbeat is > 60 min old; closes it when the chain is back.
+name: liquidation alert
+
+on:
+  schedule:
+    - cron: "11,41 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  alert:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - name: Alert
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/liq_alert.py
+      - name: Crash window report (only does anything after a verdict.json exists)
+        run: python3 scripts/liq_crash_window.py --write
+      - name: Commit crash-window outputs
+        run: .github/scripts/commit_push.sh "crash-window" || true

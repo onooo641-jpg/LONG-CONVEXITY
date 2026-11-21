@@ -57,6 +57,29 @@ CAP_USD = 250_000.0
 BATCH, MAX_PER_CYCLE = 60, 600   # users per multicall (eth_call gas cap) and per cycle
 
 
+NL_EDGES = [(1.00, 1.02, "1.00-1.02"), (1.02, 1.05, "1.02-1.05"), (1.05, 1.10, "1.05-1.10")]
+
+
+def hf_buckets(items):
+    """items: iterable of (health_factor, debt_usd) -> {bucket: {users, debt_usd}} (PREREG_LIQ_SHADOW addendum 4a)."""
+    out = {name: {"users": 0, "debt_usd": 0.0} for _, _, name in NL_EDGES}
+    for h, d in items:
+        for lo, hi, name in NL_EDGES:
+            if lo <= h < hi:
+                out[name]["users"] += 1
+                out[name]["debt_usd"] += d
+                break
+    return out
+
+
+def stress_flag(n_eligible_1h, samples):
+    """addendum 4b: stress if >= 10 eligible liquidations in the hour OR wrapped-native price range >= 5% within the hour.
+    samples: list of prices over the hour. returns (flag, move_pct)."""
+    px = [x for x in samples if x]
+    move = (max(px) - min(px)) / min(px) * 100.0 if len(px) >= 2 else 0.0
+    return (n_eligible_1h >= 10 or move >= 5.0), move
+
+
 def tier_interval(h):
     """seconds between health-factor refreshes (PREREG_LIQ_SHADOW addendum 1)."""
     return 0 if h < 1.05 else 10 if h < 1.2 else 60 if h < 1.5 else 300
@@ -359,6 +382,7 @@ class Chain:
         except Exception as e:  # noqa: BLE001
             rec["err"] = str(e)[:100]
         self.jappend("liquidations.jsonl", rec)
+        return rec
 
     # ---- v2: local health-factor engine (positions snapshotted once, re-priced every cycle from 1 multicall)
     def market(self):
@@ -424,6 +448,16 @@ class Chain:
                 if len(ww) >= 6 and ww[1] > 0 and 0 < raw < 98:
                     out[u]["k"] = (ww[5] / 1e18) / raw
         return out
+
+    @staticmethod
+    def debt_usd(pos, mk):
+        px, inc, vd = mk
+        debt = 0.0
+        for j, sc, st in pos["d"]:
+            if px[j] is None or vd[j] is None:
+                continue
+            debt += (sc * vd[j] + st) * px[j]
+        return debt
 
     @staticmethod
     def local_hf(pos, mk):
@@ -526,6 +560,8 @@ class Chain:
         last_flush = last_hb = last_pos = last_refresh = time.time()
         n_cycles = 0
         T_EVENTS = [T_BORROW, T_LIQ, T_SUPPLY, T_WITHDRAW, T_REPAY, T_COLL_ON, T_COLL_OFF]
+        wn_i = self.meta["assets"].index(self.c["wn"]) if self.c["wn"] in self.meta["assets"] else None
+        wn_samples, liq_times, last_nl = [], [], 0.0     # (wall, price); eligible liquidation wall times; last hourly record
         while time.time() < deadline:
             t0 = time.time()
             try:
@@ -542,7 +578,9 @@ class Chain:
                     for lg in logs:
                         t0_, tp = lg["topics"][0], lg["topics"]
                         if t0_ == T_LIQ:
-                            self.log_liquidation(lg)
+                            lrec = self.log_liquidation(lg)
+                            if lrec.get("bonus_usd", 0) > 50:
+                                liq_times.append(time.time())
                             u = "0x" + tp[3][-40:]
                             open_rec.pop(u, None)
                         elif t0_ in (T_BORROW, T_SUPPLY, T_WITHDRAW, T_REPAY, T_COLL_ON, T_COLL_OFF):
@@ -556,6 +594,13 @@ class Chain:
                         dirty.add(u)
                     log_next = e + 1
                 mk = self.market()
+                now_ = time.time()
+                if wn_i is not None and mk[0][wn_i]:
+                    wn_samples.append((now_, mk[0][wn_i]))
+                wn_samples = [x for x in wn_samples if now_ - x[0] <= 3600]
+                liq_times = [x for x in liq_times if now_ - x <= 3600]
+                do_nl = now_ - last_nl >= 3600
+                nl_items = []
                 # background refresh of the oldest snapshots (non-event balance changes)
                 if time.time() - last_refresh > 20:
                     old = sorted([u for u, p in positions.items() if p], key=lambda u: positions[u]["t"])[:40]
@@ -568,6 +613,8 @@ class Chain:
                 for u, p in positions.items():
                     if p:
                         h = self.local_hf(p, mk)
+                        if do_nl and 1.0 <= h < 1.10:
+                            nl_items.append((h, self.debt_usd(p, mk)))
                         if h < 1.03 and not (u in open_rec and h < 1.0):   # known-unhealthy users stay out of the way until they look healthy
                             cands.append((h, u))
                 cands.sort()
@@ -589,6 +636,11 @@ class Chain:
                         elif hff >= 1.0 and u in open_rec:
                             self.jappend("unhealthy.jsonl", dict(ver=2, chain=self.name, user=u, healed=True, block_seen=head, wall=time.time()))
                             open_rec.pop(u)
+                if do_nl:
+                    flag, move = stress_flag(len(liq_times), [x[1] for x in wn_samples])
+                    self.jappend("near_line.jsonl", dict(ver=2, chain=self.name, kind="hour", wall=now_, block=head, buckets=hf_buckets(nl_items),
+                                                         eligible_liq_1h=len(liq_times), wn_move_pct=round(move, 3), stress=bool(flag)))
+                    last_nl = now_
                 n_cycles += 1
                 self.stats.update(cycles=n_cycles, tracked=len(users), debtors=len([1 for p in positions.values() if p]),
                                   last_cycle_ms=int((time.time() - t0) * 1000), candidates=len(cands))
