@@ -1,0 +1,28 @@
+=== batch4
+batch4 pools: 122 {'224': 73, '227': 31, '220': 12, '225': 4, '221': 2}
+batch4 charts: 122 pools
+megavault points: 86; keys ['blockHeight', 'blockTime', 'createdAt', 'equity', 'netTransfers', 'totalPnl']
+  FAIL https://mainnet.zklighter.elliot.ai/api/v1/publicPools?index=0&limit=5 HTTP Error 403: Forbidden
+PROBE lighter_pools: no answer
+PROBE lighter_llp: answered, keys ['code', 'public_pools']
+PROBE jup_jlp: answered, keys ['aumLimitUsd', 'aumLimitUsdFormatted', 'aumUsd', 'aumUsdFormatted', 'custodies', 'jlpAprBps', 'jlpAprLastUpdatedTimestamp', 'jlpAprPct', 'jlpApyBps', 'jlpApyPct', 'jlpPriceUsd', 'jlpPriceUsdFormatted', 'jlpRealizedFeeUsd', 'jlpTotalSupply', 'jlpTotalSupplyFormatted']
+=== batch5
+  hl 90d funding TRX: 2280
+  hl 90d funding SKY: 2280
+  hl 90d funding ATOM: 2280
+  hl 90d funding TIA: 2280
+  hl 90d funding INJ: 2280
+  hl 90d funding DOT: 2280
+  hl 90d funding NEAR: 2280
+  hl 90d funding APT: 2280
+  hl 90d funding SEI: 2280
+  hl 90d funding DYDX: 2280
+  lcd ATOM: inflation ok, pool ok
+  FAIL https://celestia-rest.publicnode.com/cosmos/mint/v1beta1/inflation HTTP Error 501: Not Implemented
+  lcd TIA: inflation none, pool ok
+  lcd INJ: inflation ok, pool ok
+  FAIL https://sei-rest.publicnode.com/cosmos/mint/v1beta1/inflation HTTP Error 501: Not Implemented
+  lcd SEI: inflation none, pool ok
+  FAIL https://dydx-rest.publicnode.com/cosmos/mint/v1beta1/inflation HTTP Error 501: Not Implemented
+  lcd DYDX: inflation none, pool ok
+batch5 pools 3, chart rows 595
