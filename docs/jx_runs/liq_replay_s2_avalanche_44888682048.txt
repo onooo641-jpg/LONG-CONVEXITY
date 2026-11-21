@@ -1,0 +1,5 @@
+=== liq_replay_avalanche
+  rpc exception eth_getLogs @ https://avalanche.gateway.tenderly.co: HTTP 429
+avalanche: oracle 0xebd36016b3ed09d4693ed4251c67bd858c3c7c9c, source updates in window for 2 assets
+avalanche: replay stage 2 wrote 274 rows
+=== liq_replay_avalanche done in 404s  ok 1706 fail 0
