@@ -52,3 +52,14 @@ Refreshing every tracked user every 60 s is not feasible on public RPCs (thousan
 1.05–1.2 every 10 s; 1.2–1.5 every 60 s; >= 1.5 every 300 s; users with no debt only after a new Borrow event. A position that falls from HF >= 1.5 to < 1 inside 5 minutes
 can be seen late: that is counted as a miss ("in set but not seen unhealthy 2+ blocks earlier"), not excluded. Multicall batches are 60 users, max 600 users per cycle.
 The tracked set bootstraps from 180 days of Borrow events; coverage (share of actual liquidated users that were in the set) is reported.
+
+## Addendum 2 (2026-11-21, before any shadow data): Stage 1 fork-test gate result
+`contracts/test/LiqExecutor.t.sol` run by `.github/workflows/liq_forktest.yml` (Foundry, local fork per chain, logs `docs/jx_runs/liq_forktest_<chain>_<run>.txt`).
+All five venues passed all four tests (profitable liquidation repays the flash loan and leaves profit; reverts below min profit; reverts on a healthy position; reverts on an unusable route)
+with one representative collateral/debt pair each: Arbitrum WETH/USDC, Base WETH/USDC, Optimism WETH/USDC, Polygon WETH/native USDC, Avalanche BTC.b/USDC (run 44864998186 for Polygon,
+44864424865 for Avalanche, 44863668981 for the others). Pairs that failed for reasons unrelated to the executor logic were swapped for these: Avalanche WAVAX (supply cap full), WETH.e (thin pool),
+WBTC.e (frozen reserve); Polygon WMATIC/native USDC (no usable pool), USDC.e debt (frozen), WBTC (thin pool).
+What this proves: the executor mechanism on each chain. What it does not prove: that every collateral/debt pair has a usable swap route; the shadow simulation uses the live quote for the actual pair
+and a pair with no quote is logged as "sim_no_quote" (a miss). Aave v3.3+ dust rules (full liquidation if debt or collateral < USD 2,000 or HF < 0.95; no leftover < USD 1,000) were found by the tests
+(`MustNotLeaveDust`) and are now applied in the simulation (assumed to hold on all five pools; unverified for older pool versions).
+All five venues enter the shadow test. No keys with funds, nothing deployed.

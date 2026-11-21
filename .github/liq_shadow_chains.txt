@@ -1,0 +1,6 @@
+# chains enabled for .github/workflows/liq_shadow.yml (fork tests passed: PREREG_LIQ_SHADOW addendum 2)
+arbitrum
+base
+avalanche
+polygon
+optimism
