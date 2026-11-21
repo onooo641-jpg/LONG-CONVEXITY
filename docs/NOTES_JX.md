@@ -695,3 +695,11 @@ against the benchmark: Topstep recycling is $4,097/yr per slot; a liquidation bo
 - Risks to price: smart-contract bug, key management (hot wallet holds only gas money), governance cutting bonuses, volatile income, and competition from professionals on the largest events.
 
 **Next step (no spending).** Write the shadow-mode watcher and the executor contract with a local fork test; pre-register the stage-0 pass criteria (for example: simulated net ≥ $X per venue per month over 4 weeks and a would-win rate ≥ Y%) before it runs.
+
+## Action for Jx: running the liquidation shadow bot faster / always-on (decision only, nothing is bought)
+Current setup (free): GitHub Actions on a public repo, chained ~6-hour jobs, public RPCs. It runs 24/7 with short gaps at restarts and is slower than a real bot (public RPCs, one cycle every ~1-2 seconds at best).
+If the shadow result is "latency-limited", the cheapest upgrade is, in order (all prices are third-party estimates, unverified, check before buying):
+1. A small VPS, about US$4–10/month (Hetzner, DigitalOcean, Vultr class), running the same `scripts/liq_shadow.py`. Still public RPCs; removes the restart gaps.
+2. A paid or free-tier private RPC (Alchemy/QuickNode/Chainstack class). Free tiers may be enough for the watcher; websocket/low-latency tiers are roughly US$50–100+/month per the vendors' public pricing.
+3. For a later LIVE pilot (needs your explicit approval, not part of this test): a fresh hot wallet funded with only gas money (assumed US$50–100 per chain, loss capped by design), executor deployment gas (assumed under US$5 per L2 chain, more on Polygon/Avalanche spikes), plus items 1–2. Rough total: US$300–500 one-off + US$10–110/month. Risks: contract bug, key theft, governance cutting bonuses, competition.
+Nothing above is purchased or started.
