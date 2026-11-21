@@ -1,0 +1,18 @@
+=== probe
+PROBE kraken_futures: HTTP 200 {"result":"success","serverTime":"2026-11-21T12:04:38.94Z","rates":[{"timestamp":"2025-11-19T09:00:00Z","fundingRate":1.070593508530832290,"relativeFundingRate"
+PROBE deribit: HTTP 200 {"jsonrpc":"2.0","result":[{"timestamp":1730422800000,"index_price":70070.47,"interest_8h":4.266988603455804e-5,"interest_1h":1.8983358407085595e-6,"prev_index_
+PROBE dydx_v4: HTTP 200 {"historicalFunding":[{"ticker":"BTC-USD","rate":"0.00002025","price":"58111.83","effectiveAtHeight":"114754221","effectiveAt":"2026-11-21T12:00:00.363Z"},{"tic
+PROBE paradex: HTTP 200 {"next":"eyJmaWx0ZXIiOnsiTWFya2V0IjoiQlRDLVVTRC1QRVJQIiwiTGltaXQiOjUsIlN0YXJ0VGltZSI6MCwiRW5kVGltZSI6MH0sInRpbWUiOjE3OTUyNjI2Nzk5NTI3NjExNDIsIm1hcmtlciI6eyJtYXJ
+PROBE lighter: HTTP 200 {"code":200,"resolution":"1h","fundings":[]}
+PROBE drift: FAIL <urlopen error [Errno -2] Name or service not known>
+PROBE binance: FAIL HTTP Error 451: 
+PROBE bybit: FAIL HTTP Error 403: Forbidden
+PROBE okx: HTTP 200 {"code":"0","data":[{"formulaType":"withRate","fundingRate":"-0.0000463876770293","fundingTime":"1795248000000","instId":"BTC-USDT-SWAP","instType":"SWAP","meth
+PROBE bitget: HTTP 200 {"code":"00000","msg":"success","requestTime":1795262680697,"data":[{"symbol":"BTCUSDT","fundingRate":"-0.000029","fundingTime":"1795248000000"},{"symbol":"BTCU
+PROBE gate: HTTP 200 [{"r":"-0.0000597","t":1795248000},{"r":"-0.0000493","t":1795219200},{"r":"-0.0000047","t":1795190400},{"r":"0.0000068","t":1795161600},{"r":"0.0000401","t":179
+PROBE kucoin: HTTP 200 {"code":"200000","data":[{"symbol":"XBTUSDTM","fundingRate":-4.5E-5,"timepoint":1730491200000},{"symbol":"XBTUSDTM","fundingRate":2.2E-5,"timepoint":17304624000
+PROBE mexc: HTTP 200 {"success":true,"code":0,"data":{"pageSize":5,"totalCount":1620,"totalPage":324,"currentPage":1,"resultList":[{"symbol":"BTC_USDT","fundingRate":0.000019,"settl
+PROBE coinbase_intl: HTTP 200 <!DOCTYPE html><html lang="en" class="is-loading"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width"/><title>Deribit - Crypto Optio
+PROBE bitmex: FAIL HTTP Error 403: Forbidden
+PROBE aevo: HTTP 200 {"funding_history":[["BTC-PERP","1795262400000000000","0.000001","58119.514073"],["BTC-PERP","1795258800000000000","0.000001","57852.854932"],["BTC-PERP","17952
+PROBE gmx_arb: HTTP 200 {"markets":[{"name":"BTC/USD [WBTC.b-USDC]","marketToken":"0x47c031236e19d024b42f8AE6780E44A573170703","indexToken":"0x47904963fc8b2340414262125aF798B9655E58Cd"
