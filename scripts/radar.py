@@ -381,7 +381,7 @@ def collect_pages():
         auto = [s for s in ss if AUTOMATION_RE.search(s)][:30]
         my = [s for s in ss if re.search(r"malaysia", s, re.I) or (RESTRICT_RE.search(s) and re.search(r"countr", s, re.I))][:6]
         pages.append({**res, "sha": sha, "auto_snips": " || ".join(auto), "my_snips": " || ".join(my)})
-        if res["kind"] in ("firm", "firm_sub") and (auto or my):
+        if res["kind"] in ("firm", "firm_sub", "directory_firm") and (auto or my):
             snippets.append((res["name"], res["url"], auto, my))
     pg = pd.DataFrame(pages)
     save(pg, "pages")

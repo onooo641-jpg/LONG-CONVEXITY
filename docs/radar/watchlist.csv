@@ -76,3 +76,23 @@ rel_morpho_blue,Morpho blue,release,https://github.com/morpho-org/morpho-blue/re
 rel_drift_sdk,Drift protocol-v2,release,https://github.com/drift-labs/protocol-v2/releases.atom
 rel_dydx_v4,dYdX v4,release,https://github.com/dydxprotocol/v4-chain/releases.atom
 rel_merkl,Merkl contracts,release,https://github.com/AngleProtocol/merkl-contracts/releases.atom
+dir_sopf_blusky_trading_company,blusky-trading-company (via saveonpropfirms),directory_firm,https://saveonpropfirms.com/prop-firms/blusky-trading-company/rules
+dir_sopf_daytraders,daytraders (via saveonpropfirms),directory_firm,https://saveonpropfirms.com/prop-firms/daytraders/rules
+dir_sopf_funded_futures_network,funded-futures-network (via saveonpropfirms),directory_firm,https://saveonpropfirms.com/prop-firms/funded-futures-network/rules
+dir_sopf_iq_capital,iq-capital (via saveonpropfirms),directory_firm,https://saveonpropfirms.com/prop-firms/iq-capital/rules
+dir_sopf_nexgen_protrader_funding,nexgen-protrader-funding (via saveonpropfirms),directory_firm,https://saveonpropfirms.com/prop-firms/nexgen-protrader-funding/rules
+dir_sopf_purdia_capital,purdia-capital (via saveonpropfirms),directory_firm,https://saveonpropfirms.com/prop-firms/purdia-capital/rules
+dir_sopf_legends_trading,legends-trading (via saveonpropfirms),directory_firm,https://saveonpropfirms.com/prop-firms/legends-trading/rules
+dir_pfm_blueberry_futures,blueberry-futures (via propfirmmatch),directory_firm,https://propfirmmatch.com/futures/prop-firms/blueberry-futures
+dir_pfm_finotive_futures,finotive-futures (via propfirmmatch),directory_firm,https://propfirmmatch.com/futures/prop-firms/finotive-futures
+dir_pfm_futureselite,futureselite (via propfirmmatch),directory_firm,https://propfirmmatch.com/futures/prop-firms/futureselite
+dir_pfm_goat_funded_futures,goat-funded-futures (via propfirmmatch),directory_firm,https://propfirmmatch.com/futures/prop-firms/goat-funded-futures
+dir_pfm_hola_prime_futures,hola-prime-futures (via propfirmmatch),directory_firm,https://propfirmmatch.com/futures/prop-firms/hola-prime-futures
+dir_pfm_trade_the_pool,trade-the-pool (via propfirmmatch),directory_firm,https://propfirmmatch.com/futures/prop-firms/trade-the-pool
+dir_pfm_traders_launch,traders-launch (via propfirmmatch),directory_firm,https://propfirmmatch.com/futures/prop-firms/traders-launch
+dir_pfm_ylos_trading,ylos-trading (via propfirmmatch),directory_firm,https://propfirmmatch.com/futures/prop-firms/ylos-trading
+dir_pfm_e8_futures,e8-futures (via propfirmmatch),directory_firm,https://propfirmmatch.com/futures/prop-firms/e8-futures
+dir_pfm_brightfunded_futures,brightfunded-futures (via propfirmmatch),directory_firm,https://propfirmmatch.com/futures/prop-firms/brightfunded-futures
+dir_pfm_the5ers_futures,the5ers-futures (via propfirmmatch),directory_firm,https://propfirmmatch.com/futures/prop-firms/the5ers-futures
+dir_pfm_the_trading_pit_futures,the-trading-pit-futures (via propfirmmatch),directory_firm,https://propfirmmatch.com/futures/prop-firms/the-trading-pit-futures
+dir_pfm_aquafunded_futures,aquafunded-futures (via propfirmmatch),directory_firm,https://propfirmmatch.com/futures/prop-firms/aquafunded-futures

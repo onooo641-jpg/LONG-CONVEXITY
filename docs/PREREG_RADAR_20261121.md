@@ -114,3 +114,11 @@ Week 1 showed the snapshot reward APR picks spikes (#201: 10.6% today, 5.6% aver
 rows by the **90-day mean of (apyBase + apyReward × 0.9) from the deep-check chart history**, not by today's reward APR; rows with
 < 90 days of history are not queued. The daily table keeps today's APR as `rank_score` for display. Max 3 tests a week, unchanged.
 Week-2 queue is chosen this way from the first run on or after 2026-11-28.
+
+## Addendum 4 (2026-11-21): new futures firms from the directory sitemaps
+Parsing the sitemaps collected in the baseline (`data/radar/directory_urls.parquet`) found 20 futures firms not on the watch list:
+BluSky Trading Company, DayTraders, Funded Futures Network, IQ Capital, NexGen ProTrader Funding, Purdia Capital, Legends (rules page),
+Blueberry Futures, Finotive Futures, FuturesElite, Goat Funded Futures, Hola Prime Futures, Trade The Pool, Traders Launch, YLOS Trading,
+E8 Futures, BrightFunded Futures, The5ers Futures, The Trading Pit Futures, AquaFunded Futures. Their directory pages (third-party) are
+added as `directory_firm` rows so their automation sentences are collected; a firm is classified only from its own pages, so each
+needs its own site added once its domain is known. Scanner change only; no thresholds changed.
