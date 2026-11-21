@@ -2936,6 +2936,28 @@
 ## Legends Trading — https://www.legendstrading.com/privacy-policy
 - AUTO: This includes, and is not limited to, stock/option price targets, positions entered, trade ideas, trade summaries, closed positions, possible stock/options positions, watchlists, position changes, trading/investment signals or call outs, or other protected content.
 
+## Lucid Trading — https://lucidtrading.com/privacypolicy/
+- AUTO: Information gathered automatically as you navigate through the Platform; or
+- AUTO: The information we collect automatically is statistical data and may include personal information, but we may maintain it or associate it with personal information we collect in other ways or receive from third parties.
+- AUTO: Verify identity and prevent fraud and abuse, including through automated means
+- AUTO: We treat the Global Privacy Control browser signal as an opt-out request where applicable law requires.
+- AUTO: We do not otherwise respond to “Do Not Track” signals.
+- AUTO: Automated Decision-Making
+- AUTO: We use automated systems, including services provided by third parties, to verify identity, prevent fraud, and enforce our program rules.
+- AUTO: If you believe an automated action was taken in error, you may request review by a person by contacting us through the support chat on our website.
+- AUTO: We share identifiers, commercial information, and internet activity with advertising, analytics, and referral partners, which some state laws may consider a “sale” or “sharing.” You may opt out through the “Do Not Sell or Share My Personal Information” link in the footer of our website or by enabling the Global Privacy Control signal in your browser.
+
+## Lucid Trading — https://lucidtrading.com/terms-of-use/
+- AUTO: Use any trading strategy that includes disruptive or prohibited practices as defined in the Program Rules and determined in Lucid’s sole discretion, including but not limited to spoofing strategies, microscalping, hedging across accounts, and high frequency trading.
+- AUTO: Use software, automation, or artificial intelligence in a manner that manipulates, abuses, or gives an unfair advantage.
+- AUTO: Automated trading systems and trade copiers are permitted where used in compliance with the Program Rules, and you are responsible for their operation.
+- AUTO: Interfere with, disrupt, overburden, or gain unauthorized access to the Website or related systems, copy or monitor its content by automated or unauthorized means, or introduce malicious code.
+- AUTO: We use automated systems to verify identity, prevent fraud, and enforce this Agreement, as described in our Privacy Policy, and you may request human review of any resulting action by contacting us through the support chat on our website.
+- AUTO: Certain add-on services are sold as recurring subscriptions, which renew automatically at the stated interval until cancelled.
+- AUTO: Each Reward with an expiration date will automatically be of no value or effect upon its stated expiration.
+- COUNTRY: Commodity Futures Trading Commission, have an outstanding balance with a trading firm, or are a citizen or resident of a country listed as restricted in our Program Rules.
+- COUNTRY: The Website, Software, and Services are not available to citizens or residents of the countries listed as restricted in our Program Rules, which we may update at any time, and certain products or payout methods may be limited by country.
+
 ## Lucid Trading — https://support.lucidtrading.com/en/articles/11404620-simulated-account-fees
 - AUTO: There is no subscription and no automatic rebilling.
 - AUTO: Resets are not automatic or free.
