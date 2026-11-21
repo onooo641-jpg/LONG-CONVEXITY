@@ -1,0 +1,2 @@
+=== liq_replay_base
+  rpc error eth_getLogs @ https://base.api.pocket.network: {'code': -32602, 'message': 'invalid argument 0: block range exceeds maximum 500'}
