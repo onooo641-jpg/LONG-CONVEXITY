@@ -1,0 +1,11 @@
+=== liq_replay_polygon
+  rpc exception eth_getLogs @ https://poly.api.pocket.network: HTTP 400
+  rpc exception eth_getLogs @ https://polygon.gateway.tenderly.co: HTTP 429
+polygon: oracle 0xb023e699f5a33916ea823a16485e259257ca8bd1, source updates in window for 3 assets
+  rpc error eth_call @ https://poly.api.pocket.network: {'code': 3, 'message': 'execution reverted', 'data': '0x'}
+  rpc error eth_call @ https://polygon.gateway.tenderly.co: {'code': 3, 'message': 'execution reverted', 'data': '0x'}
+  polygon: 25/93 (17.0 min)
+  polygon: 50/93 (18.1 min)
+  polygon: 75/93 (19.1 min)
+polygon: replay stage 1 wrote 93 rows
+=== liq_replay_polygon done in 1187s  ok 1446 fail 5
