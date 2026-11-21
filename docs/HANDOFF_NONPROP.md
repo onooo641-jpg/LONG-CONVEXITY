@@ -137,3 +137,19 @@ watch for changes. Coverage matters more than speed: seed the watch list from co
 (all futures/CFD prop firms listed on comparison sites such as propfirmmatch/propvator/saveonpropfirms; all
 lending, perp and incentive venues on DefiLlama; prediction-market reward pages). Every entry gets the five-part
 filter and, for prop firms, the coin-flip pricing step.
+
+### Wider but not looser (2026-11-21)
+Widen what is scanned; keep the filter and the tests strict.
+1. **Scan everything the cheap automated sources cover** (all DefiLlama pools/protocols, all reward-campaign
+   APIs, every prop firm in the directories), with a deliberately low first-pass threshold.
+2. **Never drop silently:** every candidate removed at any stage goes into a near-miss table with the reason
+   (failed filter check N, below threshold, no data, banned in Malaysia, bots banned). Review it monthly; a rule
+   change can turn a near-miss into a pass.
+3. **Add a category: "semi-automated" prop firms.** Many firms ban full bots but allow alert-assisted manual
+   entry (e.g. MFFU earlier, Apex, Alpha, Blue Guardian, Phidias). With ~1 trade a day a person could place the
+   bot's signal by hand. This could multiply account slots. Test needed first: the backtest's cost of a
+   human delay (re-run fills with entry 1–3 minutes late) and whether someone can be at the screen
+   ~22:30–00:30 Malaysia time. Only firms whose written rules allow it.
+4. **Check Malaysia access for every candidate** (geo-blocks, local law) before testing, not after.
+5. **The bottleneck is testing capacity, not scanning.** Test at most a few candidates a week, ranked by
+   expected money per competitor, so tests stay pre-registered and honest.
