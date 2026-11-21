@@ -1,0 +1,10 @@
+=== liq_decimals
+decimals base: tokens 31, had 31, missing 0, resolved now 0, still unknown 0
+decimals arbitrum: tokens 34, had 32, missing 2, resolved now 0, still unknown 2
+decimals optimism: tokens 19, had 17, missing 2, resolved now 0, still unknown 2
+decimals polygon: tokens 34, had 34, missing 0, resolved now 0, still unknown 0
+decimals avalanche: tokens 24, had 24, missing 0, resolved now 0, still unknown 0
+decimals gnosis: tokens 63, had 63, missing 0, resolved now 0, still unknown 0
+decimals scroll: tokens 8, had 0, missing 8, resolved now 8, still unknown 0
+decimals metis: tokens 7, had 7, missing 0, resolved now 0, still unknown 0
+=== liq_decimals done in 66s  ok 26 fail 0
