@@ -1,0 +1,39 @@
+# Data for docs/PREREG_FALLBACK_20261121.md. Started by pushing .github/fallback_request.txt or manually.
+name: fallback fetch
+on:
+  workflow_dispatch: {}
+  push:
+    branches: [claude/ict-trading-resources-ugh07b]
+    paths: [.github/fallback_request.txt]
+permissions:
+  contents: write
+concurrency:
+  group: fallback-fetch
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.ref_name }}
+      - uses: astral-sh/setup-uv@v5
+      - run: uv sync
+      - run: |
+          mkdir -p docs/jx_runs
+          uv run python scripts/fetch_fallback.py 2>&1 | tee docs/jx_runs/fetch_fallback_${{ github.run_id }}.txt
+      - name: Commit
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/public/fallback_* docs/jx_runs
+          git diff --cached --quiet && exit 0
+          git commit -m "fallback fetch: run ${{ github.run_id }}"
+          for i in 1 2 3 4 5; do
+            git pull --rebase -X theirs --no-edit origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            sleep $((i * 10))
+          done
+          exit 1
