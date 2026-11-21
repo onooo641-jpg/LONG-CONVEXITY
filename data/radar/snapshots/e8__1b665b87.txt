@@ -10,63 +10,63 @@ Read the record
 Paid out by Bank transfer Crypto Card
 Providers
 Latest payouts Live
-4h ago $25,000 Classic Markets +$487
+5h ago $25,000 Classic Markets +$487
 6h ago $50,000 Classic Markets +$306
 12h ago $5,000 Perpetual +$127
 12h ago $10,000 Classic Markets +$170
 17h ago $5,000 Classic Markets +$111
 17h ago $5,000 Classic Markets +$104
 19h ago $2,000 Classic Markets +$553
-20h ago $25,000 Perpetual +$203
-22h ago $50,000 Perpetual +$900
-22h ago $100,000 Classic Markets +$800
-22h ago $100,000 Classic Markets +$1,859
-22h ago $100,000 Classic Markets +$1,986
-22h ago $5,000 Classic Markets +$100
-22h ago $50,000 Futures +$642
-22h ago $50,000 Futures +$632
-22h ago $50,000 Futures +$632
-22h ago $50,000 Futures +$632
-22h ago $50,000 Futures +$632
-22h ago $150,000 Futures +$1,596
-22h ago $10,000 Classic Markets +$294
-22h ago $50,000 Futures +$1,031
-22h ago $25,000 Classic Markets +$372
-22h ago $25,000 Classic Markets +$370
-22h ago $25,000 Classic Markets +$370
-22h ago $25,000 Classic Markets +$367
-22h ago $25,000 Classic Markets +$792
-22h ago $100,000 Futures +$1,600
+21h ago $25,000 Perpetual +$203
+23h ago $50,000 Perpetual +$900
+23h ago $100,000 Classic Markets +$800
+23h ago $100,000 Classic Markets +$1,859
+23h ago $100,000 Classic Markets +$1,986
+23h ago $5,000 Classic Markets +$100
+23h ago $50,000 Futures +$642
+23h ago $50,000 Futures +$632
+23h ago $50,000 Futures +$632
+23h ago $50,000 Futures +$632
+23h ago $50,000 Futures +$632
+23h ago $150,000 Futures +$1,596
+23h ago $10,000 Classic Markets +$294
+23h ago $50,000 Futures +$1,031
+23h ago $25,000 Classic Markets +$372
+23h ago $25,000 Classic Markets +$370
+23h ago $25,000 Classic Markets +$370
+23h ago $25,000 Classic Markets +$367
+23h ago $25,000 Classic Markets +$792
+23h ago $100,000 Futures +$1,600
 23h ago $100,000 Futures +$2,000
 23h ago $100,000 Classic Markets +$1,620
 23h ago $200,000 Classic Markets +$7,723
-4h ago $25,000 Classic Markets +$487
+5h ago $25,000 Classic Markets +$487
 6h ago $50,000 Classic Markets +$306
 12h ago $5,000 Perpetual +$127
 12h ago $10,000 Classic Markets +$170
 17h ago $5,000 Classic Markets +$111
 17h ago $5,000 Classic Markets +$104
 19h ago $2,000 Classic Markets +$553
-20h ago $25,000 Perpetual +$203
-22h ago $50,000 Perpetual +$900
-22h ago $100,000 Classic Markets +$800
-22h ago $100,000 Classic Markets +$1,859
-22h ago $100,000 Classic Markets +$1,986
-22h ago $5,000 Classic Markets +$100
-22h ago $50,000 Futures +$642
-22h ago $50,000 Futures +$632
-22h ago $50,000 Futures +$632
-22h ago $50,000 Futures +$632
-22h ago $50,000 Futures +$632
-22h ago $150,000 Futures +$1,596
-22h ago $10,000 Classic Markets +$294
-22h ago $50,000 Futures +$1,031
-22h ago $25,000 Classic Markets +$372
-22h ago $25,000 Classic Markets +$370
-22h ago $25,000 Classic Markets +$370
-22h ago $25,000 Classic Markets +$367
-22h ago $25,000 Classic Markets +$792
-22h ago $100,000 Futures +$1,600
+21h ago $25,000 Perpetual +$203
+23h ago $50,000 Perpetual +$900
+23h ago $100,000 Classic Markets +$800
+23h ago $100,000 Classic Markets +$1,859
+23h ago $100,000 Classic Markets +$1,986
+23h ago $5,000 Classic Markets +$100
+23h ago $50,000 Futures +$642
+23h ago $50,000 Futures +$632
+23h ago $50,000 Futures +$632
+23h ago $50,000 Futures +$632
+23h ago $50,000 Futures +$632
+23h ago $150,000 Futures +$1,596
+23h ago $10,000 Classic Markets +$294
+23h ago $50,000 Futures +$1,031
+23h ago $25,000 Classic Markets +$372
+23h ago $25,000 Classic Markets +$370
+23h ago $25,000 Classic Markets +$370
+23h ago $25,000 Classic Markets +$367
+23h ago $25,000 Classic Markets +$792
+23h ago $100,000 Futures +$1,600
 23h ago $100,000 Futures +$2,000
 23h ago $100,000 Classic Markets +$1,620
 23h ago $200,000 Classic Markets +$7,723
@@ -78,14 +78,14 @@ Payouts in last month $1,275,840 823 payouts
 Average payout time 18 hours
 Average payout amount $3,219
 Date Account size Market Amount
-4 hours ago Latest $25,000 Classic Markets +$487 $25,000 account
+5 hours ago Latest $25,000 Classic Markets +$487 $25,000 account
 6 hours ago $50,000 Classic Markets +$306 $50,000 account
 12 hours ago $5,000 Perpetual +$127 $5,000 account
 12 hours ago $10,000 Classic Markets +$170 $10,000 account
 17 hours ago $5,000 Classic Markets +$111 $5,000 account
 17 hours ago $5,000 Classic Markets +$104 $5,000 account
 19 hours ago $2,000 Classic Markets +$553 $2,000 account
-20 hours ago $25,000 Perpetual +$203 $25,000 account
+21 hours ago $25,000 Perpetual +$203 $25,000 account
 Showing 1 to 8 of 30 payouts 1 / 4
 E8 is a SaaS educational simulation built for skills training, data collection, and analytical modeling. Enrollment fees purchase access to the simulation & assessment; earnings are discretionary, not guaranteed, amounts are not trading profits and contingent on E8's acceptance & licensing of your performance data. There is no live-capital, no deposits or margin risk. Hypothetical/simulated performance has inherent limitations and does not represent actual trading; results may differ materially in live market conditions.
 SimFi™ record payout holder
