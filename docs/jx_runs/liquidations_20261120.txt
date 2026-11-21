@@ -9,14 +9,14 @@ gnosis     COMPLETE (receipts missing 0, skipped non-Aave-ABI logs None)
 scroll     COMPLETE (receipts missing 19, skipped non-Aave-ABI logs None)
 metis      COMPLETE (receipts missing 0, skipped non-Aave-ABI logs None)
 == coverage per chain: events, price-valid %, receipts-imputed %
-arbitrum   events   37425 valid  94.6% gas_imputed   0.0% venues 18
-avalanche  events   21556 valid  88.9% gas_imputed   0.0% venues 6
-base       events   50417 valid  98.2% gas_imputed   0.0% venues 13
-gnosis     events    7446 valid  80.4% gas_imputed   0.0% venues 5
-metis      events    1269 valid  33.6% gas_imputed   0.0% venues 4
-optimism   events   32801 valid  96.5% gas_imputed   0.0% venues 7
-polygon    events   68016 valid  93.2% gas_imputed  65.2% venues 11
-scroll     events   10761 valid   0.0% gas_imputed   0.5% venues 3
+arbitrum   events   37425 valid  94.6% no_receipt   0.0% sampled=False invalid: no_decimals 1 no_price 1052 bonus_out_of_band 975 venues 18
+avalanche  events   21556 valid  88.9% no_receipt   0.0% sampled=False invalid: no_decimals 0 no_price 4 bonus_out_of_band 2393 venues 6
+base       events   50417 valid  98.2% no_receipt   0.0% sampled=False invalid: no_decimals 0 no_price 50 bonus_out_of_band 833 venues 13
+gnosis     events    7446 valid  80.4% no_receipt   0.0% sampled=False invalid: no_decimals 0 no_price 1393 bonus_out_of_band 66 venues 5
+metis      events    1269 valid  33.6% no_receipt   0.0% sampled=False invalid: no_decimals 0 no_price 765 bonus_out_of_band 78 venues 4
+optimism   events   32801 valid  96.5% no_receipt   0.0% sampled=False invalid: no_decimals 8 no_price 140 bonus_out_of_band 987 venues 7
+polygon    events   68016 valid  93.2% no_receipt  49.7% sampled=True invalid: no_decimals 0 no_price 1866 bonus_out_of_band 2784 venues 11
+scroll     events   10761 valid  98.0% no_receipt   0.5% sampled=False invalid: no_decimals 0 no_price 0 bonus_out_of_band 219 venues 3
 
 == monthly per venue (valid events only): n, gross$, gas$, bots, top3, top10, median net$
 
@@ -46,8 +46,8 @@ scroll     events   10761 valid   0.0% gas_imputed   0.5% venues 3
 2026-08  0    0.000  0.000     0   NaN    NaN      NaN
 2026-09  9    2.167  0.438     3 1.000    1.0    0.094
 2026-10 16    6.053  3.442     4 0.991    1.0   -0.150
-H1 {'events': 110, 'valid': 109, 'months_with_liq': 11, 'gross': np.float64(3063.344), 'gas': np.float64(80.494), 'bots': 14, 'top3': np.float64(0.7), 'top10': np.float64(0.996), 'out_net_pm': np.float64(74.438), 'out_net_flash_pm': np.float64(73.979), 'out_bots': 11, 'median_net': np.float64(0.129), 'pass': False}
-H2 {'events': 62, 'valid': 62, 'months_with_liq': 10, 'gross': np.float64(274.194), 'gas': np.float64(6.194), 'bots': 11, 'top3': np.float64(0.951), 'top10': np.float64(0.999), 'out_net_pm': np.float64(0.768), 'out_net_flash_pm': np.float64(0.751), 'out_bots': 8, 'median_net': np.float64(0.229), 'pass': False}
+H1 {'events': 110, 'valid': 109, 'months_with_liq': 11, 'scale': 1.0, 'gross': np.float64(3063.344), 'gas': np.float64(80.494), 'bots': 14, 'top3': np.float64(0.7), 'top10': np.float64(0.996), 'out_net_pm': np.float64(74.438), 'out_net_flash_pm': np.float64(73.979), 'out_bots': 11, 'median_net': np.float64(0.129), 'pass': False}
+H2 {'events': 62, 'valid': 62, 'months_with_liq': 10, 'scale': 1.0, 'gross': np.float64(274.194), 'gas': np.float64(6.194), 'bots': 11, 'top3': np.float64(0.951), 'top10': np.float64(0.999), 'out_net_pm': np.float64(0.768), 'out_net_flash_pm': np.float64(0.751), 'out_bots': 8, 'median_net': np.float64(0.229), 'pass': False}
 
 --- arbitrum 0x3ff516b89ea72585af520b64285eca5e4a0a8986 [unknown fork] total events 91
   month  n  gross    gas  bots  top3  top10  med_net
@@ -75,8 +75,8 @@ H2 {'events': 62, 'valid': 62, 'months_with_liq': 10, 'gross': np.float64(274.19
 2026-08  0  0.000  0.000     0   NaN    NaN      NaN
 2026-09  0  0.000  0.000     0   NaN    NaN      NaN
 2026-10  0  0.000  0.000     0   NaN    NaN      NaN
-H1 {'events': 90, 'valid': 90, 'months_with_liq': 6, 'gross': np.float64(60.084), 'gas': np.float64(11.307), 'bots': 2, 'top3': np.float64(1.0), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.0), 'out_net_flash_pm': np.float64(0.0), 'out_bots': 0, 'median_net': np.float64(0.431), 'pass': False}
-H2 {'events': 1, 'valid': 1, 'months_with_liq': 1, 'gross': np.float64(0.078), 'gas': np.float64(0.05), 'bots': 1, 'top3': np.float64(1.0), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.0), 'out_net_flash_pm': np.float64(0.0), 'out_bots': 0, 'median_net': np.float64(0.028), 'pass': False}
+H1 {'events': 90, 'valid': 90, 'months_with_liq': 6, 'scale': 1.0, 'gross': np.float64(60.084), 'gas': np.float64(11.307), 'bots': 2, 'top3': np.float64(1.0), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.0), 'out_net_flash_pm': np.float64(0.0), 'out_bots': 0, 'median_net': np.float64(0.431), 'pass': False}
+H2 {'events': 1, 'valid': 1, 'months_with_liq': 1, 'scale': 1.0, 'gross': np.float64(0.078), 'gas': np.float64(0.05), 'bots': 1, 'top3': np.float64(1.0), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.0), 'out_net_flash_pm': np.float64(0.0), 'out_bots': 0, 'median_net': np.float64(0.028), 'pass': False}
 
 --- arbitrum 0x54ad657851b6ae95ba3380704996caad4b7751a3 [unknown fork] total events 104
   month  n    gross    gas  bots  top3  top10  med_net
@@ -104,8 +104,8 @@ H2 {'events': 1, 'valid': 1, 'months_with_liq': 1, 'gross': np.float64(0.078), '
 2026-08 50   11.646  1.164     3   1.0    1.0    0.134
 2026-09  0    0.000  0.000     0   NaN    NaN      NaN
 2026-10 13   33.112  0.574     3   1.0    1.0    0.013
-H1 {'events': 24, 'valid': 24, 'months_with_liq': 5, 'gross': np.float64(197.551), 'gas': np.float64(64.014), 'bots': 1, 'top3': np.float64(1.0), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.0), 'out_net_flash_pm': np.float64(0.0), 'out_bots': 0, 'median_net': np.float64(-0.055), 'pass': False}
-H2 {'events': 80, 'valid': 80, 'months_with_liq': 7, 'gross': np.float64(1958.604), 'gas': np.float64(2.79), 'bots': 5, 'top3': np.float64(0.999), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.079), 'out_net_flash_pm': np.float64(0.076), 'out_bots': 2, 'median_net': np.float64(0.153), 'pass': False}
+H1 {'events': 24, 'valid': 24, 'months_with_liq': 5, 'scale': 1.0, 'gross': np.float64(197.551), 'gas': np.float64(64.014), 'bots': 1, 'top3': np.float64(1.0), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.0), 'out_net_flash_pm': np.float64(0.0), 'out_bots': 0, 'median_net': np.float64(-0.055), 'pass': False}
+H2 {'events': 80, 'valid': 80, 'months_with_liq': 7, 'scale': 1.0, 'gross': np.float64(1958.604), 'gas': np.float64(2.79), 'bots': 5, 'top3': np.float64(0.999), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.079), 'out_net_flash_pm': np.float64(0.076), 'out_bots': 2, 'median_net': np.float64(0.153), 'pass': False}
 
 --- arbitrum 0x794a61358d6845594f94dc1db02a252b5b4814ad [Aave v3] total events 36494
   month     n       gross       gas  bots  top3  top10  med_net
@@ -133,8 +133,8 @@ H2 {'events': 80, 'valid': 80, 'months_with_liq': 7, 'gross': np.float64(1958.60
 2026-08   122   29447.630     8.693    33 0.851  0.994    0.529
 2026-09   144   35851.145     7.347    31 0.933  0.993    0.060
 2026-10   270   21482.220    29.003    40 0.715  0.975    0.099
-H1 {'events': 26340, 'valid': 24568, 'months_with_liq': 12, 'gross': np.float64(12085156.592), 'gas': np.float64(101546.831), 'bots': 1441, 'top3': np.float64(0.302), 'top10': np.float64(0.449), 'out_net_pm': np.float64(696952.719), 'out_net_flash_pm': np.float64(692848.873), 'out_bots': 1438, 'median_net': np.float64(0.039), 'pass': True}
-H2 {'events': 10154, 'valid': 10092, 'months_with_liq': 12, 'gross': np.float64(5691087.85), 'gas': np.float64(8275.275), 'bots': 1419, 'top3': np.float64(0.086), 'top10': np.float64(0.236), 'out_net_pm': np.float64(432795.337), 'out_net_flash_pm': np.float64(429932.104), 'out_bots': 1416, 'median_net': np.float64(16.696), 'pass': True}
+H1 {'events': 26340, 'valid': 24568, 'months_with_liq': 12, 'scale': 1.0, 'gross': np.float64(12085156.592), 'gas': np.float64(101546.831), 'bots': 1441, 'top3': np.float64(0.302), 'top10': np.float64(0.449), 'out_net_pm': np.float64(696952.719), 'out_net_flash_pm': np.float64(692848.873), 'out_bots': 1438, 'median_net': np.float64(0.039), 'pass': True}
+H2 {'events': 10154, 'valid': 10092, 'months_with_liq': 12, 'scale': 1.0, 'gross': np.float64(5691087.85), 'gas': np.float64(8275.275), 'bots': 1419, 'top3': np.float64(0.086), 'top10': np.float64(0.236), 'out_net_pm': np.float64(432795.337), 'out_net_flash_pm': np.float64(429932.104), 'out_bots': 1416, 'median_net': np.float64(16.696), 'pass': True}
 
 --- arbitrum 0xd059ce50d1f9c745fc353594b0861e89c49cf0e7 [unknown fork] total events 77
   month  n  gross   gas  bots  top3  top10  med_net
@@ -162,8 +162,8 @@ H2 {'events': 10154, 'valid': 10092, 'months_with_liq': 12, 'gross': np.float64(
 2026-08  0  0.000 0.000     0   NaN    NaN      NaN
 2026-09  0  0.000 0.000     0   NaN    NaN      NaN
 2026-10  0  0.000 0.000     0   NaN    NaN      NaN
-H1 {'events': 77, 'valid': 77, 'months_with_liq': 8, 'gross': np.float64(13.458), 'gas': np.float64(5.45), 'bots': 5, 'top3': np.float64(0.989), 'top10': np.float64(1.0), 'out_net_pm': np.float64(-0.01), 'out_net_flash_pm': np.float64(-0.01), 'out_bots': 2, 'median_net': np.float64(-0.001), 'pass': False}
-H2 {'events': 0, 'valid': 0, 'months_with_liq': 0, 'gross': np.float64(0.0), 'gas': np.float64(0.0), 'bots': 0, 'top3': nan, 'top10': nan, 'out_net_pm': 0.0, 'out_net_flash_pm': 0.0, 'out_bots': 0, 'median_net': nan, 'pass': False}
+H1 {'events': 77, 'valid': 77, 'months_with_liq': 8, 'scale': 1.0, 'gross': np.float64(13.458), 'gas': np.float64(5.45), 'bots': 5, 'top3': np.float64(0.989), 'top10': np.float64(1.0), 'out_net_pm': np.float64(-0.01), 'out_net_flash_pm': np.float64(-0.01), 'out_bots': 2, 'median_net': np.float64(-0.001), 'pass': False}
+H2 {'events': 0, 'valid': 0, 'months_with_liq': 0, 'scale': 0.0, 'gross': np.float64(0.0), 'gas': np.float64(0.0), 'bots': 0, 'top3': nan, 'top10': nan, 'out_net_pm': 0.0, 'out_net_flash_pm': 0.0, 'out_bots': 0, 'median_net': nan, 'pass': False}
 
 --- arbitrum 0xe1ee45db12ac98d16f1342a03c93673d74527b55 [unknown fork] total events 371
   month  n   gross    gas  bots  top3  top10  med_net
@@ -191,8 +191,8 @@ H2 {'events': 0, 'valid': 0, 'months_with_liq': 0, 'gross': np.float64(0.0), 'ga
 2026-08  3   0.475  0.108     2 1.000    1.0    0.149
 2026-09 23   7.430  1.049     3 1.000    1.0    0.063
 2026-10 40  12.347  0.732     4 0.990    1.0    0.050
-H1 {'events': 167, 'valid': 138, 'months_with_liq': 12, 'gross': np.float64(469.73), 'gas': np.float64(40.31), 'bots': 4, 'top3': np.float64(0.949), 'top10': np.float64(1.0), 'out_net_pm': np.float64(1.945), 'out_net_flash_pm': np.float64(1.936), 'out_bots': 1, 'median_net': np.float64(0.301), 'pass': False}
-H2 {'events': 204, 'valid': 116, 'months_with_liq': 12, 'gross': np.float64(42.231), 'gas': np.float64(3.604), 'bots': 8, 'top3': np.float64(0.818), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.615), 'out_net_flash_pm': np.float64(0.611), 'out_bots': 5, 'median_net': np.float64(0.076), 'pass': False}
+H1 {'events': 167, 'valid': 138, 'months_with_liq': 12, 'scale': 1.0, 'gross': np.float64(469.73), 'gas': np.float64(40.31), 'bots': 4, 'top3': np.float64(0.949), 'top10': np.float64(1.0), 'out_net_pm': np.float64(1.945), 'out_net_flash_pm': np.float64(1.936), 'out_bots': 1, 'median_net': np.float64(0.301), 'pass': False}
+H2 {'events': 204, 'valid': 116, 'months_with_liq': 12, 'scale': 1.0, 'gross': np.float64(42.231), 'gas': np.float64(3.604), 'bots': 8, 'top3': np.float64(0.818), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.615), 'out_net_flash_pm': np.float64(0.611), 'out_bots': 5, 'median_net': np.float64(0.076), 'pass': False}
 
 --- arbitrum 0xeb9a387494922d5ec20631c19d51c39c45ac8643 [unknown fork] total events 44
   month  n  gross   gas  bots  top3  top10  med_net
@@ -220,8 +220,8 @@ H2 {'events': 204, 'valid': 116, 'months_with_liq': 12, 'gross': np.float64(42.2
 2026-08  0  0.000 0.000     0   NaN    NaN      NaN
 2026-09  0  0.000 0.000     0   NaN    NaN      NaN
 2026-10  0  0.000 0.000     0   NaN    NaN      NaN
-H1 {'events': 30, 'valid': 0, 'months_with_liq': 5, 'gross': np.float64(0.0), 'gas': np.float64(0.0), 'bots': 0, 'top3': nan, 'top10': nan, 'out_net_pm': 0.0, 'out_net_flash_pm': 0.0, 'out_bots': 0, 'median_net': nan, 'pass': False}
-H2 {'events': 14, 'valid': 1, 'months_with_liq': 3, 'gross': np.float64(-0.002), 'gas': np.float64(0.013), 'bots': 1, 'top3': nan, 'top10': nan, 'out_net_pm': np.float64(0.0), 'out_net_flash_pm': np.float64(0.0), 'out_bots': 0, 'median_net': np.float64(-0.015), 'pass': False}
+H1 {'events': 30, 'valid': 0, 'months_with_liq': 5, 'scale': 0.0, 'gross': np.float64(0.0), 'gas': np.float64(0.0), 'bots': 0, 'top3': nan, 'top10': nan, 'out_net_pm': 0.0, 'out_net_flash_pm': 0.0, 'out_bots': 0, 'median_net': nan, 'pass': False}
+H2 {'events': 14, 'valid': 1, 'months_with_liq': 3, 'scale': 1.0, 'gross': np.float64(-0.002), 'gas': np.float64(0.013), 'bots': 1, 'top3': nan, 'top10': nan, 'out_net_pm': np.float64(0.0), 'out_net_flash_pm': np.float64(0.0), 'out_bots': 0, 'median_net': np.float64(-0.015), 'pass': False}
 
 --- arbitrum 0xf9a82c9dd095076fcdc7507d6cf920eeffa93ba2 [unknown fork] total events 29
   month  n  gross   gas  bots  top3  top10  med_net
@@ -249,8 +249,8 @@ H2 {'events': 14, 'valid': 1, 'months_with_liq': 3, 'gross': np.float64(-0.002),
 2026-08  0  0.000 0.000     0   NaN    NaN      NaN
 2026-09  0  0.000 0.000     0   NaN    NaN      NaN
 2026-10  0  0.000 0.000     0   NaN    NaN      NaN
-H1 {'events': 24, 'valid': 0, 'months_with_liq': 6, 'gross': np.float64(0.0), 'gas': np.float64(0.0), 'bots': 0, 'top3': nan, 'top10': nan, 'out_net_pm': 0.0, 'out_net_flash_pm': 0.0, 'out_bots': 0, 'median_net': nan, 'pass': False}
-H2 {'events': 5, 'valid': 3, 'months_with_liq': 1, 'gross': np.float64(0.144), 'gas': np.float64(0.036), 'bots': 1, 'top3': np.float64(1.0), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.0), 'out_net_flash_pm': np.float64(0.0), 'out_bots': 0, 'median_net': np.float64(0.024), 'pass': False}
+H1 {'events': 24, 'valid': 0, 'months_with_liq': 6, 'scale': 0.0, 'gross': np.float64(0.0), 'gas': np.float64(0.0), 'bots': 0, 'top3': nan, 'top10': nan, 'out_net_pm': 0.0, 'out_net_flash_pm': 0.0, 'out_bots': 0, 'median_net': nan, 'pass': False}
+H2 {'events': 5, 'valid': 3, 'months_with_liq': 1, 'scale': 1.0, 'gross': np.float64(0.144), 'gas': np.float64(0.036), 'bots': 1, 'top3': np.float64(1.0), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.0), 'out_net_flash_pm': np.float64(0.0), 'out_bots': 0, 'median_net': np.float64(0.024), 'pass': False}
 
 --- avalanche 0x4f01aed16d97e3ab5ab2b501154dc9bb0f1a5a2c [unknown fork] total events 4073
   month    n     gross     gas  bots  top3  top10  med_net
@@ -278,8 +278,8 @@ H2 {'events': 5, 'valid': 3, 'months_with_liq': 1, 'gross': np.float64(0.144), '
 2026-08   39   340.284   1.690     9 0.920  1.000    0.122
 2026-09   33  1429.984 213.679    13 0.941  0.999    0.483
 2026-10   26  1220.537  98.581    16 0.836  0.998    0.555
-H1 {'events': 1530, 'valid': 1523, 'months_with_liq': 12, 'gross': np.float64(66787.728), 'gas': np.float64(1419.78), 'bots': 107, 'top3': np.float64(0.265), 'top10': np.float64(0.529), 'out_net_pm': np.float64(3988.159), 'out_net_flash_pm': np.float64(3960.01), 'out_bots': 104, 'median_net': np.float64(0.193), 'pass': True}
-H2 {'events': 2543, 'valid': 2542, 'months_with_liq': 12, 'gross': np.float64(30615.804), 'gas': np.float64(972.337), 'bots': 67, 'top3': np.float64(0.296), 'top10': np.float64(0.637), 'out_net_pm': np.float64(1725.938), 'out_net_flash_pm': np.float64(1705.93), 'out_bots': 64, 'median_net': np.float64(0.128), 'pass': True}
+H1 {'events': 1530, 'valid': 1523, 'months_with_liq': 12, 'scale': 1.0, 'gross': np.float64(66787.728), 'gas': np.float64(1419.78), 'bots': 107, 'top3': np.float64(0.265), 'top10': np.float64(0.529), 'out_net_pm': np.float64(3988.159), 'out_net_flash_pm': np.float64(3960.01), 'out_bots': 104, 'median_net': np.float64(0.193), 'pass': True}
+H2 {'events': 2543, 'valid': 2542, 'months_with_liq': 12, 'scale': 1.0, 'gross': np.float64(30615.804), 'gas': np.float64(972.337), 'bots': 67, 'top3': np.float64(0.296), 'top10': np.float64(0.637), 'out_net_pm': np.float64(1725.938), 'out_net_flash_pm': np.float64(1705.93), 'out_bots': 64, 'median_net': np.float64(0.128), 'pass': True}
 
 --- avalanche 0x794a61358d6845594f94dc1db02a252b5b4814ad [Aave v3] total events 17195
   month    n       gross       gas  bots  top3  top10  med_net
@@ -307,8 +307,8 @@ H2 {'events': 2543, 'valid': 2542, 'months_with_liq': 12, 'gross': np.float64(30
 2026-08   66    4864.998   200.315    23 0.672  0.994    0.170
 2026-09   56   12272.774     3.335    21 0.859  0.998    0.045
 2026-10   50   36049.601   548.569    36 0.668  0.941  101.060
-H1 {'events': 11204, 'valid': 9025, 'months_with_liq': 12, 'gross': np.float64(5939942.836), 'gas': np.float64(62105.173), 'bots': 283, 'top3': np.float64(0.41), 'top10': np.float64(0.655), 'out_net_pm': np.float64(287596.118), 'out_net_flash_pm': np.float64(285944.161), 'out_bots': 280, 'median_net': np.float64(0.013), 'pass': True}
-H2 {'events': 5991, 'valid': 5786, 'months_with_liq': 12, 'gross': np.float64(2614754.189), 'gas': np.float64(33440.668), 'bots': 236, 'top3': np.float64(0.262), 'top10': np.float64(0.553), 'out_net_pm': np.float64(158081.554), 'out_net_flash_pm': np.float64(157009.9), 'out_bots': 233, 'median_net': np.float64(0.543), 'pass': True}
+H1 {'events': 11204, 'valid': 9025, 'months_with_liq': 12, 'scale': 1.0, 'gross': np.float64(5939942.836), 'gas': np.float64(62105.173), 'bots': 283, 'top3': np.float64(0.41), 'top10': np.float64(0.655), 'out_net_pm': np.float64(287596.118), 'out_net_flash_pm': np.float64(285944.161), 'out_bots': 280, 'median_net': np.float64(0.013), 'pass': True}
+H2 {'events': 5991, 'valid': 5786, 'months_with_liq': 12, 'scale': 1.0, 'gross': np.float64(2614754.189), 'gas': np.float64(33440.668), 'bots': 236, 'top3': np.float64(0.262), 'top10': np.float64(0.553), 'out_net_pm': np.float64(158081.554), 'out_net_flash_pm': np.float64(157009.9), 'out_bots': 233, 'median_net': np.float64(0.543), 'pass': True}
 
 --- avalanche 0xb702ce183b4e1faa574834715e5d4a6378d0eed3 [unknown fork] total events 233
   month  n  gross   gas  bots  top3  top10  med_net
@@ -336,8 +336,8 @@ H2 {'events': 5991, 'valid': 5786, 'months_with_liq': 12, 'gross': np.float64(26
 2026-08 63  2.454 0.084     5 0.946    1.0    0.006
 2026-09  8  0.021 0.012     2 1.000    1.0    0.001
 2026-10  0  0.000 0.000     0   NaN    NaN      NaN
-H1 {'events': 91, 'valid': 91, 'months_with_liq': 12, 'gross': np.float64(32.238), 'gas': np.float64(7.169), 'bots': 6, 'top3': np.float64(0.854), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.369), 'out_net_flash_pm': np.float64(0.366), 'out_bots': 3, 'median_net': np.float64(0.046), 'pass': False}
-H2 {'events': 142, 'valid': 141, 'months_with_liq': 10, 'gross': np.float64(5.827), 'gas': np.float64(0.508), 'bots': 9, 'top3': np.float64(0.644), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.151), 'out_net_flash_pm': np.float64(0.149), 'out_bots': 6, 'median_net': np.float64(0.005), 'pass': False}
+H1 {'events': 91, 'valid': 91, 'months_with_liq': 12, 'scale': 1.0, 'gross': np.float64(32.238), 'gas': np.float64(7.169), 'bots': 6, 'top3': np.float64(0.854), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.369), 'out_net_flash_pm': np.float64(0.366), 'out_bots': 3, 'median_net': np.float64(0.046), 'pass': False}
+H2 {'events': 142, 'valid': 141, 'months_with_liq': 10, 'scale': 1.0, 'gross': np.float64(5.827), 'gas': np.float64(0.508), 'bots': 9, 'top3': np.float64(0.644), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.151), 'out_net_flash_pm': np.float64(0.149), 'out_bots': 6, 'median_net': np.float64(0.005), 'pass': False}
 
 --- avalanche 0xc246579105cd52a40c0e654cadeb34c39f2dbe3f [unknown fork] total events 39
   month  n  gross   gas  bots  top3  top10  med_net
@@ -365,8 +365,8 @@ H2 {'events': 142, 'valid': 141, 'months_with_liq': 10, 'gross': np.float64(5.82
 2026-08  0  0.000 0.000     0   NaN    NaN      NaN
 2026-09  0  0.000 0.000     0   NaN    NaN      NaN
 2026-10  0  0.000 0.000     0   NaN    NaN      NaN
-H1 {'events': 16, 'valid': 16, 'months_with_liq': 4, 'gross': np.float64(8.517), 'gas': np.float64(1.049), 'bots': 5, 'top3': np.float64(0.878), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.042), 'out_net_flash_pm': np.float64(0.041), 'out_bots': 2, 'median_net': np.float64(0.073), 'pass': False}
-H2 {'events': 23, 'valid': 23, 'months_with_liq': 5, 'gross': np.float64(30.581), 'gas': np.float64(4.146), 'bots': 6, 'top3': np.float64(0.992), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.019), 'out_net_flash_pm': np.float64(0.019), 'out_bots': 3, 'median_net': np.float64(0.001), 'pass': False}
+H1 {'events': 16, 'valid': 16, 'months_with_liq': 4, 'scale': 1.0, 'gross': np.float64(8.517), 'gas': np.float64(1.049), 'bots': 5, 'top3': np.float64(0.878), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.042), 'out_net_flash_pm': np.float64(0.041), 'out_bots': 2, 'median_net': np.float64(0.073), 'pass': False}
+H2 {'events': 23, 'valid': 23, 'months_with_liq': 5, 'scale': 1.0, 'gross': np.float64(30.581), 'gas': np.float64(4.146), 'bots': 6, 'top3': np.float64(0.992), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.019), 'out_net_flash_pm': np.float64(0.019), 'out_bots': 3, 'median_net': np.float64(0.001), 'pass': False}
 
 --- base 0x09b11746dfd1b5a8325e30943f8b3d5000922e03 [unknown fork] total events 393
   month  n     gross     gas  bots  top3  top10  med_net
@@ -394,8 +394,8 @@ H2 {'events': 23, 'valid': 23, 'months_with_liq': 5, 'gross': np.float64(30.581)
 2026-08  2   460.434   0.092     2 1.000    1.0  230.171
 2026-09  6    46.650   0.085     2 1.000    1.0   -0.012
 2026-10  8   128.304  64.806     3 1.000    1.0    0.032
-H1 {'events': 156, 'valid': 152, 'months_with_liq': 7, 'gross': np.float64(41163.155), 'gas': np.float64(591.333), 'bots': 16, 'top3': np.float64(0.89), 'top10': np.float64(1.0), 'out_net_pm': np.float64(359.105), 'out_net_flash_pm': np.float64(357.568), 'out_bots': 13, 'median_net': np.float64(1.855), 'pass': False}
-H2 {'events': 237, 'valid': 183, 'months_with_liq': 11, 'gross': np.float64(25838.969), 'gas': np.float64(733.107), 'bots': 33, 'top3': np.float64(0.597), 'top10': np.float64(1.034), 'out_net_pm': np.float64(816.377), 'out_net_flash_pm': np.float64(797.919), 'out_bots': 30, 'median_net': np.float64(0.61), 'pass': False}
+H1 {'events': 156, 'valid': 152, 'months_with_liq': 7, 'scale': 1.0, 'gross': np.float64(41163.155), 'gas': np.float64(591.333), 'bots': 16, 'top3': np.float64(0.89), 'top10': np.float64(1.0), 'out_net_pm': np.float64(359.105), 'out_net_flash_pm': np.float64(357.568), 'out_bots': 13, 'median_net': np.float64(1.855), 'pass': False}
+H2 {'events': 237, 'valid': 183, 'months_with_liq': 11, 'scale': 1.0, 'gross': np.float64(25838.969), 'gas': np.float64(733.107), 'bots': 33, 'top3': np.float64(0.597), 'top10': np.float64(1.034), 'out_net_pm': np.float64(816.377), 'out_net_flash_pm': np.float64(797.919), 'out_bots': 30, 'median_net': np.float64(0.61), 'pass': False}
 
 --- base 0x33ca62504cebab919f0fca94562413ee121a9798 [unknown fork] total events 110
   month  n   gross   gas  bots  top3  top10  med_net
@@ -423,8 +423,8 @@ H2 {'events': 237, 'valid': 183, 'months_with_liq': 11, 'gross': np.float64(2583
 2026-08  4   6.517 0.113     3 1.000    1.0   -0.001
 2026-09  9   5.174 0.578     3 1.000    1.0   -0.000
 2026-10  1   0.001 0.040     1 1.000    1.0   -0.039
-H1 {'events': 31, 'valid': 28, 'months_with_liq': 11, 'gross': np.float64(788.138), 'gas': np.float64(3.776), 'bots': 7, 'top3': np.float64(0.944), 'top10': np.float64(1.0), 'out_net_pm': np.float64(3.538), 'out_net_flash_pm': np.float64(3.508), 'out_bots': 4, 'median_net': np.float64(2.629), 'pass': False}
-H2 {'events': 79, 'valid': 37, 'months_with_liq': 8, 'gross': np.float64(81.24), 'gas': np.float64(6.871), 'bots': 9, 'top3': np.float64(0.907), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.481), 'out_net_flash_pm': np.float64(0.412), 'out_bots': 6, 'median_net': np.float64(0.117), 'pass': False}
+H1 {'events': 31, 'valid': 28, 'months_with_liq': 11, 'scale': 1.0, 'gross': np.float64(788.138), 'gas': np.float64(3.776), 'bots': 7, 'top3': np.float64(0.944), 'top10': np.float64(1.0), 'out_net_pm': np.float64(3.538), 'out_net_flash_pm': np.float64(3.508), 'out_bots': 4, 'median_net': np.float64(2.629), 'pass': False}
+H2 {'events': 79, 'valid': 37, 'months_with_liq': 8, 'scale': 1.0, 'gross': np.float64(81.24), 'gas': np.float64(6.871), 'bots': 9, 'top3': np.float64(0.907), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.481), 'out_net_flash_pm': np.float64(0.412), 'out_bots': 6, 'median_net': np.float64(0.117), 'pass': False}
 
 --- base 0x35297537a1f8c67d3f7ab017a303f746982b3031 [unknown fork] total events 34
   month  n  gross   gas  bots  top3  top10  med_net
@@ -452,8 +452,8 @@ H2 {'events': 79, 'valid': 37, 'months_with_liq': 8, 'gross': np.float64(81.24),
 2026-08 18  2.985 0.147     1   1.0    1.0    0.182
 2026-09  5  0.181 0.055     2   1.0    1.0    0.017
 2026-10  0  0.000 0.000     0   NaN    NaN      NaN
-H1 {'events': 3, 'valid': 3, 'months_with_liq': 2, 'gross': np.float64(6.209), 'gas': np.float64(0.043), 'bots': 2, 'top3': np.float64(1.0), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.0), 'out_net_flash_pm': np.float64(0.0), 'out_bots': 0, 'median_net': np.float64(0.949), 'pass': False}
-H2 {'events': 31, 'valid': 31, 'months_with_liq': 4, 'gross': np.float64(5.009), 'gas': np.float64(0.278), 'bots': 4, 'top3': np.float64(0.98), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.005), 'out_net_flash_pm': np.float64(0.004), 'out_bots': 1, 'median_net': np.float64(0.18), 'pass': False}
+H1 {'events': 3, 'valid': 3, 'months_with_liq': 2, 'scale': 1.0, 'gross': np.float64(6.209), 'gas': np.float64(0.043), 'bots': 2, 'top3': np.float64(1.0), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.0), 'out_net_flash_pm': np.float64(0.0), 'out_bots': 0, 'median_net': np.float64(0.949), 'pass': False}
+H2 {'events': 31, 'valid': 31, 'months_with_liq': 4, 'scale': 1.0, 'gross': np.float64(5.009), 'gas': np.float64(0.278), 'bots': 4, 'top3': np.float64(0.98), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.005), 'out_net_flash_pm': np.float64(0.004), 'out_bots': 1, 'median_net': np.float64(0.18), 'pass': False}
 
 --- base 0x5425afd90bd1aad68d5badcb80390101a2750bc5 [unknown fork] total events 25
   month  n   gross   gas  bots  top3  top10  med_net
@@ -481,8 +481,8 @@ H2 {'events': 31, 'valid': 31, 'months_with_liq': 4, 'gross': np.float64(5.009),
 2026-08 10   2.452 0.091     1   1.0    1.0    0.270
 2026-09  0   0.000 0.000     0   NaN    NaN      NaN
 2026-10  4   2.519 0.046     1   1.0    1.0    0.071
-H1 {'events': 9, 'valid': 9, 'months_with_liq': 3, 'gross': np.float64(11.87), 'gas': np.float64(0.592), 'bots': 1, 'top3': np.float64(1.0), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.0), 'out_net_flash_pm': np.float64(0.0), 'out_bots': 0, 'median_net': np.float64(0.32), 'pass': False}
-H2 {'events': 16, 'valid': 15, 'months_with_liq': 3, 'gross': np.float64(124.795), 'gas': np.float64(0.86), 'bots': 1, 'top3': np.float64(1.0), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.0), 'out_net_flash_pm': np.float64(0.0), 'out_bots': 0, 'median_net': np.float64(0.257), 'pass': False}
+H1 {'events': 9, 'valid': 9, 'months_with_liq': 3, 'scale': 1.0, 'gross': np.float64(11.87), 'gas': np.float64(0.592), 'bots': 1, 'top3': np.float64(1.0), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.0), 'out_net_flash_pm': np.float64(0.0), 'out_bots': 0, 'median_net': np.float64(0.32), 'pass': False}
+H2 {'events': 16, 'valid': 15, 'months_with_liq': 3, 'scale': 1.0, 'gross': np.float64(124.795), 'gas': np.float64(0.86), 'bots': 1, 'top3': np.float64(1.0), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.0), 'out_net_flash_pm': np.float64(0.0), 'out_bots': 0, 'median_net': np.float64(0.257), 'pass': False}
 
 --- base 0x6374a1f384737bccccd8fae13064c18f7c8392e5 [unknown fork] total events 116
   month  n  gross   gas  bots  top3  top10  med_net
@@ -510,8 +510,8 @@ H2 {'events': 16, 'valid': 15, 'months_with_liq': 3, 'gross': np.float64(124.795
 2026-08  3  1.683 0.048     1   1.0    1.0    0.231
 2026-09  3  0.326 0.031     2   1.0    1.0   -0.002
 2026-10  1  4.848 0.007     1   1.0    1.0    4.842
-H1 {'events': 55, 'valid': 55, 'months_with_liq': 8, 'gross': np.float64(105.06), 'gas': np.float64(2.949), 'bots': 4, 'top3': np.float64(0.991), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.077), 'out_net_flash_pm': np.float64(0.077), 'out_bots': 1, 'median_net': np.float64(0.348), 'pass': False}
-H2 {'events': 61, 'valid': 61, 'months_with_liq': 11, 'gross': np.float64(46.453), 'gas': np.float64(1.298), 'bots': 9, 'top3': np.float64(0.894), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.368), 'out_net_flash_pm': np.float64(0.366), 'out_bots': 6, 'median_net': np.float64(-0.002), 'pass': False}
+H1 {'events': 55, 'valid': 55, 'months_with_liq': 8, 'scale': 1.0, 'gross': np.float64(105.06), 'gas': np.float64(2.949), 'bots': 4, 'top3': np.float64(0.991), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.077), 'out_net_flash_pm': np.float64(0.077), 'out_bots': 1, 'median_net': np.float64(0.348), 'pass': False}
+H2 {'events': 61, 'valid': 61, 'months_with_liq': 11, 'scale': 1.0, 'gross': np.float64(46.453), 'gas': np.float64(1.298), 'bots': 9, 'top3': np.float64(0.894), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.368), 'out_net_flash_pm': np.float64(0.366), 'out_bots': 6, 'median_net': np.float64(-0.002), 'pass': False}
 
 --- base 0x766f21277087e18967c1b10bf602d8fe56d0c671 [unknown fork] total events 748
   month   n     gross     gas  bots  top3  top10  med_net
@@ -539,8 +539,8 @@ H2 {'events': 61, 'valid': 61, 'months_with_liq': 11, 'gross': np.float64(46.453
 2026-08  10    53.173   0.061     4 0.974  1.000    2.077
 2026-09   0     0.000   0.000     0   NaN    NaN      NaN
 2026-10   0     0.000   0.000     0   NaN    NaN      NaN
-H1 {'events': 628, 'valid': 622, 'months_with_liq': 12, 'gross': np.float64(32941.204), 'gas': np.float64(1219.712), 'bots': 54, 'top3': np.float64(0.675), 'top10': np.float64(0.859), 'out_net_pm': np.float64(821.139), 'out_net_flash_pm': np.float64(812.243), 'out_bots': 51, 'median_net': np.float64(1.277), 'pass': False}
-H2 {'events': 120, 'valid': 117, 'months_with_liq': 9, 'gross': np.float64(1043.662), 'gas': np.float64(71.018), 'bots': 22, 'top3': np.float64(0.484), 'top10': np.float64(0.898), 'out_net_pm': np.float64(40.531), 'out_net_flash_pm': np.float64(40.029), 'out_bots': 19, 'median_net': np.float64(0.845), 'pass': False}
+H1 {'events': 628, 'valid': 622, 'months_with_liq': 12, 'scale': 1.0, 'gross': np.float64(32941.204), 'gas': np.float64(1219.712), 'bots': 54, 'top3': np.float64(0.675), 'top10': np.float64(0.859), 'out_net_pm': np.float64(821.139), 'out_net_flash_pm': np.float64(812.243), 'out_bots': 51, 'median_net': np.float64(1.277), 'pass': False}
+H2 {'events': 120, 'valid': 117, 'months_with_liq': 9, 'scale': 1.0, 'gross': np.float64(1043.662), 'gas': np.float64(71.018), 'bots': 22, 'top3': np.float64(0.484), 'top10': np.float64(0.898), 'out_net_pm': np.float64(40.531), 'out_net_flash_pm': np.float64(40.029), 'out_bots': 19, 'median_net': np.float64(0.845), 'pass': False}
 
 --- base 0x8f44fd754285aa6a2b8b9b97739b79746e0475a7 [unknown fork] total events 7869
   month    n      gross      gas  bots  top3  top10  med_net
@@ -568,8 +568,8 @@ H2 {'events': 120, 'valid': 117, 'months_with_liq': 9, 'gross': np.float64(1043.
 2026-08    1      0.025    0.010     1 1.000  1.000    0.015
 2026-09   12      0.106    0.125     3 1.000  1.000    0.000
 2026-10  276     34.628   10.785     8 0.981  1.000   -0.013
-H1 {'events': 6673, 'valid': 6669, 'months_with_liq': 12, 'gross': np.float64(173407.152), 'gas': np.float64(6669.341), 'bots': 80, 'top3': np.float64(0.805), 'top10': np.float64(0.963), 'out_net_pm': np.float64(2470.98), 'out_net_flash_pm': np.float64(2450.223), 'out_bots': 77, 'median_net': np.float64(0.404), 'pass': False}
-H2 {'events': 1196, 'valid': 1195, 'months_with_liq': 12, 'gross': np.float64(423.834), 'gas': np.float64(47.962), 'bots': 106, 'top3': np.float64(0.255), 'top10': np.float64(0.541), 'out_net_pm': np.float64(23.276), 'out_net_flash_pm': np.float64(22.737), 'out_bots': 103, 'median_net': np.float64(0.117), 'pass': False}
+H1 {'events': 6673, 'valid': 6669, 'months_with_liq': 12, 'scale': 1.0, 'gross': np.float64(173407.152), 'gas': np.float64(6669.341), 'bots': 80, 'top3': np.float64(0.805), 'top10': np.float64(0.963), 'out_net_pm': np.float64(2470.98), 'out_net_flash_pm': np.float64(2450.223), 'out_bots': 77, 'median_net': np.float64(0.404), 'pass': False}
+H2 {'events': 1196, 'valid': 1195, 'months_with_liq': 12, 'scale': 1.0, 'gross': np.float64(423.834), 'gas': np.float64(47.962), 'bots': 106, 'top3': np.float64(0.255), 'top10': np.float64(0.541), 'out_net_pm': np.float64(23.276), 'out_net_flash_pm': np.float64(22.737), 'out_bots': 103, 'median_net': np.float64(0.117), 'pass': False}
 
 --- base 0xa238dd80c259a72e81d7e4664a9801593f98d1c5 [Aave v3 Base] total events 40933
   month     n       gross        gas  bots  top3  top10  med_net
@@ -597,8 +597,8 @@ H2 {'events': 1196, 'valid': 1195, 'months_with_liq': 12, 'gross': np.float64(42
 2026-08   151   77846.025     87.788    42 0.623  0.912    0.279
 2026-09   148   18343.167     24.215    29 0.745  0.994    0.048
 2026-10   287   39304.235    136.873    34 0.792  0.990   -0.008
-H1 {'events': 29752, 'valid': 29175, 'months_with_liq': 12, 'gross': np.float64(6247286.85), 'gas': np.float64(251126.346), 'bots': 823, 'top3': np.float64(0.358), 'top10': np.float64(0.49), 'out_net_pm': np.float64(324345.958), 'out_net_flash_pm': np.float64(322104.57), 'out_bots': 820, 'median_net': np.float64(-0.0), 'pass': True}
-H2 {'events': 11181, 'valid': 10995, 'months_with_liq': 12, 'gross': np.float64(4346149.456), 'gas': np.float64(50444.918), 'bots': 1611, 'top3': np.float64(0.113), 'top10': np.float64(0.265), 'out_net_pm': np.float64(317008.353), 'out_net_flash_pm': np.float64(314783.31), 'out_bots': 1608, 'median_net': np.float64(0.116), 'pass': True}
+H1 {'events': 29752, 'valid': 29175, 'months_with_liq': 12, 'scale': 1.0, 'gross': np.float64(6247286.85), 'gas': np.float64(251126.346), 'bots': 823, 'top3': np.float64(0.358), 'top10': np.float64(0.49), 'out_net_pm': np.float64(324345.958), 'out_net_flash_pm': np.float64(322104.57), 'out_bots': 820, 'median_net': np.float64(-0.0), 'pass': True}
+H2 {'events': 11181, 'valid': 10995, 'months_with_liq': 12, 'scale': 1.0, 'gross': np.float64(4346149.456), 'gas': np.float64(50444.918), 'bots': 1611, 'top3': np.float64(0.113), 'top10': np.float64(0.265), 'out_net_pm': np.float64(317008.353), 'out_net_flash_pm': np.float64(314783.31), 'out_bots': 1608, 'median_net': np.float64(0.116), 'pass': True}
 
 --- base 0xb702ce183b4e1faa574834715e5d4a6378d0eed3 [unknown fork] total events 152
   month  n     gross     gas  bots  top3  top10  med_net
@@ -626,8 +626,8 @@ H2 {'events': 11181, 'valid': 10995, 'months_with_liq': 12, 'gross': np.float64(
 2026-08  0     0.000   0.000     0   NaN    NaN      NaN
 2026-09  0     0.000   0.000     0   NaN    NaN      NaN
 2026-10  0     0.000   0.000     0   NaN    NaN      NaN
-H1 {'events': 152, 'valid': 152, 'months_with_liq': 10, 'gross': np.float64(15589.043), 'gas': np.float64(128.295), 'bots': 15, 'top3': np.float64(0.817), 'top10': np.float64(0.999), 'out_net_pm': np.float64(235.091), 'out_net_flash_pm': np.float64(234.265), 'out_bots': 12, 'median_net': np.float64(0.036), 'pass': False}
-H2 {'events': 0, 'valid': 0, 'months_with_liq': 0, 'gross': np.float64(0.0), 'gas': np.float64(0.0), 'bots': 0, 'top3': nan, 'top10': nan, 'out_net_pm': 0.0, 'out_net_flash_pm': 0.0, 'out_bots': 0, 'median_net': nan, 'pass': False}
+H1 {'events': 152, 'valid': 152, 'months_with_liq': 10, 'scale': 1.0, 'gross': np.float64(15589.043), 'gas': np.float64(128.295), 'bots': 15, 'top3': np.float64(0.817), 'top10': np.float64(0.999), 'out_net_pm': np.float64(235.091), 'out_net_flash_pm': np.float64(234.265), 'out_bots': 12, 'median_net': np.float64(0.036), 'pass': False}
+H2 {'events': 0, 'valid': 0, 'months_with_liq': 0, 'scale': 0.0, 'gross': np.float64(0.0), 'gas': np.float64(0.0), 'bots': 0, 'top3': nan, 'top10': nan, 'out_net_pm': 0.0, 'out_net_flash_pm': 0.0, 'out_bots': 0, 'median_net': nan, 'pass': False}
 
 --- gnosis 0x2dae5307c5e3fd1cf5a72cb6f698f915860607e0 [unknown fork] total events 1771
   month   n     gross     gas  bots  top3  top10  med_net
@@ -655,8 +655,8 @@ H2 {'events': 0, 'valid': 0, 'months_with_liq': 0, 'gross': np.float64(0.0), 'ga
 2026-08   2   778.942   0.335     2 1.000    1.0  389.304
 2026-09 263  5811.147 643.931    15 0.915    1.0    0.013
 2026-10 328     0.656   0.051     5 0.963    1.0    0.001
-H1 {'events': 1151, 'valid': 1146, 'months_with_liq': 11, 'gross': np.float64(30070.213), 'gas': np.float64(56.334), 'bots': 11, 'top3': np.float64(0.622), 'top10': np.float64(1.0), 'out_net_pm': np.float64(944.742), 'out_net_flash_pm': np.float64(941.083), 'out_bots': 8, 'median_net': np.float64(0.398), 'pass': False}
-H2 {'events': 620, 'valid': 620, 'months_with_liq': 8, 'gross': np.float64(7385.929), 'gas': np.float64(670.687), 'bots': 24, 'top3': np.float64(0.903), 'top10': np.float64(0.998), 'out_net_pm': np.float64(54.437), 'out_net_flash_pm': np.float64(53.924), 'out_bots': 21, 'median_net': np.float64(0.004), 'pass': False}
+H1 {'events': 1151, 'valid': 1146, 'months_with_liq': 11, 'scale': 1.0, 'gross': np.float64(30070.213), 'gas': np.float64(56.334), 'bots': 11, 'top3': np.float64(0.622), 'top10': np.float64(1.0), 'out_net_pm': np.float64(944.742), 'out_net_flash_pm': np.float64(941.083), 'out_bots': 8, 'median_net': np.float64(0.398), 'pass': False}
+H2 {'events': 620, 'valid': 620, 'months_with_liq': 8, 'scale': 1.0, 'gross': np.float64(7385.929), 'gas': np.float64(670.687), 'bots': 24, 'top3': np.float64(0.903), 'top10': np.float64(0.998), 'out_net_pm': np.float64(54.437), 'out_net_flash_pm': np.float64(53.924), 'out_bots': 21, 'median_net': np.float64(0.004), 'pass': False}
 
 --- gnosis 0x5b8d36de471880ee21936f328aab2383a280cb2a [unknown fork] total events 623
   month  n   gross    gas  bots  top3  top10  med_net
@@ -684,8 +684,8 @@ H2 {'events': 620, 'valid': 620, 'months_with_liq': 8, 'gross': np.float64(7385.
 2026-08  0   0.000  0.000     0   NaN    NaN      NaN
 2026-09  0   0.000  0.000     0   NaN    NaN      NaN
 2026-10  0   0.000  0.000     0   NaN    NaN      NaN
-H1 {'events': 195, 'valid': 39, 'months_with_liq': 12, 'gross': np.float64(222.528), 'gas': np.float64(27.858), 'bots': 11, 'top3': np.float64(0.996), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.07), 'out_net_flash_pm': np.float64(0.069), 'out_bots': 8, 'median_net': np.float64(0.263), 'pass': False}
-H2 {'events': 428, 'valid': 64, 'months_with_liq': 3, 'gross': np.float64(4.711), 'gas': np.float64(0.018), 'bots': 4, 'top3': np.float64(0.96), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.016), 'out_net_flash_pm': np.float64(0.016), 'out_bots': 1, 'median_net': np.float64(-0.0), 'pass': False}
+H1 {'events': 195, 'valid': 39, 'months_with_liq': 12, 'scale': 1.0, 'gross': np.float64(222.528), 'gas': np.float64(27.858), 'bots': 11, 'top3': np.float64(0.996), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.07), 'out_net_flash_pm': np.float64(0.069), 'out_bots': 8, 'median_net': np.float64(0.263), 'pass': False}
+H2 {'events': 428, 'valid': 64, 'months_with_liq': 3, 'scale': 1.0, 'gross': np.float64(4.711), 'gas': np.float64(0.018), 'bots': 4, 'top3': np.float64(0.96), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.016), 'out_net_flash_pm': np.float64(0.016), 'out_bots': 1, 'median_net': np.float64(-0.0), 'pass': False}
 
 --- gnosis 0xb50201558b00496a145fe76f7424749556e326d8 [Aave v3 Gnosis] total events 3004
   month    n     gross      gas  bots  top3  top10   med_net
@@ -713,8 +713,8 @@ H2 {'events': 428, 'valid': 64, 'months_with_liq': 3, 'gross': np.float64(4.711)
 2026-08    1     0.032    0.002     1 1.000  1.000     0.031
 2026-09    3     0.021    0.002     3 1.000  1.000     0.000
 2026-10    5   366.932   46.479     4 1.000  1.000     0.163
-H1 {'events': 2716, 'valid': 2676, 'months_with_liq': 12, 'gross': np.float64(112004.163), 'gas': np.float64(580.837), 'bots': 17, 'top3': np.float64(0.796), 'top10': np.float64(1.0), 'out_net_pm': np.float64(1899.41), 'out_net_flash_pm': np.float64(1885.813), 'out_bots': 14, 'median_net': np.float64(0.328), 'pass': False}
-H2 {'events': 288, 'valid': 242, 'months_with_liq': 12, 'gross': np.float64(99417.314), 'gas': np.float64(2533.476), 'bots': 39, 'top3': np.float64(0.852), 'top10': np.float64(0.968), 'out_net_pm': np.float64(1164.393), 'out_net_flash_pm': np.float64(1154.756), 'out_bots': 36, 'median_net': np.float64(87.957), 'pass': False}
+H1 {'events': 2716, 'valid': 2676, 'months_with_liq': 12, 'scale': 1.0, 'gross': np.float64(112004.163), 'gas': np.float64(580.837), 'bots': 17, 'top3': np.float64(0.796), 'top10': np.float64(1.0), 'out_net_pm': np.float64(1899.41), 'out_net_flash_pm': np.float64(1885.813), 'out_bots': 14, 'median_net': np.float64(0.328), 'pass': False}
+H2 {'events': 288, 'valid': 242, 'months_with_liq': 12, 'scale': 1.0, 'gross': np.float64(99417.314), 'gas': np.float64(2533.476), 'bots': 39, 'top3': np.float64(0.852), 'top10': np.float64(0.968), 'out_net_pm': np.float64(1164.393), 'out_net_flash_pm': np.float64(1154.756), 'out_bots': 36, 'median_net': np.float64(87.957), 'pass': False}
 
 --- gnosis 0xfb9b496519fca8473fba1af0850b6b8f476bfdb3 [unknown fork] total events 2029
   month   n     gross    gas  bots  top3  top10  med_net
@@ -742,8 +742,8 @@ H2 {'events': 288, 'valid': 242, 'months_with_liq': 12, 'gross': np.float64(9941
 2026-08   0     0.000  0.000     0   NaN    NaN      NaN
 2026-09 982 12380.278  2.323     7 0.965    1.0    2.688
 2026-10 110  1496.086  0.308     9 0.989    1.0    4.106
-H1 {'events': 296, 'valid': 3, 'months_with_liq': 12, 'gross': np.float64(84.015), 'gas': np.float64(0.002), 'bots': 3, 'top3': np.float64(1.0), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.0), 'out_net_flash_pm': np.float64(0.0), 'out_bots': 0, 'median_net': np.float64(1.366), 'pass': False}
-H2 {'events': 1733, 'valid': 1197, 'months_with_liq': 11, 'gross': np.float64(14424.468), 'gas': np.float64(30.597), 'bots': 37, 'top3': np.float64(0.928), 'top10': np.float64(0.998), 'out_net_pm': np.float64(84.308), 'out_net_flash_pm': np.float64(82.575), 'out_bots': 34, 'median_net': np.float64(2.44), 'pass': False}
+H1 {'events': 296, 'valid': 3, 'months_with_liq': 12, 'scale': 1.0, 'gross': np.float64(84.015), 'gas': np.float64(0.002), 'bots': 3, 'top3': np.float64(1.0), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.0), 'out_net_flash_pm': np.float64(0.0), 'out_bots': 0, 'median_net': np.float64(1.366), 'pass': False}
+H2 {'events': 1733, 'valid': 1197, 'months_with_liq': 11, 'scale': 1.0, 'gross': np.float64(14424.468), 'gas': np.float64(30.597), 'bots': 37, 'top3': np.float64(0.928), 'top10': np.float64(0.998), 'out_net_pm': np.float64(84.308), 'out_net_flash_pm': np.float64(82.575), 'out_bots': 34, 'median_net': np.float64(2.44), 'pass': False}
 
 --- metis 0x65dec665ea1e96ee5203db321b5cd413b81b2bd2 [unknown fork] total events 511
   month  n    gross    gas  bots  top3  top10  med_net
@@ -771,8 +771,8 @@ H2 {'events': 1733, 'valid': 1197, 'months_with_liq': 11, 'gross': np.float64(14
 2026-08 18    1.177  0.833     5 0.867    1.0   -0.000
 2026-09  1    0.905  0.062     1 1.000    1.0    0.843
 2026-10  1    3.605  0.044     1 1.000    1.0    3.561
-H1 {'events': 422, 'valid': 78, 'months_with_liq': 12, 'gross': np.float64(2126.256), 'gas': np.float64(23.233), 'bots': 11, 'top3': np.float64(0.861), 'top10': np.float64(1.0), 'out_net_pm': np.float64(23.847), 'out_net_flash_pm': np.float64(23.626), 'out_bots': 8, 'median_net': np.float64(1.158), 'pass': False}
-H2 {'events': 89, 'valid': 85, 'months_with_liq': 11, 'gross': np.float64(3484.205), 'gas': np.float64(35.843), 'bots': 10, 'top3': np.float64(0.983), 'top10': np.float64(1.0), 'out_net_pm': np.float64(4.939), 'out_net_flash_pm': np.float64(4.906), 'out_bots': 7, 'median_net': np.float64(1.596), 'pass': False}
+H1 {'events': 422, 'valid': 78, 'months_with_liq': 12, 'scale': 1.0, 'gross': np.float64(2126.256), 'gas': np.float64(23.233), 'bots': 11, 'top3': np.float64(0.861), 'top10': np.float64(1.0), 'out_net_pm': np.float64(23.847), 'out_net_flash_pm': np.float64(23.626), 'out_bots': 8, 'median_net': np.float64(1.158), 'pass': False}
+H2 {'events': 89, 'valid': 85, 'months_with_liq': 11, 'scale': 1.0, 'gross': np.float64(3484.205), 'gas': np.float64(35.843), 'bots': 10, 'top3': np.float64(0.983), 'top10': np.float64(1.0), 'out_net_pm': np.float64(4.939), 'out_net_flash_pm': np.float64(4.906), 'out_bots': 7, 'median_net': np.float64(1.596), 'pass': False}
 
 --- metis 0x90df02551bb792286e8d4f13e0e357b4bf1d6a57 [Aave v3 Metis] total events 728
   month   n     gross     gas  bots  top3  top10  med_net
@@ -800,8 +800,8 @@ H2 {'events': 89, 'valid': 85, 'months_with_liq': 11, 'gross': np.float64(3484.2
 2026-08   0     0.000   0.000     0   NaN    NaN      NaN
 2026-09   1     0.776   0.049     1 1.000    1.0    0.727
 2026-10   7    29.052   1.210     3 1.000    1.0    0.495
-H1 {'events': 534, 'valid': 56, 'months_with_liq': 12, 'gross': np.float64(5277.913), 'gas': np.float64(74.587), 'bots': 13, 'top3': np.float64(0.839), 'top10': np.float64(1.002), 'out_net_pm': np.float64(68.989), 'out_net_flash_pm': np.float64(68.352), 'out_bots': 10, 'median_net': np.float64(2.851), 'pass': False}
-H2 {'events': 194, 'valid': 190, 'months_with_liq': 11, 'gross': np.float64(31719.122), 'gas': np.float64(238.0), 'bots': 10, 'top3': np.float64(0.983), 'top10': np.float64(1.0), 'out_net_pm': np.float64(44.795), 'out_net_flash_pm': np.float64(44.481), 'out_bots': 7, 'median_net': np.float64(73.488), 'pass': False}
+H1 {'events': 534, 'valid': 56, 'months_with_liq': 12, 'scale': 1.0, 'gross': np.float64(5277.913), 'gas': np.float64(74.587), 'bots': 13, 'top3': np.float64(0.839), 'top10': np.float64(1.002), 'out_net_pm': np.float64(68.989), 'out_net_flash_pm': np.float64(68.352), 'out_bots': 10, 'median_net': np.float64(2.851), 'pass': False}
+H2 {'events': 194, 'valid': 190, 'months_with_liq': 11, 'scale': 1.0, 'gross': np.float64(31719.122), 'gas': np.float64(238.0), 'bots': 10, 'top3': np.float64(0.983), 'top10': np.float64(1.0), 'out_net_pm': np.float64(44.795), 'out_net_flash_pm': np.float64(44.481), 'out_bots': 7, 'median_net': np.float64(73.488), 'pass': False}
 
 --- metis 0xd5ea2a773f73fd2ec318cfdb0d80a28e8eb9caa9 [unknown fork] total events 29
   month  n   gross   gas  bots  top3  top10  med_net
@@ -829,8 +829,8 @@ H2 {'events': 194, 'valid': 190, 'months_with_liq': 11, 'gross': np.float64(3171
 2026-08  0   0.000 0.000     0   NaN    NaN      NaN
 2026-09  0   0.000 0.000     0   NaN    NaN      NaN
 2026-10  0   0.000 0.000     0   NaN    NaN      NaN
-H1 {'events': 12, 'valid': 4, 'months_with_liq': 4, 'gross': np.float64(168.122), 'gas': np.float64(2.667), 'bots': 3, 'top3': np.float64(1.0), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.0), 'out_net_flash_pm': np.float64(0.0), 'out_bots': 0, 'median_net': np.float64(7.44), 'pass': False}
-H2 {'events': 17, 'valid': 12, 'months_with_liq': 6, 'gross': np.float64(62.592), 'gas': np.float64(1.516), 'bots': 4, 'top3': np.float64(0.997), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.009), 'out_net_flash_pm': np.float64(0.008), 'out_bots': 1, 'median_net': np.float64(1.337), 'pass': False}
+H1 {'events': 12, 'valid': 4, 'months_with_liq': 4, 'scale': 1.0, 'gross': np.float64(168.122), 'gas': np.float64(2.667), 'bots': 3, 'top3': np.float64(1.0), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.0), 'out_net_flash_pm': np.float64(0.0), 'out_bots': 0, 'median_net': np.float64(7.44), 'pass': False}
+H2 {'events': 17, 'valid': 12, 'months_with_liq': 6, 'scale': 1.0, 'gross': np.float64(62.592), 'gas': np.float64(1.516), 'bots': 4, 'top3': np.float64(0.997), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.009), 'out_net_flash_pm': np.float64(0.008), 'out_bots': 1, 'median_net': np.float64(1.337), 'pass': False}
 
 --- optimism 0x345d2827f36621b02b783f7d5004b4a2fec00186 [unknown fork] total events 238
   month  n    gross    gas  bots  top3  top10  med_net
@@ -858,8 +858,8 @@ H2 {'events': 17, 'valid': 12, 'months_with_liq': 6, 'gross': np.float64(62.592)
 2026-08  0    0.000  0.000     0   NaN    NaN      NaN
 2026-09  3    0.031  0.005     1 1.000    1.0    0.008
 2026-10  4    0.014  0.001     1 1.000    1.0    0.003
-H1 {'events': 158, 'valid': 134, 'months_with_liq': 12, 'gross': np.float64(3458.159), 'gas': np.float64(67.605), 'bots': 13, 'top3': np.float64(0.854), 'top10': np.float64(1.0), 'out_net_pm': np.float64(38.093), 'out_net_flash_pm': np.float64(37.782), 'out_bots': 10, 'median_net': np.float64(0.04), 'pass': False}
-H2 {'events': 80, 'valid': 80, 'months_with_liq': 9, 'gross': np.float64(3782.41), 'gas': np.float64(76.659), 'bots': 10, 'top3': np.float64(0.924), 'top10': np.float64(1.0), 'out_net_pm': np.float64(19.35), 'out_net_flash_pm': np.float64(19.181), 'out_bots': 7, 'median_net': np.float64(0.64), 'pass': False}
+H1 {'events': 158, 'valid': 134, 'months_with_liq': 12, 'scale': 1.0, 'gross': np.float64(3458.159), 'gas': np.float64(67.605), 'bots': 13, 'top3': np.float64(0.854), 'top10': np.float64(1.0), 'out_net_pm': np.float64(38.093), 'out_net_flash_pm': np.float64(37.782), 'out_bots': 10, 'median_net': np.float64(0.04), 'pass': False}
+H2 {'events': 80, 'valid': 80, 'months_with_liq': 9, 'scale': 1.0, 'gross': np.float64(3782.41), 'gas': np.float64(76.659), 'bots': 10, 'top3': np.float64(0.924), 'top10': np.float64(1.0), 'out_net_pm': np.float64(19.35), 'out_net_flash_pm': np.float64(19.181), 'out_bots': 7, 'median_net': np.float64(0.64), 'pass': False}
 
 --- optimism 0x794a61358d6845594f94dc1db02a252b5b4814ad [Aave v3] total events 29578
   month    n      gross       gas  bots  top3  top10  med_net
@@ -887,8 +887,8 @@ H2 {'events': 80, 'valid': 80, 'months_with_liq': 9, 'gross': np.float64(3782.41
 2026-08   74    208.081    85.735    12 0.977  1.000    0.020
 2026-09  553     59.444    67.032     8 0.987  1.000    0.000
 2026-10  154    814.495    53.548    20 0.908  1.000    0.002
-H1 {'events': 23255, 'valid': 22249, 'months_with_liq': 12, 'gross': np.float64(1654104.005), 'gas': np.float64(129353.654), 'bots': 487, 'top3': np.float64(0.188), 'top10': np.float64(0.325), 'out_net_pm': np.float64(106188.003), 'out_net_flash_pm': np.float64(105529.251), 'out_bots': 484, 'median_net': np.float64(0.0), 'pass': True}
-H2 {'events': 6323, 'valid': 6278, 'months_with_liq': 12, 'gross': np.float64(818876.091), 'gas': np.float64(48660.722), 'bots': 598, 'top3': np.float64(0.381), 'top10': np.float64(0.495), 'out_net_pm': np.float64(41171.322), 'out_net_flash_pm': np.float64(40907.099), 'out_bots': 595, 'median_net': np.float64(0.002), 'pass': True}
+H1 {'events': 23255, 'valid': 22249, 'months_with_liq': 12, 'scale': 1.0, 'gross': np.float64(1654104.005), 'gas': np.float64(129353.654), 'bots': 487, 'top3': np.float64(0.188), 'top10': np.float64(0.325), 'out_net_pm': np.float64(106188.003), 'out_net_flash_pm': np.float64(105529.251), 'out_bots': 484, 'median_net': np.float64(0.0), 'pass': True}
+H2 {'events': 6323, 'valid': 6278, 'months_with_liq': 12, 'scale': 1.0, 'gross': np.float64(818876.091), 'gas': np.float64(48660.722), 'bots': 598, 'top3': np.float64(0.381), 'top10': np.float64(0.495), 'out_net_pm': np.float64(41171.322), 'out_net_flash_pm': np.float64(40907.099), 'out_bots': 595, 'median_net': np.float64(0.002), 'pass': True}
 
 --- optimism 0x8fd4af47e4e63d1d2d45582c3286b4bd9bb95dfe [unknown fork] total events 2959
   month   n    gross     gas  bots  top3  top10  med_net
@@ -916,8 +916,8 @@ H2 {'events': 6323, 'valid': 6278, 'months_with_liq': 12, 'gross': np.float64(81
 2026-08  11    0.698   0.033     3 1.000  1.000    0.023
 2026-09   6    0.557   0.197     4 0.850  1.000    0.067
 2026-10 402    2.552   0.466     7 0.795  1.000    0.001
-H1 {'events': 1732, 'valid': 1681, 'months_with_liq': 12, 'gross': np.float64(12200.799), 'gas': np.float64(573.238), 'bots': 19, 'top3': np.float64(0.494), 'top10': np.float64(0.972), 'out_net_pm': np.float64(485.985), 'out_net_flash_pm': np.float64(483.495), 'out_bots': 16, 'median_net': np.float64(0.03), 'pass': False}
-H2 {'events': 1227, 'valid': 1226, 'months_with_liq': 12, 'gross': np.float64(1114.534), 'gas': np.float64(181.426), 'bots': 18, 'top3': np.float64(0.898), 'top10': np.float64(0.997), 'out_net_pm': np.float64(9.215), 'out_net_flash_pm': np.float64(9.111), 'out_bots': 15, 'median_net': np.float64(0.015), 'pass': False}
+H1 {'events': 1732, 'valid': 1681, 'months_with_liq': 12, 'scale': 1.0, 'gross': np.float64(12200.799), 'gas': np.float64(573.238), 'bots': 19, 'top3': np.float64(0.494), 'top10': np.float64(0.972), 'out_net_pm': np.float64(485.985), 'out_net_flash_pm': np.float64(483.495), 'out_bots': 16, 'median_net': np.float64(0.03), 'pass': False}
+H2 {'events': 1227, 'valid': 1226, 'months_with_liq': 12, 'scale': 1.0, 'gross': np.float64(1114.534), 'gas': np.float64(181.426), 'bots': 18, 'top3': np.float64(0.898), 'top10': np.float64(0.997), 'out_net_pm': np.float64(9.215), 'out_net_flash_pm': np.float64(9.111), 'out_bots': 15, 'median_net': np.float64(0.015), 'pass': False}
 
 --- polygon 0x1b701bcc5246770054527d9556a88e93c9f22760 [unknown fork] total events 30
   month  n  gross   gas  bots  top3  top10  med_net
@@ -928,7 +928,7 @@ H2 {'events': 1227, 'valid': 1226, 'months_with_liq': 12, 'gross': np.float64(11
 2025-03  0  0.000 0.000     0   NaN    NaN      NaN
 2025-04  0  0.000 0.000     0   NaN    NaN      NaN
 2025-05  0  0.000 0.000     0   NaN    NaN      NaN
-2025-06 30  0.528 0.236     4 0.901    1.0    0.009
+2025-06 16  0.273 0.126     3   1.0    1.0    0.009
 2025-07  0  0.000 0.000     0   NaN    NaN      NaN
 2025-08  0  0.000 0.000     0   NaN    NaN      NaN
 2025-09  0  0.000 0.000     0   NaN    NaN      NaN
@@ -945,153 +945,153 @@ H2 {'events': 1227, 'valid': 1226, 'months_with_liq': 12, 'gross': np.float64(11
 2026-08  0  0.000 0.000     0   NaN    NaN      NaN
 2026-09  0  0.000 0.000     0   NaN    NaN      NaN
 2026-10  0  0.000 0.000     0   NaN    NaN      NaN
-H1 {'events': 30, 'valid': 30, 'months_with_liq': 1, 'gross': np.float64(0.528), 'gas': np.float64(0.236), 'bots': 4, 'top3': np.float64(0.901), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.003), 'out_net_flash_pm': np.float64(0.003), 'out_bots': 1, 'median_net': np.float64(0.009), 'pass': False}
-H2 {'events': 0, 'valid': 0, 'months_with_liq': 0, 'gross': np.float64(0.0), 'gas': np.float64(0.0), 'bots': 0, 'top3': nan, 'top10': nan, 'out_net_pm': 0.0, 'out_net_flash_pm': 0.0, 'out_bots': 0, 'median_net': nan, 'pass': False}
+H1 {'events': 30, 'valid': 30, 'months_with_liq': 1, 'scale': 1.875, 'gross': np.float64(0.511), 'gas': np.float64(0.236), 'bots': 3, 'top3': np.float64(1.0), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.0), 'out_net_flash_pm': np.float64(0.0), 'out_bots': 0, 'median_net': np.float64(0.009), 'pass': False}
+H2 {'events': 0, 'valid': 0, 'months_with_liq': 0, 'scale': 0.0, 'gross': np.float64(0.0), 'gas': np.float64(0.0), 'bots': 0, 'top3': nan, 'top10': nan, 'out_net_pm': 0.0, 'out_net_flash_pm': 0.0, 'out_bots': 0, 'median_net': nan, 'pass': False}
 
 --- polygon 0x794a61358d6845594f94dc1db02a252b5b4814ad [Aave v3] total events 35634
-  month     n       gross       gas  bots  top3  top10  med_net
-2024-11   646   47588.530    78.858   176 0.714  0.873    1.313
-2024-12   690  162408.660  1399.434   189 0.607  0.813    0.701
-2025-01   431  112515.189   155.263   149 0.697  0.832    4.584
-2025-02  4080 1600931.224 11754.169   615 0.609  0.724   22.196
-2025-03 11510  372889.208  2782.549   404 0.533  0.628   -0.001
-2025-04  2248  598560.105  3855.641   377 0.561  0.648   21.887
-2025-05   233   26086.705    60.047    80 0.690  0.885    1.402
-2025-06   282   76924.028    51.660    87 0.910  0.947   12.002
-2025-07   229   13538.115     7.342    69 0.786  0.935    0.365
-2025-08   521   92750.460    16.281   103 0.881  0.959    0.038
-2025-09   303   85806.240    50.176    60 0.830  0.965    0.024
-2025-10   799  553644.347  1786.706   176 0.562  0.713   37.704
-2025-11  1310  295233.478   805.264   329 0.614  0.730    7.449
-2025-12   614   48581.326   377.429   172 0.645  0.835    0.457
-2026-01  1213  352076.483   745.638   295 0.598  0.705   63.621
-2026-02  3545  729308.665  2179.130   481 0.565  0.631    3.371
-2026-03  1127    6625.967   692.773    65 0.633  0.904   -0.369
-2026-04   324    9329.697   199.165    67 0.698  0.956   -0.560
-2026-05   246   14847.577   151.218    93 0.592  0.894   -0.603
-2026-06  1424  293758.689   875.340   471 0.520  0.601   21.382
-2026-07   219    5384.040   134.620    87 0.946  0.994   -0.457
-2026-08   122   13884.207    74.994    46 0.907  0.990   -0.284
-2026-09    92    6739.722    56.553    18 0.972  0.999   -0.554
-2026-10   147   32423.968    90.362    60 0.777  0.954    0.094
-H1 {'events': 23818, 'valid': 21972, 'months_with_liq': 12, 'gross': np.float64(3743642.81), 'gas': np.float64(21998.126), 'bots': 1451, 'top3': np.float64(0.568), 'top10': np.float64(0.644), 'out_net_pm': np.float64(134013.606), 'out_net_flash_pm': np.float64(133087.024), 'out_bots': 1448, 'median_net': np.float64(0.008), 'pass': True}
-H2 {'events': 11816, 'valid': 10383, 'months_with_liq': 12, 'gross': np.float64(1808193.819), 'gas': np.float64(6382.485), 'bots': 1654, 'top3': np.float64(0.553), 'top10': np.float64(0.592), 'out_net_pm': np.float64(67057.973), 'out_net_flash_pm': np.float64(66539.261), 'out_bots': 1651, 'median_net': np.float64(3.201), 'pass': True}
+  month    n      gross      gas  bots  top3  top10  med_net
+2024-11  330  29925.455   44.390   175 0.605  0.812    1.581
+2024-12  366  78124.085  805.957   188 0.264  0.642    1.310
+2025-01  231  76778.530   85.073   148 0.591  0.773    5.132
+2025-02 2056 821506.294 5924.552   614 0.297  0.481   22.286
+2025-03 5442 198477.041 1334.604   403 0.159  0.321    0.001
+2025-04 1157 291259.804 1984.420   376 0.133  0.297   24.152
+2025-05  120  13255.992   26.044    79 0.481  0.800    1.183
+2025-06  128   8517.878   23.467    86 0.243  0.559    8.736
+2025-07  120   4710.583    3.860    68 0.527  0.842    0.354
+2025-08  258  54198.258    8.104   102 0.829  0.940    0.039
+2025-09  150  22795.485   24.840    59 0.487  0.893    0.039
+2025-10  394 273803.982  591.753   175 0.168  0.454   23.416
+2025-11  638 128278.535  392.182   328 0.160  0.404    6.924
+2025-12  322  22982.702  197.935   171 0.342  0.676    0.377
+2026-01  606 171104.564  372.511   294 0.225  0.416   62.640
+2026-02 1723 355530.901 1059.137   480 0.130  0.260    3.262
+2026-03  598   4154.874  367.594    64 0.546  0.863   -0.431
+2026-04  170   6582.056  104.500    66 0.798  0.945   -0.575
+2026-05  100   8617.029   61.471    92 0.410  0.843   -0.481
+2026-06  728 151614.381  447.505   470 0.095  0.248   20.436
+2026-07  115    705.255   70.691    86 0.719  0.958   -0.466
+2026-08   60   5521.204   36.882    45 0.852  0.987   -0.347
+2026-09   41    909.334   25.203    17 0.851  0.996   -0.595
+2026-10   70  13514.057   43.029    59 0.596  0.904    0.353
+H1 {'events': 23818, 'valid': 21972, 'months_with_liq': 12, 'scale': 2.044, 'gross': np.float64(3828247.824), 'gas': np.float64(22186.702), 'bots': 1450, 'top3': np.float64(0.171), 'top10': np.float64(0.302), 'out_net_pm': np.float64(263258.46), 'out_net_flash_pm': np.float64(261448.589), 'out_bots': 1447, 'median_net': np.float64(0.052), 'pass': True}
+H2 {'events': 11816, 'valid': 10383, 'months_with_liq': 12, 'scale': 2.008, 'gross': np.float64(1745924.024), 'gas': np.float64(6382.485), 'bots': 1653, 'top3': np.float64(0.087), 'top10': np.float64(0.16), 'out_net_pm': np.float64(132305.562), 'out_net_flash_pm': np.float64(131280.899), 'out_bots': 1650, 'median_net': np.float64(2.841), 'pass': True}
 
 --- polygon 0x8183d4e0561cbdc6acc0bdb963c352606a2fa76f [unknown fork] total events 241
-  month   n   gross    gas  bots  top3  top10  med_net
-2024-11   0   0.000  0.000     0   NaN    NaN      NaN
-2024-12   1   0.267  0.615     1 1.000    1.0   -0.347
-2025-01   2   0.140  2.172     2 1.000    1.0   -1.016
-2025-02   7  75.199  4.307     3 1.000    1.0    5.128
-2025-03   6   1.874  0.724     2 1.000    1.0    0.204
-2025-04  11 239.740  4.440     3 1.000    1.0    4.384
-2025-05   0   0.000  0.000     0   NaN    NaN      NaN
-2025-06   1   8.890  0.615     1 1.000    1.0    8.275
-2025-07   0   0.000  0.000     0   NaN    NaN      NaN
-2025-08   0   0.000  0.000     0   NaN    NaN      NaN
-2025-09   0   0.000  0.000     0   NaN    NaN      NaN
-2025-10   2   7.843  3.620     2 1.000    1.0    2.111
-2025-11   5 163.994  3.074     3 1.000    1.0   34.307
-2025-12   3  13.302  1.844     2 1.000    1.0   -0.234
-2026-01   4  67.238  2.459     2 1.000    1.0   17.721
-2026-02   4  33.978  2.459     3 1.000    1.0    9.646
-2026-03   0   0.000  0.000     0   NaN    NaN      NaN
-2026-04   0   0.000  0.000     0   NaN    NaN      NaN
-2026-05   0   0.000  0.000     0   NaN    NaN      NaN
-2026-06   3  12.119  1.844     2 1.000    1.0    5.300
-2026-07   1  18.419  0.615     1 1.000    1.0   17.804
-2026-08 148 345.739 90.976     7 0.904    1.0    0.024
-2026-09   0   0.000  0.000     0   NaN    NaN      NaN
-2026-10  19  20.051 11.679     3 1.000    1.0   -0.525
-H1 {'events': 41, 'valid': 30, 'months_with_liq': 7, 'gross': np.float64(333.952), 'gas': np.float64(16.494), 'bots': 5, 'top3': np.float64(0.969), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.838), 'out_net_flash_pm': np.float64(0.831), 'out_bots': 2, 'median_net': np.float64(0.275), 'pass': False}
-H2 {'events': 200, 'valid': 187, 'months_with_liq': 8, 'gross': np.float64(674.839), 'gas': np.float64(114.95), 'bots': 8, 'top3': np.float64(0.864), 'top10': np.float64(1.0), 'out_net_pm': np.float64(5.546), 'out_net_flash_pm': np.float64(5.478), 'out_bots': 5, 'median_net': np.float64(0.109), 'pass': False}
+  month  n   gross    gas  bots  top3  top10  med_net
+2024-11  0   0.000  0.000     0   NaN    NaN      NaN
+2024-12  0   0.000  0.000     0   NaN    NaN      NaN
+2025-01  1   0.045  1.133     1 1.000    1.0   -1.088
+2025-02  5  33.657  2.759     2 1.000    1.0    1.555
+2025-03  1   0.473  0.121     1 1.000    1.0    0.352
+2025-04  9 239.655  3.633     2 1.000    1.0   11.390
+2025-05  0   0.000  0.000     0   NaN    NaN      NaN
+2025-06  0   0.000  0.000     0   NaN    NaN      NaN
+2025-07  0   0.000  0.000     0   NaN    NaN      NaN
+2025-08  0   0.000  0.000     0   NaN    NaN      NaN
+2025-09  0   0.000  0.000     0   NaN    NaN      NaN
+2025-10  2   7.843  3.620     2 1.000    1.0    2.111
+2025-11  3  84.111  1.844     2 1.000    1.0   17.258
+2025-12  1   0.103  0.615     1 1.000    1.0   -0.512
+2026-01  4  67.238  2.459     2 1.000    1.0   17.721
+2026-02  2   9.991  1.229     2 1.000    1.0    4.381
+2026-03  0   0.000  0.000     0   NaN    NaN      NaN
+2026-04  0   0.000  0.000     0   NaN    NaN      NaN
+2026-05  0   0.000  0.000     0   NaN    NaN      NaN
+2026-06  2   6.099  1.229     1 1.000    1.0    2.435
+2026-07  1  18.419  0.615     1 1.000    1.0   17.804
+2026-08 85 196.261 52.250     6 0.898    1.0    0.115
+2026-09  0   0.000  0.000     0   NaN    NaN      NaN
+2026-10  6   0.308  3.688     2 1.000    1.0   -0.590
+H1 {'events': 41, 'valid': 30, 'months_with_liq': 7, 'scale': 1.667, 'gross': np.float64(469.454), 'gas': np.float64(18.776), 'bots': 4, 'top3': np.float64(0.984), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.609), 'out_net_flash_pm': np.float64(0.604), 'out_bots': 1, 'median_net': np.float64(2.97), 'pass': False}
+H2 {'events': 200, 'valid': 187, 'months_with_liq': 8, 'scale': 1.798, 'gross': np.float64(687.817), 'gas': np.float64(114.95), 'bots': 7, 'top3': np.float64(0.913), 'top10': np.float64(1.0), 'out_net_pm': np.float64(2.397), 'out_net_flash_pm': np.float64(2.351), 'out_bots': 4, 'median_net': np.float64(0.115), 'pass': False}
 
 --- polygon 0x8dff5e27ea6b7ac08ebfdf9eb090f32ee9a30fcf [unknown fork] total events 32080
-  month    n      gross      gas  bots  top3  top10  med_net
-2024-11  806   5330.971   66.057   174 0.661  0.809    0.183
-2024-12  502   7898.871  133.632   159 0.676  0.848    0.633
-2025-01  984   8359.328  154.086   188 0.636  0.816    0.237
-2025-02 3188 155535.929 1997.359   426 0.764  0.892    0.133
-2025-03 2852  99528.462  630.176   457 0.786  0.904    0.048
-2025-04 2681 141218.340  786.063   390 0.716  0.914    0.119
-2025-05  349    659.763    7.620    90 0.820  0.924    0.033
-2025-06  500   2870.462    9.736    66 0.925  0.970    0.004
-2025-07  455   3456.488   12.059    99 0.901  0.968    0.055
-2025-08  146   1742.846    7.297    47 0.828  0.930    1.844
-2025-09 9529    585.532   18.037    23 0.776  0.975   -0.001
-2025-10  300   7714.124  277.206    62 0.840  0.944   -0.211
-2025-11 1421   1878.130  873.496   100 0.650  0.821   -0.576
-2025-12  788   1197.995  484.388    68 0.589  0.810   -0.538
-2026-01  357   3956.422  219.450    65 0.802  0.900   -0.066
-2026-02  610   9828.881  374.970    80 0.658  0.869   -0.264
-2026-03  425   1164.907  261.250    39 0.813  0.929   -0.182
-2026-04  476   1013.529  292.600    54 0.688  0.912   -0.590
-2026-05  316    804.187  194.247    50 0.508  0.814   -0.480
-2026-06 2253  64666.444 1384.931   208 0.573  0.784   -0.275
-2026-07  454    902.983  279.076    30 0.797  0.952   -0.603
-2026-08  569    601.379  349.767    28 0.871  0.976   -0.603
-2026-09  266    534.409  163.512    24 0.822  0.966   -0.567
-2026-10  520   3579.185  319.647    39 0.958  0.991   -0.591
-H1 {'events': 23359, 'valid': 22292, 'months_with_liq': 12, 'gross': np.float64(434901.115), 'gas': np.float64(4099.328), 'bots': 1377, 'top3': np.float64(0.611), 'top10': np.float64(0.813), 'out_net_pm': np.float64(13939.53), 'out_net_flash_pm': np.float64(13806.201), 'out_bots': 1374, 'median_net': np.float64(0.006), 'pass': False}
-H2 {'events': 8721, 'valid': 8455, 'months_with_liq': 12, 'gross': np.float64(90128.452), 'gas': np.float64(5197.334), 'bots': 541, 'top3': np.float64(0.547), 'top10': np.float64(0.714), 'out_net_pm': np.float64(3184.019), 'out_net_flash_pm': np.float64(3156.964), 'out_bots': 538, 'median_net': np.float64(-0.507), 'pass': True}
+  month    n     gross     gas  bots  top3  top10  med_net
+2024-11  395  2866.707  35.281   173 0.460  0.665    0.220
+2024-12  268  4655.586  74.761   158 0.523  0.764    0.819
+2025-01  502  5049.265  83.174   187 0.485  0.719    0.281
+2025-02 1545 64814.244 963.869   425 0.578  0.754    0.281
+2025-03 1424 70178.466 314.646   456 0.740  0.872    0.107
+2025-04 1330 93080.395 390.366   389 0.736  0.879    0.220
+2025-05  179   236.613   3.908    89 0.559  0.809    0.036
+2025-06  251   565.438   4.888    65 0.674  0.857    0.008
+2025-07  217  3201.427   5.749    98 0.913  0.968    0.081
+2025-08   67   514.951   3.349    46 0.491  0.789    1.791
+2025-09 5217   320.008   9.886    22 0.733  0.965   -0.001
+2025-10  157  7023.840 135.472    61 0.854  0.944    0.267
+2025-11  726  1214.975 446.276    99 0.521  0.740   -0.578
+2025-12  388   634.656 238.506    67 0.298  0.684   -0.525
+2026-01  190  1191.674 116.794    64 0.500  0.688   -0.146
+2026-02  294  5179.743 180.723    79 0.479  0.775   -0.272
+2026-03  212   432.607 130.318    38 0.553  0.839   -0.228
+2026-04  262   703.220 161.053    53 0.632  0.888   -0.588
+2026-05  158   606.112  97.123    49 0.472  0.784   -0.452
+2026-06 1130 36310.796 694.617   207 0.345  0.638   -0.302
+2026-07  230   664.260 141.382    29 0.784  0.948   -0.603
+2026-08  272   134.460 167.200    27 0.586  0.914   -0.601
+2026-09  119   212.912  73.150    23 0.687  0.935   -0.553
+2026-10  260  2287.901 159.823    38 0.953  0.987   -0.591
+H1 {'events': 23359, 'valid': 22292, 'months_with_liq': 12, 'scale': 1.93, 'gross': np.float64(487264.95), 'gas': np.float64(3908.335), 'bots': 1376, 'top3': np.float64(0.466), 'top10': np.float64(0.69), 'out_net_pm': np.float64(21415.04), 'out_net_flash_pm': np.float64(21256.237), 'out_bots': 1373, 'median_net': np.float64(0.014), 'pass': True}
+H2 {'events': 8721, 'valid': 8455, 'months_with_liq': 12, 'scale': 1.994, 'gross': np.float64(98831.025), 'gas': np.float64(5197.334), 'bots': 540, 'top3': np.float64(0.254), 'top10': np.float64(0.497), 'out_net_pm': np.float64(5712.605), 'out_net_flash_pm': np.float64(5661.755), 'out_bots': 537, 'median_net': np.float64(-0.508), 'pass': True}
 
 --- scroll 0x11fcfe756c05ad438e312a7fd934381537d3cffe [Aave v3 Scroll] total events 10632
-  month  n  gross  gas  bots  top3  top10  med_net
-2024-11  0      0    0     0   NaN    NaN      NaN
-2024-12  0      0    0     0   NaN    NaN      NaN
-2025-01  0      0    0     0   NaN    NaN      NaN
-2025-02  0      0    0     0   NaN    NaN      NaN
-2025-03  0      0    0     0   NaN    NaN      NaN
-2025-04  0      0    0     0   NaN    NaN      NaN
-2025-05  0      0    0     0   NaN    NaN      NaN
-2025-06  0      0    0     0   NaN    NaN      NaN
-2025-07  0      0    0     0   NaN    NaN      NaN
-2025-08  0      0    0     0   NaN    NaN      NaN
-2025-09  0      0    0     0   NaN    NaN      NaN
-2025-10  0      0    0     0   NaN    NaN      NaN
-2025-11  0      0    0     0   NaN    NaN      NaN
-2025-12  0      0    0     0   NaN    NaN      NaN
-2026-01  0      0    0     0   NaN    NaN      NaN
-2026-02  0      0    0     0   NaN    NaN      NaN
-2026-03  0      0    0     0   NaN    NaN      NaN
-2026-04  0      0    0     0   NaN    NaN      NaN
-2026-05  0      0    0     0   NaN    NaN      NaN
-2026-06  0      0    0     0   NaN    NaN      NaN
-2026-07  0      0    0     0   NaN    NaN      NaN
-2026-08  0      0    0     0   NaN    NaN      NaN
-2026-09  0      0    0     0   NaN    NaN      NaN
-2026-10  0      0    0     0   NaN    NaN      NaN
-H1 {'events': 8858, 'valid': 0, 'months_with_liq': 12, 'gross': np.float64(0.0), 'gas': np.float64(0.0), 'bots': 0, 'top3': nan, 'top10': nan, 'out_net_pm': 0.0, 'out_net_flash_pm': 0.0, 'out_bots': 0, 'median_net': nan, 'pass': False}
-H2 {'events': 1774, 'valid': 0, 'months_with_liq': 12, 'gross': np.float64(0.0), 'gas': np.float64(0.0), 'bots': 0, 'top3': nan, 'top10': nan, 'out_net_pm': 0.0, 'out_net_flash_pm': 0.0, 'out_bots': 0, 'median_net': nan, 'pass': False}
+  month    n      gross     gas  bots  top3  top10  med_net
+2024-11  104   2974.924  18.292    32 0.679  0.975    0.760
+2024-12  203  24033.056  46.585    43 0.611  0.893    2.534
+2025-01   89  18076.876 118.677    34 0.577  0.949    4.218
+2025-02  750 260667.789 645.571    73 0.359  0.668   16.754
+2025-03 6094  23148.071 180.963    89 0.193  0.489   -0.017
+2025-04  420  19697.909 200.824    60 0.331  0.683    9.123
+2025-05   40    110.883   1.398     7 0.942  1.000    0.315
+2025-06   69   6315.220   1.783    17 0.685  0.996    0.268
+2025-07   66     79.465   1.092     8 0.916  1.000    0.439
+2025-08  118   5969.213  39.584    28 0.699  0.988    0.146
+2025-09  516    904.885   0.495     7 0.990  1.000    0.013
+2025-10  192   3544.061   5.031    44 0.844  0.958    0.117
+2025-11  214   1641.927   1.404    39 0.472  0.941    0.073
+2025-12   61      2.529   0.044    17 0.647  0.966    0.015
+2026-01  149   2335.855   2.203    31 0.487  0.953    0.041
+2026-02  137   1758.146   1.536    36 0.480  0.932    0.034
+2026-03   52      5.664   0.095    17 1.376  1.391    0.020
+2026-04   31    170.300   2.678    10 0.955  1.000    0.126
+2026-05   88     23.486   1.195    19 0.860  0.999    0.004
+2026-06  145    469.690   6.257    31 1.007  1.066   -0.007
+2026-07    3      0.903   0.010     2 1.000  1.000    0.185
+2026-08    7      9.967   0.308     3 1.000  1.000    1.009
+2026-09   18      5.902   0.124     4 0.995  1.000    0.003
+2026-10  857     59.090   0.721    10 0.820  1.000    0.002
+H1 {'events': 8858, 'valid': 8661, 'months_with_liq': 12, 'scale': 1.0, 'gross': np.float64(365522.353), 'gas': np.float64(1260.294), 'bots': 135, 'top3': np.float64(0.292), 'top10': np.float64(0.545), 'out_net_pm': np.float64(21497.149), 'out_net_flash_pm': np.float64(21352.461), 'out_bots': 132, 'median_net': np.float64(-0.016), 'pass': True}
+H2 {'events': 1774, 'valid': 1762, 'months_with_liq': 12, 'scale': 1.0, 'gross': np.float64(6483.46), 'gas': np.float64(16.572), 'bots': 73, 'top3': np.float64(0.24), 'top10': np.float64(0.585), 'out_net_pm': np.float64(409.205), 'out_net_flash_pm': np.float64(405.688), 'out_bots': 70, 'median_net': np.float64(0.003), 'pass': False}
 
 --- scroll 0x4ce1a1ec13dbd9084b1a741b036c061b2d58dabf [unknown fork] total events 124
-  month  n  gross  gas  bots  top3  top10  med_net
-2024-11  0      0    0     0   NaN    NaN      NaN
-2024-12  0      0    0     0   NaN    NaN      NaN
-2025-01  0      0    0     0   NaN    NaN      NaN
-2025-02  0      0    0     0   NaN    NaN      NaN
-2025-03  0      0    0     0   NaN    NaN      NaN
-2025-04  0      0    0     0   NaN    NaN      NaN
-2025-05  0      0    0     0   NaN    NaN      NaN
-2025-06  0      0    0     0   NaN    NaN      NaN
-2025-07  0      0    0     0   NaN    NaN      NaN
-2025-08  0      0    0     0   NaN    NaN      NaN
-2025-09  0      0    0     0   NaN    NaN      NaN
-2025-10  0      0    0     0   NaN    NaN      NaN
-2025-11  0      0    0     0   NaN    NaN      NaN
-2025-12  0      0    0     0   NaN    NaN      NaN
-2026-01  0      0    0     0   NaN    NaN      NaN
-2026-02  0      0    0     0   NaN    NaN      NaN
-2026-03  0      0    0     0   NaN    NaN      NaN
-2026-04  0      0    0     0   NaN    NaN      NaN
-2026-05  0      0    0     0   NaN    NaN      NaN
-2026-06  0      0    0     0   NaN    NaN      NaN
-2026-07  0      0    0     0   NaN    NaN      NaN
-2026-08  0      0    0     0   NaN    NaN      NaN
-2026-09  0      0    0     0   NaN    NaN      NaN
-2026-10  0      0    0     0   NaN    NaN      NaN
-H1 {'events': 98, 'valid': 0, 'months_with_liq': 11, 'gross': np.float64(0.0), 'gas': np.float64(0.0), 'bots': 0, 'top3': nan, 'top10': nan, 'out_net_pm': 0.0, 'out_net_flash_pm': 0.0, 'out_bots': 0, 'median_net': nan, 'pass': False}
-H2 {'events': 26, 'valid': 0, 'months_with_liq': 4, 'gross': np.float64(0.0), 'gas': np.float64(0.0), 'bots': 0, 'top3': nan, 'top10': nan, 'out_net_pm': 0.0, 'out_net_flash_pm': 0.0, 'out_bots': 0, 'median_net': nan, 'pass': False}
+  month  n    gross    gas  bots  top3  top10  med_net
+2024-11  0    0.000  0.000     0   NaN    NaN      NaN
+2024-12  3   26.153  0.585     1 1.000  1.000    9.286
+2025-01  5 1989.990  6.299     5 0.989  1.000   21.858
+2025-02 12 1877.108 11.417     7 0.950  1.000   14.119
+2025-03 27 3546.458 50.799    20 0.675  0.959   22.287
+2025-04 19   26.723  1.577     6 0.695  1.000    0.739
+2025-05  6    4.360  0.693     2 1.000  1.000    0.246
+2025-06  5    1.512  0.107     1 1.000  1.000    0.256
+2025-07  4    1.851  0.039     1 1.000  1.000    0.414
+2025-08  4    0.704  0.006     1 1.000  1.000    0.156
+2025-09  1    0.136  0.001     1 1.000  1.000    0.135
+2025-10  2    0.257  0.021     1 1.000  1.000    0.118
+2025-11  0    0.000  0.000     0   NaN    NaN      NaN
+2025-12  0    0.000  0.000     0   NaN    NaN      NaN
+2026-01  0    0.000  0.000     0   NaN    NaN      NaN
+2026-02 18  532.500  3.168     3 1.000  1.000   33.054
+2026-03  0    0.000  0.000     0   NaN    NaN      NaN
+2026-04  0    0.000  0.000     0   NaN    NaN      NaN
+2026-05  0    0.000  0.000     0   NaN    NaN      NaN
+2026-06  3   13.186  0.260     1 1.000  1.000    2.881
+2026-07  1    0.100  0.004     1 1.000  1.000    0.095
+2026-08  0    0.000  0.000     0   NaN    NaN      NaN
+2026-09  0    0.000  0.000     0   NaN    NaN      NaN
+2026-10  4    0.188  0.002     1 1.000  1.000    0.051
+H1 {'events': 98, 'valid': 88, 'months_with_liq': 11, 'scale': 1.0, 'gross': np.float64(7475.253), 'gas': np.float64(71.543), 'bots': 29, 'top3': np.float64(0.508), 'top10': np.float64(0.908), 'out_net_pm': np.float64(300.903), 'out_net_flash_pm': np.float64(299.085), 'out_bots': 26, 'median_net': np.float64(3.731), 'pass': False}
+H2 {'events': 26, 'valid': 26, 'months_with_liq': 4, 'scale': 1.0, 'gross': np.float64(545.973), 'gas': np.float64(3.434), 'bots': 4, 'top3': np.float64(1.0), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.016), 'out_net_flash_pm': np.float64(0.015), 'out_bots': 1, 'median_net': np.float64(27.024), 'pass': False}
 
 == PASS TABLE
 arbitrum   0x102442a3ba unknown fork   H1 top3 0.70 out$/mo        74 mths 11 | H2 top3 0.95 out$/mo         1 mths 10 | PASS=False
@@ -1125,14 +1125,14 @@ metis      0xd5ea2a773f unknown fork   H1 top3 1.00 out$/mo         0 mths  4 | 
 optimism   0x345d2827f3 unknown fork   H1 top3 0.85 out$/mo        38 mths 12 | H2 top3 0.92 out$/mo        19 mths  9 | PASS=False
 optimism   0x794a61358d Aave v3        H1 top3 0.19 out$/mo    106188 mths 12 | H2 top3 0.38 out$/mo     41171 mths 12 | PASS=True
 optimism   0x8fd4af47e4 unknown fork   H1 top3 0.49 out$/mo       486 mths 12 | H2 top3 0.90 out$/mo         9 mths 12 | PASS=False
-polygon    0x1b701bcc52 unknown fork   H1 top3 0.90 out$/mo         0 mths  1 | H2 top3 nan out$/mo         0 mths  0 | PASS=False
-polygon    0x794a61358d Aave v3        H1 top3 0.57 out$/mo    134014 mths 12 | H2 top3 0.55 out$/mo     67058 mths 12 | PASS=True
-polygon    0x8183d4e056 unknown fork   H1 top3 0.97 out$/mo         1 mths  7 | H2 top3 0.86 out$/mo         6 mths  8 | PASS=False
-polygon    0x8dff5e27ea unknown fork   H1 top3 0.61 out$/mo     13940 mths 12 | H2 top3 0.55 out$/mo      3184 mths 12 | PASS=False
-scroll     0x11fcfe756c Aave v3 Scroll H1 top3 nan out$/mo         0 mths 12 | H2 top3 nan out$/mo         0 mths 12 | PASS=False
-scroll     0x4ce1a1ec13 unknown fork   H1 top3 nan out$/mo         0 mths 11 | H2 top3 nan out$/mo         0 mths  4 | PASS=False
+polygon    0x1b701bcc52 unknown fork   H1 top3 1.00 out$/mo         0 mths  1 | H2 top3 nan out$/mo         0 mths  0 | PASS=False
+polygon    0x794a61358d Aave v3        H1 top3 0.17 out$/mo    263258 mths 12 | H2 top3 0.09 out$/mo    132306 mths 12 | PASS=True
+polygon    0x8183d4e056 unknown fork   H1 top3 0.98 out$/mo         1 mths  7 | H2 top3 0.91 out$/mo         2 mths  8 | PASS=False
+polygon    0x8dff5e27ea unknown fork   H1 top3 0.47 out$/mo     21415 mths 12 | H2 top3 0.25 out$/mo      5713 mths 12 | PASS=True
+scroll     0x11fcfe756c Aave v3 Scroll H1 top3 0.29 out$/mo     21497 mths 12 | H2 top3 0.24 out$/mo       409 mths 12 | PASS=False
+scroll     0x4ce1a1ec13 unknown fork   H1 top3 0.51 out$/mo       301 mths 11 | H2 top3 1.00 out$/mo         0 mths  4 | PASS=False
 
-passing venues: 6  combined outside-top3 net $/mo  H1 1553085  H2 1017840
+passing venues: 7  combined outside-top3 net $/mo  H1 1703744  H2 1088801
 OVERALL PASS = True
 
 == sensitivity (no pass/fail): outside-top3 $/mo after 0.09% flash-loan fee on debt, passing venues
@@ -1141,7 +1141,8 @@ avalanche 0x4f01aed16d 3960 1706 outside bots 104 64 per-new-bot est $/mo 27
 avalanche 0x794a61358d 285944 157010 outside bots 280 233 per-new-bot est $/mo 676
 base 0xa238dd80c2 322105 314783 outside bots 820 1608 per-new-bot est $/mo 197
 optimism 0x794a61358d 105529 40907 outside bots 484 595 per-new-bot est $/mo 69
-polygon 0x794a61358d 133087 66539 outside bots 1448 1651 per-new-bot est $/mo 41
+polygon 0x794a61358d 261449 131281 outside bots 1447 1650 per-new-bot est $/mo 80
+polygon 0x8dff5e27ea 21256 5662 outside bots 1373 537 per-new-bot est $/mo 11
 
 == top venues by gross bonus, last 12 months (regardless of pass)
                                                           n      gross      gas  bots
@@ -1158,6 +1159,6 @@ avalanche 0x4f01aed16d97e3ab5ab2b501154dc9bb0f1a5a2c   2542    30616.0    972.0 
 base      0x09b11746dfd1b5a8325e30943f8b3d5000922e03    183    25839.0    733.0    33
 gnosis    0xfb9b496519fca8473fba1af0850b6b8f476bfdb3   1197    14424.0     31.0    37
           0x2dae5307c5e3fd1cf5a72cb6f698f915860607e0    620     7386.0    671.0    24
+scroll    0x11fcfe756c05ad438e312a7fd934381537d3cffe   1762     6483.0     17.0    73
 optimism  0x345d2827f36621b02b783f7d5004b4a2fec00186     80     3782.0     77.0    10
 metis     0x65dec665ea1e96ee5203db321b5cd413b81b2bd2     85     3484.0     36.0    10
-arbitrum  0x54ad657851b6ae95ba3380704996caad4b7751a3     80     1959.0      3.0     5

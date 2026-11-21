@@ -104,3 +104,15 @@ problems, both unrelated to pass/fail:
    bot counts are lower bounds for sampled chains. The earlier code lumped unsampled events into one "unknown_sampled" bot, which would have made the
    top-3 share meaningless; that behaviour is dropped.
 Unpriced tokens (no DefiLlama price) stay excluded from value metrics; coverage is reported per chain and unpriced share is listed.
+
+## Addendum 4 (2026-11-21; written AFTER the registered pass/fail table was seen, so it can only add description, never change a verdict)
+The registered test was run (final data, addenda 1-3 in force): see `docs/jx_runs/liquidations_20261120.txt`. Registered result: OVERALL PASS = True
+(7 venues pass; combined outside-top-3 net far above $2,000/month in both halves). The pass/fail definitions above are NOT changed.
+Because the primary identity (tx `from`) could understate concentration if a professional operator rotates EOAs, and because a pass says nothing about
+what a NEW small bot could win, these descriptive/sensitivity statistics are added for the passing venues, per half (no pass/fail attached):
+1. Same top-3 / top-10 shares and unique-winner counts using the event `liquidator` field instead of tx `from` (this sensitivity was named in "Definitions").
+2. Share of gross bonus won by repeat winners (>= 50 liquidations in the half) vs occasional winners (<= 3), and the number of repeat winners (>= 12 liquidations).
+3. Net income per repeat winner outside the top 3: median and 75th percentile, per month (sum of net / 12). This is the realistic-income yardstick, still before flash-loan fees,
+   swap slippage, bribes and failed attempts.
+4. Plausibility: median bonus as % of collateral value, total debt repaid, share of events invalid by reason.
+Polygon values use the half-sample of receipts (bot counts are lower bounds; dollar sums scaled).
