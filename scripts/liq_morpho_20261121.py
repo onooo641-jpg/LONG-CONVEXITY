@@ -27,7 +27,30 @@ def pilot():
     print("PILOT RULE: KILL if gross < $3,750 ->", "KILL" if gross < 3750 else "proceed to stage 2")
 
 
+def merge_shards():
+    """concatenate the three stage-2 shards into the single venue file (PREREG_LIQ_MORPHO addendum 2); only when all are complete."""
+    import json
+    D = Path(L.D)
+    parts = [f"morphobase_s{i}" for i in range(3)]
+    for p in parts:
+        sf = D / f"liq_{p}_state.json"
+        if not sf.exists() or not json.loads(sf.read_text()).get("complete"):
+            print(f"shard {p} not complete: cannot merge")
+            return False
+    dfs = [pd.read_parquet(D / f"liq_{p}.parquet") for p in parts]
+    df = pd.concat(dfs, ignore_index=True).sort_values(["block", "tx", "user"], kind="mergesort").reset_index(drop=True)
+    df["receipt_sampled"] = any(bool(d["receipt_sampled"].iloc[0]) for d in dfs if len(d))
+    pr = pd.concat([pd.read_parquet(D / f"liq_{p}_prices.parquet") for p in parts], ignore_index=True).drop_duplicates()
+    df.to_parquet(D / "liq_morphobase.parquet")
+    pr.to_parquet(D / "liq_morphobase_prices.parquet")
+    (D / "liq_morphobase_state.json").write_text(json.dumps({"complete": True, "receipts_missing": 0, "merged_from": parts}))
+    print(f"merged {len(df)} events from {len(parts)} shards")
+    return True
+
+
 def full():
+    if not (Path(L.D) / "liq_morphobase_state.json").exists():
+        merge_shards()
     df = L.load("morphobase")
     if df is None:
         print("no data")
