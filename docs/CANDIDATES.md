@@ -115,6 +115,21 @@ risk, 5m signals and 1m fills.
 | 210 | named structural stablecoin programmes held (Liquity BOLD, Felix, sUSDe, sUSDf, Sky, Spark, bUSD0, HL Earn, Maple, Pendle) | `docs/PREREG_PROGRAMMES_20261121.md`. Each ≥ 8%/yr both halves. | all FAIL (best sUSDe 9.1%/4.3%, bUSD0 13.0%/3.0%); yields fell to 3–5% in 2025–26 | PREREG_PROGRAMMES result |
 | 217 | best-venue DeFi funding carry (HL/dYdX/Aevo) | `docs/PREREG_BESTVENUE_20261121.md` | Stage 0.5 KILL: hindsight ceiling 7.8%/yr < 8% | ceiling_20261121.txt |
 | 208 | cross-venue funding gaps, delta-neutral (HL/dYdX/Aevo) | `docs/PREREG_FUNDGAP_20261121.md` (+ addendum 1). Pass ≥ 8%/yr both halves. | FAIL: 13.8% / 4.4% by half; gaps closed in 2025–26 | PREREG_FUNDGAP result |
+| 209 | paid-to-borrow same-asset stable loops | `docs/PREREG_BORROWLOOP_20261121.md`; PREREG_HEDGED addendum | survives Stage 0.5 (ceiling 11.4%, Dolomite loops ~16–19% today); NOT TESTABLE further: borrow history paywalled (HTTP 402) | borrow_ceiling_20261121.txt |
+| 211 | Pendle stable PTs to maturity, expired markets included | `docs/PREREG_PENDLE_20261121.md` | FAIL at Stage 1 (−7.0%/yr; apxUSD depeg) | PREREG_PENDLE result |
+| 212 | hedged liquid staking (LST + HL short) | `docs/PREREG_HEDGED_20261121.md` | FAIL at Stage 1 (−2.2%; churn costs); post-hoc buy-and-hold also < 8% in year 2 | PREREG_HEDGED results |
+| 213 | hedged reward farming (ETH/SOL/HYPE/BTC/AVAX/BNB pools) | same | FAIL at Stage 1 (−3.6%) | same |
+| 216 | gold carry (PAXG + HL short) | `docs/PREREG_GOLDCARRY_20261121.md` | FAIL: 7.1% / 5.1% | goldcarry_20261121.txt |
+| 219 | correlated-pair loops (LST/ETH, sUSDe/USDC) | PREREG_HEDGED | Stage 0.5 KILL (corrected ceiling 6.8%; e-mode LTV not in data) | borrow_ceiling_20261121.txt |
+| 220 | hedged Jupiter JLP | `docs/PREREG_BATCH4_20261121.md` | not testable (no history: DefiLlama lists only JLP lending; Jupiter API current APR only) | batch4_20261121.txt |
+| 221 | hedged GMX GM pools | same | passes fee-APY rule (21.8% / 10.1%); robustness with real GM prices pending | batch4_20261121.txt |
+| 222 | dYdX MegaVault | same | FAIL (only 67 days of history; Stage 1 8.2%) | same |
+| 223 | Lighter LLP | same | not testable (no history) | same |
+| 224 | stable-pair DEX LPs | same | FAIL at Stage 1 (−12.0%) | same |
+| 225 | trader-counterparty USDC vaults (Gains) | same | FAIL on the primary rule (9.7% / 4.4%); equal-weight 10.7% / 13.2% (near-miss; ~$2.5M capacity) | same |
+| 227 | other savings rates (sUSDu, savUSD, sUSDai, sDOLA, sfrxUSD...) | same | FAIL (3.7% / −16.8%) | same |
+| 229 | hedged native L1 staking | `docs/PREREG_BATCH5_20261121.md` | ATOM Stage 0.5 KILL (4.9%); INJ ceiling 12.1% but no free APR history → not testable beyond Stage 0.5; TIA/SEI/DYDX/APT/NEAR/DOT no APR data | batch5_20261121.txt |
+
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.

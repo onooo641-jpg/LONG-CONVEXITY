@@ -1,0 +1,13 @@
+     entry  market  chain  implied  days    ret    ann                    tag
+2026-05-01  apyUSD      1    15.81    48   0.05   0.37                matured
+2026-05-01  reUSDe      1    15.11    55   0.24   1.61                matured
+2026-05-01  apxUSD      1    14.00    48 -11.67 -88.71 DEPEG underlying 0.902
+2026-06-01  sUSDat      1    14.38    87   1.35   5.68                matured
+2026-06-01 srUSDat      1    11.43    87   0.71   2.99                matured
+2026-06-01   USDat     56    10.33    87   0.47   1.97                matured
+2026-07-01  apyUSD      1    16.81    57   0.56   3.56                matured
+2026-07-01    USD3      1    11.81   143   2.57   6.56          open, accrued
+2026-07-01  sUSDai  42161     9.45   106   0.76   2.61                matured
+
+Stage 1 (cohorts 2026-05..07): mean annualised -7.04%/yr; positions hit by depeg 1 of 9
+VERDICT: FAIL (Stage 1 KILL < 4%)

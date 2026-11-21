@@ -25,3 +25,9 @@ price at maturity from the Pendle API or DefiLlama coins (`coins.llama.fi`).
 Reported: depeg losses hit, $/yr on $10K/$40K, share of entries in markets that later depegged.
 
 Command: `uv run python scripts/pendle_20261121.py | tee docs/jx_runs/pendle_20261121.txt`
+
+## Result (2026-11-21, `docs/jx_runs/pendle_20261121.txt`, re-run identical): FAIL at Stage 1
+Pilot data: 131 stable-underlying Pendle markets live since 2026-05 on 9 chains (`data/public/pendle_pilot_*`). Cohorts 2026-05..07, top 3 by
+implied APY (TVL ≥ $5M, ≥ 30 days): 9 positions, implied 9.5–16.8%, **mean annualised −7.0%/yr** → KILL. One apxUSD position hit a depeg
+(underlying $0.902 at maturity, −11.7%); matured positions netted 0.4–6.6%/yr after the registered $10 gas per leg on a $556 ladder slice.
+The data also show deeper depegs in markets outside the top 3 (msUSD $0.31, jrUSDat $0.47) — the fixed rate is priced for that risk.
