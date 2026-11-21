@@ -1,0 +1,18 @@
+=== liq_replay_arbitrum
+arbitrum: oracle 0xb56c2f0b653b2e0b10c9b928c8580ac5df02c7c7, source updates in window for 4 assets
+  rpc error eth_call @ https://arb1.arbitrum.io/rpc: {'code': 3, 'message': 'execution reverted', 'data': '0x'}
+  arbitrum: 25/316 (4.7 min)
+  arbitrum: 50/316 (5.2 min)
+  arbitrum: 75/316 (5.6 min)
+  arbitrum: 100/316 (5.7 min)
+  arbitrum: 125/316 (6.0 min)
+  arbitrum: 150/316 (6.0 min)
+  arbitrum: 175/316 (6.1 min)
+  arbitrum: 200/316 (6.1 min)
+  arbitrum: 225/316 (6.2 min)
+  arbitrum: 250/316 (6.3 min)
+  arbitrum: 275/316 (6.3 min)
+  rpc exception eth_getLogs @ https://arb1.arbitrum.io/rpc: HTTP 429
+  arbitrum: 300/316 (6.6 min)
+arbitrum: replay stage 2 wrote 316 rows
+=== liq_replay_arbitrum done in 395s  ok 8071 fail 7
