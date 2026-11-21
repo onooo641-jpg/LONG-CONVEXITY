@@ -20,3 +20,9 @@ pools with TVL ≥ $1M today, full DefiLlama daily history). Only the #204 rotat
 Bias: pools that died before today are missing (survivorship) → results are an upper bound.
 
 Command: `uv run python scripts/newrewards_20261121.py | tee docs/jx_runs/newrewards_20261121.txt`
+
+## Result (2026-11-21, `docs/jx_runs/newrewards_20261121.txt`)
+242 reward-start events in the window; 100 taken (37 / 63 by half). **Stage 1: −61.7%/yr → KILL. FAIL.** 26% of taken positions hit the
+loss-stress (TVL −50% in a week). Post-hoc diagnostic, not a verdict (`docs/jx_runs/newrewards_posthoc_nostress_20261121.txt`): with the stress
+set to zero the rule earns 4.3% / −0.5% by half (1.9%/yr), below plain Aave USDC (5.2% / 3.5%): the median new reward on a stablecoin pool
+is only 2.1% APR and $5 transactions on $10K eat it. "Catch new stablecoin rewards early" has no edge in this data.

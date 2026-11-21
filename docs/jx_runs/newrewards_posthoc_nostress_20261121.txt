@@ -1,0 +1,8 @@
+POST-HOC, stress = 0 (TVL collapses treated as exits at no loss):
+events (reward starts, TVL >= $1M) in window: 242
+events taken: 100 (half 1 37, half 2 63); stress hits 26 (26% of taken)
+median reward APR at start of taken events 2.1%
+Stage 1 (2026-08..10): 1.78%/yr -> continue
+half 1 4.32%/yr, half 2 -0.46%/yr, whole 1.93%/yr; baseline 5.16% / 3.46%; worst month -0.38%; months negative 7
+$ per year: $193 on $10K, $773 on $40K (Topstep slot $4,097/yr)
+VERDICT: FAIL

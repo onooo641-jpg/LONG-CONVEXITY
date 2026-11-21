@@ -111,6 +111,7 @@ risk, 5m signals and 1m fills.
 | 205 | Hyperliquid HLP vault — non-prop fallback | same. Pass ≥ 8%/yr both halves, drawdown > −15%. | FAIL (near-miss): 27.7% / 7.9% by half; last 3 months 4.9%; falling | PREREG_FALLBACK results |
 | 206 | FuturesElite Elite 50K, manual entry (alert-assisted), extra prop slot | PREREG_RADAR addenda 5–6. Flag rule as #200. | **flagged at $128** (third-party price): $31,071 real / $5,903 coin flip (79%) / dip −$2,560 vs Topstep at same delay $37,348 / $14,701; fails above ~$150. Needs: price confirmed, a person at the screen, signal clause read | PREREG_RADAR addendum 6; ledger RP5–RP6 |
 
+| 207 | new stablecoin reward programmes, first 30 days | `docs/PREREG_NEWREWARDS_20261121.md`. Pass ≥ 8%/yr both halves, ≥ 30 events/half. | FAIL at Stage 1 (−61.7%/yr with loss stress; 1.9%/yr even without it, below Aave) | PREREG_NEWREWARDS result |
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.
