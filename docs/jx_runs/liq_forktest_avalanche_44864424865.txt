@@ -1,0 +1,64 @@
+fork test avalanche run 44864424865 2026-11-21T04:06:37Z
+== rpc https://avalanche.gateway.tenderly.co
+Compiling 2 files with Solc 0.8.26
+Solc 0.8.26 finished in 310.81ms
+Compiler run successful!
+
+Ran 4 tests for test/LiqExecutor.t.sol:LiqExecutorForkTest
+[FAIL: no fee tier worked: fee500:08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000013 fee3000: fee100: fee10000:] test_profitable_liquidation_repays_flash_loan() (block: 100942011) (gas: 3047080)
+[PASS] test_reverts_on_healthy_position() (gas: 1143794)
+[PASS] test_reverts_on_unusable_route() (gas: 553837)
+[PASS] test_reverts_when_below_min_profit() (gas: 2895942)
+Suite result: FAILED. 3 passed; 1 failed; 0 skipped; finished in 17.59s (20.63s CPU time)
+
+Ran 1 test suite in 17.59s (17.59s CPU time): 3 tests passed, 1 failed, 0 skipped (4 total tests)
+
+Failing tests:
+Encountered 1 failing test in test/LiqExecutor.t.sol:LiqExecutorForkTest
+[FAIL: no fee tier worked: fee500:08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000013 fee3000: fee100: fee10000:] test_profitable_liquidation_repays_flash_loan() (block: 100942011) (gas: 3047080)
+
+Encountered a total of 1 failing tests, 3 tests succeeded
+
+Tip: Run `forge test --rerun` to retry only the 1 failed test
+Tip: Run `forge test --debug --match-test <TEST_NAME>` to inspect one failing test in the debugger
+== rpc https://avalanche-c-chain-rpc.publicnode.com
+No files changed, compilation skipped
+
+Ran 4 tests for test/LiqExecutor.t.sol:LiqExecutorForkTest
+[FAIL: no fee tier worked: fee500:08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000013 fee3000: fee100: fee10000:] test_profitable_liquidation_repays_flash_loan() (block: 100942028) (gas: 3047078)
+[PASS] test_reverts_on_healthy_position() (gas: 1143794)
+[PASS] test_reverts_on_unusable_route() (gas: 553837)
+[PASS] test_reverts_when_below_min_profit() (gas: 2895940)
+Suite result: FAILED. 3 passed; 1 failed; 0 skipped; finished in 18.27s (21.46s CPU time)
+
+Ran 1 test suite in 18.27s (18.27s CPU time): 3 tests passed, 1 failed, 0 skipped (4 total tests)
+
+Failing tests:
+Encountered 1 failing test in test/LiqExecutor.t.sol:LiqExecutorForkTest
+[FAIL: no fee tier worked: fee500:08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000013 fee3000: fee100: fee10000:] test_profitable_liquidation_repays_flash_loan() (block: 100942028) (gas: 3047078)
+
+Encountered a total of 1 failing tests, 3 tests succeeded
+
+Tip: Run `forge test --rerun` to retry only the 1 failed test
+Tip: Run `forge test --debug --match-test <TEST_NAME>` to inspect one failing test in the debugger
+== rpc https://api.avax.network/ext/bc/C/rpc
+No files changed, compilation skipped
+
+Ran 4 tests for test/LiqExecutor.t.sol:LiqExecutorForkTest
+[FAIL: no fee tier worked: fee500:08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000013 fee3000: fee100: fee10000:] test_profitable_liquidation_repays_flash_loan() (block: 100942053) (gas: 3047078)
+[PASS] test_reverts_on_healthy_position() (gas: 1143794)
+[PASS] test_reverts_on_unusable_route() (gas: 553837)
+[PASS] test_reverts_when_below_min_profit() (gas: 2895940)
+Suite result: FAILED. 3 passed; 1 failed; 0 skipped; finished in 17.79s (20.75s CPU time)
+
+Ran 1 test suite in 17.79s (17.79s CPU time): 3 tests passed, 1 failed, 0 skipped (4 total tests)
+
+Failing tests:
+Encountered 1 failing test in test/LiqExecutor.t.sol:LiqExecutorForkTest
+[FAIL: no fee tier worked: fee500:08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000013 fee3000: fee100: fee10000:] test_profitable_liquidation_repays_flash_loan() (block: 100942053) (gas: 3047078)
+
+Encountered a total of 1 failing tests, 3 tests succeeded
+
+Tip: Run `forge test --rerun` to retry only the 1 failed test
+Tip: Run `forge test --debug --match-test <TEST_NAME>` to inspect one failing test in the debugger
+exit 1
