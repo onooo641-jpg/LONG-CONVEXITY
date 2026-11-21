@@ -56,3 +56,18 @@ crawled. Priced (rules from own pages, prices from directories = third-party):
 (the highest yields are the pools that collapse); Hyperliquid HLP 27.7% / 7.9% by half (near-miss, yield falling).
 **Flag to Jx:** FuturesElite passes the prop-firm pricing flag (not a non-prop opportunity); it needs the price confirmed and a person placing
 trades by hand within 3 minutes. No non-prop flag.
+
+## Radar update (2026-11-21, evening): more mechanisms, a process mistake, prop-firm monthly view
+**Process mistake (mine), now fixed.** CLAUDE.md says Stage 1 runs "on the cheapest small slice of data". I fetched full two-year histories
+before piloting, so ideas killed at Stage 1 still cost the whole GitHub Actions fetch (up to 1.5 h). Fixed in PREREG_RADAR addendum 7:
+Stage 0.5 ceiling check from data already in the repo (`scripts/ceiling_20261121.py`), pilot-first fetches, batched jobs.
+**Mechanism sweep** (`docs/IDEAS_SWEEP_20261121.md`): 40 mechanisms listed with Stage-0 checks; 9 fail Malaysia/filter at desk check.
+**Results since the afternoon:**
+- #207 new stablecoin reward programmes, first 30 days: FAIL at Stage 1 (−61.7%/yr with loss stress; 1.9%/yr even without, below Aave).
+- #210 ten named stablecoin programmes held (sUSDe, bUSD0, sUSDf, Sky, Spark, Maple, Pendle, Liquity, Felix, HL Earn): all FAIL; 8–13% in
+  2024–25, 3–5% in 2025–26.
+- #217 best-venue DeFi funding carry: Stage 0.5 KILL (ceiling 7.8%).
+- Queued (data fetching): #208 funding gaps, #209 paid-to-borrow loops, #211 Pendle PTs incl. expired, #212 hedged staking, #213 hedged farming,
+  #214 hedged governance-token yields (ceiling 25%: yCRV), #216 gold carry, #219 correlated-pair loops.
+**Prop-firm monthly view** (`docs/jx_runs/radar_monthly_20261121.txt`): average $/month 2016–26 Topstep $341, Alpha Std (3-min manual) $309,
+Lucid $289, TradeDay $85 $274, MFFU $265, FuturesElite (3-min) $239; payouts land in only ~1 month in 5; last 24 months ~3× the 10-year average.

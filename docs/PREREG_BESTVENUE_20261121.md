@@ -11,5 +11,5 @@ Command: `uv run python scripts/bestvenue_20261121.py | tee docs/jx_runs/bestven
 
 
 ## Result: Stage 0.5 KILL (2026-11-21)
-Ceiling from data in hand: best 3 coins' last-90-day Hyperliquid short funding (chosen with hindsight) = 7.5%/yr on capital,
+Ceiling from data in hand: best 3 coins' last-90-day Hyperliquid short funding (chosen with hindsight) = 7.8%/yr on capital (LTC, SUI, LINK; first inline calculation said 7.5% because it used the wrong coin list, corrected by `scripts/ceiling_20261121.py`),
 below the 8% bar; dYdX/Aevo would have to pay shorts more than HL on the same coins to lift it. Not run (`docs/jx_runs/ceiling_20261121.txt`).

@@ -155,6 +155,6 @@ kill an idea, so failing ideas still cost the whole fetch. From now on:
 2. **Pilot-first fetch:** the first fetch pulls only the Stage-1 window (last ~90 days). The full history is fetched only for ideas that
    survive Stage 1.
 3. Run several ideas' fetches in one Actions job.
-First application (`docs/jx_runs/ceiling_20261121.txt`): #217 best-venue carry ceiling 7.5%/yr (HL leg, best 3 coins of the last 90 days,
+First application (`docs/jx_runs/ceiling_20261121.txt`): #217 best-venue carry ceiling 7.8%/yr (HL leg, best 3 of its 12 coins over the last 90 days,
 chosen with hindsight) < 8% → **Stage 0.5 KILL**. #212/#213 majors: ceilings 6.6–9.6% (marginal, data already queued). #214: yCRV 20.7% +
 CRV short funding 12.7% → ceiling 25% (highest of the batch).

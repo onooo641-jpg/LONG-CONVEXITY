@@ -23,15 +23,15 @@ HL funding received by a SHORT, annualised % (last 90 d / last 365 d):
 
 Best current pool yield (TVL >= $20M; governance tokens >= $2M) + HL short funding (90 d), / 1.333 capital factor = hedged ceiling:
   CRV     best yearn-finance/YCRV  20.7% + funding  12.7% -> ceiling  25.0% (top-5 avg  23.8%)
+  BTC     best accountable/CBBTC   3.6% + funding   9.2% -> ceiling   9.6% (top-5 avg   8.2%)
   ETH     best aave-v3/WETH   4.6% + funding   8.2% -> ceiling   9.6% (top-5 avg   8.7%)
   SOL     best marinade-liquid-staking/MSOL   5.7% + funding   6.7% -> ceiling   9.3% (top-5 avg   9.0%)
-  HYPE    best sthype/STHYPE   2.0% + funding   nan% -> ceiling   nan% (top-5 avg   nan%)
-  BTC     best accountable/CBBTC   3.6% + funding   9.2% -> ceiling   9.6% (top-5 avg   8.2%)
   BNB     best lista-liquid-staking/SLISBNB   0.6% + funding   9.2% -> ceiling   7.4% (top-5 avg   7.0%)
   AVAX    best benqi-staked-avax/SAVAX   3.8% + funding   5.0% -> ceiling   6.6% (top-5 avg   4.6%)
+  HYPE    best sthype/STHYPE   2.0% + funding   nan% -> ceiling   nan% (top-5 avg   nan%)
   AAVE    best aave-v3/AAVE   0.0% + funding   nan% -> ceiling   nan% (top-5 avg   nan%)
   PENDLE  best stake-dao-yield/SDPENDLE   2.6% + funding   nan% -> ceiling   nan% (top-5 avg   nan%)
   AERO    best morpho-blue/AERO   0.0% + funding   nan% -> ceiling   nan% (top-5 avg   nan%)
 
-#216 gold carry ceiling: nan% (90 d), nan% (365 d)
-#217 best-venue carry, HL leg only, top-3 coins last 90 d: 7.5% (SUI, LINK, DOGE)
+#216 gold carry ceiling: nan% (90 d), nan% (365 d)  [nan = PAXG not in this HL file]
+#217 best-venue carry, HL leg only, top-3 coins last 90 d (hindsight): 7.8% (LTC, SUI, LINK)
