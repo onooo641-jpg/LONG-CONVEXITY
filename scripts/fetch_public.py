@@ -814,6 +814,7 @@ def job_liq_decimals():
 
 T_ASSET_SRC = "0x22c5b7b2d8561d39f7f210b6b326a1aa69f15311163082308ac4877db6339dc1"
 REPLAY_W = 10_000
+REPLAY_CFG = {"base": dict(urls=["https://base.gateway.tenderly.co"], w=1000, scan_sources=False)}   # PREREG_LIQ_REPLAY addendum 4
 
 
 def job_liq_replay_chain(name):
@@ -822,6 +823,9 @@ def job_liq_replay_chain(name):
     import numpy as np
     stage = os.environ.get("REPLAY_STAGE", "2")
     lkey, native, urls = LIQ_CHAINS[name]
+    rc = REPLAY_CFG.get(name, {})
+    urls = rc.get("urls", urls)
+    win = rc.get("w", REPLAY_W)
     pool = {"arbitrum": "0x794a61358d6845594f94dc1db02a252b5b4814ad", "base": "0xa238dd80c259a72e81d7e4664a9801593f98d1c5"}.get(
         name, "0x794a61358d6845594f94dc1db02a252b5b4814ad")
     smp = pd.read_parquet(OUT / "liq_replay_sample.parquet")
@@ -837,7 +841,7 @@ def job_liq_replay_chain(name):
     lo, hi = int(smp["block"].min()) - 1, int(smp["block"].max())
     # oracle source changes over the whole window
     ups, b, step = {}, lo, 10000
-    while b <= hi:
+    while b <= hi and rc.get("scan_sources", True):
         e = min(b + step - 1, hi)
         try:
             logs = rpc(urls, "eth_getLogs", [{"fromBlock": hex(b), "toBlock": hex(e), "address": oracle, "topics": [T_ASSET_SRC]}])
@@ -884,7 +888,7 @@ def job_liq_replay_chain(name):
         if not addrs:
             return None
         try:
-            logs = rpc(urls, "eth_getLogs", [{"fromBlock": hex(max(0, blk - REPLAY_W)), "toBlock": hex(blk), "address": addrs}])
+            logs = rpc(urls, "eth_getLogs", [{"fromBlock": hex(max(0, blk - win)), "toBlock": hex(blk), "address": addrs}])
         except Exception:  # noqa: BLE001
             return "err"
         return max((int(lg["blockNumber"], 16) for lg in logs), default=-1)

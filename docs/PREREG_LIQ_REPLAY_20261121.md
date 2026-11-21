@@ -49,3 +49,10 @@ Also recorded: most events resolve only the collateral feed (stablecoin debt fee
 
 ## Addendum 3 (2026-11-21 08:50 UTC; stage-2 gap data NOT looked at; only the stage-1 pilot was): descriptive month split
 Added before reading any stage-2 result: report R and R_value (IDEAL arm, resolved events, chains passing the feed check) separately for June 2026 (month 19 of the window) and for the other window months (Apr, May, Jul–Oct 2026), per chain and pooled. Descriptive only: it changes no rule, threshold, sample or verdict logic. Reason: Jx's observation that income is concentrated in a few big months, so the replay window's mix of months matters for interpretation.
+
+## Addendum 4 (2026-11-21; stage-2 gap data for Arbitrum, Avalanche, Optimism exists but was NOT opened; Base produced no data): Base endpoint limit
+The Base replay job cannot finish: the only Base endpoint with deep history that accepts address-filtered `eth_getLogs` over the needed ranges (Pocket) now rejects ranges above 500 blocks, which makes the oracle-source scan (about 17,000 calls) and every per-event log query fail or crawl. Changes for Base ONLY, made before any Base gap data exists:
+- endpoint: Tenderly's Base gateway (accepted 1,000-block spans in the earlier diagnostics);
+- the in-force oracle source is NOT scanned over the window: Base uses the oracle's latest source for every event (assumption stated; the SVR feed swap on Base in March 2026 precedes the window start of 2026-04-01, to be checked later if possible);
+- the update-log window is 1,000 blocks (about 33 minutes) instead of 10,000. A gap beyond 1,000 blocks is recorded as "no update in window" (counts as reachable, as for every chain); the feed check (more than 50% no-update means exclusion) applies to Base as to the others, so a 33-minute window on a slow feed can exclude Base.
+All other chains, definitions and decision rules are unchanged.
