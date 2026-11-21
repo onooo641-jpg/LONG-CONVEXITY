@@ -2,7 +2,7 @@
 import glob, os, sys
 import numpy as np, pandas as pd
 
-D = os.path.join(os.path.dirname(__file__), "..", "data", "public")
+D = os.environ.get("LIQ_DATA_DIR") or os.path.join(os.path.dirname(__file__), "..", "data", "public")
 KNOWN = {  # label only; venues are (chain, contract)
     "0x794a61358d6845594f94dc1db02a252b5b4814ad": "Aave v3", "0xa238dd80c259a72e81d7e4664a9801593f98d1c5": "Aave v3 Base",
     "0x6807dc923806fe8fd134338eabca509979a7e0cb": "Aave v3 BNB", "0xb50201558b00496a145fe76f7424749556e326d8": "Aave v3 Gnosis",
@@ -25,9 +25,21 @@ def px(prices, coin, ts):
     return out
 
 
+def status(chain):
+    import json
+    f = f"{D}/liq_{chain}_state.json"
+    if not os.path.exists(f):
+        return "UNMEASURED (no data)"
+    st = json.load(open(f))
+    if not st.get("complete"):
+        a = st.get("anchors", [0, 1])
+        return f"PARTIAL (logs {100*(st.get('next_block', a[0])-a[0])/max(a[-1]-a[0],1):.1f}%, receipts_done={st.get('receipts_done')})"
+    return f"COMPLETE (receipts missing {st.get('receipts_missing')}, skipped non-Aave-ABI logs {st.get('skipped_logs')})"
+
+
 def load(chain):
     f = f"{D}/liq_{chain}.parquet"
-    if not os.path.exists(f):
+    if not os.path.exists(f) or not str(status(chain)).startswith("COMPLETE"):
         return None
     df = pd.read_parquet(f)
     pr = pd.read_parquet(f"{D}/liq_{chain}_prices.parquet")
@@ -72,7 +84,7 @@ def venue_stats(v):
         val = h[h["valid"]]
         r = {"events": len(h), "valid": len(val), "months_with_liq": h["month"].nunique(), "gross": val["gross"].sum(), "gas": val["gas_usd"].sum()}
         if len(val):
-            by = val.groupby("bot")["gross"].sum().sort_values(ascending=False)
+            by = val.groupby("bot")["gross"].sum().sort_values(ascending=False, kind="mergesort")
             tot = by.sum()
             r["bots"] = len(by)
             r["top3"] = by.head(3).sum() / tot if tot > 0 else np.nan
@@ -90,6 +102,9 @@ def venue_stats(v):
 
 
 def main():
+    print("== chain status (only COMPLETE chains are analysed; PARTIAL/UNMEASURED cannot pass)")
+    for c in NATIVE:
+        print(f"{c:10s} {status(c)}")
     frames = [d for d in (load(c) for c in NATIVE) if d is not None]
     if not frames:
         print("NO DATA"); return
@@ -110,7 +125,7 @@ def main():
             g = v[(v["month"] == m) & v["valid"]]
             if len(g) == 0:
                 rows.append((m, 0, 0, 0, 0, np.nan, np.nan, np.nan)); continue
-            by = g.groupby("bot")["gross"].sum().sort_values(ascending=False); tot = by.sum()
+            by = g.groupby("bot")["gross"].sum().sort_values(ascending=False, kind="mergesort"); tot = by.sum()
             rows.append((m, len(g), g["gross"].sum(), g["gas_usd"].sum(), len(by), by.head(3).sum() / tot if tot > 0 else np.nan,
                          by.head(10).sum() / tot if tot > 0 else np.nan, g["net"].median()))
         mt = pd.DataFrame(rows, columns=["month", "n", "gross", "gas", "bots", "top3", "top10", "med_net"])
