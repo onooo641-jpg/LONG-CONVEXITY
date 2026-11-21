@@ -1,3 +1,12 @@
-Traceback (most recent call last):
-  File "/home/claude/LONG-CONVEXITY/scripts/radar_backcheck_20261121.py", line 8, in <module>
-    from scipy.stats import spearmanr
+rank correlation (Spearman), coin-flip median vs real net: 0.86 (n=13)
+LucidFlex 50K          coin flip   18,519   real   37,523
+Topstep 50K            coin flip   18,046   real   44,359
+TradeDay $85           coin flip   14,035   real   35,678
+Tradeify Select Flex   coin flip   11,110   real   32,900
+Breakout Classic       coin flip   10,679   real   38,263
+MFFU Rapid EOD         coin flip    7,358   real   34,481
+TFD Static Pro         coin flip    3,274   real   20,248
+FTMO Fut Growth        coin flip    1,906   real   34,236
+FTMO Fut Pro           coin flip    1,523   real   28,452
+FundedNext Rapid Pro   coin flip     -608   real   14,482
+TFD Static Core        coin flip   -1,163   real   10,680
