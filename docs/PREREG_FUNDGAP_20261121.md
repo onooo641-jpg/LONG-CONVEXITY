@@ -33,3 +33,8 @@ Limits: execution (both legs fill at the same time), venue risk (exchange failur
 ~30% move against one leg before rebalancing; none are in the P&L.
 
 Command: `uv run python scripts/fundgap_20261121.py | tee docs/jx_runs/fundgap_20261121.txt`
+
+## Addendum 1 (2026-11-21, before the funding data arrived; found with synthetic data only)
+A synthetic check showed that a gap that stays open for months never completes a "round trip", so the repeatability condition would fail a
+strategy that earns continuously. Condition (b) is replaced by: **≥ 20 positions opened in each half, OR invested on ≥ 50% of days in each
+half**. Thresholds, costs and the 8%/yr bar are unchanged. No real funding data had been fetched when this was written.

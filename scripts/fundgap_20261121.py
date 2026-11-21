@@ -33,7 +33,7 @@ def hourly(df):
 def run(H, pairs):
     coins = sorted({c for (_, c) in H})
     days = pd.date_range(LO, HI - pd.Timedelta(days=1), freq="D", tz="UTC")
-    open_pos, daily, trips = {}, [], []
+    open_pos, daily, trips, opens = {}, [], [], []
     for d in days:
         pnl = 0.0
         prev = slice(d - pd.Timedelta(hours=24), d - pd.Timedelta(hours=1))
@@ -59,16 +59,17 @@ def run(H, pairs):
             if len(open_pos) >= SLOTS:
                 break
             open_pos[(a, b, c)] = {"dir": sgn, "open": d}
+            opens.append(d)
             pnl -= FEE_SIDE * 2
         # earn today's funding difference (missing hours earn 0)
         for (a, b, c), p in open_pos.items():
             pnl += p["dir"] * (H[(a, c)][today] - H[(b, c)][today]).fillna(0).sum()
         daily.append((d, pnl / (SLOTS * 2 / LEV), len(open_pos)))
     s = pd.DataFrame(daily, columns=["d", "r", "n"]).set_index("d")
-    return s, trips
+    return s, trips, opens
 
 
-def report(name, s, trips, verdict=True):
+def report(name, s, trips, opens, verdict=True):
     ann = lambda x: float(x.mean() * 365 * 100)  # noqa: E731
     t1 = sum(1 for o, _ in trips if o < MID)
     t2 = len(trips) - t1
@@ -76,13 +77,17 @@ def report(name, s, trips, verdict=True):
     h1, h2 = ann(s.r[s.index < MID]), ann(s.r[s.index >= MID])
     mon = s.r.groupby(s.index.strftime("%Y-%m")).sum() * 100
     inv = float((s.n > 0).mean())
-    print(f"{name}: round trips {t1} / {t2}; invested {inv:.0%} of days; Stage 1 {pilot:.2f}%/yr; halves {h1:.2f}% / {h2:.2f}% on capital; "
+    o1 = sum(1 for o in opens if o < MID)
+    o2 = len(opens) - o1
+    i1, i2 = float((s.n[s.index < MID] > 0).mean()), float((s.n[s.index >= MID] > 0).mean())
+    print(f"{name}: round trips {t1} / {t2}; opened {o1} / {o2}; invested {i1:.0%} / {i2:.0%} of days; Stage 1 {pilot:.2f}%/yr; halves {h1:.2f}% / {h2:.2f}% on capital; "
           f"worst month {mon.min():.2f}%; $ per year ${ann(s.r) * 100:,.0f} on $10K, ${ann(s.r) * 400:,.0f} on $40K")
     if verdict:
         if pilot < KILL:
             print(f"  VERDICT: FAIL (Stage 1 {pilot:.2f} < {KILL})")
         else:
-            ok = h1 >= BAR and h2 >= BAR and t1 >= 20 and t2 >= 20
+            rep = (o1 >= 20 and o2 >= 20) or (i1 >= 0.5 and i2 >= 0.5)
+            ok = h1 >= BAR and h2 >= BAR and rep
             print(f"  VERDICT: {'PASS' if ok else 'FAIL'}")
 
 
