@@ -43,6 +43,12 @@ jobs:
           fetch-depth: 0
       - uses: astral-sh/setup-uv@v5
       - run: uv sync
+      - name: Restore position cache
+        uses: actions/cache/restore@v4
+        with:
+          path: cache/shadow/${{ matrix.chain }}
+          key: liq-pos-${{ matrix.chain }}-${{ github.run_id }}
+          restore-keys: liq-pos-${{ matrix.chain }}-
       - name: Watch (350 min budget, commit every 20 min)
         env:
           LIQ_BUDGET_MIN: "350"
@@ -56,6 +62,12 @@ jobs:
             .github/scripts/commit_push.sh "shadow-${{ matrix.chain }}" || true
           done
           wait $pid
+      - name: Save position cache
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: cache/shadow/${{ matrix.chain }}
+          key: liq-pos-${{ matrix.chain }}-${{ github.run_id }}
       - name: Commit final
         if: always()
         run: .github/scripts/commit_push.sh "shadow-${{ matrix.chain }}"

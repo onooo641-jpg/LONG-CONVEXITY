@@ -88,7 +88,7 @@ def mk_dir(tmp_path, chains_events):
     for c in sm.CHAINS:
         d = tmp_path / c
         d.mkdir()
-        up = [dict(kind="start", wall=1000.0, block=1)] + [dict(kind="hb", wall=1000.0 + 30 * i, block=1) for i in range(1, 2000)]
+        up = [dict(kind="start", wall=1000.0, block=1, ver=2)] + [dict(kind="hb", wall=1000.0 + 30 * i, block=1, ver=2) for i in range(1, 2000)]
         (d / "uptime.jsonl").write_text("\n".join(json.dumps(x) for x in up))
         (d / "borrowers.json").write_text(json.dumps([USER]))
         liq = [e for e in chains_events.get(c, {}).get("liq", [])]
@@ -100,9 +100,9 @@ def mk_dir(tmp_path, chains_events):
 def test_matching(tmp_path):
     def ev(block, user, bonus=100.0, gas=1.0, ts=5000.0):
         return dict(block=block, tx=f"tx{block}", user=user, bonus_usd=bonus, gas_usd=gas, ts=ts, seen_wall=ts + 2)
-    rec = dict(user=USER, wall=4990.0, n_ready=100, sim=dict(ok=True, net_before_gas_usd=20.0))
-    late = dict(user="0x" + "dd" * 20, wall=4999.0, n_ready=199, sim=dict(ok=True, net_before_gas_usd=20.0))
-    neg = dict(user="0x" + "ee" * 20, wall=4990.0, n_ready=100, sim=dict(ok=True, net_before_gas_usd=0.5))
+    rec = dict(ver=2, user=USER, wall=4990.0, n_ready=100, sim=dict(ok=True, net_before_gas_usd=20.0))
+    late = dict(ver=2, user="0x" + "dd" * 20, wall=4999.0, n_ready=199, sim=dict(ok=True, net_before_gas_usd=20.0))
+    neg = dict(ver=2, user="0x" + "ee" * 20, wall=4990.0, n_ready=100, sim=dict(ok=True, net_before_gas_usd=0.5))
     events = {"base": dict(unh=[rec, late, neg], liq=[
         ev(110, USER),                       # fire first: net 19 > 0 and 100+1 < 110
         ev(200, "0x" + "dd" * 20),           # record too late (199 + 1 >= 200)
@@ -118,3 +118,14 @@ def test_matching(tmp_path):
     assert cls == ["fire_first", "no_record_not_in_set", "record_too_late", "sim_net_le0"]
     ff = [e for e in evs if e["cls"] == "fire_first"][0]
     assert abs(ff["net"] - 19.0) < 1e-9
+
+
+def test_local_hf():
+    # collateral 10 units of asset 0 at $2000, LT 0.8, income grew 1%; debt 10,000 USD stable-ish asset 1: scaled 9,900 x index 1.01
+    pos = dict(c=[(0, 10.0, 1.00, 0.8)], d=[(1, 9900.0, 0.0)], t=0)
+    mk = ([2000.0, 1.0], [1.01, 1.0], [1.0, 1.01])
+    hf = ls.Chain.local_hf(pos, mk)
+    assert abs(hf - (10 * 1.01 * 2000 * 0.8) / (9900 * 1.01)) < 1e-9
+    mk2 = ([1700.0, 1.0], [1.01, 1.0], [1.0, 1.01])
+    assert ls.Chain.local_hf(pos, mk2) < 1.0 < hf
+    assert ls.Chain.local_hf(dict(c=[(0, 1.0, 1.0, 0.8)], d=[], t=0), mk) == 99.0

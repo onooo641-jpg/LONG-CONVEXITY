@@ -15,3 +15,5 @@ run_bridge.bat
 
 # Written by `python -m bridge.live --roundtrip`; account-specific.
 data/roundtrip_proof.json
+
+cache/

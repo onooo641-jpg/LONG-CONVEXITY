@@ -63,3 +63,12 @@ What this proves: the executor mechanism on each chain. What it does not prove: 
 and a pair with no quote is logged as "sim_no_quote" (a miss). Aave v3.3+ dust rules (full liquidation if debt or collateral < USD 2,000 or HF < 0.95; no leftover < USD 1,000) were found by the tests
 (`MustNotLeaveDust`) and are now applied in the simulation (assumed to hold on all five pools; unverified for older pool versions).
 All five venues enter the shadow test. No keys with funds, nothing deployed.
+
+## Addendum 3 (2026-11-21 05:30 UTC; no shadow outcome has been looked at; v1 logs were never even committed): watcher v2 (HOW; GO/KILL rules and all definitions unchanged)
+The first 40 minutes of the v1 watcher (poll `getUserAccountData` for tiers of ~12,000–38,000 tracked users through public RPCs) showed cycle times of 15–250 seconds (public RPCs throttle and
+return errors), which makes "fire first" impossible regardless of the opportunity. Only run statistics were read (cycle time, error counts), no liquidation or detection results. v2 does what a real bot does:
+positions (collateral/debt balances per user) are snapshotted once (via `getUserConfiguration` + `getUserReserveData`) and refreshed on that user's Supply/Withdraw/Borrow/Repay/collateral-toggle/liquidation events and a slow
+background refresh; every cycle ONE multicall reads all reserve prices and interest indexes, health factors are recomputed locally for every debtor, and only users with local HF < 1.03 are confirmed with
+the exact `getUserAccountData` (local HF ignores eMode, which can only make it lower, never higher: no missed liquidations from that approximation). The simulation, matching, definitions and GO/KILL tests are unchanged.
+The shadow clock starts when v2 has built the positions for a venue and logs `uptime start ver=2`; v1 uptime, records and events are ignored by `liq_shadow_summary.py`. Positions are cached between runs with
+`actions/cache` (not committed). Logs under `data/shadow/` are now actually committed (v1 only committed run logs under `docs/jx_runs/`).

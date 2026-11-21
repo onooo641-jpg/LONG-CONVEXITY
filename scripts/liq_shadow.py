@@ -24,11 +24,17 @@ UA = {"User-Agent": "long-convexity-research/1.0", "Content-Type": "application/
 MULTICALL3 = "0xca11bde05977b3631167028862be2a173976ca11"
 T_LIQ = "0xe413a321e8681d831f4dbccbca790d2952b56f977908e45be37335533e005286"
 T_BORROW = "0xb3d084820fb1a9decffb176436bd02558d15fac9b0ddfed8c465bc7359d7dce0"
+T_SUPPLY = "0x2b627736bca15cd5381dcf80b0bf11fd197d01a037c52b927a881a10fb73ba61"
+T_WITHDRAW = "0x3115d1449a7b732c986cba18244e897a450f61e1bb8d589cd2e69e6c8924f9f7"
+T_REPAY = "0xa534c8dbe71f871f9f3530e97a74601fea17b426cae02e1c5aee42c96c784051"
+T_COLL_ON = "0x00058a56ea94653cdf4f152d227ace22d4c00ad99e2a43f58cb7d9e3feb295f2"
+T_COLL_OFF = "0x44c58d81365b66dd4b1a7f36c25aa97b8c71c361ee4937adc1a00000227db5dd"
 SEL = {
     "getUserAccountData": "0xbf92857c", "getReservesList": "0xd1946dbc", "premium": "0x074b2e43", "provider": "0x0542975c",
     "oracle": "0xfca513a8", "dataprovider": "0xe860accb", "getUserReserveData": "0x28dd2d01",
     "getReserveConfigurationData": "0x3e150141", "getAssetPrice": "0xb3596f07", "decimals": "0x313ce567",
-    "aggregate3": "0x82ad56cb", "quote": "0xc6a5026a",
+    "aggregate3": "0x82ad56cb", "quote": "0xc6a5026a", "getReserveData": "0x35ea6a75", "userconfig": "0x4417a583",
+    "income": "0xd15e0053", "vdebt": "0x386497fd",
 }
 CFG = {
     "arbitrum": dict(pool="0x794a61358d6845594f94dc1db02a252b5b4814ad", wn="0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
@@ -354,114 +360,225 @@ class Chain:
             rec["err"] = str(e)[:100]
         self.jappend("liquidations.jsonl", rec)
 
-    # ---- main loop
+    # ---- v2: local health-factor engine (positions snapshotted once, re-priced every cycle from 1 multicall)
+    def market(self):
+        """prices (USD), normalized income and variable-debt index (floats) for every reserve: ONE multicall."""
+        m = self.meta
+        assets = m["assets"]
+        n = len(assets)
+        calls = [(m["oracle"], SEL["getAssetPrice"] + w(a)) for a in assets]
+        calls += [(self.pool, SEL["income"] + w(a)) for a in assets]
+        calls += [(self.pool, SEL["vdebt"] + w(a)) for a in assets]
+        res = self.rpc.multicall(calls)
+        px = [(words(d)[0] / 1e8 if ok and d != "0x" else None) for ok, d in res[:n]]
+        inc = [(words(d)[0] / 1e27 if ok and d != "0x" else None) for ok, d in res[n:2 * n]]
+        vd = [(words(d)[0] / 1e27 if ok and d != "0x" else None) for ok, d in res[2 * n:]]
+        return px, inc, vd
+
+    def snapshot(self, users, mk):
+        """exact balances for users: getUserConfiguration (cheap) then getUserReserveData for the reserves they use."""
+        m = self.meta
+        assets, ids, dec, cfg = m["assets"], m["ids"], m["dec"], m["cfg"]
+        px, inc, vd = mk
+        out = {}
+        for i in range(0, len(users), 150):
+            batch = users[i:i + 150]
+            res = self.rpc.multicall([(self.pool, SEL["userconfig"] + w(u)) for u in batch])
+            need = []   # (user, asset_idx)
+            for u, (ok, d) in zip(batch, res):
+                if not ok or d == "0x":
+                    continue
+                bm = words(d)[0]
+                idx_borrow = [j for j, a in enumerate(assets) if (bm >> (2 * ids[a])) & 1]
+                if not idx_borrow:
+                    out[u] = None            # no debt: cannot be liquidated
+                    continue
+                for j, a in enumerate(assets):
+                    if ((bm >> (2 * ids[a])) & 1) or ((bm >> (2 * ids[a] + 1)) & 1):
+                        need.append((u, j))
+            for k in range(0, len(need), 40):
+                part = need[k:k + 40]
+                rr = self.rpc.multicall([(m["dp"], SEL["getUserReserveData"] + w(assets[j]) + w(u)) for u, j in part])
+                for (u, j), (ok, d) in zip(part, rr):
+                    ww = words(d) if ok else []
+                    if len(ww) < 9:
+                        continue
+                    pos = out.get(u)
+                    if pos is None:
+                        pos = out[u] = dict(c=[], d=[], t=time.time())
+                    unit = 10 ** dec[assets[j]]
+                    c = cfg.get(assets[j])
+                    if ww[0] > 0 and ww[8] == 1 and c and c["coll"] and inc[j]:
+                        pos["c"].append((j, ww[0] / unit, inc[j], c["lt"] / 10000.0))
+                    if ww[2] + ww[1] > 0:
+                        pos["d"].append((j, ww[4] / unit, ww[1] / unit))   # scaled variable debt, stable debt (units)
+        return out
+
+    @staticmethod
+    def local_hf(pos, mk):
+        px, inc, vd = mk
+        coll = 0.0
+        for j, bal0, inc0, lt in pos["c"]:
+            if px[j] is None or inc[j] is None:
+                continue
+            coll += bal0 * inc[j] / inc0 * px[j] * lt
+        debt = 0.0
+        for j, sc, st in pos["d"]:
+            if px[j] is None or vd[j] is None:
+                continue
+            debt += (sc * vd[j] + st) * px[j]
+        return (coll / debt) if debt > 0 else 99.0
+
+    def pos_file(self):
+        d = ROOT / "cache" / "shadow" / self.name
+        d.mkdir(parents=True, exist_ok=True)
+        return d / "positions.json"
+
     def run(self, budget_min):
         t_start = time.time()
         deadline = t_start + budget_min * 60
         head = self.rpc.head()
-        print(f"{self.name}: start, head {head}", flush=True)
+        print(f"{self.name}: v2 start, head {head}", flush=True)
         self.refresh_meta()
         if not self.bootstrap(head, deadline - 120):
             print(f"{self.name}: bootstrap unfinished; will resume next run", flush=True)
             return
+        # reserve ids (bit positions in the user configuration bitmap)
+        res = self.rpc.multicall([(self.pool, SEL["getReserveData"] + w(a)) for a in self.meta["assets"]])
+        self.meta["ids"] = {a: words(d)[7] for a, (ok, d) in zip(self.meta["assets"], res)}
         st = self.jload("state.json", {})
         users = set(self.jload("borrowers.json", []))
         newp = self.dir / "borrowers_new.jsonl"
         if newp.exists():
             users |= {x.strip() for x in newp.read_text().splitlines() if x.strip()}
-        hf = {}                    # user -> (hf, last_checked)
-        open_rec = {}              # user -> record written, awaiting heal/liquidation
+        pf = self.pos_file()
+        positions = {}
+        if pf.exists():
+            try:
+                positions = json.loads(pf.read_text())
+                for u, p in positions.items():
+                    if p is not None:
+                        p["c"] = [tuple(x) for x in p["c"]]
+                        p["d"] = [tuple(x) for x in p["d"]]
+                print(f"{self.name}: loaded {len(positions)} cached positions", flush=True)
+            except Exception as e:  # noqa: BLE001
+                print(f"{self.name}: position cache unreadable ({e}); rebuilding", flush=True)
+                positions = {}
+        mk = self.market()
+        todo = [u for u in sorted(users) if u not in positions]
+        t_b = time.time()
+        for i in range(0, len(todo), 600):
+            if time.time() > deadline - 300:
+                break
+            positions.update(self.snapshot(todo[i:i + 600], mk))
+            if (i // 600) % 5 == 0:
+                print(f"{self.name}: positions {len(positions)}/{len(users)} ({(time.time()-t_b)/60:.1f} min)", flush=True)
+        if any(u not in positions for u in users):
+            pf.write_text(json.dumps(positions))
+            print(f"{self.name}: position build unfinished; resumes next run", flush=True)
+            return
+        pf.write_text(json.dumps(positions))
+        debtors = len([1 for p in positions.values() if p])
+        print(f"{self.name}: positions ready: {len(positions)} users, {debtors} with debt", flush=True)
         log_next = st.get("log_next", head + 1)
+        open_rec = {}
         up_start = time.time()
-        self.jappend("uptime.jsonl", dict(kind="start", wall=up_start, block=head))
-        last_flush = last_hb = time.time()
+        self.jappend("uptime.jsonl", dict(kind="start", wall=up_start, block=head, ver=2))
+        last_flush = last_hb = last_pos = last_refresh = time.time()
         n_cycles = 0
+        T_EVENTS = [T_BORROW, T_LIQ, T_SUPPLY, T_WITHDRAW, T_REPAY, T_COLL_ON, T_COLL_OFF]
         while time.time() < deadline:
             t0 = time.time()
             try:
                 head = self.rpc.head()
                 if time.time() - self.meta_ts > 3600:
                     self.refresh_meta()
-                # new logs
-                if head >= log_next:
-                    e = min(head, log_next + self.c["max_span"] - 1)
-                    logs = self.rpc.call("eth_getLogs", [{"fromBlock": hex(log_next), "toBlock": hex(e), "address": self.pool,
-                                                          "topics": [[T_BORROW, T_LIQ]]}])
+                    res = self.rpc.multicall([(self.pool, SEL["getReserveData"] + w(a)) for a in self.meta["assets"]])
+                    self.meta["ids"] = {a: words(d)[7] for a, (ok, d) in zip(self.meta["assets"], res)}
+                dirty = set()
+                to_blk = head - 1
+                if to_blk >= log_next:
+                    e = min(to_blk, log_next + self.c["max_span"] - 1)
+                    logs = self.rpc.call("eth_getLogs", [{"fromBlock": hex(log_next), "toBlock": hex(e), "address": self.pool, "topics": [T_EVENTS]}])
                     for lg in logs:
-                        if lg["topics"][0] == T_BORROW:
-                            u = "0x" + lg["topics"][2][-40:]
-                            if u not in users:
-                                users.add(u)
-                                hf.pop(u, None)
-                                with open(newp, "a") as nf:
-                                    nf.write(u + "\n")
-                        else:
+                        t0_, tp = lg["topics"][0], lg["topics"]
+                        if t0_ == T_LIQ:
                             self.log_liquidation(lg)
-                            open_rec.pop("0x" + lg["topics"][3][-40:], None)
+                            u = "0x" + tp[3][-40:]
+                            open_rec.pop(u, None)
+                        elif t0_ in (T_BORROW, T_SUPPLY, T_WITHDRAW, T_REPAY, T_COLL_ON, T_COLL_OFF):
+                            u = "0x" + tp[2][-40:]
+                        else:
+                            continue
+                        if u not in users:
+                            users.add(u)
+                            with open(newp, "a") as nf:
+                                nf.write(u + "\n")
+                        dirty.add(u)
                     log_next = e + 1
-                # which users to refresh: unknown or old enough by tier
-                now = time.time()
-                due = []
-                for u in users:
-                    h = hf.get(u)
-                    if h is None:
-                        due.append(u)
-                    elif h[0] >= 99:
-                        continue                       # no debt: re-checked only after a new Borrow event
-                    elif now - h[1] >= tier_interval(h[0]):
-                        due.append(u)
-                due.sort(key=lambda u: (hf.get(u, (0.0, 0))[0]))
-                for i in range(0, min(len(due), MAX_PER_CYCLE), BATCH):
-                    batch = due[i:i + BATCH]
-                    res = self.rpc.multicall([(self.pool, SEL["getUserAccountData"] + w(u)) for u in batch])
-                    for u, (ok, d) in zip(batch, res):
+                mk = self.market()
+                # background refresh of the oldest snapshots (non-event balance changes)
+                if time.time() - last_refresh > 20:
+                    old = sorted([u for u, p in positions.items() if p], key=lambda u: positions[u]["t"])[:40]
+                    dirty |= set(old)
+                    last_refresh = time.time()
+                if dirty:
+                    positions.update(self.snapshot(sorted(dirty), mk))
+                # local health factors for every debtor; confirm candidates with the exact call
+                cands = []
+                for u, p in positions.items():
+                    if p:
+                        h = self.local_hf(p, mk)
+                        if h < 1.03:
+                            cands.append((h, u))
+                cands.sort()
+                for i in range(0, min(len(cands), 120), 60):
+                    batch = [u for _, u in cands[i:i + 60]]
+                    rr = self.rpc.multicall([(self.pool, SEL["getUserAccountData"] + w(u)) for u in batch])
+                    for u, (ok, d) in zip(batch, rr):
                         ww = words(d) if ok else []
-                        if len(ww) < 6:
+                        if len(ww) < 6 or ww[1] == 0:
                             continue
-                        debt_base, h_f = ww[1], ww[5]
-                        if debt_base == 0:
-                            hf[u] = (99.0, now)
-                            if u in open_rec:
-                                open_rec.pop(u)
-                            continue
-                        hff = h_f / 1e18
-                        hf[u] = (hff, now)
+                        hff = ww[5] / 1e18
                         if hff < 1.0 and u not in open_rec:
                             sim = self.simulate(u, hff)
                             n_ready = self.rpc.head()
-                            rec = dict(chain=self.name, user=u, hf=hff, block_seen=head, n_ready=n_ready, wall=time.time(),
+                            rec = dict(ver=2, chain=self.name, user=u, hf=hff, block_seen=head, n_ready=n_ready, wall=time.time(),
                                        detect_ms=int((time.time() - t0) * 1000), sim=sim)
                             self.jappend("unhealthy.jsonl", rec)
                             open_rec[u] = rec
                         elif hff >= 1.0 and u in open_rec:
-                            self.jappend("unhealthy.jsonl", dict(chain=self.name, user=u, healed=True, block_seen=head, wall=time.time()))
+                            self.jappend("unhealthy.jsonl", dict(ver=2, chain=self.name, user=u, healed=True, block_seen=head, wall=time.time()))
                             open_rec.pop(u)
                 n_cycles += 1
-                self.stats["cycles"] = n_cycles
-                self.stats["tracked"] = len(users)
-                self.stats["last_cycle_ms"] = int((time.time() - t0) * 1000)
+                self.stats.update(cycles=n_cycles, tracked=len(users), debtors=len([1 for p in positions.values() if p]),
+                                  last_cycle_ms=int((time.time() - t0) * 1000), candidates=len(cands))
             except Exception as ex:  # noqa: BLE001
                 self.stats["loop_err"] = self.stats.get("loop_err", 0) + 1
                 print(f"{self.name}: loop error {str(ex)[:150]}", flush=True)
                 time.sleep(3)
             if time.time() - last_hb > 30:
-                self.jappend("uptime.jsonl", dict(kind="hb", wall=time.time(), block=head))
+                self.jappend("uptime.jsonl", dict(kind="hb", wall=time.time(), block=head, ver=2))
                 last_hb = time.time()
+            if time.time() - last_pos > 600:
+                pf.write_text(json.dumps(positions))
+                last_pos = time.time()
             if time.time() - last_flush > 300:
                 st["log_next"] = log_next
                 self.jsave("state.json", st)
                 self.jsave("stats.json", self.stats)
                 last_flush = time.time()
-                print(f"{self.name}: head {head} cycles {n_cycles} tracked {len(users)} last_cycle {self.stats.get('last_cycle_ms')} ms "
-                      f"rpc ok/err {self.stats.get('rpc_ok')}/{self.stats.get('rpc_err')}", flush=True)
-            time.sleep(max(0.0, 0.4 - (time.time() - t0)))
+                print(f"{self.name}: head {head} cycles {n_cycles} debtors {self.stats.get('debtors')} cand {self.stats.get('candidates')} "
+                      f"last_cycle {self.stats.get('last_cycle_ms')} ms rpc ok/err {self.stats.get('rpc_ok')}/{self.stats.get('rpc_err')}", flush=True)
+            time.sleep(max(0.0, 0.3 - (time.time() - t0)))
         st["log_next"] = log_next
         self.jsave("state.json", st)
-        self.jsave("borrowers.json", sorted(users))      # consolidated once per run (file is large)
+        self.jsave("borrowers.json", sorted(users))
         if newp.exists():
             newp.unlink()
+        pf.write_text(json.dumps(positions))
         self.jsave("stats.json", self.stats)
-        self.jappend("uptime.jsonl", dict(kind="stop", wall=time.time(), block=head))
+        self.jappend("uptime.jsonl", dict(kind="stop", wall=time.time(), block=head, ver=2))
         print(f"{self.name}: budget reached, stopped cleanly at block {head}", flush=True)
 
 
