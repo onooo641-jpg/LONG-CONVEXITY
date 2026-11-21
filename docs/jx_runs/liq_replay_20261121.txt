@@ -47,11 +47,11 @@ optimism    5000-  inf       32       15  0.63   0.92   0.50
 == C. replay gap (stage 2): reachable = no price update of the collateral/debt feed within L blocks before the liquidation
 arbitrum   rows 316  median detect_ms 5244 (n=44)  L blocks: actions 26, ideal 3
            feed check: no-update-in-window share 0.00 -> ok
-base       rows 321  median detect_ms 294722 (n=277)  L blocks: actions 149, ideal 2
+base       rows 321  median detect_ms 284061 (n=278)  L blocks: actions 144, ideal 2
            feed check: no-update-in-window share 0.00 -> ok
 avalanche  rows 274  median detect_ms 527861 (n=111)  L blocks: actions 266, ideal 2
            feed check: no-update-in-window share 0.00 -> ok
-polygon    rows 200  median detect_ms 11726 (n=35)  L blocks: actions 8, ideal 2
+polygon    rows 372  median detect_ms 11726 (n=35)  L blocks: actions 8, ideal 2
            feed check: no-update-in-window share 0.00 -> ok
 optimism   rows 141  median detect_ms 5208 (n=33)  L blocks: actions 5, ideal 2
            feed check: no-update-in-window share 0.93 -> EXCLUDED from pooled verdict
@@ -59,18 +59,18 @@ optimism   rows 141  median detect_ms 5208 (n=33)  L blocks: actions 5, ideal 2
 chain      arm      resolved  R(events)  R(value)  gap==0  gap<=1  no-update-in-window  null R
 arbitrum   actions       301     0.113     0.091   0.638   0.724               0.003   0.957
 arbitrum   ideal         301     0.150     0.100   0.638   0.724               0.003   0.997
-base       actions       280     0.004     0.000   0.779   0.879               0.000   0.582
+base       actions       280     0.004     0.000   0.779   0.879               0.000   0.586
 base       ideal         280     0.104     0.125   0.779   0.879               0.000   0.986
 avalanche  actions       268     0.004     0.002   0.657   0.847               0.004   0.239
 avalanche  ideal         268     0.104     0.103   0.657   0.847               0.004   0.970
-polygon    actions       190     0.053     0.043   0.737   0.800               0.000   0.532
-polygon    ideal         190     0.168     0.095   0.737   0.800               0.000   0.892
+polygon    actions       355     0.054     0.028   0.761   0.814               0.000   0.538
+polygon    ideal         355     0.158     0.082   0.761   0.814               0.000   0.858
 optimism   actions       113     0.956     0.985   0.044   0.044               0.929   0.982
 optimism   ideal         113     0.956     0.985   0.044   0.044               0.929   0.991
 
-pooled actions: resolved 1039  R 0.044
+pooled actions: resolved 1204  R 0.046
 
-pooled ideal: resolved 1039  R 0.129
+pooled ideal: resolved 1204  R 0.131
 
 == post-hoc, descriptive month split (PREREG_LIQ_REPLAY addendum 3): ideal arm R and R_value, June 2026 (month 19) vs the other window months
 chain      group        resolved  R(events)  R(value)
@@ -80,11 +80,19 @@ base       June 2026         192     0.099     0.139
 base       other months       88     0.114     0.098
 avalanche  June 2026         239     0.117     0.111
 avalanche  other months       29     0.000     0.000
-polygon    June 2026         164     0.159     0.076
-polygon    other months       26     0.231     0.221
+polygon    June 2026         287     0.171     0.086
+polygon    other months       68     0.103     0.067
 optimism   June 2026          99     1.000     1.000   (chain excluded by feed check)
 optimism   other months       14     0.643     0.549   (chain excluded by feed check)
-pooled (feed-ok chains) June 2026    resolved 830  R 0.130  R_value 0.110
-pooled (feed-ok chains) other months resolved 209  R 0.124  R_value 0.083
+pooled (feed-ok chains) June 2026    resolved 953  R 0.137  R_value 0.109
+pooled (feed-ok chains) other months resolved 251  R 0.108  R_value 0.065
 
-verdict (ideal arm, pooled R 0.129, R_value 0.107, venues with R >= 10%: 4/5): PLAUSIBLE (R >= 10% and R >= 10% on >= 3 venues)
+== post-hoc, descriptive: reachable share R(events) / R(value) if our delay were L blocks (gap > L), feed-ok chains marked *
+chain        L=1           L=2           L=3           L=5           L=8           L=12        
+arbitrum  *   0.276/0.137  0.166/0.104  0.150/0.100  0.123/0.093  0.116/0.092  0.116/0.092
+base      *   0.121/0.127  0.104/0.125  0.104/0.125  0.086/0.101  0.082/0.094  0.075/0.093
+avalanche *   0.153/0.146  0.104/0.103  0.093/0.101  0.067/0.095  0.052/0.078  0.030/0.023
+polygon   *   0.186/0.090  0.158/0.082  0.118/0.068  0.079/0.040  0.054/0.028  0.037/0.023
+optimism     0.956/0.985  0.956/0.985  0.956/0.985  0.956/0.985  0.956/0.985  0.956/0.985
+
+verdict (ideal arm, pooled R 0.131, R_value 0.101, venues with R >= 10% among the 4 feed-ok venues: 4/4): PLAUSIBLE (R >= 10% and R >= 10% on >= 3 venues)

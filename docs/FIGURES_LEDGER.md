@@ -363,3 +363,17 @@ Raw output for every command above is in `docs/jx_runs/`.
 | RT1 | #201 Lista stables: Stage 1 net (last 60 d) | 4.61%/yr (kill < 8%) | `uv run python scripts/incentives_w1_20261121.py` → `docs/jx_runs/incentives_w1_20261121.txt` | 2026-09-22..2026-11-21 | 2026-11-21 | current, re-run identical (data `data/radar/charts.parquet`, radar run 5) |
 | RT2 | #202 Dolomite stables: Stage 1 net | 6.38%/yr (kill) | same | same | 2026-11-21 | current |
 | RT3 | #203 Bluefin USDSUI-USDC: Stage 1 / half 1 / half 2 net; worst 7-day TVL ratio; $ on $10K | 13.75% / 22.92% / 16.26%; 0.32 (loss proxy hit); $1,962/yr | same | 2026-03-04..2026-11-21 | 2026-11-21 | current; assumptions: T-bill 4%, 10% reward haircut, $5/tx Ethereum |
+
+## Liquidation replay: price-update gap, gas bidding, competition by size (docs/PREREG_LIQ_REPLAY_20261121.md, addenda 1–5)
+
+| # | figure | value | command | window | computed | status |
+|---|---|---|---|---|---|---|
+| RP1 | Registered screen (ideal arm, 4 feed-ok chains: Arbitrum, Base, Avalanche, Polygon): pooled reachable share by count / by value; verdict | 13.1% / 10.1%; PLAUSIBLE (4 of 4 venues >= 10% by count) | `uv run python -I scripts/liq_replay_20261121.py 2` (output `docs/jx_runs/liq_replay_20261121.txt`, re-run identical; data `data/public/liq_replay_gaps_s2_*`, fetch logs `docs/jx_runs/liq_replay_s2_*`) | liquidations > $50 bonus, 2026-04-01..2026-10-31, 1,204 resolved events | 2026-11-21 | measured; UPPER BOUND (assumes instant detection); Base uses latest oracle source and a 1,000-block window (addendum 4) |
+| RP2 | Share of liquidations landing in the SAME block as a price update of their feed: Arbitrum / Base / Avalanche / Polygon | 63.8% / 77.9% / 65.7% / 76.1% (random blocks: ~0) | same | same | 2026-11-21 | measured |
+| RP3 | Reachable share by count / by value per venue (ideal arm, delay 2–3 blocks): Arbitrum, Base, Avalanche, Polygon | 15.0%/10.0%, 10.4%/12.5%, 10.4%/10.3%, 15.8%/8.2% | same | same | 2026-11-21 | measured |
+| RP4 | Post-hoc: reachable share by count / by value if our delay is 5 blocks: Arbitrum, Base, Avalanche, Polygon | 12.3%/9.3%, 8.6%/10.1%, 6.7%/9.5%, 7.9%/4.0% | same | same | 2026-11-21 | measured, post-hoc descriptive |
+| RP5 | Post-hoc month split, pooled ideal arm: June 2026 vs other window months, by count / by value | 13.7%/10.9% (953 events) vs 10.8%/6.5% (251 events) | same | same | 2026-11-21 | measured, post-hoc descriptive |
+| RP6 | Optimism excluded by the feed check | 93% of resolved events show no update of the resolved feed in the window; its 96% reachable share is not credible | same | same | 2026-11-21 | measured data-quality failure (feed not resolved) |
+| RP7 | Winner gas / bonus, median, by bonus size ($50–200 / $200–1K / $1K–5K / > $5K): Arbitrum, Base | 0.11%/0.04%/0.01%/0.00%; 0.97%/0.34%/0.05%/0.01% | same | last 12 months, 5 pools | 2026-11-21 | measured, gas only |
+| RP8 | Winner gas / bonus, 90th percentile, $50–200: Base / Avalanche / Optimism | 8.1% / 9.3% / 37.9% | same | same | 2026-11-21 | measured |
+| RP9 | Share of bonus won by addresses with >= 50 wins, events above $200 (range over size buckets): Arbitrum / Avalanche / Polygon / Base / Optimism | 72–90% / 92–97% / 89–91% / 41–61% / 36–50% | same | same | 2026-11-21 | measured |
