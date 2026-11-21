@@ -126,6 +126,6 @@ def test_local_hf():
     mk = ([2000.0, 1.0], [1.01, 1.0], [1.0, 1.01])
     hf = ls.Chain.local_hf(pos, mk)
     assert abs(hf - (10 * 1.01 * 2000 * 0.8) / (9900 * 1.01)) < 1e-9
-    mk2 = ([1700.0, 1.0], [1.01, 1.0], [1.0, 1.01])
+    mk2 = ([1200.0, 1.0], [1.01, 1.0], [1.0, 1.01])
     assert ls.Chain.local_hf(pos, mk2) < 1.0 < hf
     assert ls.Chain.local_hf(dict(c=[(0, 1.0, 1.0, 0.8)], d=[], t=0), mk) == 99.0
