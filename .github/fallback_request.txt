@@ -1,5 +1,3 @@
 # jobs for scripts/fetch_fallback.py (one per line)
-batch4
-batch5
 wrappers
 lendborrow_now
