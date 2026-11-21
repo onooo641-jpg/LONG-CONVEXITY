@@ -121,3 +121,11 @@ never private or insider information.
    often mark a new incentive before media do.
 Each source writes candidates to one table (source, venue, what pays, budget/day, competing capital, start date);
 only candidates passing the five-part filter go to a pre-registered test.
+
+### Back-check: would the radar's pricing step have found Topstep? (2026-11-21)
+`scripts/radar_backcheck_20261121.py`: the coin-flip test (random trade directions, so it knows nothing about the
+strategy) ranks the 13 modelled prop products with rank correlation 0.86 (p=0.0001) to their real results, and puts
+Topstep 50K and LucidFlex 50K joint top ($18.0K / $18.5K median). So once a firm's rule page is collected, the
+pricing step would have flagged Topstep as the best structure. Limits: retrospective, not blind (we knew Topstep
+first); and it only works if the rule-watcher is watching prop-firm pages, which it now is. The radar finds
+*structures that pay even random play*; it does not find strategy edges.
