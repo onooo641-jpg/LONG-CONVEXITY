@@ -1,0 +1,10 @@
+base: v2 start, head 60234699
+base: bootstrap to block 52778699/60234699 users 32637
+base: bootstrap to block 52997449/60234699 users 33972
+base: bootstrap to block 53216199/60234699 users 35069
+base: bootstrap to block 53499324/60234699 users 35987
+base: bootstrap to block 54066324/60234699 users 36359
+base: bootstrap to block 54940074/60234699 users 36507
+base: bootstrap to block 55741324/60234699 users 36826
+base: bootstrap to block 56482574/60234699 users 37008
+base: bootstrap to block 57253824/60234699 users 37365
