@@ -591,6 +591,13 @@ def summary(cand, nm, pg, ch, counts):
         L += [f"- {x.venue}: {x.what_pays[:110]} {x.url}" for x in g.itertuples()]
     if not ch.empty:
         c = ch[(ch["date"] == TODAY) & (ch["event"] == "changed")]
+        rk = re.compile(r"\$\s?\d|drawdown|target|payout|split|bot|automat|algo|consisten|price|reset|new plan|limited", re.I)
+        fc = c[c["kind"].isin(["firm", "firm_sub", "directory_firm"])]
+        L += ["", f"## Prop-firm rule/price changes today: {len(fc)} pages", ""]
+        for x in fc.itertuples():
+            hits = [ln for ln in x.added.splitlines() if rk.search(ln)][:3]
+            if hits:
+                L.append(f"- **{x.name}** {x.url}: " + " / ".join(h[:140] for h in hits))
         L += ["", f"## Page changes today: {len(c)}", ""] + [f"- {x.name} ({x.kind}) {x.url}: +{len(x.added.splitlines())} / -{len(x.removed.splitlines())} lines" for x in c.itertuples()][:40]
     (OUT / "latest_summary.md").write_text("\n".join(L) + "\n")
 
