@@ -1,0 +1,4 @@
+=== liq_replay_arbitrum
+arbitrum: oracle 0xb56c2f0b653b2e0b10c9b928c8580ac5df02c7c7, source updates in window for 4 assets
+arbitrum: replay stage 2 wrote 316 rows
+=== liq_replay_arbitrum done in 257s  ok 7139 fail 0
