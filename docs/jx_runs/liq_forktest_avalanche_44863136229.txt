@@ -1,0 +1,55 @@
+fork test avalanche run 44863136229 2026-11-21T03:50:43Z
+== rpc https://avalanche.gateway.tenderly.co
+Compiling 2 files with Solc 0.8.26
+Solc 0.8.26 finished in 290.73ms
+Compiler run successful!
+
+Ran 1 test for test/LiqExecutor.t.sol:LiqExecutorForkTest
+[FAIL: supply: f58f733a] setUp() (block: 100940957) (gas: 0)
+Suite result: FAILED. 0 passed; 1 failed; 0 skipped; finished in 3.43s (0.00ns CPU time)
+
+Ran 1 test suite in 3.43s (3.43s CPU time): 0 tests passed, 1 failed, 0 skipped (1 total tests)
+
+Failing tests:
+Encountered 1 failing test in test/LiqExecutor.t.sol:LiqExecutorForkTest
+[FAIL: supply: f58f733a] setUp() (block: 100940957) (gas: 0)
+
+Encountered a total of 1 failing tests, 0 tests succeeded
+
+Tip: Run `forge test --rerun` to retry only the 1 failed test
+Tip: Run `forge test --debug --match-test <TEST_NAME>` to inspect one failing test in the debugger
+== rpc https://avalanche-c-chain-rpc.publicnode.com
+No files changed, compilation skipped
+
+Ran 1 test for test/LiqExecutor.t.sol:LiqExecutorForkTest
+[FAIL: supply: f58f733a] setUp() (block: 100940962) (gas: 0)
+Suite result: FAILED. 0 passed; 1 failed; 0 skipped; finished in 4.38s (0.00ns CPU time)
+
+Ran 1 test suite in 4.38s (4.38s CPU time): 0 tests passed, 1 failed, 0 skipped (1 total tests)
+
+Failing tests:
+Encountered 1 failing test in test/LiqExecutor.t.sol:LiqExecutorForkTest
+[FAIL: supply: f58f733a] setUp() (block: 100940962) (gas: 0)
+
+Encountered a total of 1 failing tests, 0 tests succeeded
+
+Tip: Run `forge test --rerun` to retry only the 1 failed test
+Tip: Run `forge test --debug --match-test <TEST_NAME>` to inspect one failing test in the debugger
+== rpc https://api.avax.network/ext/bc/C/rpc
+No files changed, compilation skipped
+
+Ran 1 test for test/LiqExecutor.t.sol:LiqExecutorForkTest
+[FAIL: supply: f58f733a] setUp() (block: 100940967) (gas: 0)
+Suite result: FAILED. 0 passed; 1 failed; 0 skipped; finished in 1.51s (0.00ns CPU time)
+
+Ran 1 test suite in 1.51s (1.51s CPU time): 0 tests passed, 1 failed, 0 skipped (1 total tests)
+
+Failing tests:
+Encountered 1 failing test in test/LiqExecutor.t.sol:LiqExecutorForkTest
+[FAIL: supply: f58f733a] setUp() (block: 100940967) (gas: 0)
+
+Encountered a total of 1 failing tests, 0 tests succeeded
+
+Tip: Run `forge test --rerun` to retry only the 1 failed test
+Tip: Run `forge test --debug --match-test <TEST_NAME>` to inspect one failing test in the debugger
+exit 1
