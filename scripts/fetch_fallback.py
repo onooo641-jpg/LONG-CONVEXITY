@@ -247,7 +247,8 @@ FAMILY = {"ETH": ["STETH", "WSTETH", "RETH", "CBETH", "WEETH", "EZETH", "RSETH",
           # #214 governance tokens with staking / vote-escrow yields (hedgeable on HL)
           "CRV": ["CRV", "CVXCRV", "SDCRV", "YCRV", "ST-YCRV", "SCRVUSD", "ASDCRV"], "AAVE": ["AAVE", "STKAAVE", "STKGHO"],
           "ENA": ["ENA", "SENA"], "PENDLE": ["PENDLE", "VEPENDLE", "SPENDLE", "MPENDLE", "PENPIE", "EQBPENDLE", "SDPENDLE"],
-          "LDO": ["LDO"], "MORPHO": ["MORPHO"], "AERO": ["AERO", "VEAERO"], "FXS": ["FXS", "CVXFXS", "SDFXS"]}
+          "LDO": ["LDO"], "MORPHO": ["MORPHO"], "AERO": ["AERO", "VEAERO"], "FXS": ["FXS", "CVXFXS", "SDFXS"],
+          "PAXG": ["PAXG", "XAUT"]}
 TOK2COIN = {t: c for c, ts in FAMILY.items() for t in ts}
 YSTABLE = {"SUSDE": "USD", "SUSDS": "USD", "SDAI": "USD", "SFRXUSD": "USD"}
 
