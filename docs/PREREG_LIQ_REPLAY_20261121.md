@@ -33,3 +33,10 @@ Eligible events as above but the whole last 12 months (months 12–23), by bonus
 
 ## Output
 `scripts/liq_replay_20261121.py` → `docs/jx_runs/liq_replay_20261121.txt` (run twice, identical), FIGURES_LEDGER rows, update CANDIDATES #100 row and NOTES_JX.
+
+## Addendum 1 (2026-11-21, before any gap data; only event counts were looked at)
+Counting eligible events (bonus > USD 50) per chain showed the last 3 months are quiet: 101 / 109 / 45 / 85 / 7 events (Arbitrum / Base / Avalanche / Polygon / Optimism) in Aug–Oct 2026 versus 4,327 / 2,951 / 2,018 / 2,979 / 762 over the last 12 months,
+so a 3-month window cannot give a usable sample. Changes (WHAT is measured; made before seeing any gap result):
+- Window is now 2026-04-01 .. 2026-10-31 (months 17–23): 7 months, entirely after the March 2026 SVR adoption votes. Eligible events there: about 900 / 600 / 540 / 700 / 140; the sample is every k-th for n = 400 per chain (all events where fewer than 400 exist).
+- Feed source per event: the Aave oracle source IN FORCE at the event block, from `AssetSourceUpdated` logs on the oracle over the window; if an asset has no source update in the window, its latest source is used; if the event precedes the first in-window update for that asset, the event is unresolved (excluded, counted).
+Everything else (gap definition, L formula, DROP/PLAUSIBLE/MARGINAL and stage-1 kill rules, descriptive tables) is unchanged. Side finding recorded now: liquidation activity in Aug–Oct 2026 was roughly a tenth of the 12-month average, which matters for income estimates.
