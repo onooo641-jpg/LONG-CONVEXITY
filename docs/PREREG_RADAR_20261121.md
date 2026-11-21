@@ -91,3 +91,11 @@ five-part filter **and** a full pre-registered test.
 
 ## Not in scope
 Anything private or insider; paid data; geoblock circumvention; workstream B (liquidations).
+
+## Addendum 1 (2026-11-21, after the first baseline run, scanner fixes only; thresholds unchanged)
+The first Actions run showed: (a) DefiLlama's JSON was cut off by a 5 MB read cap in `scripts/radar.py` (mechanical bug;
+S1/S2 had 0 rows, so no S1 results exist yet); (b) every Merkl "BORROW" and "collateral/looping" campaign passed F4 only because
+its tokens were stablecoins. Borrow/collateral positions carry liquidation risk, so for S3 **F4 now also requires action ≠ BORROW and
+no "collateral/looping/leverage" in the name** (this applies the existing F4 "no price exposure" rule; it does not loosen anything).
+(c) Firm help centres hide the bot policy in articles, so page following is now two levels deep (≤30 + ≤15 links per firm),
+and directory sitemaps are fetched to enumerate firms.

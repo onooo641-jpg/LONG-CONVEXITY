@@ -1,0 +1,27 @@
+warning: The `UV_NATIVE_TLS` environment variable is deprecated and will be removed in a future release. Use `UV_SYSTEM_CERTS` instead.
+reference Topstep 50K: no delay real $44,359 dip $-3,520 flip $18,046; 3-min delay real $37,348 dip $-3,094 flip $14,701
+
+Topstep 50K                  full_bots              delay 0 min | real $   44,359 | coin-flip median $   18,046 (profitable 98%) | worst dip $ -3,520 | EXTRA SLOT CANDIDATE
+LucidFlex 50K                full_bots              delay 0 min | real $   37,523 | coin-flip median $   18,519 (profitable 97%) | worst dip $ -4,720 | EXTRA SLOT CANDIDATE
+MFFU Rapid EOD 50K           full_bots              delay 0 min | real $   34,481 | coin-flip median $    7,358 (profitable 74%) | worst dip $ -5,590 | -
+TradeDay $189                full_bots_no_api       delay 0 min | real $   22,158 | coin-flip median $   -4,213 (profitable 31%) | worst dip $-10,035 | -
+TradeDay $85 (code)          full_bots_no_api       delay 0 min | real $   35,678 | coin-flip median $   14,035 (profitable 96%) | worst dip $ -4,835 | EXTRA SLOT CANDIDATE
+Bulenox Momentum 50K         full_bots              delay 0 min | real $   -4,139 | coin-flip median $  -14,622 (profitable 0%) | worst dip $-10,840 | -
+FundedNext Rapid Pro 50K     full_bots              delay 0 min | real $   14,482 | coin-flip median $     -608 (profitable 46%) | worst dip $ -7,040 | -
+FTMO Futures Growth 50K      full_bots              delay 0 min | real $   34,236 | coin-flip median $    1,906 (profitable 56%) | worst dip $ -9,675 | -
+FTMO Futures Pro 50K         full_bots              delay 0 min | real $   27,428 | coin-flip median $    1,810 (profitable 59%) | worst dip $ -9,181 | -
+TFD Static Core              full_bots              delay 0 min | real $   10,680 | coin-flip median $   -1,163 (profitable 38%) | worst dip $ -3,226 | -
+TFD Static Pro               full_bots              delay 0 min | real $   20,248 | coin-flip median $    3,274 (profitable 71%) | worst dip $ -3,667 | -
+
+RANKING by coin-flip median
+  LucidFlex 50K                flip $   18,519  real $   37,523  EXTRA SLOT CANDIDATE
+  Topstep 50K                  flip $   18,046  real $   44,359  EXTRA SLOT CANDIDATE
+  TradeDay $85 (code)          flip $   14,035  real $   35,678  EXTRA SLOT CANDIDATE
+  MFFU Rapid EOD 50K           flip $    7,358  real $   34,481  
+  TFD Static Pro               flip $    3,274  real $   20,248  
+  FTMO Futures Growth 50K      flip $    1,906  real $   34,236  
+  FTMO Futures Pro 50K         flip $    1,810  real $   27,428  
+  FundedNext Rapid Pro 50K     flip $     -608  real $   14,482  
+  TFD Static Core              flip $   -1,163  real $   10,680  
+  TradeDay $189                flip $   -4,213  real $   22,158  
+  Bulenox Momentum 50K         flip $  -14,622  real $   -4,139  

@@ -64,7 +64,7 @@ def fetch(url, post=None, tries=3, timeout=45, accept="*/*"):
             req = urllib.request.Request(url, data=data, headers=hdr, method="POST" if data else "GET")
             with urllib.request.urlopen(req, timeout=timeout) as r:
                 LOG["ok"] += 1
-                return r.status, r.read(5_000_000).decode("utf-8", "replace")
+                return r.status, r.read(150_000_000).decode("utf-8", "replace")
         except urllib.error.HTTPError as e:
             msg = f"HTTP {e.code}"
             if e.code in (429, 500, 502, 503, 504):
@@ -199,7 +199,9 @@ def collect_merkl():
                     "budget_usd_day": float(o.get("dailyRewards") or 0), "competing_capital_usd": float(o.get("tvl") or 0),
                     "reward_apr_pct": float(o.get("apr") or 0),
                     "start_date": pd.to_datetime(min(starts), unit="s", utc=True) if starts else None,
-                    "url": f"https://app.merkl.xyz/opportunities/{o.get('id') or ''}", "stablecoin": bool(toks) and all(t in STABLE_TOK for t in toks),
+                    "url": f"https://app.merkl.xyz/opportunities/{o.get('id') or ''}",
+                    "stablecoin": bool(toks) and all(t in STABLE_TOK for t in toks)
+                    and str(o.get("action", "")).upper() != "BORROW" and not re.search(r"collateral|looping|leverage", str(o.get("name", "")), re.I),
                     "il_risk": "unknown", "outlier": False, "listed_at": pd.NaT, "pool_id": o.get("identifier"),
                     "n_campaigns": len(camps)})
     return pd.DataFrame(out)
@@ -274,24 +276,46 @@ def page_job(row):
     if s != 200 or not raw:
         return res, "", []
     text = atom_to_text(raw) if kind == "release" else html_to_text(raw)
-    links = re.findall(r'(?i)href="([^"#]+)"', raw)
+    links = re.findall(r'(?is)<a\s[^>]*?href="([^"#]+)"[^>]*>(.*?)</a>', raw)
+    links = [(h, re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", t))).strip()[:120]) for h, t in links]
+    m = re.search(r"(?is)<title[^>]*>(.*?)</title>", raw)
+    res["title"] = re.sub(r"\s+", " ", html.unescape(m.group(1))).strip()[:150] if m else ""
     return res, text[:300_000], links
 
 
-def follow_links(base, links, n=8):
+LINK_TXT = re.compile(r"autom|\bbots?\b|algo|expert advis|copy|prohibit|trading rules?|\brules\b|fair play|allowed|restricted|"
+                      r"supported countr|faq|polic|terms|payout|evaluation|funded|drawdown|consistency", re.I)
+LINK_PATH = re.compile(r"faq|rules|terms|trading-rule|policy|pricing|plans|prohibited|restricted|countries|automat|bots?\b|"
+                       r"article|collection|evaluation|funded|payout", re.I)
+
+
+def follow_links(base, links, n=40, skip=()):
     host = urllib.parse.urlparse(base).netloc.replace("www.", "")
-    pick, seen = [], set()
-    for h in links:
-        u = urllib.parse.urljoin(base, h).split("#")[0]
+    pick, seen = [], set(skip)
+    for h, txt in links:
+        u = urllib.parse.urljoin(base, h).split("#")[0].split("?")[0]
         pu = urllib.parse.urlparse(u)
         if pu.scheme not in ("http", "https") or host.split(".")[-2:] != pu.netloc.replace("www.", "").split(".")[-2:]:
             continue
-        if re.search(r"faq|rules|terms|trading-rule|policy|pricing|plans|prohibited|restricted|countries|automat|bots?\b|"
-                     r"help|support|article|evaluation|funded|payout", pu.path, re.I) and u not in seen \
-                and not re.search(r"\.(png|jpg|svg|css|js|pdf|webp)$", pu.path, re.I):
+        if (LINK_PATH.search(pu.path) or LINK_TXT.search(txt)) and u not in seen \
+                and not re.search(r"\.(png|jpg|svg|css|js|pdf|webp|xml)$", pu.path, re.I):
             seen.add(u)
-            pick.append(u)
-    return pick[:n]
+            pick.append((0 if LINK_TXT.search(txt) else 1, u))
+    pick.sort(key=lambda x: x[0])
+    return [u for _, u in pick[:n]]
+
+
+def sitemap_urls(root):
+    out, todo, seen = [], [root.rstrip("/") + "/sitemap.xml"], set()
+    while todo and len(seen) < 12:
+        u = todo.pop(0)
+        if u in seen:
+            continue
+        seen.add(u)
+        s, t = fetch(u, tries=2, timeout=30)
+        for loc in re.findall(r"<loc>\s*(.*?)\s*</loc>", t):
+            (todo if loc.endswith(".xml") else out).append(loc)
+    return out
 
 
 def collect_pages():
@@ -301,19 +325,34 @@ def collect_pages():
     results = []
     with cf.ThreadPoolExecutor(8) as ex:
         results = list(ex.map(page_job, jobs))
-    # depth-1 follow for firm and directory-free kinds
-    extra = []
-    for (res, text, links), row in zip(results, jobs):
-        if row["kind"] == "firm" and links:
-            for k, u in enumerate(follow_links(row["url"], links)):
-                extra.append({"slug": f"{row['slug']}__{k}_{hashlib.md5(u.encode()).hexdigest()[:6]}", "name": row["name"],
+    # follow rule/FAQ/help links from firm pages, two levels deep (help centres hide the bot policy in articles)
+    seen = {r["url"] for r in jobs}
+    allres = list(results)
+    frontier = [(res, links, row) for (res, text, links), row in zip(results, jobs) if row["kind"] == "firm" and links]
+    for depth in (1, 2):
+        extra, nxt = [], []
+        for res, links, row in frontier:
+            for u in follow_links(row["url"], links, n=30 if depth == 1 else 15, skip=seen):
+                seen.add(u)
+                extra.append({"slug": f"{row['slug']}__{hashlib.md5(u.encode()).hexdigest()[:8]}", "name": row["name"],
                               "kind": "firm_sub", "url": u})
-    with cf.ThreadPoolExecutor(8) as ex:
-        results += list(ex.map(page_job, extra))
+        with cf.ThreadPoolExecutor(8) as ex:
+            got = list(ex.map(page_job, extra))
+        allres += got
+        frontier = [(g[0], g[2], r) for g, r in zip(got, extra) if g[2]]
+    results = allres
+    sm = []
+    for row in jobs:
+        if row["kind"] == "directory":
+            u = sitemap_urls(row["url"].split("/")[0] + "//" + urllib.parse.urlparse(row["url"]).netloc)
+            print(f"sitemap {row['url']}: {len(u)} urls", flush=True)
+            sm += [{"directory": row["slug"], "url": x} for x in u]
+    if sm:
+        save(pd.DataFrame(sm), "directory_urls")
     pages, changes, snippets, dom = [], [], [], {}
     for res, text, links in results:
         if res["kind"] == "directory":
-            for h in links:
+            for h, _t in links:
                 pu = urllib.parse.urlparse(h)
                 if pu.scheme in ("http", "https") and not SKIP_DOMAINS.search(pu.netloc):
                     d = pu.netloc.replace("www.", "")
@@ -336,7 +375,7 @@ def collect_pages():
                             "event": "changed", "added": add, "removed": rem})
         f.write_text(text)
         ss = sentences(text)
-        auto = [s for s in ss if AUTOMATION_RE.search(s)][:14]
+        auto = [s for s in ss if AUTOMATION_RE.search(s)][:30]
         my = [s for s in ss if re.search(r"malaysia", s, re.I) or (RESTRICT_RE.search(s) and re.search(r"countr", s, re.I))][:6]
         pages.append({**res, "sha": sha, "auto_snips": " || ".join(auto), "my_snips": " || ".join(my)})
         if res["kind"] in ("firm", "firm_sub") and (auto or my):
