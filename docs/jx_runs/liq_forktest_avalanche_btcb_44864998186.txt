@@ -1,0 +1,15 @@
+fork test avalanche_btcb run 44864998186 2026-11-21T04:13:27Z
+== rpc https://avalanche.gateway.tenderly.co
+Compiling 2 files with Solc 0.8.26
+Solc 0.8.26 finished in 241.36ms
+Compiler run successful!
+
+Ran 4 tests for test/LiqExecutor.t.sol:LiqExecutorForkTest
+[PASS] test_profitable_liquidation_repays_flash_loan() (gas: 920207)
+[PASS] test_reverts_on_healthy_position() (gas: 1148806)
+[PASS] test_reverts_on_unusable_route() (gas: 564075)
+[PASS] test_reverts_when_below_min_profit() (gas: 29877785)
+Suite result: ok. 4 passed; 0 failed; 0 skipped; finished in 243.86s (245.38s CPU time)
+
+Ran 1 test suite in 243.86s (243.86s CPU time): 4 tests passed, 0 failed, 0 skipped (4 total tests)
+exit 0
