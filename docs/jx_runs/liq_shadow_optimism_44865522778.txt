@@ -1,0 +1,7 @@
+optimism: start, head 159818005
+optimism: bootstrap to block 153982005/159818005 users 16189
+optimism: bootstrap to block 156202005/159818005 users 16355
+optimism: bootstrap to block 158452005/159818005 users 16579
+optimism: bootstrap DONE, users 16686
+optimism: head 159818358 cycles 3 tracked 16686 last_cycle 154818 ms rpc ok/err 1359/186
+optimism: head 159818531 cycles 5 tracked 16686 last_cycle 119204 ms rpc ok/err 1694/330
