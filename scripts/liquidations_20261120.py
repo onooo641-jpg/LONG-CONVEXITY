@@ -114,6 +114,32 @@ def venue_stats(v):
     return res
 
 
+def describe(v, label):
+    """PREREG addendum 4: sensitivity and descriptive stats for one passing venue (no pass/fail)."""
+    print(f"\n-- {label}")
+    for half, months in (("H1", range(0, 12)), ("H2", range(12, 24))):
+        h = v[v["month"].isin(months) & v["valid"] & v["use_for_bots"]]
+        if not len(h):
+            print(half, "no data"); continue
+        n_all = len(v[v["month"].isin(months) & v["valid"]])
+        scale = n_all / len(h)
+        tot = h["gross"].sum()
+        byl = h.groupby("liquidator")["gross"].sum().sort_values(ascending=False, kind="mergesort")
+        byb = h.groupby("bot")["gross"].sum().sort_values(ascending=False, kind="mergesort")
+        cnt = h.groupby("bot").size()
+        rep = set(cnt[cnt >= 50].index)
+        occ = set(cnt[cnt <= 3].index)
+        act = cnt[cnt >= 12].index
+        top3 = set(byb.head(3).index)
+        outn = h[h["bot"].isin(act) & ~h["bot"].isin(top3)].groupby("bot")["net"].sum() * scale / 12
+        print(f"{half}: liquidator-field top3 {byl.head(3).sum()/tot:.2f} top10 {byl.head(10).sum()/tot:.2f} unique liquidators {len(byl)} | "
+              f"tx-from top3 {byb.head(3).sum()/tot:.2f} top10 {byb.head(10).sum()/tot:.2f} unique {len(byb)}")
+        print(f"     repeat winners (>=50): {len(rep)} hold {h[h['bot'].isin(rep)]['gross'].sum()/tot:.2f} of value; occasional (<=3): {len(occ)} hold {h[h['bot'].isin(occ)]['gross'].sum()/tot:.2f}; active (>=12): {len(act)}")
+        if len(outn):
+            print(f"     net/month per active bot outside top3: median ${outn.median():,.0f}  p75 ${outn.quantile(.75):,.0f}  p90 ${outn.quantile(.9):,.0f}  (n={len(outn)})")
+        print(f"     median bonus {100*(h['gross']/h['coll_usd']).median():.2f}% of collateral; debt repaid ${h['debt_usd'].sum()*scale:,.0f}; events {n_all}")
+
+
 def main():
     print("== chain status (only COMPLETE chains are analysed; PARTIAL/UNMEASURED cannot pass)")
     for c in NATIVE:
@@ -167,6 +193,22 @@ def main():
         print(c, ven[:12], round(s["H1"]["out_net_flash_pm"]), round(s["H2"]["out_net_flash_pm"]),
               "outside bots", s["H1"]["out_bots"], s["H2"]["out_bots"],
               "per-new-bot est $/mo", round(s["H2"]["out_net_pm"] / (s["H2"]["out_bots"] + 1)))
+    print("\n== SENSITIVITY (addendum 4): same pass table with winner = event `liquidator` field instead of tx `from` (not the registered test)")
+    alt = []
+    for (c, ven), v in allv.groupby(["chain", "venue"]):
+        if len(v) < 20:
+            continue
+        v2 = v.copy()
+        v2["bot"] = v2["liquidator"]
+        st2 = venue_stats(v2)
+        ok = st2["H1"]["pass"] and st2["H2"]["pass"]
+        if ok:
+            alt.append((c, ven, st2))
+            print(f"{c:10s} {ven[:12]} {KNOWN.get(ven, 'unknown fork'):14s} H1 top3 {st2['H1']['top3']:.2f} out$/mo {st2['H1']['out_net_pm']:9.0f} | H2 top3 {st2['H2']['top3']:.2f} out$/mo {st2['H2']['out_net_pm']:9.0f} | PASS(alt)")
+    print(f"venues passing under alt identity: {len(alt)}  combined outside-top3 net $/mo H1 {sum(s['H1']['out_net_pm'] for _,_,s in alt):.0f} H2 {sum(s['H2']['out_net_pm'] for _,_,s in alt):.0f}")
+    print("\n== ADDENDUM 4: sensitivity and descriptive stats for passing venues (no pass/fail)")
+    for c, ven, st in passing:
+        describe(allv[(allv["chain"] == c) & (allv["venue"] == ven)], f"{c} {ven} [{KNOWN.get(ven, 'unknown fork')}]")
     print("\n== top venues by gross bonus, last 12 months (regardless of pass)")
     t = allv[allv["valid"] & (allv["month"] >= 12)].groupby(["chain", "venue"]).agg(n=("tx", "size"), gross=("gross", "sum"), gas=("gas_usd", "sum"), bots=("bot", "nunique")).sort_values("gross", ascending=False)
     print(t.head(15).round(0).to_string())

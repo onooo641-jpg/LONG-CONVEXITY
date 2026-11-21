@@ -1144,6 +1144,86 @@ optimism 0x794a61358d 105529 40907 outside bots 484 595 per-new-bot est $/mo 69
 polygon 0x794a61358d 261449 131281 outside bots 1447 1650 per-new-bot est $/mo 80
 polygon 0x8dff5e27ea 21256 5662 outside bots 1373 537 per-new-bot est $/mo 11
 
+== SENSITIVITY (addendum 4): same pass table with winner = event `liquidator` field instead of tx `from` (not the registered test)
+avalanche  0x794a61358d Aave v3        H1 top3 0.42 out$/mo    280501 | H2 top3 0.51 out$/mo    104655 | PASS(alt)
+base       0xa238dd80c2 Aave v3 Base   H1 top3 0.48 out$/mo    259511 | H2 top3 0.32 out$/mo    242819 | PASS(alt)
+optimism   0x794a61358d Aave v3        H1 top3 0.37 out$/mo     80411 | H2 top3 0.45 out$/mo     36933 | PASS(alt)
+polygon    0x794a61358d Aave v3        H1 top3 0.32 out$/mo    215878 | H2 top3 0.52 out$/mo     69597 | PASS(alt)
+polygon    0x8dff5e27ea unknown fork   H1 top3 0.55 out$/mo     18033 | H2 top3 0.52 out$/mo      3536 | PASS(alt)
+venues passing under alt identity: 5  combined outside-top3 net $/mo H1 854334 H2 457540
+
+== ADDENDUM 4: sensitivity and descriptive stats for passing venues (no pass/fail)
+
+-- arbitrum 0x794a61358d6845594f94dc1db02a252b5b4814ad [Aave v3]
+H1: liquidator-field top3 0.44 top10 0.87 unique liquidators 132 | tx-from top3 0.30 top10 0.45 unique 1441
+     repeat winners (>=50): 47 hold 0.28 of value; occasional (<=3): 907 hold 0.14; active (>=12): 169
+     net/month per active bot outside top3: median $411  p75 $1,026  p90 $3,275  (n=166)
+     median bonus 8.11% of collateral; debt repaid $70,178,323; events 24568
+H2: liquidator-field top3 0.62 top10 0.84 unique liquidators 291 | tx-from top3 0.09 top10 0.24 unique 1419
+     repeat winners (>=50): 37 hold 0.12 of value; occasional (<=3): 1011 hold 0.36; active (>=12): 131
+     net/month per active bot outside top3: median $226  p75 $839  p90 $2,822  (n=131)
+     median bonus 8.79% of collateral; debt repaid $41,116,171; events 10092
+
+-- avalanche 0x4f01aed16d97e3ab5ab2b501154dc9bb0f1a5a2c [unknown fork]
+H1: liquidator-field top3 0.72 top10 0.99 unique liquidators 26 | tx-from top3 0.27 top10 0.53 unique 107
+     repeat winners (>=50): 3 hold 0.02 of value; occasional (<=3): 66 hold 0.53; active (>=12): 7
+     net/month per active bot outside top3: median $17  p75 $56  p90 $130  (n=6)
+     median bonus 7.59% of collateral; debt repaid $502,950; events 1523
+H2: liquidator-field top3 0.68 top10 0.94 unique liquidators 51 | tx-from top3 0.30 top10 0.64 unique 67
+     repeat winners (>=50): 6 hold 0.09 of value; occasional (<=3): 39 hold 0.36; active (>=12): 16
+     net/month per active bot outside top3: median $11  p75 $66  p90 $89  (n=13)
+     median bonus 9.57% of collateral; debt repaid $375,368; events 2542
+
+-- avalanche 0x794a61358d6845594f94dc1db02a252b5b4814ad [Aave v3]
+H1: liquidator-field top3 0.42 top10 0.78 unique liquidators 88 | tx-from top3 0.41 top10 0.66 unique 283
+     repeat winners (>=50): 19 hold 0.48 of value; occasional (<=3): 172 hold 0.17; active (>=12): 37
+     net/month per active bot outside top3: median $817  p75 $3,546  p90 $8,360  (n=35)
+     median bonus 8.05% of collateral; debt repaid $33,515,824; events 9025
+H2: liquidator-field top3 0.51 top10 0.94 unique liquidators 102 | tx-from top3 0.26 top10 0.55 unique 236
+     repeat winners (>=50): 17 hold 0.46 of value; occasional (<=3): 155 hold 0.16; active (>=12): 55
+     net/month per active bot outside top3: median $729  p75 $1,892  p90 $6,123  (n=52)
+     median bonus 10.38% of collateral; debt repaid $18,759,534; events 5786
+
+-- base 0xa238dd80c259a72e81d7e4664a9801593f98d1c5 [Aave v3 Base]
+H1: liquidator-field top3 0.48 top10 0.75 unique liquidators 161 | tx-from top3 0.36 top10 0.49 unique 823
+     repeat winners (>=50): 48 hold 0.37 of value; occasional (<=3): 557 hold 0.31; active (>=12): 133
+     net/month per active bot outside top3: median $133  p75 $521  p90 $1,498  (n=131)
+     median bonus 8.03% of collateral; debt repaid $41,986,385; events 29175
+H2: liquidator-field top3 0.32 top10 0.58 unique liquidators 366 | tx-from top3 0.11 top10 0.27 unique 1611
+     repeat winners (>=50): 32 hold 0.13 of value; occasional (<=3): 1375 hold 0.62; active (>=12): 104
+     net/month per active bot outside top3: median $31  p75 $473  p90 $2,023  (n=103)
+     median bonus 6.94% of collateral; debt repaid $32,181,291; events 10995
+
+-- optimism 0x794a61358d6845594f94dc1db02a252b5b4814ad [Aave v3]
+H1: liquidator-field top3 0.37 top10 0.73 unique liquidators 161 | tx-from top3 0.19 top10 0.32 unique 487
+     repeat winners (>=50): 24 hold 0.26 of value; occasional (<=3): 304 hold 0.23; active (>=12): 107
+     net/month per active bot outside top3: median $171  p75 $661  p90 $1,092  (n=104)
+     median bonus 6.19% of collateral; debt repaid $10,802,845; events 22249
+H2: liquidator-field top3 0.45 top10 0.76 unique liquidators 121 | tx-from top3 0.38 top10 0.50 unique 598
+     repeat winners (>=50): 10 hold 0.25 of value; occasional (<=3): 517 hold 0.61; active (>=12): 32
+     net/month per active bot outside top3: median $0  p75 $56  p90 $221  (n=31)
+     median bonus 6.51% of collateral; debt repaid $5,953,493; events 6278
+
+-- polygon 0x794a61358d6845594f94dc1db02a252b5b4814ad [Aave v3]
+H1: liquidator-field top3 0.32 top10 0.74 unique liquidators 155 | tx-from top3 0.17 top10 0.30 unique 1450
+     repeat winners (>=50): 11 hold 0.20 of value; occasional (<=3): 1217 hold 0.39; active (>=12): 43
+     net/month per active bot outside top3: median $779  p75 $1,392  p90 $3,074  (n=40)
+     median bonus 8.17% of collateral; debt repaid $28,066,126; events 21972
+H2: liquidator-field top3 0.52 top10 0.82 unique liquidators 163 | tx-from top3 0.09 top10 0.16 unique 1653
+     repeat winners (>=50): 11 hold 0.07 of value; occasional (<=3): 1506 hold 0.64; active (>=12): 24
+     net/month per active bot outside top3: median $83  p75 $516  p90 $943  (n=23)
+     median bonus 7.98% of collateral; debt repaid $15,147,823; events 10383
+
+-- polygon 0x8dff5e27ea6b7ac08ebfdf9eb090f32ee9a30fcf [unknown fork]
+H1: liquidator-field top3 0.55 top10 0.94 unique liquidators 58 | tx-from top3 0.47 top10 0.69 unique 1376
+     repeat winners (>=50): 9 hold 0.23 of value; occasional (<=3): 1266 hold 0.48; active (>=12): 47
+     net/month per active bot outside top3: median $13  p75 $34  p90 $98  (n=45)
+     median bonus 8.11% of collateral; debt repaid $5,927,899; events 22292
+H2: liquidator-field top3 0.52 top10 0.90 unique liquidators 88 | tx-from top3 0.25 top10 0.50 unique 540
+     repeat winners (>=50): 14 hold 0.03 of value; occasional (<=3): 485 hold 0.94; active (>=12): 32
+     net/month per active bot outside top3: median $-2  p75 $2  p90 $4  (n=32)
+     median bonus 7.49% of collateral; debt repaid $802,172; events 8455
+
 == top venues by gross bonus, last 12 months (regardless of pass)
                                                           n      gross      gas  bots
 chain     venue                                                                      
