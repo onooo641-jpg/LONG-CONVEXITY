@@ -1,0 +1,72 @@
+fork test polygon run 44864424865 2026-11-21T04:06:36Z
+== rpc https://poly.api.pocket.network
+Compiling 2 files with Solc 0.8.26
+Solc 0.8.26 finished in 238.72ms
+Compiler run successful!
+[2m2026-11-21T04:09:54.015611Z[0m [31mERROR[0m [2msharedbackend[0m[2m:[0m Failed to send/recv `storage` [3merr[0m[2m=[0mfailed to get storage for 0xB6e57ed85c4c9dbfEF2a68711e9d6f36c56e0FcB at 59659085579343209171342286429718398054144579453981596258412891998241195811164: server returned an error response: error code -32000: historical state 6fb47ecfe1a5b42433b9cb87d00b3d2deae724257d9c1b7da9a9c8df20faefc9 is not available [3maddress[0m[2m=[0m0xB6e57ed85c4c9dbfEF2a68711e9d6f36c56e0FcB [3mindex[0m[2m=[0m59659085579343209171342286429718398054144579453981596258412891998241195811164
+[2m2026-11-21T04:09:54.015611Z[0m [31mERROR[0m [2msharedbackend[0m[2m:[0m Failed to send/recv `storage` [3merr[0m[2m=[0mfailed to get storage for 0xB6e57ed85c4c9dbfEF2a68711e9d6f36c56e0FcB at 59659085579343209171342286429718398054144579453981596258412891998241195811164: server returned an error response: error code -32000: historical state 6fb47ecfe1a5b42433b9cb87d00b3d2deae724257d9c1b7da9a9c8df20faefc9 is not available [3maddress[0m[2m=[0m0xB6e57ed85c4c9dbfEF2a68711e9d6f36c56e0FcB [3mindex[0m[2m=[0m59659085579343209171342286429718398054144579453981596258412891998241195811164
+[2m2026-11-21T04:09:54.640724Z[0m [31mERROR[0m [2msharedbackend[0m[2m:[0m Failed to send/recv `storage` [3merr[0m[2m=[0mfailed to get storage for 0x2DB87C4831B2fec2E35591221455834193b50D1B at 4: server returned an error response: error code -32000: historical state 6fb47ecfe1a5b42433b9cb87d00b3d2deae724257d9c1b7da9a9c8df20faefc9 is not available [3maddress[0m[2m=[0m0x2DB87C4831B2fec2E35591221455834193b50D1B [3mindex[0m[2m=[0m4
+[2m2026-11-21T04:09:54.640740Z[0m [31mERROR[0m [2msharedbackend[0m[2m:[0m Failed to send/recv `storage` [3merr[0m[2m=[0mfailed to get storage for 0x2DB87C4831B2fec2E35591221455834193b50D1B at 4: server returned an error response: error code -32000: historical state 6fb47ecfe1a5b42433b9cb87d00b3d2deae724257d9c1b7da9a9c8df20faefc9 is not available [3maddress[0m[2m=[0m0x2DB87C4831B2fec2E35591221455834193b50D1B [3mindex[0m[2m=[0m4
+[2m2026-11-21T04:09:57.894925Z[0m [31mERROR[0m [2msharedbackend[0m[2m:[0m Failed to send/recv `basic` [3merr[0m[2m=[0mfailed to get account for 0x504E73e75e5e88500F632fFe130FC91fcE1559DA: server returned an error response: error code -32000: historical state 6fb47ecfe1a5b42433b9cb87d00b3d2deae724257d9c1b7da9a9c8df20faefc9 is not available [3maddress[0m[2m=[0m0x504E73e75e5e88500F632fFe130FC91fcE1559DA
+[2m2026-11-21T04:09:57.894925Z[0m [31mERROR[0m [2msharedbackend[0m[2m:[0m Failed to send/recv `basic` [3merr[0m[2m=[0mfailed to get account for 0x504E73e75e5e88500F632fFe130FC91fcE1559DA: server returned an error response: error code -32000: historical state 6fb47ecfe1a5b42433b9cb87d00b3d2deae724257d9c1b7da9a9c8df20faefc9 is not available [3maddress[0m[2m=[0m0x504E73e75e5e88500F632fFe130FC91fcE1559DA
+[2m2026-11-21T04:09:58.793595Z[0m [31mERROR[0m [2msharedbackend[0m[2m:[0m Failed to send/recv `storage` [3merr[0m[2m=[0mfailed to get storage for 0xc9F9F6E0D776eed0d53f96Ba29247832e2C4D91d at 70284251481117729081469979871622710376866526227638599182579897164600797957192: server returned an error response: error code -32000: historical state 6fb47ecfe1a5b42433b9cb87d00b3d2deae724257d9c1b7da9a9c8df20faefc9 is not available [3maddress[0m[2m=[0m0xc9F9F6E0D776eed0d53f96Ba29247832e2C4D91d [3mindex[0m[2m=[0m70284251481117729081469979871622710376866526227638599182579897164600797957192
+[2m2026-11-21T04:09:58.793607Z[0m [31mERROR[0m [2msharedbackend[0m[2m:[0m Failed to send/recv `storage` [3merr[0m[2m=[0mfailed to get storage for 0xc9F9F6E0D776eed0d53f96Ba29247832e2C4D91d at 70284251481117729081469979871622710376866526227638599182579897164600797957192: server returned an error response: error code -32000: historical state 6fb47ecfe1a5b42433b9cb87d00b3d2deae724257d9c1b7da9a9c8df20faefc9 is not available [3maddress[0m[2m=[0m0xc9F9F6E0D776eed0d53f96Ba29247832e2C4D91d [3mindex[0m[2m=[0m70284251481117729081469979871622710376866526227638599182579897164600797957192
+
+Ran 4 tests for test/LiqExecutor.t.sol:LiqExecutorForkTest
+[FAIL: no fee tier worked: fee500: fee3000: fee100: fee10000:] test_profitable_liquidation_repays_flash_loan() (block: 97685686) (gas: 187220)
+[PASS] test_reverts_on_healthy_position() (gas: 1156910)
+[PASS] test_reverts_on_unusable_route() (gas: 525371)
+[PASS] test_reverts_when_below_min_profit() (gas: 77329)
+Suite result: FAILED. 3 passed; 1 failed; 0 skipped; finished in 201.75s (312.50s CPU time)
+
+Ran 1 test suite in 201.75s (201.75s CPU time): 3 tests passed, 1 failed, 0 skipped (4 total tests)
+
+Failing tests:
+Encountered 1 failing test in test/LiqExecutor.t.sol:LiqExecutorForkTest
+[FAIL: no fee tier worked: fee500: fee3000: fee100: fee10000:] test_profitable_liquidation_repays_flash_loan() (block: 97685686) (gas: 187220)
+
+Encountered a total of 1 failing tests, 3 tests succeeded
+
+Tip: Run `forge test --rerun` to retry only the 1 failed test
+Tip: Run `forge test --debug --match-test <TEST_NAME>` to inspect one failing test in the debugger
+== rpc https://polygon.gateway.tenderly.co
+No files changed, compilation skipped
+
+Ran 4 tests for test/LiqExecutor.t.sol:LiqExecutorForkTest
+[FAIL: no fee tier worked: fee500:08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000013 fee3000:08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000013 fee100:08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000013 fee10000:08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000013] test_profitable_liquidation_repays_flash_loan() (block: 97685820) (gas: 8460051)
+[PASS] test_reverts_on_healthy_position() (gas: 1156910)
+[PASS] test_reverts_on_unusable_route() (gas: 525371)
+[PASS] test_reverts_when_below_min_profit() (gas: 8171341)
+Suite result: FAILED. 3 passed; 1 failed; 0 skipped; finished in 63.70s (117.22s CPU time)
+
+Ran 1 test suite in 63.70s (63.70s CPU time): 3 tests passed, 1 failed, 0 skipped (4 total tests)
+
+Failing tests:
+Encountered 1 failing test in test/LiqExecutor.t.sol:LiqExecutorForkTest
+[FAIL: no fee tier worked: fee500:08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000013 fee3000:08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000013 fee100:08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000013 fee10000:08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000013] test_profitable_liquidation_repays_flash_loan() (block: 97685820) (gas: 8460051)
+
+Encountered a total of 1 failing tests, 3 tests succeeded
+
+Tip: Run `forge test --rerun` to retry only the 1 failed test
+Tip: Run `forge test --debug --match-test <TEST_NAME>` to inspect one failing test in the debugger
+== rpc https://polygon-bor-rpc.publicnode.com
+No files changed, compilation skipped
+
+Ran 4 tests for test/LiqExecutor.t.sol:LiqExecutorForkTest
+[FAIL: no fee tier worked: fee500:08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000013 fee3000:08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000013 fee100:08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000013 fee10000:08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000013] test_profitable_liquidation_repays_flash_loan() (block: 97685862) (gas: 8506642)
+[PASS] test_reverts_on_healthy_position() (gas: 1156910)
+[PASS] test_reverts_on_unusable_route() (gas: 525371)
+[PASS] test_reverts_when_below_min_profit() (gas: 8217932)
+Suite result: FAILED. 3 passed; 1 failed; 0 skipped; finished in 27.27s (49.98s CPU time)
+
+Ran 1 test suite in 27.27s (27.27s CPU time): 3 tests passed, 1 failed, 0 skipped (4 total tests)
+
+Failing tests:
+Encountered 1 failing test in test/LiqExecutor.t.sol:LiqExecutorForkTest
+[FAIL: no fee tier worked: fee500:08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000013 fee3000:08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000013 fee100:08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000013 fee10000:08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000013] test_profitable_liquidation_repays_flash_loan() (block: 97685862) (gas: 8506642)
+
+Encountered a total of 1 failing tests, 3 tests succeeded
+
+Tip: Run `forge test --rerun` to retry only the 1 failed test
+Tip: Run `forge test --debug --match-test <TEST_NAME>` to inspect one failing test in the debugger
+exit 1
