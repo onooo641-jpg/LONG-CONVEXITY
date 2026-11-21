@@ -1,2 +1,2 @@
-# chains for .github/workflows/fetch_liq.yml. Resumable. (run 15: Morpho Blue Base stage-1 pilot)
+# chains for .github/workflows/fetch_liq.yml. Resumable. (run 16: morpho pilot receipts remainder)
 morphobase_pilot
