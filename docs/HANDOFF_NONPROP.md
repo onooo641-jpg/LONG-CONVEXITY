@@ -129,3 +129,11 @@ Topstep 50K and LucidFlex 50K joint top ($18.0K / $18.5K median). So once a firm
 pricing step would have flagged Topstep as the best structure. Limits: retrospective, not blind (we knew Topstep
 first); and it only works if the rule-watcher is watching prop-firm pages, which it now is. The radar finds
 *structures that pay even random play*; it does not find strategy edges.
+
+### Baseline sweep first, then changes (2026-11-21)
+Long-standing structures (Topstep's has existed for years) must be caught too, so the radar's first run is a
+**full baseline sweep**, not a diff: price every watched firm/platform as it stands today. Only after that does it
+watch for changes. Coverage matters more than speed: seed the watch list from complete directories, not news
+(all futures/CFD prop firms listed on comparison sites such as propfirmmatch/propvator/saveonpropfirms; all
+lending, perp and incentive venues on DefiLlama; prediction-market reward pages). Every entry gets the five-part
+filter and, for prop firms, the coin-flip pricing step.
