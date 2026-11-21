@@ -17,3 +17,9 @@ Multiple programmes are tested at once; each is judged on its own rule, and a pa
 (stated in the result). Survivorship: programmes that failed before today are missing.
 
 Command: `uv run python scripts/programmes_20261121.py | tee docs/jx_runs/programmes_20261121.txt`
+
+## Result (2026-11-21, `docs/jx_runs/programmes_20261121.txt`): all 10 FAIL
+Best: Ethena sUSDe 9.1% / 4.3% by half (last 3 months 4.7%); Usual bUSD0 13.0% / 3.0%; Falcon sUSDf 7.1% / 4.9%; Sky 5.5% / 3.2%.
+Liquity v2 BOLD and Felix show 0% yield in DefiLlama (their stability-pool yield is probably not reported there: data gap, not a result);
+Spark, Hyperliquid Earn, Maple, Pendle show TVL-collapse stress hits that may partly be pool-id changes in DefiLlama. Conclusion: passive
+stablecoin programmes paid 8–13% in 2024–25 and 3–5% in 2025–26; none is a fallback at the 8% bar now.

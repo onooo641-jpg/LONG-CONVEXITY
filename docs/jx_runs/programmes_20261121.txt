@@ -1,0 +1,22 @@
+pass: >= 8.0%/yr both halves, no stress hit, >= 180 days; Stage 1 last 3 months < 4.0% -> KILL
+
+Liquity v2 BOLD: 3 pool(s), 507 days from 2025-06-11; last 3 mo 0.00%; halves 0.00% / -9.58%; $-479/yr on $10K -> FAIL (Stage 1 kill; half 1 < 8%; half 2 < 8%; 1 stress hit(s))
+
+Felix feUSD: 2 pool(s), 173 days from 2026-05-11; last 3 mo 0.00%; halves 0.00% / 0.00%; $0/yr on $10K -> FAIL (Stage 1 kill; < 180 days; half 1 < 8%; half 2 < 8%)
+
+Ethena sUSDe: 1 pool(s), 729 days from 2024-11-01; last 3 mo 4.71%; halves 9.09% / 4.30%; $669/yr on $10K -> FAIL (half 2 < 8%)
+
+Falcon sUSDf: 1 pool(s), 381 days from 2025-10-15; last 3 mo 4.50%; halves 7.10% / 4.87%; $599/yr on $10K -> FAIL (half 1 < 8%; half 2 < 8%)
+
+Sky savings: 6 pool(s), 729 days from 2024-11-01; last 3 mo 3.82%; halves 5.48% / 3.18%; $433/yr on $10K -> FAIL (Stage 1 kill; half 1 < 8%; half 2 < 8%)
+
+Spark Savings: 5 pool(s), 313 days from 2025-12-22; last 3 mo -36.08%; halves -36.33% / -45.08%; $-4,068/yr on $10K -> FAIL (Stage 1 kill; half 1 < 8%; half 2 < 8%; 4 stress hit(s))
+
+Usual bUSD0: 1 pool(s), 697 days from 2024-12-03; last 3 mo 3.82%; halves 13.02% / 2.99%; $805/yr on $10K -> FAIL (Stage 1 kill; half 2 < 8%)
+
+Hyperliquid Earn: 2 pool(s), 10 days from 2026-10-21; last 3 mo -327.11%; halves 3.40% / -723.72%; $-32,711/yr on $10K -> FAIL (Stage 1 kill; < 180 days; half 1 < 8%; half 2 < 8%; 1 stress hit(s))
+
+Maple: 3 pool(s), 460 days from 2025-07-28; last 3 mo 5.01%; halves 6.74% / -11.38%; $-230/yr on $10K -> FAIL (half 1 < 8%; half 2 < 8%; 1 stress hit(s))
+
+Pendle v2 stables: 42 pool(s), 156 days from 2026-05-28; last 3 mo -4.84%; halves 12.24% / -7.48%; $199/yr on $10K -> FAIL (Stage 1 kill; < 180 days; half 2 < 8%; 6 stress hit(s))
+
