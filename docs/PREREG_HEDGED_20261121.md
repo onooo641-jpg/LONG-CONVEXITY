@@ -30,3 +30,11 @@ apyBaseBorrow − 0.9 × apyRewardBorrow; k = 1/(1 − 0.8 × LTV of the supplie
 Same stages and bar.
 
 Commands: `uv run python scripts/hedged_20261121.py | tee docs/jx_runs/hedged_20261121.txt`
+
+## #214 hedged governance-token yields (added 2026-11-21, before any of this batch's data was fetched)
+Protocols pay emissions/bribes/fees to holders who stake or vote-lock their governance token. Universe: single-exposure pools whose token
+maps to an HL-listed governance perp: CRV (CRV, cvxCRV, sdCRV, yCRV, st-yCRV, asdCRV), AAVE (stkAAVE), ENA (sENA), PENDLE (vePENDLE, sPENDLE,
+mPENDLE, Penpie/Equilibria/Stake DAO wrappers), LDO, MORPHO, AERO (veAERO), FXS (cvxFXS, sdFXS); **TVL ≥ $2M** (these pools are smaller).
+Same hedged rule, costs, stress, stages and bar as #212/#213, except the TVL eligibility threshold is $2M. Wrapper discounts to the
+underlying (e.g. cvxCRV below CRV) are not in the data: stated as a limit; the stress partly covers collapses. #213 keeps its original
+families (ETH, SOL, HYPE, BTC, AVAX, BNB) only.

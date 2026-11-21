@@ -243,7 +243,11 @@ def job_pendle_probe():
 
 FAMILY = {"ETH": ["STETH", "WSTETH", "RETH", "CBETH", "WEETH", "EZETH", "RSETH", "METH", "SFRXETH", "OSETH", "WBETH", "ETHX", "WETH", "ETH"],
           "SOL": ["SOL", "JITOSOL", "MSOL", "JUPSOL", "BSOL", "INF", "BNSOL", "HSOL"], "HYPE": ["HYPE", "KHYPE", "STHYPE", "WHYPE"],
-          "BTC": ["BTC", "WBTC", "CBBTC", "TBTC", "LBTC"], "AVAX": ["AVAX", "SAVAX", "WAVAX"], "BNB": ["BNB", "SLISBNB", "BNBX", "WBNB"]}
+          "BTC": ["BTC", "WBTC", "CBBTC", "TBTC", "LBTC"], "AVAX": ["AVAX", "SAVAX", "WAVAX"], "BNB": ["BNB", "SLISBNB", "BNBX", "WBNB"],
+          # #214 governance tokens with staking / vote-escrow yields (hedgeable on HL)
+          "CRV": ["CRV", "CVXCRV", "SDCRV", "YCRV", "ST-YCRV", "SCRVUSD", "ASDCRV"], "AAVE": ["AAVE", "STKAAVE", "STKGHO"],
+          "ENA": ["ENA", "SENA"], "PENDLE": ["PENDLE", "VEPENDLE", "SPENDLE", "MPENDLE", "PENPIE", "EQBPENDLE", "SDPENDLE"],
+          "LDO": ["LDO"], "MORPHO": ["MORPHO"], "AERO": ["AERO", "VEAERO"], "FXS": ["FXS", "CVXFXS", "SDFXS"]}
 TOK2COIN = {t: c for c, ts in FAMILY.items() for t in ts}
 YSTABLE = {"SUSDE": "USD", "SUSDS": "USD", "SDAI": "USD", "SFRXUSD": "USD"}
 
@@ -259,7 +263,7 @@ def job_hedged():
     pools = pd.DataFrame((get("https://yields.llama.fi/pools") or {}).get("data", []))
     pools["tvlUsd"] = pd.to_numeric(pools["tvlUsd"], errors="coerce")
     pools["coin"] = pools["symbol"].str.upper().map(TOK2COIN)
-    u = pools[(pools["exposure"] == "single") & (pools["stablecoin"] != True) & pools["coin"].notna() & (pools["tvlUsd"] >= 20e6)].copy()  # noqa: E712
+    u = pools[(pools["exposure"] == "single") & (pools["stablecoin"] != True) & pools["coin"].notna() & (pools["tvlUsd"] >= (pools["coin"].isin(["CRV","AAVE","ENA","PENDLE","LDO","MORPHO","AERO","FXS"]).map({True: 2e6, False: 20e6})))].copy()  # noqa: E712
     cats = _protocol_categories()
     u["category"] = u["project"].str.lower().map(cats)
     print(f"hedged universe: {len(u)} pools; categories {u['category'].value_counts().head(8).to_dict()}", flush=True)

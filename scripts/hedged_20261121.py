@@ -16,7 +16,7 @@ STAKING = {"Liquid Staking", "Liquid Restaking", "Restaking"}
 ann = lambda x: float(x.mean() * 365 * 100)  # noqa: E731
 
 
-def rotate(Y, T, first, cost_frac, stress_fn, label, names):
+def rotate(Y, T, first, cost_frac, stress_fn, label, names, tmin=20e6):
     """Monthly top-K by trailing 30-day mean of Y (annualised % per day); returns daily return series (fraction of capital)."""
     days = pd.date_range(LO, HI - pd.Timedelta(days=1), freq="D", tz="UTC")
     daily, prev, events, log = [], set(), 0, []
@@ -24,7 +24,7 @@ def rotate(Y, T, first, cost_frac, stress_fn, label, names):
         pday = m - pd.Timedelta(days=1)
         if pday not in T.index:
             continue
-        ok = [p for p in Y.columns if pd.notna(T.at[pday, p]) and T.at[pday, p] >= 20e6 and (pday - first[p]).days >= 90]
+        ok = [p for p in Y.columns if pd.notna(T.at[pday, p]) and T.at[pday, p] >= tmin and (pday - first[p]).days >= 90]
         trail = Y.loc[pday - pd.Timedelta(days=29):pday, ok].mean().dropna().sort_values(ascending=False)
         held = list(trail.index[:TOPK])
         ch = len(set(held) ^ prev)
@@ -77,7 +77,10 @@ def hedged():
     ch = ch[ch["F"].notna()]
     names = {p: f"{pools.at[p, 'project']}/{pools.at[p, 'symbol']}" for p in pools.index}
     cost = 0.0005 + 0.00045 + 10 / SLOT
-    for label, sel in (("#212 hedged staking", pools["category"].isin(STAKING)), ("#213 hedged reward farming (all mapped pools)", pools["category"].notna() | True)):
+    gov = pools["coin"].isin(["CRV", "AAVE", "ENA", "PENDLE", "LDO", "MORPHO", "AERO", "FXS"])
+    for label, sel, tmin in (("#212 hedged staking", pools["category"].isin(STAKING) & ~gov, 20e6),
+                             ("#213 hedged reward farming (ETH/SOL/HYPE/BTC/AVAX/BNB pools)", ~gov, 20e6),
+                             ("#214 hedged governance-token yields", gov, 2e6)):
         ids = set(pools.index[sel])
         g = ch[ch["pool"].isin(ids)]
         if g.empty:
@@ -85,7 +88,7 @@ def hedged():
             continue
         Y = g.pivot(index="day", columns="pool", values="y").sort_index()
         T = g.pivot(index="day", columns="pool", values="tvlUsd").sort_index().ffill(limit=3)
-        rotate(Y, T, g.groupby("pool")["day"].min(), cost, lambda p: 0.20, label, names)
+        rotate(Y, T, g.groupby("pool")["day"].min(), cost, lambda p: 0.20, label, names, tmin)
 
 
 def corrloops():
