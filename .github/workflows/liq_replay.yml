@@ -1,0 +1,45 @@
+# PREREG_LIQ_REPLAY_20261121: price-update gap replay, one job per chain. Stage = first line of .github/liq_replay_request.txt (1 or 2).
+name: liquidation replay
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [claude/ict-trading-resources-ugh07b]
+    paths: [.github/liq_replay_request.txt]
+
+permissions:
+  contents: write
+
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 175
+    strategy:
+      fail-fast: false
+      matrix:
+        chain: [arbitrum, base, avalanche, polygon, optimism]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - uses: astral-sh/setup-uv@v5
+      - run: uv sync
+      - name: Replay (150 min budget, commit every 20 min)
+        env:
+          LIQ_BUDGET_MIN: "150"
+        run: |
+          stage=$(grep -v '^\s*#' .github/liq_replay_request.txt | grep -v '^\s*$' | head -1 | tr -d ' ')
+          export REPLAY_STAGE="${stage:-1}"
+          mkdir -p docs/jx_runs
+          log="docs/jx_runs/liq_replay_s${REPLAY_STAGE}_${{ matrix.chain }}_${{ github.run_id }}.txt"
+          uv run python -u scripts/fetch_public.py liq_replay_${{ matrix.chain }} > "$log" 2>&1 &
+          pid=$!
+          while kill -0 $pid 2>/dev/null; do
+            for i in $(seq 120); do kill -0 $pid 2>/dev/null || break; sleep 10; done
+            .github/scripts/commit_push.sh "replay-${{ matrix.chain }}" || true
+          done
+          wait $pid
+      - name: Commit final
+        if: always()
+        run: .github/scripts/commit_push.sh "replay-${{ matrix.chain }}"

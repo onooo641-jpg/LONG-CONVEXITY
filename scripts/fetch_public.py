@@ -812,6 +812,121 @@ def job_liq_decimals():
         print(f"decimals {name}: tokens {len(toks)}, had {len(have)}, missing {len(missing)}, resolved now {len(got)}, still unknown {len(missing) - len(got)}", flush=True)
 
 
+T_ASSET_SRC = "0x22c5b7b2d8561d39f7f210b6b326a1aa69f15311163082308ac4877db6339dc1"
+REPLAY_W = 10_000
+
+
+def job_liq_replay_chain(name):
+    """PREREG_LIQ_REPLAY_20261121: gap between each sampled liquidation and the most recent price-update log of its collateral/debt feed."""
+    import os
+    import numpy as np
+    stage = os.environ.get("REPLAY_STAGE", "2")
+    lkey, native, urls = LIQ_CHAINS[name]
+    pool = {"arbitrum": "0x794a61358d6845594f94dc1db02a252b5b4814ad", "base": "0xa238dd80c259a72e81d7e4664a9801593f98d1c5"}.get(
+        name, "0x794a61358d6845594f94dc1db02a252b5b4814ad")
+    smp = pd.read_parquet(OUT / "liq_replay_sample.parquet")
+    smp = smp[smp["chain"] == name].reset_index(drop=True)
+    if stage == "1":
+        smp = smp[smp["s1"]].reset_index(drop=True)
+    outp = OUT / f"liq_replay_gaps_s{stage}_{name}.parquet"
+    done = pd.read_parquet(outp) if outp.exists() else pd.DataFrame()
+    t0 = time.time()
+    budget = float(os.environ.get("LIQ_BUDGET_MIN", "150")) * 60
+    prov = addr_(rpc(urls, "eth_call", [{"to": pool, "data": SEL_PROVIDER}, "latest"]))
+    oracle = addr_(rpc(urls, "eth_call", [{"to": prov, "data": SEL_ORACLE}, "latest"]))
+    lo, hi = int(smp["block"].min()) - 1, int(smp["block"].max())
+    # oracle source changes over the whole window
+    ups, b, step = {}, lo, 10000
+    while b <= hi:
+        e = min(b + step - 1, hi)
+        try:
+            logs = rpc(urls, "eth_getLogs", [{"fromBlock": hex(b), "toBlock": hex(e), "address": oracle, "topics": [T_ASSET_SRC]}])
+        except ValueError:
+            step = max(500, step // 2)
+            continue
+        except RuntimeError as ex:
+            print(f"  {name}: source-log fetch failed {b}-{e}: {str(ex)[:100]}", flush=True)
+            time.sleep(5)
+            continue
+        for lg in logs:
+            a = "0x" + lg["topics"][1][-40:]
+            ups.setdefault(a, []).append((int(lg["blockNumber"], 16), "0x" + lg["topics"][2][-40:]))
+        b = e + 1
+    print(f"{name}: oracle {oracle}, source updates in window for {len(ups)} assets", flush=True)
+    srcs, aggs = {}, {}
+
+    def latest_source(a):
+        if a not in srcs:
+            try:
+                srcs[a] = addr_(rpc(urls, "eth_call", [{"to": oracle, "data": "0x92bf2be0" + a[2:].rjust(64, "0")}, "latest"]))
+            except Exception:  # noqa: BLE001
+                srcs[a] = None
+        return srcs[a]
+
+    def source_at(a, blk):
+        u = sorted(ups.get(a, []))
+        if not u:
+            return latest_source(a)
+        before = [x for x in u if x[0] <= blk]
+        return before[-1][1] if before else None      # event precedes the first in-window update: unresolved
+
+    def aggregator(src):
+        if src is None or int(src, 16) == 0:
+            return None
+        if src not in aggs:
+            try:
+                aggs[src] = addr_(rpc(urls, "eth_call", [{"to": src, "data": "0x245a7bfc"}, "latest"]))
+            except Exception:  # noqa: BLE001
+                aggs[src] = None
+        return aggs[src]
+
+    def last_update(addrs, blk):
+        if not addrs:
+            return None
+        try:
+            logs = rpc(urls, "eth_getLogs", [{"fromBlock": hex(max(0, blk - REPLAY_W)), "toBlock": hex(blk), "address": addrs}])
+        except Exception:  # noqa: BLE001
+            return "err"
+        return max((int(lg["blockNumber"], 16) for lg in logs), default=-1)
+
+    rng = np.random.default_rng(1)
+    nulls = rng.integers(lo + 1, hi + 1, size=len(smp))
+    rows = [] if done.empty else done.to_dict("records")
+    have = {r["tx"] + r["user"] for r in rows}
+    for i, r in smp.iterrows():
+        if r["tx"] + r["user"] in have:
+            continue
+        if time.time() - t0 > budget:
+            print(f"{name}: BUDGET STOP at row {i}/{len(smp)}", flush=True)
+            break
+        ac, ad = aggregator(source_at(r["collateral"], int(r["block"]))), aggregator(source_at(r["debt"], int(r["block"])))
+        feeds = [x for x in (ac, ad) if x]
+        row = dict(chain=name, tx=r["tx"], user=r["user"], block=int(r["block"]), gross=float(r["gross"]), has_c=ac is not None, has_d=ad is not None)
+        for tag, blk in (("ev", int(r["block"])), ("null", int(nulls[i]))):
+            lu = last_update(feeds, blk)
+            row[f"g_{tag}"] = None if lu in (None, "err") else (-1 if lu == -1 else blk - lu)    # -1 = no update in window (infinity)
+            row[f"err_{tag}"] = lu == "err"
+        for tag, a in (("c", ac), ("d", ad)):
+            if a:
+                lu = last_update([a], int(r["block"]))
+                row[f"g_{tag}"] = None if lu in (None, "err") else (-1 if lu == -1 else int(r["block"]) - lu)
+        rows.append(row)
+        if len(rows) % 25 == 0:
+            pd.DataFrame(rows).to_parquet(outp)
+            print(f"  {name}: {len(rows)}/{len(smp)} ({(time.time()-t0)/60:.1f} min)", flush=True)
+    pd.DataFrame(rows).to_parquet(outp)
+    print(f"{name}: replay stage {stage} wrote {len(rows)} rows", flush=True)
+
+
+def addr_(ret):
+    return "0x" + ret[-40:].lower()
+
+
+SEL_PROVIDER = "0x0542975c"
+SEL_ORACLE = "0xfca513a8"
+for _c in ("arbitrum", "base", "avalanche", "polygon", "optimism"):
+    globals()[f"job_liq_replay_{_c}"] = (lambda c: (lambda: job_liq_replay_chain(c)))(_c)
+
 def _liq_state_path(name):
     return OUT / f"liq_{name}_state.json"
 
@@ -1122,7 +1237,7 @@ for _c in LIQ_CHAINS:
 
 JOBS = {"ipo2": job_ipo2, "iponews": job_iponews, "ipo": job_ipo, "myxsnap": job_myxsnap, "batch2": job_batch2, "hl2023d": job_hl2023d, "hl2023": job_hl2023, "hl": job_hl, "llama_lend": job_llama_lend, "llama_pools": job_llama_pools,
         "llama_prices": job_llama_prices, "poly": job_poly,
-        "liq_probe": job_liq_probe, "liq_diag": job_liq_diag, "liq_diag2": job_liq_diag2, "liq_diag3": job_liq_diag2, "liq_secretcheck": job_liq_secretcheck, "liq_pxdiag": job_liq_pxdiag, "liq_decimals": job_liq_decimals, **{f"liq_prices_{c}": _liq_prices_job(c) for c in LIQ_CHAINS}, **{f"liq_{c}_es": _liq_es_job(c) for c in LIQ_ES_ID}, **{f"liq_{c}": globals()[f"job_liq_{c}"] for c in LIQ_CHAINS}}
+        "liq_probe": job_liq_probe, "liq_diag": job_liq_diag, "liq_diag2": job_liq_diag2, "liq_diag3": job_liq_diag2, "liq_secretcheck": job_liq_secretcheck, "liq_pxdiag": job_liq_pxdiag, **{f"liq_replay_{c}": globals()[f"job_liq_replay_{c}"] for c in ("arbitrum", "base", "avalanche", "polygon", "optimism")}, "liq_decimals": job_liq_decimals, **{f"liq_prices_{c}": _liq_prices_job(c) for c in LIQ_CHAINS}, **{f"liq_{c}_es": _liq_es_job(c) for c in LIQ_ES_ID}, **{f"liq_{c}": globals()[f"job_liq_{c}"] for c in LIQ_CHAINS}}
 
 
 def main(argv):
