@@ -1,0 +1,11 @@
+=== wrappers
+  FAIL https://coins.llama.fi/chart/ethereum:0xFCc5c47bE19d06BF83eB04298b026F81069ff65b,ethereum:0x27B5739e HTTP Error 400: Bad Request
+  FAIL https://coins.llama.fi/chart/ethereum:0xFCc5c47bE19d06BF83eB04298b026F81069ff65b,ethereum:0x27B5739e HTTP Error 400: Bad Request
+  FAIL https://coins.llama.fi/chart/ethereum:0xFCc5c47bE19d06BF83eB04298b026F81069ff65b,ethereum:0x27B5739e HTTP Error 400: Bad Request
+  FAIL https://coins.llama.fi/chart/ethereum:0xFCc5c47bE19d06BF83eB04298b026F81069ff65b,ethereum:0x27B5739e HTTP Error 400: Bad Request
+  FAIL https://coins.llama.fi/chart/ethereum:0xFCc5c47bE19d06BF83eB04298b026F81069ff65b,ethereum:0x27B5739e HTTP Error 400: Bad Request
+  FAIL https://coins.llama.fi/chart/ethereum:0xFCc5c47bE19d06BF83eB04298b026F81069ff65b,ethereum:0x27B5739e HTTP Error 400: Bad Request
+  FAIL https://coins.llama.fi/chart/ethereum:0xFCc5c47bE19d06BF83eB04298b026F81069ff65b,ethereum:0x27B5739e HTTP Error 400: Bad Request
+  FAIL https://coins.llama.fi/chart/ethereum:0xFCc5c47bE19d06BF83eB04298b026F81069ff65b,ethereum:0x27B5739e HTTP Error 400: Bad Request
+  FAIL https://coins.llama.fi/chart/ethereum:0xFCc5c47bE19d06BF83eB04298b026F81069ff65b,ethereum:0x27B5739e HTTP Error 400: Bad Request
+wrapper prices: none
