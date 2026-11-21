@@ -8,3 +8,8 @@ whichever DeFi venue — Hyperliquid, dYdX v4 or Aevo — has paid shorts the mo
 - Halves 2024-11..2025-10, 2025-11..2026-10. Stage 1 (2026-08..10) KILL < 4%/yr; PASS ≥ 8%/yr both halves.
 Limits: spot custody on-chain (wrapped tokens for non-native coins), liquidation at 3× on a ~30% move before rebalancing.
 Command: `uv run python scripts/bestvenue_20261121.py | tee docs/jx_runs/bestvenue_20261121.txt`
+
+
+## Result: Stage 0.5 KILL (2026-11-21)
+Ceiling from data in hand: best 3 coins' last-90-day Hyperliquid short funding (chosen with hindsight) = 7.5%/yr on capital,
+below the 8% bar; dYdX/Aevo would have to pay shorts more than HL on the same coins to lift it. Not run (`docs/jx_runs/ceiling_20261121.txt`).

@@ -113,6 +113,7 @@ risk, 5m signals and 1m fills.
 
 | 207 | new stablecoin reward programmes, first 30 days | `docs/PREREG_NEWREWARDS_20261121.md`. Pass ≥ 8%/yr both halves, ≥ 30 events/half. | FAIL at Stage 1 (−61.7%/yr with loss stress; 1.9%/yr even without it, below Aave) | PREREG_NEWREWARDS result |
 | 210 | named structural stablecoin programmes held (Liquity BOLD, Felix, sUSDe, sUSDf, Sky, Spark, bUSD0, HL Earn, Maple, Pendle) | `docs/PREREG_PROGRAMMES_20261121.md`. Each ≥ 8%/yr both halves. | all FAIL (best sUSDe 9.1%/4.3%, bUSD0 13.0%/3.0%); yields fell to 3–5% in 2025–26 | PREREG_PROGRAMMES result |
+| 217 | best-venue DeFi funding carry (HL/dYdX/Aevo) | `docs/PREREG_BESTVENUE_20261121.md` | Stage 0.5 KILL: hindsight ceiling 7.5%/yr < 8% | ceiling_20261121.txt |
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.

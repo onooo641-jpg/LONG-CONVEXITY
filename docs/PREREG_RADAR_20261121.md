@@ -145,3 +145,16 @@ result depends on them (never-locking floor → −$4,480; $200 price → $35,50
 contracts" (2026-10-18) states the 50K floor **locks at start + $100** and funded contracts **scale 20 / 30 / 40 micros** (below $2,500 / from
 $2,500 / from $3,499). The model is corrected to those rules (scaling applied in both phases: conservative) and re-priced; the corrected run
 replaces the first. The $128 price stays third-party (directory, "With DLL" plan).
+
+## Addendum 7 (2026-11-21): Stage 0.5 ceiling check and pilot-first fetches (process, applies to every new test)
+The slow step is fetching data through GitHub Actions (10 min – 2 h). Until now the full history was fetched before the Stage-1 pilot could
+kill an idea, so failing ideas still cost the whole fetch. From now on:
+1. **Stage 0.5 ceiling check (minutes, data already in the repo):** compute the idea's best case from current/recent data (today's pool
+   yields, last-90-day funding, etc., choosing the most favourable values). If even that best case is below the test's bar → KILL without
+   fetching anything. Kill-only: a high ceiling never counts as a pass.
+2. **Pilot-first fetch:** the first fetch pulls only the Stage-1 window (last ~90 days). The full history is fetched only for ideas that
+   survive Stage 1.
+3. Run several ideas' fetches in one Actions job.
+First application (`docs/jx_runs/ceiling_20261121.txt`): #217 best-venue carry ceiling 7.5%/yr (HL leg, best 3 coins of the last 90 days,
+chosen with hindsight) < 8% → **Stage 0.5 KILL**. #212/#213 majors: ceilings 6.6–9.6% (marginal, data already queued). #214: yCRV 20.7% +
+CRV short funding 12.7% → ceiling 25% (highest of the batch).
