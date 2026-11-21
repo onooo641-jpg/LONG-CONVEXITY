@@ -1,4 +1,4 @@
-# chains for .github/workflows/fetch_liq.yml. Resumable. (run 17: Morpho Blue Base stage 2, three shards)
+# chains for .github/workflows/fetch_liq.yml. Resumable. (run 18: Morpho stage 2 with parallel log scan)
 morphobase_s0
 morphobase_s1
 morphobase_s2

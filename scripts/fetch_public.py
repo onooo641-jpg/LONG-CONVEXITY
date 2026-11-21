@@ -974,33 +974,49 @@ def job_liq_morpho(name):
 
     a1 = anchors[last_i] - 1
     if not st["logs_done"]:
-        b, step, cap, last = st["next_block"], 10000, 2_000_000, time.time()
+        from concurrent.futures import ThreadPoolExecutor
+        b, step, last = st["next_block"], 10000, time.time()
+        PAR = 6
         month_edge = next((x for x in anchors if x > b), a1 + 1)
-        while b <= a1:
-            if time.time() - t0 > budget:
-                flush(b)
-                print(f"{name}: BUDGET STOP in log scan at block {b}/{a1}; {len(rows)} events saved", flush=True)
-                return
-            e = min(b + step - 1, a1)
+
+        def one(w):
             try:
-                logs = glogs(b, e)
+                return glogs(w[0], w[1])
             except ValueError:
-                if step <= 500:
-                    print(f"  {name}: window {b}-{e} refused even at {step}; skipping", flush=True)
-                    b = e + 1
-                    continue
-                step = max(500, step // 2)
-                cap = step
-                continue
+                return None
+
+        def add(logs):
             for lg in logs:
                 d = [int(lg["data"][2:][i:i + 64], 16) for i in range(0, len(lg["data"]) - 2, 64)]
                 if len(lg["topics"]) != 4 or len(d) < 5:
                     continue
                 rows.append({"venue": lg["address"].lower(), "block": int(lg["blockNumber"], 16), "tx": lg["transactionHash"], "mid": lg["topics"][1],
                              "liquidator": "0x" + lg["topics"][2][-40:], "user": "0x" + lg["topics"][3][-40:], "debt_amt": float(d[0]), "coll_amt": float(d[2])})
-            if len(logs) < 100:
-                step = min(step * 2, cap)
-            b = e + 1
+        while b <= a1:
+            if time.time() - t0 > budget:
+                flush(b)
+                print(f"{name}: BUDGET STOP in log scan at block {b}/{a1}; {len(rows)} events saved", flush=True)
+                return
+            wins, bb = [], b
+            for _ in range(PAR):
+                if bb > a1:
+                    break
+                e = min(bb + step - 1, a1)
+                wins.append((bb, e))
+                bb = e + 1
+            with ThreadPoolExecutor(PAR) as ex:
+                res = list(ex.map(one, wins))
+            for w, logs in zip(wins, res):
+                if logs is None:      # window refused by every endpoint: retry it in 1,000-block pieces
+                    for x in range(w[0], w[1] + 1, 1000):
+                        sub = one((x, min(x + 999, w[1])))
+                        if sub is None:
+                            print(f"  {name}: window {x} refused even at 1000; skipping", flush=True)
+                            continue
+                        add(sub)
+                else:
+                    add(logs)
+            b = bb
             if b >= month_edge or time.time() - last > 600:
                 flush(b)
                 last = time.time()
