@@ -1,0 +1,16 @@
+HL funding to 2026-11-21; 90-day short funding (annualised %): APT 4.1, ATOM -8.1, DOT 3.5, DYDX 11.5, INJ 7.4, NEAR 12.5, SEI 6.4, SKY 13.0, TIA 4.7, TRX -13.2
+
+#228 sky-lending/SKY (TVL $371,246,651): yield (30 d) 4.21% + SKY short funding 12.99% -> ceiling 12.90%; Stage 1 realised (Aug-Oct, days with funding) 14.76%
+#228 sky-lending/SKY (TVL $391,071,998): yield (30 d) 6.77% + SKY short funding 12.99% -> ceiling 14.82%; Stage 1 realised (Aug-Oct, days with funding) -8.17%
+#228 tr-energy/TRX (TVL $82,914,154): yield (30 d) 11.32% + TRX short funding -13.24% -> ceiling -1.44%; Stage 1 realised (Aug-Oct, days with funding) 0.22%
+#228 verdict: survives Stage 0.5 -> check Stage 1 lines above (kill if < 4%)
+
+#229 ATOM: staking APR 14.64% (inflation 0.100, bonded ratio 0.64) + short funding -8.07% -> ceiling 4.93%
+#229 TIA: staking APR nan% (inflation nan, bonded ratio 0.40) + short funding 4.74% -> ceiling nan%
+#229 INJ: staking APR 8.67% (inflation 0.044, bonded ratio 0.46) + short funding 7.41% -> ceiling 12.06%
+#229 SEI: staking APR nan% (inflation nan, bonded ratio nan) + short funding 6.45% -> ceiling nan%
+#229 DYDX: staking APR nan% (inflation nan, bonded ratio 0.32) + short funding 11.50% -> ceiling nan%
+#229 APT: no free staking-APR source fetched; short funding 4.13% (not testable)
+#229 NEAR: no free staking-APR source fetched; short funding 12.51% (not testable)
+#229 DOT: no free staking-APR source fetched; short funding 3.53% (not testable)
+#229 verdict: survives Stage 0.5 for the coins >= 8% (Stage 1 needs historical APR: not available free -> not testable beyond Stage 0.5)

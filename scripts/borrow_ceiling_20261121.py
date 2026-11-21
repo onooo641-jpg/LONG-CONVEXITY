@@ -22,13 +22,22 @@ print(f"#209 ceiling (top-5 mean ROE, today): {c209:.2f}% -> {'KILL' if c209 < 8
 fam = {"ETH": ({"STETH", "WSTETH", "RETH", "CBETH", "WEETH", "EZETH", "RSETH", "METH", "SFRXETH", "OSETH", "WBETH", "ETHX"}, {"WETH", "ETH"}),
        "SOL": ({"JITOSOL", "MSOL", "JUPSOL", "BSOL", "INF", "BNSOL", "HSOL"}, {"SOL"}), "HYPE": ({"KHYPE", "STHYPE"}, {"HYPE", "WHYPE"}),
        "AVAX": ({"SAVAX"}, {"AVAX", "WAVAX"}), "USD": ({"SUSDE", "SUSDS", "SDAI", "SFRXUSD"}, {"USDC", "USDT", "USDT0", "USDS", "DAI"})}
+snap = pd.read_parquet("data/public/llama_pools_now.parquet")
+snap["S"] = snap.symbol.str.upper()
+snap["yi"] = snap.apyBase.fillna(0)
+intrinsic = {}
+for sym in set().union(*[a for a, _ in fam.values()]):
+    q = snap[(snap.S == sym) & (snap.exposure == "single") & snap.project.str.contains("stak|lido|rocket|ether.fi|kelp|renzo|stader|frax|ethena|sky|spark|jito|marinade|sanctum|helius|jupiter-staked|kinetiq|benqi|coinbase|binance|mantle|stakewise|swell|origin", case=False)]
+    intrinsic[sym] = float(q.sort_values("tvlUsd").yi.iloc[-1]) if len(q) else 0.0
+print("intrinsic yields used:", {k: round(v, 2) for k, v in sorted(intrinsic.items()) if v})
 rows = []
 for (proj, chain), g in m[m.tvlUsd >= 5e6].groupby(["project", "chain"]):
     for c, (sup, base) in fam.items():
         for _, a in g[g.S.isin(sup)].iterrows():
             for _, bb in g[g.S.isin(base) & g.b.notna()].iterrows():
                 kk = min(1 / (1 - 0.8 * min(max(a.ltv or 0, 0), 0.95)), 6)
-                rows.append((proj, chain, a.S, bb.S, a.s, bb.b, kk, a.s + (kk - 1) * (a.s - bb.b)))
+                sa = a.s + intrinsic.get(a.S, 0.0)
+                rows.append((proj, chain, a.S, bb.S, sa, bb.b, kk, sa + (kk - 1) * (sa - bb.b)))
 r = pd.DataFrame(rows, columns=["project", "chain", "supply", "borrow", "s", "b", "k", "roe"]).sort_values("roe", ascending=False)
 print(f"#219 correlated-pair loops: {len(r)} pairs with today's rates")
 print(r.head(8).round(2).to_string(index=False))

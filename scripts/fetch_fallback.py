@@ -16,7 +16,7 @@ OUT = Path(__file__).resolve().parent.parent / "data" / "public"
 UA = {"User-Agent": "long-convexity-research/1.0", "Accept": "application/json"}
 
 
-def get(url, body=None, tries=4):
+def get(url, body=None, tries=4):  # noqa: D103
     for k in range(tries):
         try:
             data = json.dumps(body).encode() if body is not None else None
@@ -413,17 +413,20 @@ def job_wrappers():
     """#214 robustness: daily prices of CRV/PENDLE wrappers and underlyings (DefiLlama coins, 90-day spans)."""
     OUT.mkdir(parents=True, exist_ok=True)
     rows = []
-    t = int(pd.Timestamp("2024-10-01", tz="UTC").timestamp())
     end = int(pd.Timestamp("2026-11-21", tz="UTC").timestamp())
-    keys = ",".join(WRAPPERS.values())
-    while t < end:
-        d = get(f"https://coins.llama.fi/chart/{keys}?start={t}&span=90&period=1d")
-        for k, v in ((d or {}).get("coins") or {}).items():
-            name = [n for n, a in WRAPPERS.items() if a.lower() == k.lower()]
-            for pnt in v.get("prices", []):
-                rows.append({"token": name[0] if name else k, "ts": pnt["timestamp"], "price": pnt["price"]})
-        t += 90 * 86400
-        time.sleep(1)
+    for name, addr in WRAPPERS.items():  # one coin per request: a single bad address makes a batched request fail (HTTP 400)
+        t = int(pd.Timestamp("2024-10-01", tz="UTC").timestamp())
+        n = 0
+        while t < end:
+            span = min(90, max(1, (end - t) // 86400))
+            d = get(f"https://coins.llama.fi/chart/{addr.lower() if addr.startswith(('ethereum:', 'arbitrum:')) else addr}?start={t}&span={span}&period=1d", tries=2)
+            for v in ((d or {}).get("coins") or {}).values():
+                for pnt in v.get("prices", []):
+                    rows.append({"token": name, "ts": pnt["timestamp"], "price": pnt["price"]})
+                    n += 1
+            t += 90 * 86400
+            time.sleep(0.5)
+        print(f"  {name}: {n} prices", flush=True)
     df = pd.DataFrame(rows).drop_duplicates(["token", "ts"])
     df.to_parquet(OUT / "wrappers_prices.parquet", index=False)
     print(f"wrapper prices: {df.groupby('token').size().to_dict() if len(df) else 'none'}", flush=True)
@@ -521,7 +524,18 @@ def job_staking_apr():
         print(f"  {c}: inflation {infl}, tax {tax}, bonded {'ok' if pool else 'none'}, supply {'ok' if sup else 'none'}", flush=True)
     pd.DataFrame(out).astype(str).to_parquet(OUT / "staking_apr.parquet", index=False)
 
-JOBS = {"staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+def job_sky_funding():
+    """#228 Stage 2: full HL funding history for SKY (and TRX for the record)."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    rows = []
+    for c in ("SKY", "TRX"):
+        r = _hl(c)
+        rows += [{"coin": c, "t": t, "rate": v} for t, v in r]
+        print(f"  {c}: {len(r)}", flush=True)
+    pd.DataFrame(rows).to_parquet(OUT / "batch5_hlfunding_full.parquet", index=False)
+
+JOBS = {"sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys

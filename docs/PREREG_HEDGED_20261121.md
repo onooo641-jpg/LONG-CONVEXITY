@@ -55,3 +55,10 @@ families (ETH, SOL, HYPE, BTC, AVAX, BNB) only.
   wrappers that month (conservative).
 - **#209 and #219 Stage 0.5:** ceiling ROE from today's `lendBorrow` snapshot (supply yield, borrow rate after rewards, LTV) with the same
   formulas; KILL if the best pair/pool < 8%. If one survives, the verdict is "survives ceiling; full test not possible (borrow history paywalled)".
+
+## Addendum (2026-11-21): #209 and #219 Stage 0.5 results; #219 mechanical fix
+- #209 (`docs/jx_runs/borrow_ceiling_20261121.txt`): ceiling (top-5 mean ROE from today's rates) **11.4%** → survives Stage 0.5 (Dolomite USDC/USD1
+  same-asset loops ~16–19% today). Borrow history is paywalled (HTTP 402) → **not testable beyond Stage 0.5**.
+- #219 first ceiling printed 0%: the rule's supply yield s used only the lending market's supply APY (≈ 0 for LST collateral) and left out the
+  token's own staking/savings yield. Mechanical fix (no threshold changed): s = intrinsic yield of the supplied token (its own DefiLlama
+  liquid-staking / savings pool, highest-TVL match by symbol) + market supply APY. Re-run as `scripts/borrow_ceiling_20261121.py`.

@@ -1,0 +1,24 @@
+#209 same-asset stable loops: 46 pools with today's borrow rate; paid-to-borrow (b < 0): 2
+     project    chain symbol     s    b  ltv   roe
+    dolomite Ethereum   USDC 10.11 5.99 0.85 18.86
+    dolomite Ethereum   USD1  8.95 5.43 0.85 16.43
+     current      Sui   USDC  6.87 4.66 0.70  9.67
+     aave-v3 Arbitrum   USDC  6.19 7.43 0.00  6.19
+ kamino-lend   Solana   USDC  6.03 7.13 0.00  6.03
+jupiter-lend   Solana   USDE  4.75 4.34 0.94  5.99
+     aave-v3    Monad   USDC  5.25 5.09 0.00  5.25
+     aave-v3    Monad  USDT0  5.23 4.90 0.00  5.23
+#209 ceiling (top-5 mean ROE, today): 11.44% -> survives; full test not possible (borrow history paywalled)
+
+intrinsic yields used: {'BNSOL': 4.52, 'BSOL': 4.69, 'CBETH': 3.77, 'ETHX': 2.27, 'EZETH': 1.15, 'HSOL': 4.87, 'INF': 5.51, 'JITOSOL': 5.14, 'JUPSOL': 5.15, 'KHYPE': 1.84, 'MSOL': 5.71, 'OSETH': 2.35, 'RETH': 1.86, 'RSETH': 2.59, 'SAVAX': 3.8, 'SDAI': 1.25, 'SFRXETH': 2.73, 'SFRXUSD': 5.3, 'STETH': 3.12, 'STHYPE': 5.24, 'SUSDE': 5.37, 'SUSDS': 3.8, 'WBETH': 2.25, 'WEETH': 2.36}
+#219 correlated-pair loops: 70 pairs with today's rates
+    project    chain  supply borrow    s    b    k  roe
+       save   Solana    MSOL    SOL 5.71 4.01 2.23 7.80
+kamino-lend   Solana    MSOL    SOL 5.71 4.76 2.08 6.74
+       save   Solana JITOSOL    SOL 5.14 4.01 2.23 6.53
+    aave-v3     Base   CBETH   WETH 3.77 1.95 2.50 6.49
+    aave-v3 Ethereum   CBETH   WETH 3.77 2.01 2.50 6.39
+kamino-lend   Solana  JUPSOL    SOL 5.15 4.76 2.08 5.57
+kamino-lend   Solana  JUPSOL    SOL 5.15 4.76 2.08 5.57
+kamino-lend   Solana JITOSOL    SOL 5.14 4.76 2.08 5.55
+#219 ceiling (top-5 mean ROE, today): 6.79% -> KILL
