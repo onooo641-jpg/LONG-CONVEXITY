@@ -2012,6 +2012,22 @@
 - AUTO: Right not to be the subject of automated decision-making
 - AUTO: Except where processing is necessary for entering into, or performance of, a contract, where this is permitted by applicable law, or based on your express consent, you have the right not to be the subject of any decision which is based solely on automated processing, including profiling, which produces legal effects concerning you or similarly affects you to a significant extent.
 
+## FundedNext — https://fundednext.com/privacy-policy
+- AUTO: Automated Processing, Profiling and Significant Decisions
+- AUTO: 5.2 Automatically Through Your Use of the Services
+- AUTO: We collect certain technical, device, usage, behavioural, monitoring and activity data automatically when you access or use our website, systems, platform environment, dashboards, portals, communications interfaces or other parts of the Services.
+- AUTO: We process Personal Data to send service-related communications, account notices, legal notices, operational alerts, security messages, compliance-related requests and other communications necessary for the administration or protection of the Services and our relationship with you.
+- AUTO: 6.12 Phone-Based, SMS and Automated Outreach
+- AUTO: Where permitted by applicable law, we may use the telephone number or other communication details that you provide to us to contact you regarding service matters, account administration, security, support, operational matters, programme updates, marketing communications or related outreach, including through manual, automated or AI-assisted means.
+- AUTO: timing patterns, behavioural indicators and usage signals;
+- AUTO: suspicious, irregular, prohibited or escalated activity signals; and
+- AUTO: For the avoidance of doubt, FundedNext may analyse account activity, behavioural patterns, technical signals, device associations and related data to detect direct or indirect attempts to misuse the Services, circumvent our rules, exploit the platform environment unfairly, obtain benefits improperly or interfere with the lawful and intended operation of the Services.
+- AUTO: Automated Processing, Profiling and Significant Decisions
+- AUTO: Such processing may include profiling based on technical, behavioural, transactional, usage, verification, payout, account-linkage or payment-related signals.
+- AUTO: Where applicable data protection law grants you rights in relation to decisions based solely on automated processing that produce legal or similarly significant effects, FundedNext will implement such safeguards as are required by law, which may include review procedures and, where applicable, the opportunity to request human intervention.
+- AUTO: Nothing in this Notice shall be interpreted as limiting FundedNext's right to implement reasonable and proportionate automated or semi-automated controls designed to protect the Services, prevent fraud, preserve evidence, safeguard operational integrity, manage payment or security risks, or enforce contractual restrictions and platform rules.
+- AUTO: the right to request review in relation to certain automated decisions, where applicable law so provides; and
+
 ## FundedNext — https://fundednext.com/terms-of-service
 - AUTO: Participation in one modality (for example, CFDs) does not automatically grant the right of access, eligibility, phase migration, benefits or Performance Rewards in another modality (for example, Futures), unless expressly indicated by the Provider.
 - AUTO: The User may not allow third parties to operate the Account on their behalf, nor use account management services, credential sharing, third-party identities, bots, scripts or automated systems not expressly authorised by the Provider.
@@ -2728,9 +2744,6 @@
 ## Maven Trading — https://maventrading.com/pricing
 - COUNTRY: Restricted Countries: Belarus, Cuba, Iran, Myanmar, North Korea, Russia, Saint Lucia, Syria, Venezuela, and the Crimea (including Sevastopol), Donetsk, Kherson, Luhansk and Zaporizhzhia regions of Ukraine.
 
-## Maven Trading — https://maventrading.com/privacy-policy
-- COUNTRY: Restricted Countries: Belarus, Cuba, Iran, Myanmar, North Korea, Russia, Saint Lucia, Syria, Venezuela, and the Crimea (including Sevastopol), Donetsk, Kherson, Luhansk and Zaporizhzhia regions of Ukraine.
-
 ## Maven Trading — https://maventrading.com/pt/aml-policy
 - AUTO: Abordagem baseada em risco: Uma equipe dedicada de gerenciamento de risco revisará manualmente os perfis dos clientes e realizará a devida diligência conforme o nível de risco.
 
@@ -3073,6 +3086,26 @@
 ## Seacrest Funded — https://seacrestfunded.com/terms.html
 - AUTO: Automated solutions, including tools, software applications, and online systems used to access the Service including advertising accounts can only be used with permission.
 - AUTO: Notices shall be in the form of an email, system message alerts and/or chat notifications.
+
+## Take Profit Trader — https://www.takeprofittrader.com/
+- AUTO: Withdraw your profits with our automated system.
+- AUTO: You can initiate withdrawals from your PRO account on the first day, and the profits will be paid out either through an automated process via Plaid to US bank accounts or via PayPal or Wise, typically within one business day.
+
+## Take Profit Trader — https://www.takeprofittrader.com/privacy-policy
+- AUTO: Online Activity, Cookies and Information Collected by Other Automatic Means
+- AUTO: We, together with the vendors we use, may collect information about your use of our Services by such automated means, including but not limited to cookies, pixels and other similar technologies.
+- AUTO: Cookies and similar technologies can help us automatically identify you when you return to our website.
+- AUTO: When you use the Services, the information we may collect by automated means, include, for example:
+- AUTO: Because there is not yet a consensus on how companies should respond to browser-based do-not-track (“DNT”) mechanisms, we do not respond to web browser-based DNT signals at this time.
+- AUTO: - To respond to inquiries, comments, an customer support requests, and to provide technical notices, updates, security alerts, and other necessary communications
+- AUTO: From time to time, we may contact you via email for the purpose of providing announcements, promotional offers, alerts, confirmations, surveys, and/or other general communication.
+- AUTO: Even if you opt out of receiving such communications, we will continue sending you non-marketing email communications, such as administrative or transaction alerts, or information about changes to our Privacy Policy, when necessary.
+
+## Take Profit Trader — https://www.takeprofittrader.com/terms
+- AUTO: You specifically agree not to access (or attempt to access) any of our Resources through any automated, unethical or unconventional means.
+- AUTO: We implement ongoing monitoring of transactions, with automated systems and predefined thresholds for suspicious activities triggering further investigation.
+- AUTO: We employ transaction monitoring with automated systems, setting thresholds for suspicious transactions and ensuring prompt investigation.
+- AUTO: VII) Traders are fully responsible for the use of any trade copiers or third-party automation tools connected to their TakeProfit Trader accounts.
 
 ## The Futures Desk — https://thefuturesdesk.com/
 - AUTO: ✅ Microscalping + Algos Allowed

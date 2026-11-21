@@ -10,66 +10,66 @@ Read the record
 Paid out by Bank transfer Crypto Card
 Providers
 Latest payouts Live
-5h ago $25,000 Classic Markets +$487
-6h ago $50,000 Classic Markets +$306
-13h ago $5,000 Perpetual +$127
-13h ago $10,000 Classic Markets +$170
-17h ago $5,000 Classic Markets +$111
-17h ago $5,000 Classic Markets +$104
-20h ago $2,000 Classic Markets +$553
-21h ago $25,000 Perpetual +$203
-23h ago $50,000 Perpetual +$900
-23h ago $100,000 Classic Markets +$800
-23h ago $100,000 Classic Markets +$1,859
-23h ago $100,000 Classic Markets +$1,986
-23h ago $5,000 Classic Markets +$100
-23h ago $50,000 Futures +$642
-23h ago $50,000 Futures +$632
-23h ago $50,000 Futures +$632
-23h ago $50,000 Futures +$632
-23h ago $50,000 Futures +$632
-23h ago $150,000 Futures +$1,596
-23h ago $10,000 Classic Markets +$294
-23h ago $50,000 Futures +$1,031
-23h ago $25,000 Classic Markets +$372
-23h ago $25,000 Classic Markets +$370
-23h ago $25,000 Classic Markets +$370
-23h ago $25,000 Classic Markets +$367
-23h ago $25,000 Classic Markets +$792
-23h ago $100,000 Futures +$1,600
-23h ago $100,000 Futures +$2,000
-23h ago $100,000 Classic Markets +$1,620
-23h ago $200,000 Classic Markets +$7,723
-5h ago $25,000 Classic Markets +$487
-6h ago $50,000 Classic Markets +$306
-13h ago $5,000 Perpetual +$127
-13h ago $10,000 Classic Markets +$170
-17h ago $5,000 Classic Markets +$111
-17h ago $5,000 Classic Markets +$104
-20h ago $2,000 Classic Markets +$553
-21h ago $25,000 Perpetual +$203
-23h ago $50,000 Perpetual +$900
-23h ago $100,000 Classic Markets +$800
-23h ago $100,000 Classic Markets +$1,859
-23h ago $100,000 Classic Markets +$1,986
-23h ago $5,000 Classic Markets +$100
-23h ago $50,000 Futures +$642
-23h ago $50,000 Futures +$632
-23h ago $50,000 Futures +$632
-23h ago $50,000 Futures +$632
-23h ago $50,000 Futures +$632
-23h ago $150,000 Futures +$1,596
-23h ago $10,000 Classic Markets +$294
-23h ago $50,000 Futures +$1,031
-23h ago $25,000 Classic Markets +$372
-23h ago $25,000 Classic Markets +$370
-23h ago $25,000 Classic Markets +$370
-23h ago $25,000 Classic Markets +$367
-23h ago $25,000 Classic Markets +$792
-23h ago $100,000 Futures +$1,600
-23h ago $100,000 Futures +$2,000
-23h ago $100,000 Classic Markets +$1,620
-23h ago $200,000 Classic Markets +$7,723
+7h ago $25,000 Classic Markets +$487
+8h ago $50,000 Classic Markets +$306
+14h ago $5,000 Perpetual +$127
+14h ago $10,000 Classic Markets +$170
+19h ago $5,000 Classic Markets +$111
+19h ago $5,000 Classic Markets +$104
+21h ago $2,000 Classic Markets +$553
+23h ago $25,000 Perpetual +$203
+1d ago $50,000 Perpetual +$900
+1d ago $100,000 Classic Markets +$800
+1d ago $100,000 Classic Markets +$1,859
+1d ago $100,000 Classic Markets +$1,986
+1d ago $5,000 Classic Markets +$100
+1d ago $50,000 Futures +$642
+1d ago $50,000 Futures +$632
+1d ago $50,000 Futures +$632
+1d ago $50,000 Futures +$632
+1d ago $50,000 Futures +$632
+1d ago $150,000 Futures +$1,596
+1d ago $10,000 Classic Markets +$294
+1d ago $50,000 Futures +$1,031
+1d ago $25,000 Classic Markets +$372
+1d ago $25,000 Classic Markets +$370
+1d ago $25,000 Classic Markets +$370
+1d ago $25,000 Classic Markets +$367
+1d ago $25,000 Classic Markets +$792
+1d ago $100,000 Futures +$1,600
+1d ago $100,000 Futures +$2,000
+1d ago $100,000 Classic Markets +$1,620
+1d ago $200,000 Classic Markets +$7,723
+7h ago $25,000 Classic Markets +$487
+8h ago $50,000 Classic Markets +$306
+14h ago $5,000 Perpetual +$127
+14h ago $10,000 Classic Markets +$170
+19h ago $5,000 Classic Markets +$111
+19h ago $5,000 Classic Markets +$104
+21h ago $2,000 Classic Markets +$553
+23h ago $25,000 Perpetual +$203
+1d ago $50,000 Perpetual +$900
+1d ago $100,000 Classic Markets +$800
+1d ago $100,000 Classic Markets +$1,859
+1d ago $100,000 Classic Markets +$1,986
+1d ago $5,000 Classic Markets +$100
+1d ago $50,000 Futures +$642
+1d ago $50,000 Futures +$632
+1d ago $50,000 Futures +$632
+1d ago $50,000 Futures +$632
+1d ago $50,000 Futures +$632
+1d ago $150,000 Futures +$1,596
+1d ago $10,000 Classic Markets +$294
+1d ago $50,000 Futures +$1,031
+1d ago $25,000 Classic Markets +$372
+1d ago $25,000 Classic Markets +$370
+1d ago $25,000 Classic Markets +$370
+1d ago $25,000 Classic Markets +$367
+1d ago $25,000 Classic Markets +$792
+1d ago $100,000 Futures +$1,600
+1d ago $100,000 Futures +$2,000
+1d ago $100,000 Classic Markets +$1,620
+1d ago $200,000 Classic Markets +$7,723
 Payout record
 Live
 Daily Monthly
@@ -78,14 +78,14 @@ Payouts in last month $1,275,840 823 payouts
 Average payout time 18 hours
 Average payout amount $3,219
 Date Account size Market Amount
-5 hours ago Latest $25,000 Classic Markets +$487 $25,000 account
-6 hours ago $50,000 Classic Markets +$306 $50,000 account
-13 hours ago $5,000 Perpetual +$127 $5,000 account
-13 hours ago $10,000 Classic Markets +$170 $10,000 account
-17 hours ago $5,000 Classic Markets +$111 $5,000 account
-17 hours ago $5,000 Classic Markets +$104 $5,000 account
-20 hours ago $2,000 Classic Markets +$553 $2,000 account
-21 hours ago $25,000 Perpetual +$203 $25,000 account
+7 hours ago Latest $25,000 Classic Markets +$487 $25,000 account
+8 hours ago $50,000 Classic Markets +$306 $50,000 account
+14 hours ago $5,000 Perpetual +$127 $5,000 account
+14 hours ago $10,000 Classic Markets +$170 $10,000 account
+19 hours ago $5,000 Classic Markets +$111 $5,000 account
+19 hours ago $5,000 Classic Markets +$104 $5,000 account
+21 hours ago $2,000 Classic Markets +$553 $2,000 account
+23 hours ago $25,000 Perpetual +$203 $25,000 account
 Showing 1 to 8 of 30 payouts 1 / 4
 E8 is a SaaS educational simulation built for skills training, data collection, and analytical modeling. Enrollment fees purchase access to the simulation & assessment; earnings are discretionary, not guaranteed, amounts are not trading profits and contingent on E8's acceptance & licensing of your performance data. There is no live-capital, no deposits or margin risk. Hypothetical/simulated performance has inherent limitations and does not represent actual trading; results may differ materially in live market conditions.
 SimFi™ record payout holder
