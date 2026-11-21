@@ -1,0 +1,17 @@
+fork test polygon_weth run 44864998186 2026-11-21T04:13:25Z
+== rpc https://poly.api.pocket.network
+Compiling 2 files with Solc 0.8.26
+Solc 0.8.26 finished in 306.13ms
+Compiler run successful!
+[2m2026-11-21T04:16:39.483031Z[0m [31mERROR[0m [2msharedbackend[0m[2m:[0m Failed to send/recv `storage` [3merr[0m[2m=[0mfailed to get storage for 0x80CdADE01Ff626B7CcE4772E3C2d56db14f384fA at 89044936138150336157425667099081233138744995917732550564231350762234106486730: server returned an error response: error code -32000: historical state e81265fff51e01b7206330b7bfe83116173af4ff03f61b8de72c3cea92f182ab is not available [3maddress[0m[2m=[0m0x80CdADE01Ff626B7CcE4772E3C2d56db14f384fA [3mindex[0m[2m=[0m89044936138150336157425667099081233138744995917732550564231350762234106486730
+[2m2026-11-21T04:16:43.707711Z[0m [31mERROR[0m [2msharedbackend[0m[2m:[0m Failed to send/recv `storage` [3merr[0m[2m=[0mfailed to get storage for 0x12bD7Ae45ACF2504BED144Eabc6FF5bBEbd91563 at 172: server returned an error response: error code -32000: historical state e81265fff51e01b7206330b7bfe83116173af4ff03f61b8de72c3cea92f182ab is not available [3maddress[0m[2m=[0m0x12bD7Ae45ACF2504BED144Eabc6FF5bBEbd91563 [3mindex[0m[2m=[0m172
+
+Ran 4 tests for test/LiqExecutor.t.sol:LiqExecutorForkTest
+[PASS] test_profitable_liquidation_repays_flash_loan() (gas: 3213734)
+[PASS] test_reverts_on_healthy_position() (gas: 1156978)
+[PASS] test_reverts_on_unusable_route() (gas: 526424)
+[PASS] test_reverts_when_below_min_profit() (gas: 4104574)
+Suite result: ok. 4 passed; 0 failed; 0 skipped; finished in 197.40s (233.41s CPU time)
+
+Ran 1 test suite in 197.40s (197.40s CPU time): 4 tests passed, 0 failed, 0 skipped (4 total tests)
+exit 0
