@@ -1,0 +1,38 @@
+fork test avalanche_savax run 44864998186 2026-11-21T04:13:35Z
+== rpc https://avalanche.gateway.tenderly.co
+Compiling 2 files with Solc 0.8.26
+Solc 0.8.26 finished in 242.17ms
+Compiler run successful!
+
+Ran 1 test for test/LiqExecutor.t.sol:LiqExecutorForkTest
+[FAIL: balance slot not found] setUp() (block: 100942520) (gas: 0)
+Suite result: FAILED. 0 passed; 1 failed; 0 skipped; finished in 18.11s (0.00ns CPU time)
+
+Ran 1 test suite in 18.11s (18.11s CPU time): 0 tests passed, 1 failed, 0 skipped (1 total tests)
+
+Failing tests:
+Encountered 1 failing test in test/LiqExecutor.t.sol:LiqExecutorForkTest
+[FAIL: balance slot not found] setUp() (block: 100942520) (gas: 0)
+
+Encountered a total of 1 failing tests, 0 tests succeeded
+
+Tip: Run `forge test --rerun` to retry only the 1 failed test
+Tip: Run `forge test --debug --match-test <TEST_NAME>` to inspect one failing test in the debugger
+== rpc https://avalanche-c-chain-rpc.publicnode.com
+No files changed, compilation skipped
+
+Ran 1 test for test/LiqExecutor.t.sol:LiqExecutorForkTest
+[FAIL: balance slot not found] setUp() (block: 100942539) (gas: 0)
+Suite result: FAILED. 0 passed; 1 failed; 0 skipped; finished in 24.00s (0.00ns CPU time)
+
+Ran 1 test suite in 24.00s (24.00s CPU time): 0 tests passed, 1 failed, 0 skipped (1 total tests)
+
+Failing tests:
+Encountered 1 failing test in test/LiqExecutor.t.sol:LiqExecutorForkTest
+[FAIL: balance slot not found] setUp() (block: 100942539) (gas: 0)
+
+Encountered a total of 1 failing tests, 0 tests succeeded
+
+Tip: Run `forge test --rerun` to retry only the 1 failed test
+Tip: Run `forge test --debug --match-test <TEST_NAME>` to inspect one failing test in the debugger
+exit 1
