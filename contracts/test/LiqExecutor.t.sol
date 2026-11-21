@@ -55,6 +55,27 @@ contract LiqExecutorForkTest {
     LiqExecutor ex;
     uint256 toCover;
 
+    function _hex(bytes memory b) internal pure returns (string memory) {
+        bytes16 H = "0123456789abcdef";
+        uint256 n = b.length > 68 ? 68 : b.length;
+        bytes memory o = new bytes(2 * n);
+        for (uint256 i = 0; i < n; i++) {
+            o[2 * i] = H[uint8(b[i]) >> 4];
+            o[2 * i + 1] = H[uint8(b[i]) & 0x0f];
+        }
+        return string(o);
+    }
+
+    function _u(uint256 v) internal pure returns (string memory) {
+        if (v == 0) return "0";
+        uint256 t = v;
+        uint256 d;
+        while (t != 0) { d++; t /= 10; }
+        bytes memory b = new bytes(d);
+        while (v != 0) { d--; b[d] = bytes1(uint8(48 + v % 10)); v /= 10; }
+        return string(b);
+    }
+
     function setUp() public {
         vm.createSelectFork(vm.envString("RPC_URL"));
         pool = IPoolFull(vm.envAddress("POOL"));
@@ -70,15 +91,15 @@ contract LiqExecutorForkTest {
         // collateral is the chain's wrapped native token (WETH9-style): fund the borrower with native token and wrap it
         vm.deal(borrower, amt);
         vm.startPrank(borrower);
-        IWrapped(coll).deposit{value: amt}();
+        try IWrapped(coll).deposit{value: amt}() {} catch (bytes memory r) { revert(string.concat("deposit: ", _hex(r))); }
         IERC20(coll).approve(address(pool), type(uint256).max);
-        pool.supply(coll, amt, borrower, 0);
+        try pool.supply(coll, amt, borrower, 0) {} catch (bytes memory r) { revert(string.concat("supply: ", _hex(r))); }
         (,, uint256 avail,,,) = pool.getUserAccountData(borrower);
         // avail is in 1e8 USD; borrow 99% of it in debt-asset units at the oracle price
         uint256 pd = IOracle(oracle).getAssetPrice(debt);
         uint256 dd = 10 ** uint256(IDec(debt).decimals());
         uint256 borrowAmt = (avail * 99 / 100) * dd / pd;
-        pool.borrow(debt, borrowAmt, 2, 0, borrower);
+        try pool.borrow(debt, borrowAmt, 2, 0, borrower) {} catch (bytes memory r) { revert(string.concat("borrow: ", _hex(r))); }
         vm.stopPrank();
         toCover = borrowAmt / 2;
         ex = new LiqExecutor(address(pool), router);
@@ -99,12 +120,15 @@ contract LiqExecutorForkTest {
         (,,,,, uint256 hfBefore) = pool.getUserAccountData(borrower);
         require(hfBefore < 1e18, "position not unhealthy");
         bool done;
+        string memory why;
         for (uint256 i = 0; i < fees.length && !done; i++) {
             try ex.liquidate(_params(uint24(fees[i]), 1)) {
                 done = true;
-            } catch {}
+            } catch (bytes memory r) {
+                why = string.concat(why, " fee", _u(fees[i]), ":", _hex(r));
+            }
         }
-        require(done, "no fee tier worked");
+        if (!done) revert(string.concat("no fee tier worked:", why));
         require(IERC20(debt).balanceOf(address(ex)) > 0, "no profit");
         require(IERC20(coll).balanceOf(address(ex)) <= 1e3 || coll == debt, "collateral left behind");
         (,,,,, uint256 hfAfter) = pool.getUserAccountData(borrower);
