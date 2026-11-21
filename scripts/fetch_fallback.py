@@ -316,7 +316,47 @@ def job_lendborrow_corr():
     print(f"corr charts: {df['pool'].nunique() if len(df) else 0} pools, {len(df)} rows", flush=True)
 
 
-JOBS = {"hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+def job_batch4():
+    """Batch 4 Stage-1 data (docs/PREREG_BATCH4_20261121.md): DefiLlama charts for the candidate pools, dYdX MegaVault PnL, JLP/Lighter probes."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    pools = pd.DataFrame((get("https://yields.llama.fi/pools") or {}).get("data", []))
+    pools["tvlUsd"] = pd.to_numeric(pools["tvlUsd"], errors="coerce")
+    sym = pools["symbol"].astype(str).str.upper()
+    gm = pools["project"].isin(["gmx-evm", "gmx-solana"]) & (pools["tvlUsd"] >= 20e6)
+    lp = (pools["stablecoin"] == True) & (pools["exposure"] == "multi") & (pools["ilRisk"] == "no") & (pools["tvlUsd"] >= 5e6)  # noqa: E712
+    tc = pools["project"].isin(["gains-network", "avantis", "ostium"]) & (pools["stablecoin"] == True)  # noqa: E712
+    sv = (pools["stablecoin"] == True) & (pools["exposure"] == "single") & (pools["tvlUsd"] >= 5e6) & sym.isin(  # noqa: E712
+        ["SCRVUSD", "SFRXUSD", "SUSDAI", "SAVUSD", "SUSDX", "STUSR", "SDOLA", "SYRUPUSDC", "SYRUPUSDT", "SUSDF", "SNUSD", "WSRUSD", "SRUSD", "YUSD", "SUSDU"])
+    jlp = pools["symbol"].astype(str).str.upper().eq("JLP") | pools["project"].str.contains("jupiter-perp", na=False)
+    u = pools[gm | lp | tc | sv | jlp].copy()
+    u["group"] = (gm.map({True: "221"}).fillna("") + lp.map({True: "224"}).fillna("") + tc.map({True: "225"}).fillna("")
+                  + sv.map({True: "227"}).fillna("") + jlp.map({True: "220"}).fillna(""))[u.index]
+    print(f"batch4 pools: {len(u)} {u['group'].value_counts().to_dict()}", flush=True)
+    u[["pool", "chain", "project", "symbol", "tvlUsd", "group"]].to_parquet(OUT / "batch4_pools.parquet", index=False)
+    rows = []
+    for p in u["pool"]:
+        for x in (get(f"https://yields.llama.fi/chart/{p}") or {}).get("data", []):
+            rows.append({"pool": p, "ts": x.get("timestamp"), "tvlUsd": x.get("tvlUsd"), "apyBase": x.get("apyBase"), "apyReward": x.get("apyReward")})
+        time.sleep(0.25)
+    ch = pd.DataFrame(rows)
+    if len(ch):
+        ch["ts"] = pd.to_datetime(ch["ts"], utc=True)
+        for c in ("tvlUsd", "apyBase", "apyReward"):
+            ch[c] = pd.to_numeric(ch[c], errors="coerce")
+    ch.to_parquet(OUT / "batch4_charts.parquet", index=False)
+    print(f"batch4 charts: {ch['pool'].nunique() if len(ch) else 0} pools", flush=True)
+    mv = get("https://indexer.dydx.trade/v4/vault/v1/megavault/historicalPnl?resolution=day")
+    pts = (mv or {}).get("megavaultPnl") or []
+    pd.DataFrame(pts).to_parquet(OUT / "batch4_megavault.parquet", index=False)
+    print(f"megavault points: {len(pts)}; keys {sorted(pts[0].keys()) if pts else None}", flush=True)
+    for name, url in (("lighter_pools", "https://mainnet.zklighter.elliot.ai/api/v1/publicPools?index=0&limit=5"),
+                      ("lighter_llp", "https://mainnet.zklighter.elliot.ai/api/v1/publicPoolsMetadata?index=0&limit=5"),
+                      ("jup_jlp", "https://perps-api.jup.ag/v1/jlp-info")):
+        d = get(url)
+        print(f"PROBE {name}: {'answered, keys ' + str(sorted(d.keys())[:15]) if isinstance(d, dict) else ('list' if isinstance(d, list) else 'no answer')}", flush=True)
+
+JOBS = {"batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys

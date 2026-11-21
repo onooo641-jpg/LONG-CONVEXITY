@@ -1,0 +1,7 @@
+snapshot pools 15090; HL funding to 2026-11-19
+
+#221 GMX GM hedged: 2 pools; best WBTC.B-USDC 6.1% + 0.5 x funding 9.2% -> ceiling 9.2% (top-5 avg 8.6%) => survives -> Stage 1 pilot
+#224 stable-pair LPs: 71 pools; best curve-dex/BOLD-USDC 35.2%; top-5 avg 14.1% => survives -> Stage 1 pilot (judged on the top-5 average, the Stage-2 holding)
+#225 trader-counterparty vaults in snapshot: 4 (gains-network/USDC, gains-network/USDC, gains-network/USDC, gains-network/USDM); best gains-network/USDC 11.5% (TVL $2,552,345) => survives -> Stage 1 pilot
+#227 other savings rates: 31 pools; best pendle-v2/SUSDX 15.7%; top-5 avg 12.1% => survives -> Stage 1 pilot
+#220 Jupiter JLP, #222 dYdX MegaVault, #223 Lighter LLP: not in the snapshot => go to a 90-day pilot fetch
