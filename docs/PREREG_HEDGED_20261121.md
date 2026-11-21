@@ -38,3 +38,20 @@ mPENDLE, Penpie/Equilibria/Stake DAO wrappers), LDO, MORPHO, AERO (veAERO), FXS 
 Same hedged rule, costs, stress, stages and bar as #212/#213, except the TVL eligibility threshold is $2M. Wrapper discounts to the
 underlying (e.g. cvxCRV below CRV) are not in the data: stated as a limit; the stress partly covers collapses. #213 keeps its original
 families (ETH, SOL, HYPE, BTC, AVAX, BNB) only.
+
+## Results so far (2026-11-21, `docs/jx_runs/hedged_20261121.txt`, re-run identical)
+- #212 hedged staking: Stage 1 −2.2%/yr → **FAIL**. #213 hedged farming: Stage 1 −3.6%/yr → **FAIL**. Cause: the monthly top-5 rule churns between
+  near-identical staking tokens (9.1% vs 9.4%), and each change costs ~0.6% of a slot. Post-hoc diagnostic (not a verdict,
+  `docs/jx_runs/hedged_posthoc_hold_20261121.txt`): even buy-and-hold of the biggest LSTs gives 10.3–12.6% then 4.8–6.6% by half → would fail too.
+- #214 hedged governance-token yields: Stage 1 15.5%; halves **8.32% / 15.52%** → passes the rule as registered. Holdings: yCRV, sdCRV, cvxCRV,
+  sdPENDLE, AAVE lending. **Not yet a pass of the five-part filter**: F4 (capped downside) is unverified because the hedge is on CRV/PENDLE while
+  the position holds wrappers that can trade at a widening discount; F5 capacity is small (pools of a few $M).
+- #219: borrow-side history (`chartLendBorrow`) now returns HTTP 402 (paid). Not purchased, not circumvented → no full test.
+
+## Addendum (before fetching): #214 wrapper-discount check, and #209/#219 Stage 0.5 from today's borrow rates
+- **#214 robustness (decides whether #214 counts as passed):** add to each wrapper position's daily return the daily change in
+  log(wrapper price / underlying price) from DefiLlama coin prices (yCRV/st-yCRV, cvxCRV, sdCRV vs CRV; sdPENDLE vs PENDLE). Same rule and bar
+  (≥ 8% both halves). If a wrapper has no price history, its position earns the pool yield minus the largest discount move seen in the other
+  wrappers that month (conservative).
+- **#209 and #219 Stage 0.5:** ceiling ROE from today's `lendBorrow` snapshot (supply yield, borrow rate after rewards, LTV) with the same
+  formulas; KILL if the best pair/pool < 8%. If one survives, the verdict is "survives ceiling; full test not possible (borrow history paywalled)".

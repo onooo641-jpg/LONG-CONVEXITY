@@ -1,0 +1,27 @@
+bar >= 8.0%/yr on capital both halves; Stage 1 kill < 4.0%
+
+#212 hedged staking: universe 24 pools; stress events 0
+    2026-08: frax-ether/SFRXETH 9.3%, benqi-staked-avax/SAVAX 9.2%, kelp/RSETH 9.1%, ether.fi-stake/WEETH 9.1%, binance-staked-eth/WBETH 9.1%
+    2026-09: jupiter-staked-sol/JUPSOL 10.8%, helius-staked-sol/HSOL 10.7%, marinade-liquid-staking/MSOL 10.7%, jito-liquid-staking/JITOSOL 10.3%, kinetiq-khype/KHYPE 10.3%
+    2026-10: frax-ether/SFRXETH 9.6%, jupiter-staked-sol/JUPSOL 9.4%, coinbase-wrapped-staked-eth/CBETH 9.4%, kelp/RSETH 9.4%, ether.fi-stake/WEETH 9.4%
+  Stage 1 (2026-08..10): -2.23%/yr -> KILL
+  VERDICT: FAIL (Stage 1)
+
+#213 hedged reward farming (ETH/SOL/HYPE/BTC/AVAX/BNB pools): universe 124 pools; stress events 4
+    2026-08: euler-v2/WETH 9.4%, frax-ether/SFRXETH 9.3%, benqi-staked-avax/SAVAX 9.2%, kelp/RSETH 9.1%, ether.fi-stake/WEETH 9.1%
+    2026-09: sanctum-infinity/INF 10.8%, kamino-lend/SOL 10.8%, jupiter-staked-sol/JUPSOL 10.8%, helius-staked-sol/HSOL 10.7%, marinade-liquid-staking/MSOL 10.7%
+    2026-10: accountable/CBBTC 11.2%, euler-v2/WETH 9.6%, sanctum-infinity/INF 9.6%, frax-ether/SFRXETH 9.6%, kamino-lend/SOL 9.4%
+  Stage 1 (2026-08..10): -3.63%/yr -> KILL
+  VERDICT: FAIL (Stage 1)
+
+#214 hedged governance-token yields: universe 6 pools; stress events 1
+    2026-08: yearn-finance/YCRV 19.9%, stake-dao-yield/SDCRV 17.4%, convex-finance/CVXCRV 16.0%, stake-dao-yield/SDPENDLE 15.0%, aave-v3/AAVE 7.1%
+    2026-09: yearn-finance/YCRV 21.1%, convex-finance/CVXCRV 19.1%, stake-dao-yield/SDCRV 18.9%, stake-dao-yield/SDPENDLE 15.4%, aave-v3/AAVE 10.3%
+    2026-10: yearn-finance/YCRV 20.1%, stake-dao-yield/SDCRV 19.0%, convex-finance/CVXCRV 17.4%, stake-dao-yield/SDPENDLE 14.8%, aave-v3/AAVE 8.3%
+  Stage 1 (2026-08..10): 15.45%/yr -> continue
+  halves 8.32% / 15.52% on capital; worst month -2.74%; months negative 1; $1,192/yr on $10K, $4,768/yr on $40K
+  VERDICT: PASS
+
+#219 correlated-pair loops: 77 pairs
+  no usable pairs
+

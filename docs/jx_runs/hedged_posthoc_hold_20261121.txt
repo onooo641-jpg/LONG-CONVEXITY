@@ -1,0 +1,7 @@
+POST-HOC (not a verdict): hedged buy-and-hold, return on capital = (pool yield + HL short funding)/1.333
+  lido/STETH: halves 11.75% / 6.57%; last 3 mo 8.18%
+  ether.fi-stake/WEETH: halves 11.95% / 6.57%; last 3 mo 8.14%
+  jito-liquid-staking/JITOSOL: halves 10.55% / 4.77%; last 3 mo 9.40%
+  marinade-liquid-staking/MSOL: halves 10.34% / 5.07%; last 3 mo 9.68%
+  kinetiq-khype/KHYPE: halves nan% / 8.44%; last 3 mo 9.54%
+  benqi-staked-avax/SAVAX: halves 12.55% / 6.32%; last 3 mo 7.50%

@@ -400,7 +400,46 @@ def job_batch5():
     u[["pool", "project", "symbol", "chain", "tvlUsd"]].to_parquet(OUT / "batch5_pools.parquet", index=False)
     print(f"batch5 pools {len(u)}, chart rows {len(ch)}", flush=True)
 
-JOBS = {"batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+WRAPPERS = {"YCRV": "ethereum:0xFCc5c47bE19d06BF83eB04298b026F81069ff65b", "ST-YCRV": "ethereum:0x27B5739e22ad9033bcBf192059122d163b60349D",
+            "CVXCRV": "ethereum:0x62B9c7356A2Dc64a1969e19C23e4f579F9810Aa7", "SDCRV": "ethereum:0xD1b5651E55D4CeeD36251c61c50C889B36F6abB5",
+            "CRV": "ethereum:0xD533a949740bb3306d119CC777fa900bA034cd52", "SDPENDLE": "ethereum:0x5Ea630e00D6eE438d3deA1556A110359ACdc10A9",
+            "PENDLE": "ethereum:0x808507121B80c02388fAd14726482e061B8da827"}
+
+
+def job_wrappers():
+    """#214 robustness: daily prices of CRV/PENDLE wrappers and underlyings (DefiLlama coins, 90-day spans)."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    rows = []
+    t = int(pd.Timestamp("2024-10-01", tz="UTC").timestamp())
+    end = int(pd.Timestamp("2026-11-21", tz="UTC").timestamp())
+    keys = ",".join(WRAPPERS.values())
+    while t < end:
+        d = get(f"https://coins.llama.fi/chart/{keys}?start={t}&span=90&period=1d")
+        for k, v in ((d or {}).get("coins") or {}).items():
+            name = [n for n, a in WRAPPERS.items() if a.lower() == k.lower()]
+            for pnt in v.get("prices", []):
+                rows.append({"token": name[0] if name else k, "ts": pnt["timestamp"], "price": pnt["price"]})
+        t += 90 * 86400
+        time.sleep(1)
+    df = pd.DataFrame(rows).drop_duplicates(["token", "ts"])
+    df.to_parquet(OUT / "wrappers_prices.parquet", index=False)
+    print(f"wrapper prices: {df.groupby('token').size().to_dict() if len(df) else 'none'}", flush=True)
+
+
+def job_lendborrow_now():
+    """#209/#219 Stage 0.5: today's full lendBorrow table joined with pool symbols/yields (free endpoints only)."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    lb = pd.DataFrame(get("https://yields.llama.fi/lendBorrow") or [])
+    pools = pd.DataFrame((get("https://yields.llama.fi/pools") or {}).get("data", []))
+    m = lb.merge(pools[["pool", "chain", "project", "symbol", "tvlUsd", "apyBase", "apyReward"]], on="pool", how="inner")
+    for c in m.columns:
+        if m[c].dtype == object and c not in ("pool", "chain", "project", "symbol"):
+            m[c] = m[c].astype(str)
+    m.to_parquet(OUT / "lendborrow_now.parquet", index=False)
+    print(f"lendborrow_now rows: {len(m)}", flush=True)
+
+JOBS = {"wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys
