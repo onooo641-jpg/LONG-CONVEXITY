@@ -185,7 +185,39 @@ def job_funding():
     print(f"funding rows: {len(df)}", flush=True)
 
 
-JOBS = {"stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding}
+STABLE = {"USDC", "USDT", "DAI", "USDE", "USDS", "GHO", "CRVUSD", "FRAX", "LUSD", "PYUSD", "RLUSD", "USD0", "USDT0", "USDC.E", "USDG",
+          "FDUSD", "TUSD", "USDP", "USR", "AUSD", "USDBC", "BOLD", "DOLA", "FRXUSD", "USD1", "USDTB", "SUSDE", "SUSDS", "USDX", "USDA"}
+
+
+def job_lendborrow():
+    """#209: borrowable stablecoin pools: current listing + daily supply and borrow histories."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    lb = pd.DataFrame(get("https://yields.llama.fi/lendBorrow") or [])
+    pools = pd.DataFrame((get("https://yields.llama.fi/pools") or {}).get("data", []))
+    m = lb.merge(pools[["pool", "chain", "project", "symbol", "tvlUsd"]], on="pool", how="inner")
+    m = m[(m["borrowable"] == True) & m["symbol"].str.upper().isin(STABLE) & (pd.to_numeric(m["tvlUsd"]) >= 5e6)]  # noqa: E712
+    print(f"borrowable stable pools with TVL >= $5M: {len(m)} (of {len(lb)} lendBorrow rows)", flush=True)
+    keep = [c for c in ("pool", "chain", "project", "symbol", "tvlUsd", "ltv", "apyBaseBorrow", "apyRewardBorrow") if c in m]
+    m[keep].to_parquet(OUT / "borrowloop_pools.parquet", index=False)
+    rows = []
+    for i, p in enumerate(m["pool"]):
+        b = {pd.Timestamp(x["timestamp"]).floor("D"): x for x in (get(f"https://yields.llama.fi/chartLendBorrow/{p}") or {}).get("data", [])}
+        sup = {pd.Timestamp(x["timestamp"]).floor("D"): x for x in (get(f"https://yields.llama.fi/chart/{p}") or {}).get("data", [])}
+        for d in sorted(set(b) & set(sup)):
+            rows.append({"pool": p, "day": d, "apyBase": sup[d].get("apyBase"), "apyReward": sup[d].get("apyReward"),
+                         "tvlUsd": sup[d].get("tvlUsd"), "apyBaseBorrow": b[d].get("apyBaseBorrow"),
+                         "apyRewardBorrow": b[d].get("apyRewardBorrow"), "totalBorrowUsd": b[d].get("totalBorrowUsd")})
+        if i % 25 == 0:
+            print(f"  {i}/{len(m)}", flush=True)
+        time.sleep(0.4)
+    df = pd.DataFrame(rows)
+    for c in df.columns[2:]:
+        df[c] = pd.to_numeric(df[c], errors="coerce")
+    df.to_parquet(OUT / "borrowloop_charts.parquet", index=False)
+    print(f"charts: {df['pool'].nunique() if len(df) else 0} pools, {len(df)} rows", flush=True)
+
+
+JOBS = {"stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys
