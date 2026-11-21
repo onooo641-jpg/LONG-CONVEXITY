@@ -1,0 +1,12 @@
+# PREREG: liquidation income is lumpy: monthly table (candidate #100, descriptive) — written 2026-11-21 before the table was computed
+
+Why (Jx, planning chat): in `docs/jx_runs/liquidations_20261120.txt` the five biggest months paid about 71% of all bonus (Feb 2025 $11.2M, Oct 2025 $6.6M, Feb 2026 $5.1M, Nov 2025 $4.0M), 11 of 24 months were under $200K, and no big crash has happened since Arbitrum/Base adopted Chainlink SVR (March 2026). Descriptive, no pass/fail. The registered liquidation test and the shadow test are not changed.
+Data: existing `data/public/liq_*` parquet, five main Aave v3 pools only (Arbitrum 0x794a…14ad, Base 0xa238…d1c5, Avalanche, Polygon, Optimism 0x794a…14ad), 24 months Nov 2024 – Oct 2026, same price/valid-event rules, bonus and gas definitions as `PREREG_LIQUIDATIONS_20261120.md` and its addendum 4 (winner = tx `from`; gas only; no flash-loan fees, slippage, bribes, failed attempts).
+Definitions (fixed now):
+- GROSS per month = sum of gross bonus of valid events on the five pools (the registered definition).
+- Per pool and half (H1 = months 0–11, H2 = 12–23): top-3 bots by gross bonus in that half (tx from) are excluded; ACTIVE bots = non-top-3 bots with >= 12 wins in that half (valid events with a receipt). Polygon uses its receipt half-sample, dollars scaled by (valid events / valid events with a receipt) per pool-half (addendum 3); Polygon bot counts are lower bounds.
+- Per month and per (pool, active bot): net = sum of (gross − gas) of that bot's wins in the month (scaled as above). Pooled over the five pools (a bot address on two pools counts twice).
+- Primary median / 75th percentile: over ALL active non-top-3 bots of that half, months with no win count as 0 (what a bot of that kind actually made that month). Secondary: over active bots with >= 1 win that month. Also reported: number of active bots in the half and number that won in the month.
+- Summaries: share of the 24 months whose primary median is < $200, $200–$1,000, > $1,000; share of 24-month total gross and of total outside-top-3 net from the top 3 and top 5 months; months under USD 200K gross; check of the quoted figures above.
+- Comparison: Topstep payout-month share (20% single market, 32% two markets) from `docs/NOTES_JX.md` ("Two markets smooth cash flow", source `docs/PREREG_20261109.md`); stated as a repo figure, not re-derived.
+Output: `scripts/liq_monthly_20261121.py` → `docs/jx_runs/liq_monthly_20261121.txt` (run twice, identical), FIGURES_LEDGER rows.
