@@ -8,7 +8,7 @@ interface Vm {
     function envString(string calldata) external view returns (string memory);
     function envAddress(string calldata) external view returns (address);
     function envUint(string calldata, string calldata) external view returns (uint256[] memory);
-    function deal(address, address, uint256) external;
+    function deal(address, uint256) external;
     function prank(address) external;
     function startPrank(address) external;
     function stopPrank() external;
@@ -37,7 +37,11 @@ interface IDec {
     function decimals() external view returns (uint8);
 }
 
-// Run: RPC_URL=... POOL=... COLL=... DEBT=... ROUTER=... FEES=500,3000 forge test --root contracts -vv
+interface IWrapped {
+    function deposit() external payable;
+}
+
+// Run: RPC_URL=... POOL=... COLL=<wrapped native> DEBT=<USDC> ROUTER=... FEES=500,3000 forge test --root contracts -vv
 contract LiqExecutorForkTest {
     Vm constant vm = Vm(0x7109709ECfa91a80626fF3989D68f67F5b1DD12D);
 
@@ -63,8 +67,10 @@ contract LiqExecutorForkTest {
         require(address(pool).code.length > 0, "pool has no code");
 
         uint256 amt = 10 * (10 ** uint256(IDec(coll).decimals()));
-        vm.deal(coll, borrower, amt);
+        // collateral is the chain's wrapped native token (WETH9-style): fund the borrower with native token and wrap it
+        vm.deal(borrower, amt);
         vm.startPrank(borrower);
+        IWrapped(coll).deposit{value: amt}();
         IERC20(coll).approve(address(pool), type(uint256).max);
         pool.supply(coll, amt, borrower, 0);
         (,, uint256 avail,,,) = pool.getUserAccountData(borrower);

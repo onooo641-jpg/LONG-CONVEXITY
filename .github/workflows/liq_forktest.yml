@@ -33,7 +33,7 @@ jobs:
             rpcs: "https://mainnet.optimism.io https://optimism-rpc.publicnode.com"
           - chain: polygon
             pool: "0x794a61358d6845594f94dc1db02a252b5b4814ad"
-            coll: "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619"
+            coll: "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270"
             debt: "0x3c499c542cef5e3811e1192ce70d8cc03d5c3359"
             router: "0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45"
             rpcs: "https://poly.api.pocket.network https://polygon.gateway.tenderly.co https://polygon-bor-rpc.publicnode.com"
@@ -71,7 +71,11 @@ jobs:
             if cast block-number --rpc-url "$u" >/dev/null 2>&1; then
               echo "== rpc $u" | tee -a "$log"
               export RPC_URL="$u"
-              if forge test --root contracts -vv --fork-retries 8 --fork-retry-backoff 3000 2>&1 | tee -a "$log"; then rc=0; break; fi
+              forge test --root contracts -vv --fork-retries 8 --fork-retry-backoff 3000 > "$log.tmp" 2>&1
+              frc=$?
+              cat "$log.tmp" | tee -a "$log"
+              rm -f "$log.tmp"
+              if [ "$frc" = "0" ]; then rc=0; break; fi
             else
               echo "== rpc $u unreachable" | tee -a "$log"
             fi
