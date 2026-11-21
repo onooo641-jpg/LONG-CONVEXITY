@@ -1,0 +1,64 @@
+fork test polygon run 44862918289 2026-11-21T03:48:11Z
+== rpc https://poly.api.pocket.network
+Compiling 2 files with Solc 0.8.26
+Solc 0.8.26 finished in 283.29ms
+Compiler run successful!
+
+Ran 4 tests for test/LiqExecutor.t.sol:LiqExecutorForkTest
+[FAIL: no fee tier worked] test_profitable_liquidation_repays_flash_loan() (block: 97684949) (gas: 1253603)
+[PASS] test_reverts_on_healthy_position() (gas: 1156814)
+[PASS] test_reverts_on_unusable_route() (gas: 317670)
+[PASS] test_reverts_when_below_min_profit() (gas: 1158657)
+Suite result: FAILED. 3 passed; 1 failed; 0 skipped; finished in 62.28s (17.08s CPU time)
+
+Ran 1 test suite in 62.28s (62.28s CPU time): 3 tests passed, 1 failed, 0 skipped (4 total tests)
+
+Failing tests:
+Encountered 1 failing test in test/LiqExecutor.t.sol:LiqExecutorForkTest
+[FAIL: no fee tier worked] test_profitable_liquidation_repays_flash_loan() (block: 97684949) (gas: 1253603)
+
+Encountered a total of 1 failing tests, 3 tests succeeded
+
+Tip: Run `forge test --rerun` to retry only the 1 failed test
+Tip: Run `forge test --debug --match-test <TEST_NAME>` to inspect one failing test in the debugger
+== rpc https://polygon.gateway.tenderly.co
+No files changed, compilation skipped
+
+Ran 4 tests for test/LiqExecutor.t.sol:LiqExecutorForkTest
+[FAIL: no fee tier worked] test_profitable_liquidation_repays_flash_loan() (block: 97684991) (gas: 1253603)
+[PASS] test_reverts_on_healthy_position() (gas: 1156814)
+[PASS] test_reverts_on_unusable_route() (gas: 317670)
+[PASS] test_reverts_when_below_min_profit() (gas: 1158657)
+Suite result: FAILED. 3 passed; 1 failed; 0 skipped; finished in 8.58s (1.87s CPU time)
+
+Ran 1 test suite in 8.58s (8.58s CPU time): 3 tests passed, 1 failed, 0 skipped (4 total tests)
+
+Failing tests:
+Encountered 1 failing test in test/LiqExecutor.t.sol:LiqExecutorForkTest
+[FAIL: no fee tier worked] test_profitable_liquidation_repays_flash_loan() (block: 97684991) (gas: 1253603)
+
+Encountered a total of 1 failing tests, 3 tests succeeded
+
+Tip: Run `forge test --rerun` to retry only the 1 failed test
+Tip: Run `forge test --debug --match-test <TEST_NAME>` to inspect one failing test in the debugger
+== rpc https://polygon-bor-rpc.publicnode.com
+No files changed, compilation skipped
+
+Ran 4 tests for test/LiqExecutor.t.sol:LiqExecutorForkTest
+[FAIL: no fee tier worked] test_profitable_liquidation_repays_flash_loan() (block: 97684997) (gas: 1253603)
+[PASS] test_reverts_on_healthy_position() (gas: 1156814)
+[PASS] test_reverts_on_unusable_route() (gas: 317670)
+[PASS] test_reverts_when_below_min_profit() (gas: 1158657)
+Suite result: FAILED. 3 passed; 1 failed; 0 skipped; finished in 14.87s (2.88s CPU time)
+
+Ran 1 test suite in 14.88s (14.87s CPU time): 3 tests passed, 1 failed, 0 skipped (4 total tests)
+
+Failing tests:
+Encountered 1 failing test in test/LiqExecutor.t.sol:LiqExecutorForkTest
+[FAIL: no fee tier worked] test_profitable_liquidation_repays_flash_loan() (block: 97684997) (gas: 1253603)
+
+Encountered a total of 1 failing tests, 3 tests succeeded
+
+Tip: Run `forge test --rerun` to retry only the 1 failed test
+Tip: Run `forge test --debug --match-test <TEST_NAME>` to inspect one failing test in the debugger
+exit 1
