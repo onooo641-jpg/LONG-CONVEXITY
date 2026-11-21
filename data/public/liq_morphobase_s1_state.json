@@ -29,5 +29,6 @@
  "next_block": 45402127,
  "logs_done": true,
  "receipts_done": false,
- "complete": false
+ "complete": false,
+ "receipts_missing": 569
 }
