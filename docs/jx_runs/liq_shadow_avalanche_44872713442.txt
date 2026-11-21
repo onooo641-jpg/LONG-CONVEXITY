@@ -1,0 +1,6 @@
+avalanche: v2 start, head 100949008
+avalanche: loaded 12994 cached positions
+avalanche: recalibrated 147 cached positions
+avalanche: positions 13006/13006 (0.0 min)
+avalanche: positions ready: 13006 users, 2735 with debt
+avalanche: reopened 32 recorded unhealthy episodes
