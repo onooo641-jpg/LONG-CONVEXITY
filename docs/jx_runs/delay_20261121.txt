@@ -1,0 +1,7 @@
+delay 0 min: 2016-26: 2185 trades, win 53.1%, raw $-2,553, Topstep net $44,359 (100% of d=0), dip $-3,520 | 2024-26: 574 trades, win 55.6%, raw $43,064, Topstep net $25,172 (100% of d=0), dip $-1,682 | -> VIABLE
+delay 1 min: 2016-26: 2087 trades, win 52.8%, raw $-15,569, Topstep net $43,516 (98% of d=0), dip $-3,342 | 2024-26: 537 trades, win 54.6%, raw $30,649, Topstep net $20,401 (81% of d=0), dip $-1,404 | -> VIABLE
+delay 2 min: 2016-26: 1957 trades, win 52.9%, raw $-12,374, Topstep net $43,986 (99% of d=0), dip $-3,342 | 2024-26: 503 trades, win 54.1%, raw $24,500, Topstep net $22,720 (90% of d=0), dip $-1,640 | -> VIABLE
+delay 3 min: 2016-26: 1834 trades, win 53.4%, raw $2,866, Topstep net $37,348 (84% of d=0), dip $-3,094 | 2024-26: 459 trades, win 54.0%, raw $22,277, Topstep net $21,028 (84% of d=0), dip $-1,344 | -> VIABLE
+delay 5 min: 2016-26: 1717 trades, win 53.6%, raw $7,879, Topstep net $27,080 (61% of d=0), dip $-2,769 | 2024-26: 434 trades, win 54.8%, raw $27,283, Topstep net $15,077 (60% of d=0), dip $-1,146 | -> not viable
+
+largest viable delay (pre-registered rule): 3

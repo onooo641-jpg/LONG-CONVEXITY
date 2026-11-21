@@ -315,4 +315,11 @@ day at every size.
 | F8 | FundedNext Rapid Pro 50K single NQ account, real net cap $1,000 / $1,250 | $14,482 / $21,416 | `uv run python scripts/fundednext_20261120.py` | 2016–26 | 2026-11-20 | payout share, cap, lock third-party |
 | F9 | C-mix vs C-mix + 5 FundedNext: net / cash on hand | $415,303 / $21,097 vs $461,630 / $39,424 | same | same | 2026-11-20 | same |
 
+## Manual entry delay (docs/PREREG_DELAY_20261121.md)
+
+| # | figure | value | command | window | computed | status |
+|---|---|---|---|---|---|---|
+| D1 | Topstep 50K net at 0/1/2/3/5-min entry delay, 2016–26 | $44,359 / $43,516 / $43,986 / $37,348 / $27,080 | `uv run python scripts/delay_20261121.py` | 2016–26 | 2026-11-21 | current |
+| D2 | same, 2024–26 | $25,172 / $20,401 / $22,720 / $21,028 / $15,077 | same | 2024–26 | 2026-11-21 | current |
+
 Raw output for every command above is in `docs/jx_runs/`.

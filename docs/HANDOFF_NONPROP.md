@@ -159,3 +159,5 @@ See CLAUDE.md "Staged tests". For a liquidation-style test this would have been:
 2–3 fast chains (minutes); kill if every venue has top-3 share > 85% AND outside-top-3 net < $100/month
 (far worse than the $500 bar, so noise can't kill a real opportunity); otherwise run the full 24 months.
 Stopping early on a FAIL is safe; stopping early on a PASS, or changing the full test after peeking, is not.
+- Delay test done (#65): manual entry within **3 minutes** keeps ≥80% of the recycling result, so semi-automated firms
+  stay in scope. The prop-firm sweep should now list every firm whose written rules allow alert-assisted manual entry.
