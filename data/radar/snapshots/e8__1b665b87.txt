@@ -12,11 +12,11 @@ Providers
 Latest payouts Live
 5h ago $25,000 Classic Markets +$487
 6h ago $50,000 Classic Markets +$306
-12h ago $5,000 Perpetual +$127
-12h ago $10,000 Classic Markets +$170
+13h ago $5,000 Perpetual +$127
+13h ago $10,000 Classic Markets +$170
 17h ago $5,000 Classic Markets +$111
 17h ago $5,000 Classic Markets +$104
-19h ago $2,000 Classic Markets +$553
+20h ago $2,000 Classic Markets +$553
 21h ago $25,000 Perpetual +$203
 23h ago $50,000 Perpetual +$900
 23h ago $100,000 Classic Markets +$800
@@ -42,11 +42,11 @@ Latest payouts Live
 23h ago $200,000 Classic Markets +$7,723
 5h ago $25,000 Classic Markets +$487
 6h ago $50,000 Classic Markets +$306
-12h ago $5,000 Perpetual +$127
-12h ago $10,000 Classic Markets +$170
+13h ago $5,000 Perpetual +$127
+13h ago $10,000 Classic Markets +$170
 17h ago $5,000 Classic Markets +$111
 17h ago $5,000 Classic Markets +$104
-19h ago $2,000 Classic Markets +$553
+20h ago $2,000 Classic Markets +$553
 21h ago $25,000 Perpetual +$203
 23h ago $50,000 Perpetual +$900
 23h ago $100,000 Classic Markets +$800
@@ -80,11 +80,11 @@ Average payout amount $3,219
 Date Account size Market Amount
 5 hours ago Latest $25,000 Classic Markets +$487 $25,000 account
 6 hours ago $50,000 Classic Markets +$306 $50,000 account
-12 hours ago $5,000 Perpetual +$127 $5,000 account
-12 hours ago $10,000 Classic Markets +$170 $10,000 account
+13 hours ago $5,000 Perpetual +$127 $5,000 account
+13 hours ago $10,000 Classic Markets +$170 $10,000 account
 17 hours ago $5,000 Classic Markets +$111 $5,000 account
 17 hours ago $5,000 Classic Markets +$104 $5,000 account
-19 hours ago $2,000 Classic Markets +$553 $2,000 account
+20 hours ago $2,000 Classic Markets +$553 $2,000 account
 21 hours ago $25,000 Perpetual +$203 $25,000 account
 Showing 1 to 8 of 30 payouts 1 / 4
 E8 is a SaaS educational simulation built for skills training, data collection, and analytical modeling. Enrollment fees purchase access to the simulation & assessment; earnings are discretionary, not guaranteed, amounts are not trading profits and contingent on E8's acceptance & licensing of your performance data. There is no live-capital, no deposits or margin risk. Hypothetical/simulated performance has inherent limitations and does not represent actual trading; results may differ materially in live market conditions.

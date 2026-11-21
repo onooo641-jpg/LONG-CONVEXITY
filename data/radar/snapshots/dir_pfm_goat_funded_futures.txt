@@ -1,0 +1,572 @@
+Goat Funded Futures Prop Firm | Prop Firm Match
+LIVE
+LIVE Futures Trading
+London & New York Session with Zach, Luna, Alex & Fabio
+Watch Now
+New Giveaway Available → Check Now
+Forex Futures Crypto Perps
+Compare firms with verified data
+Where prop firms do business
+Prop Firm Marketplace Find vetted providers. Reach prop firms
+Join prop trading's global event series
+Forex
+Futures
+Crypto
+Perps
+En En Es
+Log in Sign Up Sign Up
+En En Es
+Log in
+All Firms
+Challenges
+Payouts
+Trader Leaderboard
+Reviews
+Offers
+Best Sellers
+Favorite Firms
+Prop Firm Rules
+We're Hiring
+Tutorials
+Socials
+Tools & Resources
+High-Impact News Calendar
+Chrome Extension
+Guides & Templates
+Trading Tools
+Programs & Rewards
+Loyalty Program
+Affiliate Program
+Bug Bounty Program
+Review Bounty Program
+Trader Relief Program
+News & Insights
+Prop Firm Announcements
+Industry News
+Blog
+Help & Support
+Contact Us
+How It Works
+Help Center
+Report a Bug
+Access your PFM Business account.
+Log in
+Home Offers Challenges Best Sellers Trading Tools Reviews Favorite Firms Prop Firm Rules Payouts
+Goat Funded Futures Set as Favorite
+Leave a Review
+Buy
+Go
+Goat Funded Futures
+13433
+CEO
+Edoardo Dalla Torre
+Country
+Hong Kong
+Trustpilot
+n/a
+Date Created
+Nov 2024
+Years in Operation
+2
+Go
+Goat Funded Futures
+13433
+Hong Kong
+Set as Favorite
+CEO
+Edoardo Dalla Torre
+Trustpilot
+n/a
+Date Created
+Nov 2024
+Years in Operation
+2
+3.7
+29
+total reviews
+5
+14
+4
+5
+3
+3
+2
+1
+1
+6
+Go
+Goat Funded Futures
+3.7
+29
+G****
+55% OFF
+Go
+Goat Funded Futures
+3.7
+29
+55% off all accounts
+Code
+G****
+Go
+Goat Funded Futures
+3.7
+29
+55% OFF
+55% off all accounts
+Code
+G****
+Overview Challenges 17
+Reviews 29
+Offers 1
+Announcements 2
+Payouts New
+Discussions 0
+Goat Funded Futures - Futures Prop Firm Details
+Firm Overview Instruments and Assets Leverage Commissions Consistency Rules Firm Rules Challenges Payout Policy Restricted Countries
+AI Summary
+Goat Funded Futures Firm AI Summary
+Goat Funded Futures, established in November 2024 and based in Hong Kong, offers futures trading evaluation programs through both 1-step and instant funding pathways. The firm supports a wide range of trading platforms including TradingView, NinjaTrader, Tradovate, Quantower, Tickblaze, Tradesea, Deepmap, Volumetrica Trading, ATAS Orderflow Trading, and Deepcharts. With a review score of 3.7 out of 5 based on 29 reviews, Goat Funded Futures positions itself as a newer entrant in the futures...
+Show More
+Firm Overview
+Broker :
+CQG
+DXFeed
+Tickblaze
+Platform :
+ATAS Orderflow Trading
+Deepcharts
+Deepmap
+NinjaTrader
+Quantower
+Tickblaze
+Tradesea
+TradingView
+Tradovate
+Volumetrica Trading
+Payment Methods :
+Apple Pay
+Credit/Debit Card
+Crypto
+Google Pay
+PayPal
+Payout Methods :
+Crypto (USDC/USDT)
+Riseworks
+Instruments and Assets
+Type of Instruments :
+Futures
+Assets :
+Futures
+FX
+Metals
+Indices
+Energy
+Crypto
+Bonds
+Agricultural Products
+Leverage
+EOD
+50K: 5 minis / 50 micros
+100K: 9 minis / 90 micros
+150K: 12 minis / 120 micros
+1-Day Pass
+25K: 2 minis/ 20 micros
+50K: 4 minis/ 40 micros
+100K: 6 minis / 60 micros
+Instant
+25K: 2 minis / 20 micros
+50K: 4 minis / 40 micros
+100K: 6 minis / 60 micros
+150K: 8 minis / 80 micros
+Flex
+50K - 3 minis / 30 micros
+100K - 5 minis / 50 micros
+150K - 8 minis / 80 micros
+Goat Daily
+Maximum contracts in evaluation and funded
+25K - 2 minis / 20 micros
+50K - 4 minis / 40 micros
+100K - 6 minis / 60 micros
+150K - 8 minis / 80 micros
+Full limits from day one; no scaling.
+Learn More About Goat Funded Futures Leverage
+Commissions
+See Commissions for each asset: https://goatfundedfutures.com/#instrument-list
+Consistency Rules
+EOD Accounts
+A trader's profit on any single day cannot exceed 50% of the total profit on Evaluation and 30% on Funded
+Instant Classic
+A trader's profit on any single day cannot exceed 15% or 20% (chosen at checkout) of the total profit. (Instant Funded - No Evaluation)
+1-Day Pass
+A trader's profit on any single day cannot exceed 35% of the total profit on Funded. (None on evaluation)
+Flex
+Evaluation: 50% consistency Score
+Sim Funded: None
+Goat Daily
+Evaluation best day must be no more than 40% or 50% of total profit (chosen at checkout). No funded consistency rule or daily profit cap.
+Firm Rules
+Minimum Trading Days
+Instant Classic
+7 winning days of 0.2% profit or more each day
+Flex
+Evaluation:
+2 days | Sim Funded: 5 winning days at $250 for 50k account / $400 for 100k account / $450 for 150k account
+EOD
+Evaluation:
+2 days | Sim Funded: 7 winning days of 0.2% profit or more each day One Day PassEvaluation: 1 day | Sim Funded: 5 winning days of 0.2% profit or more each day
+News restrictions
+Challenge:
+No restrictions, except Goat Daily, which has the same 2-minute high-impact-news buffer as funded accounts.
+Funded:
+2-minute buffer around high-impact news. No opening, closing, or triggering pending orders within 2 minutes before or after a scheduled release. If a position was opened before the 2-minute pre-news window began, you are permitted to hold it through the event. If you execute an order within the restricted timeframe, any profits generated will be deducted upon payout request.
+Expert Advisors
+Personal automated strategies and EAs are allowed on EOD, One Day Pass, Flex and Instant Classic, as long as they are consistent with your trading style and do not exploit system vulnerabilities, latency, or data feed anomalies. Strategies designed to manipulate the simulated environment rather than reflect genuine market trading are prohibited.
+VPS
+VPS, cloud-hosted machines and remote servers are prohibited in evaluation and funded accounts.
+Copy Trading
+Copy trading is allowed between accounts owned by the same person, including across different firms or brokers, subject to each program’s limits. Goat Daily permits copying only between your own Goat Daily accounts. Copy trading between different individuals is strictly prohibited.
+Trading hours
+Trading follows CME futures hours:
+Sunday 5:00 PM CT – Friday 4:00 PM CT, with a daily maintenance break from 4:00–5:00 PM CT. All positions must be closed before each session ends. Hours may vary by product — check CME's website for specifics.
+Inactivity Rule:
+Place at least one trade every 7 days. If no trades are placed for 7 consecutive days the account is breached and closed, and the fee is not refunded. There is no time limit on passing the evaluation, but the account does need to stay active.
+Prohibited Strategies
+Breaching any rule below may result in a warning, profit adjustment, account review, or termination.
+1. Market manipulation and deception:
+No fraudulent conduct, price manipulation, spoofing, or anything designed to distort the market or create false trading conditions.
+2. Microscalping:
+Trades closed within 2 minutes of opening. Not a breach in itself, but any profit from them is deducted from your account. (Not applicable to Goat Daily or Flex Accounts For Flex Accounts, At each payout request, both of the following must be true for that payout cycle:
+at least 50% of your closed trades were held longer than 1 minute, and
+at least 50% of your net profit came from trades held longer than 1 minute.
+If either is not met, the payout request is declined and all profit from trades held under 1 minute in that cycle is deducted from the account. This is not an account breach, and your account stays open.
+3. Exploiting pricing or feed errors:
+No profiting from mispriced quotes, lagging updates, feed latency, or data discrepancies. Using external or slower price sources (broker accounts, third-party feeds) for an edge is also prohibited.
+4. High-frequency and algorithmic exploitation:
+No high-frequency systems, AI tools, tick scalping, or bulk order-entry that exploit execution speed or system inefficiencies rather than trade real conditions.
+5. Arbitrage:
+No arbitrage of any kind — latency, hedge, reverse, or rollover/scalping — as it exploits structural inefficiencies rather than genuine speculation.
+6. Coordinated trading:
+No coordinating trades to influence outcomes, whether across your own accounts or with other clients. This includes opposing or hedged positions across accounts, group trading, trade signaling, or sharing environments, devices, VPS instances, or IPs to enable linked trading.
+7. Copying other users' trades:
+Copying your own trades is allowed subject to program limits. Goat Daily permits copying only between your own Goat Daily accounts. Copying other users' trades or signals — manually, via copy/mirror services, or EAs — is not. Someone else may be copying the same source, creating linked positions across unrelated accounts; where detected, all accounts and users involved may be suspended.
+8. Gap trading:
+No trading to capture price gaps from market closures and re-openings.
+9. Artificial trades to meet requirements:
+No token, undersized, or manipulated trades used to fake active trading days or bypass risk controls.
+10. Volume inflation:
+No abnormally high trade counts or oversized positions on negligible price movement to inflate profit.
+11. Non-viable strategies:
+No strategy that could not realistically be executed on a live exchange.
+12. Responsible risk and position sizing:
+No staking a disproportionate share of equity on a single position, one-sided all-in bets, or account rolling. Keep sizing consistent with your strategy and balance — erratic, unexplained jumps (e.g., one contract then ten) may be treated as gambling rather than disciplined trading.
+Goat Daily:
+Evaluation:
+6% target; best day no more than 40% of total profit, which requires at least three trading days in practice. Funded: no winning-day requirement, no consistency percentage and no daily profit cap.
+Manual trading only; no bots, EAs, automated, grid, martingale or high-frequency strategies. Copying is limited to your own Goat Daily accounts.
+Daily loss limits in evaluation and funded
+25K: $500
+50K: $1,000
+100K: $1,500
+150K: $2,250
+Hits 1–2 close positions and pause trading until the next session; the third hit within a rolling 30-day period closes the account.
+At payout, at least 50% of net profit since the last payout must come from trades held longer than 60 seconds. Failure declines the request and deducts profit from trades held 60 seconds or less, without breaching the account. There is no separate trade-count test; tick scalping is prohibited.
+No overnight or weekend holding; automatic close at 15:55 CT. Place at least one trade every 7 calendar days in either phase; seven consecutive days without trades breaches and closes the account.
+Challenges
+Goat Funded Futures - Goat Daily - 1-Step 150K $206.10
+$458.00
+Goat Funded Futures - Goat Daily - 1-Step 100K $143.10
+$318.00
+Goat Funded Futures - Goat Daily - 1-Step 50K $89.10
+$198.00
+Goat Funded Futures - Goat Daily - 1-Step 25K $66.60
+$148.00
+Goat Funded Futures - Flex - 1-Step 150K $618.00
+Goat Funded Futures - Flex - 1-Step 100K $338.00
+Goat Funded Futures - Flex - 1-Step 50K $218.00
+Goat Funded Futures - 1-Day Pass - 1-Step 100K $161.10
+$358.00
+Goat Funded Futures - 1-Day Pass - 1-Step 50K $98.10
+$218.00
+Goat Funded Futures - 1-Day Pass - 1-Step 25K $71.10
+$158.00
+Payout Policy
+Instant Classic profit share:
+100% on the first $10,000, then 90/10
+Payout Frequency:
+7 winning days (a winning day = net P&L of at least 0.2% of your account starting balance), with 10 calendar day minimum before first payout
+First Payout Profit Goals
+7% of the initial account Balance
+Withdrawal Caps:
+25K:
+$1000
+50K:
+$2000
+100K:
+$3000
+150K:
+$4000
+A new payout can only be requested after surpassing the equity high from before the previous withdrawal.
+Instant Lite
+Profit Target for the first payout
+25K:
+$1,500
+50K:
+$3,000
+100K:
+$6,500
+Profit Target for all future payouts
+25K:
+$1,250
+50K:
+$2,400
+100K:
+$3,500
+Minimum payout is $500
+Maximum Daily Profit Allowed
+25K:
+$1250
+50K:
+$2500
+100K:
+$5000
+Maximum Payout Request
+25K:
+$1000
+50K:
+$2000
+100K:
+$3000
+One Day Pass Plan
+profit share:
+90/10
+Payout Frequency:
+5 winning days (a winning day = net P&L of at least 0.2% of your account starting balance).
+50% of your available profit is paid out per payout request. The remaining 50% stays in your account as a buffer to support future payouts.
+Payout Caps
+$25K — 1st Payout: $800 | 2nd Payout: $1,000 | 3rd Payout: $1,200 | 4th+ Payout: $1,500
+$50K — 1st Payout: $1,500 | 2nd Payout: $1,750 | 3rd Payout: $2,000 | 4th+ Payout: $2,500
+$100K — 1st Payout: $2,500 | 2nd Payout: $3,000 | 3rd Payout: $3,500 | 4th+ Payout: $4,500
+EOD challenge
+profit share:
+80% | 90% with add on
+Payout Frequency:
+7 winning days (a winning day = net P&L of at least 0.2% of your account starting balance).
+No fixed profit buffer. Maximum request:
+50% of available profit, subject to the $500 minimum and applicable payout cap.
+Payout Caps
+$50K — 1st Payout: $1,500 | 2nd Payout: $2,000 | 3rd Payout: $2,500 | 4th+ Payout: $2,750
+$100K — 1st Payout: $2,000 | 2nd Payout: $2,750 | 3rd Payout: $3,250 | 4th+ Payout: $3,750
+$150K — 1st Payout: $2,500 | 2nd Payout: $3,250 | 3rd Payout: $3,750 | 4th+ Payout: $4,250
+Flex challenge
+profit share:
+80% | 90% with add on
+Payout Frequency:
+5 winning days ​Note: The minimum net profit required for a winning day depends on the account size:
+Flex 50K:
+0.5% — $250
+Flex 100K:
+0.4% — $400
+Flex 150K:
+0.3% — $450
+Maximum payout request
+50k - 50% of profit Up to $2,000
+100k - 50% of profit Up to $2,500
+150k - 50% of profit Up to $3,000
+Goat Daily
+Trader split:
+90% from the first payout, without an add-on. First request: 24 hours after the first funded trade is placed. Thereafter: one request every 24 hours, with no winning-day requirement or monthly window. Complete KYC before the first payout.
+Minimum request:
+$500.
+Profit buffer that stays in the account:
+25K:
+$1,100
+50K:
+$2,100
+100K:
+$3,100
+150K:
+$4,600
+Maximum per payout request
+25K:
+$650
+50K:
+$1,000
+100K:
+$1,500
+150K:
+$2,500
+These are request amounts before the split and processing fee.
+At least 50% of each request must be profit made since the last approved payout. The 60-second net-profit holding test also applies.
+GFF processing:
+within 48 hours, followed by delivery through Rise or crypto. A 3% processing fee is deducted after the 90/10 split. A $1,000 approved request yields $873 after these deductions.
+Drawdown:
+EOD trailing during evaluation; intraday equity trailing when funded, including unrealized P&L. The floor locks at starting balance + $100. Payouts reduce the balance without moving the floor.
+Minimum payout request on all programs:
+$500
+Drawdown lock is a floor level, not the current account balance. On Goat Daily and Instant Lite, the floor stops trailing at starting balance + $100. On EOD, One Day Pass, Flex and Instant Classic, the floor stops trailing at starting balance. A payout does not move or lock the floor.
+Payout Submission window
+EOD, One Day Pass, Flex and Instant Classic:
+submit during the 5th–8th or 20th–23rd of each month.
+Goat Daily:
+one request every 24 hours, subject to its eligibility rules.
+Giveaway Accounts
+Giveaway accounts follow the same rules as purchased accounts but are subject to a 2% of starting balance payout cap per payout cycle.
+Minimum payout request on all programs:
+$500
+Payout processing fee on all programs:
+3%, deducted from every payout
+Recurring payouts
+For EOD, One Day Pass, Flex and Instant Classic accounts created after August 7, 2026: from the second payout, at least 50% of each request must be new profit since the previous approved payout.
+Crypto payouts
+USDT on Tron (TRC20) or USDC on Ethereum (ERC20). Maximum $1,800 per payout cycle across all accounts combined; amounts above this can go through Rise. The same 3% processing fee applies.
+Restricted Countries
+Afghanistan
+Albania
+Algeria
+Antarctica
+Bangladesh
+Belarus
+Bosnia and Herzegovina
+Bulgaria
+Burkina Faso
+Central African Republic
+Chad
+Chile
+Congo
+Cote d'Ivoire (Ivory Coast)
+Cuba
+Djibouti
+East Timor
+Ethiopia
+Guinea-Bissau
+Hong Kong
+Indonesia
+Iran
+Iraq
+Isil
+Israel
+Japan
+Jordan
+Lao PDR
+Lebanon
+Lesotho
+Libya
+Malawi
+Malaysia
+Mali
+Morocco
+Myanmar (Burma)
+North Korea
+Pakistan
+Palestinian Territory
+Panama
+Philippines
+Romania
+Russia
+Rwanda
+Senegal
+Sierra Leone
+Singapore
+Slovenia
+Somalia
+South Korea
+South Sudan
+Sri Lanka
+Sudan
+Syria
+Tajikistan
+Thailand
+Togo
+Turkey
+Uganda
+Ukraine
+Venezuela
+Vietnam
+Yemen
+Zimbabwe
+Announcements
+See all
+Exclusive Discount for PropFirmMatch Users!
+Goat Funded Futures has teamed up with PropFirmMatch to bring you an exclusive 55% OFF!
+Use code MATCH55 at checkout.
+Offer expires on 26th September 2026.
+Get it while it lasts!
+Sep 21, 2026
+Get Funded with MATCH55
+Goat Daily Payout Plan is now here!
+The Daily Payouts plan is officially live on Goat Funded Futures. Request payouts every 24 hours. No recurring monthly subscriptions and $0 activation fee
+90/10 profit split from your very first payout
+No consistency rule and no scaling plan once funded (full contract limits from day one)
+1-phase evaluation with a 6% profit target and no time limit
+Get started today and trade futures with true 24-hour payout access.
+Sep 9, 2026
+Get Funded
+Additional Information
+Discover everything you need to know about Goat Funded Futures. This page covers all the essentials in one place, including broker details, available trading platforms, payout structures, payment methods, supported instruments, leverage, commissions, and key firm rules.
+Whether you are evaluating Goat Funded Futures for the first time or comparing it with other top prop firms, you will find accurate, up-to-date information to help you decide if it is the right fit for your trading goals.
+Stay Connected
+Subscribe For The Latest In Prop Trading News And Deals
+Subscribe
+Find & Compare
+All Prop Firms
+Compare Challenges
+Prop Firms by Category
+Prop Firm Rules
+Demo Accounts
+Unlisted Firms
+Reviews & Rankings
+Best-Selling Firms
+Favorite Firms
+Verified Reviews
+Prop Firm Match Awards
+Payouts
+Prop Firm Payouts
+Top Trader Payouts
+Offers
+All Offers
+Exclusive Offers
+Extra Account Offers
+News & Insights
+Prop Firm Announcements
+Industry News
+Blog
+Tools & Resources
+Trading Tools
+High-Impact News Calendar
+Trader Relief Program
+Guides & Templates
+Growth Calculators
+New
+Programs & Rewards
+Loyalty Program
+Affiliate Program
+Bug Bounty Program
+Review Bounty Program
+About PFM
+Learn more about Transparency Statement About Us
+Transparency & Methodology
+Careers
+Press
+Sitemap
+Prop Firm Business
+Help & Support
+Contact Us
+How It Works
+Help Center
+200 Loyalty Points Welcome Bonus .
+Sign up free to claim points, unlock rewards, save favorite firms, and start earning more through reviews and platform activity.
+Create Free Account
+Prop Firms & Brokers
+List Your Prop Firm
+Find Vetted Providers
+Service Providers
+Join as a Service Provider
+Support
+Contact Business
+Have Questions?
+Contact Us for More.
+Contact Us
+Privacy Policy Terms & Conditions Marketplace Terms Cookie Preferences
+©  2026   Prop Firm Match. All rights reserved.
+©  2026   Prop Firm Match. All rights reserved.
+Privacy Policy Terms & Conditions Marketplace Terms Cookie Preferences

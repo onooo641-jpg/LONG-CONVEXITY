@@ -1,0 +1,113 @@
+Purdia Capital Rules (2026): Consistency, News and Overnight
+Skip to content SAVE ON PROP FIRMS Trade More. Spend Less. Compare Promos Black Friday Prop Firms Prop Firm Finder Blog Black Friday
+Prop Firms / Purdia Capital / Rules Purdia Capital rules
+16 rules apply at Purdia Capital whichever account you buy. 2 are conditional, and those are the ones that end accounts, so read the detail. Below them: the platforms, data feeds, hours and the countries it refuses.
+Overview
+Accounts
+Rules
+Payouts
+History Soon
+Evaluation consistency
+None
+Funded consistency
+None
+News trading
+Allowed
+Yes. Purdia Capital places no news trading restrictions on its sim accounts, so you can trade through major economic releases. Volatility and slippage around news are your own risk.
+Swing trading
+Not allowed
+Copy trading
+Allowed
+Yes. Purdia Capital permits trade copiers, including third-party software, for copying trades between your personal accounts. You must actively monitor and manage the accounts; set-and-forget automation is not permitted.
+Algorithmic trading
+Conditional
+Semi-automated tools are permitted while the trader keeps active oversight and monitors every trade and position. Fully automated, unattended and set-and-forget systems are strictly prohibited.
+Scalping
+Allowed
+Yes. Purdia Capital allows scalping, including in micro contracts, with no minimum holding time for trades. Your account’s drawdown and position limits still apply.
+Dollar cost averaging
+Allowed
+Yes. Purdia Capital allows dollar-cost averaging into positions as part of your strategy. Your account’s drawdown and position limits still apply to the full position.
+Hedging
+Not allowed
+High frequency trading
+Allowed
+Scalping and micro scalping are permitted with no minimum hold-time requirement, though latency abuse can trigger review.
+VPN use
+Conditional
+Prohibited only where a VPN or proxy is used to circumvent household, address, IP, device or country limits. Purdia otherwise treats VPN use as ordinary and advises disabling one only to fix latency.
+VPS use
+Allowed
+KYC
+Applies
+Yes. Purdia requires identity verification and KYC before you get a Live Funded Account through its broker, Tradovate. Expect to provide a government-issued photo ID, proof of residence and tax identification information. The broker makes the final approval decision, and you trade a Temp SFA while onboarding is completed.
+Evaluation time limit
+None
+Inactivity rule
+Applies
+No genuine trading activity for 30 days marks the account inactive. The trader then has 30 days to request reactivation before it is permanently disabled.
+Clear path to live
+Published
+Every product runs Evaluation or Instant Funding, then Sim Funded, then Temp Sim Funded, then a genuine live brokerage account.
+Green allowed, amber conditional or applies, coral not allowed Quoted from the firm's own rules
+Purdia Capital platforms, data and hours
+Trading platforms
+NinjaTrader
+Tradovate
+TradingView
+Brokers and data feeds
+Tradovate
+Tradable assets
+Futures
+Session opens
+18:00 ET
+Flat by
+16:45 ET
+Purdia Capital country availability
+Purdia Capital restricts 89 countries and accepts traders everywhere else , including United States . Restriction lists change without notice, so confirm with the firm before you buy.
+AF Afghanistan AL Albania DZ Algeria AO Angola AQ Antarctica BB Barbados BY Belarus BZ Belize BJ Benin BA Bosnia and Herzegovina BW Botswana BG Bulgaria BF Burkina Faso BI Burundi CM Cameroon CV Cape Verde TD Chad CX Christmas Island CC Cocos (Keeling) Islands KM Comoros CG Congo CK Cook Islands CI Cote d'Ivoire HR Croatia CU Cuba DJ Djibouti DM Dominica GQ Equatorial Guinea ER Eritrea ET Ethiopia FK Falkland Islands FJ Fiji GA Gabon GM Gambia GH Ghana GI Gibraltar GP Guadeloupe GN Guinea GW Guinea-Bissau GY Guyana HT Haiti HM Heard & McDonald Islands IR Iran IQ Iraq JM Jamaica JO Jordan KZ Kazakhstan KE Kenya KI Kiribati XK Kosovo LA Laos LB Lebanon LS Lesotho LR Liberia LY Libya MW Malawi ML Mali MT Malta MQ Martinique MR Mauritania MU Mauritius MM Myanmar NA Namibia NR Nauru NP Nepal NI Nicaragua NE Niger NG Nigeria KP North Korea MK North Macedonia PK Pakistan PW Palau PG Papua New Guinea RU Russia WS Samoa SN Senegal SL Sierra Leone SO Somalia SS South Sudan SD Sudan SY Syria TZ Tanzania TL Timor-Leste TT Trinidad and Tobago UG Uganda VU Vanuatu VE Venezuela YE Yemen ZW Zimbabwe
+Canada: only Ontario residents are accepted. Certain regions of Ukraine are also restricted.
+More on Purdia Capital
+Purdia Capital review
+Purdia Capital accounts and prices
+Purdia Capital payout rules
+Purdia Capital alternatives
+Purdia Capital discount code
+Newsletter
+Stay Ahead of Every Deal
+Get notified when promo codes drop, firms change rules, or new accounts launch.
+Sign Up
+Community
+Discord Community
+... online ... members
+Join Now
+SAVE ON PROP FIRMS Trade More. Spend Less. The most complete futures prop firm comparison tool. Real pricing, real rules, real discounts.
+Copy Discount Code SOPF
+Explore
+Compare
+Promos
+Prop Firms
+Blog
+Prop Firms
+Apex Trader Funding
+BluSky Trading Company
+Bulenox
+DayTraders
+E8 Markets
+FTMO Futures
+Show More
+Resources
+Glossary
+Contact Us
+Legal
+Disclaimer
+Terms of Service
+Privacy Policy
+Affiliate Disclosure
+Sitemap
+Your Privacy Choices
+Risk Disclosure
+Futures trading involves substantial risk of loss and is not suitable for all investors. Consider carefully whether trading is appropriate for you in light of your experience, objectives, and financial resources. Evaluation and funded accounts offered by proprietary trading firms are simulated trading environments, and simulated or hypothetical performance results have inherent limitations that do not reflect actual trading. Past performance is not indicative of future results. Save On Prop Firms is not a broker-dealer, futures commission merchant, or financial advisor, and nothing on this site is investment, legal, or tax advice.
+Affiliate Disclosure
+Save On Prop Firms has affiliate relationships with some of the firms featured on this site and earns commissions when you purchase through our links or use code SOPF, at no additional cost to you. These relationships never determine our rankings, comparisons, or reviews, and opinions are our own. All pricing and rules are verified at the time of publication and are subject to change; always confirm final terms at the firm's checkout.
+© 2026 Save On Prop Firms. All rights reserved.

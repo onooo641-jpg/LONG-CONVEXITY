@@ -1,0 +1,115 @@
+IQ Capital Rules (2026): Consistency, News and Overnight
+Skip to content SAVE ON PROP FIRMS Trade More. Spend Less. Compare Promos Black Friday Prop Firms Prop Firm Finder Blog Black Friday
+Prop Firms / IQ Capital / Rules IQ Capital rules
+16 rules apply at IQ Capital whichever account you buy. 8 are conditional, and those are the ones that end accounts, so read the detail. Below them: the platforms, data feeds, hours and the countries it refuses.
+Overview
+Accounts
+Rules
+Payouts
+History Soon
+Evaluation consistency
+Conditional
+Core Challenge has no eval consistency rule; Rapid Challenge requires 40% (best day no more than 40% of profit) during the eval.
+Funded consistency
+Conditional
+Core Funded and Instant Funding: 30% cap on the best day. Rapid 3 Day Payout: 40%. Rapid Daily Payout: none, it uses a daily loss limit instead.
+News trading
+Allowed
+Swing trading
+Not allowed
+Copy trading
+Not allowed
+Algorithmic trading
+Conditional
+EAs and bots are allowed only if the trader has full source-code access and can demonstrate control; black-box or external commercial bots are banned.
+Scalping
+Conditional
+Scalping is an allowed strategy, but extreme tick scalping is prohibited and the Scalping Rule gates payouts: at least 50% of trades and 50% of profit must come from positions held 15 seconds or longer.
+Dollar cost averaging
+Allowed
+Hedging
+Not allowed
+High frequency trading
+Not allowed
+VPN use
+Conditional
+VPN use is allowed for security or connectivity. Using one to conceal identity, bypass rules or trade from a restricted jurisdiction is prohibited and can lead to a ban.
+VPS use
+Allowed
+KYC
+Applies
+Evaluation time limit
+Conditional
+Challenges must be passed within 90 days of purchase. Funded and Instant Funded accounts have no time limit and no monthly renewal fee.
+Inactivity rule
+Conditional
+Place at least one trade every 8 calendar days or the account is closed. An open position pauses the inactivity timer.
+Clear path to live
+Conditional
+Top-performing funded traders may be invited to IQ Elite to trade real firm capital at a 90% split; merit-based, not automatic or guaranteed.
+Green allowed, amber conditional or applies, coral not allowed Quoted from the firm's own rules
+IQ Capital platforms, data and hours
+Trading platforms
+DeepChart
+ATAS
+Quantower
+Tradovate
+TradingView
+NinjaTrader
+Brokers and data feeds
+dxFeed
+CQG
+Tradable assets
+Futures
+Session opens
+18:00 ET
+Flat by
+16:45 ET
+IQ Capital country availability
+IQ Capital restricts 20 countries and accepts traders everywhere else , including St. Lucia . Restriction lists change without notice, so confirm with the firm before you buy.
+AF Afghanistan BY Belarus CF Central African Republic CU Cuba CD DR Congo ER Eritrea IR Iran IQ Iraq LY Libya ML Mali MM Myanmar NI Nicaragua KP North Korea RU Russia SO Somalia SS South Sudan SD Sudan SY Syria VE Venezuela YE Yemen
+Allowlist model: EU/EEA plus roughly 70 named countries are confirmed accepted; unlisted countries require contacting info@iqcapital.io. Crimea, Donetsk and Luhansk (occupied regions of Ukraine) are explicitly restricted, but Ukraine itself is on the accepted list. Attempting access from a restricted jurisdiction, including via VPN or other circumvention tools, is prohibited and may result in termination and forfeiture of funds.
+More on IQ Capital
+IQ Capital review
+IQ Capital accounts and prices
+IQ Capital payout rules
+IQ Capital alternatives
+IQ Capital discount code
+Newsletter
+Stay Ahead of Every Deal
+Get notified when promo codes drop, firms change rules, or new accounts launch.
+Sign Up
+Community
+Discord Community
+... online ... members
+Join Now
+SAVE ON PROP FIRMS Trade More. Spend Less. The most complete futures prop firm comparison tool. Real pricing, real rules, real discounts.
+Copy Discount Code SOPF
+Explore
+Compare
+Promos
+Prop Firms
+Blog
+Prop Firms
+Apex Trader Funding
+BluSky Trading Company
+Bulenox
+DayTraders
+E8 Markets
+FTMO Futures
+Show More
+Resources
+Glossary
+Contact Us
+Legal
+Disclaimer
+Terms of Service
+Privacy Policy
+Affiliate Disclosure
+Sitemap
+Your Privacy Choices
+Risk Disclosure
+Futures trading involves substantial risk of loss and is not suitable for all investors. Consider carefully whether trading is appropriate for you in light of your experience, objectives, and financial resources. Evaluation and funded accounts offered by proprietary trading firms are simulated trading environments, and simulated or hypothetical performance results have inherent limitations that do not reflect actual trading. Past performance is not indicative of future results. Save On Prop Firms is not a broker-dealer, futures commission merchant, or financial advisor, and nothing on this site is investment, legal, or tax advice.
+Affiliate Disclosure
+Save On Prop Firms has affiliate relationships with some of the firms featured on this site and earns commissions when you purchase through our links or use code SOPF, at no additional cost to you. These relationships never determine our rankings, comparisons, or reviews, and opinions are our own. All pricing and rules are verified at the time of publication and are subject to change; always confirm final terms at the firm's checkout.
+© 2026 Save On Prop Firms. All rights reserved.

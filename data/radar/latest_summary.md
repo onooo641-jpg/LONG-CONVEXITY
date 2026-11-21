@@ -7,15 +7,15 @@ Baseline date: 2026-11-21
 - S1 reward pools: 1295
 - S3 Merkl live: 714
 - S4 governance hits: 67
-- pages fetched ok: 1282
-- pages total: 1312
-- candidates surviving to ranking: 92
+- pages fetched ok: 1308
+- pages total: 1337
+- candidates surviving to ranking: 93
 - of which all five filter parts verified: 19
-- near-miss rows total: 2152
+- near-miss rows total: 2286
 
 ## Near-miss by stage/reason (top)
 
-- first_pass / below threshold: 1382
+- first_pass / below threshold: 1516
 - quality / DefiLlama outlier flag: 260
 - filter / F4 price exposure, needs hedge; F5 TVL < $1,000,000: 217
 - filter / F4 price exposure, needs hedge: 142
@@ -51,9 +51,9 @@ Baseline date: 2026-11-21
 | dolomite | Ethereum | USDC nan reward tokens ['0xdA5e1988097297dCdc1f90D | 2,174 | 10,244,194 | 7.7 | pass | pass | True | False | unverified-onchain |
 | convex-finance | Ethereum | EVAUSDT-EVAUSDC nan reward tokens ['0xd533a949740b | 472 | 2,380,685 | 7.2 | fail | unverified | True | False | unverified-onchain |
 | stake-dao-yield | Ethereum | FRXUSD-MSUSD Curve reward tokens ['0xD533a949740bb | 764 | 3,915,957 | 7.1 | pass | fail | True | False | unverified-onchain |
-| aave | Ethereum | LEND Supply RLUSD to the Aave V4 Sentora Hub | 14,718 | 76,744,398 | 7.0 | unverified | unverified | True | False | unverified-onchain |
+| aave | Ethereum | LEND Supply RLUSD to the Aave V4 Sentora Hub | 14,717 | 76,739,558 | 7.0 | unverified | unverified | True | False | unverified-onchain |
 | flying-tulip-ftusd | Ethereum | SFTUSD staked ftUSD (FT rewards bought on open mar | 331 | 1,777,594 | 6.8 | fail | fail | True | False | unverified-onchain |
-| dolomite | Ethereum | LEND Lend USDC on Dolomite | 3,189 | 17,402,915 | 6.7 | unverified | pass | True | False | unverified-onchain |
+| dolomite | Ethereum | LEND Lend USDC on Dolomite | 3,183 | 17,402,915 | 6.7 | unverified | pass | True | False | unverified-onchain |
 | bluefin-spot | Sui | USDSUI-USDC 0.01% reward tokens ['0x00000000000000 | 236 | 1,302,580 | 6.6 | pass | pass | True | False | unverified-onchain |
 | yearn-finance | Katana | VBUSDC nan reward tokens ['0x7F1f4b4b29f5058fA32CC | 1,125 | 6,217,065 | 6.6 | pass | pass | True | False | unverified-onchain |
 | stake-dao-yield | Ethereum | EVAUSDT-EVAUSDC Curve reward tokens ['0xD533a94974 | 694 | 3,841,281 | 6.6 | pass | fail | True | False | unverified-onchain |
@@ -92,7 +92,7 @@ Baseline date: 2026-11-21
 - fusedao.eth: [closed] FIP14: Zero Inflation, 400M Cap Enforced On-Chain, 30M FUSE for Validator Rewards Through the Transit https://snapshot.org/#/fusedao.eth/proposal/0x2cba3ecb0f952ebb2d82583bb9279cc836e36c18ce2ed540299ab254dcdc5e94
 - sdfxn.eth: [closed] Gauge vote FXN - 12/11/2026 - 25/11/2026 https://snapshot.org/#/sdfxn.eth/proposal/0x6214cbfb2dd2fcd86ba05d14fd8a5297622c9ec18b1fc7447e7e3304743eb31a
 
-## Page changes today: 40
+## Page changes today: 50
 
 - E8 Markets (firm) https://e8markets.com/: +14 / -14 lines
 - propfirmmatch (directory) https://propfirmmatch.com/: +1 / -1 lines

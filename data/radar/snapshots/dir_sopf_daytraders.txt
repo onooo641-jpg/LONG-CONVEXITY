@@ -1,0 +1,119 @@
+DayTraders Rules (2026): Consistency, News and Overnight
+Skip to content SAVE ON PROP FIRMS Trade More. Spend Less. Compare Promos Black Friday Prop Firms Prop Firm Finder Blog Black Friday
+Prop Firms / DayTraders / Rules DayTraders rules
+16 rules apply at DayTraders whichever account you buy. 6 are conditional, and those are the ones that end accounts, so read the detail. Below them: the platforms, data feeds, hours and the countries it refuses.
+Overview
+Accounts
+Rules
+Payouts
+History Soon
+Evaluation consistency
+Conditional
+Trail, EOD and Static evaluations run a 50% rule: no single day may exceed 50% of total simulated profit. S2L Core, Edge and Ultra evaluations run 25%.
+Funded consistency
+Conditional
+Pro funded accounts (Trail, Static, EOD) 30% max from any one day per payout cycle; S2F 20%. S2L live accounts carry no consistency rule at all.
+News trading
+Allowed
+Swing trading
+Conditional
+Overnight and weekend holds are allowed on every line and the firm does not close positions at 4:59 PM ET. Open positions take mark-to-market adjustments that can hit the loss limit and fail the account.
+Copy trading
+Allowed
+Algorithmic trading
+Conditional
+Bots, AI tools and scripts are allowed if they trade at normal speed. High-frequency trading is banned. Trade copiers are allowed on your own accounts.
+Scalping
+Allowed
+Dollar cost averaging
+Conditional
+Averaging into a position is expressly allowed in both the evaluation and Pro phases. The related Martingale pattern, increasing position size by 2x or more after a losing trade, is prohibited.
+Hedging
+Not allowed
+High frequency trading
+Not allowed
+VPN use
+Allowed
+VPS use
+Allowed
+KYC
+Applies
+Evaluation time limit
+None
+Inactivity rule
+Applies
+Monthly accounts: 1 trading day per 30-day billing cycle. Lifetime (one-time fee) accounts: 4 trading days per rolling 30 days. Each day must meet the account size minimum daily profit; consistency is not required.
+Clear path to live
+Conditional
+Pro and S2F have no milestone: Risk Team discretion, and the firm states about 1% of sim-funded traders are moved to live. S2L evaluations lead to a real live account 1-5 business days after passing.
+Green allowed, amber conditional or applies, coral not allowed Quoted from the firm's own rules
+DayTraders platforms, data and hours
+Trading platforms
+ONYX
+R|Trader Pro
+Quantower
+ATAS
+Sierra Chart
+MotiveWave
+Bookmap
+WealthCharts
+Jigsaw
+Finamark
+VolFix
+EdgePro X
+Brokers and data feeds
+Rithmic
+Tradable assets
+Futures
+Session opens
+18:00 ET
+Flat by
+16:59 ET
+DayTraders country availability
+DayTraders restricts 79 countries and accepts traders everywhere else , including United States . Restriction lists change without notice, so confirm with the firm before you buy.
+AF Afghanistan DZ Algeria AZ Azerbaijan BH Bahrain BD Bangladesh BY Belarus BJ Benin BN Brunei BF Burkina Faso CM Cameroon CF Central African Republic TD Chad CN China CG Congo CI Cote d'Ivoire CU Cuba CW Curaçao CY Cyprus CD DR Congo EG Egypt GA Gabon GD Grenada HT Haiti ID Indonesia IR Iran IQ Iraq JE Jersey JO Jordan KZ Kazakhstan KE Kenya XK Kosovo KW Kuwait LB Lebanon LS Lesotho LY Libya MG Madagascar MV Maldives MR Mauritania MU Mauritius MD Moldova MN Mongolia MA Morocco MZ Mozambique NA Namibia NP Nepal NI Nicaragua NE Niger NG Nigeria OM Oman PK Pakistan PS Palestine QA Qatar RE Réunion RU Russia RW Rwanda SA Saudi Arabia SN Senegal RS Serbia SO Somalia ZA South Africa LK Sri Lanka PM St. Pierre & Miquelon SD Sudan SY Syria TZ Tanzania TH Thailand TG Togo TT Trinidad and Tobago TN Tunisia TR Türkiye UG Uganda UA Ukraine UZ Uzbekistan VE Venezuela VN Vietnam EH Western Sahara YE Yemen ZM Zambia ZW Zimbabwe
+OFAC-sanctioned citizens excluded regardless of location.
+More on DayTraders
+DayTraders review
+DayTraders accounts and prices
+DayTraders payout rules
+DayTraders alternatives
+DayTraders discount code
+Newsletter
+Stay Ahead of Every Deal
+Get notified when promo codes drop, firms change rules, or new accounts launch.
+Sign Up
+Community
+Discord Community
+... online ... members
+Join Now
+SAVE ON PROP FIRMS Trade More. Spend Less. The most complete futures prop firm comparison tool. Real pricing, real rules, real discounts.
+Copy Discount Code SOPF
+Explore
+Compare
+Promos
+Prop Firms
+Blog
+Prop Firms
+Apex Trader Funding
+BluSky Trading Company
+Bulenox
+DayTraders
+E8 Markets
+FTMO Futures
+Show More
+Resources
+Glossary
+Contact Us
+Legal
+Disclaimer
+Terms of Service
+Privacy Policy
+Affiliate Disclosure
+Sitemap
+Your Privacy Choices
+Risk Disclosure
+Futures trading involves substantial risk of loss and is not suitable for all investors. Consider carefully whether trading is appropriate for you in light of your experience, objectives, and financial resources. Evaluation and funded accounts offered by proprietary trading firms are simulated trading environments, and simulated or hypothetical performance results have inherent limitations that do not reflect actual trading. Past performance is not indicative of future results. Save On Prop Firms is not a broker-dealer, futures commission merchant, or financial advisor, and nothing on this site is investment, legal, or tax advice.
+Affiliate Disclosure
+Save On Prop Firms has affiliate relationships with some of the firms featured on this site and earns commissions when you purchase through our links or use code SOPF, at no additional cost to you. These relationships never determine our rankings, comparisons, or reviews, and opinions are our own. All pricing and rules are verified at the time of publication and are subject to change; always confirm final terms at the firm's checkout.
+© 2026 Save On Prop Firms. All rights reserved.

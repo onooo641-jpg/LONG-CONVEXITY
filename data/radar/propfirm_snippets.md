@@ -2000,6 +2000,45 @@
 - AUTO: Advancement to FFONE's Professional Stage, or to live market execution, is not automatic and is never guaranteed.
 - COUNTRY: FFONE's services are not available to residents of certain countries and regions, as listed in our Help Center (Restricted Countries / Regions).
 
+## FundedNext — https://fundednext.com/aml-policy
+- AUTO: In adherence to the legal obligations, a meticulous manual approval process is diligently undertaken for each transaction, employing the principles of due diligence.
+- AUTO: Within GrowthNext F.Z.E., a distinct and dedicated risk management unit exists, tasked with the meticulous manual examination of individual client profiles.
+- AUTO: conducts a meticulous manual review and approval of each transaction, applying the principles of due diligence.
+
+## FundedNext — https://fundednext.com/cookie-policy
+- AUTO: Most browsers automatically accept cookies by default.
+- AUTO: Enabling these cookies is automatic and cannot be turned off, as they are necessary for the operation of the Website.
+- AUTO: In the case of automated processing based on your consent or performance of the contract, you have the right to receive the data in a structured, commonly used and machine-readable format and to have them transmitted by us to another personal data controller.
+- AUTO: Right not to be the subject of automated decision-making
+- AUTO: Except where processing is necessary for entering into, or performance of, a contract, where this is permitted by applicable law, or based on your express consent, you have the right not to be the subject of any decision which is based solely on automated processing, including profiling, which produces legal effects concerning you or similarly affects you to a significant extent.
+
+## FundedNext — https://fundednext.com/terms-of-service
+- AUTO: Participation in one modality (for example, CFDs) does not automatically grant the right of access, eligibility, phase migration, benefits or Performance Rewards in another modality (for example, Futures), unless expressly indicated by the Provider.
+- AUTO: The User may not allow third parties to operate the Account on their behalf, nor use account management services, credential sharing, third-party identities, bots, scripts or automated systems not expressly authorised by the Provider.
+- AUTO: To preserve the integrity of the Services and prevent abuse, the Provider may impose limits on the number of Orders/Accounts that a User may purchase, maintain or operate, including on the basis of reasonable linkage indicators (for example, related accounts, common control, shared payment methods, same residence, IP address, device or other connection signals).
+- AUTO: The Provider may supplement, detail and clarify the Trading Rules through FAQs, guides, manuals, operational notices and communications on the Platform, provided that such supplements do not contradict the contractual core of the purchased product.
+- AUTO: (h) Copy Trading; Mirroring; Signal Following (Without Authorisation).
+- AUTO: Copy trading, mirroring, signal following, trade replication or any substantially similar activity (whether manual or automated) is prohibited unless expressly authorised in writing by the Provider and permitted under the applicable programme rules.
+- AUTO: For the avoidance of doubt, any replication of another person's trading activity, or systematic execution of trades based primarily on external signals, shared instructions, or third-party trade streams, may be treated as prohibited copying/mirroring.
+- AUTO: The User must not sell, assign, lease, sublicense, share credentials, grant remote access, permit use by third parties, or use account management services, unauthorised copy trading, "passing services", or any third-party management arrangement (whether paid or unpaid).
+- AUTO: This includes use of VPNs, proxies, emulators, device spoofing, automation intended to circumvent controls, or any similar method.
+- AUTO: (m) Unauthorised Automation; HFT; Mass-Order Behaviour; Platform Overload.
+- AUTO: The User must not use bots, scripts, algorithms, software, AI agents, or automated methods not expressly authorised by the Provider.
+- AUTO: Even where certain tools may be permitted under programme rules, the User must not use automation, high-frequency execution, mass-order behaviour, or mass data entry intended to manipulate platform behaviour, overload systems, interfere with monitoring, degrade performance, or create an unfair advantage.
+- AUTO: Without limitation, prohibited patterns may include excessive one-sided exposure, repeated "all-in" bets, grid trading, tick scalping, unrealistic order patterns, artificial trade fragmentation, account rolling, or any comparable pattern which the Provider reasonably determines to be inconsistent with the evaluation purpose and indicative of abuse, manipulation, or circumvention.
+- AUTO: The User must not interfere with, disrupt, probe, scan, test, or compromise the security, stability, or integrity of the Website, Platform, or any Provider or Third Party systems, and must not introduce malware, bots, harmful code, or perform any action that could impair or degrade operations.
+- AUTO: In making such determinations, the Provider may take into account, without limitation, trading records, account activity, device and access data, payment records, technical indicators, compliance findings, antifraud signals, account linkage analysis, behavioural patterns and any other information the Provider reasonably considers relevant.
+- AUTO: The mere achievement of numerical targets, performance parameters or positive results in Simulated Trading does not, in itself, create an automatic entitlement to any Performance Reward.
+- AUTO: (c) engaging in scraping, crawling, harvesting, data mining or using robots, scripts or automated systems to access the Website/Services, extract data, circumvent rules, test limits, exploit latencies or manipulate evaluations — except for the use of automation (EAs/algorithms) only when expressly permitted by the Trading Rules and within the authorised platform;
+- AUTO: Such changes shall not create an automatic right to indemnification, refund or compensation for the User, except where mandatory laws provide otherwise.
+- AUTO: (e) application of enforcement measures, automatic blocks, invalidations, restrictions, corrections or adjustments arising from breach of these Terms, the Trading Rules, the Programme Parameters, compliance policies or legal requirements;
+- AUTO: (e) exploitation of technical failures, latency, feed inconsistencies, prohibited automation, prohibited arbitrage or any Prohibited Conduct;
+- AUTO: The Provider may adopt cumulative and progressive measures, including partial suspension, automatic blocks, functional restrictions and permanent termination.
+- AUTO: Termination alone shall not create any automatic right to refund, compensation or Performance Reward payment, unless expressly provided in an applicable specific policy or required by mandatory law.
+- AUTO: The User understands and accepts that the Provider may use automated systems and tools incorporating artificial intelligence to support the operation, monitoring, and technical support of the Services.
+- AUTO: Unless unequivocally proven otherwise, Formal Notices sent by e-mail shall be deemed received on the date and time of sending, according to the sender's electronic records, provided that no automatic permanent delivery failure message ("hard bounce") is generated.
+- COUNTRY: "Restricted Jurisdictions" means any country, territory, jurisdiction, locality or category of persons in respect of which the Provider does not offer or restricts access to one or more Services (including specifically CFDs and/or Futures products), for regulatory, compliance, sanctions, risk mitigation, Third Party requirements (including PSPs), or commercial decision reasons.
+
 ## FundedNext — https://help.fundednext.com
 - AUTO: Most Viewed Articles What Is The Copy Trading Rule at FundedNext?
 
@@ -2067,11 +2106,6 @@
 - AUTO: Is tick scalping legal?
 - COUNTRY: Are any countries restricted on FundedNext CFDs?
 
-## FundedNext Futures — https://fundednext.com/aml-policy
-- AUTO: In adherence to the legal obligations, a meticulous manual approval process is diligently undertaken for each transaction, employing the principles of due diligence.
-- AUTO: Within GrowthNext F.Z.E., a distinct and dedicated risk management unit exists, tasked with the meticulous manual examination of individual client profiles.
-- AUTO: conducts a meticulous manual review and approval of each transaction, applying the principles of due diligence.
-
 ## FundedNext Futures — https://fundednext.com/cfd-challenge-terms
 - AUTO: Risk Controls; Automatic Restrictions; Platform Integrity
 - AUTO: The Customer acknowledges that risk controls and enforcement measures may be applied automatically, including restricting trading and/or disabling functions when loss limits are reached.
@@ -2127,7 +2161,19 @@
 - AUTO: 2.1.8 Engaging in copy trading, where trades mimic or replicate the trading activities of other traders or entities without prior authorization, is prohibited for the Provider.
 - AUTO: Should any ambiguity or question regarding intent or interpretation arise, it shall be resolved in a neutral manner and not automatically against the drafting party.
 
-## FundedNext Futures — https://fundednext.com/privacy-policy
+## FundedNext Futures — https://fundednext.com/usa/aml-policy
+- AUTO: In adherence to the legal obligations, a meticulous manual approval process is diligently undertaken for each transaction, employing the principles of due diligence.
+- AUTO: Within GrowthNext F.Z.E., a distinct and dedicated risk management unit exists, tasked with the meticulous manual examination of individual client profiles.
+- AUTO: conducts a meticulous manual review and approval of each transaction, applying the principles of due diligence.
+
+## FundedNext Futures — https://fundednext.com/usa/cookie-policy
+- AUTO: Most browsers automatically accept cookies by default.
+- AUTO: Enabling these cookies is automatic and cannot be turned off, as they are necessary for the operation of the Website.
+- AUTO: In the case of automated processing based on your consent or performance of the contract, you have the right to receive the data in a structured, commonly used and machine-readable format and to have them transmitted by us to another personal data controller.
+- AUTO: Right not to be the subject of automated decision-making
+- AUTO: Except where processing is necessary for entering into, or performance of, a contract, where this is permitted by applicable law, or based on your express consent, you have the right not to be the subject of any decision which is based solely on automated processing, including profiling, which produces legal effects concerning you or similarly affects you to a significant extent.
+
+## FundedNext Futures — https://fundednext.com/usa/privacy-policy
 - AUTO: Automated Processing, Profiling and Significant Decisions
 - AUTO: 5.2 Automatically Through Your Use of the Services
 - AUTO: We collect certain technical, device, usage, behavioural, monitoring and activity data automatically when you access or use our website, systems, platform environment, dashboards, portals, communications interfaces or other parts of the Services.
@@ -2143,7 +2189,7 @@
 - AUTO: Nothing in this Notice shall be interpreted as limiting FundedNext's right to implement reasonable and proportionate automated or semi-automated controls designed to protect the Services, prevent fraud, preserve evidence, safeguard operational integrity, manage payment or security risks, or enforce contractual restrictions and platform rules.
 - AUTO: the right to request review in relation to certain automated decisions, where applicable law so provides; and
 
-## FundedNext Futures — https://fundednext.com/terms-of-service
+## FundedNext Futures — https://fundednext.com/usa/terms-of-service
 - AUTO: Participation in one modality (for example, CFDs) does not automatically grant the right of access, eligibility, phase migration, benefits or Performance Rewards in another modality (for example, Futures), unless expressly indicated by the Provider.
 - AUTO: The User may not allow third parties to operate the Account on their behalf, nor use account management services, credential sharing, third-party identities, bots, scripts or automated systems not expressly authorised by the Provider.
 - AUTO: To preserve the integrity of the Services and prevent abuse, the Provider may impose limits on the number of Orders/Accounts that a User may purchase, maintain or operate, including on the basis of reasonable linkage indicators (for example, related accounts, common control, shared payment methods, same residence, IP address, device or other connection signals).
@@ -4183,4 +4229,177 @@
 
 ## Tradeify — https://tradeify.co/terms-of-use
 - AUTO: use any robot, spider, scraper or other automatic device, manual process or application or data mining, scraping or extraction tool to access, harvest, monitor, copy or use the Site without the express written permission of Tradeify;
+
+## aquafunded-futures (via propfirmmatch) — https://propfirmmatch.com/futures/prop-firms/aquafunded-futures
+- AUTO: Expert Advisors, HFTs, Automation
+- AUTO: The use of fully automated systems, unattended algorithms, trading bots, AI-driven execution software, latency arbitrage systems, or any form of self-operating execution mechanism is strictly prohibited across all AquaFutures account types.
+- AUTO: Semi-automated systems may only be used when the trader remains fully present during execution, actively manages positions, fully understands the strategy being used, and is not attempting to exploit simulated market behavior.
+- AUTO: AquaFutures also prohibits excessive trading frequency that resembles high-frequency trading behavior.
+- AUTO: Copy Trading is allowed between your own accounts (including external accounts personally owned).
+- AUTO: Copying trades from or to another trader's account, using shared EA configurations, third-party copy services, or "Pass Your Challenge" services is not permitted.
+- AUTO: To give traders more flexibility when using bundles and managing multiple accounts, we have officially removed the copy trading restriction between accounts owned by the same person.
+- AUTO: This means you can now copy trades more freely across your own AquaFutures accounts without worrying about violations related to internal account copying.
+- COUNTRY: Firm Overview Instruments and Assets Leverage Commissions Consistency Rules Firm Rules Challenges Payout Policy Restricted Countries
+- COUNTRY: Restricted Countries
+
+## blueberry-futures (via propfirmmatch) — https://propfirmmatch.com/futures/prop-firms/blueberry-futures
+- AUTO: You may not open any new market or pending orders on the affected asset from 3 minutes before until 3 minutes after a Red Folder (High Impact) news event, but you are allowed to keep open and manually close existing positions at any time as long as they were opened more than 3 minutes prior to the news.
+- AUTO: You can use automated trading software on your Blueberry Futures account only if it meets all three of these conditions:
+- AUTO: You manually place a trade and the copier replicates it across your portfolio.
+- AUTO: Signal copying from external providers or third-party services is strictly prohibited.
+- AUTO: Manual scalping is allowed, but high-frequency "tick scalping" and HFT-style behavior are not.
+- AUTO: However, the Risk Team monitors for Tick Scalping behavior.
+- AUTO: Trades that are consistently opened and closed in sub-second intervals (e.g., 0-5 seconds) are characteristic of High-Frequency Trading (HFT) and arbitrage bots.
+- AUTO: If you are manually entering and exiting trades based on market structure, you have nothing to worry about.
+- AUTO: Legitimate scalping typically lasts significantly longer than the latency of a data feed.
+- AUTO: High Frequency Trading
+- AUTO: Strategies that enter and exit positions in sub-second intervals to exploit server latency are labeled HFT and are strictly prohibited.
+- COUNTRY: Firm Overview Instruments and Assets Leverage Commissions Consistency Rules Firm Rules Challenges Payout Policy Restricted Countries
+- COUNTRY: Use of VPNs, VPSs, or any location-masking tools to bypass "restricted countries" rule is strictly prohibited and may result in account termination and forfeiture of any profits.
+- COUNTRY: Restricted Countries
+
+## blusky-trading-company (via saveonpropfirms) — https://saveonpropfirms.com/prop-firms/blusky-trading-company/rules
+- AUTO: Mirroring other traders’ trades or following signal services is prohibited, and all trading must reflect your own independent decisions.
+- AUTO: Automated/algorithmic trading is permitted; using automated software (AI, ultra-high-speed, bulk data entry) to manipulate or secure an unfair advantage is prohibited and can trigger account closure.
+- AUTO: High frequency trading
+- AUTO: BluSky allows automated trading under its Ethical Trading Policy, but bans ultra-high-speed automation and strategies that exploit latency or market delays.
+- AUTO: Ordinary automated strategies may be reviewed; latency-exploiting HFT is not permitted.
+
+## brightfunded-futures (via propfirmmatch) — https://propfirmmatch.com/futures/prop-firms/brightfunded-futures
+- COUNTRY: Firm Overview Instruments and Assets Leverage Commissions Consistency Rules Firm Rules Challenges Payout Policy Restricted Countries
+- COUNTRY: Restricted Countries
+
+## daytraders (via saveonpropfirms) — https://saveonpropfirms.com/prop-firms/daytraders/rules
+- AUTO: Bots, AI tools and scripts are allowed if they trade at normal speed.
+- AUTO: High-frequency trading is banned.
+- AUTO: High frequency trading
+
+## e8-futures (via propfirmmatch) — https://propfirmmatch.com/futures/prop-firms/e8-futures
+- AUTO: EAs/bots/AI/semi-automation/HFT:
+- AUTO: illiquid/gapped-market exploitation, slow-feed/price errors, all-or-nothing trading, cross-account hedging, account rolling, illiquid-hour micro-scalping, wrong-month contracts, trader cooperation and CME-rule breaches.
+- COUNTRY: Firm Overview Instruments and Assets Leverage Commissions Consistency Rules Firm Rules Challenges Payout Policy Restricted Countries
+- COUNTRY: Restricted Countries
+
+## finotive-futures (via propfirmmatch) — https://propfirmmatch.com/futures/prop-firms/finotive-futures
+- AUTO: Trading bots and automated trading systems, including EAs and personal automated strategies, are allowed in Instant and One step accounts, as long as they match your normal trading style and do not exploit system vulnerabilities, latency, or data feed anomalies.
+- AUTO: Copy trading is permitted only between accounts that you personally own and control.
+- AUTO: On Finotive Futures accounts, all open positions are automatically closed 5 minutes before the actual daily close, at 15:55:00 CT, so you never carry a position into the maintenance break, overnight, or into the weekend.
+- AUTO: High-Frequency and Algorithmic Exploitation
+- AUTO: Using HFT systems, tick scalpers, bulk order automation, or any algorithmic tool designed to exploit execution speed advantages, platform inefficiencies, or simulated fill conditions, rather than to express a genuine directional market view.
+- AUTO: Coordinating trade entries, exits, or directions with any other person across separate accounts, whether through shared signals, private communication, shared environments, or any form of linked execution.
+- COUNTRY: Firm Overview Instruments and Assets Leverage Commissions Consistency Rules Firm Rules Challenges Payout Policy Restricted Countries
+- COUNTRY: Restricted Countries
+
+## funded-futures-network (via saveonpropfirms) — https://saveonpropfirms.com/prop-firms/funded-futures-network/rules
+- AUTO: EAs/bots permitted to run the account holder's own strategy on their own accounts only; synchronizing execution across users or exploiting the sim environment voids funding.
+- AUTO: No dedicated scalping cap.
+- AUTO: The HFT rule limits round-trips of 5 seconds or under to under 30% of a session trades, checked at session close, or the account fails.
+- AUTO: High frequency trading
+
+## futureselite (via propfirmmatch) — https://propfirmmatch.com/futures/prop-firms/futureselite
+- AUTO: Fully automated trading using AI or bots is not permitted.
+- AUTO: We want to see traders applying their skills rather than relying on algorithms to do the work.
+- AUTO: However, you are allowed to copy trades between your own accounts without any restrictions.
+- AUTO: If trades are not closed by 4:55 PM EST, the system will automatically liquidate them.
+- AUTO: If scalping trades exceed 50% of the target, the account will not be eligible for an upgrade to a funded account.
+- AUTO: Scalping transactions on funded accounts do not trigger a violation.
+- AUTO: Scalping trades are not removed from your payout request, but they will be removed from your leftover profit/buffer chosen by the user.
+- AUTO: If the scalped amount is higher than the remaining buffer, the account will be breached.
+- AUTO: If you meet or exceed the daily amount you are automatically moved live:
+- AUTO: The more you buy, the more you save — automatically.
+- AUTO: 💰 90/10 Profit Split: Keep 90% of your earnings automatically.
+- COUNTRY: Firm Overview Instruments and Assets Leverage Commissions Consistency Rules Firm Rules Challenges Payout Policy Restricted Countries
+- COUNTRY: Restricted Countries
+
+## goat-funded-futures (via propfirmmatch) — https://propfirmmatch.com/futures/prop-firms/goat-funded-futures
+- AUTO: Personal automated strategies and EAs are allowed on EOD, One Day Pass, Flex and Instant Classic, as long as they are consistent with your trading style and do not exploit system vulnerabilities, latency, or data feed anomalies.
+- AUTO: Copy trading is allowed between accounts owned by the same person, including across different firms or brokers, subject to each program’s limits.
+- AUTO: Copy trading between different individuals is strictly prohibited.
+- AUTO: High-frequency and algorithmic exploitation:
+- AUTO: No high-frequency systems, AI tools, tick scalping, or bulk order-entry that exploit execution speed or system inefficiencies rather than trade real conditions.
+- AUTO: No arbitrage of any kind — latency, hedge, reverse, or rollover/scalping — as it exploits structural inefficiencies rather than genuine speculation.
+- AUTO: Copying other users' trades or signals — manually, via copy/mirror services, or EAs — is not.
+- AUTO: Manual trading only; no bots, EAs, automated, grid, martingale or high-frequency strategies.
+- AUTO: There is no separate trade-count test; tick scalping is prohibited.
+- AUTO: No overnight or weekend holding; automatic close at 15:55 CT.
+- COUNTRY: Firm Overview Instruments and Assets Leverage Commissions Consistency Rules Firm Rules Challenges Payout Policy Restricted Countries
+- COUNTRY: Restricted Countries
+
+## hola-prime-futures (via propfirmmatch) — https://propfirmmatch.com/futures/prop-firms/hola-prime-futures
+- AUTO: Copy trading is permitted between your own accounts under one user profile, including challenge-to-challenge and sim funded-to- sim funded (same environment).
+- AUTO: Prohibited to employ any kind of semi or fully automated trading like EAs, Bots, AI, etc.
+- COUNTRY: Firm Overview Instruments and Assets Leverage Commissions Consistency Rules Firm Rules Challenges Payout Policy Restricted Countries
+- COUNTRY: Restricted Countries
+
+## iq-capital (via saveonpropfirms) — https://saveonpropfirms.com/prop-firms/iq-capital/rules
+- AUTO: EAs and bots are allowed only if the trader has full source-code access and can demonstrate control; black-box or external commercial bots are banned.
+- AUTO: Scalping is an allowed strategy, but extreme tick scalping is prohibited and the Scalping Rule gates payouts: at least 50% of trades and 50% of profit must come from positions held 15 seconds or longer.
+- AUTO: High frequency trading
+- AUTO: Top-performing funded traders may be invited to IQ Elite to trade real firm capital at a 90% split; merit-based, not automatic or guaranteed.
+
+## legends-trading (via saveonpropfirms) — https://saveonpropfirms.com/prop-firms/legends-trading/rules
+- AUTO: High frequency trading
+- AUTO: Accounts (Apprentice and Elite, evaluation and Master) that go more than 20 trading days or 30 calendar days without a trade, whichever occurs first, are automatically deactivated and forfeited.
+
+## nexgen-protrader-funding (via saveonpropfirms) — https://saveonpropfirms.com/prop-firms/nexgen-protrader-funding/rules
+- AUTO: High frequency trading
+
+## purdia-capital (via saveonpropfirms) — https://saveonpropfirms.com/prop-firms/purdia-capital/rules
+- AUTO: You must actively monitor and manage the accounts; set-and-forget automation is not permitted.
+- AUTO: Semi-automated tools are permitted while the trader keeps active oversight and monitors every trade and position.
+- AUTO: Fully automated, unattended and set-and-forget systems are strictly prohibited.
+- AUTO: Purdia Capital allows scalping, including in micro contracts, with no minimum holding time for trades.
+- AUTO: High frequency trading
+- AUTO: Scalping and micro scalping are permitted with no minimum hold-time requirement, though latency abuse can trigger review.
+- COUNTRY: Prohibited only where a VPN or proxy is used to circumvent household, address, IP, device or country limits.
+
+## the-trading-pit-futures (via propfirmmatch) — https://propfirmmatch.com/futures/prop-firms/the-trading-pit-futures
+- AUTO: Traders are allowed to copy trades manually or automatically in up to 5 of their accounts.
+- AUTO: Traders are allowed to copy trades from a personal external account to TTP accounts.
+- AUTO: Allowed to trade using your own Expert Advisor (EA), as long as it does not perform any prohibited trading activities outlined in the terms and conditions.
+- AUTO: Scalping is allowed in all futures accounts.
+- AUTO: Micro‑scalping is defined as opening and closing trades within approximately 10–15 seconds with the primary intention of capturing very small, ultra‑short‑term price moves.
+- AUTO: Micro‑scalping is strictly prohibited under The Trading Pit's trading rules across all account types and trading instruments.
+- AUTO: High-Frequency Trading (HFT)
+- AUTO: High-Frequency Trading (HFT) is not permitted on any of our accounts.
+- AUTO: Positions still open at session end are closed automatically at 15:55 CT.
+- COUNTRY: Firm Overview Instruments and Assets Leverage Commissions Consistency Rules Firm Rules Challenges Payout Policy Restricted Countries
+- COUNTRY: Restricted Countries
+
+## the5ers-futures (via propfirmmatch) — https://propfirmmatch.com/futures/prop-firms/the5ers-futures
+- AUTO: Copy Trading: Copy trading is only permitted on 25K and 50K accounts with a total size of up to $75,000.
+- AUTO: One important restriction: you can only copytrade your own accounts and your own trades.
+- AUTO: You can't copy trades from another trader, or let anyone else copy trades from you.
+- AUTO: You must manually close all positions and cancel pending orders at least 10 minutes before the close (by 4:50 PM CET).
+- AUTO: HFT, Hedging and Algo Trading: not allowed
+- COUNTRY: Firm Overview Instruments and Assets Leverage Commissions Consistency Rules Firm Rules Challenges Payout Policy Restricted Countries
+- COUNTRY: Restricted Countries
+
+## trade-the-pool (via propfirmmatch) — https://propfirmmatch.com/futures/prop-firms/trade-the-pool
+- AUTO: You may copy trades between a maximum of two accounts.
+- AUTO: The use of external or automated third-party copying tools/software is strictly prohibited.
+- AUTO: Manual copy trading is allowed for Evaluation and Funded accounts.
+- AUTO: TraderEvolution's copy trading feature follows the same guidelines.
+- AUTO: Take Profit or Stop Loss orders will not be automatically created for the follower accounts.
+- AUTO: You may copy trades between a maximum of three Edge accounts, including between $50K and $100K accounts.
+- AUTO: Automated Trading (FLEX):
+- AUTO: Support for automated trading, including SignalStack integration, is currently in beta.
+- AUTO: Traders are responsible for all trades conducted on their accounts, whether manually or automatically created.
+- AUTO: Positions will be automatically liquidated at 3:50 PM ET when a scheduled earnings report is due that night.
+- COUNTRY: Firm Overview Instruments and Assets Leverage Commissions Consistency Rules Firm Rules Challenges Payout Policy Restricted Countries
+- COUNTRY: Restricted Countries
+
+## traders-launch (via propfirmmatch) — https://propfirmmatch.com/futures/prop-firms/traders-launch
+- AUTO: Automated Trading Strategies
+- AUTO: Expert Advisors (EAs) are allowed but require pre-approval.
+- AUTO: At $100000 cumulative payouts, trading pauses for scaling review; live-capital consideration is not an automatic brokerage transfer.
+- COUNTRY: Firm Overview Instruments and Assets Leverage Commissions Consistency Rules Firm Rules Challenges Payout Policy Restricted Countries
+- COUNTRY: Restricted Countries
+
+## ylos-trading (via propfirmmatch) — https://propfirmmatch.com/futures/prop-firms/ylos-trading
+- AUTO: Copy trading of external signals, copiers between different accounts, or use of ""passing challenges"" services;
+- AUTO: Use of identical third-party trading EAs that generate duplicate trading patterns among many traders;
+- AUTO: With the exception of the Order Replicator, no type of automation is allowed in Ylos for any type of account or stage of its journey.
+- COUNTRY: Firm Overview Instruments and Assets Leverage Commissions Consistency Rules Firm Rules Challenges Payout Policy Restricted Countries
+- COUNTRY: Restricted Countries
 

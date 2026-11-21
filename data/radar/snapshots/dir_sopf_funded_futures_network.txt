@@ -1,0 +1,114 @@
+Funded Futures Network Rules (2026): Every Trading Rule
+Skip to content SAVE ON PROP FIRMS Trade More. Spend Less. Compare Promos Black Friday Prop Firms Prop Firm Finder Blog Black Friday
+Prop Firms / Funded Futures Network / Rules Funded Futures Network rules
+16 rules apply at Funded Futures Network whichever account you buy. 9 are conditional, and those are the ones that end accounts, so read the detail. Below them: the platforms, data feeds, hours and the countries it refuses.
+Overview
+Accounts
+Rules
+Payouts
+History Soon
+Evaluation consistency
+Conditional
+Varies by account: Standard MAX 40%, STEADY 52% (eval only). Legacy Standard OG 40%, Express OG 25%, Express MAX 50% (accounts sold before 2026-07-01).
+Funded consistency
+Conditional
+Standard MAX Funded 40%; STEADY Funded has none. Any Live-Funded account: none. Legacy OG Funded 40%, Express MAX Funded 25% (pre-2026-07-01 accounts).
+News trading
+Conditional
+Permitted, unrestricted, during the evaluation. Banned in Exhibition and Funded: holding through a T1 event forfeits the account and all profit, no appeal.
+Swing trading
+Not allowed
+Copy trading
+Allowed
+Algorithmic trading
+Conditional
+EAs/bots permitted to run the account holder's own strategy on their own accounts only; synchronizing execution across users or exploiting the sim environment voids funding.
+Scalping
+Conditional
+No dedicated scalping cap. The HFT rule limits round-trips of 5 seconds or under to under 30% of a session trades, checked at session close, or the account fails.
+Dollar cost averaging
+Allowed
+Hedging
+Not allowed
+High frequency trading
+Conditional
+No more than 30% of a single session trades may round-trip in 5 seconds or under (session = 6PM-5PM ET); a breach fails the account immediately, no appeal.
+VPN use
+Conditional
+Permitted for personal privacy; prohibited if it causes your IP to match/resemble another holder's or is used to mask coordinated trading.
+VPS use
+Conditional
+Permitted for solo use on your own accounts only; sharing VPS access or letting a third party trade via it is prohibited.
+KYC
+Applies
+Evaluation time limit
+None
+Inactivity rule
+Applies
+Must log 3 qualifying trading days (net P&L of at least $5) every rolling 29-day period, or the account is auto-cancelled with no warning. Applies to blown accounts too.
+Clear path to live
+Conditional
+Apply to your risk manager after 5 consecutive sim payouts; the /why page also states a $5,000-withdrawn threshold. Live opens at size plus original buffer on a 90/10 split; sim profit is forfeited on accounts bought from 2026-07-01.
+Green allowed, amber conditional or applies, coral not allowed Quoted from the firm's own rules
+Funded Futures Network platforms, data and hours
+Trading platforms
+NinjaTrader
+Quantower
+MotiveWave
+EdgePro X
+ONYX
+Brokers and data feeds
+Rithmic
+Tradable assets
+Futures
+Session opens
+18:00 ET
+Flat by
+16:50 ET
+Funded Futures Network country availability
+Funded Futures Network restricts 23 countries and accepts traders everywhere else , including United States . Restriction lists change without notice, so confirm with the firm before you buy.
+AF Afghanistan AZ Azerbaijan CF Central African Republic CU Cuba HT Haiti IR Iran IQ Iraq ML Mali MM Myanmar NR Nauru NI Nicaragua NG Nigeria KP North Korea PK Pakistan RU Russia SO Somalia SS South Sudan SD Sudan SY Syria TM Turkmenistan UA Ukraine VE Venezuela YE Yemen
+More on Funded Futures Network
+Funded Futures Network review
+Funded Futures Network accounts and prices
+Funded Futures Network payout rules
+Funded Futures Network alternatives
+Funded Futures Network discount code
+Newsletter
+Stay Ahead of Every Deal
+Get notified when promo codes drop, firms change rules, or new accounts launch.
+Sign Up
+Community
+Discord Community
+... online ... members
+Join Now
+SAVE ON PROP FIRMS Trade More. Spend Less. The most complete futures prop firm comparison tool. Real pricing, real rules, real discounts.
+Copy Discount Code SOPF
+Explore
+Compare
+Promos
+Prop Firms
+Blog
+Prop Firms
+Apex Trader Funding
+BluSky Trading Company
+Bulenox
+DayTraders
+E8 Markets
+FTMO Futures
+Show More
+Resources
+Glossary
+Contact Us
+Legal
+Disclaimer
+Terms of Service
+Privacy Policy
+Affiliate Disclosure
+Sitemap
+Your Privacy Choices
+Risk Disclosure
+Futures trading involves substantial risk of loss and is not suitable for all investors. Consider carefully whether trading is appropriate for you in light of your experience, objectives, and financial resources. Evaluation and funded accounts offered by proprietary trading firms are simulated trading environments, and simulated or hypothetical performance results have inherent limitations that do not reflect actual trading. Past performance is not indicative of future results. Save On Prop Firms is not a broker-dealer, futures commission merchant, or financial advisor, and nothing on this site is investment, legal, or tax advice.
+Affiliate Disclosure
+Save On Prop Firms has affiliate relationships with some of the firms featured on this site and earns commissions when you purchase through our links or use code SOPF, at no additional cost to you. These relationships never determine our rankings, comparisons, or reviews, and opinions are our own. All pricing and rules are verified at the time of publication and are subject to change; always confirm final terms at the firm's checkout.
+© 2026 Save On Prop Firms. All rights reserved.
