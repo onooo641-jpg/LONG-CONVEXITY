@@ -1,0 +1,9 @@
+=== liq_morphobase_pilot
+morphobase_pilot: 95 markets resolved, 6600 events with tokens
+  rpc exception eth_getTransactionReceipt @ https://base.api.pocket.network: HTTP 429
+  morphobase_pilot: receipts 2952/2983 (4 min)
+  morphobase_pilot: receipts 2983/2983 (4 min)
+  rpc exception eth_call @ https://base.gateway.tenderly.co: HTTP 429
+base: prices 33306 points, 59/62 coins priced
+morphobase_pilot: COMPLETE 6600 events, 61 tokens, 6 min
+=== liq_morphobase_pilot done in 377s  ok 818 fail 0
