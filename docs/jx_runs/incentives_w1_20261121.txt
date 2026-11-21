@@ -1,0 +1,18 @@
+chart data through 2026-11-21; bar 12.0%/yr net (T-bill 4.0% assumed + 8), pilot kill < 8.0%
+
+  pool 005bdeab-17c3-4561-961d-fef74f4ca6f9: 213 days from 2026-04-23, mean apyBase 1.06%, apyReward 5.58%, worst 7-day TVL ratio 0.23
+  pool 5e953c59-150a-4e1a-a117-3db74c7c8591: 213 days from 2026-04-23, mean apyBase 0.57%, apyReward 5.01%, worst 7-day TVL ratio 0.13
+#201 Lista Lending stables (Ethereum): Stage 1 pilot (last 60 days) mean net 4.61%/yr -> KILL
+  VERDICT: FAIL (killed at Stage 1)
+
+  pool 20e45c3e-7de7-4d34-89e7-20858ecdf252: 508 days from 2025-07-02, mean apyBase 4.07%, apyReward 1.93%, worst 7-day TVL ratio 0.06
+  pool 86e18974-35ca-4948-9c82-694facf9d082: 508 days from 2025-07-02, mean apyBase 3.21%, apyReward 2.56%, worst 7-day TVL ratio 0.02
+#202 Dolomite stables (Ethereum): Stage 1 pilot (last 60 days) mean net 6.38%/yr -> KILL
+  VERDICT: FAIL (killed at Stage 1)
+
+  pool e3887972-24e6-45a9-8ef5-bcc22b6b5739: 262 days from 2026-03-04, mean apyBase 4.88%, apyReward 16.76%, worst 7-day TVL ratio 0.32
+#203 Bluefin USDSUI-USDC (Sui): Stage 1 pilot (last 60 days) mean net 13.75%/yr -> continue
+  Stage 2: history 262 days; half 1 22.92%/yr, half 2 16.26%/yr; loss-event proxy HIT; reward share of yield 79%
+  on $10K: $1,962/yr (Topstep 50K slot: $4,097/yr at ~$3.5K risk); at $50K mean net 18.56%/yr
+  VERDICT: FAIL (loss-event proxy)
+

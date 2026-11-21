@@ -349,3 +349,17 @@ Raw output for every command above is in `docs/jx_runs/`.
 | M6 | Median bot that won at least once: months under $200 / $200–1,000 / over $1,000 | 17 / 6 / 1 of 24 | same | same | 2026-11-21 | measured, gas only |
 | M7 | Outside-top-3 net, 24 months pooled; share from top 3 / top 5 months | $10.0M; 52.4% / 73.7% | same | same | 2026-11-21 | measured, gas only |
 | M8 | Months since the March 2026 SVR switch with gross bonus above $1M | 1 of 8 (June 2026, $1.94M); the other 7 were $18K–$130K | same | 2026-03..2026-10 | 2026-11-21 | measured |
+
+## Radar, workstream C (docs/PREREG_RADAR_20261121.md)
+
+| # | figure | value | command | window | computed | status |
+|---|---|---|---|---|---|---|
+| RD1 | Radar baseline sweep counts (run 44885195094) | 9,086 protocols; 14,884 pools, 1,295 paying rewards; 714 live Merkl campaigns; 67 incentive-related Snapshot proposals (of 373 in 45 days); 1,287 of 1,317 pages fetched | Actions `radar.yml` → `scripts/radar.py`; log `docs/jx_runs/radar_44885195094.txt` | snapshot 2026-11-21 | 2026-11-21 | measured (live sources; not reproducible later by design) |
+| RD2 | Candidates surviving screening / all five filter parts verified / near-miss rows | 93 / 12 / 1,963 | same | same | 2026-11-21 | measured |
+| RP1 | Alpha Futures Standard 50K, manual entry 3 min late: real net / coin-flip median (profitable) / worst dip | $40,155 / $8,998 (81%) / −$4,773 (flag needs ≥ −$4,641: not flagged) | `uv run python scripts/radar_price.py` → `docs/jx_runs/radar_price_20261121.txt` | 2016-01..2026-10 | 2026-11-21 | current, re-run identical |
+| RP2 | Topstep 50K reference at 3-min delay: real / coin flip / dip | $37,348 / $14,701 / −$3,094 | same | same | 2026-11-21 | current |
+| RP3 | Blue Guardian Elite 50K, 3-min delay, purchase price bracket $141 / $350 (sensitivity only; price not readable) | real $43,877 / $37,398; coin flip $6,442 / −$1,457 | same | same | 2026-11-21 | sensitivity, not ranked |
+| RP4 | Existing models re-priced by the radar (no delay) match the ledger: Topstep, Lucid, MFFU, TradeDay, Bulenox, FTMO Growth, TFD | identical to G1/F1/R1/F5/F6/F8/R2 values; except FTMO Pro: $27,428 / $1,810 vs ledger F1 $28,452, because this script scales the $900 trades to $800 instead of re-simulating at $800 (contract rounding) | same | same | 2026-11-21 | current |
+| RT1 | #201 Lista stables: Stage 1 net (last 60 d) | 4.61%/yr (kill < 8%) | `uv run python scripts/incentives_w1_20261121.py` → `docs/jx_runs/incentives_w1_20261121.txt` | 2026-09-22..2026-11-21 | 2026-11-21 | current, re-run identical (data `data/radar/charts.parquet`, radar run 5) |
+| RT2 | #202 Dolomite stables: Stage 1 net | 6.38%/yr (kill) | same | same | 2026-11-21 | current |
+| RT3 | #203 Bluefin USDSUI-USDC: Stage 1 / half 1 / half 2 net; worst 7-day TVL ratio; $ on $10K | 13.75% / 22.92% / 16.26%; 0.32 (loss proxy hit); $1,962/yr | same | 2026-03-04..2026-11-21 | 2026-11-21 | current; assumptions: T-bill 4%, 10% reward haircut, $5/tx Ethereum |

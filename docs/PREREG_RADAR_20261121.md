@@ -108,3 +108,9 @@ readable except the purchase price, which the static pages do not contain). Blue
 fixed reset fee, $350) as **sensitivity only, not ranked or flagged**, consistent with "if a rule is unreadable the product is not priced".
 Phidias and Top One: plan target/price not in crawled pages → not priced. FundedNext's crawled terms now prohibit bots "not expressly
 authorised" → `unclear`, no longer priced as full_bots (reported for the prop-firm workstream).
+
+## Addendum 3 (2026-11-21, after week 1; applies from week 2, does not change week-1 results)
+Week 1 showed the snapshot reward APR picks spikes (#201: 10.6% today, 5.6% average). From week 2 the test queue ranks fully verified
+rows by the **90-day mean of (apyBase + apyReward × 0.9) from the deep-check chart history**, not by today's reward APR; rows with
+< 90 days of history are not queued. The daily table keeps today's APR as `rank_score` for display. Max 3 tests a week, unchanged.
+Week-2 queue is chosen this way from the first run on or after 2026-11-28.

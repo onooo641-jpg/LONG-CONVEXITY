@@ -44,3 +44,19 @@ Smart-contract hack and stablecoin depeg risk are not in the APY data (a depeg c
 therefore necessary, not sufficient; it would go to Jx only together with that caveat.
 
 Command: `uv run python scripts/incentives_w1_20261121.py | tee docs/jx_runs/incentives_w1_20261121.txt`
+
+## Results (2026-11-21, `docs/jx_runs/incentives_w1_20261121.txt`, re-run identical)
+Stage 0 (desk check, from the radar data and protocol type; no site visits possible from the sandbox): all three programmes are paying in
+today's data; deposits are permissionless contracts (assumed from protocol type, not verified on-chain); Malaysia unverified-onchain. Passed to Stage 1.
+
+| # | setup | Stage 1 (last 60 d, net) | Stage 2 | verdict |
+|---|---|---|---|---|
+| 201 | Lista Lending stables | 4.61%/yr < 8% | not run | **FAIL** (killed at Stage 1). Mean reward 5.0–5.6% over 213 days; today's 10.6% is a recent spike |
+| 202 | Dolomite stables | 6.38%/yr < 8% | not run | **FAIL** (killed at Stage 1). Base 3–4% + reward 2–2.6% |
+| 203 | Bluefin USDSUI-USDC | 13.75%/yr | 262 days; halves 22.9% / 16.3%; loss-event proxy **hit** (TVL fell to 32% of its 7-day high) | **FAIL** (loss-event proxy) |
+
+Reading: the radar's "money per competitor" snapshot overstated #201 (a spike) and #202 (reward small next to base yield). #203 earned
+well above the bar in both halves (~$2,000/yr on $10K, 79% of it from SUI rewards), but failed the pre-registered capped-downside proxy; the
+TVL drop may have been capital leaving rather than a loss, but the rule was fixed in advance and is not reinterpreted. It goes to the near-miss
+review (a pool that keeps paying >12% with no further TVL collapses for 6 months could be re-tested under a new pre-registration). Even a pass
+would have been ~$2K/yr per $10K, below one Topstep slot ($4.1K/yr on ~$3.5K at risk), with depeg/hack risk unmeasured.
