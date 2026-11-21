@@ -10,6 +10,12 @@ strategy, plus a search for other structural edges. README.md explains the busin
 - No strategy-parameter changes (mechanical fixes are fine). Do not reinstate the 11:00 cutoff.
 - **Pre-register every test before running it**: write `docs/PREREG_<NAME>_<YYYYMMDD>.md`
   (question, data, exact rule, costs, pass criteria), commit and push it, then run.
+- **Staged tests (kill early, never pass early).** Pre-register stages from cheapest to most expensive:
+  Stage 0 desk check (rules, bot policy, Malaysia access, five-part filter: minutes); Stage 1 pilot on the
+  cheapest small slice of data (e.g. 2 months, 2 chains) with a KILL-ONLY threshold set loose enough that a
+  real opportunity would not fail it by noise; Stage 2 the full test. A stage may stop the test early when the
+  idea clearly fails; it may never declare a pass early, and the full-test rules are never changed after
+  seeing pilot data.
 - Every reported figure needs a reproducible command and a row in `docs/FIGURES_LEDGER.md`;
   raw output goes to `docs/jx_runs/<script>.txt`; re-run once and confirm identical output.
 - Each tested idea gets a row in `docs/CANDIDATES.md`. Numbering: main branch continues

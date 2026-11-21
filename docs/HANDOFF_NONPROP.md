@@ -153,3 +153,9 @@ Widen what is scanned; keep the filter and the tests strict.
 4. **Check Malaysia access for every candidate** (geo-blocks, local law) before testing, not after.
 5. **The bottleneck is testing capacity, not scanning.** Test at most a few candidates a week, ranked by
    expected money per competitor, so tests stay pre-registered and honest.
+
+### Staged testing (2026-11-21, Jx: don't spend hours on ideas that fail an early check)
+See CLAUDE.md "Staged tests". For a liquidation-style test this would have been: Stage 1 = 2 recent months on
+2–3 fast chains (minutes); kill if every venue has top-3 share > 85% AND outside-top-3 net < $100/month
+(far worse than the $500 bar, so noise can't kill a real opportunity); otherwise run the full 24 months.
+Stopping early on a FAIL is safe; stopping early on a PASS, or changing the full test after peeking, is not.
