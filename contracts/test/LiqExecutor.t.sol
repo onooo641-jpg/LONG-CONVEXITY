@@ -16,6 +16,7 @@ interface Vm {
     function load(address, bytes32) external view returns (bytes32);
     function store(address, bytes32, bytes32) external;
     function envOr(string calldata, string calldata) external view returns (string memory);
+    function envUint(string calldata) external view returns (uint256);
 }
 
 interface IProvider {
@@ -102,7 +103,8 @@ contract LiqExecutorForkTest {
         require(router.code.length > 0, "router has no code");
         require(address(pool).code.length > 0, "pool has no code");
 
-        uint256 amt = 10 * (10 ** uint256(IDec(coll).decimals()));
+        // position sized in USD (Aave v3.3+ rejects partial liquidations that leave dust, so tiny positions are not representative)
+        uint256 amt = vm.envUint("AMT_USD") * 1e8 * (10 ** uint256(IDec(coll).decimals())) / IOracle(oracle).getAssetPrice(coll);
         // collateral is the chain's wrapped native token (WETH9-style): fund the borrower with native token and wrap it
         bool slotMode = keccak256(bytes(vm.envOr("FUND", "wrap"))) == keccak256(bytes("slot"));
         if (slotMode) {
@@ -122,7 +124,7 @@ contract LiqExecutorForkTest {
         uint256 borrowAmt = (avail * 99 / 100) * dd / pd;
         try pool.borrow(debt, borrowAmt, 2, 0, borrower) {} catch (bytes memory r) { revert(string.concat("borrow: ", _hex(r))); }
         vm.stopPrank();
-        toCover = borrowAmt / 2;
+        toCover = borrowAmt * 1001 / 1000; // more than the debt: Aave caps it, avoids a dust remainder
         ex = new LiqExecutor(address(pool), router);
     }
 

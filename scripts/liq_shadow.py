@@ -258,8 +258,13 @@ class Chain:
             return None
         ca = max(coll, key=coll.get)
         da = max(debt, key=debt.get)
-        cf = 1.0 if hf < 0.95 else 0.5
+        # Aave v3.3+ rules (assumed, observed as MustNotLeaveDust in the fork tests): 100% close factor if HF < 0.95 or debt/collateral
+        # below USD 2,000; a partial liquidation must not leave less than USD 1,000 of debt or collateral, else liquidate in full
+        tot_debt, tot_coll = sum(debt.values()), sum(coll.values())
+        cf = 1.0 if (hf < 0.95 or tot_debt < 2000 or tot_coll < 2000) else 0.5
         debt_usd = min(cf * debt[da], CAP_USD)
+        if cf < 1.0 and (debt[da] - debt_usd < 1000 or coll[ca] - debt_usd * m["cfg"][ca]["bonus"] < 1000):
+            debt_usd = min(debt[da], CAP_USD)
         bonus = m["cfg"][ca]["bonus"]
         seized_usd = debt_usd * bonus
         if seized_usd > coll[ca]:
