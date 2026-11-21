@@ -1,0 +1,6 @@
+=== liq_replay_optimism
+optimism: oracle 0xd81eb3728a631871a7ebbad631b5f424909f0c77, source updates in window for 3 assets
+  rpc error eth_call @ https://mainnet.optimism.io: {'code': 3, 'message': 'execution reverted'}
+  optimism: 25/36 (6.4 min)
+optimism: replay stage 1 wrote 36 rows
+=== liq_replay_optimism done in 395s  ok 959 fail 4
