@@ -753,7 +753,186 @@ def job_hype4h():
     df.to_parquet(OUT / "batch7_hype4h.parquet", index=False)
     print(f"hype 4h candles: {len(df)} from {pd.to_datetime(df.t.min(), unit='ms') if len(df) else None}", flush=True)
 
-JOBS = {"hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+def job_batch8p():
+    """Batch 8 Stage 1 pilot data (docs/PREREG_BATCH8_20261122.md), window 2026-07-01..now. Raw responses kept for parsing offline."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    t0 = int(pd.Timestamp("2026-07-01", tz="UTC").timestamp())
+    now = int(time.time())
+    raw = {}
+
+    def save():
+        (OUT / "batch8_raw.json").write_text(json.dumps(raw))
+
+    coins = ["BTC", "ETH", "SOL", "XRP", "DOGE", "AVAX", "LINK", "SUI", "ARB", "OP", "LTC", "BNB"]
+    # 279 Drift
+    for c in coins:
+        rows = []
+        for u in (f"https://data.api.drift.trade/fundingRates?marketName={c}-PERP",
+                  f"https://data.api.drift.trade/market/{c}-PERP/fundingRates"):
+            d = get(u, tries=1)
+            if d:
+                rows = d.get("fundingRates", d.get("records", d)) if isinstance(d, dict) else d
+                raw[f"drift|{c}|{u}"] = rows
+                break
+        print(f"  drift {c}: {len(rows) if hasattr(rows, '__len__') else type(rows)}", flush=True)
+    save()
+    # 280 Deribit funding
+    der = {"BTC": "BTC-PERPETUAL", "ETH": "ETH-PERPETUAL"}
+    der.update({c: f"{c}_USDC-PERPETUAL" for c in ("SOL", "XRP", "DOGE", "AVAX", "LINK", "LTC", "BNB", "SUI")})
+    for c, inst in der.items():
+        rows, t = [], t0
+        while t < now:
+            d = get(f"https://www.deribit.com/api/v2/public/get_funding_rate_history?instrument_name={inst}"
+                    f"&start_timestamp={t * 1000}&end_timestamp={min(t + 30 * 86400, now) * 1000}", tries=2)
+            rows += (d or {}).get("result", []) or []
+            t += 30 * 86400
+            time.sleep(0.2)
+        raw[f"deribit_funding|{c}"] = rows
+        print(f"  deribit funding {c}: {len(rows)}", flush=True)
+    save()
+    # 289 Orderly
+    for c in coins:
+        rows, page = [], 1
+        while page < 40:
+            d = get(f"https://api-evm.orderly.org/v1/public/funding_rate_history?symbol=PERP_{c}_USDC&start_t={t0}&end_t={now}&page={page}&size=500", tries=2)
+            r = ((d or {}).get("data") or {}).get("rows", [])
+            rows += r
+            if len(r) < 500:
+                break
+            page += 1
+        raw[f"orderly|{c}"] = rows
+        print(f"  orderly {c}: {len(rows)}", flush=True)
+    save()
+    # 284 HIP-3
+    dexes = get("https://api.hyperliquid.xyz/info", {"type": "perpDexs"}) or []
+    names = [x["name"] for x in dexes if isinstance(x, dict) and x.get("name")]
+    raw["hip3_dexes"] = dexes
+    print(f"  hip3 dexes: {names}", flush=True)
+    for dx in names:
+        meta = get("https://api.hyperliquid.xyz/info", {"type": "meta", "dex": dx}) or {}
+        for a in meta.get("universe", [])[:60]:
+            nm = a.get("name")
+            rows, t = [], t0 * 1000
+            while t < now * 1000:
+                r = get("https://api.hyperliquid.xyz/info", {"type": "fundingHistory", "coin": nm, "startTime": t}, tries=2) or []
+                if not r:
+                    break
+                rows += r
+                nt = int(r[-1]["time"]) + 1
+                if nt <= t or len(r) < 500:
+                    break
+                t = nt
+                time.sleep(0.15)
+            raw[f"hip3|{nm}"] = rows
+        print(f"  hip3 {dx}: {len(meta.get('universe', []))} markets", flush=True)
+        save()
+    for c in coins:  # main-HL funding for the same window (pairs with new venues)
+        rows, t = [], t0 * 1000
+        while t < now * 1000:
+            r = get("https://api.hyperliquid.xyz/info", {"type": "fundingHistory", "coin": c, "startTime": t}, tries=2) or []
+            if not r:
+                break
+            rows += r
+            nt = int(r[-1]["time"]) + 1
+            if nt <= t or len(r) < 500:
+                break
+            t = nt
+            time.sleep(0.15)
+        raw[f"hl|{c}"] = rows
+    save()
+    # 281/282 Deribit futures, perpetual closes, DVOL
+    for cur in ("BTC", "ETH"):
+        ins = []
+        for exp in ("false", "true"):
+            ins += (get(f"https://www.deribit.com/api/v2/public/get_instruments?currency={cur}&kind=future&expired={exp}") or {}).get("result", []) or []
+        raw[f"deribit_instruments|{cur}"] = [{k: i.get(k) for k in ("instrument_name", "expiration_timestamp", "settlement_period")} for i in ins]
+        for i in ins:
+            if i.get("expiration_timestamp", 0) / 1000 < t0 and i["instrument_name"] != f"{cur}-PERPETUAL":
+                continue
+            d = get(f"https://www.deribit.com/api/v2/public/get_tradingview_chart_data?instrument_name={i['instrument_name']}"
+                    f"&start_timestamp={(t0 - 120 * 86400) * 1000}&end_timestamp={now * 1000}&resolution=1D", tries=2)
+            raw[f"deribit_chart|{i['instrument_name']}"] = (d or {}).get("result")
+            time.sleep(0.2)
+        d = get(f"https://www.deribit.com/api/v2/public/get_volatility_index_data?currency={cur}&start_timestamp={(t0 - 60 * 86400) * 1000}"
+                f"&end_timestamp={now * 1000}&resolution=1D", tries=2)
+        raw[f"dvol|{cur}"] = (d or {}).get("result")
+        print(f"  deribit {cur}: {len(ins)} futures, dvol {'ok' if raw[f'dvol|{cur}'] else 'none'}", flush=True)
+    save()
+    # 283 Boros probe
+    for u in ("https://api.boros.finance/core/v1/markets", "https://boros.pendle.finance/api/core/v1/markets",
+              "https://api-v2.pendle.finance/boros/v1/markets"):
+        d = get(u, tries=1)
+        raw[f"boros_probe|{u}"] = d if d is None or len(json.dumps(d)) < 200_000 else "large"
+        print(f"PROBE boros {u}: {'answered' if d else 'no answer'}", flush=True)
+    save()
+    # 285 Kamino
+    km = "7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF"
+    res = get(f"https://api.kamino.finance/kamino-market/{km}/reserves/metrics?env=mainnet-beta") or []
+    raw["kamino_reserves"] = res
+    for r in res if isinstance(res, list) else []:
+        sym = str(r.get("liquidityToken", r.get("symbol", "")))
+        if sym.upper() in ("SOL", "JITOSOL", "MSOL", "JUPSOL", "BSOL", "INF", "USDC", "USDT", "PYUSD", "USDS"):
+            rid = r.get("reserve")
+            d = get(f"https://api.kamino.finance/kamino-market/{km}/reserves/{rid}/metrics/history?env=mainnet-beta"
+                    f"&start={pd.Timestamp(t0, unit='s'):%Y-%m-%d}&end={pd.Timestamp(now, unit='s'):%Y-%m-%d}&frequency=day", tries=2)
+            raw[f"kamino|{sym}"] = d
+    print(f"  kamino reserves: {len(res) if isinstance(res, list) else 'no answer'}", flush=True)
+    save()
+    # 286 Aave rates history
+    aave = {"ethereum": ("0x2f39d218133afab8f2b819b1066c7e434ad94e9e", 1,
+                         {"WSTETH": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0", "WETH": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+                          "WEETH": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee", "SUSDE": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
+                          "USDT": "0xdac17f958d2ee523a2206206994597c13d831ec7", "USDC": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"})}
+    for chain, (prov, cid, toks) in aave.items():
+        for sym, addr in toks.items():
+            d = get(f"https://aave-api-v2.aave.com/data/rates-history?reserveId={addr}{prov}{cid}&from={t0}&resolutionInHours=24", tries=2)
+            raw[f"aave|{chain}|{sym}"] = d
+            print(f"  aave {chain} {sym}: {len(d) if isinstance(d, list) else 'no answer'}", flush=True)
+    # price ratios for intrinsic yields
+    for nm, key in (("wsteth", "ethereum:0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0"), ("weeth", "ethereum:0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee"),
+                    ("weth", "ethereum:0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"), ("susde", "ethereum:0x9d39a5de30e57443bff2a8307a4256c8797a3497"),
+                    ("jitosol", "solana:J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn"), ("msol", "solana:mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So"),
+                    ("jupsol", "solana:jupSoLaHXQiZZTSfEWMTRRgpnyFm8f6sZdosWBjx93v"), ("sol", "coingecko:solana")):
+        d = get(f"https://coins.llama.fi/chart/{key}?start={t0 - 40 * 86400}&span=200&period=1d", tries=2)
+        raw[f"price|{nm}"] = (((d or {}).get("coins") or {}).get(key) or {}).get("prices")
+        time.sleep(0.3)
+    save()
+    # 287 / 290 Morpho
+    q_m = """{ markets(first: 60, orderBy: SupplyAssetsUsd, orderDirection: Desc, where: {chainId_in: [1, 8453]}) { items { uniqueKey lltv
+      loanAsset { symbol } collateralAsset { symbol } state { supplyAssetsUsd } morphoBlue { chain { id } }
+      historicalState { borrowApy(options: {startTimestamp: %d, endTimestamp: %d, interval: DAY}) { x y } } } } }""" % (t0 - 40 * 86400, now)
+    raw["morpho_markets"] = get("https://blue-api.morpho.org/graphql", {"query": q_m}, tries=2)
+    q_v = """{ vaults(first: 80, orderBy: TotalAssetsUsd, orderDirection: Desc, where: {chainId_in: [1, 8453]}) { items { address name creationTimestamp
+      asset { symbol } state { totalAssetsUsd } chain { id }
+      historicalState { sharePriceUsd(options: {startTimestamp: %d, endTimestamp: %d, interval: DAY}) { x y }
+                        totalAssetsUsd(options: {startTimestamp: %d, endTimestamp: %d, interval: DAY}) { x y } } } } }""" % (t0 - 40 * 86400, now, t0 - 40 * 86400, now)
+    raw["morpho_vaults"] = get("https://blue-api.morpho.org/graphql", {"query": q_v}, tries=2)
+    print(f"  morpho markets {'ok' if raw['morpho_markets'] else 'none'}, vaults {'ok' if raw['morpho_vaults'] else 'none'}", flush=True)
+    save()
+    # 288 HL user vaults
+    vl = get("https://stats-data.hyperliquid.xyz/Mainnet/vaults", tries=2) or []
+    print(f"  hl vaults listed: {len(vl)}", flush=True)
+    keep = []
+    for v in vl:
+        s_ = v.get("summary", v)
+        try:
+            tvl = float(s_.get("tvl", 0))
+        except (TypeError, ValueError):
+            tvl = 0
+        if tvl >= 200_000:
+            keep.append(s_)
+    keep = sorted(keep, key=lambda x: -float(x.get("tvl", 0)))[:150]
+    raw["hl_vault_list"] = keep
+    for s_ in keep:
+        d = get("https://api.hyperliquid.xyz/info", {"type": "vaultDetails", "vaultAddress": s_["vaultAddress"]}, tries=2) or {}
+        raw[f"hl_vault|{s_['vaultAddress']}"] = {"portfolio": d.get("portfolio"), "leaderCommission": d.get("leaderCommission"),
+                                                "isClosed": d.get("isClosed")}
+        time.sleep(0.15)
+    print(f"  hl vault details: {len(keep)}", flush=True)
+    save()
+
+JOBS = {"batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys
