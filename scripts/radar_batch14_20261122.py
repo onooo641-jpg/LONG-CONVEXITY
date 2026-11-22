@@ -6,6 +6,7 @@ import pandas as pd
 
 from ict import data as D
 from scripts.radar_models2 import MODELS2
+from backtest.recycle import Policy
 from scripts.radar_price import price, trades
 
 orders, bars = pd.read_parquet(D.PROCESSED_DIR / "ideas_orders_NQ.parquet"), D.load("1m")
@@ -15,7 +16,8 @@ print("flag: real >= 50% of Topstep (no delay $22,180; 3-min $18,674), coin flip
 for key, (auto, items) in MODELS2.items():
     d = 3 if auto == "alert_assisted" else 0
     for name, rules, risk in items:
-        real, dip, flip, prof = price(T[d], rules, risk)
+        pol = Policy.IMMEDIATE if rules.mll_locks_at is None else Policy.LOCK_FIRST  # no lock -> pay out immediately (addendum 9 rule)
+        real, dip, flip, prof = price(T[d], rules, risk, pol)
         flag = (real >= 0.5 * REF[d][0] and flip >= 5000 and dip >= 1.5 * REF[d][1])
         tag = ("would flag" if flag else "-") if "[sens]" in name else ("EXTRA SLOT CANDIDATE" if flag else "-")
         print(f"{key:<16} {name:<40} delay {d} | real ${real:>9,.0f} | coin flip ${flip:>8,.0f} ({prof:.0%}) | dip ${dip:>8,.0f} | {tag}", flush=True)

@@ -246,3 +246,4 @@ and marked; "N payouts then live" is modelled as the account ending.
 | 257 | Alpha Futures Direct 25K | manual | $349 one-time (own) | instant; MLL $1,000; DLL $500; goals $1,500 then $1,000; 20% consistency; max $1,000; min $500; 90% | — |
 | 258 | Goat 1-Day Pass 100K | bots | $358 (directory list) | target $6,000, EOD $3,000 lock at start, 60 micros; funded as #245 with caps scaled (modelled $2,500) | caps assumed |
 Commands: `uv run python scripts/radar_price_one.py <key> [--delay]`, outputs `docs/jx_runs/radar_price_<key>.txt`.
+Note (before running): products without a stated drawdown lock (FuturesElite Instant) use Policy.IMMEDIATE, the addendum-9 rule.
