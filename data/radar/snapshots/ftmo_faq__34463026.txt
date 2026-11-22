@@ -370,8 +370,8 @@ Warning: When making a Reward withdrawal from an FTMO Account, obtained via the 
 Withdrawal Methods and Limits
 Rewards can be paid out via bank wire transfer, instant transfer through Visa Direct / Mastercard Send ( up to $20,000 ), Skrill ( up to $3,000 ), or cryptocurrencies . FTMO does not charge any additional commissions for Reward withdrawals. Note that due to transaction fees, there is a minimum closed profit requirement of at least $20 for bank wire withdrawals and transfers via Visa Direct or Mastercard Send and $50 for cryptocurrency withdrawals, to cover the cost of the transaction.
 Reward Ratios and Account Growth
-FTMO Account initiated from the 1-Step FTMO Challenge and FTMO Instant Account: You receive a Reward according to 90% of the simulated profit.
-FTMO Account initiated from the 2-Step FTMO Challenge: By default, you receive a Reward according to 80% of the simulated profit. If the Scaling Plan or Premium Programme conditions are met, the Reward Ratio is increased to 90% .
+An FTMO Account initiated from the 1-Step FTMO Challenge and FTMO Instant Account: You receive a Reward equal to 90% of the simulated profit.
+An FTMO Account initiated from the 2-Step FTMO Challenge: By default, you receive a Reward equal to 80% of the simulated profit. If the Scaling Plan or Premium Programme conditions are met, the Reward Ratio is increased to 90% .
 Reward Rollover
 FTMO Traders on FTMO Accounts initiated from the 2-Step FTMO Challenge can request to roll over their Reward to the subsequent FTMO Account. Before the Rollover, the standard applicable Reward Ratio is applied. However, once the FTMO Trader decides to withdraw rolled-over Reward, the Reward Ratio is 100% to avoid reducing the Reward by the Reward Ratio twice.
 The minimum rollover amount is €20, $20, £20, 20 AUD, 20 CAD, 20 CHF, or 500 CZK.
