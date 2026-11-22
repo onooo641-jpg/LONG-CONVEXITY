@@ -1,3 +1,2 @@
 # jobs for scripts/fetch_fallback.py (one per line)
-hype4h
-batch8p
+batch8s

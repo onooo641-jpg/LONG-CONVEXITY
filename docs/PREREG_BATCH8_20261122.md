@@ -23,3 +23,25 @@ only for HL/dYdX/Aevo in earlier work; Drift, Orderly, Kamino, Aave, Morpho, Bor
 | 290 | Morpho curated USDC/USDT vaults by share price | Morpho GraphQL vault historicalState sharePriceUsd | monthly top-5 by trailing-30-day share-price return, TVL ≥ $20M, age ≥ 90 days; return = share-price change; $10 per switch on $2K slot |
 
 Commands: `uv run python scripts/batch8_20261122.py | tee docs/jx_runs/batch8_20261122.txt`. Data: `data/public/batch8_*`.
+
+## Stage 1 results (2026-11-22; `docs/jx_runs/batch8_20261122.txt`, identical on re-run)
+| # | Stage 1 (2026-08..10) | outcome |
+|---|---|---|
+| 280 Deribit ↔ HL/dYdX gaps | 12.72%/yr, 41 positions opened | → Stage 2 |
+| 288 HL user vaults top-5 | 27.30%/yr (months +11.7%, +19.2%, −24.0%); current-list survivorship | → Stage 2 (survivorship removed) |
+| 284 HIP-3 cross-dex gaps | −2.08% (178 of 247 markets fetched; rest rate-limited) | KILL |
+| 281 Deribit cash-and-carry | 2.62% | KILL |
+| 282 short straddle ladder | −30.81% | KILL |
+| 285 Kamino SOL-LST loops | −4.13% (intrinsic 3.5% < SOL borrow 6.6%) | KILL. A first run used best-of-3 per day (look-ahead, not the registered rule); corrected to the registered monthly top-5 before recording |
+| 279, 283, 286, 287, 290 | no data (Drift DNS, Boros no endpoint, Aave API retired, Morpho 400/403); 289 Orderly 0 rows | not testable; one repair probe below |
+
+## Addendum 1: Stage 2 for #280 and #288, written before job `batch8s` runs (rules unchanged)
+- **#280:** Deribit funding for the same 10 coins, 2024-11-01..2026-11-01. HL/dYdX from `fundgap_funding.parquet`. `fundgap_20261121.report()` verdict:
+  both halves ≥ 8% plus its representativeness check. Context only: the HL–Deribit pair alone (dYdX failed the batch-7 execution check).
+  Execution check, same reading as batch 7 C: 6 Deribit order-book snapshots, 10 minutes apart. A median $10K slippage above 2.5 bps per side
+  on the coins used means the return is not reachable.
+- **#288:** removes survivorship. vaultDetails for every listed vault created before 2026-05-01 that is either closed or has a current TVL
+  ≥ $50K (cap 3,000, ≤ 1 request/s). Selection uses each vault's own account value on the selection date (≥ $1M), not today's TVL. Same rule
+  as Stage 1 (top 5 by trailing 90 days, 10% leader share). Period 2024-11..2026-10. PASS = both halves ≥ 8%.
+- **Repair probe** (fetch only; any test stays registered as above): Drift public S3 historical funding records, Orderly endpoint variants,
+  a minimal Morpho GraphQL query.

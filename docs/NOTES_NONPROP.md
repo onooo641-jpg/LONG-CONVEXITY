@@ -149,3 +149,8 @@ each pilot costs money → Jx decides.
 - **Pendle (#211)** with all 344 expired markets: FAIL (0.8% / 7.9%).
 - **Hedged HYPE (#276)**: liquidation check pending (HYPE candles in the batch-8 run).
 - Batch 8 (12 new mechanisms #279–#290) pre-registered; Stage 1 pilot data being fetched.
+- **#276 hedged HYPE fails with liquidations** (HYPE rose up to 124% in a week; the 3× short is liquidated 12 times; walk-forward 13.6% / −8.9%).
+  All four walk-forward survivors have now failed their follow-up checks.
+- **Batch 8 Stage 1:** 2 of 12 continue: #280 Deribit↔HL funding gaps (12.7% in the pilot) and #288 Hyperliquid user vaults (27.3%, but −24% in
+  October, survivorship). 4 killed (#281 cash-and-carry 2.6%, #282 short straddles −31%, #284 HIP-3 gaps −2%, #285 Kamino loops −4%).
+  6 not testable (Drift, Boros, Aave, Morpho ×2, Orderly: no data). Stage 2 + repair probes fetching (`batch8s`).

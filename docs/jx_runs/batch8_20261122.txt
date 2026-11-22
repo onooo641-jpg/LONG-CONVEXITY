@@ -1,0 +1,50 @@
+Stage 1 pilot 2026-08..10, kill < 4.0%/yr on capital (kill-only; survivors need full-history Stage 2)
+
+#280 funding gaps Deribit <-> HL/dYdX: Stage 1 2026-08..10 12.72%/yr on capital (92 days); positions opened in pilot 41 -> continue to Stage 2
+
+#284 HIP-3: 178 markets with funding data; names listed on >= 2 dexes: ['AAPL', 'ANTH', 'BABA', 'COIN', 'COPPER', 'CRCL', 'EUR', 'EWY', 'GOLD', 'HOOD', 'INTC', 'META', 'MU', 'NVDA', 'PLTR', 'SILVER', 'SKHX', 'SMALL2000', 'SNDK', 'TSLA', 'US500', 'USA500', 'USBOND', 'USTECH', 'XIAOMI', 'XMR']
+#284 HIP-3 cross-dex funding gaps: Stage 1 2026-08..10 -2.08%/yr on capital (92 days); pairs [('cash', 'flx'), ('cash', 'io'), ('cash', 'km'), ('cash', 'xyz'), ('flx', 'hyna'), ('flx', 'io'), ('flx', 'km'), ('flx', 'xyz'), ('io', 'km'), ('io', 'para'), ('io', 'xyz'), ('km', 'mkts'), ('km', 'xyz')]; opened in pilot 55 -> KILL -> FAIL (Stage 1)
+
+  BTC: contracts used ['BTC-21NOV26', 'BTC-22NOV26', 'BTC-23NOV26', 'BTC-24NOV26', 'BTC-25NOV26', 'BTC-27NOV26', 'BTC-4DEC26'] (expired Sep-2026 quarterly not in the API listing; nearest listed used)
+  ETH: contracts used ['ETH-21NOV26', 'ETH-22NOV26', 'ETH-23NOV26', 'ETH-24NOV26', 'ETH-25NOV26', 'ETH-27NOV26', 'ETH-4DEC26'] (expired Sep-2026 quarterly not in the API listing; nearest listed used)
+#281 Deribit futures cash-and-carry (BTC+ETH): Stage 1 2026-08..10 2.62%/yr on capital (92 days) -> KILL -> FAIL (Stage 1)
+
+  BTC: mean DVOL in pilot 37.4
+  ETH: mean DVOL in pilot 51.5
+#282 Deribit short 30-day ATM straddle ladder (BTC+ETH): Stage 1 2026-08..10 -30.81%/yr on capital (92 days) -> KILL -> FAIL (Stage 1)
+
+  JITOSOL: pilot intrinsic 3.47%, SOL borrow 6.59%, LTV 0.63, k 2.02, ROE 0.15%/yr, TVL $96M
+  MSOL: pilot intrinsic 3.42%, SOL borrow 6.56%, LTV 0.61, k 1.94, ROE -0.21%/yr, TVL $20M
+  JupSOL: pilot intrinsic 3.71%, SOL borrow 6.57%, LTV 0.61, k 1.95, ROE 0.32%/yr, TVL $49M
+  2026-08: held ['JupSOL', 'MSOL', 'JITOSOL']
+  2026-09: held ['JupSOL', 'MSOL', 'JITOSOL']
+  2026-10: held ['JITOSOL', 'JupSOL', 'MSOL']
+#285 Kamino SOL-LST loops (monthly top-5 rule): Stage 1 2026-08..10 -4.13%/yr on capital (90 days) -> KILL -> FAIL (Stage 1)
+
+  2026-08: picks ['Long HYPE & BTC | Short Garbage', '[ Systemic Strategies ] ♾️ HyperGrowth ♾️', '+convexity', '[ Systemic Strategies ] L/S Grids', 'Growi HF'] -> month 11.67%
+  2026-09: picks ['Long LINK Short XRP', 'drkmttr', '+convexity', '[ Systemic Strategies ] L/S Grids', 'Long HYPE & BTC | Short Garbage'] -> month 19.22%
+  2026-10: picks ['Long LINK Short XRP', 'BredoStrategy', 'drkmttr', '[ Systemic Strategies ] L/S Grids', 'Growi HF'] -> month -24.01%
+#288 Hyperliquid user vaults, top-5 trailing 90 days (current list: survivorship favours a pass): Stage 1 2026-08..10 27.30%/yr on capital (92 days); eligible vaults 13 -> continue to Stage 2
+
+#279 Drift gaps: data.api.drift.trade does not resolve (DNS) -> not testable (no data)
+#289 Orderly gaps: public funding_rate_history returned 0 rows for all 12 symbols -> not testable (no data)
+#283 Boros: no endpoint answered (3 probes) -> not testable (no data)
+#286 Aave e-mode loops: aave-api-v2 rates-history returns non-JSON (retired) -> not testable (no data)
+#287 Morpho loops / #290 Morpho vaults: blue-api GraphQL 400 / 403 -> not testable (no data)
+
+===== D. #276 hedged HYPE staking with liquidations (weekly rebalance)
+  bars 4302: 2024-12-05 .. 2026-11-22; max 7-day rise 124%
+  unhedged until weekly rebalance: liquidations 1.5x: 2 (loss 17.8% of capital), 2x: 3 (loss -0.1% of capital), 3x: 12 (loss 59.3% of capital)
+===== G5-liq #276 hedged HYPE staking with liquidations: 15 configs
+  walk-forward OOS 2025-05..2026-10: halves 13.62% / -8.85%; all 18 months with costs x1.5 2.67%; switches 7
+  most-picked configs: lev2/always (8x); lev3/gt12 (5x)
+  (context only) best fixed config in hindsight: lev2/always -> 14.56%/yr over 2024-11..2026-10
+  VERDICT: FAIL
+
+  re-hedge next bar: liquidations 1.5x: 2 (loss 10.1% of capital), 2x: 3 (loss 15.3% of capital), 3x: 12 (loss 61.6% of capital)
+===== (context) G5-liq re-hedge-next-bar variant: 15 configs
+  walk-forward OOS 2025-05..2026-10: halves 4.98% / -7.18%; all 18 months with costs x1.5 -0.46%; switches 4
+  most-picked configs: lev2/always (11x); lev1.5/always (5x)
+  (context only) best fixed config in hindsight: lev1.5/always -> 8.00%/yr over 2024-11..2026-10
+  VERDICT: FAIL
+

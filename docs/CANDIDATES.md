@@ -166,11 +166,18 @@ risk, 5m signals and 1m fills.
 | 257 | Alpha Direct 25K | same | not flagged | same |
 | 258 | Goat 1-Day Pass 100K | same | not flagged | same |
 
-| 259–278 | Batch 6: 20 non-prop mechanisms (zero-fee venue funding gaps/carry, hedged real-yield staking, tranches, insurance funds, bribes, veAERO, RWA, fixed-rate auctions, CME basis, tokenised stocks, LST unstake, hedged LP, relayers, HYPE staking, reverse carry, new-chain incentives) | `docs/PREREG_BATCH6_20261122.md` | 1 narrow pass (#276 hedged native HYPE staking 24.9% / 9.2%, not robust: 6.5–8.2% in year 2 under conservative assumptions); 11 killed at Stage 0/0.5; 5 failed Stage 1/2; 5 not testable (incl. #259 surviving the ceiling at 33%) | PREREG_BATCH6 final results |
+| 259–278 | Batch 6: 20 non-prop mechanisms (zero-fee venue funding gaps/carry, hedged real-yield staking, tranches, insurance funds, bribes, veAERO, RWA, fixed-rate auctions, CME basis, tokenised stocks, LST unstake, hedged LP, relayers, HYPE staking, reverse carry, new-chain incentives) | `docs/PREREG_BATCH6_20261122.md` | 1 narrow pass (#276 hedged native HYPE staking 24.9% / 9.2%, not robust: 6.5–8.2% in year 2 under conservative assumptions); 11 killed at Stage 0/0.5; 5 failed Stage 1/2; 5 not testable (incl. #259 surviving the ceiling at 33%) | PREREG_BATCH6 final results  #276 liquidation check: FAIL (3× short liquidated 12 times; walk-forward 13.6% / −8.9%) |
 
 | R1–R7 | refinement studies (year-1 design, year-2 test, costs ×1.5) on #208, #221, #204 family, #207, #276, #225, carry family | `docs/PREREG_REFINE_20261122.md` | PASS: R1 funding gaps (maker 24.9% / 17.1%), R5 HYPE hedged staking (23.4% / 9.3%, marginal), R6 Gains vaults (11.6% / 9.8%, small, price check pending); FAIL: R2 GM (best hedge flips), R3 stable selection, R4 new rewards, R7 conditional carry | refine_20261122.txt |
 
 | WF | walk-forward retest of 16 ideas with grids of 12–270 configs (monthly pick on trailing 6 months; OOS 2025-05..2026-10) | `docs/PREREG_WALKFORWARD_20261122.md` | PASS: G1 funding gaps (12.8% / 18.2%, needs maker fills — taker-only fails the ×1.5 cost check), G5 HYPE hedged staking (15.0% / 8.7%), G6 Gains vaults (9.6% / 14.1%); FAIL: GM pools, stable selection, stable-pair LPs/savings, new chains, new rewards, carry family, hedged staking | walkforward_20261122.txt |
+| 280 | funding gaps Deribit ↔ HL/dYdX | `docs/PREREG_BATCH8_20261122.md` | Stage 1 12.72%/yr → Stage 2 running | batch8_20261122.txt |
+| 288 | Hyperliquid user vaults, top-5 trailing 90 days | same | Stage 1 27.30%/yr (−24% in Oct; survivorship) → Stage 2 with closed vaults | same |
+| 284 | HL HIP-3 cross-dex funding gaps | same | FAIL Stage 1 (−2.08%) | same |
+| 281 | Deribit futures cash-and-carry | same | FAIL Stage 1 (2.62%) | same |
+| 282 | Deribit short ATM straddle ladder | same | FAIL Stage 1 (−30.81%) | same |
+| 285 | Kamino SOL-LST loops | same | FAIL Stage 1 (−4.13%; SOL borrow 6.6% > intrinsic 3.5%) | same |
+| 279, 283, 286, 287, 289, 290 | Drift gaps, Boros, Aave loops, Morpho loops, Orderly gaps, Morpho vaults | same | not testable (no data); repair probes running | same |
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.

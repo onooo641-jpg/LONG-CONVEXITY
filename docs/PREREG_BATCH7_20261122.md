@@ -50,3 +50,8 @@ variant that re-hedges at the next 4h bar (loss = remaining equity + 0.5% only).
   are not supported by the top of book. Caveat: one 3-hour window on one day; slippage is a lower bound where 40 levels did not fill $10K.
   **Consequence:** the modelled #208 return is not reachable at $10K per leg; at ~$1–2K per leg it might be, which is worth ~$100–300/yr.
 - D (#276) pending the HYPE candle fetch.
+
+## Result D: #276 with liquidations: FAIL (2026-11-22; `docs/jx_runs/batch8_20261122.txt`, part D, identical on re-run)
+HYPE 4h bars 2024-12-05..2026-11-22; the largest 7-day rise was 124%. Short liquidations with weekly rebalancing: 1.5× 2, 2× 3, 3× 12
+(3× loses 59% of capital in total). Walk-forward with the losses booked: halves 13.62% / −8.85%, costs ×1.5 2.67% → **FAIL**.
+Context variant (re-hedge at the next bar): 4.98% / −7.18% → also fails.

@@ -932,7 +932,80 @@ def job_batch8p():
     print(f"  hl vault details: {len(keep)}", flush=True)
     save()
 
-JOBS = {"batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+def job_batch8s():
+    """Batch 8 Stage 2 data (#280, #288) + repair probes (docs/PREREG_BATCH8_20261122.md addendum 1)."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    raw = {}
+
+    def save():
+        (OUT / "batch8s_raw.json").write_text(json.dumps(raw))
+    t0, now = int(pd.Timestamp("2024-10-25", tz="UTC").timestamp()), int(time.time())
+    der = {"BTC": "BTC-PERPETUAL", "ETH": "ETH-PERPETUAL"}
+    der.update({c: f"{c}_USDC-PERPETUAL" for c in ("SOL", "XRP", "DOGE", "AVAX", "LINK", "LTC", "BNB", "SUI")})
+    for c, inst in der.items():
+        rows, t = [], t0
+        while t < now:
+            d = get(f"https://www.deribit.com/api/v2/public/get_funding_rate_history?instrument_name={inst}"
+                    f"&start_timestamp={t * 1000}&end_timestamp={min(t + 30 * 86400, now) * 1000}", tries=3)
+            rows += (d or {}).get("result", []) or []
+            t += 30 * 86400
+            time.sleep(0.2)
+        raw[f"deribit_funding|{c}"] = [{"t": x["timestamp"], "r": x.get("interest_1h")} for x in rows]
+        print(f"  deribit funding {c}: {len(rows)}", flush=True)
+    save()
+    for k in range(6):
+        for c, inst in der.items():
+            d = (get(f"https://www.deribit.com/api/v2/public/get_order_book?instrument_name={inst}&depth=50", tries=2) or {}).get("result") or {}
+            if d.get("bids") is not None:
+                raw.setdefault("deribit_books", []).append({"k": k, "coin": c, "inverse": c in ("BTC", "ETH"), "bids": d["bids"], "asks": d["asks"]})
+        print(f"  deribit book snapshot {k + 1}/6", flush=True)
+        save()
+        if k < 5:
+            time.sleep(600)
+    vl = get("https://stats-data.hyperliquid.xyz/Mainnet/vaults", tries=3) or []
+    cut = pd.Timestamp("2026-05-01", tz="UTC").timestamp() * 1000
+    sel = []
+    for v in vl:
+        s_ = v.get("summary", v)
+        try:
+            tvl = float(s_.get("tvl") or 0)
+        except (TypeError, ValueError):
+            tvl = 0.0
+        if float(s_.get("createTimeMillis") or 0) < cut and (s_.get("isClosed") or tvl >= 50_000):
+            sel.append(s_)
+    sel = sorted(sel, key=lambda x: -float(x.get("tvl") or 0))[:3000]
+    raw["hl_vault_list"] = sel
+    print(f"  hl vaults: {len(vl)} listed, {len(sel)} selected ({sum(1 for x in sel if x.get('isClosed'))} closed)", flush=True)
+    for i, s_ in enumerate(sel):
+        d = get("https://api.hyperliquid.xyz/info", {"type": "vaultDetails", "vaultAddress": s_["vaultAddress"]}, tries=4) or {}
+        at = dict(d.get("portfolio") or []).get("allTime") or {}
+        raw[f"hl_vault|{s_['vaultAddress']}"] = {"av": at.get("accountValueHistory"), "pnl": at.get("pnlHistory"),
+                                                "leaderCommission": d.get("leaderCommission")}
+        time.sleep(1.0)
+        if i % 200 == 0:
+            print(f"  vault details {i}/{len(sel)}", flush=True)
+            save()
+    save()
+    # repair probes
+    for day in ("20260801", "20260901", "20261001"):
+        u = ("https://drift-historical-data-v2.s3.eu-west-1.amazonaws.com/program/dRiftyHA39MWEi3m9aunc5MzRF1JYuBsbn6VPcn33UH/"
+             f"market/SOL-PERP/fundingRateRecords/{day[:4]}/{day}")
+        try:
+            with urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=60) as r:
+                txt = r.read().decode()[:3000]
+            print(f"PROBE drift s3 {day}: answered {len(txt)} chars: {txt[:200]!r}", flush=True)
+        except Exception as e:  # noqa: BLE001
+            print(f"PROBE drift s3 {day}: {e}", flush=True)
+    for u in ("https://api-evm.orderly.org/v1/public/funding_rate_history?symbol=PERP_BTC_USDC",
+              "https://api.orderly.org/v1/public/funding_rate_history?symbol=PERP_BTC_USDC",
+              "https://api-evm.orderly.org/v1/public/market_info/funding_history?symbol=PERP_BTC_USDC"):
+        d = get(u, tries=1)
+        print(f"PROBE orderly {u}: {json.dumps(d)[:300] if d else 'no answer'}", flush=True)
+    d = get("https://blue-api.morpho.org/graphql", {"query": "{ vaults(first: 2) { items { address name } } }"}, tries=1)
+    print(f"PROBE morpho minimal: {json.dumps(d)[:300] if d else 'no answer'}", flush=True)
+
+JOBS = {"batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys
