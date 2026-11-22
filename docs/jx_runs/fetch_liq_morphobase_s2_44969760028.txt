@@ -1,0 +1,10 @@
+=== liq_morphobase_s2
+morphobase_s2: 153 markets resolved, 15279 events with tokens
+  rpc exception eth_getTransactionReceipt @ https://base.api.pocket.network: HTTP 429
+  morphobase_s2: receipts 10092/10661 (11 min)
+  morphobase_s2: receipts 10433/10661 (13 min)
+  morphobase_s2: receipts 10571/10661 (14 min)
+  morphobase_s2: receipts 10626/10661 (14 min)
+base: prices 51033 points, 88/97 coins priced
+morphobase_s2: COMPLETE 15279 events, 96 tokens, 18 min
+=== liq_morphobase_s2 done in 1074s  ok 3447 fail 0
