@@ -1,0 +1,35 @@
+# Renders official prop-firm pages for fact verification (docs/PROP_VERIFY_20261122.md). Separate queue from fallback fetch.
+name: prop verify fetch
+on:
+  workflow_dispatch: {}
+  push:
+    branches: [claude/ict-trading-resources-ugh07b]
+    paths: [.github/prop_verify_request.txt]
+permissions:
+  contents: write
+concurrency:
+  group: prop-verify
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.ref_name }}
+      - uses: astral-sh/setup-uv@v5
+      - run: uv sync
+      - run: uv run --with playwright playwright install --with-deps chromium
+      - run: |
+          mkdir -p docs/jx_runs
+          uv run --with playwright python scripts/prop_verify_fetch.py 2>&1 | tee docs/jx_runs/prop_verify_fetch_${{ github.run_id }}.txt
+      - name: Commit
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for f in data/public/propverify docs/jx_runs; do [ -e "$f" ] && git add "$f"; done; true
+          git commit -m "prop verify: rendered official pages (run ${{ github.run_id }})" || exit 0
+          for i in 1 2 3 4; do git pull --rebase -X theirs origin ${{ github.ref_name }} && git push origin HEAD:${{ github.ref_name }} && break; sleep $((i*5)); done
