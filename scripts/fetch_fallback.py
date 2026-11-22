@@ -559,7 +559,42 @@ def job_sp_probe():
         except Exception as e:  # noqa: BLE001
             print(f"PROBE {name}: FAIL {str(e)[:100]}", flush=True)
 
-JOBS = {"sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+def job_sp_data():
+    """#230: Liquity v2 API snapshot (saved whole) + price history of sBOLD / yBOLD / BOLD (addresses read from the API)."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    j = get("https://api.liquity.org/v2/mainnet.json") or {}
+    (OUT / "sp_liquity_api.json").write_text(json.dumps(j))
+    addrs = {}
+
+    def walk(x, path=""):
+        if isinstance(x, dict):
+            for k, v in x.items():
+                walk(v, f"{path}.{k}")
+        elif isinstance(x, list):
+            for i, v in enumerate(x):
+                walk(v, f"{path}[{i}]")
+        elif isinstance(x, str) and x.startswith("0x") and len(x) == 42:
+            addrs[path] = x
+    walk(j)
+    print("addresses in API:", {k: v for k, v in addrs.items() if "BOLD" in k or "bold" in k.lower()}, flush=True)
+    want = {k: v for k, v in addrs.items() if any(t in k for t in ("sBOLD", "yBOLD", "boldToken", "BOLD"))}
+    rows = []
+    end = int(pd.Timestamp("2026-11-22", tz="UTC").timestamp())
+    for name, a in want.items():
+        t, n = int(pd.Timestamp("2025-05-01", tz="UTC").timestamp()), 0
+        while t < end:
+            d = get(f"https://coins.llama.fi/chart/ethereum:{a.lower()}?start={t}&span=90&period=1d", tries=2)
+            for v in ((d or {}).get("coins") or {}).values():
+                for pnt in v.get("prices", []):
+                    rows.append({"name": name, "address": a, "ts": pnt["timestamp"], "price": pnt["price"]})
+                    n += 1
+            t += 90 * 86400
+            time.sleep(0.5)
+        print(f"  {name} {a}: {n} prices", flush=True)
+    pd.DataFrame(rows).to_parquet(OUT / "sp_prices.parquet", index=False)
+
+JOBS = {"sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys
