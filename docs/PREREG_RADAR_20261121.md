@@ -158,3 +158,11 @@ kill an idea, so failing ideas still cost the whole fetch. From now on:
 First application (`docs/jx_runs/ceiling_20261121.txt`): #217 best-venue carry ceiling 7.8%/yr (HL leg, best 3 of its 12 coins over the last 90 days,
 chosen with hindsight) < 8% → **Stage 0.5 KILL**. #212/#213 majors: ceilings 6.6–9.6% (marginal, data already queued). #214: yCRV 20.7% +
 CRV short funding 12.7% → ceiling 25% (highest of the batch).
+
+## Addendum 8 (2026-11-22): new product caught by the rule-change watcher — MFFU Builder 50K (priced before running)
+Rules from MFFU's own help centre ("Builder Plan 50k - A Comprehensive Guide", 2026-10-21): eval target $3,000, EOD trailing MLL $2,000,
+soft DLL $1,000 (pause), 40 micros, no eval consistency, 1 day minimum; sim funded starts at $0, MLL $2,000 EOD trailing (locks at $0 when the
+peak reaches +$2,000, assumed from "trails up to breakeven"), payouts above a $2,100 buffer, first needs $500 above buffer, later $500 since the
+last payout, 2 qualifying days per cycle, 50% consistency, min $500, cap $2,000, 80/20, 5 sim payouts then live (modelled as the account ending,
+as Lucid); one-time price $153 list ($107 with the 30% code: sensitivity), no activation; one sim-funded account per user. MFFU allows bots
+(PREREG_ROUND3). Same pricing procedure and flag rule as the sweep (no delay; risk $875 under the $1,000 soft DLL).
