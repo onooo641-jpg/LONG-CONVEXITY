@@ -36,3 +36,5 @@ tokenised-gold prices. **#332 not testable** (no index-token NAV source answered
 testable** (no pre-IPO HIP-3 name listed on an exchange in the window). The ticker pattern missed the S&P change table's format, and the unlock
 schedules were truncated, so job `sweep4b` fetches Yahoo prices for every S&P 500 change since 2024-10 (#337; the table also gives S&P's
 announcement dates, which allows a proper look-ahead check of #303) and slimmed unlock schedules with HL candles (#342).
+Event-study Stage 1 slice (fixed before any sweep-4 analysis is run): events in 2026-05-01..2026-10-31; Stage 2: all events 2024-11-01..2026-10-31
+(halves split 2025-11-01).
