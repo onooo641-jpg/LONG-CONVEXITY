@@ -1,0 +1,3 @@
+dt_eod50, entry delay 0 min; flag needs real >= $22,180 (or $18,674 delayed), coin flip >= $5,000, dip >= -$5,280 (-$4,641 delayed)
+DayTraders EOD 50K, $99 [sens]     risk $ 875 | real $   48,602 | coin flip $  13,511 (89%) | dip $ -3,079 | EXTRA SLOT CANDIDATE
+DayTraders EOD 50K, $199 [sens]    risk $ 875 | real $   36,802 | coin flip $  -4,406 (29%) | dip $ -6,989 | -

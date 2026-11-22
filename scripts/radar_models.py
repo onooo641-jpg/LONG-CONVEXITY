@@ -53,7 +53,7 @@ FE_ELITE50 = dataclasses.replace(
     funded_loss_limit=2000, mll_locks_at=2100, lock_level=100.0, funded_scaling=False,
     ladder=((2500.0, 20), (3499.0, 30), (float("inf"), 40)), winning_day_min=150.0,
     winning_days_required=6, payout_share=0.50, payout_cap=2000.0, payout_min=500.0, profit_split=0.90,
-    one_time_price=128.0, reset=128.0, monthly=0.0, activation=0.0, api_monthly=0.0)
+    one_time_price=128.0, reset=89.0, monthly=0.0, activation=0.0, api_monthly=0.0)  # reset $89: own 'Reset fees' page (addendum 13)
 
 # Addendum 8: MFFU Builder 50K (own help centre, 2026-10-21)
 MFFU_BUILDER50 = dataclasses.replace(

@@ -208,3 +208,7 @@ third-party). Risk = min(0.45 × 4,500, 0.875 × 3,000) = $2,025. Same flag rule
   between payouts, 30% consistency, request $500–$2,000, balance must stay ≥ start + $2,000 after the payout (buffer $2,000; request needs
   ≥ $2,600), **100% split**, up to 5 EOD accounts. Evaluation price not readable (loads by script) → **bracket $99 / $199, sensitivity only, not
   ranked or flagged** (as Blue Guardian).
+
+## Addendum 13 (2026-11-22): FuturesElite Elite 50K evaluation reset read from its own page
+FuturesElite "Reset fees" (crawled 2026-11-22): Elite 50K evaluation reset **$89** (the model used a $128 rebuy). Model updated (`reset=89`);
+purchase price stays the $128 directory figure (own page does not show it). Re-priced with the same procedure.
