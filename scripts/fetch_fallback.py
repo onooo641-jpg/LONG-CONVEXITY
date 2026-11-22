@@ -1446,7 +1446,29 @@ def job_repair8():
         print(f"  morpho {name}: {str(out[f'morpho_{name}'])[:200]}", flush=True)
     (OUT / "repair8_raw.json").write_text(json.dumps(out))
 
-JOBS = {"fred9": job_fred9, "batch10b": job_batch10b, "repair8": job_repair8, "sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+def job_addprice():
+    """#303 Stage 2: Yahoo daily prices for every S&P 500 constituent added 2024-11..2026-10 (PREREG_BATCH10 addendum 1)."""
+    import re as r_
+    OUT.mkdir(parents=True, exist_ok=True)
+    w = get("https://en.wikipedia.org/w/api.php?action=parse&page=List_of_S%26P_500_companies&prop=wikitext&format=json&formatversion=2", tries=2)
+    wt = ((w or {}).get("parse") or {}).get("wikitext", "")
+    adds = []
+    for row in wt.split("|-")[1:]:
+        sym = r_.search(r"\{\{(?:NyseSymbol|NasdaqSymbol|Nyse|Nasdaq|Ticker|BZX link|NYSE American link)[^|}]*\|([A-Z.]+)", row)
+        dt = r_.search(r"\|\|\s*(\d{4}-\d{2}-\d{2})\s", row)
+        if sym and dt and "2024-10-01" <= dt.group(1) <= "2026-11-30":
+            adds.append((sym.group(1), dt.group(1)))
+    out = {"wiki_sp500": wt, "adds": adds}
+    for t_ in sorted({a for a, _ in adds}) + ["SPY"]:
+        y = _yahoo(t_.replace(".", "-"), "2y")
+        if y:
+            out[f"yahoo|{t_}"] = y
+        time.sleep(0.5)
+    print(f"  additions in window {len(adds)}; priced {sum(1 for k in out if k.startswith('yahoo|'))}", flush=True)
+    (OUT / "addprice_raw.json").write_text(json.dumps(out))
+
+JOBS = {"addprice": job_addprice, "fred9": job_fred9, "batch10b": job_batch10b, "repair8": job_repair8, "sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys

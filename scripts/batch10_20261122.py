@@ -151,14 +151,14 @@ def p303():
     if not wt:
         print("#303 index additions: no Wikipedia data -> not testable\n")
         return
-    i = wt.find("Selected changes")
-    body = wt[i:] if i >= 0 else wt
+    # The wikitext has no "Selected changes" table; additions are read from the constituents table's "Date added" column (current members
+    # only: a stock added and removed again inside the window is missed).
     ev = []
-    for row in body.split("|-")[1:]:
-        m = re.search(r"\|\s*([A-Z][a-z]+ \d{1,2}, \d{4})", row)
-        syms = re.findall(r"\{\{(?:NyseSymbol|NasdaqSymbol|Nyse|Nasdaq|Ticker|BZX link|NYSE American link)[^|}]*\|([A-Z.]+)", row)
-        if m and syms:
-            ev.append((pd.Timestamp(m.group(1)), syms[0]))  # first symbol in a change row = the addition
+    for row in wt.split("|-")[1:]:
+        sym = re.search(r"\{\{(?:NyseSymbol|NasdaqSymbol|Nyse|Nasdaq|Ticker|BZX link|NYSE American link)[^|}]*\|([A-Z.]+)", row)
+        dt = re.search(r"\|\|\s*(\d{4}-\d{2}-\d{2})\s", row)
+        if sym and dt:
+            ev.append((pd.Timestamp(dt.group(1)), sym.group(1)))
     spy, _ = yahoo("SPY")
     res = []
     for d, tk in ev:
@@ -177,7 +177,7 @@ def p303():
         r = px.at[t1, "close"] / px.at[t0, "close"] - spy.at[t1, "close"] / spy.at[t0, "close"] - 0.001
         res.append((tk, d.date(), r * 100))
     if not res:
-        print(f"#303 index additions: {len(ev)} change rows parsed, no priced events in 2024-11..2026-10 -> not testable (data)\n")
+        print(f"#303 index additions: {len(ev)} constituent rows parsed, no priced events in 2024-11..2026-10 -> not testable (data)\n")
         return
     e = pd.DataFrame(res, columns=["ticker", "effective", "excess_pct"])
     print(f"#303 S&P 500 additions (t-5 -> effective close, vs SPY, 10 bps): {len(e)} events; mean excess {e.excess_pct.mean():.3f}% "

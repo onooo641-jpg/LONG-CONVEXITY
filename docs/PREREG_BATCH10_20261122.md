@@ -33,3 +33,15 @@ Command: `uv run python -m scripts.batch10_20261122 | tee docs/jx_runs/batch10_2
   show 49.89%/yr. That figure is not tradeable as registered. An unhedged position would be a directional bet on illiquid perps.
   The hedgeable list was written into the script during this run, after a first context run had wrongly included ANTH.
 - **#314 index-perp funding carry: KILL** (−2.21%/yr).
+
+## Addendum 1 (2026-11-22): batch-10 Stage 1 so far, and the #303 Stage 2 rule (written before the full price fetch)
+Stage 1 results (`docs/jx_runs/batch10_20261122.txt`): **#301 dividend gap KILL** (22 ex-dates, mean −0.053% per event). **#302 weekend gap
+KILL** (348 trades, −0.332% per trade, 41% hits). **#303 index additions continue** (7 events with prices, mean excess +6.90%, median +5.98%).
+The Wikipedia wikitext has no change table, so additions are read from the constituents table's "Date added" column (current members only).
+Only 7 of the window's additions had Yahoo prices: the fetch took the alphabetically last 200 tickers, a mechanical error.
+**#303 Stage 2 (rule unchanged: buy the close 5 trading days before the effective date, sell at the effective-date close, minus SPY, 10 bps).**
+Universe: every constituent with "Date added" in 2024-11-01..2026-10-31 (prices fetched by job `addprice`). PASS = mean excess > 0.5% per event
+AND t-stat > 2 AND both halves (split 2025-11-01) positive AND annualised return ≥ 8%/yr on capital (one position at a time, overlapping events
+equal-weighted within the capital). Caveat recorded in advance: S&P announces additions about 5 trading days before the effective date, so t−5 is
+often after the announcement. This tests the post-announcement drift only. Removed-again members are missing (survivorship, small over 2 years).
+#304: the unlock list answered; the parser and rule will be registered by addendum 2 before any analysis. #305–#308 wait for job `batch10b`.
