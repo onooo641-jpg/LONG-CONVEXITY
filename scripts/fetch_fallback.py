@@ -1468,7 +1468,130 @@ def job_addprice():
     print(f"  additions in window {len(adds)}; priced {sum(1 for k in out if k.startswith('yahoo|'))}", flush=True)
     (OUT / "addprice_raw.json").write_text(json.dumps(out))
 
-JOBS = {"addprice": job_addprice, "fred9": job_fred9, "batch10b": job_batch10b, "repair8": job_repair8, "sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+def job_sweep4():
+    """Sweep 4 data (docs/PREREG_SWEEP4_20261122.md)."""
+    import re as r_
+    OUT.mkdir(parents=True, exist_ok=True)
+    out = {}
+
+    def save():
+        (OUT / "sweep4_raw.json").write_text(json.dumps(out))
+    end = int(time.time() * 1000)
+    # 330 pump.fun graduated coins + migrated-pool OHLCV
+    coins = []
+    for base in ("https://frontend-api-v3.pump.fun", "https://frontend-api.pump.fun"):
+        for off in range(0, 2000, 50):
+            d = get(f"{base}/coins?offset={off}&limit=50&sort=created_timestamp&order=DESC&includeNsfw=false&complete=true", tries=1)
+            if not isinstance(d, list) or not d:
+                break
+            coins += d
+            time.sleep(0.4)
+        if coins:
+            break
+    out["pump_coins"] = [{k: c.get(k) for k in ("mint", "symbol", "created_timestamp", "complete", "raydium_pool", "pump_swap_pool",
+                                                 "king_of_the_hill_timestamp", "last_trade_timestamp", "usd_market_cap")} for c in coins]
+    print(f"  pump.fun graduated coins: {len(coins)}", flush=True)
+    n = 0
+    for c in out["pump_coins"][:400]:
+        pool = c.get("pump_swap_pool") or c.get("raydium_pool")
+        if not pool:
+            continue
+        o = get(f"https://api.geckoterminal.com/api/v2/networks/solana/pools/{pool}/ohlcv/hour?limit=200&before_timestamp="
+                f"{int((c.get('created_timestamp') or end) / 1000) + 7 * 86400}", tries=2) or {}
+        out[f"pump_ohlcv|{c['mint']}"] = ((o.get("data") or {}).get("attributes") or {}).get("ohlcv_list")
+        n += 1
+        time.sleep(2.2)
+    print(f"  pump pools with OHLCV requested: {n}", flush=True)
+    save()
+    # 332 index tokens probe
+    for u in ("https://api.indexcoop.com/v2/tokens", "https://api.indexcoop.com/tokens", "https://api.indexcoop.com/nav"):
+        d = get(u, tries=1)
+        out[f"indexcoop_probe|{u}"] = d if d is None or len(json.dumps(d)) < 500_000 else "large"
+        print(f"PROBE indexcoop {u}: {'answered' if d else 'no answer'}", flush=True)
+    # 334 Coinbase listings
+    prods = get("https://api.exchange.coinbase.com/products", tries=2) or []
+    usd = [p_ for p_ in prods if isinstance(p_, dict) and p_.get("quote_currency") == "USD"]
+    hl = {a["name"] for a in (get("https://api.hyperliquid.xyz/info", {"type": "meta"}) or {}).get("universe", [])}
+    first = {}
+    for p_ in usd:
+        base_ = p_.get("base_currency")
+        if base_ not in hl:
+            continue
+        t = int(pd.Timestamp("2024-06-01", tz="UTC").timestamp())
+        while t < time.time():
+            c = get(f"https://api.exchange.coinbase.com/products/{p_['id']}/candles?granularity=86400&start={t}&end={t + 299 * 86400}", tries=1)
+            if isinstance(c, list) and c:
+                first[base_] = min(x[0] for x in c)
+                break
+            t += 299 * 86400
+            time.sleep(0.3)
+    out["coinbase_first_day"] = first
+    print(f"  coinbase USD products on HL: {len(first)}", flush=True)
+    for cn in sorted(set(first) | {"BTC"}):
+        k = get("https://api.hyperliquid.xyz/info", {"type": "candleSnapshot", "req": {"coin": cn, "interval": "1d",
+                "startTime": end - 900 * 86400 * 1000, "endTime": end}}, tries=4) or []
+        out[f"hld|{cn}"] = [[x["t"], float(x["c"])] for x in k]
+        time.sleep(0.8)
+    save()
+    # 335 buybacks
+    ov = get("https://api.llama.fi/overview/fees?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true&dataType=dailyHoldersRevenue", tries=2) or {}
+    prot = [p_ for p_ in (ov.get("protocols") or []) if (p_.get("total30d") or 0) > 100_000][:120]
+    plist = {p_["slug"]: p_ for p_ in (get("https://api.llama.fi/protocols", tries=2) or []) if isinstance(p_, dict) and p_.get("slug")}
+    out["buyback_protocols"] = []
+    for p_ in prot:
+        slug = p_.get("slug") or p_.get("name")
+        h = get(f"https://api.llama.fi/summary/fees/{slug}?dataType=dailyHoldersRevenue", tries=1) or {}
+        meta = plist.get(slug, {})
+        gid = meta.get("gecko_id")
+        out["buyback_protocols"].append({"slug": slug, "gecko_id": gid, "mcap": meta.get("mcap"), "chart": h.get("totalDataChart")})
+        if gid:
+            c = get(f"https://coins.llama.fi/chart/coingecko:{gid}?start={int(pd.Timestamp('2024-09-01', tz='UTC').timestamp())}&span=820&period=1d", tries=1)
+            out[f"price|{gid}"] = (((c or {}).get("coins") or {}).get(f"coingecko:{gid}") or {}).get("prices")
+        time.sleep(0.4)
+    print(f"  buyback protocols: {len(out['buyback_protocols'])}", flush=True)
+    c = get(f"https://coins.llama.fi/chart/coingecko:bitcoin?start={int(pd.Timestamp('2024-09-01', tz='UTC').timestamp())}&span=820&period=1d", tries=2)
+    out["price|bitcoin"] = (((c or {}).get("coins") or {}).get("coingecko:bitcoin") or {}).get("prices")
+    save()
+    # 336 / 337 / 338 / 343 Wikipedia + Yahoo
+    for title in ("Nasdaq-100", "Historical_components_of_the_S%26P_500", "List_of_S%26P_500_companies", "Corporate_spin-off",
+                  "List_of_spin-offs", "Cryptocurrency_exchange-traded_fund"):
+        w = get(f"https://en.wikipedia.org/w/api.php?action=parse&page={title}&prop=wikitext&format=json&formatversion=2", tries=2)
+        out[f"wiki|{title}"] = ((w or {}).get("parse") or {}).get("wikitext", "")
+        print(f"  wiki {title}: {len(out[f'wiki|{title}'])} chars", flush=True)
+    tickers = set()
+    for k in ("wiki|Nasdaq-100", "wiki|Historical_components_of_the_S%26P_500"):
+        tickers |= set(r_.findall(r"\{\{(?:NyseSymbol|NasdaqSymbol|Nyse|Nasdaq|Ticker|nasdaq|nyse)[^|}]*\|([A-Z.]{1,6})", out[k]))
+    for t_ in sorted(tickers)[:700]:
+        y = _yahoo(t_.replace(".", "-"), "2y")
+        if y:
+            out[f"yahoo|{t_}"] = y
+        time.sleep(0.35)
+    for t_ in ("SPY", "QQQ", "GC=F"):
+        out[f"yahoo|{t_}"] = _yahoo(t_, "2y")
+    print(f"  yahoo tickers: {sum(1 for k in out if k.startswith('yahoo|'))}", flush=True)
+    save()
+    # 339 tokenised gold
+    for nm, key in (("paxg", "ethereum:0x45804880de22913dafe09f4980848ece6ecbaf78"), ("xaut", "ethereum:0x68749665ff8d2d112fa859aa293f07a622782f38")):
+        c = get(f"https://coins.llama.fi/chart/{key}?start={int(pd.Timestamp('2024-09-01', tz='UTC').timestamp())}&span=820&period=1d", tries=2)
+        out[f"price|{nm}"] = (((c or {}).get("coins") or {}).get(key) or {}).get("prices")
+    # 342 unlock schedules probe
+    lst = get("https://defillama-datasets.llama.fi/emissionsProtocolsList", tries=2) or []
+    out["emissions_list"] = lst if isinstance(lst, list) else []
+    got = 0
+    for name in (out["emissions_list"] or [])[:150]:
+        nm = name if isinstance(name, str) else (name or {}).get("name")
+        if not nm:
+            continue
+        d = get(f"https://defillama-datasets.llama.fi/emissions/{nm}", tries=1)
+        if d:
+            out[f"emission|{nm}"] = d if len(json.dumps(d)) < 400_000 else {"truncated": True, "keys": list(d)[:20] if isinstance(d, dict) else None}
+            got += 1
+        time.sleep(0.2)
+    print(f"  emission schedules: {got}", flush=True)
+    save()
+
+JOBS = {"sweep4": job_sweep4, "addprice": job_addprice, "fred9": job_fred9, "batch10b": job_batch10b, "repair8": job_repair8, "sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys

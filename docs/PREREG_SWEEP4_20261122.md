@@ -25,6 +25,6 @@ Stage 1 KILL < 4%/yr; Stage 2 PASS = both halves ≥ 8%/yr. Costs as stated per 
 | 344 | **Pre-IPO perp → IPO convergence** (HIP-3 pre-IPO perps) | the perp must converge to the listed price | HIP-3 candles + Yahoo first trade | perp premium vs the first listed close; report n and mean gap | → test (few events) |
 | 345 | Memecoin creator / launch rewards | — | — | — | excluded: creativity-dependent (launching and promoting tokens) |
 | 346 | Memecoin sniping / copy-trading top wallets | — | — | — | excluded: bot race / not structural |
-**Count:** 17 mechanisms; 12 go to tests (#330, #332, #334–#339, #342–#344, with #332 / #338 / #342 conditional on data); 1 parked; 4 excluded.
+**Count:** 17 mechanisms; 11 go to tests (#330, #332, #334–#339, #342–#344, with #332 / #338 / #342 conditional on data); 1 parked (#333); 4 excluded (#331, #341, #345, #346); #340 folded into #273.
 Malaysia: DeFi and US stocks via a broker such as IBKR (assumed); pump.fun front-end access from Malaysia **not verified**.
 Command: `uv run python -m scripts.sweep4_20261122 | tee docs/jx_runs/sweep4_20261122.txt`.
