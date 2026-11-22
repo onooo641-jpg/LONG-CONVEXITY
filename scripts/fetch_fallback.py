@@ -1018,7 +1018,68 @@ def job_vxn():
         except Exception as e:  # noqa: BLE001
             print(f"{sid}: FAIL {e}", flush=True)
 
-JOBS = {"vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+def _raw(url, tries=2):
+    for k in range(tries):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (research)"}), timeout=120) as r:
+                return r.read().decode()
+        except Exception as e:  # noqa: BLE001
+            err = e
+            if "404" in str(e):
+                return None
+            time.sleep(2 * (k + 1))
+    print(f"  FAIL {url[:100]} {err}", flush=True)
+    return None
+
+
+def job_batch9():
+    """Batch 9 data (docs/PREREG_BATCH9_20261122.md): FRED series, SPY, Cboe indices, VX futures settlements."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    fx = ["DEXJPUS", "DEXUSAL", "DEXUSNZ", "DEXCAUS", "DEXSZUS", "DEXUSUK", "DEXUSEU", "DEXNOUS", "DEXSDUS", "DEXMXUS", "DEXBZUS", "DEXSFUS",
+          "DEXKOUS", "DEXSIUS", "DEXTHUS", "DEXINUS", "DEXMAUS", "DEXCHUS"]
+    rates = [f"IR3TIB01{c}M156N" for c in ("AU", "NZ", "CA", "CH", "GB", "EZ", "NO", "SE", "MX", "ZA", "JP", "US", "KR", "IN", "BR", "CN")]
+    fred = {}
+    for sid in fx + rates + ["DTB3", "DGS10", "INTDSRMYM193N", "VIXCLS"]:
+        txt = _raw(f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={sid}")
+        if txt:
+            fred[sid] = txt
+        print(f"  fred {sid}: {len(txt.splitlines()) if txt else 'none'}", flush=True)
+        time.sleep(0.3)
+    (OUT / "batch9_fred.json").write_text(json.dumps(fred))
+    spy = _raw("https://query1.finance.yahoo.com/v8/finance/chart/SPY?period1=946684800&period2=%d&interval=1d&events=div" % int(time.time()))
+    print(f"  yahoo SPY: {'ok ' + str(len(spy)) if spy else 'none'}", flush=True)
+    stq = _raw("https://stooq.com/q/d/l/?s=spy.us&i=d")
+    print(f"  stooq SPY: {len(stq.splitlines()) if stq else 'none'}", flush=True)
+    (OUT / "batch9_spy.json").write_text(json.dumps({"yahoo": spy, "stooq": stq}))
+    cb = {}
+    for sym in ("VIX", "VIX3M", "VIX9D", "PUT", "WPUT", "BXM", "BXMD", "BXY", "CLL", "CLLZ", "CNDR", "PPUT", "BFLY", "CMBO", "PUTR", "BXMW", "VXTH",
+                "SPRO", "BXMC", "SPEN"):
+        txt = _raw(f"https://cdn.cboe.com/api/global/us_indices/daily_prices/{sym}_History.csv")
+        if txt:
+            cb[sym] = txt
+        print(f"  cboe {sym}: {len(txt.splitlines()) if txt else 'none'}", flush=True)
+    (OUT / "batch9_cboe.json").write_text(json.dumps(cb))
+    vx = {}
+    for y in range(2013, 2028):
+        for m in range(1, 13):
+            nm, ny = (m % 12) + 1, y + (1 if m == 12 else 0)
+            first = pd.Timestamp(ny, nm, 1)
+            third_fri = first + pd.Timedelta(days=(4 - first.weekday()) % 7 + 14)
+            exp = third_fri - pd.Timedelta(days=30)
+            if exp > pd.Timestamp.now() + pd.Timedelta(days=270):
+                continue
+            for back in (0, 1, 2):
+                d = exp - pd.Timedelta(days=back)
+                txt = _raw(f"https://cdn.cboe.com/data/us/futures/market_statistics/historical_data/VX/VX_{d:%Y-%m-%d}.csv", tries=1)
+                if txt:
+                    vx[f"{d:%Y-%m-%d}"] = txt
+                    break
+            time.sleep(0.1)
+        print(f"  vx contracts through {y}: {len(vx)}", flush=True)
+    (OUT / "batch9_vx.json").write_text(json.dumps(vx))
+
+JOBS = {"batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys
