@@ -1213,7 +1213,60 @@ def job_batch10():
     print(f"  hl candles for notice coins: {sum(1 for k in out if k.startswith('hlc|'))}", flush=True)
     save()
 
-JOBS = {"batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+def job_smallcap():
+    """#320 small-capacity high-reward pools (docs/PREREG_SMALLCAP_20261122.md)."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    pools = pd.DataFrame((get("https://yields.llama.fi/pools") or {}).get("data", []))
+    pools["tvlUsd"] = pd.to_numeric(pools["tvlUsd"], errors="coerce")
+    # wide net on today's list: TVL $50K-$5M and APY >= 30% (selection by the registered thresholds happens day by day in the analysis)
+    u = pools[(pools["tvlUsd"].between(5e4, 5e6)) & ((pools["apyBase"].fillna(0) + pools["apyReward"].fillna(0)) >= 30)]
+    print(f"pools listed {len(pools)}; candidates {len(u)}", flush=True)
+    keep = [c for c in ("pool", "chain", "project", "symbol", "tvlUsd", "apyBase", "apyReward", "stablecoin", "ilRisk", "exposure",
+                        "rewardTokens", "underlyingTokens") if c in u]
+    u[keep].to_parquet(OUT / "smallcap_pools.parquet", index=False)
+    rows = []
+    for i, p in enumerate(u["pool"].head(1500)):
+        for x in (get(f"https://yields.llama.fi/chart/{p}", tries=2) or {}).get("data", []):
+            if x.get("timestamp", "") >= "2025-09-01":
+                rows.append({"pool": p, "ts": x["timestamp"], "tvlUsd": x.get("tvlUsd"), "apyBase": x.get("apyBase"), "apyReward": x.get("apyReward")})
+        if i % 100 == 0:
+            print(f"  charts {i}/{min(len(u), 1500)}", flush=True)
+            pd.DataFrame(rows).to_parquet(OUT / "smallcap_charts.parquet", index=False)
+        time.sleep(0.25)
+    pd.DataFrame(rows).to_parquet(OUT / "smallcap_charts.parquet", index=False)
+    toks = set()
+    for col in ("rewardTokens", "underlyingTokens"):
+        if col in u:
+            for v in u[col].dropna():
+                toks |= {str(t) for t in (list(v) if hasattr(v, "__iter__") and not isinstance(v, str) else [v]) if t}
+    slug = {"Ethereum": "ethereum", "Arbitrum": "arbitrum", "Base": "base", "BSC": "bsc", "Polygon": "polygon", "Optimism": "optimism",
+            "Avalanche": "avax", "Solana": "solana", "Sonic": "sonic", "Hyperliquid L1": "hyperliquid", "Sui": "sui", "Linea": "linea"}
+    chain_of = {}
+    for _, r in u.iterrows():
+        for col in ("rewardTokens", "underlyingTokens"):
+            v = r.get(col)
+            if v is not None and hasattr(v, "__iter__") and not isinstance(v, str):
+                for t in v:
+                    chain_of.setdefault(str(t), slug.get(r["chain"]))
+    px = []
+    t0 = int(pd.Timestamp("2025-09-01", tz="UTC").timestamp())
+    for j, t in enumerate(sorted(toks)[:2500]):
+        ch = chain_of.get(t)
+        if not ch or t.startswith("0x0000000000000000000000000000000000000000"):
+            continue
+        key = f"{ch}:{t}"
+        d = get(f"https://coins.llama.fi/chart/{key}?start={t0}&span=500&period=1d", tries=1)
+        for x in (((d or {}).get("coins") or {}).get(key) or {}).get("prices", []):
+            px.append({"token": t, "chain": ch, "ts": x["timestamp"], "price": x["price"]})
+        if j % 200 == 0:
+            print(f"  token prices {j}/{min(len(toks), 2500)}", flush=True)
+            pd.DataFrame(px).to_parquet(OUT / "smallcap_prices.parquet", index=False)
+        time.sleep(0.2)
+    pd.DataFrame(px).to_parquet(OUT / "smallcap_prices.parquet", index=False)
+    print(f"token price rows {len(px)}", flush=True)
+
+JOBS = {"smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys

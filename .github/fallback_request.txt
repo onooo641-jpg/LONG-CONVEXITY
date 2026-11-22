@@ -2,3 +2,4 @@
 vxn
 batch9
 batch10
+smallcap
