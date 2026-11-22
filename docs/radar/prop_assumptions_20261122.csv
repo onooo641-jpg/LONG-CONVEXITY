@@ -1,0 +1,5 @@
+product,base_model,entry_price,billing,reset_eval,reset_funded,activation_on_pass,drawdown,soft_dll,eval_consistency,eval_time_limit_days,notes,source
+LucidFlex 50K DLL ON,lucidflex50,80.50,one_time,80,,0,2000 EOD,1200,0.40,,"40% eval consistency; no time limit; reset separate from purchase; 50% add-on not assumed to survive a reset","Jx 2026-11-22 (promo) + official help centre"
+LucidFlex 50K DLL OFF,lucidflex50,115.50,one_time,115,,0,2000 EOD,,0.40,,"as above, no DLL","Jx 2026-11-22 (promo) + official help centre"
+DayTraders EOD 50K,dt_eod50,105,one_time,105,,5,2000 EOD,1250,0.50,,"failed evaluation = replacement purchase at $105; $5 activation only when an evaluation passes","Jx 2026-11-22 + official help centre"
+Blueberry Ascent 50K,blueberry_ascent50,98,monthly,125,500,0,2000 EOD,,,30,"subscription months, evaluation resets and funded resets modelled separately; 30-day expiry behaviour unresolved (two variants)","Jx 2026-11-22 + official help centre"

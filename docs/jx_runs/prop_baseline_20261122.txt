@@ -1,0 +1,9 @@
+Frozen 50K baseline (inputs: docs/radar/prop_assumptions_20261122.csv). Friend's NQ trades 2016-01..2026-10, $900 risk.
+Flag rule: real >= $22,180, coin flip >= $5,000, worst dip >= -$5,280. Topstep 50K: $44,359 / $18,046 / -$3,520.
+
+LucidFlex 50K DLL ON                                           | real $  40,545 (91%) | $ 3,744/yr | coin flip $ 21,522 (99%) | dip $ -4,108 | MEETS FLAG RULE
+LucidFlex 50K DLL OFF                                          | real $  34,770 (78%) | $ 3,211/yr | coin flip $ 15,201 (94%) | dip $ -5,648 | -
+DayTraders EOD 50K                                             | real $  47,894 (108%) | $ 4,422/yr | coin flip $ 12,461 (88%) | dip $ -3,265 | MEETS FLAG RULE
+Blueberry Ascent 50K: expiry = $125 evaluation reset; no funded reset | real $  30,747 (69%) | $ 2,839/yr | coin flip $  3,395 (62%) | dip $ -6,086 | -
+Blueberry Ascent 50K: expiry = $125 reset; $500 funded reset used | real $  51,229 (115%) | $ 4,730/yr | coin flip $  9,707 (72%) | dip $-10,666 | -
+Blueberry Ascent 50K: (context) no 30-day limit                | real $  30,099 (68%) | $ 2,779/yr | coin flip $  8,791 (82%) | dip $ -4,410 | MEETS FLAG RULE

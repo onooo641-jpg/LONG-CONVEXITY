@@ -119,3 +119,21 @@ recycle.py uses closed-trade P&L, so intraday vs EOD drawdown variants of LucidD
 | **DayTraders EOD 50K $105 + $5 activation** | **$47,894** | $12,461 | −$3,265 | **yes** |
 | DayTraders S2F 50K $570 / $342 promo | $27,820 / $44,692 | −$8,565 / $15,893 | −$17,360 / −$7,524 | no / no |
 | Blueberry Prime 2-Step / Classic / Flex / Instant Lite | — | — | — | not priced: these plans are not on the futures help centre (they look like Blueberry's CFD plans); rules needed |
+
+## 7. Frozen 50K baseline (Jx, 2026-11-22)
+Inputs live in **`docs/radar/prop_assumptions_20261122.csv`** (promotions and rule changes go there; the script does not change):
+`scripts/prop_baseline_20261122.py` → `docs/jx_runs/prop_baseline_20261122.txt` (identical on re-run). Modelling choices preserved from Jx:
+LucidFlex 40% evaluation consistency, no time limit, reset separate from purchase (50% add-on not assumed to survive a reset); DayTraders failed
+evaluation = replacement purchase at $105, $5 activation only on a pass; Blueberry subscription months, evaluation resets and funded resets
+kept separate, with the 30-day expiry run as variants. Soft DLLs stop the day at the limit (one trade per day in this data).
+| product | real net | per year | coin flip | worst dip | flag rule |
+|---|---|---|---|---|---|
+| LucidFlex 50K DLL ON ($80.50, reset $80, soft DLL $1,200) | $40,545 | $3,744 | $21,522 (99%) | −$4,108 | yes |
+| LucidFlex 50K DLL OFF ($115.50, reset $115) | $34,770 | $3,211 | $15,201 (94%) | −$5,648 | no (dip by $368) |
+| DayTraders EOD 50K ($105 + $5 on pass, replacement $105, soft DLL $1,250) | $47,894 | $4,422 | $12,461 (88%) | −$3,265 | yes |
+| Blueberry Ascent 50K ($98/mo; expiry → $125 reset; no funded reset) | $30,747 | $2,839 | $3,395 (62%) | −$6,086 | no |
+| Blueberry Ascent 50K (… $500 funded resets used) | $51,229 | $4,730 | $9,707 (72%) | −$10,666 | no (dip) |
+| Blueberry Ascent 50K (context: no 30-day limit) | $30,099 | $2,779 | $8,791 (82%) | −$4,410 | yes |
+Caveat (repo convention, as for Topstep): monthly subscriptions are charged for every month of the 2016–26 span, including while funded.
+Malaysia eligibility per Jx: TradeDay, Traders Launch, Take Profit Trader (bots banned) eligible; Bulenox provisional; **Tradeify restricted**;
+The Futures Desk unverified (excluded until support confirms). Registry updated.
