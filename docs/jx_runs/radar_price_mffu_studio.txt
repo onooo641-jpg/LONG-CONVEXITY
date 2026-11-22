@@ -1,0 +1,4 @@
+mffu_studio, entry delay 0 min; flag needs real >= $22,180 (or $18,674 delayed), coin flip >= $5,000, dip >= -$5,280 (-$4,641 delayed)
+MFFU Studio #001 $10K ($140)       risk $ 225 | real $    7,551 | coin flip $  -2,528 (16%) | dip $ -3,696 | -
+MFFU Studio #002 $20K ($280)       risk $ 450 | real $   15,602 | coin flip $  -3,770 (21%) | dip $ -7,098 | -
+MFFU Studio #003 $5K ($75)         risk $ 112 | real $    3,249 | coin flip $  -1,775 (14%) | dip $ -1,980 | -

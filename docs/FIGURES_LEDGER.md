@@ -397,3 +397,4 @@ Raw output for every command above is in `docs/jx_runs/`.
 | PD | #211 Pendle Stage 1 mean annualised | −7.04% (1 depeg in 9) | `uv run python scripts/pendle_20261121.py` | cohorts 2026-05..07 | 2026-11-21 | current |
 | SP1 | #230 Liquity v2 SP deposits / total interest per year / max SP APY | $3,648 / ~$1,040 / 48.2% | Actions `fetch_fallback.py sp_data` → `data/public/sp_liquity_api.json` | snapshot 2026-11-22 | 2026-11-22 | measured (live API, not reproducible later) |
 | RP8 | MFFU Builder 50K: $153 list / $107 code — real, coin flip (profitable), dip | $25,323, $2,022 (62%), −$6,732 / $32,453, $9,759 (85%), −$4,708 | `uv run python scripts/radar_price.py` | 2016-01..2026-10 | 2026-11-22 | current |
+| RP9 | MFFU Studio #001 / #002 / #003: real; coin flip (profitable) | $7,551, −$2,528 (16%) / $15,602, −$3,770 (21%) / $3,249, −$1,775 (14%) | `uv run python scripts/radar_price_one.py mffu_studio` | 2016-01..2026-10 | 2026-11-22 | current, re-run identical |
