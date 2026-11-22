@@ -1,0 +1,3 @@
+=== liq_comet_timing
+liq_comet_timing: crashed AttributeError: 'NoneType' object has no attribute 'get'
+=== liq_comet_timing done in 1s  ok 2 fail 0
