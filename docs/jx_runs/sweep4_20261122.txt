@@ -1,0 +1,24 @@
+Sweep 4. Event Stage 1 slice 2026-05..10 (KILL if mean <= 0); Stage 2 2024-11..2026-10: mean > 0.5%, t > 2, halves > 0, >= 8%/yr.
+
+#330 pump.fun graduation: no complete 24 h outcomes yet -> not testable (data)
+
+#334 Coinbase listing: short HL perp at the listing-day close for 7 days, BTC hedge: events 60 (Stage 1 slice 3): Stage 1 mean 4.946% per event
+  Stage 2 (n 54): mean 0.277%, t 0.03, halves -1.655% / 6.367%, hit 74%, ~7.5%/yr (one position at a time)
+  VERDICT: FAIL
+
+#335 buyback-yield rotation (top-5, short BTC): 28 protocols; Stage 1 2026-08..10 34.68%/yr
+  Stage 2 halves -30.87% / 24.21%
+  VERDICT: FAIL
+
+#339 PAXG vs gold futures: Stage 1 slice 126 days; median premium -0.48%; days |prem| > 1%: 52 (~104/yr); mean excess beyond 1%: 1.03% -> continue to Stage 2
+#339 XAUT vs gold futures: Stage 1 slice 127 days; median premium -0.54%; days |prem| > 1%: 67 (~133/yr); mean excess beyond 1%: 0.95% -> continue to Stage 2
+  (premium vs the front gold future includes a small futures basis; monetising needs issuer mint/redeem with KYC)
+
+  (#337 context) deletions in window 37; still trading 20 days after (priced) 20; acquired / delisted names drop out
+#337 S&P 500 deletions rebound (buy at effective close, 20 trading days, minus SPY): events 20 (Stage 1 slice 5): Stage 1 mean -1.081% per event -> KILL -> FAIL (Stage 1)
+
+  (#342 context) unlock events >= 1% of circulating value with HL prices: 2
+#342 token-unlock shorts (7 d before -> 7 d after, BTC hedge): events 2 (Stage 1 slice 0): Stage 1 mean nan% per event -> KILL -> FAIL (Stage 1)
+
+#303 check (context, not a new verdict): buy at the first close AFTER S&P's announcement, sell at the effective close, minus SPY: n 20, mean 0.17%, median -0.21%, t 0.15; additions where t-5 fell before the announcement: 13 of 20
+

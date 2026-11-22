@@ -59,3 +59,10 @@ often after the announcement. This tests the post-announcement drift only. Remov
   pools trading $268–$35K a day (closes ≈ $0.998). No further test.
 - #304 not tested (the unlock-list parser was never registered); #306 no reference value; #307/#308 Upbit blocks automated requests (403);
   #296 not completed (FTMO FAQ answers and the other CFD firms' rule pages did not render fully); #297 not testable (winners' returns unpublished).
+
+## Addendum 2 (2026-11-22): #303 verdict withdrawn (look-ahead)
+S&P's announcement dates, from the press-release links in Wikipedia's "Historical components of the S&P 500", show that for 13 of 20 dated
+additions the registered entry (close 5 trading days before the effective date) came **before** the announcement. That is look-ahead: the
+registered rule could not be traded. The tradeable version (first close after the announcement → effective close, minus SPY) gives mean
+**+0.17%**, median −0.21%, t 0.15 (n 20; `docs/jx_runs/sweep4_20261122.txt`). The earlier "quarterly rebalance" proxy did not catch this.
+**#303: registered PASS withdrawn → FAIL (look-ahead).**

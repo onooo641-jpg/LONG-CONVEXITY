@@ -176,6 +176,8 @@ def sp_events():
         if not y or not (y.get("chart") or {}).get("result"):
             return None
         r = y["chart"]["result"][0]
+        if not r.get("timestamp"):
+            return None
         idx = pd.to_datetime(r["timestamp"], unit="s", utc=True).tz_convert("America/New_York").normalize()
         return pd.Series(r["indicators"]["quote"][0]["close"], index=idx).dropna()
     return rows, yq

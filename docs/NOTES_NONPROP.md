@@ -164,3 +164,9 @@ resets discounted too). recycle.py gained an optional two-phase evaluation and f
 Failed: #280 (execution), #288, #291, #292, #293, #294, #295, #301, #302, #305 (artefact), #320, #322, #325. **Passed the registered test: #303
 S&P 500 additions** (+3.90% per event, t 2.97; quarterly-only +3.49%, t 2.36), but F4 fails (stock risk, not capped), so it is a near-miss under
 the five-part filter. Open: #324 (needs share prices). Not tested / not testable / not completed: #296, #297, #304, #306, #307, #308, #321.
+
+## 2026-11-22 — correction: #303 fails (look-ahead); sweep 4 verdicts
+S&P's own announcement dates show the registered #303 entry (5 trading days before inclusion) was before the announcement for 13 of 20 dated
+additions. Buying after the announcement earns +0.17% per event (t 0.15). **No non-prop idea has passed a full test.** Sweep 4: #334 Coinbase
+listing short FAIL, #335 buyback rotation FAIL, #337 deletions KILL, #339 tokenised gold open but not credible as measured, 7 not testable
+(memecoin history limited to about 2 days by pump.fun's API; no index-token NAV, spin-off list, Nasdaq-100 change table or ETF list; 2 unlocks).

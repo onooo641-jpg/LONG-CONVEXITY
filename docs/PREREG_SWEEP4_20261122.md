@@ -45,3 +45,17 @@ fetch time, and the 2-year Stage 2 is impossible from this source. #330 is there
 coins that graduated 2–10 days before the fetch, same rule (buy +1 h after migration, sell +24 h, 2% costs; no candle = no trade, the last close
 carries forward). The outcome can only kill or stay "not testable at Stage 2". Coin prices for #335 / #339 are refetched (job `sweep4c`): the
 first fetch asked for a span the price API does not serve.
+
+## Results (2026-11-22; `docs/jx_runs/sweep4_20261122.txt`, identical on re-run)
+| # | result |
+|---|---|
+| 330 | not testable: pump.fun's public API stops at ≈ 912 graduated coins (about 2 days), so no migrated pool had a complete 24 h outcome |
+| 332, 336, 338, 343, 344 | not testable (addendum 1) |
+| 334 Coinbase listing short | **FAIL** (n 54, mean +0.28%, t 0.03, halves −1.66% / +6.37%) |
+| 335 buyback-yield rotation | **FAIL** (Stage 1 34.68%/yr; Stage 2 halves −30.87% / +24.21%) |
+| 337 S&P 500 deletions rebound | **KILL** (Stage 1 mean −1.08% per event, 5 events; 20 of 37 deletions still trading 20 days later) |
+| 339 tokenised gold premium | Stage 1 "continue" (PAXG 52 days, XAUT 67 days beyond ±1%), but the comparison is against **gold futures** (≈ 0.5% contango) with mismatched timestamps (daily token snapshot vs futures close), so most of it is measurement. Stage 2 was not specified numerically and monetising needs issuer mint / redeem with KYC (Malaysia not verified) → **open, not credible as measured** |
+| 342 token-unlock shorts | not testable: only 2 unlocks ≥ 1% of circulating value with HL prices |
+**#303 announcement-date check (context; corrects the batch-10 verdict):** with S&P's own announcement dates (20 additions), buying at the first
+close after the announcement and selling at the effective close gives **mean +0.17%, median −0.21%, t 0.15**. For 13 of the 20, "t−5" fell
+**before** the announcement, so the registered #303 rule used information not yet public. See PREREG_BATCH10 addendum 2.
