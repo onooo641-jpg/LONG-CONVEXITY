@@ -174,6 +174,13 @@ risk, 5m signals and 1m fills.
 | 280 | funding gaps Deribit ↔ HL/dYdX | `docs/PREREG_BATCH8_20261122.md` | return test PASS (16.3% / 9.9%) but execution FAIL: tradeable slice (HL–Deribit, BTC/ETH/SOL/XRP) −1.4% / −0.2% → not flaggable | batch8s_20261122.txt |
 | 288 | Hyperliquid user vaults, top-5 trailing 90 days | same | FAIL Stage 2 without survivorship (−5.6% / −4.9%; worst month −35%) | batch8s_20261122.txt |
 | 291 | friend's NQ trades wrapped in 0DTE options (non-prop copy of the prop free option) | `docs/PREREG_OPTIONWRAP_20261122.md` | FAIL (−$28,411; coin flip −$74,810) | optionwrap_20261122.txt |
+| 292–295 | VIX roll, FX carry, Cboe option indices, levered risk parity (walk-forward, 10% bar) | `docs/PREREG_BATCH9_20261122.md` | all FAIL (each fails a half or the drawdown test) | batch9_20261122.txt |
+| 301, 302 | dividend gap, weekend gap on stock perps | `docs/PREREG_BATCH10_20261122.md` | FAIL Stage 1 | batch10_20261122.txt |
+| 303 | S&P 500 index additions (t−5 → effective, vs SPY) | same (+ addendum 1) | **registered PASS** (+3.90%/event, t 2.97); quarterly-only +3.49%, t 2.36; F4 fails → near-miss under the filter | batch10_20261122.txt |
+| 305 | redemption-floor stables | same | Stage 1 pass is a data artefact (wick lows on thin pools) → not tradeable | same |
+| 304, 306, 307, 308, 296, 297 | unlocks, sUSDe cooldown, Upbit listings/warnings, CFD prop, prop competitions | same | not tested / not testable / not completed (see results) | — |
+| 320, 321 | small high-reward pools; Merkl small campaigns | `docs/PREREG_SMALLCAP_20261122.md` | #320 FAIL; #321 not testable | smallcap_20261122.txt |
+| 322, 324, 325 | thin-venue market making; counterparty/option vaults; small lending markets | `docs/PREREG_SWEEP3_20261122.md` | #322 FAIL, #325 FAIL, #324 open (Stage 2 needs share prices) | sweep3_20261122.txt |
 | 284 | HL HIP-3 cross-dex funding gaps | same | FAIL Stage 1 (−2.08%) | same |
 | 281 | Deribit futures cash-and-carry | same | FAIL Stage 1 (2.62%) | same |
 | 282 | Deribit short ATM straddle ladder | same | FAIL Stage 1 (−30.81%) | same |

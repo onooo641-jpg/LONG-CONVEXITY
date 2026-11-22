@@ -45,3 +45,17 @@ AND t-stat > 2 AND both halves (split 2025-11-01) positive AND annualised return
 equal-weighted within the capital). Caveat recorded in advance: S&P announces additions about 5 trading days before the effective date, so t−5 is
 often after the announcement. This tests the post-announcement drift only. Removed-again members are missing (survivorship, small over 2 years).
 #304: the unlock list answered; the parser and rule will be registered by addendum 2 before any analysis. #305–#308 wait for job `batch10b`.
+
+## Results (2026-11-22; `docs/jx_runs/batch10_20261122.txt`)
+- **#303 S&P 500 additions: registered Stage 2 PASS.** 36 of 39 additions priced; mean excess +3.90% per event (median +3.55%), t-stat 2.97,
+  halves +4.19% / +3.72%, 64% hits; the registered one-position-at-a-time figure is 47.9%/yr. That figure compounds concentrated event windows, so
+  it overstates a realistic capital return. **Look-ahead check (context, done after the verdict):** quarterly-rebalance additions (announced
+  about a week ahead, so t−5 is after the news) n = 22, +3.49%, t = 2.36. Off-cycle additions (often announced 2–5 days ahead, possible
+  look-ahead) n = 14, +4.55%, t = 1.81. Equal-weighting each quarter's additions for 5 days gives roughly 3.5% per quarter ≈ 14–15%/yr before
+  idle-cash interest (rough, not a registered figure). **Five-part filter: F4 (capped downside) fails** (single-stock risk is hedged against
+  SPY, not capped) → not flaggable as a structural pass; reported to Jx as the first non-prop idea to pass a full test, with these caveats.
+  Other caveats: 22–36 events, one regime (2024–26 momentum additions), removed-again members missing, effect historically crowded.
+- **#305 redemption floor: Stage 1 "continue" is a data artefact → not tradeable.** The sub-$1 values are single-trade wicks in daily lows on
+  pools trading $268–$35K a day (closes ≈ $0.998). No further test.
+- #304 not tested (the unlock-list parser was never registered); #306 no reference value; #307/#308 Upbit blocks automated requests (403);
+  #296 not completed (FTMO FAQ answers and the other CFD firms' rule pages did not render fully); #297 not testable (winners' returns unpublished).

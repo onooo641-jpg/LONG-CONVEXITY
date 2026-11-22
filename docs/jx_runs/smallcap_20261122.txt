@@ -1,0 +1,38 @@
+pools 570; chart rows 114834; priced tokens 351
+NOTE: the current DefiLlama list omits dead pools; pools whose chart stops are booked at -50% (survivorship partly corrected)
+
+  f_rw = np.nanmean([PX[t].asof(d) / p0[t] for t in rt if p0.get(t)]) if rt else 1.0
+  f_rw = np.nanmean([PX[t].asof(d) / p0[t] for t in rt if p0.get(t)]) if rt else 1.0
+  f_rw = np.nanmean([PX[t].asof(d) / p0[t] for t in rt if p0.get(t)]) if rt else 1.0
+#320 all pools: Stage 1 2026-08..10 7956.02%/yr on capital; collapses 0, dead charts 0
+    2026-08: 62 eligible; held supernova-cl/WETH-USDT 2000%, zeebu/ZBU 1880%, zeebu/ZBU 1833%, supernova-cl/XAUT-USDT 1234% ...
+    2026-09: 99 eligible; held supernova-cl/WETH-USDT 2000%, supernova-cl/XAUT-USDT 1182%, zeebu/ZBU 928%, blackhole-clmm/WAVAX-USDC 838% ...
+    2026-10: 150 eligible; held supernova-cl/WETH-USDT 2000%, blackhole-clmm/WAVAX-USDC 1255%, zeebu/ZBU 1118%, raydium-amm/PURR-HYPE 1097% ...
+  f_rw = np.nanmean([PX[t].asof(d) / p0[t] for t in rt if p0.get(t)]) if rt else 1.0
+  f_rw = np.nanmean([PX[t].asof(d) / p0[t] for t in rt if p0.get(t)]) if rt else 1.0
+  f_rw = np.nanmean([PX[t].asof(d) / p0[t] for t in rt if p0.get(t)]) if rt else 1.0
+  f_rw = np.nanmean([PX[t].asof(d) / p0[t] for t in rt if p0.get(t)]) if rt else 1.0
+  f_rw = np.nanmean([PX[t].asof(d) / p0[t] for t in rt if p0.get(t)]) if rt else 1.0
+  f_rw = np.nanmean([PX[t].asof(d) / p0[t] for t in rt if p0.get(t)]) if rt else 1.0
+  f_rw = np.nanmean([PX[t].asof(d) / p0[t] for t in rt if p0.get(t)]) if rt else 1.0
+  f_rw = np.nanmean([PX[t].asof(d) / p0[t] for t in rt if p0.get(t)]) if rt else 1.0
+  f_rw = np.nanmean([PX[t].asof(d) / p0[t] for t in rt if p0.get(t)]) if rt else 1.0
+  f_rw = np.nanmean([PX[t].asof(d) / p0[t] for t in rt if p0.get(t)]) if rt else 1.0
+  f_rw = np.nanmean([PX[t].asof(d) / p0[t] for t in rt if p0.get(t)]) if rt else 1.0
+  f_rw = np.nanmean([PX[t].asof(d) / p0[t] for t in rt if p0.get(t)]) if rt else 1.0
+  f_rw = np.nanmean([PX[t].asof(d) / p0[t] for t in rt if p0.get(t)]) if rt else 1.0
+  f_rw = np.nanmean([PX[t].asof(d) / p0[t] for t in rt if p0.get(t)]) if rt else 1.0
+  f_rw = np.nanmean([PX[t].asof(d) / p0[t] for t in rt if p0.get(t)]) if rt else 1.0
+  f_rw = np.nanmean([PX[t].asof(d) / p0[t] for t in rt if p0.get(t)]) if rt else 1.0
+  monthly (compounded): 25-11 -45.1%, 25-12 -36.7%, 26-01 -45.4%, 26-02 -49.7%, 26-03 +766.4%, 26-04 +22350843596871268.0%, 26-05 +8852289211233756.0%, 26-06 +31588.8%, 26-07 +217.5%, 26-08 +17226592.2%, 26-09 +405.5%, 26-10 +231.1%
+  consistency (addendum 2, context: >= 8 of 12 months positive, no month < -10%): NOT met; strict (addendum 1, context): not met (8 months >= 3.4%, 4 negative)
+  worst drawdown -90.1% (addendum 3 PASS rule: no worse than -30%)
+  Stage 2 2025-11..2026-10: halves 12517.90% / 17417.72%; costs x2 14963.95%; worst month -67.5%; collapses 10, dead 0; $2,248,192/yr on $15K
+  VERDICT: FAIL
+
+#320 stablecoin pools only: Stage 1 2026-08..10 21.27%/yr on capital; collapses 0, dead charts 0
+    2026-08: 3 eligible; held gremlix/USDC 292%, curve-dex/IDAI-IUSDC-IUSDT 113%, uniswap-v4/USDC-REUSDE 94%
+    2026-09: 2 eligible; held curve-dex/IDAI-IUSDC-IUSDT 187%, gremlix/USDC 60%
+    2026-10: 3 eligible; held curve-dex/IDAI-IUSDC-IUSDT 148%, uniswap-v4/USDT.Z-USDT 95%, gremlix/USDC 70%
+  -> KILL -> FAIL (Stage 1)
+

@@ -21,3 +21,11 @@ Report per year 2006–2026, CAGR, worst drawdown, worst year, for 100% FD, 100%
 | 295 | levered stock–bond risk parity | SPY total return + 10-year Treasury total return from FRED DGS10 (duration approximation) + DTB3 | stock weight {40, 50, 60}% × leverage {1, 1.5, 2} × rebalance {monthly} × vol target {none, 10%} = 18; financing DTB3 + 0.5% |
 Malaysia access (Stage 0): all four via a broker such as Interactive Brokers, which serves Malaysian residents (**assumed, not verified**).
 Command: `uv run python -m scripts.batch9_20261122 | tee docs/jx_runs/batch9_20261122.txt`.
+
+## Results (2026-11-22; `docs/jx_runs/batch9_20261122.txt`)
+**A. Benchmark in MYR, 2006–2026:** S&P 500 11.42%/yr (worst drawdown −45.7%, worst year −34.0% in 2008, 4 losing years); 70/30 S&P/FD 9.06%;
+50/50 7.34%; USD T-bills in MYR 2.08%; fixed deposit 2.53%. The FRED Malaysia deposit series has no data for 250 of the months: the 2.5%/yr
+assumption fills them, so the FD line is effectively an assumption.
+**B. All four families FAIL (walk-forward OOS 2016-01..2026-10):** #292 short VIX 6.05% (−1.68% / 14.13%, worst drawdown −63.4%); #293 FX carry
+13.57% (5.69% / 21.65%, −43.4%); #294 Cboe option indices 8.36% (14.61% / 2.63%, −42.4%); #295 levered risk parity 13.46% (21.27% / 6.37%,
+−43.8%). SPY's worst drawdown over the same months was −23.9% (monthly data). Each family fails a half or the drawdown test.

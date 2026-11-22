@@ -1,0 +1,54 @@
+Stage 1 pilots, kill-only (docs/PREREG_BATCH10_20261122.md)
+
+#300 stock-perp funding carry (HIP-3, US-listed shares only: the registered 1:1 share hedge): 44 markets; Stage 1 2026-08..10 -13.28%/yr on capital (92 days) -> KILL -> FAIL (Stage 1)
+  last-week top funding (annualised %): para:GDX 117.2, xyz:GOOGL 14.9, xyz:SNDK 14.8, io:SNDK 14.1, xyz:MSTR 12.1
+
+  (context, not tradeable as registered) all single-name perps incl. pre-IPO / non-US: 144 markets; Stage 1 2026-08..10 49.89%/yr on capital (92 days) -> continue to Stage 2
+  last-week top funding (annualised %): para:UNITREE 374.1, para:TREAD 275.9, io:PRL 198.5, mkts:BVIV 175.6, para:GDX 117.2
+
+#314 index-perp funding carry (HIP-3 index names): 11 markets; Stage 1 2026-08..10 -2.21%/yr on capital (92 days) -> KILL -> FAIL (Stage 1)
+  last-week top funding (annualised %): xyz:KR200 30.7, mkts:SMALL2000 6.8, xyz:XYZ100 5.5, mkts:USTECH 3.1, xyz:JP225 3.0
+
+#301 dividend gap: 22 ex-dates; mean net per event -0.053% (median -0.104%) -> KILL -> FAIL (Stage 1)
+       perp         ex  yield_pct   net_pct
+      km:MU 2026-07-06   0.015376 -0.189237
+      km:MU 2026-10-14   0.015737 -0.188984
+   xyz:AAPL 2026-08-10   0.086171 -0.166557
+  xyz:GOOGL 2026-09-04   0.064237 -0.161259
+     xyz:MU 2026-10-14   0.015737 -0.153550
+  cash:META 2026-09-21   0.078858 -0.144799
+   para:TER 2026-09-04   0.038395 -0.141753
+   xyz:NVDA 2026-09-10   0.111772 -0.137854
+    km:NVDA 2026-09-10   0.111772 -0.121760
+  cash:NVDA 2026-09-10   0.111772 -0.121760
+   flx:NVDA 2026-09-10   0.111772 -0.121760
+   xyz:MSFT 2026-08-20   0.187896 -0.087018
+   para:STX 2026-09-24   0.080099 -0.074368
+   xyz:META 2026-09-21   0.078858 -0.057881
+   xyz:COST 2026-07-24   0.158737 -0.038723
+    xyz:XLE 2026-09-21   0.590888 -0.000558
+   xyz:ORCL 2026-07-10   0.346693  0.021068
+     km:RTX 2026-08-14   0.331096  0.031767
+   xyz:ORCL 2026-10-09   0.368487  0.049021
+     xyz:BX 2026-08-03   1.009785  0.068090
+     xyz:MU 2026-07-06   0.015376  0.235508
+   para:VST 2026-09-21   0.163503  0.338431
+
+#302 weekend gap (fade > 1% weekend moves, 09:00-10:00 ET Monday): 348 trades; mean -0.332% per trade, hit rate 41% -> KILL -> FAIL (Stage 1)
+
+#303 S&P 500 additions (Stage 2; t-5 -> effective close, vs SPY, 10 bps): 36 of 39 additions priced; mean excess 3.903% (median 3.550%)
+/home/user/LONG-CONVEXITY/scripts/batch10_20261122.py:204: Pandas4Warning: Sorting by default when concatenating all DatetimeIndex is deprecated.  In the future, pandas will respect the default of `sort=False`. Specify `sort=True` or `sort=False` to silence this message. If you see this warnings when not directly calling concat, report a bug to pandas.
+  D_ = pd.concat(daily, axis=1).mean(axis=1).groupby(level=0).mean()
+  t-stat 2.97; halves (mean per event) 4.194% / 3.717%; one-position-at-a-time return 47.90%/yr; hit rate 64%
+  VERDICT: PASS
+
+#304 token-unlock shorts: unlock calendar answered (parser to be registered by addendum) -> pending addendum
+
+/home/user/LONG-CONVEXITY/scripts/batch10_20261122.py:232: Pandas4Warning: Sorting by default when concatenating all DatetimeIndex is deprecated.  In the future, pandas will respect the default of `sort=False`. Specify `sort=True` or `sort=False` to silence this message. If you see this warnings when not directly calling concat, report a bug to pandas.
+  L = pd.concat(lows, axis=1).min(axis=1)
+#305 redemption-floor stables (LUSD, BOLD, feUSD): 92 days; days with low < $1 - 0.5%: 77; deepest low 0.8147; total 154.70%/yr (4% park + half-capture) -> continue to Stage 2
+
+#306 sUSDe cooldown discount: no reference value -> not testable (no data)
+
+#307 / #308 Upbit notices: did not answer -> not testable (no data)
+

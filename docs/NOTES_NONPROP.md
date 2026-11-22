@@ -159,3 +159,8 @@ each pilot costs money → Jx decides.
 List and desk checks: `docs/IDEAS_SWEEP2_20261122.md`; tests: `docs/PREREG_BATCH10_20261122.md`. So far: #300 stock-perp carry and #314
 index-perp carry KILL; #298 sale-window buying (prop side) roughly doubles the number of products meeting the flag rule at 40% off (optimistic:
 resets discounted too). recycle.py gained an optional two-phase evaluation and fee refund (for the CFD firms in #296); tests pass.
+
+## 2026-11-22 — the 22 queued ideas: verdicts
+Failed: #280 (execution), #288, #291, #292, #293, #294, #295, #301, #302, #305 (artefact), #320, #322, #325. **Passed the registered test: #303
+S&P 500 additions** (+3.90% per event, t 2.97; quarterly-only +3.49%, t 2.36), but F4 fails (stock risk, not capped), so it is a near-miss under
+the five-part filter. Open: #324 (needs share prices). Not tested / not testable / not completed: #296, #297, #304, #306, #307, #308, #321.

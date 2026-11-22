@@ -18,3 +18,8 @@ Command: `uv run python -m scripts.sweep3_20261122 | tee docs/jx_runs/sweep3_202
 ## Result #323 (2026-11-22; `docs/jx_runs/sweep3_20261122.txt`, identical on re-run): KILL
 −1.36%/yr in 2026-08..10 (4 round trips). Extreme funding has nearly disappeared: coins above 100%/yr trailing-24h funding averaged 1.3 a day
 in 2024, 0.1 in 2025 and 0.1 in 2026. #322/#324/#325 pending the sweep-3 fetch.
+
+## Results #322, #324, #325 (2026-11-22; `docs/jx_runs/sweep3_20261122.txt`)
+**#322 KILL** (flow-weighted edge −6.95 bps; BTC/ETH flow negative; thin pairs ARB/LTC positive but ≈ $15/day to capture). **#325 KILL**
+(−23.41%/yr; collapse penalties). **#324 continue** (94.78%/yr APY-based). Stage 2 needs vault share prices (the APY may omit trader losses,
+the #225 lesson); not available in this fetch → open.

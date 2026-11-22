@@ -1,0 +1,62 @@
+===== A. Benchmark in MYR, 2006-01..2026-10 (SPY: Yahoo adjusted close (dividends included); MY deposit rate: FRED, 250 months filled with 2.5%/yr assumed)
+  100% fixed deposit (MYR)                   CAGR  2.53%  worst drawdown    0.0%  worst year    2.1% (2026)  losing years 0
+  100% USD T-bills in MYR                    CAGR  2.08%  worst drawdown  -19.8%  worst year   -9.8% (2010)  losing years 8
+  100% S&P 500 in MYR                        CAGR 11.42%  worst drawdown  -45.7%  worst year  -34.0% (2008)  losing years 4
+  50/50 S&P/FD (annual rebalance)            CAGR  7.34%  worst drawdown  -23.0%  worst year  -15.8% (2008)  losing years 3
+  70/30 S&P/FD (annual rebalance)            CAGR  9.06%  worst drawdown  -32.5%  worst year  -23.1% (2008)  losing years 4
+
+  per year (%):
+      100% fixed deposit (MYR)  100% USD T-bills in MYR  100% S&P 500 in MYR  50/50 S&P/FD (annual rebalance)  70/30 S&P/FD (annual rebalance)
+2006                       2.5                     -2.1                  8.1                              5.3                              6.4
+2007                       2.5                     -2.2                 -1.5                              0.5                             -0.3
+2008                       2.5                      5.7                -34.0                            -15.8                            -23.1
+2009                       2.5                     -0.7                 25.3                             13.9                             18.5
+2010                       2.5                     -9.8                  3.6                              3.1                              3.3
+2011                       2.5                      2.9                  4.8                              3.7                              4.1
+2012                       2.5                     -3.5                 11.9                              7.2                              9.1
+2013                       2.5                      7.3                 41.8                             22.2                             30.0
+2014                       2.5                      6.7                 21.0                             11.8                             15.5
+2015                       2.5                     22.8                 24.3                             13.4                             17.7
+2016                       2.5                      4.9                 17.1                              9.8                             12.7
+2017                       2.5                     -9.0                  9.8                              6.1                              7.6
+2018                       2.5                      4.2                 -2.5                             -0.0                             -1.0
+2019                       2.5                      1.1                 30.0                             16.3                             21.8
+2020                       2.5                     -1.5                 16.2                              9.4                             12.1
+2021                       2.5                      4.0                 33.8                             18.1                             24.4
+2022                       2.5                      7.7                -13.8                             -5.6                             -8.9
+2023                       2.5                      9.8                 31.6                             17.1                             22.9
+2024                       2.5                      2.3                 21.6                             12.1                             15.9
+2025                       2.5                     -5.5                  6.8                              4.7                              5.5
+2026                       2.1                      3.1                 11.7                              6.9                              8.8
+
+  (context) S&P 500 in USD: CAGR 11.04%, worst drawdown -50.8%; MYR per USD 3.75 -> 4.06
+
+walk-forward: monthly pick of best config on trailing 36 months; OOS 2016-01..2026-10 (halves split 2021-05); PASS = both halves and costs x1.5 CAGR >= 10.0% and worst drawdown no worse than SPY's over the same months
+
+#292 data: 171 VX contracts, 2013-05-20..2026-11-20; VIX3M yes
+===== #292 VIX futures roll-down (short): 48 configs; OOS months with data 130
+  walk-forward OOS 2016-01..2026-10: CAGR 6.05%; halves -1.68% / 14.13%; costs x1.5 3.82%; worst drawdown -63.4% (SPY same months -23.9%); switches 23
+  most-picked: e0.5/VX1/gt1.0/none (68x); e0.5/VX1/always/none (44x); e0.5/VX2/gt1.0/none (7x)
+  (context) best fixed configs over OOS in hindsight: e0.5/VX1/gt1.0/none 14.41%; e0.3/VX1/gt1.0/none 10.47%; e0.5/VX1/always/none 9.57%
+  VERDICT: FAIL
+
+#293 data: 13 currencies with FX and rates: ['JP', 'AU', 'NZ', 'CA', 'CH', 'GB', 'EZ', 'NO', 'SE', 'MX', 'ZA', 'KR', 'CN']; months 1971-01..2026-11
+===== #293 FX carry: 36 configs; OOS months with data 129
+  walk-forward OOS 2016-01..2026-10: CAGR 13.57%; halves 5.69% / 21.65%; costs x1.5 12.32%; worst drawdown -43.4% (SPY same months -23.9%); switches 24
+  most-picked: k1/low/lev2/none (55x); k1/low/lev2/vix25 (35x); k1/USD/lev2/vix25 (9x)
+  (context) best fixed configs over OOS in hindsight: k1/low/lev2/none 20.74%; k1/low/lev2/vix25 19.44%; k1/low/lev2/vt10 17.47%
+  VERDICT: FAIL
+
+#294 Cboe indices available: ['PUT', 'WPUT', 'BXM', 'BXMD', 'BXY', 'CLL', 'CLLZ', 'CNDR', 'PPUT', 'BFLY', 'CMBO', 'PUTR', 'BXMW', 'VXTH', 'SPRO', 'BXMC', 'SPEN']
+===== #294 Cboe option-strategy indices: 34 configs; OOS months with data 130
+  walk-forward OOS 2016-01..2026-10: CAGR 8.36%; halves 14.61% / 2.63%; costs x1.5 8.09%; worst drawdown -42.4% (SPY same months -23.9%); switches 14
+  most-picked: SPEN/x1.5 (68x); VXTH/x1.5 (36x); SPRO/x1.5 (9x)
+  (context) best fixed configs over OOS in hindsight: SPEN/x1.5 16.60%; VXTH/x1.5 15.67%; PPUT/x1.5 15.26%
+  VERDICT: FAIL
+
+===== #295 levered stock-bond risk parity: 18 configs; OOS months with data 130
+  walk-forward OOS 2016-01..2026-10: CAGR 13.46%; halves 21.27% / 6.37%; costs x1.5 12.70%; worst drawdown -43.8% (SPY same months -23.9%); switches 8
+  most-picked: w60/L2.0/vt10 (53x); w60/L2.0/none (50x); w40/L2.0/vt10 (25x)
+  (context) best fixed configs over OOS in hindsight: w60/L2.0/none 14.60%; w60/L2.0/vt10 13.84%; w50/L2.0/vt10 13.05%
+  VERDICT: FAIL
+

@@ -34,3 +34,8 @@ The addendum-1 strict test is still reported (context).
 Jx: requiring more consistency than Topstep shows is too strict. Topstep is judged only on yearly net, a coin-flip check and its worst dip.
 **PASS = both halves ≥ 50%/yr AND costs ×2 ≥ 30%/yr AND worst peak-to-trough drawdown no worse than −30% of capital.** The monthly tiers
 (addendum 2: ≥ 8/12 months positive, no month < −10%; addendum 1: strict) are reported as context only.
+
+## Results (2026-11-22; `docs/jx_runs/smallcap_20261122.txt`): #320 FAIL, #321 not testable
+Stablecoin pools: Stage 1 21.27%/yr < 25% → KILL. All pools: the model output is not credible (thousands of %/yr driven by price spikes of
+tiny tokens in single-asset pools); it fails anyway on worst drawdown −90.1% and F4. #321: Merkl's per-opportunity history endpoints return 404
+→ not testable.
