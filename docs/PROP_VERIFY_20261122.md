@@ -46,3 +46,25 @@ Rapid EOD 50K (myfundedfutures.com/plans/rapid-eod): target $3,000, EOD MLL $2,0
 activation fee, funded buffer $2,100, min payout $500, $500 net profit since last payout, daily payouts, 90/10. Pro 50K: $159 promo / $265 list,
 80/20, bi-weekly, up to $100K per payout. Builder 50K: $92 promo / $153 list, 1-day pass, $1K soft daily pause, payouts every 48 h, 80/20, one
 account per user.
+
+## 3. Prices read from official pricing pages / public checkouts (pass 2, 2026-11-22; list price / current promotion)
+| product | official price | model | status |
+|---|---|---|---|
+| Topstep 50K Standard | $49/mo, reset $49, activation $149 | same | verified |
+| Topstep 50K No-Activation | $95/mo ($85 sale), reset $85 | — | new option, priced $45,335 |
+| TTP Futures Prime 50K | $99 one-time, reset $79 | same | verified |
+| **TTP Futures Instant 50K** | **$499** (client-area quick checkout) | [sens] $299 / $499 | **resolved: $499 → $43,076 / $8,750 / −$11,214, not flagged** |
+| Goat Funded Futures "GOAT Daily" 50K | $198 list / $89 promo, reset $90, target $3,000, EOD $2,000, 40%/50% consistency, no activation | Goat EOD [sens] $150/$250 | product renamed; re-price pending rules |
+| FundedNext Futures 50K | $141.99 list / $74.99 promo, target $2,500, EOD MLL $1,500, 40% consistency, reset $82.99 | Rapid Pro 50K (other rules) | differs → re-price pending |
+| Blueberry Ascent 50K | $139/mo list / $55.60 promo | check | pending |
+| Funded Futures Network MAX Standard 50K | $178 list / $53.40 promo, target $3,000, EOD $2,000, 5 days | not modelled | new |
+| Tradeify 50K Evaluation | $376 list / $263 promo, target $3,500, static $1,500, soft DLL $900, split 80/10/10 | Select Flex 50K (other rules) | differs → re-price pending |
+| Bulenox 50K | $175 one-time, target $3,000, drawdown $2,500, no DLL | Momentum (loses) | pending |
+| Top One Futures 50K | $189 list / $39 promo, EOD static, reset $35, activation $189 → $142 | not modelled (alert-assisted) | new |
+| Purdia EOD 50K | $179 list / $107.40, activation $130 → $1, copy trading allowed | not modelled | new |
+| Take Profit Trader 50K | $170/month; page states "No trading bots" | — | bots banned (confirms registry) |
+| MFFU Builder / Rapid / Rapid EOD / Pro 50K | $153 / $209 / $275 / $265 list ($92 / $125 / $165 / $159 promo) | various | firm restricted for Malaysia |
+| Alpha Standard 50K | $129/mo ($64.50 promo), reset $109 | same | firm restricted for Malaysia |
+| Blue Guardian futures 50K | $209 ($146 with code) | various | firm restricted for Malaysia |
+| Lucid (Flex / Daily / Direct) | **not readable**: site shows a bot-verification page to automated browsers (not circumvented) | — | only Jx can read the checkout |
+| DayTraders EOD / S2F 50K | **not readable**: only the 25K EOD tab renders ($80 promo); list range EOD 25K $309 … 300K $1,599, S2F $370–$825 | [sens] | pending (product checkout pages) |
