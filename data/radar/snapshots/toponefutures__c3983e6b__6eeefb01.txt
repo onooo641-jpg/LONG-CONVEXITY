@@ -7,7 +7,7 @@ General Rules
 What is the Limit for Funded Accounts Per Household?
 What is the Limit for Funded Accounts Per Household?
 The maximum number of active funded accounts allowed per household, the Live Funded restriction, and the copy trading rules between household members.
-Updated over a month ago
+October 22, 2026
 Table of contents
 The limits below represent the maximum number of active funded accounts allowed per household . These limits apply to the entire household combined, that is, across every person living at the same address, not per individual trader.
 Example: a household may hold a maximum of 10 Ignite Funded accounts in total. This cap is shared by everyone in the home. If one member holds 6 Ignite Funded accounts, the remaining members can hold no more than 4 between them.
@@ -51,7 +51,7 @@ Related Articles
 Maximum Contracts Explained
 What is the Maximum Number of Accounts I Can Trade?
 Path to Trading Live
-Overview of the Instant Sim Funded Program
+Copy Trading Policy
 Elite Daily V2 – Maximum Account Rules
 Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
 Table of contents

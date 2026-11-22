@@ -17,13 +17,13 @@ USDCHF 0.84027 +0.00%
 AUDUSD 0.66172 +0.00%
 USDCAD 1.43502 +0.00%
 NZDUSD 0.54682 +0.00%
-BTCUSD 57,870.14 −0.25%
-ETHUSD 1,640.44 −0.10%
-BNBUSD 525.72 −0.24%
-XRPUSD 0.8959 −0.13%
-SOLUSD 68.10 −0.13%
-ADAUSD 0.13941 −0.29%
-DOGEUSD 0.05309 −0.41%
+BTCUSD 60,271.59 +0.14%
+ETHUSD 1,683.65 +0.02%
+BNBUSD 550.54 +0.37%
+XRPUSD 0.9306 −0.21%
+SOLUSD 70.41 +0.16%
+ADAUSD 0.14431 −0.07%
+DOGEUSD 0.05523 +0.00%
 WTI 84.823 +0.00%
 BRENT 93.418 +0.00%
 SP 6,953.80 +0.00%
@@ -38,13 +38,13 @@ USDCHF 0.84027 +0.00%
 AUDUSD 0.66172 +0.00%
 USDCAD 1.43502 +0.00%
 NZDUSD 0.54682 +0.00%
-BTCUSD 57,870.14 −0.25%
-ETHUSD 1,640.44 −0.10%
-BNBUSD 525.72 −0.24%
-XRPUSD 0.8959 −0.13%
-SOLUSD 68.10 −0.13%
-ADAUSD 0.13941 −0.29%
-DOGEUSD 0.05309 −0.41%
+BTCUSD 60,271.59 +0.14%
+ETHUSD 1,683.65 +0.02%
+BNBUSD 550.54 +0.37%
+XRPUSD 0.9306 −0.21%
+SOLUSD 70.41 +0.16%
+ADAUSD 0.14431 −0.07%
+DOGEUSD 0.05523 +0.00%
 WTI 84.823 +0.00%
 BRENT 93.418 +0.00%
 SP 6,953.80 +0.00%
@@ -280,7 +280,7 @@ A device, an internet connection, and a trading strategy. Select your account si
 How can I start earning?
 Pass the SimFi™ Challenge by hitting the profit target while staying within the guardrails. Once you reach the SimFi™ Performance Account stage and meet the payout conditions, you can request payouts based on your validated performance data.
 Where is your proof?
-$81M+ in payouts processed since 2021, verified independently on PropFirmMatch, and PayoutJunction. Our Discord community of 42,314+ traders is open - ask anyone who has been through the process.
+$81M+ in payouts processed since 2021, verified independently on PropFirmMatch, and PayoutJunction. Our Discord community of 42,359+ traders is open - ask anyone who has been through the process.
 Get in contact with us directly from this site with our live customer support or at our help center
 Quick links
 Challenges

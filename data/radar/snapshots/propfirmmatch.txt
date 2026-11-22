@@ -204,7 +204,7 @@ Favorite 0/5
 New
 All Firms
 Firms 15 results
-Data updated 27 min ago
+Data updated 9 min ago
 Firm
 Rank / Reviews
 Country / Years
@@ -215,9 +215,9 @@ Promo
 Actions
 Th
 The5ers
-100340
+100359
 4.7
-1437
+1438
 reviews
 United Kingdom, years in operation: 10 10+
 FX, Indices, Metals, Crypto, Energy, Stocks FX
@@ -232,7 +232,7 @@ MATCH
 Firm
 E8
 E8 Markets
-39157
+39164
 4.8
 498
 reviews
@@ -249,7 +249,7 @@ MATCH
 Firm
 Cr
 Crypto Fund Trader
-39505
+39534
 4.2
 113
 reviews
@@ -267,7 +267,7 @@ Firm
 4
 FT
 FTMO
-44340
+44346
 4.5
 220
 reviews
@@ -284,9 +284,9 @@ Firm
 5
 Aq
 AquaFunded
-17025
+17039
 4.4
-342
+344
 reviews
 Dubai (UAE), years in operation: 2 2
 FX, Indices, Metals, Crypto, Other Commodities FX
@@ -301,7 +301,7 @@ Firm
 6
 WS
 WSFunded
-359
+360
 3.8
 51
 reviews
@@ -319,7 +319,7 @@ Firm
 7
 Ma
 Maven
-48239
+48248
 4.2
 801
 reviews
@@ -354,7 +354,7 @@ Firm
 9
 Bl
 Blueberry Funded
-26277
+26280
 4.1
 635
 reviews
@@ -372,7 +372,7 @@ Firm
 10
 To
 Top One Trader
-30306
+30310
 4.4
 237
 reviews
@@ -423,7 +423,7 @@ Firm
 13
 Or
 Orion Funded
-391
+393
 Less than
 20 reviews
 Dubai (UAE), years in operation: 3 3
@@ -457,7 +457,7 @@ Firm
 15
 Ho
 Hola Prime
-3195
+3198
 4.4
 210
 reviews
@@ -475,7 +475,7 @@ View All Firms
 PFM TV Watch live. Stay ahead
 Live trading, partner reviews, founder interviews, and practical trading education.
 FTMO Futures Challenge Explained (2026) | FTMO Futures Challenge Review
-3.6K views • about 1 month ago
+3.7K views • about 1 month ago
 Watch Latest Video
 Partner Reviews
 FTMO Futures Challenge Explained (2026) | FTMO Futures Challenge Review
@@ -596,7 +596,7 @@ Guest interview
 Watch & Learn
 Updated Oct 14, 2026
 83.9K Subscribers
-991 Videos
+992 Videos
 Trading Insights
 Live trading, interviews, and prop firm updates
 Subscribe

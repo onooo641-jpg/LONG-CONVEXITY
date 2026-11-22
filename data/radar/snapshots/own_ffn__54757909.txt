@@ -21,12 +21,12 @@ Every completed trader payout, straight from our payout ledger. Names are masked
 Accounts
 300,000+
 Total payouts
-2,934
+2,835
 Total paid
-$5,413,584
-Live ledger Updated Nov 20, 2026 Identities masked
+$5,321,605
+Live ledger Updated Nov 18, 2026 Identities masked
 Total paid over time
-Nov 26 $5,413,584 paid to date
+Nov 26 $5,321,605 paid to date
 Payout history
 Trader
 Paid date
@@ -34,68 +34,68 @@ Method
 Requested
 Paid
 Receipt
-J••••• B•••••
-20 Nov 2026
-Rise
-Requested $1,158
-$1,158
-View receipt
-A••••• A••••
-20 Nov 2026
-Rise
-Requested $116.93
-$116.93
-View receipt
-M••••• L•••
-20 Nov 2026
-Rise
-Requested $194.50
-$194.50
-View receipt
-E••••• R•••••
-20 Nov 2026
-Rise
-Requested $720
-$720
-View receipt
-A•••• B•••••
+A•• L••
 18 Nov 2026
 Rise
-Requested $303.97
-$303.97
+Requested $500
+$500
 View receipt
 M•••• R•••••
 18 Nov 2026
 Rise
-Requested $3,474
-$3,474
+Requested $3,600
+$3,600
 View receipt
 B••••• T•••••
 18 Nov 2026
 Rise
-Requested $1,363.54
-$1,363.54
-View receipt
-A••• L•••••
-18 Nov 2026
-Rise
-Requested $538.47
-$538.47
+Requested $1,413
+$1,413
 View receipt
 A•• L••
 18 Nov 2026
 Rise
-Requested $482.50
-$482.50
+Requested $500
+$500
+View receipt
+A••• L•••••
+18 Nov 2026
+Rise
+Requested $558
+$558
+View receipt
+A•••• B•••••
+18 Nov 2026
+Rise
+Requested $315
+$315
 View receipt
 C•••• W••••
 18 Nov 2026
 Rise
-Requested $868.50
-$868.50
+Requested $900
+$900
+View receipt
+Y••••• M•••••
+18 Nov 2026
+Rise
+Requested $2,023
+$2,023
+View receipt
+J••••• A•••••
+15 Nov 2026
+Rise
+Requested $12,150
+$12,150
+View receipt
+S••••• D•••••
+13 Nov 2026
+Rise
+Requested $1,187
+$1,187
 View receipt
 Newer
-Page 1 of 294
+Page 1 of 284
 Older
 Choose Your Account
 Account Type

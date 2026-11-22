@@ -7,7 +7,7 @@ Payouts
 Payout rules (On-Demand)
 Payout caps and buffers for E8 Signature explained
 Payout caps and buffers for E8 Signature explained
-Updated over a week ago
+Updated over 2 weeks ago
 Payout caps and buffers are part of the payout requirements on the performance stage of E8 Signature.
 Payout buffer:
 ​

@@ -1,4 +1,4 @@
-FundedNext AML Policy | Anti-Money Laundering Compliance
+FundedNext Labs - Limited Slots. Real Experiments.
 CFDs
 Futures
 Labs
@@ -9,78 +9,94 @@ CFDs
 Futures
 Labs
 Rewards
-AML Policy
-Last updated: 5 May 2026
-On this page
-Policy Statement
-Policy Objectives
-Definition of Money Laundering
-Laws and Regulations
-Investigatory Powers and Criminal Enforcement
-Defenses
-Detection of Unusual / Suspicious Transactions
-Risk Rating
-Resolutions and Sanctions
-GrowthNext F.Z.E.'s Obligations
-Avoiding Shell Bank / Organization
-Designated Compliance Team
-Policy Statement
-GrowthNext F.Z.E. is firmly committed to the prevention of money laundering, terrorist financing, and the evasion of sanctions. Unwavering compliance with applicable laws and regulations shall serve to safeguard GrowthNext F.Z.E.'s reputation and uphold public trust in GrowthNext F.Z.E.
-Therefore, it is advisable for GrowthNext F.Z.E. to establish an anti-money laundering (AML) policy that delineates the prescribed measures to be observed, aiming to ensure the efficient execution of guidelines that support the attainment of overarching organizational goals, while guaranteeing conformity with the regulatory structure governing designated non-financial businesses and professions (DNFBP) in the United Arab Emirates (UAE). The scope of the AML policy should encompass all entities in which GrowthNext F.Z.E. holds ownership interests.
-Policy Objectives
-The objectives of the AML policy are as follows:
-To establish precise and unambiguous policies for GrowthNext F.Z.E. concerning the matters of money laundering, terrorist financing, and the avoidance of sanctions.
-To provide clear and concise explanations of the compliance responsibilities that all employees are obligated to fulfil.
-To offer guidance to employees regarding their daily business activities in alignment with legal requirements.
-To foster a work environment that upholds a culture of adherence to legal regulations in the manner in which employees execute their duties.
-Definition of Money Laundering
-As per the provisions outlined in Article 2 of the Anti-Money Laundering (AML) Law, the offense of money laundering is defined as the engagement in any of the following activities with the knowledge that the funds involved are derived from a criminal act:
-Transfers or moves the proceeds, or disposes of the funds/proceeds intending to conceal or disguise their source.
-Conceals or disguises the true nature, source or location of the proceeds including the manner of disposal.
-Acquires, possesses or uses the proceeds on receiving them.
-Assists the person who committed the felony/misdemeanour to escape punishment.
-It is essential to note that money laundering is always an intentional act and cannot be committed through mere negligence. However, GrowthNext F.Z.E. acknowledges that acts exhibiting gross negligence, particularly those involving the failure to report suspicions of criminality to the Financial Intelligence Unit (FIU), may incur criminal liability.
-Laws and Regulations
-The laws which GrowthNext F.Z.E. is subjected to and with which GrowthNext F.Z.E. complies:
-UAE Federal Law No. 20 of 2018: Anti-Money Laundering and Combating the Financing of Terrorism and Financing of Illegal Organizations (AML Law).
-Cabinet Resolution No. 10 of 2019: Implementing Regulations of Federal Law No. 20 of 2018 (AML Regulations).
-UAE Federal Law No. 7 of 2014: Combating Terrorism Crimes.
-UAE Federal Penal Law No. 3 of 1987 as amended (Penal Code).
-UAE Federal Penal Procedures Law No. 35 of 1992 as amended (Penal Procedures Law).
-UAE Federal Law No. 5 of 2012: Combating Cyber Crimes.
-SCA Decision (17/R) of 2010 Concerning Anti-Money Laundering and Terrorism Finance Combating Procedures.
-UAE Central Bank Regulations Concerning Procedures for Anti-Money Laundering, in particular Circular No. 24/2000 and its amendments by Notices No. 1045/2004 and 2922/2008.
-Any United Nations sanctions that are applicable through ratification by the UAE (singularly and collectively, Regulation and Regulations).
-Pursuant to the Regulations, it is mandated for financial institutions in the United Arab Emirates (UAE) to adopt a risk-based approach in order to fulfil their legal obligations. This requirement applies to various activities such as customer onboarding and conducting periodic anti-money laundering (AML) assessments throughout the course of business operations. GrowthNext F.Z.E. is fully committed to implementing a robust and meticulous risk-based compliance program, in strict accordance with both legal mandates and industry-leading best practices.
-Investigatory Powers and Criminal Enforcement
-The oversight of reporting and probing suspected illicit financial conduct in the United Arab Emirates (UAE) falls within the purview of the Financial Intelligence Unit (FIU) operating under the UAE Central Bank. The Public Prosecution retains the authority to initiate legal proceedings pertaining to these offenses, which are adjudicated within the criminal courts system.
-Defenses
-The Regulations do not provide any legally established defenses specific to charges of money laundering. The defenses applicable under United Arab Emirates (UAE) law for money laundering charges are not distinct from those available for any other criminal offense.
-It is important to note that criminal proceedings related to money laundering cannot be resolved through settlement or plea agreements. Once the Public Prosecutor determines that actions amount to a money laundering offense, prosecutorial discretion is not allowed, and the Public Prosecutor is obligated to refer the case to the criminal courts.
-Detection of Unusual / Suspicious Transactions
-As an entity operating within the retail business-to-consumer (B2C) model, GrowthNext F.Z.E.'s transactions predominantly involve individual transactions ranging from $9 to $999. In adherence to the legal obligations, a meticulous manual approval process is diligently undertaken for each transaction, employing the principles of due diligence. This rigorous approach serves the purpose of effectively detecting any transaction that may exhibit characteristics of being abnormal, irregular, or indicative of potential suspicious activity. By diligently scrutinizing and individually approving every transaction, GrowthNext F.Z.E. aims to safeguard business operations and maintain compliance with relevant regulations and standards governing the prevention of money laundering, terrorist financing, and other illicit activities.
-Although GrowthNext F.Z.E. is currently in the third year of its operational existence, a robust and diligent approach to document retention has been implemented. Consequently, all relevant records and documents shall be securely preserved for a minimum period of five years, in adherence to legal and regulatory requirements. This practice ensures the availability of necessary information for future reference, compliance audits, potential legal proceedings, or any other legitimate purpose within the prescribed time frame.
-Risk Rating
-Within GrowthNext F.Z.E., a distinct and dedicated risk management unit exists, tasked with the meticulous manual examination of individual client profiles. With an emphasis on comprehensive risk assessment, due diligence is conducted thoroughly on the customers subsequent to evaluating their risk rating. This process allows the team to effectively assess and mitigate potential risks associated with the clientele in compliance with applicable legal and regulatory frameworks.
-Resolutions and Sanctions
-In situations where there is non-compliance with the established standards, the Regulations offer administrative sanctions to ensure the appropriate implementation of the regulatory framework. These sanctions may include various measures such as warnings, monetary fines, limitations or suspension of business activities, apprehension of board members and senior management who are held accountable for violating the regulations, as well as curtailment of the authority of the board and senior management through the appointment of a temporary observer.
-In the event of a conviction for a money laundering offense, the Anti-Money Laundering (AML) Law prescribes punitive measures which encompass financial penalties ranging from AED 100,000 to AED 10 Million, along with the possibility of imprisonment for a period of up to 10 years.
-GrowthNext F.Z.E.'s Obligations
-GrowthNext F.Z.E. shall:
-Identify potential risks associated with criminal activities within its operations.
-Conduct ongoing assessments of these identified risks.
-Establish internal controls and policies to effectively manage the identified risks.
-Implement appropriate due diligence procedures, as further elaborated below.
-Adhere to and implement any United Nations (UN) directives pertaining to the prevention of financing terrorism and the proliferation of weapons of mass destruction.
-Avoiding Shell Bank / Organization
-GrowthNext F.Z.E. conducts a meticulous manual review and approval of each transaction, applying the principles of due diligence. This rigorous procedure serves as a preventive measure against establishing business relationships with shell banks or organizations.
-On an annual basis, employees at GrowthNext F.Z.E. should be provided training on AML/CFT. The training includes:
-Identification and reporting of transactions that must be reported to government authorities.
-Examples of different forms of money laundering / terrorist financing involving the company's products / services.
-Information on internal policies to prevent money laundering / terrorist financing and escalate suspicious activity and red flags.
-GrowthNext F.Z.E. should maintain documentation of its training sessions, which may include records of attendance and pertinent instructional materials. The company should ensure that any newly enacted or amended anti-money laundering / counter-terrorism financing (AML/CFT) laws, as well as updates to existing AML/CFT policies or practices, are communicated to the appropriate staff members.
-Designated Compliance Team
-The Risk Management team should regularly perform compliance testing to ensure adherence to legal requirements. A Designated Compliance Officer should hold responsibility for the comprehensive Anti-Money Laundering / Combating the Financing of Terrorism (AML/CFT) program, including the coordination and oversight of its day-to-day operations.
+Trustpilot 79k+ reviews
+loved by 82k+
+We sponsor your
+trading journey
+Rewards in 24h
+or get $1,000 extra
+One-time fee
+No recurring costs
+24/7 support
+in 44 languages
+Explore Labs Plan How Labs Works
+$ 306.9 $ 0.0 M+
+Total Rewarded
+4 0 hours
+Avg. Processing Time
+55 0 %
+Repeat Rewards
+Recognized globally
+From winning awards to 25+ global meetups, millions of traders choose FundedNext daily. One community. Growing every day.
+$ 306.9 $ 0.0 M+
+Total Rewarded
+4 0 hours
+Avg. Processing Time
+55 0 %
+Repeat Rewards
+$ 306.9 $ 0.0 M+
+Total Rewarded
+4 0 hours
+Avg. Processing Time
+55 0 %
+Repeat Rewards
+Explore
+Labs Plan
+The launchpad for FundedNext's boldest trading innovations.
+Explore All
+CFDs-FNL:005
+Hit The Target, Same Day Reward
+Select Your Own Reward
+Hit Profit Target Once
+No DLL, News Trading Allowed
+Same Day Reward
+Upcoming FundedNext Labs
+Be the first to know. Join the waitlist for upcoming beta plans and exclusive early-access releases.
+Get Notified
+Choose your next challenge
+Explore Labs
+$ 316.1 $ 0.0 M
++
+Rewards sent to thousands of traders in 170+ countries. 99.99% processed within 24 hours, no delays.
+4 0 hrs
+Avg. processing time
+451.7 0.0 K+
+FundedNext Accounts
+55 0 %
+Repeat Rewards
+Discover Rewards
+A community that adds value
+Join FundedNext traders discussing markets, reviewing trades, and learning from real prop trading experience every day
+Discord community
+Real-time discussion with traders worldwide. Ask questions, share ideas, and stay connected.
+CFDs Server Futures Server CFDs Server Futures Server
+YouTube community
+Subscribe. Trader stories, reward journeys, and important update on the FundedNext YouTube channel.
+Subscribe Subscribe
+Powered by a global team
+Hundreds of people, across multiple hubs, focused on one thing: FundedNext traders
+About Our Company
+600 0 +
+Team Members
+5 0
+Global Offices
+170 0 +
+Country Served
+24 0 /7
+Operations
+Support that never
+clocks out
+120+ support agents operate from five global hubs, 24 hours a day, 7 days a week. Day or night, the first response to your question arrives in under 25 seconds.
+Languages spoken
++ more
+Get Support Get Support Get Support Read FAQs Read FAQs Read FAQs
+95 0 %
+customer satisfaction score
+60 0 sec
+avg. response time
+Start your FundedNext challenge
+Thousands of traders are already getting rewarded by FundedNext. The only one missing from that list is you. Your challenge is open now.
+Start Challenge
 Product and Offerings
 FundedNext CFDs
 FundedNext Futures
@@ -127,7 +143,4 @@ Jurisdictional Restrictions: The FundedNext Entities do not offer services to re
 Risk Warning: Trading in forex, CFDs, futures, derivatives and digital assets involve substantial risk of loss. Past performance is not indicative of future results.
 Fees and Refunds: Fees are paid solely for access to the evaluation services. They are not deposits or investments and are not used for trading. Refunds are governed by our Terms & Conditions.
 In case of any conflict, our Terms & Conditions prevail.
-Not a Deposit | Not FDIC Insured | May Lose Value
 FundedNext-Copyright © 2026
-Trust and Security |
-Subscribe to newsletter
