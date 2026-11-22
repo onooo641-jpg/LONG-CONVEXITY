@@ -1,0 +1,63 @@
+=== liq_mantle
+mantle: month anchors 71144444..102680444, resume at block 74449444
+  rpc exception eth_getLogs @ https://rpc.mantle.xyz: HTTP 400
+  mantle: getLogs failed 74449444-74469443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 74539444-74559443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 74629444-74649443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 74719444-74739443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 74809444-74829443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 74899444-74919443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 74989444-75009443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 75079444-75099443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: scanned to block 75169444/102680443 (775 events, 3 min)
+  mantle: getLogs failed 75169444-75189443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 75259444-75279443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 75349444-75369443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 75439444-75459443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 75529444-75549443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 75619444-75639443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 75709444-75729443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 75799444-75819443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 75889444-75909443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 75979444-75999443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 76069444-76089443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 76159444-76179443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 76249444-76269443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: scanned to block 76339444/102680443 (1063 events, 7 min)
+  mantle: getLogs failed 76339444-76359443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 76429444-76449443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 76519444-76539443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 76609444-76629443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 76699444-76719443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 76789444-76809443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 76879444-76899443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 76969444-76989443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 77059444-77079443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 77149444-77169443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 77239444-77259443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 77329444-77349443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 77419444-77439443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 77509444-77529443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 77599444-77619443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: scanned to block 77689444/102680443 (1415 events, 12 min)
+  mantle: getLogs failed 77689444-77709443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 77779444-77799443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 77869444-77889443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 77959444-77979443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 78049444-78069443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 78139444-78159443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 78229444-78249443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 78319444-78339443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 78409444-78429443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 78499444-78519443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 78589444-78609443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 78679444-78699443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 78769444-78789443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 78859444-78879443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 78949444-78969443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: scanned to block 78979444/102680443 (1660 events, 18 min)
+  mantle: getLogs failed 79039444-79059443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 79129444-79149443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 79219444-79239443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 79309444-79329443: https://rpc.mantle.xyz: HTTPError: HTTP 400
+  mantle: getLogs failed 79399444-79419443: https://rpc.mantle.xyz: HTTPError: HTTP 400
