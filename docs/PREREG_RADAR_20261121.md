@@ -193,3 +193,8 @@ Same procedure and flag rule as the sweep.
   (directory; own page loads by script). Sensitivity (`docs/jx_runs/ttp_sens_20261122.txt`, labelled): $59.40 → $53.5K / $21.7K (100%);
   $149 → $37.8K / $4.2K (67%, flag fails); $199 → $29.1K / −$5.7K; 3-min manual entry → $33.4K / $10.7K. The flag depends on the price being ≤ ~$120.
 - Traders Launch 100K / 200K: $722 / $4,371 real, coin flip −$13.6K / −$24.4K → not flagged (1%-of-account drawdown is too tight for this strategy).
+
+## Addendum 11 (2026-11-22): TTP Futures Prime 150K (before running)
+Same TTP rules as addendum 10 at the 150K size (own support pages): target $9,000, EOD trailing $4,500 locking at start, daily pause $3,000,
+150 micros, reward cap $5,000 (50% of profit), 5 profitable days ≥ $150, 30-day challenge, 40% eval consistency; price **$289** (directory list;
+third-party). Risk = min(0.45 × 4,500, 0.875 × 3,000) = $2,025. Same flag rule (reference Topstep 50K, as in the sweep).

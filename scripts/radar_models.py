@@ -89,6 +89,9 @@ def _tl(dd, target, micros, price):
 
 MODELS = {
     "ttp_prime50": [("TTP Futures Prime 50K ($99)", TTP_PRIME50, 875)],
+    "ttp_prime150": [("TTP Futures Prime 150K ($289)", dataclasses.replace(
+        TTP_PRIME50, profit_target=9000, loss_limit=4500, combine_max_contracts=150, funded_loss_limit=4500, mll_locks_at=4500,
+        payout_cap=5000.0, one_time_price=289.0, reset=289.0), 2025)],
     "traders_launch": [("Traders Launch 100K ($159)", _tl(1000.0, 2000.0, 20, 159.0), 450),
                        ("Traders Launch 200K ($299)", _tl(2000.0, 4000.0, 40, 299.0), 900)],
     "mffu_studio": [("MFFU Studio #001 $10K ($140)", _studio(10_000, 140.0, 500.0, 1000.0, 10, 250.0), 225, Policy.IMMEDIATE),
