@@ -14,10 +14,17 @@ matches the model), **differs** (official text differs → model corrected and r
 | **Blue Guardian Futures** | **RESTRICTED for Futures** (CFD allowed) | help.blueguardian.com/en/articles/18426607 (2026-11-13) |
 | Alpha Capital Group (CFD) | available (Malaysia in its checkout list) | alphacapitalgroup.uk/resources/alpha-capital-country-availability-2026 |
 | Funded Futures Network, Traders Launch, Top One Futures, FXIFY | Malaysia selectable in the checkout country list (available, unless a separate list says otherwise) | their checkout pages |
-| Topstep, Lucid, TTP, DayTraders, Tradeify, TradeDay, Goat, Blueberry, FundedNext, TFD, Bulenox, FTMO | no restriction found yet; deep help-centre crawl (pass 3) pending | — |
+| **Goat Funded Futures** | **RESTRICTED** | help.goatfundedfutures.com/en/articles/14094470-which-countries-are-restricted |
+| Topstep | not on its ineligible list (list updated 2026-11-17; no Malaysia mention in 81 help articles) | help.topstep.com/en/articles/8284116 |
+| Lucid Trading | not on its restricted list (2026-10-08) | support.lucidtrading.com/en/articles/11404636-restricted-countries |
+| DayTraders | not on its restricted list | daytraders.com/help/articles/17704103-who-can-sign-up |
+| FTMO | not on its residency-restricted list | ftmo.com/en/faq/who-can-join-ftmo/ |
+| The Trading Pit, Blueberry | no Malaysia mention in 45 / 160 help articles | support.thetradingpit.com, help.blueberryfutures.com |
+| FundedNext | sign-up not restricted; Malaysia is on its card-payout restriction list only | help.fundednext.com/en/articles/8020084 |
+| TradeDay, Tradeify, TFD, Bulenox, Traders Launch, The5ers | help centres did not render (0–1 pages) → **not verified** | — |
 **Consequence:** the multi-firm plan (Topstep + Lucid + MFFU, `docs/PREREG_PORTFOLIO2_20261120.md`) includes a firm that does not accept
 Malaysian residents. The flagged FuturesElite Nitro / Elite and the near-miss Alpha Standard and Blue Guardian products are not available to a
-Malaysian resident either. (The friend's own account, on the friend's computer, depends on the friend's residence, not Jx's.)
+Malaysian resident either, nor is Goat Funded Futures. (The friend's own account, on the friend's computer, depends on the friend's residence, not Jx's.)
 
 ## 2. Product rules
 ### Topstep 50K (benchmark) — verified, with one better option found
@@ -68,3 +75,32 @@ account per user.
 | Blue Guardian futures 50K | $209 ($146 with code) | various | firm restricted for Malaysia |
 | Lucid (Flex / Daily / Direct) | **not readable**: site shows a bot-verification page to automated browsers (not circumvented) | — | only Jx can read the checkout |
 | DayTraders EOD / S2F 50K | **not readable**: only the 25K EOD tab renders ($80 promo); list range EOD 25K $309 … 300K $1,599, S2F $370–$825 | [sens] | pending (product checkout pages) |
+
+### DayTraders — rules verified; bots explicitly allowed; S2F payout targets differ (no effect)
+daytraders.com/help (2026-10-22): "You can use AI, scripts, bots, trade copiers and a VPS, as long as you don't trade in an HFT style".
+EOD 50K: target $3,000 ✔, EOD MLL $2,000 stopping at start ✔, $1,250 daily pause (not modelled; a pause, not a breach), 10 minis / 100 micros ✔,
+50% consistency in the evaluation ✔, 30% per payout cycle ✔, 8 qualifying days of $200 ✔, max $2,000 per request ✔, min balance after payout
+$52,000 ✔ (buffer $2,000), 100% split ✔, $5 activation ✔. S2F 50K: MLL $2,500 ✔, 20% consistency ✔, 10 qualifying days of $200 ✔, max $2,000 ✔,
+**per-cycle profit targets $3,500 / $3,000 / $2,500 (model $500)** → re-priced: unchanged ($55,274 at $199), because the 20% consistency rule
+already forces larger cycles. Prices for the 50K EOD / S2F are still unreadable (only the 25K tab renders).
+### Blueberry Ascent 50K — rules verified; billing differs
+help.blueberryfutures.com/en/articles/12916577: target $3,000 ✔, EOD MLL $2,000 ✔, 2 minis / 20 micros ✔, reset $125 ✔, $200 qualifying days ✔,
+30-day limit. **The official card shows Ascent billed per month** (25K: $139/mo, $55.60 promo); the model used a one-time $245. 50K monthly
+price not rendered → not priced.
+
+## 4. Re-pricing with official rules (`docs/jx_runs/prop_reprice_verified_20261122.txt`)
+| product | before | official rules | flag rule |
+|---|---|---|---|
+| Topstep 50K Standard | $44,359 | $44,359 (55% combine rule has no effect) | yes |
+| **Topstep 50K Consistency path** | — | **$46,492** / $18,005 / −$3,520 | yes (best Topstep option) |
+| Topstep 50K No-Activation | — | $45,335 / $17,715 / −$4,270 | yes |
+| TTP Futures Instant 50K | [sens] $299: $58,276 | **official $499: $43,076 / $8,750 / −$11,214** | no |
+| LucidDaily 50K (no cap, min $500) | [sens] $56,774 / $40,574 | $99: $55,283 / $21,726 / −$4,356; $199: $39,083 / $4,227 / −$8,756 | only if the price is ≈ $99 |
+| DayTraders S2F 50K (official targets) | [sens] $55,274 / $40,474 | unchanged | only if ≈ $199 |
+| FuturesElite Instant 50K (20% consistency, $2,500 buffer) | [sens] $114,682 | $39,117 / $24,832 / −$2,786 | yes, but firm restricted for Malaysia |
+
+## 5. Bottom line for a Malaysian account holder (so far)
+Available, bots allowed, rules verified and meeting the flag rule: **Topstep 50K** (best on the Consistency path, $46,492) and **TTP Futures
+Prime 50K** ($49,057). LucidFlex 50K (rules verified; price behind a bot check) and DayTraders EOD / S2F and LucidDaily (rules verified; price
+unreadable) depend on prices only Jx can read at checkout. MFFU, FuturesElite, Alpha Futures, Blue Guardian Futures and Goat Funded Futures are
+not available to Malaysian residents.

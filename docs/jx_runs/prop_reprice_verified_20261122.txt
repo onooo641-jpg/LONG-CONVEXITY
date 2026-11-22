@@ -1,0 +1,11 @@
+re-priced with official rules; flag rule as the radar (real >= 50% of Topstep, coin flip >= $5,000, dip >= 1.5x Topstep's)
+
+Topstep 50K Standard (+55% combine consistency, official)                              d0 | real $   44,359 | coin flip $  18,046 (98%) | dip $  -3,520 | meets flag rule
+Topstep 50K Consistency path (3 days, 40%, cap $3,000)                                 d0 | real $   46,492 | coin flip $  18,005 (98%) | dip $  -3,520 | meets flag rule
+Topstep 50K No-Activation ($95/mo, reset $85)                                          d0 | real $   45,335 | coin flip $  17,715 (94%) | dip $  -4,270 | meets flag rule
+TTP Futures Instant 50K at official $499                                               d0 | real $   43,076 | coin flip $   8,750 (76%) | dip $ -11,214 | -
+LucidDaily 50K corrected (no cap, min $500) at $99 [sens]                              d0 | real $   55,283 | coin flip $  21,726 (98%) | dip $  -4,356 | meets flag rule
+LucidDaily 50K corrected (no cap, min $500) at $199 [sens]                             d0 | real $   39,083 | coin flip $   4,227 (69%) | dip $  -8,756 | -
+DayTraders S2F 50K corrected (targets $3,500/$3,000) at $199 [sens]                    d0 | real $   55,274 | coin flip $  31,518 (100%) | dip $  -4,378 | meets flag rule
+DayTraders S2F 50K corrected (targets $3,500/$3,000) at $399 [sens]                    d0 | real $   40,474 | coin flip $   9,708 (84%) | dip $  -9,556 | -
+FuturesElite Instant 50K corrected (20% consistency, $2,500 buffer) $199 [restricted MY] d3 | real $   39,117 | coin flip $  24,832 (98%) | dip $  -2,786 | meets flag rule
