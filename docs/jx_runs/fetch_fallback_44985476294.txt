@@ -1,0 +1,150 @@
+=== hype4h
+hype 4h candles: 4302 from 2024-12-05 08:00:00
+=== batch8p
+  FAIL https://data.api.drift.trade/fundingRates?marketName=BTC-PERP <urlopen error [Errno -2] Name or service not known>
+  FAIL https://data.api.drift.trade/market/BTC-PERP/fundingRates <urlopen error [Errno -2] Name or service not known>
+  drift BTC: 0
+  FAIL https://data.api.drift.trade/fundingRates?marketName=ETH-PERP <urlopen error [Errno -2] Name or service not known>
+  FAIL https://data.api.drift.trade/market/ETH-PERP/fundingRates <urlopen error [Errno -2] Name or service not known>
+  drift ETH: 0
+  FAIL https://data.api.drift.trade/fundingRates?marketName=SOL-PERP <urlopen error [Errno -2] Name or service not known>
+  FAIL https://data.api.drift.trade/market/SOL-PERP/fundingRates <urlopen error [Errno -2] Name or service not known>
+  drift SOL: 0
+  FAIL https://data.api.drift.trade/fundingRates?marketName=XRP-PERP <urlopen error [Errno -2] Name or service not known>
+  FAIL https://data.api.drift.trade/market/XRP-PERP/fundingRates <urlopen error [Errno -2] Name or service not known>
+  drift XRP: 0
+  FAIL https://data.api.drift.trade/fundingRates?marketName=DOGE-PERP <urlopen error [Errno -2] Name or service not known>
+  FAIL https://data.api.drift.trade/market/DOGE-PERP/fundingRates <urlopen error [Errno -2] Name or service not known>
+  drift DOGE: 0
+  FAIL https://data.api.drift.trade/fundingRates?marketName=AVAX-PERP <urlopen error [Errno -2] Name or service not known>
+  FAIL https://data.api.drift.trade/market/AVAX-PERP/fundingRates <urlopen error [Errno -2] Name or service not known>
+  drift AVAX: 0
+  FAIL https://data.api.drift.trade/fundingRates?marketName=LINK-PERP <urlopen error [Errno -2] Name or service not known>
+  FAIL https://data.api.drift.trade/market/LINK-PERP/fundingRates <urlopen error [Errno -2] Name or service not known>
+  drift LINK: 0
+  FAIL https://data.api.drift.trade/fundingRates?marketName=SUI-PERP <urlopen error [Errno -2] Name or service not known>
+  FAIL https://data.api.drift.trade/market/SUI-PERP/fundingRates <urlopen error [Errno -2] Name or service not known>
+  drift SUI: 0
+  FAIL https://data.api.drift.trade/fundingRates?marketName=ARB-PERP <urlopen error [Errno -2] Name or service not known>
+  FAIL https://data.api.drift.trade/market/ARB-PERP/fundingRates <urlopen error [Errno -2] Name or service not known>
+  drift ARB: 0
+  FAIL https://data.api.drift.trade/fundingRates?marketName=OP-PERP <urlopen error [Errno -2] Name or service not known>
+  FAIL https://data.api.drift.trade/market/OP-PERP/fundingRates <urlopen error [Errno -2] Name or service not known>
+  drift OP: 0
+  FAIL https://data.api.drift.trade/fundingRates?marketName=LTC-PERP <urlopen error [Errno -2] Name or service not known>
+  FAIL https://data.api.drift.trade/market/LTC-PERP/fundingRates <urlopen error [Errno -2] Name or service not known>
+  drift LTC: 0
+  FAIL https://data.api.drift.trade/fundingRates?marketName=BNB-PERP <urlopen error [Errno -2] Name or service not known>
+  FAIL https://data.api.drift.trade/market/BNB-PERP/fundingRates <urlopen error [Errno -2] Name or service not known>
+  drift BNB: 0
+  deribit funding BTC: 3461
+  deribit funding ETH: 3461
+  deribit funding SOL: 3461
+  deribit funding XRP: 3461
+  deribit funding DOGE: 3461
+  deribit funding AVAX: 3461
+  deribit funding LINK: 3461
+  deribit funding LTC: 3461
+  deribit funding BNB: 3461
+  deribit funding SUI: 2253
+  orderly BTC: 0
+  orderly ETH: 0
+  orderly SOL: 0
+  orderly XRP: 0
+  orderly DOGE: 0
+  orderly AVAX: 0
+  orderly LINK: 0
+  orderly SUI: 0
+  orderly ARB: 0
+  orderly OP: 0
+  orderly LTC: 0
+  orderly BNB: 0
+  hip3 dexes: ['xyz', 'flx', 'vntl', 'hyna', 'km', 'abcd', 'cash', 'para', 'mkts', 'io']
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  hip3 xyz: 147 markets
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  hip3 flx: 16 markets
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  hip3 vntl: 15 markets
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  hip3 hyna: 25 markets
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  hip3 km: 23 markets
+  hip3 abcd: 1 markets
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  hip3 cash: 17 markets
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  hip3 para: 40 markets
+  hip3 mkts: 24 markets
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  hip3 io: 26 markets
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  FAIL https://api.hyperliquid.xyz/info HTTP Error 429: Too Many Requests
+  deribit BTC: 14 futures, dvol ok
+  deribit ETH: 14 futures, dvol ok
+  FAIL https://api.boros.finance/core/v1/markets HTTP Error 403: Forbidden
+PROBE boros https://api.boros.finance/core/v1/markets: no answer
+  FAIL https://boros.pendle.finance/api/core/v1/markets Expecting value: line 1 column 1 (char 0)
+PROBE boros https://boros.pendle.finance/api/core/v1/markets: no answer
+  FAIL https://api-v2.pendle.finance/boros/v1/markets HTTP Error 404: Not Found
+PROBE boros https://api-v2.pendle.finance/boros/v1/markets: no answer
+  kamino reserves: 58
+  FAIL https://aave-api-v2.aave.com/data/rates-history?reserveId=0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0 Expecting value: line 2 column 5 (char 5)
+  aave ethereum WSTETH: no answer
+  FAIL https://aave-api-v2.aave.com/data/rates-history?reserveId=0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2 Expecting value: line 2 column 5 (char 5)
+  aave ethereum WETH: no answer
+  FAIL https://aave-api-v2.aave.com/data/rates-history?reserveId=0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee Expecting value: line 2 column 5 (char 5)
+  aave ethereum WEETH: no answer
+  FAIL https://aave-api-v2.aave.com/data/rates-history?reserveId=0x9d39a5de30e57443bff2a8307a4256c8797a3497 Expecting value: line 2 column 5 (char 5)
+  aave ethereum SUSDE: no answer
+  FAIL https://aave-api-v2.aave.com/data/rates-history?reserveId=0xdac17f958d2ee523a2206206994597c13d831ec7 Expecting value: line 2 column 5 (char 5)
+  aave ethereum USDT: no answer
+  FAIL https://aave-api-v2.aave.com/data/rates-history?reserveId=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48 Expecting value: line 2 column 5 (char 5)
+  aave ethereum USDC: no answer
+  FAIL https://blue-api.morpho.org/graphql HTTP Error 400: Bad Request
+  FAIL https://blue-api.morpho.org/graphql HTTP Error 403: Forbidden
+  morpho markets none, vaults none
+  hl vaults listed: 9478
+  hl vault details: 48
