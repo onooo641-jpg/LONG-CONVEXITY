@@ -1,0 +1,5 @@
+Topstep 50K                      avg $   341/mo | months >= $300:  20% | rolling-12m avg >= $300/mo:  39% | last 36m avg $   751/mo | worst 12m $  -1,561
+LucidFlex 50K                    avg $   289/mo | months >= $300:  22% | rolling-12m avg >= $300/mo:  44% | last 36m avg $   553/mo | worst 12m $  -2,045
+TTP Prime 50K                    avg $   377/mo | months >= $300:  26% | rolling-12m avg >= $300/mo:  45% | last 36m avg $   781/mo | worst 12m $  -1,719
+Topstep+Lucid+TTP (1 each)       avg $ 1,007/mo | months >= $300:  27% | rolling-12m avg >= $300/mo:  61% | last 36m avg $ 2,085/mo | worst 12m $  -5,305
+Topstep x3 (same trades)         avg $ 1,024/mo | months >= $300:  20% | rolling-12m avg >= $300/mo:  56% | last 36m avg $ 2,253/mo | worst 12m $  -4,683
