@@ -1,0 +1,13 @@
+=== liq_ink_pilot
+ink_pilot: month anchors 0..59992789, resume at block 52043989
+  ink_pilot: scanned to block 54723989/59992788 (22 events, 3 min)
+  ink_pilot: scanned to block 57323989/59992788 (46 events, 3 min)
+  ink_pilot: scanned to block 59992789/59992788 (78 events, 4 min)
+ink_pilot: log scan complete, 78 events
+ink_pilot: receipts: 0 cached, 75 to fetch (sampled=False)
+  rpc exception eth_getTransactionReceipt @ https://rpc-qnd.inkonchain.com: HTTP 429
+  ink_pilot: receipts 75/75 (5 min)
+ink_pilot: receipts missing after retries: 0/75 (<=1%, accepted; gas imputed, bot 'unknown')
+ink: prices 4860 points, 8/8 coins priced
+ink_pilot: COMPLETE 78 events, 5 min
+=== liq_ink_pilot done in 297s  ok 1523 fail 0
