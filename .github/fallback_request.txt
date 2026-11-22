@@ -1,3 +1,4 @@
 # jobs for scripts/fetch_fallback.py (one per line)
 vxn
 batch9
+batch10

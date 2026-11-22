@@ -1079,7 +1079,141 @@ def job_batch9():
         print(f"  vx contracts through {y}: {len(vx)}", flush=True)
     (OUT / "batch9_vx.json").write_text(json.dumps(vx))
 
-JOBS = {"batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+def _text(html):
+    import re as r_
+    html = r_.sub(r"(?is)<(script|style|noscript).*?</\1>", " ", html)
+    return r_.sub(r"\s+", " ", r_.sub(r"(?s)<[^>]+>", " ", html)).strip()
+
+
+def _yahoo(sym, rng="2y"):
+    t = _raw(f"https://query1.finance.yahoo.com/v8/finance/chart/{sym}?range={rng}&interval=1d&events=div", tries=2)
+    return json.loads(t) if t else None
+
+
+def job_batch10():
+    """Batch 10 data (docs/PREREG_BATCH10_20261122.md)."""
+    import re as r_
+    OUT.mkdir(parents=True, exist_ok=True)
+    out = {}
+
+    def save():
+        (OUT / "batch10_raw.json").write_text(json.dumps(out))
+    # 1. CFD prop-firm pages (official sites only), shallow same-domain crawl on rule keywords
+    starts = {"ftmo": ["https://ftmo.com/en/faq/", "https://ftmo.com/en/trading-objectives/", "https://ftmo.com/en/"],
+              "fundednext": ["https://fundednext.com/", "https://help.fundednext.com/en/", "https://fundednext.com/competition"],
+              "the5ers": ["https://the5ers.com/", "https://help.the5ers.com/"],
+              "alphacapital": ["https://alphacapitalgroup.uk/", "https://alphacapitalgroup.uk/faq/"],
+              "goatfunded": ["https://www.goatfundedtrader.com/", "https://www.goatfundedtrader.com/faq"],
+              "audacity": ["https://audacitycapital.co.uk/", "https://audacitycapital.co.uk/faq/"]}
+    kw = r_.compile(r"rule|objective|faq|payout|expert|advisor|\bea\b|bot|automat|countr|restrict|competition|pricing|price|challenge|evaluation|"
+                    r"drawdown|loss|refund|scaling|program|account|help|article|collection", r_.I)
+    pages = {}
+    for firm, urls in starts.items():
+        dom = urls[0].split("/")[2]
+        queue, seen = list(urls), set()
+        while queue and len(seen) < 30:
+            u = queue.pop(0)
+            if u in seen:
+                continue
+            seen.add(u)
+            h = _raw(u, tries=1)
+            if not h:
+                continue
+            pages[u] = _text(h)[:60000]
+            for link in r_.findall(r'href="([^"#]+)"', h):
+                if link.startswith("/"):
+                    link = "https://" + dom + link
+                if link.split("/")[2:3] == [dom] or (len(link.split("/")) > 2 and link.split("/")[2].endswith(dom.replace("www.", ""))):
+                    if kw.search(link) and link not in seen and len(queue) < 200:
+                        queue.append(link)
+            time.sleep(0.3)
+        print(f"  pages {firm}: {sum(1 for k in pages if dom.replace('www.', '') in k)}", flush=True)
+    (OUT / "batch10_pages.json").write_text(json.dumps(pages))
+    # 2. HIP-3 stock perps: 1h candles + funding premium (xyz dex)
+    meta = get("https://api.hyperliquid.xyz/info", {"type": "meta", "dex": "xyz"}) or {}
+    names = [a["name"] for a in meta.get("universe", [])]
+    end = int(time.time() * 1000)
+    for nm in names[:80]:
+        c = get("https://api.hyperliquid.xyz/info", {"type": "candleSnapshot", "req": {"coin": nm, "interval": "1h",
+                "startTime": end - 5000 * 3600 * 1000, "endTime": end}}, tries=4) or []
+        out[f"hip3c|{nm}"] = [[x["t"], float(x["o"]), float(x["c"])] for x in c]
+        time.sleep(1.0)
+    print(f"  hip3 candles: {sum(1 for k in out if k.startswith('hip3c|') and out[k])}/{len(names[:80])}", flush=True)
+    save()
+    tick = sorted({nm.split(":")[1] for nm in names[:80]})
+    for t_ in tick + ["SPY", "QQQ", "IWM", "EWY", "EWJ"]:
+        y = _yahoo(t_, "1y")
+        if y:
+            out[f"yahoo|{t_}"] = y
+        time.sleep(0.4)
+    print(f"  yahoo tickers: {sum(1 for k in out if k.startswith('yahoo|'))}", flush=True)
+    save()
+    # 3. S&P 500 changes (Wikipedia wikitext) + prices of added tickers
+    w = get("https://en.wikipedia.org/w/api.php?action=parse&page=List_of_S%26P_500_companies&prop=wikitext&format=json&formatversion=2", tries=2)
+    wt = ((w or {}).get("parse") or {}).get("wikitext", "")
+    out["wiki_sp500"] = wt
+    adds = sorted(set(r_.findall(r"\{\{(?:NyseSymbol|NasdaqSymbol|Nyse|Nasdaq|Ticker)[^|}]*\|([A-Z.]+)", wt)))
+    print(f"  wikipedia sp500 wikitext {len(wt)} chars; symbols {len(adds)}", flush=True)
+    for t_ in adds[-200:]:
+        if f"yahoo|{t_}" not in out:
+            y = _yahoo(t_.replace(".", "-"), "2y")
+            if y:
+                out[f"yahoo|{t_}"] = y
+            time.sleep(0.4)
+    save()
+    # 4. unlock calendar probe
+    for u in ("https://api.llama.fi/emissions", "https://defillama-datasets.llama.fi/emissionsProtocolsList"):
+        d = get(u, tries=1)
+        out[f"emissions|{u}"] = d if d is None or len(json.dumps(d)) < 5_000_000 else "large"
+        print(f"PROBE emissions {u}: {'answered' if d else 'no answer'}", flush=True)
+    save()
+    # 5. GeckoTerminal pools for redemption-floor / cooldown stables
+    for q in ("LUSD", "BOLD", "feUSD", "sUSDe"):
+        d = get(f"https://api.geckoterminal.com/api/v2/search/pools?query={q}", tries=2) or {}
+        pools = sorted(d.get("data", []), key=lambda x: -float((x.get("attributes") or {}).get("reserve_in_usd") or 0))[:3]
+        for pl in pools:
+            net, addr = pl["relationships"]["network"]["data"]["id"], pl["attributes"]["address"]
+            o = get(f"https://api.geckoterminal.com/api/v2/networks/{net}/pools/{addr}/ohlcv/day?limit=1000", tries=2) or {}
+            out[f"gecko|{q}|{pl['attributes'].get('name')}|{net}"] = {"base_is": pl["relationships"]["base_token"]["data"]["id"],
+                                                                     "ohlcv": ((o.get("data") or {}).get("attributes") or {}).get("ohlcv_list")}
+            time.sleep(2.5)
+        print(f"  gecko {q}: {len(pools)} pools", flush=True)
+    d = get("https://coins.llama.fi/chart/ethereum:0x9d39a5de30e57443bff2a8307a4256c8797a3497?start=1730419200&span=800&period=1d", tries=2)
+    out["susde_value"] = d
+    save()
+    # 6. Upbit notices + HL candles for named coins
+    notes = []
+    for u in ("https://api-manager.upbit.com/api/v1/announcements?os=web&page=%d&per_page=50&category=trade",
+              "https://api-manager.upbit.com/api/v1/notices?page=%d&per_page=50"):
+        for pg in range(1, 11):
+            d = get(u % pg, tries=1)
+            items = (((d or {}).get("data") or {}).get("notices") or ((d or {}).get("data") or {}).get("list") or []) if isinstance(d, dict) else []
+            if not items:
+                break
+            notes += items
+            time.sleep(0.5)
+        if notes:
+            break
+    out["upbit_notices"] = notes
+    print(f"  upbit notices: {len(notes)}", flush=True)
+    syms = set()
+    for n in notes:
+        syms |= set(r_.findall(r"\(([A-Z0-9]{2,10})\)", str(n.get("title", ""))))
+    hl = {a["name"] for a in (get("https://api.hyperliquid.xyz/info", {"type": "meta"}) or {}).get("universe", [])}
+    for c in sorted(syms & hl)[:120]:
+        k = get("https://api.hyperliquid.xyz/info", {"type": "candleSnapshot", "req": {"coin": c, "interval": "1h",
+                "startTime": end - 5000 * 3600 * 1000, "endTime": end}}, tries=4) or []
+        out[f"hlc|{c}"] = [[x["t"], float(x["o"]), float(x["c"])] for x in k]
+        time.sleep(1.0)
+    for c in ("BTC",):
+        k = get("https://api.hyperliquid.xyz/info", {"type": "candleSnapshot", "req": {"coin": c, "interval": "1h",
+                "startTime": end - 5000 * 3600 * 1000, "endTime": end}}, tries=4) or []
+        out[f"hlc|{c}"] = [[x["t"], float(x["o"]), float(x["c"])] for x in k]
+    print(f"  hl candles for notice coins: {sum(1 for k in out if k.startswith('hlc|'))}", flush=True)
+    save()
+
+JOBS = {"batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys
