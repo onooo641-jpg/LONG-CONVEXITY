@@ -147,24 +147,33 @@ def p302():
 
 
 def p303():
-    wt = R10.get("wiki_sp500", "")
+    """Stage 1 on the batch-10 fetch; Stage 2 (addendum 1) on job addprice when present."""
+    src = R10
+    if os.path.exists("data/public/addprice_raw.json"):
+        src = json.load(open("data/public/addprice_raw.json"))
+    wt = src.get("wiki_sp500", "")
     if not wt:
         print("#303 index additions: no Wikipedia data -> not testable\n")
         return
-    # The wikitext has no "Selected changes" table; additions are read from the constituents table's "Date added" column (current members
-    # only: a stock added and removed again inside the window is missed).
     ev = []
     for row in wt.split("|-")[1:]:
         sym = re.search(r"\{\{(?:NyseSymbol|NasdaqSymbol|Nyse|Nasdaq|Ticker|BZX link|NYSE American link)[^|}]*\|([A-Z.]+)", row)
         dt = re.search(r"\|\|\s*(\d{4}-\d{2}-\d{2})\s", row)
         if sym and dt:
             ev.append((pd.Timestamp(dt.group(1)), sym.group(1)))
-    spy, _ = yahoo("SPY")
-    res = []
-    for d, tk in ev:
-        if not (pd.Timestamp("2024-11-01") <= d < pd.Timestamp("2026-11-01")):
-            continue
-        px, _ = yahoo(tk)
+
+    def yq(t):
+        y = src.get(f"yahoo|{t}")
+        if not y or not (y.get("chart") or {}).get("result"):
+            return None
+        r = y["chart"]["result"][0]
+        idx = pd.to_datetime(r["timestamp"], unit="s", utc=True).tz_convert("America/New_York").normalize()
+        return pd.Series(r["indicators"]["quote"][0]["close"], index=idx).dropna()
+    spy = yq("SPY")
+    res, daily = [], []
+    window = [(d, tk) for d, tk in ev if pd.Timestamp("2024-11-01") <= d < pd.Timestamp("2026-11-01")]
+    for d, tk in window:
+        px = yq(tk)
         if px is None or spy is None:
             continue
         dd = pd.Timestamp(d, tz="America/New_York")
@@ -174,14 +183,32 @@ def p303():
         t0, t1 = idx[-6], idx[-1]
         if t0 not in spy.index or t1 not in spy.index:
             continue
-        r = px.at[t1, "close"] / px.at[t0, "close"] - spy.at[t1, "close"] / spy.at[t0, "close"] - 0.001
+        r = px[t1] / px[t0] - spy[t1] / spy[t0] - 0.001
         res.append((tk, d.date(), r * 100))
+        seg = (px.loc[t0:t1].pct_change() - spy.reindex(px.loc[t0:t1].index).pct_change()).dropna()
+        seg.iloc[0] -= 0.001
+        daily.append(seg)
     if not res:
-        print(f"#303 index additions: {len(ev)} constituent rows parsed, no priced events in 2024-11..2026-10 -> not testable (data)\n")
+        print(f"#303 index additions: {len(window)} additions in window, none priced -> not testable (data)\n")
         return
     e = pd.DataFrame(res, columns=["ticker", "effective", "excess_pct"])
-    print(f"#303 S&P 500 additions (t-5 -> effective close, vs SPY, 10 bps): {len(e)} events; mean excess {e.excess_pct.mean():.3f}% "
-          f"(median {e.excess_pct.median():.3f}%) -> {'KILL -> FAIL (Stage 1)' if not e.excess_pct.mean() > 0.2 else 'continue to Stage 2'}\n")
+    stage = "Stage 2" if src is not R10 else "Stage 1"
+    print(f"#303 S&P 500 additions ({stage}; t-5 -> effective close, vs SPY, 10 bps): {len(e)} of {len(window)} additions priced; "
+          f"mean excess {e.excess_pct.mean():.3f}% (median {e.excess_pct.median():.3f}%)")
+    if stage == "Stage 1":
+        print(f"  -> {'KILL -> FAIL (Stage 1)' if not e.excess_pct.mean() > 0.2 else 'continue to Stage 2'}\n")
+        return
+    tstat = e.excess_pct.mean() / (e.excess_pct.std(ddof=1) / np.sqrt(len(e))) if len(e) > 1 else float("nan")
+    h1 = e[pd.to_datetime(e.effective) < pd.Timestamp("2025-11-01")].excess_pct.mean()
+    h2 = e[pd.to_datetime(e.effective) >= pd.Timestamp("2025-11-01")].excess_pct.mean()
+    D_ = pd.concat(daily, axis=1).mean(axis=1).groupby(level=0).mean()
+    days = pd.bdate_range("2024-11-01", "2026-10-31", tz="America/New_York")
+    port = D_.reindex(days).fillna(0.0)
+    ann_ret = ((1 + port).prod() ** (252 / len(port)) - 1) * 100
+    ok = e.excess_pct.mean() > 0.5 and tstat > 2 and h1 > 0 and h2 > 0 and ann_ret >= 8
+    print(f"  t-stat {tstat:.2f}; halves (mean per event) {h1:.3f}% / {h2:.3f}%; one-position-at-a-time return {ann_ret:.2f}%/yr; "
+          f"hit rate {(e.excess_pct > 0).mean():.0%}")
+    print(f"  VERDICT: {'PASS' if ok else 'FAIL'}\n")
 
 
 def p304():
