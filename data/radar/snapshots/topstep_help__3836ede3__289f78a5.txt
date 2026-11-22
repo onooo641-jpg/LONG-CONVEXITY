@@ -148,7 +148,7 @@ The term comes from the trading pits — where risk managers would literally tap
 For more details, see Live Account Call-Up/Call-Down Process .
 Related Articles
 Trading Combine® Parameters
-What is the Maximum Loss Limit?
+Topstep Payout Policy
 Live Funded Account Parameters
 Risk Adjustments: High Risk/High Volatility
 What is a Pro Account?

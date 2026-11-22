@@ -204,7 +204,7 @@ Favorite 0/5
 New
 All Firms
 Firms 15 results
-Data updated just now
+Data updated 4 min ago
 Firm
 Rank / Reviews
 Country / Years
@@ -215,7 +215,7 @@ Promo
 Actions
 Th
 The5ers
-100360
+100374
 4.7
 1438
 reviews
@@ -232,7 +232,7 @@ MATCH
 Firm
 E8
 E8 Markets
-39164
+39170
 4.8
 498
 reviews
@@ -249,7 +249,7 @@ MATCH
 Firm
 Cr
 Crypto Fund Trader
-39534
+39549
 4.2
 113
 reviews
@@ -267,7 +267,7 @@ Firm
 4
 FT
 FTMO
-44347
+44353
 4.5
 220
 reviews
@@ -284,7 +284,7 @@ Firm
 5
 Aq
 AquaFunded
-17039
+17047
 4.4
 344
 reviews
@@ -319,7 +319,7 @@ Firm
 7
 Ma
 Maven
-48248
+48249
 4.2
 801
 reviews
@@ -337,7 +337,7 @@ Firm
 8
 Mo
 Moneta Funded
-1522
+1528
 4.8
 129
 reviews
@@ -354,7 +354,7 @@ Firm
 9
 Bl
 Blueberry Funded
-26280
+26284
 4.1
 635
 reviews
@@ -372,7 +372,7 @@ Firm
 10
 To
 Top One Trader
-30310
+30315
 4.4
 237
 reviews
@@ -440,7 +440,7 @@ Firm
 14
 Ci
 City Traders Imperium
-2455
+2456
 4.3
 57
 reviews

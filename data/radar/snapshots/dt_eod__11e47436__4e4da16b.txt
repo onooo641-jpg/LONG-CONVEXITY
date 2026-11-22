@@ -21,7 +21,7 @@ Affiliate Program
 Agreements and Disclaimers
 All Collections Intraday Trail Accounts Trail Drawdown Trail Drawdown
 How the Trail intraday trailing drawdown works and where it stops, by size.
-Updated over a month ago
+October 23, 2026
 Copy for LLM
 Trail accounts use an intraday trailing drawdown : the level follows your highest balance in real time, including open profit, and never moves down. Touching it fails the account.
 How it works
