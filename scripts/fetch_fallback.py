@@ -1657,7 +1657,30 @@ def job_sweep4b():
     print(f"  emission schedules {sum(1 for x in out if x.startswith('emission|'))}; on HL with candles {n}", flush=True)
     (OUT / "sweep4b_raw.json").write_text(json.dumps(out))
 
-JOBS = {"sweep4b": job_sweep4b, "sweep4": job_sweep4, "addprice": job_addprice, "fred9": job_fred9, "batch10b": job_batch10b, "repair8": job_repair8, "sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+def _llama_chart(key, start="2024-09-01"):
+    """Daily prices from coins.llama.fi in <= 300-day chunks (a span above the API's limit returns nothing)."""
+    out, t = [], int(pd.Timestamp(start, tz="UTC").timestamp())
+    while t < time.time():
+        d = get(f"https://coins.llama.fi/chart/{key}?start={t}&span=300&period=1d", tries=2)
+        out += (((d or {}).get("coins") or {}).get(key) or {}).get("prices") or []
+        t += 300 * 86400
+        time.sleep(0.3)
+    return out
+
+
+def job_sweep4c():
+    """Sweep 4 prices again in valid chunks (#335 buyback tokens + BTC, #339 PAXG / XAUT)."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    r = json.load(open(OUT / "sweep4_raw.json"))
+    out = {}
+    ids = sorted({p_["gecko_id"] for p_ in r.get("buyback_protocols", []) if p_.get("gecko_id")} | {"bitcoin", "pax-gold", "tether-gold"})
+    for g in ids:
+        out[f"price|{g}"] = _llama_chart(f"coingecko:{g}")
+    print(f"  prices: {sum(1 for v in out.values() if v)}/{len(ids)} ids with data", flush=True)
+    (OUT / "sweep4c_raw.json").write_text(json.dumps(out))
+
+JOBS = {"sweep4c": job_sweep4c, "sweep4b": job_sweep4b, "sweep4": job_sweep4, "addprice": job_addprice, "fred9": job_fred9, "batch10b": job_batch10b, "repair8": job_repair8, "sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys
