@@ -1153,6 +1153,14 @@ def job_liq_morpho_replay():
                         ag = call(f, "0x245a7bfc")
                         a = "0x" + ag[-40:] if ag and len(ag) >= 66 and int(ag[-40:], 16) != 0 else f
                         addrs.append(a)
+                        # Chainlink proxies change aggregator over time (phases): include every earlier phase aggregator
+                        ph = call(f, "0x58303b10")
+                        if ph and len(ph) >= 66:
+                            for pid in range(1, min(int(ph, 16), 12) + 1):
+                                pa = call(f, "0xc1597304" + format(pid, "x").rjust(64, "0"))
+                                if pa and len(pa) >= 66 and int(pa[-40:], 16) != 0:
+                                    addrs.append("0x" + pa[-40:])
+                        addrs[:] = list(dict.fromkeys(addrs))
             out = addrs if any_ok and addrs else None
         cache[mid] = out
         return out
