@@ -1,0 +1,19 @@
+stage 2: sampled 397, oracle feeds resolved 386, usable 386 (97%); markets 18
+feed check: no-update-in-window share 0.01 -> ok
+IDEAL arm (L=2 blocks): reachable R(events) 0.021  R(value) 0.008  gap==0 0.938  gap<=1 0.979  null R 0.997
+
+post-hoc: reachable share R(events)/R(value) if our delay were L blocks
+L=1  0.021/0.008  L=2  0.021/0.008  L=3  0.021/0.008  L=5  0.021/0.008  L=8  0.008/0.003  L=12 0.008/0.003
+
+descriptive splits (ideal arm): group, usable, R(events), R(value)
+  Jun 2026      215  0.000  0.000
+  Oct 2026      107  0.000  0.000
+  other months   64  0.125  0.105
+  by market (top 5 by events): market, usable, R(events), R(value)
+  0x9103c3b4   147  0.000  0.000
+  0xd4a903dc   119  0.034  0.008
+  0x8793cf30    61  0.000  0.000
+  0xd7520ad1    13  0.000  0.000
+  0x7dc02ff6    12  0.000  0.000
+
+verdict: DROP (R < 5% and R_value < 5%)

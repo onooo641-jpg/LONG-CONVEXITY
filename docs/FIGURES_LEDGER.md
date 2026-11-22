@@ -420,3 +420,9 @@ Raw output for every command above is in `docs/jx_runs/`.
 | FG2 | #208 corrected (fee bug fixed): Stage 1 / halves; fees ×1.5 / ×2 halves | 13.30% / 20.30% / 11.87%; 17.05% / 8.15%; 13.79% / 4.43% | `uv run python scripts/fundgap_20261121.py`; `scripts/fundgap_sens_20261122.py` | 2024-11..2026-10 | 2026-11-22 | current, re-run identical |
 | RF | Refinement R1–R7 chosen variants: year 1 / year 2 / year 2 costs ×1.5 | R1 24.86/17.08/15.96; R2 18.43/−10.20/−10.20; R3 −1.31/−31.76/−33.81; R4 0.65/−27.17/−29.14; R5 23.39/9.26/9.26; R6 11.62/9.79/9.79; R7 17.36/6.36/5.63 | `uv run python scripts/refine_20261122.py` | 2024-11..2026-10 | 2026-11-22 | current |
 | WF1 | Walk-forward OOS halves / all-months costs ×1.5: G1 funding gaps; G5 HYPE; G6 Gains; G1 taker-only (post-hoc) | 12.80 / 18.22 / 14.45; 14.97 / 8.72 / 11.86; 9.61 / 14.06 / 11.46; 8.62 / 12.70 / 5.94 | `uv run python scripts/walkforward_20261122.py` | OOS 2025-05..2026-10 | 2026-11-22 | current, re-run identical |
+
+| # | figure | value | command | window | computed | status |
+|---|---|---|---|---|---|---|
+| MR1 | Morpho Base: share of liquidations in the same block as an oracle price update / within 1 block | 93.8% / 97.9% (random blocks 0.3%) | `uv run python -I scripts/liq_morpho_replay_20261121.py 2` (`docs/jx_runs/liq_morpho_replay_20261121.txt`, identical on re-run; data `data/public/liq_replay_gaps_s2_morphobase.parquet`) | 397 sampled events, 2026-04..10 | 2026-11-22 | measured |
+| MR2 | Reachable share for a watcher 2 blocks after the update: events / bonus value; registered verdict | 2.1% / 0.8%; DROP (< 5% and < 5%) | same | same | 2026-11-22 | measured upper bound at block-level latency |
+| MR3 | Reachable share in stress months June 2026 / October 2026 / other months | 0.0% / 0.0% / 12.5% (value 10.5%) | same | same | 2026-11-22 | measured, descriptive |
