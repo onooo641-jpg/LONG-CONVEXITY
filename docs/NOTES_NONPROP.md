@@ -118,3 +118,10 @@ looks too good → verify first), Blue Guardian Reserve 50K ($150). Blue Guardia
 **Not flagged:** TTP Prime 100K, Goat 1-Day 50K/100K, Goat EOD, all Alpha Zero/Advanced/Direct/Standard-100K, MFFU Pro One-Day, LucidDirect.
 **Pattern:** instant (no-evaluation) accounts with one-time fees and 90–100% splits score very high in the model: each is a cheap ticket whose
 payout chance is high for this bot. Their real prices (mostly script-loaded) decide everything — confirming 6 prices would settle 8 products.
+
+## Radar update (2026-11-22, evening): batch 6 — 20 more non-prop mechanisms (#259–#278)
+One narrow pass, not robust: **#276 hedged native HYPE staking** (24.9% / 9.2% by half on the registered rule; 6.5–8.2% in year 2 without the
+assumed staking yield or at 2× leverage; essentially HYPE funding carry, which fell from 117% to ~10%). Everything else failed or is not testable:
+zero-fee-venue funding gaps and carry (Lighter) lost money in the 31-day pilot; junior/senior tranches and new-chain incentives collapsed; Votium
+bribes are swamped by CVX's −52%/yr; RWA (3.9%), CME basis (2.6%) and reverse carry (6.3%) die at the ceiling; Drift/Umbrella/Paradex lack data.
+No flag to Jx (#276 is reported as marginal; a 3× short on HYPE also carries unmeasured liquidation risk).

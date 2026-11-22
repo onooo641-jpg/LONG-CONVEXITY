@@ -48,3 +48,27 @@ Survive Stage 0.5: #259 (33%, single noisy Paradex reading; no light history end
 - **#262 Stage 0 re-check:** a token qualifies only if its protocol pays fee revenue *to stakers* (not buybacks). LDO: Lido's holders revenue is a
   buyback (third-party knowledge; not verified) → excluded; SKY staking (pays USDS to stakers) is already #228. Others in the top 10 have no
   market cap in DefiLlama's listing → not testable without more data.
+
+## Final results (2026-11-22; `docs/jx_runs/batch6a/b/c/s_20261122.txt`, `votium_20261122.txt`, `hype_robust_20261122.txt`; re-runs identical)
+| # | verdict |
+|---|---|
+| 259 Paradex–HL gap | survives Stage 0.5 (33%, one noisy reading); Stage 1 not testable (no light funding-history endpoint) |
+| 260 Lighter–HL gap | FAIL Stage 1 (−0.25%/yr; Lighter returned 31 days, not 90) |
+| 261 zero-fee carry on Lighter | FAIL Stage 1 (−5.7%/yr) |
+| 262 real-yield staking hedged | not testable as a scan: DefiLlama "holders revenue" mixes buybacks (no yield to a hedged staker) with staker payouts; LDO top (20% ceiling) is a buyback; SKY is #228; others lack market caps |
+| 263 junior tranches | FAIL Stage 1 (−26%/yr; 4 of 8 pools collapsed) |
+| 264 senior tranches | FAIL (−37.9% / 6.5% by half) |
+| 265 Drift insurance fund | not testable (no source answered) |
+| 266 Aave Umbrella | not testable (no source answered) |
+| 267 Votium vlCVX bribes | FAIL Stage 1: bribes 9.4% but CVX −52.5%/yr (unhedgeable) → −83% |
+| 268 veAERO hedged | Stage 0 KILL (4-year lock, unknown veNFT exit discount) |
+| 269 RWA T-bill tokens | Stage 0.5 KILL (3.9%) |
+| 270 fixed-rate auctions | Stage 0.5 KILL (no capacity) |
+| 271 CME BTC basis | Stage 0.5 KILL (2.6% on capital) |
+| 272 tokenised-stock premium | Stage 0 KILL (access grey) |
+| 273 Solana LST unstake spreads | Stage 0 KILL |
+| 274 hedged v3 LP | not testable (LVR) |
+| 275 relayers | Stage 0 KILL |
+| **276 native HYPE staking hedged** | **passes the registered rule narrowly: 24.9% / 9.2% by half, Stage 1 9.9%** — but post-hoc robustness (labelled) shows the second half at 7.3% without the assumed 2.5% staking APR and 6.5–8.2% at 2× leverage; funding received fell from 117% (Dec 2024) to ~5–14% (2026); liquidation risk of the short not measured (no HYPE candles in the repo). **Marginal, not robust.** |
+| 277 reverse carry | Stage 0.5 KILL (TRX: 13.2% − 4.8% borrow = 6.3%) |
+| 278 new-chain stable incentives | FAIL Stage 1 (−41%/yr; 12 pool collapses) |

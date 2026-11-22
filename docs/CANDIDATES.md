@@ -166,6 +166,8 @@ risk, 5m signals and 1m fills.
 | 257 | Alpha Direct 25K | same | not flagged | same |
 | 258 | Goat 1-Day Pass 100K | same | not flagged | same |
 
+| 259–278 | Batch 6: 20 non-prop mechanisms (zero-fee venue funding gaps/carry, hedged real-yield staking, tranches, insurance funds, bribes, veAERO, RWA, fixed-rate auctions, CME basis, tokenised stocks, LST unstake, hedged LP, relayers, HYPE staking, reverse carry, new-chain incentives) | `docs/PREREG_BATCH6_20261122.md` | 1 narrow pass (#276 hedged native HYPE staking 24.9% / 9.2%, not robust: 6.5–8.2% in year 2 under conservative assumptions); 11 killed at Stage 0/0.5; 5 failed Stage 1/2; 5 not testable (incl. #259 surviving the ceiling at 33%) | PREREG_BATCH6 final results |
+
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.
