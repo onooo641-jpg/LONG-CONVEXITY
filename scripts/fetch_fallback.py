@@ -1266,7 +1266,40 @@ def job_smallcap():
     pd.DataFrame(px).to_parquet(OUT / "smallcap_prices.parquet", index=False)
     print(f"token price rows {len(px)}", flush=True)
 
-JOBS = {"smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+def job_merkl():
+    """#321 Merkl opportunities + any history endpoints (docs/PREREG_SMALLCAP_20261122.md addendum 1)."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    opp, page = [], 0
+    while page < 60:
+        d = get(f"https://api.merkl.xyz/v4/opportunities?items=100&page={page}&status=LIVE,PAST", tries=2)
+        if not d or not isinstance(d, list):
+            break
+        opp += d
+        page += 1
+        time.sleep(0.3)
+    print(f"merkl opportunities: {len(opp)}", flush=True)
+    keep = []
+    for o in opp:
+        try:
+            tvl = float(o.get("tvl") or 0)
+        except (TypeError, ValueError):
+            tvl = 0.0
+        keep.append({k: o.get(k) for k in ("id", "chainId", "type", "identifier", "name", "status", "action", "tvl", "apr", "dailyRewards",
+                                            "startTimestamp", "endTimestamp")} | {"tokens": [t.get("symbol") for t in (o.get("tokens") or [])]})
+    hist = {}
+    small = [k for k in keep if 1e5 <= float(k.get("tvl") or 0) <= 2e6][:600]
+    for k in small:
+        for u in (f"https://api.merkl.xyz/v4/opportunities/{k['id']}/metrics", f"https://api.merkl.xyz/v4/opportunities/{k['id']}/aprs"):
+            d = get(u, tries=1)
+            if d:
+                hist[k["id"]] = d
+                break
+        time.sleep(0.25)
+    print(f"merkl small opportunities {len(small)}; with history {len(hist)}", flush=True)
+    (OUT / "merkl_raw.json").write_text(json.dumps({"opportunities": keep, "history": hist}))
+
+JOBS = {"merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys
