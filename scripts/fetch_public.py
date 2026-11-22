@@ -1113,6 +1113,82 @@ def job_liq_morpho(name):
     print(f"{name}: COMPLETE {len(df)} events, {len(toks)} tokens, {(time.time()-t0)/60:.0f} min", flush=True)
 
 
+def job_liq_morpho_replay():
+    """PREREG_LIQ_MORPHO_REPLAY_20261121: gap between each sampled Morpho Base liquidation and the latest update of its market oracle's feeds."""
+    import os
+    import numpy as np
+    stage = os.environ.get("REPLAY_STAGE", "2")
+    urls = ["https://base.gateway.tenderly.co"]
+    win = 1000
+    smp = pd.read_parquet(OUT / "liq_morpho_replay_sample.parquet")
+    if stage == "1":
+        smp = smp[smp["s1"]]
+    smp = smp.reset_index(drop=True)
+    outp = OUT / f"liq_replay_gaps_s{stage}_morphobase.parquet"
+    done = pd.read_parquet(outp) if outp.exists() else pd.DataFrame()
+    t0 = time.time()
+    budget = float(os.environ.get("LIQ_BUDGET_MIN", "150")) * 60
+    cache = {}
+
+    def call(to, data):
+        try:
+            return rpc(urls, "eth_call", [{"to": to, "data": data}, "latest"], tries=2)
+        except Exception:  # noqa: BLE001
+            return None
+
+    def feeds_of(mid):
+        if mid in cache:
+            return cache[mid]
+        r = call(MORPHO, "0x2c3c9157" + mid[2:])
+        out = None
+        if r and len(r) >= 2 + 64 * 5:
+            oracle = "0x" + r[2 + 64 * 2: 2 + 64 * 3][-40:]
+            addrs, any_ok = [], False
+            for sel in ("0xf50a4718", "0xdc53858c", "0x56095e11", "0xacfbd39e"):
+                x = call(oracle, sel)
+                if x and len(x) >= 66:
+                    any_ok = True
+                    f = "0x" + x[-40:]
+                    if int(f, 16) != 0:
+                        ag = call(f, "0x245a7bfc")
+                        a = "0x" + ag[-40:] if ag and len(ag) >= 66 and int(ag[-40:], 16) != 0 else f
+                        addrs.append(a)
+            out = addrs if any_ok and addrs else None
+        cache[mid] = out
+        return out
+
+    def last_update(addrs, blk):
+        try:
+            logs = rpc(urls, "eth_getLogs", [{"fromBlock": hex(max(0, blk - win)), "toBlock": hex(blk), "address": addrs}])
+        except Exception:  # noqa: BLE001
+            return "err"
+        return max((int(lg["blockNumber"], 16) for lg in logs), default=-1)
+
+    lo, hi = int(smp["block"].min()) - 1, int(smp["block"].max())
+    nulls = np.random.default_rng(1).integers(lo + 1, hi + 1, size=len(smp))
+    rows = [] if done.empty else done.to_dict("records")
+    have = {r["tx"] + r["user"] for r in rows}
+    for i, r in smp.iterrows():
+        if r["tx"] + r["user"] in have:
+            continue
+        if time.time() - t0 > budget:
+            print(f"morphobase: BUDGET STOP at row {i}/{len(smp)}", flush=True)
+            break
+        addrs = feeds_of(r["mid"]) if isinstance(r["mid"], str) else None
+        row = dict(chain="morphobase", tx=r["tx"], user=r["user"], block=int(r["block"]), gross=float(r["gross"]), month=int(r["month"]), mid=r["mid"],
+                   has_c=bool(addrs), has_d=False, n_feeds=len(addrs or []))
+        for tag, blk in (("ev", int(r["block"])), ("null", int(nulls[i]))):
+            lu = last_update(addrs, blk) if addrs else None
+            row[f"g_{tag}"] = None if lu in (None, "err") else (-1 if lu == -1 else blk - lu)
+            row[f"err_{tag}"] = lu == "err"
+        rows.append(row)
+        if len(rows) % 25 == 0:
+            pd.DataFrame(rows).to_parquet(outp)
+            print(f"  morphobase: {len(rows)}/{len(smp)} ({(time.time()-t0)/60:.1f} min)", flush=True)
+    pd.DataFrame(rows).to_parquet(outp)
+    print(f"morphobase: replay stage {stage} wrote {len(rows)} rows; {sum(1 for v in cache.values() if v)} of {len(cache)} markets resolved", flush=True)
+
+
 def _liq_state_path(name):
     return OUT / f"liq_{name}_state.json"
 
@@ -1423,7 +1499,7 @@ for _c in LIQ_CHAINS:
 
 JOBS = {"ipo2": job_ipo2, "iponews": job_iponews, "ipo": job_ipo, "myxsnap": job_myxsnap, "batch2": job_batch2, "hl2023d": job_hl2023d, "hl2023": job_hl2023, "hl": job_hl, "llama_lend": job_llama_lend, "llama_pools": job_llama_pools,
         "llama_prices": job_llama_prices, "poly": job_poly,
-        "liq_probe": job_liq_probe, "liq_diag": job_liq_diag, "liq_diag2": job_liq_diag2, "liq_diag3": job_liq_diag2, "liq_secretcheck": job_liq_secretcheck, "liq_pxdiag": job_liq_pxdiag, "liq_morphobase_pilot": lambda: job_liq_morpho("morphobase_pilot"), "liq_morphobase": lambda: job_liq_morpho("morphobase"), "liq_morphobase_s0": lambda: job_liq_morpho("morphobase_s0"),
+        "liq_probe": job_liq_probe, "liq_diag": job_liq_diag, "liq_diag2": job_liq_diag2, "liq_diag3": job_liq_diag2, "liq_secretcheck": job_liq_secretcheck, "liq_pxdiag": job_liq_pxdiag, "liq_replay_morphobase": job_liq_morpho_replay, "liq_morphobase_pilot": lambda: job_liq_morpho("morphobase_pilot"), "liq_morphobase": lambda: job_liq_morpho("morphobase"), "liq_morphobase_s0": lambda: job_liq_morpho("morphobase_s0"),
         "liq_morphobase_s1": lambda: job_liq_morpho("morphobase_s1"), "liq_morphobase_s2": lambda: job_liq_morpho("morphobase_s2"), **{f"liq_replay_{c}": globals()[f"job_liq_replay_{c}"] for c in ("arbitrum", "base", "avalanche", "polygon", "optimism")}, "liq_decimals": job_liq_decimals, **{f"liq_prices_{c}": _liq_prices_job(c) for c in LIQ_CHAINS}, **{f"liq_{c}_es": _liq_es_job(c) for c in LIQ_ES_ID}, **{f"liq_{c}": globals()[f"job_liq_{c}"] for c in LIQ_CHAINS}}
 
 

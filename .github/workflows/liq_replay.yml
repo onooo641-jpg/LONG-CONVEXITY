@@ -1,4 +1,4 @@
-# PREREG_LIQ_REPLAY_20261121: price-update gap replay, one job per chain. Stage = first line of .github/liq_replay_request.txt (1 or 2).
+# PREREG_LIQ_REPLAY_20261121: price-update gap replay, one job per chain. Stage = first line of .github/liq_replay_request.txt (1 or 2). Matrix now Morpho only (Aave replay chains are finished).
 name: liquidation replay
 
 on:
@@ -17,7 +17,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        chain: [arbitrum, base, avalanche, polygon, optimism]
+        chain: [morphobase]
     steps:
       - uses: actions/checkout@v4
         with:
