@@ -1,0 +1,157 @@
+=== vxn
+VXNCLS: 6732 lines
+VIXCLS: 9624 lines
+=== batch9
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXJPUS The read operation timed out
+  fred DEXJPUS: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXUSAL The read operation timed out
+  fred DEXUSAL: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXUSNZ The read operation timed out
+  fred DEXUSNZ: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXCAUS The read operation timed out
+  fred DEXCAUS: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXSZUS The read operation timed out
+  fred DEXSZUS: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXUSUK The read operation timed out
+  fred DEXUSUK: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXUSEU The read operation timed out
+  fred DEXUSEU: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXNOUS The read operation timed out
+  fred DEXNOUS: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXSDUS The read operation timed out
+  fred DEXSDUS: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXMXUS The read operation timed out
+  fred DEXMXUS: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXBZUS The read operation timed out
+  fred DEXBZUS: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXSFUS The read operation timed out
+  fred DEXSFUS: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXKOUS The read operation timed out
+  fred DEXKOUS: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXSIUS The read operation timed out
+  fred DEXSIUS: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXTHUS The read operation timed out
+  fred DEXTHUS: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXINUS The read operation timed out
+  fred DEXINUS: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXMAUS The read operation timed out
+  fred DEXMAUS: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXCHUS The read operation timed out
+  fred DEXCHUS: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=IR3TIB01AUM156N The read operation timed out
+  fred IR3TIB01AUM156N: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=IR3TIB01NZM156N The read operation timed out
+  fred IR3TIB01NZM156N: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=IR3TIB01CAM156N The read operation timed out
+  fred IR3TIB01CAM156N: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=IR3TIB01CHM156N The read operation timed out
+  fred IR3TIB01CHM156N: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=IR3TIB01GBM156N The read operation timed out
+  fred IR3TIB01GBM156N: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=IR3TIB01EZM156N The read operation timed out
+  fred IR3TIB01EZM156N: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=IR3TIB01NOM156N The read operation timed out
+  fred IR3TIB01NOM156N: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=IR3TIB01SEM156N The read operation timed out
+  fred IR3TIB01SEM156N: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=IR3TIB01MXM156N The read operation timed out
+  fred IR3TIB01MXM156N: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=IR3TIB01ZAM156N The read operation timed out
+  fred IR3TIB01ZAM156N: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=IR3TIB01JPM156N The read operation timed out
+  fred IR3TIB01JPM156N: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=IR3TIB01USM156N The read operation timed out
+  fred IR3TIB01USM156N: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=IR3TIB01KRM156N The read operation timed out
+  fred IR3TIB01KRM156N: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=IR3TIB01INM156N The read operation timed out
+  fred IR3TIB01INM156N: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=IR3TIB01BRM156N The read operation timed out
+  fred IR3TIB01BRM156N: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=IR3TIB01CNM156N The read operation timed out
+  fred IR3TIB01CNM156N: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=DTB3 The read operation timed out
+  fred DTB3: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS10 The read operation timed out
+  fred DGS10: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=INTDSRMYM193N The read operation timed out
+  fred INTDSRMYM193N: none
+  FAIL https://fred.stlouisfed.org/graph/fredgraph.csv?id=VIXCLS The read operation timed out
+  fred VIXCLS: none
+  yahoo SPY: ok 737520
+  stooq SPY: 3
+  cboe VIX: 9322
+  cboe VIX3M: 4322
+  cboe VIX9D: 3996
+  cboe PUT: 5012
+  cboe WPUT: 5234
+  cboe BXM: 6206
+  cboe BXMD: 10180
+  cboe BXY: 9688
+  cboe CLL: 4549
+  cboe CLLZ: 10180
+  cboe CNDR: 10180
+  cboe PPUT: 10174
+  cboe BFLY: 10180
+  cboe CMBO: 10174
+  cboe PUTR: 6489
+  cboe BXMW: 3618
+  cboe VXTH: 5192
+  cboe SPRO: 5262
+  cboe BXMC: 9266
+  cboe SPEN: 5261
+  vx contracts through 2013: 12
+  FAIL https://cdn.cboe.com/data/us/futures/market_statistics/historical_data/VX/VX_2014-03-19.csv HTTP Error 403: Forbidden
+  vx contracts through 2014: 24
+  vx contracts through 2015: 36
+  vx contracts through 2016: 48
+  vx contracts through 2017: 60
+  vx contracts through 2018: 72
+  FAIL https://cdn.cboe.com/data/us/futures/market_statistics/historical_data/VX/VX_2019-03-20.csv HTTP Error 403: Forbidden
+  vx contracts through 2019: 84
+  vx contracts through 2020: 96
+  vx contracts through 2021: 108
+  FAIL https://cdn.cboe.com/data/us/futures/market_statistics/historical_data/VX/VX_2022-03-16.csv HTTP Error 403: Forbidden
+  vx contracts through 2022: 120
+  vx contracts through 2023: 132
+  FAIL https://cdn.cboe.com/data/us/futures/market_statistics/historical_data/VX/VX_2024-06-19.csv HTTP Error 403: Forbidden
+  vx contracts through 2024: 144
+  FAIL https://cdn.cboe.com/data/us/futures/market_statistics/historical_data/VX/VX_2025-03-19.csv HTTP Error 403: Forbidden
+  vx contracts through 2025: 156
+  FAIL https://cdn.cboe.com/data/us/futures/market_statistics/historical_data/VX/VX_2026-05-20.csv HTTP Error 403: Forbidden
+  vx contracts through 2026: 168
+  FAIL https://cdn.cboe.com/data/us/futures/market_statistics/historical_data/VX/VX_2027-05-19.csv HTTP Error 403: Forbidden
+  FAIL https://cdn.cboe.com/data/us/futures/market_statistics/historical_data/VX/VX_2027-08-18.csv HTTP Error 403: Forbidden
+  FAIL https://cdn.cboe.com/data/us/futures/market_statistics/historical_data/VX/VX_2027-08-17.csv HTTP Error 403: Forbidden
+  FAIL https://cdn.cboe.com/data/us/futures/market_statistics/historical_data/VX/VX_2027-08-16.csv HTTP Error 403: Forbidden
+  vx contracts through 2027: 175
+=== batch10
+  pages ftmo: 30
+  FAIL https://fundednext.com/general-rules HTTP Error 502: Bad Gateway
+  FAIL https://help.fundednext.com/assets/font/895890 'utf-8' codec can't decode byte 0x97 in position 19: invalid start byte
+  FAIL https://help.fundednext.com/assets/font/895891 'utf-8' codec can't decode byte 0xac in position 18: invalid start byte
+  FAIL https://help.fundednext.com/assets/favicon 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+  pages fundednext: 26
+  FAIL https://wp.the5ers.com/wp-content/uploads/2026/04/How-does-the-bootcamp-program-work.mp4 'utf-8' codec can't decode byte 0xf3 in position 43: invalid continuation byte
+  pages the5ers: 15
+  FAIL https://alphacapitalgroup.uk/images/blog/alpha-capital-country-availability-2026.png 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+  FAIL https://help.alphacapitalgroup.uk/assets/favicon 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+  pages alphacapital: 27
+  pages goatfunded: 7
+  FAIL https://audacitycapital.co.uk/ability-challenge/ HTTP Error 308: Permanent Redirect
+  FAIL https://audacitycapital.co.uk/competition/ HTTP Error 308: Permanent Redirect
+  pages audacity: 27
+  hip3 candles: 69/80
+  yahoo tickers: 56
+  wikipedia sp500 wikitext 86724 chars; symbols 502
+  FAIL https://api.llama.fi/emissions HTTP Error 402: Payment Required
+PROBE emissions https://api.llama.fi/emissions: no answer
+PROBE emissions https://defillama-datasets.llama.fi/emissionsProtocolsList: answered
+Traceback (most recent call last):
+  File "/home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/scripts/fetch_fallback.py", line 1353, in <module>
+    JOBS[j]()
+    ~~~~~~~^^
+  File "/home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/scripts/fetch_fallback.py", line 1176, in job_batch10
+    net, addr = pl["relationships"]["network"]["data"]["id"], pl["attributes"]["address"]
+                ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'network'
