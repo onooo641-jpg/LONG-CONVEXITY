@@ -1,0 +1,17 @@
+=== liq_celo_pilot
+celo_pilot: month anchors 28549357..81590442, resume at block 73641642
+  rpc exception eth_getLogs @ https://forno.celo.org: HTTP 400
+  celo_pilot: getLogs failed 73641642-73661641: https://forno.celo.org: HTTPError: HTTP 400
+  celo_pilot: getLogs failed 73646642-73656641: https://forno.celo.org: HTTPError: HTTP 400
+  celo_pilot: getLogs failed 73654142-73664141: https://forno.celo.org: HTTPError: HTTP 400
+  celo_pilot: getLogs failed 73661642-73671641: https://forno.celo.org: HTTPError: HTTP 400
+  celo_pilot: getLogs failed 73669142-73679141: https://forno.celo.org: HTTPError: HTTP 400
+  celo_pilot: getLogs failed 73676642-73686641: https://forno.celo.org: HTTPError: HTTP 400
+  celo_pilot: getLogs failed 73684142-73694141: https://forno.celo.org: HTTPError: HTTP 400
+  celo_pilot: getLogs failed 73691642-73701641: https://forno.celo.org: HTTPError: HTTP 400
+  celo_pilot: getLogs failed 73699142-73709141: https://forno.celo.org: HTTPError: HTTP 400
+  celo_pilot: getLogs failed 73706642-73716641: https://forno.celo.org: HTTPError: HTTP 400
+  celo_pilot: getLogs failed 73714142-73724141: https://forno.celo.org: HTTPError: HTTP 400
+  celo_pilot: getLogs failed 73721642-73731641: https://forno.celo.org: HTTPError: HTTP 400
+celo_pilot: ABORT: 12 getLogs failures and no events yet; no working endpoint. Stopped at block 73721642
+=== liq_celo_pilot done in 235s  ok 645 fail 12
