@@ -1,0 +1,20 @@
+=== batch6
+  FAIL https://mainnet.zklighter.elliot.ai/api/v1/fundings?market_id=2056&resolution=1h&start_timestamp=178 HTTP Error 400: Bad Request
+lighter books 246, funding rows 26385; sample keys ['direction', 'market_id', 'rate', 'symbol', 'timestamp', 'value']
+  FAIL https://mainnet-beta.api.drift.trade/insuranceFund/stats <urlopen error [Errno -2] Name or service not known>
+PROBE drift_if: no answer
+  FAIL https://mainnet-beta.api.drift.trade/stats <urlopen error [Errno -2] Name or service not known>
+PROBE drift_stats: no answer
+  FAIL https://data.api.drift.trade/stats/insuranceFund <urlopen error [Errno -2] Name or service not known>
+PROBE drift_data: no answer
+  FAIL https://aave-api-v2.aave.com/data/umbrella Expecting value: line 2 column 5 (char 5)
+PROBE aave_umbrella: no answer
+  FAIL https://api.llama.airforce/ Expecting value: line 1 column 1 (char 0)
+PROBE llama_airforce: no answer
+PROBE votium_rounds: answered ['rounds', 'statusCode']
+  FAIL https://api-next.llama.airforce/bribes/votium/cvx-crv/rounds <urlopen error [Errno -5] No address associated with hostname>
+PROBE votium_v2: no answer
+yahoo BTC=F: ok
+yahoo BTC-USD: ok
+tranche pools 28, chart rows 4456
+paradex markets: 11159
