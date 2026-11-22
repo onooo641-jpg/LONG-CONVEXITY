@@ -1680,7 +1680,33 @@ def job_sweep4c():
     print(f"  prices: {sum(1 for v in out.values() if v)}/{len(ids)} ids with data", flush=True)
     (OUT / "sweep4c_raw.json").write_text(json.dumps(out))
 
-JOBS = {"sweep4c": job_sweep4c, "sweep4b": job_sweep4b, "sweep4": job_sweep4, "addprice": job_addprice, "fred9": job_fred9, "batch10b": job_batch10b, "repair8": job_repair8, "sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+def job_sweep4d():
+    """#330: pump.fun coins graduated 2-10 days before the fetch, migrated-pool hourly OHLCV (PREREG_SWEEP4 addendum 2)."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    coins, now_ms = [], time.time() * 1000
+    for off in range(0, 6000, 50):
+        d = get(f"https://frontend-api-v3.pump.fun/coins?offset={off}&limit=50&sort=created_timestamp&order=DESC&includeNsfw=false&complete=true", tries=1)
+        if not isinstance(d, list) or not d:
+            break
+        coins += d
+        if (d[-1].get("created_timestamp") or now_ms) < now_ms - 12 * 86400 * 1000:
+            break
+        time.sleep(0.4)
+    sel = [c for c in coins if (c.get("pump_swap_pool") or c.get("raydium_pool"))
+           and now_ms - 10 * 86400 * 1000 <= (c.get("created_timestamp") or 0) <= now_ms - 2 * 86400 * 1000]
+    step = max(1, len(sel) // 400)
+    sel = sel[::step][:400]
+    out = {"pump_coins": [{k: c.get(k) for k in ("mint", "symbol", "created_timestamp", "pump_swap_pool", "raydium_pool")} for c in sel]}
+    for c in sel:
+        pool = c.get("pump_swap_pool") or c.get("raydium_pool")
+        o = get(f"https://api.geckoterminal.com/api/v2/networks/solana/pools/{pool}/ohlcv/hour?limit=1000", tries=2) or {}
+        out[f"pump_ohlcv|{c['mint']}"] = ((o.get("data") or {}).get("attributes") or {}).get("ohlcv_list")
+        time.sleep(2.2)
+    print(f"  pump coins scanned {len(coins)}; graduated 2-10 days ago sampled {len(sel)}", flush=True)
+    (OUT / "sweep4d_raw.json").write_text(json.dumps(out))
+
+JOBS = {"sweep4d": job_sweep4d, "sweep4c": job_sweep4c, "sweep4b": job_sweep4b, "sweep4": job_sweep4, "addprice": job_addprice, "fred9": job_fred9, "batch10b": job_batch10b, "repair8": job_repair8, "sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys

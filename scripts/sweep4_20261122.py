@@ -14,6 +14,10 @@ import pandas as pd
 
 R = json.load(open("data/public/sweep4_raw.json"))
 RB = json.load(open("data/public/sweep4b_raw.json")) if os.path.exists("data/public/sweep4b_raw.json") else {}
+if os.path.exists("data/public/sweep4d_raw.json"):  # #330 older graduations (addendum 2)
+    R.update({k: v for k, v in json.load(open("data/public/sweep4d_raw.json")).items()})
+if os.path.exists("data/public/sweep4c_raw.json"):  # prices refetched in valid chunks
+    R.update(json.load(open("data/public/sweep4c_raw.json")))
 S1, E0, E1, SPLIT = pd.Timestamp("2026-05-01", tz="UTC"), pd.Timestamp("2024-11-01", tz="UTC"), pd.Timestamp("2026-11-01", tz="UTC"), \
     pd.Timestamp("2025-11-01", tz="UTC")
 
@@ -44,20 +48,27 @@ def p330():
     rows = []
     for c in R.get("pump_coins", []):
         o = R.get(f"pump_ohlcv|{c['mint']}")
-        if not o or len(o) < 30:
+        if not o:
             continue
         df = pd.DataFrame(o, columns=["t", "o", "h", "l", "c", "v"]).sort_values("t")
         t0 = df.t.iloc[0]  # first AMM candle = migration hour
-        a = df[df.t >= t0 + 3600]
-        b = df[df.t >= t0 + 25 * 3600]
-        if a.empty or b.empty:
-            continue
-        rows.append({"t": pd.Timestamp(int(t0), unit="s", tz="UTC"), "r": b.c.iloc[0] / a.c.iloc[0] - 1 - 0.02})
+        # no candle = no trade in that hour: the price is the last traded close at or before the time (dead tokens stay dead)
+        a = df[df.t <= t0 + 3600]
+        b = df[df.t <= t0 + 25 * 3600]
+        last_seen = df.t.iloc[-1]
+        if a.empty or (last_seen < t0 + 25 * 3600 and pd.Timestamp(int(t0), unit="s", tz="UTC") > pd.Timestamp.now(tz="UTC") - pd.Timedelta(days=2)):
+            continue  # too recent to know the 24 h outcome
+        rows.append({"t": pd.Timestamp(int(t0), unit="s", tz="UTC"), "r": b.c.iloc[-1] / a.c.iloc[-1] - 1 - 0.02})
     ev = pd.DataFrame(rows)
     if len(ev):
+        p_ = ev
+        print(f"#330 pump.fun graduation, single recent slice (addendum 2): n {len(p_)}, mean {p_.r.mean() * 100:.2f}% per event after 2% costs, "
+              f"median {p_.r.median() * 100:.2f}% -> {'KILL -> FAIL (Stage 1)' if not p_.r.mean() > 0 else 'survives Stage 1; Stage 2 not testable (no 2-year history)'}")
         print(f"  (#330 context) median {ev.r.median() * 100:.1f}%, share losing > 50%: {(ev.r < -0.5).mean():.0%}, window "
               f"{ev.t.min():%Y-%m-%d}..{ev.t.max():%Y-%m-%d}")
-    event_verdict("#330 pump.fun graduation (buy +1 h after migration, sell +24 h, 2% costs)", ev)
+    if ev.empty:
+        print("#330 pump.fun graduation: no complete 24 h outcomes yet -> not testable (data)")
+    print()
 
 
 def hl_daily(src, coin):
@@ -140,9 +151,12 @@ def p339():
         return
     r = y["chart"]["result"][0]
     gold = pd.Series(r["indicators"]["quote"][0]["close"], index=pd.to_datetime(r["timestamp"], unit="s", utc=True).floor("D")).dropna()
-    for nm in ("paxg", "xaut"):
-        pr = R.get(f"price|{nm}") or []
-        px = pd.Series({pd.Timestamp(x["timestamp"], unit="s", tz="UTC").floor("D"): x["price"] for x in pr})
+    for nm, gid in (("paxg", "pax-gold"), ("xaut", "tether-gold")):
+        pr = R.get(f"price|{gid}") or R.get(f"price|{nm}") or []
+        px = pd.Series({pd.Timestamp(x["timestamp"], unit="s", tz="UTC").floor("D"): x["price"] for x in pr}, dtype=float)
+        if px.empty:
+            print(f"#339 {nm.upper()}: no price data -> not testable")
+            continue
         prem = (px / gold.reindex(px.index) - 1).dropna()
         p = prem[prem.index >= S1]
         big = p[p.abs() > 0.01]
@@ -154,6 +168,101 @@ def p339():
     print("  (premium vs the front gold future includes a small futures basis; monetising needs issuer mint/redeem with KYC)\n")
 
 
+def sp_events():
+    rows = RB.get("sp_changes") or []
+
+    def yq(t):
+        y = RB.get(f"yahoo|{t}")
+        if not y or not (y.get("chart") or {}).get("result"):
+            return None
+        r = y["chart"]["result"][0]
+        idx = pd.to_datetime(r["timestamp"], unit="s", utc=True).tz_convert("America/New_York").normalize()
+        return pd.Series(r["indicators"]["quote"][0]["close"], index=idx).dropna()
+    return rows, yq
+
+
+def p337():
+    rows, yq = sp_events()
+    spy = yq("SPY")
+    out = []
+    for eff, add, rem, reason, ann in rows:
+        if not rem or spy is None:
+            continue
+        px = yq(rem)
+        d = pd.Timestamp(eff, tz="America/New_York")
+        if px is None:
+            continue
+        idx = px.index[px.index >= d]
+        if len(idx) < 21:
+            continue
+        t0, t1 = idx[0], idx[20]
+        if t0 not in spy.index or t1 not in spy.index:
+            continue
+        out.append({"t": t0.tz_convert("UTC"), "r": px[t1] / px[t0] - (spy[t1] / spy[t0]) - 0.001, "tk": rem})
+    removed = sum(1 for r in rows if r[2])
+    print(f"  (#337 context) deletions in window {removed}; still trading 20 days after (priced) {len(out)}; acquired / delisted names drop out")
+    event_verdict("#337 S&P 500 deletions rebound (buy at effective close, 20 trading days, minus SPY)", pd.DataFrame(out), min_mean=0.2, hold_days=20)
+
+
+def p303_check():
+    rows, yq = sp_events()
+    spy = yq("SPY")
+    res = []
+    for eff, add, rem, reason, ann in rows:
+        if not add or not ann or spy is None:
+            continue
+        px = yq(add)
+        if px is None:
+            continue
+        d = pd.Timestamp(eff, tz="America/New_York")
+        a = pd.Timestamp(ann, tz="America/New_York")
+        after = px.index[px.index > a]  # first close after the announcement (announcements come after the close)
+        upto = px.index[px.index <= d]
+        if not len(after) or not len(upto) or after[0] > upto[-1]:
+            continue
+        t0, t1 = after[0], upto[-1]
+        idx5 = upto[-6] if len(upto) >= 6 else upto[0]
+        if t0 not in spy.index or t1 not in spy.index:
+            continue
+        res.append((add, (px[t1] / px[t0] - spy[t1] / spy[t0] - 0.001) * 100, idx5 < t0))
+    if not res:
+        print("#303 announcement-date check: no additions with announcement dates priced\n")
+        return
+    e = pd.DataFrame(res, columns=["tk", "ex", "t5_before_announcement"])
+    t = e.ex.mean() / (e.ex.std(ddof=1) / np.sqrt(len(e))) if len(e) > 1 else float("nan")
+    print(f"#303 check (context, not a new verdict): buy at the first close AFTER S&P's announcement, sell at the effective close, minus SPY: "
+          f"n {len(e)}, mean {e.ex.mean():.2f}%, median {e.ex.median():.2f}%, t {t:.2f}; additions where t-5 fell before the announcement: "
+          f"{int(e.t5_before_announcement.sum())} of {len(e)}\n")
+
+
+def p342():
+    btc = hl_daily(RB, "BTC")
+    out = []
+    for k, v in RB.items():
+        if not k.startswith("emission|") or not v.get("symbol"):
+            continue
+        sym = v["symbol"].upper()
+        px = hl_daily(RB, sym)
+        sm = v.get("supplyMetrics") or {}
+        circ = sm.get("circSupply") or sm.get("circulatingSupply") or (sm.get("adjustedSupply") if isinstance(sm, dict) else None)
+        if px is None or btc is None or not v.get("unlockUsdChart"):
+            continue
+        for ts, usd in v["unlockUsdChart"]:
+            d = pd.Timestamp(int(ts), unit="s", tz="UTC").floor("D")
+            if d - pd.Timedelta(days=7) not in px.index or d + pd.Timedelta(days=7) not in px.index:
+                continue
+            p0 = px[d - pd.Timedelta(days=7)]
+            mcap = (float(circ) * p0) if circ else None
+            if not mcap or not usd or usd < 0.01 * mcap:
+                continue
+            a, b = d - pd.Timedelta(days=7), d + pd.Timedelta(days=7)
+            if a not in btc.index or b not in btc.index:
+                continue
+            out.append({"t": d, "r": -(px[b] / px[a] - 1) + (btc[b] / btc[a] - 1) - 0.001, "sym": sym})
+    print(f"  (#342 context) unlock events >= 1% of circulating value with HL prices: {len(out)}")
+    event_verdict("#342 token-unlock shorts (7 d before -> 7 d after, BTC hedge)", pd.DataFrame(out), hold_days=14)
+
+
 def main() -> int:
     print("Sweep 4. Event Stage 1 slice 2026-05..10 (KILL if mean <= 0); Stage 2 2024-11..2026-10: mean > 0.5%, t > 2, halves > 0, >= 8%/yr.\n")
     p330()
@@ -162,6 +271,10 @@ def main() -> int:
     p339()
     if not RB:
         print("(job sweep4b pending: #337 deletions, #342 unlocks, #303 announcement-date check)")
+    else:
+        p337()
+        p342()
+        p303_check()
     return 0
 
 

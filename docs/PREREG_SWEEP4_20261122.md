@@ -38,3 +38,10 @@ schedules were truncated, so job `sweep4b` fetches Yahoo prices for every S&P 50
 announcement dates, which allows a proper look-ahead check of #303) and slimmed unlock schedules with HL candles (#342).
 Event-study Stage 1 slice (fixed before any sweep-4 analysis is run): events in 2026-05-01..2026-10-31; Stage 2: all events 2024-11-01..2026-10-31
 (halves split 2025-11-01).
+
+## Addendum 2 (2026-11-22, before any #330 outcome was computed)
+pump.fun's public list returns only the most recent graduations (the 910 coins span 2026-11-20..22), so no migrated pool had 24 h of history at
+fetch time, and the 2-year Stage 2 is impossible from this source. #330 is therefore assessed on a single recent slice. Job `sweep4d` takes the
+coins that graduated 2–10 days before the fetch, same rule (buy +1 h after migration, sell +24 h, 2% costs; no candle = no trade, the last close
+carries forward). The outcome can only kill or stay "not testable at Stage 2". Coin prices for #335 / #339 are refetched (job `sweep4c`): the
+first fetch asked for a span the price API does not serve.
