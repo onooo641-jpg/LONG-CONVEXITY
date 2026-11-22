@@ -1,4 +1,4 @@
-# chains for .github/workflows/fetch_liq.yml. Resumable. (run 23: mantle + comet_base stage 2 (pilots not killed), celo/soneium pilots resume)
+# chains for .github/workflows/fetch_liq.yml. Resumable. (run 24: restart with parallel log windows in the generic scan)
 mantle
 comet_base
 celo_pilot

@@ -1521,49 +1521,69 @@ def job_liq_chain(name):
     if not st["logs_done"]:
         b, step, last_flush, cap = st["next_block"], 20000, time.time(), 2_000_000
         month_edge = next((x for x in anchors if x > b), a1 + 1)
+        PAR = 6
+
+        def fetch(w):
+            try:
+                return ("ok", rpc(urls, "eth_getLogs", [{"fromBlock": hex(w[0]), "toBlock": hex(w[1]), "topics": [LIQ_TOPIC]}]))
+            except ValueError:
+                return ("range", None)
+            except RuntimeError as ex:
+                return ("err", str(ex))
         while b <= a1:
             if over():
                 flush(b)
                 print(f"{name}: BUDGET STOP in log scan at block {b} (window {anchors[0]}..{a1}); {len(rows)} events saved", flush=True)
                 return
-            e = min(b + step - 1, a1)
-            try:
-                logs = rpc(urls, "eth_getLogs", [{"fromBlock": hex(b), "toBlock": hex(e), "topics": [LIQ_TOPIC]}])
-            except ValueError:
-                if step <= 500:
-                    print(f"  {name}: window {b}-{e} refused even at {step} blocks; skipping", flush=True)
-                    b = e + 1
+            wins, bb = [], b
+            for _ in range(PAR):
+                if bb > a1:
+                    break
+                e = min(bb + step - 1, a1)
+                wins.append((bb, e))
+                bb = e + 1
+            with ThreadPoolExecutor(PAR) as ex:
+                results = list(ex.map(fetch, wins))
+            nlogs = 0
+            for w, (kind, payload) in zip(wins, results):
+                if kind == "ok":
+                    for lg in payload:
+                        d = lg["data"][2:]
+                        if len(lg["topics"]) != 4 or len(d) < 256:  # same topic0 on a non-Aave-ABI contract: skip, count
+                            st["skipped_logs"] = st.get("skipped_logs", 0) + 1
+                            continue
+                        rows.append({"venue": lg["address"].lower(), "block": int(lg["blockNumber"], 16), "tx": lg["transactionHash"],
+                                     "collateral": "0x" + lg["topics"][1][-40:], "debt": "0x" + lg["topics"][2][-40:],
+                                     "user": "0x" + lg["topics"][3][-40:], "debt_amt": float(int(d[0:64], 16)),
+                                     "coll_amt": float(int(d[64:128], 16)), "liquidator": "0x" + d[128:192][-40:]})
+                    nlogs += len(payload)
+                    b = w[1] + 1
                     continue
-                step = max(500, step // 2)
-                cap = step
-                continue
-            except RuntimeError as ex:
-                print(f"  {name}: getLogs failed {b}-{e}: {str(ex)[:150]}", flush=True)
-                st["getlogs_fails"] = st.get("getlogs_fails", 0) + 1
-                if st["getlogs_fails"] >= 12 and not rows:
-                    flush(b)
-                    print(f"{name}: ABORT: 12 getLogs failures and no events yet; no working endpoint. Stopped at block {b}", flush=True)
-                    return
-                if step > 500:
-                    step = max(500, step // 4)
-                    continue
-                b = e + 1
-                continue
-            for lg in logs:
-                d = lg["data"][2:]
-                if len(lg["topics"]) != 4 or len(d) < 256:  # same topic0 on a non-Aave-ABI contract: skip, count
-                    st["skipped_logs"] = st.get("skipped_logs", 0) + 1
-                    continue
-                rows.append({"venue": lg["address"].lower(), "block": int(lg["blockNumber"], 16), "tx": lg["transactionHash"],
-                             "collateral": "0x" + lg["topics"][1][-40:], "debt": "0x" + lg["topics"][2][-40:],
-                             "user": "0x" + lg["topics"][3][-40:], "debt_amt": float(int(d[0:64], 16)),
-                             "coll_amt": float(int(d[64:128], 16)), "liquidator": "0x" + d[128:192][-40:]})
-            if len(logs) < 300:
-                step = min(step * 2, cap)
-            elif len(logs) > 3000:
-                step = max(500, step // 2)
-                cap = min(cap, step * 2)
-            b = e + 1
+                if kind == "range":
+                    if step <= 500:
+                        print(f"  {name}: window {w[0]}-{w[1]} refused even at {step} blocks; skipping", flush=True)
+                        b = w[1] + 1
+                        continue
+                    step = max(500, step // 2)
+                    cap = step
+                else:
+                    print(f"  {name}: getLogs failed {w[0]}-{w[1]}: {str(payload)[:150]}", flush=True)
+                    st["getlogs_fails"] = st.get("getlogs_fails", 0) + 1
+                    if st["getlogs_fails"] >= 12 and not rows:
+                        flush(b)
+                        print(f"{name}: ABORT: 12 getLogs failures and no events yet; no working endpoint. Stopped at block {b}", flush=True)
+                        return
+                    if step > 500:
+                        step = max(500, step // 4)
+                    else:
+                        b = w[1] + 1
+                break
+            else:
+                if nlogs < 300 * len(wins):
+                    step = min(step * 2, cap)
+                elif nlogs > 3000 * len(wins):
+                    step = max(500, step // 2)
+                    cap = min(cap, step * 2)
             if b >= month_edge or time.time() - last_flush > 600:
                 flush(b)
                 last_flush = time.time()
