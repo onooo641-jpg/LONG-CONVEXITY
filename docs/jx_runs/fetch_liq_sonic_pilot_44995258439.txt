@@ -1,0 +1,12 @@
+=== liq_sonic_pilot
+sonic_pilot: month anchors 0..81917187, resume at block 76838175
+  sonic_pilot: scanned to block 79378175/81917186 (56 events, 4 min)
+  sonic_pilot: scanned to block 81378175/81917186 (87 events, 4 min)
+  sonic_pilot: scanned to block 81917187/81917186 (91 events, 4 min)
+sonic_pilot: log scan complete, 91 events
+sonic_pilot: receipts: 0 cached, 91 to fetch (sampled=False)
+  sonic_pilot: receipts 91/91 (4 min)
+sonic_pilot: receipts missing after retries: 0/91 (<=1%, accepted; gas imputed, bot 'unknown')
+sonic: prices 6252 points, 10/21 coins priced
+sonic_pilot: COMPLETE 91 events, 4 min
+=== liq_sonic_pilot done in 267s  ok 797 fail 0
