@@ -1,0 +1,13 @@
+=== liq_comet_optimism_pilot
+  comet_optimism_pilot: scanned to block 156351812/158946211 (1 events, 0 min)
+  comet_optimism_pilot: scanned to block 157611812/158946211 (2 events, 1 min)
+  rpc exception eth_getLogs @ https://mainnet.optimism.io: HTTP 429
+  comet_optimism_pilot: scanned to block 158946212/158946211 (945 events, 1 min)
+comet_optimism_pilot: log scan complete, 945 events
+comet_optimism_pilot: 3 Comet contracts with base token, 945 events
+  rpc exception eth_getTransactionReceipt @ https://mainnet.optimism.io: HTTP 429
+  comet_optimism_pilot: receipts 915/945 (4 min)
+  comet_optimism_pilot: receipts 945/945 (4 min)
+optimism: prices 4392 points, 6/6 coins priced
+comet_optimism_pilot: COMPLETE 945 events, 5 tokens, 4 min
+=== liq_comet_optimism_pilot done in 260s  ok 1421 fail 36
