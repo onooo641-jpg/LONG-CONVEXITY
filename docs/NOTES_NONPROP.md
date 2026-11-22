@@ -107,3 +107,14 @@ checks (real token prices) removed both. Watch list: #228 SKY (re-test at 180 da
 **Flag to Jx (passes the prop-firm sweep rule on verified rules and price): The Trading Pit Futures Prime 50K** — an additional automated slot
 alongside Topstep. Before buying: confirm one account per person limits, the 30-day challenge window (modelled), and that the friend's bot runs
 on the friend's own TTP account (TTP bans the same EA used by multiple traders).
+
+## Radar update (2026-11-22, later): 22 more prop products (#237–#258, PREREG_RADAR addendum 14; re-run identical)
+**Flagged on registered prices:** TTP Futures Prime 50K with its own $79 reset — **$49,057 real / $16,960 coin flip (97%) / dip −$3,884**
+(Topstep 50K: $44,359 / $18,046 / −$3,520); FuturesElite Nitro 50K, manual entry 3 min late, $152 (directory price) — $48,463 / $15,373 / −$4,331
+(its funded drawdown is intraday, modelled end-of-day → optimistic).
+**Would flag if the unread price is near the low bracket (sensitivity, not flagged):** TTP Futures Instant 50K ($299), LucidDaily 50K ($99),
+MFFU Pro 50K ($127), DayTraders S2F 50K ($199), FuturesElite Prime 50K ($129 and $229), FuturesElite Instant 50K ($199 and $349: $102–115K real,
+looks too good → verify first), Blue Guardian Reserve 50K ($150). Blue Guardian Direct 50K misses only on the dip rule.
+**Not flagged:** TTP Prime 100K, Goat 1-Day 50K/100K, Goat EOD, all Alpha Zero/Advanced/Direct/Standard-100K, MFFU Pro One-Day, LucidDirect.
+**Pattern:** instant (no-evaluation) accounts with one-time fees and 90–100% splits score very high in the model: each is a cheap ticket whose
+payout chance is high for this bot. Their real prices (mostly script-loaded) decide everything — confirming 6 prices would settle 8 products.
