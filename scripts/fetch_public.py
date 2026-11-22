@@ -1471,7 +1471,7 @@ def job_liq_comet_timing():
         df = pd.read_parquet(f)
         gv = df.groupby("venue").size().sort_values(ascending=False)
         # biggest by value is not stored here: use the venue with the most events among those with > 50 events and the largest sum of debt_amt
-        ven = df.groupby("venue")["debt_amt"].sum().sort_values(ascending=False).index[0]
+        ven = gv.index[0]     # most events = the largest-gross venue on both chains (Base 0xb125e6.. 1,204 events; Arbitrum 0x9c4ec7.. 1,411 events: see the stage-2 output)
         txs = sorted(df[df["venue"] == ven]["tx"].unique())
         k = max(1, int(np.ceil(len(txs) / 300)))
         sample = txs[::k][:300]
