@@ -212,3 +212,37 @@ third-party). Risk = min(0.45 × 4,500, 0.875 × 3,000) = $2,025. Same flag rule
 ## Addendum 13 (2026-11-22): FuturesElite Elite 50K evaluation reset read from its own page
 FuturesElite "Reset fees" (crawled 2026-11-22): Elite 50K evaluation reset **$89** (the model used a $128 rebuy). Model updated (`reset=89`);
 purchase price stays the $128 directory figure (own page does not show it). Re-priced with the same procedure.
+
+## Addendum 14 (2026-11-22): 22 more prop-firm products (#237–#258), registered before any run
+Source: each firm's own help centre in the radar crawl (2026-11-21/22), quoted in `data/radar/snapshots/`. Same procedure as the sweep: friend's
+NQ orders 2016-01..2026-10, coin flip 200 runs seed 1, `Policy.LOCK_FIRST`, risk = min(0.45 × max loss, 0.875 × daily limit), 3-minute entry
+delay for alert-assisted firms, same "extra slot" flag rule (vs Topstep 50K; delayed products vs Topstep at 3 min). **Products whose purchase price
+is not readable on the firm's own page are run at two bracket prices as sensitivity only (marked [sens]) and are never ranked or flagged.**
+Model limits stated now: intraday-trailing funded drawdowns are modelled as end-of-day (optimistic) and marked; unstated payout caps are assumed
+and marked; "N payouts then live" is modelled as the account ending.
+
+| # | product | bots/manual | price used | key rules (own pages) | assumptions |
+|---|---|---|---|---|---|
+| 237 | TTP Futures Prime 50K re-priced (reset $79, activation $0 now, own page) | bots | $99 | as #233 | — |
+| 238 | TTP Futures Prime 100K | bots | $189 (own page) | target $6,000, EOD $3,000 locking at start, pause $2,000 (challenge only), 100 micros, cap $3,500 | reset priced at $189 rebuy |
+| 239 | TTP Futures Instant 50K | bots | [sens] $299 / $499 (directory) | instant; EOD $2,000 trailing to start; pause from $1,200; per-cycle target $3,000; 20% consistency; 5 days; min $500; caps $2,000→$2,500→$3,000; 90% | cap modelled $2,500 |
+| 240 | Lucid LucidDaily 50K (EOD add-on) | bots | [sens] $99 / $199 | target $3,000, MLL $2,000, 50% eval consistency, 40 micros; funded buffer $2,100, lock +$100, profit since last payout > 0, no consistency, 90% | cap assumed $2,000 |
+| 241 | Lucid LucidDirect 50K | bots | [sens] $299 / $499 | instant; EOD MLL $2,000 lock +$100; DLL $1,200; goals $3,000 then $2,500; 20% consistency; min $500; 90% | cap assumed $2,000 |
+| 242 | MFFU Pro 50K | bots | [sens] $127 / $227 | target $3,000, EOD $2,000, 50% eval consistency, 30 micros; funded buffer $2,100, min $1,000, no cap, MLL to start+$100 static after the 1st payout, 80% | 14-day first-payout wait not modelled |
+| 243 | MFFU Pro 50K One-Day | bots | [sens] $127 / $227 | as #242 but target $4,000, no eval consistency | same |
+| 244 | DayTraders S2F 50K | bots | [sens] $199 / $399 | instant; EOD $2,500 stopping at start; DLL $1,250; 10 qualifying days ≥ $200; 20% consistency; max $2,000; 100% | buffer $2,500, min $500 |
+| 245 | Goat 1-Day Pass 50K | bots | $218 (directory list) | target $3,000, EOD $2,000 lock at start, no eval consistency, 40 micros; funded 35% consistency, 5 winning days ≥ $100, 50% of profit, min $500, 80% | cap modelled $1,750 (caps 1,500→2,500) |
+| 246 | Goat EOD 50K | bots | [sens] $150 / $250 | target $3,000, EOD $2,000 lock at start, 50% eval consistency, 50 micros; funded 30% consistency, 7 winning days ≥ $100, DLL $1,250, 50% of profit, min $500, 80% | cap $2,000 |
+| 247 | Alpha Futures Zero 50K | manual | $169/month, reset $149 (own) | target $3,000, EOD $2,000 lock at start, DLL $1,000, 30 micros; qualified ladder 10/20/30 micros, 40% consistency, 50% of profit, min $200, max $1,500, 5 winning days ≥ $200, 90% | ladder also in eval (conservative) |
+| 248 | Alpha Futures Advanced 50K | manual | $209/month, reset $189 (own) | target $4,000, EOD $1,750 lock at start, no DLL, 50 micros, 40% eval consistency; 50% of profit, min $1,000, max $15,000, 5 winning days ≥ $200, 90% | — |
+| 249 | Alpha Futures Direct 50K | manual | $519 one-time (own) | instant; EOD $2,000 lock at start; DLL $1,000; goals $3,000 then $2,000; 20% consistency; max $2,000; min $500; 90% | — |
+| 250 | FuturesElite Prime 50K | manual | [sens] $129 / $229 (reset $109 own) | target $3,000, EOD $2,000 lock +$100, DLL $1,200, 40 micros, no eval consistency; funded goal $500, buffer $2,100, 40% consistency, min $500, caps $2,000→$2,500→$2,800, 90% | cap $2,500 |
+| 251 | FuturesElite Nitro 50K | manual | $152 (directory), reset $99 (own) | target $3,000, EOD $2,000, 50% eval consistency, 50 micros; funded lock +$100, buffer $2,100, first payout at +$2,600, min $500, cap $2,000, 90% | funded drawdown is intraday → modelled EOD (optimistic) |
+| 252 | FuturesElite Instant 50K (no DLL) | manual | [sens] $199 / $349 | instant; EOD $2,500; ladder 20/30/40 micros at $0/$1,500/$2,500; 6 days ≥ $250; cushion $1,500; caps $2,500 then $3,000; min $500; 100% | — |
+| 253 | Blue Guardian Reserve 50K (no DLL) | manual | [sens] $150 / $250 | target $3,000, EOD $2,000 trailing (eval, no lock), 50% eval consistency, 40 micros; funded lock +$100; 50% of profit, cap $2,000, 5 winning days ≥ $150, later payouts need $750 net; 5 payouts then live; 90% | funded scaling ladder not readable → full 40 micros (optimistic) |
+| 254 | Blue Guardian Direct 50K | manual | [sens] $299 / $499 | instant; EOD $2,000 lock +$100; DLL $1,250; goals $3,000 then $2,000; 30% consistency (checkout option); no buffer; caps $2,000 then $2,500; 90% | cap $2,000 |
+| 255 | Alpha Futures Standard 100K | manual | $239/month, reset $199 (own) | target $6,000, EOD $3,000, DLL $2,000 (qualified), 100 micros, 50% eval / 40% qualified consistency; 50% of profit, min $500, max $4,000 | Topstep 100K ladder used |
+| 256 | Alpha Futures Zero 100K | manual | $279/month, reset $249 (own) | target $6,000, EOD $3,000, DLL $2,000, 60 micros; qualified ladder 20→60 micros; 40% consistency; 50% of profit, max $2,500 | ladder also in eval |
+| 257 | Alpha Futures Direct 25K | manual | $349 one-time (own) | instant; MLL $1,000; DLL $500; goals $1,500 then $1,000; 20% consistency; max $1,000; min $500; 90% | — |
+| 258 | Goat 1-Day Pass 100K | bots | $358 (directory list) | target $6,000, EOD $3,000 lock at start, 60 micros; funded as #245 with caps scaled (modelled $2,500) | caps assumed |
+Commands: `uv run python scripts/radar_price_one.py <key> [--delay]`, outputs `docs/jx_runs/radar_price_<key>.txt`.
