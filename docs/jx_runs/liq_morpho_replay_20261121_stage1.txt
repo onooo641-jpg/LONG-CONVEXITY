@@ -1,19 +1,19 @@
 stage 1: sampled 100, oracle feeds resolved 96, usable 96 (96%); markets 13
-feed check: no-update-in-window share 0.68 -> FEEDS NOT CREDIBLE (excluded)
-IDEAL arm (L=2 blocks): reachable R(events) 0.708  R(value) 0.819  gap==0 0.292  gap<=1 0.292  null R 0.990
+feed check: no-update-in-window share 0.01 -> ok
+IDEAL arm (L=2 blocks): reachable R(events) 0.042  R(value) 0.007  gap==0 0.927  gap<=1 0.958  null R 0.990
 
 post-hoc: reachable share R(events)/R(value) if our delay were L blocks
-L=1  0.708/0.819  L=2  0.708/0.819  L=3  0.708/0.819  L=5  0.708/0.819  L=8  0.677/0.814  L=12 0.677/0.814
+L=1  0.042/0.007  L=2  0.042/0.007  L=3  0.042/0.007  L=5  0.042/0.007  L=8  0.010/0.001  L=12 0.010/0.001
 
 descriptive splits (ideal arm): group, usable, R(events), R(value)
-  Jun 2026       53  1.000  1.000
+  Jun 2026       53  0.000  0.000
   Oct 2026       26  0.000  0.000
-  other months   17  0.882  0.976
+  other months   17  0.235  0.087
   by market (top 5 by events): market, usable, R(events), R(value)
-  0x9103c3b4    40  0.850  0.922
-  0xd4a903dc    31  0.613  0.327
-  0x8793cf30    14  0.643  0.672
-  0x9125d0fa     2  0.500  0.675
-  0xd7520ad1     2  0.500  0.331
+  0x9103c3b4    40  0.000  0.000
+  0xd4a903dc    31  0.097  0.057
+  0x8793cf30    14  0.000  0.000
+  0x9125d0fa     2  0.000  0.000
+  0xd7520ad1     2  0.000  0.000
 
-verdict: NOT CREDIBLE (feed check failed): no verdict
+verdict: STAGE 1: not killed, run stage 2
