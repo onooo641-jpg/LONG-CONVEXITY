@@ -112,7 +112,12 @@ def main() -> int:
         s2c, *_ = run(pools, ch, PX, S0, P1, cost_mult=2.0, stable_only=so)
         h1, h2, c2 = ann(s2[s2.index < SPLIT]), ann(s2[s2.index >= SPLIT]), ann(s2c)
         mon = s2.groupby(s2.index.strftime("%Y-%m")).sum() * 100
-        ok = h1 >= 50 and h2 >= 50 and c2 >= 30
+        mc = (1 + s2).groupby(s2.index.strftime("%Y-%m")).prod() - 1
+        consistent = bool((mc >= 0).all() and (mc >= 0.034).sum() >= 10)
+        print(f"  monthly (compounded): " + ", ".join(f"{k[2:]} {v * 100:+.1f}%" for k, v in mc.items()))
+        print(f"  consistency (addendum 1: every month >= 0%, >= 10 of 12 months >= 3.4%): {'met' if consistent else 'NOT met'} "
+              f"({int((mc >= 0.034).sum())} months >= 3.4%, {int((mc < 0).sum())} negative)")
+        ok = h1 >= 50 and h2 >= 50 and c2 >= 30 and consistent
         print(f"  Stage 2 2025-11..2026-10: halves {h1:.2f}% / {h2:.2f}%; costs x2 {c2:.2f}%; worst month {mon.min():.1f}%; collapses {col2}, "
               f"dead {dead2}; ${ann(s2) * 150:,.0f}/yr on $15K")
         print(f"  VERDICT: {'PASS' + (' (near-miss under F4: non-stable)' if not so else '') if ok else 'FAIL'}\n")
