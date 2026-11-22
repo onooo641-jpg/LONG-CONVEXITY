@@ -1,0 +1,11 @@
+=== liq_morphobase_s0
+morphobase_s0: 105 markets resolved, 7776 events with tokens
+  rpc exception eth_getTransactionReceipt @ https://base.api.pocket.network: HTTP 429
+  morphobase_s0: receipts 6852/6970 (5 min)
+  morphobase_s0: receipts 6916/6970 (6 min)
+  morphobase_s0: receipts 6948/6970 (6 min)
+  morphobase_s0: receipts 6963/6970 (6 min)
+  rpc exception eth_call @ https://base.gateway.tenderly.co: HTTP 429
+base: prices 35931 points, 57/63 coins priced
+morphobase_s0: COMPLETE 7776 events, 62 tokens, 8 min
+=== liq_morphobase_s0 done in 477s  ok 1210 fail 0
