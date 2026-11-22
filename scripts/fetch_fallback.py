@@ -641,7 +641,29 @@ def job_batch6():
     (OUT / "batch6_raw.json").write_text(json.dumps(raw)[:40_000_000])
     print("paradex markets:", len((raw["paradex_summary"] or {}).get("results", [])), flush=True)
 
-JOBS = {"batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+def job_votium():
+    """#267 Stage 0.5/1: Votium cvx-crv per-round bribe data (last 30 rounds) + CVX daily price."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    rounds = (get("https://api.llama.airforce/bribes/votium/cvx-crv/rounds") or {}).get("rounds", [])
+    raw = {}
+    for r in rounds[-30:]:
+        raw[str(r)] = get(f"https://api.llama.airforce/bribes/votium/cvx-crv/{r}", tries=2)
+        time.sleep(0.3)
+    first = next((v for v in raw.values() if v), None)
+    print(f"votium rounds fetched {sum(1 for v in raw.values() if v)} of {len(raw)}; keys {sorted(first.keys())[:12] if isinstance(first, dict) else None}", flush=True)
+    (OUT / "votium_raw.json").write_text(json.dumps(raw))
+    rows = []
+    t = int(pd.Timestamp("2024-10-01", tz="UTC").timestamp())
+    while t < int(time.time()):
+        d = get(f"https://coins.llama.fi/chart/coingecko:convex-finance?start={t}&span=90&period=1d", tries=2)
+        for v in ((d or {}).get("coins") or {}).values():
+            rows += [{"ts": x["timestamp"], "price": x["price"]} for x in v.get("prices", [])]
+        t += 90 * 86400
+    pd.DataFrame(rows).to_parquet(OUT / "votium_cvx_price.parquet", index=False)
+    print(f"CVX prices {len(rows)}", flush=True)
+
+JOBS = {"votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys

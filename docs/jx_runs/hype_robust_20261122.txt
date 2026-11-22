@@ -1,0 +1,7 @@
+as registered (2.5% staking, 3x short, capital 1.333) halves  24.90% /   9.16%; last 90 d   9.95%
+no staking yield, 3x                                 halves  23.02% /   7.29%; last 90 d   8.08%
+2.5% staking, 2x short (capital 1.5)                 halves  22.13% /   8.15%; last 90 d   8.84%
+no staking, 2x                                       halves  20.47% /   6.48%; last 90 d   7.18%
+share of days HYPE shorts paid funding: 4%; monthly funding received (annualised %):
+  2024-12 117, 2025-01 55, 2025-02 30, 2025-03 22, 2025-04 12, 2025-05 33, 2025-06 20, 2025-07 27, 2025-08 14, 2025-09 17, 2025-10 10, 2025-11 12, 2025-12 12, 2026-01 12, 2026-02 7, 2026-03 7, 2026-04 5, 2026-05 7, 2026-06 14, 2026-07 9, 2026-08 12, 2026-09 9, 2026-10 11
+HYPE not in hl_candles -> liquidation check not possible from repo data

@@ -31,3 +31,20 @@ Aave Umbrella / Votium source probes, Yahoo BTC=F and BTC-USD 120 d, coin prices
 | 278 | New-chain bootstrapping incentives (stablecoin pools on chains launched ≤ 12 months ago: Monad, Plasma, Stable, MegaETH...) | top-5 mean stable yield (TVL ≥ $5M) on those chains in the snapshot |
 Survivors of Stage 0.5 get Stage-1 (90-day) data in a second fetch, then Stage 2 only if they survive. Commands: `uv run python
 scripts/batch6_20261122.py | tee docs/jx_runs/batch6_20261122.txt`.
+
+## Stage 0.5 results (`docs/jx_runs/batch6a_20261122.txt`, `batch6b_20261122.txt`; re-runs identical)
+KILL: #268, #269 (3.9%), #270, #271 (CME basis 2.6% on capital), #272, #273, #275, #277 (TRX reverse carry 6.3% after 4.8% borrow).
+Not testable: #265, #266 (sources did not answer), #274 (LVR not modelable). #267 needs a per-round fetch.
+Survive Stage 0.5: #259 (33%, single noisy Paradex reading; no light history endpoint → Stage 1 not testable), #260 (23%), #261 (26%),
+#262 (20% for LDO — but DefiLlama "holders revenue" includes buybacks, which a hedged staker does not receive → Stage 0 re-check below),
+#263 (11.4%), #264 (9.0%), #276 (10.0%), #278 (12.6%).
+
+## Stage 1 rules for #260 / #261 (registered before running; data already fetched, last ~92 days)
+- **#260 Lighter–HL gap:** same rule as #208 on hourly funding: daily signal = trailing-24-h mean gap; open at |signal| ≥ 15%/yr, short the
+  higher-funding venue and long the other; close on sign flip; fees: Lighter 0, HL 0.045% per side (0.09% of notional per round trip);
+  capital 2/3 of notional per position; ≤ 5 positions. KILL if < 4%/yr on capital over the window.
+- **#261 zero-fee carry on Lighter:** hold spot (DEX swap cost 0.30% per side, assumed) and short the Lighter perp; weekly, hold the top 3 coins
+  by trailing-14-day funding received by shorts; return ÷ 1.333. KILL if < 4%/yr.
+- **#262 Stage 0 re-check:** a token qualifies only if its protocol pays fee revenue *to stakers* (not buybacks). LDO: Lido's holders revenue is a
+  buyback (third-party knowledge; not verified) → excluded; SKY staking (pays USDS to stakers) is already #228. Others in the top 10 have no
+  market cap in DefiLlama's listing → not testable without more data.

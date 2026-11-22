@@ -1,0 +1,23 @@
+#259 Paradex vs HL: 21 common coins; largest gaps: LTC 22.1% (PDX -11.2 / HL 10.9); AAVE 22.0% (PDX -11.3 / HL 10.7); SUI 21.2% (PDX -11.0 / HL 10.2); MORPHO 17.6% (PDX -6.6 / HL 11.0); AERO 15.6% (PDX 1.6 / HL 17.2)
+   ceiling 1.5 x max gap = 33.18% -> survives Stage 0.5  [Paradex value is a single current reading: noisy, optimistic]
+#260 Lighter vs HL (90 d each): 9 common coins; largest: AERO 15.5% (LTR 1.7 / HL 17.2); USELESS 11.0% (LTR 18.3 / HL 7.3); ARB 8.4% (LTR 0.2 / HL 8.6); APT 7.0% (LTR -2.8 / HL 4.2); NEAR 6.2% (LTR 6.5 / HL 12.6)
+   ceiling 23.19% -> survives Stage 0.5
+#261 zero-fee carry: Lighter best-3 90-d USELESS 18.3%, AI 17.7%, STBL 15.8%; Paradex best-3 current ANT 58.3%, MSTR 26.1%, CRCL 20.9% -> ceiling 26.31% -> survives Stage 0.5  [best-3 chosen with hindsight; long-tail coins]
+#262 real-yield staking hedged: 25 protocols with holders revenue, mcap >= $20M and an HL perp
+    protocol  token  holders_rev_1y         mcap  staker_apr_if_30pct_staked  hl_short_funding_90d  ceiling
+        Lido    LDO       8889005.0 1.911731e+08                       15.50                 11.16    19.99
+      Solana    SOL      24715660.0 4.155618e+10                        0.20                  7.72     5.94
+   Avalanche   AVAX       2550649.0 2.934479e+09                        0.29                  6.13     4.81
+       Aptos    APT        901886.0 3.287586e+08                        0.91                  4.16     3.80
+        Tron    TRX     329754153.0 2.899275e+10                        3.79                -13.21    -7.06
+   Curve DEX    CRV      22544800.0          NaN                         NaN                 12.87      NaN
+ Sky Lending    SKY      53919808.0          NaN                         NaN                 13.20      NaN
+   Pendle V2 PENDLE       8954514.0          NaN                         NaN                 12.60      NaN
+     Aave V3   AAVE      17185405.0          NaN                         NaN                 10.70      NaN
+Velodrome V1   AERO          3095.9          NaN                         NaN                 17.17      NaN
+   best ceiling 19.99% -> survives Stage 0.5  [assumes only 30% of supply staked: optimistic]
+#265 Drift insurance fund: no source answered from the runner -> not testable
+#266 Aave Umbrella: no source answered -> not testable
+#267 Votium (vlCVX bribes): API returned only the list of rounds; per-round bribe data not fetched -> needs a follow-up fetch
+  j = pd.concat([F, S], axis=1, keys=["F", "S"]).dropna()
+#271 CME BTC basis: 64 days; mean annualised front-month basis 3.70% (min -17.4, max 45.8); on capital (spot + 40% margin) 2.64% -> KILL

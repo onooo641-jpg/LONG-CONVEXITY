@@ -1,0 +1,11 @@
+  #263 junior tranches (equal weight): 8 pools, stress hits 4
+#263 junior tranches (equal weight): Stage 1 -26.25%/yr -> KILL. FAIL
+
+  #264 senior tranches (equal weight): 6 pools, stress hits 1
+#264 senior tranches (equal weight): Stage 1 6.68%; 383 days from 2025-11-04; halves -37.93% / 6.47% -> FAIL
+
+#276 native HYPE staking hedged (staking APR assumed 2.5%): Stage 1 9.93%; 695 days from 2024-12-05; halves 24.90% / 9.16% -> PASS
+
+  #278: 103 new-chain pools with history; stress hits 12
+#278 new-chain stable incentives (monthly top 5): Stage 1 -41.33%/yr -> KILL. FAIL
+
