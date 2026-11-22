@@ -71,7 +71,26 @@ def _studio(size, price, mll, target, micros, pmin):
         activation=0.0, api_monthly=0.0)
 
 
+# Addendum 10
+TTP_PRIME50 = dataclasses.replace(
+    B, profit_target=3000, loss_limit=2000, combine_max_contracts=50, combine_consistency=0.40, combine_max_days=30, combine_mll_locks=True,
+    funded_loss_limit=2000, mll_locks_at=2000, lock_level=0.0, funded_scaling=False, winning_day_min=150.0, winning_days_required=5,
+    payout_share=0.50, payout_cap=2500.0, payout_min=0.0, profit_split=0.80, one_time_price=99.0, reset=99.0, monthly=0.0, activation=0.0,
+    api_monthly=0.0)
+
+
+def _tl(dd, target, micros, price):
+    return dataclasses.replace(
+        B, profit_target=target, loss_limit=dd, combine_max_contracts=micros, combine_consistency=0.40, combine_max_days=60,
+        combine_mll_locks=True, funded_loss_limit=dd, mll_locks_at=dd, lock_level=0.0, funded_scaling=False, winning_days_required=0,
+        payout_buffer=dd, payout_cap=float("inf"), payout_min=0.0, profit_split=0.80, one_time_price=price, reset=price, monthly=0.0,
+        activation=0.0, api_monthly=0.0)
+
+
 MODELS = {
+    "ttp_prime50": [("TTP Futures Prime 50K ($99)", TTP_PRIME50, 875)],
+    "traders_launch": [("Traders Launch 100K ($159)", _tl(1000.0, 2000.0, 20, 159.0), 450),
+                       ("Traders Launch 200K ($299)", _tl(2000.0, 4000.0, 40, 299.0), 900)],
     "mffu_studio": [("MFFU Studio #001 $10K ($140)", _studio(10_000, 140.0, 500.0, 1000.0, 10, 250.0), 225, Policy.IMMEDIATE),
                     ("MFFU Studio #002 $20K ($280)", _studio(20_000, 280.0, 1000.0, 2000.0, 20, 250.0), 450, Policy.IMMEDIATE),
                     ("MFFU Studio #003 $5K ($75)", _studio(5_000, 75.0, 250.0, 500.0, 5, 100.0), 112, Policy.IMMEDIATE)],

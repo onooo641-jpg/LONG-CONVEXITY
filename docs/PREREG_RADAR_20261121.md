@@ -174,3 +174,14 @@ $0 with the same **static** MLL; **all net profit above $0 can be withdrawn any 
 daily purchase cap. Modelled with a static floor that never moves and withdrawals as soon as ≥ the minimum (`Policy.IMMEDIATE`, needed because
 there is no lock); risk = 0.45 × MLL. Same coin-flip test and flag rule as the sweep. The daily profit cap ($2.5K–$10K) never binds at this risk.
 Limits: the daily purchase cap and "availability is limited" may make a recycling plan impossible in practice.
+
+## Addendum 10 (2026-11-22): The Trading Pit Futures Prime 50K and Traders Launch 100K/200K (#233), priced before running
+- **TTP Futures Prime 50K** (support.thetradingpit.com "How it works", "Rules", "Rewards"): target $3,000, EOD trailing $2,000 locking at the
+  starting balance in both phases, daily pause $1,000 (soft, risk $875), 50 micros, 30-day challenge, 40% eval consistency (modelled as
+  combine_consistency 0.40), funded: 5 profitable days ≥ $150 per reward, up to 50% of profit, cap $2,500, 80%; price $99 (directory list,
+  third-party), resets priced as rebuys, $0 activation. Bots: own EAs allowed (directory text). Market-data fee not stated → not modelled.
+- **Traders Launch 100K / 200K** (traderslaunch.com pricing + rules + payout rules, 2026-07-16): one-time $159 / $299; target $2,000 / $4,000;
+  EOD drawdown $1,000 / $2,000 locking at the starting balance (assumed the same once funded); fixed 20 / 40 micros; 40% session-profit limit in
+  the evaluation (modelled as combine_consistency 0.40); 60-day limit; funded: payouts daily once above +1% (modelled as a buffer of 1% = $1,000 /
+  $2,000), no cap, no consistency, 80%; up to 5 accounts per user; EAs allowed after pre-approval. Risk = 0.45 × drawdown.
+Same procedure and flag rule as the sweep.
