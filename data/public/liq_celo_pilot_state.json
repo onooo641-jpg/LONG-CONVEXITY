@@ -30,6 +30,6 @@
  "logs_done": false,
  "receipts_done": false,
  "complete": false,
- "getlogs_fails": 12,
- "last_flush": "2026-11-22T06:51:19Z"
+ "getlogs_fails": 13,
+ "last_flush": "2026-11-22T08:04:48Z"
 }

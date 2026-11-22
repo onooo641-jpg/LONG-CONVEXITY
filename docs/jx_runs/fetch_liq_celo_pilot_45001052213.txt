@@ -1,0 +1,6 @@
+=== liq_celo_pilot
+celo_pilot: month anchors 28549357..81590442, resume at block 73721642
+  rpc exception eth_getLogs @ https://forno.celo.org: HTTP 400
+  celo_pilot: getLogs failed 73721642-73741641: https://forno.celo.org: HTTPError: HTTP 400
+celo_pilot: ABORT: 12 getLogs failures and no events yet; no working endpoint. Stopped at block 73721642
+=== liq_celo_pilot done in 12s  ok 0 fail 1
