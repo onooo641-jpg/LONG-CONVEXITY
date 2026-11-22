@@ -1,7 +1,7 @@
 firm,product,automation,evidence,source,malaysia,model_key
 Topstep,50K,full_bots,verified-in-repo,README.md / bridge docs (TopstepX API in live use),ok-in-use,topstep50
 Lucid Trading,LucidFlex 50K,full_bots,verified,support.lucidtrading.com 'Other trading activities': 'Automated trading systems and trade copiers are permitted',not-on-third-party-list,lucidflex50
-MyFundedFutures,Rapid EOD 50K,full_bots,verified-in-repo,PREREG_ROUND3_20261120 (Fair Play page),unverified,mffu_rapid50
+MyFundedFutures,Rapid EOD 50K,full_bots,verified-in-repo,PREREG_ROUND3_20261120 (Fair Play page),"RESTRICTED (own help centre: Restricted Countries Policy, 2026-10-14)",mffu_rapid50
 Tradeify,Select Flex 50K,full_bots_conditional,verified,"tradeify.co funded-trader-agreement 6.6: bots permitted only under conditions (sole ownership, no cross-firm use, no HFT)",unverified,tradeify_flex50
 TradeDay,Fast Pass $85,full_bots_no_api,verified-in-repo,PREREG_FIRMS2_20261120 (bots inside NinjaTrader/Tradovate/TradingView),not-on-third-party-list,tradeday
 Bulenox,Momentum,full_bots,verified-in-repo,PREREG_FIRMS2_20261120,not-on-third-party-list,bulenox
@@ -12,8 +12,8 @@ Breakout,Classic 1-Step,unclear,assumed,PREREG_GLOBAL_20261120 (bot policy unpub
 Apex Trader Funding,,unclear,third-party,PREREG_ROUND3_20261120 (conflicting reports),unverified,
 Phidias,,alert_assisted,verified,"phidiaspropfirm.com/rules: 'fully automated trading ... not permitted. Only semi-automated software is permitted, provided the trader actively monitors and manually adjusts all trades'; target/price/activation fee only in JS configurator -> not priced",unverified,
 Take Profit Trader,,banned_full_bots,third-party,PREREG_LUCID_20261120,unverified,
-Alpha Futures,,alert_assisted,verified (interpretation),"alpha-futures.com T&C: 'AI, bots, and other automated trading mechanisms is strictly prohibited'; 'hands-off ... full automation is strictly forbidden'; manual entry not restricted",unverified,alpha_std50
-Blue Guardian,,alert_assisted,verified,"help.blueguardian.com prohibited-trading-strategies: 'Fully automated systems, AI and bots are not allowed'; 'Semi-automated trading is allowed only if you actively monitor and manage it'",unverified,bg_elite50
+Alpha Futures,,alert_assisted,verified (interpretation),"alpha-futures.com T&C: 'AI, bots, and other automated trading mechanisms is strictly prohibited'; 'hands-off ... full automation is strictly forbidden'; manual entry not restricted","RESTRICTED (own help centre: Countries with Limitations, 2026-08-12)",alpha_std50
+Blue Guardian,,alert_assisted,verified,"help.blueguardian.com prohibited-trading-strategies: 'Fully automated systems, AI and bots are not allowed'; 'Semi-automated trading is allowed only if you actively monitor and manage it'","RESTRICTED for Futures (own help centre, 2026-11-13); CFD allowed",bg_elite50
 Earn2Trade,,banned_full_bots,third-party,PREREG_ROUND3_20261120,unverified,
 Top One Futures,,alert_assisted,verified (interpretation),help.toponefutures.com general rules: 'automated trading is not allowed on any account'; plan prices/targets not in crawled pages -> not priced,unverified,
 Funded Futures Family,,banned_full_bots,third-party,PREREG_ROUND3_20261120,unverified,
@@ -23,7 +23,7 @@ HyroTrader,crypto only,full_bots,verified-in-repo,PREREG_ROUND3_20261120 (crypto
 Maven Trading,CFD,banned_full_bots,verified,maventrading.com: 'EAs and automated trading are prohibited across all Maven platforms' (CFD; NQ futures not offered),unverified,
 Lux Trading Firm,CFD,banned_full_bots,verified,luxtradingfirm.com: 'automated trading algorithms ... execution bots ... strictly forbidden' (CFD),unverified,
 Audacity Capital,CFD,full_bots,verified,"audacitycapital.co.uk: 'EAs are permitted on MT5 and DXtrade ... not sourced from third-party signals' (CFD; NQ futures strategy not portable, not priced)",unverified,
-Alpha Capital Group,CFD,full_bots,verified,alphacapitalgroup.uk: 'Expert Advisors supported' (CFD; not priced),unverified,
+Alpha Capital Group,CFD,full_bots,verified,alphacapitalgroup.uk: 'Expert Advisors supported' (CFD; not priced),ok (own country-availability page lists Malaysia),
 Goat Funded Trader,CFD,full_bots,verified (interpretation),goatfundedtrader.com bans HFT/arbitrage EAs only (CFD; not priced),unverified,
 BluSky Trading Company,,full_bots,third-party (directory),saveonpropfirms: 'Automated/algorithmic trading is permitted'; bans ultra-high-speed,unverified,
 DayTraders,,full_bots,third-party (directory),"saveonpropfirms: 'Bots, AI tools and scripts are allowed if they trade at normal speed'",unverified,
@@ -36,7 +36,7 @@ Traders Launch,Futures 100K/200K,full_bots_conditional,third-party (directory),p
 The Trading Pit Futures,Futures Prime 50K,full_bots,verified (own T&C + support centre),TTP T&C Annex B: EAs banned only with prohibited functions or when the same EA is used by multiple traders; Level 1 data free,"ok (not on restricted lists, eligibility FAQ)",ttp_prime50
 Purdia Capital,,alert_assisted,third-party (directory),saveonpropfirms: 'Semi-automated tools are permitted while the trader keeps active oversight'; fully automated prohibited,unverified,
 AquaFunded Futures,,alert_assisted,third-party (directory),propfirmmatch: fully automated prohibited; semi-automated only with trader fully present,unverified,
-FuturesElite,,alert_assisted,verified (own FAQ); price third-party,propfirmmatch: 'Fully automated trading using AI or bots is not permitted' (manual entry not restricted),unverified,fe_elite50
+FuturesElite,,alert_assisted,verified (own FAQ); price third-party,propfirmmatch: 'Fully automated trading using AI or bots is not permitted' (manual entry not restricted),RESTRICTED (own Terms & Conditions),fe_elite50
 Hola Prime Futures,,alert_assisted,third-party (directory),propfirmmatch: 'Prohibited to employ any kind of semi or fully automated trading' (pure manual entry only),unverified,
 YLOS Trading,,alert_assisted,third-party (directory),propfirmmatch: 'no type of automation is allowed' except the Order Replicator (pure manual only),unverified,
 The5ers Futures,,alert_assisted,third-party (directory),"propfirmmatch: 'HFT, Hedging and Algo Trading: not allowed'",unverified,
@@ -45,5 +45,5 @@ NexGen ProTrader Funding,,unclear,third-party (directory),saveonpropfirms: no au
 Legends Trading,,unclear,third-party (directory),saveonpropfirms: no automation sentence found,unverified,
 E8 Futures,,unclear,third-party (directory),propfirmmatch: heading 'EAs/bots/AI/semi-automation/HFT' without readable rule,unverified,
 BrightFunded Futures,,unclear,third-party (directory),propfirmmatch: no automation sentence found,unverified,
-MyFundedFutures,Builder 50K,full_bots,verified (own help centre),help.myfundedfutures.com Builder Plan 50k guide (2026-10-21); new plan caught by the radar diff,unverified,mffu_builder50
-MyFundedFutures,Studio #001-#003,full_bots,verified (own help centre),"help.myfundedfutures.com Studio Plans guide (2026-10-14): static MLL, payouts any time above $0; daily purchase cap; 1 account",unverified,mffu_studio
+MyFundedFutures,Builder 50K,full_bots,verified (own help centre),help.myfundedfutures.com Builder Plan 50k guide (2026-10-21); new plan caught by the radar diff,"RESTRICTED (own help centre: Restricted Countries Policy, 2026-10-14)",mffu_builder50
+MyFundedFutures,Studio #001-#003,full_bots,verified (own help centre),"help.myfundedfutures.com Studio Plans guide (2026-10-14): static MLL, payouts any time above $0; daily purchase cap; 1 account","RESTRICTED (own help centre: Restricted Countries Policy, 2026-10-14)",mffu_studio
