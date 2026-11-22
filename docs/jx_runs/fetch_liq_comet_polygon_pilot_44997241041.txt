@@ -1,0 +1,14 @@
+=== liq_comet_polygon_pilot
+  rpc exception eth_getLogs @ https://poly.api.pocket.network: HTTP 400
+  comet_polygon_pilot: scanned to block 93024920/96523828 (0 events, 5 min)
+  comet_polygon_pilot: scanned to block 94764920/96523828 (8 events, 9 min)
+  comet_polygon_pilot: scanned to block 96523829/96523828 (9 events, 12 min)
+comet_polygon_pilot: log scan complete, 9 events
+comet_polygon_pilot: 2 Comet contracts with base token, 9 events
+  rpc exception eth_getTransactionReceipt @ https://poly.api.pocket.network: HTTP 429
+  comet_polygon_pilot: receipts 1/9 (13 min)
+  comet_polygon_pilot: receipts 2/9 (13 min)
+  comet_polygon_pilot: receipts 3/9 (13 min)
+  comet_polygon_pilot: receipts 3/9 (13 min)
+comet_polygon_pilot: INCOMPLETE receipts 6/9 missing; re-run
+=== liq_comet_polygon_pilot done in 770s  ok 562 fail 216
