@@ -1,8 +1,5 @@
-# chains for .github/workflows/fetch_liq.yml. Resumable. (run 20: newer-chain pilots, PREREG_LIQ_NEWCHAINS_20261122)
-sonic_pilot
-mantle_pilot
-linea_pilot
-celo_pilot
-ink_pilot
-soneium_pilot
-zksync_pilot
+# chains for .github/workflows/fetch_liq.yml. Resumable. (run 21: Compound v3 pilots, PREREG_LIQ_COMET_20261122)
+comet_base_pilot
+comet_arbitrum_pilot
+comet_optimism_pilot
+comet_polygon_pilot
