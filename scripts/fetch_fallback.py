@@ -663,7 +663,86 @@ def job_votium():
     pd.DataFrame(rows).to_parquet(OUT / "votium_cvx_price.parquet", index=False)
     print(f"CVX prices {len(rows)}", flush=True)
 
-JOBS = {"votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+def job_batch7():
+    """Batch 7 (docs/PREREG_BATCH7_20261122.md): Gains vault prices, Pendle full history, order-book snapshots (3 h)."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    # A. Gains
+    rows = []
+    for name, addr in (("gUSDC_arb", "arbitrum:0xd3443ee1e91af28e5fb858fbd0d72a63ba8046e0"),):
+        t = int(pd.Timestamp("2024-10-01", tz="UTC").timestamp())
+        while t < int(time.time()):
+            d = get(f"https://coins.llama.fi/chart/{addr}?start={t}&span=90&period=1d", tries=2)
+            for v in ((d or {}).get("coins") or {}).values():
+                rows += [{"vault": name, "ts": x["timestamp"], "price": x["price"]} for x in v.get("prices", [])]
+            t += 90 * 86400
+            time.sleep(0.4)
+    pd.DataFrame(rows).to_parquet(OUT / "batch7_gains_prices.parquet", index=False)
+    print(f"gains prices: {len(rows)}", flush=True)
+    for nm, u in (("gains_backend_arb", "https://backend-arbitrum.gains.trade/stats"), ("gains_global", "https://backend-global.gains.trade/api/vaults")):
+        d = get(u, tries=1)
+        print(f"PROBE {nm}: {'answered ' + str(sorted(d.keys())[:10]) if isinstance(d, dict) else ('list' if isinstance(d, list) else 'no answer')}", flush=True)
+    # B. Pendle full
+    chains = (get("https://api-v2.pendle.finance/core/v1/chains") or {}).get("chainIds", [])
+    mk = []
+    for cid in chains:
+        for kind in ("active", "inactive"):
+            for m in (get(f"https://api-v2.pendle.finance/core/v1/{cid}/markets/{kind}") or {}).get("markets", []):
+                if STABLE_RE.search(m.get("name", "")) and pd.Timestamp(m["expiry"]) >= pd.Timestamp("2024-11-01", tz="UTC"):
+                    mk.append({"chain": cid, "name": m["name"], "address": m["address"], "expiry": m["expiry"], "underlying": m.get("underlyingAsset")})
+    print(f"pendle stable markets expiring >= 2024-11: {len(mk)}", flush=True)
+    hist = []
+    for i, m in enumerate(mk):
+        d = get(f"https://api-v2.pendle.finance/core/v2/{m['chain']}/markets/{m['address']}/historical-data?time_frame=day", tries=2) or \
+            get(f"https://api-v2.pendle.finance/core/v1/{m['chain']}/markets/{m['address']}/historical-data?time_frame=day", tries=1)
+        for r in (d or {}).get("results", []) if isinstance(d, dict) else []:
+            hist.append({**{k: m[k] for k in ("chain", "address", "name", "expiry")}, "timestamp": r.get("timestamp"),
+                         "impliedApy": r.get("impliedApy"), "tvl": r.get("tvl")})
+        if i % 50 == 0:
+            print(f"  pendle history {i}/{len(mk)}", flush=True)
+        time.sleep(0.25)
+    pd.DataFrame(hist).to_parquet(OUT / "batch7_pendle_history.parquet", index=False)
+    px = []
+    for m in mk:
+        slug = PENDLE_CHAIN.get(m["chain"])
+        ua = str(m.get("underlying") or "")
+        addr = ua.split("-")[-1] if "-" in ua else ua
+        if not slug or not addr.startswith("0x"):
+            continue
+        ts = int(min(pd.Timestamp(m["expiry"]), pd.Timestamp.now(tz="UTC")).timestamp())
+        d = get(f"https://coins.llama.fi/prices/historical/{ts}/{slug}:{addr}", tries=2)
+        c = ((d or {}).get("coins") or {}).get(f"{slug}:{addr}") or {}
+        px.append({"address": m["address"], "price": c.get("price"), "symbol": c.get("symbol")})
+        time.sleep(0.15)
+    pd.DataFrame(px).to_parquet(OUT / "batch7_pendle_underlying.parquet", index=False)
+    pd.DataFrame(mk).to_parquet(OUT / "batch7_pendle_markets.parquet", index=False)
+    print(f"pendle history rows {len(hist)}, underlying prices {sum(1 for x in px if x['price'])}/{len(px)}", flush=True)
+    # C. order books, every 10 minutes for 3 hours
+    coins = ["BTC", "ETH", "SOL", "XRP", "DOGE", "AVAX", "LINK", "SUI", "ARB", "OP", "LTC", "BNB"]
+    snaps = []
+    for k in range(18):
+        t0 = time.time()
+        for c in coins:
+            hl = get("https://api.hyperliquid.xyz/info", {"type": "l2Book", "coin": c}, tries=1)
+            if hl and hl.get("levels"):
+                b, a = hl["levels"]
+                snaps.append({"k": k, "venue": "hl", "coin": c, "bids": [[float(x["px"]), float(x["sz"])] for x in b[:40]],
+                              "asks": [[float(x["px"]), float(x["sz"])] for x in a[:40]]})
+            dy = get(f"https://indexer.dydx.trade/v4/orderbooks/perpetualMarket/{c}-USD", tries=1)
+            if dy and dy.get("bids") is not None:
+                snaps.append({"k": k, "venue": "dydx", "coin": c, "bids": [[float(x["price"]), float(x["size"])] for x in dy["bids"][:40]],
+                              "asks": [[float(x["price"]), float(x["size"])] for x in dy["asks"][:40]]})
+            ae = get(f"https://api.aevo.xyz/orderbook?instrument_name={c}-PERP", tries=1)
+            if ae and ae.get("bids") is not None:
+                snaps.append({"k": k, "venue": "aevo", "coin": c, "bids": [[float(x[0]), float(x[1])] for x in ae["bids"][:40]],
+                              "asks": [[float(x[0]), float(x[1])] for x in ae["asks"][:40]]})
+            time.sleep(0.1)
+        print(f"  orderbook snapshot {k + 1}/18: {sum(1 for s in snaps if s['k'] == k)} books", flush=True)
+        if k < 17:
+            time.sleep(max(0, 600 - (time.time() - t0)))
+    (OUT / "batch7_orderbooks.json").write_text(json.dumps(snaps))
+
+JOBS = {"batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys
