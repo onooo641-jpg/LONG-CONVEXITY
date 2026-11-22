@@ -31,7 +31,7 @@ def toks(v):
 
 
 def run(pools, ch, PX, start, end, cost_mult=1.0, stable_only=False):
-    A = ch.pivot(index="day", columns="pool", values="apyBase").fillna(0) + 0 * ch.pivot(index="day", columns="pool", values="tvlUsd")
+    A = ch.pivot(index="day", columns="pool", values="apyBase").fillna(0)
     RW = ch.pivot(index="day", columns="pool", values="apyReward").reindex(A.index).fillna(0)
     T = ch.pivot(index="day", columns="pool", values="tvlUsd").reindex(A.index)
     Y = (A + RW).clip(upper=2000)
@@ -78,8 +78,8 @@ def run(pools, ch, PX, start, end, cost_mult=1.0, stable_only=False):
                 rt, ut, p0 = entry[p]
                 f_rw = np.nanmean([PX[t].asof(d) / p0[t] for t in rt if p0.get(t)]) if rt else 1.0
                 f_rw = 1.0 if not np.isfinite(f_rw) else f_rw
-                base = A.at[d, p] if d in A.index else 0.0
-                rw = RW.at[d, p] if d in RW.index else 0.0
+                base = float(np.nan_to_num(A.at[d, p])) if d in A.index else 0.0
+                rw = float(np.nan_to_num(RW.at[d, p])) if d in RW.index else 0.0
                 day = base / 100 / 365 + rw / 100 / 365 * f_rw
                 stable = p in pools.index and bool(pools.at[p, "stablecoin"])
                 if not stable and ut:
