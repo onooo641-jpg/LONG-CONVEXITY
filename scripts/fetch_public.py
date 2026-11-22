@@ -1458,6 +1458,38 @@ def job_liq_comet(name):
     print(f"{name}: COMPLETE {len(df)} events, {len(toks)} tokens, {(time.time()-t0)/60:.0f} min", flush=True)
 
 
+T_ABSORB = "0x9850ab1af75177e4a9201c65a2cf7976d5d28e40ef63494b44366f86b2f9412e"
+
+
+def job_liq_comet_timing():
+    """PREREG_LIQ_COMET addendum 1: are Comet buys in the same transaction as the absorb? sample of buy txs on the biggest venue per chain."""
+    import numpy as np
+    for chain in ("base", "arbitrum"):
+        f = OUT / f"liq_comet_{chain}.parquet"
+        if not f.exists():
+            continue
+        df = pd.read_parquet(f)
+        gv = df.groupby("venue").size().sort_values(ascending=False)
+        # biggest by value is not stored here: use the venue with the most events among those with > 50 events and the largest sum of debt_amt
+        ven = df.groupby("venue")["debt_amt"].sum().sort_values(ascending=False).index[0]
+        txs = sorted(df[df["venue"] == ven]["tx"].unique())
+        k = max(1, int(np.ceil(len(txs) / 300)))
+        sample = txs[::k][:300]
+        urls = {"base": ["https://base.api.pocket.network", "https://base.gateway.tenderly.co"]}.get(chain, LIQ_CHAINS[chain][2])
+        n_abs, n_ok, buys = 0, 0, []
+        for t in sample:
+            try:
+                r = rpc(urls, "eth_getTransactionReceipt", [t])
+            except Exception:  # noqa: BLE001
+                continue
+            n_ok += 1
+            logs = r.get("logs", [])
+            ab = any(lg["topics"] and lg["topics"][0] == T_ABSORB and lg["address"].lower() == ven for lg in logs)
+            n_abs += ab
+            buys.append(sum(1 for lg in logs if lg["topics"] and lg["topics"][0] == T_BUYCOLL and lg["address"].lower() == ven))
+        print(f"timing {chain} venue {ven[:12]} events {int((df['venue'] == ven).sum())} txs {len(txs)} sampled {n_ok}: also absorb in same tx {n_abs} ({100 * n_abs / max(n_ok, 1):.1f}%); mean buy logs per tx {np.mean(buys) if buys else 0:.2f}", flush=True)
+
+
 def _liq_state_path(name):
     return OUT / f"liq_{name}_state.json"
 
@@ -1791,7 +1823,7 @@ for _c in LIQ_CHAINS:
 
 JOBS = {"ipo2": job_ipo2, "iponews": job_iponews, "ipo": job_ipo, "myxsnap": job_myxsnap, "batch2": job_batch2, "hl2023d": job_hl2023d, "hl2023": job_hl2023, "hl": job_hl, "llama_lend": job_llama_lend, "llama_pools": job_llama_pools,
         "llama_prices": job_llama_prices, "poly": job_poly,
-        "liq_probe": job_liq_probe, "liq_diag": job_liq_diag, "liq_diag2": job_liq_diag2, "liq_diag3": job_liq_diag2, "liq_diag4": job_liq_diag4, "liq_secretcheck": job_liq_secretcheck, "liq_pxdiag": job_liq_pxdiag, "liq_replay_morphobase": job_liq_morpho_replay, "liq_morpho_replay_diag": job_liq_morpho_replay_diag, "liq_morphobase_pilot": lambda: job_liq_morpho("morphobase_pilot"), "liq_morphobase": lambda: job_liq_morpho("morphobase"), "liq_morphobase_s0": lambda: job_liq_morpho("morphobase_s0"),
+        "liq_probe": job_liq_probe, "liq_diag": job_liq_diag, "liq_diag2": job_liq_diag2, "liq_diag3": job_liq_diag2, "liq_diag4": job_liq_diag4, "liq_comet_timing": job_liq_comet_timing, "liq_secretcheck": job_liq_secretcheck, "liq_pxdiag": job_liq_pxdiag, "liq_replay_morphobase": job_liq_morpho_replay, "liq_morpho_replay_diag": job_liq_morpho_replay_diag, "liq_morphobase_pilot": lambda: job_liq_morpho("morphobase_pilot"), "liq_morphobase": lambda: job_liq_morpho("morphobase"), "liq_morphobase_s0": lambda: job_liq_morpho("morphobase_s0"),
         "liq_morphobase_s1": lambda: job_liq_morpho("morphobase_s1"), "liq_morphobase_s2": lambda: job_liq_morpho("morphobase_s2"), **{f"liq_replay_{c}": globals()[f"job_liq_replay_{c}"] for c in ("arbitrum", "base", "avalanche", "polygon", "optimism")}, "liq_decimals": job_liq_decimals, **{f"liq_prices_{c}": _liq_prices_job(c) for c in LIQ_CHAINS}, **{f"liq_{c}_es": _liq_es_job(c) for c in LIQ_ES_ID}, **{f"liq_{c}": globals()[f"job_liq_{c}"] for c in LIQ_CHAINS}}
 
 
