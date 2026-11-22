@@ -1,0 +1,10 @@
+base: v2 start, head 60695234
+base: loaded 40072 cached positions
+base: recalibrated 613 cached positions
+base: positions ready: 40072 users, 11908 with debt
+base: reopened 226 recorded unhealthy episodes
+base: head 60697051 cycles 44 debtors 11915 cand 263 last_cycle 9738 ms rpc ok/err 446/1
+base: loop error https://base.api.pocket.network: {'code': -32602, 'message': 'block range extends beyond current head block: requested 60698497, head 60698496'}
+base: head 60698569 cycles 89 debtors 11916 cand 263 last_cycle 9201 ms rpc ok/err 803/2
+base: loop error https://base.api.pocket.network: {'code': -32602, 'message': 'block range extends beyond current head block: requested 60699525, head 60699524'}
+base: head 60700110 cycles 134 debtors 11916 cand 263 last_cycle 5007 ms rpc ok/err 1159/3
