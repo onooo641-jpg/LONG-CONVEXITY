@@ -535,7 +535,31 @@ def job_sky_funding():
         print(f"  {c}: {len(r)}", flush=True)
     pd.DataFrame(rows).to_parquet(OUT / "batch5_hlfunding_full.parquet", index=False)
 
-JOBS = {"sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+def job_sp_probe():
+    """#230 Stage 0 probe: which stability-pool data sources answer (prints availability and field names only)."""
+    for name, url in (("liquity_api_v2", "https://api.liquity.org/v2/mainnet.json"), ("liquity_api_v2b", "https://api.liquity.org/v2/mainnet/sp.json"),
+                      ("liquity_api_root", "https://api.liquity.org/"), ("liquity_stats", "https://api.liquity.org/v2/mainnet/stats.json"),
+                      ("felix_api", "https://api.usefelix.xyz/"), ("felix_stats", "https://usefelix.xyz/api/stats"),
+                      ("llama_liquity_pools", "https://yields.llama.fi/pools")):
+        try:
+            req = urllib.request.Request(url, headers=UA)
+            with urllib.request.urlopen(req, timeout=30) as r:
+                b = r.read(3_000_000).decode("utf-8", "replace")
+            try:
+                j = json.loads(b)
+                keys = sorted(j.keys())[:25] if isinstance(j, dict) else f"list[{len(j)}]"
+            except Exception:  # noqa: BLE001
+                keys = f"non-JSON, {len(b)} bytes"
+            if name == "llama_liquity_pools":
+                d = json.loads(b)["data"]
+                hits = [f"{x['project']}/{x['symbol']}/{x['chain']}" for x in d if x["project"] in ("liquity-v2", "felix-cdp", "felix")]
+                keys = f"liquity/felix pools: {hits[:12]}"
+            print(f"PROBE {name}: answered; {keys}", flush=True)
+        except Exception as e:  # noqa: BLE001
+            print(f"PROBE {name}: FAIL {str(e)[:100]}", flush=True)
+
+JOBS = {"sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys
