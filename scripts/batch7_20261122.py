@@ -134,10 +134,68 @@ def part_c():
     print()
 
 
+def liq_losses(bars, lev, rehedge_next_bar, mm=0.05, fee=0.005):
+    """Daily loss series (fraction of capital) from short liquidations, weekly rebalance (PREREG part D)."""
+    notional, margin = lev / (lev + 1), 1 / (lev + 1)
+    loss = pd.Series(0.0, index=DAYS)
+    n, i = 0, 0
+    while i < len(bars):
+        p0 = bars.c.iloc[i]
+        j_end = min(i + 42, len(bars) - 1)  # 42 four-hour bars = 7 days
+        for j in range(i + 1, j_end + 1):
+            ph = bars.h.iloc[j]
+            pliq = p0 * (1 + margin / notional) / (1 + mm)  # equity == mm * notional * P/P0
+            if ph >= pliq:
+                n += 1
+                d = bars.index[j].floor("D")
+                lost = mm * notional * pliq / p0 + fee * notional
+                if not rehedge_next_bar:
+                    lost += -notional * (bars.c.iloc[j_end] / pliq - 1) * pliq / p0  # unhedged spot P&L to next rebalance
+                if d in loss.index:
+                    loss[d] -= lost
+                break
+        i = j_end if j_end > i else i + 1
+    return loss, n
+
+
+def part_d():
+    f = D / "batch7_hype4h.parquet"
+    print("===== D. #276 hedged HYPE staking with liquidations (weekly rebalance)")
+    if not f.exists():
+        print("  no HYPE candles -> not testable\n")
+        return
+    b = pd.read_parquet(f)
+    b.index = pd.to_datetime(b.t, unit="ms", utc=True)
+    b = b.sort_index()
+    print(f"  bars {len(b)}: {b.index.min():%Y-%m-%d} .. {b.index.max():%Y-%m-%d}; max 7-day rise {((b.h.rolling(42).max() / b.c.shift(42)) - 1).max() * 100:.0f}%")
+    fu = pd.read_parquet(D / "hedged_hlfunding.parquet")
+    fu["day"] = pd.to_datetime(fu["t"], unit="s", utc=True).dt.floor("D")
+    h = fu[fu.coin == "HYPE"].groupby("day").rate.sum().reindex(DAYS)
+    from scripts.walkforward_20261122 import PARK
+    for variant in (False, True):
+        L = {lev: liq_losses(b, lev, variant) for lev in (1.5, 2, 3)}
+        print(f"  {'re-hedge next bar' if variant else 'unhedged until weekly rebalance'}: liquidations " +
+              ", ".join(f"{k}x: {v[1]} (loss {-v[0].sum() * 100:.1f}% of capital)" for k, v in L.items()))
+
+        def run(lev, thr, cm, L=L):
+            trail = (h.rolling(30, min_periods=10).mean() * 365 * 100).shift(1)
+            inpos = pd.Series(True, index=DAYS) if thr is None else (trail > thr).fillna(False)
+            sw = inpos.astype(int).diff().abs().fillna(0)
+            carry = (0.025 / 365 + h.fillna(0)) / (1 + 1 / lev)
+            return pd.Series(np.where(inpos, carry + L[lev][0].values, PARK), index=DAYS) - sw * 0.00145 * cm
+        if not variant:
+            judge("G5-liq #276 hedged HYPE staking with liquidations", lambda cm: {f"lev{l}/{'always' if t is None else 'gt' + str(t)}": run(l, t, cm)
+                  for l, t in itertools.product((1.5, 2, 3), (None, 0, 5, 8, 12))}, 0.00145 * 2)
+        else:
+            judge("(context) G5-liq re-hedge-next-bar variant", lambda cm: {f"lev{l}/{'always' if t is None else 'gt' + str(t)}": run(l, t, cm)
+                  for l, t in itertools.product((1.5, 2, 3), (None, 0, 5, 8, 12))}, 0.00145 * 2)
+
+
 def main() -> int:
     part_a()
     part_b()
     part_c()
+    part_d()
     return 0
 
 
