@@ -1,0 +1,5 @@
+=== liq_comet_timing
+timing base venue 0x784efeb622 events 161 txs 157 sampled 77: also absorb in same tx 28 (36.4%); mean buy logs per tx 1.01
+  rpc error eth_getTransactionReceipt @ https://arb1.arbitrum.io/rpc: {'code': -32000, 'message': 'failed to decode receipt at block 496292258, hash 38b3170be0086c2fb623dd41ec20ca4cb49eb9bb43cec1518d442a8b37389785, txIndex 23: rlp: expected input string or byte for uint
+timing arbitrum venue 0x6f7d514bbd events 198 txs 198 sampled 193: also absorb in same tx 118 (61.1%); mean buy logs per tx 1.00
+=== liq_comet_timing done in 212s  ok 350 fail 5
