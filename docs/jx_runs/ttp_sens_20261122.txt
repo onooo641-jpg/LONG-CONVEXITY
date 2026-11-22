@@ -1,0 +1,6 @@
+TTP Futures Prime 50K, as registered ($99, 30-day limit)    real $   46,597 | coin flip $  14,016 (95%) | dip $ -4,884
+TTP Futures Prime 50K, price $59.40 (directory discount)    real $   53,527 | coin flip $  21,704 (100%) | dip $ -2,588
+TTP Futures Prime 50K, price $149                           real $   37,847 | coin flip $   4,249 (67%) | dip $ -7,784
+TTP Futures Prime 50K, price $199                           real $   29,097 | coin flip $  -5,709 (28%) | dip $-10,684
+TTP Futures Prime 50K, no 40% eval consistency              real $   46,597 | coin flip $  14,016 (95%) | dip $ -4,884
+TTP Futures Prime 50K, 3-min delay (manual entry)           real $   33,434 | coin flip $  10,732 (85%) | dip $ -4,950

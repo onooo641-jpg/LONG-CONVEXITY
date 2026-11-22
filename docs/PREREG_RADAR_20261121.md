@@ -185,3 +185,11 @@ Limits: the daily purchase cap and "availability is limited" may make a recyclin
   the evaluation (modelled as combine_consistency 0.40); 60-day limit; funded: payouts daily once above +1% (modelled as a buffer of 1% = $1,000 /
   $2,000), no cap, no consistency, 80%; up to 5 accounts per user; EAs allowed after pre-approval. Risk = 0.45 × drawdown.
 Same procedure and flag rule as the sweep.
+
+### Addendum 10 results (2026-11-22; `docs/jx_runs/radar_price_ttp_prime50.txt`, `radar_price_traders_launch.txt`, re-run identical)
+- **TTP Futures Prime 50K: real $46,597 / coin flip $14,016 (95% profitable) / worst dip −$4,884 → EXTRA SLOT CANDIDATE** (Topstep 50K $44,359 /
+  $18,046 / −$3,520). Checked on TTP's own pages: Level 1 market data included free (no data fee); EAs/automation allowed except listed abuse
+  functions and the same EA run by multiple traders; Malaysia not on either restricted list (eligibility FAQ). Price $99 is third-party
+  (directory; own page loads by script). Sensitivity (`docs/jx_runs/ttp_sens_20261122.txt`, labelled): $59.40 → $53.5K / $21.7K (100%);
+  $149 → $37.8K / $4.2K (67%, flag fails); $199 → $29.1K / −$5.7K; 3-min manual entry → $33.4K / $10.7K. The flag depends on the price being ≤ ~$120.
+- Traders Launch 100K / 200K: $722 / $4,371 real, coin flip −$13.6K / −$24.4K → not flagged (1%-of-account drawdown is too tight for this strategy).
