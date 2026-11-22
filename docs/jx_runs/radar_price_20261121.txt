@@ -1,4 +1,3 @@
-warning: The `UV_NATIVE_TLS` environment variable is deprecated and will be removed in a future release. Use `UV_SYSTEM_CERTS` instead.
 reference Topstep 50K: no delay real $44,359 dip $-3,520 flip $18,046; 3-min delay real $37,348 dip $-3,094 flip $14,701
 
 Topstep 50K                  full_bots              delay 0 min | real $   44,359 | coin-flip median $   18,046 (profitable 98%) | worst dip $ -3,520 | EXTRA SLOT CANDIDATE
@@ -17,16 +16,20 @@ Blue Guardian Elite 50K, price $350 [sens] alert_assisted         delay 3 min | 
 Blueberry Ascent 50K         full_bots              delay 0 min | real $   23,397 | coin-flip median $   -4,016 (profitable 37%) | worst dip $-10,982 | -
 Goat Flex 50K                full_bots              delay 0 min | real $   23,784 | coin-flip median $   -3,419 (profitable 32%) | worst dip $ -6,322 | -
 FuturesElite Elite 50K       alert_assisted         delay 3 min | real $   31,071 | coin-flip median $    5,903 (profitable 79%) | worst dip $ -2,560 | EXTRA SLOT CANDIDATE
+MFFU Builder 50K ($153)      full_bots              delay 0 min | real $   25,323 | coin-flip median $    2,022 (profitable 62%) | worst dip $ -6,732 | -
+MFFU Builder 50K ($107 code) [sens] full_bots              delay 0 min | real $   32,453 | coin-flip median $    9,759 (profitable 85%) | worst dip $ -4,708 | EXTRA SLOT CANDIDATE
 
 RANKING by coin-flip median
   LucidFlex 50K                flip $   18,519  real $   37,523  EXTRA SLOT CANDIDATE
   Topstep 50K                  flip $   18,046  real $   44,359  EXTRA SLOT CANDIDATE
   TradeDay $85 (code)          flip $   14,035  real $   35,678  EXTRA SLOT CANDIDATE
+  MFFU Builder 50K ($107 code) [sens] flip $    9,759  real $   32,453  EXTRA SLOT CANDIDATE
   Alpha Futures Standard 50K   flip $    8,998  real $   40,155  
   MFFU Rapid EOD 50K           flip $    7,358  real $   34,481  
   Blue Guardian Elite 50K, price $141 [sens] flip $    6,442  real $   43,877  
   FuturesElite Elite 50K       flip $    5,903  real $   31,071  EXTRA SLOT CANDIDATE
   TFD Static Pro               flip $    3,274  real $   20,248  
+  MFFU Builder 50K ($153)      flip $    2,022  real $   25,323  
   FTMO Futures Growth 50K      flip $    1,906  real $   34,236  
   FTMO Futures Pro 50K         flip $    1,810  real $   27,428  
   TFD Static Core              flip $   -1,163  real $   10,680  

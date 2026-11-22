@@ -134,6 +134,7 @@ risk, 5m signals and 1m fills.
 | 228 | hedged resource/revenue staking (TRX energy, SKY staking) | `docs/PREREG_BATCH5_20261121.md` | TRX KILL (shorts pay 13%); SKY FAIL on history (112 d < 180) at 12.9% / 16.9% — near-miss, re-test ≈ 2027-01-07 | batch5 + sky_stage2_20261121.txt |
 
 | 230 | stability pools (Liquity v2 BOLD, Felix feUSD) | `docs/PREREG_STABILITYPOOL_20261122.md` | FAIL on capacity: Liquity v2 SP holds ~$3.6K, total interest ~$1K/yr (48% APY on nothing); Felix no data | sp_liquity_api.json |
+| 231 | MFFU Builder 50K (new plan caught by the radar's rule-change watcher) | PREREG_RADAR addendum 8 | list $153: $25,323 real / $2,022 coin flip (62%) / dip −$6,732 → not flagged; with the advertised 30% code ($107, sensitivity): $32,453 / $9,759 (85%) / −$4,708 → would flag. One account per user | radar_price_20261121.txt |
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.
