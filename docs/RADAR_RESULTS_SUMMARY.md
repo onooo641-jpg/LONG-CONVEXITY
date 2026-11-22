@@ -68,6 +68,10 @@ Earlier non-prop tests (#29–#59, #100) are in `docs/HANDOFF_NONPROP.md`. Mecha
 PASS: R1 funding gaps with maker fees (24.9% / 17.1%), R5 hedged HYPE staking (23.4% / 9.3%, marginal), R6 Gains vaults equal weight (11.6% / 9.8%,
 small capacity, gToken price check pending). FAIL with every configuration: R2 GM pools, R3 stable-yield selection, R4 new rewards, R7 conditional carry.
 
+## B3. Walk-forward retest (`docs/PREREG_WALKFORWARD_20261122.md`)
+16 ideas, 12–270 configs each, monthly pick on trailing 6 months, 18 OOS months. PASS: funding gaps 12.8% / 18.2% (needs maker fills), hedged HYPE
+staking 15.0% / 8.7%, Gains vaults 9.6% / 14.1% (small). All others FAIL.
+
 ## C. Open items
 1. Confirm prices (script-loaded, unreadable by the crawler): DayTraders EOD / S2F 50K, LucidDaily 50K, TTP Futures Instant 50K, FuturesElite
    Prime / Instant / Nitro / Elite 50K, MFFU Pro 50K, Blue Guardian Reserve / Direct 50K.

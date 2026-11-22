@@ -170,6 +170,7 @@ risk, 5m signals and 1m fills.
 
 | R1–R7 | refinement studies (year-1 design, year-2 test, costs ×1.5) on #208, #221, #204 family, #207, #276, #225, carry family | `docs/PREREG_REFINE_20261122.md` | PASS: R1 funding gaps (maker 24.9% / 17.1%), R5 HYPE hedged staking (23.4% / 9.3%, marginal), R6 Gains vaults (11.6% / 9.8%, small, price check pending); FAIL: R2 GM (best hedge flips), R3 stable selection, R4 new rewards, R7 conditional carry | refine_20261122.txt |
 
+| WF | walk-forward retest of 16 ideas with grids of 12–270 configs (monthly pick on trailing 6 months; OOS 2025-05..2026-10) | `docs/PREREG_WALKFORWARD_20261122.md` | PASS: G1 funding gaps (12.8% / 18.2%, needs maker fills — taker-only fails the ×1.5 cost check), G5 HYPE hedged staking (15.0% / 8.7%), G6 Gains vaults (9.6% / 14.1%); FAIL: GM pools, stable selection, stable-pair LPs/savings, new chains, new rewards, carry family, hedged staking | walkforward_20261122.txt |
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.

@@ -133,3 +133,10 @@ differences, slippage and collateral moves are not modelled. Refinement passes: 
 (23.4% / 9.3%, marginal), R6 Gains vaults equal-weight (11.6% / 9.8%, ~$2–3M capacity; price check pending). Failures with every configuration:
 GM pools (best hedge ratio flips sign between years — classic overfitting the protocol caught), stable-yield selection, new-reward programmes,
 conditional carry. **First non-prop candidates worth a small live pilot: #208 funding gaps (needs an execution-cost pilot on Aevo), then #225 Gains.**
+
+## Walk-forward retest (2026-11-22): 16 ideas, 12–270 configurations each
+Method: every month, use whichever configuration did best over the previous 6 months; 18 out-of-sample months. Three survive:
+**funding gaps (#208)** 12.8% / 18.2% (but only with maker fees; taker-only fails the 1.5× cost check), **hedged HYPE staking (#276)** 15.0% / 8.7%,
+**Gains vaults (#225)** 9.6% / 14.1% (tiny capacity). Everything else fails with every configuration: stablecoin-yield selection, stable LPs,
+savings rates, new-chain and new-reward programmes, GM pools, carry, hedged staking. These three are the only non-prop ideas worth a live pilot;
+each pilot costs money → Jx decides.

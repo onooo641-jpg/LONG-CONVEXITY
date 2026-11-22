@@ -1,0 +1,6 @@
+===== G1 taker-only (post-hoc): 135 configs
+  walk-forward OOS 2025-05..2026-10: halves 8.62% / 12.70%; all 18 months with costs x1.5 5.94%; switches 8
+  most-picked configs: e5/x0/tk/all3/k3 (8x); e30/x0/tk/all3/k3 (4x)
+  (context only) best fixed config in hindsight: e5/x0/tk/all3/k3 -> 19.08%/yr over 2024-11..2026-10
+  VERDICT: FAIL
+

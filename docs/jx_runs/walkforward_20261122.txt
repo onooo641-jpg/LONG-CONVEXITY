@@ -1,0 +1,62 @@
+walk-forward: monthly pick of the best trailing-6-month config; OOS 2025-05..2026-10; PASS needs both OOS halves >= 8% and costs x1.5 >= 8%
+
+===== G1 #208 funding gaps: 270 configs
+  walk-forward OOS 2025-05..2026-10: halves 12.80% / 18.22%; all 18 months with costs x1.5 14.45%; switches 7
+  most-picked configs: e5/x5/mk/all3/k3 (7x); e20/x10/mk/all3/k3 (4x)
+  (context only) best fixed config in hindsight: e5/x5/mk/all3/k3 -> 23.08%/yr over 2024-11..2026-10
+  VERDICT: PASS
+
+===== G2 #221 GMX GM pools: 12 configs
+  walk-forward OOS 2025-05..2026-10: halves 14.18% / 0.08%; all 18 months with costs x1.5 7.07%; switches 3
+  most-picked configs: h1.0 (10x); h0.0 (8x)
+  (context only) best fixed config in hindsight: h0.0 -> 10.20%/yr over 2024-11..2026-10
+  VERDICT: FAIL
+
+===== G3 #201-204 stable-yield selection: 144 configs
+  walk-forward OOS 2025-05..2026-10: halves 4.91% / -4.27%; all 18 months with costs x1.5 -0.32%; switches 5
+  most-picked configs: tvl20M/age90/k3/w30/all (6x); tvl5M/age90/k3/w90/all (6x)
+  (context only) best fixed config in hindsight: tvl50M/age90/k3/w90/all -> 9.08%/yr over 2024-11..2026-10
+  VERDICT: FAIL
+
+===== G3b #224 stable-pair LPs / #227 savings: 36 configs
+  walk-forward OOS 2025-05..2026-10: halves -4.11% / -10.22%; all 18 months with costs x1.5 -7.87%; switches 10
+  most-picked configs: 227/tvl5M/k3/w30 (7x); 224/tvl5M/k3/w30 (2x)
+  (context only) best fixed config in hindsight: 227/tvl20M/k3/w30 -> 1.41%/yr over 2024-11..2026-10
+  VERDICT: FAIL
+
+===== G3c #278 new-chain incentives: 24 configs
+  walk-forward OOS 2025-05..2026-10: halves 2.13% / -21.13%; all 18 months with costs x1.5 -10.09%; switches 4
+  most-picked configs: tvl20M/k3/w30/age90 (6x); tvl5M/k3/w30/age30 (5x)
+  (context only) best fixed config in hindsight: tvl20M/k3/w30/age90 -> -9.25%/yr over 2024-11..2026-10
+  VERDICT: FAIL
+
+===== G4 #207 new reward programmes: 144 configs
+  walk-forward OOS 2025-05..2026-10: halves -6.12% / -13.40%; all 18 months with costs x1.5 -4.91%; switches 9
+  most-picked configs: tvl1M/age365/r3/h90 (4x); tvl50M/age0/r5/h30 (4x)
+  (context only) best fixed config in hindsight: tvl50M/age0/r5/h30 -> 4.38%/yr over 2024-11..2026-10
+  VERDICT: FAIL
+
+===== G5 #276 hedged HYPE staking: 15 configs
+  walk-forward OOS 2025-05..2026-10: halves 14.97% / 8.72%; all 18 months with costs x1.5 11.86%; switches 0
+  most-picked configs: lev3/always (18x)
+  (context only) best fixed config in hindsight: lev3/always -> 16.33%/yr over 2024-11..2026-10
+  VERDICT: PASS
+
+===== G6 #225 Gains vaults: 48 configs
+  walk-forward OOS 2025-05..2026-10: halves 9.61% / 14.06%; all 18 months with costs x1.5 11.46%; switches 8
+  most-picked configs: k1/eq/tmin1M/w90 (3x); k2/eq/tmin1M/w30 (3x)
+  (context only) best fixed config in hindsight: k2/eq/tmin0M/w90 -> 16.06%/yr over 2024-11..2026-10
+  VERDICT: PASS
+
+===== G7 carry family (#216/#217/#57): 40 configs
+  walk-forward OOS 2025-05..2026-10: halves 7.62% / 3.67%; all 18 months with costs x1.5 3.52%; switches 8
+  most-picked configs: all11/k1/T0 (9x); maj/k1/T0 (3x)
+  (context only) best fixed config in hindsight: all11/k1/T0 -> 12.51%/yr over 2024-11..2026-10
+  VERDICT: FAIL
+
+===== G8 #212/#213 hedged staking (largest LST per family, no churn): 30 configs
+  walk-forward OOS 2025-05..2026-10: halves 13.24% / 5.99%; all 18 months with costs x1.5 9.12%; switches 4
+  most-picked configs: HYPE/always/lev3 (9x); BNB/always/lev3 (8x)
+  (context only) best fixed config in hindsight: HYPE/always/lev3 -> 14.93%/yr over 2024-11..2026-10
+  VERDICT: FAIL
+

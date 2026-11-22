@@ -24,3 +24,18 @@ with the best trailing-6-month return is chosen and applied to the next month on
 | G9 | #211 Pendle PTs | needs expired-market history fetch → registered with that fetch | — |
 | G10 | #263/#264 tranches | only 383 days of data (< 6-month warm-up + 18 OOS months) → not testable by walk-forward; reported as such | — |
 Command: `uv run python scripts/walkforward_20261122.py | tee docs/jx_runs/walkforward_20261122.txt`
+
+## Results (2026-11-22, `docs/jx_runs/walkforward_20261122.txt`, re-run identical)
+| grid | configs | OOS half 1 / half 2 | all 18 months, costs ×1.5 | verdict |
+|---|---|---|---|---|
+| G1 #208 funding gaps | 270 | 12.80% / 18.22% | 14.45% | **PASS** — picks maker-fee configs; post-hoc taker-only grid (`walkforward_g1_takeronly_20261122.txt`): 8.62% / 12.70% but 5.94% at costs ×1.5 → would FAIL. The pass depends on maker fills |
+| G2 #221 GM pools | 12 | 14.18% / 0.08% | 7.07% | FAIL |
+| G3 #201–204 stable selection | 144 | 4.91% / −4.27% | −0.32% | FAIL |
+| G3b #224 / #227 | 36 | −4.11% / −10.22% | −7.87% | FAIL |
+| G3c #278 new chains | 24 | 2.13% / −21.13% | −10.09% | FAIL |
+| G4 #207 new rewards | 144 | −6.12% / −13.40% | −4.91% | FAIL |
+| G5 #276 hedged HYPE staking | 15 | 14.97% / 8.72% | 11.86% | **PASS** (always picks 3×, always on; staking 2.5% assumed; liquidation risk unmeasured) |
+| G6 #225 Gains vaults | 48 | 9.61% / 14.06% | 11.46% | **PASS** (capacity ~$2–3M; APY not yet checked against gToken prices) |
+| G7 carry family | 40 | 7.62% / 3.67% | 3.52% | FAIL |
+| G8 #212/#213 hedged staking, no churn | 30 | 13.24% / 5.99% | 9.12% | FAIL (half 2 < 8%) |
+| G9 #211 Pendle / G10 #263–264 tranches | — | — | — | not run (data fetch needed / history too short) |
