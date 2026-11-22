@@ -6,3 +6,7 @@ arbitrum: reopened 29 recorded unhealthy episodes
 arbitrum: head 526600607 cycles 974 debtors 13982 cand 1468 last_cycle 276 ms rpc ok/err 5629/None
 arbitrum: head 526601551 cycles 1959 debtors 13984 cand 1468 last_cycle 398 ms rpc ok/err 11214/None
 arbitrum: head 526602458 cycles 2940 debtors 13984 cand 1467 last_cycle 307 ms rpc ok/err 16749/None
+arbitrum: head 526603321 cycles 3920 debtors 13983 cand 1467 last_cycle 298 ms rpc ok/err 22292/None
+arbitrum: head 526604165 cycles 4896 debtors 13984 cand 1467 last_cycle 298 ms rpc ok/err 27826/None
+arbitrum: head 526605006 cycles 5871 debtors 13984 cand 1466 last_cycle 293 ms rpc ok/err 33351/None
+arbitrum: head 526605914 cycles 6847 debtors 13984 cand 1467 last_cycle 267 ms rpc ok/err 38883/None
