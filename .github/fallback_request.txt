@@ -4,3 +4,4 @@ batch9
 batch10
 smallcap
 merkl
+sweep3

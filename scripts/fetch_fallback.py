@@ -1299,7 +1299,52 @@ def job_merkl():
     print(f"merkl small opportunities {len(small)}; with history {len(hist)}", flush=True)
     (OUT / "merkl_raw.json").write_text(json.dumps({"opportunities": keep, "history": hist}))
 
-JOBS = {"merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+def job_sweep3():
+    """Sweep 3 data (docs/PREREG_SWEEP3_20261122.md): dYdX trades + HL 1m candles (#322); DefiLlama vault/lending pools + charts (#324, #325)."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    out = {}
+    end = int(time.time() * 1000)
+    for c in ("ARB", "AVAX", "LINK", "OP", "SUI", "DOGE", "LTC", "BNB", "XRP", "SOL", "ETH", "BTC"):
+        trades, before = [], None
+        for _ in range(40):
+            u = f"https://indexer.dydx.trade/v4/trades/perpetualMarket/{c}-USD?limit=100" + (f"&createdBeforeOrAtHeight={before}" if before else "")
+            d = get(u, tries=2) or {}
+            t = d.get("trades") or []
+            if not t:
+                break
+            trades += [{"t": x["createdAt"], "side": x["side"], "size": float(x["size"]), "price": float(x["price"]), "h": int(x["createdAtHeight"])} for x in t]
+            before = int(t[-1]["createdAtHeight"]) - 1
+            if pd.Timestamp(t[-1]["createdAt"]) < pd.Timestamp.now(tz="UTC") - pd.Timedelta(days=3):
+                break
+            time.sleep(0.2)
+        out[f"dydx_trades|{c}"] = trades
+        k = get("https://api.hyperliquid.xyz/info", {"type": "candleSnapshot", "req": {"coin": c, "interval": "1m",
+                "startTime": end - 5000 * 60 * 1000, "endTime": end}}, tries=4) or []
+        out[f"hl1m|{c}"] = [[x["t"], float(x["o"]), float(x["c"])] for x in k]
+        print(f"  {c}: dydx trades {len(trades)}, hl 1m {len(k)}", flush=True)
+        time.sleep(1.0)
+    pools = pd.DataFrame((get("https://yields.llama.fi/pools") or {}).get("data", []))
+    pools["tvlUsd"] = pd.to_numeric(pools["tvlUsd"], errors="coerce")
+    protos = {p["slug"]: p.get("category") for p in (get("https://api.llama.fi/protocols") or []) if isinstance(p, dict) and p.get("slug")}
+    pools["category"] = pools["project"].map(protos)
+    vault = pools[(pools["category"].isin(["Derivatives", "Options Vault", "Options", "Perps"])) & (pools["tvlUsd"] >= 5e5)
+                  & ~pools["project"].isin(["gains-network", "hyperliquid-hlp"])]
+    lend = pools[(pools["category"].isin(["Lending", "CDP"])) & (pools["stablecoin"] == True) & (pools["tvlUsd"].between(1e5, 5e6))]  # noqa: E712
+    print(f"  vault pools {len(vault)}, small stable lending pools {len(lend)}", flush=True)
+    keep = [c for c in ("pool", "chain", "project", "symbol", "tvlUsd", "apyBase", "apyReward", "category", "stablecoin", "underlyingTokens") if c in pools]
+    out["vault_pools"] = vault[keep].astype(str).to_dict("records")
+    out["lend_pools"] = lend[keep].astype(str).to_dict("records")
+    for grp, df in (("vault", vault), ("lend", lend)):
+        for i, p in enumerate(df["pool"].head(800)):
+            out[f"chart|{grp}|{p}"] = [{"ts": x["timestamp"], "tvl": x.get("tvlUsd"), "b": x.get("apyBase"), "r": x.get("apyReward")}
+                                       for x in (get(f"https://yields.llama.fi/chart/{p}", tries=2) or {}).get("data", [])
+                                       if x.get("timestamp", "") >= "2025-09-01"]
+            time.sleep(0.25)
+        print(f"  charts {grp}: {min(len(df), 800)}", flush=True)
+    (OUT / "sweep3_raw.json").write_text(json.dumps(out))
+
+JOBS = {"sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys
