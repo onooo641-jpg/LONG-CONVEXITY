@@ -26,10 +26,11 @@
   78912042,
   81590442
  ],
- "next_block": 73721642,
- "logs_done": false,
+ "next_block": 81590442,
+ "logs_done": true,
  "receipts_done": false,
  "complete": false,
  "getlogs_fails": 14,
- "last_flush": "2026-11-22T09:02:26Z"
+ "last_flush": "2026-11-22T10:02:20Z",
+ "receipts_missing": 5
 }

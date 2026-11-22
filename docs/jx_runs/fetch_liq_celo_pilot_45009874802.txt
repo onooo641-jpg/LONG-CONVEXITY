@@ -1,0 +1,16 @@
+=== liq_celo_pilot
+celo_pilot: month anchors 28549357..81590442, resume at block 73721642
+  celo_pilot: scanned to block 76331642/81590441 (11 events, 2 min)
+  celo_pilot: scanned to block 78941642/81590441 (18 events, 4 min)
+  celo_pilot: scanned to block 81590442/81590441 (34 events, 6 min)
+celo_pilot: log scan complete, 34 events
+celo_pilot: receipts: 0 cached, 27 to fetch (sampled=False)
+  celo_pilot: receipts 10/27 (6 min)
+celo_pilot: retry pass 1: 17 receipts missing
+  celo_pilot: receipts 13/27 (7 min)
+celo_pilot: retry pass 2: 14 receipts missing
+  celo_pilot: receipts 17/27 (7 min)
+celo_pilot: retry pass 3: 10 receipts missing
+  celo_pilot: receipts 22/27 (8 min)
+celo_pilot: INCOMPLETE receipts: 5/27 still missing after retries; re-run to continue
+=== liq_celo_pilot done in 493s  ok 1642 fail 0
