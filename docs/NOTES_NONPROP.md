@@ -93,3 +93,17 @@ Lucid $289, TradeDay $85 $274, MFFU $265, FuturesElite (3-min) $239; payouts lan
 | 229 | hedged native staking | ATOM KILL; INJ ceiling 12.1% but no APR history → not testable |
 Lesson: two apparent passes (#214, #221) came from DefiLlama "APY" fields that leave out the price of the token earning the yield; the robustness
 checks (real token prices) removed both. Watch list: #228 SKY (re-test at 180 days), #209 Dolomite loops, #229 INJ, #205 HLP, #225 Gains.
+
+## Radar update (2026-11-22): new prop-firm structures found and priced
+| # | product | bots / manual | result vs Topstep 50K ($44,359 real / $18,046 coin flip) |
+|---|---|---|---|
+| **233** | **The Trading Pit Futures Prime 50K** | bots (own T&C), Malaysia OK, Level 1 data free | **$46,597 real / $14,016 coin flip (95%) / dip −$4,884 at $99 (price verified on TTP's own page) → FLAG** (fails at ≥ $149) |
+| 236 | DayTraders EOD 50K | bots (own help centre), 100% split, 5 accounts | price unreadable: at $99 $48,602 / $13,511; at $199 $36,802 / −$4,406 → confirm price |
+| 206 | FuturesElite Elite 50K | manual (3-min) | $33,645 / $9,121 (91%) with its own $89 reset → flagged (purchase price $128 third-party) |
+| 231 | MFFU Builder 50K (new plan, caught by the radar diff) | bots, 1 account | $153: $25,323 / $2,022; with the 30% code $107: $32,453 / $9,759 |
+| 232 | MFFU Studio (static MLL, withdraw any time) | bots | not flagged (coin flip negative: 2:1 target-to-loss evaluation) |
+| 234 | Traders Launch 100K / 200K | bots (pre-approval) | not flagged (1% drawdown too tight) |
+| 235 | TTP Futures Prime 150K | bots | not flagged ($43.7K / −$6.6K) |
+**Flag to Jx (passes the prop-firm sweep rule on verified rules and price): The Trading Pit Futures Prime 50K** — an additional automated slot
+alongside Topstep. Before buying: confirm one account per person limits, the 30-day challenge window (modelled), and that the friend's bot runs
+on the friend's own TTP account (TTP bans the same EA used by multiple traders).
