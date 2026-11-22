@@ -1,5 +1,4 @@
-# chains for .github/workflows/fetch_liq.yml. Resumable. (run 21: Compound v3 pilots, PREREG_LIQ_COMET_20261122)
+# chains for .github/workflows/fetch_liq.yml. Resumable. (run 22: Comet base/polygon pilot receipts, arbitrum stage 2)
 comet_base_pilot
-comet_arbitrum_pilot
-comet_optimism_pilot
 comet_polygon_pilot
+comet_arbitrum
