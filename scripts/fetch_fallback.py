@@ -742,7 +742,18 @@ def job_batch7():
             time.sleep(max(0, 600 - (time.time() - t0)))
     (OUT / "batch7_orderbooks.json").write_text(json.dumps(snaps))
 
-JOBS = {"batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+def job_hype4h():
+    """HYPE perp 4h candles for docs/PREREG_BATCH7_20261122.md part D."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    end = int(time.time() * 1000)
+    c = get("https://api.hyperliquid.xyz/info", {"type": "candleSnapshot", "req": {"coin": "HYPE", "interval": "4h",
+            "startTime": end - 5000 * 4 * 3600 * 1000, "endTime": end}}) or []
+    df = pd.DataFrame([{"t": x["t"], "o": float(x["o"]), "h": float(x["h"]), "l": float(x["l"]), "c": float(x["c"])} for x in c])
+    df.to_parquet(OUT / "batch7_hype4h.parquet", index=False)
+    print(f"hype 4h candles: {len(df)} from {pd.to_datetime(df.t.min(), unit='ms') if len(df) else None}", flush=True)
+
+JOBS = {"hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys

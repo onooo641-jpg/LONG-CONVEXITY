@@ -24,3 +24,15 @@ Measures per venue/coin: (1) **slippage of a $10,000 market order** (walk the bo
 for slippage is ~2.5 bps per leg-side. **Reading:** taker execution viable if the median $10K slippage ≤ 2.5 bps per leg-side on the venues/coins
 used; maker execution plausible if median top-of-book size ≥ $10,000. Per venue and per coin reported; Aevo decides (the pass needs Aevo pairs).
 Commands: `uv run python scripts/batch7_20261122.py | tee docs/jx_runs/batch7_20261122.txt`
+
+## D. #276 hedged HYPE staking: liquidation check (addendum, written before the HYPE price fetch, 2026-11-22)
+The walk-forward pass (G5, lev3/always, 14.97% / 8.72%) ignored liquidation of the short. Data: Hyperliquid HYPE perp 4-hour candles
+(candleSnapshot, latest 5,000 bars ≈ 2024-11 onward), fetched by job `hype4h`.
+Position per $1 of capital at leverage L: staked spot HYPE and a short perp of equal notional L/(L+1); margin 1/(L+1) in USDC.
+Staked HYPE cannot be moved quickly (7-day unstaking), so the hedge is **rebalanced only every 7 days** (reset at the close of the 4h bar).
+Between rebalances the short's margin equity = 1/(L+1) − notional × (P/P0 − 1); **liquidated** when equity < 5% × notional × P/P0 (maintenance
+margin assumed 5%; uncertain), checked against each bar's high. On liquidation: the remaining equity plus a 0.5% fee is lost and the spot leg
+is **unhedged until the next weekly rebalance** (its P&L from the liquidation price to the rebalance close is booked). Losses are booked on the
+day they happen, added to the G5 daily series, and the G5 walk-forward is re-run with the same 15 configs.
+**PASS** = same as G5: OOS halves ≥ 8% and costs ×1.5 ≥ 8%. Also reported (context, not the verdict): liquidation count per leverage, and a
+variant that re-hedges at the next 4h bar (loss = remaining equity + 0.5% only).
