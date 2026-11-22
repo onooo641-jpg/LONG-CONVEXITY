@@ -1,0 +1,1 @@
+{"https://help.tradeday.com/": "FETCH FAILED: Error: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://help.tradeday.com/\nCall log:\n  - navigating to \"https://help.tradeday.com/\", waiting until \"domcontentloaded\"\n"}
