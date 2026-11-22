@@ -182,6 +182,8 @@ risk, 5m signals and 1m fills.
 | 298 | buy prop evaluations only in sale windows | PREREG_BATCH10 | ranking: flag-rule rows 18 → 39 at 40% off (verified-price rows 7 → 16); resets discounted too (optimistic) | salewindow_20261122.txt |
 | 300 | HIP-3 stock-perp funding carry (share-hedged) | same | FAIL Stage 1 (−13.28%; unhedgeable pre-IPO names show 49.9%, not tradeable as registered) | batch10_20261122.txt |
 | 314 | HIP-3 index-perp funding carry | same | FAIL Stage 1 (−2.21%) | same |
+| 320–321 | small-capacity high-reward pools; small Merkl campaigns (50% bar) | `docs/PREREG_SMALLCAP_20261122.md` (+ addenda 1–3) | fetch queued | — |
+| 322–326 | sweep 3: thin-venue market making, hedged extreme funding, counterparty/option vaults, small stable lending, odd-lot tenders | `docs/PREREG_SWEEP3_20261122.md` | #323 FAIL Stage 1 (−1.36%; extreme funding nearly gone since 2024); #326 parked (EDGAR contact e-mail); rest queued | sweep3_20261122.txt |
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.

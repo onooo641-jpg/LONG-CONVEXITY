@@ -1,0 +1,6 @@
+Stage 1 pilots, kill-only < 25.0%/yr (docs/PREREG_SWEEP3_20261122.md)
+
+#323 hedged extreme-funding harvest (HL small caps): Stage 1 2026-08..10 -1.36%/yr on capital; round trips 4; 149 coins -> KILL -> FAIL (Stage 1)
+  (context) coins above 100%/yr trailing-24h funding per day: median 0, 2024 1.3, 2025 0.1, 2026 0.1
+
+(sweep-3 fetch not yet landed: #322, #324, #325 pending)

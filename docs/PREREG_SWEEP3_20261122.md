@@ -14,3 +14,7 @@ worst drawdown ≥ −30%.
 | 326 | Odd-lot tender offers (US; buy < 100 shares, tender at the offer price) | odd-lot priority caps size | SEC EDGAR SC TO-I filings | **parked**: EDGAR asks automated clients for a contact e-mail in the user agent (privacy rule: not sent without Jx's approval) |
 Malaysia (Stage 0): DeFi front-ends (assumed not geoblocked); dYdX v4 front-end restricts some countries (Malaysia **not verified**).
 Command: `uv run python -m scripts.sweep3_20261122 | tee docs/jx_runs/sweep3_20261122.txt`.
+
+## Result #323 (2026-11-22; `docs/jx_runs/sweep3_20261122.txt`, identical on re-run): KILL
+−1.36%/yr in 2026-08..10 (4 round trips). Extreme funding has nearly disappeared: coins above 100%/yr trailing-24h funding averaged 1.3 a day
+in 2024, 0.1 in 2025 and 0.1 in 2026. #322/#324/#325 pending the sweep-3 fetch.
