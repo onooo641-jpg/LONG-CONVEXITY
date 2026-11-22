@@ -1234,6 +1234,47 @@ def job_liq_morpho_replay_diag():
             print(f"diag market {mid[:10]} events {len(g)} oracle {oracle[:12]} feeds {feeds} aggs {aggs} month {month} blk {blk}: logs in prior 20,000 blocks {tot}", flush=True)
 
 
+NEWCHAIN_CANDIDATES = {
+    "sonic": ["https://rpc.soniclabs.com", "https://sonic-rpc.publicnode.com", "https://sonic.drpc.org"],
+    "mantle": ["https://rpc.mantle.xyz", "https://mantle-rpc.publicnode.com", "https://mantle.drpc.org"],
+    "linea": ["https://rpc.linea.build", "https://linea-rpc.publicnode.com", "https://linea.drpc.org"],
+    "celo": ["https://forno.celo.org", "https://celo-rpc.publicnode.com"],
+    "ink": ["https://rpc-gel.inkonchain.com", "https://rpc-qnd.inkonchain.com", "https://ink.drpc.org"],
+    "soneium": ["https://rpc.soneium.org"],
+    "zksync": ["https://mainnet.era.zksync.io", "https://zksync-era.blockpi.network/v1/rpc/public"],
+}
+
+
+def job_liq_diag4():
+    """PREREG_LIQ_NEWCHAINS: which free endpoints serve topic-only LiquidationCall logs, recent and early-2025, and how many logs."""
+    for name, urls in NEWCHAIN_CANDIDATES.items():
+        for u in urls:
+            lab = f"diag4 {name} {u.split('//')[1][:34]}"
+            try:
+                head = int(rpc([u], "eth_blockNumber", [], tries=1), 16)
+            except Exception as e:  # noqa: BLE001
+                print(f"{lab}: blockNumber FAIL {str(e)[:90]}", flush=True)
+                continue
+            marks = {}
+            for lbl, ts in (("2025-03-01", int(pd.Timestamp("2025-03-01", tz="UTC").timestamp())), ("2026-08-01", int(pd.Timestamp("2026-08-01", tz="UTC").timestamp()))):
+                try:
+                    marks[lbl] = _first_block_at([u], ts, 0, head)
+                except Exception as e:  # noqa: BLE001
+                    marks[lbl] = None
+                    print(f"{lab}: header search {lbl} FAIL {str(e)[:80]}", flush=True)
+            for lbl, b0 in marks.items():
+                if b0 is None:
+                    continue
+                for span in (1_000, 10_000, 100_000):
+                    try:
+                        r = rpc([u], "eth_getLogs", [{"fromBlock": hex(b0), "toBlock": hex(b0 + span), "topics": [LIQ_TOPIC]}], tries=1)
+                        out = f"{len(r)} logs, contracts {sorted({x['address'][:10] for x in r})[:4]}"
+                    except Exception as e:  # noqa: BLE001
+                        out = f"ERR {str(e)[:90]}"
+                    print(f"{lab} from {lbl} blk {b0} span {span}: {out}", flush=True)
+                    time.sleep(1)
+
+
 def _liq_state_path(name):
     return OUT / f"liq_{name}_state.json"
 
@@ -1544,7 +1585,7 @@ for _c in LIQ_CHAINS:
 
 JOBS = {"ipo2": job_ipo2, "iponews": job_iponews, "ipo": job_ipo, "myxsnap": job_myxsnap, "batch2": job_batch2, "hl2023d": job_hl2023d, "hl2023": job_hl2023, "hl": job_hl, "llama_lend": job_llama_lend, "llama_pools": job_llama_pools,
         "llama_prices": job_llama_prices, "poly": job_poly,
-        "liq_probe": job_liq_probe, "liq_diag": job_liq_diag, "liq_diag2": job_liq_diag2, "liq_diag3": job_liq_diag2, "liq_secretcheck": job_liq_secretcheck, "liq_pxdiag": job_liq_pxdiag, "liq_replay_morphobase": job_liq_morpho_replay, "liq_morpho_replay_diag": job_liq_morpho_replay_diag, "liq_morphobase_pilot": lambda: job_liq_morpho("morphobase_pilot"), "liq_morphobase": lambda: job_liq_morpho("morphobase"), "liq_morphobase_s0": lambda: job_liq_morpho("morphobase_s0"),
+        "liq_probe": job_liq_probe, "liq_diag": job_liq_diag, "liq_diag2": job_liq_diag2, "liq_diag3": job_liq_diag2, "liq_diag4": job_liq_diag4, "liq_secretcheck": job_liq_secretcheck, "liq_pxdiag": job_liq_pxdiag, "liq_replay_morphobase": job_liq_morpho_replay, "liq_morpho_replay_diag": job_liq_morpho_replay_diag, "liq_morphobase_pilot": lambda: job_liq_morpho("morphobase_pilot"), "liq_morphobase": lambda: job_liq_morpho("morphobase"), "liq_morphobase_s0": lambda: job_liq_morpho("morphobase_s0"),
         "liq_morphobase_s1": lambda: job_liq_morpho("morphobase_s1"), "liq_morphobase_s2": lambda: job_liq_morpho("morphobase_s2"), **{f"liq_replay_{c}": globals()[f"job_liq_replay_{c}"] for c in ("arbitrum", "base", "avalanche", "polygon", "optimism")}, "liq_decimals": job_liq_decimals, **{f"liq_prices_{c}": _liq_prices_job(c) for c in LIQ_CHAINS}, **{f"liq_{c}_es": _liq_es_job(c) for c in LIQ_ES_ID}, **{f"liq_{c}": globals()[f"job_liq_{c}"] for c in LIQ_CHAINS}}
 
 
