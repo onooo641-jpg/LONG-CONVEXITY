@@ -26,8 +26,9 @@
   510496864,
   520129274
  ],
- "next_block": 468813499,
- "logs_done": false,
+ "next_block": 520129274,
+ "logs_done": true,
  "receipts_done": false,
- "complete": false
+ "complete": true,
+ "receipts_missing": 0
 }
