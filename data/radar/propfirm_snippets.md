@@ -2607,35 +2607,7 @@
 - AUTO: Nothing in this Notice shall be interpreted as limiting FundedNext's right to implement reasonable and proportionate automated or semi-automated controls designed to protect the Services, prevent fraud, preserve evidence, safeguard operational integrity, manage payment or security risks, or enforce contractual restrictions and platform rules.
 - AUTO: the right to request review in relation to certain automated decisions, where applicable law so provides; and
 
-## FundedNext Futures — https://fundednext.com/usa/aml-policy
-- AUTO: In adherence to the legal obligations, a meticulous manual approval process is diligently undertaken for each transaction, employing the principles of due diligence.
-- AUTO: Within GrowthNext F.Z.E., a distinct and dedicated risk management unit exists, tasked with the meticulous manual examination of individual client profiles.
-- AUTO: conducts a meticulous manual review and approval of each transaction, applying the principles of due diligence.
-
-## FundedNext Futures — https://fundednext.com/usa/cookie-policy
-- AUTO: Most browsers automatically accept cookies by default.
-- AUTO: Enabling these cookies is automatic and cannot be turned off, as they are necessary for the operation of the Website.
-- AUTO: In the case of automated processing based on your consent or performance of the contract, you have the right to receive the data in a structured, commonly used and machine-readable format and to have them transmitted by us to another personal data controller.
-- AUTO: Right not to be the subject of automated decision-making
-- AUTO: Except where processing is necessary for entering into, or performance of, a contract, where this is permitted by applicable law, or based on your express consent, you have the right not to be the subject of any decision which is based solely on automated processing, including profiling, which produces legal effects concerning you or similarly affects you to a significant extent.
-
-## FundedNext Futures — https://fundednext.com/usa/privacy-policy
-- AUTO: Automated Processing, Profiling and Significant Decisions
-- AUTO: 5.2 Automatically Through Your Use of the Services
-- AUTO: We collect certain technical, device, usage, behavioural, monitoring and activity data automatically when you access or use our website, systems, platform environment, dashboards, portals, communications interfaces or other parts of the Services.
-- AUTO: We process Personal Data to send service-related communications, account notices, legal notices, operational alerts, security messages, compliance-related requests and other communications necessary for the administration or protection of the Services and our relationship with you.
-- AUTO: 6.12 Phone-Based, SMS and Automated Outreach
-- AUTO: Where permitted by applicable law, we may use the telephone number or other communication details that you provide to us to contact you regarding service matters, account administration, security, support, operational matters, programme updates, marketing communications or related outreach, including through manual, automated or AI-assisted means.
-- AUTO: timing patterns, behavioural indicators and usage signals;
-- AUTO: suspicious, irregular, prohibited or escalated activity signals; and
-- AUTO: For the avoidance of doubt, FundedNext may analyse account activity, behavioural patterns, technical signals, device associations and related data to detect direct or indirect attempts to misuse the Services, circumvent our rules, exploit the platform environment unfairly, obtain benefits improperly or interfere with the lawful and intended operation of the Services.
-- AUTO: Automated Processing, Profiling and Significant Decisions
-- AUTO: Such processing may include profiling based on technical, behavioural, transactional, usage, verification, payout, account-linkage or payment-related signals.
-- AUTO: Where applicable data protection law grants you rights in relation to decisions based solely on automated processing that produce legal or similarly significant effects, FundedNext will implement such safeguards as are required by law, which may include review procedures and, where applicable, the opportunity to request human intervention.
-- AUTO: Nothing in this Notice shall be interpreted as limiting FundedNext's right to implement reasonable and proportionate automated or semi-automated controls designed to protect the Services, prevent fraud, preserve evidence, safeguard operational integrity, manage payment or security risks, or enforce contractual restrictions and platform rules.
-- AUTO: the right to request review in relation to certain automated decisions, where applicable law so provides; and
-
-## FundedNext Futures — https://fundednext.com/usa/terms-of-service
+## FundedNext Futures — https://fundednext.com/terms-of-service
 - AUTO: Participation in one modality (for example, CFDs) does not automatically grant the right of access, eligibility, phase migration, benefits or Performance Rewards in another modality (for example, Futures), unless expressly indicated by the Provider.
 - AUTO: The User may not allow third parties to operate the Account on their behalf, nor use account management services, credential sharing, third-party identities, bots, scripts or automated systems not expressly authorised by the Provider.
 - AUTO: To preserve the integrity of the Services and prevent abuse, the Provider may impose limits on the number of Orders/Accounts that a User may purchase, maintain or operate, including on the basis of reasonable linkage indicators (for example, related accounts, common control, shared payment methods, same residence, IP address, device or other connection signals).
@@ -2735,6 +2707,22 @@
 
 ## FuturesElite — https://faq.futureselite.com/en/collections/11652242-trading-rules
 - AUTO: High-frequency and automated trading
+
+## FuturesElite — https://futureselite.com/evaluation-account
+- AUTO: 4 Upgrades Are Automated and Instantaneous
+
+## FuturesElite — https://futureselite.com/terms-and-conditions
+- AUTO: Subscriptions automatically renew at the end of each period, and users are automatically billed for the next period.
+- AUTO: Subscriptions may renew automatically at the end of each billing period.
+- AUTO: Latency arbitrage, tick scalping, or any strategy designed to exploit the technical infrastructure rather than genuine market analysis.
+- AUTO: Copy trading between accounts, whether your own or third-party accounts, unless expressly authorized.
+- AUTO: Using unauthorized third-party Expert Advisors (EAs), scripts, bots, artificial intelligence, ultra-high-speed tools, or mass data entry systems.
+- AUTO: Without prior written authorization, you may not: reproduce, modify, adapt, or create derivative works of any content; reverse engineer any software or technology; use automated tools to scrape or collect data; or use our trademarks without express written consent.
+- COUNTRY: Restricted Countries:
+- COUNTRY: FutureElite does not provide services to users residing in the following countries: Afghanistan, Côte d’Ivoire, Cuba, Czechia, Iran (Islamic Republic of), Iraq, Syrian Arab Republic, Ghana, Libya, Malaysia, Somalia, Sudan, and Tanzania, Mauritius, Ethiopia, Trinidad, Tobago, Kosovo, Russia.
+- COUNTRY: “Forbidden Territory” means any jurisdiction where our Services are not available, including countries subject to applicable sanctions regimes or where local law prohibits participation.
+- COUNTRY: 4.3 Restricted Countries and Sanctions
+- COUNTRY: FuturesElite does not provide Services to users residing in the following countries: Afghanistan, Côte d’Ivoire, Cuba, Czechia, Iran, Iraq, Syria, Ghana, Libya, Malaysia, Somalia, Sudan, Tanzania, Mauritius, Ethiopia, Trinidad and Tobago, Kosovo, Russia, North Korea, or any other jurisdiction subject to applicable sanctions.
 
 ## Goat Funded Futures — https://goatfundedfutures.com/
 - AUTO: All available for you EOD: Daily drawdown for scalpers & intraday
