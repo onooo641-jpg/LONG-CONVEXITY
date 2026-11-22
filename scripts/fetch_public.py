@@ -1482,6 +1482,8 @@ def job_liq_comet_timing():
                 r = rpc(urls, "eth_getTransactionReceipt", [t])
             except Exception:  # noqa: BLE001
                 continue
+            if not r:
+                continue
             n_ok += 1
             logs = r.get("logs", [])
             ab = any(lg["topics"] and lg["topics"][0] == T_ABSORB and lg["address"].lower() == ven for lg in logs)

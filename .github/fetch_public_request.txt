@@ -1,2 +1,3 @@
 # jobs for scripts/fetch_public.py (PREREG_LIQUIDATIONS_20261120)
 liq_comet_timing
+# rerun (receipt None guard)
