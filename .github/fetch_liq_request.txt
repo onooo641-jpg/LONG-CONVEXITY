@@ -1,3 +1,3 @@
-# chains for .github/workflows/fetch_liq.yml. Resumable. (run 25: celo/soneium pilots: HTTP 400 now treated as a too-large window)
+# chains for .github/workflows/fetch_liq.yml. Resumable. (run 26: comet_base and celo_pilot receipts remainder)
+comet_base
 celo_pilot
-soneium_pilot
