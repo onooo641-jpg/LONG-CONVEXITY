@@ -1,0 +1,8 @@
+=== sp_probe
+PROBE liquity_api_v2: answered; ['boldYield', 'branch', 'max_sp_apy', 'prices', 'sBOLD', 'total_bold_supply', 'total_coll_value', 'total_debt_pending', 'total_sp_deposits', 'total_value_locked', 'yBOLD']
+PROBE liquity_api_v2b: FAIL HTTP Error 404: Not Found
+PROBE liquity_api_root: answered; non-JSON, 214 bytes
+PROBE liquity_stats: FAIL HTTP Error 404: Not Found
+PROBE felix_api: FAIL <urlopen error [Errno -5] No address associated with hostname>
+PROBE felix_stats: FAIL HTTP Error 404: Not Found
+PROBE llama_liquity_pools: FAIL Unterminated string starting at: line 1 column 2999866 (char 2999865)
