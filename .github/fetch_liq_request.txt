@@ -1,4 +1,5 @@
-# chains for .github/workflows/fetch_liq.yml. Resumable. (run 22: Comet base/polygon pilot receipts, arbitrum stage 2)
-comet_base_pilot
-comet_polygon_pilot
-comet_arbitrum
+# chains for .github/workflows/fetch_liq.yml. Resumable. (run 23: mantle + comet_base stage 2 (pilots not killed), celo/soneium pilots resume)
+mantle
+comet_base
+celo_pilot
+soneium_pilot
