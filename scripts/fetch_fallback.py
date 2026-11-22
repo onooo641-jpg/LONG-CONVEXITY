@@ -594,7 +594,54 @@ def job_sp_data():
         print(f"  {name} {a}: {n} prices", flush=True)
     pd.DataFrame(rows).to_parquet(OUT / "sp_prices.parquet", index=False)
 
-JOBS = {"sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+def job_batch6():
+    """Batch 6 Stage-0.5 data (docs/PREREG_BATCH6_20261122.md). Raw responses saved; structure printed."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    raw = {}
+    raw["paradex_summary"] = get("https://api.prod.paradex.trade/v1/markets/summary?market=ALL")
+    ob = get("https://mainnet.zklighter.elliot.ai/api/v1/orderBooks") or {}
+    raw["lighter_orderbooks"] = ob
+    books = ob.get("order_books") or ob.get("orderBooks") or []
+    end = int(time.time())
+    start = end - 92 * 86400
+    lf = []
+    for b in books[:40]:
+        mid, sym = b.get("market_id"), b.get("symbol")
+        d = get(f"https://mainnet.zklighter.elliot.ai/api/v1/fundings?market_id={mid}&resolution=1h&start_timestamp={start}&end_timestamp={end}&count_back=2300")
+        for x in (d or {}).get("fundings", []):
+            lf.append({"market_id": mid, "symbol": sym, **{k: x.get(k) for k in x}})
+        time.sleep(0.2)
+    pd.DataFrame(lf).astype(str).to_parquet(OUT / "batch6_lighter_funding.parquet", index=False)
+    print(f"lighter books {len(books)}, funding rows {len(lf)}; sample keys {sorted(lf[0].keys()) if lf else None}", flush=True)
+    raw["fees_holders"] = get("https://api.llama.fi/overview/fees?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true&dataType=dailyHoldersRevenue")
+    prot = get("https://api.llama.fi/protocols") or []
+    raw["protocol_mcaps"] = [{"name": x.get("name"), "slug": x.get("slug"), "symbol": x.get("symbol"), "mcap": x.get("mcap"),
+                              "gecko_id": x.get("gecko_id")} for x in prot]
+    for name, url in (("drift_if", "https://mainnet-beta.api.drift.trade/insuranceFund/stats"), ("drift_stats", "https://mainnet-beta.api.drift.trade/stats"),
+                      ("drift_data", "https://data.api.drift.trade/stats/insuranceFund"), ("aave_umbrella", "https://aave-api-v2.aave.com/data/umbrella"),
+                      ("llama_airforce", "https://api.llama.airforce/"), ("votium_rounds", "https://api.llama.airforce/bribes/votium/cvx-crv/rounds"),
+                      ("votium_v2", "https://api-next.llama.airforce/bribes/votium/cvx-crv/rounds")):
+        raw[name] = get(url, tries=1)
+        print(f"PROBE {name}: {'answered ' + str(sorted(raw[name].keys())[:12]) if isinstance(raw[name], dict) else ('list' if isinstance(raw[name], list) else 'no answer')}", flush=True)
+    for sym in ("BTC=F", "BTC-USD"):
+        raw[f"yahoo_{sym}"] = get(f"https://query1.finance.yahoo.com/v8/finance/chart/{sym}?range=6mo&interval=1d", tries=2)
+        print(f"yahoo {sym}: {'ok' if raw[f'yahoo_{sym}'] else 'no answer'}", flush=True)
+    pools = pd.DataFrame((get("https://yields.llama.fi/pools") or {}).get("data", []))
+    tr = pools[pools["project"].isin(["strata-markets", "resolv", "reflect-tranches", "reservoir-protocol"])
+               | pools["symbol"].str.upper().isin(["RLP", "JRUSDE", "SRUSDE", "SRUSDAT", "JRUSDAT", "STUSR"])]
+    rows = []
+    for p in tr["pool"]:
+        for x in (get(f"https://yields.llama.fi/chart/{p}") or {}).get("data", []):
+            rows.append({"pool": p, "ts": x.get("timestamp"), "tvlUsd": x.get("tvlUsd"), "apyBase": x.get("apyBase"), "apyReward": x.get("apyReward")})
+        time.sleep(0.25)
+    pd.DataFrame(rows).to_parquet(OUT / "batch6_tranche_charts.parquet", index=False)
+    tr[["pool", "project", "symbol", "chain", "tvlUsd", "apyBase", "apyReward"]].to_parquet(OUT / "batch6_tranche_pools.parquet", index=False)
+    print(f"tranche pools {len(tr)}, chart rows {len(rows)}", flush=True)
+    (OUT / "batch6_raw.json").write_text(json.dumps(raw)[:40_000_000])
+    print("paradex markets:", len((raw["paradex_summary"] or {}).get("results", [])), flush=True)
+
+JOBS = {"batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys
