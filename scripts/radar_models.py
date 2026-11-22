@@ -5,7 +5,7 @@ from __future__ import annotations
 
 import dataclasses
 
-from backtest.recycle import XFARules
+from backtest.recycle import Policy, XFARules
 
 B = XFARules()
 
@@ -62,7 +62,19 @@ MFFU_BUILDER50 = dataclasses.replace(
     payout_buffer=2100.0, payout_goal=(500.0, 500.0), payout_cap=2000.0, payout_min=500.0, max_payouts_per_xfa=5, profit_split=0.80,
     one_time_price=153.0, reset=153.0, monthly=0.0, activation=0.0, api_monthly=0.0)
 
+# Addendum 9: MFFU Studio (static MLL, payouts of all profit above $0 any time, min $250/$100, 80/20; own help centre 2026-10-14).
+def _studio(size, price, mll, target, micros, pmin):
+    return dataclasses.replace(
+        B, profit_target=target, loss_limit=mll, static_dd=True, combine_max_contracts=micros, funded_loss_limit=mll, mll_locks_at=None,
+        lock_level=0.0, funded_scaling=False, winning_days_required=0, payout_buffer=0.0, payout_cap=float("inf"), payout_min=pmin,
+        payout_locks_mll=False, profit_since_payout_required=False, profit_split=0.80, one_time_price=price, reset=price, monthly=0.0,
+        activation=0.0, api_monthly=0.0)
+
+
 MODELS = {
+    "mffu_studio": [("MFFU Studio #001 $10K ($140)", _studio(10_000, 140.0, 500.0, 1000.0, 10, 250.0), 225, Policy.IMMEDIATE),
+                    ("MFFU Studio #002 $20K ($280)", _studio(20_000, 280.0, 1000.0, 2000.0, 20, 250.0), 450, Policy.IMMEDIATE),
+                    ("MFFU Studio #003 $5K ($75)", _studio(5_000, 75.0, 250.0, 500.0, 5, 100.0), 112, Policy.IMMEDIATE)],
     "mffu_builder50": [("MFFU Builder 50K ($153)", MFFU_BUILDER50, 875),
                        ("MFFU Builder 50K ($107 code) [sens]", dataclasses.replace(MFFU_BUILDER50, one_time_price=107.0, reset=107.0), 875)],
     "goat_flex50": [("Goat Flex 50K", GOAT_FLEX50, 900)],

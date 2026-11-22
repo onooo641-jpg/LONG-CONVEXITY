@@ -64,13 +64,13 @@ def trades(orders, bars, delay):
     return t.sort_values("exit_ts").reset_index(drop=True)
 
 
-def price(t, rules, risk):
+def price(t, rules, risk, policy=Policy.LOCK_FIRST):
     s = scaled(t, risk / 900)
     g, comm = s["gross_pnl"].to_numpy(), (s["gross_pnl"] - s["net_pnl"]).to_numpy()
-    real = recycle(s, rules, policy=Policy.LOCK_FIRST)
+    real = recycle(s, rules, policy=policy)
     rng = np.random.default_rng(1)
     flips = np.array([recycle(s.assign(net_pnl=np.abs(g) * rng.choice([-1, 1], len(s)) - comm), rules,
-                              policy=Policy.LOCK_FIRST)["net"] for _ in range(200)])
+                              policy=policy)["net"] for _ in range(200)])
     return real["net"], worst_dip(real), float(np.median(flips)), float((flips > 0).mean())
 
 
@@ -84,9 +84,11 @@ def main() -> int:
           f"{DELAY_MIN}-min delay real ${ref[DELAY_MIN][0]:,.0f} dip ${ref[DELAY_MIN][1]:,.0f} flip ${ref[DELAY_MIN][2]:,.0f}\n")
     rows = []
     for r in registry_rows(reg):
-        for name, rules, risk in MODELS[r["model_key"]]:
+        for item in MODELS[r["model_key"]]:
+            name, rules, risk = item[:3]
+            pol = item[3] if len(item) > 3 else Policy.LOCK_FIRST
             d = DELAY_MIN if r["automation"] == "alert_assisted" else 0
-            real, dip, flip, prof = price(cache[d], rules, risk)
+            real, dip, flip, prof = price(cache[d], rules, risk, pol)
             rf = ref[d]
             flag = real >= 0.5 * rf[0] and flip >= 5000 and dip >= 1.5 * rf[1]
             rows.append((name, r["automation"], d, real, flip, prof, dip, flag))

@@ -166,3 +166,11 @@ peak reaches +$2,000, assumed from "trails up to breakeven"), payouts above a $2
 last payout, 2 qualifying days per cycle, 50% consistency, min $500, cap $2,000, 80/20, 5 sim payouts then live (modelled as the account ending,
 as Lucid); one-time price $153 list ($107 with the 30% code: sensitivity), no activation; one sim-funded account per user. MFFU allows bots
 (PREREG_ROUND3). Same pricing procedure and flag rule as the sweep (no delay; risk $875 under the $1,000 soft DLL).
+
+## Addendum 9 (2026-11-22): MFFU Studio plans (#232), priced before running
+MFFU's own help centre ("Studio Plans - A Comprehensive Guide", effective 2026-10-14): #001 $10K ($140, static MLL $500, target $1,000, 10 micros),
+#002 $20K ($280, $1,000, $2,000, 20 micros), #003 $5K ($75, $250, $500, 5 micros); no DLL, no consistency, no minimum days; sim funded starts at
+$0 with the same **static** MLL; **all net profit above $0 can be withdrawn any time** (min $250, #003 $100), 80/20; one Studio account per user;
+daily purchase cap. Modelled with a static floor that never moves and withdrawals as soon as ≥ the minimum (`Policy.IMMEDIATE`, needed because
+there is no lock); risk = 0.45 × MLL. Same coin-flip test and flag rule as the sweep. The daily profit cap ($2.5K–$10K) never binds at this risk.
+Limits: the daily purchase cap and "availability is limited" may make a recycling plan impossible in practice.
