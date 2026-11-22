@@ -758,3 +758,11 @@ Only you can do this because it needs an account. Why: the one remaining speed q
 4. Tell the next session; it will pre-register and run a short-window flashblocks measurement on the free tier (the code path will be written then). Spending beyond the free tier needs your explicit approval.
 
 Update 2026-11-22: the watcher now accepts a private RPC URL per chain through the environment variable `LIQ_RPC_<CHAIN>` (tried first, never printed), and `docs/LIQ_VPS_SETUP.md` explains how to run it log-only on a VPS. Renting the VPS is for Jx; nothing is rented.
+
+## 2026-11-22 — official-page verification: four firms do not accept Malaysian residents
+Read directly from each firm's own pages (rendered on GitHub Actions; details and URLs in `docs/PROP_VERIFY_20261122.md`):
+**MyFundedFutures** (restricted-countries policy, 2026-10-14), **FuturesElite** (terms), **Alpha Futures** (countries with limitations), **Blue
+Guardian Futures** (2026-11-13) list Malaysia as restricted. MFFU is one of the three firms in the multi-firm plan (`PREREG_PORTFOLIO2_20261120`),
+so that plan needs a replacement firm for a Malaysian account holder (whether it matters depends on whose name the accounts are in).
+Topstep 50K rules match the model; its XFA **Consistency path** prices at $46,492 vs $44,359 for Standard (same trades, same costs).
+TTP Futures Prime 50K rules match the model ($49,057). Verification of the remaining firms continues.
