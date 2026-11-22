@@ -16,6 +16,8 @@ import pandas as pd
 P0, P1 = pd.Timestamp("2026-08-01", tz="UTC"), pd.Timestamp("2026-11-01", tz="UTC")
 R8 = json.load(open("data/public/batch8_raw.json"))
 R10 = json.load(open("data/public/batch10_raw.json")) if os.path.exists("data/public/batch10_raw.json") else {}
+if os.path.exists("data/public/batch10b_raw.json"):  # remainder fetched after the GeckoTerminal crash
+    R10.update(json.load(open("data/public/batch10b_raw.json")))
 INDEX = {"US500", "USA500", "USTECH", "SMALL2000", "XYZ100", "JP225", "KR200"}
 NONSTOCK = INDEX | {"GOLD", "SILVER", "CL", "COPPER", "NATGAS", "JPY", "EUR", "USBOND", "XMR", "URNM", "EWY"}
 #: names whose shares are listed on a US exchange (the registered rule hedges the perp 1:1 with shares; pre-IPO / private / non-US names

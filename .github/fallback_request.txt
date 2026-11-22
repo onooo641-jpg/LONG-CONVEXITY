@@ -1,7 +1,7 @@
 # jobs for scripts/fetch_fallback.py (one per line)
-vxn
-batch9
-batch10
+fred9
+batch10b
 smallcap
 merkl
 sweep3
+repair8

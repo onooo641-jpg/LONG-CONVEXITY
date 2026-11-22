@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import json
 import time
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -1344,10 +1345,116 @@ def job_sweep3():
         print(f"  charts {grp}: {min(len(df), 800)}", flush=True)
     (OUT / "sweep3_raw.json").write_text(json.dumps(out))
 
-JOBS = {"sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+def job_fred9():
+    """Batch 9 FRED series again (the first attempt timed out with a browser user agent)."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    fx = ["DEXJPUS", "DEXUSAL", "DEXUSNZ", "DEXCAUS", "DEXSZUS", "DEXUSUK", "DEXUSEU", "DEXNOUS", "DEXSDUS", "DEXMXUS", "DEXBZUS", "DEXSFUS",
+          "DEXKOUS", "DEXSIUS", "DEXTHUS", "DEXINUS", "DEXMAUS", "DEXCHUS"]
+    rates = [f"IR3TIB01{c}M156N" for c in ("AU", "NZ", "CA", "CH", "GB", "EZ", "NO", "SE", "MX", "ZA", "JP", "US", "KR", "IN", "BR", "CN")]
+    fred = {}
+    for sid in fx + rates + ["DTB3", "DGS10", "INTDSRMYM193N", "VIXCLS"]:
+        for k in range(3):
+            try:
+                with urllib.request.urlopen(urllib.request.Request(f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={sid}", headers=UA), timeout=180) as r:
+                    fred[sid] = r.read().decode()
+                break
+            except Exception as e:  # noqa: BLE001
+                print(f"  fred {sid} try {k + 1}: {e}", flush=True)
+                time.sleep(5 * (k + 1))
+        print(f"  fred {sid}: {len(fred[sid].splitlines()) if sid in fred else 'none'}", flush=True)
+        time.sleep(1.0)
+    (OUT / "batch9_fred.json").write_text(json.dumps(fred))
+
+
+def job_batch10b():
+    """Remainder of batch 10 after the GeckoTerminal crash: pools (robust), sUSDe value, Upbit notices + HL candles."""
+    import re as r_
+    OUT.mkdir(parents=True, exist_ok=True)
+    out = {}
+    for q in ("LUSD", "BOLD", "feUSD", "sUSDe"):
+        d = get(f"https://api.geckoterminal.com/api/v2/search/pools?query={q}", tries=2) or {}
+        pools = sorted(d.get("data", []) or [], key=lambda x: -float(((x or {}).get("attributes") or {}).get("reserve_in_usd") or 0))[:3]
+        for pl in pools:
+            rel = pl.get("relationships") or {}
+            net = (((rel.get("network") or {}).get("data") or {}).get("id")) or (pl.get("id", "").split("_")[0] if "_" in pl.get("id", "") else None)
+            addr = (pl.get("attributes") or {}).get("address")
+            if not net or not addr:
+                continue
+            o = get(f"https://api.geckoterminal.com/api/v2/networks/{net}/pools/{addr}/ohlcv/day?limit=1000", tries=2) or {}
+            out[f"gecko|{q}|{(pl.get('attributes') or {}).get('name')}|{net}"] = {
+                "base_is": (((rel.get("base_token") or {}).get("data") or {}).get("id")),
+                "ohlcv": ((o.get("data") or {}).get("attributes") or {}).get("ohlcv_list")}
+            time.sleep(2.5)
+        print(f"  gecko {q}: {len(pools)} pools", flush=True)
+    out["susde_value"] = get("https://coins.llama.fi/chart/ethereum:0x9d39a5de30e57443bff2a8307a4256c8797a3497?start=1730419200&span=800&period=1d", tries=2)
+    notes = []
+    for u in ("https://api-manager.upbit.com/api/v1/announcements?os=web&page=%d&per_page=50&category=trade",
+              "https://api-manager.upbit.com/api/v1/notices?page=%d&per_page=50"):
+        for pg in range(1, 11):
+            d = get(u % pg, tries=1)
+            data = (d or {}).get("data") if isinstance(d, dict) else None
+            items = (data.get("notices") or data.get("list") or []) if isinstance(data, dict) else []
+            if not items:
+                break
+            notes += items
+            time.sleep(0.5)
+        if notes:
+            break
+    out["upbit_notices"] = notes
+    print(f"  upbit notices: {len(notes)}", flush=True)
+    syms = set()
+    for n in notes:
+        syms |= set(r_.findall(r"\(([A-Z0-9]{2,10})\)", str(n.get("title", ""))))
+    hl = {a["name"] for a in (get("https://api.hyperliquid.xyz/info", {"type": "meta"}) or {}).get("universe", [])}
+    end = int(time.time() * 1000)
+    for c in sorted(syms & hl)[:120] + ["BTC"]:
+        k = get("https://api.hyperliquid.xyz/info", {"type": "candleSnapshot", "req": {"coin": c, "interval": "1h",
+                "startTime": end - 5000 * 3600 * 1000, "endTime": end}}, tries=4) or []
+        out[f"hlc|{c}"] = [[x["t"], float(x["o"]), float(x["c"])] for x in k]
+        time.sleep(1.0)
+    print(f"  hl candles: {sum(1 for k in out if k.startswith('hlc|'))}", flush=True)
+    (OUT / "batch10b_raw.json").write_text(json.dumps(out))
+
+
+def job_repair8():
+    """Batch 8 repairs (PREREG_BATCH8 addendum 1): Orderly funding without time parameters; Morpho with simpler GraphQL; errors kept."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    out = {}
+    for c in ("BTC", "ETH", "SOL", "XRP", "DOGE", "AVAX", "LINK", "SUI", "ARB", "OP", "LTC", "BNB"):
+        rows = []
+        for pg in range(1, 30):
+            d = get(f"https://api-evm.orderly.org/v1/public/funding_rate_history?symbol=PERP_{c}_USDC&page={pg}&size=500", tries=2) or {}
+            r = ((d.get("data") or {}).get("rows")) or []
+            rows += r
+            if len(r) < 500:
+                break
+            time.sleep(0.3)
+        out[f"orderly|{c}"] = rows
+        print(f"  orderly {c}: {len(rows)}", flush=True)
+    for name, q in (("vaults", "{ vaults(first: 100) { items { address name asset { symbol } state { totalAssetsUsd } historicalState { sharePriceUsd { x y } } } } }"),
+                    ("markets", "{ markets(first: 100) { items { uniqueKey lltv loanAsset { symbol } collateralAsset { symbol } state { supplyAssetsUsd } historicalState { borrowApy { x y } } } } }")):
+        req = urllib.request.Request("https://blue-api.morpho.org/graphql", data=json.dumps({"query": q}).encode(),
+                                     headers={**UA, "Content-Type": "application/json"})
+        try:
+            with urllib.request.urlopen(req, timeout=120) as r:
+                out[f"morpho_{name}"] = json.loads(r.read().decode())
+        except urllib.error.HTTPError as e:  # keep the error body to learn the schema
+            out[f"morpho_{name}"] = {"error": e.code, "body": e.read().decode()[:3000]}
+        except Exception as e:  # noqa: BLE001
+            out[f"morpho_{name}"] = {"error": str(e)}
+        print(f"  morpho {name}: {str(out[f'morpho_{name}'])[:200]}", flush=True)
+    (OUT / "repair8_raw.json").write_text(json.dumps(out))
+
+JOBS = {"fred9": job_fred9, "batch10b": job_batch10b, "repair8": job_repair8, "sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys
     for j in (sys.argv[1:] or ["stable_hlp"]):
         print(f"=== {j}", flush=True)
-        JOBS[j]()
+        try:
+            JOBS[j]()
+        except Exception as e:  # noqa: BLE001
+            import traceback
+            print(f"JOB {j} FAILED: {type(e).__name__}: {e}", flush=True)
+            traceback.print_exc()
