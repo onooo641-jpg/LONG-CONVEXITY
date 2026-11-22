@@ -1,0 +1,4 @@
+=== sweep4c
+  prices: 32/32 ids with data
+=== sweep4d
+  pump coins scanned 912; graduated 2-10 days ago sampled 0
