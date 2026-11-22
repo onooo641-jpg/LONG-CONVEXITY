@@ -87,7 +87,16 @@ def _tl(dd, target, micros, price):
         activation=0.0, api_monthly=0.0)
 
 
+# Addendum 12: DayTraders EOD 50K (own help centre 2026-10-22); price bracket, sensitivity only
+DT_EOD50 = dataclasses.replace(
+    B, profit_target=3000, loss_limit=2000, combine_max_contracts=100, combine_consistency=0.50, combine_mll_locks=True,
+    funded_loss_limit=2000, mll_locks_at=2000, lock_level=0.0, funded_scaling=False, winning_day_min=200.0, winning_days_required=8,
+    consistency_target=0.30, consistency_days=8, payout_needs_both=True, payout_buffer=2000.0, payout_cap=2000.0, payout_min=500.0,
+    profit_split=1.0, one_time_price=99.0, reset=99.0, monthly=0.0, activation=5.0, api_monthly=0.0)
+
 MODELS = {
+    "dt_eod50": [("DayTraders EOD 50K, $99 [sens]", DT_EOD50, 875),
+                 ("DayTraders EOD 50K, $199 [sens]", dataclasses.replace(DT_EOD50, one_time_price=199.0, reset=199.0), 875)],
     "ttp_prime50": [("TTP Futures Prime 50K ($99)", TTP_PRIME50, 875)],
     "ttp_prime150": [("TTP Futures Prime 150K ($289)", dataclasses.replace(
         TTP_PRIME50, profit_target=9000, loss_limit=4500, combine_max_contracts=150, funded_loss_limit=4500, mll_locks_at=4500,

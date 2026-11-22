@@ -198,3 +198,13 @@ Same procedure and flag rule as the sweep.
 Same TTP rules as addendum 10 at the 150K size (own support pages): target $9,000, EOD trailing $4,500 locking at start, daily pause $3,000,
 150 micros, reward cap $5,000 (50% of profit), 5 profitable days ≥ $150, 30-day challenge, 40% eval consistency; price **$289** (directory list;
 third-party). Risk = min(0.45 × 4,500, 0.875 × 3,000) = $2,025. Same flag rule (reference Topstep 50K, as in the sweep).
+
+## Addendum 12 (2026-11-22): DayTraders EOD 50K (#236) and TTP price verified
+- TTP's own futures page (thetradingpit.com/futures, crawled 2026-11-22) lists the $50,000 Futures Prime at **"Price $99"** → #233's price is now
+  verified, not third-party.
+- **DayTraders EOD 50K** (daytraders.com help centre, 2026-10-22): bots allowed ("scripts, bots and strategy automation that trade at normal
+  execution speeds", VPS allowed). Eval: target $3,000, EOD trailing $2,000 stopping at start (both phases), DLL $1,250 soft (risk $875), 100 micros,
+  2 qualifying days ≥ $200, 50% consistency, no time limit, no resets (failed eval = new purchase); funded: $5 activation, 8 qualifying days ≥ $200
+  between payouts, 30% consistency, request $500–$2,000, balance must stay ≥ start + $2,000 after the payout (buffer $2,000; request needs
+  ≥ $2,600), **100% split**, up to 5 EOD accounts. Evaluation price not readable (loads by script) → **bracket $99 / $199, sensitivity only, not
+  ranked or flagged** (as Blue Guardian).
