@@ -154,3 +154,8 @@ each pilot costs money → Jx decides.
 - **Batch 8 Stage 1:** 2 of 12 continue: #280 Deribit↔HL funding gaps (12.7% in the pilot) and #288 Hyperliquid user vaults (27.3%, but −24% in
   October, survivorship). 4 killed (#281 cash-and-carry 2.6%, #282 short straddles −31%, #284 HIP-3 gaps −2%, #285 Kamino loops −4%).
   6 not testable (Drift, Boros, Aave, Morpho ×2, Orderly: no data). Stage 2 + repair probes fetching (`batch8s`).
+
+## 2026-11-22 — sweep 2 (24 Topstep-shaped mechanisms, #296–#319)
+List and desk checks: `docs/IDEAS_SWEEP2_20261122.md`; tests: `docs/PREREG_BATCH10_20261122.md`. So far: #300 stock-perp carry and #314
+index-perp carry KILL; #298 sale-window buying (prop side) roughly doubles the number of products meeting the flag rule at 40% off (optimistic:
+resets discounted too). recycle.py gained an optional two-phase evaluation and fee refund (for the CFD firms in #296); tests pass.

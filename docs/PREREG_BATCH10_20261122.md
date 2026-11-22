@@ -20,3 +20,16 @@ worst dip ≥ −$5,280, vs Topstep 50K).
 | 307 listing drift | Upbit notices (probe) + HL 1h candles | long the HL perp 1 h after a KRW listing notice, exit 24 h later; 10 bps. KILL if mean ≤ 0 (2026-07..11) |
 | 308 warning / delist shorts | same | short 1 h after notice, exit 72 h later; 10 bps. KILL if mean ≤ 0 |
 Command: `uv run python -m scripts.batch10_20261122 | tee docs/jx_runs/batch10_20261122.txt` (+ `scripts/cfdprop_20261122.py` for #296–#298).
+
+## Results so far (2026-11-22)
+- **#298 sale windows (ranking; `docs/jx_runs/salewindow_20261122.txt`, identical on re-run).** Of 62 price rows (35 with a verified price), the
+  flag rule is met by 18 / 39 / 52 / 55 rows at 0 / 40 / 60 / 80% off (verified-price rows: 7 / 16 / 25 / 28). Newly flagging at 40% off
+  (verified price): MFFU Rapid EOD 50K ($43,775 / $17,429 / −$3,580), Tradeify Select Flex, FundedNext Rapid Pro, TFD Static Pro,
+  MFFU Builder 50K ($153), Goat Flex 50K, Blueberry Ascent 50K, Alpha Futures Standard 50K (manual). Topstep itself: $44,359 → $47,338.
+  TTP Prime 50K (reset $79): $49,057 → $55,003. **Caveats:** resets are discounted too, which is optimistic (many codes exclude resets).
+  The availability and frequency of 40%+ codes are not verified (checkout prices are behind logins). Ranking only, no pass/fail.
+- **#300 stock-perp funding carry: KILL** (US-listed shares only, as the registered 1:1 share hedge requires): −13.28%/yr in 2026-08..10.
+  Context: all single-name perps, including pre-IPO / private / non-US names that cannot be hedged with shares (UNITREE, TREAD, ANTH…),
+  show 49.89%/yr. That figure is not tradeable as registered. An unhedged position would be a directional bet on illiquid perps.
+  The hedgeable list was written into the script during this run, after a first context run had wrongly included ANTH.
+- **#314 index-perp funding carry: KILL** (−2.21%/yr).
