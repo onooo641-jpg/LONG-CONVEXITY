@@ -125,3 +125,11 @@ assumed staking yield or at 2× leverage; essentially HYPE funding carry, which 
 zero-fee-venue funding gaps and carry (Lighter) lost money in the 31-day pilot; junior/senior tranches and new-chain incentives collapsed; Votium
 bribes are swamped by CVX's −52%/yr; RWA (3.9%), CME basis (2.6%) and reverse carry (6.3%) die at the ceiling; Drift/Umbrella/Paradex lack data.
 No flag to Jx (#276 is reported as marginal; a 3× short on HYPE also carries unmeasured liquidation risk).
+
+## Refinement results (2026-11-22): configuration changes, year-1 design / year-2 test
+**Found a bug in my own #208 script: fees were charged twice.** Corrected, the original cross-venue funding-gap rule PASSES (20.3% / 11.9% by half,
+no losing month, ~$6.4K/yr on $40K) — but it is fragile: it fails at 2× fees, needs the Aevo pairs (HL–dYdX alone fails), and entry/exit price
+differences, slippage and collateral moves are not modelled. Refinement passes: R1 funding gaps with maker fees (24.9% / 17.1%), R5 hedged HYPE staking
+(23.4% / 9.3%, marginal), R6 Gains vaults equal-weight (11.6% / 9.8%, ~$2–3M capacity; price check pending). Failures with every configuration:
+GM pools (best hedge ratio flips sign between years — classic overfitting the protocol caught), stable-yield selection, new-reward programmes,
+conditional carry. **First non-prop candidates worth a small live pilot: #208 funding gaps (needs an execution-cost pilot on Aevo), then #225 Gains.**

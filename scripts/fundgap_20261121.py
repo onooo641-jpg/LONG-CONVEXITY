@@ -11,7 +11,7 @@ import pandas as pd
 
 LO, HI = pd.Timestamp("2024-11-01", tz="UTC"), pd.Timestamp("2026-11-01", tz="UTC")
 MID, PILOT = pd.Timestamp("2025-11-01", tz="UTC"), pd.Timestamp("2026-08-01", tz="UTC")
-ENTRY, FEE_SIDE, SLOTS, LEV, BAR, KILL = 15.0, 0.001, 5, 3.0, 8.0, 4.0
+ENTRY, FEE_SIDE, SLOTS, LEV, BAR, KILL = 15.0, 0.0005, 5, 3.0, 8.0, 4.0  # 0.05% per leg per side (fixed 2026-11-22: was 0.001, fees double-counted)
 TESTED = [("hl", "dydx"), ("hl", "aevo"), ("dydx", "aevo")]
 
 

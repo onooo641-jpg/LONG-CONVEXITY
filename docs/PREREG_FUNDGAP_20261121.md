@@ -43,3 +43,13 @@ half**. Thresholds, costs and the 8%/yr bar are unchanged. No real funding data 
 Pooled HL/dYdX/Aevo: 111 / 124 positions opened by half, invested all the time; **13.8% / 4.4%/yr on capital** (Stage 1 7.6%); worst month −1.0%.
 Pairs alone: HL–dYdX −2.7% / −8.9% (fees exceed the gap), HL–Aevo 3.6% / 1.5%, dYdX–Aevo 4.9% / −0.8%. The gaps that paid in 2024–25 closed in
 2025–26. HL–Gate (report only) not measured: Gate refused the history request (HTTP 4xx). Second half below 8% → FAIL.
+
+## Addendum 2 (2026-11-22): fee bug found and fixed — corrected result PASSES the original rule
+The refinement study (R1) re-implemented the rule and got a different number for the original configuration. Cause: the script set FEE_SIDE = 0.001
+and charged FEE_SIDE × 2 on every open and every close = 0.40% of notional per round trip, twice the registered 0.20% (0.05% per leg per side).
+Fixed (FEE_SIDE = 0.0005); no other change. **Corrected result (`docs/jx_runs/fundgap_20261121_feefix.txt`, re-run identical):** 111 / 124 positions
+opened by half; Stage 1 13.30%; **halves 20.30% / 11.87% on capital → PASS**; worst month +0.04%; ~$6.4K/yr on $40K. Per pair: HL–dYdX 8.6% / 2.2%,
+HL–Aevo 10.8% / 6.0%, dYdX–Aevo 13.0% / 7.2% (the pass needs the Aevo pairs). Sensitivity (labelled, `docs/jx_runs/fundgap_sens_20261122.txt`):
+fees ×1.5 → 17.1% / 8.2% (still passes), ×2 → 13.8% / 4.4% (fails), ×3 → fails. **Not modelled and decisive in practice:** price difference between
+venues at entry and exit, slippage on Aevo's thinner order books, simultaneous execution of both legs, moving collateral between venues, liquidation
+of a 3× leg on a large move, venue risk. The earlier FAIL in NOTES/CANDIDATES was caused by the bug and is superseded.

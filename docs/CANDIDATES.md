@@ -114,7 +114,7 @@ risk, 5m signals and 1m fills.
 | 207 | new stablecoin reward programmes, first 30 days | `docs/PREREG_NEWREWARDS_20261121.md`. Pass ≥ 8%/yr both halves, ≥ 30 events/half. | FAIL at Stage 1 (−61.7%/yr with loss stress; 1.9%/yr even without it, below Aave) | PREREG_NEWREWARDS result |
 | 210 | named structural stablecoin programmes held (Liquity BOLD, Felix, sUSDe, sUSDf, Sky, Spark, bUSD0, HL Earn, Maple, Pendle) | `docs/PREREG_PROGRAMMES_20261121.md`. Each ≥ 8%/yr both halves. | all FAIL (best sUSDe 9.1%/4.3%, bUSD0 13.0%/3.0%); yields fell to 3–5% in 2025–26 | PREREG_PROGRAMMES result |
 | 217 | best-venue DeFi funding carry (HL/dYdX/Aevo) | `docs/PREREG_BESTVENUE_20261121.md` | Stage 0.5 KILL: hindsight ceiling 7.8%/yr < 8% | ceiling_20261121.txt |
-| 208 | cross-venue funding gaps, delta-neutral (HL/dYdX/Aevo) | `docs/PREREG_FUNDGAP_20261121.md` (+ addendum 1). Pass ≥ 8%/yr both halves. | FAIL: 13.8% / 4.4% by half; gaps closed in 2025–26 | PREREG_FUNDGAP result |
+| 208 | cross-venue funding gaps, delta-neutral (HL/dYdX/Aevo) | `docs/PREREG_FUNDGAP_20261121.md` (+ addenda 1–2). Pass ≥ 8%/yr both halves. | **PASS after a fee-bug fix: 20.3% / 11.9%** (earlier 13.8% / 4.4% FAIL had fees double-counted); fragile: fails at 2× fees, needs the Aevo pairs; execution basis/slippage not modelled | PREREG_FUNDGAP addendum 2 |
 | 209 | paid-to-borrow same-asset stable loops | `docs/PREREG_BORROWLOOP_20261121.md`; PREREG_HEDGED addendum | survives Stage 0.5 (ceiling 11.4%, Dolomite loops ~16–19% today); NOT TESTABLE further: borrow history paywalled (HTTP 402) | borrow_ceiling_20261121.txt |
 | 211 | Pendle stable PTs to maturity, expired markets included | `docs/PREREG_PENDLE_20261121.md` | FAIL at Stage 1 (−7.0%/yr; apxUSD depeg) | PREREG_PENDLE result |
 | 212 | hedged liquid staking (LST + HL short) | `docs/PREREG_HEDGED_20261121.md` | FAIL at Stage 1 (−2.2%; churn costs); post-hoc buy-and-hold also < 8% in year 2 | PREREG_HEDGED results |
@@ -167,6 +167,8 @@ risk, 5m signals and 1m fills.
 | 258 | Goat 1-Day Pass 100K | same | not flagged | same |
 
 | 259–278 | Batch 6: 20 non-prop mechanisms (zero-fee venue funding gaps/carry, hedged real-yield staking, tranches, insurance funds, bribes, veAERO, RWA, fixed-rate auctions, CME basis, tokenised stocks, LST unstake, hedged LP, relayers, HYPE staking, reverse carry, new-chain incentives) | `docs/PREREG_BATCH6_20261122.md` | 1 narrow pass (#276 hedged native HYPE staking 24.9% / 9.2%, not robust: 6.5–8.2% in year 2 under conservative assumptions); 11 killed at Stage 0/0.5; 5 failed Stage 1/2; 5 not testable (incl. #259 surviving the ceiling at 33%) | PREREG_BATCH6 final results |
+
+| R1–R7 | refinement studies (year-1 design, year-2 test, costs ×1.5) on #208, #221, #204 family, #207, #276, #225, carry family | `docs/PREREG_REFINE_20261122.md` | PASS: R1 funding gaps (maker 24.9% / 17.1%), R5 HYPE hedged staking (23.4% / 9.3%, marginal), R6 Gains vaults (11.6% / 9.8%, small, price check pending); FAIL: R2 GM (best hedge flips), R3 stable selection, R4 new rewards, R7 conditional carry | refine_20261122.txt |
 
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.

@@ -17,3 +17,14 @@ a variant says otherwise. Results get CANDIDATES rows "#<orig>-R".
 | R7 | #216 gold carry, #217 / #57 carry family (spot + HL short) | universe BTC, ETH, SOL, HYPE, BNB, XRP, DOGE, LINK, SUI, AVAX, PAXG; monthly rank by trailing-30-d funding received by shorts; hold top k if its trailing funding > T, else park at 4%/yr; costs 0.10% spot + 0.045% perp per side; capital ÷ 1.333 — V1 k=3,T=0 · V2 k=3,T=10% · V3 k=5,T=10% · V4 k=1,T=15% · V5 k=3,T=15% |
 Pending (needs a fetch): R8 #211 Pendle, blue-chip underlyings only (sUSDe, sUSDS, USDe, USDC-based) — registered later.
 Command: `uv run python scripts/refine_20261122.py | tee docs/jx_runs/refine_20261122.txt`
+
+## Results (2026-11-22, `docs/jx_runs/refine_20261122.txt`)
+| study | chosen on year 1 | year 1 | year 2 | year 2, costs ×1.5 | verdict |
+|---|---|---|---|---|---|
+| R1 #208 funding gaps | V4 maker fees 0.015% | 24.86% | 17.08% | 15.96% | **PASS** (maker fills assumed) — and V1, the original configuration, also passes once the fee bug is fixed (20.30% / 11.87%) |
+| R2 #221 GM pools | h = 0.3 | 18.43% | −10.20% | −10.20% | FAIL (the best hedge flips between years: no stable configuration) |
+| R3 #204 stable selection | V5 | −1.31% | −31.76% | −33.81% | FAIL (quality filters do not help) |
+| R4 #207 new rewards | V2 | 0.65% | −27.17% | −29.14% | FAIL |
+| R5 #276 HYPE hedged staking | V1 3× always | 23.39% | 9.26% | 9.26% | PASS (marginal; same caveats as #276: assumed 2.5% staking, liquidation risk unmeasured) |
+| R6 #225 Gains vaults | V5 equal weight ≥ $1M TVL | 11.62% | 9.79% | 9.79% | PASS (small capacity; DefiLlama APY not yet checked against gToken prices — the #214/#221 lesson) |
+| R7 conditional carry | V4 k=1, T=15% | 17.36% | 6.36% | 5.63% | FAIL |

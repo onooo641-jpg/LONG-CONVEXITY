@@ -1,0 +1,6 @@
+fees x1.0: halves 20.30% / 11.87% on capital
+fees x1.5: halves 17.05% / 8.15% on capital
+fees x2.0: halves 13.79% / 4.43% on capital
+fees x3.0: halves 7.28% / -3.01% on capital
+HL-dYdX + HL-Aevo (no dYdX-Aevo): halves 16.99% / 9.03%
+pairs with dYdX only: halves 19.46% / 8.55%

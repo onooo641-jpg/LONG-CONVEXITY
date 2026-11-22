@@ -1,0 +1,58 @@
+chosen = best year-1 variant; PASS needs year 1 >= 8%, year 2 >= 8%, year 2 with costs x1.5 >= 8%
+
+===== R1 #208 funding gaps
+  V1 entry 15%, exit sign flip, taker                        year 1   20.30%   (year 2   11.87%, not used to choose)
+  V2 entry 25%, exit |signal| < 5%, taker                    year 1   15.05%   (year 2    7.60%, not used to choose)
+  V3 entry 10%, exit sign flip, BTC/ETH/SOL, taker           year 1    0.50%   (year 2   -4.40%, not used to choose)
+  V4 entry 15%, exit sign flip, maker 0.015%                 year 1   24.86%   (year 2   17.08%, not used to choose)
+  V5 entry 25%, exit < 5%, maker 0.015%                      year 1   23.14%   (year 2   15.42%, not used to choose)
+  CHOSEN on year 1: V4 entry 15%, exit sign flip, maker 0.015% -> year 1 24.86%, year 2 17.08%, year 2 with costs x1.5 15.96% -> PASS
+
+===== R2 #221 GMX GM pools, real GM prices
+  h = 0.3                                                    year 1   18.43%   (year 2  -10.20%, not used to choose)
+  h = 0.5                                                    year 1    3.62%   (year 2    3.18%, not used to choose)
+  h = 0.7                                                    year 1   -9.59%   (year 2   15.10%, not used to choose)
+  h = 0.9                                                    year 1  -21.45%   (year 2   25.81%, not used to choose)
+  dynamic h (trailing-30-d beta)                             year 1    3.62%   (year 2    3.18%, not used to choose)
+  CHOSEN on year 1: h = 0.3 -> year 1 18.43%, year 2 -10.20%, year 2 with costs x1.5 -10.20% -> FAIL
+
+===== R3 #204 stable-yield selection
+  V1 TVL>=5M age>=90 top5 30-d monthly                       year 1   -6.53%   (year 2    4.79%, not used to choose)
+  V2 TVL>=50M age>=365 top5                                  year 1  -31.29%   (year 2  -17.13%, not used to choose)
+  V3 TVL>=50M age>=365 top10 reward share<=50%               year 1  -38.85%   (year 2   -3.61%, not used to choose)
+  V4 TVL>=100M age>=365 top5 quarterly                       year 1  -42.77%   (year 2  -12.10%, not used to choose)
+  V5 TVL>=20M age>=180 top10 by 90-d mean                    year 1   -1.31%   (year 2  -31.76%, not used to choose)
+  CHOSEN on year 1: V5 TVL>=20M age>=180 top10 by 90-d mean -> year 1 -1.31%, year 2 -31.76%, year 2 with costs x1.5 -33.81% -> FAIL
+
+===== R4 #207 new reward programmes
+  V1 original (TVL>=1M at start)                             year 1  -16.35%   (year 2  -84.42%, not used to choose)
+  V2 start TVL >= $20M                                       year 1    0.65%   (year 2  -27.17%, not used to choose)
+  V3 V2 + pool age >= 180 d                                  year 1   -0.05%   (year 2  -17.44%, not used to choose)
+  V4 V3 + reward >= 5%                                       year 1    0.13%   (year 2    3.95%, not used to choose)
+  V5 V4 on $50,000                                           year 1    0.33%   (year 2    3.99%, not used to choose)
+  CHOSEN on year 1: V2 start TVL >= $20M -> year 1 0.65%, year 2 -27.17%, year 2 with costs x1.5 -29.14% -> FAIL
+
+===== R5 #276 hedged HYPE staking
+  V1 3x always                                               year 1   23.39%   (year 2    9.26%, not used to choose)
+  V2 2x always                                               year 1   20.79%   (year 2    8.23%, not used to choose)
+  V3 3x, in only if trailing funding > 8%                    year 1   20.94%   (year 2    7.61%, not used to choose)
+  V4 2x, in only if trailing funding > 8%                    year 1   18.65%   (year 2    6.78%, not used to choose)
+  V5 3x, exit only if trailing funding < 0                   year 1   20.94%   (year 2    9.26%, not used to choose)
+  CHOSEN on year 1: V1 3x always -> year 1 23.39%, year 2 9.26%, year 2 with costs x1.5 9.26% -> PASS
+
+===== R6 #225 Gains vaults
+  V1 largest-TVL vault                                       year 1   10.80%   (year 2   10.90%, not used to choose)
+  V2 equal weight                                            year 1   11.21%   (year 2   13.64%, not used to choose)
+  V3 TVL-weighted                                            year 1   11.09%   (year 2   10.26%, not used to choose)
+  V4 top 2 by trailing-90-d yield, monthly                   year 1   11.61%   (year 2   21.32%, not used to choose)
+  V5 equal weight, vaults >= $1M TVL                         year 1   11.62%   (year 2    9.79%, not used to choose)
+  CHOSEN on year 1: V5 equal weight, vaults >= $1M TVL -> year 1 11.62%, year 2 9.79%, year 2 with costs x1.5 9.79% -> PASS
+
+===== R7 conditional carry (#216 / #217 / #57 family)
+  V1 k=3, T=0                                                year 1   15.08%   (year 2    7.80%, not used to choose)
+  V2 k=3, T=10%                                              year 1   14.95%   (year 2    7.41%, not used to choose)
+  V3 k=5, T=10%                                              year 1   13.89%   (year 2    6.71%, not used to choose)
+  V4 k=1, T=15%                                              year 1   17.36%   (year 2    6.36%, not used to choose)
+  V5 k=3, T=15%                                              year 1   12.92%   (year 2    6.05%, not used to choose)
+  CHOSEN on year 1: V4 k=1, T=15% -> year 1 17.36%, year 2 6.36%, year 2 with costs x1.5 5.63% -> FAIL
+
