@@ -1,0 +1,7 @@
+=== liq_comet_base_pilot
+comet_base_pilot: 4 Comet contracts with base token, 85 events
+  comet_base_pilot: receipts 83/85 (0 min)
+  comet_base_pilot: receipts 85/85 (0 min)
+base: prices 5796 points, 8/10 coins priced
+comet_base_pilot: COMPLETE 85 events, 9 tokens, 1 min
+=== liq_comet_base_pilot done in 32s  ok 49 fail 0
