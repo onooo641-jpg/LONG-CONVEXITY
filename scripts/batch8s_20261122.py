@@ -96,8 +96,24 @@ def p288():
 def main() -> int:
     print("Stage 2: PASS = both halves (2024-11..2025-10, 2025-11..2026-10) >= 8%/yr on capital\n")
     p280()
+    p280_exec()
+    print()
     p288()
     return 0
+
+
+
+
+def p280_exec():
+    """Context (addendum 1 execution reading): HL-Deribit only, on coins whose Deribit $10K slippage is within 2.5 bps."""
+    rows = []
+    for k, v in R.items():
+        if k.startswith("deribit_funding|") and k.split("|")[1] in ("BTC", "ETH", "SOL", "XRP"):
+            rows += [{"venue": "deribit", "coin": k.split("|")[1], "t": x["t"] // 1000 - 3600, "rate": x["r"]} for x in v if x["r"] is not None]
+    base = pd.read_parquet("data/public/fundgap_funding.parquet")
+    base = base[(base.venue == "hl") & base.coin.isin(["BTC", "ETH", "SOL", "XRP"])]
+    H = FG.hourly(pd.concat([base, pd.DataFrame(rows)], ignore_index=True))
+    FG.report("  (execution reading) HL-Deribit, BTC/ETH/SOL/XRP only", *FG.run(H, [("hl", "deribit")]), verdict=False)
 
 
 if __name__ == "__main__":

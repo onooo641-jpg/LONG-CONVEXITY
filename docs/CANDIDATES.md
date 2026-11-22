@@ -171,8 +171,8 @@ risk, 5m signals and 1m fills.
 | R1–R7 | refinement studies (year-1 design, year-2 test, costs ×1.5) on #208, #221, #204 family, #207, #276, #225, carry family | `docs/PREREG_REFINE_20261122.md` | PASS: R1 funding gaps (maker 24.9% / 17.1%), R5 HYPE hedged staking (23.4% / 9.3%, marginal), R6 Gains vaults (11.6% / 9.8%, small, price check pending); FAIL: R2 GM (best hedge flips), R3 stable selection, R4 new rewards, R7 conditional carry | refine_20261122.txt |
 
 | WF | walk-forward retest of 16 ideas with grids of 12–270 configs (monthly pick on trailing 6 months; OOS 2025-05..2026-10) | `docs/PREREG_WALKFORWARD_20261122.md` | PASS: G1 funding gaps (12.8% / 18.2%, needs maker fills — taker-only fails the ×1.5 cost check), G5 HYPE hedged staking (15.0% / 8.7%), G6 Gains vaults (9.6% / 14.1%); FAIL: GM pools, stable selection, stable-pair LPs/savings, new chains, new rewards, carry family, hedged staking | walkforward_20261122.txt |
-| 280 | funding gaps Deribit ↔ HL/dYdX | `docs/PREREG_BATCH8_20261122.md` | Stage 1 12.72%/yr → Stage 2 running | batch8_20261122.txt |
-| 288 | Hyperliquid user vaults, top-5 trailing 90 days | same | Stage 1 27.30%/yr (−24% in Oct; survivorship) → Stage 2 with closed vaults | same |
+| 280 | funding gaps Deribit ↔ HL/dYdX | `docs/PREREG_BATCH8_20261122.md` | return test PASS (16.3% / 9.9%) but execution FAIL: tradeable slice (HL–Deribit, BTC/ETH/SOL/XRP) −1.4% / −0.2% → not flaggable | batch8s_20261122.txt |
+| 288 | Hyperliquid user vaults, top-5 trailing 90 days | same | FAIL Stage 2 without survivorship (−5.6% / −4.9%; worst month −35%) | batch8s_20261122.txt |
 | 284 | HL HIP-3 cross-dex funding gaps | same | FAIL Stage 1 (−2.08%) | same |
 | 281 | Deribit futures cash-and-carry | same | FAIL Stage 1 (2.62%) | same |
 | 282 | Deribit short ATM straddle ladder | same | FAIL Stage 1 (−30.81%) | same |

@@ -56,3 +56,13 @@ The five-part filter (PREREG_RADAR F1–F5) was not applied idea by idea at Stag
 check also passes. Other deviations so far: the fetches use `scripts/fetch_fallback.py` (its own GitHub Actions workflow, same mechanism as
 `fetch_public.py`); the first #285 run did not follow the registered rule and was corrected before recording; the #288 Stage-2 universe change
 (adding closed vaults) was written after the pilot. It only makes the test harder; the selection rule is unchanged.
+
+## Stage 2 results (2026-11-22; `docs/jx_runs/batch8s_20261122.txt`, identical on re-run)
+- **#280 Deribit ↔ HL/dYdX: registered return test PASS (16.28% / 9.86%); execution reading FAILS → not flaggable.** The pooled return
+  relies on dYdX (batch 7: $10K costs 23 bps per side) and on six Deribit alt perps whose $10K slippage is 2.5–4.2 bps per side (over budget).
+  Only BTC, ETH, SOL and XRP execute within budget on Deribit. HL–Deribit restricted to those four coins earns −1.42% / −0.17%; the HL–Deribit
+  pair on all coins earns 7.17% / 5.73%. As with #208, the modelled gap is not reachable at $10K per leg.
+- **#288 HL user vaults without survivorship: FAIL** (−5.60% / −4.86%; worst month −35.3%; 11 negative months). 3,000 vaults, 2,923 closed.
+  The Stage 1 figure (27.3%) came from survivors.
+- Repair probes: Orderly funding history answers without time parameters; the minimal Morpho GraphQL query answers (the batch-8 queries had
+  schema errors); Drift S3 404. → #289, #287, #290 become testable in a later fetch; #279 stays not testable.

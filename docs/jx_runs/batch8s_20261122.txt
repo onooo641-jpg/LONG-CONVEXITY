@@ -1,0 +1,51 @@
+Stage 2: PASS = both halves (2024-11..2025-10, 2025-11..2026-10) >= 8%/yr on capital
+
+#280 Deribit funding rows 166026; from 2024-10-25 to 2026-11-22
+#280 Deribit <-> HL/dYdX pooled (registered): round trips 239 / 168; opened 239 / 173; invested 100% / 100% of days; Stage 1 12.72%/yr; halves 16.28% / 9.86% on capital; worst month -0.23%; $ per year $1,307 on $10K, $5,227 on $40K
+  VERDICT: PASS
+  (context) HL-Deribit pair alone: round trips 246 / 112; opened 246 / 113; invested 100% / 95% of days; Stage 1 5.90%/yr; halves 7.17% / 5.73% on capital; worst month -0.41%; $ per year $645 on $10K, $2,580 on $40K
+  Deribit $10K execution (median over snapshots):
+      slip_bps  spread_bps
+coin                      
+AVAX      2.78        3.08
+BNB       2.51        4.93
+BTC       0.04        0.08
+DOGE      4.15        6.49
+ETH       0.45        0.30
+LINK      3.32        4.70
+LTC       3.03        5.13
+SOL       0.07        0.15
+SUI       3.90        6.29
+XRP       1.07        0.11
+  coins within 2.5 bps/side: ['BTC', 'ETH', 'SOL', 'XRP']; over: ['AVAX', 'BNB', 'DOGE', 'LINK', 'LTC', 'SUI']
+
+  (execution reading) HL-Deribit, BTC/ETH/SOL/XRP only: round trips 121 / 37; opened 121 / 37; invested 82% / 53% of days; Stage 1 -1.08%/yr; halves -1.42% / -0.17% on capital; worst month -0.47%; $ per year $-79 on $10K, $-317 on $40K
+
+#288 vaults with history 3000 of 3000 selected (2923 closed)
+    2024-11: eligible 4, month -1.51%
+    2024-12: eligible 4, month +4.30%
+    2025-01: eligible 4, month +1.89%
+    2025-02: eligible 5, month +9.73%
+    2025-03: eligible 5, month +0.73%
+    2025-04: eligible 6, month -1.30%
+    2025-05: eligible 6, month -16.22%
+    2025-06: eligible 5, month -3.86%
+    2025-07: eligible 5, month -4.20%
+    2025-08: eligible 6, month +5.46%
+    2025-09: eligible 8, month -9.03%
+    2025-10: eligible 9, month +8.42%
+    2025-11: eligible 10, month -26.79%
+    2025-12: eligible 9, month +0.57%
+    2026-01: eligible 9, month -0.22%
+    2026-02: eligible 10, month +14.32%
+    2026-03: eligible 12, month +16.74%
+    2026-04: eligible 13, month -5.30%
+    2026-05: eligible 14, month +7.30%
+    2026-06: eligible 14, month +9.84%
+    2026-07: eligible 19, month -6.37%
+    2026-08: eligible 18, month +0.13%
+    2026-09: eligible 21, month +20.25%
+    2026-10: eligible 22, month -35.34%
+#288 HL user vaults top-5 (no survivorship): halves -5.60% / -4.86%; worst month -35.34%; months negative 11
+  VERDICT: FAIL
+
