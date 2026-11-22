@@ -1189,6 +1189,43 @@ def job_liq_morpho_replay():
     print(f"morphobase: replay stage {stage} wrote {len(rows)} rows; {sum(1 for v in cache.values() if v)} of {len(cache)} markets resolved", flush=True)
 
 
+def job_liq_morpho_replay_diag():
+    """Why do Morpho market oracles show no feed updates? Prints, per market, oracle/feed/aggregator addresses and log counts in a wide window."""
+    urls = ["https://base.gateway.tenderly.co"]
+    smp = pd.read_parquet(OUT / "liq_morpho_replay_sample.parquet")
+    for mid, g in smp.groupby("mid"):
+        r = rpc(urls, "eth_call", [{"to": MORPHO, "data": "0x2c3c9157" + mid[2:]}, "latest"])
+        oracle = "0x" + r[2 + 64 * 2: 2 + 64 * 3][-40:]
+        feeds = {}
+        for nm, sel in (("BASE1", "0xf50a4718"), ("BASE2", "0xdc53858c"), ("QUOTE1", "0x56095e11"), ("QUOTE2", "0xacfbd39e")):
+            try:
+                x = rpc(urls, "eth_call", [{"to": oracle, "data": sel}, "latest"], tries=1)
+                feeds[nm] = "0x" + x[-40:]
+            except Exception as e:  # noqa: BLE001
+                feeds[nm] = f"ERR {str(e)[:40]}"
+        aggs = {}
+        for nm, f in feeds.items():
+            if f.startswith("0x") and int(f, 16) != 0:
+                try:
+                    a = rpc(urls, "eth_call", [{"to": f, "data": "0x245a7bfc"}, "latest"], tries=1)
+                    aggs[nm] = "0x" + a[-40:]
+                except Exception as e:  # noqa: BLE001
+                    aggs[nm] = "no aggregator()"
+        for month in sorted(g["month"].unique())[:3]:
+            ev = g[g["month"] == month].iloc[0]
+            blk = int(ev["block"])
+            tot = {}
+            for nm, a in list(aggs.items()) + [(k + "(proxy)", v) for k, v in feeds.items() if v.startswith("0x") and int(v, 16) != 0]:
+                n = 0
+                for x in range(0, 20000, 1000):
+                    try:
+                        n += len(rpc(urls, "eth_getLogs", [{"fromBlock": hex(blk - x - 999), "toBlock": hex(blk - x), "address": a}], tries=1))
+                    except Exception:  # noqa: BLE001
+                        n += 0
+                tot[nm] = n
+            print(f"diag market {mid[:10]} events {len(g)} oracle {oracle[:12]} feeds {feeds} aggs {aggs} month {month} blk {blk}: logs in prior 20,000 blocks {tot}", flush=True)
+
+
 def _liq_state_path(name):
     return OUT / f"liq_{name}_state.json"
 
@@ -1499,7 +1536,7 @@ for _c in LIQ_CHAINS:
 
 JOBS = {"ipo2": job_ipo2, "iponews": job_iponews, "ipo": job_ipo, "myxsnap": job_myxsnap, "batch2": job_batch2, "hl2023d": job_hl2023d, "hl2023": job_hl2023, "hl": job_hl, "llama_lend": job_llama_lend, "llama_pools": job_llama_pools,
         "llama_prices": job_llama_prices, "poly": job_poly,
-        "liq_probe": job_liq_probe, "liq_diag": job_liq_diag, "liq_diag2": job_liq_diag2, "liq_diag3": job_liq_diag2, "liq_secretcheck": job_liq_secretcheck, "liq_pxdiag": job_liq_pxdiag, "liq_replay_morphobase": job_liq_morpho_replay, "liq_morphobase_pilot": lambda: job_liq_morpho("morphobase_pilot"), "liq_morphobase": lambda: job_liq_morpho("morphobase"), "liq_morphobase_s0": lambda: job_liq_morpho("morphobase_s0"),
+        "liq_probe": job_liq_probe, "liq_diag": job_liq_diag, "liq_diag2": job_liq_diag2, "liq_diag3": job_liq_diag2, "liq_secretcheck": job_liq_secretcheck, "liq_pxdiag": job_liq_pxdiag, "liq_replay_morphobase": job_liq_morpho_replay, "liq_morpho_replay_diag": job_liq_morpho_replay_diag, "liq_morphobase_pilot": lambda: job_liq_morpho("morphobase_pilot"), "liq_morphobase": lambda: job_liq_morpho("morphobase"), "liq_morphobase_s0": lambda: job_liq_morpho("morphobase_s0"),
         "liq_morphobase_s1": lambda: job_liq_morpho("morphobase_s1"), "liq_morphobase_s2": lambda: job_liq_morpho("morphobase_s2"), **{f"liq_replay_{c}": globals()[f"job_liq_replay_{c}"] for c in ("arbitrum", "base", "avalanche", "polygon", "optimism")}, "liq_decimals": job_liq_decimals, **{f"liq_prices_{c}": _liq_prices_job(c) for c in LIQ_CHAINS}, **{f"liq_{c}_es": _liq_es_job(c) for c in LIQ_ES_ID}, **{f"liq_{c}": globals()[f"job_liq_{c}"] for c in LIQ_CHAINS}}
 
 
