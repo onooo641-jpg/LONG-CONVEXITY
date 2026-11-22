@@ -1,0 +1,40 @@
+=== batch8s
+  deribit funding BTC: 18197
+  deribit funding ETH: 18197
+  deribit funding SOL: 18197
+  deribit funding XRP: 18197
+  deribit funding DOGE: 18197
+  deribit funding AVAX: 18197
+  deribit funding LINK: 18197
+  deribit funding LTC: 18197
+  deribit funding BNB: 18197
+  deribit funding SUI: 2253
+  deribit book snapshot 1/6
+  deribit book snapshot 2/6
+  deribit book snapshot 3/6
+  deribit book snapshot 4/6
+  deribit book snapshot 5/6
+  deribit book snapshot 6/6
+  hl vaults: 9478 listed, 3000 selected (2923 closed)
+  vault details 0/3000
+  vault details 200/3000
+  vault details 400/3000
+  vault details 600/3000
+  vault details 800/3000
+  vault details 1000/3000
+  vault details 1200/3000
+  vault details 1400/3000
+  vault details 1600/3000
+  vault details 1800/3000
+  vault details 2000/3000
+  vault details 2200/3000
+  vault details 2400/3000
+  vault details 2600/3000
+  vault details 2800/3000
+PROBE drift s3 20260801: HTTP Error 404: Not Found
+PROBE drift s3 20260901: HTTP Error 404: Not Found
+PROBE drift s3 20261001: HTTP Error 404: Not Found
+PROBE orderly https://api-evm.orderly.org/v1/public/funding_rate_history?symbol=PERP_BTC_USDC: {"success": true, "data": {"rows": [{"symbol": "PERP_BTC_USDC", "funding_rate": 9.985e-05, "funding_rate_timestamp": 1795305600000, "next_funding_time": 1795334400000}, {"symbol": "PERP_BTC_USDC", "funding_rate": 0.00010029, "funding_rate_timestamp": 1795276800000, "next_funding_time": 1795305600000
+PROBE orderly https://api.orderly.org/v1/public/funding_rate_history?symbol=PERP_BTC_USDC: {"success": true, "data": {"rows": [{"symbol": "PERP_BTC_USDC", "funding_rate": 9.985e-05, "funding_rate_timestamp": 1795305600000, "next_funding_time": 1795334400000}, {"symbol": "PERP_BTC_USDC", "funding_rate": 0.00010029, "funding_rate_timestamp": 1795276800000, "next_funding_time": 1795305600000
+PROBE orderly https://api-evm.orderly.org/v1/public/market_info/funding_history?symbol=PERP_BTC_USDC: {"success": true, "data": {"rows": [{"symbol": "PERP_WOO_USDC", "funding": {"last": {"rate": -0.00023202, "positive": 0, "negative": 1}, "1d": {"rate": -0.00094053, "positive": 0, "negative": 4}, "3d": {"rate": -0.00184141, "positive": 0, "negative": 9}, "7d": {"rate": -0.00327735, "positive": 0, "n
+PROBE morpho minimal: {"data": {"vaults": {"items": [{"address": "0xFfedad42083E2Eb8Ca401F09c0038A9DeD7eF8e5", "name": "Allez USDC"}, {"address": "0xFfD3D9fc55ffC0F5234c24ee22C8a2EB7b1fbC50", "name": "tstcntrct"}]}}, "extensions": {"complexity": 70, "maximumComplexity": 1000000}}
