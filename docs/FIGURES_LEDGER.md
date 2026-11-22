@@ -395,3 +395,4 @@ Raw output for every command above is in `docs/jx_runs/`.
 | B5 | #228 SKY hedged halves (112 days); #229 ceilings ATOM / INJ | 12.85% / 16.86%; 4.93% / 12.06% | `scripts/sky_stage2_20261121.py`, `scripts/batch5_20261121.py` | 2026-07..10 | 2026-11-21 | current |
 | BC | #209 ceiling; #219 corrected ceiling | 11.44%; 6.79% | `uv run python scripts/borrow_ceiling_20261121.py` | snapshot 2026-11-21 | 2026-11-21 | current |
 | PD | #211 Pendle Stage 1 mean annualised | −7.04% (1 depeg in 9) | `uv run python scripts/pendle_20261121.py` | cohorts 2026-05..07 | 2026-11-21 | current |
+| SP1 | #230 Liquity v2 SP deposits / total interest per year / max SP APY | $3,648 / ~$1,040 / 48.2% | Actions `fetch_fallback.py sp_data` → `data/public/sp_liquity_api.json` | snapshot 2026-11-22 | 2026-11-22 | measured (live API, not reproducible later) |
