@@ -23,3 +23,9 @@ Jx asked for ≥ 50%/yr **consistently by month**. Added to the Stage 2 PASS rul
 **#321 small-budget reward campaigns (Merkl).** Same rule and pass criteria as #320, applied to Merkl opportunities with TVL $100K–$2M:
 APR = daily reward value × 365 / TVL, rewards valued at the current reward-token price. Data: Merkl public API (job `merkl`). If no daily
 history is available, Stage 1 uses whatever history the API returns. With under 90 days of history it is not testable.
+
+## Addendum 2 (2026-11-22, still before any #320/#321 data exists): consistency rule calibrated against Topstep
+The addendum-1 rule (every month ≥ 0%, ≥ 10 of 12 months ≥ 3.4%) would also fail Topstep 50K, whose median month is −$112, which pays out in
+20% of months, and whose worst 12 months were −$1,561 (`docs/jx_runs/radar_monthly_20261121.txt`). Jx asked whether to lower the bar. The 50%/yr level
+stays. **PASS consistency becomes: ≥ 8 of 12 months positive AND no month worse than −10%.** That is still far steadier than Topstep.
+The addendum-1 strict test is still reported (context).
