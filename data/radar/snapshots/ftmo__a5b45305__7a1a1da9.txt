@@ -362,7 +362,7 @@ CFDs
 Can I travel or use VPN/VPS?
 Can I travel or use VPN/VPS?
 Trading with FTMO while travelling to a different country is generally allowed. The use of VPN/VPS is also generally allowed.
-Please keep in mind the one and only exception. Traders who travel to the United States should avoid logging in to MetaTrader and cTrader accounts from there. When using VPN/VPS, clients should also avoid changing their geolocation to the United States when using MetaTrader, cTrader or TradingView.
+Please keep in mind the one and only exception. Traders who travel to the United States should avoid logging in to MetaTrader, cTrader or TradingView accounts from there. When using VPN/VPS, clients should also avoid changing their geolocation to the United States when using MetaTrader, cTrader or TradingView.
 Why should I join FTMO?
 Why is there a fee?
 Who is an FTMO Trader, and how do I become one?
