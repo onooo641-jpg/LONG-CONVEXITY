@@ -1,0 +1,5 @@
+=== liq_comet_base
+  rpc error eth_getLogs @ https://base.api.pocket.network: {'code': -32602, 'message': 'invalid argument 0: block range exceeds maximum 500'}
+  rpc error eth_getLogs @ https://base.gateway.tenderly.co: {'code': -32602, 'message': 'invalid params', 'data': 'Block range too large: maximum 1000 blocks without an access key. Try [0x26664df, 0x26668c7], or use an access key for larger ranges.'}
+  comet_base: scanned to block 41614927/53350926 (1379 events, 8 min)
+  comet_base: scanned to block 42814927/53350926 (1517 events, 17 min)
