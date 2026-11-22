@@ -24,20 +24,34 @@ EXTRA = ["https://www.topstep.com/pricing/", "https://lucidtrading.com/pricing",
          "https://fundednext.com/futures", "https://the5ers.com/high-stakes/", "https://www.tradeday.com/pricing"]
 
 
+DEEP = ["https://faq.futureselite.com/en/", "https://support.lucidtrading.com/", "https://help.myfundedfutures.com/", "https://help.alpha-futures.com/",
+        "https://help.tradeday.com/", "https://support.thetradingpit.com/en/", "https://help.blueberryfutures.com/", "https://daytraders.com/help/",
+        "https://help.tradeify.co/", "https://help.topstep.com/en/", "https://help.goatfundedfutures.com/", "https://help.blueguardian.com/",
+        "https://help.fundednext.com/", "https://ftmo.com/en/faq/", "https://help.the5ers.com/", "https://help.thefuturesdesk.com/",
+        "https://bulenox.com/help/", "https://help.traderslaunch.com/"]
+
+
 def main() -> None:
+    import sys
     OUT.mkdir(parents=True, exist_ok=True)
-    rows = [r for r in csv.DictReader(open("docs/radar/watchlist.csv")) if r["kind"] == "firm"]
+    deep = len(sys.argv) > 1 and sys.argv[1] == "deep"
     starts: dict[str, list[str]] = {}
-    for r in rows:
-        starts.setdefault(urlparse(r["url"]).netloc.replace("www.", ""), []).append(r["url"])
-    for u in EXTRA:
-        starts.setdefault(urlparse(u).netloc.replace("www.", ""), []).append(u)
+    if deep:
+        for u in DEEP:
+            starts.setdefault(urlparse(u).netloc.replace("www.", ""), []).append(u)
+    else:
+        rows = [r for r in csv.DictReader(open("docs/radar/watchlist.csv")) if r["kind"] == "firm"]
+        for r in rows:
+            starts.setdefault(urlparse(r["url"]).netloc.replace("www.", ""), []).append(r["url"])
+        for u in EXTRA:
+            starts.setdefault(urlparse(u).netloc.replace("www.", ""), []).append(u)
+    limit = 160 if deep else 30
     with sync_playwright() as p:
         br = p.chromium.launch()
         ctx = br.new_context(user_agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36 (research)")
         for dom, urls in starts.items():
             pages, queue, seen = {}, list(dict.fromkeys(urls)), set()
-            while queue and len(pages) < 30:
+            while queue and len(pages) < limit:
                 u = queue.pop(0)
                 if u in seen:
                     continue
@@ -53,15 +67,17 @@ def main() -> None:
                     pages[u] = txt
                     for a in pg.eval_on_selector_all("a[href]", "els => els.map(e => e.href)"):
                         a = urljoin(u, a).split("#")[0]
-                        if urlparse(a).netloc.replace("www.", "").endswith(dom.split(".", 1)[-1] if dom.count(".") > 1 else dom) and KW.search(a) \
-                                and a not in seen and len(queue) < 300:
+                        same = urlparse(a).netloc.replace("www.", "") == dom if deep else \
+                            urlparse(a).netloc.replace("www.", "").endswith(dom.split(".", 1)[-1] if dom.count(".") > 1 else dom)
+                        ok_link = re.search(r"/articles?/|/collections?/|/faq|/help", a) if deep else KW.search(a)
+                        if same and ok_link and a not in seen and len(queue) < 600:
                             queue.append(a)
                 except Exception as e:  # noqa: BLE001
                     pages[u] = f"FETCH FAILED: {type(e).__name__}: {str(e)[:200]}"
                 finally:
                     pg.close()
                 time.sleep(0.5)
-            (OUT / f"{dom}.json").write_text(json.dumps(pages))
+            (OUT / f"{'deep_' if deep else ''}{dom}.json").write_text(json.dumps(pages))
             ok = sum(1 for v in pages.values() if not v.startswith("FETCH FAILED"))
             print(f"{dom}: {ok}/{len(pages)} pages", flush=True)
         br.close()

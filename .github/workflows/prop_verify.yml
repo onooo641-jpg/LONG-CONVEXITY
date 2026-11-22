@@ -13,7 +13,7 @@ concurrency:
 jobs:
   fetch:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 240
     steps:
       - uses: actions/checkout@v4
         with:
@@ -24,7 +24,7 @@ jobs:
       - run: uv run --with playwright playwright install --with-deps chromium
       - run: |
           mkdir -p docs/jx_runs
-          uv run --with playwright python scripts/$(grep -q click .github/prop_verify_request.txt && echo prop_verify_click.py || echo prop_verify_fetch.py) 2>&1 | tee docs/jx_runs/prop_verify_fetch_${{ github.run_id }}.txt
+          uv run --with playwright python scripts/$(grep -q click .github/prop_verify_request.txt && echo prop_verify_click.py || echo prop_verify_fetch.py) $(grep -q deep .github/prop_verify_request.txt && echo deep) 2>&1 | tee docs/jx_runs/prop_verify_fetch_${{ github.run_id }}.txt
       - name: Commit
         if: always()
         run: |
