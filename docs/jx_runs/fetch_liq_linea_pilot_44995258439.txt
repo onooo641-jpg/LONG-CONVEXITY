@@ -1,0 +1,13 @@
+=== liq_linea_pilot
+linea_pilot: month anchors 11476601..32486046, resume at block 31583630
+  rpc error eth_getLogs @ https://rpc.linea.build: {'code': -32602, 'message': 'range 19999 exceeds limit of 10000'}
+  linea_pilot: scanned to block 31903630/32486045 (138 events, 1 min)
+  linea_pilot: scanned to block 32203630/32486045 (140 events, 1 min)
+  linea_pilot: scanned to block 32486046/32486045 (197 events, 1 min)
+linea_pilot: log scan complete, 197 events
+linea_pilot: receipts: 0 cached, 41 to fetch (sampled=False)
+  linea_pilot: receipts 41/41 (1 min)
+linea_pilot: receipts missing after retries: 0/41 (<=1%, accepted; gas imputed, bot 'unknown')
+linea: prices 5837 points, 8/8 coins priced
+linea_pilot: COMPLETE 197 events, 1 min
+=== liq_linea_pilot done in 55s  ok 726 fail 0
