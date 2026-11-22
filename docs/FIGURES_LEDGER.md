@@ -404,3 +404,14 @@ Raw output for every command above is in `docs/jx_runs/`.
 | RP13 | TTP Futures Prime 150K ($289): real / coin flip / dip | $43,662 / −$6,562 (38%) / −$19,074 | `uv run python scripts/radar_price_one.py ttp_prime150` | 2016-01..2026-10 | 2026-11-22 | current, re-run identical |
 | RP14 | DayTraders EOD 50K at $99 / $199 (sensitivity; price unread): real, coin flip, dip | $48,602, $13,511 (89%), −$3,079 / $36,802, −$4,406 (29%), −$6,989 | `uv run python scripts/radar_price_one.py dt_eod50` | 2016-01..2026-10 | 2026-11-22 | sensitivity, re-run identical |
 | RP15 | FuturesElite Elite 50K, 3-min delay, reset $89 (own page): real / coin flip / dip | $33,645 / $9,121 (91%) / −$2,014 | `uv run python scripts/radar_price_one.py fe_elite50 --delay` | same | 2026-11-22 | current (supersedes RP5) |
+
+## Liquidation: Morpho Blue on Base (docs/PREREG_LIQ_MORPHO_20261121.md)
+
+| # | figure | value | command | window | computed | status |
+|---|---|---|---|---|---|---|
+| MO1 | Stage-1 pilot gross bonus / events / winners / top-3 share | $2.39M / 6,600 / 848 / 0.28 | `uv run python -I scripts/liq_morpho_20261121.py pilot` (`docs/jx_runs/liq_morpho_20261121_pilot.txt`) | 2026-08-01..10-31 | 2026-11-21 | measured; not killed (line $3,750) |
+| MO2 | Registered venue test (top-3 < 60%, events every month, outside-top-3 net >= $500/month), both halves | PASS: top-3 14.9% / 3.7%; 12/12 months both halves; outside-top-3 net $459K / $3.79M per month pooled | `uv run python -I scripts/liq_morpho_20261121.py full` (`docs/jx_runs/liq_morpho_20261121.txt`, re-run identical; data `data/public/liq_morphobase*`) | 2024-11..2026-10 | 2026-11-22 | measured, gas only, upper bound |
+| MO3 | 24-month gross bonus; share of top 5 months; months under $200K | $54.1M; 89.1%; 12 of 24 | same | same | 2026-11-22 | measured |
+| MO4 | Gross bonus since March 2026: Morpho Base vs five Aave pools | $12.1M vs $2.3M | same + `liq_monthly_20261121.txt` | 2026-03..2026-10 | 2026-11-22 | measured |
+| MO5 | Share of value won by addresses with >= 50 wins (liquidator field), by size bucket | 81–86%; top 10 hold 48–52% | same | last 12 months | 2026-11-22 | measured |
+| MO6 | Median active non-top-3 bot: months under $200 / over $1,000 (zeros included); winners only under 200 / 200–1,000 / over 1,000 | 23 / 1 of 24; 16 / 4 / 4 of 24 | same | same | 2026-11-22 | measured, gas only |
