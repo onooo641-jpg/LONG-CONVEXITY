@@ -29,3 +29,8 @@ The addendum-1 rule (every month ≥ 0%, ≥ 10 of 12 months ≥ 3.4%) would als
 20% of months, and whose worst 12 months were −$1,561 (`docs/jx_runs/radar_monthly_20261121.txt`). Jx asked whether to lower the bar. The 50%/yr level
 stays. **PASS consistency becomes: ≥ 8 of 12 months positive AND no month worse than −10%.** That is still far steadier than Topstep.
 The addendum-1 strict test is still reported (context).
+
+## Addendum 3 (2026-11-22, still before any #320/#321 data): no consistency rule stricter than Topstep's
+Jx: requiring more consistency than Topstep shows is too strict. Topstep is judged only on yearly net, a coin-flip check and its worst dip.
+**PASS = both halves ≥ 50%/yr AND costs ×2 ≥ 30%/yr AND worst peak-to-trough drawdown no worse than −30% of capital.** The monthly tiers
+(addendum 2: ≥ 8/12 months positive, no month < −10%; addendum 1: strict) are reported as context only.
