@@ -1,0 +1,6 @@
+=== liq_soneium_pilot
+soneium_pilot: month anchors 0..30178225, resume at block 26217325
+  rpc exception eth_getLogs @ https://rpc.soneium.org: HTTP 400
+  soneium_pilot: getLogs failed 26217325-26237324: https://rpc.soneium.org: HTTPError: HTTP 400
+soneium_pilot: ABORT: 12 getLogs failures and no events yet; no working endpoint. Stopped at block 26217325
+=== liq_soneium_pilot done in 13s  ok 0 fail 6
