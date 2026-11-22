@@ -1,0 +1,34 @@
+=== batch7
+gains prices: 615
+  FAIL https://backend-arbitrum.gains.trade/stats HTTP Error 404: Not Found
+PROBE gains_backend_arb: no answer
+  FAIL https://backend-global.gains.trade/api/vaults HTTP Error 404: Not Found
+PROBE gains_global: no answer
+pendle stable markets expiring >= 2024-11: 344
+  pendle history 0/344
+  pendle history 50/344
+  pendle history 100/344
+  pendle history 150/344
+  pendle history 200/344
+  pendle history 250/344
+  pendle history 300/344
+pendle history rows 40914, underlying prices 280/328
+  orderbook snapshot 1/18: 36 books
+  orderbook snapshot 2/18: 36 books
+  orderbook snapshot 3/18: 36 books
+  orderbook snapshot 4/18: 36 books
+  orderbook snapshot 5/18: 36 books
+  orderbook snapshot 6/18: 36 books
+  FAIL https://api.aevo.xyz/orderbook?instrument_name=BNB-PERP HTTP Error 503: Service Unavailable
+  orderbook snapshot 7/18: 35 books
+  orderbook snapshot 8/18: 36 books
+  orderbook snapshot 9/18: 36 books
+  orderbook snapshot 10/18: 36 books
+  orderbook snapshot 11/18: 36 books
+  orderbook snapshot 12/18: 36 books
+  orderbook snapshot 13/18: 36 books
+  orderbook snapshot 14/18: 36 books
+  orderbook snapshot 15/18: 36 books
+  orderbook snapshot 16/18: 36 books
+  orderbook snapshot 17/18: 36 books
+  orderbook snapshot 18/18: 36 books
