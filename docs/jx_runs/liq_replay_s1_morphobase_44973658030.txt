@@ -1,0 +1,9 @@
+=== liq_replay_morphobase
+  rpc exception eth_call @ https://base.gateway.tenderly.co: HTTP 429
+  rpc exception eth_getLogs @ https://base.gateway.tenderly.co: HTTP 429
+  morphobase: 25/100 (1.0 min)
+  morphobase: 50/100 (2.1 min)
+  morphobase: 75/100 (3.2 min)
+  morphobase: 100/100 (3.7 min)
+morphobase: replay stage 1 wrote 100 rows; 11 of 13 markets resolved
+=== liq_replay_morphobase done in 220s  ok 313 fail 10
