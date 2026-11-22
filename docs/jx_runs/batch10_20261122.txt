@@ -37,15 +37,11 @@ Stage 1 pilots, kill-only (docs/PREREG_BATCH10_20261122.md)
 #302 weekend gap (fade > 1% weekend moves, 09:00-10:00 ET Monday): 348 trades; mean -0.332% per trade, hit rate 41% -> KILL -> FAIL (Stage 1)
 
 #303 S&P 500 additions (Stage 2; t-5 -> effective close, vs SPY, 10 bps): 36 of 39 additions priced; mean excess 3.903% (median 3.550%)
-/home/user/LONG-CONVEXITY/scripts/batch10_20261122.py:204: Pandas4Warning: Sorting by default when concatenating all DatetimeIndex is deprecated.  In the future, pandas will respect the default of `sort=False`. Specify `sort=True` or `sort=False` to silence this message. If you see this warnings when not directly calling concat, report a bug to pandas.
-  D_ = pd.concat(daily, axis=1).mean(axis=1).groupby(level=0).mean()
   t-stat 2.97; halves (mean per event) 4.194% / 3.717%; one-position-at-a-time return 47.90%/yr; hit rate 64%
   VERDICT: PASS
 
 #304 token-unlock shorts: unlock calendar answered (parser to be registered by addendum) -> pending addendum
 
-/home/user/LONG-CONVEXITY/scripts/batch10_20261122.py:232: Pandas4Warning: Sorting by default when concatenating all DatetimeIndex is deprecated.  In the future, pandas will respect the default of `sort=False`. Specify `sort=True` or `sort=False` to silence this message. If you see this warnings when not directly calling concat, report a bug to pandas.
-  L = pd.concat(lows, axis=1).min(axis=1)
 #305 redemption-floor stables (LUSD, BOLD, feUSD): 92 days; days with low < $1 - 0.5%: 77; deepest low 0.8147; total 154.70%/yr (4% park + half-capture) -> continue to Stage 2
 
 #306 sUSDe cooldown discount: no reference value -> not testable (no data)
