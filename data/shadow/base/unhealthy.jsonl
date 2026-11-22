@@ -631,3 +631,4 @@
 {"block_seen": 60561859, "chain": "base", "healed": true, "user": "0x97abacf54bad03f0fdb5a9afc6bc48826d2807dd", "ver": 2, "wall": 1795302761.9384246}
 {"block_seen": 60561859, "chain": "base", "healed": true, "user": "0xab58368030b5ccdab8ee94d5f1e626e75f546a3f", "ver": 2, "wall": 1795302761.93847}
 {"block_seen": 60561859, "chain": "base", "healed": true, "user": "0xcf826b96c2fb888373a77c3d327b3f19aea01a21", "ver": 2, "wall": 1795302761.9385128}
+{"block_seen": 60573758, "chain": "base", "healed": true, "user": "0x7344ff300b5f53375ea3e2ab993aacf9b2e337ac", "ver": 2, "wall": 1795305133.773299}
