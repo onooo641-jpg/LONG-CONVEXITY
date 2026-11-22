@@ -1,0 +1,1 @@
+{"https://help.thefuturesdesk.com/": "FETCH FAILED: Error: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://help.thefuturesdesk.com/\nCall log:\n  - navigating to \"https://help.thefuturesdesk.com/\", waiting until \"domcontentloaded\"\n"}

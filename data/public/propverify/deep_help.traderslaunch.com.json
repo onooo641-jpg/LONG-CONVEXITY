@@ -1,0 +1,1 @@
+{"https://help.traderslaunch.com/": "FETCH FAILED: Error: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://help.traderslaunch.com/\nCall log:\n  - navigating to \"https://help.traderslaunch.com/\", waiting until \"domcontentloaded\"\n"}
