@@ -199,6 +199,11 @@ class XFARules:
     instant_funded: bool = False
     #: Payout needs this much fresh profit since the last payout: (first, later).
     payout_goal: tuple | None = None
+    #: Two-phase evaluation (e.g. FTMO Challenge + Verification): after the first target is met the account restarts at 0 and must
+    #: reach this second target before it is funded. None = one phase (default, unchanged behaviour).
+    phase2_target: float | None = None
+    #: The evaluation fee is paid back with the first payout of each funded account (e.g. FTMO). Default off.
+    refund_fee_on_first_payout: bool = False
     #: Static drawdown (The Futures Desk Static plans): the floor sits at
     #: -loss limit and never trails. In the evaluation it never moves; once
     #: funded it jumps to ``lock_level`` when the peak reaches
@@ -231,6 +236,8 @@ class _Account:
     best_day: float = 0.0
     #: Back2Funded reactivations already used on this XFA.
     reactivations: int = 0
+    #: Evaluation phase (2 = second phase of a two-phase evaluation).
+    phase: int = 1
     #: Payouts taken from this XFA.
     n_payouts: int = 0
     #: Time of the first trade on this account (for combine_max_days).
@@ -413,7 +420,12 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
             account.best_day = max(account.best_day, day)
             consistent = (rules.combine_consistency is None
                           or account.best_day <= rules.combine_consistency * account.balance)
-            if account.balance >= rules.profit_target and consistent and not hard_dll:
+            target = rules.phase2_target if account.phase == 2 else rules.profit_target
+            if account.balance >= target and consistent and not hard_dll:
+                if rules.phase2_target is not None and account.phase == 1:
+                    account = _Account(phase=2)
+                    mark(exit_ts, "phase1_passed", at)
+                    continue
                 activations += 1
                 funded, account, funded_since = True, _Account(), exit_ts
                 mark(exit_ts, "passed", at)
@@ -496,6 +508,8 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
                 account.paid_out = True
             gross += amount
             cash += amount * rules.profit_split
+            if rules.refund_fee_on_first_payout and account.n_payouts == 0:
+                cash += rules.one_time_price or 0.0
             payouts += 1
             bust_streak = 0
             worst_dry = max(worst_dry,

@@ -389,3 +389,20 @@ def test_static_drawdown_never_trails_and_locks_once_funded_buffer_is_built():
     assert recycle(seq([3000.0, 1500.0, -3000.0]), rules)["funded_busts"] == 0
     # funded after the buffer (+2,000): floor jumps to 0, so -2,100 busts
     assert recycle(seq([3000.0, 2000.0, -2100.0]), rules)["funded_busts"] == 1
+
+
+def test_two_phase_evaluation_needs_both_targets():
+    r = dataclasses.replace(RULES, phase2_target=1500.0, combine_consistency=None)
+    one = recycle(seq([1000.0] * 3), r)  # 3,000 passes phase 1, then 0 left over: phase 2 not reached
+    assert one["funded_earned"] == 0
+    two = recycle(seq([1000.0] * 5), r)  # 3,000 then 2,000 >= 1,500
+    assert two["funded_earned"] == 1
+
+
+def test_fee_refund_paid_once_with_first_payout():
+    base = dataclasses.replace(RULES, one_time_price=300.0, reset=300.0, monthly=0.0)
+    trades = seq([1000.0] * 30)
+    a = recycle(trades, base, policy=Policy.IMMEDIATE)
+    b = recycle(trades, dataclasses.replace(base, refund_fee_on_first_payout=True), policy=Policy.IMMEDIATE)
+    assert a["payouts"] >= 1
+    assert b["net"] == pytest.approx(a["net"] + 300.0)
