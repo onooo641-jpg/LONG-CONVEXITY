@@ -1,0 +1,56 @@
+== stage 2: registered venue test with launch-adjusted (b) (months from the venue's first event; >= 6 months)
+
+mantle venue 0x42c5ebfd93 first event month index 17, months available 7
+  H2: events 1 months present 7 top3 1.00 (a)False every-month (b)False outside-top3 net/month 0 (c)False
+  VENUE PASS = False
+
+mantle venue 0x458f293454 first event month index 17, months available 7
+  H2: events 26 months present 7 top3 1.00 (a)False every-month (b)False outside-top3 net/month 1 (c)False
+  VENUE PASS = False
+
+mantle venue 0x5757b15f60 first event month index 0, months available 24
+  H1: events 7 months present 12 top3 1.00 (a)False every-month (b)False outside-top3 net/month 0 (c)False
+  H2: events 6 months present 12 top3 0.99 (a)False every-month (b)False outside-top3 net/month 0 (c)False
+  VENUE PASS = False
+
+mantle venue 0x5d7b73f927 first event month index 17, months available 7
+  H2: events 1 months present 7 top3 1.00 (a)False every-month (b)False outside-top3 net/month 0 (c)False
+  VENUE PASS = False
+
+mantle venue 0x6815b0570e first event month index 15, months available 9
+  H2: events 6 months present 9 top3 1.00 (a)False every-month (b)False outside-top3 net/month 0 (c)False
+  VENUE PASS = False
+
+mantle venue 0x7c9c6f5bed first event month index 0, months available 24
+  H1: events 90 months present 12 top3 0.61 (a)False every-month (b)False outside-top3 net/month 222 (c)False
+  H2: events 33 months present 12 top3 0.96 (a)False every-month (b)False outside-top3 net/month 2 (c)False
+  VENUE PASS = False
+
+mantle venue 0x82ca5d1117 first event month index 18, months available 6
+  H2: events 1 months present 6 top3 1.00 (a)False every-month (b)False outside-top3 net/month 0 (c)False
+  VENUE PASS = False
+
+mantle venue 0x88568cfa95 first event month index 23, months available 1
+  H2: events 1 months present 1 top3 1.00 (a)False every-month (b)True outside-top3 net/month 0 (c)False
+  VENUE PASS = False
+
+mantle venue 0xa9c90b947a first event month index 17, months available 7
+  H2: events 1 months present 7 top3 1.00 (a)False every-month (b)False outside-top3 net/month 0 (c)False
+  VENUE PASS = False
+
+mantle venue 0xcfa5ae7c2c first event month index 0, months available 24
+  H1: events 2164 months present 12 top3 0.51 (a)True every-month (b)True outside-top3 net/month 4,586 (c)True
+  H2: events 9573 months present 12 top3 0.45 (a)True every-month (b)True outside-top3 net/month 2,079 (c)True
+  VENUE PASS = True
+
+mantle venue 0xeaff9a5f86 first event month index 14, months available 10
+  H2: events 1 months present 10 top3 1.00 (a)False every-month (b)False outside-top3 net/month 0 (c)False
+  VENUE PASS = False
+
+mantle venue 0xecce86d3d3 first event month index 12, months available 12
+  H2: events 3 months present 12 top3 1.00 (a)False every-month (b)False outside-top3 net/month 0 (c)False
+  VENUE PASS = False
+
+mantle venue 0xee50fb458a first event month index 15, months available 9
+  H2: events 2 months present 9 top3 1.00 (a)False every-month (b)False outside-top3 net/month 0 (c)False
+  VENUE PASS = False

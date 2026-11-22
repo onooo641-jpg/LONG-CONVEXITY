@@ -1,0 +1,63 @@
+== stage 2: registered venue test (both halves; every month; outside-top-3 net >= $500/month)
+
+base venue 0x07bd845d34: events 12
+  H1 {'events': 12, 'valid': 6, 'months_with_liq': 3, 'scale': 1.0, 'gross': np.float64(0.08), 'gas': np.float64(1.396), 'bots': 3, 'top3': np.float64(1.0), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.0), 'out_net_flash_pm': np.float64(0.0), 'out_bots': 0, 'median_net': np.float64(-0.162), 'pass': False}
+  H2 {'events': 0, 'valid': 0, 'months_with_liq': 0, 'scale': 0.0, 'gross': np.float64(0.0), 'gas': np.float64(0.0), 'bots': 0, 'top3': nan, 'top10': nan, 'out_net_pm': 0.0, 'out_net_flash_pm': 0.0, 'out_bots': 0, 'median_net': nan, 'pass': False}
+  VENUE PASS = False
+
+base venue 0x15729c9424: events 4
+  H1 {'events': 4, 'valid': 4, 'months_with_liq': 1, 'scale': 1.0, 'gross': np.float64(0.041), 'gas': np.float64(0.272), 'bots': 2, 'top3': np.float64(1.0), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.0), 'out_net_flash_pm': np.float64(0.0), 'out_bots': 0, 'median_net': np.float64(-0.051), 'pass': False}
+  H2 {'events': 0, 'valid': 0, 'months_with_liq': 0, 'scale': 0.0, 'gross': np.float64(0.0), 'gas': np.float64(0.0), 'bots': 0, 'top3': nan, 'top10': nan, 'out_net_pm': 0.0, 'out_net_flash_pm': 0.0, 'out_bots': 0, 'median_net': nan, 'pass': False}
+  VENUE PASS = False
+
+base venue 0x46e6b214b5: events 90
+  H1 {'events': 40, 'valid': 39, 'months_with_liq': 8, 'scale': 1.0, 'gross': np.float64(2606.073), 'gas': np.float64(47.173), 'bots': 10, 'top3': np.float64(0.926), 'top10': np.float64(1.0), 'out_net_pm': np.float64(14.789), 'out_net_flash_pm': np.float64(14.629), 'out_bots': 7, 'median_net': np.float64(0.033), 'pass': False}
+  H2 {'events': 50, 'valid': 32, 'months_with_liq': 6, 'scale': 1.0, 'gross': np.float64(3.475), 'gas': np.float64(2.473), 'bots': 7, 'top3': np.float64(1.0), 'top10': np.float64(1.0), 'out_net_pm': np.float64(-0.195), 'out_net_flash_pm': np.float64(-0.195), 'out_bots': 4, 'median_net': np.float64(-0.007), 'pass': False}
+  VENUE PASS = False
+
+base venue 0x784efeb622: events 161
+  H1 {'events': 89, 'valid': 88, 'months_with_liq': 9, 'scale': 1.0, 'gross': np.float64(1042449.03), 'gas': np.float64(35398.044), 'bots': 34, 'top3': np.float64(0.563), 'top10': np.float64(0.998), 'out_net_pm': np.float64(36401.564), 'out_net_flash_pm': np.float64(36256.725), 'out_bots': 31, 'median_net': np.float64(2.338), 'pass': False}
+  H2 {'events': 72, 'valid': 72, 'months_with_liq': 7, 'scale': 1.0, 'gross': np.float64(11069.765), 'gas': np.float64(50.252), 'bots': 26, 'top3': np.float64(0.619), 'top10': np.float64(0.963), 'out_net_pm': np.float64(347.541), 'out_net_flash_pm': np.float64(346.193), 'out_bots': 23, 'median_net': np.float64(2.621), 'pass': False}
+  VENUE PASS = False
+
+base venue 0x89b7336f64: events 27
+  H1 {'events': 0, 'valid': 0, 'months_with_liq': 0, 'scale': 0.0, 'gross': np.float64(0.0), 'gas': np.float64(0.0), 'bots': 0, 'top3': nan, 'top10': nan, 'out_net_pm': 0.0, 'out_net_flash_pm': 0.0, 'out_bots': 0, 'median_net': nan, 'pass': False}
+  H2 {'events': 27, 'valid': 0, 'months_with_liq': 1, 'scale': 0.0, 'gross': np.float64(0.0), 'gas': np.float64(0.0), 'bots': 0, 'top3': nan, 'top10': nan, 'out_net_pm': 0.0, 'out_net_flash_pm': 0.0, 'out_bots': 0, 'median_net': nan, 'pass': False}
+  VENUE PASS = False
+
+base venue 0x9c4ec768c2: events 275
+  H1 {'events': 147, 'valid': 147, 'months_with_liq': 10, 'scale': 1.0, 'gross': np.float64(13661.636), 'gas': np.float64(1119.936), 'bots': 23, 'top3': np.float64(0.542), 'top10': np.float64(0.946), 'out_net_pm': np.float64(491.314), 'out_net_flash_pm': np.float64(486.583), 'out_bots': 20, 'median_net': np.float64(0.331), 'pass': False}
+  H2 {'events': 128, 'valid': 128, 'months_with_liq': 7, 'scale': 1.0, 'gross': np.float64(1676.288), 'gas': np.float64(17.583), 'bots': 20, 'top3': np.float64(0.971), 'top10': np.float64(0.998), 'out_net_pm': np.float64(3.04), 'out_net_flash_pm': np.float64(3.019), 'out_bots': 17, 'median_net': np.float64(0.085), 'pass': False}
+  VENUE PASS = False
+
+base venue 0xa193bce455: events 2
+  H1 {'events': 2, 'valid': 2, 'months_with_liq': 2, 'scale': 1.0, 'gross': np.float64(0.009), 'gas': np.float64(0.007), 'bots': 1, 'top3': np.float64(1.0), 'top10': np.float64(1.0), 'out_net_pm': np.float64(0.0), 'out_net_flash_pm': np.float64(0.0), 'out_bots': 0, 'median_net': np.float64(0.001), 'pass': False}
+  H2 {'events': 0, 'valid': 0, 'months_with_liq': 0, 'scale': 0.0, 'gross': np.float64(0.0), 'gas': np.float64(0.0), 'bots': 0, 'top3': nan, 'top10': nan, 'out_net_pm': 0.0, 'out_net_flash_pm': 0.0, 'out_bots': 0, 'median_net': nan, 'pass': False}
+  VENUE PASS = False
+
+base venue 0xb125e6687d: events 1204
+  H1 {'events': 719, 'valid': 719, 'months_with_liq': 12, 'scale': 1.0, 'gross': np.float64(1871497.57), 'gas': np.float64(56278.145), 'bots': 96, 'top3': np.float64(0.406), 'top10': np.float64(0.697), 'out_net_pm': np.float64(88550.477), 'out_net_flash_pm': np.float64(87961.939), 'out_bots': 93, 'median_net': np.float64(0.972), 'pass': True}
+  H2 {'events': 485, 'valid': 480, 'months_with_liq': 11, 'scale': 1.0, 'gross': np.float64(578095.503), 'gas': np.float64(24218.73), 'bots': 103, 'top3': np.float64(0.401), 'top10': np.float64(0.7), 'out_net_pm': np.float64(27170.925), 'out_net_flash_pm': np.float64(26917.548), 'out_bots': 100, 'median_net': np.float64(0.064), 'pass': False}
+  VENUE PASS = False
+  monthly gross: {0: 971, 1: 337843, 2: 584460, 3: 467034, 4: 140567, 5: 137921, 6: 1652, 7: 242025, 8: 0, 9: 256225, 10: 3672, 11: 757843, 12: 63003, 13: 3, 14: 204072, 15: 272394, 16: 149, 17: 0, 18: 1, 19: 42140, 20: 0, 22: 20, 23: 9063}
+
+arbitrum venue 0x6f7d514bbd: events 198
+  H1 {'events': 50, 'valid': 46, 'months_with_liq': 6, 'scale': 1.0, 'gross': np.float64(3224.445), 'gas': np.float64(4.949), 'bots': 4, 'top3': np.float64(0.981), 'top10': np.float64(1.0), 'out_net_pm': np.float64(5.217), 'out_net_flash_pm': np.float64(5.136), 'out_bots': 1, 'median_net': np.float64(0.278), 'pass': False}
+  H2 {'events': 148, 'valid': 148, 'months_with_liq': 5, 'scale': 1.0, 'gross': np.float64(101416.971), 'gas': np.float64(2.666), 'bots': 9, 'top3': np.float64(0.925), 'top10': np.float64(1.0), 'out_net_pm': np.float64(631.319), 'out_net_flash_pm': np.float64(628.142), 'out_bots': 6, 'median_net': np.float64(0.671), 'pass': False}
+  VENUE PASS = False
+
+arbitrum venue 0x9c4ec768c2: events 1411
+  H1 {'events': 908, 'valid': 778, 'months_with_liq': 11, 'scale': 1.0, 'gross': np.float64(1306349.545), 'gas': np.float64(5375.228), 'bots': 93, 'top3': np.float64(0.602), 'top10': np.float64(0.807), 'out_net_pm': np.float64(43116.662), 'out_net_flash_pm': np.float64(42824.348), 'out_bots': 90, 'median_net': np.float64(12.19), 'pass': False}
+  H2 {'events': 503, 'valid': 503, 'months_with_liq': 12, 'scale': 1.0, 'gross': np.float64(520638.59), 'gas': np.float64(316.699), 'bots': 107, 'top3': np.float64(0.357), 'top10': np.float64(0.758), 'out_net_pm': np.float64(27872.309), 'out_net_flash_pm': np.float64(27692.165), 'out_bots': 104, 'median_net': np.float64(6.179), 'pass': True}
+  VENUE PASS = False
+
+arbitrum venue 0xa5edbdd964: events 136
+  H1 {'events': 102, 'valid': 101, 'months_with_liq': 8, 'scale': 1.0, 'gross': np.float64(24734.46), 'gas': np.float64(270.219), 'bots': 21, 'top3': np.float64(0.684), 'top10': np.float64(0.941), 'out_net_pm': np.float64(646.192), 'out_net_flash_pm': np.float64(641.228), 'out_bots': 18, 'median_net': np.float64(2.873), 'pass': False}
+  H2 {'events': 34, 'valid': 33, 'months_with_liq': 5, 'scale': 1.0, 'gross': np.float64(3309.814), 'gas': np.float64(8.823), 'bots': 15, 'top3': np.float64(0.796), 'top10': np.float64(0.992), 'out_net_pm': np.float64(55.79), 'out_net_flash_pm': np.float64(55.335), 'out_bots': 12, 'median_net': np.float64(7.737), 'pass': False}
+  VENUE PASS = False
+
+arbitrum venue 0xd98be00b5d: events 700
+  H1 {'events': 459, 'valid': 401, 'months_with_liq': 10, 'scale': 1.0, 'gross': np.float64(847331.783), 'gas': np.float64(4178.242), 'bots': 83, 'top3': np.float64(0.64), 'top10': np.float64(0.813), 'out_net_pm': np.float64(25330.115), 'out_net_flash_pm': np.float64(25173.467), 'out_bots': 80, 'median_net': np.float64(63.201), 'pass': False}
+  H2 {'events': 241, 'valid': 241, 'months_with_liq': 6, 'scale': 1.0, 'gross': np.float64(487834.294), 'gas': np.float64(153.261), 'bots': 65, 'top3': np.float64(0.475), 'top10': np.float64(0.776), 'out_net_pm': np.float64(21348.91), 'out_net_flash_pm': np.float64(21222.773), 'out_bots': 62, 'median_net': np.float64(15.111), 'pass': False}
+  VENUE PASS = False
+  monthly gross: {0: 286, 1: 142612, 2: 53618, 3: 994541, 4: 57971, 5: 162430, 6: 13, 7: 5858, 8: 6, 9: 3514, 10: 13970, 11: 746822, 12: 183831, 13: 172, 14: 138548, 15: 625771, 16: 0, 17: 0, 18: 0, 19: 62322, 20: 0, 21: 101244, 22: 630, 23: 681}

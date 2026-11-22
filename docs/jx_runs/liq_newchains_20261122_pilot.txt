@@ -1,0 +1,24 @@
+== stage 1 pilot (2026-08-01..2026-10-31), KILL-ONLY: venue dropped if gross < USD 3,750
+sonic    0x5362dbb1e6 events     17 valid     17 gross $       1,874 winners   17 top3 0.79 -> KILL
+sonic    0x553434896d events     45 valid      0 gross $           0 winners    0 top3 0.00 -> KILL
+sonic    0x680f8a574b events      1 valid      1 gross $           0 winners    1 top3 0.27 -> KILL
+sonic    0xaa1c02a833 events     27 valid     27 gross $         287 winners   24 top3 0.99 -> KILL
+sonic    0xedc3cfb1aa events      1 valid      1 gross $          -0 winners    1 top3 -0.01 -> KILL
+mantle   0x458f293454 events      7 valid      7 gross $           0 winners    2 top3 0.36 -> KILL
+mantle   0x5757b15f60 events      1 valid      1 gross $           1 winners    1 top3 0.60 -> KILL
+mantle   0x7c9c6f5bed events      1 valid      1 gross $           0 winners    1 top3 0.05 -> KILL
+mantle   0x88568cfa95 events      1 valid      1 gross $           4 winners    1 top3 1.00 -> KILL
+mantle   0xcfa5ae7c2c events   6577 valid   6576 gross $      15,665 winners   34 top3 0.52 -> proceed
+linea    0x2f9bb73a8e events     15 valid     14 gross $           7 winners    3 top3 1.00 -> KILL
+linea    0x5db340cefe events      4 valid      4 gross $           1 winners    2 top3 0.69 -> KILL
+linea    0x871aff0013 events    152 valid    152 gross $         132 winners    3 top3 1.00 -> KILL
+linea    0xbdaa004a45 events      2 valid      2 gross $          90 winners    2 top3 1.00 -> KILL
+linea    0xc47b8c00b0 events     11 valid     11 gross $         755 winners    6 top3 1.00 -> KILL
+linea    0xc6ff96aefd events     13 valid     13 gross $         239 winners    4 top3 1.00 -> KILL
+celo     PARTIAL (logs 100.0%, receipts_done=False); events scanned 34
+ink      0x2816cf15f6 events     78 valid     77 gross $         257 winners   20 top3 0.75 -> KILL
+soneium  0x0bd12d3c4e events      6 valid      6 gross $           0 winners    2 top3 0.17 -> KILL
+soneium  0x3c3987a310 events    279 valid    279 gross $         482 winners    9 top3 0.99 -> KILL
+soneium  0xdd3d7a7d03 events     91 valid     91 gross $           7 winners    5 top3 0.90 -> KILL
+zksync   0x4d9429246e events     36 valid     36 gross $          38 winners    3 top3 1.00 -> KILL
+zksync   0x78e30497a3 events      4 valid      4 gross $          84 winners    3 top3 1.00 -> KILL
