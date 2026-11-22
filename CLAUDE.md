@@ -28,6 +28,9 @@ strategy, plus a search for other structural edges. README.md explains the busin
   homestay or other creativity-dependent ventures. Prefer non-Malaysia-focused ideas with
   ROI comparable to Topstep recycling.
 - Jx wants work carried through to a conclusive answer without asking permission at each step.
+- **Never ask Jx for permission for the next step (rule set by Jx, 2026-11-22).** Decide and do everything that can be done without him:
+  pre-register, fetch, test, fix, re-run, record, push. Only stop for things only Jx can do or decide: spending money, accounts/KYC,
+  placing live trades, or facts only he can obtain (e.g. a checkout price behind a login). Report what was done, not what could be done.
 
 ## Benchmark every idea against
 Topstep 50K recycling, 2016–26: **$44,359 real net ($4,097/yr)**, coin-flip median $18,046
