@@ -139,6 +139,7 @@ risk, 5m signals and 1m fills.
 | 233 | The Trading Pit Futures Prime 50K (bots allowed, Malaysia OK) | PREREG_RADAR addendum 10 | **EXTRA SLOT CANDIDATE: $46,597 real (> Topstep $44,359) / $14,016 coin flip (95%) / dip −$4,884** at the $99 directory price; holds at ≤ ~$120, fails at $149. Needs the real price confirmed | radar_price_ttp_prime50.txt; ttp_sens_20261122.txt |
 | 234 | Traders Launch 100K / 200K | same | not flagged ($722 / $4,371 real; coin flip deeply negative) | radar_price_traders_launch.txt |
 
+| 235 | TTP Futures Prime 150K ($289) | PREREG_RADAR addendum 11 | not flagged: $43,662 real / −$6,562 coin flip (38%) / dip −$19,074; the 50K is the size that works | radar_price_ttp_prime150.txt |
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.

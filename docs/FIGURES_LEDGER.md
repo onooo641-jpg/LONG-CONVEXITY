@@ -401,3 +401,4 @@ Raw output for every command above is in `docs/jx_runs/`.
 | RP10 | TTP Futures Prime 50K ($99, third-party price): real / coin flip (profitable) / dip | $46,597 / $14,016 (95%) / −$4,884 | `uv run python scripts/radar_price_one.py ttp_prime50` | 2016-01..2026-10 | 2026-11-22 | current, re-run identical |
 | RP11 | TTP sensitivity: $59.40 / $149 / $199 / 3-min delay — real, coin flip | $53,527, $21,704 / $37,847, $4,249 / $29,097, −$5,709 / $33,434, $10,732 | `uv run python scripts/ttp_sens_20261122.py` | same | 2026-11-22 | sensitivity |
 | RP12 | Traders Launch 100K / 200K: real, coin flip | $722, −$13,645 / $4,371, −$24,351 | `uv run python scripts/radar_price_one.py traders_launch` | same | 2026-11-22 | current |
+| RP13 | TTP Futures Prime 150K ($289): real / coin flip / dip | $43,662 / −$6,562 (38%) / −$19,074 | `uv run python scripts/radar_price_one.py ttp_prime150` | 2016-01..2026-10 | 2026-11-22 | current, re-run identical |
