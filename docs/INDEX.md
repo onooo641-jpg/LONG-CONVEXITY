@@ -41,6 +41,7 @@ Everything else tried outside prop firms, and the plan for finding new opportuni
 | What was tried, why it failed, rules for new ideas (five-part filter, staged tests, radar design) | `docs/HANDOFF_NONPROP.md` |
 | Earlier non-prop tests | `PREREG_LOOPHOLES_*`, `PREREG_TOP10_*`, `PREREG_BATCH2_*`, `PREREG_POSTLISTING_*`, `PREREG_NONPROP2_*` |
 | **Radar results summary (every idea tested, every firm priced)** | `docs/RADAR_RESULTS_SUMMARY.md` |
+| Which non-prop kills were base-level only; refinement protocol | `docs/REFINEMENT_TRIAGE_20261122.md` |
 | **Radar** (daily Actions job): design, thresholds, test queue | `docs/PREREG_RADAR_20261121.md`; code `scripts/radar.py`, `.github/workflows/radar.yml`; watch lists `docs/radar/` |
 | Radar outputs: candidate table, near-miss table, page diffs, latest summary | `data/radar/candidates.parquet`, `nearmiss.parquet`, `changes.parquet`, `latest_summary.md`, `propfirm_snippets.md` |
 | Prop-firm sweep (bot / alert-assisted policy per firm, pricing) | `docs/radar/prop_firms.csv`; `scripts/radar_price.py`, `scripts/radar_models.py` |
