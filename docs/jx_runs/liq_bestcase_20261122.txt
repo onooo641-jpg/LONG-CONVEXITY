@@ -1,0 +1,28 @@
+== 1. mean vs median income per active non-top-3 bot-month (zeros included; gas only), USD
+aave5   active bots H1/H2 476/340
+   24 months                      bot-months   9792  mean    1022.1  median      0.0  p75      6.0  p90     852.9
+   last 8 months (Mar-Oct 2026)   bot-months   2720  mean     586.8  median      0.0  p75      0.0  p90      77.5
+   quiet months (gross < $200K)   bot-months   3672  mean      98.0  median      0.0  p75      0.0  p90       7.8
+   5 biggest months               bot-months   2108  mean    3127.0  median      0.5  p75    960.1  p90    5705.7
+morpho  active bots H1/H2 52/348
+   24 months                      bot-months   4800  mean    2143.3  median      0.0  p75      5.2  p90     993.5
+   last 8 months (Mar-Oct 2026)   bot-months   2784  mean     881.1  median      0.0  p75      0.0  p90     130.4
+   quiet months (gross < $200K)   bot-months   2104  mean      83.5  median      0.0  p75      0.0  p90       0.7
+   5 biggest months               bot-months   1444  mean    5350.9  median      2.6  p75   1388.1  p90   11715.6
+parity case: a bot with one Aave-pool-sized entry plus one Morpho-sized entry: mean 3165 a month over 24 months, 1468 over the last 8 months
+
+== 2. who wins same-block (gap <= 1) vs later (gap > 2 or no update) events: replay samples joined to event files
+group                 events  distinct_winners  top3   top10  repeat(>=50 wins)  median_bonus
+aave    same-block (gap<=1)     980               109  0.38   0.71   0.77                  215
+aave    later (gap>2/none)      163                48  0.46   0.81   0.81                  193
+morpho  same-block (gap<=1)     378               114  0.26   0.59   0.75                  276
+morpho  later (gap>2/none)        8                 7  0.85   1.00   0.99                  236
+
+== 3. fair share of the same-block pool (pool = (1 - R_value) x gross; divided by active non-top-3 bots), USD per bot-month
+aave5   24 months      same-block pool    1,683,722 a month; active bots     408; fair share     4,127 a month per active bot (before costs)
+aave5   last 8 months  same-block pool      277,096 a month; active bots     340; fair share       815 a month per active bot (before costs)
+morpho  24 months      same-block pool    2,235,316 a month; active bots     200; fair share    11,177 a month per active bot (before costs)
+morpho  last 8 months  same-block pool    1,503,930 a month; active bots     348; fair share     4,322 a month per active bot (before costs)
+
+== reading rule (PREREG): claim 'USD 500-1,500 a month best case' is
+SUPPORTED as a parity case (24-month mean 3165, last-8-month mean 1468); a new bot reaching parity remains unproven

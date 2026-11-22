@@ -433,3 +433,14 @@ Raw output for every command above is in `docs/jx_runs/`.
 | B8a | Batch 8 Stage 1 (2026-08..10): #280 / #288 / #284 / #281 / #282 / #285 | 12.72 / 27.30 / −2.08 / 2.62 / −30.81 / −4.13 %/yr | same | `data/public/batch8_raw.json` (Deribit, HL, Kamino, DefiLlama coins) | 2026-11-22 | measured; kill-only stage |
 | B10a | #298 rows meeting the flag rule at 0 / 40 / 60 / 80% off (all 62; verified-price 35) | 18 / 39 / 52 / 55; 7 / 16 / 25 / 28 | `uv run python -m scripts.salewindow_20261122` (`docs/jx_runs/salewindow_20261122.txt`, identical on re-run) | friend's NQ trades 2016-01..2026-10 | 2026-11-22 | measured; resets discounted (optimistic) |
 | B10b | #300 share-hedged stock-perp carry, Stage 1; #314 index perps | −13.28% / −2.21%/yr | `uv run python -m scripts.batch10_20261122` | `data/public/batch8_raw.json` HIP-3 funding 2026-08..10 | 2026-11-22 | measured |
+
+## Liquidation best-case check (docs/PREREG_LIQ_BESTCASE_20261122.md)
+
+| # | figure | value | command | window | computed | status |
+|---|---|---|---|---|---|---|
+| BC1 | Mean income per active non-top-3 bot-month, Aave five pools / Morpho Base: 24 months | $1,022 / $2,143 (median $0 for both) | `uv run python -I scripts/liq_bestcase_20261122.py` (`docs/jx_runs/liq_bestcase_20261122.txt`, re-run identical) | 2024-11..2026-10 | 2026-11-22 | measured, gas only |
+| BC2 | Same, last 8 months (Mar–Oct 2026) | $587 / $881 (median $0) | same | 2026-03..10 | 2026-11-22 | measured, gas only |
+| BC3 | Same, quiet months (venue gross < $200K) vs the 5 biggest months | $98 / $84 vs $3,127 / $5,351 | same | 24 months | 2026-11-22 | measured, gas only |
+| BC4 | Parity case (one Aave-pool-sized plus one Morpho-sized entry): mean per month, 24 months / last 8 months | $3,165 / $1,468; "USD 500–1,500 best case" SUPPORTED as a parity case; new-bot parity unproven | same | same | 2026-11-22 | measured, gas only, upper bound |
+| BC5 | Who wins same-block events (gap <= 1): distinct winners, top-3 / top-10 share, repeat-winner (>= 50 wins) share: Aave sample / Morpho sample | 109 winners, 0.38 / 0.71, 77% / 114 winners, 0.26 / 0.59, 75% | same | replay samples | 2026-11-22 | measured |
+| BC6 | Fair share of the same-block pool per active bot, last 8 months: Aave five pools / Morpho Base | $815 / $4,322 a month, before costs (24-month figures $4,127 / $11,177) | same | same | 2026-11-22 | measured model, upper bound |
