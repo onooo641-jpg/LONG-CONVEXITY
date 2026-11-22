@@ -1,0 +1,9 @@
+# Running the liquidation watcher on a VPS (log-only, no keys, no funds)
+
+Purpose: measure what a lower-latency setup changes. The watcher only READS chains and writes logs; it never sends a transaction and holds no private key. Cost: the VPS (about USD 5–10 a month, third-party estimate) and optionally a provider RPC (free tier first). Nothing here is done for you: only you can rent the machine.
+1. Rent a small Linux VPS in a US-East region (the Base/Arbitrum sequencers are reportedly hosted in the US East; unverified, so also measure: `curl -w '%{time_total}\n' -s -o /dev/null -X POST -H 'content-type: application/json' --data '{"jsonrpc":"2.0","id":1,"method":"eth_blockNumber","params":[]}' <your RPC URL>`).
+2. `git clone` this repo (branch `claude/ict-trading-resources-ugh07b`), install `uv`, run `uv sync`.
+3. Put your provider URLs in environment variables (never in git): `export LIQ_RPC_BASE='https://…'` (same pattern `LIQ_RPC_ARBITRUM`, `_OPTIMISM`, `_POLYGON`, `_AVALANCHE`). The watcher tries that URL first.
+4. Run one chain in a separate data directory so it does not collide with the Actions logs: copy `data/shadow/<chain>` to a scratch folder, or just read the printed `last_cycle` and `rpc ok/err` lines: `LIQ_BUDGET_MIN=60 uv run python -u scripts/liq_shadow.py base`.
+5. What to compare against the Actions run: `last_cycle` milliseconds in the log (Actions: about 600–2,300 ms), `detect_ms` in `unhealthy.jsonl`, and the rpc error rate. A cycle under about 300 ms and detection within one 200 ms flashblock is what a same-block race needs; a VPS with a public RPC will not reach it, a flashblocks-enabled provider endpoint on a nearby VPS might (unverified).
+The registered shadow test keeps running on GitHub Actions regardless. A VPS arm would be a separate, pre-registered test.

@@ -190,7 +190,10 @@ class Rpc:
 # ------------------------------------------------------------------ chain context
 class Chain:
     def __init__(self, name):
-        self.name, self.c = name, CFG[name]
+        self.name, self.c = name, dict(CFG[name])
+        extra = os.environ.get(f"LIQ_RPC_{name.upper()}")      # private/provider RPC (e.g. on a VPS); tried before the public endpoints, never printed
+        if extra:
+            self.c["rpcs"] = [extra] + list(self.c["rpcs"])
         self.dir = DATA / name
         self.dir.mkdir(parents=True, exist_ok=True)
         self.stats = {}

@@ -756,3 +756,5 @@ Only you can do this because it needs an account. Why: the one remaining speed q
 2. Create a Base mainnet WebSocket/HTTPS endpoint URL that includes the API key.
 3. GitHub: repo Settings → Secrets and variables → Actions → New repository secret named `BASE_FLASHBLOCKS_URL`, paste the URL, save. Never paste it in chat or commit it.
 4. Tell the next session; it will pre-register and run a short-window flashblocks measurement on the free tier (the code path will be written then). Spending beyond the free tier needs your explicit approval.
+
+Update 2026-11-22: the watcher now accepts a private RPC URL per chain through the environment variable `LIQ_RPC_<CHAIN>` (tried first, never printed), and `docs/LIQ_VPS_SETUP.md` explains how to run it log-only on a VPS. Renting the VPS is for Jx; nothing is rented.
