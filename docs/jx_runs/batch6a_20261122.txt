@@ -1,0 +1,22 @@
+#269 RWA / tokenised T-bills: 30 pools; best yield 3.89% -> KILL
+#270 fixed-rate auctions (TermMax etc., TVL >= $1M): 1 pools; best 0.00% -> KILL
+#276 native HYPE staking hedged: 2.5% (assumed) + HYPE 90-d short funding 10.77% -> ceiling 9.95% -> survives Stage 0.5
+#277 reverse carry (long perp receives |negative funding|, short spot via borrowing):
+   TRX: 90-d funding -13.21% (long receives 13.21%), cheapest borrow 4.78% (justlend-v1/Tron) -> ceiling 6.32%
+   ATOM: 90-d funding -8.04% (long receives 8.04%), cheapest borrow nan% (no borrow market) -> ceiling nan%
+   STX: 90-d funding -0.83% (long receives 0.83%), cheapest borrow 3.29% (zest-v2/Stacks) -> ceiling -1.84%
+   XTEN: 90-d funding 1.64% (long receives -1.64%), cheapest borrow nan% (no borrow market) -> ceiling nan%
+   OP: 90-d funding 2.73% (long receives -2.73%), cheapest borrow nan% (no borrow market) -> ceiling nan%
+   DOT: 90-d funding 3.56% (long receives -3.56%), cheapest borrow nan% (no borrow market) -> ceiling nan%
+   APT: 90-d funding 4.16% (long receives -4.16%), cheapest borrow 1.68% (echelon-market/Aptos) -> ceiling nan%
+   TIA: 90-d funding 4.77% (long receives -4.77%), cheapest borrow nan% (no borrow market) -> ceiling nan%
+   #277 best ceiling 6.32% -> KILL
+#278 new-chain stable incentives (Berachain, Hyperliquid L1, Ink, Katana, Monad, Plasma, Plume Mainnet, Stable): 52 pools; top-5 mean 12.60% -> survives Stage 0.5
+   top: hyperliquid-hlp/USDC/Hyperliquid L1 17.7%; morpho-blue/HYPERUSDCA/Monad 11.9%; accountable/USDC/Monad 11.6%; morpho-blue/SATUSDC/Monad 11.3%; liminal-basis/LIMUSD/Hyperliquid L1 10.5%
+#263 junior tranches: strata-markets/JRUSDE 6.2%, strata-markets/JRMM1USD 6.8%, strata-markets/JRUSDAT 0.0%, strata-markets/JRNOPAL 11.4%, strata-markets/JRPRIME 6.5%, strata-markets/JRMHYPER 10.9%, pendle-v2/JRUSDE 6.5%, pendle-v2/JRUSDE 6.5% -> best 11.41% -> survives Stage 0.5
+#264 senior tranches: strata-markets/SRUSDAT 8.1%, strata-markets/SRUSDE 4.2%, strata-markets/SRMHYPER 6.7%, strata-markets/SRMM1USD 4.8%, strata-markets/SRPRIME 6.0%, strata-markets/SRNOPAL 9.0%, strata-markets/SRNUSD 5.4% -> best 9.04% -> survives Stage 0.5
+#268 veAERO hedged: Stage 0 KILL (4-year lock; exit only by selling the veNFT at an unknown discount; F4 unverifiable)
+#272 tokenised-stock premium arbitrage: Stage 0 KILL (securities access for a Malaysian resident unverified -> grey)
+#273 Solana LST instant-unstake spreads: Stage 0 KILL (instant-unstake pools arbitrage the discount by design; #41 analogue tiny)
+#274 hedged volatile v3 LP: Stage 0 NOT TESTABLE (concentrated-range IL/LVR not modelable from daily APY data)
+#275 bridge / intent relayers: Stage 0 KILL (bonded professional fillers, speed race; as M10)
