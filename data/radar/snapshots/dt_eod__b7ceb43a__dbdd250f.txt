@@ -1,0 +1,85 @@
+Dashboard Stats and Account Chart | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Getting Started: From Sign-Up to First Payout
+Logging In and Credentials
+Plan Comparison Overview
+Maximum Number of Accounts
+Instruments and Commissions
+Billing
+Paying for Your Order
+Market Data, Add-Ons and Fees
+How to Request a Payout
+Taxes and Payout Documents
+Dashboard Stats and Account Chart
+Understanding Futures Contracts And When To Roll
+Market Orders vs. Limit Orders
+Giveaway Rules
+Who Can Sign Up
+DT Wallet FAQ
+Holiday Calendar 2026
+Glossary
+About DayTraders
+Holiday Calendar 2027
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Platforms
+Trading Rules and Guidelines
+Affiliate Program
+Agreements and Disclaimers
+All Collections General Dashboard Stats and Account Chart Dashboard Stats and Account Chart
+What each Dashboard column and account state means, and when stats update (5:00–6:00 PM ET on trading days).
+October 22, 2026
+Copy for LLM
+The account chart on your Dashboard shows each account's latest stats. It isn't live: it updates once a day on trading days.
+When it updates
+Daily reports load between 5:00 and 6:00 PM ET on trading days.
+Charts and the pass email can take until midnight ET to show them.
+Nothing loads on holidays (the CME sets the schedule; see Trading Hours, Holidays and Overnight Positions ). The Dashboard catches up after the market closes on the next trading day.
+Need real-time numbers? Check your platform (DayTraders Platform or R|Trader Pro) instead. See the R|Trader Pro column guide .
+What each column means
+Column
+What it shows
+TRADE DATE
+The last recorded trading day. A new account that hasn't traded shows 1/1/2000.
+TYPE
+Account type and size, e.g. 50K Trail DayTraders.
+ACCOUNT NAME
+Your account number. Include it in any support ticket.
+PNL
+The most recent recorded profit or loss.
+TDAYS
+Trading Days: every day the account traded, whether or not it qualified.
+QDAYS
+Qualifying Days: days that met the minimum daily profit and followed every rule, including consistency. They count toward passing or toward a payout.
+STOP
+Your drawdown level. On Static accounts it doesn't move.
+BALANCE
+The current account balance.
+STATE
+The account status (below).
+Account states
+Active: in good standing, but hasn't met every requirement to pass yet (evals).
+Passed: reached the profit target and the required Qualifying Days. You can now activate a Pro Account.
+Blown: the balance touched the drawdown level or has been upgraded to Pro. Buy a new evaluation to start again.
+Stats still missing?
+If you think something is wrong, contact support with your account number.
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+Trail Evaluation
+Static Pro Account
+Live Accounts
+ArcTrader Crypto Demo Account
+Glossary
+On this page
+When it updates
+What each column means
+Account states
+Stats still missing?

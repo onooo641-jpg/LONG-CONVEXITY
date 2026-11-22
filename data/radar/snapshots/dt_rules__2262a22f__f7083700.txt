@@ -1,0 +1,105 @@
+rTrader Pro Copier | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Platforms
+General Platform information
+ArcTrader
+ATAS
+Bookmap
+Finamark
+Onyx
+Jigsaw
+MotiveWave
+NinjaTrader
+Quantower
+Rithmic & R | Trader Pro
+Disabling Alerts and Pop-Ups in RTrader Pro
+RTrader Pro Mobile App
+Risk Management - Rithmic rTrader
+Rithmic/rTrader Pro: How to place a Trade
+Troubleshooting rTrader Pro Login Issues
+How to Manage Risk with Rithmic's Auto Liquidate Criteria
+Market Volatility Advisory
+Understanding the "Rithmic's Order Plant Guardian Has Disabled Your User ID" Error
+Can't Login, Rithmic
+Understanding Your rTrader Pro: Column Breakdown
+Understanding Account Colors in rTrader Pro
+Handling Technical Issues and Managing Positions in R-Trader Pro
+rTrader Pro Copier
+Sierra Charts
+Wealthcharts
+VolFix
+Trading Rules and Guidelines
+Affiliate Program
+Agreements and Disclaimers
+All Collections Platforms Rithmic & R | Trader Pro rTrader Pro Copier rTrader Pro Copier
+Learn how to use the rTrader Pro Copier provided by Rithmic to efficiently copy trades across multiple accounts while avoiding potential issues.
+October 22, 2026
+Copy for LLM
+What is the rTrader Pro Copier?
+The rTrader Pro Copier is a trade-copying feature provided by Rithmic that allows traders to replicate trades across multiple accounts. This tool enables users to designate a Leader Account , which then mirrors executed trades onto selected Follower Accounts .
+This 3rd Party Plug in allows traders to copy on each platform that is compatible with our DayTraders Rithmic accounts >HERE< .
+How do I purchase the Trade Copier and how much is it?
+Purchased from the Member Dashboard under "Rithmic Add Ons"
+Price: $10 per month.
+**Important Note:
+Expires at 5:00 PM ET on the last day of the month, regardless of purchase date
+It is best to purchase the add-on on the first day of the month to get full value.
+How do I set the Trade Copier?
+To activate the Trade Copier in rTrader Pro:
+Open rTrader Pro.
+Locate the Launch Window on the right-hand side.
+Select Trade Copier .
+Add your Leader Account – trades placed on this account will be copied to linked Follower Accounts.
+Add all Follower accounts that should mirror trades from the Leader Account.
+Enable or disable individual accounts as needed.
+Adjusting Quantity Multiplier and Other Settings
+To adjust settings such as Quantity Multiplier or Fractional Quantity Rounding:
+Disable the Copy Status on the account you wish to modify.
+Make the necessary adjustments to your preferences.
+Once all settings have been configured, re-enable the Copy Status to resume copying trades.
+How do I cancel orders using the Trade Copier?
+If you need to cancel orders manually within rTrader Pro:
+Navigate to the Positions tab in the Launch Window.
+Always cancel the orders from the Leader Account first to ensure that all associated Follower Accounts are also canceled.
+If an order is canceled from a Follower account before canceling from the Leader Account, it may result in an unintended reverse position for that Follower Account.
+How the flatten a Follower Account before the Leader Account:
+How do I prevent unintended positions when canceling orders?
+Disable the copier function before canceling orders from any Follower Account.
+Always pull orders from the Leader account first before modifying or closing any positions on Follower Accounts.
+Failure to follow this sequence may cause the previously flat Follower Accounts to enter an unintended opposite trade direction.
+What to AVOID when flattening a Follower Account before the Leader Account:
+Can I Use the rTrader Pro Copier with Other Trade Copiers?
+No, the rTrader Pro Copier provided by Rithmic cannot be used in combination with other trade copiers. Using multiple copiers simultaneously may cause execution errors, duplicate orders, or unintended trading behavior. To ensure accurate order replication and avoid potential conflicts, it is recommended to use only the rTrader Pro Copier when copying trades across multiple accounts.
+Important Considerations & Disclaimer
+The Trade Copier is a third-party feature provided by Rithmic .
+DayTraders does not have direct control over this feature and can only provide limited support.
+Traders are responsible for understanding and managing the copier functionality.
+Any technical issues or questions related to the copier should be directed to Rithmic support at [email protected] .
+By using the copier, traders acknowledge that it is their responsibility to manage risk and ensure proper execution of trades when utilizing this tool.
+​
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+Connect WealthCharts to Rithmic
+Risk Management - Rithmic rTrader
+Connecting Quantower to Rithmic
+NinjaTrader Trade Copier – Complete Setup Guide
+Supported Platforms
+On this page
+What is the rTrader Pro Copier?
+How do I purchase the Trade Copier and how much is it?
+How do I set the Trade Copier?
+Adjusting Quantity Multiplier and Other Settings
+How do I cancel orders using the Trade Copier?
+How do I prevent unintended positions when canceling orders?
+Can I Use the rTrader Pro Copier with Other Trade Copiers?
+Important Considerations & Disclaimer

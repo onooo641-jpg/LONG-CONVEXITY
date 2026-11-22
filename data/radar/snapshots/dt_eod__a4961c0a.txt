@@ -1,0 +1,49 @@
+EOD Daily Loss Limit | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+EOD Evaluation
+EOD Pro Account
+EOD Payouts
+EOD Consistency
+EOD Daily Loss Limit
+EOD Drawdown
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Platforms
+Trading Rules and Guidelines
+Affiliate Program
+Agreements and Disclaimers
+All Collections EOD Trail Account EOD Daily Loss Limit EOD Daily Loss Limit
+EOD Daily Loss Limit by size and what happens when you hit it.
+October 22, 2026
+Copy for LLM
+EOD accounts have a Daily Loss Limit (DLL) : the most you can lose in one trading day. It's separate from the max drawdown.
+Size
+Daily Loss Limit
+25K
+$800
+50K
+$1,250
+150K
+$2,000
+300K
+$3,250
+If you hit it
+Open positions are closed and the account is Paused until the next trading day starts (6:00 PM ET). It isn't failed.
+The DLL is measured from your balance at the start of the day. It doesn't trail intraday.
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+EOD Evaluation
+EOD Pro Account
+S2F Daily Loss Limit
+S2L Daily Loss Limit
+Plan Comparison Overview
+On this page
+If you hit it

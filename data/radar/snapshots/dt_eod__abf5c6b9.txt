@@ -1,0 +1,95 @@
+EOD Evaluation | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+EOD Evaluation
+EOD Pro Account
+EOD Payouts
+EOD Consistency
+EOD Daily Loss Limit
+EOD Drawdown
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Platforms
+Trading Rules and Guidelines
+Affiliate Program
+Agreements and Disclaimers
+All Collections EOD Trail Account EOD Evaluation EOD Evaluation
+EOD evaluation at a glance: prices, profit targets, drawdown, contracts and how to pass.
+October 22, 2026
+Copy for LLM
+The EOD evaluation is a simulated account. Reach the profit target without touching the drawdown to unlock an EOD Pro Account (simulated funded).
+At a glance
+25K
+50K
+150K
+300K
+Profit target
+$1,500
+$3,000
+$8,500
+$15,000
+Max drawdown
+$1,000
+$2,000
+$4,000
+$6,500
+Drawdown type
+End-of-day (EOD) trailing
+End-of-day (EOD) trailing
+End-of-day (EOD) trailing
+End-of-day (EOD) trailing
+Daily Loss Limit
+$800
+$1,250
+$2,000
+$3,250
+Max contracts
+6 (60 micros)
+10 (100 micros)
+12 (120 micros)
+40 (400 micros)
+Min. daily profit
+$100
+$200
+$300
+$400
+QDays to pass
+2
+2
+2
+2
+Consistency
+50%
+50%
+50%
+50%
+See daytraders.com for the latest pricing.
+How to pass
+Reach the profit target.
+Trade at least 2 Qualifying Days : days that meet the minimum daily profit, follow the rules and end within consistency.
+Keep your best day at or below 50% of your total profit. A small tolerance applies.
+Never touch the drawdown level or exceed the Daily Loss Limit.
+After you pass
+Stop trading: dropping below the profit target can void the pass. Activate your EOD Pro Account within 10 days for $5 , or the pass is forfeited.
+Good to know
+No time limit and no resets.
+Evaluations are unlimited.
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+Trail Evaluation
+Static Evaluation
+EOD Pro Account
+S2F Account
+Plan Comparison Overview
+On this page
+At a glance
+How to pass
+After you pass
+Good to know

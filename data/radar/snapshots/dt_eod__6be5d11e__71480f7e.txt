@@ -1,0 +1,91 @@
+How to Sign into ArcTrader | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+ArcTrader Platform Overview
+How to Sign into ArcTrader
+ArcTrader Charting
+Trading
+Additional Features
+General
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Platforms
+Trading Rules and Guidelines
+Affiliate Program
+Agreements and Disclaimers
+All Collections ArcTrader How to Sign into ArcTrader How to Sign into ArcTrader
+ArcTrader can be accessed directly through the ArcTrader platform link using your Rithmic login credentials from your DayTraders member dashboard.
+Updated over a week ago
+Copy for LLM
+Before You Start
+Make sure you have:
+An active DayTraders account
+Your Rithmic username
+Your Rithmic password
+Access to the ArcTrader platform
+Where to Find Your Rithmic Credentials
+Your Rithmic credentials can be found in your DayTraders member dashboard.
+To locate them:
+Go to: https://daytraders.com/member/dashboard
+Log in to your DayTraders account
+Locate the account you want to trade
+Copy or note your Rithmic username and password
+These credentials are required to sign in to ArcTrader through the Rithmic connection.
+How to Sign In to ArcTrader
+To sign in:
+Go to: https://arctrader.com/platform/
+On the login screen, select Rithmic
+Enter your Rithmic username
+Enter your Rithmic password
+Click Connect
+Once connected, ArcTrader will load your trading workspace.
+Important Notes
+Please keep the following in mind:
+Make sure Rithmic is selected before logging in.
+Use the Rithmic credentials provided inside your member dashboard.
+Enter the username and password exactly as shown.
+Passwords are case-sensitive.
+If your credentials were recently created, allow a few moments before trying again.
+If You Cannot Log In
+If you are unable to connect:
+Confirm that you selected Rithmic
+Recheck your Rithmic username and password
+Make sure there are no extra spaces when copying your credentials
+Refresh the ArcTrader page
+Try logging out of the DayTraders dashboard and back in
+Confirm your account is active in your dashboard
+If the issue continues, contact support with:
+Your account number
+A screenshot of the login issue
+The system selected on the ArcTrader login screen
+Any error message shown
+Summary
+To sign in to ArcTrader:
+Open https://arctrader.com/platform/
+Get your Rithmic credentials from https://daytraders.com/member/dashboard
+Select Rithmic
+Enter your username and password
+Click Connect
+​
+Content and resources provided by DayTraders.com , including simulated trading environments, are for educational purposes only. Past performance is not necessarily indicative of future results.
+Services are exclusively for non-professional traders.
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+Connecting to Rithmic Services
+Can't Login, Rithmic
+How to Sign into ArcTrader
+How to Log In to Onyx v3
+Logging In and Credentials
+On this page
+Before You Start
+Where to Find Your Rithmic Credentials
+How to Sign In to ArcTrader
+Important Notes
+If You Cannot Log In
+Summary

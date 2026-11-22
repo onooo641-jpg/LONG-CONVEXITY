@@ -1,0 +1,59 @@
+Minimum Activity Policy | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Platforms
+Trading Rules and Guidelines
+Minimum Activity Policy
+No Martingale
+No High-Frequency Trading
+No Hedging
+Dollar Cost Averaging (DCA)
+Automation, AI and Trade Copiers
+Trading Hours, Holidays and Overnight Positions
+Contract Limits
+Account Sharing, VPN/VPS and Code of Conduct
+Rule Violations and Account Status
+Qualifying Days (QDays)
+Affiliate Program
+Agreements and Disclaimers
+All Collections Trading Rules and Guidelines Minimum Activity Policy Minimum Activity Policy
+How many trading days you need to keep an account active, how the rolling 30-day window works and what happens if you miss it.
+October 22, 2026
+Copy for LLM
+To keep an account active, you need a minimum number of trading days that meet the minimum daily profit for your account size in every rolling 30-day window.
+What you need
+Billing
+Requirement
+Monthly
+At least 1 trading day meeting the minimum daily profit in every rolling 30-day window
+Lifetime (one-time, including bulk purchases)
+At least 4 trading days meeting the minimum daily profit in every rolling 30-day window
+The window starts on the purchase date for every account, including accounts bought in bulk.
+Days don't need to be consecutive.
+Consistency isn't required. A day counts if it meets the minimum daily profit, even if it isn't a Qualifying Day.
+The check runs every day on the most recent 30 days, so keep trading regularly rather than completing the days once.
+Example
+Lifetime account bought January 1: you meet the minimum daily profit on January 3, 8, 15 and 22. At the first review on January 30, the account is active. On February 3, the window is January 4 to February 3 and January 3 drops out. Unless you've had another qualifying trading day by then, only 3 remain and the account becomes Inactive.
+If you miss the requirement
+The account is marked Inactive and closed. Inactive accounts can't be reactivated, and a Monthly account stops rebilling. You'll need to buy a new account to continue.
+You can track your trading days on your Dashboard.
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+S2L Evaluation
+Journaling System – Quick Start Guide
+Qualifying Days (QDays)
+Getting Started: From Sign-Up to First Payout
+Dashboard Stats and Account Chart
+On this page
+What you need
+Example
+If you miss the requirement

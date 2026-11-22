@@ -1720,11 +1720,164 @@
 - AUTO: Best Firms for Scalpers
 - AUTO: Best For: Scalpers & Active Day Traders
 
+## DayTraders — https://daytraders.com/help/articles/15853741-arctrader-platform-overview
+- AUTO: Used for copy trading functionality when available
+
+## DayTraders — https://daytraders.com/help/articles/17697924-live-scaling
+- AUTO: We can also increase the maximum loss limits or issue additional live accounts to copy trade across.
+
+## DayTraders — https://daytraders.com/help/articles/17697925-moving-from-pro-or-s2f-to-live
+- COUNTRY: If you're in a restricted country, the Risk Manager will discuss your options.
+
+## DayTraders — https://daytraders.com/help/articles/17703899-billing-terms
+- AUTO: I must manually renew these additional services each month if desired.
+
+## DayTraders — https://daytraders.com/help/articles/17703901-journaling-system-quick-start-guide
+- AUTO: Everything you need to master automated trade journaling with AI-powered insights
+- AUTO: The Journaling System is a fully automated trading journal designed to help you analyze performance, identify patterns, and improve execution using AI-powered insights.
+- AUTO: Every trade is captured automatically, summarized intelligently, and visualized clearly so you spend less time journaling and more time trading.
+- AUTO: The Journaling System automatically records every trade you take and transforms raw execution data into actionable insights.
+- AUTO: Automatic Trade Capture
+- AUTO: No manual entries are required.
+- AUTO: What normally takes more than thirty minutes of manual journaling is completed automatically in seconds.
+- AUTO: Uploading your own API key unlocks unlimited summaries and deeper analysis.
+- AUTO: Why Upload Your Own API Key?
+- AUTO: Navigate to the API Keys section
+- AUTO: Navigate to API Keys
+- AUTO: How to Upload Your API Key
+- AUTO: API keys are encrypted using AES 128 encryption
+- AUTO: First-time users without an API key will see a reminder about the five summaries per day limit.
+- AUTO: Automatic Trade Capture
+- AUTO: Why Upload Your Own API Key?
+- AUTO: How to Upload Your API Key
+
+## DayTraders — https://daytraders.com/help/articles/17703991-rtrader-pro-copier
+- AUTO: Disabling Alerts and Pop-Ups in RTrader Pro
+- AUTO: Learn how to use the rTrader Pro Copier provided by Rithmic to efficiently copy trades across multiple accounts while avoiding potential issues.
+- AUTO: If you need to cancel orders manually within rTrader Pro:
+
+## DayTraders — https://daytraders.com/help/articles/17704019-trading-lockout-feature-for-onyx
+- AUTO: The Onyx Lockout feature is a powerful self-discipline tool designed to help you protect your capital and lock in profits by automatically restricting trading when your specific limits are met.
+- AUTO: Enable Management: Toggle on "Enable Risk Management" to automatically enforce your daily limits.
+
+## DayTraders — https://daytraders.com/help/articles/17704026-privacy-policy
+- AUTO: Automatic Data Collection
+- AUTO: We collect the following types of information from you as you use the Site through automatic data collection technologies:
+- AUTO: Our automatic data collection includes the use of the following technologies:
+- AUTO: How We Respond to Do Not Track Signals
+- AUTO: We do not track visitors' activities over time or across third-party websites and therefore do not respond to Do Not Track (DNT) signals.
+
+## DayTraders — https://daytraders.com/help/articles/17704072-minimum-activity-policy
+- AUTO: No High-Frequency Trading
+- AUTO: Automation, AI and Trade Copiers
+
+## DayTraders — https://daytraders.com/help/articles/17704073-no-martingale
+- AUTO: No High-Frequency Trading
+- AUTO: Automation, AI and Trade Copiers
+- AUTO: No High-Frequency Trading
+
+## DayTraders — https://daytraders.com/help/articles/17704074-no-high-frequency-trading
+- AUTO: No High-Frequency Trading | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc.
+- AUTO: No High-Frequency Trading
+- AUTO: Automation, AI and Trade Copiers
+- AUTO: All Collections Trading Rules and Guidelines No High-Frequency Trading No High-Frequency Trading
+- AUTO: High-frequency trading (HFT) is prohibited on every plan.
+- AUTO: Here's what counts as HFT and what happens if it's detected.
+- AUTO: High-Frequency Trading (HFT) isn't allowed on any account.
+- AUTO: Automation is allowed as long as it doesn't trade in an HFT style.
+- AUTO: HFT creates unfair advantages and can overload trading systems.
+- AUTO: An account suspected of HFT is suspended pending review.
+- AUTO: Automation, AI and Trade Copiers
+
+## DayTraders — https://daytraders.com/help/articles/17704076-no-hedging
+- AUTO: No High-Frequency Trading
+- AUTO: Automation, AI and Trade Copiers
+
+## DayTraders — https://daytraders.com/help/articles/17704078-terms-of-use
+- AUTO: You agree that these activities may be performed automatically without any further consent, consultation, or approval on your part, and that you are not entitled to any remuneration or revenue associated with the use of the Data by Day Traders.
+- AUTO: Using, such software, AI, high frequency automated trading, mass data entry, or other programs that manipulate or abuse the Pro Accounts or the simulated trading environment give Customer an unfair advantage when using the services;
+- AUTO: All trades will be attempted to be automatically flattened upon the relevant market closure.
+- AUTO: Additionally, to deter and avoid violations of the trading rules (as set forth in this Section 26 and in addition the Express Funded Account Agreement), your positions will automatically be flattened (e.g., closed out) just prior to the end of the then current trading session (e.g., about ten seconds prior to the closing bell at 5:00 PM CST) as determined by Day Traders.
+- AUTO: Using any manual or automated software, devices, or other processes to “crawl” or “spider” any web pages contained in the Site or Services;
+- AUTO: Each Reward with an expiration date will automatically be of no value or effect upon its stated expiration.
+- AUTO: If we do waive a default by you, we will only do so in writing, and that will not mean that we will automatically waive any later default by you.
+
+## DayTraders — https://daytraders.com/help/articles/17704085-dollar-cost-averaging-dca
+- AUTO: No High-Frequency Trading
+- AUTO: Automation, AI and Trade Copiers
+
+## DayTraders — https://daytraders.com/help/articles/17704087-automation-ai-and-trade-copiers
+- AUTO: Automation, AI and Trade Copiers | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc.
+- AUTO: No High-Frequency Trading
+- AUTO: Automation, AI and Trade Copiers
+- AUTO: All Collections Trading Rules and Guidelines Automation, AI and Trade Copiers Automation, AI and Trade Copiers
+- AUTO: You can use AI, scripts, bots, trade copiers and a VPS, as long as you don't trade in an HFT style or trade for others.
+- AUTO: You can use AI tools, automations, scripts, custom algorithms and trading bots, as long as they follow all account rules and don't operate as High-Frequency Trading (HFT).
+- AUTO: AI for research, trade planning, journaling, alerts and decision support.
+- AUTO: Scripts, bots and strategy automation that trade at normal execution speeds.
+- AUTO: Trade copiers that copy trades across your own accounts, including accounts at other firms.
+- AUTO: Using a copier or automation to hedge or to exceed your max contracts.
+
+## DayTraders — https://daytraders.com/help/articles/17704089-trading-hours-holidays-and-overnight-positions
+- AUTO: No High-Frequency Trading
+- AUTO: Automation, AI and Trade Copiers
+
+## DayTraders — https://daytraders.com/help/articles/17704092-contract-limits
+- AUTO: No High-Frequency Trading
+- AUTO: Automation, AI and Trade Copiers
+
+## DayTraders — https://daytraders.com/help/articles/17704093-account-sharing-vpn-vps-and-code-of-conduct
+- AUTO: No High-Frequency Trading
+- AUTO: Automation, AI and Trade Copiers
+
+## DayTraders — https://daytraders.com/help/articles/17704094-rule-violations-and-account-status
+- AUTO: No High-Frequency Trading
+- AUTO: Automation, AI and Trade Copiers
+
+## DayTraders — https://daytraders.com/help/articles/17704097-qualifying-days-qdays
+- AUTO: No High-Frequency Trading
+- AUTO: Automation, AI and Trade Copiers
+
+## DayTraders — https://daytraders.com/help/articles/17704102-logging-in-and-credentials
+- AUTO: On your Dashboard , assigned automatically
+
+## DayTraders — https://daytraders.com/help/articles/17704103-who-can-sign-up
+- COUNTRY: Restricted countries
+- COUNTRY: If you are a citizen of an OFAC (Office of Foreign Assets Control) or restricted country, we can't provide services to you, wherever you are located.
+- COUNTRY: All transactions attempted while in a restricted country will be blocked.
+- COUNTRY: Traveling to a restricted country
+- COUNTRY: While you're physically in a restricted country, you can't buy new accounts, add accounts or activate new services .
+- COUNTRY: Restricted countries
+
+## DayTraders — https://daytraders.com/help/articles/17704104-billing
+- AUTO: Failed, Inactive and canceled accounts stop rebilling automatically, but check your billing section to confirm.
+
+## DayTraders — https://daytraders.com/help/articles/17704120-market-data-add-ons-and-fees
+- AUTO: They don't renew automatically and aren't refundable.
+
+## DayTraders — https://daytraders.com/help/articles/17704121-how-to-request-a-payout
+- AUTO: Rule violations, such as hedging or high-frequency trading.
+
+## DayTraders — https://daytraders.com/help/articles/17704139-giveaway-rules
+- COUNTRY: Learn the basic eligibility rules for DayTraders giveaways, including restricted country limitations and the deadline to claim your prize.
+- COUNTRY: Restricted Countries Are Not Eligible
+- COUNTRY: Check the list of restricted countries
+- COUNTRY: Participants located in, residing in, or registering from a restricted country are not eligible to win DayTraders giveaways.
+- COUNTRY: If a winner is selected and we determine that they are from a restricted country, the prize cannot be awarded or redeemed.
+- COUNTRY: Restricted Countries Are Not Eligible
+
+## DayTraders — https://daytraders.com/help/articles/17704146-dt-wallet-faq
+- AUTO: If a purchase does not complete properly after wallet funds are used, the system may return the funds automatically and provide a reference number.
+
 ## DayTraders — https://daytraders.com/help/collections/19788884-trading-rules-and-guidelines
 - AUTO: No High-Frequency Trading
 - AUTO: Automation, AI and Trade Copiers
 - AUTO: No High-Frequency Trading
 - AUTO: Automation, AI and Trade Copiers
+
+## DayTraders — https://daytraders.com/help/collections/19789804-rithmic-r-trader-pro
+- AUTO: Disabling Alerts and Pop-Ups in RTrader Pro
+- AUTO: Disabling Alerts and Pop-Ups in RTrader Pro
 
 ## DayTraders — https://daytraders.com/how-futures-funding-evaluations-work
 - AUTO: Best Firms for Scalpers
@@ -1769,6 +1922,19 @@
 ## DayTraders — https://daytraders.com/why-traders-fail-prop-firm-evaluations
 - AUTO: Best Firms for Scalpers
 - AUTO: A trader starts the evaluation scalping ES.
+
+## E8 Futures — https://help.e8markets.com/en/articles/11769446-daily-drawdown
+- AUTO: Coach Play: Never let your manual risk reach the 4% limit.
+- AUTO: Bear in mind that after the account breaches your loss level, the system will enforce closing the position automatically, which might take a while.
+
+## E8 Futures — https://help.e8markets.com/en/articles/11775980-e8-one
+- AUTO: E8 Markets allows copy trading across all accounts, including SimFi™ challenge and SimFI™ Performance accounts or other personal accounts, as long as these accounts belong to you.
+
+## E8 Futures — https://help.e8markets.com/en/articles/11782996-trailing-drawdown
+- AUTO: After the account breaches your loss level, the system will enforce closing the position automatically, which might take a while.
+
+## E8 Futures — https://help.e8markets.com/en/articles/15274219-e8-pro
+- AUTO: E8 Markets allows copy trading across all accounts, including SimFi™ challenge and SimFI™ Performance accounts or personal accounts, as long as these accounts belong to you.
 
 ## E8 Futures — https://helpfutures.e8markets.com/en/articles/10155917-max-available-contract-sizes
 - AUTO: The account scales automatically at the start of each new trading day.
@@ -1838,6 +2004,9 @@
 
 ## E8 Futures — https://helpfutures.e8markets.com/en/collections/11069608-general-rules
 - AUTO: Can I copy trades or trade as a team?
+
+## E8 Futures — https://helpfutures.e8markets.com/tr/articles/11864596-eod-dynamic-drawdown
+- AUTO: After the account breaches your loss level, the system will enforce closing the position automatically, which might take a while.
 
 ## E8 Markets — https://e8markets.com/
 - AUTO: ALG Algorand ALGOUSD
@@ -2893,28 +3062,6 @@
 
 ## Legends Trading — https://www.legendstrading.com/privacy-policy
 - AUTO: This includes, and is not limited to, stock/option price targets, positions entered, trade ideas, trade summaries, closed positions, possible stock/options positions, watchlists, position changes, trading/investment signals or call outs, or other protected content.
-
-## Lucid Trading — https://lucidtrading.com/privacypolicy/
-- AUTO: Information gathered automatically as you navigate through the Platform; or
-- AUTO: The information we collect automatically is statistical data and may include personal information, but we may maintain it or associate it with personal information we collect in other ways or receive from third parties.
-- AUTO: Verify identity and prevent fraud and abuse, including through automated means
-- AUTO: We treat the Global Privacy Control browser signal as an opt-out request where applicable law requires.
-- AUTO: We do not otherwise respond to “Do Not Track” signals.
-- AUTO: Automated Decision-Making
-- AUTO: We use automated systems, including services provided by third parties, to verify identity, prevent fraud, and enforce our program rules.
-- AUTO: If you believe an automated action was taken in error, you may request review by a person by contacting us through the support chat on our website.
-- AUTO: We share identifiers, commercial information, and internet activity with advertising, analytics, and referral partners, which some state laws may consider a “sale” or “sharing.” You may opt out through the “Do Not Sell or Share My Personal Information” link in the footer of our website or by enabling the Global Privacy Control signal in your browser.
-
-## Lucid Trading — https://lucidtrading.com/terms-of-use/
-- AUTO: Use any trading strategy that includes disruptive or prohibited practices as defined in the Program Rules and determined in Lucid’s sole discretion, including but not limited to spoofing strategies, microscalping, hedging across accounts, and high frequency trading.
-- AUTO: Use software, automation, or artificial intelligence in a manner that manipulates, abuses, or gives an unfair advantage.
-- AUTO: Automated trading systems and trade copiers are permitted where used in compliance with the Program Rules, and you are responsible for their operation.
-- AUTO: Interfere with, disrupt, overburden, or gain unauthorized access to the Website or related systems, copy or monitor its content by automated or unauthorized means, or introduce malicious code.
-- AUTO: We use automated systems to verify identity, prevent fraud, and enforce this Agreement, as described in our Privacy Policy, and you may request human review of any resulting action by contacting us through the support chat on our website.
-- AUTO: Certain add-on services are sold as recurring subscriptions, which renew automatically at the stated interval until cancelled.
-- AUTO: Each Reward with an expiration date will automatically be of no value or effect upon its stated expiration.
-- COUNTRY: Commodity Futures Trading Commission, have an outstanding balance with a trading firm, or are a citizen or resident of a country listed as restricted in our Program Rules.
-- COUNTRY: The Website, Software, and Services are not available to citizens or residents of the countries listed as restricted in our Program Rules, which we may update at any time, and certain products or payout methods may be limited by country.
 
 ## Lucid Trading — https://support.lucidtrading.com/en/articles/11404620-simulated-account-fees
 - AUTO: There is no subscription and no automatic rebilling.
@@ -4198,6 +4345,9 @@
 - COUNTRY: For a full list of restricted countries for our services please see our FAQs.
 
 ## The Trading Pit Futures — https://support.thetradingpit.com/en/collections/1468446-cfd-intraday
+- COUNTRY: For a full list of restricted countries for our services please see our FAQs.
+
+## The Trading Pit Futures — https://thetradingpit.com/futures
 - COUNTRY: For a full list of restricted countries for our services please see our FAQs.
 
 ## The5ers — https://the5ers.com/cookie-policy/

@@ -1,0 +1,51 @@
+Automation, AI and Trade Copiers | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Platforms
+Trading Rules and Guidelines
+Minimum Activity Policy
+No Martingale
+No High-Frequency Trading
+No Hedging
+Dollar Cost Averaging (DCA)
+Automation, AI and Trade Copiers
+Trading Hours, Holidays and Overnight Positions
+Contract Limits
+Account Sharing, VPN/VPS and Code of Conduct
+Rule Violations and Account Status
+Qualifying Days (QDays)
+Affiliate Program
+Agreements and Disclaimers
+All Collections Trading Rules and Guidelines Automation, AI and Trade Copiers Automation, AI and Trade Copiers
+You can use AI, scripts, bots, trade copiers and a VPS, as long as you don't trade in an HFT style or trade for others.
+October 22, 2026
+Copy for LLM
+You can use AI tools, automations, scripts, custom algorithms and trading bots, as long as they follow all account rules and don't operate as High-Frequency Trading (HFT).
+What's allowed
+AI for research, trade planning, journaling, alerts and decision support.
+Scripts, bots and strategy automation that trade at normal execution speeds.
+Trade copiers that copy trades across your own accounts, including accounts at other firms.
+Running your platform or tools on a VPS.
+What isn't allowed
+Anything that places, modifies or cancels orders in milliseconds, spams orders or relies on latency.
+Trading for other people, including copying trades into accounts that aren't yours.
+Using a copier or automation to hedge or to exceed your max contracts.
+Your responsibility
+Every trade a tool places counts as your account activity, including any rule breaks, losses or drawdown breaches it causes. DayTraders doesn't set up, troubleshoot or review custom tools. Test a tool before using it on an active account, monitor it while it runs and stop it if it behaves unexpectedly.
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+rTrader Pro Copier
+Supported Platforms
+On this page
+What's allowed
+What isn't allowed
+Your responsibility

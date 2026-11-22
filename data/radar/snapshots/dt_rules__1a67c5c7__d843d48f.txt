@@ -1,0 +1,91 @@
+Trading Lockout Feature for Onyx | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Platforms
+General Platform information
+ArcTrader
+ATAS
+Bookmap
+Finamark
+Onyx
+Connect to Onyx: Step-by-Step Setup
+How to Log In to Onyx v3
+Accessing Onyx from Your Phone
+Onyx Support for macOS
+Connection Quality Monitor in Onyx
+Optimizing Onyx Performance on Slow Connections (Latency & Upload Speed)
+Troubleshooting Issues with Onyx
+Onyx Platform FAQ (Rithmic-Powered)
+Order Entry in Onyx
+How to Place a Market Order in Onyx
+Onyx – Bracket Orders and Bracket Templates
+Risk and Profit Bracket Setup Guide – Onyx
+Opening Multiple Charts in Onyx
+Saving Your Chart Layout in Onyx
+Onyx DOM (Depth of Market)
+Explore the Features of Onyx
+Journaling System – Quick Start Guide
+Market Data and Performance – Onyx
+Performance Stats – Onyx
+Trade Copier – Onyx
+Trading Lockout Feature for Onyx
+Jigsaw
+MotiveWave
+NinjaTrader
+Quantower
+Rithmic & R | Trader Pro
+Sierra Charts
+Wealthcharts
+VolFix
+Trading Rules and Guidelines
+Affiliate Program
+Agreements and Disclaimers
+All Collections Platforms Onyx Trading Lockout Feature for Onyx Trading Lockout Feature for Onyx
+The Onyx Lockout feature is a powerful self-discipline tool designed to help you protect your capital and lock in profits by automatically restricting trading when your specific limits are met.
+October 22, 2026
+Copy for LLM
+How Risk Lockouts Work
+When your predefined daily loss limit or profit target is reached:
+Immediate Lock: Trading will be locked immediately for the remainder of the session.
+Liquidation: All open positions may be liquidated (depending on your specific settings).
+No New Trades: You will be unable to place any new orders.
+Expiration: The lockout is permanent for the day and cannot be removed early —it expires at 5:00 PM EST.
+​
+​
+Configuring Your Risk Settings
+You can apply a Global Policy that covers all your accounts by default, or customize risk settings for each individual account.
+Access Risk Menu: Click on "Risk" in the left-hand side menu.
+Create Settings: Click the red "Create" button to start a new risk policy.
+Enable Management: Toggle on "Enable Risk Management" to automatically enforce your daily limits.
+Set Daily Limits: Define your Max Daily Loss Amount and your Daily Profit Target .
+Choose the Action: For each limit, choose what happens when it is hit:
+Liquidate & Lock Settings: Closes all positions and locks the account until 5:00 PM EST.
+Block New Orders Only: Prevents new entries but allows you to manage current positions.
+Notify Only: Sends a warning message without restricting trade activity.
+Save: Click Save to activate your policy.
+Key Benefits
+Prevent Overtrading: Stops the "revenge trading" cycle after a loss.
+Protect Profits: Ensures you walk away with your gains after a successful session.
+Enforce Discipline: Provides a hard stop that removes the emotional struggle of "just one more trade."
+​
+​
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+Risk and Profit Bracket Setup Guide – Onyx
+Risk Management - Rithmic rTrader
+Order Entry in Onyx
+Onyx – Bracket Orders and Bracket Templates
+Trading Hours, Holidays and Overnight Positions
+On this page
+How Risk Lockouts Work
+Configuring Your Risk Settings
+Key Benefits

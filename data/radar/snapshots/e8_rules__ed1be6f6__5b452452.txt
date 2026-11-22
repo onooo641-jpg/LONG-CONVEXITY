@@ -1,0 +1,103 @@
+How much leverage do you offer? | E8 Markets Help Center Skip to main content
+E8X Dashboard E8 Markets Website Futures HelpCenter Čeština English हिन्दी Português Español Türkçe English
+E8X Dashboard E8 Markets Website Futures HelpCenter Čeština English हिन्दी Português Español Türkçe English
+Search for articles...
+All Collections
+Trading Platforms
+How much leverage do you offer?
+How much leverage do you offer?
+What leverage will I be trading with?
+Updated this week
+Table of contents
+In the tables below, you can find all available leverage for our products. Leverage will differ between products, but not between stages. Once you finish your Simfi™ Challenge and move into the Simfi™ Performance Stage, the leverage won't change.
+Leverage for Classic Markets:
+Challenge Type
+Forex
+Indicies
+Metals
+Energies
+Crypto
+E8 One
+1:30
+1:15
+1:15
+1:15
+1:1
+E8 Pro
+1:30
+1:15
+1:15
+1:15
+1:1
+E8 Classic
+1:25
+1:30
+1:20
+1:10
+1:3
+​Leverage for Perpetual futures:
+Challenge Type
+Bitcoin
+Ethereum
+Other Crypto instruments
+Stocks
+Indicies
+Metals
+Forex
+Energy
+E8 One
+1:15
+1:15
+1:3
+1:5
+1:15
+1:15
+1:25
+1:15
+E8 Pro
+1:15
+1:15
+1:3
+1:5
+1:15
+1:15
+1:25
+1:15
+E8 Classic
+1:15
+1:15
+1:3
+1:5
+1:30
+1:20
+1:25
+1:10
+Please note that each Perps instrument has its own maximum notional volume - a cap on how much size you can hold in that symbol.
+​
+This comes down to Hyperliquid itself. Perpetual futures are a newer and smaller market than traditional forex or futures - overall volume is lower, and these limits reduce your exposure to slippage. The limits are not fixed - they are recalculated daily based on average order book depth.
+​
+Leverage still allows you to manage larger position value across your account; the cap applies only per instrument.
+​
+You can check the current limit for any instrument here: https://e8x.e8markets.com/trading-symbols
+We understand the importance of risk management, and we believe that focusing on your risk allocation rather than on your leverage is the best way to succeed. We recommend focusing more on the Drawdown rules rather than on the maximum leverage.
+​
+While leverage scales your potential profits, it equally increases your risks. Because you are controlling a larger volume, even a small price movement against you can lead to hitting your guardrails. With overleveraging and larger volumes, a stop-out call can occur, which will result in the closure of your active positions.
+What are the contract sizes?
+Contract size, indicating the number of units bought or sold in a single nominal lot, varies by instrument type (e.g., Forex: 100,000 units; indices: 5-500 units) and is crucial for calculating risk management and expectancy; refer to our Trading symbol list to accurately set take-profits and stop-losses, where you find all details.
+XAUUSD contract size - 100 - you will lose or make 100 dollars per 1 dollar movement (1 lot)
+﻿US30 / NAS100 contract size - 5 - you will lose or make 5 dollars per 1 dollar movement (1 lot)
+﻿SP500 contract size - 20 - you will lose or make 20 dollars per 1 dollar movement (1 lot)
+Example:
+There is an order of 5 lots on XAUUSD where the open price is 4324.00, and the close price is 4326.40; the total profit is 1200 USD.
+​
+​ Calculation:
+The total movement: 2.4 USD
+Contract size:100
+Number of lots: 5
+​
+2.4 (Movement in USD) * 100 (Contract size) * 5 (Number of lots)= 1200 USD
+​
+​
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+The information provided here is for general informational purposes only and should not be considered financial advice.

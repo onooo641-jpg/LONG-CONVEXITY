@@ -1,0 +1,90 @@
+Glossary | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Getting Started: From Sign-Up to First Payout
+Logging In and Credentials
+Plan Comparison Overview
+Maximum Number of Accounts
+Instruments and Commissions
+Billing
+Paying for Your Order
+Market Data, Add-Ons and Fees
+How to Request a Payout
+Taxes and Payout Documents
+Dashboard Stats and Account Chart
+Understanding Futures Contracts And When To Roll
+Market Orders vs. Limit Orders
+Giveaway Rules
+Who Can Sign Up
+DT Wallet FAQ
+Holiday Calendar 2026
+Glossary
+About DayTraders
+Holiday Calendar 2027
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Platforms
+Trading Rules and Guidelines
+Affiliate Program
+Agreements and Disclaimers
+All Collections General Glossary Glossary
+Key DayTraders terms in plain English: account types, drawdown, DLL, QDays, consistency, statuses and more.
+October 22, 2026
+Copy for LLM
+Key DayTraders terms, using the names you'll see across the Help Center.
+Term
+Meaning
+Evaluation
+A simulated account where you prove your strategy by reaching the profit target within the rules.
+Pro Account
+The simulated funded account you activate after passing an evaluation. It earns payouts.
+S2F
+Straight to Funded: a simulated funded account with no evaluation (Instant at checkout).
+S2L
+Straight to Live: a simulated evaluation with a set path to a live account (Live at checkout).
+Live account
+An account that trades in live markets, from S2L or by invitation from the firm.
+Profit target
+The profit you need to pass an evaluation, net of commissions.
+Max drawdown / drawdown level
+The most your account can lose. The drawdown level is the balance you must stay above; touching it fails the account.
+Intraday trailing / EOD trailing / Static
+How the drawdown level moves: with your peak balance in real time, only at the end of each trading day, or never.
+Daily Loss Limit (DLL)
+The most you can lose in one trading day, measured from that day's starting balance. Hitting it pauses the account.
+Trading day
+6:00 PM to 4:59 PM ET the next day.
+Minimum daily profit
+The smallest daily profit that counts toward Qualifying Days and the activity requirement.
+Qualifying Day (QDay)
+A trading day that meets the minimum daily profit, follows the rules and ends within consistency.
+Consistency
+Your best day's profit as a percentage of your total profit. Each plan sets a maximum.
+Failed / Paused / Inactive
+Failed: the drawdown was touched and the account is closed. Paused: the DLL was hit; trading resumes at 6:00 PM ET. Inactive: the activity requirement was missed and the account is closed.
+Dashboard
+Your member area on daytraders.com for accounts, billing, activation and payouts.
+Payout Method
+Where payouts go: your bank through Plane, or your DT Wallet.
+DT Wallet
+DayTraders credit from a payout, usable for one-time purchases. It can't be withdrawn as cash.
+Rithmic / rTrader Pro
+Rithmic provides your accounts' market data and order routing; rTrader Pro is its trading platform.
+Mini / micro
+Contract sizes. 10 micros count as 1 mini toward your max contracts.
+Slippage
+The difference between the price you expected and the price your order filled at.
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+Live Accounts
+Supported Platforms
+About DayTraders
+Getting Started: From Sign-Up to First Payout
+Plan Comparison Overview

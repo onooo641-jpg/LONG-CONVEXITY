@@ -1,0 +1,104 @@
+EOD Pro Account | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+EOD Evaluation
+EOD Pro Account
+EOD Payouts
+EOD Consistency
+EOD Daily Loss Limit
+EOD Drawdown
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Platforms
+Trading Rules and Guidelines
+Affiliate Program
+Agreements and Disclaimers
+All Collections EOD Trail Account EOD Pro Account EOD Pro Account
+EOD Pro Account at a glance: drawdown, contracts, payout rules and how to activate.
+October 22, 2026
+Copy for LLM
+An EOD Pro Account is the simulated funded account you unlock by passing an EOD evaluation. It keeps the evaluation's drawdown type and contract limits.
+At a glance
+25K
+50K
+150K
+300K
+Max drawdown
+$1,000
+$2,000
+$4,000
+$6,500
+Drawdown type
+End-of-day trailing; stops at starting balance
+End-of-day trailing; stops at starting balance
+End-of-day trailing; stops at starting balance
+End-of-day trailing; stops at starting balance
+Daily Loss Limit
+$800
+$1,250
+$2,000
+$3,250
+Max contracts
+6 (60 micros)
+10 (100 micros)
+12 (120 micros)
+40 (400 micros)
+Min. daily profit
+$100
+$200
+$300
+$400
+Consistency (per payout cycle)
+30%
+30%
+30%
+30%
+QDays between payouts
+8
+8
+8
+8
+Max per payout request
+$1,000
+$2,000
+$3,500
+$5,000
+Profit split
+100% (simulated)
+100% (simulated)
+100% (simulated)
+100% (simulated)
+Activation fee
+$5
+$5
+$5
+$5
+Max accounts
+5 EOD (within 15 simulated funded)
+5 EOD (within 15 simulated funded)
+5 EOD (within 15 simulated funded)
+5 EOD (within 15 simulated funded)
+How to activate
+Within 10 days of passing, open the Funded Accounts tab on your Dashboard.
+Click the passed evaluation's account number and sign the Pro Account Agreement.
+Pay the $5 activation fee. Your Pro Account is active within 30 minutes; restart your platform to see it.
+If the account fails
+Touching the drawdown level closes the Pro Account. It can't be reset; start a new evaluation to continue.
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+Trail Evaluation
+Trail Pro Account
+Static Pro Account
+EOD Evaluation
+S2F Account
+On this page
+At a glance
+How to activate
+If the account fails

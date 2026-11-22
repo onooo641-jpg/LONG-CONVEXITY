@@ -1,0 +1,173 @@
+DT Wallet FAQ | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Getting Started: From Sign-Up to First Payout
+Logging In and Credentials
+Plan Comparison Overview
+Maximum Number of Accounts
+Instruments and Commissions
+Billing
+Paying for Your Order
+Market Data, Add-Ons and Fees
+How to Request a Payout
+Taxes and Payout Documents
+Dashboard Stats and Account Chart
+Understanding Futures Contracts And When To Roll
+Market Orders vs. Limit Orders
+Giveaway Rules
+Who Can Sign Up
+DT Wallet FAQ
+Holiday Calendar 2026
+Glossary
+About DayTraders
+Holiday Calendar 2027
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Platforms
+Trading Rules and Guidelines
+Affiliate Program
+Agreements and Disclaimers
+All Collections General DT Wallet FAQ DT Wallet FAQ
+The DT Wallet allows you to receive an approved simulated payout as DayTraders account credit instead of sending the funds to your bank, if you are eligible.
+Updated over a week ago
+Copy for LLM
+Wallet funds are available immediately after payout approval and can be used toward eligible purchases on DayTraders.
+What is the DT Wallet?
+The DT Wallet is a DayTraders account credit balance.
+If you are eligible, you can choose to have an approved simulated payout credited to your DT Wallet instead of receiving it as a bank payout.
+Wallet funds can be used to purchase eligible accounts on DayTraders.
+How does the DT Wallet work?
+When requesting a payout, you may be able to choose where the payout should go:
+Bank
+DT Wallet
+Bank is selected by default.
+If you select DT Wallet and your payout is approved, the funds are credited to your wallet immediately.
+What is the benefit of using the DT Wallet?
+The DT Wallet allows you to use approved payout funds faster.
+Benefits include:
+Instant wallet credit after payout approval
+No bank transfer waiting period
+No transfer fee
+Ability to purchase a new eligible account right away
+The trade-off is that wallet funds remain as DayTraders credit and cannot be withdrawn as cash.
+Can I withdraw DT Wallet funds as cash?
+No.
+DT Wallet funds cannot be withdrawn as cash.
+Wallet funds can only be used for eligible purchases on DayTraders.
+Is the DT Wallet available for all payouts?
+No.
+The DT Wallet is only available for simulated account payouts if you are eligible.
+Live account payouts cannot be sent to the DT Wallet and must be sent to the bank.
+What is the minimum payout amount for the DT Wallet?
+The minimum amount that can be sent to the DT Wallet is:
+$500
+If the payout amount is under $500, the wallet option will not be available.
+Why do I not see the DT Wallet option on my payout request?
+The DT Wallet option may not appear if:
+The payout is under $500
+The payout is from a live account
+The payout is not eligible for wallet credit
+If the wallet option is not shown, the payout will need to be requested through the available payout method.
+When are DT Wallet funds available?
+DT Wallet funds are available immediately after the payout is approved.
+Once approved:
+The payout leaves your trading account
+Your wallet balance is credited
+The funds can be used for eligible purchases
+A confirmation email is sent with the credited amount and updated wallet balance
+Can I change my payout from Wallet back to Bank?
+Once the payout has been approved, the wallet selection cannot be reversed.
+Wallet funds cannot be converted back into a bank payout.
+Please make sure you want the payout credited to your DT Wallet before confirming your request.
+Where can I view my DT Wallet balance?
+You can view your wallet balance from the Wallet section in your DayTraders member area.
+The Wallet page may show:
+Current wallet balance
+Total amount added
+Total amount spent
+Wallet activity history
+Running balance after each wallet movement
+Related account or purchase information
+How can I use my DT Wallet funds?
+DT Wallet funds can be used at checkout for eligible DayTraders purchases. Specifically, the DT Wallet can be used for one-time purchases of evaluations and S2L accounts, including bulk orders.
+If you have an available wallet balance, the wallet payment option may appear alongside other payment options at checkout.
+Can I pay part with Wallet and part with card?
+No, split payments are not supported.
+The DT Wallet must cover the full order amount. If your wallet balance does not cover the full order, you will need to use another payment method.
+What happens if my wallet balance is not enough for the full order?
+If your wallet balance does not cover the full order, the wallet option will not be selectable at checkout.
+The checkout page may show:
+Your available wallet balance
+The remaining amount needed
+A note that the wallet must cover the full order
+Example:
+“$500.00 available, $90.00 short. Wallet must cover the full order.”
+Can I use DT Wallet funds on monthly plans, add-ons or Pro-Accounts?
+No, the DT Wallet can only be used for eligible one-time purchases (Evaluations and S2L).
+Wallet funds cannot be used on monthly plans.
+Are wallet purchases refundable?
+No, purchases made with DT Wallet funds are final and non-refundable.
+Can I buy multiple accounts with my DT Wallet?
+Yes, you can use your DT Wallet for eligible bulk purchases as long as your wallet balance covers the full order amount.
+If the wallet balance does not cover the full order, the wallet cannot be used.
+What if I use my wallet and the account does not appear?
+If a purchase does not complete properly after wallet funds are used, the system may return the funds automatically and provide a reference number.
+If you do not see the account or the returned wallet funds, contact support with:
+Your account email
+The purchase details
+A screenshot of the issue
+Any reference number shown
+Important DT Wallet Rules
+Please keep the following in mind:
+Minimum wallet transfer: $500
+Available for simulated payouts only, if you are eligible
+Live payouts are not eligible
+Cash withdrawals are not available
+Split payments are not supported
+Wallet must cover the full order (Eligible for one-time purchases of Evaluations and S2L. Including bulk orders)
+Monthly plans are not eligible
+Wallet purchases are final and non-refundable
+Approved wallet payouts cannot be reversed back to bank payout
+Summary
+The DT Wallet gives you a faster way to use approved simulated payout funds toward new DayTraders purchases, if you are eligible.
+Key points:
+Wallet funds are credited immediately after payout approval
+Wallet funds can only be used on DayTraders
+Wallet funds cannot be withdrawn as cash
+Wallet funds must cover the full order (Wallet funds can be used for one-time purchases of Evaluations and S2L)
+Wallet funds cannot be used on monthly plans
+Wallet purchases are final
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+Static Payouts
+EOD Payouts
+About DayTraders
+Paying for Your Order
+Glossary
+On this page
+What is the DT Wallet?
+How does the DT Wallet work?
+What is the benefit of using the DT Wallet?
+Can I withdraw DT Wallet funds as cash?
+Is the DT Wallet available for all payouts?
+What is the minimum payout amount for the DT Wallet?
+Why do I not see the DT Wallet option on my payout request?
+When are DT Wallet funds available?
+Can I change my payout from Wallet back to Bank?
+Where can I view my DT Wallet balance?
+How can I use my DT Wallet funds?
+Can I pay part with Wallet and part with card?
+What happens if my wallet balance is not enough for the full order?
+Can I use DT Wallet funds on monthly plans, add-ons or Pro-Accounts?
+Are wallet purchases refundable?
+Can I buy multiple accounts with my DT Wallet?
+What if I use my wallet and the account does not appear?
+Important DT Wallet Rules
+Summary

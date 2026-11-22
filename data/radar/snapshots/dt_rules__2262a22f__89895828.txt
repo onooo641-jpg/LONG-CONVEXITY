@@ -1,0 +1,111 @@
+Supported Platforms | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Platforms
+General Platform information
+Supported Platforms
+Connecting to Rithmic Services
+ArcTrader
+ATAS
+Bookmap
+Finamark
+Onyx
+Jigsaw
+MotiveWave
+NinjaTrader
+Quantower
+Rithmic & R | Trader Pro
+Sierra Charts
+Wealthcharts
+VolFix
+Trading Rules and Guidelines
+Affiliate Program
+Agreements and Disclaimers
+All Collections Platforms General Platform information Supported Platforms Supported Platforms
+Which trading platforms you can use on evaluations, Pro, S2F, S2L and live accounts, including Mac options.
+October 22, 2026
+Copy for LLM
+Evaluations, Pro Accounts, S2F and S2L evaluations all use the same platforms, connected through Rithmic.
+Simulated accounts
+Onyx (recommended): license included; works in a browser, as a Mac desktop app and on mobile.
+Quantower : license included; sign in to the DayTraders.com server with your Rithmic credentials.
+rTrader Pro : Rithmic's order and position tool, and the record of your trade history.
+Other Rithmic platforms : ATAS, Sierra Chart, MotiveWave, Bookmap, Jigsaw, VolFix, Finamark and WealthCharts. Some need their own license or subscription from the provider.
+ArcTrader : coming soon.
+To connect, sign your Rithmic agreements with the credentials on your Dashboard, choose Non-Professional , and select the DayTraders.com system (not Rithmic Paper Trading).
+Live accounts
+Onyx is offered and the free version of Quantower is available. Other platforms need a paid license.
+NinjaTrader is not officially supported. Some traders connect it through Rithmic, but we can't help with setup or connection issues.
+Mac users
+Onyx works on Mac. Rithmic isn't fully compatible with macOS; to use rTrader Pro or other Windows platforms, run Windows with Parallels or VirtualBox, or use the Rithmic Trader web app. These options aren't officially supported.
+DayTraders offers limited support for third-party platforms. For platform issues, contact the platform's support.
+Here’s a list of platform connection guides to help you connect your Rithmic account with third-party trading platforms:
+Platform
+Mobile Compatible
+Mac Compatible
+Copier
+ONYX
+(License Included)
+Yes
+Yes
+-Built-in Trade Copier
+-rTrader Pro Copier compatible
+Quantower
+(License Included)
+No
+No
+-Built-in Trade Copier
+-rTrader Pro Copier compatible
+MotiveWave
+(License needed)
+Yes
+Yes
+-rTrader Pro Copier compatible
+ATAS
+No
+No
+-rTrader Pro Copier compatible
+BookMap
+No
+Yes
+-rTrader Pro Copier compatible
+Finamark
+Yes
+Yes
+-rTrader Pro Copier compatible
+Jigsaw
+No
+No
+-rTrader Pro Copier compatible
+Sierra Chart
+No
+No
+-rTrader Pro Copier compatible
+VolFix
+No
+No
+-rTrader Pro Copier compatible
+Can’t Find My Platform? – Get help for unsupported platforms and find steps to request adding your preferred platform to the system.
+As of today we don't support officially Ninja Trader, MT4, MT5 or Tradingview.
+Use these guides to ensure smooth integration and trading across multiple platforms!
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+Connect WealthCharts to Rithmic
+Onyx Platform FAQ (Rithmic-Powered)
+Connecting Quantower to Rithmic
+Getting Started: From Sign-Up to First Payout
+Market Data, Add-Ons and Fees
+On this page
+Simulated accounts
+Live accounts
+Mac users
+Here’s a list of platform connection guides to help you connect your Rithmic account with third-party trading platforms:

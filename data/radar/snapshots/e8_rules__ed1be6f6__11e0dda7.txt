@@ -1,0 +1,68 @@
+E8 One | E8 Markets Help Center Skip to main content
+E8X Dashboard E8 Markets Website Futures HelpCenter Čeština English हिन्दी Português Español Türkçe English
+E8X Dashboard E8 Markets Website Futures HelpCenter Čeština English हिन्दी Português Español Türkçe English
+Search for articles...
+All Collections
+Products & Rules
+Products
+E8 One
+E8 One
+Updated over 3 weeks ago
+Table of contents
+What is E8 One?
+E8 One offers the most customizable product and a clear 1-Step path to becoming an E8 Performance Trader with uncapped payouts in a single phase that can be passed in one day.
+Available markets:
+Classic Markets, Perpetual Futures.
+​
+​ The market can be selected during checkout, and it affect palet of available instruments and the structure of fees or functions of the trading platform. Other aspects, like drawdowns and overall trading rules, payout mechanism remain the same.
+SimFi™ Challenge rules
+6% Profit Target – Closed profit in your simulated trading account.
+Unlimited Trading Days – There is no time limit, but you need to place and close at least one trade every 60 days.
+3% Daily Drawdown – Your account must not lose more than x% of your initial balance in a single day. The limit you can not exceed is calculated from your starting balance of the day.
+4% Dynamic Drawdown – A moving loss limit based on your highest closed balance. It rises each time you close a profit, then locks at that level until you close more profits. It locks permanently at the initial balance level.
+​ This information is for the preset account. You can still customize some of the parameters at checkout.
+SimFI™ Performance rules
+You will get to the SimFI™ Performance stage once you complete SimFi™ Challenge account by following all rules and reaching the profit target. Users who follow the guardrails and comply with rules and guidelines are eligible to receive up to 100 % of their trading performance and request a payout.
+Trading Rules and Policies:
+Unlimited Trading Days – There is no time limit, but you need to place and close at least one trade every 60 days.
+3% Daily Drawdown – Your account must not lose more than x% of your initial balance in a single day. The limit you can not exceed is calculated from your starting balance of the day.
+4% Dynamic Drawdown – A moving loss limit based on your highest closed balance. It rises each time you close a profit, then locks at that level until you close more profits. It locks permanently at the initial balance level.
+Criteria for the payout:
+40% Best Day rule - With a 40% best-day rule, you must ensure that no single trading day exceeds more than 40% of your total generated profits.
+Your net profit (payout) must be greater than 50% of your daily drawdown.
+Example: If you have a $100,000 account and your daily drawdown is 4%, the minimum amount required for a payout is $2,001.
+Please note that at certain scenarios, you should leave a buffer when you are requesting a payout.
+News trading
+In phase 1, you can trade news without any restrictions.
+In the SimFI™ Performance account, trading is strictly prohibited during high-impact news events. This prohibition period begins 5 minutes before the scheduled news release and ends 5 minutes after the release. While the platform will not technically prevent you from managing trades during this window, doing so is not permitted, and any profits generated may be subject to removal.
+​ During the prohibition period, users must not:
+a. Opening new trades (Market Execution/Limit orders).
+b. Closing trades (Market Execution/Limit orders).
+c. Stop/Loss and Take/Profit
+d. Buy Stop and Sell Stop
+​
+To see all restricted news events and to see more information, you can access this article here .
+Is there a consistency rule?
+During the SimFI™ challenge stage, there is no consistency rule, however, on the SimFI™ Performance account, there is a 40% Best Day rule - With a 40% best-day rule, you must ensure that no single trading day exceeds more than 40% of your total generated profits.
+Copy trading rules
+E8 Markets allows copy trading across all accounts, including SimFi™ challenge and SimFI™ Performance accounts or other personal accounts, as long as these accounts belong to you.
+What is the available leverage ? (Classic Markets)
+Forex 1:30
+﻿Indices: 1:15
+﻿metals 1:15
+﻿Crypto 1:1
+What is the available leverage ? (Perpetual Futures)
+Bitcoin 1:15
+Ethereum 1:15
+Other Crypto Instruments 1:2
+Stocks 1:5
+Indices 1:15
+Metals 1:15
+Forex 1:25
+Energy 1:15
+Note that Perpetual Futures accounts offer only the Netting system. More about the Hedging and Netting system here .
+Other trading rules
+There are other rules regarding the Hedging policies, all-or-nothing Trading and Irresponsible Trading in Simulated Accounts. All these additional rules with detailed explanations can be accessed here .
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+The information provided here is for general informational purposes only and should not be considered financial advice.

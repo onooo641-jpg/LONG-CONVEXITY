@@ -1,0 +1,56 @@
+Dollar Cost Averaging (DCA) | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Platforms
+Trading Rules and Guidelines
+Minimum Activity Policy
+No Martingale
+No High-Frequency Trading
+No Hedging
+Dollar Cost Averaging (DCA)
+Automation, AI and Trade Copiers
+Trading Hours, Holidays and Overnight Positions
+Contract Limits
+Account Sharing, VPN/VPS and Code of Conduct
+Rule Violations and Account Status
+Qualifying Days (QDays)
+Affiliate Program
+Agreements and Disclaimers
+All Collections Trading Rules and Guidelines Dollar Cost Averaging (DCA) Dollar Cost Averaging (DCA)
+DCA (adding to an open position) is allowed on every plan within your max contracts. Here's how it differs from Martingale.
+October 22, 2026
+Copy for LLM
+Dollar Cost Averaging (DCA) is allowed on every plan: evaluations, Pro Accounts, S2F, S2L and live accounts.
+What DCA is
+DCA means building a position in parts at different prices instead of entering all at once, so your average entry price reflects each fill. It's allowed as long as your total open position stays within your max contracts.
+Example (10-contract account): you buy 2 ES, then add 2 more at a lower price. Your 4 contracts have one average entry price, and you're still within your 10-contract limit.
+Your drawdown level and any Daily Loss Limit still apply to the whole position, including open losses.
+DCA vs Martingale
+DCA (allowed)
+Martingale (prohibited)
+What you do
+Add to an open position
+Double the size of new trades after closed losses
+Size limit
+Within your max contracts
+Keeps growing until a win or the account fails
+Repeatedly doubling size on new trades after losses is Martingale, even if each trade stays within your max contracts.
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+S2F Account
+No Martingale
+Contract Limits
+Glossary
+Plan Comparison Overview
+On this page
+What DCA is
+DCA vs Martingale

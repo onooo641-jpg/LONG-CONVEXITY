@@ -1,0 +1,69 @@
+Dynamic drawdown | E8 Markets Help Center Skip to main content
+E8X Dashboard E8 Markets Website Futures HelpCenter Čeština English हिन्दी Português Español Türkçe English
+E8X Dashboard E8 Markets Website Futures HelpCenter Čeština English हिन्दी Português Español Türkçe English
+Search for articles...
+All Collections
+Products & Rules
+Guardrails
+Dynamic drawdown
+Dynamic drawdown
+September 23, 2026
+Table of contents
+Available for: E8 One
+​
+Dynamic Drawdown refers to the calculation based on the last Highest Closed Balance. In simple terms, it increases as you increase the balance by closing profits.
+Quick Explanation (Read this first)
+Your Loss Level rises only when you close a profit, NOT when your equity increases.
+After you close early profits and the Loss Level rises, it locks at that new level until you raise it again with more closed profits.
+Translation: We count what you keep, not what you almost had.
+Once your account reaches a closed profit in the amount of Dynamic Drawdown, the Drawdown locks, becomes fully static , and won't move further anymore.
+Note: Swing traders aren’t punished for floating P&L while they hold a profitable trade.
+Definitions you need to know
+Highest Closed Balance: the highest balance your account has ever reached.
+Loss Level: Limit above which you must stay.
+Numbers in context
+How to calculate: Highest Closed Balance - Drawdown amount (6%) = Loss level
+​ You close $x amount profit, Loss Level increases by $x until it locks at the initial balance
+​
+This is how your account's Dynamic Drawdown looks at the beginning, before you start trading:
+Starting Balance
+Dynamic Drawdown (6%)
+Loss level (You must stay above)
+$100,000
+$6,000
+$94,000
+And this is how Dynamic Drawdown changes based on the profits you actually close:
+Example
+What happens?
+Balance
+Loss Level
+Start with $100,000
+$100,000
+$94,000
+You close +$2k profit
+(Loss level rises by 2k)
+$102,000
+$96,000
+You close -$3k loss
+(Loss Level stays)
+$99,000
+$96,000
+You close +$1k profit
+(Loss Level stays)
+$100,000
+$96,000
+You close +$7k profit
+(Loss level raises by 4k and locks forever at the initial balance level)
+$107,000
+$100,000
+How to use the Dashboard to your advantage
+Remember that you can always rely on your Dashboard data
+Go to your dashboard, check your account loss analysis of the account, and follow your Loss Levels .
+Please note that if your account equity or balance reaches/falls below the loss level, your account will be permanently closed for breaching the Dynamic Drawdown rule.
+​
+After the account breaches your loss level, the system will enforce closing the position automatically, which might take a while. This might result in closing your balance above the loss level; however, closing your balance above the loss level after you breach the drawdown level won't prevent the account from being violated and permanently closed.
+Note: In certain scenarios, you should leave a buffer when you are requesting a payout.
+The percentage amount of the Dynamic Drawdown (6% in this example) can be customized at checkout when you are creating the order.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+The information provided here is for general informational purposes only and should not be considered financial advice.

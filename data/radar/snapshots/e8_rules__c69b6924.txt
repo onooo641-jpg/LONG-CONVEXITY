@@ -1,0 +1,73 @@
+40% best day rule (challenge) | E8 Markets Help Center Futures Skip to main content
+E8X Dashboard E8 Markets Website Classic Markets & Perpetuals Helpcenter Čeština English हिन्दी Português Español English
+E8X Dashboard E8 Markets Website Classic Markets & Perpetuals Helpcenter Čeština English हिन्दी Português Español English
+Search for articles...
+All Collections
+Products & Rules
+Guardrails
+40% best day rule (challenge)
+40% best day rule (challenge)
+August 4, 2026
+Table of contents
+This rule is available for E8 Zero Max and Starter in the challenge stage.
+​
+(or E8 One , E8 One Crypto in the Performance stage, which has a different article because in the performance stage, the mechanic of best day works a little bit differently).
+​
+Why it exists (your upside): Whether you are trading simulated capital with E8 or your own capital elsewhere, consistency is the only thing that scales. This rule protects you from the "one-hit wonder" syndrome, helping you develop the discipline needed to manage accounts in the long term.
+​
+Quick Explanation (Read this first)
+Your profit should not exceed 40% of the total profit target in a single day. If it does, your profit target increases by the amount you made over that limit.
+Plain English: stay consistent. If you have one huge profit day early on, it won't count fully toward your target. You will effectively need to hit a higher total profit until that big day no longer makes up more than 40% of your total.
+Numbers in context ($6,000 profit target)
+40% of your $6,000 profit target = $2,400 . That means no single day can exceed $2,400 in profit. If a day exceeds this, your effective profit target increases.
+​ A) Profit target achieved ✅
+Day
+Profit
+Day 1
++$2,000
+Day 2
++$2,000
+Day 3
++$2,000
+Total profit: $6,000 (target reached)
+​
+Best Day: $2,000 → Valid (below $2,400 cap)
+Note: No day exceeds 40% of the target, so the $6,000 target is fully valid — challenge passed.
+​
+Also valid — right at the limit:
+Day
+Profit
+Day 1
++$2,400
+Day 2
++$2,400
+Day 3
++$1,200
+Total profit: $6,000
+Best Day: $2,400 → Valid (exactly at the 40% cap)
+B) Profit target increases ❌
+Day
+Profit
+Day 1
++$2,500 (Best Day)
+Day 2
++$2,000
+Day 3
++$1,500
+Total profit: $6,000 (nominally hits the target)
+​
+Best Day: $2,500 → Invalid (exceeds $2,400 cap)
+​ Note: Because the Best Day exceeds 40% of $6,000, the profit target increases. The new effective target becomes $2,500 ÷ 0.40 = $6,250. The trader needs to keep trading without beating the $2,500 Best Day until Total Profit reaches $6,250 for the target to actually count.
+How to use the Dashboard to your advantage
+Remember that you can always rely on your Dashboard data
+Go to your dashboard, check your payout overview, and hover over the (i) icon in the best day rule section, and you will be able to check:
+​
+1. What is the total amount of profits your account must reach.
+2. How much is remaining to fulfill the best day rule.
+Intentionally attempting to bypass the Best Day Rule by splitting a large winning position through hedging or partial closures is not allowed and may result in all profit from that position being consolidated into a single day.
+Example: Partially closing a large winning position across multiple days. It may be viewed as an attempt to bypass the rule, especially if the profit is generated during a single-day market movement.
+Example: Opening several positions on a given instrument on one day and closing them across multiple days. Such positions may be considered a single trade idea. It may be viewed as an attempt to bypass the rule, especially if the trade idea capitalizes on a single-day market movement.
+Example: Immediate opening, closing and re-opening a position held across multiple days. It may be viewed as an attempt to bypass the rule because such positions are considered a single trade idea with identical market exposure.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+The information provided here is for general informational purposes only and should not be considered financial advice.

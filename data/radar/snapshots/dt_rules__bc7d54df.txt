@@ -1,0 +1,49 @@
+No High-Frequency Trading | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Platforms
+Trading Rules and Guidelines
+Minimum Activity Policy
+No Martingale
+No High-Frequency Trading
+No Hedging
+Dollar Cost Averaging (DCA)
+Automation, AI and Trade Copiers
+Trading Hours, Holidays and Overnight Positions
+Contract Limits
+Account Sharing, VPN/VPS and Code of Conduct
+Rule Violations and Account Status
+Qualifying Days (QDays)
+Affiliate Program
+Agreements and Disclaimers
+All Collections Trading Rules and Guidelines No High-Frequency Trading No High-Frequency Trading
+High-frequency trading (HFT) is prohibited on every plan. Here's what counts as HFT and what happens if it's detected.
+October 22, 2026
+Copy for LLM
+High-Frequency Trading (HFT) isn't allowed on any account. Automation is allowed as long as it doesn't trade in an HFT style.
+What counts as HFT
+Systems that place, modify or cancel orders in milliseconds or at extremely high speed.
+Executing hundreds or thousands of trades per second or minute.
+Order spamming, or repeatedly placing and canceling orders at high speed.
+Latency-based strategies that exploit price differences in milliseconds or microseconds.
+Excessive trade volume over very short periods.
+Why it's prohibited
+HFT creates unfair advantages and can overload trading systems. Keeping it out gives every trader the same conditions.
+Consequences
+Trade frequency, volume and execution patterns are monitored. An account suspected of HFT is suspended pending review. If a prohibited strategy is confirmed, all accounts involved are closed and unpaid profits on them are forfeited. Serious or repeat violations lead to a full ban. Payouts approved before the finding are honored.
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+Automation, AI and Trade Copiers
+On this page
+What counts as HFT
+Why it's prohibited
+Consequences

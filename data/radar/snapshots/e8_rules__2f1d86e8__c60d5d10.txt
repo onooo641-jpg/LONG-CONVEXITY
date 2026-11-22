@@ -1,0 +1,8 @@
+2 % Price lock limit on futures | E8 Markets Help Center Skip to main content 2 % Price lock limit on futures
+May 14, 2026
+The price limit is the maximum price range allowed for a futures contract in each trading session.
+​﻿
+First, you need to check the price limits of each instrument here: https://www.cmegroup.com/trading/price-limits.html#metals
+﻿​
+﻿If you want to trade, for example, S&P 500 (ESH25) - (current price limit is 7 %), you should not be trading this instrument if the % change during the day exceeds 5% up or down (7% Price Limit minus the 2% product lock limit).
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃

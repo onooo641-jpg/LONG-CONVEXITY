@@ -1,0 +1,79 @@
+Understanding Futures Contracts And When To Roll | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Getting Started: From Sign-Up to First Payout
+Logging In and Credentials
+Plan Comparison Overview
+Maximum Number of Accounts
+Instruments and Commissions
+Billing
+Paying for Your Order
+Market Data, Add-Ons and Fees
+How to Request a Payout
+Taxes and Payout Documents
+Dashboard Stats and Account Chart
+Understanding Futures Contracts And When To Roll
+Market Orders vs. Limit Orders
+Giveaway Rules
+Who Can Sign Up
+DT Wallet FAQ
+Holiday Calendar 2026
+Glossary
+About DayTraders
+Holiday Calendar 2027
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Platforms
+Trading Rules and Guidelines
+Affiliate Program
+Agreements and Disclaimers
+All Collections General Understanding Futures Contracts And When To Roll Understanding Futures Contracts And When To Roll
+Futures contracts expire monthly. Traders can close, roll over, or settle positions to avoid delivery and maintain market exposure.
+October 22, 2026
+Copy for LLM
+Lifespan of a Futures Contract
+Futures contracts have a defined lifespan, and understanding this can significantly affect your trading strategy and exit decisions. Two key aspects to keep in mind are expiration and rollover .
+Contract Expiration Explained
+The expiration date of a futures contract marks the last day on which you can trade that contract. This usually happens on the third Friday of the expiration month but can vary depending on the specific contract.
+** Important Note: Certain instruments have different rollover and expiration dates. Please ensure you verify the specific dates for the instrument you are trading. Access all relevant dates and quotes here .
+Before the contract expires, you have three main options:
+Close Your Position
+Closing your position is the most common and straightforward way to exit a trade. By doing so, you can realize any gains or losses without having to deal with the actual physical or cash delivery of the underlying asset.
+To close a position, you execute an opposite transaction of equal size. For instance, if you are short two WTI Crude Oil contracts that expire in September, you would need to buy two WTI Crude Oil contracts expiring in the same month. The difference between your original trade and the close will determine your profit or loss.
+Rollover to a New Contract
+Rollover refers to the process of shifting your position from an expiring contract to one with a later expiration date. Traders typically decide when to roll over by monitoring the volume of both the current and next contract months. When the new contract month’s volume reaches a certain threshold, traders may choose to switch.
+To roll forward, you close your current position while simultaneously establishing a new one in the next contract month. For example, if you hold four S&P 500 futures contracts expiring in September, you would sell those and buy four new contracts expiring in December or a later month.
+Settlement at Expiration
+If you don’t close or roll your position before the contract’s expiration, the contract will go to settlement. This means you will be obligated to fulfill the terms of the contract. If you're holding a short position, this could involve delivering the underlying asset, either physically or through a cash settlement, depending on the type of contract.
+Managing Expiration and Rollover
+Having a strategy for handling contract expiration and rollover is essential to effective futures trading. Your approach will directly influence the outcome of your trades, making it crucial to decide in advance whether you plan to close, roll over, or settle your positions. You can learn more directly from the CME here: Understanding Futures Expiration & Contract Roll
+Ensure you are trading the most current contract month with the highest volume for your instrument. Account breaches due to trading the incorrect contract will not be refunded or reset. Below is a list of commonly traded instruments. For a comprehensive list of instruments and their quotes, please visit the CME Group Website .
+Instrument
+Quote Link
+NQ (NASDAQ-100)
+CME NQ Quotes
+ES (S&P 500)
+CME ES Quotes
+YM (DOW JONES)
+CME YM Quotes
+GC (GOLD)
+CME Gold Quotes
+CL (CRUDE OIL)
+CME Oil Quotes
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+Rithmic/rTrader Pro: How to place a Trade
+On this page
+Lifespan of a Futures Contract
+Contract Expiration Explained
+Close Your Position
+Rollover to a New Contract
+Settlement at Expiration
+Managing Expiration and Rollover

@@ -1,0 +1,66 @@
+Trail Drawdown | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Intraday Trail Accounts
+Trail Evaluation
+Trail Pro Account
+Trail Payouts
+Trail Consistency
+Trail Drawdown
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Platforms
+Trading Rules and Guidelines
+Affiliate Program
+Agreements and Disclaimers
+All Collections Intraday Trail Accounts Trail Drawdown Trail Drawdown
+How the Trail intraday trailing drawdown works and where it stops, by size.
+Updated over a month ago
+Copy for LLM
+Trail accounts use an intraday trailing drawdown : the level follows your highest balance in real time, including open profit, and never moves down. Touching it fails the account.
+How it works
+It starts at your starting balance minus the max drawdown.
+Evaluation: the trailing drawdown stops trailing once it reaches your profit-target balance.
+Pro Account: it starts again at the full max drawdown and stops at your starting balance.
+The table below shows the values at which the trailing drawdown stops increasing. In other words, once the drawdown value reaches the values in this table it will stop increasing.
+Size
+Max drawdown
+Starts at
+Evaluation: stops at
+Pro: stops at
+25K
+$1,500
+$23,500
+$26,500
+$25,000
+50K
+$2,500
+$47,500
+$53,000
+$50,000
+150K
+$4,500
+$145,500
+$158,500
+$150,000
+300K
+$7,000
+$293,000
+$315,000
+$300,000
+Example (50K): the level starts at $47,500. If your balance peaks at $52,000, it moves to $49,500.
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+Trail Evaluation
+Trail Pro Account
+EOD Drawdown
+S2F Drawdown
+S2L Drawdown
+On this page
+How it works

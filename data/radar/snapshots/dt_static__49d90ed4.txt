@@ -1,0 +1,49 @@
+Static Drawdown | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Intraday Trail Accounts
+Static Accounts
+Static Evaluation
+Static Pro Account
+Static Payouts
+Static Consistency
+Static Drawdown
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Platforms
+Trading Rules and Guidelines
+Affiliate Program
+Agreements and Disclaimers
+All Collections Static Accounts Static Drawdown Static Drawdown
+How the Static fixed drawdown works, with drawdown levels for each size.
+October 22, 2026
+Copy for LLM
+Static accounts have a fixed drawdown level that never moves, in the evaluation and in the Pro Account. If your balance touches it at any time, including open losses, the account fails.
+Size
+Max drawdown
+Drawdown level (fixed)
+25K
+$750
+$24,250
+50K
+$1,000
+$49,000
+100K
+$1,500
+$98,500
+150K
+$1,750
+$148,250
+Example (100K): the level is $98,500. Even if your balance grows to $106,000, it stays at $98,500.
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+Trail Drawdown
+Static Evaluation
+Static Pro Account
+EOD Drawdown
+S2F Drawdown

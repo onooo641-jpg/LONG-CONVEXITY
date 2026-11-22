@@ -1,0 +1,91 @@
+ArcTrader Platform Overview | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+ArcTrader Platform Overview
+How to Sign into ArcTrader
+ArcTrader Charting
+Trading
+Additional Features
+General
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Platforms
+Trading Rules and Guidelines
+Affiliate Program
+Agreements and Disclaimers
+All Collections ArcTrader ArcTrader Platform Overview ArcTrader Platform Overview
+ArcTrader is DayTraders’ in-house trading platform built to give traders access to charting, order placement, account management, and market monitoring tools in one workspace.
+Updated over a week ago
+Copy for LLM
+Use your Rithmic credentials to sign into ArcTrader
+With ArcTrader, traders can view charts, monitor symbols, manage orders, track positions, use Depth of Market, access watchlists, and manage account activity directly from the platform.
+ArcTrader includes many advanced charting features, including multiple chart layouts, chart trading tools, order tickets, bid/ask lines, Japanese chart types, drawing tools, and more.
+What is ArcTrader?
+ArcTrader allows traders to:
+View live charts
+Search and select symbols
+Place trades
+Manage open positions
+Review working orders
+Monitor account status
+View account balance and P&L
+Access order entry tools
+Use Depth of Market
+Organize symbols and layouts
+Use drawing tools and indicators
+Main Platform Areas
+ArcTrader may include:
+Trading
+Main trading workspace
+Used for charts, orders, positions, and account activity
+Copier
+Used for copy trading functionality when available
+Stats
+Used to review account or performance-related information when available
+Chart Area
+Displays the selected symbol and price movement
+Order Ticket
+Used to place Market, Limit, and Stop orders
+DOM
+Used to view Depth of Market and place orders from the ladder when supported
+Account Manager
+Displays positions, orders, order history, account balance, P&L, and drawdown information
+What Can You Do in ArcTrader?
+Depending on your account access, ArcTrader may allow you to:
+Select a trading account
+Select a market symbol
+Change chart timeframe
+Add indicators
+Use drawing tools
+Place Buy or Sell orders
+Use Market, Limit, and Stop orders
+Add Take Profit exits
+Add Stop Loss exits
+View open positions
+View working orders
+Review order history
+View account status
+View account balance
+View open P&L
+View daily closed P&L
+View drawdown information
+Flatten open positions
+Content and resources provided by DayTraders.com , including simulated trading environments, are for educational purposes only. Past performance is not necessarily indicative of future results.
+Services are exclusively for non-professional traders.
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+Watchlist
+Account Manager
+Chart Trading
+ArcTrader Platform Overview
+Multiple-Chart Layouts in ArcTrader
+On this page
+What is ArcTrader?
+Main Platform Areas
+What Can You Do in ArcTrader?

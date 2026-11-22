@@ -1,0 +1,66 @@
+S2F Payouts | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+S2F Account
+S2F Payouts
+S2F Consistency
+S2F Daily Loss Limit
+S2F Drawdown
+Live & S2L Program
+Platforms
+Trading Rules and Guidelines
+Affiliate Program
+Agreements and Disclaimers
+All Collections S2F (Straight-to-Sim-Funded) Accounts S2F Payouts S2F Payouts
+S2F payouts: eligibility, profit targets per cycle and max per request.
+October 22, 2026
+Copy for LLM
+S2F accounts pay out 100% of simulated profit. Requests start at $500 , in $50 increments.
+Eligibility
+10 Qualifying Days since your last payout or purchase. The day you request doesn't count.
+The cycle's profit target is reached, counting only profit made since your last payout (or since purchase).
+Your best day is no more than 20% of the cycle's profit.
+A Payout Method is set up (Plane or DT Wallet).
+Targets and limits
+25K
+50K
+150K
+Profit target 1
+$2,000
+$3,500
+$10,000
+Profit target 2
+$1,500
+$3,000
+$5,000
+Profit target 3+
+$1,000
+$2,500
+$3,500
+Max per request
+$1,000
+$2,000
+$3,000
+Example (50K): your first payout needs $3,500 profit (balance $53,500); you can then request up to $2,000.
+Requesting a payout
+On your Dashboard, click Request Payout , choose the account and amount, and submit. Place at least one trade afterwards so the payout shows on your charts.
+If you're called to live: your simulated accounts are closed. Excess simulated balances are generally forfeited, but they may be used as performance rewards in live, subject to the Risk Team's discretion. If you are not comfortable with this, do not build large excess simulated balances.
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+Trail Payouts
+Static Payouts
+EOD Payouts
+S2F Account
+S2F Consistency
+On this page
+Eligibility
+Targets and limits
+Requesting a payout

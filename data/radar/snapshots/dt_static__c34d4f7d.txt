@@ -1,0 +1,66 @@
+Static Payouts | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Intraday Trail Accounts
+Static Accounts
+Static Evaluation
+Static Pro Account
+Static Payouts
+Static Consistency
+Static Drawdown
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Platforms
+Trading Rules and Guidelines
+Affiliate Program
+Agreements and Disclaimers
+All Collections Static Accounts Static Payouts Static Payouts
+Static Pro Account payouts: eligibility, balance limits by size and how to request.
+October 22, 2026
+Copy for LLM
+Static Pro Accounts have a 100% split of eligible simulated profit. Requests start at $500 , in $50 increments.
+Eligibility
+8 Qualifying Days since your last payout or activation. The day you request doesn't count.
+Your best day is no more than 30% of the cycle's profit.
+Your balance is at or above the minimum to request, and stays at or above the minimum after the payout.
+A Payout Method is set up (Plane or DT Wallet).
+Limits by size
+Size
+Min. balance to request
+Min. balance after payout
+Max per request
+25K
+$26,600
+$26,000
+$1,000
+50K
+$52,600
+$52,000
+$2,000
+100K
+$103,500
+$103,000
+$3,000
+150K
+$155,100
+$153,500
+$3,500
+Requesting a payout
+On your Dashboard, click Request Payout , choose the account and amount, and submit. Place at least one trade afterwards so the payout shows on your charts. Payouts approved before the daily reports load (5:00–6:00 PM ET) are reflected the same day.
+If you're called to live: your simulated accounts are closed. Excess simulated balances are generally forfeited, but they may be used as performance rewards in live, subject to the Risk Team's discretion. If you are not comfortable with this, do not build large excess simulated balances.
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+Trail Payouts
+Static Pro Account
+EOD Payouts
+S2F Payouts
+How to Request a Payout
+On this page
+Eligibility
+Limits by size
+Requesting a payout

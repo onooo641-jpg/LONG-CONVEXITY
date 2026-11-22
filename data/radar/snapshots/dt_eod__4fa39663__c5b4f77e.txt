@@ -1,0 +1,46 @@
+S2F Daily Loss Limit | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+S2F Account
+S2F Payouts
+S2F Consistency
+S2F Daily Loss Limit
+S2F Drawdown
+Live & S2L Program
+Platforms
+Trading Rules and Guidelines
+Affiliate Program
+Agreements and Disclaimers
+All Collections S2F (Straight-to-Sim-Funded) Accounts S2F Daily Loss Limit S2F Daily Loss Limit
+S2F Daily Loss Limit by size and what happens when you hit it.
+October 22, 2026
+Copy for LLM
+S2F accounts have a Daily Loss Limit (DLL) : the most you can lose in one trading day. It's separate from the max drawdown.
+Size
+Daily Loss Limit
+25K
+None
+50K
+$1,250
+150K
+$3,750
+If you hit it
+Open positions are closed and the account is Paused until the next trading day starts (6:00 PM ET). It isn't failed.
+The DLL is measured from your balance at the start of the day. It doesn't trail intraday.
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+EOD Daily Loss Limit
+S2F Account
+S2F Drawdown
+S2L Daily Loss Limit
+Plan Comparison Overview
+On this page
+If you hit it

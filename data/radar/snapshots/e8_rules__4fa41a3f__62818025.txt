@@ -1,0 +1,330 @@
+Instrument list and trading hours | E8 Markets Help Center Futures Skip to main content
+E8X Dashboard E8 Markets Website Classic Markets & Perpetuals Helpcenter Čeština English हिन्दी Português Español English
+E8X Dashboard E8 Markets Website Classic Markets & Perpetuals Helpcenter Čeština English हिन्दी Português Español English
+Search for articles...
+All Collections
+Trading Platforms
+Instrument list and trading hours
+Instrument list and trading hours
+October 2, 2026
+Below is the tab, where you can see the general market hours and available instruments with listed fees for E8 Signature and E8 Zero Futures.
+​
+Please note that the trading hours that we permit on Futures are between 17:15 to 15:10 CT - meaning all open positions are being forced to close every day at 15:10 CT
+Times are based in CT
+CME Equity Futures:
+Symbol
+Instrument
+Trading Hours (Sunday to Friday)
+Commission (RT)
+Exchange and NFA (RT)
+Clearing (RT)
+EMD
+E-mini S&P MidCap 400
+17:00 - 16:00 CT
+$2.58
+$0.52
+$0.38
+ES
+E-mini S&P 500
+17:00 - 16:00 CT
+$2.58
+$2.80
+$0.38
+MES
+Micro E-mini S&P
+17:00 - 16:00 CT
+$0.78
+$0.74
+$0.38
+NKD
+Nikkei
+17:00 - 16:00 CT
+$2.58
+$2.80
+$0.38
+NQ
+E-mini NASDAQ 100
+17:00 - 16:00 CT
+$2.58
+$2.80
+$0.38
+MNQ
+Micro E-mini NASDAQ 100
+17:00 - 16:00 CT
+$0.78
+$0.74
+$0.38
+RTY
+E-mini Russell 2000
+17:00 - 16:00 CT
+$2.58
+$2.80
+$0.38
+M2K
+Micro E-mini Russell 2000
+17:00 - 16:00 CT
+$0.78
+$0.74
+$0.38
+MBT
+Micro E-mini Bitcoin
+17:00 - 16:00 CT
+$0.78
+$2.04
+$0.38
+MET
+Micro E-mini Ether
+17:00 - 16:00 CT
+$0.78
+$2.04
+$0.38
+CME Foreign Exchange Futures:
+Symbol
+Instrument
+Trading Hours (Sunday to Friday)
+Commission (RT)
+Exchange and NFA (RT)
+Clearing (RT)
+6A
+Australian $
+17:00 - 16:00 CT
+$2.58
+$3.24
+$0.38
+M6A
+Micro AUD/USD
+17:00 - 16:00 CT
+$0.78
+$0.52
+$0.38
+6B
+British Pound
+17:00 - 16:00 CT
+$2.58
+$3.24
+$0.38
+M6B
+Micro British Pound
+17:00 - 16:00 CT
+$0.78
+$0.52
+$0.38
+6C
+Canadian $
+17:00 - 16:00 CT
+$2.58
+$3.24
+$0.38
+6E
+Euro FX
+17:00 - 16:00 CT
+$2.58
+$3.24
+$0.38
+7E
+E-mini Euro FX
+17:00 - 16:00 CT
+$2.58
+$1.74
+$0.38
+M6E
+Micro Euro
+17:00 - 16:00 CT
+$0.78
+$0.52
+$0.38
+MCD
+Micro CAD/USD
+17:00 - 16:00 CT
+$0.78
+$0.52
+$0.38
+6J
+Japanese Yen
+17:00 - 16:00 CT
+$2.58
+$3.24
+$0.38
+6S
+Swiss Franc
+17:00 - 16:00 CT
+$2.58
+$3.24
+$0.38
+6M
+Mexican Peso
+17:00 - 16:00 CT
+$2.58
+$3.24
+$0.38
+6N
+New Zealand $
+17:00 - 16:00 CT
+$2.58
+$3.24
+$0.38
+CME Agricultural Futures:
+Symbol
+Instrument
+Trading Hours (Monday to Friday)
+Commission (RT)
+Exchange and NFA (RT)
+Clearing (RT)
+LE
+Live Cattle
+17:00 - 16:00 CT
+$2.58
+$4.24
+$0.38
+HE
+Lean Hogs
+17:00 - 16:00 CT
+$2.58
+$4.24
+$0.38
+NYMEX Futures:
+symbol
+Instrument
+Trading Hours (Sunday to Friday)
+Commission (RT)
+Exchange and NFA (RT)
+Clearing (RT)
+CL
+Crude Oil
+17:00 - 16:00 CT
+$2.58
+$3.04
+$0.38
+MCL
+Micro Crude Oil
+17:00 - 16:00 CT
+$0.78
+$1.04
+$0.38
+QM
+E-mini Crude Oil
+17:00 - 16:00 CT
+$2.58
+$2.44
+$0.38
+NG
+Natural Gas
+17:00 - 16:00 CT
+$2.58
+$3.24
+$0.38
+QG
+E-mini Natural Gas
+17:00 - 16:00 CT
+$2.58
+$1.04
+$0.38
+HO
+Heating Oil
+17:00 - 16:00 CT
+$2.58
+$4.24
+$0.38
+CBOT Commodity Futures:
+Symbol
+Instrument
+Trading Hours (Sunday to Friday)
+Commission (RT)
+Exchange and NFA (RT)
+Clearing (RT)
+ZC
+Corn
+19:00 - 13:20 CT
+​
+$2.58
+$4.24
+$0.38
+ZW
+Wheat
+19:00 - 13:20 CT
+$2.58
+$4.24
+$0.38
+ZS
+Soybeans
+19:00 - 13:20 CT
+$2.58
+$4.24
+$0.38
+ZM
+Soybean Meal
+19:00 - 13:20 CT
+$2.58
+$4.24
+$0.38
+ZL
+Soybean Oil
+19:00 - 13:20 CT
+​
+$2.58
+$4.24
+$0.38
+CME CBOT Equity Futures:
+Symbol
+Instrument
+Trading Hours (Sunday to Friday)
+Commission (RT)
+Exchange and NFA (RT)
+Clearing (RT)
+YM
+Mini-DOW
+17:00 - 16:00 CT
+$2.58
+$2.80
+$0.38
+MYM
+Micro Mini-DOW
+17:00 - 16:00 CT
+$0.78
+$0.74
+$0.38
+COMEX Futures:
+Symbol
+Instrument
+Trading Hours (Sunday to Friday)
+Commission (RT)
+Exchange and NFA (RT)
+Clearing (RT)
+GC
+Gold
+17:00 - 16:00 CT
+$2.58
+$3.24
+$0.38
+MGC
+Micro Gold
+17:00 - 16:00 CT
+$0.78
+$1.24
+$0.38
+SI
+Silver
+17:00 - 16:00 CT
+$2.58
+$3.24
+$0.38
+HG
+Copper
+17:00 - 16:00 CT
+$2.58
+$3.24
+$0.38
+PL
+Platinum
+17:00 - 16:00 CT
+$2.58
+$3.24
+$0.38
+PA
+Palladium
+17:00 - 16:00 CT
+$2.58
+$3.24
+$0.38
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+The information provided here is for general informational purposes only and should not be considered financial advice.

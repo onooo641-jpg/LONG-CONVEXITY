@@ -1,0 +1,60 @@
+Getting Started: From Sign-Up to First Payout | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Getting Started: From Sign-Up to First Payout
+Logging In and Credentials
+Plan Comparison Overview
+Maximum Number of Accounts
+Instruments and Commissions
+Billing
+Paying for Your Order
+Market Data, Add-Ons and Fees
+How to Request a Payout
+Taxes and Payout Documents
+Dashboard Stats and Account Chart
+Understanding Futures Contracts And When To Roll
+Market Orders vs. Limit Orders
+Giveaway Rules
+Who Can Sign Up
+DT Wallet FAQ
+Holiday Calendar 2026
+Glossary
+About DayTraders
+Holiday Calendar 2027
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Platforms
+Trading Rules and Guidelines
+Affiliate Program
+Agreements and Disclaimers
+All Collections General Getting Started: From Sign-Up to First Payout Getting Started: From Sign-Up to First Payout
+The steps from buying your first account to your first payout, and when you can start trading.
+October 22, 2026
+Copy for LLM
+Here's the path from sign-up to your first payout on an evaluation plan (Trail, Static or EOD).
+Buy an account. Register and verify your email, then choose a plan, size and billing (Monthly or Lifetime) at daytraders.com/#pricing . Accounts can't be changed after purchase.
+Sign your Rithmic agreements. Use the Platform Login Details on your Dashboard to sign online or on your first rTrader Pro login: accept the first CME document and choose Non-Professional on the second.
+Log in to your platform. Use the same Platform Login Details. In rTrader Pro, select DayTraders.com as the system and Chicago as the gateway. We recommend Onyx.
+Trade. The trading day runs 6:00 PM–4:59 PM ET. Track your progress on your Dashboard.
+Pass. Reach the profit target with the required Qualifying Days and consistency, without touching the drawdown. Then stop trading and don't cancel the evaluation. Dashboard charts and the pass email can take until midnight ET to update.
+Activate your Pro Account. Within 10 days, open the Funded Accounts tab, sign the Pro Account Agreement and pay $5. It's active within 30 minutes; restart your platform to see it.
+Request payouts. Set up your Payout Method (Plane or DT Wallet), meet your plan's payout rules and click Request Payout . The minimum is $500.
+When can I start trading?
+There's no waiting period after purchase. You'll get an email once your account is set up, and most traders are trading within 24 hours.
+S2F accounts skip steps 5 and 6: you trade for payouts from day one. After passing S2L, you upload your live documents and sign the live account agreement instead.
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+Understanding Account Colors in rTrader Pro
+Connect WealthCharts to Rithmic
+Connecting Quantower to Rithmic
+Supported Platforms
+Logging In and Credentials
+On this page
+When can I start trading?

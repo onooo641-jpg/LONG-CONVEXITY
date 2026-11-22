@@ -1,0 +1,43 @@
+Trading Policies and Prohibited Trading Strategies | E8 Markets Help Center Futures Skip to main content
+E8X Dashboard E8 Markets Website Classic Markets & Perpetuals Helpcenter Čeština English हिन्दी Português Español English
+E8X Dashboard E8 Markets Website Classic Markets & Perpetuals Helpcenter Čeština English हिन्दी Português Español English
+Search for articles...
+All Collections
+Products & Rules
+General Rules
+Trading Policies and Prohibited Trading Strategies
+Trading Policies and Prohibited Trading Strategies
+Updated this week
+Table of contents
+Since we believe that traders achieve the best results when they are not excessively restricted, E8 Markets only prohibits strategies that exploit imperfections of the simulated market and would not be successful in the long term on a real market.
+List of Prohibited Practices (Futures - E8 Zero/E8 Signature)
+Any strategies that exploit imperfections of the simulated market, such as Gapped, Illiquid Market Trading, or taking advantage of slow data feeds.
+Any strategies that create or exploit errors in the services, such as errors in the display of prices, delays in their updates.
+Semi-Automated or Fully-Automated Trading, such as trading bots, AI tools, HFT trading (more than 300 trades per day), etc.
+Holding a position within 2% of a product's lock limit.
+Performing trades in conflict with the terms and conditions of E8 Markets.
+Irresponsible Trading and All-or-Nothing Trading: Executing large-volume trades without a coherent strategy or disregarding fundamental market analysis and risk management practices is considered an abuse of the simulated environment.
+Hedging across multiple users or accounts, even those belonging to the same trader, is strictly prohibited. Hedging, which involves opening opposing positions on the same asset, undermines fair trading and disrupts the integrity of the SimFi Environment.
+Not being compliant with CME Group Rules: All trading activities must adhere to CME Group's rules and regulations.
+Tick Scalping - A minimum of 50% of all profits must come from trades with a holding period of no less than 10 seconds.
+All trading strategies must be demonstrably replicable under both simulated and real market conditions. Any attempt to exploit the nature of a simulated environment will not be tolerated. This includes, but is not limited to, reliance on micro-scalping during illiquid market hours, trading illiquid instruments, excessive or disproportionate risk-taking, account rolling, or any behavior that would not reasonably translate to real market execution.
+If our risk team determines that your trading activity does not adhere to these principles or lacks real-market viability, we reserve the right to terminate your account(s) without further notice.
+All users are required to always trade the Front Month Contract on every instrument. Front Month Contract is described as the contract with the highest Volume (liquidity). For more information about contracts and how to spot a Front Month Contract, please use this guide .
+​
+Trading in the incorrect Month Contract may also result in termination of your account or deduction of profit made from trades on the incorrect contract.
+SimFi™ Challenge & Performance Account Management
+Account Completion & Independence:
+Each user is expected to have their own strategy. We do not allow teams to make the same trades or copy trades on our simulated platform, and we also do NOT permit signal services.
+​
+​ Copy trading across your own accounts is allowed, including across SimFi Challenge Accounts, SimFi Performance Accounts, or any personal accounts, as long as all accounts belong to you and you alone.
+Account Management & Capital Allocation:
+​
+Every account must be managed individually by the account holder. Users must comply with the maximum capital allocation limit for each product. For details on how many accounts you can hold at once, see this article .
+​
+​
+​
+​
+​
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+The information provided here is for general informational purposes only and should not be considered financial advice.

@@ -1,0 +1,41 @@
+S2F Consistency | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+S2F Account
+S2F Payouts
+S2F Consistency
+S2F Daily Loss Limit
+S2F Drawdown
+Live & S2L Program
+Platforms
+Trading Rules and Guidelines
+Affiliate Program
+Agreements and Disclaimers
+All Collections S2F (Straight-to-Sim-Funded) Accounts S2F Consistency S2F Consistency
+S2F 20% consistency rule per payout cycle, with an example.
+Updated over 3 weeks ago
+Copy for LLM
+S2F accounts use a 20% consistency rule per payout cycle: your best day can't be more than 20% of the profit made since your last payout.
+How it's calculated
+Largest single-day profit ÷ profit this cycle = consistency %
+Example: $5,000 made this cycle, best day $1,200. 1,200 ÷ 5,000 = 24%, over 20%. Once cycle profit reaches $6,000, you're back within the rule.
+If you're over the limit
+Consistency is checked at the end of every trading day and resets after each payout. A day that ends over 20% isn't a Qualifying Day, and you can't request a payout until you're back within the rule. Keep trading to bring it down, and check your numbers with the Consistency Calculator .
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+Trail Consistency
+Static Consistency
+EOD Consistency
+S2F Account
+S2F Payouts
+On this page
+How it's calculated
+If you're over the limit

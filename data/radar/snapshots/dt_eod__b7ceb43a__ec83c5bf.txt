@@ -1,0 +1,68 @@
+Market Data, Add-Ons and Fees | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Getting Started: From Sign-Up to First Payout
+Logging In and Credentials
+Plan Comparison Overview
+Maximum Number of Accounts
+Instruments and Commissions
+Billing
+Paying for Your Order
+Market Data, Add-Ons and Fees
+How to Request a Payout
+Taxes and Payout Documents
+Dashboard Stats and Account Chart
+Understanding Futures Contracts And When To Roll
+Market Orders vs. Limit Orders
+Giveaway Rules
+Who Can Sign Up
+DT Wallet FAQ
+Holiday Calendar 2026
+Glossary
+About DayTraders
+Holiday Calendar 2027
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Platforms
+Trading Rules and Guidelines
+Affiliate Program
+Agreements and Disclaimers
+All Collections General Market Data, Add-Ons and Fees Market Data, Add-Ons and Fees
+Where your market data comes from, non-professional status, Rithmic add-ons and their prices, and other fees.
+October 22, 2026
+Copy for LLM
+Your accounts run on Rithmic, which provides the market data and order routing. Onyx and other platforms are platforms only: they display Rithmic's data but aren't the data provider.
+Market data and professional status
+When you sign your Rithmic agreements, choose Non-Professional . Professionals (people with Series licenses or registered with the SEC, NFA or another regulator) can't take part in our simulated programs, including S2L.
+Add-on
+Price
+Second Login Session (use two devices at once)
+$30 per month
+Market Depth / Level 2, all exchanges
+$30 per month
+Market Depth / Level 2, one exchange (CME, CBOT, NYMEX or COMEX)
+$10 per month
+rTrader Pro Copier
+$10 per month
+Buy add-ons from the Product Add-ons tab on your Dashboard.
+They expire at 5:00 PM ET on the last day of the month, whatever day you buy them, so buy on the 1st for full value.
+They don't renew automatically and aren't refundable.
+You need Market Depth for full Level 2 data on any platform.
+Other fees
+Pro Account activation is $5. Commissions are charged per contract and are included in your P&L. Onyx and Quantower licenses are included on simulated accounts; other platforms need their own license.
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+Onyx DOM (Depth of Market)
+Connecting Quantower to Rithmic
+Terms of Use
+Who Can Sign Up
+On this page
+Market data and professional status
+Other fees

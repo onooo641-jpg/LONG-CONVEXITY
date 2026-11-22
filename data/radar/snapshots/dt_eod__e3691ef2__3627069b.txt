@@ -1,0 +1,49 @@
+Trail Consistency | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Intraday Trail Accounts
+Trail Evaluation
+Trail Pro Account
+Trail Payouts
+Trail Consistency
+Trail Drawdown
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Platforms
+Trading Rules and Guidelines
+Affiliate Program
+Agreements and Disclaimers
+All Collections Intraday Trail Accounts Trail Consistency Trail Consistency
+Trail consistency: 50% in the evaluation, 30% per Pro payout cycle, with an example.
+October 22, 2026
+Copy for LLM
+Trail accounts have two consistency rules: 50% in the evaluation and 30% per payout cycle in the Pro Account.
+How it's calculated
+Largest single-day profit ÷ total profit = consistency %
+Evaluation
+Pro Account
+Limit
+50% (small tolerance)
+30%
+Total profit counted
+Since the start
+Since your last payout
+Example (Pro): $3,000 made this cycle, best day $1,200. 1,200 ÷ 3,000 = 40%, over 30%. You'd need $4,000 in the cycle before requesting a payout.
+If you're over the limit
+Consistency is checked at the end of every trading day. A day that ends over the limit isn't a Qualifying Day, and you can't pass or request a payout until you're back within it. Keep trading to bring it down, and check your numbers with the Consistency Calculator .
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+Trail Evaluation
+Trail Pro Account
+Static Consistency
+EOD Consistency
+S2F Consistency
+On this page
+How it's calculated
+If you're over the limit

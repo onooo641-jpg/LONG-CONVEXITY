@@ -1,0 +1,65 @@
+Rule Violations and Account Status | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Platforms
+Trading Rules and Guidelines
+Minimum Activity Policy
+No Martingale
+No High-Frequency Trading
+No Hedging
+Dollar Cost Averaging (DCA)
+Automation, AI and Trade Copiers
+Trading Hours, Holidays and Overnight Positions
+Contract Limits
+Account Sharing, VPN/VPS and Code of Conduct
+Rule Violations and Account Status
+Qualifying Days (QDays)
+Affiliate Program
+Agreements and Disclaimers
+All Collections Trading Rules and Guidelines Rule Violations and Account Status Rule Violations and Account Status
+What Failed, Paused and Inactive mean, why you see 'Only Admins Can Place Trades', penalties for violations and what to do after failing.
+October 22, 2026
+Copy for LLM
+Your account status shows whether you can keep trading. Here's what each one means.
+Account statuses
+Status
+What happened
+What it means
+Failed
+Your balance touched the drawdown level.
+The account is closed and can't be reset.
+Paused
+You hit the Daily Loss Limit.
+Open positions are closed and trading resumes at 6:00 PM ET, when the next trading day starts. The account isn't failed.
+Inactive
+You missed the Minimum Activity Policy.
+The account is closed and can't be reactivated.
+"Only Admins Can Place Trades"
+This message in your platform means trading is disabled: the account has hit its drawdown level (failed) or its Daily Loss Limit (paused until the next trading day).
+Rule violations
+If a prohibited strategy is confirmed, all accounts involved are closed and unpaid profits on them are forfeited. Serious or repeat violations lead to a full ban. Payouts approved before the finding are honored.
+After failing
+Buy a new evaluation from your Dashboard. Resets aren't available, and you can start again as many times as you like.
+A failed Monthly account stops rebilling, including a failed Pro Account.
+To skip the evaluation, you can buy an S2F account instead.
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+EOD Daily Loss Limit
+S2F Account
+S2F Daily Loss Limit
+Dollar Cost Averaging (DCA)
+Glossary
+On this page
+Account statuses
+"Only Admins Can Place Trades"
+Rule violations
+After failing

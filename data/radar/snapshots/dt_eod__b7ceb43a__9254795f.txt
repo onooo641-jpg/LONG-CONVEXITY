@@ -1,0 +1,71 @@
+Logging In and Credentials | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Getting Started: From Sign-Up to First Payout
+Logging In and Credentials
+Plan Comparison Overview
+Maximum Number of Accounts
+Instruments and Commissions
+Billing
+Paying for Your Order
+Market Data, Add-Ons and Fees
+How to Request a Payout
+Taxes and Payout Documents
+Dashboard Stats and Account Chart
+Understanding Futures Contracts And When To Roll
+Market Orders vs. Limit Orders
+Giveaway Rules
+Who Can Sign Up
+DT Wallet FAQ
+Holiday Calendar 2026
+Glossary
+About DayTraders
+Holiday Calendar 2027
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Platforms
+Trading Rules and Guidelines
+Affiliate Program
+Agreements and Disclaimers
+All Collections General Logging In and Credentials Logging In and Credentials
+Member (Dashboard) login vs Rithmic platform credentials, account numbers, and fixes for common login problems.
+October 22, 2026
+Copy for LLM
+You have two separate logins: one for the DayTraders website and one for your trading platform.
+Login
+Used for
+Where to find it
+Member login
+Your Dashboard: purchases, invoices, Pro Account activation and payouts
+The username and password you created at sign-up
+Platform Login Details (User ID, e.g. DT-0009)
+Rithmic: rTrader Pro, Onyx and other platforms, and the Rithmic agreements
+On your Dashboard , assigned automatically
+Your Account Number (e.g. DT-0009-10) is the User ID plus an account suffix. It's shown on your Dashboard and in your platform; quote it when you contact support.
+Can't log in to your platform?
+Use the Platform Login Details, not your member password. Copy and paste them: they're case-sensitive and extra spaces break them.
+Sign your Rithmic agreements first, and use the latest rTrader Pro.
+Select DayTraders.com as the system (not Rithmic Paper Trading) and Chicago as the gateway.
+"Too many attempts - try later": after 5 failed attempts, wait about 5 minutes and try again.
+Markets are closed 5:00–6:00 PM ET daily and from Friday 5:00 PM to Sunday 6:00 PM ET, so logins may fail then.
+"Order Plant Guardian has disabled your User ID" usually means weekend Rithmic maintenance. Try again after 6:00 PM ET Sunday.
+You can't log in without an active account, and an incorrect address or zip code in your profile can block access.
+Can't log in to your Dashboard?
+Check that you completed registration and confirmed your email, then use the forgot password link to reset your password. Still stuck? Contact support with your Account Number.
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+Connect WealthCharts to Rithmic
+Can't Login, Rithmic
+Onyx Platform FAQ (Rithmic-Powered)
+Getting Started: From Sign-Up to First Payout
+Glossary
+On this page
+Can't log in to your platform?
+Can't log in to your Dashboard?

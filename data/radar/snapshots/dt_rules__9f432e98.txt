@@ -1,0 +1,73 @@
+Qualifying Days (QDays) | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Platforms
+Trading Rules and Guidelines
+Minimum Activity Policy
+No Martingale
+No High-Frequency Trading
+No Hedging
+Dollar Cost Averaging (DCA)
+Automation, AI and Trade Copiers
+Trading Hours, Holidays and Overnight Positions
+Contract Limits
+Account Sharing, VPN/VPS and Code of Conduct
+Rule Violations and Account Status
+Qualifying Days (QDays)
+Affiliate Program
+Agreements and Disclaimers
+All Collections Trading Rules and Guidelines Qualifying Days (QDays) Qualifying Days (QDays)
+What counts as a Qualifying Day, how many you need on each plan, and how QDays differ from TDays.
+October 22, 2026
+Copy for LLM
+A Qualifying Day (QDay) is a trading day that counts toward passing an evaluation or toward a payout.
+What counts as a QDay
+You meet or exceed the minimum daily profit for your account size.
+You follow all trading rules.
+The day ends within your plan's consistency limit.
+The day is a trading day (6:00 PM ET to 4:59 PM ET the next day).
+The day you request a payout doesn't count as a QDay.
+It is possible for a day to have recorded profit greater than the minimum required amount but not be counted as a Qday. This is because the day has either broken a rule or is above the consistency percentage.
+These percentages are re-calculated every day after reports load, so as profit is generated the % of total profit that day counts as is reduced. Once it is calculated to be within the consistency limit, it will be counted as a Qday.
+QDays required
+Plan
+QDays needed
+Minimum daily profit
+Trail and EOD evaluation
+2 to pass
+25K $100 · 50K $200 · 150K $300 · 300K $400
+Static evaluation
+2 to pass
+25K $100 · 50K $200 · 100K $300 · 150K $300
+Pro Account (all plans)
+8 between payouts
+Same as the evaluation
+S2F
+10 between payouts
+25K $100 · 50K $200 · 150K $300
+S2L evaluation
+8 to pass
+Core $200 · Edge $300 · Ultra $400
+Live accounts have no QDay or minimum daily profit requirement.
+QDays vs TDays
+TDays (Trading Days) count every day you traded, whether or not it qualified. Both appear on your Dashboard. The Minimum Activity Policy counts days that meet the minimum daily profit, even if they aren't QDays.
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+Trail Evaluation
+Static Evaluation
+Static Pro Account
+S2F Account
+Plan Comparison Overview
+On this page
+What counts as a QDay
+QDays required
+QDays vs TDays

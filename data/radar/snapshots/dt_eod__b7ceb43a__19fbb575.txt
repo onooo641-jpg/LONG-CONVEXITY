@@ -1,0 +1,106 @@
+Instruments and Commissions | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Getting Started: From Sign-Up to First Payout
+Logging In and Credentials
+Plan Comparison Overview
+Maximum Number of Accounts
+Instruments and Commissions
+Billing
+Paying for Your Order
+Market Data, Add-Ons and Fees
+How to Request a Payout
+Taxes and Payout Documents
+Dashboard Stats and Account Chart
+Understanding Futures Contracts And When To Roll
+Market Orders vs. Limit Orders
+Giveaway Rules
+Who Can Sign Up
+DT Wallet FAQ
+Holiday Calendar 2026
+Glossary
+About DayTraders
+Holiday Calendar 2027
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Platforms
+Trading Rules and Guidelines
+Affiliate Program
+Agreements and Disclaimers
+All Collections General Instruments and Commissions Instruments and Commissions
+Which futures you can trade, micros vs minis, commission rates per contract, and how to check your instrument list.
+October 22, 2026
+Copy for LLM
+DayTraders is for futures only: no forex, crypto or options. You can trade from 6:00 PM to 4:59 PM ET the next day.
+Tradable instruments
+Group
+Instruments
+Equity
+E-mini S&P 500 (ES), E-mini Nasdaq-100 (NQ), Mini-Dow (YM), Russell 2000 (RTY), E-mini Midcap 400 (EMD), Nikkei (NKD)
+Currency
+Australian Dollar (6A), British Pound (6B), Canadian Dollar (6C), Euro FX (6E), Japanese Yen (6J), Swiss Franc (6S), New Zealand Dollar (6N)
+Agricultural
+Lean Hogs (HE), Corn (ZC), Wheat (ZW), Soybeans (ZS), Soybean Meal (ZM), Soybean Oil (ZL)
+Energy
+Crude Oil (CL), Mini Crude Oil (QM), Natural Gas (NG), E-mini Natural Gas (QG), Heating Oil (HO), NY Harbor RBOB Gasoline (RB)
+Metals
+Gold (GC), Silver (SI), Copper (HG), Platinum (PL), Palladium (PA), E-mini Silver (QI), E-mini Gold (QO)
+Micros
+MES, MNQ, MYM, M2K, Micro Gold (MGC), Micro Crude Oil (MCL), Micro AUD/USD (M6A), Micro EUR/USD (M6E)
+Agricultural futures close earlier, between 2:05 and 2:20 PM ET. An order on an instrument that isn't allowed is simply rejected, with no penalty.
+Micros vs minis
+10 micros = 1 mini. Your max contracts are the total across all instruments and open positions, so on a 10-contract account, 5 NQ + 50 MNQ is the full limit. Orders beyond it are rejected, and any deliberate attempt(s) to circumvent limits will breach your account.
+Commissions
+Per contract, round turn. These rates apply to every simulated account (evaluations, Pro, S2F and S2L); live rates are confirmed by your Risk Manager. Your profit target is net of commissions and all costs.
+Group
+Symbols
+Round turn
+Equity
+ES, NQ, YM, RTY, EMD, NKD
+$3.98
+Currency
+6A, 6B, 6C, 6E, 6J, 6S, 6N
+$4.72
+Agricultural
+HE, ZC, ZW, ZS, ZM, ZL
+$5.58
+Energy
+CL, NG, HO, RB
+$3.96
+Energy
+QM
+$3.92
+Energy
+QG
+$2.52
+Metals
+GC, SI, HG, PL, PA, QI, QO
+$4.62
+Micros
+MES, MNQ, MYM, M2K, MCL
+$1.02
+Micros
+MGC
+$1.52
+Micros
+M6A, M6E
+$0.84
+Check your instrument list in rTrader Pro
+Log in to rTrader Pro.
+In the Trader Dashboard, click your account name.
+Select View Risk Parameters to see every product available on your account.
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+Contract Limits
+On this page
+Tradable instruments
+Micros vs minis
+Commissions
+Check your instrument list in rTrader Pro

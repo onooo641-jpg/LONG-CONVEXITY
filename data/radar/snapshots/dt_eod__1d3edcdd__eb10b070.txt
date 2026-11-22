@@ -1,0 +1,50 @@
+Moving from Pro or S2F to Live | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Moving from Pro or S2F to Live
+S2L Evaluation
+S2L Consistency
+S2L Daily Loss Limit
+S2L Drawdown
+Live Payouts
+Live Scaling
+Live Accounts
+Platforms
+Trading Rules and Guidelines
+Affiliate Program
+Agreements and Disclaimers
+All Collections Live & S2L Program Moving from Pro or S2F to Live Moving from Pro or S2F to Live
+How Pro and S2F traders may be invited to live and how payouts are handled when they are.
+October 22, 2026
+Copy for LLM
+Traders with Pro Accounts or S2F accounts may be invited to a live account at the firm's discretion. There's no fixed milestone: performance, consistency and rule-following are reviewed continuously, and about 1% of simulated funded traders are currently moved to live.
+Your live account
+A Risk Manager sets your live account's parameters with you, including the starting balance. Invited accounts most likely use an EOD or static drawdown. If you're in a restricted country, the Risk Manager will discuss your options.
+Payouts when you're called to live
+If you're called to live when you request a payout, all payout requests you submit that day are added together. For example, five $2,000 requests count as $10,000.
+$10,000 or more: half is paid to your Payout Method and half becomes your live account's max drawdown.
+Less than $10,000: take 100% of the payout plus free S2L evaluations (usually matched 1:1 in size, up to 5 Core or 3 Edge/Ultra), or put $1,000–$10,000 toward live as your max drawdown and receive the rest.
+Scaling is discussed with the Risk Team.
+Your other accounts
+Once you're live, your simulated accounts are closed. Excess simulated balances are generally forfeited, but they may be used as performance rewards in live, subject to the Risk Team's discretion. If you are not comfortable with this, do not build large excess simulated balances.
+Any Pro accounts that have not received a payout and are in good standing will be refunded along with their respective evaluations.
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+Trail Payouts
+Static Payouts
+S2F Account
+S2F Payouts
+How to Request a Payout
+On this page
+Your live account
+Payouts when you're called to live
+Your other accounts

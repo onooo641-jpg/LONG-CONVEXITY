@@ -7,15 +7,15 @@ Baseline date: 2026-11-21
 - S1 reward pools: 1295
 - S3 Merkl live: 716
 - S4 governance hits: 64
-- pages fetched ok: 1666
-- pages total: 1708
+- pages fetched ok: 1766
+- pages total: 1811
 - candidates surviving to ranking: 92
-- of which all five filter parts verified: 18
-- near-miss rows total: 4661
+- of which all five filter parts verified: 19
+- near-miss rows total: 4678
 
 ## Near-miss by stage/reason (top)
 
-- first_pass / below threshold: 3850
+- first_pass / below threshold: 3867
 - quality / DefiLlama outlier flag: 265
 - filter / F4 price exposure, needs hedge; F5 TVL < $1,000,000: 222
 - filter / F4 price exposure, needs hedge: 144
@@ -93,7 +93,7 @@ Baseline date: 2026-11-21
 - fusedao.eth: [closed] FIP14: Zero Inflation, 400M Cap Enforced On-Chain, 30M FUSE for Validator Rewards Through the Transit https://snapshot.org/#/fusedao.eth/proposal/0x2cba3ecb0f952ebb2d82583bb9279cc836e36c18ce2ed540299ab254dcdc5e94
 - sdfxn.eth: [closed] Gauge vote FXN - 12/11/2026 - 25/11/2026 https://snapshot.org/#/sdfxn.eth/proposal/0x6214cbfb2dd2fcd86ba05d14fd8a5297622c9ec18b1fc7447e7e3304743eb31a
 
-## Prop-firm rule/price changes today: 74 pages
+## Prop-firm rule/price changes today: 84 pages
 
 - **E8 Markets** https://e8markets.com/: $81M+ in payouts processed since 2021, verified independently on PropFirmMatch, and PayoutJunction. Our Discord community of 42,359+ traders
 - **DayTraders** https://daytraders.com/: You need $0 and today / Payouts Automated approval / Payout certificates
@@ -116,8 +116,14 @@ Baseline date: 2026-11-21
 - **MyFundedFutures** https://myfundedfutures.com/plans/rapid-eod: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
 - **MyFundedFutures** https://myfundedfutures.com/plans/pro: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
 - **FundedNext Futures** https://fundednext.com/terms-of-service: FundedNext Labs - Limited Slots. Real Experiments. / or get $1,000 extra / $ 306.9 $ 0.0 M+
+- **MyFundedFutures** https://myfundedfutures.com/plans/rapid: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
+- **MyFundedFutures** https://myfundedfutures.com/plans/rapid-eod: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
+- **MyFundedFutures** https://myfundedfutures.com/plans/pro: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
+- **HyroTrader** https://hyrotrader.com/transparency/: 16 hours ago Solana zMiJcT…HBJ2BW $28.00 Solscan / 16 hours ago Solana 41rGic…p3Ah8c $51.00 Solscan / 16 hours ago Solana 4NA6vD…LmY9y1 $2,000.00 Solscan
+- **Traders Launch** https://traderslaunch.com/results: Results & Payouts | Traders Launch
+- **Traders Launch** https://traderslaunch.com/payout-rules: Payout Rules | Traders Launch
 
-## Page changes today: 78
+## Page changes today: 89
 
 - E8 Markets (firm) https://e8markets.com/: +15 / -15 lines
 - Crypto Fund Trader (firm) https://cryptofundtrader.com/: +7 / -7 lines

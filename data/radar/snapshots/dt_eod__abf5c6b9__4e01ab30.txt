@@ -1,0 +1,94 @@
+Trail Evaluation | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Intraday Trail Accounts
+Trail Evaluation
+Trail Pro Account
+Trail Payouts
+Trail Consistency
+Trail Drawdown
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Platforms
+Trading Rules and Guidelines
+Affiliate Program
+Agreements and Disclaimers
+All Collections Intraday Trail Accounts Trail Evaluation Trail Evaluation
+Trail evaluation at a glance: prices, profit targets, drawdown, contracts and how to pass.
+Updated over a month ago
+Copy for LLM
+The Trail evaluation is a simulated account. Reach the profit target without touching the drawdown to unlock a Trail Pro Account (simulated funded).
+At a glance
+25K
+50K
+150K
+300K
+Profit target
+$1,500
+$3,000
+$8,500
+$15,000
+Max drawdown
+$1,500
+$2,500
+$4,500
+$7,000
+Drawdown type
+Intraday trailing
+Intraday trailing
+Intraday trailing
+Intraday trailing
+Daily Loss Limit
+None
+None
+None
+None
+Max contracts
+6 (60 micros)
+10 (100 micros)
+20 (200 micros)
+40 (400 micros)
+Min. daily profit
+$100
+$200
+$300
+$400
+QDays to pass
+2
+2
+2
+2
+Consistency
+50%
+50%
+50%
+50%
+Prices as of October 2026. See daytraders.com for the latest.
+How to pass
+Reach the profit target.
+Trade at least 2 Qualifying Days : days that meet the minimum daily profit, follow the rules and end within consistency.
+Keep your best day at or below 50% of your total profit. A small tolerance applies.
+Never touch the drawdown level.
+After you pass
+Stop trading: dropping below the profit target can void the pass. Activate your Trail Pro Account within 10 days for $5 , or the pass is forfeited.
+Good to know
+No time limit and no resets.
+Evaluations are unlimited.
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+Trail Pro Account
+Static Evaluation
+EOD Evaluation
+S2F Account
+S2L Evaluation
+On this page
+At a glance
+How to pass
+After you pass
+Good to know

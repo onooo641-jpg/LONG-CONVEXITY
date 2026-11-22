@@ -1,0 +1,246 @@
+Journaling System – Quick Start Guide | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Platforms
+General Platform information
+ArcTrader
+ATAS
+Bookmap
+Finamark
+Onyx
+Connect to Onyx: Step-by-Step Setup
+How to Log In to Onyx v3
+Accessing Onyx from Your Phone
+Onyx Support for macOS
+Connection Quality Monitor in Onyx
+Optimizing Onyx Performance on Slow Connections (Latency & Upload Speed)
+Troubleshooting Issues with Onyx
+Onyx Platform FAQ (Rithmic-Powered)
+Order Entry in Onyx
+How to Place a Market Order in Onyx
+Onyx – Bracket Orders and Bracket Templates
+Risk and Profit Bracket Setup Guide – Onyx
+Opening Multiple Charts in Onyx
+Saving Your Chart Layout in Onyx
+Onyx DOM (Depth of Market)
+Explore the Features of Onyx
+Journaling System – Quick Start Guide
+Market Data and Performance – Onyx
+Performance Stats – Onyx
+Trade Copier – Onyx
+Trading Lockout Feature for Onyx
+Jigsaw
+MotiveWave
+NinjaTrader
+Quantower
+Rithmic & R | Trader Pro
+Sierra Charts
+Wealthcharts
+VolFix
+Trading Rules and Guidelines
+Affiliate Program
+Agreements and Disclaimers
+All Collections Platforms Onyx Journaling System – Quick Start Guide Journaling System – Quick Start Guide
+Everything you need to master automated trade journaling with AI-powered insights
+October 22, 2026
+Copy for LLM
+The Journaling System is a fully automated trading journal designed to help you analyze performance, identify patterns, and improve execution using AI-powered insights. Every trade is captured automatically, summarized intelligently, and visualized clearly so you spend less time journaling and more time trading.
+Estimated read time is five minutes.
+1. What Is the Journaling System?
+The Journaling System automatically records every trade you take and transforms raw execution data into actionable insights.
+Automatic Trade Capture
+All fills from Rithmic are captured in real time.
+No manual entries are required.
+AI Powered Analysis
+Open the "AI Settings" in the "Settings" section.
+Receive daily AI generated summaries that highlight:
+Strengths in your trading
+Recurring mistakes
+Behavioral and timing patterns
+Clear improvement suggestions
+Visual Analytics
+Instant access to:
+Calendar based profit and loss view
+Equity curves
+Win and loss distributions
+Performance metrics at a glance
+Interactive AI Chat
+Ask questions about your trades and receive contextual coaching based on your actual execution data.
+​
+Key Benefit
+What normally takes more than thirty minutes of manual journaling is completed automatically in seconds.
+2. Getting Unlimited AI Access
+By default, the system includes limited AI usage. Uploading your own API key unlocks unlimited summaries and deeper analysis.
+​
+​ Open the "AI Settings" in the "Settings" section.
+Why Upload Your Own API Key?
+Without your own key:
+Five AI requests per day
+Shared system resources
+Basic model quality
+Zero monthly cost
+With your own key:
+Unlimited AI requests
+Dedicated access
+Ability to choose your preferred model
+Approximately five to fifteen dollars per month based on usage
+Supported AI Providers
+OpenAI Recommended
+Best suited for high quality analysis and consistent results.
+Steps:
+Go to platform.openai.com
+Sign in or create an account
+Navigate to the API Keys section
+Click Create new secret key
+Copy the key which starts with sk proj
+Paste it into your journaling settings
+Important note:
+A payment method is required. Typical usage costs range from ten to fifty cents per daily summary.
+Grok by xAI
+Best suited for alternative perspectives and real time market context.
+Steps:
+Go to console.x.ai
+Sign in using your X account
+Navigate to API Keys
+Create a new key
+Paste the key into your journaling settings
+How to Upload Your API Key
+Navigate to Settings then AI Configuration
+Select your provider
+Paste your API key
+Optionally click Test Key
+Click Save
+Security
+API keys are encrypted using AES 128 encryption
+Only the last four characters are visible in the interface
+Keys are never stored or transmitted in plain text
+Recommended Models
+OpenAI GPT 4o mini - Approximate cost per summary is $0.10
+OpenAI GPT 4o - Approximate cost per summary is $0.30
+Grok grok beta - Cost varies based on xAI pricing
+3. Daily Summary Workflow
+What You Receive
+Each daily AI summary includes:
+Overall assessment of performance
+What went well
+Areas for improvement
+Patterns noticed in behavior or execution
+One clear focus for the next trading session
+How to Generate a Daily Summary
+Open the Journaling page
+Select a date from the calendar
+Review the captured trades
+Click the Daily AI Summary button
+Wait ten to fifteen seconds
+Read your personalized analysis
+First-time users without an API key will see a reminder about the five summaries per day limit.
+What the AI Analyzes
+For each trade:
+Symbol traded
+Long or short direction
+Profit or loss in dollars
+Entry and exit prices
+Entry and exit timestamps
+Trade duration
+Contract quantity
+Daily aggregated statistics include:
+Total number of trades
+Win and loss count and win rate
+Total profit or loss
+Largest winning trade
+Largest losing trade
+Average win compared to average loss
+Interactive Follow-Up Questions
+After your summary is generated, you can continue the conversation.
+Examples:
+Why did my afternoon trades perform worse
+Should I have held that MNQ trade longer
+What is the most common mistake in my losing trades
+Do I trade better in the morning or the afternoon
+The AI retains the full context of the conversation and all trades from that day.
+Saved Summaries
+Once generated, summaries are saved permanently. Visiting a past date loads the summary instantly without using additional AI requests.
+4. Navigating Your Data
+Calendar View
+The calendar provides a monthly performance overview:
+Green days indicate profitable sessions
+Red days indicate losing sessions
+Gray days indicate breakeven days or no trades
+Daily profit or loss is displayed directly on each date
+Click any date to view detailed trade data.
+Trade List Table
+For each selected date, the table displays:
+Symbol
+Side long or short
+Quantity
+Entry and exit prices
+Entry and exit times
+Duration
+Profit or loss
+Charts and Visualizations
+Account Performance Chart
+Displays:
+Daily profit and loss bars
+Cumulative equity curve
+Dual-axis layout for clarity
+Win and Loss Distribution
+Displays:
+Win percentage versus loss percentage
+Total trade count in the center
+Clear color-coded segments
+Trade Details Modal
+Clicking a trade opens a detailed view containing:
+Full execution details
+Performance metrics including ticks, R multiple, MAE, and MFE
+Notes editor for personal observations
+Trade tags such as A plus setup or revenge trade
+Trade-specific AI coaching insights
+Historical Data Sync
+When you first access the journaling page, the system:
+Detects your account creation date
+Identifies missing historical trading days
+Fetches data directly from Rithmic
+Displays sync progress in real time
+Caches data locally for instant future access
+Final Takeaway
+The Journaling System removes friction from trade review and replaces guesswork with structured, data-driven insight. If you trade consistently, this tool becomes one of your strongest performance advantages.
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+Trading Lockout Feature for Onyx
+On this page
+1. What Is the Journaling System?
+Automatic Trade Capture
+AI Powered Analysis
+Visual Analytics
+Interactive AI Chat
+2. Getting Unlimited AI Access
+Why Upload Your Own API Key?
+Supported AI Providers
+OpenAI Recommended
+Grok by xAI
+How to Upload Your API Key
+Security
+3. Daily Summary Workflow
+What You Receive
+How to Generate a Daily Summary
+What the AI Analyzes
+Interactive Follow-Up Questions
+Saved Summaries
+4. Navigating Your Data
+Calendar View
+Trade List Table
+Charts and Visualizations
+Account Performance Chart
+Win and Loss Distribution
+Trade Details Modal
+Historical Data Sync
+Final Takeaway

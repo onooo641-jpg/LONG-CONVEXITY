@@ -1,0 +1,61 @@
+EOD Drawdown | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+EOD Evaluation
+EOD Pro Account
+EOD Payouts
+EOD Consistency
+EOD Daily Loss Limit
+EOD Drawdown
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Platforms
+Trading Rules and Guidelines
+Affiliate Program
+Agreements and Disclaimers
+All Collections EOD Trail Account EOD Drawdown EOD Drawdown
+How the EOD trailing drawdown works and where it stops, by size.
+October 22, 2026
+Copy for LLM
+EOD accounts use an end-of-day trailing drawdown : the level only moves after each trading day closes, based on your closing balance. Your balance must stay above it at all times, including intraday.
+How it works
+It starts at your starting balance minus the max drawdown.
+After a day closes at a new high, it moves up to that balance minus the max drawdown. It never moves down.
+It stops at your starting balance, in the evaluation and in the Pro Account.
+Size
+Max drawdown
+Starts at
+Stops at
+25K
+$1,000
+$24,000
+$25,000
+50K
+$2,000
+$48,000
+$50,000
+150K
+$4,000
+$146,000
+$150,000
+300K
+$6,500
+$293,500
+$300,000
+Example (50K): the level starts at $48,000. Close the day at $51,000 and it moves to $49,000.
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+Trail Drawdown
+Static Drawdown
+EOD Pro Account
+S2F Drawdown
+S2L Drawdown
+On this page
+How it works

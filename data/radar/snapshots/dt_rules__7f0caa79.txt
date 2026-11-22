@@ -1,0 +1,64 @@
+Contract Limits | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Platforms
+Trading Rules and Guidelines
+Minimum Activity Policy
+No Martingale
+No High-Frequency Trading
+No Hedging
+Dollar Cost Averaging (DCA)
+Automation, AI and Trade Copiers
+Trading Hours, Holidays and Overnight Positions
+Contract Limits
+Account Sharing, VPN/VPS and Code of Conduct
+Rule Violations and Account Status
+Qualifying Days (QDays)
+Affiliate Program
+Agreements and Disclaimers
+All Collections Trading Rules and Guidelines Contract Limits Contract Limits
+How max contracts work: your total open position across all instruments, with 10 micros counting as 1 mini.
+October 22, 2026
+Copy for LLM
+Your max contracts is the largest total open position you can hold at once, across all instruments combined.
+How it's counted
+10 micro contracts count as 1 mini contract.
+Positions in different instruments add up. On a 10-contract account, 5 NQ + 50 MNQ uses your full limit.
+Working orders don't count until they fill.
+An order that would take you over the limit is rejected.
+Max contracts by plan
+Plan
+Max contracts (minis)
+Trail
+25K: 6 · 50K: 10 · 150K: 20 · 300K: 40
+Static
+25K: 4 · 50K: 6 · 100K: 8 · 150K: 8
+EOD
+25K: 6 · 50K: 10 · 150K: 12 · 300K: 40
+S2F
+25K: 2 · 50K: 10 · 150K: 24
+S2L evaluation
+Core: 2 · Edge: 3 · Ultra: 4
+Live (from S2L)
+Core: 1 · Edge: 2 · Ultra: 3
+Pro Accounts keep the same limits as their evaluation.
+Any attempt to get around these limits, for example by splitting positions across platforms or tools, leads to account closure.
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+EOD Daily Loss Limit
+S2F Account
+Qualifying Days (QDays)
+Plan Comparison Overview
+Instruments and Commissions
+On this page
+How it's counted
+Max contracts by plan

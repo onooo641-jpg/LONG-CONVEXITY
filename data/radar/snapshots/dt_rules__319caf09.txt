@@ -1,0 +1,50 @@
+No Martingale | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Platforms
+Trading Rules and Guidelines
+Minimum Activity Policy
+No Martingale
+No High-Frequency Trading
+No Hedging
+Dollar Cost Averaging (DCA)
+Automation, AI and Trade Copiers
+Trading Hours, Holidays and Overnight Positions
+Contract Limits
+Account Sharing, VPN/VPS and Code of Conduct
+Rule Violations and Account Status
+Qualifying Days (QDays)
+Affiliate Program
+Agreements and Disclaimers
+All Collections Trading Rules and Guidelines No Martingale No Martingale
+Why doubling your position size after losing trades (Martingale) is prohibited on every plan, and how it differs from DCA.
+October 22, 2026
+Copy for LLM
+The Martingale strategy, or doubling down after losses, is prohibited on every plan and every instrument.
+What counts as Martingale
+Martingale means increasing your size on each new trade after a losing trade to win back the loss. Increasing your position size by 2x or more after a closed loss, as part of this pattern, isn't allowed.
+Example: you trade 2 NQ and close at a loss. Your next trade is 4 NQ, another loss, then 8 NQ, and so on until you win or the account fails. This is Martingale.
+What's allowed
+Adding to an open position within your max contracts is Dollar Cost Averaging (DCA), which is allowed. Martingale is about the size of new trades after closed losses.
+Consequences
+Trading activity is monitored for doubling-down patterns. If a prohibited strategy is confirmed, all accounts involved are closed and unpaid profits on them are forfeited. Serious or repeat violations lead to a full ban. Payouts approved before the finding are honored.
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+No High-Frequency Trading
+No Hedging
+Dollar Cost Averaging (DCA)
+Rule Violations and Account Status
+Understanding Futures Contracts And When To Roll
+On this page
+What counts as Martingale
+What's allowed
+Consequences

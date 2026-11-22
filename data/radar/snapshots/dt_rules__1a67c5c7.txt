@@ -1,0 +1,55 @@
+Trading Hours, Holidays and Overnight Positions | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Platforms
+Trading Rules and Guidelines
+Minimum Activity Policy
+No Martingale
+No High-Frequency Trading
+No Hedging
+Dollar Cost Averaging (DCA)
+Automation, AI and Trade Copiers
+Trading Hours, Holidays and Overnight Positions
+Contract Limits
+Account Sharing, VPN/VPS and Code of Conduct
+Rule Violations and Account Status
+Qualifying Days (QDays)
+Affiliate Program
+Agreements and Disclaimers
+All Collections Trading Rules and Guidelines Trading Hours, Holidays and Overnight Positions Trading Hours, Holidays and Overnight Positions
+When the trading day starts and ends, how holidays are handled, and the rules for overnight positions, auto-liquidation and news.
+October 22, 2026
+Copy for LLM
+The trading day runs from 6:00 PM ET to 4:59 PM ET the next day. Sunday's 6:00 PM ET session counts as part of Monday.
+Market close and holidays
+Close trades by 4:59 PM ET. Some markets, such as agricultural futures, close earlier.
+On a market holiday, the session isn't a trading day and its trades count toward the next trading day.
+Shortened sessions that aren't holidays, such as Black Friday and Christmas Eve, count as normal trading days.
+Check the CME Group Holiday Calendar for early closes.
+Overnight and weekend positions
+Holding positions overnight or over the weekend is allowed but not recommended, because of mark-to-market adjustments. DayTraders doesn't close your positions for you at the end of the session.
+Auto-liquidation
+There's no firm-set liquidation time. Rithmic auto-liquidates only when you hit your drawdown level or Daily Loss Limit, and the account shows "Admin Only" until it resets. You can set your own time in rTrader Pro: right-click the account, choose View risk parameters and set the auto-liquidation time. It doesn't adjust for daylight saving time.
+News trading
+Trading around news is allowed but not recommended. Fast markets can hit daily price limits or cause platform lag, and losses from these conditions aren't covered.
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+Trading Lockout Feature for Onyx
+Glossary
+Dashboard Stats and Account Chart
+Holiday Calendar 2026
+Holiday Calendar 2027
+On this page
+Market close and holidays
+Overnight and weekend positions
+Auto-liquidation
+News trading

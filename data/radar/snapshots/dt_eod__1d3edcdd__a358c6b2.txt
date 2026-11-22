@@ -1,0 +1,62 @@
+Live Payouts | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Moving from Pro or S2F to Live
+S2L Evaluation
+S2L Consistency
+S2L Daily Loss Limit
+S2L Drawdown
+Live Payouts
+Live Scaling
+Live Accounts
+Platforms
+Trading Rules and Guidelines
+Affiliate Program
+Agreements and Disclaimers
+All Collections Live & S2L Program Live Payouts Live Payouts
+Live payouts: 80/20 split, $1,000 buffer, when payouts unlock and how they're processed.
+October 22, 2026
+Copy for LLM
+Live accounts pay an 80/20 profit split , with no minimum daily profit or consistency rule. Requests start at $500 , in $50 increments.
+When you can request
+Payouts unlock once your drawdown has locked at your starting balance. You can withdraw any profit above a $1,000 buffer without limit. You can trade into the buffer, but not withdraw it. This is to guarantee at least $1000 of trading room after a payout.
+Plan
+Drawdown locks when peak reaches
+Withdraw anything above
+Core
+$52,000
+$51,000
+Edge
+$154,500
+$151,000
+Ultra
+$307,000
+$301,000
+How it's processed
+You request a payout from your Dashboard.
+The firm locks the account.
+The payout is debited and approved, and sent through Plane.
+The account is ready to trade again.
+Requests are processed between 11:00 AM and 4:00 PM ET on business days; later requests are processed the next business day. If your balance drops below starting balance + $1,000 before processing, the payout is skipped and you can request again once you're back above it.
+Firm-invited live accounts
+These most likely use an EOD or static drawdown and follow the same steps. If your EOD drawdown hasn't locked yet, step 3 happens after it updates in Rithmic between 5:00 and 6:00 PM ET.
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+EOD Pro Account
+EOD Payouts
+Moving from Pro or S2F to Live
+Getting Started: From Sign-Up to First Payout
+How to Request a Payout
+On this page
+When you can request
+How it's processed
+Firm-invited live accounts

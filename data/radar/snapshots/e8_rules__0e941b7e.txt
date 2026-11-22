@@ -1,0 +1,69 @@
+Daily Pause | E8 Markets Help Center Futures Skip to main content
+E8X Dashboard E8 Markets Website Classic Markets & Perpetuals Helpcenter Čeština English हिन्दी Português Español English
+E8X Dashboard E8 Markets Website Classic Markets & Perpetuals Helpcenter Čeština English हिन्दी Português Español English
+Search for articles...
+All Collections
+Products & Rules
+Guardrails
+Daily Pause
+Daily Pause
+September 23, 2026
+Table of contents
+Available on SimFi ™ Performance stage (only) for: E8 Signature ( Classic Markets , Futures )
+​
+Daily Pause is a protective feature that safeguards your trading account.
+​
+​ Why it exists (your upside): A single impulsive session shouldn’t erase a great week. The Day Seatbelt caps intraday damage so you can stay consistent, keep EOD intact, and qualify for payouts with confidence.
+Quick Explanation (Read this first)
+We take 2% of your initial Balance and convert it to a fixed $
+Every new day, we set your pause line = Balance of the new day − that fixed $.
+If equity or balance falls below that line, we pause trading until 00:00 ( server time )
+Daily Pause is not a hard breach; you can still continue trading the next day
+Important: Closing all positions isn’t instant at the exact limit. Use stop-losses—we don’t rebalance if it takes you past −2%.
+Numbers in context
+A) $100,000 Initial Balance (Fixed $ = $2,000)
+Day
+Starting balance
+Loss Level
+Results (if you exceed the limit)
+1
+$100,000
+$98,000
+Trading paused to 00:00
+2
+$102,500
+$100,500
+Trading paused to 00:00
+3
+$99,200
+$97,200
+Trading paused to 00:00
+B) $50,000 Initial Balance (Fixed $ = $1,000)
+Day
+Starting balance
+Loss Level
+Results (if you exceed the limit)
+1
+$50,000
+$49,000
+Trading paused to 00:00
+2
+$51,250
+$50,250
+Trading paused to 00:00
+3
+$49,000
+$48,000
+Trading paused to 00:00
+Note: The fixed $ never changes during the account’s life; only the starting balance of the day changes the pause line.
+Coach Play : Plan your SL above the Loss Level. If your fixed $ is $2,000, cap your trades at $1,600–$1,800 so slippage won’t exceed your planned limit.
+How to use the Dashboard to your advantage
+Remember that you can always rely on your Dashboard data
+Go to your dashboard, check your account loss analysis of the account, and follow your Loss Levels .
+If your account equity or balance reaches or falls below the loss level, your account will be temporarily paused until the next trading day (00:00 Server time).
+When you reach the 2% daily pause limit, it takes some time before all positions are closed after the violation. It is not instant, so we advise using SL on each trade to avoid losing more than 2%.
+​
+If you don't use a Stop-Loss at the 2% limit, or if you risk more and due to the delay your positions close at a loss greater than 2%, we bear no risk and you are not entitled to any rebalance.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+The information provided here is for general informational purposes only and should not be considered financial advice.

@@ -1,0 +1,51 @@
+No Hedging | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Platforms
+Trading Rules and Guidelines
+Minimum Activity Policy
+No Martingale
+No High-Frequency Trading
+No Hedging
+Dollar Cost Averaging (DCA)
+Automation, AI and Trade Copiers
+Trading Hours, Holidays and Overnight Positions
+Contract Limits
+Account Sharing, VPN/VPS and Code of Conduct
+Rule Violations and Account Status
+Qualifying Days (QDays)
+Affiliate Program
+Agreements and Disclaimers
+All Collections Trading Rules and Guidelines No Hedging No Hedging
+Hedging (holding opposite positions in the same or related instruments) is prohibited within and across your accounts.
+October 22, 2026
+Copy for LLM
+Hedging is prohibited within an account and across your accounts.
+What counts as hedging
+Holding long and short positions in the same instrument at the same time, in one account or across your DayTraders accounts. For example, long NQ in one account and short NQ in another.
+Opposite positions in related or correlated instruments, such as long NQ in one account and short ES in another.
+Opposite positions coordinated with other people.
+What's allowed
+Trading with other firms is allowed, and so is copying the same trades across your own accounts.
+Consequences
+Trade execution across accounts and related instruments is monitored. If a prohibited strategy is confirmed, all accounts involved are closed and unpaid profits on them are forfeited. Serious or repeat violations lead to a full ban. Payouts approved before the finding are honored.
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+rTrader Pro Copier
+No Martingale
+Contract Limits
+Instruments and Commissions
+Understanding Futures Contracts And When To Roll
+On this page
+What counts as hedging
+What's allowed
+Consequences

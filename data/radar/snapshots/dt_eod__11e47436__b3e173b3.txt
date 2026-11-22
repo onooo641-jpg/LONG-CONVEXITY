@@ -1,0 +1,56 @@
+S2F Drawdown | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+S2F Account
+S2F Payouts
+S2F Consistency
+S2F Daily Loss Limit
+S2F Drawdown
+Live & S2L Program
+Platforms
+Trading Rules and Guidelines
+Affiliate Program
+Agreements and Disclaimers
+All Collections S2F (Straight-to-Sim-Funded) Accounts S2F Drawdown S2F Drawdown
+How the S2F end-of-day trailing drawdown works and where it stops, by size.
+October 22, 2026
+Copy for LLM
+S2F accounts use an end-of-day trailing drawdown : the level only moves after each trading day closes, based on your closing balance. Your balance must stay above it at all times, including intraday.
+How it works
+It starts at your starting balance minus the max drawdown.
+After a day closes at a new high, it moves up to that balance minus the max drawdown. It never moves down.
+It stops at your starting balance.
+Size
+Max drawdown
+Starts at
+Stops at
+25K
+$1,000
+$24,000
+$25,000
+50K
+$2,500
+$47,500
+$50,000
+150K
+$6,000
+$144,000
+$150,000
+Example (50K): the level starts at $47,500. Close the day at $51,000 and it moves to $48,500.
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+Trail Drawdown
+Static Drawdown
+EOD Drawdown
+S2F Daily Loss Limit
+S2L Drawdown
+On this page
+How it works

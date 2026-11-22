@@ -1,0 +1,68 @@
+EOD Dynamic Drawdown | E8 Markets Help Center Futures Skip to main content
+E8X Dashboard E8 Markets Website Classic Markets & Perpetuals Helpcenter Čeština English हिन्दी Português Español English
+E8X Dashboard E8 Markets Website Classic Markets & Perpetuals Helpcenter Čeština English हिन्दी Português Español English
+Search for articles...
+All Collections
+Products & Rules
+Guardrails
+EOD Dynamic Drawdown
+EOD Dynamic Drawdown
+What is EOD Dynamic Drawdown?
+Updated this week
+Table of contents
+Available for: E8 Zero , E8 Signature
+EOD Dynamic Drawdown refers to the calculation based on your highest achieved balance at the end of the trading day.
+Quick Explanation (Read this first)
+Your Loss Level rises (at the EOD) only when you close a profit, NOT when your equity increases.
+Translation: We count what you keep, not what you almost had.
+Once your account reaches a closed profit in the amount of EOD Dynamic Drawdown or you request your first payout, the Drawdown locks on the initial balance level, becomes fully static , and won't move further anymore (this does not apply in the challenge of E8 Zero).
+Note: It updates at the end of the day (not tick‑by‑tick), so intraday swings can breathe.
+Definitions you need to know
+Loss Level: Limit above which you must stay.
+The system always takes the highest End-of-the-day balance you have achieved and sets your Loss level based on that number.
+EOD: End of the day
+Numbers in context
+How to calculate: Highest End-of-the-day balance - Drawdown amount (3%) = Loss level
+​
+This is how your account's EOD Dynamic Drawdown looks at the beginning:
+Starting Balance
+EOD Dynamic Drawdown (3%)
+Loss level (You must stay above)
+$100,000
+$3,000
+$97,000
+And this is how Dynamic Drawdown changes based on the profits you actually close:
+Scenario
+End of the day balance
+Tomorrow's Loss Level
+Day 1
+Start with $100,000
+Loss level $97,000
+You close $1000 profit
+$101,000
+$98,000
+Day 2
+You close $1,000 profit
+$102,000
+$99,000
+Day 3
+You close -$1,000 loss
+$101,000
+$99,000
+Day 4
+You close $3,000 profit
+$104,000
+$100,000 (locked)
+Day 5+
+EOD DD is locked, changed to static, and won't move any further
+$100,000 (Locked)
+Note: Day traders get room to work a session without equity‑spike gotchas
+How to use the Dashboard to your advantage
+Remember that you can always rely on your Dashboard data
+Go to your dashboard, check your account loss analysis of the account, and follow your Loss Levels .
+Please note that if your account equity or balance reaches/falls below the loss level, your account will be permanently closed for breaching the EOD Dynamic Drawdown rule.
+After the account breaches your loss level, the system will enforce closing the position automatically, which might take a while. This might result in closing your balance above the loss level; however, closing your balance above the loss level after you breach the drawdown level won't prevent the account from being violated and permanently closed.
+Key notes to take. In challange stage of E8 Zero, the Eod Drawdown scales with your profit, no matter what amount you make. Meaning that the loss level is not being locked at the initial balance and can go further.
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+The information provided here is for general informational purposes only and should not be considered financial advice.
