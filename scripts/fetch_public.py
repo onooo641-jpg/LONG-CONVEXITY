@@ -598,7 +598,16 @@ LIQ_CHAINS = {
     "gnosis": ("xdai", None, ["https://rpc.gnosischain.com"]),
     "scroll": ("scroll", "coingecko:ethereum", ["https://rpc.scroll.io"]),
     "metis": ("metis", "coingecko:metis-token", ["https://andromeda.metis.io/?owner=1088"]),
+    # PREREG_LIQ_NEWCHAINS_20261122 (endpoints from the liq_diag4 probe)
+    "sonic": ("sonic", "coingecko:sonic-3", ["https://rpc.soniclabs.com"]),
+    "mantle": ("mantle", "coingecko:mantle", ["https://rpc.mantle.xyz"]),
+    "linea": ("linea", "coingecko:ethereum", ["https://rpc.linea.build"]),
+    "celo": ("celo", "coingecko:celo", ["https://forno.celo.org"]),
+    "ink": ("ink", "coingecko:ethereum", ["https://rpc-qnd.inkonchain.com"]),
+    "soneium": ("soneium", "coingecko:ethereum", ["https://rpc.soneium.org"]),
+    "zksync": ("era", "coingecko:ethereum", ["https://mainnet.era.zksync.io"]),
 }
+NEW_CHAINS = ("sonic", "mantle", "linea", "celo", "ink", "soneium", "zksync")
 LIQ_START = int(pd.Timestamp("2024-11-01", tz="UTC").timestamp())
 LIQ_MONTHS = [int(t.timestamp()) for t in pd.date_range("2024-11-01", "2026-11-01", freq="MS", tz="UTC")]  # 25 edges
 LIQ_RECEIPT_CAP = 40000
@@ -1293,7 +1302,10 @@ def job_liq_chain(name):
     t0 = time.time()
     deadline = t0 + float(os.environ.get("LIQ_BUDGET_MIN", "0") or 0) * 60 if os.environ.get("LIQ_BUDGET_MIN") else None
     over = lambda: deadline is not None and time.time() > deadline  # noqa: E731
-    lkey, native, urls = LIQ_CHAINS[name]
+    pilot = name.endswith("_pilot")
+    base = name[:-6] if pilot else name
+    first = 21 if pilot else 0
+    lkey, native, urls = LIQ_CHAINS[base]
     if os.environ.get("LIQ_USE_ETHERSCAN") == "1":
         urls = [f"https://api.etherscan.io/v2/api?chainid={LIQ_ES_ID[name]}"]
         print(f"{name}: using Etherscan V2 (chainid {LIQ_ES_ID[name]})", flush=True)
@@ -1317,7 +1329,7 @@ def job_liq_chain(name):
         for ts in LIQ_MONTHS:
             lo = _first_block_at(urls, ts, lo, head)
             anchors.append(lo)
-        st.update(anchors=anchors, next_block=anchors[0], logs_done=False, receipts_done=False, complete=False)
+        st.update(anchors=anchors, next_block=anchors[first], logs_done=False, receipts_done=False, complete=False)
         _liq_save_state(name, st)
     anchors = st["anchors"]
     print(f"{name}: month anchors {anchors[0]}..{anchors[-1]}, resume at block {st['next_block']}", flush=True)
@@ -1456,7 +1468,7 @@ def job_liq_chain(name):
             dec[t] = None
     df["coll_dec"] = df["collateral"].map(dec)
     df["debt_dec"] = df["debt"].map(dec)
-    _liq_prices(name, toks)
+    _liq_prices(base, toks, out_name=name)
     df.to_parquet(OUT / f"liq_{name}.parquet")
     st["complete"] = True
     _liq_save_state(name, st)
@@ -1587,6 +1599,9 @@ JOBS = {"ipo2": job_ipo2, "iponews": job_iponews, "ipo": job_ipo, "myxsnap": job
         "llama_prices": job_llama_prices, "poly": job_poly,
         "liq_probe": job_liq_probe, "liq_diag": job_liq_diag, "liq_diag2": job_liq_diag2, "liq_diag3": job_liq_diag2, "liq_diag4": job_liq_diag4, "liq_secretcheck": job_liq_secretcheck, "liq_pxdiag": job_liq_pxdiag, "liq_replay_morphobase": job_liq_morpho_replay, "liq_morpho_replay_diag": job_liq_morpho_replay_diag, "liq_morphobase_pilot": lambda: job_liq_morpho("morphobase_pilot"), "liq_morphobase": lambda: job_liq_morpho("morphobase"), "liq_morphobase_s0": lambda: job_liq_morpho("morphobase_s0"),
         "liq_morphobase_s1": lambda: job_liq_morpho("morphobase_s1"), "liq_morphobase_s2": lambda: job_liq_morpho("morphobase_s2"), **{f"liq_replay_{c}": globals()[f"job_liq_replay_{c}"] for c in ("arbitrum", "base", "avalanche", "polygon", "optimism")}, "liq_decimals": job_liq_decimals, **{f"liq_prices_{c}": _liq_prices_job(c) for c in LIQ_CHAINS}, **{f"liq_{c}_es": _liq_es_job(c) for c in LIQ_ES_ID}, **{f"liq_{c}": globals()[f"job_liq_{c}"] for c in LIQ_CHAINS}}
+
+
+JOBS.update({f"liq_{c}_pilot": (lambda c: (lambda: job_liq_chain(c + "_pilot")))(c) for c in NEW_CHAINS})
 
 
 def main(argv):

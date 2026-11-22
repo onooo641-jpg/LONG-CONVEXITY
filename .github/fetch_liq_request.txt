@@ -1,4 +1,8 @@
-# chains for .github/workflows/fetch_liq.yml. Resumable. (run 19: Morpho stage 2 receipts remainder)
-morphobase_s0
-morphobase_s1
-morphobase_s2
+# chains for .github/workflows/fetch_liq.yml. Resumable. (run 20: newer-chain pilots, PREREG_LIQ_NEWCHAINS_20261122)
+sonic_pilot
+mantle_pilot
+linea_pilot
+celo_pilot
+ink_pilot
+soneium_pilot
+zksync_pilot
