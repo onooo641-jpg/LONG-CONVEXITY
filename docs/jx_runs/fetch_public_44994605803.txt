@@ -1,0 +1,110 @@
+=== liq_diag4
+diag4 sonic rpc.soniclabs.com from 2025-03-01 blk 10865128 span 1000: 0 logs, contracts []
+diag4 sonic rpc.soniclabs.com from 2025-03-01 blk 10865128 span 10000: 0 logs, contracts []
+diag4 sonic rpc.soniclabs.com from 2025-03-01 blk 10865128 span 100000: 1 logs, contracts ['0xaa1c02a8']
+diag4 sonic rpc.soniclabs.com from 2026-08-01 blk 76838175 span 1000: 0 logs, contracts []
+diag4 sonic rpc.soniclabs.com from 2026-08-01 blk 76838175 span 10000: 0 logs, contracts []
+diag4 sonic rpc.soniclabs.com from 2026-08-01 blk 76838175 span 100000: 2 logs, contracts ['0x680f8a57', '0xaa1c02a8']
+  rpc error eth_getLogs @ https://sonic-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address in your request or, to remove restrictions, order a dedicated full node here: https://www.allnodes.com/s/host'}
+diag4 sonic sonic-rpc.publicnode.com from 2025-03-01 blk 10865128 span 1000: ERR https://sonic-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address i
+diag4 sonic sonic-rpc.publicnode.com from 2025-03-01 blk 10865128 span 10000: ERR https://sonic-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address i
+diag4 sonic sonic-rpc.publicnode.com from 2025-03-01 blk 10865128 span 100000: ERR https://sonic-rpc.publicnode.com: {'code': -32701, 'message': 'exceed maximum block range:
+diag4 sonic sonic-rpc.publicnode.com from 2026-08-01 blk 76838175 span 1000: ERR https://sonic-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address i
+diag4 sonic sonic-rpc.publicnode.com from 2026-08-01 blk 76838175 span 10000: ERR https://sonic-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address i
+diag4 sonic sonic-rpc.publicnode.com from 2026-08-01 blk 76838175 span 100000: ERR https://sonic-rpc.publicnode.com: {'code': -32701, 'message': 'exceed maximum block range:
+  rpc exception eth_getLogs @ https://sonic.drpc.org: HTTP 400
+diag4 sonic sonic.drpc.org from 2025-03-01 blk 10865128 span 1000: ERR https://sonic.drpc.org: HTTPError: HTTP 400
+diag4 sonic sonic.drpc.org from 2025-03-01 blk 10865128 span 10000: ERR https://sonic.drpc.org: HTTPError: HTTP 400
+diag4 sonic sonic.drpc.org from 2025-03-01 blk 10865128 span 100000: ERR https://sonic.drpc.org: HTTPError: HTTP 400
+diag4 sonic sonic.drpc.org from 2026-08-01 blk 76838175 span 1000: ERR https://sonic.drpc.org: HTTPError: HTTP 400
+diag4 sonic sonic.drpc.org from 2026-08-01 blk 76838175 span 10000: ERR https://sonic.drpc.org: HTTPError: HTTP 400
+diag4 sonic sonic.drpc.org from 2026-08-01 blk 76838175 span 100000: ERR https://sonic.drpc.org: HTTPError: HTTP 400
+diag4 mantle rpc.mantle.xyz from 2025-03-01 blk 76328444 span 1000: 0 logs, contracts []
+diag4 mantle rpc.mantle.xyz from 2025-03-01 blk 76328444 span 10000: 0 logs, contracts []
+  rpc exception eth_getLogs @ https://rpc.mantle.xyz: HTTP 400
+diag4 mantle rpc.mantle.xyz from 2025-03-01 blk 76328444 span 100000: ERR https://rpc.mantle.xyz: HTTPError: HTTP 400
+diag4 mantle rpc.mantle.xyz from 2026-08-01 blk 98706044 span 1000: 0 logs, contracts []
+diag4 mantle rpc.mantle.xyz from 2026-08-01 blk 98706044 span 10000: 0 logs, contracts []
+diag4 mantle rpc.mantle.xyz from 2026-08-01 blk 98706044 span 100000: ERR https://rpc.mantle.xyz: HTTPError: HTTP 400
+  rpc error eth_getLogs @ https://mantle-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address in your request or, to remove restrictions, order a dedicated full node here: https://www.allnodes.com/mnt/host'}
+diag4 mantle mantle-rpc.publicnode.com from 2025-03-01 blk 76328444 span 1000: ERR https://mantle-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address 
+diag4 mantle mantle-rpc.publicnode.com from 2025-03-01 blk 76328444 span 10000: ERR https://mantle-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address 
+diag4 mantle mantle-rpc.publicnode.com from 2025-03-01 blk 76328444 span 100000: ERR https://mantle-rpc.publicnode.com: {'code': -32701, 'message': 'exceed maximum block range
+diag4 mantle mantle-rpc.publicnode.com from 2026-08-01 blk 98706044 span 1000: ERR https://mantle-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address 
+diag4 mantle mantle-rpc.publicnode.com from 2026-08-01 blk 98706044 span 10000: ERR https://mantle-rpc.publicnode.com: {'code': -32701, 'message': 'Please specify an address 
+diag4 mantle mantle-rpc.publicnode.com from 2026-08-01 blk 98706044 span 100000: ERR https://mantle-rpc.publicnode.com: {'code': -32701, 'message': 'exceed maximum block range
+  rpc exception eth_getBlockByNumber @ https://mantle.drpc.org: HTTP 408
+diag4 mantle mantle.drpc.org: header search 2026-08-01 FAIL https://mantle.drpc.org: HTTPError: HTTP 408
+  rpc exception eth_getLogs @ https://mantle.drpc.org: HTTP 400
+diag4 mantle mantle.drpc.org from 2025-03-01 blk 76328444 span 1000: ERR https://mantle.drpc.org: HTTPError: HTTP 400
+diag4 mantle mantle.drpc.org from 2025-03-01 blk 76328444 span 10000: ERR https://mantle.drpc.org: HTTPError: HTTP 400
+diag4 mantle mantle.drpc.org from 2025-03-01 blk 76328444 span 100000: ERR https://mantle.drpc.org: HTTPError: HTTP 400
+diag4 linea rpc.linea.build from 2025-03-01 blk 16395085 span 1000: 0 logs, contracts []
+diag4 linea rpc.linea.build from 2025-03-01 blk 16395085 span 10000: 0 logs, contracts []
+  rpc error eth_getLogs @ https://rpc.linea.build: {'code': -32602, 'message': 'range 100000 exceeds limit of 10000'}
+diag4 linea rpc.linea.build from 2025-03-01 blk 16395085 span 100000: ERR https://rpc.linea.build: {'code': -32602, 'message': 'range 100000 exceeds limit of 10000'
+diag4 linea rpc.linea.build from 2026-08-01 blk 31583630 span 1000: 0 logs, contracts []
+diag4 linea rpc.linea.build from 2026-08-01 blk 31583630 span 10000: 0 logs, contracts []
+diag4 linea rpc.linea.build from 2026-08-01 blk 31583630 span 100000: ERR https://rpc.linea.build: {'code': -32602, 'message': 'range 100000 exceeds limit of 10000'
+  rpc exception eth_getLogs @ https://linea-rpc.publicnode.com: HTTP 403
+diag4 linea linea-rpc.publicnode.com from 2025-03-01 blk 16395085 span 1000: ERR https://linea-rpc.publicnode.com: HTTPError: HTTP 403
+diag4 linea linea-rpc.publicnode.com from 2025-03-01 blk 16395085 span 10000: ERR https://linea-rpc.publicnode.com: HTTPError: HTTP 403
+diag4 linea linea-rpc.publicnode.com from 2025-03-01 blk 16395085 span 100000: ERR https://linea-rpc.publicnode.com: HTTPError: HTTP 403
+diag4 linea linea-rpc.publicnode.com from 2026-08-01 blk 31583630 span 1000: ERR https://linea-rpc.publicnode.com: HTTPError: HTTP 403
+diag4 linea linea-rpc.publicnode.com from 2026-08-01 blk 31583630 span 10000: ERR https://linea-rpc.publicnode.com: HTTPError: HTTP 403
+diag4 linea linea-rpc.publicnode.com from 2026-08-01 blk 31583630 span 100000: ERR https://linea-rpc.publicnode.com: HTTPError: HTTP 403
+  rpc exception eth_getLogs @ https://linea.drpc.org: HTTP 400
+diag4 linea linea.drpc.org from 2025-03-01 blk 16395085 span 1000: ERR https://linea.drpc.org: HTTPError: HTTP 400
+diag4 linea linea.drpc.org from 2025-03-01 blk 16395085 span 10000: ERR https://linea.drpc.org: HTTPError: HTTP 400
+diag4 linea linea.drpc.org from 2025-03-01 blk 16395085 span 100000: ERR https://linea.drpc.org: HTTPError: HTTP 400
+diag4 linea linea.drpc.org from 2026-08-01 blk 31583630 span 1000: ERR https://linea.drpc.org: HTTPError: HTTP 400
+diag4 linea linea.drpc.org from 2026-08-01 blk 31583630 span 10000: ERR https://linea.drpc.org: HTTPError: HTTP 400
+diag4 linea linea.drpc.org from 2026-08-01 blk 31583630 span 100000: ERR https://linea.drpc.org: HTTPError: HTTP 400
+diag4 celo forno.celo.org from 2025-03-01 blk 30622543 span 1000: 0 logs, contracts []
+  rpc exception eth_getLogs @ https://forno.celo.org: HTTP 400
+diag4 celo forno.celo.org from 2025-03-01 blk 30622543 span 10000: ERR https://forno.celo.org: HTTPError: HTTP 400
+diag4 celo forno.celo.org from 2025-03-01 blk 30622543 span 100000: ERR https://forno.celo.org: HTTPError: HTTP 400
+diag4 celo forno.celo.org from 2026-08-01 blk 73641642 span 1000: 0 logs, contracts []
+diag4 celo forno.celo.org from 2026-08-01 blk 73641642 span 10000: ERR https://forno.celo.org: HTTPError: HTTP 400
+diag4 celo forno.celo.org from 2026-08-01 blk 73641642 span 100000: ERR https://forno.celo.org: HTTPError: HTTP 400
+diag4 celo celo-rpc.publicnode.com: header search 2025-03-01 FAIL 'NoneType' object is not subscriptable
+  rpc exception eth_getLogs @ https://celo-rpc.publicnode.com: HTTP 403
+diag4 celo celo-rpc.publicnode.com from 2026-08-01 blk 73641642 span 1000: ERR https://celo-rpc.publicnode.com: HTTPError: HTTP 403
+diag4 celo celo-rpc.publicnode.com from 2026-08-01 blk 73641642 span 10000: ERR https://celo-rpc.publicnode.com: HTTPError: HTTP 403
+diag4 celo celo-rpc.publicnode.com from 2026-08-01 blk 73641642 span 100000: ERR https://celo-rpc.publicnode.com: HTTPError: HTTP 403
+diag4 ink rpc-gel.inkonchain.com from 2025-03-01 blk 7288789 span 1000: 0 logs, contracts []
+  rpc exception eth_getLogs @ https://rpc-gel.inkonchain.com: HTTP 400
+diag4 ink rpc-gel.inkonchain.com from 2025-03-01 blk 7288789 span 10000: ERR https://rpc-gel.inkonchain.com: HTTPError: HTTP 400
+diag4 ink rpc-gel.inkonchain.com from 2025-03-01 blk 7288789 span 100000: ERR https://rpc-gel.inkonchain.com: HTTPError: HTTP 400
+diag4 ink rpc-gel.inkonchain.com from 2026-08-01 blk 52043989 span 1000: 0 logs, contracts []
+diag4 ink rpc-gel.inkonchain.com from 2026-08-01 blk 52043989 span 10000: ERR https://rpc-gel.inkonchain.com: HTTPError: HTTP 400
+diag4 ink rpc-gel.inkonchain.com from 2026-08-01 blk 52043989 span 100000: ERR https://rpc-gel.inkonchain.com: HTTPError: HTTP 400
+diag4 ink rpc-qnd.inkonchain.com from 2025-03-01 blk 7288789 span 1000: 0 logs, contracts []
+diag4 ink rpc-qnd.inkonchain.com from 2025-03-01 blk 7288789 span 10000: 0 logs, contracts []
+diag4 ink rpc-qnd.inkonchain.com from 2025-03-01 blk 7288789 span 100000: ERR https://rpc-qnd.inkonchain.com: HTTP 413
+diag4 ink rpc-qnd.inkonchain.com from 2026-08-01 blk 52043989 span 1000: 0 logs, contracts []
+diag4 ink rpc-qnd.inkonchain.com from 2026-08-01 blk 52043989 span 10000: 0 logs, contracts []
+diag4 ink rpc-qnd.inkonchain.com from 2026-08-01 blk 52043989 span 100000: ERR https://rpc-qnd.inkonchain.com: HTTP 413
+  rpc exception eth_getLogs @ https://ink.drpc.org: HTTP 400
+diag4 ink ink.drpc.org from 2025-03-01 blk 7288789 span 1000: ERR https://ink.drpc.org: HTTPError: HTTP 400
+diag4 ink ink.drpc.org from 2025-03-01 blk 7288789 span 10000: ERR https://ink.drpc.org: HTTPError: HTTP 400
+diag4 ink ink.drpc.org from 2025-03-01 blk 7288789 span 100000: ERR https://ink.drpc.org: HTTPError: HTTP 400
+diag4 ink ink.drpc.org from 2026-08-01 blk 52043989 span 1000: ERR https://ink.drpc.org: HTTPError: HTTP 400
+diag4 ink ink.drpc.org from 2026-08-01 blk 52043989 span 10000: ERR https://ink.drpc.org: HTTPError: HTTP 400
+diag4 ink ink.drpc.org from 2026-08-01 blk 52043989 span 100000: ERR https://ink.drpc.org: HTTPError: HTTP 400
+diag4 soneium rpc.soneium.org from 2025-03-01 blk 3826225 span 1000: 0 logs, contracts []
+  rpc exception eth_getLogs @ https://rpc.soneium.org: HTTP 400
+diag4 soneium rpc.soneium.org from 2025-03-01 blk 3826225 span 10000: ERR https://rpc.soneium.org: HTTPError: HTTP 400
+diag4 soneium rpc.soneium.org from 2025-03-01 blk 3826225 span 100000: ERR https://rpc.soneium.org: HTTPError: HTTP 400
+diag4 soneium rpc.soneium.org from 2026-08-01 blk 26203825 span 1000: 0 logs, contracts []
+diag4 soneium rpc.soneium.org from 2026-08-01 blk 26203825 span 10000: ERR https://rpc.soneium.org: HTTPError: HTTP 400
+diag4 soneium rpc.soneium.org from 2026-08-01 blk 26203825 span 100000: ERR https://rpc.soneium.org: HTTPError: HTTP 400
+diag4 zksync mainnet.era.zksync.io from 2025-03-01 blk 56795871 span 1000: 0 logs, contracts []
+diag4 zksync mainnet.era.zksync.io from 2025-03-01 blk 56795871 span 10000: 0 logs, contracts []
+diag4 zksync mainnet.era.zksync.io from 2025-03-01 blk 56795871 span 100000: 21 logs, contracts ['0x4d942924']
+diag4 zksync mainnet.era.zksync.io from 2026-08-01 blk 71396799 span 1000: 0 logs, contracts []
+diag4 zksync mainnet.era.zksync.io from 2026-08-01 blk 71396799 span 10000: 0 logs, contracts []
+diag4 zksync mainnet.era.zksync.io from 2026-08-01 blk 71396799 span 100000: 2 logs, contracts ['0x4d942924']
+  rpc exception eth_blockNumber @ https://zksync-era.blockpi.network/v1/rpc/public: HTTP 503
+diag4 zksync zksync-era.blockpi.network/v1/rpc/: blockNumber FAIL https://zksync-era.blockpi.network/v1/rpc/public: HTTPError: HTTP 503
+=== liq_diag4 done in 436s  ok 838 fail 54
