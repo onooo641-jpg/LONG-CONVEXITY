@@ -1,0 +1,20 @@
+LucidFlex model as in repo: price 115, reset 90
+flag rule: real >= $22,180, coin flip >= $5,000, worst dip >= -$5,280 (Topstep 50K: $44,359 / $18,046 / -$3,520)
+
+LucidFlex 50K DLL OFF, $165 list               | real $  34,723 (78% of Topstep) | coin flip $ 16,119 (95%) | dip $ -5,070 | MEETS FLAG RULE
+LucidFlex 50K DLL OFF, $115.50 promo           | real $  37,495 (85% of Topstep) | coin flip $ 18,495 (97%) | dip $ -4,724 | MEETS FLAG RULE
+LucidFlex 50K DLL ON*, $115 list               | real $  37,523 (85% of Topstep) | coin flip $ 18,519 (97%) | dip $ -4,720 | MEETS FLAG RULE
+LucidFlex 50K DLL ON*, $80.50 promo            | real $  39,455 (89% of Topstep) | coin flip $ 20,175 (98%) | dip $ -4,478 | MEETS FLAG RULE
+LucidDaily 50K EOD eval**, $122 list           | real $  51,557 (116% of Topstep) | coin flip $ 17,739 (96%) | dip $ -5,368 | -
+LucidDaily 50K EOD eval**, $85.40 promo        | real $  57,486 (130% of Topstep) | coin flip $ 24,093 (99%) | dip $ -3,758 | MEETS FLAG RULE
+LucidDaily 50K Intraday eval**, $94 list       | real $  56,093 (126% of Topstep) | coin flip $ 22,594 (98%) | dip $ -4,136 | MEETS FLAG RULE
+LucidDaily 50K Intraday eval**, $65.80 promo   | real $  60,661 (137% of Topstep) | coin flip $ 27,487 (100%) | dip $ -2,895 | MEETS FLAG RULE
+LucidDaily 50K EOD funded, $236 list           | real $  33,089 (75% of Topstep) | coin flip $ -2,140 (39%) | dip $-10,384 | -
+LucidDaily 50K EOD funded, $165.20 promo       | real $  44,558 (100% of Topstep) | coin flip $ 10,241 (80%) | dip $ -7,269 | -
+DayTraders EOD 50K, $105 + $5 activation       | real $  47,894 (108% of Topstep) | coin flip $ 12,461 (88%) | dip $ -3,265 | MEETS FLAG RULE
+DayTraders S2F 50K, $570 list                  | real $  27,820 (63% of Topstep) | coin flip $ -8,565 (34%) | dip $-17,360 | -
+DayTraders S2F 50K, $342 promo                 | real $  44,692 (101% of Topstep) | coin flip $ 15,893 (94%) | dip $ -7,524 | -
+
+Resets: LucidFlex keeps the model's $90; other products assume reset = purchase price (not supplied).
+* DLL is a soft pause (not a breach) and its 50K amount is not published: modelled as no DLL (optimistic).
+** recycle.py works on closed-trade P&L, so intraday vs end-of-day drawdown is not distinguished (intraday versions are optimistic).

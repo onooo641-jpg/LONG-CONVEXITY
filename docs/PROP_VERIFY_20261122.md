@@ -104,3 +104,18 @@ Available, bots allowed, rules verified and meeting the flag rule: **Topstep 50K
 Prime 50K** ($49,057). LucidFlex 50K (rules verified; price behind a bot check) and DayTraders EOD / S2F and LucidDaily (rules verified; price
 unreadable) depend on prices only Jx can read at checkout. MFFU, FuturesElite, Alpha Futures, Blue Guardian Futures and Goat Funded Futures are
 not available to Malaysian residents.
+
+## 6. Products priced at checkout prices supplied by Jx (2026-11-22; source: Jx, not read by the radar)
+`docs/jx_runs/prop_price_jx_20261122.txt` (identical on re-run). Rules as verified above. Resets: LucidFlex keeps the model's $90; others assume
+reset = purchase price (not supplied). LucidFlex DLL is a soft pause with no published 50K amount → modelled as none (optimistic for DLL ON).
+recycle.py uses closed-trade P&L, so intraday vs EOD drawdown variants of LucidDaily are not distinguished (intraday optimistic).
+| product, price | real | coin flip | worst dip | flag rule |
+|---|---|---|---|---|
+| LucidFlex 50K DLL OFF $165 / $115.50 promo | $34,723 / $37,495 | $16,119 / $18,495 | −$5,070 / −$4,724 | yes / yes |
+| LucidFlex 50K DLL ON $115 / $80.50 promo | $37,523 / $39,455 | $18,519 / $20,175 | −$4,720 / −$4,478 | yes / yes |
+| LucidDaily 50K EOD eval $122 / $85.40 promo | $51,557 / $57,486 | $17,739 / $24,093 | −$5,368 / −$3,758 | no (dip by $88) / **yes** |
+| LucidDaily 50K Intraday eval $94 / $65.80 promo | $56,093 / $60,661 | $22,594 / $27,487 | −$4,136 / −$2,895 | yes / yes (optimistic) |
+| LucidDaily 50K EOD funded $236 / $165.20 promo | $33,089 / $44,558 | −$2,140 / $10,241 | −$10,384 / −$7,269 | no / no |
+| **DayTraders EOD 50K $105 + $5 activation** | **$47,894** | $12,461 | −$3,265 | **yes** |
+| DayTraders S2F 50K $570 / $342 promo | $27,820 / $44,692 | −$8,565 / $15,893 | −$17,360 / −$7,524 | no / no |
+| Blueberry Prime 2-Step / Classic / Flex / Instant Lite | — | — | — | not priced: these plans are not on the futures help centre (they look like Blueberry's CFD plans); rules needed |
