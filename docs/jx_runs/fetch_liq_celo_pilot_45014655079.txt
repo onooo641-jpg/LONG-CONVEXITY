@@ -1,0 +1,12 @@
+=== liq_celo_pilot
+celo_pilot: month anchors 28549357..81590442, resume at block 81590442
+celo_pilot: receipts: 22 cached, 5 to fetch (sampled=False)
+  celo_pilot: receipts 23/27 (0 min)
+celo_pilot: retry pass 1: 4 receipts missing
+  celo_pilot: receipts 23/27 (0 min)
+celo_pilot: retry pass 2: 4 receipts missing
+  celo_pilot: receipts 24/27 (1 min)
+celo_pilot: retry pass 3: 3 receipts missing
+  celo_pilot: receipts 24/27 (2 min)
+celo_pilot: INCOMPLETE receipts: 3/27 still missing after retries; re-run to continue
+=== liq_celo_pilot done in 121s  ok 16 fail 0
