@@ -1005,7 +1005,20 @@ def job_batch8s():
     d = get("https://blue-api.morpho.org/graphql", {"query": "{ vaults(first: 2) { items { address name } } }"}, tries=1)
     print(f"PROBE morpho minimal: {json.dumps(d)[:300] if d else 'no answer'}", flush=True)
 
-JOBS = {"batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+def job_vxn():
+    """VXN and VIX daily closes from FRED (docs/PREREG_OPTIONWRAP_20261122.md)."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    for sid in ("VXNCLS", "VIXCLS"):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={sid}", headers=UA), timeout=120) as r:
+                txt = r.read().decode()
+            (OUT / f"vxn_{sid.lower()}.csv").write_text(txt)
+            print(f"{sid}: {len(txt.splitlines())} lines", flush=True)
+        except Exception as e:  # noqa: BLE001
+            print(f"{sid}: FAIL {e}", flush=True)
+
+JOBS = {"vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys
