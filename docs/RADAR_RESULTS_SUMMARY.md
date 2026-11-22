@@ -44,7 +44,7 @@ Per-month view (`docs/jx_runs/radar_monthly_20261121.txt`): Topstep $341/month a
 | 204 | monthly rotation into top stable yields | FAIL (collapses) |
 | 205 | Hyperliquid HLP vault | FAIL near-miss (27.7% → 7.9%) |
 | 207 | new reward programmes, first 30 days | FAIL |
-| 208 | cross-venue funding gaps (HL/dYdX/Aevo) | FAIL (13.8% → 4.4%) |
+| 208 | cross-venue funding gaps (HL/dYdX/Aevo) | **PASS after fee-bug fix: 20.3% / 11.9%** (fragile: fails at 2× fees, needs Aevo; execution costs not modelled) |
 | 209 | paid-to-borrow stable loops | ceiling 11.4%; not testable (borrow history paywalled) |
 | 210 | ten named stable programmes (sUSDe, bUSD0, sUSDf, Sky, Spark, Maple, Pendle, Liquity, Felix, HL Earn) | FAIL (3–5% now) |
 | 211 | Pendle PTs to maturity incl. expired | FAIL (depegs) |
@@ -63,6 +63,10 @@ Per-month view (`docs/jx_runs/radar_monthly_20261121.txt`): Topstep $341/month a
 | 230 | stability pools (Liquity v2) | FAIL (pool ~$3.6K) |
 | 259–278 | batch 6 (zero-fee venues, real-yield staking, tranches, insurance funds, bribes, veAERO, RWA, fixed-rate auctions, CME basis, tokenised stocks, LST unstake, hedged LP, relayers, HYPE staking, reverse carry, new-chain incentives) | #276 hedged HYPE staking narrow pass, not robust; rest FAIL / KILL / not testable |
 Earlier non-prop tests (#29–#59, #100) are in `docs/HANDOFF_NONPROP.md`. Mechanism list with desk checks: `docs/IDEAS_SWEEP_20261121.md`.
+
+## B2. Refinement (configuration changes; year-1 design, year-2 test; `docs/PREREG_REFINE_20261122.md`)
+PASS: R1 funding gaps with maker fees (24.9% / 17.1%), R5 hedged HYPE staking (23.4% / 9.3%, marginal), R6 Gains vaults equal weight (11.6% / 9.8%,
+small capacity, gToken price check pending). FAIL with every configuration: R2 GM pools, R3 stable-yield selection, R4 new rewards, R7 conditional carry.
 
 ## C. Open items
 1. Confirm prices (script-loaded, unreadable by the crawler): DayTraders EOD / S2F 50K, LucidDaily 50K, TTP Futures Instant 50K, FuturesElite
