@@ -45,3 +45,14 @@ Commands: `uv run python scripts/batch8_20261122.py | tee docs/jx_runs/batch8_20
   as Stage 1 (top 5 by trailing 90 days, 10% leader share). Period 2024-11..2026-10. PASS = both halves ≥ 8%.
 - **Repair probe** (fetch only; any test stays registered as above): Drift public S3 historical funding records, Orderly endpoint variants,
   a minimal Morpho GraphQL query.
+
+## Addendum 2: compliance audit (2026-11-22, before the Stage 2 results)
+The five-part filter (PREREG_RADAR F1–F5) was not applied idea by idea at Stage 0 of batches 7–8. Applied now, for the two Stage-2 candidates:
+| # | F1 repeatable | F2 long-lived | F3 reused setup | F4 capped downside | F5 scales by copies | facts |
+|---|---|---|---|---|---|---|
+| 280 | yes (funding settles hourly) | yes (Deribit 2016, HL 2023) | yes (10 coins × 2 venue pairs) | partial: delta-neutral, but venue and liquidation risk | **unknown**: depends on Deribit book depth (Stage 2 execution check) | funding data verified (venue APIs); Deribit Malaysia access **assumed** |
+| 288 | yes | mixed (vaults 6–24 months old) | yes | **FAIL**: vault returns carry trading losses (−24% in one month) | small (13 eligible vaults ≥ $1M) | data verified (HL API); leader share 10% verified per vault |
+**Consequence:** #288 cannot be flagged even if Stage 2 passes; it would stay a near-miss (F4). #280 can be flagged only if its execution
+check also passes. Other deviations so far: the fetches use `scripts/fetch_fallback.py` (its own GitHub Actions workflow, same mechanism as
+`fetch_public.py`); the first #285 run did not follow the registered rule and was corrected before recording; the #288 Stage-2 universe change
+(adding closed vaults) was written after the pilot. It only makes the test harder; the selection rule is unchanged.
