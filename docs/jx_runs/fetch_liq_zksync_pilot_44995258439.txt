@@ -1,0 +1,12 @@
+=== liq_zksync_pilot
+zksync_pilot: month anchors 47865299..72710524, resume at block 71396799
+  zksync_pilot: scanned to block 72016799/72710523 (38 events, 1 min)
+  zksync_pilot: scanned to block 72656799/72710523 (40 events, 1 min)
+  zksync_pilot: scanned to block 72710524/72710523 (40 events, 1 min)
+zksync_pilot: log scan complete, 40 events
+zksync_pilot: receipts: 0 cached, 40 to fetch (sampled=False)
+  zksync_pilot: receipts 40/40 (1 min)
+zksync_pilot: receipts missing after retries: 0/40 (<=1%, accepted; gas imputed, bot 'unknown')
+zksync: prices 5835 points, 8/8 coins priced
+zksync_pilot: COMPLETE 40 events, 1 min
+=== liq_zksync_pilot done in 67s  ok 649 fail 0
