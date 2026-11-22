@@ -26,10 +26,10 @@
   28839025,
   30178225
  ],
- "next_block": 26217325,
+ "next_block": 27544825,
  "logs_done": false,
  "receipts_done": false,
  "complete": false,
- "getlogs_fails": 14,
- "last_flush": "2026-11-22T09:02:26Z"
+ "getlogs_fails": 24,
+ "last_flush": "2026-11-22T10:06:05Z"
 }

@@ -1,0 +1,25 @@
+=== liq_soneium_pilot
+soneium_pilot: month anchors 0..30178225, resume at block 26217325
+  rpc exception eth_getLogs @ https://rpc.soneium.org: HTTP 429
+  soneium_pilot: getLogs failed 26322950-26323574: https://rpc.soneium.org: HTTPError: HTTP 429
+  soneium_pilot: getLogs failed 26446575-26447199: https://rpc.soneium.org: HTTPError: HTTP 429
+  soneium_pilot: getLogs failed 26569575-26570199: https://rpc.soneium.org: HTTPError: HTTP 429
+  soneium_pilot: getLogs failed 26692575-26693199: https://rpc.soneium.org: HTTPError: HTTP 429
+  soneium_pilot: getLogs failed 26815575-26816199: https://rpc.soneium.org: HTTPError: HTTP 429
+  soneium_pilot: getLogs failed 26938575-26939199: https://rpc.soneium.org: HTTPError: HTTP 429
+  soneium_pilot: getLogs failed 27062200-27062824: https://rpc.soneium.org: HTTPError: HTTP 429
+  soneium_pilot: getLogs failed 27185825-27186449: https://rpc.soneium.org: HTTPError: HTTP 429
+  soneium_pilot: getLogs failed 27310075-27310699: https://rpc.soneium.org: HTTPError: HTTP 429
+  soneium_pilot: getLogs failed 27433075-27433699: https://rpc.soneium.org: HTTPError: HTTP 429
+  soneium_pilot: scanned to block 27436075/30178224 (184 events, 10 min)
+  soneium_pilot: scanned to block 27544825/30178224 (187 events, 10 min)
+  soneium_pilot: getLogs failed 27556075-27556699: https://rpc.soneium.org: HTTPError: HTTP 429
+  soneium_pilot: getLogs failed 27679075-27679699: https://rpc.soneium.org: HTTPError: HTTP 429
+  soneium_pilot: getLogs failed 27802700-27803324: https://rpc.soneium.org: HTTPError: HTTP 429
+  soneium_pilot: getLogs failed 27925700-27926324: https://rpc.soneium.org: HTTPError: HTTP 429
+  soneium_pilot: getLogs failed 28048700-28049324: https://rpc.soneium.org: HTTPError: HTTP 429
+  soneium_pilot: getLogs failed 28171700-28172324: https://rpc.soneium.org: HTTPError: HTTP 429
+  soneium_pilot: getLogs failed 28294700-28295324: https://rpc.soneium.org: HTTPError: HTTP 429
+  soneium_pilot: getLogs failed 28417700-28418324: https://rpc.soneium.org: HTTPError: HTTP 429
+  soneium_pilot: getLogs failed 28540700-28541324: https://rpc.soneium.org: HTTPError: HTTP 429
+  soneium_pilot: getLogs failed 28663700-28664324: https://rpc.soneium.org: HTTPError: HTTP 429
