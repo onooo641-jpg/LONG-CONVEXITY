@@ -26,10 +26,11 @@
   101341244,
   102680444
  ],
- "next_block": 100099444,
- "logs_done": false,
- "receipts_done": false,
- "complete": false,
- "getlogs_fails": 506,
- "last_flush": "2026-11-22T10:40:55Z"
+ "next_block": 102680444,
+ "logs_done": true,
+ "receipts_done": true,
+ "complete": true,
+ "getlogs_fails": 535,
+ "last_flush": "2026-11-22T10:50:09Z",
+ "receipts_missing": 0
 }
