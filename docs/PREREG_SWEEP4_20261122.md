@@ -28,3 +28,11 @@ Stage 1 KILL < 4%/yr; Stage 2 PASS = both halves ≥ 8%/yr. Costs as stated per 
 **Count:** 17 mechanisms; 11 go to tests (#330, #332, #334–#339, #342–#344, with #332 / #338 / #342 conditional on data); 1 parked (#333); 4 excluded (#331, #341, #345, #346); #340 folded into #273.
 Malaysia: DeFi and US stocks via a broker such as IBKR (assumed); pump.fun front-end access from Malaysia **not verified**.
 Command: `uv run python -m scripts.sweep4_20261122 | tee docs/jx_runs/sweep4_20261122.txt`.
+
+## Addendum 1 (2026-11-22, after the first fetch; rules unchanged): data status and follow-up job `sweep4b`
+First fetch: 910 graduated pump.fun coins (196 migrated pools with hourly OHLCV), 136 Coinbase USD products listed on HL, 84 buyback protocols,
+tokenised-gold prices. **#332 not testable** (no index-token NAV source answered). **#338 not testable** (no spin-off list on Wikipedia).
+**#343 not testable** (crypto-ETF article returned no text). **#336 not testable** (the Nasdaq-100 article has no change table). **#344 not
+testable** (no pre-IPO HIP-3 name listed on an exchange in the window). The ticker pattern missed the S&P change table's format, and the unlock
+schedules were truncated, so job `sweep4b` fetches Yahoo prices for every S&P 500 change since 2024-10 (#337; the table also gives S&P's
+announcement dates, which allows a proper look-ahead check of #303) and slimmed unlock schedules with HL candles (#342).

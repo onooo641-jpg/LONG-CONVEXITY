@@ -1591,7 +1591,73 @@ def job_sweep4():
     print(f"  emission schedules: {got}", flush=True)
     save()
 
-JOBS = {"sweep4": job_sweep4, "addprice": job_addprice, "fred9": job_fred9, "batch10b": job_batch10b, "repair8": job_repair8, "sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+def _sp_changes(wt):
+    """Rows of 'Historical components of the S&P 500': (effective, added, removed, reason, announcement yyyymmdd or None)."""
+    import re as r_
+    rows = []
+    for blk in wt.split("|-")[1:]:
+        cells = [c.strip() for c in r_.split(r"\n\|\|?", "\n" + blk.strip()) if c.strip()]
+        if len(cells) < 5:
+            continue
+        m = r_.match(r"([A-Z][a-z]+ \d{1,2}, \d{4})", cells[0])
+        if not m:
+            continue
+        ann = r_.search(r"announcements/(\d{8})", blk) or r_.search(r"\|\s*date\s*=\s*(\d{4}-\d{2}-\d{2})", blk)
+        tick = lambda c: c if r_.fullmatch(r"[A-Z][A-Z.]{0,5}", c) else None  # noqa: E731
+        rows.append((m.group(1), tick(cells[1]), tick(cells[3]) if len(cells) > 3 else None, cells[5] if len(cells) > 5 else "",
+                     ann.group(1).replace("-", "") if ann else None))
+    return rows
+
+
+def job_sweep4b():
+    """Sweep 4 follow-up (same rules): Yahoo prices for S&P 500 changes 2024-10..2026-11 (#337, #303 check); trimmed unlock schedules (#342)."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    out = {}
+    w = get("https://en.wikipedia.org/w/api.php?action=parse&page=Historical_components_of_the_S%26P_500&prop=wikitext&format=json&formatversion=2", tries=2)
+    wt = ((w or {}).get("parse") or {}).get("wikitext", "")
+    rows = _sp_changes(wt)
+    rows = [r for r in rows if pd.Timestamp(r[0]) >= pd.Timestamp("2024-10-01")]
+    out["sp_changes"] = rows
+    tick = sorted({t for r in rows for t in (r[1], r[2]) if t})
+    for t_ in tick + ["SPY"]:
+        y = _yahoo(t_.replace(".", "-"), "2y")
+        if y:
+            out[f"yahoo|{t_}"] = y
+        time.sleep(0.35)
+    print(f"  S&P changes since 2024-10: {len(rows)} rows; priced {sum(1 for k in out if k.startswith('yahoo|'))}/{len(tick) + 1}", flush=True)
+    lst = get("https://defillama-datasets.llama.fi/emissionsProtocolsList", tries=2) or []
+    hl = {a["name"] for a in (get("https://api.hyperliquid.xyz/info", {"type": "meta"}) or {}).get("universe", [])}
+    end = int(time.time() * 1000)
+    n = 0
+    for nm in lst:
+        d = get(f"https://defillama-datasets.llama.fi/emissions/{nm}", tries=1)
+        if not isinstance(d, dict):
+            continue
+        gid = d.get("gecko_id")
+        chart = d.get("unlockUsdChart") or []
+        chart = [x for x in chart if isinstance(x, (list, tuple)) and len(x) == 2 and x[0] >= 1725000000]
+        sym = None
+        if gid:
+            c = get(f"https://coins.llama.fi/prices/current/coingecko:{gid}", tries=1) or {}
+            sym = (((c.get("coins") or {}).get(f"coingecko:{gid}")) or {}).get("symbol")
+        out[f"emission|{nm}"] = {"gecko_id": gid, "symbol": sym, "unlockUsdChart": chart, "supplyMetrics": d.get("supplyMetrics")}
+        if sym and sym.upper() in hl:
+            k = get("https://api.hyperliquid.xyz/info", {"type": "candleSnapshot", "req": {"coin": sym.upper(), "interval": "1d",
+                    "startTime": end - 900 * 86400 * 1000, "endTime": end}}, tries=3) or []
+            out[f"hld|{sym.upper()}"] = [[x["t"], float(x["c"])] for x in k]
+            c2 = get(f"https://coins.llama.fi/chart/coingecko:{gid}?start={int(pd.Timestamp('2024-09-01', tz='UTC').timestamp())}&span=820&period=1d", tries=1)
+            out[f"price|{gid}"] = (((c2 or {}).get("coins") or {}).get(f"coingecko:{gid}") or {}).get("prices")
+            n += 1
+            time.sleep(0.6)
+        time.sleep(0.2)
+    k = get("https://api.hyperliquid.xyz/info", {"type": "candleSnapshot", "req": {"coin": "BTC", "interval": "1d",
+            "startTime": end - 900 * 86400 * 1000, "endTime": end}}, tries=3) or []
+    out["hld|BTC"] = [[x["t"], float(x["c"])] for x in k]
+    print(f"  emission schedules {sum(1 for x in out if x.startswith('emission|'))}; on HL with candles {n}", flush=True)
+    (OUT / "sweep4b_raw.json").write_text(json.dumps(out))
+
+JOBS = {"sweep4b": job_sweep4b, "sweep4": job_sweep4, "addprice": job_addprice, "fred9": job_fred9, "batch10b": job_batch10b, "repair8": job_repair8, "sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys
