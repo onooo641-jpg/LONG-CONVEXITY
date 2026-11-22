@@ -1,0 +1,9 @@
+trades 2185 (1089 long); VXN 2001-02-02..2026-11-19
+benchmark Topstep 50K: real $44,359, coin flip $18,046, worst dip -$3,520; flag: real >= $22,180, flip >= $5,000, dip >= -$5,280
+
+[REGISTERED] sigma x1.0: real net $-28,411 (2016-20 $-38,093, 2021-26 $9,682); coin flip median $-74,810 (0% profitable); worst dip $-55,103; win rate 52%; trades priced 2185
+  VERDICT: FAIL
+
+[context] sigma x0.8: real net $44,195 (2016-20 $-8,689, 2021-26 $52,884); coin flip median $-13,804 (26% profitable); worst dip $-30,595; win rate 53%; trades priced 2185
+[context] sigma x1.2: real net $-68,927 (2016-20 $-53,976, 2021-26 $-14,952); coin flip median $-107,593 (0% profitable); worst dip $-76,489; win rate 52%; trades priced 2185
+(reference) same trades as futures on own money: net $-2,553, worst dip $-74,109

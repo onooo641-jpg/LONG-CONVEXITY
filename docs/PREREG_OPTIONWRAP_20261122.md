@@ -14,3 +14,8 @@ the same σ. The most a trade can lose is $900, the same as the $900 risk budget
 (random trade directions, costs kept, 200 runs, seed 1) AND worst drawdown of cumulative P&L ≥ −$5,280 (1.5× Topstep's −$3,520).
 Context only: σ ×0.8 and ×1.2 (0DTE implied vol differs from 30-day VXN); results per half (2016–20, 2021–26).
 Command: `uv run python -m scripts.optionwrap_20261122 | tee docs/jx_runs/optionwrap_20261122.txt`.
+
+## Result (2026-11-22; `docs/jx_runs/optionwrap_20261122.txt`, identical on re-run): FAIL
+Registered σ = VXN: real net −$28,411 (2016–20 −$38,093; 2021–26 +$9,682); coin-flip median −$74,810 (0% profitable); worst dip −$55,103.
+Context: σ × 0.8 gives +$44,195 but a coin flip of −$13,804; σ × 1.2 gives −$68,927. The options market charges a fair price for the capped-loss
+shape that prop firms sell cheaply (their price is subsidised by failing customers), so the free option cannot be bought there.

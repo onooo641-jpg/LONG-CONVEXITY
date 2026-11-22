@@ -173,6 +173,7 @@ risk, 5m signals and 1m fills.
 | WF | walk-forward retest of 16 ideas with grids of 12–270 configs (monthly pick on trailing 6 months; OOS 2025-05..2026-10) | `docs/PREREG_WALKFORWARD_20261122.md` | PASS: G1 funding gaps (12.8% / 18.2%, needs maker fills — taker-only fails the ×1.5 cost check), G5 HYPE hedged staking (15.0% / 8.7%), G6 Gains vaults (9.6% / 14.1%); FAIL: GM pools, stable selection, stable-pair LPs/savings, new chains, new rewards, carry family, hedged staking | walkforward_20261122.txt |
 | 280 | funding gaps Deribit ↔ HL/dYdX | `docs/PREREG_BATCH8_20261122.md` | return test PASS (16.3% / 9.9%) but execution FAIL: tradeable slice (HL–Deribit, BTC/ETH/SOL/XRP) −1.4% / −0.2% → not flaggable | batch8s_20261122.txt |
 | 288 | Hyperliquid user vaults, top-5 trailing 90 days | same | FAIL Stage 2 without survivorship (−5.6% / −4.9%; worst month −35%) | batch8s_20261122.txt |
+| 291 | friend's NQ trades wrapped in 0DTE options (non-prop copy of the prop free option) | `docs/PREREG_OPTIONWRAP_20261122.md` | FAIL (−$28,411; coin flip −$74,810) | optionwrap_20261122.txt |
 | 284 | HL HIP-3 cross-dex funding gaps | same | FAIL Stage 1 (−2.08%) | same |
 | 281 | Deribit futures cash-and-carry | same | FAIL Stage 1 (2.62%) | same |
 | 282 | Deribit short ATM straddle ladder | same | FAIL Stage 1 (−30.81%) | same |
