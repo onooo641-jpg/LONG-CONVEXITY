@@ -1,0 +1,68 @@
+===== A. #225 Gains vault, price-based return (Arbitrum gUSDC)
+  price points 586: 2024-10-01 1.1100 -> 2026-09-26 1.1188; worst day -13.67%, days down 124
+  same 549 days: price-based 6.94%/yr vs DefiLlama APY-based 10.67%/yr
+  fixed hold OOS 2025-05..2026-10: halves 16.11% / -19.94%; costs x1.5 3.96%
+  VERDICT: FAIL
+
+===== B. G9 Pendle PTs incl. expired markets: 344 markets, 344 with history, 40914 rows
+  depegged at expiry (< $0.98): 14 -> apxUSD -7%, eUSD -5%, USD0++ -5%, USD0++ -7%, USD0++ -8%, USD0++ -6%, USD0++ -4%, USD0++ -6%, vyUSD -9%, apxUSD -10%, msUSD -69%, jrUSDat -53%, apxUSD -3%, bUSDC.e-20 -100%
+===== G9 #211 Pendle PTs (expired markets included): 54 configs
+  walk-forward OOS 2025-05..2026-10: halves 0.82% / 7.85%; all 18 months with costs x1.5 2.86%; switches 7
+  most-picked configs: k1/tvl5M/d90/all (5x); k1/tvl1M/d90/all (5x)
+  (context only) best fixed config in hindsight: k1/tvl1M/d90/blue -> 5.71%/yr over 2024-11..2026-10
+  VERDICT: FAIL
+
+===== C. #208 free execution pilot (paper)
+  snapshots used: 647 books ({'aevo': 215, 'dydx': 216, 'hl': 216})
+            spread    slip        tob
+venue coin                           
+aevo  ARB    89.25   75.90    2166.72
+      AVAX  687.15  721.68    1746.71
+      BNB    12.04    7.65    2975.83
+      BTC    75.75   37.99    8838.52
+      DOGE   92.31   57.52    4353.17
+      ETH    29.65   25.78    8872.71
+      LINK   82.24   50.72    4182.20
+      LTC    71.34   61.14    2139.97
+      OP     86.83   73.51    2196.31
+      SOL   160.58   90.62      68.89
+      SUI    39.84   43.26    2887.96
+      XRP    22.84   37.06    4887.37
+dydx  ARB   278.39  139.28   14771.30
+      AVAX  247.10  123.55   15021.51
+      BNB    29.02   15.17    8332.80
+      BTC     2.03    1.01    9996.32
+      DOGE   29.34   14.89    8333.95
+      ETH     3.02    1.51    9998.73
+      LINK  326.18  188.24    2004.36
+      LTC    59.70  108.72     998.98
+      OP    488.92  502.14      13.47
+      SOL    17.32    8.66   13002.73
+      SUI    58.97   33.95   14819.41
+      XRP    13.03    9.70     996.18
+hl    ARB     1.34    4.91     307.96
+      AVAX    1.22    3.08     399.99
+      BNB     0.46    1.76     399.87
+      BTC     0.17    0.08  104968.91
+      DOGE    0.18    1.04     181.86
+      ETH     0.60    0.30  102344.88
+      LINK    0.29    2.73     246.23
+      LTC     0.76    2.29     399.86
+      OP      5.72    6.32     188.55
+      SOL     0.14    0.23    4096.74
+      SUI     0.94    2.53     399.98
+      XRP     0.11    0.80     282.08
+
+  by venue (median):
+       spread   slip      tob
+venue                        
+aevo    78.81  54.99  2887.95
+dydx    40.65  23.23  8334.38
+hl       0.59   1.85   399.98
+  aevo: taker $10K slippage 54.99 bps/side -> OVER 2.5 bps budget; top-of-book $2,888 -> maker thin
+  dydx: taker $10K slippage 23.23 bps/side -> OVER 2.5 bps budget; top-of-book $8,334 -> maker thin
+  hl: taker $10K slippage 1.85 bps/side -> within 2.5 bps budget; top-of-book $400 -> maker thin
+
+===== D. #276 hedged HYPE staking with liquidations (weekly rebalance)
+  no HYPE candles -> not testable
+

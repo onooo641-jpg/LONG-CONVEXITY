@@ -140,3 +140,12 @@ Method: every month, use whichever configuration did best over the previous 6 mo
 **Gains vaults (#225)** 9.6% / 14.1% (tiny capacity). Everything else fails with every configuration: stablecoin-yield selection, stable LPs,
 savings rates, new-chain and new-reward programmes, GM pools, carry, hedged staking. These three are the only non-prop ideas worth a live pilot;
 each pilot costs money → Jx decides.
+
+## 2026-11-22 — batch 7: three of the four survivors fail their checks
+- **Funding gaps (#208)**: the free paper execution test (647 order books, 3 hours) shows a $10K market order costs 55 bps per side on Aevo and
+  23 on dYdX, vs a 2.5-bps budget; the top of book holds ~$2.9K on Aevo. The modelled return is not reachable at useful size. A live pilot would
+  only confirm this → **no longer recommended for a paid pilot.**
+- **Gains vaults (#225)**: the real gUSDC price fell 1.180 → 1.119 over the test period; DefiLlama's APY overstated it (6.9% vs 10.7%/yr). FAIL.
+- **Pendle (#211)** with all 344 expired markets: FAIL (0.8% / 7.9%).
+- **Hedged HYPE (#276)**: liquidation check pending (HYPE candles in the batch-8 run).
+- Batch 8 (12 new mechanisms #279–#290) pre-registered; Stage 1 pilot data being fetched.

@@ -36,3 +36,17 @@ is **unhedged until the next weekly rebalance** (its P&L from the liquidation pr
 day they happen, added to the G5 daily series, and the G5 walk-forward is re-run with the same 15 configs.
 **PASS** = same as G5: OOS halves ≥ 8% and costs ×1.5 ≥ 8%. Also reported (context, not the verdict): liquidation count per leverage, and a
 variant that re-hedges at the next 4h bar (loss = remaining equity + 0.5% only).
+
+## Results A–C (2026-11-22; `docs/jx_runs/batch7_20261122.txt`, identical on re-run)
+- **A. #225 Gains: FAIL.** gUSDC price-based return 6.94%/yr vs DefiLlama APY 10.67%/yr on the same 549 days; OOS fixed hold 16.11% / −19.94%,
+  costs ×1.5 3.96%. Price fell from 1.180 (2025-05-01) to 1.119 (2026-09-26). The feed shows ±12–15% one-day jumps (possible pricing noise),
+  but the start-to-end change is negative either way. The walk-forward pass came from APY figures that overstated the real return.
+  Gains' own API endpoints (2 probes) did not answer.
+- **B. G9 Pendle (expired markets included): FAIL.** 344 markets; 14 depegged at expiry (msUSD −69%, jrUSDat −53%, bUSDC.e −100%).
+  OOS 0.82% / 7.85%, costs ×1.5 2.86%.
+- **C. #208 execution pilot: FAILS the registered reading.** Median cost of a $10K market order vs mid, per side: Hyperliquid 1.85 bps
+  (within the 2.5-bps budget), dYdX 23.2 bps, Aevo 55.0 bps (budget exceeded 9–22×). Median top-of-book size: Aevo $2,888, dYdX $8,334,
+  HL $400 (HL refills quickly; thin top only). Aevo, needed by the pass, is too thin for taker execution, and resting maker orders of ≥ $10K
+  are not supported by the top of book. Caveat: one 3-hour window on one day; slippage is a lower bound where 40 levels did not fill $10K.
+  **Consequence:** the modelled #208 return is not reachable at $10K per leg; at ~$1–2K per leg it might be, which is worth ~$100–300/yr.
+- D (#276) pending the HYPE candle fetch.
