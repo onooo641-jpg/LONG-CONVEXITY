@@ -645,8 +645,8 @@ def rpc(urls, method, params, tries=3):
             except ValueError:
                 raise
             except urllib.error.HTTPError as e:
-                if e.code == 413 and method == "eth_getLogs":
-                    raise ValueError(f"{u}: HTTP 413") from e
+                if e.code in (400, 413) and method == "eth_getLogs":       # window too large for this endpoint: caller shrinks it
+                    raise ValueError(f"{u}: HTTP {e.code}") from e
                 last = f"{u}: HTTPError: HTTP {e.code}"
                 if e.code == 429:
                     time.sleep(8)

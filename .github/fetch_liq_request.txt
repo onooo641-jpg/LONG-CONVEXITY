@@ -1,5 +1,3 @@
-# chains for .github/workflows/fetch_liq.yml. Resumable. (run 24: restart with parallel log windows in the generic scan)
-mantle
-comet_base
+# chains for .github/workflows/fetch_liq.yml. Resumable. (run 25: celo/soneium pilots: HTTP 400 now treated as a too-large window)
 celo_pilot
 soneium_pilot
