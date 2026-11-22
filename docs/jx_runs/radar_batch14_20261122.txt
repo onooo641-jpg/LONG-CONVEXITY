@@ -1,0 +1,35 @@
+flag: real >= 50% of Topstep (no delay $22,180; 3-min $18,674), coin flip >= $5,000, dip >= 1.5x Topstep's (-$5,280 / -$4,641); [sens] never flagged
+
+ttp_prime50_r79  TTP Prime 50K, reset $79                 delay 0 | real $   49,057 | coin flip $  16,960 (97%) | dip $  -3,884 | EXTRA SLOT CANDIDATE
+ttp_prime100     TTP Prime 100K ($189)                    delay 0 | real $   30,418 | coin flip $  -3,408 (40%) | dip $ -12,474 | -
+ttp_instant50    TTP Instant 50K $299 [sens]              delay 0 | real $   58,276 | coin flip $  32,076 (98%) | dip $  -4,485 | would flag
+ttp_instant50    TTP Instant 50K $499 [sens]              delay 0 | real $   43,076 | coin flip $   8,750 (76%) | dip $ -11,214 | -
+lucid_daily50    LucidDaily 50K $99 [sens]                delay 0 | real $   56,774 | coin flip $  23,037 (98%) | dip $  -4,356 | would flag
+lucid_daily50    LucidDaily 50K $199 [sens]               delay 0 | real $   40,574 | coin flip $   5,432 (71%) | dip $  -8,756 | -
+lucid_direct50   LucidDirect 50K $299 [sens]              delay 0 | real $   42,064 | coin flip $  17,660 (96%) | dip $  -5,669 | -
+lucid_direct50   LucidDirect 50K $499 [sens]              delay 0 | real $   29,264 | coin flip $  -2,806 (40%) | dip $ -11,869 | -
+mffu_pro50       MFFU Pro 50K $127 [sens]                 delay 0 | real $   35,980 | coin flip $   9,016 (80%) | dip $  -4,064 | would flag
+mffu_pro50       MFFU Pro 50K $227 [sens]                 delay 0 | real $   21,680 | coin flip $  -6,593 (24%) | dip $  -7,272 | -
+mffu_pro50_1d    MFFU Pro 50K One-Day $127 [sens]         delay 0 | real $   23,584 | coin flip $   1,811 (61%) | dip $  -4,191 | -
+mffu_pro50_1d    MFFU Pro 50K One-Day $227 [sens]         delay 0 | real $   10,284 | coin flip $ -12,840 (9%) | dip $  -9,781 | -
+dt_s2f50         DayTraders S2F 50K $199 [sens]           delay 0 | real $   55,274 | coin flip $  31,518 (100%) | dip $  -4,378 | would flag
+dt_s2f50         DayTraders S2F 50K $399 [sens]           delay 0 | real $   40,474 | coin flip $   9,708 (84%) | dip $  -9,556 | -
+goat_1day50      Goat 1-Day Pass 50K ($218)               delay 0 | real $   22,227 | coin flip $  -7,651 (19%) | dip $ -10,338 | -
+goat_eod50       Goat EOD 50K $150 [sens]                 delay 0 | real $   27,838 | coin flip $     737 (58%) | dip $  -7,500 | -
+goat_eod50       Goat EOD 50K $250 [sens]                 delay 0 | real $   16,838 | coin flip $ -15,553 (6%) | dip $ -13,216 | -
+alpha_zero50     Alpha Zero 50K ($169/mo)                 delay 3 | real $     -440 | coin flip $ -12,032 (3%) | dip $ -12,080 | -
+alpha_adv50      Alpha Advanced 50K ($209/mo)             delay 3 | real $   17,903 | coin flip $ -11,782 (9%) | dip $  -8,907 | -
+alpha_direct50   Alpha Direct 50K ($519)                  delay 3 | real $   22,197 | coin flip $  -4,548 (36%) | dip $ -12,732 | -
+fe_prime50       FuturesElite Prime 50K $129 [sens]       delay 3 | real $   52,176 | coin flip $  11,247 (86%) | dip $  -3,697 | would flag
+fe_prime50       FuturesElite Prime 50K $229 [sens]       delay 3 | real $   49,076 | coin flip $   7,623 (80%) | dip $  -4,197 | would flag
+fe_nitro50       FuturesElite Nitro 50K ($152)            delay 3 | real $   48,463 | coin flip $  15,373 (94%) | dip $  -4,331 | EXTRA SLOT CANDIDATE
+fe_instant50     FuturesElite Instant 50K $199 [sens]     delay 3 | real $  114,682 | coin flip $  82,570 (100%) | dip $  -1,393 | would flag
+fe_instant50     FuturesElite Instant 50K $349 [sens]     delay 3 | real $  102,382 | coin flip $  67,295 (100%) | dip $  -2,443 | would flag
+bg_reserve50     Blue Guardian Reserve 50K $150 [sens]    delay 3 | real $   41,251 | coin flip $   9,206 (80%) | dip $  -4,515 | would flag
+bg_reserve50     Blue Guardian Reserve 50K $250 [sens]    delay 3 | real $   29,651 | coin flip $  -4,756 (32%) | dip $  -7,525 | -
+bg_direct50      Blue Guardian Direct 50K $299 [sens]     delay 3 | real $   62,773 | coin flip $  51,438 (100%) | dip $  -4,772 | -
+bg_direct50      Blue Guardian Direct 50K $499 [sens]     delay 3 | real $   48,173 | coin flip $  26,832 (94%) | dip $ -10,568 | -
+alpha_std100     Alpha Standard 100K ($239/mo)            delay 3 | real $   38,038 | coin flip $    -998 (46%) | dip $  -9,918 | -
+alpha_zero100    Alpha Zero 100K ($279/mo)                delay 3 | real $    6,022 | coin flip $ -20,223 (2%) | dip $ -14,155 | -
+alpha_direct25   Alpha Direct 25K ($349)                  delay 3 | real $    7,034 | coin flip $ -10,058 (12%) | dip $  -8,872 | -
+goat_1day100     Goat 1-Day Pass 100K ($358)              delay 0 | real $   26,342 | coin flip $ -26,251 (4%) | dip $ -19,366 | -

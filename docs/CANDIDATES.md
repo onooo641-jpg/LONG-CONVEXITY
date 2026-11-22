@@ -143,6 +143,29 @@ risk, 5m signals and 1m fills.
 | 236 | DayTraders EOD 50K (bots allowed; 100% split; up to 5 accounts) | PREREG_RADAR addendum 12 | price unreadable → sensitivity only: at $99 **$48,602 real / $13,511 coin flip (89%) / dip −$3,079**; at $199 $36,802 / −$4,406. Confirm the price: at ≤ ~$120 it would beat Topstep | radar_price_dt_eod50.txt |
 | 206b | FuturesElite Elite 50K re-priced with its own $89 reset (addendum 13) | same flag rule (3-min delay) | still flagged: $33,645 / $9,121 (91%) / −$2,014 | radar_price_fe_elite50.txt |
 
+| 237 | TTP Futures Prime 50K with its own $79 reset | addendum 14 | **EXTRA SLOT CANDIDATE: $49,057 / $16,960 (97%) / −$3,884** (supersedes #233's $46.6K) | radar_batch14_20261122.txt |
+| 238 | TTP Futures Prime 100K ($189) | same | not flagged ($30,418 / −$3,408) | same |
+| 239 | TTP Futures Instant 50K | same | [sens] $299: $58,276 / $32,076 (98%) / −$4,485 (would flag); $499: $43,076 / $8,750 / −$11,214 | same |
+| 240 | LucidDaily 50K (EOD) | same | [sens] $99: $56,774 / $23,037 (98%) / −$4,356 (would flag); $199: $40,574 / $5,432 / −$8,756 | same |
+| 241 | LucidDirect 50K | same | [sens] $299: $42,064 / $17,660 / −$5,669 (dip just fails); $499: not | same |
+| 242 | MFFU Pro 50K | same | [sens] $127: $35,980 / $9,016 (80%) (would flag); $227: not | same |
+| 243 | MFFU Pro 50K One-Day | same | [sens] not flagged at either price | same |
+| 244 | DayTraders S2F 50K | same | [sens] $199: $55,274 / $31,518 (100%) / −$4,378 (would flag); $399: $40,474 / $9,708 / −$9,556 | same |
+| 245 | Goat 1-Day Pass 50K ($218) | same | not flagged ($22,227 / −$7,651) | same |
+| 246 | Goat EOD 50K | same | [sens] not flagged | same |
+| 247 | Alpha Zero 50K ($169/mo) | same | not flagged (−$440 real) | same |
+| 248 | Alpha Advanced 50K ($209/mo) | same | not flagged | same |
+| 249 | Alpha Direct 50K ($519) | same | not flagged | same |
+| 250 | FuturesElite Prime 50K (manual) | same | [sens] $129: $52,176 / $11,247 (86%) / −$3,697; $229: $49,076 / $7,623 / −$4,197 — would flag at both | same |
+| 251 | FuturesElite Nitro 50K (manual, $152 directory) | same | **EXTRA SLOT CANDIDATE: $48,463 / $15,373 (94%) / −$4,331** (funded drawdown is intraday, modelled EOD → optimistic) | same |
+| 252 | FuturesElite Instant 50K (manual) | same | [sens] $199: $114,682 / $82,570 (100%) / −$1,393; $349: $102,382 / $67,295 — would flag at both; result looks too good, verify rules/price before trusting | same |
+| 253 | Blue Guardian Reserve 50K (manual) | same | [sens] $150: $41,251 / $9,206 (would flag); $250: not | same |
+| 254 | Blue Guardian Direct 50K (manual) | same | [sens] $299: $62,773 / $51,438 (100%) / −$4,772 (dip fails by $131); $499: $48,173 / $26,832 / −$10,568 | same |
+| 255 | Alpha Standard 100K | same | not flagged | same |
+| 256 | Alpha Zero 100K | same | not flagged | same |
+| 257 | Alpha Direct 25K | same | not flagged | same |
+| 258 | Goat 1-Day Pass 100K | same | not flagged | same |
+
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.
