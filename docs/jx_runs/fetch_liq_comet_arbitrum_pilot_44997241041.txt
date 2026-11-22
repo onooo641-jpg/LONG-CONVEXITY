@@ -1,0 +1,14 @@
+=== liq_comet_arbitrum_pilot
+  rpc exception eth_getLogs @ https://arb1.arbitrum.io/rpc: HTTP 429
+  comet_arbitrum_pilot: scanned to block 500482914/520129273 (20 events, 1 min)
+  comet_arbitrum_pilot: scanned to block 510562914/520129273 (22 events, 2 min)
+  comet_arbitrum_pilot: scanned to block 520129274/520129273 (45 events, 2 min)
+comet_arbitrum_pilot: log scan complete, 45 events
+comet_arbitrum_pilot: 3 Comet contracts with base token, 45 events
+  rpc error eth_getTransactionReceipt @ https://arb1.arbitrum.io/rpc: {'code': -32000, 'message': 'failed to decode receipt at block 496292239, hash c3eec14a2c8b07163d014c66595b35a9f6bee3f532be2dde61de1bddff1dcc11, txIndex 12: rlp: expected input string or byte for uint
+  comet_arbitrum_pilot: receipts 33/44 (3 min)
+  comet_arbitrum_pilot: receipts 41/44 (3 min)
+  comet_arbitrum_pilot: receipts 44/44 (3 min)
+arbitrum: prices 4981 points, 7/7 coins priced
+comet_arbitrum_pilot: COMPLETE 45 events, 6 tokens, 3 min
+=== liq_comet_arbitrum_pilot done in 206s  ok 1594 fail 14
