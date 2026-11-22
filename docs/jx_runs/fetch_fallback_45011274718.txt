@@ -1,0 +1,2 @@
+=== addprice
+  additions in window 40; priced 41
