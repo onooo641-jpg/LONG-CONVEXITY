@@ -766,3 +766,16 @@ Guardian Futures** (2026-11-13) list Malaysia as restricted. MFFU is one of the 
 so that plan needs a replacement firm for a Malaysian account holder (whether it matters depends on whose name the accounts are in).
 Topstep 50K rules match the model; its XFA **Consistency path** prices at $46,492 vs $44,359 for Standard (same trades, same costs).
 TTP Futures Prime 50K rules match the model ($49,057). Verification of the remaining firms continues.
+
+## Liquidation levers: final table after the full sweep (2026-11-22)
+Supersedes the lever lines above. **M** measured (gas only, before slippage, bribes, failed attempts), **E** estimate for a NEW small bot per month. Evidence: ledger LQ, RP, M, MO, MR, BC, NC, CM rows.
+| Lever | Measured result | New-bot profit per month (E) | Verdict |
+|---|---|---|---|
+| Free setup, Aave five pools (block-level) | 64–78% same-block; reachable 13% of events, 10% of value | $0–$100 | shadow test decides (28 Nov kill check, 19 Dec) |
+| Morpho Base (block-level) | 93.8% same-block; reachable 2.1% / 0.8% | $0–$20 | DROP (registered) |
+| Paid speed (VPS plus flashblocks provider) | incumbent mean $1,022 (Aave) + $2,143 (Morpho) per bot-month over 24 months, $587 + $881 over the last 8; median $0 | $100–$500 net; best case $1,500–$3,000 if parity | needs your money; parity unproven |
+| Chainlink auction (Aave Arbitrum/Base) | about 93 bidders; protocol side about 53% (third-party) | $0–$200 | unverified economics, small post-March pool |
+| Newer Aave chains | Sonic, Linea, Ink, zkSync, Soneium killed (best venue $1.9K in 3 months); Celo unmeasured; Mantle passes but tiny ($162K in 24 months, mean $64–147 per active bot-month) | $0–$50 | not worth building |
+| Compound v3 (collateral buys) | no venue passes (near misses); $4.3M gross in 24 months on the two big USDC Comets but only $104K in the last 8; 47–67% of buys are atomic absorb-and-buy | $0–$20 now; crash months only | dead since March 2026 |
+| Not measured | BNB, Solana lenders, Euler, Fluid, Silo | unknown | no free data or decoder |
+**Total for a typical month: about $0–$100 now; about $100–$600 averaged over a cycle with crash months (E).** Reasons not to build now: every free lever failed or was killed; the only levers with real money (same-block races) need paid speed or auction access and parity with professionals, who hold 75–77% of the value; the median incumbent earns $0; about two thirds of a year's income arrives in 4–5 months; one Topstep slot is about $340 a month and the multi-firm plan about $3,170 (backtests, repo figures). What would change this: shadow fire-first near 10%, a crash window showing a public bot capturing value, or a decision by Jx to fund the paid-speed test.
