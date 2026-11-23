@@ -1,3 +1,2 @@
 # jobs for scripts/fetch_fallback.py (one per line)
-cow361
-across362
+jlp363

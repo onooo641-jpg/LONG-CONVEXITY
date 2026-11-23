@@ -1959,7 +1959,26 @@ def job_across362():
     (OUT / "solverrelay_across_meta.json").write_text(json.dumps(meta))
 
 
-JOBS = {"cow361": job_cow361, "across362": job_across362, "sweep4d": job_sweep4d, "sweep4c": job_sweep4c, "sweep4b": job_sweep4b, "sweep4": job_sweep4, "addprice": job_addprice, "fred9": job_fred9, "batch10b": job_batch10b, "repair8": job_repair8, "sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+def job_jlp363():
+    """#363: JLP / SOL / ETH / BTC daily prices from DefiLlama (same start) + Jupiter terms page check."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    meta = {"pages": {}}
+    for url in ("https://jup.ag/terms-of-use", "https://jup.ag/terms", "https://dev.jup.ag/docs/perp-api",
+                "https://station.jup.ag/guides/perpetual-exchange/overview"):
+        meta["pages"][url] = _page_snips(url, ["Malaysia", "restricted", "prohibited", "jurisdiction", "United States"], width=200)
+        print(f"  page {url}: {meta['pages'][url].get('error') or meta['pages'][url].get('chars')}", flush=True)
+    keys = ["coingecko:jupiter-perpetuals-liquidity-provider-token", "solana:27G8MtK7VtTcCHkpASjSDdkWWYfoqT6ggEuKidVJidD4",
+            "coingecko:solana", "coingecko:ethereum", "coingecko:bitcoin"]
+    rows = []
+    for k in keys:
+        pts = _llama_chart(k, start="2023-10-01")
+        print(f"  {k}: {len(pts)} points", flush=True)
+        rows += [{"key": k, "t": int(p_["timestamp"]), "price": float(p_["price"])} for p_ in pts]
+    pd.DataFrame(rows).to_parquet(OUT / "jlp363_prices.parquet", index=False)
+    (OUT / "jlp363_meta.json").write_text(json.dumps(meta))
+
+JOBS = {"jlp363": job_jlp363, "cow361": job_cow361, "across362": job_across362, "sweep4d": job_sweep4d, "sweep4c": job_sweep4c, "sweep4b": job_sweep4b, "sweep4": job_sweep4, "addprice": job_addprice, "fred9": job_fred9, "batch10b": job_batch10b, "repair8": job_repair8, "sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys

@@ -17,7 +17,8 @@ STABLE = {"USDC", "USDC.E", "USDBC", "USDT", "USDT0", "USD₮0", "DAI", "USDS", 
 
 
 def _price_series(pts):
-    s = pd.Series({pd.Timestamp(int(t), unit="s", tz="UTC").normalize(): float(p) for t, p in pts}) if pts else pd.Series(dtype=float)
+    pairs = [(x["timestamp"], x["price"]) if isinstance(x, dict) else (x[0], x[1]) for x in (pts or [])]
+    s = pd.Series({pd.Timestamp(int(t), unit="s", tz="UTC").normalize(): float(p) for t, p in pairs}) if pairs else pd.Series(dtype=float)
     return s[~s.index.duplicated()].sort_index()
 
 
