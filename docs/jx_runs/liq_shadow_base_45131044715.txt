@@ -7,3 +7,11 @@ base: loop error https://base.api.pocket.network: {'code': -32602, 'message': 'i
 base: head 61143918 cycles 46 debtors 12127 cand 272 last_cycle 4373 ms rpc ok/err 479/3
 base: head 61145427 cycles 100 debtors 12127 cand 272 last_cycle 5846 ms rpc ok/err 892/3
 base: head 61146938 cycles 151 debtors 12127 cand 272 last_cycle 5004 ms rpc ok/err 1304/3
+base: head 61148430 cycles 204 debtors 12126 cand 272 last_cycle 8330 ms rpc ok/err 1720/3
+base: loop error https://base.api.pocket.network: {'code': -32602, 'message': 'block range extends beyond current head block: requested 61148974, head 61148972'}
+base: head 61149967 cycles 256 debtors 12125 cand 274 last_cycle 4442 ms rpc ok/err 2137/4
+base: loop error https://base.api.pocket.network: {'code': -32602, 'message': 'block range extends beyond current head block: requested 61151084, head 61151083'}
+base: head 61151458 cycles 309 debtors 12126 cand 272 last_cycle 8582 ms rpc ok/err 2546/5
+base: loop error https://base.api.pocket.network: {'code': -32602, 'message': 'block range extends beyond current head block: requested 61152298, head 61152297'}
+base: head 61152973 cycles 362 debtors 12128 cand 272 last_cycle 4727 ms rpc ok/err 2953/6
+base: loop error https://base.api.pocket.network: {'code': -32602, 'message': 'block range extends beyond current head block: requested 61154012, head 61154010'}
