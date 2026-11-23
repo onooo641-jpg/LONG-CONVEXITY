@@ -8,3 +8,14 @@ verified rules (`docs/PROP_VERIFY_20261122.md`): Topstep 50K Consistency path ($
 Output: per product and combined (1 account each; 5 each, the per-firm caps: Topstep 5 XFAs, Lucid 5 funded, TTP copy to 5, DayTraders 5 EOD):
 net 2016–26, per year, average and last-36-month per month, share of months ≥ $300, worst 12 months, worst dip of the combined cash curve.
 Command: `uv run python -m scripts.portfolio_my_20261123 | tee docs/jx_runs/portfolio_my_20261123.txt`.
+
+## Result (2026-11-23; `docs/jx_runs/portfolio_my_20261123.txt`, identical on re-run)
+| setup | net 2016–26 | per year | avg / last-36m per month | months ≥ $300 | worst 12 months | worst dip (cash needed) |
+|---|---|---|---|---|---|---|
+| Topstep 50K Consistency path (alone) | $46,492 | $4,293 | $358 / $723 | 23% | −$1,561 | −$3,520 |
+| **Topstep + TTP Prime + DayTraders EOD + LucidDaily (1 each)** | **$195,000** | **$18,006** | **$1,500 / $3,136** | 32% | −$7,331 | −$13,858 |
+| same, LucidDaily at promo $85.40 | $200,929 | $18,553 | $1,546 / $3,180 | 32% | −$6,636 | −$12,248 |
+| ×5 per firm (per-firm caps) | $974,999 | $90,028 | $7,500 / $15,680 | 34% | −$36,655 | −$69,291 |
+Caveats: the same trades on every account, so the swings add up (the ×5 row needs about $69K of cash to survive its worst dip); per-firm caps
+and multi-account copy rules must hold in practice (TTP: more than 5 accounts on one strategy can lead to upgrades being denied); promotional
+prices assumed available; the friend's edge must persist; firms can change rules or deny payouts (not modelled).

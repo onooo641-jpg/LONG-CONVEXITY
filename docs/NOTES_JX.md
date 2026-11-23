@@ -779,3 +779,9 @@ Supersedes the lever lines above. **M** measured (gas only, before slippage, bri
 | Compound v3 (collateral buys) | no venue passes (near misses); $4.3M gross in 24 months on the two big USDC Comets but only $104K in the last 8; 47–67% of buys are atomic absorb-and-buy | $0–$20 now; crash months only | dead since March 2026 |
 | Not measured | BNB, Solana lenders, Euler, Fluid, Silo | unknown | no free data or decoder |
 **Total for a typical month: about $0–$100 now; about $100–$600 averaged over a cycle with crash months (E).** Reasons not to build now: every free lever failed or was killed; the only levers with real money (same-block races) need paid speed or auction access and parity with professionals, who hold 75–77% of the value; the median incumbent earns $0; about two thirds of a year's income arrives in 4–5 months; one Topstep slot is about $340 a month and the multi-firm plan about $3,170 (backtests, repo figures). What would change this: shadow fire-first near 10%, a crash window showing a public bot capturing value, or a decision by Jx to fund the paid-speed test.
+
+## 2026-11-23 — Malaysia-eligible multi-firm portfolio (replaces the Topstep + Lucid + MFFU plan for a Malaysian account holder)
+`docs/PREREG_PORTFOLIO_MY_20261123.md`: Topstep (Consistency path) + TTP Futures Prime + DayTraders EOD + LucidDaily, one 50K account each, same
+trades: **$195,000 over 2016–26 ($18,006/yr; $1,500/month on average, $3,136/month over the last 36 months), worst dip −$13,858.** At each
+firm's account cap (5 each): $975K / $90K per year, worst dip −$69,291 (the swings add up because every account takes the same trades).
+FTMO 2-Step (CFD) fails the flag rule (coin flip ≈ 0, deep dips), so the CFD route adds nothing structurally.
