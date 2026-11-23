@@ -1,0 +1,9 @@
+base: v2 start, head 61142129
+base: loaded 40806 cached positions
+base: recalibrated 625 cached positions
+base: positions ready: 40806 users, 12078 with debt
+base: reopened 197 recorded unhealthy episodes
+base: loop error https://base.api.pocket.network: {'code': -32602, 'message': 'invalid argument 0: block range exceeds maximum 500'}
+base: head 61143918 cycles 46 debtors 12127 cand 272 last_cycle 4373 ms rpc ok/err 479/3
+base: head 61145427 cycles 100 debtors 12127 cand 272 last_cycle 5846 ms rpc ok/err 892/3
+base: head 61146938 cycles 151 debtors 12127 cand 272 last_cycle 5004 ms rpc ok/err 1304/3
