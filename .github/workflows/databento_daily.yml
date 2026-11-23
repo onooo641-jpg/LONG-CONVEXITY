@@ -21,7 +21,7 @@ jobs:
           fetch-depth: 0
           ref: ${{ github.ref_name }}
       - uses: astral-sh/setup-uv@v5
-      - run: uv sync
+      - run: uv sync --extra data
       - env:
           DATABENTO_API_KEY: ${{ secrets.DATABENTO_API_KEY }}
         run: |
