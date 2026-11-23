@@ -1,1 +1,1 @@
-{"rpc_ok": 16229, "rpc_ms_sum": 15446049.088001251, "rpc_err": 35, "cycles": 1899, "tracked": 40761, "debtors": 12070, "last_cycle_ms": 6756, "candidates": 271, "loop_err": 34}
+{"rpc_ok": 17481, "rpc_ms_sum": 16656458.811998367, "rpc_err": 37, "cycles": 2048, "tracked": 40768, "debtors": 12073, "last_cycle_ms": 11474, "candidates": 272, "loop_err": 36}
