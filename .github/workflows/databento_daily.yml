@@ -1,0 +1,39 @@
+# #350 Databento daily bars: quote (free) then download only within the cap. Started by pushing .github/databento_daily_request.txt
+# (first line: "quote" or "download"). Uses the DATABENTO_API_KEY repository secret.
+name: databento daily
+on:
+  workflow_dispatch: {}
+  push:
+    branches: [claude/ict-trading-resources-ugh07b]
+    paths: [.github/databento_daily_request.txt]
+permissions:
+  contents: write
+concurrency:
+  group: databento-daily
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.ref_name }}
+      - uses: astral-sh/setup-uv@v5
+      - run: uv sync
+      - env:
+          DATABENTO_API_KEY: ${{ secrets.DATABENTO_API_KEY }}
+        run: |
+          mkdir -p docs/jx_runs
+          if [ -z "$DATABENTO_API_KEY" ]; then echo "::error::DATABENTO_API_KEY secret is not set"; exit 1; fi
+          mode=$(head -1 .github/databento_daily_request.txt | awk '{print $1}')
+          uv run python scripts/fetch_databento_daily.py "$mode" --max-cost-usd 2.0 2>&1 | tee docs/jx_runs/databento_daily_${{ github.run_id }}.txt
+      - name: Commit
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for f in data/public/databento_daily.parquet docs/jx_runs; do [ -e "$f" ] && git add "$f"; done; true
+          git commit -m "databento daily: run ${{ github.run_id }}" || exit 0
+          for i in 1 2 3 4; do git pull --rebase -X theirs origin ${{ github.ref_name }} && git push origin HEAD:${{ github.ref_name }} && break; sleep $((i*5)); done
