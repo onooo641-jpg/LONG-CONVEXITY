@@ -203,7 +203,7 @@ risk, 5m signals and 1m fills.
 | 360 | hedged airdrop / points farming, measured after the fact | `docs/PREREG_AIRDROP_20261123.md` | Stage 0: not measurable from free data (allocation bases unpublished; see report) | `reports/Non prop high return alternatives.md` |
 | 361 | CoW Protocol solver rewards (DAO-paid; can a newcomer earn ≥ $15K/yr?) | `docs/PREREG_SOLVER_RELAY_20261123.md` | registered; fetch on Actions | — |
 | 362 | Across relayer fees on Base / Arbitrum (user-paid fast fills) | same | registered; fetch on Actions | — |
-| 363 | hedged Jupiter JLP: house side of perp traders' losses, hedged on Hyperliquid (re-test of #220 with price history) | `docs/PREREG_JLP_20261123.md` | registered; fetch on Actions | — |
+| 363 | hedged Jupiter JLP: house side of perp traders' losses, hedged on Hyperliquid (re-test of #220 with price history) | `docs/PREREG_JLP_20261123.md` | **KILL Stage 1** (9.7%/yr on capital, 2026-05..10; bar 20%). Context: full 32.0%, halves 56.6% / 11.3% → FAIL; by year 70.8% / 23.0% / 8.0%: prop-like in 2024, then competed down | jlp_20261123.txt |
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.

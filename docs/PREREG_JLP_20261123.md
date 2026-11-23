@@ -48,3 +48,33 @@ Hyperliquid hourly funding for SOL / ETH / BTC (`data/public/hl_funding.parquet`
 **Honest limits.** A price-based hedge leaves basket-tracking error in the result (it is counted, not removed). DefiLlama daily points are
 single snapshots, not closes. JLP deposits are sometimes capped by the pool's AUM limit, so entry is not always possible. Smart-contract and
 oracle risk (Solana, Jupiter) and Hyperliquid venue risk are not priced.
+
+### Addendum (2026-11-23, mechanical fix; disclosed: the buggy version was run once before the fix)
+DefiLlama's daily points sit a few seconds either side of UTC midnight. The first run floored timestamps to the day, so about half of the
+JLP and coin points landed on different days: only 504 of ~1,000 days were used, multi-day moves were counted as one day, and years were
+counted as rows / 365 (inflating CAGR). That run printed Stage 1 9.9% (KILL), full 32.4%, halves 70.3% / 4.7%. Fix: round timestamps to the
+nearest day, put every series on a full daily calendar (carry a price forward at most 3 days; 0 such gaps occurred), annualise by calendar
+days. Rules, windows and bars unchanged. Both versions give the same verdicts.
+
+### Results (2026-11-23; `docs/jx_runs/jlp_20261123.txt`, identical on re-run)
+Stage 0: Jupiter's terms pages returned 404 to the fetcher; the two Jupiter docs pages fetched contain no "Malaysia" / "restricted" text.
+Not a confirmation of access; nothing excluding Malaysia was found.
+
+| Window (hedged, return on capital) | CAGR | Worst DD |
+|---|---|---|
+| Full 2024-01-29..2026-10-31 | 32.0% | −7.1% |
+| Half 1 (to 2025-06-14) | 56.6% | −7.1% |
+| Half 2 (from 2025-06-15) | 11.3% | −2.0% |
+| Costs × 1.5 | 31.8% | −7.1% |
+| 2024 / 2025 / 2026 | 70.8% / 23.0% / 8.0% | |
+| **Stage 1** 2026-05-01..2026-10-31 | **9.7%** | −0.4% |
+
+Average hedge: SOL 0.34, ETH 0.06, BTC 0.11 per $1 JLP; capital 1.17 per $1 JLP; Hyperliquid funding received 4.0%/yr. Unhedged JLP 32.7%/yr
+with a −46% drawdown.
+
+**Verdict: Stage 1 KILL** (9.7% < 20%). Stage 2 context: **FAIL** (half 2 11.3% < 15%).
+
+**Reading.** The house side of perp traders' losses did pay prop-like money once: hedged JLP earned ~71% in 2024, when the pool was new
+and traders lost heavily. It then decayed to 23% (2025) and 8% (2026). Anyone can deposit without limit, so capital flowed in until the
+yield matched ordinary returns. That is the reason given for why the "90% fail" factor reaches 100%+/yr only behind a per-person cap,
+as in prop firms.

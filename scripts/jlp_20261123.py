@@ -43,7 +43,7 @@ def stats(r, label):
         print(f"    {label}: no days")
         return np.nan, np.nan
     eq = (1 + r).cumprod()
-    yrs = len(r) / 365.0
+    yrs = ((r.index[-1] - r.index[0]).days + 1) / 365.0
     cagr = eq.iloc[-1] ** (1 / yrs) - 1
     dd = float((eq / eq.cummax() - 1).min())
     print(f"    {label}: {r.index[0].date()}..{r.index[-1].date()} ({len(r)} d)  CAGR {cagr:7.1%}  worst DD {dd:7.1%}  "
@@ -63,8 +63,10 @@ def main():
         for snip in (pg.get("Malaysia") or [])[:2]:
             print(f"    Malaysia snippet: ...{snip[150:250]}...")
     px = pd.read_parquet(PUB / "jlp363_prices.parquet")
-    px["day"] = pd.to_datetime(px["t"], unit="s", utc=True).dt.normalize()
+    # DefiLlama daily points sit a few seconds either side of midnight: round to the nearest day (flooring misaligns ~half of them)
+    px["day"] = pd.to_datetime(px["t"], unit="s", utc=True).dt.round("D")
     px = px.drop_duplicates(["key", "day"], keep="last").pivot(index="day", columns="key", values="price").sort_index()
+    px = px.reindex(pd.date_range(px.index.min(), px.index.max(), freq="D")).ffill(limit=3)
     n = {k: int(px[k].notna().sum()) if k in px else 0 for k in JLP_KEYS}
     print(f"  JLP series days: {n}")
     jk = max(JLP_KEYS, key=lambda k: n[k])
@@ -72,8 +74,10 @@ def main():
         print("  not enough JLP history: not testable")
         return
     print(f"  using {jk}; first {px[jk].first_valid_index().date()}, last {px[jk].last_valid_index().date()}")
-    P = pd.DataFrame({"JLP": px[jk], **{c: px[k] for c, k in COINS.items()}}).dropna()
-    R = P.pct_change().dropna()
+    P = pd.DataFrame({"JLP": px[jk], **{c: px[k] for c, k in COINS.items()}})
+    P = P.loc[P["JLP"].first_valid_index():]
+    print(f"  calendar days {len(P)}; days with a missing price after a <= 3-day carry-forward: {int(P.isna().any(axis=1).sum())}")
+    R = P.pct_change(fill_method=None).dropna()
     R = R[R.index <= END]
 
     f = pd.read_parquet(PUB / "hl_funding.parquet")
