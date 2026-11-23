@@ -1,0 +1,1 @@
+{"https://help.phidiaspropfirm.com/": "FETCH FAILED: Error: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://help.phidiaspropfirm.com/\nCall log:\n  - navigating to \"https://help.phidiaspropfirm.com/\", waiting until \"domcontentloaded\"\n"}
