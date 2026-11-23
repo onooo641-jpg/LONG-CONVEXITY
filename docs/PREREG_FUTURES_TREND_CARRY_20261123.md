@@ -19,3 +19,15 @@ Command: `uv run python -m scripts.futures_trend_20261123 | tee docs/jx_runs/fut
 ## Addendum 1 (2026-11-23): cost approval
 The quote was $2.4282 (52 continuous symbols, ohlcv-1d), above the $2.00 cap, so the first download aborted. **Jx approved $2.43** (from his Databento
 credits) on 2026-11-23. The cap is raised to $2.50 for this one pull. No rule changes.
+
+## Addendum 2 (2026-11-23, before any data has arrived): #351–#354 on the same Databento daily bars
+Same universe, costs, vol scaling, walk-forward and PASS rule as #350 (both OOS halves ≥ 10%/yr, costs × 1.5 ≥ 10%, drawdown no worse than
+SPY's). Cross-sectional legs are dollar-neutral (long top third, short bottom third, equal risk per market).
+| # | factor | signal (monthly) | grid |
+|---|---|---|---|
+| 351 | cross-sectional momentum | trailing L-month return (skip last week) | L {3, 6, 12} × vt {10, 15%} × universe {all, ex-ags} = 12 |
+| 352 | value (long-horizon reversal) | minus the trailing 5-year return (L {36, 48, 60} months) | 12 |
+| 353 | skewness | minus the trailing 12-month skewness of daily returns (window {6, 12, 24} months) | 12 |
+| 354 | multi-factor | equal-risk sum of the TSMOM, carry, cross-sectional momentum and value signals (each from its own L) | L {3, 6, 12} × vt × universe = 12 |
+Literature basis (third-party, recorded as motivation only, not as evidence): time-series momentum and carry across futures (Moskowitz–Ooi–
+Pedersen 2012; Koijen et al. 2018), value and momentum everywhere (Asness–Moskowitz–Pedersen 2013), commodity skewness (Fernandez-Perez et al.).
