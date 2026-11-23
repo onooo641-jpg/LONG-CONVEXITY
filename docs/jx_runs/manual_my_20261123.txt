@@ -1,0 +1,12 @@
+Manual entry (3-minute delay). Flag rule vs Topstep at 3 minutes: real >= $18,674, coin flip >= $5,000, dip >= -$4,641.
+
+Top One Elite ACCESS 50K, $189 list + $189 activation      | real $  15,459 (41% of Topstep 3-min) | coin flip $    -61 (49%) | dip $ -4,609 | -
+Top One Elite ACCESS 50K, $39 promo + $142 activation      | real $  21,566 (58% of Topstep 3-min) | coin flip $  5,436 (72%) | dip $ -3,427 | QUALIFIES
+Topstep 50K Consistency path (manual)                      | real $  39,978 (107% of Topstep 3-min) | coin flip $ 13,795 (93%) | dip $ -3,094 | QUALIFIES
+TTP Futures Prime 50K (manual)                             | real $  35,554 (95% of Topstep 3-min) | coin flip $ 13,397 (92%) | dip $ -4,070 | QUALIFIES
+DayTraders EOD 50K $105 (manual)                           | real $  41,112 (110% of Topstep 3-min) | coin flip $  9,250 (84%) | dip $ -3,083 | QUALIFIES
+LucidDaily 50K EOD $85.40 promo (manual)                   | real $  48,761 (131% of Topstep 3-min) | coin flip $ 18,582 (98%) | dip $ -2,818 | QUALIFIES
+LucidFlex 50K DLL ON $80.50 (manual)                       | real $  40,494 (108% of Topstep 3-min) | coin flip $ 16,365 (97%) | dip $ -3,228 | QUALIFIES
+
+Top One: bots banned (manual only), Malaysia not on its restricted list; soft DLL / daily pauses not modelled; the 50%-new-profit rule
+from the 2nd payout is approximated by a $750 profit-since-last-payout goal.

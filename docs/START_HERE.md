@@ -41,6 +41,7 @@ worst dip no worse than 1.5× Topstep's (manual-entry products judged with a 3-m
 | MyFundedFutures | Rapid EOD, Pro, Builder (was in the old 3-firm plan) | §1 |
 | Goat Funded Futures | GOAT Daily | §1 |
 | Tradeify | Select Flex (restricted per Jx) | §7 |
+| FundedNext Futures | Rapid / Flex / Direct | §8 |
 | The Futures Desk | unverified → kept out | §7 |
 
 ### 2c. DISAPPROVED — eligible but does not qualify
@@ -56,9 +57,17 @@ worst dip no worse than 1.5× Topstep's (manual-entry products judged with a 3-m
 | Traders Launch 100K / 200K; Bulenox | $722 / $4,371; −$4,139 | lose or near zero | summary |
 | Take Profit Trader | not priced | bots banned (manual only); rules being read | pending |
 
-### 2d. Not priced yet (manual-entry firms that accept Malaysia)
-Take Profit Trader, Top One, Purdia, Phidias, AquaFunded, Hola Prime, YLOS, The5ers Futures — help-centre crawl running; prices at 3-minute delay
-to follow. FundedNext Futures: rules changed, re-price pending.
+### 2d. Manual entry (you place trades from alerts; 3-minute delay; compare with Topstep at 3 minutes $37,348)
+| Product | Real net | Coin flip | Worst dip | Qualifies | Note |
+|---|---|---|---|---|---|
+| LucidDaily 50K EOD $85.40 | $48,761 | $18,582 | −$2,818 | yes | bots also allowed |
+| DayTraders EOD 50K $105 | $41,112 | $9,250 | −$3,083 | yes | bots also allowed |
+| LucidFlex 50K DLL ON $80.50 | $40,494 | $16,365 | −$3,228 | yes | bots also allowed |
+| Topstep 50K Consistency | $39,978 | $13,795 | −$3,094 | yes | bots also allowed |
+| TTP Futures Prime 50K | $35,554 | $13,397 | −$4,070 | yes | bots also allowed |
+| **Top One Elite ACCESS 50K ($39 promo)** | $21,566 | $5,436 | −$3,427 | yes (barely) | **manual only** (bots banned); fails at $189 list ($15,459) |
+Not priced (help centres did not render): Take Profit Trader, Purdia, Phidias, Hola Prime, The5ers Futures; YLOS (rules incomplete).
+AquaFunded: Malaysia allowed on Instant Funding only (max $50K). Source: `docs/PROP_VERIFY_20261122.md` §8.
 
 ---
 

@@ -137,3 +137,21 @@ kept separate, with the 30-day expiry run as variants. Soft DLLs stop the day at
 Caveat (repo convention, as for Topstep): monthly subscriptions are charged for every month of the 2016–26 span, including while funded.
 Malaysia eligibility per Jx: TradeDay, Traders Launch, Take Profit Trader (bots banned) eligible; Bulenox provisional; **Tradeify restricted**;
 The Futures Desk unverified (excluded until support confirms). Registry updated.
+
+## 8. Manual-entry firms that accept Malaysia (pass 4 crawl, 2026-11-23; `docs/jx_runs/manual_my_20261123.txt`, identical on re-run)
+Malaysia: **FundedNext Futures RESTRICTED** (helpfutures.fundednext.com/en/articles/17228971); **AquaFunded**: Instant Funding only, max $50K
+per trader (help.aquafunded.com/en/articles/9251052); **Top One**: not on its restricted list (11021644), bots banned (10907920); YLOS: no
+restriction found (help centre mostly Portuguese, rules incomplete); Take Profit Trader, Purdia, Phidias, Hola Prime, The5ers help centres did
+not render → not priced.
+**Top One Elite ACCESS 50K** (official): $189 ($39 promo), target $3,000 in 30 days, no evaluation consistency, EOD trailing $2,000 locking at
++$100, activation $189 ($142 promo), evaluation reset $35, funded reset $499, funded: 5 days ≥ $250, 40% consistency per cycle, $2,000 buffer,
+$2,500 profit before a payout, $500–$1,500 per request, 90% split, 50% of each later payout from new profit.
+| Manual entry, 3-minute delay (vs Topstep 3-min $37,348) | real | coin flip | worst dip | qualifies |
+|---|---|---|---|---|
+| Top One Elite ACCESS 50K at $189 list | $15,459 | −$61 | −$4,609 | no |
+| Top One Elite ACCESS 50K at $39 promo | $21,566 | $5,436 | −$3,427 | yes (barely) |
+| LucidDaily 50K EOD $85.40 (manual) | $48,761 | $18,582 | −$2,818 | yes |
+| DayTraders EOD 50K $105 (manual) | $41,112 | $9,250 | −$3,083 | yes |
+| LucidFlex 50K DLL ON $80.50 (manual) | $40,494 | $16,365 | −$3,228 | yes |
+| Topstep 50K Consistency (manual) | $39,978 | $13,795 | −$3,094 | yes |
+| TTP Futures Prime 50K (manual) | $35,554 | $13,397 | −$4,070 | yes |
