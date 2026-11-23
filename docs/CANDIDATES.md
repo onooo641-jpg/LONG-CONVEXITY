@@ -201,10 +201,10 @@ risk, 5m signals and 1m fills.
 | 353 | futures skewness | same | FAIL (8.75%; first half 6.12%) | same |
 | 354 | futures multi-factor | same | FAIL (1.09%) | same |
 | 360 | hedged airdrop / points farming, measured after the fact | `docs/PREREG_AIRDROP_20261123.md` | Stage 0: not measurable from free data (allocation bases unpublished; see report) | `reports/Non prop high return alternatives.md` |
-| 361 | CoW Protocol solver rewards (DAO-paid; can a newcomer earn ≥ $15K/yr?) | `docs/PREREG_SOLVER_RELAY_20261123.md` | registered; fetch on Actions | — |
-| 362 | Across relayer fees on Base / Arbitrum (user-paid fast fills) | same | registered; fetch on Actions | — |
+| 361 | CoW Protocol solver rewards (DAO-paid; can a newcomer earn ≥ $15K/yr?) | `docs/PREREG_SOLVER_RELAY_20261123.md` | **KILL Stage 1**: median recipient outside the top 5 $3,213/yr (bar $15K). Context: 10th-ranked $176K–$345K/yr (winner-take-most) → follow-up #364 | solver_relay_20261123.txt |
+| 362 | Across relayer fees on Base / Arbitrum (user-paid fast fills) | same | **KILL Stage 1**: 6th-ranked relayer $8,790/yr upper bound (bar $15K); whole Base+Arbitrum market $69.8K/month spread, top 5 = 95% | solver_relay_20261123.txt |
 | 363 | hedged Jupiter JLP: house side of perp traders' losses, hedged on Hyperliquid (re-test of #220 with price history) | `docs/PREREG_JLP_20261123.md` | **KILL Stage 1** (9.7%/yr on capital, 2026-05..10; bar 20%). Context: full 32.0%, halves 56.6% / 11.3% → FAIL; by year 70.8% / 23.0% / 8.0%: prop-like in 2024, then competed down | jlp_20261123.txt |
-| 364 | CoW new solvers: first-year earnings of solvers that started in 2024–25 (follow-up to #361) | `docs/PREREG_COW_ENTRANTS_20261123.md` | registered (same data) | — |
+| 364 | CoW new solvers: first-year earnings of solvers that started in 2024–25 (follow-up to #361) | `docs/PREREG_COW_ENTRANTS_20261123.md` | **Stage 2 registered rule met** (median first-year net A $129,087 / B $25,509) → next step: no-money shadow-solver build test (Jx decision). Unregistered check removing likely address migrations: 7 / 4 genuine entrants, medians $95,639 / $48,411; survivorship: upper bounds | cow_entrants_20261123.txt, cow_entrants_check_20261123.txt |
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.

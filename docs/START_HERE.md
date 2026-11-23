@@ -13,7 +13,8 @@ file in `docs/jx_runs/` is the raw output of a script you can re-run. Rules for 
 | Liquidation bot (workstream B) | Not built; shadow test running | est. $0–$100/month now, $100–$600 averaged over crash cycles |
 | Any non-prop strategy usable at Jx's size | **None** (~105 tested) | — |
 | Futures cross-sectional momentum #351 | **Passed the full test on paper, but needs ~$250K+** (whole-contract test fails at $15K and $50K) | ~15–20%/yr on capital, not prop-like |
-| Non-prop tests in progress | #361 CoW solver payouts, #362 Across relayer fees (on-chain, free), #363 hedged Jupiter JLP | registered 2026-11-23 |
+| **CoW Protocol solving #364** (a business, not a deposit) | **Only non-prop role where newcomers measurably earned > $15K/yr**: genuine new solvers' first-year net median ~$48K–$96K (11 teams; upper bound, failed teams invisible). Needs a company + KYC and a solver that beats professional teams | next step: no-money shadow-competition solver (Jx decides who builds it) |
+| #361 / #362 / #363 (2026-11-23) | CoW median solver KILL ($3,213/yr), Across relaying KILL ($8,790/yr for 6th), hedged JLP KILL (71% in 2024 → 8% in 2026) | — |
 
 **If prop income stops (fallback plan, 2026-11-23).**
 - *What would stop it:* firm rule changes or closures, not the friend's strategy losing its edge (every approved firm's coin-flip median is
@@ -109,14 +110,16 @@ Bar: ≥ 8%/yr on capital in both halves (risk-premium families: ≥ 10% and dra
 ### 4b. In progress / open
 | # | Idea | Why it has potential | Status |
 |---|---|---|---|
-| 361 | CoW Protocol solving (DAO pays weekly COW rewards to solvers) | protocol-paid role; payouts on-chain every week | registered; data via Actions |
-| 362 | Across bridge relaying (users pay a fee for fast fills) | small fills may be open to small inventory | registered; data via Actions |
+| 364 | CoW Protocol solving: new solvers' first-year income | registered rule met: median entrant $129K (2024) / $25.5K (2025) after fee; after removing likely address migrations $96K (7 teams) / $48K (4 teams) | next: no-money shadow-competition solver; needs a builder, later a company for KYC (`docs/PREREG_COW_ENTRANTS_20261123.md`) |
 | 324 | Newer perp / options vaults | 95% on advertised APY | needs real share prices |
 | 339 | Tokenised gold premium | redemption floor | not credible as measured (futures vs spot) |
 
 ### 4c. Failed — closest misses first
 | # | Idea | Best result | Why it failed | File |
 |---|---|---|---|---|
+| 363 | Hedged Jupiter JLP (house side of perp traders' losses) | 70.8% in 2024, 23.0% 2025, 8.0% 2026 | Stage 1 9.7% < 20%: yield competed away as capital poured in | `PREREG_JLP_20261123` |
+| 361 | CoW solving, median solver | $3,213/yr (top 10 earn $176K+) | winner-take-most; see #364 | `PREREG_SOLVER_RELAY_20261123` |
+| 362 | Across relaying | 6th relayer $8,790/yr | top 5 take 95% of a $0.8M/yr market | `PREREG_SOLVER_RELAY_20261123` |
 | 350 / 352–354 | Futures trend+carry, value, skew, multi-factor | 11.7% / 0.5% / 8.8% / 1.1% | a half below 10% or drawdown worse than S&P | `PREREG_FUTURES_TREND_CARRY` |
 | 208 / 280 | Cross-venue funding gaps | 20.3% / 11.9% on paper | execution: $10K orders cost 23–55 bps per side | `PREREG_BATCH7`, `PREREG_BATCH8` |
 | 276 | Hedged HYPE staking | 23.4% / 9.3% | short gets liquidated (12×) | `PREREG_BATCH7` |

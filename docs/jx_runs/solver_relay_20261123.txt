@@ -1,0 +1,110 @@
+===== #361 CoW solver rewards (COW sent from the Solver Payouts Safe)
+  page https://docs.cow.fi/governance/multisigs: {'0xA03be496e67Ec29bC62F01a428683D7F9c204930': True, 'Solver Payouts': True, '0xDEf1CA1fb7FBcDC777520aa7f396b4E015F497aB': False}
+  page https://docs.cow.fi/cow-protocol/tutorials/solvers/onboard: {'KYC': True, 'bonding pool': True, 'service fee': True, 'jurisdiction': False, 'countr': False, 'sanction': False, 'bond': True}
+  page https://docs.cow.fi/cow-protocol/reference/core/auctions/rewards: {'COW': True, 'cap': True, 'weekly': True, 'penalt': True, 'Tuesday': True}
+  page https://docs.cow.fi/governance/token: {'0xDEf1CA1fb7FBcDC777520aa7f396b4E015F497aB': True}
+  safe has code: True; blocks 18919787..26445423; missed blocks 0; transfers 14353 in 759 blocks
+  source blockscout_v2; complete True
+  payout days: 235; first 2024-01-02, last 2026-11-19; total COW 105,578,954, USD 25,705,789
+  Stage 1 (2026-01-01..2026-11-01, 304 days): solvers paid in >= 4 weeks: 54; total $7,213,683
+     1. 0x4cf2ca9d42ea35767ca209494371689e9fbb2cc4  $   4,397,153/yr  (43 weeks)
+     2. 0xbece6f358a252cb72f7fe64d491a7f448ed5ecc9  $     618,711/yr  (43 weeks)
+     3. 0x1aaaa287890837c8326dd1fedd2308e8a4e89290  $     614,608/yr  (43 weeks)
+     4. 0x10d4b3ced275609fc28e2d55ed93774521f741a7  $     596,858/yr  (43 weeks)
+     5. 0x660c3251695fb03a73e3c80de6606fd6ae69708a  $     537,530/yr  (43 weeks)
+     6. 0xd4676b4de3a982a429a8dbe90d4a7e7cfb4769a5  $     383,623/yr  (43 weeks)
+     7. 0xf75c91ae0021a1cc18846e36fee456ccc678c5f1  $     198,716/yr  (43 weeks)
+     8. 0x165f90d55397cd115809a5954b42c1f8c4006ee6  $     184,164/yr  (43 weeks)
+     9. 0x5f58441baf077afc6c5f17c6d54f25077d637ada  $     183,194/yr  (43 weeks)
+    10. 0x26c82fefc09f391a52a5e493581b0e9644b8fbd0  $     176,033/yr  (43 weeks)
+    11. 0xca8a6c454bbccb2017eb37e075cfea813b4dea59  $     117,466/yr  (31 weeks)
+    12. 0x9b47d63fd901fc03d0c1213431ac6ea0bd3f9137  $     115,287/yr  (40 weeks)
+    13. 0x15f692c06480e93a2af797c0ccb72e557ea80b8e  $      76,808/yr  (20 weeks)
+    14. 0x80db9081298fe0ef937100a85f715cf915a4f4ce  $      72,663/yr  (40 weeks)
+    15. 0x9999ff1de7a33aca7ad3d2a2f47ab90cafac991a  $      71,715/yr  (37 weeks)
+  Stage 1: median solver outside the top 5 = $3,213/yr (n 49); 10th-ranked $176,033/yr
+  STAGE 1 VERDICT: KILL (median outside the top 5 < $15,000/yr gross)
+  Stage 2 year 2024 (2024-01-01..2025-01-01, 366 days): solvers paid in >= 4 weeks: 26; total $6,381,042
+     1. 0xaa58bf8343e0e84f0cb9b6ff211d60f49c16aad3  $     840,584/yr  (40 weeks)
+     2. 0xaf3803348f4f1f527a8b6f611c30c8702bacd2af  $     808,914/yr  (53 weeks)
+     3. 0x6c642cafcbd9d8383250bb25f67ae409147f78b2  $     751,410/yr  (53 weeks)
+     4. 0x84dbae2549d67caf00f65c355de3d6f4df59a32c  $     732,396/yr  (53 weeks)
+     5. 0x2c15e0751f32515748609a5d34884fd19d49457e  $     537,969/yr  (53 weeks)
+     6. 0xd4676b4de3a982a429a8dbe90d4a7e7cfb4769a5  $     452,055/yr  (37 weeks)
+     7. 0x9999ff1de7a33aca7ad3d2a2f47ab90cafac991a  $     372,374/yr  (53 weeks)
+     8. 0xc4d7147fb3633684aa4850f70d10608af5fd2aef  $     289,780/yr  (13 weeks)
+     9. 0x0587d465fcd4a8212b66b96d99b41a8c16d4bd9b  $     254,388/yr  (15 weeks)
+    10. 0x123ac32e854af7d6e223ab7b8ffee97ab892be1f  $     221,205/yr  (36 weeks)
+    11. 0xa1079e43d086ffbb95e921a4b9bbb2d325dff4ea  $     202,313/yr  (29 weeks)
+    12. 0x2c01b4ad51a67e2d8f02208f54df9ac4c0b778b6  $     195,058/yr  (53 weeks)
+    13. 0x506109c8c43b1838a466f37dc3f57019fa0537ca  $     166,249/yr  (11 weeks)
+    14. 0x5f58441baf077afc6c5f17c6d54f25077d637ada  $     119,945/yr  (4 weeks)
+    15. 0x5300c0486367d018108d0d14cd9f41cc739a53c0  $     119,088/yr  (53 weeks)
+    10th-ranked $221,205/yr; after 15% service fee $188,024/yr
+  Stage 2 year 2025 (2025-01-01..2026-01-01, 365 days): solvers paid in >= 4 weeks: 50; total $10,210,893
+     1. 0x4cf2ca9d42ea35767ca209494371689e9fbb2cc4  $   1,953,249/yr  (26 weeks)
+     2. 0xd4676b4de3a982a429a8dbe90d4a7e7cfb4769a5  $   1,020,022/yr  (52 weeks)
+     3. 0x5f58441baf077afc6c5f17c6d54f25077d637ada  $   1,017,927/yr  (52 weeks)
+     4. 0xaf3803348f4f1f527a8b6f611c30c8702bacd2af  $   1,017,843/yr  (26 weeks)
+     5. 0x6c642cafcbd9d8383250bb25f67ae409147f78b2  $     725,257/yr  (26 weeks)
+     6. 0xbece6f358a252cb72f7fe64d491a7f448ed5ecc9  $     720,672/yr  (38 weeks)
+     7. 0x3154cf16ccdb4c6d922629664174b904d80f2c35  $     588,808/yr  (7 weeks)
+     8. 0x2c15e0751f32515748609a5d34884fd19d49457e  $     398,303/yr  (49 weeks)
+     9. 0x123ac32e854af7d6e223ab7b8ffee97ab892be1f  $     353,849/yr  (31 weeks)
+    10. 0x84dbae2549d67caf00f65c355de3d6f4df59a32c  $     345,363/yr  (35 weeks)
+    11. 0x10d4b3ced275609fc28e2d55ed93774521f741a7  $     326,517/yr  (23 weeks)
+    12. 0x9999ff1de7a33aca7ad3d2a2f47ab90cafac991a  $     290,918/yr  (52 weeks)
+    13. 0x660c3251695fb03a73e3c80de6606fd6ae69708a  $     268,808/yr  (52 weeks)
+    14. 0xaa58bf8343e0e84f0cb9b6ff211d60f49c16aad3  $     217,072/yr  (45 weeks)
+    15. 0x1aaaa287890837c8326dd1fedd2308e8a4e89290  $     202,426/yr  (32 weeks)
+    10th-ranked $345,363/yr; after 15% service fee $293,559/yr
+  Stage 2 year 2026 (2026-01-01..2026-11-01, 304 days): solvers paid in >= 4 weeks: 54; total $7,213,683
+     1. 0x4cf2ca9d42ea35767ca209494371689e9fbb2cc4  $   4,397,153/yr  (43 weeks)
+     2. 0xbece6f358a252cb72f7fe64d491a7f448ed5ecc9  $     618,711/yr  (43 weeks)
+     3. 0x1aaaa287890837c8326dd1fedd2308e8a4e89290  $     614,608/yr  (43 weeks)
+     4. 0x10d4b3ced275609fc28e2d55ed93774521f741a7  $     596,858/yr  (43 weeks)
+     5. 0x660c3251695fb03a73e3c80de6606fd6ae69708a  $     537,530/yr  (43 weeks)
+     6. 0xd4676b4de3a982a429a8dbe90d4a7e7cfb4769a5  $     383,623/yr  (43 weeks)
+     7. 0xf75c91ae0021a1cc18846e36fee456ccc678c5f1  $     198,716/yr  (43 weeks)
+     8. 0x165f90d55397cd115809a5954b42c1f8c4006ee6  $     184,164/yr  (43 weeks)
+     9. 0x5f58441baf077afc6c5f17c6d54f25077d637ada  $     183,194/yr  (43 weeks)
+    10. 0x26c82fefc09f391a52a5e493581b0e9644b8fbd0  $     176,033/yr  (43 weeks)
+    11. 0xca8a6c454bbccb2017eb37e075cfea813b4dea59  $     117,466/yr  (31 weeks)
+    12. 0x9b47d63fd901fc03d0c1213431ac6ea0bd3f9137  $     115,287/yr  (40 weeks)
+    13. 0x15f692c06480e93a2af797c0ccb72e557ea80b8e  $      76,808/yr  (20 weeks)
+    14. 0x80db9081298fe0ef937100a85f715cf915a4f4ce  $      72,663/yr  (40 weeks)
+    15. 0x9999ff1de7a33aca7ad3d2a2f47ab90cafac991a  $      71,715/yr  (37 weeks)
+    10th-ranked $176,033/yr; after 15% service fee $149,628/yr
+  STAGE 2 VERDICT: FAIL (Stage 1 already killed; Stage 2 shown as context only)
+===== #362 Across relayer fees, Base + Arbitrum, 2026-10-01..2026-10-31
+  page https://docs.across.to/reference/contract-addresses: {'0x09aea4b224': False, '0xe35e9842fc': False}
+  page https://docs.across.to/developer-quickstart/contract-addresses: {'0x09aea4b224': False, '0xe35e9842fc': False}
+  page https://docs.across.to/introduction/contract-addresses: HTTPError: HTTP Error 404: Not Found
+  base: code True; blocks 52011727..53350926; missed 0; probe topic0 {'0x32ed1a409ef04c7b0227189c3a103dc5ac10e775a15b785dcc510201f7c25ad3': 309, '0x44b559f101f8fbcc8a0ea43fa91a05a729a5ea6e14a7c75aa750374690137208': 292, '0xf4ad92585b1bc117fbdd644990adf0827bc4c95baeae8a23322af807b6d0020e': 12, '0xc86ba04c55bc5eb2f2876b91c438849a296dbec7b08751c3074d92e04f0a77af': 3}; error None
+  arbitrum: code True; blocks 510496864..520129273; missed 0; probe topic0 {'0x44b559f101f8fbcc8a0ea43fa91a05a729a5ea6e14a7c75aa750374690137208': 17, '0x32ed1a409ef04c7b0227189c3a103dc5ac10e775a15b785dcc510201f7c25ad3': 21, '0xc86ba04c55bc5eb2f2876b91c438849a296dbec7b08751c3074d92e04f0a77af': 1}; error None
+  fills 281,848; slow fills excluded 0
+  excluded for token mismatch (ratio outside 0.9-1.1): 5,625
+  fills with unpriced tokens dropped: 5 (['BABYPOO', 'CABASE', 'CUCUMBER', 'SIMPSON', 'USGR'])
+  priced fills 276,218; volume $256,961,271; spread $69,784 (2.72 bps); by token: USDC 154,450, WETH 113,214, USDT 4,284, USD₮0 3,412, WBTC 679, USDBC 179
+  relayers: 45; top 5 share of spread 95.4%
+     1. 0x07ae8551be970cb1cca11dd7a11f47ae82e70e67  fills  59,978  vol $   120,981,618    2.68 bps  $    381,609/yr upper bound  exclusive 0%
+     2. 0xfd03abcadaf3f930fa4e37eb2f6ea3a44a41b7f0  fills  90,454  vol $    64,508,059    2.38 bps  $    180,897/yr upper bound  exclusive 57%
+     3. 0x394311a6aaa0d8e3411d8b62de4578d41322d1bd  fills  67,617  vol $    26,719,835    3.53 bps  $    111,014/yr upper bound  exclusive 54%
+     4. 0xef1ec136931ab5728b0783fd87d109c9d15d31f1  fills   5,935  vol $    29,400,367    2.90 bps  $    100,303/yr upper bound  exclusive 52%
+     5. 0xfd0aa7548823c40be6dd85682f0342f35dee121a  fills   4,194  vol $     2,400,112    3.43 bps  $      9,681/yr upper bound  exclusive 8%
+     6. 0xad03abc6223e9def79b3feb624f54303a372f0c7  fills   3,068  vol $     2,713,641    2.75 bps  $      8,790/yr upper bound  exclusive 48%
+     7. 0x6cd1b8cfcd2ca2bcdb46a2d96bd22b92e16ba427  fills   3,611  vol $     2,212,948    2.65 bps  $      6,912/yr upper bound  exclusive 35%
+     8. 0xbdd50e6f8b34593b1fa8d5e59e9e01b9de531fc6  fills   6,641  vol $     2,941,382    1.71 bps  $      5,925/yr upper bound  exclusive 0%
+     9. 0x95cfd03b4b04c426cb751a04db68d6910c9bccfc  fills   1,471  vol $     1,819,101    1.69 bps  $      3,613/yr upper bound  exclusive 0%
+    10. 0x20c58c01cc73da90d5ca4dfb4357228c636422d6  fills  13,288  vol $       923,796    3.20 bps  $      3,484/yr upper bound  exclusive 0%
+    11. 0x490632638389f5e29bed11a35b8cc56726bea895  fills     748  vol $       495,487    4.14 bps  $      2,414/yr upper bound  exclusive 0%
+    12. 0xd0588c940bdbfcfb5f3e8e3c843ed1462d9f828e  fills   7,179  vol $       505,718    2.87 bps  $      1,707/yr upper bound  exclusive 0%
+    13. 0x75a7c0268ca0f40146c0fd38ca2787a0b0d9370c  fills   4,442  vol $       236,101    5.17 bps  $      1,437/yr upper bound  exclusive 0%
+    14. 0x0dc1e92fbcc8413b1341f4c1b1c203c3b1a03d73  fills     516  vol $       190,250    4.49 bps  $      1,005/yr upper bound  exclusive 0%
+    15. 0x15652636f3898f550b257b89926d5566821c32e1  fills   2,082  vol $       220,883    3.56 bps  $        927/yr upper bound  exclusive 65%
+  Stage 1 (a): 6th-ranked relayer $8,790/yr upper bound (bar $15,000)
+  Stage 1 (b): median spread on fills <= $15K: 3.32 bps (bar 2 bps); fills <= $15K 273,199 ($103,637,323)
+  context: fills <= $15K won outside the top 5: 47,947 (17.6%); their median 5.35 bps
+  context base: fills 188,892, volume $125,600,285, spread $34,887, relayers 41
+  context arbitrum: fills 87,326, volume $131,360,986, spread $34,897, relayers 35
+  STAGE 1 VERDICT: KILL

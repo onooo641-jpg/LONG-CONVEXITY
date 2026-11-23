@@ -62,3 +62,16 @@ ranges (coverage printed and reported); relayer identities are addresses only; n
 - #362 data (Base 1,339,200 blocks and Arbitrum 9,632,410 blocks, 0 missed; `FilledRelay` topic confirmed by the probe) are complete and
   unchanged. The docs.across.to pages did not show the SpokePool addresses in their raw HTML (script-rendered pages); the addresses are
   confirmed on-chain instead (contract code present; 190,420 and 91,428 fill events in October 2026).
+
+### Results (2026-11-23; `docs/jx_runs/solver_relay_20261123.txt`, identical on re-run)
+**#361 CoW (Blockscout listing complete: 14,353 COW transfers from the Payouts Safe, 2024-01-02..2026-11-19, $25.7M).**
+Stage 0: Safe address confirmed on docs.cow.fi (multisigs page) and has code; the onboarding page requires KYC of a company (see #364).
+Stage 1 (2026-01-01..10-31): 54 recipients paid in ≥ 4 weeks, $7.21M in total; **median outside the top 5 = $3,213/yr → KILL**.
+Context only (Stage 2 not reached): the 10th-ranked recipient earned $221K / $345K / $176K per year in 2024 / 2025 / 2026 (after the 15%
+fee $188K / $294K / $150K); the top recipient $4.40M/yr in 2026. A winner-take-most competition: ~12 recipients earn > $100K/yr, the
+other ~40 a few thousand. Follow-up on newcomers: #364 (`docs/PREREG_COW_ENTRANTS_20261123.md`).
+
+**#362 Across (Base + Arbitrum, October 2026, 0 blocks missed).** 281,848 fills (0 slow fills); 5,625 excluded for token mismatch, 5 for
+unpriced tokens; 276,218 priced fills, $257.0M volume, $69,784 total spread (2.72 bps) across 45 relayers; top 5 take 95.4%.
+Stage 1 (a): **6th-ranked relayer $8,790/yr upper bound < $15,000 → KILL**. (b) median spread on fills ≤ $15K 3.32 bps (passes 2 bps).
+The whole two-chain relaying market pays ~$0.82M/yr gross before LP fees and gas.

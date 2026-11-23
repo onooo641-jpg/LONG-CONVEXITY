@@ -1,0 +1,50 @@
+===== #364 CoW new-solver first-year earnings (source blockscout_v2, complete True)
+  incumbents (first paid before 2024-03-01): 13; entrants 2024-03-01..2025-10-31: 49
+  cohort A: entrants 19, active (>= 4 weeks) 17; first-year net after 15% fee: quartiles [9166.0, 129087.0, 499045.0]; >= $15K: 59%; >= $50K: 59%
+     1. 0x5f58441baf077afc6c5f17c6d54f25077d637ada  first 2024-12-10  weeks 53  $    952,600
+     2. 0xaa58bf8343e0e84f0cb9b6ff211d60f49c16aad3  first 2024-04-02  weeks 53  $    829,297
+     3. 0x3154cf16ccdb4c6d922629664174b904d80f2c35  first 2024-12-30  weeks  8  $    593,169
+     4. 0xd4676b4de3a982a429a8dbe90d4a7e7cfb4769a5  first 2024-04-23  weeks 53  $    588,274
+     5. 0xa3a7b6f88361f48403514059f1f16c8e78d60eec  first 2024-12-30  weeks  4  $    499,045
+     6. 0x123ac32e854af7d6e223ab7b8ffee97ab892be1f  first 2024-03-19  weeks 47  $    281,383
+     7. 0x660c3251695fb03a73e3c80de6606fd6ae69708a  first 2024-10-29  weeks 52  $    226,493
+     8. 0x0587d465fcd4a8212b66b96d99b41a8c16d4bd9b  first 2024-08-27  weeks 15  $    213,783
+     9. 0xf7a25914ce33ce42425f3c189f366aab7c09be27  first 2024-05-21  weeks 53  $    129,087
+    10. 0xbc33a1f908612640f2849b56b67a4de4d179c151  first 2024-07-24  weeks 39  $     95,639
+    11. 0x47e2d28169738039755586743e2dfcf3bd643f86  first 2024-04-09  weeks 39  $     13,161
+    12. 0xd30198f06b0a8fb9f93e9a153a56b1d2fbd4e065  first 2024-12-17  weeks 27  $     10,162
+    13. 0x52f77287312dd33f29cb93862935f8f01e77db64  first 2024-07-31  weeks 15  $      9,166
+    14. 0x80db9081298fe0ef937100a85f715cf915a4f4ce  first 2024-07-16  weeks 42  $      6,972
+    15. 0x7cb55ba39f2a614eb8152107cfcd21e4723c1ff0  first 2024-12-17  weeks 35  $      5,579
+    16. 0x08bd22f5b9397eb9e6787d33949c39e825cab5dd  first 2024-12-03  weeks  7  $      1,419
+    17. 0xb11cf1c5dc17e3f6cc2c38f2df4cd0d141c7f98a  first 2024-10-08  weeks 10  $        218
+  cohort B: entrants 30, active (>= 4 weeks) 27; first-year net after 15% fee: quartiles [4630.0, 25509.0, 72410.0]; >= $15K: 59%; >= $50K: 37%
+     1. 0x4cf2ca9d42ea35767ca209494371689e9fbb2cc4  first 2025-07-08  weeks 52  $  4,194,835
+     2. 0xbece6f358a252cb72f7fe64d491a7f448ed5ecc9  first 2025-04-15  weeks 52  $    820,338
+     3. 0x10d4b3ced275609fc28e2d55ed93774521f741a7  first 2025-07-30  weeks 53  $    644,854
+     4. 0x1aaaa287890837c8326dd1fedd2308e8a4e89290  first 2025-05-27  weeks 52  $    470,733
+     5. 0xf75c91ae0021a1cc18846e36fee456ccc678c5f1  first 2025-07-08  weeks 52  $    135,049
+     6. 0x165f90d55397cd115809a5954b42c1f8c4006ee6  first 2025-07-08  weeks 52  $    124,971
+     7. 0x26c82fefc09f391a52a5e493581b0e9644b8fbd0  first 2025-07-22  weeks 49  $     76,104
+     8. 0xf511caa471f9cb1f60d6be2cd2a3b19ca9f84679  first 2025-07-08  weeks 22  $     68,716
+     9. 0xe4d317fc02dbc3bf88a7d5c0d5a527444bf322b0  first 2025-02-04  weeks 50  $     61,726
+    10. 0x34f67100a4e672d6c3db1950a581c5ada3d251dd  first 2025-10-14  weeks 46  $     52,375
+    11. 0x4d1cd5a87c39824d12dc447d4d30f3e024881f59  first 2025-01-14  weeks 49  $     44,447
+    12. 0x6abf06d96385b7ab2f2a7c745184244593401a67  first 2025-06-10  weeks 32  $     31,878
+    13. 0xcf3cf8a607b91f4e4b668490c3e9cb104c430aee  first 2025-07-09  weeks 29  $     27,718
+    14. 0x46ab23f45cd050b617d053c499b1ce197b3b05e0  first 2025-07-08  weeks 35  $     25,509
+    15. 0xf216ad257a56290358bc1ea640e032964427a7a1  first 2025-07-08  weeks 42  $     19,796
+    16. 0x6b3fc681c50828ce8a4790366a5cb4b6ab959f27  first 2025-07-08  weeks 28  $     15,793
+    17. 0x4eff1ff2c28312fc74d5ec88eda3e2df14f2be59  first 2025-07-30  weeks 23  $     13,113
+    18. 0xb6d36cb7e67dd93adea699ca9793cbc9e93d0efe  first 2025-06-10  weeks 36  $      7,823
+    19. 0x0cd67ab9fb2102e0759345273d0297306bcb539e  first 2025-07-15  weeks  7  $      5,860
+    20. 0x291445119993addc3c155e214e097e01a365067f  first 2025-07-08  weeks 29  $      4,664
+    21. 0x82c33f9602c4ecee8b8fc78483692bbba95a1768  first 2025-10-08  weeks 24  $      4,595
+    22. 0x1af49c826ea0a8f29ea448f2171d1bcb716cb22d  first 2025-07-22  weeks 39  $      2,279
+    23. 0xb98addcf799a8d7473020b41714c688af8107c3e  first 2025-07-08  weeks 26  $      2,104
+    24. 0xd7bec97d0d286c2eb0b21f8a74de87a3a2fb37b7  first 2025-02-04  weeks 13  $      1,219
+    25. 0xe381374a4d7571ad36b0d809f18c41375fc2ad36  first 2025-07-30  weeks 25  $        922
+    26. 0x56a2d1b7999ffddf0066fefd421337159c0a639f  first 2025-07-08  weeks 29  $        699
+    27. 0xd6fc891b922718242b1e00e1cefff35327d094a2  first 2025-09-09  weeks 10  $        556
+  STAGE 1 (cohort A share >= $15K, bar 25%): 59% -> survives (kill-only)
+  STAGE 2 (median active entrant >= $15K in both cohorts: A $129,087, B $25,509): worth a no-money shadow-solver build test

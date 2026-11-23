@@ -183,3 +183,17 @@ listing short FAIL, #335 buyback rotation FAIL, #337 deletions KILL, #339 tokeni
   bonuses (workstream B shadow test), hedged points farming (one-off episodes, #360 not measurable), CoW solving and Across relaying (measurable
   from on-chain data: registered next as #361 / #362).
 
+
+## 2026-11-23 — #361–#364: protocol-paid roles and the "losers pay" house side
+- **#362 Across relaying KILL**: October 2026 on Base + Arbitrum, 276K fills, $257M volume, $69.8K total spread (2.72 bps) across 45 relayers,
+  top 5 = 95%; 6th-ranked $8,790/yr upper bound.
+- **#363 hedged JLP KILL** (Jx asked whether the prop factor "failing customers fund payouts" was tested outside prop: this is its open-market
+  house side). Return on capital 70.8% in 2024, 23.0% in 2025, 8.0% in 2026 (Stage 1 9.7%). Prop-like while new, then diluted by inflows —
+  the same reason HLP, Gains and GMX pools pay 4–10%. A day-alignment bug was fixed and disclosed; verdicts unchanged.
+- **#361 CoW solving KILL on its median rule** ($3,213/yr outside the top 5), but winner-take-most: the 10th-ranked recipient earns
+  $176K–$345K/yr. **#364** (follow-up, same data, disclosed as written after #361) asked how new solvers did: the registered rule is met
+  (median first-year net $129K for 2024 starters, $25.5K for 2025 starters). Many "entrants" are incumbents changing payout address;
+  removing likely migrations leaves 11 genuine new teams, medians ~$96K / ~$48K. Upper bounds (teams that never won are invisible).
+- **Meaning.** CoW solving is the first non-prop role where newcomers' measured income clears $15K/yr — but it is an engineering business
+  (company KYC, a competitive solver, hosting), not a capped-loss ticket. Next step (registered): a no-money shadow-competition solver.
+  Needs Jx's decision on who builds it. Also recorded in START_HERE: fallback plan if prop income stops.

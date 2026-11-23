@@ -1,0 +1,15 @@
+===== #364 sensitivity (unregistered): likely payout-address migrations
+  days on which 3+ addresses got their first payout: 2024-01-02 (12), 2024-12-30 (3), 2025-07-08 (10), 2025-07-30 (3), 2026-03-18 (3), 2026-08-05 (3), 2026-09-17 (3), 2026-10-14 (3), 2026-10-28 (4)
+  cohort A: active entrants 17, flagged as likely migrations 10 (same-day cluster 2, follows a leaver 8); unflagged 7: median first-year net $95,639, >= $15K 57%
+     0xd4676b4de3a982a429a8dbe90d4a7e7cfb4769a5  first 2024-04-23  $    588,274
+     0x660c3251695fb03a73e3c80de6606fd6ae69708a  first 2024-10-29  $    226,493
+     0xf7a25914ce33ce42425f3c189f366aab7c09be27  first 2024-05-21  $    129,087
+     0xbc33a1f908612640f2849b56b67a4de4d179c151  first 2024-07-24  $     95,639
+     0x52f77287312dd33f29cb93862935f8f01e77db64  first 2024-07-31  $      9,166
+     0x80db9081298fe0ef937100a85f715cf915a4f4ce  first 2024-07-16  $      6,972
+     0xb11cf1c5dc17e3f6cc2c38f2df4cd0d141c7f98a  first 2024-10-08  $        218
+  cohort B: active entrants 27, flagged as likely migrations 23 (same-day cluster 13, follows a leaver 20); unflagged 4: median first-year net $48,411, >= $15K 75%
+     0xbece6f358a252cb72f7fe64d491a7f448ed5ecc9  first 2025-04-15  $    820,338
+     0x34f67100a4e672d6c3db1950a581c5ada3d251dd  first 2025-10-14  $     52,375
+     0x4d1cd5a87c39824d12dc447d4d30f3e024881f59  first 2025-01-14  $     44,447
+     0x82c33f9602c4ecee8b8fc78483692bbba95a1768  first 2025-10-08  $      4,595

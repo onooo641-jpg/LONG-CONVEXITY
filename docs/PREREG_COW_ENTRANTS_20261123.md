@@ -27,3 +27,25 @@ always one team. Rewards earned on other chains may be paid from other addresses
 friend) could build a solver that wins.
 
 **Command.** `uv run python -m scripts.cow_entrants_20261123 | tee docs/jx_runs/cow_entrants_20261123.txt` (re-run once; must be identical).
+
+### Results (2026-11-23; `docs/jx_runs/cow_entrants_20261123.txt`, identical on re-run)
+13 incumbents (paid before 2024-03-01); 49 entrants 2024-03-01..2025-10-31.
+
+| Cohort | Active entrants | First-year net (after 15% fee): 25th / median / 75th pct | ≥ $15K |
+|---|---|---|---|
+| A (2024-03..12) | 17 | $9,166 / $129,087 / $499,045 | 59% |
+| B (2025-01..10) | 27 | $4,630 / $25,509 / $72,410 | 59% |
+
+Stage 1: 59% ≥ 25% → survives. **Stage 2 (registered rule): median ≥ $15K in both cohorts → "worth a no-money shadow-solver build test".**
+
+**Unregistered check (`docs/jx_runs/cow_entrants_check_20261123.txt`, identical on re-run).** Many "entrants" are existing solvers that
+moved to a new payout address: 10 addresses were first paid on 2025-07-08 (one earned $4.19M in its first year, while two large 2024
+recipients stopped being paid at the same time). Flagging addresses that start on a day with 3+ first payouts, or within 21 days after an
+established recipient's last payout, leaves 7 unflagged entrants in cohort A (median $95,639; 57% ≥ $15K) and 4 in cohort B (median
+$48,411; 75% ≥ $15K). The pass survives the check, but on 11 teams, and teams that tried and never won any reward are invisible, so the
+figures are upper bounds on what a new solver earns.
+
+**Reading.** CoW solving is the first non-prop role in the repo where newcomers' measured first-year income exceeds Jx's $15K/yr bar. It
+is not a capped-loss ticket like prop: it is an engineering business (company KYC, a solver that out-bids professional teams in weekly
+auctions, always-on hosting, starting on BNB Chain / L2s). The registered next step is a no-money shadow-competition test of a solver,
+which needs a decision only Jx can make (who builds it — the friend or a hire; a company for KYC later; hosting cost).
