@@ -66,3 +66,14 @@ additions the registered entry (close 5 trading days before the effective date) 
 registered rule could not be traded. The tradeable version (first close after the announcement → effective close, minus SPY) gives mean
 **+0.17%**, median −0.21%, t 0.15 (n 20; `docs/jx_runs/sweep4_20261122.txt`). The earlier "quarterly rebalance" proxy did not catch this.
 **#303: registered PASS withdrawn → FAIL (look-ahead).**
+
+## #296 CFD prop recycling — FTMO 2-Step (2026-11-23; `docs/jx_runs/cfdprop_20261122.txt`, identical on re-run): FAIL (flag rule)
+Rules from FTMO's own pages: 10% then 5% target, 5% max daily loss, 10% static max loss, no consistency on 2-Step, up to 90% split (80% used),
+fee refunded with the first reward, EAs / algorithmic trading allowed, $400K max allocation, Malaysia not restricted. Price not readable →
+[sens]. Registered risk = min(0.45 × max loss, 0.875 × daily loss) ($2,188 at 50K, $4,375 at 100K). CFD cost: 1.5 points per round trip
+($3 per micro; a first run charged $30 per micro, a units error, corrected before recording). Results: 50K $300 / $400 → real $71,038 /
+$49,138, coin flip −$2,259 / −$26,543, worst dip −$44,881 / −$61,181; 100K $500 / $650 → $85,665 / $64,365, coin flip −$85 / −$23,735,
+dip −$53,925 / −$70,125. **Fails the flag rule (coin flip ≈ 0, dips 13–20× Topstep's):** the higher real net is the friend's edge at
+larger size, not a structure that pays random play. Context (not registered): at $900 / $1,500 / $2,500 risk the 100K real net is $10,516 /
+$27,042 / $70,946 with coin flips −$14,885 / −$14,530 / +$2,767. Other CFD firms (FundedNext, The5ers, Alpha Capital, Goat Funded Trader,
+Audacity) not priced: their rule pages did not render fully.

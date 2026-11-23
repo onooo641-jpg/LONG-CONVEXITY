@@ -182,6 +182,7 @@ risk, 5m signals and 1m fills.
 | 320, 321 | small high-reward pools; Merkl small campaigns | `docs/PREREG_SMALLCAP_20261122.md` | #320 FAIL; #321 not testable | smallcap_20261122.txt |
 | 322, 324, 325 | thin-venue market making; counterparty/option vaults; small lending markets | `docs/PREREG_SWEEP3_20261122.md` | #322 FAIL, #325 FAIL, #324 open (Stage 2 needs share prices) | sweep3_20261122.txt |
 | 330–346 | Sweep 4: memecoins, crypto index products, index events | `docs/PREREG_SWEEP4_20261122.md` | #334, #335 FAIL; #337 KILL; #339 open (not credible as measured); #330, #332, #336, #338, #342–#344 not testable; #331, #341, #345, #346 excluded; #333 parked | sweep4_20261122.txt |
+| 296 | CFD prop recycling: FTMO 2-Step 50K / 100K (US100 for NQ) | `docs/PREREG_BATCH10_20261122.md` | FAIL flag rule: real $49–86K but coin flip ≈ 0 or negative and dips −$45K to −$70K (price unverified) | cfdprop_20261122.txt |
 | 284 | HL HIP-3 cross-dex funding gaps | same | FAIL Stage 1 (−2.08%) | same |
 | 281 | Deribit futures cash-and-carry | same | FAIL Stage 1 (2.62%) | same |
 | 282 | Deribit short ATM straddle ladder | same | FAIL Stage 1 (−30.81%) | same |

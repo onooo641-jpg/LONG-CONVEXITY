@@ -1,0 +1,14 @@
+FTMO 2-Step (CFD, US100 stand-in for NQ). Flag rule: real >= $22,180, coin flip >= $5,000, worst dip >= -$5,280 (Topstep 50K $44,359).
+
+FTMO 2-Step 50K at $300 [sens], risk $2,188/trade | real $   71,038 (160% of Topstep) | coin flip $   -2,259 (46%) | dip $ -44,881 | -
+FTMO 2-Step 50K at $400 [sens], risk $2,188/trade | real $   49,138 (111% of Topstep) | coin flip $  -26,543 (13%) | dip $ -61,181 | -
+FTMO 2-Step 100K at $500 [sens], risk $4,375/trade | real $   85,665 (193% of Topstep) | coin flip $      -85 (50%) | dip $ -53,925 | -
+FTMO 2-Step 100K at $650 [sens], risk $4,375/trade | real $   64,365 (145% of Topstep) | coin flip $  -23,735 (22%) | dip $ -70,125 | -
+
+Caveats: price unverified (not on the rendered pages); payouts modelled as soon as profit exists (FTMO pays on a 14-day cycle);
+80% split (up to 90% with scaling); running the strategy on FTMO needs an MT5 / cTrader / DXtrade EA port (engineering work).
+
+(context, not the registered sizing) FTMO 2-Step 100K at $500 with smaller risk per trade:
+  risk $900/trade | real $   10,516 | coin flip $  -14,885 (2%) | dip $ -11,320
+  risk $1,500/trade | real $   27,042 | coin flip $  -14,530 (14%) | dip $ -19,025
+  risk $2,500/trade | real $   70,946 | coin flip $    2,767 (55%) | dip $ -17,080
