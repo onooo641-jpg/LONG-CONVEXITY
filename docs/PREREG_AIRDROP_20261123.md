@@ -19,3 +19,19 @@ that ended without a token); allocation formulas are often opaque, and when the 
 dropped silently. Malaysia: DeFi front-ends assumed; some airdrops geo-excluded the US only (recorded per campaign). Sybil / multi-wallet farming
 is excluded (rule violation at most issuers).
 Command: `uv run python -m scripts.airdrop_20261123 | tee docs/jx_runs/airdrop_20261123.txt`.
+
+## Stage 0 result (2026-11-23): not measurable as registered
+Searched for the allocation basis of the main campaigns (third-party sources unless stated; no figure below is verified):
+- **Hyperliquid (Nov 2024):** about 310M HYPE (31% of supply) to points holders (about 94K wallets); the points-per-volume formula and the
+  points-to-HYPE rate are **not published** (sources disagree: about 5 vs 5.35 HYPE per point; median wallet $5K–$15K per blog posts).
+- **Ethena Season 1 (Apr 2024):** 750M ENA over about 360.7B shards ≈ 0.0021 ENA per shard (my arithmetic from reported totals). Shard rates per
+  dollar per day are described inconsistently (5, 10 or 20 per day depending on the source and action). Launch price $0.59.
+- **EigenLayer Season 1:** about 113M EIGEN, proportional to restaked points, with a 110 EIGEN floor added after backlash and region exclusions;
+  no published EIGEN-per-point rate.
+- **Blast Phase 1:** 7B BLAST to points holders; no published per-point rate.
+- Later programmes (EigenLayer S2, Renzo, others) are widely reported as disappointing. No source quantifies farmers' realised losses.
+**Verdict: not measurable.** The registered per-campaign ROI needs a published allocation basis and survivorship-complete coverage (including
+programmes that paid nothing); neither exists in public sources. What the anecdotes suggest (not evidence): a few early campaigns paid very
+large amounts per wallet, later ones far less, and returns are concentrated in single events (it would fail the "drop the largest campaign" test
+the rule set out). Not repeatable in the prop-firm sense. Sources: decrypt.co/294067, theblock.co/post/285212, docs.eigenfoundation.org/faq/season-1,
+theblock.co/post/302053, malaysia.news.yahoo.com (EigenLayer points coverage), crypto.com/research/points-farming-may-2024.
