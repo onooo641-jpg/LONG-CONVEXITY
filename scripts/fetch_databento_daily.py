@@ -33,10 +33,25 @@ def main() -> int:
     if cost > a.max_cost_usd:
         print(f"ABORT: quote ${cost:.4f} exceeds the cap ${a.max_cost_usd:.2f} (needs Jx's approval)", flush=True)
         return 1
-    df = client.timeseries.get_range(**kw).to_df().reset_index()
-    OUT.parent.mkdir(parents=True, exist_ok=True)
-    df.to_parquet(OUT, index=False)
-    print(f"downloaded {len(df)} rows, {df['symbol'].nunique() if 'symbol' in df else '?'} symbols -> {OUT}", flush=True)
+    import time
+
+    import pandas as pd
+    parts = []
+    for i in range(0, len(SYMS), 4):  # small chunks: one request for all symbols timed out (504)
+        chunk = SYMS[i:i + 4]
+        for k in range(4):
+            try:
+                parts.append(client.timeseries.get_range(**{**kw, "symbols": chunk}).to_df().reset_index())
+                break
+            except Exception as e:  # noqa: BLE001
+                print(f"  chunk {chunk} try {k + 1}: {type(e).__name__}: {str(e)[:120]}", flush=True)
+                time.sleep(10 * (k + 1))
+        print(f"  fetched {min(i + 4, len(SYMS))}/{len(SYMS)} symbols", flush=True)
+        if parts:
+            OUT.parent.mkdir(parents=True, exist_ok=True)
+            pd.concat(parts, ignore_index=True).to_parquet(OUT, index=False)
+    df = pd.concat(parts, ignore_index=True) if parts else None
+    print(f"downloaded {0 if df is None else len(df)} rows, {0 if df is None else df['symbol'].nunique()} symbols -> {OUT}", flush=True)
     return 0
 
 
