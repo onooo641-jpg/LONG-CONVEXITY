@@ -13,7 +13,20 @@ file in `docs/jx_runs/` is the raw output of a script you can re-run. Rules for 
 | Liquidation bot (workstream B) | Not built; shadow test running | est. $0–$100/month now, $100–$600 averaged over crash cycles |
 | Any non-prop strategy usable at Jx's size | **None** (~105 tested) | — |
 | Futures cross-sectional momentum #351 | **Passed the full test on paper, but needs ~$250K+** (whole-contract test fails at $15K and $50K) | ~15–20%/yr on capital, not prop-like |
-| Non-prop tests in progress | #361 CoW solver payouts, #362 Across relayer fees (on-chain, free) | registered 2026-11-23 |
+| Non-prop tests in progress | #361 CoW solver payouts, #362 Across relayer fees (on-chain, free), #363 hedged Jupiter JLP | registered 2026-11-23 |
+
+**If prop income stops (fallback plan, 2026-11-23).**
+- *What would stop it:* firm rule changes or closures, not the friend's strategy losing its edge (every approved firm's coin-flip median is
+  positive, $12K–$24K, so the income comes from the rules). An industry-wide change (all firms ban bots, or a regulator steps in) cannot be
+  diversified inside prop.
+- *Early warning already running:* the daily radar diffs ~120 prop-firm rule/pricing pages (`docs/radar/watchlist.csv`, output
+  `data/radar/changes.parquet`); any new rule set can be re-modelled the same day with `backtest/recycle.py`; the live gates in
+  `docs/PREREG_LIVE_20261120.md` stop adding accounts if live results fall below the model's 5th percentile.
+- *Loss if it stops:* the income, not savings: only fees already paid are at risk (worst dip ~$13,858 for the 4-firm portfolio).
+- *The real fallback is the capital prop builds:* save a fixed share of every payout. At ~$100K the money itself can earn prop-sized
+  dollars at normal returns: #351b futures momentum backtests at 17.06%/yr at $100K (marginal pass, ledger FT2) ≈ $17K/yr; an index fund
+  ~$7–10K/yr. Arithmetic: saving all of $18K/yr reaches $100K in ~5–6 years; 5 accounts per firm (backtest $90K/yr, worst dip −$69K)
+  in ~1–2 years.
 
 ---
 
