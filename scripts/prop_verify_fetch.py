@@ -31,13 +31,20 @@ DEEP = ["https://faq.futureselite.com/en/", "https://support.lucidtrading.com/",
         "https://bulenox.com/help/", "https://help.traderslaunch.com/"]
 
 
+DEEP_MANUAL = ["https://helpcenter.takeprofittrader.com/", "https://www.takeprofittrader.com/faq", "https://help.toponefutures.com/",
+               "https://www.toponefutures.com/faq", "https://help.purdia.com/", "https://purdia.com/faq", "https://help.phidiaspropfirm.com/",
+               "https://phidiaspropfirm.com/faq", "https://help.aquafunded.com/", "https://aquafunded.com/faq", "https://help.holaprime.com/",
+               "https://holaprime.com/faq", "https://help.ylostrading.com/", "https://help.the5ers.com/", "https://the5ers.com/futures-faqs/",
+               "https://help.fundednext.com/en/collections/futures", "https://helpfutures.fundednext.com/"]
+
+
 def main() -> None:
     import sys
     OUT.mkdir(parents=True, exist_ok=True)
     deep = len(sys.argv) > 1 and sys.argv[1] == "deep"
     starts: dict[str, list[str]] = {}
     if deep:
-        for u in DEEP:
+        for u in (DEEP_MANUAL if len(sys.argv) > 2 and sys.argv[2] == "manual" else DEEP):
             starts.setdefault(urlparse(u).netloc.replace("www.", ""), []).append(u)
     else:
         rows = [r for r in csv.DictReader(open("docs/radar/watchlist.csv")) if r["kind"] == "firm"]
