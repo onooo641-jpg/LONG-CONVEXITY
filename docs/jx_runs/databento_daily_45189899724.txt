@@ -1,0 +1,26 @@
+quote: $2.4282 for 52 continuous symbols, ohlcv-1d, 2010-06-06..2026-11-01
+Traceback (most recent call last):
+  File "/home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/scripts/fetch_databento_daily.py", line 44, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/scripts/fetch_databento_daily.py", line 36, in main
+    df = client.timeseries.get_range(**kw).to_df().reset_index()
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/.venv/lib/python3.14/site-packages/databento/historical/api/timeseries.py", line 127, in get_range
+    return self._stream(
+           ~~~~~~~~~~~~^
+        url=self._base_url + ".get_range",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        path=path,
+        ^^^^^^^^^^
+    )
+    ^
+  File "/home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/.venv/lib/python3.14/site-packages/databento/common/http.py", line 134, in _stream
+    check_http_error(response)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/.venv/lib/python3.14/site-packages/databento/common/http.py", line 233, in check_http_error
+    raise BentoServerError(
+    ...<5 lines>...
+    )
+databento.common.error.BentoServerError: 504 The remote gateway timed out.
