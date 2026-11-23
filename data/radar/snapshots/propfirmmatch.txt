@@ -76,7 +76,7 @@ MATCH
 Aq
 AquaFunded
 4.4
-25% OFF
+35% OFF
 MATCH
 Cr
 Crypto Fund Trader
@@ -192,7 +192,7 @@ MATCH
 Aq
 AquaFunded
 4.4
-25% OFF
+35% OFF
 MATCH
 See All Offers
 Firms Challenges Offers Reviews Perps Firms Trending
@@ -204,7 +204,7 @@ Favorite 0/5
 New
 All Firms
 Firms 15 results
-Data updated 2 min ago
+Data updated 5 min ago
 Firm
 Rank / Reviews
 Country / Years
@@ -215,16 +215,16 @@ Promo
 Actions
 Th
 The5ers
-100382
+100431
 4.7
-1438
+1439
 reviews
 United Kingdom, years in operation: 10 10+
-FX, Indices, Metals, Crypto, Energy, Stocks FX
+FX, Indices, Metals, Energy, Crypto, Stocks FX
 Indices
 Metals
-Crypto
 Energy
+Crypto
 + 1
 $1.43M
 10% OFF
@@ -232,16 +232,16 @@ MATCH
 Firm
 E8
 E8 Markets
-39174
+39196
 4.8
 498
 reviews
 United States, years in operation: 5 5
-FX, Indices, Metals, Crypto, Energy FX
+FX, Indices, Metals, Energy, Crypto FX
 Indices
 Metals
-Crypto
 Energy
+Crypto
 + 1
 $1.1M
 15% OFF
@@ -249,7 +249,7 @@ MATCH
 Firm
 Cr
 Crypto Fund Trader
-39559
+39614
 4.2
 113
 reviews
@@ -267,24 +267,24 @@ Firm
 4
 FT
 FTMO
-44355
+44365
 4.5
 220
 reviews
 Czechia, years in operation: 11 10+
-FX, Indices, Metals, Crypto, Energy, Stocks, Other Commodities FX
+FX, Indices, Metals, Energy, Crypto, Stocks, Other Commodities FX
 Indices
 Metals
-Crypto
 Energy
+Crypto
 + 2
 $400K
-20% OFF
+30% OFF
 Firm
 5
 Aq
 AquaFunded
-17053
+17089
 4.4
 344
 reviews
@@ -295,22 +295,22 @@ Metals
 Crypto
 Other Commodities
 $400K
-25% OFF
+35% OFF
 MATCH
 Firm
 6
 WS
 WSFunded
-360
+361
 3.8
 51
 reviews
 Dubai (UAE), years in operation: 2 2
-FX, Indices, Metals, Crypto, Energy, Stocks, Other Commodities FX
+FX, Indices, Metals, Energy, Crypto, Stocks, Other Commodities FX
 Indices
 Metals
-Crypto
 Energy
+Crypto
 + 2
 $400K
 55% OFF
@@ -319,16 +319,16 @@ Firm
 7
 Ma
 Maven
-48252
+48256
 4.2
 801
 reviews
 Saint Lucia, years in operation: 3 3
-FX, Indices, Metals, Crypto, Energy, Other Commodities FX
+FX, Indices, Metals, Energy, Crypto, Other Commodities FX
 Indices
 Metals
-Crypto
 Energy
+Crypto
 + 1
 $200K
 40% OFF
@@ -337,16 +337,16 @@ Firm
 8
 Mo
 Moneta Funded
-1531
+1556
 4.8
-129
+130
 reviews
 Dubai (UAE), years in operation: 1 1
-FX, Indices, Metals, Crypto, Energy FX
+FX, Indices, Metals, Energy, Crypto FX
 Indices
 Metals
-Crypto
 Energy
+Crypto
 $880K
 55% OFF
 MATCH55
@@ -354,7 +354,7 @@ Firm
 9
 Bl
 Blueberry Funded
-26285
+26286
 4.1
 635
 reviews
@@ -372,7 +372,7 @@ Firm
 10
 To
 Top One Trader
-30317
+30333
 4.4
 237
 reviews
@@ -388,15 +388,15 @@ Firm
 11
 Fi
 Fintokei
-2386
+2387
 Less than
 20 reviews
 Czechia, years in operation: 3 3
-FX, Indices, Metals, Crypto, Energy FX
+FX, Indices, Metals, Energy, Crypto FX
 Indices
 Metals
-Crypto
 Energy
+Crypto
 + 2
 $605K
 20% OFF
@@ -405,16 +405,16 @@ Firm
 12
 At
 Atmos Funded
-845
+846
 4.7
 54
 reviews
 Cyprus, years in operation: 2 2
-FX, Indices, Metals, Crypto, Energy, Stocks FX
+FX, Indices, Metals, Energy, Crypto, Stocks FX
 Indices
 Metals
-Crypto
 Energy
+Crypto
 + 1
 $400K
 20% OFF
@@ -427,11 +427,11 @@ Orion Funded
 Less than
 20 reviews
 Dubai (UAE), years in operation: 3 3
-FX, Indices, Metals, Crypto, Energy, Stocks, Other Commodities FX
+FX, Indices, Metals, Energy, Crypto, Stocks, Other Commodities FX
 Indices
 Metals
-Crypto
 Energy
+Crypto
 + 2
 $600K
 50% OFF
@@ -445,11 +445,11 @@ City Traders Imperium
 57
 reviews
 Dubai (UAE), years in operation: 8 8
-FX, Indices, Metals, Crypto, Energy FX
+FX, Indices, Metals, Energy, Crypto FX
 Indices
 Metals
-Crypto
 Energy
+Crypto
 $720K
 15% OFF
 MATCH
@@ -457,16 +457,16 @@ Firm
 15
 Ho
 Hola Prime
-3198
+3203
 4.4
 210
 reviews
 Hong Kong, years in operation: 2 2
-FX, Indices, Metals, Crypto, Energy FX
+FX, Indices, Metals, Energy, Crypto FX
 Indices
 Metals
-Crypto
 Energy
+Crypto
 $400K
 10% OFF
 MATCH10
@@ -475,7 +475,7 @@ View All Firms
 PFM TV Watch live. Stay ahead
 Live trading, partner reviews, founder interviews, and practical trading education.
 FTMO Futures Challenge Explained (2026) | FTMO Futures Challenge Review
-3.7K views • about 1 month ago
+3.8K views • about 1 month ago
 Watch Latest Video
 Partner Reviews
 FTMO Futures Challenge Explained (2026) | FTMO Futures Challenge Review
@@ -596,7 +596,7 @@ Guest interview
 Watch & Learn
 Updated Oct 14, 2026
 83.9K Subscribers
-992 Videos
+991 Videos
 Trading Insights
 Live trading, interviews, and prop firm updates
 Subscribe

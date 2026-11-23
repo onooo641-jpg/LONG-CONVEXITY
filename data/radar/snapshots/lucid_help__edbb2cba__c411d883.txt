@@ -11,7 +11,7 @@ Payout Methods
 How Lucid Trading pays traders: available withdrawal methods and processing speed, with payouts averaging about 15 minutes once approved.
 A
 Written by AJ
-Updated this week
+Updated over a week ago
 Table of contents
 Payout Providers
 Lucid Trading currently supports the following payout methods for approved withdrawals:

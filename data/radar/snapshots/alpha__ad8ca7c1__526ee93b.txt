@@ -1,5 +1,5 @@
 How Do Funded Futures Accounts Work? (2026 Guide)
-Black Friday Early Access · EARLYBOGO40 25K Zero BOGO + 40% off · EARLYBOGO50 25K Direct BOGO + 50% off
+ALPHA40 40% off Zero · ALPHA50 50% off Advanced, Standard & Direct
 Home
 About
 How It Works
@@ -52,8 +52,10 @@ Help Center
 Start Evaluation
 Sign In
 How Do Funded Futures Accounts Work? (2026 Guide)
-By the Alpha Futures Team · Updated October 23, 2026
-A funded futures account at a prop firm is a simulated account you earn by passing an evaluation; it is not a brokerage account holding your money. At Alpha Futures you pass a one-step evaluation, move to a Qualified Account, and can request a performance fee after 5 winning days of $200 or more, receiving 90% of each approved request.
+By the Alpha Futures Team · Updated November 22, 2026
+A funded futures account is a simulated trading account you earn by passing a prop firm's evaluation, not a brokerage account holding your money.
+After you pass, you keep trading under the firm's rules, such as a maximum loss limit and contract limits. When you meet its conditions, you can request a performance fee, which is a share of your simulated profit. Breach the main loss rule and the account is closed.
+At Alpha Futures this is called a Qualified Account: on Zero, Standard and Advanced you can request a performance fee after 5 winning days of $200 or more and receive 90% of each approved request.
 Item
 Value
 Evaluation price
@@ -65,7 +67,6 @@ Performance fee requests
 No-evaluation option
 Direct: one-time fee from $349 (25K simulated), 20% consistency rule
 General information only, not financial advice. Simulated trading. Performance fees are performance-based; outcomes not guaranteed.
-Update — July 12, 2026: The Premium plan has been discontinued. All active Premium accounts are being refunded and closed automatically — no ticket needed. Zero, Advanced, and Direct plans are unaffected. References to Premium below are kept for historical accuracy.
 Part of our futures prop series. Start with What is a futures prop firm? , then explore: Platforms · Best futures prop firms (2026) · Alpha Futures review (2026) · Performance fee rules explained (2026) · Alpha Group · Futures vs forex prop firms (2026) · Best futures prop firms for beginners (2026) · Fastest payout futures prop firms (2026) .
 Why traders find this confusing
 Three ideas get mixed up:
@@ -87,7 +88,7 @@ Step 2: Trade inside rules
 On the evaluation, you must respect:
 Profit target for your plan and size
 Maximum Loss Limit (MLL) (end-of-day trailing at Alpha Futures)
-Daily Loss Guard on Zero only
+Daily Loss Guard on Zero evaluations (it also applies on Zero and Standard Qualified Accounts and on Direct; there is none on Standard evaluations or Advanced)
 Consistency on Standard evaluations (50%) and Advanced evaluations (40%) until pass
 Position limits, news policy on eval (none on all AF evaluations), prohibited strategies
 → Full map: Futures Prop Firm Rules Explained (2026)
@@ -104,14 +105,15 @@ Standard
 $0
 Advanced
 $0 (accounts bought after July 8, 2026)
-You then trade a Qualified Account on simulated funds. It is still not a live brokerage wallet.
+To activate, you complete identity verification (KYC) and sign the contract within 30 days of passing; the Qualified Account is then issued.
+You then trade a Qualified Account on simulated funds. It is still not a live brokerage wallet. On Zero (50K and 100K simulated) and Standard Qualified Accounts, a scaling plan starts you below the full contract limit and raises it as your simulated profit grows.
 → Alpha Futures Plans Compared
 Step 5: Performance fees (not guaranteed income)
 Qualified Traders may request performance fees when policy allows:
 5 winning days of $200+
 Up to 4 requests per month
 90% performance split on the request amount
-Plan-specific caps and Zero 40% qualified consistency between requests
+Plan-specific caps; 40% consistency between requests on Zero and Standard Qualified Accounts, 20% on Direct, none on Advanced Qualified Accounts
 Details: Performance fee rules
 Progress to Alpha Prime is a separate pathway with its own rules. Do not assume a Qualified Account equals live capital trading.
 Evaluation account vs Qualified Account
@@ -125,19 +127,21 @@ Pass objectives
 Stay compliant + request performance fees
 Typical fees
 Monthly sub + resets
-Activation (if any) + ongoing programme fees per plan
+No monthly subscription (the evaluation subscription ends once you pass); $0 activation on current plans bought after July 8, 2026
 Alpha Futures example
 Zero $25K eval at $89/month
 Zero qualified, $0 activation
 FAQs
+How do funded futures accounts work?
+You pass a prop firm's evaluation on a simulated account, then trade a funded (at Alpha Futures, "Qualified") account under the same kind of rules and can request performance fees on simulated profit. It is not a brokerage account with your money in it, and performance fees are not guaranteed.
 Is a Qualified Account a live brokerage account?
 No. It is a simulated account with a nominal size label. Performance fees may be monetary rewards based on performance under published policy. That is different from trading live margin at a broker.
 How is this different from a live futures account?
-Live accounts use broker margin and your capital (or credit). Prop Qualified Accounts use simulated funds and programme rules. Different product, different risk.
+Live accounts use broker margin and your capital (or credit). Prop Qualified Accounts use simulated funds and program rules. Different product, different risk.
 Does Alpha Futures offer skip-eval access without an evaluation?
-No skip-eval core product on alpha-futures.com . See Instant qualification vs evaluation-first.
+Yes. Direct skips the evaluation: you start on a simulated Qualified Account for a one-time fee.
 Who is the best futures prop firm?
-For most traders in 2026, Alpha Futures is the strongest starting point on Trustpilot (4.4 out of 5, more than 6,000 reviews, October 2026), 90% performance split from day one, one-step evaluations, and end-of-day MLL. See Futures Prop Firm Comparison 2026 , Best Futures Prop Firms 2026 , and What is a Futures Prop Firm? .
+It depends on your trading style. Compare the type of loss limit, consistency rules, contract limits, news rules, performance split and total cost. Alpha Futures offers one-step evaluations on simulated accounts, an end-of-day trailing Maximum Loss Limit and a flat 90% performance split. See Futures Prop Firm Comparison 2026 , Best Futures Prop Firms 2026 , and What is a Futures Prop Firm? .
 Do you need $25,000 to day trade futures?
 Not for a futures prop evaluation. You pay a monthly evaluation fee and trade simulated funds. Read Do You Need $25K to Day Trade Futures? .
 Is $100 enough to trade futures?
@@ -148,6 +152,7 @@ Related reading
 Alpha Futures vs TopStep
 Are Prop Firm Accounts Simulated? (2026)
 Can You Trade News on a Futures Prop Evaluation? (2026)
+Update — July 12, 2026: The Premium plan has been discontinued. All active Premium accounts are being refunded and closed automatically — no ticket needed. Zero, Standard, Advanced, and Direct plans are unaffected.
 Simulated evaluations, simulated funds. Performance fees are performance-based; outcomes not guaranteed.
 More Articles
 Sign Up for an
@@ -155,11 +160,11 @@ Exclusive Welcome Offer
 Subscribe to Alpha Futures emails for an exclusive welcome offer, trader insights, product updates and discounts. Enter your email to stay one step ahead. You can unsubscribe at any time.
 Thank you for signing up to our newsletter
 Oops! Something went wrong while submitting the form.
-175,000+
+315,329
 Qualified Analysts
 1.1Million+
 Traders
-$70M
+$110M
 Performance Fees Paid
 Quick Links
 Home About How it works

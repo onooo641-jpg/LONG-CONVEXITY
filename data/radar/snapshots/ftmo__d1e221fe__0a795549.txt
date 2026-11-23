@@ -1,6 +1,6 @@
 How about trading psychology? Any help here? | FTMO.com
-New
-FTMO Instant Account
+Black Friday: Up to 30% Off
+Claim Now
 {
 document.body.classList.toggle('no-scroll', value);
 });

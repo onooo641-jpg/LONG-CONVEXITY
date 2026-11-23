@@ -1,0 +1,98 @@
+S2L Evaluation | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Moving from Pro or S2F to Live
+S2L Evaluation
+S2L Consistency
+S2L Daily Loss Limit
+S2L Drawdown
+Live Payouts
+Live Scaling
+Live Accounts
+Platforms
+Trading Rules and Guidelines
+Affiliate Program
+Agreements and Disclaimers
+All Collections Live & S2L Program S2L Evaluation S2L Evaluation
+S2L (Straight to Live) at a glance: Core, Edge and Ultra plans, how to pass and what happens next.
+Updated over 2 weeks ago
+Copy for LLM
+The S2L (Straight to Live) evaluation is a simulated evaluation with a set path to a live account . At checkout, S2L appears as Live .
+At a glance
+Core
+Edge
+Ultra
+Starting balance
+$50,000
+$150,000
+$300,000
+Profit target
+$3,000
+$8,500
+$15,000
+Max drawdown
+$2,000
+$4,500
+$7,000
+Drawdown type
+Intraday trailing
+Intraday trailing
+Intraday trailing
+Daily Loss Limit
+$1,000
+$1,750
+$3,250
+Max contracts
+2 (20 micros)
+3 (30 micros)
+4 (40 micros)
+Min. daily profit
+$200
+$300
+$400
+QDays to pass
+8
+8
+8
+Consistency
+25%
+25%
+25%
+Activation fee
+None
+None
+None
+See daytraders.com for the latest pricing.
+How to pass
+Reach the profit target.
+Trade at least 8 Qualifying Days : days that meet the minimum daily profit, follow the rules and end within consistency.
+Keep your best day at or below 25% of your total profit.
+After you pass
+Stop trading; the evaluation closes once it passes. Reach out to support and ask for the risk team to review your accounts.
+Then, once the Live Docs page is enabled on your dashboard (if it isn't already), upload your live documents and sign the live account agreement on your Dashboard.
+Your live account is set up within 1–5 business days.
+Important: once you're live, all your simulated accounts (including other S2L evaluations) are closed, and you can't buy new S2L evaluations while you're trading live.
+Good to know
+No time limit and no resets.
+You can have as many S2L evaluations as you like, however you can only have up to 5 live accounts.
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+Trail Evaluation
+Trail Pro Account
+S2L Drawdown
+Live Accounts
+Plan Comparison Overview
+On this page
+At a glance
+How to pass
+After you pass
+Good to know

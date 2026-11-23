@@ -9,7 +9,7 @@ CFD Intraday
 CFD Intraday Platforms & Trading Conditions
 CFD Intraday Platforms & Trading Conditions
 Platforms and setup, leverage, position sizing, trading hours and how orders are priced on CFD Intraday.
-Updated this week
+Updated over a week ago
 Table of contents
 Which Platforms Can I Use, And Can I Change Later?
 CFD Intraday is available on cTrader and MT5. You choose your platform in the Client Area before purchase, and your Challenge is bound to that platform — it can't be changed during the Challenge.

@@ -22,7 +22,7 @@ About Us Our mission & vision
 Support Get instant help
 Sign in Free trial
 Sign in Start
-Last updated: November 4, 2026
+Last updated: November 22, 2026
 Affiliate Terms and Conditions
 Table of contents Preamble
 1. Definitions and interpretation
@@ -50,7 +50,7 @@ Table of contents Preamble
 23. Contact
 Schedule 1 — Commission Schedule
 Schedule 2 — Brand and Marketing Rules
-Version 2.1 · Effective 4 November 2026
+Version 2.2 · Effective 22 November 2026
 These HyroTrader Affiliate Programme Terms (the " Partner Terms " or " ATC ") govern your participation in the HyroTrader Affiliate Programme operated by HYRO TECHNOLOGIES FZ-LLC (the " Provider ") and made available through the www.hyrotrader.com website (the " Website ").
 Please read these Partner Terms carefully. You are under no obligation to participate in the Affiliate Programme. You may not participate unless you have read, understood and agreed to these Partner Terms. By submitting an application, by accepting these Partner Terms in the Partner Area, or by using a Referral Code issued to you, you agree to be bound by them.
 These Partner Terms are a business-to-business agreement. You participate as an independent contractor promoting the Provider's own service. They are not an offer of employment, agency, partnership or joint venture, and they are not an offer of any financial service or investment opportunity to you (§2.6, §22.8).
@@ -71,7 +71,7 @@ P.5 What you are promoting is simulated
 Everything the Provider offers under the Service is simulated . All trading activity conducted under the Service is simulated, in every phase, including the Funded Trader Phase. No real trades are executed in live financial markets, no real securities, commodities, currencies or cryptocurrencies are bought, sold or held for any Customer, and no Customer receives real capital to trade (GTC §3.2, §3.3).
 The Provider does not provide financial advice, investment recommendations, brokerage, custody or any form of regulated financial activity (GTC §3.1).
 Everything you publish about the Provider must be consistent with this. §10.7 and §10.8 set out what this means in practice and are among the most important obligations in these Partner Terms.
-Version 2.1 · Effective 4 November 2026
+Version 2.2 · Effective 22 November 2026
 These HyroTrader Affiliate Programme Terms (the " Partner Terms " or " ATC ") govern your participation in the HyroTrader Affiliate Programme operated by HYRO TECHNOLOGIES FZ-LLC (the " Provider ") and made available through the www.hyrotrader.com website (the " Website ").
 Please read these Partner Terms carefully. You are under no obligation to participate in the Affiliate Programme. You may not participate unless you have read, understood and agreed to these Partner Terms. By submitting an application, by accepting these Partner Terms in the Partner Area, or by using a Referral Code issued to you, you agree to be bound by them.
 These Partner Terms are a business-to-business agreement. You participate as an independent contractor promoting the Provider's own service. They are not an offer of employment, agency, partnership or joint venture, and they are not an offer of any financial service or investment opportunity to you (§2.6, §22.8).
@@ -119,12 +119,17 @@ Capitalised terms used in these Partner Terms have the meanings given below, or 
 " Provider " — as defined in §P.1.
 " Qualifying Transaction " — a transaction that satisfies every condition in §5.2.
 " Referral Code " — a unique alphanumeric code issued to you by the Provider through the Partner Area, which a Customer may apply at checkout.
-“Referred Customer” — in relation to a Qualifying Transaction, the Customer who entered into that Qualifying Transaction with your Referral Code applied, or whose transaction was attributed to your Tracked Link under §5.4. The expression describes that transaction only and does not create any continuing attribution of that Customer to you (§5.5).
+“ Referred Customer ” — a Customer who became your Linked Client under §5.8.
 " Restricted Jurisdiction " and " Prohibited Jurisdiction " — as defined in GTC §12.
 " Service " — as defined in the GTC Preamble.
 “Sub-Partner” — a Partner within your Network, at Level 2 or 3, as determined under §7.3.
+" Client Link " — the record that a Customer is a client of a particular Partner, created under §5.8. A Customer has at most one Client Link at a time.
 " Code Terms " — the terms on which a particular Referral Code is issued, as described in §4.3.
-“Tracked Link” — a URL or banner issued to you through the Partner Area which records a visit to the Website and which may attribute a Qualifying Transaction to you under §5.4.
+" Deal " — the basis on which you earn Commission on your Linked Clients: the One-Time Deal or the Lifetime Deal (§6.11). Your Deal is recorded in the Partner Area.
+" Lifetime Limit " — the maximum number of orders per Linked Client and the maximum number of months per Linked Client for which a Lifetime Deal pays Commission (§6.11(c)), as recorded in the Partner Area.
+" Linked Client " — in relation to you, a Customer whose current Client Link is to you.
+" New Customer " — a Customer who, at the moment of checkout, has no Client Link and has never completed a paid purchase from the Provider on any Account. A paid purchase includes a Challenge, an upgrade and a credit pack, whether or not it was later refunded. A Free Trial, a sponsored, complementary or gifted Challenge account and an unpaid checkout are not paid purchases.
+“ Tracked Link ” — a URL or banner issued to you through the Partner Area which records a visit to the Website and displays or pre-fills your Referral Code at checkout (§5.4).
 " Website " — www.hyrotrader.com and its subdomains.
 1.2 Interpretation
 (a) "§" refers to a section of these Partner Terms unless it is preceded by "GTC", in which case it refers to a section of the General Terms and Conditions, or by "FTA", in which case it refers to a clause of the Demo Funded Trader Agreement.
@@ -160,6 +165,7 @@ You participate as an independent contractor, on your own account, at your own c
 You have no authority to bind, to contract for, to make any representation on behalf of, to accept anything on behalf of, or to hold yourself out as speaking for the Provider or any Affiliate. You are responsible for your own business costs, staff, subcontractors, equipment, insurance, registrations and compliance.
 2.7 No exclusivity and no minimum
 The Affiliate Programme is non-exclusive. The Provider may appoint any number of Partners, may market the Service directly and through any other channel, may operate its own discount codes and promotions, and may deal with any person whether or not you introduced them. You are not guaranteed any volume, territory, placement, campaign, code, rate or level of Commission.
+The Provider's own discount codes and promotions are not Referral Codes. Any Customer may use them. Where a Linked Client of a Partner on a Lifetime Deal uses one, the transaction is still attributed to that Partner under §5.1.
 3. Application, approval and the Partner Area
 3.1 Application
 To apply you must hold an Account and submit the affiliate application form published on the Website. The Provider assesses applications on the information submitted and may request further information, including details of the platforms, channels, audiences and methods you intend to use.
@@ -186,9 +192,10 @@ A Referral Code is issued on the terms stated for it in the Partner Area at the 
 (d) product, programme or promotion scoping — the code is valid only for a stated Challenge programme, account size, product or promotion;
 (e) a commission rate specific to that code , which may be higher or lower than your Base Rate and which applies in place of your Base Rate for Qualifying Transactions on that code; and
 (f) a discount or other benefit to the Customer , and the effect of that discount on the Commissionable Amount (§6.4).
+Every Referral Code, whatever its Code Terms, may be used only by a New Customer or by your own Linked Client. The Platform refuses it to any other Customer ("This code is for new customers only."). Code Terms may restrict a code further, for example to a Customer's first order or to a number of uses per Customer, but cannot widen it.
 Where a Code Term conflicts with a general provision of these Partner Terms about rate, scope, duration or number of uses, the Code Term prevails for that code. Where a Referral Code has no stated Code Term on a particular point, the general provisions of these Partner Terms apply to it.
 4.4 Effect of a code that has expired or reached its limit
-A transaction entered into with a Referral Code that has expired, that has reached its usage cap, that has been used where it was single-use, that is outside its product scope, or that has been withdrawn or disabled under §4.5 or §11.5, is not a Qualifying Transaction and generates no Commission. This is so whether or not the Platform accepted the code at checkout, and whether or not a discount was in fact granted to the Customer. Where the Platform has granted a discount on a code that was not valid, the Provider may recover the amount of that discount from you under §9.
+A transaction entered into with a Referral Code that has expired, that has reached its usage cap, that has been used where it was single-use, that is outside its product scope, that was refused under §4.3 because the Customer was neither a New Customer nor your Linked Client, or that has been withdrawn or disabled under §4.5 or §11.5, is not a Qualifying Transaction and generates no Commission. This is so whether or not the Platform accepted the code at checkout, and whether or not a discount was in fact granted to the Customer. Where the Platform has granted a discount on a code that was not valid, the Provider may recover the amount of that discount from you under §9.
 4.5 Withdrawal, replacement and variation of codes
 The Provider may withdraw, disable, replace, rename, re-scope or vary the Code Terms of any Referral Code or Tracked Link:
 (a) on notice under §20, for any reason; or
@@ -197,40 +204,42 @@ Withdrawal or disabling of a Referral Code does not affect Commission already va
 4.6 No entitlement to a particular code
 You have no right to any particular Referral Code, to a particular code format, to the renewal of a code, to a code that carries a discount for the Customer, or to the continued availability of any code, discount or campaign.
 5. Attribution — how a transaction is attributed to you
-5.1 Attribution — the code applied, or the link last clicked
-Commission is payable per transaction, and attribution is determined transaction by transaction. There is no continuing attribution of a Customer to a Partner.
-Each transaction stands on its own. A transaction is attributed to the Partner whose valid Referral Code was applied to it at checkout or, where no valid Referral Code was applied, to the Partner whose Tracked Link the Customer last clicked within the Cookie Window (§5.4) — and to no one else. A Tracked Link earns Commission exactly as a Referral Code does, at the same rates and on the same terms.
+5.1 Attribution: a New Customer's first purchase, then the Client Link
+A New Customer's first paid purchase made with your valid Referral Code applied at checkout is attributed to you, and the Customer becomes your Linked Client (§5.8).
+Every later transaction of a Linked Client is attributed to the Partner the Customer is linked to, whether the Customer applies one of that Partner's Referral Codes, a Provider discount code or no code at all. Whether such a transaction earns Commission depends on that Partner's Deal (§6.11).
+A transaction by a Customer who is neither a New Customer nor anyone's Linked Client is attributed to no Partner.
 5.2 Conditions of a Qualifying Transaction
-A transaction is a " Qualifying Transaction " in relation to you only if all of the following are satisfied:
+A transaction is a "Qualifying Transaction" in relation to you only if all of the following are satisfied:
 (a) a Customer has placed a Refundable Challenge Deposit with the Provider, has paid a Challenge Fee or an Instant Fee that is commissionable under §6.9, or has paid for another item that is commissionable under §6.9;
-(b) either a valid Referral Code issued to you, and in force under its Code Terms at the moment of checkout, was applied by the Customer to that transaction at checkout and was accepted by the Platform, or no valid Referral Code was applied to that transaction and the last Tracked Link the Customer clicked before checkout was a Tracked Link issued to you, clicked within the Cookie Window (§5.4);
+(b) the transaction is either (i) the first paid purchase of a New Customer, made with a valid Referral Code issued to you, in force under its Code Terms at the moment of checkout and accepted by the Platform, or (ii) a transaction of your Linked Client that earns Commission under your Deal (§6.11);
 (c) the amount payable in respect of the transaction has been received in full and cleared by or on behalf of the Provider;
 (d) the Customer is not you, and the transaction is not a prohibited transaction under §12;
 (e) the Customer is not in a Prohibited Jurisdiction and is not otherwise ineligible under GTC §12; and
 (f) any hold period applicable to that transaction under §8.3 has expired without a Clawback Event occurring; where no hold period applies to the transaction, this condition is satisfied when the amount is received and cleared.
 Conditions (a) to (e) determine whether Commission is earned. Condition (f) determines when it becomes payable.
-5.3 Code at checkout wins
-Where a valid Referral Code is applied at checkout, that code determines attribution and displaces any cookie, Tracked Link, click, session, landing-page parameter or other tracking signal, whenever recorded and whichever Partner it relates to. The code at checkout prevails in every case of conflict, including over a Tracked Link click that would otherwise attribute the transaction under §5.4. A Tracked Link click attributes a transaction only where no valid Referral Code was applied to it.
-5.4 No code applied — the Tracked Link last clicked in the Cookie Window
-Where no valid Referral Code is applied at checkout, the transaction is attributed to the Partner whose Tracked Link the Customer clicked most recently before checkout, provided that click was recorded within the Cookie Window. The “Cookie Window” is thirty (30) calendar days: it ends at checkout and begins thirty (30) calendar days before it. A transaction attributed in this way is a Qualifying Transaction on the same footing as one attributed by a Referral Code, and earns Commission at the same rates (§6, Schedule 1).
-Last click wins. Where a Customer clicked the Tracked Links of more than one Partner within the Cookie Window, the transaction is attributed to the Partner whose link was clicked last, and to that Partner only. An earlier click is displaced by a later one.
-A click also causes that Partner’s Referral Code to be displayed, or pre-filled, at checkout, so that the Customer can see whose code is being applied. The Customer may remove it or enter a different one; if a different valid Referral Code is applied at checkout, §5.3 governs and the code wins. Where no valid Referral Code is applied and no Tracked Link click is recorded within the Cookie Window, the transaction is not a Qualifying Transaction and generates no Commission for any Partner. A click, a visit, an impression or a figure in a link-tracking report earns nothing by itself: Commission arises only on a Qualifying Transaction under §5.2.
-5.5 A code is not tied to a Customer, and a Customer is not tied to a Partner
-A Referral Code is not allocated to, reserved for, or locked to any Customer. Subject to its Code Terms:
-(a) the same Referral Code may be applied by many different Customers;
-(b) the same Customer may apply your Referral Code to more than one transaction, and each such transaction is a separate Qualifying Transaction generating separate Commission;
-(c) the same Customer may apply a different Partner's Referral Code to a later transaction, and that later transaction belongs to that other Partner and generates no Commission for you; and
-(d) the same Customer may enter into a later transaction with no Referral Code applied, in which case §5.4 decides whether it is attributed to you, to another Partner or to no one; it is not attributed to you merely because you earned Commission on an earlier transaction of that Customer.
-No Partner acquires any right, expectation or interest in the future transactions of any Customer. Attribution is per transaction: a Referral Code and a Tracked Link each earn on the transaction they are attributed to, and on no later purchase by that Customer. The Affiliate Programme does not confer lifetime, recurring, residual or perpetual commission on the transactions of a Customer, and no statement to that effect, wherever made, forms part of these Partner Terms or creates any entitlement (§22.5).
+5.3 The code decides only for a New Customer
+For a New Customer, the valid Referral Code applied at checkout decides attribution and displaces any cookie, Tracked Link, click, session or other tracking signal. For a Linked Client, the Client Link decides attribution and no code, click or signal changes it. Another Partner's Referral Code cannot be applied to a Linked Client's transaction.
+5.4 Tracked Links
+A Tracked Link records the visit and displays or pre-fills your Referral Code at checkout. It does not by itself attribute a transaction or earn Commission. Commission arises only where your Referral Code is applied to a New Customer's first paid purchase, or on your Linked Client's transactions under your Deal. If the Customer removes your code, or applies a different valid code, before paying, the transaction is attributed under §5.1 accordingly.
+5.5 A Customer belongs to one Partner, through the Client Link only
+(a) A Customer becomes a Partner's client only through a Client Link under §5.8. Using a Referral Code on a later transaction, clicking a Tracked Link or being part of a Partner's audience does not create one.
+(b) A Customer who first purchased from the Provider without a Referral Code, or with a Provider discount code, is not a New Customer for any later transaction and is not linked to any Partner, unless the Provider assigns them under §5.8(c).
+(c) A Linked Client may use any of their Partner's Referral Codes, old or new, subject to the Code Terms. They cannot use another Partner's Referral Code.
+(d) Whether you earn Commission on your Linked Clients' later transactions, and for how long, is set by your Deal (§6.11). Nothing else, wherever stated, creates a right to recurring, residual or perpetual Commission on a Customer's transactions (§22.5).
 5.6 Determination of attribution
-The Provider’s records of the Referral Code applied at checkout, of the Code Terms in force at that moment, of Tracked Link clicks and the times at which they were recorded, and of the amount received, are the record of attribution. The Provider determines attribution acting reasonably and in good faith. You may dispute a determination under §8.6.
+The Provider’s records of the Referral Code applied at checkout, of the Code Terms in force at that moment, of Client Links and their history, of Tracked Link clicks and the times at which they were recorded, and of the amount received, are the record of attribution. The Provider determines attribution acting reasonably and in good faith. You may dispute a determination under §8.6.
 5.7 Tracking failure
 The Provider does not warrant that any Referral Code, Tracked Link, cookie, tracking pixel, integration or attribution system will operate without interruption or error. The Provider is not liable for Commission that would have been earned had a Customer applied a code, had a code not expired, had a tracking system operated correctly, or had a Customer's browser, device, network, ad-blocker or privacy setting permitted tracking.
+5.8 Client Links
+(a) Created by the first purchase. A Client Link to you is created when a New Customer's first paid purchase, made with your Referral Code, is completed. It is created whatever your Deal.
+(b) The first Partner stays. A Client Link is not changed by any later code, click or purchase. A refund of the first purchase does not end it.
+(c) Assignment by the Provider. The Provider may, at its discretion, link a Customer to a Partner, move a Customer to another Partner or end a Client Link, in particular for Customers who purchased before 20 November 2026, where the Partner shows to the Provider's reasonable satisfaction that the Customer came from the Partner's own promotion. The Provider records each assignment with its date and reason. An assignment applies only to transactions completed after it and does not change Commission already earned or reversed. The Provider is not obliged to review any Customer, and a Partner has no right to the assignment of any Customer.
+(d) Transfer of codes. Where the Provider moves a Referral Code to another Partner, Customers already linked to the previous owner stay linked to them.
 6. Commission
 6.1 Entitlement
 Subject to these Partner Terms, you are entitled to Commission on each Qualifying Transaction attributed to you under §5, calculated under this §6, together with Network Commission under §7.
 You are not entitled to Commission merely for promoting the Provider or the Service, for placing a banner, for sharing a Tracked Link, for the size of your audience, for a number of clicks or visits, or for any activity that does not result in a Qualifying Transaction.
-Commission is earned on a transaction to which your Referral Code was applied at checkout or, where no valid Referral Code was applied, whose Customer last clicked your Tracked Link within the Cookie Window (§5.4). Clicks, impressions and audience size do not earn Commission by themselves, however large the numbers: a click earns only where it is the last click in the Cookie Window on a transaction to which no valid Referral Code was applied. If a Customer you introduced completes a transaction with another Partner’s Referral Code applied, no Commission arises for you on that transaction.
+Commission is earned on the first paid purchase of a New Customer to whom your Referral Code was applied at checkout, and, where you are on a Lifetime Deal, on your Linked Clients' later transactions within your Lifetime Limit (§6.11). Clicks, impressions and audience size do not earn Commission by themselves, however large the numbers.
 6.2 Level 1 rate — the Base Rate
 Your Base Rate is the rate applicable to Qualifying Transactions attributed to you directly.
 (a) The standard Base Rate is between 10% and 15% of the Commissionable Amount. The Provider sets your rate within that band on approval, having regard to your channel, audience and expected contribution, and records it in the Partner Area.
@@ -238,7 +247,7 @@ Your Base Rate is the rate applicable to Qualifying Transactions attributed to y
 (c) An increased rate may be time-limited, campaign-limited or conditional, in which case it lapses or reverts to your standard Base Rate in accordance with its stated terms, without further notice.
 (d) The Provider may vary your Base Rate, upwards or downwards, on notice under §20. A reduction takes effect only for Qualifying Transactions completed on or after the effective date of the notice, and does not affect Commission already earned.
 (e) Rates are set per Partner. The Provider is under no obligation to offer you the rate offered to any other Partner, and the existence of a higher rate elsewhere gives you no entitlement.
-(f) Where a Referral Code carries its own commission rate under §4.3(e), that rate applies to Qualifying Transactions on that code in place of your Base Rate.
+(f) Where a Referral Code carries its own commission rate under §4.3(e), that rate applies to Qualifying Transactions on that code in place of your Base Rate. A Qualifying Transaction of a Linked Client with no Referral Code of yours applied earns your Base Rate.
 6.3 No automatic tiering
 There is no automatic advancement, tier ladder or volume-triggered rate increase. Reaching any level of volume, revenue or referral count does not by itself increase your Base Rate. An increase arises only under §6.2(b).
 6.4 The Commissionable Amount
@@ -266,8 +275,8 @@ No Commission arises on:
 6.8 Commission is calculated only on transactions, not on trading results
 Commission is calculated exclusively on Commissionable Amounts. You have no entitlement to any share of, or payment measured by, any trading result, simulated profit, reward, payout or revenue of the Provider, the Funded Trader Entity, any Affiliate or any Customer (cf. FTA 11.7, 11.8).
 6.9 Commissionable items
-Commission is payable only on the Refundable Challenge Deposit, the Challenge Fee and the Instant Fee (each as defined in the GTC). No other product, service, item or payment offered by the Provider, the Funded Trader Entity or any Affiliate is commissionable.
-The Commissionable Amount is therefore the Deposit, Challenge Fee or Instant Fee actually received and retained, net of the deductions in §6.4 — discounts, transaction taxes, payment-processing and network fees, and any refunded portion.
+Commission is payable only on the Refundable Challenge Deposit, the Challenge Fee and the Instant Fee (each as defined in the GTC) and, for a Partner on a Lifetime Deal only, on a credit pack purchased by a Linked Client. A credit pack counts as one order toward the Lifetime Limit. No other product, service, item or payment offered by the Provider, the Funded Trader Entity or any Affiliate is commissionable. An upgrade is never commissionable and never counts toward the Lifetime Limit. A Challenge paid entirely with credits earns no Commission.
+The Commissionable Amount is therefore the Deposit, Challenge Fee, Instant Fee or credit pack price actually received and retained, net of the deductions in §6.4 — discounts, transaction taxes, payment-processing and network fees, and any refunded portion.
 The Provider may introduce further products in future. A future product becomes commissionable for you only where the Provider's business development team has agreed in writing with you that it is, and the agreement has been recorded in the Partner Area. That agreement is specific to you; it does not make the product commissionable for any other Partner, and the introduction of a product does not by itself create any entitlement.
 6.10 Partner Challenge Accounts
 The Provider may, at its sole discretion , grant you one or more Challenge accounts as a benefit of participation in the Affiliate Programme (a " Partner Challenge Account "), by written agreement with its business development team recorded in the Partner Area.
@@ -278,16 +287,22 @@ The Provider may, at its sole discretion , grant you one or more Challenge accou
 (e) Misuse of a Partner Challenge Account, misrepresentation in connection with one, or use of one by any person other than you, is a material breach of these Partner Terms and engages §17.3, in addition to any consequence under the GTC.
 (f) Profit split and what the account produces. A Partner Challenge Account may be granted with a profit split of between 5% and 80%, as the Provider’s business development team determines when the account is issued and records in the Partner Area. Where you trade such an account successfully, it produces a trading profit certificate, evidencing the simulated trading profit you made on the account. Trading profit certificates are issued to every trader on a funded account, not only to Partners. A trading profit certificate is not a profit-split certificate, is not a record of a payout, and does not evidence any amount paid or payable to you. Where a payout is made on the account, HyroTrader also issues a profit split certificate, which evidences the amount actually paid to you; that is the only certificate that evidences a payout.
 (g) What you may say about it. You may show a trading profit certificate and you may talk publicly about trading on a Partner Challenge Account, subject to §10.14. You must not present a trading profit as a payout you received, as a profit split, or as an amount HyroTrader paid you, and you must not mislead your audience about what you were in fact paid. Breach of this §6.10(f) or (g), or of §10.14, entitles the Provider to restrict or close the account immediately and is a material breach of these Partner Terms engaging §17.3.
+6.11 Deals: One-Time and Lifetime
+(a) One-Time Deal. Every Partner is on the One-Time Deal unless the Provider records otherwise in the Partner Area. On a One-Time Deal you earn Commission on a New Customer's first paid purchase only. Your Linked Clients may keep using your Referral Codes under their Code Terms, but their later transactions earn you no Commission.
+(b) Lifetime Deal. The Provider may, at its discretion, switch you to the Lifetime Deal, by recording it in the Partner Area. On a Lifetime Deal you also earn Commission on your Linked Clients' later commissionable transactions (§6.9), with or without a code, until the Lifetime Limit is reached.
+(c) Lifetime Limit. The Lifetime Limit is a maximum number of orders per Linked Client and a maximum number of months per Linked Client, as recorded in the Partner Area. Either may be unlimited. Whichever is reached first ends Commission on that Linked Client. Orders are counted from the first purchase, which is order 1. A refunded order still counts. Months are counted from the date the Client Link was created or assigned. A Linked Client who has reached the limit stays linked to you and may still use your codes, but earns you no further Commission.
+(d) Switching. The Provider may switch you between Deals, and change your Lifetime Limit, at its discretion. A switch or a change applies to transactions completed after it is recorded, including those of Customers who became your Linked Clients while you were on the other Deal. Orders and months already counted under §6.11(c) continue to count. A switch to the One-Time Deal ends Commission on later transactions from the moment it is recorded. A switch does not change Commission already earned.
+(e) No entitlement. You have no right to be placed on, or kept on, the Lifetime Deal, or to any particular Lifetime Limit.
 7. The multi-level structure
 7.1 Three levels
-The Affiliate Programme has three levels. Where a Qualifying Transaction is attributed under §5 to a Partner, Commission is payable not only to that Partner (Level 1) but also to the Partner directly above that Partner in the Network chain (Level 2) and to the Partner two places above that Partner in the Network chain (Level 3), at the rates set out in Schedule 1. The override rises up the chain: the Level 3 rate is higher than the Level 2 rate, because the more senior Partner supports the Partners below, closes the deals and carries the relationship.
+The Affiliate Programme has three levels. Where a Qualifying Transaction is attributed under §5 to a Partner, Commission is payable not only to that Partner (Level 1) but also to the Partner directly above that Partner in the Network chain (Level 2) and to the Partner two places above that Partner in the Network chain (Level 3), at the rates set out in Schedule 1. The Level 2 rate is the higher of the two, because the Partner directly above you is your affiliate manager, who recruits, supports and carries the relationship with the Partners they bring in.
 7.2 What the Level 2 and Level 3 rates are calculated on
 The Level 2 and Level 3 rates are calculated on the same Commissionable Amount as the Level 1 Commission. They are not a share of, a deduction from, or a percentage of the Level 1 Partner’s Commission.
 A Level 2 or Level 3 Commission neither reduces nor increases the Commission payable to the Partner below it. Each level’s Commission is a separate obligation of the Provider, calculated independently on the same Commissionable Amount. A worked example is set out in Schedule 1.
 7.3 How the Network is formed
 A Partner becomes your Level 2 Sub-Partner where that Partner applied your Partner Referral Code, or was otherwise recorded by the Provider as introduced by you, at the time that Partner’s own application to the Affiliate Programme was approved. That Partner’s own Level 2 Sub-Partners are your Level 3 Sub-Partners. The chain stops there. The Network relationship is fixed at the point the Sub-Partner’s application is approved and does not afterwards change. It is not re-attributed, does not lapse through inactivity, and is not transferable. It ends only when the Sub-Partner’s participation or your own participation ends (§7.6).
 7.4 Limits
-(a) The structure extends to three levels only. No Commission is payable at Level 4 or beyond.
+(a) The structure extends to three levels. No Commission is payable at Level 4 or beyond, except where the Provider has agreed further levels with a specific Partner in writing and recorded them in the Partner Area. A Partner cannot create further levels by recruiting.
 (b) A Partner may not appear more than once in the same chain, and circular, reciprocal or looped Network structures generate no Commission at any level.
 (c) You may not recruit as a Sub-Partner any person who is you, who is a person connected with you within the meaning of §12.2, or who is acting on your behalf or under your control, and no Commission is payable at any level in respect of such a person.
 (d) Recruiting Sub-Partners is not itself a commercial activity for which any payment, entry fee, subscription, pack, position or other consideration may be charged to, or required of, any person. The Affiliate Programme is a referral programme for the Provider's own service. You must not present, operate or market it as an income opportunity, a business opportunity, a network-marketing scheme or an investment (§10.7, §10.8).
@@ -471,6 +486,8 @@ A transaction identified by the Provider as a self-referral, as a transaction by
 (c) disable the Referral Codes concerned;
 (d) terminate your participation without notice under §17.3 and forfeit unpaid Commission under §17.5; and
 (e) act under GTC §10.3 and §20.2 in respect of any Account you hold as a Customer.
+12.5 Existing Customers presented as New Customers
+A transaction is not a Qualifying Transaction where the Customer was in fact an existing Customer of the Provider, including a person who opened a new Account, or used another person's Account or details, so as to appear as a New Customer. You must not encourage or assist this. The Provider may reverse the Commission under §9, end the Client Link under §5.8(c) and apply §12.4.
 13. Licence to use the brand assets
 13.1 Grant
 The Provider grants you, for so long as you are a Partner in good standing, a non-exclusive, non-transferable, non-sublicensable, revocable, royalty-free licence to:
@@ -601,6 +618,8 @@ In respect of a Partner approved before the effective date:
 (d) from the effective date, attribution, rates, the multi-level structure, payment, clawback and all other provisions of these Partner Terms apply to all new transactions, and no entitlement arising only under the previous terms continues.
 20.6 Bespoke written agreements
 Where the Provider has entered into a separate written agreement with you that states a specific rate, term or arrangement, that agreement continues on its own terms to the extent it expressly deals with the point, and these Partner Terms apply in all other respects. Where such an agreement has no stated duration, it may be varied or ended on notice under this §20.
+20.7 Transition to Deals and Client Links
+From 22 November 2026: every Partner is on the One-Time Deal unless the Provider has recorded a Lifetime Deal in the Partner Area; no Customer who purchased before 20 November 2026 is linked to any Partner unless the Provider assigns them under §5.8(c); and Commission earned on transactions completed before that date is not affected.
 21. Governing law and disputes
 21.1 Governing law
 These Partner Terms, and any non-contractual obligations arising out of or in connection with them, are governed by the laws of the Emirate of Ras Al Khaimah and the applicable federal laws of the United Arab Emirates, without regard to conflict-of-laws principles.
@@ -647,7 +666,7 @@ Platform IP Owner and Funded Trader Entity — HYROTRADER TECHNOLOGIES LTD · Co
 Schedule 1 — Commission Schedule
 This Schedule forms part of these Partner Terms and may be amended under §20.
 S1.0 What commission is calculated on
-The Refundable Challenge Deposit, the Challenge Fee and the Instant Fee are the only commissionable items (§6.9). The Commissionable Amount is the Deposit, Challenge Fee or Instant Fee actually received and retained, net of discounts, transaction taxes, payment-processing and network fees, and any refunded portion (§6.4). No other product is commissionable unless the business development team has agreed in writing with the individual Partner that it is.
+The Refundable Challenge Deposit, the Challenge Fee and the Instant Fee are commissionable, and, for Partners on a Lifetime Deal only, credit packs purchased by Linked Clients (§6.9). The Commissionable Amount is the amount actually received and retained, net of discounts, transaction taxes, payment-processing and network fees, and any refunded portion (§6.4). No other product is commissionable unless the business development team has agreed in writing with the individual Partner that it is.
 A Deposit returned to a Customer because the Customer succeeded is not a refund and does not reverse Commission (§6.6). The Partner keeps it.
 S1.1 The commission table
 All three rates are calculated on the same Commissionable Amount for the Qualifying Transaction, determined under §6.4.
@@ -655,18 +674,18 @@ Level
 Whose Referral Code or Tracked Link earned the Qualifying Transaction
 Rate on the Commissionable Amount
 Level 1
-Your own Referral Code, or your own Tracked Link under §5.4
-Your Base Rate: 10% – 15% as set under §6.2(a), increased up to 40% only by written agreement under §6.2(b), or the code-specific rate under §4.3(e)
+A New Customer's first purchase with your Referral Code; on a Lifetime Deal, also your Linked Clients' later purchases within the Lifetime Limit
+Your Base Rate: 10% – 15% as set under §6.2(a), increased up to 40% only by written agreement under §6.2(b), or the code-specific rate under §4.3(e) where your code was applied
 Level 2
 The Partner directly below you in the chain — your Level 2 Sub-Partner — earned the transaction
-2%
+6%
 Level 3
 The Partner two places below you in the chain — your Level 3 Sub-Partner — earned the transaction
-4.5%
+2%
 S1.2 The Level 2 and Level 3 rates are not a share of anyone’s commission
-The Level 2 and Level 3 percentages are applied to the Commissionable Amount itself, exactly as the Level 1 percentage is. They are not a percentage of the Level 1 Partner’s Commission, are not deducted from it, and do not reduce what any other Partner receives. Each is a separate obligation of the Provider (§7.2). The Level 3 rate is the higher of the two because the Partner two places up the chain is the senior Partner, who supports the Partners below, closes the deals and carries the relationship.
+The Level 2 and Level 3 percentages are applied to the Commissionable Amount itself, exactly as the Level 1 percentage is. They are not a percentage of the Level 1 Partner’s Commission, are not deducted from it, and do not reduce what any other Partner receives. Each is a separate obligation of the Provider (§7.2). The Level 2 rate is the higher of the two because the Partner directly above is the affiliate manager.
 S1.3 Worked example
-Assume a Network chain A → B → C, in which C is B’s Level 2 Sub-Partner and A’s Level 3 Sub-Partner. A Customer places a USD 969 Refundable Challenge Deposit for a Two-Step Challenge and C earns the transaction — either C’s Referral Code was applied at checkout, or the Customer last clicked C’s Tracked Link within the Cookie Window (§5.4). The Commissionable Amount is USD 969. C’s Base Rate is 15%.
+Assume a Network chain A → B → C, in which C is B’s Level 2 Sub-Partner and A’s Level 3 Sub-Partner. A Customer places a USD 969 Refundable Challenge Deposit for a Two-Step Challenge and C earns the transaction because the Customer was a New Customer who applied C’s Referral Code at checkout. The Commissionable Amount is USD 969. C’s Base Rate is 15%. If C is on a Lifetime Deal and the same Customer buys again within C’s Lifetime Limit, that purchase is calculated the same way.
 Partner
 Level in respect of this transaction
 Rate
@@ -677,15 +696,15 @@ Level 1 — C earned the transaction
 USD 145.35
 B
 Level 2 — C is B’s Level 2 Sub-Partner
-2% of USD 969
-USD 19.38
+6% of USD 969
+USD 58.14
 A
 Level 3 — C is A’s Level 3 Sub-Partner
-4.5% of USD 969
-USD 43.61
+2% of USD 969
+USD 19.38
 Total paid by the Provider
-USD 208.34
-C receives USD 145.35 whether or not B and A exist. The existence of a Network above C does not reduce C’s Commission. A earns more than B on the same transaction because A is further up the chain: the override rises with seniority.
+USD 222.87
+C receives USD 145.35 whether or not B and A exist. The existence of a Network above C does not reduce C’s Commission. B earns more than A on the same transaction because B is C’s affiliate manager.
 S1.4 Payment summary
 Frequency
 On request — you decide when to request payment (§8.2)
@@ -705,10 +724,12 @@ Tax
 The Partner’s own responsibility; no gross-up (§8.8)
 Dormancy fee
 None (§8.10)
+Deal
+One-Time by default; Lifetime only where recorded in the Partner Area, with its Lifetime Limit (§6.11)
 Statement dispute window
 30 calendar days (§8.6)
 S1.5 What is never commissionable
-Free Trials; sponsored, complementary, promotional and gifted accounts, and Partner Challenge Accounts granted under §6.10; any item other than the Refundable Challenge Deposit, the Challenge Fee and the Instant Fee, unless agreed in writing per Partner under §6.9; rewards and payouts made to Customers; refunded, reversed and charged-back amounts; transactions on an expired, exhausted, out-of-scope or disabled code; self-referrals and transactions by connected persons; transactions with no valid Referral Code applied at checkout and no Tracked Link click recorded within the Cookie Window (§5.4, §6.7, §6.9).
+Free Trials; sponsored, complementary, promotional and gifted accounts, and Partner Challenge Accounts granted under §6.10; any item other than the Refundable Challenge Deposit, the Challenge Fee, the Instant Fee and, for a Partner on a Lifetime Deal, a credit pack bought by a Linked Client, unless agreed in writing per Partner under §6.9; rewards and payouts made to Customers; refunded, reversed and charged-back amounts; transactions on an expired, exhausted, out-of-scope or disabled code; self-referrals and transactions by connected persons; transactions by a Customer who was neither a New Customer nor the Partner’s Linked Client; later transactions of a Linked Client under a One-Time Deal or beyond the Lifetime Limit; upgrades; and a Tracked Link click on its own (§5.1, §5.4, §6.7, §6.9, §6.11).
 Not in this list, deliberately: a Deposit returned because the Customer met the objectives of the Challenge. That is success, not a refund, and the Commission stands (§6.6).
 Schedule 2 — Brand and Marketing Rules
 This Schedule forms part of these Partner Terms, expands §10 and §11, and may be amended under §20. Where this Schedule and §11 address the same point, §11 prevails.

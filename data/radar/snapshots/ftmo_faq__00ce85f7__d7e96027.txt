@@ -1,6 +1,6 @@
 Làm thế nào để tôi rút phần thưởng của mình? | FTMO.com
-Mới
-FTMO Instant Account
+Black Friday: giảm đến 30%
+Nhận ngay
 {
 document.body.classList.toggle('no-scroll', value);
 });

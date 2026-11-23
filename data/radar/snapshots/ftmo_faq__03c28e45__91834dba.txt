@@ -1,6 +1,6 @@
 Quali sono le principali regole promozionali che devo seguire? | FTMO.com
-Nuovo
-FTMO Instant Account
+Black Friday: fino al 30% di sconto
+Approfittane Ora
 {
 document.body.classList.toggle('no-scroll', value);
 });

@@ -1,6 +1,6 @@
 Văn phòng của công ty ở đâu? Làm thế nào có thể liên hệ được với công ty? | FTMO.com
-Mới
-FTMO Instant Account
+Black Friday: giảm đến 30%
+Nhận ngay
 {
 document.body.classList.toggle('no-scroll', value);
 });

@@ -10,48 +10,48 @@ $3700 Todays Payout
 724 Behavioral Score
 +0.46% Tilt Factor
 SimFi is a simulated trading environment that measures your discipline and pays you when it improves.
-EURUSD 1.09661 +0.00%
-GBPUSD 1.3082 +0.00%
-USDJPY 158.575 +0.00%
-USDCHF 0.84027 +0.00%
-AUDUSD 0.66172 +0.00%
-USDCAD 1.43502 +0.00%
-NZDUSD 0.54682 +0.00%
-BTCUSD 60,727.63 +1.30%
-ETHUSD 1,706.52 +1.04%
-BNBUSD 552.68 +0.90%
-XRPUSD 0.9325 +0.84%
-SOLUSD 70.42 +0.87%
-ADAUSD 0.14521 +0.90%
-DOGEUSD 0.05549 +1.22%
-WTI 84.823 +0.00%
-BRENT 93.418 +0.00%
-SP 6,953.80 +0.00%
-NSDQ 25,225.14 +0.00%
-DOW 48,359.84 +0.00%
-DAX 24,581.63 +0.00%
-NIKKEI 54,843.00 +0.00%
-EURUSD 1.09661 +0.00%
-GBPUSD 1.3082 +0.00%
-USDJPY 158.575 +0.00%
-USDCHF 0.84027 +0.00%
-AUDUSD 0.66172 +0.00%
-USDCAD 1.43502 +0.00%
-NZDUSD 0.54682 +0.00%
-BTCUSD 60,727.63 +1.30%
-ETHUSD 1,706.52 +1.04%
-BNBUSD 552.68 +0.90%
-XRPUSD 0.9325 +0.84%
-SOLUSD 70.42 +0.87%
-ADAUSD 0.14521 +0.90%
-DOGEUSD 0.05549 +1.22%
-WTI 84.823 +0.00%
-BRENT 93.418 +0.00%
-SP 6,953.80 +0.00%
-NSDQ 25,225.14 +0.00%
-DOW 48,359.84 +0.00%
-DAX 24,581.63 +0.00%
-NIKKEI 54,843.00 +0.00%
+EURUSD 1.09713 −0.09%
+GBPUSD 1.31103 −0.07%
+USDJPY 159.114 −0.04%
+USDCHF 0.839 +0.01%
+AUDUSD 0.66451 −0.13%
+USDCAD 1.43272 +0.04%
+NZDUSD 0.54698 −0.12%
+BTCUSD 61,403.88 −0.29%
+ETHUSD 1,721.68 −0.30%
+BNBUSD 556.92 −0.39%
+XRPUSD 0.9391 +0.05%
+SOLUSD 72.26 −0.44%
+ADAUSD 0.14651 +0.00%
+DOGEUSD 0.05551 −0.14%
+WTI 84.101 −0.12%
+BRENT 92.203 −0.23%
+SP 7,106.70 +0.01%
+NSDQ 25,898.74 −0.10%
+DOW 49,104.99 +0.08%
+DAX 24,989.18 +0.09%
+NIKKEI 56,334.00 −0.04%
+EURUSD 1.09713 −0.09%
+GBPUSD 1.31103 −0.07%
+USDJPY 159.114 −0.04%
+USDCHF 0.839 +0.01%
+AUDUSD 0.66451 −0.13%
+USDCAD 1.43272 +0.04%
+NZDUSD 0.54698 −0.12%
+BTCUSD 61,403.88 −0.29%
+ETHUSD 1,721.68 −0.30%
+BNBUSD 556.92 −0.39%
+XRPUSD 0.9391 +0.05%
+SOLUSD 72.26 −0.44%
+ADAUSD 0.14651 +0.00%
+DOGEUSD 0.05551 −0.14%
+WTI 84.101 −0.12%
+BRENT 92.203 −0.23%
+SP 7,106.70 +0.01%
+NSDQ 25,898.74 −0.10%
+DOW 49,104.99 +0.08%
+DAX 24,989.18 +0.09%
+NIKKEI 56,334.00 −0.04%
 Over $81M paid out to traders who trained impulse into discipline
 500,000+
 traders worldwide
@@ -280,7 +280,7 @@ A device, an internet connection, and a trading strategy. Select your account si
 How can I start earning?
 Pass the SimFi™ Challenge by hitting the profit target while staying within the guardrails. Once you reach the SimFi™ Performance Account stage and meet the payout conditions, you can request payouts based on your validated performance data.
 Where is your proof?
-$81M+ in payouts processed since 2021, verified independently on PropFirmMatch, and PayoutJunction. Our Discord community of 42,359+ traders is open - ask anyone who has been through the process.
+$81M+ in payouts processed since 2021, verified independently on PropFirmMatch, and PayoutJunction. Our Discord community of 42,370+ traders is open - ask anyone who has been through the process.
 Get in contact with us directly from this site with our live customer support or at our help center
 Quick links
 Challenges

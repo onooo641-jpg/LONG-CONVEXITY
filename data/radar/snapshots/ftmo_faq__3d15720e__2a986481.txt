@@ -1,6 +1,6 @@
 Em que diferem as várias contas disponibilizadas pela FTMO? | FTMO.com
-Novo
-FTMO Instant Account
+Black Friday: até 30% de Desconto
+Obtenha Agora
 {
 document.body.classList.toggle('no-scroll', value);
 });

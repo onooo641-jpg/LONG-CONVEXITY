@@ -1,6 +1,6 @@
 O que é o tipo de conta Swing e como funciona? | FTMO.com
-Novo
-FTMO Instant Account
+Black Friday: até 30% de Desconto
+Obtenha Agora
 {
 document.body.classList.toggle('no-scroll', value);
 });

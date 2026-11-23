@@ -1,6 +1,6 @@
 Những loại phí nào được tính và chúng có phải là phí định kỳ không? | FTMO.com
-Mới
-FTMO Instant Account
+Black Friday: giảm đến 30%
+Nhận ngay
 {
 document.body.classList.toggle('no-scroll', value);
 });

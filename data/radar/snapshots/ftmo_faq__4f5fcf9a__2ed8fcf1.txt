@@ -1,4 +1,6 @@
 What is the legal relationship between an FTMO Trader and FTMO after signing the FTMO Futures Sim-Funded Account Terms & Conditions? | FTMO.com
+Black Friday: Up to 30% Off
+Claim Now
 {
 document.body.classList.toggle('no-scroll', value);
 });

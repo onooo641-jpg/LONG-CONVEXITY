@@ -1,6 +1,6 @@
 What is 'Trading according to a real market'? | FTMO.com
-New
-FTMO Instant Account
+Black Friday: Up to 30% Off
+Claim Now
 {
 document.body.classList.toggle('no-scroll', value);
 });

@@ -1,6 +1,6 @@
 Pourquoi y'a-t-il des frais ? | FTMO.com
-Nouveau
-FTMO Instant Account
+Black Friday : jusqu'à 30 % de réduction
+Profitez-en maintenant
 {
 document.body.classList.toggle('no-scroll', value);
 });

@@ -1,4 +1,4 @@
-# Prop-firm automation / country sentences (2026-11-22)
+# Prop-firm automation / country sentences (2026-11-23)
 
 ## Alpha Capital Group — https://alphacapitalgroup.uk/
 - AUTO: Expert Advisors supported
@@ -1345,7 +1345,6 @@
 - AUTO: The industry standard for technical analysis and powerful automated trading.
 - AUTO: The industry standard for technical analysis and powerful automated trading.
 - AUTO: The industry standard for technical analysis and powerful automated trading.
-- AUTO: The industry standard for technical analysis and powerful automated trading.
 - AUTO: Copy Trading: What's Allowed and What's Not
 - AUTO: Copy Trading: What's Allowed and What's Not
 - AUTO: Can You Trade With an EA?
@@ -1391,7 +1390,6 @@
 - COUNTRY: Services related to the MetaTrader 5 platform and the associated information on this website are not intended for residents or citizens of the United States, the United Arab Emirates or other restricted countries.
 
 ## BrightFunded — https://brightfunded.com/
-- AUTO: The industry standard for technical analysis and powerful automated trading.
 - AUTO: The industry standard for technical analysis and powerful automated trading.
 - AUTO: The industry standard for technical analysis and powerful automated trading.
 - AUTO: The industry standard for technical analysis and powerful automated trading.
@@ -1840,14 +1838,6 @@
 
 ## DayTraders — https://daytraders.com/help/articles/17704102-logging-in-and-credentials
 - AUTO: On your Dashboard , assigned automatically
-
-## DayTraders — https://daytraders.com/help/articles/17704103-who-can-sign-up
-- COUNTRY: Restricted countries
-- COUNTRY: If you are a citizen of an OFAC (Office of Foreign Assets Control) or restricted country, we can't provide services to you, wherever you are located.
-- COUNTRY: All transactions attempted while in a restricted country will be blocked.
-- COUNTRY: Traveling to a restricted country
-- COUNTRY: While you're physically in a restricted country, you can't buy new accounts, add accounts or activate new services .
-- COUNTRY: Restricted countries
 
 ## DayTraders — https://daytraders.com/help/articles/17704104-billing
 - AUTO: Failed, Inactive and canceled accounts stop rebilling automatically, but check your billing section to confirm.
@@ -2559,6 +2549,13 @@
 - AUTO: The Customer must not interfere with, disrupt, probe, scan, test, or compromise the security, stability, or integrity of the Website, Platform, or any Provider or Third Party systems, and must not introduce malware, bots, harmful code, or perform any action that could impair or degrade operations.
 - AUTO: The Provider may apply measures, including through automated or manual systems, it deems appropriate to protect programme integrity, including warnings, restrictions, suspensions, profit adjustments, disqualification, termination, denial of progression, and permanent bans, and/or the withholding, suspension, adjustment, reversal, denial, or set-off of any Performance Reward.
 
+## FundedNext Futures — https://fundednext.com/cookie-policy
+- AUTO: Most browsers automatically accept cookies by default.
+- AUTO: Enabling these cookies is automatic and cannot be turned off, as they are necessary for the operation of the Website.
+- AUTO: In the case of automated processing based on your consent or performance of the contract, you have the right to receive the data in a structured, commonly used and machine-readable format and to have them transmitted by us to another personal data controller.
+- AUTO: Right not to be the subject of automated decision-making
+- AUTO: Except where processing is necessary for entering into, or performance of, a contract, where this is permitted by applicable law, or based on your express consent, you have the right not to be the subject of any decision which is based solely on automated processing, including profiling, which produces legal effects concerning you or similarly affects you to a significant extent.
+
 ## FundedNext Futures — https://fundednext.com/futures-challenge-terms
 - AUTO: Upon reaching or exceeding the applicable Maximum Loss Limit (MLL) or Daily Loss Limit (DLL), FundedNext reserves the right to automatically restrict trading activity on the affected account for a certain period of time or indefinitely.
 - AUTO: These restrictions are implemented as part of FundedNext's automated risk management and platform integrity controls and may occur immediately upon detection of a loss limit breach, without prior notice.
@@ -2948,7 +2945,8 @@
 - COUNTRY: The Tealstreet and Tiger terminals are not available to traders in the United States or in countries where Bybit is restricted, and you must not use a VPN or any other means to get around that.
 
 ## HyroTrader — https://hyrotrader.com/affiliate-terms-and-conditions/
-- AUTO: Where a valid Referral Code is applied at checkout, that code determines attribution and displaces any cookie, Tracked Link, click, session, landing-page parameter or other tracking signal, whenever recorded and whichever Partner it relates to.
+- AUTO: For a New Customer, the valid Referral Code applied at checkout decides attribution and displaces any cookie, Tracked Link, click, session or other tracking signal.
+- AUTO: For a Linked Client, the Client Link decides attribution and no code, click or signal changes it.
 - AUTO: 6.3 No automatic tiering
 - AUTO: There is no automatic advancement, tier ladder or volume-triggered rate increase.
 - AUTO: (f) contains malware, deceptive code, or automated redirection; or
@@ -5104,7 +5102,6 @@
 - AUTO: use any robot, spider, scraper or other automatic device, manual process or application or data mining, scraping or extraction tool to access, harvest, monitor, copy or use the Site without the express written permission of Tradeify;
 
 ## Traders Launch — https://traderslaunch.com/
-- AUTO: Email Address Notify Me You also agree to receive Traders Launch marketing emails, including drop alerts.
 - AUTO: Buffer account opens automatically.
 - AUTO: When You Pass Buffer account opens automatically
 - AUTO: If you haven't passed by day 60 but you're above 50% of your profit target, you get a free 30-day extension automatically, at no extra cost.

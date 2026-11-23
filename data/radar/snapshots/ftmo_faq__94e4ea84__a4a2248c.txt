@@ -1,6 +1,6 @@
 Mối quan hệ pháp lý giữa Nhà giao dịch FTMO và FTMO sau khi ký kết các Điều khoản & Điều kiện của Tài khoản FTMO là gì? | FTMO.com
-Mới
-FTMO Instant Account
+Black Friday: giảm đến 30%
+Nhận ngay
 {
 document.body.classList.toggle('no-scroll', value);
 });

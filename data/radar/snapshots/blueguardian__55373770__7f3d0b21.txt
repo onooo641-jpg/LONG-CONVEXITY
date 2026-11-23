@@ -14,9 +14,9 @@ Help Centre
 CFD plans
 2 Step Standard rules
 CFD 2 Step Standard: 8% and 4% targets, 4% daily loss, 8% static drawdown, 3 trading days, Guardian Shield, payouts every 14 days.
-Applies to: CFD Updated 20 November 2026
+Applies to: CFD Updated 23 November 2026
 Short answer
-2 Step Standard is a two-phase CFD evaluation. Reach 8% profit in Phase 1 and 4% in Phase 2, each over at least 3 trading days, staying within a 4% daily loss and an 8% static drawdown. Once funded, you can request a payout every 14 days (or every 7 days with the add-on), with an 85% profit split (90% with the add-on).
+2 Step Standard is a two-phase CFD evaluation. Reach 8% profit in Phase 1 and 4% in Phase 2, each over at least 3 trading days, staying within a 4% daily loss and an 8% static drawdown. Once funded, you need 3 profitable trading days in every payout cycle, and you can request a payout every 14 days (or every 7 days with the add-on), with an 85% profit split (90% with the add-on).
 Key numbers
 Profit target
 Phase 1: 8% / Phase 2: 4%
@@ -25,7 +25,7 @@ Max daily loss
 Max drawdown
 8% static (from starting balance)
 Minimum trading days
-3 days with at least 0.5% profit each
+3 days with at least 0.5% profit each, in the evaluation and in every payout cycle on funded
 Guardian Shield (funded)
 Closes all trades at 2% floating loss
 Profit split
@@ -54,8 +54,9 @@ If your open trades reach a combined 2% floating loss , Guardian Shield will usu
 1st time: your profit split drops to 50% permanently.
 2nd time: the account is permanently breached.
 Payouts
-When: once you've met the minimum trading days and 14 days have passed since your first trade, then every 14 days after your previous request. With the 7-day payout add-on , it's every 7 days.
-Conditions: account above starting balance, no rule violations and all positions closed.
+Minimum trading days: you need 3 trading days with 0.5% profit or more in every payout cycle before you can request a payout. The days don't need to be consecutive.
+When: your first payout is available once 14 days have passed since your first trade, then every 14 days after your previous request. With the 7-day payout add-on , it's every 7 days.
+Conditions: account above starting balance, minimum trading days met, no rule violations and all positions closed.
 Profit split: 85%, or 90% with the add-on.
 Trading rules
 News: allowed during both phases. On funded accounts, don't open or close trades from 5 minutes before to 5 minutes after high-impact news on affected instruments. See CFD news trading rules .

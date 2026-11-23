@@ -17,9 +17,9 @@ However, if your PnL ever hits the -$550 limit (even if you don't close your pos
 You can view the P&L column in R | Trader Pro's Trader Dashboard to see how close you are to your daily loss limit. For example if your daily loss limit is $1,100, then your daily P&L cannot go below $-1,100.
 Related Articles
 What Is “Mark to Market”?
+What is Journalytix?
 What is the "Maintain Consistency" Rule?
 How Does "End of Day Drawdown" Work?
-What Are the Evaluation Rules?
 What Happens When I Complete My Evaluation?
 Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
 The Trader Career Path

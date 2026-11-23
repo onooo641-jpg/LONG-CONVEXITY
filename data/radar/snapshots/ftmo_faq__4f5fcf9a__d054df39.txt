@@ -1,4 +1,6 @@
 Which instruments can I trade, and what strategies am I allowed to use? | FTMO.com
+Black Friday: Up to 30% Off
+Claim Now
 {
 document.body.classList.toggle('no-scroll', value);
 });

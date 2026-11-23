@@ -7,7 +7,7 @@ General Rules
 Maximum Contracts Explained
 Maximum Contracts Explained
 Maximum allowed contracts per account size and program, how contract scaling works on funded accounts, and the separate limits for Micro Bitcoin Futures.
-Updated over 3 weeks ago
+Updated over a month ago
 Table of contents
 At Top One Futures, here is what you need to know about the maximum allowed contracts for each account size and program, and how contract scaling works on funded accounts.
 Maximum allowed contracts: Elite, Elite ACCESS, Elite Daily, Instant Sim Funded and Ignite

@@ -14,15 +14,18 @@ Help Centre
 Futures plans
 Elite, Reserve & Direct Path to Live
 How Elite, Reserve and Direct traders move to Live: who qualifies, how your Live Allocation and starting balance are set, Live rules, Live Bonus and Live Buyout.
-Applies to: Futures Updated 19 November 2026
+Applies to: Futures Updated 23 November 2026
 Short answer
 The Live Account is the highest level of Blue Guardian Futures: real capital, traded with real CME execution. It can't be purchased. Our Risk Team offers it to funded traders who show exceptional performance.
 When you move to Live, we deposit real funds into your Live Account. If you have a pending payout, you can choose to take it as normal or move to Live with that amount as your starting balance. If you don't have a pending payout, you start with the Live Allocation for your account sizes. Live Accounts have a static drawdown, daily uncapped payouts and a 90% profit split.
+Once you're offered Live, you can't keep trading your funded accounts. They're closed whichever option you choose.
 How funded accounts merge into a Live Account Replay
 When you're promoted, your funded accounts combine into one Live Account with a single drawdown. Live Bonus milestones are paid as you reach each multiple.
 At a glance
 How to qualify
 Exceptional performance on your funded accounts, at the Risk Team's discretion
+Funded accounts
+Closed once you're offered Live; you can't keep trading them
 Starting balance
 Your pending payout amount, if you have one. Otherwise, your Live Allocation
 Live Allocation
@@ -44,6 +47,8 @@ None
 How do I qualify?
 There's no set number of payouts, profit target or timeframe. Our Risk Team reviews funded accounts on an ongoing basis and may offer Live to any trader at any time. We look at consistency, risk management, discipline, profitability, account behaviour and any previous Live history. All decisions are made at the Risk Team's discretion.
 If you're identified for Live, our team will reach out to you directly.
+Can I keep trading my funded account instead of going Live?
+No. Once our Risk Team offers you Live, your funded accounts are closed. You can choose a cash option instead of trading Live (your pending payout, or the Live Buyout if you have no pending payout), but you can't continue trading on the funded accounts.
 Live Allocation per funded account
 Your Live Allocation is based on the size of your eligible funded accounts. A funded account is eligible if it has received at least one payout.
 Funded account
@@ -63,9 +68,9 @@ Your starting balance
 How much we deposit into your Live Account depends on whether you have a pending payout when our team reaches out to you.
 If you have a pending payout
 You choose one of two options:
-Take the payout. It's paid to you as normal. A 30-day cooldown then applies before you can buy a new evaluation.
+Take the payout. It's paid to you as normal and your funded account is closed. A 30-day cooldown then applies before you can buy a new evaluation.
 Move to Live. Your pending payout isn't paid out. Instead, the full amount is deposited into your Live Account as your starting balance, in place of the standard Live Allocation.
-Your account is closed once you've made your choice.
+Your funded account is closed once you've made your choice, so you can't keep trading it with either option.
 Example: our team reaches out to you about Live while your $50K funded account has a $1,200 pending payout. If you choose Live, your Live Account starts with a $1,200 balance.
 If you don't have a pending payout
 We deposit your combined Live Allocation as your starting balance.
@@ -85,7 +90,7 @@ $9,500–$15,000
 10 / 100
 Your position limit doesn't change after payouts. Some highly volatile contracts may have lower limits. Traders who show strong, consistent risk management may later qualify for larger sizes.
 Live Buyout (cash instead of Live)
-If you don't have a pending payout, you can take a one-time cash payment instead of trading Live: 50% of your combined Live Allocation .
+If you don't have a pending payout, you can take a one-time cash payment instead of trading Live: 50% of your combined Live Allocation . Your funded accounts are still closed.
 Example: a combined Live Allocation of $10,000 gives a $5,000 Live Buyout.
 Only available at the moment you're offered Live, and only once per trader.
 A 30-day cooldown applies before you can buy a new evaluation.
@@ -130,6 +135,7 @@ There are no CFD related articles here. Switch to Futures or All to see them.
 On this page Short answer
 At a glance
 How do I qualify?
+Can I keep trading my funded account instead of going Live?
 Live Allocation per funded account
 Your starting balance
 If you have a pending payout

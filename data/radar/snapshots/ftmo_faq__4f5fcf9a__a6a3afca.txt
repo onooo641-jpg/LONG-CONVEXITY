@@ -1,4 +1,6 @@
 I have successfully passed the Evaluation, what to do now? | FTMO.com
+Black Friday: Up to 30% Off
+Claim Now
 {
 document.body.classList.toggle('no-scroll', value);
 });

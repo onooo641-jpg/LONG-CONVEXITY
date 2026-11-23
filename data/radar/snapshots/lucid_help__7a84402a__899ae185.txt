@@ -11,7 +11,7 @@ Prohibited: Hedging
 Lucid Trading's hedging rule: Which hedging practices are prohibited across accounts and why, with examples so you can stay compliant while trading.
 A
 Written by AJ
-Updated this week
+Updated over a week ago
 Table of contents
 What Is It?
 Hedging refers to the use of multiple accounts to take opposing positions on the same trade. This tactic artificially reduces risk by ensuring one account profits regardless of the market’s direction. It is a form of system manipulation, not genuine trading.

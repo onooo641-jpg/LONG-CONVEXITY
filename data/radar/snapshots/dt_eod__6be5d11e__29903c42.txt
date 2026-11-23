@@ -21,7 +21,7 @@ Affiliate Program
 Agreements and Disclaimers
 All Collections ArcTrader ArcTrader Platform Overview ArcTrader Platform Overview
 ArcTrader is DayTraders’ in-house trading platform built to give traders access to charting, order placement, account management, and market monitoring tools in one workspace.
-Updated over a week ago
+Updated over 2 weeks ago
 Copy for LLM
 Use your Rithmic credentials to sign into ArcTrader
 With ArcTrader, traders can view charts, monitor symbols, manage orders, track positions, use Depth of Market, access watchlists, and manage account activity directly from the platform.

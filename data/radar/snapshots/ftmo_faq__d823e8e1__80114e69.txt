@@ -1,6 +1,6 @@
 Wie lange dauert es, um ein FTMO Trader zu werden? | FTMO.com
-Neu
-FTMO Instant Account
+Black Friday: Bis zu 30 % Rabatt
+Jetzt beanspruchen
 {
 document.body.classList.toggle('no-scroll', value);
 });

@@ -1,6 +1,6 @@
 Posso modificar a minha plataforma ou o tipo de conta? | FTMO.com
-Novo
-FTMO Instant Account
+Black Friday: até 30% de Desconto
+Obtenha Agora
 {
 document.body.classList.toggle('no-scroll', value);
 });

@@ -109,7 +109,8 @@ What does the maximum allowed risk on open trades -3% mean? The maximum allowed 
 Which trading platforms can I use at Fintokei? At Fintokei, you can trade on TradingView, MetaTrader 5, and cTrader. Choose the platform that suits you best - all platforms support full-featured trading.
 Does Fintokei offer a loyalty program? Yes, Fintokei offers a loyalty program. In fact, we were one of the first prop trading firms in the world to introduce one. It's called the Fintokei Loyalty Program , and it rewards traders at every step of their trading journey, even for effort, not just results.
 How can I choose my payout method? You can choose your payout method based on what's fastest or most convenient for you – bank transfer, e-wallet, or cryptocurrencies (available in selected countries). You can find all the details about payout options, minimum amount, and fees here .
-Didn't find the answer to your question? Ask our AI assistant BonsAI – just click the chat icon in the bottom right corner. You can also browse all questions and answers on our support platform:
+Didn't find the answer to your question?
+Ask our AI assistant BonsAI . You can also browse all questions and answers on our support platform:
 FAQ
 Products
 StartTrader

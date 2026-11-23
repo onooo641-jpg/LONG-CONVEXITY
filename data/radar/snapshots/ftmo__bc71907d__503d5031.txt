@@ -1,6 +1,6 @@
 Do traders I referred before the FTMO Futures launch earn me Futures commissions? | FTMO.com
-New
-FTMO Instant Account
+Black Friday: Up to 30% Off
+Claim Now
 {
 document.body.classList.toggle('no-scroll', value);
 });

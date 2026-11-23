@@ -14,18 +14,21 @@ Help Centre
 Futures plans
 Zero Path to Live
 How Zero traders move to Live: the $8,000 day choice, how your Live Allocation and starting balance are set, how you earn your Live Bonus and Live rules.
-Applies to: Futures Updated 19 November 2026
+Applies to: Futures Updated 23 November 2026
 Short answer
 Zero has its own path to Live, separate from our other Futures plans. If a funded Zero account makes $8,000 profit in a single day, you choose: take a $3,600 payout for each account that reached $8,000, or move to Live with that amount as your starting balance. Our Risk Team may also offer Live to Zero traders with consistent payout performance.
 When you move to Live, we deposit real funds into your Live Account. If you have a pending payout, that amount becomes your starting balance. If you don't, you start with the Live Allocation for your account sizes.
 You can then earn a Live Bonus equal to your starting balance, released in two halves as you trade consistently and withdraw profit.
 Zero Live Accounts pay daily at a 90% split, with an end-of-day trailing drawdown and no daily loss limit or consistency rule.
+Once you reach an $8,000 day or you're offered Live, you can't keep trading your funded account. It's closed whichever option you choose.
 How funded Zero accounts move to Live Replay
 Moving to Live merges all your funded Zero accounts into one Live Account. You receive a Live Bonus for each funded account as soon as your Live Account is set up, and each account adds to your Live drawdown, up to the cap shown above. How the Live drawdown moves Replay
 On Live, your loss limit moves up with your highest end-of-day closing balance. It locks once your Live profit equals your starting Live drawdown, or as soon as you request a payout before that point.
 How you're considered for Live
 The $8,000 day: if a funded Zero account makes $8,000 net profit in a single trading day, we email you to choose between taking the payout and moving to Live.
 Risk Team offer: our Risk Team may also identify Zero traders with consistent payout performance for Live. If you're identified, our team will reach out to you directly. These offers are made at the Risk Team's discretion.
+Can I keep trading my funded account instead?
+No. After an $8,000 day or a Live offer from our Risk Team, your funded account is closed. You can take the payout instead of moving to Live, but you can't continue trading on the funded account.
 Your two options after an $8,000 day
 Take the payout
 Move to Live
@@ -33,9 +36,9 @@ You receive
 $3,600 for each account that reached $8,000 (50% of $8,000 at your 90% split)
 Your $3,600 per account deposited as your Live starting balance, plus the chance to earn a Live Bonus equal to it
 Afterwards
-A 30-day cooldown before you can buy a new evaluation
-You trade your Live Account
-Your account is closed once you've made your choice. Either way, profit above $8,000 on that day isn't kept.
+Your funded account is closed. A 30-day cooldown applies before you can buy a new evaluation
+Your funded account is closed and you trade your Live Account
+Your account is closed once you've made your choice, so you can't keep trading it with either option. Either way, profit above $8,000 on that day isn't kept.
 What you get when you move to Live
 Live Allocation
 Each funded Zero account that moves to Live adds to your Live Allocation.
@@ -54,7 +57,7 @@ Your starting balance
 How much we deposit into your Live Account depends on whether you have a pending payout when you move to Live.
 If you have a pending payout
 This includes the payout from an $8,000 day, or any payout pending when our team reaches out to you about Live. You choose one of two options:
-Take the payout. It's paid to you as normal. A 30-day cooldown then applies before you can buy a new evaluation.
+Take the payout. It's paid to you as normal and your funded account is closed. A 30-day cooldown then applies before you can buy a new evaluation.
 Move to Live. Your pending payout isn't paid out. Instead, the full amount is deposited into your Live Account as your starting balance, in place of the standard Live Allocation.
 Your account is closed once you've made your choice.
 Example: one funded $50K account reaches $8,000 in a day and you choose Live. Your Live Account starts with a $3,600 balance.
@@ -150,6 +153,7 @@ Applies to: Futures Reserve account rules Applies to: Futures Elite account rule
 There are no CFD related articles here. Switch to Futures or All to see them.
 On this page Short answer
 How you're considered for Live
+Can I keep trading my funded account instead?
 Your two options after an $8,000 day
 What you get when you move to Live
 Live Allocation

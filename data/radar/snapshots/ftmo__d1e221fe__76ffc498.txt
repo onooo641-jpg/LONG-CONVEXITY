@@ -1,6 +1,6 @@
 What are the benefits of Prime Status? | FTMO.com
-New
-FTMO Instant Account
+Black Friday: Up to 30% Off
+Claim Now
 {
 document.body.classList.toggle('no-scroll', value);
 });

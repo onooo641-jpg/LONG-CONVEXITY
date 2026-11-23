@@ -1,6 +1,6 @@
 Welche rechtliche Beziehung besteht zwischen einem FTMO Trader und FTMO nach der Unterzeichnung der FTMO Account Terms & Conditions? | FTMO.com
-Neu
-FTMO Instant Account
+Black Friday: Bis zu 30 % Rabatt
+Jetzt beanspruchen
 {
 document.body.classList.toggle('no-scroll', value);
 });

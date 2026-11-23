@@ -1,6 +1,6 @@
 Tôi đã thanh toán cho đơn hàng, khi nào tôi sẽ nhận được tài khoản? | FTMO.com
-Mới
-FTMO Instant Account
+Black Friday: giảm đến 30%
+Nhận ngay
 {
 document.body.classList.toggle('no-scroll', value);
 });

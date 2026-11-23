@@ -1,6 +1,6 @@
 The Modern Prop Trading Firm since 2015 | FTMO
-New
-FTMO Instant Account
+Black Friday: Up to 30% Off
+Claim Now
 {
 document.body.classList.toggle('no-scroll', value);
 });
@@ -284,13 +284,10 @@ Your Demo Trading
 Improve your trading skills on our simulated platform and earn rewards
 Trade with FTMO
 Free Trial
-FTMO Instant Account
-Your direct access to an FTMO Account with 10% Max Loss,
-90% Reward Ratio, and up to 1:100 leverage.
-Trade for rewards from day one.
-Get Started
-Learn More
-New
+Black Friday
+Up to 30% Off
+FTMO Challenges start at €55. Limited-time offer.
+Claim Up to 30% Off
 The founders of FTMO, Marek Vašíček and Otakar Šuffner, received the prestigious award EY Entrepreneur Of The Year in the category Technological Entrepreneur 2022.
 2022
 "

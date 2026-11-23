@@ -8,7 +8,7 @@ Guardrails
 EOD Dynamic Drawdown
 EOD Dynamic Drawdown
 What is EOD Dynamic Drawdown?
-Updated this week
+Updated over a week ago
 Table of contents
 Available for: E8 Zero , E8 Signature
 EOD Dynamic Drawdown refers to the calculation based on your highest achieved balance at the end of the trading day.

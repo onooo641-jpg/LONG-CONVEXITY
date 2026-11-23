@@ -1,6 +1,6 @@
 In which currency are my commissions calculated and paid? | FTMO.com
-New
-FTMO Instant Account
+Black Friday: Up to 30% Off
+Claim Now
 {
 document.body.classList.toggle('no-scroll', value);
 });

@@ -1,6 +1,6 @@
 Posso manter posições abertas durante a noite ou no fim de semana? | FTMO.com
-Novo
-FTMO Instant Account
+Black Friday: até 30% de Desconto
+Obtenha Agora
 {
 document.body.classList.toggle('no-scroll', value);
 });

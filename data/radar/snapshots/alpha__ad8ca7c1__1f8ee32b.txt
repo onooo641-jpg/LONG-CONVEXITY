@@ -1,5 +1,5 @@
 What Is the Consistency Rule in a Futures Prop Firm?
-Black Friday Early Access · EARLYBOGO40 25K Zero BOGO + 40% off · EARLYBOGO50 25K Direct BOGO + 50% off
+ALPHA40 40% off Zero · ALPHA50 50% off Advanced, Standard & Direct
 Home
 About
 How It Works
@@ -52,8 +52,10 @@ Help Center
 Start Evaluation
 Sign In
 What is the Consistency Rule? (2026)
-By the Alpha Futures Team · Updated October 23, 2026
-A consistency rule limits how much of your net profit can come from your single best trading day. At Alpha Futures it depends on plan and stage: 50% on Standard evaluations, 40% on Advanced evaluations and on Zero and Standard Qualified Accounts, 20% on Direct, and none on Zero evaluations or Advanced Qualified Accounts.
+By the Alpha Futures Team · Updated November 22, 2026
+A consistency rule limits how much of your total profit can come from your single best trading day.
+It is written as a share of net profit. With a 50% rule and $3,000 of net profit, your best day can be no more than $1,500. If one day is too large, you keep trading until profit on other days brings that share back under the limit.
+At Alpha Futures it is 50% on Standard evaluations, 40% on Advanced evaluations and on Zero and Standard Qualified Accounts, 20% on Direct, and none on Zero evaluations or Advanced Qualified Accounts.
 Key fact At Alpha Futures
 What it measures Your best day's profit as a share of your net profit
 Evaluations Standard 50%, Advanced 40%, Zero none. You pass only when you reach the profit target and meet the rule.
@@ -77,7 +79,7 @@ $150K $9,000 $4,500 or less
 How the ratio works
 Suppose your best day is $2,500 and your net profit is $4,000. That day accounts for 62.5% of net profit. It would exceed a 50% Standard evaluation limit and a 40% Advanced evaluation limit. More eligible net profit spread across other trading days would be needed before the applicable ratio is satisfied. The profit target, loss limits, and other plan rules still apply.
 What happens if you break the consistency rule?
-On a Qualified Account, breaking the consistency rule does not breach the account. You just can't request a performance fee until your best day is back under the limit, which happens as you add net profit on other days. The ratio counts profit since your last request and resets after each request. In an evaluation, you don't pass until the rule is met. To check your numbers, use the consistency rule calculator .
+On a Qualified Account, breaking the consistency rule does not breach the account. You just can't request a performance fee while your best day is 40% or more of your net profit (20% or more on Direct). It drops back under the limit as you add net profit on other days. The ratio counts profit since your last request and resets after each request. In an evaluation, you don't pass until the rule is met. To check your numbers, use the consistency rule calculator .
 Evaluation and Qualified rules are different
 Zero has no evaluation consistency rule, but its Qualified Account uses 40% between performance fee requests. Advanced uses 40% during evaluation and none after qualification. Standard uses 50% during evaluation and 40% after qualification. Direct skips evaluation but uses 20% for performance fee eligibility.
 Consistency versus other rules
@@ -86,6 +88,8 @@ Consistency: the allowed concentration of profit in your best day.
 Maximum Loss Limit: the account loss threshold.
 Daily Loss Guard: a separate daily control on plans where it applies.
 Frequently asked questions
+What is the consistency rule in futures prop firms?
+It limits how much of your net profit can come from your single best trading day, written as a percentage such as 40% or 50%. At Alpha Futures it ranges from none to 50% depending on the plan and stage, and going over it on a Qualified Account does not breach the account.
 Does Zero have an evaluation consistency rule?
 No. Zero Qualified Accounts do have a 40% rule between performance fee requests.
 What is the Advanced evaluation consistency rule?
@@ -101,11 +105,11 @@ Exclusive Welcome Offer
 Subscribe to Alpha Futures emails for an exclusive welcome offer, trader insights, product updates and discounts. Enter your email to stay one step ahead. You can unsubscribe at any time.
 Thank you for signing up to our newsletter
 Oops! Something went wrong while submitting the form.
-175,000+
+315,329
 Qualified Analysts
 1.1Million+
 Traders
-$70M
+$110M
 Performance Fees Paid
 Quick Links
 Home About How it works

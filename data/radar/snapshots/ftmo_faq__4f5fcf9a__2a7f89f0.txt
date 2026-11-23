@@ -1,4 +1,6 @@
 How do I withdraw my payout from a Sim-Funded Account? | FTMO.com
+Black Friday: Up to 30% Off
+Claim Now
 {
 document.body.classList.toggle('no-scroll', value);
 });

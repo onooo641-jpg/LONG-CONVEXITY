@@ -1,6 +1,6 @@
 ¿Cuál es la relación legal entre un FTMO Trader y FTMO tras firmar los Términos y Condiciones de la FTMO Account? | FTMO.com
-Nueva
-FTMO Instant Account
+Black Friday: hasta un 30 % de descuento
+Reclamar ahora
 {
 document.body.classList.toggle('no-scroll', value);
 });

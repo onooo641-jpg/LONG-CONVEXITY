@@ -1,6 +1,6 @@
 A FTMO é uma empresa séria? | FTMO.com
-Novo
-FTMO Instant Account
+Black Friday: até 30% de Desconto
+Obtenha Agora
 {
 document.body.classList.toggle('no-scroll', value);
 });

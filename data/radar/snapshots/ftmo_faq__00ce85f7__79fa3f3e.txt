@@ -1,6 +1,6 @@
 Các loại tài khoản khác nhau do FTMO cung cấp có gì khác nhau? | FTMO.com
-Mới
-FTMO Instant Account
+Black Friday: giảm đến 30%
+Nhận ngay
 {
 document.body.classList.toggle('no-scroll', value);
 });

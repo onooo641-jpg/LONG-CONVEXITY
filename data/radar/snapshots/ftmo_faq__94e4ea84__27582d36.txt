@@ -1,6 +1,6 @@
 Jaký je právní vztah mezi FTMO Traderem a FTMO po podpisu Všeobecných obchodních podmínek FTMO Accountu? | FTMO.com
-Nový
-FTMO Instant Account
+Black Friday: slevy až 30 %
+Uplatnit nyní
 {
 document.body.classList.toggle('no-scroll', value);
 });

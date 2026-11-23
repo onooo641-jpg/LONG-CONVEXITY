@@ -1,4 +1,6 @@
 Who owns my Live Funded Account, and why do I need to complete new identity verification? | FTMO.com
+Black Friday: Up to 30% Off
+Claim Now
 {
 document.body.classList.toggle('no-scroll', value);
 });

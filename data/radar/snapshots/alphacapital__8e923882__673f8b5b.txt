@@ -62,7 +62,7 @@ Balance month 12 (stylised $100K) $220,000 $274,400
 When to choose Alpha Capital
 Your edge shows up monthly and you want sizing base updates without four-month waits.
 You prefer smaller, more frequent scale events on published rules.
-You trade an eligible plan: Alpha Pro, Alpha Swing or Alpha Three.
+You trade an eligible plan: Alpha Pro or Alpha Swing.
 You want a published path from evaluation to Alpha Prime — live capital for top-performing Qualified Analysts.
 When to choose FundedNext
 You can sustain performance across four-month windows and want larger 40% jumps.
@@ -82,7 +82,7 @@ How Alpha Capital Group's Scaling Plan Works
 Alpha Capital's scaling plan works as follows:
 Once your Qualified Analyst account achieves 10% virtual capital growth, you can request a scale-up at the performance fee withdrawal stage. The scale increases your account by 10% of the initial account balance, not 10% of the current balance. You request scaling in the notes field of your performance fee request and email support. Processing time is 24 to 48 business hours. After scaling, the new account requires a minimum of 5 trading days before the next performance fee applies.
 There is no published minimum time window between scale events. You do not need to wait four months. You do not need a specific number of prior performance fees before becoming eligible, only the published 10% gain threshold at the withdrawal stage.
-Eligible plans are Alpha Pro, Alpha Swing and Alpha Three. The maximum virtual capital growth across all scaled accounts is $2 million cumulative.
+Eligible plans are Alpha Pro and Alpha Swing. The maximum virtual capital growth across all scaled accounts is $2 million cumulative.
 For example, on a $100,000 initial balance, the first scale adds $10,000 to the starting balance ($100,000 → $110,000). The second scale adds another $10,000 based on the same initial balance ($110,000 → $120,000). Each successful scale adds a flat 10% of the original initial balance, not a compound percentage of the current balance.
 For a trader who hits the 10% threshold every month and requests scaling each time, that means up to 12 scale events per year on published rules.
 How FundedNext's Scaling Plan Works

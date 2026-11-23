@@ -1,0 +1,157 @@
+Topstep Learning | Topstep Help Center Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Skip to main content
+Discord Topstep TopstepTV
+Discord Topstep TopstepTV
+Search for articles...
+All Collections
+Getting Started
+Trading Education
+Topstep Learning
+Topstep Learning
+The learning never stops. Here's where Topstep makes it easier.
+Updated this week
+Table of contents
+Trading 101
+Whether you're just getting started or sharpening your edge, having the right resources makes all the difference.
+​ Topstep Resources
+Topstep Blog — Market prep, success stories, and education
+Coach’s Playbook — Finding a Trading Educator. The Coach's Playbook!
+Limit Up Podcast — How much to Risk! Limit Up Podcast!
+Futures Trading 101 — 6 lessons. Core futures concepts.
+Suggested Reading
+Market Wizards — Jack Schwager
+Trading in the Zone — Mark Douglas
+Mind Over Markets — Dalton, Jones & Dalton
+Market in Profile — James Dalton
+Trade Your Way to Financial Freedom — Van Tharp
+The Trading Book — Anne-Marie Baiynd
+Secrets for Profiting in Bull and Bear Markets — Stan Weinstein
+Follow Emotions and Find the Money — Andrew Menaker
+Gaining Competitive Advantage in the OPM Trading World — Andrew Menaker
+Trading with the Cumulative Delta — Peter Davies
+Understanding Liquidity and Market Pullbacks — Peter Davies
+How to Read a Topstep Purchase Card
+Each purchase card shows one Trading Combine® account size with its price, targets, limits, and general parameters. Meet the Targets and don't break the One Rule to earn an Express Funded Account® (XFA).
+Label
+What it means
+Example
+Buying Power
+The account size. Bigger size, bigger targets and limits.
+$50K Buying Power starts with a $50,000 balance.
+Price per month
+Your monthly subscription. Rebills every 30 days until you pass or cancel. The crossed-out price is before the discount.
+$50K: $95 minus the $10 discount = $85/month.
+Profit Target
+The net profit you need to make in order to pass. Remember, you can't hit your Profit Target in 1 day. Be sure to review the Consistency Target below.
+$50K: earn $3,000 so your balance is $53,000.
+Consistency Target
+Your best day must stay at or below 55% of your Profit Target. Go over and your Profit Target increases. Stay under: $50K: $1,650, $100K: $3,300, $150K: $4,950.
+$50K: a $2,200 best day raises your $3,000 Profit Target to $4,000.
+Max Loss Limit (One Rule)
+The lowest your balance can go. It trails up with your end-of-day balance, never down. Touch it, even on unrealized P&L, and you liquidate until you Reset.
+$50K: $50,000 balance, $48,000 limit. Make $500 and it moves to $48,500.
+Max Contract Limit
+Also known as your Maximum Position Size. The shows most contracts you can have open at once, per account. Micros and minis count at 10:1. Fewer is always allowed.
+$50K: 5 minis or 50 micros.
+Mini
+A Mini is a smaller futures contract that trades electronically. It’s a fraction of the size of a standard futures contract, so it takes less capital and margin to trade.
+Examples of a mini you'll trade in TopstepX include E-mini S&P 500 (ES) and E-mini NASDAQ 100 (NQ).
+​
+Learn more about what products you can trade here !
+Micro
+A Micro is a mini-sized Mini. It tracks the same market at about 1/10 the size, so you get a lower cost to enter and more control over your position size. In TopstepX, 1 Mini = 10 Micros.
+Examples of a micro you'll trade in TopstepX include Micro E-mini S&P (MES) and Micro E-mini NASDAQ 100 (MNQ).
+​
+Learn more about what products you can trade here !
+Daily Loss Limit
+The most you can lose in 1 trading day. Hit it and positions flatten, orders cancel, and no new trades until 5 PM CT. Not a rule violation. Fixed at purchase and carries into your XFA.
+$50K, $1,000 limit: Net P&L hits -$1,000. You're flat and back at 5 PM CT.
+DOUBLE Payout Caps
+Doubles your max per-request Payout in the XFA. Automatic when you purchase with the Responsible Trading Advantage , which adds a mandatory Daily Loss Limit. New caps (Standard / Consistency): $50K $4,000 / $6,000, $100K $6,000 / $8,000, $150K $10,000 / $12,000.
+$50K Standard: your $2,000 cap becomes $4,000.
+Discount
+Known as the Responsible Trading Advantage. Monthly price drop for adding a Daily Loss Limit to a No Activation Fee Trading Combine. Recurs monthly.
+$100K: $149 minus $20 = $129/month.
+Reset Fee
+The cost of a Reset . It sends your Trading Combine back to day 1: balance, Maximum Loss Limit, Consistency Target, and trading days. Limit of 2 per account each day. Pushes your Rebill date out 30 days.
+Your $50K Trading Combine breaches the Maximum Loss Limit. An $85 Reset puts it back at $50,000.
+Monthly Reset Credit on Rebill
+Every Rebill adds 1 Reset Credit. Use it instead of paying the Reset Fee. Credits match an account size and type, expire 1 year after they're added, and stay on your profile if you cancel.
+$100K: your Rebill adds a $100K credit. Use it instead of paying $129.
+Express Funded Activation Fee
+The fee to activate your XFA after you pass. Free for No Activation Fee Trading Combines. The Standard Path charges $149 per XFA earned.
+$150K: pass, then activate your XFA for $0.
+Topstep Trader Lingo
+Check out this small but mighty glossary for some of the most common phrases in Futures Trading! 📚
+A-H
+​ $5K Club — Topstep Traders who have withdrawn $5,000 or more from a funded account.
+​ b-Shaped Profile — Market profile pattern dominated by selling; signals long liquidation.
+​ Brokers — Intermediaries who execute orders for commissions.
+Busting a Trade — Voiding a trade due to errors or exchange rule violations.
+Cannonball — Adding to a losing position as it goes against you. Don’t do this.
+Contract Size — Number of units in a futures contract (e.g., 1,000 barrels of crude oil).
+Covering Shorts — Buying back contracts to close short positions.
+Delta (Futures) — Order flow measurement: contracts traded on the offer (positive) minus contracts traded on the bid (negative).
+Delta Divergence — Price moving one direction while delta grows in the opposite direction.
+DOM (Depth of Market) — A price ladder showing bids and offers at specific prices. Used for execution.
+Excess High — A high characterized by a series of single-print profiles.
+Excess Low — A low characterized by a series of single-print profiles.
+I-Q
+​ Fat-Finger — Accidental order entry error (e.g., buying 10 contracts when you meant to buy 1).
+FOMC — Federal Open Market Committee. Sets US monetary policy. Learn more .
+Flipping the Ticket — Buying when you meant to sell, or vice versa.
+Hedge — Offsetting risk with an opposite position in a different market or contract month.
+Iceberg — A large resting order that doesn’t disclose its actual size.
+Indicator — A math-based tool used to analyze market conditions.
+Kerfuffle — Coming to the markets unprepared. Also: a commotion caused by conflicting views.
+Liquidating Longs — Selling to realize profits or cut losses on a long position.
+Locals — Floor traders who traded for their own account, not as brokers.
+Long — Buying a contract with the expectation that price will rise.
+Lots / Cars / Contracts — Units of trade. All mean the same thing.
+Moron Trade — Adding more to a losing position. Putting “more-on.”
+Naked Point of Control (NPOC) — A previous volume point of control that hasn’t been re-tested during regular trading hours.
+Open Interest — Total contracts carried over and not closed from previous sessions.
+Opening Range — Per Hoag: the first minute of regular trading hours.
+P-Shaped Profile — Market profile pattern dominated by buying; signals short covering.
+Point of Control (POC) — The most visited price during the previous day’s regular trading hours.
+R-Z
+​ Regular Trading Hours (RTH) — Old floor pit trading hours. For ES: 8:30 AM – 3:15 PM CT.
+Revenge Trade — An impulsive trade taken after a loss to try to “make it back.”
+Shoulder Tap — A Risk Manager’s request to address a performance or behavior issue.
+Short — Selling a contract with the expectation of buying it back at a lower price.
+Short in the Hole — Holding a short position at a bad location (e.g., near the day’s low).
+Size — The quantity of contracts traded.
+Slippage — Execution at a different price than expected. Common in fast markets. Only occurs with market orders.
+Spoofing — Placing fake orders to manipulate other traders. Illegal and prohibited.
+Spread — The difference between buy and sell price, or between different products/contract months.
+“Spoos” — Slang for E-mini S&P 500 futures (ES). Tracks the S&P 500 Index.
+The TILT — The real-time aggregate positions, sentiment, and bias of all Topstep Traders.
+Tick — The minimum price increment a contract can move.
+Volume — Total number of contracts traded in a session.
+Volume Point of Control (VPOC) — The price where the most volume was traded during the previous session.
+Related Articles
+Trading Combine® Parameters
+What is the Scaling Plan?
+Live Funded Account Parameters
+Risk Adjustments: High Risk/High Volatility
+Topstep Labs
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Your Privacy Choices

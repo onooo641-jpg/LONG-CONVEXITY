@@ -1,4 +1,6 @@
 Can I use FTMO Points to subscribe to the FTMO Futures Evaluation? | FTMO.com
+Black Friday: Up to 30% Off
+Claim Now
 {
 document.body.classList.toggle('no-scroll', value);
 });

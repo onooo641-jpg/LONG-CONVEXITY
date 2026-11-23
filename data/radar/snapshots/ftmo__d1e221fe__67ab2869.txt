@@ -1,6 +1,6 @@
 Mohu obchodovat makroekonomické zprávy? | FTMO.com
-Nový
-FTMO Instant Account
+Black Friday: slevy až 30 %
+Uplatnit nyní
 {
 document.body.classList.toggle('no-scroll', value);
 });

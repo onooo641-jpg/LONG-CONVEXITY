@@ -1,6 +1,6 @@
 How does the FTMO Affiliate Programme work? | FTMO.com
-New
-FTMO Instant Account
+Black Friday: Up to 30% Off
+Claim Now
 {
 document.body.classList.toggle('no-scroll', value);
 });

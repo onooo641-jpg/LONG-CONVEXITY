@@ -1,6 +1,6 @@
 What is FTMO Identity, and when do I complete it? | FTMO.com
-New
-FTMO Instant Account
+Black Friday: Up to 30% Off
+Claim Now
 {
 document.body.classList.toggle('no-scroll', value);
 });

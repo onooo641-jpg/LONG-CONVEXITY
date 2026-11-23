@@ -1,6 +1,6 @@
 Tại sao nên tham gia FTMO? | FTMO.com
-Mới
-FTMO Instant Account
+Black Friday: giảm đến 30%
+Nhận ngay
 {
 document.body.classList.toggle('no-scroll', value);
 });
