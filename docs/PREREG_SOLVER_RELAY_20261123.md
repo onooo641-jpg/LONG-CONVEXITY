@@ -50,3 +50,15 @@ by relayers outside the top 5, minus 1 bp assumed LP fee) × min(average volume 
 `uv run python -m scripts.solver_relay_20261123 | tee docs/jx_runs/solver_relay_20261123.txt` (re-run once; must be identical).
 **Honest limits.** Recipient address ≠ solver team in every case (a team can use several addresses, or a shared one); public RPCs can miss
 ranges (coverage printed and reported); relayer identities are addresses only; neither test measures whether Jx could build a competitive bot.
+
+### Addendum 1 (2026-11-23, before any #361 figure was computed; mechanical data fixes only)
+- **#361 data source.** The public-RPC scan (Actions run 45207594059) hit its 9,000 s budget after covering only 114,600 of 7,569,890
+  blocks (125 transfers in 3 blocks). The same data — COW `Transfer` events **from** the Solver Payouts Safe since 2024-01-01 — is now
+  read from Blockscout's free Ethereum explorer API (v2 token-transfers listing, Etherscan-style `tokentx` as fallback); job `cow361b`.
+  Rules, periods and bars unchanged.
+- **Coverage guard.** The analysis now prints "no verdict" for #361 unless the listing finished (or, for an RPC scan, < 1% of blocks were
+  missed). Without it, the failed scan would have produced a false KILL (no recipient paid in ≥ 4 weeks).
+- **Price parsing.** DefiLlama chart points are `{timestamp, price}` dicts; the analysis now reads them (fixed before any data arrived).
+- #362 data (Base 1,339,200 blocks and Arbitrum 9,632,410 blocks, 0 missed; `FilledRelay` topic confirmed by the probe) are complete and
+  unchanged. The docs.across.to pages did not show the SpokePool addresses in their raw HTML (script-rendered pages); the addresses are
+  confirmed on-chain instead (contract code present; 190,420 and 91,428 fill events in October 2026).

@@ -30,6 +30,11 @@ def cow():
         print(f"  page {url}: {pg.get('error') or flags}")
     print(f"  safe has code: {meta.get('safe_has_code')}; blocks {meta['b0']}..{meta['b1']}; missed blocks {meta['missed_blocks']}; "
           f"transfers {meta['n_transfers']} in {meta['n_blocks']} blocks")
+    print(f"  source {meta.get('source', 'rpc_scan')}; complete {meta.get('complete')}")
+    span = (meta.get("b1") or 0) - (meta.get("b0") or 0)
+    if meta.get("complete") is False or meta.get("missed_blocks") is None or meta["missed_blocks"] > 0.01 * max(span, 1):
+        print("  coverage incomplete (> 1% of blocks missed or listing unfinished): no verdict")
+        return
     df = pd.read_parquet(PUB / "solverrelay_cow.parquet")
     if df.empty:
         print("  no transfers: address or data problem; no verdict")

@@ -1978,7 +1978,78 @@ def job_jlp363():
     pd.DataFrame(rows).to_parquet(OUT / "jlp363_prices.parquet", index=False)
     (OUT / "jlp363_meta.json").write_text(json.dumps(meta))
 
-JOBS = {"jlp363": job_jlp363, "cow361": job_cow361, "across362": job_across362, "sweep4d": job_sweep4d, "sweep4c": job_sweep4c, "sweep4b": job_sweep4b, "sweep4": job_sweep4, "addprice": job_addprice, "fred9": job_fred9, "batch10b": job_batch10b, "repair8": job_repair8, "sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+def job_cow361b():
+    """#361 addendum: the same COW transfers out of the Solver Payouts Safe, from Blockscout's free API (RPC scan covered 1.5%)."""
+    import urllib.parse
+    OUT.mkdir(parents=True, exist_ok=True)
+    mp = OUT / "solverrelay_cow_meta.json"
+    meta = json.loads(mp.read_text()) if mp.exists() else {"pages": {}}
+    t0 = int(pd.Timestamp("2024-01-01", tz="UTC").timestamp())
+    rows, complete, source = [], False, None
+    # 1) Blockscout v2 (newest first, cursor pagination)
+    base = (f"https://eth.blockscout.com/api/v2/addresses/{COW_SAFE}/token-transfers?type=ERC-20&filter=from&token={COW_TOKEN}")
+    url, pages = base, 0
+    while url and pages < 2000:
+        d = get(url, tries=5)
+        pages += 1
+        if d is None or "items" not in d:
+            print(f"  blockscout v2 stopped at page {pages}: {str(d)[:200]}", flush=True)
+            break
+        stop = False
+        for it in d["items"]:
+            ts = int(pd.Timestamp(it.get("timestamp")).timestamp()) if it.get("timestamp") else None
+            if ts is not None and ts < t0:
+                stop = True
+                continue
+            tot = it.get("total") or {}
+            dec = int(tot.get("decimals") or 18)
+            rows.append({"block": int(it.get("block_number") or it.get("block") or 0), "ts": ts,
+                         "to": str((it.get("to") or {}).get("hash", "")).lower(), "frm": str((it.get("from") or {}).get("hash", "")).lower(),
+                         "cow": int(tot.get("value") or 0) / 10 ** dec, "tx": it.get("transaction_hash") or it.get("tx_hash")})
+        nxt = d.get("next_page_params")
+        if stop or not nxt:
+            complete, source = True, "blockscout_v2"
+            break
+        url = base + "&" + urllib.parse.urlencode(nxt)
+        time.sleep(0.25)
+    print(f"  blockscout v2: pages {pages}, rows {len(rows)}, complete {complete}", flush=True)
+    # 2) Blockscout Etherscan-style API (oldest first) if v2 did not finish
+    if not complete:
+        rows, page = [], 1
+        while page < 200:
+            d = get(f"https://eth.blockscout.com/api?module=account&action=tokentx&address={COW_SAFE}&contractaddress={COW_TOKEN}"
+                    f"&sort=asc&page={page}&offset=1000", tries=5)
+            res = (d or {}).get("result")
+            if not isinstance(res, list):
+                print(f"  blockscout v1 stopped at page {page}: {str(d)[:200]}", flush=True)
+                break
+            for it in res:
+                ts = int(it["timeStamp"])
+                if ts < t0:
+                    continue
+                rows.append({"block": int(it["blockNumber"]), "ts": ts, "to": it["to"].lower(), "frm": it["from"].lower(),
+                             "cow": int(it["value"]) / 10 ** int(it.get("tokenDecimal") or 18), "tx": it["hash"]})
+            if len(res) < 1000:
+                complete, source = True, "blockscout_v1"
+                break
+            page += 1
+            time.sleep(0.25)
+        print(f"  blockscout v1: pages {page}, rows {len(rows)}, complete {complete}", flush=True)
+    df = pd.DataFrame(rows)
+    if len(df):
+        df = df[df["frm"] == COW_SAFE.lower()].drop_duplicates(["tx", "to", "cow"]).sort_values("block")
+    meta.update(source=source, complete=complete, n_transfers=int(len(df)), n_blocks=int(df["block"].nunique()) if len(df) else 0,
+                missed_blocks=0 if complete else None, b0=int(df["block"].min()) if len(df) else None,
+                b1=int(df["block"].max()) if len(df) else None)
+    if not meta.get("cow_price"):
+        meta["cow_price"] = _llama_chart("coingecko:cow-protocol", "2023-12-25")
+    print(f"  COW transfers out of the payouts Safe since 2024-01-01: {len(df)}; recipients {df['to'].nunique() if len(df) else 0}; "
+          f"source {source}; complete {complete}", flush=True)
+    df.drop(columns=["frm"], errors="ignore").to_parquet(OUT / "solverrelay_cow.parquet", index=False)
+    mp.write_text(json.dumps(meta))
+
+JOBS = {"cow361b": job_cow361b, "jlp363": job_jlp363, "cow361": job_cow361, "across362": job_across362, "sweep4d": job_sweep4d, "sweep4c": job_sweep4c, "sweep4b": job_sweep4b, "sweep4": job_sweep4, "addprice": job_addprice, "fred9": job_fred9, "batch10b": job_batch10b, "repair8": job_repair8, "sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys
