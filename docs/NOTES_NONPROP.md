@@ -170,3 +170,16 @@ S&P's own announcement dates show the registered #303 entry (5 trading days befo
 additions. Buying after the announcement earns +0.17% per event (t 0.15). **No non-prop idea has passed a full test.** Sweep 4: #334 Coinbase
 listing short FAIL, #335 buyback rotation FAIL, #337 deletions KILL, #339 tokenised gold open but not credible as measured, 7 not testable
 (memecoin history limited to about 2 days by pump.fun's API; no index-token NAV, spin-off list, Nasdaq-100 change table or ETF list; 2 unlocks).
+
+## 2026-11-23 — futures factors (#350–#354, Databento) and the research report
+- **#351 futures cross-sectional momentum passes the registered full test** (20.72%/yr walk-forward 2016–26, halves 26.94% / 14.97%, costs ×1.5
+  20.20%, worst drawdown −22.3% vs SPY −23.9%). First non-prop pass in the repo. #350 trend/carry, #352 value, #353 skew, #354 multi-factor FAIL.
+  A mechanical bug (5-year window sliced to empty) was fixed before the final run; #351 was unaffected.
+- **#351b: not usable at Jx's size.** With whole micro contracts on the 13 markets a small account can trade, $15K and $50K fail (second half
+  3.08% / 7.89%); even fractional sizing on those 13 markets fails. The edge needs the full universe (full-size rates and FX), so ~$250K+, for
+  ~15–20%/yr. That is a standard managed-futures premium, not a prop-like return.
+- **Research report** `reports/Non prop high return alternatives.md` (notes in `research_notes/Non prop high return alternatives/`): across
+  crypto, TradFi, protocol-paid roles, Malaysian promotions and DePIN, nothing shows repeatable > 100%/yr on small capital. Closest: liquidation
+  bonuses (workstream B shadow test), hedged points farming (one-off episodes, #360 not measurable), CoW solving and Across relaying (measurable
+  from on-chain data: registered next as #361 / #362).
+

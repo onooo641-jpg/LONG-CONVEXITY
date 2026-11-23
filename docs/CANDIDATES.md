@@ -194,6 +194,15 @@ risk, 5m signals and 1m fills.
 | 314 | HIP-3 index-perp funding carry | same | FAIL Stage 1 (−2.21%) | same |
 | 320–321 | small-capacity high-reward pools; small Merkl campaigns (50% bar) | `docs/PREREG_SMALLCAP_20261122.md` (+ addenda 1–3) | fetch queued | — |
 | 322–326 | sweep 3: thin-venue market making, hedged extreme funding, counterparty/option vaults, small stable lending, odd-lot tenders | `docs/PREREG_SWEEP3_20261122.md` | #323 FAIL Stage 1 (−1.36%; extreme funding nearly gone since 2024); #326 parked (EDGAR contact e-mail); rest queued | sweep3_20261122.txt |
+| 350 | cross-asset futures trend + carry (26 CME futures, Databento daily) | `docs/PREREG_FUTURES_TREND_CARRY_20261123.md` | FAIL (11.72%; halves 4.00% / 19.75%; DD −34.6% vs SPY −23.9%) | futures_trend_20261123.txt |
+| 351 | futures cross-sectional momentum | same (addendum 2) | **PASS** registered walk-forward (20.72%; halves 26.94% / 14.97%; costs ×1.5 20.20%; DD −22.3%) — fractional notional, full universe | futures_trend_20261123.txt |
+| 351b | #351 with whole micro contracts at $15K / $50K / $100K / $250K | same (addendum 3) | FAIL at $15K and $50K (second half 3.08% / 7.89%); $100K marginal pass = rounding luck (13-market reference fails); needs ~$250K+ with full-size contracts → ~15–20%/yr, not prop-like | futures_xsmom_small_20261123.txt |
+| 352 | futures value (5-year reversal) | same | FAIL (0.46%; after the empty-window bug fix) | futures_trend_20261123.txt |
+| 353 | futures skewness | same | FAIL (8.75%; first half 6.12%) | same |
+| 354 | futures multi-factor | same | FAIL (1.09%) | same |
+| 360 | hedged airdrop / points farming, measured after the fact | `docs/PREREG_AIRDROP_20261123.md` | Stage 0: not measurable from free data (allocation bases unpublished; see report) | `reports/Non prop high return alternatives.md` |
+| 361 | CoW Protocol solver rewards (DAO-paid; can a newcomer earn ≥ $15K/yr?) | `docs/PREREG_SOLVER_RELAY_20261123.md` | registered; fetch on Actions | — |
+| 362 | Across relayer fees on Base / Arbitrum (user-paid fast fills) | same | registered; fetch on Actions | — |
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.

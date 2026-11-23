@@ -1,0 +1,32 @@
+#350 data: 52 continuous series, 2010-06-07..2026-10-30
+(context) best Stage-1 config 2025-11..2026-10: 15.41%/yr
+===== #350 cross-asset futures trend / carry: 36 configs; OOS months with data 130
+  walk-forward OOS 2016-01..2026-10: CAGR 11.72%; halves 4.00% / 19.75%; costs x1.5 12.73%; worst drawdown -34.6% (SPY same months -23.9%); switches 18
+  most-picked: L12/vt15/all/tsmom (47x); L3/vt15/exags/tsmom (35x); L12/vt15/exags/tsmom (29x)
+  (context) best fixed configs over OOS in hindsight: L12/vt15/all/tsmom 13.79%; L12/vt15/exags/tsmom 12.44%; L12/vt10/all/tsmom 11.14%
+  VERDICT: FAIL
+
+===== #351 futures cross-sectional momentum: 12 configs; OOS months with data 130
+  walk-forward OOS 2016-01..2026-10: CAGR 20.72%; halves 26.94% / 14.97%; costs x1.5 20.20%; worst drawdown -22.3% (SPY same months -23.9%); switches 12
+  most-picked: xsmom/L12/vt15/exags (81x); xsmom/L3/vt15/exags (18x); xsmom/L12/vt15/all (14x)
+  (context) best fixed configs over OOS in hindsight: xsmom/L12/vt15/exags 20.40%; xsmom/L12/vt15/all 16.85%; xsmom/L12/vt10/exags 14.87%
+  VERDICT: PASS
+
+===== #352 futures value (5-year reversal): 12 configs; OOS months with data 130
+  walk-forward OOS 2016-01..2026-10: CAGR 0.46%; halves 8.56% / -6.82%; costs x1.5 -0.39%; worst drawdown -46.0% (SPY same months -23.9%); switches 26
+  most-picked: value/L48/vt15/all (42x); value/L48/vt10/exags (25x); value/L60/vt10/all (16x)
+  (context) best fixed configs over OOS in hindsight: value/L48/vt10/all 3.70%; value/L48/vt15/all 3.28%; value/L60/vt10/all 2.00%
+  VERDICT: FAIL
+
+===== #353 futures skewness: 12 configs; OOS months with data 130
+  walk-forward OOS 2016-01..2026-10: CAGR 8.75%; halves 6.12% / 11.35%; costs x1.5 8.24%; worst drawdown -27.9% (SPY same months -23.9%); switches 28
+  most-picked: skew/L6/vt15/exags (45x); skew/L6/vt15/all (31x); skew/L12/vt15/all (24x)
+  (context) best fixed configs over OOS in hindsight: skew/L6/vt15/all 16.61%; skew/L6/vt15/exags 15.79%; skew/L6/vt10/all 12.29%
+  VERDICT: FAIL
+
+===== #354 futures multi-factor: 12 configs; OOS months with data 130
+  walk-forward OOS 2016-01..2026-10: CAGR 1.09%; halves 0.39% / 1.76%; costs x1.5 0.77%; worst drawdown -29.3% (SPY same months -23.9%); switches 30
+  most-picked: multi/L12/vt15/exags (55x); multi/L12/vt15/all (20x); multi/L3/vt15/exags (20x)
+  (context) best fixed configs over OOS in hindsight: multi/L12/vt15/exags 5.53%; multi/L12/vt10/exags 4.83%; multi/L12/vt15/all 3.75%
+  VERDICT: FAIL
+

@@ -11,8 +11,9 @@ file in `docs/jx_runs/` is the raw output of a script you can re-run. Rules for 
 | **Prop-firm recycling, Malaysia-eligible portfolio** (Topstep + TTP Prime + DayTraders EOD + LucidDaily, 1 account each) | **Works (backtest)** | $195,000 total = **$18,006/yr**, ~$1,500/month avg ($3,136 last 3 years); cash needed for worst dip ~$13,858 |
 | Single prop firm (Topstep 50K) | Works (backtest) | $44,359 = $4,097/yr |
 | Liquidation bot (workstream B) | Not built; shadow test running | est. $0–$100/month now, $100–$600 averaged over crash cycles |
-| Any non-prop strategy | **None passed a full test yet** (~100 tested) | — |
-| Non-prop tests in progress | #350 futures trend/carry + #351–#354 (same data) | results pending |
+| Any non-prop strategy usable at Jx's size | **None** (~105 tested) | — |
+| Futures cross-sectional momentum #351 | **Passed the full test on paper, but needs ~$250K+** (whole-contract test fails at $15K and $50K) | ~15–20%/yr on capital, not prop-like |
+| Non-prop tests in progress | #361 CoW solver payouts, #362 Across relayer fees (on-chain, free) | registered 2026-11-23 |
 
 ---
 
@@ -86,19 +87,24 @@ Bar: ≥ 8%/yr on capital in both halves (risk-premium families: ≥ 10% and dra
 `docs/CANDIDATES.md`; batch files `docs/PREREG_*`.
 
 ### 4a. Passed a full test
-None. (#303 S&P 500 additions passed on paper but was withdrawn: it bought before S&P's announcements; tradeable version +0.17%/event.)
+| # | Idea | Result | Can Jx use it? |
+|---|---|---|---|
+| 351 | Futures cross-sectional momentum (long the 12-month winners, short the losers, across 21–26 CME futures; monthly) | 20.72%/yr 2016–26 walk-forward, halves 26.94% / 14.97%, worst drawdown −22.3% (S&P −23.9%) | **No, not at $10–50K.** Whole-contract version fails at $15K (second half 3.08%) and $50K (7.89%); needs full-size rates/FX contracts, so ~$250K+, earning ~15–20%/yr. `PREREG_FUTURES_TREND_CARRY_20261123.md` addendum 3 |
+
+(#303 S&P 500 additions passed on paper but was withdrawn: it bought before S&P's announcements; tradeable version +0.17%/event.)
 
 ### 4b. In progress / open
 | # | Idea | Why it has potential | Status |
 |---|---|---|---|
-| 350 | Cross-asset futures trend + carry (26 CME futures) | decades of published evidence; diversifies across rates, FX, metals, energy, indices | Databento data downloading |
-| 351–354 | Cross-sectional momentum, value (5-year reversal), skew, combined multi-factor (same 26 futures) | published "factor" premia on futures; same data, no extra cost | registered; run with #350 |
+| 361 | CoW Protocol solving (DAO pays weekly COW rewards to solvers) | protocol-paid role; payouts on-chain every week | registered; data via Actions |
+| 362 | Across bridge relaying (users pay a fee for fast fills) | small fills may be open to small inventory | registered; data via Actions |
 | 324 | Newer perp / options vaults | 95% on advertised APY | needs real share prices |
 | 339 | Tokenised gold premium | redemption floor | not credible as measured (futures vs spot) |
 
 ### 4c. Failed — closest misses first
 | # | Idea | Best result | Why it failed | File |
 |---|---|---|---|---|
+| 350 / 352–354 | Futures trend+carry, value, skew, multi-factor | 11.7% / 0.5% / 8.8% / 1.1% | a half below 10% or drawdown worse than S&P | `PREREG_FUTURES_TREND_CARRY` |
 | 208 / 280 | Cross-venue funding gaps | 20.3% / 11.9% on paper | execution: $10K orders cost 23–55 bps per side | `PREREG_BATCH7`, `PREREG_BATCH8` |
 | 276 | Hedged HYPE staking | 23.4% / 9.3% | short gets liquidated (12×) | `PREREG_BATCH7` |
 | 293 / 295 | FX carry; levered stock–bond | 13.6%; 13.5%/yr | one half below 10%, drawdown −43% | `PREREG_BATCH9` |

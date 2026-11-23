@@ -44,3 +44,29 @@ be held at all. Each month, target notional = the #351 weight × capital, rounde
 per side (assumed) + 1 tick. Capital levels: $15K, $50K, $100K, $250K. **PASS at a capital level** = the fixed most-picked config
 (xsmom / L12 / vt15 / ex-ags) on 2016-01..2026-10 earns ≥ 10%/yr in both halves after whole-contract rounding and costs, with a worst drawdown no
 worse than SPY's. Report the smallest capital that passes and its dollar profit per year, compared with the prop portfolio's $18K/yr.
+
+### Results (2026-11-23; both outputs identical on re-run)
+**#350–#354 after the bug fix** (`docs/jx_runs/futures_trend_20261123.txt`; walk-forward OOS 2016-01..2026-10, 130 months):
+| # | factor | CAGR | halves | costs × 1.5 | worst DD (SPY −23.9%) | verdict |
+|---|---|---|---|---|---|---|
+| 350 | trend / carry | 11.72% | 4.00% / 19.75% | 12.73% | −34.6% | FAIL (first half, drawdown) |
+| 351 | cross-sectional momentum | **20.72%** | **26.94% / 14.97%** | **20.20%** | **−22.3%** | **PASS** (most-picked xsmom / L12 / vt15 / ex-ags, 81 of 130 months) |
+| 352 | value (5-year reversal) | 0.46% | 8.56% / −6.82% | −0.39% | −46.0% | FAIL |
+| 353 | skewness | 8.75% | 6.12% / 11.35% | 8.24% | −27.9% | FAIL |
+| 354 | multi-factor | 1.09% | 0.39% / 1.76% | 0.77% | −29.3% | FAIL |
+#351 is unchanged by the fix (it never used the 5-year window) and is the first non-prop idea in the repo to pass a registered full test.
+
+**#351b implementability** (`docs/jx_runs/futures_xsmom_small_20261123.txt`; fixed config xsmom / L12 / vt15, 13 markets with micro or
+small contracts, whole contracts, assumed costs):
+| account | CAGR | halves | worst DD | verdict | avg $/yr |
+|---|---|---|---|---|---|
+| fractional reference (13 markets) | 16.15% | 22.97% / 9.81% | −24.4% | FAIL (second half) | — |
+| $15,000 | 10.00% | 17.51% / 3.08% | −34.0% | FAIL | $2,537 |
+| $50,000 | 15.19% | 23.12% / 7.89% | −27.2% | FAIL | $17,008 |
+| $100,000 | 17.06% | 23.71% / 10.87% | −23.0% | PASS (marginal) | $42,316 |
+| $250,000 | 15.94% | 23.16% / 9.23% | −24.1% | FAIL | $92,887 |
+**Reading.** The 13-market universe a small account can trade fails even before rounding (second half 9.81%); the $100K pass sits inside the
+fractional reference's own failure, so it is rounding luck, not a property of the strategy. The edge needs the full 21–26-market universe,
+including full-size rates and FX contracts (ZN ≈ $110K notional each), i.e. roughly $250K–$1M of capital, and then pays ~15–20%/yr. That is a
+normal managed-futures risk premium, not a prop-like return on small capital. **Verdict for Jx: real but not usable at his size.** Margin not
+modelled; multipliers and costs assumed.

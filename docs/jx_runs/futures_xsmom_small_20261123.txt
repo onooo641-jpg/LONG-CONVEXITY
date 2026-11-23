@@ -1,0 +1,9 @@
+#351b universe ['ES', 'NQ', 'YM', 'RTY', '6E', '6A', '6B', 'GC', 'SI', 'HG', 'CL', 'ZN', 'ZT']; config xsmom / L12 / vt15; 2016-01..2026-10; whole contracts; costs per contract side + 1 tick
+
+fractional (reference, this 13-market universe)  CAGR  16.15% | halves  22.97% /   9.81% | worst DD  -24.4% (SPY -23.9%) | FAIL
+$15,000 account, whole contracts                 CAGR  10.00% | halves  17.51% /   3.08% | worst DD  -34.0% (SPY -23.9%) | FAIL; avg $2,537/yr on $15,000
+$50,000 account, whole contracts                 CAGR  15.19% | halves  23.12% /   7.89% | worst DD  -27.2% (SPY -23.9%) | FAIL; avg $17,008/yr on $50,000
+$100,000 account, whole contracts                CAGR  17.06% | halves  23.71% /  10.87% | worst DD  -23.0% (SPY -23.9%) | PASS; avg $42,316/yr on $100,000
+$250,000 account, whole contracts                CAGR  15.94% | halves  23.16% /   9.23% | worst DD  -24.1% (SPY -23.9%) | FAIL; avg $92,887/yr on $250,000
+
+Margin requirements not modelled (gross notional can exceed equity); multipliers and costs assumed; verify on CME before any use.
