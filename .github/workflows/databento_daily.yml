@@ -28,7 +28,7 @@ jobs:
           mkdir -p docs/jx_runs
           if [ -z "$DATABENTO_API_KEY" ]; then echo "::error::DATABENTO_API_KEY secret is not set"; exit 1; fi
           mode=$(head -1 .github/databento_daily_request.txt | awk '{print $1}')
-          uv run python scripts/fetch_databento_daily.py "$mode" --max-cost-usd 2.0 2>&1 | tee docs/jx_runs/databento_daily_${{ github.run_id }}.txt
+          uv run python scripts/fetch_databento_daily.py "$mode" --max-cost-usd 2.50 2>&1 | tee docs/jx_runs/databento_daily_${{ github.run_id }}.txt
       - name: Commit
         if: always()
         run: |

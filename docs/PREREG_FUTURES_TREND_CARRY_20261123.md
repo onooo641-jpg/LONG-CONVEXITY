@@ -15,3 +15,7 @@ PASS = both halves ≥ 10%/yr AND all-OOS with costs × 1.5 ≥ 10%/yr AND worst
 (kill-only): OOS 2025-11..2026-10 < 4%/yr.
 **Capital note.** Futures need margin; to earn about $18K/yr (the Malaysia-eligible prop portfolio) at 10–15%/yr takes about $120–180K.
 Command: `uv run python -m scripts.futures_trend_20261123 | tee docs/jx_runs/futures_trend_20261123.txt`.
+
+## Addendum 1 (2026-11-23): cost approval
+The quote was $2.4282 (52 continuous symbols, ohlcv-1d), above the $2.00 cap, so the first download aborted. **Jx approved $2.43** (from his Databento
+credits) on 2026-11-23. The cap is raised to $2.50 for this one pull. No rule changes.
