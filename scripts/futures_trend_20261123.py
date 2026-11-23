@@ -85,7 +85,9 @@ def build_xs(px, cmult, factor):
                 continue
 
             def cum(months, skip=5):
-                return (1 + hist.iloc[-(21 * months + skip):-skip]).prod() - 1
+                # skip=0 must not slice to -0 (empty): bug found 2026-11-23 (value and multi never traded)
+                window = hist.iloc[-(21 * months + skip):-skip] if skip else hist.iloc[-(21 * months):]
+                return (1 + window).prod() - 1
             if factor == "xsmom":
                 sc = cum(L)
             elif factor == "value":

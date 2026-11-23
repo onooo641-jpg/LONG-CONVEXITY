@@ -31,3 +31,16 @@ SPY's). Cross-sectional legs are dollar-neutral (long top third, short bottom th
 | 354 | multi-factor | equal-risk sum of the TSMOM, carry, cross-sectional momentum and value signals (each from its own L) | L {3, 6, 12} × vt × universe = 12 |
 Literature basis (third-party, recorded as motivation only, not as evidence): time-series momentum and carry across futures (Moskowitz–Ooi–
 Pedersen 2012; Koijen et al. 2018), value and momentum everywhere (Asness–Moskowitz–Pedersen 2013), commodity skewness (Fernandez-Perez et al.).
+
+## Addendum 3 (2026-11-23, after the first #350–#354 run; written before any whole-contract sizing is computed)
+First run: #351 cross-sectional momentum met the registered PASS (walk-forward CAGR 20.72%, halves 26.94% / 14.97%, costs × 1.5 20.20%, worst
+drawdown −22.3% vs SPY −23.9%). #352 and part of #354 were broken: the 5-year window sliced to `-0` (empty), so value never traded. This is a
+mechanical bug; fixed and all five re-run (results below once identical on re-run).
+**#351b implementability (new, stricter test; the #351 rule is unchanged).** The registered backtest uses fractional notional. A real account trades
+whole contracts. Universe for a small account: markets with a CME micro or small contract (multipliers to be verified against CME pages
+before any live use; assumed here): MES ($5 × index), MNQ ($2), MYM ($0.50), M2K ($5), M6E (€12,500), M6A (A$10,000), M6B (£6,250), MGC
+(10 oz), SIL (1,000 oz), MHG (2,500 lb), MCL (100 bbl), plus full-size ZN ($1,000 × price) and ZT ($2,000 × price) to test whether rates can
+be held at all. Each month, target notional = the #351 weight × capital, rounded to the nearest whole contract; cost $1.50 per micro contract
+per side (assumed) + 1 tick. Capital levels: $15K, $50K, $100K, $250K. **PASS at a capital level** = the fixed most-picked config
+(xsmom / L12 / vt15 / ex-ags) on 2016-01..2026-10 earns ≥ 10%/yr in both halves after whole-contract rounding and costs, with a worst drawdown no
+worse than SPY's. Report the smallest capital that passes and its dollar profit per year, compared with the prop portfolio's $18K/yr.
