@@ -1706,7 +1706,260 @@ def job_sweep4d():
     print(f"  pump coins scanned {len(coins)}; graduated 2-10 days ago sampled {len(sel)}", flush=True)
     (OUT / "sweep4d_raw.json").write_text(json.dumps(out))
 
-JOBS = {"sweep4d": job_sweep4d, "sweep4c": job_sweep4c, "sweep4b": job_sweep4b, "sweep4": job_sweep4, "addprice": job_addprice, "fred9": job_fred9, "batch10b": job_batch10b, "repair8": job_repair8, "sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+# ---------------------------------------------------------------- #361 / #362 (docs/PREREG_SOLVER_RELAY_20261123.md)
+_RC = [0x0000000000000001, 0x0000000000008082, 0x800000000000808A, 0x8000000080008000, 0x000000000000808B, 0x0000000080000001,
+       0x8000000080008081, 0x8000000000008009, 0x000000000000008A, 0x0000000000000088, 0x0000000080008009, 0x000000008000000A,
+       0x000000008000808B, 0x800000000000008B, 0x8000000000008089, 0x8000000000008003, 0x8000000000008002, 0x8000000000000080,
+       0x000000000000800A, 0x800000008000000A, 0x8000000080008081, 0x8000000000008080, 0x0000000080000001, 0x8000000080008008]
+_ROT = [[0, 36, 3, 41, 18], [1, 44, 10, 45, 2], [62, 6, 43, 15, 61], [28, 55, 25, 21, 56], [27, 20, 39, 8, 14]]
+
+
+def keccak256(data: bytes) -> bytes:
+    M = (1 << 64) - 1
+    rol = lambda v, n: ((v << n) | (v >> (64 - n))) & M if n else v  # noqa: E731
+    A = [[0] * 5 for _ in range(5)]
+    p = bytearray(data) + b"\x01"
+    while len(p) % 136:
+        p.append(0)
+    p[-1] |= 0x80
+    for off in range(0, len(p), 136):
+        for i in range(17):
+            A[i % 5][i // 5] ^= int.from_bytes(p[off + 8 * i: off + 8 * i + 8], "little")
+        for rc in _RC:
+            C = [A[x][0] ^ A[x][1] ^ A[x][2] ^ A[x][3] ^ A[x][4] for x in range(5)]
+            D = [C[(x - 1) % 5] ^ rol(C[(x + 1) % 5], 1) for x in range(5)]
+            A = [[A[x][y] ^ D[x] for y in range(5)] for x in range(5)]
+            B = [[0] * 5 for _ in range(5)]
+            for x in range(5):
+                for y in range(5):
+                    B[y][(2 * x + 3 * y) % 5] = rol(A[x][y], _ROT[x][y])
+            A = [[B[x][y] ^ ((~B[(x + 1) % 5][y]) & B[(x + 2) % 5][y]) for y in range(5)] for x in range(5)]
+            A[0][0] ^= rc
+    return b"".join(A[i % 5][i // 5].to_bytes(8, "little") for i in range(4))
+
+
+
+class _TooBig(Exception):
+    pass
+
+
+SR_RPC = {
+    "ethereum": ["https://ethereum-rpc.publicnode.com", "https://eth.drpc.org", "https://eth.llamarpc.com", "https://cloudflare-eth.com"],
+    "base": ["https://base-rpc.publicnode.com", "https://base.gateway.tenderly.co", "https://base.api.pocket.network", "https://mainnet.base.org"],
+    "arbitrum": ["https://arbitrum-one-rpc.publicnode.com", "https://arb1.arbitrum.io/rpc", "https://arbitrum.drpc.org"],
+}
+SR_FAILS = {}
+COW_TOKEN = "0xdef1ca1fb7fbcdc777520aa7f396b4e015f497ab"
+COW_SAFE = "0xa03be496e67ec29bc62f01a428683d7f9c204930"
+SPOKE = {"base": "0x09aea4b2242abc8bb4bb78d537a67a245a7bec64", "arbitrum": "0xe35e9842fceaca96570b734083f4a58e8f7c5f2a"}
+T_TRANSFER = "0x" + keccak256(b"Transfer(address,address,uint256)").hex()
+T_FILLED = "0x" + keccak256(b"FilledRelay(bytes32,bytes32,uint256,uint256,uint256,uint256,uint256,uint32,uint32,bytes32,bytes32,bytes32,"
+                            b"bytes32,bytes32,(bytes32,bytes32,uint256,uint8))").hex()
+T_FILLEDV3 = "0x" + keccak256(b"FilledV3Relay(address,address,uint256,uint256,uint256,uint256,uint32,uint32,uint32,address,address,address,"
+                              b"address,bytes,(address,bytes,uint256,uint8))").hex()
+
+
+def _srpc(chain, method, params, tries=2):
+    """JSON-RPC over the chain's public endpoints. eth_getLogs errors on every endpoint raise _TooBig (caller shrinks the window)."""
+    last, getlogs_err = None, 0
+    urls = sorted(SR_RPC[chain], key=lambda u: SR_FAILS.get(u, 0))
+    for k in range(tries):
+        for u in urls:
+            try:
+                req = urllib.request.Request(u, data=json.dumps({"jsonrpc": "2.0", "id": 1, "method": method, "params": params}).encode(),
+                                             headers={**UA, "Content-Type": "application/json"}, method="POST")
+                with urllib.request.urlopen(req, timeout=60) as r:
+                    j = json.loads(r.read().decode())
+                if "error" in j:
+                    last = f"{u}: {str(j['error'])[:160]}"
+                    SR_FAILS[u] = SR_FAILS.get(u, 0) + 1
+                    getlogs_err += method == "eth_getLogs"
+                    continue
+                SR_FAILS[u] = max(0, SR_FAILS.get(u, 0) - 1)
+                return j["result"]
+            except Exception as e:  # noqa: BLE001
+                last = f"{u}: {type(e).__name__}: {str(e)[:160]}"
+                SR_FAILS[u] = SR_FAILS.get(u, 0) + 1
+                getlogs_err += method == "eth_getLogs"
+                if "429" in str(e):
+                    time.sleep(5)
+        time.sleep(2 * (k + 1))
+    if method == "eth_getLogs" and getlogs_err:
+        raise _TooBig(last)
+    raise RuntimeError(last)
+
+
+def _sblock_ts(chain, n):
+    return int(_srpc(chain, "eth_getBlockByNumber", [hex(n), False])["timestamp"], 16)
+
+
+def _sblock_at(chain, ts):
+    """First block with timestamp >= ts (binary search)."""
+    hi = int(_srpc(chain, "eth_blockNumber", []), 16)
+    lo = 1
+    if _sblock_ts(chain, hi) < ts:
+        return hi
+    while lo < hi:
+        mid = (lo + hi) // 2
+        if _sblock_ts(chain, mid) < ts:
+            lo = mid + 1
+        else:
+            hi = mid
+    return lo
+
+
+def _sscan(chain, address, topics, b0, b1, w=5000, wmax=500000, budget_s=9000):
+    """All logs in [b0, b1]; adaptive window. Returns (logs, blocks_missed)."""
+    out, b, missed, calls, t0 = [], b0, 0, 0, time.time()
+    while b <= b1:
+        if time.time() - t0 > budget_s:
+            missed += b1 - b + 1
+            print(f"  {chain}: time budget hit at block {b}", flush=True)
+            break
+        e = min(b1, b + w - 1)
+        try:
+            logs = _srpc(chain, "eth_getLogs", [{"fromBlock": hex(b), "toBlock": hex(e), "address": address, "topics": topics}])
+            out += logs
+            calls += 1
+            b = e + 1
+            if len(logs) < 3000:
+                w = min(wmax, int(w * 1.5))
+        except (_TooBig, RuntimeError) as ex:
+            if w <= 100:
+                missed += e - b + 1
+                print(f"  {chain}: gave up on {b}-{e}: {str(ex)[:120]}", flush=True)
+                b = e + 1
+                w = 1000
+            else:
+                w = max(100, w // 4)
+    print(f"  {chain} {address[:10]}: {len(out)} logs, {calls} calls, missed {missed} of {b1 - b0 + 1} blocks, {time.time() - t0:.0f}s",
+          flush=True)
+    return out, missed
+
+
+def _page_snips(url, needles, width=300):
+    """Fetch a page (HTML) and return text snippets around each needle (case-insensitive)."""
+    import html as _html
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) long-convexity-research"})
+        with urllib.request.urlopen(req, timeout=60) as r:
+            raw = r.read().decode("utf-8", "replace")
+    except Exception as e:  # noqa: BLE001
+        return {"error": f"{type(e).__name__}: {str(e)[:160]}"}
+    txt = _re.sub(r"\s+", " ", _html.unescape(_re.sub(r"<[^>]+>", " ", raw)))
+    out = {"chars": len(txt)}
+    for nd in needles:
+        hits = [m.start() for m in _re.finditer(_re.escape(nd), txt, flags=_re.I)][:4]
+        out[nd] = [txt[max(0, h - width): h + width] for h in hits]
+        out[nd + "|in_raw_html"] = nd.lower() in raw.lower()
+    return out
+
+
+def job_cow361():
+    """#361: COW transfers out of the CoW Solver Payouts Safe, 2024-01-01..now, plus official-page checks."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    meta = {"pages": {}}
+    for url, needles in [
+        ("https://docs.cow.fi/governance/multisigs", ["0xA03be496e67Ec29bC62F01a428683D7F9c204930", "Solver Payouts", "0xDEf1CA1fb7FBcDC777520aa7f396b4E015F497aB"]),
+        ("https://docs.cow.fi/cow-protocol/tutorials/solvers/onboard", ["KYC", "bonding pool", "service fee", "jurisdiction", "countr", "sanction", "bond"]),
+        ("https://docs.cow.fi/cow-protocol/reference/core/auctions/rewards", ["COW", "cap", "weekly", "penalt", "Tuesday"]),
+        ("https://docs.cow.fi/governance/token", ["0xDEf1CA1fb7FBcDC777520aa7f396b4E015F497aB"]),
+    ]:
+        meta["pages"][url] = _page_snips(url, needles)
+        print(f"  page {url}: " + ", ".join(f"{k[:-12]}={v}" for k, v in meta["pages"][url].items() if k.endswith("|in_raw_html")), flush=True)
+    code = _srpc("ethereum", "eth_getCode", [COW_SAFE, "latest"])
+    meta["safe_has_code"] = bool(code and code != "0x")
+    b0 = _sblock_at("ethereum", int(pd.Timestamp("2024-01-01", tz="UTC").timestamp()))
+    b1 = int(_srpc("ethereum", "eth_blockNumber", []), 16)
+    pad = "0x" + "0" * 24 + COW_SAFE[2:]
+    logs, missed = _sscan("ethereum", COW_TOKEN, [T_TRANSFER, pad], b0, b1, w=50000, wmax=2000000)
+    blocks = sorted({int(lg["blockNumber"], 16) for lg in logs})
+    ts = {}
+    for n in blocks:
+        try:
+            ts[n] = _sblock_ts("ethereum", n)
+        except Exception:  # noqa: BLE001
+            ts[n] = None
+    rows = [{"block": int(lg["blockNumber"], 16), "ts": ts.get(int(lg["blockNumber"], 16)), "to": "0x" + lg["topics"][2][-40:],
+             "cow": int(lg["data"], 16) / 1e18, "tx": lg["transactionHash"]} for lg in logs]
+    meta.update(b0=b0, b1=b1, missed_blocks=missed, n_transfers=len(rows), n_blocks=len(blocks))
+    meta["cow_price"] = _llama_chart("coingecko:cow-protocol", "2023-12-25")
+    print(f"  COW transfers out of the payouts Safe: {len(rows)} in {len(blocks)} blocks; recipients {len({r['to'] for r in rows})}; "
+          f"COW prices {len(meta['cow_price'])}; safe has code {meta['safe_has_code']}", flush=True)
+    pd.DataFrame(rows).to_parquet(OUT / "solverrelay_cow.parquet", index=False)
+    (OUT / "solverrelay_cow_meta.json").write_text(json.dumps(meta))
+
+
+def _w(data, i):
+    return int(data[2 + 64 * i: 2 + 64 * (i + 1)], 16)
+
+
+def job_across362():
+    """#362: Across fills on the Base and Arbitrum SpokePools, 2026-10-01..2026-10-31 (Stage 1 slice)."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    meta = {"pages": {}, "topic0": {"FilledRelay": T_FILLED, "FilledV3Relay": T_FILLEDV3}}
+    for url in ["https://docs.across.to/reference/contract-addresses", "https://docs.across.to/developer-quickstart/contract-addresses",
+                "https://docs.across.to/introduction/contract-addresses"]:
+        meta["pages"][url] = _page_snips(url, list(SPOKE.values()))
+        print(f"  page {url}: " + ", ".join(f"{k[:12]}={v}" for k, v in meta["pages"][url].items() if k.endswith("|in_raw_html")), flush=True)
+    t0, t1 = (int(pd.Timestamp(d, tz="UTC").timestamp()) for d in ("2026-10-01", "2026-11-01"))
+    for chain, spoke in SPOKE.items():
+        try:
+            m = meta[chain] = {}
+            code = _srpc(chain, "eth_getCode", [spoke, "latest"])
+            m["has_code"] = bool(code and code != "0x")
+            b0, b1 = _sblock_at(chain, t0), _sblock_at(chain, t1) - 1
+            m.update(b0=b0, b1=b1)
+            # probe: every topic0 the SpokePool emits in a short window near the end (checks the computed hashes)
+            try:
+                probe = _srpc(chain, "eth_getLogs", [{"fromBlock": hex(b1 - 3000), "toBlock": hex(b1), "address": spoke}])
+                cnt = {}
+                for lg in probe:
+                    cnt[lg["topics"][0]] = cnt.get(lg["topics"][0], 0) + 1
+                m["probe_topic0"] = cnt
+                print(f"  {chain} probe topic0 counts: {cnt}", flush=True)
+            except Exception as e:  # noqa: BLE001
+                m["probe_error"] = str(e)[:200]
+            logs, missed = _sscan(chain, spoke, [[T_FILLED, T_FILLEDV3]], b0, b1, w=2000, wmax=200000)
+            m["missed_blocks"] = missed
+            samp = sorted({b0 + (b1 - b0) * k // 63 for k in range(64)})
+            m["ts_sample"] = [[n, _sblock_ts(chain, n)] for n in samp]
+            rows, toks = [], {}
+            for lg in logs:
+                d, t = lg["data"], lg["topics"]
+                v3 = t[0] == T_FILLEDV3
+                if v3:
+                    soff = _w(d, 11) // 32
+                    ftype, upd = _w(d, soff + 3), _w(d, soff + 2)
+                else:
+                    ftype, upd = _w(d, 14), _w(d, 13)
+                out_amt = _w(d, 3)
+                rows.append({"block": int(lg["blockNumber"], 16), "v3": v3, "origin": int(t[1], 16), "relayer": "0x" + t[3][-40:],
+                             "in_tok": "0x" + d[2 + 24: 2 + 64], "out_tok": "0x" + d[2 + 64 + 24: 2 + 128],
+                             "in_amt": float(_w(d, 2)), "out_amt": float(upd if upd else out_amt), "spread_raw": float(_w(d, 2) - (upd if upd else out_amt)),
+                             "repay": _w(d, 4), "ftype": ftype, "excl": ("0x" + d[2 + 64 * 7 + 24: 2 + 64 * 8]) == ("0x" + t[3][-40:])})
+            for a in {r["out_tok"] for r in rows}:
+                try:
+                    dec = int(_srpc(chain, "eth_call", [{"to": a, "data": "0x313ce567"}, "latest"]), 16)
+                    sraw = _srpc(chain, "eth_call", [{"to": a, "data": "0x95d89b41"}, "latest"])
+                    sb = bytes.fromhex(sraw[2:])
+                    sym = sb[64: 64 + int.from_bytes(sb[32:64], "big")].decode("utf-8", "replace") if len(sb) >= 96 else sb.rstrip(b"\0").decode("utf-8", "replace")
+                    toks[a] = [sym, dec]
+                except Exception as e:  # noqa: BLE001
+                    toks[a] = ["?", None, str(e)[:80]]
+            m["tokens"] = toks
+            pd.DataFrame(rows).to_parquet(OUT / f"solverrelay_fills_{chain}.parquet", index=False)
+            print(f"  {chain}: fills {len(rows)}, relayers {len({r['relayer'] for r in rows})}, tokens {len(toks)}", flush=True)
+        except Exception as e:  # noqa: BLE001
+            meta.setdefault(chain, {})["error"] = f"{type(e).__name__}: {str(e)[:200]}"
+            print(f"  {chain} FAILED: {e}", flush=True)
+    meta["eth_price"] = _llama_chart("coingecko:ethereum", "2026-09-25")
+    meta["btc_price"] = _llama_chart("coingecko:bitcoin", "2026-09-25")
+    (OUT / "solverrelay_across_meta.json").write_text(json.dumps(meta))
+
+
+JOBS = {"cow361": job_cow361, "across362": job_across362, "sweep4d": job_sweep4d, "sweep4c": job_sweep4c, "sweep4b": job_sweep4b, "sweep4": job_sweep4, "addprice": job_addprice, "fred9": job_fred9, "batch10b": job_batch10b, "repair8": job_repair8, "sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys
