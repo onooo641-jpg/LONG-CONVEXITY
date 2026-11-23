@@ -1,0 +1,18 @@
+=== cow361
+  page https://docs.cow.fi/governance/multisigs: 0xA03be496e67Ec29bC62F01a428683D7F9c204930=True, Solver Payouts=True, 0xDEf1CA1fb7FBcDC777520aa7f396b4E015F497aB=False
+  page https://docs.cow.fi/cow-protocol/tutorials/solvers/onboard: KYC=True, bonding pool=True, service fee=True, jurisdiction=False, countr=False, sanction=False, bond=True
+  page https://docs.cow.fi/cow-protocol/reference/core/auctions/rewards: COW=True, cap=True, weekly=True, penalt=True, Tuesday=True
+  page https://docs.cow.fi/governance/token: 0xDEf1CA1fb7FBcDC777520aa7f396b4E015F497aB=True
+  ethereum: time budget hit at block 19023495
+  ethereum 0xdef1ca1f: 125 logs, 1146 calls, missed 7455290 of 7569890 blocks, 9001s
+  COW transfers out of the payouts Safe: 125 in 3 blocks; recipients 12; COW prices 1065; safe has code True
+=== across362
+  page https://docs.across.to/reference/contract-addresses: 0x09aea4b224=False, 0xe35e9842fc=False
+  page https://docs.across.to/developer-quickstart/contract-addresses: 0x09aea4b224=False, 0xe35e9842fc=False
+  page https://docs.across.to/introduction/contract-addresses: 
+  base probe topic0 counts: {'0x32ed1a409ef04c7b0227189c3a103dc5ac10e775a15b785dcc510201f7c25ad3': 309, '0x44b559f101f8fbcc8a0ea43fa91a05a729a5ea6e14a7c75aa750374690137208': 292, '0xf4ad92585b1bc117fbdd644990adf0827bc4c95baeae8a23322af807b6d0020e': 12, '0xc86ba04c55bc5eb2f2876b91c438849a296dbec7b08751c3074d92e04f0a77af': 3}
+  base 0x09aea4b2: 190420 logs, 95 calls, missed 0 of 1339200 blocks, 878s
+  base: fills 190420, relayers 43, tokens 9
+  arbitrum probe topic0 counts: {'0x44b559f101f8fbcc8a0ea43fa91a05a729a5ea6e14a7c75aa750374690137208': 17, '0x32ed1a409ef04c7b0227189c3a103dc5ac10e775a15b785dcc510201f7c25ad3': 21, '0xc86ba04c55bc5eb2f2876b91c438849a296dbec7b08751c3074d92e04f0a77af': 1}
+  arbitrum 0xe35e9842: 91428 logs, 183 calls, missed 0 of 9632410 blocks, 379s
+  arbitrum: fills 91428, relayers 36, tokens 6
