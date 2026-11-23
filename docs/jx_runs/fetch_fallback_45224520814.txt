@@ -1,0 +1,10 @@
+=== jlp363
+  page https://jup.ag/terms-of-use: HTTPError: HTTP Error 404: Not Found
+  page https://jup.ag/terms: HTTPError: HTTP Error 404: Not Found
+  page https://dev.jup.ag/docs/perp-api: 48210
+  page https://station.jup.ag/guides/perpetual-exchange/overview: 123088
+  coingecko:jupiter-perpetuals-liquidity-provider-token: 1091 points
+  solana:27G8MtK7VtTcCHkpASjSDdkWWYfoqT6ggEuKidVJidD4: 1091 points
+  coingecko:solana: 1150 points
+  coingecko:ethereum: 1150 points
+  coingecko:bitcoin: 1150 points
