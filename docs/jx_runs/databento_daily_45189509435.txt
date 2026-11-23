@@ -1,0 +1,2 @@
+quote: $2.4282 for 52 continuous symbols, ohlcv-1d, 2010-06-06..2026-11-01
+ABORT: quote $2.4282 exceeds the cap $2.00 (needs Jx's approval)
