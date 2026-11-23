@@ -7,7 +7,7 @@ Instant accounts
 OLD Instant payouts
 OLD Instant payouts
 Profit goals, caps and consistency.
-Updated this week
+Updated over a week ago
 Table of contents
 Profit goal
 Each payout cycle has a profit goal: the minimum profit before you can request. You must reach it again every cycle, and scalped profit doesn't count toward it. Once you reach it, you can request up to 50% of your profit for the cycle, up to the cap.

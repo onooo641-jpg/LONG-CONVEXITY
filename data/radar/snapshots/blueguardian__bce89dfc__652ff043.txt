@@ -1,0 +1,250 @@
+How payouts work | Blue Guardian FAQ
+35% OFF
+All accounts | CFDs & Futures Code: BLACK
+35% OFF
+All accounts | CFDs & Futures Code: BLACK
+Markets
+How It Works
+Affiliates
+About
+FAQ
+🇬🇧
+Login Get Funded
+Browse topics Search the FAQ
+Getting started Account inactivity rule How Blue Guardian works Getting help and using your dashboard
+Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
+Payouts How payouts work
+Billing & accounts Paying for your account: methods, card rules and refunds How many accounts can I have? Futures bundle discounts
+Trading rules Prohibited trading strategies What happens if I break a rule? Futures risk management rules Trading hours and the trading day CFD news trading rules
+Platforms & instruments Trading platforms CFD trading conditions: markets, commissions and leverage Futures contract limits and funded scaling Futures instruments, codes and costs
+CFD plans Instant Standard account rules Instant Starter account rules 1 Step Standard rules 2 Step Standard rules 1 Step Nano rules 2 Step Nano rules Buy Now Pay Later (BNPL) rules
+Futures plans Reserve account rules Elite account rules Express account rules Direct account rules Elite, Reserve & Direct Path to Live Zero account rules Zero Path to Live
+Affiliates & competitions Affiliate program Monthly trading competition
+Home
+› FAQ
+› Payouts
+› How payouts work
+Applies to: CFD and Futures Updated 17 Nov 2026 · 5 min read
+How payouts work
+Short answer
+Once your account meets its plan's payout requirements, request a payout from the Payouts tab in your dashboard. You can be paid by crypto (up to $1,000 per request) or Rise (no maximum). A 3% processing fee applies to every payout.
+The payout journey Replay
+From request to payment, step by step. Payout methods, minimums and timings for each plan are in the sections below.
+Before your first payout
+Complete your KYC verification . It is required before any payout.
+Make sure your payout details in the dashboard are correct.
+To be paid through Rise (CFD and Futures), you must set up Rise before requesting a payout: create and verify your Rise account, then in your dashboard go to Settings > Payout method, add Rise as your payout method and accept the invite. You cannot request a Rise payout until Rise has been added as your payout method.
+Payout methods and limits
+Method
+Minimum
+Maximum per request
+Crypto
+CFD: $100
+Futures: see below
+$1,000
+Rise
+CFD: $500
+Futures: see below
+No maximum
+Futures minimums (crypto or Rise): Zero, Elite, Reserve and Direct: $500. Express: $250 on $25K and $50K accounts, $500 on $100K and $150K accounts.
+Any payout above $1,000 must be requested through Rise. Instant Starter payouts are crypto only.
+Processing and fees
+Eligible payout requests are processed within 24 business hours.
+Every payout has a 3% processing fee , so the amount you receive may be slightly lower than the figure on your payout certificate.
+All payouts are subject to compliance, account rules and risk review.
+CFD payouts
+Payout timing and split by plan
+Plan
+When you can request
+Profit split
+1 Step Standard, 2 Step Standard
+14 days after your first trade, then every 14 days (every 7 with the 7-day add-on)
+85% (90% with add-on)
+1 Step Nano
+Every 7 days, after 5 profitable days; 50% consistency
+85% (100% with add-on)
+2 Step Nano
+Every 14 days; 50% consistency; capped at 2% of starting balance per cycle
+80% (100% with add-on)
+Buy Now Pay Later
+On demand, after 5 profitable days; 20% consistency
+80%
+Instant Standard
+On demand, after 5 profitable days; 20% consistency (15% on $300K and $400K)
+80% (90% with add-on)
+Instant Starter
+One payout only, after 5 profitable days; 15% consistency
+90%
+A profitable day is a day with at least 0.5% profit. The days don't need to be consecutive.
+Payout conditions
+Minimum trading days completed, where your plan has them
+Account in profit (above starting balance)
+Consistency rule met, where your plan has one
+No active rule violations
+All positions and orders closed
+While a payout request is being reviewed, your account is set to read-only . You can trade again once it is approved.
+Payout caps
+Instant Starter: one payout only, capped at $250 profit. The account closes after it.
+$200K, $300K and $400K Instant accounts: the first two payouts are capped at $10,000 each. After that, there is no cap.
+2 Step Nano: up to 2% of your starting balance per payout cycle.
+Futures payouts
+All funded Futures accounts receive a 90% profit split . For example, if you make $2,000 profit, you receive $1,800.
+After any approved payout, your drawdown floor locks at starting balance + $100 (for example, $50,100 on a $50,000 account).
+Requirements by plan
+Plan
+When you can request
+Buffer
+Zero
+Daily, once you're above your buffer. No payout cap.
+Required
+Elite
+3 days after your first trade, once you're above your buffer and your best day is below 40% of total profit
+Required
+Reserve
+After at least 5 winning days (they don't need to be consecutive). Payouts 2–5 also need a minimum net profit since your last payout.
+Not required
+Express (existing accounts)
+Daily, up to a daily cap. From your 2nd payout, you need new profit of at least 50% of your previous payout first.
+Required
+Direct
+Once you hit the profit goal and meet the consistency rule (20% for the 1st payout, 25% for the 2nd, 30% after that)
+Not required
+Where a buffer is required, you can only withdraw profit above the buffer.
+Caps, buffers and targets by account size
+Plan / rule
+$25K
+$50K
+$100K
+$150K
+Zero: buffer
+$1,100
+$2,100
+$3,100
+$4,600
+Elite: 1st payout cap
+$1,500
+$2,500
+$3,000
+$4,000
+Elite: 2nd+ payout cap
+$2,000
+$3,000
+$3,500
+$4,500
+Elite: buffer
+$1,100
+$2,100
+$3,600
+$5,100
+Reserve: cap per request (50% of profit, up to)
+$1,000
+$2,000
+$2,500
+$3,000
+Reserve: minimum winning day
+$100
+$150
+$200
+$250
+Reserve: net profit since last payout (payouts 2–5)
+$500
+$750
+$1,000
+$1,250
+Express: daily payout cap
+$600
+$1,100
+$1,500
+$2,500
+Express: buffer
+$1,100
+$2,100
+$2,600
+$3,600
+Direct: cap, payouts 1–3
+$1,000
+$2,000
+$2,500
+$3,000
+Direct: cap, payouts 4+
+$1,000
+$2,500
+$3,000
+$3,500
+Direct: 1st payout profit goal
+$1,500
+$3,000
+$6,000
+$9,000
+Direct: 2nd+ profit goal
+$1,000
+$2,000
+$4,000
+$6,000
+Zero: the $8,000 daily profit limit
+If a funded Zero account makes $8,000 net profit in a single trading day, it's closed and you choose between a $3,600 payout for each account that hit the limit (followed by a 30-day cooldown) or moving to Live with a Live Bonus. See Zero account rules and Zero Path to Live .
+Reserve: winning days and net profit
+The winning-day count and the net-profit requirement both reset after each approved payout. Net profit includes all profits and losses since your last approved payout. Example on a $50,000 account: $900 of profit and a $150 losing day gives $750 net profit, which meets the requirement. The net-profit rule only decides when you're eligible; you can still request up to 50% of your total profit, up to your cap.
+Reserve: optional daily loss limit (DLL)
+Reserve accounts have no daily loss limit by default. If you chose the optional DLL at checkout (for a lower price), these limits apply:
+Account size
+$25K
+$50K
+$100K
+$150K
+Daily loss limit
+$600
+$1,200
+$1,700
+$3,000
+Hitting the daily loss limit is a soft breach : trading is locked for the rest of that day and unlocks again on the next trading day. Your account is not failed. You must still stay within your maximum trailing drawdown, which is a hard breach.
+Need help with a payout? Contact support through live chat or support@blueguardian.com .
+Still need help?
+Our support team and AI assistant are online 24/7.
+Contact us
+On this page Short answer
+Before your first payout
+Payout methods and limits
+Processing and fees
+CFD payouts
+Futures payouts
+Markets
+Forex
+Futures
+Company
+About
+How It Works
+Payout
+FAQs
+Brand Kit
+Growth
+Affiliates
+Instant Starter
+Buy Now Pay Later
+Blogs
+Terms & Service
+Terms & Conditions
+Privacy Policy
+Refund Policy
+Receive exclusive discounts, giveaways and news
+Email address Join Now
+Website
+Pay
+Pay
+Ξ ₿ ₮
+Blue Guardian Limited - The Sotheby Building, Rodney Village, Rodney Bay, Gros-Islet, Saint Lucia
+Iconic Exchange FZCO - Premises NO. 001 - 32135, IFZA Business Park, DDP Dubai U.A.E
+Related Entities (non-operational support and administrative offices):
+Blue Guardian Marketing LLC - 801 Icon Tower, Barsha Heights, Tecom, Dubai, UAE
+Trading Platforms for simulated trading are provided by Blue Guardian Limited, address: The Sotheby Building, Rodney Village, Rodney Bay, Gros-Islet, Saint Lucia. The technical solution offered in the form of platforms made available as part of the services offered by the Company (i.e. platforms for fictitious trading on demo accounts) uses third party services. The website is operated and owned by the Company and all content is copyrighted by the Company.
+Blue Guardian provides simulated/demo evaluation challenges purely for educational and skills-assessment purposes. Blue Guardian is not a broker, does not take client deposits, does not hold or manage real client funds, and does not provide financial advisory services of any kind. All trading activity is conducted in a virtual environment with no real-world risk
+Educational products and payment processing are provided by Iconic Exchange FZCO, address: Premises NO. 001 - 32135, IFZA Business Park, DDP Dubai U.A.E. All information provided on this website is for educational purposes only in the area of financial market trading and does not serve in anyway as specific investment recommendations, trading recommendations, analysis of investment opportunities or similar general recommendations regarding the trading of investment instruments. The Company does not provide investment services within the meaning of MIFID II The Company is not a licensed investment services provider (securities broker-dealer) within the meaning of MIFID II. All trading on the platform made available as part of the services provided by the Company, although it may be based on real trading data and simulates real trading, is only notional trading on a demo account. In this sense, i.e. that it is fictitious trading on fictitious accounts, terms such as “trading” or “trader” should also be understood and should not be given the meanings they have in the context of real trading.
+Risk Disclosure — In the event a user chooses to engage in live market trading, such activity is conducted entirely outside the scope of Blue Guardian, and exclusively through independently managed brokerage accounts. Blue Guardian is a firm that facilitates its users to trade under non-live (simulated) market conditions. Nevertheless, we are obliged to advise you that live trading in Forex and CFDs may not be suitable for all investors, so please ensure that you fully understand the risks involved and seek independent advice if necessary. Please read and ensure you fully understand our Risk Disclosure.
+Terms
+Privacy
+Refund
+Cookie settings
+©2026 All Rights Reserved - Blue Guardian
+We value your privacy
+We use cookies to run the site, analyse traffic, and support our marketing. You can accept all, reject non-essential cookies, or choose which categories to allow.
+Manage preferences Reject all Accept all

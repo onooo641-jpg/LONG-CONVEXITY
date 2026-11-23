@@ -68,30 +68,30 @@ The5ers
 4.7
 10% OFF
 MATCH
-E8
-E8 Markets
-4.8
-15% OFF
-MATCH
 Aq
 AquaFunded
 4.4
 35% OFF
 MATCH
-Cr
-Crypto Fund Trader
-4.2
-25% OFF
-MATCH25
+Bl
+Blueberry Funded
+4.1
+30% OFF
+MATCH
+E8
+E8 Markets
+4.8
+15% OFF
+MATCH
 Mo
 Moneta Funded
 4.8
 55% OFF
 MATCH55
-Bl
-Blueberry Funded
-4.1
-30% OFF
+To
+Top One Trader
+4.4
+80% OFF
 MATCH
 Ma
 Maven
@@ -103,16 +103,11 @@ WSFunded
 3.8
 55% OFF
 MATCH55
-To
-Top One Trader
-4.4
-80% OFF
-MATCH
-Ho
-Hola Prime
-4.4
-10% OFF
-MATCH10
+Cr
+Crypto Fund Trader
+4.2
+25% OFF
+MATCH25
 Fi
 Fintokei
 <20 reviews
@@ -120,26 +115,11 @@ Less than
 20 reviews
 20% OFF
 MATCH
-Ci
-City Traders Imperium
-4.3
-15% OFF
-MATCH
 At
 Atmos Funded
 4.7
 20% OFF
 MATCH
-Fu
-Funded Trading Plus
-4.4
-20% OFF
-MATCHBOGOF
-In
-Instant Funding
-4.0
-40% OFF
-MATCH40
 Le
 Leveraged
 <20 reviews
@@ -147,36 +127,56 @@ Less than
 20 reviews
 60% OFF
 MATCH
-BE
-BEM Funding
-4.9
-40% OFF
-MATCH
-Th
-ThinkCapital
-4.0
-40% OFF
-MATCH
-RZ
-RZR Funded
-4.1
-50% OFF
-MATCH
-Th
-The Trading Pit
-4.0
-40% OFF
+Ci
+City Traders Imperium
+4.3
+15% OFF
 MATCH
 La
 Lark Funding
 4.5
 5% OFF
 MATCH
+RZ
+RZR Funded
+4.1
+50% OFF
+MATCH
+In
+Instant Funding
+4.0
+40% OFF
+MATCH40
+Th
+ThinkCapital
+4.0
+40% OFF
+MATCH
+BE
+BEM Funding
+4.9
+40% OFF
+MATCH
+Ho
+Hola Prime
+4.4
+10% OFF
+MATCH10
 Au
 Audacity Capital
 4.1
 50% OFF
 MATCH50
+Th
+The Trading Pit
+4.0
+40% OFF
+MATCH
+Fu
+Funded Trading Plus
+4.4
+20% OFF
+MATCHBOGOF
 Best Forex Prop Firm Match Offers
 200LP Welcome Bonus
 Th
@@ -184,15 +184,15 @@ The5ers
 4.7
 10% OFF
 MATCH
-E8
-E8 Markets
-4.8
-15% OFF
-MATCH
 Aq
 AquaFunded
 4.4
 35% OFF
+MATCH
+Bl
+Blueberry Funded
+4.1
+30% OFF
 MATCH
 See All Offers
 Firms Challenges Offers Reviews Perps Firms Trending
@@ -204,7 +204,7 @@ Favorite 0/5
 New
 All Firms
 Firms 15 results
-Data updated 5 min ago
+Data updated just now
 Firm
 Rank / Reviews
 Country / Years
@@ -215,9 +215,9 @@ Promo
 Actions
 Th
 The5ers
-100431
+100441
 4.7
-1439
+1441
 reviews
 United Kingdom, years in operation: 10 10+
 FX, Indices, Metals, Energy, Crypto, Stocks FX
@@ -230,44 +230,9 @@ $1.43M
 10% OFF
 MATCH
 Firm
-E8
-E8 Markets
-39196
-4.8
-498
-reviews
-United States, years in operation: 5 5
-FX, Indices, Metals, Energy, Crypto FX
-Indices
-Metals
-Energy
-Crypto
-+ 1
-$1.1M
-15% OFF
-MATCH
-Firm
-Cr
-Crypto Fund Trader
-39614
-4.2
-113
-reviews
-Switzerland, years in operation: 4 4
-FX, Indices, Crypto, Stocks, Other Commodities FX
-Indices
-Crypto
-Stocks
-Other Commodities
-CF
-$300K
-25% OFF
-MATCH25
-Firm
-4
 FT
 FTMO
-44365
+44368
 4.5
 220
 reviews
@@ -281,10 +246,9 @@ Crypto
 $400K
 30% OFF
 Firm
-5
 Aq
 AquaFunded
-17089
+17094
 4.4
 344
 reviews
@@ -298,60 +262,7 @@ $400K
 35% OFF
 MATCH
 Firm
-6
-WS
-WSFunded
-361
-3.8
-51
-reviews
-Dubai (UAE), years in operation: 2 2
-FX, Indices, Metals, Energy, Crypto, Stocks, Other Commodities FX
-Indices
-Metals
-Energy
-Crypto
-+ 2
-$400K
-55% OFF
-MATCH55
-Firm
-7
-Ma
-Maven
-48256
-4.2
-801
-reviews
-Saint Lucia, years in operation: 3 3
-FX, Indices, Metals, Energy, Crypto, Other Commodities FX
-Indices
-Metals
-Energy
-Crypto
-+ 1
-$200K
-40% OFF
-O****
-Firm
-8
-Mo
-Moneta Funded
-1556
-4.8
-130
-reviews
-Dubai (UAE), years in operation: 1 1
-FX, Indices, Metals, Energy, Crypto FX
-Indices
-Metals
-Energy
-Crypto
-$880K
-55% OFF
-MATCH55
-Firm
-9
+4
 Bl
 Blueberry Funded
 26286
@@ -369,10 +280,45 @@ $400K
 30% OFF
 MATCH
 Firm
-10
+5
+E8
+E8 Markets
+39199
+4.8
+498
+reviews
+United States, years in operation: 5 5
+FX, Indices, Metals, Energy, Crypto FX
+Indices
+Metals
+Energy
+Crypto
++ 1
+$1.1M
+15% OFF
+MATCH
+Firm
+6
+Mo
+Moneta Funded
+1557
+4.8
+130
+reviews
+Dubai (UAE), years in operation: 1 1
+FX, Indices, Metals, Energy, Crypto FX
+Indices
+Metals
+Energy
+Crypto
+$880K
+55% OFF
+MATCH55
+Firm
+7
 To
 Top One Trader
-30333
+30338
 4.4
 237
 reviews
@@ -384,6 +330,60 @@ Crypto
 $600K
 70% OFF
 MATCH
+Firm
+8
+Ma
+Maven
+48260
+4.2
+801
+reviews
+Saint Lucia, years in operation: 3 3
+FX, Indices, Metals, Energy, Crypto, Other Commodities FX
+Indices
+Metals
+Energy
+Crypto
++ 1
+$200K
+40% OFF
+O****
+Firm
+9
+WS
+WSFunded
+362
+3.8
+51
+reviews
+Dubai (UAE), years in operation: 2 2
+FX, Indices, Metals, Energy, Crypto, Stocks, Other Commodities FX
+Indices
+Metals
+Energy
+Crypto
++ 2
+$400K
+55% OFF
+MATCH55
+Firm
+10
+Cr
+Crypto Fund Trader
+39622
+4.2
+113
+reviews
+Switzerland, years in operation: 4 4
+FX, Indices, Crypto, Stocks, Other Commodities FX
+Indices
+Crypto
+Stocks
+Other Commodities
+CF
+$300K
+25% OFF
+MATCH25
 Firm
 11
 Fi
@@ -421,26 +421,26 @@ $400K
 MATCH
 Firm
 13
-Or
-Orion Funded
-393
+Le
+Leveraged
+185
 Less than
 20 reviews
-Dubai (UAE), years in operation: 3 3
+Saint Lucia, years in operation: 1 1
 FX, Indices, Metals, Energy, Crypto, Stocks, Other Commodities FX
 Indices
 Metals
 Energy
 Crypto
 + 2
-$600K
-50% OFF
-MATCH50
+$1.7M
+60% OFF
+MATCH
 Firm
 14
 Ci
 City Traders Imperium
-2456
+2457
 4.3
 57
 reviews
@@ -455,21 +455,22 @@ $720K
 MATCH
 Firm
 15
-Ho
-Hola Prime
-3203
-4.4
-210
+La
+Lark Funding
+4469
+4.5
+92
 reviews
-Hong Kong, years in operation: 2 2
-FX, Indices, Metals, Energy, Crypto FX
+Canada, years in operation: 4 4
+FX, Indices, Metals, Energy, Crypto, Stocks FX
 Indices
 Metals
 Energy
 Crypto
-$400K
-10% OFF
-MATCH10
++ 1
+$300K
+5% OFF
+MATCH
 Firm
 View All Firms
 PFM TV Watch live. Stay ahead

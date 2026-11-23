@@ -961,50 +961,24 @@
 ## Audacity Capital — https://audacitycapital.co.uk/whistleblower-policy/
 - AUTO: Terms & Conditions Privacy Policy Scam Alert Whistleblower Policy Complaints Handling Press & Media Fake Reviews Policy
 
-## Blue Guardian — https://help.blueguardian.com
+## Blue Guardian — https://help.blueguardian.com/en/articles/18446026-zero-account-rules
+- AUTO: Open positions close automatically at 4:10 PM, so you can't hold overnight.
+- AUTO: Copy trading: only between accounts you legally own.
 - COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
 
-## Blue Guardian — https://help.blueguardian.com/en
-- COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
+## Blue Guardian — https://www.blueguardian.com/
+- AUTO: Whether automated trading systems (EAs) are permitted.
+- AUTO: Whether automated trading systems (EAs) are permitted.
 
-## Blue Guardian — https://help.blueguardian.com/en/articles/18426598-kyc-verification-what-you-need-and-when
+## Blue Guardian — https://www.blueguardian.com/faq/articles/18426598-kyc-verification-what-you-need-and-when
 - AUTO: Every user is automatically screened against:
 - COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
 - COUNTRY: Applies to: CFD and Futures Who can sign up: age and restricted countries Applies to: CFD and Futures Account rules: ownership, devices and fair use
 
-## Blue Guardian — https://help.blueguardian.com/en/articles/18426605-how-payouts-work
+## Blue Guardian — https://www.blueguardian.com/faq/articles/18426605-how-payouts-work
 - COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
 
-## Blue Guardian — https://help.blueguardian.com/en/articles/18426606-account-inactivity-rule
-- COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
-
-## Blue Guardian — https://help.blueguardian.com/en/articles/18426607-who-can-sign-up-age-and-restricted-countries
-- COUNTRY: Who can sign up: age and restricted countries | Blue Guardian Help Centre
-- COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
-- COUNTRY: Who can sign up: age and restricted countries
-- COUNTRY: People with citizenship or residency in a restricted country can't open or keep an account for that product.
-- COUNTRY: Restricted countries: CFD
-- COUNTRY: Restricted countries: Futures
-
-## Blue Guardian — https://help.blueguardian.com/en/articles/18426633-how-blue-guardian-works
-- COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
-
-## Blue Guardian — https://help.blueguardian.com/en/articles/18426637-getting-help-and-using-your-dashboard
-- COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
-
-## Blue Guardian — https://help.blueguardian.com/en/articles/18426640-paying-for-your-account-methods-card-rules-and-refunds
-- COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
-
-## Blue Guardian — https://help.blueguardian.com/en/articles/18426641-how-many-accounts-can-i-have
-- COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
-
-## Blue Guardian — https://help.blueguardian.com/en/articles/18426642-futures-bundle-discounts
-- AUTO: The discount is applied automatically at checkout.
-- AUTO: The discount is applied automatically at checkout.
-- COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
-
-## Blue Guardian — https://help.blueguardian.com/en/articles/18426719-prohibited-trading-strategies
-- AUTO: Which trading strategies are not allowed on CFD and Futures accounts, including hedging, automation, copy trading, microscalping and martingale.
+## Blue Guardian — https://www.blueguardian.com/faq/articles/18426719-prohibited-trading-strategies
 - AUTO: Hedging, automation and martingale at a glance
 - AUTO: Fully automated trading (bots, AI)
 - AUTO: HFT, tick scalping and arbitrage bots not allowed
@@ -1019,167 +993,51 @@
 - AUTO: Hedging, automation and martingale at a glance
 - COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
 
-## Blue Guardian — https://help.blueguardian.com/en/articles/18426721-account-rules-ownership-devices-and-fair-use
-- AUTO: Copy trading is only allowed between accounts you legally own.
-- AUTO: This includes devices belonging to friends, family members, colleagues, trading communities, signal providers or account managers, as well as shared computers and VPS services.
-- COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
-- COUNTRY: Applies to: CFD and Futures KYC verification: what you need and when Applies to: CFD and Futures Who can sign up: age and restricted countries
-
-## Blue Guardian — https://help.blueguardian.com/en/articles/18426723-what-happens-if-i-break-a-rule
-- AUTO: What happens if you break a rule during an evaluation or on a funded account, manual reviews, and soft vs hard breaches.
-- AUTO: Not every violation is caught automatically, so accounts are also reviewed manually, especially at payout time.
-- AUTO: Some violations are only found during a manual review by our Risk Team, for example during a payout request or a compliance check.
+## Blue Guardian — https://www.blueguardian.com/faq/articles/18426756-reserve-account-rules
 - COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
 
-## Blue Guardian — https://help.blueguardian.com/en/articles/18426726-futures-risk-management-rules
-- AUTO: This applies to scalping too.
-- AUTO: For example, a scalper aiming for 10 ticks of profit might set a 30-tick initial stop.
-- COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
-
-## Blue Guardian — https://help.blueguardian.com/en/articles/18426727-trading-hours-and-the-trading-day
-- AUTO: The 5 PM New York daily reset (rollover) for CFD and Futures, and Futures trading hours including the automatic 4:10 PM close.
-- AUTO: Futures can be traded from 6:00 PM to 4:10 PM, and any Futures trades still open at 4:10 PM are closed automatically.
-- AUTO: Markets open at 6 PM, open positions are closed automatically at 4:10 PM, and the trading day resets at 5 PM New York time, following US daylight saving.
-- AUTO: All open Futures trades close automatically at 4:10 PM .
-- AUTO: This automatic close is not a rule violation and will not breach your account.
-- COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
-
-## Blue Guardian — https://help.blueguardian.com/en/articles/18426740-trading-platforms
-- AUTO: NinjaTrader supports strategy automation, but our automated trading rules still apply: fully automated trading isn't allowed.
-- COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
-
-## Blue Guardian — https://help.blueguardian.com/en/articles/18426741-cfd-trading-conditions-markets-commissions-and-leverage
-- AUTO: If your account falls below it, your least profitable open trade is closed automatically.
-- COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
-
-## Blue Guardian — https://help.blueguardian.com/en/articles/18426742-futures-contract-limits-and-funded-scaling
-- AUTO: Orders that would take you over your limit are rejected automatically.
-- COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
-
-## Blue Guardian — https://help.blueguardian.com/en/articles/18426753-futures-instruments-codes-and-costs
-- COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
-
-## Blue Guardian — https://help.blueguardian.com/en/articles/18426756-reserve-account-rules
-- COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
-
-## Blue Guardian — https://help.blueguardian.com/en/articles/18426760-elite-account-rules
-- AUTO: Copy trading: only between accounts you legally own.
-- COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
-
-## Blue Guardian — https://help.blueguardian.com/en/articles/18426764-express-account-rules
-- AUTO: Copy trading: only between accounts you legally own.
-- COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
-
-## Blue Guardian — https://help.blueguardian.com/en/articles/18426769-direct-account-rules
-- AUTO: Copy trading: only between accounts you legally own.
-- COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
-
-## Blue Guardian — https://help.blueguardian.com/en/articles/18426777-elite-reserve-direct-path-to-live
-- COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
-
-## Blue Guardian — https://help.blueguardian.com/en/articles/18426779-instant-standard-account-rules
-- AUTO: Tick scalping: hold each trade for at least 2 minutes .
-- AUTO: Expert Advisors: allowed, if they're your own setup.
-- AUTO: VPNs and VPS are allowed, but not to get around copy trading, group trading or signal rules.
-- AUTO: Copy trading: only between accounts you legally own, including your own external accounts.
-- COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
-
-## Blue Guardian — https://help.blueguardian.com/en/articles/18426780-instant-starter-account-rules
-- AUTO: Any extra Instant Starter accounts bought by the same trader are breached automatically and can't be refunded.
-- AUTO: Tick scalping: hold each trade for at least 2 minutes .
-- AUTO: Expert Advisors: allowed, if they're your own setup.
-- AUTO: VPNs and VPS are allowed, but not to get around copy trading, group trading or signal rules.
-- AUTO: Copy trading: only between accounts you legally own.
-- COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
-
-## Blue Guardian — https://help.blueguardian.com/en/articles/18426782-1-step-standard-rules
+## Blue Guardian — https://www.blueguardian.com/faq/articles/18426782-1-step-standard-rules
 - AUTO: Tick scalping: on funded accounts, hold each trade for at least 2 minutes .
 - AUTO: Expert Advisors: allowed, if they're your own setup.
 - AUTO: VPNs and VPS are allowed, but not to get around copy trading, group trading or signal rules.
 - AUTO: Copy trading: only between accounts you legally own, including between your own evaluation and funded accounts.
 - COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
 
-## Blue Guardian — https://help.blueguardian.com/en/articles/18426783-2-step-standard-rules
-- AUTO: Tick scalping: on funded accounts, hold each trade for at least 2 minutes .
-- AUTO: Expert Advisors: allowed, if they're your own setup.
-- AUTO: VPNs and VPS are allowed, but not to get around copy trading, group trading or signal rules.
-- AUTO: Copy trading: only between accounts you legally own, including between your own evaluation and funded accounts.
-- COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
-
-## Blue Guardian — https://help.blueguardian.com/en/articles/18426784-1-step-nano-rules
-- AUTO: Tick scalping: on funded accounts, hold each trade for at least 2 minutes .
-- AUTO: Expert Advisors: allowed, if they're your own setup.
-- AUTO: VPNs and VPS are allowed, but not to get around copy trading, group trading or signal rules.
-- AUTO: Copy trading: only between accounts you legally own, including between your own evaluation and funded accounts.
-- COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
-
-## Blue Guardian — https://help.blueguardian.com/en/articles/18426785-2-step-nano-rules
-- AUTO: Tick scalping: on funded accounts, hold each trade for at least 2 minutes .
-- AUTO: Expert Advisors: allowed, if they're your own setup.
-- AUTO: VPNs and VPS are allowed, but not to get around copy trading, group trading or signal rules.
-- AUTO: Copy trading: only between accounts you legally own, including between your own evaluation and funded accounts.
-- COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
-
-## Blue Guardian — https://help.blueguardian.com/en/articles/18426786-buy-now-pay-later-bnpl-rules
-- AUTO: Tick scalping: on funded accounts, hold each trade for at least 2 minutes .
-- AUTO: Expert Advisors: allowed, if they're your own setup.
-- AUTO: VPNs and VPS are allowed, but not to get around copy trading, group trading or signal rules.
-- AUTO: Copy trading: only between accounts you legally own, including between your own evaluation and funded accounts.
-- COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
-
-## Blue Guardian — https://help.blueguardian.com/en/articles/18426788-cfd-news-trading-rules
-- COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
-
-## Blue Guardian — https://help.blueguardian.com/en/articles/18426789-affiliate-program
-- COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
-
-## Blue Guardian — https://help.blueguardian.com/en/articles/18426791-monthly-trading-competition
-- AUTO: EAs and trade copiers aren't allowed.
-- AUTO: EAs and trade copiers
-- COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
-
-## Blue Guardian — https://help.blueguardian.com/en/articles/18446026-zero-account-rules
+## Blue Guardian — https://www.blueguardian.com/faq/articles/18446026-zero-account-rules
 - AUTO: Open positions close automatically at 4:10 PM, so you can't hold overnight.
 - AUTO: Copy trading: only between accounts you legally own.
 - COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
 
-## Blue Guardian — https://help.blueguardian.com/en/articles/18446728-zero-path-to-live
+## Blue Guardian — https://www.blueguardian.com/faq/collections/19810134-getting-started
 - COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
 
-## Blue Guardian — https://help.blueguardian.com/en/collections/19810134-getting-started
-- COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
-
-## Blue Guardian — https://help.blueguardian.com/en/collections/19810135-verification-and-kyc
+## Blue Guardian — https://www.blueguardian.com/faq/collections/19810135-verification-and-kyc
 - COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
 - COUNTRY: Applies to: CFD and Futures Who can sign up: age and restricted countries Age requirement and the countries where Blue Guardian can't offer CFD or Futures accounts.
 
-## Blue Guardian — https://help.blueguardian.com/en/collections/19810136-payouts
+## Blue Guardian — https://www.blueguardian.com/faq/collections/19810136-payouts
 - COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
 
-## Blue Guardian — https://help.blueguardian.com/en/collections/19810137-billing-and-accounts
+## Blue Guardian — https://www.blueguardian.com/faq/collections/19810137-billing-and-accounts
 - COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
 
-## Blue Guardian — https://help.blueguardian.com/en/collections/19810138-trading-rules
+## Blue Guardian — https://www.blueguardian.com/faq/collections/19810138-trading-rules
 - AUTO: Applies to: CFD and Futures Prohibited trading strategies Which trading strategies are not allowed on CFD and Futures accounts, including hedging, automation, copy trading, microscalping and martingale.
 - AUTO: What happens if you break a rule during an evaluation or on a funded account, manual reviews, and soft vs hard breaches.
 - AUTO: Applies to: CFD and Futures Trading hours and the trading day The 5 PM New York daily reset (rollover) for CFD and Futures, and Futures trading hours including the automatic 4:10 PM close.
 - COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
 
-## Blue Guardian — https://help.blueguardian.com/en/collections/19810139-platforms-and-instruments
+## Blue Guardian — https://www.blueguardian.com/faq/collections/19810139-platforms-and-instruments
 - COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
 
-## Blue Guardian — https://help.blueguardian.com/en/collections/19810140-cfd-plans
+## Blue Guardian — https://www.blueguardian.com/faq/collections/19810140-cfd-plans
 - COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
 
-## Blue Guardian — https://help.blueguardian.com/en/collections/19810141-futures-plans
+## Blue Guardian — https://www.blueguardian.com/faq/collections/19810141-futures-plans
 - COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
 
-## Blue Guardian — https://help.blueguardian.com/en/collections/19810142-affiliates-and-competitions
+## Blue Guardian — https://www.blueguardian.com/faq/collections/19810142-affiliates-and-competitions
 - COUNTRY: Verification & KYC KYC verification: what you need and when Who can sign up: age and restricted countries Account rules: ownership, devices and fair use
-
-## Blue Guardian — https://www.blueguardian.com/
-- AUTO: Whether automated trading systems (EAs) are permitted.
-- AUTO: Whether automated trading systems (EAs) are permitted.
 
 ## Blue Guardian — https://www.blueguardian.com/privacy-policy
 - AUTO: Automatically through the use of cookies, server logs, and other similar technologies when you interact with the Site, promotional material, advertisements and emails; and
@@ -2526,11 +2384,6 @@
 - AUTO: Is tick scalping legal?
 - COUNTRY: Are any countries restricted on FundedNext CFDs?
 
-## FundedNext Futures — https://fundednext.com/aml-policy
-- AUTO: In adherence to the legal obligations, a meticulous manual approval process is diligently undertaken for each transaction, employing the principles of due diligence.
-- AUTO: Within GrowthNext F.Z.E., a distinct and dedicated risk management unit exists, tasked with the meticulous manual examination of individual client profiles.
-- AUTO: conducts a meticulous manual review and approval of each transaction, applying the principles of due diligence.
-
 ## FundedNext Futures — https://fundednext.com/cfd-challenge-terms
 - AUTO: Risk Controls; Automatic Restrictions; Platform Integrity
 - AUTO: The Customer acknowledges that risk controls and enforcement measures may be applied automatically, including restricting trading and/or disabling functions when loss limits are reached.
@@ -2548,13 +2401,6 @@
 - AUTO: Without limitation, prohibited patterns may include excessive one-sided exposure, repeated "all-in" bets, grid trading, tick scalping, unrealistic order patterns, artificial trade fragmentation, account rolling, abusive patterns, or any comparable pattern which the Provider reasonably determines to be inconsistent with the evaluation purpose and indicative of abuse, manipulation, or circumvention.
 - AUTO: The Customer must not interfere with, disrupt, probe, scan, test, or compromise the security, stability, or integrity of the Website, Platform, or any Provider or Third Party systems, and must not introduce malware, bots, harmful code, or perform any action that could impair or degrade operations.
 - AUTO: The Provider may apply measures, including through automated or manual systems, it deems appropriate to protect programme integrity, including warnings, restrictions, suspensions, profit adjustments, disqualification, termination, denial of progression, and permanent bans, and/or the withholding, suspension, adjustment, reversal, denial, or set-off of any Performance Reward.
-
-## FundedNext Futures — https://fundednext.com/cookie-policy
-- AUTO: Most browsers automatically accept cookies by default.
-- AUTO: Enabling these cookies is automatic and cannot be turned off, as they are necessary for the operation of the Website.
-- AUTO: In the case of automated processing based on your consent or performance of the contract, you have the right to receive the data in a structured, commonly used and machine-readable format and to have them transmitted by us to another personal data controller.
-- AUTO: Right not to be the subject of automated decision-making
-- AUTO: Except where processing is necessary for entering into, or performance of, a contract, where this is permitted by applicable law, or based on your express consent, you have the right not to be the subject of any decision which is based solely on automated processing, including profiling, which produces legal effects concerning you or similarly affects you to a significant extent.
 
 ## FundedNext Futures — https://fundednext.com/futures-challenge-terms
 - AUTO: Upon reaching or exceeding the applicable Maximum Loss Limit (MLL) or Daily Loss Limit (DLL), FundedNext reserves the right to automatically restrict trading activity on the affected account for a certain period of time or indefinitely.

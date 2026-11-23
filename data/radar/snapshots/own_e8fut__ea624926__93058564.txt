@@ -7,7 +7,7 @@ Get Started
 Is verification required?
 Is verification required?
 KYC and AML policies
-Updated over 2 weeks ago
+Updated today
 Table of contents
 As a regulated business, E8 Markets is required to comply with financial regulations, including laws designed to prevent money laundering and terrorist financing. KYC verification also ensures that each user operates only one account, maintaining fairness across our platform.
 ​
@@ -59,6 +59,9 @@ ESPA:
 To access our services, all users are required to review and sign the new Educational Simulation Participant Agreement (ESPA). The ESPA replaces the previous E8 Trader Agreement and reflects our updated terms for participation in E8’s educational simulation environment. To sign ESPA, you need to access it with a password code that is automatically sent to your email.
 ​
 Please ensure you read and accept the ESPA before continuing to use our platform. A copy of the signed ESPA document is always sent to your email.
+Digital documents (India Only)
+​
+At this moment, Veriff mainly accepts 3 types of documents: an ID card, passport, or driver's license. However, as a user in India, you also have the option to use DigiLocker for digital verification with your Aadhaar document. You can select this option after starting the verification process within your dashboard.
 Single User (E8X) Profile policy
 Users are only allowed to have a single user profile, so all purchases of our Challenges must be made through one registered user profile. All accounts must be traded solely by their respective owners.
 Creating multiple user profiles under different emails or trading accounts from different users is a violation of our terms and conditions and may lead to the temporary or permanent suspension of your active accounts and user profile.

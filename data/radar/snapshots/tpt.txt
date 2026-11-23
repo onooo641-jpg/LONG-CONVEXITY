@@ -132,9 +132,160 @@ Capital
 Simply put, most traders are undercapitalized. Level the playing field by using our accounts, not your own funds.
 Risk of Loss
 Trading your own funds can lead to severe losses, however with Take Profit Trader your losses are limited to your associated challenge fees.
-Choose Your Futures Account Size
-Purchase the subscription that meets your needs as a Trader.
-Below you can see the parameters for each trading account we offer.
+3 Paths to Daily Payouts
+The TPT Standard, across every path
+True daily payouts
+No withdrawal limits
+Same profit targets
+No scaling plan
+No funded consistency rule
+Intraday
+--
+/mo
+For traders who manage risk well and want the lowest cost of entry.
+$25K
+$50K
+$150K
+Currently unavailable
+TEST
+Intraday
+PRO
+Intraday
+PRO+
+Intraday
+TEST
+PRO
+PRO+
+Intraday
+Intraday
+Intraday
+Days to Pass Test
+3
+Profit Target in Test
+--
+Drawdown Type
+Intraday
+Drawdown Amount
+--
+Daily Loss Limit
+--
+Max Mini Contracts
+--
+Max Micro Contracts
+--
+Consistency Rule in Test
+Yes
+Counter Positions Rule
+Yes
+5PM Rule
+Yes
+Payout Policy
+Daily
+Daily Profit Limit in PRO
+--
+Copy Trading
+Allowed
+Test Reset Price
+--
+Compare all features
+Classic
+--
+/mo
+For traders who want the signature TPT plan they already know.
+$25K
+$50K
+$150K
+Currently unavailable
+TEST
+EOD
+PRO
+Intraday
+PRO+
+EOD
+TEST
+PRO
+PRO+
+EOD
+Intraday
+EOD
+Days to Pass Test
+3
+Profit Target in Test
+--
+Drawdown Type
+Mixed
+Drawdown Amount
+--
+Daily Loss Limit
+--
+Max Mini Contracts
+--
+Max Micro Contracts
+--
+Consistency Rule in Test
+Yes
+Counter Positions Rule
+Yes
+5PM Rule
+Yes
+Payout Policy
+Daily
+Daily Profit Limit in PRO
+--
+Copy Trading
+Allowed
+Test Reset Price
+--
+Compare all features
+EOD
+--
+/mo
+For traders who want end-of-day flexibility and a fixed daily loss limit.
+$25K
+$50K
+$150K
+Currently unavailable
+TEST
+EOD
+PRO
+EOD
+PRO+
+EOD
+TEST
+PRO
+PRO+
+EOD
+EOD
+EOD
+Days to Pass Test
+3
+Profit Target in Test
+--
+Drawdown Type
+EOD
+Drawdown Amount
+--
+Daily Loss Limit
+--
+Max Mini Contracts
+--
+Max Micro Contracts
+--
+Consistency Rule in Test
+Yes
+Counter Positions Rule
+Yes
+5PM Rule
+Yes
+Payout Policy
+Daily
+Daily Profit Limit in PRO
+--
+Copy Trading
+Allowed
+Test Reset Price
+--
+Compare all features
 Your Platform, Your Choice
 Connect to any of our 15+ available trading platforms and get started today.
 CQG Data Feed
@@ -143,26 +294,62 @@ Rithmic Data Feed
 Platforms Available
 See more
 Your Take Profit Funded Journey
-Description
+Product Path
+Intraday
+Classic
+EOD
+Intraday path
 Test
 PRO
-PRO +
-Environment
+PRO+
 Environment
 SIM
 SIM
 LIVE
 Withdrawals
-Withdrawals
 None
 Day one
 Day one
-Profit split
 Profit split
 None
 80/20
 90/10
-See more
+Maximum # of accounts
+Unlimited
+5
+5
+Maximum withdrawal amount
+None
+No max
+No max
+Buffer requirement
+None
+Yes
+None
+Daily loss rule
+None
+None
+None
+Drawdown
+Intraday
+Intraday
+Intraday
+Consistency rule
+Yes
+None
+None
+News rule
+None
+Yes
+Yes
+Scaling plan
+None
+None
+None
+Commissions
+$4.50/$1.50 RT
+$4.50/$1.50 RT
+Broker rates
 Day-One Payouts In Your PRO Account
 It’s no secret, trading is hard. And for some, prop trading may be even harder as it forces you to be disciplined, manage your risk, and adhere to strict profit taking. That’s why we don’t think you should have to wait days, weeks, or even months to get the profit you already earned.
 Instead here at TPT,
@@ -196,7 +383,7 @@ Absolutely. While your PRO account operates in a simulated environment and the p
 How do live market (PRO+) accounts work? Where do my orders go?
 Take Profit uses Tradovate as its regulated broker for live (PRO+) accounts. All orders are passed through the exact same risk rules as they are in the simulated environment, the only difference is the orders are actually sent to the exchange from Tradovate, instead of staying in Tradovate’s simulated environment.
 What changes when I get to PRO+?
-Your PRO+ account will be a live-market account, which means your order gets sent to the exchange by the same regulated broker. In simulated environments (test and PRO) the order stays in their internal system, but in a live environment (PRO+) it is routed to the exchange, by the broker. In PRO+ you also have end-of-day drawdown and no buffer requirement.
+Your PRO+ account will be a live-market account, which means your order gets sent to the exchange by the same regulated broker. In simulated environments (test and PRO) the order stays in their internal system, but in a live environment (PRO+) it is routed to the exchange, by the broker. PRO+ accounts have no buffer requirement and a 90% profit split. The drawdown type depends on your Product Path: Intraday PRO+ accounts use intraday drawdown, while Classic and EOD PRO+ accounts use end-of-day drawdown.
 Don’t most people fail in trading? Is your test hard?
 Trading is extremely difficult. It’s a multi-trillion dollar industry where traders can make a “normal” month's salary in a single trading day, so you SHOULD expect that it will be hard to compete. This is not easy and it’s not some “get rich quick” opportunity. While we don’t know what the industry percentage for failure is, we can tell you that from 1/1/23 - 8/31/23, 20.37% of our currently registered users at Take Profit Trader have successfully passed a trading test. So yes, our trading test is challenging AND the markets are challenging. But you can increase your chances of getting funded by trading smaller, slower, and striving for consistently conservative gains instead of big “YOLO” wins. A failure of a test can cost, at MOST, $360, but oftentimes much less than that. The same failure, if you opened your own brokerage account, would have cost you several thousand dollars. So, while it may take you several times to pass a test with Take Profit Trader, the TRUE cost of being a losing trader will be much lower in a prop environment (with Take Profit Trader), than if you were to trade your test account side by side with a brokerage account (assuming you’re trading the same positions).
 Who pays out my profits from the PRO account?

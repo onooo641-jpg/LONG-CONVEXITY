@@ -7,7 +7,7 @@ Instant accounts
 Instant Max Loss Limit and Daily Loss Limit
 Instant Max Loss Limit and Daily Loss Limit
 End of Day Max Loss Limit, the hard breach Daily Loss Limit and the Remove Daily Loss option.
-Updated this week
+Updated over a week ago
 Table of contents
 Max Loss Limit (End of Day)
 5% of the starting balance, based on your end of day balance. It moves up only after a profitable day and locks at your starting balance plus $100.

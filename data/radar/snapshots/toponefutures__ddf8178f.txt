@@ -131,7 +131,7 @@ $9,000
 Max Drawdown (EOD)
 $4,500
 Daily loss limit
-$1,850
+$1,750
 Reset Fee
 $242
 Consistency on Eval
@@ -150,7 +150,7 @@ None!
 Max Drawdown (EOD)
 $3,500
 Daily Loss Limit
-$1,850
+$1,750
 Start with 150K
 50% OFF w. Code:
 MYSTERY
@@ -320,7 +320,7 @@ Consistency
 Max Drawdown (EOD)
 $3,500
 Daily Loss Limit
-$1,850
+$1,750
 Funded Drawdown Mode
 Static
 Intraday

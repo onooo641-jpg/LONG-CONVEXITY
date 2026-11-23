@@ -5,21 +5,21 @@ Baseline date: 2026-11-21
 ## Counts
 - S2 protocols: 9092
 - S1 reward pools: 1296
-- S3 Merkl live: 730
+- S3 Merkl live: 724
 - S4 governance hits: 58
-- pages fetched ok: 1771
-- pages total: 1818
-- candidates surviving to ranking: 90
+- pages fetched ok: 1759
+- pages total: 1805
+- candidates surviving to ranking: 88
 - of which all five filter parts verified: 19
-- near-miss rows total: 7454
+- near-miss rows total: 8030
 
 ## Near-miss by stage/reason (top)
 
-- first_pass / below threshold: 6609
-- quality / DefiLlama outlier flag: 272
-- filter / F4 price exposure, needs hedge; F5 TVL < $1,000,000: 232
-- filter / F4 price exposure, needs hedge: 148
-- filter / F5 TVL < $1,000,000: 86
+- first_pass / below threshold: 7179
+- quality / DefiLlama outlier flag: 273
+- filter / F4 price exposure, needs hedge; F5 TVL < $1,000,000: 234
+- filter / F4 price exposure, needs hedge: 150
+- filter / F5 TVL < $1,000,000: 87
 - deep / F2 not long-lived: 36
 - deep / F1 reward not persistent: 31
 - quality / implausible APR > 1000%: 14
@@ -34,37 +34,37 @@ Baseline date: 2026-11-21
 
 | venue | chain | what pays | $/day | capital | reward APR % | F1 | F2 | stable | new | Malaysia |
 |---|---|---|---|---|---|---|---|---|---|---|
-| stake-dao-yield | Ethereum | BOLD-USDC Curve reward tokens ['0x6440f144b7e50D6a | 989 | 1,055,193 | 34.2 | pass | fail | True | True | unverified-onchain |
-| curve-dex | Ethereum | BOLD-USDC nan reward tokens ['0x6440f144b7e50D6a84 | 9,364 | 10,111,035 | 33.8 | pass | pass | True | False | unverified-onchain |
-| curve-dex | Ethereum | BOLD-LUSD nan reward tokens ['0x6440f144b7e50D6a84 | 1,216 | 1,355,010 | 32.8 | fail | pass | True | True | unverified-onchain |
-| mento-v3 | Monad | AUSD-USDM nan reward tokens ['0xBC69212B8E4d445b23 | 831 | 2,090,360 | 14.5 | fail | fail | True | False | unverified-onchain |
-| lista-lending | BSC | USDT nan reward tokens ['0xFceB31A79F71AC9CBDCF853 | 360 | 1,100,040 | 12.0 | fail | fail | True | False | unverified-onchain |
-| morpho-blue | Base | RE7VENICEUSDC nan reward tokens ['0xacfe6019ed1a7d | 808 | 2,741,068 | 10.8 | fail | fail | True | False | unverified-onchain |
-| curve-dex | Ethereum | USDT-USDTE nan reward tokens ['0xD533a949740bb3306 | 293 | 1,011,047 | 10.6 | fail | fail | True | False | unverified-onchain |
-| stake-dao-yield | Ethereum | FRXUSD-DUSD Curve reward tokens ['0xD533a949740bb3 | 303 | 1,084,223 | 10.2 | fail | fail | True | False | unverified-onchain |
-| convex-finance | Ethereum | FRXUSD-DUSD nan reward tokens ['0xd533a949740bb330 | 715 | 2,640,398 | 9.9 | fail | unverified | True | False | unverified-onchain |
-| morpho-blue | Ethereum | RE7COUSDC nan reward tokens ['0xa12cc123ba206d4031 | 2,253 | 8,420,085 | 9.8 | fail | fail | True | False | unverified-onchain |
-| convex-finance | Ethereum | FRXUSD-MSUSD nan reward tokens ['0xd533a949740bb33 | 768 | 3,025,599 | 9.3 | pass | unverified | True | False | unverified-onchain |
-| sky-lending | Ethereum | USDS GROVE Farming Pool reward tokens ['0xb30FE1CF | 18,396 | 77,868,425 | 8.6 | fail | fail | True | False | unverified-onchain |
-| upshift | Stellar | HOLD Supply USDC in Upshift sentUSDC | 10,066 | 45,926,623 | 8.0 | unverified | pass | True | False | unverified-onchain |
-| morpho-blue | Stable | GPYUSDSE nan reward tokens ['0x28f1f38a9f7db1f769a | 9,203 | 42,896,101 | 7.8 | fail | fail | True | False | unverified-onchain |
-| stake-dao-yield | Ethereum | FRXUSD-MSUSD Curve reward tokens ['0xD533a949740bb | 834 | 3,932,706 | 7.7 | pass | fail | True | False | unverified-onchain |
-| convex-finance | Ethereum | EVAUSDT-EVAUSDC nan reward tokens ['0xd533a949740b | 500 | 2,377,281 | 7.7 | fail | unverified | True | False | unverified-onchain |
-| curve-dex | Ethereum | PMUSD-CRVUSD nan reward tokens ['0xD533a949740bb33 | 286 | 1,391,700 | 7.5 | pass | pass | True | False | unverified-onchain |
-| flying-tulip-ftusd | Ethereum | SFTUSD staked ftUSD (FT rewards bought on open mar | 350 | 1,707,488 | 7.5 | fail | fail | True | False | unverified-onchain |
-| reflect-tranches | Solana | SYRUPUSDC Senior reward tokens ['AvZZF1YaZDziPY2RC | 357 | 1,782,068 | 7.3 | fail | fail | True | True | unverified-onchain |
-| curve-dex | Ethereum | PMUSD-FRXUSD nan reward tokens ['0xD533a949740bb33 | 259 | 1,298,777 | 7.3 | pass | pass | True | False | unverified-onchain |
-| aave | Ethereum | LEND Supply RLUSD to the Aave V4 Sentora Hub | 14,979 | 78,103,373 | 7.0 | unverified | unverified | True | False | unverified-onchain |
-| yearn-finance | Katana | VBUSDC nan reward tokens ['0x7F1f4b4b29f5058fA32CC | 1,162 | 6,188,277 | 6.9 | pass | pass | True | False | unverified-onchain |
-| bluefin-spot | Sui | USDSUI-USDC 0.01% reward tokens ['0x00000000000000 | 253 | 1,349,635 | 6.8 | pass | pass | True | False | unverified-onchain |
-| stake-dao-yield | Ethereum | EVAUSDT-EVAUSDC Curve reward tokens ['0xD533a94974 | 705 | 3,764,079 | 6.8 | pass | fail | True | False | unverified-onchain |
-| stake-dao-yield | Ethereum | PYUSD-CRVUSD Curve reward tokens ['0x5D29949F8e64f | 3,185 | 17,559,747 | 6.6 | pass | fail | True | False | unverified-onchain |
+| stake-dao-yield | Ethereum | BOLD-USDC Curve reward tokens ['0x6440f144b7e50D6a | 968 | 1,055,431 | 33.5 | pass | fail | True | True | unverified-onchain |
+| curve-dex | Ethereum | BOLD-USDC nan reward tokens ['0x6440f144b7e50D6a84 | 9,357 | 10,326,657 | 33.1 | pass | pass | True | False | unverified-onchain |
+| curve-dex | Ethereum | BOLD-LUSD nan reward tokens ['0x6440f144b7e50D6a84 | 1,216 | 1,348,204 | 32.9 | fail | pass | True | True | unverified-onchain |
+| mento-v3 | Monad | AUSD-USDM nan reward tokens ['0xBC69212B8E4d445b23 | 831 | 2,091,150 | 14.5 | fail | fail | True | False | unverified-onchain |
+| lista-lending | BSC | USDT nan reward tokens ['0xFceB31A79F71AC9CBDCF853 | 348 | 1,093,358 | 11.6 | fail | fail | True | False | unverified-onchain |
+| curve-dex | Ethereum | USDT-USDTE nan reward tokens ['0xD533a949740bb3306 | 292 | 1,011,181 | 10.6 | fail | fail | True | False | unverified-onchain |
+| stake-dao-yield | Ethereum | FRXUSD-DUSD Curve reward tokens ['0xD533a949740bb3 | 305 | 1,084,258 | 10.3 | fail | fail | True | False | unverified-onchain |
+| morpho-blue | Base | RE7VENICEUSDC nan reward tokens ['0xacfe6019ed1a7d | 789 | 2,816,800 | 10.2 | fail | fail | True | False | unverified-onchain |
+| convex-finance | Ethereum | FRXUSD-DUSD nan reward tokens ['0xd533a949740bb330 | 717 | 2,640,402 | 9.9 | fail | unverified | True | False | unverified-onchain |
+| morpho-blue | Ethereum | RE7COUSDC nan reward tokens ['0xa12cc123ba206d4031 | 2,237 | 8,420,706 | 9.7 | fail | fail | True | False | unverified-onchain |
+| convex-finance | Ethereum | FRXUSD-MSUSD nan reward tokens ['0xd533a949740bb33 | 769 | 3,025,475 | 9.3 | pass | unverified | True | False | unverified-onchain |
+| reflect-tranches | Solana | SYRUPUSDC Senior reward tokens ['AvZZF1YaZDziPY2RC | 405 | 1,782,727 | 8.3 | fail | fail | True | True | unverified-onchain |
+| sky-lending | Ethereum | USDS GROVE Farming Pool reward tokens ['0xb30FE1CF | 18,490 | 83,518,116 | 8.1 | fail | fail | True | False | unverified-onchain |
+| upshift | Stellar | HOLD Supply USDC in Upshift sentUSDC | 10,088 | 46,027,493 | 8.0 | unverified | pass | True | False | unverified-onchain |
+| morpho-blue | Stable | GPYUSDSE nan reward tokens ['0x28f1f38a9f7db1f769a | 9,848 | 45,427,289 | 7.9 | fail | fail | True | False | unverified-onchain |
+| stake-dao-yield | Ethereum | FRXUSD-MSUSD Curve reward tokens ['0xD533a949740bb | 840 | 3,932,506 | 7.8 | pass | fail | True | False | unverified-onchain |
+| stake-dao-yield | Ethereum | PYUSD-CRVUSD Curve reward tokens ['0x5D29949F8e64f | 3,730 | 17,561,534 | 7.8 | pass | fail | True | False | unverified-onchain |
+| convex-finance | Ethereum | EVAUSDT-EVAUSDC nan reward tokens ['0xd533a949740b | 501 | 2,377,193 | 7.7 | fail | unverified | True | False | unverified-onchain |
+| flying-tulip-ftusd | Ethereum | SFTUSD staked ftUSD (FT rewards bought on open mar | 347 | 1,707,488 | 7.4 | fail | fail | True | False | unverified-onchain |
+| curve-dex | Ethereum | PMUSD-CRVUSD nan reward tokens ['0xD533a949740bb33 | 285 | 1,471,631 | 7.1 | pass | pass | True | False | unverified-onchain |
+| aave | Ethereum | LEND Supply RLUSD to the Aave V4 Sentora Hub | 14,982 | 78,122,940 | 7.0 | unverified | unverified | True | False | unverified-onchain |
+| curve-dex | Ethereum | PMUSD-FRXUSD nan reward tokens ['0xD533a949740bb33 | 258 | 1,370,819 | 6.9 | pass | pass | True | False | unverified-onchain |
+| stake-dao-yield | Ethereum | EVAUSDT-EVAUSDC Curve reward tokens ['0xD533a94974 | 708 | 3,763,939 | 6.9 | pass | fail | True | False | unverified-onchain |
+| bluefin-spot | Sui | USDSUI-USDC 0.01% reward tokens ['0x00000000000000 | 253 | 1,349,644 | 6.8 | pass | pass | True | False | unverified-onchain |
+| stake-dao-yield | Ethereum | FRXUSD-CRVUSD Curve reward tokens ['0xD533a949740b | 309 | 1,785,557 | 6.3 | pass | fail | True | False | unverified-onchain |
 
 ## Test queue (addendum 3: top 3 venues by 90-day mean of base + 0.9 x reward APR)
 
-- bluefin-spot (Sui) USDSUI-USDC 0.01% reward tokens ['0x000000000000000000000000: 15.08%/yr over 90 d, TVL $1,349,635, pool e3887972-24e6-45a9-8ef5-bcc22b6b5739
-- ember (Sui) USDC R25 Treasury reward tokens ['0xdba34672e30cb065b1f93e3a: 11.58%/yr over 90 d, TVL $8,457,278, pool 0ce62070-5201-47d1-84d5-f76d7e0cf5c0
-- dolomite (Ethereum) USD1 nan reward tokens ['0xdA5e1988097297dCdc1f90D4dFE7909e8: 7.82%/yr over 90 d, TVL $52,428,217, pool 86e18974-35ca-4948-9c82-694facf9d082
+- bluefin-spot (Sui) USDSUI-USDC 0.01% reward tokens ['0x000000000000000000000000: 15.09%/yr over 90 d, TVL $1,349,644, pool e3887972-24e6-45a9-8ef5-bcc22b6b5739
+- ember (Sui) USDC R25 Treasury reward tokens ['0xdba34672e30cb065b1f93e3a: 11.58%/yr over 90 d, TVL $8,457,619, pool 0ce62070-5201-47d1-84d5-f76d7e0cf5c0
+- dolomite (Ethereum) USD1 nan reward tokens ['0xdA5e1988097297dCdc1f90D4dFE7909e8: 7.82%/yr over 90 d, TVL $52,428,806, pool 86e18974-35ca-4948-9c82-694facf9d082
 
 ## Governance proposals mentioning incentives (last 45d, newest 25)
 
@@ -94,7 +94,7 @@ Baseline date: 2026-11-21
 - fusedao.eth: [closed] FIP14: Zero Inflation, 400M Cap Enforced On-Chain, 30M FUSE for Validator Rewards Through the Transit https://snapshot.org/#/fusedao.eth/proposal/0x2cba3ecb0f952ebb2d82583bb9279cc836e36c18ce2ed540299ab254dcdc5e94
 - sdfxn.eth: [closed] Gauge vote FXN - 12/11/2026 - 25/11/2026 https://snapshot.org/#/sdfxn.eth/proposal/0x6214cbfb2dd2fcd86ba05d14fd8a5297622c9ec18b1fc7447e7e3304743eb31a
 
-## Prop-firm rule/price changes today: 553 pages
+## Prop-firm rule/price changes today: 627 pages
 
 - **Take Profit Trader** https://www.takeprofittrader.com/: New: 3 Plans Including An EOD Drawdown Plan! SEE DETAILS . Get 40% Off + No Activation Fee On Any Plan. Use Code: NOFEE40
 - **Blue Guardian** https://www.blueguardian.com/: $1,430.00 / $620.00 / $405.00
@@ -178,8 +178,28 @@ Baseline date: 2026-11-21
 - **FuturesElite** https://faq.futureselite.com/en/articles/17585527-the-live-trading-program: Prime funded stage and payouts / Instant payouts and cushion
 - **DayTraders** https://daytraders.com/help/articles/17684700-trail-payouts: How to Request a Payout
 - **DayTraders** https://daytraders.com/help/articles/18352323-holiday-calendar-2027: Static Payouts
+- **Take Profit Trader** https://www.takeprofittrader.com/: 3 Paths to Daily Payouts / True daily payouts / Same profit targets
+- **Top One Futures** https://www.toponefutures.com/: Elite Access now with a 6% 4% profit target / Elite Access now with a 6% 4% profit target / Elite Access now with a 6% 4% profit target
+- **MyFundedFutures** https://myfundedfutures.com/studio: $75 / $140 / $280
+- **MyFundedFutures** https://myfundedfutures.com/plans/builder: $725.60 / Payout auto-approved / $800.00
+- **MyFundedFutures** https://myfundedfutures.com/plans/rapid: $2,360.70 / $1,599.30 / $517.86
+- **MyFundedFutures** https://myfundedfutures.com/plans/rapid-eod: $2,360.70 / $1,599.30 / $517.86
+- **MyFundedFutures** https://myfundedfutures.com/plans/pro: $2,271.20 / Payout auto-approved / $2,274.40
+- **Blue Guardian** https://help.blueguardian.com/en/articles/18446026-zero-account-rules: If you chose end-of-day drawdown for your evaluation, your loss limit moves up only when you set a new highest end-of-day closing balance, a / Every funded Zero account has a daily profit limit. If an account reaches it, that account closes for the day and you choose: take a payout  / How is Zero different from Reserve? Both have the same profit target, drawdown sizes and contract limits. Zero pays out daily with no cap on
+- **Top One Futures** https://www.toponefutures.com/coupon-code-pricing: $1,750 / $1,750 / $1,750
+- **FundedNext Futures** https://fundednext.com/cookie-policy: FundedNext Labs - Limited Slots. Real Experiments. / or get $1,000 extra / $ 306.9 $ 0.0 M+
+- **FundedNext Futures** https://fundednext.com/aml-policy: FundedNext Labs - Limited Slots. Real Experiments. / or get $1,000 extra / $ 306.9 $ 0.0 M+
+- **E8 Markets** https://e8markets.com/e8-traders-stories: 10h ago $5,000 Perpetual +$102 / 11h ago $25,000 Classic Markets +$165 / 12h ago $25,000 Classic Markets +$432
+- **HyroTrader** https://hyrotrader.com/transparency/: 18 hours ago Solana ASNqde…BbwTvE $1,154.32 Solscan / 18 hours ago Solana 3Rk2cv…PpgEgU $1,434.59 Solscan / 18 hours ago Solana 3ZW1PC…26Apdm $625.94 Solscan
+- **Topstep** https://help.topstep.com/en/articles/13350348-topstep-holiday-trading-hours: Staying Outside the 2% Price Limit Zone
+- **Topstep** https://help.topstep.com/en/articles/12060405-back2funded-rules-guidelines-and-how-it-works: Topstep Payout Policy
+- **Topstep** https://help.topstep.com/en/articles/8284108-how-to-identify-the-futures-front-month-contract: Staying Outside the 2% Price Limit Zone
+- **MyFundedFutures** https://myfundedfutures.com/coupons: $2,271.20 / Payout auto-approved / $2,274.40
+- **MyFundedFutures** https://help.myfundedfutures.com/en/articles/12879226-pro-plan-1day-addon: Guide to Your First Payout: Quick and Easy Process
+- **FundedNext Futures** https://fundednext.com/usa/cfds: $49.99
+- **BrightFunded** https://help.brightfunded.com/en/articles/9241590-how-do-i-get-funded-old: 💡 15% Evaluation Reward — profits generated during Stage 1 and Stage 2 are not lost. Upon reaching 10% growth on your funded account and req
 
-## Page changes today: 560
+## Page changes today: 635
 
 - Take Profit Trader (firm) https://www.takeprofittrader.com/: +1 / -1 lines
 - Alpha Futures (firm) https://alpha-futures.com/: +4 / -4 lines

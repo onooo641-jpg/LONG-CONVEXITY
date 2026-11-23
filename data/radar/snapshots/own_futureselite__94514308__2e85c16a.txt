@@ -7,7 +7,7 @@ Instant accounts
 OLD Instant drawdown and staying active
 OLD Instant drawdown and staying active
 How the Max Loss Limit locks and the 7-day trading rule.
-Updated this week
+Updated over a week ago
 Table of contents
 Max Loss Limit
 The drawdown is End of Day: based on your closed balance, unchanged after a losing day and raised only after a profitable day. Once your equity reaches your starting balance plus the Max Loss Limit, the limit locks at your starting balance.
