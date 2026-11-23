@@ -1,4 +1,6 @@
-# Map of this repo, by workstream (start here)
+# Map of this repo, by workstream
+
+**New readers: open `docs/START_HERE.md` first** (every result sorted from what works to what failed).
 
 The repo holds three separate things. They share tools (backtest engine, pre-registration rules, figures
 ledger) but **not** results: a number from one workstream says nothing about another.
