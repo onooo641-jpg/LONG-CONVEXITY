@@ -1,0 +1,42 @@
+quote: $2.4282 for 52 continuous symbols, ohlcv-1d, 2010-06-06..2026-11-01
+/home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/scripts/fetch_databento_daily.py:44: BentoWarning: The streaming request contained one or more days which have reduced quality: 2014-06-11 (degraded), 2014-06-12 (degraded), 2014-06-13 (degraded)... See: https://databento.com/docs/api-reference-historical/metadata/metadata-get-dataset-condition
+  parts.append(client.timeseries.get_range(**{**kw, "symbols": chunk}).to_df().reset_index())
+  fetched 4/52 symbols
+/home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/scripts/fetch_databento_daily.py:44: BentoWarning: The streaming request contained one or more days which have reduced quality: 2014-06-11 (degraded), 2014-06-12 (degraded), 2014-06-13 (degraded)... See: https://databento.com/docs/api-reference-historical/metadata/metadata-get-dataset-condition
+  parts.append(client.timeseries.get_range(**{**kw, "symbols": chunk}).to_df().reset_index())
+  fetched 8/52 symbols
+/home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/scripts/fetch_databento_daily.py:44: BentoWarning: The streaming request contained one or more days which have reduced quality: 2014-06-11 (degraded), 2014-06-12 (degraded), 2014-06-13 (degraded)... See: https://databento.com/docs/api-reference-historical/metadata/metadata-get-dataset-condition
+  parts.append(client.timeseries.get_range(**{**kw, "symbols": chunk}).to_df().reset_index())
+  fetched 12/52 symbols
+/home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/scripts/fetch_databento_daily.py:44: BentoWarning: The streaming request contained one or more days which have reduced quality: 2014-06-11 (degraded), 2014-06-12 (degraded), 2014-06-13 (degraded)... See: https://databento.com/docs/api-reference-historical/metadata/metadata-get-dataset-condition
+  parts.append(client.timeseries.get_range(**{**kw, "symbols": chunk}).to_df().reset_index())
+  fetched 16/52 symbols
+/home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/scripts/fetch_databento_daily.py:44: BentoWarning: The streaming request contained one or more days which have reduced quality: 2014-06-11 (degraded), 2014-06-12 (degraded), 2014-06-13 (degraded)... See: https://databento.com/docs/api-reference-historical/metadata/metadata-get-dataset-condition
+  parts.append(client.timeseries.get_range(**{**kw, "symbols": chunk}).to_df().reset_index())
+  fetched 20/52 symbols
+/home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/scripts/fetch_databento_daily.py:44: BentoWarning: The streaming request contained one or more days which have reduced quality: 2014-06-11 (degraded), 2014-06-12 (degraded), 2014-06-13 (degraded)... See: https://databento.com/docs/api-reference-historical/metadata/metadata-get-dataset-condition
+  parts.append(client.timeseries.get_range(**{**kw, "symbols": chunk}).to_df().reset_index())
+  fetched 24/52 symbols
+/home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/scripts/fetch_databento_daily.py:44: BentoWarning: The streaming request contained one or more days which have reduced quality: 2014-06-11 (degraded), 2014-06-12 (degraded), 2014-06-13 (degraded)... See: https://databento.com/docs/api-reference-historical/metadata/metadata-get-dataset-condition
+  parts.append(client.timeseries.get_range(**{**kw, "symbols": chunk}).to_df().reset_index())
+  fetched 28/52 symbols
+/home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/scripts/fetch_databento_daily.py:44: BentoWarning: The streaming request contained one or more days which have reduced quality: 2014-06-11 (degraded), 2014-06-12 (degraded), 2014-06-13 (degraded)... See: https://databento.com/docs/api-reference-historical/metadata/metadata-get-dataset-condition
+  parts.append(client.timeseries.get_range(**{**kw, "symbols": chunk}).to_df().reset_index())
+  fetched 32/52 symbols
+/home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/scripts/fetch_databento_daily.py:44: BentoWarning: The streaming request contained one or more days which have reduced quality: 2014-06-11 (degraded), 2014-06-12 (degraded), 2014-06-13 (degraded)... See: https://databento.com/docs/api-reference-historical/metadata/metadata-get-dataset-condition
+  parts.append(client.timeseries.get_range(**{**kw, "symbols": chunk}).to_df().reset_index())
+  fetched 36/52 symbols
+/home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/scripts/fetch_databento_daily.py:44: BentoWarning: The streaming request contained one or more days which have reduced quality: 2014-06-11 (degraded), 2014-06-12 (degraded), 2014-06-13 (degraded)... See: https://databento.com/docs/api-reference-historical/metadata/metadata-get-dataset-condition
+  parts.append(client.timeseries.get_range(**{**kw, "symbols": chunk}).to_df().reset_index())
+  chunk ['NG.v.0', 'NG.v.1', 'RB.v.0', 'RB.v.1'] try 1: BentoError: Error streaming response: Response ended prematurely
+  fetched 40/52 symbols
+/home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/scripts/fetch_databento_daily.py:44: BentoWarning: The streaming request contained one or more days which have reduced quality: 2014-06-11 (degraded), 2014-06-12 (degraded), 2014-06-13 (degraded)... See: https://databento.com/docs/api-reference-historical/metadata/metadata-get-dataset-condition
+  parts.append(client.timeseries.get_range(**{**kw, "symbols": chunk}).to_df().reset_index())
+  fetched 44/52 symbols
+/home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/scripts/fetch_databento_daily.py:44: BentoWarning: The streaming request contained one or more days which have reduced quality: 2014-06-11 (degraded), 2014-06-12 (degraded), 2014-06-13 (degraded)... See: https://databento.com/docs/api-reference-historical/metadata/metadata-get-dataset-condition
+  parts.append(client.timeseries.get_range(**{**kw, "symbols": chunk}).to_df().reset_index())
+  fetched 48/52 symbols
+/home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/scripts/fetch_databento_daily.py:44: BentoWarning: The streaming request contained one or more days which have reduced quality: 2014-06-11 (degraded), 2014-06-12 (degraded), 2014-06-13 (degraded)... See: https://databento.com/docs/api-reference-historical/metadata/metadata-get-dataset-condition
+  parts.append(client.timeseries.get_range(**{**kw, "symbols": chunk}).to_df().reset_index())
+  fetched 52/52 symbols
+downloaded 245044 rows, 52 symbols -> /home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/data/public/databento_daily.parquet
