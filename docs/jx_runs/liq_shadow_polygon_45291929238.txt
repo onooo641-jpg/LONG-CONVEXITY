@@ -1,0 +1,9 @@
+polygon: v2 start, head 97848190
+polygon: loaded 18717 cached positions
+polygon: recalibrated 487 cached positions
+polygon: positions ready: 18717 users, 5649 with debt
+polygon: reopened 21 recorded unhealthy episodes
+polygon: loop error https://poly.api.pocket.network: {'code': -32602, 'message': 'invalid argument 0: block range exceeds maximum 500'}
+polygon: head 97848435 cycles 22 debtors 5662 cand 705 last_cycle 15377 ms rpc ok/err 286/4
+polygon: head 97848640 cycles 48 debtors 5662 cand 704 last_cycle 16439 ms rpc ok/err 526/4
+polygon: head 97848843 cycles 74 debtors 5662 cand 706 last_cycle 16128 ms rpc ok/err 762/4
