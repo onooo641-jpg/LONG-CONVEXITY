@@ -1,0 +1,128 @@
+params.txt: duration_min=180 net=xdai rpc=https://rpc.gnosischain.com compare=https://barn.api.cow.fi/xdai/api/v2/solver_competition/
+digest.txt: ghcr.io/cowprotocol/services@sha256:05078ac16ac6461c48c081ec5c9ed176bed0a9b3ea2ab768b361875090033120
+autopilot log lines 2088; auctions seen 2072; auctions with a baseline solution 0
+production lookups 2072 in 544s; with production data 1
+===== solvers: 16 lines, 1 warn/error lines; first 25 lines:
+2026-11-24T10:03:39.796Z  WARN observe::tracing::reload_handler: open log filter reload socket file="/tmp/log_filter_override_solvers_7.sock"
+2026-11-24T10:03:39.796Z  INFO solvers::run: running solver engine with Args {
+    log: "warn,solvers=info",
+    use_json_logs: false,
+    tracing: TracingArguments {
+        tracing_collector_endpoint: None,
+        tracing_level: Level(
+            Info,
+        ),
+        tracing_exporter_timeout: 10s,
+    },
+    addr: 127.0.0.1:7872,
+    command: Baseline {
+        config: "/cfg/baseline.toml",
+    },
+} version=main@8b4bb6a20ea58b4646d64dea7a32748ceb5a3a83
+----- solvers: up to 25 distinct warn/error lines:
+2026-11-24T10:03:39.796Z  WARN observe::tracing::reload_handler: open log filter reload socket file="/tmp/log_filter_override_solvers_7.sock"
+----- solvers: last 15 lines:
+2026-11-24T10:03:39.796Z  INFO solvers::run: running solver engine with Args {
+    log: "warn,solvers=info",
+    use_json_logs: false,
+    tracing: TracingArguments {
+        tracing_collector_endpoint: None,
+        tracing_level: Level(
+            Info,
+        ),
+        tracing_exporter_timeout: 10s,
+    },
+    addr: 127.0.0.1:7872,
+    command: Baseline {
+        config: "/cfg/baseline.toml",
+    },
+} version=main@8b4bb6a20ea58b4646d64dea7a32748ceb5a3a83
+===== driver: 4372 lines, 1 warn/error lines; first 25 lines:
+2026-11-24T10:03:45.538Z  WARN observe::tracing::reload_handler: open log filter reload socket file="/tmp/log_filter_override_driver_7.sock"
+2026-11-24T10:03:47.722Z  INFO driver::run: running driver with Config {
+    disable_access_list_simulation: false,
+    disable_gas_simulation: None,
+    solvers: [
+        Config {
+            endpoint: Url {
+                scheme: "http",
+                cannot_be_a_base: false,
+                username: "",
+                password: None,
+                host: Some(
+                    Ipv4(
+                        127.0.0.1,
+                    ),
+                ),
+                port: Some(
+                    7872,
+                ),
+                path: "/",
+                query: None,
+                fragment: None,
+            },
+            name: Name(
+                "baseline",
+----- driver: up to 25 distinct warn/error lines:
+2026-11-24T10:03:45.538Z  WARN observe::tracing::reload_handler: open log filter reload socket file="/tmp/log_filter_override_driver_7.sock"
+----- driver: last 15 lines:
+2026-11-24T13:03:47.511Z  INFO /solve{solver="baseline" auction_id=181521052}: driver::infra::observe: discarded solution: settlement encoding id=Id { id: 2064, merged_solutions: [0] } orders=[Uid(0x5daaa894a14a02015ce5f4e5c45da6aaadb496b72d72e2f79b786c22ad5ebad9fb3c7eb936caa12b5a884d612393969a557d43076bfaf99c)] err=Simulation(Revert(RevertError { err: Ethereum(Rpc(ErrorResp(ErrorPayload { code: 3
+2026-11-24T13:03:53.130Z  INFO /solve{solver="baseline" auction_id=181521053}:solver_engine: driver::infra::observe: computed solutions solutions=[Solution { id: Id { id: 2065, merged_solutions: [0] }, trades: [Fulfillment(Fulfillment { order: Order { data: OrderData { uid: Uid(0x5daaa894a14a02015ce5f4e5c45da6aaadb496b72d72e2f79b786c22ad5ebad9fb3c7eb936caa12b5a884d612393969a557d43076bfaf99c), rece
+2026-11-24T13:03:53.552Z  INFO /solve{solver="baseline" auction_id=181521053}: driver::infra::observe: discarded solution: settlement encoding id=Id { id: 2065, merged_solutions: [0] } orders=[Uid(0x5daaa894a14a02015ce5f4e5c45da6aaadb496b72d72e2f79b786c22ad5ebad9fb3c7eb936caa12b5a884d612393969a557d43076bfaf99c)] err=Simulation(Revert(RevertError { err: Ethereum(Rpc(ErrorResp(ErrorPayload { code: 3
+2026-11-24T13:03:57.538Z  INFO /solve{solver="baseline" auction_id=181521054}:solver_engine: driver::infra::observe: computed solutions solutions=[Solution { id: Id { id: 2066, merged_solutions: [0] }, trades: [Fulfillment(Fulfillment { order: Order { data: OrderData { uid: Uid(0x5daaa894a14a02015ce5f4e5c45da6aaadb496b72d72e2f79b786c22ad5ebad9fb3c7eb936caa12b5a884d612393969a557d43076bfaf99c), rece
+2026-11-24T13:03:58.122Z  INFO /solve{solver="baseline" auction_id=181521054}: driver::infra::observe: discarded solution: settlement encoding id=Id { id: 2066, merged_solutions: [0] } orders=[Uid(0x5daaa894a14a02015ce5f4e5c45da6aaadb496b72d72e2f79b786c22ad5ebad9fb3c7eb936caa12b5a884d612393969a557d43076bfaf99c)] err=Simulation(Revert(RevertError { err: Ethereum(Rpc(ErrorResp(ErrorPayload { code: 3
+2026-11-24T13:04:01.876Z  INFO /solve{solver="baseline" auction_id=181521055}:solver_engine: driver::infra::observe: computed solutions solutions=[Solution { id: Id { id: 2067, merged_solutions: [0] }, trades: [Fulfillment(Fulfillment { order: Order { data: OrderData { uid: Uid(0x5daaa894a14a02015ce5f4e5c45da6aaadb496b72d72e2f79b786c22ad5ebad9fb3c7eb936caa12b5a884d612393969a557d43076bfaf99c), rece
+2026-11-24T13:04:02.180Z  INFO /solve{solver="baseline" auction_id=181521055}: driver::infra::observe: discarded solution: settlement encoding id=Id { id: 2067, merged_solutions: [0] } orders=[Uid(0x5daaa894a14a02015ce5f4e5c45da6aaadb496b72d72e2f79b786c22ad5ebad9fb3c7eb936caa12b5a884d612393969a557d43076bfaf99c)] err=Simulation(Revert(RevertError { err: Ethereum(Rpc(ErrorResp(ErrorPayload { code: 3
+2026-11-24T13:04:06.517Z  INFO /solve{solver="baseline" auction_id=181521056}:solver_engine: driver::infra::observe: computed solutions solutions=[Solution { id: Id { id: 2068, merged_solutions: [0] }, trades: [Fulfillment(Fulfillment { order: Order { data: OrderData { uid: Uid(0x5daaa894a14a02015ce5f4e5c45da6aaadb496b72d72e2f79b786c22ad5ebad9fb3c7eb936caa12b5a884d612393969a557d43076bfaf99c), rece
+2026-11-24T13:04:06.835Z  INFO /solve{solver="baseline" auction_id=181521056}: driver::infra::observe: discarded solution: settlement encoding id=Id { id: 2068, merged_solutions: [0] } orders=[Uid(0x5daaa894a14a02015ce5f4e5c45da6aaadb496b72d72e2f79b786c22ad5ebad9fb3c7eb936caa12b5a884d612393969a557d43076bfaf99c)] err=Simulation(Revert(RevertError { err: Ethereum(Rpc(ErrorResp(ErrorPayload { code: 3
+2026-11-24T13:04:13.073Z  INFO /solve{solver="baseline" auction_id=181521057}:solver_engine: driver::infra::observe: computed solutions solutions=[Solution { id: Id { id: 2069, merged_solutions: [0] }, trades: [Fulfillment(Fulfillment { order: Order { data: OrderData { uid: Uid(0x5daaa894a14a02015ce5f4e5c45da6aaadb496b72d72e2f79b786c22ad5ebad9fb3c7eb936caa12b5a884d612393969a557d43076bfaf99c), rece
+2026-11-24T13:04:13.397Z  INFO /solve{solver="baseline" auction_id=181521057}: driver::infra::observe: discarded solution: settlement encoding id=Id { id: 2069, merged_solutions: [0] } orders=[Uid(0x5daaa894a14a02015ce5f4e5c45da6aaadb496b72d72e2f79b786c22ad5ebad9fb3c7eb936caa12b5a884d612393969a557d43076bfaf99c)] err=Simulation(Revert(RevertError { err: Ethereum(Rpc(ErrorResp(ErrorPayload { code: 3
+2026-11-24T13:04:17.436Z  INFO /solve{solver="baseline" auction_id=181521058}:solver_engine: driver::infra::observe: computed solutions solutions=[Solution { id: Id { id: 2070, merged_solutions: [0] }, trades: [Fulfillment(Fulfillment { order: Order { data: OrderData { uid: Uid(0x5daaa894a14a02015ce5f4e5c45da6aaadb496b72d72e2f79b786c22ad5ebad9fb3c7eb936caa12b5a884d612393969a557d43076bfaf99c), rece
+2026-11-24T13:04:17.784Z  INFO /solve{solver="baseline" auction_id=181521058}: driver::infra::observe: discarded solution: settlement encoding id=Id { id: 2070, merged_solutions: [0] } orders=[Uid(0x5daaa894a14a02015ce5f4e5c45da6aaadb496b72d72e2f79b786c22ad5ebad9fb3c7eb936caa12b5a884d612393969a557d43076bfaf99c)] err=Simulation(Revert(RevertError { err: Ethereum(Rpc(ErrorResp(ErrorPayload { code: 3
+2026-11-24T13:04:21.751Z  INFO /solve{solver="baseline" auction_id=181521059}:solver_engine: driver::infra::observe: computed solutions solutions=[Solution { id: Id { id: 2071, merged_solutions: [0] }, trades: [Fulfillment(Fulfillment { order: Order { data: OrderData { uid: Uid(0x5daaa894a14a02015ce5f4e5c45da6aaadb496b72d72e2f79b786c22ad5ebad9fb3c7eb936caa12b5a884d612393969a557d43076bfaf99c), rece
+2026-11-24T13:04:22.058Z  INFO /solve{solver="baseline" auction_id=181521059}: driver::infra::observe: discarded solution: settlement encoding id=Id { id: 2071, merged_solutions: [0] } orders=[Uid(0x5daaa894a14a02015ce5f4e5c45da6aaadb496b72d72e2f79b786c22ad5ebad9fb3c7eb936caa12b5a884d612393969a557d43076bfaf99c)] err=Simulation(Revert(RevertError { err: Ethereum(Rpc(ErrorResp(ErrorPayload { code: 3
+===== autopilot: 2088 lines, 13 warn/error lines; first 25 lines:
+{"timestamp":"2026-11-24T10:04:15.003516399+00:00","level":"WARN","fields":{"message":"open log filter reload socket","file":"/tmp/log_filter_override_autopilot_7.sock"},"target":"observe::tracing::reload_handler"}
+{"timestamp":"2026-11-24T10:04:15.003641565+00:00","level":"INFO","fields":{"message":"running autopilot with validated arguments:\n/cfg/autopilot.toml","version":"main@8b4bb6a20ea58b4646d64dea7a32748ceb5a3a83"},"target":"autopilot::run"}
+{"timestamp":"2026-11-24T10:04:15.003651891+00:00","level":"INFO","fields":{"message":"file configuration:\nConfiguration {\n    shared: SharedConfig {\n        ethrpc: EthRpcConfig {\n            max_batch_size: 100,\n            max_concurrent_requests: 10,\n            batch_delay: 0ns,\n            timeout: 10s,\n        },\n        current_block: CurrentBlockConfig {\n            poll_interva
+{"timestamp":"2026-11-24T10:04:15.011845926+00:00","level":"INFO","fields":{"message":"creating solver","name":"\"baseline\"","url":"Url { scheme: \"http\", cannot_be_a_base: false, username: \"\", password: None, host: Some(Ipv4(127.0.0.1)), port: Some(11088), path: \"/baseline\", query: None, fragment: None }","submission_address":"0xbe6271d7ae455138a4021f5ba034dea49dcf8382","extensions":"Suppor
+{"timestamp":"2026-11-24T10:04:18.771084203+00:00","level":"INFO","fields":{"message":"solving"},"target":"autopilot::shadow","spans":{"single_run":{"auction_id":181518947},"auction":{"auction.id":181518947}}}
+{"timestamp":"2026-11-24T10:04:22.640910529+00:00","level":"INFO","fields":{"message":"solving"},"target":"autopilot::shadow","spans":{"auction":{"auction.id":181518948},"single_run":{"auction_id":181518948}}}
+{"timestamp":"2026-11-24T10:04:27.573111812+00:00","level":"INFO","fields":{"message":"solving"},"target":"autopilot::shadow","spans":{"auction":{"auction.id":181518949},"single_run":{"auction_id":181518949}}}
+{"timestamp":"2026-11-24T10:04:32.207578716+00:00","level":"INFO","fields":{"message":"solving"},"target":"autopilot::shadow","spans":{"auction":{"auction.id":181518950},"single_run":{"auction_id":181518950}}}
+{"timestamp":"2026-11-24T10:04:38.688628393+00:00","level":"INFO","fields":{"message":"solving"},"target":"autopilot::shadow","spans":{"single_run":{"auction_id":181518951},"auction":{"auction.id":181518951}}}
+{"timestamp":"2026-11-24T10:04:40.854915983+00:00","level":"INFO","fields":{"message":"solving"},"target":"autopilot::shadow","spans":{"single_run":{"auction_id":181518952},"auction":{"auction.id":181518952}}}
+{"timestamp":"2026-11-24T10:04:47.669098802+00:00","level":"INFO","fields":{"message":"solving"},"target":"autopilot::shadow","spans":{"auction":{"auction.id":181518953},"single_run":{"auction_id":181518953}}}
+{"timestamp":"2026-11-24T10:04:51.973392353+00:00","level":"INFO","fields":{"message":"solving"},"target":"autopilot::shadow","spans":{"single_run":{"auction_id":181518954},"auction":{"auction.id":181518954}}}
+{"timestamp":"2026-11-24T10:04:55.952577040+00:00","level":"INFO","fields":{"message":"solving"},"target":"autopilot::shadow","spans":{"auction":{"auction.id":181518955},"single_run":{"auction_id":181518955}}}
+{"timestamp":"2026-11-24T10:05:03.040391476+00:00","level":"INFO","fields":{"message":"solving"},"target":"autopilot::shadow","spans":{"auction":{"auction.id":181518956},"single_run":{"auction_id":181518956}}}
+{"timestamp":"2026-11-24T10:05:07.014025203+00:00","level":"INFO","fields":{"message":"solving"},"target":"autopilot::shadow","spans":{"single_run":{"auction_id":181518957},"auction":{"auction.id":181518957}}}
+{"timestamp":"2026-11-24T10:05:11.321114794+00:00","level":"INFO","fields":{"message":"solving"},"target":"autopilot::shadow","spans":{"single_run":{"auction_id":181518958},"auction":{"auction.id":181518958}}}
+{"timestamp":"2026-11-24T10:05:15.958016015+00:00","level":"INFO","fields":{"message":"solving"},"target":"autopilot::shadow","spans":{"auction":{"auction.id":181518959},"single_run":{"auction_id":181518959}}}
+{"timestamp":"2026-11-24T10:05:24.609665963+00:00","level":"INFO","fields":{"message":"solving"},"target":"autopilot::shadow","spans":{"auction":{"auction.id":181518960},"single_run":{"auction_id":181518960}}}
+{"timestamp":"2026-11-24T10:05:28.912506313+00:00","level":"INFO","fields":{"message":"solving"},"target":"autopilot::shadow","spans":{"single_run":{"auction_id":181518961},"auction":{"auction.id":181518961}}}
+{"timestamp":"2026-11-24T10:05:33.272074866+00:00","level":"INFO","fields":{"message":"solving"},"target":"autopilot::shadow","spans":{"auction":{"auction.id":181518962},"single_run":{"auction_id":181518962}}}
+{"timestamp":"2026-11-24T10:05:37.252869397+00:00","level":"INFO","fields":{"message":"solving"},"target":"autopilot::shadow","spans":{"auction":{"auction.id":181518963},"single_run":{"auction_id":181518963}}}
+{"timestamp":"2026-11-24T10:05:41.909921650+00:00","level":"INFO","fields":{"message":"solving"},"target":"autopilot::shadow","spans":{"auction":{"auction.id":181518964},"single_run":{"auction_id":181518964}}}
+{"timestamp":"2026-11-24T10:05:46.234492274+00:00","level":"INFO","fields":{"message":"solving"},"target":"autopilot::shadow","spans":{"auction":{"auction.id":181518965},"single_run":{"auction_id":181518965}}}
+{"timestamp":"2026-11-24T10:05:52.793350668+00:00","level":"INFO","fields":{"message":"solving"},"target":"autopilot::shadow","spans":{"auction":{"auction.id":181518966},"single_run":{"auction_id":181518966}}}
+{"timestamp":"2026-11-24T10:05:56.760510619+00:00","level":"INFO","fields":{"message":"solving"},"target":"autopilot::shadow","spans":{"auction":{"auction.id":181518967},"single_run":{"auction_id":181518967}}}
+----- autopilot: up to 25 distinct warn/error lines:
+{"timestamp":"2026-11-24T10:04:15.003516399+00:00","level":"WARN","fields":{"message":"open log filter reload socket","file":"/tmp/log_filter_override_autopilot_7.sock"},"target":"observe::tracing::reload_handler"}
+{"timestamp":"2026-11-24T10:39:08.288639390+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status server error (503 Service Unavailable) for url (https://barn.api.cow.fi/xdai/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+----- autopilot: last 15 lines:
+{"timestamp":"2026-11-24T13:03:10.022904286+00:00","level":"INFO","fields":{"message":"solving"},"target":"autopilot::shadow","spans":{"single_run":{"auction_id":181521044},"auction":{"auction.id":181521044}}}
+{"timestamp":"2026-11-24T13:03:13.939443303+00:00","level":"INFO","fields":{"message":"solving"},"target":"autopilot::shadow","spans":{"single_run":{"auction_id":181521045},"auction":{"auction.id":181521045}}}
+{"timestamp":"2026-11-24T13:03:18.596376042+00:00","level":"INFO","fields":{"message":"solving"},"target":"autopilot::shadow","spans":{"single_run":{"auction_id":181521046},"auction":{"auction.id":181521046}}}
+{"timestamp":"2026-11-24T13:03:25.124967798+00:00","level":"INFO","fields":{"message":"solving"},"target":"autopilot::shadow","spans":{"auction":{"auction.id":181521047},"single_run":{"auction_id":181521047}}}
+{"timestamp":"2026-11-24T13:03:27.348892943+00:00","level":"INFO","fields":{"message":"solving"},"target":"autopilot::shadow","spans":{"auction":{"auction.id":181521048},"single_run":{"auction_id":181521048}}}
+{"timestamp":"2026-11-24T13:03:33.827629389+00:00","level":"INFO","fields":{"message":"solving"},"target":"autopilot::shadow","spans":{"auction":{"auction.id":181521049},"single_run":{"auction_id":181521049}}}
+{"timestamp":"2026-11-24T13:03:37.896419869+00:00","level":"INFO","fields":{"message":"solving"},"target":"autopilot::shadow","spans":{"single_run":{"auction_id":181521050},"auction":{"auction.id":181521050}}}
+{"timestamp":"2026-11-24T13:03:46.954515630+00:00","level":"INFO","fields":{"message":"solving"},"target":"autopilot::shadow","spans":{"single_run":{"auction_id":181521052},"auction":{"auction.id":181521052}}}
+{"timestamp":"2026-11-24T13:03:53.129332159+00:00","level":"INFO","fields":{"message":"solving"},"target":"autopilot::shadow","spans":{"auction":{"auction.id":181521053},"single_run":{"auction_id":181521053}}}
+{"timestamp":"2026-11-24T13:03:57.537513796+00:00","level":"INFO","fields":{"message":"solving"},"target":"autopilot::shadow","spans":{"single_run":{"auction_id":181521054},"auction":{"auction.id":181521054}}}
+{"timestamp":"2026-11-24T13:04:01.875237269+00:00","level":"INFO","fields":{"message":"solving"},"target":"autopilot::shadow","spans":{"single_run":{"auction_id":181521055},"auction":{"auction.id":181521055}}}
+{"timestamp":"2026-11-24T13:04:06.516379705+00:00","level":"INFO","fields":{"message":"solving"},"target":"autopilot::shadow","spans":{"auction":{"auction.id":181521056},"single_run":{"auction_id":181521056}}}
+{"timestamp":"2026-11-24T13:04:13.071903816+00:00","level":"INFO","fields":{"message":"solving"},"target":"autopilot::shadow","spans":{"auction":{"auction.id":181521057},"single_run":{"auction_id":181521057}}}
+{"timestamp":"2026-11-24T13:04:17.434384570+00:00","level":"INFO","fields":{"message":"solving"},"target":"autopilot::shadow","spans":{"single_run":{"auction_id":181521058},"auction":{"auction.id":181521058}}}
+{"timestamp":"2026-11-24T13:04:21.750178562+00:00","level":"INFO","fields":{"message":"solving"},"target":"autopilot::shadow","spans":{"auction":{"auction.id":181521059},"single_run":{"auction_id":181521059}}}
