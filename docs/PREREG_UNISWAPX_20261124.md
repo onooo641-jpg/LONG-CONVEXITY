@@ -34,3 +34,18 @@ transfer (token, amount) priced with DefiLlama daily prices (stables $1; other t
 priced input volume × **10 bps** (a generous filler margin before gas and hedging). **KILL** if 10% of the ceiling (a strong newcomer's
 share) is below $15,000/yr. Command: fetch job `uniswapx371b`; analysis `uv run python -m scripts.uniswapx_vol_20261124 | tee
 docs/jx_runs/uniswapx_vol_20261124.txt`.
+
+### Stage 3 results (2026-11-24; `docs/jx_runs/uniswapx_vol_20261124.txt`, identical on re-run; fetch run 45401284013)
+10,957 Arbitrum fills (Aug–Oct 2026), 10,597 priced (125 tokens; 342 unpriced transfers): **$191.9M in 92 days → $761M/yr**; median fill
+$3,999. Volume share: top filler 84.0%; the August newcomers 7.3% and 5.2%. Ceiling at 10 bps: $761K/yr for all fillers; 10% share →
+**$76K/yr → survives**. (A first fetch ran but its files were not saved because of an output-name mismatch; fixed and re-run.)
+
+### Stage 4 (registered 2026-11-24, after Stage 3, before any output-side data): the margin fillers actually earn
+Data: the same 10,957 Arbitrum fills; per fill the swapper's **input** (transfers from the swapper) and **output** (transfers to the swapper,
+excluding refunds of the input token), each valued at the **hourly** DefiLlama price of the fill hour, for the tokens that make up the top
+95% of Stage-3 input volume plus their output tokens (others dropped and counted). Gross filler spread per fill = USD(in) − USD(out)
+(what the filler keeps before hedging cost and gas). Report: volume-weighted spread (bps), median, per filler (the two newcomers named).
+**KILL** if the volume-weighted gross spread is < 2 bps, **or** either August newcomer's annualised gross (spread × its volume × 365/92)
+is < $15,000/yr. Otherwise "worth a no-money filler prototype" (still not a pass). Hourly prices add noise of tens of bps per fill; it
+averages out over ~10,000 fills but per-filler figures for small fillers are noisy (reported with fill counts).
+Command: fetch `uniswapx371c`; analysis `uv run python -m scripts.uniswapx_margin_20261124 | tee docs/jx_runs/uniswapx_margin_20261124.txt`.

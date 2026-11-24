@@ -1,0 +1,6 @@
+===== #371 Stage 3: Arbitrum UniswapX fills 2026-08-01..10-31; fills considered 10,957; input transfers 10,958; tokens 125
+  priced input transfers 10,597 of 10,958 (txs 10,597 of 10,956); unpriced 342
+  priced fill volume $191,936,273 in 92 days -> $761,486,302/yr; median fill $3,999
+  volume share by filler: 0x225a38bc 84.0%, 0xd767473b 7.3%, 0xe0763177 5.2%, 0x59971356 0.6%, 0x4ac7e9f0 0.5%, 0x2feefc8a 0.3%
+  ceiling at 10 bps: $761,486/yr for all fillers; a newcomer with 10%: $76,149/yr
+  STAGE 3 VERDICT: survives (ceiling allows >= $15K/yr)

@@ -2466,7 +2466,60 @@ def job_uniswapx371b():
     (OUT / "uniswapx371_stage3_meta.json").write_text(json.dumps({"fills_considered": len(d), "decimals": dec, "prices": prices}))
     print(f"  done: {len(tr)} input transfers, {len(toks)} tokens", flush=True)
 
-JOBS = {"uniswapx371b": job_uniswapx371b, "uniswapx371": job_uniswapx371, "cryptotrend370": job_cryptotrend370, "cow367": job_cow367, "cowauction": job_cowauction, "radarprobe": job_radarprobe, "cow365": job_cow365, "cow361b": job_cow361b, "jlp363": job_jlp363, "cow361": job_cow361, "across362": job_across362, "sweep4d": job_sweep4d, "sweep4c": job_sweep4c, "sweep4b": job_sweep4b, "sweep4": job_sweep4, "addprice": job_addprice, "fred9": job_fred9, "batch10b": job_batch10b, "repair8": job_repair8, "sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+def job_uniswapx371c():
+    """#371 Stage 4: per-fill input and output transfers of Arbitrum UniswapX fills (Aug-Oct 2026) + hourly prices of main tokens."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    d = pd.read_parquet(OUT / "uniswapx371_arbitrum.parquet")
+    meta = json.loads((OUT / "uniswapx371_meta.json").read_text())
+    import numpy as _np
+    ts = _np.array(meta["arbitrum"]["ts_sample"], dtype=float)
+    d["t"] = _np.interp(d["block"].to_numpy(float), ts[:, 0], ts[:, 1])
+    d = d[d["t"] >= pd.Timestamp("2026-08-01", tz="UTC").timestamp()].drop_duplicates("tx")
+    rows, t0 = [], time.time()
+    for k, r in enumerate(d.itertuples()):
+        if time.time() - t0 > 7000:
+            print(f"  time budget hit at {k}", flush=True)
+            break
+        try:
+            rc = _srpc("arbitrum", "eth_getTransactionReceipt", [r.tx])
+        except Exception:  # noqa: BLE001
+            continue
+        sw = "0x" + "0" * 24 + r.swapper[2:].lower()
+        for lg in (rc or {}).get("logs") or []:
+            tp = lg.get("topics") or []
+            if len(tp) == 3 and tp[0] == T_TRANSFER and sw in (tp[1].lower(), tp[2].lower()):
+                rows.append({"tx": r.tx, "t": r.t, "filler": r.filler, "token": lg["address"].lower(),
+                             "dir": "in" if tp[1].lower() == sw else "out", "amount_raw": str(int(lg["data"], 16))})
+        if k % 2000 == 0:
+            print(f"  {k}/{len(d)} receipts, {len(rows)} transfers, {time.time() - t0:.0f}s", flush=True)
+    tr = pd.DataFrame(rows)
+    s3 = json.loads((OUT / "uniswapx371_stage3_meta.json").read_text())
+    dec = dict(s3.get("decimals", {}))
+    toks = sorted(tr["token"].unique()) if len(tr) else []
+    for tkn in toks:
+        if tkn not in dec:
+            try:
+                dec[tkn] = int(_srpc("arbitrum", "eth_call", [{"to": tkn, "data": "0x313ce567"}, "latest"]), 16)
+            except Exception:  # noqa: BLE001
+                dec[tkn] = None
+    # main tokens: top by count of transfers (covers most volume), hourly prices in 8-day chunks
+    main = tr["token"].value_counts().head(40).index.tolist() if len(tr) else []
+    hourly = {}
+    t_start = int(pd.Timestamp("2026-07-31", tz="UTC").timestamp())
+    for tkn in main:
+        key, pts, t = f"arbitrum:{tkn}", [], t_start
+        while t < int(pd.Timestamp("2026-11-02", tz="UTC").timestamp()):
+            dd = get(f"https://coins.llama.fi/chart/{key}?start={t}&span=192&period=1h", tries=2)
+            pts += (((dd or {}).get("coins") or {}).get(key) or {}).get("prices") or []
+            t += 192 * 3600
+            time.sleep(0.2)
+        hourly[tkn] = pts
+    tr.to_parquet(OUT / "uniswapx371_stage4_transfers.parquet", index=False)
+    (OUT / "uniswapx371_stage4_meta.json").write_text(json.dumps({"fills": len(d), "decimals": dec, "hourly": hourly}))
+    print(f"  done: {len(tr)} transfers; hourly prices for {sum(1 for v in hourly.values() if v)}/{len(main)} tokens", flush=True)
+
+JOBS = {"uniswapx371c": job_uniswapx371c, "uniswapx371b": job_uniswapx371b, "uniswapx371": job_uniswapx371, "cryptotrend370": job_cryptotrend370, "cow367": job_cow367, "cowauction": job_cowauction, "radarprobe": job_radarprobe, "cow365": job_cow365, "cow361b": job_cow361b, "jlp363": job_jlp363, "cow361": job_cow361, "across362": job_across362, "sweep4d": job_sweep4d, "sweep4c": job_sweep4c, "sweep4b": job_sweep4b, "sweep4": job_sweep4, "addprice": job_addprice, "fred9": job_fred9, "batch10b": job_batch10b, "repair8": job_repair8, "sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys
