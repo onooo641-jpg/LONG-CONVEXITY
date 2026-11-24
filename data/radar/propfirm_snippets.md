@@ -4827,31 +4827,27 @@
 - AUTO: Our analytics providers may set and read cookies to collect this data and your web browser will automatically send data collected by those cookies to our analytics providers.
 
 ## TradeDay — https://www.tradeday.com/pt/cookie-policy
+- AUTO: Por exemplo, esses cookies podem ser usados para lembrar qual idioma você prefere, em quais páginas você clicou ou qual é seu nome de usuário e senha, para que você possa fazer login automaticamente em sua conta.
 - AUTO: Por exemplo, estes cookies podem ser utilizados para memorizar o idioma que prefere, em que páginas clicou ou qual o seu nome de utilizador e palavra-passe, para que possa iniciar sessão automaticamente na sua conta.
+- AUTO: Este é um serviço que verifica se os dados foram inseridos por um humano ou por um programa automatizado.
 - AUTO: Este é um serviço que verifica se os dados são introduzidos por um ser humano ou por um programa automatizado.
 - AUTO: Proteção contra bots
 
 ## TradeDay — https://www.tradeday.com/pt/privacy-policy
+- AUTO: “Dados de Registro” significa as informações que seu navegador envia sempre que você visita um site; essas informações são registradas automaticamente por nossos servidores.
 - AUTO: “Dados de Registo” significa informações que o seu navegador envia sempre que visita um website; estas informações são registadas automaticamente pelos nossos servidores.
+- AUTO: Você concorda que tais atividades podem ser realizadas automaticamente e que, em nenhuma circunstância, você terá direito a qualquer pagamento ou compensação.
 - AUTO: Concorda que tais atividades podem ser realizadas automaticamente e que, em circunstância alguma, terá direito a qualquer pagamento ou compensação.
-- AUTO: state privacy laws may require us to let you know how we respond to web browser Do Not Track Signals or other mechanisms that provide consumers the ability to exercise choice regarding the automatic collection about your online activities over time.
-- AUTO: states can opt out by broadcasting an Opt-Out Preference Signal, including through the use of the Global Privacy Control (“GPC”), depending on which browsers and/or browser extensions you use that may support such signals.
-- AUTO: To take a look at extensions and browsers supporting the GPC browser signals, please visit here: https://globalprivacycontrol.org/ .
-- AUTO: Note that if you choose to use the GPC signal, you will need to turn it on for each supported browser or browser extension you use.
-- AUTO: not to be subject to a decision based on automated decision-making, including profiling;
-- AUTO: Most browsers automatically accept cookies.
-- AUTO: Our servers also automatically record Log Data which includes information such as your internet service provider, your computer’s internet protocol address, browser type and operating system, referring/exit pages, clickstream data, pages of our Services that you visit (and the time spent on these pages), information you search for on our Services, and other statistics.
-- AUTO: Our analytics providers may set and read cookies to collect this data and your web browser will automatically send data collected by those cookies to our analytics providers.
+- AUTO: não ser submetido a uma decisão baseada em processamento automatizado, incluindo definição de perfil;
+- AUTO: A maioria dos navegadores aceita cookies automaticamente.
+- AUTO: Nossos provedores de análise podem definir e ler cookies para coletar esses dados, e seu navegador da web enviará automaticamente os dados coletados por esses cookies para nossos provedores de análise.
 
 ## TradeDay — https://www.tradeday.com/pt/terms-and-conditions
-- AUTO: However, you can take the evaluation again by either: (1) purchase a retake, known as a “ reset ,” the cost of a reset is $99; or (2) waiting for your next subscription payment to go through, which will result in an automatic reset.
-- AUTO: Using trading bots or Automated Trading Systems (ATS) purchased from a third party.
-- AUTO: Or multiple users using the same trading bots and ATS'.
-- AUTO: Using automated trading systems designed to scalp at an extremely high frequency.
-- AUTO: Performing, alone or in concert with any other persons, including between connected accounts or accounts held with different TradeDay parties, trades, or combinations of trades, the purpose of which is to manipulate, abuse, or give the user an unfair advantage, for example, by engaging in any short-term or high frequency trades or simultaneously entering into opposite positions.
-- AUTO: Please see our scalping policy here.
-- AUTO: Using any manual or automated software, devices, or other processes to “crawl” or “spider” any web pages contained in the Sites or Services;
-- AUTO: If we do waive a default by you, we will only do so in writing, and that will not mean that we will automatically waive any later default by you.
+- AUTO: Uso de robôs de negociação ou Sistemas de Negociação Automatizados (ATS) adquiridos de terceiros.
+- AUTO: Uso de sistemas de negociação automatizados projetados para realizar scalping em frequência extremamente alta.
+- AUTO: Consulte nossa política de scalping aqui.
+- AUTO: Usar qualquer software, dispositivo ou outro processo manual ou automatizado para "rastrear" ou "indexar" quaisquer páginas da web contidas nos Sites ou Serviços;
+- AUTO: Se renunciarmos a uma inadimplência sua, faremos isso apenas por escrito, e isso não significará que renunciaremos automaticamente a qualquer inadimplência futura sua.
 
 ## TradeDay — https://www.tradeday.com/terms-and-conditions
 - AUTO: However, you can take the evaluation again by either: (1) purchase a retake, known as a “ reset ,” the cost of a reset is $99; or (2) waiting for your next subscription payment to go through, which will result in an automatic reset.

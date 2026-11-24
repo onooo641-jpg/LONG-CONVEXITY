@@ -10,66 +10,66 @@ Read the record
 Paid out by Bank transfer Crypto Card
 Providers
 Latest payouts Live
-4h ago $5,000 Classic Markets +$166
-7h ago $5,000 Classic Markets +$251
-7h ago $2,000 Classic Markets +$677
-10h ago $10,000 Classic Markets +$100
-13h ago $100,000 Classic Markets +$2,000
-13h ago $5,000 Perpetual +$128
-13h ago $100,000 Futures +$5,000
-13h ago $100,000 Futures +$5,000
-13h ago $100,000 Futures +$5,000
-13h ago $25,000 Futures +$408
-13h ago $500,000 Classic Markets +$8,913
-13h ago $150,000 Futures +$2,800
-13h ago $100,000 Classic Markets +$1,990
-13h ago $50,000 Classic Markets +$1,713
-13h ago $50,000 Futures +$2,400
-13h ago $50,000 Futures +$2,400
-13h ago $400,000 Perpetual +$28,000
-13h ago $50,000 Classic Markets +$2,000
-13h ago $200,000 Classic Markets +$2,028
-13h ago $150,000 Futures +$2,400
-13h ago $50,000 Classic Markets +$2,361
-13h ago $100,000 Classic Markets +$5,386
-13h ago $100,000 Classic Markets +$5,066
-13h ago $150,000 Futures +$1,486
-13h ago $50,000 Futures +$1,000
-14h ago $2,000 Classic Markets +$107
-15h ago $2,000 Classic Markets +$267
-15h ago $25,000 Classic Markets +$803
-15h ago $100,000 Classic Markets +$1,524
-15h ago $50,000 Futures +$1,000
-4h ago $5,000 Classic Markets +$166
-7h ago $5,000 Classic Markets +$251
-7h ago $2,000 Classic Markets +$677
-10h ago $10,000 Classic Markets +$100
-13h ago $100,000 Classic Markets +$2,000
-13h ago $5,000 Perpetual +$128
-13h ago $100,000 Futures +$5,000
-13h ago $100,000 Futures +$5,000
-13h ago $100,000 Futures +$5,000
-13h ago $25,000 Futures +$408
-13h ago $500,000 Classic Markets +$8,913
-13h ago $150,000 Futures +$2,800
-13h ago $100,000 Classic Markets +$1,990
-13h ago $50,000 Classic Markets +$1,713
-13h ago $50,000 Futures +$2,400
-13h ago $50,000 Futures +$2,400
-13h ago $400,000 Perpetual +$28,000
-13h ago $50,000 Classic Markets +$2,000
-13h ago $200,000 Classic Markets +$2,028
-13h ago $150,000 Futures +$2,400
-13h ago $50,000 Classic Markets +$2,361
-13h ago $100,000 Classic Markets +$5,386
-13h ago $100,000 Classic Markets +$5,066
-13h ago $150,000 Futures +$1,486
-13h ago $50,000 Futures +$1,000
-14h ago $2,000 Classic Markets +$107
-15h ago $2,000 Classic Markets +$267
-15h ago $25,000 Classic Markets +$803
-15h ago $100,000 Classic Markets +$1,524
-15h ago $50,000 Futures +$1,000
+9h ago $5,000 Classic Markets +$166
+12h ago $5,000 Classic Markets +$251
+12h ago $2,000 Classic Markets +$677
+15h ago $10,000 Classic Markets +$100
+18h ago $100,000 Classic Markets +$2,000
+18h ago $5,000 Perpetual +$128
+18h ago $100,000 Futures +$5,000
+18h ago $100,000 Futures +$5,000
+18h ago $100,000 Futures +$5,000
+18h ago $25,000 Futures +$408
+18h ago $500,000 Classic Markets +$8,913
+18h ago $150,000 Futures +$2,800
+18h ago $100,000 Classic Markets +$1,990
+18h ago $50,000 Classic Markets +$1,713
+18h ago $50,000 Futures +$2,400
+18h ago $50,000 Futures +$2,400
+18h ago $400,000 Perpetual +$28,000
+18h ago $50,000 Classic Markets +$2,000
+18h ago $200,000 Classic Markets +$2,028
+18h ago $150,000 Futures +$2,400
+18h ago $50,000 Classic Markets +$2,361
+18h ago $100,000 Classic Markets +$5,386
+18h ago $100,000 Classic Markets +$5,066
+18h ago $150,000 Futures +$1,486
+18h ago $50,000 Futures +$1,000
+19h ago $2,000 Classic Markets +$107
+20h ago $2,000 Classic Markets +$267
+20h ago $25,000 Classic Markets +$803
+20h ago $100,000 Classic Markets +$1,524
+20h ago $50,000 Futures +$1,000
+9h ago $5,000 Classic Markets +$166
+12h ago $5,000 Classic Markets +$251
+12h ago $2,000 Classic Markets +$677
+15h ago $10,000 Classic Markets +$100
+18h ago $100,000 Classic Markets +$2,000
+18h ago $5,000 Perpetual +$128
+18h ago $100,000 Futures +$5,000
+18h ago $100,000 Futures +$5,000
+18h ago $100,000 Futures +$5,000
+18h ago $25,000 Futures +$408
+18h ago $500,000 Classic Markets +$8,913
+18h ago $150,000 Futures +$2,800
+18h ago $100,000 Classic Markets +$1,990
+18h ago $50,000 Classic Markets +$1,713
+18h ago $50,000 Futures +$2,400
+18h ago $50,000 Futures +$2,400
+18h ago $400,000 Perpetual +$28,000
+18h ago $50,000 Classic Markets +$2,000
+18h ago $200,000 Classic Markets +$2,028
+18h ago $150,000 Futures +$2,400
+18h ago $50,000 Classic Markets +$2,361
+18h ago $100,000 Classic Markets +$5,386
+18h ago $100,000 Classic Markets +$5,066
+18h ago $150,000 Futures +$1,486
+18h ago $50,000 Futures +$1,000
+19h ago $2,000 Classic Markets +$107
+20h ago $2,000 Classic Markets +$267
+20h ago $25,000 Classic Markets +$803
+20h ago $100,000 Classic Markets +$1,524
+20h ago $50,000 Futures +$1,000
 Payout record
 Live
 Daily Monthly
@@ -78,14 +78,14 @@ Payouts in last month $1,384,939 845 payouts
 Average payout time 17 hours
 Average payout amount $3,216
 Date Account size Market Amount
-4 hours ago Latest $5,000 Classic Markets +$166 $5,000 account
-7 hours ago $5,000 Classic Markets +$251 $5,000 account
-7 hours ago $2,000 Classic Markets +$677 $2,000 account
-10 hours ago $10,000 Classic Markets +$100 $10,000 account
-13 hours ago $100,000 Classic Markets +$2,000 $100,000 account
-13 hours ago $5,000 Perpetual +$128 $5,000 account
-13 hours ago $100,000 Futures +$5,000 $100,000 account
-13 hours ago $100,000 Futures +$5,000 $100,000 account
+9 hours ago Latest $5,000 Classic Markets +$166 $5,000 account
+12 hours ago $5,000 Classic Markets +$251 $5,000 account
+12 hours ago $2,000 Classic Markets +$677 $2,000 account
+15 hours ago $10,000 Classic Markets +$100 $10,000 account
+18 hours ago $100,000 Classic Markets +$2,000 $100,000 account
+18 hours ago $5,000 Perpetual +$128 $5,000 account
+18 hours ago $100,000 Futures +$5,000 $100,000 account
+18 hours ago $100,000 Futures +$5,000 $100,000 account
 Showing 1 to 8 of 30 payouts 1 / 4
 E8 is a SaaS educational simulation built for skills training, data collection, and analytical modeling. Enrollment fees purchase access to the simulation & assessment; earnings are discretionary, not guaranteed, amounts are not trading profits and contingent on E8's acceptance & licensing of your performance data. There is no live-capital, no deposits or margin risk. Hypothetical/simulated performance has inherent limitations and does not represent actual trading; results may differ materially in live market conditions.
 SimFi™ record payout holder

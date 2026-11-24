@@ -7,7 +7,7 @@ Instant accounts
 Instant reset fees
 Instant reset fees
 Reset prices and the 2 reset limit.
-Updated this week
+Updated over a week ago
 A reset restarts the account from the starting balance. Up to 2 resets per account.
 Size
 Reset fee
@@ -26,9 +26,9 @@ $999
 $1,199
 Related Articles
 Elite drawdown, daily loss limit and contracts
-Elite checkout options
 OLD Instant drawdown and staying active
 Reset fees
+Instant rules at a glance
 Instant Max Loss Limit and Daily Loss Limit
 Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
 FuturesElite FAQ

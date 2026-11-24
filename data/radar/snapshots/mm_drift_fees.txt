@@ -1,0 +1,82 @@
+Trading fees | Velocity Protocol
+Search ⌘ K
+Discord App Introduction to Velocity What a perpetual is A first trade, end to end Using Velocity
+Getting Started
+Trading Collateral & Margin
+Order types Auctions How fills work Trading fees Funding rates Profit and loss Liquidation Market specs
+Borrow & Lend
+Referrals How Velocity Works
+Mechanics
+Insurance Fund
+Market makers Risk & Safety
+Risks Liquidation and bankruptcy Guard rails Contract tiers Admin keys and upgrade authority Delisting Audits Bug bounty Reference
+Glossary Terms
+Terms of Use Disclaimer Privacy Policy
+Velocity Protocol Developers
+Trading fees
+Trading
+Copy as Markdown View as Markdown
+Trading fees
+What a fill costs, how a fee tier is computed, and where the fee goes.
+Every perpetual fill charges the taker a fee on the filled notional. It is denominated in the market's quote asset (USDT), applied to the position's cost basis rather than billed separately, and the maker on the other side of the same fill is paid a rebate out of it.
+Worked numbers use the two standard anchors, a $10,000 account and a $5,000,000 desk, with SOL at $100 .
+The schedule
+An account's tier is selected by its trailing 30-day volume at the moment of each fill.
+Tier Trailing 30-day volume Taker fee Maker rebate
+Regular under $5,000,000 6 bps (0.060%) 0.25 bps (0.0025%)
+VIP 1 $5,000,000 to $80,000,000 5 bps (0.050%) 0.25 bps (0.0025%)
+VIP 2 $80,000,000 to $200,000,000 4 bps (0.040%) 0.25 bps (0.0025%)
+VIP 3 above $200,000,000 2 bps (0.020%) 0.25 bps (0.0025%)
+These are the baseline rates for the major markets, SOL-PERP, BTC-PERP, and ETH-PERP. Other markets can be priced above or below this baseline; see Per-market rates below for the live number each market actually charges.
+The rates are admin-settable, so read the live values rather than treating the table as fixed.
+The maker rebate is 0.25 bps of the fill's notional, flat at every tier. It is paid to whoever was the maker on the fill, out of the taker's fee, and it is read from the maker's own fee tier rather than the taker's.
+What makes an order a maker order
+An order is a maker order when it carries the post-only flag. Without that flag a resting order can still match as a taker, pay the taker fee, and earn no rebate, which is the most common way a market-making strategy quietly loses its rebate. See Order types and Market makers .
+What counts as volume
+The tier reads the sum of two rolling 30-day counters, taker volume and maker volume. Maker volume counts, and so does liquidation volume : a liquidation credits the liquidatee's taker counter and the liquidator's maker counter, so both sides of a liquidation build tier progress. Volume earned filling other people's orders as a keeper does not count, and direct token swaps do not count either, because the swap path charges no trading fee at all.
+Each counter decays linearly to zero over 30 days. Promotion is instant: a fill's volume lands in the counter immediately, and the very next fill is priced at the better tier.
+Per-market rates
+The schedule above is the baseline. Individual markets can be priced off it, and a promo tier may also be running, which only ever prices an account better than its volume tier and never worse. Everything that moves a fill off the published rate is set onchain and readable, so a fee above the tier number can be attributed rather than guessed at.
+These are the rates in force on every perp market, read live from the program. Any market-specific pricing is already folded in, so the number in the column is the number charged.
+Market Maker rebate
+Loading...
+Worked example
+The $10,000 account opens 20 SOL long at $100, a notional of $2,000, as a taker on a market priced at the published rate. At the Regular tier that is 6 bps, or $1.20 , charged against the position's cost basis. Closing the same size pays it again, so the round trip costs $2.40. Posted with the post-only flag instead, the same order would have earned 0.25 bps of $2,000, or $0.05 .
+The $5,000,000 desk sits in VIP 1. On a $100,000 fill it pays 5 bps, or $50 , where the Regular tier would have charged $60 and VIP 2 would charge $40. On a market priced 1.5 bps above the schedule the same fill costs 6.5 bps, or $65 .
+Where the fee goes
+Where a taker fee goes
+Shows how one taker fee is divided, as a percentage of the gross fee. The remainder split drawn here is mainnet's live configuration, an AMM and insurance share of 15% each against a residual 70% to the protocol, not the program's compiled defaults. Both shares are admin-settable, so the split table below this figure reads them from the chain and is the authority if the two ever disagree. Spot fills route nothing to the AMM. The referrer and referee legs pay out only while the BuilderCodes bit of FeatureBitFlags is set on State.featureBitFlags; read the live State account for that bit.
+Four amounts come off the top in a fixed order, and only what survives that is divided between the standing claimants.
+The referee discount reduces the fee before it is ever charged.
+The filler reward pays the keeper that landed the fill. It is the lesser of 10% of the fee and a time-based amount that starts at one cent for a just-placed order and grows with the age of the order. See Keeper incentives .
+The referrer reward , 10% or 20% depending on the referrer's level. See Referrals .
+The maker rebate , 0.25 bps of notional, when a maker was on the other side.
+The remainder is split three ways: a share to the AMM, a share to the insurance fund, and the residual to the protocol's own withdrawable fee pool. The first two shares are admin-configured and sum to at most 100%, and whatever they leave is the protocol's, so the protocol's cut is a residual rather than a set rate.
+Claimant Share of the remainder
+Loading...
+Protocol fees land in a per-market pool that only designated, admin-set recipients can withdraw from, and a withdrawal is capped to that pool's own balance, so it can never reach user deposits. See Where the money sits .
+Referral legs apply to the pre-discount fee
+Both referral percentages are computed against the taker fee before the referee discount is applied, not against the fee actually paid. On a $1.20 taker fee that means a 5% discount of $0.06 and a 10% referrer reward of $0.12, giving a charged fee of $1.14. Maker fills generate no referral reward, and the referrer's share comes out of the remainder rather than adding to the taker's bill. See Referrals .
+Fees that are not trading fees
+Spot markets charge no maker or taker fee , because there is no spot orderbook to make or take on. Direct swaps are charged nothing.
+Liquidations carry their own three-way split : a fee to the liquidator, a fee to the insurance fund, and a protocol fee, all per-market rates rather than tier rates. See Liquidation .
+Lending yield is carved on accrual , with a fraction of deposit-interest gains reserved for the insurance fund and a fraction for the protocol. Lenders receive the remainder. See Interest rates .
+A builder fee sits outside the split entirely. It is charged on top of the taker fee and passed through to the builder, so it changes neither the taker's fee tier nor the protocol's cut. See Builder codes .
+What this means in practice
+For a trader at size , the number that moves the tier is taker plus maker volume over a live trailing 30 days, liquidations included. Crossing a threshold prices the very next fill.
+For a maker , post-only is the difference between paying the taker fee and receiving the rebate. The rebate is flat across tiers, so volume buys a cheaper taker fee and nothing else on the maker side.
+Edit on GitHub
+How fills work
+What happens between sending an order and holding a position: who fills it, in what order, and against what.
+Funding rates
+Why the contract tracks the oracle, and the two corrections that make it work.
+On this page
+The schedule
+What makes an order a maker order
+What counts as volume
+Per-market rates
+Worked example
+Where the fee goes
+Referral legs apply to the pre-discount fee
+Fees that are not trading fees
+What this means in practice

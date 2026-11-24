@@ -278,7 +278,7 @@ Copy trading is defined as entering any position within 30 minutes of entering t
 MAX/FLEX day-trading
 $5k
 $25k
-$50k
+$50k (Can be paired only with one $25k or one $5k.)
 MAX/FLEX swing
 $2k
 $10k

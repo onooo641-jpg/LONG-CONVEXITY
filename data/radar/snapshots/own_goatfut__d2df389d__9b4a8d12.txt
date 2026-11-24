@@ -35,7 +35,7 @@ Payout rules apply from this point too, since there are no payouts during an eva
 If you bought the 90/10 Profit Share Add-On with your challenge, it carries over automatically. There is nothing to re-purchase. Since there are no payouts during an evaluation, the add-on only affects what you take home once you are funded.
 Why does 1-Day-Pass-Plan cost more than EOD?
 A 1-Day-Pass-Plan costs more than an EOD account of the same size. What the extra buys:
-No consistency rule during the evaluation. EOD applies a 50% rule throughout.
+No consistency rule during the evaluation, included in the price. On EOD the evaluation has a 50% rule unless you add the None option at checkout.
 Faster payouts. 5 winning days instead of 7.
 A more forgiving funded consistency rule. 35% on 1-Day-Pass-Plan against 30% on EOD, so a bigger single day is allowed.
 A 25K entry size, which EOD does not offer.
@@ -98,5 +98,5 @@ Tick scalping , meaning opening and closing positions within seconds to capture 
 Inactivity
 Place at least one trade every 14 days. If no trades are placed for 14 consecutive days the account is breached and closed, and the fee is not refunded. This 14-day rule applies from 7 November 2026. There is no time limit on passing the evaluation, but the account does need to stay active. If you are going to be away, tell support in advance.
 Please monitor our website and Discord for announcements about trading parameters, updates, or system changes.
-Updated 19 November 2026
+Updated 24 November 2026
 Back to top

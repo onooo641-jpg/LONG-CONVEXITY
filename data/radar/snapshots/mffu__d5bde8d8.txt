@@ -15,13 +15,13 @@ Start Builder Evaluation See full rules
 One account per user. Built for focus, not for stacking.
 Real Recent Payouts
 Builder Payout auto-approved
-334 ms
+366 ms
 $1,600.00
 Payout auto-approved
-1.9s
-$800.00
+406 ms
+$421.20
 Payout auto-approved
-355 ms
+300 ms
 $1,600.00
 Sample only. Not all payouts shown. Updates every 4 hours.
 Account size $25K & $50K

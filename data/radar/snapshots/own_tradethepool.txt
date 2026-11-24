@@ -30,26 +30,26 @@ How Much Capital
 Would You Like to Manage
 Day Trade
 Swing
+What is your trading level?
+Beginner
+Advanced
 $ 5,000
 $ 25,000
 $ 50,000
 $ 100,000
 $ 200,000
-What is your trading level?
-Beginner
-Advanced
 Start Now
 Start Now
 Or
 Compare
 Close compare
+What is your trading level?
+Beginner
+Advanced
 $ 2,000
 $ 10,000
 $ 20,000
 $ 40,000
-What is your trading level?
-Beginner
-Advanced
 Start Now
 Start Now
 Or

@@ -53,7 +53,7 @@ Several funded accounts
 All your funded accounts convert, but they go live one at a time. The first starts at $0 with its own floor and cushion; the others wait in a queue with their money in Reserve. Every 10 profitable trading days, the next account can go live after a risk check.
 Related Articles
 Elite rules at a glance
-Prime funded stage and payouts
+Maximum Daily Profit and going live
 Live accounts: loss floor, cushion and reserve
 Instant rules at a glance
 Instant payouts and cushion

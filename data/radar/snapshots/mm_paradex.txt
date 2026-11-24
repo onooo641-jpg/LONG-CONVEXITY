@@ -1,0 +1,53 @@
+Zero-fee Equities, FX, Commodities, and Crypto Trading | Paradex | Documentation For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for the markdown version of any page.
+Search /
+Ask AI
+Join Community Start Trading
+Home Overview $DIME Trading Risk & Liquidations VTFs Paradex Chain Ecosystem REST API WebSocket API Agentic AI Hub Release Notes
+Skip to navigation
+Zero-fee Equities FX Commodities Crypto
+Trade perps, options and spot from a unified account with zero fees and full privacy. Open 24/7.
+Start Trading
+Explore the Docs
+Privacy
+Positions, entries, PnL and liquidation levels are hidden from the public.
+Unified Margin
+Trade 90+ markets across Futures, Spot, and Options all in one account.
+No ADL
+No Auto-Deleveraging. Socialized loss distributes risk fairly and preserves portfolio integrity.
+Retail vs Pro Orders
+Pro
+Fast Lane
+Paid taker fee, priority execution, and FastFills discounts for API traders who match with retail orders.
+Priority execution
+FastFills discounts
+High rate limits
+Retail
+Standard Lane
+Standard execution with access to RPI liquidity and queue priority.
+RPI liquidity
+UI queue priority
+Both lanes get: ✓ Privacy ✓ 90+ markets ✓ Unified margin
+Retail Price Improvement → FastFills →
+Trade on Paradex Get started trading perps, spot, options, and vaults.
+Privacy Spot Options VTFs
+Getting started → Bridges and on-ramps → Placing orders → Margin and risk → Trading fees →
+Build on Paradex Integrate with the API, build bots, or deploy on Paradex Chain.
+Python SDK REST API WebSocket API CLI MCP
+API authentication → API quick start → Paradex Chain RPC → Testnet guide → Code samples →
+Explore more
+Risk and Liquidations
+Margin system, funding, price bands, and deleveraging mechanics.
+XP and Referrals
+Earn XP, climb the ranks, and refer friends for rewards.
+Security and Trust
+Lockdown mode, guardian keys, audits, and bug bounty program.
+VTFs
+Earn passive income with automated, multi asset, multi strategy products.
+Ecosystem
+Community content, wallets, cross-chain bridges, and price oracles.
+Paradex Chain
+Paradex’s own appchain on Starknet. Explore the architecture and RPC access.
+Built with
+Home Overview $DIME Trading Risk & Liquidations VTFs Paradex Chain Ecosystem REST API WebSocket API Agentic AI Hub Release Notes
+What is Paradex?
+What is Paradex?

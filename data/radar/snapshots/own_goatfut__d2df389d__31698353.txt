@@ -103,12 +103,14 @@ Highest-profit day ÷ total profit for the cycle × 100
 Your highest-profit day must not be more than the consistency threshold for your account type. Landing exactly on the threshold is allowed.
 Consistency thresholds by account type
 Account type Evaluation Funded
-EOD Challenge 50% 30%
+EOD Challenge 50% or none (your checkout choice) 30%
 1-Day-Pass-Plan No consistency rule 35%
 Instant Not applicable 15% or 20%, chosen at checkout and fixed on every reward
 Instant Classic (bought before 18 November 2026) Not applicable 20%
 Flex Challenge 50% No consistency percentage
 Daily Payouts 40% No consistency rule
+Can I trade the EOD evaluation without a consistency rule?
+Yes. At checkout, choose None under Consistency. It costs extra, and your evaluation then has no consistency rule. Once you are funded, the 30% funded consistency rule applies, the same as with the 50% option.
 Worked example
 You have $3,000 in total profit during the current payout cycle on an EOD funded account. Your highest-profit day is $1,200.
 $1,200 ÷ $3,000 × 100 = 40%
@@ -124,7 +126,7 @@ Does Flex have a funded consistency rule?
 Flex funded accounts do not have a numerical consistency percentage. However, all trading must still comply with GFF trading rules and must reflect genuine trading activity. Having no funded consistency percentage does not override prohibited-strategy or anti-gaming rules.
 Does Daily Payouts have a funded consistency rule?
 No. Daily Payouts has no consistency rule on the funded account, so it places no limit on your payouts. The 40% consistency rule applies during the evaluation only, and in practice it means spreading your profit across at least three trading days.
-Updated 19 November 2026
+Updated 24 November 2026
 What is the daily progression rule on Daily Payouts?
 On Daily Payouts, at least 50% of every payout request must be profit generated since your last approved payout.
 Turn that around and it is easier to use: you can request up to twice the profit you have made since your last payout. The minimum of $500 and the maximum for your account size still apply on top.

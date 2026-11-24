@@ -16,12 +16,13 @@ The EOD Challenge is a one-phase evaluation with end of day trailing drawdown an
 Key benefits
 No time limit to pass the evaluation
 No daily loss limit during the evaluation phase
+Choose your evaluation consistency rule at checkout: 50%, or none for an extra fee
 End of day trailing max drawdown, which locks once it reaches your starting balance
 80/20 profit split by default, with an optional 90/10 add-on
 $0 activation fee, so your funded account is activated at no extra cost
 Pricing and targets
 Prices change with our promotions. For the current price and reset fee, see the pricing page or ask us in chat.
-Two resets are available per challenge. You can hold up to 5 funded accounts.
+Two resets are available per challenge. You can hold up to 5 funded accounts. The None consistency option costs extra at checkout and has a higher reset fee. The checkout shows both.
 How to pass
 Reach the profit target of 6% of your starting balance.
 Stay within the trading rules and loss limits below.
@@ -49,7 +50,7 @@ Account size Max contracts
 150K 12 mini / 120 micro
 Consistency rule
 The consistency rule limits how much of your total profit can come from a single trading day, so that profits are steady and sustainable.
-Evaluation: no single day may account for more than 50% of your total profit.
+Evaluation: the option you chose at checkout. With 50%, no single day may account for more than 50% of your total profit. With None, there is no consistency rule in the evaluation.
 Funded: no single day may account for more than 30% of your total profit during a payout period.
 Example on an EOD 50K. You make $1,500 in one trading day on your funded account. Your total profit for that period needs to reach at least $5,000 before you can request a payout, which puts your best day at 30% of the total.
 If you go over the threshold: your account is not terminated. You simply cannot request a payout until your highest profit day falls back to the threshold or below. Keep trading and building profit until it does, then you are eligible again.
@@ -81,5 +82,5 @@ Tick scalping , meaning opening and closing positions within seconds to capture 
 Inactivity
 Place at least one trade every 14 days. If no trades are placed for 14 consecutive days the account is breached and closed, and the fee is not refunded. This 14-day rule applies from 7 November 2026. There is no time limit on passing the evaluation, but the account does need to stay active. If you are going to be away, tell support in advance.
 Please monitor our website and Discord for announcements about trading parameters, updates, or system changes.
-Updated 18 November 2026
+Updated 24 November 2026
 Back to top
