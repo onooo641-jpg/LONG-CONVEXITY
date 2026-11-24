@@ -1,0 +1,81 @@
+===== #365 CoW solver gate tests, Stage 1 (Stage 0 desk check: see the pre-registration file)
+  (a) 2026 newcomers: genuine entrants first paid 2025-11-01..2026-08-31, >= 4 weeks paid, annualised to 2026-10-31 (x 0.85)
+      first paid in the window: 31; flagged as likely migrations: 30
+      0x15f692c06480e93a2af797c0ccb72e557ea80b8e  first 2026-06-19  weeks 20  $    147,485/yr  migration?
+      0xca8a6c454bbccb2017eb37e075cfea813b4dea59  first 2026-04-01  weeks 31  $    142,558/yr  migration?
+      0x9b47d63fd901fc03d0c1213431ac6ea0bd3f9137  first 2026-01-28  weeks 40  $    108,000/yr  migration?
+      0x50650829101f9e3df0cebb0cbab7cca1e2c335d5  first 2026-02-04  weeks 34  $     58,987/yr  migration?
+      0xf778a8be9da0ba4b3d2224c694f49c94e36e5b84  first 2026-08-05  weeks 13  $     31,775/yr  migration?
+      0xffd777515f141a9e24ad6a89e2b08ae93609c40a  first 2026-05-13  weeks 21  $     31,653/yr  migration?
+      0x171d4a72a56dbd16cd75619de7d1d17f316fc511  first 2025-12-03  weeks 44  $     20,192/yr  migration?
+      0x1faa3f2db43ac67fa23a2b61d3633edc895e9a59  first 2026-04-23  weeks 26  $     20,032/yr  GENUINE
+      0x26a6fdc06622895d76ff0557711b08332f51bbc8  first 2026-08-12  weeks  4  $     18,355/yr  migration?
+      0x6044eef7179034319e2c8636ea885b37cbfa9aba  first 2025-11-18  weeks 49  $     17,884/yr  migration?
+      0x689d90b257722edb0759e1d07ed956494dfc805e  first 2026-06-03  weeks 22  $     17,605/yr  migration?
+      0x733362de4702baccd715794d3332f4c99d4141f9  first 2026-07-09  weeks 14  $      9,178/yr  migration?
+      0xe3d7237dfed07182aafbcf06caa240094c9ac46d  first 2026-04-09  weeks 26  $      3,298/yr  migration?
+      0x9b4a2a6d9c244c8c94e31a84a169e23b4b7e5b1f  first 2026-03-18  weeks 29  $      1,872/yr  migration?
+      0x6508ef65b0bd57eabd0f1d52685a70433b2d290b  first 2026-03-18  weeks 25  $      1,528/yr  migration?
+      0xf90204b73507bc7f8d01a6f8b388ae2536b57579  first 2026-04-08  weeks 13  $      1,522/yr  migration?
+      0xc8598ba37a93f67c75b1e69f13ff21fda23c0b14  first 2026-06-17  weeks 15  $      1,021/yr  migration?
+      0x409ec55a2543c427ce84c6437012d2166754b2ab  first 2026-05-19  weeks 22  $        635/yr  migration?
+      0x2bd12a973952e2971c93f970f31abf635ed7721c  first 2026-05-27  weeks 18  $        614/yr  migration?
+      0xfdfae719efc107b19ab303d593c227d4090bf4fb  first 2026-08-05  weeks  5  $        247/yr  migration?
+      0x922164bbbd36acf9e854acbbf32facc949fcaeef  first 2025-11-19  weeks 17  $        221/yr  migration?
+      0x09cc116ff32400dc5f4ab93c1a0acc427402f82f  first 2026-04-08  weeks  6  $        135/yr  migration?
+      0xdd875e60a9ae49509012643d7674505cc6f3f6c2  first 2026-06-10  weeks  5  $        125/yr  migration?
+      0xe34056caca6c32cd991a79d4e854727d2332e5b2  first 2026-07-22  weeks  4  $        119/yr  migration?
+      0x6ce5bbddeac2d2d18d4481b50ac3630a7332ab90  first 2026-07-09  weeks  5  $        118/yr  migration?
+      0xbed870b51ea0c39b896124c6ca293fb94579a7cf  first 2026-02-04  weeks 23  $         72/yr  migration?
+      0x777138baca39def1284e8e7c3a451b06a3dfe749  first 2026-03-25  weeks  1  $         19/yr  migration?
+      0x5c3593481cba011737e36ded62f1797c9f6afce1  first 2026-04-16  weeks  1  $         10/yr  migration?
+      0xc911f7c319b02155ace70fc36811f6ed841754b3  first 2026-03-18  weeks  1  $         10/yr  migration?
+      0x2bd22ac978b03455cc5ac0c5ac228b8a44c07481  first 2026-07-22  weeks  1  $          5/yr  migration?
+      0xc68cb0dc21538fe788ddf3713f7f46bd27b02f4e  first 2026-08-05  weeks  1  $          0/yr  migration?
+      genuine active 2026 entrants 1 (< 3): not enough 2026 entrants (not a kill by itself)
+  (b) do newcomers last? #364 genuine active entrants (first paid 2024-03-01..2025-10-31), 2026-01-01..10-31 annualised (x 0.85)
+      0xbece6f358a252cb72f7fe64d491a7f448ed5ecc9  first 2025-04-15  first-year $    820,338  2026 $    526,139/yr  last paid 2026-11-19
+      0x660c3251695fb03a73e3c80de6606fd6ae69708a  first 2024-10-29  first-year $    226,493  2026 $    457,127/yr  last paid 2026-11-19
+      0xd4676b4de3a982a429a8dbe90d4a7e7cfb4769a5  first 2024-04-23  first-year $    588,274  2026 $    327,710/yr  last paid 2026-11-19
+      0x80db9081298fe0ef937100a85f715cf915a4f4ce  first 2024-07-16  first-year $      6,972  2026 $     61,987/yr  last paid 2026-11-19
+      0x34f67100a4e672d6c3db1950a581c5ada3d251dd  first 2025-10-14  first-year $     52,375  2026 $     34,327/yr  last paid 2026-11-19
+      0x82c33f9602c4ecee8b8fc78483692bbba95a1768  first 2025-10-08  first-year $      4,595  2026 $      2,653/yr  last paid 2026-03-18
+      0x4d1cd5a87c39824d12dc447d4d30f3e024881f59  first 2025-01-14  first-year $     44,447  2026 $        707/yr  last paid 2026-04-01
+      0x52f77287312dd33f29cb93862935f8f01e77db64  first 2024-07-31  first-year $      9,166  2026 $          0/yr  last paid 2024-11-26
+      0xb11cf1c5dc17e3f6cc2c38f2df4cd0d141c7f98a  first 2024-10-08  first-year $        218  2026 $          0/yr  last paid 2025-02-18
+      0xbc33a1f908612640f2849b56b67a4de4d179c151  first 2024-07-24  first-year $     95,639  2026 $          0/yr  last paid 2025-04-15
+      0xf7a25914ce33ce42425f3c189f366aab7c09be27  first 2024-05-21  first-year $    129,087  2026 $          0/yr  last paid 2025-05-20
+      11 entrants; share earning >= $15K/yr in 2026: 45% (bar 30%) -> pass
+  (c) reward pool: USD paid by quarter (COW in brackets); top recipient's share by year
+      2024Q1: $   1,959,321  (   5,527,785 COW)  recipients 14
+      2024Q2: $   1,154,970  (   4,375,256 COW)  recipients 16
+      2024Q3: $     941,040  (   4,100,553 COW)  recipients 19
+      2024Q4: $   3,087,294  (   6,231,497 COW)  recipients 28
+      2025Q1: $   2,987,759  (   7,485,744 COW)  recipients 29
+      2025Q2: $   1,642,306  (   5,106,169 COW)  recipients 26
+      2025Q3: $   3,180,097  (   8,904,326 COW)  recipients 42
+      2025Q4: $   2,827,212  (  13,246,496 COW)  recipients 39
+      2026Q1: $   3,336,453  (  17,001,552 COW)  recipients 39
+      2026Q2: $   1,808,440  (  10,862,122 COW)  recipients 41
+      2026Q3: $   1,581,232  (  12,043,221 COW)  recipients 49
+      2026Q4: $     513,471  (   3,744,392 COW)  recipients 51
+      2024: total $7,142,624; top 1 12%; top 5 51%
+      2025: total $10,637,374; top 1 18%; top 5 54%
+      2026: total $7,239,596; top 1 50%; top 5 78%
+      2026-05..10 annualised $6,414,563 vs 2025 $10,637,374: 60% (bar 50%) -> pass
+  (d) live competition (CoW solver-competition API sample, ~30 days per network)
+      mainnet: auctions 451, with a winner 451; solvers bidding 30; distinct winners 27; top-3 win share 43.7%; outside top 5 43.7%; top winners 0x5ed864e8f37dcb4f79c5172a815d1b3a9147eaab 145, 0xbee162fa5ae892be74f3f3e01c23da89adbccccc 128, 0x5c3593481cba011737e36ded62f1797c9f6afce1 65, 0xb222da0f9c22ad2addcb0b0d6b150f398e44157a 50, 0x8f5835e9d756c9bd934bce527157a4b0ef3c5cb7 48, 0xa60ded4c899e7560dc4ca56b57fbab25c90addeb 45
+      xdai: auctions 114, with a winner 114; solvers bidding 7; distinct winners 3; top-3 win share 100.0%; outside top 5 0.0%; top winners 0xfa5d3f85da8395d4562d18422cb27e032a676af1 111, 0x5fa8c6f28fc234d3b71f27913429b29091fe0f1d 3, 0xc306627b7955f3180e90d77fe5703d1933ba895b 1
+      arbitrum_one: auctions 66, with a winner 66; solvers bidding 22; distinct winners 13; top-3 win share 57.5%; outside top 5 23.3%; top winners 0x4cdba844ceb949567ea18b9ef185515fa626c69d 16, 0xbee162fa5ae892be74f3f3e01c23da89adbccccc 16, 0xfff90c451ba1cb6a1b8b950da4aa9c3f82270ac3 10, 0x09498cf3414616c1d58979fce65438473c998c47 8, 0x9a0b8755c887e02c272afe89b083d54a20abff74 6, 0x5c3593481cba011737e36ded62f1797c9f6afce1 4
+      base: auctions 158, with a winner 158; solvers bidding 19; distinct winners 15; top-3 win share 59.6%; outside top 5 22.4%; top winners 0x588ef3de14875ff9c4fc74c9e2c308767d665e30 56, 0xa95157266e0f53d2762fd8a885d4cdb2409eb29e 30, 0xbee162fa5ae892be74f3f3e01c23da89adbccccc 23, 0xa2e28dedaab59d732ae375832fb855510aa7fe57 18, 0x8f5835e9d756c9bd934bce527157a4b0ef3c5cb7 15, 0xffd98b05962fca73cdfd22ed73198dfb2e5241eb 8
+      polygon: auctions 17, with a winner 17; solvers bidding 11; distinct winners 6; top-3 win share 70.6%; outside top 5 5.9%; top winners 0xbee162fa5ae892be74f3f3e01c23da89adbccccc 7, 0x1abdbc2349720818d5dca0a2bb569948e25b23c3 3, 0x328a1617c7aee5b0ba2a39eda61f8dfa50837c73 2, 0x3980daa7eaad0b7e0c53cfc5c2760037270da54d 2, 0xc44afc0d1b5913a3378de5138b4f04e63713f82d 2, 0x58c53d90658b8319bad56e30e2492615254257cb 1
+      avalanche: auctions 8, with a winner 8; solvers bidding 7; distinct winners 6; top-3 win share 62.5%; outside top 5 12.5%; top winners 0x647b20db778e8f4d0959e89c5d26b791d613e19a 2, 0x84bf7a96ca321f158d1042332d2aeaa5a186632a 2, 0x6c273074c5de2711ceb7a87fd525b00a15c65318 1, 0x8cd4beaa599ab64dd7fa2fa8734bb0d6ec4e0af7 1, 0xad3ce441a497bc64f77b5e05fb598f2caffae30e 1, 0xca674076e0f96d18347869d9b8f8f57fc098a8c5 1
+      bnb: auctions 154, with a winner 154; solvers bidding 25; distinct winners 21; top-3 win share 49.4%; outside top 5 34.3%; top winners 0x53227a6d5a129143b6ad760810ece62c79ab8e97 45, 0x5920fe8e1e7f0014f217d0ed3920a403659f73cd 26, 0x943c94cd0374cb2ba3c88bab1bdc8393745c5fe9 17, 0x6e43ab35c1909bbf74bfe657fd0b019459680c36 16, 0x993118b07f47fae57379827ddb515ae3337893e4 13, 0xf8ee61761106777b5b219ca9156d4ba58c9a7bb4 8
+      linea: no data (no solutions)
+      lens: no data (404)
+      plasma: no data (no solutions)
+      ink: auctions 3, with a winner 3; solvers bidding 6; distinct winners 3; top-3 win share 100.0%; outside top 5 0.0%; top winners 0x22478dcfb16f496fd3c11080c95818dceba3dc43 1, 0x539a8cafd0698ddd2e833121e3dff977dbe76bf6 1, 0x9458ab3878e7f120e548fa65ebcc7ff61e771e0c 1
+      at least one network with top-3 share < 95% -> pass
+  (e) context: COW repaid into the Payouts Safe since 2024-01-01
+      transfers 47, COW 106,050,313; from payout recipients: 4,084,931 COW from 5 addresses; largest senders: 0xa2bfc70e 73,665,382, 0x616de58c 20,300,000, 0xca771eda 8,000,000, 0x6c642caf 3,250,000, 0xca8a6c45 346,035
+  STAGE 1 VERDICT: survives (kill-only) -> Stage 2 (shadow or local test of a real solver) is the next and only pass route

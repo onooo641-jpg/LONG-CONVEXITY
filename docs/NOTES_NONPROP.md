@@ -197,3 +197,13 @@ listing short FAIL, #335 buyback rotation FAIL, #337 deletions KILL, #339 tokeni
 - **Meaning.** CoW solving is the first non-prop role where newcomers' measured income clears $15K/yr — but it is an engineering business
   (company KYC, a competitive solver, hosting), not a capped-loss ticket. Next step (registered): a no-money shadow-competition solver.
   Needs Jx's decision on who builds it. Also recorded in START_HERE: fallback plan if prop income stops.
+
+## 2026-11-24 — #365 CoW solver gate tests (before any build)
+- **Stage 0 (official docs on GitHub): no kill.** Rewards are a protocol subsidy (≤ 50% of protocol fees on the big chains, 100% on small
+  ones) plus consistency rewards for good bids that lose and a quote-accuracy budget. Join via the CoW DAO bonding pool: company KYC, start on
+  BNB Chain, 25% of rewards locked, 15% fee from month 7, gas float 0.2–1 ETH; no country restriction found. A free local shadow test exists
+  (CoW's open-source autopilot + driver + your solver against live orders; needs Rust and an RPC endpoint).
+- **Stage 1: survives** — newcomers last (45% of 2024–25 newcomers still ≥ $15K/yr), pool 60% of 2025 (bar 50%), outsiders win 22–44% of
+  auctions by count; 2026 newcomers inconclusive. Warnings: top solver 50% of 2026 rewards; top 3 take 78–99% of winning *value*.
+- **Next:** Stage 2 — a real solver on live auctions, no money. First step that needs no decision from Jx: run CoW's open-source example
+  solver in local shadow mode and measure its gap to the actual winners.

@@ -56,3 +56,23 @@ if its would-have-won auctions imply ≥ $15,000/yr net after the 15% fee and ho
    driver and your solver (`--shadow https://api.cow.fi/mainnet`); needs Rust and an RPC endpoint ("can be very heavy on RPC resource
    consumption"). (ii) The shadow competition (Plasma). Open-source example solvers: `cowprotocol/services/crates/solvers`.
 **Stage 0 verdict: no kill condition met** (no Malaysia exclusion found; no bond needed via the DAO pool; rules allow a newcomer).
+
+### Stage 1 results (2026-11-24; `docs/jx_runs/cow_gate_20261124.txt`, identical on re-run)
+| Check | Result | Bar | Outcome |
+|---|---|---|---|
+| (a) 2026 newcomers | 31 new payout addresses; the migration heuristic flags 30 (too many leavers in 2026 to separate moves from new teams); 1 genuine ($20,032/yr) | ≥ 3 genuine, median ≥ $15K | not enough 2026 entrants (no kill; inconclusive) |
+| (b) newcomers last | 5 of 11 genuine 2024–25 entrants earn ≥ $15K/yr in 2026 (45%): $526K, $457K, $328K, $62K, $34K; 4 stopped being paid in 2024–25, 2 fell to < $3K | ≥ 30% | pass |
+| (c) pool trend | 2026-05..10 annualised $6.41M vs 2025 $10.64M (60%); top recipient's share 12% (2024), 18% (2025), **50% (2026)**; top 5 51% / 54% / **78%** | ≥ 50% | pass (declining, concentrating) |
+| (d) door open | outside-top-5 win shares by auction count: mainnet 43.7% (27 winners in 451 auctions), BNB 34.3% (21 in 154), Arbitrum 23.3%, Base 22.4%; Gnosis 0% | top 3 < 95% on ≥ 1 network | pass |
+| (e) repayments | 4.08M COW repaid by 5 payout recipients vs 105.6M paid out (the other 102M COW into the Safe is DAO funding) | context | — |
+
+**Stage 1 verdict: survives (kill-only).** Not a pass: the only pass route is Stage 2.
+
+**Unregistered context (`docs/jx_runs/cow_gate_value_20261124.txt`, identical on re-run).** By *value* (winning score), the picture is
+much tighter than by auction count: the top 3 solvers take 78% of winning score on mainnet, 67% on Base, 61% on Arbitrum and **99% on BNB**
+(the chain newcomers must start on); solvers outside the top 5 win 61–63% of mainnet/BNB auctions but only 0–13% of the value. Small
+solvers mostly win small auctions. A newcomer's income depends on winning valuable orders or on consistency rewards for good bids.
+
+**Reading.** CoW solving passes every free check, with three warnings: the reward pool is shrinking in dollars, one team now takes half
+of all rewards, and value on the entry chain is concentrated in the top 3. Whether a new solver can earn ≥ $15K/yr is now only a question
+of solver quality, which only Stage 2 (a real solver bidding on live auctions with no money) can answer.

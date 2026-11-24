@@ -1,0 +1,6 @@
+===== #365 context: share of winning score (value) vs share of auctions won
+  arbitrum_one: auctions 66; top-3 by value take 61% of winning score (and 34% of wins); outside the top 5 by value: 17% of score, 40% of wins
+  base: auctions 158; top-3 by value take 67% of winning score (and 31% of wins); outside the top 5 by value: 10% of score, 22% of wins
+  bnb: auctions 154; top-3 by value take 99% of winning score (and 21% of wins); outside the top 5 by value: 0% of score, 63% of wins
+  mainnet: auctions 451; top-3 by value take 78% of winning score (and 25% of wins); outside the top 5 by value: 13% of score, 61% of wins
+  xdai: auctions 114; top-3 by value take 100% of winning score (and 100% of wins); outside the top 5 by value: 0% of score, 0% of wins
