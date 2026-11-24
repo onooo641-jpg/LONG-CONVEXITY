@@ -1,0 +1,27 @@
+# #366 shadow autopilot (docs/PREREG_COW_SHADOW_20261124.md). __RPC__ is replaced by the workflow.
+node-url = "__RPC__"
+chain-id = 1
+shadow = "https://api.cow.fi/mainnet/"
+
+[logging]
+filter = "warn,autopilot=info"
+use-json = true
+
+[current-block]
+poll-interval = "2s"
+
+[run-loop]
+solve-deadline = "15s"
+
+[[drivers]]
+name = "baseline"
+url = "http://127.0.0.1:11088/baseline"
+address = "0xa0Ee7A142d267C1f36714E4a8F75612F20a79720"
+
+[fee-policies]
+
+[order-quoting]
+price-estimation-drivers = [{ name = "baseline", url = "http://127.0.0.1:11088/baseline" }]
+
+[native-price-estimation]
+estimators = [[{ type = "Driver", name = "baseline", url = "http://127.0.0.1:11088/baseline" }]]

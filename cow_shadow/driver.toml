@@ -1,0 +1,32 @@
+# #366 driver (adapted from cowprotocol/services playground/configs/driver.toml). __RPC__ is replaced by the workflow.
+app-data-fetching-enabled = true
+orderbook-url = "https://api.cow.fi/mainnet"
+tx-gas-limit = "45000000"
+
+[[solver]]
+name = "baseline"
+endpoint = "http://127.0.0.1:7872"
+absolute-slippage = "40000000000000000"
+relative-slippage = "0.1"
+account = "0x2a871d0798f97d79848a013d4936a73bf4cc922c825d33c1cf7073dff6d409c6"  # public test key from CoW's playground; never funded
+
+[submission]
+gas-price-cap = "1000000000000"
+
+[submission.public-mempool]
+urls = ["__RPC__"]
+
+[liquidity]
+base-tokens = [
+  "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+  "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+  "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+  "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+  "0xc00e94Cb662C3520282E6f5717214004A7f26888",
+  "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2",
+  "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+  "0x6810e776880C02933D47DB1b9fc05908e5386b96",
+]
+
+[[liquidity.uniswap-v2]]
+preset = "uniswap-v2"

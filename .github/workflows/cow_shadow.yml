@@ -1,0 +1,66 @@
+# #366 (docs/PREREG_COW_SHADOW_20261124.md): CoW's open-source baseline solver in local shadow mode against live mainnet auctions.
+# Started by pushing .github/cow_shadow_request.txt (duration=<minutes>) or manually. Nothing is settled; no keys with funds.
+name: cow shadow
+on:
+  workflow_dispatch: {}
+  push:
+    branches: [claude/ict-trading-resources-ugh07b]
+    paths: [.github/cow_shadow_request.txt]
+permissions:
+  contents: write
+concurrency:
+  group: cow-shadow
+  cancel-in-progress: false
+jobs:
+  shadow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.ref_name }}
+      - uses: astral-sh/setup-uv@v5
+      - run: uv sync
+      - name: Run the shadow stack
+        run: |
+          MIN=$(grep -E '^duration=' .github/cow_shadow_request.txt | cut -d= -f2); MIN=${MIN:-20}
+          RPC=$(grep -E '^rpc=' .github/cow_shadow_request.txt | cut -d= -f2-); RPC=${RPC:-https://ethereum-rpc.publicnode.com}
+          IMG=ghcr.io/cowprotocol/services:main
+          mkdir -p cfg logs
+          docker pull "$IMG"
+          docker image inspect "$IMG" --format '{{index .RepoDigests 0}}' | tee logs/digest.txt
+          echo "duration_min=$MIN rpc=$RPC" | tee logs/params.txt
+          for f in autopilot driver baseline; do sed "s#__RPC__#$RPC#g" cow_shadow/$f.toml > cfg/$f.toml; done
+          docker run -d --name solvers --network host -e LOG="warn,solvers=info" -e TOML_TRACE_ERROR=1 -v "$PWD/cfg:/cfg" "$IMG" \
+            solvers baseline --config /cfg/baseline.toml
+          sleep 5
+          docker run -d --name driver --network host -e LOG="warn,driver=info" -e TOML_TRACE_ERROR=1 -v "$PWD/cfg:/cfg" "$IMG" \
+            driver --config /cfg/driver.toml --ethrpc "$RPC"
+          sleep 30
+          docker run -d --name autopilot --network host -e TOML_TRACE_ERROR=1 -v "$PWD/cfg:/cfg" "$IMG" \
+            autopilot --config /cfg/autopilot.toml
+          end=$(( $(date +%s) + MIN * 60 ))
+          while [ "$(date +%s)" -lt "$end" ]; do
+            sleep 60
+            docker ps --format '{{.Names}} {{.Status}}' | tr '\n' ';'; echo
+            n=$(docker ps -q | wc -l); [ "$n" -lt 3 ] && { echo "a container stopped"; break; }
+          done
+          for c in solvers driver autopilot; do docker logs "$c" > "logs/$c.log" 2>&1 || true; docker stop "$c" >/dev/null 2>&1 || true; done
+          ls -la logs
+      - name: Parse
+        if: always()
+        run: uv run python scripts/cow_shadow_parse.py ${{ github.run_id }}
+      - name: Commit
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for f in data/public/cowshadow_* docs/jx_runs/cow_shadow_run_*; do [ -e "$f" ] && git add "$f"; done; true
+          git diff --cached --quiet && exit 0
+          git commit -m "cow shadow: run ${{ github.run_id }}"
+          for i in 1 2 3 4 5; do
+            git pull --rebase -X theirs --no-edit origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            sleep $((i * 10))
+          done
+          exit 1
