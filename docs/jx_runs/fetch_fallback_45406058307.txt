@@ -1,0 +1,8 @@
+=== uniswapx371c
+  0/10957 receipts, 2 transfers, 0s
+  2000/10957 receipts, 2926 transfers, 238s
+  4000/10957 receipts, 5768 transfers, 469s
+  6000/10957 receipts, 8816 transfers, 702s
+  8000/10957 receipts, 11895 transfers, 936s
+  10000/10957 receipts, 15121 transfers, 1188s
+  done: 16750 transfers; hourly prices for 37/40 tokens
