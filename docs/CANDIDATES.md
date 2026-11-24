@@ -212,6 +212,7 @@ risk, 5m signals and 1m fills.
 | 369 | AI-assisted audit contests (Sherlock, Cantina, Code4rena prize pools) | `docs/RADAR_REVIEW_20261124.md` | **KILL Stage 0**: prize money per submission $451 (2024) → $85 (2026 H1) as AI floods contests; contests −83%, submissions +24%; Sherlock $250 stake per report; winnings concentrated (third-party figures) | — |
 | 370 | Crypto perp trend-following + cross-sectional momentum, 52-config grid, walk-forward (every Binance USDT perp ever listed, 2020–26) | `docs/PREREG_CRYPTO_TREND_20261124.md` | registered; fetch on Actions | — |
 | 371 | UniswapX fillers on Arbitrum + Base: concentration and newcomer entry (paid-bot role never measured) | `docs/PREREG_UNISWAPX_20261124.md` | registered; fetch queued | — |
+| 372–376 | desk checks from the coverage audit: 1inch Fusion resolvers, deBridge DLN takers, Drift keepers, leveraged-ETF decay, PRS/SSPN tax reliefs | `docs/AUDIT_ALL_AREAS_20261124.md` | all dismissed: whitelist/stake-gated (1inch); ~4 bps taker incentive like Across #362 (deBridge); cents per fill speed race (Drift); borrow fees remove the decay profit (LETF); tax relief ~RM570–750/yr (PRS) | — |
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.
