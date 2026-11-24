@@ -34,3 +34,25 @@ if its would-have-won auctions imply ≥ $15,000/yr net after the 15% fee and ho
 `uv run python -m scripts.cow_gate_20261124 | tee docs/jx_runs/cow_gate_20261124.txt` (re-run once; must be identical).
 **Honest limits.** As #364 (address ≠ team; migration flag is a heuristic; survivorship). The API sample is recent only. Nothing in Stages
 0–1 shows that Jx's side can build a winning solver; only Stage 2 can.
+
+### Stage 0 results (desk check, 2026-11-24; source: `cowprotocol/docs` on GitHub, files `docs/cow-protocol/tutorials/solvers/onboard.md`,
+`.../local_test.md`, `.../reference/core/auctions/rewards.md`, `accounting.md`, `bonding_pools.md`)
+1. **Who pays and how.** "The protocol is currently subsidizing the solver competition on all chains" with weekly COW rewards.
+   Performance reward per auction = the winner's marginal contribution to total score (second-price style), capped above at β × protocol
+   fee earned (β = 50% on Ethereum, Arbitrum, Base, BNB; 100% on Gnosis, Avalanche, Polygon, Linea, Ink, Plasma). Consistency rewards
+   (since 2026-06-30): the unspent budget is shared by **bid quality** (share of proposed surplus on executed market orders, *including
+   orders the solver bid on but did not win*) × settlement success rate. Quote rewards: a separate budget of ~10% of protocol revenue
+   for the five most accurate quotes per order.
+2. **Costs.** Gas is paid by the solver and recovered through network fees in its bids ("no guarantee that the per-auction rewards are
+   greater than the costs"); negative slippage is charged to the solver weekly; failed settlement = penalty up to ~1–3 bps of the order,
+   max $20/order; EBBO violations must be reimbursed to users; 15% service fee from month 7; 25% of weekly rewards locked (bonding pool);
+   a negative week becomes an overdraft to repay. Gas float: 0.2–1 ETH per chain (production).
+3. **KYC / company / country.** CoW DAO bonding pool: KYC of the **company** behind the solver (incorporation, shareholders, passports of
+   main shareholders and developers). No country restriction appears in any of these pages. Own bonding pool: $500K + 1.5M COW
+   (reduced: $50K + 500K COW, only for existing solvers) — not needed when joining through the DAO pool.
+4. **Path.** Local test → shadow competition ("only Plasma now") → KYC + onboarding call → staging → production on **BNB Chain first** →
+   other chains → mainnet "after some time". COW rewards for every chain are paid on Ethereum mainnet (so #361/#364 data cover all chains).
+5. **No-money tests that exist.** (i) Local: run CoW's open-source autopilot in shadow mode against the production order book plus the
+   driver and your solver (`--shadow https://api.cow.fi/mainnet`); needs Rust and an RPC endpoint ("can be very heavy on RPC resource
+   consumption"). (ii) The shadow competition (Plasma). Open-source example solvers: `cowprotocol/services/crates/solvers`.
+**Stage 0 verdict: no kill condition met** (no Malaysia exclusion found; no bond needed via the DAO pool; rules allow a newcomer).
