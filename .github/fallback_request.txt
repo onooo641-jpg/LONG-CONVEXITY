@@ -1,2 +1,2 @@
 # jobs for scripts/fetch_fallback.py (one per line)
-uxorders
+uxsmoke
