@@ -788,3 +788,6 @@ FTMO 2-Step (CFD) fails the flag rule (coin flip ≈ 0, deep dips), so the CFD r
 
 ### Flashblocks probe (2026-11-24)
 Free public Base endpoint does NOT expose sub-block (pending) state (0/339 polls). Speed lever needs a provider endpoint with flashblocks: Jx step = create a free-tier account at a Base RPC provider that lists flashblocks, add the URL as GitHub secret `BASE_FLASHBLOCKS_URL`; I then run the same probe against it. Shadow watcher was down ~2 h on 2026-11-24 (cron dropped); restarted and now self-chains. Watched uptime so far ~57% of wall time per chain (≈43 h each), a coverage risk for the 75% inconclusive rule.
+
+### Base changed (2026-11-24): flashblocks retired, 200 ms blocks
+Per Base docs (read via Actions run 45377543121): 200 ms canonical blocks since 2026-11-05; Flashblocks and `pending` state gone. So "paid flashblocks" is dead as a speed lever on Base; the Action for Jx item about `BASE_FLASHBLOCKS_URL` is CANCELLED (do not register for it). Base replay/shadow numbers reflect the old 2 s era or a slow 8 s cycle: Base is unmeasured for the new regime. Speed on Base now means WebSocket `newHeads` on a low-latency VPS/provider, untested. Arbitrum (250 ms), Polygon, Avalanche, Optimism are unaffected by this change. Shadow Addendum 5 records it.
