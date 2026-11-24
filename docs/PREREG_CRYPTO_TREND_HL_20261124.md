@@ -12,3 +12,9 @@ coin list = coins in `data/public/hl_funding.parquet`, 2024-01..2026-11). Binanc
 drawdown from each start.
 **Command.** `uv run python -m scripts.crypto_trend_hl_20261124 | tee docs/jx_runs/crypto_trend_hl_20261124.txt` (re-run once; identical).
 **Limits.** As #370; plus coins listed on Hyperliquid today may not have been listed throughout 2021–23 (survivorship towards today's list).
+
+### Results (2026-11-24; `docs/jx_runs/crypto_trend_hl_20261124.txt`, identical on re-run)
+143 of 918 symbols map to Hyperliquid. Walk-forward 2021-01..2026-10: CAGR 28.9%, worst DD −90.6%, Sharpe 0.70; halves 37.3% / 20.9%;
+costs × 1.5 27.3%. By year: **+1,284% (2021)**, −60.7%, −42.1%, +46.8%, +21.0%, **−21.5% (2026 Jan–Oct)**. By start date (end value per $1):
+2021 ×4.39 (low ×0.99) · **2022 ×0.32** (low ×0.13) · 2023 ×0.81 · 2024 ×1.39 · 2025 ×0.95. **Verdict: FAIL** (drawdown worse than BTC's).
+Reading: the whole multi-year return is the 2021 bull run; any start after 2021 lost money or barely broke even, with deep drawdowns.

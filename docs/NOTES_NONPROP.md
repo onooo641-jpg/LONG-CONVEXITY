@@ -253,3 +253,6 @@ Audit (`docs/AUDIT_ALL_AREAS_20261124.md`) found two never-measured areas: crypt
 desk checks #372–#381 (1inch, deBridge, Drift keepers, leveraged-ETF decay, PRS/SSPN, crypto prop, trading competitions, redemption bots,
 ZK provers, UMA) all dismissed (`docs/NICHE_SWEEP_20261124.md`). **#370 FAIL**: 52 configs, walk-forward 30.8%/yr but −90.6% worst drawdown
 and a losing first half; the 2025–26 windfall came from Binance-only meme pump-and-dumps, not reachable on Hyperliquid.
+
+**#382 (Jx: "this still looks pretty good")**: the same walk-forward on Hyperliquid-listed coins only: 28.9%/yr, all from 2021 (+1,284%);
+starting in 2022 leaves ×0.32 today, 2023 ×0.81, 2024 ×1.39, 2025 ×0.95; 2026 −21.5%. FAIL.

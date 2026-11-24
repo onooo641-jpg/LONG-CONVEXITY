@@ -1,0 +1,17 @@
+===== #382 #370 restricted to Hyperliquid-listed coins: 143 of 918 Binance symbols
+  walk-forward OOS 2021-01-01..2026-10-31: CAGR 28.9%, worst DD -90.6%, Sharpe 0.70
+    half 1 CAGR 37.3% (DD -88.8%); half 2 CAGR 20.9% (DD -53.0%); costs x1.5 CAGR 27.3% (DD -90.3%)
+    BTC buy-and-hold: CAGR 18.4%, worst DD -76.7%
+    2021: return +1284.3% (CAGR 1284.3%), DD -64.8%
+    2022: return -60.7% (CAGR -60.7%), DD -70.3%
+    2023: return -42.1% (CAGR -42.1%), DD -60.6%
+    2024: return +46.8% (CAGR 46.6%), DD -53.0%
+    2025: return +21.0% (CAGR 21.0%), DD -33.4%
+    2026: return -21.5% (CAGR -25.2%), DD -34.8%
+  by start date (walk-forward equity from that date to 2026-10-31):
+    start 2021-01: x4.39 at the end; worst drawdown -90.6%; lowest point x0.99
+    start 2022-01: x0.32 at the end; worst drawdown -88.0%; lowest point x0.13
+    start 2023-01: x0.81 at the end; worst drawdown -66.7%; lowest point x0.33
+    start 2024-01: x1.39 at the end; worst drawdown -53.0%; lowest point x0.57
+    start 2025-01: x0.95 at the end; worst drawdown -35.1%; lowest point x0.78
+  VERDICT: FAIL
