@@ -14,8 +14,8 @@ DAYS, BPS, SHARE, BAR = 92, 0.001, 0.10, 15_000.0
 
 
 def main():
-    meta = json.loads((PUB / "uniswapx371b_meta.json").read_text())
-    tr = pd.read_parquet(PUB / "uniswapx371b_inputs.parquet")
+    meta = json.loads((PUB / "uniswapx371_stage3_meta.json").read_text())
+    tr = pd.read_parquet(PUB / "uniswapx371_stage3_inputs.parquet")
     print(f"===== #371 Stage 3: Arbitrum UniswapX fills 2026-08-01..10-31; fills considered {meta['fills_considered']:,}; "
           f"input transfers {len(tr):,}; tokens {tr['token'].nunique() if len(tr) else 0}")
     if tr.empty:
