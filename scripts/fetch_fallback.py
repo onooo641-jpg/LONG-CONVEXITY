@@ -2175,7 +2175,22 @@ def job_radarprobe():
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "radarprobe.json").write_text(json.dumps(out))
 
-JOBS = {"radarprobe": job_radarprobe, "cow365": job_cow365, "cow361b": job_cow361b, "jlp363": job_jlp363, "cow361": job_cow361, "across362": job_across362, "sweep4d": job_sweep4d, "sweep4c": job_sweep4c, "sweep4b": job_sweep4b, "sweep4": job_sweep4, "addprice": job_addprice, "fred9": job_fred9, "batch10b": job_batch10b, "repair8": job_repair8, "sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+def job_cowauction():
+    """#366 repair attempt: is any CoW live-auction endpoint public? (status + size only)"""
+    out = []
+    for host in ("https://api.cow.fi", "https://barn.api.cow.fi"):
+        for net in ("mainnet", "xdai", "arbitrum_one", "base", "bnb", "polygon", "avalanche", "linea", "plasma", "ink", "sepolia"):
+            u = f"{host}/{net}/api/v1/auction"
+            st, d = _qget(u, timeout=40)
+            n = len((d or {}).get("orders") or []) if isinstance(d, dict) else 0
+            out.append({"url": u, "status": st, "orders": n, "keys": sorted(d.keys())[:12] if isinstance(d, dict) else None})
+            print(f"  {st} orders {n:>5}  {u}", flush=True)
+            time.sleep(0.3)
+    OUT.mkdir(parents=True, exist_ok=True)
+    (OUT / "radarprobe_cowauction.json").write_text(json.dumps(out))
+
+JOBS = {"cowauction": job_cowauction, "radarprobe": job_radarprobe, "cow365": job_cow365, "cow361b": job_cow361b, "jlp363": job_jlp363, "cow361": job_cow361, "across362": job_across362, "sweep4d": job_sweep4d, "sweep4c": job_sweep4c, "sweep4b": job_sweep4b, "sweep4": job_sweep4, "addprice": job_addprice, "fred9": job_fred9, "batch10b": job_batch10b, "repair8": job_repair8, "sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys
