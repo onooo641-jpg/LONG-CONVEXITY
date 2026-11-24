@@ -205,6 +205,7 @@ risk, 5m signals and 1m fills.
 | 362 | Across relayer fees on Base / Arbitrum (user-paid fast fills) | same | **KILL Stage 1**: 6th-ranked relayer $8,790/yr upper bound (bar $15K); whole Base+Arbitrum market $69.8K/month spread, top 5 = 95% | solver_relay_20261123.txt |
 | 363 | hedged Jupiter JLP: house side of perp traders' losses, hedged on Hyperliquid (re-test of #220 with price history) | `docs/PREREG_JLP_20261123.md` | **KILL Stage 1** (9.7%/yr on capital, 2026-05..10; bar 20%). Context: full 32.0%, halves 56.6% / 11.3% → FAIL; by year 70.8% / 23.0% / 8.0%: prop-like in 2024, then competed down | jlp_20261123.txt |
 | 364 | CoW new solvers: first-year earnings of solvers that started in 2024–25 (follow-up to #361) | `docs/PREREG_COW_ENTRANTS_20261123.md` | **Stage 2 registered rule met** (median first-year net A $129,087 / B $25,509) → next step: no-money shadow-solver build test (Jx decision). Unregistered check removing likely address migrations: 7 / 4 genuine entrants, medians $95,639 / $48,411; survivorship: upper bounds | cow_entrants_20261123.txt, cow_entrants_check_20261123.txt |
+| 365 | CoW solver gate tests (2026 newcomers, persistence, pool trend, live competition, desk check) before any build | `docs/PREREG_COW_GATE_20261124.md` | registered | — |
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.
