@@ -214,6 +214,7 @@ risk, 5m signals and 1m fills.
 | 371 | UniswapX fillers on Arbitrum + Base: concentration and newcomer entry (paid-bot role never measured) | `docs/PREREG_UNISWAPX_20261124.md` | registered; fetch queued | — |
 | 372–376 | desk checks from the coverage audit: 1inch Fusion resolvers, deBridge DLN takers, Drift keepers, leveraged-ETF decay, PRS/SSPN tax reliefs | `docs/AUDIT_ALL_AREAS_20261124.md` | all dismissed: whitelist/stake-gated (1inch); ~4 bps taker incentive like Across #362 (deBridge); cents per fill speed race (Drift); borrow fees remove the decay profit (LETF); tax relief ~RM570–750/yr (PRS) | — |
 | 377–381 | niche sweep: crypto prop firms (bots), exchange trading competitions, Liquity-fork redemption bots, ZK proving markets, UMA proposer/disputer bots | `docs/NICHE_SWEEP_20261124.md` | all dismissed at desk: manual-only or Bybit (geoblock) / prizes $10–50K / rare MEV race / protocol pausing, hardware+stake race / whitelisted, 98.6% undisputed | — |
+| 382 | #370 restricted to Hyperliquid-listed coins (Malaysia-usable venue), same walk-forward | `docs/PREREG_CRYPTO_TREND_HL_20261124.md` | registered (written after #370 output, disclosed) | — |
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.
