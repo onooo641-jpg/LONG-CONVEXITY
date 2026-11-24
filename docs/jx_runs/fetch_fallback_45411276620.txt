@@ -1,0 +1,10 @@
+=== uxprobe
+  200 https://api.uniswap.org/v2/orders?orderStatus=open&chainId=42161&limit=5
+      {"orders": []}
+  200 https://api.uniswap.org/v2/orders?orderStatus=filled&chainId=42161&limit=3
+      {"orders": [{"encodedOrder": "0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000e00000000000000000000000004449cd34d1eb1fedcf02a1be3834ffde8e6a61800000000000000000000000000000000000000000000000000000000000000000000000000000
+  200 https://aggregator-api.kyberswap.com/arbitrum/api/v1/routes?tokenIn=0xaf88d065e77c8cC2239327C5EDb3A432268e5831
+      {"code": 0, "message": "successfully", "data": {"routeSummary": {"tokenIn": "0xaf88d065e77c8cc2239327c5edb3a432268e5831", "amountIn": "1000000000", "amountInUsd": "999.686376382622", "tokenOut": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1", "amountOut": "589190520882753381", "amountOutUsd": "999.136
+  401 https://api.0x.org/swap/permit2/price?chainId=42161&sellToken=0xaf88d065e77c8cC2239327C5EDb3A432268e5831&buyTo
+      
+  odos 530 
