@@ -1,0 +1,14 @@
+=== uniswapx371b
+  receipts to fetch: 10957
+  0/10957 receipts, 1 input transfers, 0s
+  1000/10957 receipts, 1001 input transfers, 141s
+  2000/10957 receipts, 2001 input transfers, 277s
+  3000/10957 receipts, 3000 input transfers, 397s
+  4000/10957 receipts, 4000 input transfers, 513s
+  5000/10957 receipts, 5000 input transfers, 624s
+  6000/10957 receipts, 6000 input transfers, 747s
+  7000/10957 receipts, 7000 input transfers, 863s
+  8000/10957 receipts, 8000 input transfers, 978s
+  9000/10957 receipts, 9000 input transfers, 1101s
+  10000/10957 receipts, 10000 input transfers, 1221s
+  done: 10958 input transfers, 125 tokens
