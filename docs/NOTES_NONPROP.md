@@ -247,3 +247,9 @@ All new non-prop leads reviewed: 7 stablecoin depegs dismissed (no retail 1:1 re
 #369 and KILLED (AI-crowded: ~$85 prize per submission in 2026 vs $451 in 2024; $250 stake per Sherlock report); 15 governance leads
 dismissed, 3 kept on watch for the parked CoW plan (consistency rewards v2.2, public auction-archive mirror, BYOS track); Malaysian promos
 too small (RM60-class); perp maker rebates out of reach for small accounts (Drift 0.25 bps). No new opportunity.
+
+## 2026-11-24 — coverage audit, niche sweep, #370 crypto trend/momentum
+Audit (`docs/AUDIT_ALL_AREAS_20261124.md`) found two never-measured areas: crypto trend/momentum (#370) and UniswapX fillers (#371);
+desk checks #372–#381 (1inch, deBridge, Drift keepers, leveraged-ETF decay, PRS/SSPN, crypto prop, trading competitions, redemption bots,
+ZK provers, UMA) all dismissed (`docs/NICHE_SWEEP_20261124.md`). **#370 FAIL**: 52 configs, walk-forward 30.8%/yr but −90.6% worst drawdown
+and a losing first half; the 2025–26 windfall came from Binance-only meme pump-and-dumps, not reachable on Hyperliquid.

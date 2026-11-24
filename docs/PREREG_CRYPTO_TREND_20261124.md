@@ -34,3 +34,16 @@ Out-of-sample 2021-01..2026-10; halves split at the midpoint. The best fixed con
 docs/jx_runs/crypto_trend_20261124.txt` (re-run once; must be identical).
 **Limits.** Binance funding ≠ Hyperliquid funding; daily closes ignore intraday stops/liquidations (1× gross limits this); slippage for
 smaller coins may exceed 5 bps; 52 configs create selection risk (handled by walk-forward + cost stress, not removed).
+
+### Results (2026-11-24; `docs/jx_runs/crypto_trend_20261124.txt`, identical on re-run)
+Data: 918 of 923 Binance USDT perps ever listed (5 symbols with Chinese names failed the archive listing: 2025 meme listings), 689,413 daily
+rows, 2020-01..2026-10. Stage 1: TS 100 long/short −17.9%, XS 30 q=20% +38.0% → survives. **Stage 2 walk-forward 2021-01..2026-10: CAGR 30.8%,
+worst drawdown −90.6%, Sharpe 0.73; half 1 −5.2% (DD −87.5%), half 2 +80.3% (DD −58.5%); costs × 1.5 28.5%.** BTC buy-and-hold: 18.4%,
+DD −76.7%. By year: +383%, −63%, −41%, −29%, +68%, +394%. **Verdict: FAIL** (a half below 20%, drawdown worse than BTC's).
+
+**Context (unregistered, in the same output).** Best fixed config in hindsight: XS momentum, 30-day lookback, top/bottom 10% of the 50 most
+traded (CAGR 67.8%, DD −52.4%; 2026 alone +1,082%). The 2025–26 gains are real pump-and-dumps, not data errors (e.g. LAB $19.5 → $0.04,
+SIREN $2.37 → $0.02, AKE ×346 then collapse; no price gaps). But 2026's +175% price contribution came +165 points from **Binance-only coins**
+(Binance is not available to Malaysian residents) and only +9 points from coins listed on Hyperliquid. Restricted to Hyperliquid-listed
+coins, the same hindsight config made 0.3% / 61.2% / 58.8% / −6.9% in 2023 / 2024 / 2025 / 2026 — unstable, and chosen with hindsight.
+Conclusion: crypto momentum is a boom-bust regime trade; the recent windfall is not reachable on a Malaysia-usable venue.

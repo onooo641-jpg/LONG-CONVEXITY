@@ -1,0 +1,39 @@
+===== #370 crypto perp trend + XS momentum: 918 symbols, 2020-01-01..2026-10-31
+  Stage 1 (2024-01..2026-10): TS 100 long/short daily 20 CAGR -17.9%; XS 30 0.2 50 CAGR 38.0%
+  STAGE 1 VERDICT: survives (kill-only)
+  walk-forward OOS 2021-01-01..2026-10-31: CAGR 30.8%, worst DD -90.6%, Sharpe 0.73
+    half 1 CAGR -5.2% (DD -87.5%); half 2 CAGR 80.3% (DD -58.5%); costs x1.5 CAGR 28.5% (DD -88.5%)
+    BTC buy-and-hold same window: CAGR 18.4%, worst DD -76.7%, Sharpe 0.58
+    2021: CAGR 383.4%, DD -63.8%
+    2022: CAGR -63.1%, DD -71.7%
+    2023: CAGR -40.6%, DD -59.2%
+    2024: CAGR -28.8%, DD -55.6%
+    2025: CAGR 67.5%, DD -35.2%
+    2026: CAGR 394.4%, DD -35.9%
+  configs picked (months): TS 20 long/flat weekly 50 x9; XS 30 0.1 50 x8; XS 60 0.1 20 x8; TS 50 long/flat weekly 20 x8; XS 60 0.1 50 x8; TS 20 long/flat daily 50 x4; XS 30 0.2 50 x3; XS 7 0.2 20 x3
+  average open positions under the chosen configs: 15.1 (at $15K: ~$994 per position; HL minimum ~$10)
+  STAGE 2 VERDICT: FAIL
+  context only (hindsight, not a result): best fixed configs over the OOS window
+    XS 30 0.1 50                   CAGR 67.8%  DD -52.4%
+    XS 60 0.1 50                   CAGR 49.3%  DD -73.4%
+    XS 90 0.1 50                   CAGR 38.9%  DD -55.0%
+    XS 30 0.1 20                   CAGR 34.1%  DD -55.2%
+    XS 30 0.2 50                   CAGR 25.7%  DD -27.9%
+    XS 14 0.1 50                   CAGR 25.3%  DD -70.2%
+  context only (unregistered): yearly CAGR of the best hindsight config and of BTC; 2026 monthly picks
+    2021: XS 30 0.1 50 128.6%; BTC 59.6%
+    2022: XS 30 0.1 50 -21.8%; BTC -64.2%
+    2023: XS 30 0.1 50 7.1%; BTC 155.9%
+    2024: XS 30 0.1 50 -11.0%; BTC 120.6%
+    2025: XS 30 0.1 50 54.0%; BTC -6.4%
+    2026: XS 30 0.1 50 1081.8%; BTC -13.7%
+    2026 picks: 2026-01 XS 14 0.1 20, 2026-02 XS 14 0.1 20, 2026-03 XS 60 0.1 50, 2026-04 XS 60 0.1 50, 2026-05 XS 60 0.1 50, 2026-06 XS 60 0.1 50, 2026-07 XS 60 0.1 50, 2026-08 XS 60 0.1 50, 2026-09 XS 60 0.1 50, 2026-10 XS 30 0.1 50
+    2026 monthly walk-forward returns: 2026-01 +13.2%, 2026-02 -22.4%, 2026-03 +32.2%, 2026-04 +45.1%, 2026-05 -18.9%, 2026-06 +72.0%, 2026-07 -20.9%, 2026-08 +17.5%, 2026-09 +64.7%, 2026-10 +5.2%
+  context only (unregistered): Hyperliquid-listed coins mapped 143 of 918
+    2024: price contribution +4%, from HL-listed coins +3%, from Binance-only coins +1%
+    2025: price contribution +45%, from HL-listed coins +18%, from Binance-only coins +27%
+    2026: price contribution +175%, from HL-listed coins +9%, from Binance-only coins +165%
+    HL-listed coins only, XS 30 0.1 50, 2023: CAGR 0.3%, DD -21.9%
+    HL-listed coins only, XS 30 0.1 50, 2024: CAGR 61.2%, DD -27.9%
+    HL-listed coins only, XS 30 0.1 50, 2025: CAGR 58.8%, DD -31.2%
+    HL-listed coins only, XS 30 0.1 50, 2026: CAGR -6.9%, DD -25.6%

@@ -117,6 +117,7 @@ Bar: ≥ 8%/yr on capital in both halves (risk-premium families: ≥ 10% and dra
 ### 4c. Failed — closest misses first
 | # | Idea | Best result | Why it failed | File |
 |---|---|---|---|---|
+| 370 | Crypto perp trend / momentum (918 coins, 52 settings, walk-forward) | 30.8%/yr | −90.6% drawdown, losing first half; 2026 windfall only on Binance-only meme coins | `PREREG_CRYPTO_TREND_20261124` |
 | 363 | Hedged Jupiter JLP (house side of perp traders' losses) | 70.8% in 2024, 23.0% 2025, 8.0% 2026 | Stage 1 9.7% < 20%: yield competed away as capital poured in | `PREREG_JLP_20261123` |
 | 361 | CoW solving, median solver | $3,213/yr (top 10 earn $176K+) | winner-take-most; see #364 | `PREREG_SOLVER_RELAY_20261123` |
 | 362 | Across relaying | 6th relayer $8,790/yr | top 5 take 95% of a $0.8M/yr market | `PREREG_SOLVER_RELAY_20261123` |

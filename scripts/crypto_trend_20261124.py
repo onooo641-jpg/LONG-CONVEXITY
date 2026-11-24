@@ -158,6 +158,39 @@ def main():
     for cg, dd, c in tab:
         print(f"    {c:<30} CAGR {cg:.1%}  DD {dd:.1%}")
     del used
+    print("  context only (unregistered): yearly CAGR of the best hindsight config and of BTC; 2026 monthly picks")
+    best = tab[0][2]
+    for y in sorted(set(oos.index.year)):
+        cy = stats(oos.loc[oos.index.year == y, best])[0]
+        by = stats(btc[(btc.index.year == y) & (btc.index >= OOS0)])[0]
+        print(f"    {y}: {best} {cy:.1%}; BTC {by:.1%}")
+    print("    2026 picks: " + ", ".join(f"{m} {c}" for m, c in picks if m.startswith("2026")))
+    m26 = wf[wf.index.year == 2026]
+    mo = (1 + m26).groupby(m26.index.strftime("%Y-%m")).prod() - 1
+    print("    2026 monthly walk-forward returns: " + ", ".join(f"{k} {v:+.1%}" for k, v in mo.items()))
+    # context only (unregistered): how much of the best hindsight config's profit is tradeable on Hyperliquid (Malaysia-usable venue)?
+    hlf = PUB / "hl_funding.parquet"
+    if hlf.exists():
+        hl = set(pd.read_parquet(hlf)["coin"].unique())
+
+        def to_hl(sym):
+            b = sym[:-4]
+            return "k" + b[7:] if b.startswith("1000000") else ("k" + b[4:] if b.startswith("1000") else b)
+        onhl = [x for x in close.columns if to_hl(x) in hl or x[:-4] in hl]
+        bc = tuple(best.split()[0:1]) + (int(best.split()[1]), float(best.split()[2]), int(best.split()[3]))
+        _, wb = config_returns(close, fund, mems[bc[-1]], ret, vol60, bc, COST)
+        contrib = wb * ret.fillna(0.0)
+        print(f"  context only (unregistered): Hyperliquid-listed coins mapped {len(onhl)} of {close.shape[1]}")
+        for y in (2024, 2025, 2026):
+            m = contrib.index.year == y
+            tot, on = contrib[m].sum().sum(), contrib[m][onhl].sum().sum()
+            print(f"    {y}: price contribution {tot:+.0%}, from HL-listed coins {on:+.0%}, from Binance-only coins {tot - on:+.0%}")
+        c2, q2, f2 = close[onhl], qvol[onhl], fund[onhl]
+        r2 = c2.pct_change(fill_method=None).clip(-0.95, 3.0)
+        p2, _ = config_returns(c2, f2, universe(c2, q2, bc[-1]), r2, r2.rolling(60, min_periods=30).std(), bc, COST)
+        for y in (2023, 2024, 2025, 2026):
+            cy, dy, _ = stats(p2[p2.index.year == y])
+            print(f"    HL-listed coins only, {best}, {y}: CAGR {cy:.1%}, DD {dy:.1%}")
 
 
 if __name__ == "__main__":
