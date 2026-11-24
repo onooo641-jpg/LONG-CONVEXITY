@@ -2305,7 +2305,94 @@ def job_cow367():
     (OUT / "cow367_meta.json").write_text(json.dumps(meta))
     print(f"  meta {meta}", flush=True)
 
-JOBS = {"cow367": job_cow367, "cowauction": job_cowauction, "radarprobe": job_radarprobe, "cow365": job_cow365, "cow361b": job_cow361b, "jlp363": job_jlp363, "cow361": job_cow361, "across362": job_across362, "sweep4d": job_sweep4d, "sweep4c": job_sweep4c, "sweep4b": job_sweep4b, "sweep4": job_sweep4, "addprice": job_addprice, "fred9": job_fred9, "batch10b": job_batch10b, "repair8": job_repair8, "sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+def job_cryptotrend370():
+    """#370: Binance USD-M perp daily klines + funding for every symbol ever listed (data.binance.vision), 2020-01..2026-10."""
+    import concurrent.futures as _cf
+    import io
+    import zipfile
+    import xml.etree.ElementTree as ET
+    OUT.mkdir(parents=True, exist_ok=True)
+    S3 = "https://s3-ap-northeast-1.amazonaws.com/data.binance.vision"
+    ns = "{http://s3.amazonaws.com/doc/2006-03-01/}"
+
+    def s3_list(prefix, delimiter=True):
+        keys, prefs, marker = [], [], ""
+        for _ in range(50):
+            u = f"{S3}?prefix={prefix}" + ("&delimiter=/" if delimiter else "") + (f"&marker={marker}" if marker else "")
+            try:
+                with urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=60) as r:
+                    root = ET.fromstring(r.read())
+            except Exception as e:  # noqa: BLE001
+                print(f"  list fail {prefix}: {e}", flush=True)
+                break
+            keys += [c.find(ns + "Key").text for c in root.findall(ns + "Contents")]
+            prefs += [c.find(ns + "Prefix").text for c in root.findall(ns + "CommonPrefixes")]
+            trunc = (root.find(ns + "IsTruncated").text or "").lower() == "true"
+            if not trunc:
+                break
+            marker = (keys[-1] if keys else prefs[-1])
+        return keys, prefs
+
+    _, prefs = s3_list("data/futures/um/monthly/klines/")
+    syms = sorted({p.rstrip("/").split("/")[-1] for p in prefs})
+    syms = [x for x in syms if x.endswith("USDT") and "_" not in x]
+    print(f"  USDT perp symbols ever listed: {len(syms)}", flush=True)
+    months = [f"{y}-{m:02d}" for y in range(2020, 2027) for m in range(1, 13) if f"{y}-{m:02d}" <= "2026-10"]
+
+    def get_zip_csv(url):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60) as r:
+                z = zipfile.ZipFile(io.BytesIO(r.read()))
+                return z.read(z.namelist()[0]).decode()
+        except urllib.error.HTTPError:
+            return None
+        except Exception:  # noqa: BLE001
+            return None
+
+    def one(sym):
+        keys, _ = s3_list(f"data/futures/um/monthly/klines/{sym}/1d/", delimiter=False)
+        have = {k.split("-1d-")[-1][:7] for k in keys if k.endswith(".zip")}
+        krows, frows = [], []
+        for mth in months:
+            if mth not in have:
+                continue
+            t = get_zip_csv(f"https://data.binance.vision/data/futures/um/monthly/klines/{sym}/1d/{sym}-1d-{mth}.zip")
+            for ln in (t or "").splitlines():
+                f = ln.split(",")
+                if not f or not f[0].strip().isdigit():
+                    continue
+                ts = int(f[0])
+                ts = ts // 1000 if ts > 10**14 else ts
+                krows.append((sym, ts // 1000, float(f[4]), float(f[7])))
+            t = get_zip_csv(f"https://data.binance.vision/data/futures/um/monthly/fundingRate/{sym}/{sym}-fundingRate-{mth}.zip")
+            for ln in (t or "").splitlines():
+                f = ln.split(",")
+                if not f or not f[0].strip().isdigit():
+                    continue
+                ts = int(f[0])
+                ts = ts // 1000 if ts > 10**14 else ts
+                frows.append((sym, ts // 1000, float(f[-1])))
+        return krows, frows
+
+    K, F, t0 = [], [], time.time()
+    with _cf.ThreadPoolExecutor(16) as ex:
+        for i, (kr, fr) in enumerate(ex.map(one, syms)):
+            K += kr
+            F += fr
+            if i % 50 == 0:
+                print(f"  {i}/{len(syms)} symbols, {len(K)} kline rows, {len(F)} funding rows, {time.time() - t0:.0f}s", flush=True)
+    kd = pd.DataFrame(K, columns=["sym", "t", "close", "qvol"])
+    fd = pd.DataFrame(F, columns=["sym", "t", "rate"])
+    fd["date"] = pd.to_datetime(fd["t"], unit="s", utc=True).dt.normalize()
+    fd = fd.groupby(["sym", "date"], as_index=False)["rate"].sum()
+    kd.to_parquet(OUT / "cryptotrend370_klines.parquet", index=False)
+    fd.to_parquet(OUT / "cryptotrend370_funding.parquet", index=False)
+    (OUT / "cryptotrend370_meta.json").write_text(json.dumps({"symbols": len(syms), "kline_rows": len(kd), "funding_rows": len(fd),
+                                                               "kline_symbols": int(kd["sym"].nunique()) if len(kd) else 0}))
+    print(f"  done: {len(kd)} kline rows ({kd['sym'].nunique() if len(kd) else 0} symbols), {len(fd)} funding day-rows", flush=True)
+
+JOBS = {"cryptotrend370": job_cryptotrend370, "cow367": job_cow367, "cowauction": job_cowauction, "radarprobe": job_radarprobe, "cow365": job_cow365, "cow361b": job_cow361b, "jlp363": job_jlp363, "cow361": job_cow361, "across362": job_across362, "sweep4d": job_sweep4d, "sweep4c": job_sweep4c, "sweep4b": job_sweep4b, "sweep4": job_sweep4, "addprice": job_addprice, "fred9": job_fred9, "batch10b": job_batch10b, "repair8": job_repair8, "sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys
