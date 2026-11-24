@@ -1,0 +1,11 @@
+UniswapX paper filler summary (Arbitrum) — written 2026-11-24 20:43:39 UTC
+hours run: 5.50; orders seen: 36; final records: 36 (filled 36); filled orders with a pre-fill quote: 36
+competitive (paper profit > 0 at the winner's price): 20 (55.6%)
+paper profit on competitive orders: $221.44 -> annualised $352,690/yr
+median gap our quote vs winner: 0.5 bps
+volume of measured fills: $433,918
+pre-registered verdict so far: worth building a real filler (speed untested) (needs >= 36 h / ~200 filled orders to count)
+[Stage 5b] filled orders from the feed: 95; with exclusive + actual filler known: 0
+[Stage 5b] filled by an outsider (actual filler != exclusive filler): 0 (0.0%)
+[Stage 5b] quoter concentration (exclusivity): top-1 62%, top-3 92%, quoters 6
+[Stage 5b] paper profit on outsider fills we quoted: $0.00 -> $0/yr; verdict: n/a
