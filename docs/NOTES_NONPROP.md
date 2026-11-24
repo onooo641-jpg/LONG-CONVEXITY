@@ -241,3 +241,9 @@ regulator lists. Not covered: airdrop/points programmes (no free reliable source
 bot roles (UniswapX fillers, 1inch resolvers — docs only), TradFi events (odd-lot tenders parked: SEC feed needs a contact e-mail),
 Malaysian bank / e-wallet sign-up promos (one-off, small), prediction markets and betting (law). Already tested and failed, so not watched:
 Bursa IPO ballots (#49), thin-venue market making (#322).
+
+## 2026-11-24 — radar review #1 (`docs/RADAR_REVIEW_20261124.md`)
+All new non-prop leads reviewed: 7 stablecoin depegs dismissed (no retail 1:1 redemption, or collapsed); audit contests desk-checked as
+#369 and KILLED (AI-crowded: ~$85 prize per submission in 2026 vs $451 in 2024; $250 stake per Sherlock report); 15 governance leads
+dismissed, 3 kept on watch for the parked CoW plan (consistency rewards v2.2, public auction-archive mirror, BYOS track); Malaysian promos
+too small (RM60-class); perp maker rebates out of reach for small accounts (Drift 0.25 bps). No new opportunity.

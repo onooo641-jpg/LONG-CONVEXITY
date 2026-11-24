@@ -130,7 +130,6 @@ contest_immunefi,Immunefi,contest,https://immunefi.com/bug-bounty/
 promo_moomoo_my,moomoo Malaysia,promo_my,https://www.moomoo.com/my/
 promo_webull_my,Webull Malaysia,promo_my,https://www.webull.com.my/
 promo_rakuten_trade,Rakuten Trade,promo_my,https://www.rakutentrade.my/
-promo_mxglobal,MX Global,promo_my,https://www.mxglobal.com/
 reg_sc_alert,SC Malaysia investor alert list,regulator_my,https://www.sc.com.my/investor-alert-list
 reg_bnm_alert,BNM financial consumer alert list,regulator_my,https://www.bnm.gov.my/financial-consumer-alert-list
 bot_cow_rewards,CoW solver rewards (docs source),bot_docs,https://raw.githubusercontent.com/cowprotocol/docs/main/docs/cow-protocol/reference/core/auctions/rewards.md
