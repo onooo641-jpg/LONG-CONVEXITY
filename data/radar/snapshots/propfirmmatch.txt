@@ -108,11 +108,6 @@ WSFunded
 3.8
 55% OFF
 MATCH55
-Cr
-Crypto Fund Trader
-4.2
-25% OFF
-MATCH25
 Fi
 Fintokei
 <20 reviews
@@ -204,7 +199,7 @@ Favorite 0/5
 New
 All Firms
 Firms 15 results
-Data updated 2 min ago
+Data updated 3 min ago
 Firm
 Rank / Reviews
 Country / Years
@@ -334,7 +329,7 @@ Firm
 8
 Ma
 Maven
-48264
+48265
 4.2
 801
 reviews
@@ -382,8 +377,8 @@ Stocks
 Other Commodities
 CF
 $300K
-25% OFF
-MATCH25
+7% OFF
+MATCH
 Firm
 11
 Fi

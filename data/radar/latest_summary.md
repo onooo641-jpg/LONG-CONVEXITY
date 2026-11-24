@@ -5,17 +5,17 @@ Baseline date: 2026-11-21
 ## Counts
 - S2 protocols: 9100
 - S1 reward pools: 1302
-- S3 Merkl live: 699
+- S3 Merkl live: 700
 - S4 governance hits: 56
-- pages fetched ok: 1781
-- pages total: 1829
+- pages fetched ok: 1785
+- pages total: 1832
 - candidates surviving to ranking: 84
-- of which all five filter parts verified: 20
-- near-miss rows total: 9639
+- of which all five filter parts verified: 19
+- near-miss rows total: 9731
 
 ## Near-miss by stage/reason (top)
 
-- first_pass / below threshold: 8768
+- first_pass / below threshold: 8860
 - quality / DefiLlama outlier flag: 276
 - filter / F4 price exposure, needs hedge; F5 TVL < $1,000,000: 237
 - filter / F4 price exposure, needs hedge: 151
@@ -49,12 +49,12 @@ Baseline date: 2026-11-21
 | convex-finance | Ethereum | FRXUSD-MSUSD nan reward tokens ['0xd533a949740bb33 | 746 | 3,026,394 | 9.0 | pass | unverified | True | False | unverified-onchain |
 | reflect-tranches | Solana | SYRUPUSDC Senior reward tokens ['AvZZF1YaZDziPY2RC | 434 | 1,783,494 | 8.9 | fail | fail | True | True | unverified-onchain |
 | sky-lending | Ethereum | USDS GROVE Farming Pool reward tokens ['0xb30FE1CF | 18,414 | 78,326,175 | 8.6 | fail | fail | True | False | unverified-onchain |
-| upshift | Stellar | HOLD Supply USDC in Upshift sentUSDC | 13,365 | 60,977,461 | 8.0 | unverified | pass | True | False | unverified-onchain |
+| upshift | Stellar | HOLD Supply USDC in Upshift sentUSDC | 13,368 | 60,989,970 | 8.0 | unverified | pass | True | False | unverified-onchain |
 | stake-dao-yield | Ethereum | FRXUSD-MSUSD Curve reward tokens ['0xD533a949740bb | 817 | 3,933,581 | 7.6 | pass | fail | True | False | unverified-onchain |
 | convex-finance | Ethereum | EVAUSDT-EVAUSDC nan reward tokens ['0xd533a949740b | 485 | 2,351,573 | 7.5 | pass | unverified | True | False | unverified-onchain |
 | morpho-blue | Stable | GPYUSDSE nan reward tokens ['0x28f1f38a9f7db1f769a | 10,348 | 50,949,620 | 7.4 | fail | fail | True | False | unverified-onchain |
 | flying-tulip-ftusd | Ethereum | SFTUSD staked ftUSD (FT rewards bought on open mar | 338 | 1,707,488 | 7.2 | fail | fail | True | False | unverified-onchain |
-| aave | Ethereum | LEND Supply RLUSD to the Aave V4 Sentora Hub | 14,990 | 78,160,217 | 7.0 | unverified | unverified | True | False | unverified-onchain |
+| aave | Ethereum | LEND Supply RLUSD to the Aave V4 Sentora Hub | 14,989 | 78,156,695 | 7.0 | unverified | unverified | True | False | unverified-onchain |
 | bluefin-spot | Sui | USDSUI-USDC 0.01% reward tokens ['0x00000000000000 | 258 | 1,365,562 | 6.9 | pass | pass | True | False | unverified-onchain |
 | curve-dex | Ethereum | PMUSD-CRVUSD nan reward tokens ['0xD533a949740bb33 | 278 | 1,490,932 | 6.8 | pass | pass | True | False | unverified-onchain |
 | stake-dao-yield | Ethereum | EVAUSDT-EVAUSDC Curve reward tokens ['0xD533a94974 | 692 | 3,770,758 | 6.7 | pass | fail | True | False | unverified-onchain |
@@ -95,7 +95,7 @@ Baseline date: 2026-11-21
 - magpiexyz.eth: [closed] MIP #102 – Cease MGP Emissions to the mWOM Pools https://snapshot.org/#/magpiexyz.eth/proposal/0x4dcea4bbe438757d0fad375ea473b8f221730e6a4622e98e158a29fe4c9ac6f7
 - qbio-phase2.eth: [closed] DP37 - Three-Month Continuation Grant Agreement https://snapshot.org/#/qbio-phase2.eth/proposal/0x9e8dbe408a08debd37a4b8ab66f6b61382cc59e4dc7fd9db90e597dec6a8d2a5
 
-## Prop-firm rule/price changes today: 239 pages
+## Prop-firm rule/price changes today: 257 pages
 
 - **Topstep** https://www.topstep.com/: In Payouts / NEXT STOP: $2 BILLION / Instant Cash Payouts*
 - **MyFundedFutures** https://myfundedfutures.com/: Meet Signature: $5K, $10K and $20K accounts. Request all your profits anytime, with a static Max Loss Limit that never moves. / Five plans, each with clear rules. Compare cost, account size, drawdown model, payout speed, and profit split to find what is best for you. / Anytime payouts, static MLL
@@ -187,8 +187,15 @@ Baseline date: 2026-11-21
 - **MyFundedFutures** https://myfundedfutures.com/plans/signature/leaderboard: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
 - **Blue Guardian** https://www.blueguardian.com/faq/articles/18446026-zero-account-rules: How the consistency rule lets you pass Replay / How the end-of-day drawdown option moves Replay / If you chose end-of-day drawdown for your evaluation, your loss limit moves up only when you set a new highest end-of-day closing balance, a
 - **Blueberry Futures** http://help.blueberryfutures.com/en/articles/12921623-max-contracts-by-account-size: Ascent Account Specs: Rules & Targets
+- **Topstep** https://www.topstep.com/: $4,980 / Proof of Payout / $1,500
+- **TradeDay** https://www.tradeday.com/: Over $15 million in Verified Payouts
+- **MyFundedFutures** https://myfundedfutures.com/plans/builder: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
+- **MyFundedFutures** https://myfundedfutures.com/plans/rapid-eod: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
+- **E8 Markets** https://e8markets.com/e8-traders-stories: 13h ago $5,000 Classic Markets +$251 / 21h ago $25,000 Classic Markets +$803 / 21h ago $100,000 Classic Markets +$1,524
+- **Traders Launch** https://traderslaunch.com/payout-rules: Payout Rules | Traders Launch
+- **MyFundedFutures** https://myfundedfutures.com/plans/signature/leaderboard: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
 
-## Page changes today: 256
+## Page changes today: 277
 
 - Topstep (firm) https://www.topstep.com/: +273 / -35 lines
 - Topstep (firm) https://help.topstep.com/en/: +1 / -1 lines
@@ -231,18 +238,17 @@ Baseline date: 2026-11-21
 - Topstep (firm_sub) https://help.topstep.com/en/articles/8284197-trading-combine-parameters: +1 / -1 lines
 - MyFundedFutures (firm_sub) https://help.myfundedfutures.com/en/: +0 / -1 lines
 
-## Non-prop leads (docs/PREREG_RADAR_NONPROP_20261124.md): new today 23
+## Non-prop leads (docs/PREREG_RADAR_NONPROP_20261124.md): new today 22
 
-### Stablecoin depegs (6)
-- apxUSD: apxUSD at $0.9586, circulating $247,866,343 https://defillama.com/stablecoin/apxusd
-- USDA: AP USDA at $0.8783, circulating $76,380,622 https://defillama.com/stablecoin/ap%20usda
-- MSUSD: Metronome Synth USD at $0.7982, circulating $40,856,815 https://defillama.com/stablecoin/metronome%20synth%20usd
-- pmUSD: pmUSD at $0.4067, circulating $32,633,369 https://defillama.com/stablecoin/pmusd
+### Stablecoin depegs (5)
+- apxUSD: apxUSD at $0.9586, circulating $247,854,817 https://defillama.com/stablecoin/apxusd
+- USDA: AP USDA at $0.8808, circulating $76,597,350 https://defillama.com/stablecoin/ap%20usda
+- MSUSD: Metronome Synth USD at $0.7977, circulating $40,831,860 https://defillama.com/stablecoin/metronome%20synth%20usd
+- pmUSD: pmUSD at $0.4066, circulating $32,630,247 https://defillama.com/stablecoin/pmusd
 - USDR: Real USD at $0.3979, circulating $17,603,054 https://defillama.com/stablecoin/real%20usd
-- USDM: Moneta USDM at $0.9799, circulating $11,298,751 https://defillama.com/stablecoin/moneta%20usdm
 
 ### Extreme funding (1)
-- SKY: funding -103%/yr, open interest $2,488,930 https://app.hyperliquid.xyz/trade/SKY
+- SKY: funding -131%/yr, open interest $2,480,906 https://app.hyperliquid.xyz/trade/SKY
 
 ### Governance: incentives / bot programmes (16)
 - aave: [Direct-To-AIP] Umbrella Reward Renewal and Parameter Update on Aave V3 Core https://governance.aave.com/t/direct-to-aip-umbrella-reward-renewal-and-parameter-update-on-aave-v3-core/26462
@@ -264,9 +270,9 @@ Baseline date: 2026-11-21
 ### Source health
 - N1 stablecoins: 459
 - N2 Hyperliquid perps: 235
-- N3 CoW payouts (21d): 658 transfers, COW price 0.09439176974999999, $656,008 to 53 recipients
+- N3 CoW payouts (21d): 658 transfers, COW price 0.094287664, $655,284 to 53 recipients
 - N5 forums answering: 22/23
 - N4 Cantina item keys: allowedSeverities,cantinaTriaged,company,createdAt,currencyCode,entryFee,id,instructions,joined,kind,kycRequired,name,status,timeframe,totalFindings,totalRewardPot,url
 - N4 statuses: {'cantina:complete': 144, 'sherlock:FINISHED': 30, 'cantina:live': 1, 'cantina:escalations': 1}
 - N4 contests listed: 30 Sherlock, 146 Cantina
-- N7 derivatives venues (CoinGecko): 100; BTC $59620.9
+- N7 derivatives venues (CoinGecko): 100; BTC $59763.5961175
