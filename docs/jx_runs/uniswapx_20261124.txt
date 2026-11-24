@@ -1,0 +1,24 @@
+===== #371 UniswapX fillers (Fill topic 0x78ad7ec0e9…)
+  arbitrum: code True; blocks 395488345..520129274; missed 0; fills 43825; error None
+    Stage 1 (2026-08..10): fills 10,957, distinct fillers 28, top-3 share 89.0%; top: 0x225a38bc 8,449, 0xd767473b 915, 0x38b08f1d 384, 0x1d52f9dc 373, 0xe0763177 210
+    data cover 2025-11-01..2026-10-31
+    12 months: fills 43,825, distinct fillers 55, newcomers since 2026-05 20; best newcomer monthly share 9.9%
+      newcomer 0xd767473b74397fa9c1e7a2bdb210020c648a6836 first 2026-08-13 best monthly share 9.9% total fills 915
+      newcomer 0x1d52f9dc2bbee56fc81a70247c2b93030285c3b7 first 2026-08-06 best monthly share 9.7% total fills 373
+      newcomer 0x38b08f1dadbff852204a0f2c6c16e16abe8fa87e first 2026-08-25 best monthly share 5.2% total fills 384
+      newcomer 0x302649ccdfc232ee49a28755c8a6c06e707b7d15 first 2026-10-07 best monthly share 4.4% total fills 191
+      newcomer 0xe0763177d7e80e290fc4fea055fae11f5024f687 first 2026-08-21 best monthly share 2.5% total fills 210
+    monthly fills and top-3 share: 2025-11 11,535 (60%); 2025-12 3,401 (74%); 2026-01 4,686 (51%); 2026-02 2,377 (53%); 2026-03 1,562 (55%); 2026-04 2,622 (62%); 2026-05 3,002 (69%); 2026-06 3,396 (76%); 2026-07 287 (87%); 2026-08 1,913 (88%); 2026-09 4,698 (93%); 2026-10 4,346 (89%)
+  base: code True; blocks 37582927..53350927; missed 4241779; fills 231531; error None
+    Stage 1 (2026-08..10): fills 0, distinct fillers 0, top-3 share nan%; top:   [COVERAGE < 99%]
+    Stage 1 window not covered on this chain (public-RPC time budget): not measured, cannot count towards a kill
+    data cover 2025-11-01..2026-07-23
+    12 months: fills 231,531, distinct fillers 81, newcomers since 2026-05 20; best newcomer monthly share 3.8%
+      newcomer 0x374dc7e0b47b1345cd5620be9d1dac434fc5f815 first 2026-05-21 best monthly share 3.8% total fills 334
+      newcomer 0x2296d04d9f3d51366500880937c5ef317660d577 first 2026-05-15 best monthly share 3.2% total fills 570
+      newcomer 0x4ff07b8d71a09bbb651f6bee29ea8e33182760b5 first 2026-05-18 best monthly share 1.3% total fills 116
+      newcomer 0x8daf9ace209b7afb223a9170d907647ac089a812 first 2026-05-22 best monthly share 0.3% total fills 54
+      newcomer 0x291962cce3ec6622ce1039f7d31d0f22dc14cf5b first 2026-06-08 best monthly share 0.2% total fills 12
+    monthly fills and top-3 share: 2025-11 74,476 (60%); 2025-12 46,765 (52%); 2026-01 40,068 (60%); 2026-02 23,345 (62%); 2026-03 9,870 (59%); 2026-04 9,823 (75%); 2026-05 20,841 (70%); 2026-06 6,335 (68%); 2026-07 8 (100%)
+  STAGE 1 VERDICT: survives (kill-only)
+  STAGE 2 VERDICT: door open (a newcomer reached >= 5% monthly share)

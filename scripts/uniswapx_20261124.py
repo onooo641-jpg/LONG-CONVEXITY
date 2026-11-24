@@ -40,7 +40,12 @@ def main():
         top3 = c.head(3).sum() / c.sum() if len(c) else np.nan
         print(f"    Stage 1 (2026-08..10): fills {len(s1):,}, distinct fillers {len(c)}, top-3 share {top3:.1%}; top: "
               + ", ".join(f"{a[:10]} {n:,}" for a, n in c.head(5).items()) + ("" if cov_ok else "  [COVERAGE < 99%]"))
-        s1_closed.append(bool(top3 >= 0.90) if len(c) else True)
+        if len(c):
+            s1_closed.append(bool(top3 >= 0.90))
+        else:
+            print("    Stage 1 window not covered on this chain (public-RPC time budget): not measured, cannot count towards a kill")
+            s1_closed.append(None)
+        print(f"    data cover {d['day'].min().date()}..{d['day'].max().date()}")
         first = d.groupby("filler")["day"].min()
         newbies = first[first >= NEW].index
         mon = d.groupby(["month", "filler"]).size().unstack(fill_value=0)
@@ -56,7 +61,7 @@ def main():
     if not s1_closed:
         print("  no data on either chain: no verdict")
         return
-    kill = all(s1_closed) and len(s1_closed) == 2
+    kill = len(s1_closed) == 2 and all(x is True for x in s1_closed)
     print(f"  STAGE 1 VERDICT: {'KILL (top 3 make >= 90% of fills on both chains)' if kill else 'survives (kill-only)'}")
     print(f"  STAGE 2 VERDICT: {'door open (a newcomer reached >= 5% monthly share)' if any(door) else 'FAIL (no newcomer reached 5%)'}"
           + (" (Stage 1 already killed; context only)" if kill else ""))
