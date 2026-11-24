@@ -2551,7 +2551,31 @@ def job_uxprobe():
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "uniswapx371_probe.json").write_text(json.dumps(out))
 
-JOBS = {"uxprobe": job_uxprobe, "uniswapx371c": job_uniswapx371c, "uniswapx371b": job_uniswapx371b, "uniswapx371": job_uniswapx371, "cryptotrend370": job_cryptotrend370, "cow367": job_cow367, "cowauction": job_cowauction, "radarprobe": job_radarprobe, "cow365": job_cow365, "cow361b": job_cow361b, "jlp363": job_jlp363, "cow361": job_cow361, "across362": job_across362, "sweep4d": job_sweep4d, "sweep4c": job_sweep4c, "sweep4b": job_sweep4b, "sweep4": job_sweep4, "addprice": job_addprice, "fred9": job_fred9, "batch10b": job_batch10b, "repair8": job_repair8, "sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+def job_uxorders():
+    """#371 Stage 5 design: full JSON of recent filled UniswapX orders on Arbitrum (field check + pagination)."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    got, cursor, pages = [], None, 0
+    while pages < 40:
+        u = "https://api.uniswap.org/v2/orders?orderStatus=filled&chainId=42161&limit=100" + (f"&cursor={cursor}" if cursor else "")
+        st, d = _qget(u, timeout=60)
+        pages += 1
+        if not d or not d.get("orders"):
+            print(f"  stop at page {pages}: status {st}", flush=True)
+            break
+        got += d["orders"]
+        cursor = d.get("cursor")
+        if not cursor:
+            break
+        time.sleep(0.5)
+    print(f"  filled orders fetched: {len(got)} in {pages} pages; keys: {sorted(got[0].keys()) if got else None}", flush=True)
+    if got:
+        print("  sample: " + json.dumps(got[0])[:1500], flush=True)
+        cs = [o.get("createdAt") for o in got if o.get("createdAt")]
+        print(f"  createdAt range: {min(cs)} .. {max(cs)}", flush=True)
+    (OUT / "uniswapx371_orders_sample.json").write_text(json.dumps(got))
+
+JOBS = {"uxorders": job_uxorders, "uxprobe": job_uxprobe, "uniswapx371c": job_uniswapx371c, "uniswapx371b": job_uniswapx371b, "uniswapx371": job_uniswapx371, "cryptotrend370": job_cryptotrend370, "cow367": job_cow367, "cowauction": job_cowauction, "radarprobe": job_radarprobe, "cow365": job_cow365, "cow361b": job_cow361b, "jlp363": job_jlp363, "cow361": job_cow361, "across362": job_across362, "sweep4d": job_sweep4d, "sweep4c": job_sweep4c, "sweep4b": job_sweep4b, "sweep4": job_sweep4, "addprice": job_addprice, "fred9": job_fred9, "batch10b": job_batch10b, "repair8": job_repair8, "sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys
