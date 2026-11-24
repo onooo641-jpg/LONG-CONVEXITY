@@ -15,14 +15,14 @@ Start Pro Evaluation See full rules
 No DLL. No consistency rule. No ceiling.
 Real Recent Payouts
 Pro Payout auto-approved
-447 ms
-$956.44
+416 ms
+$946.40
 Payout auto-approved
-395 ms
-$1,040.00
+695 ms
+$4,543.36
 Payout auto-approved
-1.2s
-$3,499.50
+392 ms
+$3,320.83
 Sample only. Not all payouts shown. Updates every 4 hours.
 Max payout $100K
 DLL or consistency in funded None
