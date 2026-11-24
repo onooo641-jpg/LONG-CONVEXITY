@@ -263,3 +263,8 @@ Measured gross spread (vs hourly mid, 46% of fills measurable): 8.62 bps volume-
 Unlike CoW, filling is permissionless (no onboarding queue) and a filler can route through DEXes inside the fill (callback) without
 holding inventory. Gross ≠ net (DEX/hedge costs, gas, speed race). Next registered step: a no-money filler prototype (paper fills).
 CoW staging run #368: 2,072 staging auctions, 0 solutions from anyone but one → staging cannot test a solver.
+
+**#371 update (same day):** a 10-minute live smoke test and the 50 latest orders show Arbitrum UniswapX is now an RFQ market (since
+2026-06-13): every order has an exclusive filler chosen in Uniswap's off-chain quote auction and is filled within 1–3 s; quoters are
+permissioned (Uniswap Labs intake form). The 36-hour paper filler was cancelled (it measured a race that no longer exists). UniswapX joins CoW
+as "lucrative for approved newcomers, entry needs approval" — both parked pending Jx's decision to apply.

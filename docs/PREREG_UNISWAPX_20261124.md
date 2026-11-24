@@ -88,3 +88,20 @@ Command on Jx's PC: `python uniswapx_paper_filler.py --hours 36`; the program wr
 **Runtime change (2026-11-24, Jx):** run on GitHub Actions instead of Jx's PC — workflow `uniswapx_paper.yml`, chained 5.5-hour
 sessions until 36 hours, log and summary committed to `data/uniswapx_paper/` after each session. Rules and verdict bars unchanged.
 Cost noted to Jx: ~2,160 Actions minutes, shared with workstream B's shadow test and the daily radar.
+
+### Stage 5 outcome (2026-11-24): stopped — the open race the paper filler was meant to measure does not exist on Arbitrum any more
+- 10-minute live smoke test (fallback run 45420214269, `docs/jx_runs/fetch_fallback_45420214269.txt`, log in `data/public/uxsmoke_run/`):
+  the program ran against the live APIs; 1 order appeared and was **filled 1 second after creation**; the order parser failed on the V3
+  format (fields `curve`, `maxAmount`, `minAmount`), so no quote was taken.
+- The 50 most recent filled Arbitrum orders (`data/public/uniswapx371_orders_sample.json`): **50 of 50 carry an `exclusiveFiller`** set by
+  the cosigner (top: the dominant filler 26, then 12, 6, 4, 2 — the same "newcomers" as Stage 2), and **all were filled 1–3 seconds after
+  creation** (median 1 s).
+- Uniswap's docs (developers.uniswap.org, "UniswapX RFQ auctions on Base and Arbitrum", 2026-06-13; "Become a quoter"): Arbitrum and Base
+  moved from open Dutch auctions to **RFQ**; the winning quoter gets an exclusivity window; the **quoter role is permissioned and vetted by
+  Uniswap Labs** (intake form / waitlist), with ≥ 5 successful exclusive fills in beta before production and "fade" penalties; filling is
+  permissionless only after the exclusivity window.
+- So Stage 2's "newcomers" are **newly approved quoters**, and the paper filler (an outside filler) could almost never fill. The 36-hour
+  chained run (workflow `uniswapx_paper.yml`, run 45420156616) was **cancelled** after ~30 minutes to save Actions minutes.
+**Reading.** UniswapX filling has CoW's shape: protocol-level order flow with approved newcomers earning ≈ $50–85K/yr gross, but entry
+requires Uniswap Labs' approval as an RFQ quoter (a firm-quote service answering within ~500 ms, then filling). Next step only Jx can take:
+submit Uniswap's quoter intake form (or keep it parked with CoW). Stage 5 verdict: **not run (premise invalid)**.
