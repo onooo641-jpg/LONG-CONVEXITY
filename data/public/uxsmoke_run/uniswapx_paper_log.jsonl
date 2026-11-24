@@ -1,0 +1,4 @@
+{"event": "start", "hours": 0.17, "ts": 1795532379.757}
+{"event": "new", "hash": "0x230d6d5e71b6c5ee819b7a3aded046b6f7aac27e3a8bc6de3490b54c1dd0fd35", "type": "Dutch_V3", "legs": null, "createdAt": 1795532427, "ts": 1795532427.939}
+{"event": "final", "hash": "0x230d6d5e71b6c5ee819b7a3aded046b6f7aac27e3a8bc6de3490b54c1dd0fd35", "status": "filled", "fillTimestamp": 1795532428, "fillBlock": 527151514, "txHash": "0x6e230fce98e7f985642c1f68fc48128df830c66987842de29b6bd6e5274f7803", "settledAmounts": [{"amountIn": "414400000", "amountOut": "414006685", "tokenIn": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9", "tokenOut": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831"}], "ts": 1795532449.974}
+{"event": "stop", "ts": 1795532991.797}

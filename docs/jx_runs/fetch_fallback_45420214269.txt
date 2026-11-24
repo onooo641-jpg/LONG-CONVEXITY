@@ -1,0 +1,24 @@
+=== uxsmoke
+Paper filler running for 0.17 h. Log: /home/runner/work/LONG-CONVEXITY/LONG-CONVEXITY/data/public/uxsmoke_run/uniswapx_paper_log.jsonl. Press Ctrl+C to stop early (the log is kept).
+UniswapX paper filler summary (Arbitrum) — written 2026-11-24 14:59:39 UTC
+hours run: 0.00; orders seen: 0; final records: 0 (filled 0); filled orders with a pre-fill quote: 0
+competitive (paper profit > 0 at the winner's price): 0 (0.0%)
+paper profit on competitive orders: $0.00 -> annualised $0/yr
+median gap: n/a
+volume of measured fills: $0
+pre-registered verdict so far: inconclusive / keep running (needs >= 36 h / ~200 filled orders to count)
+UniswapX paper filler summary (Arbitrum) — written 2026-11-24 15:09:41 UTC
+hours run: 0.02; orders seen: 0; final records: 1 (filled 1); filled orders with a pre-fill quote: 0
+competitive (paper profit > 0 at the winner's price): 0 (0.0%)
+paper profit on competitive orders: $0.00 -> annualised $0/yr
+median gap: n/a
+volume of measured fills: $0
+pre-registered verdict so far: inconclusive / keep running (needs >= 36 h / ~200 filled orders to count)
+UniswapX paper filler summary (Arbitrum) — written 2026-11-24 15:09:51 UTC
+hours run: 0.17; orders seen: 0; final records: 1 (filled 1); filled orders with a pre-fill quote: 0
+competitive (paper profit > 0 at the winner's price): 0 (0.0%)
+paper profit on competitive orders: $0.00 -> annualised $0/yr
+median gap: n/a
+volume of measured fills: $0
+pre-registered verdict so far: inconclusive / keep running (needs >= 36 h / ~200 filled orders to count)
+ 
