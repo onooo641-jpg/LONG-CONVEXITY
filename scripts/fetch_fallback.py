@@ -2049,7 +2049,102 @@ def job_cow361b():
     df.drop(columns=["frm"], errors="ignore").to_parquet(OUT / "solverrelay_cow.parquet", index=False)
     mp.write_text(json.dumps(meta))
 
-JOBS = {"cow361b": job_cow361b, "jlp363": job_jlp363, "cow361": job_cow361, "across362": job_across362, "sweep4d": job_sweep4d, "sweep4c": job_sweep4c, "sweep4b": job_sweep4b, "sweep4": job_sweep4, "addprice": job_addprice, "fred9": job_fred9, "batch10b": job_batch10b, "repair8": job_repair8, "sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+def _qget(url, timeout=30):
+    """Quiet GET: (status, json-or-None)."""
+    try:
+        req = urllib.request.Request(url, headers=UA)
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            return r.status, json.loads(r.read().decode())
+    except urllib.error.HTTPError as e:
+        return e.code, None
+    except Exception:  # noqa: BLE001
+        return -1, None
+
+
+COW_NETS = {"mainnet": 7200, "xdai": 17280, "arbitrum_one": 345600, "base": 43200, "polygon": 43200, "avalanche": 43200,
+            "bnb": 115200, "linea": 28800, "lens": 86400, "plasma": 86400, "ink": 86400}
+
+
+def job_cow365():
+    """#365: CoW solver-competition sample (~30 days per network) + COW repaid INTO the Solver Payouts Safe."""
+    import random
+    import urllib.parse
+    OUT.mkdir(parents=True, exist_ok=True)
+    meta, rows = {"nets": {}}, []
+    for net, bpd in COW_NETS.items():
+        api = f"https://api.cow.fi/{net}/api"
+        st, lat, ver = None, None, None
+        for v in ("v2", "v1"):
+            st, lat = _qget(f"{api}/{v}/solver_competition/latest")
+            if lat and lat.get("auctionId"):
+                ver = v
+                break
+        if not ver:
+            meta["nets"][net] = {"status": st}
+            print(f"  {net}: no competition data (status {st})", flush=True)
+            continue
+        L, BL = int(lat["auctionId"]), int(lat.get("auctionStartBlock") or 0)
+        ipb = None
+        for back in (5000, 2000, 500):
+            for k in range(15):
+                s2, d2 = _qget(f"{api}/{ver}/solver_competition/{L - back - k}")
+                if d2 and d2.get("auctionStartBlock") and BL:
+                    ipb = (back + k) / max(1, BL - int(d2["auctionStartBlock"]))
+                    break
+            if ipb:
+                break
+        span = int((ipb or 1.0) * bpd * 30)
+        rnd = random.Random(365)
+        ids = sorted({L - int(rnd.random() * span) for _ in range(700)})
+        got, t0 = 0, time.time()
+        for aid in ids:
+            if time.time() - t0 > 1500:
+                break
+            s3, d3 = _qget(f"{api}/{ver}/solver_competition/{aid}")
+            if not d3:
+                continue
+            got += 1
+            for sol in d3.get("solutions") or []:
+                rows.append({"net": net, "auction": aid, "block": d3.get("auctionStartBlock"), "solver": sol.get("solver"),
+                             "solver_addr": str(sol.get("solverAddress") or ""), "score": str(sol.get("score") or ""),
+                             "ranking": sol.get("ranking"), "winner": sol.get("isWinner"), "filtered": sol.get("filteredOut")})
+            time.sleep(0.1)
+        meta["nets"][net] = {"version": ver, "latest": L, "latest_block": BL, "ids_per_block": ipb, "span_ids": span, "sampled": len(ids),
+                             "with_data": got, "keys_latest": sorted(lat.keys()),
+                             "solution_keys": sorted((lat.get("solutions") or [{}])[0].keys())}
+        print(f"  {net}: {ver} latest {L}; ids/block {ipb}; span {span}; sampled {len(ids)}, with data {got}", flush=True)
+    pd.DataFrame(rows).to_parquet(OUT / "cow365_competition.parquet", index=False)
+    # COW transfers INTO the Safe since 2024-01-01 (repayments / returns)
+    t0s = int(pd.Timestamp("2024-01-01", tz="UTC").timestamp())
+    base = f"https://eth.blockscout.com/api/v2/addresses/{COW_SAFE}/token-transfers?type=ERC-20&filter=to&token={COW_TOKEN}"
+    url, inflow, pages, done = base, [], 0, False
+    while url and pages < 1000:
+        d = get(url, tries=5)
+        pages += 1
+        if d is None or "items" not in d:
+            break
+        stop = False
+        for it in d["items"]:
+            ts = int(pd.Timestamp(it.get("timestamp")).timestamp()) if it.get("timestamp") else None
+            if ts is not None and ts < t0s:
+                stop = True
+                continue
+            tot = it.get("total") or {}
+            inflow.append({"ts": ts, "frm": str((it.get("from") or {}).get("hash", "")).lower(),
+                           "cow": int(tot.get("value") or 0) / 10 ** int(tot.get("decimals") or 18), "tx": it.get("transaction_hash")})
+        nxt = d.get("next_page_params")
+        if stop or not nxt:
+            done = True
+            break
+        url = base + "&" + urllib.parse.urlencode(nxt)
+        time.sleep(0.25)
+    meta["inflow"] = {"pages": pages, "rows": len(inflow), "complete": done}
+    print(f"  inflows to the Safe: {len(inflow)} rows, complete {done}", flush=True)
+    pd.DataFrame(inflow).to_parquet(OUT / "cow365_inflows.parquet", index=False)
+    (OUT / "cow365_meta.json").write_text(json.dumps(meta))
+
+JOBS = {"cow365": job_cow365, "cow361b": job_cow361b, "jlp363": job_jlp363, "cow361": job_cow361, "across362": job_across362, "sweep4d": job_sweep4d, "sweep4c": job_sweep4c, "sweep4b": job_sweep4b, "sweep4": job_sweep4, "addprice": job_addprice, "fred9": job_fred9, "batch10b": job_batch10b, "repair8": job_repair8, "sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys
