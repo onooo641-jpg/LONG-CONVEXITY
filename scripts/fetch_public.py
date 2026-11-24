@@ -1847,7 +1847,21 @@ def job_liq_flashblocks():
     print("max distinct counts in one block:", max([len(v) for v in txs.values()] + [0]))
 
 
-JOBS = {"liq_flashblocks": job_liq_flashblocks, "ipo2": job_ipo2, "iponews": job_iponews, "ipo": job_ipo, "myxsnap": job_myxsnap, "batch2": job_batch2, "hl2023d": job_hl2023d, "hl2023": job_hl2023, "hl": job_hl, "llama_lend": job_llama_lend, "llama_pools": job_llama_pools,
+def job_liq_basedocs():
+    """Fetch public Base docs pages (sandbox cannot resolve docs.base.org); print lines mentioning flashblocks."""
+    for u in ("https://docs.base.org/base-chain/flashblocks/faq.md", "https://docs.base.org/base-chain/api-reference/rpc-overview.md"):
+        try:
+            req = urllib.request.Request(u, headers=UA)
+            t = urllib.request.urlopen(req, timeout=60).read().decode()
+            print("==", u, len(t), flush=True)
+            for ln in t.splitlines():
+                if any(k in ln.lower() for k in ("flashblock", "pending", "rate limit", "stopped", "no longer")):
+                    print(ln[:400], flush=True)
+        except Exception as e:  # noqa: BLE001
+            print("ERR", u, str(e)[:120], flush=True)
+
+
+JOBS = {"liq_basedocs": job_liq_basedocs, "liq_flashblocks": job_liq_flashblocks, "ipo2": job_ipo2, "iponews": job_iponews, "ipo": job_ipo, "myxsnap": job_myxsnap, "batch2": job_batch2, "hl2023d": job_hl2023d, "hl2023": job_hl2023, "hl": job_hl, "llama_lend": job_llama_lend, "llama_pools": job_llama_pools,
         "llama_prices": job_llama_prices, "poly": job_poly,
         "liq_probe": job_liq_probe, "liq_diag": job_liq_diag, "liq_diag2": job_liq_diag2, "liq_diag3": job_liq_diag2, "liq_diag4": job_liq_diag4, "liq_comet_timing": job_liq_comet_timing, "liq_secretcheck": job_liq_secretcheck, "liq_pxdiag": job_liq_pxdiag, "liq_replay_morphobase": job_liq_morpho_replay, "liq_morpho_replay_diag": job_liq_morpho_replay_diag, "liq_morphobase_pilot": lambda: job_liq_morpho("morphobase_pilot"), "liq_morphobase": lambda: job_liq_morpho("morphobase"), "liq_morphobase_s0": lambda: job_liq_morpho("morphobase_s0"),
         "liq_morphobase_s1": lambda: job_liq_morpho("morphobase_s1"), "liq_morphobase_s2": lambda: job_liq_morpho("morphobase_s2"), **{f"liq_replay_{c}": globals()[f"job_liq_replay_{c}"] for c in ("arbitrum", "base", "avalanche", "polygon", "optimism")}, "liq_decimals": job_liq_decimals, **{f"liq_prices_{c}": _liq_prices_job(c) for c in LIQ_CHAINS}, **{f"liq_{c}_es": _liq_es_job(c) for c in LIQ_ES_ID}, **{f"liq_{c}": globals()[f"job_liq_{c}"] for c in LIQ_CHAINS}}

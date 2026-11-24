@@ -1,2 +1,2 @@
-# jobs for scripts/fetch_public.py (PREREG_LIQ_FLASHBLOCKS_20261124)
-liq_flashblocks
+# jobs (docs read, no measurement)
+liq_basedocs
