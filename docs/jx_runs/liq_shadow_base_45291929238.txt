@@ -1,0 +1,13 @@
+base: v2 start, head 61436862
+base: loaded 41137 cached positions
+base: recalibrated 628 cached positions
+base: positions ready: 41137 users, 12179 with debt
+base: reopened 194 recorded unhealthy episodes
+base: loop error https://base.api.pocket.network: {'code': -32602, 'message': 'invalid argument 0: block range exceeds maximum 500'}
+base: loop error https://base.api.pocket.network: {'code': -32602, 'message': 'invalid argument 0: block range exceeds maximum 500'}
+base: loop error https://base.api.pocket.network: {'code': -32602, 'message': 'invalid argument 0: block range exceeds maximum 500'}
+base: head 61438743 cycles 17 debtors 12282 cand 281 last_cycle 16172 ms rpc ok/err 362/4
+base: loop error https://base.api.pocket.network: {'code': -32602, 'message': 'block range extends beyond current head block: requested 61439173, head 61439172'}
+base: head 61440312 cycles 51 debtors 12291 cand 281 last_cycle 6338 ms rpc ok/err 670/5
+base: loop error https://base.api.pocket.network: {'code': -32602, 'message': 'block range extends beyond current head block: requested 61441681, head 61441658'}
+base: head 61441823 cycles 87 debtors 12293 cand 280 last_cycle 7530 ms rpc ok/err 985/6
