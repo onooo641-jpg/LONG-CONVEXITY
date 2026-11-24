@@ -33,3 +33,4 @@
 {"block_seen": 159820844, "chain": "optimism", "detect_ms": 4006, "hf": 0.000401797919924758, "n_ready": 159820846, "sim": null, "user": "0x531219408332f4ef518404d62bba3385d052a538", "ver": 2, "wall": 1795240469.993823}
 {"block_seen": 159867036, "chain": "optimism", "detect_ms": 3677, "hf": 0.4932690642498413, "n_ready": 159867037, "sim": null, "user": "0x16e69dc49047ab395123c222a10046b1bfe3a321", "ver": 2, "wall": 1795332852.8440323}
 {"block_seen": 159867038, "chain": "optimism", "detect_ms": 2986, "hf": 0.4932690642498413, "n_ready": 159867039, "sim": null, "user": "0x16e69dc49047ab395123c222a10046b1bfe3a321", "ver": 2, "wall": 1795332856.6361992}
+{"block_seen": 159954127, "chain": "optimism", "detect_ms": 44722, "hf": 0.9707144736842106, "n_ready": 159954149, "sim": null, "user": "0x2f4a78501f477d1aafdb981bb5dbba69ff82e341", "ver": 2, "wall": 1795507076.3550751}
