@@ -117,3 +117,9 @@ KyberSwap quotes for orders seen open, as before. Run 36 hours on GitHub Actions
 quoter concentration (top-1, top-3 shares of exclusivity); paper profit on outsider fills we quoted (as Stage 5).
 **Verdict for the "outsider filler" route (kill-only).** KILL if outsider fills are < 2% of filled orders, or annualised paper profit on
 them < $5,000/yr. Quoter-route figures are descriptive (that route needs Uniswap Labs' approval).
+**Stage 5b fix (2026-11-24 21:2x UTC, after session 1; mechanical).** Session 1 (run 45422973513) recorded 95 filled orders but resolved the
+actual filler for none (the receipt lookup returned nothing from the single RPC with custom headers). The lookup now tries three public
+Arbitrum RPCs with plain headers, logs the error when it fails, and each session first backfills fillers for earlier filled orders from their
+logged transaction hashes. Applies from session 3; verdict rules unchanged. Session-1 interim (not a verdict): 36 orders quoted, all filled
+by their exclusive quoter; a KyberSwap route matched or beat the winning quote on 20 (55.6%), median gap 0.5 bps; exclusivity across 95
+fills: top-1 quoter 62%, top-3 92%, 6 quoters.

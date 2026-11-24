@@ -79,24 +79,42 @@ def excl(o):
     return str(((o.get("cosignerData") or {}).get("exclusiveFiller")) or "").lower()
 
 
-RPC = "https://arbitrum-one-rpc.publicnode.com"
+RPCS = ["https://arb1.arbitrum.io/rpc", "https://arbitrum-one-rpc.publicnode.com", "https://arbitrum.drpc.org"]
 FILL_TOPIC = "0x78ad7ec0e9f89e74012afa58738b6b661c024cb0fd185ee2f616c0a28924bd66"
+LAST_RPC_ERROR = {"msg": ""}
 
 
 def actual_filler(tx):
-    """Filler address from the Fill event in the fill transaction (public RPC)."""
-    try:
-        body = json.dumps({"jsonrpc": "2.0", "id": 1, "method": "eth_getTransactionReceipt", "params": [tx]}).encode()
-        req = urllib.request.Request(RPC, data=body, headers={**HEADERS, "Content-Type": "application/json"})
-        with urllib.request.urlopen(req, timeout=20) as r:
-            rc = json.loads(r.read().decode()).get("result") or {}
-        for lg in rc.get("logs") or []:
-            tp = lg.get("topics") or []
-            if tp and tp[0].lower() == FILL_TOPIC and len(tp) > 2:
-                return "0x" + tp[2][-40:].lower()
-    except Exception:  # noqa: BLE001
-        return None
+    """Filler address from the Fill event in the fill transaction (public RPCs, plain headers)."""
+    body = json.dumps({"jsonrpc": "2.0", "id": 1, "method": "eth_getTransactionReceipt", "params": [tx]}).encode()
+    for url in RPCS:
+        try:
+            req = urllib.request.Request(url, data=body, headers={"Content-Type": "application/json", "User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(req, timeout=20) as r:
+                rc = json.loads(r.read().decode()).get("result") or {}
+            for lg in rc.get("logs") or []:
+                tp = lg.get("topics") or []
+                if tp and tp[0].lower() == FILL_TOPIC and len(tp) > 2:
+                    return "0x" + tp[2][-40:].lower()
+            LAST_RPC_ERROR["msg"] = f"{url}: receipt without Fill event" if rc else f"{url}: empty result"
+        except Exception as e:  # noqa: BLE001
+            LAST_RPC_ERROR["msg"] = f"{url}: {type(e).__name__}: {str(e)[:100]}"
     return None
+
+
+def backfill_fillers():
+    """Resolve fillers for filled_feed events logged without one (e.g. from earlier sessions)."""
+    if not LOG.exists():
+        return
+    ev = [json.loads(x) for x in LOG.read_text(encoding="utf-8").splitlines() if x.strip()]
+    done = {e["hash"] for e in ev if e["event"] == "filler_backfill" and e.get("filler")}
+    todo = [e for e in ev if e["event"] == "filled_feed" and not e.get("filler") and e.get("txHash") and e["hash"] not in done]
+    n_ok = 0
+    for e in todo:
+        f = actual_filler(e["txHash"])
+        log({"event": "filler_backfill", "hash": e["hash"], "filler": f, "error": None if f else LAST_RPC_ERROR["msg"]})
+        n_ok += bool(f)
+    print(f"backfill: {n_ok} of {len(todo)} fillers resolved", flush=True)
 
 
 def kyber_quote(tin, tout, amt):
@@ -133,6 +151,7 @@ def run(hours):
     last_feed, recorded = 0.0, set()
     print(f"Paper filler running for {hours} h. Log: {LOG}. Press Ctrl+C to stop early (the log is kept).", flush=True)
     log({"event": "start", "hours": hours})
+    backfill_fillers()
     while time.time() < end_at:
         t0 = time.time()
         d = get(f"{UX}?{urllib.parse.urlencode({'orderStatus': 'open', 'chainId': CHAIN, 'limit': 50})}")
@@ -173,7 +192,8 @@ def run(hours):
                     continue
                 recorded.add(h)
                 legs = order_legs(o)
-                log({"event": "filled_feed", "hash": h, "exclusive": excl(o), "filler": actual_filler(o.get("txHash")) if o.get("txHash") else None,
+                fl = actual_filler(o.get("txHash")) if o.get("txHash") else None
+                log({"event": "filled_feed", "hash": h, "exclusive": excl(o), "filler": fl, "rpc_error": None if fl else LAST_RPC_ERROR["msg"],
                      "createdAt": o.get("createdAt"), "fillTimestamp": o.get("fillTimestamp"), "txHash": o.get("txHash"),
                      "legs": [str(x) for x in legs] if legs else None, "settledAmounts": o.get("settledAmounts")})
             last_feed = time.time()
@@ -236,10 +256,15 @@ def write_summary(quiet=True):
     share = len(comp) / n if n else 0.0
     verdict = ("KILL" if (n and (share < 0.05 or ann < 5000)) else
                "worth building a real filler (speed untested)" if (share >= 0.10 and ann >= 15000) else "inconclusive / keep running")
-    feed = {}
+    feed, bf = {}, {}
     for e in ev:
         if e["event"] == "filled_feed":
-            feed[e["hash"]] = e
+            feed[e["hash"]] = dict(e)
+        elif e["event"] == "filler_backfill" and e.get("filler"):
+            bf[e["hash"]] = e["filler"]
+    for h, f in bf.items():
+        if h in feed and not feed[h].get("filler"):
+            feed[h]["filler"] = f
     known = [e for e in feed.values() if e.get("filler") and e.get("exclusive")]
     outsiders = [e for e in known if e["filler"] != e["exclusive"]]
     ex_counts = {}
