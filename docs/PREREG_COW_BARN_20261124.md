@@ -31,3 +31,5 @@ solver errors at the logged level.
 **Verdict (registered):** "pipeline ready" **not demonstrated** (0 valid solutions) — but this cannot be told apart from "no solvable
 orders on staging", since staging solvers were equally silent. Benchmark: sample too small (1 auction). Conclusion: CoW's open staging feed
 cannot test a solver; a real test needs CoW's production shadow access (paused by CoW, reminder set for 2026-12-15).
+Note: the shared analysis script prints "VERDICT … KILL" (#366's route rule). Under #368's registered rule that line does not apply: the
+benchmark needs ≥ 30 auctions with both a baseline bid and staging competition data, and there was 1 → "sample too small".
