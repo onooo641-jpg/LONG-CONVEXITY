@@ -28,6 +28,13 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 LOG = HERE / "uniswapx_paper_log.jsonl"
 SUMMARY = HERE / "uniswapx_paper_summary.txt"
+
+
+def set_dir(d):
+    global LOG, SUMMARY
+    p = Path(d)
+    p.mkdir(parents=True, exist_ok=True)
+    LOG, SUMMARY = p / "uniswapx_paper_log.jsonl", p / "uniswapx_paper_summary.txt"
 UX = "https://api.uniswap.org/v2/orders"
 KYBER = "https://aggregator-api.kyberswap.com/arbitrum/api/v1/routes"
 CHAIN = 42161
@@ -214,7 +221,10 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--hours", type=float, default=36.0)
     ap.add_argument("--summarize", action="store_true")
+    ap.add_argument("--dir", default=None, help="folder for the log and summary (default: next to this script)")
     a = ap.parse_args()
+    if a.dir:
+        set_dir(a.dir)
     if a.summarize:
         write_summary(quiet=False)
         return

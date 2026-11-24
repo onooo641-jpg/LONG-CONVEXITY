@@ -85,3 +85,6 @@ route, at about the same moment). Exact-output orders use the maximum input (con
   competitive share ≥ 10% **and** annualised paper profit ≥ $15,000. In between: inconclusive (extend the run).
 Command on Jx's PC: `python uniswapx_paper_filler.py --hours 36`; the program writes `uniswapx_paper_log.jsonl` and
 `uniswapx_paper_summary.txt`, which Jx sends back; analysis re-computed from the log by `--summarize`.
+**Runtime change (2026-11-24, Jx):** run on GitHub Actions instead of Jx's PC — workflow `uniswapx_paper.yml`, chained 5.5-hour
+sessions until 36 hours, log and summary committed to `data/uniswapx_paper/` after each session. Rules and verdict bars unchanged.
+Cost noted to Jx: ~2,160 Actions minutes, shared with workstream B's shadow test and the daily radar.

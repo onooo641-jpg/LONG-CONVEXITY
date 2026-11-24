@@ -1,0 +1,57 @@
+# #371 Stage 5 (docs/PREREG_UNISWAPX_20261124.md): read-only UniswapX paper filler on Arbitrum, chained 5.5-hour sessions until the
+# requested total is reached. No wallet, no keys, public APIs only. Started by pushing .github/uniswapx_paper_request.txt or manually.
+name: uniswapx paper filler
+on:
+  workflow_dispatch:
+    inputs:
+      hours: {description: "hours in this session", default: "5.5"}
+      remaining: {description: "hours still to run including this session", default: "36"}
+  push:
+    branches: [claude/ict-trading-resources-ugh07b]
+    paths: [.github/uniswapx_paper_request.txt]
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: uniswapx-paper
+  cancel-in-progress: false
+jobs:
+  paper:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.ref_name }}
+      - name: Run one session
+        run: |
+          HOURS="${{ inputs.hours || '5.5' }}"; REMAINING="${{ inputs.remaining || '36' }}"
+          THIS=$(python3 -c "print(min(float('$HOURS'), float('$REMAINING')))")
+          echo "session hours $THIS, remaining before $REMAINING"
+          python3 tools/uniswapx_paper_filler.py --hours "$THIS" --dir data/uniswapx_paper || true
+          python3 tools/uniswapx_paper_filler.py --summarize --dir data/uniswapx_paper || true
+          echo "THIS=$THIS" >> "$GITHUB_ENV"; echo "REMAINING=$REMAINING" >> "$GITHUB_ENV"
+      - name: Commit log
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/uniswapx_paper || true
+          git diff --cached --quiet && exit 0
+          git commit -m "uniswapx paper filler: session ${{ github.run_id }}"
+          for i in 1 2 3 4 5; do
+            git pull --rebase -X theirs --no-edit origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            sleep $((i * 10))
+          done
+          exit 1
+      - name: Chain the next session
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          LEFT=$(python3 -c "print(round(float('${REMAINING:-0}') - float('${THIS:-0}'), 2))")
+          echo "hours left after this session: $LEFT"
+          if python3 -c "import sys; sys.exit(0 if float('$LEFT') > 0.25 else 1)"; then
+            gh workflow run uniswapx_paper.yml --ref "${GITHUB_REF_NAME}" -f hours=5.5 -f remaining="$LEFT"
+          fi
