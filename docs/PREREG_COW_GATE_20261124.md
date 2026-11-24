@@ -76,3 +76,14 @@ solvers mostly win small auctions. A newcomer's income depends on winning valuab
 **Reading.** CoW solving passes every free check, with three warnings: the reward pool is shrinking in dollars, one team now takes half
 of all rewards, and value on the entry chain is concentrated in the top 3. Whether a new solver can earn ≥ $15K/yr is now only a question
 of solver quality, which only Stage 2 (a real solver bidding on live auctions with no money) can answer.
+
+**Unregistered context 2 (`docs/jx_runs/cow_gate_gap_20261124.txt`, identical on re-run): how close are losing bids?** Median bidders per
+auction: 16 (mainnet), 12 (BNB), 11 (Base). The 2nd-best bid trails the best by a median 2.6% of score on mainnet, 2.0% on BNB, 0.36% on
+Base; the median losing bid trails by 13% / 10% / 2.6%; only 1–9% of losing bids come within 0.1% of the best. (Score ≈ user surplus plus
+fees, so a few % of score is a much smaller price difference.) A tight race between a few strong solvers, with a long tail of weak ones.
+
+**Stage 2 status (2026-11-24).** First step that needs no builder decision: run CoW's open-source example solver in local shadow mode
+(autopilot shadow mode needs no database; it pulls live auctions from api.cow.fi and logs each local solver's score) and compare with the
+real winners on the same auction IDs. Not started: it needs a Rust build and hours of runtime with heavy RPC use. On GitHub Actions this
+would draw on the same (apparently private-repo, limited) minutes that workstream B's live shadow test and the daily radar depend on, so it
+is left for Jx to choose where it runs (Actions, the friend's computer, or a ~$20–50/month server).

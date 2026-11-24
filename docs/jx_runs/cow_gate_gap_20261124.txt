@@ -1,0 +1,4 @@
+===== #365 context: losing bids relative to the best bid in the same auction
+  base: auctions 132, median bidders per auction 11; 2nd-best bid below the best by: median 0.356%, 75th pct 2.665%; all losing bids: median gap 2.58%; share of losing bids within 0.1% of the best 9%, within 1% 36%
+  bnb: auctions 129, median bidders per auction 12; 2nd-best bid below the best by: median 2.049%, 75th pct 5.333%; all losing bids: median gap 9.63%; share of losing bids within 0.1% of the best 2%, within 1% 9%
+  mainnet: auctions 396, median bidders per auction 16; 2nd-best bid below the best by: median 2.579%, 75th pct 9.757%; all losing bids: median gap 12.94%; share of losing bids within 0.1% of the best 1%, within 1% 8%
