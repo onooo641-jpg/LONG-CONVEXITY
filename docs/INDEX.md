@@ -45,6 +45,7 @@ Everything else tried outside prop firms, and the plan for finding new opportuni
 | **Radar results summary (every idea tested, every firm priced)** | `docs/RADAR_RESULTS_SUMMARY.md` |
 | Which non-prop kills were base-level only; refinement protocol | `docs/REFINEMENT_TRIAGE_20261122.md` |
 | **Radar** (daily Actions job): design, thresholds, test queue | `docs/PREREG_RADAR_20261121.md`; code `scripts/radar.py`, `.github/workflows/radar.yml`; watch lists `docs/radar/` |
+| Radar non-prop sources N1–N9 (depegs, extreme funding, CoW solver newcomers, audit contests, governance incentive/bot programmes, funding rounds, perp volume surges, Malaysia promos, Malaysia regulator lists + bot-role docs) | `docs/PREREG_RADAR_NONPROP_20261124.md`; code `scripts/radar_nonprop.py`; output `data/radar/leads.parquet`, "Non-prop leads" in `latest_summary.md` |
 | Radar outputs: candidate table, near-miss table, page diffs, latest summary | `data/radar/candidates.parquet`, `nearmiss.parquet`, `changes.parquet`, `latest_summary.md`, `propfirm_snippets.md` |
 | Prop-firm sweep (bot / alert-assisted policy per firm, pricing) | `docs/radar/prop_firms.csv`; `scripts/radar_price.py`, `scripts/radar_models.py` |
 | Weekly radar tests | `docs/PREREG_INCENTIVES_W1_20261121.md` (#201–#203) |

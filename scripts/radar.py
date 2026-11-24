@@ -633,6 +633,18 @@ def main():
     nm = merge_near()
     save(nm, "nearmiss")
     summary(scr, nm, pg, ch, counts)
+    # non-prop sources N1-N9 (docs/PREREG_RADAR_NONPROP_20261124.md)
+    try:
+        try:
+            import radar_nonprop as rn
+        except ImportError:
+            from scripts import radar_nonprop as rn
+        cht = ch[(ch["date"] == TODAY) & (ch["event"] == "changed")] if len(ch) else ch
+        _all, fresh, health = rn.run(fetch, jget, TODAY, OUT, ROOT, cht)
+        with open(OUT / "latest_summary.md", "a") as fh:
+            fh.write("\n".join(rn.summary_lines(fresh, health)) + "\n")
+    except Exception as e:  # noqa: BLE001
+        print(f"radar_nonprop failed: {type(e).__name__}: {e}", flush=True)
     print(open(OUT / "latest_summary.md").read())
     print(f"done in {time.time() - t0:.0f}s, requests ok {LOG['ok']} fail {LOG['fail']}", flush=True)
     return 0

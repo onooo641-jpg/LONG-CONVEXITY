@@ -207,3 +207,10 @@ listing short FAIL, #335 buyback rotation FAIL, #337 deletions KILL, #339 tokeni
   auctions by count; 2026 newcomers inconclusive. Warnings: top solver 50% of 2026 rewards; top 3 take 78–99% of winning *value*.
 - **Next:** Stage 2 — a real solver on live auctions, no money. First step that needs no decision from Jx: run CoW's open-source example
   solver in local shadow mode and measure its gap to the actual winners.
+
+## 2026-11-24 — radar expanded beyond prop firms (Jx request)
+Nine non-prop source types added to the daily radar (`docs/PREREG_RADAR_NONPROP_20261124.md`, `scripts/radar_nonprop.py`): stablecoin
+depegs, extreme Hyperliquid funding, new CoW solver payout recipients, audit-contest prize pools, governance-forum topics on incentives and
+bot programmes (12 forums), new funding rounds, perp-venue volume surges, Malaysia-accessible broker/exchange promotions, and Malaysia
+regulator alert lists plus bot-role docs (CoW, UniswapX, 1inch Fusion, Across, Chainlink Automation, Gelato, Bebop). Leads go to the weekly
+review: dismissed with a reason here, or desk-checked and pre-registered. Lead thresholds fixed before the first run.

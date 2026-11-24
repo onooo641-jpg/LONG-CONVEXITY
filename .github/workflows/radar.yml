@@ -11,7 +11,7 @@ on:
   workflow_dispatch: {}
   push:
     branches: [claude/ict-trading-resources-ugh07b]
-    paths: [.github/radar_request.txt, docs/radar/**, scripts/radar.py]
+    paths: [.github/radar_request.txt, docs/radar/**, scripts/radar.py, scripts/radar_nonprop.py]
 
 permissions:
   contents: write
