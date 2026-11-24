@@ -1,0 +1,27 @@
+=== cryptotrend370
+  USDT perp symbols ever listed: 923
+  0/923 symbols, 410 kline rows, 3808 funding rows, 8s
+  50/923 symbols, 39857 kline rows, 172164 funding rows, 66s
+  100/923 symbols, 81512 kline rows, 329597 funding rows, 119s
+  150/923 symbols, 123378 kline rows, 504194 funding rows, 160s
+  200/923 symbols, 161003 kline rows, 655658 funding rows, 193s
+  250/923 symbols, 196996 kline rows, 787707 funding rows, 237s
+  300/923 symbols, 240362 kline rows, 957439 funding rows, 290s
+  350/923 symbols, 276978 kline rows, 1104474 funding rows, 311s
+  400/923 symbols, 308767 kline rows, 1241210 funding rows, 351s
+  450/923 symbols, 352389 kline rows, 1413252 funding rows, 404s
+  500/923 symbols, 394626 kline rows, 1581726 funding rows, 439s
+  550/923 symbols, 423006 kline rows, 1710974 funding rows, 481s
+  600/923 symbols, 460612 kline rows, 1862231 funding rows, 509s
+  650/923 symbols, 490885 kline rows, 2005890 funding rows, 559s
+  700/923 symbols, 534670 kline rows, 2179373 funding rows, 594s
+  750/923 symbols, 560372 kline rows, 2293691 funding rows, 615s
+  800/923 symbols, 603271 kline rows, 2478658 funding rows, 674s
+  850/923 symbols, 636012 kline rows, 2621762 funding rows, 708s
+  list fail data/futures/um/monthly/klines/哈基米USDT/1d/: 'ascii' codec can't encode characters in position 63-65: ordinal not in range(128)
+  list fail data/futures/um/monthly/klines/币安人生USDT/1d/: 'ascii' codec can't encode characters in position 63-66: ordinal not in range(128)
+  list fail data/futures/um/monthly/klines/我踏马来了USDT/1d/: 'ascii' codec can't encode characters in position 63-67: ordinal not in range(128)
+  list fail data/futures/um/monthly/klines/牛来USDT/1d/: 'ascii' codec can't encode characters in position 63-64: ordinal not in range(128)
+  list fail data/futures/um/monthly/klines/龙虾USDT/1d/: 'ascii' codec can't encode characters in position 63-64: ordinal not in range(128)
+  900/923 symbols, 676477 kline rows, 2782477 funding rows, 754s
+  done: 689413 kline rows (918 symbols), 645820 funding day-rows
