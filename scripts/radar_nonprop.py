@@ -1,4 +1,4 @@
-"""Radar non-prop sources N1-N8 (docs/PREREG_RADAR_NONPROP_20261124.md). Called from scripts/radar.py.
+"""Radar non-prop sources N1-N9 (N6 dropped, addendum 1) (docs/PREREG_RADAR_NONPROP_20261124.md). Called from scripts/radar.py.
 
 N4, N8 and N9 page-watch rows live in docs/radar/watchlist.csv (kinds contest, promo_my, regulator_my, bot_docs); this module turns their
 page changes into leads. Thresholds are fixed in the pre-registration; do not tune after seeing leads.
@@ -18,8 +18,6 @@ N1_MIN_CIRC, N1_LO, N1_HI = 10e6, 0.985, 1.015
 N2_MIN_ANN, N2_MIN_OI = 1.00, 2e6
 N3_MIN_USD, N3_DAYS = 1000.0, 21
 N4_MIN_PRIZE = 50_000
-N6_DAYS, N6_MIN_M = 14, 5.0
-N6_CATS = re.compile(r"dex|derivative|lending|yield|cdp|liquid staking|bridge|rwa|launchpad|perp", re.I)
 N7_MIN_VOL, N7_MIN_CHG = 20e6, 100.0
 N5_DAYS = 14
 N5_RE = re.compile(r"incentiv|reward|liquidat|solver|keeper|relayer|filler|market[- ]?mak|liquidity provider program|\bLP program|"
@@ -151,44 +149,74 @@ def n5_forums(fetch, today, rows, health):
     health["N5 forums answering"] = f"{ok}/{len(FORUMS)}"
 
 
-def n6_raises(jget, today, rows, health):
-    d = jget("https://api.llama.fi/raises") or {}
-    rs = d.get("raises") or []
-    health["N6 raises listed"] = len(rs)
-    cut = (pd.Timestamp(today, tz="UTC") - timedelta(days=N6_DAYS)).timestamp()
-    for r in rs:
-        try:
-            amt = float(r.get("amount") or 0)
-            when = float(r.get("date") or 0)
-        except (TypeError, ValueError):
+def _num(v):
+    try:
+        return float(str(v).replace(",", ""))
+    except (TypeError, ValueError):
+        return None
+
+
+def _prize(item):
+    best = None
+    for k, v in item.items():
+        vals = v.items() if isinstance(v, dict) else [(k, v)]
+        for kk, vv in vals:
+            if re.search(r"prize|reward|pool|total", f"{k} {kk}", re.I):
+                x = _num(vv)
+                if x is not None and (best is None or x > best):
+                    best = x
+    return best
+
+
+def n4_contests(jget, today, rows, health, out: Path):
+    """Sherlock and Cantina contest APIs (addendum 1): new contest with prize >= $50K."""
+    seen_f = out / "contests_seen.parquet"
+    seen = set(pd.read_parquet(seen_f)["cid"]) if seen_f.exists() else set()
+    items = []
+    for page in (1, 2, 3):
+        d = jget(f"https://audits.sherlock.xyz/api/contests?page={page}") or {}
+        for it in d.get("items") or []:
+            items.append(("sherlock", str(it.get("id")), it.get("title"), _num(it.get("prize_pool")) or _prize(it), it.get("status"),
+                          f"https://audits.sherlock.xyz/contests/{it.get('id')}"))
+        if not d.get("next_page"):
+            break
+    d = jget("https://cantina.xyz/api/v0/competitions") or []
+    lst = d if isinstance(d, list) else (d.get("items") or d.get("data") or [])
+    if lst:
+        health["N4 Cantina item keys"] = ",".join(sorted(lst[0].keys()))[:200]
+    for it in lst:
+        items.append(("cantina", str(it.get("id")), it.get("name") or it.get("title"), _prize(it), it.get("status") or it.get("state"),
+                      it.get("url") or ""))
+    health["N4 contests listed"] = f"{sum(1 for x in items if x[0] == 'sherlock')} Sherlock, {sum(1 for x in items if x[0] == 'cantina')} Cantina"
+    for src, cid, title, prize, status, url in items:
+        key = f"{src}:{cid}"
+        if key not in seen and prize is not None and prize >= N4_MIN_PRIZE and not re.search(r"finish|complete|ended|closed", str(status), re.I):
+            _lead(rows, today, "N4", key, src, f"{title} — prize ${prize:,.0f} ({status})", prize, url)
+    pd.DataFrame({"cid": sorted(seen | {f"{x[0]}:{x[1]}" for x in items})}).to_parquet(seen_f, index=False)
+
+
+def n7_cg(jget, today, rows, health, out: Path):
+    """Perp-venue volume surges from CoinGecko derivatives exchanges (addendum 1: DefiLlama overview is now HTTP 402)."""
+    d = jget("https://api.coingecko.com/api/v3/derivatives/exchanges?per_page=100") or []
+    btc = ((jget("https://coins.llama.fi/prices/current/coingecko:bitcoin") or {}).get("coins") or {}).get("coingecko:bitcoin", {}).get("price")
+    health["N7 derivatives venues (CoinGecko)"] = f"{len(d)}; BTC ${btc}"
+    if not d or not btc:
+        return
+    hist_f = out / "derivs_cg.parquet"
+    hist = pd.read_parquet(hist_f) if hist_f.exists() else pd.DataFrame(columns=["date", "name", "vol_usd"])
+    now = pd.DataFrame([{"date": today, "name": x.get("name"), "vol_usd": (_num(x.get("trade_volume_24h_btc")) or 0) * btc} for x in d])
+    known = set(hist["name"])
+    wk = (pd.Timestamp(today) - timedelta(days=7)).strftime("%Y-%m-%d")
+    past = hist[hist["date"] <= wk].sort_values("date").groupby("name")["vol_usd"].last()
+    for r in now.itertuples():
+        if r.vol_usd < N7_MIN_VOL:
             continue
-        cat = f"{r.get('category') or ''} {r.get('sector') or ''}"
-        if when >= cut and amt >= N6_MIN_M and N6_CATS.search(cat):
-            _lead(rows, today, "N6", f"{r.get('name')}:{int(when)}", r.get("name"),
-                  f"raised ${amt:,.0f}M ({r.get('round') or '?'}), {cat.strip()}, chains {r.get('chains')}", amt, r.get("source") or "")
-
-
-def n7_derivs(jget, today, rows, health, out: Path):
-    d = jget("https://api.llama.fi/overview/derivatives?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true") or {}
-    ps = d.get("protocols") or []
-    health["N7 derivatives venues"] = len(ps)
-    seen_f = out / "derivs_seen.parquet"
-    seen = set(pd.read_parquet(seen_f)["name"]) if seen_f.exists() else None
-    names = []
-    for p in ps:
-        name = p.get("name")
-        names.append(name)
-        try:
-            v = float(p.get("total24h") or 0)
-            chg = float(p.get("change_7d") or 0)
-        except (TypeError, ValueError):
-            continue
-        if v >= N7_MIN_VOL and (chg >= N7_MIN_CHG or (seen is not None and name not in seen)):
-            why = f"7-day change {chg:+.0f}%" if chg >= N7_MIN_CHG else "new venue in the list"
-            _lead(rows, today, "N7", f"{name}", name, f"24h volume ${v:,.0f}; {why}", v,
-                  f"https://defillama.com/protocol/{urllib.parse.quote(str(p.get('slug') or name))}")
-    pd.DataFrame({"name": sorted(set(names) | (seen or set()))}).to_parquet(seen_f, index=False)
-
+        p0 = past.get(r.name)
+        if p0 and r.vol_usd >= 2 * p0:
+            _lead(rows, today, "N7", r.name, r.name, f"24h volume ${r.vol_usd:,.0f}, {r.vol_usd / p0:.1f}x the level 7+ days ago", r.vol_usd)
+        elif known and r.name not in known:
+            _lead(rows, today, "N7", r.name, r.name, f"new derivatives venue in CoinGecko's list, 24h volume ${r.vol_usd:,.0f}", r.vol_usd)
+    pd.concat([hist[hist["date"] != today], now], ignore_index=True).to_parquet(hist_f, index=False)
 
 def page_leads(changes_today, today, rows):
     """N4 contest prizes, N8 Malaysia promos, N9 access/bot-docs changes, from today's page diffs."""
@@ -222,7 +250,7 @@ def run(fetch, jget, today, out: Path, root: Path, changes_today):
     rows, health = [], {}
     for name, fn in (("N1", lambda: n1_depegs(jget, today, rows, health)), ("N2", lambda: n2_funding(fetch, today, rows, health)),
                      ("N3", lambda: n3_cow(jget, today, rows, health, out, root)), ("N5", lambda: n5_forums(fetch, today, rows, health)),
-                     ("N6", lambda: n6_raises(jget, today, rows, health)), ("N7", lambda: n7_derivs(jget, today, rows, health, out)),
+                     ("N4", lambda: n4_contests(jget, today, rows, health, out)), ("N7", lambda: n7_cg(jget, today, rows, health, out)),
                      ("N4/N8/N9", lambda: page_leads(changes_today, today, rows))):
         try:
             fn()
@@ -251,7 +279,7 @@ def run(fetch, jget, today, out: Path, root: Path, changes_today):
 def summary_lines(fresh, health):
     L = ["", "## Non-prop leads (docs/PREREG_RADAR_NONPROP_20261124.md): new today " + str(len(fresh)), ""]
     names = {"N1": "Stablecoin depegs", "N2": "Extreme funding", "N3": "New CoW solver recipients", "N4": "Audit contest prizes",
-             "N5": "Governance: incentives / bot programmes", "N6": "New funding rounds", "N7": "Perp-venue volume surges",
+             "N5": "Governance: incentives / bot programmes", "N7": "Perp-venue volume surges",
              "N8": "Malaysia promotions", "N9": "Malaysia access / bot-role docs changes"}
     for src, nm in names.items():
         x = fresh[fresh["source"] == src]

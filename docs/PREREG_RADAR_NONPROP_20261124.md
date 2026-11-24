@@ -26,3 +26,16 @@ Each source runs inside its own error guard; a failed source is reported, never 
 `docs/NOTES_NONPROP.md` or a Stage 0 desk check and a pre-registered test with a new candidate number (#300+ series continues).
 **Limits.** Page-watch sources depend on pages rendering without JavaScript; failures are listed in the summary and fixed by replacing
 URLs (a mechanical change). Nothing here is a backtest.
+
+### Addendum 1 (2026-11-24, after the first run; mechanical source repairs, lead thresholds unchanged)
+First run (Actions 45330403375): N1, N2, N3, N5 worked (459 stablecoins, 235 perps, 658 CoW payouts to 53 recipients, 12/12 forums).
+DefiLlama's raises and derivatives-overview endpoints now return **HTTP 402** (paid). A URL probe (fetch run 45331221932,
+`docs/jx_runs/fetch_fallback_45331221932.txt`) found replacements:
+- **N6 dropped**: no free source for funding rounds; the radar's S2 flag (new protocols ≤ 30 days, TVL ≥ $1M) still covers new venues.
+- **N7**: now CoinGecko `derivatives/exchanges` (free): 24h volume (BTC × DefiLlama BTC price) ≥ $20M and ≥ 2× the level stored 7+ days
+  earlier (history builds from today), or a venue new to the list with ≥ $20M. Same thresholds.
+- **N4**: Sherlock and Cantina pages are script-rendered (169 / 821 characters), but both have public JSON lists
+  (`audits.sherlock.xyz/api/contests`, `cantina.xyz/api/v0/competitions`); a lead is a contest not seen before with prize ≥ $50,000 that
+  is not finished. Code4rena and Immunefi stay as page watches. CodeHawks dropped (HTTP 429 to automated requests).
+- **N8**: Luno (404 on every candidate URL) and Tokenize (unreachable from GitHub's servers) dropped; HATA and Sinegy (Malaysian exchanges)
+  added (unverified until the next run). **N9**: Gelato docs unreachable; homepage watched instead.

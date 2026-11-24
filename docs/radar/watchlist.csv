@@ -126,15 +126,10 @@ dt_pricing,DayTraders,firm,https://daytraders.com/pricing
 dt_eod_page,DayTraders,firm,https://daytraders.com/eod
 fe_pricing,FuturesElite,firm,https://futureselite.com/
 contest_c4,Code4rena,contest,https://code4rena.com/audits
-contest_sherlock,Sherlock,contest,https://audits.sherlock.xyz/contests
-contest_cantina,Cantina,contest,https://cantina.xyz/competitions
-contest_codehawks,CodeHawks,contest,https://codehawks.cyfrin.io/
 contest_immunefi,Immunefi,contest,https://immunefi.com/bug-bounty/
 promo_moomoo_my,moomoo Malaysia,promo_my,https://www.moomoo.com/my/
 promo_webull_my,Webull Malaysia,promo_my,https://www.webull.com.my/
 promo_rakuten_trade,Rakuten Trade,promo_my,https://www.rakutentrade.my/
-promo_luno_my,Luno Malaysia,promo_my,https://www.luno.com/en/my
-promo_tokenize,Tokenize Malaysia,promo_my,https://tokenize.exchange/
 promo_mxglobal,MX Global,promo_my,https://www.mxglobal.com/
 reg_sc_alert,SC Malaysia investor alert list,regulator_my,https://www.sc.com.my/investor-alert-list
 reg_bnm_alert,BNM financial consumer alert list,regulator_my,https://www.bnm.gov.my/financial-consumer-alert-list
@@ -144,6 +139,8 @@ bot_uniswapx,UniswapX fillers,bot_docs,https://docs.uniswap.org/contracts/uniswa
 bot_1inch_fusion,1inch Fusion resolvers,bot_docs,https://help.1inch.io/en/articles/6796085-what-is-1inch-fusion-and-how-does-it-work
 bot_across_relayer,Across relayers,bot_docs,https://docs.across.to/relayers/running-a-relayer
 bot_chainlink_automation,Chainlink Automation,bot_docs,https://docs.chain.link/chainlink-automation
-bot_gelato,Gelato,bot_docs,https://docs.gelato.network/
 bot_bebop,Bebop,bot_docs,https://docs.bebop.xyz/
 rel_cow_services,CoW services,release,https://github.com/cowprotocol/services/releases.atom
+promo_hata,HATA (Malaysia),promo_my,https://www.hata.io/
+promo_sinegy,Sinegy (Malaysia),promo_my,https://www.sinegy.com/
+bot_gelato,Gelato,bot_docs,https://www.gelato.network/
