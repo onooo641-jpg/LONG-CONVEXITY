@@ -60,3 +60,13 @@ Dominant filler: 4,148 fills, $92.9M, 4.25 bps, ≈ $157K/yr gross. **Newcomer A
 **Limits.** Gross ≠ net: the spread is measured against hourly mid prices and still contains the filler's DEX/hedging execution cost and
 gas; only 46% of fills are measured (native-ETH payouts are invisible to Transfer logs); newcomer figures rest on 250 and 106 fills and may
 reflect long-tail tokens with wider spreads and higher hedging risk. Filler addresses are not teams.
+
+### Stage 5 design notes (2026-11-24, probes `docs/jx_runs/fetch_fallback_45411276620.txt` and the uxorders run)
+- UniswapX's order API is public (open and filled orders; fields include input/outputs with start/end amounts, cosignerData, fillBlock,
+  fillTimestamp, settledAmounts); KyberSwap's aggregator quotes work without a key on Arbitrum; 0x needs a key; Odos returned an error.
+- Open orders were empty at probe time (orders live seconds); the filled-order endpoint returned only the latest 50 (~9.5 hours) without a
+  pagination cursor, so a months-long retrospective paper test is not possible from this API without further work (decoding V3 block-based
+  decay curves from `encodedOrder`, paging by time).
+- The sandbox cannot reach these hosts; GitHub Actions can. A live paper filler needs ~36 runtime hours for ~200 Arbitrum orders
+  (~5.5 per hour), which would compete for the same Actions minutes as workstream B's live liquidation shadow test.
+**Next step needs Jx:** where the live paper filler runs (GitHub Actions minutes / a PC / a small server, ~$5–20/month, needs approval).
