@@ -1,0 +1,4 @@
+=== liq_flashblocks
+flashblocks probe: polls 339 errors 0 (0%) pending==latest+1 in 0 (0%) blocks with >=3 distinct pending tx counts 0 of 339
+max distinct counts in one block: 1
+=== liq_flashblocks done in 120s  ok 678 fail 0

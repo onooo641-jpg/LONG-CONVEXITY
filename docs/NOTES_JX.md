@@ -785,3 +785,6 @@ Supersedes the lever lines above. **M** measured (gas only, before slippage, bri
 trades: **$195,000 over 2016–26 ($18,006/yr; $1,500/month on average, $3,136/month over the last 36 months), worst dip −$13,858.** At each
 firm's account cap (5 each): $975K / $90K per year, worst dip −$69,291 (the swings add up because every account takes the same trades).
 FTMO 2-Step (CFD) fails the flag rule (coin flip ≈ 0, deep dips), so the CFD route adds nothing structurally.
+
+### Flashblocks probe (2026-11-24)
+Free public Base endpoint does NOT expose sub-block (pending) state (0/339 polls). Speed lever needs a provider endpoint with flashblocks: Jx step = create a free-tier account at a Base RPC provider that lists flashblocks, add the URL as GitHub secret `BASE_FLASHBLOCKS_URL`; I then run the same probe against it. Shadow watcher was down ~2 h on 2026-11-24 (cron dropped); restarted and now self-chains. Watched uptime so far ~57% of wall time per chain (≈43 h each), a coverage risk for the 75% inconclusive rule.

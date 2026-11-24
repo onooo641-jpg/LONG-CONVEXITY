@@ -7,3 +7,6 @@ Reading rules (fixed now):
 - NOT SUPPORTED: otherwise (pending equals latest, or errors/rate-limit in > 50% of polls => INCONCLUSIVE, rate-limited).
 Output: `docs/jx_runs/liq_flashblocks_20261124.txt`; ledger row FB1. A SUPPORTED result only shows the data path exists; whether it yields wins vs incumbents is untested and cannot be tested without paid/live infrastructure (Jx-only).
 Costs: none. Secrets: none.
+
+## Result (2026-11-24; Actions run 45351899538, `docs/jx_runs/liq_flashblocks_20261124.txt`)
+339 polls, 0 errors. Pending block == latest+1 in 0 polls; no block showed more than 1 distinct pending tx count. Reading: NOT SUPPORTED on the free public `mainnet.base.org` (the `pending` tag returns the latest block here; the docs' claim of flashblocks on the public endpoint did not hold in this test). Live-time probe, so not bit-identical on re-run; the conclusion (0 of 339) is what is recorded. Flashblocks access therefore needs a provider/endpoint that exposes it (Jx-only account step; free tier unverified).
