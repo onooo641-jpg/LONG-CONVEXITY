@@ -1,0 +1,36 @@
+===== #367 Who are CoW's paid solvers? Registry entries 89; payout addresses in the registry 112
+  recipients examined 29 (2026 >= $15K/yr: 23; genuine 2024-25 entrants: 11); found in the registry 28
+  $ 4,384,658/yr  ?                                            unknown                                    Unknown           payout address not in CoW's registry
+  $   620,807/yr  Tsolver                                      CoW DAO pool                               Established       Tsolver: proprietary trading / market-making firm (Tokka Labs, Singapore) [partners.circle.com/partner/tokka-labs; tokkalabs job postings]
+  $   618,987/yr  Kipseli                                      CoW DAO pool                               Established       (2024-25 entrant) Kipseli: DEX aggregator (organization 'Kyber' in CoW's registry) [cms.cow.fi registry]
+  $   597,929/yr  Quasi                                        unknown                                    Unknown           pool and identity unknown
+  $   537,796/yr  Sector Finance                               CoW DAO or reduced pool (service-fee flag) Established       (2024-25 entrant) Sector Finance: DeFi protocol whose budget describes 'solving and market-making systems' (small: ~$60K TVL) [gl.app sectorfinance.eth 4Q25 budget prop
+  $   385,541/yr  Fractal                                      reduced own pool                           Small/independent (2024-25 entrant) no public evidence of being an exchange, aggregator, market maker or trading firm
+  $   199,472/yr  Dfusion, Balancer API, 0x API, Quasimodo, Ex full own pool                              Established       runs a full own bonding pool ($500K + 1.5M COW)
+  $   185,260/yr  Helixbox                                     CoW DAO pool                               Established       Helixbox: bridge company supplying liquidity to order-flow venues [rootdata.com/projects/detail/Helixbox]
+  $   184,195/yr  Portus                                       reduced own pool                           Small/independent no public evidence of being an exchange, aggregator, market maker or trading firm
+  $   176,403/yr  BRRRolver                                    unknown                                    Unknown           pool and identity unknown
+  $   118,063/yr  BitGet                                       unknown                                    Established       BitGet: exchange [cms.cow.fi registry name]
+  $   115,774/yr  Wraxyn                                       CoW DAO pool                               Small/independent no public evidence of being an exchange, aggregator, market maker or trading firm
+  $    77,053/yr  Nexroute                                     unknown                                    Established       Nexroute: DEX routing product ('routes swaps across 500+ DEX liquidity sources') [nexroute-website-3m4.pages.dev]
+  $    72,926/yr  Horadrim                                     unknown                                    Unknown           (2024-25 entrant) pool and identity unknown
+  $    71,528/yr  Barter                                       CoW DAO pool                               Established       Barter: routing engine / aggregator company, #1 CoW solver [blockworks.co/news/barter-buys-rival-solver-codebase]
+  $    61,635/yr  Arc                                          CoW DAO pool                               Small/independent no public evidence of being an exchange, aggregator, market maker or trading firm
+  $    40,384/yr  Trusted Volumes                              CoW DAO pool                               Small/independent (2024-25 entrant) no public evidence of being an exchange, aggregator, market maker or trading firm
+  $    39,689/yr  OKX                                          CoW DAO pool                               Established       OKX: exchange [cms.cow.fi registry name]
+  $    25,492/yr  Rosato                                       unknown                                    Unknown           pool and identity unknown
+  $    23,608/yr  NativeFi                                     unknown                                    Unknown           pool and identity unknown
+  $    23,405/yr  Arctic Bastion                               CoW DAO pool                               Small/independent no public evidence of being an exchange, aggregator, market maker or trading firm
+  $    21,069/yr  AlgoLabs                                     unknown                                    Unknown           pool and identity unknown
+  $    18,550/yr  Baseline                                     full own pool                              Established       runs a full own bonding pool ($500K + 1.5M COW)
+  $     3,121/yr  MX Trading                                   unknown                                    Unknown           (2024-25 entrant) pool and identity unknown
+  $       831/yr  ApeOut 1inch                                 CoW DAO or reduced pool (service-fee flag) Small/independent (2024-25 entrant) no public evidence of being an exchange, aggregator, market maker or trading firm
+  $         0/yr  Project Blanc                                reduced own pool                           Small/independent (2024-25 entrant) no public evidence of being an exchange, aggregator, market maker or trading firm
+  $         0/yr  OneBit Quant                                 unknown                                    Unknown           (2024-25 entrant) pool and identity unknown
+  $         0/yr  Kipseli                                      CoW DAO pool                               Established       (2024-25 entrant) Kipseli: DEX aggregator (organization 'Kyber' in CoW's registry) [cms.cow.fi registry]
+  $         0/yr  Tsolver                                      CoW DAO pool                               Established       (2024-25 entrant) Tsolver: proprietary trading / market-making firm (Tokka Labs, Singapore) [partners.circle.com/partner/tokka-labs; tokkalabs job postings]
+  2026 earnings by class (recipients >= $15K/yr):
+    Established       10 recipients, $   2,487,206/yr (29% of all 2026 rewards); range $18,550-$620,807
+    Small/independent  6 recipients, $     810,935/yr (9% of all 2026 rewards); range $23,405-$385,541
+    Unknown            7 recipients, $   5,302,086/yr (61% of all 2026 rewards); range $21,069-$4,384,658
+  ANSWER (registered rule: >= 3 Small/independent recipients earning >= $15K/yr in 2026): YES, with evidence (6: Fractal $385,541, Portus $184,195, Wraxyn $115,774, Arc $61,635, Trusted Volumes $40,384, Arctic Bastion $23,405)

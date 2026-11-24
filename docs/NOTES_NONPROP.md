@@ -220,3 +220,10 @@ CoW's open-source stack (autopilot shadow mode + driver + baseline solver, offic
 CoW's production live-auction feed answers HTTP 403 on all 11 networks (staging is open but nearly empty). Order-book access is whitelisted
 by CoW. So #365 Stage 2 (does our solver win?) needs a human contact with CoW's solver team (Telegram) — Jx's or the friend's decision.
 Until then CoW solving is parked as "passed all free checks; real test needs CoW access; a startup-sized project".
+
+## 2026-11-24 — #367 who are CoW's solvers? Small teams do earn, but big firms take most
+Matched payout addresses to CoW's official solver registry (89 solvers). Of the 23 recipients earning ≥ $15K/yr in 2026: 10 established
+(exchanges OKX/BitGet, aggregators Kyber/0x/Barter, prop-trading firm Tokka Labs, CoW/Gnosis-run solvers) taking 29% of rewards; 6 with no
+public sign of being large firms (Fractal $386K/yr, Portus $184K, Wraxyn $116K, Arc $62K, Trusted Volumes $40K, Arctic Bastion $23K) taking
+9%; 7 unknown taking 61% — including the top address ($4.38M/yr, probably Barter, which started in 2023 as a 4-person team per its CEO).
+Registered answer: small teams can compete (YES, with evidence), at $2K–$32K/month, not at the top.

@@ -24,3 +24,28 @@ in 2026; **no evidence** if 0; **thin** if 1–2. Reported with each recipient's
 **Commands.** fetch: Actions job `cow367`; analysis: `uv run python -m scripts.cow_who_20261124 | tee docs/jx_runs/cow_who_20261124.txt`
 (re-run once; must be identical). **Limits.** A vouch names the pool, not the people; public identity is from named sources only;
 teams can hide behind generic names.
+
+### Results (2026-11-24; `docs/jx_runs/cow_who_20261124.txt`, identical on re-run)
+**Data actually used.** CoW's official solver registry (`cms.cow.fi/api/solvers`, 89 solvers, 112 payout addresses, fetched by Actions run
+45344455035): name, organization, bonding pool (incl. whether reduced), service-fee flag and payout address per network. 28 of the 29
+recipients examined matched by payout address. The VouchRegister log pull was partial (mainnet 100 logs; L2 explorers answered 403, the
+BNB public RPC refused) and the v1 solver-competition API returned 404, so pool type comes from the registry. Identity evidence: CoW's
+registry fields plus named web sources (listed per solver in the script).
+
+| Class (2026 ≥ $15K/yr) | Recipients | 2026 rewards | Share of all 2026 rewards | Range per solver |
+|---|---|---|---|---|
+| Established (exchange / aggregator / market maker / trading firm / CoW-run / full own pool) | 10 | $2.49M/yr | 29% | $18.6K–$621K |
+| Small/independent (CoW DAO or reduced pool, no public evidence of a large firm) | **6** | $0.81M/yr | 9% | **$23.4K–$386K** |
+| Unknown | 7 | $5.30M/yr | 61% | $21K–$4.38M |
+
+Small/independent: **Fractal $385,541/yr** (reduced own pool; 2024 entrant), Portus $184,195 (reduced pool; built by the Furucombo DeFi-tool
+team), Wraxyn $115,774, Arc $61,635, Trusted Volumes $40,384 (2025 entrant), Arctic Bastion $23,405 (all CoW DAO pool).
+Established include Tsolver (Tokka Labs, prop-trading firm, $621K), Kipseli (Kyber, $619K), Sector Finance ($538K; a small DeFi protocol
+whose budget mentions market-making systems — classed Established under the strict rule), Helixbox, BitGet, OKX, Barter's listed address,
+Nexroute (a DEX-routing startup — also strict), and CoW/Gnosis-run solvers. The largest recipient ($4.38M/yr, 50% of 2026 rewards) is not
+in the registry; Barter publicly targets > 50% share and is the reported #1, so it is probably Barter (inference, not verified).
+
+**Answer (registered rule): YES, with evidence** — 6 recipients without public signs of being large firms earned ≥ $15K/yr in 2026
+($2K–$32K per month). **Limits:** "no public evidence" is not proof of being small (some may be anonymous professionals); Portus comes from
+an existing DeFi company; small teams together took only 9% of rewards; the strict rule also pushed two small projects (Sector Finance,
+Nexroute) into "Established".
