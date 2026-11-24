@@ -39,3 +39,5 @@ DefiLlama's raises and derivatives-overview endpoints now return **HTTP 402** (p
   is not finished. Code4rena and Immunefi stay as page watches. CodeHawks dropped (HTTP 429 to automated requests).
 - **N8**: Luno (404 on every candidate URL) and Tokenize (unreachable from GitHub's servers) dropped; HATA and Sinegy (Malaysian exchanges)
   added (unverified until the next run). **N9**: Gelato docs unreachable; homepage watched instead.
+- (2026-11-24, second run 45331504230) Sinegy returns HTTP 403 to automated requests: dropped; HATA works. "Not finished" for N4 now
+  also excludes judging / escalation / review / results statuses (submissions closed), and the summary prints contest statuses.

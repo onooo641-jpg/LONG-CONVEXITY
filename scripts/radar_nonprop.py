@@ -187,10 +187,13 @@ def n4_contests(jget, today, rows, health, out: Path):
     for it in lst:
         items.append(("cantina", str(it.get("id")), it.get("name") or it.get("title"), _prize(it), it.get("status") or it.get("state"),
                       it.get("url") or ""))
+    from collections import Counter
+    health["N4 statuses"] = dict(Counter(f"{x[0]}:{x[4]}" for x in items).most_common(12))
     health["N4 contests listed"] = f"{sum(1 for x in items if x[0] == 'sherlock')} Sherlock, {sum(1 for x in items if x[0] == 'cantina')} Cantina"
     for src, cid, title, prize, status, url in items:
         key = f"{src}:{cid}"
-        if key not in seen and prize is not None and prize >= N4_MIN_PRIZE and not re.search(r"finish|complete|ended|closed", str(status), re.I):
+        if key not in seen and prize is not None and prize >= N4_MIN_PRIZE and \
+                not re.search(r"finish|complete|ended|closed|escalat|judg|review|result", str(status), re.I):
             _lead(rows, today, "N4", key, src, f"{title} — prize ${prize:,.0f} ({status})", prize, url)
     pd.DataFrame({"cid": sorted(seen | {f"{x[0]}:{x[1]}" for x in items})}).to_parquet(seen_f, index=False)
 
