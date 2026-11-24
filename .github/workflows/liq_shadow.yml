@@ -13,6 +13,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   plan:
@@ -54,15 +55,22 @@ jobs:
           restore-keys: liq-pos-${{ matrix.chain }}-
       - name: Watch (350 min budget, commit every 20 min)
         env:
+          GH_TOKEN: ${{ github.token }}
           LIQ_BUDGET_MIN: "350"
         run: |
           mkdir -p docs/jx_runs
           log="docs/jx_runs/liq_shadow_${{ matrix.chain }}_${{ github.run_id }}.txt"
           uv run python -u scripts/liq_shadow.py ${{ matrix.chain }} > "$log" 2>&1 &
           pid=$!
+          start_s=$(date +%s)
+          chained=0
           while kill -0 $pid 2>/dev/null; do
             for i in $(seq 120); do kill -0 $pid 2>/dev/null || break; sleep 10; done
             .github/scripts/commit_push.sh "shadow-${{ matrix.chain }}" || true
+            # self-chain: queue the next run shortly before this one ends (GitHub cron runs are delayed or dropped; the concurrency group makes it wait for this run)
+            if [ "$chained" = "0" ] && [ $(( $(date +%s) - start_s )) -gt 19800 ]; then
+              gh workflow run liq_shadow.yml --ref "${{ github.ref_name }}" && chained=1 || true
+            fi
           done
           wait $pid
       - name: Save position cache

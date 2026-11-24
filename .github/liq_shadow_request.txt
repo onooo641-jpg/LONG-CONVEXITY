@@ -1,2 +1,1 @@
-# shadow restart request
-run 5 (addendum 4: near-line log, stress flag; same measurement)
+restart 2026-11-24T07:56:01Z
