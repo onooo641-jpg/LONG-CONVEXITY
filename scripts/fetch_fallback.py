@@ -2392,7 +2392,38 @@ def job_cryptotrend370():
                                                                "kline_symbols": int(kd["sym"].nunique()) if len(kd) else 0}))
     print(f"  done: {len(kd)} kline rows ({kd['sym'].nunique() if len(kd) else 0} symbols), {len(fd)} funding day-rows", flush=True)
 
-JOBS = {"cryptotrend370": job_cryptotrend370, "cow367": job_cow367, "cowauction": job_cowauction, "radarprobe": job_radarprobe, "cow365": job_cow365, "cow361b": job_cow361b, "jlp363": job_jlp363, "cow361": job_cow361, "across362": job_across362, "sweep4d": job_sweep4d, "sweep4c": job_sweep4c, "sweep4b": job_sweep4b, "sweep4": job_sweep4, "addprice": job_addprice, "fred9": job_fred9, "batch10b": job_batch10b, "repair8": job_repair8, "sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+def job_uniswapx371():
+    """#371: UniswapX Fill events on Arbitrum (V3 Dutch) and Base (Priority), 2025-11-01..2026-10-31."""
+    OUT.mkdir(parents=True, exist_ok=True)
+    topic = "0x" + keccak256(b"Fill(bytes32,address,address,uint256)").hex()
+    reactors = {"arbitrum": "0xB274d5F4b833b61B340b654d600A864fB604a87c", "base": "0x000000001Ec5656dcdB24D90DFa42742738De729"}
+    meta = {"topic0": topic}
+    for chain, addr in reactors.items():
+        try:
+            code = _srpc(chain, "eth_getCode", [addr, "latest"])
+            b0 = _sblock_at(chain, int(pd.Timestamp("2025-11-01", tz="UTC").timestamp()))
+            b1 = _sblock_at(chain, int(pd.Timestamp("2026-11-01", tz="UTC").timestamp()))
+            logs, missed = _sscan(chain, addr, [topic], b0, b1, w=20000, wmax=2000000, budget_s=6000)
+            rows = [{"block": int(lg["blockNumber"], 16), "tx": lg["transactionHash"], "order": lg["topics"][1],
+                     "filler": "0x" + lg["topics"][2][-40:], "swapper": "0x" + lg["topics"][3][-40:]} for lg in logs]
+            ts = []
+            for k in range(65):
+                b = b0 + (b1 - b0) * k // 64
+                try:
+                    ts.append([b, _sblock_ts(chain, b)])
+                except Exception:  # noqa: BLE001
+                    pass
+            pd.DataFrame(rows).to_parquet(OUT / f"uniswapx371_{chain}.parquet", index=False)
+            meta[chain] = {"has_code": bool(code and code != "0x"), "b0": b0, "b1": b1, "missed": missed, "fills": len(rows),
+                           "ts_sample": ts}
+            print(f"  {chain}: {len(rows)} fills, missed {missed} blocks", flush=True)
+        except Exception as e:  # noqa: BLE001
+            meta[chain] = {"error": f"{type(e).__name__}: {str(e)[:200]}"}
+            print(f"  {chain} failed: {meta[chain]['error']}", flush=True)
+    (OUT / "uniswapx371_meta.json").write_text(json.dumps(meta))
+
+JOBS = {"uniswapx371": job_uniswapx371, "cryptotrend370": job_cryptotrend370, "cow367": job_cow367, "cowauction": job_cowauction, "radarprobe": job_radarprobe, "cow365": job_cow365, "cow361b": job_cow361b, "jlp363": job_jlp363, "cow361": job_cow361, "across362": job_across362, "sweep4d": job_sweep4d, "sweep4c": job_sweep4c, "sweep4b": job_sweep4b, "sweep4": job_sweep4, "addprice": job_addprice, "fred9": job_fred9, "batch10b": job_batch10b, "repair8": job_repair8, "sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys
