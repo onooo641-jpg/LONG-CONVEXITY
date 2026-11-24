@@ -214,3 +214,9 @@ depegs, extreme Hyperliquid funding, new CoW solver payout recipients, audit-con
 bot programmes (12 forums), new funding rounds, perp-venue volume surges, Malaysia-accessible broker/exchange promotions, and Malaysia
 regulator alert lists plus bot-role docs (CoW, UniswapX, 1inch Fusion, Across, Chainlink Automation, Gelato, Bebop). Leads go to the weekly
 review: dismissed with a reason here, or desk-checked and pre-registered. Lead thresholds fixed before the first run.
+
+## 2026-11-24 — #366 CoW shadow test: not runnable without CoW's cooperation
+CoW's open-source stack (autopilot shadow mode + driver + baseline solver, official Docker image) ran for 20 minutes on GitHub Actions, but
+CoW's production live-auction feed answers HTTP 403 on all 11 networks (staging is open but nearly empty). Order-book access is whitelisted
+by CoW. So #365 Stage 2 (does our solver win?) needs a human contact with CoW's solver team (Telegram) — Jx's or the friend's decision.
+Until then CoW solving is parked as "passed all free checks; real test needs CoW access; a startup-sized project".

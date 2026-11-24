@@ -26,3 +26,19 @@ must be identical).
 **Honest limits.** Uniswap V2 liquidity only (production solvers use many sources and private liquidity), so the gap is an upper bound on
 how far *a minimal* solver is behind; a free public RPC can throttle and drop auctions (counted, reported); shadow scores use the same
 scoring code as production but are not settled, so execution risk is ignored.
+
+### Results (2026-11-24)
+**Pilot (Actions run 45329600886, `docs/jx_runs/cow_shadow_run_45329600886.txt`).** Image `ghcr.io/cowprotocol/services@sha256:05078ac1…`
+(version main@8b4bb6a2). All three programs started and stayed up for 20 minutes (solver engine, driver serving on port 11088, autopilot
+in shadow mode). Every request for the live auction failed: `HTTP 403 Forbidden for https://api.cow.fi/mainnet/api/v1/auction` (~100
+attempts). Auctions received: 0; baseline solutions: 0.
+**Repair attempt (fetch run 45332265118, `docs/jx_runs/fetch_fallback_45332265118.txt`).** The production live-auction endpoint returns
+403 on all 11 networks; the staging (barn) endpoints answer 200 but hold 0–3 orders (0 on mainnet), so a staging run cannot be compared
+with production winners.
+
+**Verdict (pre-registered pilot rule): NOT RUNNABLE on GitHub Actions with free access.** CoW's production auction feed is restricted;
+its FAQ says order-book access is whitelisted, generally once a solver is live. So the no-money test of a real solver (#365 Stage 2)
+needs CoW's cooperation: the official route is the "CoW Swap Solvers" Telegram group (shadow competition, currently on Plasma).
+This does not kill CoW solving; it moves the next step to a human contact, which only Jx (or the friend) can make. An unregistered
+alternative — rebuilding past auctions from public data (solver-competition order lists + the public orders API) and feeding them to the
+local stack — is possible but needs substantial engineering and would use today's chain state for past auctions (lower fidelity).
