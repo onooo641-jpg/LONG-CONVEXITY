@@ -227,3 +227,9 @@ Matched payout addresses to CoW's official solver registry (89 solvers). Of the 
 public sign of being large firms (Fractal $386K/yr, Portus $184K, Wraxyn $116K, Arc $62K, Trusted Volumes $40K, Arctic Bastion $23K) taking
 9%; 7 unknown taking 61% — including the top address ($4.38M/yr, probably Barter, which started in 2023 as a 4-person team per its CEO).
 Registered answer: small teams can compete (YES, with evidence), at $2K–$32K/month, not at the top.
+
+## 2026-11-24 — CoW reply to Jx (Telegram, CoW Swap Solvers group)
+"At the moment, onboarding new solvers is paused for the next weeks. We are working on shipping something in these weeks and we need the
+solver team fully focused on it. Once we resume onboarding activities, we will answer each of the requests." (CoW team, quoted by Jx.)
+Consequence: shadow access and onboarding wait. Meanwhile: a near-live replay test (#368: rebuild recent public auctions and run CoW's
+baseline solver on them), radar N5/N9 watch CoW's forum and docs for the restart, reminder set for 2026-12-15 to follow up.

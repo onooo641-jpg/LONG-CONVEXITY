@@ -42,3 +42,6 @@ needs CoW's cooperation: the official route is the "CoW Swap Solvers" Telegram g
 This does not kill CoW solving; it moves the next step to a human contact, which only Jx (or the friend) can make. An unregistered
 alternative — rebuilding past auctions from public data (solver-competition order lists + the public orders API) and feeding them to the
 local stack — is possible but needs substantial engineering and would use today's chain state for past auctions (lower fidelity).
+
+**Update 2026-11-24 (Jx's message in CoW's solver Telegram group).** CoW answered that onboarding of new solvers is paused "for the next
+weeks" while the solver team ships something; requests will be answered when onboarding resumes.
