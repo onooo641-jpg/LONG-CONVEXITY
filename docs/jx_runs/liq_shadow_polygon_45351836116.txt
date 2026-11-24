@@ -6,3 +6,8 @@ polygon: reopened 21 recorded unhealthy episodes
 polygon: head 97867934 cycles 33 debtors 5665 cand 709 last_cycle 7408 ms rpc ok/err 332/1
 polygon: head 97868132 cycles 66 debtors 5665 cand 711 last_cycle 13615 ms rpc ok/err 612/1
 polygon: head 97868335 cycles 101 debtors 5665 cand 711 last_cycle 12715 ms rpc ok/err 901/1
+polygon: head 97868536 cycles 137 debtors 5665 cand 708 last_cycle 12896 ms rpc ok/err 1189/1
+polygon: head 97868738 cycles 173 debtors 5665 cand 705 last_cycle 13494 ms rpc ok/err 1479/1
+polygon: head 97868945 cycles 210 debtors 5665 cand 712 last_cycle 6733 ms rpc ok/err 1771/1
+polygon: head 97869146 cycles 246 debtors 5665 cand 713 last_cycle 6052 ms rpc ok/err 2058/1
+polygon: head 97869347 cycles 282 debtors 5665 cand 711 last_cycle 6316 ms rpc ok/err 2345/1
