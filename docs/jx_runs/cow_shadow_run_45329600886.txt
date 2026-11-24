@@ -1,0 +1,127 @@
+params.txt: duration_min=20 rpc=https://ethereum-rpc.publicnode.com
+digest.txt: ghcr.io/cowprotocol/services@sha256:05078ac16ac6461c48c081ec5c9ed176bed0a9b3ea2ab768b361875090033120
+autopilot log lines 104; auctions seen 0; auctions with a baseline solution 0
+===== solvers: 16 lines, 1 warn/error lines; first 25 lines:
+2026-11-24T04:55:23.607Z  WARN observe::tracing::reload_handler: open log filter reload socket file="/tmp/log_filter_override_solvers_7.sock"
+2026-11-24T04:55:23.607Z  INFO solvers::run: running solver engine with Args {
+    log: "warn,solvers=info",
+    use_json_logs: false,
+    tracing: TracingArguments {
+        tracing_collector_endpoint: None,
+        tracing_level: Level(
+            Info,
+        ),
+        tracing_exporter_timeout: 10s,
+    },
+    addr: 127.0.0.1:7872,
+    command: Baseline {
+        config: "/cfg/baseline.toml",
+    },
+} version=main@8b4bb6a20ea58b4646d64dea7a32748ceb5a3a83
+----- solvers: up to 25 distinct warn/error lines:
+2026-11-24T04:55:23.607Z  WARN observe::tracing::reload_handler: open log filter reload socket file="/tmp/log_filter_override_solvers_7.sock"
+----- solvers: last 15 lines:
+2026-11-24T04:55:23.607Z  INFO solvers::run: running solver engine with Args {
+    log: "warn,solvers=info",
+    use_json_logs: false,
+    tracing: TracingArguments {
+        tracing_collector_endpoint: None,
+        tracing_level: Level(
+            Info,
+        ),
+        tracing_exporter_timeout: 10s,
+    },
+    addr: 127.0.0.1:7872,
+    command: Baseline {
+        config: "/cfg/baseline.toml",
+    },
+} version=main@8b4bb6a20ea58b4646d64dea7a32748ceb5a3a83
+===== driver: 222 lines, 1 warn/error lines; first 25 lines:
+2026-11-24T04:55:28.899Z  WARN observe::tracing::reload_handler: open log filter reload socket file="/tmp/log_filter_override_driver_7.sock"
+2026-11-24T04:55:28.988Z  INFO driver::run: running driver with Config {
+    disable_access_list_simulation: false,
+    disable_gas_simulation: None,
+    solvers: [
+        Config {
+            endpoint: Url {
+                scheme: "http",
+                cannot_be_a_base: false,
+                username: "",
+                password: None,
+                host: Some(
+                    Ipv4(
+                        127.0.0.1,
+                    ),
+                ),
+                port: Some(
+                    7872,
+                ),
+                path: "/",
+                query: None,
+                fragment: None,
+            },
+            name: Name(
+                "baseline",
+----- driver: up to 25 distinct warn/error lines:
+2026-11-24T04:55:28.899Z  WARN observe::tracing::reload_handler: open log filter reload socket file="/tmp/log_filter_override_driver_7.sock"
+----- driver: last 15 lines:
+            fragment: None,
+        },
+        cache_size: 2000,
+    },
+    tx_gas_limit: 45000000,
+    http: HttpClient {
+        timeout: 10s,
+    },
+    balance_cache: BalanceCacheConfig {
+        eviction_time: 20s,
+        refresh_cooldown: 1s,
+    },
+    ethrpc_timeout: 10s,
+} version=main@8b4bb6a20ea58b4646d64dea7a32748ceb5a3a83
+2026-11-24T04:55:29.271Z  INFO driver::infra::api: serving driver port=11088
+===== autopilot: 104 lines, 101 warn/error lines; first 25 lines:
+{"timestamp":"2026-11-24T04:55:58.869663916+00:00","level":"WARN","fields":{"message":"open log filter reload socket","file":"/tmp/log_filter_override_autopilot_7.sock"},"target":"observe::tracing::reload_handler"}
+{"timestamp":"2026-11-24T04:55:58.869821529+00:00","level":"INFO","fields":{"message":"running autopilot with validated arguments:\n/cfg/autopilot.toml","version":"main@8b4bb6a20ea58b4646d64dea7a32748ceb5a3a83"},"target":"autopilot::run"}
+{"timestamp":"2026-11-24T04:55:58.869836967+00:00","level":"INFO","fields":{"message":"file configuration:\nConfiguration {\n    shared: SharedConfig {\n        ethrpc: EthRpcConfig {\n            max_batch_size: 100,\n            max_concurrent_requests: 10,\n            batch_delay: 0ns,\n            timeout: 10s,\n        },\n        current_block: CurrentBlockConfig {\n            poll_interva
+{"timestamp":"2026-11-24T04:55:58.875926873+00:00","level":"INFO","fields":{"message":"creating solver","name":"\"baseline\"","url":"Url { scheme: \"http\", cannot_be_a_base: false, username: \"\", password: None, host: Some(Ipv4(127.0.0.1)), port: Some(11088), path: \"/baseline\", query: None, fragment: None }","submission_address":"0x74c1f9d266771fd90d90ad0e772339bd551a8937","extensions":"Suppor
+{"timestamp":"2026-11-24T04:56:01.425599761+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+{"timestamp":"2026-11-24T04:56:13.681543372+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+{"timestamp":"2026-11-24T04:56:28.431367462+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+{"timestamp":"2026-11-24T04:56:38.928155323+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+{"timestamp":"2026-11-24T04:56:49.337384519+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+{"timestamp":"2026-11-24T04:57:02.108152938+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+{"timestamp":"2026-11-24T04:57:14.501651074+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+{"timestamp":"2026-11-24T04:57:24.857290127+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+{"timestamp":"2026-11-24T04:57:39.577805016+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+{"timestamp":"2026-11-24T04:57:49.903439881+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+{"timestamp":"2026-11-24T04:58:04.423544309+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+{"timestamp":"2026-11-24T04:58:15.268551625+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+{"timestamp":"2026-11-24T04:58:25.717311164+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+{"timestamp":"2026-11-24T04:58:38.056514021+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+{"timestamp":"2026-11-24T04:58:50.417519826+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+{"timestamp":"2026-11-24T04:59:00.883781296+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+{"timestamp":"2026-11-24T04:59:13.245521504+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+{"timestamp":"2026-11-24T04:59:27.767718190+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+{"timestamp":"2026-11-24T04:59:38.132773266+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+{"timestamp":"2026-11-24T04:59:50.498445358+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+{"timestamp":"2026-11-24T05:00:02.937527507+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+----- autopilot: up to 25 distinct warn/error lines:
+{"timestamp":"2026-11-24T04:55:58.869663916+00:00","level":"WARN","fields":{"message":"open log filter reload socket","file":"/tmp/log_filter_override_autopilot_7.sock"},"target":"observe::tracing::reload_handler"}
+{"timestamp":"2026-11-24T04:56:01.425599761+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+----- autopilot: last 15 lines:
+{"timestamp":"2026-11-24T05:13:02.394229303+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+{"timestamp":"2026-11-24T05:13:15.224351408+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+{"timestamp":"2026-11-24T05:13:25.247472792+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+{"timestamp":"2026-11-24T05:13:37.635140803+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+{"timestamp":"2026-11-24T05:13:50.319592951+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+{"timestamp":"2026-11-24T05:14:02.802345807+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+{"timestamp":"2026-11-24T05:14:13.229473906+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+{"timestamp":"2026-11-24T05:14:25.960069400+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+{"timestamp":"2026-11-24T05:14:38.400358160+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+{"timestamp":"2026-11-24T05:14:48.760399880+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+{"timestamp":"2026-11-24T05:15:01.227428870+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+{"timestamp":"2026-11-24T05:15:15.757756244+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+{"timestamp":"2026-11-24T05:15:26.166985846+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+{"timestamp":"2026-11-24T05:15:40.714735287+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
+{"timestamp":"2026-11-24T05:15:49.326527696+00:00","level":"WARN","fields":{"message":"failed to retrieve auction","err":"HTTP status client error (403 Forbidden) for url (https://api.cow.fi/mainnet/api/v1/auction)"},"target":"autopilot::shadow","spans":{"next_auction":{}}}
