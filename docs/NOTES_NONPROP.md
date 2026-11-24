@@ -233,3 +233,11 @@ Registered answer: small teams can compete (YES, with evidence), at $2K–$32K/m
 solver team fully focused on it. Once we resume onboarding activities, we will answer each of the requests." (CoW team, quoted by Jx.)
 Consequence: shadow access and onboarding wait. Meanwhile: a near-live replay test (#368: rebuild recent public auctions and run CoW's
 baseline solver on them), radar N5/N9 watch CoW's forum and docs for the restart, reminder set for 2026-12-15 to follow up.
+
+## 2026-11-24 — radar coverage: what is and is not watched
+Covered: prop firms (~120 pages), DeFi reward pools / new protocols / Merkl / Snapshot, 23 governance forums, stablecoin depegs, extreme
+funding, perp volume surges, CoW solver newcomers, audit contests, bot-role docs, perp maker-rebate programmes, Malaysian broker promos and
+regulator lists. Not covered: airdrop/points programmes (no free reliable source; indirect via forums and volume surges), payouts of other
+bot roles (UniswapX fillers, 1inch resolvers — docs only), TradFi events (odd-lot tenders parked: SEC feed needs a contact e-mail),
+Malaysian bank / e-wallet sign-up promos (one-off, small), prediction markets and betting (law). Already tested and failed, so not watched:
+Bursa IPO ballots (#49), thin-venue market making (#322).

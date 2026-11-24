@@ -27,7 +27,14 @@ FORUMS = {"aave": "https://governance.aave.com/latest.rss", "compound": "https:/
           "uniswap": "https://gov.uniswap.org/latest.rss", "arbitrum": "https://forum.arbitrum.foundation/latest.rss",
           "optimism": "https://gov.optimism.io/latest.rss", "lido": "https://research.lido.fi/latest.rss",
           "sky": "https://forum.sky.money/latest.rss", "balancer": "https://forum.balancer.fi/latest.rss",
-          "gmx": "https://gov.gmx.io/latest.rss", "dydx": "https://dydx.forum/latest.rss"}
+          "gmx": "https://gov.gmx.io/latest.rss", "dydx": "https://dydx.forum/latest.rss",
+          # addendum 2: more ecosystems
+          "curve": "https://gov.curve.finance/latest.rss", "jupiter": "https://www.jupresear.ch/latest.rss",
+          "gnosis": "https://forum.gnosis.io/latest.rss", "frax": "https://gov.frax.finance/latest.rss",
+          "across": "https://forum.across.to/latest.rss", "ethena": "https://gov.ethenafoundation.com/latest.rss",
+          "polygon": "https://forum.polygon.technology/latest.rss", "zksync": "https://forum.zknation.io/latest.rss",
+          "scroll": "https://forum.scroll.io/latest.rss", "mantle": "https://forum.mantle.xyz/latest.rss",
+          "celo": "https://forum.celo.org/latest.rss"}
 COW_SAFE = "0xA03be496e67Ec29bC62F01a428683D7F9c204930"
 COW_TOKEN = "0xDEf1CA1fb7FBcDC777520aa7f396b4E015F497aB"
 PRIZE_RE = re.compile(r"(?:\$|USDC\s?|USD\s?)\s?([\d][\d,]{2,}(?:\.\d+)?)\s?([kKmM])?|([\d][\d,]{2,})\s?(?:USDC|USD)\b")
@@ -243,7 +250,7 @@ def page_leads(changes_today, today, rows):
             hits = [ln for ln in add.splitlines() if PROMO_RE.search(ln) and PROMO_WORD.search(ln)]
             if hits:
                 _lead(rows, today, "N8", f"{x.slug}:{today}", x.name, " / ".join(h[:120] for h in hits[:3]), None, x.url)
-        elif x.kind in ("regulator_my", "bot_docs"):
+        elif x.kind in ("regulator_my", "bot_docs", "mm_program"):
             first = [ln for ln in add.splitlines() if len(ln) > 15][:2]
             _lead(rows, today, "N9", f"{x.slug}:{today}", x.name, "changed: " + " / ".join(f[:120] for f in first), None, x.url)
 
@@ -283,7 +290,7 @@ def summary_lines(fresh, health):
     L = ["", "## Non-prop leads (docs/PREREG_RADAR_NONPROP_20261124.md): new today " + str(len(fresh)), ""]
     names = {"N1": "Stablecoin depegs", "N2": "Extreme funding", "N3": "New CoW solver recipients", "N4": "Audit contest prizes",
              "N5": "Governance: incentives / bot programmes", "N7": "Perp-venue volume surges",
-             "N8": "Malaysia promotions", "N9": "Malaysia access / bot-role docs changes"}
+             "N8": "Malaysia promotions", "N9": "Malaysia access / bot-role docs / market-maker programme changes"}
     for src, nm in names.items():
         x = fresh[fresh["source"] == src]
         if len(x):

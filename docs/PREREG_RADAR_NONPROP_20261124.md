@@ -41,3 +41,9 @@ DefiLlama's raises and derivatives-overview endpoints now return **HTTP 402** (p
   added (unverified until the next run). **N9**: Gelato docs unreachable; homepage watched instead.
 - (2026-11-24, second run 45331504230) Sinegy returns HTTP 403 to automated requests: dropped; HATA works. "Not finished" for N4 now
   also excludes judging / escalation / review / results statuses (submissions closed), and the summary prints contest statuses.
+
+### Addendum 2 (2026-11-24, coverage gaps; thresholds unchanged)
+Jx asked whether every area is covered. It is not; gaps recorded in `docs/NOTES_NONPROP.md`. Two cheap gaps closed: **N5** adds 11 more
+governance forums (Curve, Jupiter, Gnosis, Frax, Across, Ethena, Polygon, zkSync, Scroll, Mantle, Celo; same keyword rule); **N9** adds a
+page watch of market-maker / maker-rebate programmes on perp venues (Hyperliquid fees, Aster, Paradex, Orderly, Drift fees, edgeX), any
+change reported. Unreachable URLs are reported in source health and fixed or dropped later.

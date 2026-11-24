@@ -143,3 +143,9 @@ bot_bebop,Bebop,bot_docs,https://docs.bebop.xyz/
 rel_cow_services,CoW services,release,https://github.com/cowprotocol/services/releases.atom
 promo_hata,HATA (Malaysia),promo_my,https://www.hata.io/
 bot_gelato,Gelato,bot_docs,https://www.gelato.network/
+mm_hl_fees,Hyperliquid fees and maker rebates,mm_program,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees
+mm_aster,Aster docs,mm_program,https://docs.asterdex.com/
+mm_paradex,Paradex docs,mm_program,https://docs.paradex.trade/
+mm_orderly,Orderly docs,mm_program,https://orderly.network/docs/home
+mm_drift_fees,Drift trading fees,mm_program,https://docs.drift.trade/trading/trading-fees
+mm_edgex,edgeX docs,mm_program,https://edgex-1.gitbook.io/edgeX-documentation
