@@ -1748,6 +1748,7 @@ SR_RPC = {
     "ethereum": ["https://ethereum-rpc.publicnode.com", "https://eth.drpc.org", "https://eth.llamarpc.com", "https://cloudflare-eth.com"],
     "base": ["https://base-rpc.publicnode.com", "https://base.gateway.tenderly.co", "https://base.api.pocket.network", "https://mainnet.base.org"],
     "arbitrum": ["https://arbitrum-one-rpc.publicnode.com", "https://arb1.arbitrum.io/rpc", "https://arbitrum.drpc.org"],
+    "bnb": ["https://bsc-rpc.publicnode.com", "https://bsc.drpc.org", "https://bsc-dataseed.bnbchain.org"],
 }
 SR_FAILS = {}
 COW_TOKEN = "0xdef1ca1fb7fbcdc777520aa7f396b4e015f497ab"
@@ -2190,7 +2191,121 @@ def job_cowauction():
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "radarprobe_cowauction.json").write_text(json.dumps(out))
 
-JOBS = {"cowauction": job_cowauction, "radarprobe": job_radarprobe, "cow365": job_cow365, "cow361b": job_cow361b, "jlp363": job_jlp363, "cow361": job_cow361, "across362": job_across362, "sweep4d": job_sweep4d, "sweep4c": job_sweep4c, "sweep4b": job_sweep4b, "sweep4": job_sweep4, "addprice": job_addprice, "fred9": job_fred9, "batch10b": job_batch10b, "repair8": job_repair8, "sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+def job_cow367():
+    """#367: VouchRegister logs (solver -> bonding pool -> reward address), pool balances, solver names, Solvers page, forum."""
+    import urllib.parse
+    OUT.mkdir(parents=True, exist_ok=True)
+    meta, rows = {}, []
+    hosts = {"ethereum": ("eth.blockscout.com", "0xb422f2520b0b7FD86f7DA61b32Cc631A59ed7E8F"),
+             "gnosis": ("gnosis.blockscout.com", "0xAAA4De096D02AE21729aA31D967E148D4e3Ae501"),
+             "arbitrum": ("arbitrum.blockscout.com", "0xAAA4De096D02AE21729aA31D967E148D4e3Ae501"),
+             "base": ("base.blockscout.com", "0xAAA4De096D02AE21729aA31D967E148D4e3Ae501"),
+             "polygon": ("polygon.blockscout.com", "0xAAA4De096D02AE21729aA31D967E148D4e3Ae501")}
+    for chain, (host, addr) in hosts.items():
+        base = f"https://{host}/api/v2/addresses/{addr}/logs"
+        url, n, pages = base, 0, 0
+        while url and pages < 200:
+            st, d = _qget(url, timeout=60)
+            pages += 1
+            if not d or "items" not in d:
+                print(f"  {chain}: logs stopped (status {st}) at page {pages}", flush=True)
+                break
+            for it in d["items"]:
+                dec = it.get("decoded") or {}
+                rows.append({"chain": chain, "block": it.get("block_number"), "tx": it.get("transaction_hash") or it.get("tx_hash"),
+                             "topics": json.dumps(it.get("topics")), "data": it.get("data"), "method": dec.get("method_call"),
+                             "params": json.dumps(dec.get("parameters"))})
+                n += 1
+            nxt = d.get("next_page_params")
+            if not nxt:
+                break
+            url = base + "?" + urllib.parse.urlencode(nxt)
+            time.sleep(0.25)
+        meta[f"logs_{chain}"] = n
+        print(f"  {chain}: {n} VouchRegister logs", flush=True)
+    try:
+        b0 = _sblock_at("bnb", int(pd.Timestamp("2025-01-01", tz="UTC").timestamp()))
+        b1 = int(_srpc("bnb", "eth_blockNumber", []), 16)
+        logs, missed = _sscan("bnb", "0xAAA4De096D02AE21729aA31D967E148D4e3Ae501", [], b0, b1, w=5000, wmax=500000, budget_s=2700)
+        for lg in logs:
+            rows.append({"chain": "bnb", "block": int(lg["blockNumber"], 16), "tx": lg["transactionHash"], "topics": json.dumps(lg["topics"]),
+                         "data": lg["data"], "method": None, "params": None})
+        meta.update(logs_bnb=len(logs), bnb_missed=missed, bnb_range=[b0, b1])
+    except Exception as e:  # noqa: BLE001
+        meta["bnb_error"] = f"{type(e).__name__}: {str(e)[:200]}"
+        print(f"  bnb failed: {meta['bnb_error']}", flush=True)
+    vdf = pd.DataFrame(rows)
+    vdf.to_parquet(OUT / "cow367_vouch.parquet", index=False)
+    # bonding pools: any address in decoded params named like *pool*, plus topic-2 addresses (checked in analysis)
+    pools = set()
+    for r in rows:
+        for prm in json.loads(r["params"] or "null") or []:
+            if "pool" in str(prm.get("name", "")).lower():
+                pools.add(str(prm.get("value")).lower())
+        try:
+            t = json.loads(r["topics"])
+            if t and len(t) > 2 and t[2]:
+                pools.add("0x" + t[2][-40:].lower())
+        except Exception:  # noqa: BLE001
+            pass
+    pinfo = {}
+    for pool in sorted(pools)[:150]:
+        st, a = _qget(f"https://eth.blockscout.com/api/v2/addresses/{pool}", timeout=40)
+        st2, tb = _qget(f"https://eth.blockscout.com/api/v2/addresses/{pool}/token-balances", timeout=40)
+        pinfo[pool] = {"eth_wei": (a or {}).get("coin_balance"), "is_contract": (a or {}).get("is_contract"), "name": (a or {}).get("name"),
+                       "tokens": [{"sym": ((x.get("token") or {}).get("symbol")), "value": x.get("value"),
+                                   "dec": ((x.get("token") or {}).get("decimals")), "rate": ((x.get("token") or {}).get("exchange_rate"))}
+                                  for x in (tb or []) if isinstance(x, dict)][:30]}
+        time.sleep(0.2)
+    (OUT / "cow367_pools.json").write_text(json.dumps(pinfo))
+    print(f"  candidate pool addresses {len(pools)}; checked {len(pinfo)}", flush=True)
+    # solver names from the v1 solver-competition API
+    nrows = []
+    for net in ("mainnet", "xdai", "arbitrum_one", "base", "bnb", "polygon", "avalanche", "linea", "plasma", "ink"):
+        st, lat = _qget(f"https://api.cow.fi/{net}/api/v1/solver_competition/latest")
+        meta[f"v1_{net}"] = st
+        if not lat or not lat.get("auctionId"):
+            continue
+        L = int(lat["auctionId"])
+        for k in range(0, 2400, 30):
+            st, d = (st, lat) if k == 0 else _qget(f"https://api.cow.fi/{net}/api/v1/solver_competition/{L - k}")
+            for sol in (d or {}).get("solutions") or []:
+                nrows.append({"net": net, "solver": sol.get("solver"), "solver_addr": str(sol.get("solverAddress") or "").lower()})
+            time.sleep(0.1)
+    pd.DataFrame(nrows).drop_duplicates().to_parquet(OUT / "cow367_names.parquet", index=False)
+    print(f"  solver name rows {len(nrows)}", flush=True)
+    # Solvers page and CMS guesses, forum search
+    pages = {}
+    for u in ("https://cow.fi/solvers", "https://cow.fi/cow-protocol", "https://cms.cow.fi/api/solvers?populate=*&pagination[pageSize]=200",
+              "https://cms.cow.fi/api/solvers?pagination[pageSize]=200"):
+        st, raw = None, ""
+        try:
+            req = urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0 (compatible; long-convexity-research/1.0)"})
+            with urllib.request.urlopen(req, timeout=60) as r:
+                raw, st = r.read(8_000_000).decode("utf-8", "replace"), r.status
+        except urllib.error.HTTPError as e:
+            st = e.code
+        except Exception as e:  # noqa: BLE001
+            st = type(e).__name__
+        nd = _re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', raw, _re.S)
+        pages[u] = {"status": st, "bytes": len(raw), "next_data": (nd.group(1)[:3_000_000] if nd else None),
+                    "raw": raw[:2_000_000] if not nd else None}
+        print(f"  page {st} {len(raw)} {u}", flush=True)
+    (OUT / "cow367_pages.json").write_text(json.dumps(pages))
+    forum = {}
+    for q in ("bonding pool", "vouch", "solver introduction", "new solver", "reduced bonding pool", "solver onboarding", "CIP bonding"):
+        st, d = _qget(f"https://forum.cow.fi/search.json?q={urllib.parse.quote(q)}", timeout=60)
+        forum[q] = {"status": st, "topics": [{"id": t.get("id"), "title": t.get("title"), "slug": t.get("slug"), "created": t.get("created_at")}
+                                             for t in (d or {}).get("topics") or []],
+                    "posts": [{"topic_id": x.get("topic_id"), "user": x.get("username"), "blurb": x.get("blurb"), "created": x.get("created_at")}
+                              for x in (d or {}).get("posts") or []]}
+        time.sleep(1)
+    (OUT / "cow367_forum.json").write_text(json.dumps(forum))
+    (OUT / "cow367_meta.json").write_text(json.dumps(meta))
+    print(f"  meta {meta}", flush=True)
+
+JOBS = {"cow367": job_cow367, "cowauction": job_cowauction, "radarprobe": job_radarprobe, "cow365": job_cow365, "cow361b": job_cow361b, "jlp363": job_jlp363, "cow361": job_cow361, "across362": job_across362, "sweep4d": job_sweep4d, "sweep4c": job_sweep4c, "sweep4b": job_sweep4b, "sweep4": job_sweep4, "addprice": job_addprice, "fred9": job_fred9, "batch10b": job_batch10b, "repair8": job_repair8, "sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys
