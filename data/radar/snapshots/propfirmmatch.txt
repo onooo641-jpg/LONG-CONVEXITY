@@ -204,7 +204,7 @@ Favorite 0/5
 New
 All Firms
 Firms 15 results
-Data updated 1 min ago
+Data updated 2 min ago
 Firm
 Rank / Reviews
 Country / Years
@@ -248,7 +248,7 @@ $400K
 Firm
 Aq
 AquaFunded
-17115
+17116
 4.4
 344
 reviews
@@ -370,7 +370,7 @@ Firm
 10
 Cr
 Crypto Fund Trader
-39662
+39663
 4.2
 113
 reviews

@@ -676,7 +676,7 @@ O split de recompensas padrão é de 80% . Com o add-on correspondente, o split 
 Qual é o saque mínimo de uma conta Instant Funding?
 Você deve gerar pelo menos 3% do saldo inicial da sua conta em lucro antes da aplicação do split de recompensas. Este é um limite mínimo de lucro, e não um valor mínimo líquido de saque.
 Com que frequência posso solicitar um saque em uma conta Instant Funding?
-Os saques das contas Instant Funding estão disponíveis sob demanda . Você pode solicitar um saque assim que atingir o limite de lucro de 3% e um Consistency Score de 20% ou menos .
+Os saques das contas Instant Funding estão disponíveis a cada 10 dias úteis . Seu primeiro saque fica disponível 10 dias úteis após seu primeiro trade na conta financiada simulada. Cada período seguinte de 10 dias úteis começa com seu primeiro trade após o saque anterior. Você ainda precisa atingir o limite de lucro de 3% e um Consistency Score de 20% ou menos .
 Instant Mini Funding
 O que é o Instant Mini Funding?
 O Instant Mini Funding dá acesso direto a uma conta financiada simulada por 24 horas: sem avaliação, sem desafios e sem espera para se qualificar.

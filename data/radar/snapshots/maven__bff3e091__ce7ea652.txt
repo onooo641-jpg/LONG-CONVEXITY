@@ -676,7 +676,7 @@ El reparto de recompensas estándar es del 80% . Con el add-on correspondiente, 
 ¿Cuál es el retiro mínimo de una cuenta Instant Funding?
 Debes generar al menos el 3% del balance inicial de tu cuenta en beneficio antes de aplicar el reparto de recompensas. Es un umbral mínimo de beneficio, no un monto mínimo neto de pago.
 ¿Con qué frecuencia puedo solicitar un pago en una cuenta Instant Funding?
-Los pagos de las cuentas Instant Funding están disponibles a demanda . Puedes solicitar un retiro cuando cumplas el umbral de beneficio del 3% y un Consistency Score del 20% o menos .
+Los pagos de las cuentas Instant Funding están disponibles cada 10 días hábiles . Tu primer pago está disponible 10 días hábiles después de tu primera operación en la cuenta financiada simulada. Cada periodo siguiente de 10 días hábiles comienza con tu primera operación después del pago anterior. Además, debes cumplir el umbral de beneficio del 3% y un Consistency Score del 20% o menos .
 Instant Mini Funding
 ¿Qué es Instant Mini Funding?
 Instant Mini Funding te da acceso directo a una cuenta financiada simulada durante 24 horas: sin evaluación, sin desafíos y sin esperar para calificar.

@@ -5,17 +5,17 @@ Baseline date: 2026-11-21
 ## Counts
 - S2 protocols: 9100
 - S1 reward pools: 1300
-- S3 Merkl live: 696
+- S3 Merkl live: 695
 - S4 governance hits: 56
-- pages fetched ok: 1776
-- pages total: 1828
+- pages fetched ok: 1779
+- pages total: 1827
 - candidates surviving to ranking: 84
 - of which all five filter parts verified: 20
-- near-miss rows total: 8672
+- near-miss rows total: 8683
 
 ## Near-miss by stage/reason (top)
 
-- first_pass / below threshold: 7809
+- first_pass / below threshold: 7820
 - quality / DefiLlama outlier flag: 276
 - filter / F4 price exposure, needs hedge; F5 TVL < $1,000,000: 234
 - filter / F4 price exposure, needs hedge: 151
@@ -95,7 +95,7 @@ Baseline date: 2026-11-21
 - magpiexyz.eth: [closed] MIP #102 – Cease MGP Emissions to the mWOM Pools https://snapshot.org/#/magpiexyz.eth/proposal/0x4dcea4bbe438757d0fad375ea473b8f221730e6a4622e98e158a29fe4c9ac6f7
 - qbio-phase2.eth: [closed] DP37 - Three-Month Continuation Grant Agreement https://snapshot.org/#/qbio-phase2.eth/proposal/0x9e8dbe408a08debd37a4b8ab66f6b61382cc59e4dc7fd9db90e597dec6a8d2a5
 
-## Prop-firm rule/price changes today: 132 pages
+## Prop-firm rule/price changes today: 150 pages
 
 - **Topstep** https://www.topstep.com/: In Payouts / NEXT STOP: $2 BILLION / Instant Cash Payouts*
 - **MyFundedFutures** https://myfundedfutures.com/: Meet Signature: $5K, $10K and $20K accounts. Request all your profits anytime, with a static Max Loss Limit that never moves. / Five plans, each with clear rules. Compare cost, account size, drawdown model, payout speed, and profit split to find what is best for you. / Anytime payouts, static MLL
@@ -141,8 +141,18 @@ Baseline date: 2026-11-21
 - **DayTraders** https://daytraders.com/help/articles/17704123-taxes-and-payout-documents: How to Request a Payout
 - **DayTraders** https://daytraders.com/help/articles/17697924-live-scaling: Live Payouts
 - **DayTraders** https://daytraders.com/help/articles/18352323-holiday-calendar-2027: EOD Payouts
+- **MyFundedFutures** https://myfundedfutures.com/plans/rapid: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
+- **MyFundedFutures** https://myfundedfutures.com/plans/rapid-eod: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
+- **MyFundedFutures** https://myfundedfutures.com/plans/pro: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
+- **E8 Markets** https://e8markets.com/e8-traders-stories: E8 Markets maintains one of the highest average payouts at $3,216 per payout. We provide top-notch support and superb trading conditions. Tr / 4h ago $5,000 Classic Markets +$166 / 7h ago $5,000 Classic Markets +$251
+- **Maven Trading** https://maventrading.com/faqs: Payouts for Instant Funding Accounts are available every 10 business days . Your first payout is available 10 business days after your first
+- **Traders Launch** https://traderslaunch.com/results: Results & Payouts | Traders Launch
+- **Traders Launch** https://traderslaunch.com/payout-rules: Payout Rules | Traders Launch
+- **MyFundedFutures** https://myfundedfutures.com/plans/signature/leaderboard: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
+- **Maven Trading** https://maventrading.com/es/faqs: Los pagos de las cuentas Instant Funding están disponibles cada 10 días hábiles . Tu primer pago está disponible 10 días hábiles después de 
+- **Maven Trading** https://maventrading.com/pt/faqs: Os saques das contas Instant Funding estão disponíveis a cada 10 dias úteis . Seu primeiro saque fica disponível 10 dias úteis após seu prim
 
-## Page changes today: 143
+## Page changes today: 162
 
 - Topstep (firm) https://www.topstep.com/: +273 / -35 lines
 - Topstep (firm) https://help.topstep.com/en/: +1 / -1 lines
@@ -185,7 +195,7 @@ Baseline date: 2026-11-21
 - Topstep (firm_sub) https://help.topstep.com/en/articles/8284197-trading-combine-parameters: +1 / -1 lines
 - MyFundedFutures (firm_sub) https://help.myfundedfutures.com/en/: +0 / -1 lines
 
-## Non-prop leads (docs/PREREG_RADAR_NONPROP_20261124.md): new today 21
+## Non-prop leads (docs/PREREG_RADAR_NONPROP_20261124.md): new today 23
 
 ### Stablecoin depegs (7)
 - apxUSD: apxUSD at $0.9665, circulating $249,906,691 https://defillama.com/stablecoin/apxusd
@@ -195,6 +205,10 @@ Baseline date: 2026-11-21
 - USDR: Real USD at $0.3976, circulating $17,591,400 https://defillama.com/stablecoin/real%20usd
 - satUSD: River Stablecoin at $0.9767, circulating $17,352,989 https://defillama.com/stablecoin/river%20stablecoin
 - ALUSD: Alchemix USD at $0.9620, circulating $10,311,597 https://defillama.com/stablecoin/alchemix%20usd
+
+### Audit contest prizes (2)
+- cantina: Morpho Midnight Adapter — prize $400,000 (live) https://cantina.xyz/competitions/78a6e652-de09-435f-918d-471243508009
+- cantina: Revert v4lend Competition — prize $50,000 (escalations) https://cantina.xyz/competitions/e275368c-547d-4d91-a418-053ad31082a8
 
 ### Governance: incentives / bot programmes (14)
 - aave: [Direct-To-AIP] Umbrella Reward Renewal and Parameter Update on Aave V3 Core https://governance.aave.com/t/direct-to-aip-umbrella-reward-renewal-and-parameter-update-on-aave-v3-core/26462
@@ -215,7 +229,8 @@ Baseline date: 2026-11-21
 ### Source health
 - N1 stablecoins: 459
 - N2 Hyperliquid perps: 235
-- N3 CoW payouts (21d): 658 transfers, COW price 0.094631306, $657,672 to 53 recipients
+- N3 CoW payouts (21d): 658 transfers, COW price 0.09468623999999999, $658,054 to 53 recipients
 - N5 forums answering: 12/12
-- N6 raises listed: 0
-- N7 derivatives venues: 0
+- N4 Cantina item keys: allowedSeverities,cantinaTriaged,company,createdAt,currencyCode,entryFee,id,instructions,joined,kind,kycRequired,name,status,timeframe,totalFindings,totalRewardPot,url
+- N4 contests listed: 30 Sherlock, 146 Cantina
+- N7 derivatives venues (CoinGecko): 100; BTC $60496.8166

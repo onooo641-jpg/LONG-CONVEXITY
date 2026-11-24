@@ -676,7 +676,7 @@ The standard reward split is 80% . With the applicable add-on, the reward split 
 What is the Minimum Withdrawal for an Instant Funding Account?
 You must earn at least 3% of your initial account balance in profit before the reward split is applied. This is a minimum profit threshold, rather than a minimum net payout amount.
 How Often Can I Request a Payout for an Instant Funding Account?
-Payouts for Instant Funding Accounts are available on demand . You may request a withdrawal once you meet the required 3% profit threshold and 20% Consistency Score or below .
+Payouts for Instant Funding Accounts are available every 10 business days . Your first payout is available 10 business days after your first trade on the Simulated Funded Account. Each subsequent 10-business-day period starts with your first trade after the previous payout. You still need to meet the 3% profit threshold and a 20% Consistency Score or below .
 Instant Mini Funding
 What is Instant Mini Funding?
 Instant Mini Funding gives you direct access to a Simulated Funded Account for 24 hours—no evaluation, no challenges, and no waiting to qualify.
