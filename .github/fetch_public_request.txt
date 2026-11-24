@@ -1,3 +1,2 @@
-# jobs for scripts/fetch_public.py (PREREG_LIQUIDATIONS_20261120)
-liq_comet_timing
-# rerun 2: venue = most events (largest gross)
+# jobs for scripts/fetch_public.py (PREREG_LIQ_FLASHBLOCKS_20261124)
+liq_flashblocks

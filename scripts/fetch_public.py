@@ -1823,7 +1823,31 @@ for _c in LIQ_CHAINS:
     globals()[f"job_liq_{_c}"] = (lambda c: (lambda: job_liq_chain(c)))(_c)
 
 
-JOBS = {"ipo2": job_ipo2, "iponews": job_iponews, "ipo": job_ipo, "myxsnap": job_myxsnap, "batch2": job_batch2, "hl2023d": job_hl2023d, "hl2023": job_hl2023, "hl": job_hl, "llama_lend": job_llama_lend, "llama_pools": job_llama_pools,
+def job_liq_flashblocks():
+    """PREREG_LIQ_FLASHBLOCKS_20261124: poll pending vs latest on the free public Base endpoint for 120 s."""
+    u = "https://mainnet.base.org"
+    n = err = ahead = 0
+    txs = {}
+    t0 = time.time()
+    while time.time() - t0 < 120:
+        n += 1
+        try:
+            p = rpc([u], "eth_getBlockByNumber", ["pending", False], tries=1)
+            l = rpc([u], "eth_getBlockByNumber", ["latest", False], tries=1)
+            pn, ln = int(p["number"], 16), int(l["number"], 16)
+            ahead += pn == ln + 1
+            txs.setdefault(pn, set()).add(len(p["transactions"]))
+        except Exception as e:  # noqa: BLE001
+            err += 1
+            if err <= 3:
+                print("err", str(e)[:150], flush=True)
+        time.sleep(0.15)
+    multi = sum(1 for v in txs.values() if len(v) >= 3)
+    print(f"flashblocks probe: polls {n} errors {err} ({100*err/max(n,1):.0f}%) pending==latest+1 in {ahead} ({100*ahead/max(n-err,1):.0f}%) blocks with >=3 distinct pending tx counts {multi} of {len(txs)}")
+    print("max distinct counts in one block:", max([len(v) for v in txs.values()] + [0]))
+
+
+JOBS = {"liq_flashblocks": job_liq_flashblocks, "ipo2": job_ipo2, "iponews": job_iponews, "ipo": job_ipo, "myxsnap": job_myxsnap, "batch2": job_batch2, "hl2023d": job_hl2023d, "hl2023": job_hl2023, "hl": job_hl, "llama_lend": job_llama_lend, "llama_pools": job_llama_pools,
         "llama_prices": job_llama_prices, "poly": job_poly,
         "liq_probe": job_liq_probe, "liq_diag": job_liq_diag, "liq_diag2": job_liq_diag2, "liq_diag3": job_liq_diag2, "liq_diag4": job_liq_diag4, "liq_comet_timing": job_liq_comet_timing, "liq_secretcheck": job_liq_secretcheck, "liq_pxdiag": job_liq_pxdiag, "liq_replay_morphobase": job_liq_morpho_replay, "liq_morpho_replay_diag": job_liq_morpho_replay_diag, "liq_morphobase_pilot": lambda: job_liq_morpho("morphobase_pilot"), "liq_morphobase": lambda: job_liq_morpho("morphobase"), "liq_morphobase_s0": lambda: job_liq_morpho("morphobase_s0"),
         "liq_morphobase_s1": lambda: job_liq_morpho("morphobase_s1"), "liq_morphobase_s2": lambda: job_liq_morpho("morphobase_s2"), **{f"liq_replay_{c}": globals()[f"job_liq_replay_{c}"] for c in ("arbitrum", "base", "avalanche", "polygon", "optimism")}, "liq_decimals": job_liq_decimals, **{f"liq_prices_{c}": _liq_prices_job(c) for c in LIQ_CHAINS}, **{f"liq_{c}_es": _liq_es_job(c) for c in LIQ_ES_ID}, **{f"liq_{c}": globals()[f"job_liq_{c}"] for c in LIQ_CHAINS}}
