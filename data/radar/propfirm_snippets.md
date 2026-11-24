@@ -1,4 +1,4 @@
-# Prop-firm automation / country sentences (2026-11-23)
+# Prop-firm automation / country sentences (2026-11-24)
 
 ## Alpha Capital Group — https://alphacapitalgroup.uk/
 - AUTO: Expert Advisors supported
@@ -1553,12 +1553,12 @@
 - COUNTRY: country or in any manner prohibited by applicable laws, restrictions, or regulations.
 
 ## DayTraders — https://daytraders.com/
-- AUTO: Payouts Automated approval
-- AUTO: Fast, automated payouts
-- AUTO: / 03 Automated Payout Approval
-- AUTO: Our payout approval process is transparent, automated, and lightning-fast
+- AUTO: Payouts Automated review systems
+- AUTO: Fast, automated systems
+- AUTO: / 03 Automated Payout Reviews
+- AUTO: Our automated review system checks payout requests quickly and transparently
 - AUTO: Our in-house engine runs the automation and risk controls for every Day Traders account
-- AUTO: Imagine payouts that are automatically approved , fast, seamless, and stress-free.
+- AUTO: Imagine payouts backed by an automated review system : fast, seamless, and stress-free.
 - AUTO: STAY INFORMED Get updates and alerts on up-to-the-moment market conditions.
 
 ## DayTraders — https://daytraders.com/daytraders-vs-funded-next
@@ -1696,6 +1696,14 @@
 
 ## DayTraders — https://daytraders.com/help/articles/17704102-logging-in-and-credentials
 - AUTO: On your Dashboard , assigned automatically
+
+## DayTraders — https://daytraders.com/help/articles/17704103-who-can-sign-up
+- COUNTRY: Restricted countries
+- COUNTRY: If you are a citizen of an OFAC (Office of Foreign Assets Control) or restricted country, we can't provide services to you, wherever you are located.
+- COUNTRY: All transactions attempted while in a restricted country will be blocked.
+- COUNTRY: Traveling to a restricted country
+- COUNTRY: While you're physically in a restricted country, you can't buy new accounts, add accounts or activate new services .
+- COUNTRY: Restricted countries
 
 ## DayTraders — https://daytraders.com/help/articles/17704104-billing
 - AUTO: Failed, Inactive and canceled accounts stop rebilling automatically, but check your billing section to confirm.
@@ -2384,6 +2392,11 @@
 - AUTO: Is tick scalping legal?
 - COUNTRY: Are any countries restricted on FundedNext CFDs?
 
+## FundedNext Futures — https://fundednext.com/aml-policy
+- AUTO: In adherence to the legal obligations, a meticulous manual approval process is diligently undertaken for each transaction, employing the principles of due diligence.
+- AUTO: Within GrowthNext F.Z.E., a distinct and dedicated risk management unit exists, tasked with the meticulous manual examination of individual client profiles.
+- AUTO: conducts a meticulous manual review and approval of each transaction, applying the principles of due diligence.
+
 ## FundedNext Futures — https://fundednext.com/cfd-challenge-terms
 - AUTO: Risk Controls; Automatic Restrictions; Platform Integrity
 - AUTO: The Customer acknowledges that risk controls and enforcement measures may be applied automatically, including restricting trading and/or disabling functions when loss limits are reached.
@@ -2401,6 +2414,13 @@
 - AUTO: Without limitation, prohibited patterns may include excessive one-sided exposure, repeated "all-in" bets, grid trading, tick scalping, unrealistic order patterns, artificial trade fragmentation, account rolling, abusive patterns, or any comparable pattern which the Provider reasonably determines to be inconsistent with the evaluation purpose and indicative of abuse, manipulation, or circumvention.
 - AUTO: The Customer must not interfere with, disrupt, probe, scan, test, or compromise the security, stability, or integrity of the Website, Platform, or any Provider or Third Party systems, and must not introduce malware, bots, harmful code, or perform any action that could impair or degrade operations.
 - AUTO: The Provider may apply measures, including through automated or manual systems, it deems appropriate to protect programme integrity, including warnings, restrictions, suspensions, profit adjustments, disqualification, termination, denial of progression, and permanent bans, and/or the withholding, suspension, adjustment, reversal, denial, or set-off of any Performance Reward.
+
+## FundedNext Futures — https://fundednext.com/cookie-policy
+- AUTO: Most browsers automatically accept cookies by default.
+- AUTO: Enabling these cookies is automatic and cannot be turned off, as they are necessary for the operation of the Website.
+- AUTO: In the case of automated processing based on your consent or performance of the contract, you have the right to receive the data in a structured, commonly used and machine-readable format and to have them transmitted by us to another personal data controller.
+- AUTO: Right not to be the subject of automated decision-making
+- AUTO: Except where processing is necessary for entering into, or performance of, a contract, where this is permitted by applicable law, or based on your express consent, you have the right not to be the subject of any decision which is based solely on automated processing, including profiling, which produces legal effects concerning you or similarly affects you to a significant extent.
 
 ## FundedNext Futures — https://fundednext.com/futures-challenge-terms
 - AUTO: Upon reaching or exceeding the applicable Maximum Loss Limit (MLL) or Daily Loss Limit (DLL), FundedNext reserves the right to automatically restrict trading activity on the affected account for a certain period of time or indefinitely.
@@ -2456,61 +2476,6 @@
 - AUTO: the right to request review in relation to certain automated decisions, where applicable law so provides; and
 
 ## FundedNext Futures — https://fundednext.com/terms-of-service
-- AUTO: Participation in one modality (for example, CFDs) does not automatically grant the right of access, eligibility, phase migration, benefits or Performance Rewards in another modality (for example, Futures), unless expressly indicated by the Provider.
-- AUTO: The User may not allow third parties to operate the Account on their behalf, nor use account management services, credential sharing, third-party identities, bots, scripts or automated systems not expressly authorised by the Provider.
-- AUTO: To preserve the integrity of the Services and prevent abuse, the Provider may impose limits on the number of Orders/Accounts that a User may purchase, maintain or operate, including on the basis of reasonable linkage indicators (for example, related accounts, common control, shared payment methods, same residence, IP address, device or other connection signals).
-- AUTO: The Provider may supplement, detail and clarify the Trading Rules through FAQs, guides, manuals, operational notices and communications on the Platform, provided that such supplements do not contradict the contractual core of the purchased product.
-- AUTO: (h) Copy Trading; Mirroring; Signal Following (Without Authorisation).
-- AUTO: Copy trading, mirroring, signal following, trade replication or any substantially similar activity (whether manual or automated) is prohibited unless expressly authorised in writing by the Provider and permitted under the applicable programme rules.
-- AUTO: For the avoidance of doubt, any replication of another person's trading activity, or systematic execution of trades based primarily on external signals, shared instructions, or third-party trade streams, may be treated as prohibited copying/mirroring.
-- AUTO: The User must not sell, assign, lease, sublicense, share credentials, grant remote access, permit use by third parties, or use account management services, unauthorised copy trading, "passing services", or any third-party management arrangement (whether paid or unpaid).
-- AUTO: This includes use of VPNs, proxies, emulators, device spoofing, automation intended to circumvent controls, or any similar method.
-- AUTO: (m) Unauthorised Automation; HFT; Mass-Order Behaviour; Platform Overload.
-- AUTO: The User must not use bots, scripts, algorithms, software, AI agents, or automated methods not expressly authorised by the Provider.
-- AUTO: Even where certain tools may be permitted under programme rules, the User must not use automation, high-frequency execution, mass-order behaviour, or mass data entry intended to manipulate platform behaviour, overload systems, interfere with monitoring, degrade performance, or create an unfair advantage.
-- AUTO: Without limitation, prohibited patterns may include excessive one-sided exposure, repeated "all-in" bets, grid trading, tick scalping, unrealistic order patterns, artificial trade fragmentation, account rolling, or any comparable pattern which the Provider reasonably determines to be inconsistent with the evaluation purpose and indicative of abuse, manipulation, or circumvention.
-- AUTO: The User must not interfere with, disrupt, probe, scan, test, or compromise the security, stability, or integrity of the Website, Platform, or any Provider or Third Party systems, and must not introduce malware, bots, harmful code, or perform any action that could impair or degrade operations.
-- AUTO: In making such determinations, the Provider may take into account, without limitation, trading records, account activity, device and access data, payment records, technical indicators, compliance findings, antifraud signals, account linkage analysis, behavioural patterns and any other information the Provider reasonably considers relevant.
-- AUTO: The mere achievement of numerical targets, performance parameters or positive results in Simulated Trading does not, in itself, create an automatic entitlement to any Performance Reward.
-- AUTO: (c) engaging in scraping, crawling, harvesting, data mining or using robots, scripts or automated systems to access the Website/Services, extract data, circumvent rules, test limits, exploit latencies or manipulate evaluations — except for the use of automation (EAs/algorithms) only when expressly permitted by the Trading Rules and within the authorised platform;
-- AUTO: Such changes shall not create an automatic right to indemnification, refund or compensation for the User, except where mandatory laws provide otherwise.
-- AUTO: (e) application of enforcement measures, automatic blocks, invalidations, restrictions, corrections or adjustments arising from breach of these Terms, the Trading Rules, the Programme Parameters, compliance policies or legal requirements;
-- AUTO: (e) exploitation of technical failures, latency, feed inconsistencies, prohibited automation, prohibited arbitrage or any Prohibited Conduct;
-- AUTO: The Provider may adopt cumulative and progressive measures, including partial suspension, automatic blocks, functional restrictions and permanent termination.
-- AUTO: Termination alone shall not create any automatic right to refund, compensation or Performance Reward payment, unless expressly provided in an applicable specific policy or required by mandatory law.
-- AUTO: The User understands and accepts that the Provider may use automated systems and tools incorporating artificial intelligence to support the operation, monitoring, and technical support of the Services.
-- AUTO: Unless unequivocally proven otherwise, Formal Notices sent by e-mail shall be deemed received on the date and time of sending, according to the sender's electronic records, provided that no automatic permanent delivery failure message ("hard bounce") is generated.
-- COUNTRY: "Restricted Jurisdictions" means any country, territory, jurisdiction, locality or category of persons in respect of which the Provider does not offer or restricts access to one or more Services (including specifically CFDs and/or Futures products), for regulatory, compliance, sanctions, risk mitigation, Third Party requirements (including PSPs), or commercial decision reasons.
-
-## FundedNext Futures — https://fundednext.com/usa/aml-policy
-- AUTO: In adherence to the legal obligations, a meticulous manual approval process is diligently undertaken for each transaction, employing the principles of due diligence.
-- AUTO: Within GrowthNext F.Z.E., a distinct and dedicated risk management unit exists, tasked with the meticulous manual examination of individual client profiles.
-- AUTO: conducts a meticulous manual review and approval of each transaction, applying the principles of due diligence.
-
-## FundedNext Futures — https://fundednext.com/usa/cookie-policy
-- AUTO: Most browsers automatically accept cookies by default.
-- AUTO: Enabling these cookies is automatic and cannot be turned off, as they are necessary for the operation of the Website.
-- AUTO: In the case of automated processing based on your consent or performance of the contract, you have the right to receive the data in a structured, commonly used and machine-readable format and to have them transmitted by us to another personal data controller.
-- AUTO: Right not to be the subject of automated decision-making
-- AUTO: Except where processing is necessary for entering into, or performance of, a contract, where this is permitted by applicable law, or based on your express consent, you have the right not to be the subject of any decision which is based solely on automated processing, including profiling, which produces legal effects concerning you or similarly affects you to a significant extent.
-
-## FundedNext Futures — https://fundednext.com/usa/privacy-policy
-- AUTO: Automated Processing, Profiling and Significant Decisions
-- AUTO: 5.2 Automatically Through Your Use of the Services
-- AUTO: We collect certain technical, device, usage, behavioural, monitoring and activity data automatically when you access or use our website, systems, platform environment, dashboards, portals, communications interfaces or other parts of the Services.
-- AUTO: We process Personal Data to send service-related communications, account notices, legal notices, operational alerts, security messages, compliance-related requests and other communications necessary for the administration or protection of the Services and our relationship with you.
-- AUTO: 6.12 Phone-Based, SMS and Automated Outreach
-- AUTO: Where permitted by applicable law, we may use the telephone number or other communication details that you provide to us to contact you regarding service matters, account administration, security, support, operational matters, programme updates, marketing communications or related outreach, including through manual, automated or AI-assisted means.
-- AUTO: timing patterns, behavioural indicators and usage signals;
-- AUTO: suspicious, irregular, prohibited or escalated activity signals; and
-- AUTO: For the avoidance of doubt, FundedNext may analyse account activity, behavioural patterns, technical signals, device associations and related data to detect direct or indirect attempts to misuse the Services, circumvent our rules, exploit the platform environment unfairly, obtain benefits improperly or interfere with the lawful and intended operation of the Services.
-- AUTO: Automated Processing, Profiling and Significant Decisions
-- AUTO: Such processing may include profiling based on technical, behavioural, transactional, usage, verification, payout, account-linkage or payment-related signals.
-- AUTO: Where applicable data protection law grants you rights in relation to decisions based solely on automated processing that produce legal or similarly significant effects, FundedNext will implement such safeguards as are required by law, which may include review procedures and, where applicable, the opportunity to request human intervention.
-- AUTO: Nothing in this Notice shall be interpreted as limiting FundedNext's right to implement reasonable and proportionate automated or semi-automated controls designed to protect the Services, prevent fraud, preserve evidence, safeguard operational integrity, manage payment or security risks, or enforce contractual restrictions and platform rules.
-- AUTO: the right to request review in relation to certain automated decisions, where applicable law so provides; and
-
-## FundedNext Futures — https://fundednext.com/usa/terms-of-service
 - AUTO: Participation in one modality (for example, CFDs) does not automatically grant the right of access, eligibility, phase migration, benefits or Performance Rewards in another modality (for example, Futures), unless expressly indicated by the Provider.
 - AUTO: The User may not allow third parties to operate the Account on their behalf, nor use account management services, credential sharing, third-party identities, bots, scripts or automated systems not expressly authorised by the Provider.
 - AUTO: To preserve the integrity of the Services and prevent abuse, the Provider may impose limits on the number of Orders/Accounts that a User may purchase, maintain or operate, including on the basis of reasonable linkage indicators (for example, related accounts, common control, shared payment methods, same residence, IP address, device or other connection signals).
@@ -2772,7 +2737,7 @@
 - AUTO: See Copy trading and signals .
 - AUTO: Your followers copy each trade automatically.
 - AUTO: Moving from Phase 1 to Phase 2 is automatic.
-- AUTO: This includes trades closed manually or automatically through:
+- AUTO: A trade closed during the window by Stop Loss, by Take Profit or manually
 - AUTO: Utilize any third-party strategy, Expert Advisor, off-the-shelf strategy or one marketed to pass assessment accounts will lead to a breach of your account or reward.
 - AUTO: Only EAs you developed yourself are allowed, and our team has the right to request proof of ownership, such as the source code, at any time
 - AUTO: Utilize one strategy to pass an assessment and then utilizing a different strategy in a simulated funded account, refers only to the use of EA in assessment and manual trading in simulated Funded stage and vice versa, as determined by GoatFundedTrader in its sole discretion
@@ -3171,22 +3136,6 @@
 - AUTO: No se permiten los EAs en Maven Trading.
 - AUTO: El uso de un EA resultará en la no aprobación del desafío, y su uso repetido puede causar la suspensión de la cuenta.
 
-## Maven Trading — https://maventrading.com/es/faqs
-- AUTO: ¿Está permitido el copy trading?
-- AUTO: El copy trading está permitido solo cuando copias tus propias operaciones entre tus cuentas.
-- AUTO: Está prohibido usar un EA para copy trading .
-- AUTO: Las operaciones deben copiarse manualmente .
-- AUTO: ¿Qué es el scalping excesivo?
-- AUTO: El scalping excesivo consiste en mantener más del 50% de tus operaciones por menos de 60 segundos (1 minuto) .
-- AUTO: Ejemplo de scalping excesivo:
-- AUTO: Esto se considera scalping excesivo y no está permitido.
-- AUTO: Trading de alta frecuencia (HFT): Explotar ineficiencias del trader demo mediante estrategias de alta frecuencia.
-- AUTO: Scalping de ticks: Explotar pequeños movimientos de precio a nivel de tick.
-- AUTO: Copy trading: Copiar operaciones de otra persona.
-- AUTO: Expert Advisors (EAs): Los EAs y el trading automatizado están prohibidos en todas las plataformas de Maven.
-- AUTO: Todas las operaciones deben ejecutarse manualmente.
-- AUTO: Sin uso de EAs ni scripts
-
 ## Maven Trading — https://maventrading.com/es/terms-and-conditions
 - AUTO: 4.1 Opere de forma manual e independiente.
 - AUTO: Se prohíben los EA, bots, scripts y el trading automatizado, incluida la copia automatizada.
@@ -3196,34 +3145,6 @@
 - AUTO: Esto incluye la apertura o el cierre manual, la ejecución de órdenes pendientes, la ejecución de stop-loss y take-profit y el cierre automático por objetivo de ganancia.
 - AUTO: Se prohíben la cobertura inversa (reverse hedging), la copia de operaciones entre cuentas (account mirroring), los EA y los scripts.
 - AUTO: El trading debe ser manual e independiente.
-
-## Maven Trading — https://maventrading.com/faqs
-- AUTO: The window also covers pending orders, stop-loss and take-profit execution, and automatic closure on reaching the challenge profit target.
-- AUTO: Is copy trading allowed?
-- AUTO: Copy trading is allowed only when copying your own trades between your accounts.
-- AUTO: Using an EA for copy trading is prohibited .
-- AUTO: Trades must be copied manually .
-- AUTO: Using another person's ID, email address, or payment card may result in automatic KYC rejection.
-- AUTO: What is excessive scalping?
-- AUTO: Excessive scalping means holding more than 50% of your trades for less than 60 seconds (1 minute) .
-- AUTO: Example of Excessive Scalping:
-- AUTO: This is considered excessive scalping and is not allowed.
-- AUTO: High-Frequency Trading (HFT): Exploiting demo-trader inefficiencies through high-frequency strategies.
-- AUTO: Tick Scalping: Exploiting small tick-level price movements.
-- AUTO: Copy Trading: Copying trades from another individual.
-- AUTO: Expert Advisors (EAs): EAs and automated trading are prohibited across all Maven platforms.
-- AUTO: All trades must be executed manually.
-- AUTO: Once you reach the profit target, your trades will automatically close, and your account will be disabled and placed under review.
-- AUTO: The Red Folder news restrictions in the General FAQ apply to this Challenge and Simulated Funded Account, including pending orders, stop-losses, take-profits and automatic profit-target closures.
-- AUTO: The Red Folder news restrictions in the General FAQ apply to this Challenge and Simulated Funded Account, including pending orders, stop-losses, take-profits and automatic profit-target closures.
-- AUTO: After you complete the final phase and satisfy all requirements, your trades will automatically close, and your account will be disabled and placed under review.
-- AUTO: The Red Folder news restrictions in the General FAQ apply to this Challenge and Simulated Funded Account, including pending orders, stop-losses, take-profits and automatic profit-target closures.
-- AUTO: Once you reach the profit targets, your trades will automatically close, and your account will be disabled and placed under review.
-- AUTO: The Red Folder news restrictions in the General FAQ apply to this Challenge and Simulated Funded Account, including pending orders, stop-losses, take-profits and automatic profit-target closures.
-- AUTO: After you complete the final phase and satisfy all requirements, your trades will automatically close, and your account will be disabled and placed under review.
-- AUTO: Once you reach the profit targets, your trades will automatically close, and your account will be disabled and placed under review.
-- AUTO: No use of EAs or scripts
-- COUNTRY: Restricted Countries: Belarus, Cuba, Iran, Myanmar, North Korea, Russia, Saint Lucia, Syria, Venezuela, and the Crimea (including Sevastopol), Donetsk, Kherson, Luhansk and Zaporizhzhia regions of Ukraine.
 
 ## Maven Trading — https://maventrading.com/pricing
 - COUNTRY: Restricted Countries: Belarus, Cuba, Iran, Myanmar, North Korea, Russia, Saint Lucia, Syria, Venezuela, and the Crimea (including Sevastopol), Donetsk, Kherson, Luhansk and Zaporizhzhia regions of Ukraine.
@@ -3244,27 +3165,6 @@
 - AUTO: Uso de Software de Negociação Automatizada (EA)
 - AUTO: Os EAs não são permitidos na Maven Trading.
 - AUTO: O uso de um EA resultará em reprovação no desafio, e o uso repetido pode causar suspensão da conta.
-
-## Maven Trading — https://maventrading.com/pt/faqs
-- AUTO: É permitido fazer copy trading?
-- AUTO: O copy trading é permitido apenas quando você copia seus próprios trades entre suas contas.
-- AUTO: É proibido usar um EA para copy trading .
-- AUTO: Os trades devem ser copiados manualmente .
-- AUTO: O que é scalping excessivo?
-- AUTO: Scalping excessivo significa manter mais de 50% dos seus trades por menos de 60 segundos (1 minuto) .
-- AUTO: Exemplo de scalping excessivo:
-- AUTO: Isso é considerado scalping excessivo e não é permitido.
-- AUTO: Trading de alta frequência (HFT): Explorar ineficiências do trader demo por meio de estratégias de alta frequência.
-- AUTO: Scalping de ticks: Explorar pequenos movimentos de preço no nível de tick.
-- AUTO: Copy trading: Copiar trades de outra pessoa.
-- AUTO: Expert Advisors (EAs): EAs e trading automatizado são proibidos em todas as plataformas da Maven.
-- AUTO: Todos os trades devem ser executados manualmente.
-- AUTO: Quando você atingir o objetivo de lucro, seus trades serão fechados automaticamente e sua conta será desativada e colocada em revisão.
-- AUTO: Depois que você concluir a fase final e cumprir todos os requisitos, seus trades serão fechados automaticamente e sua conta será desativada e colocada em revisão.
-- AUTO: Quando você atingir os objetivos de lucro, seus trades serão fechados automaticamente e sua conta será desativada e colocada em revisão.
-- AUTO: Depois que você concluir a fase final e cumprir todos os requisitos, seus trades serão fechados automaticamente e sua conta será desativada e colocada em revisão.
-- AUTO: Quando você atingir os objetivos de lucro, seus trades serão fechados automaticamente e sua conta será desativada e colocada em revisão.
-- AUTO: Sem uso de EAs ou scripts
 
 ## Maven Trading — https://maventrading.com/pt/terms-and-conditions
 - AUTO: O trading legalmente permitido antes da etapa prevista de KYC não é automaticamente inválido pelo simples fato de essa etapa ainda não ter ocorrido.
@@ -4470,7 +4370,7 @@
 - AUTO: This is not automatic.
 
 ## Topstep — https://help.topstep.com/en/articles/12060405-back2funded-rules-guidelines-and-how-it-works
-- AUTO: 💰 Please note: If you added a DLL to your Trading Combine® before the Back2Funded Responsible Trading Discount launched, the $50 discount will still apply automatically when you Reactivate.
+- AUTO: 💰 Please note: If you added a DLL to your Trading Combine® before the Back2Funded Responsible Trading Advantage launched, the $50 discount will still apply automatically when you Reactivate.
 - AUTO: If you take no action within 30 days — the offer expires and is automatically declined
 
 ## Topstep — https://help.topstep.com/en/articles/13545889-cme-velocity-logic
@@ -4543,7 +4443,7 @@
 
 ## Topstep — https://help.topstep.com/en/articles/15520357-topstep-labs
 - AUTO: If you haven't passed by then, it will close automatically.
-- AUTO: The Responsible Trading Discount does not apply even though a DLL is automatic.
+- AUTO: The Responsible Trading Advantage discount does not apply even though a DLL is automatic.
 
 ## Topstep — https://help.topstep.com/en/articles/16948328-topstepx-price-alerts
 - AUTO: TopstepX: Price Alerts | Topstep Help Center Copyright 2023.
@@ -4576,6 +4476,13 @@
 - AUTO: Alerts are contract-specific.
 - AUTO: When a contract rolls over, the alert is deleted.
 - AUTO: Managing your alerts
+
+## Topstep — https://help.topstep.com/en/articles/18466040-topstep-challenges
+- AUTO: Qualifying Traders are emailed the link to purchase automatically, which is the only way to purchase.
+
+## Topstep — https://help.topstep.com/en/articles/18482122-starter-challenge
+- AUTO: When you pass, trading automatically stops and your account displays "Passed."
+- AUTO: When you pass, trading automatically stops, and you can request your $100 cash payout through your Dashboard.
 
 ## Topstep — https://help.topstep.com/en/articles/8284101-topstep-learning
 - AUTO: Automatic when you purchase with the Responsible Trading Advantage , which adds a mandatory Daily Loss Limit.
@@ -4699,6 +4606,14 @@
 ## Topstep — https://help.topstep.com/en/collections/19404054-topstepx
 - AUTO: TopstepX™ API Access
 - AUTO: TopstepX: Price Alerts
+
+## Topstep — https://help.topstep.com/topstep-llc/en/articles/8284197-trading-combine-parameters
+- AUTO: Can I use automated trading strategies?
+- AUTO: Topstep won't help set up or troubleshoot automated strategies, and no exceptions are made for errant trades or malfunctions.
+
+## Topstep — https://www.topstep.com/blog/how-to-become-a-funded-trader
+- AUTO: Fast forward to today: trading floors are mostly gone, replaced by screens and algorithms.
+- AUTO: On top of that, every Live Funded Account is automatically entered into Topstep Octagon , a monthly competition where the top 100 traders on the leaderboard split a $250,000 bonus pool.
 
 ## Topstep — https://www.topstep.com/express-funded-account-rules
 - AUTO: If no action is taken within 7 days, the Back2Funded offer expires and will be automatically declined .

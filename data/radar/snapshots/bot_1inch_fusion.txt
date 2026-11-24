@@ -1,0 +1,113 @@
+What is 1inch Fusion, and how does it work? | 1inch Help Center Skip to main content
+1inch.com Blog Contact support English 日本語 한국어 Pусский 简体中文 Español English
+1inch.com Blog Contact support English 日本語 한국어 Pусский 简体中文 Español English
+Search for articles...
+All Collections
+1inch dApp
+What is 1inch Fusion, and how does it work?
+What is 1inch Fusion, and how does it work?
+Everything you need to know about 1inch's Fusion protocol
+A
+Written by Alexander Neufeld
+October 9, 2026
+Table of contents
+In this article, we will cover:
+Mechanics of 1inch Fusion
+How to swap
+How to stake
+How to Delegate your voting power, for either resolving or governance
+How to become a resolver
+Mechanics of 1inch Fusion
+With 1inch Fusion, a new 1inch swap engine is introduced for filling and executing orders. It allows users to swap at a competitive rate without needing native tokens for gas fees and seamlessly prevents front-running (MEV) attacks. In a general sense, it can be seen as a total overhaul of 1inch existing Limit order and Aggregation protocols.
+Similar to a Classic swap, you first enter the token amounts that you want to swap. This designates you as the "maker". Once the order is placed, resolvers (takers) compete to fill your order and also pay for any associated gas fees!
+Who is a resolver?
+A resolver is any approved address that stakes 1INCH tokens and is registered to fill 1inch Fusion orders.
+The competition between resolvers occurs as a ‘ Dutch auction ’, where the rate starts high and moves lower until:
+The order is taken (filled) by a resolver
+The price moves below the user's desired slippage tolerance
+The order reaches its expiration time
+If a resolver does not fill your order within the Dutch auction time period, the swap will expire, and it can be resubmitted at no additional cost.
+With Fusion mode, a balance of native assets (i.e., ETH, BNB, MATIC, etc.) is not required, even for expired/failed swaps!
+Why use Fusion Mode?
+With this new 1inch swap engine, there are several benefits for both users and resolvers.
+Users:
+Swap without using native assets (within a specific price and time range)
+MEV protection
+No price impact
+No cost for failed transactions
+Fast execution
+Resolvers:
+Earn stake rewards
+Earn resolver fees
+Participate in the 1inch Gas refund program
+Earn 1inch DAO governance voting power
+Partial Fills
+The partial fill feature let a Fusion order be executed in smaller portions instead of requiring the full order amount to be filled at once. The maker controls this through order settings: partial fills are allowed unless the order disables them, and multiple fills can be enabled so the remaining unfilled amount stays available for later execution. When a resolver fills part of the order, the protocol calculates the corresponding maker and taker amounts for that portion, records the reduced remaining amount, and prevents future fills from exceeding what is still available. This allows large orders to be completed across multiple fills while preserving correct pricing, accounting, and invalidation behavior.
+How to swap:
+First, connect your wallet to the 1inch dApp.
+Then, enter the amounts you would like to swap, and click either “Permit and swap” or “Approve tokens,” depending on the asset you are selling. You will need to sign this approval transaction in your wallet.
+Once the approval or permit is successful, click the "Swap" button.
+The little green icon above the "Swap" button indicates that the swap will be completed through Fusion mode (not classic mode).
+Next, confirm the details on the following screen, and confirm the swap in your wallet.
+Once the transaction is sent, it will show as "Pending" at the bottom of the page. During this time (Dutch auction), the rate will slowly decrease until a resolver takes the order.
+What happens if my swap expires?
+If the swap expires, it will need to be resubmitted. Unlike a classic swap, it won't cost any gas fees! You can check the status by clicking on your "connected address" in the upper right corner of the page.
+How to stake
+With 1inch Fusion, you can stake 1INCH tokens to earn rewards and Unicorn power. Once staked, your tokens cannot be unstaked/withdrawn without penalty until the designated lock period expires. The default lock period for staking is 2 years.
+As time progresses, the penalty for unstaking 1INCH tokens decreases. Also, the longer the lock period, the more Unicorn power is received at the time of staking.
+Similar to the withdrawal penalty, the amount of held Unicorn power also decreases with time.
+This graph shows how both the penalty for withdrawing st1INCH and the amount of held Unicorn power decrease over time.
+A guide on how to stake:
+To stake tokens, first connect your wallet. Then click on the “DAO” tab, followed by “Staking”.
+Next, enter the amount of 1INCH you would like to stake, set the locking period (default is 2 years), and click “Give permission to stake”. Then sign the transaction in your connected wallet.
+This will enable the 1INCH tokens to be used by the smart contract and staked in a single transaction. Once completed, your 1INCH tokens will be staked! You will then be able to see the total amount of tokens staked, your lock period, and your total Unicorn Power (used for delegation or 1inch DAO governance voting).
+Unstaking before the end of the lock period will result in a penalty.
+How to Delegate your Unicorn power, for either resolving or 1inch DAO governance
+Stakers of 1INCH tokens can delegate their Unicorn power to both resolvers and governance participants. Delegation for Fusion resolving will deploy extra tokens for every resolver that registers as a delegate.
+Any resolver who delegates for Fusion resolving will receive an additional 1INCH token, proportionate to the amount that is delegated. This resolver-specific token will represent shares of users that delegated their “voting power” to this resolver.
+Resolvers can also deploy farms from their balance of 1INCH tokens, specifically to reward all the delegators proportionally to their stake within each farm.
+How to delegate to a resolver:
+First, you will need to stake some 1INCH tokens.
+Once you hold st1INCH, click on the "Earn" tab at the top of the page, and then "Delegate".
+If you have just finished staking your tokens, the following screen will appear. You can also delegate your tokens in this way.
+On the next screen, you will see all of the available resolvers that can be delegated to. After choosing the desired resolver, click "Delegate".
+Next, click "Confirm" delegation, and then confirm the transaction in your connected wallet.
+Once the transaction confirms on the chain, you will have successfully delegated your Unicorn Power to the resolver! If you have done so, you will see this screen.
+How to become a resolver:
+To become a resolver, you need a balance of staked 1INCH (st1INCH) tokens, meeting the minimum requirement of 5% of the total supply of Unicorn Power (UP). The maximum limit of listed resolvers is 10. Holding st1INCH tokens grants users UP, which can be utilized for farming programs or various activities. The duration of the token lock, ranging from 1 month to 2 years, directly correlates to the voting power gained as a resolver.
+To uphold the integrity of the 1inch Fusion mode, a smart contract-enforced maximum gas fee rule is in place. This cap on priority gas fees prevents any attempt to bypass the limit, including direct payments to a block builder’s coinbase. Violations will incur penalties.
+Priority gas fee caps are determined by the baseFee:
+For baseFee <10.6 gwei, the priorityFee cap is 70% of the baseFee.
+For 10.6 gwei ≤ baseFee ≤ 104.1 gwei, the priorityFee cap is 50% of the baseFee.
+For baseFee >104.1 gwei, the priorityFee cap is 65% of the baseFee.
+Violators of the gas fee cap will face the following penalties:
+First offense: official warning
+Second offense: one-day block from filling orders
+Third offense: seven-day block from filling orders
+Fourth offense: thirty-day block from filling orders
+Fifth offense: three-hundred sixty-five-day block from filling orders
+Questions, comments, concerns? Feel free to reach out in our live support chat!
+Related Articles
+1inch Fusion FAQ
+How to stake 1INCH tokens, delegate Unicorn Power, and maximize resolver APY
+What are the benefits of using 1inch Fusion?
+What is 1inch Fusion+, and how does it work?
+Robinhood Chain on Fusion: How It Works
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Products
+Swap
+1inch Wallet
+Portfolio
+Developer Portal
+Need help?
+Support
+Documentation
+Suggest a feature
+Company
+About
+Security
+Blog
+Terms of Use
+Privacy Policy
+1inch is the DeFi ecosystem building financial freedom for everyone.

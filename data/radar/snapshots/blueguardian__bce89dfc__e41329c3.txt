@@ -80,6 +80,7 @@ Overnight and weekends: allowed.
 Expert Advisors: allowed, if they're your own setup. VPNs and VPS are allowed, but not to get around copy trading, group trading or signal rules.
 Copy trading: only between accounts you legally own, including between your own evaluation and funded accounts.
 Stop losses: not mandatory, but you're responsible for staying within the rules.
+Gambling rule: using more than 80% of your margin on open trades counts as "all or nothing" gambling. It can lead to payout rejection, profit removal or account termination.
 Still need help?
 Our support team and AI assistant are online 24/7.
 Contact us

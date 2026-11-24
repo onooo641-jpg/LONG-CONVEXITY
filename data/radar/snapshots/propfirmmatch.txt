@@ -83,6 +83,11 @@ E8 Markets
 4.8
 15% OFF
 MATCH
+Au
+Audacity Capital
+4.1
+50% OFF
+MATCH50
 Mo
 Moneta Funded
 4.8
@@ -118,7 +123,7 @@ MATCH
 At
 Atmos Funded
 4.7
-20% OFF
+30% OFF
 MATCH
 Le
 Leveraged
@@ -155,18 +160,13 @@ MATCH
 BE
 BEM Funding
 4.9
-40% OFF
-MATCH
+50% OFF
+MATCHFRIDA...
 Ho
 Hola Prime
-4.4
+4.3
 10% OFF
 MATCH10
-Au
-Audacity Capital
-4.1
-50% OFF
-MATCH50
 Th
 The Trading Pit
 4.0
@@ -204,7 +204,7 @@ Favorite 0/5
 New
 All Firms
 Firms 15 results
-Data updated just now
+Data updated 1 min ago
 Firm
 Rank / Reviews
 Country / Years
@@ -215,7 +215,7 @@ Promo
 Actions
 Th
 The5ers
-100441
+100479
 4.7
 1441
 reviews
@@ -232,7 +232,7 @@ MATCH
 Firm
 FT
 FTMO
-44368
+44378
 4.5
 220
 reviews
@@ -248,7 +248,7 @@ $400K
 Firm
 Aq
 AquaFunded
-17094
+17115
 4.4
 344
 reviews
@@ -265,7 +265,7 @@ Firm
 4
 Bl
 Blueberry Funded
-26286
+26287
 4.1
 635
 reviews
@@ -283,7 +283,7 @@ Firm
 5
 E8
 E8 Markets
-39199
+39216
 4.8
 498
 reviews
@@ -303,7 +303,7 @@ Mo
 Moneta Funded
 1557
 4.8
-130
+131
 reviews
 Dubai (UAE), years in operation: 1 1
 FX, Indices, Metals, Energy, Crypto FX
@@ -318,9 +318,9 @@ Firm
 7
 To
 Top One Trader
-30338
+30344
 4.4
-237
+236
 reviews
 United States, years in operation: 3 3
 FX, Indices, Metals, Crypto FX
@@ -334,7 +334,7 @@ Firm
 8
 Ma
 Maven
-48260
+48263
 4.2
 801
 reviews
@@ -370,7 +370,7 @@ Firm
 10
 Cr
 Crypto Fund Trader
-39622
+39662
 4.2
 113
 reviews
@@ -407,7 +407,7 @@ At
 Atmos Funded
 846
 4.7
-54
+55
 reviews
 Cyprus, years in operation: 2 2
 FX, Indices, Metals, Energy, Crypto, Stocks FX
@@ -417,13 +417,13 @@ Energy
 Crypto
 + 1
 $400K
-20% OFF
+30% OFF
 MATCH
 Firm
 13
 Le
 Leveraged
-185
+186
 Less than
 20 reviews
 Saint Lucia, years in operation: 1 1
@@ -457,7 +457,7 @@ Firm
 15
 La
 Lark Funding
-4469
+4470
 4.5
 92
 reviews
@@ -597,7 +597,7 @@ Guest interview
 Watch & Learn
 Updated Oct 14, 2026
 83.9K Subscribers
-991 Videos
+993 Videos
 Trading Insights
 Live trading, interviews, and prop firm updates
 Subscribe

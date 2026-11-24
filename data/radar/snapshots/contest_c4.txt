@@ -1,0 +1,388 @@
+Audits | Code4rena
+Skip Navigation
+For Wardens Find bugs. Get paid.
+Put your security research skills to work.
+Become a Warden
+Audits Past audits
+Bounties
+Leaderboard Past 90 days
+Past 365 days
+All time
+Resources Reports
+Help desk
+Docs
+Support
+Log in
+Login
+Log in / Register
+Completed audits
+Completed
+Audit
+Monetrix Yield layer for Hyperliquid, engineered to maximize capital efficiency by funneling all of Hyperliquid's yield sources into one stablecoin. It's the liquid entry point to capture full economic upside of the ecosystem through a unified, composable asset.
+Hyperliquid
+Solidity
+24 Apr 8:00 PM - 04 May 8:00 PM
+$22,000 in USDC
+Completed
+Audit
+K2 K2 brings sophisticated DeFi lending to Stellar through pooled, isolated, and gated markets. Built for RWAs, AI agents, and institutions, with an integrated UI and real-time risk dashboards.
+Stellar
+Rust
+17 Apr 8:00 PM - 27 May 8:00 PM
+$135,000 in USDC
+Completed
+Mitigation review
+MR
+Intuition Mitigation Review The decentralized language protocol, knowledge network, & native blockchain for InfoFi - unlocking the next generation of the internet. Powered by $TRUST.
+EVM
+Solidity
+02 Apr 8:00 PM - 06 Apr 8:00 PM
+$4,000 in USDC
+Completed
+Audit
+LayerZero - Stellar endpoint LayerZero x Stellar integration
+Stellar
+Rust
+01 Apr 8:00 PM - 14 Apr 8:00 PM
+$101,000 in USDC
+Completed
+Mitigation review
+MR
+Swafe Mitigation Review: Round 2 No passwords. No backup phrases. No trusted companies. Swafe protects your access — securely, privately, and on your terms.
+30 Mar 8:00 PM - 01 Apr 8:00 PM
+$12,000 in USDC
+Completed
+Mitigation review
+MR
+Swafe Mitigation Review No passwords. No backup phrases. No trusted companies. Swafe protects your access — securely, privately, and on your terms.
+20 Mar 8:00 PM - 24 Mar 8:00 PM
+$12,000 in USDC
+Completed
+Audit
+Chainlink Payment Abstraction V2 Payment Abstraction is onchain infrastructure that enables users to pay for Chainlink services in their preferred form of payment, which is then programmatically converted to LINK.
+EVM
+Solidity
+18 Mar 8:00 PM - 27 Mar 8:00 PM
+$65,000 in USDC
+Completed
+Audit
+Intuition The decentralized language protocol, knowledge network, & native blockchain for InfoFi - unlocking the next generation of the internet. Powered by $TRUST.
+EVM
+Solidity
+04 Mar 8:00 PM - 09 Mar 8:00 PM
+$17,500 in USDC
+Completed
+Audit
+Injective Peggy Bridge Injective is a lightning fast interoperable layer one blockchain optimized for building premier Web3 finance applications. Injective provides developers with powerful plug-and-play modules for creating unmatched dApps.
+Cosmos
+GO
+25 Feb 8:00 PM - 17 Mar 8:00 PM
+$105,500 in USDC
+Completed
+Mitigation review
+MR
+Panoptic: Next Core Mitigation Review: Round 2 Panoptic is a DeFi options protocol designed to enhance LPing and trading. It transforms Uniswap LP positions into onchain options, enabling traders to access liquidity in a new, flexible way.
+EVM
+Solidity
+23 Feb 8:00 PM - 25 Feb 8:00 PM
+$6,000 in USDC (all rounds)
+Completed
+Mitigation review
+MR
+Panoptic: Next Core Mitigation Review Panoptic is a DeFi options protocol designed to enhance LPing and trading. It transforms Uniswap LP positions into onchain options, enabling traders to access liquidity in a new, flexible way.
+EVM
+Solidity
+13 Feb 8:00 PM - 18 Feb 8:00 PM
+$6,000 in USDC
+Completed
+Audit
+Jupiter Lend Earn Yield, Borrow Assets, Maximize Returns. Better for Borrowers, Simpler for Lenders.
+Solana
+Rust
+12 Feb 8:00 PM - 13 Mar 8:00 PM
+$107,000 in USDC
+Completed
+Audit
+Olas Olas enables everyone to own and monetize their AI agents. It is the platform for true co-ownership of AI. Powered by the OLAS Token.
+EVM
+Solidity
+22 Jan 8:00 PM - 09 Feb 8:00 PM
+$62,000 in USDC
+Completed
+Audit
+Panoptic: Next Core Panoptic is a DeFi options protocol designed to enhance LPing and trading. It transforms Uniswap LP positions into onchain options, enabling traders to access liquidity in a new, flexible way.
+EVM
+Solidity
+19 Dec 2025 8:00 PM - 07 Jan 8:00 PM
+$56,000 in USDC
+Completed
+Audit
+Rujira Rujira is building the App Layer on THORChain, providing a fully integrated suite of DeFi applications, accessible with native assets from all connected chains.
+THORChain
+Cosmos
+Rust
+16 Dec 2025 8:00 PM - 16 Jan 8:00 PM
+$40,000 in USDC
+Completed
+Audit
+Brix Money iTRY is a TRY-denominated digital asset, backed by tokenized money market funds. Brix is the protocol layer through which iTRY becomes accessible to DeFi users, enabling onchain staking, yield distribution, and integration with the broader ecosystem.
+EVM
+Solidity
+26 Nov 2025 8:00 PM - 03 Dec 2025 8:00 PM
+$23,000 in USDC
+Completed
+Audit
+SukukFi On-chain marketplace connecting DeFi directly with profitable real-world businesses through profit-sharing debt instruments
+EVM
+Solidity
+26 Nov 2025 8:00 PM - 05 Dec 2025 8:00 PM
+$40,000 in USDC
+Completed
+Audit
+Merkl Merkl is a DeFi incentive platform that connects liquidity providers with protocols looking to boost activity and engagement.
+EVM
+Solidity
+25 Nov 2025 8:00 PM - 01 Dec 2025 8:00 PM
+$18,000 in USDC
+Completed
+Audit
+Garden Trustless peer-to-peer bitcoin bridge
+Solana
+Sui
+Starknet
+EVM
+24 Nov 2025 8:00 PM - 08 Dec 2025 8:00 PM
+$37,500 in USDC
+Completed
+Audit
+Ekubo The most efficient and powerful AMM infrastructure on the EVM.
+EVM
+Solidity
+19 Nov 2025 8:00 PM - 10 Dec 2025 8:00 PM
+$183,500 in USDC
+Completed
+Audit
+Swafe No passwords. No backup phrases. No trusted companies. Swafe protects your access — securely, privately, and on your terms.
+ZK
+Rust
+18 Nov 2025 8:00 PM - 09 Dec 2025 8:00 PM
+$100,000 in USDC
+Completed
+Audit
+Sequence: Transaction Rails Multichain transaction rails to pay, swap, fund, or earn in 1 click with any wallet, token or chain
+EVM
+Solidity
+11 Nov 2025 8:00 PM - 17 Nov 2025 8:00 PM
+$18,500 in USDC
+Completed
+Mitigation review
+MR
+Hybra Finance: mitigation review, round 2
+EVM
+Solidity
+11 Nov 2025 8:00 PM - 12 Nov 2025 8:00 PM
+$5,000 in USDC (all rounds)
+Completed
+Mitigation review
+MR
+Hybra Finance Mitigation Review Decentralized public liquidity layer for Hyperliquid
+EVM
+Solidity
+06 Nov 2025 8:00 PM - 10 Nov 2025 8:00 PM
+$5,000 in USDC
+Completed
+Audit
+Megapot The Internet's jackpot with $200M+ in drawings.
+EVM
+Solidity
+03 Nov 2025 8:00 PM - 13 Nov 2025 8:00 PM
+$30,000 in USDC
+Completed
+Audit
+Reflector V3 Decentralized price feed oracle for Stellar DeFi smart contracts to support derivatives, lending, and asset management
+Stellar
+Rust
+27 Oct 2025 8:00 PM - 11 Nov 2025 8:00 PM
+$20,000 in USDC
+Completed
+Mitigation review
+MR
+Flare - fAsset Mitigation Review The blockchain for data. The platform for non smart contract asset DeFi. Built on enshrined data protocols.
+EVM
+Solidity
+27 Oct 2025 8:00 PM - 30 Oct 2025 8:00 PM
+$11,000 in USDC
+Completed
+Audit
+LayerZero: Starknet Endpoint LayerZero x Starknet integration
+StarkNet
+Cairo
+24 Oct 2025 8:00 PM - 07 Nov 2025 8:00 PM
+$100,000 in USDC
+Completed
+Audit
+Covenant Covenant transforms assets into leverage and yield - creating fully-backed credit that multiplies DeFi liquidity.
+EVM
+Solidity
+22 Oct 2025 8:00 PM - 03 Nov 2025 8:00 PM
+$43,000 in USDC
+Completed
+Audit
+Sequence The modular crypto infrastructure stack that unifies wallets, 1-click cross-chain transactions, and real-time data.
+EVM
+Solidity
+07 Oct 2025 8:00 PM - 22 Oct 2025 8:00 PM
+$73,000 in USDC
+Completed
+Audit
+Hybra Finance Decentralized public liquidity layer for Hyperliquid
+Hyperliquid
+EVM
+Solidity
+06 Oct 2025 8:00 PM - 16 Oct 2025 8:00 PM
+$33,000 in USDC
+Completed
+Audit
+LayerZero Endpoint V2 - Sui Build Anything. Build Omnichain.
+Sui
+Move
+17 Sep 2025 8:00 PM - 30 Sep 2025 8:00 PM
+$103,000 in USDC
+Completed
+Audit
+Monad Layer 1 blockchain bringing parallel execution to the EVM.
+Monad
+Rust
+C++
+15 Sep 2025 8:00 PM - 12 Oct 2025 8:00 PM
+$500,000 in USDC
+Completed
+Audit
+Succinct SP1 is a RISC-V based zero-knowledge virtual machine which allows developers to easily prove an execution of any Rust program.
+ZK
+Rust
+15 Sep 2025 8:00 PM - 15 Oct 2025 8:00 PM
+$112,500 in USDC
+Completed
+Audit
+GTE Perps and Launchpad GTE is the world's fastest decentralized exchange. We’ve vertically integrated every aspect of trading - from token creation, to spot and perpetuals - to give you the best on-chain experience possible.
+EVM
+Solidity
+28 Aug 2025 8:00 PM - 25 Sep 2025 8:00 PM
+$103,250 in USDC
+Completed
+Audit
+Meteora - Dynamic Bonding Curve Building the most dynamic liquidity pools in DeFi.
+Solana
+Rust
+22 Aug 2025 8:00 PM - 12 Sep 2025 8:00 PM
+$104,500 in USDC
+Completed
+Audit
+Solana Foundation Introducing the Token22 program that includes a feature for confidential transfers that are built on an ElGamal program within Solana’s zk-sdk.
+Solana
+Rust
+ZK
+21 Aug 2025 8:00 PM - 23 Sep 2025 8:00 PM
+$203,500 in USDC
+Completed
+Audit
+Flare - FAsset The blockchain for data. The platform for non smart contract asset DeFi. Built on enshrined data protocols.
+EVM
+Solidity
+19 Aug 2025 8:00 PM - 23 Sep 2025 8:00 PM
+$190,000 in USDC
+Completed
+Audit
+Morpheus Morpheus is for Builders of Smart Agents. Empowering them with Capital, Code & Compute.
+EVM
+Solidity
+15 Aug 2025 8:00 PM - 25 Aug 2025 8:00 PM
+$20,000 in USDC
+Completed
+Audit
+GTE Spot CLOB and Router GTE is the world's fastest decentralized exchange. We’ve vertically integrated every aspect of trading - from token creation, to spot and perpetuals - to give you the best on-chain experience possible.
+EVM
+Solidity
+23 Jul 2025 8:00 PM - 06 Aug 2025 8:00 PM
+$63,250 in USDC
+Completed
+Audit
+Lido Finance CSM v2 is a permissionless staking module upgrade enabling customizable operator types, entry gates, strikes, EIP-7002 support, and performance-based scoring.
+EVM
+Solidity
+16 Jul 2025 8:00 PM - 11 Aug 2025 8:00 PM
+$103,500 in USDC
+Completed
+Audit
+Panoptic Hypovault Panoptic is a DeFi options protocol designed to enhance LPing and trading. It transforms Uniswap LP positions into onchain options, enabling traders to access liquidity in a new, flexible way.
+EVM
+Solidity
+27 Jun 2025 8:00 PM - 07 Jul 2025 8:00 PM
+$18,000 in USDC
+Completed
+Mitigation review
+MR
+Blackhole Mitigation Review A new decentralised exchange designed to serve as the Trading and Liquidity Hub for all blockchain projects on Avalanche.
+EVM
+Solidity
+18 Jun 2025 8:00 PM - 23 Jun 2025 8:00 PM
+$4,250 in USDC
+Completed
+Audit
+Chainlink Rewards A community engagement and rewards program designed to incentivize active participation in the Chainlink Network
+EVM
+Solidity
+16 Jun 2025 8:00 PM - 16 Jul 2025 8:00 PM
+$200,000 in USDC
+Completed
+Audit
+Blackhole A new decentralised exchange designed to serve as the Trading and Liquidity Hub for all blockchain projects on Avalanche.
+EVM
+Avalanche
+Solidity
+28 May 2025 8:00 PM - 09 Jun 2025 8:00 PM
+$28,000 in USDC
+Completed
+Audit
+Upside A social prediction market. Imagine PumpFun had a baby with Reddit. That's Upside.
+EVM
+Solidity
+19 May 2025 8:00 PM - 26 May 2025 8:00 PM
+$13,000 in USDC
+Completed
+Mitigation review
+MR
+Silo Finance Mitigation Review Isolated lending markets on Ethereum.
+EVM
+Solidity
+01 May 2025 8:00 PM - 05 May 2025 8:00 PM
+$8,000 in USDC
+Completed
+Audit
+Cabal Liquid Staking Token The highest-yielding LST on Initia. Stake once, earn forever.
+Initia
+Move
+28 Apr 2025 8:00 PM - 05 May 2025 8:00 PM
+$23,000 in USDC
+Completed
+Audit
+Virtuals Protocol Co-ownership of AI agents in entertainment and gaming
+EVM
+Solidity
+17 Apr 2025 8:00 PM - 07 May 2025 8:00 PM
+$60,000 in USDT
+Completed
+Mitigation review
+MR
+Blend V2 Mitigation Review A liquidity protocol primitive built on Stellar
+Stellar
+Rust
+07 Apr 2025 8:00 PM - 11 Apr 2025 8:00 PM
+$20,000 in USDC
+Page 1 of 10
+Go to page:
+Twitter
+Discord
+Terms
+Privacy

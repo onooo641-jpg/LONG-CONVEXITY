@@ -141,10 +141,10 @@ Generate a new one from Settings ⚙️ → API tab → Add API Key , then updat
 My requests are being rejected after they worked earlier
 Session tokens expire. Confirm your client refreshes its token rather than reusing an old one. If you're being rate limited, back off and retry.
 Related Articles
+What is a Reset?
 General Platform Troubleshooting
 Quantower Connection Instructions
 New to Topstep? Start here.
-TopstepX™ Live Performance Bonus
 TopstepX™
 Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
 Table of contents

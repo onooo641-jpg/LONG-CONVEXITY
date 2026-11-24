@@ -1,0 +1,209 @@
+Topstep Pricing and Payment Questions | Topstep Help Center Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Skip to main content
+Discord Topstep TopstepTV
+Discord Topstep TopstepTV
+Search for articles...
+All Collections
+Getting Started
+Topstep Pricing and Payment Questions
+Topstep Pricing and Payment Questions
+Everything about costs, pricing, and payments in one place.
+Updated today
+Table of contents
+Topstep accepts Visa, Mastercard, American Express, and Discover. You may also choose to pay via Google Wallet or Apple Pay. PayPal is not supported. Sales tax may be added at checkout where applicable.
+Trading Combine
+Account Size
+Standard Path
+No Activation Fee Path
+50K
+$49/month
+$95/month
+100K
+$99/month
+$149/month
+150K
+$199/month
+$229/month
+⚠️ Important: Paths cannot be changed after purchase.
+The Details:
+Standard Path: Lower monthly cost. $149 Activation Fee charged once per Express Funded Account (XFA) earned. Best for Traders still building consistency.
+No Activation Fee Path: Higher monthly cost. No fee when you pass. Best for Traders confident they’ll pass in 1–2 attempts.
+Reset Pricing
+Account Size
+Standard Path
+No Activation Fee Path
+50K
+$49
+$95
+100K
+$99
+$149
+150K
+$199
+$229
+You may purchase a Reset from your Topstep dashboard, or within the TopstepX platform once your Trading Combine breaches the Maximum Loss Limit . Learn more about Resets here .
+👉 Challenges don’t have Resets to purchase. See Challenge Pricing below.
+Challenge Pricing
+Challenge
+Price
+Starter Challenge
+$10
+Launchpad Challenge
+$10
+$500 Challenge
+$49
+$1.5K Challenge
+$99
+$3K Challenge
+$199
+$6K Challenge
+$399
+$9K Challenge
+$599
+Challenges are one-time purchases. There is no subscription, and no Rebills. There is no fee to activate the Payout Round.
+Challenges don’t offer Resets. The Starter and Launchpad Challenges are the exception, and each includes 2 free Resets.
+Some Challenges are limited to eligible Traders. Learn more in Topstep Challenges .
+Express Funded Account Activation & Reactivation
+☝️ Activation
+Depends on your path: Standard Path — $149, charged once per XFA earned. No Activation Fee Path — $0.
+👉 Reactivation
+Lost your XFA before your first Payout? Reactivate through our Back2Funded option.
+Reactivation fees:
+$50K XFA — $599
+$100K XFA — $699
+$150K XFA — $829
+⏳ Reactivation window: 30 calendar days from account closure. Learn more here .
+Responsible Trading Advantage
+🙌 There's now a Responsible Trading Advantage when you add a DLL at purchase for No Activation Fee Trading Combines, Express Funded Account Activations, and Back2Funded Reactivations. 👉 Discount is applied at checkout. Learn more here .
+No Activation Fee Trading Combine
+Back2Funded Reactivation
+$10 off → 50K
+$20 off → 100K
+$30 off → 150K
+$50 off Reactivation Fees
+🔥 We reward traders who manage risk the right way. Discount recurs monthly. The DLL is fixed and carried into your XFA when you pass.
+Trader Tip: Over 63% of traders have lost an account in a single day. Adding a DLL to your account caps how much you can lose in a single session, so one bad day doesn’t turn into a closed account. The traders who last… manage risk first!
+​
+Adding a Daily Loss Limit helps you:
+Stay disciplined
+Protect your account
+Trade like it’s real capital
+💪 Always trade for tomorrow.
+Additional Pricing Information
+Data Fees
+Data Type
+What’s Included
+Cost
+Level 1 (Top of Book)
+Best bid/ask; required for chart trading
+Included
+Level 2 (DOM)
+Multiple bid/ask levels; required for DOM/Matrix trading
+$38/month
+Level 2 is billed on the 28th of each month and is not prorated.
+To add it: Dashboard → Accounts → Add-Ons → Depth of Market Bundle.
+☝ Live Funded Account® (LFA) Traders are subject to Professional Data fees. See the LFA Costs article for details.
+Commissions and Fees
+Commissions and fees are deducted automatically from your balance with each filled trade and show up in your Net P&L. See the full breakdowns: Trading Combines® & Express Funded Accounts · Live Funded Accounts
+VAT and Sales Tax
+Listed prices are base costs only. Depending on where you're located, applicable taxes — VAT, GST, or sales tax — will be calculated and shown at checkout in accordance with local regulations. The exact amount varies by region and will appear before you complete your purchase. Topstep collects and remits all taxes directly — we don't keep any of it. Check your account dashboard for a full breakdown of billing details anytime.
+Promo Codes
+Log in before applying — do not create a new profile
+Codes apply to a new Trading Combine® or a Reset — not both
+Case-sensitive; no extra spaces
+Profile-specific — codes won’t work under a different email
+First month only billed at promo price (unless stated otherwise)
+Topstep does not refund purchases where a code wasn’t applied, or full-price purchases made before a sale
+To apply a code: Dashboard → Start a Trading Combine → select size → confirm address → enter code under Coupons & Payment → click Apply
+Referral Codes
+Every Trader with an active Trader Profile can generate a Referral Code. Anyone new to Topstep who enters it at checkout gets 15% off their first account purchase. Once that purchase completes, the referrer get a 15% reward discount code by email for a purchase of their own.
+Generate and copy your code on your Trader Profile.
+New : Starting November 16, 2026 your Referral Code is generated using your Trader Profile handle, and Referral Codes no longer expire.
+Reward codes are earned and someone applies your referral code to a new purchase. Earn up to 5 reward codes in a calendar month. The count restarts on the 1st. Limit of 5 per month no matter how many Traders use your referral code.
+1 discount per purchase. No stacking with other promotions.
+The discount percentage is set by Topstep and can change. Whatever is active on the day you redeem is what applies.
+🦃 Friendsgiving Promotion: Starting November 16, 2026, through the end of November, your Referral Code will offer 50% off (up from the standard 15%)! You'll also receive a 50% Reward Code for each person who uses your Referral Code. Be sure to generate a new handle-based code to offer and receive 50% off. Please note: This is a temporary promotion!
+FAQs
+Who can use a referral code?
+Anyone new to Topstep who hasn't purchased yet, on their first account purchase only. Codes are public, so you can share yours anywhere.
+Is this the affiliate program?
+No. Referral Codes are open to all Traders with a Trader Profile.
+Can I see who used my code?
+Not yet. The reward email is the only signal right now.
+Where does my reward show up?
+Email only. It's a discount code, not cash, and nothing is added to an account balance. Check spam and promotions if you don't see it.
+More than 5 people used my code. Where are the rest of my rewards?
+The cap is 5 reward codes in a month. Rewards past that aren't banked. Once a new month starts, you can earn 5 more reward codes if 5 more referrals make purchases using your code.
+I signed up but didn't see the discount. Did I miss it?
+No. The referral code applies to your first account purchase , not at sign-up. Enter it at checkout!
+Affiliate Codes
+What is Topstep’s affiliate program?
+Topstep partners with a select group of creators, some of whom have an affiliate code to share with their community. When someone purchases with Topstep for the first time using an affiliate code, they save 20%.
+What is the affiliate code offer?
+20% off your first Topstep purchase (Trading Combine, Topstep Labs, or an Evaluation Challenge) when you check out with an affiliate’s code.
+Who is eligible to use an affiliate’s code?
+If you have never previously purchased with Topstep, you are eligible to use an affiliate code on your very first Topstep purchase for the purchase of a Topstep Trading Combine, Topstep Labs, or a Topstep Evaluation Challenge. Traders new to Topstep can only use one affiliate code, one time.
+I want to purchase more than one account. Does the code apply to all purchases?
+No, affiliate codes are eligible to be used on your first purchase with Topstep. Affiliate codes do not apply to Resets, Back2Funded, market data add-ons, or anything you buy after that first purchase.
+Can I stack an affiliate code with another promo or code?
+No, you cannot stack with another promo code, discount, or a referral code. There is one exception: if you opt to add a Daily Loss Limit to a No Activation Fee Trading Combine during your first purchase with Topstep, you can still use an affiliate code to save 20% in addition to the Responsible Trading Advantage savings.
+How can I become a Topstep Affiliate?
+We’re launching a new affiliate program and rolling it out gradually, starting with a small group of Traders. Details are limited for now. We’ll share more information here as the program expands!
+How to Add or Update Payment Details
+Go to your Billing Page on the Dashboard
+​
+Click Add New Card and enter your details
+Scroll to Subscriptions
+Click the Edit icon next to the subscription you want to update
+Select your preferred card and save
+☝ Important: At least 1 card must remain on file while a Trading Combine is active. Removing all cards will close your account. Once you set a default card, new purchases will automatically be tied to that card. To update an existing subscription’s payment method, you must change your default card and update the individual subscription.
+Payment Troubleshooting
+Use a card in your name — must match your Topstep profile exactly. Using someone else’s card violates the Terms of Use.
+Check your billing address — must match your bank’s records exactly, including formatting.
+Delete and re-enter payment details manually — avoid autofill.
+Wait at least 1 hour between retry attempts — rapid retries can trigger bank blocks.
+Contact your bank — ask the Fraud department to check for holds, confirm online/international transactions are enabled, and allowlist Topstep.
+Browser checks — clear cache and cookies, try a private/incognito window, disable VPNs and ad blockers, or try a different browser/device.
+For refund questions, see Topstep® Refund Policies .
+Chargebacks at Topstep
+Have a question about a charge? Call us first. Always.
+Most fees at Topstep are non-refundable, but we’re always happy to review your account and clear up confusion. Filing a chargeback before reaching out could limit your options and put your account at risk.
+What’s the Difference Between a Chargeback and an Unjustified Chargeback?
+A chargeback is when you dispute a charge with your bank and request a reversal.
+An unjustified chargeback is filing a dispute without a valid reason — for example:
+Forgetting to cancel a subscription
+Misunderstanding a charge
+Overlooking Topstep’s refund policies
+Attempting to bypass the standard refund process
+What Happens If You File a Chargeback?
+Filing triggers an account review. Excessive or unjustified chargebacks may result in account suspension or permanent removal from the Topstep program.
+Initiating chargebacks is listed as prohibited conduct .
+Already filed one? You can still contact Trader Support to discuss your options.
+What If You Want to Dispute a Charge?
+Contact Trader Support first. We’ll review your situation and let you know what’s available under our refund policies .
+Related Articles
+Am I Eligible to Trade with Topstep?
+Topstep® Refund Policies
+Topstep Payout Policy
+Topstep Labs
+Topstep Challenges
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Your Privacy Choices

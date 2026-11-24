@@ -165,7 +165,7 @@ Buy Challenge
 Max loss i Trailing drawdown. The max % loss allowed from your highest equity at any point 3%
 Daily loss i Max you can lose in 24 hours. Resets 00:00 UTC 2%
 Profit split i Percentage of trading profits you keep. 80%
-Payout frequency i How often you can request a payout. Funded When Requirements are met
+Payout frequency i How often you can request a payout. Funded 10 business days
 Consistency score i 20% - for more info see FAQs Yes
 Challenge rules
 Sorry, this product is not available in your region.
@@ -177,7 +177,7 @@ Buy Challenge
 Max loss i Trailing drawdown. The max % loss allowed from your highest equity at any point 3%
 Daily loss i Max you can lose in 24 hours. Resets 00:00 UTC 2%
 Profit split i Percentage of trading profits you keep. 80%
-Payout frequency i How often you can request a payout. Funded When Requirements are met
+Payout frequency i How often you can request a payout. Funded 10 business days
 Consistency score i 20% - for more info see FAQs Yes
 Challenge rules
 Sorry, this product is not available in your region.
@@ -367,7 +367,7 @@ Buy Challenge
 Max loss i Trailing drawdown. The max % loss allowed from your highest equity at any point 3%
 Daily loss i Max you can lose in 24 hours. Resets 00:00 UTC 2%
 Profit split i Percentage of trading profits you keep. 80%
-Payout frequency i How often you can request a payout. Funded When Requirements are met
+Payout frequency i How often you can request a payout. Funded 10 business days
 Consistency score i 20% - for more info see FAQs Yes
 Challenge rules
 Sorry, this product is not available in your region.
@@ -379,7 +379,7 @@ Buy Challenge
 Max loss i Trailing drawdown. The max % loss allowed from your highest equity at any point 3%
 Daily loss i Max you can lose in 24 hours. Resets 00:00 UTC 2%
 Profit split i Percentage of trading profits you keep. 80%
-Payout frequency i How often you can request a payout. Funded When Requirements are met
+Payout frequency i How often you can request a payout. Funded 10 business days
 Consistency score i 20% - for more info see FAQs Yes
 Challenge rules
 Sorry, this product is not available in your region.
@@ -591,7 +591,7 @@ Buy Challenge
 Max loss i Trailing drawdown. The max % loss allowed from your highest equity at any point 3%
 Daily loss i Max you can lose in 24 hours. Resets 00:00 UTC 2%
 Profit split i Percentage of trading profits you keep. 80%
-Payout frequency i How often you can request a payout. Funded When Requirements are met
+Payout frequency i How often you can request a payout. Funded 10 business days
 Consistency score i 20% - for more info see FAQs Yes
 Challenge rules
 Sorry, this product is not available in your region.
@@ -603,7 +603,7 @@ Buy Challenge
 Max loss i Trailing drawdown. The max % loss allowed from your highest equity at any point 3%
 Daily loss i Max you can lose in 24 hours. Resets 00:00 UTC 2%
 Profit split i Percentage of trading profits you keep. 80%
-Payout frequency i How often you can request a payout. Funded When Requirements are met
+Payout frequency i How often you can request a payout. Funded 10 business days
 Consistency score i 20% - for more info see FAQs Yes
 Challenge rules
 Sorry, this product is not available in your region.
@@ -815,7 +815,7 @@ Buy Challenge
 Max loss i Trailing drawdown. The max % loss allowed from your highest equity at any point 3%
 Daily loss i Max you can lose in 24 hours. Resets 00:00 UTC 2%
 Profit split i Percentage of trading profits you keep. 80%
-Payout frequency i How often you can request a payout. Funded When Requirements are met
+Payout frequency i How often you can request a payout. Funded 10 business days
 Consistency score i 20% - for more info see FAQs Yes
 Challenge rules
 Sorry, this product is not available in your region.
@@ -827,7 +827,7 @@ Buy Challenge
 Max loss i Trailing drawdown. The max % loss allowed from your highest equity at any point 3%
 Daily loss i Max you can lose in 24 hours. Resets 00:00 UTC 2%
 Profit split i Percentage of trading profits you keep. 80%
-Payout frequency i How often you can request a payout. Funded When Requirements are met
+Payout frequency i How often you can request a payout. Funded 10 business days
 Consistency score i 20% - for more info see FAQs Yes
 Challenge rules
 Sorry, this product is not available in your region.
@@ -1035,7 +1035,7 @@ Buy Challenge
 Max loss i Trailing drawdown. The max % loss allowed from your highest equity at any point 3%
 Daily loss i Max you can lose in 24 hours. Resets 00:00 UTC 2%
 Profit split i Percentage of trading profits you keep. 80%
-Payout frequency i How often you can request a payout. Funded When Requirements are met
+Payout frequency i How often you can request a payout. Funded 10 business days
 Consistency score i 20% - for more info see FAQs Yes
 Challenge rules
 Sorry, this product is not available in your region.
@@ -1047,7 +1047,7 @@ Buy Challenge
 Max loss i Trailing drawdown. The max % loss allowed from your highest equity at any point 3%
 Daily loss i Max you can lose in 24 hours. Resets 00:00 UTC 2%
 Profit split i Percentage of trading profits you keep. 80%
-Payout frequency i How often you can request a payout. Funded When Requirements are met
+Payout frequency i How often you can request a payout. Funded 10 business days
 Consistency score i 20% - for more info see FAQs Yes
 Challenge rules
 Sorry, this product is not available in your region.
@@ -1255,7 +1255,7 @@ Buy Challenge
 Max loss i Trailing drawdown. The max % loss allowed from your highest equity at any point 3%
 Daily loss i Max you can lose in 24 hours. Resets 00:00 UTC 2%
 Profit split i Percentage of trading profits you keep. 80%
-Payout frequency i How often you can request a payout. Funded When Requirements are met
+Payout frequency i How often you can request a payout. Funded 10 business days
 Consistency score i 20% - for more info see FAQs Yes
 Challenge rules
 Sorry, this product is not available in your region.
@@ -1267,7 +1267,7 @@ Buy Challenge
 Max loss i Trailing drawdown. The max % loss allowed from your highest equity at any point 3%
 Daily loss i Max you can lose in 24 hours. Resets 00:00 UTC 2%
 Profit split i Percentage of trading profits you keep. 80%
-Payout frequency i How often you can request a payout. Funded When Requirements are met
+Payout frequency i How often you can request a payout. Funded 10 business days
 Consistency score i 20% - for more info see FAQs Yes
 Challenge rules
 Sorry, this product is not available in your region.

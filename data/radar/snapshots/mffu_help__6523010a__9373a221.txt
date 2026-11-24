@@ -18,16 +18,16 @@ $0 Activation fee on any MFFU plan
 Start Rapid Evaluation No activation fee. No surprise unlocks. Cancel anytime.
 Real Recent Payouts
 Payout auto-approved
-563 ms
-$2,271.20
+1.2s
+$3,499.50
 Payout auto-approved
-587 ms
-$2,274.40
+445 ms
+$3,796.54
 Payout auto-approved
-356 ms
-$4,528.10
+1.6s
+$3,600.80
 Sample only. Not all payouts shown. Updates every 4 hours.
-ALL RAPID BUILDER RAPID EOD PRO
+ALL RAPID BUILDER RAPID EOD PRO SIGNATURE
 Club
 Works on: Rapid Builder Rapid EOD Pro
 Number of uses : Unlimited
@@ -35,8 +35,19 @@ New to MFFU? Get 50% off your first eval.
 Lifetime Promo
 40 % OFF
 Get started CODE: CLUB
+FORTYOFF
+Works on: Pro Rapid Builder Rapid EOD Signature
+Evaluations : 40% Off
+Resets : 40% Off
+Max Uses : 0
+-- days
+-- hours
+-- minutes
+-- seconds
+40 % OFF
+Get started CODE: FORTYOFF
 FIFTYOFF
-Works on: Rapid EOD Rapid Builder Pro
+Works on: Pro Rapid Builder Rapid EOD Signature
 Evaluations : 50% Off
 New Customers Only : Yes
 One Per User : Yes
@@ -47,17 +58,6 @@ Max Uses : 0
 -- seconds
 50 % OFF
 Get started CODE: FIFTYOFF
-FORTYOFF
-Works on: Rapid EOD Rapid Builder Pro
-Evaluations : 40% Off
-Resets : 40% Off
-Max Uses : 0
--- days
--- hours
--- minutes
--- seconds
-40 % OFF
-Get started CODE: FORTYOFF
 Get exclusive discounts, promos, and updates!
 Get personalized emails based on your interests
 Email address Sign up

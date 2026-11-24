@@ -1,0 +1,209 @@
+Topstep Challenges | Topstep Help Center Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Skip to main content
+Discord Topstep TopstepTV
+Discord Topstep TopstepTV
+Search for articles...
+All Collections
+Topstep Program
+Topstep Challenges
+Topstep Challenges
+Topstep Challenges
+Hit the target. Do it again. Earn the Payout.
+Updated today
+Table of contents
+The Basics
+Topstep Challenges give you a chance to put your futures trading skills to the test and work toward a fixed cash payout. Pay a one-time fee, hit the Profit Target in two rounds, and keep 100 percent of your Challenge payout when you pass.
+Unlike the Trading Combine®, Challenges don't lead to a funded account. They're a separate way to trade for a payout.
+Originally limited to Topstep Labs , Challenges are now a permanent part of Topstep's lineup.
+Topstep Challenge Parameters
+👉 The Profit Targets outlined below apply to both the Challenge Round and the Payout Round. See details under How it Works below.
+Special Challenges
+The Starter and Launchpad Challenges are designed to help newer traders get familiar with how Challenges work at Topstep. Both offer the same trading rules and Payout opportunities, but are available to traders at different stages of their experience with Topstep.
+Challenge
+Price (one time)
+Profit Target and Payout
+Maximum Loss Limit
+Max Contracts
+Starter / Launchpad Challenge
+$10
+$100
+$100
+0 minis / 1 micro
+Please note:
+The Starter Challenge is only available to Traders who have never made a purchase with Topstep. Learn more here.
+The Launchpad Challenge is only available to Traders who have never passed a Trading Combine or Challenge, and do not currently hold a Starter Challenge.
+Standard Challenges
+The Challenges below are available to all Traders.
+Challenge
+Price (one time)
+Profit Target and Payout
+Maximum Loss Limit
+Max Contracts
+$500 Challenge
+$49
+$500
+$200
+1 mini / 10 micros
+$1.5K Challenge
+$99
+$1,500
+$500
+2 minis / 20 micros
+$3K Challenge
+$199
+$3,000
+$1,000
+5 minis / 50 micros
+$6K Challenge
+$399
+$6,000
+$2,000
+10 mini / 100 micros
+$9K Challenge
+$599
+$9,000
+$3,000
+15 minis / 150 micros
+How it Works
+Pick Your Challenge. Pay a one-time fee to get started in the Challenge Round.
+Pass Round 1. Trade until you hit your Profit Target. Trading locks, and your account is marked as passed.
+Pass Round 2. Activate the Payout Round in your Dashboard (allow up to 15 minutes), then trade to hit your Profit Target again.
+Request Your Payout. Once you've passed both rounds, request your fixed, one-time Payout in your Dashboard. Keep 100 percent of your Payout. Your account closes afterward.
+Rules for all Challenges*
+These apply to both rounds.
+Parameter
+Detail
+Starting balance
+$0
+Maximum Loss Limit
+Static. It doesn't trail.
+Daily Loss Limit
+None
+Consistency Target
+None
+Resets and Rebills
+None
+Payout Round activation fee
+Free
+Lifespan
+90 days per round
+*Except the Starter Challenge and Launchpad Challenge, which both include 2 free Resets.
+FAQs
+Where do I find Challenges?
+Head to the Challenges page in your Dashboard to purchase!
+​
+Launchpad Challenge is only available to Traders who have never passed a Trading Combine or Challenge, and do not currently hold a Starter Challenge. Qualifying Traders are emailed the link to purchase automatically, which is the only way to purchase.
+Who can buy a Challenge?
+All Traders, new and existing, can purchase most of our Challenges. However, only Traders who have never purchased with Topstep can purchase the Starter Challenge.
+Can I buy more than 1 Challenge?
+For all challenges except the Starter Challenge, yes. While the Starter Challenge can only be purchased once, you can buy up to 5 of each other type of Challenge per month.
+How many Challenges can be in the Payout Round at once?
+Up to 5. That's separate from the 5 Express Funded Account® (XFA) limit. There's no limit on Challenges in the Challenge Round.
+What's the difference between a Topstep Challenge and a Trading Combine?
+Challenges are designed around a fixed, one-time payout. Complete both rounds, request your Payout, and the account closes.
+Trading Combines are the path to getting funded with Topstep. Pass your Trading Combine to qualify for an Express Funded Account, where you can work toward multiple Payouts and potentially a Live Funded Account.
+Can I trade a Challenge alongside my other accounts?
+Yes. Challenges are separate products. They don't replace or affect your Trading Combines®, XFAs, or Live Funded Accounts® (LFAs) . You can trade them at the same time.
+Do Challenges lead to a Live Funded Account?
+No. How you trade a Challenge has no effect on your eligibility to be called up to Live. If you're called up based on your XFA performance, your Challenges and Payout Rounds stay open and eligible.
+What is a static Maximum Loss Limit?
+A static Maximum Loss Limit is a fixed loss floor. It does not trail up with the account balance like standard Trading Combines. You can learn more about different types of Maximum Loss Limits here .
+What happens if I fail a Challenge?
+If you hit your Maximum Loss Limit, your Challenge ends. Challenges don't offer Resets, so you'll need to purchase a new one to try again.
+​
+The Starter Challenge and Launchpad Challenge are the exception. They both include 2 free Resets.
+What happens if I want a refund?
+Our standard Topstep Refund Policies apply.
+What are minis and micros?
+Term
+Meaning
+Example
+Mini
+A Mini is a smaller futures contract that trades electronically. It’s a fraction of the size of a standard futures contract, so it takes less capital and margin to trade.
+Examples of a mini you'll trade in TopstepX include E-mini S&P 500 (ES) and E-mini NASDAQ 100 (NQ).
+​
+Learn more about what products you can trade here !
+Micro
+A Micro is a mini-sized Mini. It tracks the same market at about 1/10 the size, so you get a lower cost to enter and more control over your position size. In TopstepX, 1 Mini = 10 Micros.
+Examples of a micro you'll trade in TopstepX include Micro E-mini S&P (MES) and Micro E-mini NASDAQ 100 (MNQ).
+​
+Learn more about what products you can trade here !
+Are there any other position limit restrictions I should know about?
+Yes. There are additional restrictions outlined here: Risk Adjustments: High Risk/High Volatility . Additional restrictions are in place for specific high-risk products, or temporarily during Tier 1 News Events. Full details are outlined below.
+Challenge Risk Adjustment Restrictions
+In the Starter Challenge and Launchpad Challenge
+Additional Restrictions : MCL, MGC, MBT, MET, MHG, SIL, HG, PL, and SI are also 0.
+During Tier 1 News Events: Only M6A, M6B, M6E, and MNG can be traded, at 1 lot each. MES, MNQ, MYM, and M2K move to 0.
+In the $500 Challenge
+Additional Restrictions:
+MCL and MGC are limited to 6 lots.
+MBT and MET are limited to 1 lot.
+CL, GC, HO, QM, RB, MHG, SIL, HG, PL, and SI are 0.
+During Tier 1 News Events:
+ES, NQ, YM, RTY, NKD, and GC are 0.
+MES, MNQ, MYM, M2K, and MGC are 0.
+In the $1.5K Challenge
+Additional Restrictions :
+MCL and MGC are limited to 12 lots.
+MBT and MET are limited to 2 lots.
+CL, GC, HO, QM, RB, MHG, and SIL are limited to 1 lot.
+HG, PL, and SI are 0.
+During Tier 1 News Events:
+ES, NQ, YM, RTY, NKD, and GC are 0.
+MES, MNQ, MYM, M2K, and MGC are limited to 1 lot.
+In the $3K Challenge
+Additional Restrictions:
+MCL and MGC are limited to 30 lots.
+MBT and MET are limited to 5 lots.
+CL, GC, HO, QM, and RB are limited to 3 lots.
+MHG and SIL are limited to 2 lots.
+HG, PL, and SI are 0.
+During Tier 1 News Events:
+ES, NQ, YM, RTY, NKD, and GC are 0.
+MES, MNQ, MYM, M2K, and MGC are limited to 3 lots.
+In the $6K Challenge
+Additional Restrictions:
+MCL and MGC are limited to 60 lots.
+MBT and MET are limited to 10 lots.
+CL, GC, HO, QM, and RB are limited to 6 lots.
+MHG and SIL are limited to 5 lots.
+HG, PL, and SI are 0.
+During Tier 1 News Events:
+ES, NQ, YM, RTY, NKD, and GC are 0.
+MES, MNQ, MYM, M2K, and MGC are limited to 6 lots.
+In the $9K Challenge
+Additional Restrictions:
+MCL and MGC are limited to 90 lots.
+MBT and MET are limited to 15 lots.
+CL, GC, HO, QM, and RB are limited to 9 lots.
+MHG and SIL are limited to 7 lots.
+HG, PL, and SI are 0.
+During Tier 1 News Events:
+ES, NQ, YM, RTY, NKD, and GC are 0.
+MES, MNQ, MYM, M2K, and MGC are limited to 9 lots.
+Related Articles
+Topstep Learning
+TopstepX™ — Commissions and Fees
+Risk Adjustments: High Risk/High Volatility
+Topstep Labs
+Starter Challenge
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Your Privacy Choices

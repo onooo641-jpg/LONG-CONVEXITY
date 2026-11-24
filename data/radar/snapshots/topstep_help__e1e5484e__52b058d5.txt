@@ -25,7 +25,7 @@ TopstepX™
 Risk Adjustments: High Risk/High Volatility
 Risk Adjustments: High Risk/High Volatility
 Markets can go haywire. When they do, Topstep may reduce position limits. That's protection, not punishment.
-Updated this week
+Updated today
 Table of contents
 Position Limit Adjustments
 Markets get wild sometimes. Expanding price limits. Velocity Logic halts. Historic ranges in minutes. When that happens, even experienced Traders can get caught on the wrong side fast — and fast losses can end a trading career before it really starts.
@@ -89,7 +89,6 @@ In the $50K Static Trading Combine , MCL and MGC are set to a max of 25 lots, an
 In the $1.5K Challenge - Powered Up , Traders can trade up to 12 contracts of MCL/MGC, 1 contract of CL, GC, HO, QM, RB, MHG, SIL, and 0 of HG, PL, SI.
 In the Return of the $3K Undead Challenge , MCL and MGC are limited to 31 lots. MBT and MET are limited to 5 lots. CL, GC, HO, QM, and RB are limited to 3 lots. MHG and SIL are limited to 2 lots. HG, PL, and SI are 0. During Tier 1 News Events, GC is 0, and MES, MNQ, MYM, M2K, and MGC are limited to 3 lots.
 In the Revenge of the $3K Slasher Challenge , MCL and MGC are limited to 12 lots. MBT and MET are limited to 2 lots. CL, GC, HO, QM, RB, MHG, and SIL are limited to 1 lot. HG, PL, and SI are 0. During Tier 1 News Events, GC is 0, and MES, MNQ, MYM, M2K, and MGC are limited to 1 lot.
-In the Launchpad Challenge , products are capped at 1 micro contract. However, you cannot trade MGC or MCL. During Tier 1 News Events, all trading is blocked.
 ​
 The $100K & $150K Static Trading Combines have the same limitations as standard $100K and $150K Trading Combines listed in the table above.
 ⚠️ Please note: For Express Funded Accounts, position limits for restricted products have a ceiling of the contracts listed above (CL = 3/6/9, for example).
@@ -107,26 +106,26 @@ Micro Gold (MGC)
 50K Express Funded Account
 Below $1500 balance = 1 mini / 12 micros
 $1,500 balance = 1 mini / 18 micros
-$2,000 balance = 3 mini / 31 micros
+$2,000 balance = 3 mini / 30 micros
 100K Express Funded Account
 Below $1500 balance = 1 mini / 18 micros
 $1,500 balance = 2 mini / 25 micros
-$2,000 balance = 3 minis / 31 micros
-$3,000 balance = 6 minis / 62 micros
+$2,000 balance = 3 minis / 30 micros
+$3,000 balance = 6 minis / 60 micros
 150K Express Funded Account
 Below $1500 balance = 1 mini / 18 micros
 $1,500 balance = 2 minis / 25 micros
-$2,000 balance = 3 minis / 31 micros
-$3,000 balance = 6 minis / 62 micros
-$4,500 balance = 9 minis / 93 micros
+$2,000 balance = 3 minis / 30 micros
+$3,000 balance = 6 minis / 60 micros
+$4,500 balance = 9 minis / 90 micros
 250K Express Funded Account
 Below $1500 balance = 1 mini / 18 micros
 $1,500 balance = 2 minis / 25 micros
-$2,000 balance = 3 minis / 31 micros
-$3,000 balance = 6 minis / 62 micros
-$4,500 balance = 9 minis / 93 micros
+$2,000 balance = 3 minis / 30 micros
+$3,000 balance = 6 minis / 60 micros
+$4,500 balance = 9 minis / 90 micros
 $6,000 balance = 12 minis / 125 micros
-$8,000+ balance = 15 minis / 156 micros
+$8,000+ balance = 15 minis / 150 micros
 Example of the Scaling Plan for restricted symbols on the 2/5/7 plan
 Symbols this applies to:
 Micro Silver (SIL)
@@ -212,31 +211,36 @@ Margin
 Max micros
 Equity Minis
 Effect during window
-$1.5K Challenge (Powered Up)
+Starter & Launchpad Challenges
+$1000
+0
+0
+Trading of restricted products blocked
+$500 Challenge
+$1000
+0
+0
+Trading of restricted products blocked
+$1.5K Challenge
 $20,000
 1
 Blocked
 Capped at 1 micro
-$3K Challenge Undead
+$3K Challenge
 $50,000
 3
 Blocked
 Capped at 3 micros
-$3K Challenge Slasher
-$20,000
-1
-Blocked
-Capped at 1 micro
 $6K Challenge
-$20,000
-1
+$100,000
+6
 Blocked
-Capped at 1 micro
-Launchpad Challenge
-$1,000
-0
+Capped at 6 micros
+$9K Challenge
+$150,000
+9
 Blocked
-No Trading available
+Capped at 9 micros
 Trading Combines
 Account
 Margin
@@ -348,10 +352,10 @@ When and What Products Can I Trade?
 Topstep Program Overview
 Related Articles
 Topstep Learning
-When and What Products Can I Trade?
 TopstepX™ — Commissions and Fees
 What is the Scaling Plan?
 Topstep Labs
+Topstep Challenges
 Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
 Table of contents
 Your Privacy Choices

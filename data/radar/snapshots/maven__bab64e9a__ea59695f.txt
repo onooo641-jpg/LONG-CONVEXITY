@@ -151,7 +151,7 @@ Comprar desafío
 Pérdida máxima i Drawdown de seguimiento. La máxima % de pérdida permitida desde tu equity más alta en cualquier momento 3%
 Pérdida diaria i Máximo que puedes perder en 24 horas. Se reinicia a las 00:00 UTC 2%
 División de beneficios i Porcentaje de beneficios de trading que conservas. 80%
-Frecuencia de pagos i Con qué frecuencia puedes solicitar un retiro. Financiada Al cumplir los requisitos
+Frecuencia de pagos i Con qué frecuencia puedes solicitar un retiro. Financiada 10 días hábiles
 Puntaje de consistencia i 20% - para más información consulta las FAQs Sí
 Reglas del desafío
 Lo sentimos, este producto no está disponible en tu región.
@@ -163,7 +163,7 @@ Comprar desafío
 Pérdida máxima i Drawdown de seguimiento. La máxima % de pérdida permitida desde tu equity más alta en cualquier momento 3%
 Pérdida diaria i Máximo que puedes perder en 24 horas. Se reinicia a las 00:00 UTC 2%
 División de beneficios i Porcentaje de beneficios de trading que conservas. 80%
-Frecuencia de pagos i Con qué frecuencia puedes solicitar un retiro. Financiada Al cumplir los requisitos
+Frecuencia de pagos i Con qué frecuencia puedes solicitar un retiro. Financiada 10 días hábiles
 Puntaje de consistencia i 20% - para más información consulta las FAQs Sí
 Reglas del desafío
 Lo sentimos, este producto no está disponible en tu región.
@@ -353,7 +353,7 @@ Comprar desafío
 Pérdida máxima i Drawdown de seguimiento. La máxima % de pérdida permitida desde tu equity más alta en cualquier momento 3%
 Pérdida diaria i Máximo que puedes perder en 24 horas. Se reinicia a las 00:00 UTC 2%
 División de beneficios i Porcentaje de beneficios de trading que conservas. 80%
-Frecuencia de pagos i Con qué frecuencia puedes solicitar un retiro. Financiada Al cumplir los requisitos
+Frecuencia de pagos i Con qué frecuencia puedes solicitar un retiro. Financiada 10 días hábiles
 Puntaje de consistencia i 20% - para más información consulta las FAQs Sí
 Reglas del desafío
 Lo sentimos, este producto no está disponible en tu región.
@@ -365,7 +365,7 @@ Comprar desafío
 Pérdida máxima i Drawdown de seguimiento. La máxima % de pérdida permitida desde tu equity más alta en cualquier momento 3%
 Pérdida diaria i Máximo que puedes perder en 24 horas. Se reinicia a las 00:00 UTC 2%
 División de beneficios i Porcentaje de beneficios de trading que conservas. 80%
-Frecuencia de pagos i Con qué frecuencia puedes solicitar un retiro. Financiada Al cumplir los requisitos
+Frecuencia de pagos i Con qué frecuencia puedes solicitar un retiro. Financiada 10 días hábiles
 Puntaje de consistencia i 20% - para más información consulta las FAQs Sí
 Reglas del desafío
 Lo sentimos, este producto no está disponible en tu región.
@@ -577,7 +577,7 @@ Comprar desafío
 Pérdida máxima i Drawdown de seguimiento. La máxima % de pérdida permitida desde tu equity más alta en cualquier momento 3%
 Pérdida diaria i Máximo que puedes perder en 24 horas. Se reinicia a las 00:00 UTC 2%
 División de beneficios i Porcentaje de beneficios de trading que conservas. 80%
-Frecuencia de pagos i Con qué frecuencia puedes solicitar un retiro. Financiada Al cumplir los requisitos
+Frecuencia de pagos i Con qué frecuencia puedes solicitar un retiro. Financiada 10 días hábiles
 Puntaje de consistencia i 20% - para más información consulta las FAQs Sí
 Reglas del desafío
 Lo sentimos, este producto no está disponible en tu región.
@@ -589,7 +589,7 @@ Comprar desafío
 Pérdida máxima i Drawdown de seguimiento. La máxima % de pérdida permitida desde tu equity más alta en cualquier momento 3%
 Pérdida diaria i Máximo que puedes perder en 24 horas. Se reinicia a las 00:00 UTC 2%
 División de beneficios i Porcentaje de beneficios de trading que conservas. 80%
-Frecuencia de pagos i Con qué frecuencia puedes solicitar un retiro. Financiada Al cumplir los requisitos
+Frecuencia de pagos i Con qué frecuencia puedes solicitar un retiro. Financiada 10 días hábiles
 Puntaje de consistencia i 20% - para más información consulta las FAQs Sí
 Reglas del desafío
 Lo sentimos, este producto no está disponible en tu región.
@@ -801,7 +801,7 @@ Comprar desafío
 Pérdida máxima i Drawdown de seguimiento. La máxima % de pérdida permitida desde tu equity más alta en cualquier momento 3%
 Pérdida diaria i Máximo que puedes perder en 24 horas. Se reinicia a las 00:00 UTC 2%
 División de beneficios i Porcentaje de beneficios de trading que conservas. 80%
-Frecuencia de pagos i Con qué frecuencia puedes solicitar un retiro. Financiada Al cumplir los requisitos
+Frecuencia de pagos i Con qué frecuencia puedes solicitar un retiro. Financiada 10 días hábiles
 Puntaje de consistencia i 20% - para más información consulta las FAQs Sí
 Reglas del desafío
 Lo sentimos, este producto no está disponible en tu región.
@@ -813,7 +813,7 @@ Comprar desafío
 Pérdida máxima i Drawdown de seguimiento. La máxima % de pérdida permitida desde tu equity más alta en cualquier momento 3%
 Pérdida diaria i Máximo que puedes perder en 24 horas. Se reinicia a las 00:00 UTC 2%
 División de beneficios i Porcentaje de beneficios de trading que conservas. 80%
-Frecuencia de pagos i Con qué frecuencia puedes solicitar un retiro. Financiada Al cumplir los requisitos
+Frecuencia de pagos i Con qué frecuencia puedes solicitar un retiro. Financiada 10 días hábiles
 Puntaje de consistencia i 20% - para más información consulta las FAQs Sí
 Reglas del desafío
 Lo sentimos, este producto no está disponible en tu región.
@@ -1021,7 +1021,7 @@ Comprar desafío
 Pérdida máxima i Drawdown de seguimiento. La máxima % de pérdida permitida desde tu equity más alta en cualquier momento 3%
 Pérdida diaria i Máximo que puedes perder en 24 horas. Se reinicia a las 00:00 UTC 2%
 División de beneficios i Porcentaje de beneficios de trading que conservas. 80%
-Frecuencia de pagos i Con qué frecuencia puedes solicitar un retiro. Financiada Al cumplir los requisitos
+Frecuencia de pagos i Con qué frecuencia puedes solicitar un retiro. Financiada 10 días hábiles
 Puntaje de consistencia i 20% - para más información consulta las FAQs Sí
 Reglas del desafío
 Lo sentimos, este producto no está disponible en tu región.
@@ -1033,7 +1033,7 @@ Comprar desafío
 Pérdida máxima i Drawdown de seguimiento. La máxima % de pérdida permitida desde tu equity más alta en cualquier momento 3%
 Pérdida diaria i Máximo que puedes perder en 24 horas. Se reinicia a las 00:00 UTC 2%
 División de beneficios i Porcentaje de beneficios de trading que conservas. 80%
-Frecuencia de pagos i Con qué frecuencia puedes solicitar un retiro. Financiada Al cumplir los requisitos
+Frecuencia de pagos i Con qué frecuencia puedes solicitar un retiro. Financiada 10 días hábiles
 Puntaje de consistencia i 20% - para más información consulta las FAQs Sí
 Reglas del desafío
 Lo sentimos, este producto no está disponible en tu región.
@@ -1241,7 +1241,7 @@ Comprar desafío
 Pérdida máxima i Drawdown de seguimiento. La máxima % de pérdida permitida desde tu equity más alta en cualquier momento 3%
 Pérdida diaria i Máximo que puedes perder en 24 horas. Se reinicia a las 00:00 UTC 2%
 División de beneficios i Porcentaje de beneficios de trading que conservas. 80%
-Frecuencia de pagos i Con qué frecuencia puedes solicitar un retiro. Financiada Al cumplir los requisitos
+Frecuencia de pagos i Con qué frecuencia puedes solicitar un retiro. Financiada 10 días hábiles
 Puntaje de consistencia i 20% - para más información consulta las FAQs Sí
 Reglas del desafío
 Lo sentimos, este producto no está disponible en tu región.
@@ -1253,7 +1253,7 @@ Comprar desafío
 Pérdida máxima i Drawdown de seguimiento. La máxima % de pérdida permitida desde tu equity más alta en cualquier momento 3%
 Pérdida diaria i Máximo que puedes perder en 24 horas. Se reinicia a las 00:00 UTC 2%
 División de beneficios i Porcentaje de beneficios de trading que conservas. 80%
-Frecuencia de pagos i Con qué frecuencia puedes solicitar un retiro. Financiada Al cumplir los requisitos
+Frecuencia de pagos i Con qué frecuencia puedes solicitar un retiro. Financiada 10 días hábiles
 Puntaje de consistencia i 20% - para más información consulta las FAQs Sí
 Reglas del desafío
 Lo sentimos, este producto no está disponible en tu región.
@@ -1407,7 +1407,7 @@ Trading de noticias 2 min antes / después de la noticia 2 min antes / después 
 Mínimo de días rentables – 3 días rentables 4 días rentables – –
 Tiempo mínimo de mantenimiento 50% de las operaciones más de 60 segundos 50% de las operaciones más de 60 segundos 150 segundos en Financiada 50% de las operaciones más de 60 segundos 50% de las operaciones más de 60 segundos
 Máximo de días de trading – – 180 días – –
-Frecuencia de pago 10 días hábiles 10 días hábiles 10 días hábiles 10 días hábiles A demanda al cumplir los requisitos
+Frecuencia de pago 10 días hábiles 10 días hábiles 10 días hábiles 10 días hábiles 10 días hábiles
 Riesgo abierto máximo – – 2% M2 Account Saver – 1%
 Reparto de beneficios 80% 80% 80% 80% 80%
 Apalancamiento 1:75 Forex 1:20 Índices 1:20 Materias primas 1:2 ETFs digitales 1:75 Forex 1:20 Índices 1:20 Materias primas 1:2 ETFs digitales 1:75 Forex 1:20 Índices 1:20 Materias primas 1:100 Oro 1:2 ETFs digitales 1:75 Forex 1:20 Índices 1:20 Materias primas 1:2 ETFs digitales 1:75 Forex 1:20 Índices 1:20 Materias primas 1:2 ETFs digitales
@@ -1467,7 +1467,7 @@ Frecuencia de pago Desafío 1 paso 10 días hábiles
 Desafío 2 pasos 10 días hábiles
 Desafío OMO 2 pasos 10 días hábiles
 Desafío 3 pasos 10 días hábiles
-Financiación instantánea A demanda al cumplir los requisitos
+Financiación instantánea 10 días hábiles
 Riesgo abierto máximo Desafío 1 paso –
 Desafío 2 pasos –
 Desafío OMO 2 pasos 2% M2 Account Saver

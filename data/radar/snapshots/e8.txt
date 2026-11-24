@@ -10,48 +10,48 @@ $3700 Todays Payout
 724 Behavioral Score
 +0.46% Tilt Factor
 SimFi is a simulated trading environment that measures your discipline and pays you when it improves.
-EURUSD 1.09408 +0.09%
-GBPUSD 1.30787 +0.06%
-USDJPY 159.391 −0.01%
-USDCHF 0.84129 −0.13%
-AUDUSD 0.66568 +0.33%
-USDCAD 1.43475 −0.08%
-NZDUSD 0.54614 +0.14%
-BTCUSD 64,268.06 +1.99%
-ETHUSD 1,837.54 +2.48%
-BNBUSD 587.06 +2.34%
-XRPUSD 1.017 +3.85%
-SOLUSD 78.07 +3.47%
-ADAUSD 0.15601 +3.38%
-DOGEUSD 0.0601 +3.39%
-WTI 83.195 +0.01%
-BRENT 91.216 +0.01%
-SP 7,259.50 +0.65%
-NSDQ 26,808.64 +0.40%
-DOW 49,472.44 +0.20%
-DAX 25,206.68 −0.05%
-NIKKEI 58,639.00 +0.65%
-EURUSD 1.09408 +0.09%
-GBPUSD 1.30787 +0.06%
-USDJPY 159.391 −0.01%
-USDCHF 0.84129 −0.13%
-AUDUSD 0.66568 +0.33%
-USDCAD 1.43475 −0.08%
-NZDUSD 0.54614 +0.14%
-BTCUSD 64,268.06 +1.99%
-ETHUSD 1,837.54 +2.48%
-BNBUSD 587.06 +2.34%
-XRPUSD 1.017 +3.85%
-SOLUSD 78.07 +3.47%
-ADAUSD 0.15601 +3.38%
-DOGEUSD 0.0601 +3.39%
-WTI 83.195 +0.01%
-BRENT 91.216 +0.01%
-SP 7,259.50 +0.65%
-NSDQ 26,808.64 +0.40%
-DOW 49,472.44 +0.20%
-DAX 25,206.68 −0.05%
-NIKKEI 58,639.00 +0.65%
+EURUSD 1.09098 −0.02%
+GBPUSD 1.30383 −0.01%
+USDJPY 158.957 +0.01%
+USDCHF 0.84157 +0.02%
+AUDUSD 0.66249 −0.02%
+USDCAD 1.43625 +0.01%
+NZDUSD 0.54487 −0.01%
+BTCUSD 60,527.07 +0.36%
+ETHUSD 1,701.48 +0.46%
+BNBUSD 555.63 +0.54%
+XRPUSD 0.9552 +1.08%
+SOLUSD 71.90 +1.03%
+ADAUSD 0.14861 +0.95%
+DOGEUSD 0.05657 +1.05%
+WTI 80.781 −0.36%
+BRENT 89.073 −0.29%
+SP 7,250.50 +0.01%
+NSDQ 26,733.24 −0.00%
+DOW 49,684.44 +0.02%
+DAX 25,352.58 +0.03%
+NIKKEI 58,662.00 −0.04%
+EURUSD 1.09098 −0.02%
+GBPUSD 1.30383 −0.01%
+USDJPY 158.957 +0.01%
+USDCHF 0.84157 +0.02%
+AUDUSD 0.66249 −0.02%
+USDCAD 1.43625 +0.01%
+NZDUSD 0.54487 −0.01%
+BTCUSD 60,527.07 +0.36%
+ETHUSD 1,701.48 +0.46%
+BNBUSD 555.63 +0.54%
+XRPUSD 0.9552 +1.08%
+SOLUSD 71.90 +1.03%
+ADAUSD 0.14861 +0.95%
+DOGEUSD 0.05657 +1.05%
+WTI 80.781 −0.36%
+BRENT 89.073 −0.29%
+SP 7,250.50 +0.01%
+NSDQ 26,733.24 −0.00%
+DOW 49,684.44 +0.02%
+DAX 25,352.58 +0.03%
+NIKKEI 58,662.00 −0.04%
 Over $81M paid out to traders who trained impulse into discipline
 500,000+
 traders worldwide
@@ -102,7 +102,7 @@ Rewards
 Payout 80%
 First payout in as little as 3 Days
 Activation fee No Activation Fee
-Average First Payout $5,785
+Average First Payout $5,774
 Save with code E8 Copy
 Turn reactive trading into controlled execution, Train under real market conditions with SimFi™. Turn reactive trading into controlled execution, and get paid.
 Start Your Training
@@ -280,7 +280,7 @@ A device, an internet connection, and a trading strategy. Select your account si
 How can I start earning?
 Pass the SimFi™ Challenge by hitting the profit target while staying within the guardrails. Once you reach the SimFi™ Performance Account stage and meet the payout conditions, you can request payouts based on your validated performance data.
 Where is your proof?
-$81M+ in payouts processed since 2021, verified independently on PropFirmMatch, and PayoutJunction. Our Discord community of 42,370+ traders is open - ask anyone who has been through the process.
+$81M+ in payouts processed since 2021, verified independently on PropFirmMatch, and PayoutJunction. Our Discord community of 42,461+ traders is open - ask anyone who has been through the process.
 Get in contact with us directly from this site with our live customer support or at our help center
 Quick links
 Challenges

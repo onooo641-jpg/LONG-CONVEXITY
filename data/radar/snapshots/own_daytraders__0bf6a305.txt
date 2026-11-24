@@ -85,6 +85,60 @@ Processing Time
 Trades
 Account Type
 Location
+Nov 23, 2026
+J*****
+$1,100
+3 Mins
+50k Trail Rithmic
+Toulouse, France
+Nov 23, 2026
+W*******
+$1,950
+35 Mins
+50k Trail Rithmic
+Queens, USA
+Nov 23, 2026
+C*****
+$500
+6 Mins
+Live Account
+Austin, USA
+Nov 23, 2026
+C*****
+$500
+6 Mins
+Live Account
+Austin, USA
+Nov 23, 2026
+A****
+$2,000
+4 Hours
+50k Trail Rithmic
+Dubai, United Arab Emirates
+Nov 23, 2026
+A****
+$2,000
+4 Hours
+50k Trail Rithmic
+Dubai, United Arab Emirates
+Nov 23, 2026
+E******
+$1,300
+1 Hours
+50K EOD Rithmic
+Bilbao, Spain
+Nov 23, 2026
+E******
+$3,500
+1 Hours
+150k Static Rithmic
+Rugby, United Kingdom
+Nov 23, 2026
+A***
+$1,000
+2 Hours
+25k Trail Rithmic
+Huntersville, USA
 Nov 20, 2026
 O******
 $600
@@ -181,60 +235,6 @@ $3,500
 17 Hours
 150k Static Rithmic
 Houston, USA
-Nov 19, 2026
-Q**
-$3,500
-17 Hours
-150k Static Rithmic
-Houston, USA
-Nov 19, 2026
-Q**
-$3,500
-17 Hours
-150k Static Rithmic
-Houston, USA
-Nov 19, 2026
-L****
-$3,000
-15 Mins
-300k Trail Rithmic
-Bowie, USA
-Nov 19, 2026
-L****
-$3,000
-15 Mins
-300k Trail Rithmic
-Bowie, USA
-Nov 19, 2026
-L****
-$3,050
-17 Mins
-300k Trail Rithmic
-Bowie, USA
-Nov 19, 2026
-L****
-$3,000
-17 Mins
-300k Trail Rithmic
-Bowie, USA
-Nov 19, 2026
-L****
-$3,000
-20 Mins
-300k Trail Rithmic
-Bowie, USA
-Nov 19, 2026
-L****
-$3,000
-24 Mins
-300k Trail Rithmic
-Bowie, USA
-Nov 19, 2026
-L****
-$3,000
-25 Mins
-300k Trail Rithmic
-Bowie, USA
 1
 2
 3

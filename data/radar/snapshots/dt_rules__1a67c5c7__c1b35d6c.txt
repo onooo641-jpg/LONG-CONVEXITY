@@ -36,7 +36,7 @@ Affiliate Program
 Agreements and Disclaimers
 All Collections General Holiday Calendar 2027 Holiday Calendar 2027
 Review the Chicago Mercantile Exchange schedule for exact market closures, modified hours, and futures holidays to optimize institutional trade execution and ensure precise risk management across all sessions.
-Updated this week
+Updated over a week ago
 Copy for LLM
 This Calendar includes Holidays and affected surrounding days with their respective hours of trading as per the CME
 New Year’s Day (January 1st, 2027)
@@ -305,7 +305,7 @@ Saturday, Jan 1, 2028
 Not a trading Day. Market Closed.
 Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
 Related Articles
-Static Payouts
+EOD Payouts
 Trading Hours, Holidays and Overnight Positions
 Glossary
 Dashboard Stats and Account Chart

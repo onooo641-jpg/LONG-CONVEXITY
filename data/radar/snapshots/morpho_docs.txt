@@ -1,5 +1,5 @@
 Get Started | Morpho Docs
-Docs Get Started Learn Curate Developers Morpho API
+Docs Get Started Learn Curate Developers API reference
 Search ⌘ K
 Launch App
 Get Started
@@ -9,7 +9,7 @@ Learn how Morpho works, explore its products, and build on the open credit netwo
 What can I help you with?
 How do I integrate Morpho with agents? How do Morpho Vaults work? How does borrowing on Morpho work?
 Build with AI agents
-Morpho Agents is experimental and pre-v1.0: tool schemas and commands may change without notice. Do not build production systems against it yet; production agents should call the REST API directly.
+Morpho MCP and skills are experimental and pre-v1.0: tool schemas and commands may change without notice. Do not build production systems against them yet; production agents should call the Read API directly.
 Morpho MCP
 Connect Claude Code, Codex, or Cursor to live Morpho data and unsigned transactions. No API key needed.
 Set up MCP
@@ -27,8 +27,8 @@ For protocol developers
 Build onchain with Morpho primitives
 Explore contracts
 Integration methods
-API
-Query markets, vaults, and positions over REST.
+API reference
+Query markets, vaults, and positions through the Read API.
 →
 Typescript SDK
 Typed, viem-based libraries for reading data and building transactions.

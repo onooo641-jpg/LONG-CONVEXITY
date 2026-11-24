@@ -13,9 +13,9 @@ of payouts auto-approved in milliseconds
 Profit split on Rapid
 $0
 Activation fee on any MFFU plan
-Limited-time plans
+Signature plans
 New plans. Payouts anytime.
-Meet Studio #001, #002 and #003, the first releases from MyFundedStudio. Request all your profits anytime, with a static Max Loss Limit that never moves.
+Meet Signature: $5K, $10K and $20K accounts. Request all your profits anytime, with a static Max Loss Limit that never moves.
 Payout requests Anytime $100 or $250 minimum
 Max Loss Limit Static $250, $500 or $1,000
 Consistency rule None No DLL either
@@ -34,8 +34,208 @@ Published before you start Rules upfront. No moving goalposts. Every target, lim
 Answered 24/7 in Discord Support from real traders and product pros Get help from the MFFU team and connect with experienced traders 24/7 in our Discord community.
 Explore plans
 Find your plan Choose the plan that matches how you trade.
-Four plans, each with clear rules. Compare cost, account size, drawdown model, payout speed, and profit split to find what is best for you.
-Standard Standard Plans Studio Static Plans
+Five plans, each with clear rules. Compare cost, account size, drawdown model, payout speed, and profit split to find what is best for you.
+Signature Static Plans Standard Standard Plans
+Select your plan
+Signature 5K
+Anytime payouts, static MLL
+One-time payment $62.50 Based on current promotions
+$125
+Start Now
+Evaluation Stage Profit Target $500
+Max Loss Limit $250 · Static
+Daily Loss Limit None
+Consistency None
+Max Size 5 micros
+View Funded Rules
+Signature 5K
+Anytime payouts, static MLL
+One-time payment $62.50 Based on current promotions
+$125
+Start Now
+Sim Funded Stage Payouts Anytime · $100 min
+Profit Split 80%
+Daily Loss Limit None
+Consistency None
+Payout Buffer None
+View Evaluation Rules
+Signature 10K
+Anytime payouts, static MLL
+One-time payment $116.50 Based on current promotions
+$233
+Start Now
+Evaluation Stage Profit Target $1,000
+Max Loss Limit $500 · Static
+Daily Loss Limit None
+Consistency None
+Max Size 10 micros
+View Funded Rules
+Signature 10K
+Anytime payouts, static MLL
+One-time payment $116.50 Based on current promotions
+$233
+Start Now
+Sim Funded Stage Payouts Anytime · $250 min
+Profit Split 80%
+Daily Loss Limit None
+Consistency None
+Payout Buffer None
+View Evaluation Rules
+Signature 20K
+Anytime payouts, static MLL
+One-time payment $233.50 Based on current promotions
+$467
+Start Now
+Evaluation Stage Profit Target $2,000
+Max Loss Limit $1,000 · Static
+Daily Loss Limit None
+Consistency None
+Max Size 20 micros
+View Funded Rules
+Signature 20K
+Anytime payouts, static MLL
+One-time payment $233.50 Based on current promotions
+$467
+Start Now
+Sim Funded Stage Payouts Anytime · $250 min
+Profit Split 80%
+Daily Loss Limit None
+Consistency None
+Payout Buffer None
+View Evaluation Rules
+Signature 5K
+Anytime payouts, static MLL
+One-time payment $62.50 Based on current promotions
+$125
+Start Now
+Evaluation Stage Profit Target $500
+Max Loss Limit $250 · Static
+Daily Loss Limit None
+Consistency None
+Max Size 5 micros
+View Funded Rules
+Signature 5K
+Anytime payouts, static MLL
+One-time payment $62.50 Based on current promotions
+$125
+Start Now
+Sim Funded Stage Payouts Anytime · $100 min
+Profit Split 80%
+Daily Loss Limit None
+Consistency None
+Payout Buffer None
+View Evaluation Rules
+Signature 10K
+Anytime payouts, static MLL
+One-time payment $116.50 Based on current promotions
+$233
+Start Now
+Evaluation Stage Profit Target $1,000
+Max Loss Limit $500 · Static
+Daily Loss Limit None
+Consistency None
+Max Size 10 micros
+View Funded Rules
+Signature 10K
+Anytime payouts, static MLL
+One-time payment $116.50 Based on current promotions
+$233
+Start Now
+Sim Funded Stage Payouts Anytime · $250 min
+Profit Split 80%
+Daily Loss Limit None
+Consistency None
+Payout Buffer None
+View Evaluation Rules
+Signature 20K
+Anytime payouts, static MLL
+One-time payment $233.50 Based on current promotions
+$467
+Start Now
+Evaluation Stage Profit Target $2,000
+Max Loss Limit $1,000 · Static
+Daily Loss Limit None
+Consistency None
+Max Size 20 micros
+View Funded Rules
+Signature 20K
+Anytime payouts, static MLL
+One-time payment $233.50 Based on current promotions
+$467
+Start Now
+Sim Funded Stage Payouts Anytime · $250 min
+Profit Split 80%
+Daily Loss Limit None
+Consistency None
+Payout Buffer None
+View Evaluation Rules
+Signature 5K $62.50 Signature 5K
+Anytime payouts, static MLL
+One-time payment $62.50 Based on current promotions
+$125
+Start Now
+Evaluation Stage Profit Target $500
+Max Loss Limit $250 · Static
+Daily Loss Limit None
+Consistency None
+Max Size 5 micros
+View Funded Rules
+Signature 5K
+Anytime payouts, static MLL
+One-time payment $62.50 Based on current promotions
+$125
+Start Now
+Sim Funded Stage Payouts Anytime · $100 min
+Profit Split 80%
+Daily Loss Limit None
+Consistency None
+Payout Buffer None
+View Evaluation Rules
+Signature 10K $116.50 Signature 10K
+Anytime payouts, static MLL
+One-time payment $116.50 Based on current promotions
+$233
+Start Now
+Evaluation Stage Profit Target $1,000
+Max Loss Limit $500 · Static
+Daily Loss Limit None
+Consistency None
+Max Size 10 micros
+View Funded Rules
+Signature 10K
+Anytime payouts, static MLL
+One-time payment $116.50 Based on current promotions
+$233
+Start Now
+Sim Funded Stage Payouts Anytime · $250 min
+Profit Split 80%
+Daily Loss Limit None
+Consistency None
+Payout Buffer None
+View Evaluation Rules
+Signature 20K $233.50 Signature 20K
+Anytime payouts, static MLL
+One-time payment $233.50 Based on current promotions
+$467
+Start Now
+Evaluation Stage Profit Target $2,000
+Max Loss Limit $1,000 · Static
+Daily Loss Limit None
+Consistency None
+Max Size 20 micros
+View Funded Rules
+Signature 20K
+Anytime payouts, static MLL
+One-time payment $233.50 Based on current promotions
+$467
+Start Now
+Sim Funded Stage Payouts Anytime · $250 min
+Profit Split 80%
+Daily Loss Limit None
+Consistency None
+Payout Buffer None
+View Evaluation Rules
+See the full rules
 Select your plan
 $25K $50K $100K $150K
 BUILDER
@@ -63,6 +263,20 @@ Max Drawdown 2,000
 Sim Funded Stage Get Paid Daily
 Profit Split 90/10
 Drawdown Type Intraday
+Consistency None
+See more info
+$5K $10K $20K
+SIGNATURE
+Anytime payouts, static MLL
+One-time payment $62.50 Based on current promotions
+$125
+Start Now
+Evaluation Stage Days to Pass 1
+Profit Target $500
+Max Drawdown $250
+Sim Funded Stage Get Paid Anytime
+Profit Split 80/20
+Drawdown Type Static
 Consistency None
 See more info
 $25K $50K
@@ -119,6 +333,20 @@ Max Drawdown 2,000
 Sim Funded Stage Get Paid Daily
 Profit Split 90/10
 Drawdown Type Intraday
+Consistency None
+See more info
+$5K $10K $20K
+SIGNATURE
+Anytime payouts, static MLL
+One-time payment $62.50 Based on current promotions
+$125
+Start Now
+Evaluation Stage Days to Pass 1
+Profit Target $500
+Max Drawdown $250
+Sim Funded Stage Get Paid Anytime
+Profit Split 80/20
+Drawdown Type Static
 Consistency None
 See more info
 $25K $50K

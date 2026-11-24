@@ -1,0 +1,79 @@
+How to Request a Payout | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Getting Started: From Sign-Up to First Payout
+Logging In and Credentials
+Plan Comparison Overview
+Maximum Number of Accounts
+Instruments and Commissions
+Billing
+Paying for Your Order
+Market Data, Add-Ons and Fees
+How to Request a Payout
+Taxes and Payout Documents
+Dashboard Stats and Account Chart
+Understanding Futures Contracts And When To Roll
+Market Orders vs. Limit Orders
+Giveaway Rules
+Who Can Sign Up
+DT Wallet FAQ
+Holiday Calendar 2026
+Glossary
+About DayTraders
+Holiday Calendar 2027
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Platforms
+Trading Rules and Guidelines
+Affiliate Program
+Agreements and Disclaimers
+All Collections General How to Request a Payout How to Request a Payout
+Set up your Payout Method with Plane, request a payout from a Pro or S2F account, timing, and what voids a payout.
+Updated over 3 weeks ago
+Copy for LLM
+Payouts from Pro and S2F accounts start at $500, in $50 increments. Your plan sets its own Qualifying Day, consistency and balance rules.
+1. Set up your Payout Method (one time)
+On your Dashboard, open Payout Method and fill in the required fields: US citizen or US taxpayer status, government ID or passport number, Payout Type (Plane) and Payout Email (the email you'll use for Plane). Click Update .
+Plane emails you an invitation (subject similar to "Your Plane Account Setup"). Click Get Started .
+Create your Plane account and sign the contract digitally.
+Add your bank details in Plane.
+The Payout Method fields on your Dashboard.
+Important: you can't request a payout until a bank account is added in Plane.
+Prefer the DT Wallet? Choose it when you request: it's credited on approval, but can't be withdrawn as cash.
+2. Request a payout
+Click Request Payout on your Dashboard and select the account.
+Enter the amount in USD, agree to the terms and complete the CAPTCHA.
+Submit, then place at least one trade so the payout appears on your charts.
+The day a payout is approved doesn't count as a Qualifying Day. Payouts approved before the daily reports load (5:00–6:00 PM ET) are reflected the same day. You'll get an email once it's approved.
+Timing matters: what counts is when your payout is approved and debited, not when you request it. If you request before 5:00 PM ET but the payout is approved and debited after 5:00 PM ET, it appears on your charts the next day, and the amount is deducted from your account balance the next day. Place a small trade on the day it's approved so the payout shows when the reports load the following day.
+What voids a payout
+Rule violations, such as hedging or high-frequency trading.
+Fraud or account sharing, which also removes you from the platform.
+A balance below your plan's minimum after the withdrawal.
+A breach after requesting, unless the payout was already approved.
+If you're called to live: moving to live is at the firm's discretion. All payout requests you submit that day are added together. At $10,000 or more, half is paid to your Payout Method and half becomes your live account's max drawdown. Under $10,000, you choose: 100% of the payout plus free S2L evaluations, or put $1,000–$10,000 toward live as your max drawdown and receive the rest. Excess simulated balances are generally forfeited, but they may be used as performance rewards in live, subject to the Risk Team's discretion. If you are not comfortable with this, do not build large excess simulated balances.
+Payout rules by account type
+Intraday Trail: Trail Payouts
+Static: Static Payouts
+EOD Trail: EOD Payouts
+S2F (Straight-to-Sim-Funded): S2F Payouts
+Live & S2L: Live Payouts
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+Trail Payouts
+EOD Payouts
+S2F Payouts
+About DayTraders
+Getting Started: From Sign-Up to First Payout
+On this page
+1. Set up your Payout Method (one time)
+2. Request a payout
+What voids a payout
+Payout rules by account type

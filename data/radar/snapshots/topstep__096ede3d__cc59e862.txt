@@ -25,7 +25,7 @@ Getting Started
 Topstep Holiday Trading Hours
 Topstep Holiday Trading Hours
 Holidays bring shortened or closed markets. Know before you trade.
-September 18, 2026
+Updated today
 Table of contents
 Overview
 Holidays bring shortened or closed markets. All account types must close positions 15 minutes before any early close. Positions still open at the cutoff are auto-liquidated. Topstep emails details before each holiday.
@@ -82,7 +82,8 @@ Thu Nov 26, 2026
 17:00 CT Thu Nov 26
 Day After Thanksgiving
 Fri Nov 27, 2026
-12:00 CT
+SIM: 12:00 CT
+Live: 11:25 CT
 17:00 CT Sun Nov 29
 Christmas Eve
 Thu Dec 24, 2026

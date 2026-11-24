@@ -1,0 +1,170 @@
+Starter Challenge | Topstep Help Center Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Copyright 2023. Intercom Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. Skip to main content
+Discord Topstep TopstepTV
+Discord Topstep TopstepTV
+Search for articles...
+All Collections
+Topstep Program
+Topstep Challenges
+Starter Challenge
+Starter Challenge
+New to trading? Start here. $10. 2 rounds. 1 Payout.
+Updated today
+Table of contents
+The Starter Challenge is a 2-round account for Traders who have never spent money with Topstep. Pay $10 one time. Hit the Profit Target in the Challenge Round, then again in the Payout Round, and request a fixed $100 Cash Payout.
+Who can buy it
+Traders who have never spent money with Topstep.
+Free accounts don’t count as a purchase.
+Limit of 1 per Trader.
+Parameters
+Parameter
+Detail
+Price
+$10, one time
+Starting balance
+$0
+Profit Target (the amount you need to earn)
+$100
+Maximum Loss Limit
+$100 (static, doesn’t trail)
+Max Contracts
+1 micro
+Daily Loss Limit
+None
+Consistency Target
+None
+Resets
+2 free, Challenge Round only
+Payout
+Fixed $100, paid 1 time. No profit split.
+Payout Round activation fee
+Free
+Lifespan
+90 days per round
+Inactivity
+Closes after 30 days with no trades
+New to trading? A Profit Target is the amount of simulated profit you need to make to pass a round. A Maximum Loss Limit is the most your simulated account can lose before violating the account rules.
+How does the Starter Challenge work?
+Round 1: Challenge Round
+Purchase your Starter Challenge for $10.
+Open TopstepX and start trading in the Challenge Round.
+Reach your $100 Profit Target without breaking the account rules to pass.
+When you pass, trading automatically stops and your account displays "Passed."
+Need another try? You get two free Resets in the Challenge Round. A Reset returns your account to its starting balance and clears its previous rule violations.
+Round 2: Payout Round
+Open your Topstep Dashboard and activate the Payout Round.
+A new, separate trading account will be created. It can take up to 15 minutes to become available.
+Trade in your new account and reach another $100 Profit Target while following the rules to pass the Challenge.
+When you pass, trading automatically stops, and you can request your $100 cash payout through your Dashboard.
+Important: There are no Resets in the Payout Round. The Starter Challenge account closes after the Payout.
+New to Topstep?
+Get set up
+Create your account at dashboard.topstep.com . Sign up with an email address, Google, or Facebook.
+Multi-factor authentication (MFA) is required to log in. See the setup steps .
+Policy: 1 profile per Trader.
+You must be 18 or older. No US citizenship required. Check eligibility .
+Trade on TopstepX only. Log in with the same credentials as your Dashboard.
+Learn and connect
+Training Camp: a guided practice mode in your Dashboard that teaches trading fundamentals. Dashboard guide
+Futures Trading 101: 6 lessons on core futures concepts. Start here
+More resources: Topstep Learning
+TopstepTV and Discord: Topstep Community
+Trader Lingo
+Term
+Meaning
+Example
+Long
+Buying a contract with the expectation that price will rise.
+Placing a buy order for 1 NQ
+Short
+Selling a contract with the expectation of buying it back at a lower price.
+Placing a sell order for 3 ES
+Lots / Position Size / Contracts
+Units of trade. All mean the same thing.
+​
+​
+1 mini is a lot/contract. An account that can trade a maximum of 1/10 has a Maximum Position Size of 1 mini and 10 micros (hint: 1 mini = 10 micros). Learn more about what products you can trade here .
+Mini
+A Mini is a smaller futures contract that trades electronically. It’s a fraction of the size of a standard futures contract, so it takes less capital and margin to trade.
+Examples of a mini you'll trade in TopstepX include E-mini S&P 500 (ES) and E-mini NASDAQ 100 (NQ).
+​
+Learn more about what products you can trade here !
+Micro
+A Micro is a mini-sized Mini. It tracks the same market at about 1/10 the size, so you get a lower cost to enter and more control over your position size. In TopstepX, 1 Mini = 10 Micros.
+Examples of a micro you'll trade in TopstepX include Micro E-mini S&P (MES) and Micro E-mini NASDAQ 100 (MNQ).
+​
+Learn more about what products you can trade here !
+Tick
+The minimum price increment a contract can move.
+For E-mini S&P 500 (ES), one tick is worth $12.50 per contract.
+Slippage
+Execution at a different price than expected. Common in fast markets. Only occurs with market orders.
+You place a market order to buy 1 NQ at 21,000.00 and get filled at 21,000.50. That is 2 ticks of slippage, or $10.
+Fat-Finger
+Accidental order entry error
+Buying 10 contracts when you meant to buy 1
+Full Trader Lingo glossary
+FAQs
+Where do I find the Starter Challenge?
+Eligible Traders see it on their Topstep Dashboard!
+Can I use a promo code?
+Yes. The Starter Challenge accepts any promo code.
+How do Resets work?
+A Reset returns your Challenge to its original starting balance — Account Balance and Maximum Loss Limit (MLL) all go back to day one. It's a second chance!
+You get 2 free Resets in the Challenge Round.
+There are no Resets in the Payout Round.
+You apply a Reset from your Topstep Dashboard by going to the Accounts page, selecting the Challenge you’d like to Reset, and clicking the Reset button.
+Does the Starter Challenge lead to a Live Funded Account®?
+No. There’s no path to a Live Funded Account (LFA) through the Starter Challenge.
+What happens if I want a refund?
+Our standard Topstep Refund Policies apply.
+Are there any other limitations I should know about?
+In the Starter Challenge , products are capped at 1 micro contract. However, additional trading limitations apply due to high-risk product limitations. See details below.
+Additional Restrictions : MCL, MGC, MBT, MET, MHG, SIL, HG, PL, and SI are 0.
+During Tier 1 News Events: Only M6A, M6B, M6E, and MNG can be traded, at 1 lot each. MES, MNQ, MYM, and M2K move to 0.
+Learn more about why here .
+Tier 1 News Events Timeframes
+Event
+Announcement (CT)
+Window (CT)
+Consumer Price Index (CPI)
+7:30 AM
+7:25 to 7:35 AM
+FOMC rate decision
+1:00 PM
+12:55 to 1:05 PM
+FOMC press conference
+1:30 PM
+1:25 to 1:35 PM
+Non Farm Payroll (NFP/Unemployment Rate)
+7:30 AM
+7:25 to 7:35 AM
+Producer Price Index (PPI)
+7:30 AM
+7:25 to 7:35 AM
+Related Articles
+Topstep Learning
+What is a Reset?
+Trading Combine® Parameters
+Topstep Labs
+Topstep Challenges
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents
+Your Privacy Choices

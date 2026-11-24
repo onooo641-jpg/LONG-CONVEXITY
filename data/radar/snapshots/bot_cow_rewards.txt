@@ -1,0 +1,119 @@
+---
+id: rewards
+sidebar_position: 3
+---
+# Solver rewards
+The protocol is currently subsidizing the solver competition on all chains it operates on, by rewarding solvers on a weekly basis (currently, every Tuesday) with rewards paid in COW. Solvers are rewarded based on their performance and participation in the solver competition as specified by [CIP-20](https://snapshot.org/#/cow.eth/proposal/0x2d3f9bd1ea72dca84b03e97dda3efc1f4a42a772c54bd2037e8b62e7d09a491f), [CIP-36](https://snapshot.org/#/cow.eth/proposal/0x4e58f9c1208121c0e06282b5541b458bc8c8b76090263e25448848f3194df986), [CIP-38](https://snapshot.org/#/cow.eth/proposal/0xfb81daea9be89f4f1c251d53fd9d1481129b97c6f38caaddc42af7f3ce5a52ec), [CIP-48](https://snapshot.org/#/cow.eth/proposal/0x563ab9a66265ad72c47a8e55f620f927685dd07d4d49f6d1812905c683f05805), [CIP-57](https://snapshot.box/#/s:cow.eth/proposal/0x46d4fea1492207cf400fcb7a01141a7d4c730791d658cc77236941fc9eb7dccb), [CIP-67](https://snapshot.box/#/s:cow.eth/proposal/0xf9ecb08c4738f04c4525373d6b78085d16635f86adacd1b8ea77b2c176c99d32), [CIP-74](https://snapshot.org/#/s:cow.eth/proposal/0x0c70c8cd92accee872b52614b4fa10e3e3214f45c5b6857f7e88e910607a3c1d), [CIP-85](https://snapshot.box/#/s:cow.eth/proposal/0xb488c343df3ba5f3857a4c7a920a74e18c13a2cdce99d27af34216803da6abff), and [CIP-87](https://snapshot.box/#/s:cow.eth/proposal/0x0502452cbad7c84ce4136b1b2f31071d9601042cc044936a4c5a37e923844f72). Solver rewards for participating in the price estimation competition and providing quotes that are needed for the gas estimates and limit price computations of market orders, which from now on we will call price estimation or quote rewards, are specified in [CIP-27](https://snapshot.org/#/cow.eth/proposal/0x64e061568e86e8d2eec344d4a892e4126172b992cabe59a0b24c51c4c7e6cc33), [CIP-36](https://snapshot.org/#/cow.eth/proposal/0x4e58f9c1208121c0e06282b5541b458bc8c8b76090263e25448848f3194df986), [CIP-57](https://snapshot.box/#/s:cow.eth/proposal/0x46d4fea1492207cf400fcb7a01141a7d4c730791d658cc77236941fc9eb7dccb), and [CIP-72](https://snapshot.box/#/s:cow.eth/proposal/0xc1b1252f0c99126b4e09730022faa31a7bb58073a3dc064c19b74d44164c39a7).
+:::note
+For the interested reader, the main source of truth for the weekly payments to solvers is this [Dune dashboard](https://dune.com/cowprotocol/cow-solver-rewards). The dashboard is populated with data aggregated by scripts within the [solver-rewards](https://github.com/cowprotocol/solver-rewards) repository.
+:::
+## Solver competition rewards (CIPs 20, 36, 38, 48, 57, 67, 74, 85, 87)
+### Performance rewards
+Performance rewards are computed using a mechanism akin to a Vickrey–Clarke–Groves mechanism (a generalization of a second-price auction to combinatorial auctions). First, each solver proposes multiple solutions. Each solution contains a price vector and a list of trades to execute, which can be used to compute the solution's score. The protocol then selects the winning solutions (and winning solvers) using a fair combinatorial auction, which first filters out the solutions deemed unfair and then selects the combination of fair solutions that maximizes the total score of the auction (see [here](competition-rules#off-chain-protocol) for more details).
+:::note
+From the protocol's perspective, a solution as executed onchain must equal the solution as submitted at the bidding stage.
+:::
+The performance reward to the winning solver $$i$$ is
+$$
+\textrm{performanceReward}_i = \textrm{cap}(\textrm{totalScore} - \textrm{referenceScore}_i-\textrm{missingScore}_i).
+$$
+Here $$\textrm{totalScore}$$ is the sum of the scores of all winning solutions in the auction and $$\textrm{missingScore}_i$$ is the sum of the scores of solver $$i$$'s winning solutions that did not settle in time. Finally, $$\textrm{referenceScore}_i$$ is the total score of a counterfactual auction in which all bids from solver $$i$$ are removed from the set of bids that survive the fairness filtering. If only one solver submits solutions, $$\textrm{referenceScore}_i$$ is, by definition, zero.
+:::note
+The performance reward calculation can result in a negative value, in which case the solver is required to pay the protocol.
+:::
+The performance reward is capped from above and below using the function $$\textrm{cap}(x) = \max(-c_l, \min(c_u, x))$$.
+The upper cap $$c_u$$ is equal to a chain-specific fraction $$\beta$$ of the protocol fee (excluding partner fees) that the protocol earned from the trades in all solutions successfully executed on-chain by the solver in that auction. $$\beta$$ is determined by the following values:
+- Ethereum mainnet, Arbitrum, Base chain, and BNB: $$\beta = 50\%$$
+- Gnosis Chain, Avalanche, Polygon, Linea, Ink, and Plasma: $$\beta = 100\%$$
+The parameter $$\beta$$, which naturally corresponds to a revenue-sharing parameter between protocol and solvers, is set to 50% by default. The core team has a mandate to change this parameter for individual networks, if needed, to a value in the interval [50%, 100%], given that the network has a total revenue less than 5% of the total protocol revenue.
+The lower cap $$c_l$$ is determined by the orders that solver $$i$$ won but did not settle. Every order has a penalty cap associated with it in each auction, expressed in the native token of the chain, and
+$$
+c_l = \sum_{o \,\in\, \textrm{unsettled}_i} \textrm{penaltyCap}_o,
+$$
+where $$\textrm{unsettled}_i$$ is the set of orders that are part of solver $$i$$'s winning solutions in that auction and that solver $$i$$ did not settle on-chain within the auction deadline.
+#### Penalty caps
+The penalty cap of an order is a fraction of the order's volume, bounded by a global absolute cap:
+$$
+\textrm{penaltyCap}_o = \min(\phi_o \cdot \textrm{volume}_o, \bar{c}).
+$$
+Here $$\textrm{volume}_o$$ is the volume of order $$o$$, expressed in the native token of the chain: the sell amount for sell orders and the buy amount for buy orders, converted into the native token using the native prices of the auction. The global bound $$\bar{c}$$ is the native token equivalent of 20 USD. For partially fillable orders, $$\textrm{volume}_o$$ refers to the full order, and the penalty cap is scaled to the fraction of the order that the winning solution proposed to execute.
+The fraction $$\phi_o$$ depends on the chain and on whether the two tokens traded by the order are correlated. The classification into correlated and uncorrelated token pairs follows the same logic that is used in determining the [protocol volume fee](/governance/fees). For correlated token pairs, $$\phi_o = 0.1 \;\textrm{bps}$$ on all chains. For uncorrelated token pairs, the values are:
+- Ethereum mainnet: $$1 \;\textrm{bps}$$
+- Gnosis Chain: $$3 \;\textrm{bps}$$
+- Arbitrum: $$1 \;\textrm{bps}$$
+- Base: $$2 \;\textrm{bps}$$
+- Avalanche: $$2 \;\textrm{bps}$$
+- Polygon: $$3 \;\textrm{bps}$$
+- BNB: $$1 \;\textrm{bps}$$
+- Linea: $$2 \;\textrm{bps}$$
+- Ink: $$1 \;\textrm{bps}$$
+- Plasma: $$1 \;\textrm{bps}$$
+These caps are chosen such that solvers settle their winning solutions with a high probability, given estimates of price movements during the window of exclusivity, i.e., the time between the moment a solver is notified that it won and the deadline by which the auction has to be settled. The core team has a mandate to change the penalty cap per order within the interval [0 bps, 10 bps], if needed, to tune the trade-off between competitive prices and fast execution. Any change to the penalty cap is announced to solvers in advance and reflected in this documentation.
+:::note
+There is no guarantee that the per-auction rewards are greater than the costs of executing a transaction (due to, for example, gas costs). Hence, solvers cover these costs by adjusting their reported score. Of course, a solver who adjusts their score downward too aggressively is then at a disadvantage in the auction. The mechanism, therefore, incentivizes the accurate estimation of costs such as gas.
+:::
+### Consistency rewards
+With [CIP-85](https://snapshot.box/#/s:cow.eth/proposal/0xb488c343df3ba5f3857a4c7a920a74e18c13a2cdce99d27af34216803da6abff), the protocol introduced consistency rewards. These rewards are based on aggregate metrics evaluated over the full accounting week and are intended to incentivize consistent, reliable solver behavior, broad token coverage, and other aspects the core team considers important for maintaining healthy competition.
+Concretely, in each auction, solver $$i$$'s contribution to the consistency budget is
+$$
+\beta \cdot \textrm{protocolFee}_i - \textrm{performanceReward}_i,
+$$
+where $$\textrm{protocolFee}_i$$ is the protocol fee (excluding partner fees) earned from the trades in all solutions successfully executed onchain by solver $$i$$ in that auction and $$\beta$$ is the chain-specific parameter defined above. When the performance reward is a penalty (i.e., negative), the penalty itself contributes to the consistency budget. The total consistency budget for an accounting period is the sum of these contributions across all solvers and auctions.
+The consistency budget is distributed at the end of each accounting period according to a consistency metric: solver $$i$$ receives
+$$
+\textrm{consistencyReward}_i = \frac{\textrm{consistencyMetric}_i}{\sum_{j} \textrm{consistencyMetric}_j} \cdot \textrm{consistencyBudget},
+$$
+where the sum runs over all solvers. The core team has a mandate to adapt this metric when they see fit; every change will be announced in advance on the [CoW Protocol forum](https://forum.cow.fi).
+**Current metric: bid quality and settlement success on fill-or-kill market orders.**
+Since June 30, 2026, each solver's share of the consistency budget is proportional to a metric that combines the quality of the solver's bids with its settlement success rate, as announced in [this forum post](https://forum.cow.fi/t/consistency-metric-v2/3474).
+It replaces an earlier metric that simply counted the executed orders a solver had bid on.
+Executions of out-of-market limit orders do not earn consistency rewards, as announced in [this forum post](https://forum.cow.fi/t/consistency-metric-v2-1-in-market-orders-only/3577).
+Executions of partially fillable orders do not earn consistency rewards either, as announced in [this forum post](https://forum.cow.fi/t/consistency-metric-v2-1-in-market-orders-only/3577/7).
+The metric has two components:
+**1. Bid quality.** A solver bids on an order if it submits a solution containing that order. For each executed fill-or-kill market order, the solvers that bid on the order in the auction in which it was executed share a total weight of one, in proportion to the surplus they proposed. The share of solver $$i$$ for order $$o$$ is
+$$
+\textrm{orderShare}_i(o) = \frac{\textrm{surplus}_i(o)}{\sum_{j} \textrm{surplus}_j(o)},
+$$
+where $$\textrm{surplus}_i(o)$$ is the largest surplus that any of solver $$i$$'s solutions proposed for order $$o$$ in that auction (the difference between the proposed execution amounts and the order's limit amounts), and the sum runs over all solvers that bid on the order. If all bids on an order propose zero surplus, the share of every solver for that order is set to zero. We stress that only solutions that pass the fairness filtering are considered in the above computations. Since each executed order distributes a total weight of one, orders with few competitive bids yield a larger share for the solvers submitting them, an incentive for solvers to join such competitions with competitive bids.
+Only executions of **fill-or-kill market orders** distribute a weight. An order is a market order if its limit price is no better than the price implied by the quote that led to the creation of the order, net of all fees. This is the same classification used for [quote rewards](#price-estimation-competition-rewards-cip-88).
+**2. Settlement success rate.** The success rate of solver $$i$$ in an accounting period is
+$$
+\textrm{successRate}_i = \frac{\textrm{count}(\textrm{auction-order pairs won and settled in time by } i)}{\textrm{count}(\textrm{auction-order pairs won by } i)}.
+$$
+Both counts are at the level of auction-order pairs: solver $$i$$ wins an order in an auction if the order is part of one of solver $$i$$'s winning solutions in that auction. Each such pair counts once towards the denominator, and towards the numerator only if solver $$i$$ then settled the order onchain within that auction's deadline. In particular, winning the same order repeatedly without settling it lowers the success rate: a solver that wins an order in $$n$$ auctions but only settles it after the $$n$$-th win has a success rate of $$1/n$$ (all else being equal). A solver that does not win any order in the period has a success rate of zero.
+The consistency metric of solver $$i$$ for an accounting period is the product
+$$
+\textrm{consistencyMetric}_i = \textrm{successRate}_i \cdot \sum_{o} \textrm{orderShare}_i(o),
+$$
+where the sum runs over all executions of fill-or-kill market orders in the period. The settlement success rate is computed over all orders the solver won, including out-of-market limit orders and partially fillable orders.
+For example, suppose four solvers bid on a fill-or-kill market order with proposed surplus of 0.1, 0.08, 0.019, and 0.001 ETH. The total proposed surplus is 0.2 ETH, so the order shares are 0.5, 0.4, 0.095, and 0.005, respectively. If the solvers have success rates of 0.8, 0.9, 1.0, and 0.5 in the accounting period, this order contributes 0.4, 0.36, 0.095, and 0.0025, respectively, to their consistency metrics.
+:::note
+The [forum post](https://forum.cow.fi/t/consistency-metric-v2/3474) defines bid quality in terms of surplus relative to the winning bid. Since the winning bid's surplus cancels out in the normalization, that definition is equivalent to the one given here.
+:::
+### Buffer accounting
+It is possible that the state of the external liquidity sources used as part of a solution changes between the bidding stage and the execution stage. We say that there is negative slippage when the solver's execution generates less than the expected amount, and positive slippage otherwise. In case of negative slippage the solver can utilize the buffers available in the settlement contract, while a solver can accumulate positive slippage in the settlement contract. Every week, the protocol computes a "net" slippage and either pays a solver (when it is positive) or requests a payment from a solver (when it is negative). For more information, see the [accounting section](/cow-protocol/reference/core/auctions/accounting).
+Hence, although buffers and the possibility of using them are not an explicit element of the mechanism, they are nonetheless relevant in determining the solver's optimal strategy, because they allow a solver to average out positive and negative slippage over a period of time (vs. making sure to always produce at least as much as promised at the bidding stage).
+### Solver's strategy
+To determine the optimal routing, the recommended strategy for a solver is to start by dividing the available orders into groups of orders on the same directed token pairs - i.e., in each group, all orders have the same sell and buy tokens. The next step is to compute the best possible routing for each group and submit it as a solution. Note that, by construction, each of these solutions will use outside liquidity. Finally, a solver should check whether it is possible to improve these solutions by creating batched solutions containing orders on different directed token pairs. These additional efficiencies may come from, for example, exploiting liquidity already available on the protocol - using one order as liquidity for the other (in a CoW) or using [surplus-capturing JIT liquidity](/cow-protocol/reference/core/auctions/the-problem#surplus-capturing-jit-orders) - or from gas savings. Solvers should submit an additional solution for every combination of groups of orders for which additional efficiencies are possible. When submitting such a solution, they should pay attention to sharing the additional efficiencies among all orders in the batch; otherwise, the batched solution may be filtered out as unfair.
+For optimal bidding, including how to account for gas costs, settlement risk and the penalty cap in the reported score, see [Recommended Bidding Strategy for Solvers](/cow-protocol/tutorials/solvers/optimal-bidding).
+## Price estimation competition rewards (CIP 88)
+The price estimation competition is a separate competition where solvers provide the best response to a quote request. Quote requests look almost identical to single-order batch auctions, where there is only one order with a trivial limit price, and solvers propose executions of this order with the goal to maximize "out amount minus gas costs" in the case of a sell request, or minimize "in amount + gas costs" in the case of a buy request.
+As specified in [CIP-88](https://snapshot.box/#/s:cow.eth/proposal/0x3fc7dc270f3e315e9bc2449bf9f5d0288046125f82b9b140b5866c2886fe71ac), quote rewards are paid from a dedicated budget targeting 10% of protocol revenue, separate from the performance and consistency reward budget.
+This replaces the flat reward per eligible quote set by [CIP-27](https://snapshot.org/#/cow.eth/proposal/0x64e061568e86e8d2eec344d4a892e4126172b992cabe59a0b24c51c4c7e6cc33), [CIP-36](https://snapshot.org/#/cow.eth/proposal/0x4e58f9c1208121c0e06282b5541b458bc8c8b76090263e25448848f3194df986) [CIP-57](https://snapshot.box/#/s:cow.eth/proposal/0x46d4fea1492207cf400fcb7a01141a7d4c730791d658cc77236941fc9eb7dccb), and [CIP-72](https://snapshot.box/#/s:cow.eth/proposal/0xc1b1252f0c99126b4e09730022faa31a7bb58073a3dc064c19b74d44164c39a7), which no longer applies.
+The budget is computed separately for each chain and each accounting period, which runs weekly from Tuesday 00:00 UTC to the following Tuesday 00:00 UTC, as described in [accounting](/cow-protocol/reference/core/auctions/accounting).
+The orders in scope are in-market fill-or-kill orders executed during the accounting period.
+The budget is divided equally among them, giving each order $$o$$ a budget $$B_o$$.
+For each order $$o$$, the quote of solver $$i$$ is scored by its error against the executed price
+$$
+e_{i,o} = \left| \frac{q_{i,o} - x_o} {x_o} \right|
+$$
+where $$q_{i,o}$$ is the exchange rate of the solver's quote, adjusted for network and volume fee, and $$x_o$$ is the exchange rate at which the order was executed.
+Only the five quotes with the smallest error are rewarded. Only quotes ranked in the price estimation competition are considered in the ranking of errors. This means, that if at least one quote is verified, only verified quotes are considered.
+Denoting this set by $$T_o$$, solver $$i$$ receives quote reward $$r_{i,o}$$
+$$
+r_{i,o} = B_o \cdot \frac{1 / e_{i,o}^{2}}{\sum_{j \in T_o} 1 / e_{j,o}^{2}}
+$$
+and solvers outside $$T_o$$ receive nothing for that order.
+If one or more quotes have $$e_{i,o} = 0$$, these quotes share the whole of $$B_o$$ equally.
+A solver's quote reward for the accounting period is the sum of $$r_{i,o}$$ over all orders in scope, paid in COW as described in [accounting section](/cow-protocol/reference/core/auctions/accounting).
+The core team has a mandate to change how the quote reward budget is allocated among solvers, if needed, to strengthen the quote competition.

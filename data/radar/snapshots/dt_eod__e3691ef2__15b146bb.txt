@@ -1,0 +1,105 @@
+Plan Comparison Overview | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Getting Started: From Sign-Up to First Payout
+Logging In and Credentials
+Plan Comparison Overview
+Maximum Number of Accounts
+Instruments and Commissions
+Billing
+Paying for Your Order
+Market Data, Add-Ons and Fees
+How to Request a Payout
+Taxes and Payout Documents
+Dashboard Stats and Account Chart
+Understanding Futures Contracts And When To Roll
+Market Orders vs. Limit Orders
+Giveaway Rules
+Who Can Sign Up
+DT Wallet FAQ
+Holiday Calendar 2026
+Glossary
+About DayTraders
+Holiday Calendar 2027
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Platforms
+Trading Rules and Guidelines
+Affiliate Program
+Agreements and Disclaimers
+All Collections General Plan Comparison Overview Plan Comparison Overview
+Trail, Static, EOD, S2F and S2L side by side: drawdown, DLL, evaluation, QDays, consistency, split and sizes.
+Updated over a week ago
+Copy for LLM
+All five plans side by side. Prices, profit targets and contract limits differ by size; see the latest prices at daytraders.com/#pricing .
+Trail
+Static
+EOD
+S2F
+S2L
+Drawdown type
+Intraday trailing
+Static (fixed)
+End-of-day trailing
+End-of-day trailing
+Intraday trailing
+Daily Loss Limit
+No
+No
+Yes
+Yes (50K, 150K)
+Yes
+Evaluation
+Yes
+Yes
+Yes
+No
+Yes
+QDays to pass / per payout
+2 / 8
+2 / 8
+2 / 8
+None / 10
+8 / none (live)
+Consistency
+50% eval, 30% Pro
+50% eval, 30% Pro
+50% eval, 30% Pro
+20% per payout cycle
+25% eval, none in live
+Profit split
+100% (simulated)
+100% (simulated)
+100% (simulated)
+100% (simulated)
+80/20 (live)
+Sizes
+25K, 50K, 150K, 300K
+25K, 50K, 100K, 150K
+25K, 50K, 150K, 300K
+25K, 50K, 150K
+Core 50K, Edge 150K, Ultra 300K
+To see the maximum number of accounts per account type, check out the FAQ: Maximum Number of Accounts
+Which plan is for you
+Trail : Larger drawdown and no DLL, follows highest peak equity (includes open positions).
+Static : You want a fixed drawdown level that never moves, for predictable risk.
+EOD : You want the drawdown to move only at the end of the day, not with every intraday high.
+S2F : You want to skip the evaluation and trade for payouts from day one.
+S2L : You want a set path to a live account in live markets.
+At checkout, S2F appears as Instant and S2L as Live . Pro Accounts keep the drawdown type and contract limits of the evaluation you passed, and an account can't be changed after purchase.
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+Trail Evaluation
+Trail Pro Account
+Trail Drawdown
+EOD Drawdown
+S2F Drawdown
+On this page
+Which plan is for you

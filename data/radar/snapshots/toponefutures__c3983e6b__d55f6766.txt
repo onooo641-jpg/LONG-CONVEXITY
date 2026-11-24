@@ -6,7 +6,8 @@ All Collections
 General Rules
 General Rules
 General rules that apply to all TOF accounts
-18 articles
+19 articles
+What Happens During a CME Circuit Breaker or Trading Halt? What CME circuit breakers and trading halts are, and what happens to your open positions when a market is halted.
 Daily Drawdown: What You Need to Know The Daily Loss Limit per account type and size, what happens when you hit it, and how it is calculated from your previous day's close.
 Understanding the Drawdown Lock How the trailing drawdown lock works: when it locks based on profits achieved, examples per account size, and the lock upon your first payout.
 What is the Maximum Number of Accounts I Can Trade? The maximum number of active funded accounts per account category, the total capacity, the Live Funded restriction, and copy trading limits.

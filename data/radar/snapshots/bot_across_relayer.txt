@@ -1,0 +1,89 @@
+Welcome to Across | Across Docs
+Ask AI
+Search ⌘ K
+Introduction API Reference
+Introduction
+Introduction
+Welcome to Across Get Started
+Quickstart
+Migration guide Core Concepts
+Fees Refunds Webhooks Resources
+Bug Bounty Audits
+Welcome to Across
+Welcome to Across
+Move money across all major chains.
+Copy Markdown Open with AI
+Across moves money between chains. You tell it what you want to move and where
+it should land; it prices that transfer, tells you what the user has to
+authorize, and reports what happened to the funds until the outcome is settled.
+Every quote follows a similar schema, which defines the tokens that are moving
+and which origin and destination chains are being used. Assets, chains and
+authorization methods are parameters in the latest Across API that the developer
+can configure.
+Get your API Key
+Fill the form to get started
+The integration flow
+Up to four calls, in this order. Each one hands you what the next one needs.
+Call 3 is needed only when the quote's nextActions ends with submit_execution .
+Call What you get back
+1 GET /v1/capabilities What can move between two chains right now
+2 POST /v1/quotes The price of one exact transfer, and the ordered actions needed to execute it
+3 POST /v1/quotes/{orderId}/executions Only when nextActions ends with submit_execution : confirmation that the authorization was accepted
+4 GET /v1/transfers/{orderId} Status of the funds
+Utilizing returned data at each integration step
+1. Capabilities is your starting point. This endpoint defines the available
+paths for a given input↔output token combination and the related
+origin↔destination chain combination. Read decimals per token — the same asset
+can differ per chain, so never hardcode it. Anchor all four sides
+( originChainId , originToken , destinationChainId , destinationToken ) and
+the response also carries a capabilities object with the executionOptions
+and amountTypes that route actually serves, plus the limits it will price.
+2. The quote defines the order that will be executed. nextActions is an
+ordered list of what has to happen before the transfer can proceed; walk it in
+order and collect what each step produces. Mind the quote expiry in expiresAt
+and do not submit stale quotes, always request a fresh one instead.
+3. Execution submits what the actions produced, when the quote asks for it.
+If nextActions ends with submit_execution , POST the results (usually a
+signature) to the executions endpoint. Its response confirms the transfer is
+being processed. If it doesn't, there is nothing to submit: a quote funded by
+an approval and a prefunded-store transaction starts as soon as that
+transaction lands on chain. Either way, track the transfer by the quote's
+orderId .
+4. Transfer tracks the latest status of your transaction. Poll until
+status.isTerminal is true: the outcome is known and you can stop. Show status.description to users as-is; it is
+written for that. Branch your own logic on status.state and status.reason , never on the
+description text.
+The shape of this API is subject to feedback and may change.
+Defining your transfer
+The calls explained above, in order, will move real money
+along any route the system can price, on whatever terms you configure. What you send is what gets executed, so the
+configuration you supply at each step is the whole of the decision.
+Here is what is yours to decide, in the order you will meet it.
+1. Capabilities: establish what is possible. Choose your input and output
+tokens and the origin and destination chains. Read back the available
+information for that pair: the executionOptions it supports, the amountTypes
+it serves, and the limits it will price.
+2. Quote: commit to an amount. Define exactly how much money you want to
+move, along with the details you took from step 1. amountType decides which
+side carries the amount. You don't name a funding method: declare what your
+client can do in capabilities.operations , optionally narrowed by
+authorizationPolicy , and the server picks an eligible method.
+3. Execute: authorize it correctly. Follow nextActions in order, and
+submit the results only if they end with submit_execution . Make sure a
+signature is formed over exactly the data the quote handed you; that payload
+is what the server verifies, so it must be signed verbatim.
+4. Track: follow it until it is terminal. Poll the transfer until
+status.isTerminal is true rather than assuming a successful submission means delivered
+funds.
+Next steps
+Get your API key
+Request access, and our team will review your project.
+Quickstart
+The same four calls as working code, end to end.
+API Reference
+Every parameter, response and error code for each operation.
+Quickstart
+Move one transfer end to end, from discovery to a settled outcome.
+On this page
+Get your API Key The integration flow Utilizing returned data at each integration step Defining your transfer Next steps
+Ask AI

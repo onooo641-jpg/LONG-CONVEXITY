@@ -9,7 +9,7 @@ CFD Instant
 CFD Instant Platforms & Trading Conditions
 CFD Instant Platforms & Trading Conditions
 Platforms and setup, leverage, position sizing, and how orders are priced on CFD Prime.
-Updated over 3 weeks ago
+Updated over a month ago
 Table of contents
 Which Platforms Can I Use, And Can I Change Later?
 CFD Challenges are available on cTrader and other popular platforms.

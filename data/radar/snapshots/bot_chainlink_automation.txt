@@ -1,0 +1,118 @@
+Chainlink Automation | Chainlink Documentation
+Docs
+Changelog
+Get Certified
+Overview
+Supported networks and costs
+Contact us
+On this page
+Resources
+Quick Links Github
+Resources
+Chainlink Automation Overview
+Getting Started
+Billing and Costs
+Supported Networks
+Best Practices
+Service Limits
+Migrate to Automation v2.1
+Release Notes
+Guides Create Automation-Compatible Contracts
+Access Data Streams Using Automation
+Register Time-Based Upkeeps
+Register Custom Logic Upkeeps
+Register Log Trigger Upkeeps
+Register Upkeeps Programmatically
+Secure Upkeeps Using the Forwarder
+Create Flexible, Secure, and Low-Cost Smart Contracts
+Manage your Upkeeps
+Cancel an Upkeep and Withdraw Funds
+Set a gas price threshold on your upkeep
+Using the StreamsLookup error handler
+Concepts Concepts
+Architecture
+Reference Contracts
+Interfaces
+Troubleshooting and Debugging
+Resources Smart Contract Overview
+LINK Token Contracts Acquire testnet LINK
+Fund Your Contracts
+Starter Kits and Frameworks
+Bridges and Associated Risks
+Chainlink Oracle Platform Data Standard
+Interoperability Standard
+Compliance Standard
+Privacy Standard
+Getting Help
+Integrating EVM Networks
+Contributing to Chainlink
+AI Agent & Skills Chainlink Developer Agent Skills
+Chainlink Automation
+Chainlink Automation has been deprecated (v1.x: June 30, 2026 | v2.1: July 31, 2026, testnet: June 24, 2026)
+Chainlink Automation v1.x has been deprecated as of June 30, 2026, and v2.1 has been deprecated as of July 31, 2026 (testnet: June 24, 2026). Migrate to the Chainlink Runtime Environment (CRE) , which does everything and more →. Migrate your existing upkeeps to avoid service disruption.
+See the Automation to CRE migration guide for a full concept mapping and code examples.
+Automate your smart contracts using a secure and hyper-reliable decentralized network that uses the same external network of node operators that secures billions in value. Building on Chainlink Automation will accelerate your innovation, save you time and money, and help you get to market faster so you don't have to deal with the setup cost, ongoing maintenance, and risks associated with a centralized automation stack.
+To learn more about how the Chainlink Automation Network automates your smart contracts, visit the Concepts and Architecture pages. You can also learn more through our additional Automation resources .
+Supported networks and costs
+For a list of blockchains that are supported by Chainlink Automation, see the Supported Networks page. To learn more about the cost of using Chainlink Automation, see the Automation Economics page.
+Contact us
+For help with your specific use case, contact us to connect with one of our Solutions Architects. You can also ask questions about Chainlink Automation on Stack Overflow or the #automation channel in our Discord server .
+What's next
+> Getting Started with Automation
+> Create Automation-Compatible Contracts
+> Supported Networks for Automation
+> Automation Architecture
+> Automation Billing and Costs
+On this page
+Overview
+Supported networks and costs
+Contact us
+More
+Edit this page
+Join our community
+Feedback
+Was this page helpful?
+Yes
+No
+Get the latest Chainlink content straight to your inbox.
+Email Address
+Developers
+Developer Resources
+Builder Quick Links
+LINK Token Contracts
+Data Feeds
+Data Streams
+VRF
+CCIP
+Solutions
+Overview
+DeFi
+Chainlink VRF
+Community
+Chainlink Hackathon
+Community overview
+Events
+Become an advocate
+Code of conduct
+Chainlink
+Ecosystem
+Press
+Blog
+Team
+Careers WE ARE HIRING!
+Brand assets
+FAQs
+Contact
+Security
+Talk to an expert
+Press inquiries
+Social
+Twitter
+YouTube
+Discord
+Telegram
+WeChat
+Reddit
+Chainlink®
+© 2026 Chainlink Foundation
+Privacy Policy Terms of Use
