@@ -2519,7 +2519,39 @@ def job_uniswapx371c():
     (OUT / "uniswapx371_stage4_meta.json").write_text(json.dumps({"fills": len(d), "decimals": dec, "hourly": hourly}))
     print(f"  done: {len(tr)} transfers; hourly prices for {sum(1 for v in hourly.values() if v)}/{len(main)} tokens", flush=True)
 
-JOBS = {"uniswapx371c": job_uniswapx371c, "uniswapx371b": job_uniswapx371b, "uniswapx371": job_uniswapx371, "cryptotrend370": job_cryptotrend370, "cow367": job_cow367, "cowauction": job_cowauction, "radarprobe": job_radarprobe, "cow365": job_cow365, "cow361b": job_cow361b, "jlp363": job_jlp363, "cow361": job_cow361, "across362": job_across362, "sweep4d": job_sweep4d, "sweep4c": job_sweep4c, "sweep4b": job_sweep4b, "sweep4": job_sweep4, "addprice": job_addprice, "fred9": job_fred9, "batch10b": job_batch10b, "repair8": job_repair8, "sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+def job_uxprobe():
+    """#371 Stage 5 feasibility: is UniswapX's open-order feed public, and do free DEX-aggregator quotes answer (Arbitrum)?"""
+    out = {}
+    for u in ("https://api.uniswap.org/v2/orders?orderStatus=open&chainId=42161&limit=5",
+              "https://api.uniswap.org/v2/orders?orderStatus=filled&chainId=42161&limit=3",
+              "https://aggregator-api.kyberswap.com/arbitrum/api/v1/routes?tokenIn=0xaf88d065e77c8cC2239327C5EDb3A432268e5831"
+              "&tokenOut=0x82aF49447D8a07e3bd95BD0d56f35241523fBab1&amountIn=1000000000",
+              "https://api.0x.org/swap/permit2/price?chainId=42161&sellToken=0xaf88d065e77c8cC2239327C5EDb3A432268e5831"
+              "&buyToken=0x82aF49447D8a07e3bd95BD0d56f35241523fBab1&sellAmount=1000000000"):
+        st, d = _qget(u, timeout=40)
+        txt = json.dumps(d)[:600] if d is not None else None
+        out[u] = {"status": st, "head": txt}
+        print(f"  {st} {u[:110]}\n      {txt[:300] if txt else ''}", flush=True)
+    st, d = None, None
+    try:
+        body = {"chainId": 42161, "inputTokens": [{"tokenAddress": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831", "amount": "1000000000"}],
+                "outputTokens": [{"tokenAddress": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1", "proportion": 1}],
+                "userAddr": "0x0000000000000000000000000000000000000001", "slippageLimitPercent": 0.3}
+        req = urllib.request.Request("https://api.odos.xyz/sor/quote/v2", data=json.dumps(body).encode(),
+                                     headers={**UA, "Content-Type": "application/json"})
+        with urllib.request.urlopen(req, timeout=40) as r:
+            st, d = r.status, json.loads(r.read().decode())
+    except urllib.error.HTTPError as e:
+        st = e.code
+    except Exception as e:  # noqa: BLE001
+        st = type(e).__name__
+    out["odos"] = {"status": st, "head": json.dumps(d)[:600] if d else None}
+    print(f"  odos {st} {json.dumps(d)[:300] if d else ''}", flush=True)
+    OUT.mkdir(parents=True, exist_ok=True)
+    (OUT / "uniswapx371_probe.json").write_text(json.dumps(out))
+
+JOBS = {"uxprobe": job_uxprobe, "uniswapx371c": job_uniswapx371c, "uniswapx371b": job_uniswapx371b, "uniswapx371": job_uniswapx371, "cryptotrend370": job_cryptotrend370, "cow367": job_cow367, "cowauction": job_cowauction, "radarprobe": job_radarprobe, "cow365": job_cow365, "cow361b": job_cow361b, "jlp363": job_jlp363, "cow361": job_cow361, "across362": job_across362, "sweep4d": job_sweep4d, "sweep4c": job_sweep4c, "sweep4b": job_sweep4b, "sweep4": job_sweep4, "addprice": job_addprice, "fred9": job_fred9, "batch10b": job_batch10b, "repair8": job_repair8, "sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys
