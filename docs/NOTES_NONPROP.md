@@ -256,3 +256,10 @@ and a losing first half; the 2025–26 windfall came from Binance-only meme pump
 
 **#382 (Jx: "this still looks pretty good")**: the same walk-forward on Hyperliquid-listed coins only: 28.9%/yr, all from 2021 (+1,284%);
 starting in 2022 leaves ×0.32 today, 2023 ×0.81, 2024 ×1.39, 2025 ×0.95; 2026 −21.5%. FAIL.
+
+## 2026-11-24 — #371 UniswapX fillers: second niche (after CoW) to pass every free check
+Arbitrum UniswapX, Aug–Oct 2026: $192M of fills ($761M/yr), one filler with 84% of volume, two August newcomers with 7.3% and 5.2%.
+Measured gross spread (vs hourly mid, 46% of fills measurable): 8.62 bps volume-weighted; the newcomers kept ≈ $85K and $52K/yr gross.
+Unlike CoW, filling is permissionless (no onboarding queue) and a filler can route through DEXes inside the fill (callback) without
+holding inventory. Gross ≠ net (DEX/hedge costs, gas, speed race). Next registered step: a no-money filler prototype (paper fills).
+CoW staging run #368: 2,072 staging auctions, 0 solutions from anyone but one → staging cannot test a solver.

@@ -49,3 +49,14 @@ excluding refunds of the input token), each valued at the **hourly** DefiLlama p
 is < $15,000/yr. Otherwise "worth a no-money filler prototype" (still not a pass). Hourly prices add noise of tens of bps per fill; it
 averages out over ~10,000 fills but per-filler figures for small fillers are noisy (reported with fill counts).
 Command: fetch `uniswapx371c`; analysis `uv run python -m scripts.uniswapx_margin_20261124 | tee docs/jx_runs/uniswapx_margin_20261124.txt`.
+
+### Stage 4 results (2026-11-24; `docs/jx_runs/uniswapx_margin_20261124.txt`, identical on re-run; fetch run 45406058307)
+16,750 swapper transfers from 10,957 fills; hourly prices for 37 of the 40 most-used tokens. **Measured 5,051 fills ($102.6M)**; dropped
+5,797 (unpriced token, or no ERC-20 output to the swapper — e.g. native-ETH payouts, which emit no Transfer event) and 109 with |spread| >
+500 bps. **Volume-weighted gross spread 8.62 bps** (median 2.62 bps); gross $88,459 in 92 days (≈ $351K/yr on the measured half).
+Dominant filler: 4,148 fills, $92.9M, 4.25 bps, ≈ $157K/yr gross. **Newcomer A** (first fill 2026-08-13): 250 fills, $3.35M, 64.1 bps,
+**≈ $85K/yr gross**; **newcomer B** (2026-08-21): 106 fills, $2.68M, 48.8 bps, **≈ $52K/yr gross**.
+**Verdict (registered): survives → "worth a no-money filler prototype" (not a pass).**
+**Limits.** Gross ≠ net: the spread is measured against hourly mid prices and still contains the filler's DEX/hedging execution cost and
+gas; only 46% of fills are measured (native-ETH payouts are invisible to Transfer logs); newcomer figures rest on 250 and 106 fills and may
+reflect long-tail tokens with wider spreads and higher hedging risk. Filler addresses are not teams.

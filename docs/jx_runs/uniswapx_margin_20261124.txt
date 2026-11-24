@@ -1,0 +1,15 @@
+===== #371 Stage 4: Arbitrum UniswapX fills Aug-Oct 2026; fills 10,957; transfers 16,750
+  tokens with hourly prices: 37
+  fills measured 5,051; dropped: unpriced/incomplete 5,797, |spread| > 500 bps 109
+  measured volume $102,624,782; volume-weighted gross spread 8.62 bps; median 2.62 bps; total gross $88,459 in 92 days ($350,950/yr)
+    0x225a38bc71102999dd13478bfabd7c4d53f2dc17  fills  4,148  vol $   92,926,709     4.25 bps  gross $   156,746/yr  
+    0xd767473b74397fa9c1e7a2bdb210020c648a6836  fills    250  vol $    3,349,263    64.06 bps  gross $    85,116/yr  newcomer A (7.3% of volume)
+    0xe0763177d7e80e290fc4fea055fae11f5024f687  fills    106  vol $    2,682,362    48.75 bps  gross $    51,884/yr  newcomer B (5.2% of volume)
+    0x59971356900830c8d3bd5d6bffd8ba630e9a5c8d  fills     13  vol $    1,055,091     6.77 bps  gross $     2,833/yr  
+    0xdeadc0de0000e54725ad1bf220324717043e02bf  fills     10  vol $      510,347   100.83 bps  gross $    20,415/yr  
+    0x302649ccdfc232ee49a28755c8a6c06e707b7d15  fills    191  vol $      421,968    -4.07 bps  gross $      -682/yr  
+    0x4ac7e9f0e5b3313e06bd9337c5311674e70220ba  fills      2  vol $      334,369    52.76 bps  gross $     7,000/yr  
+    0xf00000003d31d4ab730a8e269ae547f8f76996ba  fills      8  vol $      291,660    56.57 bps  gross $     6,546/yr  
+  newcomer A (7.3% of volume): annualised gross $85,116/yr (250 fills)
+  newcomer B (5.2% of volume): annualised gross $51,884/yr (106 fills)
+  STAGE 4 VERDICT: worth a no-money filler prototype (not a pass) (bars: volume-weighted spread >= 2.0 bps and each newcomer >= $15,000/yr gross)
