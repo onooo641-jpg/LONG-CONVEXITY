@@ -2144,7 +2144,38 @@ def job_cow365():
     pd.DataFrame(inflow).to_parquet(OUT / "cow365_inflows.parquet", index=False)
     (OUT / "cow365_meta.json").write_text(json.dumps(meta))
 
-JOBS = {"cow365": job_cow365, "cow361b": job_cow361b, "jlp363": job_jlp363, "cow361": job_cow361, "across362": job_across362, "sweep4d": job_sweep4d, "sweep4c": job_sweep4c, "sweep4b": job_sweep4b, "sweep4": job_sweep4, "addprice": job_addprice, "fred9": job_fred9, "batch10b": job_batch10b, "repair8": job_repair8, "sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
+
+def job_radarprobe():
+    """Radar N-source repair: probe candidate URLs (status, bytes, text length, first text)."""
+    import html as _h
+    cands = ["https://www.luno.com/en/my", "https://www.luno.com/en/my/", "https://www.luno.com/my", "https://www.luno.com/en/promotions",
+             "https://www.luno.com/en/blog", "https://tokenize.exchange/", "https://www.tokenize.exchange/", "https://blog.tokenize.exchange/",
+             "https://docs.gelato.network/", "https://docs.gelato.cloud/", "https://www.gelato.network/", "https://codehawks.cyfrin.io/",
+             "https://codehawks.cyfrin.io/c", "https://www.codehawks.com/", "https://audits.sherlock.xyz/api/contests",
+             "https://mainnet-contest.sherlock.xyz/contests", "https://mainnet-contest.sherlock.xyz/contests?page=1",
+             "https://cantina.xyz/api/v0/competitions", "https://cantina.xyz/competitions?status=live",
+             "https://api.coingecko.com/api/v3/derivatives/exchanges?per_page=100", "https://api.llama.fi/overview/dexs?excludeTotalDataChart=true",
+             "https://api.llama.fi/summary/derivatives/hyperliquid", "https://api.llama.fi/overview/derivatives",
+             "https://api.llama.fi/protocols", "https://code4rena.com/api/v0/audits", "https://code4rena.com/audits?status=active"]
+    out = []
+    for u in cands:
+        try:
+            req = urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0 (compatible; long-convexity-research/1.0)", "Accept": "*/*"})
+            with urllib.request.urlopen(req, timeout=40) as r:
+                raw = r.read(5_000_000).decode("utf-8", "replace")
+                st = r.status
+        except urllib.error.HTTPError as e:
+            raw, st = "", e.code
+        except Exception as e:  # noqa: BLE001
+            raw, st = "", f"{type(e).__name__}"
+        txt = _re.sub(r"\s+", " ", _h.unescape(_re.sub(r"<[^>]+>", " ", _re.sub(r"(?is)<(script|style)[^>]*>.*?</\1>", " ", raw))))
+        out.append({"url": u, "status": st, "bytes": len(raw), "text": len(txt), "head": txt[:240]})
+        print(f"  {st} {len(raw):>8} bytes {len(txt):>7} text  {u}  | {txt[:160]}", flush=True)
+        time.sleep(0.5)
+    OUT.mkdir(parents=True, exist_ok=True)
+    (OUT / "radarprobe.json").write_text(json.dumps(out))
+
+JOBS = {"radarprobe": job_radarprobe, "cow365": job_cow365, "cow361b": job_cow361b, "jlp363": job_jlp363, "cow361": job_cow361, "across362": job_across362, "sweep4d": job_sweep4d, "sweep4c": job_sweep4c, "sweep4b": job_sweep4b, "sweep4": job_sweep4, "addprice": job_addprice, "fred9": job_fred9, "batch10b": job_batch10b, "repair8": job_repair8, "sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
 if __name__ == "__main__":
     import sys
