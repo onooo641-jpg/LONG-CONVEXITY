@@ -70,3 +70,18 @@ reflect long-tail tokens with wider spreads and higher hedging risk. Filler addr
 - The sandbox cannot reach these hosts; GitHub Actions can. A live paper filler needs ~36 runtime hours for ~200 Arbitrum orders
   (~5.5 per hour), which would compete for the same Actions minutes as workstream B's live liquidation shadow test.
 **Next step needs Jx:** where the live paper filler runs (GitHub Actions minutes / a PC / a small server, ~$5–20/month, needs approval).
+
+### Stage 5 (registered 2026-11-24, Jx chose to run it on his PC): live paper filler, no money
+**Program.** `tools/uniswapx_paper_filler.py` (Python standard library only, read-only public APIs, no wallet or keys). Every 2 s it reads
+open UniswapX orders on Arbitrum (`api.uniswap.org/v2/orders`); for each open order it asks KyberSwap's free aggregator
+(`aggregator-api.kyberswap.com`) how much output the order's input would buy right now, including KyberSwap's gas estimate; it logs every
+quote until the order disappears, then reads the order's fill record (settled output, fill time) from the same API.
+**Measure per filled order.** Paper profit = our last pre-fill quote − the output the real winner delivered − gas (KyberSwap gas estimate
++ $0.10 fill overhead), in USD. "Competitive" = paper profit > 0 (we could have paid the swapper what the winner paid, from a public DEX
+route, at about the same moment). Exact-output orders use the maximum input (conservative).
+**Run.** ≥ 36 hours (target ~200 filled orders). **Verdicts** (on filled orders with a pre-fill quote):
+- **KILL** if competitive share < 5% of orders **or** annualised paper profit (Σ positive paper profit × 365 × 24 / hours run) < $5,000.
+- **Worth building a real filler** (still not income: speed is untested — the metric assumes we fill at the winner's moment) if
+  competitive share ≥ 10% **and** annualised paper profit ≥ $15,000. In between: inconclusive (extend the run).
+Command on Jx's PC: `python uniswapx_paper_filler.py --hours 36`; the program writes `uniswapx_paper_log.jsonl` and
+`uniswapx_paper_summary.txt`, which Jx sends back; analysis re-computed from the log by `--summarize`.
