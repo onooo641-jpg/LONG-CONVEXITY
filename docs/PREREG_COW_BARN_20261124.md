@@ -22,3 +22,12 @@ free baseline" route if would-have-won < 1% and median ratio < 0.5. Fewer than 3
 **Limits.** Staging volume is tiny and staging solvers may be configured differently from production; a staging result says little about
 production income. Free Gnosis RPC may throttle. Configs moved from `cow_shadow/*.toml` to `cow_shadow/mainnet/*.toml` (same content)
 to add `cow_shadow/xdai/`.
+
+### Results (2026-11-24; Actions run 45370955833, `docs/jx_runs/cow_shadow_run_45370955833.txt`; `docs/jx_runs/cow_shadow_20261124.txt`)
+The stack ran the full 180 minutes on Gnosis staging. The autopilot received **2,072 auctions with orders**; the baseline produced
+**0 solutions**; CoW's staging competition API had solver data for **1** of those 2,072 auctions (CoW's own staging solvers also bid
+almost never), i.e. the staging feed is nearly all unfillable resting orders. One transient HTTP 503 from the staging feed; no driver or
+solver errors at the logged level.
+**Verdict (registered):** "pipeline ready" **not demonstrated** (0 valid solutions) — but this cannot be told apart from "no solvable
+orders on staging", since staging solvers were equally silent. Benchmark: sample too small (1 auction). Conclusion: CoW's open staging feed
+cannot test a solver; a real test needs CoW's production shadow access (paused by CoW, reminder set for 2026-12-15).

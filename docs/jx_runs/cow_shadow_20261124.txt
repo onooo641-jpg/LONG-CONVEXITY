@@ -1,0 +1,5 @@
+===== #366 CoW baseline solver vs production (shadow mode)
+  run 45370955833: auctions seen 2072, baseline solutions 0, with production data 1
+  main run 45370955833: auctions with production data 1; baseline bid rate 0.0%
+  no baseline bids with production data
+  VERDICT (route 'start from the free baseline'): KILL
