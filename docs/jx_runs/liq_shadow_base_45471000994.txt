@@ -1,0 +1,14 @@
+base: v2 start, head 61793634
+base: loaded 42158 cached positions
+base: recalibrated 635 cached positions
+base: positions ready: 42158 users, 12376 with debt
+base: reopened 219 recorded unhealthy episodes
+base: loop error https://base.api.pocket.network: {'code': -32602, 'message': 'block range extends beyond current head block: requested 61794835, head 61794834'}
+base: loop error https://base.api.pocket.network: {'code': -32602, 'message': 'block range extends beyond current head block: requested 61795454, head 61795442'}
+base: head 61795537 cycles 30 debtors 12375 cand 279 last_cycle 6452 ms rpc ok/err 367/2
+base: loop error https://base.api.pocket.network: {'code': -32602, 'message': 'block range extends beyond current head block: requested 61795921, head 61795915'}
+base: loop error https://base.api.pocket.network: {'code': -32602, 'message': 'block range extends beyond current head block: requested 61796549, head 61796543'}
+base: loop error https://base.api.pocket.network: {'code': -32602, 'message': 'block range extends beyond current head block: requested 61796819, head 61796818'}
+base: head 61797058 cycles 63 debtors 12375 cand 280 last_cycle 5985 ms rpc ok/err 654/5
+base: loop error https://base.api.pocket.network: {'code': -32602, 'message': 'block range extends beyond current head block: requested 61798143, head 61798117'}
+base: head 61798527 cycles 97 debtors 12376 cand 276 last_cycle 11888 ms rpc ok/err 951/6
