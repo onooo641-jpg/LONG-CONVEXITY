@@ -1,0 +1,6 @@
+=== uniswapx371
+  arbitrum 0xB274d5F4: 43825 logs, 72 calls, missed 0 of 124640930 blocks, 24s
+  arbitrum: 43825 fills, missed 0 blocks
+  base: time budget hit at block 49109149
+  base 0x00000000: 231531 logs, 613 calls, missed 4241779 of 15768001 blocks, 6005s
+  base: 231531 fills, missed 4241779 blocks
