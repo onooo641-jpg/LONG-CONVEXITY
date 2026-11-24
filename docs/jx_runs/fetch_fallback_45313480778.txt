@@ -1,0 +1,13 @@
+=== cow365
+  mainnet: v2 latest 14313592; ids/block 1.0006003602161297; span 216129; sampled 699, with data 451
+  xdai: v2 latest 18129496; ids/block None; span 518400; sampled 699, with data 114
+  arbitrum_one: v2 latest 9972350; ids/block 0.04846378046536849; span 502472; sampled 699, with data 66
+  base: v2 latest 30109647; ids/block 0.03345091594179661; span 43352; sampled 695, with data 158
+  polygon: v2 latest 41441981; ids/block 0.25227764634821565; span 326951; sampled 699, with data 17
+  avalanche: v2 latest 34931096; ids/block None; span 1296000; sampled 700, with data 8
+  bnb: v2 latest 27513940; ids/block 0.14648580552544457; span 506254; sampled 699, with data 154
+  linea: v2 latest 36783427; ids/block None; span 864000; sampled 700, with data 0
+  lens: no competition data (status 404)
+  plasma: v2 latest 10552363; ids/block None; span 2592000; sampled 700, with data 0
+  ink: v2 latest 6375073; ids/block None; span 2592000; sampled 700, with data 3
+  inflows to the Safe: 47 rows, complete True
