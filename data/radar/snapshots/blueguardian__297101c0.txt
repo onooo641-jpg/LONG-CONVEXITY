@@ -28,10 +28,7 @@ Applies to: Futures Updated 15 Nov 2026 · 6 min read
 Zero account rules
 Short answer
 Zero is a one-phase Futures evaluation built around daily payouts with no payout cap. Hit a 6% profit target while meeting your chosen consistency rule and staying within the drawdown. You build your account at checkout: end-of-day or intraday drawdown for the evaluation, with or without a daily loss limit, and 30%, 40% or 50% consistency. Once funded, you can withdraw profit above your buffer every day, with a 90% profit split. Zero is available on NinjaTrader.
-How the end-of-day drawdown option moves Replay
-If you chose end-of-day drawdown for your evaluation, your loss limit moves up only when you set a new highest end-of-day closing balance, and it never moves down. Funded Zero accounts always use an intraday trailing drawdown instead, which stops trailing at your starting balance + $100. What happens on an $8,000 day Replay
-Every funded Zero account has a daily profit limit. If an account reaches it, that account closes for the day and you choose: take a payout for each account that hit the limit, followed by a cooldown, or move to Live with a Live Bonus for each funded Zero account. Profit above the limit that day isn’t kept. Amounts are in the article. What happens when you hit the daily loss limit Replay
-This applies only if you chose an account with a daily loss limit. Hitting it closes your open trades and locks trading for the rest of the day. It isn't a failed account: trading unlocks at the 5 PM New York rollover. How the consistency rule lets you pass Replay
+How the consistency rule lets you pass Replay
 Total profit Best single day Consistency limit (%) Enter your numbers to check.
 During the evaluation, your best day can't be more than the consistency limit you chose (30%, 40% or 50%) of your total profit. Each extra profitable day raises the threshold, and you can pass once your best day fits under it. Funded Zero accounts have no consistency rule.
 Key numbers
@@ -85,6 +82,9 @@ Consistency
 30%, 40% or 50%
 Evaluation only
 Your choices stay with the account for its whole life, including after you're funded.
+How the end-of-day drawdown option moves Replay
+If you chose end-of-day drawdown for your evaluation, your loss limit moves up only when you set a new highest end-of-day closing balance, and it never moves down. Funded Zero accounts always use an intraday trailing drawdown instead, which stops trailing at your starting balance + $100. What happens when you hit the daily loss limit Replay
+This applies only if you chose an account with a daily loss limit. Hitting it closes your open trades and locks trading for the rest of the day. It isn't a failed account: trading unlocks at the 5 PM New York rollover.
 The evaluation
 Profit target
 Reach 6% profit while following all the rules. Your account then has a final review, and once approved you become a funded trader. There's no time limit and no minimum number of trading days.
@@ -139,6 +139,8 @@ Example: one $50K account hits $8,000. You can take a $3,600 payout, or move to 
 Profit above $8,000 on that day isn't kept, so plan your trades with this in mind.
 How many funded Zero accounts you can hold
 Up to 5 funded Zero accounts at a time, of any size.
+What happens on an $8,000 day Replay
+Every funded Zero account has a daily profit limit. If an account reaches it, that account closes for the day and you choose: take a payout for each account that hit the limit, followed by a cooldown, or move to Live with a Live Bonus for each funded Zero account. Profit above the limit that day isn’t kept. Amounts are in the article.
 Resets and inactivity
 Evaluation reset: if you breach your evaluation, you can reset it from your dashboard. The reset costs the same as the evaluation's current sale price.
 Funded accounts: can't be reset or reactivated after a breach.

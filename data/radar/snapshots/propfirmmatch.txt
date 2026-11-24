@@ -169,7 +169,7 @@ Hola Prime
 MATCH10
 Th
 The Trading Pit
-4.0
+4.1
 40% OFF
 MATCH
 Fu
@@ -204,7 +204,7 @@ Favorite 0/5
 New
 All Firms
 Firms 15 results
-Data updated 8 min ago
+Data updated 2 min ago
 Firm
 Rank / Reviews
 Country / Years
@@ -215,7 +215,7 @@ Promo
 Actions
 Th
 The5ers
-100494
+100495
 4.7
 1441
 reviews
@@ -232,7 +232,7 @@ MATCH
 Firm
 FT
 FTMO
-44379
+44380
 4.5
 220
 reviews
@@ -248,7 +248,7 @@ $400K
 Firm
 Aq
 AquaFunded
-17128
+17130
 4.4
 344
 reviews
@@ -301,7 +301,7 @@ Firm
 6
 Mo
 Moneta Funded
-1558
+1559
 4.8
 131
 reviews
@@ -320,7 +320,7 @@ To
 Top One Trader
 30346
 4.4
-236
+237
 reviews
 United States, years in operation: 3 3
 FX, Indices, Metals, Crypto FX
@@ -334,7 +334,7 @@ Firm
 8
 Ma
 Maven
-48263
+48264
 4.2
 801
 reviews
@@ -370,7 +370,7 @@ Firm
 10
 Cr
 Crypto Fund Trader
-39678
+39679
 4.2
 113
 reviews

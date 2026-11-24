@@ -2392,11 +2392,6 @@
 - AUTO: Is tick scalping legal?
 - COUNTRY: Are any countries restricted on FundedNext CFDs?
 
-## FundedNext Futures — https://fundednext.com/aml-policy
-- AUTO: In adherence to the legal obligations, a meticulous manual approval process is diligently undertaken for each transaction, employing the principles of due diligence.
-- AUTO: Within GrowthNext F.Z.E., a distinct and dedicated risk management unit exists, tasked with the meticulous manual examination of individual client profiles.
-- AUTO: conducts a meticulous manual review and approval of each transaction, applying the principles of due diligence.
-
 ## FundedNext Futures — https://fundednext.com/cfd-challenge-terms
 - AUTO: Risk Controls; Automatic Restrictions; Platform Integrity
 - AUTO: The Customer acknowledges that risk controls and enforcement measures may be applied automatically, including restricting trading and/or disabling functions when loss limits are reached.
@@ -2414,13 +2409,6 @@
 - AUTO: Without limitation, prohibited patterns may include excessive one-sided exposure, repeated "all-in" bets, grid trading, tick scalping, unrealistic order patterns, artificial trade fragmentation, account rolling, abusive patterns, or any comparable pattern which the Provider reasonably determines to be inconsistent with the evaluation purpose and indicative of abuse, manipulation, or circumvention.
 - AUTO: The Customer must not interfere with, disrupt, probe, scan, test, or compromise the security, stability, or integrity of the Website, Platform, or any Provider or Third Party systems, and must not introduce malware, bots, harmful code, or perform any action that could impair or degrade operations.
 - AUTO: The Provider may apply measures, including through automated or manual systems, it deems appropriate to protect programme integrity, including warnings, restrictions, suspensions, profit adjustments, disqualification, termination, denial of progression, and permanent bans, and/or the withholding, suspension, adjustment, reversal, denial, or set-off of any Performance Reward.
-
-## FundedNext Futures — https://fundednext.com/cookie-policy
-- AUTO: Most browsers automatically accept cookies by default.
-- AUTO: Enabling these cookies is automatic and cannot be turned off, as they are necessary for the operation of the Website.
-- AUTO: In the case of automated processing based on your consent or performance of the contract, you have the right to receive the data in a structured, commonly used and machine-readable format and to have them transmitted by us to another personal data controller.
-- AUTO: Right not to be the subject of automated decision-making
-- AUTO: Except where processing is necessary for entering into, or performance of, a contract, where this is permitted by applicable law, or based on your express consent, you have the right not to be the subject of any decision which is based solely on automated processing, including profiling, which produces legal effects concerning you or similarly affects you to a significant extent.
 
 ## FundedNext Futures — https://fundednext.com/futures-challenge-terms
 - AUTO: Upon reaching or exceeding the applicable Maximum Loss Limit (MLL) or Daily Loss Limit (DLL), FundedNext reserves the right to automatically restrict trading activity on the affected account for a certain period of time or indefinitely.
@@ -3136,22 +3124,6 @@
 - AUTO: No se permiten los EAs en Maven Trading.
 - AUTO: El uso de un EA resultará en la no aprobación del desafío, y su uso repetido puede causar la suspensión de la cuenta.
 
-## Maven Trading — https://maventrading.com/es/faqs
-- AUTO: ¿Está permitido el copy trading?
-- AUTO: El copy trading está permitido solo cuando copias tus propias operaciones entre tus cuentas.
-- AUTO: Está prohibido usar un EA para copy trading .
-- AUTO: Las operaciones deben copiarse manualmente .
-- AUTO: ¿Qué es el scalping excesivo?
-- AUTO: El scalping excesivo consiste en mantener más del 50% de tus operaciones por menos de 60 segundos (1 minuto) .
-- AUTO: Ejemplo de scalping excesivo:
-- AUTO: Esto se considera scalping excesivo y no está permitido.
-- AUTO: Trading de alta frecuencia (HFT): Explotar ineficiencias del trader demo mediante estrategias de alta frecuencia.
-- AUTO: Scalping de ticks: Explotar pequeños movimientos de precio a nivel de tick.
-- AUTO: Copy trading: Copiar operaciones de otra persona.
-- AUTO: Expert Advisors (EAs): Los EAs y el trading automatizado están prohibidos en todas las plataformas de Maven.
-- AUTO: Todas las operaciones deben ejecutarse manualmente.
-- AUTO: Sin uso de EAs ni scripts
-
 ## Maven Trading — https://maventrading.com/es/terms-and-conditions
 - AUTO: 4.1 Opere de forma manual e independiente.
 - AUTO: Se prohíben los EA, bots, scripts y el trading automatizado, incluida la copia automatizada.
@@ -3161,34 +3133,6 @@
 - AUTO: Esto incluye la apertura o el cierre manual, la ejecución de órdenes pendientes, la ejecución de stop-loss y take-profit y el cierre automático por objetivo de ganancia.
 - AUTO: Se prohíben la cobertura inversa (reverse hedging), la copia de operaciones entre cuentas (account mirroring), los EA y los scripts.
 - AUTO: El trading debe ser manual e independiente.
-
-## Maven Trading — https://maventrading.com/faqs
-- AUTO: The window also covers pending orders, stop-loss and take-profit execution, and automatic closure on reaching the challenge profit target.
-- AUTO: Is copy trading allowed?
-- AUTO: Copy trading is allowed only when copying your own trades between your accounts.
-- AUTO: Using an EA for copy trading is prohibited .
-- AUTO: Trades must be copied manually .
-- AUTO: Using another person's ID, email address, or payment card may result in automatic KYC rejection.
-- AUTO: What is excessive scalping?
-- AUTO: Excessive scalping means holding more than 50% of your trades for less than 60 seconds (1 minute) .
-- AUTO: Example of Excessive Scalping:
-- AUTO: This is considered excessive scalping and is not allowed.
-- AUTO: High-Frequency Trading (HFT): Exploiting demo-trader inefficiencies through high-frequency strategies.
-- AUTO: Tick Scalping: Exploiting small tick-level price movements.
-- AUTO: Copy Trading: Copying trades from another individual.
-- AUTO: Expert Advisors (EAs): EAs and automated trading are prohibited across all Maven platforms.
-- AUTO: All trades must be executed manually.
-- AUTO: Once you reach the profit target, your trades will automatically close, and your account will be disabled and placed under review.
-- AUTO: The Red Folder news restrictions in the General FAQ apply to this Challenge and Simulated Funded Account, including pending orders, stop-losses, take-profits and automatic profit-target closures.
-- AUTO: The Red Folder news restrictions in the General FAQ apply to this Challenge and Simulated Funded Account, including pending orders, stop-losses, take-profits and automatic profit-target closures.
-- AUTO: After you complete the final phase and satisfy all requirements, your trades will automatically close, and your account will be disabled and placed under review.
-- AUTO: The Red Folder news restrictions in the General FAQ apply to this Challenge and Simulated Funded Account, including pending orders, stop-losses, take-profits and automatic profit-target closures.
-- AUTO: Once you reach the profit targets, your trades will automatically close, and your account will be disabled and placed under review.
-- AUTO: The Red Folder news restrictions in the General FAQ apply to this Challenge and Simulated Funded Account, including pending orders, stop-losses, take-profits and automatic profit-target closures.
-- AUTO: After you complete the final phase and satisfy all requirements, your trades will automatically close, and your account will be disabled and placed under review.
-- AUTO: Once you reach the profit targets, your trades will automatically close, and your account will be disabled and placed under review.
-- AUTO: No use of EAs or scripts
-- COUNTRY: Restricted Countries: Belarus, Cuba, Iran, Myanmar, North Korea, Russia, Saint Lucia, Syria, Venezuela, and the Crimea (including Sevastopol), Donetsk, Kherson, Luhansk and Zaporizhzhia regions of Ukraine.
 
 ## Maven Trading — https://maventrading.com/pricing
 - COUNTRY: Restricted Countries: Belarus, Cuba, Iran, Myanmar, North Korea, Russia, Saint Lucia, Syria, Venezuela, and the Crimea (including Sevastopol), Donetsk, Kherson, Luhansk and Zaporizhzhia regions of Ukraine.
@@ -3209,27 +3153,6 @@
 - AUTO: Uso de Software de Negociação Automatizada (EA)
 - AUTO: Os EAs não são permitidos na Maven Trading.
 - AUTO: O uso de um EA resultará em reprovação no desafio, e o uso repetido pode causar suspensão da conta.
-
-## Maven Trading — https://maventrading.com/pt/faqs
-- AUTO: É permitido fazer copy trading?
-- AUTO: O copy trading é permitido apenas quando você copia seus próprios trades entre suas contas.
-- AUTO: É proibido usar um EA para copy trading .
-- AUTO: Os trades devem ser copiados manualmente .
-- AUTO: O que é scalping excessivo?
-- AUTO: Scalping excessivo significa manter mais de 50% dos seus trades por menos de 60 segundos (1 minuto) .
-- AUTO: Exemplo de scalping excessivo:
-- AUTO: Isso é considerado scalping excessivo e não é permitido.
-- AUTO: Trading de alta frequência (HFT): Explorar ineficiências do trader demo por meio de estratégias de alta frequência.
-- AUTO: Scalping de ticks: Explorar pequenos movimentos de preço no nível de tick.
-- AUTO: Copy trading: Copiar trades de outra pessoa.
-- AUTO: Expert Advisors (EAs): EAs e trading automatizado são proibidos em todas as plataformas da Maven.
-- AUTO: Todos os trades devem ser executados manualmente.
-- AUTO: Quando você atingir o objetivo de lucro, seus trades serão fechados automaticamente e sua conta será desativada e colocada em revisão.
-- AUTO: Depois que você concluir a fase final e cumprir todos os requisitos, seus trades serão fechados automaticamente e sua conta será desativada e colocada em revisão.
-- AUTO: Quando você atingir os objetivos de lucro, seus trades serão fechados automaticamente e sua conta será desativada e colocada em revisão.
-- AUTO: Depois que você concluir a fase final e cumprir todos os requisitos, seus trades serão fechados automaticamente e sua conta será desativada e colocada em revisão.
-- AUTO: Quando você atingir os objetivos de lucro, seus trades serão fechados automaticamente e sua conta será desativada e colocada em revisão.
-- AUTO: Sem uso de EAs ou scripts
 
 ## Maven Trading — https://maventrading.com/pt/terms-and-conditions
 - AUTO: O trading legalmente permitido antes da etapa prevista de KYC não é automaticamente inválido pelo simples fato de essa etapa ainda não ter ocorrido.
