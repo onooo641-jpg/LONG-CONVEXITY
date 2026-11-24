@@ -105,3 +105,15 @@ Cost noted to Jx: ~2,160 Actions minutes, shared with workstream B's shadow test
 **Reading.** UniswapX filling has CoW's shape: protocol-level order flow with approved newcomers earning ≈ $50–85K/yr gross, but entry
 requires Uniswap Labs' approval as an RFQ quoter (a firm-quote service answering within ~500 ms, then filling). Next step only Jx can take:
 submit Uniswap's quoter intake form (or keep it parked with CoW). Stage 5 verdict: **not run (premise invalid)**.
+
+### Stage 5b (registered 2026-11-24 after the RFQ finding; Jx asked to run #371 on GitHub — Actions minutes are free for this public repo)
+**Question.** Under RFQ, an outside (unapproved) filler can only fill when the exclusive quoter fails to fill in time. How often does that
+happen, and what would an outsider earn on those orders? Also: how concentrated are the approved quoters?
+**Program.** `tools/uniswapx_paper_filler.py` with (i) the V3 order format parsed (`startAmount`/`maxAmount` input, `startAmount`/`minAmount`
+outputs), (ii) every filled Arbitrum order recorded from the public filled-orders feed (polled every 5 minutes; the feed holds the latest 50,
+~9 hours) with its `exclusiveFiller`, (iii) the actual filler read from the fill transaction's `Fill` event (public Arbitrum RPC), (iv)
+KyberSwap quotes for orders seen open, as before. Run 36 hours on GitHub Actions (chained sessions).
+**Measures.** Filled orders recorded; share filled by their exclusive filler; **outsider fills** (actual filler ≠ exclusive filler);
+quoter concentration (top-1, top-3 shares of exclusivity); paper profit on outsider fills we quoted (as Stage 5).
+**Verdict for the "outsider filler" route (kill-only).** KILL if outsider fills are < 2% of filled orders, or annualised paper profit on
+them < $5,000/yr. Quoter-route figures are descriptive (that route needs Uniswap Labs' approval).

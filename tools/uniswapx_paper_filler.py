@@ -61,18 +61,42 @@ def log(event):
 
 
 def order_legs(o):
-    """(input token, input amount to quote, output token, total output startAmount, total output endAmount) or None."""
+    """(input token, input amount to quote, output token, total output start, total output end) or None. Handles V2 and V3 fields."""
     try:
         inp = o["input"]
         in_tok = inp["token"]
-        in_amt = max(int(inp.get("startAmount") or 0), int(inp.get("endAmount") or 0))   # exact-output orders: max input (conservative)
+        in_amt = max(int(inp.get("startAmount") or 0), int(inp.get("endAmount") or 0), int(inp.get("maxAmount") or 0))
         outs = o.get("outputs") or []
-        out_tok = max({x["token"] for x in outs}, key=lambda t: sum(int(x["startAmount"]) for x in outs if x["token"] == t))
-        start = sum(int(x["startAmount"]) for x in outs if x["token"] == out_tok)
-        end = sum(int(x["endAmount"]) for x in outs if x["token"] == out_tok)
+        out_tok = max({x["token"] for x in outs}, key=lambda t: sum(int(x.get("startAmount") or 0) for x in outs if x["token"] == t))
+        start = sum(int(x.get("startAmount") or 0) for x in outs if x["token"] == out_tok)
+        end = sum(int(x.get("endAmount") or x.get("minAmount") or 0) for x in outs if x["token"] == out_tok)
         return in_tok, in_amt, out_tok, start, end
     except Exception:  # noqa: BLE001
         return None
+
+
+def excl(o):
+    return str(((o.get("cosignerData") or {}).get("exclusiveFiller")) or "").lower()
+
+
+RPC = "https://arbitrum-one-rpc.publicnode.com"
+FILL_TOPIC = "0x78ad7ec0e9f89e74012afa58738b6b661c024cb0fd185ee2f616c0a28924bd66"
+
+
+def actual_filler(tx):
+    """Filler address from the Fill event in the fill transaction (public RPC)."""
+    try:
+        body = json.dumps({"jsonrpc": "2.0", "id": 1, "method": "eth_getTransactionReceipt", "params": [tx]}).encode()
+        req = urllib.request.Request(RPC, data=body, headers={**HEADERS, "Content-Type": "application/json"})
+        with urllib.request.urlopen(req, timeout=20) as r:
+            rc = json.loads(r.read().decode()).get("result") or {}
+        for lg in rc.get("logs") or []:
+            tp = lg.get("topics") or []
+            if tp and tp[0].lower() == FILL_TOPIC and len(tp) > 2:
+                return "0x" + tp[2][-40:].lower()
+    except Exception:  # noqa: BLE001
+        return None
+    return None
 
 
 def kyber_quote(tin, tout, amt):
@@ -106,6 +130,7 @@ def run(hours):
     tracked = {}            # orderHash -> {"legs":..., "first_seen":...}
     gone = {}               # orderHash -> time it left the open list
     last_summary = 0.0
+    last_feed, recorded = 0.0, set()
     print(f"Paper filler running for {hours} h. Log: {LOG}. Press Ctrl+C to stop early (the log is kept).", flush=True)
     log({"event": "start", "hours": hours})
     while time.time() < end_at:
@@ -119,7 +144,7 @@ def run(hours):
                 legs = order_legs(o)
                 tracked[h] = {"legs": legs, "first_seen": time.time()}
                 log({"event": "new", "hash": h, "type": o.get("type"), "legs": [str(x) for x in legs] if legs else None,
-                     "createdAt": o.get("createdAt")})
+                     "createdAt": o.get("createdAt"), "exclusive": excl(o)})
             legs = tracked[h]["legs"]
             if legs:
                 q = kyber_quote(legs[0], legs[2], legs[1])
@@ -142,6 +167,16 @@ def run(hours):
                     log({"event": "final", "hash": h, "status": "unknown"})
                     gone.pop(h)
                     tracked.pop(h, None)
+        if time.time() - last_feed > 300:
+            for h, o in recent_filled().items():
+                if h in recorded:
+                    continue
+                recorded.add(h)
+                legs = order_legs(o)
+                log({"event": "filled_feed", "hash": h, "exclusive": excl(o), "filler": actual_filler(o.get("txHash")) if o.get("txHash") else None,
+                     "createdAt": o.get("createdAt"), "fillTimestamp": o.get("fillTimestamp"), "txHash": o.get("txHash"),
+                     "legs": [str(x) for x in legs] if legs else None, "settledAmounts": o.get("settledAmounts")})
+            last_feed = time.time()
         if time.time() - last_summary > 600:
             write_summary(quiet=False)
             last_summary = time.time()
@@ -201,6 +236,23 @@ def write_summary(quiet=True):
     share = len(comp) / n if n else 0.0
     verdict = ("KILL" if (n and (share < 0.05 or ann < 5000)) else
                "worth building a real filler (speed untested)" if (share >= 0.10 and ann >= 15000) else "inconclusive / keep running")
+    feed = {}
+    for e in ev:
+        if e["event"] == "filled_feed":
+            feed[e["hash"]] = e
+    known = [e for e in feed.values() if e.get("filler") and e.get("exclusive")]
+    outsiders = [e for e in known if e["filler"] != e["exclusive"]]
+    ex_counts = {}
+    for e in feed.values():
+        if e.get("exclusive"):
+            ex_counts[e["exclusive"]] = ex_counts.get(e["exclusive"], 0) + 1
+    top = sorted(ex_counts.values(), reverse=True)
+    tot_ex = sum(top) or 1
+    out_rows = [r for r in rows if r["hash"] in {e["hash"] for e in outsiders}]
+    out_gross = sum(r["profit"] for r in out_rows if r["profit"] > 0)
+    out_ann = out_gross * 365 * 24 / hours if hours > 0 else 0.0
+    out_share = len(outsiders) / len(known) if known else 0.0
+    verdict_b = ("KILL (outsider route)" if known and (out_share < 0.02 or out_ann < 5000) else "outsider route not killed" if known else "n/a")
     lines = [
         f"UniswapX paper filler summary (Arbitrum) — written {time.strftime('%Y-%m-%d %H:%M:%S UTC', time.gmtime())}",
         f"hours run: {hours:.2f}; orders seen: {len(legs)}; final records: {len(finals)} (filled {len(filled)}); "
@@ -210,6 +262,10 @@ def write_summary(quiet=True):
         f"median gap our quote vs winner: {sorted(r['bps'] for r in rows)[n // 2]:.1f} bps" if n else "median gap: n/a",
         f"volume of measured fills: ${sum(r['vol'] for r in rows):,.0f}",
         f"pre-registered verdict so far: {verdict} (needs >= 36 h / ~200 filled orders to count)",
+        f"[Stage 5b] filled orders from the feed: {len(feed)}; with exclusive + actual filler known: {len(known)}",
+        f"[Stage 5b] filled by an outsider (actual filler != exclusive filler): {len(outsiders)} ({out_share:.1%})",
+        f"[Stage 5b] quoter concentration (exclusivity): top-1 {top[0] / tot_ex if top else 0:.0%}, top-3 {sum(top[:3]) / tot_ex:.0%}, quoters {len(top)}",
+        f"[Stage 5b] paper profit on outsider fills we quoted: ${out_gross:,.2f} -> ${out_ann:,.0f}/yr; verdict: {verdict_b}",
     ]
     SUMMARY.write_text("\n".join(lines) + "\n", encoding="utf-8")
     if not quiet:

@@ -1,1 +1,1 @@
-start=2026-11-24 total_hours=36
+start=2026-11-24 stage=5b total_hours=36
