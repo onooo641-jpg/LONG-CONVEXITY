@@ -47,3 +47,7 @@ Jx asked whether every area is covered. It is not; gaps recorded in `docs/NOTES_
 governance forums (Curve, Jupiter, Gnosis, Frax, Across, Ethena, Polygon, zkSync, Scroll, Mantle, Celo; same keyword rule); **N9** adds a
 page watch of market-maker / maker-rebate programmes on perp venues (Hyperliquid fees, Aster, Paradex, Orderly, Drift fees, edgeX), any
 change reported. Unreachable URLs are reported in source health and fixed or dropped later.
+
+### Addendum 3 (2026-11-24, niche sweep `docs/NICHE_SWEEP_20261124.md`)
+N8 (Malaysian broker/exchange promo pages) removed at Jx's request (well known, small). N5 keyword list extended with: prover, operator
+program, rebalancer, searcher, OEV. Regulator alert lists (N9) kept as a legality guard.

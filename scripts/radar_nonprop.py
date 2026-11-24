@@ -21,7 +21,8 @@ N4_MIN_PRIZE = 50_000
 N7_MIN_VOL, N7_MIN_CHG = 20e6, 100.0
 N5_DAYS = 14
 N5_RE = re.compile(r"incentiv|reward|liquidat|solver|keeper|relayer|filler|market[- ]?mak|liquidity provider program|\bLP program|"
-                   r"grant|points|competition|subsid|rebate|bounty|airdrop|retro", re.I)
+                   r"grant|points|competition|subsid|rebate|bounty|airdrop|retro|prover|operator program|rebalancer|searcher|\bOEV\b",
+                   re.I)
 FORUMS = {"aave": "https://governance.aave.com/latest.rss", "compound": "https://www.comp.xyz/latest.rss",
           "morpho": "https://forum.morpho.org/latest.rss", "cow": "https://forum.cow.fi/latest.rss",
           "uniswap": "https://gov.uniswap.org/latest.rss", "arbitrum": "https://forum.arbitrum.foundation/latest.rss",

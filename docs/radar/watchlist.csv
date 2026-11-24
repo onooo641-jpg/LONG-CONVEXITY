@@ -127,9 +127,6 @@ dt_eod_page,DayTraders,firm,https://daytraders.com/eod
 fe_pricing,FuturesElite,firm,https://futureselite.com/
 contest_c4,Code4rena,contest,https://code4rena.com/audits
 contest_immunefi,Immunefi,contest,https://immunefi.com/bug-bounty/
-promo_moomoo_my,moomoo Malaysia,promo_my,https://www.moomoo.com/my/
-promo_webull_my,Webull Malaysia,promo_my,https://www.webull.com.my/
-promo_rakuten_trade,Rakuten Trade,promo_my,https://www.rakutentrade.my/
 reg_sc_alert,SC Malaysia investor alert list,regulator_my,https://www.sc.com.my/investor-alert-list
 reg_bnm_alert,BNM financial consumer alert list,regulator_my,https://www.bnm.gov.my/financial-consumer-alert-list
 bot_cow_rewards,CoW solver rewards (docs source),bot_docs,https://raw.githubusercontent.com/cowprotocol/docs/main/docs/cow-protocol/reference/core/auctions/rewards.md
@@ -140,7 +137,6 @@ bot_across_relayer,Across relayers,bot_docs,https://docs.across.to/relayers/runn
 bot_chainlink_automation,Chainlink Automation,bot_docs,https://docs.chain.link/chainlink-automation
 bot_bebop,Bebop,bot_docs,https://docs.bebop.xyz/
 rel_cow_services,CoW services,release,https://github.com/cowprotocol/services/releases.atom
-promo_hata,HATA (Malaysia),promo_my,https://www.hata.io/
 bot_gelato,Gelato,bot_docs,https://www.gelato.network/
 mm_hl_fees,Hyperliquid fees and maker rebates,mm_program,https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees
 mm_aster,Aster docs,mm_program,https://docs.asterdex.com/
