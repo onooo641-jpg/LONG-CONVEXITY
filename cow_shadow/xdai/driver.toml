@@ -1,0 +1,34 @@
+# #368 driver, Gnosis Chain. __RPC__ replaced by the workflow.
+app-data-fetching-enabled = true
+orderbook-url = "https://barn.api.cow.fi/xdai"
+tx-gas-limit = "45000000"
+
+[[solver]]
+name = "baseline"
+endpoint = "http://127.0.0.1:7872"
+absolute-slippage = "40000000000000000"
+relative-slippage = "0.1"
+account = "0x2a871d0798f97d79848a013d4936a73bf4cc922c825d33c1cf7073dff6d409c6"  # public test key from CoW's playground; never funded
+
+[submission]
+gas-price-cap = "1000000000000"
+
+[submission.public-mempool]
+urls = ["__RPC__"]
+
+[liquidity]
+base-tokens = [
+  "0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d",
+  "0xDDAfbb505ad214D7b80b1f830fcCc89B60fb7A83",
+  "0x4ECaBa5870353805a9F068101A40E0f32ed605C6",
+  "0x6A023CCd1ff6F2045C3309768eAd9E68F978f6e1",
+  "0x9C58BAcC331c9aa871AFD802DB6379a98e80CEdb",
+  "0xaf204776c7245bF4147c2612BF6e5972Ee483701",
+  "0x177127622c4A00F3d409B75571e12cB3c8973d3c",
+]
+
+[[liquidity.uniswap-v2]]
+preset = "honeyswap"
+
+[[liquidity.uniswap-v2]]
+preset = "sushi-swap"

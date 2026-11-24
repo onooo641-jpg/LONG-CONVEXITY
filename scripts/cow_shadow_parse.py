@@ -59,6 +59,11 @@ def main(run_id):
     for f in ("params.txt", "digest.txt"):
         p = LOGS / f
         lines.append(f"{f}: {p.read_text().strip() if p.exists() else 'missing'}")
+    global API
+    pp = LOGS / "params.txt"
+    m = re.search(r"compare=(\S+)", pp.read_text()) if pp.exists() else None
+    if m:
+        API = m.group(1)
     seen, summ = set(), {}
     ap = LOGS / "autopilot.log"
     raw_lines = ap.read_text(errors="replace").splitlines() if ap.exists() else []

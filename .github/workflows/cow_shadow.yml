@@ -25,13 +25,16 @@ jobs:
       - name: Run the shadow stack
         run: |
           MIN=$(grep -E '^duration=' .github/cow_shadow_request.txt | cut -d= -f2); MIN=${MIN:-20}
-          RPC=$(grep -E '^rpc=' .github/cow_shadow_request.txt | cut -d= -f2-); RPC=${RPC:-https://ethereum-rpc.publicnode.com}
+          NET=$(grep -E '^net=' .github/cow_shadow_request.txt | cut -d= -f2); NET=${NET:-mainnet}
+          DEF_RPC=https://ethereum-rpc.publicnode.com; DEF_CMP=https://api.cow.fi/mainnet/api/v2/solver_competition/
+          if [ "$NET" = "xdai" ]; then DEF_RPC=https://rpc.gnosischain.com; DEF_CMP=https://barn.api.cow.fi/xdai/api/v2/solver_competition/; fi
+          RPC=$(grep -E '^rpc=' .github/cow_shadow_request.txt | cut -d= -f2-); RPC=${RPC:-$DEF_RPC}
           IMG=ghcr.io/cowprotocol/services:main
           mkdir -p cfg logs
           docker pull "$IMG"
           docker image inspect "$IMG" --format '{{index .RepoDigests 0}}' | tee logs/digest.txt
-          echo "duration_min=$MIN rpc=$RPC" | tee logs/params.txt
-          for f in autopilot driver baseline; do sed "s#__RPC__#$RPC#g" cow_shadow/$f.toml > cfg/$f.toml; done
+          echo "duration_min=$MIN net=$NET rpc=$RPC compare=$DEF_CMP" | tee logs/params.txt
+          for f in autopilot driver baseline; do sed "s#__RPC__#$RPC#g" cow_shadow/$NET/$f.toml > cfg/$f.toml; done
           docker run -d --name solvers --network host -e LOG="warn,solvers=info" -e TOML_TRACE_ERROR=1 -v "$PWD/cfg:/cfg" "$IMG" \
             solvers baseline --config /cfg/baseline.toml
           sleep 5
