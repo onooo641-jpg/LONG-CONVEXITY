@@ -1,2 +1,6 @@
 # jobs for scripts/fetch_fallback.py (one per line)
-u391hkipo
+u385hyperp
+u384lst
+u386tags
+u383vaults
+u387ccab

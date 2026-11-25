@@ -466,6 +466,90 @@ def job_u387cca():
     save("uncharted_387_gt.parquet", pd.DataFrame(gpools))
 
 
+REAL_CUR = {"ethereum": {"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48", "0xdac17f958d2ee523a2206206994597c13d831ec7"},
+            "base": {"0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"}, "arbitrum": {"0xaf88d065e77c8cc2239327c5edb3a432268e5831"},
+            "unichain": {"0x078d782b760474a361dda0af3839290b0ef57ad6"}}
+
+
+def _state(r, rpcs):
+    for fn in ("clearingPrice()", "currency()", "endBlock()", "startBlock()", "isGraduated()", "totalSupply()", "currencyRaised()",
+               "floorPrice()", "totalCleared()"):
+        r[fn[:-2]] = call(rpcs, r["auction"], fn)
+    r["token_decimals"] = call(rpcs, r["token"], "decimals()")
+    r["token_symbol"] = dec_str(call(rpcs, r["token"], "symbol()") or "0x")
+    cur = "0x" + r["currency"][-40:] if r.get("currency") else None
+    r["currency_addr"] = cur
+    if cur and int(cur, 16) != 0:
+        r["currency_decimals"] = call(rpcs, cur, "decimals()")
+        r["currency_symbol"] = dec_str(call(rpcs, cur, "symbol()") or "0x")
+    else:
+        r["currency_decimals"], r["currency_symbol"] = hex(18), "ETH"
+    if r.get("endBlock"):
+        eb = int(r["endBlock"], 16)
+        blk = rpc(rpcs, "eth_getBlockByNumber", [hex(eb), False]) if r.get("latest_block") and eb <= r["latest_block"] else None
+        r["end_ts"] = int(blk["timestamp"], 16) if blk else None
+
+
+def job_u387ccab():
+    """#387 second pass: Ethereum auctions (chunked eth_getLogs) + post-auction prices only for graduated auctions in real USDC/USDT/ETH
+    raising >= $10K (>= 4 ETH); tiny and fake-currency test auctions have no market to price."""
+    topic = "0x" + keccak256(b"AuctionCreated(address,address,uint256,bytes)")
+    rpcs = ["https://ethereum-rpc.publicnode.com", "https://eth.drpc.org", "https://rpc.ankr.com/eth"]
+    latest = int(rpc(rpcs, "eth_blockNumber", []), 16)
+    rows, frm, step = [], 23_000_000, 50_000
+    while frm <= latest:
+        to = min(frm + step - 1, latest)
+        lg = rpc(rpcs, "eth_getLogs", [{"fromBlock": hex(frm), "toBlock": hex(to), "address": CCA_FACTORIES, "topics": [topic]}])
+        if lg is None and step > 5_000:
+            step //= 2
+            continue
+        for x in lg or []:
+            rows.append({"chain": "ethereum", "factory": x["address"], "auction": "0x" + x["topics"][1][-40:], "token": "0x" + x["topics"][2][-40:],
+                         "block": int(x["blockNumber"], 16), "tx": x.get("transactionHash"), "latest_block": latest})
+        frm = to + 1
+    print(f"  ethereum: {len(rows)} auctions (blocks 23,000,000..{latest})", flush=True)
+    for r in rows:
+        _state(r, rpcs)
+    save("uncharted_387_eth.json", rows)
+    allr = json.loads((OUT / "uncharted_387_auctions.json").read_text()) + rows
+    keep = []
+    for r in allr:
+        try:
+            grad = r.get("isGraduated") and int(r["isGraduated"], 16) == 1
+            raised = int(r["currencyRaised"], 16) / 10 ** int(r["currency_decimals"], 16) if r.get("currencyRaised") else 0
+        except (TypeError, ValueError):
+            continue
+        cur = (r.get("currency_addr") or "").lower()
+        eth = not cur or int(cur, 16) == 0
+        real = eth or cur in REAL_CUR.get(r["chain"], set())
+        if grad and r.get("end_ts") and real and raised >= (4 if eth else 10_000):
+            r["raised"] = raised
+            keep.append(r)
+    print(f"  graduated, ended, real currency, >= $10K: {len(keep)}", flush=True)
+    prow, gpools = [], []
+    for r in keep:
+        print(f"    {r['chain']} {r.get('token_symbol')} raised {r['raised']:,.1f} {r.get('currency_symbol')}", flush=True)
+        k = f"{r['chain']}:{r['token']}"
+        prow += [{"key": k, "t": int(x["timestamp"]), "price": float(x["price"])}
+                 for x in llama_chart(k, r["end_ts"] - 2 * 86400, r["end_ts"] + 40 * 86400, span=45)]
+        cur = r.get("currency_addr")
+        ck = "coingecko:ethereum" if not cur or int(cur, 16) == 0 else f"{r['chain']}:{cur}"
+        prow += [{"key": ck, "t": int(x["timestamp"]), "price": float(x["price"])}
+                 for x in llama_chart(ck, r["end_ts"] - 2 * 86400, r["end_ts"] + 40 * 86400, span=45)]
+        gtnet = CCA_CHAINS[r["chain"]][2]
+        p = gt(f"/networks/{gtnet}/tokens/{r['token']}/pools?page=1") or {}
+        best = sorted(p.get("data") or [], key=lambda x: -float((x.get("attributes") or {}).get("reserve_in_usd") or 0))[:1]
+        for b in best:
+            a = b["attributes"]
+            o = gt(f"/networks/{gtnet}/pools/{a['address']}/ohlcv/day?aggregate=1&limit=200&currency=usd&token={r['token']}") or {}
+            for x in ((o.get("data") or {}).get("attributes") or {}).get("ohlcv_list") or []:
+                gpools.append({"auction": r["auction"], "pool": a["address"], "name": a.get("name"), "t": int(x[0]), "o": x[1], "h": x[2],
+                               "l": x[3], "c": x[4], "v_usd": x[5]})
+    save("uncharted_387_keep.json", keep)
+    save("uncharted_387_llama.parquet", pd.DataFrame(prow))
+    save("uncharted_387_gt.parquet", pd.DataFrame(gpools))
+
+
 # ---------------------------------------------------------------- #391 Hong Kong IPO one-lot applications
 HK_TEMPLATES = {
     "aastocks": "http://www.aastocks.com/en/stocks/market/ipo/listedipo.aspx?s=3&o=0&page={p}",
@@ -521,4 +605,4 @@ def job_uprobe():
 
 
 JOBS = {"uprobe": job_uprobe, "u383vaults": _safe(job_u383vaults), "u384lst": _safe(job_u384lst), "u385hyperp": _safe(job_u385hyperp),
-        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo)}
+        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab)}
