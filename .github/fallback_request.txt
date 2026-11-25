@@ -1,3 +1,2 @@
 # jobs for scripts/fetch_fallback.py (one per line)
-uhip3
-ufive
+unav

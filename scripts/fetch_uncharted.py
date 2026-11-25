@@ -1414,6 +1414,25 @@ def job_udistinct():
     save("distinct_llama_1h.parquet", pd.DataFrame(prow, columns=["id", "t", "price"]))
 
 
+def job_unav():
+    """#415: hourly DefiLlama prices for LST contract addresses (protocol-rate NAV) and their CoinGecko market prices."""
+    keys = ["ethereum:0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee", "ethereum:0x9d39a5de30e57443bff2a8307a4256c8797a3497",
+            "ethereum:0xd9a442856c234a39a81a089c06451ebaa4306a72", "ethereum:0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+            "coingecko:wrapped-eeth", "coingecko:ethena-staked-usde", "coingecko:pufeth", "coingecko:kelp-dao-restaked-eth",
+            "coingecko:ethereum", "coingecko:ethena-usde"]
+    rows = []
+    for k in keys:
+        t = T0_2024
+        while t < time.time():
+            d = get(f"https://coins.llama.fi/chart/{k}?start={t}&span=500&period=1h", tries=2)
+            pts = (((d or {}).get("coins") or {}).get(k) or {}).get("prices") or []
+            rows += [(k, int(x["timestamp"]), float(x["price"])) for x in pts]
+            t += 500 * 3600
+            time.sleep(0.25)
+        print(f"  {k}: {sum(1 for r in rows if r[0] == k)} points", flush=True)
+    save("distinct_nav_1h.parquet", pd.DataFrame(rows, columns=["key", "t", "price"]))
+
+
 def _safe(fn):
     def w():
         try:
@@ -1430,4 +1449,4 @@ def job_uprobe():
 
 
 JOBS = {"uprobe": job_uprobe, "u383vaults": _safe(job_u383vaults), "u384lst": _safe(job_u384lst), "u385hyperp": _safe(job_u385hyperp),
-        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive, "uhip3": _safe(job_uhip3), "uw3b": _safe(job_uw3b), "udistinct": _safe(job_udistinct)}
+        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive, "uhip3": _safe(job_uhip3), "uw3b": _safe(job_uw3b), "udistinct": _safe(job_udistinct), "unav": _safe(job_unav)}

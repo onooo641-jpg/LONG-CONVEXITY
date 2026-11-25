@@ -40,3 +40,23 @@ re-run with this rate on Hyperliquid.
 - **#412 Stage 2b — FAIL** (`docs/jx_runs/distinct_20261125.txt`, re-run identical): Binance 2020-05..2023-05 with the BTC-implied rate,
   112 events on 23 tokens, mean −1.20%, median −0.62%, t −1.07 (2020 +0.43%, 2021 −4.04%, 2022 +1.85%, 2023 −1.79%). Context: Stage 1 with
   the same rate on Hyperliquid 60 events +1.22%, t 1.03. The 2025–26 effect did not exist before → #412 is dead.
+
+## #414 and #415 — pre-registered 2026-11-25 before any of their results are computed
+Jx: "find 2 more with out-of-sample passed, and the other criteria". Both are new mechanisms (not wick buying, not listing-event shorts,
+not pre-launch shorts, not launch vaults) and each has an out-of-sample stage fixed here.
+
+**#414 Short lottery coins (MAX effect), market-neutral, weekly.** Each Monday close: universe = perps ≥ 60 days old in the top 100 by the
+previous 30 days' USD volume; MAX = the largest one-day return of the previous 30 days; short the top 10% by MAX, long the bottom 10%,
+equal weight and equal gross per side; hold one week; costs 0.045% per side on traded notional; funding included (shorts receive positive
+funding). Returns per $1 of capital (= $1 long + $1 short). **Stage 1 (Hyperliquid 2023-06..2026-10):** KILL if annualised < 15% or t < 2.
+**Stage 2 (out-of-sample, Binance USD-M 2020-01..2023-05):** PASS if annualised ≥ 15%, t ≥ 2, and ≥ 2 of the full years 2020, 2021, 2022
+positive. Context: Binance 2023-06..2026-10. Data in the repo (`uncharted_385_candles`, `hl_funding`, `uncharted_389_binance_ohlc`,
+`cryptotrend370_funding`).
+
+**#415 Withdrawal-queue discounts against on-chain NAV.** NAV = DefiLlama's price for the token's contract address (`ethereum:0x…`),
+which DefiLlama derives from the protocol's exchange rate for these tokens — checked first: NAV ÷ ETH (or ÷ USDe) must never fall by
+more than 0.5% hour-to-hour except at a slashing/loss event; tokens failing the check are dropped and reported. Market = DefiLlama's
+CoinGecko price (`coingecko:id`), hourly. Tokens: weETH, sUSDe, pufETH, rsETH. Event = market ≤ NAV × 0.99; buy $5,000; redeem after the
+queue (7 days) at the NAV then; costs 0.10% + lost staking yield (3%/yr ETH tokens, 8%/yr sUSDe); one position per token; $15,000 pot
+(three positions). **Stage 1 (2024-01..2024-12):** KILL if < 4 events or < $3,000/yr. **Stage 2 (out-of-sample 2025-01..2026-10):** PASS if
+≥ 4 events, ≥ $3,000/yr and ≥ 75% of events profitable. Data: job `unav`.
