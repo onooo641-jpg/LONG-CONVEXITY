@@ -256,13 +256,74 @@ def page_leads(changes_today, today, rows):
             _lead(rows, today, "N9", f"{x.slug}:{today}", x.name, "changed: " + " / ".join(f[:120] for f in first), None, x.url)
 
 
+# ------------------------------------------------------------------ N10 / N11 (addendum 4): forward paper logs for #389 S2c and #385
+HL_INFO = "https://api.hyperliquid.xyz/info"
+WICK_X, WICK_THROUGH, WICK_CAP, WICK_VOL, WICK_START = 0.15, 0.005, 1500.0, 0.01, "2026-12-01"
+WICK_MAKER, WICK_TAKER, WICK_POT = 0.00015, 0.00045, 15_000.0
+
+
+def n10_n11_hyperliquid(fetch, today, rows, health, out: Path):
+    """N10: paper fills of the #389 rule on every live Hyperliquid perp (completed UTC days from 2026-12-01).
+    N11: perps first listed in the last 3 days (candidates for the #385 pre-launch forward log)."""
+    import json as _j
+    _, t = fetch(HL_INFO, post={"type": "meta"})
+    uni = (_j.loads(t) if t else {}).get("universe", [])
+    live = [u["name"] for u in uni if not u.get("isDelisted")]
+    day0 = pd.Timestamp(today, tz="UTC").normalize()
+    start = day0 - pd.Timedelta(days=45)
+    recs = []
+    for c in live:
+        _, t = fetch(HL_INFO, post={"type": "candleSnapshot", "req": {"coin": c, "interval": "1d", "startTime": int(start.timestamp() * 1000),
+                                                                        "endTime": int(day0.timestamp() * 1000)}}, tries=2)
+        k = _j.loads(t) if t else []
+        time.sleep(0.25)
+        if not k:
+            continue
+        d = pd.DataFrame(k)
+        d["day"] = pd.to_datetime(d["t"], unit="ms", utc=True).dt.normalize()
+        for col in ("o", "h", "l", "c", "v"):
+            d[col] = d[col].astype(float)
+        d = d.drop_duplicates("day").sort_values("day").reset_index(drop=True)
+        first = d["day"].iloc[0]
+        if first > start + pd.Timedelta(days=1) and first >= day0 - pd.Timedelta(days=3):
+            _lead(rows, today, "N11", f"hl_new_{c}", "Hyperliquid", f"new perp {c} listed {first.date()} (check pre-launch: #385 forward log)",
+                  None, "https://app.hyperliquid.xyz/trade/" + c)
+        listed_long = first <= start + pd.Timedelta(days=1)
+        for i in range(1, len(d)):
+            r, p = d.iloc[i], d.iloc[i - 1]
+            if r["day"] >= day0 or str(r["day"].date()) < WICK_START:
+                continue
+            if not listed_long and r["day"] < first + pd.Timedelta(days=30):
+                continue
+            lvl = p["c"] * (1 - WICK_X)
+            if r["l"] > lvl * (1 - WICK_THROUGH):
+                continue
+            px = min(lvl, r["o"])
+            size = min(WICK_CAP, WICK_VOL * p["v"] * p["c"])
+            recs.append({"coin": c, "day": str(r["day"].date()), "level": lvl, "fill": px, "close": r["c"],
+                         "ret": r["c"] / px - 1 - WICK_MAKER - WICK_TAKER, "size": size})
+    f = out / "wick_paper.parquet"
+    old = pd.read_parquet(f) if f.exists() else pd.DataFrame(columns=["coin", "day", "level", "fill", "close", "ret", "size"])
+    new = pd.DataFrame(recs, columns=old.columns)
+    allr = pd.concat([old, new[~(new["coin"] + new["day"]).isin(old["coin"] + old["day"])]], ignore_index=True)
+    allr.to_parquet(f, index=False)
+    if len(allr):
+        day_sz = allr.groupby("day")["size"].transform("sum")
+        pnl = (allr["size"] * (WICK_POT / day_sz).clip(upper=1.0) * allr["ret"]).sum()
+        health["N10 wick paper (#389 S2c)"] = (f"{len(allr)} fills since {WICK_START}; mean net {allr['ret'].mean():.2%}; paper P&L ${pnl:,.0f}; "
+                                              f"new today {len(allr) - len(old)}")
+    else:
+        health["N10 wick paper (#389 S2c)"] = f"0 fills since {WICK_START} ({len(live)} live perps checked)"
+
+
 def run(fetch, jget, today, out: Path, root: Path, changes_today):
     """Returns (leads_all, new_today, health)."""
     rows, health = [], {}
     for name, fn in (("N1", lambda: n1_depegs(jget, today, rows, health)), ("N2", lambda: n2_funding(fetch, today, rows, health)),
                      ("N3", lambda: n3_cow(jget, today, rows, health, out, root)), ("N5", lambda: n5_forums(fetch, today, rows, health)),
                      ("N4", lambda: n4_contests(jget, today, rows, health, out)), ("N7", lambda: n7_cg(jget, today, rows, health, out)),
-                     ("N4/N8/N9", lambda: page_leads(changes_today, today, rows))):
+                     ("N4/N8/N9", lambda: page_leads(changes_today, today, rows)),
+                     ("N10/N11", lambda: n10_n11_hyperliquid(fetch, today, rows, health, out))):
         try:
             fn()
         except Exception as e:  # noqa: BLE001
@@ -291,7 +352,8 @@ def summary_lines(fresh, health):
     L = ["", "## Non-prop leads (docs/PREREG_RADAR_NONPROP_20261124.md): new today " + str(len(fresh)), ""]
     names = {"N1": "Stablecoin depegs", "N2": "Extreme funding", "N3": "New CoW solver recipients", "N4": "Audit contest prizes",
              "N5": "Governance: incentives / bot programmes", "N7": "Perp-venue volume surges",
-             "N8": "Malaysia promotions", "N9": "Malaysia access / bot-role docs / market-maker programme changes"}
+             "N8": "Malaysia promotions", "N9": "Malaysia access / bot-role docs / market-maker programme changes",
+             "N11": "New Hyperliquid perps (pre-launch candidates, #385)"}
     for src, nm in names.items():
         x = fresh[fresh["source"] == src]
         if len(x):

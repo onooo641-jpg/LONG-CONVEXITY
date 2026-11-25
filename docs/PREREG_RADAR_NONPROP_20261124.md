@@ -51,3 +51,11 @@ change reported. Unreachable URLs are reported in source health and fixed or dro
 ### Addendum 3 (2026-11-24, niche sweep `docs/NICHE_SWEEP_20261124.md`)
 N8 (Malaysian broker/exchange promo pages) removed at Jx's request (well known, small). N5 keyword list extended with: prover, operator
 program, rebalancer, searcher, OEV. Regulator alert lists (N9) kept as a legality guard.
+
+## Addendum 4 (2026-11-25): N10 and N11, forward logs for the uncharted batch
+- **N10, #389 S2c paper log:** each daily run applies the #389 rule unchanged (bid at previous close −15%, fill only on a print ≥ 0.5%
+  below, sell at the close, size min($1,500, 1% of the previous day's USD volume), Hyperliquid fees, perps ≥ 30 days old) to every
+  live Hyperliquid perp for completed UTC days from **2026-12-01**, appending to `data/radar/wick_paper.parquet`. Running totals print
+  under "Source health". The S2c verdict (≥ 60 fills and mean net ≥ 0.5% after 8 weeks, i.e. on 2027-01-26) is read from this file.
+- **N11, #385 forward watch:** perps first listed on Hyperliquid in the last 3 days become leads, to be checked by hand for pre-launch
+  status and logged as paper shorts per the #385 rule.
