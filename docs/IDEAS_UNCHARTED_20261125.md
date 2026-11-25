@@ -59,3 +59,16 @@ Count of ideas meeting all three: 6 tested (U1, U2, U5–U7 as one test, U8, U17
 | U4 | LBP end-of-sale buying | P | Dutch-style decay can end below fair value | Balancer factories + GeckoTerminal |
 
 Dropped while choosing these (already tested families): extreme-funding fades (#37, #57), HIP-3 cross-dex spreads (#284).
+
+## Potential re-rank (2026-11-25, Jx: "make sure these are high potential and competent")
+Realistic ceiling on ~$15K before any test result, then what the data said. "High" = plausibly ≥ $10K/yr on $15K.
+
+| Tier | Ideas | Why |
+|---|---|---|
+| **High** | #389 wick bids (data: ~$18.8K/yr backtest, out-of-sample pass); #402 hourly and #403 multi-venue versions of it; #371 UniswapX quoting and #364 CoW solving (approval-gated; newcomers earned $50K+/yr gross) | a structural payer (forced liquidations; protocol fees) and room to scale |
+| Medium | #397 cascade reversal (~$3.7K/yr, passed Binance); #385 pre-launch shorts (~$4K/yr); #383 launch vaults (32% median, small n); #384 LST discounts (inconclusive) | real but small or unproven |
+| Low (kept only because already registered; cheap to finish) | #392 monitoring tags, #393 Binance listings, #394 airdrop listings, #395 Korean listings, #398 BNB launchpool, #399 net-nets, #400 CoW AMM, #401 LBPs | event shorts / small subsidies: typically a few % per event, few events, crowded |
+| Dead | #386, #387, #391, #396 | tested |
+
+So the honest count of high-potential, testable, allowed ideas is small (the #389 family plus the two approval-gated roles); the new
+tests #402–#404 (`docs/PREREG_WICK_SCALE_20261125.md`) try to turn the one working edge into prop-sized money.
