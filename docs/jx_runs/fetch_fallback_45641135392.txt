@@ -1,0 +1,26 @@
+=== uhip3
+  HIP-3 dexes: ['xyz', 'flx', 'vntl', 'hyna', 'km', 'abcd', 'cash', 'para', 'mkts', 'io']
+  HIP-3 candles: 43860
+  wrote fivehigh_hip3_1d.parquet: 43860 rows
+=== ufive
+== ufive hl_spot (0s)
+  HL spot pairs: 357, candles 171671
+  wrote fivehigh_hl_spot_1d.parquet: 171671 rows
+== ufive venues_1h (502s)
+  venue 1h closes: {'aster': 432344, 'dydx': 111000, 'hyperliquid': 511711}
+  wrote fivehigh_venues_1h.parquet: 1055055 rows
+== ufive hl_premium (1938s)
+  wrote fivehigh_hl_premium.parquet: 511532 rows
+== ufive bn_premium (3388s)
+  premium-index symbols: 923
+  0/923 symbols, 142 trades, 10s
+  100/923 symbols, 3648 trades, 127s
+  200/923 symbols, 6906 trades, 220s
+  300/923 symbols, 10651 trades, 321s
+  400/923 symbols, 14480 trades, 407s
+  500/923 symbols, 18368 trades, 510s
+  600/923 symbols, 21895 trades, 590s
+  700/923 symbols, 25686 trades, 695s
+  800/923 symbols, 29662 trades, 776s
+  900/923 symbols, 32866 trades, 862s
+  wrote fivehigh_bn_premium_trades.parquet: 33430 rows
