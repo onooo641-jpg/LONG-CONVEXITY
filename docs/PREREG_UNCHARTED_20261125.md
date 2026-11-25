@@ -69,3 +69,18 @@ loans needs per-tier allotment data and its own pre-registration (Stage 2).
 
 **Commands.** probe: Actions job `uprobe`; tests: `scripts/uncharted_*_20261125.py` with outputs in `docs/jx_runs/` (each re-run once;
 identical). **Limits.** NAV proxies and announcement times are approximations; small samples are reported as such.
+
+---
+## Results
+
+### U-T7 (#391) Hong Kong IPO one-lot applications — **KILL** (2026-11-25)
+`uv run python -m scripts.uncharted_hkipo_20261125` → `docs/jx_runs/uncharted_hkipo_20261125.txt` (re-run identical).
+Data: AASTOCKS listed-IPO table (17 pages, fetch run 45600030401): 317 IPOs, but the table only reaches back to **2024-01-05**, so the
+window is 2024-01..2026-10 (not 2023 as registered); 301 of 309 in-window IPOs have every field.
+- Mean first-day return +35.6% (median +8.2%; 67% up), median lot value HK$3,932, median one-lot success rate 7%.
+- **Rule A (one lot in every IPO): EV −HK$6,090 over 2.82 years = −US$277/yr per identity** (2024 −US$773, 2025 +US$214,
+  2026 −US$222). With a zero-fee broker: +HK$24,010 = **+US$1,092/yr** — still a rounding error against the $15K bar.
+- Why: allocation odds are priced. Hot IPOs (final oversubscription ≥ 100×; 199 of 301) averaged +53% on day one but a median one-lot
+  success rate of 3%; the other 102 averaged +0.7% with high odds. Rule B (look-ahead) on the hot ones: +US$402/yr.
+- Verdict: KILL (Rule A < US$1,000/yr). Stage 0 broker access not needed. Scaling via margin applications was not tested; with
+  allocation this rationed it would need per-tier data and is unlikely to change the conclusion.

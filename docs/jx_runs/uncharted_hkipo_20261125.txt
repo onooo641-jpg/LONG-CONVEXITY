@@ -1,0 +1,22 @@
+===== #391 U-T7 Hong Kong IPO one-lot applications (AASTOCKS listed-IPO table)
+  IPOs parsed: 317; listing dates 2024-01-05..2026-11-24
+  in window 2023-01-01..2026-10-31: 309; with all fields: 301 (missing: 8)
+  NOTE: the table only reaches back to 2024-01-05; earlier IPOs are not in the fetched pages
+  per IPO: median lot value HK$3,932; median one-lot success 7%; mean first-day return 35.6% (median 8.2%); share up on day one 67%
+  Rule A (one lot, every IPO): 301 IPOs over 2.82 yr; EV HK$-6,090 -> US$-277/yr per identity; mean EV per IPO HK$-20
+    2024: IPOs 70; EV HK$-6,027 (US$-773); mean debut 8.6%; median one-lot 32%
+    2025: IPOs 113; EV HK$1,666 (US$214); mean debut 36.2%; median one-lot 8%
+    2026: IPOs 118; EV HK$-1,730 (US$-222); mean debut 51.0%; median one-lot 3%
+  Rule B (context, look-ahead: final oversubscription >= 100x): 199 IPOs; EV HK$8,830 -> US$402/yr; mean debut 53.4%; median one-lot 3%
+    the rest (< 100x or undersubscribed): 102 IPOs; EV HK$-14,921; mean debut 0.7%
+  largest EV contributions:
+    2025-04-15 DUALITYBIO-B           lot HK$9,460 one-lot 80.0% debut +116.7% EV HK$8,732
+    2025-09-30 ZIJIN GOLD INTL        lot HK$7,159 one-lot 50.0% debut +68.5% EV HK$2,351
+    2024-12-10 MAO GEPING             lot HK$2,980 one-lot 100.0% debut +76.5% EV HK$2,180
+    2026-01-12 OMNIVISION             lot HK$10,480 one-lot 100.0% debut +16.2% EV HK$1,600
+    2024-01-12 WELLCELL HOLD          lot HK$4,000 one-lot 20.0% debut +164.0% EV HK$1,212
+    2024-05-27 QUNABOX GROUP          lot HK$5,000 one-lot 60.0% debut +40.0% EV HK$1,100
+    2026-06-29 BAIGE DIGITAL          lot HK$3,120 one-lot 10.0% debut +367.9% EV HK$1,048
+    2026-09-09 EXCELLAND ROBOT        lot HK$2,890 one-lot 24.5% debut +153.8% EV HK$989
+  share of total EV from the top 5 IPOs: nan%
+  STAGE 1 VERDICT: KILL (Rule A EV < US$1,000/yr)
