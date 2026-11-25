@@ -384,9 +384,14 @@ SEL = {n: keccak256(n.encode())[:8] for n in ("clearingPrice()", "token()", "cur
                                                "totalSupply()", "currencyRaised()", "floorPrice()", "decimals()", "symbol()", "totalCleared()")}
 
 
+RPC_DEADLINE = [float("inf")]
+
+
 def rpc(urls, method, params):
+    if time.time() > RPC_DEADLINE[0]:
+        return None
     for u in urls:
-        d = get(u, {"jsonrpc": "2.0", "id": 1, "method": method, "params": params}, tries=2, timeout=30)
+        d = get(u, {"jsonrpc": "2.0", "id": 1, "method": method, "params": params}, tries=1, timeout=20)
         if d and "result" in d:
             return d["result"]
     return None
@@ -485,6 +490,9 @@ REAL_CUR = {"ethereum": {"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48", "0xdac17f
 
 
 def _state(r, rpcs):
+    r["isGraduated"] = call(rpcs, r["auction"], "isGraduated()")
+    if r["isGraduated"] is not None and int(r["isGraduated"], 16) == 0:
+        return  # not graduated: no sale happened, nothing else needed
     for fn in ("clearingPrice()", "currency()", "endBlock()", "startBlock()", "isGraduated()", "totalSupply()", "currencyRaised()",
                "floorPrice()", "totalCleared()"):
         r[fn[:-2]] = call(rpcs, r["auction"], fn)
@@ -635,8 +643,9 @@ def job_u389binance():
 
 # ---------------------------------------------------------------- #387 Ethereum auctions via Blockscout v2 address logs
 def job_u387eth():
+    RPC_DEADLINE[0] = time.time() + 20 * 60  # hard cap: 20 minutes of RPC calls
     topic = "0x" + keccak256(b"AuctionCreated(address,address,uint256,bytes)")
-    rpcs = ["https://eth.llamarpc.com", "https://1rpc.io/eth", "https://eth.drpc.org", "https://rpc.flashbots.net"]
+    rpcs = ["https://eth.drpc.org", "https://rpc.flashbots.net", "https://ethereum.publicnode.com", "https://eth.llamarpc.com"]
     latest = rpc(rpcs, "eth_blockNumber", [])
     latest = int(latest, 16) if latest else None
     print(f"  ethereum latest block {latest}", flush=True)
@@ -657,8 +666,12 @@ def job_u387eth():
             nxt = "?" + urllib.parse.urlencode(npp)
             time.sleep(0.5)
     print(f"  ethereum: {len(rows)} auctions", flush=True)
-    for r in rows:
+    for i, r in enumerate(rows):
         _state(r, rpcs)
+        if i % 10 == 0:
+            print(f"    state {i}/{len(rows)}", flush=True)
+    if time.time() > RPC_DEADLINE[0]:
+        print("  RPC time cap reached: some auction states are missing", flush=True)
     save("uncharted_387_eth.json", rows)
 
 
