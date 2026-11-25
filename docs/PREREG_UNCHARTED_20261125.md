@@ -174,3 +174,16 @@ prices are snapshotted at different moments, which alone produces ~1% fake disco
 four canonical factories (Base 528, Ethereum 407, Unichain 131, Arbitrum 86); 289 graduated; **16 real** (graduated, ended, real
 USDC/USDT/ETH, ≥ $10K raised; most others are tests with fake "USDC"). 8 have a 7-day price: **median 7-day return −39.3%** (mean +2.1%;
 FOLD +284%, BALANCE −93%, BFX −99%, RNBW −73%). 1-day median −32%, 30-day −21%. Aztec (VAZT, 19,390 ETH) has no tradeable price yet.
+
+## #385 Stage 2 — pre-registered 2026-11-25 before running: the same short on Binance's own pre-market perps
+Stage 1 (Hyperliquid pre-launch perps): 27 events, mean +18.3%, survives. Out-of-sample venue: Binance USD-M "Pre-Market" perpetuals
+(Binance's announcements, category 48: "Will Launch … Pre-Market Trading" and "Will Convert … Pre-Market Trading to Standard … (date)").
+Rule unchanged: short at the Binance contract's first daily close (archive `uncharted_389_binance_ohlc`), cover at the close 7 days after
+the token launch, taken as the conversion date in Binance's title (if missing: the token's first spot price from `uncharted_385_map`);
+1× notional; Binance funding (`cryptotrend370_funding`); 0.045% per side. Every pre-market contract found is used. Not a different time
+period (pre-launch perps only exist from 2023), so tokens overlap with Stage 1 — stated wherever this is quoted.
+**PASS** if ≥ 8 events, mean ≥ +5%, t ≥ 1.5, and no more than a third of trades lose > 50%.
+- **#385 Stage 2 result — FAIL** (`uv run python -m scripts.prelaunch_binance_20261125` → `docs/jx_runs/prelaunch_binance_20261125.txt`,
+  re-run identical): 29 pre-market launches, 17 with a launch date and prices; mean +11.5%, median +18.4%, **t 0.86 < 1.5**, win 65%, 18% lose
+  > 50% (CHIP −101%, EDGE −70%, XPL −60%). Mechanical fix before the verdict: entry = first close on/after the launch announcement (LIT and
+  PUMP reuse older tickers). #385 is not counted as a surviving family.
