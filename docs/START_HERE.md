@@ -55,6 +55,50 @@ $900 risk), **V** = verified on the firm's own page, **J** = supplied by Jx (not
   `data/live/`) is what every later step waits on. He should `git pull` first so he has the tick-grid fix in `bridge/topstepx.py`.
 - The bot (`bridge/`) connects **only to TopstepX** today. LucidDaily, TTP Prime and DayTraders need a different order route (below).
 
+### Why the next step is one live account (and not the 4-firm plan straight away)
+- **Every income figure in this file comes from the same backtested trades.** Topstep $44–46K, LucidDaily $57K, the 4-firm $195K and the
+  ×5 $975K all assume the live bot places the same orders as the backtest and gets filled the way the backtest assumes. If live fills or
+  costs are worse, **all of them shrink together**, because every account takes the same trades.
+- **The strategy itself is roughly break-even per trade** (mean net −0.001 R over 2016–26, +0.083 R since 2024; M). The income comes from the
+  prop rules (the firm absorbs the losing evaluations; you pay a reset fee). So the thing most likely to break the plan is **execution**: a
+  little extra slippage, or fewer fills, per trade adds up and moves a break-even trade into a losing one.
+- **The cheapest way to find out is one account**: it costs one account's fees (~$700–850 typical). Finding out after funding 4 firms would
+  put ~$12–14K of fees at risk.
+- **It also tests the plumbing**: the bot, the tick-grid fix, the journal and the export only become trustworthy after real orders have run
+  through them.
+
+### What the live account is compared against (`docs/PREREG_LIVE_20261120.md`, committed before any live data)
+Each layer only matters if the one before it passes. Model values are M (`docs/live_predictions.json`).
+| # | Compare | Model says | Gate | If it fails |
+|---|---|---|---|---|
+| 1 | **Signal parity**: for each backtest signal on the live days, did the bot place the same direction, entry, stop and target (within 1 tick)? Any live order with no backtest signal is listed | 100% | ≥ 95% match | a bug or data difference: fix the bot first; numbers after that are not comparable |
+| 2a | **Fill rate** of placed limit orders | 80% (79% since 2024) | within ±10 points | fewer fills = fewer trades and a different mix of winners; re-check the order logic |
+| 2b | **Slippage**: entry / stop exit / target exit | 0 / 1 / 0 ticks | mean stop slippage ≤ 2 ticks | each extra tick on stops costs on ~46% of trades (stop-exit share); fix or stop scaling |
+| 2c | **Costs** per micro round turn | $1.24 | — (reported) | update the cost in the model and re-price every product |
+| 2d | Contracts filled vs planned | equal | — (reported) | sizing bug |
+| 3 | **Same trade, same day**: live net R minus backtest net R | ≈ 0 | — (reported) | a steady gap means fills or costs differ from the model |
+| 4 | **Outcome vs bands**: cumulative net R of the last 20 / 40 / 60 / 100 live trades vs every run of that many past trades | see below | judged at **40 trades** | below the 5th percentile of both windows ⇒ the backtest does not describe live trading: stop adding accounts |
+| 5 | **Account milestones**: passes, busts, first payout | see below | — | compared with the predictions below |
+Other model values to compare: 16.8 trades a month, win rate 53.1% (55.6% since 2024), 46% of trades exit at the stop (43% since 2024).
+
+**Bands for cumulative net R** (R = $900; 5% / 50% / 95% of past runs; full 2016–26 · since 2024):
+| after | full window | since 2024 |
+|---|---|---|
+| 20 trades | −7.7 / −0.2 / +7.3 | −5.3 / +1.6 / +8.4 |
+| **40 trades** | **−10.8 / +0.2 / +11.9** | **−8.7 / +3.4 / +14.6** |
+| 60 trades | −13.5 / +0.2 / +15.8 | −10.5 / +4.5 / +18.6 |
+| 100 trades | −20.4 / −1.0 / +20.8 | −8.1 / +5.8 / +23.5 |
+
+**Decisions (no strategy-parameter changes either way):** parity < 95% or stop slippage > 2 ticks ⇒ fix execution first. After 40 trades:
+inside both bands ⇒ the model holds so far; above the since-2024 median (+3.4 R) ⇒ add the second account (LucidDaily or a second Topstep);
+below the 5th percentile of both ⇒ stop adding accounts. After 100 trades and a first payout inside the bands ⇒ the multi-firm plan
+(now the Malaysia-eligible 4-firm plan in section 4a, which replaced the Topstep + Lucid + MFFU plan named in the pre-registration).
+
+**What to expect in the first 3 months (one account, M):** about 50 trades; win rate 50–58%; 2–3 evaluations bought before the first
+pass; the first payout more likely than not after month 3 (median 145 days full history, 88 since 2024); net after 3 months most likely a
+small loss (−$250 to −$650), with about a 25% chance of being up. **A loss in months 1–3 is the normal case and is not evidence against the
+model**; only the gates above decide.
+
 ### Order of steps (each step starts only after the gate before it)
 | Step | What | Gate to move on | Who | Money |
 |---|---|---|---|---|
