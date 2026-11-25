@@ -1,0 +1,8 @@
+optimism: v2 start, head 160006724
+optimism: loaded 17389 cached positions
+optimism: recalibrated 826 cached positions
+optimism: positions ready: 17389 users, 4752 with debt
+optimism: reopened 25 recorded unhealthy episodes
+optimism: head 160006887 cycles 164 debtors 4752 cand 1193 last_cycle 1689 ms rpc ok/err 1118/None
+optimism: head 160007038 cycles 331 debtors 4752 cand 1195 last_cycle 1672 ms rpc ok/err 2176/None
+optimism: head 160007187 cycles 499 debtors 4752 cand 1187 last_cycle 2988 ms rpc ok/err 3243/None
