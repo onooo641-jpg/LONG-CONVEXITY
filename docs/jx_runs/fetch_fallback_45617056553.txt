@@ -1,0 +1,7 @@
+=== u389docs
+  200 4600 chars https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margining
+  200 5770 chars https://hyperliquid.gitbook.io/hyperliquid-docs/trading/order-types
+  200 4178 chars https://hyperliquid.gitbook.io/hyperliquid-docs/trading/contract-specifications
+  200 5025 chars https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/rate-limits-and-user-limits
+  200 10523 chars https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees
+  wrote uncharted_389_hldocs.json: 12777 bytes
