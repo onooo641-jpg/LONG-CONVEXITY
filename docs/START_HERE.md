@@ -239,7 +239,7 @@ launchpools (Malaysia), creator / marketing ventures (rule), #386 delisting shor
 
 ---
 
-## 7. Approval-gated roles (a business, not a deposit)
+## 7. Approval-gated roles (a business, not a deposit) — EXCLUDED by Jx (2026-11-25: "I don't want stuff that has to get approved by someone")
 These pay a role (solver, quoter) out of protocol fees or spreads. Newcomers can earn, but only after the protocol approves them.
 
 | # | Role | What was measured | Verdict / status | File |

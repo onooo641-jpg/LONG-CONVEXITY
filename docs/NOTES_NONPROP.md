@@ -279,3 +279,9 @@ Ideas U1–U28 with reasons: `docs/IDEAS_UNCHARTED_20261125.md`; tests `docs/PRE
 - #385 pre-launch perp shorts survive (small, ~$4K/yr); #383 vaults survive below bar; #384 inconclusive (6 months of pool data);
   KILL: #387 CCA (median −39%), #391 HK IPOs (−US$277/yr), #396 Binance perp launches (t 0.99); #386 not testable.
 - START_HERE rewritten (11 sections: to-dos for Jx, calendar, approval-gated roles incl. #371, uncharted search, radar, test rules).
+
+## 2026-11-25 — Jx rule: no approval-gated opportunities
+Jx: "I don't want stuff that has to get approved by someone." Excluded from now on: CoW solving (#364–#368), UniswapX quoting on Arbitrum
+(#371), RFQ market-maker programmes (U13), anything needing a protocol's or firm's onboarding approval. Still in scope: permissionless roles
+(#417 deBridge DLN takers, #418 UniswapX open fillers on Base) and own-capital strategies (wick family). Prop firms are unaffected (buying an
+evaluation is not an approval). The #371 paper run finishes on its own; its verdict is recorded but no longer acted on.
