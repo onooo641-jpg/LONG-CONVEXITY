@@ -57,7 +57,7 @@ def main():
               f"(median {r.median():.2%}, t {t:.2f}, win {(r > 0).mean():.0%}); net ${f['pnl'].sum():,.0f} -> ${per_yr:,.0f}/yr; "
               f"worst day ${top.iloc[0]:,.0f} ({top.index[0].date()}), best day ${top.iloc[-1]:,.0f} ({top.index[-1].date()})")
         by_y = f.groupby(f["day"].dt.year).agg(n=("ret", "size"), mean=("ret", "mean"), pnl=("pnl", "sum"))
-        print("     by year: " + "; ".join(f"{y} n {int(a.n)} mean {a.mean:.2%} ${a.pnl:,.0f}" for y, a in by_y.iterrows()))
+        print("     by year: " + "; ".join(f"{y} n {int(a.n)} mean {a['mean']:.2%} ${a['pnl']:,.0f}" for y, a in by_y.iterrows()))
         ex = f[f["day"] != top.index[-1]]
         print(f"     without the best day: ${ex['pnl'].sum() / yrs:,.0f}/yr, mean per fill {ex['ret'].mean():.2%}")
         if x == 0.15:

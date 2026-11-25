@@ -15,6 +15,9 @@ PUB = Path(__file__).resolve().parent.parent / "data" / "public"
 FEE = 0.00045  # per side
 HOLD_AFTER_TGE = 7
 MAP_TOL = 0.35  # mapping check: HL close vs spot price at TGE + 7 within +-35%
+# flagged after seeing the event list (not used for the verdict): AERO traded since 2023 (DefiLlama first-price artefact), OX and SHIA
+# are not known pre-launch listings
+SUSPECT = {"AERO", "OX", "SHIA"}
 
 
 def main():
@@ -51,7 +54,7 @@ def main():
         px_h = c["c"].reindex(f["ts"].dt.normalize()).to_numpy() if len(f) else np.array([])
         fund = float(np.nansum(f["rate"].to_numpy() * px_h / entry)) if len(f) else 0.0
         r.update({"entry": entry, "exit": exit_, "price_ret": exit_ / entry - 1, "funding": fund, "n_fund": len(f),
-                  "max_up": float(c.loc[entry_day:exit_day, "h"].max() / entry - 1)})
+                  "max_up": float(c.loc[entry_day + pd.Timedelta(days=1):exit_day, "h"].max() / entry - 1)})
         r["short_ret"] = -(exit_ / entry - 1) + fund - 2 * FEE
         r["status"] = "ok"
         rows.append(r)
@@ -75,6 +78,13 @@ def main():
         for y, g in d.groupby(pd.to_datetime(d["listed"]).dt.year):
             print(f"    listed {y}: n {len(g)}  mean {g['short_ret'].mean():.1%}  median {g['short_ret'].median():.1%}")
         if label.startswith("mapping"):
+            liq = d["max_up"] >= 1.0
+            r_iso = r.where(~liq, -1.0)
+            print(f"    sensitivity, isolated 1x margin (liquidated if the price doubles after entry): {int(liq.sum())} of {n} liquidated; "
+                  f"mean {r_iso.mean():.1%}, median {r_iso.median():.1%}")
+            sus = d[~d["coin"].isin(SUSPECT)]["short_ret"]
+            print(f"    sensitivity, without names whose pre-launch status is doubtful {sorted(SUSPECT)}: n {len(sus)} mean {sus.mean():.1%} "
+                  f"median {sus.median():.1%}")
             kill = n < 6 or r.mean() <= 0 or big > 1 / 3
             why = "fewer than 6 events" if n < 6 else ("mean <= 0" if r.mean() <= 0 else ("> 1/3 lose > 50%" if big > 1 / 3 else ""))
             print(f"  STAGE 1 VERDICT: {'KILL (' + why + ')' if kill else 'survives (kill-only)'}")

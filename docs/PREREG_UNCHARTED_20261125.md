@@ -70,6 +70,20 @@ loans needs per-tier allotment data and its own pre-registration (Stage 2).
 **Commands.** probe: Actions job `uprobe`; tests: `scripts/uncharted_*_20261125.py` with outputs in `docs/jx_runs/` (each re-run once;
 identical). **Limits.** NAV proxies and announcement times are approximations; small samples are reported as such.
 
+## U-T6 (#389) Stage 2 — pre-registered 2026-11-25 after Stage 1 survived, before any Stage 2 data were fetched
+Stage 1 used every Hyperliquid perp, so Stage 2 must add evidence the rule has not seen. All four parts are required for
+"prop-like candidate"; any failure stops it. Nothing in the rule changes (X = 15%, 0.5% trade-through, first 30 days excluded, size
+min($1,500, 1% of USD volume), $15,000 pot, Hyperliquid fees 0.015% / 0.045%).
+- **S2a, out-of-sample market:** Binance USD-M perps, every USDT symbol in the data.binance.vision archive (delisted included),
+  daily OHLC 2020-01..2026-10. PASS if mean net per fill ≥ 0.5% with t ≥ 3, net ≥ $3,000/yr, and the year is positive in ≥ 4 of the
+  6 full years 2020–2025. X = 10/20/30% reported as context only.
+- **S2b, risk on Hyperliquid (Stage 1 data):** daily P&L path on the $15,000 pot: PASS if the worst peak-to-trough drawdown is no
+  worse than −$3,750 (−25%) and the worst single day no worse than −$3,000.
+- **S2c, out-of-sample time:** forward paper run on Hyperliquid daily candles from 2026-12-01 for 8 weeks (radar logs each day's
+  fills). PASS if ≥ 60 fills and mean net per fill ≥ 0.5%.
+- **S2d, desk:** Hyperliquid rules for resting orders (margin reserved by open orders, open-order limits, API rate limits) must allow
+  the rule's resting bids on a $15,000 account; if not, the size/coin count that fits is fixed before S2c and reported.
+
 ---
 ## Results
 

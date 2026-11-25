@@ -162,6 +162,9 @@ UNDER_RE = {"HYPE": r"\bW?HYPE\b", "ETH": r"\bW?ETH\b", "USDE": r"\bUSDe\b|\bUSD
 
 def job_u384lst():
     """kHYPE/stHYPE/beHYPE/ezETH/rsETH/weETH/pufETH/sUSDe: DEX pool OHLCV (GeckoTerminal) + DefiLlama daily prices."""
+    if (OUT / "uncharted_384_llama.parquet").exists() and SKIP_DONE:
+        print("  DefiLlama part already fetched; pools only", flush=True)
+        return _u384_pools()
     lst = cg_list()
     cand = {s: [c["id"] for c in lst if c.get("symbol", "").lower() == s] for s in LST}
     mk = cg_markets([i for v in cand.values() for i in v])
@@ -174,6 +177,13 @@ def job_u384lst():
     for s, g in (("hype", "hyperliquid"), ("eth", "ethereum"), ("usde", "ethena-usde")):
         prow += [{"sym": s, "id": g, "t": int(x["timestamp"]), "price": float(x["price"])} for x in llama_chart(f"coingecko:{g}", T0_2024)]
     save("uncharted_384_llama.parquet", pd.DataFrame(prow))
+    _u384_pools()
+
+
+SKIP_DONE = True
+
+
+def _u384_pools():
     pools, orow = [], []
     for s, u in LST.items():
         d = gt(f"/search/pools?query={s}&page=1") or {}
@@ -183,9 +193,12 @@ def job_u384lst():
             name = a.get("name") or ""
             if not re.search(s, name, re.I) or not re.search(UNDER_RE[u], name, re.I):
                 continue
-            got.append({"sym": s, "network": p["relationships"]["network"]["data"]["id"], "address": a.get("address"), "name": name,
+            rel = p.get("relationships") or {}
+            got.append({"sym": s, "network": ((rel.get("network") or {}).get("data") or {}).get("id") or p["id"].split("_")[0],
+                        "address": a.get("address"), "name": name,
                         "reserve_usd": float(a.get("reserve_in_usd") or 0), "created": a.get("pool_created_at"),
-                        "base": p["relationships"]["base_token"]["data"]["id"], "quote": p["relationships"]["quote_token"]["data"]["id"]})
+                        "base": ((rel.get("base_token") or {}).get("data") or {}).get("id"),
+                        "quote": ((rel.get("quote_token") or {}).get("data") or {}).get("id")})
         got = sorted(got, key=lambda x: -x["reserve_usd"])[:4]
         pools += got
         print(f"  {s}: {len(got)} pools {[(g['network'], g['name'], round(g['reserve_usd'])) for g in got]}", flush=True)
@@ -495,6 +508,10 @@ def job_u387ccab():
     raising >= $10K (>= 4 ETH); tiny and fake-currency test auctions have no market to price."""
     topic = "0x" + keccak256(b"AuctionCreated(address,address,uint256,bytes)")
     rpcs = ["https://ethereum-rpc.publicnode.com", "https://eth.drpc.org", "https://rpc.ankr.com/eth"]
+    if SKIP_DONE and (OUT / "uncharted_387_eth.json").exists():
+        rows = json.loads((OUT / "uncharted_387_eth.json").read_text())
+        print(f"  ethereum auctions from uncharted_387_eth.json (job u387eth): {len(rows)}", flush=True)
+        return _u387_prices(rows)
     latest = int(rpc(rpcs, "eth_blockNumber", []), 16)
     rows, frm, step = [], 23_000_000, 50_000
     while frm <= latest:
@@ -511,6 +528,10 @@ def job_u387ccab():
     for r in rows:
         _state(r, rpcs)
     save("uncharted_387_eth.json", rows)
+    _u387_prices(rows)
+
+
+def _u387_prices(rows):
     allr = json.loads((OUT / "uncharted_387_auctions.json").read_text()) + rows
     keep = []
     for r in allr:
@@ -548,6 +569,97 @@ def job_u387ccab():
     save("uncharted_387_keep.json", keep)
     save("uncharted_387_llama.parquet", pd.DataFrame(prow))
     save("uncharted_387_gt.parquet", pd.DataFrame(gpools))
+
+
+# ---------------------------------------------------------------- #389 Stage 2a: Binance USD-M daily OHLC (every USDT perp ever listed)
+def job_u389binance():
+    import concurrent.futures as cf
+    import io
+    import xml.etree.ElementTree as ET
+    import zipfile
+    s3, ns = "https://s3-ap-northeast-1.amazonaws.com/data.binance.vision", "{http://s3.amazonaws.com/doc/2006-03-01/}"
+
+    def s3_list(prefix, delimiter=True):
+        keys, prefs, marker = [], [], ""
+        for _ in range(60):
+            u = f"{s3}?prefix={prefix}" + ("&delimiter=/" if delimiter else "") + (f"&marker={marker}" if marker else "")
+            try:
+                with urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=60) as r:
+                    root = ET.fromstring(r.read())
+            except Exception as e:  # noqa: BLE001
+                print(f"  list fail {prefix}: {e}", flush=True)
+                break
+            keys += [c.find(ns + "Key").text for c in root.findall(ns + "Contents")]
+            prefs += [c.find(ns + "Prefix").text for c in root.findall(ns + "CommonPrefixes")]
+            if (root.find(ns + "IsTruncated").text or "").lower() != "true":
+                break
+            marker = keys[-1] if keys else prefs[-1]
+        return keys, prefs
+
+    _, prefs = s3_list("data/futures/um/monthly/klines/")
+    syms = sorted({p.rstrip("/").split("/")[-1] for p in prefs})
+    syms = [x for x in syms if x.endswith("USDT") and "_" not in x]
+    print(f"  USDT perp symbols ever listed: {len(syms)}", flush=True)
+
+    def one(sym):
+        keys, _ = s3_list(f"data/futures/um/monthly/klines/{sym}/1d/", delimiter=False)
+        rows = []
+        for k in sorted(k for k in keys if k.endswith(".zip")):
+            mth = k.split("-1d-")[-1][:7]
+            if mth > "2026-10":
+                continue
+            try:
+                with urllib.request.urlopen(urllib.request.Request("https://data.binance.vision/" + k, headers=UA), timeout=60) as r:
+                    z = zipfile.ZipFile(io.BytesIO(r.read()))
+                    txt = z.read(z.namelist()[0]).decode()
+            except Exception:  # noqa: BLE001
+                continue
+            for ln in txt.splitlines():
+                f = ln.split(",")
+                if not f or not f[0].strip().isdigit():
+                    continue
+                ts = int(f[0])
+                ts = ts // 1000 if ts > 10**14 else ts
+                rows.append((sym, ts // 1000, float(f[1]), float(f[2]), float(f[3]), float(f[4]), float(f[7])))
+        return rows
+
+    out, t0 = [], time.time()
+    with cf.ThreadPoolExecutor(16) as ex:
+        for i, r in enumerate(ex.map(one, syms)):
+            out += r
+            if i % 100 == 0:
+                print(f"  {i}/{len(syms)} symbols, {len(out)} rows, {time.time() - t0:.0f}s", flush=True)
+    d = pd.DataFrame(out, columns=["sym", "t", "o", "h", "l", "c", "qvol"])
+    save("uncharted_389_binance_ohlc.parquet", d)
+
+
+# ---------------------------------------------------------------- #387 Ethereum auctions via Blockscout v2 address logs
+def job_u387eth():
+    topic = "0x" + keccak256(b"AuctionCreated(address,address,uint256,bytes)")
+    rpcs = ["https://eth.llamarpc.com", "https://1rpc.io/eth", "https://eth.drpc.org", "https://rpc.flashbots.net"]
+    latest = rpc(rpcs, "eth_blockNumber", [])
+    latest = int(latest, 16) if latest else None
+    print(f"  ethereum latest block {latest}", flush=True)
+    rows = []
+    for f in CCA_FACTORIES:
+        nxt = ""
+        for _ in range(40):
+            d = get(f"https://eth.blockscout.com/api/v2/addresses/{f}/logs" + nxt, tries=3, timeout=90)
+            for it in (d or {}).get("items") or []:
+                tp = [t for t in (it.get("topics") or []) if t]
+                if not tp or tp[0].lower() != topic:
+                    continue
+                rows.append({"chain": "ethereum", "factory": f, "auction": "0x" + tp[1][-40:], "token": "0x" + tp[2][-40:],
+                             "block": it.get("block_number"), "tx": it.get("transaction_hash"), "latest_block": latest})
+            npp = (d or {}).get("next_page_params")
+            if not npp:
+                break
+            nxt = "?" + urllib.parse.urlencode(npp)
+            time.sleep(0.5)
+    print(f"  ethereum: {len(rows)} auctions", flush=True)
+    for r in rows:
+        _state(r, rpcs)
+    save("uncharted_387_eth.json", rows)
 
 
 # ---------------------------------------------------------------- #391 Hong Kong IPO one-lot applications
@@ -605,4 +717,4 @@ def job_uprobe():
 
 
 JOBS = {"uprobe": job_uprobe, "u383vaults": _safe(job_u383vaults), "u384lst": _safe(job_u384lst), "u385hyperp": _safe(job_u385hyperp),
-        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab)}
+        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth)}
