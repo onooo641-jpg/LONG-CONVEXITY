@@ -1,0 +1,15 @@
+=== udistinct
+  upbit KRW markets 301, candles 295929
+  wrote distinct_upbit_1d.parquet: 295929 rows
+  llama hourly kinetic-staked-hype: 9246 points
+  llama hourly staked-hype: 12664 points
+  llama hourly hyperbeat-x-ether-fi-hype: 2948 points
+  llama hourly renzo-restaked-eth: 21868 points
+  llama hourly kelp-dao-restaked-eth: 22100 points
+  llama hourly wrapped-eeth: 22722 points
+  llama hourly pufeth: 14098 points
+  llama hourly ethena-staked-usde: 20779 points
+  llama hourly hyperliquid: 17419 points
+  llama hourly ethereum: 25432 points
+  llama hourly ethena-usde: 25350 points
+  wrote distinct_llama_1h.parquet: 194626 rows
