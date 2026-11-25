@@ -227,6 +227,7 @@ risk, 5m signals and 1m fills.
 | 392–401 | wave 3: Binance monitoring tags, Binance listings fade, airdrop-distribution listings, Korean listings fade, Binance perp launches, cascade-day reversal, BNB launchpool demand, crypto net-nets, CoW AMM LP, LBP end-of-sale | `docs/PREREG_UNCHARTED_WAVE3_20261125.md` | registered; data fetch `uwave3` | — |
 | 402–404 | #389 scaled: hourly wick bids (Binance 1h 2022–26, HL 1h); same rule on dYdX v4 / Aster / Lighter / Paradex; crash-regime guards judged on those unseen venues | `docs/PREREG_WICK_SCALE_20261125.md` | registered; data fetch `uscale` | — |
 | 405–409 | five high-ceiling liquidity ideas: oracle-dislocation buying, Hyperliquid spot wick bids, new-listing wick bids, market-neutral 1-day reversal, cross-venue price gaps | `docs/PREREG_FIVE_HIGH_20261125.md` | registered; data fetch `ufive` | — |
+| 410–411 | deeper wick ladder (25%/35%) on unseen venues; wick bids on Hyperliquid HIP-3 markets | `docs/PREREG_FIVE_HIGH_20261125.md` addendum | registered; data `uscale` / `uhip3` | — |
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.

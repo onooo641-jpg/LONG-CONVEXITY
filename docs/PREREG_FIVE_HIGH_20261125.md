@@ -54,3 +54,17 @@ $3,922/yr; Binance X 15% +1.32%, t 3.24, $6,676/yr. Even the best context varian
 ### #408 Market-neutral 1-day reversal — **KILL** (2026-11-25)
 Hyperliquid 2023-06..2026-10: gross reversal +0.070%/day but daily rebalancing costs 0.148%/day → net −0.076%/day, t −0.69, −42.8%/yr.
 Binance 2020–26 (context): gross +0.106%/day, net −0.077%/day, −55.8%/yr. The reversal exists but is smaller than taker costs.
+
+## Addendum (2026-11-25, before their data are fetched): #410 and #411
+Jx: "killed doesn't count — find five that don't get killed." Nothing can be guaranteed before a test; these two are chosen for a high prior
+(same mechanism as #389, which passed out-of-sample) and are judged only on data no rule here has seen. Note for the reader: survivors from
+one family are one bet in several forms (they all lose together in crash regimes); this is stated wherever they are summed.
+
+**#410 Deeper wick ladder on unseen venues.** Data: the #403 venues (dYdX v4, Aster, Lighter, Paradex daily candles, `wickscale_*_1d`).
+Rule: #389 unchanged except the bid levels: 25% and 35% below the previous close (each level its own size min($1,500, 1% of the previous
+day's USD volume); the 15% level belongs to #403 and is excluded here); all fills sold at the close; $15,000 pot. Stage 1, pooled over
+venues with ≥ 1 year of data: KILL if mean net per fill < 1.0%, t < 3, or < $2,000/yr in total.
+
+**#411 Wick bids on Hyperliquid HIP-3 markets** (builder-deployed perps: stocks, commodities, indices). Data: every HIP-3 dex's markets
+(`perpDexs`, `meta` per dex) daily candles from listing. Rule: #389 unchanged (X 15%, previous-day volume sizing, $15,000 pot, first 30
+days excluded). Stage 1: KILL if mean net per fill < 0.5%, t < 3, or < $2,000/yr; fewer than 30 fills = not testable.

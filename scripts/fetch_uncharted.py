@@ -1342,6 +1342,23 @@ def job_ufive():
         _safe(fn)()
 
 
+def job_uhip3():
+    """#411: daily candles for every market on every HIP-3 perp dex."""
+    dexes = get(HL, {"type": "perpDexs"}) or []
+    names = [d.get("name") for d in dexes if isinstance(d, dict) and d.get("name")]
+    print(f"  HIP-3 dexes: {names}", flush=True)
+    now = int(time.time() * 1000)
+    rows = []
+    for dx in names:
+        m = get(HL, {"type": "meta", "dex": dx}) or {}
+        for u in m.get("universe") or []:
+            c = get(HL, {"type": "candleSnapshot", "req": {"coin": u["name"], "interval": "1d", "startTime": 1704067200000, "endTime": now}}) or []
+            rows += [(dx, u["name"], int(x["t"]), float(x["o"]), float(x["h"]), float(x["l"]), float(x["c"]), float(x["v"])) for x in c]
+            time.sleep(1.05)
+    print(f"  HIP-3 candles: {len(rows)}", flush=True)
+    save("fivehigh_hip3_1d.parquet", pd.DataFrame(rows, columns=["dex", "coin", "t", "o", "h", "l", "c", "v"]))
+
+
 def _safe(fn):
     def w():
         try:
@@ -1358,4 +1375,4 @@ def job_uprobe():
 
 
 JOBS = {"uprobe": job_uprobe, "u383vaults": _safe(job_u383vaults), "u384lst": _safe(job_u384lst), "u385hyperp": _safe(job_u385hyperp),
-        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive}
+        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive, "uhip3": _safe(job_uhip3)}
