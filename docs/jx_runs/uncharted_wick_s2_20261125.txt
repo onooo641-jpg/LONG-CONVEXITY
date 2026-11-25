@@ -1,0 +1,15 @@
+===== #389 U-T6 Stage 2
+S2b risk path, Hyperliquid, X 15% ($15,000 pot):
+  Hyperliquid 2023-06..2026-10: worst peak-to-trough $-2,480; worst day $-2,307 (2025-10-10); best day $3,771; losing months 6 of 41
+  S2b: PASS (needs drawdown >= -$3,750 and worst day >= -$3,000)
+S2a out-of-sample, Binance USD-M: 918 symbols, 689444 symbol-days, 2020-01-01..2026-10-31
+  X 15% (primary): fills 17286; mean net per fill 1.48% (median 1.49%, t 14.98, win 59%); $15,776/yr; positive full years 6 of 6
+     by year: 2020 $15,798 (n 434, mean 3.16%); 2021 $43,591 (n 2545, mean 2.13%); 2022 $8,480 (n 1553, mean -0.05%); 2023 $10,633 (n 904, mean 4.04%); 2024 $24,653 (n 2782, mean 3.72%); 2025 $1,498 (n 4665, mean 0.16%); 2026 $3,229 (n 4403, mean 0.95%)
+  Binance path (context): worst peak-to-trough $-22,260; worst day $-4,810 (2020-03-12); best day $6,242; losing months 16 of 81
+  X 10%: fills 48098; mean net per fill 0.57% (median 0.41%, t 12.42, win 54%); $28,140/yr; positive full years 6 of 6
+     by year: 2020 $19,436 (n 1113, mean 0.83%); 2021 $66,370 (n 6457, mean 1.26%); 2022 $9,949 (n 4509, mean -0.52%); 2023 $18,412 (n 2940, mean 1.35%); 2024 $36,674 (n 7972, mean 1.80%); 2025 $24,940 (n 13995, mean -0.27%); 2026 $16,651 (n 11112, mean 0.54%)
+  X 20%: fills 8161; mean net per fill 3.44% (median 3.70%, t 19.28, win 65%); $9,038/yr; positive full years 5 of 6
+     by year: 2020 $13,113 (n 208, mean 5.85%); 2021 $27,342 (n 1331, mean 4.80%); 2022 $370 (n 686, mean 0.21%); 2023 $9,241 (n 361, mean 6.48%); 2024 $13,964 (n 1476, mean 6.87%); 2025 $-2,143 (n 2061, mean 2.20%); 2026 $-83 (n 2038, mean 1.62%)
+  X 30%: fills 2688; mean net per fill 7.05% (median 8.35%, t 16.21, win 68%); $9,862/yr; positive full years 5 of 6
+     by year: 2020 $6,652 (n 46, mean 7.20%); 2021 $26,085 (n 591, mean 14.22%); 2022 $-932 (n 173, mean 0.39%); 2023 $3,085 (n 51, mean 11.59%); 2024 $13,803 (n 408, mean 14.41%); 2025 $9,842 (n 806, mean 3.69%); 2026 $8,905 (n 613, mean 1.14%)
+  S2a: PASS (needs mean >= 0.5%, t >= 3, >= $3,000/yr, >= 4 of 6 full years positive)

@@ -146,3 +146,15 @@ involved a token with a Hyperliquid perp (XMR −6.5%, LOOM +3.5% hedged) — be
   whether resting orders reserve margin. Two cases until checked: no reservation → ~$18.8K/yr (prior-day sizing); reservation at
   each coin's maximum leverage → ~$6.4K/yr. A one-minute test (place a small resting bid, see whether "available margin" drops)
   settles it; that needs Jx's Hyperliquid account.
+- **S2a (out-of-sample market) PASS** (`uv run python -m scripts.uncharted_wick_s2_20261125` → `docs/jx_runs/uncharted_wick_s2_20261125.txt`,
+  re-run identical; Binance archive, fetch run 45627417590): 918 USDT perps (delisted included), 2020-01..2026-10, X 15%: **17,286 fills,
+  mean net +1.48% (t 14.98, win 59%), $15,776/yr, all 6 full years positive** (2020 $15.8K, 2021 $43.6K, 2022 $8.5K, 2023 $10.6K,
+  2024 $24.7K, 2025 $1.5K). X 10/20/30%: +0.57/+3.44/+7.05% per fill.
+- **Red flag (context, not a registered criterion):** the Binance $15,000-pot path had a **−$22,260 peak-to-trough drawdown
+  (2025-09-13 → 2026-07-16)** — larger than the pot. Half-years with a negative mean per fill are crash regimes: Binance 2022H2 −2.79%
+  (FTX), 2025H2 −2.17% (2025-10-10 cascade); Hyperliquid 2025H2 −2.69%. Hyperliquid's dollar P&L stayed positive in that window
+  (+$5.1K) only through sizing; its mean per fill there was −1.09%. 2026H2 is positive again on both venues (HL +3.98%, Binance +1.61%).
+  So the rule has a real long-run edge but loses in crash regimes, and the HL S2b pass rests on a shorter, kinder history.
+- **Status:** S2a PASS, S2b PASS, S2c forward paper (radar N10) 2026-12-01 → 2027-01-26, S2d margin test needs Jx. No money until all
+  pass; any live version would need a crash-regime limit (e.g. a daily loss stop), which is a new rule and needs its own
+  pre-registration and forward test.
