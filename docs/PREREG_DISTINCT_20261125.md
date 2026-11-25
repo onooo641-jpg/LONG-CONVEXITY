@@ -21,3 +21,22 @@ that hour, minus 0.10% and lost staking yield; one position per token at a time;
 < $3,000/yr. A survivor needs a forward paper check of the actual DEX quote for $5,000 before money.
 
 **Commands.** `uv run python -m scripts.distinct_20261125` → `docs/jx_runs/distinct_20261125.txt` (re-run identical). Data job `udistinct`.
+
+---
+## Stage 1 results (2026-11-25) — `uv run python -m scripts.distinct_20261125` (data: fetch run 45650013333)
+- **#412 Korean-premium spikes — survives Stage 1 (kill-only):** 54 events on 41 tokens, mean +2.53% (median +4.26%), t 2.10, win 69%,
+  worst −29.6%; 2024 n 2 −16.7%, 2025 n 40 +3.24%, 2026 n 12 +3.40%. **Stage 2 as registered could not run:** Upbit's KRW-USDT market (the
+  registered exchange rate) has no history before 2023, so 2020–23 has no events. Not a pass.
+- **#413 withdrawal discounts (hourly) — printed "survives" ($19,168/yr, 372 events, 0 losing) but the measurement is not credible:**
+  the redemption value is the token's own trailing 30-day maximum price, so any discount is assumed to close by construction (zero losers is
+  the symptom), and a real NAV drop (e.g. rsETH 2026-04, beHYPE 2026-06) is booked as profit. Needs the protocols' on-chain exchange rates
+  (Stage 1c) before it counts either way. Recorded as **invalid measurement**, not a survivor.
+
+## #412 Stage 2b — pre-registered 2026-11-25 before running it
+Same rule and bars as Stage 2, but the KRW→USD rate = Upbit KRW-BTC close ÷ Binance BTCUSDT close (a BTC-implied rate that exists back to
+2020; it carries BTC's own Korean premium, so a spike now means the token's premium rising ≥ 5 points relative to BTC's, against its own
+30-day median). Window 2020-05..2023-05 on Binance USD-M perps. PASS if ≥ 15 events, mean ≥ 2%, t ≥ 2. Also reported for context: Stage 1
+re-run with this rate on Hyperliquid.
+- **#412 Stage 2b — FAIL** (`docs/jx_runs/distinct_20261125.txt`, re-run identical): Binance 2020-05..2023-05 with the BTC-implied rate,
+  112 events on 23 tokens, mean −1.20%, median −0.62%, t −1.07 (2020 +0.43%, 2021 −4.04%, 2022 +1.85%, 2023 −1.79%). Context: Stage 1 with
+  the same rate on Hyperliquid 60 events +1.22%, t 1.03. The 2025–26 effect did not exist before → #412 is dead.

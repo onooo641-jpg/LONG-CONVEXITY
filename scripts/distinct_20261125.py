@@ -20,9 +20,9 @@ def tstat(r):
     return r.mean() / (r.std(ddof=1) / np.sqrt(len(r))) if len(r) > 1 else np.nan
 
 
-def premium_events(up, C, F, map_coin, start, end, btc):
+def premium_events(up, C, F, map_coin, start, end, btc, fx=None):
     """Short when the Upbit premium spikes >= 5 pp above its trailing 30-day median (token on Upbit >= 30 days)."""
-    usdt = up[up["coin"] == "USDT"].set_index("day")["krw_close"]
+    usdt = fx if fx is not None else up[up["coin"] == "USDT"].set_index("day")["krw_close"]
     rows = []
     for coin, g in up[up["coin"] != "USDT"].groupby("coin"):
         col = map_coin(coin)
@@ -103,8 +103,17 @@ def part412():
     CBx = CB.copy()
     t2 = premium_events(up, CBx, FB, bn_col, pd.Timestamp("2020-01-01", tz="UTC"), pd.Timestamp("2023-05-31", tz="UTC"), "BTCUSDT")
     m2, ts2, n2 = show(t2, "Stage 2, Binance 2020-01..2023-05 (out-of-sample)")
-    ok = s1 and n2 >= 15 and m2 >= 0.02 and ts2 >= 2
-    print(f"  STAGE 2 VERDICT: {'PASS' if ok else ('FAIL' if s1 else 'not run (Stage 1 killed) — context')}")
+    print(f"  STAGE 2 VERDICT: {'not runnable as registered (no KRW-USDT history before 2023)' if n2 == 0 else ('PASS' if s1 and n2 >= 15 and m2 >= 0.02 and ts2 >= 2 else 'FAIL')}")
+    # Stage 2b: BTC-implied KRW rate (Upbit KRW-BTC / Binance BTCUSDT)
+    kb = up[up["coin"] == "BTC"].set_index("day")["krw_close"]
+    fx_b = (kb / CB["BTCUSDT"].reindex(kb.index)).dropna()
+    t3 = premium_events(up[up["coin"] != "BTC"], CBx, FB, bn_col, pd.Timestamp("2020-05-01", tz="UTC"), pd.Timestamp("2023-05-31", tz="UTC"),
+                        "BTCUSDT", fx=fx_b)
+    m3, ts3, n3 = show(t3, "Stage 2b, Binance 2020-05..2023-05, BTC-implied KRW rate")
+    ok = s1 and n3 >= 15 and m3 >= 0.02 and ts3 >= 2
+    print(f"  STAGE 2b VERDICT: {'PASS' if ok else 'FAIL'}")
+    t4 = premium_events(up[up["coin"] != "BTC"], C, F, hl_col, pd.Timestamp("2023-06-01", tz="UTC"), pd.Timestamp("2026-10-24", tz="UTC"), "BTC", fx=fx_b)
+    show(t4, "context: Stage 1 re-run with the BTC-implied rate (Hyperliquid)")
 
 
 def part413():

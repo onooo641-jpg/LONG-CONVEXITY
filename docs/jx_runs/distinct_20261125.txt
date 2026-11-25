@@ -1,0 +1,25 @@
+===== #412-#413 distinct mechanisms
+#### #412 Korean-premium spikes (short on Hyperliquid, 7 days, BTC hedge)
+  Upbit KRW markets with candles: 301, 2020-05-01..2026-11-25; KRW-USDT present: True
+  Stage 1, Hyperliquid 2023-06..2026-10: events 54 (41 tokens); mean 2.53%, median 4.26%, t 2.10, win 69%, worst -29.6%, best 18.5%; median spike 6.9%
+     by year: 2024 n 2 -16.73%; 2025 n 40 +3.24%; 2026 n 12 +3.40%
+  STAGE 1 VERDICT: survives (kill-only)
+  Stage 2, Binance 2020-01..2023-05 (out-of-sample): no events
+  STAGE 2 VERDICT: not runnable as registered (no KRW-USDT history before 2023)
+  Stage 2b, Binance 2020-05..2023-05, BTC-implied KRW rate: events 112 (23 tokens); mean -1.20%, median -0.62%, t -1.07, win 46%, worst -39.6%, best 22.8%; median spike 8.2%
+     by year: 2020 n 12 +0.43%; 2021 n 34 -4.04%; 2022 n 32 +1.85%; 2023 n 34 -1.79%
+  STAGE 2b VERDICT: FAIL
+  context: Stage 1 re-run with the BTC-implied rate (Hyperliquid): events 60 (43 tokens); mean 1.22%, median 3.03%, t 1.03, win 63%, worst -29.6%, best 18.5%; median spike 6.7%
+     by year: 2023 n 2 -7.89%; 2024 n 3 -13.77%; 2025 n 43 +1.65%; 2026 n 12 +4.96%
+
+#### #413 withdrawal-queue discounts on hourly prices (#384 Stage 1b)
+  khype: 2025-07-16..2026-11-25, events 26, mean net 1.24%, P&L $1,608
+  sthype: 2025-02-21..2026-11-25, events 61, mean net 1.77%, P&L $5,390
+  behype: 2025-09-10..2026-11-24, events 36, mean net 13.43%, P&L $24,169
+  ezeth: 2024-01-26..2026-11-25, events 85, mean net 1.43%, P&L $6,060
+  rseth: 2024-01-12..2026-11-23, events 103, mean net 1.96%, P&L $10,102
+  weeth: 2024-01-05..2026-11-25, events 78, mean net 1.21%, P&L $4,708
+  pufeth: 2024-02-12..2026-11-25, events 124, mean net 2.17%, P&L $13,427
+  susde: 2024-03-20..2026-11-23, events 72, mean net 2.03%, P&L $7,322
+  pot of $15,000 (3 x $5,000): events 372, mean net 2.98%, losing 0, $19,168/yr over 2.89 yr
+  STAGE 1 VERDICT: survives (kill-only)
