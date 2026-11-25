@@ -1,0 +1,16 @@
+===== #386 U-T4 delisting announcements -> hedged 7-day short on Hyperliquid (Binance; Upbit not testable: HTTP 403)
+  announcements fetched: 360; Hyperliquid perps with candles: 235; funding coins: 155
+
+  PRIMARY spot token delistings: events with a Hyperliquid perp 2
+    mean hedged 7-day return -1.51% (median -1.51%, t -0.30, win 50%); worst -6.5%, best 3.5%
+      date coin  short_leg  btc_leg     ret                                                            title
+2024-02-06  XMR     -0.211    0.154  -0.065           Binance Will Delist ANT, MULTI, VAI, XMR on 2024-02-20
+2024-08-12 LOOM      0.037    0.002   0.035 Binance Will Delist CVP, EPX, FOR, LOOM, REEF, VGX on 2024-08-26
+  STAGE 1 VERDICT: not testable (fewer than 15 events)
+
+  CONTEXT futures-contract delistings: events with a Hyperliquid perp 3
+    mean hedged 7-day return 6.68% (median 0.23%, t 0.73, win 67%); worst -4.9%, best 24.7%
+      date  coin  short_leg  btc_leg     ret                                                                  title
+2024-11-29  ORBS     -0.062    0.024  -0.049 Binance Futures Will Delist USDⓈ-M XEMUSDT, ORBSUSDT and LOOMUSDT Perp
+2024-11-29  LOOM     -0.010    0.024   0.002 Binance Futures Will Delist USDⓈ-M XEMUSDT, ORBSUSDT and LOOMUSDT Perp
+2024-12-06 MAVIA      0.238    0.017   0.247 Binance Futures Will Delist USDⓈ-M MAVIAUSDT, OMGUSDT, and BONDUSDT Pe

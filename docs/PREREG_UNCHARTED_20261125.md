@@ -98,3 +98,45 @@ window is 2024-01..2026-10 (not 2023 as registered); 301 of 309 in-window IPOs h
   success rate of 3%; the other 102 averaged +0.7% with high odds. Rule B (look-ahead) on the hot ones: +US$402/yr.
 - Verdict: KILL (Rule A < US$1,000/yr). Stage 0 broker access not needed. Scaling via margin applications was not tested; with
   allocation this rationed it would need per-tier data and is unlikely to change the conclusion.
+
+### U-T3 (#385) Short Hyperliquid pre-launch perps — **survives Stage 1 (kill-only)**, small and tail-heavy (2026-11-25)
+`uv run python -m scripts.uncharted_hyperp_20261125` → `docs/jx_runs/uncharted_hyperp_20261125.txt` (re-run identical). Data: fetch run
+45609648643 (235 Hyperliquid perps incl. 56 delisted; CoinGecko ids by symbol; DefiLlama first spot price; Hyperliquid funding).
+- 34 perps listed > 2 days before their first spot price; 29 tradeable to TGE + 7 days; **27 pass the price-mapping check (primary)**.
+- Primary: **mean short return +18.3%, median +24.2%, t 1.65, win 63%**, 3 of 27 lose > 50% (worst −127%); price −11.0% on average,
+  funding to the short +7.4%. By listing year: 2023 −22.6% (n 6), 2024 +29.6% (n 6), 2025 +30.1% (n 15). 2026: one live hyperp, no TGE yet.
+- Kill rules (n ≥ 6, mean > 0, ≤ 1/3 lose > 50%): none triggered → survives.
+- **Caveats (decisive for sizing):** the average worst run-up after entry is +152%; with isolated 1× margin 11 of 27 would have been
+  liquidated (mean −14.3%). It only works as small positions inside a cross-margined account. Excluding three doubtful names
+  (AERO is a DefiLlama first-price artefact; OX, SHIA) gives n 24, mean +17.7%. At ~15 events a year, ~$1.5K notional each (sized to
+  survive an 8× run-up), that is roughly **$4K/yr**: useful, not prop-like. Next: forward paper log of new Hyperliquid pre-launch
+  listings (radar) before any money; no Stage 2 registered yet.
+
+### U-T6 (#389) Resting bids under liquidation wicks — **survives Stage 1 (kill-only)**; S2b **PASS**; S2a/S2c/S2d pending (2026-11-25)
+`uv run python -m scripts.uncharted_wick_20261125` → `docs/jx_runs/uncharted_wick_20261125.txt` (re-run identical).
+- X 15% (primary): **4,350 fills on 706 days, mean net +2.61% per fill (median +1.73%, t 15.45, win 60%), $67,089 = $19,606/yr on the
+  $15,000 pot**; every year positive (2023 $9,819; 2024 $30,927; 2025 $16,070; 2026 to Oct $10,272); without the best day $18,504/yr.
+  X 10%: +0.91%/fill, $27,133/yr. X 20%: +6.24%, $12,794/yr. X 30%: +13.21%, $12,536/yr.
+- Checks: delisted coins included (56 of 235; their 1,088 fills average +2.7%); P&L spread over many coins (largest +$3.1K WIF, worst
+  −$1.7K OM). Fill logic: a print ≥ 0.5% below the bid means the bid was consumed (price priority), so fills are not assumed.
+- Mechanical fix found after Stage 1: size used the fill day's own volume (look-ahead). With the previous day's volume: 4,068 fills,
+  +2.41%/fill, **$18,839/yr** — conclusion unchanged.
+- **S2b (risk) PASS:** worst peak-to-trough −$2,480, worst day −$2,307 (2025-10-10), 6 losing months of 41
+  (`uv run python -m scripts.uncharted_wick_s2_20261125`).
+- **Capacity warning for S2d:** resting bids total ~$218K notional a day (median). If Hyperliquid reserves initial margin for open
+  orders (third-party sources say yes; official docs not yet read), that is ~$52K of margin at each coin's maximum leverage, and a
+  $15,000 account could post ~23% of the bids → **~$6.4K/yr**. Docs fetch `u389docs` queued.
+
+### U-T1 (#383) Launch-phase perp-DEX house vaults — **survives Stage 1 (kill-only); forward-trial bar not met** (2026-11-25)
+`uv run python -m scripts.uncharted_vaults_20261125` → `docs/jx_runs/uncharted_vaults_20261125.txt` (re-run identical).
+- Vault series passing the pre-fixed name filter with ≥ 400 days: 5 (JLP, Resolv RLP, Origin stETH ARM LP, ZO ZLP, HLP).
+  First-year hedged return on capital: JLP 82.6%, HLP 86.8%, ZLP 32.1%, RLP 15.0%, ARM −4.0% → **median 32.1%** (≥ 20%: survives).
+- Forward-trial bar (median ≥ 40% across ≥ 4, year 1 beats year 2 in ≥ 3): median fails; year 1 beat year 2 in 4 of 4
+  (JLP 83→31%, HLP 87→21%, ZLP 32→−38%, RLP 15→−93%). Context: DefiLlama fee APY of 92 Derivatives pools, year 1 > year 2 in 63.
+- Limits: only 3 true perp-house vaults have price histories; vaults that died (exploits) have none → survivorship bias toward pass.
+  Parked; would need share-price histories for Lighter LLP, Aster ALP, Ostium, Avantis, edgeX, Paradex to go further.
+
+### U-T4 (#386) Delisting announcements → hedged short — **not testable** (2026-11-25)
+`uv run python -m scripts.uncharted_tags_20261125` → `docs/jx_runs/uncharted_tags_20261125.txt` (re-run identical). Upbit's notice API
+returns HTTP 403 to US servers. Binance "Delisting" category: 360 announcements (2023-04..2026-11), but only **2** spot token delistings
+involved a token with a Hyperliquid perp (XMR −6.5%, LOOM +3.5% hedged) — below the 15 needed. Futures-contract delistings: 3 events.

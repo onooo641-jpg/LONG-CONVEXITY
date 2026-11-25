@@ -1,0 +1,15 @@
+===== #389 U-T6 resting bids under liquidation wicks (Hyperliquid perps, daily candles)
+  perps 235; days 2023-04-01..2026-11-25; window 2023-06-01..2026-10-31 (3.42 yr)
+  X 15% (primary): fills 4350 on 706 days; mean net per fill 2.61% (median 1.73%, t 15.45, win 60%); net $67,089 -> $19,606/yr; worst day $-2,307 (2025-10-10), best day $3,771 (2025-03-26)
+     by year: 2023 n 398 mean 5.19% $9,819; 2024 n 1468 mean 4.08% $30,927; 2025 n 1777 mean 0.93% $16,070; 2026 n 707 mean 2.35% $10,272
+     without the best day: $18,504/yr, mean per fill 2.56%
+  X 10%: fills 13254 on 1065 days; mean net per fill 0.91% (median 0.38%, t 12.42, win 54%); net $92,848 -> $27,133/yr; worst day $-2,991 (2025-10-10), best day $3,534 (2026-02-06)
+     by year: 2023 n 984 mean 2.10% $8,939; 2024 n 4236 mean 1.80% $38,633; 2025 n 5730 mean 0.04% $33,215; 2026 n 2304 mean 0.95% $12,062
+     without the best day: $26,101/yr, mean per fill 0.78%
+  X 20%: fills 1850 on 388 days; mean net per fill 6.24% (median 5.24%, t 17.98, win 72%); net $43,780 -> $12,794/yr; worst day $-1,536 (2025-10-10), best day $4,367 (2025-02-03)
+     by year: 2023 n 186 mean 7.30% $6,223; 2024 n 749 mean 7.95% $22,428; 2025 n 728 mean 4.54% $9,471; 2026 n 187 mean 5.03% $5,658
+     without the best day: $11,518/yr, mean per fill 4.19%
+  X 30%: fills 539 on 127 days; mean net per fill 13.21% (median 12.15%, t 12.89, win 77%); net $42,897 -> $12,536/yr; worst day $-1,154 (2025-04-13), best day $7,405 (2025-02-03)
+     by year: 2023 n 44 mean 18.29% $3,329; 2024 n 219 mean 17.94% $26,406; 2025 n 253 mean 8.99% $11,510; 2026 n 23 mean 4.79% $1,652
+     without the best day: $10,372/yr, mean per fill 10.77%
+  STAGE 1 VERDICT (X 15%): survives (kill-only)

@@ -1,0 +1,55 @@
+===== #385 U-T3 short Hyperliquid pre-launch perps (listing -> token launch + 7 days)
+  HL perps with candles: 235; mapped to a CoinGecko id: 221
+  pre-launch candidates (HL listing > 2 days before the first spot price): 34
+   coin                               id     listed        tge  days_pre                                     status map_ok  map_ratio  price_ret  funding   max_up  short_ret
+   DYDX                       dydx-chain 2023-04-01 2023-10-31       213                                         ok  False        NaN     -0.011   -0.033    0.302     -0.023
+     OX                           ox-fun 2023-05-30 2024-02-20       266                                         ok   True      0.970     -0.083    1.222    7.451      1.303
+ FRIEND                      friend-tech 2023-08-21 2024-05-03       256 no HL candle at exit (delisted or not yet)    NaN        NaN        NaN      NaN      NaN        NaN
+   SHIA                       shiba-saga 2023-08-22 2023-08-24         2                                         ok   True      0.725      1.294    0.022    5.999     -1.273
+    ZRO                        layerzero 2023-09-07 2024-06-20       287                                         ok   True      0.982      0.129   -0.009    4.121     -0.139
+   LOOM                           loom-4 2023-09-28 2026-09-07      1075 no HL candle at exit (delisted or not yet)    NaN        NaN        NaN      NaN      NaN        NaN
+    TIA                         celestia 2023-10-19 2023-10-31        12                                         ok   True      1.004      0.533    0.209    1.097     -0.325
+   PYTH                     pyth-network 2023-11-14 2023-11-20         6                                         ok   True      0.883      0.098    0.037    0.477     -0.062
+    JUP          jupiter-exchange-solana 2023-12-03 2024-01-31        59                                         ok   True      1.071      1.334    0.474    2.782     -0.860
+     AI                           gensyn 2024-01-08 2026-04-29       842 no HL candle at exit (delisted or not yet)    NaN        NaN        NaN      NaN      NaN        NaN
+PANDORA                          pandora 2024-02-02 2024-02-05         3                                         ok  False      1.632     42.114    5.224   55.674    -36.891
+      W                         wormhole 2024-02-07 2024-04-03        56                                         ok   True      1.005      0.547    0.181    3.608     -0.366
+     OM olympique-de-marseille-fan-token 2024-02-13 2026-10-23       983 no HL candle at exit (delisted or not yet)    NaN        NaN        NaN      NaN      NaN        NaN
+   STRK                         starknet 2024-02-14 2024-02-20         6                                         ok   True      1.019      0.187    0.016    1.255     -0.172
+  EIGEN                       eigenlayer 2024-04-30 2024-10-01       154                                         ok   True      1.089     -0.650    0.020    0.073      0.669
+     ZK                           zksync 2024-06-12 2024-06-17         5                                         ok   True      1.033     -0.511    0.005    0.128      0.515
+    SCR                           scroll 2024-10-09 2024-10-22        13                                         ok   True      0.977     -0.473   -0.003    0.117      0.469
+   AERO                             aero 2024-12-04 2026-10-23       688                                         ok   True      0.997     -0.648    0.014    0.337      0.661
+  ANIME                            anime 2025-01-21 2025-01-23         2                                         ok   True      1.028     -0.607   -0.016    0.315      0.591
+  JELLY                        jellysium 2025-01-30 2026-11-25       664 no HL candle at exit (delisted or not yet)    NaN        NaN        NaN      NaN      NaN        NaN
+   BABY                          babylon 2025-04-05 2025-04-10         5                                         ok   True      0.910      0.168   -0.076    1.606     -0.245
+   INIT                           initia 2025-04-16 2025-04-24         8                                         ok   True      0.868     -0.065    0.010    0.349      0.074
+   PUMP                         pump-fun 2025-07-10 2025-07-14         4                                         ok   True      0.900     -0.213    0.029    0.383      0.242
+    XPL                           plasma 2025-08-22 2025-09-25        34                                         ok   True      0.936      0.613    0.067    2.108     -0.547
+   WLFI          world-liberty-financial 2025-08-23 2025-09-01         9                                         ok   True      0.909     -0.299   -0.001    0.395      0.297
+  LINEA                            linea 2025-09-01 2025-09-10         9                                         ok   True      1.036     -0.403    0.005    0.032      0.407
+     0G                     zero-gravity 2025-09-17 2025-09-22         5                                         ok   True      0.784      0.028   -0.263    1.543     -0.292
+    MON                            monad 2025-10-08 2025-11-24        47                                         ok   True      1.064     -0.770    0.006    0.120      0.776
+    MET                          meteora 2025-10-10 2025-10-23        13                                         ok   True      1.023     -0.702    0.005    0.063      0.706
+   MEGA                          megaeth 2025-10-22 2026-04-30       190                                         ok   True      0.978     -0.718    0.030    0.399      0.746
+     CC                   canton-network 2025-10-31 2025-11-10        10                                         ok   True      1.026     -0.202    0.005    0.795      0.206
+ STABLE                         stable-2 2025-11-06 2025-12-08        32                                         ok   True      0.992     -0.645    0.000    0.760      0.645
+   FOGO                             fogo 2025-12-11 2026-01-15        35                                         ok   True      1.170     -0.711    0.007    4.502      0.717
+    LIT                          lighter 2025-12-22 2025-12-30         8                                         ok   True      1.040     -0.190    0.003    0.166      0.192
+
+  all traded candidates: n 29
+    mean short return -110.3%  median 20.6%  t -0.86  win rate 59%  losses > 50%: 4 (14%)  worst -3689.1%  best 130.3%
+    mean price move 135.0%; mean funding to the short 24.8%; mean worst run-up before exit 334.3% (a 1x short is liquidated near +100%)
+    listed 2023: n 7  mean -19.7%  median -13.9%
+    listed 2024: n 7  mean -501.6%  median 46.9%
+    listed 2025: n 15  mean 30.1%  median 29.7%
+
+  mapping-checked (primary): n 27
+    mean short return 18.3%  median 24.2%  t 1.65  win rate 63%  losses > 50%: 3 (11%)  worst -127.3%  best 130.3%
+    mean price move -11.0%; mean funding to the short 7.4%; mean worst run-up before exit 151.8% (a 1x short is liquidated near +100%)
+    listed 2023: n 6  mean -22.6%  median -23.2%
+    listed 2024: n 6  mean 29.6%  median 49.2%
+    listed 2025: n 15  mean 30.1%  median 29.7%
+    sensitivity, isolated 1x margin (liquidated if the price doubles after entry): 11 of 27 liquidated; mean -14.3%, median 19.2%
+    sensitivity, without names whose pre-launch status is doubtful ['AERO', 'OX', 'SHIA']: n 24 mean 17.7% median 22.4%
+  STAGE 1 VERDICT: survives (kill-only)
