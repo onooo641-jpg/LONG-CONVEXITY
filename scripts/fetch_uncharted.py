@@ -16,6 +16,7 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 
 OUT = Path(__file__).resolve().parent.parent / "data" / "public"
@@ -914,6 +915,215 @@ def job_uwave3():
         _safe(fn)()
 
 
+# ---------------------------------------------------------------- #402-#404 (docs/PREREG_WICK_SCALE_20261125.md)
+def _scale_binance_1h(deadline):
+    """Hourly wick-bid fills on every Binance USDT perp, 2022-01..2026-10 (fills only are saved)."""
+    import concurrent.futures as cf
+    import io
+    import xml.etree.ElementTree as ET
+    import zipfile
+    s3, ns = "https://s3-ap-northeast-1.amazonaws.com/data.binance.vision", "{http://s3.amazonaws.com/doc/2006-03-01/}"
+
+    def s3_list(prefix, delimiter=True):
+        keys, prefs, marker = [], [], ""
+        for _ in range(60):
+            u = f"{s3}?prefix={urllib.parse.quote(prefix)}" + ("&delimiter=/" if delimiter else "") + (f"&marker={urllib.parse.quote(marker)}" if marker else "")
+            try:
+                with urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=60) as r:
+                    root = ET.fromstring(r.read())
+            except Exception:  # noqa: BLE001
+                break
+            keys += [c.find(ns + "Key").text for c in root.findall(ns + "Contents")]
+            prefs += [c.find(ns + "Prefix").text for c in root.findall(ns + "CommonPrefixes")]
+            if (root.find(ns + "IsTruncated").text or "").lower() != "true":
+                break
+            marker = keys[-1] if keys else prefs[-1]
+        return keys, prefs
+
+    _, prefs = s3_list("data/futures/um/monthly/klines/")
+    syms = sorted({p.rstrip("/").split("/")[-1] for p in prefs})
+    syms = [x for x in syms if x.endswith("USDT") and "_" not in x]
+    print(f"  Binance USDT perps: {len(syms)}", flush=True)
+    XS = (0.05, 0.08, 0.12)
+
+    def one(sym):
+        if time.time() > deadline:
+            return [], None
+        keys, _ = s3_list(f"data/futures/um/monthly/klines/{sym}/1h/", delimiter=False)
+        months = sorted(k.split("-1h-")[-1][:7] for k in keys if k.endswith(".zip"))
+        if not months:
+            return [], None
+        rows = []
+        for k in sorted(k for k in keys if k.endswith(".zip")):
+            mth = k.split("-1h-")[-1][:7]
+            if mth < "2022-01" or mth > "2026-10":
+                continue
+            try:
+                with urllib.request.urlopen(urllib.request.Request("https://data.binance.vision/" + urllib.parse.quote(k), headers=UA), timeout=60) as r:
+                    z = zipfile.ZipFile(io.BytesIO(r.read()))
+                    txt = z.read(z.namelist()[0]).decode()
+            except Exception:  # noqa: BLE001
+                continue
+            for ln in txt.splitlines():
+                f = ln.split(",")
+                if f and f[0].strip().isdigit():
+                    ts = int(f[0])
+                    ts = ts // 1000 if ts > 10**14 else ts
+                    rows.append((ts // 1000, float(f[1]), float(f[2]), float(f[3]), float(f[4]), float(f[7])))
+        if not rows:
+            return [], months[0]
+        d = pd.DataFrame(rows, columns=["t", "o", "h", "l", "c", "qv"]).drop_duplicates("t").sort_values("t")
+        d["day"] = d["t"] // 86400
+        dv = d.groupby("day")["qv"].sum().shift().rename("pvol")  # previous day's USD volume
+        d = d.join(dv, on="day")
+        first = pd.Timestamp(months[0] + "-01", tz="UTC").timestamp()
+        d = d[d["t"] >= first + 30 * 86400]
+        prev = d["c"].shift()
+        out = []
+        for x in XS:
+            lvl = prev * (1 - x)
+            hit = (d["l"] <= lvl * 0.995) & prev.notna() & d["pvol"].notna()
+            px = np.minimum(lvl[hit], d["o"][hit])
+            ret = d["c"][hit] / px - 1 - 0.00015 - 0.00045
+            size = np.minimum(1500.0, 0.01 * d["pvol"][hit])
+            out += [(sym, int(t), x, float(r), float(sz)) for t, r, sz in zip(d["t"][hit], ret, size)]
+        return out, months[0]
+
+    def safe_one(sym):
+        try:
+            return one(sym)
+        except Exception as e:  # noqa: BLE001
+            print(f"  {sym}: {type(e).__name__} {str(e)[:80]}", flush=True)
+            return [], None
+
+    allf, firsts, t0 = [], {}, time.time()
+    with cf.ThreadPoolExecutor(16) as ex:
+        for i, (sym, (f, m0)) in enumerate(zip(syms, ex.map(safe_one, syms))):
+            allf += f
+            firsts[sym] = m0
+            if i % 100 == 0:
+                print(f"  {i}/{len(syms)} symbols, {len(allf)} fills, {time.time() - t0:.0f}s", flush=True)
+    save("wickscale_binance_1h_fills.parquet", pd.DataFrame(allf, columns=["sym", "t", "x", "ret", "size"]))
+    save("wickscale_binance_1h_first.json", firsts)
+
+
+def _scale_hl_1h():
+    meta = get(HL, {"type": "meta"}) or {}
+    now = int(time.time() * 1000)
+    rows = []
+    for u in meta.get("universe") or []:
+        c = get(HL, {"type": "candleSnapshot", "req": {"coin": u["name"], "interval": "1h", "startTime": now - 215 * 86400 * 1000, "endTime": now}}) or []
+        rows += [(u["name"], int(x["t"]), float(x["o"]), float(x["h"]), float(x["l"]), float(x["c"]), float(x["v"])) for x in c]
+        time.sleep(1.1)
+    save("wickscale_hl_1h.parquet", pd.DataFrame(rows, columns=["coin", "t", "o", "h", "l", "c", "v"]))
+
+
+def _venue_terms():
+    out = {}
+    for venue, urls in {"dydx": ["https://dydx.trade/terms", "https://dydx.exchange/terms"],
+                        "aster": ["https://www.asterdex.com/en/terms-of-service", "https://docs.asterdex.com/about-us/terms-of-service"],
+                        "lighter": ["https://lighter.xyz/terms", "https://docs.lighter.xyz/terms-of-use"],
+                        "paradex": ["https://www.paradex.trade/terms-of-service", "https://docs.paradex.trade/legal/terms-of-service"],
+                        "hyperliquid": ["https://app.hyperliquid.xyz/terms"]}.items():
+        for u in urls:
+            st, h = _html(u)
+            txt = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", h))
+            hits = {k: [txt[max(0, m.start() - 250): m.start() + 350] for m in re.finditer(k, txt, re.I)][:3]
+                    for k in ("Malaysia", "restricted (jurisdiction|territor|countr)", "prohibited (jurisdiction|countr)", "sanction")}
+            out[f"{venue}|{u}"] = {"status": st, "chars": len(txt), "hits": hits}
+            print(f"  terms {venue} {st} {len(txt)} chars {u}", flush=True)
+    save("wickscale_terms.json", out)
+
+
+def _venue_dydx(deadline):
+    mk = (get("https://indexer.dydx.trade/v4/perpetualMarkets", tries=3) or {}).get("markets") or {}
+    rows = []
+    for tk in mk:
+        to = None
+        for _ in range(30):
+            if time.time() > deadline:
+                break
+            u = f"https://indexer.dydx.trade/v4/candles/perpetualMarkets/{tk}?resolution=1DAY&limit=100" + (f"&toISO={to}" if to else "")
+            c = (get(u, tries=2) or {}).get("candles") or []
+            rows += [(tk, x["startedAt"], float(x["open"]), float(x["high"]), float(x["low"]), float(x["close"]), float(x.get("usdVolume") or 0))
+                     for x in c]
+            if len(c) < 100:
+                break
+            to = min(x["startedAt"] for x in c)
+            time.sleep(0.15)
+    print(f"  dydx: {len(mk)} markets, {len(rows)} candles", flush=True)
+    save("wickscale_dydx_1d.parquet", pd.DataFrame(rows, columns=["coin", "start", "o", "h", "l", "c", "usdvol"]))
+
+
+def _venue_aster(deadline):
+    info = get("https://fapi.asterdex.com/fapi/v1/exchangeInfo", tries=3) or {}
+    syms = [x["symbol"] for x in info.get("symbols") or [] if x.get("contractType") == "PERPETUAL" and x["symbol"].endswith("USDT")]
+    rows = []
+    for sym in syms:
+        if time.time() > deadline:
+            break
+        k = get(f"https://fapi.asterdex.com/fapi/v1/klines?symbol={sym}&interval=1d&limit=1500", tries=2) or []
+        rows += [(sym, int(x[0]), float(x[1]), float(x[2]), float(x[3]), float(x[4]), float(x[7])) for x in k if isinstance(x, list)]
+        time.sleep(0.2)
+    print(f"  aster: {len(syms)} perps, {len(rows)} candles", flush=True)
+    save("wickscale_aster_1d.parquet", pd.DataFrame(rows, columns=["coin", "t", "o", "h", "l", "c", "qvol"]))
+
+
+def _venue_lighter(deadline):
+    base = "https://mainnet.zklighter.elliot.ai/api/v1"
+    ob = get(f"{base}/orderBooks", tries=3) or {}
+    mk = [(m.get("market_id"), m.get("symbol")) for m in ob.get("order_books") or [] if m.get("market_id") is not None]
+    now = int(time.time())
+    rows, probe = [], {}
+    for mid, sym in mk:
+        if time.time() > deadline:
+            break
+        got = None
+        for u in (f"{base}/candlesticks?market_id={mid}&resolution=1d&start_timestamp={now - 900 * 86400}&end_timestamp={now}&count_back=900",
+                  f"{base}/candlesticks?market_id={mid}&resolution=1d&start_timestamp={(now - 900 * 86400) * 1000}&end_timestamp={now * 1000}&count_back=900"):
+            st, d = req(u, timeout=40)
+            probe.setdefault(u.split("?")[1][:40], st)
+            cs = (d or {}).get("candlesticks") if isinstance(d, dict) else None
+            if cs:
+                got = cs
+                break
+        for x in got or []:
+            rows.append((sym, int(x.get("timestamp") or x.get("t") or 0), float(x.get("open") or 0), float(x.get("high") or 0),
+                         float(x.get("low") or 0), float(x.get("close") or 0), float(x.get("volume1") or x.get("quote_volume") or 0)))
+        time.sleep(0.2)
+    print(f"  lighter: {len(mk)} markets, {len(rows)} candles; probe {probe}", flush=True)
+    save("wickscale_lighter_1d.parquet", pd.DataFrame(rows, columns=["coin", "t", "o", "h", "l", "c", "qvol"]))
+
+
+def _venue_paradex(deadline):
+    base = "https://api.prod.paradex.trade/v1"
+    mk = [m["symbol"] for m in ((get(f"{base}/markets", tries=3) or {}).get("results") or []) if str(m.get("asset_kind")) == "PERP"]
+    now = int(time.time() * 1000)
+    rows, probe = [], {}
+    for sym in mk:
+        if time.time() > deadline:
+            break
+        st, d = req(f"{base}/markets/klines?symbol={sym}&resolution=1D&start_at={now - 1000 * 86400 * 1000}&end_at={now}", timeout=40)
+        probe[st] = probe.get(st, 0) + 1
+        for x in (d or {}).get("results") or [] if isinstance(d, dict) else []:
+            if isinstance(x, list) and len(x) >= 6:
+                rows.append((sym, int(x[0]), float(x[1]), float(x[2]), float(x[3]), float(x[4]), float(x[5])))
+        time.sleep(0.25)
+    print(f"  paradex: {len(mk)} perps, {len(rows)} candles; status counts {probe}", flush=True)
+    save("wickscale_paradex_1d.parquet", pd.DataFrame(rows, columns=["coin", "t", "o", "h", "l", "c", "vol"]))
+
+
+def job_uscale():
+    import numpy as _np  # noqa: F401
+    t0 = time.time()
+    for name, fn in (("terms", _venue_terms), ("dydx", lambda: _venue_dydx(time.time() + 20 * 60)),
+                     ("aster", lambda: _venue_aster(time.time() + 15 * 60)), ("lighter", lambda: _venue_lighter(time.time() + 10 * 60)),
+                     ("paradex", lambda: _venue_paradex(time.time() + 10 * 60)), ("hl_1h", _scale_hl_1h),
+                     ("binance_1h", lambda: _scale_binance_1h(time.time() + 80 * 60))):
+        print(f"== uscale {name} ({time.time() - t0:.0f}s)", flush=True)
+        _safe(fn)()
+
+
 def _safe(fn):
     def w():
         try:
@@ -930,4 +1140,4 @@ def job_uprobe():
 
 
 JOBS = {"uprobe": job_uprobe, "u383vaults": _safe(job_u383vaults), "u384lst": _safe(job_u384lst), "u385hyperp": _safe(job_u385hyperp),
-        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3}
+        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale}
