@@ -733,6 +733,187 @@ def job_u389docs():
     save("uncharted_389_hldocs.json", out)
 
 
+# ---------------------------------------------------------------- wave 3 (#392-#401), docs/PREREG_UNCHARTED_WAVE3_20261125.md
+def _w3_binance():
+    stop = int(pd.Timestamp("2023-01-01", tz="UTC").timestamp() * 1000)
+    out = {}
+    for cat in (48, 49, 161):
+        items = []
+        for p in range(1, 200):
+            st, d = req(f"https://www.binance.com/bapi/composite/v1/public/cms/article/list/query?type=1&pageNo={p}&pageSize=50&catalogId={cat}",
+                        timeout=40)
+            lst = _items((d or {}).get("data")) if isinstance(d, dict) else []
+            if st != 200 or not lst:
+                break
+            items += [{"title": x.get("title"), "releaseDate": x.get("releaseDate"), "code": x.get("code")} for x in lst]
+            if min(int(x.get("releaseDate") or 0) for x in lst) < stop:
+                break
+            time.sleep(0.6)
+        print(f"  binance catalog {cat}: {len(items)} items", flush=True)
+        out[str(cat)] = items
+    save("uncharted_w3_binance_ann.json", out)
+
+
+def _w3_korea(deadline):
+    rows = []
+    mk = get("https://api.upbit.com/v1/market/all?isDetails=false", tries=3) or []
+    krw = [m["market"] for m in mk if str(m.get("market", "")).startswith("KRW-")]
+    print(f"  upbit KRW markets: {len(krw)}", flush=True)
+    for m in krw:
+        if time.time() > deadline:
+            print("  upbit: time cap reached", flush=True)
+            break
+        to, first = None, None
+        for _ in range(15):
+            u = f"https://api.upbit.com/v1/candles/days?market={m}&count=200" + (f"&to={urllib.parse.quote(to)}" if to else "")
+            d = get(u, tries=2, pause=1) or []
+            if not isinstance(d, list) or not d:
+                break
+            first = min(x["candle_date_time_utc"] for x in d)
+            if len(d) < 200:
+                break
+            to = first.replace("T", " ")
+            time.sleep(0.15)
+        if first:
+            rows.append({"venue": "upbit", "coin": m[4:], "first_day": first[:10]})
+        time.sleep(0.12)
+    tk = (get("https://api.bithumb.com/public/ticker/ALL_KRW", tries=3) or {}).get("data") or {}
+    coins = [c for c in tk if c != "date"]
+    print(f"  bithumb KRW coins: {len(coins)}", flush=True)
+    for c in coins:
+        if time.time() > deadline:
+            print("  bithumb: time cap reached", flush=True)
+            break
+        d = (get(f"https://api.bithumb.com/public/candlestick/{c}_KRW/24h", tries=2, pause=1) or {}).get("data") or []
+        if d:
+            rows.append({"venue": "bithumb", "coin": c, "first_day": str(pd.Timestamp(int(min(int(x[0]) for x in d)), unit="ms").date())})
+        time.sleep(0.12)
+    save("uncharted_w3_korea.parquet", pd.DataFrame(rows))
+
+
+def _w3_treasury(deadline):
+    tr = get("https://api.llama.fi/treasuries", tries=3) or []
+    print(f"  defillama treasuries: {len(tr)}", flush=True)
+    save("uncharted_w3_treasuries.json", tr)
+    ids = sorted({t.get("gecko_id") for t in tr if t.get("gecko_id")})
+    caps = []
+    for g in ids:
+        if time.time() > deadline:
+            print("  coingecko market caps: time cap reached", flush=True)
+            break
+        d = get(f"https://api.coingecko.com/api/v3/coins/{g}/market_chart?vs_currency=usd&days=365&interval=daily", tries=3, pause=20) or {}
+        caps += [{"id": g, "t": int(x[0]) // 1000, "mcap": x[1]} for x in d.get("market_caps") or []]
+        time.sleep(7)
+    save("uncharted_w3_mcaps.parquet", pd.DataFrame(caps))
+    hist = {}
+    for t in tr[:400]:
+        if time.time() > deadline:
+            break
+        slug = t.get("slug") or t.get("name")
+        if not slug or not t.get("gecko_id"):
+            continue
+        st, d = req(f"https://api.llama.fi/treasury/{urllib.parse.quote(str(slug))}", timeout=40)
+        if st == 200 and isinstance(d, dict):
+            hist[slug] = {"tokensInUsd": (d.get("tokensInUsd") or [])[-400:], "chainTvls_keys": list((d.get("chainTvls") or {}).keys())}
+        elif not hist and st != 200:
+            print(f"  treasury history endpoint: {st} (today's treasury only)", flush=True)
+            break
+        time.sleep(0.3)
+    save("uncharted_w3_treasury_hist.json", hist)
+
+
+def _w3_cowamm():
+    pools = (get("https://yields.llama.fi/pools", tries=3) or {}).get("data") or []
+    sel = [p for p in pools if re.search(r"cow", p.get("project") or "", re.I)]
+    print(f"  CoW AMM pools: {len(sel)} ({sorted({p['project'] for p in sel})})", flush=True)
+    rows, prow, keys = [], [], set()
+    for p in sel:
+        c = get(f"https://yields.llama.fi/chart/{p['pool']}", tries=2)
+        rows += [{"pool": p["pool"], "ts": x.get("timestamp"), "tvlUsd": x.get("tvlUsd"), "apyBase": x.get("apyBase"), "apy": x.get("apy")}
+                 for x in (c or {}).get("data") or []]
+        for a in p.get("underlyingTokens") or []:
+            keys.add(f"{(p.get('chain') or '').lower()}:{a.lower()}")
+        time.sleep(0.25)
+    for k in sorted(keys):
+        prow += [{"key": k, "t": int(x["timestamp"]), "price": float(x["price"])} for x in llama_chart(k, T0_2024)]
+    save("uncharted_w3_cowamm.json", sel)
+    save("uncharted_w3_cowamm_charts.parquet", pd.DataFrame(rows))
+    save("uncharted_w3_cowamm_prices.parquet", pd.DataFrame(prow))
+
+
+LBP_FACTORIES = {"eth": ["0x751A0bC0e3f75b38e01Cf25bFCE7fF36DE1C87DE", "0x0F3e0c4218b7b0108a3643cFe9D3ec0d4F57c54e",
+                         "0x4eff2d77D9fFbAeFB4b141A3e494c085b3FF4Cb5", "0x02916d8F0891309806FCb347Bf4191692cbDDcAF",
+                         "0xD5584b37D1845fFeD958C2d94bC675603DdCce68", "0x6642863979e66d995717A2B836A121700595069A"],
+                 "arbitrum": ["0x142B9666a0a3A30477b052962ddA81547E7029ab", "0x1802953277FD955f9a254B80Aa0582f193cF1d77",
+                              "0x4BB42f71CAB7Bd13e9f958dA4351B9fa2d3A42FF", "0x8D217CB74f675B46cC2767C8cF0aAB53BE1c4818",
+                              "0xF9309a99836b5F07a2440c177C049b0f0A9A2c33", "0x6b7DEd11F15D6AB9959c29cEd3Cd101D69A14c35"],
+                 "base": ["0x0c6052254551EAe3ECac77B01DFcf1025418828f", "0x662112B8CB18889e81459b92CA0f894a2ef2c1B8",
+                          "0x0b11209B8c5E821b18dED147583b8978c3E63911", "0x6eE18fbb1BBcC5CF700cD75ea1aef2bb21e3cB3F",
+                          "0x6642863979e66d995717A2B836A121700595069A"]}
+LBP_BS = {"eth": "https://eth.blockscout.com", "arbitrum": "https://arbitrum.blockscout.com", "base": "https://base.blockscout.com"}
+LLAMA_CHAIN = {"eth": "ethereum", "arbitrum": "arbitrum", "base": "base"}
+
+
+def _w3_lbp(deadline):
+    topic = "0x" + keccak256(b"PoolCreated(address)")
+    pools = []
+    for net, facs in LBP_FACTORIES.items():
+        for f in facs:
+            nxt = ""
+            for _ in range(30):
+                d = get(f"{LBP_BS[net]}/api/v2/addresses/{f}/logs" + nxt, tries=3, timeout=90)
+                for it in (d or {}).get("items") or []:
+                    tp = [t for t in (it.get("topics") or []) if t]
+                    if tp and tp[0].lower() == topic and len(tp) > 1:
+                        pools.append({"net": net, "factory": f, "pool": "0x" + tp[1][-40:], "block": it.get("block_number")})
+                npp = (d or {}).get("next_page_params")
+                if not npp:
+                    break
+                nxt = "?" + urllib.parse.urlencode(npp)
+                time.sleep(0.4)
+    print(f"  LBP pools created: {len(pools)}", flush=True)
+    pools = sorted(pools, key=lambda x: -(x["block"] or 0))
+    info, ohlc, prow = [], [], []
+    for p in pools:
+        if time.time() > deadline:
+            print("  LBP: time cap reached", flush=True)
+            break
+        d = gt(f"/networks/{p['net']}/pools/{p['pool']}") or {}
+        a = (d.get("data") or {}).get("attributes") or {}
+        rel = (d.get("data") or {}).get("relationships") or {}
+        if not a:
+            continue
+        base = (((rel.get("base_token") or {}).get("data") or {}).get("id") or "").split("_")[-1]
+        quote = (((rel.get("quote_token") or {}).get("data") or {}).get("id") or "").split("_")[-1]
+        info.append({**p, "name": a.get("name"), "created": a.get("pool_created_at"), "base": base, "quote": quote,
+                     "vol_24h": ((a.get("volume_usd") or {}).get("h24"))})
+        o = gt(f"/networks/{p['net']}/pools/{p['pool']}/ohlcv/day?aggregate=1&limit=1000&currency=usd") or {}
+        for x in ((o.get("data") or {}).get("attributes") or {}).get("ohlcv_list") or []:
+            ohlc.append({"pool": p["pool"], "t": int(x[0]), "c": x[4], "v_usd": x[5]})
+    save("uncharted_w3_lbp_pools.json", info)
+    save("uncharted_w3_lbp_ohlcv.parquet", pd.DataFrame(ohlc))
+    od = pd.DataFrame(ohlc)
+    if len(od):
+        last = od[od["v_usd"] > 0].groupby("pool")["t"].max()
+        for p in info:
+            if p["pool"] in last.index and p.get("base"):
+                t_end = int(last[p["pool"]])
+                for tok in {p["base"], p["quote"]}:
+                    k = f"{LLAMA_CHAIN[p['net']]}:{tok}"
+                    prow += [{"pool": p["pool"], "key": k, "t": int(x["timestamp"]), "price": float(x["price"])}
+                             for x in llama_chart(k, t_end - 3 * 86400, t_end + 12 * 86400, span=15)]
+    save("uncharted_w3_lbp_prices.parquet", pd.DataFrame(prow))
+
+
+def job_uwave3():
+    t0 = time.time()
+    for name, fn in (("binance", _w3_binance), ("korea", lambda: _w3_korea(time.time() + 15 * 60)),
+                     ("cowamm", _w3_cowamm), ("lbp", lambda: _w3_lbp(time.time() + 35 * 60)),
+                     ("treasury", lambda: _w3_treasury(time.time() + 30 * 60))):
+        print(f"== wave3 {name} ({time.time() - t0:.0f}s)", flush=True)
+        _safe(fn)()
+
+
 def _safe(fn):
     def w():
         try:
@@ -749,4 +930,4 @@ def job_uprobe():
 
 
 JOBS = {"uprobe": job_uprobe, "u383vaults": _safe(job_u383vaults), "u384lst": _safe(job_u384lst), "u385hyperp": _safe(job_u385hyperp),
-        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs)}
+        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3}
