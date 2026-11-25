@@ -268,3 +268,14 @@ CoW staging run #368: 2,072 staging auctions, 0 solutions from anyone but one �
 2026-06-13): every order has an exclusive filler chosen in Uniswap's off-chain quote auction and is filled within 1–3 s; quoters are
 permissioned (Uniswap Labs intake form). The 36-hour paper filler was cancelled (it measured a race that no longer exists). UniswapX joins CoW
 as "lucrative for approved newcomers, entry needs approval" — both parked pending Jx's decision to apply.
+
+## 2026-11-25 — uncharted search: 28 ideas, 16 testable; two crash-liquidity edges pass out-of-sample
+Ideas U1–U28 with reasons: `docs/IDEAS_UNCHARTED_20261125.md`; tests `docs/PREREG_UNCHARTED_20261125.md` (#383–#391) and
+`docs/PREREG_UNCHARTED_WAVE3_20261125.md` (#392–#401); ledger UC1–UC7.
+- **#389 resting bids 15% under the previous close** (Hyperliquid perps): Stage 1 +2.61%/fill, ~$18.8K/yr on $15K; **out-of-sample on
+  Binance 2020–26 +1.48%/fill, t 15, 6/6 years positive**; HL drawdown −$2,480. Warning: loses in crash regimes (Binance path −$22K
+  2025-09 → 2026-07). Open: forward paper (radar N10, 2026-12-01 → 2027-01-26) and a Jx margin check (resting orders may lock margin → ~$6.4K/yr).
+- **#397 cascade-day reversal:** HL 26 events +3.27%; Binance 72 events +3.73%, t 2.69 → Stage 2 PASS; ~$3.7K/yr unlevered.
+- #385 pre-launch perp shorts survive (small, ~$4K/yr); #383 vaults survive below bar; #384 inconclusive (6 months of pool data);
+  KILL: #387 CCA (median −39%), #391 HK IPOs (−US$277/yr), #396 Binance perp launches (t 0.99); #386 not testable.
+- START_HERE rewritten (11 sections: to-dos for Jx, calendar, approval-gated roles incl. #371, uncharted search, radar, test rules).

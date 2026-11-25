@@ -43,3 +43,9 @@ with ≥ $50K traded. Stage 1: with ≥ 10 LBPs, KILL if the median 7-day return
 
 **Commands.** `uv run python -m scripts.uncharted_wave3_20261125` (all ten) → `docs/jx_runs/uncharted_wave3_20261125.txt`, re-run once,
 identical. Costs, holds and thresholds above do not change after data are seen.
+
+## #397 Stage 2 — pre-registered 2026-11-25 after Stage 1 survived (26 events, mean +3.27%, 62% positive), before running it
+Out-of-sample market: the same rule on Binance USD-M perps (`uncharted_389_binance_ohlc.parquet`, every USDT symbol incl. delisted),
+2020-01..2026-10, ≥ 25% of eligible perps wicking ≥ 15%, equal-weight basket of the wicked perps bought at that day's close, 3-day hold,
+2 × 0.045% costs, no funding (not in that file; reported). PASS if ≥ 8 events, mean ≥ 2%, ≥ 60% positive and t ≥ 2. A pass still needs a
+forward check before money (cascade days are rare: a few a year).

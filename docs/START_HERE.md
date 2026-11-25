@@ -1,42 +1,64 @@
-# START HERE — every result in one place (updated 2026-11-23)
+# START HERE — every result in one place (updated 2026-11-25)
 
-Plain-language guide for readers. Sorted from "what makes money" to "what failed". Every number links to the file that explains it; every
-file in `docs/jx_runs/` is the raw output of a script you can re-run. Rules for how tests are run: `CLAUDE.md`.
+Plain-language guide. Sorted from "what makes money" to "what failed". Every number points to the file that explains it; every file in
+`docs/jx_runs/` is raw output of a script you can re-run; every standing figure has a row in `docs/FIGURES_LEDGER.md`. Test rules:
+`CLAUDE.md` and section 10.
+
+**Contents:** 1 Bottom line · 2 What only Jx can do · 3 Calendar · 4 Prop firms · 5 Liquidation bot · 6 Own-capital strategies ·
+7 Approval-gated roles (CoW, UniswapX) · 8 Uncharted search (U1–U28) · 9 Radar and monitoring · 10 How tests are run · 11 Where everything lives
 
 ---
 
 ## 1. Bottom line
-| What | Status | Money (backtest 2016–26, friend's NQ trades) |
+| What | Status | Money |
 |---|---|---|
-| **Prop-firm recycling, Malaysia-eligible portfolio** (Topstep + TTP Prime + DayTraders EOD + LucidDaily, 1 account each) | **Works (backtest)** | $195,000 total = **$18,006/yr**, ~$1,500/month avg ($3,136 last 3 years); cash needed for worst dip ~$13,858 |
+| **Prop-firm recycling, Malaysia-eligible portfolio** (Topstep + TTP Prime + DayTraders EOD + LucidDaily, 1 account each) | **Works (backtest 2016–26)** | $195,000 total = **$18,006/yr**; cash for worst dip ~$13,858 |
 | Single prop firm (Topstep 50K) | Works (backtest) | $44,359 = $4,097/yr |
-| Liquidation bot (workstream B) | Not built; shadow test running | est. $0–$100/month now, $100–$600 averaged over crash cycles |
-| Any non-prop strategy usable at Jx's size | **None** (~105 tested) | — |
-| Futures cross-sectional momentum #351 | **Passed the full test on paper, but needs ~$250K+** (whole-contract test fails at $15K and $50K) | ~15–20%/yr on capital, not prop-like |
-| **UniswapX quoting #371** (Arbitrum is RFQ since 2026-06: quoters approved by Uniswap Labs) | **Passed all four free checks**: $761M/yr Arbitrum volume; newly approved quoters kept ≈ $52K–$85K/yr gross (gross ≠ net) | next: Jx decides whether to apply (quoter intake form); parked like CoW |
-| **CoW Protocol solving #364** (a business, not a deposit) | **Only non-prop role where newcomers measurably earned > $15K/yr**: genuine new solvers' first-year net median ~$48K–$96K (11 teams; upper bound, failed teams invisible). Needs a company + KYC and a solver that beats professional teams | **Gate tests #365: Stage 0 + Stage 1 passed** (no kill), with warnings: rewards shrinking ($6.4M/yr vs $10.6M in 2025), top solver takes 50%, top 3 take 78–99% of winning value. Only pass route left: a real solver tested on live auctions with no money (Stage 2). **#366: that test cannot run without CoW's cooperation** (their live auction feed is restricted, HTTP 403); next step is a human contact with CoW's solver team. **#367: small teams do earn** — 6 solvers with no sign of being big firms made $23K–$386K/yr in 2026 (9% of rewards); established firms and the #1 (probably Barter) take most |
-| #361 / #362 / #363 (2026-11-23) | CoW median solver KILL ($3,213/yr), Across relaying KILL ($8,790/yr for 6th), hedged JLP KILL (71% in 2024 → 8% in 2026) | — |
+| **#389 Resting bids under liquidation wicks** (Hyperliquid perps, own capital) | **Best non-prop result so far.** Stage 1 + out-of-sample on Binance (S2a) + risk (S2b) passed; forward paper (S2c) 2026-12-01 → 2027-01-26 and a margin check (S2d) still open | backtest ~$18.8K/yr on $15K (Hyperliquid 2023–26), or ~$6.4K/yr if resting orders lock margin; **loses in crash regimes** (Binance path −$22K, 2025-09 → 2026-07) |
+| **#397 Cascade-day reversal** (buy the perps that wicked, hold 3 days) | Stage 1 + Binance Stage 2 passed | ~7–8 events/yr, +3.3–3.7% per event ≈ $3.7K/yr unlevered on $15K; overlaps #389's crash days |
+| #385 Short Hyperliquid pre-launch perps | Survives Stage 1; small sizes only | ~$4K/yr; forward watch running |
+| **UniswapX quoting #371** (Arbitrum RFQ: quoters approved by Uniswap Labs) | Passed the four volume/margin checks; live paper run (Stage 5b) shows the money is reachable **only as an approved quoter** | newly approved quoters kept ≈ $52K–$85K/yr gross; verdict 2026-11-26 |
+| **CoW Protocol solving #364–#368** (a business) | New small teams measurably earn ($23K–$386K/yr); onboarding **paused** by CoW | follow-up 2026-12-15 |
+| Futures cross-sectional momentum #351 | Passed on paper, needs ~$250K+ | ~15–20%/yr on capital |
+| Liquidation bot (workstream B) | Shadow test running | est. $0–$100/month now |
+| Everything else (~140 non-prop ideas) | Failed, not testable, or excluded | sections 6–8 |
 
 **If prop income stops (fallback plan, 2026-11-23).**
 - *What would stop it:* firm rule changes or closures, not the friend's strategy losing its edge (every approved firm's coin-flip median is
-  positive, $12K–$24K, so the income comes from the rules). An industry-wide change (all firms ban bots, or a regulator steps in) cannot be
-  diversified inside prop.
-- *Early warning already running:* the daily radar diffs ~120 prop-firm rule/pricing pages (`docs/radar/watchlist.csv`, output
-  `data/radar/changes.parquet`); any new rule set can be re-modelled the same day with `backtest/recycle.py`; the live gates in
-  `docs/PREREG_LIVE_20261120.md` stop adding accounts if live results fall below the model's 5th percentile.
-- *Loss if it stops:* the income, not savings: only fees already paid are at risk (worst dip ~$13,858 for the 4-firm portfolio).
-- *The real fallback is the capital prop builds:* save a fixed share of every payout. At ~$100K the money itself can earn prop-sized
-  dollars at normal returns: #351b futures momentum backtests at 17.06%/yr at $100K (marginal pass, ledger FT2) ≈ $17K/yr; an index fund
-  ~$7–10K/yr. Arithmetic: saving all of $18K/yr reaches $100K in ~5–6 years; 5 accounts per firm (backtest $90K/yr, worst dip −$69K)
-  in ~1–2 years.
+  positive, $12K–$24K, so the income comes from the rules). An industry-wide change cannot be diversified inside prop.
+- *Early warning already running:* the daily radar diffs ~120 prop-firm rule/pricing pages (section 9); any new rule set can be re-modelled
+  the same day with `backtest/recycle.py`; live gates in `docs/PREREG_LIVE_20261120.md` stop adding accounts below the model's 5th percentile.
+- *Loss if it stops:* the income, not savings (only fees already paid are at risk; worst dip ~$13,858).
+- *The real fallback is the capital prop builds:* at ~$100K, #351b futures momentum backtests 17.06%/yr ≈ $17K/yr; an index fund ~$7–10K/yr.
+  Non-prop add-ons being validated now: #389, #397 (section 6b).
 
 ---
 
-## 2. Prop firms
+## 2. What only Jx can do (everything else runs without him)
+| Item | Why it needs Jx | Effort |
+|---|---|---|
+| **#389 margin check** | Does a resting limit order on Hyperliquid reduce "available margin"? Decides ~$18.8K vs ~$6.4K/yr | 1 minute, ~$20 in his Hyperliquid account; place a small bid far below the price, read "available", cancel |
+| UniswapX quoter application (#371) | Uniswap Labs approves quoters (intake form); a company/KYC may be asked | decide after the 2026-11-26 verdict |
+| CoW solver onboarding (#364) | CoW paused onboarding; Jx is the contact | reply when they reopen (reminder 2026-12-15) |
+| Prop accounts, payments, live trades | money/KYC | per `docs/GO_LIVE*.md` |
+
+## 3. Calendar of scheduled verdicts
+| Date | What | Where |
+|---|---|---|
+| 2026-11-26 | #371 UniswapX Stage 5b verdict (36 h paper run on GitHub) | `docs/PREREG_UNISWAPX_20261124.md` |
+| 2026-11-28 / 2026-12-19 | Liquidation shadow kill check / verdict (workstream B) | `docs/PREREG_LIQ_SHADOW_20261121.md` |
+| 2026-12-01 → 2027-01-26 | #389 S2c forward paper log (radar N10) | `data/radar/wick_paper.parquet` |
+| 2026-12-15 | CoW follow-up reminder | `docs/NOTES_NONPROP.md` |
+| 2027-01-08 | #228 SKY re-test | `docs/CANDIDATES.md` |
+| weekly | radar review (dismiss or test leads) | `docs/RADAR_REVIEW_*.md` |
+
+---
+
+## 4. Prop firms
 Benchmark Topstep 50K: $44,359 real net, coin-flip median $18,046, worst dip −$3,520. "Qualifies" = real ≥ 50% of Topstep, coin flip ≥ $5,000,
 worst dip no worse than 1.5× Topstep's (manual-entry products judged with a 3-minute entry delay).
 
-### 2a. APPROVED — Malaysia-eligible, rules verified on the firms' own pages, qualifies
+### 4a. APPROVED — Malaysia-eligible, rules verified on the firms' own pages, qualifies
 | Rank | Product (price) | Entry | Real net 2016–26 | Per year | Coin flip | Worst dip | Source |
 |---|---|---|---|---|---|---|---|
 | 1 | LucidDaily 50K EOD ($85.40 promo) | bot | $57,486 | $5,308 | $24,093 | −$3,758 | `docs/PROP_VERIFY_20261122.md` §6 |
@@ -48,7 +70,7 @@ worst dip no worse than 1.5× Topstep's (manual-entry products judged with a 3-m
 | 7 | TradeDay 50K ($85 code) | bot (no API: platform rewrite) | $35,678 | $3,294 | $14,035 | −$4,835 | `docs/RADAR_RESULTS_SUMMARY.md` |
 **All of them together:** `docs/PREREG_PORTFOLIO_MY_20261123.md` ($195K with 1 account each; $975K with 5 each, worst dip −$69K).
 
-### 2b. DISAPPROVED — firm does not accept Malaysian residents (their own restricted-country lists)
+### 4b. DISAPPROVED — firm does not accept Malaysian residents (their own restricted-country lists)
 | Firm | Best product and figure (would have qualified) | Source |
 |---|---|---|
 | FuturesElite | Prime 50K $52,176, Nitro $48,463, Elite $33,645 (manual) | `docs/PROP_VERIFY_20261122.md` §1 |
@@ -60,7 +82,7 @@ worst dip no worse than 1.5× Topstep's (manual-entry products judged with a 3-m
 | FundedNext Futures | Rapid / Flex / Direct | §8 |
 | The Futures Desk | unverified → kept out | §7 |
 
-### 2c. DISAPPROVED — eligible but does not qualify
+### 4c. DISAPPROVED — eligible but does not qualify
 | Product | Real net | Why it fails | Source |
 |---|---|---|---|
 | LucidDaily 50K EOD at $122 list | $51,557 | worst dip −$5,368 (by $88) | §6 |
@@ -73,7 +95,7 @@ worst dip no worse than 1.5× Topstep's (manual-entry products judged with a 3-m
 | Traders Launch 100K / 200K; Bulenox | $722 / $4,371; −$4,139 | lose or near zero | summary |
 | Take Profit Trader | not priced | bots banned (manual only); rules being read | pending |
 
-### 2d. Manual entry (you place trades from alerts; 3-minute delay; compare with Topstep at 3 minutes $37,348)
+### 4d. Manual entry (you place trades from alerts; 3-minute delay; compare with Topstep at 3 minutes $37,348)
 | Product | Real net | Coin flip | Worst dip | Qualifies | Note |
 |---|---|---|---|---|---|
 | LucidDaily 50K EOD $85.40 | $48,761 | $18,582 | −$2,818 | yes | bots also allowed |
@@ -87,7 +109,7 @@ AquaFunded: Malaysia allowed on Instant Funding only (max $50K). Source: `docs/P
 
 ---
 
-## 3. Liquidation strategy (workstream B, separate session)
+## 5. Liquidation strategy (workstream B, separate session)
 | Question | Answer | Source |
 |---|---|---|
 | Is there money? | Yes: $45M (Aave, 5 chains) + $54M (Morpho Base) of bonuses in 24 months | `docs/NOTES_JX.md` "Liquidation test #100" |
@@ -97,27 +119,35 @@ AquaFunded: Malaysia allowed on Instant Funding only (max $50K). Source: `docs/P
 
 ---
 
-## 4. Non-prop strategies (own capital) — sorted by verdict
-Bar: ≥ 8%/yr on capital in both halves (risk-premium families: ≥ 10% and drawdown no worse than the S&P). Full list with numbers:
-`docs/CANDIDATES.md`; batch files `docs/PREREG_*`.
+---
 
-### 4a. Passed a full test
+## 6. Own-capital strategies (non-prop) — sorted by verdict
+Bar for the older batches: ≥ 8%/yr on capital in both halves (risk-premium families ≥ 10% and drawdown no worse than the S&P). The
+uncharted batch uses staged kill-only tests (section 10) with dollar bars on a $15K pot. Full list: `docs/CANDIDATES.md`.
+
+### 6a. Passed a full test
 | # | Idea | Result | Can Jx use it? |
 |---|---|---|---|
-| 351 | Futures cross-sectional momentum (long the 12-month winners, short the losers, across 21–26 CME futures; monthly) | 20.72%/yr 2016–26 walk-forward, halves 26.94% / 14.97%, worst drawdown −22.3% (S&P −23.9%) | **No, not at $10–50K.** Whole-contract version fails at $15K (second half 3.08%) and $50K (7.89%); needs full-size rates/FX contracts, so ~$250K+, earning ~15–20%/yr. `PREREG_FUTURES_TREND_CARRY_20261123.md` addendum 3 |
+| 351 | Futures cross-sectional momentum (21–26 CME futures, monthly) | 20.72%/yr 2016–26 walk-forward, halves 26.94% / 14.97%, worst drawdown −22.3% (S&P −23.9%) | **No, not at $10–50K** (whole-contract version fails at $15K and $50K); ~$250K+. `PREREG_FUTURES_TREND_CARRY_20261123.md` add. 3 |
 
 (#303 S&P 500 additions passed on paper but was withdrawn: it bought before S&P's announcements; tradeable version +0.17%/event.)
 
-### 4b. In progress / open
-| # | Idea | Why it has potential | Status |
-|---|---|---|---|
-| 364 | CoW Protocol solving: new solvers' first-year income | registered rule met: median entrant $129K (2024) / $25.5K (2025) after fee; after removing likely address migrations $96K (7 teams) / $48K (4 teams) | next: no-money shadow-competition solver; needs a builder, later a company for KYC (`docs/PREREG_COW_ENTRANTS_20261123.md`) |
-| 324 | Newer perp / options vaults | 95% on advertised APY | needs real share prices |
-| 339 | Tokenised gold premium | redemption floor | not credible as measured (futures vs spot) |
+### 6b. Passing so far — not yet usable (stages left)
+| # | Idea | Results so far | What is left | File |
+|---|---|---|---|---|
+| **389** | Resting bids 15% under the previous close on every Hyperliquid perp, sold at the day's close (liquidity to forced liquidations) | Hyperliquid 2023–26: 4,350 fills, +2.61%/fill (t 15.5), $19.6K/yr ($18.8K with no look-ahead sizing), every year positive; **Binance 2020–26 out-of-sample: +1.48%/fill, t 15.0, $15.8K/yr, 6/6 years positive**; worst HL drawdown −$2,480 | S2c forward paper to 2027-01-26; S2d margin check (Jx). **Warning:** loses in crash regimes (Binance −$22K over 2025-09 → 2026-07; 2022H2 and 2025H2 negative on both venues) — any live version needs a pre-registered loss limit | `PREREG_UNCHARTED_20261125.md` |
+| **397** | Cascade-day reversal: on days when ≥ 25% of perps wick ≥ 15%, buy those perps at the close, hold 3 days | Hyperliquid: 26 events, +3.27%, 62% positive (t 1.95); **Binance 2020–26: 72 events, +3.73%, t 2.69, 62% positive** | forward check (rare: ~7–8 a year); small dollars | `PREREG_UNCHARTED_WAVE3_20261125.md` |
+| 385 | Short Hyperliquid pre-launch perps from listing to token launch + 7 days | 27 events, +18.3% mean, +24% median; 2024–25 ≈ +30% | 11 of 27 would be liquidated at 1× isolated margin → small sizes only (~$4K/yr); forward watch (radar N11) | `PREREG_UNCHARTED_20261125.md` |
+| 383 | Launch-phase perp-DEX house vaults (first 12 months) | median first-year hedged 32% (JLP 83%, HLP 87%, ZLP 32%); year 1 beat year 2 in 4/4 | below the 40% bar; only 3 true perp vaults with prices; parked | same |
+| 384 | Withdrawal-queue discounts (HYPE LSTs, LRTs, sUSDe) | KILL on the registered data (6 months only) | inconclusive: needs on-chain swap history (Stage 1b) | same |
+| 324 / 339 | Newer perp/options vaults; tokenised gold premium | 95% advertised APY; redemption floor | need real share prices / not credible as measured | older batches |
 
-### 4c. Failed — closest misses first
+### 6c. Failed — closest misses first
 | # | Idea | Best result | Why it failed | File |
 |---|---|---|---|---|
+| 396 | Short when Binance launches a perp on a token already on Hyperliquid | 17 events, +8.7% mean | t 0.99 < 1; one −92% loss | `PREREG_UNCHARTED_WAVE3_20261125` |
+| 391 | Hong Kong IPO one-lot applications | day-one +35.6% average | allocation odds priced: −US$277/yr (+$1,092 with zero fees) | `PREREG_UNCHARTED_20261125` |
+| 387 | Uniswap token auctions (CCA) | 16 real of 1,152 | median 7-day −39% | same |
 | 370 | Crypto perp trend / momentum (918 coins, 52 settings, walk-forward) | 30.8%/yr | −90.6% drawdown, losing first half; 2026 windfall only on Binance-only meme coins | `PREREG_CRYPTO_TREND_20261124` |
 | 363 | Hedged Jupiter JLP (house side of perp traders' losses) | 70.8% in 2024, 23.0% 2025, 8.0% 2026 | Stage 1 9.7% < 20%: yield competed away as capital poured in | `PREREG_JLP_20261123` |
 | 361 | CoW solving, median solver | $3,213/yr (top 10 earn $176K+) | winner-take-most; see #364 | `PREREG_SOLVER_RELAY_20261123` |
@@ -132,13 +162,74 @@ Bar: ≥ 8%/yr on capital in both halves (risk-premium families: ≥ 10% and dra
 | 291 | Friend's trades as options | — | options fairly priced (coin flip −$75K) | `PREREG_OPTIONWRAP` |
 | … | ~90 more (stable yields, loops, LPs, VIX, memecoin-adjacent, listings, unlocks …) | | each row in `docs/CANDIDATES.md` (#200–#346) | |
 
-### 4d. Not testable (no free data) or excluded by the repo's rules
-Memecoin history beyond 2 days (pump.fun), index-token NAV, spin-off lists, BNB / Solana liquidations, prediction markets (Malaysia), launchpools
-(Malaysia), creator / marketing ventures (rule). See `docs/PREREG_SWEEP4_20261122.md`, `docs/IDEAS_SWEEP2_20261122.md`.
+### 6d. Not testable (no free data) or excluded by the repo's rules
+Memecoin history beyond 2 days (pump.fun), index-token NAV, spin-off lists, BNB / Solana liquidations, prediction markets (Malaysia),
+launchpools (Malaysia), creator / marketing ventures (rule), #386 delisting shorts (2 events; Upbit blocks US servers), token-sale platforms
+(no free per-sale data), incentivised testnets and pre-IPO perps (forward only). See `docs/PREREG_SWEEP4_20261122.md`,
+`docs/IDEAS_SWEEP2_20261122.md`, `docs/IDEAS_UNCHARTED_20261125.md`.
 
 ---
 
-## 5. Where everything lives
+## 7. Approval-gated roles (a business, not a deposit)
+These pay a role (solver, quoter) out of protocol fees or spreads. Newcomers can earn, but only after the protocol approves them.
+
+| # | Role | What was measured | Verdict / status | File |
+|---|---|---|---|---|
+| 371 | **UniswapX quoter (Arbitrum, RFQ since 2026-06)** | Stage 1: top-3 fillers 89% of fills (Aug–Oct 2026). Stage 2: newly approved quoters took 9.9% / 9.7% / 5.2% of monthly fills. Stage 3: $191.9M in 92 days = **$761M/yr**. Stage 4: 5,051 fills, volume-weighted gross spread 8.62 bps; newcomer A **$85,116/yr**, B **$51,884/yr** gross (gross ≠ net). Stage 5: open-competition plan dropped (orders go to an exclusive quoter). **Stage 5b (live paper, interim at 22 h):** a public KyberSwap route matched or beat the winning quoter on 61% of 80 orders (median gap 0.9 bps), but only 1 of 153 fills (0.7%) went to a non-exclusive filler | passes every volume/margin check; **reachable only as an approved quoter** (outsider route: KILL). Approval rate unpublished; aimed at experienced teams. Verdict 2026-11-26 | `PREREG_UNISWAPX_20261124.md`, `data/uniswapx_paper/` |
+| 364 | CoW Protocol solver | genuine new solvers' first-year net median ~$48K–$96K (11 teams; upper bound) | registered rule met | `PREREG_COW_ENTRANTS_20261123.md` |
+| 365 | CoW gate tests | rewards $6.4M/yr (2026) vs $10.6M (2025); top solver 50%, top 3 78–99% | Stage 0 + 1 passed with warnings | `PREREG_COW_GATE_20261124.md` |
+| 366 / 368 | CoW live shadow / staging | production auction feed HTTP 403; staging 2,072 auctions, 0 usable | not runnable without CoW | `PREREG_COW_SHADOW_*`, `PREREG_COW_BARN_*` |
+| 367 | Who CoW's solvers are | 6 small teams made $23K–$386K/yr in 2026 (9% of rewards); big firms take most | small teams can earn | `PREREG_COW_WHO_20261124.md` |
+| — | CoW onboarding | CoW (Telegram): onboarding paused for some weeks | reminder 2026-12-15 | `NOTES_NONPROP.md` |
+| 361 / 362 | CoW median solver; Across relayer | $3,213/yr; 6th relayer $8,790/yr | KILL (winner-take-most) | `PREREG_SOLVER_RELAY_20261123.md` |
+| 372–376, 377–381 | 1inch, deBridge, Drift, RFQ market makers, ZK provers, UMA, redemption bots | desk | dismissed or approval-gated | `docs/NICHE_SWEEP_20261124.md` |
+
+---
+
+## 8. Uncharted search (2026-11-25): 28 ideas, 16 testable and worth testing
+Ideas and reasons: `docs/IDEAS_UNCHARTED_20261125.md`. Tests: `docs/PREREG_UNCHARTED_20261125.md` (#383–#391),
+`docs/PREREG_UNCHARTED_WAVE3_20261125.md` (#392–#401).
+
+| # | Idea | Verdict |
+|---|---|---|
+| 389 (U17) | Resting bids under wicks | **passing** (S1, S2a, S2b); S2c/S2d open |
+| 397 (U27) | Cascade-day reversal | **passing** (S1 + Binance S2) |
+| 385 (U8) | Short pre-launch perps | survives S1, small |
+| 383 (U1) | Launch-phase vaults | survives S1, below bar |
+| 384 (U5–U7) | Withdrawal-queue discounts | KILL on registered data, inconclusive |
+| 387 (U2) | Uniswap token auctions | KILL |
+| 391 (U21) | Hong Kong IPOs | KILL |
+| 396 (U26) | Binance perp launches | KILL |
+| 392–395, 398–401 | Binance monitoring tags, Binance listings fade, airdrop-listing dumps, Korean listings fade, BNB launchpool demand, crypto net-nets, CoW AMM, LBPs | running (data fetch `uwave3`, 2026-11-25) |
+| 386 (U9) | Upbit/Binance delisting shorts | not testable (2 events) |
+| U3, U10, U11, U13–U16, U19, U20, U22 | token sales, testnets, pre-IPO perps, RFQ desks, Timeboost, DRIPs, builder codes, treasury-company premiums, locked-token OTC, Japan perks | not testable, dismissed at desk, or excluded |
+
+---
+
+## 9. Radar and monitoring (runs daily on GitHub, 02:41 UTC)
+| Watch | What it does | Output |
+|---|---|---|
+| Prop-firm pages (~120) | diffs rules and prices | `data/radar/changes.parquet` |
+| N1–N9 non-prop leads | stablecoin depegs, extreme funding, new CoW solver payouts, audit-contest prizes, governance posts about incentives/bot roles (23 forums), perp-venue volume surges, Malaysia access pages | `data/radar/leads.parquet` |
+| **N10 (new)** | #389 rule applied to every live Hyperliquid perp from 2026-12-01 (paper) | `data/radar/wick_paper.parquet` |
+| **N11 (new)** | perps newly listed on Hyperliquid (pre-launch candidates for #385) | leads |
+| #371 paper filler | UniswapX orders vs public routes (chained 5.5 h sessions) | `data/uniswapx_paper/` |
+Rules: `docs/PREREG_RADAR_NONPROP_20261124.md` (addenda 1–4).
+
+---
+
+## 10. How tests are run (so a result can be trusted)
+- **Pre-registered:** question, data, exact rule, costs and pass/kill bars are committed before data are fetched (`docs/PREREG_*`).
+- **Staged:** Stage 0 desk check → Stage 1 cheap kill-only test → Stage 2 full / out-of-sample test. A stage may kill early, never pass early;
+  rules never change after data are seen (mechanical bug fixes are allowed and recorded).
+- **Reproducible:** every figure comes from a command; raw output in `docs/jx_runs/`; each script is re-run once and must print identical
+  output; figures go in `docs/FIGURES_LEDGER.md`.
+- **Honest labels:** verified (official pages, on-chain) vs third-party vs assumed; survivorship and look-ahead are checked and reported.
+- **Data:** the sandbox blocks most sites, so fetches run on GitHub Actions (`scripts/fetch_fallback.py`, `scripts/fetch_uncharted.py`).
+
+---
+
+## 11. Where everything lives
 | You want | Open |
 |---|---|
 | Prop firm rules checked against official pages | `docs/PROP_VERIFY_20261122.md` |
@@ -147,3 +238,8 @@ Memecoin history beyond 2 days (pump.fun), index-token NAV, spin-off lists, BNB 
 | Every non-prop idea and verdict | `docs/CANDIDATES.md`, `docs/RADAR_RESULTS_SUMMARY.md`, `docs/NOTES_NONPROP.md` |
 | Every number and the command that produced it | `docs/FIGURES_LEDGER.md` |
 | Map by workstream | `docs/INDEX.md` |
+| Uncharted ideas and their tests | `docs/IDEAS_UNCHARTED_20261125.md`, `docs/PREREG_UNCHARTED_20261125.md`, `docs/PREREG_UNCHARTED_WAVE3_20261125.md` |
+| Approval-gated roles (CoW, UniswapX) | `docs/PREREG_COW_*`, `docs/PREREG_UNISWAPX_20261124.md`, `docs/UNISWAPX_PAPER_FILLER_GUIDE.md` |
+| Radar rules and reviews | `docs/PREREG_RADAR_NONPROP_20261124.md`, `docs/RADAR_REVIEW_20261124.md`, `docs/AUDIT_ALL_AREAS_20261124.md`, `docs/NICHE_SWEEP_20261124.md` |
+| Data fetch jobs (GitHub Actions) | `scripts/fetch_fallback.py`, `scripts/fetch_uncharted.py`, `.github/fallback_request.txt` |
+

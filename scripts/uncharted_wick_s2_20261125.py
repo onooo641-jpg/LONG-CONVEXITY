@@ -33,6 +33,40 @@ def path_stats(f, label):
     return dd, float(d.min())
 
 
+def halves(f, name):
+    f = f.copy()
+    f["h"] = f["day"].dt.year.astype(str) + "H" + ((f["day"].dt.month > 6) + 1).astype(str)
+    g = f.groupby("h").agg(n=("ret", "size"), mean=("ret", "mean"), pnl=("pnl", "sum"))
+    print(f"  half-years, {name}: " + "; ".join(f"{h} n {int(r.n)} {r['mean']:+.2%} ${r.pnl:,.0f}" for h, r in g.iterrows()))
+
+
+def sizing_checks(hl):
+    """Mechanical fix (previous day's volume for size) and the margin-reservation case for S2d."""
+    import json as _j
+    import scripts.uncharted_wick_20261125 as w
+    meta = {u["name"]: u.get("maxLeverage", 3) for u in _j.loads((PUB / "uncharted_385_meta.json").read_text())}
+    yrs = ((w.END - w.START).days + 1) / 365
+    out, rest = [], []
+    for coin, g in hl.sort_values(["coin", "day"]).groupby("coin"):
+        g = g[g["day"] >= g["day"].iloc[0] + pd.Timedelta(days=30)]
+        prev, pvol = g["c"].shift(), (g["v"] * g["c"]).shift()
+        lvl, size = prev * 0.85, np.minimum(w.CAP_FILL, w.VOL_SHARE * pvol)
+        ok = prev.notna() & (g["day"] >= w.START) & (g["day"] <= w.END)
+        rest.append(pd.DataFrame({"day": g["day"][ok], "size": size[ok], "margin": size[ok] / meta.get(coin, 3)}))
+        hit = ok & (g["l"] <= lvl * (1 - w.THROUGH))
+        ret = g["c"] / np.minimum(lvl, g["o"]) - 1 - w.MAKER - w.TAKER
+        out.append(pd.DataFrame({"day": g["day"][hit], "ret": ret[hit], "size": size[hit]}))
+    f, R = pd.concat(out), pd.concat(rest)
+    f = f[f["size"] > 0]
+    f["pnl"] = f["size"] * np.minimum(1, POT / f.groupby("day")["size"].transform("sum")) * f["ret"]
+    m = R.groupby("day")[["size", "margin"]].sum()
+    sc = np.minimum(1, 0.8 * POT / m["margin"])
+    print(f"  sizing fix (previous day's volume): fills {len(f)}, mean {f['ret'].mean():.2%}, ${f['pnl'].sum() / yrs:,.0f}/yr")
+    print(f"  resting bids per day: median notional ${m['size'].median():,.0f}; margin at max leverage median ${m['margin'].median():,.0f}")
+    print(f"  if resting orders reserve that margin (posted share <= $12,000 of margin a day): "
+          f"${(f['pnl'] * f['day'].map(sc).fillna(1)).sum() / yrs:,.0f}/yr (median share posted {sc.median():.2f})")
+
+
 def main():
     print("===== #389 U-T6 Stage 2")
     hl = pd.read_parquet(PUB / "uncharted_385_candles.parquet")
@@ -43,6 +77,8 @@ def main():
     dd, worst = path_stats(fh, "Hyperliquid 2023-06..2026-10")
     s2b = dd >= -3750 and worst >= -3000
     print(f"  S2b: {'PASS' if s2b else 'FAIL'} (needs drawdown >= -$3,750 and worst day >= -$3,000)")
+    halves(fh, "Hyperliquid X 15%")
+    sizing_checks(hl)
     bp = PUB / "uncharted_389_binance_ohlc.parquet"
     if not bp.exists():
         print("S2a: Binance data not fetched yet")
@@ -75,6 +111,7 @@ def main():
         res[x] = (r.mean(), t, per_yr, int((full > 0).sum()))
         if x == 0.15:
             path_stats(f, "Binance path (context)")
+            halves(f, "Binance X 15%")
     m, t, py, pos = res.get(0.15, (np.nan, np.nan, 0, 0))
     s2a = m >= 0.005 and t >= 3 and py >= 3000 and pos >= 4
     print(f"  S2a: {'PASS' if s2a else 'FAIL'} (needs mean >= 0.5%, t >= 3, >= $3,000/yr, >= 4 of 6 full years positive)")
