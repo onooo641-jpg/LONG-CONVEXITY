@@ -64,3 +64,9 @@ queue (7 days) at the NAV then; costs 0.10% + lost staking yield (3%/yr ETH toke
 ### #414 result — **KILL** (2026-11-25) — `uv run python -m scripts.lottery_20261125` → `docs/jx_runs/lottery_20261125.txt` (re-run identical)
 Hyperliquid 2023-06..2026-10: 177 weeks, mean −0.16%/week (long leg +0.70%, short leg −0.75%, funding −0.05%, costs 0.05%), t −0.22,
 −28.6%/yr, worst drawdown −84.3%. Binance 2020–23 (context): −31.8%/yr. High-MAX coins did not underperform; the effect is absent in perps.
+
+### #415 result — **NOT TESTABLE with free DefiLlama data** (2026-11-25) — `uv run python -m scripts.nav_discount_20261125`
+The pre-registered NAV check failed: DefiLlama's contract-address price equals the CoinGecko market price in 100% of hours for weETH,
+pufETH and rsETH (so it is a market price, not the protocol rate), and sUSDe's address series has 8 hourly drops > 0.5% (limit 3). No
+events can be measured. A fair test needs archive-node calls to each protocol's rate function (weETH getRate, sUSDe convertToAssets,
+rsETH oracle) — the public archive RPCs tried earlier refused GitHub's servers. Not counted either way.

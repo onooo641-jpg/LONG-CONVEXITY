@@ -1,0 +1,9 @@
+===== #415 withdrawal-queue discounts vs on-chain NAV
+  NAV check weETH: hours 22722, NAV/underlying 1.0229 -> 1.1087, hourly drops > 0.5%: 325 (dropped); NAV equals market price in 100% of hours
+  NAV check sUSDe: hours 6858, NAV/underlying 1.0167 -> 1.2596, hourly drops > 0.5%: 8 (dropped); NAV equals market price in 0% of hours
+  NAV check pufETH: hours 14097, NAV/underlying 0.9752 -> 1.0866, hourly drops > 0.5%: 1337 (dropped); NAV equals market price in 100% of hours
+  NAV check rsETH: hours 22099, NAV/underlying 0.9566 -> 1.0835, hourly drops > 0.5%: 782 (dropped); NAV equals market price in 100% of hours
+  Stage 1, 2024: no events
+  STAGE 1 VERDICT: KILL
+  Stage 2 (out-of-sample), 2025-01..2026-10: no events
+  STAGE 2 VERDICT: not run (Stage 1 killed) — context
