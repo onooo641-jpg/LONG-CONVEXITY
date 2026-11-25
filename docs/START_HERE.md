@@ -90,7 +90,7 @@ Other model values to compare: 16.8 trades a month, win rate 53.1% (55.6% since 
 | 100 trades | −20.4 / −1.0 / +20.8 | −8.1 / +5.8 / +23.5 |
 
 **Decisions (no strategy-parameter changes either way):** parity < 95% or stop slippage > 2 ticks ⇒ fix execution first. After 40 trades:
-inside both bands ⇒ the model holds so far; above the since-2024 median (+3.4 R) ⇒ add the second account (LucidDaily or a second Topstep);
+inside both bands ⇒ the model holds so far; above the since-2024 median (+3.4 R) ⇒ consider the second account (the pre-registration names a second Topstep; LucidDaily ranks higher, section 4a);
 below the 5th percentile of both ⇒ stop adding accounts. After 100 trades and a first payout inside the bands ⇒ the multi-firm plan
 (now the Malaysia-eligible 4-firm plan in section 4a, which replaced the Topstep + Lucid + MFFU plan named in the pre-registration).
 
