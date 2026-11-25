@@ -224,6 +224,7 @@ risk, 5m signals and 1m fills.
 | 389 | U17 resting bids under liquidation wicks on Hyperliquid perps (buy at prev close −15%, sell at the close) | `docs/PREREG_UNCHARTED_20261125.md` | registered; uses U-T3 candles | — |
 | 390 | U18–U22 second wave: crypto net-nets, bitcoin-treasury premiums, locked-token OTC, Hong Kong IPO subscriptions, Japan yutai | `docs/IDEAS_UNCHARTED_20261125.md` | desk: U19/U20 dismissed, U22 excluded (residency), U18 radar candidate, U21 broker-access check next | — |
 | 391 | U21 Hong Kong IPO one-lot applications in every IPO (issuer underpricing, capped per identity) | `docs/PREREG_UNCHARTED_20261125.md` | registered; Stage 0 broker access open; data fetch `u391hkipo` | — |
+| 392–401 | wave 3: Binance monitoring tags, Binance listings fade, airdrop-distribution listings, Korean listings fade, Binance perp launches, cascade-day reversal, BNB launchpool demand, crypto net-nets, CoW AMM LP, LBP end-of-sale | `docs/PREREG_UNCHARTED_WAVE3_20261125.md` | registered; data fetch `uwave3` | — |
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.

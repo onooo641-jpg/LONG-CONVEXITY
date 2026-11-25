@@ -39,3 +39,23 @@ third-party unless marked.
 **What happens next.** U-T1 to U-T5 are pre-registered in `docs/PREREG_UNCHARTED_20261125.md` and start with a data-availability probe
 (Actions job `uprobe`). U4 and U12 follow if the first batch leaves capacity. U3 needs a per-sale dataset (not free); U10 and U11 cannot be
 tested from history.
+
+## Third wave (U23–U28), added 2026-11-25 — Jx asked for 15+ that are testable, worth it and not excluded
+
+Count of ideas meeting all three: 6 tested (U1, U2, U5–U7 as one test, U8, U17, U21) + 10 registered in
+`docs/PREREG_UNCHARTED_WAVE3_20261125.md` (U4, U9b, U12, U18, U23–U28) = **16**.
+
+| # | Idea | Shape | Who pays and why | Data |
+|---|---|---|---|---|
+| U9b | Binance monitoring-tag additions → short (U9 made testable: the tags sit in another announcement category) | E | holders exit before a likely delisting | Binance announcements + Hyperliquid |
+| U23 | Binance spot listing → fade the listing pump | E | listing-hype buyers; early holders sell into Binance liquidity | Binance announcements + Hyperliquid |
+| U24 | Airdrop-distribution listings (HODLer, Launchpool, Megadrop) → short | E | free-token recipients sell (forced-ish supply) | same |
+| U25 | Korean KRW listings (Upbit, Bithumb) → fade | E | Korean retail pumps; arbitrageurs and holders sell into them | Upbit/Bithumb public candles + Hyperliquid |
+| U26 | Binance perp launch on a token already on Hyperliquid → short | E | short-sale constraint relief: a big new shorting venue opens | Binance archive + Hyperliquid |
+| U27 | Cascade-day reversal (buy the basket of wicked perps at the close, hold 3 days) | E | forced deleveraging overshoots over days, not just intraday (distinct from U17) | Hyperliquid candles |
+| U28 | BNB demand around Launchpool/Megadrop (long BNB vs BTC) | P | farmers must hold BNB; exchange subsidy creates buying | Binance announcements + Hyperliquid |
+| U18 | Crypto net-nets (market cap < liquid treasury) | E | holders who gave up; treasury is a floor, activists force returns | DefiLlama treasuries + CoinGecko |
+| U12 | CoW AMM liquidity (LVR-protected) | C | arbitrage surplus goes to LPs | DefiLlama |
+| U4 | LBP end-of-sale buying | P | Dutch-style decay can end below fair value | Balancer factories + GeckoTerminal |
+
+Dropped while choosing these (already tested families): extreme-funding fades (#37, #57), HIP-3 cross-dex spreads (#284).
