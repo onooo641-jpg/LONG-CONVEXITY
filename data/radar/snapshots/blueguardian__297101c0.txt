@@ -24,7 +24,7 @@ Home
 › FAQ
 › Futures plans
 › Zero account rules
-Applies to: Futures Updated 24 Nov 2026 · 6 min read
+Applies to: Futures Updated 25 Nov 2026 · 6 min read
 Zero account rules
 Short answer
 Zero is a one-phase Futures evaluation built around daily payouts with no payout cap. Hit a 6% profit target while meeting your chosen consistency rule and staying within the drawdown. You build your account at checkout: end-of-day or intraday drawdown for the evaluation, with or without a daily loss limit, and 30%, 40% or 50% consistency. Once funded, you can withdraw profit above your buffer every day, with a 90% profit split. Zero is available on NinjaTrader.
@@ -150,7 +150,7 @@ News trading: allowed on the evaluation. Not allowed on funded accounts.
 Trading hours: 6:00 PM to 4:10 PM New York time. Open positions close automatically at 4:10 PM, so you can't hold overnight. See Trading hours and the trading day .
 Stop losses: not mandatory, but every trade needs a defined risk. See Futures risk management rules .
 Copy trading: only between accounts you legally own.
-Microscalping: less than 50% of your profit may come from trades held under 10 seconds. If more of your profit comes from these trades, that profit is forfeited.
+Microscalping: less than 50% of your profit in a single day may come from trades held under 15 seconds. If more of your profit comes from these trades, that profit is forfeited.
 Fees: one-time purchase. No monthly or activation fees.
 Zero FAQs
 How is Zero different from Reserve? Both have the same profit target, drawdown sizes and contract limits. Zero pays out daily with no cap once you clear your buffer, uses an intraday drawdown when funded, and lets you choose your evaluation drawdown type and a 30%, 40% or 50% consistency rule. Reserve pays up to 50% of profit after 5 winning days, with a cap per payout.

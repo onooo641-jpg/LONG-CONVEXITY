@@ -9,7 +9,7 @@ CFD Prime (Swing)
 CFD Prime (Swing) Rewards
 CFD Prime (Swing) Rewards
 How and when you get your rewards on CFD Prime (Swing) — reward share, requests, refunds, fees and methods.
-Updated over a week ago
+Updated in the last hour
 Table of contents
 What Is The CFD Prime (Swing) Reward Policy?
 On CFD Prime (Swing) you can receive a reward of up to 80% of the notional profit generated in your Earning Account, with a minimum reward of $100 per request.
@@ -23,9 +23,9 @@ Trailing accounts: once your limit has locked at your starting balance, requesti
 Static accounts: a payout alone can't breach your account, because you can only withdraw profit and your limit is below your starting balance. Your buffer still gets smaller after every payout. Example: your balance is $110,000 and your limit is $90,000. After a $10,000 payout, your balance is $100,000 and you have a $10,000 buffer.
 For how each drawdown type works, see Maximum Drawdown in CFD Prime Rules.
 Trading Requirements Before A Reward
-Accounts created after 6 March 2026: at least 3 profitable trading days, each gaining at least 0.5% of the initial balance.
+Accounts created after 6 March 2026: at least 3 profitable trading days, each Accounts created after 6 March 2026: at least 3 profitable trading days, each gaining at least 0.5% of the initial balance.
 Accounts created before 6 March 2026: at least 5 trading days, regardless of outcome. If most of the profit was made on the first day, you must keep trading with the same approach or the reward may be declined by the Risk Team.
-Accounts created after 5 July 2026 (CFD 1-Phase $100K/$200K): the 50% Consistency Rule must also be met. [Latest]
+Accounts created after 5 July 2026 (CFD 1-Phase $100K/$200K): the 50% Consistency Rule must also be met. For accounts created on or after 26 November 2026, it's calculated on your Total Profit, including losing days. See Consistency Rule in CFD Prime (Swing) Rules. [Latest]
 Transfer Timeframes
 Crypto: within the day.
 International wire / SWIFT: 5–7 business days.

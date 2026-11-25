@@ -9,7 +9,7 @@ CFD Intraday
 CFD Intraday Rules
 CFD Intraday Rules
 Everything that applies to your CFD Intraday account, in one place — what you must do to pass, the limits you can't breach, and what's allowed.
-Updated over a week ago
+Updated in the last hour
 Table of contents
 These are the rules for your CFD Intraday account. Most apply in both the Challenge and the Earning Phase. There are two types of rules:
 • Hard rules — breaking one breaches the account: it fails and is disabled.
@@ -59,8 +59,16 @@ Minimum Profitable Days / Trading Days (Soft — No Breach)
 • 1-Phase $100,000 and $200,000: at least 3 trading days. These days don't need to be profitable.
 The days don't need to be consecutive.
 Consistency Rule (Soft — No Breach)
-Applies to 1-Phase $100,000 and $200,000 accounts only, in both phases. Your Best Day (your single most profitable day) must not exceed 50% of your Positive Days' Profit (the sum of all your profitable days; losing days are excluded).
+Applies to 1-Phase $100,000 and $200,000 accounts only, in both phases. How it's calculated depends on when your account was created:
+• Accounts created on or after 26 November 2026: your Best Day (your single most profitable day) must not exceed 50% of your Total Profit. Total Profit is your net closed profit across all trading days, so losing days reduce it.
+• Accounts created before 26 November 2026: your Best Day must not exceed 50% of your Positive Days' Profit (the sum of all your profitable days; losing days are excluded).
 Going over 50% doesn't fail the account. Keep trading and add profit on other days until your Best Day is 50% or less.
+Example (accounts created on or after 26 November 2026):
+• Day 1: +$6,000, Day 2: −$2,000, Day 3: +$4,000, Day 4: +$2,000.
+• Total Profit is $10,000. Your Best Day (Day 1) is 60% of it, so the rule isn't met yet.
+• If Day 1 stays your Best Day, you need a Total Profit of at least $12,000 ($6,000 ÷ 0.5).
+• Under the previous rule, the same four days give a Positive Days' Profit of $12,000, so the Best Day is exactly 50% and the rule is met.
+​
 Limits You Must Not Breach (Hard Rules)
 Account
 Daily Loss Limit

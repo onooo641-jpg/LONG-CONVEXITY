@@ -9,7 +9,7 @@ CFD Intraday
 CFD Intraday Rewards
 CFD Intraday Rewards
 How and when you get your rewards on CFD Intraday: reward share, requests, trading requirements, refunds, fees and methods.
-Updated over a week ago
+Updated in the last hour
 Table of contents
 What Is The CFD Intraday Reward Policy?
 You can receive a reward of up to 80% of the notional profit in your Earning Account. The minimum reward is $100 per request.
@@ -17,7 +17,7 @@ When Can I Request A Reward?
 Your first reward can be requested 14 days after you receive your Earning Account. After that, you can request a reward every 14 days, for any amount above $100. Requests are processed daily, Monday to Friday, within 24 hours on business days.
 Trading Requirements Before A Reward
 • All 2-Phase accounts and 1-Phase $2,500 to $50,000: at least 3 profitable trading days, each gaining at least 0.5% of the initial balance.
-• 1-Phase $100,000 and $200,000: at least 3 trading days, and the 50% Consistency Rule must be met.
+• 1-Phase $100,000 and $200,000: at least 3 trading days, and the 50% Consistency Rule must be met. For accounts created on or after 26 November 2026, it's calculated on your Total Profit, including losing days. See Consistency Rule in CFD Intraday Rules.
 • No news trading in the Earning Phase.
 Transfer Timeframes
 • Crypto: within the day.
