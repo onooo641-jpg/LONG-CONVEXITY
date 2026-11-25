@@ -1,0 +1,21 @@
+Fresh chain started on each month 2016-01..2025-10 (118 starts); friend's NQ trades at $900 risk; rules as in portfolio_my_20261123.
+worst = deepest cumulative cash (fees - payouts) before recovering; negative = money out of pocket.
+
+LucidDaily 50K EOD (promo $85.40)  (n=118)
+  deepest loss: median $-683 | 1 in 4 worse than $-1,687 | 1 in 10 worse than $-2,673 | worst $-3,758
+  days to first payout: median 158 | 75th pct 388 | 90th pct 826 | no payout 0
+  net after 12 months: median $3,971 | share losing 30% | never positive 0
+  starts 2023+: median deepest $-342, median days to first payout 78
+
+LucidDaily 50K EOD (list $122)  (n=118)
+  deepest loss: median $-1,054 | 1 in 4 worse than $-2,410 | 1 in 10 worse than $-3,819 | worst $-5,368
+  days to first payout: median 158 | 75th pct 388 | 90th pct 826 | no payout 0
+  net after 12 months: median $3,239 | share losing 32% | never positive 0
+  starts 2023+: median deepest $-488, median days to first payout 78
+
+Topstep 50K Consistency path  (n=118)
+  deepest loss: median $-735 | 1 in 4 worse than $-1,248 | 1 in 10 worse than $-2,583 | worst $-3,520
+  days to first payout: median 126 | 75th pct 303 | 90th pct 827 | no payout 0
+  net after 12 months: median $1,704 | share losing 30% | never positive 0
+  starts 2023+: median deepest $-418, median days to first payout 63
+
