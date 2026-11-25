@@ -755,7 +755,7 @@ def _w3_binance():
     save("uncharted_w3_binance_ann.json", out)
 
 
-def _w3_korea(deadline):
+def _w3_korea(deadline, out_name="uncharted_w3_korea.parquet"):
     rows = []
     mk = get("https://api.upbit.com/v1/market/all?isDetails=false", tries=3) or []
     krw = [m["market"] for m in mk if str(m.get("market", "")).startswith("KRW-")]
@@ -789,7 +789,7 @@ def _w3_korea(deadline):
         if d:
             rows.append({"venue": "bithumb", "coin": c, "first_day": str(pd.Timestamp(int(min(int(x[0]) for x in d)), unit="ms").date())})
         time.sleep(0.12)
-    save("uncharted_w3_korea.parquet", pd.DataFrame(rows))
+    save(out_name, pd.DataFrame(rows))
 
 
 def _w3_treasury(deadline):
@@ -1374,10 +1374,7 @@ def job_uw3b():
         time.sleep(0.6)
     print(f"  binance catalog 48 back to 2020: {len(items)} items", flush=True)
     save("uncharted_w3b_binance48.json", items)
-    _w3_korea(time.time() + 75 * 60)
-    k = OUT / "uncharted_w3_korea.parquet"
-    if k.exists():
-        k.rename(OUT / "uncharted_w3b_korea.parquet")
+    _w3_korea(time.time() + 75 * 60, out_name="uncharted_w3b_korea.parquet")
 
 
 def job_udistinct():
