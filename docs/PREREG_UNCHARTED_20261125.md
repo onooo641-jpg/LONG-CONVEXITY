@@ -42,5 +42,15 @@ after the auction ends (GeckoTerminal pools created by the auction).
 **Rule.** Buy at the clearing price; sell after 7 days (primary) — 1 and 30 days reported.
 **Stage 1 (kill-only):** with ≥ 5 auctions: KILL if the median 7-day return is ≤ 0. Fewer than 5: "not testable".
 
+## U-T6 (#389) Resting bids under liquidation wicks — added 2026-11-25 before its data were examined
+**Data.** Daily candles of every Hyperliquid perp (`uncharted_385_candles.parquet`, fetched for U-T3), first 30 days after each listing
+excluded, 2023-06..2026-10.
+**Rule.** Each day, for every perp, a resting limit buy at the previous close × (1 − X). Filled only if the day's low is ≥ 0.5% below the
+level (trade-through; queue priority is unknown). Fill price = the level, or the open if the day opened below it. Sell at that day's
+close. Size per fill = min($1,500, 1% of the day's USD volume). Costs: 0.015% maker in, 0.045% taker out. X = 15% primary; 10%, 20%, 30%
+reported as context (no selection among them).
+**Stage 1 (kill-only), X = 15%:** KILL if mean net return per fill ≤ 0.3%, or net profit < $3,000/yr (fills of one day share one $15,000
+pot: if a day's fills exceed $15,000 they are scaled down).
+
 **Commands.** probe: Actions job `uprobe`; tests: `scripts/uncharted_*_20261125.py` with outputs in `docs/jx_runs/` (each re-run once;
 identical). **Limits.** NAV proxies and announcement times are approximations; small samples are reported as such.
