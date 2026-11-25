@@ -85,6 +85,12 @@ Processing Time
 Trades
 Account Type
 Location
+Nov 25, 2026
+O****
+$1,150
+1 Hours
+Live Account
+KUMASI, Ghana
 Nov 23, 2026
 J*****
 $1,100
@@ -205,12 +211,6 @@ $600
 1 Hours
 25k Trail Rithmic
 Calgary, Canada
-Nov 19, 2026
-Q**
-$3,500
-17 Hours
-150k Static Rithmic
-Houston, USA
 Nov 19, 2026
 Q**
 $3,500

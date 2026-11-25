@@ -145,8 +145,8 @@ MATCH
 RZ
 RZR Funded
 4.1
-50% OFF
-MATCH
+45% OFF
+MATCHBF45
 In
 Instant Funding
 4.0
@@ -204,7 +204,7 @@ Favorite 0/5
 New
 All Firms
 Firms 15 results
-Data updated just now
+Data updated 2 min ago
 Firm
 Rank / Reviews
 Country / Years
@@ -215,9 +215,9 @@ Promo
 Actions
 Th
 The5ers
-100560
+100566
 4.7
-1443
+1444
 reviews
 United Kingdom, years in operation: 10 10+
 FX, Indices, Metals, Energy, Crypto, Stocks FX
@@ -232,7 +232,7 @@ MATCH
 Firm
 FT
 FTMO
-44395
+44400
 4.5
 220
 reviews
@@ -248,7 +248,7 @@ $400K
 Firm
 Aq
 AquaFunded
-17176
+17180
 4.4
 347
 reviews
@@ -265,7 +265,7 @@ Firm
 4
 Bl
 Blueberry Funded
-26290
+26291
 4.1
 635
 reviews
@@ -283,7 +283,7 @@ Firm
 5
 E8
 E8 Markets
-39264
+39266
 4.8
 498
 reviews
@@ -301,9 +301,9 @@ Firm
 6
 Mo
 Moneta Funded
-1561
+1563
 4.8
-130
+132
 reviews
 Dubai (UAE), years in operation: 1 1
 FX, Indices, Metals, Energy, Crypto FX
@@ -318,7 +318,7 @@ Firm
 7
 To
 Top One Trader
-30363
+30369
 4.4
 239
 reviews
@@ -334,7 +334,7 @@ Firm
 8
 Ma
 Maven
-48292
+48299
 4.2
 801
 reviews
@@ -354,7 +354,7 @@ WS
 WSFunded
 365
 3.8
-51
+52
 reviews
 Dubai (UAE), years in operation: 2 2
 FX, Indices, Metals, Energy, Crypto, Stocks, Other Commodities FX
@@ -370,7 +370,7 @@ Firm
 10
 Cr
 Crypto Fund Trader
-39756
+39765
 4.1
 114
 reviews
@@ -457,7 +457,7 @@ Firm
 15
 La
 Lark Funding
-4470
+4471
 4.5
 93
 reviews

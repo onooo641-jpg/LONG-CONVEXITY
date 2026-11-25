@@ -1,5 +1,5 @@
-2026-11-24 Hotfix v2.389.1
-2026-11-20 vbanned-users-background-check-prod
-2026-11-20 vshrink-db-conn-buffer-prod
-2026-11-19 Weekly Release v2.389.0
-2026-11-18 v2.388.3
+2026-11-25 Hotfix v2.389.2
+2026-11-24 vhermod-concurrent-batches-prod
+2026-11-20 vsmaller-order-checkpoint-buffer-prod
+2026-11-23 vfee-engine-compiler-prod
+2026-11-19 v2.388.4

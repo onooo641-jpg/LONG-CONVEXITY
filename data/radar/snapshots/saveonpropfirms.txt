@@ -24,7 +24,7 @@ Date
 20 firms tracked All firms →
 300+
 Accounts priced
-$67,131
+$76,678
 In code discounts
 Live discount codes and the real all-in price on every evaluation and funded account plan. No list-price games, no buried activation fees. The lowest verifiable number, side by side.
 Compare every firm Find my firm in 60s → New? Start here →
@@ -92,6 +92,13 @@ PT $1,500 DD $1,000 Type Intraday
 None Eval 30% Funded None
 Pass 5d Money 1d = 1st payout 6d
 50 % 3 Buy $40 : price breakdown for TradeDay 25K Quick Pay Save 60 % SOPF
+Phidias Prop Firm 25K Express to Live OTP
+$25,000 Evaluation 2 mini / 20 micro
+List $277 All-in ? $42 one-time
+PT $1,500 DD $500 Type Static
+None Eval None Funded None
+Pass 1d Money 1d = 1st payout 2d
+80 % 5 Buy $42 : price breakdown for Phidias Prop Firm 25K Express to Live OTP Save 85 % SOPF
 Alpha Futures 25K Zero
 $25,000 Evaluation 1 mini / 10 micro
 List $89 All-in ? $45 monthly
@@ -122,14 +129,6 @@ PT $7,000 DD $3,250 Type Intraday
 None Eval 40% Funded 40%
 Pass 3d Money 3d = 1st payout 6d
 90 % 5 Buy $47 : price breakdown for Funded Futures Family 100K Velocity Save 90 % SOPF
-Purdia Capital 10K Beginner
-$10,000 Evaluation 0 mini / 5 micro
-List $79 All-in ? $48 monthly
-PT $1,000 DD $1,000 Type EOD
-$ 250 Soft
-Eval None Funded None
-Pass 5d Money 10d = 1st payout 15d
-90 % 3 Buy $48 : price breakdown for Purdia Capital 10K Beginner Save 40 % SOPF
 Disclaimer: We do our best to keep account prices, activation fees, and promo codes accurate and up to date. But prop firms can change their offers at any time. To be safe, always double-check the firm's website before you buy to make sure everything still matches.
 Funded Futures Family 25K Velocity Evaluation
 List $179 All-in ? $18 monthly
@@ -166,6 +165,13 @@ P/D
 Speed Pass 5d Money 1d Payout 6d
 Split 50 %
 Full specs Save 60 % SOPF Buy $40 : price breakdown for TradeDay 25K Quick Pay
+Phidias Prop Firm 25K Express to Live OTP Evaluation
+List $277 All-in ? $42 one-time
+Risk PT $1,500 DD $500 Type Static
+P/D
+Speed Pass 1d Money 1d Payout 2d
+Split 80 %
+Full specs Save 85 % SOPF Buy $42 : price breakdown for Phidias Prop Firm 25K Express to Live OTP
 Alpha Futures 25K Zero Evaluation
 List $89 All-in ? $45 monthly
 Risk PT $1,500 DD $1,000 Type EOD
@@ -194,13 +200,6 @@ P/D
 Speed Pass 3d Money 3d Payout 6d
 Split 90 %
 Full specs Save 90 % SOPF Buy $47 : price breakdown for Funded Futures Family 100K Velocity
-Purdia Capital 10K Beginner Evaluation
-List $79 All-in ? $48 monthly
-Risk PT $1,000 DD $1,000 Type EOD
-P/D
-Speed Pass 5d Money 10d Payout 15d
-Split 90 %
-Full specs Save 40 % SOPF Buy $48 : price breakdown for Purdia Capital 10K Beginner
 Disclaimer: We do our best to keep account prices, activation fees, and promo codes accurate and up to date. But prop firms can change their offers at any time. To be safe, always double-check the firm's website before you buy to make sure everything still matches.
 Back 1 of 32 Next How to choose a futures prop firm
 Six things decide whether an account is worth its price. Each one is a column on the board above, and each has a list of the firms that get it right. Read the rule, pick the list, then use the code shown on each row to pay the lowest price.

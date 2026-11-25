@@ -1,0 +1,389 @@
+FundedNext United States of America Privacy Policy | Data Protection Guide
+CFDs
+Futures
+Labs
+Rewards
+More
+EN Login
+CFDs
+Futures
+Labs
+Rewards
+Privacy Policy
+Last updated: 5 May 2026
+On this page
+1. Introduction
+2. Data Controller
+3. Categories of Personal Data We Process
+4. Special Categories of Personal Data
+5. Sources of Personal Data
+6. Purposes and Legal Bases for Processing
+7. KYC, AML, Sanctions and Identity Verification
+8. Platform Activity, Monitoring and Integrity Controls
+9. Automated Processing, Profiling and Significant Decisions
+10. Disclosure of Personal Data
+11. International Transfers
+12. Data Retention
+13. Security Measures
+14. Your Rights
+15. Cookies and Similar Technologies
+16. Children's Data
+17. External Links and Third-Party Services
+18. No Reliance on Platform Behaviour or Privacy Notice as an Operational Representation
+19. MCP Connector Policy
+20. Changes to this Notice
+21. Contact Details
+EU/EEA/UK Addendum
+1. Introduction
+This Privacy Notice (the "Notice") explains how FundedNext, together with its relevant affiliates and operating entities involved in the provision, administration, support, monitoring and enforcement of the Services ("FundedNext", "we", "us" or "our"), collects, uses, stores, discloses, transfers and otherwise processes Personal Data relating to individuals who access or use our website, client area, dashboards, applications, communication channels, evaluation programmes, simulated trading environment, payout infrastructure, partnership channels and related products or services (together, the "Services").
+FundedNext is committed to processing Personal Data lawfully, fairly and transparently, and to implementing appropriate technical, organisational and contractual safeguards designed to protect such data and to preserve the integrity, security and lawful operation of the Services.
+This Notice applies to Personal Data processed in connection with the Services, including where you:
+visit or interact with our website or any digital interface operated or made available by us;
+create, access or use an account;
+purchase, enrol in, participate in or otherwise use any evaluation, challenge, account, programme, offer or feature made available by us;
+interact with our simulated trading environment, systems, dashboards or performance tracking tools;
+complete identity verification, onboarding, due diligence, compliance screening or payout verification procedures;
+make payments, request withdrawals, receive rewards, request refunds, initiate or become involved in a payment dispute or chargeback process;
+contact us for support, compliance review, investigations, disputes, complaints or other enquiries;
+engage with us as an affiliate, introducer, partner, service provider, applicant, contractor or other commercial counterparty; or
+otherwise interact with us in a commercial, contractual, technical, security, compliance or regulatory context.
+This Notice is intended to provide transparency regarding our processing activities. It should be read together with our Terms and Conditions, Cookie Notice, programme rules, payout terms and any other legal notices or policies that may apply to your relationship with us.
+Where required or permitted by applicable law, jurisdiction-specific provisions may supplement, modify or prevail over certain parts of this Notice.
+2. Data Controller
+For the purposes of applicable data protection law, EU General Data Protection Regulation (Regulation (EU) 2016/679), and Federal Decree-Law no. 45 of 2021 - PDPL, the controller of Personal Data processed under this Notice is FundedNext, operated by GrowthNext F.Z.E.
+FundedNext may operate through or with the support of affiliated or related entities within its group structure for operational, technical, compliance, finance, fraud prevention, legal, customer support, marketing, business administration and enforcement purposes. Depending on the nature of the interaction, one or more entities within the FundedNext structure may act as controller, joint controller or processor, as applicable.
+For questions regarding this Notice or the processing of Personal Data, including the exercise of your rights, you may contact us at:
+FundedNext — operated by GrowthNext F.Z.E.
+Email: [email protected]
+Address: AI Robotics Hub, Executive Office-7, Ajman Free Zone, Ajman, UAE
+Where required by applicable law, further contact details, including the details of any appointed representative or data protection contact, shall be made available through the website or upon request.
+3. Categories of Personal Data We Process
+We may collect and process the following categories of Personal Data, depending on the nature of your relationship with us, the Services used, the jurisdiction involved and the operational, legal or compliance requirements applicable to the relevant processing.
+3.1 Identity and Verification Data
+This may include your full name, date of birth, nationality, citizenship, country of residence, residential status, photograph, signature, government-issued identification details, passport details, national identity card details, tax identification details, selfie images, liveness or facial comparison data, and other information required for identity verification, KYC, AML, sanctions, fraud prevention or payout validation purposes.
+3.2 Contact Data
+This may include your email address, telephone number, messaging handle, residential address, billing address, postal address and other contact details.
+3.3 Account and Profile Data
+This may include account credentials, usernames, passwords, authentication details, security questions, device association records, account settings, profile information, support history, onboarding status, programme participation records, internal account flags, administrative notes and records relating to account creation, maintenance, suspension, restriction or closure.
+3.4 Financial, Payment and Payout Data
+This may include payment method details, bank account details, card-related details, e-wallet details, billing information, payment history, deposits, refunds, withdrawals, payout records, transaction references, payment verification data, chargeback-related information, records concerning disputed or reversed transactions, and other financial data relevant to your use of the Services or your financial interactions with us.
+3.5 Compliance and Due Diligence Data
+This may include source-of-funds information, source-of-wealth information, sanctions screening results, politically exposed person status, adverse media results, fraud screening results, watchlist results, compliance review outcomes, document verification results, risk scoring, account review records, payout eligibility review records, and records collected for legal, regulatory, contractual or financial crime compliance purposes.
+3.6 Programme, Performance and Simulated Trading Data
+This may include challenge participation data, account type, programme metrics, simulated trading activity, order history, position history, open and closed trades, account balances, drawdown data, profit and loss data, platform activity, strategy-related indicators, reward eligibility metrics, account performance records, evaluation outcomes, payout-related performance records, and other data generated through or connected with your use of the Services.
+3.7 Technical, Device and Network Data
+This may include IP address, browser type and version, operating system, device identifiers, mobile device data, device fingerprints, session logs, timestamps, geolocation indicators, network data, browser settings, cookies, SDKs, pixels, tags and similar technologies, and other technical information generated by or associated with your access to or use of the Services.
+3.8 Behavioural, Monitoring and Risk Intelligence Data
+This may include device-linkage indicators, behavioural patterns, platform interaction patterns, clickstream data, account linkage indicators, network relationship indicators, access anomalies, suspicious usage patterns, prohibited practice indicators, behavioural scoring, fraud signals, system integrity alerts, chargeback risk indicators, abnormal payment behaviour, and other information used to detect, investigate, assess or prevent abuse, misconduct, unauthorised use, payment abuse, platform manipulation or breaches of our contractual and operational rules.
+3.9 Communications Data
+This may include emails, chat logs, support tickets, complaint files, call recordings, voicemail records, compliance correspondence, dispute-related correspondence, investigation communications, social media messages, records of interactions with our staff or service teams, and other communications between you and FundedNext.
+3.10 Marketing and Preferences Data
+This may include your preferences regarding communications, your subscription choices, opt-in and opt-out records, campaign interaction data, referral data, promotional engagement data, event participation records and records concerning your interaction with our advertising, communications or marketing content.
+3.11 Partner, Affiliate and Business Relationship Data
+Where relevant, this may include business contact information, referral and attribution data, payment details, performance records, contractual records, verification records, compliance checks and communications relating to affiliate, partnership or commercial relationships.
+4. Special Categories of Personal Data
+We do not intentionally process special categories of Personal Data unless such processing is strictly necessary, proportionate and lawful.
+Where identity verification, fraud prevention, security or compliance procedures involve biometric verification, facial comparison, liveness checks or similar sensitive processing, such processing shall be carried out only where permitted by applicable law and subject to appropriate safeguards. Where required, we shall rely on your explicit consent or another lawful basis available under applicable law.
+We ask that you do not provide special categories of Personal Data unless specifically requested by us and unless such disclosure is necessary for a lawful and legitimate purpose connected with the Services.
+5. Sources of Personal Data
+We may collect Personal Data from the following sources:
+5.1 Directly from You
+We collect Personal Data directly from you, when you complete forms, create an account, upload documents, use the Services, make payments, request payouts, contact us, submit information during onboarding or compliance procedures, communicate with us, apply to work with us, participate in a campaign, or otherwise provide information to us.
+5.2 Automatically Through Your Use of the Services
+We collect certain technical, device, usage, behavioural, monitoring and activity data automatically when you access or use our website, systems, platform environment, dashboards, portals, communications interfaces or other parts of the Services.
+5.3 From Third Parties
+We may receive Personal Data from third-party service providers and counterparties, including identity verification providers, payment processors, banks, anti-fraud providers, chargeback management providers, sanctions and screening providers, analytics providers, hosting providers, marketing providers, affiliates, business partners, advisers, group entities, public sources and other service providers engaged in connection with the Services.
+5.4 From Publicly Available Sources
+We may collect Personal Data from public registers, sanctions lists, watchlists, company registries, court records, adverse media sources, social media content lawfully available to us, and other publicly accessible databases where necessary for compliance, due diligence, fraud prevention, dispute management, legal enforcement or security purposes.
+6. Purposes and Legal Bases for Processing
+We process Personal Data for the purposes set out below and, where applicable, on one or more of the corresponding legal bases.
+6.1 Account Opening, Onboarding and Administration
+We process Personal Data to create, verify, administer, maintain, secure and support accounts, to authenticate users, to configure account access, to manage account preferences and to administer your participation in the Services.
+Legal basis: performance of a contract; legitimate interests.
+6.2 Provision and Operation of the Services
+We process Personal Data to operate, deliver, maintain and support the Services, including the website, user interface, challenge infrastructure, simulated trading environment, dashboards, payout systems, support functions and related operational systems.
+Legal basis: performance of a contract; legitimate interests.
+6.3 KYC, AML, Sanctions, Fraud and Compliance Controls
+We process Personal Data to conduct know-your-customer, anti-money laundering, sanctions, anti-fraud, source-of-funds, source-of-wealth, politically exposed person, adverse media, payout validation, transaction verification and other compliance or integrity checks, including enhanced due diligence where appropriate.
+Legal basis: legal obligation; legitimate interests.
+6.4 Platform Integrity, Security and Enforcement
+We process Personal Data to protect the integrity, security, reliability and lawful operation of the Services, including to detect, investigate and respond to prohibited conduct, suspicious behaviour, linked-account activity, unauthorised access, system abuse, unfair exploitation of the Services, technical abuse, suspicious strategy execution, reward abuse, policy violations and breaches of our Terms and Conditions or related policies.
+Legal basis: performance of a contract; legitimate interests; legal obligation where applicable.
+6.5 Behavioural Monitoring, Profiling and Risk Assessment
+We process Personal Data to analyse account activity, user behaviour, technical patterns, payment signals, device-linkage indicators, platform usage and other relevant information for the purposes of fraud detection, security, payout validation, operational risk assessment, dispute handling, account review, suspicious activity escalation, prohibited practice detection and enforcement of contractual and operational controls.
+Legal basis: legitimate interests; legal obligation where applicable.
+6.6 Programme Administration, Evaluation and Reward Eligibility
+We process Personal Data to administer evaluation programmes and related features, determine eligibility for benefits, rewards or account status, validate activity, review compliance with applicable programme rules, manage account outcomes and apply contractual consequences where relevant.
+Legal basis: performance of a contract; legitimate interests.
+6.7 Payments, Refunds, Withdrawals and Financial Administration
+We process Personal Data to receive payments, validate payment methods, process withdrawals, administer refunds, manage billing records, prevent chargebacks and payment abuse, verify payout entitlement, perform financial reconciliation, maintain accounting records and support payment dispute responses or financial investigations.
+Legal basis: performance of a contract; legal obligation; legitimate interests.
+6.8 Customer Support, Complaints and Dispute Management
+We process Personal Data to respond to enquiries, provide support, manage complaints, investigate disputes, assess claims, address platform issues, respond to payout or account challenges, and maintain service and communications records.
+Legal basis: performance of a contract; legitimate interests; legal obligation where applicable.
+6.9 Legal, Regulatory and Contractual Obligations
+We process Personal Data to comply with applicable laws, regulations, lawful requests, court orders, audit obligations, tax obligations, financial crime controls, recordkeeping requirements, regulatory inquiries and other legal or contractual obligations applicable to us.
+Legal basis: legal obligation.
+6.10 Communications, Updates and Service Notices
+We process Personal Data to send service-related communications, account notices, legal notices, operational alerts, security messages, compliance-related requests and other communications necessary for the administration or protection of the Services and our relationship with you.
+Legal basis: performance of a contract; legitimate interests; legal obligation where applicable.
+6.11 Marketing and Promotional Communications
+Where permitted by applicable law, we may process Personal Data to send you marketing communications, promotional content, programme updates, offers, invitations, campaigns or related communications. Where required by applicable law, we will do so on the basis of your consent.
+Legal basis: legitimate interests or consent, depending on the nature of the communication and the applicable jurisdiction.
+6.12 Phone-Based, SMS and Automated Outreach
+Where permitted by applicable law, we may use the telephone number or other communication details that you provide to us to contact you regarding service matters, account administration, security, support, operational matters, programme updates, marketing communications or related outreach, including through manual, automated or AI-assisted means. Where consent is required, we will rely on such consent and you may withdraw it at any time, without affecting the lawfulness of processing carried out prior to withdrawal.
+Legal basis: performance of a contract; legitimate interests; consent, where required.
+6.13 Analytics, Service Improvement and Business Intelligence
+We process Personal Data to analyse how the Services are used, improve functionality, measure engagement, optimise operational performance, develop products, improve service design, refine internal controls, strengthen platform security and support internal reporting or decision-making.
+Legal basis: legitimate interests.
+7. KYC, AML, Sanctions and Identity Verification
+FundedNext may process Personal Data for identity verification, anti-money laundering, counter-terrorist financing, sanctions compliance, anti-fraud, payout validation, account security and related compliance purposes.
+Such processing may include:
+review of identity documents and supporting records;
+selfie checks, facial comparison or liveness detection, where used by verification providers;
+source-of-funds and source-of-wealth checks;
+politically exposed person screening;
+sanctions, watchlist and adverse media screening;
+transaction and payout monitoring;
+fraud detection and prevention;
+enhanced due diligence;
+re-verification where required by law, policy, operational risk criteria or account review triggers; and
+review of inconsistencies, anomalies or discrepancies in submitted information.
+FundedNext may use specialised third-party verification, screening and compliance providers for these purposes, subject to appropriate contractual safeguards and applicable law.
+Where verification, screening or compliance checks indicate elevated risk, inconsistencies, potential fraud, potential sanctions issues, identity concerns, linked-account concerns, payment concerns or other risk indicators, FundedNext may request additional information, suspend processing of a request, apply restrictions, decline a payout, restrict access, suspend or terminate an account, or take other action consistent with our contractual and legal rights.
+8. Platform Activity, Monitoring and Integrity Controls
+As part of providing and protecting the Services, FundedNext may collect and process information relating to your use of the platform environment, challenge structure, technical access channels, programme activity and simulated trading behaviour, including:
+account access, session and device logs;
+order and transaction history;
+open and closed positions;
+profit and loss data and drawdown metrics;
+account balances, performance data and evaluation milestones;
+timing patterns, behavioural indicators and usage signals;
+device, network, location and access correlations;
+linked-account indicators and relationship markers;
+suspicious, irregular, prohibited or escalated activity signals; and
+other data reasonably necessary to operate, secure, assess and protect the Services.
+We process such data for purposes including:
+administration and operation of the Services;
+review of compliance with programme rules, payout rules and contractual terms;
+detection and investigation of abusive, unfair, manipulative or prohibited conduct;
+prevention of fraud, reward abuse, technical abuse, payment abuse and policy circumvention;
+management of operational, contractual, commercial and reputational risk;
+investigation of suspicious or escalated activity;
+support of internal controls, audits, reviews and dispute processes;
+and enforcement of our Terms and Conditions, programme rules and related policies.
+For the avoidance of doubt, FundedNext may analyse account activity, behavioural patterns, technical signals, device associations and related data to detect direct or indirect attempts to misuse the Services, circumvent our rules, exploit the platform environment unfairly, obtain benefits improperly or interfere with the lawful and intended operation of the Services.
+9. Automated Processing, Profiling and Significant Decisions
+FundedNext may use automated systems, rule-based models, behavioural monitoring tools, scoring tools, pattern-recognition methods, linkage analysis, fraud detection systems, suspicious activity indicators, payment risk tools and profiling techniques for purposes including account security, fraud detection, chargeback prevention, suspicious activity identification, payout review, prohibited practice detection, operational risk assessment, compliance and platform integrity.
+Such processing may include profiling based on technical, behavioural, transactional, usage, verification, payout, account-linkage or payment-related signals.
+Where such processing leads, contributes or may lead to account review, account restriction, delayed processing, additional verification requests, rejection of a payout request, withholding of a reward, suspension, limitation or termination of an account, internal escalation, fraud investigation or other action affecting the user, FundedNext may rely on automated systems together with human review, or on human review informed by automated outputs, as permitted by applicable law and our contractual framework. Where applicable data protection law grants you rights in relation to decisions based solely on automated processing that produce legal or similarly significant effects, FundedNext will implement such safeguards as are required by law, which may include review procedures and, where applicable, the opportunity to request human intervention.
+Nothing in this Notice shall be interpreted as limiting FundedNext's right to implement reasonable and proportionate automated or semi-automated controls designed to protect the Services, prevent fraud, preserve evidence, safeguard operational integrity, manage payment or security risks, or enforce contractual restrictions and platform rules.
+10. Disclosure of Personal Data
+FundedNext may disclose Personal Data to third parties where such disclosure is necessary or appropriate for the provision of the Services, compliance with legal or regulatory obligations, fraud prevention, account verification, payment administration, platform security, customer support, internal administration, legal enforcement, dispute management or the protection of FundedNext's legitimate interests.
+10.1 Affiliates and Group Entities
+FundedNext may disclose Personal Data to its affiliates, related entities and intra-group functions where necessary for operations, customer support, compliance, fraud prevention, technology, payment administration, finance, legal review, internal reporting, business administration, security, investigations, dispute handling or enforcement.
+10.2 Service Providers and Processors
+FundedNext may disclose Personal Data to third-party service providers and data processors engaged to support the operation, delivery, security or administration of the Services, including providers of
+website hosting, cloud infrastructure and data storage;
+platform technology, dashboards and account administration systems;
+payment processing, banking support and transaction verification;
+identity verification, liveness detection, KYC, AML, sanctions screening and anti-fraud services;
+security, monitoring, logging, device intelligence and access-control services;
+support, communications, customer relationship and ticketing systems;
+analytics, service improvement, campaign measurement and business intelligence tools;
+payout administration, financial reconciliation and dispute management support;
+and professional, operational, technical and administrative support services.
+FundedNext requires such providers to process Personal Data only on documented instructions, subject to appropriate confidentiality, security and data protection obligations.
+10.3 Financial Institutions, Payment Partners and Chargeback Ecosystem Participants
+FundedNext may disclose Personal Data to banks, payment service providers, card processors, acquirers, gateway providers, e-wallet providers, transaction screening providers, payout partners, fraud prevention partners, dispute management providers, chargeback management providers and other participants in the payment, refund, withdrawal or verification chain where necessary to process payments, withdrawals, refunds, chargebacks, payment disputes, source-of-funds reviews, transaction verification, financial investigations or payment-risk controls.
+10.4 Compliance, Regulatory and Law Enforcement Disclosures
+FundedNext may disclose Personal Data to regulators, supervisory bodies, governmental authorities, tax authorities, financial intelligence units, law enforcement authorities, courts, tribunals, arbitral bodies or other competent authorities where such disclosure is required, permitted or reasonably considered necessary under applicable law, regulation, audit requirement, court order, lawful request, investigation or compliance obligation.
+10.5 Legal and Professional Advisers
+FundedNext may disclose Personal Data to legal advisers, auditors, accountants, consultants, insurers, investigators, forensic specialists, dispute support providers and other professional advisers where reasonably necessary for legal advice, dispute handling, audit, regulatory compliance, fraud response, evidence preservation, debt recovery, insurance matters, internal review or the protection and enforcement of FundedNext's rights and interests.
+10.6 Corporate Transactions and Business Reorganisation
+FundedNext may disclose Personal Data in connection with any proposed or actual merger, acquisition, financing, restructuring, insolvency process, sale of assets, transfer of business, internal reorganisation, strategic transaction or similar corporate event, provided that appropriate safeguards are implemented where required by applicable law.
+10.7 Protection of Rights, Security and Platform Integrity
+FundedNext may disclose Personal Data where reasonably necessary to detect, investigate, prevent or respond to fraud, payment abuse, chargeback abuse, prohibited trading practices, reward abuse, technical abuse, security incidents, linked-account misuse, account compromise, unlawful conduct, reputational attacks, breaches of contract or threats to the security, lawful operation or integrity of the Services.
+Such disclosures may be made, where lawful and proportionate, to appropriate service providers, payment partners, financial institutions, fraud prevention networks, investigators, advisers, counterparties or authorities for those purposes.
+11. International Transfers
+Due to the international nature of our operations, infrastructure, support structure and service provider relationships, Personal Data may be transferred to and processed in jurisdictions outside your country of residence, including jurisdictions that may not provide the same level of data protection as your home jurisdiction.
+Where required by applicable law, FundedNext will implement appropriate safeguards for such transfers, which may include:
+Standard Contractual Clauses approved by the European Commission;
+the UK International Data Transfer Agreement or relevant addendum;
+transfers to jurisdictions recognised as providing an adequate level of protection;
+intra-group contractual protections; or
+other lawful transfer mechanisms recognised under applicable law.
+By using the Services, you acknowledge that your Personal Data may be processed in multiple jurisdictions for the purposes described in this Notice, subject always to applicable law and appropriate safeguards where required.
+12. Data Retention
+FundedNext retains Personal Data only for as long as necessary for the purposes for which it was collected and processed, including for contractual, operational, security, legal, regulatory, accounting, tax, compliance, anti-fraud, chargeback-management, risk-management, audit, dispute-resolution, enforcement and recordkeeping purposes.
+Retention periods may vary depending on the nature of the Personal Data, the purpose of processing, the type of Services involved, the risk profile of the account or transaction, the outcome of any verification or investigation, and the legal, regulatory or evidential obligations applicable to FundedNext.
+In determining the appropriate retention period, FundedNext may take into account, without limitation:
+the duration of the customer or business relationship;
+applicable legal, regulatory, tax, accounting and recordkeeping requirements;
+anti-money laundering, sanctions, anti-fraud, payment-risk and financial crime obligations;
+the need to maintain records relating to identity verification, account activity, simulated trading activity, performance data, reward assessment, payments, withdrawals, refunds, chargebacks, complaints, disputes, escalations, investigations and enforcement actions;
+the need to preserve evidence and protect FundedNext's contractual, legal and commercial position;
+the sensitivity, nature and volume of the Personal Data concerned;
+whether retention remains necessary for security, business continuity, audit, review, analytics or evidential purposes; and
+whether the relevant data is associated with suspicious activity, a chargeback event, a compliance review, a dispute, an investigation, a legal hold, an account restriction or another elevated-risk scenario.
+In particular, FundedNext may retain certain categories of Personal Data for longer periods where such retention is required or justified in connection with verification records, transaction and payout records, payment records, device and access records, anti-fraud files, compliance files, complaint files, internal investigation materials, communications records, chargeback response files, legal proceedings, arbitration or regulatory matters.
+Where Personal Data is no longer required, FundedNext will delete, anonymise or securely dispose of such data in accordance with applicable law and internal retention procedures. Where deletion is not immediately possible or appropriate, FundedNext may restrict processing and retain the relevant data only for lawful and legitimate purposes.
+13. Security Measures
+FundedNext implements appropriate technical and organisational measures designed to protect Personal Data against accidental or unlawful destruction, loss, alteration, unauthorised disclosure, unauthorised access, misuse, exfiltration, compromise or other unlawful forms of processing.
+Such measures are designed having regard to the nature, scope, context and purposes of the processing, as well as the likelihood and severity of the risks to individuals' rights and freedoms and the operational and security risks relevant to the Services.
+Depending on the nature of the data and processing activity, such measures may include:
+role-based access controls and access segregation based on business need;
+authentication controls, credential management procedures and, where appropriate, multi-factor authentication;
+encryption in transit and, where appropriate, at rest; monitoring, logging, audit trails and access traceability measures;
+network, infrastructure, application and endpoint security controls;
+tools and procedures designed to detect, contain and respond to suspicious activity, unauthorised access attempts, technical abuse or security incidents;
+staff confidentiality obligations and training on data protection, information security and fraud awareness;
+due diligence and oversight measures relating to relevant vendors and service providers;
+backup, recovery, resilience and business continuity measures, where appropriate; and
+internal governance, escalation and review procedures relevant to the protection of Personal Data.
+Access to Personal Data is limited to personnel, contractors, service providers and authorised recipients who require such access for legitimate business, operational, compliance, finance, legal, support, security or enforcement purposes and who are subject to appropriate confidentiality and security obligations.
+Although FundedNext takes reasonable and proportionate measures to protect Personal Data, no method of transmission, storage or processing can be guaranteed to be entirely secure. You remain responsible for maintaining the confidentiality of your credentials and for taking appropriate measures to protect your devices, passwords, authentication methods and account access.
+13.1 Personal Data Breaches and Security Incidents
+In the event of a personal data breach, security incident or other unauthorised access to, loss, destruction, alteration or disclosure of Personal Data, FundedNext shall take such steps as it considers appropriate to identify, contain, assess, investigate and remediate the incident in accordance with its internal procedures, applicable law and regulatory requirements.
+Where required by applicable law, FundedNext shall notify the competent authority and, where applicable, affected individuals, within the timeframes and in the manner prescribed by law.
+FundedNext may take such additional measures as it reasonably considers necessary to mitigate the effects of the incident, prevent recurrence, preserve evidence, protect the Services and safeguard its legal and operational interests.
+14. Your Rights
+Depending on your jurisdiction and the law applicable to the relevant processing, you may have one or more of the following rights in relation to your Personal Data:
+the right of access;
+the right to rectification;
+the right to erasure;
+the right to restriction of processing;
+the right to data portability;
+the right to object to processing;
+the right to withdraw consent where processing is based on consent;
+the right to request review in relation to certain automated decisions, where applicable law so provides; and
+the right to lodge a complaint with a competent supervisory authority.
+These rights are not absolute and may be subject to legal, regulatory, contractual, evidential, fraud-prevention, security or other lawful limitations.
+FundedNext may request additional information to verify your identity before acting on a request.
+FundedNext may also decline, defer, limit or condition a response where permitted or required by applicable law, including where the request is manifestly unfounded, excessive, inconsistent with legal obligations, prejudicial to an investigation, or incompatible with our duty to preserve evidence, prevent fraud, protect other persons or enforce contractual rights.
+Requests may be submitted to: [email protected]
+15. Cookies and Similar Technologies
+FundedNext may use cookies, pixels, tags, SDKs, local storage objects and similar technologies to operate the website and Services, improve functionality, analyse usage, measure performance, support security, identify suspicious activity, maintain session integrity and, where permitted, support marketing, attribution or advertising activities.
+Some such technologies are strictly necessary for the operation, security and administration of the Services. Others may be used only with your consent where required by applicable law.
+Further information may be set out in our Cookie Notice or made available through our cookie management interface.
+16. Children's Data
+The Services are intended only for individuals who are at least 18 years old, or the legal age required under applicable law, whichever is higher.
+FundedNext does not knowingly offer the Services to minors and does not knowingly collect Personal Data from minors in connection with the Services.
+If we become aware that Personal Data has been collected from a minor in breach of applicable law or our policies, we may take appropriate steps to delete such data, suspend the relevant account and restrict or terminate access to the Services.
+17. External Links and Third-Party Services
+Our website, communications or Services may contain links to third-party websites, applications, payment channels, verification tools, social media pages or other services that are not operated by FundedNext.
+FundedNext is not responsible for the privacy practices, security posture, availability, content or policies of third parties. You should review the privacy notices and terms of any third-party service that you access or use.
+18. No Reliance on Platform Behaviour or Privacy Notice as an Operational Representation
+This Notice is intended to describe FundedNext's general approach to the processing of Personal Data. It does not constitute a representation that any specific technical, operational, behavioural, analytical, monitoring or anti-fraud control is exhaustive, static, continuously disclosed in full detail, or incapable of modification.
+Nothing in this Notice shall be construed as granting any person the right to rely on the presence, absence, sequencing, visibility or apparent behaviour of any platform feature, detection logic, review pathway, monitoring layer, verification flow, payout control or risk signal as a basis for inferring how FundedNext detects, evaluates or responds to conduct, account activity, payment behaviour, suspicious patterns or potential rule violations.
+FundedNext reserves the right to implement, modify, supplement, calibrate, withhold from public disclosure or discontinue reasonable monitoring, verification, anti-fraud, chargeback-prevention, compliance, behavioural analysis, linkage detection, profiling, escalation or enforcement controls, to the extent lawful and consistent with its contractual and operational framework.
+19. MCP Connector Policy
+This policy explains what data the FundedNext MCP connector (the “Connector”) accesses, how it is used and shared, and how long it is kept. It is provided by FundedNext (“we”, “us”). For privacy questions, contact [email protected] .
+This Addendum complements the FundedNext Privacy Policy and applies specifically to your use of the Connector. In the event of any conflict, the more specific terms set out in this Addendum shall prevail for matters relating to the Connector; for all other matters, the FundedNext Privacy Policy continues to apply.
+Read-only, and only your own data. The Connector retrieves information; it never trades, moves money, or changes your account. It can only ever access the data belonging to the account you sign in with.
+19.1 What the Connector is
+The Connector lets you ask an AI assistant about your own FundedNext account data. You authorize it through a standard OAuth 2.0 sign-in; your password is never shared with the assistant, and you can revoke access at any time from your FundedNext account or the AI assistant.
+19.2 Data we access (only your own)
+When you ask a question, the Connector reads only the data belonging to your authenticated account, which may include:
+Profile basics (name, email, country) and account/login identifiers
+Trading accounts, their plans, rules, status and balances
+Your trade history and trading performance (CFD and Futures)
+Payout, withdrawal and wallet history
+KYC/verification status and decision reasons (status only — not the contents of your uploaded documents)
+Certificates, competition participation/results, coupons and notifications
+The Connector enforces strict per-customer scoping: it is not possible to retrieve another customer's data through it.
+19.3 What we do not access
+We do not read your AI conversation history, chat memory, or files you have shared with the assistant. We do not collect data beyond what is needed to answer your request. We do not sell your personal data. We do not use your data to train AI models.
+19.4 Legal basis for processing
+Data accessed and processed through the Connector relies on the same legal basis described in Section 6 of the FundedNext Privacy Policy, applied according to the purpose of the specific request, principally performance of a contract (to provide the Services you have requested) and legitimate interests, and legal obligation where applicable. No separate or additional legal basis applies solely because access occurs through the Connector.
+19.5 How your data is used and shared
+To answer your question: The data the Connector retrieves is returned to the AI assistant (for example Anthropic's Claude) so it can compose a response to you. By using the Connector you understand that the requested account data is shared with that assistant for this purpose, governed by the assistant provider's own privacy terms.
+Knowledge base: Rule and policy answers use the FundedNext knowledge base. Building its search index uses Amazon Web Services (AWS Bedrock) as a sub-processor; only non-personal FAQ/policy text is processed for this — not your account data.
+Sub-processors: We rely on Amazon Web Services (hosting and embeddings) and the AI assistant provider you connect (e.g. Anthropic). We may also disclose data where required by law. An up-to-date list of sub-processors is available upon request.
+International transfers: Because our sub-processors and infrastructure operate internationally, data accessed through the Connector may be transferred to and processed in jurisdictions outside your country of residence. Such transfers are subject to the same safeguards described in Section 11 of the FundedNext Privacy Policy.
+19.6 Data retention
+The Connector is stateless per request — it reads your live account data on demand and does not create a separate copy.
+Operational logs are retained for up to twelve (12) months, then deleted or anonymized. These logs contain: authentication/connection events. The type of request made (which data category or endpoint was accessed) timestamps, and success/failure status. They do not contain the natural-language question you asked the assistant or the content of its response. Any feedback you separately choose to submit through the assistant is retained on the same twelve (12) months basis.
+Your underlying FundedNext account data is retained per the FundedNext Privacy Policy.
+19.7 Your rights
+You may revoke the Connector’s access at any time. For access, correction, deletion, or other data-rights requests, contact [email protected] . Your full set of rights, including the right to lodge a complaint with the competent supervisory authority, is described in Section 14 of the FundedNext Privacy Policy and applies equally to data processed through the Connector.
+19.8 Security
+Access is authenticated via OAuth 2.0; all traffic is encrypted in transit (HTTPS). Per-customer authorization scoping prevents any cross-account access.
+19.9 Children's data
+The Connector is subject to the same age restrictions set out in Section 16 of the FundedNext Privacy Policy: the Services, including the Connector, are intended only for individuals who meet the minimum age requirement described there.
+20. Changes to this Notice
+FundedNext may amend, update, replace or supplement this Notice from time to time to reflect changes in legal requirements, regulatory expectations, operational practices, fraud patterns, business structure, service provider arrangements, product features or the Services generally.
+Any updated version will be made available through the website, client area or other appropriate channels.
+Where required by applicable law, we will take reasonable steps to notify you of material changes.
+Unless otherwise required by law, the updated Notice shall become effective from the date stated in the revised version.
+21. Contact Details
+If you have any questions, concerns or requests regarding this Notice or the processing of your Personal Data, you may contact us at:
+Email: [email protected]
+EU/EEA/UK Addendum
+This Addendum applies to individuals in the European Economic Area and the United Kingdom to the extent that the GDPR or UK GDPR applies to the processing of their Personal Data.
+1. Lawful Bases
+Where the GDPR or UK GDPR applies, FundedNext processes Personal Data on one or more of the following lawful bases:
+performance of a contract;
+compliance with a legal obligation;
+legitimate interests pursued by FundedNext or a third party, except where overridden by the interests or fundamental rights and freedoms of the data subject;
+consent, where required;
+establishment, exercise or defence of legal claims; and
+any other lawful basis recognised by applicable law.
+2. Special Categories of Data
+Where FundedNext processes special categories of Personal Data, it shall do so only where a condition under Article 9 GDPR or the UK GDPR equivalent applies, including explicit consent where required, compliance with legal obligations, substantial public interest where applicable, fraud prevention, or the establishment, exercise or defence of legal claims.
+3. International Transfers
+Where Personal Data is transferred outside the EEA or the UK, FundedNext will apply an appropriate transfer mechanism in accordance with Chapter V GDPR and the UK GDPR framework, as applicable.
+4. Complaints
+If you are located in the EEA or the UK, you may have the right to lodge a complaint with the data protection authority in your country or with another competent supervisory authority.
+5. Legitimate Interests
+Where we rely on legitimate interests, such interests may include, without limitation, the lawful and secure operation of the Services, fraud prevention, account and payment security, platform integrity, payout control, contractual enforcement, dispute management, legal defence, operational analytics, business administration and the protection of our systems, users, staff and commercial interests.
+Product and Offerings
+FundedNext CFDs
+FundedNext Futures
+FNmarkets
+General Rules
+Help Centre (FAQ)
+Partners
+Resources
+How Prop Trading Works
+Calculator
+Blog
+CFDs Glossary
+Trading Platforms
+Economic Calendar
+Symbols
+Market Overview
+Company
+Company
+News & Media
+Achievements & Awards
+Events
+Contact
+Public Announcements
+Privacy & Policy
+Terms of Service
+CFDs Challenge Terms
+Futures Challenge Terms
+Instant Account Terms
+Privacy Policy
+Cookie Policy
+AML Policy
+Risk Disclosure
+Partners T&C
+The services offered under the FundedNext brand are provided by GrowthNext – F.Z.E. (Reg. No. 28831) , with its registered address at Office No. 7, AI Robotics Hub, C1 Building, Ajman Free Zone (AFZ), Ajman, UAE, which is responsible for user onboarding, the administration of the services and the operation of the website fundednext.com. FundedNext™ is a trademark and brand name owned by GrowthNext – F.Z.E. Certain operational, technical, administrative and payment-related activities are performed by the following affiliated entities (together with GrowthNext – F.Z.E., the "FundedNext Entities"):
+FundedNext Ltd (Reg. No. HY01023052), Bonovo Road, Fomboni, Island of Mohéli, Union of the Comoros, which operates the simulated trading environment.
+Third-Party Platforms: Trading platforms and related software are provided by independent third-party providers. The FundedNext Entities do not control these platforms and are not responsible for their availability or performance.
+FundedNext Limited , 8/F China Hong Kong Tower, 8-12 Hennessy Road, Wan Chai, Hong Kong , which processes payments.
+Incenteco Trading Ltd , 26 Pittaou Str., 3118 Agia Fyla, Limassol, Cyprus, and Abutor Investments Ltd , 16 Foti Kolakidi, 1st floor, 3031 Agia Zoni, Limassol, Cyprus, which facilitate payment-related operations.
+Simulated Trading Only: The FundedNext Entities provide access to simulated trading programs designed solely to evaluate trading proficiency and risk-management skills. All trading takes place in a simulated environment using virtual funds and does not involve real financial risk, real financial instruments or live market orders.
+No Brokerage or Client Funds: None of the FundedNext Entities acts as a broker, dealer, exchange or investment adviser, or accepts or manages client deposits. Rewards are based solely on performance in the simulated evaluation and do not represent profits from real trading.
+No Investment Advice: All content, tools and services are provided for evaluation purposes only and do not constitute investment advice, a solicitation, or an offer to buy or sell any financial product, cryptocurrency or derivative. Participants should consult independent financial, legal or tax advisers before trading outside this program.
+Hypothetical Performance Disclosure – CFTC Rule 4.41: These results are based on simulated or hypothetical performance results that have certain inherent limitations. Unlike the results shown in an actual performance record, these results do not represent actual trading. Also, because these trades have not actually been executed, these results may have under-or over-compensated for the impact, if any, of certain market factors, such as lack of liquidity. Simulated or hypothetical trading programs in general are also subject to the fact that they are designed with the benefit of hindsight. No representation is being made that any account will or is likely to achieve profits or losses similar to these being shown.
+Jurisdictional Restrictions: The FundedNext Entities do not offer services to residents of the following jurisdictions: North Korea (DPRK), Myanmar, Belarus, Iran, and Russia, including countries on the FATF high-risk and EU/UN sanctions lists, and Vietnam. Users are responsible for ensuring that their use of the services complies with the laws applicable to them. Services are available only to persons aged 18 or over.
+Risk Warning: Trading in forex, CFDs, futures, derivatives and digital assets involve substantial risk of loss. Past performance is not indicative of future results.
+Fees and Refunds: Fees are paid solely for access to the evaluation services. They are not deposits or investments and are not used for trading. Refunds are governed by our Terms & Conditions.
+In case of any conflict, our Terms & Conditions prevail.
+Not a Deposit | Not FDIC Insured | May Lose Value
+FundedNext-Copyright © 2026
+Trust and Security |
+Subscribe to newsletter

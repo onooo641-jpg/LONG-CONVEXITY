@@ -25,7 +25,7 @@ Getting Started
 Topstep Pricing and Payment Questions
 Topstep Pricing and Payment Questions
 Everything about costs, pricing, and payments in one place.
-Updated yesterday
+Updated in the last hour
 Table of contents
 Topstep accepts Visa, Mastercard, American Express, and Discover. You may also choose to pay via Google Wallet or Apple Pay. PayPal is not supported. Sales tax may be added at checkout where applicable.
 Trading Combine
@@ -155,17 +155,18 @@ I signed up but didn't see the discount. Did I miss it?
 No. The referral code applies to your first account purchase , not at sign-up. Enter it at checkout!
 Affiliate Codes
 What is Topstep’s affiliate program?
-Topstep partners with a select group of creators, some of whom have an affiliate code to share with their community. When someone purchases with Topstep for the first time using an affiliate code, they save 20%.
+Topstep partners with a select group of creators, some of whom have an affiliate code to share with their community. When an eligible trader purchases with Topstep using an affiliate code, they receive the affiliate code discount
 What is the affiliate code offer?
-20% off your first Topstep purchase (Trading Combine, Topstep Labs, or an Evaluation Challenge) when you check out with an affiliate’s code.
+The standard offer is 20% off an eligible Topstep purchase (Trading Combine, Topstep Labs, or an Evaluation Challenge) when you check out with an affiliate’s code. During select promotional periods, the affiliate code discount may be higher than 20%. The discount percentage and dates for any promotion will be shown at checkout or in the promotion details, and the discount in effect at the time of your purchase applies. When a promotional period ends, the discount returns to the standard 20%.
 Who is eligible to use an affiliate’s code?
-If you have never previously purchased with Topstep, you are eligible to use an affiliate code on your very first Topstep purchase for the purchase of a Topstep Trading Combine, Topstep Labs, or a Topstep Evaluation Challenge. Traders new to Topstep can only use one affiliate code, one time.
+You are eligible to use an affiliate code on an eligible purchase of a Topstep Trading Combine, Topstep Labs, or a Topstep Evaluation Challenge if you have never previously purchased with Topstep, or if your last purchase with Topstep was 6 or more months ago as of the day of purchase. You can only use one affiliate code, one time, ever.
 I want to purchase more than one account. Does the code apply to all purchases?
-No, affiliate codes are eligible to be used on your first purchase with Topstep. Affiliate codes do not apply to Resets, Back2Funded, market data add-ons, or anything you buy after that first purchase.
+No, affiliate codes are eligible to be used on one eligible purchase with Topstep. Affiliate codes do not apply to Resets, Back2Funded, market data add-ons, or anything you buy after that eligible purchase.
 Can I stack an affiliate code with another promo or code?
-No, you cannot stack with another promo code, discount, or a referral code. There is one exception: if you opt to add a Daily Loss Limit to a No Activation Fee Trading Combine during your first purchase with Topstep, you can still use an affiliate code to save 20% in addition to the Responsible Trading Advantage savings.
+No, you cannot stack with another promo code, discount, or a referral code. There is one exception: if you opt to add a DLL to a No Activation Fee Trading Combine during your eligible purchase with Topstep, you can still use an affiliate code to receive the affiliate code discount in addition to the Responsible Trading Advantage savings.
 How can I become a Topstep Affiliate?
-We’re launching a new affiliate program and rolling it out gradually, starting with a small group of Traders. Details are limited for now. We’ll share more information here as the program expands!
+We’re launching a new affiliate program and rolling it out gradually, starting with a small group of Traders. Details are limited for now. We’ll share more information here as the program expands.
+Have an Affiliate promo code? Learn more about our promo codes here !
 How to Add or Update Payment Details
 Go to your Billing Page on the Dashboard
 ​
@@ -200,8 +201,8 @@ What If You Want to Dispute a Charge?
 Contact Trader Support first. We’ll review your situation and let you know what’s available under our refund policies .
 Related Articles
 Am I Eligible to Trade with Topstep?
-Topstep® Refund Policies
 Topstep Payout Policy
+Getting Started with the Topstep Dashboard
 Topstep Labs
 Topstep Challenges
 Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃

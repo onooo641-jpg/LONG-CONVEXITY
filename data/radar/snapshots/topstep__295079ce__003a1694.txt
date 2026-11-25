@@ -25,7 +25,7 @@ Getting Started
 Topstep Labs
 Topstep Labs
 Real experiments. Limited drops. Built with the community.
-Updated today
+Updated in the last hour
 Table of contents
 The Basics
 Topstep is always innovating — and Topstep Labs is where that shows up first. You've probably had ideas a prop firm should try. An account structure that made sense. A feature that could help. A program you wished existed. Labs is where those ideas get tested for real.
@@ -752,9 +752,9 @@ Profit Split
 90/10
 90/10
 Daily Payout details:
-After your first Payout, you must be net positive since your last Payout.
-Payouts come from profits made during the trading day, locked in at 4:00 PM CT.
-5 p.m. CT is the cutoff for a Payout request. Any request after 5 p.m. CT applies to the next trade day.
+Request a Payout intraday as soon as you’re eligible, without waiting for the 4PM CT session lock.
+Withdraw everything above your $2,000 buffer, up to $1,500 per Payout.
+You can only request one Payout per trading day. For your next Payout, you’ll need a new net-positive trading day based on closed trades since your last Payout. Any unused profits above the $2,000 buffer remain available.
 Taking a daily Payout on an XFA sets your Maximum Loss Limit to $0, no matter where it was before. Your remaining balance becomes your effective loss floor.
 Daily Payout example (either version): You have $3,200 in profit. After the $2,000 buffer, $1,200 is available. You can request between $250 and $1,200 today.
 ⚠️ Any Payout resets your 5 Winning Days count. Want the 5 Winning Days path? Hold off on daily Payouts until you have 5 new winning days.
@@ -1271,9 +1271,9 @@ If there are no trades placed for 30 days, the account will close.
 Is there an expiration date?
 The account will expire and close after 90 days.
 Related Articles
+Topstep Program Overview
 What is the Maximum Loss Limit?
 Topstep Payout Policy
-Topstep Pricing and Payment Questions
 What is a Pro Account?
 Topstep Challenges
 Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃

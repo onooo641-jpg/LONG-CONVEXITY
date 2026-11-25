@@ -4,25 +4,25 @@ Baseline date: 2026-11-21
 
 ## Counts
 - S2 protocols: 9110
-- S1 reward pools: 1302
-- S3 Merkl live: 703
-- S4 governance hits: 58
-- pages fetched ok: 1783
-- pages total: 1830
-- candidates surviving to ranking: 85
+- S1 reward pools: 1297
+- S3 Merkl live: 701
+- S4 governance hits: 59
+- pages fetched ok: 1789
+- pages total: 1835
+- candidates surviving to ranking: 87
 - of which all five filter parts verified: 19
-- near-miss rows total: 11428
+- near-miss rows total: 12055
 
 ## Near-miss by stage/reason (top)
 
-- first_pass / below threshold: 10537
+- first_pass / below threshold: 11160
 - quality / DefiLlama outlier flag: 276
-- filter / F4 price exposure, needs hedge; F5 TVL < $1,000,000: 241
-- filter / F4 price exposure, needs hedge: 158
+- filter / F4 price exposure, needs hedge; F5 TVL < $1,000,000: 243
+- filter / F4 price exposure, needs hedge: 159
 - filter / F5 TVL < $1,000,000: 88
 - deep / F2 not long-lived: 41
 - deep / F1 reward not persistent: 35
-- quality / implausible APR > 1000%: 18
+- quality / implausible APR > 1000%: 19
 - filter / F3 single pool/venue on one chain (no reused setup); F4 price exposure: 11
 - gone / disappeared from source (last seen 2026-11-23): 6
 - gone / disappeared from source (last seen 2026-11-22): 5
@@ -35,40 +35,41 @@ Baseline date: 2026-11-21
 
 | venue | chain | what pays | $/day | capital | reward APR % | F1 | F2 | stable | new | Malaysia |
 |---|---|---|---|---|---|---|---|---|---|---|
-| curve-dex | Ethereum | BOLD-LUSD nan reward tokens ['0x6440f144b7e50D6a84 | 1,216 | 1,303,499 | 34.1 | fail | pass | True | True | unverified-onchain |
-| stake-dao-yield | Ethereum | BOLD-USDC Curve reward tokens ['0x6440f144b7e50D6a | 1,239 | 1,510,497 | 29.9 | pass | fail | True | True | unverified-onchain |
-| curve-dex | Ethereum | BOLD-USDC nan reward tokens ['0x6440f144b7e50D6a84 | 9,320 | 11,503,200 | 29.6 | pass | pass | True | False | unverified-onchain |
-| stake-dao-yield | Ethereum | PYUSD-CRVUSD Curve reward tokens ['0x5D29949F8e64f | 8,442 | 17,933,306 | 17.2 | pass | fail | True | False | unverified-onchain |
-| stake-dao-yield | Ethereum | EVAUSDT-EVAUSDC Curve reward tokens ['0xD533a94974 | 1,547 | 3,736,478 | 15.1 | pass | fail | True | False | unverified-onchain |
-| mento-v3 | Monad | AUSD-USDM nan reward tokens ['0xBC69212B8E4d445b23 | 832 | 2,088,321 | 14.5 | fail | fail | True | False | unverified-onchain |
-| convex-finance | Ethereum | FRXUSD-MSUSD nan reward tokens ['0xd533a949740bb33 | 823 | 3,030,987 | 9.9 | pass | unverified | True | False | unverified-onchain |
-| lista-lending | BSC | USDT nan reward tokens ['0xFceB31A79F71AC9CBDCF853 | 455 | 1,745,524 | 9.5 | fail | fail | True | False | unverified-onchain |
-| stake-dao-yield | Ethereum | FRXUSD-DUSD Curve reward tokens ['0xD533a949740bb3 | 282 | 1,082,934 | 9.5 | fail | fail | True | False | unverified-onchain |
-| morpho-blue | Ethereum | RE7COUSDC nan reward tokens ['0xa12cc123ba206d4031 | 2,084 | 8,104,760 | 9.4 | fail | fail | True | False | unverified-onchain |
-| morpho-blue | Base | RE7VENICEUSDC nan reward tokens ['0xacfe6019ed1a7d | 771 | 3,025,496 | 9.3 | fail | fail | True | False | unverified-onchain |
-| morpho-blue | Base | BITMXNBP nan reward tokens ['0xF197FFC28c23E0309B5 | 387 | 1,537,812 | 9.2 | fail | fail | True | True | unverified-onchain |
-| convex-finance | Ethereum | FRXUSD-DUSD nan reward tokens ['0xd533a949740bb330 | 664 | 2,640,543 | 9.2 | fail | unverified | True | False | unverified-onchain |
+| stake-dao-yield | Ethereum | PYUSD-CRVUSD Curve reward tokens ['0x5D29949F8e64f | 17,282 | 17,941,867 | 35.2 | pass | fail | True | False | unverified-onchain |
+| curve-dex | Ethereum | BOLD-LUSD nan reward tokens ['0x6440f144b7e50D6a84 | 1,216 | 1,303,308 | 34.1 | fail | pass | True | True | unverified-onchain |
+| stake-dao-yield | Ethereum | BOLD-USDC Curve reward tokens ['0x6440f144b7e50D6a | 1,230 | 1,532,531 | 29.3 | pass | fail | True | True | unverified-onchain |
+| curve-dex | Ethereum | BOLD-USDC nan reward tokens ['0x6440f144b7e50D6a84 | 9,310 | 11,728,545 | 29.0 | pass | pass | True | False | unverified-onchain |
+| stake-dao-yield | Ethereum | EVAUSDT-EVAUSDC Curve reward tokens ['0xD533a94974 | 1,529 | 3,743,882 | 14.9 | pass | fail | True | False | unverified-onchain |
+| mento-v3 | Monad | AUSD-USDM nan reward tokens ['0xBC69212B8E4d445b23 | 831 | 2,087,690 | 14.5 | fail | fail | True | False | unverified-onchain |
+| lista-lending | BSC | USDT nan reward tokens ['0xFceB31A79F71AC9CBDCF853 | 493 | 1,745,994 | 10.3 | fail | fail | True | False | unverified-onchain |
+| morpho-blue | Base | RE7VENICEUSDC nan reward tokens ['0xacfe6019ed1a7d | 777 | 2,904,649 | 9.8 | fail | fail | True | False | unverified-onchain |
+| convex-finance | Ethereum | FRXUSD-MSUSD nan reward tokens ['0xd533a949740bb33 | 810 | 3,030,973 | 9.7 | pass | unverified | True | False | unverified-onchain |
+| stake-dao-yield | Ethereum | FRXUSD-DUSD Curve reward tokens ['0xD533a949740bb3 | 274 | 1,082,580 | 9.3 | fail | fail | True | False | unverified-onchain |
+| morpho-blue | Ethereum | RE7COUSDC nan reward tokens ['0xa12cc123ba206d4031 | 2,028 | 8,008,832 | 9.2 | fail | fail | True | False | unverified-onchain |
+| morpho-blue | Base | BITMXNBP nan reward tokens ['0xF197FFC28c23E0309B5 | 382 | 1,520,926 | 9.2 | fail | fail | True | True | unverified-onchain |
+| convex-finance | Ethereum | FRXUSD-DUSD nan reward tokens ['0xd533a949740bb330 | 653 | 2,640,448 | 9.0 | fail | unverified | True | False | unverified-onchain |
 | flying-tulip-ftusd | Ethereum | SFTUSD staked ftUSD (FT rewards bought on open mar | 338 | 1,468,821 | 8.4 | fail | fail | True | False | unverified-onchain |
-| morpho-blue | Ethereum | FRAXELERATOR nan reward tokens ['0xcacd6fd266af91b | 231 | 1,033,624 | 8.1 | fail | fail | True | True | unverified-onchain |
-| upshift | Stellar | HOLD Supply USDC in Upshift sentUSDC | 13,507 | 61,625,324 | 8.0 | unverified | pass | True | False | unverified-onchain |
-| reflect-tranches | Solana | SYRUPUSDC Senior reward tokens ['AvZZF1YaZDziPY2RC | 362 | 1,782,866 | 7.4 | fail | fail | True | True | unverified-onchain |
-| sky-lending | Ethereum | USDS GROVE Farming Pool reward tokens ['0xb30FE1CF | 16,913 | 85,402,304 | 7.2 | fail | fail | True | False | unverified-onchain |
-| stake-dao-yield | Ethereum | FRXUSD-MSUSD Curve reward tokens ['0xD533a949740bb | 778 | 3,939,434 | 7.2 | pass | fail | True | False | unverified-onchain |
-| morpho-blue | Stable | GPYUSDSE nan reward tokens ['0x28f1f38a9f7db1f769a | 11,966 | 61,139,097 | 7.1 | fail | fail | True | False | unverified-onchain |
-| aave | Ethereum | LEND Supply RLUSD to the Aave V4 Sentora Hub | 14,495 | 75,581,058 | 7.0 | unverified | unverified | True | False | unverified-onchain |
-| bluefin-spot | Sui | USDSUI-USDC 0.01% reward tokens ['0x00000000000000 | 247 | 1,311,661 | 6.9 | pass | pass | True | False | unverified-onchain |
-| convex-finance | Ethereum | EVAUSDT-EVAUSDC nan reward tokens ['0xd533a949740b | 464 | 2,487,699 | 6.8 | pass | unverified | True | False | unverified-onchain |
-| curve-dex | Ethereum | PMUSD-CRVUSD nan reward tokens ['0xD533a949740bb33 | 265 | 1,451,113 | 6.7 | pass | pass | True | False | unverified-onchain |
-| curve-dex | Ethereum | PMUSD-FRXUSD nan reward tokens ['0xD533a949740bb33 | 240 | 1,355,126 | 6.5 | pass | pass | True | False | unverified-onchain |
+| morpho-blue | Ethereum | FRAXELERATOR nan reward tokens ['0xcacd6fd266af91b | 230 | 1,033,675 | 8.1 | fail | fail | True | True | unverified-onchain |
+| upshift | Stellar | HOLD Supply USDC in Upshift sentUSDC | 13,508 | 61,632,138 | 8.0 | unverified | pass | True | False | unverified-onchain |
+| sky-lending | Ethereum | USDS GROVE Farming Pool reward tokens ['0xb30FE1CF | 17,116 | 84,561,865 | 7.4 | fail | fail | True | False | unverified-onchain |
+| morpho-blue | Stable | GPYUSDSE nan reward tokens ['0x28f1f38a9f7db1f769a | 11,966 | 61,138,559 | 7.1 | fail | fail | True | False | unverified-onchain |
+| stake-dao-yield | Ethereum | FRXUSD-MSUSD Curve reward tokens ['0xD533a949740bb | 757 | 3,939,381 | 7.0 | pass | fail | True | False | unverified-onchain |
+| aave | Ethereum | LEND Supply RLUSD to the Aave V4 Sentora Hub | 14,437 | 75,281,156 | 7.0 | unverified | unverified | True | False | unverified-onchain |
+| bluefin-spot | Sui | USDSUI-USDC 0.01% reward tokens ['0x00000000000000 | 244 | 1,311,149 | 6.8 | pass | pass | True | False | unverified-onchain |
+| convex-finance | Ethereum | EVAUSDT-EVAUSDC nan reward tokens ['0xd533a949740b | 456 | 2,492,629 | 6.7 | pass | unverified | True | False | unverified-onchain |
+| curve-dex | Ethereum | PMUSD-CRVUSD nan reward tokens ['0xD533a949740bb33 | 257 | 1,444,999 | 6.5 | pass | pass | True | False | unverified-onchain |
+| curve-dex | Ethereum | PMUSD-FRXUSD nan reward tokens ['0xD533a949740bb33 | 233 | 1,349,460 | 6.3 | pass | pass | True | False | unverified-onchain |
+| lista-lending | Ethereum | USDC nan reward tokens ['coingecko:lista'] | 773 | 4,771,122 | 5.9 | pass | pass | True | False | unverified-onchain |
 
 ## Test queue (addendum 3: top 3 venues by 90-day mean of base + 0.9 x reward APR)
 
-- bluefin-spot (Sui) USDSUI-USDC 0.01% reward tokens ['0x000000000000000000000000: 14.86%/yr over 90 d, TVL $1,311,661, pool e3887972-24e6-45a9-8ef5-bcc22b6b5739
-- ember (Sui) USDC R25 Treasury reward tokens ['0xdba34672e30cb065b1f93e3a: 11.59%/yr over 90 d, TVL $8,168,022, pool 0ce62070-5201-47d1-84d5-f76d7e0cf5c0
-- dolomite (Ethereum) USD1 nan reward tokens ['0xdA5e1988097297dCdc1f90D4dFE7909e8: 7.82%/yr over 90 d, TVL $42,116,334, pool 86e18974-35ca-4948-9c82-694facf9d082
+- bluefin-spot (Sui) USDSUI-USDC 0.01% reward tokens ['0x000000000000000000000000: 14.87%/yr over 90 d, TVL $1,311,149, pool e3887972-24e6-45a9-8ef5-bcc22b6b5739
+- ember (Sui) USDC R25 Treasury reward tokens ['0xdba34672e30cb065b1f93e3a: 11.59%/yr over 90 d, TVL $8,475,222, pool 0ce62070-5201-47d1-84d5-f76d7e0cf5c0
+- dolomite (Ethereum) USD1 nan reward tokens ['0xdA5e1988097297dCdc1f90D4dFE7909e8: 7.82%/yr over 90 d, TVL $42,059,379, pool 86e18974-35ca-4948-9c82-694facf9d082
 
 ## Governance proposals mentioning incentives (last 45d, newest 25)
 
+- sdcrv-gov.eth: [active] Kill emissions for ETH+/ETH pool(0x7fb53345f1B21aB5d9510ADB38F7d3590BE6364b) on Ethereum mainnet. https://snapshot.org/#/sdcrv-gov.eth/proposal/0x6f429476abe8eb8b50b082cf22505e3f6be34b917b52d81d53f5d6b363e5be15
 - sdcrv-gov.eth: [active] Add a gauge for the following pool: MET/WETH on Mainnet (Metronome DAO) REPUSH https://snapshot.org/#/sdcrv-gov.eth/proposal/0xc96d84e7a7a9c2ea4ea8659b4ce7b509d3b271577734665dbd6f8aa2fca1e2fd
 - sdcrv-gov.eth: [active] Add a gauge for the following stableswapNG pool: bdUSD/MUSD on Mainnet (Bitcoin Dollar  REPUSH https://snapshot.org/#/sdcrv-gov.eth/proposal/0x531139312e5b87db43061bbcea2b66cb060b7dcae076a35289d26a475373725c
 - cowgrants.eth: [active] Grant Application: CoW BYOS Security Audit https://snapshot.org/#/cowgrants.eth/proposal/0x3357a1a4f928a337883e7fbbe01d2235067c3e7a2a2e4a2696bb9aaebfce9038
@@ -93,9 +94,8 @@ Baseline date: 2026-11-21
 - ideation.shapeshiftdao.eth: [closed] [Ideation] SCP-228: Accept and distribute the Zcash retroactive grant for ShapeShift's Zcash work https://snapshot.org/#/ideation.shapeshiftdao.eth/proposal/0x6b605a315c8e86b79e3ea804d79a668a01e9bc5ca6f76f814a0ff38f2b1813c8
 - sdcrv-gov.eth: [closed] Activate wOUSD/crvUSD LlamaLend V2 on Ethereum: set a 950,000 crvUSD borrow cap and 10% admin fee, an https://snapshot.org/#/sdcrv-gov.eth/proposal/0x24100d70b5b57ca622e53bbd8776c68f83888bf4c0a589dc51e831f5984543cf
 - sdcrv-gov.eth: [closed] Add a gauge for the following stableswap-NG pool: DOLA/SwanUSD https://snapshot.org/#/sdcrv-gov.eth/proposal/0x3baa878c1450739af8428dacbd0e6e5ccfadaf385e41be51cb2861caf988fe53
-- sdcrv-gov.eth: [closed] Activate wOUSD/crvUSD LlamaLend V2 on Ethereum: set a 950,000 crvUSD borrow cap and 10% admin fee, at https://snapshot.org/#/sdcrv-gov.eth/proposal/0xae6c512df20e105b73daa1af8d2dc6bb71759fe0441aad664b707e17d6a7c2fc
 
-## Prop-firm rule/price changes today: 221 pages
+## Prop-firm rule/price changes today: 322 pages
 
 - **Topstep** https://www.topstep.com/: $6,000 / Proof of Payout / $1,500
 - **Bulenox** https://bulenox.com/: The Ecosystem of Trader Development Get funded up to $750,000
@@ -163,8 +163,32 @@ Baseline date: 2026-11-21
 - **The Trading Pit Futures** https://support.thetradingpit.com/en/articles/882551-cfd-intraday-rules: Applies to 1-Phase $100,000 and $200,000 accounts only, in both phases. How it's calculated depends on when your account was created: / • Day 1: +$6,000, Day 2: −$2,000, Day 3: +$4,000, Day 4: +$2,000. / • Total Profit is $10,000. Your Best Day (Day 1) is 60% of it, so the rule isn't met yet.
 - **The Trading Pit Futures** https://support.thetradingpit.com/en/articles/835093-cfd-prime-swing-rewards: Accounts created after 5 July 2026 (CFD 1-Phase $100K/$200K): the 50% Consistency Rule must also be met. For accounts created on or after 26
 - **The Trading Pit Futures** https://support.thetradingpit.com/en/articles/882552-cfd-intraday-rewards: • 1-Phase $100,000 and $200,000: at least 3 trading days, and the 50% Consistency Rule must be met. For accounts created on or after 26 Nove
+- **Topstep** https://www.topstep.com/: $5,583 / Proof of Payout / $7,500
+- **The5ers Futures** https://the5ers.com/futures/: Refunded on your 3rd payout / Refunded on your 3rd payout / Refunded on your 3rd payout
+- **MyFundedFutures** https://myfundedfutures.com/plans/builder: $3,600.00
+- **MyFundedFutures** https://myfundedfutures.com/plans/rapid: $1,799.10 / $736.00 / $1,806.30
+- **MyFundedFutures** https://myfundedfutures.com/plans/rapid-eod: $1,799.10 / $736.00 / $1,806.30
+- **MyFundedFutures** https://myfundedfutures.com/plans/pro: $4,102.67 / $4,719.50 / $936.80
+- **Blue Guardian** https://www.blueguardian.com/payouts: $613.82 / $1,746.00 / $1,746.00
+- **FundedNext Futures** https://fundednext.com/cookie-policy: Cookies are small files that are stored on your device and that help us collect information about your activities. In particular, cookies al / Most browsers automatically accept cookies by default. You can get more information about setting up cookies for the most common browsers he / These cookies allow you to browse the Website and use its functionalities. Through these cookies, we also ensure the security and administra
+- **E8 Markets** https://e8markets.com/e8-traders-stories: 6h ago $50,000 Perpetual +$104 / 6h ago $100,000 Classic Markets +$5,653 / 6h ago $50,000 Classic Markets +$376
+- **HyroTrader** https://hyrotrader.com/transparency/: $9,705,659 / $1,528 / $456,660
+- **DayTraders** https://daytraders.com/payouts: $1,150
+- **Traders Launch** https://traderslaunch.com/payout-rules: Payout Rules | Traders Launch
+- **DayTraders** https://daytraders.com/help/articles/17684739-eod-payouts: How to Request a Payout
+- **DayTraders** https://daytraders.com/help/articles/17684741-eod-consistency: EOD Payouts
+- **Topstep** https://help.topstep.com/en/articles/10406542-what-topstep-means-by-trade-responsibly: What is a Reset?
+- **Topstep** https://help.topstep.com/en/articles/14289835-topstep-pricing-and-payment-questions: No, affiliate codes are eligible to be used on one eligible purchase with Topstep. Affiliate codes do not apply to Resets, Back2Funded, mark / We’re launching a new affiliate program and rolling it out gradually, starting with a small group of Traders. Details are limited for now. W
+- **Topstep** https://help.topstep.com/en/articles/15520357-topstep-labs: Request a Payout intraday as soon as you’re eligible, without waiting for the 4PM CT session lock. / Withdraw everything above your $2,000 buffer, up to $1,500 per Payout. / You can only request one Payout per trading day. For your next Payout, you’ll need a new net-positive trading day based on closed trades sin
+- **Topstep** https://help.topstep.com/en/articles/10406542-what-is-responsible-trading: What is a Reset?
+- **MyFundedFutures** https://myfundedfutures.com/coupons: $4,102.67 / $4,719.50 / $936.80
+- **Blueberry Futures** http://help.blueberryfutures.com/en/articles/12923291-i-passed-what-happens-next: Rise Payouts: The Complete Setup Guide
+- **Blueberry Futures** http://help.blueberryfutures.com/en/articles/12942617-when-can-i-get-my-first-payout: How long does my payout take to arrive?
+- **FuturesElite** https://faq.futureselite.com/en/articles/17585756-using-cards: Consistency rules explained
+- **DayTraders** https://daytraders.com/help/articles/17704121-how-to-request-a-payout: Static Payouts
+- **DayTraders** https://daytraders.com/help/articles/18352323-holiday-calendar-2027: Static Payouts
 
-## Page changes today: 234
+## Page changes today: 342
 
 - Topstep (firm) https://www.topstep.com/: +223 / -185 lines
 - MyFundedFutures (firm) https://help.myfundedfutures.com/: +3 / -2 lines
@@ -210,10 +234,10 @@ Baseline date: 2026-11-21
 ## Non-prop leads (docs/PREREG_RADAR_NONPROP_20261124.md): new today 6
 
 ### Stablecoin depegs (1)
-- USDSM: Stable Mint USD at $0.9376, circulating $16,371,427 https://defillama.com/stablecoin/stable%20mint%20usd
+- USDSM: Stable Mint USD at $0.9409, circulating $15,974,332 https://defillama.com/stablecoin/stable%20mint%20usd
 
 ### Extreme funding (1)
-- BIGTIME: funding -4380%/yr, open interest $2,251,325 https://app.hyperliquid.xyz/trade/BIGTIME
+- BLUR: funding -189%/yr, open interest $2,143,792 https://app.hyperliquid.xyz/trade/BLUR
 
 ### Audit contest prizes (1)
 - Immunefi: page changed; largest amount in added text $500,000 https://immunefi.com/bug-bounty/
@@ -228,10 +252,11 @@ Baseline date: 2026-11-21
 ### Source health
 - N1 stablecoins: 459
 - N2 Hyperliquid perps: 235
-- N3 CoW payouts (21d): 604 transfers, COW price 0.09543697000000001, $662,142 to 53 recipients
+- N3 CoW payouts (21d): 647 transfers, COW price 0.096388914, $674,109 to 54 recipients
 - N5 forums answering: 22/23
 - N4 Cantina item keys: allowedSeverities,cantinaTriaged,company,createdAt,currencyCode,entryFee,id,instructions,joined,kind,kycRequired,name,status,timeframe,totalFindings,totalRewardPot,url
 - N4 statuses: {'cantina:complete': 144, 'sherlock:FINISHED': 30, 'cantina:live': 1, 'cantina:escalations': 1}
 - N4 contests listed: 30 Sherlock, 146 Cantina
-- N7 derivatives venues (CoinGecko): 100; BTC $58613.7583185
+- N7 derivatives venues (CoinGecko): 100; BTC $59215.381764
 - N10 wick paper (#389 S2c): 0 fills since 2026-12-01 (179 live perps checked)
+- N12 Korea listings (#395): baseline saved (489 markets); new listings logged from the next run
