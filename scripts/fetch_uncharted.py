@@ -701,6 +701,25 @@ def job_u391hkipo():
     save("uncharted_391_hkipo_html.json", out)
 
 
+def job_u389docs():
+    """#389 S2d: Hyperliquid docs pages on margining / open orders (text snippets around key words)."""
+    import html as _h
+    out = {}
+    for u in ("https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margining",
+              "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/order-types",
+              "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/contract-specifications",
+              "https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/rate-limits-and-user-limits",
+              "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees"):
+        st, raw = _html(u)
+        txt = re.sub(r"\s+", " ", _h.unescape(re.sub(r"<[^>]+>", " ", raw)))
+        hits = {}
+        for k in ("open order", "resting", "reserve", "initial margin", "minimum order", "order value", "1000", "insufficient"):
+            hits[k] = [txt[max(0, m.start() - 300): m.start() + 300] for m in re.finditer(re.escape(k), txt, re.I)][:4]
+        out[u] = {"status": st, "chars": len(txt), "hits": hits}
+        print(f"  {st} {len(txt)} chars {u}", flush=True)
+    save("uncharted_389_hldocs.json", out)
+
+
 def _safe(fn):
     def w():
         try:
@@ -717,4 +736,4 @@ def job_uprobe():
 
 
 JOBS = {"uprobe": job_uprobe, "u383vaults": _safe(job_u383vaults), "u384lst": _safe(job_u384lst), "u385hyperp": _safe(job_u385hyperp),
-        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth)}
+        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs)}
