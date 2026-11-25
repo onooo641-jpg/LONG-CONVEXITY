@@ -1,0 +1,113 @@
+=== u389binance
+  USDT perp symbols ever listed: 923
+  0/923 symbols, 410 rows, 3s
+  100/923 symbols, 81512 rows, 39s
+  200/923 symbols, 161003 rows, 65s
+  300/923 symbols, 240362 rows, 97s
+  400/923 symbols, 308767 rows, 120s
+  500/923 symbols, 394626 rows, 150s
+  600/923 symbols, 460612 rows, 176s
+  700/923 symbols, 534670 rows, 205s
+  800/923 symbols, 603302 rows, 230s
+  list fail data/futures/um/monthly/klines/哈基米USDT/1d/: 'ascii' codec can't encode characters in position 63-65: ordinal not in range(128)
+  list fail data/futures/um/monthly/klines/币安人生USDT/1d/: 'ascii' codec can't encode characters in position 63-66: ordinal not in range(128)
+  list fail data/futures/um/monthly/klines/我踏马来了USDT/1d/: 'ascii' codec can't encode characters in position 63-67: ordinal not in range(128)
+  list fail data/futures/um/monthly/klines/牛来USDT/1d/: 'ascii' codec can't encode characters in position 63-64: ordinal not in range(128)
+  list fail data/futures/um/monthly/klines/龙虾USDT/1d/: 'ascii' codec can't encode characters in position 63-64: ordinal not in range(128)
+  900/923 symbols, 676508 rows, 258s
+  wrote uncharted_389_binance_ohlc.parquet: 689444 rows
+=== u389docs
+  200 4600 chars https://hyperliquid.gitbook.io/hyperliquid-docs/trading/margining
+  200 5770 chars https://hyperliquid.gitbook.io/hyperliquid-docs/trading/order-types
+  200 4178 chars https://hyperliquid.gitbook.io/hyperliquid-docs/trading/contract-specifications
+  200 5025 chars https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/rate-limits-and-user-limits
+  200 10523 chars https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees
+  wrote uncharted_389_hldocs.json: 12777 bytes
+=== u384lst
+  DefiLlama part already fetched; pools only
+  khype: 4 pools [('hyperevm', 'kHYPE / WHYPE 0.01%', 3977475), ('elysium', 'kHYPE / WHYPE', 843013), ('hyperevm', 'kHYPE / WHYPE 0.01%', 772522), ('hyperevm', 'kHYPE / WHYPE 0.008%', 111074)]
+  sthype: 4 pools [('hyperevm', 'stHYPE / WHYPE 0.01%', 138212), ('hyperevm', 'stHYPE / WHYPE 0.05%', 10797), ('hyperevm', 'stHYPE / WHYPE', 2701), ('hyperevm', 'stHYPE / WHYPE', 94)]
+  behype: 4 pools [('hyperevm', 'beHYPE / WHYPE', 12147), ('hyperevm', 'beHYPE / WHYPE 0.01%', 6950), ('hyperevm', 'beHYPE / WHYPE 0.3%', 597), ('hyperevm', 'beHYPE / WHYPE 0.01%', 75)]
+  ezeth: 4 pools [('linea', 'ezETH / WETH', 225764), ('linea', 'ezETH / WETH', 105641), ('mode', 'ezETH / WETH 0.011%', 23142), ('base', 'ezETH / ETH', 18780)]
+  rseth: 4 pools [('eth', 'rsETH / ETH', 3547333), ('eth', 'rsETH / ETH 0.04%', 29399), ('base', 'wrsETH / WETH', 13249), ('scroll', 'wrsETH / WETH', 7931)]
+  weeth: 4 pools [('eth', 'weETH / ETH', 8478997), ('eth', 'weETH / WETH 0.05%', 7735960), ('eth', 'weETH / WETH', 6325819), ('eth', 'weETH / WETH 0.01%', 3494056)]
+  pufeth: 4 pools [('eth', 'pufETH / WETH 0.3%', 179446), ('eth', 'pufETH / WETH', 168392), ('scroll', 'PufETH / WETH', 2908), ('soneium', 'pufETH / WETH 0.05%', 687)]
+  susde: 4 pools [('eth', 'sUSDe / USDT 0.008%', 1260778), ('arbitrum', 'sUSDe / USDT', 976446), ('eth', 'sUSDe / USDe', 347908), ('eth', 'sUSDe / USDT', 198881)]
+  wrote uncharted_384_pools.json: 9920 bytes
+  wrote uncharted_384_ohlcv.parquet: 5406 rows
+=== u387eth
+  ethereum latest block 26492666
+  ethereum: 407 auctions
+    state 0/407
+    state 10/407
+    state 20/407
+    state 30/407
+    state 40/407
+    state 50/407
+    state 60/407
+    state 70/407
+    state 80/407
+    state 90/407
+    state 100/407
+    state 110/407
+    state 120/407
+    state 130/407
+    state 140/407
+  FAIL 429 https://eth.drpc.org
+  FAIL 403 https://rpc.flashbots.net
+    state 150/407
+    state 160/407
+    state 170/407
+    state 180/407
+    state 190/407
+    state 200/407
+    state 210/407
+    state 220/407
+    state 230/407
+    state 240/407
+    state 250/407
+    state 260/407
+    state 270/407
+    state 280/407
+    state 290/407
+    state 300/407
+    state 310/407
+    state 320/407
+    state 330/407
+    state 340/407
+    state 350/407
+    state 360/407
+  FAIL 429 https://eth.drpc.org
+  FAIL 403 https://rpc.flashbots.net
+    state 370/407
+    state 380/407
+    state 390/407
+  FAIL 429 https://eth.drpc.org
+  FAIL 403 https://rpc.flashbots.net
+    state 400/407
+  wrote uncharted_387_eth.json: 224217 bytes
+=== u387ccab
+  ethereum auctions from uncharted_387_eth.json (job u387eth): 407
+  graduated, ended, real currency, >= $10K: 16
+    base UMIA raised 6,112,005.0 USDC
+    base RNBW raised 330,578.4 USDC
+    arbitrum HUDL raised 63,467.4 USDC
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/tokens/0x01010101b5aae2243f56dd5661852ccd10873645/pools?page=1
+    arbitrum rIDOS raised 192.6 ETH
+    unichain LILUNI raised 4.5 ETH
+    unichain LILUNI raised 4.4 ETH
+    unichain AGS raised 12.2 ETH
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/unichain/tokens/0xf2dcf8290aad67afadde1685f984df763f09194e/pools?page=1
+    ethereum BALANCE raised 55.0 ETH
+    ethereum BFX raised 14.1 ETH
+    ethereum FOLD raised 532,424.9 USDC
+    ethereum BWLK raised 12.4 ETH
+    ethereum FOLD raised 523.9 ETH
+    ethereum rCAP raised 3,842,507.0 USDC
+    ethereum STRATO raised 803.9 ETH
+    ethereum wOCT raised 1,177.3 ETH
+    ethereum VAZT raised 19,388.5 ETH
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/eth/tokens/0x4b00c30ceba3f188407c6e6741cc5b43561f1f6e/pools?page=1
+  wrote uncharted_387_keep.json: 21842 bytes
+  wrote uncharted_387_llama.parquet: 966 rows
+  wrote uncharted_387_gt.parquet: 775 rows
