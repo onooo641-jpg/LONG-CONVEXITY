@@ -169,6 +169,7 @@ def main():
         cowamm()
     if (PUB / "uncharted_w3_lbp_pools.json").exists():
         lbp()
+    stage2_events()
 
 
 def cascade(cd, F, share=0.25, wick=0.15, hold=3, label="#397 U27 cascade-day reversal (Hyperliquid)", start=None):
@@ -335,6 +336,93 @@ def lbp():
         return
     print(t.sort_values("end").to_string(index=False, float_format=lambda x: f"{x:10.3f}"))
     print(f"  median 7-day return {t['ret7'].median():.1%}; STAGE 1 VERDICT: {'KILL' if t['ret7'].median() <= 0 else 'survives (kill-only)'}")
+
+
+def stage2_events():
+    """Stage 2 for #393-#395: events 2020-01..2023-05 priced on Binance USD-M perps (out-of-sample in time and venue)."""
+    print("\n#### Stage 2 (#393-#395): 2020-01..2023-05 events on Binance USD-M perps")
+    bp, kp = PUB / "uncharted_w3b_binance48.json", PUB / "uncharted_w3b_korea.parquet"
+    if not bp.exists() or not kp.exists():
+        print("  Stage 2 data not fetched yet (job uw3b)")
+        return
+    b = pd.read_parquet(PUB / "uncharted_389_binance_ohlc.parquet", columns=["sym", "t", "c"])
+    b["day"] = pd.to_datetime(b["t"], unit="s", utc=True).dt.normalize()
+    C = b.drop_duplicates(["sym", "day"]).pivot(index="day", columns="sym", values="c").sort_index()
+    first = b.groupby("sym")["day"].min()
+    bf = pd.read_parquet(PUB / "cryptotrend370_funding.parquet")
+    F = bf.pivot_table(index="date", columns="sym", values="rate", aggfunc="sum")
+    s0, s1 = pd.Timestamp("2020-01-01", tz="UTC"), pd.Timestamp("2023-05-31", tz="UTC")
+
+    def sym_of(tok):
+        tok = tok.upper().strip()
+        for cand in (f"{tok}USDT", f"1000{tok}USDT", f"1000000{tok}USDT"):
+            if cand in C.columns:
+                return cand
+        return None
+
+    def run(ev, H, min_age, max_delay):
+        rows = []
+        for _, e in ev.iterrows():
+            sym = sym_of(e["token"])
+            if sym is None or sym == "BTCUSDT":
+                continue
+            entry = None
+            for k in range(max_delay + 1):
+                d = e["day"] + pd.Timedelta(days=k)
+                if d in C.index and pd.notna(C.at[d, sym]):
+                    entry = d
+                    break
+            if entry is None or (min_age and first[sym] > entry - pd.Timedelta(days=min_age)):
+                continue
+            ex = entry + pd.Timedelta(days=H)
+            if ex not in C.index or pd.isna(C.at[ex, sym]):
+                continue
+            win = F.loc[entry + pd.Timedelta(days=1):ex]
+            fs = float(win[sym].sum()) if sym in win else 0.0
+            fb = float(win["BTCUSDT"].sum()) if "BTCUSDT" in win else 0.0
+            ret = -(C.at[ex, sym] / C.at[entry, sym] - 1) + (C.at[ex, "BTCUSDT"] / C.at[entry, "BTCUSDT"] - 1) + fs - fb - 4 * FEE
+            rows.append({"day": entry.date(), "coin": sym, "ret": ret})
+        return pd.DataFrame(rows).drop_duplicates(["day", "coin"]) if rows else pd.DataFrame()
+
+    def judge(t, label):
+        print(f"  {label}: events {len(t)}", end="")
+        if t.empty:
+            print(" -> STAGE 2: FAIL (no events)")
+            return
+        r = t["ret"]
+        ok = len(r) >= 15 and r.mean() >= 0.02 and tstat_(r) >= 2
+        by = t.groupby(pd.to_datetime(t["day"]).dt.year)["ret"].agg(["size", "mean"])
+        print(f"; mean {r.mean():.2%}, median {r.median():.2%}, t {tstat_(r):.2f}, win {(r > 0).mean():.0%}, worst {r.min():.1%} -> "
+              f"STAGE 2: {'PASS' if ok else 'FAIL'}")
+        print("     by year: " + "; ".join(f"{y} n {int(a['size'])} {a['mean']:+.2%}" for y, a in by.iterrows()))
+
+    a = pd.DataFrame(json.loads(bp.read_text())).drop_duplicates("code")
+    a["day"] = pd.to_datetime(a["releaseDate"].astype("int64"), unit="ms", utc=True).dt.normalize()
+    a = a[(a["day"] >= s0) & (a["day"] <= s1)]
+    print(f"  Binance category-48 announcements 2020-01..2023-05: {len(a)}")
+    ls = a[a["title"].str.match(r"^Binance Will List", case=False)]
+    ev = pd.DataFrame([{"day": r["day"], "token": t_} for _, r in ls.iterrows() for t_ in tickers_from(r["title"])])
+    judge(run(ev, 7, 7, 0) if len(ev) else pd.DataFrame(), "#393 Binance listings fade (H 7)")
+    ad = a[a["title"].str.contains("HODLer Airdrop|Launchpool|Megadrop", case=False)]
+    ev = pd.DataFrame([{"day": r["day"], "token": t_} for _, r in ad.iterrows() for t_ in tickers_from(r["title"])])
+    judge(run(ev, 14, 0, 5) if len(ev) else pd.DataFrame(), "#394 airdrop-programme listings short (H 14)")
+    k = pd.read_parquet(kp)
+    k["day"] = pd.to_datetime(k["first_day"], utc=True).dt.normalize()
+    k = k.sort_values("day").drop_duplicates("coin")
+    print(f"  Korean KRW markets (complete fetch): {len(k)} (Upbit {int((k.venue == 'upbit').sum())}, Bithumb {int((k.venue == 'bithumb').sum())})")
+    k2 = k[(k["day"] >= s0) & (k["day"] <= s1)]
+    judge(run(pd.DataFrame({"day": k2["day"], "token": k2["coin"]}), 7, 7, 0), "#395 Korean listings fade (H 7)")
+    cd, Ch, Fh, firsth = load_hl()
+    k3 = k[(k["day"] >= W_START) & (k["day"] <= pd.Timestamp("2026-10-24", tz="UTC"))]
+    t = event_short(pd.DataFrame({"day": k3["day"], "token": k3["coin"], "label": k3["venue"]}), 7, Ch, Fh, firsth)
+    if len(t):
+        print(f"  context: #395 Stage 1 re-run on the complete Korean universe (Hyperliquid 2023-06..2026-10): events {len(t)}, "
+              f"mean {t['ret'].mean():.2%}, t {tstat_(t['ret']):.2f}")
+
+
+def tstat_(r):
+    r = pd.Series(r).dropna()
+    return r.mean() / (r.std(ddof=1) / np.sqrt(len(r))) if len(r) > 1 else np.nan
 
 
 if __name__ == "__main__":
