@@ -140,3 +140,9 @@ window is 2024-01..2026-10 (not 2023 as registered); 301 of 309 in-window IPOs h
 `uv run python -m scripts.uncharted_tags_20261125` → `docs/jx_runs/uncharted_tags_20261125.txt` (re-run identical). Upbit's notice API
 returns HTTP 403 to US servers. Binance "Delisting" category: 360 announcements (2023-04..2026-11), but only **2** spot token delistings
 involved a token with a Hyperliquid perp (XMR −6.5%, LOOM +3.5% hedged) — below the 15 needed. Futures-contract delistings: 3 events.
+- **S2d (desk), from Hyperliquid's docs** (fetched via Actions run 45617056553, `data/public/uncharted_389_hldocs.json`): open orders
+  1,000 per user (+1 per $5M volume, max 5,000) — enough for one bid per perp; address action limit = 1 request per $1 traded plus a
+  10,000 starting buffer — ~200 bid updates a day fit; maximum limit order value ≥ $5M — no constraint. **Not stated in the docs:**
+  whether resting orders reserve margin. Two cases until checked: no reservation → ~$18.8K/yr (prior-day sizing); reservation at
+  each coin's maximum leverage → ~$6.4K/yr. A one-minute test (place a small resting bid, see whether "available margin" drops)
+  settles it; that needs Jx's Hyperliquid account.
