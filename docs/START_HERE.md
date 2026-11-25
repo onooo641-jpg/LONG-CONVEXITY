@@ -126,9 +126,16 @@ The older Topstep Standard figures (NOTES_JX, `scripts/jx_capital.py`: median �
 earlier trade set and the Standard path; LS1 supersedes them for comparisons.
 
 ### Running costs per account (what you pay while it runs)
+Two different costs are easy to mix up: (1) **the firm's own fee** for the evaluation (Topstep charges $49 a month for its Combine; Lucid
+charges once per attempt) — every trader pays it, bot or not, and it is in every backtest figure; (2) **bot access** — what it costs to let
+the bot send orders: TopstepX API $14.50/month (with code `topstep`, $29 list) for Topstep; for Lucid, Tradovate does not let prop accounts
+use its API, so the bot needs a third-party bridge, **CrossTrade Pro, $49/month for unlimited accounts** (price from CrossTrade's own page as
+read 2026-11-20; recheck before paying; NOTES_JX "How the bot can reach Lucid and MFFU"). Bot-access costs are **not** in the backtest figures.
+Ways to run Lucid without the $49: manual entry from alerts ($0; backtest $48,761, section 4d); a NinjaTrader strategy on the friend's PC ($0
+monthly router, biggest rewrite); TradingView alerts + a webhook router (~$65–120/month, Pine-vs-Python parity untested).
 | Product | Evaluation | Reset | Monthly | Other | Source |
 |---|---|---|---|---|---|
-| Topstep 50K | $49/month | $49 | — | activation $149 per funded account; TopstepX API $14.50/month (code `topstep`), shared by all Topstep accounts | V (`PROP_VERIFY_20261122.md` §4, `GO_LIVE.md`) |
+| Topstep 50K | $49/month (Topstep's Combine fee, not a bot plan) | $49 | — | activation $149 per funded account; TopstepX API $14.50/month (code `topstep`), shared by all Topstep accounts | V (`PROP_VERIFY_20261122.md` §4, `GO_LIVE.md`) |
 | LucidDaily 50K EOD | $85.40 promo / $122 list, one-time | assumed = purchase price | none | CrossTrade Pro $49/month if bot-run (unlimited accounts) | price J, rules V, reset assumed |
 | TTP Futures Prime 50K | $99 | $79 | — | order route unverified | V |
 | DayTraders EOD 50K | $105 | $105 (assumed) | — | $5 activation; bots, copiers and a VPS allowed | V |
