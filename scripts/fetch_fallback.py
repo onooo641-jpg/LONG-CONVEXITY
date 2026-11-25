@@ -2601,9 +2601,79 @@ def job_uxfiller():
 
 JOBS = {"uxfiller": job_uxfiller, "uxsmoke": job_uxsmoke, "uxorders": job_uxorders, "uxprobe": job_uxprobe, "uniswapx371c": job_uniswapx371c, "uniswapx371b": job_uniswapx371b, "uniswapx371": job_uniswapx371, "cryptotrend370": job_cryptotrend370, "cow367": job_cow367, "cowauction": job_cowauction, "radarprobe": job_radarprobe, "cow365": job_cow365, "cow361b": job_cow361b, "jlp363": job_jlp363, "cow361": job_cow361, "across362": job_across362, "sweep4d": job_sweep4d, "sweep4c": job_sweep4c, "sweep4b": job_sweep4b, "sweep4": job_sweep4, "addprice": job_addprice, "fred9": job_fred9, "batch10b": job_batch10b, "repair8": job_repair8, "sweep3": job_sweep3, "merkl": job_merkl, "smallcap": job_smallcap, "batch10": job_batch10, "batch9": job_batch9, "vxn": job_vxn, "batch8s": job_batch8s, "batch8p": job_batch8p, "hype4h": job_hype4h, "batch7": job_batch7, "votium": job_votium, "batch6": job_batch6, "sp_data": job_sp_data, "sp_probe": job_sp_probe, "sky_funding": job_sky_funding, "staking_apr": job_staking_apr, "pendle_pilot": job_pendle_pilot, "wrappers": job_wrappers, "lendborrow_now": job_lendborrow_now, "batch5": job_batch5, "batch4": job_batch4, "hedged": job_hedged, "lendborrow_corr": job_lendborrow_corr, "pendle_probe": job_pendle_probe, "stable_hlp": job_stable_hlp, "probe": job_probe, "funding": job_funding, "lendborrow": job_lendborrow}
 
+
+def job_ubase418():
+    """#418: receipts (swapper transfers + gas) for sampled fills of newcomer UniswapX fillers on Base, + hourly prices."""
+    import numpy as _np
+    d = pd.read_parquet(OUT / "uniswapx371_base.parquet")
+    meta = json.loads((OUT / "uniswapx371_meta.json").read_text())
+    ts = _np.array(meta["base"]["ts_sample"], dtype=float)
+    d["t"] = _np.interp(d["block"].to_numpy(float), ts[:, 0], ts[:, 1])
+    t0w = pd.Timestamp("2025-11-01", tz="UTC").timestamp()
+    first = d.groupby("filler")["t"].min()
+    d["m"] = pd.to_datetime(d["t"], unit="s").dt.to_period("M")
+    newc = []
+    for f, ft in first.items():
+        if ft < t0w + 14 * 86400:
+            continue
+        m0 = pd.Timestamp(ft, unit="s").to_period("M")
+        top5 = d[d["m"] == m0]["filler"].value_counts().head(5).index
+        if f in top5:
+            continue
+        newc.append(f)
+    print(f"  newcomer fillers: {len(newc)} of {len(first)}", flush=True)
+    rows, gas, t_start = [], [], time.time()
+    for f in newc:
+        ft = first[f]
+        g = d[(d["filler"] == f) & (d["t"] <= ft + 90 * 86400)].drop_duplicates("tx").sort_values("t")
+        samp = g.iloc[_np.linspace(0, len(g) - 1, min(300, len(g))).astype(int)] if len(g) else g
+        for r in samp.itertuples():
+            if time.time() - t_start > 12000:
+                break
+            try:
+                rc = _srpc("base", "eth_getTransactionReceipt", [r.tx])
+            except Exception:  # noqa: BLE001
+                continue
+            if not rc:
+                continue
+            gas.append({"tx": r.tx, "filler": f, "t": r.t, "gas_wei": int(rc.get("gasUsed", "0x0"), 16) * int(rc.get("effectiveGasPrice", "0x0"), 16)
+                        + int(rc.get("l1Fee", "0x0") or "0x0", 16)})
+            sw = "0x" + "0" * 24 + r.swapper[2:].lower()
+            for lg in rc.get("logs") or []:
+                tp = lg.get("topics") or []
+                if len(tp) == 3 and tp[0] == T_TRANSFER and sw in (tp[1].lower(), tp[2].lower()):
+                    rows.append({"tx": r.tx, "t": r.t, "filler": f, "token": lg["address"].lower(),
+                                 "dir": "in" if tp[1].lower() == sw else "out", "amount_raw": str(int(lg["data"], 16))})
+        print(f"  {f[:10]}: {len(samp)} sampled of {len(g)} fills in 90 days; transfers so far {len(rows)}, {time.time() - t_start:.0f}s", flush=True)
+    tr = pd.DataFrame(rows)
+    toks = sorted(tr["token"].unique()) if len(tr) else []
+    dec = {}
+    for tkn in toks:
+        try:
+            dec[tkn] = int(_srpc("base", "eth_call", [{"to": tkn, "data": "0x313ce567"}, "latest"]), 16)
+        except Exception:  # noqa: BLE001
+            dec[tkn] = None
+    main = tr["token"].value_counts().head(60).index.tolist() if len(tr) else []
+    hourly = {}
+    for tkn in main + ["0x4200000000000000000000000000000000000006"]:
+        pts, t = [], int(pd.Timestamp("2025-11-10", tz="UTC").timestamp())
+        while t < time.time():
+            j = get(f"https://coins.llama.fi/chart/base:{tkn}?start={t}&span=500&period=1h", tries=2)
+            pts += (((j or {}).get("coins") or {}).get(f"base:{tkn}") or {}).get("prices") or []
+            t += 500 * 3600
+            time.sleep(0.25)
+        hourly[tkn] = pts
+    counts = d[d["filler"].isin(newc)].groupby("filler").apply(lambda g: int((g["t"] <= first[g.name] + 90 * 86400).sum())).to_dict()
+    pd.DataFrame(rows).to_parquet(OUT / "solvers_base418_transfers.parquet", index=False)
+    pd.DataFrame(gas).to_parquet(OUT / "solvers_base418_gas.parquet", index=False)
+    (OUT / "solvers_base418_meta.json").write_text(json.dumps({"newcomers": newc, "first": {f: float(first[f]) for f in newc},
+                                                               "fills_90d": counts, "decimals": dec, "hourly": hourly}))
+    print(f"  done: {len(rows)} transfers, {len(gas)} receipts", flush=True)
+
 from fetch_uncharted import JOBS as _UNCHARTED_JOBS  # noqa: E402  (#383-#387)
 
 JOBS.update(_UNCHARTED_JOBS)
+JOBS["ubase418"] = job_ubase418
 
 if __name__ == "__main__":
     import sys

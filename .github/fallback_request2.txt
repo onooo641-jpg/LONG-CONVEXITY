@@ -1,2 +1,2 @@
 # jobs for scripts/fetch_fallback.py via workflow fallback_fetch2.yml (one per line)
-uw3b
+ubase418

@@ -17,3 +17,15 @@ first fill in 2024, measured over its first 12 months; cohort B = first fill in 
 **PASS (each cohort must pass — that is the out-of-sample check):** ≥ 3 newcomers, median first-year net ≥ $15,000, and the market shows
 room (top-3 takers' share of margin < 90%). **KILL** if both cohorts' median first-year net < $5,000. Anything between = "inconclusive".
 **Commands.** `uv run python -m scripts.solvers_20261125` → `docs/jx_runs/solvers_20261125.txt` (re-run identical). Data job `udln`.
+
+# #418 UniswapX open fillers on Base (Priority reactor) — pre-registered 2026-11-25, before any per-fill income is computed
+Sibling of #371 (same protocol), different access: on Base anyone may fill (priority-gas competition, no approval). Data in the repo:
+`uniswapx371_base.parquet` (231,531 Fill events, 81 fillers, 2025-11-01..2026-10-31; ~27% of blocks missed by the scan — reported).
+**Newcomers.** Fillers whose first fill is ≥ 14 days after the window start (so incumbents are not mistaken for entrants) and who are not a
+top-5 filler by count in their first month. **Cohort A:** first fill 2025-11-15..2026-03-31; **cohort B:** first fill 2026-04-01..2026-07-31.
+Each newcomer measured over its first 90 days.
+**Income.** For each newcomer, up to 300 fills sampled evenly across its first 90 days: receipts give the swapper's token transfers (input
+paid, output received) and the gas the filler paid (gasUsed × effectiveGasPrice); USD from DefiLlama hourly prices. Net per fill = input USD
+− output USD − gas USD; scaled to all the filler's fills in the 90 days; annualised × 365/90; minus $3,000/yr infrastructure.
+**PASS (both cohorts — the out-of-sample check):** ≥ 3 newcomers each with ≥ 30 sampled fills, median annualised net ≥ $15,000.
+**KILL** if both cohorts' median < $5,000. Between = inconclusive. Data job `ubase418`; script `scripts/solvers_20261125.py` (part #418).
