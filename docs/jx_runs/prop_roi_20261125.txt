@@ -1,0 +1,12 @@
+ROI of approved prop products, friend's NQ trades 2016-01..2026-10 (same model as portfolio_my_20261123)
+
+Product                                        net  fees paid  withdrawn  ROI on fees   per yr  worst dip  return on cash/yr  accounts  payouts
+LucidDaily 50K EOD ($85.40 promo)        $  57,486 $   13,835 $   71,321        416% $  5,308 $   -3,758              141%       162       93
+TTP Futures Prime 50K ($99, reset $79)   $  49,057 $   14,865 $   63,922        330% $  4,530 $   -3,884              117%       175       50
+DayTraders EOD 50K ($105 + $5)           $  47,894 $   12,530 $   60,424        382% $  4,422 $   -3,265              135%       118       32
+Topstep 50K Consistency path             $  46,492 $   17,081 $   63,573        272% $  4,293 $   -3,520              122%       152       44
+Topstep 50K Standard path                $  44,359 $   17,081 $   61,440        260% $  4,096 $   -3,520              116%       152       44
+LucidFlex 50K DLL ON ($80.50)            $  40,545 $   15,178 $   55,723        267% $  3,744 $   -4,094               91%       162       40
+TradeDay 50K ($85 code)                  $  35,678 $   13,000 $   48,678        274% $  3,294 $   -4,820               68%       116       42
+
+4-firm portfolio (LucidDaily promo + TTP + DayTraders + Topstep Consistency, 1 account each): net $200,929, fees $58,311, ROI on fees 345%; per year $18,553; against the combined worst dip $12,248 (portfolio_my_20261123.txt) = 151%/yr on cash needed

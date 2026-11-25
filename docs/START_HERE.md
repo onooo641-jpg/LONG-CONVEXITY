@@ -70,6 +70,19 @@ worst dip no worse than 1.5× Topstep's (manual-entry products judged with a 3-m
 | 7 | TradeDay 50K ($85 code) | bot (no API: platform rewrite) | $35,678 | $3,294 | $14,035 | −$4,835 | `docs/RADAR_RESULTS_SUMMARY.md` |
 **All of them together:** `docs/PREREG_PORTFOLIO_MY_20261123.md` ($195K with 1 account each; $975K with 5 each, worst dip −$69K).
 
+**ROI** (`uv run python -m scripts.prop_roi_20261125`, ledger PR1). *ROI on fees* = net ÷ all fees paid 2016–26. *Return on cash* = net per
+year ÷ worst dip (the cash you must be able to lose).
+| Product | Fees paid 2016–26 | ROI on fees | Return on cash / yr |
+|---|---|---|---|
+| LucidDaily 50K EOD ($85.40) | $13,835 | 416% | 141% |
+| TTP Futures Prime 50K | $14,865 | 330% | 117% |
+| DayTraders EOD 50K | $12,530 | 382% | 135% |
+| Topstep 50K Consistency | $17,081 | 272% | 122% |
+| Topstep 50K Standard | $17,081 | 260% | 116% |
+| LucidFlex 50K DLL ON | $15,178 | 267% | 91% |
+| TradeDay 50K ($85) | $13,000 | 274% | 68% |
+| **4-firm portfolio** (LucidDaily promo + TTP + DayTraders + Topstep Consistency) | $58,311 | **345%** | **151%** ($18,553/yr on $12,248) |
+
 ### 4b. DISAPPROVED — firm does not accept Malaysian residents (their own restricted-country lists)
 | Firm | Best product and figure (would have qualified) | Source |
 |---|---|---|
