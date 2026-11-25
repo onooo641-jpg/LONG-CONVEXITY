@@ -42,3 +42,15 @@ Hyperliquid 0.045%, Lighter 0%, Aster 0.04%, Paradex 0.03%, dYdX 0.05%; funding 
 
 **Commands.** `uv run python -m scripts.five_high_20261125` → `docs/jx_runs/five_high_20261125.txt` (re-run once, identical). Thresholds,
 costs and universes above do not change after data are seen.
+
+---
+## Results
+
+### #407 New-listing wick bids — **KILL** (2026-11-25)
+`uv run python -m scripts.five_high_20261125` (part #407). Hyperliquid, days 2–30 after listing, X 15% (primary): 529 fills on 122 coins,
+mean +1.48% (median +0.40%), **t 2.47 < 3** → KILL; $3,493/yr; worst peak-to-trough −$3,993. Context only (not used): X 25% +6.06%, t 4.34,
+$3,922/yr; Binance X 15% +1.32%, t 3.24, $6,676/yr. Even the best context variant is ~$4–7K/yr: not high-potential.
+
+### #408 Market-neutral 1-day reversal — **KILL** (2026-11-25)
+Hyperliquid 2023-06..2026-10: gross reversal +0.070%/day but daily rebalancing costs 0.148%/day → net −0.076%/day, t −0.69, −42.8%/yr.
+Binance 2020–26 (context): gross +0.106%/day, net −0.077%/day, −55.8%/yr. The reversal exists but is smaller than taker costs.
