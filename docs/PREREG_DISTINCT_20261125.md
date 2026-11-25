@@ -60,3 +60,7 @@ CoinGecko price (`coingecko:id`), hourly. Tokens: weETH, sUSDe, pufETH, rsETH. E
 queue (7 days) at the NAV then; costs 0.10% + lost staking yield (3%/yr ETH tokens, 8%/yr sUSDe); one position per token; $15,000 pot
 (three positions). **Stage 1 (2024-01..2024-12):** KILL if < 4 events or < $3,000/yr. **Stage 2 (out-of-sample 2025-01..2026-10):** PASS if
 ≥ 4 events, ≥ $3,000/yr and ≥ 75% of events profitable. Data: job `unav`.
+
+### #414 result — **KILL** (2026-11-25) — `uv run python -m scripts.lottery_20261125` → `docs/jx_runs/lottery_20261125.txt` (re-run identical)
+Hyperliquid 2023-06..2026-10: 177 weeks, mean −0.16%/week (long leg +0.70%, short leg −0.75%, funding −0.05%, costs 0.05%), t −0.22,
+−28.6%/yr, worst drawdown −84.3%. Binance 2020–23 (context): −31.8%/yr. High-MAX coins did not underperform; the effect is absent in perps.

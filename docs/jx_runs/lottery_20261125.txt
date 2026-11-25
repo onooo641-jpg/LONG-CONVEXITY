@@ -1,0 +1,9 @@
+===== #414 short lottery coins (MAX effect), market-neutral weekly
+  Stage 1, Hyperliquid 2023-06..2026-10: weeks 177; mean weekly -0.16% (long leg +0.70%, short leg -0.75%, funding -0.05%, costs 0.05%); t -0.22; annualised -28.6%; worst drawdown -84.3%
+     by year: 2023 -57.4%; 2024 -43.1%; 2025 +67.4%; 2026 -21.8%
+  STAGE 1 VERDICT: KILL
+  Stage 2 (out-of-sample), Binance 2020-01..2023-05: weeks 143; mean weekly -0.19% (long leg +1.09%, short leg -1.14%, funding -0.08%, costs 0.07%); t -0.24; annualised -31.8%; worst drawdown -82.1%
+     by year: 2020 -8.2%; 2021 -68.5%; 2022 +10.7%; 2023 +8.7%
+  STAGE 2 VERDICT: not run (Stage 1 killed) — context
+  context, Binance 2023-06..2026-10: weeks 177; mean weekly -0.66% (long leg +0.53%, short leg -0.02%, funding -1.12%, costs 0.05%); t -0.60; annualised nan%; worst drawdown -138.0%
+     by year: 2023 -58.1%; 2024 +35.7%; 2025 -175.3%; 2026 -73.3%
