@@ -275,6 +275,18 @@ Ideas and reasons: `docs/IDEAS_UNCHARTED_20261125.md`. Tests: `docs/PREREG_UNCHA
 
 ---
 
+### 8b. Later the same day (2026-11-25): scale-ups and the hunt for more distinct families
+Counting variants of one mechanism as one idea. Files: `docs/PREREG_WICK_SCALE_20261125.md`, `docs/PREREG_FIVE_HIGH_20261125.md`,
+`docs/PREREG_DISTINCT_20261125.md`, `docs/PREREG_UNCHARTED_WAVE3_20261125.md`.
+
+| Family | Members | Out-of-sample | Status |
+|---|---|---|---|
+| **1. Buying forced selling** | #389 (HL), #403 (dYdX: +4.16%/fill, t 6.45, ~$16.5K/yr; ~$11.2K with guard G2), #410 deeper ladder, #397 cascade reversal, #406 spot | **passed twice** (Binance 2020–26; dYdX unseen) | forward paper N10 to 2027-01-26; margin check (Jx) |
+| 2. Shorting after listing hype | #395 Korean listings (2023–26: 96 events +8.1%, t 6.5), #394 airdrop listings, #393 | **failed** (2020–23: #395 t 0.91; #394 2 events; #393 none) | forward paper N12 |
+| 3. Pre-launch perp shorts | #385 | **failed** (Binance pre-market t 0.86) | watch N11 |
+| 4. New-venue house vaults | #383 | — (too few vaults) | parked |
+| Killed / invalid today | #402 hourly, #405 dislocations, #407 new-listing wicks, #408 reversal, #411 HIP-3, #412 Korean premium, #414 lottery shorts, #416 crowd flags; #409 and #413/#415 invalid or not testable | | |
+
 ## 9. Radar and monitoring (runs daily on GitHub, 02:41 UTC)
 | Watch | What it does | Output |
 |---|---|---|
