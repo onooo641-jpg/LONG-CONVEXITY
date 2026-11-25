@@ -1,0 +1,6 @@
+=== uw3b
+  binance catalog 48 back to 2020: 2050 items
+  wrote uncharted_w3b_binance48.json: 338645 bytes
+  upbit KRW markets: 301
+  bithumb KRW coins: 485
+  wrote uncharted_w3b_korea.parquet: 786 rows
