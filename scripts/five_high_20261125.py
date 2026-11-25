@@ -177,14 +177,158 @@ def part411():
         print(f"  STAGE 1 VERDICT: {'KILL' if kill else 'survives (kill-only)'}")
 
 
+def part405():
+    print("\n#### #405 oracle-dislocation buying (perp premium index <= -P)")
+    p = PUB / "fivehigh_bn_premium_trades.parquet"
+    if not p.exists():
+        print("  data not fetched")
+        return
+    t = pd.read_parquet(p)
+    t = t[t["size"] > 0].copy()
+    t["ts"] = pd.to_datetime(t["t"], unit="s", utc=True)
+    t = t[(t["ts"] >= "2022-01-01") & (t["ts"] < "2026-11-01")]
+    yrs = (pd.Timestamp("2026-11-01", tz="UTC") - pd.Timestamp("2022-01-01", tz="UTC")).days / 365
+    s1 = False
+    for P_ in (0.01, 0.005, 0.02):
+        g = t[t["P"] == P_].copy()
+        if g.empty:
+            continue
+        g["pnl"] = g["size"] * np.minimum(1.0, POT / g.groupby("t")["size"].transform("sum")) * g["ret"]
+        r = g["ret"]
+        by = g.groupby(g["ts"].dt.year).agg(n=("ret", "size"), mean=("ret", "mean"), pnl=("pnl", "sum"))
+        print(f"  Binance P {P_:.1%}{' (primary)' if P_ == 0.01 else ''}: trades {len(g)}, mean {r.mean():.2%} (median {r.median():.2%}, t {tstat(r):.2f}, "
+              f"win {(r > 0).mean():.0%}), median hold {g['hours'].median():.0f} h; ${g['pnl'].sum() / yrs:,.0f}/yr")
+        print("     by year: " + "; ".join(f"{y} n {int(a.n)} {a['mean']:+.2%} ${a.pnl:,.0f}" for y, a in by.iterrows()))
+        if P_ == 0.01:
+            s1 = not (r.mean() < 0.003 or tstat(r) < 3 or g["pnl"].sum() / yrs < 3000)
+    print(f"  STAGE 1 VERDICT (Binance, P 1%): {'survives (kill-only)' if s1 else 'KILL'}")
+    hp, hc = PUB / "fivehigh_hl_premium.parquet", PUB / "wickscale_hl_1h.parquet"
+    if not (hp.exists() and hc.exists()):
+        return
+    pr = pd.read_parquet(hp)
+    pr["h"] = (pr["t"] // 3600000) * 3600
+    c = pd.read_parquet(hc)
+    c["h"] = c["t"] // 1000
+    c["usd"] = c["v"] * c["c"]
+    rows = []
+    for coin, g in pr.groupby("coin"):
+        cc = c[c["coin"] == coin].drop_duplicates("h").set_index("h")
+        if cc.empty:
+            continue
+        cc["day"] = cc.index // 86400
+        pvol = cc.groupby("day")["usd"].sum().shift()
+        g = g.drop_duplicates("h").set_index("h").sort_index().join(cc[["c", "day"]], how="inner")
+        hs, pm, cl, rt, dy = g.index.to_numpy(), g["premium"].to_numpy(), g["c"].to_numpy(), g["rate"].to_numpy(), g["day"].to_numpy()
+        i = 0
+        while i < len(g):
+            if pm[i] <= -0.01:
+                j = i + 1
+                while j < len(g) and j - i < 24 and pm[j] < -0.001:
+                    j += 1
+                j = min(j, len(g) - 1)
+                if j > i:
+                    size = min(CAP, VSHARE * float(pvol.get(dy[i], np.nan) or 0))
+                    rows.append({"coin": coin, "h": hs[i], "ret": cl[j] / cl[i] - 1 - 2 * TAKER - float(rt[i + 1:j + 1].sum()), "size": size})
+                i = j + 1
+            else:
+                i += 1
+    h = pd.DataFrame(rows)
+    if h.empty:
+        print("  Stage 2 Hyperliquid: no trades")
+        return
+    h = h[h["size"] > 0]
+    h["pnl"] = h["size"] * np.minimum(1.0, POT / h.groupby("h")["size"].transform("sum")) * h["ret"]
+    days = (pr["t"].max() - pr["t"].min()) / 86400000
+    ok = s1 and h["ret"].mean() >= 0.003 and tstat(h["ret"]) >= 3 and h["pnl"].sum() / days * 365 >= 3000
+    print(f"  Stage 2 Hyperliquid (last {days:.0f} days): trades {len(h)}, mean {h['ret'].mean():.2%}, t {tstat(h['ret']):.2f}, "
+          f"${h['pnl'].sum() / days * 365:,.0f}/yr -> STAGE 2: {'PASS' if ok else ('FAIL' if s1 else 'context only')}")
+
+
+def part406():
+    print("\n#### #406 Hyperliquid spot (HIP-1) wick bids")
+    p = PUB / "fivehigh_hl_spot_1d.parquet"
+    if not p.exists():
+        print("  data not fetched")
+        return
+    d = pd.read_parquet(p)
+    d["coin"] = d["label"]
+    d["day"] = pd.to_datetime(d["t"], unit="ms", utc=True).dt.normalize()
+    d["usdvol"] = d["v"] * d["c"]
+    d = d[d["label"].str.endswith("/USDC")].drop_duplicates(["coin", "day"]).sort_values(["coin", "day"])
+    print(f"  USDC spot pairs: {d['coin'].nunique()}, {d['day'].min().date()}..{d['day'].max().date()}")
+    f = wick_fills(d[["coin", "day", "o", "h", "l", "c", "usdvol"]], 0.15, 30, 100000, maker=0.0004, taker=0.0007)
+    _, m, t, py, _ = report_fills(f, "spot X 15%", max(d["day"].min(), pd.Timestamp("2023-06-01", tz="UTC")), pd.Timestamp("2026-10-31", tz="UTC"))
+    kill = pd.isna(m) or m < 0.005 or t < 3 or py < 3000
+    print(f"  STAGE 1 VERDICT: {'KILL' if kill else 'survives (kill-only)'}")
+
+
+def part409():
+    print("\n#### #409 cross-venue price gaps (hourly closes)")
+    p = PUB / "fivehigh_venues_1h.parquet"
+    if not p.exists():
+        print("  data not fetched")
+        return
+    d = pd.read_parquet(p)
+    d["h"] = (d["t"] // 3600) * 3600
+    W = d.drop_duplicates(["venue", "coin", "h"]).pivot_table(index=["coin", "h"], columns="venue", values="c")
+    fee = {"hyperliquid": 0.00045, "aster": 0.0004, "dydx": 0.0005, "lighter": 0.0, "paradex": 0.0003}
+    venues = [v for v in W.columns]
+    print(f"  venues with data: {venues}; coin-hours {len(W)}")
+    rows = []
+    for a_i in range(len(venues)):
+        for b_i in range(a_i + 1, len(venues)):
+            va, vb = venues[a_i], venues[b_i]
+            cost = 2 * (fee[va] + fee[vb])
+            for coin, g in W[[va, vb]].dropna().groupby(level=0):
+                g = g.droplevel(0).sort_index()
+                hs, A, B = g.index.to_numpy(), g[va].to_numpy(), g[vb].to_numpy()
+                gap = A / B - 1
+                i = 0
+                while i < len(g):
+                    if abs(gap[i]) >= 0.01:
+                        j = i + 1
+                        while j < len(g) and hs[j] - hs[i] < 24 * 3600 and abs(gap[j]) > 0.002:
+                            j += 1
+                        j = min(j, len(g) - 1)
+                        if j > i:
+                            if gap[i] > 0:   # A rich: short A, long B
+                                ret = -(A[j] / A[i] - 1) + (B[j] / B[i] - 1)
+                            else:
+                                ret = (A[j] / A[i] - 1) - (B[j] / B[i] - 1)
+                            rows.append({"pair": f"{va}-{vb}", "coin": coin, "h": hs[i], "gap": gap[i], "ret": ret - cost, "hours": (hs[j] - hs[i]) / 3600})
+                        i = j + 1
+                    else:
+                        i += 1
+    t = pd.DataFrame(rows)
+    if t.empty:
+        print("  no gaps >= 1%: KILL")
+        return
+    t = t.sort_values("h")
+    open_, kept = [], []
+    for _, x in t.iterrows():
+        open_ = [u for u in open_ if u > x["h"]]
+        if len(open_) < 5:
+            kept.append(x)
+            open_.append(x["h"] + x["hours"] * 3600)
+    k = pd.DataFrame(kept)
+    days = (d["t"].max() - d["t"].min()) / 86400
+    per_yr = (k["ret"] * 1500).sum() / days * 365
+    for pr_, g in t.groupby("pair"):
+        print(f"    {pr_}: gaps {len(g)}, mean net {g['ret'].mean():.2%}, t {tstat(g['ret']):.2f}, median |gap| {g['gap'].abs().median():.2%}")
+    print(f"  taken (<= 5 open pairs, $1,500 each): {len(k)}, mean net {k['ret'].mean():.2%}, t {tstat(k['ret']):.2f}, ${per_yr:,.0f}/yr "
+          f"(over {days:.0f} days); NOTE: hourly closes on thin venues can be stale (no trade in the hour) -> gaps overstated")
+    kill = k["ret"].mean() < 0.003 or tstat(k["ret"]) < 3 or per_yr < 3000
+    print(f"  STAGE 1 VERDICT: {'KILL' if kill else 'survives (kill-only)'}")
+
+
 def main():
     print("===== #405-#409 five high-ceiling liquidity ideas")
     part407()
     part408()
     part411()
-    for n, f in (("#405", "fivehigh_bn_premium_trades.parquet"), ("#406", "fivehigh_hl_spot_1d.parquet"), ("#409", "fivehigh_venues_1h.parquet")):
-        if not (PUB / f).exists():
-            print(f"\n{n}: data not fetched yet (Actions job ufive)")
+    part405()
+    part406()
+    part409()
 
 
 if __name__ == "__main__":

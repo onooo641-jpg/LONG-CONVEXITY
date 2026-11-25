@@ -1,0 +1,50 @@
+===== #405-#409 five high-ceiling liquidity ideas
+#### #407 new-listing wick bids (days 2-30 after a perp's first candle)
+  Hyperliquid X 15% (primary): fills 529 (122 coins); mean 1.48% (median 0.40%, t 2.47, win 53%); $3,493/yr; worst peak-to-trough $-3,993
+     by year: 2023 $367; 2024 $9,603; 2025 $1,010; 2026 $972
+  Hyperliquid X 25%: fills 155 (70 coins); mean 6.06% (median 4.89%, t 4.34, win 68%); $3,922/yr; worst peak-to-trough $-805
+     by year: 2023 $2,707; 2024 $6,083; 2025 $3,600; 2026 $1,030
+  STAGE 1 VERDICT (Hyperliquid): KILL
+  Binance X 15% (Stage 2): fills 2301 (615 coins); mean 1.32% (median 0.68%, t 3.24, win 54%); $6,676/yr; worst peak-to-trough $-5,288
+     by year: 2020 $6,460; 2021 $12,085; 2022 $540; 2023 $7,104; 2024 $10,001; 2025 $9,274; 2026 $187
+  STAGE 2 VERDICT (Binance): not run (Stage 1 killed) — shown as context
+  Binance X 25%: fills 566 (312 coins); mean 3.47% (median 2.01%, t 4.11, win 59%); $4,124/yr; worst peak-to-trough $-6,478
+     by year: 2020 $6,450; 2021 $9,101; 2022 $513; 2023 $2,471; 2024 $5,182; 2025 $4,984; 2026 $-497
+
+#### #408 market-neutral 1-day reversal (long day's losers, short day's winners, top 100 by volume)
+  Hyperliquid 2023-06..2026-10: days 1273; mean daily net -0.076% (gross 0.070%, turnover cost 0.148%); t -0.69; annualised -42.8%; worst drawdown -96.0%
+     by year: 2023 -15.8%; 2024 -50.9%; 2025 -65.7%; 2026 +0.8%
+  STAGE 1 VERDICT (Hyperliquid): KILL
+  Binance 2020-01..2026-10: days 2422; mean daily net -0.077% (gross 0.106%, turnover cost 0.149%); t -0.71; annualised -55.8%; worst drawdown -99.8%
+     by year: 2020 -57.1%; 2021 -45.0%; 2022 -32.9%; 2023 -59.9%; 2024 -53.8%; 2025 -66.2%; 2026 -55.4%
+  STAGE 2 VERDICT (Binance): not run (Stage 1 killed) — shown as context
+
+#### #411 wick bids on Hyperliquid HIP-3 markets
+  markets 271 on 9 dexes, 2025-10-13..2026-11-25
+  HIP-3 X 15%: fills 144 (62 coins); mean 1.19% (median 0.40%, t 1.39, win 54%); $1,811/yr; worst peak-to-trough $-1,214
+     by year: 2025 $1,580; 2026 $325
+  STAGE 1 VERDICT: KILL
+
+#### #405 oracle-dislocation buying (perp premium index <= -P)
+  Binance P 1.0% (primary): trades 7842, mean -0.56% (median -1.32%, t -3.21, win 39%), median hold 5 h; $-16,243/yr
+     by year: 2022 n 568 +2.93% $15,023; 2023 n 582 +0.23% $1,870; 2024 n 386 +0.49% $2,818; 2025 n 2277 -0.35% $-14,320; 2026 n 4029 -1.39% $-83,939
+  Binance P 0.5%: trades 22301, mean -0.12% (median -0.36%, t -1.70, win 43%), median hold 3 h; $-12,307/yr
+     by year: 2022 n 1826 +1.16% $17,551; 2023 n 1704 +0.41% $8,813; 2024 n 1130 +0.25% $4,205; 2025 n 6413 +0.01% $-1,176; 2026 n 11228 -0.53% $-88,907
+  Binance P 2.0%: trades 3287, mean -1.09% (median -2.68%, t -3.00, win 36%), median hold 7 h; $-12,016/yr
+     by year: 2022 n 257 +3.41% $9,521; 2023 n 250 +0.73% $2,754; 2024 n 172 +1.71% $4,418; 2025 n 961 -0.43% $-6,780; 2026 n 1647 -2.75% $-68,019
+  STAGE 1 VERDICT (Binance, P 1%): KILL
+  Stage 2 Hyperliquid (last 120 days): trades 93, mean -0.79%, t -0.44, $-2,820/yr -> STAGE 2: context only
+
+#### #406 Hyperliquid spot (HIP-1) wick bids
+  USDC spot pairs: 326, 2024-04-16..2026-11-25
+  spot X 15%: fills 7410 (259 coins); mean 7.54% (median -1.49%, t 4.38, win 37%); $27,524/yr; worst peak-to-trough $-4,994
+     by year: 2024 $59,340; 2025 $5,295; 2026 $5,420
+  STAGE 1 VERDICT: survives (kill-only)
+
+#### #409 cross-venue price gaps (hourly closes)
+  venues with data: ['aster', 'dydx', 'hyperliquid']; coin-hours 529509
+    aster-dydx: gaps 5263, mean net 1.03%, t 27.18, median |gap| 1.61%
+    aster-hyperliquid: gaps 14709, mean net 1.29%, t 74.31, median |gap| 1.30%
+    dydx-hyperliquid: gaps 5892, mean net 0.91%, t 25.27, median |gap| 1.63%
+  taken (<= 5 open pairs, $1,500 each): 1934, mean net 1.25%, t 32.88, $105,874/yr (over 125 days); NOTE: hourly closes on thin venues can be stale (no trade in the hour) -> gaps overstated
+  STAGE 1 VERDICT: survives (kill-only)

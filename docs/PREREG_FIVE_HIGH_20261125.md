@@ -68,3 +68,16 @@ venues with ≥ 1 year of data: KILL if mean net per fill < 1.0%, t < 3, or < $2
 **#411 Wick bids on Hyperliquid HIP-3 markets** (builder-deployed perps: stocks, commodities, indices). Data: every HIP-3 dex's markets
 (`perpDexs`, `meta` per dex) daily candles from listing. Rule: #389 unchanged (X 15%, previous-day volume sizing, $15,000 pot, first 30
 days excluded). Stage 1: KILL if mean net per fill < 0.5%, t < 3, or < $2,000/yr; fewer than 30 fills = not testable.
+
+### #405, #406, #409, #411 (2026-11-25) — `uv run python -m scripts.five_high_20261125` → `docs/jx_runs/five_high_20261125.txt` (re-run identical)
+Data: fetch run 45641135392.
+- **#405 oracle dislocations — KILL.** Binance P 1%: 7,842 trades, −0.56%/trade (t −3.21), −$16,243/yr (2022 +$15.0K, 2023 +$1.9K, 2024
+  +$2.8K, 2025 −$14.3K, 2026 −$83.9K). Hyperliquid last 120 days (context): −0.79%, −$2,820/yr.
+- **#406 Hyperliquid spot wick bids — survives (kill-only)**, but weakly shaped: 7,410 fills on 259 pairs, mean +7.54% (t 4.38), **median
+  −1.49%**, win 37%; $27,524/yr of which 2024 $59,340, 2025 $5,295, 2026 $5,420. Belongs to the wick family (one idea with #389).
+- **#409 cross-venue gaps — INVALID MEASUREMENT (not a survivor).** The rule printed +1.25%/pair, t 32.9, $105,874/yr, but 80.7% of dYdX
+  hours and 28.3% of Aster hours have an unchanged close (no trades): the "gaps" are stale prices. On the 10 most liquid Hyperliquid coins,
+  Aster–Hyperliquid gaps ≥ 1% occur in 0.03% of hours. Hourly closes cannot test this; only live order-book quotes can (forward only).
+- **#411 HIP-3 wick bids — KILL:** 144 fills, +1.19%, t 1.39, $1,811/yr.
+- Check on #403 (dYdX) against the same stale-price problem (context, `wick_scale` data): by previous-day volume, fills on markets with
+  $1–10M/day average +7.16% (t 11.39) and > $10M/day +5.48% (t 4.93) — the dYdX result is not a thin-market artefact.
