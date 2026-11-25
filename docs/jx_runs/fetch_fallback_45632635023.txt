@@ -1,0 +1,92 @@
+=== uwave3
+== wave3 binance (0s)
+  binance catalog 48: 1250 items
+  binance catalog 49: 2050 items
+  binance catalog 161: 400 items
+  wrote uncharted_w3_binance_ann.json: 621065 bytes
+== wave3 korea (63s)
+  upbit KRW markets: 301
+  upbit: time cap reached
+  bithumb KRW coins: 485
+  bithumb: time cap reached
+  wrote uncharted_w3_korea.parquet: 161 rows
+== wave3 cowamm (971s)
+  CoW AMM pools: 0 ([])
+  wrote uncharted_w3_cowamm.json: 2 bytes
+  wrote uncharted_w3_cowamm_charts.parquet: 0 rows
+  wrote uncharted_w3_cowamm_prices.parquet: 0 rows
+== wave3 lbp (972s)
+  LBP pools created: 791
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/pools/0xfcc2e066e4019d1e06aadfe48b15f95345d8875b
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/pools/0xb34243828e846fb7da8919a74802b2eafc90479c
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/pools/0x420e6883b999504f71fff7047642786457ad95ef
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/pools/0x791fef0fe92a522dc82d0ea800708b035495147d
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/pools/0x9d3e72c11ad7bf7132a141ff6f716491c6d01518
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/pools/0xefb36726e495bbd4ed7968609f0d71bb1114b75c
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/pools/0x563655ab3efba8bf8f635d03f1860328b1aa93d2
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/pools/0x85f2c2e8a01055d45a469c3f53b2ebb7b6540eb5
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/pools/0x338a003321b99a9c7de40dde60d248262923cead
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/pools/0x2655c2fce63132e4c510b249dc455012d9264b03
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/pools/0x01ad736dfe0c6f2f4a67b817f6b48d346b32c1de
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/pools/0x82917cc4097d38be313aa4a4d0989739e3447fc5
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/pools/0x312e86a5b7ee52858135a23898dd40d6344cf7fe
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/pools/0x410daa041d607372db596bc4079a91a35fd5e57f
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/pools/0xa1abb2ad3f821d37730d7fd61eeef30f999ab6b5
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/pools/0xa8c0141334e9dd7b14ed03df45810f8e79f9ed12
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/pools/0x3e651d82e44efb69ae8014d2f1a7b1e1a351499d
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/pools/0x1d4f9c12a1c2cccb502c8feff34e2d734ded4876
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/pools/0x97c2a5cfdb1c97f9cc76c9ddea029771b540e6ef
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/pools/0x68576b5553a4f4abb3f58786386bb077a43bbb35
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/pools/0xb234f8a5124bda518090c87ba1e3736abe8c2c35
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/pools/0x842ab31995c0d731d19ec1b00fe2b8619590ae88
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/pools/0xc15d887599356ecbe0ec1c178cd16397b271298f
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/pools/0xcf749c29543e6c20d3e87f751b4ff73a0850ba69
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/pools/0xa1a5e2483bb47f9f796bf10157cee8819d03ec45
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/pools/0x81a1601e9aeb659530f2785c716c8d3df8f412b3
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/pools/0x21eddb61b3dcdad3f06eaecbbbeca704401e0f57
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/pools/0xb92b87a5e6dfdf2bb8120cbf09922da9f96f32ad
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/pools/0x68332d09539d7f1807642b85974ed275466fee2a
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/pools/0x473b078ad1cf957b8d2b165b045b379cad8ae42a
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/pools/0x3204c4ce3d8b0a714a457510e9638cc93debd491
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/base/pools/0x1c292c3c6cb06b0d928d0707e6e2efc058f83e93
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/pools/0xb6aab961f9cc1900f1db13f4ea7496f915eea8ab
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/base/pools/0xa052e73aec2aedde792d4d6ef99de7484c9c88cf
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/base/pools/0xb4a3b0fe19ca8452123c0114a890958dfe3ae1a5
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/base/pools/0x14517c74151195e75fe477a4b66cac30e02d409b
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/base/pools/0x1bd88d5f5a7ec1c5f63a663a2ee9472f11a9fe98
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/base/pools/0x997a2aeec2f5bf12e214d3130a69bec3b3fee0cc
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/base/pools/0x86dfe781712c3dcb77399cd1cd2a9acf736320eb
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/base/pools/0xb6349ab7feccba386b2a74ed83dde12206f31da0
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/base/pools/0x6a75a577ab07945fb2816aef5e40f0f6d95336e7
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/base/pools/0x2ad32195858fde121251cff637ef4cf0851fbe00
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/pools/0x1f4999bbe800d67226a3abf73dd315ee787ff2ef
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/base/pools/0x743a84a1babe13ac131ee7a56604497af710266b
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/base/pools/0x812c1217ea39c5242ed1c6d1015ebed31261e28a
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/base/pools/0x31763605930307efa02acec3b219ded2d49803ee
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/base/pools/0x60f375f634b09d7a6e91389e3b96d6934ae4cbae
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/pools/0x2de69744170d5921c8312223d3b111ae615d5f27
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/pools/0x4160af6c9e1eb553d8da54e7f83a797e21ff7e7a
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/base/pools/0x9ce89efb4ebe2bc692003af804e7a33fbbe93043
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/eth/pools/0x2bbcbbfa1ce762b3794592d01f29bccc20dfda6e
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/eth/pools/0x0954601f4b1ffece41a411a66f4546620f121b8c
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/eth/pools/0xa1e9e74bbdbde4b8f9f624e71641f54e3b7f11bf
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/eth/pools/0x05b09d23e97323460418a6396f73b04843c7046f
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/eth/pools/0xdbb8ad38c990bd4ca2c88a6e6cfdf5045b0d4fb0
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/eth/pools/0x934bebd4b6f44ee8351160e4cf4fb4cfe2fc31e7
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/eth/pools/0xb37a8e9ceafa4a3636d6bcdb35ee1e94c20c78e0
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/eth/pools/0x0f22556c1035337391a5b0664190c6b832732728
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/eth/pools/0xd2b497653c7a5df46033b60e16f0fc645bf90bfa
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/arbitrum/pools/0x44f382dd3ebe7ba634bb3073b445887a7730b867
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/eth/pools/0x57ad37d016373fb78a21169b68504a23251694a1
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/eth/pools/0xc0dc2697582c30ac0bee8b618ad0f0087e8c2fb7
+  FAIL 404 https://api.geckoterminal.com/api/v2/networks/eth/pools/0x47ada86dedf2bae4c1912baf2bf20058bb6e37c3
+  LBP: time cap reached
+  wrote uncharted_w3_lbp_pools.json: 15448 bytes
+  wrote uncharted_w3_lbp_ohlcv.parquet: 72 rows
+  wrote uncharted_w3_lbp_prices.parquet: 198 rows
+== wave3 treasury (3095s)
+  FAIL 402 https://api.llama.fi/treasuries
+  defillama treasuries: 0
+  wrote uncharted_w3_treasuries.json: 2 bytes
+  wrote uncharted_w3_mcaps.parquet: 0 rows
+  wrote uncharted_w3_treasury_hist.json: 2 bytes
