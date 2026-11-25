@@ -1,0 +1,14 @@
+Payouts to the trader (after the firm's split), friend's NQ trades at $900 risk, rules as in portfolio_my_20261123.
+
+LucidDaily 50K EOD (promo $85.40)
+  whole history 2016-26: 93 payouts (8.6/yr); size median $765, 25-75% $729-$791, largest $1,185; total paid $71,321, fees $13,835
+  per start (118 monthly starts 2016-01..2025-10):
+    first payout: median $798 (25-75% $531-$1,086); fees paid by then: median $683
+    first 12 months: payouts median 7 (none in 26% of starts); paid median $5,679 (25-75% $0-$8,940); fees median $1,324
+
+Topstep 50K Consistency path
+  whole history 2016-26: 44 payouts (4.1/yr); size median $1,243, 25-75% $1,078-$1,849, largest $2,245; total paid $63,573, fees $17,081
+  per start (118 monthly starts 2016-01..2025-10):
+    first payout: median $1,002 (25-75% $900-$1,078); fees paid by then: median $735
+    first 12 months: payouts median 3 (none in 23% of starts); paid median $3,628 (25-75% $1,369-$8,654); fees median $1,754
+

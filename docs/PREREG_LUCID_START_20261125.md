@@ -21,3 +21,14 @@ first of each month 2016-01..2025-10 (118 starts). Per start: deepest cumulative
 | net after 12 months, median (share losing) | $3,971 (30%) | $3,239 (32%) | $1,704 (30%) |
 | starts 2023+: median deepest / days to payout | −$342 / 78 | −$488 / 78 | −$418 / 63 |
 Every start eventually went positive on all three.
+
+## Addendum 1 (2026-11-26, descriptive): what the payouts look like
+`uv run python -m scripts.payout_size_20261126` → `docs/jx_runs/payout_size_20261126.txt` (re-run identical). Payouts are what the trader
+receives after the 90/10 split.
+| | LucidDaily $85.40 | Topstep Consistency |
+|---|---|---|
+| payouts 2016–26 (per year) | 93 (8.6) | 44 (4.1) |
+| size per payout: median (25–75%), largest | $765 ($729–$791), $1,185 | $1,243 ($1,078–$1,849), $2,245 |
+| first payout: median (25–75%) | $798 ($531–$1,086) | $1,002 ($900–$1,078) |
+| first 12 months: payouts, median paid (25–75%), share with none | 7, $5,679 ($0–$8,940), 26% | 3, $3,628 ($1,369–$8,654), 23% |
+| first 12 months: fees, median | $1,324 | $1,754 |
