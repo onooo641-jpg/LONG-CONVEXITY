@@ -1,0 +1,44 @@
+===== #416 fade the crowd Binance flags
+  single-contract funding-frequency announcements: 39
+       day         sym  side  funding_day      ret
+2022-12-21     HNTUSDT  long      -0.0351  -0.0895
+2023-04-03     SXPUSDT  long      -0.0215  -0.3176
+2023-06-07     MTLUSDT  long      -0.0451  -0.0058
+2023-07-05   STORJUSDT  long      -0.0307  -0.1910
+2023-07-06     XVGUSDT  long      -0.0532  -0.1203
+2023-07-23    STMXUSDT  long      -0.1330   0.1219
+2023-08-07     YGGUSDT  long      -0.0567  -0.1431
+2023-08-13     LPTUSDT  long      -0.0910   0.1323
+2023-08-14     BLZUSDT  long      -0.0962   0.8675
+2023-08-28     AMBUSDT  long      -0.0378   0.0509
+2023-08-31   CYBERUSDT  long      -0.0251  -0.1943
+2023-09-02     NMRUSDT  long      -0.0609  -0.2210
+2023-09-05     FLMUSDT  long      -0.0167  -0.0981
+2023-09-05     BLZUSDT  long      -0.0408   0.1631
+2023-09-10    PERPUSDT  long      -0.0418  -0.2198
+2023-09-16     TRBUSDT  long      -0.0768   0.0757
+2023-09-16    HIFIUSDT  long      -0.0033  -0.5626
+2023-09-21     IMXUSDT  long      -0.0323  -0.1419
+2023-10-01     OGNUSDT  long      -0.0539  -0.1374
+2024-01-19     UMAUSDT  long      -0.0600   0.2162
+2024-10-16    REEFUSDT  long      -0.0228  -0.1969
+2025-01-25     BANUSDT  long      -0.0619  -0.2457
+2025-02-09     BNXUSDT  long      -0.0468   0.7173
+2025-02-12   LAYERUSDT  long      -0.1336  -0.2767
+2025-02-17     ARKUSDT  long      -0.0809   0.1074
+2025-02-24     BANUSDT  long      -0.0433  -0.0413
+2025-03-21    ORCAUSDT  long      -0.1584   0.0348
+2025-04-05     FUNUSDT  long      -0.1354   0.0123
+2025-04-09    VIDTUSDT  long      -0.1248  -0.6755
+2025-04-12    ORCAUSDT  long      -0.1008  -0.0653
+2025-04-16   AERGOUSDT  long      -0.0827   1.0364
+2025-04-19   VOXELUSDT  long      -0.1474   0.4852
+2025-04-21   MAGICUSDT  long      -0.0692  -0.0839
+2025-04-24  ALPACAUSDT  long      -0.0548  17.9652
+2025-04-29    SIGNUSDT  long      -0.0349  -0.1948
+2026-07-10 SKHYNIXUSDT short       0.0032   0.2193
+
+  Stage 1 (2023-24): events 21, mean -4.82%, t -0.80, win 33%
+  STAGE 1 VERDICT: KILL
+  Stage 2 (2025-01..2026-10, out-of-sample): events 15, mean 126.63%, t 1.06, win 53%
+  STAGE 2 VERDICT: not judged (Stage 1 did not survive) — context

@@ -70,3 +70,15 @@ The pre-registered NAV check failed: DefiLlama's contract-address price equals t
 pufETH and rsETH (so it is a market price, not the protocol rate), and sUSDe's address series has 8 hourly drops > 0.5% (limit 3). No
 events can be measured. A fair test needs archive-node calls to each protocol's rate function (weETH getRate, sUSDe convertToAssets,
 rsETH oracle) — the public archive RPCs tried earlier refused GitHub's servers. Not counted either way.
+
+## #416 Fade the crowd Binance flags — pre-registered 2026-11-25 before any result
+**Events.** Binance announcements (`uncharted_w3_binance_ann.json`, categories 48/49/161) whose title names exactly one USDT contract and
+contains "Funding Rate Settlement Frequency" or "Capped Funding Rate" (Binance shortens the funding interval when funding sits at its cap),
+excluding "Will Be Resumed" (the reversal back to normal). **Side.** The sign of that contract's Binance funding summed over the event day
+(`cryptotrend370_funding`): positive (longs crowded) → short; negative (shorts crowded) → long. **Rule.** Enter at the Binance daily close
+of the event day, hold 7 days, opposite BTCUSDT hedge of equal notional, 4 × 0.045% costs, funding received/paid on both legs. One trade
+per contract per 14 days. **Stage 1 (2023-01..2024-12):** with ≥ 8 events KILL if mean < 1% or t < 1; fewer = not testable.
+**Stage 2 (out-of-sample, 2025-01..2026-10):** PASS if ≥ 10 events, mean ≥ 2%, t ≥ 1.5, win ≥ 55%.
+- **#416 result — KILL** (`uv run python -m scripts.crowd_flag_20261125` → `docs/jx_runs/crowd_flag_20261125.txt`, re-run identical): 39
+  single-contract announcements; Stage 1 2023–24: 21 events, mean −4.82%, t −0.80, win 33%. (Stage 2 context: 15 events, mean distorted by
+  one +1,797% squeeze, ALPACA; t 1.06.) Almost every flag was crowded shorts; going long them lost.
