@@ -1,6 +1,2 @@
 # jobs for scripts/fetch_fallback.py (one per line)
-u389binance
-u389docs
-u384lst
-u387eth
-u387ccab
+uwave3
