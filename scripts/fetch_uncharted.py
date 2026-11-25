@@ -1380,6 +1380,43 @@ def job_uw3b():
         k.rename(OUT / "uncharted_w3b_korea.parquet")
 
 
+def job_udistinct():
+    """#412 Upbit daily candles (all KRW markets) and #413 DefiLlama hourly prices."""
+    mk = get("https://api.upbit.com/v1/market/all?isDetails=false", tries=3) or []
+    krw = [m["market"] for m in mk if str(m.get("market", "")).startswith("KRW-")]
+    rows, dl = [], time.time() + 60 * 60
+    for m in krw:
+        if time.time() > dl:
+            print("  upbit: time cap", flush=True)
+            break
+        to = None
+        for _ in range(12):
+            d = get(f"https://api.upbit.com/v1/candles/days?market={m}&count=200" + (f"&to={urllib.parse.quote(to)}" if to else ""), tries=2, pause=1) or []
+            if not isinstance(d, list) or not d:
+                break
+            rows += [(m[4:], x["candle_date_time_utc"][:10], float(x["trade_price"]), float(x.get("candle_acc_trade_price") or 0)) for x in d]
+            if len(d) < 200 or min(x["candle_date_time_utc"] for x in d) < "2019-12-01":
+                break
+            to = min(x["candle_date_time_utc"] for x in d).replace("T", " ")
+            time.sleep(0.12)
+        time.sleep(0.1)
+    print(f"  upbit KRW markets {len(krw)}, candles {len(rows)}", flush=True)
+    save("distinct_upbit_1d.parquet", pd.DataFrame(rows, columns=["coin", "day", "krw_close", "krw_value"]))
+    ids = ["kinetic-staked-hype", "staked-hype", "hyperbeat-x-ether-fi-hype", "renzo-restaked-eth", "kelp-dao-restaked-eth", "wrapped-eeth",
+           "pufeth", "ethena-staked-usde", "hyperliquid", "ethereum", "ethena-usde"]
+    prow = []
+    for g in ids:
+        t = T0_2024
+        while t < time.time():
+            d = get(f"https://coins.llama.fi/chart/coingecko:{g}?start={t}&span=500&period=1h", tries=2)
+            pts = (((d or {}).get("coins") or {}).get(f"coingecko:{g}") or {}).get("prices") or []
+            prow += [(g, int(x["timestamp"]), float(x["price"])) for x in pts]
+            t += 500 * 3600
+            time.sleep(0.25)
+        print(f"  llama hourly {g}: {sum(1 for r in prow if r[0] == g)} points", flush=True)
+    save("distinct_llama_1h.parquet", pd.DataFrame(prow, columns=["id", "t", "price"]))
+
+
 def _safe(fn):
     def w():
         try:
@@ -1396,4 +1433,4 @@ def job_uprobe():
 
 
 JOBS = {"uprobe": job_uprobe, "u383vaults": _safe(job_u383vaults), "u384lst": _safe(job_u384lst), "u385hyperp": _safe(job_u385hyperp),
-        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive, "uhip3": _safe(job_uhip3), "uw3b": _safe(job_uw3b)}
+        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive, "uhip3": _safe(job_uhip3), "uw3b": _safe(job_uw3b), "udistinct": _safe(job_udistinct)}
