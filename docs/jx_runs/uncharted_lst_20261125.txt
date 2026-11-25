@@ -1,0 +1,19 @@
+===== #384 U-T2 withdrawal-queue discounts
+  khype: pool kHYPE / WHYPE 0.01% (hyperevm, reserve $3,977,475); 2026-05-26..2026-11-25 (0.50 yr); median daily volume $8,971; events 0; net P&L $0 ($0/yr)
+  sthype: pool stHYPE / WHYPE 0.01% (hyperevm, reserve $138,212); 2026-05-26..2026-11-25 (0.50 yr); median daily volume $57; events 0; net P&L $0 ($0/yr)
+  behype: pool beHYPE / WHYPE (hyperevm, reserve $12,147); 2026-05-22..2026-11-25 (0.52 yr); median daily volume $24; events 5; net P&L $2 ($4/yr)
+      2026-06-05 discount 1.02% size $1 net 72.73% P&L $1
+      2026-06-15 discount 41.63% size $1 net 71.16% P&L $0
+      2026-06-26 discount 41.53% size $1 net 70.86% P&L $1
+      2026-07-06 discount 41.52% size $0 net -0.12% P&L $-0
+      2026-09-24 discount 1.23% size $1 net 1.11% P&L $0
+  ezeth: pool ezETH / WETH (linea, reserve $225,764); 2026-05-25..2026-11-25 (0.51 yr); median daily volume $1; events 1; net P&L $0 ($0/yr)
+      2026-09-21 discount 1.30% size $0 net 1.16% P&L $0
+  rseth: pool rsETH / ETH (eth, reserve $3,547,333); 2026-03-02..2026-11-25 (0.74 yr); median daily volume $14; events 0; net P&L $0 ($0/yr)
+  weeth: pool weETH / ETH (eth, reserve $8,478,997); 2026-05-23..2026-11-25 (0.51 yr); median daily volume $282; events 0; net P&L $0 ($0/yr)
+  pufeth: pool pufETH / WETH 0.3% (eth, reserve $179,446); 2026-05-01..2026-11-25 (0.57 yr); median daily volume $0; events 0; net P&L $0 ($0/yr)
+  susde: pool sUSDe / USDT 0.008% (eth, reserve $1,260,778); 2026-05-26..2026-11-25 (0.50 yr); median daily volume $2,638,481; events 0; net P&L $0 ($0/yr)
+
+  all tokens, each with its own position: events 6; net P&L $2 over up to 0.74 yr -> $3/yr; mean net per event 36.15%; losing events 1
+  one $15,000 pot (no overlap): events 5; net P&L $2 -> $3/yr
+  STAGE 1 VERDICT: KILL (net < $3,000/yr on $15,000)

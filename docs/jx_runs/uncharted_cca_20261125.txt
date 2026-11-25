@@ -1,0 +1,26 @@
+===== #387 U-T5 Uniswap CCA auctions (buy at clearing price, sell after 7 days)
+  auctions created by the canonical factories: 1152 (base 528, ethereum 407, unichain 131, arbitrum 86)
+  graduated: 289
+  graduated + ended + real USDC/USDT/ETH + raised >= $10K (>= 4 ETH): 16
+   chain   token currency     raised        end      clear     avg_px       ret1  src1       ret7  src7      ret30 src30
+    base    UMIA     USDC  6.112e+06 2026-09-02       0.36     0.3533      0.855 llama     0.6603 llama     0.9275 llama
+    base    RNBW     USDC  3.306e+05 2026-02-05      0.111     0.1059        NaN   NaN    -0.7265 llama    -0.8355 llama
+arbitrum    HUDL     USDC  6.347e+04 2026-02-11        0.1        0.1        NaN   NaN        NaN   NaN        NaN   NaN
+arbitrum   rIDOS      ETH      192.6 2026-03-05  3.611e-05    3.3e-05        NaN   NaN        NaN   NaN        NaN   NaN
+unichain  LILUNI      ETH      4.531 2026-07-24  1.345e-08  9.061e-09        NaN   NaN        NaN   NaN        NaN   NaN
+unichain  LILUNI      ETH      4.447 2026-07-24  1.012e-08  8.895e-09    -0.6351    gt    -0.4381    gt    -0.4363    gt
+unichain     AGS      ETH      12.23 2026-04-21   9.24e-06  6.143e-06        NaN   NaN        NaN   NaN        NaN   NaN
+ethereum BALANCE      ETH      54.95 2026-10-21   0.000227  0.0002045    -0.9338    gt     -0.931    gt    -0.9721    gt
+ethereum     BFX      ETH      14.05 2026-09-30  2.189e-05  2.108e-05    -0.9913    gt    -0.9894    gt    -0.9907    gt
+ethereum    FOLD     USDC  5.324e+05 2026-08-19    0.02241    0.02218       1.57    gt      2.842    gt      1.951    gt
+ethereum    BWLK      ETH      12.41 2026-07-19  0.0001603  0.0001603  -0.008611    gt     0.0987    gt    0.01727 llama
+ethereum    FOLD      ETH      523.9 2026-07-10    1.2e-05    1.2e-05        NaN   NaN        NaN   NaN        NaN   NaN
+ethereum    rCAP     USDC  3.843e+06 2026-06-17    0.01065   0.009606        NaN   NaN        NaN   NaN        NaN   NaN
+ethereum  STRATO      ETH      803.9 2026-06-11  0.0005354  0.0003216        NaN   NaN        NaN   NaN        NaN   NaN
+ethereum    wOCT      ETH       1177 2026-04-20  1.236e-05  1.177e-05        NaN   NaN    -0.3476 llama     0.7528 llama
+ethereum    VAZT      ETH  1.939e+04 2025-12-06  1.551e-05  1.299e-05        NaN   NaN        NaN   NaN        NaN   NaN
+
+  auctions with a 7-day price: 8; median 7-day return -39.3%; mean 2.1%
+  1-day: n 6 median -32.2% mean -2.4%
+  30-day: n 8 median -21.0% mean 5.2%
+  STAGE 1 VERDICT: KILL (median 7-day return <= 0)

@@ -158,3 +158,19 @@ involved a token with a Hyperliquid perp (XMR −6.5%, LOOM +3.5% hedged) — be
 - **Status:** S2a PASS, S2b PASS, S2c forward paper (radar N10) 2026-12-01 → 2027-01-26, S2d margin test needs Jx. No money until all
   pass; any live version would need a crash-regime limit (e.g. a daily loss stop), which is a new rule and needs its own
   pre-registration and forward test.
+
+### U-T2 (#384) Withdrawal-queue discounts — **KILL on the registered data, but inconclusive** (2026-11-25)
+`uv run python -m scripts.uncharted_lst_20261125` → `docs/jx_runs/uncharted_lst_20261125.txt` (re-run identical).
+GeckoTerminal's free API returned only ~6 months of daily pool history (2026-05..2026-11), not 2024-01..2026-10. In that window the main
+pools (kHYPE $4.0M, weETH $8.5M, rsETH $3.5M, sUSDe $1.3M reserve) never closed ≥ 1% below the 30-day-max NAV proxy; beHYPE/ezETH hits
+were dust-sized → $3/yr → KILL by rule. Context only (not the registered source): DefiLlama/CoinGecko daily ratios 2024–2026 show
+discount days (rsETH 149, pufETH 566, ezETH 75, sUSDe 42); the rule on those, with no volume cap, gives an optimistic ceiling of
+$8.7K/yr (excluding beHYPE's feed artefacts), mostly pufETH (pool volume ≈ $0/day) and rsETH. That ceiling is unreliable: token and ETH
+prices are snapshotted at different moments, which alone produces ~1% fake discounts. A fair test needs pool-level on-chain swap history
+(Curve/Uniswap rsETH/ETH, ezETH/WETH, pufETH/WETH) — Stage 1b, to be pre-registered before fetching.
+
+### U-T5 (#387) Uniswap CCA auctions — **KILL** (2026-11-25)
+`uv run python -m scripts.uncharted_cca_20261125` → `docs/jx_runs/uncharted_cca_20261125.txt` (re-run identical). 1,152 auctions from the
+four canonical factories (Base 528, Ethereum 407, Unichain 131, Arbitrum 86); 289 graduated; **16 real** (graduated, ended, real
+USDC/USDT/ETH, ≥ $10K raised; most others are tests with fake "USDC"). 8 have a 7-day price: **median 7-day return −39.3%** (mean +2.1%;
+FOLD +284%, BALANCE −93%, BFX −99%, RNBW −73%). 1-day median −32%, 30-day −21%. Aztec (VAZT, 19,390 ETH) has no tradeable price yet.
