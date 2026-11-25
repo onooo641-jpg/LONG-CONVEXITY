@@ -230,6 +230,8 @@ risk, 5m signals and 1m fills.
 | 410–411 | deeper wick ladder (25%/35%) on unseen venues; wick bids on Hyperliquid HIP-3 markets | `docs/PREREG_FIVE_HIGH_20261125.md` addendum | registered; data `uscale` / `uhip3` | — |
 | 412–413 | Korean-premium spikes (Upbit vs Hyperliquid, short); withdrawal-queue discounts on hourly prices (#384 Stage 1b) | `docs/PREREG_DISTINCT_20261125.md` | registered; data `udistinct` | — |
 | 414–415 | short lottery coins (MAX effect, market-neutral weekly); withdrawal discounts vs on-chain NAV | `docs/PREREG_DISTINCT_20261125.md` | registered with out-of-sample stages | — |
+| 416 | fade Binance funding-frequency (crowd) flags | `docs/PREREG_DISTINCT_20261125.md` | **KILL** (2023–24: 21 events −4.82%) | crowd_flag_20261125.txt |
+| 417 | deBridge DLN takers (permissionless intent filling): newcomer income in 2024 and 2025 cohorts | `docs/PREREG_SOLVERS_20261125.md` | registered; data `udln` | — |
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.

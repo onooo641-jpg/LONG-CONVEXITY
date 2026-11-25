@@ -1433,6 +1433,46 @@ def job_unav():
     save("distinct_nav_1h.parquet", pd.DataFrame(rows, columns=["key", "t", "price"]))
 
 
+def job_udln():
+    """#417: deBridge DLN fulfilled orders (public API), newest first, back to 2024-01 (time-capped)."""
+    hosts = ["https://dln-api.debridge.finance", "https://stats-api.dln.trade"]
+    body = {"skip": 0, "take": 100, "orderStates": ["Fulfilled", "SentUnlock", "ClaimedUnlock"], "externalCallStates": ["NoExtCall"]}
+    host, probe = None, {}
+    for h in hosts:
+        st, d = req(h + "/api/Orders/filteredList", body, timeout=60)
+        probe[h] = {"status": st, "head": (json.dumps(d)[:1500] if d is not None else None)}
+        print(f"  probe {h}: {st} {(json.dumps(d)[:300] if d is not None else '')}", flush=True)
+        if st == 200 and isinstance(d, dict) and (d.get("orders") or d.get("data")):
+            host = h
+            break
+    save("solvers_dln_probe.json", probe)
+    if not host:
+        return
+    stop = int(pd.Timestamp("2024-01-01", tz="UTC").timestamp())
+    out, skip, dl = [], 0, time.time() + 150 * 60
+    while time.time() < dl:
+        b = dict(body, skip=skip)
+        d = get(host + "/api/Orders/filteredList", b, tries=3, timeout=60) or {}
+        lst = d.get("orders") or d.get("data") or []
+        if not lst:
+            break
+        out += lst
+        skip += len(lst)
+        ts = [x.get("creationTimestamp") or (x.get("createdSrcEventMetadata") or {}).get("blockTimeStamp") for x in lst]
+        ts = [int(t) for t in ts if isinstance(t, (int, float))]
+        if ts and min(ts) < stop:
+            break
+        if skip % 20000 == 0:
+            print(f"    {skip} orders, oldest {pd.Timestamp(min(ts), unit='s') if ts else None}", flush=True)
+        time.sleep(0.3)
+    print(f"  DLN orders fetched: {len(out)}", flush=True)
+    import gzip
+    OUT.mkdir(parents=True, exist_ok=True)
+    with gzip.open(OUT / "solvers_dln_orders.json.gz", "wt") as f:
+        json.dump(out, f)
+    print(f"  wrote solvers_dln_orders.json.gz: {(OUT / 'solvers_dln_orders.json.gz').stat().st_size} bytes", flush=True)
+
+
 def _safe(fn):
     def w():
         try:
@@ -1449,4 +1489,4 @@ def job_uprobe():
 
 
 JOBS = {"uprobe": job_uprobe, "u383vaults": _safe(job_u383vaults), "u384lst": _safe(job_u384lst), "u385hyperp": _safe(job_u385hyperp),
-        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive, "uhip3": _safe(job_uhip3), "uw3b": _safe(job_uw3b), "udistinct": _safe(job_udistinct), "unav": _safe(job_unav)}
+        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive, "uhip3": _safe(job_uhip3), "uw3b": _safe(job_uw3b), "udistinct": _safe(job_udistinct), "unav": _safe(job_unav), "udln": _safe(job_udln)}
