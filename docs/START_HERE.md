@@ -4,7 +4,7 @@ Plain-language guide. Sorted from "what makes money" to "what failed". Every num
 `docs/jx_runs/` is raw output of a script you can re-run; every standing figure has a row in `docs/FIGURES_LEDGER.md`. Test rules:
 `CLAUDE.md` and section 10.
 
-**Contents:** 1 Bottom line · 2 What only Jx can do · 3 Calendar · 4 Prop firms · 5 Liquidation bot · 6 Own-capital strategies ·
+**Contents:** 1 Bottom line · 2 What only Jx can do · **2b Next step and money needed** · 3 Calendar · 4 Prop firms · 5 Liquidation bot · 6 Own-capital strategies ·
 7 Approval-gated roles (CoW, UniswapX) · 8 Uncharted search (U1–U28) · 9 Radar and monitoring · 10 How tests are run · 11 Where everything lives
 
 ---
@@ -22,6 +22,8 @@ Plain-language guide. Sorted from "what makes money" to "what failed". Every num
 | Futures cross-sectional momentum #351 | Passed on paper, needs ~$250K+ | ~15–20%/yr on capital |
 | Liquidation bot (workstream B) | Shadow test running | est. $0–$100/month now |
 | Everything else (~140 non-prop ideas) | Failed, not testable, or excluded | sections 6–8 |
+
+**Next step and how much money:** section 2b — one live prop account, ~$700–850 to start, up to ~$2.7K set aside (9 in 10 starts), ~$3.8K worst case.
 
 **If prop income stops (fallback plan, 2026-11-23).**
 - *What would stop it:* firm rule changes or closures, not the friend's strategy losing its edge (every approved firm's coin-flip median is
@@ -41,6 +43,83 @@ Plain-language guide. Sorted from "what makes money" to "what failed". Every num
 | UniswapX quoter application (#371) | Uniswap Labs approves quoters (intake form); a company/KYC may be asked | decide after the 2026-11-26 verdict |
 | CoW solver onboarding (#364) | CoW paused onboarding; Jx is the contact | reply when they reopen (reminder 2026-12-15) |
 | Prop accounts, payments, live trades | money/KYC | per `docs/GO_LIVE*.md` |
+
+## 2b. Next step and money needed (2026-11-25)
+Plain answer first: **the next step is one prop account run live by the friend, and it needs about $700–850 to start, with up to ~$2.7K
+set aside (covers 9 in 10 historical starts) and ~$3.8K for the worst start ever seen.** That money pays evaluation fees and resets; it is not
+trading capital (the firm's money absorbs trading losses). Labels: **M** = measured in the backtest (2016-01..2026-10, friend's NQ trades at
+$900 risk), **V** = verified on the firm's own page, **J** = supplied by Jx (not verified by the repo), **E** = estimate.
+
+### Status on 2026-11-25
+- **Live Topstep data: none in the repo yet** (`data/live/` does not exist). The friend's export (`scripts/export_live_trades.py`, then push
+  `data/live/`) is what every later step waits on. He should `git pull` first so he has the tick-grid fix in `bridge/topstepx.py`.
+- The bot (`bridge/`) connects **only to TopstepX** today. LucidDaily, TTP Prime and DayTraders need a different order route (below).
+
+### Order of steps (each step starts only after the gate before it)
+| Step | What | Gate to move on | Who | Money |
+|---|---|---|---|---|
+| 1 | **One live prop account.** Topstep 50K with the bot (works today), or LucidDaily 50K EOD (manual now, bot after step 3) | — | friend (account, PC); Jx pays if agreed | start ~$700–850; reserve up to ~$2.7K (M) |
+| 2 | **Live check after 40 trades** (≈ 2.5 months at 16.8 trades/month, M) using `scripts/live_compare.py` | `docs/PREREG_LIVE_20261120.md`: order parity ≥ 95%; fill rate of limit orders 80% ± 10 points; mean stop slippage ≤ 2 ticks; cumulative net R vs the bands (5% / 50% / 95%: −10.8 / +0.2 / +11.9 full history; −8.7 / +3.4 / +14.6 since 2024). Above the recent median → add accounts; inside the bands → hold; below the 5th percentile of both → stop adding | Claude reads the pushed data | $0 |
+| 3 | **Build the second order route** (no cost to build): CrossTrade adapter for Tradovate-based firms (Lucid). TTP Prime and DayTraders: platform not yet confirmed in the repo (**unverified**) | adapter passes the same round-trip test as TopstepX (`--roundtrip`) on a practice account | Claude Code; Jx/friend subscribes to CrossTrade only when ready | $49/month once subscribed |
+| 4 | **Add accounts**: Topstep + LucidDaily, then the 4-firm plan (section 4a) | step 2 passed; one firm per month so each new route is checked live | friend | reserve ~$7–7.5K for 2 firms (E), ~$12–14K for 4 (M) |
+| 5 | **#389 wick bids live** (own capital, section 6b) | S2c forward paper ends 2027-01-26 and holds; S2d margin check done; guard G2 (daily fill cap $5,000) and a pre-registered loss limit | Jx | $15,000 pot as modelled; lost money in crash periods |
+| — | Liquidation bot (section 5) | not building | — | $0 |
+
+### Money needed to start one account (M; ledger LS1, `docs/PREREG_LUCID_START_20261125.md`)
+A fresh chain was started on the first of every month 2016-01..2025-10 (118 starts). "Deepest loss" = most money out of pocket (fees minus
+payouts) before payouts paid it back. Every start on all three products eventually went positive.
+| | **LucidDaily 50K EOD, $85.40 promo** | LucidDaily 50K EOD, $122 list | Topstep 50K (Consistency path) |
+|---|---|---|---|
+| Typical start (median) | **−$683** | −$1,054 | −$735 |
+| 1 in 4 starts worse than | −$1,687 | −$2,410 | −$1,248 |
+| 1 in 10 starts worse than | −$2,673 | −$3,819 | −$2,583 |
+| Worst start | −$3,758 | −$5,368 | −$3,520 |
+| Days to first payout: median / 90th percentile | 158 / 826 | 158 / 826 | 126 / 827 |
+| Net after 12 months: median (share of starts losing) | **$3,971** (30%) | $3,239 (32%) | $1,704 (30%) |
+| Starts from 2023 on: median deepest / days to payout | −$342 / 78 | −$488 / 78 | −$418 / 63 |
+Not in these figures: CrossTrade $49/month (needed for a bot on Lucid; ≈ $250 more in a typical start, E) and TopstepX API $14.50/month.
+The older Topstep Standard figures (NOTES_JX, `scripts/jx_capital.py`: median −$863, 1 in 10 −$2,613, worst −$3,568, 144 days) used an
+earlier trade set and the Standard path; LS1 supersedes them for comparisons.
+
+### Running costs per account (what you pay while it runs)
+| Product | Evaluation | Reset | Monthly | Other | Source |
+|---|---|---|---|---|---|
+| Topstep 50K | $49/month | $49 | — | activation $149 per funded account; TopstepX API $14.50/month (code `topstep`), shared by all Topstep accounts | V (`PROP_VERIFY_20261122.md` §4, `GO_LIVE.md`) |
+| LucidDaily 50K EOD | $85.40 promo / $122 list, one-time | assumed = purchase price | none | CrossTrade Pro $49/month if bot-run (unlimited accounts) | price J, rules V, reset assumed |
+| TTP Futures Prime 50K | $99 | $79 | — | order route unverified | V |
+| DayTraders EOD 50K | $105 | $105 (assumed) | — | $5 activation; bots, copiers and a VPS allowed | V |
+
+### Money by stage (cash to have ready, not all spent)
+| Stage | When (earliest) | Cash to have ready | Monthly |
+|---|---|---|---|
+| 1 account (Topstep or LucidDaily) | now | start ~$700–850; top up to ~$2.7K; worst ~$3.5–3.8K (M) | $63.50 Topstep / $0–49 Lucid |
+| Topstep + LucidDaily | after the 40-trade check (~Feb 2027) | ~$7–7.5K (E: same trades, so the two dips roughly add) | ~$113 + resets |
+| 4-firm plan (section 4a) | after both routes run live | ~$12.2–13.9K (M, `PREREG_PORTFOLIO_MY_20261123.md`) | evals + resets + $49 CrossTrade |
+| + #389 | after 2027-01-26 | + $15K own capital (M model pot; can lose a meaningful share in a crash period) | trading fees |
+| Everything | mid-2027 at the earliest | ~$27–29K (E) | — |
+
+### Why LucidDaily is #1 — and its catches
+- **Best product in the backtest:** $57,486 real net 2016–26 ($5,308/yr), coin flip $24,093, worst dip −$3,758, ROI on fees 416% (section 4a,
+  ledger PR1). Topstep: $44–46K.
+- **Price.** $85.40 is the promo you saw at checkout (J). The repo cannot read Lucid's checkout (it shows a bot-check page to automated
+  browsers; not circumvented), so the price and the promo's end date are unverified. At the $122 list price it falls to $51,557 and the worst
+  dip (−$5,368) misses the repo's rule by $88. Buying the evaluation while the promo runs locks the price for that attempt only; resets are
+  assumed to cost the same as the purchase (not supplied).
+- **Order route.** Lucid runs on Tradovate, whose API is closed to prop and evaluation accounts. Route: CrossTrade Pro ($49/month, partner
+  OAuth; NOTES_JX "How the bot can reach Lucid and MFFU"). CrossTrade is not in the backtest: about $6.4K over 10.8 years, so roughly
+  **$51K** after it (E) — still above Topstep.
+- **Manual entry works too:** placing each trade from an alert within 3 minutes backtests at **$48,761** (section 4d), above bot-run Topstep;
+  the cost is being awake for the US session (Malaysian night).
+- The LucidDaily **Intraday** variant ($65.80 promo) shows $60,661, but the model cannot tell intraday from end-of-day drawdown, so that
+  figure is optimistic; do not rely on it.
+
+### Which to start with
+- **If the friend has not started live yet:** start with LucidDaily (manual now, or bot once the CrossTrade adapter passes), or Topstep +
+  LucidDaily together (~$7–7.5K reserve, E). Lucid ranks higher and the promo is time-limited.
+- **If Topstep is already live:** keep it running; it is the live test of the strategy. The pre-registered plan adds accounts only after 40
+  live trades; adding Lucid earlier risks only evaluation fees (~$85 each), not the strategy. Build the CrossTrade adapter now either way.
+- Same signals run on every account (copying between your own accounts is allowed); the anti-hedge filter and hedge registry
+  (`bridge/hedge.py`) block opposite positions across accounts, which firms prohibit.
 
 ## 3. Calendar of scheduled verdicts
 | Date | What | Where |
@@ -129,6 +208,10 @@ AquaFunded: Malaysia allowed on Instant Funding only (max $50K). Source: `docs/P
 | Can a new free bot get it? | Mostly no: 64–98% of liquidations happen in the same block as the price update; professionals hold 75–77% | "Liquidation levers: final table" |
 | Expected profit for a new small bot | $0–$100/month now; $100–$600 averaged over a cycle with crash months (estimate) | same |
 | Decision | Don't build yet; free shadow test (kill check 2026-11-28, verdict 2026-12-19) | `docs/PREREG_LIQ_SHADOW_20261121.md` |
+| How lumpy is it? | Very: the 5 biggest of 24 months paid 70% of Aave bonuses (Morpho 89%); a typical non-top-3 bot beats $1,000 in only 4% of months and makes $200+ in 29% (M). Big crash months came about every 6 months in the data (Feb 2025, Oct–Nov 2025, Feb 2026) | `docs/NOTES_JX.md` "Liquidations: crash months" |
+| Can crash months be predicted? | No. They can be detected as they start (fast price drops, health factors falling toward 1.0); the watcher logs debt near the liquidation line hourly (`data/shadow/<chain>/near_line.jsonl`) and opens a GitHub issue if a chain goes unwatched > 60 min | `docs/PREREG_LIQ_SHADOW_20261121.md` addendum 4 |
+| What about crashes after the test? | Log-only extension: the watcher keeps running after the verdict until the first 30-day window with > $1M of bonus (or 2027-06-30) and reports it separately (CRASH-WORTHWHILE needs fire-first ≥ 10% and simulated net ≥ $2,000) | same |
+| Risk to the verdict | Watcher uptime ~57% of wall time per chain so far; below 75% the registered rules make the verdict INCONCLUSIVE and extend 2 weeks | `docs/NOTES_JX.md` (2026-11-24) |
 
 ---
 
