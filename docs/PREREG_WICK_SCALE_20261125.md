@@ -32,3 +32,19 @@ drawdown by ≥ 30% while keeping ≥ 70% of the unguarded $/yr. Hyperliquid/Bin
 
 **Commands.** `uv run python -m scripts.wick_scale_20261125` → `docs/jx_runs/wick_scale_20261125.txt`; re-run once, identical. Data: Actions
 job `uscale`.
+
+---
+## Results (2026-11-25) — `uv run python -m scripts.wick_scale_20261125` → `docs/jx_runs/wick_scale_20261125.txt` (re-run identical)
+Data: fetch run 45638942932 (queue 2). dYdX v4 291 markets 2023-11..2026-11; Aster 603 markets 2022-10..2026-11; Lighter (HTTP 403) and
+Paradex (HTTP 400) returned no history → not testable. Terms: "Malaysia" appears on none of the fetched terms pages (dYdX restricts the
+US, Canada, UK and sanctioned territories; Paradex the US, Canada, sanctioned places; Aster's page did not render) — eligibility third-party
+reading, not legal advice.
+- **#402 hourly — KILL.** Binance 1h X 8%: 34,813 fills, +0.32%/fill (t 8.27) but **−$11,446/yr** on the pot (2025 −$38K, 2026 −$45K;
+  worst peak-to-trough −$86K). X 12% context +1.36%/fill but $709/yr. Hyperliquid 1h (2026-04..11, context): +0.63%, $8,930/yr.
+- **#403 dYdX — survives (kill-only):** 2,076 fills, **+4.16%/fill, t 6.45, $16,529/yr**, worst peak-to-trough −$5,966, worst day −$5,315.
+  **Aster — KILL:** +0.38%, t 1.58, −$1,767/yr, peak-to-trough −$33K.
+- **#404 guards (pooled dYdX + Aster):** G1 (skip the day after a cascade day) not adopted (drawdown −1%, keeps 51%). **G2 (cap daily fill
+  notional at $5,000) ADOPTED: drawdown 55% smaller, 77% of $/yr kept** (dYdX: $11,189/yr, peak-to-trough −$2,288, worst day −$1,772).
+- **#410 deeper ladder (25%/35%) — survives:** pooled 2,378 fills, +5.65%, t 6.93, $20,557/yr (dYdX 757 fills +13.70% $19,320/yr; Aster
+  +1.89% $1,237/yr).
+Next for the survivors: forward paper on dYdX (radar), and any live version of #389 uses guard G2.

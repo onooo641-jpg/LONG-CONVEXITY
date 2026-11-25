@@ -1,0 +1,50 @@
+===== #402-#404 scaling and hardening #389
+#### #402 hourly wick bids
+  Binance 1h fills file: 152806 rows, symbols 834, 2022-01-03 12:00:00+00:00..2026-10-31 22:00:00+00:00
+  X 8% (primary): fills 34813; mean 0.32% (median 0.80%, t 8.27, win 59%); $-11,446/yr; worst peak-to-trough $-86,346; worst day $-3,405
+     by year: 2022 n 1784 +0.18% $3,591; 2023 n 2714 +0.82% $9,652; 2024 n 5513 +1.24% $14,364; 2025 n 10822 -0.14% $-38,056; 2026 n 13980 +0.24% $-44,898
+     half-year mean: 2022H1 -0.45%; 2022H2 +0.91%; 2023H1 +0.32%; 2023H2 +1.28%; 2024H1 +0.41%; 2024H2 +2.31%; 2025H1 -0.06%; 2025H2 -0.18%; 2026H1 +0.27%; 2026H2 +0.21%
+  X 5%: fills 104153; mean -0.22% (median 0.00%, t -13.76, win 50%); $-51,200/yr; worst peak-to-trough $-268,615; worst day $-4,057
+     by year: 2022 n 8381 -0.01% $8,050; 2023 n 7549 -0.20% $5,472; 2024 n 15872 -0.01% $-6,625; 2025 n 32825 -0.43% $-104,812; 2026 n 39526 -0.17% $-149,668
+     half-year mean: 2022H1 +0.14%; 2022H2 -0.33%; 2023H1 -0.60%; 2023H2 +0.17%; 2024H1 -0.22%; 2024H2 +0.19%; 2025H1 -0.40%; 2025H2 -0.45%; 2026H1 -0.14%; 2026H2 -0.20%
+  X 12%: fills 13840; mean 1.36% (median 2.17%, t 16.45, win 65%); $709/yr; worst peak-to-trough $-35,378; worst day $-2,792
+     by year: 2022 n 568 +0.34% $2,318; 2023 n 1060 +3.10% $9,107; 2024 n 2591 +3.92% $12,808; 2025 n 4299 +0.27% $-16,484; 2026 n 5322 +0.76% $-4,323
+     half-year mean: 2022H1 -3.05%; 2022H2 +3.85%; 2023H1 +1.40%; 2023H2 +3.96%; 2024H1 +3.38%; 2024H2 +5.50%; 2025H1 +0.96%; 2025H2 +0.00%; 2026H1 +0.35%; 2026H2 +1.26%
+  STAGE 1 VERDICT (Binance 1h, X 8%): KILL
+  Hyperliquid 1h (second venue, context), 2026-04-24..2026-11-25: fills 1081, mean 0.63%, t 4.08; $8,930/yr
+
+#### #403 / #404 the #389 rule on other perp venues
+  terms dydx|https://dydx.trade/terms: HTTP 200, 68 chars; 'Malaysia' found: False
+  terms dydx|https://dydx.exchange/terms: HTTP 200, 65496 chars; 'Malaysia' found: False
+      ...TES OF AMERICA, CANADA AND THE UNITED KINGDOM); AND (2), WITH RESPECT TO ALL DYDX SOFTWARE ANY PERSONS OR ENTITIES WHO RESIDE IN, ARE CITIZENS OF, ARE LOCATED IN, ARE INCORPORATED IN, OR HAVE A REGISTERED OFFICE OR PRINCIPAL PLACE OF BUSINESS IN ANY RESTRICTED TERRITORY (AS DEFINED BELOW) . THERE AR...
+      ...) WILL NOT COORDINATE, CONDUCT OR CONTROL (INCLUDING BY, IN SUBSTANCE OR EFFECT, MAKING DECISIONS WITH RESPECT TO) YOUR USE OF DYDX PERPETUALS TRADING SOFTWARE FROM WITHIN THE UNITED STATES OF AMERICA, CANADA OR WITH RESPECT TO ALL DYDX SOFTWARE ANY RESTRICTED TERRITORY; AND (C) IF YOU ARE DEPLOYING...
+  terms aster|https://www.asterdex.com/en/terms-of-service: HTTP 200, 47 chars; 'Malaysia' found: False
+  terms aster|https://docs.asterdex.com/about-us/terms-of-service: HTTP 404, 0 chars; 'Malaysia' found: False
+  terms lighter|https://lighter.xyz/terms: HTTP 200, 21407 chars; 'Malaysia' found: False
+      ...essing or using the Services, including by connecting a third-party non-custodial digital wallet (“Wallet”) to the Interface on or through which these Terms are linked, you acknowledge and agree that: You are not (a) the subject of economic or trade sanctions or otherwise on a list of prohibited or ...
+      ...al authority (including, the U.S. Department of the Treasury’s list of Specially Designated Nationals, the U.S. Department of Commerce Denied Persons List Entity List, the E.U. Consolidated List of persons and the U.K. Consolidated List of Financial Sanctions Targets); (b) located in, a resident of,...
+  terms lighter|https://docs.lighter.xyz/terms-of-use: HTTP 404, 0 chars; 'Malaysia' found: False
+  terms paradex|https://www.paradex.trade/terms-of-service: HTTP 200, 30388 chars; 'Malaysia' found: False
+      ...IZED OR ESTABLISHED UNDER THE LAWS OF A STATE OR OTHER JURISDICTION IN THE UNITED STATES OR WHICH HAS ITS “PRINCIPAL PLACE OF BUSINESS” IN THE UNITED STATES ‍ ‍A “CANADIAN PERSON” (AS DEFINED UNDER CANADIAN SECURITIES LAWS) ‍ THE SUBJECT OF ECONOMIC SANCTIONS OR OTHER TRADE OR EXPORT RESTRICTIONS IM...
+      ..., THE EUROPEAN UNION OR ANY OF ITS MEMBER STATES, THE UNITED KINGDOM OR SINGAPORE ‍ A CITIZEN, RESIDENT, ORGANIZED OR HAS A BRANCH IN A JURISDICTION OR TERRITORY THAT IS THE SUBJECT OF COMPREHENSIVE COUNTRY-WIDE, TERRITORY-WIDE, OR REGIONAL ECONOMIC SANCTIONS BY THE UNITED STATES, THE EUROPEAN UNION...
+  terms paradex|https://docs.paradex.trade/legal/terms-of-service: HTTP 404, 0 chars; 'Malaysia' found: False
+  terms hyperliquid|https://app.hyperliquid.xyz/terms: HTTP 200, 581 chars; 'Malaysia' found: False
+  dydx: 291 markets, 2023-11-13..2026-11-25 (3.04 yr); fills 2076
+    base: fills 2076, mean 4.16%, t 6.45; $16,529/yr; worst peak-to-trough $-5,966; worst day $-5,315
+    G1: fills 1843, mean 1.70%, t 2.68; $10,079/yr; worst peak-to-trough $-6,373; worst day $-5,315
+    G2: fills 2076, mean 4.16%, t 6.45; $11,189/yr; worst peak-to-trough $-2,288; worst day $-1,772
+    #403 STAGE 1 (dydx): survives (kill-only)
+  aster: 603 markets, 2022-10-18..2026-11-25 (4.11 yr); fills 4613
+    base: fills 4613, mean 0.38%, t 1.58; $-1,767/yr; worst peak-to-trough $-33,258; worst day $-2,171
+    G1: fills 4503, mean 0.21%, t 0.86; $-2,561/yr; worst peak-to-trough $-32,302; worst day $-2,171
+    G2: fills 4613, mean 0.38%, t 1.58; $179/yr; worst peak-to-trough $-15,476; worst day $-1,228
+    #403 STAGE 1 (aster): KILL
+  lighter: no data
+  paradex: no data
+  #404 G1 pooled over judged venues: drawdown improvement 1%, $/yr kept 51% -> not adopted
+  #404 G2 pooled over judged venues: drawdown improvement 55%, $/yr kept 77% -> ADOPTED
+
+#### #410 deeper wick ladder (25% and 35% levels) on the unseen venues
+  dydx: fills 757 (25%: 554, 35%: 203), mean 13.70%, t 6.29, $19,320/yr
+  aster: fills 1621 (25%: 1197, 35%: 424), mean 1.89%, t 3.11, $1,237/yr
+  pooled: fills 2378, mean 5.65%, t 6.93, $20,557/yr -> STAGE 1 VERDICT: survives (kill-only)
