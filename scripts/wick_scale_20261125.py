@@ -170,10 +170,40 @@ def part403():
                   f"{'ADOPTED' if adopt else 'not adopted'}")
 
 
+def part410():
+    print("\n#### #410 deeper wick ladder (25% and 35% levels) on the unseen venues")
+    allf, span_tot = [], 0.0
+    for name in ("dydx", "aster", "lighter", "paradex"):
+        d = load_venue(name)
+        if d is None:
+            continue
+        span = (d["day"].max() - d["day"].min()).days / 365
+        if span < 1:
+            continue
+        f = pd.concat([fills_daily(d, 0.25).assign(level=0.25), fills_daily(d, 0.35).assign(level=0.35)])
+        if f.empty:
+            continue
+        f["pnl"] = pot_scale(f, "day")
+        f["venue"] = name
+        print(f"  {name}: fills {len(f)} (25%: {int((f.level == 0.25).sum())}, 35%: {int((f.level == 0.35).sum())}), mean {f['ret'].mean():.2%}, "
+              f"t {tstat(f['ret']):.2f}, ${f['pnl'].sum() / span:,.0f}/yr")
+        f["per_yr"] = f["pnl"] / span
+        allf.append(f)
+    if not allf:
+        print("  no venue with >= 1 year of data: not testable")
+        return
+    f = pd.concat(allf)
+    r = f["ret"]
+    tot = f["per_yr"].sum()
+    kill = r.mean() < 0.01 or tstat(r) < 3 or tot < 2000
+    print(f"  pooled: fills {len(f)}, mean {r.mean():.2%}, t {tstat(r):.2f}, ${tot:,.0f}/yr -> STAGE 1 VERDICT: {'KILL' if kill else 'survives (kill-only)'}")
+
+
 def main():
     print("===== #402-#404 scaling and hardening #389")
     part402()
     part403()
+    part410()
 
 
 if __name__ == "__main__":

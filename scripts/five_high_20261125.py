@@ -153,10 +153,35 @@ def part408():
     print(f"  STAGE 2 VERDICT (Binance): {'PASS' if ok else ('FAIL' if s1 else 'not run (Stage 1 killed) — shown as context')}")
 
 
+def part411():
+    print("\n#### #411 wick bids on Hyperliquid HIP-3 markets")
+    p = PUB / "fivehigh_hip3_1d.parquet"
+    if not p.exists() or not p.stat().st_size:
+        print("  data not fetched yet (Actions job uhip3)")
+        return
+    d = pd.read_parquet(p)
+    if d.empty:
+        print("  no HIP-3 candles: not testable")
+        return
+    d["day"] = pd.to_datetime(d["t"], unit="ms", utc=True).dt.normalize()
+    d["usdvol"] = d["v"] * d["c"]
+    d = d.drop_duplicates(["coin", "day"]).sort_values(["coin", "day"])[["coin", "day", "o", "h", "l", "c", "usdvol"]]
+    print(f"  markets {d['coin'].nunique()} on {d['coin'].str.split(':').str[0].nunique()} dexes, {d['day'].min().date()}..{d['day'].max().date()}")
+    f = wick_fills(d, 0.15, 30, 100000)
+    end = min(d["day"].max(), pd.Timestamp("2026-10-31", tz="UTC"))
+    _, m, t, py, _ = report_fills(f, "HIP-3 X 15%", d["day"].min(), end)
+    if len(f) < 30:
+        print("  STAGE 1 VERDICT: not testable (fewer than 30 fills)")
+    else:
+        kill = pd.isna(m) or m < 0.005 or t < 3 or py < 2000
+        print(f"  STAGE 1 VERDICT: {'KILL' if kill else 'survives (kill-only)'}")
+
+
 def main():
     print("===== #405-#409 five high-ceiling liquidity ideas")
     part407()
     part408()
+    part411()
     for n, f in (("#405", "fivehigh_bn_premium_trades.parquet"), ("#406", "fivehigh_hl_spot_1d.parquet"), ("#409", "fivehigh_venues_1h.parquet")):
         if not (PUB / f).exists():
             print(f"\n{n}: data not fetched yet (Actions job ufive)")
