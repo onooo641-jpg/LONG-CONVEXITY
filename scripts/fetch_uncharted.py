@@ -1359,6 +1359,27 @@ def job_uhip3():
     save("fivehigh_hip3_1d.parquet", pd.DataFrame(rows, columns=["dex", "coin", "t", "o", "h", "l", "c", "v"]))
 
 
+def job_uw3b():
+    """Wave-3 Stage 2 data: Binance announcements (48) back to 2020; complete Upbit + Bithumb KRW first-candle dates."""
+    stop = int(pd.Timestamp("2020-01-01", tz="UTC").timestamp() * 1000)
+    items = []
+    for p in range(1, 400):
+        st, d = req(f"https://www.binance.com/bapi/composite/v1/public/cms/article/list/query?type=1&pageNo={p}&pageSize=50&catalogId=48", timeout=40)
+        lst = _items((d or {}).get("data")) if isinstance(d, dict) else []
+        if st != 200 or not lst:
+            break
+        items += [{"title": x.get("title"), "releaseDate": x.get("releaseDate"), "code": x.get("code")} for x in lst]
+        if min(int(x.get("releaseDate") or 0) for x in lst) < stop:
+            break
+        time.sleep(0.6)
+    print(f"  binance catalog 48 back to 2020: {len(items)} items", flush=True)
+    save("uncharted_w3b_binance48.json", items)
+    _w3_korea(time.time() + 75 * 60)
+    k = OUT / "uncharted_w3_korea.parquet"
+    if k.exists():
+        k.rename(OUT / "uncharted_w3b_korea.parquet")
+
+
 def _safe(fn):
     def w():
         try:
@@ -1375,4 +1396,4 @@ def job_uprobe():
 
 
 JOBS = {"uprobe": job_uprobe, "u383vaults": _safe(job_u383vaults), "u384lst": _safe(job_u384lst), "u385hyperp": _safe(job_u385hyperp),
-        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive, "uhip3": _safe(job_uhip3)}
+        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive, "uhip3": _safe(job_uhip3), "uw3b": _safe(job_uw3b)}

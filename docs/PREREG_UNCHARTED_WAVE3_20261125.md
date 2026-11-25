@@ -49,3 +49,14 @@ Out-of-sample market: the same rule on Binance USD-M perps (`uncharted_389_binan
 2020-01..2026-10, ≥ 25% of eligible perps wicking ≥ 15%, equal-weight basket of the wicked perps bought at that day's close, 3-day hold,
 2 × 0.045% costs, no funding (not in that file; reported). PASS if ≥ 8 events, mean ≥ 2%, ≥ 60% positive and t ≥ 2. A pass still needs a
 forward check before money (cascade days are rare: a few a year).
+
+## Stage 2 for #393, #394, #395 — pre-registered 2026-11-25 after Stage 1, before Stage 2 data are fetched
+Stage 1 (Hyperliquid, 2023-06..2026-10): #395 Korean listings 33 events +9.26% t 5.28; #394 airdrop listings 26 events +12.82% t 2.47;
+#393 Binance listings 20 events +6.59% t 1.23. Stage 1's Korean universe was partial (Upbit 161 of 301 markets; Bithumb 0 — fetch time cap;
+order = Upbit's market list, not outcome-based).
+**Out-of-sample in time and venue:** events from 2020-01-01 to 2023-05-31 (before the Stage 1 window), priced on Binance USD-M perps
+(`uncharted_389_binance_ohlc.parquet`; the token's USDT perp must have traded ≥ 7 days before the event for #393/#395; for #394 the first
+Binance perp close on/after the event, at most 5 days later). Same rule as Stage 1: short at the event-day close, hold H (7 / 14 / 7),
+equal BTCUSDT long hedge, 4 × 0.045% costs, Binance funding (`cryptotrend370_funding.parquet`). Events: Binance announcements
+(category 48, fetched back to 2020) and complete Upbit + Bithumb KRW first-candle dates (job `uw3b`).
+**PASS** (each idea separately): ≥ 15 events, mean ≥ 2% and t ≥ 2. Also reported: Stage 1 re-run on the complete Korean universe (context).
