@@ -1,4 +1,4 @@
-2026-11-23 protocol/v9.9.1
+2026-11-24 Release protocol/v9.9.1
 2026-11-13 Release indexer/v9.5.12
 2026-11-12 Release protocol/v9.9.0-rc1
 2026-10-28 Release protocol/v9.8.2

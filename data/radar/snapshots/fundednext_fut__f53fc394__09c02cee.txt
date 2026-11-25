@@ -7,7 +7,7 @@ All Collections
 General Rules & Guidelines
 General Rules & Guidelines
 Learn the foundational rules of our challenges, strategies, and other requirements.
-14 articles
+15 articles
 How Many Accounts Can I Hold with FundedNext Futures, and What Is the Maximum Allocation Available?
 How to calculate PnL in Futures trading?
 What are the symbols/instruments code specifications of Futures?
@@ -22,3 +22,4 @@ How does KYC Verification work at FundedNext?
 Are any countries restricted on FundedNext Futures?
 Does FundedNext Futures offer any Certificates?
 Can Multiple Traders Use the Same Wallet Address?
+How does the Daily Loss Limit Add-On works on the Rapid Pro Challenge And FundedNext Account

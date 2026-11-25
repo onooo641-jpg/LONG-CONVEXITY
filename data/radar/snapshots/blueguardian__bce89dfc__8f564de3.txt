@@ -24,7 +24,7 @@ Home
 › FAQ
 › Futures plans
 › Reserve account rules
-Applies to: Futures Updated 13 Nov 2026 · 3 min read
+Applies to: Futures Updated 24 Nov 2026 · 3 min read
 Reserve account rules
 Short answer
 Reserve is a one-phase Futures evaluation. Hit a 6% profit target while meeting the consistency rule and staying within an end-of-day trailing drawdown. There's no daily loss limit unless you choose the optional one at checkout for a lower price. Once funded, you can request up to 50% of your profit after 5 winning days, with a 90% profit split.
@@ -134,7 +134,7 @@ $899
 Other rules
 News trading: allowed on evaluation and funded accounts. Expect slippage and wider spreads around high-impact news.
 Stop losses: not mandatory, but every trade needs a defined risk. See Futures risk management rules .
-Microscalping: less than 50% of your profit may come from trades held under 10 seconds.
+Microscalping: less than 50% of your profit may come from trades held under 10 seconds. If more of your profit comes from these trades, that profit is forfeited.
 Fees: one-time purchase. No monthly or activation fees.
 Still need help?
 Our support team and AI assistant are online 24/7.

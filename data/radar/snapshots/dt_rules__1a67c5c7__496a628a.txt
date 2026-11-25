@@ -1,0 +1,82 @@
+Handling Technical Issues and Managing Positions in rTrader Pro | DayTraders.com Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Home About Products English Español English
+Search ⌘ K
+ArcTrader
+General
+Intraday Trail Accounts
+Static Accounts
+EOD Trail Account
+S2F (Straight-to-Sim-Funded) Accounts
+Live & S2L Program
+Platforms
+General Platform information
+ArcTrader
+ATAS
+Bookmap
+Finamark
+Onyx
+Jigsaw
+MotiveWave
+NinjaTrader
+Quantower
+Rithmic & R | Trader Pro
+Disabling Alerts and Pop-Ups in RTrader Pro
+RTrader Pro Mobile App
+Risk Management - Rithmic rTrader
+Rithmic/rTrader Pro: How to place a Trade
+Troubleshooting rTrader Pro Login Issues
+How to Manage Risk with Rithmic's Auto Liquidate Criteria
+Market Volatility Advisory
+Understanding the "Rithmic's Order Plant Guardian Has Disabled Your User ID" Error
+Can't Login, Rithmic
+Understanding Your rTrader Pro: Column Breakdown
+Understanding Account Colors in rTrader Pro
+Handling Technical Issues and Managing Positions in rTrader Pro
+rTrader Pro Copier
+Sierra Charts
+Wealthcharts
+VolFix
+Trading Rules and Guidelines
+Affiliate Program
+Agreements and Disclaimers
+All Collections Platforms Rithmic & R | Trader Pro Handling Technical Issues and Managing Positions in rTrader Pro Handling Technical Issues and Managing Positions in rTrader Pro
+Learn how to efficiently manage technical issues, handle trades, and maintain your positions using rTrader Pro during platform malfunctions or connection issues.
+Updated today
+Copy for LLM
+Why Keep rTrader Pro Open?
+Keeping rTrader Pro open allows you to monitor your trailing threshold and close trades quickly if needed. This ensures you can manage positions efficiently during technical difficulties or unexpected market events.
+Closing Trades in rTrader Pro
+Log In: Use your Rithmic credentials to access rTrader Pro.
+Navigate to Positions: Click on the "Positions" tab after logging in.
+Close the Trade: Click the red "X" next to the position you want to close.
+Emergency Trade Management
+Technical issues are an unavoidable part of trading. Here’s how to stay prepared:
+Multiple Access Points: Rithmic provides desktop, web, and mobile versions, allowing you to exit trades in case of power or internet outages .
+Backup Plan: We highly recommend installing the Rithmic mobile app to ensure you have an alternative way to manage positions.
+Using rTrader Pro as a Failsafe: If your primary platform (e.g., ArcTrader) malfunctions, rTrader Pro serves as your backup for closing trades .
+Quick Access Matters: Having multiple access points can help prevent unnecessary losses and ensure you can react swiftly.
+Best Practices for Emergency Situations
+Internet or Power Loss? Use the rTrader Pro mobile app to close trades. For technical support on the app, contact [email protected] .
+Before Logging Off: Always check rTrader Pro to confirm all positions are closed and pending orders are canceled .
+Important Considerations
+Help Desk Limitations: The Help Desk cannot adjust account balances or close trades on your behalf . Traders must manage their own accounts, just as they would in a live market.
+Flatten Accounts Feature: This function should only be used in genuine emergencies , as it may trigger multiple orders based on platform settings.
+Stay Proactive & Prepared
+At DayTraders.com , we emphasize trader responsibility and readiness . By understanding these tools and protocols, you can navigate technical challenges confidently and focus on trading success.
+If you have further questions, feel free to reach out to our support team.
+Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
+Related Articles
+Connect BookMap to Rithmic
+rTrader Pro Copier
+Connecting Quantower to Rithmic
+RTrader Pro Mobile App
+Supported Platforms
+On this page
+Why Keep rTrader Pro Open?
+Closing Trades in rTrader Pro
+Emergency Trade Management
+Best Practices for Emergency Situations
+Important Considerations
+Stay Proactive & Prepared

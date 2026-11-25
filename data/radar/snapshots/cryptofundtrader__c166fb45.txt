@@ -1,6 +1,5 @@
 Crypto Fund Trader - FAQ
-Join the waitlist
-The new terminal is coming soon
+CFT Terminal is live! Get 30% off any Evaluation on any platform with code BLACK.
 [ MENU ]
 [ Programs ] NEW
 [ How it works ]
@@ -44,6 +43,10 @@ To get started, choose the evaluation program that best fits your trading style 
 your purchase.
 Once your purchase is complete, your account credentials will be sent to you within a few minutes. After
 that, you can log in, start trading, and work toward completing the evaluation requirements.
+If you selected the CFT Terminal:
+If you don't have a CFT account yet, you will receive an email with your dashboard login credentials.
+If you already have a CFT account, you will receive a confirmation email that redirects you to your dashboard.
+Once in your dashboard ( https://app.cryptofundtrader.com/login ), go to the Terminal section to access the CFT Terminal and start trading.
 What is the evaluation?
 The evaluation is a simulated trading challenge designed to test your trading skills, risk management, and
 ability to follow the program rules.
@@ -52,7 +55,7 @@ eligible to receive performance-based rewards.
 What account sizes are available?
 Crypto Fund Trader offers different simulated account sizes depending on the program selected. Each account
 size has its own price, rules, and evaluation requirements.
-Available account sizes may vary by program, including 1-Step (Classic, Pro and Turbo), 2-Phase, and any special programs offered
+Available account sizes may vary by program, including 1-Phase (Classic, Pro and Turbo), 2-Phase, and any special programs offered
 from time to time.
 For the most up-to-date account sizes and pricing, please visit the Programs section.
 Can I earn rewards with Crypto Fund Trader?
@@ -69,8 +72,10 @@ Match-Trader:
 There are currently no country restrictions for traders using Match-Trader.
 MetaTrader 5:
 MetaTrader 5 is not available for users residing in the United States.
+CFT Terminal:
+There are currently no country restrictions for traders using the CFT Terminal, including users residing in the United States.
 Bybit:
-Crypto Fund Trader does not apply additional country restrictions for traders who choose to use Bybit.
+Bybit is not available for users residing in the United States. Crypto Fund Trader does not apply any other additional country restrictions for traders who choose to use Bybit.
 However, traders must use their own personal Bybit account and are fully responsible for complying with
 Bybit’s Terms of Service, jurisdictional restrictions, and any rules that may apply in their country of
 residence.
@@ -79,12 +84,12 @@ breach of Bybit’s terms or for any action taken by Bybit against a user’s ac
 EVALUATION PROCESS
 How do I reach the final stage?
 To reach the final stage, you must successfully complete the requirements of your selected evaluation
-program, such as the 1-Step or 2-Phase Challenge.
+program, such as the 1-Phase or 2-Phase Challenge.
 After completing the evaluation, your account may be reviewed to confirm that all program rules were
 followed. If approved, you may qualify for a simulated funded account and become eligible to receive
 performance-based rewards.
 What happens after I pass Phase 1?
-If you selected a 1-Step Evaluation (Classic, Pro or Turbo), there is only one phase: once you reach the profit target of your modality, you will receive your simulated funded account within a few minutes.
+If you selected a 1-Phase Evaluation (Classic, Pro or Turbo), there is only one phase: once you reach the profit target of your modality, you will receive your simulated funded account within a few minutes.
 If you selected the 2-Phase Evaluation and pass Phase 1, you will receive your Phase 2 account within a few
 minutes.
 What happens after I pass Phase 2?
@@ -99,15 +104,19 @@ Is there a time limit to complete the evaluation?
 No. We want to give our traders as much freedom as possible, so there is no maximum time limit to complete
 the evaluation.
 You can trade at your own pace and take the time you need.
+Is there a minimum trading days requirement?
+For 1-phase and 2-phase evaluations, traders must trade for at least 5 different days in each phase, unless
+they have purchased the applicable No Minimum Trading Days add-on. These trading days do not need to be
+consecutive.
 How are the daily and overall maximum loss limits calculated?
 Drawdown breaches are calculated based on equity.
 The daily maximum loss is calculated based on your account balance at 12:05 AM UTC each day.
 For the 2-Phase Evaluation, the daily maximum loss is 5%, and the maximum overall loss is fixed at 10% of
 the initial account balance.
-For 1-Step Evaluations, the daily maximum loss is 3% in all modalities, and the maximum overall loss is static, fixed on the initial account balance: 6% for 1-Step Classic, 5% for 1-Step Pro and 3% for 1-Step Turbo. Limits are calculated in the same way as in the 2-Phase Evaluation.
+For 1-Phase Classic, Pro and Turbo Evaluations, the daily maximum loss is 3% in all modalities, and the maximum overall loss is static, fixed on the initial account balance: 6% for 1-Phase Classic, 5% for 1-Phase Pro and 3% for 1-Phase Turbo. Limits are calculated in the same way as in the 2-Phase Evaluation.
 For the former 1-Phase Evaluation (existing accounts), the daily maximum loss is 4%, and the trailing drawdown rule applies instead of a fixed overall loss limit.
 How is the trailing drawdown calculated?
-The trailing drawdown applies only to the former 1-Phase Evaluation (existing accounts) and Break Evaluations. It does not apply to 1-Step Evaluations, which use a static maximum loss.
+The trailing drawdown applies only to the former 1-Phase Evaluation (existing accounts) and Break Evaluations. It does not apply to 1-Phase Classic, Pro and Turbo Evaluations, which use a static maximum loss.
 It is calculated based on balance, meaning it follows the account’s highest balance reached and adjusts
 accordingly as the account grows.
 For former 1-Phase evaluations only, the trailing drawdown is set at 6% of the initial account balance and moves
@@ -127,8 +136,15 @@ Liquidity Providers (Crypto, Forex, Indices, Commodities, Stocks...)
 15 Indices
 22 Commodities
 25 Stocks
+On the CFT Terminal you can trade 515 crypto pairs and more than 120 perpetual contracts on stocks, commodities, indices, forex and IPOs.
+515 Cryptocurrencies
+94 Stocks
+9 IPOs
+8 Commodities
+5 Indices
+3 Forex
 What trading platform can I use?
-Crypto Fund Trader currently offers access to Match-Trader, MetaTrader 5, and Bybit.
+Crypto Fund Trader currently offers access to Match-Trader, MetaTrader 5, Bybit and the CFT Terminal.
 The instruments available depend on the trading platform you choose.
 Match-Trader
 Match-Trader is available on web , desktop, iOS, and Android.
@@ -142,6 +158,8 @@ Demo credentials:
 Account: 123456
 Password: 7cZy-gEo
 Server: RLCrates-Live
+CFT Terminal
+The CFT Terminal is Crypto Fund Trader's own trading platform. You can access it from the Terminal section of your dashboard ( https://app.cryptofundtrader.com/login ) once your evaluation is active. No separate platform credentials are needed.
 Crypto Fund Trader also offers access through Bybit . To use Bybit,
 you must create and use your own personal Bybit account. You do not need to complete KYC on Bybit to use it
 for your Crypto Fund Trader evaluation.
@@ -149,13 +167,15 @@ What leverage is available?
 Leverage depends on the account type and the trading platform selected.
 BYBIT ACCOUNTS:
 Leverage is available up to 1:100, depending on the instrument and the conditions provided by Bybit.
+CFT TERMINAL ACCOUNTS:
+Leverage is available up to 1:100, depending on the instrument, regardless of the account size or account type.
 ADVANCED ACCOUNTS (Match-Trader & MetaTrader 5):
 Forex: 1:100 leverage
 Commodities: 1:100 leverage
 Indices: 1:100 leverage
 Cryptos: 1:100 leverage
 Stocks: 1:100 leverage
-STUDENT ACCOUNTS (CFT Platform & MetaTrader 5):
+STUDENT ACCOUNTS (Match-Trader & MetaTrader 5):
 Forex: 1:30 leverage
 Commodities: 1:30 leverage
 Indices: 1:20 leverage
@@ -164,7 +184,7 @@ Stocks: 1:5 leverage
 What are the spreads?
 Crypto Fund Trader offers competitive spreads, with examples such as EUR/USD from 0 pips and BTC/USDT from
 1 pip.
-You can check the available spreads at any time directly through Match-Trader, MetaTrader 5, or Bybit using
+You can check the available spreads at any time directly through Match-Trader, MetaTrader 5, Bybit or the CFT Terminal using
 the demo access below.
 Match-Trader Demo Credentials:
 Email: demo@cryptofundtrader.com
@@ -184,7 +204,7 @@ For evaluations carried out through Bybit, traders are subject to Bybit’s nati
 These are market fees that may vary depending on the trading pair, maker/taker classification, and volume
 tier.
 Crypto Fund Trader has no control over these fees and does not apply any additional markup.
-Match-Trader & MetaTrader 5:
+Match-Trader, MetaTrader 5 & CFT Terminal:
 Crypto: 0.0325% per side
 Commodities: 0.0005% per side
 Stocks: 0.002% per side
@@ -198,6 +218,8 @@ Bybit does not use traditional CFD swap fees. Instead, positions may be subject 
 on the market and whether the trader holds a long or short position.
 Funding rates are determined by Bybit and may vary over time. Crypto Fund Trader does not control or add
 any markup to Bybit funding rates.
+CFT Terminal
+Swap fees are not charged on the CFT Terminal. Instead, open positions may be subject to funding fees, which vary in both timing and amount depending on the instrument and market conditions. You can check the current funding fee for each instrument directly in the CFT Terminal when selecting it.
 Swap calculation — percentage per year
 Formula:
 (Lot × Long or Short / 100 / 360) × Open Price
@@ -276,7 +298,7 @@ calendar days, as long as no program rules have been violated.
 There is no maximum number of trading days in the final stage account.
 If you have the Weekly Payouts add-on, you can request a scholarship reward every 7 traded days, as long as
 all program requirements are met.
-For 1-Step accounts (Classic, Pro and Turbo), you can request a scholarship reward every 7 traded days by default. With the 48h Payout add-on, you can request it every 2 traded days.
+For 1-Phase Classic, Pro and Turbo accounts, you can request a scholarship reward every 7 traded days by default. With the 48h Payout add-on, you can request it every 2 traded days.
 To submit a request, you must do so directly from your dashboard.
 Before your scholarship reward can be processed, your KYC must be completed and approved.
 After submitting your request, you will receive an email asking for the payment details needed to process
@@ -293,11 +315,11 @@ method and provider.
 Is there any minimum or maximum trading days in final stage account?
 There is no maximum number of trading days in the final stage account. The minimum number of traded days
 required to request a scholarship reward is 15 days, or alternatively, every 30 calendar days.
-For 1-Step accounts, the minimum is 7 traded days by default, or 2 traded days with the 48h Payout add-on.
+For 1-Phase Classic, Pro and Turbo accounts, the minimum is 7 traded days by default, or 2 traded days with the 48h Payout add-on.
 What happens to my simulated profits if my final stage account is suspended?
 If your final stage account is suspended while it has simulated profits, you may still be eligible to
 receive a performance-based scholarship reward of up to 50%, as long as all required conditions are met.
-This applies only to Final Stage accounts under the 1-Step, former 1-Phase and 2-Phase evaluation types.
+This applies only to Final Stage accounts under the 1-Phase (Classic, Pro and Turbo), former 1-Phase and 2-Phase evaluation types.
 To be eligible for this review:
 All trades on the final stage account must have had a Stop Loss.
 No individual trade may have exceeded 2% risk of the account size.
@@ -311,7 +333,7 @@ All trades on the final stage account must have had a Stop Loss.
 No individual trade may have exceeded 2% risk of the account size.
 Both criteria must be met to qualify for a reset account. If eligible, you have up to 30 calendar days
 after the rule violation to request the reset. This feature applies only to Final Stage accounts under the
-1-Step, former 1-Phase and 2-Phase evaluation types.
+1-Phase (Classic, Pro and Turbo), former 1-Phase and 2-Phase evaluation types.
 The reset account price depends on the account size and evaluation type selected.
 2-Phase Reset Account Prices
 $5,000 2-phase reset account – $180.
@@ -321,33 +343,33 @@ $50,000 2-phase reset account – $1140.
 $100,000 2-phase reset account – $1880.
 $200,000 2-phase reset account – $3620.
 Former 1-Phase Reset Account Prices
-$5,000 1-phase reset account – $198.
-$10,000 1-phase reset account – $380.
-$25,000 1-phase reset account – $840.
-$50,000 1-phase reset account – $1255.
-$100,000 1-phase reset account – $2079.
-$200,000 1-phase reset account – $3980.
-1-Step Classic Reset Account Prices
-$5,000 1-Step Classic reset account – $229.
-$10,000 1-Step Classic reset account – $419.
-$25,000 1-Step Classic reset account – $999.
-$50,000 1-Step Classic reset account – $1799.
-$100,000 1-Step Classic reset account – $2999.
-$200,000 1-Step Classic reset account – $5999.
-1-Step Pro Reset Account Prices
-$5,000 1-Step Pro reset account – $149.
-$10,000 1-Step Pro reset account – $299.
-$25,000 1-Step Pro reset account – $649.
-$50,000 1-Step Pro reset account – $1249.
-$100,000 1-Step Pro reset account – $2299.
-$200,000 1-Step Pro reset account – $3999.
-1-Step Turbo Reset Account Prices
-$5,000 1-Step Turbo reset account – $95.
-$10,000 1-Step Turbo reset account – $179.
-$25,000 1-Step Turbo reset account – $435.
-$50,000 1-Step Turbo reset account – $879.
-$100,000 1-Step Turbo reset account – $1499.
-$200,000 1-Step Turbo reset account – $2599.
+$5,000 former 1-Phase reset account – $198.
+$10,000 former 1-Phase reset account – $380.
+$25,000 former 1-Phase reset account – $840.
+$50,000 former 1-Phase reset account – $1255.
+$100,000 former 1-Phase reset account – $2079.
+$200,000 former 1-Phase reset account – $3980.
+1-Phase Classic Reset Account Prices
+$5,000 1-Phase Classic reset account – $229.
+$10,000 1-Phase Classic reset account – $419.
+$25,000 1-Phase Classic reset account – $999.
+$50,000 1-Phase Classic reset account – $1799.
+$100,000 1-Phase Classic reset account – $2999.
+$200,000 1-Phase Classic reset account – $5999.
+1-Phase Pro Reset Account Prices
+$5,000 1-Phase Pro reset account – $149.
+$10,000 1-Phase Pro reset account – $299.
+$25,000 1-Phase Pro reset account – $649.
+$50,000 1-Phase Pro reset account – $1249.
+$100,000 1-Phase Pro reset account – $2299.
+$200,000 1-Phase Pro reset account – $3999.
+1-Phase Turbo Reset Account Prices
+$5,000 1-Phase Turbo reset account – $95.
+$10,000 1-Phase Turbo reset account – $179.
+$25,000 1-Phase Turbo reset account – $435.
+$50,000 1-Phase Turbo reset account – $879.
+$100,000 1-Phase Turbo reset account – $1499.
+$200,000 1-Phase Turbo reset account – $2599.
 Evaluation rules
 ALL PHASES/FUNDED ACCOUNT
 Reverse Trading Rule
@@ -403,6 +425,26 @@ designed to take advantage of the simulated trading environment, pricing delays,
 latency, or any other condition that does not reflect normal market trading.
 Prohibited strategies include, but are not limited to, news scalping EAs, arbitrage EAs, multi-account
 reverse trading EAs, or any similar system designed to exploit the platform or data feed.
+CFT Terminal
+What is the CFT Terminal?
+The CFT Terminal is Crypto Fund Trader's own trading platform, available as an alternative to Match-Trader, MetaTrader 5 and Bybit.
+How do I access the CFT Terminal?
+After your purchase:
+If you don't have a CFT account yet, you will receive an email with your dashboard login credentials.
+If you already have a CFT account, you will receive a confirmation email that redirects you to your dashboard.
+Once in your dashboard ( https://app.cryptofundtrader.com/login ), go to the Terminal section to access the CFT Terminal and start trading. The CFT Terminal does not have its own login credentials: you always access it through your dashboard.
+Which evaluations are available on the CFT Terminal?
+The CFT Terminal is available for the 1-Phase (Classic, Pro and Turbo) and 2-Phase evaluations.
+Which instruments can be traded?
+On the CFT Terminal you can trade 515 crypto pairs and more than 120 perpetual contracts on stocks, commodities, indices, forex and IPOs.
+What is the available leverage?
+All CFT Terminal accounts have leverage of up to 1:100, depending on the instrument, regardless of the account size or account type.
+What are the trading fees?
+The CFT Terminal has the same commissions as Match-Trader and MetaTrader 5. You can check them in the "What are the commissions?" section.
+Are swap fees charged?
+No. Swap fees are not charged on the CFT Terminal. Open positions may be subject to funding fees instead, which vary in both timing and amount. You can check the current funding fee for each instrument directly in the CFT Terminal when selecting it.
+Which countries are allowed?
+There are currently no country restrictions for traders using the CFT Terminal, including users residing in the United States.
 Last updates faq
 BYBIT PLATFORM
 How to create an account and connect the API key
@@ -411,7 +453,7 @@ an
 API Key must be generated and connected to the Crypto Fund Trader dashboard. Full instructions are provided
 during the onboarding. The API Key must remain active and unchanged throughout the entire evaluation period.
 Which countries are allowed?
-Crypto Fund Trader does not apply any additional country restrictions to users who choose to complete their
+Bybit is not available for users residing in the United States. Crypto Fund Trader does not apply any other additional country restrictions to users who choose to complete their
 evaluation through Bybit.
 However, all traders must use their own personal Bybit account and are fully responsible for complying with
 Bybit’s Terms of Service, jurisdictional restrictions, and any rules that may apply in their country of
@@ -438,28 +480,29 @@ Review the full fee structure directly on Bybit at the following link .
 What is the available leverage?
 Bybit evaluations offer leverage of up to 1:100. The available leverage may depend on the instrument traded
 and the conditions provided by Bybit.
-1-STEP EVALUATIONS
-What are the 1-Step Evaluations?
-The 1-Step Evaluations (Classic, Pro and Turbo) are single-phase evaluations with no time limit, available from $5,000 to $200,000. You pass the evaluation once you reach the profit target of your modality without breaching any rule. They replace the former 1-Phase and Instant Evaluations.
-What are the rules of each 1-Step Evaluation?
-1-Step Classic: 3% daily loss · 6% max loss · 10% profit target
-1-Step Pro: 3% daily loss · 5% max loss · 12% profit target
-1-Step Turbo: 3% daily loss · 3% max loss · 9% profit target
+1-PHASE EVALUATIONS (CLASSIC, PRO, TURBO)
+What are the 1-Phase Classic, Pro and Turbo Evaluations?
+The 1-Phase Classic, Pro and Turbo Evaluations are single-phase evaluations with no time limit, available from $5,000 to $200,000. You pass the evaluation once you reach the profit target of your modality without breaching any rule. They replace the former 1-Phase and Instant Evaluations.
+What are the rules of each 1-Phase Evaluation?
+1-Phase Classic: 3% daily loss · 6% max loss · 10% profit target
+1-Phase Pro: 3% daily loss · 5% max loss · 12% profit target
+1-Phase Turbo: 3% daily loss · 3% max loss · 9% profit target
 The maximum loss is static and fixed on the initial balance; it does not trail. Daily loss is calculated on the balance at 12:05 AM UTC, as in the 2-Phase Evaluation.
-What is the maximum allocation in the 1-Step Evaluation?
-1-Step accounts are included in the standard maximum allocation of $300,000 per user, together with 2-Phase and former 1-Phase Final Stage accounts.
-What leverage is available in the 1-Step Evaluation?
+What is the maximum allocation in the 1-Phase Classic, Pro and Turbo Evaluations?
+1-Phase Classic, Pro and Turbo accounts are included in the standard maximum allocation of $300,000 per user, together with 2-Phase and former 1-Phase Final Stage accounts.
+What leverage is available in the 1-Phase Classic, Pro and Turbo Evaluations?
 $5,000, $10,000 and $25,000 accounts are Student accounts. $50,000, $100,000 and $200,000 accounts are Advanced accounts.
+On the CFT Terminal, all accounts have leverage of up to 1:100, depending on the instrument, regardless of the account type.
 Check the account types here .
 How can I request a scholarship reward?
 You can request a scholarship reward every 7 traded days by default, or every 2 traded days with the 48h Payout add-on, as long as no program rules have been violated.
 To submit a request, you must do so directly from your dashboard.
 Before your scholarship reward can be processed, your KYC must be completed and approved.
 All trades must be closed before submitting a scholarship reward request. If any trades remain open, they may be manually closed.
-Can I reset my 1-Step Final Stage account?
-Yes. 1-Step Final Stage accounts can be reset under the same conditions as other evaluations. Check the reset criteria and prices in the Final Stage Account section.
+Can I reset my 1-Phase Classic, Pro or Turbo Final Stage account?
+Yes. 1-Phase Classic, Pro and Turbo Final Stage accounts can be reset under the same conditions as other evaluations. Check the reset criteria and prices in the Final Stage Account section.
 Which add-ons are available?
-48h Payout (+20%), available exclusively for 1-Step evaluations, and 90% Bonus Performance (+20%). Drawdown add-ons and the Weekly Scholarship Request are not available for 1-Step evaluations, since scholarship requests every 7 traded days are already included by default.
+48h Payout (+20%), available exclusively for 1-Phase Classic, Pro and Turbo evaluations, and 90% Bonus Performance (+20%). Drawdown add-ons and the Weekly Scholarship Request are not available for these evaluations, since scholarship requests every 7 traded days are already included by default.
 BREAK EVALUATION
 What is the maximum allocation in the Break Evaluation?
 For Break accounts, traders are not allowed to hold more than five (5) Final Stage accounts at the same
@@ -621,15 +664,15 @@ eligibility to receive up to 90% of the performance-based scholarship reward.
 6%.
 – Max Drawdown 12%: This add-on costs 25% of the evaluation price and increases the maximum loss limit to
 12%.
-Available add-ons for 1-Step Evaluations (Classic, Pro, Turbo):
-48h Payout: This add-on costs 20% of the evaluation price and allows traders to request a scholarship reward every 2 traded days. Available exclusively for 1-Step evaluations.
+Available add-ons for 1-Phase Evaluations (Classic, Pro, Turbo):
+48h Payout: This add-on costs 20% of the evaluation price and allows traders to request a scholarship reward every 2 traded days. Available exclusively for 1-Phase Classic, Pro and Turbo evaluations.
 90% Bonus Performance: This add-on costs 20% of the evaluation price and increases the trader's eligibility to receive up to 90% of the performance-based scholarship reward.
-1-Step evaluations include scholarship requests every 7 traded days by default.
+1-Phase Classic, Pro and Turbo evaluations include scholarship requests every 7 traded days by default.
 Can I purchase multiple evaluations with add-ons?
 Yes. You can purchase multiple evaluations with add-ons in the same order.
 The final price will be calculated based on the total price of the selected evaluations and add-ons. Each
 account will be created with the add-ons selected during purchase.
-If your cart includes a 1-Step Evaluation, drawdown add-ons and the Weekly Scholarship Request will not be available for that evaluation.
+If your cart includes a 1-Phase Classic, Pro or Turbo Evaluation, drawdown add-ons and the Weekly Scholarship Request will not be available for that evaluation.
 Get in touch!
 CRYPTO FUND TRADER IS AN EVALUATION FIRM WHERE WE BOOST THE BEST
 TRADERS IN ADDITION TO TESTING THEIR QUALITIES.

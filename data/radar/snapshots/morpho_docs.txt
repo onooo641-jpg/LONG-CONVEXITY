@@ -3,7 +3,8 @@ Docs Get Started Learn Curate Developers API reference
 Search ⌘ K
 Launch App
 Get Started
-Introduction Morpho Products Customer Stories Resources Whitepapers Morpho Apps Morpho Interface Listing Policy Contract Addresses Morpho Blog Landing Page Data Page Brand Assets Disclaimer
+Introduction Morpho Products Customer Stories Resources Whitepapers Morpho Apps Vault App Interface Listing Policy
+Contract Addresses Morpho Blog Landing Page Data Page Brand Assets Disclaimer
 Morpho Docs
 Learn how Morpho works, explore its products, and build on the open credit network.
 What can I help you with?

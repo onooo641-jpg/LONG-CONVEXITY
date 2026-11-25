@@ -33,7 +33,7 @@ Understanding the "Rithmic's Order Plant Guardian Has Disabled Your User ID" Err
 Can't Login, Rithmic
 Understanding Your rTrader Pro: Column Breakdown
 Understanding Account Colors in rTrader Pro
-Handling Technical Issues and Managing Positions in R-Trader Pro
+Handling Technical Issues and Managing Positions in rTrader Pro
 rTrader Pro Copier
 Sierra Charts
 Wealthcharts
@@ -55,5 +55,5 @@ Understanding the "Rithmic's Order Plant Guardian Has Disabled Your User ID" Err
 Can't Login, Rithmic
 Understanding Your rTrader Pro: Column Breakdown
 Understanding Account Colors in rTrader Pro
-Handling Technical Issues and Managing Positions in R-Trader Pro
+Handling Technical Issues and Managing Positions in rTrader Pro
 rTrader Pro Copier

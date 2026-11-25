@@ -29,7 +29,7 @@ Sign Up
 Sign Up
 Live Funded Account
 ‍ trading rules
-Last updated: July 1, 2026. These rules apply to all activity in your Live Funded Account and are part of the agreement you accepted with TopstepFunded LLC (“Topstep”). By using a Live Funded Account, you confirm that you understand and agree to follow all of these rules and any updates we make.
+Last updated: November 24, 2026. These rules apply to all activity in your Live Funded Account and are part of the agreement you accepted with TopstepFunded LLC (“Topstep”). By using a Live Funded Account, you confirm that you understand and agree to follow all of these rules and any updates we make.
 How these rules work
 These rules work alongside your Live Funded Account Agreement. If there is ever a conflict between the two, these rules take precedence.
 ​
@@ -57,7 +57,7 @@ Your Live Funded Account includes two key values:
 Topstep allows traders to have one active Live Funded Account at a time. This step determines the account size of your Live Funded Account if you have multiple Express Funded Account sizes .
 Your Live Funded Account size is based on the average account size of your active and eligible Express Funded Accounts.
 Only accounts with at least one payout are included
-The average is rounded up to the next tier of $50K, $100K, or $150K
+The average is rounded up to the next tier of 25k, $50k, $100k, $150k, or $250k
 Your Live Funded Account maximum starting balance, rules, and limits are based on this capped size
 2. Starting balance and unlock structure
 Your actual Starting Balance is based on the combined total balance of your eligible Express Funded Accounts, up to your Live Account maximum starting balance.
@@ -65,7 +65,7 @@ Example : 2×$50K + $100K + $150K → $87.5K average → rounds to $100K Live si
 At Live activation:
 20% of your combined total balance is available for trading
 The remaining balance unlocks in 25% increments through performance milestones
-Each unlock releases 25% of your reserve balance , until you reach your Live Account starting balance
+Each unlock releases 25% of your reserve balance , until you reach your Live Account combined total balance
 Topstep may make discretionary exceptions for select traders based on performance and risk evaluation.
 Balance expansion through performance
 Additional available balance becomes accessible through net profit milestones achieved in the Live Funded Account. These milestones are the same profit targets achieved in the Trading Combine.

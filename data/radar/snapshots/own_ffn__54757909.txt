@@ -21,12 +21,12 @@ Every completed trader payout, straight from our payout ledger. Names are masked
 Accounts
 300,000+
 Total payouts
-2,846
+2,848
 Total paid
-$5,332,455
-Live ledger Updated Nov 23, 2026 Identities masked
+$5,334,973
+Live ledger Updated Nov 24, 2026 Identities masked
 Total paid over time
-Nov 26 $5,332,455 paid to date
+Nov 26 $5,334,973 paid to date
 Payout history
 Trader
 Paid date
@@ -34,6 +34,18 @@ Method
 Requested
 Paid
 Receipt
+R••••• B•••••
+24 Nov 2026
+Rise
+Requested $1,364
+$1,364
+View receipt
+J•••• T••
+24 Nov 2026
+Rise
+Requested $1,154
+$1,154
+View receipt
 J•••• L•••••
 23 Nov 2026
 Rise
@@ -81,18 +93,6 @@ J•••• B••••
 Rise
 Requested $1,000
 $1,000
-View receipt
-M••••• B•••••
-23 Nov 2026
-Rise
-Requested $750
-$750
-View receipt
-N••••• M•••••
-23 Nov 2026
-Rise
-Requested $1,350
-$1,350
 View receipt
 Newer
 Page 1 of 285

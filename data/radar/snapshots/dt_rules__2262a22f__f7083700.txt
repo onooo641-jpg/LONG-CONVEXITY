@@ -33,7 +33,7 @@ Understanding the "Rithmic's Order Plant Guardian Has Disabled Your User ID" Err
 Can't Login, Rithmic
 Understanding Your rTrader Pro: Column Breakdown
 Understanding Account Colors in rTrader Pro
-Handling Technical Issues and Managing Positions in R-Trader Pro
+Handling Technical Issues and Managing Positions in rTrader Pro
 rTrader Pro Copier
 Sierra Charts
 Wealthcharts
@@ -89,8 +89,8 @@ By using the copier, traders acknowledge that it is their responsibility to mana
 ​
 Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
 Related Articles
-Market Volatility Advisory
 Connecting Finamark to Rithmic
+Handling Technical Issues and Managing Positions in rTrader Pro
 Connect WealthCharts to Rithmic
 Risk Management - Rithmic rTrader
 Supported Platforms

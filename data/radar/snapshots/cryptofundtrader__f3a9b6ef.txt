@@ -85,8 +85,8 @@ ii. periodic maintenance procedures or repairs that the Company may carry out oc
 iii. causes beyond the Company’s control or that are not reasonably foreseeable by the Company.
 3. Account management
 3.1.   Account Registration
-3.1.1 When you purchase one of our training packages, you will receive credentials to trade demo
-on the Crypto Fund Trader platform, the MetaTrader 5 platform or the Bybit platform.
+3.1.1 When you purchase one of our training packages, you will receive access to trade demo
+on the Match-Trader platform, the MetaTrader 5 platform, the Bybit platform or the CFT Terminal.
 3.1.2 You may not share your password with anyone except authorized employees.
 3.1.3 You must always provide accurate, current, and complete information, and must update such
 information in a timely manner to maintain its accuracy and completeness. Providing false information of any
@@ -109,6 +109,7 @@ program.
 3.2.1 Once your registration is complete, you can set up your account for our evaluation process in any of the available evaluation modalities.
 3.2.2 After you place your order and have paid our training fees, we will email your credentials within minutes
 to 48 hours for the trading platform you have chosen.
+For the CFT Terminal, the platform is accessed through the Terminal section of the user dashboard: users without a registered account will receive their dashboard login credentials by email, and users with a registered account will receive a confirmation email redirecting them to their dashboard.
 3.2.3 Crypto Fund Trader has disabled free training trials until further notice.
 3.2.4 It is strictly prohibited to lend or receive services from/for third parties of any kind, whether to boost
 accounts, offer benefits in exchange for accounts, profits, or any benefit from the site. This will be penalized
@@ -154,29 +155,29 @@ Payment will be made immediately.
 389 USD for the Crypto Fund Trader Evaluation Process with an initial demo capital of 50,000 USD
 660 USD for the Crypto Fund Trader Evaluation Process with an initial demo capital of 100,000 USD
 1250 USD for the Crypto Fund Trader Evaluation Process with an initial demo capital of 200,000 USD
-5.6.2 1-Step Evaluations:
-1-Step Classic:
-59 USD for the Crypto Fund Trader 1-Step Classic Evaluation Process with an initial demo capital of 5,000 USD
-109 USD for the Crypto Fund Trader 1-Step Classic Evaluation Process with an initial demo capital of 10,000 USD
-269 USD for the Crypto Fund Trader 1-Step Classic Evaluation Process with an initial demo capital of 25,000 USD
-495 USD for the Crypto Fund Trader 1-Step Classic Evaluation Process with an initial demo capital of 50,000 USD
-949 USD for the Crypto Fund Trader 1-Step Classic Evaluation Process with an initial demo capital of 100,000 USD
-1999 USD for the Crypto Fund Trader 1-Step Classic Evaluation Process with an initial demo capital of 200,000 USD
-1-Step Pro:
-39 USD for the Crypto Fund Trader 1-Step Pro Evaluation Process with an initial demo capital of 5,000 USD
-79 USD for the Crypto Fund Trader 1-Step Pro Evaluation Process with an initial demo capital of 10,000 USD
-179 USD for the Crypto Fund Trader 1-Step Pro Evaluation Process with an initial demo capital of 25,000 USD
-349 USD for the Crypto Fund Trader 1-Step Pro Evaluation Process with an initial demo capital of 50,000 USD
-689 USD for the Crypto Fund Trader 1-Step Pro Evaluation Process with an initial demo capital of 100,000 USD
-1299 USD for the Crypto Fund Trader 1-Step Pro Evaluation Process with an initial demo capital of 200,000 USD
-1-Step Turbo:
-25 USD for the Crypto Fund Trader 1-Step Turbo Evaluation Process with an initial demo capital of 5,000 USD
-49 USD for the Crypto Fund Trader 1-Step Turbo Evaluation Process with an initial demo capital of 10,000 USD
-119 USD for the Crypto Fund Trader 1-Step Turbo Evaluation Process with an initial demo capital of 25,000 USD
-249 USD for the Crypto Fund Trader 1-Step Turbo Evaluation Process with an initial demo capital of 50,000 USD
-449 USD for the Crypto Fund Trader 1-Step Turbo Evaluation Process with an initial demo capital of 100,000 USD
-849 USD for the Crypto Fund Trader 1-Step Turbo Evaluation Process with an initial demo capital of 200,000 USD
-The former One Phase Evaluation is no longer available for purchase. Existing One Phase accounts remain subject to their current conditions.
+5.6.2 1-Phase Evaluations (Classic, Pro and Turbo):
+1-Phase Classic:
+59 USD for the Crypto Fund Trader 1-Phase Classic Evaluation Process with an initial demo capital of 5,000 USD
+109 USD for the Crypto Fund Trader 1-Phase Classic Evaluation Process with an initial demo capital of 10,000 USD
+269 USD for the Crypto Fund Trader 1-Phase Classic Evaluation Process with an initial demo capital of 25,000 USD
+495 USD for the Crypto Fund Trader 1-Phase Classic Evaluation Process with an initial demo capital of 50,000 USD
+949 USD for the Crypto Fund Trader 1-Phase Classic Evaluation Process with an initial demo capital of 100,000 USD
+1999 USD for the Crypto Fund Trader 1-Phase Classic Evaluation Process with an initial demo capital of 200,000 USD
+1-Phase Pro:
+39 USD for the Crypto Fund Trader 1-Phase Pro Evaluation Process with an initial demo capital of 5,000 USD
+79 USD for the Crypto Fund Trader 1-Phase Pro Evaluation Process with an initial demo capital of 10,000 USD
+179 USD for the Crypto Fund Trader 1-Phase Pro Evaluation Process with an initial demo capital of 25,000 USD
+349 USD for the Crypto Fund Trader 1-Phase Pro Evaluation Process with an initial demo capital of 50,000 USD
+689 USD for the Crypto Fund Trader 1-Phase Pro Evaluation Process with an initial demo capital of 100,000 USD
+1299 USD for the Crypto Fund Trader 1-Phase Pro Evaluation Process with an initial demo capital of 200,000 USD
+1-Phase Turbo:
+25 USD for the Crypto Fund Trader 1-Phase Turbo Evaluation Process with an initial demo capital of 5,000 USD
+49 USD for the Crypto Fund Trader 1-Phase Turbo Evaluation Process with an initial demo capital of 10,000 USD
+119 USD for the Crypto Fund Trader 1-Phase Turbo Evaluation Process with an initial demo capital of 25,000 USD
+249 USD for the Crypto Fund Trader 1-Phase Turbo Evaluation Process with an initial demo capital of 50,000 USD
+449 USD for the Crypto Fund Trader 1-Phase Turbo Evaluation Process with an initial demo capital of 100,000 USD
+849 USD for the Crypto Fund Trader 1-Phase Turbo Evaluation Process with an initial demo capital of 200,000 USD
+The former One Phase Evaluation (prior to the 1-Phase Classic, Pro and Turbo evaluations) is no longer available for purchase. Existing former One Phase accounts remain subject to their current conditions.
 5.6.3 Three Phases:
 30 USD for the Crypto Fund Trader Evaluation Process with an initial demo capital of 5,000 USD
 59 USD for the Crypto Fund Trader Evaluation Process with an initial demo capital of 10,000 USD
@@ -205,23 +206,24 @@ The Zero Phases/Instant Evaluation is no longer available for purchase. Existing
 198 USD as the Activation Fee for the Crypto Fund Trader Break Evaluation with an initial demo capital of 50,000 USD
 328 USD as the Activation Fee for the Crypto Fund Trader Break Evaluation with an initial demo capital of 100,000 USD
 5.7 Crypto Fund Trader Training Process Options:
-Crypto Fund Trader Evaluation Process 1-Step (Classic, Pro or Turbo), 2 Phases or 3 Phases with an initial demo capital of 5,000 USD
-Crypto Fund Trader Evaluation Process 1-Step (Classic, Pro or Turbo), 2 Phases or 3 Phases with an initial demo capital of 10,000 USD
-Crypto Fund Trader Evaluation Process 1-Step (Classic, Pro or Turbo), 2 Phases or 3 Phases with an initial demo capital of 25,000 USD
-Crypto Fund Trader Evaluation Process 1-Step (Classic, Pro or Turbo), 2 Phases or 3 Phases with an initial demo capital of 50,000 USD
-Crypto Fund Trader Evaluation Process 1-Step (Classic, Pro or Turbo), 2 Phases or 3 Phases with an initial demo capital of 100,000 USD
-Crypto Fund Trader Evaluation Process 1-Step (Classic, Pro or Turbo), 2 Phases or 3 Phases with an initial demo capital of 200,000 USD
+Crypto Fund Trader Evaluation Process 1-Phase (Classic, Pro or Turbo), 2 Phases or 3 Phases with an initial demo capital of 5,000 USD
+Crypto Fund Trader Evaluation Process 1-Phase (Classic, Pro or Turbo), 2 Phases or 3 Phases with an initial demo capital of 10,000 USD
+Crypto Fund Trader Evaluation Process 1-Phase (Classic, Pro or Turbo), 2 Phases or 3 Phases with an initial demo capital of 25,000 USD
+Crypto Fund Trader Evaluation Process 1-Phase (Classic, Pro or Turbo), 2 Phases or 3 Phases with an initial demo capital of 50,000 USD
+Crypto Fund Trader Evaluation Process 1-Phase (Classic, Pro or Turbo), 2 Phases or 3 Phases with an initial demo capital of 100,000 USD
+Crypto Fund Trader Evaluation Process 1-Phase (Classic, Pro or Turbo), 2 Phases or 3 Phases with an initial demo capital of 200,000 USD
 5.8 The commissions charged to traders in different financial markets can be modified as long as
 they contribute to the sustainability of the company and with prior notice; always with the intention of being
 able to replicate the real market in the best way and achieve the most accurate and complete practical training
 possible.
 At the current time, the fees are as follows:
-Match-Trader & MetaTrader 5:
+Match-Trader, MetaTrader 5 & CFT Terminal:
 Crypto.- 0.0325% per side.
 Commodities.- 0.0005% per side.
 Stocks.- 0.002% per side.
 Forex.- 2.5$ per lot per side.
 Indices.- 0.005% per lot per side.
+Positions on the CFT Terminal are not subject to swap fees, but may be subject to funding fees, which vary in timing and amount and are shown for each instrument in the CFT Terminal.
 Bybit platform:
 For evaluations carried out through Bybit, users will be subject to Bybit native trading fee structure. These are
 real market fees that vary depending on the trading pair, maker/taker classification, and volume tier. Crypto
@@ -236,10 +238,10 @@ scholarship consideration after just 7 active trading days within the simulation
 of the internal reward granted based on your performance in the simulation program.
 Daily Drawdown 6%: Costs 15% of the evaluation value and increases your daily loss limit to 6%.
 Maximum Drawdown 12%: Costs 25% of the value of the assessment and increases your maximum loss limit to 12%.
-1-Step Evaluations (Classic, Pro and Turbo):
-48h Payout: Costs 20% of the evaluation price and allows participants to become eligible for scholarship consideration every 2 active trading days in the Final Stage, instead of the default 7 active trading days. This AddOn is available exclusively for 1-Step evaluations.
+1-Phase Evaluations (Classic, Pro and Turbo):
+48h Payout: Costs 20% of the evaluation price and allows participants to become eligible for scholarship consideration every 2 active trading days in the Final Stage, instead of the default 7 active trading days. This AddOn is available exclusively for 1-Phase Classic, Pro and Turbo evaluations.
 90% Bonus Performance: Costs 20% of the evaluation price and increases your eligibility to receive up to 90% of the internal reward granted based on your performance in the simulation program.
-The Weekly Scholarship Request, Daily Drawdown 6% and Maximum Drawdown 12% AddOns are not available for 1-Step evaluations. Existing accounts keep the AddOns purchased with them.
+The Weekly Scholarship Request, Daily Drawdown 6% and Maximum Drawdown 12% AddOns are not available for 1-Phase Classic, Pro and Turbo evaluations. Existing accounts keep the AddOns purchased with them.
 6. Rules of demo trading
 During demo trading on the Trading Platform, you may carry out any transaction, unless they constitute prohibited
 trading strategies or operations as defined in Section 7. Restrictions may also be imposed by the conditions of
@@ -282,6 +284,8 @@ discretion.
 At this time, leverage would be as follows:
 BYBIT ACCOUNTS:
 Up to 1:100. Depending on the instrument according to the Bybit platform.
+CFT TERMINAL ACCOUNTS:
+Up to 1:100, depending on the instrument, regardless of the account size or whether it is a Student or Advanced account.
 ADVANCED ACCOUNTS (Match-Trader & MetaTrader 5):
 Forex; leverage limited to 1:100
 Commodities; leverage limited to 1:100
@@ -295,13 +299,14 @@ Indices; leverage limited to 1:20
 Cryptos; leverage limited to 1:5
 Stocks; leverage limited to 1:5
 STUDENT ACCOUNTS:
+The Student and Advanced leverage limits apply to Match-Trader and MetaTrader 5. Accounts on the CFT Terminal have leverage of up to 1:100, depending on the instrument, regardless of the account type.
 $1,000 2-Phase Evaluation
 $5,000 2-Phase Evaluation
 $10,000 2-Phase Evaluation
 $25,000 2-Phase Evaluation
-$5,000 1-Phase Evaluation
-$10,000 1-Phase Evaluation
-$25,000 1-Phase Evaluation
+$5,000 former 1-Phase Evaluation
+$10,000 former 1-Phase Evaluation
+$25,000 former 1-Phase Evaluation
 $5,000 Ascend Evaluation
 $10,000 Ascend Evaluation
 $25,000 Ascend Evaluation
@@ -314,19 +319,19 @@ $10,000 Instant Evaluation
 $25,000 Break Evaluation
 $50,000 Break Evaluation
 $100,000 Break Evaluation
-$5,000 1-Step Classic, Pro and Turbo Evaluation
-$10,000 1-Step Classic, Pro and Turbo Evaluation
-$25,000 1-Step Classic, Pro and Turbo Evaluation
+$5,000 1-Phase Classic, Pro and Turbo Evaluation
+$10,000 1-Phase Classic, Pro and Turbo Evaluation
+$25,000 1-Phase Classic, Pro and Turbo Evaluation
 ADVANCED ACCOUNTS:
 $50,000 2-Phase Evaluation
 $100,000 2-Phase Evaluation
 $200,000 2-Phase Evaluation
-$50,000 1-Phase Evaluation
-$100,000 1-Phase Evaluation
-$200,000 1-Phase Evaluation
-$50,000 1-Step Classic, Pro and Turbo Evaluation
-$100,000 1-Step Classic, Pro and Turbo Evaluation
-$200,000 1-Step Classic, Pro and Turbo Evaluation
+$50,000 former 1-Phase Evaluation
+$100,000 former 1-Phase Evaluation
+$200,000 former 1-Phase Evaluation
+$50,000 1-Phase Classic, Pro and Turbo Evaluation
+$100,000 1-Phase Classic, Pro and Turbo Evaluation
+$200,000 1-Phase Classic, Pro and Turbo Evaluation
 7. Prohibited trading strategies or transactions
 7.1 DURING THE EVALUATION OPERATIONS AND “FINAL STAGE TRADER”, IT IS STRICTLY PROHIBITED TO
 CARRY OUT ANY OF THE ACTIONS MENTIONED BELOW:
@@ -376,8 +381,7 @@ While in this case, future modification could be made if deemed appropriate.
 xiv. Hedging or reverse trading.
 xv. We are a trading training company, so we do not allow in any case the non-investment, i.e.,
 gambling; being the company’s choice the right to decide on such consideration.
-xvi. The use of the platforms as well as resets or migrations in MT5 to all new users belonging
-to the United States is restricted.
+xvi. The use of the MetaTrader 5 and Bybit platforms, as well as resets or migrations in MT5, is restricted for all new users residing in the United States. This restriction does not apply to Match-Trader or the CFT Terminal.
 xvii. Any disrespect by the user to the Staff or to the Crypto Fund Trader company through any
 communication channel will result in the indefinite suspension of the user.
 xviii. Attempting to request funds from the Bybit demo account used during the evaluation. This
@@ -454,8 +458,11 @@ No country restrictions.
 MetaTrader 5:
 Access to this platform is not available to users residing in the United
 States.
+CFT Terminal:
+No country restrictions. Access is available to users residing in the United
+States. The CFT Terminal is available for the 1-Phase (Classic, Pro and Turbo) and 2-Phase evaluations and is accessed through the Terminal section of the user dashboard.
 Bybit platform:
-Crypto Fund Trader does not impose any country restrictions on users who
+Access to the Bybit platform is not available to users residing in the United States. Crypto Fund Trader does not impose any other country restrictions on users who
 choose to evaluate via Bybit. However, all traders must use their own personal Bybit accounts and are fully
 responsible for complying with Bybit Terms of Service and jurisdictional restrictions.
 Traders from such countries may use Bybit demo accounts at their own discretion and risk. Crypto Fund Trader is
@@ -466,7 +473,7 @@ parameters at the same time by the end of the trading period:
 i. At no time during the ‘2 Phases’ Evaluation or ‘Ascend’ Evaluation Process or Final Stage account have you
 registered losses in any open or closed demo trades on the same day, which exceeded in total 5% of your balance
 at 12:05 AM UTC or 10% of the initial demo balance.
-ii. At no time during the former ‘1 Phase’ Evaluation Process (accounts purchased before the launch of the 1-Step evaluations) or Final Stage have you registered losses in any open or
+ii. At no time during the former ‘1 Phase’ Evaluation Process (accounts purchased before the launch of the 1-Phase Classic, Pro and Turbo evaluations) or Final Stage have you registered losses in any open or
 closed demo trades on the same day, which exceeded in total 4% of your balance at 12:05 AM UTC or 6% based on
 the maximum demo balance until you make a 6% demo profit, at which point your trailing drawdown will remain
 static at the account’s opening balance.
@@ -479,7 +486,7 @@ maximum demo account balance. Once your account has made profits over 4% in the 
 the trailing drawdown locks in the initial accounts balance.
 iv. If you have reached the demo Profit Goal of 8% of the demo initial capital in Phase 1 or the
 demo Profit Goal of 5% of the demo initial capital in Phase 2, in the 2-phase or ‘Ascend’
-evaluations; or 10% in the former 1-phase evaluation; or 10% in the 1-Step Classic, 12% in the 1-Step Pro and 9% in the 1-Step Turbo evaluation; or the demo Profit Target of 5% of the initial
+evaluations; or 10% in the former 1-phase evaluation; or 10% in the 1-Phase Classic, 12% in the 1-Phase Pro and 9% in the 1-Phase Turbo evaluation; or the demo Profit Target of 5% of the initial
 demo capital in Phase 1, Phase 2 and Phase 3 of the 3-phase evaluation; or, in the case of
 ‘Break’ evaluations, the demo Profit Target of 5% of the initial demo capital for $25,000
 evaluations, or 6% of the initial demo capital for $50,000 and $100,000 evaluations, and
@@ -511,7 +518,7 @@ The applicable Activation Fees are as follows:
 An activation fee of 138 USD for the USD 25,000 ‘Break’ evaluation.
 An activation fee of 198 USD for the USD 50,000 ‘Break’ evaluation.
 An activation fee of 328 USD for the USD 100,000 ‘Break’ evaluation.
-viii. At no time during the '1-Step' Evaluation Process or its Final Stage may the trader register losses in any open or closed demo trades on the same day which exceed in total 3% of the balance at 12:05 AM UTC, or which exceed in total the following percentage of the initial demo balance: 6% in the 1-Step Classic, 5% in the 1-Step Pro and 3% in the 1-Step Turbo. This maximum loss limit is static and remains fixed on the initial demo balance, without moving with demo profits. The '1-Step' evaluations consist of a single phase with no time limit, and the Provider will assess the evaluation as successful once the demo Profit Target set out in point iv has been reached without violating the terms, particularly the rules of demo trading under Section 7. In the Final Stage, the trader may request a scholarship after 7 traded days, or every 2 traded days if the 48h Payout AddOn has been purchased. The 1-Step Final Stage accounts are included in the maximum capital allocation set out in the website's FAQ.
+viii. At no time during the '1-Phase Classic', '1-Phase Pro' or '1-Phase Turbo' Evaluation Process or its Final Stage may the trader register losses in any open or closed demo trades on the same day which exceed in total 3% of the balance at 12:05 AM UTC, or which exceed in total the following percentage of the initial demo balance: 6% in the 1-Phase Classic, 5% in the 1-Phase Pro and 3% in the 1-Phase Turbo. This maximum loss limit is static and remains fixed on the initial demo balance, without moving with demo profits. These evaluations consist of a single phase with no time limit, and the Provider will assess the evaluation as successful once the demo Profit Target set out in point iv has been reached without violating the terms, particularly the rules of demo trading under Section 7. In the Final Stage, the trader may request a scholarship after 7 traded days, or every 2 traded days if the 48h Payout AddOn has been purchased. The 1-Phase Classic, Pro and Turbo Final Stage accounts are included in the maximum capital allocation set out in the website's FAQ.
 ix. The purpose of the Evaluation Process is to assess the trading approach that the trader will apply in the Final Stage. Accordingly, the trading strategy, risk management and general trading style used during the evaluation phase(s) are expected to be reasonably consistent with those used in the Final Stage. The Crypto Fund Trader team may review the trading activity of any account, including before processing a scholarship request, and may consider, among other factors, position sizing, risk per trade, instruments traded, holding times and the overall risk profile across both stages. Natural adaptations to market conditions are part of normal trading and are not, by themselves, considered a change of strategy. Where the review identifies a substantial difference between the trading approach used in the evaluation and the one used in the Final Stage, the team may, at its discretion, contact the trader for clarification, request an interview as set out in Section 6, ask the trader to continue trading before a request is processed, adjust the eligible scholarship amount, or apply any of the measures set out in Section 7.2. These measures are assessed on a case-by-case basis and do not, by themselves, imply the termination of the account.
 9. Crypto fund trader ‘final stage trader’
 In case the Client successfully completes the Evaluation Process of the selected modality, the Client must sign an

@@ -29,23 +29,23 @@ Sign in Start
 Payout Transparency
 We send USDT payouts on Tron or Solana and USDC payouts on Solana or Arbitrum. The ones we publish for verification are the Solana payouts, with public transaction links you can check yourself. Traders can hide their name and transaction id in the user account.
 Total Paid to Traders
-$9,690,050
+$9,710,050
 Profit-split payouts to funded traders since 2023.
 On-Chain Payouts
-$1,720,512
+$1,737,650
 View on Solscan
 On-chain payouts launched on the Solana network in April 2026.
 Largest Payout, Last 90 Days
 $7,859
 Biggest single payout in the last 90 days.
 Average Payout
-$1,530
+$1,527
 Average amount received per payout across all funded traders.
 Paid in the Last 30 Days
-$460,872
+$461,051
 Sent to funded traders in the last 30 days.
 Avg. Payout Processing Time
-15h 58m
+15h 54m
 From request to on-chain confirmation.
 Payout Requests Approved
 99.8%
@@ -58,21 +58,21 @@ Cumulative Daily
 7d 30d 90d All
 Payouts to funded traders over time.
 Total Paid
-$9,690,050
+$9,710,050
 Verify Payouts
 Payouts sent on Solana carry a public transaction id.
 Time Network TXID Amount Verify
-16 hours ago Solana 3mMSC8…Jr7t24 $1,854.03 Solscan
-16 hours ago Solana 46rvvF…1RvF2E $783.00 Solscan
-16 hours ago Solana 5d7Hho…qfyRqa $225.72 Solscan
-16 hours ago Solana 3nSooy…LeJ2ec $997.69 Solscan
-16 hours ago Solana 22YLVo…m4oZMe $1,817.50 Solscan
-16 hours ago Solana 5yQjJs…vGTKEr $1,311.64 Solscan
-16 hours ago Solana 2mvrRH…gipihp $272.70 Solscan
-16 hours ago Solana 2SeVAJ…RZkjcx $421.54 Solscan
-16 hours ago Solana 4Ckucf…MasGzd $150.00 Solscan
-16 hours ago Solana X5DhKX…igkn7E $300.00 Solscan
-Page 1 of 224 Previous Next
+16 hours ago Solana 3xNpfU…aMZ2SK $2,108.98 Solscan
+16 hours ago Solana yhvT8y…cLoXu3 $2,973.52 Solscan
+16 hours ago Solana 3hdD3g…4auhiK $866.84 Solscan
+16 hours ago Solana 5tENGs…7f71HS $1,781.82 Solscan
+16 hours ago Solana 3jn6Z7…FTgVxh $1,048.00 Solscan
+16 hours ago Solana gPA4eY…P5bJ3R $492.00 Solscan
+16 hours ago Solana jsz6Bg…3su56K $659.00 Solscan
+16 hours ago Solana 4qZvwm…RCzj27 $3,977.46 Solscan
+16 hours ago Solana 4c8c2d…EMDQyY $200.00 Solscan
+16 hours ago Solana fiHknj…uhAcD2 $231.06 Solscan
+Page 1 of 226 Previous Next
 On-Chain Wallets
 Wallet
 Payout Wallet (Solana)

@@ -1,0 +1,257 @@
+Signature Plans - A Comprehensive Guide | My Funded Futures Help Center Skip to main content
+Go to website Discord YouTube English हिन्दी Español English
+Go to website Discord YouTube English हिन्दी Español English
+Search for articles...
+All Collections
+Signature Plans
+Signature Plans - A Comprehensive Guide
+Signature Plans - A Comprehensive Guide
+Updated yesterday
+Table of contents
+Signature plans are MyFundedFutures' line of distinct plan structures.
+Each Signature plan has its own evaluation and payout rules.
+The plans formerly released under Studio are now Signature 5k, Signature 10k and Signature 20k. All three share the same rules and payouts, with one loss rule to remember: a static Max Loss Limit (MLL).
+Signature plans are sold only on the dedicated Signature page ( http://myfundedfutures.com/plans/signature ).
+At a glance
+Signature 5k
+Signature 10k
+Signature 20k
+Account size
+$5,000
+$10,000
+$20,000
+Price (one-time)
+$75
+$140
+$280
+Activation fee
+$0
+$0
+$0
+Profit target (Evaluation)
+$500
+$1,000
+$2,000
+Max Loss Limit (static)
+$250
+$500
+$1,000
+Max contracts
+5 micros (no minis)
+10 micros (no minis)
+20 micros (no minis)
+Daily Loss Limit
+None
+None
+None
+Consistency rule
+None
+None
+None
+Minimum trading days
+None
+None
+None
+Sim Funded daily profit cap
+$2,500
+$5,000
+$10,000
+Profit split (Sim Funded)
+80/20
+80/20
+80/20
+Profit split (Live)
+90/10
+90/10
+90/10
+What makes Signature different
+Static Max Loss Limit — Your MLL is set when the account starts and never moves. There is no trailing drawdown and no end-of-day reset of the floor during Evaluation or Sim Funded.
+No Daily Loss Limit — There is no soft pause or hard daily loss limit on Signature.
+No consistency rule — Not in Evaluation and not in Sim Funded.
+Payouts anytime — On Sim Funded, you can request all (or part) of your net profits anytime once positions are closed. Minimum $100/$250 before the split. No waiting period, buffer, or qualifying days.
+Evaluation stage
+Hit the profit target without breaching the Max Loss Limit to pass. There is no minimum trading-day requirement and no consistency rule.
+Parameter
+Signature 5k
+Signature 10k
+Signature 20k
+Starting balance
+$5,000
+$10,000
+$20,000
+Profit target
+$500
+$1,000
+$2,000
+Max Loss Limit
+$250 (static)
+$500 (static)
+$1,000 (static)
+Daily Loss Limit
+None
+None
+None
+Consistency
+None
+None
+None
+Minimum trading days
+None
+None
+None
+Max contracts
+5 micros · no minis
+10 micros · no minis
+20 micros · no minis
+News trading
+Allowed
+Allowed
+Allowed
+Inactivity
+7 calendar days
+7 calendar days
+7 calendar days
+Once you reach the profit target without breaching the MLL, you are promoted to Sim Funded.
+Sim Funded stage
+Your Sim Funded account begins at a $0 balance. The same static MLL and contract limits from Evaluation carry through.
+Parameter
+Signature 5k
+Signature 10k
+Signature 20k
+Starting balance
+$0
+$0
+$0
+Max Loss Limit
+$250 (static)
+$500 (static)
+$1,000 (static)
+Daily Loss Limit
+None
+None
+None
+Consistency
+None
+None
+None
+Daily profit cap
+$2,500
+$5,000
+$10,000
+Max contracts
+5 micros · no minis
+10 micros · no minis
+20 micros · no minis
+News trading
+Allowed
+Allowed
+Allowed
+Inactivity
+7 calendar days
+7 calendar days
+7 calendar days
+Active accounts
+1 Signature Account
+(Evaluation or Sim Funded)
+1 Signature Account
+(Evaluation or Sim Funded)
+1 Signature Account
+(Evaluation or Sim Funded)
+Daily profit cap
+On a Sim Funded account, net realized profit above the daily cap in a single trading day is forfeited and cannot be withdrawn:
+Signature 5k: $2,500
+Signature 10k: $5,000
+Signature 20k: $10,000
+Anything at or under the cap for that day remains available under normal payout rules.
+Payout policy (Sim Funded)
+Parameter
+Signature Plans
+Profit split
+80/20 - 80% to the trader
+When you can request
+Anytime
+What you can request
+Net profits above $0 — all or part
+Minimum request
+Signature 10k and 20k - $250
+Signature 5k - $100
+All requests are gross profits before profit split.
+Waiting period / buffer / qualifying days
+None
+Payout request steps
+Close all positions and request at least
+$250 in the dashboard for Signature 10k and 20k
+$100 in the dashboard for Signature 5k
+Wait until the amount is deducted before trading again.
+Our team will review your request and process your payout.
+Requests are subject to plan terms, eligibility, and review.
+Transition to Live
+You become eligible for a Live account after 5 approved payouts or
+$5,000 total requested
+Parameter
+Signature 5k
+Signature 10k and 20k
+Live starting balance
+40% of total amount requested, capped at $2,000
+40% of total amount requested, capped at $2,000
+Live drawdown
+End-of-day trailing Max Loss Limit
+End-of-day trailing Max Loss Limit
+Live MLL
+Equal to Live starting balance; trails EOD and locks at $100
+Equal to Live starting balance; trails EOD and locks at $100
+Live profit split
+90/10
+90/10
+Live minimum payout
+$250
+$250
+Live payout frequency
+One request per day
+One request per day
+Live max contracts
+1 mini / 10 micro
+Same as the plan (10 or 20 micros · no minis)
+Our team may contact you at any point during your Sim Funded stage to initiate a transition to a Live account.
+When you move to Live, the Sim Funded account that triggered the move is closed. Your other accounts stay dormant.
+How to buy Signature
+Visit the Signature page .
+Choose one of the Signature plans and follow the checkout steps.
+Pay by card or crypto.
+FAQ
+What is the difference between Signature 5k, 10k and 20k?
+Same plan shape at two sizes:
+Signature 5k is $5k (MLL $250, 5 micros, $2,500 daily profit cap).
+Signature 10k is $10K (MLL $500, 10 micros, $5K daily profit cap).
+Signature 20k is $20K at (MLL $1,000, 20 micros, $10K daily profit cap).
+Rules and payouts are otherwise the same.
+How does the Max Loss Limit work?
+It is static. It is set when the account starts and never moves during Evaluation or Sim Funded.
+When can I request a payout?
+Anytime on Sim Funded once your positions are closed.
+Minimum $100 on Signature 5k
+Minimum $250 on Signature 10k and 20k
+Is there a limit on daily profits?
+Yes, on Sim Funded only. Net realized profit above:
+$2,500 (Signature 5k)
+$5,000 (Signature 10k)
+$10,000 (Signature 20k)
+Can I have more than one Signature account?
+No. One active Signature account at a time — either Evaluation or Sim Funded.
+Which platform do Signature accounts use?
+Hyperprop only. More platforms coming soon.
+When do I become eligible for Live?
+After 5 approved payouts or $5,000 total requested. Live starts at 40% of total requested, up to $2,000. Our team may also move you earlier.
+​ Are there activation fees?
+No. There are no activation fees for any of our Signature Plans.
+Is news trading allowed?
+Yes.
+Signature plan terms are defined in your Sim Funded agreements.
+Related Articles
+Builder Plan 50k - A Comprehensive Guide
+Flex Plan - $50,000 / A Comprehensive Guide
+Builder Plan 100k - Comprehensive Guide
+Builder Plan 150k - Comprehensive Guide
+Comprehensive Look into Redesigned Pro Plan
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

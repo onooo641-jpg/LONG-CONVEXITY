@@ -7,7 +7,7 @@ Rapid Plans
 Rapid Plans - Path to Live
 Rapid Plan - Reserve Program & Performance Bonus Structure
 Rapid Plan - Reserve Program & Performance Bonus Structure
-October 21, 2026
+Updated today
 Table of contents
 Scope of the 21-day cooldown: This policy applies only when a Live account is closed because of a Maximum Loss breach. It is not a general reset rule and must not be used for evaluation or Sim Funded breaches, reset coupons, or any question where the account stage and plan are not confirmed.
 Upon Live account transition, up to $5,000 of Sim Funded profits are held within a Reserve Program balance.
@@ -18,9 +18,7 @@ Upon satisfying both conditions:
 Traders receive a Performance Bonus equivalent to their remaining Reserve Program balance.
 ​
 When more than one account transitions to Live, their reserve balances are unlocked together as a single performance bonus. The required profits are proportional to the number of Rapid accounts transitioned.
-​
-​
-​
+​​
 Live Account Closure Procedures (Maximum Loss Breach)
 Should the Live account reach its Maximum Loss Limit, account closure occurs with the following sequence:
 Negative Live Account Balance:
@@ -41,8 +39,7 @@ Sim Funded accounts traded for less than 30 trading days:
 ​
 Sim Funded accounts traded for more than 30 trading days:
 → Traders receive 80% of buffer funds, subject to standard profit-sharing arrangements.
-​
-​
+NOTE: Applications for a live account which are denied for any reason, are also subject to the buffer withdrawal procedures explained in this section.
 Post-Breach Cooldown Period Protocol
 Following Live account closure due to Maximum Loss breach:
 21-Day Cooldown Period initiation:
@@ -52,8 +49,8 @@ New Evaluation purchases, account resets, or additional account acquisitions are
 Cooldown restrictions are lifted.
 You can continue from your active Sim Funded account (if applicable) and/or purchase new Evaluations or accounts, unless communicated otherwise by the team.
 Related Articles
-25K Flex Plan (Legacy)
-Flex Plan - $50,000 / A Comprehensive Guide
+Builder Plan 50k - A Comprehensive Guide
+Builder Plan 25k - Legacy No DLL
 Builder Plan 100k - Comprehensive Guide
 Builder Plan 150k - Comprehensive Guide
 Builder Plan 25k - A Comprehensive Look

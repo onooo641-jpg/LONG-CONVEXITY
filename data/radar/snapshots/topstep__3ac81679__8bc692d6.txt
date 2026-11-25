@@ -25,7 +25,7 @@ Topstep FAQs
 What is the Maximum Loss Limit?
 What is the Maximum Loss Limit?
 Topstep's singular rule - the Maximum Loss Limit.
-Updated today
+Updated yesterday
 Table of contents
 The Maximum Loss Limit (MLL) is the lowest point your account balance is allowed to reach. If your balance hits it at any point during the trading day, including on unrealized P&L, your account is liquidated immediately.
 Account Size

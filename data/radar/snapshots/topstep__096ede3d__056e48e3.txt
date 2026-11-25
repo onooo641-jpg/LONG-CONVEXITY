@@ -25,7 +25,7 @@ Topstep FAQs
 Daily Loss Limit in the Trading Combine and Express Funded Account
 Daily Loss Limit in the Trading Combine and Express Funded Account
 Bad days happen. The Daily Loss Limit (DLL) makes sure one bad day doesn't wipe out your account.
-Updated today
+Updated yesterday
 Table of contents
 Overview
 The Daily Loss Limit (DLL) is optional in the Trading Combine® and Express Funded Account® (XFA). It’s automatic in the Live Funded Account® (LFA). Triggering it is not a rule violation — it's a forced break for the rest of that session.
@@ -101,8 +101,8 @@ All Live Funded Account accounts have a Daily Loss Limit. Learn more here .
 Related Articles
 Trading Combine® Parameters
 What is the Maximum Loss Limit?
-Dynamic Live Risk Expansion
 What is the Responsible Trading Program?
+TopstepX™
 Topstep Labs
 Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
 Table of contents

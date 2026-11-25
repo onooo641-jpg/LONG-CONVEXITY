@@ -1,0 +1,226 @@
+Futures Prop Firm Rules Explained
+Forex Futures Perps Predictions
+BLACK FRIDAY 🔥
+60% OFF ON ALL PLANS CODE: BLACKFRIDAY60
+Pricing
+GOAT Points
+Rewards
+Transparency
+Affiliate
+About
+FAQs
+Log In
+Get Funded
+Forex Futures Perps Predictions
+BLACK FRIDAY 🔥
+60% OFF ON ALL PLANS CODE: BLACKFRIDAY60
+Pricing
+GOAT Points
+Rewards
+Transparency
+Affiliate
+About
+FAQs
+Log In
+Forex Futures Perps Predictions
+BLACK FRIDAY 🔥
+60% OFF ON ALL PLANS CODE: BLACKFRIDAY60
+← All articles
+Futures Prop Firm Rules Explained
+Jun 29, 2026
+A complete guide to futures prop firm rules: drawdown models, profit targets, consistency rules, daily loss limits, and payout conditions. Includes GFF plan comparison.
+Most traders who fail a funded challenge did not misread the market. They misread the rules.
+Futures prop firm rules govern every stage of the trading process: how much can you lose in a session, what proportion of profit can come from a single day, how many sessions you need to trade, and when and how you get paid.
+Understanding these rules before you start a challenge is not optional. It is the difference between passing and an avoidable failure.
+The Main Types of Futures Prop Firm Rules
+Most prop firm rule sets are built from the same core components. The specific numbers differ between firms and plans, but the underlying structure is consistent across the market. Before comparing firms, it helps to understand what each rule type governs and how the rules interact with each other.
+One interaction matters more than any other: a trader can hit the profit target and still not complete the evaluation because of another rule. A drawdown breach closes the account immediately, whereas a consistency breach simply requires further trading until the consistency requirement is met. Rules do not operate in isolation. Passing one does not protect you from the others.
+Rule type
+What it governs
+Drawdown rule
+How much capital you can lose before the account is closed
+Profit target
+The amount of realised profit required to pass the evaluation challenge
+Daily loss limit
+The maximum loss allowed in a single trading session
+Consistency rule
+The maximum proportion of total profit from any single day
+Minimum trading days
+The fewest sessions required to pass the evaluation
+Payout condition
+Profit split, minimum threshold, schedule, and waiting periods
+Drawdown Rules: Trailing, EOD, and Maximum Loss
+Drawdown rules are the most consequential rule type. They determine how much capital a trader can lose before the account is closed. Get the drawdown wrong and nothing else matters: the challenge ends immediately.
+There are three main drawdown models in use across the futures prop market.
+Intraday trailing drawdown
+The maximum loss limit trails upward in real time as your intraday equity increases, including unrealised profits.
+Their key implication is easy to miss. A winning trade that peaks and then pulls back before closing can permanently raise the floor, even if the trade closes flat. The floor moves up when equity peaks, it does not come back down if the trade reverses.
+If your intraday balance or equity dips below that floor at any time, the account closes immediately.
+Example: account balance $50,000, maximum drawdown $2,000, floor at $48,000. Equity peaks at $51,500 intraday; the floor rises to $49,500. The trade closes at $50,200. The floor remains at $49,500 for the rest of the session, even though the trader never locked in the $51,500 high.
+EOD (end-of-day) trailing drawdown
+The floor only adjusts at end of day, based on closing balance. Intraday equity spikes do not affect it. This gives traders significantly more room to manage positions through volatile sessions without permanently tightening the cushion mid-trade.
+Same example: equity peaks at $51,500 intraday; the floor stays at $48,000 until market close. If the session closes at $50,200, the floor adjusts to $48,200 overnight. The intraday spike is irrelevant.
+EOD trailing drawdown is used by GFF's EOD plan, as well as Flex, the 1-Day-Pass-Plan and Instant. For traders who carry positions through volatile intraday moves, it is a meaningful structural advantage over intraday trailing models.
+Maximum (static) drawdown
+A fixed floor set at the start of the account that does not trail at all. The floor never changes regardless of performance. This is the simplest model to track and is less common in futures prop, but worth understanding as a reference point.
+Drawdown type
+When the floor moves
+Strictness level
+Intraday trailing
+In real time as intraday equity rises, including unrealised profits
+Strictest – trails open profits and leaves the least margin for error
+EOD trailing
+At end of day only, based on closing balance
+Moderate – allows more flexibility intraday but still trails profitable performance
+Static (maximum)
+Never; fixed from the start of the account
+Most forgiving – floor never increases and only decreases through realised losses
+Profit Targets: What You Need to Hit to Pass
+The profit target is the amount of realised profit a trader must achieve to pass the evaluation challenge and unlock a funded account. It is the most visible rule on any prop firm's sales page, and typically the first number traders look at when comparing firms.
+One point that is worth stating clearly: profit targets only apply during the evaluation. Once funded, the performance requirement changes – there is no profit target to hit, but traders must complete a minimum number of profitable trading days and, where applicable, meet the consistency rule before requesting a payout.
+The interaction between profit targets and consistency rules is where traders most often get caught out. A trader can hit the profit target and still fail the challenge if the best single day represents too large a proportion of total profits. Hitting the number is not enough if the shape of the P&L breaches the consistency requirement.
+Daily Loss Limits: How They Work and Which Firms Use Them
+A daily loss limit caps how much a trader can lose in a single trading session. It is a session-level rule rather than an account-level rule, but the consequences vary between firms.
+Some GFF plans do not include a daily loss limit: EOD has none during the evaluation, Flex lets you switch it on or off, and on GOAT Daily, the 1-Day-Pass-Plan and Instant it is optional at checkout. Where one does apply, it's important to understand whether reaching the limit results in a temporary Daily Pause or a rule breach. On GOAT Daily and the 1-Day-Pass-Plan, if you choose a daily loss limit, the first hit closes the account.
+Some firms will pause trading for the remainder of the day if the limit is reached, while others treat exceeding the limit as a rule violation that results in challenge failure or account termination. Always check how a specific firm applies its daily loss limit before trading.
+How the daily loss is calculated varies between firms. Some measure it from the previous day's closing balance; others measure it from the session open.
+The distinction matters because a trader who enters the day with an open position that gaps against them may have already consumed part of their daily allowance before placing a single new trade.
+Consistency Rules: The Rule Most Traders Miss
+Consistency rules can apply at different points depending on the firm: during the evaluation only, at the point of a payout request in the funded stage, or as an ongoing funded stage requirement where a breach can result in account closure rather than just a declined withdrawal. The funded stage version is the one most traders discover too late.
+At GFF, every plan has a consistency rule at some stage. The EOD plan applies 50% in the evaluation and 30% once funded. The 1-Day-Pass-Plan removes the consistency rule during the evaluation stage (35% once funded), while Flex (50% in the evaluation) and GOAT Daily (40% or 50% in the evaluation, your choice) remove it once funded. The Instant plan has no evaluation and applies a 15% or 20% consistency rule chosen at checkout, so traders should always check how the consistency rule applies before they start trading.
+Minimum Trading Days and Time-Based Rules
+Some prop firms require a minimum number of trading days to pass the evaluation. The rule prevents traders from passing on a single fortunate session and is designed to ensure that funded traders have demonstrated performance across multiple market conditions rather than one.
+Some firms also restrict trading during economic data releases or outside defined session hours. These time-based rules vary significantly between firms and are worth checking before developing a strategy around scheduled events.
+GFF's 1-Day-Pass-Plan is notable here: a one-day pass is available, which means there is no minimum trading day requirement on that plan. For traders who want the fastest possible route to funded status, this removes a common timing barrier.
+Evaluation Rules vs Funded Stage Rules: Why You Need to Read Both
+The evaluation rules govern the challenge. The funded stage rules govern everything that happens after you pass. Most traders read the first set carefully and skim the second. That is the most common source of unexpected rule violations in funded accounts.
+Several key differences to be aware of across most firms:
+Drawdown rules may change between stages. Some firms tighten the drawdown in the funded stage relative to the evaluation
+Consistency rules often apply only in the funded stage, checked at the point of a payout request or continuously throughout the account
+Profit targets are usually evaluation-only. Once funded, the focus typically shifts to meeting payout requirements such as minimum profitable trading days, consistency rules, and, at some firms, minimum profit thresholds before becoming eligible for withdrawals.
+Payout conditions are funded-stage only. They do not appear in the evaluation rules at all, so they require a separate read
+Before you start any challenge, confirm:
+The drawdown model in both the evaluation and funded stage, and whether it changes between the two
+Whether a consistency rule applies, and whether it is enforced at payout or continuously throughout the funded stage
+Whether a daily loss limit applies and how it is calculated
+The minimum trading day requirement, if any
+The payout structure: profit split percentage, minimum threshold, and first payout waiting period
+Payout Rules: Profit Splits, Withdrawal Schedules, and Minimum Thresholds
+Payout rules are funded stage only. They do not apply during the evaluation and are entirely separate from the challenge rules.
+Profit splits
+The profit split is the percentage of funded account profits paid to the trader. While many futures prop firms offer an 80% to 90% profit split, some plans increase this during the early stages of a funded account.
+At GFF, profit splits vary by plan:
+EOD: 80%, with an optional 90% profit split add-on.
+1-Day-Pass-Plan: 80%, with an optional 90% profit split add-on.
+Instant: 80%, with an optional 90% profit split add-on.
+Flex: 80%, with an optional 90% profit split add-on.
+GOAT Daily: 90% from the first payout, with nothing to add.
+Always check the latest plan details before purchasing, as features and profit splits may be updated over time.
+Payout schedules and minimum thresholds
+On-request models allow traders to initiate a withdrawal when ready, subject to any minimum threshold. The flexibility is useful for traders who want to time withdrawals around their trading schedule.
+Fixed window models process payouts on a set schedule. GFF uses this model on EOD, Flex and the 1-Day-Pass-Plan, with payout windows running from the 5th to 8th and 20th to 23rd of each month. GOAT Daily is the exception, with payout requests every 24 hours. The schedule is predictable, allowing traders to plan withdrawals in advance.
+Some firms also apply a first payout waiting period, requiring a minimum number of funded trading days before the first withdrawal can be requested. Check whether a waiting period applies and how long it is before starting a funded account, particularly if early access to payouts is part of your plan.
+At GFF, the minimum amount required to request a payout is $500. Always check the latest plan details before trading, as payout rules and schedules may change over time.
+How GFF’s Rules Compare: EOD, 1-Day-Pass-Plan, Flex, GOAT Daily, and Instant
+We offer five distinct paths to funded trading, each structured around a different rule set.
+EOD plan
+The EOD plan uses end-of-day trailing drawdown, making it the most session-flexible option in the GFF range. The floor only moves at end of day based on the closing balance, so intraday equity spikes do not affect the trader's cushion during the session. A 50% consistency rule applies in the evaluation and 30% once funded, and there is no daily loss limit during the evaluation.
+Best for: traders who want more breathing room during the trading session without their drawdown floor moving higher based on open-position profits.
+One-Day-Pass-Plan
+The One-Day-Pass-Plan has no consistency rule in the evaluation phase and offers a one-day pass, removing the minimum trading day barrier that applies on other plans. Its daily loss limit is optional at checkout; if you choose it, hitting it closes the account. Maximum position size is 2 minis on the 25K, 4 on the 50K and 6 on the 100K.
+Best for: traders who want the fastest possible route to funded status without a day count requirement; the One-Day-Pass-Plan is the most direct path in the GFF range.
+Flex plan
+The Flex plan applies a 50% consistency rule during the evaluation stage but removes the consistency rule once funded. This gives traders greater flexibility after passing the challenge, without consistency affecting payout eligibility or ongoing funded trading. A daily loss limit toggle (ON/OFF) lets you choose whether one applies.
+Best for: traders whose returns are naturally concentrated in fewer, larger sessions. By removing the consistency rule in the funded stage, the Flex plan offers more flexibility once you're trading a funded account.
+GOAT Daily
+GOAT Daily uses an end-of-day trailing drawdown in the evaluation and an intraday trailing drawdown once funded. A 40% or 50% consistency rule (your choice) applies in the evaluation and none once funded, and the daily loss limit is optional at checkout: if you choose it, the first hit closes the account. Payout requests open every 24 hours, with a 90/10 split from the first payout.
+Best for: traders who want frequent payouts and a 90/10 split from the first one.
+Instant
+Instant removes the evaluation stage entirely. Traders pay a fee and begin trading a funded sim account from day one, with an end-of-day trailing drawdown ($1,000, $2,000, $3,000 or $4,500 on the 25K, 50K, 100K and 150K) and an optional daily loss limit chosen at checkout.
+There is no challenge to pass. The first payout unlocks at 6% profit with no minimum days, and later payouts at 5%. A 15% or 20% consistency rule (chosen at checkout) applies, there are no resets, and the split is 80/20 with 90/10 available as a paid add-on.
+Best for: traders who want to skip the challenge entirely
+Common Prop Firm Rule Violations and How to Avoid Them
+Most rule violations are predictable. Understanding the most common failure points before you start a challenge is one of the most practical things you can do to protect your evaluation fee.
+Breaching the drawdown limit: Most often triggered by unrealised intraday equity on a trailing drawdown model. A winning trade that peaks and pulls back mid-session can permanently raise the floor, leaving less cushion than the trader realises. Track your effective floor throughout the session, not just your P&L.
+Exceeding the daily loss limit: Many traders breach the daily loss limit after a series of losing trades or a sharp adverse move. The consequences vary by firm. Some firms will lock trading for the remainder of the session, while others treat a breach as a rule violation that results in challenge failure or funded account termination. Always understand how the limit is calculated and monitor your running loss throughout the trading day.
+Consistency rule violations: A large early win can dominate total P&L and create a ratio problem that persists for multiple sessions. The only way to resolve it is to keep adding to total profit until the proportion drops below the threshold. See the full guide to consistency rules for practical tracking advice.
+Trading during restricted hours: Some firms ban trading around scheduled economic data releases or outside defined session hours. Check the firm's specific time-based rules before placing trades around these events, particularly if your strategy relies on news or macro catalysts.
+Not meeting minimum trading day requirements: Hitting the profit target in fewer days than the minimum requirement means the evaluation is not yet complete, even if the numbers are correct. Check the day count before requesting a pass.
+Ready to Find the Right Plan for You?
+Compare all current plans at goatfundedfutures.com or go straight to starting your challenge .
+‹ Prop Futures Trading Explained: How Traders Get Funded
+Day Trading Futures for Beginners: Complete Guide to Getting Started ›
+We are here to help you
+Reach out to support anytime or check our rules to get started smoothly.
+Contact Support
+See All FAQ
+Join our community
+We share insights, learn strategies, and grow alongside other dedicated traders
+Join Discord
+GOAT
+FUNDED
+FUTURES
+GOAT
+FUNDED
+FUTURES
+Goat Funded Futures is a prop firm that gives futures traders access to evaluation and instant funding plans, with up to $750K in simulated funding.
+Goat Funded Futures is a prop firm that gives futures traders access to evaluation and instant funding plans, with up to $750K in simulated funding.
+COMPANY
+About us
+Transparency
+Our Blog
+Instant Plans
+Daily rewards
+Become an Affiliate
+FAQ
+FUTURES
+Instant Plan
+Daily Payout
+Futures or CFD
+Futures Prop Firm Rules
+How Futures Prop Works
+LEGAL
+Risk Disclosure
+Refund Policy
+Terms and Conditions
+Privacy Policy
+My Personal Information
+SOCIALS
+Discord
+Twitter
+Instagram
+Company About us
+Transparency
+Our Blog
+Instant Plans
+Daily rewards
+Become an Affiliate
+FAQ
+Futures Instant Plan
+Daily Payout
+Futures or CFD
+Futures Prop Firm Rules
+How Futures Prop Works
+Legal Risk Disclosure
+Refund Policy
+Terms and Conditions
+Privacy Policy
+My Personal Information
+Socials Discord
+Twitter
+Instagram
+Goat Funded Futures, a trade name of WITI LIMITED (77146639) a company registered in Hong Kong, publish and distribute content that should be regarded as general information only. None of the information provided by the Company or contained herein is intended as investment advice, an offer or solicitation of an offer to buy or sell securities, or a recommendation, endorsement, or sponsorship of any security, company, or fund. The information contained on the Company’s websites is provided for informational purposes only and is not intended to be relied upon for making investment decisions. Any use of the information contained on the Company’s websites is at your own risk, and the Company assumes no responsibility or liability for any use or misuse of such information. Nothing contained herein constitutes a solicitation or an offer to buy or sell futures, options, or forex. Please note that past performance is not necessarily indicative of future results, and any investment involves risks, including the possibility of total loss of the invested amount. You should always seek professional advice before making any investment decisions. The Company is not a financial broker, financial advisor, or financial representative, and does not accept client deposits.
+Allowed Instruments:  GoatFundedFutures, business name of WITI LIMITED (77146639), participants are authorized to engage in Futures trading with products exclusively listed on CME, COMEX, NYMEX, and CBOT. Please note, trading in Stocks, Options, Forex, Cryptocurrency, and CFDs is outside the scope of our programs.
+Risk Disclosure: Trading involves substantial risk and may not be suitable for all investors. The potential exists to lose more than your initial investment. Trading should only be done with risk capital, funds that if lost will not significantly affect your personal or institution’s financial wellbeing. We do not offer solicitations or recommendations for any trading action. All trading decisions are made by the individual.
+Hypothetical Performance Disclosure: Hypothetical or simulated performance results have inherent limitations. Unlike live performance records, simulated results do not represent actual trading. No representation is being made that any account will or is likely to achieve profits or losses similar to those shown in simulations or as discussed in testimonials.
+CFTC Rule 4.41: Hypothetical or Simulated performance results have certain limitations. Unlike an actual performance record, simulated results do not represent actual trading. Because these trades have not been executed, these results may have under- or over-compensated for the impact, if any, of certain market factors, such as lack of liquidity. No representation is being made that any account will or is likely to achieve profits or losses similar to those shown.
+Information Disclaimer: All information provided by GoatFundedFutures is for educational purposes only. None of the content should be considered investment advice or a recommendation to buy or sell any type of security. The use of this information is at the individual’s own risk, and we are not liable for any potential misuse.
+Testimonial Disclosure: Testimonials found on this site may not reflect the experience of all clients. They are not a guarantee of future success. Decisions based on information contained in testimonials are the sole responsibility of the individual.
+Goat Funded Futures, a trade name of WITI LIMITED (77146639) a company registered in Hong Kong, publish and distribute content that should be regarded as general information only. None of the information provided by the Company or contained herein is intended as investment advice, an offer or solicitation of an offer to buy or sell securities, or a recommendation, endorsement, or sponsorship of any security, company, or fund. The information contained on the Company’s websites is provided for informational purposes only and is not intended to be relied upon for making investment decisions. Any use of the information contained on the Company’s websites is at your own risk, and the Company assumes no responsibility or liability for any use or misuse of such information. Nothing contained herein constitutes a solicitation or an offer to buy or sell futures, options, or forex. Please note that past performance is not necessarily indicative of future results, and any investment involves risks, including the possibility of total loss of the invested amount. You should always seek professional advice before making any investment decisions. The Company is not a financial broker, financial advisor, or financial representative, and does not accept client deposits.
+Allowed Instruments:  GoatFundedFutures, business name of WITI LIMITED (77146639), participants are authorized to engage in Futures trading with products exclusively listed on CME, COMEX, NYMEX, and CBOT. Please note, trading in Stocks, Options, Forex, Cryptocurrency, and CFDs is outside the scope of our programs.
+Risk Disclosure: Trading involves substantial risk and may not be suitable for all investors. The potential exists to lose more than your initial investment. Trading should only be done with risk capital, funds that if lost will not significantly affect your personal or institution’s financial wellbeing. We do not offer solicitations or recommendations for any trading action. All trading decisions are made by the individual.
+Hypothetical Performance Disclosure: Hypothetical or simulated performance results have inherent limitations. Unlike live performance records, simulated results do not represent actual trading. No representation is being made that any account will or is likely to achieve profits or losses similar to those shown in simulations or as discussed in testimonials.
+CFTC Rule 4.41: Hypothetical or Simulated performance results have certain limitations. Unlike an actual performance record, simulated results do not represent actual trading. Because these trades have not been executed, these results may have under- or over-compensated for the impact, if any, of certain market factors, such as lack of liquidity. No representation is being made that any account will or is likely to achieve profits or losses similar to those shown.
+Information Disclaimer: All information provided by GoatFundedFutures is for educational purposes only. None of the content should be considered investment advice or a recommendation to buy or sell any type of security. The use of this information is at the individual’s own risk, and we are not liable for any potential misuse.
+Testimonial Disclosure: Testimonials found on this site may not reflect the experience of all clients. They are not a guarantee of future success. Decisions based on information contained in testimonials are the sole responsibility of the individual.
+© 2026 GoatFundedFutures. All rights reserved.

@@ -1,29 +1,29 @@
-# Radar summary 2026-11-24
+# Radar summary 2026-11-25
 
 Baseline date: 2026-11-21
 
 ## Counts
-- S2 protocols: 9100
-- S1 reward pools: 1304
+- S2 protocols: 9110
+- S1 reward pools: 1301
 - S3 Merkl live: 703
-- S4 governance hits: 56
-- pages fetched ok: 1769
-- pages total: 1817
+- S4 governance hits: 58
+- pages fetched ok: 1787
+- pages total: 1834
 - candidates surviving to ranking: 84
 - of which all five filter parts verified: 18
-- near-miss rows total: 10201
+- near-miss rows total: 10933
 
 ## Near-miss by stage/reason (top)
 
-- first_pass / below threshold: 9322
+- first_pass / below threshold: 10043
 - quality / DefiLlama outlier flag: 276
-- filter / F4 price exposure, needs hedge; F5 TVL < $1,000,000: 240
-- filter / F4 price exposure, needs hedge: 152
+- filter / F4 price exposure, needs hedge; F5 TVL < $1,000,000: 241
+- filter / F4 price exposure, needs hedge: 157
 - filter / F5 TVL < $1,000,000: 88
-- deep / F2 not long-lived: 40
-- deep / F1 reward not persistent: 34
-- quality / implausible APR > 1000%: 17
-- filter / F3 single pool/venue on one chain (no reused setup); F4 price exposure: 10
+- deep / F2 not long-lived: 41
+- deep / F1 reward not persistent: 35
+- quality / implausible APR > 1000%: 18
+- filter / F3 single pool/venue on one chain (no reused setup); F4 price exposure: 11
 - gone / disappeared from source (last seen 2026-11-23): 6
 - gone / disappeared from source (last seen 2026-11-22): 5
 - filter / F3 single pool/venue on one chain (no reused setup): 4
@@ -35,49 +35,51 @@ Baseline date: 2026-11-21
 
 | venue | chain | what pays | $/day | capital | reward APR % | F1 | F2 | stable | new | Malaysia |
 |---|---|---|---|---|---|---|---|---|---|---|
-| curve-dex | Ethereum | BOLD-LUSD nan reward tokens ['0x6440f144b7e50D6a84 | 1,216 | 1,302,794 | 34.1 | fail | pass | True | True | unverified-onchain |
-| stake-dao-yield | Ethereum | BOLD-USDC Curve reward tokens ['0x6440f144b7e50D6a | 1,160 | 1,383,088 | 30.6 | pass | fail | True | True | unverified-onchain |
-| curve-dex | Ethereum | BOLD-USDC nan reward tokens ['0x6440f144b7e50D6a84 | 9,321 | 11,245,494 | 30.3 | pass | pass | True | False | unverified-onchain |
-| stake-dao-yield | Ethereum | PYUSD-CRVUSD Curve reward tokens ['0x5D29949F8e64f | 14,489 | 17,779,706 | 29.7 | pass | fail | True | False | unverified-onchain |
-| mento-v3 | Monad | AUSD-USDM nan reward tokens ['0xBC69212B8E4d445b23 | 828 | 2,088,867 | 14.5 | fail | fail | True | False | unverified-onchain |
-| lista-lending | BSC | USDT nan reward tokens ['0xFceB31A79F71AC9CBDCF853 | 488 | 1,442,780 | 12.3 | fail | fail | True | False | unverified-onchain |
-| morpho-blue | Ethereum | RE7COUSDC nan reward tokens ['0xa12cc123ba206d4031 | 2,176 | 7,764,876 | 10.2 | fail | fail | True | False | unverified-onchain |
-| stake-dao-yield | Ethereum | FRXUSD-DUSD Curve reward tokens ['0xD533a949740bb3 | 294 | 1,083,066 | 9.9 | fail | fail | True | False | unverified-onchain |
-| morpho-blue | Base | RE7VENICEUSDC nan reward tokens ['0xacfe6019ed1a7d | 785 | 2,903,611 | 9.9 | fail | fail | True | False | unverified-onchain |
-| convex-finance | Ethereum | FRXUSD-DUSD nan reward tokens ['0xd533a949740bb330 | 691 | 2,640,834 | 9.5 | fail | unverified | True | False | unverified-onchain |
-| sky-lending | Ethereum | USDS GROVE Farming Pool reward tokens ['0xb30FE1CF | 18,086 | 70,873,628 | 9.3 | fail | fail | True | False | unverified-onchain |
-| morpho-blue | Base | BITMXNBP nan reward tokens ['0xF197FFC28c23E0309B5 | 392 | 1,557,970 | 9.2 | fail | fail | True | True | unverified-onchain |
-| convex-finance | Ethereum | FRXUSD-MSUSD nan reward tokens ['0xd533a949740bb33 | 742 | 3,026,419 | 8.9 | pass | unverified | True | False | unverified-onchain |
-| upshift | Stellar | HOLD Supply USDC in Upshift sentUSDC | 13,368 | 60,989,970 | 8.0 | unverified | pass | True | False | unverified-onchain |
-| stake-dao-yield | Ethereum | FRXUSD-MSUSD Curve reward tokens ['0xD533a949740bb | 810 | 3,933,630 | 7.5 | pass | fail | True | False | unverified-onchain |
-| convex-finance | Ethereum | EVAUSDT-EVAUSDC nan reward tokens ['0xd533a949740b | 483 | 2,352,421 | 7.5 | pass | unverified | True | False | unverified-onchain |
-| morpho-blue | Stable | GPYUSDSE nan reward tokens ['0x28f1f38a9f7db1f769a | 10,640 | 52,942,770 | 7.3 | fail | fail | True | False | unverified-onchain |
-| flying-tulip-ftusd | Ethereum | SFTUSD staked ftUSD (FT rewards bought on open mar | 337 | 1,707,488 | 7.2 | fail | fail | True | False | unverified-onchain |
-| bluefin-spot | Sui | USDSUI-USDC 0.01% reward tokens ['0x00000000000000 | 256 | 1,313,521 | 7.1 | pass | pass | True | False | unverified-onchain |
-| aave | Ethereum | LEND Supply RLUSD to the Aave V4 Sentora Hub | 15,278 | 79,662,138 | 7.0 | unverified | unverified | True | False | unverified-onchain |
-| curve-dex | Ethereum | PMUSD-CRVUSD nan reward tokens ['0xD533a949740bb33 | 275 | 1,490,922 | 6.7 | pass | pass | True | False | unverified-onchain |
-| lista-lending | Ethereum | USDT nan reward tokens ['coingecko:lista'] | 555 | 3,023,618 | 6.7 | pass | pass | True | False | unverified-onchain |
-| stake-dao-yield | Ethereum | EVAUSDT-EVAUSDC Curve reward tokens ['0xD533a94974 | 685 | 3,772,118 | 6.6 | pass | fail | True | False | unverified-onchain |
-| curve-dex | Ethereum | PMUSD-FRXUSD nan reward tokens ['0xD533a949740bb33 | 249 | 1,389,132 | 6.6 | pass | pass | True | False | unverified-onchain |
-| stake-dao-yield | Ethereum | FRXUSD-CRVUSD Curve reward tokens ['0xD533a949740b | 289 | 1,779,309 | 5.9 | pass | fail | True | False | unverified-onchain |
+| curve-dex | Ethereum | BOLD-LUSD nan reward tokens ['0x6440f144b7e50D6a84 | 1,216 | 1,303,268 | 34.1 | fail | pass | True | True | unverified-onchain |
+| stake-dao-yield | Ethereum | BOLD-USDC Curve reward tokens ['0x6440f144b7e50D6a | 1,238 | 1,510,441 | 29.9 | pass | fail | True | True | unverified-onchain |
+| curve-dex | Ethereum | BOLD-USDC nan reward tokens ['0x6440f144b7e50D6a84 | 9,321 | 11,502,739 | 29.6 | pass | pass | True | False | unverified-onchain |
+| stake-dao-yield | Ethereum | PYUSD-CRVUSD Curve reward tokens ['0x5D29949F8e64f | 8,234 | 17,821,529 | 16.9 | pass | fail | True | False | unverified-onchain |
+| stake-dao-yield | Ethereum | EVAUSDT-EVAUSDC Curve reward tokens ['0xD533a94974 | 1,553 | 3,736,478 | 15.2 | pass | fail | True | False | unverified-onchain |
+| mento-v3 | Monad | AUSD-USDM nan reward tokens ['0xBC69212B8E4d445b23 | 831 | 2,090,131 | 14.5 | fail | fail | True | False | unverified-onchain |
+| convex-finance | Ethereum | FRXUSD-MSUSD nan reward tokens ['0xd533a949740bb33 | 832 | 3,030,978 | 10.0 | pass | unverified | True | False | unverified-onchain |
+| stake-dao-yield | Ethereum | FRXUSD-DUSD Curve reward tokens ['0xD533a949740bb3 | 284 | 1,082,890 | 9.6 | fail | fail | True | False | unverified-onchain |
+| morpho-blue | Ethereum | RE7COUSDC nan reward tokens ['0xa12cc123ba206d4031 | 2,084 | 8,104,557 | 9.4 | fail | fail | True | False | unverified-onchain |
+| lista-lending | BSC | USDT nan reward tokens ['0xFceB31A79F71AC9CBDCF853 | 446 | 1,744,882 | 9.3 | fail | fail | True | False | unverified-onchain |
+| morpho-blue | Base | RE7VENICEUSDC nan reward tokens ['0xacfe6019ed1a7d | 767 | 3,006,425 | 9.3 | fail | fail | True | False | unverified-onchain |
+| convex-finance | Ethereum | FRXUSD-DUSD nan reward tokens ['0xd533a949740bb330 | 670 | 2,640,485 | 9.3 | fail | unverified | True | False | unverified-onchain |
+| morpho-blue | Base | BITMXNBP nan reward tokens ['0xF197FFC28c23E0309B5 | 387 | 1,537,810 | 9.2 | fail | fail | True | True | unverified-onchain |
+| flying-tulip-ftusd | Ethereum | SFTUSD staked ftUSD (FT rewards bought on open mar | 338 | 1,468,821 | 8.4 | fail | fail | True | False | unverified-onchain |
+| morpho-blue | Ethereum | FRAXELERATOR nan reward tokens ['0xcacd6fd266af91b | 231 | 1,033,633 | 8.1 | fail | fail | True | True | unverified-onchain |
+| upshift | Stellar | HOLD Supply USDC in Upshift sentUSDC | 13,503 | 61,608,167 | 8.0 | unverified | pass | True | False | unverified-onchain |
+| reflect-tranches | Solana | SYRUPUSDC Senior reward tokens ['AvZZF1YaZDziPY2RC | 363 | 1,782,661 | 7.4 | fail | fail | True | True | unverified-onchain |
+| sky-lending | Ethereum | USDS GROVE Farming Pool reward tokens ['0xb30FE1CF | 16,843 | 84,301,852 | 7.3 | fail | fail | True | False | unverified-onchain |
+| stake-dao-yield | Ethereum | FRXUSD-MSUSD Curve reward tokens ['0xD533a949740bb | 783 | 3,939,412 | 7.3 | pass | fail | True | False | unverified-onchain |
+| morpho-blue | Stable | GPYUSDSE nan reward tokens ['0x28f1f38a9f7db1f769a | 11,962 | 61,125,216 | 7.1 | fail | fail | True | False | unverified-onchain |
+| aave | Ethereum | LEND Supply RLUSD to the Aave V4 Sentora Hub | 14,493 | 75,571,065 | 7.0 | unverified | unverified | True | False | unverified-onchain |
+| bluefin-spot | Sui | USDSUI-USDC 0.01% reward tokens ['0x00000000000000 | 248 | 1,311,671 | 6.9 | pass | pass | True | False | unverified-onchain |
+| convex-finance | Ethereum | EVAUSDT-EVAUSDC nan reward tokens ['0xd533a949740b | 468 | 2,487,699 | 6.9 | pass | unverified | True | False | unverified-onchain |
+| curve-dex | Ethereum | PMUSD-CRVUSD nan reward tokens ['0xD533a949740bb33 | 267 | 1,451,101 | 6.7 | pass | pass | True | False | unverified-onchain |
+| curve-dex | Ethereum | PMUSD-FRXUSD nan reward tokens ['0xD533a949740bb33 | 242 | 1,355,124 | 6.5 | pass | pass | True | False | unverified-onchain |
 
 ## Test queue (addendum 3: top 3 venues by 90-day mean of base + 0.9 x reward APR)
 
-- ember (Sui) USDC Ember Concentrated Liquidity reward tokens ['0x00000000: 15.76%/yr over 90 d, TVL $1,504,674, pool 0a3c5663-73bd-4d8a-bdcc-5e529a8b741d
-- bluefin-spot (Sui) USDSUI-USDC 0.01% reward tokens ['0x000000000000000000000000: 14.99%/yr over 90 d, TVL $1,313,521, pool e3887972-24e6-45a9-8ef5-bcc22b6b5739
-- dolomite (Ethereum) USD1 nan reward tokens ['0xdA5e1988097297dCdc1f90D4dFE7909e8: 7.81%/yr over 90 d, TVL $45,809,375, pool 86e18974-35ca-4948-9c82-694facf9d082
+- bluefin-spot (Sui) USDSUI-USDC 0.01% reward tokens ['0x000000000000000000000000: 14.86%/yr over 90 d, TVL $1,311,671, pool e3887972-24e6-45a9-8ef5-bcc22b6b5739
+- ember (Sui) USDC R25 Treasury reward tokens ['0xdba34672e30cb065b1f93e3a: 11.59%/yr over 90 d, TVL $8,168,499, pool 0ce62070-5201-47d1-84d5-f76d7e0cf5c0
+- dolomite (Ethereum) USD1 nan reward tokens ['0xdA5e1988097297dCdc1f90D4dFE7909e8: 7.82%/yr over 90 d, TVL $42,119,660, pool 86e18974-35ca-4948-9c82-694facf9d082
 
 ## Governance proposals mentioning incentives (last 45d, newest 25)
 
+- sdcrv-gov.eth: [active] Add a gauge for the following pool: MET/WETH on Mainnet (Metronome DAO) REPUSH https://snapshot.org/#/sdcrv-gov.eth/proposal/0xc96d84e7a7a9c2ea4ea8659b4ce7b509d3b271577734665dbd6f8aa2fca1e2fd
+- sdcrv-gov.eth: [active] Add a gauge for the following stableswapNG pool: bdUSD/MUSD on Mainnet (Bitcoin Dollar  REPUSH https://snapshot.org/#/sdcrv-gov.eth/proposal/0x531139312e5b87db43061bbcea2b66cb060b7dcae076a35289d26a475373725c
 - cowgrants.eth: [active] Grant Application: CoW BYOS Security Audit https://snapshot.org/#/cowgrants.eth/proposal/0x3357a1a4f928a337883e7fbbe01d2235067c3e7a2a2e4a2696bb9aaebfce9038
 - sdcrv-gov.eth: [active] Add a gauge for the following stableswap-NG pool: DOLA/sinvUSD [ https://snapshot.org/#/sdcrv-gov.eth/proposal/0xb6192d05068cf9ebecb2c52057c267e3f3817a1dda8f89e2db623122c68de76e
 - sdcrv-gov.eth: [closed] Update gauge implementations on the stableswap-ng, twocrypto-ng and tricrypto-ng factories and on the https://snapshot.org/#/sdcrv-gov.eth/proposal/0x3c0e84ef6ae492abe2b54aede41e4555ca7907f364aad46f0f613540ecfe7410
 - sd-yieldbasis.eth: [closed] 63# Move 2.5M YB to a multisig managing incentives for the YB/crvUSD pair https://snapshot.org/#/sd-yieldbasis.eth/proposal/0xefe4c53029244c091751001b65b884cefc6199cb0ec6a7a2dddb64c5a9f0f97f
 - assangedao.eth: [closed] AIP-22: Perpetual Fund grants, paid in $JUSTICE https://snapshot.org/#/assangedao.eth/proposal/0x08acb047d8f67bdfd35ba35df1b501238f8440f2cf2b72a76be2d2d3b42a8fa5
-- sdfxn.eth: [active] Gauge vote FXN - 26/11/2026 - 9/12/2026 https://snapshot.org/#/sdfxn.eth/proposal/0xe7837bf1209b388558d4e2beed0160f73cde4fad79a7fe4012849c93195614b3
-- sd-yieldbasis.eth: [active] Gauge vote YB - 26/11/2026 - 9/12/2026 https://snapshot.org/#/sd-yieldbasis.eth/proposal/0x679ea0bfa594140cce624fc024d59bee527a490cc127fbb5f4f7716c8f69079d
-- sdfxs.eth: [active] Gauge vote FXS - 26/11/2026 - 9/12/2026 https://snapshot.org/#/sdfxs.eth/proposal/0x0d32c129ceea51c12bacf857463bffd1156e01b90d5a42e1e6348c98744ee92c
-- sdcrv.eth: [active] Gauge vote CRV - 26/11/2026 - 9/12/2026 https://snapshot.org/#/sdcrv.eth/proposal/0x7e22fd01421f9e4f05cb7ba6242486c1cb236aafa613fddf1cce3c3b7e4e3212
+- sdfxn.eth: [closed] Gauge vote FXN - 26/11/2026 - 9/12/2026 https://snapshot.org/#/sdfxn.eth/proposal/0xe7837bf1209b388558d4e2beed0160f73cde4fad79a7fe4012849c93195614b3
+- sd-yieldbasis.eth: [closed] Gauge vote YB - 26/11/2026 - 9/12/2026 https://snapshot.org/#/sd-yieldbasis.eth/proposal/0x679ea0bfa594140cce624fc024d59bee527a490cc127fbb5f4f7716c8f69079d
+- sdfxs.eth: [closed] Gauge vote FXS - 26/11/2026 - 9/12/2026 https://snapshot.org/#/sdfxs.eth/proposal/0x0d32c129ceea51c12bacf857463bffd1156e01b90d5a42e1e6348c98744ee92c
+- sdcrv.eth: [closed] Gauge vote CRV - 26/11/2026 - 9/12/2026 https://snapshot.org/#/sdcrv.eth/proposal/0x7e22fd01421f9e4f05cb7ba6242486c1cb236aafa613fddf1cce3c3b7e4e3212
 - beets-gauges.eth: [closed] Beets Sonic gauge vote (Round 49) https://snapshot.org/#/beets-gauges.eth/proposal/0xced87b2fc253636be39f3e2fc71e1324fd9b78ee4cb69f833cbc1cc6cd53342f
 - sdcrv-gov.eth: [closed] Add a gauge for the following stableswapNG pool: bdUSD/MUSD on Mainnet (Bitcoin Dollar https://snapshot.org/#/sdcrv-gov.eth/proposal/0x778b833a3ff714352912879d80f4b31fc23dcb97bf60aee042621bbdede1b36a
 - 1inch.eth: [closed] 1INCH Governance Proposal: Restore Staking Rewards or Eliminate Early Withdrawal Penalties https://snapshot.org/#/1inch.eth/proposal/0x605afa47aecb562f3139738e674f4017ed1ab795c5eac4cadd5ac3376a2dd507
@@ -92,199 +94,126 @@ Baseline date: 2026-11-21
 - sdcrv-gov.eth: [closed] Activate wOUSD/crvUSD LlamaLend V2 on Ethereum: set a 950,000 crvUSD borrow cap and 10% admin fee, an https://snapshot.org/#/sdcrv-gov.eth/proposal/0x24100d70b5b57ca622e53bbd8776c68f83888bf4c0a589dc51e831f5984543cf
 - sdcrv-gov.eth: [closed] Add a gauge for the following stableswap-NG pool: DOLA/SwanUSD https://snapshot.org/#/sdcrv-gov.eth/proposal/0x3baa878c1450739af8428dacbd0e6e5ccfadaf385e41be51cb2861caf988fe53
 - sdcrv-gov.eth: [closed] Activate wOUSD/crvUSD LlamaLend V2 on Ethereum: set a 950,000 crvUSD borrow cap and 10% admin fee, at https://snapshot.org/#/sdcrv-gov.eth/proposal/0xae6c512df20e105b73daa1af8d2dc6bb71759fe0441aad664b707e17d6a7c2fc
-- magpiexyz.eth: [closed] MIP #102 – Cease MGP Emissions to the mWOM Pools https://snapshot.org/#/magpiexyz.eth/proposal/0x4dcea4bbe438757d0fad375ea473b8f221730e6a4622e98e158a29fe4c9ac6f7
-- qbio-phase2.eth: [closed] DP37 - Three-Month Continuation Grant Agreement https://snapshot.org/#/qbio-phase2.eth/proposal/0x9e8dbe408a08debd37a4b8ab66f6b61382cc59e4dc7fd9db90e597dec6a8d2a5
 
-## Prop-firm rule/price changes today: 284 pages
+## Prop-firm rule/price changes today: 174 pages
 
-- **Topstep** https://www.topstep.com/: In Payouts / NEXT STOP: $2 BILLION / Instant Cash Payouts*
-- **MyFundedFutures** https://myfundedfutures.com/: Meet Signature: $5K, $10K and $20K accounts. Request all your profits anytime, with a static Max Loss Limit that never moves. / Five plans, each with clear rules. Compare cost, account size, drawdown model, payout speed, and profit split to find what is best for you. / Anytime payouts, static MLL
-- **E8 Markets** https://e8markets.com/: Average First Payout $5,774 / $81M+ in payouts processed since 2021, verified independently on PropFirmMatch, and PayoutJunction. Our Discord community of 42,461+ traders
-- **Maven Trading** https://maventrading.com/: Payout frequency i How often you can request a payout. Funded 10 business days / Payout frequency i How often you can request a payout. Funded 10 business days / Payout frequency i How often you can request a payout. Funded 10 business days
-- **Goat Funded Futures** https://goatfundedfutures.com/: $60 / $80 / $128
-- **DayTraders** https://daytraders.com/: Sim funded 100% profit split / Payouts Automated review systems / Fast, automated systems
-- **The5ers Futures** https://the5ers.com/futures/: Scale up to $500,000! / Your account will scale up upon meeting each 10% target, according to the following table: / $25K
-- **Topstep** https://www.topstep.com/live-funded-account-rules: In Payouts / NEXT STOP: $2 BILLION / Take the Starter Challenge for $10
-- **Topstep** https://www.topstep.com/express-funded-account-rules: In Payouts / NEXT STOP: $2 BILLION / Take the Starter Challenge for $10
-- **Topstep** https://www.topstep.com/instant-payouts: In Payouts / NEXT STOP: $2 BILLION / Take the Starter Challenge for $10
-- **Topstep** https://www.topstep.com/privacy-policy: In Payouts / NEXT STOP: $2 BILLION / Take the Starter Challenge for $10
-- **Topstep** https://www.topstep.com/terms-of-use: In Payouts / NEXT STOP: $2 BILLION / Take the Starter Challenge for $10
-- **Topstep** https://www.topstep.com/affiliate-terms-and-conditions: In Payouts / NEXT STOP: $2 BILLION / Take the Starter Challenge for $10
-- **MyFundedFutures** https://myfundedfutures.com/plans/builder: $1,600.00 / ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S
-- **MyFundedFutures** https://myfundedfutures.com/plans/rapid: $627.17 / $4,185.00 / $2,055.60
-- **MyFundedFutures** https://myfundedfutures.com/plans/rapid-eod: $627.17 / $4,185.00 / $2,055.60
-- **MyFundedFutures** https://myfundedfutures.com/plans/pro: $3,499.50 / $3,796.54 / $3,600.80
-- **Blue Guardian** https://www.blueguardian.com/payouts: $873.00 / $387.51 / $490.17
-- **FundedNext Futures** https://fundednext.com/cookie-policy: Cookies are small files that are stored on your device and that help us collect information about your activities. In particular, cookies al / Most browsers automatically accept cookies by default. You can get more information about setting up cookies for the most common browsers he / These cookies allow you to browse the Website and use its functionalities. Through these cookies, we also ensure the security and administra
-- **E8 Markets** https://e8markets.com/e8-traders-stories: E8 Markets maintains one of the highest average payouts at $3,217 per payout. We provide top-notch support and superb trading conditions. Tr / 13h ago $100,000 Classic Markets +$2,000 / 13h ago $5,000 Perpetual +$128
-- **E8 Markets** https://e8markets.com/compare-simfi-funded-accounts: Average First Payout $5,774
-- **Maven Trading** https://maventrading.com/challenges/instant: Payouts every 10 business days. / Payout frequency i How often you can request a payout. Funded 10 business days / Payout frequency i How often you can request a payout. Funded 10 business days
-- **Maven Trading** https://maventrading.com/terms-and-conditions: 10.3 For Standard plans, OMO and Instant, the first request becomes eligible 10 business days after the first trade on the Simulated Funded  / Instant Funding 80%, or 90% add-on; 3% of initial balance gross profit minimum; every 10 business days 20% day consistency, or 30% with add-
-- **Maven Trading** https://maventrading.com/pricing: Payout frequency i How often you can request a payout. Funded 10 business days / Payout frequency i How often you can request a payout. Funded 10 business days / Payout frequency i How often you can request a payout. Funded 10 business days
-- **HyroTrader** https://hyrotrader.com/transparency/: $9,690,049 / $1,720,512 / $1,530
-- **DayTraders** https://daytraders.com/payouts: $1,100 / $1,950 / $500
-- **Funded Futures Network** https://fundedfuturesnetwork.com/payouts: $5,332,455 / Nov 26 $5,332,455 paid to date / Requested $250
-- **DayTraders** https://daytraders.com/help/articles/17684739-eod-payouts: How to Request a Payout
-- **Topstep** https://help.topstep.com/en/articles/12060405-back2funded-rules-guidelines-and-how-it-works: 💰 Please note: If you added a DLL to your Trading Combine® before the Back2Funded Responsible Trading Advantage launched, the $50 discount w / What is a Reset?
-- **Topstep** https://www.topstep.com/terms-of-use/: In Payouts / NEXT STOP: $2 BILLION / Take the Starter Challenge for $10
-- **Topstep** https://help.topstep.com/en/articles/13620045-what-is-the-responsible-trading-program: What is a Reset?
-- **Topstep** https://help.topstep.com/en/articles/13613539-risk-adjustments-high-risk-high-volatility: $2,000 balance = 3 mini / 30 micros / $2,000 balance = 3 minis / 30 micros / $3,000 balance = 6 minis / 60 micros
-- **Topstep** https://help.topstep.com/en/articles/11187768-topstepx-api-access: What is a Reset?
-- **MyFundedFutures** https://myfundedfutures.com: Meet Signature: $5K, $10K and $20K accounts. Request all your profits anytime, with a static Max Loss Limit that never moves. / Five plans, each with clear rules. Compare cost, account size, drawdown model, payout speed, and profit split to find what is best for you. / Anytime payouts, static MLL
-- **MyFundedFutures** https://help.myfundedfutures.com/en/articles/13745661-payout-policy-overview-best-and-fastest-prop-firm-payouts: Excess profits beyond $100,000 Sim cap will be placed in Reserve Program, up to $5,000 per account.
-- **MyFundedFutures** https://myfundedfutures.com/coupons: $3,499.50 / $3,796.54 / $3,600.80
-- **MyFundedFutures** https://help.myfundedfutures.com/en/articles/14290805-builder-plan-50k-a-comprehensive-guide: Flex Plan - $50,000 / A Comprehensive Guide
-- **Blue Guardian** https://www.blueguardian.com/faq/articles/18426782-1-step-standard-rules: Gambling rule: using more than 80% of your margin on open trades counts as "all or nothing" gambling. It can lead to payout rejection, profi
-- **Goat Funded Trader** https://help.goatfundedtrader.com/trading-rules.html: A trade that opens during one news release and closes during another counts toward both releases. / Example on a $100,000 account: a trade you opened earlier closes with $2,000 profit during a red folder release. You also open a second trad / The new method applies to every payout request that is still under review on 24 November 2026, including requests submitted before that date
-- **Goat Funded Trader** https://help.goatfundedtrader.com/rewards.html: Reward requests can be initiated from your dashboard and will be processed within 2 business days. A minimum withdrawal amount of $100 is re
-- **Maven Trading** https://maventrading.com/es/terms-and-conditions: Instant Funding 80%, o 90% con add-on; ganancia bruta mínima del 3% del balance inicial; cada 10 días hábiles Consistencia diaria del 20%, o
-- **DayTraders** https://daytraders.com/help/articles/17704123-taxes-and-payout-documents: How to Request a Payout
-- **DayTraders** https://daytraders.com/help/articles/17697924-live-scaling: Live Payouts
-- **DayTraders** https://daytraders.com/help/articles/18352323-holiday-calendar-2027: EOD Payouts
-- **MyFundedFutures** https://myfundedfutures.com/plans/rapid: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
-- **MyFundedFutures** https://myfundedfutures.com/plans/rapid-eod: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
-- **MyFundedFutures** https://myfundedfutures.com/plans/pro: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
-- **E8 Markets** https://e8markets.com/e8-traders-stories: E8 Markets maintains one of the highest average payouts at $3,216 per payout. We provide top-notch support and superb trading conditions. Tr / 4h ago $5,000 Classic Markets +$166 / 7h ago $5,000 Classic Markets +$251
-- **Maven Trading** https://maventrading.com/faqs: Payouts for Instant Funding Accounts are available every 10 business days . Your first payout is available 10 business days after your first
-- **Traders Launch** https://traderslaunch.com/results: Results & Payouts | Traders Launch
-- **Traders Launch** https://traderslaunch.com/payout-rules: Payout Rules | Traders Launch
-- **MyFundedFutures** https://myfundedfutures.com/plans/signature/leaderboard: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
-- **Maven Trading** https://maventrading.com/es/faqs: Los pagos de las cuentas Instant Funding están disponibles cada 10 días hábiles . Tu primer pago está disponible 10 días hábiles después de 
-- **Maven Trading** https://maventrading.com/pt/faqs: Os saques das contas Instant Funding estão disponíveis a cada 10 dias úteis . Seu primeiro saque fica disponível 10 dias úteis após seu prim
-- **MyFundedFutures** https://myfundedfutures.com/plans/signature: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
-- **MyFundedFutures** https://myfundedfutures.com/plans/rapid-eod: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
-- **MyFundedFutures** https://myfundedfutures.com/plans/pro: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
-- **Traders Launch** https://traderslaunch.com/results: Results & Payouts | Traders Launch
-- **Traders Launch** https://traderslaunch.com/payout-rules: Payout Rules | Traders Launch
-- **MyFundedFutures** https://myfundedfutures.com/plans/signature: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
-- **MyFundedFutures** https://myfundedfutures.com/plans/builder: $421.20
-- **MyFundedFutures** https://myfundedfutures.com/plans/rapid: $4,840.60 / $4,818.20 / $4,816.06
-- **MyFundedFutures** https://myfundedfutures.com/plans/rapid-eod: $4,840.60 / $4,818.20 / $4,816.06
-- **MyFundedFutures** https://myfundedfutures.com/plans/pro: $956.44 / Payout auto-approved / $1,040.00
-- **Blue Guardian** https://www.blueguardian.com/payouts: $436.98 / $39.00 / $211.90
-- **FundedNext Futures** https://fundednext.com/cfds: $ 100K / $549.99 / $ 200K
-- **The5ers** https://the5ers.com/faqs/: Bootcamp 6 Articles FAQ 29 Articles General 17 Articles High Stakes 13 Articles Hyper Growth 8 Articles New Program: ProGrowth 5 Articles NE
-- **E8 Markets** https://e8markets.com/e8-traders-stories: 9h ago $5,000 Classic Markets +$166 / 12h ago $5,000 Classic Markets +$251 / 12h ago $2,000 Classic Markets +$677
-- **HyroTrader** https://hyrotrader.com/transparency/: $9,690,050 / $9,690,050 / 13 hours ago Solana 3mMSC8…Jr7t24 $1,854.03 Solscan
-- **Traders Launch** https://traderslaunch.com/results: Results & Payouts | Traders Launch
-- **Traders Launch** https://traderslaunch.com/payout-rules: Payout Rules | Traders Launch
-- **Trade The Pool** https://tradethepool.com/program-terms/: $50k (Can be paired only with one $25k or one $5k.)
-- **MyFundedFutures** https://myfundedfutures.com/coupons: $956.44 / Payout auto-approved / $1,040.00
-- **TradeDay** https://www.tradeday.com/pt/cookie-policy: Volentio JSD Limited Volentio JSD Limited
-- **FuturesElite** https://faq.futureselite.com/en/articles/17584271-elite-payouts: Nitro payouts
-- **Goat Funded Futures** https://help.goatfundedfutures.com/eod-challenge.html: Choose your evaluation consistency rule at checkout: 50%, or none for an extra fee / Two resets are available per challenge. You can hold up to 5 funded accounts. The None consistency option costs extra at checkout and has a  / Evaluation: the option you chose at checkout. With 50%, no single day may account for more than 50% of your total profit. With None, there i
-- **Goat Funded Futures** https://help.goatfundedfutures.com/1-day-pass.html: No consistency rule during the evaluation, included in the price. On EOD the evaluation has a 50% rule unless you add the None option at che
-- **Goat Funded Futures** https://help.goatfundedfutures.com/payouts.html: Can I trade the EOD evaluation without a consistency rule? / Yes. At checkout, choose None under Consistency. It costs extra, and your evaluation then has no consistency rule. Once you are funded, the 
-- **Blue Guardian** https://www.blueguardian.com/: 35 % OFF (Save $ 218 ) / 40 % OFF (Save $ 467 ) / 45 % OFF (Save $ 748 )
-- **MyFundedFutures** https://myfundedfutures.com/plans/signature: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
-- **MyFundedFutures** https://myfundedfutures.com/plans/builder: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
-- **MyFundedFutures** https://myfundedfutures.com/plans/pro: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
-- **Blue Guardian** https://help.blueguardian.com/en/articles/18446026-zero-account-rules: How the consistency rule lets you pass Replay / How the end-of-day drawdown option moves Replay / If you chose end-of-day drawdown for your evaluation, your loss limit moves up only when you set a new highest end-of-day closing balance, a
+- **Topstep** https://www.topstep.com/: $6,000 / Proof of Payout / $1,500
+- **Bulenox** https://bulenox.com/: The Ecosystem of Trader Development Get funded up to $750,000
+- **E8 Markets** https://e8markets.com/: Average First Payout $5,799 / $81M+ in payouts processed since 2021, verified independently on PropFirmMatch, and PayoutJunction. Our Discord community of 42,495+ traders
+- **trade-the-pool (via propfirmmatch)** https://propfirmmatch.com/futures/prop-firms/trade-the-pool: 15% off all accounts + free account of the same size if reaching payout (first order only) excluding $100K and $200K Buying Power - Flex acc / 15% off all accounts + free account of the same size if reaching payout (first order only) excluding $100K and $200K Buying Power - Flex acc / Trade The Pool - Edge - 1-Step - 100K $226.10
+- **brightfunded-futures (via propfirmmatch)** https://propfirmmatch.com/futures/prop-firms/brightfunded-futures: BrightFunded Futures - BrightCore - 1 Step 150K $230.00 / $460.00 / BrightFunded Futures - BrightCore - 1 Step 100K $170.00
+- **the5ers-futures (via propfirmmatch)** https://propfirmmatch.com/futures/prop-firms/the5ers-futures: Both programs must close all positions before the weekend / Maximum amount per payout request: / $25K: Payout 1 $750 | Payout 2 $875 | Payout 3 $1,000 | Payout 4+ $1,000
+- **the-trading-pit-futures (via propfirmmatch)** https://propfirmmatch.com/futures/prop-firms/the-trading-pit-futures: The Trading Pit Futures, established in February 2022 and based in Liechtenstein, offers futures trading through 1-step and 2-step evaluatio
+- **aquafunded-futures (via propfirmmatch)** https://propfirmmatch.com/futures/prop-firms/aquafunded-futures: AquaFunded Futures - Instant - Instant 150K $436.20 / AquaFunded Futures - Instant - Instant 25K $172.20 / AquaFunded Futures - Instant - Instant 100K $360.00
+- **Goat Funded Futures** https://goatfundedfutures.com/: Goat Funded Futures is a prop firm that gives futures traders access to evaluation and instant funding plans, with up to $750K in simulated  / Goat Funded Futures is a prop firm that gives futures traders access to evaluation and instant funding plans, with up to $750K in simulated  / Daily Payout
+- **AquaFunded Futures** https://aquafunded.com/: INSTANT PRO 100K $560 $336 ▼$224 INSTANT PRO 200K $905 $543 ▼$362 INSTANT STANDARD 100K $505 $303 ▼$202 CFDS +200% FEE BACK INSTANT FLEX 100 / Mega Sale fees. INSTANT PRO 100K: $560, now $336. INSTANT PRO 200K: $905, now $543. INSTANT STANDARD 100K: $505, now $303. CFDS: +200% FEE B
+- **Traders Launch** https://traderslaunch.com/: Premium $100K–$300K Static #1 on PropScore TL Drops On Sale Now / Example Account $25,000 / Profit Target $1,500
+- **The5ers Futures** https://the5ers.com/futures/: for a prop account of up to $500K. / Profit split / $500K
+- **Topstep** https://www.topstep.com/live-funded-account-rules: The average is rounded up to the next tier of 25k, $50k, $100k, $150k, or $250k
+- **MyFundedFutures** https://myfundedfutures.com/plans/signature: 3 C. B. · Signature 20K 8 payouts
+- **MyFundedFutures** https://myfundedfutures.com/plans/builder: $1,600.00
+- **MyFundedFutures** https://myfundedfutures.com/plans/rapid: $1,020.60 / $844.20 / $543.60
+- **MyFundedFutures** https://myfundedfutures.com/plans/rapid-eod: $1,020.60 / $844.20 / $543.60
+- **MyFundedFutures** https://myfundedfutures.com/plans/pro: $1,939.38 / $1,632.16 / $2,480.80
+- **Blue Guardian** https://www.blueguardian.com/payouts: $261.03 / $145.26 / $523.80
 - **FundedNext Futures** https://fundednext.com/cookie-policy: FundedNext Labs - Limited Slots. Real Experiments. / or get $1,000 extra / $ 306.9 $ 0.0 M+
 - **FundedNext Futures** https://fundednext.com/aml-policy: FundedNext Labs - Limited Slots. Real Experiments. / or get $1,000 extra / $ 306.9 $ 0.0 M+
-- **E8 Markets** https://e8markets.com/e8-traders-stories: 10h ago $5,000 Classic Markets +$166 / 13h ago $2,000 Classic Markets +$677 / 16h ago $10,000 Classic Markets +$100
-- **HyroTrader** https://hyrotrader.com/transparency/: 14 hours ago Solana 3mMSC8…Jr7t24 $1,854.03 Solscan / 14 hours ago Solana 46rvvF…1RvF2E $783.00 Solscan / 14 hours ago Solana 5d7Hho…qfyRqa $225.72 Solscan
-- **MyFundedFutures** https://myfundedfutures.com/plans/signature/leaderboard: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
-- **Blue Guardian** https://www.blueguardian.com/faq/articles/18446026-zero-account-rules: How the consistency rule lets you pass Replay / How the end-of-day drawdown option moves Replay / If you chose end-of-day drawdown for your evaluation, your loss limit moves up only when you set a new highest end-of-day closing balance, a
-- **Blueberry Futures** http://help.blueberryfutures.com/en/articles/12921623-max-contracts-by-account-size: Ascent Account Specs: Rules & Targets
-- **Topstep** https://www.topstep.com/: $4,980 / Proof of Payout / $1,500
-- **TradeDay** https://www.tradeday.com/: Over $15 million in Verified Payouts
-- **MyFundedFutures** https://myfundedfutures.com/plans/builder: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
-- **MyFundedFutures** https://myfundedfutures.com/plans/rapid-eod: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
-- **E8 Markets** https://e8markets.com/e8-traders-stories: 13h ago $5,000 Classic Markets +$251 / 21h ago $25,000 Classic Markets +$803 / 21h ago $100,000 Classic Markets +$1,524
+- **The5ers** https://the5ers.com/futures-faqs/: BlackArrow Demo Account 4 Articles Consistency Rule 7 Articles Day Trading new 16 Articles FAQs 22 Articles Payments 4 Articles Payouts 5 Ar
+- **E8 Markets** https://e8markets.com/e8-traders-stories: E8 Markets maintains one of the highest average payouts at $3,212 per payout. We provide top-notch support and superb trading conditions. Tr / 32m ago $50,000 Perpetual +$104 / 51m ago $100,000 Classic Markets +$5,653
+- **E8 Markets** https://e8markets.com/legal/affiliate: This Agreement supersedes and replaces all prior affiliate program agreements, including but not limited to the previous Forex Affiliate Pro / (n) Qualification Threshold: At least USD $5,000 in revenue and at least five (5) Unique Users generated by the Affiliate’s Discount Codes o / Article IV: Commissions, Attribution and Payout Conditions
+- **E8 Markets** https://e8markets.com/compare-simfi-funded-accounts: Average First Payout $5,799
+- **Audacity Capital** https://audacitycapital.co.uk/funded-trader-program/: $1,000 / $1,120 / $1,385
+- **HyroTrader** https://hyrotrader.com/transparency/: $9,710,050 / $1,737,650 / $1,527
+- **Crypto Fund Trader** https://cryptofundtrader.com/faq: If you selected a 1-Phase Evaluation (Classic, Pro or Turbo), there is only one phase: once you reach the profit target of your modality, yo / The trailing drawdown applies only to the former 1-Phase Evaluation (existing accounts) and Break Evaluations. It does not apply to 1-Phase  / Swap fees are not charged on the CFT Terminal. Instead, open positions may be subject to funding fees, which vary in both timing and amount 
+- **Crypto Fund Trader** https://cryptofundtrader.com/terms-and-conditions/: 48h Payout: Costs 20% of the evaluation price and allows participants to become eligible for scholarship consideration every 2 ac
+- **Goat Funded Futures** https://goatfundedfutures.com/refund-policy: Goat Funded Futures is a prop firm that gives futures traders access to evaluation and instant funding plans, with up to $750K in simulated  / Goat Funded Futures is a prop firm that gives futures traders access to evaluation and instant funding plans, with up to $750K in simulated  / Daily Payout
+- **Goat Funded Futures** https://goatfundedfutures.com/terms-and-condition: Goat Funded Futures is a prop firm that gives futures traders access to evaluation and instant funding plans, with up to $750K in simulated  / Goat Funded Futures is a prop firm that gives futures traders access to evaluation and instant funding plans, with up to $750K in simulated  / Daily Payout
+- **Goat Funded Futures** https://goatfundedfutures.com/privacy-policy: Goat Funded Futures is a prop firm that gives futures traders access to evaluation and instant funding plans, with up to $750K in simulated  / Goat Funded Futures is a prop firm that gives futures traders access to evaluation and instant funding plans, with up to $750K in simulated  / Daily Payout
+- **Goat Funded Futures** https://goatfundedfutures.com/daily-payout-futures-prop-firm: Goat Funded Futures is a prop firm that gives futures traders access to evaluation and instant funding plans, with up to $750K in simulated  / Goat Funded Futures is a prop firm that gives futures traders access to evaluation and instant funding plans, with up to $750K in simulated  / Daily Payout
+- **The Trading Pit Futures** https://support.thetradingpit.com/en/articles/835084-cfd-prime-swing-rules: Applies only to 1-Phase $100K and $200K accounts, in both phases. How it's calculated depends on when your account was created: / • Day 1: +$6,000, Day 2: −$2,000, Day 3: +$4,000, Day 4: +$2,000. / • Total Profit is $10,000. Your Best Day (Day 1) is 60% of it, so the rule isn't met yet.
+- **Funded Futures Network** https://fundedfuturesnetwork.com/payouts: $5,334,973 / Nov 26 $5,334,973 paid to date / Requested $1,364
 - **Traders Launch** https://traderslaunch.com/payout-rules: Payout Rules | Traders Launch
-- **MyFundedFutures** https://myfundedfutures.com/plans/signature/leaderboard: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
-- **AquaFunded Futures** https://aquafunded.com/: One account · Pro Instant 100K $336 was $560 One-time fee • 100% refundable
-- **Traders Launch** https://traderslaunch.com/: Premium $100K–$300K Static #1 on PropScore TL Drops Limited Drops / TL Drops are how we launch new account types: numbered drops, each on sale for a limited time at a launch price. Get an email the moment the
-- **MyFundedFutures** https://myfundedfutures.com/plans/builder: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
-- **MyFundedFutures** https://myfundedfutures.com/plans/rapid-eod: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
-- **MyFundedFutures** https://myfundedfutures.com/plans/pro: $946.40 / $4,543.36 / $3,320.83
-- **FundedNext Futures** https://fundednext.com/cookie-policy: Cookies are small files that are stored on your device and that help us collect information about your activities. In particular, cookies al / Most browsers automatically accept cookies by default. You can get more information about setting up cookies for the most common browsers he / These cookies allow you to browse the Website and use its functionalities. Through these cookies, we also ensure the security and administra
-- **E8 Markets** https://e8markets.com/e8-traders-stories: 12h ago $5,000 Classic Markets +$166 / 14h ago $5,000 Classic Markets +$251 / 15h ago $2,000 Classic Markets +$677
-- **HyroTrader** https://hyrotrader.com/transparency/: 16 hours ago Solana 3mMSC8…Jr7t24 $1,854.03 Solscan / 16 hours ago Solana 46rvvF…1RvF2E $783.00 Solscan / 16 hours ago Solana 5d7Hho…qfyRqa $225.72 Solscan
-- **Traders Launch** https://traderslaunch.com/results: Results & Payouts | Traders Launch
-- **Traders Launch** https://traderslaunch.com/payout-rules: Payout Rules | Traders Launch
-- **MyFundedFutures** https://myfundedfutures.com/coupons: $946.40 / $4,543.36 / $3,320.83
-- **AquaFunded Futures** https://www.aquafunded.com: One account · Pro Instant 100K $336 was $560 One-time fee • 100% refundable
-- **AquaFunded Futures** https://www.aquafunded.com/: One account · Pro Instant 100K $336 was $560 One-time fee • 100% refundable
+- **MyFundedFutures** https://myfundedfutures.com/coupons: $1,939.38 / $1,632.16 / $2,480.80
+- **MyFundedFutures** https://help.myfundedfutures.com/en/articles/13523548-instant-sim-funded-upgrade: Consistency Rule at My FundedFutures
+- **MyFundedFutures** https://help.myfundedfutures.com/en/articles/12879226-pro-plan-1day-addon: Flex Plan - $25,000 / A Comprehensive Guide
+- **Goat Funded Trader** https://help.goatfundedtrader.com/rewards.html: Minimum Profit & Profitable Days: Traders must have a minimum profit of 3% in their account and complete the same number of minimum profitab
+- **Audacity Capital** https://audacitycapital.co.uk/tr/funded-trader-program/: $1,000 / $1,000 / $1.940
+- **Audacity Capital** https://audacitycapital.co.uk/pt/funded-trader-program/: $1.000 / $1.120 / $1.385
+- **Audacity Capital** https://audacitycapital.co.uk/tl/funded-trader-program/: $1,000 / $1,120 / $1,385
+- **Audacity Capital** https://audacitycapital.co.uk/ar/funded-trader-program/: $1,120 / $1,120
+- **Audacity Capital** https://audacitycapital.co.uk/hi/funded-trader-program/: $1,000 / $1,120 / $1,560
+- **AquaFunded Futures** https://www.aquafunded.com: INSTANT PRO 100K $560 $336 ▼$224 INSTANT PRO 200K $905 $543 ▼$362 INSTANT STANDARD 100K $505 $303 ▼$202 CFDS +200% FEE BACK INSTANT FLEX 100 / Mega Sale fees. INSTANT PRO 100K: $560, now $336. INSTANT PRO 200K: $905, now $543. INSTANT STANDARD 100K: $505, now $303. CFDS: +200% FEE B
+- **AquaFunded Futures** https://www.aquafunded.com/: INSTANT PRO 100K $560 $336 ▼$224 INSTANT PRO 200K $905 $543 ▼$362 INSTANT STANDARD 100K $505 $303 ▼$202 CFDS +200% FEE BACK INSTANT FLEX 100 / Mega Sale fees. INSTANT PRO 100K: $560, now $336. INSTANT PRO 200K: $905, now $543. INSTANT STANDARD 100K: $505, now $303. CFDS: +200% FEE B
+- **DayTraders** https://daytraders.com/help/articles/17684753-s2f-consistency: S2L Consistency
+- **DayTraders** https://daytraders.com/help/articles/17704121-how-to-request-a-payout: Static Payouts
+- **DayTraders** https://daytraders.com/help/articles/17697907-s2l-consistency: EOD Consistency
+- **DayTraders** https://daytraders.com/help/articles/17697925-moving-from-pro-or-s2f-to-live: EOD Payouts
+- **DayTraders** https://daytraders.com/help/articles/17704079-supported-platforms: ArcTrader is fully supported by DayTraders. For other third-party platforms we offer limited support. For platform issues, contact the platf
 
-## Page changes today: 306
+## Page changes today: 186
 
-- Topstep (firm) https://www.topstep.com/: +273 / -35 lines
-- Topstep (firm) https://help.topstep.com/en/: +1 / -1 lines
-- MyFundedFutures (firm) https://myfundedfutures.com/: +164 / -4 lines
-- MyFundedFutures (firm) https://help.myfundedfutures.com/: +0 / -1 lines
-- FXIFY (firm) https://fxify.com/: +4 / -4 lines
+- Topstep (firm) https://www.topstep.com/: +223 / -185 lines
+- MyFundedFutures (firm) https://help.myfundedfutures.com/: +3 / -2 lines
+- Bulenox (firm) https://bulenox.com/: +1 / -1 lines
+- FXIFY (firm) https://fxify.com/: +6 / -6 lines
+- The5ers (firm) https://the5ers.com/: +4 / -4 lines
 - E8 Markets (firm) https://e8markets.com/: +44 / -44 lines
-- Maven Trading (firm) https://maventrading.com/: +12 / -12 lines
-- Crypto Fund Trader (firm) https://cryptofundtrader.com/: +7 / -7 lines
-- propfirmmatch (directory) https://propfirmmatch.com/: +25 / -25 lines
-- saveonpropfirms (directory) https://saveonpropfirms.com/: +10 / -10 lines
-- Polymarket (docs) https://docs.polymarket.com/changelog: +1 / -1 lines
-- Kalshi (docs) https://docs.kalshi.com/changelog: +1 / -1 lines
-- Hyperliquid (docs) https://hyperliquid.gitbook.io/hyperliquid-docs: +1 / -1 lines
-- Lighter (docs) https://docs.lighter.xyz/: +1 / -1 lines
-- Morpho (docs) https://docs.morpho.org/: +4 / -4 lines
-- Ethena (docs) https://docs.ethena.fi/: +1 / -1 lines
-- Kamino (docs) https://docs.kamino.finance/: +2 / -1 lines
+- Crypto Fund Trader (firm) https://cryptofundtrader.com/: +45 / -46 lines
+- QT Funded (firm) https://qtfunded.com/: +1 / -1 lines
+- propfirmmatch (directory) https://propfirmmatch.com/: +28 / -28 lines
+- saveonpropfirms (directory) https://saveonpropfirms.com/: +1 / -1 lines
+- Polymarket (docs) https://docs.polymarket.com/changelog: +4 / -1 lines
+- Kalshi (docs) https://docs.kalshi.com/changelog: +21 / -1 lines
+- Morpho (docs) https://docs.morpho.org/: +2 / -1 lines
+- Kamino (docs) https://docs.kamino.finance/: +1 / -2 lines
 - Jupiter (docs) https://station.jup.ag/docs: +1 / -1 lines
 - dYdX v4 (release) https://github.com/dydxprotocol/v4-chain/releases.atom: +1 / -1 lines
-- goat-funded-futures (via propfirmmatch) (directory_firm) https://propfirmmatch.com/futures/prop-firms/goat-funded-futures: +2 / -2 lines
-- traders-launch (via propfirmmatch) (directory_firm) https://propfirmmatch.com/futures/prop-firms/traders-launch: +2 / -2 lines
-- brightfunded-futures (via propfirmmatch) (directory_firm) https://propfirmmatch.com/futures/prop-firms/brightfunded-futures: +2 / -2 lines
-- the5ers-futures (via propfirmmatch) (directory_firm) https://propfirmmatch.com/futures/prop-firms/the5ers-futures: +2 / -2 lines
-- the-trading-pit-futures (via propfirmmatch) (directory_firm) https://propfirmmatch.com/futures/prop-firms/the-trading-pit-futures: +2 / -2 lines
-- aquafunded-futures (via propfirmmatch) (directory_firm) https://propfirmmatch.com/futures/prop-firms/aquafunded-futures: +2 / -2 lines
-- Goat Funded Futures (firm) https://goatfundedfutures.com/: +42 / -42 lines
-- DayTraders (firm) https://daytraders.com/: +14 / -14 lines
-- The5ers Futures (firm) https://the5ers.com/futures/: +31 / -0 lines
-- Topstep (firm_sub) https://www.topstep.com/live-funded-account-rules: +34 / -4 lines
-- Topstep (firm_sub) https://www.topstep.com/express-funded-account-rules: +34 / -4 lines
-- Topstep (firm_sub) https://www.topstep.com/instant-payouts: +34 / -4 lines
-- Topstep (firm_sub) https://www.topstep.com/privacy-policy: +34 / -4 lines
-- Topstep (firm_sub) https://www.topstep.com/terms-of-use: +34 / -4 lines
-- Topstep (firm_sub) https://www.topstep.com/affiliate-terms-and-conditions: +34 / -4 lines
+- blueberry-futures (via propfirmmatch) (directory_firm) https://propfirmmatch.com/futures/prop-firms/blueberry-futures: +2 / -2 lines
+- finotive-futures (via propfirmmatch) (directory_firm) https://propfirmmatch.com/futures/prop-firms/finotive-futures: +2 / -2 lines
+- futureselite (via propfirmmatch) (directory_firm) https://propfirmmatch.com/futures/prop-firms/futureselite: +7 / -7 lines
+- goat-funded-futures (via propfirmmatch) (directory_firm) https://propfirmmatch.com/futures/prop-firms/goat-funded-futures: +4 / -4 lines
+- hola-prime-futures (via propfirmmatch) (directory_firm) https://propfirmmatch.com/futures/prop-firms/hola-prime-futures: +2 / -2 lines
+- trade-the-pool (via propfirmmatch) (directory_firm) https://propfirmmatch.com/futures/prop-firms/trade-the-pool: +16 / -16 lines
+- traders-launch (via propfirmmatch) (directory_firm) https://propfirmmatch.com/futures/prop-firms/traders-launch: +7 / -6 lines
+- ylos-trading (via propfirmmatch) (directory_firm) https://propfirmmatch.com/futures/prop-firms/ylos-trading: +2 / -2 lines
+- e8-futures (via propfirmmatch) (directory_firm) https://propfirmmatch.com/futures/prop-firms/e8-futures: +4 / -4 lines
+- brightfunded-futures (via propfirmmatch) (directory_firm) https://propfirmmatch.com/futures/prop-firms/brightfunded-futures: +22 / -14 lines
+- the5ers-futures (via propfirmmatch) (directory_firm) https://propfirmmatch.com/futures/prop-firms/the5ers-futures: +21 / -19 lines
+- the-trading-pit-futures (via propfirmmatch) (directory_firm) https://propfirmmatch.com/futures/prop-firms/the-trading-pit-futures: +5 / -5 lines
+- aquafunded-futures (via propfirmmatch) (directory_firm) https://propfirmmatch.com/futures/prop-firms/aquafunded-futures: +17 / -17 lines
+- Goat Funded Futures (firm) https://goatfundedfutures.com/: +16 / -6 lines
+- AquaFunded Futures (firm) https://aquafunded.com/: +7 / -3 lines
+- Traders Launch (firm) https://traderslaunch.com/: +23 / -5 lines
+- The5ers Futures (firm) https://the5ers.com/futures/: +160 / -162 lines
+- Immunefi (contest) https://immunefi.com/bug-bounty/: +6 / -6 lines
+- Bebop (bot_docs) https://docs.bebop.xyz/: +1 / -1 lines
+- CoW services (release) https://github.com/cowprotocol/services/releases.atom: +5 / -5 lines
+- Orderly docs (mm_program) https://orderly.network/docs/home: +1 / -1 lines
+- Topstep (firm_sub) https://www.topstep.com/live-funded-account-rules: +3 / -3 lines
+- Topstep (firm_sub) https://help.topstep.com/en/articles/8284117-topstep-refund-policies: +1 / -1 lines
 - Topstep (firm_sub) https://help.topstep.com/en/articles/8284215-express-funded-account-parameters: +1 / -1 lines
-- Topstep (firm_sub) https://help.topstep.com/en/articles/8284233-topstep-payout-policy: +2 / -2 lines
-- Topstep (firm_sub) https://help.topstep.com/en/collections/5836609-topstep-program: +4 / -1 lines
-- Topstep (firm_sub) https://help.topstep.com/en/articles/8284099-topstep-program-overview: +1 / -1 lines
-- Topstep (firm_sub) https://help.topstep.com/en/articles/8284197-trading-combine-parameters: +1 / -1 lines
-- MyFundedFutures (firm_sub) https://help.myfundedfutures.com/en/: +0 / -1 lines
 
-## Non-prop leads (docs/PREREG_RADAR_NONPROP_20261124.md): new today 20
-
-### Stablecoin depegs (5)
-- apxUSD: apxUSD at $0.9577, circulating $247,636,972 https://defillama.com/stablecoin/apxusd
-- USDA: AP USDA at $0.8808, circulating $76,601,381 https://defillama.com/stablecoin/ap%20usda
-- MSUSD: Metronome Synth USD at $0.7965, circulating $40,770,457 https://defillama.com/stablecoin/metronome%20synth%20usd
-- pmUSD: pmUSD at $0.4075, circulating $32,700,531 https://defillama.com/stablecoin/pmusd
-- USDR: Real USD at $0.3979, circulating $17,603,054 https://defillama.com/stablecoin/real%20usd
+## Non-prop leads (docs/PREREG_RADAR_NONPROP_20261124.md): new today 5
 
 ### Extreme funding (1)
-- CC: funding -148%/yr, open interest $3,424,712 https://app.hyperliquid.xyz/trade/CC
+- BIGTIME: funding -4380%/yr, open interest $2,112,462 https://app.hyperliquid.xyz/trade/BIGTIME
 
-### Governance: incentives / bot programmes (14)
-- compound: Problem with COMP rewards https://www.comp.xyz/t/problem-with-comp-rewards/8287
-- morpho: [RFC] NOC Engine — Low-Latency Rust Solver & Zero-Fee Flash-Routing on Morpho Blue (Base L2) https://forum.morpho.org/t/rfc-noc-engine-low-latency-rust-solver-zero-fee-flash-routing-on-morpho-blue-base-l2/2496
-- morpho: [RFC] Moonglade Grant Request: Always-On Fixed-Rate Liquidity for Morpho Midnight https://forum.morpho.org/t/rfc-moonglade-grant-request-always-on-fixed-rate-liquidity-for-morpho-midnight/2476
-- cow: CIP-Draft: Migrate the TSolver bonding pool https://forum.cow.fi/t/cip-draft-migrate-the-tsolver-bonding-pool/3813
-- cow: Grant Application: CoW Wallet Adoption Engine https://forum.cow.fi/t/grant-application-cow-wallet-adoption-engine/3810
-- cow: Proposal for consistency rewards v2.2 https://forum.cow.fi/t/proposal-for-consistency-rewards-v2-2/3809
-- cow: Grant Application - Dutch CoWs: Programmatic Dutch Auctions for CoW Protocol, a paid beta https://forum.cow.fi/t/grant-application-dutch-cows-programmatic-dutch-auctions-for-cow-protocol-a-paid-beta/3786
-- cow: A public mirror of the solver auction archive past 30 days: would it be welcome? https://forum.cow.fi/t/a-public-mirror-of-the-solver-auction-archive-past-30-days-would-it-be-welcome/3785
-- cow: [CIP-82 Proposal] NOC Engine — High-Frequency Rust Sub-Solver on Base (BYOS Track) https://forum.cow.fi/t/cip-82-proposal-noc-engine-high-frequency-rust-sub-solver-on-base-byos-track/3773
-- cow: Grant Application — DIM Network: Quantum-Safe DEX Order Routing via CoW Protocol on Ethereum L2 https://forum.cow.fi/t/grant-application-dim-network-quantum-safe-dex-order-routing-via-cow-protocol-on-ethereum-l2/3743
-- lido: LEGO Grant Proposal: eth-dvt-signer https://research.lido.fi/t/lego-grant-proposal-eth-dvt-signer/12211
-- lido: LEGO Grant Proposal: NOC Engine — Base L2 wstETH Peg-Defense Routing & Execution Telemetry https://research.lido.fi/t/lego-grant-proposal-noc-engine-base-l2-wsteth-peg-defense-routing-execution-telemetry/12203
-- sky: stUSDS liquidation ratio https://forum.skyeco.com/t/stusds-liquidation-ratio/28443
-- celo: [Project Complete] Aigora – Prezenti Frontier Grant Completion Report https://forum.celo.org/t/project-complete-aigora-prezenti-frontier-grant-completion-report/14142
+### Audit contest prizes (1)
+- Immunefi: page changed; largest amount in added text $500,000 https://immunefi.com/bug-bounty/
+
+### Governance: incentives / bot programmes (1)
+- lido: LEGO Grant Proposal: eth-hw-signer https://research.lido.fi/t/lego-grant-proposal-eth-hw-signer/12227
+
+### Malaysia access / bot-role docs / market-maker programme changes (2)
+- Bebop: changed: {"docsConfig":{"theme":"mint","$schema":"https://mintlify.com/docs.json","name":"Bebop API Docs","colors":{"primary":"#0 https://docs.bebop.xyz/
+- Orderly docs: changed: {"docsConfig":{"theme":"mint","$schema":"https://mintlify.com/docs.json","name":"Orderly","colors":{"primary":"#aa5cf8", https://orderly.network/docs/home
 
 ### Source health
 - N1 stablecoins: 459
 - N2 Hyperliquid perps: 235
-- N3 CoW payouts (21d): 658 transfers, COW price 0.09486317459999999, $659,284 to 53 recipients
-- N5 forums answering: 21/23
+- N3 CoW payouts (21d): 604 transfers, COW price 0.09383068350000001, $650,998 to 53 recipients
+- N5 forums answering: 22/23
 - N4 Cantina item keys: allowedSeverities,cantinaTriaged,company,createdAt,currencyCode,entryFee,id,instructions,joined,kind,kycRequired,name,status,timeframe,totalFindings,totalRewardPot,url
 - N4 statuses: {'cantina:complete': 144, 'sherlock:FINISHED': 30, 'cantina:live': 1, 'cantina:escalations': 1}
 - N4 contests listed: 30 Sherlock, 146 Cantina
-- N7 derivatives venues (CoinGecko): 100; BTC $60360.924799500004
+- N7 derivatives venues (CoinGecko): 100; BTC $58552.99

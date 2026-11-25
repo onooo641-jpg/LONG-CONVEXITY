@@ -57,7 +57,7 @@ Leave a Review
 Buy
 Tr
 Traders Launch
-3233
+3249
 CEO
 Max Thomas
 Country
@@ -70,7 +70,7 @@ Years in Operation
 4
 Tr
 Traders Launch
-3233
+3249
 United States
 Set as Favorite
 CEO
@@ -139,12 +139,13 @@ Legacy NYC session:
 100K Account - 5 Micro
 200K Account - 1 Mini or 10 Micro
 300K Account - 2 Mini or 20 Micro
-Premium EOD and Legacy NYC can scale up to 15 minis.
+Starting contract limits are fixed and do not grow (all plans)
 Static starting limits:
 25K: 1 mini or 10 micros
 50K: 2 minis or 20 micros
 100K: 4 minis or 40 micros
-Further Static scaling is not published on the current pricing cards.
+TL Drop #2:
+25K: 1 mini or 10 micros.
 Learn More About Traders Launch Leverage
 Commissions
 Micro contracts (MES, MNQ, MGC): $0.87 per side / $1.74 round trip.
@@ -345,7 +346,7 @@ Contact Business
 Have Questions?
 Contact Us for More.
 Contact Us
-Privacy Policy Terms & Conditions Marketplace Terms Cookie Preferences
+Privacy Policy Terms & Conditions Marketplace Terms Cookie Policy Cookie Preferences
 ©  2026   Prop Firm Match. All rights reserved.
 ©  2026   Prop Firm Match. All rights reserved.
-Privacy Policy Terms & Conditions Marketplace Terms Cookie Preferences
+Privacy Policy Terms & Conditions Marketplace Terms Cookie Policy Cookie Preferences

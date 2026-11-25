@@ -57,7 +57,7 @@ Leave a Review
 Buy
 Th
 The5ers Futures
-1349
+1350
 CEO
 Saul Lokier
 Country
@@ -70,7 +70,7 @@ Years in Operation
 0
 Th
 The5ers Futures
-1349
+1350
 United Kingdom
 Set as Favorite
 CEO
@@ -81,13 +81,13 @@ Date Created
 Feb 2026
 Years in Operation
 0
-4.5
-8
+4.4
+9
 total reviews
 5
 7
 4
-0
+1
 3
 0
 2
@@ -96,8 +96,8 @@ total reviews
 1
 Th
 The5ers Futures
-4.5
-8
+4.4
+9
 MATCH10
 New Offer
 10% OFF
@@ -120,7 +120,7 @@ New Offer
 Code
 MATCH10
 Overview Challenges 4
-Reviews 8
+Reviews 9
 Offers 1
 Payouts New
 Discussions 0
@@ -128,7 +128,7 @@ The5ers Futures - Futures Prop Firm Details
 Firm Overview Instruments and Assets Leverage Commissions Consistency Rules Firm Rules Challenges Payout Policy Restricted Countries
 AI Summary
 The5ers Futures Firm AI Summary
-The5ers Futures, based in the United Kingdom and established in February 2026, operates a futures-focused proprietary trading program. The firm offers a 1 Step evaluation model and provides traders access to the BlackArrow trading platform. With a review score of 4.5 out of 5 based on 8 reviews, The5ers Futures positions itself as a streamlined option for traders seeking futures market exposure through a simplified evaluation structure.
+The5ers Futures, based in the United Kingdom and established in February 2026, offers futures-based prop trading through a 1 Step evaluation program. The firm utilizes the BlackArrow trading platform for all account operations. With a review score of 4.4 out of 5 based on 9 reviews, The5ers Futures provides traders access to futures markets through a streamlined single-phase assessment model designed for those seeking direct funding pathways in derivatives trading.
 Firm Overview
 Broker :
 BlackArrow
@@ -176,13 +176,13 @@ Commissions for Micro Single Stock Futures:
 https://the5ers.com/futures-faqs/micro-single-stock-futures/
 Consistency Rules
 40% Consistency Rule Per Position
-No single trade may account for more than 40% of your total profits on both evaluation and funded.
+No single trade may account for more than 40% of your total profits on funded.
 Firm Rules
-Inactivity Rule: You must place at least one trade every 14 days to keep the account active. Accounts with no trading activity for a 14-day period will be terminated due to inactivity.
+Inactivity Rule
+You must place at least one trade every 14 days to keep the account active. Accounts with no trading activity for a 14-day period will be terminated due to inactivity.
 News Trading: The5ers Futures allows trading during news events. There are no restrictions on trading around economic releases, as long as you follow all risk and account rules.
-Copy Trading: Copy trading is only permitted on 25K and 50K accounts with a total size of up to $75,000.
-One important restriction: you can only copytrade your own accounts and your own trades. You can't copy trades from another trader, or let anyone else copy trades from you.
-Overnight Holding:
+Copy Trading: Copy trading is not permitted.
+Overnight Holding
 Swing: See Leverage Overview for contract limits. Bigger positions must close at least 10 minutes before market close.
 Day Trade: Overnight holding is not allowed. You must manually close all positions and cancel pending orders at least 10 minutes before the close (by 4:50 PM CET).
 Both programs: No weekend holding allowed. All positions must be closed at least 10 minutes before the Friday close.
@@ -192,7 +192,7 @@ Trading Hours: Futures markets operate nearly 24 hours per day, Sunday through F
 Day Trade accounts are required to close all their positions by 4:50 PM CT. Trades can be reopened after the daily maintenance break.
 Swing accounts are allowed to hold positions through the maintenance break, but have to reduce their size to a maximum of 1 mini or 10 micro contracts all their positions by 4:50 PM CT.
 Bigger positions can be reopened after the daily maintenance break.
-Both programs must close all positions before the weekend.
+Both programs must close all positions before the weekend
 Challenges
 The 5%ers Futures - Swing - Summer Plan - 1-Step 50K $216.00
 $240.00
@@ -205,11 +205,13 @@ $59.00
 Payout Policy
 Profit Split: 80%
 Payout Threshold 4% profit or more, calculated from your initial account balance
-Withdrawals: Available on a biweekly basis (every 14 days). There is no specific minimum profit threshold mentioned for withdrawals.
 Minimum Payout: $150
 Payout Cap
-Payout caps remain consistent across all accounts, which is 3%
+Maximum amount per payout request:
+$25K: Payout 1 $750 | Payout 2 $875 | Payout 3 $1,000 | Payout 4+ $1,000
+$50K: Payout 1 $1,250 | Payout 2 $1,500 | Payout 3 $1,500 | Payout 4+ $1,750
 Drawdown Reset: Every time you withdraw a payout, your drawdown limit resets to 4% below your new balance (after the withdrawal).
+Completing 5 successful reward withdrawals marks the full lifecycle and graduation of that Pro account. Once your 5th payout is processed, the account is officially marked as completed.
 Restricted Countries
 Afghanistan
 Belarus
@@ -310,7 +312,7 @@ Contact Business
 Have Questions?
 Contact Us for More.
 Contact Us
-Privacy Policy Terms & Conditions Marketplace Terms Cookie Preferences
+Privacy Policy Terms & Conditions Marketplace Terms Cookie Policy Cookie Preferences
 ©  2026   Prop Firm Match. All rights reserved.
 ©  2026   Prop Firm Match. All rights reserved.
-Privacy Policy Terms & Conditions Marketplace Terms Cookie Preferences
+Privacy Policy Terms & Conditions Marketplace Terms Cookie Policy Cookie Preferences

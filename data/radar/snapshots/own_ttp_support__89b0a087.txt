@@ -9,7 +9,7 @@ CFD Prime (Swing)
 CFD Prime (Swing) Rules
 CFD Prime (Swing) Rules
 Everything that applies to your CFD Prime (Swing) account, in one place — what you must do to pass, the limits you can’t breach, and what’s allowed.
-Updated this week
+Updated in the last 15 minutes
 Table of contents
 These are the rules for your CFD Prime (Swing) account. Most apply in both the Challenge and the Earning Phase. We group them into two types:
 Hard rules — breaking one breaches the account: it fails and is disabled.
@@ -56,8 +56,15 @@ Reach the Profit Target set for your account size (shown in your Client Area and
 Minimum Profitable Days (Soft — No Breach)
 You need at least 3 profitable trading days (accounts purchased or upgraded on or after 2 June 2025; earlier accounts need 5 trading days). A day is profitable when your account gains at least 0.5% of the initial balance, measured at the end-of-day cut-off (16:15 CT) using the lower of your balance or equity versus the previous day’s balance. Profitable days do not need to be consecutive.
 Consistency Rule (Soft — No Breach)
-Applies only to 1-Phase $100K and $200K accounts (new accounts on or after 6 July 2026), in both phases. Your Best Day (single most profitable day) must not exceed 50% of your Positive Days’ Profit (the sum of all profitable days; losing days are excluded).
-Going over 50% does not fail your account — you simply keep trading and add profit on other days until your Best Day is 50% or less
+Applies only to 1-Phase $100K and $200K accounts, in both phases. How it's calculated depends on when your account was created:
+• Accounts created on or after 26 November 2026: your Best Day (your single most profitable day) must not exceed 50% of your Total Profit. Total Profit is your net closed profit across all trading days, so losing days reduce it.
+• Accounts created from 6 July 2026 to 25 November 2026: your Best Day must not exceed 50% of your Positive Days' Profit (the sum of all your profitable days; losing days are excluded).
+Going over 50% doesn't fail the account. Keep trading and add profit on other days until your Best Day is 50% or less.
+Example (accounts created on or after 26 November 2026):
+• Day 1: +$6,000, Day 2: −$2,000, Day 3: +$4,000, Day 4: +$2,000.
+• Total Profit is $10,000. Your Best Day (Day 1) is 60% of it, so the rule isn't met yet.
+• If Day 1 stays your Best Day, you need a Total Profit of at least $12,000 ($6,000 ÷ 0.5).
+• Under the previous rule, the same four days give a Positive Days' Profit of $12,000, so the Best Day is exactly 50% and the rule is met.
 Limits You Must Not Breach (Hard Rules)
 Daily Drawdown (Hard Rule)
 The most you can lose in a single day. It’s measured on your closed balance (Closed P&L, commissions included) and updated at the end of each day (16:15 CT).

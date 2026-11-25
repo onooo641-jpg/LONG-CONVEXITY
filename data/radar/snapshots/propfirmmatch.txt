@@ -71,7 +71,7 @@ MATCH
 Aq
 AquaFunded
 4.4
-35% OFF
+40% OFF
 MATCH
 Bl
 Blueberry Funded
@@ -110,7 +110,7 @@ WSFunded
 MATCH55
 Cr
 Crypto Fund Trader
-4.2
+4.1
 30% OFF
 MATCH30
 Fi
@@ -187,7 +187,7 @@ MATCH
 Aq
 AquaFunded
 4.4
-35% OFF
+40% OFF
 MATCH
 Bl
 Blueberry Funded
@@ -204,7 +204,7 @@ Favorite 0/5
 New
 All Firms
 Firms 15 results
-Data updated 3 min ago
+Data updated just now
 Firm
 Rank / Reviews
 Country / Years
@@ -215,9 +215,9 @@ Promo
 Actions
 Th
 The5ers
-100497
+100556
 4.7
-1442
+1443
 reviews
 United Kingdom, years in operation: 10 10+
 FX, Indices, Metals, Energy, Crypto, Stocks FX
@@ -232,7 +232,7 @@ MATCH
 Firm
 FT
 FTMO
-44382
+44394
 4.5
 220
 reviews
@@ -248,9 +248,9 @@ $400K
 Firm
 Aq
 AquaFunded
-17133
+17173
 4.4
-345
+347
 reviews
 Dubai (UAE), years in operation: 2 2
 FX, Indices, Metals, Crypto, Other Commodities FX
@@ -259,13 +259,13 @@ Metals
 Crypto
 Other Commodities
 $400K
-35% OFF
+40% OFF
 MATCH
 Firm
 4
 Bl
 Blueberry Funded
-26287
+26290
 4.1
 635
 reviews
@@ -283,7 +283,7 @@ Firm
 5
 E8
 E8 Markets
-39223
+39262
 4.8
 498
 reviews
@@ -301,7 +301,7 @@ Firm
 6
 Mo
 Moneta Funded
-1560
+1561
 4.8
 130
 reviews
@@ -318,9 +318,9 @@ Firm
 7
 To
 Top One Trader
-30346
+30360
 4.4
-237
+239
 reviews
 United States, years in operation: 3 3
 FX, Indices, Metals, Crypto FX
@@ -334,7 +334,7 @@ Firm
 8
 Ma
 Maven
-48274
+48291
 4.2
 801
 reviews
@@ -352,7 +352,7 @@ Firm
 9
 WS
 WSFunded
-363
+365
 3.8
 51
 reviews
@@ -370,9 +370,9 @@ Firm
 10
 Cr
 Crypto Fund Trader
-39686
-4.2
-113
+39750
+4.1
+114
 reviews
 Switzerland, years in operation: 4 4
 FX, Indices, Crypto, Stocks, Other Commodities FX
@@ -388,7 +388,7 @@ Firm
 11
 Fi
 Fintokei
-2387
+2388
 Less than
 20 reviews
 Czechia, years in operation: 3 3
@@ -407,7 +407,7 @@ At
 Atmos Funded
 846
 4.7
-55
+56
 reviews
 Cyprus, years in operation: 2 2
 FX, Indices, Metals, Energy, Crypto, Stocks FX
@@ -423,7 +423,7 @@ Firm
 13
 Le
 Leveraged
-186
+187
 Less than
 20 reviews
 Saint Lucia, years in operation: 1 1
@@ -459,7 +459,7 @@ La
 Lark Funding
 4470
 4.5
-92
+93
 reviews
 Canada, years in operation: 4 4
 FX, Indices, Metals, Energy, Crypto, Stocks FX
@@ -476,7 +476,7 @@ View All Firms
 PFM TV Watch live. Stay ahead
 Live trading, partner reviews, founder interviews, and practical trading education.
 FTMO Futures Challenge Explained (2026) | FTMO Futures Challenge Review
-3.8K views • about 1 month ago
+3.9K views • about 1 month ago
 Watch Latest Video
 Partner Reviews
 FTMO Futures Challenge Explained (2026) | FTMO Futures Challenge Review
@@ -597,7 +597,7 @@ Guest interview
 Watch & Learn
 Updated Oct 14, 2026
 83.9K Subscribers
-993 Videos
+994 Videos
 Trading Insights
 Live trading, interviews, and prop firm updates
 Subscribe
@@ -698,7 +698,7 @@ Contact Business
 Have Questions?
 Contact Us for More.
 Contact Us
-Privacy Policy Terms & Conditions Marketplace Terms Cookie Preferences
+Privacy Policy Terms & Conditions Marketplace Terms Cookie Policy Cookie Preferences
 ©  2026   Prop Firm Match. All rights reserved.
 ©  2026   Prop Firm Match. All rights reserved.
-Privacy Policy Terms & Conditions Marketplace Terms Cookie Preferences
+Privacy Policy Terms & Conditions Marketplace Terms Cookie Policy Cookie Preferences

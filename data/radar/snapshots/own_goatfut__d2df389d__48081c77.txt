@@ -19,6 +19,7 @@ You start at $50,000, so your floor is $48,000.
 You close the day at $51,500, so your floor moves up to $49,500.
 During the next day your equity dips to $49,200 intraday but you close at $50,800. No breach, because the floor is based on your end of day balance, not intraday equity.
 Over time, your closing balances push the floor up to $50,000, your initial starting balance. The floor is now locked and will not trail any further.
+This does not apply to live accounts. On live, the floor also only moves at the end of the day, but a breach is checked in real time. If your equity reaches the floor at any point during the day, the live account is breached. See what counts as a breach on live .
 Trailing intraday
 Used on Daily Payouts funded accounts, and on Instant Classic accounts bought before 18 November 2026. The drawdown floor updates in real time, tracking your highest equity point during the session, including unrealised profits on open positions.
 Example (50K account, $2,000 max drawdown):
@@ -30,7 +31,7 @@ Daily Payouts uses both
 The evaluation runs end of day trailing and the funded account switches to intraday trailing. See the Daily Payouts drawdown article .
 Important note for funded accounts
 Once the drawdown floor locks, your account has very little cushion below that level. For example, if you have grown your 50K account to $54,000 and withdraw $4,000 in profits, your balance returns to $50,000, which is exactly where the floor is locked. At that point any drop in equity at all will breach the account. Always keep a buffer in your account when making withdrawals.
-Updated 19 November 2026
+Updated 24 November 2026
 What is the difference between EOD trailing and intraday trailing drawdown?
 The key difference is when the drawdown floor updates.
 EOD trailing drawdown

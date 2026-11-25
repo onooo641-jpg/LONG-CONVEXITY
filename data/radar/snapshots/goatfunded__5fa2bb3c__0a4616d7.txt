@@ -74,12 +74,12 @@ Updated 11 November 2026
 Reward on Demand Eligibility Criteria
 First Reward on Demand is available as an add-on for all our 1-Step, 2-Steps, 3-Steps and Goat Blitz challenges. It is not available on 2-Step Premium.
 To qualify for a Reward on Demand while trading on a funded account, traders must meet the following criteria:
-Minimum Profit & Trading Days: Traders must achieve a minimum profit of 3% in their account over at least 3 trading days.
-Minimum Daily Profit: Traders must generate at least 0.5% profit per day on a minimum of 3 trading days.
+Minimum Profit & Profitable Days: Traders must have a minimum profit of 3% in their account and complete the same number of minimum profitable days their model needs for a normal payout. On 2-Step accounts purchased from 25 July 2026 that is 4 days, and 3 days for accounts purchased before that date.
+Minimum Daily Profit: Each of those days needs at least 0.5% profit on the initial account balance, net of fees and commissions.
 For the first Reward on Demand, a 40% profit split will be applied. After this, traders become eligible for subsequent rewards every 14 or 30 days, at the usual full 80% profit split.
 Please note that failing to meet any of the above criteria will result in ineligibility for Reward on Demand. Ensure compliance with these requirements to take advantage of expedited reward processing.
 Please note that The 100% Profit Split add-on does not change the Reward on Demand profit split from 40% on first payout. Regardless of add-ons purchased, the first Reward on Demand will always be paid at a 40% profit split .
-Updated 4 November 2026
+Updated 25 November 2026
 What is the "Triple Payday" reward schedule?
 The "Triple Payday" reward schedule is the standard payout schedule for our Instant Funding Standard Account. This allows traders to request a reward on the 5th, 15th, and 25th of every month, providing more frequent access to earnings.
 To be eligible for a reward under this schedule, traders must meet the following conditions:

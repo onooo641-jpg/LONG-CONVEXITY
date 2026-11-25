@@ -25,7 +25,7 @@ Getting Started
 How Identity Verification Works
 How Identity Verification Works
 One-time. Required. Fast.
-Updated this week
+Updated over a week ago
 Table of contents
 Topstep works with third party verification software to verify all Topstep Traders. It's required before your second purchase and takes only minutes to complete. Your information is stored on an encrypted server with Topstep's verification partner.
 Additionally, identity verification is also required for requesting Payouts, ensuring compliance with Topstep’s policies.

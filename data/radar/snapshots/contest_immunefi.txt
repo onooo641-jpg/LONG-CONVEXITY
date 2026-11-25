@@ -47,7 +47,7 @@ Token
 Foundation Institutional Docs IR Contact Buy IMU
 Explore Bounties Log in
 Explore: Bug Bounties
-Metrics are updated daily, with a 2-week delay after reports are resolved to maintain confidentiality. Last updated on Nov 23rd 2026 at 16:00 UTC
+Metrics are updated daily, with a 2-week delay after reports are resolved to maintain confidentiality. Last updated on Nov 24th 2026 at 16:02 UTC
 Bounties Audit Competitions Competitions
 I'm feeling lucky Roll the dice
 All
@@ -96,9 +96,9 @@ TOTAL PAID
 MED. RESOLUTION TIME
 LAST UPDATED
 SSV Network
-$202.8k $250k Private
+$196.4k $250k Private
 Private
-13/9/2026 View bounty
+24/11/2026 View bounty
 ENS Triaged by Immunefi
 $87.9k $250k Private
 Private
@@ -116,17 +116,17 @@ $16.5k $30k Private
 Private
 24/11/2026 View bounty
 The Graph Triaged by Immunefi
-$15.8k $50k $1.6M 1 day 27/8/2026 View bounty
+$15.3k $50k $1.6M 1 day 24/11/2026 View bounty
 Ethena Triaged by Immunefi
 $12.4k $3M Private
 Private
 24/11/2026 View bounty
 DeXe Protocol
-$8.9k $500k Private
+$8.5k $500k Private
 Private
 24/11/2026 View bounty
 Immunefi Triaged by Immunefi
-$7.2k $50k $76.2k 9 hours 9/9/2026 View bounty
+$7.2k $50k $76.2k 9 hours 24/11/2026 View bounty
 StackingDAO
 $2.7k $100k Private
 Private
