@@ -52,5 +52,20 @@ reported as context (no selection among them).
 **Stage 1 (kill-only), X = 15%:** KILL if mean net return per fill ≤ 0.3%, or net profit < $3,000/yr (fills of one day share one $15,000
 pot: if a day's fills exceed $15,000 they are scaled down).
 
+## U-T7 (#391) Hong Kong IPO one-lot applications — added 2026-11-25 before its data were fetched
+**Why.** Issuers underprice IPOs (long-run Hong Kong day-one average +38.1%, Ritter Jan 2026; ~40% in 2025 per HKEX via Reuters).
+The public tranche gives small "one-lot" applications a lottery-style share, capped per identity, so big money cannot take it all.
+**Stage 0 (desk, open).** A broker that lets a Malaysian resident apply for Hong Kong IPOs (IBKR needs an IBHK account; moomoo/M+/Webull MY
+trade HK shares, IPO access unverified). Until confirmed, a pass here only makes this "worth asking a broker".
+**Data.** Public IPO result tables (AASTOCKS listed-IPO table and/or etnet IPO pages): listing date, offer price, lot size,
+public-offer oversubscription, one-lot success rate, first-day performance. 2023-01..2026-10, every IPO with those fields; none dropped.
+**Rule A (primary).** Apply for one lot in every IPO with cash. Expected value per IPO = one-lot success rate × lot value × first-day
+return − HK$100 application cost (conservative; many brokers charge HK$0–100). Annual EV = sum over IPOs in the year, in USD at 7.8.
+**Rule B (context only, look-ahead).** Only IPOs whose final public oversubscription ≥ 100× (final figures are known only after
+applications close; broker margin-book figures approximate them before) — reported, not used for the verdict.
+**Stage 1 (kill-only).** KILL if Rule A's mean annual EV over 2023-01..2026-10 < US$1,000 per identity, or if fewer than 30 IPOs have
+the needed fields. Surviving means only "a small capped add-on worth a broker-access check"; scaling via larger tiers and IPO margin
+loans needs per-tier allotment data and its own pre-registration (Stage 2).
+
 **Commands.** probe: Actions job `uprobe`; tests: `scripts/uncharted_*_20261125.py` with outputs in `docs/jx_runs/` (each re-run once;
 identical). **Limits.** NAV proxies and announcement times are approximations; small samples are reported as such.

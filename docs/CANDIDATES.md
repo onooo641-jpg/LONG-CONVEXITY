@@ -223,6 +223,7 @@ risk, 5m signals and 1m fills.
 | 388 | U3, U4, U10–U16 (token-sale platforms, LBPs, incentivized testnets, pre-IPO perps, CoW AMM, RFQ market-maker programmes, Timeboost, discounted DRIPs, builder codes) | `docs/IDEAS_UNCHARTED_20261125.md` | desk: U15 DRIPs and U14 Timeboost dismissed, U16 excluded (marketing), U3 buy-all −46% dismissed; U4/U12 queued; U10/U11 untestable; U13 approval-gated | — |
 | 389 | U17 resting bids under liquidation wicks on Hyperliquid perps (buy at prev close −15%, sell at the close) | `docs/PREREG_UNCHARTED_20261125.md` | registered; uses U-T3 candles | — |
 | 390 | U18–U22 second wave: crypto net-nets, bitcoin-treasury premiums, locked-token OTC, Hong Kong IPO subscriptions, Japan yutai | `docs/IDEAS_UNCHARTED_20261125.md` | desk: U19/U20 dismissed, U22 excluded (residency), U18 radar candidate, U21 broker-access check next | — |
+| 391 | U21 Hong Kong IPO one-lot applications in every IPO (issuer underpricing, capped per identity) | `docs/PREREG_UNCHARTED_20261125.md` | registered; Stage 0 broker access open; data fetch `u391hkipo` | — |
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.

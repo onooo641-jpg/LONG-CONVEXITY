@@ -466,6 +466,45 @@ def job_u387cca():
     save("uncharted_387_gt.parquet", pd.DataFrame(gpools))
 
 
+# ---------------------------------------------------------------- #391 Hong Kong IPO one-lot applications
+HK_TEMPLATES = {
+    "aastocks": "http://www.aastocks.com/en/stocks/market/ipo/listedipo.aspx?s=3&o=0&page={p}",
+    "aastocks_b": "https://www.aastocks.com/en/stocks/market/ipo/listedipo.aspx?page={p}",
+    "etnet_info": "https://www.etnet.com.hk/www/eng/stocks/ci_ipo_info.php?page={p}",
+}
+
+
+def _html(url):
+    try:
+        r = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120 Safari/537.36",
+                                                 "Accept": "text/html,*/*", "Accept-Language": "en"})
+        with urllib.request.urlopen(r, timeout=60) as resp:
+            raw = resp.read().decode("utf-8", "replace")
+            return resp.status, re.sub(r"(?is)<(script|style)[^>]*>.*?</\1>", " ", raw)
+    except urllib.error.HTTPError as e:
+        return e.code, ""
+    except Exception as e:  # noqa: BLE001
+        return type(e).__name__, ""
+
+
+def job_u391hkipo():
+    """Hong Kong IPO result tables (raw HTML, scripts stripped), page by page until a page repeats or is empty."""
+    out = {}
+    for key, tmpl in HK_TEMPLATES.items():
+        prev, pages = None, []
+        for p in range(1, 60):
+            st, h = _html(tmpl.format(p=p))
+            sig = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", h))[:20000]
+            print(f"  {key} page {p}: {st} {len(h)} bytes", flush=True)
+            if st != 200 or len(h) < 2000 or sig == prev:
+                break
+            pages.append(h)
+            prev = sig
+            time.sleep(1.5)
+        out[key] = pages
+    save("uncharted_391_hkipo_html.json", out)
+
+
 def _safe(fn):
     def w():
         try:
@@ -482,4 +521,4 @@ def job_uprobe():
 
 
 JOBS = {"uprobe": job_uprobe, "u383vaults": _safe(job_u383vaults), "u384lst": _safe(job_u384lst), "u385hyperp": _safe(job_u385hyperp),
-        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca)}
+        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo)}
