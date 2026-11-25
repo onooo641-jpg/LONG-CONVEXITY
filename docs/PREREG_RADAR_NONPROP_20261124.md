@@ -59,3 +59,9 @@ program, rebalancer, searcher, OEV. Regulator alert lists (N9) kept as a legalit
   under "Source health". The S2c verdict (≥ 60 fills and mean net ≥ 0.5% after 8 weeks, i.e. on 2027-01-26) is read from this file.
 - **N11, #385 forward watch:** perps first listed on Hyperliquid in the last 3 days become leads, to be checked by hand for pre-launch
   status and logged as paper shorts per the #385 rule.
+
+## Addendum 5 (2026-11-25): N12, forward paper log for #395 (Korean listings fade)
+Each daily run lists Upbit and Bithumb KRW markets; a market not seen before is a new Korean listing. If the token has a Hyperliquid perp
+listed ≥ 7 days earlier, a paper short is logged at that day's Hyperliquid close (rule unchanged: hold 7 days, BTC hedge, 4 × 0.045%), in
+`data/radar/korea_paper.parquet`; outcomes are filled in 7 days later. Verdict after 20 events or on 2027-05-31, whichever comes first:
+PASS if mean ≥ 2% and t ≥ 1.5.

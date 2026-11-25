@@ -66,3 +66,13 @@
 #### #401 U4 LBP end-of-sale buying
   LBP pools with GeckoTerminal info: 46; with candles: 12
   LBPs with >= $50K volume, an end in the window and a 7-day price: 0 -> STAGE 1 VERDICT: not testable (fewer than 10)
+
+#### Stage 2 (#393-#395): 2020-01..2023-05 events on Binance USD-M perps
+  Binance category-48 announcements 2020-01..2023-05: 886
+  #393 Binance listings fade (H 7): events 0 -> STAGE 2: FAIL (no events)
+  #394 airdrop-programme listings short (H 14): events 2; mean 15.72%, median 15.72%, t 1.61, win 100%, worst 6.0% -> STAGE 2: FAIL
+     by year: 2021 n 1 +25.49%; 2023 n 1 +5.96%
+  Korean KRW markets (complete fetch): 489 (Upbit 261, Bithumb 228)
+  #395 Korean listings fade (H 7): events 18; mean 3.70%, median 6.15%, t 0.91, win 72%, worst -31.8% -> STAGE 2: FAIL
+     by year: 2020 n 4 -12.09%; 2021 n 7 +5.84%; 2022 n 3 +8.99%; 2023 n 4 +11.77%
+  context: #395 Stage 1 re-run on the complete Korean universe (Hyperliquid 2023-06..2026-10): events 96, mean 8.06%, t 6.47

@@ -316,6 +316,38 @@ def n10_n11_hyperliquid(fetch, today, rows, health, out: Path):
         health["N10 wick paper (#389 S2c)"] = f"0 fills since {WICK_START} ({len(live)} live perps checked)"
 
 
+def n12_korea(fetch, today, rows, health, out: Path):
+    """N12: new Upbit/Bithumb KRW markets -> paper short on Hyperliquid (#395 forward log)."""
+    import json as _j
+    _, t = fetch("https://api.upbit.com/v1/market/all?isDetails=false")
+    up = {m["market"][4:] for m in (_j.loads(t) if t else []) if str(m.get("market", "")).startswith("KRW-")}
+    _, t = fetch("https://api.bithumb.com/public/ticker/ALL_KRW")
+    bt = {c for c in ((_j.loads(t) if t else {}).get("data") or {}) if c != "date"}
+    seen_f = out / "korea_markets.json"
+    seen = set(_j.loads(seen_f.read_text())) if seen_f.exists() else None
+    now = up | bt
+    if not now:
+        health["N12 Korea listings (#395)"] = "market lists unavailable"
+        return
+    seen_f.write_text(_j.dumps(sorted(now | (seen or set()))))
+    if seen is None:
+        health["N12 Korea listings (#395)"] = f"baseline saved ({len(now)} markets); new listings logged from the next run"
+        return
+    new = sorted(now - seen)
+    _, t = fetch(HL_INFO, post={"type": "meta"})
+    hl = {u["name"] for u in (_j.loads(t) if t else {}).get("universe", []) if not u.get("isDelisted")}
+    f = out / "korea_paper.parquet"
+    log = pd.read_parquet(f) if f.exists() else pd.DataFrame(columns=["coin", "listed", "venue", "on_hl"])
+    add = [{"coin": c, "listed": today, "venue": "upbit" if c in up else "bithumb", "on_hl": c in hl} for c in new]
+    for a in add:
+        _lead(rows, today, "N12", f"kr_{a['coin']}_{today}", a["venue"], f"new KRW listing {a['coin']} (on Hyperliquid: {a['on_hl']}) — #395 paper short",
+              None, "")
+    if add:
+        log = pd.concat([log, pd.DataFrame(add)], ignore_index=True)
+        log.to_parquet(f, index=False)
+    health["N12 Korea listings (#395)"] = f"{len(log)} logged since start, {int(log['on_hl'].sum()) if len(log) else 0} on Hyperliquid; new today {len(add)}"
+
+
 def run(fetch, jget, today, out: Path, root: Path, changes_today):
     """Returns (leads_all, new_today, health)."""
     rows, health = [], {}
@@ -323,7 +355,8 @@ def run(fetch, jget, today, out: Path, root: Path, changes_today):
                      ("N3", lambda: n3_cow(jget, today, rows, health, out, root)), ("N5", lambda: n5_forums(fetch, today, rows, health)),
                      ("N4", lambda: n4_contests(jget, today, rows, health, out)), ("N7", lambda: n7_cg(jget, today, rows, health, out)),
                      ("N4/N8/N9", lambda: page_leads(changes_today, today, rows)),
-                     ("N10/N11", lambda: n10_n11_hyperliquid(fetch, today, rows, health, out))):
+                     ("N10/N11", lambda: n10_n11_hyperliquid(fetch, today, rows, health, out)),
+                     ("N12", lambda: n12_korea(fetch, today, rows, health, out))):
         try:
             fn()
         except Exception as e:  # noqa: BLE001
@@ -353,7 +386,7 @@ def summary_lines(fresh, health):
     names = {"N1": "Stablecoin depegs", "N2": "Extreme funding", "N3": "New CoW solver recipients", "N4": "Audit contest prizes",
              "N5": "Governance: incentives / bot programmes", "N7": "Perp-venue volume surges",
              "N8": "Malaysia promotions", "N9": "Malaysia access / bot-role docs / market-maker programme changes",
-             "N11": "New Hyperliquid perps (pre-launch candidates, #385)"}
+             "N11": "New Hyperliquid perps (pre-launch candidates, #385)", "N12": "New Korean KRW listings (#395 forward log)"}
     for src, nm in names.items():
         x = fresh[fresh["source"] == src]
         if len(x):

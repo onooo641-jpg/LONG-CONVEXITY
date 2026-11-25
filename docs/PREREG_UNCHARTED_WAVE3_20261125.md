@@ -77,3 +77,12 @@ Bithumb 0 before the time cap; DefiLlama treasuries HTTP 402; no CoW AMM pools u
 | 399 | Crypto net-nets | — | — | — | not testable (DefiLlama treasuries now paid, HTTP 402) |
 | 400 | CoW AMM liquidity | — | — | — | not testable (no pools found under the project name) |
 | 401 | LBP end-of-sale | 0 usable | — | — | not testable (GeckoTerminal free history too short) |
+
+## Stage 2 results (2026-11-25) — `uv run python -m scripts.uncharted_wave3_20261125` (re-run identical; data fetch run 45656285128)
+Binance category-48 announcements 2020-01..2023-05: 886; Korean KRW markets (complete): 489 (Upbit 261, Bithumb 228).
+- **#393 Binance listings fade — not testable out-of-sample:** 0 events (in 2020–23 Binance perps almost never existed ≥ 7 days before a
+  Binance spot listing).
+- **#394 airdrop-programme listings — FAIL:** 2 events (+25.5%, +6.0%); fewer than 15.
+- **#395 Korean listings fade — FAIL:** 18 events, mean +3.70%, median +6.15%, **t 0.91** (< 2), win 72%, worst −31.8%; 2020 n 4 −12.1%,
+  2021 n 7 +5.8%, 2022 n 3 +9.0%, 2023 n 4 +11.8%. Context: Stage 1 on the complete Korean universe (2023-06..2026-10) 96 events, +8.06%,
+  t 6.47. The registered out-of-sample test fails; the only clean check left is forward (radar N12, addendum 5 of the radar pre-registration).
