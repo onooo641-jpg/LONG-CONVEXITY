@@ -60,3 +60,20 @@ Binance perp close on/after the event, at most 5 days later). Same rule as Stage
 equal BTCUSDT long hedge, 4 × 0.045% costs, Binance funding (`cryptotrend370_funding.parquet`). Events: Binance announcements
 (category 48, fetched back to 2020) and complete Upbit + Bithumb KRW first-candle dates (job `uw3b`).
 **PASS** (each idea separately): ≥ 15 events, mean ≥ 2% and t ≥ 2. Also reported: Stage 1 re-run on the complete Korean universe (context).
+
+---
+## Stage 1 results (2026-11-25) — `uv run python -m scripts.uncharted_wave3_20261125` → `docs/jx_runs/uncharted_wave3_20261125.txt` (re-run identical)
+Data: fetch run 45632635023 (Binance announcements: 1,250 / 2,050 / 400 items in categories 48 / 49 / 161; Upbit 161 of 301 KRW markets and
+Bithumb 0 before the time cap; DefiLlama treasuries HTTP 402; no CoW AMM pools under that project name; 791 LBP pools found, 46 priced).
+| # | Idea | Events | Mean | t | Verdict |
+|---|---|---|---|---|---|
+| 392 | Binance monitoring-tag additions | 5 | +5.29% | 0.49 | not testable (< 15) |
+| 393 | Binance spot listings, fade (7 d) | 20 | +6.59% | 1.23 | survives (kill-only) |
+| 394 | Airdrop-programme listings, short (14 d) | 26 | +12.82% | 2.47 | survives — Stage 2 worthy |
+| 395 | Korean KRW listings, fade (7 d) | 33 | +9.26% | 5.28 (82% win, worst −5.8%) | survives — Stage 2 worthy |
+| 396 | Binance perp launches | 17 | +8.67% | 0.99 | KILL |
+| 397 | Cascade-day reversal | 26 (HL) / 72 (Binance) | +3.27% / +3.73% | 1.95 / 2.69 | survives; **Stage 2 PASS** |
+| 398 | Long BNB after Launchpool/Megadrop | 49 | −0.98% | −1.41 | KILL |
+| 399 | Crypto net-nets | — | — | — | not testable (DefiLlama treasuries now paid, HTTP 402) |
+| 400 | CoW AMM liquidity | — | — | — | not testable (no pools found under the project name) |
+| 401 | LBP end-of-sale | 0 usable | — | — | not testable (GeckoTerminal free history too short) |
