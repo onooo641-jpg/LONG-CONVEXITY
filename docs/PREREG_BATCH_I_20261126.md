@@ -71,3 +71,31 @@ Stage 1 only kills; no stage passes early, and the Stage 2 rules are fixed now.
 - Yahoo USO, USL, UNG, UNL, EEM, EFA, IWM.
 
 **Script and output.** Script: `scripts/batch_i_20261126.py`. Output: `docs/jx_runs/batch_i_20261126.txt` (re-run once; it must be identical).
+
+## Results (2026-11-26/27; `docs/jx_runs/batch_i_20261126.txt`, re-run identical). PARTIAL DATA for the FX and gold ideas
+Dukascopy throttled both GitHub's servers and the session (≈ 8 s per day file). Data coverage:
+
+| Data | Coverage |
+|---|---|
+| EURUSD | 516 days |
+| AUDUSD | month-end days only (170 of 178) |
+| XAUUSD | 2012-01..2014-11 only (682 days) |
+| GBPUSD, USDJPY, XAGUSD | none |
+| Solana epochs | complete (948, 2021-02..2026-11) |
+
+The local fetch (`scripts/fetch_local_batchi.py`, resumable cache) hit the session's background time limit and is not restarted.
+
+| # | Verdict | Key figures | $/yr |
+|---|---|---|---|
+| 478 FX triple-rollover | KILL | S1 −1.6 bp (EURUSD + AUD only) | — |
+| 479 WM/R fix reversal | KILL | S1 −0.1 bp, S2 −0.9 bp (EURUSD only) | — |
+| 480 LBMA gold auction | KILL | S1 −0.1 bp (2012–14 only); no Stage 2 data | — |
+| 481 Solana epoch unstake selling | FAIL | S1 +0.01%, S2 −0.28% (t −1.69, n 679) | −$22K |
+| 482 Binance delisting overreaction | KILL | −35.6% / −42.1% excess (the effect is the opposite: delisted tokens keep falling; shorting them is not possible from Malaysia) | — |
+| 483 USO roll | KILL | S1 −0.00% | — |
+| 484 Japanese ETF dividend selling | FAIL | S1 +1.15% (t 1.85), S2 +0.28% | $84 |
+| 485 MSCI review close | KILL | S1 −0.85% | — |
+| 486 AUD super-fund month-end | FAIL | S1 +3.4 bp, S2 +7.4 bp (t 1.84) | $850 |
+| 487 tax-loss small-cap rebound | FAIL | S2 +0.56% (t 0.73) | $157 |
+
+**Batch I verdict: 0 of 10.** #478–#480 are underpowered (partial data); none came close to $10K/yr.

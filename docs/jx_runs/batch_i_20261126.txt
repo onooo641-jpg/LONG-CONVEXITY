@@ -1,0 +1,73 @@
+===== Batch I (#478-#487)  docs/PREREG_BATCH_I_20261126.md
+  EURUSD: 516 days; field order O,C,L,H (check 1.000)
+  AUDUSD: 170 days; field order O,C,L,H (check 1.000)
+  XAUUSD: 682 days; field order O,C,L,H (check 1.000)
+
+#### #478 FX triple-rollover avoidance (Wednesday: long the higher-yield currency 15:00 -> 16:55 New York)
+  #478 main Wednesdays Stage 1: n 55, mean -1.62, t -0.91, win 42%
+  #478 main Wednesdays Stage 2: n 56, mean 1.76, t 1.58, win 62%
+  VERDICT (#478 main Wednesdays): KILL
+  #478 variant every weekday Stage 1: n 288, mean -1.00, t -1.95, win 47%
+  #478 variant every weekday Stage 2: n 337, mean 0.72, t 1.67, win 57%
+  VERDICT (#478 variant every weekday): KILL
+
+#### #479 WM/R 4 pm fix reversal (fade 15:30->16:00 from 16:00 to 16:30 London; month's last day excluded)
+  #479 main Stage 1: n 206, mean -0.12, t -0.21, win 53%
+  #479 main Stage 2: n 277, mean -0.89, t -1.89, win 48%
+  VERDICT (#479 main): KILL
+
+#### #480 LBMA gold PM auction reversal (fade 14:30->15:00 from 15:05 to 15:35 London)
+  #480 main gold PM Stage 1: n 674, mean -0.08, t -0.09, win 51%
+  #480 main gold PM Stage 2: n 0, mean nan, t nan, win nan%
+  VERDICT (#480 main gold PM): KILL
+  #480 variant gold AM Stage 1: n 258, mean 0.49, t 0.74, win 52%
+  #480 variant gold AM Stage 2: n 0, mean nan, t nan, win nan%
+  VERDICT (#480 variant gold AM): FAIL (Stage 1 survives); $0/yr at safe size
+  #480 variant silver 12:00: no data
+
+#### #481 Solana epoch-boundary unstake selling (short SOL 24 h from the first full hour after the epoch start)
+  epochs 948 (2021-02-10..2026-11-25), events with prices 921
+  #481 main Stage 1: n 242, mean 0.008%, t 0.02, win 54%
+  #481 main Stage 2: n 679, mean -0.276%, t -1.69, win 49%
+  VERDICT (#481 main): FAIL (Stage 1 survives); $-22,030/yr at safe size
+
+#### #482 Binance spot-delisting overreaction (buy announcement + 24 h -> 00:00 UTC on the delisting date, excess vs BTC)
+  token events 113; announcements 31
+  worst/best tokens: DEGO -89.9%; FIO -89.7%; OOKI -87.9%; ALPACA +281.7%; HIFI +83.5%; STMX +30.2%
+  #482 main (per announcement) Stage 1: n 9, mean -35.620%, t -6.28, win 0%
+  #482 main (per announcement) Stage 2: n 22, mean -42.130%, t -7.76, win 9%
+  VERDICT (#482 main (per announcement)): KILL
+
+#### #483 USO monthly roll (long USL / short USO, close of trading day 6 -> close of day 10)
+  #483 main USO Stage 1: n 96, mean -0.002%, t -0.03, win 47%
+  #483 main USO Stage 2: n 106, mean -0.096%, t -0.50, win 36%
+  VERDICT (#483 main USO): KILL
+  #483 variant UNG Stage 1: n 96, mean -0.438%, t -2.08, win 44%
+  #483 variant UNG Stage 2: n 106, mean 0.060%, t 0.16, win 46%
+  VERDICT (#483 variant UNG): KILL
+
+#### #484 Japanese ETF dividend cash-raising (short ^N225 into the last trading day <= July 10)
+  #484 main July Stage 1: n 13, mean 1.154%, t 1.85, win 69%
+  #484 main July Stage 2: n 14, mean 0.275%, t 0.56, win 57%
+  VERDICT (#484 main July): FAIL (Stage 1 survives); $84/yr at safe size
+  #484 variant July + January Stage 1: n 26, mean 1.214%, t 2.97, win 65%
+  #484 variant July + January Stage 2: n 28, mean -0.179%, t -0.42, win 46%
+  VERDICT (#484 variant July + January): FAIL (Stage 1 survives); $-109/yr at safe size
+
+#### #485 MSCI quarterly review close (fade the review-day move the next day; last business day of Feb/May/Aug/Nov)
+  #485 main EEM Stage 1: n 36, mean -0.848%, t -1.99, win 47%
+  #485 main EEM Stage 2: n 55, mean 0.263%, t 1.36, win 56%
+  VERDICT (#485 main EEM): KILL
+  #485 variant EFA Stage 1: n 34, mean -0.215%, t -0.60, win 56%
+  #485 variant EFA Stage 2: n 55, mean 0.073%, t 0.45, win 49%
+  VERDICT (#485 variant EFA): KILL
+
+#### #486 Australian super-fund hedge rebalancing (month-end, |SPY/EFA MTD| > 2% -> AUDUSD 14:00 -> 16:05 London)
+  #486 main Stage 1: n 34, mean 3.37, t 0.81, win 56%
+  #486 main Stage 2: n 60, mean 7.40, t 1.84, win 63%
+  VERDICT (#486 main): FAIL (Stage 1 survives); $850/yr at safe size
+
+#### #487 tax-loss rebound (long IWM / short SPY, last trading day <= Dec 15 -> last trading day <= Jan 15)
+  #487 main Stage 1: n 12, mean 0.972%, t 1.40, win 67%
+  #487 main Stage 2: n 13, mean 0.557%, t 0.73, win 46%
+  VERDICT (#487 main): FAIL (Stage 1 survives); $157/yr at safe size

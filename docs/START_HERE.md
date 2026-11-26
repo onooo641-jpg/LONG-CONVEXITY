@@ -281,7 +281,7 @@ Counting variants of one mechanism as one idea. Files: `docs/PREREG_WICK_SCALE_2
 | F | #448–#457 | #455 mid-month 401(k) (~$3.2K/yr), #451 Treasury month-end (~$0.7K/yr) | no |
 | G | #458–#467 | 0 (#461 carry t 1.49; #462 1st/15th variant t 2.20, ~$7.2K, report-only) | no |
 | H | #468–#477 | #468 passed its own sample (~$23.9K/yr) but **failed confirmation** on 110 unseen perps | no |
-| I | #478–#487 | partial (Dukascopy/Solana throttled; local re-fetch running): #482, #483, #485 KILL; #484, #487 FAIL; #478 +1.7 bp on EURUSD only (~$144/yr) | no |
+| I | #478–#487 | 0 of 10 (FX/gold on partial Dukascopy data; #486 AUD month-end t 1.84 ~$850/yr) | no |
 | J | #488–#492 (Coinalyze OI/liquidations) | 0 (nothing replicated on unseen perps) | no |
 | K | #493–#500 (last batch for now; part 2 = stronger bar) | 0 of 8 (#495 reverses on unseen perps; #497/#498 significant the opposite way) | no |
 
