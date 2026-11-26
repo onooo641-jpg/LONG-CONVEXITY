@@ -230,12 +230,91 @@ def part499():
     print(f"  $/yr at $45K, <= 3 open (Stage 2): ${tot / ((pd.Timestamp(END) - pd.Timestamp('2023-01-01')).days / 365.25):,.0f}")
 
 
+def part500():
+    print("\n#### #500 hedger-paid carry on Hyperliquid (HL funding <= -0.03%/8h -> long coin, short BTC, 7 days)")
+    need = [PUB / f"batchk2_{n}.parquet" for n in ("k2_fund_hl", "k2_ohlcv_hl", "k2_fund_binance")]
+    if not all(x.exists() for x in need):
+        print("  data not fetched yet (Coinalyze --k2)")
+        return
+    FH, PH, FB = cz(need[0].name, "c", ".H"), cz(need[1].name, "c", ".H"), cz(need[2].name, "c", "USDT_PERP.A")
+    k = 8.0 if FH["BTC"].abs().median() > 0 and FB["BTC"].abs().median() / FH["BTC"].abs().median() > 4 else 1.0
+    FH = FH * k  # per-8h, in %
+    if "BTC" not in PH:
+        print("  no HL BTC prices")
+        return
+    btc, fbtc = PH["BTC"], FH["BTC"]
+    rows = []
+    for c in [x for x in FH.columns if x != "BTC" and x in PH.columns]:
+        busy = None
+        for d in FH.index:
+            if busy is not None and d < busy:
+                continue
+            v = FH.at[d, c]
+            if pd.isna(v) or v > -0.03:
+                continue
+            e = d + pd.Timedelta(days=7)
+            if any(pd.isna(z) for z in (PH[c].get(d, np.nan), PH[c].get(e, np.nan), btc.get(d, np.nan), btc.get(e, np.nan))):
+                continue
+            hold = pd.date_range(d + pd.Timedelta(days=1), e)
+            cf = -3 * FH[c].reindex(hold).fillna(0).sum() / 100 + 3 * fbtc.reindex(hold).fillna(0).sum() / 100
+            rows.append({"day": d, "exit": e, "ret": (PH[c][e] / PH[c][d] - 1) - (btc[e] / btc[d] - 1) + cf - 0.0018})
+            busy = e
+    ev = pd.DataFrame(rows)
+    c1 = ev[(ev["day"] >= "2024-10-01") & (ev["day"] < "2025-07-01")].groupby("day")["ret"].mean() if len(ev) else []
+    c2 = ev[(ev["day"] >= "2025-07-01") & (ev["day"] < END)].groupby("day")["ret"].mean() if len(ev) else []
+    s1 = show("#500", c1, "Stage 1 (HL 2024-10..2025-06, per day)")
+    s2 = show("#500", c2, "Stage 2 (HL 2025-07..2026-10, per day)")
+    # Stage 3: Binance archive, 110 unseen perps, 2023-01..2026-10
+    k1 = pd.read_parquet(PUB / "batchh2_unseen_1h.parquet")
+    k1 = k1[pd.to_datetime(k1["t"], unit="s", utc=True).dt.hour == 23].assign(day=lambda z: pd.to_datetime(z["t"], unit="s").dt.normalize())
+    PB = k1.pivot_table(index="day", columns="sym", values="close", aggfunc="last")
+    kb = pd.read_parquet(PUB / "batchd_alts_1h.parquet")
+    kb = kb[(kb["sym"] == "BTCUSDT") & (pd.to_datetime(kb["t"], unit="s", utc=True).dt.hour == 23)]
+    bb = pd.Series(kb["close"].to_numpy(), index=pd.to_datetime(kb["t"], unit="s").dt.normalize()).sort_index()
+    bb = bb[~bb.index.duplicated()]
+    fu = pd.read_parquet(PUB / "batchh2_unseen_funding.parquet").assign(day=lambda z: pd.to_datetime(z["t"], unit="s").dt.normalize())
+    fdm = fu.groupby(["day", "sym"])["rate"].mean().unstack()
+    fsum = fu.groupby(["day", "sym"])["rate"].sum().unstack()
+    fa = pd.read_parquet(PUB / "batchd_alts_funding.parquet")
+    fa = fa[fa["sym"] == "BTCUSDT"].assign(day=lambda z: pd.to_datetime(z["t"], unit="s").dt.normalize())
+    fbs = fa.groupby("day")["rate"].sum()
+    rows3 = []
+    for c in [x for x in fdm.columns if x in PB.columns]:
+        busy = None
+        for d in fdm.index:
+            if d < pd.Timestamp("2023-01-01") or d >= pd.Timestamp(END) or (busy is not None and d < busy):
+                continue
+            v = fdm.at[d, c]
+            if pd.isna(v) or v > -0.0003:
+                continue
+            e = d + pd.Timedelta(days=7)
+            if any(pd.isna(z) for z in (PB[c].get(d, np.nan), PB[c].get(e, np.nan), bb.get(d, np.nan), bb.get(e, np.nan))):
+                continue
+            hold = pd.date_range(d + pd.Timedelta(days=1), e)
+            cf = -fsum[c].reindex(hold).fillna(0).sum() + fbs.reindex(hold).fillna(0).sum()
+            rows3.append({"day": d, "ret": (PB[c][e] / PB[c][d] - 1) - (bb[e] / bb[d] - 1) + cf - 0.0018})
+            busy = e
+    e3 = pd.DataFrame(rows3)
+    s3 = show("#500", e3.groupby("day")["ret"].mean() if len(e3) else [], "Stage 3 (Binance unseen 110, 2023..2026-10, per day)")
+    verdict("#500", s1, s2, s3, 20, 0.01)
+    if len(ev):
+        e2 = ev[(ev["day"] >= "2025-07-01") & (ev["day"] < END)].sort_values("day")
+        open_, tot = [], 0.0
+        for r in e2.itertuples():
+            open_ = [x for x in open_ if x > r.day]
+            if len(open_) < 3:
+                tot += r.ret * 45000
+                open_.append(r.exit)
+        print(f"  $/yr at $45K, <= 3 open (Stage 2): ${tot / ((pd.Timestamp(END) - pd.Timestamp('2025-07-01')).days / 365.25):,.0f}")
+
+
 def main():
     print("===== Batch K part 2 (#496-#499)  docs/PREREG_BATCH_K2_20261126.md")
     part496()
     part497()
     part498()
     part499()
+    part500()
 
 
 if __name__ == "__main__":
