@@ -1,0 +1,30 @@
+=== ubatchf
+  stablecoin supply days: 3285
+  wrote batchf_stable_supply.parquet: 3285 rows
+  farside btc: HTTP 200, 870242 bytes
+  farside eth: HTTP 200, 669342 bytes
+=== ubatchf2
+  dukascopy USDJPY days with ticks: 1126 of 3870
+  wrote batchf_usdjpy_fix.parquet: 1126 rows
+=== ubatchf3
+  nasdaq priced IPO rows: 3529
+  wrote batchf_ipos.parquet: 3529 rows
+  yahoo 0/3437 rows 92 (last HTTP 200)
+  yahoo 200/3437 rows 96076 (last HTTP 404)
+  yahoo 400/3437 rows 201552 (last HTTP 200)
+  yahoo 600/3437 rows 311917 (last HTTP 404)
+  yahoo 800/3437 rows 402867 (last HTTP 404)
+  yahoo 1000/3437 rows 525860 (last HTTP 200)
+  yahoo 1200/3437 rows 623466 (last HTTP 404)
+  yahoo 1400/3437 rows 701846 (last HTTP 200)
+  yahoo 1600/3437 rows 814103 (last HTTP 200)
+  yahoo 1800/3437 rows 918111 (last HTTP 404)
+  yahoo 2000/3437 rows 1020162 (last HTTP 200)
+  yahoo 2200/3437 rows 1115409 (last HTTP 404)
+  yahoo 2400/3437 rows 1226906 (last HTTP 404)
+  yahoo 2600/3437 rows 1340412 (last HTTP 200)
+  yahoo 2800/3437 rows 1439388 (last HTTP 200)
+  yahoo 3000/3437 rows 1547645 (last HTTP 404)
+  yahoo 3200/3437 rows 1657311 (last HTTP 200)
+  yahoo 3400/3437 rows 1771832 (last HTTP 404)
+  wrote batchf_ipo_px.parquet: 1801254 rows
