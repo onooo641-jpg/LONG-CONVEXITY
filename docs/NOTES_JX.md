@@ -791,3 +791,10 @@ Free public Base endpoint does NOT expose sub-block (pending) state (0/339 polls
 
 ### Base changed (2026-11-24): flashblocks retired, 200 ms blocks
 Per Base docs (read via Actions run 45377543121): 200 ms canonical blocks since 2026-11-05; Flashblocks and `pending` state gone. So "paid flashblocks" is dead as a speed lever on Base; the Action for Jx item about `BASE_FLASHBLOCKS_URL` is CANCELLED (do not register for it). Base replay/shadow numbers reflect the old 2 s era or a slow 8 s cycle: Base is unmeasured for the new regime. Speed on Base now means WebSocket `newHeads` on a low-latency VPS/provider, untested. Arbitrum (250 ms), Polygon, Avalanche, Optimism are unaffected by this change. Shadow Addendum 5 records it.
+
+## 2026-11-26 — pre-live audit: one modelling error, all prop figures lowered
+`docs/AUDIT_PRE_LIVE_20261126.md`. Signals, look-ahead, live parity, costs and contract caps checked and correct. Error: the loss limit
+was judged on closed trades; Topstep checks open P&L in real time (help.topstep.com 8284204). Fixed (`realtime_mll=True` default).
+Topstep 50K Consistency: $46,492 -> **$37,406** ($3,454/yr), coin flip $18,005 -> $6,384 (still qualifies). Start money: median
+-$1,181, 1 in 10 -$2,585, worst -$3,475. LucidDaily, TTP Prime and DayTraders EOD fail the coin-flip bar if they check open P&L the same
+way (unconfirmed): the 4-firm plan is on hold; Topstep only. Next step unchanged: one live Topstep account, ~$1,200 to start.

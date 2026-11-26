@@ -210,6 +210,16 @@ class XFARules:
     #: ``mll_locks_at`` (TFD: the "build buffer" target, after which the live
     #: account's floor is its $0 minimum balance). False = trailing (Topstep).
     static_dd: bool = False
+    #: The loss limit is enforced on OPEN P&L in real time (Topstep, verified on
+    #: help.topstep.com 8284204, 2026-11-26): a trade whose worst open loss
+    #: (``mae_usd``) reaches the floor closes the account even if it would have
+    #: closed in profit. Needs the ``mae_usd`` column from backtest.engine;
+    #: trades without it are judged on closed P&L only. False reproduces every
+    #: figure computed before 2026-11-26 (docs/AUDIT_PRE_LIVE_20261126.md).
+    realtime_mll: bool = True
+    #: Funded floor trails the intra-trade equity high (``mfe_usd``), not only
+    #: the closing balance -- LucidDaily funded per third-party summaries.
+    intraday_trail_funded: bool = False
 
     monthly: float = 49.0
     reset: float = 49.0
@@ -364,6 +374,11 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
     funded_since = first if rules.instant_funded else None
     timeline: list[dict] = []
 
+    has_mae = "mae_usd" in trades.columns
+    maes = trades["mae_usd"].to_numpy() if has_mae else np.zeros(len(trades))
+    mfes = trades["mfe_usd"].to_numpy() if "mfe_usd" in trades.columns else np.zeros(len(trades))
+    realtime = rules.realtime_mll and has_mae
+
     for at, (pnl, contracts, exit_ts) in enumerate(
             zip(trades["net_pnl"], trades["contracts"], trades["exit_ts"])):
         # The backtest sizes on risk alone; neither ceiling exists there.
@@ -411,8 +426,26 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
                 mark(exit_ts, "retired", at)
                 continue
 
+        k_open = scale * (funded_scale if funded else 1.0)
+        open_low = account.balance - float(maes[at]) * k_open
+        open_high = account.balance + float(mfes[at]) * k_open
+        if funded:
+            floor_now = account.floor(rules.funded_loss_limit, rules.mll_locks_at,
+                                      rules.lock_level, rules.static_dd)
+        else:
+            floor_now = account.floor(
+                rules.loss_limit,
+                None if rules.static_dd else (rules.loss_limit if rules.combine_mll_locks else None),
+                rules.lock_level, rules.static_dd)
+        breached_open = realtime and open_low <= floor_now
+
         account.balance += day
         account.peak = max(account.peak, account.balance)
+        if funded and rules.intraday_trail_funded and not account.paid_out:
+            account.peak = max(account.peak, open_high)
+        if breached_open:
+            # Liquidated at the floor while the trade was open.
+            account.balance = min(account.balance, floor_now)
 
         hard_dll = rules.daily_loss_limit is not None and day <= -rules.daily_loss_limit
 

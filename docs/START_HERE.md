@@ -1,4 +1,4 @@
-# START HERE — every result in one place (updated 2026-11-25)
+# START HERE — every result in one place (updated 2026-11-26)
 
 Plain-language guide. Sorted from "what makes money" to "what failed". Every number points to the file that explains it; every file in
 `docs/jx_runs/` is raw output of a script you can re-run; every standing figure has a row in `docs/FIGURES_LEDGER.md`. Test rules:
@@ -12,8 +12,8 @@ Plain-language guide. Sorted from "what makes money" to "what failed". Every num
 ## 1. Bottom line
 | What | Status | Money |
 |---|---|---|
-| **Prop-firm recycling, Malaysia-eligible portfolio** (Topstep + TTP Prime + DayTraders EOD + LucidDaily, 1 account each) | **Works (backtest 2016–26)** | $195,000 total = **$18,006/yr**; cash for worst dip ~$13,858 |
-| Single prop firm (Topstep 50K) | Works (backtest) | $44,359 = $4,097/yr |
+| **Prop-firm recycling, Topstep 50K** (corrected 2026-11-26: loss limit checked on open P&L) | **Works (backtest 2016–26); only product that still qualifies** | **$37,406 = $3,454/yr**, coin flip $6,384; worst dip −$3,524; up to 5 accounts |
+| Malaysia-eligible 4-firm portfolio (Topstep + TTP + DayTraders + LucidDaily) | **On hold**: the other three fail the coin-flip bar on the corrected model if they check open P&L (unconfirmed) | old figure $18,006/yr was closed-P&L (optimistic) |
 | **#389 Resting bids under liquidation wicks** (Hyperliquid perps, own capital) | **Best non-prop result so far.** Stage 1 + out-of-sample on Binance (S2a) + risk (S2b) passed; forward paper (S2c) 2026-12-01 → 2027-01-26 and a margin check (S2d) still open | backtest ~$18.8K/yr on $15K (Hyperliquid 2023–26), or ~$6.4K/yr if resting orders lock margin; **loses in crash regimes** (Binance path −$22K, 2025-09 → 2026-07) |
 | **#397 Cascade-day reversal** (buy the perps that wicked, hold 3 days) | Stage 1 + Binance Stage 2 passed | ~7–8 events/yr, +3.3–3.7% per event ≈ $3.7K/yr unlevered on $15K; overlaps #389's crash days |
 | #385 Short Hyperliquid pre-launch perps | Survives Stage 1; small sizes only | ~$4K/yr; forward watch running |
@@ -23,7 +23,7 @@ Plain-language guide. Sorted from "what makes money" to "what failed". Every num
 | Liquidation bot (workstream B) | Shadow test running | est. $0–$100/month now |
 | Everything else (~140 non-prop ideas) | Failed, not testable, or excluded | sections 6–8 |
 
-**Next step and how much money:** section 2b — one live prop account, ~$700–850 to start, up to ~$2.7K set aside (9 in 10 starts), ~$3.8K worst case.
+**Next step and how much money:** section 2b — one live Topstep account, ~$1,200 to start, up to ~$2.6K set aside (9 in 10 starts), ~$3.5K worst case. **Pre-live audit:** `docs/AUDIT_PRE_LIVE_20261126.md` (one modelling error found and fixed; all prop figures lowered).
 
 **If prop income stops (fallback plan, 2026-11-23).**
 - *What would stop it:* firm rule changes or closures, not the friend's strategy losing its edge (every approved firm's coin-flip median is
@@ -44,55 +44,41 @@ Plain-language guide. Sorted from "what makes money" to "what failed". Every num
 | CoW solver onboarding (#364) | CoW paused onboarding; Jx is the contact | reply when they reopen (reminder 2026-12-15) |
 | Prop accounts, payments, live trades | money/KYC | per `docs/GO_LIVE*.md` |
 
-## 2b. Next step and money needed (2026-11-25)
-**Next step: one live prop account run by the friend. Start with ~$700–850; set aside up to ~$2.7K (covers 9 in 10 historical starts),
-~$3.8K for the worst start.** This pays evaluation fees and resets, not trading losses. M = measured in the backtest, E = estimate.
+## 2b. Next step and money needed (corrected 2026-11-26)
+**Next step: one live Topstep 50K account run by the friend's bot. Start with ~$1,200; set aside up to ~$2.6K (covers 9 in 10 historical
+starts), ~$3.5K for the worst start (~$4.2–4.5K if live execution turns out worse than modelled).** This pays evaluation fees and resets,
+not trading losses. All figures use the corrected model (loss limit checked on open P&L; `docs/AUDIT_PRE_LIVE_20261126.md`).
 
 **Status:** no live trades in the repo yet. The friend runs `scripts/export_live_trades.py` and pushes `data/live/` (after `git pull` for the
-tick fix). The bot connects only to TopstepX today.
+tick fix). The bot connects to TopstepX.
 
-**Why one account first:** every figure in this file (Topstep $44–46K, LucidDaily $57K, 4-firm $195K) comes from the same backtested trades.
-The strategy is about break-even per trade; the income comes from the prop rules, so worse live fills or costs would shrink every figure at
-once. One account tests that for ~$800 instead of risking ~$12–14K of fees across 4 firms.
+**Why one account first:** every figure comes from the same backtested trades. The strategy is about break-even per trade; the income
+comes from the prop rules, so worse live fills or timing shrink every figure at once (a 1-minute order delay alone cuts Topstep's
+$37.4K to $26.1K; audit table). One account tests that for ~$1,200 of fees.
 
 **What is compared** (`docs/PREREG_LIVE_20261120.md`, set before any live data):
-| Check | Model (M) | Gate |
+| Check | Model | Gate |
 |---|---|---|
 | Bot places the same orders as the backtest | 100% | ≥ 95%, else fix the bot first |
 | Limit orders filled | 80% | ±10 points |
 | Slippage: entry / stop / target | 0 / 1 / 0 ticks | stop mean ≤ 2 ticks |
-| Costs per micro round trip | $1.24 | reported |
+| Costs per micro round trip | $1.24 (Topstep's page) | reported |
 | Cumulative net R after **40 trades** (~2.5 months): 5% / 50% / 95% | −10.8 / +0.2 / +11.9 (since 2024: −8.7 / +3.4 / +14.6) | below 5% on both → stop adding accounts; above +3.4 → consider a second account |
-After 100 trades and a first payout inside the bands → the 4-firm plan (section 4a). **First 3 months, normal case (M):** ~50 trades,
-2–3 evaluations before the first pass, most likely down $250–650 (~25% chance of being up). That alone is not a reason to stop.
+Also check order timing: the order should reach Topstep within seconds of the confirming bar's close. After 100 trades and a first payout
+inside the bands → scale. **First 3 months, normal case:** ~50 trades, 2–3 evaluations before the first pass, most likely a small loss.
 
-**Steps:**
-1. One live account: Topstep with the bot (works now) or LucidDaily (manual now, bot after step 2).
-2. Build the Lucid order route (CrossTrade adapter; free to build, $49/month once used). TTP and DayTraders platforms: unverified.
-3. After the 40-trade check: Topstep + LucidDaily, then the 4-firm plan.
-4. #389 (own capital) only after its paper test ends 2027-01-26, with guard G2 and a loss limit. Liquidation bot: not building.
+**Starting money, Topstep 50K** (118 monthly starts 2016–25, corrected; ledger AUD1). Every start eventually went positive.
+| Typical start (median) | 1 in 4 worse than | 1 in 10 worse than | Worst | First payout (median) | Net after 12 months (median) |
+|---|---|---|---|---|---|
+| −$1,181 | −$1,919 | −$2,585 | −$3,475 | $1,085 after 132 days | $1,327 (39% of starts still down) |
 
-**Starting money per account** (M; 118 monthly starts 2016–25; ledger LS1). Every start eventually went positive.
-| | LucidDaily $85.40 promo | LucidDaily $122 list | Topstep |
-|---|---|---|---|
-| Typical start (median) | −$683 | −$1,054 | −$735 |
-| 1 in 10 starts worse than | −$2,673 | −$3,819 | −$2,583 |
-| Worst start | −$3,758 | −$5,368 | −$3,520 |
-| Days to first payout (median) | 158 | 158 | 126 |
-| Net after 12 months (median) | $3,971 | $3,239 | $1,704 |
+**Costs:** $49/month Combine + $49 reset + $149 activation per funded account (Topstep's fees, in the backtest); TopstepX API
+$14.50/month (bot access, in the backtest).
 
-**Costs.** Firm fees (in the backtest): Topstep $49/month Combine + $49 reset + $149 activation per funded account; LucidDaily $85.40 promo /
-$122 list per attempt (reset assumed the same); TTP Prime $99 / $79 reset; DayTraders EOD $105 + $5. **Bot access (not in the backtest):**
-TopstepX API $14.50/month; CrossTrade $49/month for Lucid (Tradovate blocks prop-account APIs; price as read 2026-11-20). Lucid without
-CrossTrade: manual entry ($48,761 backtest) or a NinjaTrader rewrite.
-
-**Money by stage:** 1 account ~$0.7–3.8K · Topstep + LucidDaily ~$7–7.5K (E) · 4 firms ~$12–14K (M) · + #389 $15K own capital ·
-everything ~$27–29K (E), mid-2027 at the earliest.
-
-**LucidDaily is #1** ($57,486, ROI 416%) **but:** the $85.40 promo price was read by Jx, not the repo, and its end date is unknown; at $122 it
-fails the dip rule by $88; with CrossTrade it is ~$51K (E), still above Topstep.
-**Which first:** if the friend isn't live yet, start LucidDaily (or Topstep + LucidDaily). If Topstep is already live, keep it and add Lucid
-after 40 trades.
+**Other firms after the correction:** LucidDaily, TTP Prime and DayTraders EOD fall below the coin-flip bar if they check open P&L like
+Topstep (LucidDaily's funded stage reportedly also trails intraday). Not confirmed for those firms; until it is, Topstep is the only
+approved product, and the CrossTrade/Lucid route is on hold.
+**Later steps:** more Topstep accounts (up to 5) after the live gates; #389 (own capital) only after its paper test ends 2027-01-26.
 
 ## 3. Calendar of scheduled verdicts
 | Date | What | Where |
@@ -107,7 +93,12 @@ after 40 trades.
 ---
 
 ## 4. Prop firms
-Benchmark Topstep 50K: $44,359 real net, coin-flip median $18,046, worst dip −$3,520. "Qualifies" = real ≥ 50% of Topstep, coin flip ≥ $5,000,
+> **Correction 2026-11-26:** every dollar figure in 4a–4d below was computed judging the loss limit on closed trades only. Firms such as
+> Topstep check it on open P&L in real time, so these figures are optimistic. Corrected (`docs/AUDIT_PRE_LIVE_20261126.md`): Topstep 50K
+> Consistency $37,406 (coin flip $6,384, qualifies); LucidDaily $85.40 $27,301 (coin flip $218, fails); TTP Prime $26,700 (coin flip
+> $3,521, fails); DayTraders EOD $33,760 (coin flip −$5,937, fails) — the last three assume those firms also check open P&L (unconfirmed).
+
+Benchmark Topstep 50K (old closed-P&L model): $44,359 real net, coin-flip median $18,046, worst dip −$3,520. "Qualifies" = real ≥ 50% of Topstep, coin flip ≥ $5,000,
 worst dip no worse than 1.5× Topstep's (manual-entry products judged with a 3-minute entry delay).
 
 ### 4a. APPROVED — Malaysia-eligible, rules verified on the firms' own pages, qualifies

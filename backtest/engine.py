@@ -297,6 +297,18 @@ def simulate(orders: pd.DataFrame, bars: pd.DataFrame, config: BacktestConfig | 
             points = first_points
 
         risk = abs(entry_price - stop)
+        # Worst and best open P&L while the position was on, in dollars for the
+        # whole position. Prop firms check their loss limit against open P&L in
+        # real time (Topstep: realized and unrealized, help.topstep.com 8284204),
+        # so a trade that dips through the floor and then wins still closes the
+        # account. The fill bar and the exit bar are included whole, which can
+        # only overstate the dip, never hide one.
+        seg_low = float(low[fill_index:exit_index + 1].min())
+        seg_high = float(high[fill_index:exit_index + 1].max())
+        adverse = (entry_price - seg_low) if direction > 0 else (seg_high - entry_price)
+        favourable = (seg_high - entry_price) if direction > 0 else (entry_price - seg_low)
+        mae_usd = max(0.0, adverse) / TICK_SIZE * config.tick_value * size
+        mfe_usd = max(0.0, favourable) / TICK_SIZE * config.tick_value * size
         gross = points / TICK_SIZE * config.tick_value * size
         commission = config.commission_per_round_turn * size
         results.append({
@@ -314,6 +326,8 @@ def simulate(orders: pd.DataFrame, bars: pd.DataFrame, config: BacktestConfig | 
             "bars_held": exit_index - fill_index,
             "ambiguous": ambiguous,
             "contracts": size,
+            "mae_usd": mae_usd,
+            "mfe_usd": mfe_usd,
             # The claimed win rate for a scale-out model is the first target's
             # hit rate, so it has to be visible on its own rather than blended
             # into an average that no strategy description ever quotes.
@@ -336,7 +350,7 @@ def simulate(orders: pd.DataFrame, bars: pd.DataFrame, config: BacktestConfig | 
 _RESULT_COLUMNS = [
     "filled", "entry_ts", "entry_fill", "exit_ts", "exit_price", "exit_reason",
     "points", "risk_points", "r_multiple", "gross_pnl", "net_pnl",
-    "bars_held", "ambiguous", "contracts",
+    "bars_held", "ambiguous", "contracts", "mae_usd", "mfe_usd",
     "tp1_hit", "scaled_out", "runner_points", "runner_exit_reason",
 ]
 
@@ -347,7 +361,7 @@ def _unfilled(order: pd.Series, reason: str = "expired") -> dict:
         "exit_ts": pd.NaT, "exit_price": np.nan, "exit_reason": reason,
         "points": np.nan, "risk_points": np.nan, "r_multiple": np.nan,
         "gross_pnl": 0.0, "net_pnl": 0.0, "bars_held": 0, "ambiguous": False,
-        "contracts": 0, "tp1_hit": False, "scaled_out": False,
+        "contracts": 0, "mae_usd": 0.0, "mfe_usd": 0.0, "tp1_hit": False, "scaled_out": False,
         "runner_points": np.nan, "runner_exit_reason": None,
     }
 

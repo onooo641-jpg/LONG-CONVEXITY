@@ -47,8 +47,9 @@ except ImportError:
 
 def scaled(t, k):
     s = t.copy()
-    for c in ("net_pnl", "gross_pnl"):
-        s[c] = s[c] * k
+    for c in ("net_pnl", "gross_pnl", "mae_usd", "mfe_usd"):
+        if c in s.columns:
+            s[c] = s[c] * k
     s["contracts"] = np.maximum(1, np.round(s["contracts"] * k)).astype(int)
     return s
 
@@ -64,12 +65,23 @@ def trades(orders, bars, delay):
     return t.sort_values("exit_ts").reset_index(drop=True)
 
 
+def flip(s, g, comm, sign):
+    """Coin-flip copy: random sign on gross P&L, commission kept. A flipped trade's worst
+    open loss is the original's best open profit, so the two excursions swap with it."""
+    out = s.assign(net_pnl=np.abs(g) * sign - comm)
+    if "mae_usd" in s.columns and "mfe_usd" in s.columns:
+        same = (np.sign(g) == sign) | (g == 0)
+        out["mae_usd"] = np.where(same, s["mae_usd"], s["mfe_usd"])
+        out["mfe_usd"] = np.where(same, s["mfe_usd"], s["mae_usd"])
+    return out
+
+
 def price(t, rules, risk, policy=Policy.LOCK_FIRST):
     s = scaled(t, risk / 900)
     g, comm = s["gross_pnl"].to_numpy(), (s["gross_pnl"] - s["net_pnl"]).to_numpy()
     real = recycle(s, rules, policy=policy)
     rng = np.random.default_rng(1)
-    flips = np.array([recycle(s.assign(net_pnl=np.abs(g) * rng.choice([-1, 1], len(s)) - comm), rules,
+    flips = np.array([recycle(flip(s, g, comm, rng.choice([-1, 1], len(s))), rules,
                               policy=policy)["net"] for _ in range(200)])
     return real["net"], worst_dip(real), float(np.median(flips)), float((flips > 0).mean())
 

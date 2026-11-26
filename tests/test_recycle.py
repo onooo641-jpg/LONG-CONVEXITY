@@ -406,3 +406,34 @@ def test_fee_refund_paid_once_with_first_payout():
     b = recycle(trades, dataclasses.replace(base, refund_fee_on_first_payout=True), policy=Policy.IMMEDIATE)
     assert a["payouts"] >= 1
     assert b["net"] == pytest.approx(a["net"] + 300.0)
+
+
+def test_an_open_loss_through_the_floor_closes_the_account_even_if_the_trade_wins():
+    # Balance +1,500 sits $2,000 above the floor (-500 after a +1,500 peak). The next trade
+    # dips $2,100 while open, then closes +900: Topstep liquidates on open P&L.
+    t = seq([1500.0, 900.0]).assign(mae_usd=[0.0, 2100.0], mfe_usd=[1500.0, 900.0])
+    out = recycle(t)
+    assert out["combine_busts"] == 1 and out["funded_earned"] == 0
+    # Judged on closed P&L only (the pre-2026-11-26 model) the account survives.
+    closed = recycle(t, dataclasses.replace(RULES, realtime_mll=False))
+    assert closed["combine_busts"] == 0
+
+
+def test_an_open_loss_that_stays_above_the_floor_changes_nothing():
+    t = seq([1000.0] * 3).assign(mae_usd=[500.0] * 3, mfe_usd=[1000.0] * 3)
+    assert recycle(t)["net"] == recycle(seq([1000.0] * 3))["net"]
+
+
+def test_without_the_excursion_columns_the_model_falls_back_to_closed_pnl():
+    t = seq([1500.0, 900.0])
+    assert recycle(t)["combine_busts"] == 0
+
+
+def test_intraday_trail_raises_the_funded_floor_on_open_profit():
+    # Pass, then funded: +1,000 closed after +1,900 open (peak 1,900 -> floor -100);
+    # next trade closes -1,150 -> balance -150, above an EOD floor (-1,000)
+    # but below the intraday-trailed floor (-100).
+    rules = dataclasses.replace(RULES, intraday_trail_funded=True, funded_scaling=False)
+    t = seq([3000.0, 1000.0, -1150.0]).assign(mae_usd=[0.0, 0.0, 1150.0], mfe_usd=[3000.0, 1900.0, 0.0])
+    assert recycle(t, rules)["funded_busts"] == 1
+    assert recycle(t, dataclasses.replace(rules, intraday_trail_funded=False))["funded_busts"] == 0

@@ -33,8 +33,12 @@ strategy, plus a search for other structural edges. README.md explains the busin
   placing live trades, or facts only he can obtain (e.g. a checkout price behind a login). Report what was done, not what could be done.
 
 ## Benchmark every idea against
-Topstep 50K recycling, 2016–26: **$44,359 real net ($4,097/yr)**, coin-flip median $18,046
-(98% profitable), worst dip −$3,520. Multi-firm plan figures: `docs/PREREG_PORTFOLIO2_20261120.md` (Topstep + Lucid + MFFU,
+**Corrected 2026-11-26 (`docs/AUDIT_PRE_LIVE_20261126.md`): the loss limit is checked on OPEN P&L in real time.**
+`recycle()` now does this by default (`realtime_mll=True`, needs the `mae_usd` column `simulate` adds); figures made before
+then used closed P&L and are optimistic (`realtime_mll=False` reproduces them). Coin flips must go through
+`scripts/radar_price.flip` (it swaps worst/best open P&L for flipped trades).
+Topstep 50K Consistency path, 2016–26, corrected: **$37,406 real net ($3,454/yr)**, coin-flip median $6,384 (76% positive),
+worst dip −$3,524. Old closed-P&L benchmark (Standard path): $44,359, coin flip $18,046, worst dip −$3,520. Multi-firm plan figures: `docs/PREREG_PORTFOLIO2_20261120.md` (Topstep + Lucid + MFFU,
 Breakout dropped: no API) and `docs/PREREG_MARKETMIX_20261120.md` (NQ/ES/YM mix with anti-hedge filter).
 
 ## Tools in the repo

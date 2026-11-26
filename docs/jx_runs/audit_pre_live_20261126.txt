@@ -1,0 +1,28 @@
+A. Closed-P&L model (all figures before 2026-11-26) vs open P&L checked in real time (Topstep's verified rule).
+   2016-01..2026-10, friend's NQ trades at $900 risk. Coin flip: 200 runs, seed 1, random sign, commission kept, excursions swapped.
+
+Topstep 50K Consistency path
+   closed-P&L $  46,492 (44 payouts) -> real-time $  37,406 (40 payouts), worst dip $-3,524; coin-flip median $6,384, positive 76%
+LucidDaily 50K, EOD eval + intraday funded (default), $85.40
+   closed-P&L $  57,486 (93 payouts) -> real-time $  27,301 (60 payouts), worst dip $-3,814; coin-flip median $218, positive 52%
+LucidDaily 50K, EOD eval + EOD funded add-on, $165.20
+   closed-P&L $  44,558 (93 payouts) -> real-time $  16,248 (67 payouts), worst dip $-7,746; coin-flip median $-14,782, positive 8%
+TTP Futures Prime 50K
+   closed-P&L $  50,495 (50 payouts) -> real-time $  26,700 (36 payouts), worst dip $-5,651; coin-flip median $3,521, positive 63%
+DayTraders EOD 50K ($105)
+   closed-P&L $  48,856 (33 payouts) -> real-time $  33,760 (28 payouts), worst dip $-7,064; coin-flip median $-5,937, positive 25%
+
+B. Money needed to start (real-time model), 118 monthly starts 2016-01..2025-10
+Topstep 50K Consistency path
+   deepest loss median $-1,181 | 1 in 4 worse than $-1,919 | 1 in 10 $-2,585 | worst $-3,475 | first payout median $1,085 after 132 days | 12-month net median $1,327 (39% losing) | never positive 0
+LucidDaily 50K, EOD eval + intraday funded (default), $85.40
+   deepest loss median $-1,791 | 1 in 4 worse than $-2,562 | 1 in 10 $-3,193 | worst $-3,899 | first payout median $964 after 198 days | 12-month net median $557 (42% losing) | never positive 0
+LucidDaily 50K, EOD eval + EOD funded add-on, $165.20
+   deepest loss median $-3,919 | 1 in 4 worse than $-5,112 | 1 in 10 $-6,214 | worst $-7,912 | first payout median $964 after 165 days | 12-month net median $22 (50% losing) | never positive 0
+
+C. Fill and cost sensitivity, Topstep 50K Consistency, real-time model
+   baseline: limit fills on touch, stop slips 1 tick, $1.24 net $  37,406 dip $ -3,524 | start: median $-1,181, 1 in 10 $-2,585, worst $-3,475
+   entry needs price 1 tick through the limit           net $  29,552 dip $ -3,622 | start: median $-1,241, 1 in 10 $-2,744, worst $-3,573
+   stop slips 2 ticks                                   net $  31,050 dip $ -4,515 | start: median $-1,414, 1 in 10 $-3,293, worst $-4,466
+   orders placed 1 minute late                          net $  26,089 dip $ -3,295 | start: median $-1,209, 1 in 10 $-2,803, worst $-3,458
+   all three together                                   net $  14,533 dip $ -4,160 | start: median $-1,673, 1 in 10 $-3,272, worst $-4,160
