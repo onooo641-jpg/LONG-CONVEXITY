@@ -1663,20 +1663,19 @@ def job_ubatchc():
 
 
 def job_ubatchc2():
-    """Batch C extension: Coinbase daily candles BTC/ETH; Binance 8-hourly funding events BTCUSDT/ETHUSDT (archive)."""
+    """Batch C extension: Binance 8-hourly funding BTCUSDT/ETHUSDT (archive) first, then Coinbase daily BTC/ETH.
+    Re-written 2026-11-26 after the first run hung >2h: each part is saved on its own and has a hard wall-clock cap (SIGALRM)."""
     import io
+    import signal
     import zipfile
-    rows = []
-    for prod in ("BTC-USD", "ETH-USD"):
-        t = pd.Timestamp("2020-01-01", tz="UTC")
-        while t < pd.Timestamp.now(tz="UTC"):
-            e = min(t + pd.Timedelta(days=290), pd.Timestamp.now(tz="UTC"))
-            d = get(f"https://api.exchange.coinbase.com/products/{prod}/candles?granularity=86400&start={t.isoformat()}&end={e.isoformat()}", tries=3) or []
-            rows += [(prod, int(x[0]), float(x[4])) for x in d if isinstance(x, list)]
-            t = e
-            time.sleep(0.4)
-        print(f"  coinbase {prod}: {sum(1 for r in rows if r[0] == prod)} days", flush=True)
-    save("batchc_coinbase_1d.parquet", pd.DataFrame(rows, columns=["prod", "t", "c"]))
+
+    class Cap(Exception):
+        pass
+
+    def _alarm(*_):
+        raise Cap()
+
+    signal.signal(signal.SIGALRM, _alarm)
     fr = []
     for sym in ("BTCUSDT", "ETHUSDT"):
         for y in range(2020, 2027):
@@ -1684,18 +1683,39 @@ def job_ubatchc2():
                 mth = f"{y}-{m:02d}"
                 if mth > "2026-10":
                     continue
+                signal.alarm(90)
                 try:
-                    with urllib.request.urlopen(urllib.request.Request(f"https://data.binance.vision/data/futures/um/monthly/fundingRate/{sym}/{sym}-fundingRate-{mth}.zip", headers=UA), timeout=60) as r:
+                    with urllib.request.urlopen(urllib.request.Request(f"https://data.binance.vision/data/futures/um/monthly/fundingRate/{sym}/{sym}-fundingRate-{mth}.zip", headers=UA), timeout=30) as r:
                         z = zipfile.ZipFile(io.BytesIO(r.read()))
                         for ln in z.read(z.namelist()[0]).decode().splitlines():
                             f = ln.split(",")
                             if f and f[0].strip().isdigit():
                                 ts = int(f[0])
                                 fr.append((sym, (ts // 1000 if ts > 10**14 else ts) // 1000, float(f[-1])))
-                except Exception:  # noqa: BLE001
-                    pass
+                except (Exception, Cap):  # noqa: BLE001
+                    print(f"  miss {sym} {mth}", flush=True)
+                finally:
+                    signal.alarm(0)
         print(f"  funding events {sym}: {sum(1 for x in fr if x[0] == sym)}", flush=True)
     save("batchc_funding8h.parquet", pd.DataFrame(fr, columns=["sym", "t", "rate"]))
+    rows = []
+    for prod in ("BTC-USD", "ETH-USD"):
+        t = pd.Timestamp("2020-01-01", tz="UTC")
+        while t < pd.Timestamp.now(tz="UTC"):
+            e = min(t + pd.Timedelta(days=290), pd.Timestamp.now(tz="UTC"))
+            signal.alarm(60)
+            try:
+                d = get(f"https://api.exchange.coinbase.com/products/{prod}/candles?granularity=86400&start={t.isoformat()}&end={e.isoformat()}", tries=2, timeout=20) or []
+            except Cap:
+                print(f"  coinbase cap hit {prod} {t.date()}", flush=True)
+                d = []
+            finally:
+                signal.alarm(0)
+            rows += [(prod, int(x[0]), float(x[4])) for x in d if isinstance(x, list)]
+            t = e
+            time.sleep(0.4)
+        print(f"  coinbase {prod}: {sum(1 for r in rows if r[0] == prod)} days", flush=True)
+    save("batchc_coinbase_1d.parquet", pd.DataFrame(rows, columns=["prod", "t", "c"]))
 
 
 def job_uverify():
