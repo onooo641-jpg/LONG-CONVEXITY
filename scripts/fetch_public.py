@@ -1965,6 +1965,39 @@ def job_ubatchk():
 JOBS["ubatchk"] = job_ubatchk
 
 
+def job_ubatchk2():
+    """Batch K2 (docs/PREREG_BATCH_K2_20261126.md): DefiLlama USDe supply history; Yahoo BTC=F, ETH=F, BTC-USD, ETH-USD daily."""
+    hdr = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36"}
+
+    def getj(url):
+        with urllib.request.urlopen(urllib.request.Request(url, headers=hdr), timeout=90) as r:
+            return json.loads(r.read().decode())
+    try:
+        lst = getj("https://stablecoins.llama.fi/stablecoins?includePrices=false")["peggedAssets"]
+        sid = next(a["id"] for a in lst if str(a.get("symbol", "")).upper() == "USDE")
+        d = getj(f"https://stablecoins.llama.fi/stablecoin/{sid}")
+        rows = [(int(x["date"]), float((x.get("circulating") or {}).get("peggedUSD") or 0)) for x in d.get("tokens") or []]
+        pd.DataFrame(rows, columns=["t", "supply"]).to_parquet(OUT / "batchk2_usde_supply.parquet")
+        print(f"  USDe (id {sid}) supply days: {len(rows)}", flush=True)
+    except Exception as e:  # noqa: BLE001
+        print(f"  USDe FAIL {e}", flush=True)
+    rows = []
+    for sym in ("BTC=F", "ETH=F", "BTC-USD", "ETH-USD"):
+        try:
+            r = getj(f"https://query1.finance.yahoo.com/v8/finance/chart/{urllib.parse.quote(sym)}?period1=1483228800&period2=1793491200&interval=1d")["chart"]["result"][0]
+            cl = r["indicators"]["quote"][0]["close"]
+            rows += [(sym, int(a), float(b)) for a, b in zip(r["timestamp"], cl) if b is not None]
+            print(f"  yahoo {sym}: ok", flush=True)
+        except Exception as e:  # noqa: BLE001
+            print(f"  yahoo {sym} FAIL {e}", flush=True)
+        time.sleep(1)
+    pd.DataFrame(rows, columns=["sym", "t", "close"]).to_parquet(OUT / "batchk2_yahoo_1d.parquet")
+    print(f"  wrote batchk2_yahoo_1d.parquet: {len(rows)} rows", flush=True)
+
+
+JOBS["ubatchk2"] = job_ubatchk2
+
+
 def main(argv):
     OUT.mkdir(parents=True, exist_ok=True)
     for name in argv:

@@ -62,8 +62,30 @@ def main_k(key):
     print(f"  cz_lsr_binance: {df['symbol'].nunique() if len(df) else 0} symbols, {len(df)} rows", flush=True)
 
 
+def main_k2(key):
+    """Batch K2 #498/#499: Hyperliquid daily funding + OHLCV and Binance daily funding for coins on both; Bybit daily funding."""
+    m = pd.read_parquet(PUB / "coinalyze_future_markets.parquet")
+    have = set(m["symbol"])
+    alts = sorted(pd.read_parquet(PUB / "batchd_alts_1h.parquet")["sym"].unique())
+    unseen = sorted(pd.read_parquet(PUB / "batchh2_unseen_funding.parquet")["sym"].unique())
+    bases = [s[:-4] for s in alts + unseen]
+    hl = [f"{b}.H" for b in bases if f"{b}.H" in have and f"{b}USDT_PERP.A" in have]
+    bn = [f"{b}USDT_PERP.A" for b in bases if f"{b}.H" in have and f"{b}USDT_PERP.A" in have]
+    by = [f"{b}USDT.6" for b in bases if f"{b}USDT.6" in have]
+    print(f"  HL+Binance coins {len(hl)}; Bybit {len(by)}", flush=True)
+    for name, ep, syms in (("k2_fund_hl", "funding-rate-history", hl), ("k2_ohlcv_hl", "ohlcv-history", hl),
+                           ("k2_fund_binance", "funding-rate-history", bn), ("k2_fund_bybit", "funding-rate-history", by)):
+        if (PUB / f"batchk2_{name}.parquet").exists():
+            continue
+        df = pull(ep, syms, key)
+        df.to_parquet(PUB / f"batchk2_{name}.parquet")
+        print(f"  {name}: {df['symbol'].nunique() if len(df) else 0} symbols, {len(df)} rows", flush=True)
+
+
 def main():
     key = os.environ.get("COINALYZE_API_KEY", "")
+    if "--k2" in sys.argv:
+        return main_k2(key)
     if "--k" in sys.argv:
         return main_k(key)
     assert key, "set COINALYZE_API_KEY"

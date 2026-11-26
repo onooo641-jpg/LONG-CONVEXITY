@@ -14,3 +14,22 @@ Bar: real >= $17,562, coin flip >= $5,000, dip >= $-6,088
   TFD Static Pro                                                 | rt: real $  24,355 flip $     352 (52%) dip $  -3,782 fails | eod: real $  20,248 flip $   3,274 (71%) dip $  -3,667 fails
   Blueberry Ascent 50K                                           | rt: real $  11,585 flip $ -14,638 (6%) dip $ -10,075 fails | eod: real $  23,397 flip $  -4,016 (37%) dip $ -10,982 fails
   FundedNext Rapid Pro 50K                                       | rt: real $     642 flip $ -18,937 (0%) dip $  -8,959 fails | eod: real $  14,482 flip $    -608 (46%) dip $  -7,040 fails
+  Bulenox Momentum 50K                                           | rt: real $ -11,547 flip $ -22,653 (0%) dip $ -16,726 fails | eod: real $  -4,139 flip $ -14,622 (0%) dip $ -10,840 fails
+  Traders Launch 100K ($159)                                     | rt: real $ -15,657 flip $ -29,350 (0%) dip $ -18,106 fails | eod: real $     722 flip $ -13,645 (0%) dip $  -8,817 fails
+  Traders Launch 200K ($299)                                     | rt: real $ -26,334 flip $ -54,257 (0%) dip $ -31,460 fails | eod: real $   4,371 flip $ -24,351 (2%) dip $ -15,606 fails
+  DayTraders S2F 50K $199 [sens] (official targets $3,500/$3,000) | rt: real $  46,100 flip $  20,996 (98%) dip $  -4,975 QUALIFIES | eod: real $  55,274 flip $  31,518 (100%) dip $  -4,378 QUALIFIES
+  DayTraders S2F 50K $399 [sens] (official targets $3,500/$3,000) | rt: real $  26,100 flip $  -8,660 (27%) dip $ -14,743 fails | eod: real $  40,474 flip $   9,708 (84%) dip $  -9,556 fails
+
+qualifying products: real-time model 1, end-of-day model 3 (EOD counts only once a firm's own page confirms it)
+
+ADDENDUM A1 - third-party prices and stated daily loss limits. Bar: real >= $17,562, flip >= $5,000, dip >= $-6,088
+  DayTraders S2F 50K $342, DLL $1,250 (pause)                    | rt: real $  32,826 flip $   1,254 (54%) dip $ -10,468 fails | eod: real $  45,718 flip $  17,406 (96%) dip $  -6,840 fails
+  DayTraders S2F 50K $570, DLL $1,250 (pause)                    | rt: real $  10,710 flip $ -33,050 (4%) dip $ -23,060 fails | eod: real $  29,530 flip $  -5,860 (38%) dip $ -15,650 fails
+  LucidDirect 50K $360.50, DLL none, CrossTrade $0/mo            | rt: real $  28,755 flip $  -4,758 (36%) dip $ -10,460 fails | eod: real $  38,128 flip $  11,468 (86%) dip $  -7,576 fails
+  LucidDirect 50K $360.50, DLL none, CrossTrade $49/mo           | rt: real $  22,385 flip $ -11,128 (18%) dip $ -12,126 fails | eod: real $  31,758 flip $   5,098 (69%) dip $  -9,192 fails
+  LucidDirect 50K $360.50, DLL $1,200, CrossTrade $0/mo          | rt: real $  28,755 flip $  -4,758 (36%) dip $ -10,460 fails | eod: real $  38,128 flip $  11,468 (86%) dip $  -7,576 fails
+  LucidDirect 50K $360.50, DLL $1,200, CrossTrade $49/mo         | rt: real $  22,385 flip $ -11,128 (18%) dip $ -12,126 fails | eod: real $  31,758 flip $   5,098 (69%) dip $  -9,192 fails
+  LucidDirect 50K $520.00, DLL none, CrossTrade $0/mo            | rt: real $  14,400 flip $ -28,460 (4%) dip $ -16,680 fails | eod: real $  27,920 flip $  -4,960 (32%) dip $ -12,520 fails
+  LucidDirect 50K $520.00, DLL none, CrossTrade $49/mo           | rt: real $   8,030 flip $ -34,830 (1%) dip $ -18,346 fails | eod: real $  21,550 flip $ -11,330 (16%) dip $ -14,137 fails
+  LucidDirect 50K $520.00, DLL $1,200, CrossTrade $0/mo          | rt: real $  14,400 flip $ -28,460 (4%) dip $ -16,680 fails | eod: real $  27,920 flip $  -4,960 (32%) dip $ -12,520 fails
+  LucidDirect 50K $520.00, DLL $1,200, CrossTrade $49/mo         | rt: real $   8,030 flip $ -34,830 (1%) dip $ -18,346 fails | eod: real $  21,550 flip $ -11,330 (16%) dip $ -14,137 fails
