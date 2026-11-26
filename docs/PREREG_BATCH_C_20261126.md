@@ -29,3 +29,15 @@ Stage 2 out-of-sample = 2023-01..2026-10 (2025-01..2026-10 for #441).
 | 440 | Funding-settlement drift (longs/shorts close just before paying funding) | at 2 h before each 8-hourly settlement, if the last funding rate ≥ 0.03% short until 1 h after settlement; if ≤ −0.03% long | mean < 0.05% or t < 1 | ≥ 100 events, mean ≥ 0.08%, t ≥ 2 |
 | 441 | US spot-ETF fix window (creations struck at 16:00 New York = 20:00/21:00 UTC) | long BTC/ETH 18:00→21:00 UTC on US trading days when the previous day's 13:30→21:00 UTC return > 0 (inflow persistence), else short | 2024: mean < 0.05% or t < 1 | ≥ 150 events, mean ≥ 0.08%, t ≥ 2 |
 | 442 | Coinbase premium (US buyers pay above offshore price) | daily: premium = Coinbase close ÷ Binance USDT close − 1; if premium > its trailing-90-day 95th percentile, long 3 days; < 5th, short 3 days | mean < 0.5% or t < 1 | ≥ 20 events, mean ≥ 1%, t ≥ 2 |
+
+## Verification stage V for #429, #430 (and #421) — pre-registered 2026-11-26 after their Stage 2 printed PASS, before any check is run
+The Stage 2 passes rest on CoinGecko hourly prices (aggregated, can include dead venues: BUSD trades down to $0.14 in that feed after its
+wind-down). A pass counts only if the events were tradeable on an independent venue:
+- **Stablecoins (#429, #430):** Binance spot 1h klines (archive) for the token against USDT (FDUSD, USDC, TUSD, BUSD, USDP, DAI where
+  listed). An event is **confirmed** if, in its entry hour, the Binance low ≤ the CoinGecko entry price + 0.5% and the Binance pair later
+  reaches ≥ 0.997 (the exit rule) within 30 days; it is **unverifiable** if the token has no Binance pair at that time.
+- **#421:** events from 2026-05-01 on are checked against GeckoTerminal pool closes (`uncharted_384_ohlcv`, the main DEX pool): confirmed if
+  the pool's daily close or low on the event day is ≥ 0.5% below the on-chain NAV.
+- **Rule:** an idea keeps its PASS only if ≥ 70% of its verifiable events are confirmed **and** the confirmed events alone still meet the
+  Stage 2 bar (≥ 3 events, mean ≥ +1%, ≥ 75% profitable for #429/#430; ≥ $3,000/yr scaled for #421). Otherwise it is downgraded to
+  "data artefact / not confirmed". Data: job `uverify`.
