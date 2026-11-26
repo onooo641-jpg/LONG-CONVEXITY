@@ -234,6 +234,7 @@ risk, 5m signals and 1m fills.
 | 417 | deBridge DLN takers (permissionless intent filling): newcomer income in 2024 and 2025 cohorts | `docs/PREREG_SOLVERS_20261125.md` | **FAIL**: top-3 takers 100% of a ~$9.2M/yr margin pool (2026-03..11 sample); cohorts not reachable | solvers_20261125.txt |
 | 418 | UniswapX open fillers on Base (permissionless): newcomer income, two cohorts | `docs/PREREG_SOLVERS_20261125.md` | **KILL**: medians $798 / −$5,043 per yr | solvers_20261125.txt |
 | 419–421 | Batch A: crypto variance risk premium (Derive straddles), dYdX reward farming hedged, withdrawal discounts vs on-chain rates | `docs/PREREG_BATCH_A_20261126.md` | registered; data `ubatcha` | — |
+| 422–428 | Batch B: year-one vaults on newer perp DEXes (OOS), funding-cap crowding short, Liquity v2 stability pools, wick bids on Orderly, cascade-day lending, HL spot-perp carry, new-chain stable premiums | `docs/PREREG_BATCH_B_20261126.md` | registered; data `ubatchb` | — |
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.

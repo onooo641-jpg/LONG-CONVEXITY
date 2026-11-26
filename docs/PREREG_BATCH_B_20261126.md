@@ -1,0 +1,14 @@
+# Batch B (#422–#428): ten ideas at once (Jx: "10+") — pre-registered 2026-11-26, before their data are fetched
+
+All permissionless, usable from Malaysia, a structural payer, an out-of-sample split. Potential (before testing) is marked; B2 (#421),
+B3 (#417 — FAIL) and B7 (#395 forward log) run elsewhere. $15,000 pot. Data job `ubatchb`; script `scripts/batch_b_20261126.py`.
+
+| # | Idea | Data | Rule | Stage 1 (in-sample, kill-only) | Stage 2 (out-of-sample, PASS) |
+|---|---|---|---|---|---|
+| 422 (B1, high) | Year-one house vaults on newer perp DEXes | DefiLlama yield pools of projects matching lighter, edgex, grvt, aster, paradex, dydx (MegaVault), ostium, avantis, drift, gmx (GLV) — APY + TVL history | per vault: mean APY over its first 12 months of DefiLlama history (≥ 300 days required), TVL ≥ $5M at month 3 | vaults launched before 2025-01-01: KILL if median first-year APY < 15% | vaults launched 2025-01-01 or later (unseen by #383): PASS if ≥ 3 vaults and median first-year APY ≥ 30% |
+| 423 (B4, med-high) | Funding-cap crowding short | `hl_funding.parquet` (hourly, 2024–26) + Hyperliquid daily candles | event: a perp's hourly funding ≥ 0.05% for 6 consecutive hours (≈ 440%/yr, longs crowded); short at the next daily close, hold 3 days, equal BTC long hedge, collect funding, 4 × 0.045% | 2024: with ≥ 20 events KILL if mean < 1% or t < 1 | 2025-01..2026-10: PASS if ≥ 20 events, mean ≥ 2%, t ≥ 2 |
+| 424 (B5, med) | Liquity v2 stability pools | DefiLlama yield pools of project liquity-v2 (BOLD pools) APY history | mean APY of the BOLD stability pools | first half of each pool's history: KILL if mean APY < 10% | second half: PASS if mean APY ≥ 15% (needs ≥ 2 pools) |
+| 425 (B6, high, family 1) | #389 wick bids on Orderly-network perps | Orderly public klines (daily) | #389 unchanged (X 15%, prior-day volume sizing, $15K pot, guard G2 reported) | — (already passed on HL/Binance/dYdX) | PASS if mean ≥ 0.5%/fill, t ≥ 3, ≥ $3,000/yr |
+| 426 (B8, med) | Cascade-day lending on Hyperliquid's lending markets | DefiLlama yield pools of hyperlend / hypurrfi (USDC, USDT0) daily APY + #397 cascade days | supply APY on cascade days and the next 3 days vs all days | 2025: KILL if cascade-window APY < 2× the average | 2026: PASS if cascade-window APY ≥ 2× average and the all-days average ≥ 10% |
+| 427 (B9, med) | Hyperliquid spot-perp carry for tokens with both | `fivehigh_hl_spot_1d` + HL perp candles + `hl_funding` | long spot / short perp when the trailing-7-day funding > 0, else flat; daily; costs 2 × 0.07% spot + 2 × 0.045% perp per switch | 2024-06..2025-06: KILL if annualised < 10% | 2025-07..2026-10: PASS if annualised ≥ 20% and worst drawdown ≥ −15% |
+| 428 (B10, low) | New-chain stablecoin launch premiums | GeckoTerminal free history is ~6 months, DefiLlama has no chain-specific stablecoin prices | — | not testable with free data (recorded) | — |

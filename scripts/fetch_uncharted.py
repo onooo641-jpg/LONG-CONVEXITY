@@ -1582,6 +1582,34 @@ def _ubatcha_rates():
     save("batcha_rates.parquet", pd.DataFrame(rows))
 
 
+def job_ubatchb():
+    """Batch B data: DefiLlama yield pools/charts for perp-DEX vaults, Liquity v2, HyperLend/HypurrFi; Orderly daily klines."""
+    pools = (get("https://yields.llama.fi/pools", tries=3) or {}).get("data") or []
+    pat = re.compile(r"lighter|edgex|grvt|aster|paradex|dydx|ostium|avantis|drift|gmx|liquity-v2|hyperlend|hypurrfi", re.I)
+    sel = [p for p in pools if pat.search(p.get("project") or "")]
+    print(f"  matching yield pools: {len(sel)} ({sorted({p['project'] for p in sel})})", flush=True)
+    rows = []
+    for p in sel:
+        c = get(f"https://yields.llama.fi/chart/{p['pool']}", tries=2)
+        rows += [{"pool": p["pool"], "ts": x.get("timestamp"), "tvlUsd": x.get("tvlUsd"), "apy": x.get("apy"), "apyBase": x.get("apyBase")}
+                 for x in (c or {}).get("data") or []]
+        time.sleep(0.25)
+    save("batchb_pools.json", sel)
+    save("batchb_charts.parquet", pd.DataFrame(rows))
+    base = "https://api-evm.orderly.org"
+    info = get(f"{base}/v1/public/info", tries=3) or {}
+    syms = [r["symbol"] for r in ((info.get("data") or {}).get("rows") or []) if str(r.get("symbol", "")).startswith("PERP_")]
+    print(f"  Orderly perps: {len(syms)}", flush=True)
+    krow, now = [], int(time.time())
+    for sym in syms:
+        d = get(f"{base}/v1/tv/history?symbol={sym}&resolution=1D&from={now - 1100 * 86400}&to={now}", tries=2) or {}
+        for t, o, h, l, c, v in zip(d.get("t") or [], d.get("o") or [], d.get("h") or [], d.get("l") or [], d.get("c") or [], d.get("v") or []):
+            krow.append((sym, int(t), float(o), float(h), float(l), float(c), float(v)))
+        time.sleep(0.2)
+    print(f"  Orderly daily candles: {len(krow)}", flush=True)
+    save("batchb_orderly_1d.parquet", pd.DataFrame(krow, columns=["coin", "t", "o", "h", "l", "c", "v"]))
+
+
 def _safe(fn):
     def w():
         try:
@@ -1598,4 +1626,4 @@ def job_uprobe():
 
 
 JOBS = {"uprobe": job_uprobe, "u383vaults": _safe(job_u383vaults), "u384lst": _safe(job_u384lst), "u385hyperp": _safe(job_u385hyperp),
-        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive, "uhip3": _safe(job_uhip3), "uw3b": _safe(job_uw3b), "udistinct": _safe(job_udistinct), "unav": _safe(job_unav), "udln": _safe(job_udln), "udln2": _safe(job_udln2), "ubatcha": _safe(job_ubatcha), "urates": _safe(job_urates)}
+        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive, "uhip3": _safe(job_uhip3), "uw3b": _safe(job_uw3b), "udistinct": _safe(job_udistinct), "unav": _safe(job_unav), "udln": _safe(job_udln), "udln2": _safe(job_udln2), "ubatcha": _safe(job_ubatcha), "urates": _safe(job_urates), "ubatchb": _safe(job_ubatchb)}
