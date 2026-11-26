@@ -1869,6 +1869,106 @@ def job_upendle():
     save("batche_underlying_1d.parquet", pd.DataFrame(px, columns=["chain_slug", "underlying", "t", "price"]))
 
 
+BROWSER = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+           "Accept": "text/html,application/json,*/*"}
+
+
+def _raw_get(url, timeout=40, headers=None):
+    try:
+        with urllib.request.urlopen(urllib.request.Request(url, headers={**BROWSER, **(headers or {})}), timeout=timeout) as r:
+            return r.status, r.read()
+    except urllib.error.HTTPError as e:
+        return e.code, b""
+    except Exception:  # noqa: BLE001
+        return None, b""
+
+
+def job_ubatchf():
+    """Batch F (#448, #449): DefiLlama total stablecoin supply; Farside BTC/ETH ETF flow tables (raw HTML)."""
+    d = get("https://stablecoins.llama.fi/stablecoincharts/all", tries=3, timeout=60) or []
+    rows = [(int(x["date"]), float(((x.get("totalCirculatingUSD") or {}).get("peggedUSD")) or 0)) for x in d if isinstance(x, dict)]
+    print(f"  stablecoin supply days: {len(rows)}", flush=True)
+    save("batchf_stable_supply.parquet", pd.DataFrame(rows, columns=["t", "supply"]))
+    for name, url in (("btc", "https://farside.co.uk/bitcoin-etf-flow-all-data/"), ("eth", "https://farside.co.uk/ethereum-etf-flow-all-data/")):
+        st, raw = _raw_get(url, timeout=60)
+        print(f"  farside {name}: HTTP {st}, {len(raw)} bytes", flush=True)
+        if raw:
+            OUT.mkdir(parents=True, exist_ok=True)
+            (OUT / f"batchf_farside_{name}.html").write_bytes(raw)
+
+
+def job_ubatchf2():
+    """Batch F #453: Dukascopy USDJPY ticks, hours 00 and 01 UTC, every weekday 2012-01..2026-10 -> per-day mids at 00:00, 00:55, 02:00."""
+    import lzma
+    import struct
+    from concurrent.futures import ThreadPoolExecutor
+
+    def hour(day, h):
+        st, raw = _raw_get(f"https://datafeed.dukascopy.com/datafeed/USDJPY/{day.year}/{day.month - 1:02d}/{day.day:02d}/{h:02d}h_ticks.bi5", timeout=30)
+        if st != 200 or not raw:
+            return []
+        try:
+            b = lzma.decompress(raw)
+        except Exception:  # noqa: BLE001
+            return []
+        out = []
+        for i in range(0, len(b) - 19, 20):
+            ms, ask, bid, _, _ = struct.unpack(">IIIff", b[i:i + 20])
+            out.append((h * 3600 + ms / 1000.0, (ask + bid) / 2 / 1000.0))
+        return out
+
+    def one(day):
+        ticks = hour(day, 0) + hour(day, 1)
+        if not ticks:
+            return None
+        first = next((p for s, p in ticks if s >= 0), None)
+        at55 = [p for s, p in ticks if s < 55 * 60]
+        end = [p for s, p in ticks if s < 7200]
+        return (day.strftime("%Y-%m-%d"), first, at55[-1] if at55 else None, end[-1] if end else None, len(ticks))
+
+    days = [d for d in pd.date_range("2012-01-02", "2026-10-30", freq="D") if d.weekday() < 5]
+    with ThreadPoolExecutor(8) as ex:
+        res = [r for r in ex.map(one, days) if r]
+    print(f"  dukascopy USDJPY days with ticks: {len(res)} of {len(days)}", flush=True)
+    save("batchf_usdjpy_fix.parquet", pd.DataFrame(res, columns=["day", "p0000", "p0055", "p0200", "nticks"]))
+
+
+def job_ubatchf3():
+    """Batch F #454: Nasdaq IPO calendar (priced) 2015-09..2026-05 and Yahoo daily closes for each ticker and IWM."""
+    ipos = []
+    for m in pd.period_range("2015-09", "2026-05", freq="M"):
+        st, raw = _raw_get(f"https://api.nasdaq.com/api/ipo/calendar?date={m}", timeout=40, headers={"Accept": "application/json"})
+        try:
+            d = json.loads(raw.decode()) if raw else {}
+        except Exception:  # noqa: BLE001
+            d = {}
+        rows = ((((d or {}).get("data") or {}).get("priced") or {}).get("rows")) or []
+        ipos += [{**r, "month": str(m)} for r in rows]
+        time.sleep(0.4)
+    print(f"  nasdaq priced IPO rows: {len(ipos)}", flush=True)
+    if not ipos:
+        return
+    ip = pd.DataFrame(ipos).astype(str)
+    save("batchf_ipos.parquet", ip)
+    syms = sorted(set(ip.get("proposedTickerSymbol", pd.Series(dtype=str)).dropna()) | {"IWM"})
+    px, t0 = [], time.time()
+    for i, sym in enumerate(syms):
+        if time.time() - t0 > 2.5 * 3600:
+            print("  yahoo time cap hit", flush=True)
+            break
+        st, raw = _raw_get(f"https://query1.finance.yahoo.com/v8/finance/chart/{sym}?period1=1441065600&period2=1793491200&interval=1d", timeout=30)
+        try:
+            r = json.loads(raw.decode())["chart"]["result"][0]
+            ts, cl = r["timestamp"], r["indicators"]["quote"][0]["close"]
+            px += [(sym, int(a), float(b)) for a, b in zip(ts, cl) if b is not None]
+        except Exception:  # noqa: BLE001
+            pass
+        if i % 200 == 0:
+            print(f"  yahoo {i}/{len(syms)} rows {len(px)} (last HTTP {st})", flush=True)
+        time.sleep(0.35)
+    save("batchf_ipo_px.parquet", pd.DataFrame(px, columns=["sym", "t", "c"]))
+
+
 def job_uverify():
     """Verification V: Binance spot 1h klines for stablecoin/USDT pairs (archive), 2020-01..2026-10."""
     import io
@@ -1911,4 +2011,4 @@ def job_uprobe():
 
 
 JOBS = {"uprobe": job_uprobe, "u383vaults": _safe(job_u383vaults), "u384lst": _safe(job_u384lst), "u385hyperp": _safe(job_u385hyperp),
-        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive, "uhip3": _safe(job_uhip3), "uw3b": _safe(job_uw3b), "udistinct": _safe(job_udistinct), "unav": _safe(job_unav), "udln": _safe(job_udln), "udln2": _safe(job_udln2), "ubatcha": _safe(job_ubatcha), "urates": _safe(job_urates), "ubatchb": _safe(job_ubatchb), "ubatchc": _safe(job_ubatchc), "ubatchc2": _safe(job_ubatchc2), "uverify": _safe(job_uverify), "ubatchd": _safe(job_ubatchd), "ucb442": _safe(job_ucb442), "upendle": _safe(job_upendle)}
+        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive, "uhip3": _safe(job_uhip3), "uw3b": _safe(job_uw3b), "udistinct": _safe(job_udistinct), "unav": _safe(job_unav), "udln": _safe(job_udln), "udln2": _safe(job_udln2), "ubatcha": _safe(job_ubatcha), "urates": _safe(job_urates), "ubatchb": _safe(job_ubatchb), "ubatchc": _safe(job_ubatchc), "ubatchc2": _safe(job_ubatchc2), "uverify": _safe(job_uverify), "ubatchd": _safe(job_ubatchd), "ucb442": _safe(job_ucb442), "upendle": _safe(job_upendle), "ubatchf": _safe(job_ubatchf), "ubatchf2": _safe(job_ubatchf2), "ubatchf3": _safe(job_ubatchf3)}
