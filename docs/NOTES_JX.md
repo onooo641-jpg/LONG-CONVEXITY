@@ -798,3 +798,19 @@ was judged on closed trades; Topstep checks open P&L in real time (help.topstep.
 Topstep 50K Consistency: $46,492 -> **$37,406** ($3,454/yr), coin flip $18,005 -> $6,384 (still qualifies). Start money: median
 -$1,181, 1 in 10 -$2,585, worst -$3,475. LucidDaily, TTP Prime and DayTraders EOD fail the coin-flip bar if they check open P&L the same
 way (unconfirmed): the 4-firm plan is on hold; Topstep only. Next step unchanged: one live Topstep account, ~$1,200 to start.
+
+## 2026-11-26 — prop search 2 (more firms that pass on the corrected model)
+`docs/PREREG_PROP_SEARCH2_20261126.md`. Re-priced every other modelled product (TTP Instant/Prime 100K/150K, LucidDirect, Tradeify, FTMO
+Futures, TFD, Blueberry, FundedNext, Bulenox, Traders Launch, DayTraders S2F) on the corrected model.
+
+**Result:** no new qualifier at real prices; the count stays at 3 (LucidFlex 50K, Topstep 50K Consistency, LucidDaily $85.40).
+
+**Near misses:**
+- **DayTraders S2F 50K:** qualifies at $199. At the reported $342 it fails only on the dip under EOD ($45.7K, dip −$6.8K vs −$6.1K bar).
+- **LucidDirect 50K at $360:** EOD $38.1K, but dip −$7.6K.
+
+Firm pages say Lucid ignores unrealized P&L, and FundedNext and Blueberry breach on live equity. The others don't say.
+
+**Jx can settle two facts only he can see:**
+1. the DayTraders S2F 50K checkout price;
+2. whether DayTraders' S2F loss limit counts open P&L.
