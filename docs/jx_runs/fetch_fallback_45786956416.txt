@@ -1,0 +1,15 @@
+=== upendle
+  pendle markets expiring >= 2024-03: 844
+  wrote batche_pendle_markets.parquet: 844 rows
+  history 0/844 rows 1278
+  history 100/844 rows 18913
+  history 200/844 rows 31436
+  history 300/844 rows 44952
+  history 400/844 rows 55540
+  history 500/844 rows 67856
+  history 600/844 rows 80313
+  history 700/844 rows 91742
+  history 800/844 rows 109229
+  wrote batche_pendle_history.parquet: 115514 rows
+  underlying price points: 201132 for 402 assets
+  wrote batche_underlying_1d.parquet: 201132 rows
