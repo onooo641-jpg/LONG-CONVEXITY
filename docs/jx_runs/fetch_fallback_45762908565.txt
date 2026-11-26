@@ -1,0 +1,24 @@
+=== ubatchc
+  usd-coin: 50887 hourly points
+  tether: 51911 hourly points
+  first-digital-usd: 29217 hourly points
+  paypal-usd: 28500 hourly points
+  true-usd: 48070 hourly points
+  binance-usd: 45521 hourly points
+  paxos-standard: 44467 hourly points
+  dai: 51537 hourly points
+  ethena-usde: 25592 hourly points
+  frax: 42603 hourly points
+  crvusd: 29728 hourly points
+  gho: 26844 hourly points
+  liquity-usd: 42482 hourly points
+  usdd: 37506 hourly points
+  usual-usd: 17806 hourly points
+  usds: 18821 hourly points
+  wrote batchc_stables_1h.parquet: 591492 rows
+  binance catalog 157: 550
+  binance catalog 49: 2050
+  wrote batchc_binance_ann.json: 432863 bytes
+  BTCUSDT 1h rows: 59904
+  ETHUSDT 1h rows: 59904
+  wrote batchc_btceth_1h.parquet: 119808 rows
