@@ -285,3 +285,7 @@ Jx: "I don't want stuff that has to get approved by someone." Excluded from now 
 (#371), RFQ market-maker programmes (U13), anything needing a protocol's or firm's onboarding approval. Still in scope: permissionless roles
 (#417 deBridge DLN takers, #418 UniswapX open fillers on Base) and own-capital strategies (wick family). Prop firms are unaffected (buying an
 evaluation is not an approval). The #371 paper run finishes on its own; its verdict is recorded but no longer acted on.
+
+## 2026-11-26 — clarification from Jx: no-approval rule is forward-looking
+The rule applies to new ideas only. #364 (CoW solving) and #371 (UniswapX quoting, Arbitrum) are **parked, not closed**: both showed
+measured profit potential for approved newcomers; applying is Jx's decision. Application draft: `docs/UNISWAPX_QUOTER_APPLICATION_DRAFT.md`.

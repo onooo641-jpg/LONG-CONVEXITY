@@ -239,7 +239,7 @@ launchpools (Malaysia), creator / marketing ventures (rule), #386 delisting shor
 
 ---
 
-## 7. Approval-gated roles (a business, not a deposit) — EXCLUDED by Jx (2026-11-25: "I don't want stuff that has to get approved by someone")
+## 7. Approval-gated roles (a business, not a deposit) — PARKED (Jx 2026-11-26: no-approval rule applies to new ideas only; #364 CoW and #371 UniswapX stay parked as viable if approved)
 These pay a role (solver, quoter) out of protocol fees or spreads. Newcomers can earn, but only after the protocol approves them.
 
 | # | Role | What was measured | Verdict / status | File |

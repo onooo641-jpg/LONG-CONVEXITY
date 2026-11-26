@@ -127,5 +127,5 @@ fills: top-1 quoter 62%, top-3 92%, 6 quoters.
 ### Stage 5 / 5b final (2026-11-26, 36 h on GitHub Actions; `data/uniswapx_paper/uniswapx_paper_summary.txt`)
 153 orders quoted, all filled by their exclusive quoter; a public KyberSwap route matched or beat the winner on **78 (51.0%)**, median gap
 0.4 bps (paper, speed untested). Feed: 242 fills, **1 (0.4%) by a non-exclusive filler**; exclusivity top-1 69%, top-3 92%, 7 quoters.
-**Verdict: outsider route KILL; an approved quoter would be price-competitive.** Jx excluded approval-gated roles on 2026-11-25, so #371 is
-closed (no application).
+**Verdict: outsider route KILL; an approved quoter would be price-competitive.** Jx's no-approval rule (2026-11-25) applies to future ideas only: #371 is **parked** (it shows profit potential), pending Jx's
+decision to apply as a quoter.
