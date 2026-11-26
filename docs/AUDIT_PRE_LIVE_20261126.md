@@ -69,3 +69,20 @@ through `flip` before relying on them.
   could not be read from this environment (Lucid shows a bot check; a fetch needed approval that was not answered). Until confirmed,
   treat them as not qualifying.
 - Queue position on limit fills: only the live fill rate can settle where between "touch" and "1 tick through" reality sits.
+
+## Addendum 1 (2026-11-26): every previously approved product re-priced on the corrected model
+`uv run python -m scripts.audit_all_prop_20261126` → `docs/jx_runs/audit_all_prop_20261126.txt` (re-run identical). Same rule as before
+(real ≥ 50% of Topstep Standard on the same model and delay, coin flip ≥ $5,000, worst dip no worse than 1.5× Topstep's).
+| Product (bot) | Real (closed-P&L model) | Coin flip | Worst dip | Verdict |
+|---|---|---|---|---|
+| Topstep 50K Standard (benchmark) | $35,124 ($44,359) | $6,205 (75%) | −$4,058 | qualifies |
+| **Topstep 50K Consistency** | **$37,406** ($46,492) | $6,384 (76%) | −$3,524 | **qualifies** |
+| TTP Futures Prime 50K | $26,700 ($50,495) | $3,521 | −$5,651 | fails (coin flip) |
+| DayTraders EOD 50K | $33,760 ($48,856) | −$5,937 | −$7,064 | fails |
+| LucidDaily $85.40, funded trails intraday (the default, third-party) | $27,301 ($57,486) | $218 | −$3,814 | fails |
+| LucidDaily $85.40 if funded were EOD | $34,124 | $5,723 | −$3,598 | would qualify, but EOD funded is sold at $165.20, which fails (coin flip −$14,782) |
+| LucidFlex 50K DLL ON | $29,037 ($40,545) | $4,806 | −$4,508 | fails (coin flip, narrowly) |
+| TradeDay 50K $85 | $18,567 ($35,678) | −$1,486 | −$5,855 | fails |
+Manual entry (3-minute delay): **nothing qualifies**, not even Topstep (coin flip $4,540); Top One Elite $18,741, coin flip $385.
+Products that failed on the old model only get worse on this one. **Result: one firm qualifies — Topstep.** The other firms' verdicts
+assume they also check open P&L; if one only checks at the close, its old (closed-P&L) figure applies — confirm on each firm's pages.

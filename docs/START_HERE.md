@@ -97,6 +97,8 @@ approved product, and the CrossTrade/Lucid route is on hold.
 > Topstep check it on open P&L in real time, so these figures are optimistic. Corrected (`docs/AUDIT_PRE_LIVE_20261126.md`): Topstep 50K
 > Consistency $37,406 (coin flip $6,384, qualifies); LucidDaily $85.40 $27,301 (coin flip $218, fails); TTP Prime $26,700 (coin flip
 > $3,521, fails); DayTraders EOD $33,760 (coin flip −$5,937, fails) — the last three assume those firms also check open P&L (unconfirmed).
+> **All approved products re-priced (audit addendum 1): only Topstep qualifies** (LucidFlex $29,037 / coin flip $4,806 and TradeDay
+> $18,567 also fail; manual entry: nothing qualifies).
 
 Benchmark Topstep 50K (old closed-P&L model): $44,359 real net, coin-flip median $18,046, worst dip −$3,520. "Qualifies" = real ≥ 50% of Topstep, coin flip ≥ $5,000,
 worst dip no worse than 1.5× Topstep's (manual-entry products judged with a 3-minute entry delay).
