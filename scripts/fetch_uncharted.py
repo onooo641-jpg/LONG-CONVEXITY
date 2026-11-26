@@ -1718,6 +1718,81 @@ def job_ubatchc2():
     save("batchc_coinbase_1d.parquet", pd.DataFrame(rows, columns=["prod", "t", "c"]))
 
 
+ALTS_D = ["BTC", "ETH", "SOL", "XRP", "DOGE", "ADA", "AVAX", "LINK", "DOT", "LTC", "BCH", "TRX", "MATIC", "ATOM", "NEAR", "FIL", "ETC",
+          "UNI", "AAVE", "XLM", "ALGO", "SAND", "MANA", "AXS", "GALA", "FTM", "CRV", "SUSHI", "1INCH", "COMP", "SNX", "MKR", "YFI", "RUNE",
+          "EGLD", "THETA", "ICP", "KSM", "ZEC", "DASH"]
+EPOCH_D = ["CRV", "CVX", "BAL", "PENDLE", "AERO", "VELODROME", "THE", "BTC"]
+
+
+def _bn_month(kind, sym, mth):
+    """One Binance USD-M archive month: kind 'k1h' -> [(t, close)], 'fund' -> [(t, rate)]. Hard 60 s wall cap via the socket timeout."""
+    import io
+    import zipfile
+    url = (f"https://data.binance.vision/data/futures/um/monthly/klines/{sym}/1h/{sym}-1h-{mth}.zip" if kind == "k1h"
+           else f"https://data.binance.vision/data/futures/um/monthly/fundingRate/{sym}/{sym}-fundingRate-{mth}.zip")
+    out = []
+    try:
+        with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=30) as r:
+            z = zipfile.ZipFile(io.BytesIO(r.read()))
+            for ln in z.read(z.namelist()[0]).decode().splitlines():
+                f = ln.split(",")
+                if f and f[0].strip().isdigit():
+                    ts = int(f[0])
+                    ts = (ts // 1000 if ts > 10**14 else ts) // 1000
+                    out.append((ts, float(f[4]) if kind == "k1h" else float(f[-1])))
+    except Exception:  # noqa: BLE001
+        pass
+    return out
+
+
+def _bn_many(kind, syms, name):
+    from concurrent.futures import ThreadPoolExecutor
+    tasks = [(s, f"{y}-{m:02d}") for s in syms for y in range(2020, 2027) for m in range(1, 13) if f"{y}-{m:02d}" <= "2026-10"]
+    rows = []
+    with ThreadPoolExecutor(8) as ex:
+        for (s, mth), res in zip(tasks, ex.map(lambda a: _bn_month(kind, a[0], a[1]), tasks)):
+            rows += [(s, t, v) for t, v in res]
+    df = pd.DataFrame(rows, columns=["sym", "t", "close" if kind == "k1h" else "rate"])
+    print(f"  {name}: " + ", ".join(f"{s} {n}" for s, n in df.groupby("sym").size().items()), flush=True)
+    save(name, df)
+
+
+def job_ubatchd():
+    """Batch D (docs/PREREG_BATCH_D_20261126.md): FRED CMT yields + Treasury auctions (#446); Binance 1h + funding for ve-epoch
+    tokens (#445) and for 40 alts (#440 alt variant). Each part saved on its own."""
+    import io
+    fred = []
+    for sid in ("DGS2", "DGS3", "DGS5", "DGS7", "DGS10", "DGS20", "DGS30"):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={sid}", headers=UA), timeout=60) as r:
+                d = pd.read_csv(io.StringIO(r.read().decode()))
+            d.columns = ["date", "y"]
+            d["y"] = pd.to_numeric(d["y"], errors="coerce")
+            d["sid"] = sid
+            fred.append(d.dropna())
+            print(f"  fred {sid}: {len(d)}", flush=True)
+        except Exception as e:  # noqa: BLE001
+            print(f"  fred {sid} FAIL {e}", flush=True)
+    if fred:
+        save("batchd_fred_cmt.parquet", pd.concat(fred, ignore_index=True))
+    auc, page = [], 1
+    while page < 40:
+        d = get("https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/od/auctions_query"
+                f"?filter=auction_date:gte:2008-06-01&page[size]=1000&page[number]={page}", tries=3, timeout=60)
+        lst = (d or {}).get("data") or []
+        auc += lst
+        if len(lst) < 1000:
+            break
+        page += 1
+    print(f"  treasury auctions: {len(auc)}", flush=True)
+    if auc:
+        save("batchd_auctions.parquet", pd.DataFrame(auc).astype(str))
+    _bn_many("k1h", [f"{s}USDT" for s in EPOCH_D], "batchd_epoch_1h.parquet")
+    _bn_many("fund", [f"{s}USDT" for s in EPOCH_D], "batchd_epoch_funding.parquet")
+    _bn_many("k1h", [f"{s}USDT" for s in ALTS_D], "batchd_alts_1h.parquet")
+    _bn_many("fund", [f"{s}USDT" for s in ALTS_D], "batchd_alts_funding.parquet")
+
+
 def job_uverify():
     """Verification V: Binance spot 1h klines for stablecoin/USDT pairs (archive), 2020-01..2026-10."""
     import io
@@ -1760,4 +1835,4 @@ def job_uprobe():
 
 
 JOBS = {"uprobe": job_uprobe, "u383vaults": _safe(job_u383vaults), "u384lst": _safe(job_u384lst), "u385hyperp": _safe(job_u385hyperp),
-        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive, "uhip3": _safe(job_uhip3), "uw3b": _safe(job_uw3b), "udistinct": _safe(job_udistinct), "unav": _safe(job_unav), "udln": _safe(job_udln), "udln2": _safe(job_udln2), "ubatcha": _safe(job_ubatcha), "urates": _safe(job_urates), "ubatchb": _safe(job_ubatchb), "ubatchc": _safe(job_ubatchc), "ubatchc2": _safe(job_ubatchc2), "uverify": _safe(job_uverify)}
+        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive, "uhip3": _safe(job_uhip3), "uw3b": _safe(job_uw3b), "udistinct": _safe(job_udistinct), "unav": _safe(job_unav), "udln": _safe(job_udln), "udln2": _safe(job_udln2), "ubatcha": _safe(job_ubatcha), "urates": _safe(job_urates), "ubatchb": _safe(job_ubatchb), "ubatchc": _safe(job_ubatchc), "ubatchc2": _safe(job_ubatchc2), "uverify": _safe(job_uverify), "ubatchd": _safe(job_ubatchd)}
