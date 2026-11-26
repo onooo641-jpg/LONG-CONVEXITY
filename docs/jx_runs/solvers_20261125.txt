@@ -1,0 +1,23 @@
+===== #417-#418 permissionless filling roles: newcomer income by cohort
+#### #418 UniswapX open fillers on Base (Priority reactor): newcomer income
+  newcomers in data: 65; with >= 30 priced sampled fills: 13
+      filler      first cohort  sampled  fills_90d  net_per_fill  gas_per_fill  volume_per_fill     ann_net
+0x03982c1c12 2025-12-18      A      132       6195          2.84          0.01          2509.94    68386.82
+0xa0e582bf0c 2025-12-23      A       33      21217         11.07          0.02          6083.92   949897.58
+0x60f05e6941 2026-01-24      A       41        461         -9.32          0.01          4108.01   -20419.56
+0x05898436b4 2026-01-28      A       58       7526        -44.36          0.02          7478.29 -1356903.98
+0x66666a8b1f 2026-02-20      A       78       2854          8.46          0.03          4286.78    94888.33
+0x7bb46e48c3 2026-02-23      A       36        150          6.24          0.03          5262.39      798.18
+0xeaed6aea9a 2026-03-14      A       43        281         -4.27          0.02          4189.86    -7861.37
+0x418886a19b 2026-04-15      B      116        226          0.65          0.01          4141.54    -2405.95
+0xc0df3e5a70 2026-04-19      B       38       1771         14.98          0.01          8551.32   104579.78
+0x8058a0d4fb 2026-04-22      B       50        286         -4.04          0.02          5437.96    -7680.43
+0x2296d04d9f 2026-05-15      B       32        570        -16.03          0.05          6545.85   -40067.14
+0x4ff07b8d71 2026-05-18      B       39        116         12.69          0.03          3956.13     2969.81
+0x374dc7e0b4 2026-05-21      B       83        334        -29.77          0.10          6050.90   -43331.76
+  cohort A (2025-11-15..2026-03-31): newcomers 7, median annualised net $798
+  cohort B (2026-04-01..2026-07-31): newcomers 6, median annualised net $-5,043
+  STAGE VERDICT (#418): KILL
+
+#### #417 deBridge DLN takers: newcomer income
+  orders not fetched: not testable yet

@@ -29,3 +29,10 @@ paid, output received) and the gas the filler paid (gasUsed × effectiveGasPrice
 − output USD − gas USD; scaled to all the filler's fills in the 90 days; annualised × 365/90; minus $3,000/yr infrastructure.
 **PASS (both cohorts — the out-of-sample check):** ≥ 3 newcomers each with ≥ 30 sampled fills, median annualised net ≥ $15,000.
 **KILL** if both cohorts' median < $5,000. Between = inconclusive. Data job `ubase418`; script `scripts/solvers_20261125.py` (part #418).
+
+---
+### #418 result — **KILL** (2026-11-26) — `uv run python -m scripts.solvers_20261125` → `docs/jx_runs/solvers_20261125.txt` (re-run identical)
+Data: queue-2 fetch (65 newcomer fillers of 81; 2,237 receipts, 3,978 swapper transfers). 13 newcomers had ≥ 30 priced sampled fills.
+Cohort A (first fill 2025-11-15..2026-03-31): 7 newcomers, **median annualised net $798**; cohort B (2026-04-01..07-31): 6 newcomers,
+**median −$5,043** → both < $5,000 → KILL. One cohort-A entrant (0xa0e5…) became the largest Base filler (~$950K/yr on this measure), but
+most entrants lost money after spread and gas; individual figures are noisy (transfer attribution), the medians are the registered measure.

@@ -232,6 +232,7 @@ risk, 5m signals and 1m fills.
 | 414–415 | short lottery coins (MAX effect, market-neutral weekly); withdrawal discounts vs on-chain NAV | `docs/PREREG_DISTINCT_20261125.md` | registered with out-of-sample stages | — |
 | 416 | fade Binance funding-frequency (crowd) flags | `docs/PREREG_DISTINCT_20261125.md` | **KILL** (2023–24: 21 events −4.82%) | crowd_flag_20261125.txt |
 | 417 | deBridge DLN takers (permissionless intent filling): newcomer income in 2024 and 2025 cohorts | `docs/PREREG_SOLVERS_20261125.md` | registered; data `udln` | — |
+| 418 | UniswapX open fillers on Base (permissionless): newcomer income, two cohorts | `docs/PREREG_SOLVERS_20261125.md` | **KILL**: medians $798 / −$5,043 per yr | solvers_20261125.txt |
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.
