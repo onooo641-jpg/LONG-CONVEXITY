@@ -20,7 +20,7 @@ COMMON = dict(funded_scaling=False, combine_consistency=0.50, consistency_target
 DT_STATIC50 = R(B, profit_target=3750, loss_limit=1000, funded_loss_limit=1000, static_dd=True, mll_locks_at=None, lock_level=-1000.0,
                 combine_max_contracts=60, one_time_price=50.0, reset=50.0, **COMMON)
 DT_TRAIL50 = R(B, profit_target=3000, loss_limit=2500, funded_loss_limit=2500, mll_locks_at=2500, lock_level=0.0, combine_max_contracts=100,
-               intraday_trail_funded=True, one_time_price=70.0, reset=70.0, **COMMON)
+               intraday_trail_funded=True, intraday_trail_eval=True, one_time_price=70.0, reset=70.0, **COMMON)
 DT_S2F25 = instant(1000, 1000, 0.0, 20, 2000, 1500, 0.20, 1000, 500, 1.0, 222.0, wdays=10, wmin=100.0)
 ROWS = [("DayTraders 50K Static ($50 + $5)", DT_STATIC50, 450.0), ("DayTraders 50K Trail ($70 + $5)", DT_TRAIL50, 1125.0),
         ("DayTraders 25K S2F ($222)", DT_S2F25, 450.0)]

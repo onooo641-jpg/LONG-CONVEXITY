@@ -442,3 +442,11 @@ def test_intraday_trail_raises_the_funded_floor_on_open_profit():
 def test_an_eod_evaluation_ignores_open_losses_when_the_firm_says_so():
     t = seq([1500.0, 900.0]).assign(mae_usd=[0.0, 2100.0], mfe_usd=[1500.0, 900.0])
     assert recycle(t, dataclasses.replace(RULES, realtime_eval=False))["combine_busts"] == 0
+
+
+def test_intraday_trail_raises_the_evaluation_floor_on_open_profit():
+    # Evaluation (limit 2,000): +1,000 closed after +1,900 open. Closed-balance trailing: peak 1,000 -> floor -1,000.
+    # Intraday trailing: peak 1,900 -> floor -100. The next trade closes -1,150 (balance -150): only the intraday floor breaks.
+    t = seq([1000.0, -1150.0]).assign(mae_usd=[0.0, 1150.0], mfe_usd=[1900.0, 0.0])
+    assert recycle(t, dataclasses.replace(RULES, intraday_trail_eval=True))["combine_busts"] == 1
+    assert recycle(t, RULES)["combine_busts"] == 0

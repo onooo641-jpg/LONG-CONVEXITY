@@ -216,3 +216,21 @@ So all are on the **real-time** model. DayTraders allows bots and accepts Malays
 | **25K S2F $222** | none | MLL $1,000 EOD trailing, stops at start; no DLL; 20 micros; 10 QDays ≥ $100; 20% consistency; cycle targets $2,000 / $1,500 / $1,000; max $1,000/request; 100% | `instant(...)`, risk $450 |
 
 Same bar as every stage. Script: `scripts/prop_search2_d_20261126.py` → `docs/jx_runs/prop_search2_d_20261126.txt`.
+
+### Stage D results (`uv run python -m scripts.prop_search2_d_20261126`, re-run identical)
+**Mechanical fix first.** The engine trailed an *evaluation's* floor on closed balances only. DayTraders' Trail evaluation trails
+intraday, so a flag `intraday_trail_eval` was added to `backtest/recycle.py`:
+- it defaults to off, so no existing figure changes;
+- it has a new test, `tests/test_recycle.py::test_intraday_trail_raises_the_evaluation_floor_on_open_profit`;
+- the full suite passes.
+
+Before the fix, DayTraders 50K Trail printed QUALIFIES ($45,290, coin flip $9,420, dip −$3,745). That was an artefact of the
+missing evaluation trail.
+
+| Product | Risk | Real | Coin flip | Dip | Verdict |
+|---|---|---|---|---|---|
+| DayTraders 50K Static ($55) | $450 | $18,878 | $2,439 (70%) | −$2,215 | fails (coin flip) |
+| DayTraders 50K Trail ($75) | $1,125 | $41,145 | $5,855 (71%) | −$7,435 | fails (dip) |
+| DayTraders 25K S2F ($222) | $450 | $13,130 | −$6,640 | −$5,658 | fails |
+
+**Stage D: 0 of 3.**

@@ -223,6 +223,8 @@ class XFARules:
     #: Funded floor trails the intra-trade equity high (``mfe_usd``), not only
     #: the closing balance -- LucidDaily funded per third-party summaries.
     intraday_trail_funded: bool = False
+    #: Evaluation floor trails the intra-trade equity high as well (intraday-trailing evaluations, e.g. DayTraders Trail).
+    intraday_trail_eval: bool = False
 
     monthly: float = 49.0
     reset: float = 49.0
@@ -444,7 +446,7 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
 
         account.balance += day
         account.peak = max(account.peak, account.balance)
-        if funded and rules.intraday_trail_funded and not account.paid_out:
+        if ((funded and rules.intraday_trail_funded) or (not funded and rules.intraday_trail_eval)) and not account.paid_out:
             account.peak = max(account.peak, open_high)
         if breached_open:
             # Liquidated at the floor while the trade was open.
