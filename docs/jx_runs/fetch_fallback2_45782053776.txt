@@ -1,0 +1,4 @@
+=== ubatchc2
+  funding events BTCUSDT: 7488
+  funding events ETHUSDT: 7488
+  wrote batchc_funding8h.parquet: 14976 rows
