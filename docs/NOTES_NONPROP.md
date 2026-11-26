@@ -289,3 +289,10 @@ evaluation is not an approval). The #371 paper run finishes on its own; its verd
 ## 2026-11-26 — clarification from Jx: no-approval rule is forward-looking
 The rule applies to new ideas only. #364 (CoW solving) and #371 (UniswapX quoting, Arbitrum) are **parked, not closed**: both showed
 measured profit potential for approved newcomers; applying is Jx's decision. Application draft: `docs/UNISWAPX_QUOTER_APPLICATION_DRAFT.md`.
+
+## 2026-11-26 — quality gate for every future batch (Jx: "don't do it sloppily just because you need to find ideas")
+Batch C contained filler (weekend fades, ETF-hour and options-expiry patterns: no forced or paid counterparty). From now on an idea enters
+a batch only if its pre-registration states, before data: (1) a named counterparty FORCED or PAID to give up value; (2) why it persists for
+a small player; (3) a back-of-envelope ≥ $10K/yr on $15K; (4) ≥ ~100 events/yr; (5) execution realism checkable and verified on an
+independent venue before a pass counts; (6) a genuine out-of-sample. Batches aim for 10 but are never padded. Model to copy: #389/#397
+(forced liquidations → price priority guarantees fills → thousands of events → out-of-sample on 4 venues).
