@@ -1,0 +1,36 @@
+=== udln2
+  offset 0: 2000 orders, oldest 2026-11-24 14:45:31
+  offset 25000: 2000 orders, oldest 2026-11-07 18:55:25
+  offset 50000: 2000 orders, oldest 2026-10-21 19:26:47
+  offset 75000: 2000 orders, oldest 2026-10-11 17:07:20
+  offset 100000: 2000 orders, oldest 2026-10-03 19:54:19
+  offset 125000: 2000 orders, oldest 2026-09-27 11:35:15
+  offset 150000: 2000 orders, oldest 2026-09-21 06:12:47
+  offset 175000: 2000 orders, oldest 2026-09-14 17:02:49
+  offset 200000: 2000 orders, oldest 2026-09-08 18:29:40
+  offset 225000: 2000 orders, oldest 2026-09-02 23:39:51
+  offset 250000: 2000 orders, oldest 2026-08-27 11:30:31
+  offset 275000: 2000 orders, oldest 2026-08-20 22:31:59
+  offset 300000: 2000 orders, oldest 2026-08-12 16:04:11
+  offset 325000: 2000 orders, oldest 2026-08-04 18:30:34
+  offset 350000: 2000 orders, oldest 2026-07-27 03:08:44
+  offset 375000: 2000 orders, oldest 2026-07-16 08:47:53
+  offset 400000: 2000 orders, oldest 2026-07-07 09:59:59
+  offset 425000: 2000 orders, oldest 2026-06-29 18:20:45
+  offset 450000: 2000 orders, oldest 2026-06-20 16:41:54
+  offset 475000: 2000 orders, oldest 2026-06-12 10:58:58
+  offset 500000: 2000 orders, oldest 2026-06-04 09:34:31
+  offset 525000: 2000 orders, oldest 2026-05-28 07:10:53
+  offset 550000: 2000 orders, oldest 2026-05-21 01:56:13
+  offset 575000: 2000 orders, oldest 2026-05-14 16:41:38
+  offset 600000: 2000 orders, oldest 2026-05-08 11:59:13
+  offset 625000: 2000 orders, oldest 2026-05-02 08:08:44
+  offset 650000: 2000 orders, oldest 2026-04-26 08:25:16
+  offset 675000: 2000 orders, oldest 2026-04-21 07:25:47
+  offset 700000: 2000 orders, oldest 2026-04-16 03:19:43
+  offset 725000: 2000 orders, oldest 2026-04-08 07:12:11
+  offset 750000: 2000 orders, oldest 2026-03-29 17:20:07
+  offset 775000: 2000 orders, oldest 2026-03-20 00:15:59
+  offset 800000: 2000 orders, oldest 2026-03-12 16:42:25
+  sampled orders: 66000
+  wrote solvers_dln_prices.parquet: 7140 rows
