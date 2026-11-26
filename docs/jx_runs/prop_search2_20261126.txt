@@ -1,0 +1,16 @@
+Benchmark Topstep 50K Standard (real-time model, bot): real $35,124, dip $-4,058
+Bar: real >= $17,562, coin flip >= $5,000, dip >= $-6,088
+
+  TTP Instant 50K $299 [sens]                                    | rt: real $  47,796 flip $  16,820 (91%) dip $  -7,460 fails | eod: real $  58,276 flip $  32,076 (98%) dip $  -4,485 QUALIFIES
+  TTP Instant 50K $499 [sens]                                    | rt: real $  28,596 flip $ -16,318 (18%) dip $ -15,460 fails | eod: real $  43,076 flip $   8,750 (76%) dip $ -11,214 fails
+  TTP Prime 100K ($189)                                          | rt: real $  12,675 flip $ -28,329 (2%) dip $ -15,120 fails | eod: real $  30,418 flip $  -3,408 (40%) dip $ -12,474 fails
+  TTP Futures Prime 150K ($289)                                  | rt: real $  17,339 flip $ -44,310 (2%) dip $ -23,120 fails | eod: real $  43,662 flip $  -6,562 (38%) dip $ -19,074 fails
+  LucidDirect 50K $299 [sens]                                    | rt: real $  34,290 flip $   4,339 (68%) dip $  -8,061 fails | eod: real $  42,064 flip $  17,660 (96%) dip $  -5,669 QUALIFIES
+  LucidDirect 50K $499 [sens]                                    | rt: real $  16,290 flip $ -25,243 (6%) dip $ -15,861 fails | eod: real $  29,264 flip $  -2,806 (40%) dip $ -11,869 fails
+  Tradeify Select Flex 50K                                       | rt: real $  16,763 flip $  -7,291 (17%) dip $  -7,736 fails | eod: real $  32,900 flip $  11,110 (84%) dip $  -7,261 fails
+  FTMO Futures Growth 50K                                        | rt: real $  10,602 flip $ -16,302 (4%) dip $ -13,960 fails | eod: real $  34,236 flip $   1,906 (56%) dip $  -9,675 fails
+  FTMO Futures Pro 50K                                           | rt: real $  18,905 flip $  -6,263 (20%) dip $  -9,697 fails | eod: real $  27,428 flip $   1,810 (59%) dip $  -9,181 fails
+  TFD Static Core                                                | rt: real $  12,245 flip $  -3,997 (24%) dip $  -3,662 fails | eod: real $  10,680 flip $  -1,163 (38%) dip $  -3,226 fails
+  TFD Static Pro                                                 | rt: real $  24,355 flip $     352 (52%) dip $  -3,782 fails | eod: real $  20,248 flip $   3,274 (71%) dip $  -3,667 fails
+  Blueberry Ascent 50K                                           | rt: real $  11,585 flip $ -14,638 (6%) dip $ -10,075 fails | eod: real $  23,397 flip $  -4,016 (37%) dip $ -10,982 fails
+  FundedNext Rapid Pro 50K                                       | rt: real $     642 flip $ -18,937 (0%) dip $  -8,959 fails | eod: real $  14,482 flip $    -608 (46%) dip $  -7,040 fails

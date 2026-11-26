@@ -48,8 +48,11 @@ def sol_epochs():
             if bt:
                 rows.append([e, e * 432000 + k, int(bt)])
                 break
-            time.sleep(0.1)
-        time.sleep(0.15)
+            time.sleep(0.5)
+        time.sleep(1.0)
+        if e % 25 == 0:  # checkpoint
+            pd.DataFrame(rows, columns=["epoch", "slot", "t"]).astype(int).sort_values("epoch").to_parquet(out)
+            print(f"  solana epoch {e}/{cur}, have {len(rows)}", flush=True)
     df = pd.DataFrame(rows, columns=["epoch", "slot", "t"]).astype(int).sort_values("epoch")
     df.to_parquet(out)
     print(f"  solana epochs {len(df)} ({e if cur else 0} current)", flush=True)
