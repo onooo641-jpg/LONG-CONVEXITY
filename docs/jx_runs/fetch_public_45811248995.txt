@@ -1,0 +1,10 @@
+=== ubatchh2
+  archive symbols 1080, USDT candidates 878
+  listed before 2023 (2022-12 file present): 110
+  batchh2_unseen_1h.parquet: 110 symbols, 3527969 rows (149s)
+  wrote batchh2_unseen_1h.parquet: 3527969 rows
+  batchh2_unseen_funding.parquet: 110 symbols, 467466 rows (256s)
+  wrote batchh2_unseen_funding.parquet: 467466 rows
+  hyperliquid 1h: 55 coins, 270559 rows
+  wrote batchh2_hl_1h.parquet: 270559 rows
+=== ubatchh2 done in 326s  ok 0 fail 0
