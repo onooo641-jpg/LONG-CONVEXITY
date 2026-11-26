@@ -1,0 +1,88 @@
+=== ubatcha
+  DVOL BTC: 2076 days
+  DVOL ETH: 2076 days
+  derive terms 200 164627 chars https://www.derive.xyz/terms-of-use
+  derive terms 404 0 chars https://docs.derive.xyz/docs/terms-of-use
+  derive terms 404 0 chars https://www.derive.xyz/terms
+  dydx probe 200 https://indexer.dydx.trade/v4/historicalTradingRewardAggregations/dydx1qqqqqqqqqqqqqqqqqqq
+  dydx probe 200 https://indexer.dydx.trade/v4/perpetualMarkets
+  dydx probe 200 https://api.llama.fi/summary/fees/dydx-v4?dataType=dailyFees
+  dydx probe 402 https://api.llama.fi/summary/derivatives/dydx-v4
+  dydx probe 200 https://api.llama.fi/summary/fees/dydx?dataType=dailyFees
+  wrote batcha_raw.json: 194262 bytes
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  rates 2024-01-01: rpc https://eth.blockscout.com/api/eth-rpc, last [{'day': '2024-01-01', 'token': 'weETH', 'block': 18915996, 'rate': 1.0279040594984685}, {'day': '2024-01-01', 'token': 'sUSDe', 'block': 18915996, 'rate': 1.0}, {'day': '2024-01-01', 'token': 'pufETH', 'block': 18915996, 'rate': None}, {'day': '2024-01-01', 'token': 'rsETH', 'block': 18915996, 'rate': 1.0016983291349968}]
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 301 https://1rpc.io/eth
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1704326340&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1704412740&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1704499140&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1704585540&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1704671940&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1704758340&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1704844740&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1704931140&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1705017540&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1705103940&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1705190340&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1705276740&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1705363140&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1705449540&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1705535940&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1705622340&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1705708740&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1705795140&closest=before
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1706054340&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1706140740&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1706227140&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1706313540&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1706399940&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1706486340&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1706572740&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1706659140&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1706745540&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1706831940&closest=before
+  rates 2024-02-01: rpc https://eth.blockscout.com/api/eth-rpc, last [{'day': '2024-01-22', 'token': 'weETH', 'block': 19065665, 'rate': 1.0294929850423982}, {'day': '2024-01-22', 'token': 'sUSDe', 'block': 19065665, 'rate': 1.0000111724506238}, {'day': '2024-01-22', 'token': 'pufETH', 'block': 19065665, 'rate': None}, {'day': '2024-01-22', 'token': 'rsETH', 'block': 19065665, 'rate': 1.004330339202283}]
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1706918340&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1707004740&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1707091140&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1707177540&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1707263940&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1707350340&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1707436740&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1707523140&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1707609540&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1707695940&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1707782340&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1707868740&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1707955140&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1708041540&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1708127940&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1708214340&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1708300740&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1708387140&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1708473540&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1708559940&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1708646340&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1708732740&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1708819140&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1708905540&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1708991940&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1709078340&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1709164740&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1709251140&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1709337540&closest=before
+  rates 2024-03-01: rpc https://eth.blockscout.com/api/eth-rpc, last [{'day': '2024-01-22', 'token': 'weETH', 'block': 19065665, 'rate': 1.0294929850423982}, {'day': '2024-01-22', 'token': 'sUSDe', 'block': 19065665, 'rate': 1.0000111724506238}, {'day': '2024-01-22', 'token': 'pufETH', 'block': 19065665, 'rate': None}, {'day': '2024-01-22', 'token': 'rsETH', 'block': 19065665, 'rate': 1.004330339202283}]
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1709596740&closest=before
+  FAIL 429 https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp=1709683140&closest=before
+  wrote batcha_rates.parquet: 24 rows
