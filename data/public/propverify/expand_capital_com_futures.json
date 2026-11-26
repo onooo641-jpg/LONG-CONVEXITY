@@ -1,0 +1,1 @@
+{"url": "https://iqcapital.com/futures", "error": "Page.goto: net::ERR_CONNECTION_CLOSED at https://iqcapital.com/futures\nCall log:\n  - navigating to \"https://iqcapital.com/futures\", waiting until \"networkidle\"\n"}
