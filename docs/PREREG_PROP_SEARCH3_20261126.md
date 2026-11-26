@@ -179,3 +179,22 @@ New qualifiers, conditional:
 3. **DayTraders 100K / 150K Static**, if the checkout price is ≤ $90 / $93 (unknown).
 
 Options outside the registered bar: Topstep 100K/150K Static (size-scaled reading), City Traders Imperium (needs an MT5 bot port).
+
+## Part 2, overnight (registered 2026-11-26, before running; Jx answers prices tomorrow)
+Bar, models and engine as in part 1.
+1. **Money needed to start** for each new qualifier and option, using the audit's method (`starts()` in
+   `scripts/audit_pre_live_20261126.py`): a fresh chain started each month 2016-01..2025-10 (118 starts). Reported per product: the
+   median, 1-in-10 and worst cash out of pocket; the first payout's amount and days; the 12-month net median and the share of starts
+   still losing. Products:
+   - LucidFlex 50K DLL ON on ES;
+   - FFN Standard MAX 50K / 100K / 150K at the promo prices with the activation waived;
+   - DayTraders 100K / 150K Static at their break-even prices ($90 / $93), as placeholders;
+   - Topstep 150K Static Consistency (risk 0.45 × MLL, option);
+   - LucidFlex 50K DLL ON on NQ (reference).
+2. **ES and YM on the new firms:** the same single-account test as (A1) for FFN 50K (promo), DayTraders 100K / 150K Static
+   ($90 / $93) and Topstep 150K Static Consistency.
+3. **The $3K Challenge break-even price** (bisection, as in E).
+4. **Prop search 2 re-run on the corrected engine** (audit addendum 3): `prop_search2_20261126`, `_c2_`, `_d_`. Outputs are saved as
+   `*_engine3.txt` so the originals stay as the record of what was reported at the time.
+
+Script: `scripts/prop_search3_p2_20261126.py` → `docs/jx_runs/prop_search3_p2_20261126.txt` (re-run once; it must be identical).
