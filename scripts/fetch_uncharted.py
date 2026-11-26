@@ -1473,6 +1473,44 @@ def job_udln():
     print(f"  wrote solvers_dln_orders.json.gz: {(OUT / 'solvers_dln_orders.json.gz').stat().st_size} bytes", flush=True)
 
 
+def job_udln2():
+    """#417 addendum: sampled blocks of DLN orders at evenly spaced offsets back to 2024 + daily prices of the major tokens."""
+    import gzip
+    host = "https://dln-api.debridge.finance"
+    body = {"take": 100, "orderStates": ["Fulfilled", "SentUnlock", "ClaimedUnlock"], "externalCallStates": ["NoExtCall"]}
+    stop = int(pd.Timestamp("2024-01-01", tz="UTC").timestamp())
+    out, off, dl = [], 0, time.time() + 170 * 60
+    while time.time() < dl:
+        blk = []
+        for k in range(20):
+            d = get(host + "/api/Orders/filteredList", dict(body, skip=off + 100 * k), tries=3, timeout=90) or {}
+            lst = d.get("orders") or []
+            if not lst:
+                break
+            blk += lst
+            time.sleep(0.25)
+        if not blk:
+            print(f"  offset {off}: empty -> end", flush=True)
+            break
+        for x in blk:
+            x["_offset"] = off
+        out += blk
+        oldest = min(int(x.get("creationTimestamp") or 0) for x in blk)
+        print(f"  offset {off}: {len(blk)} orders, oldest {pd.Timestamp(oldest, unit='s')}", flush=True)
+        if oldest < stop:
+            break
+        off += 25000
+    OUT.mkdir(parents=True, exist_ok=True)
+    with gzip.open(OUT / "solvers_dln_sample.json.gz", "wt") as f:
+        json.dump(out, f)
+    print(f"  sampled orders: {len(out)}", flush=True)
+    prow = []
+    for g in ("ethereum", "binancecoin", "solana", "bitcoin", "matic-network", "polygon-ecosystem-token", "avalanche-2"):
+        prow += [{"id": g, "t": int(x["timestamp"]), "price": float(x["price"])}
+                 for x in llama_chart(f"coingecko:{g}", int(pd.Timestamp("2023-12-15", tz="UTC").timestamp()))]
+    save("solvers_dln_prices.parquet", pd.DataFrame(prow))
+
+
 def _safe(fn):
     def w():
         try:
@@ -1489,4 +1527,4 @@ def job_uprobe():
 
 
 JOBS = {"uprobe": job_uprobe, "u383vaults": _safe(job_u383vaults), "u384lst": _safe(job_u384lst), "u385hyperp": _safe(job_u385hyperp),
-        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive, "uhip3": _safe(job_uhip3), "uw3b": _safe(job_uw3b), "udistinct": _safe(job_udistinct), "unav": _safe(job_unav), "udln": _safe(job_udln)}
+        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive, "uhip3": _safe(job_uhip3), "uw3b": _safe(job_uw3b), "udistinct": _safe(job_udistinct), "unav": _safe(job_unav), "udln": _safe(job_udln), "udln2": _safe(job_udln2)}

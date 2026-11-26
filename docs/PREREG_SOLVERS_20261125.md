@@ -36,3 +36,12 @@ Data: queue-2 fetch (65 newcomer fillers of 81; 2,237 receipts, 3,978 swapper tr
 Cohort A (first fill 2025-11-15..2026-03-31): 7 newcomers, **median annualised net $798**; cohort B (2026-04-01..07-31): 6 newcomers,
 **median −$5,043** → both < $5,000 → KILL. One cohort-A entrant (0xa0e5…) became the largest Base filler (~$950K/yr on this measure), but
 most entrants lost money after spread and gas; individual figures are noisy (transfer attribution), the medians are the registered measure.
+
+## #417 addendum (2026-11-26, before any income is computed) — data access change, rule unchanged
+Paging the full order history is too slow (60,900 orders = 5 weeks in 2.5 h; back to 2024 ≈ 55 h). The order API has no taker field;
+`unlockAuthorityDst` (set by the taker when filling) is used as the taker identity, and USD values are not given. Changes, decided before
+seeing any income: (1) **sampling** — blocks of 2,000 consecutive orders at evenly spaced offsets back to 2024-01 (`skip` = 0, 25,000,
+50,000, …); per-taker volume and margin are scaled by the sample fraction of each period; a taker's first appearance is its first sampled
+block (resolution ≈ the block spacing, reported). (2) **pricing** — orders whose give and take tokens are both in {USDC, USDT, DAI, ETH/WETH,
+BNB/WBNB, SOL, BTC/WBTC/cbBTC, POL/MATIC, AVAX} are priced from DefiLlama daily prices; other orders are excluded and their share reported.
+Margin per order = give USD − take USD − finalPercentFee − fixFee (USD). Pass/kill bars unchanged. Data job `udln2`.
