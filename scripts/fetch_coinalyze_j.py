@@ -27,7 +27,7 @@ def call(path, key):
                 return json.loads(r.read().decode())
         except urllib.error.HTTPError as e:
             if e.code == 429:
-                time.sleep(int(e.headers.get("Retry-After") or 30) + 1)
+                time.sleep(float(e.headers.get("Retry-After") or 30) + 1)
                 continue
             if e.code in (400, 401, 404):
                 return []
@@ -63,6 +63,8 @@ def main():
     for name, ep, syms, extra in (("cz_oi_binance", "open-interest-history", bn, ""), ("cz_liq_binance", "liquidation-history", bn, "&convert_to_usd=true"),
                                   ("cz_oi_bybit", "open-interest-history", by, ""), ("cz_liq_bybit", "liquidation-history", by, "&convert_to_usd=true"),
                                   ("cz_ohlcv_bybit", "ohlcv-history", by, "")):
+        if (PUB / f"batchj_{name}.parquet").exists():
+            continue  # resumable
         t0 = time.time()
         df = pull(ep, syms, key, extra)
         df.to_parquet(PUB / f"batchj_{name}.parquet")
