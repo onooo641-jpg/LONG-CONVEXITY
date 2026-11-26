@@ -2107,6 +2107,140 @@ def job_ubatchh2():
     save("batchh2_hl_1h.parquet", df)
 
 
+DELIST_RE = re.compile(r"Binance Will Delist (.+?) on (\d{4}-\d{2}-\d{2})")
+
+
+def delist_events():
+    """(announcement ms, delist date, [tokens]) from uncharted_w3_binance_ann.json catalog 161 (spot delistings only)."""
+    d = json.loads((OUT / "uncharted_w3_binance_ann.json").read_text())
+    out = []
+    for x in d.get("161", []):
+        t = str(x.get("title") or "")
+        m = DELIST_RE.search(t)
+        if not m or any(w in t for w in ("Margin", "Futures", "Pair", "Perpetual")):
+            continue
+        toks = [z.strip() for z in re.split(r",| and ", m.group(1)) if z.strip()]
+        toks = [z for z in toks if re.fullmatch(r"[A-Z0-9]{2,12}", z)]
+        if toks:
+            out.append((int(x["releaseDate"]), m.group(2), toks))
+    return out
+
+
+def job_ubatchi():
+    """Batch I (docs/PREREG_BATCH_I_20261126.md): Dukascopy 1-min BID candles (5-min marks 09-22 UTC) for 6 instruments, FRED
+    3-month interbank rates, Solana epoch start times, Binance spot 1h for delisted tokens, Yahoo USO USL UNG UNL EEM EFA IWM."""
+    import io
+    import lzma
+    import struct
+    import zipfile
+    from concurrent.futures import ThreadPoolExecutor
+    t0 = time.time()
+    px = []
+    for sym in ("USO", "USL", "UNG", "UNL", "EEM", "EFA", "IWM"):
+        st, raw = _raw_get(f"https://query1.finance.yahoo.com/v8/finance/chart/{sym}?period1=946684800&period2=1793491200&interval=1d&events=div,split", timeout=40)
+        try:
+            r = json.loads(raw.decode())["chart"]["result"][0]
+            qd = r["indicators"]["quote"][0]
+            adj = (r["indicators"].get("adjclose") or [{}])[0].get("adjclose") or qd["close"]
+            px += [(sym, int(t), c, a) for t, c, a in zip(r["timestamp"], qd["close"], adj) if c is not None and a is not None]
+        except Exception as e:  # noqa: BLE001
+            print(f"  yahoo {sym} FAIL HTTP {st} {e}", flush=True)
+        time.sleep(1)
+    save("batchi_yahoo_1d.parquet", pd.DataFrame(px, columns=["sym", "t", "close", "adj"]))
+    fr = []
+    for cc in ("US", "EZ", "GB", "JP", "AU"):
+        sid = f"IR3TIB01{cc}M156N"
+        try:
+            with urllib.request.urlopen(urllib.request.Request(f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={sid}", headers=UA), timeout=60) as r:
+                f = pd.read_csv(io.StringIO(r.read().decode()))
+            f.columns = ["date", "rate"]
+            f["rate"] = pd.to_numeric(f["rate"], errors="coerce")
+            f["cc"] = cc
+            fr.append(f.dropna())
+        except Exception as e:  # noqa: BLE001
+            print(f"  fred {sid} FAIL {e}", flush=True)
+    if fr:
+        save("batchi_ir3m.parquet", pd.concat(fr, ignore_index=True))
+    # Binance spot 1h for delisted tokens
+    ev = delist_events()
+    tasks = set()
+    for ms, dd, toks in ev:
+        a = pd.Timestamp(ms, unit="ms").to_period("M")
+        b = pd.Timestamp(dd).to_period("M")
+        for tok in toks:
+            for m in pd.period_range(a - 1, b, freq="M"):
+                tasks.add((f"{tok}USDT", str(m)))
+
+    def spot_month(a):
+        sym, mth = a
+        out = []
+        try:
+            with urllib.request.urlopen(urllib.request.Request(f"https://data.binance.vision/data/spot/monthly/klines/{sym}/1h/{sym}-1h-{mth}.zip", headers=UA), timeout=30) as r:
+                z = zipfile.ZipFile(io.BytesIO(r.read()))
+                for ln in z.read(z.namelist()[0]).decode().splitlines():
+                    f = ln.split(",")
+                    if f and f[0].strip().isdigit():
+                        ts = int(f[0])
+                        out.append((sym, (ts // 1000 if ts > 10**14 else ts) // 1000, float(f[4])))
+        except Exception:  # noqa: BLE001
+            pass
+        return out
+    rows = []
+    with ThreadPoolExecutor(8) as ex:
+        for res in ex.map(spot_month, sorted(tasks)):
+            rows += res
+    print(f"  delist announcements {len(ev)}, token-months {len(tasks)}, rows {len(rows)}", flush=True)
+    save("batchi_delist_spot_1h.parquet", pd.DataFrame(rows, columns=["sym", "t", "close"]))
+    # Solana epoch start times
+    info = get("https://api.mainnet-beta.solana.com", body={"jsonrpc": "2.0", "id": 1, "method": "getEpochInfo"}, tries=3, timeout=30) or {}
+    cur = ((info or {}).get("result") or {}).get("epoch") or 0
+    ep = []
+    for e in range(150, int(cur) + 1):
+        if time.time() - t0 > 1.0 * 3600:
+            print("  solana time cap hit", flush=True)
+            break
+        for k in range(0, 40):
+            d = get("https://api.mainnet-beta.solana.com", body={"jsonrpc": "2.0", "id": 1, "method": "getBlockTime", "params": [e * 432000 + k]}, tries=2, timeout=20, pause=1.0)
+            bt = (d or {}).get("result")
+            if bt:
+                ep.append((e, e * 432000 + k, int(bt)))
+                break
+        time.sleep(0.12)
+    print(f"  solana epochs {len(ep)} (current {cur})", flush=True)
+    save("batchi_sol_epochs.parquet", pd.DataFrame(ep, columns=["epoch", "slot", "t"]))
+    # Dukascopy 1-minute candles
+    div = {"EURUSD": 1e5, "GBPUSD": 1e5, "AUDUSD": 1e5, "USDJPY": 1e3, "XAUUSD": 1e3, "XAGUSD": 1e3}
+
+    def day(a):
+        ins, dd = a
+        if time.time() - t0 > 3.3 * 3600:
+            return []
+        st, raw = _raw_get(f"https://datafeed.dukascopy.com/datafeed/{ins}/{dd.year}/{dd.month - 1:02d}/{dd.day:02d}/BID_candles_min_1.bi5", timeout=30)
+        if st != 200 or not raw:
+            return []
+        try:
+            b = lzma.decompress(raw)
+        except Exception:  # noqa: BLE001
+            return []
+        out = []
+        for i in range(0, len(b) - 23, 24):
+            sec, f1, f2, f3, f4, _ = struct.unpack(">IIIIIf", b[i:i + 24])
+            mm = sec // 60
+            if 9 * 60 <= mm < 22 * 60 and (mm + 1) % 5 == 0:
+                out.append((ins, dd.strftime("%Y-%m-%d"), int(sec), f1 / div[ins], f2 / div[ins], f3 / div[ins], f4 / div[ins]))
+        return out
+    days = [d for d in pd.date_range("2012-01-02", "2026-10-31", freq="D") if d.weekday() < 5]
+    for ins in div:
+        rows = []
+        with ThreadPoolExecutor(8) as ex:
+            for res in ex.map(day, [(ins, d) for d in days]):
+                rows += res
+        df = pd.DataFrame(rows, columns=["ins", "day", "sec", "f1", "f2", "f3", "f4"])
+        ok = ((df["f3"] <= df[["f1", "f2"]].min(axis=1)) & (df["f4"] >= df[["f1", "f2"]].max(axis=1))).mean() if len(df) else float("nan")
+        print(f"  dukascopy {ins}: days {df['day'].nunique()}, rows {len(df)}, order check (f3 low, f4 high) {ok:.3f} ({time.time() - t0:.0f}s)", flush=True)
+        save(f"batchi_duka_{ins.lower()}.parquet", df)
+
+
 def job_uverify():
     """Verification V: Binance spot 1h klines for stablecoin/USDT pairs (archive), 2020-01..2026-10."""
     import io
@@ -2149,4 +2283,4 @@ def job_uprobe():
 
 
 JOBS = {"uprobe": job_uprobe, "u383vaults": _safe(job_u383vaults), "u384lst": _safe(job_u384lst), "u385hyperp": _safe(job_u385hyperp),
-        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive, "uhip3": _safe(job_uhip3), "uw3b": _safe(job_uw3b), "udistinct": _safe(job_udistinct), "unav": _safe(job_unav), "udln": _safe(job_udln), "udln2": _safe(job_udln2), "ubatcha": _safe(job_ubatcha), "urates": _safe(job_urates), "ubatchb": _safe(job_ubatchb), "ubatchc": _safe(job_ubatchc), "ubatchc2": _safe(job_ubatchc2), "uverify": _safe(job_uverify), "ubatchd": _safe(job_ubatchd), "ucb442": _safe(job_ucb442), "upendle": _safe(job_upendle), "ubatchf": _safe(job_ubatchf), "ubatchf2": _safe(job_ubatchf2), "ubatchf3": _safe(job_ubatchf3), "ubatchg": _safe(job_ubatchg), "ubatchh": _safe(job_ubatchh), "ubatchh2": _safe(job_ubatchh2)}
+        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive, "uhip3": _safe(job_uhip3), "uw3b": _safe(job_uw3b), "udistinct": _safe(job_udistinct), "unav": _safe(job_unav), "udln": _safe(job_udln), "udln2": _safe(job_udln2), "ubatcha": _safe(job_ubatcha), "urates": _safe(job_urates), "ubatchb": _safe(job_ubatchb), "ubatchc": _safe(job_ubatchc), "ubatchc2": _safe(job_ubatchc2), "uverify": _safe(job_uverify), "ubatchd": _safe(job_ubatchd), "ucb442": _safe(job_ucb442), "upendle": _safe(job_upendle), "ubatchf": _safe(job_ubatchf), "ubatchf2": _safe(job_ubatchf2), "ubatchf3": _safe(job_ubatchf3), "ubatchg": _safe(job_ubatchg), "ubatchh": _safe(job_ubatchh), "ubatchh2": _safe(job_ubatchh2), "ubatchi": _safe(job_ubatchi)}
