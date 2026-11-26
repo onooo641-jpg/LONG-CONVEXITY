@@ -123,3 +123,9 @@ Arbitrum RPCs with plain headers, logs the error when it fails, and each session
 logged transaction hashes. Applies from session 3; verdict rules unchanged. Session-1 interim (not a verdict): 36 orders quoted, all filled
 by their exclusive quoter; a KyberSwap route matched or beat the winning quote on 20 (55.6%), median gap 0.5 bps; exclusivity across 95
 fills: top-1 quoter 62%, top-3 92%, 6 quoters.
+
+### Stage 5 / 5b final (2026-11-26, 36 h on GitHub Actions; `data/uniswapx_paper/uniswapx_paper_summary.txt`)
+153 orders quoted, all filled by their exclusive quoter; a public KyberSwap route matched or beat the winner on **78 (51.0%)**, median gap
+0.4 bps (paper, speed untested). Feed: 242 fills, **1 (0.4%) by a non-exclusive filler**; exclusivity top-1 69%, top-3 92%, 7 quoters.
+**Verdict: outsider route KILL; an approved quoter would be price-competitive.** Jx excluded approval-gated roles on 2026-11-25, so #371 is
+closed (no application).

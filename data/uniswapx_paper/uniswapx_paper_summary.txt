@@ -1,4 +1,4 @@
-UniswapX paper filler summary (Arbitrum) — written 2026-11-26 03:16:24 UTC
+UniswapX paper filler summary (Arbitrum) — written 2026-11-26 03:29:41 UTC
 hours run: 36.00; orders seen: 153; final records: 153 (filled 153); filled orders with a pre-fill quote: 153
 competitive (paper profit > 0 at the winner's price): 78 (51.0%)
 paper profit on competitive orders: $2,121.42 -> annualised $516,190/yr
