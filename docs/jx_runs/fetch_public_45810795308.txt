@@ -1,0 +1,13 @@
+=== ubatchh
+  yahoo TSLA: 4111 rows
+  yahoo NVDA: 6748 rows
+  yahoo MSTR: 6748 rows
+  yahoo COIN: 1395 rows
+  yahoo PLTR: 1529 rows
+  yahoo SMCI: 4930 rows
+  yahoo AMD: 6748 rows
+  yahoo MTUM: 3406 rows
+  yahoo SPY: 6748 rows
+  yahoo ^N225: 6570 rows
+  wrote batchh_yahoo_1d.parquet: 48933 rows
+=== ubatchh done in 13s  ok 0 fail 0
