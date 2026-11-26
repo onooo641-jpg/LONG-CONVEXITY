@@ -1,0 +1,41 @@
+===== Batch J (#488-#492)  docs/PREREG_BATCH_J_20261126.md
+  prices 150 symbols; Binance OI 110 symbols (2020-01-21..2026-11-01); liquidations 109
+
+#### #488 OI-growth crowding (weekly: short top-quintile 7-day OI growth, long bottom quintile)
+  #488 Stage 1 (40 alts 2020-07..2022): n 128, mean -0.718%, t -0.67, win 50%
+  #488 Stage 2 (40 alts 2023..2026-10): n 199, mean 0.384%, t 0.89, win 57%
+  #488 Stage 3 (unseen 110, 2023..2026-10): n 199, mean -0.559%, t -1.12, win 50%
+  VERDICT (#488): KILL
+  $/yr at $22.5K per side (Stage 2): $4,489
+
+#### #489 crowded-funding short (daily funding >= 0.05%/settlement and OI at a 30-day high -> short 7 days vs BTC)
+  #489 Stage 1 (40 alts 2020-07..2022, per day): n 110, mean -2.616%, t -1.64, win 48%
+  #489 Stage 2 (40 alts 2023..2026-10, per day): n 25, mean 1.346%, t 0.37, win 64%
+  #489 Stage 3 (unseen 110 2023..2026-10, per day): n 41, mean 5.305%, t 2.31, win 76%
+  VERDICT (#489): KILL
+  $/yr at $45K, <= 3 open (Stage 2): $-5,767; raw events S2 41
+
+#### #490 aggregate leverage extreme (BTC coin-unit OI Binance+Bybit z >= 2 after a 7-day rally -> short BTC 7 days)
+  #490 Stage 1 (BTC 2020-07..2022): n 21, mean 0.244%, t 0.14, win 67%
+  #490 Stage 2 (BTC 2023..2026-10): n 17, mean 2.277%, t 1.39, win 71%
+  #490 Stage 3 (ETH 2023..2026-10): n 30, mean -1.510%, t -0.88, win 50%
+  VERDICT (#490): FAIL (Stage 2 fails, Stage 3 fails)
+  $/yr at $45K (Stage 2): $4,545
+
+#### #491 OI flush rebound (family 1: OI -20% and price -8% on the day -> long 3 days)
+  #491 Stage 1 (40 alts 2020-07..2022, per day): n 65, mean 3.441%, t 1.79, win 55%
+  #491 Stage 2 (40 alts 2023..2026-10, per day): n 24, mean 3.228%, t 1.58, win 58%
+  #491 Stage 3 (unseen 110 2023..2026-10, per day): n 83, mean -1.849%, t -1.33, win 35%
+  VERDICT (#491): FAIL (Stage 2 fails, Stage 3 fails)
+  $/yr at $45K, <= 3 open (Stage 2): $25,643; raw events S2 82
+
+#### #492 short-squeeze fade (family 1 mirror: shorts liquidated >= 2% of OI value and price +10% -> short 3 days)
+  #492 Stage 1 (40 alts 2020-07..2022, per day): n 29, mean 1.281%, t 0.50, win 59%
+  #492 Stage 2 (40 alts 2023..2026-10, per day): n 172, mean -2.635%, t -1.90, win 54%
+  #492 Stage 3 (unseen 110 2023..2026-10, per day): n 466, mean 0.171%, t 0.15, win 66%
+  VERDICT (#492): FAIL (Stage 2 fails, Stage 3 fails)
+  $/yr at $45K, <= 3 open (Stage 2): $-65,073; raw events S2 251
+
+#### Bybit second-venue check (reported only; Bybit OHLCV/OI/liquidations, all bases, 2023..2026-10)
+  #491 Bybit 2023..2026-10 (per day): n 127, mean -1.279%, t -1.44, win 46%
+  #492 Bybit 2023..2026-10 (per day): n 402, mean 0.983%, t 1.01, win 64%

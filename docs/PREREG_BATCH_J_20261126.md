@@ -47,3 +47,16 @@ early. Stage 3 data are not looked at before Stage 2 is computed: the script pri
 **$/yr.** Computed on the Stage 2 sum at the safe size; for #489, #491 and #492, at most 3 trades open at once.
 
 **Script and output.** Script: `scripts/batch_j_20261126.py`. Output: `docs/jx_runs/batch_j_20261126.txt` (re-run once; it must be identical).
+
+## Results (2026-11-26; `docs/jx_runs/batch_j_20261126.txt`, re-run identical)
+Coinalyze covered 110 of the 150 Binance symbols (most of the missing 40 are delisted), so Stage 3 used 73 of the 110 unseen perps.
+
+| # | Verdict | Stage 1 / Stage 2 / Stage 3 | $/yr at safe size |
+|---|---|---|---|
+| 488 OI-growth crowding | KILL | −0.72% (t −0.67) / +0.38% (t 0.89) / −0.56% | $4.5K (S2, not significant) |
+| 489 crowded-funding short | KILL | −2.62% (t −1.64) / +1.35% (t 0.37) / +5.31% (t 2.31) | −$5.8K |
+| 490 aggregate leverage (BTC; ETH Stage 3) | FAIL | +0.24% / +2.28% (t 1.39) / ETH −1.51% | $4.5K |
+| 491 OI flush rebound (family 1) | FAIL | +3.44% (t 1.79) / +3.23% (t 1.58) / −1.85%; Bybit −1.28% | $25.6K on S2, but does not replicate |
+| 492 short-squeeze fade (family 1) | FAIL | +1.28% / −2.64% / +0.17%; Bybit +0.98% | −$65K |
+
+**Batch J verdict: 0 of 5.** No idea held on both the 40 alts and the unseen perps. That is the same failure #468 showed.

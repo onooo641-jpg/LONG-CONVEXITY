@@ -336,3 +336,6 @@ Recommendation:
 2. Then decide whether Coinalyze needs a key from Jx.
 3. Paid tiers are worth it only if a free pilot shows a new family is plausible.
 4. Liquidation data mostly deepens family 1 (wick/cascade) rather than adding a new family.
+
+## 2026-11-26 — Batch J recorded (0/5); Batch K is the last batch for now
+Jx's free Coinalyze key gave daily OI and liquidations from 2020. The five OI and liquidation ideas all failed to replicate on the unseen perps. #491 (OI flush rebound) made ~$25.6K/yr on the 40 alts but lost on the unseen perps and on Bybit. Batch K (#493–#495) is the last full-effort batch; after it, work moves to finding more prop firms that pass on the corrected model (`docs/AUDIT_PRE_LIVE_20261126.md`: LucidFlex 50K, Topstep 50K Consistency, LucidDaily $85.40).
