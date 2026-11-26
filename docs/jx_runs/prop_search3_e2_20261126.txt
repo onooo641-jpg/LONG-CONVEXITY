@@ -3,3 +3,14 @@ Registered bar: real >= $19,017, coin flip >= $5,000, dip >= $-5,794
   FFN Std MAX 50K, activation $0     risk $  900 | break-even $96 (list $178: needs 46% off)
   FFN Std MAX 50K, activation $120   risk $  900 | break-even $65 (list $178: needs 63% off)
   FFN Std MAX 100K, activation $0    risk $  900 | break-even $44 (list $348: needs 87% off)
+  FFN Std MAX 100K, activation $0    risk $1,620 | break-even $154 (list $348: needs 56% off)
+  FFN Std MAX 100K, activation $120  risk $  900 | break-even $23 (list $348: needs 93% off)
+  FFN Std MAX 100K, activation $120  risk $1,620 | break-even $88 (list $348: needs 75% off)
+  FFN Std MAX 150K, activation $0    risk $  900 | no price works
+  FFN Std MAX 150K, activation $0    risk $2,250 | break-even $149 (list $408: needs 63% off)
+  FFN Std MAX 150K, activation $120  risk $  900 | no price works
+  FFN Std MAX 150K, activation $120  risk $2,250 | break-even $89 (list $408: needs 78% off)
+  DayTraders 100K Static             risk $  675 | break-even $64
+  DayTraders 100K Static             risk $  900 | break-even $90
+  DayTraders 150K Static             risk $  788 | break-even $83
+  DayTraders 150K Static             risk $  900 | break-even $93
