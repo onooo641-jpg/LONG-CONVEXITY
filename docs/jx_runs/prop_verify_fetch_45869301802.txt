@@ -1,0 +1,68 @@
+https://citytradersimperium.com/1-step-challenge/: clicked None, chars 0, tables 0 Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://citytradersimperium.com/1-step-challenge/", waiting until "networkidle"
+
+https://citytradersimperium.com/2-step-challenge/: clicked None, chars 0, tables 0 Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://citytradersimperium.com/2-step-challenge/", waiting until "networkidle"
+
+https://citytradersimperium.com/instant-funding/: clicked None, chars 0, tables 0 Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://citytradersimperium.com/instant-funding/", waiting until "networkidle"
+
+https://citytradersimperium.com/funded-account-payouts/: clicked None, chars 0, tables 0 Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://citytradersimperium.com/funded-account-payouts/", waiting until "networkidle"
+
+https://citytradersimperium.com/ea-trading-rules/: clicked 7, chars 15573, tables 2 
+https://helpcenter.citytradersimperium.com/en/collections/16756313-getting-funded: clicked 1, chars 345, tables 0 
+https://helpcenter.citytradersimperium.com/en/collections/16756321-essential-rules-guidelines: clicked None, chars 0, tables 0 Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://helpcenter.citytradersimperium.com/en/collections/16756321-essential-rules-guidelines", waiting until "networkidle"
+
+https://daytraders.com/pricing: clicked 0, chars 1764, tables 0 
+https://daytraders.com/: clicked 0, chars 7354, tables 0 
+https://helpcenter.citytradersimperium.com/en/articles/12889959-does-cti-allow-ea-trading: clicked None, chars 0, tables 0 Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://helpcenter.citytradersimperium.com/en/articles/12889959-does-cti-allow-ea-trading", waiting until "networkidle"
+
+https://helpcenter.citytradersimperium.com/en/articles/12879278-stop-loss-rule: clicked None, chars 0, tables 0 Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://helpcenter.citytradersimperium.com/en/articles/12879278-stop-loss-rule", waiting until "networkidle"
+
+https://helpcenter.citytradersimperium.com/en/articles/12879492-prohibited-trading-methods: clicked None, chars 0, tables 0 Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://helpcenter.citytradersimperium.com/en/articles/12879492-prohibited-trading-methods", waiting until "networkidle"
+
+https://helpcenter.citytradersimperium.com/en/articles/12879295-copy-trading-policy: clicked None, chars 0, tables 0 Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://helpcenter.citytradersimperium.com/en/articles/12879295-copy-trading-policy", waiting until "networkidle"
+
+https://helpcenter.citytradersimperium.com/en/articles/12879311-ip-vps-vpn-max-number-of-devices-allowed-to-use: clicked None, chars 0, tables 0 Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://helpcenter.citytradersimperium.com/en/articles/12879311-ip-vps-vpn-max-number-of-devices-allowed-to-use", waiting until "networkidle"
+
+https://helpcenter.citytradersimperium.com/en/articles/12878004-1-step-challenge: clicked None, chars 0, tables 0 Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://helpcenter.citytradersimperium.com/en/articles/12878004-1-step-challenge", waiting until "networkidle"
+
+https://helpcenter.citytradersimperium.com/en/articles/12878902-what-happens-when-i-pass: clicked None, chars 0, tables 0 Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://helpcenter.citytradersimperium.com/en/articles/12878902-what-happens-when-i-pass", waiting until "networkidle"
+
+https://helpcenter.citytradersimperium.com/en/articles/12878927-completing-your-kyc: clicked None, chars 0, tables 0 Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://helpcenter.citytradersimperium.com/en/articles/12878927-completing-your-kyc", waiting until "networkidle"
+
+https://helpcenter.citytradersimperium.com/en/articles/12878033-cti-vip-program-rewarding-your-growth: clicked None, chars 0, tables 0 Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://helpcenter.citytradersimperium.com/en/articles/12878033-cti-vip-program-rewarding-your-growth", waiting until "networkidle"
+
+https://helpcenter.citytradersimperium.com/en/articles/12879000-how-do-i-request-a-payout: clicked None, chars 0, tables 0 Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://helpcenter.citytradersimperium.com/en/articles/12879000-how-do-i-request-a-payout", waiting until "networkidle"
+
+https://helpcenter.citytradersimperium.com/en/articles/12879147-adding-banking-crypto-details: clicked None, chars 0, tables 0 Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://helpcenter.citytradersimperium.com/en/articles/12879147-adding-banking-crypto-details", waiting until "networkidle"
+
