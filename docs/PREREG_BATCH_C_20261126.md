@@ -62,3 +62,10 @@ wind-down). A pass counts only if the events were tradeable on an independent ve
 (89 events, +5.47%, 100% profitable, $13,308/yr). **Verification V:** 85% of verifiable event days "confirmed" — but every confirmed day is
 pufETH on a pool trading $0.0001–$2 a day (no executable size), and none of the liquid tokens' (weETH, sUSDe, rsETH) discounts appear on
 their DEX pools. **Not counted: the CoinGecko discounts are not tradeable.**
+
+### Verification V results (2026-11-26) — `uv run python -m scripts.verify_v_20261126` → `docs/jx_runs/verify_v_20261126.txt` (re-run identical)
+Mechanical fix before the verdict: CoinGecko points are seconds off the hour, so event times are floored to the hour to match Binance bars.
+- **#429 — DOWNGRADED (data artefact):** 219 Stage 2 events, of which 200 are BUSD after Binance's BUSDUSDT pair ended (2023-12-15: the
+  CoinGecko price comes from dead venues, down to $0.14). 17 events verifiable on Binance spot; **2 confirmed (12%)**, below the 70% rule.
+- **#430 — DOWNGRADED (not confirmed):** 19 events, none verifiable on an independent venue (DEX-only tokens or no Binance pair then).
+- **#421 — not counted** (see above: confirmations only on a pufETH pool trading <$2/day).

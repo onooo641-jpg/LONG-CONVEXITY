@@ -52,6 +52,8 @@ def verify_stables(label, ids, thr):
     for _, e in ev.iterrows():
         sym = BN.get(e["id"])
         k = S.get(sym)
+        e = e.copy()
+        e["ts"] = e["ts"].floor("h")  # CoinGecko points are a few seconds off the hour; Binance bars start on the hour
         if k is None or e["ts"] not in k.index:
             out.append({**e, "status": "unverifiable"})
             continue
