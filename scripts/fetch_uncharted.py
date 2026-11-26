@@ -1511,9 +1511,16 @@ def job_udln2():
     save("solvers_dln_prices.parquet", pd.DataFrame(prow))
 
 
-def job_ubatcha():
+def job_urates():
+    """#421 re-fetch: daily on-chain LST rates only."""
+    job_ubatcha(rates_only=True)
+
+
+def job_ubatcha(rates_only=False):
     """Batch A data: #419 Deribit DVOL + Derive terms; #420 dYdX reward/fee probes; #421 on-chain LST rates (archive eth_call)."""
     out = {}
+    if rates_only:
+        return _ubatcha_rates()
     # 419
     for cur in ("BTC", "ETH"):
         rows, t = [], int(pd.Timestamp("2021-03-01", tz="UTC").timestamp() * 1000)
@@ -1543,6 +1550,10 @@ def job_ubatcha():
         out["dydx_probe"][u] = {"status": st, "head": (json.dumps(d)[:2000] if d is not None else None)}
         print(f"  dydx probe {st} {u[:90]}", flush=True)
     save("batcha_raw.json", out)
+    _ubatcha_rates()
+
+
+def _ubatcha_rates():
     # 421 on-chain rates
     calls = {"weETH": ("0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee", "0x679aefce"),
              "sUSDe": ("0x9d39a5de30e57443bff2a8307a4256c8797a3497", "0x07a2d13a" + hex(10**18)[2:].rjust(64, "0")),
@@ -1550,12 +1561,12 @@ def job_ubatcha():
              "rsETH": ("0x349a73444b1a310bae67ef67973022020d70020d", "0xb4b46434")}
     rpcs = ["https://eth.blockscout.com/api/eth-rpc", "https://eth.drpc.org", "https://ethereum-rpc.publicnode.com", "https://eth.llamarpc.com",
             "https://rpc.mevblocker.io", "https://eth.merkle.io", "https://1rpc.io/eth"]
-    rows, ok_rpc, dl = [], None, time.time() + 90 * 60
+    rows, ok_rpc, dl = [], None, time.time() + 150 * 60
     day = pd.Timestamp("2024-01-01", tz="UTC")
     while day < pd.Timestamp.now(tz="UTC") and time.time() < dl:
         ts = int((day + pd.Timedelta(hours=23, minutes=59)).timestamp())
-        bj = get(f"https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp={ts}&closest=before", tries=2) or {}
-        blk = (bj.get("result") or {}).get("blockNumber") if isinstance(bj.get("result"), dict) else None
+        # estimated block from a known anchor (block 18,915,996 = 2024-01-01 23:59 UTC; 12-second slots): no per-day lookup
+        blk = 18915996 + int((ts - int(pd.Timestamp("2024-01-01 23:59", tz="UTC").timestamp())) / 12)
         if blk:
             for name, (to, data) in calls.items():
                 val = None
@@ -1587,4 +1598,4 @@ def job_uprobe():
 
 
 JOBS = {"uprobe": job_uprobe, "u383vaults": _safe(job_u383vaults), "u384lst": _safe(job_u384lst), "u385hyperp": _safe(job_u385hyperp),
-        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive, "uhip3": _safe(job_uhip3), "uw3b": _safe(job_uw3b), "udistinct": _safe(job_udistinct), "unav": _safe(job_unav), "udln": _safe(job_udln), "udln2": _safe(job_udln2), "ubatcha": _safe(job_ubatcha)}
+        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive, "uhip3": _safe(job_uhip3), "uw3b": _safe(job_uw3b), "udistinct": _safe(job_udistinct), "unav": _safe(job_unav), "udln": _safe(job_udln), "udln2": _safe(job_udln2), "ubatcha": _safe(job_ubatcha), "urates": _safe(job_urates)}

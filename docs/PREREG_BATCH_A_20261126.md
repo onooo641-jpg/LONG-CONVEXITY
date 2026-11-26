@@ -29,3 +29,13 @@ yield. **Stage 1 (2024):** KILL if < 4 events or < $3,000/yr. **Stage 2 (2025-01
 profitable. (This bar is below $10K: kept because the mechanism is near-riskless if real; reported as "useful, not prop-like" if it passes.)
 
 **Commands.** `uv run python -m scripts.batch_a_20261126` → `docs/jx_runs/batch_a_20261126.txt` (re-run identical). Data job `ubatcha`.
+
+---
+## Results (2026-11-26) — `uv run python -m scripts.batch_a_20261126` → `docs/jx_runs/batch_a_20261126.txt`
+- **#419 crypto VRP — KILL.** DVOL 2,076 days per coin; mean IV BTC 60%, ETH 74%. Stage 1 (2021-04..2023-12): 144 weeks, +0.19%/week,
+  t 0.75, **7.5%/yr** (< 15%), worst drawdown −24.6%. Context Stage 2: −17.0%/yr, drawdown −47.1%. Derive's terms do not name Malaysia.
+- **#420 dYdX reward farming — NOT TESTABLE (Stage 0):** the indexer gives trading rewards per address only (no protocol-wide totals);
+  DefiLlama gives fees but derivatives volume is now paid (HTTP 402).
+- **#421 — the printed "PASS" is INVALID:** the rate fetch stalled after 6 dates (Blockscout block-by-time lookups), so the on-chain rate
+  was carried forward from January 2024 for two years and the Stage 2 "+68% mean" is an artefact. Re-fetch (estimated block numbers, no
+  per-day lookup) and re-run; rule unchanged.

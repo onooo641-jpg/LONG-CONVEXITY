@@ -1,0 +1,26 @@
+===== Batch A #419-#421
+#### #419 crypto variance risk premium: weekly short ATM straddles (no hedge), BTC + ETH
+  Derive terms https://www.derive.xyz/terms-of-use: HTTP 200, 164627 chars, 'Malaysia' found: False
+  Derive terms https://docs.derive.xyz/docs/terms-of-use: HTTP 404, 0 chars, 'Malaysia' found: False
+  Derive terms https://www.derive.xyz/terms: HTTP 404, 0 chars, 'Malaysia' found: False
+  BTC: weeks 291, mean IV 60%
+  ETH: weeks 291, mean IV 74%
+  Stage 1 (2021-04..2023-12): weeks 144, mean weekly 0.19%, t 0.75, annualised 7.5%, worst drawdown -24.6%, worst week -11.7%
+  STAGE 1 VERDICT: KILL
+  Stage 2 (out-of-sample 2024-01..2026-10): weeks 147, mean weekly -0.29%, t -0.95, annualised -17.0%, worst drawdown -47.1%, worst week -19.6%
+  STAGE 2 VERDICT: not judged (Stage 1 killed) — context
+
+#### #420 dYdX reward farming (Stage 0 probe)
+  200 https://indexer.dydx.trade/v4/historicalTradingRewardAggregations/dydx1qqqqqqqqqqqqqqqqqqqqqqqqqqqqq | {"rewards": []}
+  200 https://indexer.dydx.trade/v4/perpetualMarkets | {"markets": {"BTC-USD": {"clobPairId": "0", "ticker": "BTC-USD", "status": "ACTIVE", "oraclePrice": "60598.75049", "priceChange24H": "1176.59929", "volume24H": "13819801.0742", "trades24H": 2658, "nex
+  200 https://api.llama.fi/summary/fees/dydx-v4?dataType=dailyFees | {"id": "4067", "name": "dYdX V4", "address": "dydx:ibc/831F0B1BBB1D08A2B75311892876D71565478C532967545476DF4C2D7492E48C", "symbol": "dYdX", "url": "https://dydx.trade", "referralUrl": "https://dydx.tr
+  402 https://api.llama.fi/summary/derivatives/dydx-v4 | 
+  200 https://api.llama.fi/summary/fees/dydx?dataType=dailyFees | {"id": "parent#dydx", "name": "dYdX", "url": "https://dydx.trade", "referralUrl": "https://dydx.trade?ref=LoneHull0UN", "description": "The most powerful open trading platform for crypto assets. Margi
+  STAGE 0: see probe; the protocol-wide reward and fee totals are needed for the rule
+
+#### #421 withdrawal-queue discounts vs on-chain exchange rates
+  on-chain rate rows: 20 ({'pufETH': 2, 'rsETH': 6, 'sUSDe': 6, 'weETH': 6})
+  Stage 1 (2024): events 49 ({'pufETH': 28, 'rsETH': 16, 'weETH': 5}), mean 1.73%, median discount 1.26%, profitable 100%, $4,238/yr
+  STAGE 1 VERDICT: survives (kill-only)
+  Stage 2 (out-of-sample 2025-01..2026-10): events 5 ({'rsETH': 5}), mean 68.41%, median discount 2.41%, profitable 100%, $9,345/yr
+  STAGE 2 VERDICT: PASS
