@@ -13,19 +13,19 @@ from playwright.sync_api import sync_playwright
 
 OUT = Path(__file__).resolve().parent.parent / "data" / "public" / "propverify"
 PAGES = [
-    # Stage C3 (prop search 2): Funded Futures Network rules articles (index is crawled for article links), BluSky, IQ Capital, Finotive
-    "https://app.fundedfuturesnetwork.com/nexus/rules",
-    "https://fundedfuturesnetwork.com/accounts",
-    "https://fundedfuturesnetwork.com/faq",
-    "https://bluskytrading.com/",
-    "https://help.blusky.pro/",
-    "https://blusky.pro/",
-    "https://iqcapital.com/",
-    "https://iqcapital.com/futures",
-    "https://finotivefutures.com/",
-    "https://help.finotivefutures.com/",
+    # Prop search 3, overnight: City Traders Imperium plan tables (size tabs) + help centre; DayTraders pricing (plan and size tabs)
+    "https://citytradersimperium.com/1-step-challenge/",
+    "https://citytradersimperium.com/2-step-challenge/",
+    "https://citytradersimperium.com/instant-funding/",
+    "https://citytradersimperium.com/funded-account-payouts/",
+    "https://citytradersimperium.com/ea-trading-rules/",
+    "https://helpcenter.citytradersimperium.com/en/collections/16756313-getting-funded",
+    "https://helpcenter.citytradersimperium.com/en/collections/16756321-essential-rules-guidelines",
+    "https://daytraders.com/pricing",
+    "https://daytraders.com/",
 ]
-CRAWL = ("app.fundedfuturesnetwork.com/nexus/rules/article-", "help.blusky.pro/", "help.finotivefutures.com/")
+CRAWL = ("helpcenter.citytradersimperium.com/en/articles/",)
+TAB = re.compile(r"^\$?\s?(2\.5|5|10|25|50|75|100|150|200|250|300)\s?K$|^(Static|Trail|EOD|S2F|S2L|Instant|Live|1-Step|2-Step)$", re.I)
 
 
 def main() -> None:
@@ -59,6 +59,22 @@ def main() -> None:
                 rec["clicked"] = n
                 rec["text"] = pg.inner_text("body")[:200000]
                 rec["html_tables"] = [t.inner_text()[:20000] for t in pg.query_selector_all("table")][:60]
+                states = []
+                for _ in range(2):  # click plan/size tabs and capture each state's text
+                    for el in pg.query_selector_all("button, [role='tab'], a, li, span, div")[:3000]:
+                        try:
+                            txt = (el.inner_text() or "").strip()
+                        except Exception:  # noqa: BLE001
+                            continue
+                        if not TAB.match(txt) or len(states) >= 60:
+                            continue
+                        try:
+                            el.click(timeout=1000)
+                            pg.wait_for_timeout(500)
+                            states.append({"tab": txt, "text": pg.inner_text("body")[:30000]})
+                        except Exception:  # noqa: BLE001
+                            pass
+                rec["tab_states"] = states
                 for a in pg.query_selector_all("a[href]"):
                     h = (a.get_attribute("href") or "").split("#")[0]
                     if h.startswith("/"):
