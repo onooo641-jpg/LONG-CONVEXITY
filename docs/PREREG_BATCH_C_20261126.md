@@ -69,3 +69,7 @@ Mechanical fix before the verdict: CoinGecko points are seconds off the hour, so
   CoinGecko price comes from dead venues, down to $0.14). 17 events verifiable on Binance spot; **2 confirmed (12%)**, below the 70% rule.
 - **#430 — DOWNGRADED (not confirmed):** 19 events, none verifiable on an independent venue (DEX-only tokens or no Binance pair then).
 - **#421 — not counted** (see above: confirmations only on a pufETH pool trading <$2/day).
+
+**Mechanical fix (2026-11-26, before #440's data arrived):** #439–#441 read hourly closes by bar *open* time, so every window sat 1 h late.
+`_px()` now reads the price at T as the close of the bar opening at T−1h. #439 and #441 re-run: still KILL (BTC −0.59% / +0.05%, t −0.82 / 0.64;
+ETH −1.07% / −0.11%). #440 has been run only with the fix.

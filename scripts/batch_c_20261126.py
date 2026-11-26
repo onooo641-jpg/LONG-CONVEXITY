@@ -205,6 +205,12 @@ def _judge(t, tag, s1_min_mean, s2_n, s2_mean, split="2023-01-01", s1_start=None
     print(f"  STAGE 2 VERDICT ({tag}): {'PASS' if ok else ('FAIL' if s1 else 'not judged — context')}")
 
 
+def _px(x, T):
+    """Price AT time T = close of the 1h bar that opens at T - 1h (klines are indexed by open time).
+    Mechanical fix 2026-11-26: #439-#441 first read x[T] (the close one hour later)."""
+    return x.get(T - pd.Timedelta(hours=1))
+
+
 def part439(H):
     print("\n#### #439 options-expiry unwind (last Friday of the month, 08:00 UTC)")
     for sym in ("BTCUSDT", "ETHUSDT"):
@@ -213,10 +219,11 @@ def part439(H):
         last = pd.Series(fridays).groupby(pd.Series(fridays).dt.to_period("M")).max()
         for fri in last:
             prev, mon = fri - pd.Timedelta(days=7), fri + pd.Timedelta(days=3)
-            if prev not in x.index or mon not in x.index:
+            pf, pp, pm = _px(x, fri), _px(x, prev), _px(x, mon)
+            if pf is None or pp is None or pm is None:
                 continue
-            side = 1 if x[fri] < x[prev] else -1
-            rows.append({"day": fri, "ret": side * (x[mon] / x[fri] - 1) - 2 * FEE})
+            side = 1 if pf < pp else -1
+            rows.append({"day": fri, "ret": side * (pm / pf - 1) - 2 * FEE})
         print(f"  {sym}:")
         _judge(pd.DataFrame(rows), f"#439 {sym}", 0.003, 30, 0.005)
 
@@ -234,11 +241,11 @@ def part440(H):
         for ts, last in f.shift(1).dropna().items():
             if abs(last) < 0.0003:
                 continue
-            a, b = ts - pd.Timedelta(hours=2), ts + pd.Timedelta(hours=1)
-            if a not in x.index or b not in x.index:
+            pa, pb = _px(x, ts - pd.Timedelta(hours=2)), _px(x, ts + pd.Timedelta(hours=1))
+            if pa is None or pb is None:
                 continue
             side = -1 if last > 0 else 1
-            rows.append({"day": ts, "ret": side * (x[b] / x[a] - 1) - 2 * FEE})
+            rows.append({"day": ts, "ret": side * (pb / pa - 1) - 2 * FEE})
         print(f"  {sym}:")
         _judge(pd.DataFrame(rows), f"#440 {sym}", 0.0005, 100, 0.0008)
 
@@ -251,10 +258,11 @@ def part441(H):
         for d in days[1:]:
             p0, p1 = d - pd.Timedelta(days=1) + pd.Timedelta(hours=13, minutes=0), d - pd.Timedelta(days=1) + pd.Timedelta(hours=21)
             a, b = d + pd.Timedelta(hours=18), d + pd.Timedelta(hours=21)
-            if any(t not in x.index for t in (p0, p1, a, b)):
+            q = [_px(x, t) for t in (p0, p1, a, b)]
+            if any(v is None for v in q):
                 continue
-            side = 1 if x[p1] > x[p0] else -1
-            rows.append({"day": d, "ret": side * (x[b] / x[a] - 1) - 2 * FEE})
+            side = 1 if q[1] > q[0] else -1
+            rows.append({"day": d, "ret": side * (q[3] / q[2] - 1) - 2 * FEE})
         print(f"  {sym}:")
         _judge(pd.DataFrame(rows), f"#441 {sym}", 0.0005, 150, 0.0008, split="2025-01-01")
 
