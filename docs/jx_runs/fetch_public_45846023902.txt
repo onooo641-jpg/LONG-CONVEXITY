@@ -1,0 +1,7 @@
+=== ubatchk
+  yahoo SPY: ok
+  yahoo EFA: ok
+  yahoo TLT: ok
+  yahoo IEF: ok
+  wrote batchk_etf_1d.parquet: 25288 rows
+=== ubatchk done in 6s  ok 0 fail 0
