@@ -44,3 +44,22 @@ Data jobs:
 - `ubatchf3`: Nasdaq/Yahoo IPOs.
 
 Script `scripts/batch_f_20261126.py`; output `docs/jx_runs/batch_f_20261126.txt` (re-run once, identical).
+
+## Results (2026-11-26; `docs/jx_runs/batch_f_20261126.txt`, re-run identical)
+
+**Mechanical fix:** `part448` used `Series.normalize` (AttributeError), replaced with `.dt.normalize()`; no rule change.
+
+| # | Verdict | Key figures | $/yr at safe size |
+|---|---|---|---|
+| 448 stablecoin supply surges | FAIL | BTC S1 +0.85% (t 0.74), S2 +0.59%, t 0.81; ETH variant KILL | $5.8K (not significant) |
+| 449 US spot-ETF flows | KILL | BTC S1 −0.04%; ETH variant S2 +0.25%, t 1.17 (FAIL) | ETH variant $15.8K, not significant |
+| 450 month-end pension rebalancing | FAIL (near miss) | S2 4/4 markets > 0, pooled t 1.99 | ~$4.8K |
+| **451 Treasury month-end extension** | **PASS** | DGS10 S2 mean ≥ 0.5 bp, t ≥ 2 | **$716** (DV01 $50) |
+| 452 OPEX week | KILL | S1 pooled −0.95% | — |
+| 453 USD/JPY gotobi fix | FAIL | S1 +2.0 pip (t 1.10); S2 −2.5 pip. **Caveat:** Dukascopy served only 1,126 of 3,870 days (throttled), so the test has low power | −$292 |
+| 454 IPO lock-up expiry short | KILL | S1 −1.04% (n 268); S2 −0.81%, t −2.35 (shorts lose) | — |
+| **455 mid-month 401(k)** | **PASS** | S2 4/4 markets > 0, pooled +0.34%, t 2.35 | **$3.2K** (10× notional) |
+| 456 index-rebalance close fade | FAIL | S2 0/4 markets > 0 | −$408 |
+| 457 DVOL spike | KILL | BTC S1 −0.17% | — |
+
+**Batch F verdict: 2 out-of-sample passes (#451, #455), both far below $10K/yr. None count toward Jx's two.**

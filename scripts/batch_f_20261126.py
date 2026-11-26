@@ -214,7 +214,7 @@ def part448():
         print("  data not fetched yet (ubatchf)")
         return
     s = pd.read_parquet(p)
-    sup = pd.Series(s["supply"].to_numpy(), index=pd.to_datetime(s["t"], unit="s", utc=True).normalize()).sort_index()
+    sup = pd.Series(s["supply"].to_numpy(), index=pd.to_datetime(s["t"], unit="s", utc=True).dt.normalize()).sort_index()
     sup = sup[sup > 0]
     g = sup / sup.shift(7) - 1
     for sym, tag in (("BTCUSDT", "#448 BTC"), ("ETHUSDT", "#448 ETH (variant)")):

@@ -287,6 +287,19 @@ Counting variants of one mechanism as one idea. Files: `docs/PREREG_WICK_SCALE_2
 | 4. New-venue house vaults | #383 | — (too few vaults) | parked |
 | Killed / invalid today | #402 hourly, #405 dislocations, #407 new-listing wicks, #408 reversal, #411 HIP-3, #412 Korean premium, #414 lottery shorts, #416 crowd flags; #409 and #413/#415 invalid or not testable | | |
 
+### 8c. 2026-11-26: batches C–I (ten individual ideas each; only passes of ≥ ~$10K/yr on $15K count)
+| Batch | Ideas | Out-of-sample passes | $10K+? |
+|---|---|---|---|
+| C | #429–#442 | 0 | — |
+| D | #443–#446 | 0 | — |
+| E | #447 | 0 (8-pt variant holds, ~10 events/yr) | — |
+| F | #448–#457 | #455 mid-month 401(k) (~$3.2K/yr), #451 Treasury month-end (~$0.7K/yr) | no |
+| G | #458–#467 | pending fetch (4 run: all fail) | — |
+| H | #468–#477 | #468 passed its own sample (~$23.9K/yr) but **failed confirmation** on 110 unseen perps | no |
+| I | #478–#487 | pre-registered, fetch running | — |
+
+Families at $10K+: wick only (#389/#403). Files: `docs/PREREG_BATCH_{C..I}_20261126.md`, `docs/PREREG_468_CONFIRM_20261126.md`.
+
 ## 9. Radar and monitoring (runs daily on GitHub, 02:41 UTC)
 | Watch | What it does | Output |
 |---|---|---|

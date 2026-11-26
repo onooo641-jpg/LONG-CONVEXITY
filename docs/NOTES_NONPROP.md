@@ -296,3 +296,23 @@ a batch only if its pre-registration states, before data: (1) a named counterpar
 a small player; (3) a back-of-envelope ≥ $10K/yr on $15K; (4) ≥ ~100 events/yr; (5) execution realism checkable and verified on an
 independent venue before a pass counts; (6) a genuine out-of-sample. Batches aim for 10 but are never padded. Model to copy: #389/#397
 (forced liquidations → price priority guarantees fills → thousands of events → out-of-sample on 4 venues).
+
+## 2026-11-26 — Batches F and H recorded; #468 failed confirmation
+Gate as Jx calibrated it: a structural payer, free data, a venue usable from Malaysia, and a time split. $/yr is reported with every
+verdict, and only passes of ≥ ~$10K/yr count toward Jx's two.
+
+- **Batch F (#448–#457):** 2 out-of-sample passes, both small: #455 mid-month 401(k) (+0.34%, t 2.35, ~$3.2K/yr at 10× notional) and #451
+  Treasury month-end extension (~$716/yr at DV01 $50). #450 missed by a hair (t 1.99, ~$4.8K/yr). The rest failed or were killed. #453
+  had partial Dukascopy data (1,126 of 3,870 days).
+- **Batch H (#468–#477):** 0/10.
+  - #468 (funding-settlement pressure, 40 alts) passed its own Stage 2 (0.128%/settlement, t 2.29, ~$23.9K/yr) but was fragile. It
+    **failed the pre-registered confirmation** on 110 unseen perps: t 1.62, and ~0 once the best 10 timestamps are dropped. On
+    Hyperliquid prices it was negative.
+  - It also turned out to repeat #440 (killed), which the desk check missed because of hyphenation. Keyword checks now include
+    hyphen and space variants.
+- **Running count of $10K+ families:** wick only (#389/#403). Still looking for two more.
+- **Pattern so far:**
+  - Calendar and mandated-flow ideas pass small (≤ $5K/yr at a safe size).
+  - High-frequency crypto timing ideas reach $10K+ on paper, but have not replicated on unseen symbols.
+- Next: Batch G remainder (fetch running), Batch I (#478–#487, mechanical clocks: FX rollover, WM/R fix, LBMA gold auction, Solana epochs,
+  USO roll, Japanese ETF dividends, MSCI close, AUD month-end, delisting overreaction, January small caps).

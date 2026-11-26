@@ -1,0 +1,92 @@
+===== Batch H (#468-#477)  docs/PREREG_BATCH_H_20261126.md
+
+#### #468 funding-settlement pressure (40 Binance perps; prev funding >= +0.05% -> short T-2h..T)
+  raw symbol-events: 19414
+  #468 main (per timestamp) Stage 1: n 2456, mean 0.015%, t 0.33, win 46%
+  #468 main (per timestamp) Stage 2: n 1585, mean 0.128%, t 2.29, win 48%
+  VERDICT (#468 main (per timestamp)): PASS (Stage 1 survives); $23,866/yr at safe size
+  #468 variant re-entry T..T+2h Stage 1: n 2456, mean 0.029%, t 0.66, win 52%
+  #468 variant re-entry T..T+2h Stage 2: n 1585, mean 0.027%, t 0.48, win 52%
+  VERDICT (#468 variant re-entry T..T+2h): FAIL (Stage 1 survives); $5,036/yr at safe size
+  diagnostics (post-result, reported only): Stage 2 median -0.055%; without best 10 timestamps mean 0.049%, t 0.97; long side n 1883 mean 0.202%, short side n 1921 mean -0.094%; top-2 symbols AXSUSDT, ZECUSDT = 84% of the sum; by year 2023 0.087%, 2024 0.010%, 2025 0.272%, 2026 0.133%
+
+#### #469 VIX ETP rebalancing (front VX move >= +8% -> short next day; <= -8% -> long)
+  #469 main Stage 1: n 92, mean -0.05, t -0.18, win 43%
+  #469 main Stage 2: n 188, mean 0.27, t 1.48, win 56%
+  VERDICT (#469 main): KILL
+    split down-day longs Stage 2: n 65, mean 0.29 pts, t 1.08
+    split up-day shorts Stage 2: n 129, mean 0.26 pts, t 1.11
+
+#### #470 single-stock leveraged-ETF rebalancing (|close-close| >= 7% -> fade close -> next open)
+  raw stock-events: 2318
+  #470 main close->open (per day) Stage 1: n 158, mean -0.437%, t -1.59, win 47%
+  #470 main close->open (per day) Stage 2: n 248, mean -0.200%, t -0.94, win 54%
+  VERDICT (#470 main close->open (per day)): KILL
+  #470 variant close->close (per day) Stage 1: n 158, mean -0.334%, t -0.82, win 51%
+  #470 variant close->close (per day) Stage 2: n 248, mean 0.396%, t 1.15, win 53%
+  VERDICT (#470 variant close->close (per day)): KILL
+
+#### #471 BTC spot-ETF NAV window (long BTC 15:00 -> 16:00 New York, weekdays)
+  control 2021-2023 (pre-ETF): n 789, mean net -0.0526%, gross 0.0374%, t -1.73
+  #471 main Stage 1: n 254, mean -0.162%, t -3.86, win 43%
+  #471 main Stage 2: n 478, mean -0.081%, t -3.71, win 40%
+  VERDICT (#471 main): KILL
+    gross Stage 1: mean -0.0723%, t -1.72
+    gross Stage 2: mean 0.0093%, t 0.43
+
+#### #472 mortgage convexity hedging (DGS10 5-day move >= 20 bp -> extend 5 days)
+  #472 main 20bp/5d Stage 1: n 294, mean -2.61, t -3.03, win 46%
+  #472 main 20bp/5d Stage 2: n 150, mean -1.87, t -1.60, win 45%
+  VERDICT (#472 main 20bp/5d): KILL
+  #472 variant 10bp/5d Stage 1: n 676, mean -1.46, t -2.71, win 48%
+  #472 variant 10bp/5d Stage 2: n 498, mean -0.95, t -1.75, win 46%
+  VERDICT (#472 variant 10bp/5d): KILL
+  #472 variant 20bp/2d Stage 1: n 448, mean -2.02, t -4.24, win 41%
+  #472 variant 20bp/2d Stage 2: n 230, mean -1.24, t -1.90, win 47%
+  VERDICT (#472 variant 20bp/2d): KILL
+
+#### #473 Tether quarter-end BTC buying (long 5 days before quarter's last day -> next 00:00)
+  S1 baseline 6-day BTC mean net 1.25%
+  S2 baseline 6-day BTC mean net -0.07%
+  events: 2023-06-25 -0.3%; 2023-09-25 +2.6%; 2023-12-26 -3.1%; 2024-03-26 +2.0%; 2024-06-25 +4.0%; 2024-09-25 -1.5%; 2024-12-26 -6.0%; 2025-03-26 -5.6%; 2025-06-25 +0.9%; 2025-09-25 +0.6%; 2025-12-26 +0.4%; 2026-03-26 -4.4%; 2026-06-25 -4.1%; 2026-09-25 -1.0%
+  #473 excess Stage 1: n 7, mean -1.568%, t -1.18, win 43%
+  #473 excess Stage 2: n 7, mean -1.828%, t -1.77, win 43%
+  VERDICT (#473 excess): KILL
+
+#### #474 quarter-end window dressing (long MTUM / short SPY, last 5 trading days of the quarter)
+  #474 main Stage 1: n 27, mean -0.035%, t -0.22, win 41%
+  #474 main Stage 2: n 27, mean -0.022%, t -0.11, win 44%
+  VERDICT (#474 main): KILL
+  #474 variant (reverse, first 5 days next quarter) Stage 1: n 27, mean -0.005%, t -0.03, win 48%
+  #474 variant (reverse, first 5 days next quarter) Stage 2: n 27, mean 0.182%, t 0.40, win 52%
+  VERDICT (#474 variant (reverse, first 5 days next quarter)): KILL
+
+#### #475 Nikkei dividend reinvestment (long into the last cum-dividend close, Mar/Sep)
+  #475 main Mar/Sep Stage 1: n 26, mean 0.654%, t 0.83, win 50%
+  #475 main Mar/Sep Stage 2: n 28, mean 0.523%, t 0.84, win 54%
+  VERDICT (#475 main Mar/Sep): FAIL (Stage 1 survives); $320/yr at safe size
+  #475 variant all quarter-ends Stage 1: n 52, mean 0.698%, t 1.55, win 58%
+  #475 variant all quarter-ends Stage 2: n 55, mean 0.219%, t 0.49, win 53%
+  VERDICT (#475 variant all quarter-ends): FAIL (Stage 1 survives); $263/yr at safe size
+
+#### #476 crypto leveraged-token rebalance (|00:00->00:00| >= 5% -> trade the move 00:00 -> 01:00)
+  #476 main (per day) Stage 1: n 308, mean -0.141%, t -1.78, win 39%
+  #476 main (per day) Stage 2: n 170, mean -0.135%, t -1.72, win 38%
+  VERDICT (#476 main (per day)): KILL
+  #476 variant fade 01:00->04:00 (per day) Stage 1: n 308, mean 0.241%, t 2.05, win 55%
+  #476 variant fade 01:00->04:00 (per day) Stage 2: n 170, mean -0.225%, t -1.88, win 48%
+  VERDICT (#476 variant fade 01:00->04:00 (per day)): FAIL (Stage 1 survives); $-4,495/yr at safe size
+
+#### #477 tax-date selling (short SPY the 5 sessions before the 15th of Jan/Apr/Jun/Sep/Dec)
+  #477 main Stage 1: n 65, mean 0.093%, t 0.31, win 40%
+  #477 main Stage 2: n 69, mean -0.286%, t -0.98, win 43%
+  VERDICT (#477 main): FAIL (Stage 1 survives); $-427/yr at safe size
+
+#### #468 confirmation (docs/PREREG_468_CONFIRM_20261126.md): unseen Binance perps 2023-01..2026-10 + Hyperliquid venue check
+  unseen symbols with klines 110, with funding 110; symbol-events 20727
+  C1: timestamps 7049, mean 0.071%, median -0.109%, t 1.62; without best 10: mean 0.007%, t 0.19
+    by side: short n 7317 mean -0.056%, long n 13410 mean 0.070%
+  C1 verdict: FAILS
+  C2 (reported): Hyperliquid prices from 2026-05-02: 55 coins, timestamps 236, mean -0.108%, t -0.71; same window on Binance prices: timestamps 1581, mean -0.167%, t -1.53
+  combined universe 2023-01..2026-10: timestamps 7269, mean 0.074%, t 1.76, $62,744/yr at $45K per timestamp
+  #468 CONFIRMATION VERDICT: FAILS CONFIRMATION (PASS on own sample only; does not count)

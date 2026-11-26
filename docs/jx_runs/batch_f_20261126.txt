@@ -1,0 +1,103 @@
+===== Batch F (docs/PREREG_BATCH_F_20261126.md)
+
+#### #450 month-end pension rebalancing (|R_e - R_b| > 2% at day -4, trade against it to month-end)
+  S1 NQ  n   29 ( 5.3/yr) mean net   13.440 pts (0.454%) t  1.46 win 48%
+  S1 ES  n   41 ( 7.5/yr) mean net    3.465 pts (0.293%) t  1.03 win 59%
+  S1 YM  n   39 ( 7.1/yr) mean net   33.494 pts (0.306%) t  1.13 win 59%
+  S1 RTY n 0
+  S1 pooled: events 56, mean 0.420%, t 1.90
+  S2 NQ  n  101 ( 9.3/yr) mean net   41.694 pts (0.233%) t  1.36 win 56%
+  S2 ES  n   86 ( 7.9/yr) mean net    8.857 pts (0.181%) t  1.16 win 51%
+  S2 YM  n   76 ( 7.0/yr) mean net  135.994 pts (0.463%) t  2.46 win 59%
+  S2 RTY n   87 ( 8.0/yr) mean net    6.439 pts (0.264%) t  1.50 win 56%
+  S2 pooled: events 123, mean 0.320%, t 1.99
+  STAGE 1 VERDICT: survives (kill-only)
+  Stage 2: markets with mean net > 0: 4/4; pooled t 1.99; $4,839/yr at 10x notional
+  STAGE 2 VERDICT: FAIL
+
+#### #451 Treasury month-end index extension (long duration, close of day -3 -> last day; FRED)
+  DGS10 Stage 1 1990-2009: months 240, mean net 1.60 bp, t 2.86, win 57%
+  DGS10 Stage 2 2010-2026-10: months 202, mean net 1.19 bp, t 2.56, win 57%
+  STAGE 1 VERDICT (#451): survives; STAGE 2 VERDICT: PASS; $716/yr at DV01 $50
+  DGS30 Stage 1 1990-2009: months 240, mean net 1.75 bp, t 3.52, win 60%
+  DGS30 Stage 2 2010-2026-10: months 202, mean net 1.03 bp, t 2.33, win 54%
+
+#### #452 OPEX week long + post-OPEX week short (non-quarterly months)
+  S1 NQ  n   15 ( 2.7/yr) mean net  -58.540 pts (-1.493%) t -1.21 win 40%
+  S1 ES  n   37 ( 6.7/yr) mean net  -14.922 pts (-0.991%) t -1.92 win 43%
+  S1 YM  n   37 ( 6.7/yr) mean net -103.446 pts (-0.754%) t -1.59 win 38%
+  S1 RTY n 0
+  S1 pooled: events 37, mean -0.954%, t -1.92
+  S2 NQ  n   73 ( 6.7/yr) mean net  -71.562 pts (-0.461%) t -1.18 win 49%
+  S2 ES  n   73 ( 6.7/yr) mean net   -8.719 pts (-0.193%) t -0.60 win 51%
+  S2 YM  n   72 ( 6.7/yr) mean net  -32.085 pts (-0.102%) t -0.32 win 47%
+  S2 RTY n   63 ( 5.8/yr) mean net   -7.328 pts (-0.323%) t -0.74 win 51%
+  S2 pooled: events 73, mean -0.239%, t -0.67
+  STAGE 1 VERDICT: KILL
+
+#### #455 mid-month 401(k) contributions (long last day before the 15th -> 2nd day on/after)
+  S1 NQ  n   28 ( 5.1/yr) mean net   15.951 pts (0.402%) t  2.43 win 75%
+  S1 ES  n   44 ( 8.0/yr) mean net    2.888 pts (0.132%) t  1.28 win 64%
+  S1 YM  n   44 ( 8.0/yr) mean net   19.838 pts (0.102%) t  1.00 win 66%
+  S1 RTY n 0
+  S1 pooled: events 51, mean 0.167%, t 1.25
+  S2 NQ  n   86 ( 7.9/yr) mean net    9.889 pts (0.340%) t  0.41 win 66%
+  S2 ES  n   86 ( 7.9/yr) mean net    6.796 pts (0.284%) t  1.25 win 65%
+  S2 YM  n   86 ( 7.9/yr) mean net   73.404 pts (0.312%) t  1.75 win 64%
+  S2 RTY n   74 ( 6.8/yr) mean net    5.405 pts (0.407%) t  1.25 win 55%
+  S2 pooled: events 87, mean 0.339%, t 2.35
+  STAGE 1 VERDICT: survives (kill-only)
+  Stage 2: markets with mean net > 0: 4/4; pooled t 2.35; $3,193/yr at 10x notional
+  STAGE 2 VERDICT: PASS
+
+#### #456 quarterly index-rebalance close: fade 15:00->16:00 until 10:00 next day
+  S1 NQ  n   11 ( 2.0/yr) mean net    8.335 pts (0.229%) t  1.24 win 55%
+  S1 ES  n   22 ( 4.0/yr) mean net    1.468 pts (0.088%) t  0.61 win 77%
+  S1 YM  n   21 ( 3.8/yr) mean net   -2.956 pts (-0.070%) t -0.13 win 67%
+  S1 RTY n 0
+  S1 pooled: events 22, mean 0.042%, t 0.38
+  S2 NQ  n   42 ( 3.9/yr) mean net  -13.090 pts (0.045%) t -0.54 win 45%
+  S2 ES  n   41 ( 3.8/yr) mean net   -6.809 pts (-0.119%) t -1.19 win 37%
+  S2 YM  n   42 ( 3.9/yr) mean net  -29.528 pts (-0.078%) t -0.67 win 48%
+  S2 RTY n   35 ( 3.2/yr) mean net   -2.968 pts (-0.081%) t -0.77 win 37%
+  S2 pooled: events 42, mean -0.055%, t -0.45
+  STAGE 1 VERDICT: survives (kill-only)
+  Stage 2: markets with mean net > 0: 0/4; pooled t -0.45; $-408/yr at 10x notional
+  STAGE 2 VERDICT: FAIL
+
+#### #448 stablecoin supply surges -> 7-day BTC/ETH
+  #448 BTC Stage 1: events 66, mean 0.85%, t 0.74, win 59%
+  #448 BTC Stage 2: events 84, mean 0.59%, t 0.81, win 49%, worst -15.0%
+  VERDICT (#448 BTC): FAIL (Stage 1 survives); $5,844/yr at $15K x3
+  #448 ETH (variant) Stage 1: events 66, mean -0.71%, t -0.48, win 50%
+  #448 ETH (variant) Stage 2: events 84, mean 1.55%, t 1.70, win 58%, worst -16.2%
+  VERDICT (#448 ETH (variant)): KILL
+
+#### #449 US spot-ETF net flows -> next UTC day
+  #449 BTC: 738 flow days parsed
+  #449 BTC Stage 1: events 111, mean -0.04%, t -0.16, win 50%
+  #449 BTC Stage 2: events 234, mean 0.09%, t 0.57, win 52%, worst -12.3%
+  VERDICT (#449 BTC): KILL
+  #449 ETH (variant): 600 flow days parsed
+  #449 ETH (variant) Stage 1: events 39, mean 0.24%, t 0.45, win 51%
+  #449 ETH (variant) Stage 2: events 254, mean 0.25%, t 1.17, win 52%, worst -13.1%
+  VERDICT (#449 ETH (variant)): FAIL (Stage 1 survives); $15,812/yr at $15K x3
+
+#### #453 USD/JPY gotobi Tokyo fix (long 00:00 -> 00:55 UTC)
+  Stage 1 2012-2018: gotobi 123 mean net 2.04 pip t 1.10 win 54%; other days -0.70 pip; Welch 1.36; post-fix short variant -0.16 pip t -0.10
+  Stage 2 2019-2026-10: gotobi 93 mean net -2.45 pip t -1.14 win 46%; other days -0.01 pip; Welch -1.00; post-fix short variant 2.01 pip t 1.56
+  STAGE 1 survives; STAGE 2 VERDICT (#453): FAIL; $-292/yr at $150K
+
+#### #454 IPO lock-up expiry short (hedged with IWM)
+  usable IPOs: 996
+  Stage 1 (IPOs 2016-19): n 268, mean -1.04%, t -0.98, win 49%
+  Stage 2 (IPOs 2020-26-04): n 708, mean -0.81%, t -2.35, win 41%, worst -45.7%
+  VERDICT (#454): KILL
+
+#### #457 DVOL spike -> long 7 days (dealer hedge unwind)
+  #457 BTC Stage 1: events 19, mean -0.17%, t -0.07, win 47%
+  #457 BTC Stage 2: events 11, mean 0.53%, t 0.30, win 55%, worst -9.2%
+  VERDICT (#457 BTC): KILL
+  #457 ETH (variant) Stage 1: events 23, mean -2.48%, t -1.12, win 39%
+  #457 ETH (variant) Stage 2: events 14, mean 2.39%, t 1.21, win 57%, worst -8.0%
+  VERDICT (#457 ETH (variant)): KILL

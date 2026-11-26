@@ -63,3 +63,28 @@ Stage 1 can only kill; no stage declares a pass early, and the Stage 2 rules are
   queues are busy.
 
 **Script and output.** Script: `scripts/batch_h_20261126.py`. Output: `docs/jx_runs/batch_h_20261126.txt` (re-run once; it must be identical).
+
+## Results (2026-11-26; `docs/jx_runs/batch_h_20261126.txt`, re-run identical)
+
+| # | Verdict | Key figures | $/yr at safe size |
+|---|---|---|---|
+| 468 funding-settlement pressure | **PASS on its own sample → FAILS the pre-registered confirmation** (`docs/PREREG_468_CONFIRM_20261126.md`) | 40 alts S2: 0.128%/timestamp, t 2.29 (S1 0.015%, t 0.33). Fragile: median −0.055%; without the best 10 timestamps t 0.97; long side only; AXS+ZEC 84% of the sum. **110 unseen perps 2023–26: 0.071%, t 1.62, without best 10 0.007%** → C1 fails. Hyperliquid prices 2026-05..11: −0.108%, t −0.71 | $23.9K on own sample; does not count |
+| 469 VIX ETP rebalancing | KILL | S1 −0.05 pts (t −0.18); S2 +0.27 pts, t 1.48 | — |
+| 470 single-stock leveraged-ETF rebalancing | KILL | S1 −0.44% (t −1.59) | — |
+| 471 BTC spot-ETF NAV window | KILL | S1 −0.16% net (gross −0.07%) | — |
+| 472 mortgage convexity hedging | KILL | wrong sign in both stages (S1 −2.6 bp, t −3.0) | — |
+| 473 Tether quarter-end buying | KILL | S1 excess −1.6% (n 7) | — |
+| 474 quarter-end window dressing | KILL | S1 −0.04%, S2 −0.02% | — |
+| 475 Nikkei dividend reinvestment | FAIL | S1 +0.65%, S2 +0.52%, t 0.84 | $320 |
+| 476 crypto leveraged-token rebalance | KILL | S1 −0.14%; fade variant flips sign out of sample | — |
+| 477 tax-date selling | FAIL | S1 +0.09%, S2 −0.29% | −$427 |
+
+**Batch H verdict: 0 of 10 count.**
+
+**Desk-check error (recorded).** #468 is in substance #440 (funding-settlement drift, Batch C), whose alt-coin variant was already
+killed in Batch D (2021–22, −0.19%). #471 overlaps #441 (ETF fix window, killed). The repeat check searched "funding settle" and missed the
+hyphenated "funding-settlement". #468's different exit (at settlement, not settlement + 1 h) is what made it pass on its own sample. The
+unseen-perp test agrees with #440's kill.
+
+**Fix.** From Batch I on, the desk check searches CANDIDATES and every PREREG file for mechanism keywords with hyphen and space
+variants before an idea is registered.
