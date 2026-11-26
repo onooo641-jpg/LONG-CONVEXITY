@@ -17,3 +17,15 @@ Stage 1 = in-sample kill-only; Stage 2 = out-of-sample PASS. Event studies: hedg
 | 436 | HIP-3 commodity perps weekend fade (gold/silver/oil trade on Hyperliquid while CME is shut) | `fivehigh_hip3_1d` | if the Saturday+Sunday move ≥ 2%, fade it from Sunday close to Monday close | first half of history: KILL if mean ≤ 0 | second half: PASS if ≥ 15 events, mean ≥ 0.5%, t ≥ 2 |
 | 437 | HIP-3 stock-index perps weekend fade (same rule on index/stock perps) | same | same | same | same |
 | 438 | Token-split / redenomination arbitrage (1000x tickers re-based, migrations) | Binance announcements | — | desk: events too few and conversion is exchange-handled; recorded as not testable | — |
+
+## Batch C extension (#439–#442) — pre-registered 2026-11-26 before their data are fetched (Jx: 10 individual ideas, variants on top)
+Each idea has a BTC and an ETH variant (judged separately). Data: Binance 1h klines (`batchc_btceth_1h`), Binance 8-hourly funding events
+for BTCUSDT/ETHUSDT and Coinbase daily candles (job `ubatchc2`). Costs 0.045% per side. Stage 1 = 2020-01..2022-12 (2024 for #441),
+Stage 2 out-of-sample = 2023-01..2026-10 (2025-01..2026-10 for #441).
+
+| # | Idea (payer) | Rule | Stage 1 (kill) | Stage 2 (PASS) |
+|---|---|---|---|---|
+| 439 | Options-expiry unwind (dealer hedges released at Deribit's 08:00 UTC Friday expiry; last Friday of the month) | long from Friday 08:00 to Monday 08:00 if price fell over the expiry week (Fri 08:00 → Fri 08:00), else short | mean < 0.3% or t < 1 | ≥ 30 events, mean ≥ 0.5%, t ≥ 2 |
+| 440 | Funding-settlement drift (longs/shorts close just before paying funding) | at 2 h before each 8-hourly settlement, if the last funding rate ≥ 0.03% short until 1 h after settlement; if ≤ −0.03% long | mean < 0.05% or t < 1 | ≥ 100 events, mean ≥ 0.08%, t ≥ 2 |
+| 441 | US spot-ETF fix window (creations struck at 16:00 New York = 20:00/21:00 UTC) | long BTC/ETH 18:00→21:00 UTC on US trading days when the previous day's 13:30→21:00 UTC return > 0 (inflow persistence), else short | 2024: mean < 0.05% or t < 1 | ≥ 150 events, mean ≥ 0.08%, t ≥ 2 |
+| 442 | Coinbase premium (US buyers pay above offshore price) | daily: premium = Coinbase close ÷ Binance USDT close − 1; if premium > its trailing-90-day 95th percentile, long 3 days; < 5th, short 3 days | mean < 0.5% or t < 1 | ≥ 20 events, mean ≥ 1%, t ≥ 2 |
