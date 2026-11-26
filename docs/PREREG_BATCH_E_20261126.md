@@ -51,3 +51,13 @@ Only one candidate cleared the quality gate (`docs/NOTES_NONPROP.md`). Rejected 
 | Spectra / Napier / Exponent PTs | — | same mechanism as #447. Only used as a second venue if #447 passes. |
 
 Script `scripts/batch_e_20261126.py`; output `docs/jx_runs/batch_e_20261126.txt` (re-run once, identical).
+
+---
+## Result (2026-11-26) — `uv run python -m scripts.batch_e_20261126` → `docs/jx_runs/batch_e_20261126.txt` (re-run identical)
+844 markets (378 stable), 115,514 daily rows.
+- **Stage 1 survives** strongly: 29 events, +1.19%, t 3.49, 69% profitable.
+- **Stage 2 FAIL:** 28 events, +0.43%, t 0.75, 75% profitable. The two depegs (apxUSD −9.5%, cUSDO −6.2%) erase the edge; $283/yr sized.
+- Variants:
+  - the 8-point threshold holds (S1 +1.74% t 2.34, S2 +1.52% t 3.18, 90% profitable), but only ~10 events/yr, so ≈ $750/yr at $5K;
+  - non-stable PTs lose (underlying moves dominate).
+- **#447: FAIL.**

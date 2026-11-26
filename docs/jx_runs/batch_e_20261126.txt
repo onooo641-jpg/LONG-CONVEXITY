@@ -1,0 +1,18 @@
+===== Batch E #447 Pendle PT dislocation buying
+  markets 844 (stable by name 378); history rows 115514; underlying series 353
+  Stage 1 (2024-03..2024-12): events 29 (22 markets), mean 1.19%, median 0.57%, t 3.49, win 69%, worst -1.1%, mean depeg 0.33%
+  STAGE 1 VERDICT (#447): survives (kill-only)
+  Stage 2 (2025-01..2026-10): events 28 (25 markets), mean 0.43%, median 0.70%, t 0.75, win 75%, worst -9.5%, mean depeg -0.19%
+  sized: $5,000/event, <= 3 open: 23 trades, $283/yr
+  STAGE 2 VERDICT (#447): FAIL
+  Stage 2 worst 5: apxUSD 2026-06-03 -9.5%; cUSDO 2025-11-05 -6.2%; USD0++ 2025-01-12 -1.9%; USDai 2025-10-07 -1.5%; hbUSDT 2025-10-13 -1.3%
+
+  variants (reported only):
+  threshold 3 pts S1: events 52 (33 markets), mean 0.79%, median 0.49%, t 3.92, win 62%, worst -1.4%, mean depeg 0.20%
+  threshold 3 pts S2: events 84 (60 markets), mean 0.30%, median 0.40%, t 1.14, win 77%, worst -12.7%, mean depeg -0.13%
+  threshold 8 pts S1: events 11 (10 markets), mean 1.74%, median 1.04%, t 2.34, win 82%, worst -2.2%, mean depeg 0.43%
+  threshold 8 pts S2: events 10 (10 markets), mean 1.52%, median 1.14%, t 3.18, win 90%, worst -0.3%, mean depeg -0.14%
+  same-day entry S1: events 29 (22 markets), mean 1.51%, median 1.45%, t 4.92, win 83%, worst -0.8%, mean depeg 0.31%
+  same-day entry S2: events 29 (25 markets), mean 0.78%, median 0.93%, t 1.05, win 83%, worst -9.5%, mean depeg -0.11%
+  non-stable PTs (USD terms incl. underlying move) S1: events 28 (21 markets), mean -4.42%, median -5.73%, t -2.18, win 36%, worst -24.7%, mean depeg -5.59%
+  non-stable PTs (USD terms incl. underlying move) S2: events 40 (28 markets), mean -6.13%, median -4.13%, t -2.41, win 42%, worst -47.8%, mean depeg -7.62%
