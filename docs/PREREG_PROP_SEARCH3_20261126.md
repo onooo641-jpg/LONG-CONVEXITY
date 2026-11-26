@@ -81,3 +81,15 @@ steps), or "no price works". Near misses:
 - Script: `scripts/marketmix_20261120.py --compliant --corrected`, output `docs/jx_runs/marketmix_corrected_20261126.txt`.
 - Both re-run once; output must be identical.
 - Recorded in this file, `docs/NOTES_JX.md` and `docs/FIGURES_LEDGER.md`.
+
+## Addendum E2 (registered 2026-11-26, after part 1 printed, before this runs)
+**Engine note.** Another session pushed audit addendum 3 (`backtest/engine.py`): the open loss on the exit bar now counts only up to the
+stop or target fill. Every corrected-model figure rose. Topstep 50K Standard went from $35,124 to $38,034, so the bar is now real
+≥ $19,017 and dip ≥ −$5,794. This search ran entirely on the new engine. Prop search 2's figures predate it and are slightly too strict.
+
+**E2.** The same break-even method (highest one-time price meeting the registered bar), applied to the leads part 1 found:
+- FFN Standard MAX 50K / 100K / 150K: risk $900 at 50K, 0.45 × MLL for the larger sizes; activation $0 (promo) and $120 (list);
+  reset $100;
+- DayTraders 100K / 150K Static, whose prices are unknown: risk $900 and 0.45 × MLL.
+
+Script: `scripts/prop_search3_e2_20261126.py`.
