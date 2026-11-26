@@ -1,0 +1,33 @@
+check NQ (closed-P&L model): $44,359 vs earlier $44,359 -> OK
+check ES (closed-P&L model): $20,338 vs earlier $20,338 -> OK
+check YM (closed-P&L model): $11,744 vs earlier $11,744 -> OK
+
+Bar (Topstep 50K Standard, NQ, real-time): real >= $19,017, flip >= $5,000, dip >= $-5,794
+
+(A1) SINGLE ACCOUNTS by market, corrected model
+  Topstep 50K Consistency      NQ | real $  39,949 | flip $   7,699 (78%) | dip $  -3,862 | QUALIFIES
+  Topstep 50K Consistency      ES | real $   6,023 | flip $   3,753 (68%) | dip $  -3,946 | fails
+  Topstep 50K Consistency      YM | real $   3,997 | flip $  -4,113 (23%) | dip $  -4,188 | fails
+  LucidFlex 50K DLL ON (EOD)   NQ | real $  40,545 | flip $  21,522 (99%) | dip $  -4,108 | QUALIFIES
+  LucidFlex 50K DLL ON (EOD)   ES | real $  26,480 | flip $  14,926 (94%) | dip $  -2,230 | QUALIFIES
+  LucidFlex 50K DLL ON (EOD)   YM | real $  12,359 | flip $   3,840 (70%) | dip $  -2,322 | fails
+  LucidDaily $85.40            NQ | real $  35,798 | flip $   8,115 (80%) | dip $  -4,526 | QUALIFIES
+  LucidDaily $85.40            ES | real $   9,413 | flip $   4,611 (74%) | dip $  -2,904 | fails
+  LucidDaily $85.40            YM | real $   7,699 | flip $  -2,897 (30%) | dip $  -3,245 | fails
+
+(A2) PORTFOLIOS with the anti-hedge filter (mixed portfolios), corrected model
+  compliance filter skipped NQ 69, ES 54, YM 85 trades
+  monthly P&L correlation, one Topstep account per market:
+     NQ    ES    YM
+NQ 1.00  0.12  0.02
+ES 0.12  1.00 -0.08
+YM 0.02 -0.08  1.00
+T5-NQ                                        net $  207,287 ($ 19,143/yr) | 2016-20 $   29,270, 2021-26 $  178,017 | worst dip $  -17,050 | most out of pocket $ -17,050 | cash on hand $  17,050 | longest below peak 46.2 mo | losing years 4
+T5-mix                                       net $  144,972 ($ 13,388/yr) | 2016-20 $   14,423, 2021-26 $  130,550 | worst dip $  -11,004 | most out of pocket $ -11,004 | cash on hand $  11,004 | longest below peak 46.2 mo | losing years 4
+L5-NQ                                        net $  206,104 ($ 19,034/yr) | 2016-20 $   38,610, 2021-26 $  167,494 | worst dip $  -19,528 | most out of pocket $ -19,528 | cash on hand $  19,528 | longest below peak 44.9 mo | losing years 3
+L5-mix                                       net $  163,177 ($ 15,070/yr) | 2016-20 $   32,018, 2021-26 $  131,159 | worst dip $   -9,987 | most out of pocket $  -9,987 | cash on hand $   9,987 | longest below peak 38.6 mo | losing years 3
+TL-NQ                                        net $  413,391 ($ 38,177/yr) | 2016-20 $   67,880, 2021-26 $  345,511 | worst dip $  -36,579 | most out of pocket $ -36,579 | cash on hand $  36,579 | longest below peak 44.9 mo | losing years 4
+TL-mix                                       net $  308,149 ($ 28,458/yr) | 2016-20 $   46,441, 2021-26 $  261,708 | worst dip $  -19,439 | most out of pocket $ -19,439 | cash on hand $  19,439 | longest below peak 44.6 mo | losing years 3
+  T5-mix vs T5-NQ: net $144,972 vs $207,287 (-30.1%), cash on hand $11,004 vs $17,050 (-35.5%), net per $ of cash +8.4% -> not worth it (pre-registered rule)
+  L5-mix vs L5-NQ: net $163,177 vs $206,104 (-20.8%), cash on hand $9,987 vs $19,528 (-48.9%), net per $ of cash +54.8% -> WORTH DOING (pre-registered rule)
+  TL-mix vs TL-NQ: net $308,149 vs $413,391 (-25.5%), cash on hand $19,439 vs $36,579 (-46.9%), net per $ of cash +40.3% -> not worth it (pre-registered rule)

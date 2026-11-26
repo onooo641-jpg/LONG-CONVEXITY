@@ -1,0 +1,53 @@
+Registered bar: real >= $19,017, coin flip >= $5,000, dip >= $-5,794. (F) size-scaled reading: dip limit x (MLL / $2,000).
+
+(C/D) FUNDED FUTURES NETWORK Standard MAX (EOD: open losses not caught; DLL soft)
+  FFN Std MAX 50K, list $178 + $120 activation, reset $100   risk $  900 | real $  17,433 | flip $  -3,350 (29%) | dip $  -5,786 | registered fails | size-scaled fails
+  FFN Std MAX 100K, list $178 + $120 activation, reset $100  risk $  900 | real $  22,696 | flip $  -6,757 (17%) | dip $  -8,111 | registered fails | size-scaled fails
+  FFN Std MAX 100K, list $178 + $120 activation, reset $100  risk $1,620 | real $  29,160 | flip $    -313 (50%) | dip $  -8,612 | registered fails | size-scaled fails
+  FFN Std MAX 150K, list $178 + $120 activation, reset $100  risk $  900 | real $  28,237 | flip $  -4,729 (22%) | dip $  -4,612 | registered fails | size-scaled fails
+  FFN Std MAX 150K, list $178 + $120 activation, reset $100  risk $2,250 | real $  33,190 | flip $   2,475 (60%) | dip $  -8,824 | registered fails | size-scaled fails
+  FFN Std MAX 50K, promo $53.40, activation waived, reset $100 risk $  900 | real $  24,037 | flip $   6,122 (81%) | dip $  -4,074 | registered QUALIFIES | size-scaled QUALIFIES
+  FFN Std MAX 100K, promo $53.40, activation waived, reset $100 risk $  900 | real $  27,423 | flip $    -416 (46%) | dip $  -3,513 | registered fails | size-scaled fails
+  FFN Std MAX 100K, promo $53.40, activation waived, reset $100 risk $1,620 | real $  38,614 | flip $  12,942 (91%) | dip $  -5,340 | registered QUALIFIES | size-scaled QUALIFIES
+  FFN Std MAX 150K, promo $53.40, activation waived, reset $100 risk $  900 | real $  30,670 | flip $  -1,480 (34%) | dip $  -2,990 | registered fails | size-scaled fails
+  FFN Std MAX 150K, promo $53.40, activation waived, reset $100 risk $2,250 | real $  43,330 | flip $  16,257 (92%) | dip $  -5,579 | registered QUALIFIES | size-scaled QUALIFIES
+
+(B) BIGGER ACCOUNTS: same $900 risk (and 0.45 x MLL for comparison)
+  Topstep 100K Standard                                      risk $  900 | real $  24,081 | flip $  -5,650 (23%) | dip $  -5,518 | registered fails | size-scaled fails
+  Topstep 100K Standard                                      risk $1,350 | real $  42,517 | flip $    -921 (45%) | dip $  -7,944 | registered fails | size-scaled fails
+  Topstep 100K Consistency                                   risk $  900 | real $  15,776 | flip $  -5,549 (24%) | dip $  -5,518 | registered fails | size-scaled fails
+  Topstep 100K Consistency                                   risk $1,350 | real $  36,337 | flip $     456 (53%) | dip $  -7,944 | registered fails | size-scaled fails
+  LucidFlex 100K (EOD)                                       risk $  900 | real $  21,521 | flip $  -9,836 (13%) | dip $  -8,091 | registered fails | size-scaled fails
+  LucidFlex 100K (EOD)                                       risk $1,350 | real $  34,265 | flip $   1,338 (55%) | dip $  -9,558 | registered fails | size-scaled fails
+  Topstep 150K Standard                                      risk $  900 | real $   4,009 | flip $ -14,494 (2%) | dip $ -13,337 | registered fails | size-scaled fails
+  Topstep 150K Standard                                      risk $2,025 | real $  63,943 | flip $   2,960 (56%) | dip $ -10,846 | registered fails | size-scaled fails
+  Topstep 150K Consistency                                   risk $  900 | real $   5,692 | flip $ -15,494 (1%) | dip $ -13,337 | registered fails | size-scaled fails
+  Topstep 150K Consistency                                   risk $2,025 | real $  52,623 | flip $   5,479 (60%) | dip $ -10,846 | registered fails | size-scaled QUALIFIES
+  LucidFlex 150K (EOD)                                       risk $  900 | real $   6,150 | flip $ -12,139 (4%) | dip $  -9,141 | registered fails | size-scaled fails
+  LucidFlex 150K (EOD)                                       risk $2,025 | real $  48,320 | flip $   5,571 (62%) | dip $ -13,573 | registered fails | size-scaled fails
+  Topstep 100K Static, Standard                              risk $  900 | real $   4,169 | flip $  -6,931 (12%) | dip $  -4,350 | registered fails | size-scaled fails
+  Topstep 100K Static, Standard                              risk $1,800 | real $  78,851 | flip $   9,712 (77%) | dip $  -6,865 | registered fails | size-scaled QUALIFIES
+  Topstep 100K Static, Consistency                           risk $  900 | real $  16,667 | flip $  -3,412 (26%) | dip $  -4,148 | registered fails | size-scaled fails
+  Topstep 100K Static, Consistency                           risk $1,800 | real $  73,145 | flip $  18,270 (89%) | dip $  -6,536 | registered fails | size-scaled QUALIFIES
+  Topstep 150K Static, Standard                              risk $  900 | real $  -3,357 | flip $  -8,135 (4%) | dip $  -4,582 | registered fails | size-scaled fails
+  Topstep 150K Static, Standard                              risk $2,700 | real $ 102,083 | flip $  17,609 (84%) | dip $  -9,594 | registered fails | size-scaled QUALIFIES
+  Topstep 150K Static, Consistency                           risk $  900 | real $  16,373 | flip $  -5,987 (12%) | dip $  -4,352 | registered fails | size-scaled fails
+  Topstep 150K Static, Consistency                           risk $2,700 | real $ 110,407 | flip $  33,196 (92%) | dip $  -8,936 | registered fails | size-scaled QUALIFIES
+  TTP Prime 100K ($189)                                      risk $  900 | real $ -14,797 | flip $ -30,207 (0%) | dip $ -24,988 | registered fails | size-scaled fails
+  TTP Prime 100K ($189)                                      risk $1,350 | real $  14,375 | flip $ -23,504 (3%) | dip $ -13,797 | registered fails | size-scaled fails
+  TTP Futures Prime 150K ($289)                              risk $  900 | real $ -41,327 | flip $ -43,061 (0%) | dip $ -41,327 | registered fails | size-scaled fails
+  TTP Futures Prime 150K ($289)                              risk $2,025 | real $  20,013 | flip $ -36,675 (2%) | dip $ -21,097 | registered fails | size-scaled fails
+  DayTraders 100K Static (price unknown: $55 floor, FLAGGED) risk $  900 | real $  25,014 | flip $  11,112 (92%) | dip $  -2,915 | registered QUALIFIES | size-scaled QUALIFIES
+  DayTraders 100K Static (price unknown: $55 floor, FLAGGED) risk $  675 | real $  43,731 | flip $   6,143 (85%) | dip $  -1,375 | registered QUALIFIES | size-scaled QUALIFIES
+  DayTraders 150K Static (price unknown: $55 floor, FLAGGED) risk $  900 | real $  52,276 | flip $   9,989 (92%) | dip $  -1,870 | registered QUALIFIES | size-scaled QUALIFIES
+  DayTraders 150K Static (price unknown: $55 floor, FLAGGED) risk $  788 | real $  50,484 | flip $   8,147 (88%) | dip $  -2,145 | registered QUALIFIES | size-scaled QUALIFIES
+  DayTraders 150K Trail (price unknown: $75 floor, FLAGGED)  risk $  900 | real $  28,170 | flip $   2,782 (63%) | dip $  -2,635 | registered fails | size-scaled fails
+  DayTraders 150K Trail (price unknown: $75 floor, FLAGGED)  risk $2,025 | real $  67,415 | flip $   6,378 (64%) | dip $  -7,895 | registered fails | size-scaled QUALIFIES
+
+(E) BREAK-EVEN PRICES (highest one-time price meeting the registered bar; $1 steps)
+  DayTraders S2F 50K (DLL $1,250)          break-even $251 (current $342.00: needs a promo)
+  LucidDirect 50K (EOD)                    break-even $303 (current $360.50: needs a promo)
+  TTP Instant 50K (real-time)              break-even $321 (current $499.00: needs a promo)
+  DayTraders 50K Trail                     break-even $55 (current $70.00: needs a promo)
+  LucidFlex 25K (EOD)                      break-even $80 (current $100.00: needs a promo)
+  Topstep $3K Challenge                    qualifies at $0; current $49
