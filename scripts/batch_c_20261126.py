@@ -185,6 +185,109 @@ def part436_437():
         print(f"  STAGE 2 VERDICT ({tag}): {'PASS' if ok else ('FAIL' if s1 else 'not judged — context')}")
 
 
+def _hourly():
+    p = PUB / "batchc_btceth_1h.parquet"
+    if not p.exists():
+        return None
+    d = pd.read_parquet(p)
+    d["ts"] = pd.to_datetime(d["t"], unit="s", utc=True)
+    return {s: g.drop_duplicates("ts").set_index("ts")["c"].sort_index() for s, g in d.groupby("sym")}
+
+
+def _judge(t, tag, s1_min_mean, s2_n, s2_mean, split="2023-01-01", s1_start=None):
+    x1 = t[(t["day"] < split) & ((t["day"] >= s1_start) if s1_start else True)] if len(t) else t
+    x2 = t[t["day"] >= split] if len(t) else t
+    n1, m1, t1, _ = show(x1, "Stage 1")
+    s1 = not (pd.isna(m1) or m1 < s1_min_mean or t1 < 1)
+    print(f"  STAGE 1 VERDICT ({tag}): {'survives (kill-only)' if s1 else 'KILL'}")
+    n2, m2, t2, _ = show(x2, "Stage 2 (out-of-sample)")
+    ok = s1 and n2 >= s2_n and m2 >= s2_mean and t2 >= 2
+    print(f"  STAGE 2 VERDICT ({tag}): {'PASS' if ok else ('FAIL' if s1 else 'not judged — context')}")
+
+
+def part439(H):
+    print("\n#### #439 options-expiry unwind (last Friday of the month, 08:00 UTC)")
+    for sym in ("BTCUSDT", "ETHUSDT"):
+        x, rows = H[sym], []
+        fridays = x.index[(x.index.weekday == 4) & (x.index.hour == 8)]
+        last = pd.Series(fridays).groupby(pd.Series(fridays).dt.to_period("M")).max()
+        for fri in last:
+            prev, mon = fri - pd.Timedelta(days=7), fri + pd.Timedelta(days=3)
+            if prev not in x.index or mon not in x.index:
+                continue
+            side = 1 if x[fri] < x[prev] else -1
+            rows.append({"day": fri, "ret": side * (x[mon] / x[fri] - 1) - 2 * FEE})
+        print(f"  {sym}:")
+        _judge(pd.DataFrame(rows), f"#439 {sym}", 0.003, 30, 0.005)
+
+
+def part440(H):
+    print("\n#### #440 funding-settlement drift (2 h before -> 1 h after, |last funding| >= 0.03%)")
+    fp = PUB / "batchc_funding8h.parquet"
+    if not fp.exists():
+        print("  funding events not fetched yet")
+        return
+    fr = pd.read_parquet(fp)
+    fr["ts"] = pd.to_datetime(fr["t"], unit="s", utc=True).dt.round("h")
+    for sym in ("BTCUSDT", "ETHUSDT"):
+        x, f, rows = H[sym], fr[fr["sym"] == sym].drop_duplicates("ts").set_index("ts")["rate"].sort_index(), []
+        for ts, last in f.shift(1).dropna().items():
+            if abs(last) < 0.0003:
+                continue
+            a, b = ts - pd.Timedelta(hours=2), ts + pd.Timedelta(hours=1)
+            if a not in x.index or b not in x.index:
+                continue
+            side = -1 if last > 0 else 1
+            rows.append({"day": ts, "ret": side * (x[b] / x[a] - 1) - 2 * FEE})
+        print(f"  {sym}:")
+        _judge(pd.DataFrame(rows), f"#440 {sym}", 0.0005, 100, 0.0008)
+
+
+def part441(H):
+    print("\n#### #441 US spot-ETF fix window (18:00 -> 21:00 UTC, direction of the previous US session)")
+    for sym in ("BTCUSDT", "ETHUSDT"):
+        x, rows = H[sym], []
+        days = sorted({t.normalize() for t in x.index if t >= pd.Timestamp("2024-01-11", tz="UTC") and t.weekday() < 5})
+        for d in days[1:]:
+            p0, p1 = d - pd.Timedelta(days=1) + pd.Timedelta(hours=13, minutes=0), d - pd.Timedelta(days=1) + pd.Timedelta(hours=21)
+            a, b = d + pd.Timedelta(hours=18), d + pd.Timedelta(hours=21)
+            if any(t not in x.index for t in (p0, p1, a, b)):
+                continue
+            side = 1 if x[p1] > x[p0] else -1
+            rows.append({"day": d, "ret": side * (x[b] / x[a] - 1) - 2 * FEE})
+        print(f"  {sym}:")
+        _judge(pd.DataFrame(rows), f"#441 {sym}", 0.0005, 150, 0.0008, split="2025-01-01")
+
+
+def part442():
+    print("\n#### #442 Coinbase premium extremes (3-day hold)")
+    cp = PUB / "batchc_coinbase_1d.parquet"
+    if not cp.exists():
+        print("  Coinbase candles not fetched yet")
+        return
+    cb = pd.read_parquet(cp)
+    cb["day"] = pd.to_datetime(cb["t"], unit="s", utc=True).dt.normalize()
+    b = pd.read_parquet(PUB / "uncharted_389_binance_ohlc.parquet", columns=["sym", "t", "c"])
+    b["day"] = pd.to_datetime(b["t"], unit="s", utc=True).dt.normalize()
+    for prod, sym in (("BTC-USD", "BTCUSDT"), ("ETH-USD", "ETHUSDT")):
+        c = cb[cb["prod"] == prod].drop_duplicates("day").set_index("day")["c"].sort_index()
+        bn = b[b["sym"] == sym].drop_duplicates("day").set_index("day")["c"].sort_index()
+        prem = (c / bn - 1).dropna()
+        hi, lo = prem.rolling(90, min_periods=60).quantile(0.95).shift(1), prem.rolling(90, min_periods=60).quantile(0.05).shift(1)
+        rows, busy = [], None
+        for d, v in prem.items():
+            if (busy is not None and d <= busy) or pd.isna(hi.get(d)):
+                continue
+            side = 1 if v > hi[d] else (-1 if v < lo[d] else 0)
+            ex = d + pd.Timedelta(days=3)
+            if side == 0 or ex not in bn.index:
+                continue
+            rows.append({"day": d, "ret": side * (bn[ex] / bn[d] - 1) - 2 * FEE})
+            busy = ex
+        print(f"  {prod}:")
+        _judge(pd.DataFrame(rows), f"#442 {prod}", 0.005, 20, 0.01)
+
+
 def main():
     print("===== Batch C #429-#438")
     depegs(["usd-coin", "tether", "first-digital-usd", "paypal-usd", "true-usd", "binance-usd", "paxos-standard"], 0.98,
@@ -196,6 +299,14 @@ def main():
     part434_435()
     part436_437()
     print("\n#### #438 token-split / redenomination arbitrage: not testable (pre-registered desk result)")
+    H = _hourly()
+    if H is None:
+        print("\n#439-#441: hourly data not fetched yet")
+    else:
+        part439(H)
+        part440(H)
+        part441(H)
+    part442()
 
 
 if __name__ == "__main__":
