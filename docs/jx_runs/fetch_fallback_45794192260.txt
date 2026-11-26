@@ -1,0 +1,11 @@
+=== ubatchg
+  btc daily: 4921
+  wrote batchg_btc_1d.parquet: 4921 rows
+  wrote batchg_difficulty.parquet: 6533 rows
+  yahoo rows 26475
+  wrote batchg_etf_1d.parquet: 26475 rows
+  wrote batchg_dexjpus.parquet: 14008 rows
+  wrote batchg_usdt_supply.parquet: 3285 rows
+  usdt supply days: 3285
+  dukascopy EURUSD month-end ticks kept: 28100
+  wrote batchg_eurusd_monthend.parquet: 28100 rows
