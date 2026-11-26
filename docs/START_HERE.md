@@ -105,30 +105,21 @@ bot. TTP Prime and DayTraders EOD fail if they check open P&L.
 Benchmark Topstep 50K (old closed-P&L model): $44,359 real net, coin-flip median $18,046, worst dip −$3,520. "Qualifies" = real ≥ 50% of Topstep, coin flip ≥ $5,000,
 worst dip no worse than 1.5× Topstep's (manual-entry products judged with a 3-minute entry delay).
 
-### 4a. APPROVED — Malaysia-eligible, rules verified on the firms' own pages, qualifies
-| Rank | Product (price) | Entry | Real net 2016–26 | Per year | Coin flip | Worst dip | Source |
+### 4a. Corrected 2026-11-26 — each firm's own drawdown rule (`docs/AUDIT_PRE_LIVE_20261126.md` addendum 2, ledger AUD3–AUD4)
+Bot entry, backtest 2016–26. Qualifies = real ≥ 50% of Topstep Standard ($17,562), coin flip ≥ $5,000, worst dip no worse than −$6,088.
+| Rank | Product (price) | How the firm checks the loss limit | Real net | Per year | Coin flip | Worst dip | Verdict |
 |---|---|---|---|---|---|---|---|
-| 1 | LucidDaily 50K EOD ($85.40 promo) | bot | $57,486 | $5,308 | $24,093 | −$3,758 | `docs/PROP_VERIFY_20261122.md` §6 |
-| 2 | TTP Futures Prime 50K ($99, reset $79) | bot | $49,057 | $4,530 | $16,960 | −$3,884 | §2, §4 |
-| 3 | DayTraders EOD 50K ($105 + $5) | bot | $47,894 | $4,422 | $12,461 | −$3,265 | §7 |
-| 4 | Topstep 50K, **Consistency payout path** ($49/mo) | bot | $46,492 | $4,293 | $18,005 | −$3,520 | §4 |
-| 5 | Topstep 50K, Standard path | bot | $44,359 | $4,096 | $18,046 | −$3,520 | benchmark |
-| 6 | LucidFlex 50K DLL ON ($80.50) | bot | $40,545 | $3,744 | $21,522 | −$4,108 | §7 |
-| 7 | TradeDay 50K ($85 code) | bot (no API: platform rewrite) | $35,678 | $3,294 | $14,035 | −$4,835 | `docs/RADAR_RESULTS_SUMMARY.md` |
-**All of them together:** `docs/PREREG_PORTFOLIO_MY_20261123.md` ($195K with 1 account each; $975K with 5 each, worst dip −$69K).
-
-**ROI** (`uv run python -m scripts.prop_roi_20261125`, ledger PR1). *ROI on fees* = net ÷ all fees paid 2016–26. *Return on cash* = net per
-year ÷ worst dip (the cash you must be able to lose).
-| Product | Fees paid 2016–26 | ROI on fees | Return on cash / yr |
-|---|---|---|---|
-| LucidDaily 50K EOD ($85.40) | $13,835 | 416% | 141% |
-| TTP Futures Prime 50K | $14,865 | 330% | 117% |
-| DayTraders EOD 50K | $12,530 | 382% | 135% |
-| Topstep 50K Consistency | $17,081 | 272% | 122% |
-| Topstep 50K Standard | $17,081 | 260% | 116% |
-| LucidFlex 50K DLL ON | $15,178 | 267% | 91% |
-| TradeDay 50K ($85) | $13,000 | 274% | 68% |
-| **4-firm portfolio** (LucidDaily promo + TTP + DayTraders + Topstep Consistency) | $58,311 | **345%** | **151%** ($18,553/yr on $12,248) |
+| 1 | LucidFlex 50K DLL ON ($80.50) | end of day, open losses ignored (Lucid's page) | $40,545 | $3,744 | $21,522 | −$4,108 | **QUALIFIES** (needs CrossTrade $49/mo, not included) |
+| 2 | Topstep 50K, Consistency payout path ($49/mo) | real time, open losses count (Topstep's page) | $37,406 | $3,454 | $6,384 | −$3,524 | **QUALIFIES** (bot works today) |
+| 3 | Topstep 50K, Standard path | same | $35,124 | $3,243 | $6,205 | −$4,058 | **QUALIFIES** |
+| 4 | LucidDaily 50K ($85.40: EOD eval, intraday funded) | eval end of day; funded intraday | $30,380 | $2,805 | $6,110 | −$4,526 | **QUALIFIES** (needs CrossTrade) |
+| — | DayTraders EOD 50K ($105 + $5) | real time (inferred) | $33,760 | $3,117 | −$5,937 | −$7,064 | fails |
+| — | TTP Futures Prime 50K ($99) | real time (inferred) | $26,700 | $2,465 | $3,521 | −$5,651 | fails ($50,495 if close-only) |
+| — | TradeDay 50K ($85 code) | real time (assumed) | $18,567 | $1,714 | −$1,486 | −$5,855 | fails |
+| — | LucidDaily ($165.20: EOD eval + EOD funded) | end of day | $44,558 | $4,114 | $10,241 | −$7,269 | fails (dip) |
+Manual entry (3-minute delay) on the corrected model: Topstep $29,020 (coin flip $4,540), nothing on the Topstep-only rule qualifies;
+Lucid manual not yet re-run on Lucid's rule. The old table (closed-P&L figures: LucidDaily $57,486, TTP $49,057, DayTraders $47,894 …),
+the old ROI table (ledger PR1) and the 4-firm portfolio ($195K) are superseded; see the audit file.
 
 ### 4b. DISAPPROVED — firm does not accept Malaysian residents (their own restricted-country lists)
 | Firm | Best product and figure (would have qualified) | Source |
