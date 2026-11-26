@@ -1,0 +1,10 @@
+=== uverify
+  FDUSDUSDT: 28644 hours
+  USDCUSDT: 55878 hours
+  TUSDUSDT: 55878 hours
+  BUSDUSDT: 34630 hours
+  USDPUSDT: 40161 hours
+  DAIUSDT: 470 hours
+  PAXUSDT: 14712 hours
+  USDSUSDT: 9134 hours
+  wrote batchc_verify_spot_1h.parquet: 239507 rows
