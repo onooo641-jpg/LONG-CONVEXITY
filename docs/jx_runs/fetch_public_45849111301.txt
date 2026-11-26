@@ -1,0 +1,8 @@
+=== ubatchk2
+  USDe (id 146) supply days: 1082
+  yahoo BTC=F: ok
+  yahoo ETH=F: ok
+  yahoo BTC-USD: ok
+  yahoo ETH-USD: ok
+  wrote batchk2_yahoo_1d.parquet: 10548 rows
+=== ubatchk2 done in 5s  ok 0 fail 0
