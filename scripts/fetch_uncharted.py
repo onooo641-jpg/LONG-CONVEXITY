@@ -1807,6 +1807,68 @@ def job_ucb442():
     save("batchc_coinbase_1d.parquet", pd.DataFrame(rows, columns=["prod", "t", "c"]))
 
 
+def job_upendle():
+    """#447 (docs/PREREG_BATCH_E_20261126.md): all Pendle markets expiring >= 2024-03-01, daily history; underlying daily USD prices."""
+    chainmap = {1: "ethereum", 42161: "arbitrum", 8453: "base", 56: "bsc", 146: "sonic", 999: "hyperliquid", 9745: "plasma",
+                5000: "mantle", 80094: "berachain", 10: "optimism"}
+    chains = (get("https://api-v2.pendle.finance/core/v1/chains", timeout=30) or {}).get("chainIds", []) or list(chainmap)
+    mk = []
+    for cid in chains:
+        for kind in ("active", "inactive"):
+            for m in (get(f"https://api-v2.pendle.finance/core/v1/{cid}/markets/{kind}", timeout=30) or {}).get("markets", []):
+                if pd.Timestamp(m["expiry"]) >= pd.Timestamp("2024-03-01", tz="UTC"):
+                    mk.append({"chain": cid, "kind": kind, "name": m.get("name"), "address": m["address"], "expiry": m["expiry"],
+                               "underlying": m.get("underlyingAsset"), "pt": m.get("pt")})
+    print(f"  pendle markets expiring >= 2024-03: {len(mk)}", flush=True)
+    save("batche_pendle_markets.parquet", pd.DataFrame(mk).astype(str))
+    rows, t0 = [], time.time()
+    for i, m in enumerate(mk):
+        if time.time() - t0 > 3 * 3600:
+            print("  history time cap hit", flush=True)
+            break
+        d = None
+        for u in (f"https://api-v2.pendle.finance/core/v2/{m['chain']}/markets/{m['address']}/historical-data?time_frame=day",
+                  f"https://api-v2.pendle.finance/core/v1/{m['chain']}/markets/{m['address']}/historical-data?time_frame=day"):
+            d = get(u, tries=2, timeout=30)
+            if d:
+                break
+        if not d:
+            continue
+        res = d.get("results") if isinstance(d, dict) else d
+        keys = ("timestamp", "impliedApy", "underlyingApy", "tvl", "ptPrice", "liquidity")
+        if isinstance(res, list):
+            for r in res:
+                rows.append({"address": m["address"], **{k: r.get(k) for k in keys}})
+        elif isinstance(d, dict) and "timestamp" in d:
+            n = len(d["timestamp"])
+            for j in range(n):
+                rows.append({"address": m["address"], **{k: (d[k][j] if isinstance(d.get(k), list) and len(d[k]) == n else None) for k in keys}})
+        if i % 100 == 0:
+            print(f"  history {i}/{len(mk)} rows {len(rows)}", flush=True)
+        time.sleep(0.25)
+    h = pd.DataFrame(rows)
+    for c in ("impliedApy", "underlyingApy", "tvl", "ptPrice", "liquidity"):
+        if c in h:
+            h[c] = pd.to_numeric(h[c], errors="coerce")
+    h["timestamp"] = h["timestamp"].astype(str)
+    save("batche_pendle_history.parquet", h)
+    px, seen = [], set()
+    for m in mk:
+        slug, ua = chainmap.get(int(m["chain"])), str(m.get("underlying") or "")
+        addr = ua.split("-")[-1] if "-" in ua else ua
+        if not slug or not addr.startswith("0x") or (slug, addr) in seen:
+            continue
+        seen.add((slug, addr))
+        t = int(pd.Timestamp("2024-01-01", tz="UTC").timestamp())
+        while t < time.time():
+            d = get(f"https://coins.llama.fi/chart/{slug}:{addr}?start={t}&span=500&period=1d", tries=2, timeout=30)
+            px += [(slug, addr, int(x["timestamp"]), float(x["price"])) for x in (((d or {}).get("coins") or {}).get(f"{slug}:{addr}") or {}).get("prices") or []]
+            t += 500 * 86400
+            time.sleep(0.15)
+    print(f"  underlying price points: {len(px)} for {len(seen)} assets", flush=True)
+    save("batche_underlying_1d.parquet", pd.DataFrame(px, columns=["chain_slug", "underlying", "t", "price"]))
+
+
 def job_uverify():
     """Verification V: Binance spot 1h klines for stablecoin/USDT pairs (archive), 2020-01..2026-10."""
     import io
@@ -1849,4 +1911,4 @@ def job_uprobe():
 
 
 JOBS = {"uprobe": job_uprobe, "u383vaults": _safe(job_u383vaults), "u384lst": _safe(job_u384lst), "u385hyperp": _safe(job_u385hyperp),
-        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive, "uhip3": _safe(job_uhip3), "uw3b": _safe(job_uw3b), "udistinct": _safe(job_udistinct), "unav": _safe(job_unav), "udln": _safe(job_udln), "udln2": _safe(job_udln2), "ubatcha": _safe(job_ubatcha), "urates": _safe(job_urates), "ubatchb": _safe(job_ubatchb), "ubatchc": _safe(job_ubatchc), "ubatchc2": _safe(job_ubatchc2), "uverify": _safe(job_uverify), "ubatchd": _safe(job_ubatchd), "ucb442": _safe(job_ucb442)}
+        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive, "uhip3": _safe(job_uhip3), "uw3b": _safe(job_uw3b), "udistinct": _safe(job_udistinct), "unav": _safe(job_unav), "udln": _safe(job_udln), "udln2": _safe(job_udln2), "ubatcha": _safe(job_ubatcha), "urates": _safe(job_urates), "ubatchb": _safe(job_ubatchb), "ubatchc": _safe(job_ubatchc), "ubatchc2": _safe(job_ubatchc2), "uverify": _safe(job_uverify), "ubatchd": _safe(job_ubatchd), "ucb442": _safe(job_ucb442), "upendle": _safe(job_upendle)}
