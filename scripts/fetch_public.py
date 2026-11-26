@@ -1901,6 +1901,48 @@ def job_ubatchi():
 JOBS["ubatchi"] = job_ubatchi
 
 
+def job_coinalyze_probe():
+    """Capability probe (no test): is the COINALYZE_API_KEY secret set, which exchanges/markets exist, and how far back daily and
+    hourly open-interest, funding and liquidation history go for BTC and a few alts. The key is read from the environment, never printed."""
+    import os
+    key = os.environ.get("COINALYZE_API_KEY", "")
+    print(f"  key present: {bool(key)}", flush=True)
+    if not key:
+        return
+    H = {"api_key": key, "Accept": "application/json"}
+
+    def call(path):
+        try:
+            with urllib.request.urlopen(urllib.request.Request("https://api.coinalyze.net/v1/" + path, headers=H), timeout=60) as r:
+                return r.status, json.loads(r.read().decode())
+        except urllib.error.HTTPError as e:
+            return e.code, None
+        except Exception as e:  # noqa: BLE001
+            return str(e)[:80], None
+    st, ex = call("exchanges")
+    print(f"  exchanges: HTTP {st}, {len(ex or [])}", flush=True)
+    st, mk = call("future-markets")
+    mk = mk or []
+    print(f"  future markets: HTTP {st}, {len(mk)}; perps {sum(1 for m in mk if m.get('is_perpetual'))}", flush=True)
+    save("coinalyze_future_markets.parquet", pd.DataFrame(mk).astype(str))
+    syms = [m["symbol"] for m in mk if m.get("is_perpetual") and m.get("base_asset") in ("BTC", "ETH", "SOL") and m.get("quote_asset") == "USDT"][:6]
+    now = int(time.time())
+    for ep in ("open-interest-history", "funding-rate-history", "liquidation-history"):
+        for interval in ("daily", "1hour", "5min"):
+            st, d = call(f"{ep}?symbols={','.join(syms[:3])}&interval={interval}&from={now - 8 * 365 * 86400}&to={now}")
+            for s in d or []:
+                h = s.get("history") or []
+                if h:
+                    print(f"  {ep} {interval} {s.get('symbol')}: {len(h)} points, {time.strftime('%Y-%m-%d', time.gmtime(h[0]['t']))} .. "
+                          f"{time.strftime('%Y-%m-%d', time.gmtime(h[-1]['t']))}", flush=True)
+            if not d:
+                print(f"  {ep} {interval}: HTTP {st}", flush=True)
+            time.sleep(2)
+
+
+JOBS["coinalyze_probe"] = job_coinalyze_probe
+
+
 def main(argv):
     OUT.mkdir(parents=True, exist_ok=True)
     for name in argv:
