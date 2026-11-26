@@ -1969,6 +1969,73 @@ def job_ubatchf3():
     save("batchf_ipo_px.parquet", pd.DataFrame(px, columns=["sym", "t", "c"]))
 
 
+def job_ubatchg():
+    """Batch G (docs/PREREG_BATCH_G_20261126.md): BTC daily (DefiLlama), difficulty, Yahoo SPY, FRED DEXJPUS, USDT supply by day,
+    Dukascopy EURUSD ticks on month-end days (hours 12-16 UTC)."""
+    import io
+    import lzma
+    import struct
+    rows, t = [], int(pd.Timestamp("2013-06-01", tz="UTC").timestamp())
+    while t < time.time():
+        d = get(f"https://coins.llama.fi/chart/coingecko:bitcoin?start={t}&span=500&period=1d", tries=2, timeout=30)
+        rows += [(int(x["timestamp"]), float(x["price"])) for x in (((d or {}).get("coins") or {}).get("coingecko:bitcoin") or {}).get("prices") or []]
+        t += 500 * 86400
+        time.sleep(0.2)
+    print(f"  btc daily: {len(rows)}", flush=True)
+    save("batchg_btc_1d.parquet", pd.DataFrame(rows, columns=["t", "c"]))
+    st, raw = _raw_get("https://api.blockchain.info/charts/difficulty?timespan=all&format=json&sampled=false", timeout=60)
+    try:
+        v = json.loads(raw.decode()).get("values", [])
+        save("batchg_difficulty.parquet", pd.DataFrame([(int(x["x"]), float(x["y"])) for x in v], columns=["t", "difficulty"]))
+    except Exception as e:  # noqa: BLE001
+        print(f"  difficulty FAIL HTTP {st} {e}", flush=True)
+    px = []
+    for sym in ("SPY", "QQQ", "IWM", "EFA"):
+        st, raw = _raw_get(f"https://query1.finance.yahoo.com/v8/finance/chart/{sym}?period1=946684800&period2=1793491200&interval=1d&events=div,split", timeout=40)
+        try:
+            r = json.loads(raw.decode())["chart"]["result"][0]
+            adj = r["indicators"].get("adjclose", [{}])[0].get("adjclose") or r["indicators"]["quote"][0]["close"]
+            px += [(sym, int(a), float(b)) for a, b in zip(r["timestamp"], adj) if b is not None]
+        except Exception as e:  # noqa: BLE001
+            print(f"  yahoo {sym} FAIL HTTP {st} {e}", flush=True)
+        time.sleep(1)
+    print(f"  yahoo rows {len(px)}", flush=True)
+    save("batchg_etf_1d.parquet", pd.DataFrame(px, columns=["sym", "t", "adj"]))
+    try:
+        with urllib.request.urlopen(urllib.request.Request("https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXJPUS", headers=UA), timeout=60) as r:
+            f = pd.read_csv(io.StringIO(r.read().decode()))
+        f.columns = ["date", "rate"]
+        f["rate"] = pd.to_numeric(f["rate"], errors="coerce")
+        save("batchg_dexjpus.parquet", f.dropna())
+    except Exception as e:  # noqa: BLE001
+        print(f"  fred DEXJPUS FAIL {e}", flush=True)
+    d = get("https://stablecoins.llama.fi/stablecoin/1", tries=2, timeout=60) or {}
+    tok = d.get("tokens") or []
+    save("batchg_usdt_supply.parquet", pd.DataFrame([(int(x["date"]), float((x.get("circulating") or {}).get("peggedUSD") or 0)) for x in tok], columns=["t", "supply"]))
+    print(f"  usdt supply days: {len(tok)}", flush=True)
+    out = []
+    days = []
+    for m in pd.period_range("2012-01", "2026-10", freq="M"):
+        dd = m.to_timestamp(how="end").normalize()
+        while dd.weekday() >= 5:
+            dd -= pd.Timedelta(days=1)
+        days.append(dd)
+    for dd in days:
+        for h in (12, 13, 14, 15, 16):
+            st, raw = _raw_get(f"https://datafeed.dukascopy.com/datafeed/EURUSD/{dd.year}/{dd.month - 1:02d}/{dd.day:02d}/{h:02d}h_ticks.bi5", timeout=30)
+            if st != 200 or not raw:
+                continue
+            try:
+                b = lzma.decompress(raw)
+            except Exception:  # noqa: BLE001
+                continue
+            for i in range(0, len(b) - 19, 20 * 50):  # every 50th tick is enough for minute-level marks
+                ms, ask, bid, _, _ = struct.unpack(">IIIff", b[i:i + 20])
+                out.append((dd.strftime("%Y-%m-%d"), h * 3600 + ms / 1000.0, (ask + bid) / 2 / 100000.0))
+    print(f"  dukascopy EURUSD month-end ticks kept: {len(out)}", flush=True)
+    save("batchg_eurusd_monthend.parquet", pd.DataFrame(out, columns=["day", "sec", "mid"]))
+
+
 def job_uverify():
     """Verification V: Binance spot 1h klines for stablecoin/USDT pairs (archive), 2020-01..2026-10."""
     import io
@@ -2011,4 +2078,4 @@ def job_uprobe():
 
 
 JOBS = {"uprobe": job_uprobe, "u383vaults": _safe(job_u383vaults), "u384lst": _safe(job_u384lst), "u385hyperp": _safe(job_u385hyperp),
-        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive, "uhip3": _safe(job_uhip3), "uw3b": _safe(job_uw3b), "udistinct": _safe(job_udistinct), "unav": _safe(job_unav), "udln": _safe(job_udln), "udln2": _safe(job_udln2), "ubatcha": _safe(job_ubatcha), "urates": _safe(job_urates), "ubatchb": _safe(job_ubatchb), "ubatchc": _safe(job_ubatchc), "ubatchc2": _safe(job_ubatchc2), "uverify": _safe(job_uverify), "ubatchd": _safe(job_ubatchd), "ucb442": _safe(job_ucb442), "upendle": _safe(job_upendle), "ubatchf": _safe(job_ubatchf), "ubatchf2": _safe(job_ubatchf2), "ubatchf3": _safe(job_ubatchf3)}
+        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive, "uhip3": _safe(job_uhip3), "uw3b": _safe(job_uw3b), "udistinct": _safe(job_udistinct), "unav": _safe(job_unav), "udln": _safe(job_udln), "udln2": _safe(job_udln2), "ubatcha": _safe(job_ubatcha), "urates": _safe(job_urates), "ubatchb": _safe(job_ubatchb), "ubatchc": _safe(job_ubatchc), "ubatchc2": _safe(job_ubatchc2), "uverify": _safe(job_uverify), "ubatchd": _safe(job_ubatchd), "ucb442": _safe(job_ucb442), "upendle": _safe(job_upendle), "ubatchf": _safe(job_ubatchf), "ubatchf2": _safe(job_ubatchf2), "ubatchf3": _safe(job_ubatchf3), "ubatchg": _safe(job_ubatchg)}
