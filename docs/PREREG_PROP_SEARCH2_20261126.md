@@ -122,3 +122,46 @@ They are modelled with `static_dd=True` only after the official page confirms th
 
 Bigger accounts earn more on the real path. But their coin flips are near zero and their dips deep: the money comes from the strategy,
 not the rules. That is the failure the bar is built to catch. LucidFlex 25K is the closest miss, at a dated price.
+
+### Stage C2 parameters (official, Topstep Labs page captured 2026-11-26)
+Source: `data/public/propverify/expand_lp_topstep_com_en_articles_15520357_topstep_labs.json`, run 45851179797. Registered before running.
+Topstep allows bots run from the trader's own device and accepts Malaysian residents (PROP_VERIFY).
+
+**Static combines.** Shared rules:
+- one-time fee, no resets: a failure means buying a new one;
+- 55% combine consistency;
+- mandatory DLL that *pauses* the day (modelled as a per-trade loss cap, as in the audit);
+- the static MLL never moves; after the first payout it moves to $0;
+- XFA path Standard (5 winning days of $150+, ≤ 50% of balance) or Consistency (40%, 3 days);
+- 90/10 split; Topstep API $14.50/month; real-time model (Topstep's page).
+
+| Size | Target | Static MLL | DLL | Micros | Price | XFA payout cap | XFA scaling |
+|---|---|---|---|---|---|---|---|
+| 25K | $2,000 | $1,000 | $500 | 20 | $75 | $4,000 | none (20) |
+| 50K | $4,000 | $2,000 | $1,000 | 40 | $149 | $8,000 | 2/3/4 minis (model ladder ×1, top step 50 → capped at 40) |
+| 100K | $8,000 | $4,000 | $2,000 | 100 | $199 | $10,000 | 3/4/5/10 minis (ladder ×2) |
+| 150K | $12,000 | $6,000 | $3,000 | 150 | $279 | $12,000 | 3/4/5/10/15 minis (ladder ×3) |
+
+Risk per trade = 0.45 × MLL. The DLL cap in base-trade units is $1,000 for every size (DLL = ½ MLL).
+
+**50K Daily Payouts+:**
+- EOD version: $119, $3,000 target, $2,000 MLL trailing the EOD balance (breach checked in real time);
+- Static version: $149, $4,000 target, $2,000 static MLL;
+- both: DLL $1,000; 50 micros; 55% combine consistency; no XFA consistency;
+- payout path modelled: 5 winning days, cap $4,000 (EOD) or $8,000 (Static). The daily path is not modelled.
+
+**Challenges** (two rounds from $0, each to +target before −MLL, static, no DLL, no consistency; fixed payout with no split; then the
+account closes; another is bought):
+
+| Challenge | Price | Target | MLL | Contracts |
+|---|---|---|---|---|
+| $1.5K | $39 | $1,500 | $500 | 2 micros |
+| $3K | $49 | $3,000 | $1,000 | 10 micros |
+| $6K | $149 | $6,000 | $2,000 | 10 micros |
+
+Trades use risk $900, scaled down to the contract cap (P&L × min(1, cap / contracts)). A breach is checked on the worst open P&L
+(`mae_usd`), as in the real-time model.
+- Real path and coin flip: same seed, 200 flips.
+- Dip: the worst peak-to-trough of cumulative net (payouts − fees).
+
+The same bar applies to every product.
