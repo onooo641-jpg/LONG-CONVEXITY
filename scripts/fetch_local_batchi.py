@@ -8,6 +8,7 @@ Resumable: finished days are cached under data/public/_cache_duka/ and skipped o
 from __future__ import annotations
 
 import json
+import os
 import lzma
 import struct
 import time
@@ -25,7 +26,9 @@ UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.3
 
 def sol_epochs():
     out = PUB / "batchi_sol_epochs.parquet"
-    have = pd.read_parquet(out) if out.exists() else pd.DataFrame(columns=["epoch", "slot", "t"])
+    ck = Path(os.environ.get("FETCH_CHECKPOINT_DIR", "/tmp")) / "batchi_sol_epochs.ckpt.parquet"  # progress saves stay out of the repo
+    src = ck if ck.exists() else out
+    have = pd.read_parquet(src) if src.exists() else pd.DataFrame(columns=["epoch", "slot", "t"])
 
     def rpc(method, params=None):
         body = json.dumps({"jsonrpc": "2.0", "id": 1, "method": method, "params": params or []}).encode()
@@ -51,7 +54,7 @@ def sol_epochs():
             time.sleep(0.5)
         time.sleep(1.0)
         if e % 25 == 0:  # checkpoint
-            pd.DataFrame(rows, columns=["epoch", "slot", "t"]).astype(int).sort_values("epoch").to_parquet(out)
+            pd.DataFrame(rows, columns=["epoch", "slot", "t"]).astype(int).sort_values("epoch").to_parquet(ck)
             print(f"  solana epoch {e}/{cur}, have {len(rows)}", flush=True)
     df = pd.DataFrame(rows, columns=["epoch", "slot", "t"]).astype(int).sort_values("epoch")
     df.to_parquet(out)
