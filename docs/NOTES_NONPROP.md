@@ -316,3 +316,4 @@ verdict, and only passes of ≥ ~$10K/yr count toward Jx's two.
   - High-frequency crypto timing ideas reach $10K+ on paper, but have not replicated on unseen symbols.
 - Next: Batch G remainder (fetch running), Batch I (#478–#487, mechanical clocks: FX rollover, WM/R fix, LBMA gold auction, Solana epochs,
   USO roll, Japanese ETF dividends, MSCI close, AUD month-end, delisting overreaction, January small caps).
+- **Batch G (#458–#467): 0/10.** Closest: #461 funding carry (S2 16.5%/yr, t 1.49) and the #462 1st/15th recurring-buy variant (+0.87%, t 2.20, ~$7.2K/yr; report-only, below $10K).

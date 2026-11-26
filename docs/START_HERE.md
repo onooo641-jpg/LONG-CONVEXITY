@@ -294,7 +294,7 @@ Counting variants of one mechanism as one idea. Files: `docs/PREREG_WICK_SCALE_2
 | D | #443–#446 | 0 | — |
 | E | #447 | 0 (8-pt variant holds, ~10 events/yr) | — |
 | F | #448–#457 | #455 mid-month 401(k) (~$3.2K/yr), #451 Treasury month-end (~$0.7K/yr) | no |
-| G | #458–#467 | pending fetch (4 run: all fail) | — |
+| G | #458–#467 | 0 (#461 carry t 1.49; #462 1st/15th variant t 2.20, ~$7.2K, report-only) | no |
 | H | #468–#477 | #468 passed its own sample (~$23.9K/yr) but **failed confirmation** on 110 unseen perps | no |
 | I | #478–#487 | pre-registered, fetch running | — |
 

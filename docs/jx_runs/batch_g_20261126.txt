@@ -1,0 +1,60 @@
+===== Batch G (docs/PREREG_BATCH_G_20261126.md)
+
+#### #458 miner margin squeeze (difficulty +5% -> short BTC 7 days)
+  #458 up>=5% short Stage 1: n 73, mean 0.253%, t 0.18, win 60%
+  #458 up>=5% short Stage 2: n 17, mean -0.848%, t -0.35, win 47%
+  VERDICT (#458 up>=5% short): FAIL (Stage 1 survives); $-1,112/yr at safe size
+  #458 variant down<=-5% long Stage 1: n 9, mean -4.764%, t -1.37, win 33%
+  #458 variant down<=-5% long Stage 2: n 5, mean -1.230%, t -1.02, win 40%
+  VERDICT (#458 variant down<=-5% long): KILL
+
+#### #459 Treasury coupon reinvestment around the 15th (long duration, DGS10)
+  #459 Feb/May/Aug/Nov Stage 1: n 80, mean 1.44, t 1.02, win 55%
+  #459 Feb/May/Aug/Nov Stage 2: n 67, mean 0.11, t 0.08, win 52%
+  VERDICT (#459 Feb/May/Aug/Nov): FAIL (Stage 1 survives); $22/yr at safe size
+  #459 variant all months Stage 1: n 240, mean 0.27, t 0.33, win 50%
+  #459 variant all months Stage 2: n 202, mean 0.26, t 0.39, win 55%
+  VERDICT (#459 variant all months): FAIL (Stage 1 survives); $157/yr at safe size
+
+#### #460 FX month-end hedge rebalancing at the London 16:00 fix (EURUSD)
+  #460 EURUSD Stage 1: n 11, mean -18.88, t -1.85, win 18%
+  #460 EURUSD Stage 2: n 10, mean -3.67, t -0.50, win 40%
+  VERDICT (#460 EURUSD): KILL
+
+#### #461 crypto funding carry cross-section (40 Binance perps, weekly)
+  Stage 1 2021-2022: weeks 104, mean weekly 1.587%, t 2.74, annualised 82.5%, worst week -10.9%
+  Stage 2 2023-2026-10: weeks 199, mean weekly 0.318%, t 1.49, annualised 16.5%, worst week -7.1%
+  VERDICT (#461): FAIL; $4,961/yr on $30K gross ($15K x2)
+
+#### #462 payday recurring buys (BTC, 24th -> 27th)
+  #462 25th Stage 1: n 82, mean -0.099%, t -0.16, win 43%
+  #462 25th Stage 2: n 52, mean -0.173%, t -0.29, win 46%
+  VERDICT (#462 25th): KILL
+  #462 variant 1st/15th Stage 1: n 163, mean 0.525%, t 1.27, win 56%
+  #462 variant 1st/15th Stage 2: n 107, mean 0.872%, t 2.20, win 53%
+  VERDICT (#462 variant 1st/15th): PASS (Stage 1 survives); $7,203/yr at safe size
+
+#### #463 buyback open windows (SPY, excess over same-length windows)
+  #463 SPY Stage 1: n 52, mean -0.986%, t -1.27, win 48%
+  #463 SPY Stage 2: n 56, mean 0.269%, t 0.38, win 64%
+  VERDICT (#463 SPY): KILL
+
+#### #464 fixed-time DCA buying (long BTC 00:00 -> 02:00 UTC daily)
+  #464 BTC Stage 1: n 1095, mean -0.077%, t -2.09, win 45%
+  #464 BTC Stage 2: n 1400, mean -0.093%, t -4.80, win 41%
+  VERDICT (#464 BTC): KILL
+
+#### #465 CME bitcoin-futures expiry (short BTC 4 h before BRR end, last Friday)
+  #465 BTC Stage 1: n 48, mean -0.373%, t -1.89, win 35%
+  #465 BTC Stage 2: n 34, mean 0.163%, t 0.75, win 56%
+  VERDICT (#465 BTC): KILL
+
+#### #466 Japanese month-start buying (long USD/JPY, last business day -> 3rd business day)
+  #466 USDJPY Stage 1: n 108, mean 0.085%, t 0.85, win 59%
+  #466 USDJPY Stage 2: n 94, mean -0.047%, t -0.40, win 48%
+  VERDICT (#466 USDJPY): FAIL (Stage 1 survives); $-852/yr at safe size
+
+#### #467 large USDT supply jumps (>= $500M day over day) -> long BTC 24 h
+  #467 BTC Stage 1: n 66, mean 0.542%, t 0.84, win 50%
+  #467 BTC Stage 2: n 70, mean -0.050%, t -0.17, win 46%
+  VERDICT (#467 BTC): FAIL (Stage 1 survives); $-411/yr at safe size

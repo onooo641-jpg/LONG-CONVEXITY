@@ -39,3 +39,20 @@ Notes:
 - Data job `ubatchg`: DefiLlama BTC daily, blockchain.info difficulty, Dukascopy EURUSD on month-end days, Yahoo SPY, FRED DEXJPUS,
   DefiLlama USDT chain history.
 - Script `scripts/batch_g_20261126.py`; output `docs/jx_runs/batch_g_20261126.txt` (re-run once, identical).
+
+## Results (2026-11-26; `docs/jx_runs/batch_g_20261126.txt`, re-run identical)
+
+| # | Verdict | Key figures | $/yr at safe size |
+|---|---|---|---|
+| 458 miner margin squeeze | FAIL | S1 +0.25% (t 0.18); S2 −0.85% (n 17); down-variant KILL | −$1.1K |
+| 459 Treasury coupon reinvestment | FAIL | Feb/May/Aug/Nov and all-month both below 0.5 bp / t 2 | $22 |
+| 460 FX month-end hedge rebalancing | KILL | S1 −18.9 pip (n 11) | — |
+| 461 crypto funding carry cross-section | FAIL | S1 82.5%/yr (t 2.74) → S2 16.5%/yr, t 1.49 | ~$5.0K |
+| 462 payday recurring buys | KILL (main, 25th) | main S1 −0.10%. **Variant 1st/15th (reported only): S2 +0.87%, t 2.20** | variant ~$7.2K (does not count: variant, < $10K) |
+| 463 buyback open windows | KILL | S1 −0.99% excess | — |
+| 464 fixed-time DCA | KILL | | — |
+| 465 CME bitcoin-futures expiry | KILL | S1 −0.37% | — |
+| 466 Japanese month-start buying | FAIL | S1 +0.09%, S2 −0.05% | −$852 |
+| 467 large USDT mints | FAIL | S1 +0.54%, S2 −0.05% | −$411 |
+
+**Batch G verdict: 0 of 10 count.** #461 and the #462 variant are the closest. Neither clears both significance and $10K/yr.
