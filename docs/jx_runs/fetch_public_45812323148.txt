@@ -1,0 +1,10 @@
+=== ubatchi
+  wrote batchi_yahoo_1d.parquet: 37983 rows
+  wrote batchi_ir3m.parquet: 2962 rows
+  delist announcements 33, token-months 297, rows 156618
+  wrote batchi_delist_spot_1h.parquet: 156618 rows
+  solana time cap hit
+  solana epochs 275 (current 1097)
+  wrote batchi_sol_epochs.parquet: 275 rows
+  dukascopy EURUSD: days 516, rows 80496, order check (f3 low, f4 high) 1.000 (7669s)
+  wrote batchi_duka_eurusd.parquet: 80496 rows
