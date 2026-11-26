@@ -17,3 +17,4 @@ run_bridge.bat
 data/roundtrip_proof.json
 
 cache/
+data/public/_cache_duka/
