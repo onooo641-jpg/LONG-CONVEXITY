@@ -85,17 +85,106 @@ def part418():
 
 
 def part417():
-    print("\n#### #417 deBridge DLN takers: newcomer income")
-    p = PUB / "solvers_dln_orders.json.gz"
-    pr = PUB / "solvers_dln_probe.json"
+    print("\n#### #417 deBridge DLN takers: newcomer income (sampled order blocks, addendum)")
+    p = PUB / "solvers_dln_sample.json.gz"
     if not p.exists():
-        if pr.exists():
-            print("  probe only: " + json.dumps(json.loads(pr.read_text()))[:600])
-        print("  orders not fetched: not testable yet")
+        print("  sampled orders not fetched yet (job udln2)")
         return
     with gzip.open(p, "rt") as f:
         orders = json.load(f)
-    print(f"  orders fetched: {len(orders)}; first order keys: {sorted(orders[0].keys())[:40] if orders else None}")
+    px = pd.read_parquet(PUB / "solvers_dln_prices.parquet")
+    px["day"] = pd.to_datetime(px["t"], unit="s", utc=True).dt.normalize()
+    P = px.drop_duplicates(["id", "day"]).pivot(index="day", columns="id", values="price").sort_index()
+    sym_id = {"ETH": "ethereum", "WETH": "ethereum", "BNB": "binancecoin", "WBNB": "binancecoin", "SOL": "solana", "WSOL": "solana",
+              "BTC": "bitcoin", "WBTC": "bitcoin", "CBBTC": "bitcoin", "BTCB": "bitcoin", "AVAX": "avalanche-2", "WAVAX": "avalanche-2",
+              "POL": "polygon-ecosystem-token", "WPOL": "polygon-ecosystem-token", "MATIC": "matic-network", "WMATIC": "matic-network"}
+    stable = {"USDC", "USDT", "DAI", "USDC.E", "USDBC", "USDT0", "USD₮0", "USDT.E", "BUSD"}
+    native = {1: "ethereum", 10: "ethereum", 42161: "ethereum", 8453: "ethereum", 59144: "ethereum", 56: "binancecoin",
+              7565164: "solana", 43114: "avalanche-2", 137: "polygon-ecosystem-token"}
+
+    def price(sym, day):
+        sym = (sym or "").upper()
+        if sym in stable:
+            return 1.0
+        g = sym_id.get(sym)
+        if g is None or g not in P:
+            return np.nan
+        v = P[g].asof(day)
+        return float(v) if pd.notna(v) else np.nan
+
+    def sv(x, *ks):
+        for k in ks:
+            x = (x or {}).get(k)
+        return x.get("stringValue") if isinstance(x, dict) else x
+    rows, skipped = [], 0
+    for o in orders:
+        g, t = o.get("giveOfferWithMetadata") or {}, o.get("takeOfferWithMetadata") or {}
+        ts = int(o.get("creationTimestamp") or 0)
+        day = pd.Timestamp(ts, unit="s", tz="UTC").normalize()
+        pg, pt = price(g.get("symbol"), day), price(t.get("symbol"), day)
+        if pd.isna(pg) or pd.isna(pt):
+            skipped += 1
+            continue
+        try:
+            ga = int(sv(g, "finalAmount")) / 10 ** int(g.get("decimals"))
+            ta = int(sv(t, "finalAmount")) / 10 ** int(t.get("decimals"))
+            pf = int(sv(o, "finalPercentFee") or 0) / 10 ** int(g.get("decimals"))
+            ff = int(sv(o, "fixFee") or 0) / 1e18
+        except (TypeError, ValueError):
+            skipped += 1
+            continue
+        chain = int(sv(g, "chainId") or 0)
+        pn = price({"ethereum": "ETH", "binancecoin": "BNB", "solana": "SOL", "avalanche-2": "AVAX", "polygon-ecosystem-token": "POL"}.get(native.get(chain, ""), ""), day)
+        give, take = ga * pg, ta * pt
+        margin = give - take - pf * pg - (ff * pn if pd.notna(pn) else 0.0)
+        if give <= 0 or abs(margin) / give > 0.05:
+            skipped += 1
+            continue
+        rows.append({"offset": o.get("_offset"), "ts": ts, "taker": (sv(o, "unlockAuthorityDst") or "?").lower(), "give": give, "margin": margin})
+    d = pd.DataFrame(rows)
+    print(f"  sampled orders {len(orders)}; priced {len(d)}; excluded (unpriced token or > 5% mismatch) {skipped}")
+    if d.empty:
+        print("  STAGE VERDICT (#417): not testable (nothing priced)")
+        return
+    blk = d.groupby("offset").agg(n=("ts", "size"), t=("ts", "median"))
+    blk_all = pd.Series({off: sum(1 for o in orders if o.get("_offset") == off) for off in blk.index})
+    gap = pd.Series(sorted(blk.index)).diff().shift(-1).fillna(25000).values
+    w = pd.Series(gap, index=sorted(blk.index)) / blk_all.reindex(sorted(blk.index)).values  # orders represented per sampled order
+    d["w"] = d["offset"].map(w)
+    d["day"] = pd.to_datetime(d["ts"], unit="s", utc=True)
+    print(f"  blocks {len(blk)}; time span {d['day'].min().date()}..{d['day'].max().date()}; median weight {w.median():.1f} orders per sampled order")
+    print(f"  volume-weighted margin {1e4 * (d['margin'] * d['w']).sum() / (d['give'] * d['w']).sum():.2f} bps; estimated annual margin pool "
+          f"${(d['margin'] * d['w']).sum() / max((d['day'].max() - d['day'].min()).days, 1) * 365:,.0f}/yr")
+    tot = (d["margin"] * d["w"]).groupby(d["taker"]).sum().sort_values(ascending=False)
+    top3 = float(tot.head(3).sum() / tot[tot > 0].sum()) if (tot > 0).any() else np.nan
+    print(f"  takers seen: {len(tot)}; top-3 share of positive margin {top3:.0%}")
+    first = d.groupby("taker")["day"].min()
+    start = d["day"].min()
+    coh = {"A (first seen 2024)": [], "B (first seen 2025)": []}
+    out = []
+    for tk, ft in first.items():
+        if ft < start + pd.Timedelta(days=30):
+            continue  # present at the start of the sample: incumbent, not a newcomer
+        fb = d[(d["taker"] == tk) & (d["day"] == ft)]["offset"].iloc[0]
+        blk_rank = (d[d["offset"] == fb].groupby("taker")["margin"].sum().sort_values(ascending=False)).head(5).index
+        if tk in blk_rank and len(d[d["offset"] == fb]["taker"].unique()) > 5:
+            continue  # top-5 in its first block: likely an incumbent's new address
+        g = d[(d["taker"] == tk) & (d["day"] <= ft + pd.Timedelta(days=365))]
+        span = min(365, (d["day"].max() - ft).days)
+        if span < 180:
+            continue
+        ann = (g["margin"] * g["w"]).sum() * 365 / span - INFRA
+        key = "A (first seen 2024)" if ft.year == 2024 else ("B (first seen 2025)" if ft.year == 2025 else None)
+        out.append({"taker": tk[:12], "first": ft.date(), "orders_sampled": len(g), "ann_net": ann})
+        if key:
+            coh[key].append(ann)
+    t = pd.DataFrame(out)
+    if len(t):
+        print(t.sort_values("first").to_string(index=False, float_format=lambda x: f"{x:12,.0f}"))
+    v = verdict(coh)
+    if v == "PASS" and not (top3 < 0.90):
+        v = "inconclusive (cohorts pass but top-3 share >= 90%)"
+    print(f"  STAGE VERDICT (#417): {v}")
 
 
 def main():
