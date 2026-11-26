@@ -9,7 +9,7 @@ The diagnostics (in `docs/jx_runs/batch_h_20261126.txt`) make it fragile:
 - the median timestamp is −0.055%;
 - dropping the 10 best timestamps leaves mean 0.049%, t 0.97;
 - all of the profit is on the long side (negative funding → long into settlement); the short side lost −0.09% per event;
-- AXS and ZEC give about 45% of the sum.
+- AXS and ZEC give 84% of the net sum (corrected after commit: the first draft said 45%; the rule and criteria are unchanged).
 
 Before #468 counts toward Jx's two, it must replicate on coins it has never seen and show it can be traded on Hyperliquid.
 

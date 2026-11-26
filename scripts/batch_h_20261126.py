@@ -54,6 +54,75 @@ def part468():
     print(f"  raw symbol-events: {len(main)}")
     judge("#468 main (per timestamp)", clustered(main), "2023-01-01", "2020-01-01", "2026-11-01", 100, 0.0005, 45000)
     judge("#468 variant re-entry T..T+2h", clustered(var), "2023-01-01", "2020-01-01", "2026-11-01", 100, 0.0005, 45000)
+    e = _settle_events(k, f, "2023-01-01", "2026-11-01")
+    c = e.groupby("day")["ret"].mean()
+    drop = c.drop(c.nlargest(10).index)
+    sh = e.groupby("sym")["ret"].sum().sort_values(ascending=False)
+    print(f"  diagnostics (post-result, reported only): Stage 2 median {c.median():.3%}; without best 10 timestamps mean {drop.mean():.3%}, "
+          f"t {tstat(drop):.2f}; long side n {(e['side'] > 0).sum()} mean {e[e['side'] > 0]['ret'].mean():.3%}, short side n "
+          f"{(e['side'] < 0).sum()} mean {e[e['side'] < 0]['ret'].mean():.3%}; top-2 symbols {', '.join(sh.index[:2])} = "
+          f"{sh.iloc[:2].sum() / sh.sum():.0%} of the sum; by year " + ", ".join(f"{yr} {g.mean():.3%}" for yr, g in c.groupby(c.index.year)))
+
+
+def _settle_events(k, f, lo, hi, price_col="close", sym_col="sym", hl_map=None):
+    px = {s: pd.Series(g[price_col].to_numpy(), index=pd.to_datetime(g["t"], unit="s", utc=True)).sort_index() for s, g in k.groupby(sym_col)}
+    px = {s: v[~v.index.duplicated()] for s, v in px.items()}
+    out = []
+    for s, g in f.groupby("sym"):
+        key = hl_map.get(s) if hl_map is not None else s
+        if key not in px:
+            continue
+        x = px[key]
+        g = g.sort_values("t")
+        ts = pd.to_datetime(g["t"], unit="s", utc=True).dt.floor("h").to_numpy()
+        rt = g["rate"].to_numpy()
+        for i in range(1, len(g)):
+            sig = rt[i - 1]
+            T = pd.Timestamp(ts[i])
+            if abs(sig) < 0.0005 or not (pd.Timestamp(lo, tz="UTC") <= T < pd.Timestamp(hi, tz="UTC")):
+                continue
+            p0, p1 = at(x, T - pd.Timedelta(hours=2)), at(x, T)
+            if p0 is None or p1 is None or not (p0 > 0):
+                continue
+            sd = -1 if sig > 0 else 1
+            out.append({"day": T, "sym": s, "side": sd, "ret": sd * (p1 / p0 - 1) - 2 * FEE})
+    return pd.DataFrame(out)
+
+
+def part468c():
+    print("\n#### #468 confirmation (docs/PREREG_468_CONFIRM_20261126.md): unseen Binance perps 2023-01..2026-10 + Hyperliquid venue check")
+    pk, pf, ph = (PUB / f"batchh2_{n}.parquet" for n in ("unseen_1h", "unseen_funding", "hl_1h"))
+    if not (pk.exists() and pf.exists()):
+        print("  data not fetched yet (ubatchh2)")
+        return
+    k, f = pd.read_parquet(pk), pd.read_parquet(pf)
+    e = _settle_events(k, f, "2023-01-01", "2026-11-01")
+    print(f"  unseen symbols with klines {k['sym'].nunique()}, with funding {f['sym'].nunique()}; symbol-events {len(e)}")
+    c = e.groupby("day")["ret"].mean() if len(e) else pd.Series(dtype=float)
+    drop = c.drop(c.nlargest(10).index) if len(c) else c
+    print(f"  C1: timestamps {len(c)}, mean {c.mean():.3%}, median {c.median():.3%}, t {tstat(c):.2f}; "
+          f"without best 10: mean {drop.mean():.3%}, t {tstat(drop):.2f}")
+    if len(e):
+        print("    by side: " + ", ".join(f"{'long' if sd > 0 else 'short'} n {len(g)} mean {g['ret'].mean():.3%}" for sd, g in e.groupby("side")))
+    c1 = len(c) >= 300 and c.mean() >= 0.0005 and tstat(c) >= 2 and drop.mean() > 0
+    yrs = (pd.Timestamp("2026-11-01") - pd.Timestamp("2023-01-01")).days / 365.25
+    print(f"  C1 verdict: {'HOLDS' if c1 else 'FAILS'}")
+    if ph.exists():
+        h = pd.read_parquet(ph)
+        fa = pd.concat([f, pd.read_parquet(PUB / "batchd_alts_funding.parquet")], ignore_index=True)
+        hl_map = {s: s[:-4] for s in fa["sym"].unique()}
+        lo = pd.to_datetime(h["t"], unit="s", utc=True).min() if len(h) else pd.Timestamp("2026-11-01", tz="UTC")
+        eh = _settle_events(h, fa, str(lo.tz_localize(None)), "2026-11-27", sym_col="coin", hl_map=hl_map)
+        ch = eh.groupby("day")["ret"].mean() if len(eh) else pd.Series(dtype=float)
+        eb = _settle_events(pd.concat([k, pd.read_parquet(PUB / "batchd_alts_1h.parquet")]), fa, str(lo.tz_localize(None)), "2026-11-27")
+        cb = eb.groupby("day")["ret"].mean() if len(eb) else pd.Series(dtype=float)
+        print(f"  C2 (reported): Hyperliquid prices from {lo.date()}: {h['coin'].nunique()} coins, timestamps {len(ch)}, mean {ch.mean():.3%}, t {tstat(ch):.2f}; "
+              f"same window on Binance prices: timestamps {len(cb)}, mean {cb.mean():.3%}, t {tstat(cb):.2f}")
+    base = _settle_events(pd.read_parquet(PUB / "batchd_alts_1h.parquet"), pd.read_parquet(PUB / "batchd_alts_funding.parquet"), "2023-01-01", "2026-11-01")
+    allc = pd.concat([base, e]).groupby("day")["ret"].mean()
+    print(f"  combined universe 2023-01..2026-10: timestamps {len(allc)}, mean {allc.mean():.3%}, t {tstat(allc):.2f}, "
+          f"${allc.sum() * 45000 / yrs:,.0f}/yr at $45K per timestamp")
+    print(f"  #468 CONFIRMATION VERDICT: {'CONFIRMED' if c1 else 'FAILS CONFIRMATION (PASS on own sample only; does not count)'}")
 
 
 def vx_panel():
@@ -301,6 +370,7 @@ def main():
     part475(y)
     part476()
     part477(y)
+    part468c()
 
 
 if __name__ == "__main__":
