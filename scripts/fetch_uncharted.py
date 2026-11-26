@@ -2036,6 +2036,25 @@ def job_ubatchg():
     save("batchg_eurusd_monthend.parquet", pd.DataFrame(out, columns=["day", "sec", "mid"]))
 
 
+def job_ubatchh():
+    """Batch H (docs/PREREG_BATCH_H_20261126.md): Yahoo daily open/close/adjclose for TSLA NVDA MSTR COIN PLTR SMCI AMD MTUM SPY ^N225."""
+    px = []
+    for sym in ("TSLA", "NVDA", "MSTR", "COIN", "PLTR", "SMCI", "AMD", "MTUM", "SPY", "^N225"):
+        q = urllib.parse.quote(sym)
+        st, raw = _raw_get(f"https://query1.finance.yahoo.com/v8/finance/chart/{q}?period1=946684800&period2=1793491200&interval=1d&events=div,split", timeout=40)
+        try:
+            r = json.loads(raw.decode())["chart"]["result"][0]
+            qd = r["indicators"]["quote"][0]
+            adj = (r["indicators"].get("adjclose") or [{}])[0].get("adjclose") or qd["close"]
+            n0 = len(px)
+            px += [(sym, int(t), o, c, a) for t, o, c, a in zip(r["timestamp"], qd["open"], qd["close"], adj) if c is not None and a is not None]
+            print(f"  yahoo {sym}: {len(px) - n0} rows", flush=True)
+        except Exception as e:  # noqa: BLE001
+            print(f"  yahoo {sym} FAIL HTTP {st} {e}", flush=True)
+        time.sleep(1)
+    save("batchh_yahoo_1d.parquet", pd.DataFrame(px, columns=["sym", "t", "open", "close", "adj"]))
+
+
 def job_uverify():
     """Verification V: Binance spot 1h klines for stablecoin/USDT pairs (archive), 2020-01..2026-10."""
     import io
@@ -2078,4 +2097,4 @@ def job_uprobe():
 
 
 JOBS = {"uprobe": job_uprobe, "u383vaults": _safe(job_u383vaults), "u384lst": _safe(job_u384lst), "u385hyperp": _safe(job_u385hyperp),
-        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive, "uhip3": _safe(job_uhip3), "uw3b": _safe(job_uw3b), "udistinct": _safe(job_udistinct), "unav": _safe(job_unav), "udln": _safe(job_udln), "udln2": _safe(job_udln2), "ubatcha": _safe(job_ubatcha), "urates": _safe(job_urates), "ubatchb": _safe(job_ubatchb), "ubatchc": _safe(job_ubatchc), "ubatchc2": _safe(job_ubatchc2), "uverify": _safe(job_uverify), "ubatchd": _safe(job_ubatchd), "ucb442": _safe(job_ucb442), "upendle": _safe(job_upendle), "ubatchf": _safe(job_ubatchf), "ubatchf2": _safe(job_ubatchf2), "ubatchf3": _safe(job_ubatchf3), "ubatchg": _safe(job_ubatchg)}
+        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive, "uhip3": _safe(job_uhip3), "uw3b": _safe(job_uw3b), "udistinct": _safe(job_udistinct), "unav": _safe(job_unav), "udln": _safe(job_udln), "udln2": _safe(job_udln2), "ubatcha": _safe(job_ubatcha), "urates": _safe(job_urates), "ubatchb": _safe(job_ubatchb), "ubatchc": _safe(job_ubatchc), "ubatchc2": _safe(job_ubatchc2), "uverify": _safe(job_uverify), "ubatchd": _safe(job_ubatchd), "ucb442": _safe(job_ucb442), "upendle": _safe(job_upendle), "ubatchf": _safe(job_ubatchf), "ubatchf2": _safe(job_ubatchf2), "ubatchf3": _safe(job_ubatchf3), "ubatchg": _safe(job_ubatchg), "ubatchh": _safe(job_ubatchh)}

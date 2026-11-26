@@ -1,2 +1,3 @@
-# jobs (docs read, no measurement)
-liq_basedocs
+# jobs for scripts/fetch_public.py (one per line)
+# Batch H Yahoo pull (workstream C)
+ubatchh

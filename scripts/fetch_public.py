@@ -1871,6 +1871,16 @@ JOBS.update({f"liq_comet_{c}{suf}": (lambda n: (lambda: job_liq_comet(n)))(f"com
 JOBS.update({f"liq_{c}_pilot": (lambda c: (lambda: job_liq_chain(c + "_pilot")))(c) for c in NEW_CHAINS})
 
 
+def job_ubatchh():
+    """Batch H Yahoo pull (non-prop workstream C; defined in fetch_uncharted.py)."""
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from fetch_uncharted import job_ubatchh as _j
+    _j()
+
+
+JOBS["ubatchh"] = job_ubatchh
+
+
 def main(argv):
     OUT.mkdir(parents=True, exist_ok=True)
     for name in argv:
