@@ -93,3 +93,89 @@ stop or target fill. Every corrected-model figure rose. Topstep 50K Standard wen
 - DayTraders 100K / 150K Static, whose prices are unknown: risk $900 and 0.45 × MLL.
 
 Script: `scripts/prop_search3_e2_20261126.py`.
+
+## Results (2026-11-26; corrected engine incl. audit addendum 3; all outputs re-run identical)
+Bar: real ≥ $19,017, coin flip ≥ $5,000, dip ≥ −$5,794 (Topstep 50K Standard, bot, real-time: $38,034, dip −$3,862).
+
+### (A) Market mix (`docs/jx_runs/marketmix_corrected_20261126.txt`)
+The regenerated ES/YM trades reproduce the earlier figures exactly on the closed-P&L model (NQ $44,359, ES $20,338, YM $11,744).
+
+**Single accounts:**
+
+| Product | NQ | ES | YM |
+|---|---|---|---|
+| Topstep 50K Consistency | $39,949 / flip $7,699 — qualifies | $6,023 — fails | $3,997 — fails |
+| **LucidFlex 50K DLL ON (EOD)** | $40,545 / $21,522 — qualifies | **$26,480 / flip $14,926 (94%) / dip −$2,230 — QUALIFIES** | $12,359 — fails |
+| LucidDaily $85.40 | $35,798 / $8,115 — qualifies | $9,413 — fails | $7,699 — fails |
+
+**Portfolios (anti-hedge filter; MFFU dropped):**
+
+| Comparison | Net | Cash on hand | Net per $ of cash | Verdict |
+|---|---|---|---|---|
+| 5 Topstep: 3 NQ / 1 ES / 1 YM vs all NQ | −30% | −36% | +8% | not worth it |
+| **5 LucidFlex: 3 NQ / 1 ES / 1 YM vs all NQ** | **$163K vs $206K (−21%)** | **$10.0K vs $19.5K (−49%)** | **+55%** | **WORTH DOING** |
+| 5 Topstep + 5 Lucid, mixed vs all NQ | −25.5% (limit −25%) | −47% | +40% | not worth it (misses the net rule by 0.5 pt) |
+
+Monthly correlation: NQ–ES 0.12, NQ–YM 0.02, ES–YM −0.08. The live bot needs the cross-account anti-hedge check before a second
+market is traded.
+
+### (B) Bigger accounts with the same $900 risk (`docs/jx_runs/prop_search3_20261126.txt`)
+**Same risk makes bigger accounts worse**, not better. The targets grow while the trades do not, so the coin flips turn negative:
+- Topstep 100K Standard: $24.1K, flip −$5.7K;
+- Topstep 150K Standard: $4.0K;
+- LucidFlex 150K: $6.2K.
+
+With risk scaled to 0.45 × MLL, the Topstep 100K/150K Static (Consistency) are strong, but fail the registered dip limit:
+- 150K Static Consistency: $110.4K, flip $33.2K (92%), dip −$8.9K;
+- 100K Static Consistency: $73.1K, flip $18.3K, dip −$6.5K.
+
+They qualify only on the size-scaled reading (F), as do Topstep 100K/150K Static Standard and Topstep 150K Consistency.
+
+**DayTraders 100K/150K Static qualify on the registered bar at a $55 placeholder price:** 100K $25.0K, flip $11.1K, dip −$2.9K;
+150K $52.3K, flip $10.0K, dip −$1.9K. Their real prices are unknown; see E2.
+
+### (C) Firms whose loss limit ignores open losses
+Official-page quotes:
+- **Lucid** (known);
+- **Funded Futures Network Standard MAX**: EOD drawdown; "intraday losses beyond the DLL are managed by the soft breach lockout, not
+  the drawdown"; open dips "NOT caught by the system";
+- **City Traders Imperium**: "drawdown is calculated from account balance, not equity"; "No equity-based drawdown on any program".
+  CTI is a CFD firm (MT5 / Match-Trader), so the bot would need porting. It is not priced here.
+
+Count open losses (real-time): BluSky ("falls... at any point"), DayTraders (all plans), FundedNext, Blueberry. Tradeify, Purdia and
+Goat only state that open *profits* do not raise the floor.
+
+### (D) Funded Futures Network Standard MAX
+Malaysia is not on FFN's restricted list. Bots are allowed at FFN's discretion. Modelled with `realtime_mll=False`.
+
+| Price | 50K | 100K (risk $1,620) | 150K (risk $2,250) |
+|---|---|---|---|
+| List ($178/$348/$408 + $120 activation) | fails | fails | fails |
+| **Promo $53.40/$104.40/$122.40, activation waived** | **$24.0K, flip $6.1K (81%), dip −$4.1K — QUALIFIES** | **$38.6K, flip $12.9K (91%), dip −$5.3K — QUALIFIES** | **$43.3K, flip $16.3K (92%), dip −$5.6K — QUALIFIES** |
+
+### (E) Break-even prices (registered bar)
+
+| Product | Break-even | Price now |
+|---|---|---|
+| DayTraders S2F 50K | $251 | $342 |
+| LucidDirect 50K (EOD) | $303 | $360.50 |
+| TTP Instant 50K | $321 | $499 |
+| DayTraders 50K Trail | $55 | $70 |
+| LucidFlex 25K | $80 | $100 |
+| Topstep $3K Challenge | qualifies at $0 (break-even not computed) | $49 |
+
+**E2** (`docs/jx_runs/prop_search3_e2_20261126.txt`, re-run identical):
+- **FFN 50K: $96 with the activation waived**, $65 with the $120 activation (list $178);
+- **FFN 100K (risk $1,620): $154 waived**, $88 with activation (list $348);
+- **FFN 150K (risk $2,250): $149 waived**, $89 with activation (list $408);
+- **DayTraders 100K Static: up to $90** (risk $900);
+- **DayTraders 150K Static: up to $93** (risk $900).
+
+### Verdict
+New qualifiers, conditional:
+1. **LucidFlex 50K on ES**: unconditional; Lucid's own rule, no price assumption. **The 5-LucidFlex 3/1/1 mix is worth doing.**
+2. **Funded Futures Network** (a new firm), all sizes, **when bought at or below the break-even with the activation waived**. FFN's
+   50%-off deals clear it at 50K ($89 ≤ $96).
+3. **DayTraders 100K / 150K Static**, if the checkout price is ≤ $90 / $93 (unknown).
+
+Options outside the registered bar: Topstep 100K/150K Static (size-scaled reading), City Traders Imperium (needs an MT5 bot port).

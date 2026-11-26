@@ -827,3 +827,21 @@ The dip bar is scaled to 50K accounts. If Jx accepts a ~$7–10K buffer, these a
 **$3K Challenge ($49):** $15.1K, coin flip $7.0K (85%), dip −$2.2K. It misses on real net, and two at once would clear it.
 
 `docs/PREREG_PROP_SEARCH2_20261126.md` Stage C2.
+
+## 2026-11-26 — prop search 3: Jx's three levers (`docs/PREREG_PROP_SEARCH3_20261126.md`)
+**Engine.** Audit addendum 3, from the other session, now measures exit-bar open loss only up to the fill. Topstep 50K Standard is
+$38,034; bar: real ≥ $19,017, dip ≥ −$5,794.
+
+**Results:**
+- **Different markets:** LucidFlex 50K on **ES qualifies** ($26.5K, flip $14.9K, dip −$2.2K). **5 LucidFlex 3 NQ / 1 ES / 1 YM: net
+  $163K vs $206K, worst cash $10.0K vs $19.5K → worth doing.** On Topstep the mix does not help.
+- **Bigger accounts:** the same $900 risk makes them worse. With scaled risk, the Topstep 150K Static Consistency makes $110K (flip $33K)
+  but its dip is −$8.9K, so it is an option only.
+- **Open-loss-ignoring firms:** **Funded Futures Network (new, qualifies when bought ≤ $96 / $154 / $149 for 50K / 100K / 150K with
+  the activation waived)**. City Traders Imperium is CFD; the bot would need an MT5 port.
+- **DayTraders 100K / 150K Static qualify if priced ≤ $90 / $93.**
+
+**Jx to supply:**
+1. the DayTraders 100K/150K Static checkout prices;
+2. FFN's non-promo discount level, and whether the waived activation applies on the bot's platform;
+3. a decision on porting the bot to MT5 for CTI.
