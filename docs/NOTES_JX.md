@@ -814,3 +814,16 @@ Firm pages say Lucid ignores unrealized P&L, and FundedNext and Blueberry breach
 **Jx can settle two facts only he can see:**
 1. the DayTraders S2F 50K checkout price;
 2. whether DayTraders' S2F loss limit counts open P&L.
+
+### 2026-11-26 — Topstep Labs (static drawdown) priced from the official page
+13 Labs products: static combines 25K–150K, Daily Payouts+, $1.5K/$3K/$6K Challenges. None qualifies under the registered bar.
+
+Strong near-misses that fail only on the worst dip:
+- **150K Static Consistency ($279):** $74.8K over 2016–26, coin flip $29.5K (91% positive), worst dip −$9.5K.
+- **100K Static Consistency ($199):** $42.5K, coin flip $17.3K (89%), dip −$6.9K vs −$6.1K bar.
+
+The dip bar is scaled to 50K accounts. If Jx accepts a ~$7–10K buffer, these are the best rule-driven products found.
+
+**$3K Challenge ($49):** $15.1K, coin flip $7.0K (85%), dip −$2.2K. It misses on real net, and two at once would clear it.
+
+`docs/PREREG_PROP_SEARCH2_20261126.md` Stage C2.

@@ -165,3 +165,28 @@ Trades use risk $900, scaled down to the contract cap (P&L × min(1, cap / contr
 - Dip: the worst peak-to-trough of cumulative net (payouts − fees).
 
 The same bar applies to every product.
+
+### Stage C2 results (`uv run python -m scripts.prop_search2_c2_20261126`, `docs/jx_runs/prop_search2_c2_20261126.txt`, re-run identical)
+**0 of 13 qualify under the registered bar.** Near-misses that fail only on the worst dip:
+
+| Product | Real 2016–26 | Coin flip | Worst dip | Bar fails on |
+|---|---|---|---|---|
+| Topstep 150K Static, Consistency ($279) | **$74,841** ($6.9K/yr) | **$29,508 (91%)** | −$9,464 | dip |
+| Topstep 150K Static, Standard | $88,124 | $16,124 (79%) | −$10,921 | dip |
+| Topstep 100K Static, Consistency ($199) | $42,491 | $17,271 (89%) | −$6,904 | dip (bar −$6,088) |
+| Topstep 100K Static, Standard | $57,893 | $8,395 (76%) | −$7,987 | dip |
+| $3K Challenge ($49, 10 micros) | $15,071 | $6,988 (85%) | −$2,205 | real (bar $17,562) |
+
+Fail on the coin flip:
+- 25K and 50K Static (both paths): coin flips −$3.4K to +$1.0K;
+- Daily Payouts+ EOD and Static: −$2.8K, −$3.6K;
+- $1.5K and $6K Challenges: coin flips about $0.
+
+**Reading.** The bar's dip limit is 1.5× the 50K benchmark's dip, so it penalises larger accounts by construction. The 100K and 150K
+static combines pass the bar's purpose: the money comes from the rules, with coin-flip medians of $17–30K, 89–91% positive. Their only
+failure is that one account needs a deeper cash buffer: up to about $9.5K for the 150K Static versus about $3.5K for Topstep 50K. Whether
+that buffer is acceptable is Jx's risk decision. It is not a pass under the registered rule, so it is reported as a near-miss.
+
+**Also noted (not tested as registered):** the $3K Challenge allows several accounts at once (unlimited in the Challenge round, 5 in the
+Payout round). Two at once would double real and dip ($30K, −$4.4K). That is a portfolio choice, like the multi-firm plan, not a
+single-product pass.

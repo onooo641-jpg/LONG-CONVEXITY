@@ -1,0 +1,21 @@
+Benchmark Topstep 50K Standard (real-time, bot): real $35,124, dip $-4,058
+Bar: real >= $17,562, coin flip >= $5,000, dip >= $-6,088
+
+STATIC COMBINES and DAILY PAYOUTS+ (real-time model, DLL as a per-trade cap)
+  Topstep 25K Static, Standard                             risk $  450 | real $  11,056 | coin flip $  -1,589 (36%) | dip $  -3,266 | fails
+  Topstep 25K Static, Consistency                          risk $  450 | real $   8,193 | coin flip $    -659 (44%) | dip $  -3,278 | fails
+  Topstep 50K Static, Standard                             risk $  900 | real $  28,483 | coin flip $  -3,418 (33%) | dip $  -5,233 | fails
+  Topstep 50K Static, Consistency                          risk $  900 | real $  19,359 | coin flip $     991 (54%) | dip $  -4,738 | fails
+  Topstep 100K Static, Standard                            risk $1,800 | real $  57,893 | coin flip $   8,395 (76%) | dip $  -7,987 | fails
+  Topstep 100K Static, Consistency                         risk $1,800 | real $  42,491 | coin flip $  17,271 (89%) | dip $  -6,904 | fails
+  Topstep 150K Static, Standard                            risk $2,700 | real $  88,124 | coin flip $  16,124 (79%) | dip $ -10,921 | fails
+  Topstep 150K Static, Consistency                         risk $2,700 | real $  74,841 | coin flip $  29,508 (91%) | dip $  -9,464 | fails
+  Topstep 50K Daily Payouts+ EOD (5-winning-day path)      risk $  900 | real $  25,349 | coin flip $  -2,832 (36%) | dip $  -6,516 | fails
+  Topstep 50K Daily Payouts+ Static (5-winning-day path)   risk $  900 | real $  22,362 | coin flip $  -3,551 (32%) | dip $  -6,114 | fails
+
+CHALLENGES (two rounds, static MLL, fixed payout; risk $900 scaled down to the contract cap)
+  $1.5K Challenge ($39, 2 micros)                          | real $   4,791 | coin flip $      38 (52%) | dip $    -507 | fails
+  $3K Challenge ($49, 10 micros)                           | real $  15,071 | coin flip $   6,988 (85%) | dip $  -2,205 | fails
+  $6K Challenge ($149, 10 micros)                          | real $  13,530 | coin flip $     -34 (50%) | dip $  -2,086 | fails
+
+qualifying Topstep Labs products: 0
