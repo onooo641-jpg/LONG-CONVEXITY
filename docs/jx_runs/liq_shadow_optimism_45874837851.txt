@@ -11,3 +11,7 @@ optimism: head 160060099 cycles 880 debtors 4776 cand 1166 last_cycle 1561 ms rp
 optimism: head 160060249 cycles 1064 debtors 4776 cand 1169 last_cycle 1466 ms rpc ok/err 6773/None
 optimism: head 160060399 cycles 1248 debtors 4776 cand 1165 last_cycle 1339 ms rpc ok/err 7927/None
 optimism: head 160060550 cycles 1433 debtors 4776 cand 1164 last_cycle 1739 ms rpc ok/err 9086/None
+optimism: head 160060700 cycles 1617 debtors 4776 cand 1164 last_cycle 1325 ms rpc ok/err 10242/None
+optimism: head 160060850 cycles 1801 debtors 4776 cand 1165 last_cycle 2849 ms rpc ok/err 11399/None
+optimism: head 160061002 cycles 1987 debtors 4776 cand 1165 last_cycle 1574 ms rpc ok/err 12556/None
+optimism: head 160061152 cycles 2171 debtors 4776 cand 1164 last_cycle 2679 ms rpc ok/err 13720/None
