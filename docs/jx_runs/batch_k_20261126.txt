@@ -1,0 +1,23 @@
+===== Batch K (#493-#495)  docs/PREREG_BATCH_K_20261126.md
+
+#### #493 recurring-buy calendar (equal-weight basket long: last day of month -> 2nd, and 14th -> 16th, 00:00 UTC)
+  #493 Stage 1 (40 alts ex BTC, 2020-07..2022): n 60, mean 2.416%, t 3.36, win 63%
+  #493 Stage 2 (40 alts ex BTC, 2023..2026-10): n 91, mean -0.079%, t -0.15, win 48%
+  #493 Stage 3 (unseen 110, 2023..2026-10): n 91, mean -0.176%, t -0.36, win 51%
+  VERDICT (#493): FAIL (Stage 2 fails, Stage 3 fails)
+  $/yr at $45K per window (Stage 2): $-839
+
+#### #494 pension month-end rebalancing, bond leg (#450 signal on SPY; SPY leg Stage 2, TLT leg Stage 3)
+  #494 Stage 1 (SPY leg 2003..2015): n 99, mean 0.345%, t 1.79, win 58%
+  #494 Stage 2 (SPY leg 2016..2026-10): n 86, mean 0.177%, t 0.95, win 50%
+  #494 Stage 3 (TLT leg 2016..2026-10): n 86, mean 0.110%, t 0.77, win 57%
+  #494 reported: EFA leg 2016..2026-10: n 86, mean 0.307%, t 1.86, win 56%
+  VERDICT (#494): FAIL (Stage 2 fails, Stage 3 fails)
+  $/yr at $30K per leg, both legs (2016..2026-10): $683
+
+#### #495 retail positioning crowding (weekly: short top-quintile long-account share, long bottom quintile)
+  #495 Stage 1 (40 alts 2020-10..2022): n 116, mean 2.292%, t 2.28, win 65%
+  #495 Stage 2 (40 alts 2023..2026-10): n 199, mean 0.784%, t 1.80, win 53%
+  #495 Stage 3 (unseen 110, 2023..2026-10): n 199, mean -0.934%, t -2.62, win 43%
+  VERDICT (#495): FAIL (Stage 2 fails, Stage 3 fails)
+  $/yr at $22.5K per side (Stage 2): $9,158

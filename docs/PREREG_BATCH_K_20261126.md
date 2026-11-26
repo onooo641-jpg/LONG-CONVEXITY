@@ -38,3 +38,18 @@ reported at a safe size; only passes of ≥ ~$10K/yr count toward Jx's two.
     and is never stored).
 
 **Script and output.** Script: `scripts/batch_k_20261126.py`. Output: `docs/jx_runs/batch_k_20261126.txt` (re-run once; it must be identical).
+
+## Results (2026-11-26; `docs/jx_runs/batch_k_20261126.txt`, re-run identical)
+
+| # | Verdict | Stage 1 / Stage 2 / Stage 3 | $/yr at safe size |
+|---|---|---|---|
+| 493 recurring-buy calendar | FAIL | +2.42% (t 3.36) / −0.08% / −0.18% (unseen) | −$839 |
+| 494 pension month-end, bond leg | FAIL | SPY +0.35% (t 1.79) / SPY +0.18% (t 0.95) / TLT +0.11% (t 0.77); EFA +0.31% (t 1.86) | $683 |
+| 495 retail positioning crowding | FAIL | +2.29%/wk (t 2.28) / +0.78% (t 1.80) / **−0.93% (t −2.62) on unseen perps** | $9.2K on S2, but it reverses out of sample |
+
+**Batch K verdict: 0 of 3.** Each idea worked in 2020–22, then weakened or reversed in 2023–26 on unseen data. This is the pattern
+seen across Batches C–K.
+
+**Search summary C–K:** ~78 ideas.
+- **$10K+ passes:** only the wick family (#389/#403).
+- **Small out-of-sample passes:** #455 (~$3.2K/yr) and #451 (~$0.7K/yr).
