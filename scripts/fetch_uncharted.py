@@ -1793,6 +1793,20 @@ def job_ubatchd():
     _bn_many("fund", [f"{s}USDT" for s in ALTS_D], "batchd_alts_funding.parquet")
 
 
+def job_ucb442():
+    """#442 data only: Coinbase daily candles BTC-USD/ETH-USD with unix-second windows (the ISO '+00:00' form of ubatchc2 hung)."""
+    rows = []
+    for prod in ("BTC-USD", "ETH-USD"):
+        t = int(pd.Timestamp("2020-01-01", tz="UTC").timestamp())
+        while t < time.time():
+            c = get(f"https://api.exchange.coinbase.com/products/{prod}/candles?granularity=86400&start={t}&end={t + 299 * 86400}", tries=2, timeout=20)
+            rows += [(prod, int(x[0]), float(x[4])) for x in (c or []) if isinstance(x, list)]
+            t += 299 * 86400
+            time.sleep(0.4)
+        print(f"  coinbase {prod}: {sum(1 for r in rows if r[0] == prod)} days", flush=True)
+    save("batchc_coinbase_1d.parquet", pd.DataFrame(rows, columns=["prod", "t", "c"]))
+
+
 def job_uverify():
     """Verification V: Binance spot 1h klines for stablecoin/USDT pairs (archive), 2020-01..2026-10."""
     import io
@@ -1835,4 +1849,4 @@ def job_uprobe():
 
 
 JOBS = {"uprobe": job_uprobe, "u383vaults": _safe(job_u383vaults), "u384lst": _safe(job_u384lst), "u385hyperp": _safe(job_u385hyperp),
-        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive, "uhip3": _safe(job_uhip3), "uw3b": _safe(job_uw3b), "udistinct": _safe(job_udistinct), "unav": _safe(job_unav), "udln": _safe(job_udln), "udln2": _safe(job_udln2), "ubatcha": _safe(job_ubatcha), "urates": _safe(job_urates), "ubatchb": _safe(job_ubatchb), "ubatchc": _safe(job_ubatchc), "ubatchc2": _safe(job_ubatchc2), "uverify": _safe(job_uverify), "ubatchd": _safe(job_ubatchd)}
+        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive, "uhip3": _safe(job_uhip3), "uw3b": _safe(job_uw3b), "udistinct": _safe(job_udistinct), "unav": _safe(job_unav), "udln": _safe(job_udln), "udln2": _safe(job_udln2), "ubatcha": _safe(job_ubatcha), "urates": _safe(job_urates), "ubatchb": _safe(job_ubatchb), "ubatchc": _safe(job_ubatchc), "ubatchc2": _safe(job_ubatchc2), "uverify": _safe(job_uverify), "ubatchd": _safe(job_ubatchd), "ucb442": _safe(job_ucb442)}

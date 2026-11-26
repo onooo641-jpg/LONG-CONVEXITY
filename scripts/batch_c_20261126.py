@@ -231,6 +231,8 @@ def part439(H):
 def part440(H):
     print("\n#### #440 funding-settlement drift (2 h before -> 1 h after, |last funding| >= 0.03%)")
     fp = PUB / "batchc_funding8h.parquet"
+    if not fp.exists():  # same Binance archive fundingRate files, fetched by job ubatchd (ubatchc2 hung twice on Actions)
+        fp = PUB / "batchd_alts_funding.parquet"
     if not fp.exists():
         print("  funding events not fetched yet")
         return
