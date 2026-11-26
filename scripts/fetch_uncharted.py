@@ -1511,6 +1511,66 @@ def job_udln2():
     save("solvers_dln_prices.parquet", pd.DataFrame(prow))
 
 
+def job_ubatcha():
+    """Batch A data: #419 Deribit DVOL + Derive terms; #420 dYdX reward/fee probes; #421 on-chain LST rates (archive eth_call)."""
+    out = {}
+    # 419
+    for cur in ("BTC", "ETH"):
+        rows, t = [], int(pd.Timestamp("2021-03-01", tz="UTC").timestamp() * 1000)
+        end = int(time.time() * 1000)
+        while t < end:
+            d = get(f"https://www.deribit.com/api/v2/public/get_volatility_index_data?currency={cur}&start_timestamp={t}"
+                    f"&end_timestamp={min(end, t + 900 * 86400000)}&resolution=1D", tries=3) or {}
+            data = ((d.get("result") or {}).get("data")) or []
+            rows += data
+            t += 900 * 86400000
+            time.sleep(0.5)
+        out[f"dvol_{cur}"] = rows
+        print(f"  DVOL {cur}: {len(rows)} days", flush=True)
+    out["derive_terms"] = {}
+    for u in ("https://www.derive.xyz/terms-of-use", "https://docs.derive.xyz/docs/terms-of-use", "https://www.derive.xyz/terms"):
+        st, h = _html(u)
+        txt = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", h))
+        out["derive_terms"][u] = {"status": st, "chars": len(txt), "Malaysia": [txt[max(0, m.start() - 300): m.start() + 300] for m in re.finditer("Malaysia", txt)][:3],
+                                  "restricted": [txt[max(0, m.start() - 200): m.start() + 500] for m in re.finditer(r"[Rr]estricted (Jurisdiction|Territor|Countr)", txt)][:3]}
+        print(f"  derive terms {st} {len(txt)} chars {u}", flush=True)
+    # 420 probes
+    out["dydx_probe"] = {}
+    for u in ("https://indexer.dydx.trade/v4/historicalTradingRewardAggregations/dydx1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq?period=MONTHLY",
+              "https://indexer.dydx.trade/v4/perpetualMarkets", "https://api.llama.fi/summary/fees/dydx-v4?dataType=dailyFees",
+              "https://api.llama.fi/summary/derivatives/dydx-v4", "https://api.llama.fi/summary/fees/dydx?dataType=dailyFees"):
+        st, d = req(u, timeout=40)
+        out["dydx_probe"][u] = {"status": st, "head": (json.dumps(d)[:2000] if d is not None else None)}
+        print(f"  dydx probe {st} {u[:90]}", flush=True)
+    save("batcha_raw.json", out)
+    # 421 on-chain rates
+    calls = {"weETH": ("0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee", "0x679aefce"),
+             "sUSDe": ("0x9d39a5de30e57443bff2a8307a4256c8797a3497", "0x07a2d13a" + hex(10**18)[2:].rjust(64, "0")),
+             "pufETH": ("0xd9a442856c234a39a81a089c06451ebaa4306a72", "0x07a2d13a" + hex(10**18)[2:].rjust(64, "0")),
+             "rsETH": ("0x349a73444b1a310bae67ef67973022020d70020d", "0xb4b46434")}
+    rpcs = ["https://eth.blockscout.com/api/eth-rpc", "https://eth.drpc.org", "https://ethereum-rpc.publicnode.com", "https://eth.llamarpc.com",
+            "https://rpc.mevblocker.io", "https://eth.merkle.io", "https://1rpc.io/eth"]
+    rows, ok_rpc, dl = [], None, time.time() + 90 * 60
+    day = pd.Timestamp("2024-01-01", tz="UTC")
+    while day < pd.Timestamp.now(tz="UTC") and time.time() < dl:
+        ts = int((day + pd.Timedelta(hours=23, minutes=59)).timestamp())
+        bj = get(f"https://eth.blockscout.com/api?module=block&action=getblocknobytime&timestamp={ts}&closest=before", tries=2) or {}
+        blk = (bj.get("result") or {}).get("blockNumber") if isinstance(bj.get("result"), dict) else None
+        if blk:
+            for name, (to, data) in calls.items():
+                val = None
+                for u in ([ok_rpc] if ok_rpc else []) + [r for r in rpcs if r != ok_rpc]:
+                    d = get(u, {"jsonrpc": "2.0", "id": 1, "method": "eth_call", "params": [{"to": to, "data": data}, hex(int(blk))]}, tries=1, timeout=30)
+                    if d and isinstance(d.get("result"), str) and len(d["result"]) >= 66:
+                        val, ok_rpc = int(d["result"][:66], 16) / 1e18, u
+                        break
+                rows.append({"day": str(day.date()), "token": name, "block": int(blk), "rate": val})
+        if day.day == 1:
+            print(f"  rates {day.date()}: rpc {ok_rpc}, last {rows[-4:] if rows else None}", flush=True)
+        day += pd.Timedelta(days=1)
+    save("batcha_rates.parquet", pd.DataFrame(rows))
+
+
 def _safe(fn):
     def w():
         try:
@@ -1527,4 +1587,4 @@ def job_uprobe():
 
 
 JOBS = {"uprobe": job_uprobe, "u383vaults": _safe(job_u383vaults), "u384lst": _safe(job_u384lst), "u385hyperp": _safe(job_u385hyperp),
-        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive, "uhip3": _safe(job_uhip3), "uw3b": _safe(job_uw3b), "udistinct": _safe(job_udistinct), "unav": _safe(job_unav), "udln": _safe(job_udln), "udln2": _safe(job_udln2)}
+        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive, "uhip3": _safe(job_uhip3), "uw3b": _safe(job_uw3b), "udistinct": _safe(job_udistinct), "unav": _safe(job_unav), "udln": _safe(job_udln), "udln2": _safe(job_udln2), "ubatcha": _safe(job_ubatcha)}
