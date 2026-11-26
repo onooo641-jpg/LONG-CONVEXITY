@@ -1,0 +1,7 @@
+=== ubatchb
+  matching yield pools: 247 (['drift-staked-sol', 'gmx-evm', 'gmx-solana', 'hyperlend-pooled', 'hypurrfi-pooled', 'liquity-v2'])
+  wrote batchb_pools.json: 183327 bytes
+  wrote batchb_charts.parquet: 110653 rows
+  Orderly perps: 144
+  Orderly daily candles: 55879
+  wrote batchb_orderly_1d.parquet: 55879 rows
