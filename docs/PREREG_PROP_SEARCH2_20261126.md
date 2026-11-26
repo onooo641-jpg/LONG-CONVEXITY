@@ -110,3 +110,15 @@ Registered now; it runs once `prop_verify.yml` (expand mode) captures the offici
 - 50K Static: $4,000 target; $2,000 static MLL that never moves; about $149; possibly a $1,000 DLL.
 
 They are modelled with `static_dd=True` only after the official page confirms the parameters.
+
+### Stage C1 results (`uv run python -m scripts.prop_search2_20261126 --c1`)
+
+| Product | Risk | Real | Coin flip | Dip | Verdict |
+|---|---|---|---|---|---|
+| Topstep 100K Standard / Consistency (real-time) | $1,350 | $37,150 / $26,465 | −$4,081 / −$2,686 | −$8,786 / −$7,354 | fail |
+| Topstep 150K Standard / Consistency (real-time) | $2,025 | $58,478 / $44,806 | $78 / −$303 | −$12,188 / −$10,037 | fail |
+| LucidFlex 25K (EOD) | $450 | $17,915 | $4,766 (78%) | −$4,160 | fail, narrowly (coin flip $234 short) |
+| LucidFlex 100K / 150K (EOD) | $1,350 / $2,025 | $34,265 / $48,320 | $1,338 / $5,571 | −$9,558 / −$13,573 | fail (dip) |
+
+Bigger accounts earn more on the real path. But their coin flips are near zero and their dips deep: the money comes from the strategy,
+not the rules. That is the failure the bar is built to catch. LucidFlex 25K is the closest miss, at a dated price.
