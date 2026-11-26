@@ -845,3 +845,10 @@ $38,034; bar: real ≥ $19,017, dip ≥ −$5,794.
 1. the DayTraders 100K/150K Static checkout prices;
 2. FFN's non-promo discount level, and whether the waived activation applies on the bot's platform;
 3. a decision on porting the bot to MT5 for CTI.
+- **Overnight (prop search 3 part 2):**
+  - The **Topstep $3K Challenge ($49) qualifies** on the corrected engine: $24.8K, flip $7.7K, dip −$1.2K; break-even $68.
+  - Start money:
+    - FFN 50K/100K/150K at the promo: median −$0.7K to −$1.0K, worst −$4.1K to −$5.6K;
+    - LucidFlex ES: worst −$2.4K;
+    - DayTraders Static pays slowly (first payout after ~1 year).
+  - ES and YM work only at LucidFlex.

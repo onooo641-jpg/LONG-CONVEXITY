@@ -198,3 +198,30 @@ Bar, models and engine as in part 1.
    `*_engine3.txt` so the originals stay as the record of what was reported at the time.
 
 Script: `scripts/prop_search3_p2_20261126.py` → `docs/jx_runs/prop_search3_p2_20261126.txt` (re-run once; it must be identical).
+
+### Part 2 results (`docs/jx_runs/prop_search3_p2_20261126.txt`, re-run identical)
+**1. Money needed to start** (118 monthly starts):
+
+| Product | Median | 1 in 10 | Worst | First payout | 12-month net (losing) |
+|---|---|---|---|---|---|
+| LucidFlex 50K DLL ON, NQ (reference) | −$708 | −$2,906 | −$4,108 | $1,122 after 137 days | $1,890 (31%) |
+| **LucidFlex 50K DLL ON, ES** | −$628 | −$1,718 | −$2,404 | $1,076 after 174 days | $927 (29%) |
+| **FFN 50K promo** | −$737 | −$2,850 | −$4,074 | $552 after 150 days | $1,392 (34%) |
+| **FFN 100K promo** (risk $1,620) | −$807 | −$3,865 | −$5,340 | $661 after 124 days | $1,897 (31%) |
+| **FFN 150K promo** (risk $2,250) | −$964 | −$4,087 | −$5,579 | $1,050 after 158 days | $1,998 (32%) |
+| DayTraders 100K Static at $90 (placeholder) | −$1,518 | −$3,931 | −$4,795 | $3,000 after 401 days | −$910 (53%) |
+| DayTraders 150K Static at $93 (placeholder) | −$942 | −$2,192 | −$3,476 | $3,500 after 356 days | $2,046 (48%) |
+| Topstep 150K Static Consistency (option) | −$2,326 | −$5,502 | −$8,936 | $3,014 after 180 days | $3,844 (40%) |
+
+DayTraders Static pays slowly: a first payout after about a year, with half of the starts still losing at 12 months. It qualifies on the
+2016–26 total, but it is a long wait.
+
+**2. ES and YM on the new firms:** none qualifies. The closest are DayTraders 150K Static on ES ($25.8K, flip $4.6K) and Topstep 150K
+Static on ES ($56.5K, flip $25.5K, dip −$6.4K). ES works only at LucidFlex.
+
+**3. The $3K Challenge break-even is $68**, so at $49 it **QUALIFIES**. On the corrected engine: real $24,757, flip $7,674 (84%), dip
+−$1,176 (`docs/jx_runs/prop_search2_c2_20261126_engine3.txt`).
+
+**4. Prop search 2 re-run on the corrected engine** (`*_engine3.txt`). The verdicts at real prices are unchanged except for the $3K
+Challenge, which now qualifies. TTP Instant ($299) and DayTraders S2F ($199) would qualify at those placeholder prices, but the real
+prices ($499, $342) are above their break-evens ($321, $251).

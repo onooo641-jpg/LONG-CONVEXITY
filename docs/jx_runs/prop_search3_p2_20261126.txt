@@ -1,0 +1,28 @@
+Registered bar: real >= $19,017, coin flip >= $5,000, dip >= $-5,794
+
+1. MONEY NEEDED TO START (118 monthly starts 2016-01..2025-10)
+  LucidFlex 50K DLL ON, NQ (reference)                     median $   -708 | 1 in 10 $ -2,906 | worst $ -4,108 | first payout $ 1,122 after  137 days | 12-month net $  1,890 (31% losing)
+  LucidFlex 50K DLL ON, ES                                 median $   -628 | 1 in 10 $ -1,718 | worst $ -2,404 | first payout $ 1,076 after  174 days | 12-month net $    927 (29% losing)
+  FFN Std MAX 50K promo $53.40                             median $   -737 | 1 in 10 $ -2,850 | worst $ -4,074 | first payout $   552 after  150 days | 12-month net $  1,392 (34% losing)
+  FFN Std MAX 100K promo $104.40, risk $1,620              median $   -807 | 1 in 10 $ -3,865 | worst $ -5,340 | first payout $   661 after  124 days | 12-month net $  1,897 (31% losing)
+  FFN Std MAX 150K promo $122.40, risk $2,250              median $   -964 | 1 in 10 $ -4,087 | worst $ -5,579 | first payout $ 1,050 after  158 days | 12-month net $  1,998 (32% losing)
+  DayTraders 100K Static at $90 (placeholder)              median $ -1,518 | 1 in 10 $ -3,931 | worst $ -4,795 | first payout $ 3,000 after  401 days | 12-month net $   -910 (53% losing)
+  DayTraders 150K Static at $93 (placeholder)              median $   -942 | 1 in 10 $ -2,192 | worst $ -3,476 | first payout $ 3,500 after  356 days | 12-month net $  2,046 (48% losing)
+  Topstep 150K Static Consistency (option), risk $2,700    median $ -2,326 | 1 in 10 $ -5,502 | worst $ -8,936 | first payout $ 3,014 after  180 days | 12-month net $  3,844 (40% losing)
+
+2. ES AND YM ON THE NEW FIRMS (single accounts, registered bar)
+  FFN Std MAX 50K promo $53.40                             ES | real $  10,104 | flip $   2,538 (68%) | dip $  -2,924 | fails
+  FFN Std MAX 50K promo $53.40                             YM | real $   3,944 | flip $  -4,477 (20%) | dip $  -2,367 | fails
+  FFN Std MAX 100K promo $104.40, risk $1,620              ES | real $  22,946 | flip $   8,834 (88%) | dip $  -2,422 | QUALIFIES
+  FFN Std MAX 100K promo $104.40, risk $1,620              YM | real $   7,431 | flip $  -1,785 (42%) | dip $  -3,431 | fails
+  FFN Std MAX 150K promo $122.40, risk $2,250              ES | real $  22,625 | flip $  10,620 (88%) | dip $  -3,579 | QUALIFIES
+  FFN Std MAX 150K promo $122.40, risk $2,250              YM | real $   8,315 | flip $     416 (51%) | dip $  -2,745 | fails
+  DayTraders 100K Static at $90 (placeholder)              ES | real $  20,270 | flip $   3,928 (64%) | dip $  -4,825 | fails
+  DayTraders 100K Static at $90 (placeholder)              YM | real $   4,320 | flip $  -6,930 (16%) | dip $  -3,980 | fails
+  DayTraders 150K Static at $93 (placeholder)              ES | real $  25,778 | flip $   4,641 (70%) | dip $  -4,788 | fails
+  DayTraders 150K Static at $93 (placeholder)              YM | real $   1,534 | flip $  -5,053 (26%) | dip $  -3,985 | fails
+  Topstep 150K Static Consistency (option), risk $2,700    ES | real $  56,499 | flip $  25,547 (90%) | dip $  -6,384 | fails
+  Topstep 150K Static Consistency (option), risk $2,700    YM | real $  30,168 | flip $   2,849 (57%) | dip $  -5,533 | fails
+
+3. $3K CHALLENGE BREAK-EVEN PRICE
+  Topstep $3K Challenge: break-even $68 (price $49: QUALIFIES)
