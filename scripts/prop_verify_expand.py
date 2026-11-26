@@ -21,8 +21,6 @@ PAGES = [
     "https://citytradersimperium.com/ea-trading-rules/",
     "https://helpcenter.citytradersimperium.com/en/collections/16756313-getting-funded",
     "https://helpcenter.citytradersimperium.com/en/collections/16756321-essential-rules-guidelines",
-    "https://daytraders.com/pricing",
-    "https://daytraders.com/",
 ]
 CRAWL = ("helpcenter.citytradersimperium.com/en/articles/",)
 TAB = re.compile(r"^\$?\s?(2\.5|5|10|25|50|75|100|150|200|250|300)\s?K$|^(Static|Trail|EOD|S2F|S2L|Instant|Live|1-Step|2-Step)$", re.I)
@@ -42,8 +40,8 @@ def main() -> None:
             pg = ctx.new_page()
             rec = {"url": url}
             try:
-                pg.goto(url, wait_until="networkidle", timeout=60000)
-                pg.wait_for_timeout(2000)
+                pg.goto(url, wait_until="domcontentloaded", timeout=90000)
+                pg.wait_for_timeout(8000)
                 n = 0
                 for _ in range(3):
                     for sel in ("details:not([open]) > summary", "[aria-expanded='false']", "button.accordion", ".intercom-interblocks-collapsible"):

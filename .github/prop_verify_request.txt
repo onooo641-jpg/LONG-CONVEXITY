@@ -1,2 +1,2 @@
-# prop search 3 overnight: CTI plan/size tabs + help centre; DayTraders pricing tabs (expand mode)
+# prop search 3: CTI retry (domcontentloaded)
 expand
