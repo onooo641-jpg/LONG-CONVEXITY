@@ -317,3 +317,22 @@ verdict, and only passes of ≥ ~$10K/yr count toward Jx's two.
 - Next: Batch G remainder (fetch running), Batch I (#478–#487, mechanical clocks: FX rollover, WM/R fix, LBMA gold auction, Solana epochs,
   USO roll, Japanese ETF dividends, MSCI close, AUD month-end, delisting overreaction, January small caps).
 - **Batch G (#458–#467): 0/10.** Closest: #461 funding carry (S2 16.5%/yr, t 1.49) and the #462 1st/15th recurring-buy variant (+0.87%, t 2.20, ~$7.2K/yr; report-only, below $10K).
+
+## 2026-11-26 — paid / extra data options priced (Jx asked; nothing bought — spending needs Jx's approval)
+Most untested payers need data the free sources lack (liquidations, open interest, order flow, exchange flows). Prices come from search
+snippets because the sandbox cannot open the pricing pages; confirm them before buying.
+
+| Source | What it adds | Price | Status |
+|---|---|---|---|
+| Binance archive `liquidationSnapshot` | every USDⓈ-M liquidation order (to 2024-03-31; COIN-M continues) | free | third-party GitHub issue reports the cut-off; not yet checked |
+| Tardis.dev | tick trades, L2/L3 books, OI, funding, liquidations, 50+ venues | free for the 1st day of each month; "Solo"/"Academic" tiers (one third-party listing: Academic $49/mo) | price unverified |
+| Coinalyze API | OI, funding, predicted funding, liquidation history, long/short ratio | free (attribution requested); ~40 calls/min (third-party) | needs an account key (only Jx can register) |
+| CoinGlass API | liquidations, OI, funding, 80–160+ endpoints | Hobbyist $29/mo, Startup $79/mo, Professional $699/mo | history depth by plan unclear |
+| CryptoQuant | exchange in/outflows, miner flows | plans ~$29–$109/mo (Advanced), Premium $799/mo; sources conflict | unverified |
+| Hyperliquid S3 (requester pays) | fills/trades from 2025-03, L2 snapshots | AWS transfer costs only (likely a few $), needs an AWS account | Jx account |
+
+Recommendation:
+1. Use the free options first: the Binance liquidation archive and Tardis first-of-month days.
+2. Then decide whether Coinalyze needs a key from Jx.
+3. Paid tiers are worth it only if a free pilot shows a new family is plausible.
+4. Liquidation data mostly deepens family 1 (wick/cascade) rather than adding a new family.
