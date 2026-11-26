@@ -1924,7 +1924,7 @@ def job_coinalyze_probe():
     st, mk = call("future-markets")
     mk = mk or []
     print(f"  future markets: HTTP {st}, {len(mk)}; perps {sum(1 for m in mk if m.get('is_perpetual'))}", flush=True)
-    save("coinalyze_future_markets.parquet", pd.DataFrame(mk).astype(str))
+    pd.DataFrame(mk).astype(str).to_parquet(OUT / "coinalyze_future_markets.parquet")
     syms = [m["symbol"] for m in mk if m.get("is_perpetual") and m.get("base_asset") in ("BTC", "ETH", "SOL") and m.get("quote_asset") == "USDT"][:6]
     now = int(time.time())
     for ep in ("open-interest-history", "funding-rate-history", "liquidation-history"):
