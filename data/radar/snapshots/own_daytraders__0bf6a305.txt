@@ -86,11 +86,59 @@ Trades
 Account Type
 Location
 Nov 25, 2026
+M****
+$1,500
+27 Mins
+Unknown
+West Covina, USA
+Nov 25, 2026
+N*****
+$2,000
+3 Mins
+50k Trail Rithmic
+Duncansville, USA
+Nov 25, 2026
+H*******
+$3,000
+2 Mins
+100k Static Rithmic
+Yonginsi, South Korea
+Nov 25, 2026
+B**
+$1,650
+10 Mins
+Live Account
+Auckland, New Zealand
+Nov 25, 2026
 O****
 $1,150
 1 Hours
 Live Account
 KUMASI, Ghana
+Nov 25, 2026
+T******
+$2,000
+3 Hours
+Unknown
+Vancouver, Canada
+Nov 25, 2026
+g*******
+$700
+4 Hours
+50k Static Rithmic
+RICHMOND, Canada
+Nov 23, 2026
+D******
+$2,000
+1 Days
+50k Trail Rithmic
+St petersburg, USA
+Nov 23, 2026
+D******
+$2,000
+1 Days
+50k Trail Rithmic
+St petersburg, USA
 Nov 23, 2026
 J*****
 $1,100
@@ -187,54 +235,6 @@ $1,500
 27 Mins
 50k Trail Rithmic
 Simi Valley, USA
-Nov 20, 2026
-B*****
-$1,850
-28 Mins
-50k Trail Rithmic
-Simi Valley, USA
-Nov 20, 2026
-K***
-$600
-16 Mins
-25k Static Rithmic
-Ness Ziona, Israel
-Nov 20, 2026
-B**
-$950
-2 Mins
-Live Account
-Auckland, New Zealand
-Nov 19, 2026
-O******
-$600
-1 Hours
-25k Trail Rithmic
-Calgary, Canada
-Nov 19, 2026
-Q**
-$3,500
-17 Hours
-150k Static Rithmic
-Houston, USA
-Nov 19, 2026
-Q**
-$3,500
-17 Hours
-150k Static Rithmic
-Houston, USA
-Nov 19, 2026
-Q**
-$3,500
-17 Hours
-150k Static Rithmic
-Houston, USA
-Nov 19, 2026
-Q**
-$3,500
-17 Hours
-150k Static Rithmic
-Houston, USA
 1
 2
 3

@@ -89,9 +89,10 @@ Orders are canceled
 Trading is paused until the next trading session
 This pause is not a rule violation .
 *If the account is auto liquidated with a balance less than $1,000 the account will be closed and the remaining account balance will be paid out to the trader.
-The Topstep Octagon
-The Topstep Octagon is a performance bonus incentive program that allows Live Funded traders to earn monthly performance bonuses based on their net profit and loss for any calendar month.
-Performance bonuses are independent of payouts and balance expansion, and any performance bonuses will be paid directly into your Live Funded Account. You can find all the details here .
+Topstep Octagon Main Event: Top P&L
+Every month, Live Funded Traders go head-to-head on one number: net P&L. The leaderboard resets on the first of the month, so everyone starts at $0. Finish the month net positive and in the top 100, and you'll earn a performance bonus paid straight into your Live Funded Account. It won't touch your payouts or balance expansion.
+Co-Main Event: Octagon Streaks
+Big days are great. Good days in a row are better. Stack up consecutive trading days with more than $500 in profit, and the five longest streaks of the month each earn a performance bonus. It's a separate leaderboard, so you can place here and in Top P&L in the same month. Consistency pays off.
 Stay live. Know the rules.
 Daily Loss Limit Trader may not hit or exceed the Daily Loss Limit (as described here ) while trading. Hitting or exceeding the Daily Loss Limit will suspend Trader’s ability to trade for the remainder of the then current trading session, which resets for the next trading session (as set forth here ).
 Maximum Loss Limit Trader may not hit or exceed the Maximum Loss Limit (as described here ). Currently, your Maximum Loss Limit is $1,000. For the remainder of your Live Funded Account, you will need to make sure your account balance stays above $1,000 (positive).

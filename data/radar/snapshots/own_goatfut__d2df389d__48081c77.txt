@@ -7,13 +7,13 @@ What is a trailing drawdown?
 What is the difference between EOD trailing and intraday trailing drawdown?
 How does intraday trailing drawdown work?
 What does "drawdown lock" or "DD Lock" mean?
-Why does my funded Daily Payouts account use intraday trailing drawdown?
+Why does my funded GOAT Daily account use intraday trailing drawdown?
 What is a trailing drawdown?
 A trailing drawdown is a loss level that moves upward as your account reaches new highs, but never moves back down. Think of it as a rising floor beneath your account. It follows your profits up but stays put when you give back. If your account equity falls to or below this level, the account is breached.
-Once the drawdown floor reaches its lock point, it stays there permanently and stops trailing. This applies to all account types, both challenges and funded accounts. On most plans the lock point is your initial starting balance. On Daily Payouts and Instant (Instant Lite included) it is your starting balance plus $100.
+Once the drawdown floor reaches its lock point, it stays there permanently and stops trailing. This applies to all account types, both challenges and funded accounts. On most plans the lock point is your initial starting balance. On GOAT Daily and Instant (Instant Lite included) it is your starting balance plus $100.
 There are two types of trailing drawdown at GOAT Funded Futures.
 Trailing EOD (end of day)
-Used on EOD, 1-Day-Pass-Plan, Flex and Instant accounts (Instant Lite included), and on Daily Payouts during the evaluation. The drawdown floor only updates at the end of each trading day, based on your closing balance.
+Used on EOD, 1-Day-Pass, Flex and Instant accounts (Instant Lite included), and on GOAT Daily during the evaluation. The drawdown floor only updates at the end of each trading day, based on your closing balance.
 Example (50K account, $2,000 max drawdown):
 You start at $50,000, so your floor is $48,000.
 You close the day at $51,500, so your floor moves up to $49,500.
@@ -21,47 +21,47 @@ During the next day your equity dips to $49,200 intraday but you close at $50,80
 Over time, your closing balances push the floor up to $50,000, your initial starting balance. The floor is now locked and will not trail any further.
 This does not apply to live accounts. On live, the floor also only moves at the end of the day, but a breach is checked in real time. If your equity reaches the floor at any point during the day, the live account is breached. See what counts as a breach on live .
 Trailing intraday
-Used on Daily Payouts funded accounts, and on Instant Classic accounts bought before 18 November 2026. The drawdown floor updates in real time, tracking your highest equity point during the session, including unrealised profits on open positions.
+Used on GOAT Daily funded accounts, and on Instant Classic accounts bought before 18 November 2026. The drawdown floor updates in real time, tracking your highest equity point during the session, including unrealised profits on open positions.
 Example (50K account, $2,000 max drawdown):
 You start at $50,000, so your floor is $48,000.
 Your equity reaches $51,500 during a trade, so your floor moves up to $49,500 immediately.
 If your equity drops to $49,500 at any point, even before closing the trade, the account is breached.
 Your equity continues climbing to $52,000, so the floor moves to $50,000, your initial starting balance. The floor is now locked and will not trail any further.
-Daily Payouts uses both
-The evaluation runs end of day trailing and the funded account switches to intraday trailing. See the Daily Payouts drawdown article .
+GOAT Daily uses both
+The evaluation runs end of day trailing and the funded account switches to intraday trailing. See the GOAT Daily drawdown article .
 Important note for funded accounts
 Once the drawdown floor locks, your account has very little cushion below that level. For example, if you have grown your 50K account to $54,000 and withdraw $4,000 in profits, your balance returns to $50,000, which is exactly where the floor is locked. At that point any drop in equity at all will breach the account. Always keep a buffer in your account when making withdrawals.
-Updated 24 November 2026
+Updated 25 November 2026
 What is the difference between EOD trailing and intraday trailing drawdown?
 The key difference is when the drawdown floor updates.
 EOD trailing drawdown
-Used on EOD, 1-Day-Pass-Plan, Flex and Instant accounts (Instant Lite included), and on Daily Payouts during the evaluation.
+Used on EOD, 1-Day-Pass, Flex and Instant accounts (Instant Lite included), and on GOAT Daily during the evaluation.
 The drawdown floor only updates at the end of each trading day, based on your closing balance. Intraday equity swings do not affect your drawdown level.
 For example, if your account peaks at $52,000 during the session but closes at $50,500, the drawdown floor adjusts based on $50,500 only.
 Intraday trailing drawdown
-Used on Daily Payouts funded accounts, and on Instant Classic accounts bought before 18 November 2026.
+Used on GOAT Daily funded accounts, and on Instant Classic accounts bought before 18 November 2026.
 The drawdown floor updates in real time as your equity reaches new highs, including unrealised profits on open positions. If your equity hits $52,000 even momentarily, the drawdown floor adjusts immediately and never moves back down.
-Daily Payouts uses both
-The evaluation runs end of day trailing, and the funded account switches to intraday trailing on your highest equity. See the Daily Payouts drawdown article for what changes when you get funded.
-Updated 19 November 2026
+GOAT Daily uses both
+The evaluation runs end of day trailing, and the funded account switches to intraday trailing on your highest equity. See the GOAT Daily drawdown article for what changes when you get funded.
+Updated 25 November 2026
 How does intraday trailing drawdown work?
 The Maximum Trailing Intraday Drawdown sets the lowest equity level your account is allowed to reach at any point during a trading session, including on open positions. It trails your highest equity point in real time, meaning as your account reaches new equity highs, the drawdown floor automatically moves up by the same amount. It never moves back down.
-Only Daily Payouts funded accounts use intraday trailing. EOD, 1-Day-Pass-Plan, Flex, Instant and the Daily Payouts evaluation all use end of day trailing, where the floor is calculated from your closing balance and only updates after the trading day ends. Instant Classic accounts bought before 18 November 2026 also use intraday trailing, as in the example below.
+Only GOAT Daily funded accounts use intraday trailing. EOD, 1-Day-Pass, Flex, Instant and the GOAT Daily evaluation all use end of day trailing, where the floor is calculated from your closing balance and only updates after the trading day ends. Instant Classic accounts bought before 18 November 2026 also use intraday trailing, as in the example below.
 This is important to understand: the drawdown floor tracks your highest equity, not your closing balance. Even if you give back profits before closing a trade, the floor will have already moved up.
-Once the drawdown floor reaches its lock point, it stays there permanently and stops trailing. On Instant Classic the lock point is your initial starting balance. On Daily Payouts it is your starting balance plus $100.
+Once the drawdown floor reaches its lock point, it stays there permanently and stops trailing. On Instant Classic the lock point is your initial starting balance. On GOAT Daily it is your starting balance plus $100.
 Example (Instant Classic 50K account, $2,000 max drawdown):
 Your account starts at $50,000, so the max drawdown floor is set at $48,000.
 Your equity rises to $51,000 during a trade, so the floor moves up to $49,000.
 If your equity drops to $49,000 at any point, the account is breached, even if the trade has not been closed.
 Your equity continues climbing to $52,000, so the floor moves to $50,000, your initial starting balance. The floor is now locked and will not trail any further.
 Even if your equity later reaches $55,000, the floor stays at $50,000.
-On a funded Daily 50K the same mechanics apply, but the floor locks at $50,100 once your equity reaches $52,100. See the Daily Payouts drawdown article .
+On a funded GOAT Daily 50K the same mechanics apply, but the floor locks at $50,100 once your equity reaches $52,100. See the GOAT Daily drawdown article .
 Important note for funded accounts: once the drawdown floor locks, your account has very little cushion below that level. For example, if you have grown your Instant Classic 50K account to $54,000 and withdraw $4,000 in profits, your balance returns to $50,000, which is exactly where the floor is locked. At that point any drop in equity at all will breach the account. Always keep a buffer in your account when making withdrawals.
-Updated 19 November 2026
+Updated 25 November 2026
 What does "drawdown lock" or "DD Lock" mean?
 Important for Funded Accounts
 The drawdown continues to trail normally as your account reaches new equity highs until it reaches your account's initial starting balance. Once it reaches the starting balance, it locks permanently and will not trail any higher.
-On Daily Payouts, Instant and Instant Lite the lock point is your starting balance plus $100, not your starting balance. On a Daily 50K the limit locks at $50,100 once your equity reaches $52,100.
+On GOAT Daily, Instant and Instant Lite the lock point is your starting balance plus $100, not your starting balance. On a GOAT Daily 50K the limit locks at $50,100 once your equity reaches $52,100.
 Requesting or receiving a payout does not automatically move or lock your drawdown at the starting balance. Your drawdown remains wherever it was before the payout.
 Example
 On a $50,000 funded account:
@@ -75,22 +75,22 @@ Does requesting a payout lock my drawdown at the starting balance?
 No. Requesting or receiving a payout does not change the position of your drawdown floor.
 The drawdown continues to trail according to your account rules until it naturally reaches your lock point. Only then does it lock permanently.
 If the drawdown has not yet reached the lock point before the payout, it will remain at its current level after the payout.
-Updated 19 November 2026
-Why does my funded Daily Payouts account use intraday trailing drawdown?
-Daily Payouts uses a different drawdown method in each phase.
+Updated 25 November 2026
+Why does my funded GOAT Daily account use intraday trailing drawdown?
+GOAT Daily uses a different drawdown method in each phase.
 Evaluation: end of day trailing. Your limit moves up with your profits once, at the end of each trading day.
 Funded: intraday trailing. Your limit moves up in real time, tracking your highest equity, including unrealised profit on open positions.
 What changes when you get funded
 In the evaluation, an open position that runs to a large unrealised profit and then gives it back costs you nothing in drawdown terms. Only the end of day figure counts.
 On the funded account, that same trade permanently raises your drawdown limit at the peak. If the position reverses, the limit stays where it moved to.
-Example: Daily 50K funded
+Example: GOAT Daily 50K funded
 Your drawdown is $2,000, so from a $50,000 start your limit is $48,000.
 You open a position. Your equity peaks at $51,400 while the position is still open. Your limit moves immediately to $49,400 and stays there.
 The trade reverses and you close it flat at $50,000. Your limit is still $49,400. You now have $600 of room, not the $2,000 you started with.
 When does it stop moving?
 The limit stops trailing permanently once it reaches your starting balance plus $100.
 On a 50K that means once your equity touches $52,100, the limit locks at $50,100 for the life of the account. From then on it never moves again, up or down, and your account can only be closed by falling below $50,100.
-EOD, 1-Day-Pass-Plan, Flex and Instant Classic all lock at the starting balance, with no $100 added. Instant and Instant Lite use the same plus $100 lock point as Daily.
+EOD, 1-Day-Pass, Flex and Instant Classic all lock at the starting balance, with no $100 added. Instant and Instant Lite use the same plus $100 lock point as GOAT Daily.
 Does taking a payout move my limit?
 No. Requesting and receiving a payout does not move or lock the drawdown limit. Your balance goes down by the payout amount, and the limit stays exactly where it was.
 This matters most on the 25K. After a maximum $650 payout from the $26,100 minimum balance, you are at $25,450 against a floor locked at $25,100, which is $350 of room. On the 50K you would have $1,000, on the 100K $1,500, on the 150K $2,000.
@@ -100,23 +100,23 @@ Watch your peak equity, not your balance. The number that matters is the highest
 Treat unrealised profit as spent. If a position runs $1,000 in your favour, assume $1,000 of your drawdown room has gone, because it has.
 Which plans use which method
 Plan Evaluation Funded
-Daily Payouts End of day trailing Intraday trailing
+GOAT Daily End of day trailing Intraday trailing
 EOD Challenge End of day trailing End of day trailing
-1-Day-Pass-Plan End of day trailing End of day trailing
+1-Day-Pass End of day trailing End of day trailing
 Flex Challenge End of day trailing End of day trailing
 Instant No evaluation End of day trailing
 Instant Classic No evaluation Intraday trailing
 Instant Lite No evaluation End of day trailing
-Updated 19 November 2026
+Updated 25 November 2026
 In this tab
 Is there a daily loss limit?
-The daily loss limit on Daily Payouts
+The daily loss limit on GOAT Daily
 Is there a daily loss limit?
 This depends on your account type.
 EOD Challenge
 Evaluation: none.
 Funded: 2.5% of your starting balance, so $1,250 on a 50K, $2,500 on a 100K, $3,750 on a 150K.
-1-Day-Pass-Plan
+1-Day-Pass
 Optional at checkout. If you choose it, it applies in both phases, at the same percentage in each, and hitting it closes the account.
 25K: 2.4%, which is $600
 50K: 2%, which is $1,000
@@ -131,21 +131,21 @@ Instant Lite
 100K: 2%, which is $2,000
 Flex Challenge
 None by default, in either phase. If you turn on the daily loss limit option at checkout, it is $1,000 on a 50K, $1,500 on a 100K and $2,500 on a 150K. It applies in both phases, and hitting it closes the account. See below.
-Daily Payouts
+GOAT Daily
 Optional at checkout. If you choose it, it applies in both phases, and hitting it closes the account.
 25K: 2%, which is $500
 50K: 2%, which is $1,000
 100K: 1.5%, which is $1,500
 150K: 1.5%, which is $2,250
 What happens when you reach it
-On EOD funded accounts, hitting the daily loss limit is a soft breach, not a hard one. Your open positions are closed and the account is paused for the rest of the trading day. It resumes automatically on the next trading day, and the account is not closed. On Daily Payouts, 1-Day-Pass-Plan, Instant and Flex the daily loss limit is optional at checkout, and hitting it closes the account on the first hit.
-Accounts bought before 18 November 2026: on 1-Day-Pass-Plan, Instant Classic, Instant Lite and Daily Payouts the daily loss limit is a soft breach. Daily Payouts closes the account on a third hit within any rolling 30 day period, and Instant Lite on a third hit over the life of the account.
+On EOD funded accounts, hitting the daily loss limit is a soft breach, not a hard one. Your open positions are closed and the account is paused for the rest of the trading day. It resumes automatically on the next trading day, and the account is not closed. On GOAT Daily, 1-Day-Pass, Instant and Flex the daily loss limit is optional at checkout, and hitting it closes the account on the first hit.
+Accounts bought before 18 November 2026: on 1-Day-Pass, Instant Classic, Instant Lite and GOAT Daily the daily loss limit is a soft breach. GOAT Daily closes the account on a third hit within any rolling 30 day period, and Instant Lite on a third hit over the life of the account.
 Flex with the daily loss limit option
 On a Flex account bought with the daily loss limit option, the first hit closes the account, in the evaluation or funded. There is no pause and no strike count. See Can I add a daily loss limit to my Flex account?
 For the exact figure on your account, check your dashboard.
-Updated 19 November 2026
-The daily loss limit on Daily Payouts
-The daily loss limit on Daily Payouts is optional. You choose at checkout whether to trade with it or without it, and the choice carries into your funded account.
+Updated 25 November 2026
+The daily loss limit on GOAT Daily
+The daily loss limit on GOAT Daily is optional. You choose at checkout whether to trade with it or without it, and the choice carries into your funded account.
 The limit, if you choose it
 It applies in both the evaluation and the funded phase. It is the most you may lose in a single trading day.
 Account size Daily loss limit
@@ -157,11 +157,11 @@ What happens when you hit it
 Hitting it is a hard breach. The account is closed on the first hit, in the evaluation or funded. There is no pause and no strike count.
 Accounts bought without the daily loss limit have no daily loss limit. Your maximum drawdown still applies.
 Can I remove the daily loss limit?
-Yes, at checkout. Daily Payouts can be bought with or without the daily loss limit, and the choice carries into the funded account.
+Yes, at checkout. GOAT Daily can be bought with or without the daily loss limit, and the choice carries into the funded account.
 Accounts bought before 18 November 2026
 On these accounts the daily loss limit is always on. Hitting it is a soft breach: your open positions are closed and trading is paused for the rest of the day, and you can trade again in the next session.
 The third hit within any rolling 30 day period is a hard breach and closes the account. It is a rolling window, not a calendar month: every hit stays on the count for 30 days from the day it happened, then drops off. Your dashboard shows how many hits you have in the current window.
-Updated 19 November 2026
+Updated 25 November 2026
 In this tab
 What happens if I breach the drawdown or daily loss limit?
 I believe my account was wrongfully breached, what do I do?
@@ -169,14 +169,14 @@ Can I reset my Funded account?
 What happens if I breach the drawdown or daily loss limit?
 It depends which limit you hit.
 The daily loss limit is a soft breach
-Your open positions are closed and trading is paused for the rest of the trading day. It resumes automatically on the next trading day, and your account is not closed. A daily loss limit applies to EOD funded accounts as a soft breach. On Daily Payouts, 1-Day-Pass-Plan, Instant and Flex it is optional at checkout and is a hard breach from the first hit.
-Accounts bought before 18 November 2026: on 1-Day-Pass-Plan, Instant Classic, Instant Lite and Daily Payouts the daily loss limit is a soft breach. Daily Payouts closes the account on a third hit within any rolling 30 day period, and Instant Lite on a third hit over the life of the account.
+Your open positions are closed and trading is paused for the rest of the trading day. It resumes automatically on the next trading day, and your account is not closed. A daily loss limit applies to EOD funded accounts as a soft breach. On GOAT Daily, 1-Day-Pass, Instant and Flex it is optional at checkout and is a hard breach from the first hit.
+Accounts bought before 18 November 2026: on 1-Day-Pass, Instant Classic, Instant Lite and GOAT Daily the daily loss limit is a soft breach. GOAT Daily closes the account on a third hit within any rolling 30 day period, and Instant Lite on a third hit over the life of the account.
 On Flex, the daily loss limit option is a hard breach from the first hit. If you chose it at checkout and your losses for the day reach the limit, the account is closed, in the evaluation or funded. See Can I add a daily loss limit to my Flex account?
 The maximum drawdown is a hard breach
 If your balance or equity falls to or below your drawdown floor, the account is closed immediately. This applies in both the evaluation and funded phases, on every plan.
 Can a breached account be reset?
-A breached evaluation account can be reset up to twice, including on Daily Payouts. A breached Instant account cannot be reset. Funded account resets are available on EOD 50K and 100K accounts only, before your first payout, and are not available on Daily Payouts.
-Updated 19 November 2026
+A breached evaluation account can be reset up to twice, including on GOAT Daily. A breached Instant account cannot be reset. Funded account resets are available on EOD 50K and 100K accounts only, before your first payout, and are not available on GOAT Daily.
+Updated 25 November 2026
 I believe my account was wrongfully breached, what do I do?
 Before contacting support, please check the following:
 Log into your dashboard and compare your account equity against the drawdown limit. If your equity is at or below the drawdown level, the breach is correct.
@@ -187,20 +187,20 @@ Can I reset my Funded account?
 Yes, funded account resets are available, with the following conditions.
 Eligibility
 Available only on EOD 50K and 100K funded accounts
-Not available on 1-Day-Pass-Plan, Instant, Instant Classic, Instant Lite, Daily Payouts, or other EOD account sizes
+Not available on 1-Day-Pass, Instant, Instant Classic, Instant Lite, GOAT Daily, or other EOD account sizes
 Available only before your first payout . Once an approved withdrawal has been processed on the account, the reset option is permanently blocked
 Pricing
 50K EOD: $499 (1st reset) / $599 (2nd reset)
 100K EOD: $599 (1st reset) / $699 (2nd reset)
 Limits
 Maximum 2 resets per account.
-Daily Payouts
-Daily Payouts funded accounts cannot be reset. If a funded account is breached, a new evaluation must be purchased. Daily Payouts evaluations can be reset twice in the normal way.
+GOAT Daily
+GOAT Daily funded accounts cannot be reset. If a funded account is breached, a new evaluation must be purchased. GOAT Daily evaluations can be reset twice in the normal way.
 Why the reset option may not appear on your account
 The account isn't a 50K or 100K EOD funded account
 You've already received an approved payout
 You've already used both resets
 The account is closed for a reason that doesn't qualify for reset
 If you believe you're eligible but don't see the option, contact support.
-Updated 19 November 2026
+Updated 25 November 2026
 Back to top

@@ -52,18 +52,18 @@ Can I share my account with someone else?
 How many accounts can I have?
 How many accounts can I have?
 You can hold funded accounts at the same time, subject to the following limits:
-EOD Challenge, 1-Day-Pass-Plan, Flex Challenge and Daily Payouts: up to 5 funded accounts each
+EOD Challenge, 1-Day-Pass, Flex Challenge and GOAT Daily: up to 5 funded accounts each
 Instant and Instant Classic: up to 3 funded accounts
 The limits are counted separately for each product type, so they do not compete with each other. You can combine account types freely. For example:
 3 Instant accounts and 2 Flex funded accounts
-2 EOD funded accounts and 3 Daily Payouts funded accounts
-5 Daily Payouts funded accounts alongside 5 Flex funded accounts
+2 EOD funded accounts and 3 GOAT Daily funded accounts
+5 GOAT Daily funded accounts alongside 5 Flex funded accounts
 As long as you stay within the maximum for each product type.
 There is no limit on the number of evaluation accounts you may purchase.
-Updated 19 November 2026
+Updated 25 November 2026
 I want to buy 5 accounts, how do I trade them simultaneously?
 You can buy 5 accounts for a discounted bundle price on our checkout, and then you can indeed copy trades into all 5 accounts.
-On Daily Payouts, copy trading is permitted between your own Daily Payouts accounts only. Daily Payouts also has its own allowance of 5 funded accounts, counted separately from the other plans.
+On GOAT Daily, copy trading is permitted between your own GOAT Daily accounts only. GOAT Daily also has its own allowance of 5 funded accounts, counted separately from the other plans.
 On TradeSea you can use its built-in copier, SecureCopy, between your own accounts. Followers can copy at 2x or 3x the leader's size, so check that each follower stays inside the contract limit for its plan and size. See Can I trade on TradeSea?
 To set up copy trading varies depending on platform. We suggest you visit the help center of the relevant platform you are trading on to find out more on how to navigate it or set up certain processes.
 How many emails can I register?

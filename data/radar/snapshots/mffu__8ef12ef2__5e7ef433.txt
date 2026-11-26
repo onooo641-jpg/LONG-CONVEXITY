@@ -7,11 +7,17 @@ Login
 Get Funded
 Login
 Get Funded
-Leaderboard
-Top Funded Traders.
-Funded traders ranked by percentage return, with the realized profit behind it.
-Top Funded Fastest Payout Most Payouts in a Day
-All Sim Live
+Signature Leaderboard
+Fastest Payout.
+From checkout to first approved payout. These Signature traders got paid fastest.
+Fastest Payout Most Payouts in a Day
+This Week This Month All Time
+This week on Signature
+Updated daily
+Fastest payout
+Most payouts in a day
+Payouts approved
+Paid to Signature traders
 Loading the leaderboard…
 Updated daily. Evaluation and Sim Funded accounts use simulated trading, with real cash payouts.
 Why traders pick Signature

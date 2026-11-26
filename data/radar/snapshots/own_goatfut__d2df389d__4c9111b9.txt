@@ -9,19 +9,19 @@ Can I trade during news events?
 The rules differ depending on the plan and on whether you are in the evaluation or funded phase.
 During the evaluation phase
 It depends on the plan.
-EOD, Flex and 1-Day-Pass-Plan: no news trading restrictions. You can open and close positions freely around any news event.
-Daily Payouts: the 2 minute buffer applies during the evaluation as well as on the funded account. Daily Payouts is our only evaluation with a news restriction.
+EOD, Flex and 1-Day-Pass: no news trading restrictions. You can open and close positions freely around any news event.
+GOAT Daily: the 2 minute buffer applies during the evaluation as well as on the funded account. GOAT Daily is our only evaluation with a news restriction.
 During the funded phase, all account types
 A 2 minute buffer applies around high impact news events. Within 2 minutes before or after a scheduled high impact news release, you cannot:
 Open new positions
 Close existing positions
 Trigger pending orders
 If a position was opened before the 2 minute pre-news window began, you are permitted to hold it through the event. See the news holding rule for more details.
-This applies to all funded account types: EOD, 1-Day-Pass-Plan, Flex, Instant, Instant Classic and Daily Payouts.
+This applies to all funded account types: EOD, 1-Day-Pass, Flex, Instant, Instant Classic and GOAT Daily.
 What happens if you trade inside the window
 If you execute an order within the restricted timeframe, any profits generated will be deducted upon payout request.
 Gap trading around scheduled earnings releases or other significant company-specific announcements is also prohibited and is treated in the same manner as high impact news trading.
-Updated 19 November 2026
+Updated 25 November 2026
 Can I keep a position open through a high-impact news event on my account?
 Yes — as long as the position was opened before the 2-minute pre-news window began, you are free to hold it through the event. You can close it any time after the 2-minute post-news window has passed.
 During the restricted window (2 minutes before to 2 minutes after the news release), you cannot:
@@ -30,7 +30,7 @@ Close existing positions
 Trigger pending orders
 This rule applies to funded accounts only. There are no news trading restrictions during an evaluation.
 Can I hold positions overnight?
-All positions must be closed before the end of the trading session. This applies to every account type: EOD, 1-Day-Pass-Plan, Instant, Instant Classic, Instant Lite, Flex and Daily Payouts. Any position still open is closed automatically at 15:55 CT, five minutes before the session ends.
+All positions must be closed before the end of the trading session. This applies to every account type: EOD, 1-Day-Pass, Instant, Instant Classic, Instant Lite, Flex and GOAT Daily. Any position still open is closed automatically at 15:55 CT, five minutes before the session ends.
 Weekend holding is also not permitted.
 At what time must I close my trades to avoid holding a position overnight?
 As mentioned in our rules, we don't allow holding positions overnight or over the weekend, as we consider it very risky and prone to market pricing gaps.
@@ -49,12 +49,12 @@ at least 70% of your net profit came from trades held longer than 1 minute.
 If either is not met, we deduct the profit from winning trades held under 1 minute in that cycle from your payout and pay the rest. If that profit is more than the amount you requested, we decline the payout and deduct the requested amount from the account instead. This is not an account breach, and your account stays open.
 The same check applies when you pass an evaluation. A partial close counts as its own closed trade, even if the rest of the position is still running.
 Which plans it applies to
-All of them: EOD Challenge, 1-Day-Pass-Plan, Flex Challenge, Daily Payouts, Instant, Instant Classic, Instant Lite and GOAT Access. It applies to new and existing accounts.
+All of them: EOD Challenge, 1-Day-Pass, Flex Challenge, GOAT Daily, Instant, Instant Classic, Instant Lite and GOAT Access. It applies to new and existing accounts.
 It does not apply on live accounts after the transition. There, we ask you to trade with the care of managing actual live capital.
 What changed on 9 November
-EOD Challenge, 1-Day-Pass-Plan, Instant Classic and Instant Lite: profit from trades closed within 2 minutes is no longer deducted trade by trade. The 1 minute rule is checked at payout instead.
+EOD Challenge, 1-Day-Pass, Instant Classic and Instant Lite: profit from trades closed within 2 minutes is no longer deducted trade by trade. The 1 minute rule is checked at payout instead.
 Flex Challenge: the threshold rises from 50% to 70%.
-Daily Payouts: the 60 second rule becomes the 1 minute rule. It now checks both your closed trades and your net profit, at 70%.
+GOAT Daily: the 60 second rule becomes the 1 minute rule. It now checks both your closed trades and your net profit, at 70%.
 GOAT Access: uses the same 1 minute rule as every plan.
 Trading and payout cycles up to Sunday 8 November follow the previous rules, including the 2 minute microscalping deduction.
 Tick scalping
@@ -62,7 +62,7 @@ Opening and closing positions within seconds to capture small tick profits, typi
 Why this rule exists
 So that results reflect what would realistically be executable on a live exchange, where slippage, partial fills and liquidity limits apply.
 It should not be confused with the 2 minute news buffer, which is a separate restriction around high impact news events and has not changed.
-Updated 19 November 2026
+Updated 25 November 2026
 Can I take partial profit within 1 minute of opening a trade?
 Yes. Since Monday 9 November 2026 there is no per-trade deduction for closing a trade, or part of it, early.
 A partial close counts as its own closed trade, even if the rest of the position is still running. When you pass an evaluation and at each payout request, at least 70% of your closed trades and at least 70% of your net profit must come from trades held longer than 1 minute. If either is not met, we deduct the profit from winning trades held under 1 minute from your payout. If that is more than you requested, we decline the payout and deduct the requested amount from the account instead. This is not a breach.
@@ -94,9 +94,9 @@ Updated 9 November 2026
 Tick Scalping & Unrealistic Trading Practices
 Tick scalping refers to extremely short-term trading where positions are opened and closed within seconds to capture very small price movements, often using high position sizes.
 Trading strategies that generate profits through unrealistic execution conditions such as rapid entries and exits within a few ticks may not reflect real market behaviour. In live trading environments, such activity is often affected by slippage, liquidity limitations, and partial fills, making these results difficult to replicate consistently.
-This rule applies across all account types, including Flex and Daily Payouts, to ensure consistency and alignment with realistic market conditions. If such activity is identified, any profits generated from it may be reviewed and deducted.
+This rule applies across all account types, including Flex and GOAT Daily, to ensure consistency and alignment with realistic market conditions. If such activity is identified, any profits generated from it may be reviewed and deducted.
 Traders are encouraged to follow strategies that are sustainable and reflect genuine live-market execution.
-Updated 8 September 2026
+Updated 25 November 2026
 Gap Trading
 Gap Trading
 Trading strategies designed to capture price gaps caused by market closures, re-openings, or significant company-specific announcements are not permitted.
@@ -110,20 +110,20 @@ Can I use trading bots or automated strategies (EAs)?
 Signals, copy trading and automated strategies
 Copying your own trades is allowed
 You may copy your own trades across your own GFF accounts, and across accounts you hold elsewhere. If you buy a multi account bundle, copying your own trades into each of them is the intended use.
-On Daily Payouts, copy trading is permitted between your own Daily Payouts accounts only.
+On GOAT Daily, copy trading is permitted between your own GOAT Daily accounts only.
 Copying other people is not
 Trading someone else's calls, whether from a signal provider, a trading group, a third party service, a copy or mirror service, or an EA that follows an external source, is a prohibited trading practice and may result in account termination.
 There is a practical reason beyond fairness. When several unrelated traders follow the same source, their accounts hold matching positions at matching times. Where that is detected, every account and user involved may be suspended, including people who did not know others were following the same signals.
 Automated strategies
-On EOD, 1-Day-Pass-Plan, Flex and Instant Classic, your own automated strategies and EAs are allowed, as long as they reflect your own trading and do not exploit latency, data feed anomalies or system vulnerabilities.
-Daily Payouts and Instant Lite are manual trading products. Bots, Expert Advisors and automated strategies are not permitted on either, and neither are grid, martingale or high frequency strategies.
+On EOD, 1-Day-Pass, Flex and Instant Classic, your own automated strategies and EAs are allowed, as long as they reflect your own trading and do not exploit latency, data feed anomalies or system vulnerabilities.
+GOAT Daily and Instant Lite are manual trading products. Bots, Expert Advisors and automated strategies are not permitted on either, and neither are grid, martingale or high frequency strategies.
 If you are unsure whether a service or method is permitted, contact support before using it.
-Updated 8 September 2026
+Updated 25 November 2026
 Can I use trading bots or automated strategies (EAs)?
 It depends on your plan.
 Where they are allowed
-On EOD, 1-Day-Pass-Plan, Flex and Instant Classic, personal automated strategies and EAs are allowed, as long as they are consistent with your trading style and do not exploit system vulnerabilities, latency, or data feed anomalies. Strategies designed to manipulate the simulated environment rather than reflect genuine market trading are prohibited.
+On EOD, 1-Day-Pass, Flex and Instant Classic, personal automated strategies and EAs are allowed, as long as they are consistent with your trading style and do not exploit system vulnerabilities, latency, or data feed anomalies. Strategies designed to manipulate the simulated environment rather than reflect genuine market trading are prohibited.
 Where they are not
-Daily Payouts and Instant Lite are manual trading products. Bots, Expert Advisors and automated strategies are not permitted on either, and neither are grid, martingale or high frequency strategies.
-Updated 8 September 2026
+GOAT Daily and Instant Lite are manual trading products. Bots, Expert Advisors and automated strategies are not permitted on either, and neither are grid, martingale or high frequency strategies.
+Updated 25 November 2026
 Back to top

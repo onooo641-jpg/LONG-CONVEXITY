@@ -54,14 +54,14 @@ GOAT DAILY
 Rewards every day
 Default 90/10 profit share
 FLEX
-Daily Loss limit optional
+Daily Drawdown optional
 No Consistency rule in Funded
 EOD
 End of Day Drawdown
 Lowest-cost path to Funded
 1-DAY PASS
 No Consistency rule in Evaluation
-Daily Loss limit optional
+Daily Drawdown optional
 INSTANT
 Skip the Evaluation Phase
 EOD Drawdown
@@ -74,10 +74,10 @@ $60
 one-time fee
 Profit Target
 $1,500
-Daily Loss Limit
+Daily Drawdown
 $500
 OFF
-Reaching your Daily Loss Limit will result in a breach of the account
+Reaching your Daily Drawdown will result in a breach of the account
 Max Drawdown
 $1,000
 Max Contracts
@@ -103,10 +103,10 @@ $80
 one-time fee
 Profit Target
 $3,000
-Daily Loss Limit
+Daily Drawdown
 $1,000
 OFF
-Reaching your Daily Loss Limit will result in a breach of the account
+Reaching your Daily Drawdown will result in a breach of the account
 Max Drawdown
 $2,000
 Max Contracts
@@ -131,10 +131,10 @@ $128
 one-time fee
 Profit Target
 $6,000
-Daily Loss Limit
+Daily Drawdown
 $1,500
 OFF
-Reaching your Daily Loss Limit will result in a breach of the account
+Reaching your Daily Drawdown will result in a breach of the account
 Max Drawdown
 $3,000
 Max Contracts
@@ -159,10 +159,10 @@ $184
 one-time fee
 Profit Target
 $9,000
-Daily Loss Limit
+Daily Drawdown
 $2,250
 OFF
-Reaching your Daily Loss Limit will result in a breach of the account
+Reaching your Daily Drawdown will result in a breach of the account
 Max Drawdown
 $4,500
 Max Contracts
@@ -229,10 +229,10 @@ $60
 one-time fee
 Profit Target
 $1,500
-Daily Loss Limit
+Daily Drawdown
 $500
 OFF
-Reaching your Daily Loss Limit will result in a breach of the account
+Reaching your Daily Drawdown will result in a breach of the account
 Max Drawdown
 $1,000
 Max Contracts
@@ -258,10 +258,10 @@ $80
 one-time fee
 Profit Target
 $3,000
-Daily Loss Limit
+Daily Drawdown
 $1,000
 OFF
-Reaching your Daily Loss Limit will result in a breach of the account
+Reaching your Daily Drawdown will result in a breach of the account
 Max Drawdown
 $2,000
 Max Contracts
@@ -286,10 +286,10 @@ $128
 one-time fee
 Profit Target
 $6,000
-Daily Loss Limit
+Daily Drawdown
 $1,500
 OFF
-Reaching your Daily Loss Limit will result in a breach of the account
+Reaching your Daily Drawdown will result in a breach of the account
 Max Drawdown
 $3,000
 Max Contracts
@@ -314,10 +314,10 @@ $184
 one-time fee
 Profit Target
 $9,000
-Daily Loss Limit
+Daily Drawdown
 $2,250
 OFF
-Reaching your Daily Loss Limit will result in a breach of the account
+Reaching your Daily Drawdown will result in a breach of the account
 Max Drawdown
 $4,500
 Max Contracts

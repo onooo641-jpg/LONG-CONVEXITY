@@ -66,21 +66,29 @@ $50K
 Evaluation Phase
 Pro Stage
 Profit Target
-$3,000 $2,000
+$3,000
+$2,000
 Max Loss Limit
-$2,000 $2,000
+$2,000
+$2,000
 Drawdown Type
-EOD EOD
+EOD
+EOD
 Consistency Per Day
-x 40%
+x
+40%
 Qualifying Days
-5 days, $150 5 days, $150
+5 days, $150
+5 days, $150
 Daily Pause
-x $1,250
+x
+$1,250
 Scaling Payouts
-✓ ✓
+✓
+✓
 Maximum Payouts
-x 5
+x
+5
 $97
 $82 Save 20%
 one-time
@@ -91,21 +99,29 @@ $25K
 Evaluation Phase
 Pro Stage
 Profit Target
-$1,500 $1,000
+$1,500
+$1,000
 Max Loss Limit
-$1,000 $1,000
+$1,000
+$1,000
 Drawdown Type
-EOD EOD
+EOD
+EOD
 Consistency Per Day
-x 40%
+x
+40%
 Qualifying Days
-5 days, $100 5 days, $100
+5 days, $100
+5 days, $100
 Daily Pause
-x $600
+x
+$600
 Scaling Payouts
-✓ ✓
+✓
+✓
 Maximum Payouts
-x 5
+x
+5
 $57
 $46 Save 20%
 one-time
@@ -115,24 +131,6 @@ More then a prop firm
 Learn the Craft
 Get access to our EDGEucation resources,  and join a global community that shares your passion.
 Explore Academy Join the Community
-Gallery image 1
-Gallery image 2
-Gallery image 3
-Gallery image 4
-Gallery image 5
-Gallery image 6
-Gallery image 1 (current)
-Gallery image 2
-Gallery image 3
-Gallery image 4
-Gallery image 5
-Gallery image 6
-Gallery image 1
-Gallery image 2
-Gallery image 3
-Gallery image 4
-Gallery image 5
-Gallery image 6
 Hear From the Community
 Trustpilot
 Member interviews

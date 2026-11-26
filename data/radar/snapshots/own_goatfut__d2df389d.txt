@@ -8,7 +8,7 @@ Onboarding
 How to get started
 01 Explore
 Plans at a glance
-EOD, 1-Day-Pass-Plan, Instant, Flex and Daily Payouts: what each one is for, and the account sizes available.
+EOD, 1-Day-Pass, Instant, Flex and GOAT Daily: what each one is for, and the account sizes available.
 Learn more → 02 Purchase
 Payments and billing
 Learn more → 03 Start trading
@@ -16,19 +16,19 @@ Connect your platform
 Learn more →
 Models
 Choose a model
-Flex Challenge Daily Payouts EOD Challenge 1-Day-Pass-Plan Instant Instant Classic (no longer on sale) Instant Lite (no longer on sale)
+Flex Challenge GOAT Daily EOD Challenge 1-Day-Pass Instant Instant Classic (no longer on sale) Instant Lite (no longer on sale)
 Evaluation
 Flex Challenge
 Everything for Flex 50K, 100K and 150K: profit targets, drawdown, the optional daily loss limit, contract limits, payout caps, the 1 minute holding rule, and how big trading days are treated.
 Learn more → Evaluation
-Daily Payouts
-Everything for Daily 25K, 50K, 100K and 150K: profit target, drawdown, the daily loss limit, contract limits, and how the 24 hour payout cycle works.
+GOAT Daily
+Everything for GOAT Daily 25K, 50K, 100K and 150K: profit target, drawdown, the daily loss limit, contract limits, and how the 24 hour payout cycle works.
 Learn more → Evaluation
 EOD Challenge
 Everything for EOD 50K, 100K and 150K: profit target, trailing drawdown, daily loss limit, daily profit cap, consistency rule and payouts.
 Learn more → Evaluation
-1-Day-Pass-Plan
-Everything for 1-Day-Pass-Plan 25K, 50K and 100K: profit target, trailing drawdown with lock, daily loss limits, the profit split, payouts, and what changes once you are funded.
+1-Day-Pass
+Everything for 1-Day-Pass 25K, 50K and 100K: profit target, trailing drawdown with lock, daily loss limits, the profit split, payouts, and what changes once you are funded.
 Learn more → Instant
 Instant
 Everything for Instant 25K to 150K: no evaluation, the 15% or 20% consistency option, the optional daily loss limit, end of day trailing drawdown, and how rewards work.
@@ -40,7 +40,7 @@ Drawdown and loss limits
 How a rising floor works, the difference between end of day and intraday trailing, and a worked example of each.
 Learn more → Policy
 Trading rules
-No restrictions during the EOD, Flex and 1-Day-Pass-Plan evaluations. A 2 minute buffer applies on all funded accounts, and on Daily Payouts in both phases.
+No restrictions during the EOD, Flex and 1-Day-Pass evaluations. A 2 minute buffer applies on all funded accounts, and on GOAT Daily in both phases.
 Learn more → Compliance
 IP, VPS and accounts
 To keep accounts secure and ensure fair use, GOAT Funded Futures monitors the consistency of the IP address tied to each account across all stages.

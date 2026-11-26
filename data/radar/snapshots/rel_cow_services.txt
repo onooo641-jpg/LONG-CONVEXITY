@@ -1,5 +1,5 @@
+2026-11-26 v2.389.4
 2026-11-25 Hotfix v2.389.2
 2026-11-24 vhermod-concurrent-batches-prod
 2026-11-20 vsmaller-order-checkpoint-buffer-prod
 2026-11-23 vfee-engine-compiler-prod
-2026-11-19 v2.388.4

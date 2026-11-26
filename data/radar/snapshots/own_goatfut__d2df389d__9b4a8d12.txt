@@ -1,14 +1,14 @@
-1-Day-Pass-Plan | Goat Funded Futures FAQ's
-Help Center / Choose a model / 1-Day-Pass-Plan
-1-Day-Pass-Plan
-1-Day-Pass-Plan: specifications, rules and payouts
-Everything for 1-Day-Pass-Plan 25K, 50K and 100K: profit target, trailing drawdown with lock, daily loss limits, the profit split, payouts, and what changes once you are funded.
-Values by account size: 1-Day-Pass-Plan 25K / 1-Day-Pass-Plan 50K / 1-Day-Pass-Plan 100K
+1-Day-Pass | Goat Funded Futures FAQ's
+Help Center / Choose a model / 1-Day-Pass
+1-Day-Pass
+1-Day-Pass: specifications, rules and payouts
+Everything for 1-Day-Pass 25K, 50K and 100K: profit target, trailing drawdown with lock, daily loss limits, the profit split, payouts, and what changes once you are funded.
+Values by account size: 1-Day-Pass 25K / 1-Day-Pass 50K / 1-Day-Pass 100K
 Profit target : $1,500 (6%) / $3,000 (6%) / $6,000 (6%)
 Activation fee : $0 / $0 / $0
 Time limit : None / None / None
 Plan overview Drawdown and limits Consistency Rewards Trading rules
-The 1-Day-Pass-Plan Challenge is a one-phase evaluation built for faster payouts. It uses end of day trailing drawdown, pays 80/20 by default, and has no consistency rule during the evaluation.
+The 1-Day-Pass Challenge is a one-phase evaluation built for faster payouts. It uses end of day trailing drawdown, pays 80/20 by default, and has no consistency rule during the evaluation.
 Key benefits
 No time limit to pass the evaluation
 No consistency rule during the evaluation, so you can trade with full flexibility
@@ -17,7 +17,7 @@ Payouts every 5 winning days
 Drawdown lock, so the trailing drawdown stops moving once your balance reaches your starting balance
 $0 activation fee, so your funded account is activated at no extra cost
 Pricing and targets
-1-Day-Pass-Plan 25K 1-Day-Pass-Plan 50K 1-Day-Pass-Plan 100K
+1-Day-Pass 25K 1-Day-Pass 50K 1-Day-Pass 100K
 Profit target $1,500 (6%) $3,000 (6%) $6,000 (6%)
 Activation fee $0 $0 $0
 Time limit None None None
@@ -33,15 +33,15 @@ The consistency rule starts applying. There is none during the evaluation. On a 
 Everything else carries over unchanged: the end of day trailing drawdown and its lock, your maximum drawdown amount, the daily loss limit and its percentages, contract limits, news trading rules, overnight and weekend holding, and the 1 minute holding rule.
 Payout rules apply from this point too, since there are no payouts during an evaluation: 80/20 by default, payouts every 5 winning days, and 50% of your available profit per request with the rest staying in the account.
 If you bought the 90/10 Profit Share Add-On with your challenge, it carries over automatically. There is nothing to re-purchase. Since there are no payouts during an evaluation, the add-on only affects what you take home once you are funded.
-Why does 1-Day-Pass-Plan cost more than EOD?
-A 1-Day-Pass-Plan costs more than an EOD account of the same size. What the extra buys:
+Why does 1-Day-Pass cost more than EOD?
+A 1-Day-Pass costs more than an EOD account of the same size. What the extra buys:
 No consistency rule during the evaluation, included in the price. On EOD the evaluation has a 50% rule unless you add the None option at checkout.
 Faster payouts. 5 winning days instead of 7.
-A more forgiving funded consistency rule. 35% on 1-Day-Pass-Plan against 30% on EOD, so a bigger single day is allowed.
+A more forgiving funded consistency rule. 35% on 1-Day-Pass against 30% on EOD, so a bigger single day is allowed.
 A 25K entry size, which EOD does not offer.
 Two tradeoffs worth knowing before you choose:
-1-Day-Pass-Plan has an optional daily loss limit which, if chosen, also applies during the evaluation. EOD has none in the evaluation.
-1-Day-Pass-Plan tops out at 100K. EOD goes to 150K.
+1-Day-Pass has an optional daily loss limit which, if chosen, also applies during the evaluation. EOD has none in the evaluation.
+1-Day-Pass tops out at 100K. EOD goes to 150K.
 Maximum drawdown (end of day trailing)
 Your maximum drawdown is the level your account balance cannot fall below. It is calculated from your highest end of day balance , not your intraday equity, and it only updates after the trading day closes.
 Breaching it is a hard breach, which closes the account immediately. This applies in both the evaluation and funded phases.
@@ -68,7 +68,7 @@ Accounts bought before 18 November 2026: the 25K is limited to 1 mini / 10 micro
 Consistency rule
 Evaluation: none. Trade however you like.
 Funded: no single trading day may account for more than 35% of your total profit during a payout period.
-Example on a 1-Day-Pass-Plan 50K. You make $1,750 in one trading day on your funded account. Your total profit for that period needs to reach at least $5,000 before you can request a payout, which puts your best day at 35% of the total.
+Example on a 1-Day-Pass 50K. You make $1,750 in one trading day on your funded account. Your total profit for that period needs to reach at least $5,000 before you can request a payout, which puts your best day at 35% of the total.
 If you go over the threshold: your account is not terminated. You simply cannot request a payout until your highest profit day falls back to the threshold or below. Keep trading and building profit until it does, then you are eligible again.
 Payouts
 Eligibility: every 5 winning days. A winning day is a net profit of at least 0.2% of your starting balance, so $100 on a 50K.
@@ -98,5 +98,5 @@ Tick scalping , meaning opening and closing positions within seconds to capture 
 Inactivity
 Place at least one trade every 14 days. If no trades are placed for 14 consecutive days the account is breached and closed, and the fee is not refunded. This 14-day rule applies from 7 November 2026. There is no time limit on passing the evaluation, but the account does need to stay active. If you are going to be away, tell support in advance.
 Please monitor our website and Discord for announcements about trading parameters, updates, or system changes.
-Updated 24 November 2026
+Updated 25 November 2026
 Back to top

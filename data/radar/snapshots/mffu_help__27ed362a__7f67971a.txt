@@ -29,7 +29,7 @@ Once you choose the data feed MFFU , a successful connection will be confirmed w
 Explore MyFundedFutures Coupon Codes Here.
 If you have any questions regarding VolSys/VolBook setup or encounter connection issues, please contact our support team on the live chat or at [email protected]
 Related Articles
-Introduction to Volumetrica
+Overview of Supported Platforms at MFFU
 NinjaTrader: Login Instructions
 Quantower: Login Instructions
 ATAS: Login Instructions

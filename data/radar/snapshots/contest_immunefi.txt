@@ -74,7 +74,7 @@ Program Type
 Project Type
 Language
 Select to limit results
-Clear Filters View 152 Bounties
+Clear Filters View 151 Bounties
 Arbitration
 Immunefi Standard
 KYC Not Required
@@ -87,8 +87,8 @@ Primacy of Impact
 Safe Harbor
 Triaged by Immunefi
 Vaults
-Clear Filters View 152 Bounties
-Showing all 152 bounty programs
+Clear Filters View 151 Bounties
+Showing all 151 bounty programs
 NAME
 VAULT TVL
 MAX BOUNTY
@@ -96,7 +96,7 @@ TOTAL PAID
 MED. RESOLUTION TIME
 LAST UPDATED
 SSV Network
-$196.4k $250k Private
+$295.9k $250k Private
 Private
 24/11/2026 View bounty
 ENS Triaged by Immunefi
@@ -111,14 +111,14 @@ Lombard Finance
 $39.9k $500k Private
 Private
 24/11/2026 View bounty
-Hedera Triaged by Immunefi
-$16.5k $30k Private
-Private
-24/11/2026 View bounty
 The Graph Triaged by Immunefi
-$15.3k $50k $1.6M 1 day 24/11/2026 View bounty
+$15.7k $50k $1.6M 1 day 25/11/2026 View bounty
 Ethena Triaged by Immunefi
 $12.4k $3M Private
+Private
+24/11/2026 View bounty
+Hedera Triaged by Immunefi
+$11.5k $30k Private
 Private
 24/11/2026 View bounty
 DeXe Protocol

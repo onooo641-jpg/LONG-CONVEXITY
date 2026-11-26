@@ -46,12 +46,12 @@ Rewards
 Your first reward opens once you reach 6% profit. There is no minimum number of days.
 After that, each reward opens at 5% profit in the new cycle.
 Each reward is capped by your consistency option (table above).
-Rewards are requested within the payout windows, the same as our other plans (Daily Payouts is the only exception).
+Rewards are requested within the payout windows, the same as our other plans (GOAT Daily is the only exception).
 The minimum reward is $500, and KYC verification is required before your first reward.
 The 1 minute holding rule applies at each reward request, as on every plan.
 Trading rules
 Funded accounts have a 2 minute buffer around high impact news: no opening, closing or triggering of pending orders within 2 minutes before or after a scheduled release.
 Positions cannot be held overnight.
 Resets are not available. If the account is breached, you need to buy a new one.
-Updated 19 November 2026
+Updated 25 November 2026
 Back to top

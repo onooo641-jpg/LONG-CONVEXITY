@@ -104,7 +104,7 @@ Payout Round activation fee
 Free
 Lifespan
 90 days per round
-*Except the Starter Challenge and Launchpad Challenge, which both include 2 free Resets.
+*Except the Starter Challenge, which includes 2 free Resets.
 FAQs
 Where do I find Challenges?
 Head to the Challenges page in your Dashboard to purchase!

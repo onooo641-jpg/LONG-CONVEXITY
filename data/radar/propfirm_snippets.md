@@ -1,4 +1,4 @@
-# Prop-firm automation / country sentences (2026-11-25)
+# Prop-firm automation / country sentences (2026-11-26)
 
 ## Alpha Capital Group — https://alphacapitalgroup.uk/
 - AUTO: Expert Advisors supported
@@ -1491,67 +1491,6 @@
 ## City Traders Imperium — https://helpcenter.citytradersimperium.com/en/collections/16756321-essential-rules-guidelines
 - AUTO: Does CTI Allow EA Trading?
 
-## Crypto Fund Trader — https://cryptofundtrader.com/faq
-- AUTO: high-frequency trading, tick scalping, latency arbitrage, or any strategy that does not reflect real market
-- AUTO: may be manually closed.
-- AUTO: Disconnecting or modifying the API
-- AUTO: Disconnecting, modifying, altering, or interfering with the assigned API connection is strictly prohibited.
-- AUTO: Any attempt to disconnect or modify the API connection may result in immediate account suspension.
-- AUTO: High-Frequency Trading
-- AUTO: High-frequency trading is not allowed.
-- AUTO: This includes using programs, algorithms, bots, or automated systems
-- AUTO: Tick scalping is not allowed.
-- AUTO: Tick scalping is prohibited whether performed manually or through an Expert Advisor, bot, script, or
-- AUTO: This includes the use of bots, Expert Advisors, or automated systems
-- AUTO: Prohibited strategies include, but are not limited to, news scalping EAs, arbitrage EAs, multi-account
-- AUTO: reverse trading EAs, or any similar system designed to exploit the platform or data feed.
-- AUTO: How to create an account and connect the API key
-- AUTO: API Key must be generated and connected to the Crypto Fund Trader dashboard.
-- AUTO: The API Key must remain active and unchanged throughout the entire evaluation period.
-- AUTO: Important information about API keys
-- AUTO: Once an API Key and sub-account are connected to the evaluation, they must not be edited, deleted, or
-- AUTO: Doing so will result in the automatic invalidation of the evaluation account.
-- AUTO: If any trades remain open, they may be manually closed.
-- AUTO: activity will be manually reviewed by our team.
-- AUTO: may be manually closed.
-- AUTO: Is copy trading allowed in Break accounts?
-- AUTO: Copy trading between different traders, third parties, groups, or unrelated accounts is prohibited.
-- AUTO: Copy trading or coordinated activity is not allowed in the Final Stage.
-- AUTO: Is copy trading allowed in Ascend accounts?
-- AUTO: Copy trading between Ascend accounts is prohibited.
-- AUTO: If copy trading or coordinated activity is detected, Crypto Fund Trader may withhold or revoke the
-- AUTO: may be manually closed.
-
-## Crypto Fund Trader — https://cryptofundtrader.com/privacy-policy/
-- AUTO: Automatically collected information.
-- AUTO: will automatically retain and store such information.
-- AUTO: promotional offers, alerts, confirmations, surveys, and/or other general communication.
-
-## Crypto Fund Trader — https://cryptofundtrader.com/refund-policy/
-- AUTO: YOU AUTOMATICALLY LOSE YOUR RIGHT TO WITHDRAW FROM
-
-## Crypto Fund Trader — https://cryptofundtrader.com/terms-and-conditions/
-- AUTO: API Key and Subaccount Setup on Bybit Evaluations
-- AUTO: 3.3.1 Clients taking evaluations via Bybit must provide a dedicated API Key and Subaccount at the time of
-- AUTO: This API Key and Subaccount must remain unchanged throughout the entire evaluation process.
-- AUTO: 3.3.2 If the user deletes, modifies, or replaces their API Key or Subaccount at any time, the evaluation account
-- AUTO: will be automatically invalidated and closed.
-- AUTO: 3.3.3 If the API Key expires, the evaluation account will be marked as pending activation until a new valid API
-- AUTO: 3.3.5 The same API Key or Subaccount may not be reused across multiple evaluations.
-- AUTO: linked to a unique and exclusive Subaccount and API Key.
-- AUTO: these activities are carried out automatically without any kind of consent, consultation, or approval on your
-- AUTO: or symbol bans, prohibitions or limitations on VPS/VPN or remote access and anti-copy-trading controls.
-- AUTO: other things, copying ideas from other traders and analysts and copying trade signals from any type of trading
-- AUTO: IN ASCEND ACCOUNTS, copy trading is strictly prohibited, whether between a
-- AUTO: manually, via signals, or through automation.
-- AUTO: IN BREAK ACCOUNTS, copy trading is permitted only during the Evaluation phase and
-- AUTO: Copy trading, coordinated trading, mirrored trading, or substantially similar trading activity
-- AUTO: Copy trading or coordinated trading activity is not permitted on Break Final Stage accounts,
-- AUTO: If prohibited copy trading or coordinated activity is detected, the Provider reserves the right
-- AUTO: Once you complete the Break Evaluation without breaching any applicable rules, your account and trading activity will be manually reviewed by our team.
-- AUTO: normally automatically renewed each year.
-- COUNTRY: country or in any manner prohibited by applicable laws, restrictions, or regulations.
-
 ## DayTraders — https://daytraders.com/
 - AUTO: Payouts Automated review systems
 - AUTO: Fast, automated systems
@@ -2301,16 +2240,6 @@
 - COUNTRY: Due to legal, regulatory, and compliance requirements, we cannot accept customers who reside in or are citizens of certain countries and regions.
 - COUNTRY: FFONE's services are not available to residents of certain countries and regions, as listed in our Help Center (Restricted Countries / Regions).
 
-## Funded Futures Family — https://www.fundedfuturesfamily.com/privacy-policy/
-- AUTO: To send you service, support, and administrative messages, reminders, technical notices, updates, security alerts, and information requested by you
-- AUTO: Advancement to FFONE's Professional Stage, or to live market execution, is not automatic and is never guaranteed.
-- COUNTRY: FFONE's services are not available to residents of certain countries and regions, as listed in our Help Center (Restricted Countries / Regions).
-
-## Funded Futures Family — https://www.fundedfuturesfamily.com/terms-and-conditions/
-- AUTO: You agree that these activities may be performed automatically without any further consent, consultation, or approval on your part, and that you are not entitled to any remuneration or revenue associated with the use of the Data by Funded Futures Family.
-- AUTO: Advancement to FFONE's Professional Stage, or to live market execution, is not automatic and is never guaranteed.
-- COUNTRY: FFONE's services are not available to residents of certain countries and regions, as listed in our Help Center (Restricted Countries / Regions).
-
 ## Funded Futures Network — https://fundedfuturesnetwork.com/
 - AUTO: Real humans available around the clock, not bots.
 
@@ -2392,6 +2321,11 @@
 - AUTO: Is tick scalping legal?
 - COUNTRY: Are any countries restricted on FundedNext CFDs?
 
+## FundedNext Futures — https://fundednext.com/aml-policy
+- AUTO: In adherence to the legal obligations, a meticulous manual approval process is diligently undertaken for each transaction, employing the principles of due diligence.
+- AUTO: Within GrowthNext F.Z.E., a distinct and dedicated risk management unit exists, tasked with the meticulous manual examination of individual client profiles.
+- AUTO: conducts a meticulous manual review and approval of each transaction, applying the principles of due diligence.
+
 ## FundedNext Futures — https://fundednext.com/cfd-challenge-terms
 - AUTO: Risk Controls; Automatic Restrictions; Platform Integrity
 - AUTO: The Customer acknowledges that risk controls and enforcement measures may be applied automatically, including restricting trading and/or disabling functions when loss limits are reached.
@@ -2409,13 +2343,6 @@
 - AUTO: Without limitation, prohibited patterns may include excessive one-sided exposure, repeated "all-in" bets, grid trading, tick scalping, unrealistic order patterns, artificial trade fragmentation, account rolling, abusive patterns, or any comparable pattern which the Provider reasonably determines to be inconsistent with the evaluation purpose and indicative of abuse, manipulation, or circumvention.
 - AUTO: The Customer must not interfere with, disrupt, probe, scan, test, or compromise the security, stability, or integrity of the Website, Platform, or any Provider or Third Party systems, and must not introduce malware, bots, harmful code, or perform any action that could impair or degrade operations.
 - AUTO: The Provider may apply measures, including through automated or manual systems, it deems appropriate to protect programme integrity, including warnings, restrictions, suspensions, profit adjustments, disqualification, termination, denial of progression, and permanent bans, and/or the withholding, suspension, adjustment, reversal, denial, or set-off of any Performance Reward.
-
-## FundedNext Futures — https://fundednext.com/cookie-policy
-- AUTO: Most browsers automatically accept cookies by default.
-- AUTO: Enabling these cookies is automatic and cannot be turned off, as they are necessary for the operation of the Website.
-- AUTO: In the case of automated processing based on your consent or performance of the contract, you have the right to receive the data in a structured, commonly used and machine-readable format and to have them transmitted by us to another personal data controller.
-- AUTO: Right not to be the subject of automated decision-making
-- AUTO: Except where processing is necessary for entering into, or performance of, a contract, where this is permitted by applicable law, or based on your express consent, you have the right not to be the subject of any decision which is based solely on automated processing, including profiling, which produces legal effects concerning you or similarly affects you to a significant extent.
 
 ## FundedNext Futures — https://fundednext.com/futures-challenge-terms
 - AUTO: Upon reaching or exceeding the applicable Maximum Loss Limit (MLL) or Daily Loss Limit (DLL), FundedNext reserves the right to automatically restrict trading activity on the affected account for a certain period of time or indefinitely.
@@ -2453,6 +2380,22 @@
 - AUTO: They should also avoid any activities that may cause financial or other harm to The Provider, such as over-leveraging, over-exposure, making one-sided bets, grid trading, tick scalping, or account rolling.
 - AUTO: 2.1.8 Engaging in copy trading, where trades mimic or replicate the trading activities of other traders or entities without prior authorization, is prohibited for the Provider.
 - AUTO: Should any ambiguity or question regarding intent or interpretation arise, it shall be resolved in a neutral manner and not automatically against the drafting party.
+
+## FundedNext Futures — https://fundednext.com/privacy-policy
+- AUTO: Automated Processing, Profiling and Significant Decisions
+- AUTO: 5.2 Automatically Through Your Use of the Services
+- AUTO: We collect certain technical, device, usage, behavioural, monitoring and activity data automatically when you access or use our website, systems, platform environment, dashboards, portals, communications interfaces or other parts of the Services.
+- AUTO: We process Personal Data to send service-related communications, account notices, legal notices, operational alerts, security messages, compliance-related requests and other communications necessary for the administration or protection of the Services and our relationship with you.
+- AUTO: 6.12 Phone-Based, SMS and Automated Outreach
+- AUTO: Where permitted by applicable law, we may use the telephone number or other communication details that you provide to us to contact you regarding service matters, account administration, security, support, operational matters, programme updates, marketing communications or related outreach, including through manual, automated or AI-assisted means.
+- AUTO: timing patterns, behavioural indicators and usage signals;
+- AUTO: suspicious, irregular, prohibited or escalated activity signals; and
+- AUTO: For the avoidance of doubt, FundedNext may analyse account activity, behavioural patterns, technical signals, device associations and related data to detect direct or indirect attempts to misuse the Services, circumvent our rules, exploit the platform environment unfairly, obtain benefits improperly or interfere with the lawful and intended operation of the Services.
+- AUTO: Automated Processing, Profiling and Significant Decisions
+- AUTO: Such processing may include profiling based on technical, behavioural, transactional, usage, verification, payout, account-linkage or payment-related signals.
+- AUTO: Where applicable data protection law grants you rights in relation to decisions based solely on automated processing that produce legal or similarly significant effects, FundedNext will implement such safeguards as are required by law, which may include review procedures and, where applicable, the opportunity to request human intervention.
+- AUTO: Nothing in this Notice shall be interpreted as limiting FundedNext's right to implement reasonable and proportionate automated or semi-automated controls designed to protect the Services, prevent fraud, preserve evidence, safeguard operational integrity, manage payment or security risks, or enforce contractual restrictions and platform rules.
+- AUTO: the right to request review in relation to certain automated decisions, where applicable law so provides; and
 
 ## FundedNext Futures — https://fundednext.com/terms-of-service
 - AUTO: Participation in one modality (for example, CFDs) does not automatically grant the right of access, eligibility, phase migration, benefits or Performance Rewards in another modality (for example, Futures), unless expressly indicated by the Provider.
@@ -2668,18 +2611,18 @@
 - AUTO: Account sharing and copy trading.
 - AUTO: VPS environments are commonly used to run unattended automated systems 24/7, which conflicts with our requirement that you personally place and manage your trades.
 - AUTO: You can buy 5 accounts for a discounted bundle price on our checkout, and then you can indeed copy trades into all 5 accounts.
-- AUTO: On Daily Payouts, copy trading is permitted between your own Daily Payouts accounts only.
+- AUTO: On GOAT Daily, copy trading is permitted between your own GOAT Daily accounts only.
 - AUTO: To set up copy trading varies depending on platform.
 - COUNTRY: Datacenter IPs obscure who is actually trading and from where, which prevents us from meeting our compliance obligations, including restricted-country checks.
 
 ## Goat Funded Futures — https://help.goatfundedfutures.com/daily-payouts.html
-- AUTO: Tick scalping, meaning opening and closing positions within seconds to capture small tick profits, is not permitted on any GFF account including Daily Payouts.
-- AUTO: Daily Payouts is a manual trading product.
+- AUTO: Tick scalping, meaning opening and closing positions within seconds to capture small tick profits, is not permitted on any GFF account including GOAT Daily.
+- AUTO: GOAT Daily is a manual trading product.
 - AUTO: Bots, Expert Advisors and automated strategies are not permitted.
 - AUTO: Grid, martingale and high frequency strategies are not permitted.
 - AUTO: Any position still open is closed automatically at 15:55 CT, five minutes before the session ends.
 - AUTO: Account limits and copy trading
-- AUTO: Copy trading is permitted between your own Daily Payouts accounts only.
+- AUTO: Copy trading is permitted between your own GOAT Daily accounts only.
 
 ## Goat Funded Futures — https://help.goatfundedfutures.com/drawdown.html
 - AUTO: It trails your highest equity point in real time, meaning as your account reaches new equity highs, the drawdown floor automatically moves up by the same amount.
@@ -2715,16 +2658,16 @@
 - AUTO: Signals, copy trading and automated strategies
 - AUTO: Can I use trading bots or automated strategies (EAs)?
 - AUTO: Signals, copy trading and automated strategies
-- AUTO: On Daily Payouts, copy trading is permitted between your own Daily Payouts accounts only.
+- AUTO: On GOAT Daily, copy trading is permitted between your own GOAT Daily accounts only.
 - AUTO: Trading someone else's calls, whether from a signal provider, a trading group, a third party service, a copy or mirror service, or an EA that follows an external source, is a prohibited trading practice and may result in account termination.
 - AUTO: Where that is detected, every account and user involved may be suspended, including people who did not know others were following the same signals.
 - AUTO: Automated strategies
-- AUTO: On EOD, 1-Day-Pass-Plan, Flex and Instant Classic, your own automated strategies and EAs are allowed, as long as they reflect your own trading and do not exploit latency, data feed anomalies or system vulnerabilities.
-- AUTO: Daily Payouts and Instant Lite are manual trading products.
+- AUTO: On EOD, 1-Day-Pass, Flex and Instant Classic, your own automated strategies and EAs are allowed, as long as they reflect your own trading and do not exploit latency, data feed anomalies or system vulnerabilities.
+- AUTO: GOAT Daily and Instant Lite are manual trading products.
 - AUTO: Bots, Expert Advisors and automated strategies are not permitted on either, and neither are grid, martingale or high frequency strategies.
 - AUTO: Can I use trading bots or automated strategies (EAs)?
-- AUTO: On EOD, 1-Day-Pass-Plan, Flex and Instant Classic, personal automated strategies and EAs are allowed, as long as they are consistent with your trading style and do not exploit system vulnerabilities, latency, or data feed anomalies.
-- AUTO: Daily Payouts and Instant Lite are manual trading products.
+- AUTO: On EOD, 1-Day-Pass, Flex and Instant Classic, personal automated strategies and EAs are allowed, as long as they are consistent with your trading style and do not exploit system vulnerabilities, latency, or data feed anomalies.
+- AUTO: GOAT Daily and Instant Lite are manual trading products.
 - AUTO: Bots, Expert Advisors and automated strategies are not permitted on either, and neither are grid, martingale or high frequency strategies.
 
 ## Goat Funded Trader — https://goatfundedtrader.com/legal/privacy-policy
@@ -4958,6 +4901,7 @@
 - AUTO: use any robot, spider, scraper or other automatic device, manual process or application or data mining, scraping or extraction tool to access, harvest, monitor, copy or use the Site without the express written permission of Tradeify;
 
 ## Traders Launch — https://traderslaunch.com/
+- AUTO: Email Address Notify Me You also agree to receive Traders Launch marketing emails, including drop alerts.
 - AUTO: Buffer account opens automatically.
 - AUTO: When You Pass Buffer account opens automatically
 - AUTO: If you haven't passed by day 60 but you're above 50% of your profit target, you get a free 30-day extension automatically, at no extra cost.

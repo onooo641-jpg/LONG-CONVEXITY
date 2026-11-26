@@ -105,7 +105,7 @@ Maven
 MATCH
 WS
 WSFunded
-3.8
+3.9
 55% OFF
 MATCH55
 Cr
@@ -162,6 +162,13 @@ BEM Funding
 4.9
 50% OFF
 MATCHFRIDA...
+Or
+Orion Funded
+<20 reviews
+Less than
+20 reviews
+50% OFF
+MATCH
 Ho
 Hola Prime
 4.4
@@ -204,7 +211,7 @@ Favorite 0/5
 New
 All Firms
 Firms 15 results
-Data updated 2 min ago
+Data updated just now
 Firm
 Rank / Reviews
 Country / Years
@@ -215,7 +222,7 @@ Promo
 Actions
 Th
 The5ers
-100566
+100612
 4.7
 1444
 reviews
@@ -232,7 +239,7 @@ MATCH
 Firm
 FT
 FTMO
-44400
+44419
 4.5
 220
 reviews
@@ -248,9 +255,9 @@ $400K
 Firm
 Aq
 AquaFunded
-17180
+17203
 4.4
-347
+346
 reviews
 Dubai (UAE), years in operation: 2 2
 FX, Indices, Metals, Crypto, Other Commodities FX
@@ -265,7 +272,7 @@ Firm
 4
 Bl
 Blueberry Funded
-26291
+26294
 4.1
 635
 reviews
@@ -283,7 +290,7 @@ Firm
 5
 E8
 E8 Markets
-39266
+39288
 4.8
 498
 reviews
@@ -301,7 +308,7 @@ Firm
 6
 Mo
 Moneta Funded
-1563
+1566
 4.8
 132
 reviews
@@ -318,9 +325,9 @@ Firm
 7
 To
 Top One Trader
-30369
+30385
 4.4
-239
+240
 reviews
 United States, years in operation: 3 3
 FX, Indices, Metals, Crypto FX
@@ -334,7 +341,7 @@ Firm
 8
 Ma
 Maven
-48299
+48310
 4.2
 801
 reviews
@@ -353,8 +360,8 @@ Firm
 WS
 WSFunded
 365
-3.8
-52
+3.9
+53
 reviews
 Dubai (UAE), years in operation: 2 2
 FX, Indices, Metals, Energy, Crypto, Stocks, Other Commodities FX
@@ -370,7 +377,7 @@ Firm
 10
 Cr
 Crypto Fund Trader
-39765
+39816
 4.1
 114
 reviews
@@ -405,7 +412,7 @@ Firm
 12
 At
 Atmos Funded
-846
+847
 4.7
 56
 reviews
@@ -423,7 +430,7 @@ Firm
 13
 Le
 Leveraged
-187
+188
 Less than
 20 reviews
 Saint Lucia, years in operation: 1 1
@@ -476,7 +483,7 @@ View All Firms
 PFM TV Watch live. Stay ahead
 Live trading, partner reviews, founder interviews, and practical trading education.
 FTMO Futures Challenge Explained (2026) | FTMO Futures Challenge Review
-3.9K views • about 1 month ago
+4K views • about 1 month ago
 Watch Latest Video
 Partner Reviews
 FTMO Futures Challenge Explained (2026) | FTMO Futures Challenge Review
@@ -596,7 +603,7 @@ James Sixsmith • Take Profit Trader
 Guest interview
 Watch & Learn
 Updated Oct 14, 2026
-83.9K Subscribers
+84K Subscribers
 994 Videos
 Trading Insights
 Live trading, interviews, and prop firm updates
