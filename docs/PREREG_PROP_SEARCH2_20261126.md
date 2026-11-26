@@ -190,3 +190,29 @@ that buffer is acceptable is Jx's risk decision. It is not a pass under the regi
 **Also noted (not tested as registered):** the $3K Challenge allows several accounts at once (unlimited in the Challenge round, 5 in the
 Payout round). Two at once would double real and dip ($30K, −$4.4K). That is a portfolio choice, like the multi-firm plan, not a
 single-product pass.
+
+## Jx decisions and facts (2026-11-26)
+- **Topstep 100K and 150K Static, Consistency path:** recorded as an **option** (not a qualifier). They pass the coin-flip test but need
+  a deeper cash buffer (worst dip −$6.9K and −$9.5K).
+- **DayTraders S2F 50K checkout price (Jx, from the checkout): $342**, with no activation and no recurring fees. Addendum A1 priced it at
+  $342 → **fails**. Closed.
+- **Other DayTraders checkout prices (Jx), all-in:**
+  - 50K Static (eval + Pro) $55 ($50 + $5 activation);
+  - 50K Trail $75;
+  - 50K EOD $110 (already priced by the audit: fails);
+  - 25K S2F $222.
+
+## Stage D (registered before running): DayTraders products at Jx's checkout prices, official rules
+Source: `data/public/propverify/deep_daytraders.com.json`, help articles dated Oct 2026. DayTraders' own pages settle Stage B for DayTraders:
+- Static: "If your balance touches it at any time, including open losses, the account fails";
+- S2F: "Your balance must stay above it at all times, including intraday".
+
+So all are on the **real-time** model. DayTraders allows bots and accepts Malaysian residents (PROP_VERIFY).
+
+| Product (all-in) | Eval | Pro / funded | Model |
+|---|---|---|---|
+| **50K Static $55** | target $3,750; static MLL $1,000; 60 micros; 50% consistency; 2 QDays ≥ $200 | same static MLL (never moves, also after payouts); 30% consistency per cycle; 8 QDays ≥ $200 between payouts; max $2,000/request; min $500; 100% split | `static_dd`, no lock (`lock_level` −$1,000 keeps the floor after payouts), payout up to the balance's profit, risk 0.45 × $1,000 = $450 |
+| **50K Trail $75** | target $3,000; MLL $2,500 intraday trailing; 100 micros; 50% consistency | trails intraday, stops at starting balance; 30% per cycle; 8 QDays ≥ $200; max $2,000; 100% | intraday trail funded; lock at $2,500 → $0; risk $1,125 |
+| **25K S2F $222** | none | MLL $1,000 EOD trailing, stops at start; no DLL; 20 micros; 10 QDays ≥ $100; 20% consistency; cycle targets $2,000 / $1,500 / $1,000; max $1,000/request; 100% | `instant(...)`, risk $450 |
+
+Same bar as every stage. Script: `scripts/prop_search2_d_20261126.py` → `docs/jx_runs/prop_search2_d_20261126.txt`.
