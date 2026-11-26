@@ -1943,6 +1943,28 @@ def job_coinalyze_probe():
 JOBS["coinalyze_probe"] = job_coinalyze_probe
 
 
+def job_ubatchk():
+    """Batch K #494 (docs/PREREG_BATCH_K_20261126.md): Yahoo daily adjusted closes for SPY, EFA, TLT, IEF."""
+    rows = []
+    for sym in ("SPY", "EFA", "TLT", "IEF"):
+        try:
+            req = urllib.request.Request(f"https://query1.finance.yahoo.com/v8/finance/chart/{sym}?period1=946684800&period2=1793491200&interval=1d&events=div,split",
+                                         headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36"})
+            with urllib.request.urlopen(req, timeout=60) as r:
+                res = json.loads(r.read().decode())["chart"]["result"][0]
+            adj = res["indicators"]["adjclose"][0]["adjclose"]
+            rows += [(sym, int(a), float(b)) for a, b in zip(res["timestamp"], adj) if b is not None]
+            print(f"  yahoo {sym}: ok", flush=True)
+        except Exception as e:  # noqa: BLE001
+            print(f"  yahoo {sym} FAIL {e}", flush=True)
+        time.sleep(1)
+    pd.DataFrame(rows, columns=["sym", "t", "adj"]).to_parquet(OUT / "batchk_etf_1d.parquet")
+    print(f"  wrote batchk_etf_1d.parquet: {len(rows)} rows", flush=True)
+
+
+JOBS["ubatchk"] = job_ubatchk
+
+
 def main(argv):
     OUT.mkdir(parents=True, exist_ok=True)
     for name in argv:

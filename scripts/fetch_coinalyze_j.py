@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import json
 import os
+import sys
 import time
 import urllib.error
 import urllib.request
@@ -49,8 +50,22 @@ def pull(endpoint, symbols, key, extra=""):
     return pd.DataFrame(rows)
 
 
+def main_k(key):
+    """Batch K #495: daily long/short account ratio for the Binance symbols."""
+    m = pd.read_parquet(PUB / "coinalyze_future_markets.parquet")
+    have = set(m["symbol"])
+    alts = sorted(pd.read_parquet(PUB / "batchd_alts_1h.parquet")["sym"].unique())
+    unseen = sorted(pd.read_parquet(PUB / "batchh2_unseen_funding.parquet")["sym"].unique())
+    bn = [f"{s[:-4]}USDT_PERP.A" for s in alts + unseen if f"{s[:-4]}USDT_PERP.A" in have]
+    df = pull("long-short-ratio-history", bn, key)
+    df.to_parquet(PUB / "batchk_cz_lsr_binance.parquet")
+    print(f"  cz_lsr_binance: {df['symbol'].nunique() if len(df) else 0} symbols, {len(df)} rows", flush=True)
+
+
 def main():
     key = os.environ.get("COINALYZE_API_KEY", "")
+    if "--k" in sys.argv:
+        return main_k(key)
     assert key, "set COINALYZE_API_KEY"
     m = pd.read_parquet(PUB / "coinalyze_future_markets.parquet")
     have = set(m["symbol"])
