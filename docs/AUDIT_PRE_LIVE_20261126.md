@@ -86,3 +86,21 @@ through `flip` before relying on them.
 Manual entry (3-minute delay): **nothing qualifies**, not even Topstep (coin flip $4,540); Top One Elite $18,741, coin flip $385.
 Products that failed on the old model only get worse on this one. **Result: one firm qualifies — Topstep.** The other firms' verdicts
 assume they also check open P&L; if one only checks at the close, its old (closed-P&L) figure applies — confirm on each firm's pages.
+
+## Addendum 2 (2026-11-26): each firm's rule read from its own pages
+| Firm | What its own page says | Model used |
+|---|---|---|
+| Topstep | loss limit trails the end-of-day balance but is monitored in real time on realized + unrealized P&L (help.topstep.com 8284204) | real-time |
+| Lucid (EOD drawdown: LucidFlex; LucidDaily if chosen) | "Unrealized gains and losses do not affect the drawdown calculation" (support.lucidtrading.com 16033858); LucidFlex eval and funded use EOD drawdown (12945815, 12945795); LucidDaily funded is intraday unless EOD funded is chosen at checkout | closed P&L (EOD); LucidDaily intraday funded: real-time with intraday trail |
+| TTP Futures Prime | drawdown trails the end-of-day closed balance (thetradingpit.com FAQ); breach on live equity not stated outright, but its daily-pause page warns slippage past the max drawdown fails the account | real-time (conservative; unconfirmed) |
+| DayTraders EOD | drawdown moves only at the end of the day; its general guide says an account is breached if the balance drops below the threshold "at any time" | real-time (conservative; unconfirmed) |
+Result (`docs/jx_runs/audit_all_prop_20261126.txt`, "ADDENDUM 2", re-run identical), bot entry:
+| Product | Real 2016–26 | Coin flip | Worst dip | Start: median / 1 in 10 / worst | Verdict |
+|---|---|---|---|---|---|
+| **LucidFlex 50K DLL ON $80.50** | **$40,545** | $21,522 (99%) | −$4,108 | −$708 / −$2,906 / −$4,108 | **qualifies** |
+| **Topstep 50K Consistency** | **$37,406** | $6,384 (76%) | −$3,524 | −$1,181 / −$2,585 / −$3,475 | **qualifies** |
+| **LucidDaily $85.40 (EOD eval, intraday funded)** | **$30,380** | $6,110 (74%) | −$4,526 | −$1,025 / −$3,519 / −$4,612 | **qualifies** |
+| LucidDaily $165.20 (EOD eval + EOD funded) | $44,558 | $10,241 | −$7,269 | — | fails (dip) |
+| TTP Futures Prime 50K | $26,700 | $3,521 | −$5,651 | — | fails if real-time; $50,495 if close-only |
+| DayTraders EOD 50K | $33,760 | −$5,937 | −$7,064 | — | fails if real-time |
+Lucid figures exclude CrossTrade ($49/month ≈ $6.4K over 10.8 years) needed for the bot; the LucidFlex price $80.50 is the promo Jx saw.
