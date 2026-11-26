@@ -357,3 +357,34 @@ def test_the_second_leg_is_off_unless_asked_for():
 def test_rejects_an_invalid_scale_out_fraction():
     with pytest.raises(ValueError, match="scale_out_fraction"):
         BacktestConfig(scale_out_fraction=1.0)
+
+
+def test_a_stopped_trade_counts_its_exit_bar_only_up_to_the_stop_fill():
+    """The bar that hits the stop may run far past it; the position was already flat."""
+    import pandas as pd
+    from backtest.engine import BacktestConfig, simulate
+    ts = pd.date_range("2026-01-05 14:30", periods=4, freq="1min", tz="UTC")
+    bars = pd.DataFrame({"ts": ts, "open": [101.0, 100.5, 100.0, 99.0], "high": [101.0, 101.0, 100.0, 99.0],
+                         "low": [100.5, 100.0, 90.0, 89.0], "close": [100.5, 100.0, 91.0, 89.0]})
+    orders = pd.DataFrame({"signal_ts": [ts[0]], "valid_from": [ts[1]], "expires_at": [ts[3]], "direction": [1],
+                           "entry_price": [100.0], "stop_price": [98.0], "target_price": [102.0], "time_exit_ts": [ts[3]]})
+    cfg = BacktestConfig(risk_per_trade_usd=4.0, exit_slippage_ticks=1.0)
+    t = simulate(orders, bars, cfg).iloc[0]
+    assert t["exit_reason"] == "stop"
+    contracts = t["contracts"]
+    realised_usd = (100.0 - t["exit_price"]) / 0.25 * cfg.tick_value * contracts
+    assert abs(t["mae_usd"] - realised_usd) < 1e-9   # not the 10-point wick to 90
+
+
+def test_a_target_exit_counts_its_exit_bar_only_up_to_the_target():
+    import pandas as pd
+    from backtest.engine import BacktestConfig, simulate
+    ts = pd.date_range("2026-01-05 14:30", periods=4, freq="1min", tz="UTC")
+    bars = pd.DataFrame({"ts": ts, "open": [101.0, 100.5, 101.0, 111.0], "high": [101.0, 101.0, 112.0, 112.0],
+                         "low": [100.5, 100.0, 100.5, 110.0], "close": [100.5, 100.5, 111.0, 111.0]})
+    orders = pd.DataFrame({"signal_ts": [ts[0]], "valid_from": [ts[1]], "expires_at": [ts[3]], "direction": [1],
+                           "entry_price": [100.0], "stop_price": [98.0], "target_price": [102.0], "time_exit_ts": [ts[3]]})
+    cfg = BacktestConfig(risk_per_trade_usd=4.0)
+    t = simulate(orders, bars, cfg).iloc[0]
+    assert t["exit_reason"] == "target"
+    assert abs(t["mfe_usd"] - 2.0 / 0.25 * cfg.tick_value * t["contracts"]) < 1e-9   # not the run to 112

@@ -12,8 +12,8 @@ Plain-language guide. Sorted from "what makes money" to "what failed". Every num
 ## 1. Bottom line
 | What | Status | Money |
 |---|---|---|
-| **Prop-firm recycling, Topstep 50K** (corrected 2026-11-26: loss limit checked on open P&L) | **Works (backtest 2016–26); only product that still qualifies** | **$37,406 = $3,454/yr**, coin flip $6,384; worst dip −$3,524; up to 5 accounts |
-| Second firm: **LucidFlex 50K DLL ON** (and LucidDaily $85.40) | **Qualifies on Lucid's own stated rule** (EOD drawdown ignores open P&L); needs CrossTrade ($49/month) for the bot | LucidFlex $40,545 (coin flip $21,522); TTP and DayTraders fail if they check open P&L |
+| **Prop-firm recycling, Topstep 50K** (corrected 2026-11-27: loss limit checked on open P&L) | **Works (backtest 2016–26); bot runs today** | **$39,949 = $3,689/yr**, coin flip $7,699; worst dip −$3,862; up to 5 accounts |
+| Second firm: **LucidFlex 50K DLL ON** (and LucidDaily $85.40) | **Qualifies on Lucid's own stated rule** (EOD drawdown ignores open P&L); needs CrossTrade ($49/month) for the bot | LucidFlex $40,545 (coin flip $21,522), LucidDaily $35,798; up to 5 Lucid funded accounts per household |
 | **#389 Resting bids under liquidation wicks** (Hyperliquid perps, own capital) | **Best non-prop result so far.** Stage 1 + out-of-sample on Binance (S2a) + risk (S2b) passed; forward paper (S2c) 2026-12-01 → 2027-01-26 and a margin check (S2d) still open | backtest ~$18.8K/yr on $15K (Hyperliquid 2023–26), or ~$6.4K/yr if resting orders lock margin; **loses in crash regimes** (Binance path −$22K, 2025-09 → 2026-07) |
 | **#397 Cascade-day reversal** (buy the perps that wicked, hold 3 days) | Stage 1 + Binance Stage 2 passed | ~7–8 events/yr, +3.3–3.7% per event ≈ $3.7K/yr unlevered on $15K; overlaps #389's crash days |
 | #385 Short Hyperliquid pre-launch perps | Survives Stage 1; small sizes only | ~$4K/yr; forward watch running |
@@ -23,7 +23,7 @@ Plain-language guide. Sorted from "what makes money" to "what failed". Every num
 | Liquidation bot (workstream B) | Shadow test running | est. $0–$100/month now |
 | Everything else (~140 non-prop ideas) | Failed, not testable, or excluded | sections 6–8 |
 
-**Next step and how much money:** section 2b — one live Topstep account, ~$1,200 to start, up to ~$2.6K set aside (9 in 10 starts), ~$3.5K worst case. **Pre-live audit:** `docs/AUDIT_PRE_LIVE_20261126.md` (one modelling error found and fixed; all prop figures lowered).
+**Next step and how much money:** section 2b — one live Topstep account, ~$950 to start, up to ~$2.8K set aside (9 in 10 starts), ~$3.9K worst case. **Pre-live audit:** `docs/AUDIT_PRE_LIVE_20261126.md` (one modelling error found and fixed; all prop figures lowered).
 
 **If prop income stops (fallback plan, 2026-11-23).**
 - *What would stop it:* firm rule changes or closures, not the friend's strategy losing its edge (every approved firm's coin-flip median is
@@ -45,8 +45,8 @@ Plain-language guide. Sorted from "what makes money" to "what failed". Every num
 | Prop accounts, payments, live trades | money/KYC | per `docs/GO_LIVE*.md` |
 
 ## 2b. Next step and money needed (corrected 2026-11-26)
-**Next step: one live Topstep 50K account run by the friend's bot. Start with ~$1,200; set aside up to ~$2.6K (covers 9 in 10 historical
-starts), ~$3.5K for the worst start (~$4.2–4.5K if live execution turns out worse than modelled).** This pays evaluation fees and resets,
+**Next step: one live Topstep 50K account run by the friend's bot. Start with ~$950; set aside up to ~$2.8K (covers 9 in 10 historical
+starts), ~$3.9K for the worst start (~$4.2K if live execution turns out worse than modelled).** This pays evaluation fees and resets,
 not trading losses. All figures use the corrected model (loss limit checked on open P&L; `docs/AUDIT_PRE_LIVE_20261126.md`).
 
 **Status:** no live trades in the repo yet. The friend runs `scripts/export_live_trades.py` and pushes `data/live/` (after `git pull` for the
@@ -54,7 +54,7 @@ tick fix). The bot connects to TopstepX.
 
 **Why one account first:** every figure comes from the same backtested trades. The strategy is about break-even per trade; the income
 comes from the prop rules, so worse live fills or timing shrink every figure at once (a 1-minute order delay alone cuts Topstep's
-$37.4K to $26.1K; audit table). One account tests that for ~$1,200 of fees.
+$39.9K to $24.4K; audit addendum 3). One account tests that for ~$950 of fees.
 
 **What is compared** (`docs/PREREG_LIVE_20261120.md`, set before any live data):
 | Check | Model | Gate |
@@ -67,16 +67,17 @@ $37.4K to $26.1K; audit table). One account tests that for ~$1,200 of fees.
 Also check order timing: the order should reach Topstep within seconds of the confirming bar's close. After 100 trades and a first payout
 inside the bands → scale. **First 3 months, normal case:** ~50 trades, 2–3 evaluations before the first pass, most likely a small loss.
 
-**Starting money, Topstep 50K** (118 monthly starts 2016–25, corrected; ledger AUD1). Every start eventually went positive.
+**Starting money, Topstep 50K Consistency** (118 monthly starts 2016–25, corrected; ledger AUD5). Every start eventually went positive.
 | Typical start (median) | 1 in 4 worse than | 1 in 10 worse than | Worst | First payout (median) | Net after 12 months (median) |
 |---|---|---|---|---|---|
-| −$1,181 | −$1,919 | −$2,585 | −$3,475 | $1,085 after 132 days | $1,327 (39% of starts still down) |
+| −$932 | −$1,832 | −$2,813 | −$3,862 | $1,002 after 132 days | $1,614 (38% of starts still down) |
 
 **Costs:** $49/month Combine + $49 reset + $149 activation per funded account (Topstep's fees, in the backtest); TopstepX API
-$14.50/month (bot access, in the backtest).
+$14.50/month (bot access, in the backtest). Cheaper option if the promo holds: No-Activation path with the $1,000 DLL, $75/month, reset
+$85, no activation fee: $42,496 (ledger AUD6).
 
-**Other firms (audit addendum 2, firms' own pages):** LucidFlex 50K DLL ON ($40,545; start median −$708, 1 in 10 −$2,906, worst −$4,108)
-and LucidDaily $85.40 ($30,380) also qualify — Lucid's EOD drawdown ignores open P&L. They need the CrossTrade route ($49/month) for the
+**Other firms (audit addenda 2–3, firms' own pages):** LucidFlex 50K DLL ON ($40,545; start median −$708, 1 in 10 −$2,906, worst −$4,108)
+and LucidDaily $85.40 ($35,798) also qualify — Lucid's EOD drawdown ignores open P&L. They need the CrossTrade route ($49/month) for the
 bot. TTP Prime and DayTraders EOD fail if they check open P&L.
 **Later steps:** more Topstep accounts (up to 5) after the live gates; #389 (own capital) only after its paper test ends 2027-01-26.
 
@@ -93,33 +94,31 @@ bot. TTP Prime and DayTraders EOD fail if they check open P&L.
 ---
 
 ## 4. Prop firms
-> **Correction 2026-11-26:** every dollar figure in 4a–4d below was computed judging the loss limit on closed trades only. Firms such as
-> Topstep check it on open P&L in real time, so these figures are optimistic. Corrected (`docs/AUDIT_PRE_LIVE_20261126.md`): Topstep 50K
-> Consistency $37,406 (coin flip $6,384, qualifies); LucidDaily $85.40 $27,301 (coin flip $218, fails); TTP Prime $26,700 (coin flip
-> $3,521, fails); DayTraders EOD $33,760 (coin flip −$5,937, fails) — the last three assume those firms also check open P&L (unconfirmed).
-> **Read from each firm's own pages (audit addendum 2): Lucid's EOD drawdown ignores unrealized P&L.** Qualifying, bot entry:
-> **LucidFlex 50K DLL ON $80.50 $40,545** (coin flip $21,522), **Topstep 50K Consistency $37,406** ($6,384), **LucidDaily $85.40 $30,380**
-> ($6,110). TTP Prime and DayTraders EOD fail if they check open P&L (their pages imply it; not stated outright). Lucid needs CrossTrade
+> **Correction 2026-11-26/27:** the figures in 4b–4d below were computed judging the loss limit on closed trades only; firms such as
+> Topstep check it on open P&L in real time, so those figures are optimistic. Corrected results are in 4a and `docs/AUDIT_PRE_LIVE_20261126.md`.
+> **Read from each firm's own pages (audit addenda 2–3): Lucid's EOD drawdown ignores unrealized P&L.** Qualifying, bot entry:
+> **LucidFlex 50K DLL ON $80.50 $40,545** (coin flip $21,522), **Topstep 50K Consistency $39,949** ($7,699), **LucidDaily $85.40 $35,798**
+> ($8,115). TTP Prime and DayTraders EOD fail if they check open P&L (their pages imply it; not stated outright). Lucid needs CrossTrade
 > ($49/month, not in the figures) for the bot.
 
 Benchmark Topstep 50K (old closed-P&L model): $44,359 real net, coin-flip median $18,046, worst dip −$3,520. "Qualifies" = real ≥ 50% of Topstep, coin flip ≥ $5,000,
 worst dip no worse than 1.5× Topstep's (manual-entry products judged with a 3-minute entry delay).
 
-### 4a. Corrected 2026-11-26 — each firm's own drawdown rule (`docs/AUDIT_PRE_LIVE_20261126.md` addendum 2, ledger AUD3–AUD4)
-Bot entry, backtest 2016–26. Qualifies = real ≥ 50% of Topstep Standard ($17,562), coin flip ≥ $5,000, worst dip no worse than −$6,088.
+### 4a. Corrected 2026-11-27 — each firm's own drawdown rule (`docs/AUDIT_PRE_LIVE_20261126.md` addendum 3, ledger AUD5)
+Bot entry, backtest 2016–26. Qualifies = real ≥ 50% of Topstep Standard ($19,017), coin flip ≥ $5,000, worst dip no worse than −$5,794.
 | Rank | Product (price) | How the firm checks the loss limit | Real net | Per year | Coin flip | Worst dip | Verdict |
 |---|---|---|---|---|---|---|---|
 | 1 | LucidFlex 50K DLL ON ($80.50) | end of day, open losses ignored (Lucid's page) | $40,545 | $3,744 | $21,522 | −$4,108 | **QUALIFIES** (needs CrossTrade $49/mo, not included) |
-| 2 | Topstep 50K, Consistency payout path ($49/mo) | real time, open losses count (Topstep's page) | $37,406 | $3,454 | $6,384 | −$3,524 | **QUALIFIES** (bot works today) |
-| 3 | Topstep 50K, Standard path | same | $35,124 | $3,243 | $6,205 | −$4,058 | **QUALIFIES** |
-| 4 | LucidDaily 50K ($85.40: EOD eval, intraday funded) | eval end of day; funded intraday | $30,380 | $2,805 | $6,110 | −$4,526 | **QUALIFIES** (needs CrossTrade) |
-| — | DayTraders EOD 50K ($105 + $5) | real time (inferred) | $33,760 | $3,117 | −$5,937 | −$7,064 | fails |
-| — | TTP Futures Prime 50K ($99) | real time (inferred) | $26,700 | $2,465 | $3,521 | −$5,651 | fails ($50,495 if close-only) |
-| — | TradeDay 50K ($85 code) | real time (assumed) | $18,567 | $1,714 | −$1,486 | −$5,855 | fails |
+| 2 | Topstep 50K, Consistency payout path ($49/mo) | real time, open losses count (Topstep's page) | $39,949 | $3,689 | $7,699 | −$3,862 | **QUALIFIES** (bot works today) |
+| 3 | Topstep 50K, Standard path | same | $38,034 | $3,512 | $7,648 | −$3,862 | **QUALIFIES** |
+| 4 | LucidDaily 50K ($85.40: EOD eval, intraday funded) | eval end of day; funded intraday | $35,798 | $3,305 | $8,115 | −$4,526 | **QUALIFIES** (needs CrossTrade) |
+| — | DayTraders EOD 50K ($105 + $5) | real time (inferred) | $40,161 | $3,708 | −$3,389 | −$4,005 | fails (coin flip) |
+| — | TTP Futures Prime 50K ($99) | real time (inferred) | $27,843 | $2,571 | $4,554 | −$5,236 | fails ($50,495 if close-only) |
+| — | TradeDay 50K ($85 code) | real time (assumed) | $14,304 | $1,321 | $564 | −$5,430 | fails |
 | — | LucidDaily ($165.20: EOD eval + EOD funded) | end of day | $44,558 | $4,114 | $10,241 | −$7,269 | fails (dip) |
-Manual entry (3-minute delay) on the corrected model: Topstep $29,020 (coin flip $4,540), nothing on the Topstep-only rule qualifies;
-Lucid manual not yet re-run on Lucid's rule. The old table (closed-P&L figures: LucidDaily $57,486, TTP $49,057, DayTraders $47,894 …),
-the old ROI table (ledger PR1) and the 4-firm portfolio ($195K) are superseded; see the audit file.
+Account limits: Topstep 5 funded accounts (Standard and Consistency share them); Lucid 5 funded per household (all Lucid types share them).
+Manual entry (3-minute delay): nothing qualifies (Topstep Consistency $25,973, coin flip $4,627). The old closed-P&L table, ROI table
+(PR1) and 4-firm portfolio ($195K) are superseded.
 
 ### 4b. DISAPPROVED — firm does not accept Malaysian residents (their own restricted-country lists)
 | Firm | Best product and figure (would have qualified) | Source |

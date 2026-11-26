@@ -1,35 +1,35 @@
 
-BOT (orders at signal time). Bar: real >= $17,562, coin flip >= $5,000, dip >= $-6,088
-  Topstep 50K Standard (benchmark)                   real $  35,124 (closed-P&L model $  44,359) | coin flip $   6,205 (75%) | dip $ -4,058 | QUALIFIES
-  Topstep 50K Consistency                            real $  37,406 (closed-P&L model $  46,492) | coin flip $   6,384 (76%) | dip $ -3,524 | QUALIFIES
-  TTP Futures Prime 50K                              real $  26,700 (closed-P&L model $  50,495) | coin flip $   3,521 (63%) | dip $ -5,651 | fails
-  DayTraders EOD 50K $105                            real $  33,760 (closed-P&L model $  48,856) | coin flip $  -5,937 (25%) | dip $ -7,064 | fails
-  LucidDaily 50K $85.40, funded trails intraday      real $  27,301 (closed-P&L model $  57,486) | coin flip $     218 (52%) | dip $ -3,814 | fails
-  LucidDaily 50K $85.40, funded EOD                  real $  34,124 (closed-P&L model $  57,486) | coin flip $   5,723 (74%) | dip $ -3,598 | QUALIFIES
-  LucidFlex 50K DLL ON $80.50                        real $  29,037 (closed-P&L model $  40,545) | coin flip $   4,806 (68%) | dip $ -4,508 | fails
-  TradeDay 50K $85                                   real $  18,567 (closed-P&L model $  35,678) | coin flip $  -1,486 (42%) | dip $ -5,855 | fails
+BOT (orders at signal time). Bar: real >= $19,017, coin flip >= $5,000, dip >= $-5,794
+  Topstep 50K Standard (benchmark)                   real $  38,034 (closed-P&L model $  44,359) | coin flip $   7,648 (76%) | dip $ -3,862 | QUALIFIES
+  Topstep 50K Consistency                            real $  39,949 (closed-P&L model $  46,492) | coin flip $   7,699 (78%) | dip $ -3,862 | QUALIFIES
+  TTP Futures Prime 50K                              real $  27,843 (closed-P&L model $  50,495) | coin flip $   4,554 (71%) | dip $ -5,236 | fails
+  DayTraders EOD 50K $105                            real $  40,161 (closed-P&L model $  48,856) | coin flip $  -3,389 (32%) | dip $ -4,005 | fails
+  LucidDaily 50K $85.40, funded trails intraday      real $  30,467 (closed-P&L model $  57,486) | coin flip $   2,944 (59%) | dip $ -4,099 | fails
+  LucidDaily 50K $85.40, funded EOD                  real $  42,409 (closed-P&L model $  57,486) | coin flip $   7,329 (77%) | dip $ -4,014 | QUALIFIES
+  LucidFlex 50K DLL ON $80.50                        real $  29,234 (closed-P&L model $  40,545) | coin flip $   5,571 (78%) | dip $ -4,348 | QUALIFIES
+  TradeDay 50K $85                                   real $  14,304 (closed-P&L model $  35,678) | coin flip $     564 (53%) | dip $ -5,430 | fails
 
-MANUAL (every entry 3 minutes late). Bar: real >= $13,557, coin flip >= $5,000, dip >= $-5,702
-  Topstep 50K Standard (benchmark, manual)           real $  27,114 (closed-P&L model $  37,348) | coin flip $   4,047 (70%) | dip $ -3,801 | fails
-  Topstep 50K Consistency (manual)                   real $  29,020 (closed-P&L model $  39,978) | coin flip $   4,540 (70%) | dip $ -3,801 | fails
-  TTP Futures Prime 50K (manual)                     real $  18,944 (closed-P&L model $  37,093) | coin flip $   1,381 (57%) | dip $ -4,979 | fails
-  DayTraders EOD 50K $105 (manual)                   real $  31,143 (closed-P&L model $  37,903) | coin flip $  -5,537 (34%) | dip $ -5,824 | fails
-  LucidDaily 50K $85.40, intraday funded (manual)    real $  16,510 (closed-P&L model $  48,761) | coin flip $  -1,126 (46%) | dip $ -5,379 | fails
-  LucidFlex 50K DLL ON $80.50 (manual)               real $  25,153 (closed-P&L model $  40,494) | coin flip $   3,186 (62%) | dip $ -3,868 | fails
-  Top One Elite ACCESS 50K $39 promo (manual only)   real $  18,741 (closed-P&L model $  21,566) | coin flip $     385 (52%) | dip $ -3,789 | fails
+MANUAL (every entry 3 minutes late). Bar: real >= $13,590, coin flip >= $5,000, dip >= $-5,576
+  Topstep 50K Standard (benchmark, manual)           real $  27,180 (closed-P&L model $  37,348) | coin flip $   4,658 (70%) | dip $ -3,718 | fails
+  Topstep 50K Consistency (manual)                   real $  25,973 (closed-P&L model $  39,978) | coin flip $   4,627 (74%) | dip $ -3,718 | fails
+  TTP Futures Prime 50K (manual)                     real $  21,543 (closed-P&L model $  37,093) | coin flip $   3,596 (62%) | dip $ -4,742 | fails
+  DayTraders EOD 50K $105 (manual)                   real $  33,427 (closed-P&L model $  37,903) | coin flip $  -3,894 (40%) | dip $ -5,499 | fails
+  LucidDaily 50K $85.40, intraday funded (manual)    real $  14,334 (closed-P&L model $  48,761) | coin flip $     896 (55%) | dip $ -3,758 | fails
+  LucidFlex 50K DLL ON $80.50 (manual)               real $  25,846 (closed-P&L model $  40,494) | coin flip $   4,177 (66%) | dip $ -3,788 | fails
+  Top One Elite ACCESS 50K $39 promo (manual only)   real $  18,619 (closed-P&L model $  21,566) | coin flip $   1,037 (54%) | dip $ -3,643 | fails
 
-ADDENDUM 2 - BOT, each firm's own stated rule. Bar: real >= $17,562, coin flip >= $5,000, dip >= $-6,088
-  Topstep 50K Standard (benchmark)                   real $  35,124 (closed-P&L model $  44,359) | coin flip $   6,205 (75%) | dip $ -4,058 | QUALIFIES
-  Topstep 50K Consistency (real-time, Topstep's page) real $  37,406 (closed-P&L model $  46,492) | coin flip $   6,384 (76%) | dip $ -3,524 | QUALIFIES
+ADDENDUM 2 - BOT, each firm's own stated rule. Bar: real >= $19,017, coin flip >= $5,000, dip >= $-5,794
+  Topstep 50K Standard (benchmark)                   real $  38,034 (closed-P&L model $  44,359) | coin flip $   7,648 (76%) | dip $ -3,862 | QUALIFIES
+  Topstep 50K Consistency (real-time, Topstep's page) real $  39,949 (closed-P&L model $  46,492) | coin flip $   7,699 (78%) | dip $ -3,862 | QUALIFIES
   LucidFlex 50K DLL ON $80.50 (EOD: unrealized does not count) real $  40,545 (closed-P&L model $  40,545) | coin flip $  21,522 (99%) | dip $ -4,108 | QUALIFIES
-  LucidDaily $85.40: EOD eval, intraday funded       real $  30,380 (closed-P&L model $  57,486) | coin flip $   6,110 (74%) | dip $ -4,526 | QUALIFIES
+  LucidDaily $85.40: EOD eval, intraday funded       real $  35,798 (closed-P&L model $  57,486) | coin flip $   8,115 (80%) | dip $ -4,526 | QUALIFIES
   LucidDaily $165.20: EOD eval + EOD funded          real $  44,558 (closed-P&L model $  44,558) | coin flip $  10,241 (80%) | dip $ -7,269 | fails
-  TTP Futures Prime 50K (real-time assumed)          real $  26,700 (closed-P&L model $  50,495) | coin flip $   3,521 (63%) | dip $ -5,651 | fails
-  DayTraders EOD 50K $105 (real-time assumed)        real $  33,760 (closed-P&L model $  48,856) | coin flip $  -5,937 (25%) | dip $ -7,064 | fails
+  TTP Futures Prime 50K (real-time assumed)          real $  27,843 (closed-P&L model $  50,495) | coin flip $   4,554 (71%) | dip $ -5,236 | fails
+  DayTraders EOD 50K $105 (real-time assumed)        real $  40,161 (closed-P&L model $  48,856) | coin flip $  -3,389 (32%) | dip $ -4,005 | fails
 
-qualifying rows (excluding the benchmark rows): 5
+qualifying rows (excluding the benchmark rows): 6
 
 ADDENDUM 2 - money needed to start (118 monthly starts 2016-01..2025-10), bot, each firm's stated rule
-  Topstep 50K Consistency (real-time, Topstep's page)            median $-1,181 | 1 in 10 $-2,585 | worst $-3,475 | first payout $1,085 after 132 days | 12-month net $1,327 (39% losing)
+  Topstep 50K Consistency (real-time, Topstep's page)            median $-932 | 1 in 10 $-2,813 | worst $-3,862 | first payout $1,002 after 132 days | 12-month net $1,614 (38% losing)
   LucidFlex 50K DLL ON $80.50 (EOD: unrealized does not count)   median $-708 | 1 in 10 $-2,906 | worst $-4,108 | first payout $1,122 after 137 days | 12-month net $1,890 (31% losing)
-  LucidDaily $85.40: EOD eval, intraday funded                   median $-1,025 | 1 in 10 $-3,519 | worst $-4,612 | first payout $964 after 210 days | 12-month net $2,461 (40% losing)
+  LucidDaily $85.40: EOD eval, intraday funded                   median $-1,030 | 1 in 10 $-3,519 | worst $-4,612 | first payout $964 after 210 days | 12-month net $2,524 (40% losing)

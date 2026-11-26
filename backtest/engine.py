@@ -303,10 +303,32 @@ def simulate(orders: pd.DataFrame, bars: pd.DataFrame, config: BacktestConfig | 
         # so a trade that dips through the floor and then wins still closes the
         # account. The fill bar and the exit bar are included whole, which can
         # only overstate the dip, never hide one.
+        # A stop exit ends the trade inside its exit bar: whatever that bar
+        # did after the stop filled is not the position's loss, so for stops
+        # the exit bar counts only up to the fill price.
         seg_low = float(low[fill_index:exit_index + 1].min())
         seg_high = float(high[fill_index:exit_index + 1].max())
-        adverse = (entry_price - seg_low) if direction > 0 else (seg_high - entry_price)
         favourable = (seg_high - entry_price) if direction > 0 else (entry_price - seg_low)
+        if exit_index > fill_index:
+            pre_low = float(low[fill_index:exit_index].min())
+            pre_high = float(high[fill_index:exit_index].max())
+        else:
+            pre_low = pre_high = entry_price
+        if str(reason).startswith("target"):
+            # Same rule for a target: the bar's run past the target came after the exit.
+            gained = (exit_price - entry_price) * direction
+            favourable = max((pre_high - entry_price) if direction > 0 else (entry_price - pre_low), gained)
+        if str(reason).startswith("stop"):
+            realised = (entry_price - exit_price) * direction
+            if exit_index > fill_index:
+                pre_low = float(low[fill_index:exit_index].min())
+                pre_high = float(high[fill_index:exit_index].max())
+                before = (entry_price - pre_low) if direction > 0 else (pre_high - entry_price)
+            else:
+                before = 0.0
+            adverse = max(before, realised)
+        else:
+            adverse = (entry_price - seg_low) if direction > 0 else (seg_high - entry_price)
         mae_usd = max(0.0, adverse) / TICK_SIZE * config.tick_value * size
         mfe_usd = max(0.0, favourable) / TICK_SIZE * config.tick_value * size
         gross = points / TICK_SIZE * config.tick_value * size

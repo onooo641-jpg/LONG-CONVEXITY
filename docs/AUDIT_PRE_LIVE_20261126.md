@@ -5,6 +5,8 @@ memecoin project", where paper returns used an entry price nobody could get). Th
 Raw output: `docs/jx_runs/audit_pre_live_20261126.txt` (`uv run python -m scripts.audit_pre_live_20261126`, re-run identical).
 
 ## Verdict
+> **Figures updated 2026-11-27 (addendum 3): a flaw in the open-loss measurement was fixed; the current numbers are in addendum 3 and supersede the tables below.**
+
 **One real modelling error was found and fixed. It lowers every prop figure in the repo.** The recycling model judged the loss limit on
 *closed* trades only. Topstep checks it on *open* P&L in real time (help.topstep.com 8284204: realized and unrealized, liquidated
 immediately). A trade that dips through the floor and then wins still closes the account; the old model let it live. Fixed in
@@ -104,3 +106,34 @@ Result (`docs/jx_runs/audit_all_prop_20261126.txt`, "ADDENDUM 2", re-run identic
 | TTP Futures Prime 50K | $26,700 | $3,521 | −$5,651 | — | fails if real-time; $50,495 if close-only |
 | DayTraders EOD 50K | $33,760 | −$5,937 | −$7,064 | — | fails if real-time |
 Lucid figures exclude CrossTrade ($49/month ≈ $6.4K over 10.8 years) needed for the bot; the LucidFlex price $80.50 is the promo Jx saw.
+
+## Addendum 3 (2026-11-27): open-loss measurement fixed — these figures supersede the tables above
+The first version of the fix counted the whole minute bar in which a trade exited, including price movement *after* the stop or target
+had filled. That overstated losing trades' open loss (and, in coin flips, flipped winners'). Now the exit bar counts only up to the fill
+price for stop and target exits (`backtest/engine.py`, two new tests). All three audit scripts re-run twice, identical.
+Also checked: Topstep's 50K payout caps are $2,000 Standard / $3,000 Consistency (help.topstep.com 8284233) — the model was right;
+$5,000 / $6,000 are the 150K caps. The optional $1,000 Daily Loss Limit doubles the caps but does not help this strategy
+(`scripts/audit_topstep_dll_20261127.py`).
+
+**Each firm's own stated rule, bot entry, 2016–26** (`docs/jx_runs/audit_all_prop_20261126.txt`, ADDENDUM 2):
+| Product | Real net | Per year | Coin flip | Worst dip | Start: median / 1 in 10 / worst | Verdict |
+|---|---|---|---|---|---|---|
+| LucidFlex 50K DLL ON $80.50 (EOD, open losses ignored) | $40,545 | $3,744 | $21,522 (99%) | −$4,108 | −$708 / −$2,906 / −$4,108 | **qualifies** |
+| Topstep 50K Consistency (real-time) | $39,949 | $3,689 | $7,699 (78%) | −$3,862 | −$932 / −$2,813 / −$3,862 | **qualifies** |
+| Topstep 50K Standard (real-time) | $38,034 | $3,512 | $7,648 (76%) | −$3,862 | — | **qualifies** |
+| LucidDaily $85.40 (EOD eval, intraday funded) | $35,798 | $3,305 | $8,115 (80%) | −$4,526 | −$1,030 / −$3,519 / −$4,612 | **qualifies** |
+| LucidDaily $165.20 (EOD eval + EOD funded) | $44,558 | $4,114 | $10,241 | −$7,269 | — | fails (dip) |
+| DayTraders EOD 50K (real-time assumed) | $40,161 | $3,708 | −$3,389 | −$4,005 | — | fails (coin flip) |
+| TTP Futures Prime 50K (real-time assumed) | $27,843 | $2,571 | $4,554 | −$5,236 | — | fails (coin flip) |
+| TradeDay 50K $85 (real-time assumed) | $14,304 | $1,321 | $564 | −$5,430 | — | fails |
+Manual entry (3-minute delay): nothing qualifies (Topstep Consistency $25,973, coin flip $4,627).
+
+**Topstep 50K Consistency, corrected:** net $39,949 (closed-P&L model $46,492); start median −$932, 1 in 4 −$1,832, 1 in 10 −$2,813,
+worst −$3,862; first payout median $1,002 after 132 days; 12-month net median $1,614 (38% of starts still down); every start went
+positive. Execution stress: entry needs 1 tick through $31,189; stops slip 2 ticks $34,034; orders 1 minute late $24,416; all three
+$17,136.
+
+**Topstep payout options** (`docs/jx_runs/audit_topstep_dll_20261127.txt`): Consistency with the DLL (cap $6,000) $39,949 — identical,
+the $3,000 cap never binds; Standard with the DLL $35,227 (worse than without); No-Activation path at $75/month with the DLL ($85 − $10;
+reset $85, no $149 activation) $42,496, coin flip $7,945, start median −$806 / worst −$4,086 — the best Topstep option if that
+price holds (the −$10 is a promotional discount; duration not confirmed).

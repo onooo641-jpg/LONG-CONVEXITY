@@ -1,0 +1,8 @@
+Topstep 50K, bot, 2016-01..2026-10, corrected model. Coin flip: 200 runs, seed 1, excursions swapped, DLL applied after the flip.
+trades whose open loss reaches $1,000: 2 of 2185 (winners among them: 0)
+
+Standard, no DLL (cap $2,000)                                                  net $  38,034 | coin flip $  7,648 (76%) | dip $ -3,862 | start median $-1,121, 1 in 10 $-2,813, worst $-3,862 | 12m $1,840
+Standard + $1,000 DLL (cap $4,000)                                             net $  35,227 | coin flip $  8,124 (78%) | dip $ -3,862 | start median $-1,121, 1 in 10 $-2,813, worst $-3,862 | 12m $1,864
+Consistency, no DLL (cap $3,000)                                               net $  39,949 | coin flip $  7,699 (78%) | dip $ -3,862 | start median $-932, 1 in 10 $-2,813, worst $-3,862 | 12m $1,614
+Consistency + $1,000 DLL (cap $6,000)                                          net $  39,949 | coin flip $  7,817 (80%) | dip $ -3,862 | start median $-932, 1 in 10 $-2,813, worst $-3,862 | 12m $1,614
+No-Activation $85/mo + DLL -$10 = $75/mo, reset $85, Consistency (cap $6,000)  net $  42,496 | coin flip $  7,945 (80%) | dip $ -4,086 | start median $-806, 1 in 10 $-2,780, worst $-4,086 | 12m $1,613

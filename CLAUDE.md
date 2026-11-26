@@ -37,8 +37,8 @@ strategy, plus a search for other structural edges. README.md explains the busin
 `recycle()` now does this by default (`realtime_mll=True`, needs the `mae_usd` column `simulate` adds); figures made before
 then used closed P&L and are optimistic (`realtime_mll=False` reproduces them). Coin flips must go through
 `scripts/radar_price.flip` (it swaps worst/best open P&L for flipped trades).
-Topstep 50K Consistency path, 2016–26, corrected: **$37,406 real net ($3,454/yr)**, coin-flip median $6,384 (76% positive),
-worst dip −$3,524. Old closed-P&L benchmark (Standard path): $44,359, coin flip $18,046, worst dip −$3,520. Multi-firm plan figures: `docs/PREREG_PORTFOLIO2_20261120.md` (Topstep + Lucid + MFFU,
+Topstep 50K Consistency path, 2016–26, corrected (2026-11-27): **$39,949 real net ($3,689/yr)**, coin-flip median $7,699 (78% positive),
+worst dip −$3,862. Lucid's EOD drawdown ignores open P&L (set `realtime_mll=False` for Lucid EOD accounts). Old closed-P&L benchmark (Standard path): $44,359, coin flip $18,046, worst dip −$3,520. Multi-firm plan figures: `docs/PREREG_PORTFOLIO2_20261120.md` (Topstep + Lucid + MFFU,
 Breakout dropped: no API) and `docs/PREREG_MARKETMIX_20261120.md` (NQ/ES/YM mix with anti-hedge filter).
 
 ## Tools in the repo
