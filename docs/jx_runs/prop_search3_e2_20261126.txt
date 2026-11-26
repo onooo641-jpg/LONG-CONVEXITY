@@ -1,2 +1,5 @@
 Registered bar: real >= $19,017, coin flip >= $5,000, dip >= $-5,794
 
+  FFN Std MAX 50K, activation $0     risk $  900 | break-even $96 (list $178: needs 46% off)
+  FFN Std MAX 50K, activation $120   risk $  900 | break-even $65 (list $178: needs 63% off)
+  FFN Std MAX 100K, activation $0    risk $  900 | break-even $44 (list $348: needs 87% off)
