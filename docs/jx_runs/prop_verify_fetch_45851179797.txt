@@ -1,0 +1,16 @@
+https://help.topstep.com/en/articles/15520357-topstep-labs: clicked 26, chars 62666, tables 29 
+https://help.topstep.com/en/articles/8284197-trading-combine-parameters: clicked 6, chars 7617, tables 1 
+https://help.topstep.com/en/articles/8284215-express-funded-account-parameters: clicked 14, chars 6617, tables 1 
+https://help.topstep.com/en/articles/8284233-topstep-payout-policy: clicked 21, chars 13658, tables 6 
+https://www.topstep.com/pricing/: clicked None, chars 0, tables 0 Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://www.topstep.com/pricing/", waiting until "networkidle"
+
+https://daytraders.com/help/articles/11583644-s2f-straight-to-sim-funded: clicked 28, chars 4587, tables 0 
+https://daytraders.com/pricing: clicked 0, chars 1764, tables 0 
+https://daytraders.com/: clicked 0, chars 7354, tables 0 
+https://lucidtrading.com/pricing: clicked None, chars 0, tables 0 Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://lucidtrading.com/pricing", waiting until "networkidle"
+
+https://support.lucidtrading.com/en/: clicked 0, chars 992, tables 0 

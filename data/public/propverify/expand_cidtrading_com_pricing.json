@@ -1,0 +1,1 @@
+{"url": "https://lucidtrading.com/pricing", "error": "Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://lucidtrading.com/pricing\", waiting until \"networkidle\"\n"}
