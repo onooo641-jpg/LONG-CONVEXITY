@@ -13,17 +13,19 @@ from playwright.sync_api import sync_playwright
 
 OUT = Path(__file__).resolve().parent.parent / "data" / "public" / "propverify"
 PAGES = [
-    "https://help.topstep.com/en/articles/15520357-topstep-labs",
-    "https://help.topstep.com/en/articles/8284197-trading-combine-parameters",
-    "https://help.topstep.com/en/articles/8284215-express-funded-account-parameters",
-    "https://help.topstep.com/en/articles/8284233-topstep-payout-policy",
-    "https://www.topstep.com/pricing/",
-    "https://daytraders.com/help/articles/11583644-s2f-straight-to-sim-funded",
-    "https://daytraders.com/pricing",
-    "https://daytraders.com/",
-    "https://lucidtrading.com/pricing",
-    "https://support.lucidtrading.com/en/",
+    # Stage C3 (prop search 2): Funded Futures Network rules articles (index is crawled for article links), BluSky, IQ Capital, Finotive
+    "https://app.fundedfuturesnetwork.com/nexus/rules",
+    "https://fundedfuturesnetwork.com/accounts",
+    "https://fundedfuturesnetwork.com/faq",
+    "https://bluskytrading.com/",
+    "https://help.blusky.pro/",
+    "https://blusky.pro/",
+    "https://iqcapital.com/",
+    "https://iqcapital.com/futures",
+    "https://finotivefutures.com/",
+    "https://help.finotivefutures.com/",
 ]
+CRAWL = ("app.fundedfuturesnetwork.com/nexus/rules/article-", "help.blusky.pro/", "help.finotivefutures.com/")
 
 
 def main() -> None:
@@ -31,7 +33,12 @@ def main() -> None:
     with sync_playwright() as p:
         br = p.chromium.launch()
         ctx = br.new_context(user_agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36 (research)")
-        for url in PAGES:
+        queue, seen = list(PAGES), set()
+        while queue and len(seen) < 120:
+            url = queue.pop(0)
+            if url in seen:
+                continue
+            seen.add(url)
             pg = ctx.new_page()
             rec = {"url": url}
             try:
@@ -52,6 +59,12 @@ def main() -> None:
                 rec["clicked"] = n
                 rec["text"] = pg.inner_text("body")[:200000]
                 rec["html_tables"] = [t.inner_text()[:20000] for t in pg.query_selector_all("table")][:60]
+                for a in pg.query_selector_all("a[href]"):
+                    h = (a.get_attribute("href") or "").split("#")[0]
+                    if h.startswith("/"):
+                        h = url.split("/", 3)[0] + "//" + url.split("/")[2] + h
+                    if any(c in h for c in CRAWL) and h not in seen and h not in queue:
+                        queue.append(h)
             except Exception as e:  # noqa: BLE001
                 rec["error"] = str(e)[:300]
             slug = re.sub(r"[^a-z0-9]+", "_", url.lower())[8:90]
