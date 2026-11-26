@@ -1,0 +1,36 @@
+===== Batch K part 2 (#496-#499)  docs/PREREG_BATCH_K2_20261126.md
+
+#### #496 Ethena hedge flows (USDe supply day-over-day <= -1.5% -> long, >= +1.5% -> short, next day 00:00 UTC, 2 days)
+  #496 Stage 1 (ETH 2024-03..2024-12): n 44, mean 0.016%, t 0.02, win 50%
+  #496 Stage 2 (ETH 2025-01..2026-10): n 56, mean -0.123%, t -0.20, win 52%
+  #496 Stage 3 (BTC 2025-01..2026-10): n 56, mean -0.206%, t -0.55, win 55%
+  VERDICT (#496): FAIL (Stage 2 fails, Stage 3 fails)
+  $/yr at $45K (Stage 2): $-1,691
+
+#### #497 CME basis-trade unwind (annualised basis falls >= 5 points over 5 days -> short 5 days)
+  #497 Stage 1 (BTC 2021..2023): n 127, mean -0.315%, t -0.44, win 54%
+  #497 Stage 2 (BTC 2024..2026-10): n 115, mean -1.084%, t -2.30, win 43%
+  #497 Stage 3 (ETH 2024..2026-10): n 113, mean -1.200%, t -1.48, win 45%
+  VERDICT (#497): KILL
+  $/yr at $45K (Stage 2): $-19,799
+
+#### #498 Hyperliquid retail funding premium (weekly: short top quintile of HL - Binance 7-day funding, long bottom)
+  unit check: median |BTC funding| HL 0.00125, Binance 0.00946 -> HL x8 to per-8h
+  #498 Stage 1 (40-alt coins 2024-10..2025-06): n 37, mean 0.474%, t 0.39, win 49%
+  #498 Stage 2 (40-alt coins 2025-07..2026-10): n 69, mean -1.780%, t -2.52, win 36%
+  #498 Stage 3 (unseen coins 2025-07..2026-10): n 69, mean -1.261%, t -1.86, win 39%
+  VERDICT (#498): FAIL (Stage 2 fails, Stage 3 fails)
+  $/yr at $22.5K per side (Stage 2): $-20,678
+
+#### #499 crowded-funding short, re-test of #489 on Bybit (funding >= 0.05%/settlement and OI at a 30-day high -> short 7 days vs BTC)
+  #499 Stage 1 (Bybit 2021..2022, per day): n 90, mean -1.101%, t -0.82, win 59%
+  #499 Stage 2 (Bybit 2023..2026-10, per day): n 127, mean 0.700%, t 0.52, win 61%
+  VERDICT (#499): KILL
+  $/yr at $45K, <= 3 open (Stage 2): $2,552
+
+#### #500 hedger-paid carry on Hyperliquid (HL funding <= -0.03%/8h -> long coin, short BTC, 7 days)
+  #500 Stage 1 (HL 2024-10..2025-06, per day): n 117, mean -1.637%, t -1.86, win 39%
+  #500 Stage 2 (HL 2025-07..2026-10, per day): n 269, mean 0.241%, t 0.47, win 44%
+  #500 Stage 3 (Binance unseen 110, 2023..2026-10, per day): n 848, mean -0.456%, t -0.84, win 40%
+  VERDICT (#500): KILL
+  $/yr at $45K, <= 3 open (Stage 2): $-26,928

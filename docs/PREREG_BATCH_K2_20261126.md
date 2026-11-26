@@ -41,3 +41,21 @@ Venue: Hyperliquid.
   - Bybit daily funding.
 
 **Script and output.** Script: `scripts/batch_k2_20261126.py`. Output: `docs/jx_runs/batch_k2_20261126.txt` (re-run once; it must be identical).
+
+## Results (2026-11-26; `docs/jx_runs/batch_k2_20261126.txt`, re-run identical)
+
+| # | Verdict | Stage 1 / Stage 2 / Stage 3 | $/yr at safe size |
+|---|---|---|---|
+| 496 Ethena hedge flows | FAIL | ETH +0.02% / −0.12% / BTC −0.21% | −$1.7K |
+| 497 CME basis-trade unwind | KILL | −0.32% / **−1.08% (t −2.30)** / ETH −1.20%: after the basis collapses, BTC rebounds (the opposite sign) | −$19.8K |
+| 498 Hyperliquid funding premium | FAIL | +0.47% / **−1.78% (t −2.52)** / −1.26% (t −1.86): coins where Hyperliquid pays more funding *outperformed* in 2025–26 | −$20.7K |
+| 499 #489 re-test on Bybit | KILL | −1.10% / +0.70% (t 0.52) | $2.6K |
+| 500 hedger-paid carry on Hyperliquid | KILL | −1.64% / +0.24% / Binance unseen −0.46% | −$26.9K |
+
+**Batch K part 2: 0 of 5.**
+
+**Observation (not a pass and not tradable as registered):** #498 points the opposite way, consistently on both coin sets in 2025–26. It
+would need its own pre-registration with a new kill window; the 2024–25 window here (+0.47%) would kill the reversed rule. This was a
+units check on data already opened, so it is not a fresh test.
+
+**Batch K total (#493–#500): 0 of 8.** Batch search paused per Jx. Next: prop firms.
