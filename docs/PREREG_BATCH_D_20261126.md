@@ -79,6 +79,8 @@ Scripts: `scripts/batch_d_20261126.py`. Output: `docs/jx_runs/batch_d_20261126.t
 |---|---|
 | 443 | Stage 1 survives (ES +0.57 pts t 1.83; NQ −0.90). **Stage 2 FAIL:** negative on all 4 markets 2016–26 (NQ −2.57 pts t −1.46, ES −1.46 t −2.31, YM −8.59, RTY −0.68 t −2.82); portfolio −$2,939/yr. Every variant also negative out of sample (the Gao first-half-hour rule t −2.5 to −6). The late-day continuation that LETF flows should cause is not there after costs; if anything it reverses. |
 | 444 | **KILL** at Stage 1 (NQ −0.26 pts, ES −0.40 pts, 2010–15). |
-| 445 | pending data (`ubatchd`) |
-| 446 | pending data (`ubatchd`) |
-| 440 alt | pending data (`ubatchd`) |
+| 445 | **KILL** at Stage 1 (436 token-weeks to 2023, mean −0.355%, week t −1.34). |
+| 446 | Stage 1 survives strongly (573 auctions 2009–16, +3.31 bp net, week t 3.87: the published effect). **Stage 2 FAIL:** 785 auctions 2017–26, −0.40 bp, t −0.70, 4/10 years positive, −$946/yr sized. The concession has gone since publication. |
+| 440 alt | **KILL** (17,525 events 2021–22, −0.187%, settlement-clustered t −1.13). #440 itself (BTC/ETH): KILL, wrong sign in both stages. |
+
+**Batch D verdict: 0 of 4 pass.** Lesson: published flow/calendar anomalies (LETF close, auction concession) are gone out of sample; the only survivor family remains liquidity to forced crypto liquidations.
