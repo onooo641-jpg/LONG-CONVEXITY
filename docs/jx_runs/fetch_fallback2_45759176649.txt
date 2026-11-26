@@ -1,0 +1,293 @@
+=== urates
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  rates 2024-01-01: rpc https://eth.blockscout.com/api/eth-rpc, last [{'day': '2024-01-01', 'token': 'weETH', 'block': 18915996, 'rate': 1.0279040594984685}, {'day': '2024-01-01', 'token': 'sUSDe', 'block': 18915996, 'rate': 1.0}, {'day': '2024-01-01', 'token': 'pufETH', 'block': 18915996, 'rate': None}, {'day': '2024-01-01', 'token': 'rsETH', 'block': 18915996, 'rate': 1.0016983291349968}]
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 429 https://1rpc.io/eth
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 402 https://1rpc.io/eth
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 429 https://1rpc.io/eth
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 410 https://1rpc.io/eth
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 410 https://1rpc.io/eth
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 410 https://1rpc.io/eth
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 403 https://1rpc.io/eth
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 410 https://1rpc.io/eth
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 429 https://1rpc.io/eth
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 402 https://1rpc.io/eth
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 403 https://1rpc.io/eth
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 429 https://1rpc.io/eth
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 429 https://1rpc.io/eth
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 410 https://1rpc.io/eth
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  rates 2024-02-01: rpc https://eth.drpc.org, last [{'day': '2024-02-01', 'token': 'weETH', 'block': 19139196, 'rate': 1.0303003273580063}, {'day': '2024-02-01', 'token': 'sUSDe', 'block': 19139196, 'rate': 1.0000111724506238}, {'day': '2024-02-01', 'token': 'pufETH', 'block': 19139196, 'rate': 1.0000958454505307}, {'day': '2024-02-01', 'token': 'rsETH', 'block': 19139196, 'rate': 1.0051110227446365}]
+  rates 2024-03-01: rpc https://eth.drpc.org, last [{'day': '2024-03-01', 'token': 'weETH', 'block': 19347996, 'rate': 1.0326972204454596}, {'day': '2024-03-01', 'token': 'sUSDe', 'block': 19347996, 'rate': 1.0166819082894474}, {'day': '2024-03-01', 'token': 'pufETH', 'block': 19347996, 'rate': 1.0029263683389693}, {'day': '2024-03-01', 'token': 'rsETH', 'block': 19347996, 'rate': 1.0076005118718803}]
+  rates 2024-04-01: rpc https://eth.drpc.org, last [{'day': '2024-04-01', 'token': 'weETH', 'block': 19571196, 'rate': 1.0352385943209736}, {'day': '2024-04-01', 'token': 'sUSDe', 'block': 19571196, 'rate': 1.040675659758645}, {'day': '2024-04-01', 'token': 'pufETH', 'block': 19571196, 'rate': 1.0058502943987668}, {'day': '2024-04-01', 'token': 'rsETH', 'block': 19571196, 'rate': 1.0101284258941803}]
+  rates 2024-05-01: rpc https://eth.drpc.org, last [{'day': '2024-05-01', 'token': 'weETH', 'block': 19787196, 'rate': 1.0374460506770449}, {'day': '2024-05-01', 'token': 'sUSDe', 'block': 19787196, 'rate': 1.0567908690678727}, {'day': '2024-05-01', 'token': 'pufETH', 'block': 19787196, 'rate': 1.0085783687373593}, {'day': '2024-05-01', 'token': 'rsETH', 'block': 19787196, 'rate': 1.0120711438461463}]
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 403 https://1rpc.io/eth
+  rates 2024-06-01: rpc https://eth.drpc.org, last [{'day': '2024-06-01', 'token': 'weETH', 'block': 20010396, 'rate': 1.0398425066490582}, {'day': '2024-06-01', 'token': 'sUSDe', 'block': 20010396, 'rate': 1.0722215267763608}, {'day': '2024-06-01', 'token': 'pufETH', 'block': 20010396, 'rate': 1.0119342245682614}, {'day': '2024-06-01', 'token': 'rsETH', 'block': 20010396, 'rate': 1.0138443092072889}]
+  rates 2024-07-01: rpc https://eth.drpc.org, last [{'day': '2024-07-01', 'token': 'weETH', 'block': 20226396, 'rate': 1.0420660011827485}, {'day': '2024-07-01', 'token': 'sUSDe', 'block': 20226396, 'rate': 1.0848669329198224}, {'day': '2024-07-01', 'token': 'pufETH', 'block': 20226396, 'rate': 1.01468322109932}, {'day': '2024-07-01', 'token': 'rsETH', 'block': 20226396, 'rate': 1.0172040917866305}]
+  rates 2024-08-01: rpc https://eth.drpc.org, last [{'day': '2024-08-01', 'token': 'weETH', 'block': 20449596, 'rate': 1.0444967555482723}, {'day': '2024-08-01', 'token': 'sUSDe', 'block': 20449596, 'rate': 1.094160972693115}, {'day': '2024-08-01', 'token': 'pufETH', 'block': 20449596, 'rate': 1.0168131931514859}, {'day': '2024-08-01', 'token': 'rsETH', 'block': 20449596, 'rate': 1.0197897341809317}]
+  rates 2024-09-01: rpc https://eth.drpc.org, last [{'day': '2024-09-01', 'token': 'weETH', 'block': 20672796, 'rate': 1.0470959800247412}, {'day': '2024-09-01', 'token': 'sUSDe', 'block': 20672796, 'rate': 1.0992897428587596}, {'day': '2024-09-01', 'token': 'pufETH', 'block': 20672796, 'rate': 1.0190058695275368}, {'day': '2024-09-01', 'token': 'rsETH', 'block': 20672796, 'rate': 1.0224308363584038}]
+  FAIL 429 https://eth.drpc.org
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  rates 2024-10-01: rpc https://rpc.mevblocker.io, last [{'day': '2024-10-01', 'token': 'weETH', 'block': 20888796, 'rate': 1.049478612613679}, {'day': '2024-10-01', 'token': 'sUSDe', 'block': 20888796, 'rate': 1.1048757303550159}, {'day': '2024-10-01', 'token': 'pufETH', 'block': 20888796, 'rate': 1.0214399794768658}, {'day': '2024-10-01', 'token': 'rsETH', 'block': 20888796, 'rate': 1.025573981655542}]
+  FAIL 429 https://rpc.mevblocker.io
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  rates 2024-11-01: rpc https://eth.drpc.org, last [{'day': '2024-11-01', 'token': 'weETH', 'block': 21111996, 'rate': 1.0518865784890978}, {'day': '2024-11-01', 'token': 'sUSDe', 'block': 21111996, 'rate': 1.1139590595107896}, {'day': '2024-11-01', 'token': 'pufETH', 'block': 21111996, 'rate': 1.0259895385128701}, {'day': '2024-11-01', 'token': 'rsETH', 'block': 21111996, 'rate': 1.0283498278794951}]
+  rates 2024-12-01: rpc https://eth.drpc.org, last [{'day': '2024-12-01', 'token': 'weETH', 'block': 21327996, 'rate': 1.054363174321875}, {'day': '2024-12-01', 'token': 'sUSDe', 'block': 21327996, 'rate': 1.1294021563180363}, {'day': '2024-12-01', 'token': 'pufETH', 'block': 21327996, 'rate': 1.030659070973215}, {'day': '2024-12-01', 'token': 'rsETH', 'block': 21327996, 'rate': 1.030858422980885}]
+  rates 2025-01-01: rpc https://eth.drpc.org, last [{'day': '2025-01-01', 'token': 'weETH', 'block': 21551196, 'rate': 1.0568098361010732}, {'day': '2025-01-01', 'token': 'sUSDe', 'block': 21551196, 'rate': 1.1443567807444124}, {'day': '2025-01-01', 'token': 'pufETH', 'block': 21551196, 'rate': 1.0352406250419868}, {'day': '2025-01-01', 'token': 'rsETH', 'block': 21551196, 'rate': 1.0335079365989337}]
+  rates 2025-02-01: rpc https://eth.drpc.org, last [{'day': '2025-02-01', 'token': 'weETH', 'block': 21774396, 'rate': 1.0592866693948824}, {'day': '2025-02-01', 'token': 'sUSDe', 'block': 21774396, 'rate': 1.1540509487791248}, {'day': '2025-02-01', 'token': 'pufETH', 'block': 21774396, 'rate': 1.0384734671292493}, {'day': '2025-02-01', 'token': 'rsETH', 'block': 21774396, 'rate': 1.036200201174558}]
+  FAIL 429 https://eth.drpc.org
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  rates 2025-03-01: rpc https://rpc.mevblocker.io, last [{'day': '2025-03-01', 'token': 'weETH', 'block': 21975996, 'rate': 1.0616270454049432}, {'day': '2025-03-01', 'token': 'sUSDe', 'block': 21975996, 'rate': 1.1607519442081329}, {'day': '2025-03-01', 'token': 'pufETH', 'block': 21975996, 'rate': 1.040120041369926}, {'day': '2025-03-01', 'token': 'rsETH', 'block': 21975996, 'rate': 1.0385660247460062}]
+  FAIL 429 https://rpc.mevblocker.io
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  rates 2025-04-01: rpc https://eth.drpc.org, last [{'day': '2025-04-01', 'token': 'weETH', 'block': 22199196, 'rate': 1.064099232369818}, {'day': '2025-04-01', 'token': 'sUSDe', 'block': 22199196, 'rate': 1.1661431204902954}, {'day': '2025-04-01', 'token': 'pufETH', 'block': 22199196, 'rate': 1.0438490215098841}, {'day': '2025-04-01', 'token': 'rsETH', 'block': 22199196, 'rate': 1.0411571801203445}]
+  rates 2025-05-01: rpc https://eth.drpc.org, last [{'day': '2025-05-01', 'token': 'weETH', 'block': 22415196, 'rate': 1.0667598108713552}, {'day': '2025-05-01', 'token': 'sUSDe', 'block': 22415196, 'rate': 1.17031900048134}, {'day': '2025-05-01', 'token': 'pufETH', 'block': 22415196, 'rate': 1.0467277239984623}, {'day': '2025-05-01', 'token': 'rsETH', 'block': 22415196, 'rate': 1.0437485096325154}]
+  rates 2025-06-01: rpc https://eth.drpc.org, last [{'day': '2025-06-01', 'token': 'weETH', 'block': 22638396, 'rate': 1.0691408548977201}, {'day': '2025-06-01', 'token': 'sUSDe', 'block': 22638396, 'rate': 1.1760394081077277}, {'day': '2025-06-01', 'token': 'pufETH', 'block': 22638396, 'rate': 1.0498251341299198}, {'day': '2025-06-01', 'token': 'rsETH', 'block': 22638396, 'rate': 1.046200642212516}]
+  rates 2025-07-01: rpc https://eth.drpc.org, last [{'day': '2025-07-01', 'token': 'weETH', 'block': 22854396, 'rate': 1.0714259918071136}, {'day': '2025-07-01', 'token': 'sUSDe', 'block': 22854396, 'rate': 1.1803111336325227}, {'day': '2025-07-01', 'token': 'pufETH', 'block': 22854396, 'rate': 1.0508848597815272}, {'day': '2025-07-01', 'token': 'rsETH', 'block': 22854396, 'rate': 1.0484539830291006}]
+  FAIL 429 https://eth.drpc.org
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  rates 2025-08-01: rpc https://rpc.mevblocker.io, last [{'day': '2025-08-01', 'token': 'weETH', 'block': 23077596, 'rate': 1.0738032591831972}, {'day': '2025-08-01', 'token': 'sUSDe', 'block': 23077596, 'rate': 1.1874079700086158}, {'day': '2025-08-01', 'token': 'pufETH', 'block': 23077596, 'rate': 1.0540060408006393}, {'day': '2025-08-01', 'token': 'rsETH', 'block': 23077596, 'rate': 1.0508995758676416}]
+  FAIL 429 https://rpc.mevblocker.io
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  rates 2025-09-01: rpc https://eth.drpc.org, last [{'day': '2025-09-01', 'token': 'weETH', 'block': 23300796, 'rate': 1.0761744460967035}, {'day': '2025-09-01', 'token': 'sUSDe', 'block': 23300796, 'rate': 1.1948245348367936}, {'day': '2025-09-01', 'token': 'pufETH', 'block': 23300796, 'rate': 1.0573531834369585}, {'day': '2025-09-01', 'token': 'rsETH', 'block': 23300796, 'rate': 1.053284169826997}]
+  rates 2025-10-01: rpc https://eth.drpc.org, last [{'day': '2025-10-01', 'token': 'weETH', 'block': 23516796, 'rate': 1.0784163883408637}, {'day': '2025-10-01', 'token': 'sUSDe', 'block': 23516796, 'rate': 1.2010131521190337}, {'day': '2025-10-01', 'token': 'pufETH', 'block': 23516796, 'rate': 1.0585425177769154}, {'day': '2025-10-01', 'token': 'rsETH', 'block': 23516796, 'rate': 1.0555604471493973}]
+  rates 2025-11-01: rpc https://eth.drpc.org, last [{'day': '2025-11-01', 'token': 'weETH', 'block': 23739996, 'rate': 1.0808323124481105}, {'day': '2025-11-01', 'token': 'sUSDe', 'block': 23739996, 'rate': 1.2054207687879759}, {'day': '2025-11-01', 'token': 'pufETH', 'block': 23739996, 'rate': 1.0613105842064827}, {'day': '2025-11-01', 'token': 'rsETH', 'block': 23739996, 'rate': 1.0577339937116719}]
+  rates 2025-12-01: rpc https://eth.drpc.org, last [{'day': '2025-12-01', 'token': 'weETH', 'block': 23955996, 'rate': 1.0831525669157613}, {'day': '2025-12-01', 'token': 'sUSDe', 'block': 23955996, 'rate': 1.2103421630485764}, {'day': '2025-12-01', 'token': 'pufETH', 'block': 23955996, 'rate': 1.063176561203518}, {'day': '2025-12-01', 'token': 'rsETH', 'block': 23955996, 'rate': 1.0599033525048795}]
+  FAIL 429 https://eth.drpc.org
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  rates 2026-01-01: rpc https://rpc.mevblocker.io, last [{'day': '2026-01-01', 'token': 'weETH', 'block': 24179196, 'rate': 1.0853718970859862}, {'day': '2026-01-01', 'token': 'sUSDe', 'block': 24179196, 'rate': 1.2148594683002854}, {'day': '2026-01-01', 'token': 'pufETH', 'block': 24179196, 'rate': 1.065945710365194}, {'day': '2026-01-01', 'token': 'rsETH', 'block': 24179196, 'rate': 1.0622602528197338}]
+  FAIL 429 https://rpc.mevblocker.io
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  rates 2026-02-01: rpc https://eth.drpc.org, last [{'day': '2026-02-01', 'token': 'weETH', 'block': 24402396, 'rate': 1.0876718427713565}, {'day': '2026-02-01', 'token': 'sUSDe', 'block': 24402396, 'rate': 1.2195761751192973}, {'day': '2026-02-01', 'token': 'pufETH', 'block': 24402396, 'rate': 1.068693434408539}, {'day': '2026-02-01', 'token': 'rsETH', 'block': 24402396, 'rate': 1.0645095361373036}]
+  rates 2026-03-01: rpc https://eth.drpc.org, last [{'day': '2026-03-01', 'token': 'weETH', 'block': 24603996, 'rate': 1.0897311336899098}, {'day': '2026-03-01', 'token': 'sUSDe', 'block': 24603996, 'rate': 1.22281347395477}, {'day': '2026-03-01', 'token': 'pufETH', 'block': 24603996, 'rate': 1.0709321930399223}, {'day': '2026-03-01', 'token': 'rsETH', 'block': 24603996, 'rate': 1.0664860146803095}]
+  rates 2026-04-01: rpc https://eth.drpc.org, last [{'day': '2026-04-01', 'token': 'weETH', 'block': 24827196, 'rate': 1.0920636351075013}, {'day': '2026-04-01', 'token': 'sUSDe', 'block': 24827196, 'rate': 1.2263988535850436}, {'day': '2026-04-01', 'token': 'pufETH', 'block': 24827196, 'rate': 1.072321451854705}, {'day': '2026-04-01', 'token': 'rsETH', 'block': 24827196, 'rate': 1.0689236965158082}]
+  rates 2026-05-01: rpc https://eth.drpc.org, last [{'day': '2026-05-01', 'token': 'weETH', 'block': 25043196, 'rate': 1.0942098380538994}, {'day': '2026-05-01', 'token': 'sUSDe', 'block': 25043196, 'rate': 1.2304424909819895}, {'day': '2026-05-01', 'token': 'pufETH', 'block': 25043196, 'rate': 1.0744694232158274}, {'day': '2026-05-01', 'token': 'rsETH', 'block': 25043196, 'rate': 1.069610361882844}]
+  FAIL 429 https://eth.drpc.org
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  FAIL TimeoutError https://rpc.mevblocker.io
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  rates 2026-06-01: rpc https://eth.drpc.org, last [{'day': '2026-06-01', 'token': 'weETH', 'block': 25266396, 'rate': 1.0965148868615402}, {'day': '2026-06-01', 'token': 'sUSDe', 'block': 25266396, 'rate': 1.2344942302389152}, {'day': '2026-06-01', 'token': 'pufETH', 'block': 25266396, 'rate': 1.0766226409034494}, {'day': '2026-06-01', 'token': 'rsETH', 'block': 25266396, 'rate': 1.07322920544211}]
+  rates 2026-07-01: rpc https://eth.drpc.org, last [{'day': '2026-07-01', 'token': 'weETH', 'block': 25482396, 'rate': 1.0986842489150317}, {'day': '2026-07-01', 'token': 'sUSDe', 'block': 25482396, 'rate': 1.2382994888618748}, {'day': '2026-07-01', 'token': 'pufETH', 'block': 25482396, 'rate': 1.0787806949204555}, {'day': '2026-07-01', 'token': 'rsETH', 'block': 25482396, 'rate': 1.0754143279566966}]
+  rates 2026-08-01: rpc https://eth.drpc.org, last [{'day': '2026-08-01', 'token': 'weETH', 'block': 25705596, 'rate': 1.1009786111285595}, {'day': '2026-08-01', 'token': 'sUSDe', 'block': 25705596, 'rate': 1.2424331726750992}, {'day': '2026-08-01', 'token': 'pufETH', 'block': 25705596, 'rate': 1.081725585300128}, {'day': '2026-08-01', 'token': 'rsETH', 'block': 25705596, 'rate': 1.0775168163362787}]
+  rates 2026-09-01: rpc https://eth.drpc.org, last [{'day': '2026-09-01', 'token': 'weETH', 'block': 25928796, 'rate': 1.1031818024574398}, {'day': '2026-09-01', 'token': 'sUSDe', 'block': 25928796, 'rate': 1.2469992611598886}, {'day': '2026-09-01', 'token': 'pufETH', 'block': 25928796, 'rate': 1.082539892459166}, {'day': '2026-09-01', 'token': 'rsETH', 'block': 25928796, 'rate': 1.079602534891047}]
+  FAIL 429 https://eth.drpc.org
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 403 https://ethereum-rpc.publicnode.com
+  FAIL 525 https://eth.llamarpc.com
+  rates 2026-10-01: rpc https://rpc.mevblocker.io, last [{'day': '2026-10-01', 'token': 'weETH', 'block': 26144796, 'rate': 1.1052873598588229}, {'day': '2026-10-01', 'token': 'sUSDe', 'block': 26144796, 'rate': 1.2519527348616941}, {'day': '2026-10-01', 'token': 'pufETH', 'block': 26144796, 'rate': 1.0851355864883616}, {'day': '2026-10-01', 'token': 'rsETH', 'block': 26144796, 'rate': 1.0816074199137684}]
+  FAIL 429 https://rpc.mevblocker.io
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  rates 2026-11-01: rpc https://eth.drpc.org, last [{'day': '2026-11-01', 'token': 'weETH', 'block': 26367996, 'rate': 1.1076508943332288}, {'day': '2026-11-01', 'token': 'sUSDe', 'block': 26367996, 'rate': 1.2571378032026932}, {'day': '2026-11-01', 'token': 'pufETH', 'block': 26367996, 'rate': 1.0870403630889178}, {'day': '2026-11-01', 'token': 'rsETH', 'block': 26367996, 'rate': 1.083977986960055}]
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 301 https://1rpc.io/eth
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 429 https://1rpc.io/eth
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://1rpc.io/eth
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 402 https://1rpc.io/eth
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 301 https://1rpc.io/eth
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 402 https://1rpc.io/eth
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 429 https://eth.blockscout.com/api/eth-rpc
+  FAIL 525 https://eth.llamarpc.com
+  FAIL 429 https://eth.merkle.io
+  FAIL 410 https://1rpc.io/eth
+  wrote batcha_rates.parquet: 4244 rows
