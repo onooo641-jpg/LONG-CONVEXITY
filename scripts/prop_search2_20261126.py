@@ -83,6 +83,37 @@ def addendum_prices():
         print(f"  {name:<62} | {out[0]} | {out[1]}", flush=True)
 
 
+def stage_c1():
+    """Stage C1: other sizes of the qualifying firms (models from scripts/structure_scan_20261120.py), risk 0.45 x MLL."""
+    import contextlib
+    import io
+    with contextlib.redirect_stdout(io.StringIO()):
+        from scripts.structure_scan_20261120 import lucidflex, topstep
+    orders, bars = pd.read_parquet(D.PROCESSED_DIR / "ideas_orders_NQ.parquet"), D.load("1m")
+    t0 = trades(orders, bars, 0)
+    ts, ts_risk = MODELS["topstep50"][0][1:]
+    ref_real, ref_dip, _, _ = price(t0, ts, ts_risk, Policy.IMMEDIATE if ts.mll_locks_at is None else Policy.LOCK_FIRST)
+    rows = []
+    for size, mll in ((100, 3000), (150, 4500)):
+        std = R(topstep(size, "Standard"), combine_consistency=0.55)
+        con = R(topstep(size, "Consistency"), combine_consistency=0.55, consistency_days=3, winning_days_required=0)
+        rows += [(f"Topstep {size}K Standard (real-time)", std, 0.45 * mll), (f"Topstep {size}K Consistency (real-time)", con, 0.45 * mll)]
+    for size, mll in ((25, 1000), (100, 3000), (150, 4500)):
+        rows.append((f"LucidFlex {size}K (EOD, no DLL; dated price)", R(lucidflex(size), realtime_mll=False), 0.45 * mll))
+    print(f"\nSTAGE C1 - other sizes. Bar: real >= ${0.5 * ref_real:,.0f}, flip >= $5,000, dip >= ${1.5 * ref_dip:,.0f}")
+    for name, rules, risk in rows:
+        pol = Policy.IMMEDIATE if rules.mll_locks_at is None else Policy.LOCK_FIRST
+        real, dip, fmed, fpos = price(t0, rules, risk, pol)
+        ok = real >= 0.5 * ref_real and fmed >= 5000 and dip >= 1.5 * ref_dip
+        print(f"  {name:<46} risk ${risk:>5,.0f} | real ${real:>8,.0f} flip ${fmed:>8,.0f} ({fpos:.0%}) dip ${dip:>8,.0f} "
+              f"{'QUALIFIES' if ok else 'fails'}", flush=True)
+
+
 if __name__ == "__main__":
-    run()
-    addendum_prices()
+    import sys
+    if "--c1" in sys.argv:
+        stage_c1()
+    else:
+        run()
+        addendum_prices()
+        stage_c1()

@@ -90,3 +90,23 @@ TTP Instant 50K's official price is $499 (PROP_VERIFY), where it fails under bot
 Only Jx can read the checkout pages.
 
 **Next (Stage C and beyond):** other account sizes of the qualifying firms (Topstep, Lucid), and bot-friendly firms never priced.
+
+## Stage C1 (registered 2026-11-26, before running): other sizes at the qualifying firms
+Models from `scripts/structure_scan_20261120.py`:
+- Topstep 100K/150K Standard and Consistency, with the official 55% combine consistency. The Consistency path is set as in the audit
+  (3 days, 40%, no winning-day rule), with payout caps from that file (100K $3,000/$4,000; 150K $5,000/$6,000).
+- LucidFlex 25K/100K/150K at that file's prices. These are dated and unverified; current prices are behind the checkout.
+
+Settings:
+- Risk per trade = 0.45 × the account's MLL (as in that file; $900 at 50K).
+- Topstep is on the real-time model (its own page).
+- LucidFlex is on the EOD model (its own page: unrealized P&L does not count), with no DLL. The DLL amounts for other sizes are not on
+  the stored pages.
+
+The qualification bar is unchanged: Topstep 50K Standard, real-time.
+
+## Stage C2: Topstep static-drawdown combines (Topstep Labs)
+Registered now; it runs once `prop_verify.yml` (expand mode) captures the official parameters. Until then, the third-party figures are:
+- 50K Static: $4,000 target; $2,000 static MLL that never moves; about $149; possibly a $1,000 DLL.
+
+They are modelled with `static_dd=True` only after the official page confirms the parameters.
