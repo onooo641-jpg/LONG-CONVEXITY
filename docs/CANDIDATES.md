@@ -235,6 +235,7 @@ risk, 5m signals and 1m fills.
 | 418 | UniswapX open fillers on Base (permissionless): newcomer income, two cohorts | `docs/PREREG_SOLVERS_20261125.md` | **KILL**: medians $798 / −$5,043 per yr | solvers_20261125.txt |
 | 419–421 | Batch A: crypto variance risk premium (Derive straddles), dYdX reward farming hedged, withdrawal discounts vs on-chain rates | `docs/PREREG_BATCH_A_20261126.md` | #419 KILL, #420 not testable, #421 invalid (re-fetch) | batch_a_20261126.txt |
 | 422–428 | Batch B: year-one vaults on newer perp DEXes (OOS), funding-cap crowding short, Liquity v2 stability pools, wick bids on Orderly, cascade-day lending, HL spot-perp carry, new-chain stable premiums | `docs/PREREG_BATCH_B_20261126.md` | #422 FAIL, #423 not testable, #424 KILL, **#425 PASS (wick bids on Orderly; family 1)**, #426 KILL, #427 FAIL OOS, #428 not testable | batch_b_20261126.txt |
+| 429–438 | Batch C: fiat-backed and synthetic stablecoin depeg buying, Binance-suspension convergence, funding-sentiment extremes (BTC, ETH), CME weekend-gap fill (BTC, ETH), HIP-3 commodity/index weekend fades, token-split arbitrage | `docs/PREREG_BATCH_C_20261126.md` | registered; data `ubatchc` | — |
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.

@@ -1610,6 +1610,58 @@ def job_ubatchb():
     save("batchb_orderly_1d.parquet", pd.DataFrame(krow, columns=["coin", "t", "o", "h", "l", "c", "v"]))
 
 
+def job_ubatchc():
+    """Batch C data: hourly stablecoin prices 2020-26 (DefiLlama), Binance maintenance announcements, BTC/ETH 1h klines."""
+    ids = ["usd-coin", "tether", "first-digital-usd", "paypal-usd", "true-usd", "binance-usd", "paxos-standard", "dai", "ethena-usde", "frax",
+           "crvusd", "gho", "liquity-usd", "usdd", "usual-usd", "usds"]
+    rows = []
+    for g in ids:
+        t = int(pd.Timestamp("2020-01-01", tz="UTC").timestamp())
+        while t < time.time():
+            d = get(f"https://coins.llama.fi/chart/coingecko:{g}?start={t}&span=500&period=1h", tries=2)
+            rows += [(g, int(x["timestamp"]), float(x["price"])) for x in (((d or {}).get("coins") or {}).get(f"coingecko:{g}") or {}).get("prices") or []]
+            t += 500 * 3600
+            time.sleep(0.2)
+        print(f"  {g}: {sum(1 for r in rows if r[0] == g)} hourly points", flush=True)
+    save("batchc_stables_1h.parquet", pd.DataFrame(rows, columns=["id", "t", "price"]))
+    out = {}
+    for cat in (157, 49):
+        items = []
+        for p in range(1, 120):
+            st, d = req(f"https://www.binance.com/bapi/composite/v1/public/cms/article/list/query?type=1&pageNo={p}&pageSize=50&catalogId={cat}", timeout=40)
+            lst = _items((d or {}).get("data")) if isinstance(d, dict) else []
+            if st != 200 or not lst:
+                break
+            items += [{"title": x.get("title"), "releaseDate": x.get("releaseDate"), "code": x.get("code")} for x in lst]
+            if min(int(x.get("releaseDate") or 0) for x in lst) < int(pd.Timestamp("2023-01-01", tz="UTC").timestamp() * 1000):
+                break
+            time.sleep(0.5)
+        out[str(cat)] = items
+        print(f"  binance catalog {cat}: {len(items)}", flush=True)
+    save("batchc_binance_ann.json", out)
+    import io
+    import zipfile
+    k = []
+    for sym in ("BTCUSDT", "ETHUSDT"):
+        for y in range(2020, 2027):
+            for m in range(1, 13):
+                mth = f"{y}-{m:02d}"
+                if mth > "2026-10":
+                    continue
+                try:
+                    with urllib.request.urlopen(urllib.request.Request(f"https://data.binance.vision/data/futures/um/monthly/klines/{sym}/1h/{sym}-1h-{mth}.zip", headers=UA), timeout=60) as r:
+                        z = zipfile.ZipFile(io.BytesIO(r.read()))
+                        for ln in z.read(z.namelist()[0]).decode().splitlines():
+                            f = ln.split(",")
+                            if f and f[0].isdigit():
+                                ts = int(f[0])
+                                k.append((sym, (ts // 1000 if ts > 10**14 else ts) // 1000, float(f[4])))
+                except Exception:  # noqa: BLE001
+                    pass
+        print(f"  {sym} 1h rows: {sum(1 for x in k if x[0] == sym)}", flush=True)
+    save("batchc_btceth_1h.parquet", pd.DataFrame(k, columns=["sym", "t", "c"]))
+
+
 def _safe(fn):
     def w():
         try:
@@ -1626,4 +1678,4 @@ def job_uprobe():
 
 
 JOBS = {"uprobe": job_uprobe, "u383vaults": _safe(job_u383vaults), "u384lst": _safe(job_u384lst), "u385hyperp": _safe(job_u385hyperp),
-        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive, "uhip3": _safe(job_uhip3), "uw3b": _safe(job_uw3b), "udistinct": _safe(job_udistinct), "unav": _safe(job_unav), "udln": _safe(job_udln), "udln2": _safe(job_udln2), "ubatcha": _safe(job_ubatcha), "urates": _safe(job_urates), "ubatchb": _safe(job_ubatchb)}
+        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive, "uhip3": _safe(job_uhip3), "uw3b": _safe(job_uw3b), "udistinct": _safe(job_udistinct), "unav": _safe(job_unav), "udln": _safe(job_udln), "udln2": _safe(job_udln2), "ubatcha": _safe(job_ubatcha), "urates": _safe(job_urates), "ubatchb": _safe(job_ubatchb), "ubatchc": _safe(job_ubatchc)}
