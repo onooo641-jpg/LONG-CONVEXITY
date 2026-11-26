@@ -41,3 +41,24 @@ wind-down). A pass counts only if the events were tradeable on an independent ve
 - **Rule:** an idea keeps its PASS only if ≥ 70% of its verifiable events are confirmed **and** the confirmed events alone still meet the
   Stage 2 bar (≥ 3 events, mean ≥ +1%, ≥ 75% profitable for #429/#430; ≥ $3,000/yr scaled for #421). Otherwise it is downgraded to
   "data artefact / not confirmed". Data: job `uverify`.
+
+---
+## Results so far (2026-11-26 check-in) — `uv run python -m scripts.batch_c_20261126`, `uv run python -m scripts.verify_v_20261126`
+| # | Result |
+|---|---|
+| 429 | Stage 1 survives (35 events, +3.39%), Stage 2 printed PASS (220 events, +4.18%, 100% profitable) — **pending verification V** (CoinGecko feed includes dead venues, e.g. BUSD down to $0.14 after its wind-down) |
+| 430 | Stage 1 survives (10 events), Stage 2 printed PASS (19 events, +4.07%, 95%) — **pending verification V** |
+| 431 | Not testable: only 4 suspension titles, without token/window detail |
+| 432 / 433 | KILL (t 0.33 / 0.33 in 2020–22) |
+| 434 / 435 | KILL (2020–22 mean −0.78% / −1.65%) |
+| 436 / 437 | KILL / FAIL (1 event per half) |
+| 438 | Not testable |
+| 439 | KILL (BTC mean 0.00%, ETH −0.53%) |
+| 440 | pending data (`ubatchc2`) |
+| 441 | KILL (BTC −0.09%, ETH −0.17% per event in 2024) |
+| 442 | pending data (`ubatchc2`) |
+
+**#421 (Batch A) re-run with real on-chain rates (4,181 rate rows):** Stage 1 2024 108 events +1.60% (survives); Stage 2 printed PASS
+(89 events, +5.47%, 100% profitable, $13,308/yr). **Verification V:** 85% of verifiable event days "confirmed" — but every confirmed day is
+pufETH on a pool trading $0.0001–$2 a day (no executable size), and none of the liquid tokens' (weETH, sUSDe, rsETH) discounts appear on
+their DEX pools. **Not counted: the CoinGecko discounts are not tradeable.**
