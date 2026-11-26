@@ -18,4 +18,18 @@ MANUAL (every entry 3 minutes late). Bar: real >= $13,557, coin flip >= $5,000, 
   LucidFlex 50K DLL ON $80.50 (manual)               real $  25,153 (closed-P&L model $  40,494) | coin flip $   3,186 (62%) | dip $ -3,868 | fails
   Top One Elite ACCESS 50K $39 promo (manual only)   real $  18,741 (closed-P&L model $  21,566) | coin flip $     385 (52%) | dip $ -3,789 | fails
 
-qualifying rows (excluding the benchmark rows): 2
+ADDENDUM 2 - BOT, each firm's own stated rule. Bar: real >= $17,562, coin flip >= $5,000, dip >= $-6,088
+  Topstep 50K Standard (benchmark)                   real $  35,124 (closed-P&L model $  44,359) | coin flip $   6,205 (75%) | dip $ -4,058 | QUALIFIES
+  Topstep 50K Consistency (real-time, Topstep's page) real $  37,406 (closed-P&L model $  46,492) | coin flip $   6,384 (76%) | dip $ -3,524 | QUALIFIES
+  LucidFlex 50K DLL ON $80.50 (EOD: unrealized does not count) real $  40,545 (closed-P&L model $  40,545) | coin flip $  21,522 (99%) | dip $ -4,108 | QUALIFIES
+  LucidDaily $85.40: EOD eval, intraday funded       real $  30,380 (closed-P&L model $  57,486) | coin flip $   6,110 (74%) | dip $ -4,526 | QUALIFIES
+  LucidDaily $165.20: EOD eval + EOD funded          real $  44,558 (closed-P&L model $  44,558) | coin flip $  10,241 (80%) | dip $ -7,269 | fails
+  TTP Futures Prime 50K (real-time assumed)          real $  26,700 (closed-P&L model $  50,495) | coin flip $   3,521 (63%) | dip $ -5,651 | fails
+  DayTraders EOD 50K $105 (real-time assumed)        real $  33,760 (closed-P&L model $  48,856) | coin flip $  -5,937 (25%) | dip $ -7,064 | fails
+
+qualifying rows (excluding the benchmark rows): 5
+
+ADDENDUM 2 - money needed to start (118 monthly starts 2016-01..2025-10), bot, each firm's stated rule
+  Topstep 50K Consistency (real-time, Topstep's page)            median $-1,181 | 1 in 10 $-2,585 | worst $-3,475 | first payout $1,085 after 132 days | 12-month net $1,327 (39% losing)
+  LucidFlex 50K DLL ON $80.50 (EOD: unrealized does not count)   median $-708 | 1 in 10 $-2,906 | worst $-4,108 | first payout $1,122 after 137 days | 12-month net $1,890 (31% losing)
+  LucidDaily $85.40: EOD eval, intraday funded                   median $-1,025 | 1 in 10 $-3,519 | worst $-4,612 | first payout $964 after 210 days | 12-month net $2,461 (40% losing)

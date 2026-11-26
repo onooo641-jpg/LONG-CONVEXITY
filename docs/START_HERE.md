@@ -13,7 +13,7 @@ Plain-language guide. Sorted from "what makes money" to "what failed". Every num
 | What | Status | Money |
 |---|---|---|
 | **Prop-firm recycling, Topstep 50K** (corrected 2026-11-26: loss limit checked on open P&L) | **Works (backtest 2016–26); only product that still qualifies** | **$37,406 = $3,454/yr**, coin flip $6,384; worst dip −$3,524; up to 5 accounts |
-| Malaysia-eligible 4-firm portfolio (Topstep + TTP + DayTraders + LucidDaily) | **On hold**: the other three fail the coin-flip bar on the corrected model if they check open P&L (unconfirmed) | old figure $18,006/yr was closed-P&L (optimistic) |
+| Second firm: **LucidFlex 50K DLL ON** (and LucidDaily $85.40) | **Qualifies on Lucid's own stated rule** (EOD drawdown ignores open P&L); needs CrossTrade ($49/month) for the bot | LucidFlex $40,545 (coin flip $21,522); TTP and DayTraders fail if they check open P&L |
 | **#389 Resting bids under liquidation wicks** (Hyperliquid perps, own capital) | **Best non-prop result so far.** Stage 1 + out-of-sample on Binance (S2a) + risk (S2b) passed; forward paper (S2c) 2026-12-01 → 2027-01-26 and a margin check (S2d) still open | backtest ~$18.8K/yr on $15K (Hyperliquid 2023–26), or ~$6.4K/yr if resting orders lock margin; **loses in crash regimes** (Binance path −$22K, 2025-09 → 2026-07) |
 | **#397 Cascade-day reversal** (buy the perps that wicked, hold 3 days) | Stage 1 + Binance Stage 2 passed | ~7–8 events/yr, +3.3–3.7% per event ≈ $3.7K/yr unlevered on $15K; overlaps #389's crash days |
 | #385 Short Hyperliquid pre-launch perps | Survives Stage 1; small sizes only | ~$4K/yr; forward watch running |
@@ -75,9 +75,9 @@ inside the bands → scale. **First 3 months, normal case:** ~50 trades, 2–3 e
 **Costs:** $49/month Combine + $49 reset + $149 activation per funded account (Topstep's fees, in the backtest); TopstepX API
 $14.50/month (bot access, in the backtest).
 
-**Other firms after the correction:** LucidDaily, TTP Prime and DayTraders EOD fall below the coin-flip bar if they check open P&L like
-Topstep (LucidDaily's funded stage reportedly also trails intraday). Not confirmed for those firms; until it is, Topstep is the only
-approved product, and the CrossTrade/Lucid route is on hold.
+**Other firms (audit addendum 2, firms' own pages):** LucidFlex 50K DLL ON ($40,545; start median −$708, 1 in 10 −$2,906, worst −$4,108)
+and LucidDaily $85.40 ($30,380) also qualify — Lucid's EOD drawdown ignores open P&L. They need the CrossTrade route ($49/month) for the
+bot. TTP Prime and DayTraders EOD fail if they check open P&L.
 **Later steps:** more Topstep accounts (up to 5) after the live gates; #389 (own capital) only after its paper test ends 2027-01-26.
 
 ## 3. Calendar of scheduled verdicts
@@ -97,8 +97,10 @@ approved product, and the CrossTrade/Lucid route is on hold.
 > Topstep check it on open P&L in real time, so these figures are optimistic. Corrected (`docs/AUDIT_PRE_LIVE_20261126.md`): Topstep 50K
 > Consistency $37,406 (coin flip $6,384, qualifies); LucidDaily $85.40 $27,301 (coin flip $218, fails); TTP Prime $26,700 (coin flip
 > $3,521, fails); DayTraders EOD $33,760 (coin flip −$5,937, fails) — the last three assume those firms also check open P&L (unconfirmed).
-> **All approved products re-priced (audit addendum 1): only Topstep qualifies** (LucidFlex $29,037 / coin flip $4,806 and TradeDay
-> $18,567 also fail; manual entry: nothing qualifies).
+> **Read from each firm's own pages (audit addendum 2): Lucid's EOD drawdown ignores unrealized P&L.** Qualifying, bot entry:
+> **LucidFlex 50K DLL ON $80.50 $40,545** (coin flip $21,522), **Topstep 50K Consistency $37,406** ($6,384), **LucidDaily $85.40 $30,380**
+> ($6,110). TTP Prime and DayTraders EOD fail if they check open P&L (their pages imply it; not stated outright). Lucid needs CrossTrade
+> ($49/month, not in the figures) for the bot.
 
 Benchmark Topstep 50K (old closed-P&L model): $44,359 real net, coin-flip median $18,046, worst dip −$3,520. "Qualifies" = real ≥ 50% of Topstep, coin flip ≥ $5,000,
 worst dip no worse than 1.5× Topstep's (manual-entry products judged with a 3-minute entry delay).

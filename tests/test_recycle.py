@@ -437,3 +437,8 @@ def test_intraday_trail_raises_the_funded_floor_on_open_profit():
     t = seq([3000.0, 1000.0, -1150.0]).assign(mae_usd=[0.0, 0.0, 1150.0], mfe_usd=[3000.0, 1900.0, 0.0])
     assert recycle(t, rules)["funded_busts"] == 1
     assert recycle(t, dataclasses.replace(rules, intraday_trail_funded=False))["funded_busts"] == 0
+
+
+def test_an_eod_evaluation_ignores_open_losses_when_the_firm_says_so():
+    t = seq([1500.0, 900.0]).assign(mae_usd=[0.0, 2100.0], mfe_usd=[1500.0, 900.0])
+    assert recycle(t, dataclasses.replace(RULES, realtime_eval=False))["combine_busts"] == 0

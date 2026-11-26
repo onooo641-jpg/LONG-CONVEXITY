@@ -217,6 +217,9 @@ class XFARules:
     #: trades without it are judged on closed P&L only. False reproduces every
     #: figure computed before 2026-11-26 (docs/AUDIT_PRE_LIVE_20261126.md).
     realtime_mll: bool = True
+    #: Apply the real-time check in the evaluation too. False for an EOD evaluation whose firm states that
+    #: unrealized P&L does not count (Lucid: support.lucidtrading.com 16033858).
+    realtime_eval: bool = True
     #: Funded floor trails the intra-trade equity high (``mfe_usd``), not only
     #: the closing balance -- LucidDaily funded per third-party summaries.
     intraday_trail_funded: bool = False
@@ -437,7 +440,7 @@ def recycle(trades: pd.DataFrame, rules: XFARules = XFARules(),
                 rules.loss_limit,
                 None if rules.static_dd else (rules.loss_limit if rules.combine_mll_locks else None),
                 rules.lock_level, rules.static_dd)
-        breached_open = realtime and open_low <= floor_now
+        breached_open = realtime and (funded or rules.realtime_eval) and open_low <= floor_now
 
         account.balance += day
         account.peak = max(account.peak, account.balance)
