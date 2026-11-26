@@ -1,0 +1,4 @@
+=== ucb442
+  coinbase BTC-USD: 2530 days
+  coinbase ETH-USD: 2530 days
+  wrote batchc_coinbase_1d.parquet: 5060 rows
