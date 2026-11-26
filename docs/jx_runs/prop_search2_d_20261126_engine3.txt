@@ -1,0 +1,7 @@
+Bar: real >= $19,017, coin flip >= $5,000, dip >= $-5,794
+
+  DayTraders 50K Static ($50 + $5)     risk $  450 | real $  17,541 | coin flip $   2,755 (78%) | dip $  -1,270 | fails
+  DayTraders 50K Trail ($70 + $5)      risk $1,125 | real $  44,125 | coin flip $   8,030 (80%) | dip $  -7,300 | fails
+  DayTraders 25K S2F ($222)            risk $  450 | real $  11,906 | coin flip $  -4,916 (24%) | dip $  -5,992 | fails
+
+qualifying: 0
