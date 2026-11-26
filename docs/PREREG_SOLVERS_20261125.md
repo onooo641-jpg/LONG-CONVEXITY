@@ -45,3 +45,10 @@ seeing any income: (1) **sampling** — blocks of 2,000 consecutive orders at ev
 block (resolution ≈ the block spacing, reported). (2) **pricing** — orders whose give and take tokens are both in {USDC, USDT, DAI, ETH/WETH,
 BNB/WBNB, SOL, BTC/WBTC/cbBTC, POL/MATIC, AVAX} are priced from DefiLlama daily prices; other orders are excluded and their share reported.
 Margin per order = give USD − take USD − finalPercentFee − fixFee (USD). Pass/kill bars unchanged. Data job `udln2`.
+
+### #417 result — **FAIL (no room: top-3 takers 100% of margin); cohorts not measurable** (2026-11-26)
+`uv run python -m scripts.solvers_20261125` → `docs/jx_runs/solvers_20261125.txt` (re-run identical). The offset sampling reached only back
+to 2026-03-12 in the time cap (33 blocks, 66,000 orders; 37,856 priced), so the 2024 and 2025 entrant cohorts could not be measured (the
+script's "KILL" line reflects empty cohorts). The registered market-room condition does not need them: 15 takers seen, **top-3 share of
+positive margin 100%** (bar < 90%), estimated margin pool ~$9.2M/yr at 23.6 bps; the single 2026 newcomer filled one sampled order. DLN
+taking is permissionless but already captured by three operators → fails.

@@ -19,5 +19,13 @@
   cohort B (2026-04-01..2026-07-31): newcomers 6, median annualised net $-5,043
   STAGE VERDICT (#418): KILL
 
-#### #417 deBridge DLN takers: newcomer income
-  orders not fetched: not testable yet
+#### #417 deBridge DLN takers: newcomer income (sampled order blocks, addendum)
+  sampled orders 66000; priced 37856; excluded (unpriced token or > 5% mismatch) 28144
+  blocks 33; time span 2026-03-12..2026-11-26; median weight 12.5 orders per sampled order
+  volume-weighted margin 23.57 bps; estimated annual margin pool $9,248,805/yr
+  takers seen: 15; top-3 share of positive margin 100%
+       taker      first  orders_sampled      ann_net
+0x949ff2f4e7 2026-04-16               1       -3,000
+  cohort A (first seen 2024): no newcomers
+  cohort B (first seen 2025): no newcomers
+  STAGE VERDICT (#417): KILL

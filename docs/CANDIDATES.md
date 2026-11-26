@@ -231,7 +231,7 @@ risk, 5m signals and 1m fills.
 | 412–413 | Korean-premium spikes (Upbit vs Hyperliquid, short); withdrawal-queue discounts on hourly prices (#384 Stage 1b) | `docs/PREREG_DISTINCT_20261125.md` | registered; data `udistinct` | — |
 | 414–415 | short lottery coins (MAX effect, market-neutral weekly); withdrawal discounts vs on-chain NAV | `docs/PREREG_DISTINCT_20261125.md` | registered with out-of-sample stages | — |
 | 416 | fade Binance funding-frequency (crowd) flags | `docs/PREREG_DISTINCT_20261125.md` | **KILL** (2023–24: 21 events −4.82%) | crowd_flag_20261125.txt |
-| 417 | deBridge DLN takers (permissionless intent filling): newcomer income in 2024 and 2025 cohorts | `docs/PREREG_SOLVERS_20261125.md` | registered; data `udln` | — |
+| 417 | deBridge DLN takers (permissionless intent filling): newcomer income in 2024 and 2025 cohorts | `docs/PREREG_SOLVERS_20261125.md` | **FAIL**: top-3 takers 100% of a ~$9.2M/yr margin pool (2026-03..11 sample); cohorts not reachable | solvers_20261125.txt |
 | 418 | UniswapX open fillers on Base (permissionless): newcomer income, two cohorts | `docs/PREREG_SOLVERS_20261125.md` | **KILL**: medians $798 / −$5,043 per yr | solvers_20261125.txt |
 | 419–421 | Batch A: crypto variance risk premium (Derive straddles), dYdX reward farming hedged, withdrawal discounts vs on-chain rates | `docs/PREREG_BATCH_A_20261126.md` | registered; data `ubatcha` | — |
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
