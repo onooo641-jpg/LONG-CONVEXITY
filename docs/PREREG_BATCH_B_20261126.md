@@ -12,3 +12,15 @@ B3 (#417 — FAIL) and B7 (#395 forward log) run elsewhere. $15,000 pot. Data jo
 | 426 (B8, med) | Cascade-day lending on Hyperliquid's lending markets | DefiLlama yield pools of hyperlend / hypurrfi (USDC, USDT0) daily APY + #397 cascade days | supply APY on cascade days and the next 3 days vs all days | 2025: KILL if cascade-window APY < 2× the average | 2026: PASS if cascade-window APY ≥ 2× average and the all-days average ≥ 10% |
 | 427 (B9, med) | Hyperliquid spot-perp carry for tokens with both | `fivehigh_hl_spot_1d` + HL perp candles + `hl_funding` | long spot / short perp when the trailing-7-day funding > 0, else flat; daily; costs 2 × 0.07% spot + 2 × 0.045% perp per switch | 2024-06..2025-06: KILL if annualised < 10% | 2025-07..2026-10: PASS if annualised ≥ 20% and worst drawdown ≥ −15% |
 | 428 (B10, low) | New-chain stablecoin launch premiums | GeckoTerminal free history is ~6 months, DefiLlama has no chain-specific stablecoin prices | — | not testable with free data (recorded) | — |
+
+---
+## Results (2026-11-26) — `uv run python -m scripts.batch_b_20261126` → `docs/jx_runs/batch_b_20261126.txt` (re-run identical)
+| # | Result |
+|---|---|
+| 422 | **FAIL.** DefiLlama lists only GMX and Drift among the matched projects (no Lighter/edgeX/Grvt/Paradex/Aster vaults). Before-2025 vaults: 10, median first-year APY 18.0% (survives); 2025+ vaults: 3, median 21.0% (< 30%) |
+| 423 | **Not testable:** 6 events in 2024 (< 20); worst −85% |
+| 424 | **KILL:** Liquity v2 BOLD stability pools 3.3–4.8% APY |
+| 425 | **PASS (family 1 capacity, not a new family):** Orderly network, 144 perps 2023-11..2026-11, 801 fills, +1.32%/fill, t 4.15, $3,620/yr |
+| 426 | **KILL:** stablecoin supply APY on cascade windows 7.3% vs 6.3% average (2025) — no spike to capture |
+| 427 | **FAIL out-of-sample:** 2024-06..2025-06 93.0%/yr (survives), 2025-07..2026-10 12.4%/yr (< 20%) |
+| 428 | Not testable (pre-registered) |

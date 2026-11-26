@@ -1,0 +1,54 @@
+===== Batch B #422-#428
+#### #422 year-one house vaults on newer perp DEXes (DefiLlama APY)
+         project     chain        symbol      start   tvl_m3   apy_y1
+         gmx-evm  Arbitrum   WBTC.B-USDC 2023-10-09    115.9     17.8
+         gmx-evm  Arbitrum      ETH-USDC 2023-10-09     98.2     18.1
+         gmx-evm Avalanche     AVAX-USDC 2023-10-09      5.5     23.6
+         gmx-evm  Arbitrum      SOL-USDC 2023-10-09     22.0     34.6
+         gmx-evm  Arbitrum     LINK-USDC 2023-10-09     10.7     28.7
+         gmx-evm  Arbitrum      ARB-USDC 2023-10-09     14.9     18.3
+         gmx-evm  Arbitrum       ETH-ETH 2024-04-18     19.3      7.6
+         gmx-evm  Arbitrum WBTC.B-WBTC.B 2024-04-18     19.8      5.6
+         gmx-evm Avalanche     AVAX-AVAX 2024-07-03      6.2      3.0
+         gmx-evm Avalanche       BTC-BTC 2024-07-03      7.7      3.1
+         gmx-evm  Arbitrum   WBTC.B-USDC 2025-02-06      5.4     23.9
+         gmx-evm  Arbitrum   WBTC.B-USDC 2025-03-12      7.0     21.0
+drift-staked-sol    Solana          DSOL 2025-03-19    238.3      7.5
+  Stage 1 (launched before 2025): 10 vaults, median first-year APY 18.0%
+  STAGE 1 VERDICT: survives (kill-only)
+  Stage 2 (launched 2025+, out-of-sample): 3 vaults, median first-year APY 21.0%
+  STAGE 2 VERDICT: FAIL
+
+#### #423 funding-cap crowding short (HL funding >= 0.05%/h for 6 h)
+  Stage 1 (2024): events 6, mean -7.01%, median 5.54%, t -0.44, win 50%, worst -85.3%
+  STAGE 1 VERDICT: not testable (< 20 events)
+  Stage 2 (out-of-sample 2025-01..2026-10): events 5, mean 0.39%, median 18.54%, t 0.02, win 60%, worst -83.7%
+  STAGE 2 VERDICT: not judged — context
+
+#### #424 Liquity v2 stability pools (DefiLlama APY)
+  WSTETH: first half 0.0%, second half 0.0%, TVL now $30.3M
+  ETH: first half 0.0%, second half 0.0%, TVL now $18.3M
+  RETH: first half 0.0%, second half 0.0%, TVL now $10.8M
+  BOLD: first half 4.7%, second half 3.5%, TVL now $6.6M
+  BOLD: first half 4.8%, second half 3.3%, TVL now $6.0M
+  BOLD: first half 3.9%, second half 4.5%, TVL now $1.7M
+  STAGE 1 VERDICT: KILL
+  STAGE 2 VERDICT: not judged — context
+
+#### #425 #389 wick bids on Orderly-network perps
+  Orderly: 144 perps 2023-11-23..2026-11-26; fills 801, mean 1.32%, t 4.15, $3,620/yr
+  STAGE 2 VERDICT: PASS
+
+#### #426 cascade-day lending (HyperLend / HypurrFi stablecoin supply APY)
+  Stage 1 (2025): days 122, average APY 6.3%, cascade-window days 12, their APY 7.3%
+  Stage 2 (2026): days 330, average APY 8.3%, cascade-window days 20, their APY 8.0%
+  STAGE 1 VERDICT: KILL
+
+#### #427 Hyperliquid spot-perp carry (long spot / short perp when trailing funding > 0)
+  tokens with HL spot and perp: ['AZTEC', 'BERA', 'HYPE', 'MON', 'PUMP', 'PURR', 'STABLE', 'TRUMP']
+  Stage 1 (2024-06..2025-06): days 238, annualised 93.0%, worst drawdown -17.8%, t 1.25
+  STAGE 1 VERDICT: survives (kill-only)
+  Stage 2 (out-of-sample 2025-07..2026-10): days 488, annualised 12.4%, worst drawdown -3.6%, t 1.84
+  STAGE 2 VERDICT: FAIL
+
+#### #428 new-chain stablecoin launch premiums: not testable with free data (pre-registered)
