@@ -225,3 +225,17 @@ Static on ES ($56.5K, flip $25.5K, dip −$6.4K). ES works only at LucidFlex.
 **4. Prop search 2 re-run on the corrected engine** (`*_engine3.txt`). The verdicts at real prices are unchanged except for the $3K
 Challenge, which now qualifies. TTP Instant ($299) and DayTraders S2F ($199) would qualify at those placeholder prices, but the real
 prices ($499, $342) are above their break-evens ($321, $251).
+
+### City Traders Imperium (lead; not priced)
+Official pages (expand renders 2026-11-26):
+- the drawdown is balance-based on every program, so open losses do not count;
+- Malaysia is not restricted;
+- Expert Advisors are allowed on every program: any EA on the 1-Step; your own EA (source code on request) on the 2-Step, Instant and
+  Direct;
+- house rules: a visible stop-loss within 60 s of entry; the VPS approved first; the EA used only on your own accounts;
+- 1-Step $2.5K: $29 one-time, target 8% ($200), 5% trailing drawdown ($125), no daily drawdown.
+
+The per-size prices for the other sizes were not captured: the size tabs did not respond to the render script.
+
+CTI is CFD-only (MT5 / Match-Trader), so pricing it needs (a) Jx's decision to port the bot to an MT5 EA trading a Nasdaq-100 CFD and
+(b) CFD cost assumptions (spread and commission). Parked until Jx decides.
