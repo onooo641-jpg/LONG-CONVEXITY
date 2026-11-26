@@ -6,3 +6,9 @@ polygon: reopened 21 recorded unhealthy episodes
 polygon: head 98008287 cycles 50 debtors 5717 cand 709 last_cycle 10112 ms rpc ok/err 436/None
 polygon: head 98008493 cycles 102 debtors 5717 cand 710 last_cycle 4211 ms rpc ok/err 827/None
 polygon: head 98008694 cycles 153 debtors 5718 cand 710 last_cycle 4927 ms rpc ok/err 1216/None
+polygon: head 98008896 cycles 202 debtors 5719 cand 706 last_cycle 4863 ms rpc ok/err 1598/None
+polygon: head 98009097 cycles 253 debtors 5719 cand 708 last_cycle 4569 ms rpc ok/err 1982/None
+polygon: head 98009300 cycles 306 debtors 5719 cand 710 last_cycle 8792 ms rpc ok/err 2382/None
+polygon: head 98009504 cycles 356 debtors 5719 cand 706 last_cycle 4788 ms rpc ok/err 2763/None
+polygon: loop error https://poly.api.pocket.network: {'code': -32000, 'message': 'invalid block range params'}
+polygon: head 98009706 cycles 406 debtors 5719 cand 708 last_cycle 4531 ms rpc ok/err 3155/1
