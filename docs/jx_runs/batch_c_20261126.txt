@@ -1,0 +1,393 @@
+===== Batch C #429-#438
+
+#### #429 fiat-backed stablecoin depeg buying (buy <= 0.98, exit >= 0.997 or 30 days)
+               id         ts      buy      ret  days
+      binance-usd 2021-03-15   0.9715   0.0338     0
+      binance-usd 2021-04-25   0.9787   0.0273     0
+      binance-usd 2021-12-04   0.9657   0.0370     0
+      binance-usd 2022-01-07   0.9778   0.0199     0
+      binance-usd 2022-01-07   0.9797   0.0277     0
+      binance-usd 2022-01-21   0.9635   0.0345     0
+      binance-usd 2022-05-11   0.9773   0.0251     0
+      binance-usd 2022-05-11   0.9695   0.0839     0
+      binance-usd 2022-08-19   0.9792   0.0204     0
+      binance-usd 2023-01-25   0.9784   0.0204     0
+      binance-usd 2023-10-23   0.9559   0.0451     0
+      binance-usd 2023-12-15   0.9783   0.0202     1
+      binance-usd 2024-04-12   0.9747   0.0321     0
+      binance-usd 2024-06-11   0.9746   0.0245     0
+      binance-usd 2024-06-13   0.9796   0.0177     1
+      binance-usd 2024-06-14   0.9739   0.0309     0
+      binance-usd 2024-06-16   0.9751   0.0233     2
+      binance-usd 2024-06-19   0.9782   0.0209     5
+      binance-usd 2024-07-05   0.9741   0.0266     0
+      binance-usd 2024-07-06   0.9785   0.0193     0
+      binance-usd 2024-07-07   0.9783   0.0498     0
+      binance-usd 2024-07-17   0.9739   0.0246     2
+      binance-usd 2024-07-20   0.9772   0.0205     0
+      binance-usd 2024-07-23   0.9797   0.0198     0
+      binance-usd 2024-07-24   0.9766   0.0200     0
+      binance-usd 2024-07-28   0.9789   0.0175     0
+      binance-usd 2024-07-29   0.9785   0.0185     0
+      binance-usd 2024-07-31   0.9595   0.0389     0
+      binance-usd 2024-07-31   0.9772   0.0367     0
+      binance-usd 2024-08-01   0.9638   0.0335     0
+      binance-usd 2024-08-02   0.9580   0.0398     0
+      binance-usd 2024-08-30   0.9792   0.0212     0
+      binance-usd 2024-09-03   0.9769   0.0196     0
+      binance-usd 2024-09-04   0.9726   0.0250     0
+      binance-usd 2024-09-05   0.9695   0.0277     0
+      binance-usd 2024-09-09   0.9037   0.1037     0
+      binance-usd 2024-09-10   0.9747   0.0235     1
+      binance-usd 2024-09-11   0.9707   0.0272     0
+      binance-usd 2024-09-18   0.9782   0.0193     1
+      binance-usd 2024-09-21   0.9503   0.0508     0
+      binance-usd 2024-09-22   0.9586   0.0412     0
+      binance-usd 2024-09-24   0.9795   0.0260     0
+      binance-usd 2024-09-25   0.9601   0.0399     1
+      binance-usd 2024-09-28   0.9773   0.0192     1
+      binance-usd 2024-09-30   0.9742   0.0231     2
+      binance-usd 2024-10-07   0.9499   0.0623     0
+      binance-usd 2024-10-07   0.9483   0.0529     0
+      binance-usd 2024-10-08   0.9795   0.0174     0
+      binance-usd 2024-10-09   0.9697   0.0279     0
+      binance-usd 2024-10-10   0.9719   0.0464     0
+      binance-usd 2024-10-12   0.9525   0.0464     1
+      binance-usd 2024-10-14   0.9670   0.0487     0
+      binance-usd 2024-10-16   0.9594   0.0402     2
+      binance-usd 2024-10-18   0.9796   0.0170     4
+      binance-usd 2024-10-24   0.9664   0.0338     1
+      binance-usd 2024-10-27   0.9772   0.0195     1
+      binance-usd 2024-10-30   0.9743   0.0264     0
+      binance-usd 2024-11-01   0.9728   0.0266     0
+      binance-usd 2024-11-02   0.9680   0.0298     0
+      binance-usd 2024-11-03   0.9781   0.0192     1
+      binance-usd 2024-11-05   0.9756   0.0226     0
+      binance-usd 2024-11-10   0.9764   0.0213     0
+      binance-usd 2024-11-11   0.9779   0.0193     0
+      binance-usd 2024-11-13   0.9786   0.0187     0
+      binance-usd 2024-11-17   0.9598   0.0378     0
+      binance-usd 2024-11-19   0.9719   0.0260     0
+      binance-usd 2024-11-21   0.9710   0.0283     0
+      binance-usd 2024-11-21   0.9795   0.0184     0
+      binance-usd 2024-11-22   0.9796   0.0186     0
+      binance-usd 2024-11-28   0.9516   0.0479     0
+      binance-usd 2024-11-30   0.9738   0.0260     0
+      binance-usd 2024-12-02   0.9776   0.0188     0
+      binance-usd 2024-12-03   0.9783   0.0205     3
+      binance-usd 2024-12-08   0.9777   0.0289     0
+      binance-usd 2024-12-08   0.8533   0.1707     1
+      binance-usd 2024-12-10   0.9709   0.0300     0
+      binance-usd 2024-12-11   0.9596   0.1005     0
+      binance-usd 2024-12-12   0.7866   0.3009     0
+      binance-usd 2024-12-12   0.9752   0.0398     0
+      binance-usd 2024-12-12   0.9721   0.0514     0
+      binance-usd 2024-12-13   0.9795   0.0312     0
+      binance-usd 2024-12-13   0.9692   0.0308     0
+      binance-usd 2024-12-13   0.9713   0.0286     0
+      binance-usd 2024-12-14   0.9795   0.0220     0
+      binance-usd 2024-12-14   0.9775   0.0241     0
+      binance-usd 2024-12-17   0.9755   0.0211     0
+      binance-usd 2024-12-18   0.9754   0.0231     0
+      binance-usd 2024-12-18   0.9744   0.0251     0
+      binance-usd 2024-12-19   0.9683   0.0293     0
+      binance-usd 2024-12-20   0.9544   0.0552     0
+      binance-usd 2024-12-22   0.9793   0.0181     0
+      binance-usd 2024-12-22   0.9742   0.0367     0
+      binance-usd 2024-12-25   0.9420   0.0580     0
+      binance-usd 2024-12-25   0.9790   0.0190     0
+      binance-usd 2024-12-25   0.7324   0.3643     0
+      binance-usd 2024-12-26   0.9767   0.0260     0
+      binance-usd 2024-12-27   0.9767   0.0211     0
+      binance-usd 2025-01-07   0.9663   0.0312     0
+      binance-usd 2025-01-07   0.9571   0.0409     0
+      binance-usd 2025-01-08   0.9635   0.0344     0
+      binance-usd 2025-01-09   0.9763   0.0207     0
+      binance-usd 2025-01-10   0.9754   0.0213     0
+      binance-usd 2025-01-12   0.9707   0.0272     0
+      binance-usd 2025-01-12   0.9733   0.0259     0
+      binance-usd 2025-01-14   0.9668   0.0309     0
+      binance-usd 2025-01-15   0.9762   0.0209     0
+      binance-usd 2025-01-17   0.8685   0.1504     0
+      binance-usd 2025-01-18   0.9746   0.0234     0
+      binance-usd 2025-01-19   0.9017   0.1225     0
+      binance-usd 2025-01-19   0.9674   0.0482     0
+      binance-usd 2025-01-20   0.9771   0.0208     0
+      binance-usd 2025-01-21   0.9743   0.0251     1
+      binance-usd 2025-01-22   0.9799   0.0173     0
+      binance-usd 2025-01-23   0.9791   0.0214     1
+      binance-usd 2025-01-25   0.9574   0.0406     1
+      binance-usd 2025-01-31   0.9732   0.0243     0
+      binance-usd 2025-02-01   0.9774   0.0211     0
+      binance-usd 2025-02-01   0.9695   0.0279     0
+      binance-usd 2025-02-02   0.9728   0.0445     1
+      binance-usd 2025-02-03   0.9719   0.0382     1
+      binance-usd 2025-02-05   0.9791   0.0244     0
+      binance-usd 2025-02-11   0.9786   0.0187     0
+      binance-usd 2025-02-16   0.9763   0.0263     0
+      binance-usd 2025-02-21   0.9749   0.0240     0
+      binance-usd 2025-02-21   0.9644   0.0332     0
+      binance-usd 2025-02-23   0.9799   0.0193     0
+      binance-usd 2025-02-24   0.7829   0.2730     0
+      binance-usd 2025-03-13   0.9724   0.0284     0
+      binance-usd 2025-04-06   0.9763   0.0214     0
+      binance-usd 2025-04-28   0.9665   0.0399     0
+      binance-usd 2025-05-05   0.9744   0.0242     0
+      binance-usd 2025-05-12   0.9717   0.0282     0
+      binance-usd 2025-05-15   0.9798   0.0178     0
+      binance-usd 2025-05-15   0.9783   0.0211     0
+      binance-usd 2025-05-17   0.9643   0.0371     0
+      binance-usd 2025-05-21   0.9794   0.0211     0
+      binance-usd 2025-05-23   0.9795   0.0182     0
+      binance-usd 2025-05-25   0.9722   0.0253     0
+      binance-usd 2025-05-26   0.9763   0.0253     1
+      binance-usd 2025-05-27   0.9793   0.0176     0
+      binance-usd 2025-06-02   0.9799   0.0174     0
+      binance-usd 2025-06-04   0.9795   0.0210     2
+      binance-usd 2025-06-11   0.9606   0.0377     0
+      binance-usd 2025-06-16   0.9769   0.0197     0
+      binance-usd 2025-06-17   0.9776   0.0250     0
+      binance-usd 2025-06-18   0.9744   0.0231     0
+      binance-usd 2025-06-21   0.9549   0.0443     0
+      binance-usd 2025-06-25   0.9591   0.0416     0
+      binance-usd 2025-06-26   0.9793   0.0178     0
+      binance-usd 2025-07-01   0.9734   0.0273     0
+      binance-usd 2025-07-10   0.9730   0.0350     0
+      binance-usd 2025-07-16   0.9780   0.0236     0
+      binance-usd 2025-07-17   0.9609   0.0374     0
+      binance-usd 2025-07-18   0.9796   0.0341     0
+      binance-usd 2025-07-24   0.9790   0.0185     0
+      binance-usd 2025-07-25   0.9769   0.0199     0
+      binance-usd 2025-07-28   0.9774   0.0200     0
+      binance-usd 2025-08-08   0.9645   0.0349     0
+      binance-usd 2025-08-09   0.9780   0.0207     0
+      binance-usd 2025-08-10   0.9746   0.0235     0
+      binance-usd 2025-08-14   0.9768   0.0211     0
+      binance-usd 2025-08-16   0.9671   0.0318     0
+      binance-usd 2025-08-16   0.9669   0.0325     0
+      binance-usd 2025-08-16   0.9702   0.0285     0
+      binance-usd 2025-08-17   0.9714   0.0284     0
+      binance-usd 2025-08-19   0.9681   0.0292     0
+      binance-usd 2025-08-28   0.9678   0.0293     0
+      binance-usd 2025-09-06   0.9796   0.0239     0
+      binance-usd 2025-09-07   0.9799   0.0176     0
+      binance-usd 2025-09-11   0.9722   0.0266     0
+      binance-usd 2025-09-13   0.9730   0.0242     0
+      binance-usd 2025-09-30   0.9593   0.0414     0
+      binance-usd 2025-10-01   0.9439   0.0566     0
+      binance-usd 2025-10-01   0.9217   0.0829     0
+      binance-usd 2025-10-09   0.4288   1.3326     0
+      binance-usd 2025-10-14   0.9779   0.0207     0
+      binance-usd 2025-10-14   0.9460   0.0553     0
+      binance-usd 2025-11-02   0.9797   0.0175     0
+      binance-usd 2025-11-02   0.9785   0.0205     0
+      binance-usd 2025-11-19   0.9694   0.0282     0
+      binance-usd 2025-11-24   0.9760   0.0210     0
+      binance-usd 2025-11-25   0.9709   0.0259     0
+      binance-usd 2025-12-01   0.9694   0.0297     0
+      binance-usd 2026-01-20   0.9723   0.0276     0
+      binance-usd 2026-01-24   0.9681   0.0307     0
+      binance-usd 2026-02-03   0.9679   0.0340     0
+      binance-usd 2026-02-04   0.9781   0.0225     0
+      binance-usd 2026-03-07   0.9792   0.0206     0
+      binance-usd 2026-03-07   0.9776   0.0222     0
+      binance-usd 2026-03-11   0.9784   0.0200     0
+      binance-usd 2026-04-08   0.9310   0.0713     0
+      binance-usd 2026-04-19   0.9703   0.0266     0
+      binance-usd 2026-04-21   0.9715   0.0279     0
+      binance-usd 2026-04-23   0.9747   0.0231     0
+      binance-usd 2026-04-24   0.9778   0.0196     0
+      binance-usd 2026-04-27   0.9735   0.0240     0
+      binance-usd 2026-04-27   0.9573   0.0408     0
+      binance-usd 2026-04-28   0.9712   0.0270     0
+      binance-usd 2026-04-28   0.9798   0.0176     0
+      binance-usd 2026-05-01   0.8772   0.1380     0
+      binance-usd 2026-05-07   0.9782   0.0193     0
+      binance-usd 2026-05-17   0.9800   0.0174     0
+      binance-usd 2026-05-17   0.9729   0.0243     0
+      binance-usd 2026-05-30   0.9789   0.0179     1
+      binance-usd 2026-06-08   0.9569   0.0430     0
+      binance-usd 2026-06-09   0.9762   0.0214     0
+      binance-usd 2026-06-17   0.9724   0.0257     0
+      binance-usd 2026-06-18   0.9694   0.0278     0
+      binance-usd 2026-06-25   0.9619   0.0367     0
+      binance-usd 2026-06-28   0.9646   0.0351     0
+      binance-usd 2026-06-28   0.8585   0.1609     0
+first-digital-usd 2024-03-05   0.9622   0.0424     0
+first-digital-usd 2024-04-13   0.9592   0.0532     0
+first-digital-usd 2024-08-05   0.9780   0.0358     0
+first-digital-usd 2024-08-12   0.9776   0.0217     0
+first-digital-usd 2025-02-03   0.9791   0.0275     0
+first-digital-usd 2025-03-03   0.9683   0.0295     0
+first-digital-usd 2025-04-02   0.9450   0.0541     1
+first-digital-usd 2025-04-13   0.9799   0.0174     0
+first-digital-usd 2025-05-15   0.9791   0.0197     0
+first-digital-usd 2025-08-14   0.9791   0.0244     0
+first-digital-usd 2025-08-24   0.9755   0.0229     0
+   paxos-standard 2020-09-05   0.9777   0.0195     0
+   paxos-standard 2021-01-05   0.9775   0.0217     0
+   paxos-standard 2022-01-21   0.9678   0.0395     0
+   paxos-standard 2022-11-13   0.9787   0.0238     0
+   paxos-standard 2023-03-11   0.9746   0.0228     1
+       paypal-usd 2024-07-05   0.9771   0.0245     0
+           tether 2021-01-05   0.9744   0.0252     0
+           tether 2021-02-23   0.9746   0.0264     0
+           tether 2021-04-25   0.9799   0.0264     0
+           tether 2021-05-17   0.9712   0.0309     0
+           tether 2021-05-19   0.9585   0.0853     0
+           tether 2021-11-26   0.9782   0.0213     0
+           tether 2021-12-04   0.9742   0.0296     0
+           tether 2022-01-05   0.9782   0.0244     0
+           tether 2022-01-07   0.9778   0.0213     0
+           tether 2022-01-21   0.9761   0.0256     0
+           tether 2022-01-21   0.9577   0.0413     0
+         true-usd 2020-03-12   0.9686   0.0325     0
+         true-usd 2020-03-13   0.9726   0.1411     0
+         true-usd 2021-01-05   0.9792   0.0228     0
+         true-usd 2022-01-07   0.9795   0.0196     0
+         true-usd 2022-01-21   0.9654   0.0381     0
+         true-usd 2022-06-18   0.9792   0.0223     0
+         true-usd 2023-04-26   0.9762   0.0223     0
+         true-usd 2024-01-18   0.9785   0.0261    27
+         true-usd 2024-02-15   0.9793   0.0192    13
+         true-usd 2024-03-05   0.9728   0.0267     0
+         usd-coin 2020-06-02   0.9654   0.0352     0
+         usd-coin 2021-06-07   0.9799   0.0224     0
+         usd-coin 2021-07-26   0.9769   0.0232     0
+         usd-coin 2022-01-21   0.9747   0.0262     0
+         usd-coin 2022-06-13   0.9715   0.0309     0
+         usd-coin 2023-03-11   0.9798   0.0183     2
+  Stage 1 (2020-2022): events 35, mean 3.39%, median 2.64%, t 8.43, win 100%, worst 1.9%
+  STAGE 1 VERDICT: survives (kill-only)
+  Stage 2 (out-of-sample 2023-01..2026-10): events 220, mean 4.18%, median 2.60%, t 6.45, win 100%, worst 1.7%
+  STAGE 2 VERDICT: PASS
+
+#### #430 crypto-backed/synthetic stablecoin depeg buying (buy <= 0.97)
+         id         ts      buy      ret  days
+        dai 2020-01-02   0.9623   0.0378     6
+        dai 2021-05-19   0.9270   0.1035     0
+        dai 2021-12-04   0.9697   0.0292     0
+        dai 2023-03-11   0.9528   0.0507     2
+       frax 2022-01-05   0.9648   0.0391     0
+       frax 2022-01-21   0.9437   0.0598     0
+       frax 2022-01-22   0.9588   0.0518     0
+       frax 2022-04-11   0.9577   0.0437     0
+       frax 2023-03-11   0.9436   0.0586     2
+       frax 2026-01-31   0.9672   0.0300     0
+       frax 2026-03-29   0.9572   0.0337    29
+       frax 2026-07-13   0.9637   0.0284    16
+        gho 2023-08-08   0.9418   0.0303    29
+        gho 2023-09-07   0.9684   0.0026    29
+        gho 2023-10-16   0.9641  -0.0061    29
+        gho 2023-11-15   0.9602   0.0217    29
+        gho 2024-01-09   0.9696   0.0277    17
+        gho 2024-03-05   0.9254   0.0773     5
+liquity-usd 2021-09-12   0.9623   0.0392     0
+liquity-usd 2022-01-26   0.9434   0.0720     0
+liquity-usd 2023-03-11   0.9639   0.0396     0
+       usdd 2022-06-15   0.9644   0.0349    15
+       usdd 2023-01-14   0.9693   0.0279    15
+       usdd 2023-03-11   0.9602   0.0376     3
+       usdd 2023-12-11   0.9665   0.0175    29
+       usdd 2024-04-29   0.9693   0.0317     2
+       usds 2024-10-01   0.9602   0.0467     5
+       usds 2024-10-09   0.9691   0.0286     0
+  usual-usd 2024-10-04   0.8420   0.1879     0
+  Stage 1 (2020-2022): events 10, mean 5.11%, median 4.14%, t 7.21, win 100%, worst 2.9%
+  STAGE 1 VERDICT: survives (kill-only)
+  Stage 2 (out-of-sample 2023-01..2026-10): events 19, mean 4.07%, median 3.03%, t 4.42, win 95%, worst -0.6%
+  STAGE 2 VERDICT: PASS
+
+#### #431 Binance deposit/withdrawal suspension convergence
+  suspension announcements: 4 (of 2600 items)
+     2023-07-05 Updates on the Suspension of Deposits & Withdrawals for Multichain-Bridged Tokens
+     2022-11-17 Deposits of USDC (SOL) & USDT (SOL) Token Suspended
+     2025-01-03 Suspension of TROY (BSC) Deposits (2025-01-03)
+     2024-03-06 Notice on the Intermittent Suspension of Withdrawals on Solana (SOL) Network
+  STAGE 1: event list needs token + suspension window from each announcement body (titles only here) -> not testable from titles; recorded
+
+#### #432/#433 funding-sentiment extremes (median daily funding of top-50 Binance perps)
+  #432 BTC:
+  Stage 1 (2020-2022): events 25, mean 0.71%, median 1.36%, t 0.33, win 60%, worst -33.4%
+  STAGE 1 VERDICT (#432 BTC): KILL
+  Stage 2 (out-of-sample 2023-2026): events 49, mean -0.48%, median -0.05%, t -0.51, win 49%, worst -22.1%
+  STAGE 2 VERDICT (#432 BTC): not judged — context
+  #433 ETH:
+  Stage 1 (2020-2022): events 25, mean 1.03%, median -0.72%, t 0.33, win 44%, worst -35.2%
+  STAGE 1 VERDICT (#433 ETH): KILL
+  Stage 2 (out-of-sample 2023-2026): events 49, mean -0.15%, median -0.93%, t -0.11, win 45%, worst -18.0%
+  STAGE 2 VERDICT (#433 ETH): not judged — context
+
+#### #434/#435 CME weekend-gap fill (Fri 21:00 -> Sun 22:00 UTC)
+  #434 BTC:
+  Stage 1 (2020-2022): events 79, mean -0.78%, median 1.24%, t -1.08, win 57%, worst -16.8%
+  STAGE 1 VERDICT (#434 BTC): KILL
+  Stage 2 (out-of-sample 2023-2026): events 65, mean 0.28%, median 1.78%, t 0.54, win 65%, worst -12.4%
+  STAGE 2 VERDICT (#434 BTC): not judged — context
+  #435 ETH:
+  Stage 1 (2020-2022): events 108, mean -1.65%, median 1.86%, t -2.08, win 56%, worst -30.3%
+  STAGE 1 VERDICT (#435 ETH): KILL
+  Stage 2 (out-of-sample 2023-2026): events 92, mean 0.94%, median 2.10%, t 2.07, win 67%, worst -13.5%
+  STAGE 2 VERDICT (#435 ETH): not judged — context
+
+#### #436/#437 HIP-3 weekend fade (Sat+Sun move >= 2%, fade Sunday close -> Monday close)
+  #436 commodities: markets 19 (['cash:GOLD', 'cash:SILVER', 'cash:WTI', 'flx:COPPER', 'flx:GOLD', 'flx:OIL', 'flx:PALLADIUM', 'flx:PLATINUM'])
+  Stage 1 (first half): events 146, mean -0.42%, median -0.12%, t -1.58, win 47%, worst -9.0%
+  STAGE 1 VERDICT (#436 commodities): KILL
+  Stage 2 (second half, out-of-sample): events 64, mean -0.42%, median -0.23%, t -1.43, win 45%, worst -6.1%
+  STAGE 2 VERDICT (#436 commodities): not judged — context
+  #437 stock indices: markets 4 (['km:US500', 'mkts:US500', 'xyz:SP500', 'xyz:TQQQ'])
+  Stage 1 (first half): events 1, mean 0.19%, median 0.19%, t nan, win 100%, worst 0.2%
+  STAGE 1 VERDICT (#437 stock indices): survives (kill-only)
+  Stage 2 (second half, out-of-sample): events 1, mean 0.66%, median 0.66%, t nan, win 100%, worst 0.7%
+  STAGE 2 VERDICT (#437 stock indices): FAIL
+
+#### #438 token-split / redenomination arbitrage: not testable (pre-registered desk result)
+
+#### #439 options-expiry unwind (last Friday of the month, 08:00 UTC)
+  BTCUSDT:
+  Stage 1: events 36, mean -0.59%, median -0.60%, t -0.82, win 39%, worst -14.3%
+  STAGE 1 VERDICT (#439 BTCUSDT): KILL
+  Stage 2 (out-of-sample): events 45, mean 0.16%, median 0.22%, t 0.28, win 51%, worst -8.6%
+  STAGE 2 VERDICT (#439 BTCUSDT): not judged — context
+  ETHUSDT:
+  Stage 1: events 36, mean -1.07%, median -0.06%, t -0.92, win 50%, worst -14.2%
+  STAGE 1 VERDICT (#439 ETHUSDT): KILL
+  Stage 2 (out-of-sample): events 45, mean -1.31%, median -0.84%, t -1.68, win 38%, worst -19.2%
+  STAGE 2 VERDICT (#439 ETHUSDT): not judged — context
+
+#### #440 funding-settlement drift (2 h before -> 1 h after, |last funding| >= 0.03%)
+  BTCUSDT:
+  Stage 1: events 552, mean -0.15%, median -0.16%, t -1.95, win 43%, worst -11.3%
+  STAGE 1 VERDICT (#440 BTCUSDT): KILL
+  Stage 2 (out-of-sample): events 91, mean -0.26%, median -0.23%, t -2.17, win 43%, worst -4.0%
+  STAGE 2 VERDICT (#440 BTCUSDT): not judged — context
+  ETHUSDT:
+  Stage 1: events 668, mean -0.30%, median -0.24%, t -3.45, win 44%, worst -15.0%
+  STAGE 1 VERDICT (#440 ETHUSDT): KILL
+  Stage 2 (out-of-sample): events 109, mean -0.33%, median -0.25%, t -2.78, win 38%, worst -4.0%
+  STAGE 2 VERDICT (#440 ETHUSDT): not judged — context
+
+#### #441 US spot-ETF fix window (18:00 -> 21:00 UTC, direction of the previous US session)
+  BTCUSDT:
+  Stage 1: events 253, mean 0.05%, median 0.02%, t 0.64, win 51%, worst -5.7%
+  STAGE 1 VERDICT (#441 BTCUSDT): KILL
+  Stage 2 (out-of-sample): events 478, mean -0.02%, median -0.05%, t -0.54, win 46%, worst -4.8%
+  STAGE 2 VERDICT (#441 BTCUSDT): not judged — context
+  ETHUSDT:
+  Stage 1: events 253, mean -0.11%, median -0.04%, t -1.26, win 47%, worst -11.5%
+  STAGE 1 VERDICT (#441 ETHUSDT): KILL
+  Stage 2 (out-of-sample): events 478, mean -0.01%, median -0.02%, t -0.13, win 49%, worst -6.9%
+  STAGE 2 VERDICT (#441 ETHUSDT): not judged — context
+
+#### #442 Coinbase premium extremes (3-day hold)
+  BTC-USD:
+  Stage 1: events 73, mean 0.05%, median 0.62%, t 0.06, win 55%, worst -21.2%
+  STAGE 1 VERDICT (#442 BTC-USD): KILL
+  Stage 2 (out-of-sample): events 110, mean 0.86%, median 0.34%, t 2.14, win 52%, worst -9.6%
+  STAGE 2 VERDICT (#442 BTC-USD): not judged — context
+  ETH-USD:
+  Stage 1: events 77, mean 0.95%, median 0.71%, t 0.98, win 57%, worst -24.4%
+  STAGE 1 VERDICT (#442 ETH-USD): KILL
+  Stage 2 (out-of-sample): events 111, mean 0.47%, median 0.75%, t 0.84, win 56%, worst -14.3%
+  STAGE 2 VERDICT (#442 ETH-USD): not judged — context

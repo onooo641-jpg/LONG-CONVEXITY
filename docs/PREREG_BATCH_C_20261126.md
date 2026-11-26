@@ -73,3 +73,8 @@ Mechanical fix before the verdict: CoinGecko points are seconds off the hour, so
 **Mechanical fix (2026-11-26, before #440's data arrived):** #439–#441 read hourly closes by bar *open* time, so every window sat 1 h late.
 `_px()` now reads the price at T as the close of the bar opening at T−1h. #439 and #441 re-run: still KILL (BTC −0.59% / +0.05%, t −0.82 / 0.64;
 ETH −1.07% / −0.11%). #440 has been run only with the fix.
+
+### Final (2026-11-26)
+- #440 (with the timing fix; funding from the same Binance archive files via job `ubatchd`, since `ubatchc2` hung twice): **KILL**. BTC 552 events −0.15% t −1.95; ETH −0.30% t −3.45. Price moves *with* the paying side, not against it.
+- #442 (Coinbase daily via job `ucb442`): **KILL**. BTC 73 events +0.05% t 0.06; ETH +0.95% t 0.98.
+- **Batch C: 0 of 12 pass.** Output `docs/jx_runs/batch_c_20261126.txt` (re-run identical).
