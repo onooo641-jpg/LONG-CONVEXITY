@@ -1881,6 +1881,16 @@ def job_ubatchh():
 JOBS["ubatchh"] = job_ubatchh
 
 
+def job_ubatchh2():
+    """#468 confirmation pull (non-prop workstream C; defined in fetch_uncharted.py)."""
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from fetch_uncharted import job_ubatchh2 as _j
+    _j()
+
+
+JOBS["ubatchh2"] = job_ubatchh2
+
+
 def main(argv):
     OUT.mkdir(parents=True, exist_ok=True)
     for name in argv:

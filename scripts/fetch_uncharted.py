@@ -2055,6 +2055,58 @@ def job_ubatchh():
     save("batchh_yahoo_1d.parquet", pd.DataFrame(px, columns=["sym", "t", "open", "close", "adj"]))
 
 
+def job_ubatchh2():
+    """#468 confirmation (docs/PREREG_468_CONFIRM_20261126.md): unseen Binance USDT perps (listed before 2023) 1h klines + funding
+    2023-01..2026-10, and Hyperliquid 1h candleSnapshot for coins in either universe."""
+    import re as _re
+    from concurrent.futures import ThreadPoolExecutor
+    t0 = time.time()
+    syms, marker = [], ""
+    while True:
+        st, raw = _raw_get("https://s3-ap-northeast-1.amazonaws.com/data.binance.vision?delimiter=/&prefix=data/futures/um/monthly/klines/"
+                           + (f"&marker={urllib.parse.quote(marker)}" if marker else ""), timeout=60)
+        txt = raw.decode(errors="ignore") if raw else ""
+        got = _re.findall(r"<Prefix>data/futures/um/monthly/klines/([^/<]+)/</Prefix>", txt)
+        syms += got
+        if "<IsTruncated>true</IsTruncated>" not in txt or not got:
+            break
+        marker = f"data/futures/um/monthly/klines/{got[-1]}/"
+    seen = {f"{a}USDT" for a in ALTS_D}
+    bad = ("DOM", "DEFI", "BLUEBIRD", "FOOTBALL")
+    stab = {"USDCUSDT", "BUSDUSDT", "TUSDUSDT", "FDUSDUSDT", "USDPUSDT"}
+    cand = sorted({x for x in syms if x.endswith("USDT") and "_" not in x and x not in seen and x not in stab and not any(b in x for b in bad)})
+    print(f"  archive symbols {len(syms)}, USDT candidates {len(cand)}", flush=True)
+    with ThreadPoolExecutor(8) as ex:
+        has = list(ex.map(lambda x: bool(_bn_month("k1h", x, "2022-12")), cand))
+    uni = [x for x, h in zip(cand, has) if h]
+    print(f"  listed before 2023 (2022-12 file present): {len(uni)}", flush=True)
+    months = [f"{y}-{m:02d}" for y in range(2023, 2027) for m in range(1, 13) if f"{y}-{m:02d}" <= "2026-10"]
+    for kind, name in (("k1h", "batchh2_unseen_1h.parquet"), ("fund", "batchh2_unseen_funding.parquet")):
+        tasks = [(x, m) for x in uni for m in months]
+        rows = []
+        with ThreadPoolExecutor(8) as ex:
+            for (x, m), res in zip(tasks, ex.map(lambda a: _bn_month(kind, a[0], a[1]) if time.time() - t0 < 2.5 * 3600 else [], tasks)):
+                rows += [(x, t, v) for t, v in res]
+        df = pd.DataFrame(rows, columns=["sym", "t", "close" if kind == "k1h" else "rate"])
+        print(f"  {name}: {df['sym'].nunique()} symbols, {len(df)} rows ({time.time() - t0:.0f}s)", flush=True)
+        save(name, df)
+    meta = get("https://api.hyperliquid.xyz/info", body={"type": "meta"}, tries=3, timeout=60) or {}
+    hl = {u.get("name") for u in meta.get("universe", [])}
+    want = sorted({x[:-4] for x in uni} | set(ALTS_D))
+    alias = {c: (c if c in hl else (f"k{c[4:]}" if c.startswith("1000") and f"k{c[4:]}" in hl else None)) for c in want}
+    end = int(time.time() * 1000)
+    rows = []
+    for c, h in alias.items():
+        if not h:
+            continue
+        d = get("https://api.hyperliquid.xyz/info", body={"type": "candleSnapshot", "req": {"coin": h, "interval": "1h", "startTime": end - 5000 * 3600 * 1000, "endTime": end}}, tries=2, timeout=30) or []
+        rows += [(c, int(k["t"]) // 1000, float(k["c"])) for k in d if isinstance(k, dict)]
+        time.sleep(0.2)
+    df = pd.DataFrame(rows, columns=["coin", "t", "close"])
+    print(f"  hyperliquid 1h: {df['coin'].nunique()} coins, {len(df)} rows", flush=True)
+    save("batchh2_hl_1h.parquet", df)
+
+
 def job_uverify():
     """Verification V: Binance spot 1h klines for stablecoin/USDT pairs (archive), 2020-01..2026-10."""
     import io
@@ -2097,4 +2149,4 @@ def job_uprobe():
 
 
 JOBS = {"uprobe": job_uprobe, "u383vaults": _safe(job_u383vaults), "u384lst": _safe(job_u384lst), "u385hyperp": _safe(job_u385hyperp),
-        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive, "uhip3": _safe(job_uhip3), "uw3b": _safe(job_uw3b), "udistinct": _safe(job_udistinct), "unav": _safe(job_unav), "udln": _safe(job_udln), "udln2": _safe(job_udln2), "ubatcha": _safe(job_ubatcha), "urates": _safe(job_urates), "ubatchb": _safe(job_ubatchb), "ubatchc": _safe(job_ubatchc), "ubatchc2": _safe(job_ubatchc2), "uverify": _safe(job_uverify), "ubatchd": _safe(job_ubatchd), "ucb442": _safe(job_ucb442), "upendle": _safe(job_upendle), "ubatchf": _safe(job_ubatchf), "ubatchf2": _safe(job_ubatchf2), "ubatchf3": _safe(job_ubatchf3), "ubatchg": _safe(job_ubatchg), "ubatchh": _safe(job_ubatchh)}
+        "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive, "uhip3": _safe(job_uhip3), "uw3b": _safe(job_uw3b), "udistinct": _safe(job_udistinct), "unav": _safe(job_unav), "udln": _safe(job_udln), "udln2": _safe(job_udln2), "ubatcha": _safe(job_ubatcha), "urates": _safe(job_urates), "ubatchb": _safe(job_ubatchb), "ubatchc": _safe(job_ubatchc), "ubatchc2": _safe(job_ubatchc2), "uverify": _safe(job_uverify), "ubatchd": _safe(job_ubatchd), "ucb442": _safe(job_ucb442), "upendle": _safe(job_upendle), "ubatchf": _safe(job_ubatchf), "ubatchf2": _safe(job_ubatchf2), "ubatchf3": _safe(job_ubatchf3), "ubatchg": _safe(job_ubatchg), "ubatchh": _safe(job_ubatchh), "ubatchh2": _safe(job_ubatchh2)}

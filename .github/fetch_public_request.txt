@@ -1,3 +1,3 @@
 # jobs for scripts/fetch_public.py (one per line)
-# Batch H Yahoo pull (workstream C)
-ubatchh
+# #468 confirmation pull (workstream C)
+ubatchh2
