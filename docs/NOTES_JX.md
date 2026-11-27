@@ -938,6 +938,19 @@ $38,034; bar: real ≥ $19,017, dip ≥ −$5,794.
     `MNQ=F` bars: 94.9% of 823 common minutes within 1 point at shift 0, 0.0% at -2, -1, +1, +2 (ledger XT1).
   - Not yet seen on the real server: a fill, `cancel_and_bracket`, flatten, and a non-empty positions answer.
 
+### 2026-11-27 (local session): Sim101 bracket test
+- Code: commit `10e4d028` (cloud session), read before running. 35 CrossTrade/multifirm/collect tests passed; Sim101 was flat
+  with no orders beforehand.
+- Fixed before running: the collector judged every journal row of the New York day, so this run would have been logged FAIL
+  because of the earlier round trip's `roundtrip_failed`. `-Collect` now passes `--since <run start>`; the copied journal is
+  still the whole day. This also replaces the warning above that tonight's dry-run line would say FAIL because of that row.
+- Result: PASS (exit 0). Buy limit 26765.5 filled at 26761.25; stop 26725.5 and target 26805.5 placed as one OCO pair; flatten
+  sold at 26759. Afterwards: no position, no active order, Sim101 realised P&L -$4.50 (sim money).
+- In NinjaTrader's log the stop was accepted about 1.3 s after the fill (one sample, ledger XT2). Both exits are GTC.
+- The non-empty positions answer, `cancel_and_bracket` and flatten have now been exercised on the real server (sim). Still
+  not seen: a stop or target triggering, a partial fill, a short entry, the engine's own end-of-day path with a live position.
+- NinjaTrader's log also shows a short connection loss at 14:15 PC time, restored within seconds.
+
 ## 2026-12 — CrossTrade practice test: run log (written by `scripts/crosstrade_collect.py`)
 - 2026-11-27 check: **FAIL** (exit 1; 0 rows: no journal rows). Journal: `docs/jx_runs/crosstrade_test_journal_20261127.jsonl`.
 - 2026-11-27 check: **FAIL** (exit 1; 0 rows: no journal rows). Journal: `docs/jx_runs/crosstrade_test_journal_20261127.jsonl`.

@@ -10,7 +10,7 @@ Detailed technical guide: `docs/GO_LIVE_MULTIFIRM.md`. Topstep's own path: `docs
 | Bot connector for Lucid / DayTraders / FFN | **Built**: `bridge/crosstrade.py` (NinjaTrader 8 via the CrossTrade NT8 Add-On). First run against the real server 2026-11-27 (sim): check and round trip pass after two fixes |
 | Cross-account anti-hedge check | **Built**: engine-scoped claims in `bridge/hedge.py`, shared file `BRIDGE_HEDGE_REGISTRY` |
 | Firm rules in the bot | **Built**: `FIRM_PRESETS` in `bridge/config.py` (LucidFlex/LucidDaily 50K, DayTraders 100K/150K Static, Topstep $3K) |
-| Practice test (free) | **Running.** 2026-11-27: connected check and Sim101 round trip pass; daily dry run scheduled until 2026-12-05; no dry-run day finished yet |
+| Practice test (free) | **Running.** 2026-11-27: connected check and Sim101 round trip pass; Sim101 bracket test passes; daily dry run scheduled until 2026-12-05; no dry-run day finished yet |
 | Live trading on the new firms | Not before the practice test and a dry run reconcile |
 
 ## 2. Facts and where they come from
@@ -54,18 +54,18 @@ Only Jx can do sign-ups, type passwords and spend money. Everything else is for 
       8.1.9.1 and the CrossTrade Add-On 1.14.2 were found already installed (details in `docs/NOTES_JX.md`).
 - [x] 2026-11-27 NinjaTrader 8 desktop installed and logged in. MNQ 12-26 1-minute bars arrive live (372 bars via the
       connector, newest closed bar 1.5 min old). No purchase was needed.
-- [x] 2026-11-27 CrossTrade Add-On installed and connected. Trial start date: **not recorded yet** (the Add-On was already
-      installed on 27 Nov, earlier than the planned 29/30 Nov; ask Jx, because it sets the trial's last day).
+- [x] 2026-11-27 CrossTrade Add-On installed and connected. Trial started **2026-11-27** (Jx), earlier than the
+      planned 29/30 Nov, so it should end about 4 Dec; the exact expiry time has not been checked.
 - [x] 2026-11-27 Key saved on the PC as the Windows user variable `CROSSTRADE_API_KEY`.
 - [x] 2026-11-27 `-Step check -Account Sim101`: 17/17 PASS, after the bar-request fix.
   - [x] 2026-11-27 Bar timing confirmed without the chart (Jx could not see it): against Yahoo's 1-minute MNQ bars, shift 0 matches
         and no other shift does (ledger XT1). The NT8 chart itself was not looked at.
 - [x] 2026-11-27 `-Step roundtrip` on Sim101: PASS, after the instrument-name fix.
 - [x] 2026-11-27 Daily `-Step dryrun` scheduled: Mon-Fri 22:25 Malaysia time, until 2026-12-05. First run 2026-11-27.
-- [ ] **Bracket test on Sim101** (added 2026-11-27 by the cloud session): `scripts\crosstrade_test.ps1 -Step brackettest -Account Sim101 -Collect`
-      while MNQ trades. It buys 1 contract at the market on the sim account and requires the stop and target to appear at the
-      intended prices; it then flattens and requires nothing left. This is the one live-path step the round trip and dry run never
-      reach (the stop and target go on only after a fill). Must PASS before `--live`.
+- [x] 2026-11-27 **Bracket test on Sim101** (added by the cloud session; run by the local session, 16:14 PC time): **PASS**, first
+      try. `scripts\crosstrade_test.ps1 -Step brackettest -Account Sim101 -Collect`. 1 contract bought and filled; one stop and one
+      target (OCO) appeared at the intended prices; flatten left no position and no order (also checked by a separate read and
+      NinjaTrader's log). Not covered: the stop or target actually triggering, a partial fill, a short entry.
 - [ ] Save each day's journal to `docs/jx_runs/crosstrade_test_journal_<YYYYMMDD>.jsonl` and add a dated line to `docs/NOTES_JX.md`
       (done by `-Collect`; tick after the last dry-run day).
 - [ ] Reconcile the dry run against the research engine (`scripts/reconcile.py`). Fills come from NinjaTrader's export.
