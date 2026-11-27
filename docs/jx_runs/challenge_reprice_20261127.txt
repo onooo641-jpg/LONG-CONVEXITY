@@ -1,0 +1,9 @@
+Registered bar: real >= $19,017, coin flip >= $5,000, dip >= $-5,794
+Two rounds of +$3,000 from $0 against a static loss limit on worst open P&L; fixed $3,000 payout; $900 risk scaled to the cap.
+
+Past Labs Drop #003: $49, 10 micros, $1,000 MLL (PS3b check)
+   real $  24,757 | coin flip $   7,674 (84%) | dip $  -1,176 | QUALIFIES | break-even $68
+$3K Challenge on sale: $199, 50 micros, $1,000 MLL (= Labs Undead)
+   real $  -7,904 | coin flip $ -33,053 (0%) | dip $ -17,516 | fails | break-even $89
+Labs Slasher: $65, 20 micros, $500 MLL (target/payout ASSUMED $3K)
+   real $   4,065 | coin flip $ -15,680 (2%) | dip $  -7,020 | fails | break-even $20

@@ -72,6 +72,11 @@ CrossTrade Add-On open and connected. A PowerShell window opens and runs until ~
 Also once: Control Panel → Power Options → Change plan settings → Change advanced power settings → Sleep →
 **Allow wake timers → Enable**.
 
+**US daylight saving:** US clocks move forward on **Sun 14 March 2027**. The planning chat said 2027-03-08; the rule (second Sunday of
+March) gives 14 March, and 8 March was the 2026 date. From then the US session is about **21:25–04:00 Malaysia time**. The
+scheduled task's wake time is fixed in local time when it is registered, so re-run `scripts\crosstrade_schedule.ps1` after the
+change, and again after US clocks go back (Sun 7 Nov 2027).
+
 To stop it early:
 ```bash
 cd C:\trading\LONG-CONVEXITY; powershell -ExecutionPolicy Bypass -File scripts\crosstrade_schedule.ps1 -Remove

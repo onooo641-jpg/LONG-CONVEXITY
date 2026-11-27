@@ -847,6 +847,8 @@ $38,034; bar: real ≥ $19,017, dip ≥ −$5,794.
 3. a decision on porting the bot to MT5 for CTI.
 - **Overnight (prop search 3 part 2):**
   - The **Topstep $3K Challenge ($49) qualifies** on the corrected engine: $24.8K, flip $7.7K, dip −$1.2K; break-even $68.
+    **Superseded 2026-11-27:** the $49 / 10-micro version was past Labs Drop #003 and is not on sale. The version on sale ($199 / 50 micros)
+    fails; see the 2026-11-27 re-price entry.
   - Start money:
     - FFN 50K/100K/150K at the promo: median −$0.7K to −$1.0K, worst −$4.1K to −$5.6K;
     - LucidFlex ES: worst −$2.4K;
@@ -857,8 +859,8 @@ $38,034; bar: real ≥ $19,017, dip ≥ −$5,794.
     Slow: first payout after about a year, and about half of the starts are still down at 12 months.
   - **FFN 50K is borderline**: it passes only if resets are also bought at the ≥ 50% promo price. FFN 100K/150K at 50% off fail on the dip.
   - City Traders Imperium is parked.
-  - **Qualifying set now:** LucidFlex 50K (NQ, ES), Topstep 50K Consistency, LucidDaily, Topstep $3K Challenge, DayTraders 100K/150K
-    Static. New firm: DayTraders.
+  - **Qualifying set now:** LucidFlex 50K (NQ, ES), Topstep 50K Consistency, LucidDaily, Topstep $3K Challenge (past $49 drop, not on
+    sale; removed 2026-11-27), DayTraders 100K/150K Static. New firm: DayTraders.
   - Connectors needed before going live: Lucid (CrossTrade), DayTraders and FFN (Rithmic); the bot today speaks only ProjectX.
 
 ## 2026-11-27 — go-live: CrossTrade connector for Lucid and DayTraders (`docs/GO_LIVE_MULTIFIRM.md`)
@@ -981,3 +983,24 @@ $38,034; bar: real ≥ $19,017, dip ≥ −$5,794.
 - **Fill quality is bounded without real money; timing is the big risk.**
   - Timing: 1 minute late gives $24,416. The free nightly dry run measures it.
   - Live money is then needed only for payouts and rule enforcement.
+
+## 2026-11-27 — official-page corrections from the planning chat (docs and figures only)
+1. **Topstep $3K Challenge re-priced** (`docs/PREREG_CHALLENGE_REPRICE_20261127.md`, `docs/jx_runs/challenge_reprice_20261127.txt`,
+   re-run identical, ledger CR1).
+   - The $49 / 10-micro version was **past Labs Drop #003**.
+   - On sale (help.topstep.com 18466040): **$199, 50 micros (5 minis), $1,000 static MLL**, the same as Labs Undead.
+   - Result: −$7,904 real, coin flip −$33,053, dip −$17,516. **Fails**; break-even $89.
+   - Why: with 50 micros the $900 risk is no longer scaled down, so a $1,000 limit fails on about one loss.
+   - Labs Slasher ($65, 20 micros, $500 MLL; target and payout assumed $3K): $4,065, flip −$15,680. Fails.
+   - The past $49 figure (PS2C/PS3b) is kept but marked as not on sale.
+   - **Qualifying set is now 6 products**, without the $3K Challenge.
+   - Not tested (would need its own pre-registration): running the $199 version capped at 10 micros.
+2. **Starter Challenge** (help.topstep.com 18482122): $10 one-time, first-time customers only, 1 micro, $100 static MLL, 2 free
+   resets, fixed $100 payout.
+   - Added to `START_HERE.md` 2b as the cheapest test of payout, rule enforcement and the bot end to end. It is not a profit test.
+   - Bots are allowed via the API (TopstepX API page 11187768); Challenges are not named explicitly.
+3. **Lucid commission verified** (support.lucidtrading.com 11508978): MNQ $0.50 per side, $1.00 round trip, against the model's
+   $1.24. Lucid figures are slightly conservative. Exchange-fee inclusion is not stated.
+4. **US daylight saving:** the window becomes about 21:25–04:00 Malaysia time from **Sun 14 March 2027**.
+   - The chat's 2027-03-08 was the 2026 date; the rule is the second Sunday of March.
+   - Re-register the scheduled task then (`CROSSTRADE_PRACTICE_JX.md`, `GO_LIVE_MULTIFIRM.md`).

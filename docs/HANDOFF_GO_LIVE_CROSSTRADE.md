@@ -6,7 +6,7 @@ Detailed technical guide: `docs/GO_LIVE_MULTIFIRM.md`. Topstep's own path: `docs
 ## 1. Where things stand (one line each)
 | Item | Status |
 |---|---|
-| Which products qualify | 7 products (Lucid, DayTraders, Topstep $3K, …), from `docs/PREREG_PROP_SEARCH3_20261126.md` (table in `GO_LIVE_MULTIFIRM.md`) |
+| Which products qualify | 6 products (Lucid, DayTraders, Topstep 50K …), from `docs/PREREG_PROP_SEARCH3_20261126.md`; the Topstep $3K Challenge dropped out 2026-11-27 (the $49 version was a past Labs drop; $199 on sale fails, ledger CR1) |
 | Bot connector for Lucid / DayTraders / FFN | **Built**: `bridge/crosstrade.py` (NinjaTrader 8 via the CrossTrade NT8 Add-On). First run against the real server 2026-11-27 (sim): check and round trip pass after two fixes |
 | Cross-account anti-hedge check | **Built**: engine-scoped claims in `bridge/hedge.py`, shared file `BRIDGE_HEDGE_REGISTRY` |
 | Firm rules in the bot | **Built**: `FIRM_PRESETS` in `bridge/config.py` (LucidFlex/LucidDaily 50K, DayTraders 100K/150K Static, Topstep $3K) |
@@ -20,6 +20,7 @@ Detailed technical guide: `docs/GO_LIVE_MULTIFIRM.md`. Topstep's own path: `docs
 | Pro = **$49/month or $469/year**; Standard $29/month has no API | Third-party: Jx's Google search 2026-11-27 (citing CrossTrade pricing page, QuantVPS, Copygram). Confirm at checkout |
 | CrossTrade **7-day free trial**, no card, does not auto-renew, includes the REST API | Jx, 2026-11-27 (third-party). The connected check confirms API access on day one |
 | Jx's NinjaTrader account: simulation account `DEMO10100109`, $50K sim balance, free trial "expires in 13 days" on 2026-11-27 (ends ≈ 2026-12-10) | Jx's screenshot, 2026-11-27 |
+| Lucid commission MNQ **$0.50 per side ($1.00 round trip)**; the model uses $1.24, so Lucid figures are slightly conservative. Whether exchange fees are included is not stated | Official: support.lucidtrading.com article 11508978 (read in the planning chat 2026-11-27) |
 | Rate limit 3 requests/s per CrossTrade user (burst 20), shared by every engine | Official: crosstrade.io/docs/api/rate-limiting |
 | NT8 stamps a bar at its close (connector shifts to the open) | The server says `timestampConvention: bar_close` (2026-11-27). Checked against Yahoo 1-minute bars (ledger XT1); NT8 chart not looked at |
 | No direct Rithmic client: Rithmic needs conformance testing for a custom app | Reason CrossTrade was chosen for all three firms |

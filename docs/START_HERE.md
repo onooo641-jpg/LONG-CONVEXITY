@@ -51,6 +51,15 @@ Plain-language guide. Sorted from "what makes money" to "what failed". Every num
 starts), ~$3.9K for the worst start (~$4.2K if live execution turns out worse than modelled).** This pays evaluation fees and resets,
 not trading losses. All figures use the corrected model (loss limit checked on open P&L; `docs/AUDIT_PRE_LIVE_20261126.md`).
 
+**Cheapest payout and enforcement test (added 2026-11-27):** the Topstep **Starter Challenge**, $10 one-time, first-time Topstep
+customers only. It has 1 micro, a $100 static loss limit, 2 free resets and a fixed $100 payout (help.topstep.com 18482122).
+- What it proves end to end: the bot trades a real Topstep account, the rules are enforced as modelled, and a payout actually
+  arrives.
+- It is **not** a profit test: 1 micro is far below the strategy's sizing. Running it needs a 1-micro preset.
+- Bots: the TopstepX API page (11187768) allows bots via the API; Challenges are not named explicitly.
+- The **$3K Challenge** is no longer a cheap option. The $49 version was a past Labs drop; the version on sale is $199 / 50 micros
+  and fails (ledger CR1).
+
 **Status:** no live trades in the repo yet. The friend runs `scripts/export_live_trades.py` and pushes `data/live/` (after `git pull` for the
 tick fix). The bot connects to TopstepX.
 

@@ -21,7 +21,7 @@ at checkout.
 | LucidDaily 50K | $85.40 | $35.8K | −$4.5K | — |
 | DayTraders 100K Static | $75 + $5 | $22.0K | −$4.0K | ~13 months |
 | DayTraders 150K Static | $90 + $5 | $48.4K | −$3.4K | ~12 months |
-| Topstep $3K Challenge | $49 | $24.8K | −$1.2K | (Topstep path, no new connector) |
+| ~~Topstep $3K Challenge~~ | ~~$49~~ | ~~$24.8K~~ | ~~−$1.2K~~ | **Not on sale.** $49 was past Labs Drop #003. On sale now: $199 / 50 micros, which fails (−$7.9K; ledger CR1) |
 
 ## How the bot reaches each firm
 
@@ -119,9 +119,20 @@ Windows machine). The key comes from the Windows user variable `CROSSTRADE_API_K
 6. `--live` only after the journals reconcile.
 
 ## Rules the guards now know per firm (`bridge/config.py: FIRM_PRESETS`)
+- **Costs:** Lucid MNQ commission is **verified** at $0.50 per side, $1.00 round trip (support.lucidtrading.com 11508978; exchange-fee
+  inclusion not stated). The model uses $1.24, so Lucid figures are slightly conservative.
+- The `Topstep $3K Challenge` preset (10 micros) describes the past $49 Labs drop, which is not on sale. It is kept as written.
 - **LucidFlex 50K:** EOD trailing; the floor stops at start + $100 after +$2,100; DLL $1,200 (DLL ON); 40% consistency.
 - **DayTraders Static:** the floor never moves. The firm checks breaches on open losses, and the guard watches equity accordingly.
 - Guards stay **off** by default in both phases, as in `docs/GO_LIVE.md`. The profit-target stop always applies.
+
+## Run times
+- Now (US standard time): 22:25 to about 05:00 Malaysia time, Mon–Fri. The PC may sleep outside that window; wake timers must
+  be enabled.
+- **US daylight saving:** US clocks move forward on **Sun 14 March 2027**. The planning chat said 2027-03-08; the rule (second Sunday of
+  March) gives 14 March, and 8 March was the 2026 date. From then the US session is about **21:25–04:00 Malaysia time**. The
+  scheduled task's wake time is fixed in local time when it is registered, so re-run `scripts\crosstrade_schedule.ps1` after the
+  change, and again after US clocks go back (Sun 7 Nov 2027).
 
 ## Known gaps
 - The CrossTrade connector is unverified against a live server until step 4.
