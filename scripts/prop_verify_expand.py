@@ -13,16 +13,12 @@ from playwright.sync_api import sync_playwright
 
 OUT = Path(__file__).resolve().parent.parent / "data" / "public" / "propverify"
 PAGES = [
-    # Prop search 3, overnight: City Traders Imperium plan tables (size tabs) + help centre; DayTraders pricing (plan and size tabs)
-    "https://citytradersimperium.com/1-step-challenge/",
-    "https://citytradersimperium.com/2-step-challenge/",
-    "https://citytradersimperium.com/instant-funding/",
-    "https://citytradersimperium.com/funded-account-payouts/",
-    "https://citytradersimperium.com/ea-trading-rules/",
-    "https://helpcenter.citytradersimperium.com/en/collections/16756313-getting-funded",
-    "https://helpcenter.citytradersimperium.com/en/collections/16756321-essential-rules-guidelines",
+    # Go-live: CrossTrade API reference (NinjaTrader 8 REST via the CrossTrade NT8 Add-On), crawled for every docs/api page
+    "https://crosstrade.io/docs",
+    "https://crosstrade.io/docs/api/overview",
+    "https://crosstrade.io/docs/api/positions",
 ]
-CRAWL = ("helpcenter.citytradersimperium.com/en/articles/",)
+CRAWL = ("crosstrade.io/docs/api", "crosstrade.io/docs/webhooks", "crosstrade.io/docs/getting-started", "crosstrade.io/docs/add-on")
 TAB = re.compile(r"^\$?\s?(2\.5|5|10|25|50|75|100|150|200|250|300)\s?K$|^(Static|Trail|EOD|S2F|S2L|Instant|Live|1-Step|2-Step)$", re.I)
 
 
