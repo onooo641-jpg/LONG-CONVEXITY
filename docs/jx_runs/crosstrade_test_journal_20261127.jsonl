@@ -4,3 +4,8 @@
 {"bracket": {"action": "Buy", "instrument": "MNQ 12-26", "quantity": 1, "stopLoss": 18745.75, "takeProfit": 18785.75}, "event": "entry_watch", "nt_order_id": "e0b2ad6f80744f87a35afe3883779d10", "order_id": "lc-0bd8e8d6241b41d1af5f", "ts": "2026-11-27T05:14:18+00:00"}
 {"entry": 18765.75, "event": "roundtrip_placed", "last": 26808.25, "order_id": "lc-0bd8e8d6241b41d1af5f", "ts": "2026-11-27T05:14:18+00:00"}
 {"account_id": null, "account_name": "Sim101", "at": "2026-11-27T05:14:21.460527+00:00", "contract_id": "MNQ 12-26", "event": "roundtrip_ok", "ok": true, "order_id": "lc-0bd8e8d6241b41d1af5f", "ts": "2026-11-27T05:14:21+00:00"}
+{"bracket": {"action": "Buy", "instrument": "MNQ 12-26", "quantity": 1, "stopLoss": 26725.5, "takeProfit": 26805.5}, "event": "entry_watch", "nt_order_id": "8aee2cfaaa71431ea47ac10754936ebf", "order_id": "lc-3138d66077e84078a371", "ts": "2026-11-27T08:14:52+00:00"}
+{"bracket": {"action": "Buy", "instrument": "MNQ 12-26", "quantity": 1, "stopLoss": 26725.5, "takeProfit": 26805.5}, "entry": 26765.5, "event": "bracket_probe_placed", "last": 26755.5, "order_id": "lc-3138d66077e84078a371", "ts": "2026-11-27T08:14:52+00:00"}
+{"cancelled": 0, "entry_state": "Filled", "event": "protected", "filled": 1, "oco_id": "947d3dc126", "order_id": "lc-3138d66077e84078a371", "partial": false, "stop": 26725.5, "target": 26805.5, "ts": "2026-11-27T08:14:53+00:00", "warning": null}
+{"event": "bracket_probe_protected", "oco": ["947d3dc126", "947d3dc126"], "position": 1, "stop": 26725.5, "target": 26805.5, "ts": "2026-11-27T08:14:55+00:00"}
+{"account": "Sim101", "at": "2026-11-27T08:14:57.365163+00:00", "contract_id": "MNQ 12-26", "event": "bracket_probe_ok", "ts": "2026-11-27T08:14:57+00:00"}

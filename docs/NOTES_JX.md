@@ -944,3 +944,4 @@ $38,034; bar: real ≥ $19,017, dip ≥ −$5,794.
 - 2026-11-27 check: **PASS** (exit 0; 0 rows: no journal rows). Journal: `docs/jx_runs/crosstrade_test_journal_20261127.jsonl`.
 - 2026-11-27 roundtrip: **FAIL** (exit 1; 3 rows: entry_watch x1, roundtrip_failed x1, roundtrip_placed x1; errors: roundtrip_failed x1). Journal: `docs/jx_runs/crosstrade_test_journal_20261127.jsonl`.
 - 2026-11-27 roundtrip: **FAIL** (exit 0; 6 rows: entry_watch x2, roundtrip_failed x1, roundtrip_ok x1, roundtrip_placed x2; errors: roundtrip_failed x1). Journal: `docs/jx_runs/crosstrade_test_journal_20261127.jsonl`.
+- 2026-11-27 brackettest: **PASS** (exit 0; 5 rows: bracket_probe_ok x1, bracket_probe_placed x1, bracket_probe_protected x1, entry_watch x1, protected x1). Journal: `docs/jx_runs/crosstrade_test_journal_20261127.jsonl`.
