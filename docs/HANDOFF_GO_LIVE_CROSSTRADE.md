@@ -7,10 +7,10 @@ Detailed technical guide: `docs/GO_LIVE_MULTIFIRM.md`. Topstep's own path: `docs
 | Item | Status |
 |---|---|
 | Which products qualify | 7 products (Lucid, DayTraders, Topstep $3K, …), from `docs/PREREG_PROP_SEARCH3_20261126.md` (table in `GO_LIVE_MULTIFIRM.md`) |
-| Bot connector for Lucid / DayTraders / FFN | **Built**: `bridge/crosstrade.py` (NinjaTrader 8 via the CrossTrade NT8 Add-On). 535 tests pass. **Never run against a real server** |
+| Bot connector for Lucid / DayTraders / FFN | **Built**: `bridge/crosstrade.py` (NinjaTrader 8 via the CrossTrade NT8 Add-On). First run against the real server 2026-11-27 (sim): check and round trip pass after two fixes |
 | Cross-account anti-hedge check | **Built**: engine-scoped claims in `bridge/hedge.py`, shared file `BRIDGE_HEDGE_REGISTRY` |
 | Firm rules in the bot | **Built**: `FIRM_PRESETS` in `bridge/config.py` (LucidFlex/LucidDaily 50K, DayTraders 100K/150K Static, Topstep $3K) |
-| Practice test (free) | **Not started.** Jx has a NinjaTrader account; the CrossTrade trial is not started; NinjaTrader 8 desktop is not installed |
+| Practice test (free) | **Running.** 2026-11-27: connected check and Sim101 round trip pass; daily dry run scheduled until 2026-12-05; no dry-run day finished yet |
 | Live trading on the new firms | Not before the practice test and a dry run reconcile |
 
 ## 2. Facts and where they come from
@@ -21,7 +21,7 @@ Detailed technical guide: `docs/GO_LIVE_MULTIFIRM.md`. Topstep's own path: `docs
 | CrossTrade **7-day free trial**, no card, does not auto-renew, includes the REST API | Jx, 2026-11-27 (third-party). The connected check confirms API access on day one |
 | Jx's NinjaTrader account: simulation account `DEMO10100109`, $50K sim balance, free trial "expires in 13 days" on 2026-11-27 (ends ≈ 2026-12-10) | Jx's screenshot, 2026-11-27 |
 | Rate limit 3 requests/s per CrossTrade user (burst 20), shared by every engine | Official: crosstrade.io/docs/api/rate-limiting |
-| NT8 stamps a bar at its close (connector shifts to the open) | **Assumed** (NinjaTrader convention); to be confirmed on the chart in the practice test |
+| NT8 stamps a bar at its close (connector shifts to the open) | The server says `timestampConvention: bar_close` (2026-11-27). Hand comparison with the NT8 chart not yet done |
 | No direct Rithmic client: Rithmic needs conformance testing for a custom app | Reason CrossTrade was chosen for all three firms |
 
 **History of the price statement:** the "~$49/month" figure was first given from memory, without a check. The docs read on
@@ -52,18 +52,17 @@ Only Jx can do sign-ups, type passwords and spend money. Everything else is for 
       in the cloud container); fix them on the PC if they error.
 - [x] 2026-11-27 (local session) Repo cloned to `C:\trading\LONG-CONVEXITY`; 29 CrossTrade/multifirm tests pass. NinjaTrader
       8.1.9.1 and the CrossTrade Add-On 1.14.2 were found already installed (details in `docs/NOTES_JX.md`).
-- [ ] Install NinjaTrader 8 **desktop** on Jx's PC; Jx logs in. Confirm MNQ 12-26 1-minute bars show (NinjaTrader's sim data).
-      (Installed, price feed Connected; live new bars still to be confirmed.)
-  - If there are no bars, stop. The fallback is buying a LucidFlex 50K evaluation (about $80), which is Jx's decision.
-- [ ] Jx starts the CrossTrade 7-day trial on **Sun 29 or Mon 30 Nov 2026**, so it covers 5 US trading days and ends before the
-      NinjaTrader trial. Install and connect the CrossTrade NT8 Add-On.
-- [ ] Save the CrossTrade key on the PC: the PC session runs `scripts\crosstrade_test.ps1 -Step savekey`, and Jx pastes the key into
-      the box that appears (saved as Windows user variable `CROSSTRADE_API_KEY`; never in chat or the repo).
-- [ ] Run `scripts\crosstrade_test.ps1 -Step check -Account <NT8 account>`. Compare the newest bar with the NT8 chart.
-- [ ] Run `-Step roundtrip` (one far-off 1-lot limit on the sim account, then cancelled).
-- [ ] Schedule `-Step dryrun` each US trading day at 09:25 New York (Windows Task Scheduler). The PC must be awake, with
-      NinjaTrader and the Add-On running.
-- [ ] Save each day's journal to `docs/jx_runs/crosstrade_test_journal_<YYYYMMDD>.jsonl` and add a dated line to `docs/NOTES_JX.md`.
+- [x] 2026-11-27 NinjaTrader 8 desktop installed and logged in. MNQ 12-26 1-minute bars arrive live (372 bars via the
+      connector, newest closed bar 1.5 min old). No purchase was needed.
+- [x] 2026-11-27 CrossTrade Add-On installed and connected. Trial start date: **not recorded yet** (the Add-On was already
+      installed on 27 Nov, earlier than the planned 29/30 Nov; ask Jx, because it sets the trial's last day).
+- [x] 2026-11-27 Key saved on the PC as the Windows user variable `CROSSTRADE_API_KEY`.
+- [x] 2026-11-27 `-Step check -Account Sim101`: 17/17 PASS, after the bar-request fix.
+  - [ ] Hand comparison of one bar with the NT8 chart (the server already states `bar_close`).
+- [x] 2026-11-27 `-Step roundtrip` on Sim101: PASS, after the instrument-name fix.
+- [x] 2026-11-27 Daily `-Step dryrun` scheduled: Mon-Fri 22:25 Malaysia time, until 2026-12-05. First run 2026-11-27.
+- [ ] Save each day's journal to `docs/jx_runs/crosstrade_test_journal_<YYYYMMDD>.jsonl` and add a dated line to `docs/NOTES_JX.md`
+      (done by `-Collect`; tick after the last dry-run day).
 - [ ] Reconcile the dry run against the research engine (`scripts/reconcile.py`). Fills come from NinjaTrader's export.
 - [ ] Decide (Jx): buy CrossTrade Pro ($49/month) and the first evaluation(s), then `--live`.
 

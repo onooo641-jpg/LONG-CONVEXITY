@@ -917,6 +917,24 @@ $38,034; bar: real ≥ $19,017, dip ≥ −$5,794.
 - Set a repo-local git identity (it was empty, so the unattended collect commit would have failed). `git push --dry-run` passes
   without a prompt.
 - Opened the `-Step savekey` window. Waiting for Jx to paste the key.
+- Later the same day: Jx saved the key and connected the Add-On. First contact with the real CrossTrade server:
+  - `check`, try 1: FAIL, HTTP 408 (Add-On not connected). Fixed by Jx logging in to the Add-On.
+  - Try 2: FAIL, HTTP 400 `Invalid 'from' date format: 26/11/2026 11:00:00 PM`. PC locale is en-MY. A read-only probe showed
+    that `YYYY-MM-DD HH:MM:SSZ` is accepted and the `T` forms tried are refused. The server also sent about 1.5 days of
+    bars for a 10-minute request, and the still-forming bar. The connector now sends the space form and cuts bars before
+    `from` (unclosed bars were already dropped). Then 17/17 PASS. The server states `timestampConvention: bar_close`.
+  - `roundtrip`, try 1: FAIL at "see". NinjaTrader's log shows the order Working, then Cancelled, unfilled; no order or
+    position left. Cause: the server answers `MNQ DEC26` for `MNQ 12-26`, so the engine's contract filter matched none of
+    its own orders. A position named that way would also have read as flat (no position was open to confirm the name the
+    positions endpoint uses). Fixed in `instrument_name`. Try 2: PASS (exit 0, proof file written).
+  - The run log below says FAIL for try 2 because the collector counts every journal row of that day, including try 1's
+    `roundtrip_failed`. The same old row will make tonight's (27 Nov) dry-run line say FAIL; read its exit code and its
+    other errors.
+  - Full test suite passes after both fixes (tests that need missing data are skipped).
+  - 90 s dry-run smoke test (throwaway journal): session started, no errors printed.
+  - Daily dry run scheduled: Mon-Fri 22:25 Malaysia time, until 2026-12-05. 27 Nov is a US early-close day, so
+    `stale_feed` rows after the close would not be surprising (not yet seen).
+  - Not yet seen on the real server: a fill, `cancel_and_bracket`, flatten, and a non-empty positions answer.
 
 ## 2026-12 — CrossTrade practice test: run log (written by `scripts/crosstrade_collect.py`)
 - 2026-11-27 check: **FAIL** (exit 1; 0 rows: no journal rows). Journal: `docs/jx_runs/crosstrade_test_journal_20261127.jsonl`.
