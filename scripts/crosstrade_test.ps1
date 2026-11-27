@@ -3,6 +3,7 @@
 # Before running: NinjaTrader 8 open, CrossTrade NT8 Add-On connected, a data connection live in NinjaTrader,
 # and the CrossTrade trial started. Run from the repo folder:
 #
+#   powershell -ExecutionPolicy Bypass -File scripts\crosstrade_test.ps1 -Step savekey     (once: paste the key, saved on this PC only)
 #   powershell -ExecutionPolicy Bypass -File scripts\crosstrade_test.ps1 -Step check
 #   powershell -ExecutionPolicy Bypass -File scripts\crosstrade_test.ps1 -Step roundtrip
 #   powershell -ExecutionPolicy Bypass -File scripts\crosstrade_test.ps1 -Step dryrun      (each trading day, from 09:25 New York)
@@ -15,7 +16,7 @@
 # (use Sim101) and cancels it; 'dryrun' records orders instead of sending them.
 
 param(
-    [ValidateSet("check", "roundtrip", "dryrun")] [string]$Step = "check",
+    [ValidateSet("savekey", "check", "roundtrip", "dryrun")] [string]$Step = "check",
     [string]$Account = "Sim101",
     [string]$Instrument = "MNQ 12-26",
     [string]$Preset = "LucidFlex 50K",
@@ -23,6 +24,16 @@ param(
     [switch]$Collect
 )
 $ErrorActionPreference = "Stop"
+
+if ($Step -eq "savekey") {
+    # Saved as a Windows user environment variable: on this PC only, never in the repo, never in a chat.
+    $secure = Read-Host "Paste your CrossTrade key (CrossTrade website: My Account > Security > Reveal), then press Enter" -AsSecureString
+    $key = [Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($secure))
+    if ($key.Length -lt 8) { throw "That does not look like a key; nothing saved." }
+    [Environment]::SetEnvironmentVariable("CROSSTRADE_API_KEY", $key, "User")
+    Write-Host "Saved. The bot can now use CrossTrade without asking again."
+    exit 0
+}
 $Branch = "claude/ict-trading-resources-ugh07b"
 # Run from the repo folder whatever folder this was started from (Task Scheduler starts elsewhere).
 Set-Location (Split-Path $PSScriptRoot -Parent)

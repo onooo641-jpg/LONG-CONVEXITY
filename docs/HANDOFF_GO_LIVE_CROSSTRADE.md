@@ -54,7 +54,8 @@ Only Jx can do sign-ups, type passwords and spend money. Everything else is for 
   - If there are no bars, stop. The fallback is buying a LucidFlex 50K evaluation (about $80), which is Jx's decision.
 - [ ] Jx starts the CrossTrade 7-day trial on **Sun 29 or Mon 30 Nov 2026**, so it covers 5 US trading days and ends before the
       NinjaTrader trial. Install and connect the CrossTrade NT8 Add-On.
-- [ ] Jx stores the CrossTrade key as a Windows **user** environment variable `CROSSTRADE_API_KEY` (on the PC only, never in the repo).
+- [ ] Save the CrossTrade key on the PC: the PC session runs `scripts\crosstrade_test.ps1 -Step savekey`, and Jx pastes the key into
+      the box that appears (saved as Windows user variable `CROSSTRADE_API_KEY`; never in chat or the repo).
 - [ ] Run `scripts\crosstrade_test.ps1 -Step check -Account <NT8 account>`. Compare the newest bar with the NT8 chart.
 - [ ] Run `-Step roundtrip` (one far-off 1-lot limit on the sim account, then cancelled).
 - [ ] Schedule `-Step dryrun` each US trading day at 09:25 New York (Windows Task Scheduler). The PC must be awake, with
@@ -112,8 +113,8 @@ Topstep trading stays on the friend's computer (CLAUDE.md).
 > 3. Only once step 2 works: tell Jx to start the CrossTrade 7-day trial, ideally on a Sunday/Monday, so it covers 5 US trading days
 >    and ends before the NinjaTrader trial (about 2026-12-10). Then guide him through installing and connecting the CrossTrade NT8
 >    Add-On (follow CrossTrade's own docs at crosstrade.io/docs).
-> 4. Have Jx store his CrossTrade secret key himself as a Windows USER environment variable `CROSSTRADE_API_KEY` (System
->    Properties > Environment Variables). Never read it into chat, a file in the repo, or a commit.
+> 4. Run `scripts\crosstrade_test.ps1 -Step savekey` in a PowerShell window Jx can see. He pastes his CrossTrade key into its
+>    prompt; it is saved as the Windows user variable `CROSSTRADE_API_KEY`. Never read it into chat, a file in the repo, or a commit.
 > 5. From the repo folder run `powershell -ExecutionPolicy Bypass -File scripts\crosstrade_test.ps1 -Step check -Account <NT8 account>`,
 >    then `-Step roundtrip`.
 >    - On any failure, find the cause.
@@ -130,5 +131,15 @@ Topstep trading stays on the friend's computer (CLAUDE.md).
 >    - add a short dated entry to `docs/NOTES_JX.md` (what ran, PASS/FAIL, any fix);
 >    - commit with `git pull --rebase` first, and push to the branch.
 > 8. Finish with a plain summary for Jx: what works, what failed and was fixed, what still needs him.
+
+**Why a separate session on the PC (2026-11-27):** the cloud session runs on a server and cannot reach Jx's PC. Remote Control was
+on, but the Windows Claude app offered none of the PC's folders to cloud sessions. A session started on the PC itself can install
+and run things there. This file carries the context between them.
+
+**How Jx starts it** (if the suggested-task card is not visible):
+1. In the Claude desktop app, click **+ New** (top left).
+2. Pick the PC (local), not the cloud environment "LONG-CONVEXITY". Choose or create a folder such as `C:\trading`.
+3. Send: "Clone github.com/onooo641-jpg/LONG-CONVEXITY (branch claude/ict-trading-resources-ugh07b), then do section 6 of
+   docs/HANDOFF_GO_LIVE_CROSSTRADE.md."
 
 **Local session, also:** tick the checklist in section 4 of this file as steps complete.
