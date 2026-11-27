@@ -25,3 +25,12 @@ target and payout were not stated; it is priced with the same $3,000 / $3,000, a
 
 **Script/output:** `scripts/challenge_reprice_20261127.py` → `docs/jx_runs/challenge_reprice_20261127.txt`, re-run identical.
 Docs to update with the result: PS2C/PS3b ledger rows (mark as past drop), `GO_LIVE_MULTIFIRM.md`, `NOTES_JX.md`, `START_HERE.md`.
+
+## Result (2026-11-27; `docs/jx_runs/challenge_reprice_20261127.txt`, re-run identical)
+| Version | Real | Coin flip | Dip | Verdict | Break-even |
+|---|---|---|---|---|---|
+| Past Labs Drop #003 $49 / 10 micros (check: reproduces PS3b) | $24,757 | $7,674 | −$1,176 | qualifies | $68 |
+| **On sale: $199 / 50 micros / $1,000 (= Undead)** | **−$7,904** | **−$33,053** | −$17,516 | **fails** | $89 |
+| Slasher $65 / 20 micros / $500 (assumed target/payout) | $4,065 | −$15,680 | −$7,020 | fails | $20 |
+
+The $3K Challenge leaves the qualifying set (6 products remain).
