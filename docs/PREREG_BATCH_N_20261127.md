@@ -31,3 +31,19 @@ Jx's goal only at ≥ ~$10K/yr of added profit.
 - overlap of fill days with #389's fill days. Shared days compete for the same $15,000 pot.
 
 **Script/output:** `scripts/batch_n_20261127.py` → `docs/jx_runs/batch_n_20261127.txt`, re-run identical.
+
+## Results (2026-11-27; `docs/jx_runs/batch_n_20261127.txt`, re-run identical)
+| # | Verdict | Stage 1 mean per fill (t, fills) | Stage 2 mean per fill (t, fills) | Stage 2 $/yr |
+|---|---|---|---|---|
+| 509 HIP-3 perps, X 5% | KILL | +0.12% (t 0.70, 835) | −0.97% (t −10.0, 3,440) | $9.4K (size-weighted, despite a negative mean) |
+| 510 HL spot tokens, X 15% | FAIL | +10.69% (t 4.34, 5,119) | +0.92% (t 0.88, 4,600; median −0.49%, win 27%) | $17.6K |
+| 511 first 30 days of new perps, X 15% | FAIL | +4.84% (t 4.69, 319) | +0.75% (t 0.96, 297) | $595 |
+
+**Batch N verdict: 0 of 3.**
+- Every universe was strong in its early period and faded in the unseen one. The same decay shows in #389's own record (mean per
+  fill 5.2% in 2023, 4.1% in 2024, 0.9% in 2025, 2.4% in 2026).
+- #510's positive dollars come from a few large fills; the typical fill loses (median −0.49%, 27% winners). It is not a dependable
+  add-on.
+- HIP-3's 10% context row was +1.82% in Stage 1 but −0.72% in Stage 2. No level works out of sample.
+- **Implication for #389:** the forward paper test (S2c, from 2026-12-01) matters. The edge is shrinking as more bids rest under
+  wicks.

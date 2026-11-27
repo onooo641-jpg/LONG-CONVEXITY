@@ -358,3 +358,9 @@ Jx's free Coinalyze key gave daily OI and liquidations from 2020. The five OI an
 - **Rebound after a perp delisting:** coins keep falling after settlement (5 events with spot prices).
 - **Japanese fiscal-year-end yen buying, US tax-day selling, gold before Diwali:** all flat to negative, 2 killed at Stage 1.
 - Table: `docs/PREREG_BATCH_M_20261127.md`.
+
+## 2026-11-27 — Batch N (#509–#511), the wick rule on new Hyperliquid universes: 0 of 3
+- HIP-3 stock/commodity perps, HL spot tokens and the first 30 days of new perps were all strong in development and faded out of
+  sample.
+- #389's own mean per fill fell from about 4–5% (2023–24) to 0.9% (2025) and 2.4% (2026). The forward paper test from 2026-12-01 decides
+  whether it is still worth running.
