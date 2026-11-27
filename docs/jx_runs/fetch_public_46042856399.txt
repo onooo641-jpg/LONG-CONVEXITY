@@ -1,0 +1,11 @@
+=== ubatchp_probe
+  mof_jgb_hist: HTTP 200, 1197657 bytes
+  mof_jgb_cur: HTTP 200, 1955 bytes
+  mof_auction_index: HTTP 200, 16781 bytes
+  mof_auction_calendar: HTTP 404, 0 bytes
+  boe_10y: HTTP 200, 84931 bytes
+  dmo_d21a: HTTP 200, 15238 bytes
+  dmo_d21c: HTTP 200, 15238 bytes
+  dmo_auctions_page: HTTP 200, 15238 bytes
+  bbk_10y: HTTP 200, 235583 bytes
+=== ubatchp_probe done in 20s  ok 0 fail 0
