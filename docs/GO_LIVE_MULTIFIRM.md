@@ -89,8 +89,8 @@ the entry: unknown is treated as "do not enter".
 - **Plan:** the REST API needs CrossTrade **Pro or above** (official, `/docs/api/overview`).
   - Price: Pro is $49/month or $469/year, and Standard is $29/month without API access. Source: Jx's Google search 2026-11-27,
     citing CrossTrade's pricing page, QuantVPS and Copygram. This is third-party; confirm at checkout.
-  - The same search reports a **7-day free trial with no credit card**. Whether the trial includes API access is not verified.
-    If it does, steps 2–5 can run for $0.
+  - **7-day free trial, no credit card.** Per Jx (2026-11-27, third-party), it unlocks all features including the REST API and
+    does not convert to a paid plan. So steps 2–5 cost $0; the connected check (step 3) confirms API access on day one.
 - **Round-trip proofs:** each engine gets its own proof file (`data/roundtrip_proof_<engine>.json`). Topstep NQ keeps
   `data/roundtrip_proof.json`.
 
