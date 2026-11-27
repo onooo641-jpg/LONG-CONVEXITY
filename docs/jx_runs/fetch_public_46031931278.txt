@@ -1,0 +1,8 @@
+=== ubatchl
+  catalog events: 361 {501: 174, 502: 61, 503: 30, 504: 96}
+  bodies: 292 fetched, 163 errors
+  USD-M archive symbols: 1080
+  events with symbols: 107 of 361; symbol-months: 860
+  1h rows: 608,248 for 259 symbols
+  wrote batchl_1h: 608248 rows
+=== ubatchl done in 182s  ok 0 fail 0
