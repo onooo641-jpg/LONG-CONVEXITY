@@ -12,7 +12,7 @@ done. If a session ends, the next one continues from the first unchecked line.
 | L | Exchange risk-parameter forced closes (crypto) | done 2026-11-27, 0/4 |
 | M | Malaysia-tradable forced/seasonal flows | done, 0/4 |
 | N | #389 wick rule on new Hyperliquid universes | done, 0/3 |
-| O | **Physical commodity seasonals + currency pegs** (grain harvest selling, HKD peg band) | in progress |
+| O | **Physical commodity seasonals + currency pegs** (grain harvest selling, HKD peg band) | done 2026-11-27, 0/3 |
 | P | Fixed income outside the US (sovereign auction concessions: Bund, Gilt, JGB; data from ECB/DMO/MOF) | planned |
 | Q | International index reviews (Hang Seng, Nikkei 225, KOSPI 200, FTSE 100 quarterly changes) | planned |
 | R | US corporate capital raises (follow-on offering discounts, convertible-issuance hedging; SEC EDGAR) | planned |

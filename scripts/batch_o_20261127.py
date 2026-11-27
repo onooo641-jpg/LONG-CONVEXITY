@@ -106,7 +106,7 @@ def main():
     t = pd.DataFrame(trades, columns=["entry", "exit", "px_in", "px_out", "r"])
     for _, x in t.iterrows():
         print(f"   {x.entry.date()} {x.px_in:.4f} -> {x.exit.date()} {x.px_out:.4f}: {x.r:+.3%}")
-    dev, oos = t[t.entry.dt.year <= 2012].r, t[t.entry.dt.year >= 2013].r
+    dev, oos = t[(t.entry.dt.year >= 1990) & (t.entry.dt.year <= 2012)].r, t[t.entry.dt.year >= 2013].r
     print(show("Stage 1 entries 1990-2012", dev))
     print(show("Stage 2 entries 2013-2026", oos))
     print(f"   VERDICT {verdict(dev, oos, 4, 0.003)} | $/yr at $1.5M notional: ${stats(oos)[1] * 1_500_000 * len(oos) / 13.9:,.0f}\n")

@@ -22,3 +22,17 @@ Stage 1 only kills; nothing passes early.
 **Data job:** `ubatcho`. Yahoo CORN, SOYB, WEAT daily adjusted; FRED DEXHKUS, IR3TIB01USM156N, IR3TIB01HKM156N (whichever exists).
 
 **Script/output:** `scripts/batch_o_20261127.py` → `docs/jx_runs/batch_o_20261127.txt`, re-run identical.
+
+## Results (2026-11-27; `docs/jx_runs/batch_o_20261127.txt`, re-run identical)
+| # | Verdict | Stage 1 | Stage 2 | $/yr |
+|---|---|---|---|---|
+| 512 corn + soybeans post-harvest | KILL | −2.41% (t −1.27, 7 seasons) | +3.77% (t 0.76, 8) | $1.7K |
+| 513 wheat post-harvest | KILL | −6.08% (t −2.77, 7) | +0.39% (t 0.13, 8) | $173 |
+| 514 HKD peg weak side | FAIL | 0 entries 1990–2012 (the weak side was not touched) | +0.21% (t 2.11, 8), before carry | $1.8K at $1.5M notional |
+
+**Batch O verdict: 0 of 3.**
+- #514 works the way the peg says it should: 7 of 8 entries since 2018 made money or nearly broke even. But the move is capped at
+  0.6% and the HK interest rate series is missing on FRED, so carry could not be charged. HKD is weak exactly when HIBOR is below US
+  rates, so carry would cut the +0.21% further. It is too small at any sensible size.
+- A first draft of the script counted 1983–85 entries (around the peg's start) in Stage 1. It was corrected to the registered
+  1990–2012 window before recording; the verdict was FAIL either way.

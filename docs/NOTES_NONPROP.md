@@ -364,3 +364,8 @@ Jx's free Coinalyze key gave daily OI and liquidations from 2020. The five OI an
   sample.
 - #389's own mean per fill fell from about 4–5% (2023–24) to 0.9% (2025) and 2.4% (2026). The forward paper test from 2026-12-01 decides
   whether it is still worth running.
+
+## 2026-11-27 — Batch O (#512–#514), commodity seasonals and the HKD peg: 0 of 3
+- **Grain post-harvest recovery** (corn/soy, wheat): killed in development.
+- **HKD weak-side trade:** works as the peg implies (7 of 8 since 2018 positive or flat), but the move is capped near 0.6%.
+  About $1.8K/yr even at $1.5M notional.
