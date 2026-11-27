@@ -259,3 +259,44 @@ Platform note: the live bot connects only through Topstep's ProjectX API (`bridg
 each need their own connector before going live.
 
 Script: `scripts/prop_search3_p3_20261127.py` → `docs/jx_runs/prop_search3_p3_20261127.txt` (re-run once; it must be identical).
+
+### Part 3 results (`docs/jx_runs/prop_search3_p3_20261127.txt`, re-run identical)
+
+| Product (Jx's prices) | Real 2016–26 | Coin flip | Dip | Verdict |
+|---|---|---|---|---|
+| **DayTraders 100K Static $75 + $5** | $21,960 ($2,028/yr) | $7,544 (81%) | −$4,000 | **QUALIFIES** |
+| **DayTraders 150K Static $90 + $5** | $48,361 ($4,466/yr) | $5,436 (76%) | −$3,090 | **QUALIFIES** |
+| FFN 50K $89, no activation, reset $100 | $23,076 | $4,823 (76%) | −$4,323 | fails by $177 on the coin flip |
+| FFN 100K $174 / 150K $204 | $36,804 / $41,290 | $10,627 / $13,034 | −$5,966 / −$6,232 | fail (dip) |
+
+**FFN 50K is borderline.** It qualifies if each failed evaluation is replaced at the promo price (E2: break-even $96 with reset = price).
+It fails narrowly at FFN's standard $100 reset. So it counts **only while a ≥ 50% promo runs**; it is recorded as borderline, not
+a pass.
+
+**DayTraders Static: money to start and timing:**
+- **100K:** median −$1,228, worst −$4,000; first payout $3,000 after a median 401 days; 53% of starts are still down after 12 months.
+- **150K:** median −$912, worst −$3,365; first payout $3,500 after 356 days; 48% still down after 12 months.
+
+Strong over the decade, slow in year one.
+
+**City Traders Imperium: parked** (Jx: do not port now).
+
+## Final standing after prop search 3 (registered bar, corrected engine)
+**Qualifying products:**
+1. LucidFlex 50K DLL ON (NQ) — Lucid.
+2. LucidFlex 50K DLL ON (**ES**) — Lucid; new market.
+3. Topstep 50K Consistency (and Standard) — Topstep.
+4. LucidDaily $85.40 — Lucid.
+5. **Topstep $3K Challenge, $49** — Topstep; new product.
+6. **DayTraders 100K Static, $80 all-in** — DayTraders; **new firm**.
+7. **DayTraders 150K Static, $95 all-in** — DayTraders; new firm.
+
+**Borderline:** FFN 50K Standard MAX (passes only while ≥ 50% promos also cover resets).
+
+**Options outside the bar:** Topstep 100K/150K Static (size-scaled reading). The 5-LucidFlex 3 NQ / 1 ES / 1 YM mix is worth doing.
+
+**Before live trading:**
+- Every non-Topstep firm needs its own connector: Lucid via CrossTrade; DayTraders and FFN via Rithmic, to be confirmed. The bot today
+  speaks only ProjectX.
+- A second market needs the cross-account anti-hedge check.
+- The prices came from third-party trackers; confirm them at checkout before buying.

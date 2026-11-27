@@ -1,0 +1,11 @@
+Registered bar: real >= $19,017, coin flip >= $5,000, dip >= $-5,794
+
+  DayTraders 100K Static $75 + $5                  risk $  900 | real $  21,960 ( 2,028/yr) | flip $   7,544 (81%) | dip $  -4,000 | QUALIFIES
+  DayTraders 150K Static $90 + $5                  risk $  900 | real $  48,361 ( 4,466/yr) | flip $   5,436 (76%) | dip $  -3,090 | QUALIFIES
+  FFN Std MAX 50K $89 (50% off), no activation     risk $  900 | real $  23,076 ( 2,131/yr) | flip $   4,823 (76%) | dip $  -4,323 | fails
+  FFN Std MAX 100K $174 (50% off), no activation   risk $1,620 | real $  36,804 ( 3,398/yr) | flip $  10,627 (86%) | dip $  -5,966 | fails
+  FFN Std MAX 150K $204 (50% off), no activation   risk $2,250 | real $  41,290 ( 3,813/yr) | flip $  13,034 (88%) | dip $  -6,232 | fails
+
+MONEY NEEDED TO START (118 monthly starts 2016-01..2025-10), qualifying rows
+  DayTraders 100K Static $75 + $5                  median $ -1,228 | 1 in 10 $ -3,282 | worst $ -4,000 | first payout $ 3,000 after  401 days | 12-month net $   -760 (53% losing)
+  DayTraders 150K Static $90 + $5                  median $   -912 | 1 in 10 $ -2,122 | worst $ -3,365 | first payout $ 3,500 after  356 days | 12-month net $  2,087 (48% losing)

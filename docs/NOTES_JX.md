@@ -852,3 +852,11 @@ $38,034; bar: real ≥ $19,017, dip ≥ −$5,794.
     - LucidFlex ES: worst −$2.4K;
     - DayTraders Static pays slowly (first payout after ~1 year).
   - ES and YM work only at LucidFlex.
+- **2026-11-27, with Jx's prices:**
+  - **DayTraders 100K Static ($80) and 150K Static ($95) qualify**: $22.0K / $48.4K over 2016–26, flip $7.5K / $5.4K, dip −$4.0K / −$3.1K.
+    Slow: first payout after about a year, and about half of the starts are still down at 12 months.
+  - **FFN 50K is borderline**: it passes only if resets are also bought at the ≥ 50% promo price. FFN 100K/150K at 50% off fail on the dip.
+  - City Traders Imperium is parked.
+  - **Qualifying set now:** LucidFlex 50K (NQ, ES), Topstep 50K Consistency, LucidDaily, Topstep $3K Challenge, DayTraders 100K/150K
+    Static. New firm: DayTraders.
+  - Connectors needed before going live: Lucid (CrossTrade), DayTraders and FFN (Rithmic); the bot today speaks only ProjectX.
