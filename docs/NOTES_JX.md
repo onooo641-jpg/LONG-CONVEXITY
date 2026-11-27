@@ -920,3 +920,4 @@ $38,034; bar: real ≥ $19,017, dip ≥ −$5,794.
 
 ## 2026-12 — CrossTrade practice test: run log (written by `scripts/crosstrade_collect.py`)
 - 2026-11-27 check: **FAIL** (exit 1; 0 rows: no journal rows). Journal: `docs/jx_runs/crosstrade_test_journal_20261127.jsonl`.
+- 2026-11-27 check: **FAIL** (exit 1; 0 rows: no journal rows). Journal: `docs/jx_runs/crosstrade_test_journal_20261127.jsonl`.
