@@ -18,7 +18,7 @@
 # (use Sim101) and cancels it; 'dryrun' records orders instead of sending them.
 
 param(
-    [ValidateSet("savekey", "check", "roundtrip", "brackettest", "dryrun")] [string]$Step = "check",
+    [ValidateSet("savekey", "check", "roundtrip", "brackettest", "exittest", "dryrun")] [string]$Step = "check",
     [string]$Account = "Sim101",
     [string]$Instrument = "MNQ 12-26",
     [string]$Preset = "LucidFlex 50K",
@@ -96,6 +96,11 @@ try {
                 if ($ok -ne "YES") { throw "stopped" }
             }
             uv run python -m bridge.live --roundtrip --journal $journal --risk 900
+            $code = $LASTEXITCODE
+        }
+        "exittest" {
+            # Sim only (bridge.exit_probe refuses other accounts). Short 1 contract, 3-point stop/target, waits up to 10 min.
+            uv run python -m bridge.live --exit-test --journal $journal --risk 900
             $code = $LASTEXITCODE
         }
         "brackettest" {

@@ -390,3 +390,55 @@ def test_bracket_probe_refuses_anything_but_a_sim_account(tmp_path):
     cfg = _cfg(account_name="LUCID FLEX 1")
     assert not bracket_probe(cfg, CrossTradeBroker(cfg, transport=sim), j, sleep=lambda s: None)
     assert sim.calls == [] and j.read()[0]["event"] == "bracket_probe_refused"
+
+
+class ShortSimNT8(SimNT8):
+    """Short side; after ``hit_after`` position checks the stop or target fills: position gone, OCO partner cancelled."""
+
+    def __init__(self, hit_after=3, **kw):
+        super().__init__(**kw)
+        self.hit_after, self.checks = hit_after, 0
+
+    def __call__(self, method, path, body):
+        if path.endswith("/positions") and self.position and self.orders:
+            self.checks += 1
+            if self.checks >= self.hit_after:
+                self.position, self.orders = 0, []
+        out = super().__call__(method, path, body)
+        if path.endswith("/orders/place"):
+            assert body["action"] == "SELL"
+        if path.endswith("/positions") and self.position:
+            out["positions"][0]["marketPosition"] = "Short"
+        return out
+
+
+def test_exit_probe_sees_a_short_close_by_itself_through_its_bracket(tmp_path):
+    from bridge.roundtrip import exit_probe
+    sim, j = ShortSimNT8(), Journal(tmp_path / "j.jsonl")
+    cfg = _cfg(account_name="Sim101")
+    b = CrossTradeBroker(cfg, transport=sim, journal=j, sleep=lambda s: None)
+    assert exit_probe(cfg, b, j, sleep=lambda s: None, drive=b.protect_once,
+                      now=lambda: pd.Timestamp("2026-11-27 15:05", tz="UTC"))
+    assert sim.entry["limitPrice"] == 20990.0
+    br = [c[2] for c in sim.calls if c[1].endswith("cancel_and_bracket")][0]
+    assert (br["action"], br["stopLoss"], br["takeProfit"]) == ("Sell", 20993.0, 20987.0)
+    assert not any(c[1].endswith("/positions/flatten") for c in sim.calls)        # closed by its own bracket
+    assert [r["event"] for r in j.read()][-1] == "exit_probe_ok"
+
+
+def test_exit_probe_flattens_and_fails_when_nothing_is_hit(tmp_path):
+    from bridge.roundtrip import exit_probe
+    sim, j = ShortSimNT8(hit_after=10**9), Journal(tmp_path / "j.jsonl")
+    cfg = _cfg(account_name="Sim101")
+    b = CrossTradeBroker(cfg, transport=sim, journal=j, sleep=lambda s: None)
+    assert not exit_probe(cfg, b, j, sleep=lambda s: None, drive=b.protect_once, wait_s=5.0,
+                          now=lambda: pd.Timestamp("2026-11-27 15:05", tz="UTC"))
+    assert sim.position == 0 and any(c[1].endswith("/positions/flatten") for c in sim.calls)
+
+
+def test_exit_probe_refuses_anything_but_a_sim_account(tmp_path):
+    from bridge.roundtrip import exit_probe
+    sim, j = ShortSimNT8(), Journal(tmp_path / "j.jsonl")
+    cfg = _cfg(account_name="LUCID FLEX 1")
+    assert not exit_probe(cfg, CrossTradeBroker(cfg, transport=sim), j, sleep=lambda s: None)
+    assert sim.calls == []

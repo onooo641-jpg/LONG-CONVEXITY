@@ -66,6 +66,14 @@ Only Jx can do sign-ups, type passwords and spend money. Everything else is for 
       try. `scripts\crosstrade_test.ps1 -Step brackettest -Account Sim101 -Collect`. 1 contract bought and filled; one stop and one
       target (OCO) appeared at the intended prices; flatten left no position and no order (also checked by a separate read and
       NinjaTrader's log). Not covered: the stop or target actually triggering, a partial fill, a short entry.
+- [ ] **Exit test on Sim101** (added 2026-11-27 by the cloud session): `scripts\crosstrade_test.ps1 -Step exittest -Account Sim101 -Collect`
+      while MNQ trades (not near the close). It sells 1 contract with a stop and target 3 points away, then waits up to 10 minutes
+      for the position to close by itself, with the other order cancelled (OCO). This covers the short side and a stop/target
+      actually triggering. If nothing is hit in time, it flattens and fails as inconclusive; re-run it then.
+  - The 16:00 flat uses the same `close_position()` (flatten with `cancelOrders`) that the bracket test exercised, so it is
+    covered at the API level. The engine's own call to it is seen only in a dry run or live day that reaches 16:00 holding a position.
+  - Partial fills cannot be forced with 1 contract on sim. This stays an accepted risk: the rest of the entry is cancelled when
+    the bracket goes on, and reconciliation will show it.
 - [ ] Save each day's journal to `docs/jx_runs/crosstrade_test_journal_<YYYYMMDD>.jsonl` and add a dated line to `docs/NOTES_JX.md`
       (done by `-Collect`; tick after the last dry-run day).
 - [ ] Reconcile the dry run against the research engine (`scripts/reconcile.py`). Fills come from NinjaTrader's export.

@@ -250,3 +250,76 @@ def bracket_probe(cfg: Config, broker, journal, *, sleep: Callable[[float], None
     if ok:
         journal.write("bracket_probe_ok", account=cfg.account_name, contract_id=cfg.contract_id, at=clock().isoformat())
     return ok
+
+
+#: Exit probe: a SHORT whose stop and target are this close (points) so one of them is hit within minutes.
+EXIT_PROBE_DISTANCE = 3.0
+EXIT_PROBE_WAIT_S = 600.0
+
+
+def exit_probe(cfg: Config, broker, journal, *, sleep: Callable[[float], None] = time.sleep,
+               now: Callable[[], pd.Timestamp] | None = None, drive: Callable[[], None] | None = None,
+               wait_s: float = EXIT_PROBE_WAIT_S) -> bool:
+    """Prove the exit half on a SIM account: a short entry is protected, then the market hits the stop or the target
+    and the position goes flat BY ITSELF with the other order cancelled (one-cancels-other). Sells 1 contract at the
+    market with stop and target 3 points away. If neither is hit within ``wait_s`` the probe flattens and fails as
+    inconclusive. Refuses any account whose name does not start with "Sim".
+    """
+    clock = now or (lambda: pd.Timestamp.now(tz="UTC"))
+    if cfg.broker != "crosstrade" or not str(cfg.account_name or "").lower().startswith("sim"):
+        journal.write("exit_probe_refused", why="CrossTrade sim accounts only (name must start with 'Sim')",
+                      account=cfg.account_name)
+        return False
+    t = clock()
+    bars = broker.retrieve_bars(t - pd.Timedelta(days=4), t)
+    if bars.empty:
+        journal.write("exit_probe_failed", step="bars", why="no bars to price the probe from")
+        return False
+    last = float(bars["close"].iloc[-1])
+    entry = round((last - BRACKET_PROBE_ABOVE) / cfg.tick_size) * cfg.tick_size   # sell limit below: fills at once
+    probe = Order(side="sell", size=1, entry=entry, stop=entry + EXIT_PROBE_DISTANCE,
+                  target=entry - EXIT_PROBE_DISTANCE, tag="exit probe")
+    try:
+        placed = broker.place(probe)
+    except (BrokerError, KeyError, TypeError, ValueError) as exc:
+        journal.write("exit_probe_failed", step="place", error=str(exc))
+        return False
+    journal.write("exit_probe_placed", order_id=placed.get("orderId"), entry=entry, last=last,
+                  bracket=placed.get("bracket"))
+
+    protected, flat, waited = False, False, 0.0
+    while waited <= wait_s:
+        if drive:
+            drive()
+        try:
+            orders = _ours(broker.open_orders(), cfg)
+            held = _ours(broker.open_positions(), cfg)
+        except (BrokerError, KeyError, TypeError, ValueError) as exc:
+            journal.write("exit_probe_query_failed", error=str(exc))
+            orders = held = None
+        if held is not None:
+            if held and len(orders) == 2 and not protected:
+                protected = True
+                journal.write("exit_probe_protected", position=int(held[0].get("size", 0)),
+                              side=held[0].get("marketPosition"))
+            if protected and not held and not orders:
+                flat = True
+                journal.write("exit_probe_exited", after_s=waited,
+                              why="stop or target filled and the other was cancelled; no order left")
+                break
+        sleep(POLL_S)
+        waited += POLL_S
+
+    if not flat:
+        try:
+            broker.close_position()
+        except BrokerError as exc:
+            journal.write("exit_probe_failed", step="flatten", error=str(exc),
+                          why="CHECK NINJATRADER: the sim position may still be open")
+            return False
+        journal.write("exit_probe_failed", step="exit", protected=protected,
+                      why="no exit by itself within the wait (quiet market?) or the bracket never appeared; "
+                          "flattened by the probe")
+        return False
+    journal.write("exit_probe_ok", account=cfg.account_name, contract_id=cfg.contract_id, at=clock().isoformat())
+    return True

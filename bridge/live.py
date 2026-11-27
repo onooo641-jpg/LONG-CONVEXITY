@@ -518,6 +518,9 @@ def main(argv=None) -> int:
     ap.add_argument("--bracket-test", action="store_true",
                     help="CrossTrade sim accounts only: buy 1 contract at the market, require the stop and target "
                          "to appear at the intended prices, then flatten and require nothing left")
+    ap.add_argument("--exit-test", action="store_true",
+                    help="CrossTrade sim accounts only: sell 1 contract with a 3-point stop and target and require "
+                         "the position to close by itself with the other order cancelled")
     ap.add_argument("--offline", action="store_true",
                     help="with --preflight, skip the checks that need the broker")
     ap.add_argument("--journal", default=None,
@@ -535,7 +538,7 @@ def main(argv=None) -> int:
     logging.basicConfig(level=logging.INFO,
                         format="%(asctime)s %(levelname)s %(message)s")
     try:
-        cfg = Config.from_env(live=args.live or args.roundtrip or args.bracket_test)
+        cfg = Config.from_env(live=args.live or args.roundtrip or args.bracket_test or args.exit_test)
     except RuntimeError as exc:
         # Reporting what is missing IS the job here; a traceback tells the
         # reader to go and read the code instead.
@@ -566,6 +569,16 @@ def main(argv=None) -> int:
         return 0 if report(preflight(cfg, reach_broker=not args.offline,
                                      need_webhook=False,
                                      risk_usd=args.risk)) else 1
+
+    if args.exit_test:
+        from .roundtrip import exit_probe
+        journal = Journal(args.journal)
+        broker = make_broker(cfg, live=True, journal=journal)
+        broker.authenticate()
+        ok = exit_probe(cfg, broker, journal)
+        print(f"exit test {'OK' if ok else 'FAILED'} (account {cfg.account_name}, contract {cfg.contract_id}); "
+              "details in the journal")
+        return 0 if ok else 1
 
     if args.bracket_test:
         from .roundtrip import bracket_probe
