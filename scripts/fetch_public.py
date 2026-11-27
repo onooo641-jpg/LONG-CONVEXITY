@@ -1891,6 +1891,16 @@ def job_ubatchh2():
 JOBS["ubatchh2"] = job_ubatchh2
 
 
+def job_ubatchp():
+    """Batch P pull (non-prop workstream C)."""
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from fetch_uncharted import job_ubatchp as _j
+    _j()
+
+
+JOBS["ubatchp"] = job_ubatchp
+
+
 def job_ubatchp_probe2():
     """Batch P probe 2 (MOF auction pages)."""
     sys.path.insert(0, str(Path(__file__).resolve().parent))

@@ -2553,3 +2553,18 @@ def job_ubatchp_probe2():
         time.sleep(0.5)
     print(f"  pages fetched: {len(pages) - 1}", flush=True)
     (OUT / "batchp_mof_pages.json").write_text(_json.dumps(pages))
+
+
+def job_ubatchp():
+    """Batch P: MOF JGB yields (history + current month), MOF auction results xls (raw), BoE 10y zero-coupon, Bundesbank 10y Bund."""
+    srcs = {"batchp_mof_hist.csv": "https://www.mof.go.jp/english/policy/jgbs/reference/interest_rate/historical/jgbcme_all.csv",
+            "batchp_mof_cur.csv": "https://www.mof.go.jp/english/policy/jgbs/reference/interest_rate/jgbcme.csv",
+            "batchp_mof_auctions.xls": "https://www.mof.go.jp/english/policy/jgbs/auction/past_auction_results/Auction_Results_for_JGBs.xls",
+            "batchp_boe_10y.csv": "https://www.bankofengland.co.uk/boeapps/database/_iadb-fromshowcolumns.asp?csv.x=yes&Datefrom=01/Jan/1979&Dateto=now&SeriesCodes=IUDMNZC&CSVF=TN&UsingCodes=Y&VPD=Y&VFD=N",
+            "batchp_bbk_10y.csv": "https://api.statistiken.bundesbank.de/rest/data/BBSIS/D.I.ZAR.ZI.EUR.S1311.B.A604.R10XX.R.A.A._Z._Z.A?format=csv"}
+    for name, u in srcs.items():
+        st, raw = _raw_get(u, timeout=60)
+        print(f"  {name}: HTTP {st}, {len(raw or b'')} bytes", flush=True)
+        if raw:
+            (OUT / name).write_bytes(raw)
+        time.sleep(1)
