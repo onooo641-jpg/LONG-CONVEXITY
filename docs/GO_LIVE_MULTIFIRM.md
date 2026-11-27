@@ -86,14 +86,18 @@ the entry: unknown is treated as "do not enter".
   assumes full fills, so live size can come out smaller than modelled; reconciliation will show how often.
 - **Rate limit:** 3 requests per second per CrossTrade user, shared by every engine on the same key. Each engine with a resting
   entry uses about 0.5 per second, so four engines fit. 429s are retried after `Retry-After`.
-- **Plan:** the REST API needs CrossTrade **Pro or above** (`/docs/api/overview`). The Pro price was not captured; the ~$49/month
-  quoted earlier may be a lower tier, so confirm at checkout.
+- **Plan:** the REST API needs CrossTrade **Pro or above** (official, `/docs/api/overview`).
+  - Price: Pro is $49/month or $469/year, and Standard is $29/month without API access. Source: Jx's Google search 2026-11-27,
+    citing CrossTrade's pricing page, QuantVPS and Copygram. This is third-party; confirm at checkout.
+  - The same search reports a **7-day free trial with no credit card**. Whether the trial includes API access is not verified.
+    If it does, steps 2–5 can run for $0.
 - **Round-trip proofs:** each engine gets its own proof file (`data/roundtrip_proof_<engine>.json`). Topstep NQ keeps
   `data/roundtrip_proof.json`.
 
 ## Steps (same discipline as `docs/GO_LIVE.md`)
-1. **Install:** NinjaTrader 8, the CrossTrade NT8 Add-On, and a CrossTrade **Pro** subscription (Jx's spend). Connect each firm's
-   account in NinjaTrader.
+1. **Install:** NinjaTrader 8 (free for simulation), the CrossTrade NT8 Add-On, and the CrossTrade 7-day trial. Start the trial
+   only when steps 2–5 can be done within the 7 days. Pro ($49/month) is needed only after the trial, for live trading. Connect each
+   firm's account in NinjaTrader.
 2. **Preflight, offline:** `uv run python -m bridge.live --preflight --offline` with each engine's variables. This checks the preset,
    instrument and account name, and prints the exact entry and bracket that would be sent.
 3. **Preflight, connected:** `--preflight` without `--offline`. It confirms:
