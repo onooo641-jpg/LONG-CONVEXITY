@@ -117,7 +117,7 @@ finally {
             git pull --rebase --autostash origin $Branch
             git add "docs/jx_runs/crosstrade_test_journal_$ymd.jsonl" docs/NOTES_JX.md
             git commit -m "CrossTrade practice test: $Step journal $ymd (exit $code)"
-            git pull --rebase origin $Branch
+            git pull --rebase --autostash origin $Branch
             git push origin $Branch
             if ($LASTEXITCODE -ne 0) { Write-Host "Push failed; the commit is saved on this PC. Tell Claude." }
         }

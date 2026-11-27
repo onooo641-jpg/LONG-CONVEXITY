@@ -89,6 +89,19 @@ def test_nt8_bars_are_moved_from_their_close_to_their_open_and_unclosed_bars_dro
     assert list(f["close"]) == [2.0, 2.5]
 
 
+def test_bar_request_and_window_match_what_the_real_server_does():
+    """2026-11-27: the 'T' date form was refused, and bars from before ``from`` came back."""
+    fake = Fake()
+    fake.on("POST", "/v1/api/market/bars", {"success": True, "timestampConvention": "bar_close", "bars": [
+        {"time": f"2026-11-27T{t}:00.0000000Z", "open": 1, "high": 1, "low": 1, "close": 1, "volume": 1}
+        for t in ("01:59", "02:00", "02:01", "02:02", "02:03")]})
+    start, end = pd.Timestamp("2026-11-27 02:00", tz="UTC"), pd.Timestamp("2026-11-27 02:02:30", tz="UTC")
+    bars = _broker(fake).retrieve_bars(start, end)
+    body = fake.calls[0][2]
+    assert (body["from"], body["to"]) == ("2026-11-27 02:00:00Z", "2026-11-27 02:02:30Z")
+    assert list(bars["ts"].dt.strftime("%H:%M")) == ["02:00", "02:01"]     # not before start, nothing unclosed
+
+
 def test_place_sends_the_documented_request_and_watches_the_entry():
     fake = Fake()
     fake.on("POST", f"{ACCT}/orders/place", {"orderId": "cb1fc8d4", "effectiveAction": "Buy",

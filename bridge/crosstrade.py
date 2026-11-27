@@ -39,7 +39,8 @@ Three differences from TopstepX that the code has to absorb:
   sends its own id with every entry, returns that id, and reports listed orders under it.
 * **Bars are stamped at their close.** NinjaTrader times a bar by its end; the research engine (and TopstepX)
   time it by its start. ``parse_bars`` moves every bar back one period, so an NT8 bar stamped 10:01 is the
-  10:00 bar here. Compare one bar with the NT8 chart during the practice run to confirm.
+  10:00 bar here. The real server says so itself (``timestampConvention: bar_close``, 2026-11-27). It also
+  sends the bar still forming and bars older than ``from``; both are cut off on this side.
 """
 
 from __future__ import annotations
@@ -135,15 +136,21 @@ def bracket_payload(order: Order, cfg: Config) -> dict[str, Any]:
     }
 
 
-def _iso(ts) -> str:
-    return pd.Timestamp(ts).tz_convert("UTC").strftime("%Y-%m-%dT%H:%M:%SZ")
+def _utc(ts) -> str:
+    """A ``from``/``to`` value for /market/bars: UTC, with a space where ISO 8601 has ``T``.
+
+    Seen on the real server (2026-11-27, Add-On 1.14.2, PC locale en-MY): the ``T`` form is turned into a
+    day/month date on the way to the Add-On and refused with HTTP 400 "Invalid 'from' date format:
+    26/11/2026 11:00:00 PM". The space form is accepted.
+    """
+    return pd.Timestamp(ts).tz_convert("UTC").strftime("%Y-%m-%d %H:%M:%SZ")
 
 
 def bars_payload(cfg: Config, start, end, *, limit: int = 2000) -> dict[str, Any]:
     """Body of POST /market/bars for 1-minute bars. CrossTrade returns closed bars only."""
     _need(cfg)
     return {"instrument": cfg.instrument, "periodType": "minute", "period": 1,
-            "from": _iso(start), "to": _iso(end), "limit": int(limit)}
+            "from": _utc(start), "to": _utc(end), "limit": int(limit)}
 
 
 def parse_bars(payload: dict[str, Any], *, period_min: int = 1, now=None) -> pd.DataFrame:
@@ -323,7 +330,10 @@ class CrossTradeBroker:
 
     def retrieve_bars(self, start, end, *, limit: int = 2000) -> pd.DataFrame:
         out = self._call("POST", "/v1/api/market/bars", bars_payload(self.cfg, start, end, limit=limit))
-        return parse_bars(out, now=end)
+        bars = parse_bars(out, now=end)
+        # The real server does not keep to ``from``: asked on 2026-11-27 for 10 minutes, it sent two sessions.
+        # The engine must see only what it asked for (TopstepX does that itself), so cut here, on the bar OPEN.
+        return bars[bars["ts"] >= pd.Timestamp(start)].reset_index(drop=True)
 
     # ---- the fill watcher ------------------------------------------------------------------------------------
     def pending(self) -> list[str]:
