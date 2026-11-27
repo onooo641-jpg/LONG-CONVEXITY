@@ -1,0 +1,7 @@
+=== ubatchp
+  batchp_mof_hist.csv: HTTP 200, 1197657 bytes
+  batchp_mof_cur.csv: HTTP 200, 1955 bytes
+  batchp_mof_auctions.xls: HTTP 200, 494592 bytes
+  batchp_boe_10y.csv: HTTP 200, 227320 bytes
+  batchp_bbk_10y.csv: HTTP 200, 235583 bytes
+=== ubatchp done in 15s  ok 0 fail 0
