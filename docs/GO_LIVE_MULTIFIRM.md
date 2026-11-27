@@ -95,6 +95,9 @@ the entry: unknown is treated as "do not enter".
   `data/roundtrip_proof.json`.
 
 ## Steps (same discipline as `docs/GO_LIVE.md`)
+On Windows, steps 2–5 are one script: `scripts/crosstrade_test.ps1 -Step check | roundtrip | dryrun` (not yet run on a
+Windows machine; the key is asked for each run and never saved).
+
 1. **Install:** NinjaTrader 8 (free for simulation), the CrossTrade NT8 Add-On, and the CrossTrade 7-day trial. Start the trial
    only when steps 2–5 can be done within the 7 days. Pro ($49/month) is needed only after the trial, for live trading. Connect each
    firm's account in NinjaTrader.
