@@ -9,7 +9,8 @@ Picks the rows of data/journal_crosstrade_test.jsonl whose UTC timestamp falls i
 
 Refuses to write anything (exit 2) if a row looks like it holds a secret: the value of CROSSTRADE_API_KEY when it is
 set in this process, a "Bearer " header, or an api_key / secret field. Journals should never hold one; this checks.
-PASS = the engine exited 0, no row is an error event, and (except for the check step) the day has rows.
+PASS = the engine exited 0, no row is an error event, and (except for the check step) there are rows. With --since, only
+rows written from that time on are judged; the copied journal is still the whole day.
 """
 
 from __future__ import annotations
@@ -105,6 +106,8 @@ def main(argv=None) -> int:
     ap.add_argument("--exit-code", type=int, required=True)
     ap.add_argument("--date", default=None, help="New York trading date, YYYY-MM-DD (default: today)")
     ap.add_argument("--journal", default=str(JOURNAL))
+    ap.add_argument("--since", default=None,
+                    help="UTC time this run started: PASS/FAIL judges only rows from then on (the copy keeps the day)")
     args = ap.parse_args(argv)
 
     start, end, ymd = trading_day(args.date)
@@ -118,7 +121,9 @@ def main(argv=None) -> int:
         return 2
     out = ROOT / "docs" / "jx_runs" / f"crosstrade_test_journal_{ymd}.jsonl"
     out.write_text("".join(r + "\n" for r in rows), encoding="utf-8")
-    ok, line = summary(rows, args.step, args.exit_code, ymd)
+    # One day can hold several runs; an earlier run's failure must not be counted against this one.
+    judged = select(rows, pd.Timestamp(args.since), end) if args.since else rows
+    ok, line = summary(judged, args.step, args.exit_code, ymd)
     append_note(line)
     print(line)
     return 0 if ok else 1

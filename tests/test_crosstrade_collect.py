@@ -57,3 +57,19 @@ def test_append_note_keeps_one_heading(tmp_path):
     text = notes.read_text(encoding="utf-8")
     assert text.count(cc.HEADING) == 1
     assert text.endswith(f"{cc.HEADING}\n- a\n- b\n")
+
+
+def test_since_judges_only_this_run_but_copies_the_whole_day(tmp_path, monkeypatch):
+    (tmp_path / "docs" / "jx_runs").mkdir(parents=True)
+    logged = []
+    monkeypatch.setattr(cc, "ROOT", tmp_path)
+    monkeypatch.setattr(cc, "append_note", logged.append)
+    j = tmp_path / "j.jsonl"
+    j.write_text(_row("2026-11-27T05:13:14+00:00", "roundtrip_failed") + "\n"
+                 + _row("2026-11-27T08:20:00+00:00", "bracket_probe_ok") + "\n", encoding="utf-8")
+    args = ["--step", "brackettest", "--exit-code", "0", "--date", "2026-11-27", "--journal", str(j)]
+    assert cc.main(args) == 1                                                   # whole day: the old failure counts
+    assert cc.main(args + ["--since", "2026-11-27T08:19:59Z"]) == 0             # this run only
+    assert "**PASS**" in logged[-1] and "roundtrip_failed" not in logged[-1]
+    copied = tmp_path / "docs" / "jx_runs" / "crosstrade_test_journal_20261127.jsonl"
+    assert len(copied.read_text(encoding="utf-8").splitlines()) == 2

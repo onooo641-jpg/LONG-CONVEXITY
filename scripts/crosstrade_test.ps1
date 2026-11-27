@@ -73,6 +73,8 @@ $env:BRIDGE_USE_GUARD = "0"
 $env:BRIDGE_HEDGE_REGISTRY = "$PWD\data\hedge.json"
 
 $journal = "data\journal_crosstrade_test.jsonl"
+# Journal rows carry whole seconds, so this is cut to whole seconds too.
+$runStart = [DateTime]::UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ")
 $code = 1
 try {
     switch ($Step) {
@@ -112,7 +114,7 @@ finally {
     $ErrorActionPreference = "Continue"   # git and uv write progress to stderr; that must not abort the collect
     if ($Collect) {
         # The collect script scans the rows for the key itself, so it gets the key for this one call only.
-        uv run python scripts\crosstrade_collect.py --step $Step --exit-code $code --date ("{0:yyyy-MM-dd}" -f $nyDate)
+        uv run python scripts\crosstrade_collect.py --step $Step --exit-code $code --date ("{0:yyyy-MM-dd}" -f $nyDate) --since $runStart
         $collected = $LASTEXITCODE
         Remove-Item Env:CROSSTRADE_API_KEY -ErrorAction SilentlyContinue
         if ($collected -eq 2) {
