@@ -1,0 +1,25 @@
+events 361; bodies 292 (0 errors); 1h symbols 567; Hyperliquid coins 235
+Short the coin from A rounded up + 1 h to the exit; excess = -(coin - BTC) - 0.09%. One announcement = one event.
+
+#501 Leverage-tier cuts
+   Stage 1 (< 2025): n 66, mean +3.43%, t 2.83 | median hold 72 h
+   Stage 2 (2025-26): n 83, mean -5.67%, t -0.91 | Hyperliquid-listed: n 69, mean +1.93%, t 1.52
+   variant (body says reduce/lower/decrease), Stage 2: n 0, mean +nan%, t nan (reported only)
+   diagnostic: Stage 2 events with symbols in the title: n 7, mean -82.19%, t -1.15 (reported only)
+   VERDICT FAIL | $/yr at $5,000 per event: $-12,363
+
+#502 Perp delistings
+   Stage 1 (< 2025): n 7, mean +1.48%, t 0.23 | median hold 170 h
+   Stage 2 (2025-26): n 27, mean +12.75%, t 1.93 | Hyperliquid-listed: n 5, mean +21.12%, t 1.47
+   diagnostic: Stage 2 events with symbols in the title: n 15, mean +17.99%, t 2.57 (reported only)
+   VERDICT FAIL (Stage 1 had < 8 events: no kill possible) | $/yr at $5,000 per event: $9,048
+
+#503 Margin-pair delistings
+   Stage 1 (< 2025): n 5, mean +3.27%, t 2.84 | median hold 72 h
+   Stage 2 (2025-26): n 0, mean +nan%, t nan | Hyperliquid-listed: n 0, mean +nan%, t nan
+   diagnostic: Stage 2 events with symbols in the title: n 0, mean +nan%, t nan (reported only)
+   VERDICT FAIL (Stage 1 had < 8 events: no kill possible) | $/yr at $5,000 per event: $0
+
+#504 Collateral-ratio cuts
+   no usable events: NOT TESTABLE
+
