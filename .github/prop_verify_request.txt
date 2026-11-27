@@ -1,2 +1,2 @@
-# go-live: Topstep Starter Challenge rules (expand mode)
+# Batch Q probe: index change histories (expand mode)
 expand

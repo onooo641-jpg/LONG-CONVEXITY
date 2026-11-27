@@ -13,12 +13,13 @@ from playwright.sync_api import sync_playwright
 
 OUT = Path(__file__).resolve().parent.parent / "data" / "public" / "propverify"
 PAGES = [
-    # Topstep Starter Challenge ($10) go-live test: its rules (profit target, payout, bot use), the $3K Challenge and the API page
-    "https://help.topstep.com/en/articles/18482122",
-    "https://help.topstep.com/en/articles/18466040",
-    "https://help.topstep.com/en/articles/11187768",
+    # Batch Q probe (docs/PLAN_BATCHES_O_Z.md): where non-US index constituent-change histories live
+    "https://indexes.nikkei.co.jp/en/nkave/archives/news",
+    "https://indexes.nikkei.co.jp/en/nkave/index/profile?idx=nk225",
+    "https://www.hsi.com.hk/eng/newsroom/index-other-notices",
+    "https://www.hsi.com.hk/eng/indexes/all-indexes/hsi",
 ]
-CRAWL = ("help.topstep.com/en/articles/18482122", "help.topstep.com/en/articles/18466040")
+CRAWL = ("indexes.nikkei.co.jp/en/nkave/archives/news",)
 TAB = re.compile(r"^\$?\s?(2\.5|5|10|25|50|75|100|150|200|250|300)\s?K$|^(Static|Trail|EOD|S2F|S2L|Instant|Live|1-Step|2-Step)$", re.I)
 
 
