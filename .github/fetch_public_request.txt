@@ -1,3 +1,2 @@
-# jobs for scripts/fetch_public.py (one per line)
-# Batch K2 pull (workstream C)
-ubatchk2
+# Batch L pull (workstream C)
+ubatchl

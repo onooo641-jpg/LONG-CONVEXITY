@@ -1891,6 +1891,16 @@ def job_ubatchh2():
 JOBS["ubatchh2"] = job_ubatchh2
 
 
+def job_ubatchl():
+    """Batch L pull (non-prop workstream C; defined in fetch_uncharted.py)."""
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from fetch_uncharted import job_ubatchl as _j
+    _j()
+
+
+JOBS["ubatchl"] = job_ubatchl
+
+
 def job_ubatchi():
     """Batch I pull (non-prop workstream C; defined in fetch_uncharted.py)."""
     sys.path.insert(0, str(Path(__file__).resolve().parent))

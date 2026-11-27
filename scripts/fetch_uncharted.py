@@ -2284,3 +2284,121 @@ def job_uprobe():
 
 JOBS = {"uprobe": job_uprobe, "u383vaults": _safe(job_u383vaults), "u384lst": _safe(job_u384lst), "u385hyperp": _safe(job_u385hyperp),
         "u386tags": _safe(job_u386tags), "u387cca": _safe(job_u387cca), "u391hkipo": _safe(job_u391hkipo), "u387ccab": _safe(job_u387ccab), "u389binance": _safe(job_u389binance), "u387eth": _safe(job_u387eth), "u389docs": _safe(job_u389docs), "uwave3": job_uwave3, "uscale": job_uscale, "ufive": job_ufive, "uhip3": _safe(job_uhip3), "uw3b": _safe(job_uw3b), "udistinct": _safe(job_udistinct), "unav": _safe(job_unav), "udln": _safe(job_udln), "udln2": _safe(job_udln2), "ubatcha": _safe(job_ubatcha), "urates": _safe(job_urates), "ubatchb": _safe(job_ubatchb), "ubatchc": _safe(job_ubatchc), "ubatchc2": _safe(job_ubatchc2), "uverify": _safe(job_uverify), "ubatchd": _safe(job_ubatchd), "ucb442": _safe(job_ucb442), "upendle": _safe(job_upendle), "ubatchf": _safe(job_ubatchf), "ubatchf2": _safe(job_ubatchf2), "ubatchf3": _safe(job_ubatchf3), "ubatchg": _safe(job_ubatchg), "ubatchh": _safe(job_ubatchh), "ubatchh2": _safe(job_ubatchh2), "ubatchi": _safe(job_ubatchi)}
+
+
+# ---------------------------------------------------------------- Batch L #501-#504 (docs/PREREG_BATCH_L_20261127.md)
+BATCHL_PATTERNS = {501: r"Leverage (and|&) Margin Tiers", 502: r"Futures Will Delist", 503: r"Margin Will Delist",
+                   504: r"Collateral Ratio"}
+
+
+def _batchl_catalog():
+    import json as _json
+    import re as _re
+    d = _json.loads((OUT / "uncharted_w3_binance_ann.json").read_text())
+    rows = []
+
+    def walk(x):
+        if isinstance(x, dict):
+            if "title" in x and "releaseDate" in x:
+                rows.append(x)
+            for v in x.values():
+                walk(v)
+        elif isinstance(x, list):
+            for v in x:
+                walk(v)
+    walk(d)
+    seen, out = set(), []
+    for r in sorted(rows, key=lambda r: r["releaseDate"]):
+        for idea, pat in BATCHL_PATTERNS.items():
+            if _re.search(pat, r["title"]) and (r["code"], idea) not in seen:
+                seen.add((r["code"], idea))
+                out.append({"idea": idea, "title": r["title"], "code": r["code"], "ms": int(r["releaseDate"])})
+    return out
+
+
+def _batchl_body(code):
+    import json as _json
+    u = f"https://www.binance.com/bapi/composite/v1/public/cms/article/detail/query?articleCode={code}"
+    try:
+        with urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=30) as r:
+            data = _json.loads(r.read().decode()).get("data") or {}
+    except Exception as e:  # noqa: BLE001
+        return f"__ERROR__ {type(e).__name__}: {e}"
+    body = data.get("body") or ""
+    texts = []
+
+    def walk(x):
+        if isinstance(x, dict):
+            if isinstance(x.get("text"), str):
+                texts.append(x["text"])
+            for k in ("child", "children", "content"):
+                if k in x:
+                    walk(x[k])
+            if x.get("node") in ("element",) and x.get("tag") in ("p", "tr", "li", "h2", "h3", "br"):
+                texts.append("\n")
+        elif isinstance(x, list):
+            for v in x:
+                walk(v)
+    try:
+        walk(_json.loads(body))
+        txt = " ".join(texts)
+    except Exception:  # noqa: BLE001
+        txt = re.sub(r"<[^>]+>", " ", body) if isinstance(body, str) else str(body)
+    return re.sub(r"[ \t]+", " ", txt)
+
+
+def job_ubatchl():
+    """Batch L: Binance risk-parameter announcements -> bodies, symbols, dates; USD-M 1h closes around each event + BTCUSDT."""
+    import json as _json
+    import time as _time
+    cat = _batchl_catalog()
+    counts = {i: sum(1 for e in cat if e["idea"] == i) for i in BATCHL_PATTERNS}
+    print("  catalog events:", len(cat), counts, flush=True)
+    bodies = {}
+    for e in cat:
+        if e["code"] not in bodies:
+            bodies[e["code"]] = _batchl_body(e["code"])
+            _time.sleep(0.25)
+    errs = sum(b.startswith("__ERROR__") for b in bodies.values())
+    print(f"  bodies: {len(bodies)} fetched, {errs} errors", flush=True)
+    (OUT / "batchl_bodies.json").write_text(_json.dumps(bodies))
+    s3_list = _bn_archive_lister()
+    _, prefs = s3_list("data/futures/um/monthly/klines/")
+    universe = {p.rstrip("/").split("/")[-1] for p in prefs}
+    print(f"  USD-M archive symbols: {len(universe)}", flush=True)
+    stable = {"USDCUSDT", "FDUSDUSDT", "TUSDUSDT", "BUSDUSDT", "USDPUSDT", "DAIUSDT", "BTCUSDT"}
+    events, need = [], set()
+    for e in cat:
+        text = e["title"] + "\n" + bodies.get(e["code"], "")
+        if e["idea"] == 503:
+            m = re.search(r"Margin Will Delist ([A-Z0-9]+)", e["title"])
+            cands = {m.group(1) + "USDT"} if m else set()
+        elif e["idea"] == 504:
+            cands = set()
+            for ln in text.split("\n"):
+                if ln.count("%") >= 2:
+                    cands |= {w + "USDT" for w in re.findall(r"\b([A-Z][A-Z0-9]{1,11})\b", ln)}
+        else:
+            cands = set(re.findall(r"\b([A-Z0-9]{2,15}USDT)\b", text))
+        syms = sorted((cands & universe) - stable)
+        events.append({**e, "syms": syms})
+        t0 = pd.Timestamp(e["ms"], unit="ms")
+        for s in syms + ["BTCUSDT"]:
+            for k in (0, 1):
+                need.add((s, (t0 + pd.DateOffset(months=k)).strftime("%Y-%m")))
+    (OUT / "batchl_events.json").write_text(_json.dumps(events))
+    print(f"  events with symbols: {sum(bool(e['syms']) for e in events)} of {len(events)}; symbol-months: {len(need)}", flush=True)
+    for y in range(2022, 2027):
+        for m in range(1, 13):
+            mth = f"{y}-{m:02d}"
+            if "2022-10" <= mth <= "2026-11":
+                need.add(("BTCUSDT", mth))
+    from concurrent.futures import ThreadPoolExecutor
+    tasks = sorted(need)
+    rows = []
+    with ThreadPoolExecutor(8) as ex:
+        for (s, mth), res in zip(tasks, ex.map(lambda a: _bn_month("k1h", a[0], a[1]), tasks)):
+            rows += [(s, t, v) for t, v in res]
+    df = pd.DataFrame(rows, columns=["sym", "t", "close"]).drop_duplicates(["sym", "t"])
+    print(f"  1h rows: {len(df):,} for {df.sym.nunique()} symbols", flush=True)
+    save("batchl_1h", df)
