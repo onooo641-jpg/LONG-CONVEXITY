@@ -316,7 +316,7 @@ class LiveEngine:
         self.closed = True
         self.finished_clean = True
         if self.hedge is not None:
-            self.hedge.release(self.cfg.market)
+            self.hedge.release(self.cfg.market, engine=self.cfg.engine_id)
         self.journal.write("session_done", at=now.isoformat(),
                            et_minute=et_minute(now),
                            nothing_outstanding=not self.outstanding)
@@ -376,7 +376,7 @@ class LiveEngine:
             self.handled.add(key)
         if self.hedge is not None and not decision.ok:
             # Nothing is resting, so the claim must not block other markets.
-            self.hedge.release(self.cfg.market, key)
+            self.hedge.release(self.cfg.market, key, engine=self.cfg.engine_id)
         if decision.ok and decision.order_id is not None:
             self.outstanding[key] = decision.order_id
         log.info("%s -> %s", key, decision.detail)
@@ -391,7 +391,7 @@ class LiveEngine:
         flat = (now.tz_convert(NY).normalize()
                 + pd.Timedelta(minutes=self.cfg.flat_minute)).tz_convert("UTC")
         try:
-            conflict = self.hedge.claim(self.cfg.market, int(row.direction), key, now, flat)
+            conflict = self.hedge.claim(self.cfg.market, int(row.direction), key, now, flat, engine=self.cfg.engine_id)
         except (HedgeRegistryError, TimeoutError, OSError) as exc:
             self.handled.add(key)
             self.journal.write("blocked_hedge", key=key, why=f"registry unreadable: {exc}")

@@ -64,7 +64,14 @@ class AccountState:
             return
         if self.day is not None:
             closed = cfg.account_start + self.realized
-            self.mll_floor = max(self.mll_floor, closed - cfg.max_loss_limit)
+            floor_mode = getattr(cfg, "floor_mode", "eod")
+            if floor_mode != "static":  # a static floor (DayTraders Static, Topstep Labs) never moves
+                self.mll_floor = max(self.mll_floor, closed - cfg.max_loss_limit)
+            lock_at, lock_level = getattr(cfg, "lock_at", None), getattr(cfg, "lock_level", None)
+            if lock_at is not None and lock_level is not None:
+                # Lucid: the trail stops once it reaches start + lock_level (after profit reaches lock_at)
+                self.mll_floor = min(self.mll_floor, cfg.account_start + lock_level) \
+                    if self.realized < lock_at else cfg.account_start + lock_level
         self.day = day
         self.day_open_equity = self.equity(cfg)
         self.trades_today = 0

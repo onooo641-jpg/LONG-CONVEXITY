@@ -38,6 +38,28 @@ CONSISTENCY: dict[str, float | None] = {
     "Apex 50K EOD": None, "Apex 100K EOD": None,
 }
 
+#: Firms other than Topstep (prop search 3, docs/PREREG_PROP_SEARCH3_20261126.md). Kept OUT of PRESETS on
+#: purpose: PRESETS must stay identical to the Pine preset table (tests/test_bridge.py). Each row:
+#: (profit target, max loss limit, daily loss limit, max micros, consistency, floor mode, lock_at, lock_level)
+#:   floor mode "eod"    -- floor trails the end-of-day closed balance (Topstep's model)
+#:              "static" -- floor never moves (DayTraders Static; Topstep Labs static)
+#:   lock_at / lock_level -- once the closed profit reaches lock_at, the floor stops at start + lock_level
+#: A daily loss limit the firm does not have is 1e9 (never triggers), as for Apex above.
+#: Sources: Lucid support pages (EOD; unrealized P&L ignored; LucidFlex 40% consistency, DLL $1,200 when on),
+#: DayTraders help "Static evaluation at a glance" (Oct 2026), Topstep Labs page (2026-11-26).
+FIRM_PRESETS: dict[str, tuple[float, float, float, int, float | None, str, float | None, float | None]] = {
+    "LucidFlex 50K":          (3000.0, 2000.0, 1200.0, 40, 0.40, "eod", 2100.0, 100.0),
+    "LucidDaily 50K":         (3000.0, 2000.0, 1e9, 40, 0.50, "eod", 2100.0, 100.0),
+    "DayTraders 100K Static": (5750.0, 1500.0, 1e9, 80, 0.50, "static", None, None),
+    "DayTraders 150K Static": (6750.0, 1750.0, 1e9, 80, 0.50, "static", None, None),
+    "Topstep $3K Challenge":  (3000.0, 1000.0, 1e9, 10, None, "static", None, None),
+}
+
+#: Brokers the engine can talk to. "topstepx" is the ProjectX Gateway (Topstep). "crosstrade" drives
+#: NinjaTrader 8 through the CrossTrade NT8 Add-On, which is how Lucid (CrossTrade) and DayTraders /
+#: FFN (Rithmic accounts inside NinjaTrader) are reached without a custom Rithmic client.
+BROKERS = ("topstepx", "crosstrade")
+
 #: Micro contracts the strategy may trade, as (tick size, $ per point). NQ is the
 #: default and keeps its old contract id default; ES and YM must name their
 #: contract id explicitly (BRIDGE_CONTRACT_ID) because the TopstepX id format for
@@ -98,6 +120,22 @@ class Config:
     #: two markets ever hold opposite directions at once (the firms' cross-account
     #: hedging ban). None = off, which is the right setting for a single market.
     hedge_registry: str | None = None
+    #: Which broker connector (BROKERS). Topstep stays the default.
+    broker: str = "topstepx"
+    #: Broker-side account name for connectors that address accounts by name (CrossTrade / NinjaTrader).
+    account_name: str | None = None
+    #: Broker-side instrument name (CrossTrade / NinjaTrader native, e.g. "MNQ 12-26").
+    instrument: str | None = None
+    #: How the loss-limit floor moves (see FIRM_PRESETS). Topstep presets keep "eod" with no lock.
+    floor_mode: str = "eod"
+    lock_at: float | None = None
+    lock_level: float | None = None
+
+    @property
+    def engine_id(self) -> str:
+        """Unique per firm account and market: the hedge registry's owner key."""
+        acct = self.account_id if self.account_id is not None else (self.account_name or "-")
+        return f"{self.broker}:{acct}:{self.market}"
 
     def best_day_cap(self) -> float | None:
         """Largest single day that does not push the profit target up."""
@@ -110,15 +148,25 @@ class Config:
             raise RuntimeError(f"BRIDGE_MARKET={market!r} is not one of {sorted(MARKETS)}")
         tick_default, pv_default = MARKETS[market]
         preset = _env("BRIDGE_PRESET", "Topstep 50K")
-        if preset not in PRESETS:
-            raise RuntimeError(f"BRIDGE_PRESET={preset!r} is not one of {sorted(PRESETS)}")
-        target, mll, daily, max_ct = PRESETS[preset]
+        if preset in PRESETS:
+            target, mll, daily, max_ct = PRESETS[preset]
+            cons, floor_mode, lock_at, lock_level = CONSISTENCY.get(preset), "eod", None, None
+        elif preset in FIRM_PRESETS:
+            target, mll, daily, max_ct, cons, floor_mode, lock_at, lock_level = FIRM_PRESETS[preset]
+        else:
+            raise RuntimeError(f"BRIDGE_PRESET={preset!r} is not one of {sorted(PRESETS) + sorted(FIRM_PRESETS)}")
+        broker = _env("BRIDGE_BROKER", "topstepx").lower()
+        if broker not in BROKERS:
+            raise RuntimeError(f"BRIDGE_BROKER={broker!r} is not one of {BROKERS}")
+        ct = broker == "crosstrade"
         return cls(
-            username=_env("TOPSTEPX_USERNAME"),
-            api_key=_env("TOPSTEPX_API_KEY"),
-            base_url=_env("TOPSTEPX_BASE_URL", "https://api.topstepx.com"),
-            account_id=_env("TOPSTEPX_ACCOUNT_ID", None, int),
-            contract_id=_env("BRIDGE_CONTRACT_ID", "CON.F.US.MNQ.Z26" if market == "NQ" else MISSING),
+            username=_env("TOPSTEPX_USERNAME", "" if ct else MISSING),
+            # Each connector reads only its own secret, and only from the environment.
+            api_key=_env("CROSSTRADE_API_KEY") if ct else _env("TOPSTEPX_API_KEY"),
+            base_url=_env("CROSSTRADE_BASE_URL", "https://app.crosstrade.io") if ct
+            else _env("TOPSTEPX_BASE_URL", "https://api.topstepx.com"),
+            account_id=None if ct else _env("TOPSTEPX_ACCOUNT_ID", None, int),
+            contract_id=_env("BRIDGE_CONTRACT_ID", "" if ct else ("CON.F.US.MNQ.Z26" if market == "NQ" else MISSING)),
             tick_size=_env("BRIDGE_TICK_SIZE", tick_default, float),
             point_value=_env("BRIDGE_POINT_VALUE", pv_default, float),
             # The local signal engine has no inbound surface to protect, so the
@@ -154,7 +202,13 @@ class Config:
             # default. Turning it off is a decision, so it stays explicit.
             use_guard=_env("BRIDGE_USE_GUARD", "1") not in ("0", "false", "False"),
             scaling_plan=_env("BRIDGE_SCALING_PLAN", "0") not in ("0", "false", "False"),
-            consistency=CONSISTENCY.get(preset),
+            consistency=cons,
             market=market,
             hedge_registry=_env("BRIDGE_HEDGE_REGISTRY", None),
+            broker=broker,
+            account_name=_env("CROSSTRADE_ACCOUNT") if ct else None,
+            instrument=_env("CROSSTRADE_INSTRUMENT") if ct else None,
+            floor_mode=floor_mode,
+            lock_at=lock_at,
+            lock_level=lock_level,
         )

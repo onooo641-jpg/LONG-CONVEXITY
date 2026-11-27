@@ -13,6 +13,13 @@ crashed engine cannot block the others past the flat time.
 
 The file is plain JSON, guarded by a lock file created with O_EXCL, which works
 the same on Windows and Linux.
+
+Claims belong to an *engine* (firm, account and market), not just a market. With
+several firms on one computer -- a Topstep NQ engine next to a Lucid NQ engine --
+two engines can trade the same market, and the hedging ban covers opposite
+positions across accounts on the same contract too. Keying claims by market alone
+also let the first NQ engine to finish release the other NQ engine's claims. An
+engine id defaults to the market name, so single-firm setups behave as before.
 """
 
 from __future__ import annotations
@@ -82,26 +89,37 @@ class HedgeRegistry:
     def _live(rows: list[dict], now: pd.Timestamp) -> list[dict]:
         return [r for r in rows if pd.Timestamp(r["expires_at"]) > now]
 
+    @staticmethod
+    def _engine(row: dict) -> str:
+        return row.get("engine") or row["market"]
+
     def claim(self, market: str, direction: int, key: str, now: pd.Timestamp,
-              expires_at: pd.Timestamp) -> dict | None:
-        """Atomically: return the conflicting claim if any, else record ours and return None."""
+              expires_at: pd.Timestamp, engine: str | None = None) -> dict | None:
+        """Atomically: return the conflicting claim if any, else record ours and return None.
+
+        A claim conflicts when ANOTHER engine holds the opposite direction, whatever
+        its market: a different market (correlated index futures) or the same market
+        in another account (the same contract) are both cross-account hedges.
+        """
+        engine = engine or market
         with self._locked():
             rows = self._live(self._read(), now)
             for r in rows:
-                if r["market"] != market and int(r["direction"]) != int(direction):
+                if self._engine(r) != engine and int(r["direction"]) != int(direction):
                     self._write(rows)
                     return r
-            rows = [r for r in rows if not (r["market"] == market and r["key"] == key)]
-            rows.append({"market": market, "direction": int(direction), "key": key,
+            rows = [r for r in rows if not (self._engine(r) == engine and r["key"] == key)]
+            rows.append({"market": market, "engine": engine, "direction": int(direction), "key": key,
                          "claimed_at": now.isoformat(), "expires_at": expires_at.isoformat()})
             self._write(rows)
             return None
 
-    def release(self, market: str, key: str | None = None) -> None:
-        """Drop this market's claim (all of them when key is None)."""
+    def release(self, market: str, key: str | None = None, engine: str | None = None) -> None:
+        """Drop this engine's claim (all of them when key is None). Never touches another engine's."""
+        engine = engine or market
         with self._locked():
             rows = [r for r in self._read()
-                    if not (r["market"] == market and (key is None or r["key"] == key))]
+                    if not (self._engine(r) == engine and (key is None or r["key"] == key))]
             self._write(rows)
 
     def claims(self, now: pd.Timestamp) -> list[dict]:
