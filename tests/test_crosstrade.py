@@ -102,6 +102,21 @@ def test_bar_request_and_window_match_what_the_real_server_does():
     assert list(bars["ts"].dt.strftime("%H:%M")) == ["02:00", "02:01"]     # not before start, nothing unclosed
 
 
+def test_month_named_instruments_from_the_server_count_as_ours():
+    """2026-11-27, real server: asked with 'MNQ 12-26', orders came back as 'MNQ DEC26' and were filtered out."""
+    fake = Fake()
+    fake.on("GET", f"{ACCT}/orders?activeOnly=true", {"success": True, "orders": [
+        {"id": "nt9", "instrument": "MNQ DEC26", "orderState": "Working",
+         "userData": "<NinjaTrader>\r\n  <AutomatedTradingOrderId>lc-abc</AutomatedTradingOrderId>\r\n</NinjaTrader>"}]})
+    fake.on("GET", f"{ACCT}/positions", {"success": True, "positions": [
+        {"instrument": "MNQ DEC26", "marketPosition": "Long", "quantity": 2},
+        {"instrument": "MES MAR27", "marketPosition": "Long", "quantity": 1}]})
+    b = _broker(fake)
+    [order] = b.open_orders()
+    assert (order["id"], order["contractId"]) == ("lc-abc", "MNQ 12-26")
+    assert [p["contractId"] for p in b.open_positions()] == ["MNQ 12-26", "MES 03-27"]
+
+
 def test_place_sends_the_documented_request_and_watches_the_entry():
     fake = Fake()
     fake.on("POST", f"{ACCT}/orders/place", {"orderId": "cb1fc8d4", "effectiveAction": "Buy",

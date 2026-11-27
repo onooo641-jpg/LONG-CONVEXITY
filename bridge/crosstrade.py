@@ -183,15 +183,33 @@ def custom_id(user_data: str | None) -> str | None:
     return m.group(1).strip() if m else None
 
 
+_MONTHS = ("JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC")
+_MONTH_NAMED = re.compile(rf"^(\S+) ({'|'.join(_MONTHS)})(\d\d)$", re.I)
+
+
+def instrument_name(name: str | None) -> str | None:
+    """A futures name in the form the engine is configured with: ``MNQ DEC26`` becomes ``MNQ 12-26``.
+
+    The server accepts ``MNQ 12-26`` in requests but answers with ``MNQ DEC26`` (order lookup and bars, seen
+    2026-11-27). Compared as sent, ``LiveEngine.ours`` matched none of our own rows: a resting order was
+    invisible, and an open position named that way would have read as flat. Any other name is left alone.
+    """
+    m = _MONTH_NAMED.match((name or "").strip())
+    if not m:
+        return name
+    return f"{m.group(1).upper()} {_MONTHS.index(m.group(2).upper()) + 1:02d}-{m.group(3)}"
+
+
 def order_row(raw: dict[str, Any], known: dict[str, str] | None = None) -> dict[str, Any]:
     """An NT8 order in the shape the engine reads: ``id`` (ours where we have one) and ``contractId``.
 
-    ``contractId`` is the NT8 instrument name, which is what ``Config.contract_id`` holds for this broker, so
-    ``LiveEngine.ours`` filters CrossTrade rows with the same test it uses for TopstepX.
+    ``contractId`` is the NT8 instrument name in the configured form (``instrument_name``), which is what
+    ``Config.contract_id`` holds for this broker, so ``LiveEngine.ours`` filters CrossTrade rows with the same
+    test it uses for TopstepX.
     """
     nt_id = str(raw.get("id", ""))
     ours = custom_id(raw.get("userData")) or (known or {}).get(nt_id)
-    return {**raw, "id": ours or nt_id, "ntId": nt_id, "contractId": raw.get("instrument"),
+    return {**raw, "id": ours or nt_id, "ntId": nt_id, "contractId": instrument_name(raw.get("instrument")),
             "status": raw.get("orderState")}
 
 
@@ -200,7 +218,8 @@ def position_row(raw: dict[str, Any]) -> dict[str, Any] | None:
     qty = int(raw.get("quantity") or 0)
     if qty == 0 or str(raw.get("marketPosition", "")).lower() == "flat":
         return None
-    return {**raw, "id": raw.get("instrument"), "contractId": raw.get("instrument"), "size": qty}
+    name = instrument_name(raw.get("instrument"))
+    return {**raw, "id": name, "contractId": name, "size": qty}
 
 
 Transport = Callable[[str, str, dict[str, Any] | None], dict[str, Any]]
