@@ -1,0 +1,5 @@
+=== ubatchm
+  wrote batchm_gld_1d.parquet: 5540 rows
+  spot 1h rows 48,657 for 17 symbols (155 symbol-months asked)
+  wrote batchm_spot_1h.parquet: 48657 rows
+=== ubatchm done in 7s  ok 0 fail 0
