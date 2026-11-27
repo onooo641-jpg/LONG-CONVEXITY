@@ -60,3 +60,4 @@ Breakout dropped: no API) and `docs/PREREG_MARKETMIX_20261120.md` (NQ/ES/YM mix 
 - `docs/NOTES_JX.md`: running log and conclusions (latest: "Conclusion of the 2026-11-20 search").
 - `docs/IDEAS_64_STATUS.md`: status of the original 64 ideas.
 - `docs/HANDOFF_NONPROP.md`: what non-prop ideas were tried, why they failed, what is left.
+- `docs/HANDOFF_GO_LIVE_CROSSTRADE.md`: going live on Lucid / DayTraders via CrossTrade: status, facts with sources, checklist.

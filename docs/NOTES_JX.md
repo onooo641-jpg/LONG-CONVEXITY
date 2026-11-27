@@ -882,3 +882,7 @@ $38,034; bar: real ≥ $19,017, dip ≥ −$5,794.
   - NinjaTrader 8;
   - a sim account for steps 3–4;
   - which computer and accounts run the new firms.
+- **Status and checklist from here on:** `docs/HANDOFF_GO_LIVE_CROSSTRADE.md`.
+  - Pricing: CrossTrade Pro is $49/month, with a 7-day free trial that includes the API (third-party).
+  - Jx's NinjaTrader sim account exists (trial ends ≈ 2026-12-10).
+  - The setup was handed to a local session on Jx's PC, because Remote Control could not share the PC's folders with a cloud session.

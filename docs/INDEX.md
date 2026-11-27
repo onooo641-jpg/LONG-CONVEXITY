@@ -15,6 +15,7 @@ firms' rules. Status: backtest + paper forward log; first live Topstep account b
 |---|---|
 | What the business is and how it works | `README.md` |
 | How to go live (Chinese) and the live-account checklist | `docs/GO_LIVE.md`, `docs/WINDOWS_SETUP.md`, `bridge/README.md` |
+| **Going live on Lucid / DayTraders (CrossTrade): status, next steps, checklist** | **`docs/HANDOFF_GO_LIVE_CROSSTRADE.md`** (start here), technical guide `docs/GO_LIVE_MULTIFIRM.md` |
 | Running NQ + ES + YM on separate accounts (later) | `docs/MULTI_MARKET.md` |
 | Live account vs model: what is compared, predictions, gates | `docs/PREREG_LIVE_20261120.md`, report in `docs/live_report.md` once data exists |
 | Current plan figures | `docs/PREREG_PORTFOLIO2_20261120.md`, `docs/PREREG_MARKETMIX_20261120.md` |

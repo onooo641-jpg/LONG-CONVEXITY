@@ -7,13 +7,15 @@ Plain-language guide. Sorted from "what makes money" to "what failed". Every num
 **Contents:** 1 Bottom line · 2 What only Jx can do · **2b Next step and money needed** · 3 Calendar · 4 Prop firms · 5 Liquidation bot · 6 Own-capital strategies ·
 7 Approval-gated roles (CoW, UniswapX) · 8 Uncharted search (U1–U28) · 9 Radar and monitoring · 10 How tests are run · 11 Where everything lives
 
+**Going live on Lucid / DayTraders (CrossTrade connector built 2026-11-27, practice test next):** `docs/HANDOFF_GO_LIVE_CROSSTRADE.md`.
+
 ---
 
 ## 1. Bottom line
 | What | Status | Money |
 |---|---|---|
 | **Prop-firm recycling, Topstep 50K** (corrected 2026-11-27: loss limit checked on open P&L) | **Works (backtest 2016–26); bot runs today** | **$39,949 = $3,689/yr**, coin flip $7,699; worst dip −$3,862; up to 5 accounts |
-| Second firm: **LucidFlex 50K DLL ON** (and LucidDaily $85.40) | **Qualifies on Lucid's own stated rule** (EOD drawdown ignores open P&L); needs CrossTrade ($49/month) for the bot | LucidFlex $40,545 (coin flip $21,522), LucidDaily $35,798; up to 5 Lucid funded accounts per household |
+| Second firm: **LucidFlex 50K DLL ON** (and LucidDaily $85.40) | **Qualifies on Lucid's own stated rule** (EOD drawdown ignores open P&L); needs CrossTrade Pro ($49/month, 7-day free trial) for the bot; connector built, see `docs/HANDOFF_GO_LIVE_CROSSTRADE.md` | LucidFlex $40,545 (coin flip $21,522), LucidDaily $35,798; up to 5 Lucid funded accounts per household |
 | **#389 Resting bids under liquidation wicks** (Hyperliquid perps, own capital) | **Best non-prop result so far.** Stage 1 + out-of-sample on Binance (S2a) + risk (S2b) passed; forward paper (S2c) 2026-12-01 → 2027-01-26 and a margin check (S2d) still open | backtest ~$18.8K/yr on $15K (Hyperliquid 2023–26), or ~$6.4K/yr if resting orders lock margin; **loses in crash regimes** (Binance path −$22K, 2025-09 → 2026-07) |
 | **#397 Cascade-day reversal** (buy the perps that wicked, hold 3 days) | Stage 1 + Binance Stage 2 passed | ~7–8 events/yr, +3.3–3.7% per event ≈ $3.7K/yr unlevered on $15K; overlaps #389's crash days |
 | #385 Short Hyperliquid pre-launch perps | Survives Stage 1; small sizes only | ~$4K/yr; forward watch running |
