@@ -2354,11 +2354,19 @@ def job_ubatchl():
     cat = _batchl_catalog()
     counts = {i: sum(1 for e in cat if e["idea"] == i) for i in BATCHL_PATTERNS}
     print("  catalog events:", len(cat), counts, flush=True)
-    bodies = {}
+    # Reuse bodies already fetched; re-fetch only failures, slowly (the first run hit HTTP 429 on 163 of 292).
+    prev = OUT / "batchl_bodies.json"
+    bodies = {k: v for k, v in (_json.loads(prev.read_text()).items() if prev.exists() else []) if not v.startswith("__ERROR__")}
     for e in cat:
-        if e["code"] not in bodies:
-            bodies[e["code"]] = _batchl_body(e["code"])
-            _time.sleep(0.25)
+        if e["code"] in bodies:
+            continue
+        for attempt in range(6):
+            b = _batchl_body(e["code"])
+            if "429" not in b[:60]:
+                break
+            _time.sleep(20 * (attempt + 1))
+        bodies[e["code"]] = b
+        _time.sleep(1.5)
     errs = sum(b.startswith("__ERROR__") for b in bodies.values())
     print(f"  bodies: {len(bodies)} fetched, {errs} errors", flush=True)
     (OUT / "batchl_bodies.json").write_text(_json.dumps(bodies))

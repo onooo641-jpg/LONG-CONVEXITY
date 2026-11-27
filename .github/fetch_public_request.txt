@@ -1,2 +1,2 @@
-# Batch L pull (workstream C)
+# Batch L pull, retry rate-limited bodies (workstream C)
 ubatchl
