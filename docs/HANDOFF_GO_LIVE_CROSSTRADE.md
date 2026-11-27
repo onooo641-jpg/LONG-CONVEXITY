@@ -62,6 +62,10 @@ Only Jx can do sign-ups, type passwords and spend money. Everything else is for 
         and no other shift does (ledger XT1). The NT8 chart itself was not looked at.
 - [x] 2026-11-27 `-Step roundtrip` on Sim101: PASS, after the instrument-name fix.
 - [x] 2026-11-27 Daily `-Step dryrun` scheduled: Mon-Fri 22:25 Malaysia time, until 2026-12-05. First run 2026-11-27.
+- [ ] **Bracket test on Sim101** (added 2026-11-27 by the cloud session): `scripts\crosstrade_test.ps1 -Step brackettest -Account Sim101 -Collect`
+      while MNQ trades. It buys 1 contract at the market on the sim account and requires the stop and target to appear at the
+      intended prices; it then flattens and requires nothing left. This is the one live-path step the round trip and dry run never
+      reach (the stop and target go on only after a fill). Must PASS before `--live`.
 - [ ] Save each day's journal to `docs/jx_runs/crosstrade_test_journal_<YYYYMMDD>.jsonl` and add a dated line to `docs/NOTES_JX.md`
       (done by `-Collect`; tick after the last dry-run day).
 - [ ] Reconcile the dry run against the research engine (`scripts/reconcile.py`). Fills come from NinjaTrader's export.

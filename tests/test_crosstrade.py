@@ -318,3 +318,75 @@ def test_newest_bar_line_names_the_nt8_label_to_compare():
     assert "O 21000.25 H 21010.5 L 20990 C 21005.75 V 812" in line
     assert line.endswith("find the bar labelled 22:31 (NT8 labels a bar by its close)")
     assert "NT8" not in newest_bar_line(bars, "topstepx", local_tz="Asia/Kuala_Lumpur")
+
+
+class SimNT8:
+    """A tiny stateful stand-in for NT8 behind CrossTrade: the entry fills at once, cancel_and_bracket rests a stop and
+    a target, flatten clears everything. Instrument names come back month-named, as the real server does."""
+
+    def __init__(self, bracket_ok=True):
+        self.calls, self.orders, self.position, self.bracket_ok = [], [], 0, bracket_ok
+
+    def __call__(self, method, path, body):
+        self.calls.append((method, path, body))
+        if path == "/v1/api/market/bars":
+            return {"bars": [{"time": "2026-11-27T15:00:00Z", "open": 21000, "high": 21001, "low": 20999,
+                              "close": 21000, "volume": 5}], "success": True}
+        if path.endswith("/orders/place"):
+            self.position += body["quantity"]
+            self.entry = body
+            return {"orderId": "ntE", "disposition": "submitted", "success": True}
+        if "/orders/lc-" in path and method == "GET":
+            return {"id": "ntE", "orderState": "Filled", "filled": self.entry["quantity"], "success": True}
+        if path.endswith("/cancel_and_bracket"):
+            if not self.bracket_ok:
+                raise BrokerError("HTTP 500")
+            self.orders = [{"id": "s1", "instrument": "MNQ DEC26", "orderType": "StopMarket", "orderAction": "Sell",
+                            "stopPrice": body["stopLoss"], "limitPrice": 0.0, "ocoId": "o1", "userData": ""},
+                           {"id": "t1", "instrument": "MNQ DEC26", "orderType": "Limit", "orderAction": "Sell",
+                            "stopPrice": 0.0, "limitPrice": body["takeProfit"], "ocoId": "o1", "userData": ""}]
+            return {"success": True, "cancelled": 0, "placed": self.orders, "ocoId": "o1"}
+        if path.endswith("/orders?activeOnly=true"):
+            return {"orders": list(self.orders), "success": True}
+        if path.endswith("/positions"):
+            pos = [{"instrument": "MNQ DEC26", "marketPosition": "Long", "quantity": self.position}] if self.position else []
+            return {"positions": pos, "success": True}
+        if path.endswith("/positions/flatten"):
+            self.orders, self.position = [], 0
+            return {"success": True}
+        return {"success": True}
+
+
+def test_bracket_probe_proves_a_filled_entry_gets_its_stop_and_target_then_flattens(tmp_path):
+    from bridge.roundtrip import bracket_probe
+    sim, j = SimNT8(), Journal(tmp_path / "j.jsonl")
+    cfg = _cfg(account_name="Sim101")
+    b = CrossTradeBroker(cfg, transport=sim, journal=j, sleep=lambda s: None)
+    assert bracket_probe(cfg, b, j, sleep=lambda s: None, drive=b.protect_once,
+                         now=lambda: pd.Timestamp("2026-11-27 15:05", tz="UTC"))
+    entry = sim.entry
+    assert entry["action"] == "BUY" and entry["limitPrice"] == 21010.0 and entry["quantity"] == 1   # fills at once
+    ev = [r["event"] for r in j.read()]
+    assert "bracket_probe_protected" in ev and "bracket_probe_ok" in ev
+    prot = [r for r in j.read() if r["event"] == "bracket_probe_protected"][0]
+    assert (prot["stop"], prot["target"]) == (20970.0, 21050.0)
+    assert sim.position == 0 and sim.orders == []
+
+
+def test_bracket_probe_fails_and_still_flattens_when_no_bracket_appears(tmp_path):
+    from bridge.roundtrip import bracket_probe
+    sim, j = SimNT8(bracket_ok=False), Journal(tmp_path / "j.jsonl")
+    cfg = _cfg(account_name="Sim101")
+    b = CrossTradeBroker(cfg, transport=sim, journal=j, sleep=lambda s: None)
+    assert not bracket_probe(cfg, b, j, sleep=lambda s: None, drive=b.protect_once,
+                             now=lambda: pd.Timestamp("2026-11-27 15:05", tz="UTC"))
+    assert sim.position == 0
+    assert any(r["event"] == "bracket_probe_failed" and r["step"] == "protect" for r in j.read())
+
+
+def test_bracket_probe_refuses_anything_but_a_sim_account(tmp_path):
+    from bridge.roundtrip import bracket_probe
+    sim, j = SimNT8(), Journal(tmp_path / "j.jsonl")
+    cfg = _cfg(account_name="LUCID FLEX 1")
+    assert not bracket_probe(cfg, CrossTradeBroker(cfg, transport=sim), j, sleep=lambda s: None)
+    assert sim.calls == [] and j.read()[0]["event"] == "bracket_probe_refused"

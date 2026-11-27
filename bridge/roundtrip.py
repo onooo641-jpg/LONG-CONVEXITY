@@ -153,3 +153,100 @@ def prove(cfg: Config, broker, journal, *, path: pathlib.Path = PROOF_PATH,
     pathlib.Path(path).write_text(json.dumps(proof, indent=2))
     journal.write("roundtrip_ok", **proof)
     return True
+
+
+#: Bracket probe (CrossTrade only): how far above the last close the buy limit goes, so it fills at once on a sim
+#: account, and how far the stop and target sit from the entry (points).
+BRACKET_PROBE_ABOVE = 10.0
+BRACKET_PROBE_DISTANCE = 40.0
+BRACKET_POLLS = 20
+
+
+def bracket_probe(cfg: Config, broker, journal, *, sleep: Callable[[float], None] = time.sleep,
+                  now: Callable[[], pd.Timestamp] | None = None, drive: Callable[[], None] | None = None) -> bool:
+    """Prove the part ``prove`` cannot: a FILLED entry gets its stop and target, and flattening clears both.
+
+    CrossTrade attaches the stop and target only after the entry fills (bridge/crosstrade.py), and a never-filling
+    probe never reaches that code. This buys 1 contract at the market on a SIM account, requires the position plus
+    exactly the two protective orders at the intended prices, then flattens and requires no position and no
+    order left. Refuses any account whose name does not start with "Sim". ``drive`` is for tests (runs the fill
+    watcher in step); the real broker runs it on its own thread.
+    """
+    clock = now or (lambda: pd.Timestamp.now(tz="UTC"))
+    if cfg.broker != "crosstrade" or not str(cfg.account_name or "").lower().startswith("sim"):
+        journal.write("bracket_probe_refused", why="CrossTrade sim accounts only (name must start with 'Sim')",
+                      account=cfg.account_name)
+        return False
+    t = clock()
+    bars = broker.retrieve_bars(t - pd.Timedelta(days=4), t)
+    if bars.empty:
+        journal.write("bracket_probe_failed", step="bars", why="no bars to price the probe from")
+        return False
+    last = float(bars["close"].iloc[-1])
+    entry = round((last + BRACKET_PROBE_ABOVE) / cfg.tick_size) * cfg.tick_size
+    probe = Order(side="buy", size=1, entry=entry, stop=entry - BRACKET_PROBE_DISTANCE,
+                  target=entry + BRACKET_PROBE_DISTANCE, tag="bracket probe")
+    try:
+        placed = broker.place(probe)
+    except (BrokerError, KeyError, TypeError, ValueError) as exc:
+        journal.write("bracket_probe_failed", step="place", error=str(exc))
+        return False
+    want = placed.get("bracket") or {}
+    journal.write("bracket_probe_placed", order_id=placed.get("orderId"), entry=entry, last=last, bracket=want)
+
+    def state():
+        orders = _ours(broker.open_orders(), cfg)
+        held = _ours(broker.open_positions(), cfg)
+        stops = [o for o in orders if "stop" in str(o.get("orderType", "")).lower()]
+        limits = [o for o in orders if str(o.get("orderType", "")).lower() == "limit"]
+        return orders, held, stops, limits
+
+    protected, last_seen = False, None
+    for _ in range(BRACKET_POLLS):
+        if drive:
+            drive()
+        try:
+            orders, held, stops, limits = state()
+        except (BrokerError, KeyError, TypeError, ValueError) as exc:
+            journal.write("bracket_probe_query_failed", error=str(exc))
+            sleep(POLL_S)
+            continue
+        last_seen = {"orders": len(orders), "positions": len(held)}
+        if (held and len(stops) == 1 and len(limits) == 1
+                and abs(float(stops[0].get("stopPrice", 0)) - float(want.get("stopLoss", -1))) < 1e-6
+                and abs(float(limits[0].get("limitPrice", 0)) - float(want.get("takeProfit", -1))) < 1e-6):
+            protected = True
+            journal.write("bracket_probe_protected", position=int(held[0].get("size", 0)),
+                          stop=stops[0].get("stopPrice"), target=limits[0].get("limitPrice"),
+                          oco=[stops[0].get("ocoId"), limits[0].get("ocoId")])
+            break
+        sleep(POLL_S)
+
+    # Flatten whatever happened, protected or not: this probe must never leave anything behind.
+    try:
+        broker.close_position()
+    except BrokerError as exc:
+        journal.write("bracket_probe_failed", step="flatten", error=str(exc),
+                      why="CHECK NINJATRADER: the sim position may still be open")
+        return False
+    clean = False
+    for _ in range(POLLS):
+        try:
+            orders, held, _, _ = state()
+        except (BrokerError, KeyError, TypeError, ValueError) as exc:
+            journal.write("bracket_probe_query_failed", error=str(exc))
+            sleep(POLL_S)
+            continue
+        if not orders and not held:
+            clean = True
+            break
+        sleep(POLL_S)
+    if not protected:
+        journal.write("bracket_probe_failed", step="protect", last_seen=last_seen,
+                      why="no position with exactly one stop and one target at the intended prices")
+    if not clean:
+        journal.write("bracket_probe_failed", step="flatten", why="orders or a position still listed after flatten")
+    ok = protected and clean
+    if ok:
+        journal.write("bracket_probe_ok", account=cfg.account_name, contract_id=cfg.contract_id, at=clock().isoformat())
+    return ok

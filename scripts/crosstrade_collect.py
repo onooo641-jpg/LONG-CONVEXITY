@@ -36,6 +36,7 @@ ERROR_EVENTS = {
     "protect_gave_up_flattened", "protect_gave_up_flatten_failed", "open_orders_failed", "open_orders_unproven",
     "flatten_failed", "flatten_check_failed", "entry_watch_read_failed", "entry_watch_error", "done_check_failed",
     "cancel_failed", "empty_unproven", "session_end_unproven", "exit_alert",
+    "bracket_probe_refused", "bracket_probe_failed", "bracket_probe_query_failed",
 }
 _SECRETISH = re.compile(r"bearer\s+\S|\"(api_?key|secret|password|token)\"\s*:", re.I)
 
@@ -100,7 +101,7 @@ def append_note(line: str, notes: pathlib.Path = NOTES) -> None:
 
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--step", required=True, choices=["check", "roundtrip", "dryrun"])
+    ap.add_argument("--step", required=True, choices=["check", "roundtrip", "brackettest", "dryrun"])
     ap.add_argument("--exit-code", type=int, required=True)
     ap.add_argument("--date", default=None, help="New York trading date, YYYY-MM-DD (default: today)")
     ap.add_argument("--journal", default=str(JOURNAL))

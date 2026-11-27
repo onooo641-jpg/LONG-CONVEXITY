@@ -6,6 +6,8 @@
 #   powershell -ExecutionPolicy Bypass -File scripts\crosstrade_test.ps1 -Step savekey     (once: paste the key, saved on this PC only)
 #   powershell -ExecutionPolicy Bypass -File scripts\crosstrade_test.ps1 -Step check
 #   powershell -ExecutionPolicy Bypass -File scripts\crosstrade_test.ps1 -Step roundtrip
+#   powershell -ExecutionPolicy Bypass -File scripts\crosstrade_test.ps1 -Step brackettest (sim only: 1 contract filled,
+#                                                                                         stop+target checked, flattened)
 #   powershell -ExecutionPolicy Bypass -File scripts\crosstrade_test.ps1 -Step dryrun      (each trading day, from 09:25 New York)
 #
 # Add -Collect to copy that day's journal rows to docs\jx_runs, log PASS/FAIL in docs\NOTES_JX.md, commit and push
@@ -16,7 +18,7 @@
 # (use Sim101) and cancels it; 'dryrun' records orders instead of sending them.
 
 param(
-    [ValidateSet("savekey", "check", "roundtrip", "dryrun")] [string]$Step = "check",
+    [ValidateSet("savekey", "check", "roundtrip", "brackettest", "dryrun")] [string]$Step = "check",
     [string]$Account = "Sim101",
     [string]$Instrument = "MNQ 12-26",
     [string]$Preset = "LucidFlex 50K",
@@ -92,6 +94,11 @@ try {
                 if ($ok -ne "YES") { throw "stopped" }
             }
             uv run python -m bridge.live --roundtrip --journal $journal --risk 900
+            $code = $LASTEXITCODE
+        }
+        "brackettest" {
+            # bridge.bracket_probe itself refuses any account whose name does not start with "Sim".
+            uv run python -m bridge.live --bracket-test --journal $journal --risk 900
             $code = $LASTEXITCODE
         }
         "dryrun" {
