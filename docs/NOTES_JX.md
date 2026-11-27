@@ -960,6 +960,7 @@ $38,034; bar: real ≥ $19,017, dip ≥ −$5,794.
 - 2026-11-27 roundtrip: **FAIL** (exit 1; 3 rows: entry_watch x1, roundtrip_failed x1, roundtrip_placed x1; errors: roundtrip_failed x1). Journal: `docs/jx_runs/crosstrade_test_journal_20261127.jsonl`.
 - 2026-11-27 roundtrip: **FAIL** (exit 0; 6 rows: entry_watch x2, roundtrip_failed x1, roundtrip_ok x1, roundtrip_placed x2; errors: roundtrip_failed x1). Journal: `docs/jx_runs/crosstrade_test_journal_20261127.jsonl`.
 - 2026-11-27 brackettest: **PASS** (exit 0; 5 rows: bracket_probe_ok x1, bracket_probe_placed x1, bracket_probe_protected x1, entry_watch x1, protected x1). Journal: `docs/jx_runs/crosstrade_test_journal_20261127.jsonl`.
+<<<<<<< Updated upstream
 
 ## 2026-11-27 — re-verification before any money goes in (asked by Jx)
 - **Re-run, byte-identical to the recorded outputs** (these hold every figure Jx would act on: Topstep 50K Cons $39,949, LucidFlex
@@ -1014,3 +1015,6 @@ $38,034; bar: real ≥ $19,017, dip ≥ −$5,794.
 - **Bot modelled at 1 micro:** payout in 29% of 118 monthly starts, median 16 days, expected +$4.31 per start.
 - **Decision:** the registered rule (≥ 30%) says skip it as the first step; the payout test is one Topstep 50K.
 - **Open check:** whether Combine/XFA accounts have the same news-window contract limits (the bot can hold MNQ over FOMC at 2 pm ET).
+=======
+- 2026-11-27 dryrun: **FAIL** (exit 0; 19 rows: placed x1, session_done x1, session_start x1, stale_feed x15, tick_error x1; errors: stale_feed x15, tick_error x1). Journal: `docs/jx_runs/crosstrade_test_journal_20261127.jsonl`.
+>>>>>>> Stashed changes

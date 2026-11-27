@@ -9,3 +9,22 @@
 {"cancelled": 0, "entry_state": "Filled", "event": "protected", "filled": 1, "oco_id": "947d3dc126", "order_id": "lc-3138d66077e84078a371", "partial": false, "stop": 26725.5, "target": 26805.5, "ts": "2026-11-27T08:14:53+00:00", "warning": null}
 {"event": "bracket_probe_protected", "oco": ["947d3dc126", "947d3dc126"], "position": 1, "stop": 26725.5, "target": 26805.5, "ts": "2026-11-27T08:14:55+00:00"}
 {"account": "Sim101", "at": "2026-11-27T08:14:57.365163+00:00", "contract_id": "MNQ 12-26", "event": "bracket_probe_ok", "ts": "2026-11-27T08:14:57+00:00"}
+{"account_id": null, "account_name": "Sim101", "broker": "crosstrade", "contract_id": "MNQ 12-26", "cutoff_minute": 930, "engine_id": "crosstrade:Sim101:NQ", "event": "session_start", "flat_minute": 960, "hedge_registry": "C:\\trading\\LONG-CONVEXITY\\data\\hedge.json", "live": false, "live_data": false, "market": "NQ", "preset": "LucidFlex 50K", "risk_usd": 900.0, "scaling_plan": false, "ts": "2026-11-27T14:25:04+00:00", "use_guard": false}
+{"at": "2026-11-27T14:52:02.001261+00:00", "event": "stale_feed", "ts": "2026-11-27T14:52:05+00:00", "why": "last bar is 3.0 min old (limit 2.5)"}
+{"at": "2026-11-27T14:52:08.027302+00:00", "event": "stale_feed", "ts": "2026-11-27T14:52:09+00:00", "why": "last bar is 3.1 min old (limit 2.5)"}
+{"at": "2026-11-27T14:52:15.291040+00:00", "event": "stale_feed", "ts": "2026-11-27T14:52:16+00:00", "why": "last bar is 3.3 min old (limit 2.5)"}
+{"at": "2026-11-27T14:54:02.001203+00:00", "event": "stale_feed", "ts": "2026-11-27T14:54:03+00:00", "why": "last bar is 4.0 min old (limit 2.5)"}
+{"at": "2026-11-27T14:54:06.623215+00:00", "event": "stale_feed", "ts": "2026-11-27T14:54:08+00:00", "why": "last bar is 4.1 min old (limit 2.5)"}
+{"at": "2026-11-27T14:54:14.255674+00:00", "event": "stale_feed", "ts": "2026-11-27T14:54:17+00:00", "why": "last bar is 4.2 min old (limit 2.5)"}
+{"at": "2026-11-27T14:55:02.001323+00:00", "event": "stale_feed", "ts": "2026-11-27T14:55:05+00:00", "why": "last bar is 5.0 min old (limit 2.5)"}
+{"at": "2026-11-27T14:55:08.754970+00:00", "event": "stale_feed", "ts": "2026-11-27T14:55:10+00:00", "why": "last bar is 5.1 min old (limit 2.5)"}
+{"at": "2026-11-27T14:55:16.199516+00:00", "event": "stale_feed", "ts": "2026-11-27T14:55:19+00:00", "why": "last bar is 5.3 min old (limit 2.5)"}
+{"at": "2026-11-27T14:56:02.001461+00:00", "event": "stale_feed", "ts": "2026-11-27T14:56:05+00:00", "why": "last bar is 6.0 min old (limit 2.5)"}
+{"at": "2026-11-27T14:56:08.132885+00:00", "event": "stale_feed", "ts": "2026-11-27T14:56:09+00:00", "why": "last bar is 6.1 min old (limit 2.5)"}
+{"at": "2026-11-27T14:56:15.218241+00:00", "event": "stale_feed", "ts": "2026-11-27T14:56:16+00:00", "why": "last bar is 6.3 min old (limit 2.5)"}
+{"at": "2026-11-27T14:57:02.001210+00:00", "event": "stale_feed", "ts": "2026-11-27T14:57:03+00:00", "why": "last bar is 7.0 min old (limit 2.5)"}
+{"at": "2026-11-27T14:57:06.390264+00:00", "event": "stale_feed", "ts": "2026-11-27T14:57:09+00:00", "why": "last bar is 7.1 min old (limit 2.5)"}
+{"at": "2026-11-27T14:57:15.321032+00:00", "event": "stale_feed", "ts": "2026-11-27T14:57:16+00:00", "why": "last bar is 7.3 min old (limit 2.5)"}
+{"broker": {"bracket": {"action": "Sell", "instrument": "MNQ 12-26", "quantity": 6, "stopLoss": 26619.0, "takeProfit": 26488.75}, "dryRun": true, "orderId": "lc-7a97ebcec5b440ae9e92", "success": true}, "day": "2026-11-27", "dry_run": true, "entry": 26553.875, "event": "placed", "key": "2026-11-27T16:11:00+00:00|sell", "planned_risk": 781.5, "qty": 6, "requested_qty": 6, "side": "sell", "stop": 26619.0, "target": 26488.75, "ts": "2026-11-27T16:11:03+00:00"}
+{"at": "2026-11-27T16:12:02.000887+00:00", "error": "POST /v1/api/market/bars -> _ssl.c:993: The handshake operation timed out", "event": "tick_error", "ts": "2026-11-27T16:12:23+00:00"}
+{"at": "2026-11-27T16:12:26.292267+00:00", "et_minute": 672, "event": "session_done", "nothing_outstanding": false, "ts": "2026-11-27T16:12:27+00:00"}
