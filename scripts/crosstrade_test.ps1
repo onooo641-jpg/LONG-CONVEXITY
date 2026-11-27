@@ -109,6 +109,15 @@ try {
             $code = $LASTEXITCODE
         }
         "dryrun" {
+            # Once, unattended: the sim exit test (short, 3-point stop/target, must close by itself with OCO), until
+            # it has passed on this PC. Sim accounts only; bridge.exit_probe refuses any other. Its rows go into
+            # the same journal, so the night's collect line shows exit_probe_ok or exit_probe_failed. The dry run
+            # itself starts afterwards; it reads the whole session's bars, so starting a few minutes late loses nothing.
+            $exitMarker = "data\exit_test_passed.txt"
+            if ($Account -match "^Sim" -and -not (Test-Path $exitMarker)) {
+                uv run python -m bridge.live --exit-test --journal $journal --risk 900
+                if ($LASTEXITCODE -eq 0) { Set-Content $exitMarker ("passed {0:u}" -f (Get-Date).ToUniversalTime()) }
+            }
             uv run python -m bridge.live --journal $journal --risk 900
             $code = $LASTEXITCODE
         }

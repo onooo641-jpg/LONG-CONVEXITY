@@ -70,6 +70,9 @@ Only Jx can do sign-ups, type passwords and spend money. Everything else is for 
       while MNQ trades (not near the close). It sells 1 contract with a stop and target 3 points away, then waits up to 10 minutes
       for the position to close by itself, with the other order cancelled (OCO). This covers the short side and a stop/target
       actually triggering. If nothing is hit in time, it flattens and fails as inconclusive; re-run it then.
+      **Runs by itself:** the nightly scheduled dry run on Sim101 runs it first, every night until it passes (marker
+      `data\exit_test_passed.txt` on the PC). From the first run after the PC pulls this change (the pull happens at the end of each
+      nightly run), so most likely Mon 30 Nov. Look for `exit_probe_ok` in that night's line in `docs/NOTES_JX.md`.
   - The 16:00 flat uses the same `close_position()` (flatten with `cancelOrders`) that the bracket test exercised, so it is
     covered at the API level. The engine's own call to it is seen only in a dry run or live day that reaches 16:00 holding a position.
   - Partial fills cannot be forced with 1 contract on sim. This stays an accepted risk: the rest of the entry is cancelled when
