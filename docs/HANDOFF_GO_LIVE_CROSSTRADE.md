@@ -21,7 +21,7 @@ Detailed technical guide: `docs/GO_LIVE_MULTIFIRM.md`. Topstep's own path: `docs
 | CrossTrade **7-day free trial**, no card, does not auto-renew, includes the REST API | Jx, 2026-11-27 (third-party). The connected check confirms API access on day one |
 | Jx's NinjaTrader account: simulation account `DEMO10100109`, $50K sim balance, free trial "expires in 13 days" on 2026-11-27 (ends ≈ 2026-12-10) | Jx's screenshot, 2026-11-27 |
 | Rate limit 3 requests/s per CrossTrade user (burst 20), shared by every engine | Official: crosstrade.io/docs/api/rate-limiting |
-| NT8 stamps a bar at its close (connector shifts to the open) | The server says `timestampConvention: bar_close` (2026-11-27). Hand comparison with the NT8 chart not yet done |
+| NT8 stamps a bar at its close (connector shifts to the open) | The server says `timestampConvention: bar_close` (2026-11-27). Checked against Yahoo 1-minute bars (ledger XT1); NT8 chart not looked at |
 | No direct Rithmic client: Rithmic needs conformance testing for a custom app | Reason CrossTrade was chosen for all three firms |
 
 **History of the price statement:** the "~$49/month" figure was first given from memory, without a check. The docs read on
@@ -58,7 +58,8 @@ Only Jx can do sign-ups, type passwords and spend money. Everything else is for 
       installed on 27 Nov, earlier than the planned 29/30 Nov; ask Jx, because it sets the trial's last day).
 - [x] 2026-11-27 Key saved on the PC as the Windows user variable `CROSSTRADE_API_KEY`.
 - [x] 2026-11-27 `-Step check -Account Sim101`: 17/17 PASS, after the bar-request fix.
-  - [ ] Hand comparison of one bar with the NT8 chart (the server already states `bar_close`).
+  - [x] 2026-11-27 Bar timing confirmed without the chart (Jx could not see it): against Yahoo's 1-minute MNQ bars, shift 0 matches
+        and no other shift does (ledger XT1). The NT8 chart itself was not looked at.
 - [x] 2026-11-27 `-Step roundtrip` on Sim101: PASS, after the instrument-name fix.
 - [x] 2026-11-27 Daily `-Step dryrun` scheduled: Mon-Fri 22:25 Malaysia time, until 2026-12-05. First run 2026-11-27.
 - [ ] Save each day's journal to `docs/jx_runs/crosstrade_test_journal_<YYYYMMDD>.jsonl` and add a dated line to `docs/NOTES_JX.md`

@@ -934,6 +934,8 @@ $38,034; bar: real ≥ $19,017, dip ≥ −$5,794.
   - 90 s dry-run smoke test (throwaway journal): session started, no errors printed.
   - Daily dry run scheduled: Mon-Fri 22:25 Malaysia time, until 2026-12-05. 27 Nov is a US early-close day, so
     `stale_feed` rows after the close would not be surprising (not yet seen).
+  - Bar timing: Jx could not see the chart, so `scripts/crosstrade_bar_check.py` compared the connector's bars with Yahoo's
+    `MNQ=F` bars: 94.9% of 823 common minutes within 1 point at shift 0, 0.0% at -2, -1, +1, +2 (ledger XT1).
   - Not yet seen on the real server: a fill, `cancel_and_bracket`, flatten, and a non-empty positions answer.
 
 ## 2026-12 — CrossTrade practice test: run log (written by `scripts/crosstrade_collect.py`)

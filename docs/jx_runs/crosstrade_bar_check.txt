@@ -1,0 +1,6 @@
+connector bars 1980, yahoo bars 2730, run at 2026-11-27 05:35Z
+shift -2 min: 819 minutes, all four prices within 1 point   0.0%, median |difference| open 15.75 high 13.75 low 14.00 close 15.50
+shift -1 min: 821 minutes, all four prices within 1 point   0.0%, median |difference| open 10.25 high 8.00 low 8.50 close 10.50
+shift +0 min: 823 minutes, all four prices within 1 point  94.9%, median |difference| open 0.00 high 0.00 low 0.00 close 0.00
+shift +1 min: 823 minutes, all four prices within 1 point   0.0%, median |difference| open 10.50 high 8.25 low 8.75 close 10.50
+shift +2 min: 823 minutes, all four prices within 1 point   0.0%, median |difference| open 15.75 high 13.75 low 14.00 close 15.75
