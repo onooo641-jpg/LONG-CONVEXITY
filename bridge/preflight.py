@@ -244,6 +244,7 @@ def bar_feed_checks(cfg: Config, broker) -> list[Check]:
 
     out.append(Check("bar feed", True,
                      f"{len(bars)} 1-minute bars for {cfg.contract_id}"))
+    out.append(Check("newest bar (compare by hand)", True, newest_bar_line(bars, cfg.broker)))
 
     age = (now - bars["ts"].iloc[-1]).total_seconds()
     if age < 60:
@@ -265,6 +266,29 @@ def bar_feed_checks(cfg: Config, broker) -> list[Check]:
     except Exception as exc:                       # noqa: BLE001
         out.append(Check("signals so far today", False, f"{type(exc).__name__}: {exc}"))
     return out
+
+
+def newest_bar_line(bars: pd.DataFrame, broker: str, local_tz=None) -> str:
+    """The newest bar as a person compares it with a chart: times in this PC's zone and New York, and OHLCV.
+
+    ``bars.ts`` is the bar OPEN (the engine's convention). NinjaTrader labels a bar by its CLOSE, so for the
+    CrossTrade broker the line also says which label to find on the NT8 chart. If the chart's bar with that
+    label has these prices, the connector's close-to-open shift is right; if the prices match the bar labelled
+    one minute EARLIER, NT8 (through CrossTrade) stamps at the open and ``parse_bars`` must not shift.
+    """
+    from datetime import datetime
+
+    tz = local_tz or datetime.now().astimezone().tzinfo
+    row = bars.iloc[-1]
+    start = pd.Timestamp(row["ts"])
+    end = start + pd.Timedelta(minutes=1)
+    loc = lambda t: t.tz_convert(tz).strftime("%H:%M")            # noqa: E731
+    ny = lambda t: t.tz_convert("America/New_York").strftime("%H:%M")  # noqa: E731
+    line = (f"{start.tz_convert(tz):%Y-%m-%d} {loc(start)}-{loc(end)} PC time ({ny(start)}-{ny(end)} New York): "
+            f"O {row['open']:.10g} H {row['high']:.10g} L {row['low']:.10g} C {row['close']:.10g} V {row['volume']:.10g}")
+    if broker == "crosstrade":
+        line += f". On the NT8 1-minute chart find the bar labelled {loc(end)} (NT8 labels a bar by its close)"
+    return line
 
 
 def report(checks: list[Check]) -> bool:

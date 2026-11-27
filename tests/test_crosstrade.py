@@ -274,3 +274,19 @@ def test_cutoff_cancels_a_resting_crosstrade_entry_by_its_string_id():
     cancels = [c[1] for c in fake.calls if c[1].endswith("/cancel")]
     assert cancels == [f"{ACCT}/orders/lc-e/cancel"]                        # the filled one is not cancelled
     assert eng.outstanding == {}
+
+
+def test_newest_bar_line_names_the_nt8_label_to_compare():
+    """The connected check prints the newest bar so a person can find the same bar on the NT8 chart.
+
+    Response shape from the docs (7-digit fractional seconds, Z). NT8 stamps 14:31 UTC -> bar opened 14:30 UTC,
+    i.e. 09:30-09:31 New York and 22:30-22:31 Malaysia; the NT8 chart labels it 22:31.
+    """
+    from bridge.preflight import newest_bar_line
+    bars = parse_bars({"bars": [{"time": "2026-12-01T14:31:00.0000000Z", "epoch": 0, "open": 21000.25,
+                                 "high": 21010.5, "low": 20990.0, "close": 21005.75, "volume": 812}]})
+    line = newest_bar_line(bars, "crosstrade", local_tz="Asia/Kuala_Lumpur")
+    assert "22:30-22:31 PC time (09:30-09:31 New York)" in line
+    assert "O 21000.25 H 21010.5 L 20990 C 21005.75 V 812" in line
+    assert line.endswith("find the bar labelled 22:31 (NT8 labels a bar by its close)")
+    assert "NT8" not in newest_bar_line(bars, "topstepx", local_tz="Asia/Kuala_Lumpur")

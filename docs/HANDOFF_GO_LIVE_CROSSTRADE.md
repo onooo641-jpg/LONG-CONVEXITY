@@ -45,6 +45,11 @@ Only Jx can do sign-ups, type passwords and spend money. Everything else is for 
       existing connector). Jx's part is done in **one sitting on Sun 29 / Mon 30 Nov**: install NT8 and log in, CrossTrade trial and
       Add-On, key as a user environment variable, then "done" to the PC session. After that the PC stays on with NinjaTrader open on
       US trading nights (21:15–05:15 Malaysia time).
+- [x] 2026-11-27 (cloud session) Prepared the PC side so the local session only has to run it: Jx's click-by-click guide
+      `docs/CROSSTRADE_PRACTICE_JX.md`; the check now prints the newest bar and the NT8 chart label to compare; `-Collect` on
+      `scripts/crosstrade_test.ps1` copies the day's journal, logs PASS/FAIL in NOTES_JX, commits and pushes;
+      `scripts/crosstrade_schedule.ps1` registers the Mon–Fri 09:25 New York task. The .ps1 files were not executed (no PowerShell
+      in the cloud container); fix them on the PC if they error.
 - [ ] Install NinjaTrader 8 **desktop** on Jx's PC; Jx logs in. Confirm MNQ 12-26 1-minute bars show (NinjaTrader's sim data).
   - If there are no bars, stop. The fallback is buying a LucidFlex 50K evaluation (about $80), which is Jx's decision.
 - [ ] Jx starts the CrossTrade 7-day trial on **Sun 29 or Mon 30 Nov 2026**, so it covers 5 US trading days and ends before the
@@ -70,7 +75,10 @@ Topstep trading stays on the friend's computer (CLAUDE.md).
 | `bridge/roundtrip.py` | One proof file per engine (`proof_path`) |
 | `bridge/preflight.py` | CrossTrade checks (payloads offline; account, connection, bars when connected) |
 | `tests/test_crosstrade.py`, `tests/test_multifirm.py` | Tests from the documented request/response shapes |
-| `scripts/crosstrade_test.ps1` | Windows script: `-Step check`, `roundtrip`, `dryrun` (not yet run on Windows) |
+| `scripts/crosstrade_test.ps1` | Windows script: `-Step check`, `roundtrip`, `dryrun`, `-Collect` (not yet run on Windows) |
+| `scripts/crosstrade_schedule.ps1` | Registers the daily dry run in Windows Task Scheduler (`-Remove` deletes it) |
+| `scripts/crosstrade_collect.py` | Copies one New York day's journal rows to `docs/jx_runs`, refuses secrets, logs PASS/FAIL |
+| `docs/CROSSTRADE_PRACTICE_JX.md` | Jx's click-by-click steps on the PC |
 | `data/public/propverify/expand_osstrade_io_docs_*.json` | The rendered CrossTrade docs the connector was written from |
 | `docs/GO_LIVE_MULTIFIRM.md` | Full technical guide |
 

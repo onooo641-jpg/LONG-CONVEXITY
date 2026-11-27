@@ -95,8 +95,9 @@ the entry: unknown is treated as "do not enter".
   `data/roundtrip_proof.json`.
 
 ## Steps (same discipline as `docs/GO_LIVE.md`)
-On Windows, steps 2–5 are one script: `scripts/crosstrade_test.ps1 -Step check | roundtrip | dryrun` (not yet run on a
-Windows machine; the key is asked for each run and never saved).
+On Windows, steps 2–5 are one script: `scripts/crosstrade_test.ps1 -Step check | roundtrip | dryrun [-Collect]` (not yet run on a
+Windows machine). The key comes from the Windows user variable `CROSSTRADE_API_KEY`, else it is asked for; it is never written to a file.
+`scripts/crosstrade_schedule.ps1` runs the dry run daily; Jx's click-by-click version is `docs/CROSSTRADE_PRACTICE_JX.md`.
 
 1. **Install:** NinjaTrader 8 (free for simulation), the CrossTrade NT8 Add-On, and the CrossTrade 7-day trial. Start the trial
    only when steps 2–5 can be done within the 7 days. Pro ($49/month) is needed only after the trial, for live trading. Connect each
@@ -108,7 +109,8 @@ Windows machine; the key is asked for each run and never saved).
    - the account is Connected;
    - 1-minute bars arrive and are stamped at the open after conversion.
 
-   Also compare the newest bar's prices with the NT8 chart for that minute once by hand.
+   Also compare the newest bar's prices with the NT8 chart once by hand: the check prints the line `newest bar (compare by hand)`
+   with the NT8 chart label to look for.
 4. **Practice round trip** on a sim or practice account (`--roundtrip`): one far-off 1-lot limit is placed, seen, cancelled and seen
    gone. Then place one small sim trade near the market by hand through the engine's path, to watch the stop and target appear after
    the fill.

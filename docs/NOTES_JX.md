@@ -886,3 +886,21 @@ $38,034; bar: real ≥ $19,017, dip ≥ −$5,794.
   - Pricing: CrossTrade Pro is $49/month, with a 7-day free trial that includes the API (third-party).
   - Jx's NinjaTrader sim account exists (trial ends ≈ 2026-12-10).
   - The setup was handed to a local session on Jx's PC, because Remote Control could not share the PC's folders with a cloud session.
+
+## 2026-11-27 — CrossTrade practice test: prepared for Jx's PC (`docs/CROSSTRADE_PRACTICE_JX.md`)
+- **Ran from a cloud container, not Jx's PC** (his computer offered no folder to the session), so NT8, the Add-On and the real
+  CrossTrade server were not reachable; crosstrade.io itself is also blocked here. Steps 2–6 of the practice test still need the PC.
+- **Step 1 (tests):** `uv run --with pytest python -m pytest -q tests/test_crosstrade.py tests/test_multifirm.py` PASS (25 tests);
+  full suite 423 passed, 117 skipped (data-dependent skips in this checkout).
+- **Re-checked against the saved CrossTrade reference:** bar time format (`2026-03-18T20:00:00.0000000Z`, 7-digit fractions) parses;
+  cancel_and_bracket fields/semantics, GET order by our own id, flatten `cancelOrders`, and the Bearer key location
+  (My Account → Security → Reveal) match the connector. Bar stamping (close vs open) is still not settled by the docs.
+- **Mechanical fix:** the connected check never printed the newest bar, so the by-hand chart comparison could not be done.
+  `bridge/preflight.py: newest_bar_line` now prints its PC-time and New York minute, OHLCV, and the NT8 chart label to find
+  (test added in `tests/test_crosstrade.py`).
+- **New:** `scripts/crosstrade_collect.py` (copies a New York day's journal rows to `docs/jx_runs/crosstrade_test_journal_<YYYYMMDD>.jsonl`,
+  refuses rows that look like secrets, logs PASS/FAIL below; 4 tests), `-Collect` on `scripts/crosstrade_test.ps1` (collect,
+  `git pull --rebase`, commit, push), `scripts/crosstrade_schedule.ps1` (Task Scheduler, Mon–Fri 09:25 New York = 22:25 Malaysia
+  until US clocks change on 2027-03-14, wakes the PC). The .ps1 files were not executed (no PowerShell here); first real run is on the PC.
+- **Needs Jx:** NT8 desktop + live 1-minute MNQ bars; CrossTrade trial started Sun 29 / Mon 30 Nov; the user variable
+  `CROSSTRADE_API_KEY`; then the three commands in the guide.

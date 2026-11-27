@@ -18,3 +18,10 @@ data/roundtrip_proof.json
 
 cache/
 data/public/_cache_duka/
+
+# CrossTrade practice test (scripts/crosstrade_test.ps1): raw journal, logs, hedge registry and proofs stay on the PC;
+# the collect step copies each day's journal rows into docs/jx_runs.
+data/journal_*.jsonl
+data/crosstrade_*.log
+data/hedge.json
+data/roundtrip_proof_*.json

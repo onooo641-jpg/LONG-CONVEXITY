@@ -7,6 +7,9 @@
 #   powershell -ExecutionPolicy Bypass -File scripts\crosstrade_test.ps1 -Step roundtrip
 #   powershell -ExecutionPolicy Bypass -File scripts\crosstrade_test.ps1 -Step dryrun      (each trading day, from 09:25 New York)
 #
+# Add -Collect to copy that day's journal rows to docs\jx_runs, log PASS/FAIL in docs\NOTES_JX.md, commit and push
+# (scripts\crosstrade_schedule.ps1 sets up the daily dry run with -Collect). Console output goes to data\crosstrade_<step>_<date>.log.
+#
 # The CrossTrade key is asked for each run and kept only in this window's memory: it is never written to a file.
 # Nothing here trades for real: 'roundtrip' places one 1-lot limit 30% below the market on the account you name
 # (use Sim101) and cancels it; 'dryrun' records orders instead of sending them.
@@ -16,10 +19,21 @@ param(
     [string]$Account = "Sim101",
     [string]$Instrument = "MNQ 12-26",
     [string]$Preset = "LucidFlex 50K",
-    [double]$AccountStart = 50000
+    [double]$AccountStart = 50000,
+    [switch]$Collect
 )
 $ErrorActionPreference = "Stop"
+$Branch = "claude/ict-trading-resources-ugh07b"
+# Run from the repo folder whatever folder this was started from (Task Scheduler starts elsewhere).
+Set-Location (Split-Path $PSScriptRoot -Parent)
+New-Item -ItemType Directory -Force data | Out-Null
+$nyNow = [TimeZoneInfo]::ConvertTime([DateTime]::UtcNow, [TimeZoneInfo]::FindSystemTimeZoneById("Eastern Standard Time"))
+# The trading day runs 18:00 to 18:00 New York (same rule as scripts\crosstrade_collect.py).
+$nyDate = if ($nyNow.Hour -ge 18) { $nyNow.Date.AddDays(1) } else { $nyNow.Date }
+Start-Transcript -Path ("data\crosstrade_{0}_{1:yyyyMMdd}.log" -f $Step, $nyDate) -Append | Out-Null
 
+# uv's installer puts it in %USERPROFILE%\.local\bin, which a window opened before the install does not have on PATH.
+if (Test-Path "$env:USERPROFILE\.local\bin\uv.exe") { $env:Path = "$env:USERPROFILE\.local\bin;$env:Path" }
 if (-not (Get-Command uv -ErrorAction SilentlyContinue)) {
     Write-Host "Installing uv (Python runner, from astral.sh)..."
     powershell -ExecutionPolicy Bypass -c "irm https://astral.sh/uv/install.ps1 | iex"
@@ -46,13 +60,15 @@ $env:BRIDGE_USE_GUARD = "0"
 $env:BRIDGE_HEDGE_REGISTRY = "$PWD\data\hedge.json"
 
 $journal = "data\journal_crosstrade_test.jsonl"
+$code = 1
 try {
     switch ($Step) {
         "check" {
             uv run python -m bridge.live --preflight --offline --risk 900
             if ($LASTEXITCODE -ne 0) { throw "offline check failed" }
             uv run python -m bridge.live --preflight --risk 900
-            if ($LASTEXITCODE -ne 0) {
+            $code = $LASTEXITCODE
+            if ($code -ne 0) {
                 Write-Host "`nConnected check failed. HTTP 401/403: the key is wrong or the trial has no API access (needs Pro)."
                 Write-Host "HTTP 408: NinjaTrader is closed or the CrossTrade Add-On is not connected."
                 throw "connected check failed"
@@ -65,13 +81,36 @@ try {
                 if ($ok -ne "YES") { throw "stopped" }
             }
             uv run python -m bridge.live --roundtrip --journal $journal --risk 900
+            $code = $LASTEXITCODE
         }
         "dryrun" {
             uv run python -m bridge.live --journal $journal --risk 900
+            $code = $LASTEXITCODE
         }
     }
-    Write-Host "`nDone. Send the journal ($journal) and anything above marked FAIL back to Claude."
+    Write-Host "`nDone (exit $code). Send the journal ($journal) and anything above marked FAIL back to Claude."
 }
 finally {
+    $ErrorActionPreference = "Continue"   # git and uv write progress to stderr; that must not abort the collect
+    if ($Collect) {
+        # The collect script scans the rows for the key itself, so it gets the key for this one call only.
+        uv run python scripts\crosstrade_collect.py --step $Step --exit-code $code --date ("{0:yyyy-MM-dd}" -f $nyDate)
+        $collected = $LASTEXITCODE
+        Remove-Item Env:CROSSTRADE_API_KEY -ErrorAction SilentlyContinue
+        if ($collected -eq 2) {
+            Write-Host "Journal NOT copied: it looked like it held a secret. Nothing was committed. Tell Claude."
+        } elseif ((git rev-parse --abbrev-ref HEAD) -ne $Branch) {
+            Write-Host "Not on $Branch, so nothing was committed. The journal copy is in docs\jx_runs."
+        } else {
+            $ymd = "{0:yyyyMMdd}" -f $nyDate
+            git pull --rebase --autostash origin $Branch
+            git add "docs/jx_runs/crosstrade_test_journal_$ymd.jsonl" docs/NOTES_JX.md
+            git commit -m "CrossTrade practice test: $Step journal $ymd (exit $code)"
+            git pull --rebase origin $Branch
+            git push origin $Branch
+            if ($LASTEXITCODE -ne 0) { Write-Host "Push failed; the commit is saved on this PC. Tell Claude." }
+        }
+    }
     Remove-Item Env:CROSSTRADE_API_KEY -ErrorAction SilentlyContinue
+    Stop-Transcript | Out-Null
 }
