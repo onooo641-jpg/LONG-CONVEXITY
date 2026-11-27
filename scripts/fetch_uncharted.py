@@ -2347,6 +2347,25 @@ def _batchl_body(code):
     return re.sub(r"[ \t]+", " ", txt)
 
 
+def collateral_cuts(text):
+    """Coins whose collateral ratio is lowered: rows of (coin, before %, after %) with after < before. Reads both one-line rows and
+    tables flattened one cell per line (Binance's layout: coin / before / after on consecutive lines)."""
+    import re as _re
+    out = set()
+    lines = [ln.strip() for ln in text.split("\n") if ln.strip()]
+    pct = _re.compile(r"^(\d+(?:\.\d+)?)\s*%$")
+    for i, ln in enumerate(lines):
+        p = [float(x) for x in _re.findall(r"(\d+(?:\.\d+)?)\s*%", ln)]
+        coins = _re.findall(r"\b([A-Z][A-Z0-9]{1,11})\b", ln)
+        if len(p) >= 2 and coins and p[1] < p[0]:
+            out |= set(coins)
+        if _re.fullmatch(r"[A-Z][A-Z0-9]{1,11}", ln) and i + 2 < len(lines):
+            a, b = pct.match(lines[i + 1]), pct.match(lines[i + 2])
+            if a and b and float(b.group(1)) < float(a.group(1)):
+                out.add(ln)
+    return out
+
+
 def job_ubatchl():
     """Batch L: Binance risk-parameter announcements -> bodies, symbols, dates; USD-M 1h closes around each event + BTCUSDT."""
     import json as _json
@@ -2382,10 +2401,7 @@ def job_ubatchl():
             m = re.search(r"Margin Will Delist ([A-Z0-9]+)", e["title"])
             cands = {m.group(1) + "USDT"} if m else set()
         elif e["idea"] == 504:
-            cands = set()
-            for ln in text.split("\n"):
-                if ln.count("%") >= 2:
-                    cands |= {w + "USDT" for w in re.findall(r"\b([A-Z][A-Z0-9]{1,11})\b", ln)}
+            cands = {c + "USDT" for c in collateral_cuts(text)}
         else:
             cands = set(re.findall(r"\b([A-Z0-9]{2,15}USDT)\b", text))
         syms = sorted((cands & universe) - stable)

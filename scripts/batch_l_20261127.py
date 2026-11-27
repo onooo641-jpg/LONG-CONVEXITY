@@ -43,14 +43,11 @@ def exit_time(e, body, te):
 
 
 def cut_coins(body):
-    """#504: coins whose collateral ratio is lowered, from body lines with the coin and two percentages (old, new)."""
-    out = set()
-    for ln in body.split("\n"):
-        pcts = [float(x) for x in re.findall(r"(\d+(?:\.\d+)?)\s*%", ln)]
-        coins = re.findall(r"\b([A-Z][A-Z0-9]{1,11})\b", ln)
-        if len(pcts) >= 2 and coins and pcts[1] < pcts[0]:
-            out |= {c + "USDT" for c in coins}
-    return out
+    """#504: coins whose collateral ratio is lowered (shared parser with the fetch job; reads Binance's one-cell-per-line tables)."""
+    import sys
+    sys.path.insert(0, str(D.REPO_ROOT / "scripts"))
+    from fetch_uncharted import collateral_cuts
+    return {c + "USDT" for c in collateral_cuts(body)}
 
 
 def main():

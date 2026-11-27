@@ -53,3 +53,11 @@ Stage 1 only kills; nothing passes early; Stage 2 rules are fixed now.
 - Months fetched: each event's month and the next, for each symbol; BTCUSDT for all months 2022-10..2026-11.
 
 **Script/output:** `scripts/batch_l_20261127.py` → `docs/jx_runs/batch_l_20261127.txt` (re-run once; identical).
+
+## Addendum 1 (2026-11-27, before any #504 price was seen): parser fix for #504, rule unchanged
+- Binance's collateral tables arrive flattened one cell per line (coin / before % / after %). The registered reader looked for all
+  three on one line, so it found no rows, and the fetch job pulled no prices for those coins.
+- `collateral_cuts()` in `scripts/fetch_uncharted.py` now reads both layouts and is shared by the fetch and the analysis. It finds
+  cuts in 73 of 96 #504 announcements.
+- The rule (short coins whose ratio is lowered, 72 h, excess vs BTC − 0.09%) and every threshold are unchanged. The fetch is re-run
+  for the new symbols. #501–#503 use the same data and must reproduce their first-run figures exactly.
