@@ -1,0 +1,10 @@
+polygon: v2 start, head 98022079
+polygon: loaded 19259 cached positions
+polygon: recalibrated 491 cached positions
+polygon: positions ready: 19259 users, 5725 with debt
+polygon: reopened 21 recorded unhealthy episodes
+polygon: loop error https://poly.api.pocket.network: {'code': -32000, 'message': 'invalid block range params'}
+polygon: loop error https://poly.api.pocket.network: {'code': -32000, 'message': 'invalid block range params'}
+polygon: head 98022314 cycles 38 debtors 5725 cand 708 last_cycle 5741 ms rpc ok/err 355/3
+polygon: head 98022515 cycles 75 debtors 5725 cand 710 last_cycle 12202 ms rpc ok/err 658/3
+polygon: head 98022723 cycles 114 debtors 5725 cand 709 last_cycle 11699 ms rpc ok/err 981/3
