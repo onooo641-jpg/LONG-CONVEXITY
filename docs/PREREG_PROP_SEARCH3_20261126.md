@@ -239,3 +239,23 @@ The per-size prices for the other sizes were not captured: the size tabs did not
 
 CTI is CFD-only (MT5 / Match-Trader), so pricing it needs (a) Jx's decision to port the bot to an MT5 EA trading a Nasdaq-100 CFD and
 (b) CFD cost assumptions (spread and commission). Parked until Jx decides.
+
+## Part 3 (registered 2026-11-27, before running): confirmation at the prices Jx supplied
+Jx's answers (2026-11-27). They come from third-party price trackers and promotion records, so they are **not verified on the firms'
+own checkouts**:
+- DayTraders 100K Static $75 + $5 activation; 150K Static $90 + $5;
+- FFN's usual promo is 50% off; the current MAX Standard checkout shows **no activation fee**; platforms Rithmic / Onyx / Nexus, no
+  Tradovate; Black Friday is 50% on Rithmic, 70% on Nexus;
+- City Traders Imperium: do not port the bot now (Jx).
+
+E2's DayTraders break-evens are for the evaluation price alone; the $5 activation is already in the model.
+
+Confirmation runs at the exact prices:
+- DayTraders 100K Static at $75 + $5 and 150K Static at $90 + $5 (risk $900);
+- FFN Standard MAX at 50% off with activation $0: 50K $89 (risk $900), 100K $174 (risk $1,620), 150K $204 (risk $2,250);
+- money needed to start for every product that qualifies here.
+
+Platform note: the live bot connects only through Topstep's ProjectX API (`bridge/topstepx.py`). FFN (Rithmic) and Lucid (CrossTrade)
+each need their own connector before going live.
+
+Script: `scripts/prop_search3_p3_20261127.py` → `docs/jx_runs/prop_search3_p3_20261127.txt` (re-run once; it must be identical).
