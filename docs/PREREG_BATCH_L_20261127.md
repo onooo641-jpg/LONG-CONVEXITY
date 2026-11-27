@@ -61,3 +61,19 @@ Stage 1 only kills; nothing passes early; Stage 2 rules are fixed now.
   cuts in 73 of 96 #504 announcements.
 - The rule (short coins whose ratio is lowered, 72 h, excess vs BTC − 0.09%) and every threshold are unchanged. The fetch is re-run
   for the new symbols. #501–#503 use the same data and must reproduce their first-run figures exactly.
+
+## Results (2026-11-27; `docs/jx_runs/batch_l_20261127.txt`, re-run identical; #501–#503 identical before and after the #504 re-fetch)
+| # | Verdict | Stage 1 (< 2025) | Stage 2 (2025–26) | On Hyperliquid coins | $/yr |
+|---|---|---|---|---|---|
+| 501 leverage-tier cuts | FAIL | +3.43% (t 2.83, n 66) | **−5.67%** (t −0.91, n 83) | +1.93% (t 1.52, n 69) | −$12.4K |
+| 502 perp delistings | FAIL (near miss, venue) | +1.48% (n 7, no kill possible) | **+12.75%** (t 1.93, n 27) | +21.12% (t 1.47, **n 5**) | $9.0K |
+| 503 margin-pair delistings | FAIL | +3.27% (n 5) | no events | — | $0 |
+| 504 collateral-ratio cuts | FAIL | n 1 | −1.17% (t −0.55, n 70) | −0.32% (n 64) | −$2.2K |
+
+**Batch L verdict: 0 of 4.**
+- **#501:** the development edge reversed out of sample. The 7 announcements naming a coin in the title averaged −82%: shorted coins
+  squeezed. Forced-close shorts carry a squeeze tail that 2022–24 did not show.
+- **#502:** this is the one real effect. Delisted perps keep falling, +12.75% to the short over 2025–26 (t 1.93). It fails on venue,
+  not on the effect: only 5 of 27 coins trade on Hyperliquid, and the rest can only be shorted on exchanges closed to Malaysia.
+  This matches #482 (spot delistings: −35.6% excess, also not shortable from Malaysia).
+- **#504:** the market prices collateral cuts with no follow-through.
