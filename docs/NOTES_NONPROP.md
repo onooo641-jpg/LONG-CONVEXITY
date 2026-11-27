@@ -353,3 +353,8 @@ Jx's free Coinalyze key gave daily OI and liquidations from 2020. The five OI an
 - **Process:**
   - 163 announcement bodies were rate-limited on the first fetch and re-fetched with backoff.
   - The #504 table parser was fixed before any #504 price was seen (addendum 1).
+
+## 2026-11-27 — Batch M (#505–#508), Malaysia-tradable forced and seasonal flows: 0 of 4
+- **Rebound after a perp delisting:** coins keep falling after settlement (5 events with spot prices).
+- **Japanese fiscal-year-end yen buying, US tax-day selling, gold before Diwali:** all flat to negative, 2 killed at Stage 1.
+- Table: `docs/PREREG_BATCH_M_20261127.md`.

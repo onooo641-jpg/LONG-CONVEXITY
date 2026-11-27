@@ -1,0 +1,23 @@
+#505 Rebound after a perp delisting (long spot 7 d from settlement + 1 h; excess vs BTC - 0.6%)
+   Stage 1 (< 2025): n 4, mean -6.35%, t -3.33
+   Stage 2 (2025-26): n 1, mean -17.28%, t nan
+   VERDICT FAIL (Stage 1 < 8 events: no kill possible) | $/yr at $3,000 per event: $-272
+
+#506 Japanese fiscal-year-end repatriation (long JPY, end-Feb -> 31 Mar, net of carry)
+   Stage 1 (2003-2013): n 11, mean -0.65%, t -0.76
+   Stage 2 (2014-2026): n 13, mean -0.74%, t -1.31
+   variant half-year (end-Aug -> 30 Sep), 2014-2026 (reported only): n 13, mean -1.22%, t -1.85
+   VERDICT KILL (Stage 1) | $/yr at $150K notional: $-1,107
+
+#507 US tax-payment selling (short SPY 10 sessions into the filing deadline)
+   Stage 1 (2001-2012): n 12, mean -0.52%, t -0.52
+   Stage 2 (2013-2026): n 14, mean -0.50%, t -0.56
+   variant rebound: long SPY deadline -> +10 sessions, 2013-2026 (reported only): n 14, mean +0.51%, t 0.86
+   variant BTC short into the deadline, 2015-2026 (reported only): n 12, mean -0.71%, t -0.23
+   VERDICT KILL (Stage 1) | $/yr at $30K: $-149
+
+#508 Gold before Diwali (long GLD 15 sessions into Diwali)
+   Stage 1 (2004-2014): n 10, mean +0.66%, t 0.31
+   Stage 2 (2015-2026): n 12, mean +0.23%, t 0.16
+   VERDICT FAIL | $/yr at $45K: $104
+

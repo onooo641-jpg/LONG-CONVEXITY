@@ -28,3 +28,17 @@ Stage 1 only kills; nothing passes early; Stage 2 rules are fixed now.
 - New job `ubatchm`: Yahoo GLD daily 2004–2026, and Binance spot 1h for #505 symbols (event month and the next) plus BTCUSDT spot.
 
 **Script/output:** `scripts/batch_m_20261127.py` → `docs/jx_runs/batch_m_20261127.txt`, re-run identical.
+
+## Results (2026-11-27; `docs/jx_runs/batch_m_20261127.txt`, re-run identical)
+| # | Verdict | Stage 1 | Stage 2 | $/yr |
+|---|---|---|---|---|
+| 505 rebound after a perp delisting | FAIL | −6.35% (n 4) | −17.28% (n 1) | −$272 |
+| 506 Japanese fiscal-year-end repatriation | KILL | −0.65% (t −0.76, n 11) | −0.74% (n 13); half-year variant −1.22% | −$1.1K |
+| 507 US tax-payment selling | KILL | −0.52% (n 12) | −0.50% (n 14); rebound variant +0.51% (t 0.86) | −$149 |
+| 508 gold before Diwali | FAIL | +0.66% (t 0.31) | +0.23% (t 0.16) | $104 |
+
+**Batch M verdict: 0 of 4.**
+- #505: only 5 events have Binance spot prices after the perp delisting (17 of the coins have spot archives). Those few keep
+  falling after settlement, so there is no rebound.
+- The three calendar flows (yen year-end, US tax day, Diwali gold) show nothing. They are too small, or already absorbed by
+  anticipating traders.
