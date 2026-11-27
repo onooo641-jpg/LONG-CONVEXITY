@@ -2477,3 +2477,35 @@ def job_ubatchm():
     df = pd.DataFrame(rows, columns=["sym", "t", "close"]).drop_duplicates(["sym", "t"])
     print(f"  spot 1h rows {len(df):,} for {df.sym.nunique()} symbols ({len(tasks)} symbol-months asked)", flush=True)
     save("batchm_spot_1h.parquet", df)
+
+
+# ---------------------------------------------------------------- Batch O #512-#514 (docs/PREREG_BATCH_O_20261127.md)
+def job_ubatcho():
+    """Batch O: Yahoo CORN/SOYB/WEAT daily adjusted; FRED DEXHKUS and 3-month rates (US, HK)."""
+    import io as _io
+    px = []
+    for sym in ("CORN", "SOYB", "WEAT"):
+        st, raw = _raw_get(f"https://query1.finance.yahoo.com/v8/finance/chart/{sym}?period1=1262304000&period2=1795651200&interval=1d&events=div,split", timeout=40)
+        try:
+            r = json.loads(raw.decode())["chart"]["result"][0]
+            q = r["indicators"]["quote"][0]
+            adj = (r["indicators"].get("adjclose") or [{}])[0].get("adjclose") or q["close"]
+            px += [(sym, int(t), a) for t, a in zip(r["timestamp"], adj) if a is not None]
+        except Exception as e:  # noqa: BLE001
+            print(f"  yahoo {sym} FAIL HTTP {st} {e}", flush=True)
+        time.sleep(1)
+    save("batcho_etf_1d.parquet", pd.DataFrame(px, columns=["sym", "t", "adj"]))
+    fr = []
+    for sid in ("DEXHKUS", "IR3TIB01USM156N", "IR3TIB01HKM156N", "HKGIR3TIB01STM"):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={sid}", headers=UA), timeout=60) as r:
+                f = pd.read_csv(_io.StringIO(r.read().decode()))
+            f.columns = ["date", "value"]
+            f["value"] = pd.to_numeric(f["value"], errors="coerce")
+            f["sid"] = sid
+            fr.append(f.dropna())
+            print(f"  FRED {sid}: {len(f)} rows {f['date'].min()}..{f['date'].max()}", flush=True)
+        except Exception as e:  # noqa: BLE001
+            print(f"  FRED {sid} FAIL {e}", flush=True)
+    if fr:
+        save("batcho_fred.parquet", pd.concat(fr, ignore_index=True))
