@@ -1,0 +1,11 @@
+1-micro trades 2016-26: 2,185; per-trade P&L median $6.26, loss on losers median $-35.74, win on winners median $32.01
+
+118 monthly starts 2016-01..2025-10 (round 1: 1 + 2 resets within 90 days; round 2: 1 attempt, 90 days)
+   round 2 fail        46  (39%)
+   payout              34  (29%)
+   round 1 expired     23  (19%)
+   round 1 fail        13  (11%)
+   round 2 expired      2  (2%)
+
+P(payout) 29% | median days to payout 16 | expected net per start $4.31 (payout $100 x P - $10 fee - $14.50 API month)
+DECISION (registered: Starter Challenge first if P(payout) >= 30%): go straight to one Topstep 50K

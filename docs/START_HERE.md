@@ -56,6 +56,11 @@ customers only. It has 1 micro, a $100 static loss limit, 2 free resets and a fi
 - What it proves end to end: the bot trades a real Topstep account, the rules are enforced as modelled, and a payout actually
   arrives.
 - It is **not** a profit test: 1 micro is far below the strategy's sizing. Running it needs a 1-micro preset.
+- **Modelled (ledger ST1):** with the bot it reaches the payout in only **29%** of historical starts. Each ±$100 is about three
+  1-micro trades, and the Payout Round has no resets. By the pre-registered rule (≥ 30%), **go straight to one Topstep 50K** as the
+  payout test. Real cost is $24.50: the $10 fee plus a $14.50 TopstepX API month (official API page).
+- **Official, check for the 50K too:** in the Starter Challenge, MNQ goes to 0 contracts during Tier 1 news windows. FOMC is
+  12:55–13:05 and 13:25–13:35 CT, inside the bot's session. Whether the Combine has the same restriction is not yet read.
 - Bots: the TopstepX API page (11187768) allows bots via the API; Challenges are not named explicitly.
 - The **$3K Challenge** is no longer a cheap option. The $49 version was a past Labs drop; the version on sale is $199 / 50 micros
   and fails (ledger CR1).

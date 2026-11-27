@@ -35,3 +35,17 @@
 straight to one Topstep 50K as the payout test. This is a test-design choice, not a profit claim.
 
 **Script/output:** `scripts/starter_challenge_20261127.py` → `docs/jx_runs/starter_challenge_20261127.txt`, re-run identical.
+
+## Result (2026-11-27; `docs/jx_runs/starter_challenge_20261127.txt`, re-run identical)
+- **Outcomes (118 monthly starts):**
+  - payout **34 (29%)**;
+  - round 2 failed 46 (39%);
+  - round 1 expired 23 (19%);
+  - round 1 failed 13 (11%);
+  - round 2 expired 2 (2%).
+- Median 16 days to payout. Expected net per start +$4.31.
+- At 1 micro, a losing trade costs a median $35.74 and a winner pays $32.01, so ±$100 is only about three trades either way.
+  The single-attempt Payout Round is where most starts fail.
+- **Decision by the registered rule: P(payout) 29% < 30%, so go straight to one Topstep 50K as the payout test.**
+- The Starter Challenge stays an optional $24.50 check of the bot on a real Topstep account. It would reach a payout about 3 times
+  in 10.

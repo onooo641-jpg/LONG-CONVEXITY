@@ -1004,3 +1004,13 @@ $38,034; bar: real ≥ $19,017, dip ≥ −$5,794.
 4. **US daylight saving:** the window becomes about 21:25–04:00 Malaysia time from **Sun 14 March 2027**.
    - The chat's 2027-03-08 was the 2026 date; the rule is the second Sunday of March.
    - Re-register the scheduled task then (`CROSSTRADE_PRACTICE_JX.md`, `GO_LIVE_MULTIFIRM.md`).
+
+## 2026-11-27 — Starter Challenge modelled (`docs/PREREG_STARTER_20261127.md`): 29% payout, so go straight to one Topstep 50K
+- **Official Starter Challenge rules** (rendered by Actions):
+  - $10 once; $100 target per round against a $100 static loss limit; 1 micro;
+  - 2 free resets in the Challenge Round only; fixed $100 payout; 90 days per round;
+  - MNQ goes to 0 contracts in Tier 1 news windows (FOMC falls inside the bot's session).
+- **Official API page:** bots are allowed via the API; $14.50/month; VPS, VPN and remote servers are prohibited.
+- **Bot modelled at 1 micro:** payout in 29% of 118 monthly starts, median 16 days, expected +$4.31 per start.
+- **Decision:** the registered rule (≥ 30%) says skip it as the first step; the payout test is one Topstep 50K.
+- **Open check:** whether Combine/XFA accounts have the same news-window contract limits (the bot can hold MNQ over FOMC at 2 pm ET).
