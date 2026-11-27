@@ -1,0 +1,4 @@
+=== ubatchp_probe2
+  index HTTP 200, 1 links
+  pages fetched: 1
+=== ubatchp_probe2 done in 1s  ok 0 fail 0
