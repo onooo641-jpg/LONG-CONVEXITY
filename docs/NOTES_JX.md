@@ -904,3 +904,16 @@ $38,034; bar: real ≥ $19,017, dip ≥ −$5,794.
   until US clocks change on 2027-03-14, wakes the PC). The .ps1 files were not executed (no PowerShell here); first real run is on the PC.
 - **Needs Jx:** NT8 desktop + live 1-minute MNQ bars; CrossTrade trial started Sun 29 / Mon 30 Nov; the user variable
   `CROSSTRADE_API_KEY`; then the three commands in the guide.
+
+### 2026-11-27 (local session on Jx's PC)
+- Cloned the branch to `C:\trading\LONG-CONVEXITY`. `uv` was already installed.
+- `uv run --with pytest python -m pytest -q tests/test_crosstrade.py tests/test_multifirm.py tests/test_crosstrade_collect.py`:
+  PASS (29 tests).
+- Both `.ps1` scripts parse without errors in Windows PowerShell (parse check only; no step run through to CrossTrade yet).
+- NinjaTrader 8.1.9.1 was already installed and running. Its log shows price feed Connected (`Simulation` connection, 12:59 PC
+  time). MNQ 12-26 minute files for 23-27 Nov are cached. Live new bars: not yet confirmed.
+- CrossTrade Add-On 1.14.2 is installed and loaded by NinjaTrader. Its Connected status and the trial's start date: not confirmed.
+- This PC already had: wake timers enabled, and no sleep on mains power (sleeps after 10 min on battery, so keep it plugged in).
+- Set a repo-local git identity (it was empty, so the unattended collect commit would have failed). `git push --dry-run` passes
+  without a prompt.
+- Opened the `-Step savekey` window. Waiting for Jx to paste the key.

@@ -50,7 +50,10 @@ Only Jx can do sign-ups, type passwords and spend money. Everything else is for 
       `scripts/crosstrade_test.ps1` copies the day's journal, logs PASS/FAIL in NOTES_JX, commits and pushes;
       `scripts/crosstrade_schedule.ps1` registers the Mon–Fri 09:25 New York task. The .ps1 files were not executed (no PowerShell
       in the cloud container); fix them on the PC if they error.
+- [x] 2026-11-27 (local session) Repo cloned to `C:\trading\LONG-CONVEXITY`; 29 CrossTrade/multifirm tests pass. NinjaTrader
+      8.1.9.1 and the CrossTrade Add-On 1.14.2 were found already installed (details in `docs/NOTES_JX.md`).
 - [ ] Install NinjaTrader 8 **desktop** on Jx's PC; Jx logs in. Confirm MNQ 12-26 1-minute bars show (NinjaTrader's sim data).
+      (Installed, price feed Connected; live new bars still to be confirmed.)
   - If there are no bars, stop. The fallback is buying a LucidFlex 50K evaluation (about $80), which is Jx's decision.
 - [ ] Jx starts the CrossTrade 7-day trial on **Sun 29 or Mon 30 Nov 2026**, so it covers 5 US trading days and ends before the
       NinjaTrader trial. Install and connect the CrossTrade NT8 Add-On.
