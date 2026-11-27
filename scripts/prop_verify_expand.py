@@ -13,12 +13,12 @@ from playwright.sync_api import sync_playwright
 
 OUT = Path(__file__).resolve().parent.parent / "data" / "public" / "propverify"
 PAGES = [
-    # Go-live: CrossTrade API reference (NinjaTrader 8 REST via the CrossTrade NT8 Add-On), crawled for every docs/api page
-    "https://crosstrade.io/docs",
-    "https://crosstrade.io/docs/api/overview",
-    "https://crosstrade.io/docs/api/positions",
+    # Topstep Starter Challenge ($10) go-live test: its rules (profit target, payout, bot use), the $3K Challenge and the API page
+    "https://help.topstep.com/en/articles/18482122",
+    "https://help.topstep.com/en/articles/18466040",
+    "https://help.topstep.com/en/articles/11187768",
 ]
-CRAWL = ("crosstrade.io/docs/api", "crosstrade.io/docs/webhooks", "crosstrade.io/docs/getting-started", "crosstrade.io/docs/add-on")
+CRAWL = ("help.topstep.com/en/articles/18482122", "help.topstep.com/en/articles/18466040")
 TAB = re.compile(r"^\$?\s?(2\.5|5|10|25|50|75|100|150|200|250|300)\s?K$|^(Static|Trail|EOD|S2F|S2L|Instant|Live|1-Step|2-Step)$", re.I)
 
 

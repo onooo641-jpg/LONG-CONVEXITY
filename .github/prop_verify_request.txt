@@ -1,2 +1,2 @@
-# go-live: CrossTrade API docs (expand mode, crawl)
+# go-live: Topstep Starter Challenge rules (expand mode)
 expand
