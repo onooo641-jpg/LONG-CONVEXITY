@@ -958,3 +958,18 @@ $38,034; bar: real ≥ $19,017, dip ≥ −$5,794.
 - 2026-11-27 roundtrip: **FAIL** (exit 1; 3 rows: entry_watch x1, roundtrip_failed x1, roundtrip_placed x1; errors: roundtrip_failed x1). Journal: `docs/jx_runs/crosstrade_test_journal_20261127.jsonl`.
 - 2026-11-27 roundtrip: **FAIL** (exit 0; 6 rows: entry_watch x2, roundtrip_failed x1, roundtrip_ok x1, roundtrip_placed x2; errors: roundtrip_failed x1). Journal: `docs/jx_runs/crosstrade_test_journal_20261127.jsonl`.
 - 2026-11-27 brackettest: **PASS** (exit 0; 5 rows: bracket_probe_ok x1, bracket_probe_placed x1, bracket_probe_protected x1, entry_watch x1, protected x1). Journal: `docs/jx_runs/crosstrade_test_journal_20261127.jsonl`.
+
+## 2026-11-27 — re-verification before any money goes in (asked by Jx)
+- **Re-run, byte-identical to the recorded outputs** (these hold every figure Jx would act on: Topstep 50K Cons $39,949, LucidFlex
+  $40,545, Topstep $3K Challenge $24,757 and the other AUD5/AUD6/PS3b rows):
+  - `scripts.audit_all_prop_20261126`
+  - `scripts.audit_topstep_dll_20261127`
+  - `scripts.prop_search3_p2_20261126`
+- **This proves:** the figures are what the code and data produce, with no copying or arithmetic slips.
+- **It does not prove the figures will happen.** They rest on:
+  - limit fills on touch and 1-tick stop slippage (the stress rows in `docs/AUDIT_PRE_LIVE_20261126.md` range $37.4K → $14.5K);
+  - orders placed within seconds;
+  - firm rules as read from their pages: Topstep official, verified 2026-11-22; Lucid / DayTraders partly third-party;
+  - the 2016–26 market repeating;
+  - firms paying out as written.
+- Going live on one account is the test of the execution assumptions, measured by the gates in `docs/PREREG_LIVE_20261120.md`.
