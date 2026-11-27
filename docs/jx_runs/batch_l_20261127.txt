@@ -1,4 +1,4 @@
-events 361; bodies 292 (0 errors); 1h symbols 567; Hyperliquid coins 235
+events 361; bodies 292 (0 errors); 1h symbols 579; Hyperliquid coins 235
 Short the coin from A rounded up + 1 h to the exit; excess = -(coin - BTC) - 0.09%. One announcement = one event.
 
 #501 Leverage-tier cuts
@@ -21,5 +21,8 @@ Short the coin from A rounded up + 1 h to the exit; excess = -(coin - BTC) - 0.0
    VERDICT FAIL (Stage 1 had < 8 events: no kill possible) | $/yr at $5,000 per event: $0
 
 #504 Collateral-ratio cuts
-   no usable events: NOT TESTABLE
+   Stage 1 (< 2025): n 1, mean -0.31%, t nan | median hold 72 h
+   Stage 2 (2025-26): n 70, mean -1.17%, t -0.55 | Hyperliquid-listed: n 64, mean -0.32%, t -0.44
+   diagnostic: Stage 2 events with symbols in the title: n 0, mean +nan%, t nan (reported only)
+   VERDICT FAIL (Stage 1 had < 8 events: no kill possible) | $/yr at $5,000 per event: $-2,156
 

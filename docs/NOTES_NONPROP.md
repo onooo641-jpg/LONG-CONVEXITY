@@ -342,3 +342,14 @@ Jx's free Coinalyze key gave daily OI and liquidations from 2020. The five OI an
 - **Batch K (#493–#495): 0/3.** Every idea worked in 2020–22 and faded or reversed in 2023–26 on unseen data. Batch search paused (Jx); the 3-hourly batch-loop scheduled task is disabled, not deleted. The local Batch I re-fetch (Dukascopy/Solana) finishes in the background, and Batch I will be re-run and recorded when it lands.
 - **Batch K part 2 (#496–#500, stronger bar per Jx): 0/5.** Ethena flows, CME basis unwind, Hyperliquid funding premium, #489 Bybit re-test and hedger-paid carry all fail; two are significant in the opposite direction. **Search C–K: ~83 ideas; only the wick family clears $10K/yr.** Paused; work moves to prop firms.
 - **Batch I (#478–#487): 0/10** (FX and gold on partial data; Dukascopy throttled). Total search C–K plus I: ~93 ideas, and only the wick family clears $10K/yr.
+
+## 2026-11-27 — Batch L (#501–#504), new family "exchange risk-parameter forced closes": 0 of 4
+- Shorted coins after Binance cut leverage, delisted a perp or a margin pair, or lowered a collateral ratio. Development
+  2022–24, unseen 2025–26, Hyperliquid as the Malaysia-usable venue. Full table: `docs/PREREG_BATCH_L_20261127.md`.
+- **Only real effect:** perp delistings, +12.75% to the short (t 1.93). Not tradeable from Malaysia, because only 5 of 27 coins are on
+  Hyperliquid (same lesson as #482).
+- **Leverage cuts** looked good in 2022–24 (+3.4%, t 2.8) and reversed in 2025–26 on squeezes.
+- **Collateral cuts:** nothing.
+- **Process:**
+  - 163 announcement bodies were rate-limited on the first fetch and re-fetched with backoff.
+  - The #504 table parser was fixed before any #504 price was seen (addendum 1).
