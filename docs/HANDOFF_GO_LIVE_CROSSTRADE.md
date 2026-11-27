@@ -41,6 +41,10 @@ Only Jx can do sign-ups, type passwords and spend money. Everything else is for 
 - [x] 2026-11-27 Jx turned on Remote Control in the Claude desktop app. The cloud session could not use any of the PC's folders
       (`list_computer_folders`: every folder `not_available`; likely the Windows app version). So a **local session on Jx's PC** was
       offered instead (desktop-app card "Set up CrossTrade practice test on this PC"; prompt in section 6).
+- [x] 2026-11-27 Jx chose to continue with NinjaTrader over pausing for Topstep-only (offered: Topstep 50K + $3K Challenge on the
+      existing connector). Jx's part is done in **one sitting on Sun 29 / Mon 30 Nov**: install NT8 and log in, CrossTrade trial and
+      Add-On, key as a user environment variable, then "done" to the PC session. After that the PC stays on with NinjaTrader open on
+      US trading nights (21:15–05:15 Malaysia time).
 - [ ] Install NinjaTrader 8 **desktop** on Jx's PC; Jx logs in. Confirm MNQ 12-26 1-minute bars show (NinjaTrader's sim data).
   - If there are no bars, stop. The fallback is buying a LucidFlex 50K evaluation (about $80), which is Jx's decision.
 - [ ] Jx starts the CrossTrade 7-day trial on **Sun 29 or Mon 30 Nov 2026**, so it covers 5 US trading days and ends before the
