@@ -1,0 +1,4 @@
+https://indexes.nikkei.co.jp/en/nkave/archives/news: clicked 0, chars 212, tables 1 
+https://indexes.nikkei.co.jp/en/nkave/index/profile?idx=nk225: clicked 0, chars 4749, tables 1 
+https://www.hsi.com.hk/eng/newsroom/index-other-notices: clicked 0, chars 828, tables 0 
+https://www.hsi.com.hk/eng/indexes/all-indexes/hsi: clicked 0, chars 3388, tables 3 
