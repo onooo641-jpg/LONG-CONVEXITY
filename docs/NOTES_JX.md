@@ -860,3 +860,25 @@ $38,034; bar: real ≥ $19,017, dip ≥ −$5,794.
   - **Qualifying set now:** LucidFlex 50K (NQ, ES), Topstep 50K Consistency, LucidDaily, Topstep $3K Challenge, DayTraders 100K/150K
     Static. New firm: DayTraders.
   - Connectors needed before going live: Lucid (CrossTrade), DayTraders and FFN (Rithmic); the bot today speaks only ProjectX.
+
+## 2026-11-27 — go-live: CrossTrade connector for Lucid and DayTraders (`docs/GO_LIVE_MULTIFIRM.md`)
+- **Built:**
+  - `bridge/crosstrade.py`: NinjaTrader 8 via the CrossTrade NT8 Add-On. It covers Lucid, DayTraders and FFN, so no custom Rithmic
+    client is needed.
+  - `BRIDGE_BROKER=crosstrade` is wired into `bridge.live` (preflight, roundtrip, dry run, live).
+  - One round-trip proof per engine.
+  - Engine-scoped anti-hedge claims across accounts and markets.
+  - 535 tests pass (16 new in `tests/test_crosstrade.py`).
+- **Verified:** against CrossTrade's rendered API reference only (run 45929437254). No real server yet.
+- **Differences from Topstep:**
+  - The stop and target go on after the first fill (cancel_and_bracket), so there are about 2 s unprotected per trade.
+  - A partial fill is treated as the whole fill.
+  - A resting entry is unprotected if the engine dies.
+  - Bars are assumed stamped at their close (NinjaTrader convention), to be confirmed on the chart.
+- **Mechanical fix:** `search_contracts` and `trades` had been placed on `DryRunBroker` instead of `TopstepXBroker`, so
+  `--find-contract` and `scripts/export_live_trades.py` would have crashed. Moved.
+- **Needs Jx:**
+  - a CrossTrade **Pro** plan (the REST API needs Pro or above; the price was not captured);
+  - NinjaTrader 8;
+  - a sim account for steps 3–4;
+  - which computer and accounts run the new firms.

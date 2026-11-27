@@ -73,6 +73,18 @@ from .hedge import HedgeRegistry, HedgeRegistryError
 from .journal import DEFAULT_PATH, Journal
 from .topstepx import BrokerError, DryRunBroker, TopstepXBroker
 
+
+def make_broker(cfg: Config, *, live: bool, journal=None):
+    """The connector for ``cfg.broker``. ``live=False`` never sends an order.
+
+    A TopstepX dry run is fully offline (``DryRunBroker``). A CrossTrade dry run reads real bars, orders and
+    positions through CrossTrade and records its orders instead of sending them.
+    """
+    if cfg.broker == "crosstrade":
+        from .crosstrade import CrossTradeBroker
+        return CrossTradeBroker(cfg, dry_run=not live, journal=journal, poll_s=cfg.protect_poll_s)
+    return TopstepXBroker(cfg) if live else DryRunBroker(cfg)
+
 log = logging.getLogger("bridge.live")
 
 NY = "America/New_York"
@@ -193,6 +205,9 @@ class LiveEngine:
             flat_minute=self.cfg.flat_minute,
             market=self.cfg.market,
             hedge_registry=self.cfg.hedge_registry,
+            broker=self.cfg.broker,
+            account_name=self.cfg.account_name,
+            engine_id=self.cfg.engine_id,
         )
 
     def bars(self, now: pd.Timestamp) -> pd.DataFrame:
@@ -417,9 +432,10 @@ class LiveEngine:
         # would refuse the cancel -- which is indistinguishable, from the error
         # alone, from a cancel that genuinely failed and left an order out
         # there. The first is routine, the second is the thing to shout about.
-        resting: set[int] | None
+        # Ids compared as strings: TopstepX ids are integers, CrossTrade ids are strings.
+        resting: set[str] | None
         try:
-            resting = {int(o["id"]) for o in self.broker.open_orders()}
+            resting = {str(o["id"]) for o in self.broker.open_orders()}
         except (BrokerError, KeyError, TypeError, ValueError) as exc:
             # Blind, then: a redundant cancel on a filled order is harmless, a
             # skipped one on a resting order is what this step exists to stop.
@@ -436,7 +452,7 @@ class LiveEngine:
             resting = None
 
         for key, order_id in list(self.outstanding.items()):
-            if resting is not None and order_id not in resting:
+            if resting is not None and str(order_id) not in resting:
                 self.journal.write("no_longer_resting", key=key, order_id=order_id,
                                    why="filled or already gone")
                 self.outstanding.pop(key, None)
@@ -530,6 +546,10 @@ def main(argv=None) -> int:
                         else str(DEFAULT_PATH.with_name(f"bridge_journal_{cfg.market}.jsonl")))
 
     if args.find_contract:
+        if cfg.broker != "topstepx":
+            print("CrossTrade takes the NinjaTrader instrument name itself (CROSSTRADE_INSTRUMENT, e.g. "
+                  "'MNQ 12-26'); copy it from NinjaTrader's instrument list.")
+            return 1
         broker = TopstepXBroker(cfg)
         broker.authenticate()
         for c in broker.search_contracts(args.find_contract, live=cfg.live_data):
@@ -545,26 +565,28 @@ def main(argv=None) -> int:
                                      risk_usd=args.risk)) else 1
 
     if args.roundtrip:
-        from .roundtrip import PROOF_PATH, prove
-        broker = TopstepXBroker(cfg)
+        from .roundtrip import proof_path, prove
+        journal = Journal(args.journal)
+        broker = make_broker(cfg, live=True, journal=journal)
         broker.authenticate()
-        ok = prove(cfg, broker, Journal(args.journal))
-        print(f"roundtrip {'OK -- proof written to ' + str(PROOF_PATH) if ok else 'FAILED'}"
-              f" (account {cfg.account_id}, contract {cfg.contract_id}); "
+        ok = prove(cfg, broker, journal, path=proof_path(cfg))
+        print(f"roundtrip {'OK -- proof written to ' + str(proof_path(cfg)) if ok else 'FAILED'}"
+              f" (account {cfg.account_id or cfg.account_name}, contract {cfg.contract_id}); "
               "details in the journal")
         return 0 if ok else 1
 
-    broker = TopstepXBroker(cfg) if args.live else DryRunBroker(cfg)
+    journal = Journal(args.journal)
+    broker = make_broker(cfg, live=args.live, journal=journal)
     broker.authenticate()
 
-    from .roundtrip import proof_holds
-    proven = proof_holds(cfg) if args.live else True
+    from .roundtrip import proof_holds, proof_path
+    proven = proof_holds(cfg, proof_path(cfg)) if args.live else True
     if not proven:
         log.warning("no round-trip proof for account %s / %s: the engine will not "
                     "end the day on an empty order book, so it will not exit 0. "
                     "Run `python -m bridge.live --roundtrip` first.",
-                    cfg.account_id, cfg.contract_id)
-    engine = LiveEngine(cfg=cfg, broker=broker, journal=Journal(args.journal),
+                    cfg.account_id or cfg.account_name, cfg.contract_id)
+    engine = LiveEngine(cfg=cfg, broker=broker, journal=journal,
                         risk_usd=args.risk, empty_proven=proven,
                         hedge=HedgeRegistry(cfg.hedge_registry) if cfg.hedge_registry else None)
     engine.announce()

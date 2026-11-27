@@ -30,6 +30,7 @@ from __future__ import annotations
 
 import json
 import pathlib
+import re
 import time
 from typing import Any, Callable
 
@@ -49,6 +50,16 @@ POLLS = 10
 POLL_S = 1.0
 
 
+def proof_path(cfg: Config) -> pathlib.Path:
+    """One proof file per engine, so several accounts on one computer do not overwrite each other's proof.
+
+    The original Topstep NQ engine keeps the original path."""
+    if cfg.broker == "topstepx" and cfg.market == "NQ":
+        return PROOF_PATH
+    slug = re.sub(r"[^A-Za-z0-9]+", "_", cfg.engine_id).strip("_")
+    return PROOF_PATH.with_name(f"roundtrip_proof_{slug}.json")
+
+
 def proof_holds(cfg: Config, path: pathlib.Path = PROOF_PATH) -> bool:
     """A proof exists for exactly this account and this contract id."""
     try:
@@ -56,6 +67,7 @@ def proof_holds(cfg: Config, path: pathlib.Path = PROOF_PATH) -> bool:
     except (OSError, ValueError):
         return False
     return (proof.get("account_id") == cfg.account_id
+            and proof.get("account_name") == cfg.account_name
             and proof.get("contract_id") == cfg.contract_id
             and proof.get("ok") is True)
 
@@ -85,7 +97,9 @@ def prove(cfg: Config, broker, journal, *, path: pathlib.Path = PROOF_PATH,
 
     try:
         placed = broker.place(probe)
-        order_id = int(placed["orderId"])
+        order_id = placed["orderId"]
+        if order_id is None or str(order_id) == "":
+            raise ValueError("no orderId in the place response")
     except (BrokerError, KeyError, TypeError, ValueError) as exc:
         journal.write("roundtrip_failed", step="place", error=str(exc))
         return False
@@ -93,7 +107,7 @@ def prove(cfg: Config, broker, journal, *, path: pathlib.Path = PROOF_PATH,
 
     def visible() -> bool | None:
         try:
-            return any(int(r.get("id", -10**9)) == order_id
+            return any(str(r.get("id")) == str(order_id)
                        for r in _ours(broker.open_orders(), cfg))
         except (BrokerError, KeyError, TypeError, ValueError) as exc:
             journal.write("roundtrip_query_failed", error=str(exc))
@@ -132,7 +146,7 @@ def prove(cfg: Config, broker, journal, *, path: pathlib.Path = PROOF_PATH,
                           "platform by hand")
         return False
 
-    proof = {"ok": True, "account_id": cfg.account_id,
+    proof = {"ok": True, "account_id": cfg.account_id, "account_name": cfg.account_name,
              "contract_id": cfg.contract_id, "order_id": order_id,
              "at": clock().isoformat()}
     pathlib.Path(path).parent.mkdir(parents=True, exist_ok=True)

@@ -218,24 +218,6 @@ class DryRunBroker:
         self.position_size = 0
         return {"success": True, "errorCode": 0, "errorMessage": None, "dryRun": True}
 
-    def search_contracts(self, text: str, live: bool = False) -> list[dict[str, Any]]:
-        """Look up contract ids by symbol text (ProjectX Contract/search), e.g. "MES"."""
-        out = self._post("/api/Contract/search", {"searchText": text, "live": bool(live)})
-        return out.get("contracts", [])
-
-    def trades(self, start, end=None) -> list[dict[str, Any]]:
-        """Every fill on this account in a time window (ProjectX Trade/search).
-
-        Path and body from gateway.docs.projectx.com/docs/api-reference/trade/trade-search
-        (read 2026-11-20). ``profitAndLoss`` is null on the opening half of a
-        round trip; ``voided`` fills no longer count and must be dropped.
-        """
-        body = {"accountId": self.cfg.account_id,
-                "startTimestamp": pd.Timestamp(start).isoformat()}
-        if end is not None:
-            body["endTimestamp"] = pd.Timestamp(end).isoformat()
-        return self._post("/api/Trade/search", body).get("trades", [])
-
     def retrieve_bars(self, start, end, *, limit: int = 2000) -> pd.DataFrame:
         """Replay, modelling ``includePartialBar=False`` faithfully.
 
@@ -323,6 +305,24 @@ class TopstepXBroker:
     def retrieve_bars(self, start, end, *, limit: int = 2000) -> pd.DataFrame:
         return parse_bars(self._post("/api/History/retrieveBars",
                                      bars_payload(self.cfg, start, end, limit=limit)))
+
+    def search_contracts(self, text: str, live: bool = False) -> list[dict[str, Any]]:
+        """Look up contract ids by symbol text (ProjectX Contract/search), e.g. "MES"."""
+        out = self._post("/api/Contract/search", {"searchText": text, "live": bool(live)})
+        return out.get("contracts", [])
+
+    def trades(self, start, end=None) -> list[dict[str, Any]]:
+        """Every fill on this account in a time window (ProjectX Trade/search).
+
+        Path and body from gateway.docs.projectx.com/docs/api-reference/trade/trade-search
+        (read 2026-11-20). ``profitAndLoss`` is null on the opening half of a
+        round trip; ``voided`` fills no longer count and must be dropped.
+        """
+        body = {"accountId": self.cfg.account_id,
+                "startTimestamp": pd.Timestamp(start).isoformat()}
+        if end is not None:
+            body["endTimestamp"] = pd.Timestamp(end).isoformat()
+        return self._post("/api/Trade/search", body).get("trades", [])
 
     def accounts(self) -> list[dict[str, Any]]:
         """List tradable accounts, to find the account id.

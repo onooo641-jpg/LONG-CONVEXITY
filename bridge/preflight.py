@@ -18,7 +18,7 @@ import pandas as pd
 from ict import data as D
 from strategies.ltf_sweep import LTFSweepConfig, generate_orders
 
-from .config import PRESETS, Config
+from .config import FIRM_PRESETS, PRESETS, Config
 from .guards import scaling_cap
 from .live import day_start
 from .topstepx import Order, TopstepXBroker, order_payload
@@ -46,9 +46,17 @@ def run(cfg: Config, reach_broker: bool = True, need_webhook: bool = True,
     """
     out: list[Check] = []
 
+    ct = cfg.broker == "crosstrade"
     out.append(Check("api key present", bool(cfg.api_key),
-                     _mask(cfg.api_key) if cfg.api_key else "TOPSTEPX_API_KEY is empty"))
-    out.append(Check("username present", bool(cfg.username), cfg.username or "empty"))
+                     _mask(cfg.api_key) if cfg.api_key
+                     else ("CROSSTRADE_API_KEY" if ct else "TOPSTEPX_API_KEY") + " is empty"))
+    if ct:
+        out.append(Check("NinjaTrader account", bool(cfg.account_name), cfg.account_name or "CROSSTRADE_ACCOUNT empty"))
+        out.append(Check("NinjaTrader instrument", bool(cfg.instrument) and " " in (cfg.instrument or ""),
+                         f"{cfg.instrument!r} -- must be the dated NT8 name, e.g. 'MNQ 12-26' (no continuous "
+                         "symbols such as MNQ1!); update it at every roll"))
+    else:
+        out.append(Check("username present", bool(cfg.username), cfg.username or "empty"))
 
     if need_webhook:
         weak = {"", "changeme", "secret", "password"}
@@ -57,11 +65,14 @@ def run(cfg: Config, reach_broker: bool = True, need_webhook: bool = True,
                          f"{len(cfg.webhook_secret)} chars"
                          if cfg.webhook_secret else "BRIDGE_WEBHOOK_SECRET is empty"))
 
-    out.append(Check("preset known", cfg.preset in PRESETS,
+    out.append(Check("preset known", cfg.preset in PRESETS or cfg.preset in FIRM_PRESETS,
                      f"{cfg.preset}: target ${cfg.profit_target:,.0f}, "
                      f"loss limit ${cfg.max_loss_limit:,.0f}, "
                      f"daily ${cfg.daily_loss_limit:,.0f}, "
-                     f"{cfg.max_contracts} micros"))
+                     f"{cfg.max_contracts} micros"
+                     + (f", floor {cfg.floor_mode}" + (f", locks at start + ${cfg.lock_level:,.0f} after "
+                                                       f"+${cfg.lock_at:,.0f}" if cfg.lock_at else "")
+                        if cfg.preset in FIRM_PRESETS else "")))
 
     cap = scaling_cap(0.0, cfg)
     out.append(Check("contract ceiling", cap >= 1,
@@ -94,10 +105,11 @@ def run(cfg: Config, reach_broker: bool = True, need_webhook: bool = True,
                      f"places orders until {cfg.cutoff_minute // 60:02d}:"
                      f"{cfg.cutoff_minute % 60:02d} ET, then cancels what has not "
                      "filled"))
-    out.append(Check("data subscription", True,
-                     ("live -- correct for a funded account" if cfg.live_data
-                      else "sim -- correct for a Practice Account. A funded account "
-                           "on this setting gets an empty bar array, not an error")))
+    if not ct:
+        out.append(Check("data subscription", True,
+                         ("live -- correct for a funded account" if cfg.live_data
+                          else "sim -- correct for a Practice Account. A funded account "
+                               "on this setting gets an empty bar array, not an error")))
 
     out.append(Check("guard posture", True,
                      ("ON -- blocks near the loss limit" if cfg.use_guard
@@ -106,9 +118,11 @@ def run(cfg: Config, reach_broker: bool = True, need_webhook: bool = True,
 
     # The bracket arithmetic, shown rather than trusted. A stop 20 points from
     # a 100.00 entry on a 0.25 tick is 80 ticks; anything else here is wrong.
+    if ct:
+        out.extend(_crosstrade_payload_checks(cfg))
     try:
         sample = Order(side="sell", size=2, entry=100.0, stop=120.0, target=80.0)
-        payload = order_payload(sample, cfg) if cfg.account_id else None
+        payload = order_payload(sample, cfg) if cfg.account_id and not ct else None
         if payload:
             sl = payload["stopLossBracket"]["ticks"]
             tp = payload["takeProfitBracket"]["ticks"]
@@ -118,7 +132,7 @@ def run(cfg: Config, reach_broker: bool = True, need_webhook: bool = True,
                              f"(expected {expected})"))
             out.append(Check("sample order payload", True,
                              json.dumps(payload, sort_keys=True)))
-        else:
+        elif not ct:
             out.append(Check("bracket ticks", False,
                              "cannot build a payload without TOPSTEPX_ACCOUNT_ID"))
     except Exception as exc:                       # noqa: BLE001 - report, never raise
@@ -126,6 +140,8 @@ def run(cfg: Config, reach_broker: bool = True, need_webhook: bool = True,
 
     if not reach_broker:
         return out
+    if ct:
+        return out + _crosstrade_connected_checks(cfg)
 
     broker = TopstepXBroker(cfg)
     try:
@@ -158,6 +174,47 @@ def run(cfg: Config, reach_broker: bool = True, need_webhook: bool = True,
                          f"could not list accounts ({type(exc).__name__}: {exc}). "
                          "This endpoint is unverified -- confirm the id by hand."))
 
+    out.extend(bar_feed_checks(cfg, broker))
+    return out
+
+
+def _crosstrade_payload_checks(cfg: Config) -> list[Check]:
+    """The entry and the bracket CrossTrade would get, shown rather than trusted."""
+    from .crosstrade import bracket_payload, entry_payload
+    try:
+        sample = Order(side="sell", size=2, entry=100.0, stop=120.0, target=80.0)
+        entry = entry_payload(sample, cfg, "lc-preflight")
+        bracket = bracket_payload(sample, cfg)
+        ok = (entry["limitPrice"] == 100.0 and bracket["stopLoss"] == 120.0 and bracket["takeProfit"] == 80.0
+              and entry["action"] == "SELL" and bracket["action"] == "Sell")
+        return [Check("bracket prices", ok, "sell 100.00, stop 120.00, target 80.00 -> "
+                      f"limit {entry['limitPrice']}, stop {bracket['stopLoss']}, target {bracket['takeProfit']}"),
+                Check("sample entry payload", True, json.dumps(entry, sort_keys=True)),
+                Check("sample bracket payload", True, json.dumps(bracket, sort_keys=True)
+                      + " (sent by cancel_and_bracket once the entry fills)")]
+    except Exception as exc:                       # noqa: BLE001
+        return [Check("bracket prices", False, f"{type(exc).__name__}: {exc}")]
+
+
+def _crosstrade_connected_checks(cfg: Config) -> list[Check]:
+    from .crosstrade import CrossTradeBroker
+    out: list[Check] = []
+    broker = CrossTradeBroker(cfg, dry_run=True)
+    try:
+        names = [a.get("name") for a in broker.accounts()]
+        out.append(Check("CrossTrade answers", True, f"NT8 accounts visible: {', '.join(map(str, names)) or 'none'}"))
+    except Exception as exc:                       # noqa: BLE001
+        return [Check("CrossTrade answers", False,
+                      f"{type(exc).__name__}: {exc}. HTTP 408 = NinjaTrader closed or the Add-On disconnected; "
+                      "401/403 = wrong key or a plan without API access (Pro or above)")]
+    try:
+        acct = broker.account()
+        item = acct.get("item") or {}
+        out.append(Check("account connected", acct.get("connectionStatus") == "Connected",
+                         f"{acct.get('name')} via {acct.get('connectionName')} ({acct.get('connectionStatus')}), "
+                         f"net liquidation ${float(item.get('netLiquidation') or 0):,.2f}"))
+    except Exception as exc:                       # noqa: BLE001
+        out.append(Check("account connected", False, f"{cfg.account_name}: {type(exc).__name__}: {exc}"))
     out.extend(bar_feed_checks(cfg, broker))
     return out
 

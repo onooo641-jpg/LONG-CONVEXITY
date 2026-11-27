@@ -1,9 +1,12 @@
 # Go live beyond Topstep: Lucid and DayTraders (and optionally FFN)
 
 Status 2026-11-27:
-- **Groundwork built and tested:** broker choice, firm presets, static/locked floors, and the per-engine anti-hedge check.
-- **CrossTrade connector (`bridge/crosstrade.py`):** written once CrossTrade's API reference has been captured and checked. It is verified
-  only against those docs until a practice run (step 4).
+- **Built and tested offline (535 tests pass):**
+  - broker choice (`BRIDGE_BROKER`), firm presets, static and locked floors;
+  - the per-engine anti-hedge check;
+  - **the CrossTrade connector, `bridge/crosstrade.py`**, with `tests/test_crosstrade.py` (16 tests).
+- **Checked against CrossTrade's API reference only.** The reference was rendered 2026-11-27 (GitHub Actions run 45929437254,
+  `data/public/propverify/expand_osstrade_io_docs_api_*.json`). The connector has not met a real server; step 4 is the first time.
 
 Topstep keeps its own path (`docs/GO_LIVE.md`).
 
@@ -64,15 +67,46 @@ uv run python -m bridge.live --journal data/journal_dt150.jsonl
 Each engine claims its direction before entering, and releases only its own claims when its day ends. An unreadable registry blocks
 the entry: unknown is treated as "do not enter".
 
+## How the CrossTrade connector trades (from the API reference)
+| Step | Call | Notes |
+|---|---|---|
+| Entry | `POST /v1/api/accounts/{account}/orders/place` | LIMIT, DAY, our own `orderId` (`lc-…`) |
+| Watch the fill | `GET /v1/api/accounts/{account}/orders/{our id}` every 2 s | reads `filled` and `orderState` |
+| Protect | `POST …/orders/cancel_and_bracket` on the **first** fill | cancels the rest of the entry, places an OCO stop + target for the position held |
+| Cutoff | `POST …/orders/{our id}/cancel` | only if still listed in `GET …/orders?activeOnly=true` |
+| 16:00 flat | `POST …/positions/flatten` with `cancelOrders: true` | also sweeps leftover stops and targets |
+| Bars | `POST /v1/api/market/bars` (1-minute, closed bars only) | NT8 stamps bars at their close; the connector moves them to the open |
+
+**Differences from Topstep, and what they cost:**
+- **The stop and target go on after the fill, not with the entry.** NT8 through CrossTrade has no attached bracket.
+  - The position is unprotected for about one fill check (2 s, `CROSSTRADE_PROTECT_POLL_S`) plus request time.
+  - If the bracket fails three times, the connector flattens the position.
+  - **If the engine process dies while an entry is resting, nothing protects that entry.** Cancel it by hand in NinjaTrader.
+- **A partial fill is treated as the whole fill.** The rest of the entry is cancelled when the bracket goes on. The research model
+  assumes full fills, so live size can come out smaller than modelled; reconciliation will show how often.
+- **Rate limit:** 3 requests per second per CrossTrade user, shared by every engine on the same key. Each engine with a resting
+  entry uses about 0.5 per second, so four engines fit. 429s are retried after `Retry-After`.
+- **Plan:** the REST API needs CrossTrade **Pro or above** (`/docs/api/overview`). The Pro price was not captured; the ~$49/month
+  quoted earlier may be a lower tier, so confirm at checkout.
+- **Round-trip proofs:** each engine gets its own proof file (`data/roundtrip_proof_<engine>.json`). Topstep NQ keeps
+  `data/roundtrip_proof.json`.
+
 ## Steps (same discipline as `docs/GO_LIVE.md`)
-1. **Install:** NinjaTrader 8, the CrossTrade NT8 Add-On, and a CrossTrade subscription (~$49/month, Jx's spend). Connect each firm's
+1. **Install:** NinjaTrader 8, the CrossTrade NT8 Add-On, and a CrossTrade **Pro** subscription (Jx's spend). Connect each firm's
    account in NinjaTrader.
 2. **Preflight, offline:** `uv run python -m bridge.live --preflight --offline` with each engine's variables. This checks the preset,
-   instrument and account name, and prints the exact order that would be sent.
-3. **Preflight, connected:** confirms CrossTrade answers, the account exists and bars arrive.
-4. **Practice round trip** on a sim or practice account (`--roundtrip`): one real order that is placed, seen, cancelled or closed. This
-   is the first time the connector meets the real server.
-5. **Dry run** for a few days with `--journal`, then reconcile against the research engine (`scripts/reconcile.py`).
+   instrument and account name, and prints the exact entry and bracket that would be sent.
+3. **Preflight, connected:** `--preflight` without `--offline`. It confirms:
+   - CrossTrade answers (HTTP 408 = NinjaTrader closed or the Add-On disconnected);
+   - the account is Connected;
+   - 1-minute bars arrive and are stamped at the open after conversion.
+
+   Also compare the newest bar's prices with the NT8 chart for that minute once by hand.
+4. **Practice round trip** on a sim or practice account (`--roundtrip`): one far-off 1-lot limit is placed, seen, cancelled and seen
+   gone. Then place one small sim trade near the market by hand through the engine's path, to watch the stop and target appear after
+   the fill.
+5. **Dry run** for a few days (no `--live`). This reads real bars, orders and positions through CrossTrade and records orders instead
+   of sending them. Then reconcile against the research engine (`scripts/reconcile.py`).
 6. `--live` only after the journals reconcile.
 
 ## Rules the guards now know per firm (`bridge/config.py: FIRM_PRESETS`)
@@ -82,6 +116,9 @@ the entry: unknown is treated as "do not enter".
 
 ## Known gaps
 - The CrossTrade connector is unverified against a live server until step 4.
-- Bars: the connector needs 1-minute bars from NinjaTrader via CrossTrade. If CrossTrade's API does not serve bars, the fallback is
-  TopstepX bars (needs a Topstep account) or a NinjaTrader-side export. Decided once the API reference is read.
-- Contract rolls: `CROSSTRADE_INSTRUMENT` must be updated each quarter, as `BRIDGE_CONTRACT_ID` is for Topstep.
+- **Bar timestamps:** NinjaTrader stamps a bar at its close, and this is assumed from NinjaTrader's convention. The doc example does
+  not settle it. Step 3's hand comparison settles it.
+- **Unprotected seconds after each fill**, and an unprotected resting entry if the engine dies (see above).
+- `scripts/export_live_trades.py` reads TopstepX fills only. CrossTrade's executions endpoint covers the last 15 minutes, so export
+  fills from NinjaTrader (Account Performance → Executions) for reconciliation.
+- **Contract rolls:** `CROSSTRADE_INSTRUMENT` must be updated each quarter, as `BRIDGE_CONTRACT_ID` is for Topstep.

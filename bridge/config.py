@@ -130,6 +130,8 @@ class Config:
     floor_mode: str = "eod"
     lock_at: float | None = None
     lock_level: float | None = None
+    #: CrossTrade only: seconds between fill checks on a resting entry (the stop/target go on after the fill).
+    protect_poll_s: float = 2.0
 
     @property
     def engine_id(self) -> str:
@@ -159,6 +161,9 @@ class Config:
         if broker not in BROKERS:
             raise RuntimeError(f"BRIDGE_BROKER={broker!r} is not one of {BROKERS}")
         ct = broker == "crosstrade"
+        # CrossTrade names contracts by their NT8 instrument ("MNQ 12-26"); it doubles as the contract id the
+        # engine filters orders and positions on and the round-trip proof is keyed to.
+        instrument = _env("CROSSTRADE_INSTRUMENT") if ct else None
         return cls(
             username=_env("TOPSTEPX_USERNAME", "" if ct else MISSING),
             # Each connector reads only its own secret, and only from the environment.
@@ -166,7 +171,7 @@ class Config:
             base_url=_env("CROSSTRADE_BASE_URL", "https://app.crosstrade.io") if ct
             else _env("TOPSTEPX_BASE_URL", "https://api.topstepx.com"),
             account_id=None if ct else _env("TOPSTEPX_ACCOUNT_ID", None, int),
-            contract_id=_env("BRIDGE_CONTRACT_ID", "" if ct else ("CON.F.US.MNQ.Z26" if market == "NQ" else MISSING)),
+            contract_id=instrument if ct else _env("BRIDGE_CONTRACT_ID", "CON.F.US.MNQ.Z26" if market == "NQ" else MISSING),
             tick_size=_env("BRIDGE_TICK_SIZE", tick_default, float),
             point_value=_env("BRIDGE_POINT_VALUE", pv_default, float),
             # The local signal engine has no inbound surface to protect, so the
@@ -207,8 +212,9 @@ class Config:
             hedge_registry=_env("BRIDGE_HEDGE_REGISTRY", None),
             broker=broker,
             account_name=_env("CROSSTRADE_ACCOUNT") if ct else None,
-            instrument=_env("CROSSTRADE_INSTRUMENT") if ct else None,
+            instrument=instrument,
             floor_mode=floor_mode,
             lock_at=lock_at,
             lock_level=lock_level,
+            protect_poll_s=_env("CROSSTRADE_PROTECT_POLL_S", 2.0, float),
         )
