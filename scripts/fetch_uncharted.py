@@ -2426,3 +2426,54 @@ def job_ubatchl():
     df = pd.DataFrame(rows, columns=["sym", "t", "close"]).drop_duplicates(["sym", "t"])
     print(f"  1h rows: {len(df):,} for {df.sym.nunique()} symbols", flush=True)
     save("batchl_1h", df)
+
+
+# ---------------------------------------------------------------- Batch M #505-#508 (docs/PREREG_BATCH_M_20261127.md)
+def _bn_spot_month(sym, mth):
+    import io as _io
+    import zipfile
+    url = f"https://data.binance.vision/data/spot/monthly/klines/{sym}/1h/{sym}-1h-{mth}.zip"
+    out = []
+    try:
+        with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=30) as r:
+            z = zipfile.ZipFile(_io.BytesIO(r.read()))
+            for ln in z.read(z.namelist()[0]).decode().splitlines():
+                f = ln.split(",")
+                if f and f[0].strip().isdigit():
+                    ts = int(f[0])
+                    ts = (ts // 1000 if ts > 10**14 else ts) // 1000
+                    out.append((ts, float(f[4])))
+    except Exception:  # noqa: BLE001
+        pass
+    return out
+
+
+def job_ubatchm():
+    """Batch M: Yahoo GLD daily; Binance spot 1h for #505 (perp-delisting coins named in titles) and BTCUSDT."""
+    import json as _json
+    from concurrent.futures import ThreadPoolExecutor
+    st, raw = _raw_get("https://query1.finance.yahoo.com/v8/finance/chart/GLD?period1=1072915200&period2=1795651200&interval=1d", timeout=40)
+    try:
+        r = json.loads(raw.decode())["chart"]["result"][0]
+        q = r["indicators"]["quote"][0]
+        save("batchm_gld_1d.parquet", pd.DataFrame([(int(t), c) for t, c in zip(r["timestamp"], q["close"]) if c is not None],
+                                                    columns=["t", "close"]))
+    except Exception as e:  # noqa: BLE001
+        print(f"  yahoo GLD FAIL HTTP {st} {e}", flush=True)
+    ev = _json.loads((OUT / "batchl_events.json").read_text())
+    need = set()
+    for e in ev:
+        if e["idea"] != 502 or not re.search(r"[A-Z0-9]{2,15}USDT", e["title"]):
+            continue
+        t0 = pd.Timestamp(e["ms"], unit="ms")
+        for s in e["syms"] + ["BTCUSDT"]:
+            for k in (0, 1, 2):
+                need.add((s, (t0 + pd.DateOffset(months=k)).strftime("%Y-%m")))
+    tasks = sorted(need)
+    rows = []
+    with ThreadPoolExecutor(8) as ex:
+        for (s, mth), res in zip(tasks, ex.map(lambda a: _bn_spot_month(a[0], a[1]), tasks)):
+            rows += [(s, t, v) for t, v in res]
+    df = pd.DataFrame(rows, columns=["sym", "t", "close"]).drop_duplicates(["sym", "t"])
+    print(f"  spot 1h rows {len(df):,} for {df.sym.nunique()} symbols ({len(tasks)} symbol-months asked)", flush=True)
+    save("batchm_spot_1h.parquet", df)

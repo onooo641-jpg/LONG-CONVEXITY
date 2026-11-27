@@ -1,2 +1,2 @@
-# Batch L pull, #504 symbols after the collateral-table parser fix (workstream C)
-ubatchl
+# Batch M pull (workstream C)
+ubatchm
