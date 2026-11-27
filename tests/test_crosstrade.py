@@ -442,3 +442,16 @@ def test_exit_probe_refuses_anything_but_a_sim_account(tmp_path):
     cfg = _cfg(account_name="LUCID FLEX 1")
     assert not exit_probe(cfg, CrossTradeBroker(cfg, transport=sim), j, sleep=lambda s: None)
     assert sim.calls == []
+
+
+def test_dry_run_keeps_a_recorded_entry_resting_until_the_deadline_cancels_it():
+    fake = Fake()
+    fake.on("GET", f"{ACCT}/orders?activeOnly=true", {"orders": [], "success": True})
+    b = CrossTradeBroker(_cfg(), dry_run=True, transport=fake)
+    oid = b.place(Order(side="sell", size=6, entry=26553.875, stop=26619.0, target=26488.75))["orderId"]
+    eng = LiveEngine(cfg=_cfg(), broker=b, journal=Journal(None), risk_usd=900.0)
+    assert [r["id"] for r in eng.ours(b.open_orders())] == [oid]          # the day is not "done" while it rests
+    eng.outstanding = {"k": oid}
+    eng.close_out(pd.Timestamp("2026-11-27 20:30", tz="UTC"))
+    assert b.open_orders() == [] and eng.outstanding == {}
+    assert not any(c[0] == "POST" for c in fake.calls)                      # still nothing sent

@@ -239,6 +239,7 @@ class CrossTradeBroker:
     transport: Transport | None = None
     sleep: Callable[[float], None] = time.sleep
     sent: list[dict[str, Any]] = field(default_factory=list)
+    _dry_cancelled: set[str] = field(default_factory=set)
     _pending: dict[str, dict[str, Any]] = field(default_factory=dict)
     _known: dict[str, str] = field(default_factory=dict)
     _lock: threading.Lock = field(default_factory=threading.Lock)
@@ -324,6 +325,7 @@ class CrossTradeBroker:
 
     def cancel(self, order_id) -> dict[str, Any]:
         if self.dry_run:
+            self._dry_cancelled.add(str(order_id))
             return {"orderId": str(order_id), "success": True, "dryRun": True}
         # The watcher keeps watching a cancelled entry: if part of it filled first, it still needs its bracket.
         return self._call("POST", f"{self._acct()}/orders/{urllib.parse.quote(str(order_id), safe='')}/cancel", {})
@@ -332,7 +334,13 @@ class CrossTradeBroker:
         out = self._call("GET", f"{self._acct()}/orders?activeOnly=true")
         with self._lock:
             known = dict(self._known)
-        return [order_row(o, known) for o in out.get("orders", [])]
+        rows = [order_row(o, known) for o in out.get("orders", [])]
+        if self.dry_run:
+            # As DryRunBroker does: a recorded entry counts as resting until cancelled, so a dry run follows the day to
+            # the entry deadline and its cancel, instead of reading the (untouched) real account as "nothing left to do".
+            rows += [{"id": e["entry"]["orderId"], "ntId": None, "contractId": self.cfg.contract_id, "status": "DryRun"}
+                     for e in self.sent if "entry" in e and e["entry"]["orderId"] not in self._dry_cancelled]
+        return rows
 
     def open_positions(self) -> list[dict[str, Any]]:
         out = self._call("GET", f"{self._acct()}/positions")

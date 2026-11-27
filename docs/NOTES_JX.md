@@ -1018,3 +1018,14 @@ $38,034; bar: real ≥ $19,017, dip ≥ −$5,794.
 =======
 - 2026-11-27 dryrun: **FAIL** (exit 0; 19 rows: placed x1, session_done x1, session_start x1, stale_feed x15, tick_error x1; errors: stale_feed x15, tick_error x1). Journal: `docs/jx_runs/crosstrade_test_journal_20261127.jsonl`.
 >>>>>>> Stashed changes
+
+### 2026-11-27 first nightly dry run, read by the cloud session
+- **Order timing: 3 s.** The one signal (sell, 11:11 New York) was recorded 3 s after its bar closed. That is the result
+  `docs/PREREG_FILL_BOUND_20261127.md` said matters most; "1 minute late" is the row that costs money.
+- **Stale feed 09:52–09:57 New York (15 rows):** no new 1-minute bar for up to 7 minutes in regular hours, so the engine correctly
+  refused to act. This was not the early close (13:15). The likely cause is NinjaTrader or the Add-On losing data briefly (the PC
+  session saw a short disconnect earlier). Watch whether it repeats.
+- **One SSL handshake timeout** on the bars call; it was retried on the next tick.
+- **Dry-run gap, fixed:** the CrossTrade dry run ended the day at 11:12, right after recording its order. The order never reaches
+  NT8, so the real account looked empty. `CrossTradeBroker.open_orders` now counts recorded entries as resting until cancelled,
+  as `DryRunBroker` does, so later dry runs follow the day to the 15:30 cancel. Test added.
