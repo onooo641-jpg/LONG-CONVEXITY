@@ -6,3 +6,8 @@ optimism: reopened 25 recorded unhealthy episodes
 optimism: head 160080537 cycles 155 debtors 4780 cand 1165 last_cycle 1737 ms rpc ok/err 1077/None
 optimism: head 160080687 cycles 315 debtors 4780 cand 1164 last_cycle 1774 ms rpc ok/err 2098/None
 optimism: head 160080837 cycles 475 debtors 4780 cand 1167 last_cycle 1680 ms rpc ok/err 3124/None
+optimism: head 160080987 cycles 638 debtors 4780 cand 1168 last_cycle 1706 ms rpc ok/err 4158/None
+optimism: head 160081137 cycles 800 debtors 4780 cand 1168 last_cycle 1738 ms rpc ok/err 5189/None
+optimism: head 160081288 cycles 964 debtors 4780 cand 1166 last_cycle 1657 ms rpc ok/err 6226/None
+optimism: head 160081438 cycles 1127 debtors 4780 cand 1168 last_cycle 1670 ms rpc ok/err 7266/None
+optimism: head 160081588 cycles 1290 debtors 4780 cand 1168 last_cycle 3154 ms rpc ok/err 8303/None
