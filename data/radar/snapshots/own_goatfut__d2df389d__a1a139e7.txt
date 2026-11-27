@@ -257,7 +257,8 @@ Evaluation phase: allowed on EOD, 1-Day-Pass and Flex. A 2 minute buffer applies
 Funded phase: restricted on all plans. 2 minute buffer before and after high impact news events.
 Platforms
 NinjaTrader, Tradovate, TradingView (via Tradovate), TickBlaze, DeepCharts, ATAS, Quantower, TradeSea.
-Updated 25 November 2026
+TradeSea costs an extra $15 per account on every plan, because the platform costs more to run. It's added to your total at checkout when you select TradeSea.
+Updated 27 November 2026
 What are the profit targets for each plan?
 EOD Challenge
 Account Size Profit Target

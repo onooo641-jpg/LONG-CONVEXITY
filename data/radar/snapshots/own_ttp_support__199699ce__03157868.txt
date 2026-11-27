@@ -9,7 +9,7 @@ Futures Instant
 Futures Instant Platforms & Trading Conditions
 Futures Instant Platforms & Trading Conditions
 Platforms, market data, instruments and trading hours for Futures Instant, plus what your dashboard shows.
-Updated over 3 weeks ago
+Updated over a month ago
 Table of contents
 Which Platforms Can I Use, And Can I Change Later?
 Futures Instant is supported on ATAS, Quantower, Volsys, R|Trader Pro, Tradovate, NinjaTrader and TradingView. You choose your platform at checkout, and your market data provider is assigned automatically:

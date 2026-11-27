@@ -68,7 +68,7 @@ Sign Up
 Firm Comparison
 DayTraders vs My Funded Futures
 MFFU holds a 4.9 Trustpilot score from over 11,000 reviews and overhauled its plans in
-July 2025 with Core, Rapid, and Pro. Both firms are futures-only. Both eliminated activation fees. Here is
+July 2025 with Core, Rapid, and Pro. Both firms are futures-only. Both keep activation fees low. Here is
 where they differ.
 Resources
 Core Concepts
@@ -137,7 +137,7 @@ Billing Model
 One-time (always)
 Monthly subscription (auto-renew)
 Activation Fee
-$130 one-time (Pro)
+$5 one-time (Pro)
 $0 (eliminated Jul 2025)
 Time Pressure
 None (no time limit, fixed cost)

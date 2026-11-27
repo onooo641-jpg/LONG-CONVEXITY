@@ -43,7 +43,7 @@ Affiliate Program
 Agreements and Disclaimers
 All Collections Platforms Rithmic & R | Trader Pro Handling Technical Issues and Managing Positions in rTrader Pro Handling Technical Issues and Managing Positions in rTrader Pro
 Learn how to efficiently manage technical issues, handle trades, and maintain your positions using rTrader Pro during platform malfunctions or connection issues.
-Updated yesterday
+Updated this week
 Copy for LLM
 Why Keep rTrader Pro Open?
 Keeping rTrader Pro open allows you to monitor your trailing threshold and close trades quickly if needed. This ensures you can manage positions efficiently during technical difficulties or unexpected market events.

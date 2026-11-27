@@ -9,7 +9,7 @@ Futures Prime
 Futures Prime Platforms & Conditions
 Futures Prime Platforms & Conditions
 Platforms, market data, commissions and instruments for Futures Prime.
-Updated over 2 weeks ago
+Updated over 3 weeks ago
 Table of contents
 Which Platforms Can I Use For Futures Prime?
 Futures Prime is supported on ATAS, Quantower, Volsys and R/Trader, plus Tradovate, NinjaTrader and TradingView.

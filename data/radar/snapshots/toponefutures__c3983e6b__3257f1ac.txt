@@ -7,7 +7,7 @@ General Rules
 Copy Trading Policy
 Copy Trading Policy
 Our copy trading policy: same type and same size only, what counts as prohibited copy trading, correlated assets, and your responsibility when using a trade copier.
-Updated over a week ago
+Updated over 2 weeks ago
 Table of contents
 Top One Futures allows you to copy trades to manage multiple accounts efficiently. However, to maintain risk integrity, copy trading is strictly limited to accounts of the exact same type and exact same size . Mixing different account programs, sizes, or trying to bypass these rules through manual mirroring or correlated assets is a strict violation of our terms.
 1. The core rule: same type, same size

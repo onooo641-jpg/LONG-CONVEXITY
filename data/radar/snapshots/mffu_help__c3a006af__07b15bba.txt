@@ -7,7 +7,7 @@ Trading Practices and Risk Management
 Fair Play and Prohibited Trading Practices
 Fair Play and Prohibited Trading Practices
 Prohibited Trading Practices
-Updated over 3 weeks ago
+Updated over a month ago
 The simulated market, while a robust and close approximation of live trading conditions, isn’t without its disparities. At MyFundedFutures (MFFU) , we recognize the challenges this presents to our platform, our funding partners, and most importantly, our traders. Ensuring a fair, transparent, and equitable trading environment is paramount to us, and as such, we've established policies to safeguard against practices that exploit the simulated environment or misalign with ethical trading.
 Understanding the Simulated Market Challenges
 Certain trading strategies may exploit the simulated fill algorithm, performing well in the evaluation stage but inevitably resulting in losses when transitioned to live markets. A small subset of traders, either inadvertently or with the intent to manipulate the system, engage in these strategies, which are strictly prohibited at MFFU.

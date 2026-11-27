@@ -1,4 +1,4 @@
-# Prop-firm automation / country sentences (2026-11-26)
+# Prop-firm automation / country sentences (2026-11-27)
 
 ## Alpha Capital Group — https://alphacapitalgroup.uk/
 - AUTO: Expert Advisors supported
@@ -1171,6 +1171,23 @@
 ## Breakout — https://breakoutprop.com/
 - AUTO: Your account upgrades to 'funded' automatically when you hit your target.
 
+## Breakout — https://breakoutprop.com/bfcm-terms
+- AUTO: Offer B applies automatically and needs no code, including for an evaluation bought with an Offer A code.
+
+## Breakout — https://breakoutprop.com/blog/mastering-drawdown-a-guide-to-equity-limits-at-breakout/
+- AUTO: This is an objective, automated process to ensure fairness and transparency.
+- AUTO: Equity Limit: The equity level at which a breach is automatically triggered.
+- AUTO: Breach: Automatic closure of all positions.
+- AUTO: A breach occurs when our automated risk engine detects that an account’s equity has reached or fallen below one of its equity limits (maximum daily loss, maximum drawdown).
+- AUTO: Upon detecting a breach, all positions are automatically closed and trading is permanently disabled on that account.
+- AUTO: Breakout’s drawdown limits are automated, trader-friendly, and enforce good risk management habits.
+
+## Breakout — https://breakoutprop.com/lp/bfcm25
+- AUTO: Offer B applies automatically and needs no code, including for an evaluation bought with an Offer A code.
+
+## Breakout — https://breakoutprop.com/pricing
+- AUTO: Hit the profit target and your account automatically passes the evaluation, moving you to a funded account.
+
 ## Breakout — https://www.breakoutprop.com/article/mastering-drawdown-a-guide-to-equity-limits-at-breakout/
 - AUTO: This is an objective, automated process to ensure fairness and transparency.
 - AUTO: Equity Limit: The equity level at which a breach is automatically triggered.
@@ -1178,6 +1195,9 @@
 - AUTO: A breach occurs when our automated risk engine detects that an account’s equity has reached or fallen below one of its equity limits (maximum daily loss, maximum drawdown).
 - AUTO: Upon detecting a breach, all positions are automatically closed and trading is permanently disabled on that account.
 - AUTO: Breakout’s drawdown limits are automated, trader-friendly, and enforce good risk management habits.
+
+## Breakout — https://www.breakoutprop.com/lp/bfcm25
+- AUTO: Offer B applies automatically and needs no code, including for an evaluation bought with an Offer A code.
 
 ## Breakout — https://www.breakoutprop.com/pricing/
 - AUTO: Hit the profit target and your account automatically passes the evaluation, moving you to a funded account.
@@ -1491,6 +1511,67 @@
 ## City Traders Imperium — https://helpcenter.citytradersimperium.com/en/collections/16756321-essential-rules-guidelines
 - AUTO: Does CTI Allow EA Trading?
 
+## Crypto Fund Trader — https://cryptofundtrader.com/faq
+- AUTO: high-frequency trading, tick scalping, latency arbitrage, or any strategy that does not reflect real market
+- AUTO: may be manually closed.
+- AUTO: Disconnecting or modifying the API
+- AUTO: Disconnecting, modifying, altering, or interfering with the assigned API connection is strictly prohibited.
+- AUTO: Any attempt to disconnect or modify the API connection may result in immediate account suspension.
+- AUTO: High-Frequency Trading
+- AUTO: High-frequency trading is not allowed.
+- AUTO: This includes using programs, algorithms, bots, or automated systems
+- AUTO: Tick scalping is not allowed.
+- AUTO: Tick scalping is prohibited whether performed manually or through an Expert Advisor, bot, script, or
+- AUTO: This includes the use of bots, Expert Advisors, or automated systems
+- AUTO: Prohibited strategies include, but are not limited to, news scalping EAs, arbitrage EAs, multi-account
+- AUTO: reverse trading EAs, or any similar system designed to exploit the platform or data feed.
+- AUTO: How to create an account and connect the API key
+- AUTO: API Key must be generated and connected to the Crypto Fund Trader dashboard.
+- AUTO: The API Key must remain active and unchanged throughout the entire evaluation period.
+- AUTO: Important information about API keys
+- AUTO: Once an API Key and sub-account are connected to the evaluation, they must not be edited, deleted, or
+- AUTO: Doing so will result in the automatic invalidation of the evaluation account.
+- AUTO: If any trades remain open, they may be manually closed.
+- AUTO: activity will be manually reviewed by our team.
+- AUTO: may be manually closed.
+- AUTO: Is copy trading allowed in Break accounts?
+- AUTO: Copy trading between different traders, third parties, groups, or unrelated accounts is prohibited.
+- AUTO: Copy trading or coordinated activity is not allowed in the Final Stage.
+- AUTO: Is copy trading allowed in Ascend accounts?
+- AUTO: Copy trading between Ascend accounts is prohibited.
+- AUTO: If copy trading or coordinated activity is detected, Crypto Fund Trader may withhold or revoke the
+- AUTO: may be manually closed.
+
+## Crypto Fund Trader — https://cryptofundtrader.com/privacy-policy/
+- AUTO: Automatically collected information.
+- AUTO: will automatically retain and store such information.
+- AUTO: promotional offers, alerts, confirmations, surveys, and/or other general communication.
+
+## Crypto Fund Trader — https://cryptofundtrader.com/refund-policy/
+- AUTO: YOU AUTOMATICALLY LOSE YOUR RIGHT TO WITHDRAW FROM
+
+## Crypto Fund Trader — https://cryptofundtrader.com/terms-and-conditions/
+- AUTO: API Key and Subaccount Setup on Bybit Evaluations
+- AUTO: 3.3.1 Clients taking evaluations via Bybit must provide a dedicated API Key and Subaccount at the time of
+- AUTO: This API Key and Subaccount must remain unchanged throughout the entire evaluation process.
+- AUTO: 3.3.2 If the user deletes, modifies, or replaces their API Key or Subaccount at any time, the evaluation account
+- AUTO: will be automatically invalidated and closed.
+- AUTO: 3.3.3 If the API Key expires, the evaluation account will be marked as pending activation until a new valid API
+- AUTO: 3.3.5 The same API Key or Subaccount may not be reused across multiple evaluations.
+- AUTO: linked to a unique and exclusive Subaccount and API Key.
+- AUTO: these activities are carried out automatically without any kind of consent, consultation, or approval on your
+- AUTO: or symbol bans, prohibitions or limitations on VPS/VPN or remote access and anti-copy-trading controls.
+- AUTO: other things, copying ideas from other traders and analysts and copying trade signals from any type of trading
+- AUTO: IN ASCEND ACCOUNTS, copy trading is strictly prohibited, whether between a
+- AUTO: manually, via signals, or through automation.
+- AUTO: IN BREAK ACCOUNTS, copy trading is permitted only during the Evaluation phase and
+- AUTO: Copy trading, coordinated trading, mirrored trading, or substantially similar trading activity
+- AUTO: Copy trading or coordinated trading activity is not permitted on Break Final Stage accounts,
+- AUTO: If prohibited copy trading or coordinated activity is detected, the Provider reserves the right
+- AUTO: Once you complete the Break Evaluation without breaching any applicable rules, your account and trading activity will be manually reviewed by our team.
+- AUTO: normally automatically renewed each year.
+- COUNTRY: country or in any manner prohibited by applicable laws, restrictions, or regulations.
+
 ## DayTraders — https://daytraders.com/
 - AUTO: Payouts Automated review systems
 - AUTO: Fast, automated systems
@@ -1784,6 +1865,10 @@
 ## E8 Futures — https://helpfutures.e8markets.com/en/articles/9448427-can-i-get-a-custom-discount-code-for-my-community
 - AUTO: If they use your affiliate link, the custom code will be automatically applied at checkout when making the purchase.
 - AUTO: Before it is approved, we need to manually check it if it meets our guidelines.
+
+## E8 Futures — https://helpfutures.e8markets.com/en/articles/9453455-are-there-currently-any-discounts
+- AUTO: No need to buy anything; once you are verified, entry is automatic.
+- COUNTRY: Make sure you are registered, verified, and not from a restricted country for Classic Markets/perpetuals .
 
 ## E8 Futures — https://helpfutures.e8markets.com/en/articles/9453469-can-i-copy-trades-or-trade-as-a-team
 - AUTO: Can I copy trades or trade as a team?
@@ -2321,11 +2406,6 @@
 - AUTO: Is tick scalping legal?
 - COUNTRY: Are any countries restricted on FundedNext CFDs?
 
-## FundedNext Futures — https://fundednext.com/aml-policy
-- AUTO: In adherence to the legal obligations, a meticulous manual approval process is diligently undertaken for each transaction, employing the principles of due diligence.
-- AUTO: Within GrowthNext F.Z.E., a distinct and dedicated risk management unit exists, tasked with the meticulous manual examination of individual client profiles.
-- AUTO: conducts a meticulous manual review and approval of each transaction, applying the principles of due diligence.
-
 ## FundedNext Futures — https://fundednext.com/cfd-challenge-terms
 - AUTO: Risk Controls; Automatic Restrictions; Platform Integrity
 - AUTO: The Customer acknowledges that risk controls and enforcement measures may be applied automatically, including restricting trading and/or disabling functions when loss limits are reached.
@@ -2398,61 +2478,6 @@
 - AUTO: the right to request review in relation to certain automated decisions, where applicable law so provides; and
 
 ## FundedNext Futures — https://fundednext.com/terms-of-service
-- AUTO: Participation in one modality (for example, CFDs) does not automatically grant the right of access, eligibility, phase migration, benefits or Performance Rewards in another modality (for example, Futures), unless expressly indicated by the Provider.
-- AUTO: The User may not allow third parties to operate the Account on their behalf, nor use account management services, credential sharing, third-party identities, bots, scripts or automated systems not expressly authorised by the Provider.
-- AUTO: To preserve the integrity of the Services and prevent abuse, the Provider may impose limits on the number of Orders/Accounts that a User may purchase, maintain or operate, including on the basis of reasonable linkage indicators (for example, related accounts, common control, shared payment methods, same residence, IP address, device or other connection signals).
-- AUTO: The Provider may supplement, detail and clarify the Trading Rules through FAQs, guides, manuals, operational notices and communications on the Platform, provided that such supplements do not contradict the contractual core of the purchased product.
-- AUTO: (h) Copy Trading; Mirroring; Signal Following (Without Authorisation).
-- AUTO: Copy trading, mirroring, signal following, trade replication or any substantially similar activity (whether manual or automated) is prohibited unless expressly authorised in writing by the Provider and permitted under the applicable programme rules.
-- AUTO: For the avoidance of doubt, any replication of another person's trading activity, or systematic execution of trades based primarily on external signals, shared instructions, or third-party trade streams, may be treated as prohibited copying/mirroring.
-- AUTO: The User must not sell, assign, lease, sublicense, share credentials, grant remote access, permit use by third parties, or use account management services, unauthorised copy trading, "passing services", or any third-party management arrangement (whether paid or unpaid).
-- AUTO: This includes use of VPNs, proxies, emulators, device spoofing, automation intended to circumvent controls, or any similar method.
-- AUTO: (m) Unauthorised Automation; HFT; Mass-Order Behaviour; Platform Overload.
-- AUTO: The User must not use bots, scripts, algorithms, software, AI agents, or automated methods not expressly authorised by the Provider.
-- AUTO: Even where certain tools may be permitted under programme rules, the User must not use automation, high-frequency execution, mass-order behaviour, or mass data entry intended to manipulate platform behaviour, overload systems, interfere with monitoring, degrade performance, or create an unfair advantage.
-- AUTO: Without limitation, prohibited patterns may include excessive one-sided exposure, repeated "all-in" bets, grid trading, tick scalping, unrealistic order patterns, artificial trade fragmentation, account rolling, or any comparable pattern which the Provider reasonably determines to be inconsistent with the evaluation purpose and indicative of abuse, manipulation, or circumvention.
-- AUTO: The User must not interfere with, disrupt, probe, scan, test, or compromise the security, stability, or integrity of the Website, Platform, or any Provider or Third Party systems, and must not introduce malware, bots, harmful code, or perform any action that could impair or degrade operations.
-- AUTO: In making such determinations, the Provider may take into account, without limitation, trading records, account activity, device and access data, payment records, technical indicators, compliance findings, antifraud signals, account linkage analysis, behavioural patterns and any other information the Provider reasonably considers relevant.
-- AUTO: The mere achievement of numerical targets, performance parameters or positive results in Simulated Trading does not, in itself, create an automatic entitlement to any Performance Reward.
-- AUTO: (c) engaging in scraping, crawling, harvesting, data mining or using robots, scripts or automated systems to access the Website/Services, extract data, circumvent rules, test limits, exploit latencies or manipulate evaluations — except for the use of automation (EAs/algorithms) only when expressly permitted by the Trading Rules and within the authorised platform;
-- AUTO: Such changes shall not create an automatic right to indemnification, refund or compensation for the User, except where mandatory laws provide otherwise.
-- AUTO: (e) application of enforcement measures, automatic blocks, invalidations, restrictions, corrections or adjustments arising from breach of these Terms, the Trading Rules, the Programme Parameters, compliance policies or legal requirements;
-- AUTO: (e) exploitation of technical failures, latency, feed inconsistencies, prohibited automation, prohibited arbitrage or any Prohibited Conduct;
-- AUTO: The Provider may adopt cumulative and progressive measures, including partial suspension, automatic blocks, functional restrictions and permanent termination.
-- AUTO: Termination alone shall not create any automatic right to refund, compensation or Performance Reward payment, unless expressly provided in an applicable specific policy or required by mandatory law.
-- AUTO: The User understands and accepts that the Provider may use automated systems and tools incorporating artificial intelligence to support the operation, monitoring, and technical support of the Services.
-- AUTO: Unless unequivocally proven otherwise, Formal Notices sent by e-mail shall be deemed received on the date and time of sending, according to the sender's electronic records, provided that no automatic permanent delivery failure message ("hard bounce") is generated.
-- COUNTRY: "Restricted Jurisdictions" means any country, territory, jurisdiction, locality or category of persons in respect of which the Provider does not offer or restricts access to one or more Services (including specifically CFDs and/or Futures products), for regulatory, compliance, sanctions, risk mitigation, Third Party requirements (including PSPs), or commercial decision reasons.
-
-## FundedNext Futures — https://fundednext.com/usa/aml-policy
-- AUTO: In adherence to the legal obligations, a meticulous manual approval process is diligently undertaken for each transaction, employing the principles of due diligence.
-- AUTO: Within GrowthNext F.Z.E., a distinct and dedicated risk management unit exists, tasked with the meticulous manual examination of individual client profiles.
-- AUTO: conducts a meticulous manual review and approval of each transaction, applying the principles of due diligence.
-
-## FundedNext Futures — https://fundednext.com/usa/cookie-policy
-- AUTO: Most browsers automatically accept cookies by default.
-- AUTO: Enabling these cookies is automatic and cannot be turned off, as they are necessary for the operation of the Website.
-- AUTO: In the case of automated processing based on your consent or performance of the contract, you have the right to receive the data in a structured, commonly used and machine-readable format and to have them transmitted by us to another personal data controller.
-- AUTO: Right not to be the subject of automated decision-making
-- AUTO: Except where processing is necessary for entering into, or performance of, a contract, where this is permitted by applicable law, or based on your express consent, you have the right not to be the subject of any decision which is based solely on automated processing, including profiling, which produces legal effects concerning you or similarly affects you to a significant extent.
-
-## FundedNext Futures — https://fundednext.com/usa/privacy-policy
-- AUTO: Automated Processing, Profiling and Significant Decisions
-- AUTO: 5.2 Automatically Through Your Use of the Services
-- AUTO: We collect certain technical, device, usage, behavioural, monitoring and activity data automatically when you access or use our website, systems, platform environment, dashboards, portals, communications interfaces or other parts of the Services.
-- AUTO: We process Personal Data to send service-related communications, account notices, legal notices, operational alerts, security messages, compliance-related requests and other communications necessary for the administration or protection of the Services and our relationship with you.
-- AUTO: 6.12 Phone-Based, SMS and Automated Outreach
-- AUTO: Where permitted by applicable law, we may use the telephone number or other communication details that you provide to us to contact you regarding service matters, account administration, security, support, operational matters, programme updates, marketing communications or related outreach, including through manual, automated or AI-assisted means.
-- AUTO: timing patterns, behavioural indicators and usage signals;
-- AUTO: suspicious, irregular, prohibited or escalated activity signals; and
-- AUTO: For the avoidance of doubt, FundedNext may analyse account activity, behavioural patterns, technical signals, device associations and related data to detect direct or indirect attempts to misuse the Services, circumvent our rules, exploit the platform environment unfairly, obtain benefits improperly or interfere with the lawful and intended operation of the Services.
-- AUTO: Automated Processing, Profiling and Significant Decisions
-- AUTO: Such processing may include profiling based on technical, behavioural, transactional, usage, verification, payout, account-linkage or payment-related signals.
-- AUTO: Where applicable data protection law grants you rights in relation to decisions based solely on automated processing that produce legal or similarly significant effects, FundedNext will implement such safeguards as are required by law, which may include review procedures and, where applicable, the opportunity to request human intervention.
-- AUTO: Nothing in this Notice shall be interpreted as limiting FundedNext's right to implement reasonable and proportionate automated or semi-automated controls designed to protect the Services, prevent fraud, preserve evidence, safeguard operational integrity, manage payment or security risks, or enforce contractual restrictions and platform rules.
-- AUTO: the right to request review in relation to certain automated decisions, where applicable law so provides; and
-
-## FundedNext Futures — https://fundednext.com/usa/terms-of-service
 - AUTO: Participation in one modality (for example, CFDs) does not automatically grant the right of access, eligibility, phase migration, benefits or Performance Rewards in another modality (for example, Futures), unless expressly indicated by the Provider.
 - AUTO: The User may not allow third parties to operate the Account on their behalf, nor use account management services, credential sharing, third-party identities, bots, scripts or automated systems not expressly authorised by the Provider.
 - AUTO: To preserve the integrity of the Services and prevent abuse, the Provider may impose limits on the number of Orders/Accounts that a User may purchase, maintain or operate, including on the basis of reasonable linkage indicators (for example, related accounts, common control, shared payment methods, same residence, IP address, device or other connection signals).
@@ -4901,7 +4926,6 @@
 - AUTO: use any robot, spider, scraper or other automatic device, manual process or application or data mining, scraping or extraction tool to access, harvest, monitor, copy or use the Site without the express written permission of Tradeify;
 
 ## Traders Launch — https://traderslaunch.com/
-- AUTO: Email Address Notify Me You also agree to receive Traders Launch marketing emails, including drop alerts.
 - AUTO: Buffer account opens automatically.
 - AUTO: When You Pass Buffer account opens automatically
 - AUTO: If you haven't passed by day 60 but you're above 50% of your profit target, you get a free 30-day extension automatically, at no extra cost.

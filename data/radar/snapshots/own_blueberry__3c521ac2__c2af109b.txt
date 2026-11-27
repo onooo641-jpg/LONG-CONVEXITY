@@ -49,6 +49,7 @@ For details on that behavior rule, see:
 DCA & Position Stacking Limits .
 Related Articles
 What are the Maximum Position Limits (Contract Caps)?
+Accelerated Account Specs: Rules & Targets
 Are there limits on DCA? (Stacking)
 Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
 Table of contents

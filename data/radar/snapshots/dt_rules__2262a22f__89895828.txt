@@ -32,7 +32,7 @@ Affiliate Program
 Agreements and Disclaimers
 All Collections Platforms General Platform information Supported Platforms Supported Platforms
 Which trading platforms you can use on evaluations, Pro, S2F, S2L and live accounts, including Mac options.
-Updated yesterday
+Updated this week
 Copy for LLM
 Evaluations, Pro Accounts, S2F and S2L evaluations all use the same platforms, connected through Rithmic.
 Simulated accounts
@@ -99,10 +99,10 @@ As of today we don't support officially Ninja Trader, MT4, MT5 or Tradingview.
 Use these guides to ensure smooth integration and trading across multiple platforms!
 Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
 Related Articles
+Connect WealthCharts to Rithmic
 Onyx Platform FAQ (Rithmic-Powered)
 rTrader Pro Copier
 Connecting Quantower to Rithmic
-Getting Started: From Sign-Up to First Payout
 Market Data, Add-Ons and Fees
 On this page
 Simulated accounts

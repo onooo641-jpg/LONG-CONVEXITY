@@ -81,7 +81,7 @@ MATCH
 E8
 E8 Markets
 4.8
-15% OFF
+30% OFF
 MATCH
 Au
 Audacity Capital
@@ -97,6 +97,11 @@ To
 Top One Trader
 4.4
 80% OFF
+MATCH
+Th
+ThinkCapital
+4.0
+40% OFF
 MATCH
 Ma
 Maven
@@ -122,7 +127,7 @@ Less than
 MATCH
 At
 Atmos Funded
-4.7
+4.6
 30% OFF
 MATCH
 Le
@@ -152,11 +157,6 @@ Instant Funding
 4.0
 40% OFF
 MATCH40
-Th
-ThinkCapital
-4.0
-40% OFF
-MATCH
 BE
 BEM Funding
 4.9
@@ -177,7 +177,7 @@ MATCH10
 Th
 The Trading Pit
 4.1
-40% OFF
+50% OFF
 MATCH
 Fu
 Funded Trading Plus
@@ -211,7 +211,7 @@ Favorite 0/5
 New
 All Firms
 Firms 15 results
-Data updated just now
+Data updated 1 min ago
 Firm
 Rank / Reviews
 Country / Years
@@ -222,9 +222,9 @@ Promo
 Actions
 Th
 The5ers
-100612
+100663
 4.7
-1444
+1448
 reviews
 United Kingdom, years in operation: 10 10+
 FX, Indices, Metals, Energy, Crypto, Stocks FX
@@ -239,7 +239,7 @@ MATCH
 Firm
 FT
 FTMO
-44419
+44430
 4.5
 220
 reviews
@@ -255,9 +255,9 @@ $400K
 Firm
 Aq
 AquaFunded
-17203
+17234
 4.4
-346
+347
 reviews
 Dubai (UAE), years in operation: 2 2
 FX, Indices, Metals, Crypto, Other Commodities FX
@@ -272,16 +272,16 @@ Firm
 4
 Bl
 Blueberry Funded
-26294
+26297
 4.1
-635
+634
 reviews
 Vanuatu, years in operation: 2 2
-FX, Indices, Metals, Crypto, Other Commodities, GAU, Synthetic FX
+FX, Indices, Metals, Energy, Crypto, GAU, Synthetic FX
 Indices
 Metals
+Energy
 Crypto
-Other Commodities
 + 2
 $400K
 30% OFF
@@ -290,7 +290,7 @@ Firm
 5
 E8
 E8 Markets
-39288
+39313
 4.8
 498
 reviews
@@ -302,15 +302,15 @@ Energy
 Crypto
 + 1
 $1.1M
-15% OFF
+30% OFF
 MATCH
 Firm
 6
 Mo
 Moneta Funded
-1566
+1568
 4.8
-132
+134
 reviews
 Dubai (UAE), years in operation: 1 1
 FX, Indices, Metals, Energy, Crypto FX
@@ -325,7 +325,7 @@ Firm
 7
 To
 Top One Trader
-30385
+30405
 4.4
 240
 reviews
@@ -341,9 +341,9 @@ Firm
 8
 Ma
 Maven
-48310
+48329
 4.2
-801
+802
 reviews
 Saint Lucia, years in operation: 3 3
 FX, Indices, Metals, Energy, Crypto, Other Commodities FX
@@ -377,7 +377,7 @@ Firm
 10
 Cr
 Crypto Fund Trader
-39816
+39877
 4.1
 114
 reviews
@@ -412,8 +412,8 @@ Firm
 12
 At
 Atmos Funded
-847
-4.7
+850
+4.6
 56
 reviews
 Cyprus, years in operation: 2 2
@@ -430,7 +430,7 @@ Firm
 13
 Le
 Leveraged
-188
+192
 Less than
 20 reviews
 Saint Lucia, years in operation: 1 1
@@ -464,7 +464,7 @@ Firm
 15
 La
 Lark Funding
-4471
+4472
 4.5
 93
 reviews

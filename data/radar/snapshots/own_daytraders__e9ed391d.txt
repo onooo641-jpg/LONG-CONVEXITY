@@ -126,7 +126,7 @@ Billing Model
 One-time fees
 One-time fees
 Activation Fee
-$130 one-time (Pro)
+$5 one-time (Pro)
 None
 Challenge-Phase Profit
 No (eval only)
@@ -134,7 +134,7 @@ No (eval only)
 S2L Live Activation
 Free
 N/A (no live path)
-FundedNext's zero-activation model plus challenge-phase profit sharing is more cost-efficient for traders who pass. DayTraders.com's $130 activation adds to total cost but comes with broader structural options including static drawdown and the S2L live trading path. Visit the pricing page for current rates.
+FundedNext's zero-activation model plus challenge-phase profit sharing is more cost-efficient for traders who pass. DayTraders.com's flat $5 activation is small and comes with broader structural options including static drawdown and the S2L live trading path. Visit the pricing page for current rates.
 Drawdown and Risk Rules
 DayTraders.com
 Trailing Intraday trailing. No daily loss limit.
