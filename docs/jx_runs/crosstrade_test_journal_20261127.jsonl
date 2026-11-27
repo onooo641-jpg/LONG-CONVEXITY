@@ -1,3 +1,6 @@
 {"bracket": {"action": "Buy", "instrument": "MNQ 12-26", "quantity": 1, "stopLoss": 18747.25, "takeProfit": 18787.25}, "event": "entry_watch", "nt_order_id": "1df5b24880eb4b11b82c6a99c2d42e76", "order_id": "lc-f701866693db4534a29e", "ts": "2026-11-27T05:12:57+00:00"}
 {"entry": 18767.25, "event": "roundtrip_placed", "last": 26810.25, "order_id": "lc-f701866693db4534a29e", "ts": "2026-11-27T05:12:57+00:00"}
 {"event": "roundtrip_failed", "order_id": "lc-f701866693db4534a29e", "step": "see", "ts": "2026-11-27T05:13:14+00:00", "why": "a resting order of ours never appeared in ours(open_orders()): an empty answer from this account cannot be trusted"}
+{"bracket": {"action": "Buy", "instrument": "MNQ 12-26", "quantity": 1, "stopLoss": 18745.75, "takeProfit": 18785.75}, "event": "entry_watch", "nt_order_id": "e0b2ad6f80744f87a35afe3883779d10", "order_id": "lc-0bd8e8d6241b41d1af5f", "ts": "2026-11-27T05:14:18+00:00"}
+{"entry": 18765.75, "event": "roundtrip_placed", "last": 26808.25, "order_id": "lc-0bd8e8d6241b41d1af5f", "ts": "2026-11-27T05:14:18+00:00"}
+{"account_id": null, "account_name": "Sim101", "at": "2026-11-27T05:14:21.460527+00:00", "contract_id": "MNQ 12-26", "event": "roundtrip_ok", "ok": true, "order_id": "lc-0bd8e8d6241b41d1af5f", "ts": "2026-11-27T05:14:21+00:00"}
