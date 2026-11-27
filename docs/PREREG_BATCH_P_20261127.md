@@ -22,3 +22,14 @@ sensitivity) × 12.
 Stage 1 only kills; nothing passes early.
 
 **Data job:** `ubatchp`. **Script/output:** `scripts/batch_p_20261127.py` → `docs/jx_runs/batch_p_20261127.txt`, re-run identical.
+
+## Results (2026-11-27; `docs/jx_runs/batch_p_20261127.txt`, re-run identical)
+| # | Verdict | Stage 1 | Stage 2 | $/yr |
+|---|---|---|---|---|
+| 515 JGB auction concession (1,925 auctions, 6 tenors) | FAIL | +0.35 bp (week t 1.29, 5/8 years) | −0.25 bp (t −0.60, 2/10 years) | −$826 |
+| 516 JGB month-end extension | KILL | −0.01 bp | −0.53 bp (t −2.56) | −$317 |
+| 517 Bund month-end extension | KILL | −0.43 bp | −0.18 bp | −$111 |
+| 518 Gilt month-end extension | FAIL | +0.94 bp (t 1.85) | +0.06 bp (t 0.13) | $35 |
+
+**Batch P verdict: 0 of 4.** Sovereign-bond supply and index-extension flows are priced away in Japan, Germany and the UK, as in the
+US (#446, #451).

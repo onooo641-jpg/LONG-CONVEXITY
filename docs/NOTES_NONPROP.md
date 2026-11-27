@@ -369,3 +369,7 @@ Jx's free Coinalyze key gave daily OI and liquidations from 2020. The five OI an
 - **Grain post-harvest recovery** (corn/soy, wheat): killed in development.
 - **HKD weak-side trade:** works as the peg implies (7 of 8 since 2018 positive or flat), but the move is capped near 0.6%.
   About $1.8K/yr even at $1.5M notional.
+
+## 2026-11-27 — Batch P (#515–#518), government bonds outside the US: 0 of 4
+- **JGB auction concession** (1,925 auctions): faint before 2017, gone since.
+- **JGB, Bund and Gilt month-end index extension:** nothing out of sample.

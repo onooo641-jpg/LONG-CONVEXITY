@@ -249,6 +249,7 @@ risk, 5m signals and 1m fills.
 | 505–508 | Batch M (Malaysia-tradable forced/seasonal flows): rebound after perp delisting, Japanese fiscal-year-end repatriation, US tax-payment selling, gold before Diwali | `docs/PREREG_BATCH_M_20261127.md` | 0 of 4 pass (two KILL at Stage 1; #505 only 5 events, coins keep falling; #508 +0.23% OOS) |
 | 509–511 | Batch N (#389 wick rule on new Hyperliquid universes; family 1): HIP-3 builder perps, HL spot tokens, first 30 days of new perps | `docs/PREREG_BATCH_N_20261127.md` | 0 of 3 pass: all strong in development, faded out of sample (#510 +0.92% t 0.88; #511 +0.75%); #389 itself decaying (2025 0.9%/fill) |
 | 512–514 | Batch O (commodity seasonals + currency peg): corn/soy post-harvest, wheat post-harvest, HKD peg weak side | `docs/PREREG_BATCH_O_20261127.md` | 0 of 3 (grain KILL at Stage 1; HKD +0.21%/trade, capped move, ~$1.8K/yr at $1.5M) |
+| 515–518 | Batch P (government bonds outside the US): JGB auction concession, JGB/Bund/Gilt month-end index extension | `docs/PREREG_BATCH_P_20261127.md` | 0 of 4 (JGB concession −0.25 bp OOS; extensions flat or negative) |
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.
