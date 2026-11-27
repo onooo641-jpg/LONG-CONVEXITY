@@ -56,7 +56,7 @@ def cut_coins(body):
 def main():
     events = json.loads((OUT / "batchl_events.json").read_text())
     bodies = json.loads((OUT / "batchl_bodies.json").read_text())
-    df = pd.read_parquet(OUT / "batchl_1h.parquet")
+    df = pd.read_parquet(OUT / "batchl_1h")
     df["ts"] = pd.to_datetime(df["t"], unit="s", utc=True) + pd.Timedelta(hours=1)  # close time
     px = {s: g.set_index("ts")["close"].sort_index() for s, g in df.groupby("sym")}
     hl = hl_listed()
