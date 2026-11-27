@@ -2595,3 +2595,5 @@
 {"block_seen": 62877706, "chain": "base", "healed": true, "user": "0x074143f4e27a2aef17018fee244beb61ca7bff87", "ver": 2, "wall": 1795765927.7536154}
 {"block_seen": 62878778, "chain": "base", "healed": true, "user": "0x224a173f921c91b1af14009a95e5cbdd1aeaf59f", "ver": 2, "wall": 1795766138.7230694}
 {"block_seen": 62878778, "chain": "base", "healed": true, "user": "0xea72747c36d329acc0ebed4bb044a3a205172ebc", "ver": 2, "wall": 1795766138.7232451}
+{"block_seen": 62885651, "chain": "base", "healed": true, "user": "0x345e5ac7b607a61097bc6ca7891764cf74d2b534", "ver": 2, "wall": 1795767510.7849114}
+{"block_seen": 62885651, "chain": "base", "healed": true, "user": "0xe2a1f28eb8fa6cb2b61a252ec5bef3cefd933f02", "ver": 2, "wall": 1795767510.7850876}
