@@ -1,2 +1,2 @@
-# Batch P data probe (workstream C)
-ubatchp_probe
+# Batch P probe 2 (workstream C)
+ubatchp_probe2

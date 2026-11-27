@@ -2535,3 +2535,21 @@ def job_ubatchp_probe():
         print(f"  {k}: HTTP {st}, {len(raw or b'')} bytes", flush=True)
         time.sleep(1)
     (OUT / "batchp_probe.json").write_text(_json.dumps(out))
+
+
+def job_ubatchp_probe2():
+    """MOF past auction results: index page, then every linked results page (to read 10-year JGB auction dates)."""
+    import json as _json
+    base = "https://www.mof.go.jp"
+    st, raw = _raw_get(base + "/english/policy/jgbs/auction/past_auction_results/index.html", timeout=40)
+    html = raw.decode("utf-8", "replace")
+    links = sorted(set(re.findall(r'href="([^"]*past_auction_results[^"]+)"', html)))
+    print(f"  index HTTP {st}, {len(links)} links", flush=True)
+    pages = {"__index__": html}
+    for ln in links[:80]:
+        u = ln if ln.startswith("http") else base + ln if ln.startswith("/") else base + "/english/policy/jgbs/auction/past_auction_results/" + ln
+        s2, r2 = _raw_get(u, timeout=40)
+        pages[u] = r2.decode("utf-8", "replace") if r2 else f"__HTTP {s2}__"
+        time.sleep(0.5)
+    print(f"  pages fetched: {len(pages) - 1}", flush=True)
+    (OUT / "batchp_mof_pages.json").write_text(_json.dumps(pages))
