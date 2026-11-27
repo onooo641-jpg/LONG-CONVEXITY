@@ -2509,3 +2509,29 @@ def job_ubatcho():
             print(f"  FRED {sid} FAIL {e}", flush=True)
     if fr:
         save("batcho_fred.parquet", pd.concat(fr, ignore_index=True))
+
+
+# ---------------------------------------------------------------- Batch P probe (docs/PLAN_BATCHES_O_Z.md, sovereign auctions outside the US)
+BATCHP_PROBE = {
+    "mof_jgb_hist": "https://www.mof.go.jp/english/policy/jgbs/reference/interest_rate/historical/jgbcme_all.csv",
+    "mof_jgb_cur": "https://www.mof.go.jp/english/policy/jgbs/reference/interest_rate/jgbcme.csv",
+    "mof_auction_index": "https://www.mof.go.jp/english/policy/jgbs/auction/past_auction_results/index.html",
+    "mof_auction_calendar": "https://www.mof.go.jp/english/policy/jgbs/auction/calendar/index.html",
+    "boe_10y": "https://www.bankofengland.co.uk/boeapps/database/_iadb-fromshowcolumns.asp?csv.x=yes&Datefrom=01/Jan/2010&Dateto=now&SeriesCodes=IUDMNZC&CSVF=TN&UsingCodes=Y&VPD=Y&VFD=N",
+    "dmo_d21a": "https://www.dmo.gov.uk/data/ExportReport?reportCode=D2.1A",
+    "dmo_d21c": "https://www.dmo.gov.uk/data/ExportReport?reportCode=D2.1C",
+    "dmo_auctions_page": "https://www.dmo.gov.uk/data/gilt-market/gilt-auctions/",
+    "bbk_10y": "https://api.statistiken.bundesbank.de/rest/data/BBSIS/D.I.ZAR.ZI.EUR.S1311.B.A604.R10XX.R.A.A._Z._Z.A?format=csv",
+}
+
+
+def job_ubatchp_probe():
+    import json as _json
+    out = {}
+    for k, u in BATCHP_PROBE.items():
+        st, raw = _raw_get(u, timeout=40)
+        body = raw[:4000].decode("utf-8", "replace") if raw else ""
+        out[k] = {"url": u, "status": st, "bytes": len(raw or b""), "head": body}
+        print(f"  {k}: HTTP {st}, {len(raw or b'')} bytes", flush=True)
+        time.sleep(1)
+    (OUT / "batchp_probe.json").write_text(_json.dumps(out))

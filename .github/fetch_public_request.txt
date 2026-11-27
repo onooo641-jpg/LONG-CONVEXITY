@@ -1,2 +1,2 @@
-# Batch O pull (workstream C)
-ubatcho
+# Batch P data probe (workstream C)
+ubatchp_probe
