@@ -1,0 +1,17 @@
+Topstep 50K Consistency, real-time loss limit, $900 risk, $1.24 round trip, orders ON TIME, 2016-01..2026-10.
+Coin flip: 200 runs, seed 1, random sign, commission kept, excursions swapped (radar_price.flip).
+
+1 baseline: touch fills, stop slips 1 tick
+   trades 2,185 | net $  39,949 (41 payouts) | worst dip $-3,862 | coin-flip median $7,699 (78% positive) | start money: median $-932, 1 in 10 $-2,813, worst $-3,862
+2 entry needs price 1 tick through
+   trades 2,178 | net $  31,189 (35 payouts) | worst dip $-4,156 | coin-flip median $6,549 (84% positive) | start money: median $-1,000, 1 in 10 $-3,058, worst $-4,156
+3 stops slip 2 ticks
+   trades 2,185 | net $  34,034 (38 payouts) | worst dip $-3,120 | coin-flip median $7,460 (81% positive) | start money: median $-1,001, 1 in 10 $-2,061, worst $-3,120
+4 = 2 + 3 (PASS/FAIL row)
+   trades 2,178 | net $  30,704 (35 payouts) | worst dip $-3,365 | coin-flip median $6,536 (84% positive) | start money: median $-1,030, 1 in 10 $-2,244, worst $-3,365
+5 = 2 + stops slip 3 ticks (reported only)
+   trades 2,178 | net $  26,080 (33 payouts) | worst dip $-3,906 | coin-flip median $6,818 (85% positive) | start money: median $-1,229, 1 in 10 $-2,700, worst $-3,906
+
+Touch-only fills (filled on touch, not when 1 tick through is required): 7 of 2,185 = 0.3%
+
+VERDICT (variant 4: net > $0 and coin-flip median >= $5,000): PASS (net $30,704, coin-flip median $6,536)

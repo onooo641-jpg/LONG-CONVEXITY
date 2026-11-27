@@ -973,3 +973,11 @@ $38,034; bar: real ≥ $19,017, dip ≥ −$5,794.
   - the 2016–26 market repeating;
   - firms paying out as written.
 - Going live on one account is the test of the execution assumptions, measured by the gates in `docs/PREREG_LIVE_20261120.md`.
+
+## 2026-11-27 — fill bound without money (`docs/PREREG_FILL_BOUND_20261127.md`): PASS
+- **Topstep 50K Consistency, orders on time, pessimistic fills** (entry needs 1 tick through, stops slip 2 ticks): $30,704 net
+  2016–26, coin-flip median $6,536.
+  - The bar is > $0 and ≥ $5,000. Baseline is $39,949.
+- **Fill quality is bounded without real money; timing is the big risk.**
+  - Timing: 1 minute late gives $24,416. The free nightly dry run measures it.
+  - Live money is then needed only for payouts and rule enforcement.

@@ -32,3 +32,21 @@ Also report the share of baseline fills where price only touched the entry (fill
 - Variant 5 is reported only.
 
 **Script/output:** `scripts/fill_bound_20261127.py` → `docs/jx_runs/fill_bound_20261127.txt`, re-run once, identical.
+
+## Result (2026-11-27; `docs/jx_runs/fill_bound_20261127.txt`, re-run identical): **PASS**
+| Variant (orders on time) | Trades | Net 2016–26 | Coin-flip median | Worst dip |
+|---|---|---|---|---|
+| 1 baseline | 2,185 | $39,949 | $7,699 | −$3,862 |
+| 2 entry 1 tick through | 2,178 | $31,189 | $6,549 | −$4,156 |
+| 3 stops 2 ticks | 2,185 | $34,034 | $7,460 | −$3,120 |
+| **4 = 2 + 3** | 2,178 | **$30,704** | **$6,536** | −$3,365 |
+| 5 = 2 + stops 3 ticks | 2,178 | $26,080 | $6,818 | −$3,906 |
+
+- Only 7 of 2,185 fills (0.3%) are touch-only, yet variant 2 loses $8.8K. The recycling path amplifies a few changed trades: accounts
+  pass or fail at different times. So per-trade fill quality moves the account result far more than the trade count suggests.
+- With orders on time, pessimistic fills leave the plan above the bar. The large risk is **timing**: 1 minute late gives $24,416.
+  The free nightly dry run measures timing.
+- Live money then tests only what cannot be tested for free:
+  - payouts;
+  - the firm's rule enforcement;
+  - fills within the bounded range.
