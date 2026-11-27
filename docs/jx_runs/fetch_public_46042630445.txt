@@ -1,0 +1,8 @@
+=== ubatcho
+  wrote batcho_etf_1d.parquet: 11783 rows
+  FRED DEXHKUS: 11971 rows 1981-01-02..2026-11-20
+  FRED IR3TIB01USM156N: 749 rows 1964-06-01..2026-10-01
+  FRED IR3TIB01HKM156N FAIL HTTP Error 404: Not Found
+  FRED HKGIR3TIB01STM FAIL HTTP Error 404: Not Found
+  wrote batcho_fred.parquet: 12262 rows
+=== ubatcho done in 4s  ok 0 fail 0
