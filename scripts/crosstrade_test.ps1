@@ -26,9 +26,17 @@ if (-not (Get-Command uv -ErrorAction SilentlyContinue)) {
     $env:Path = "$env:USERPROFILE\.local\bin;$env:Path"
 }
 
-$secure = Read-Host "CrossTrade secret key (My Account > Security > Reveal)" -AsSecureString
-$env:CROSSTRADE_API_KEY = [Runtime.InteropServices.Marshal]::PtrToStringAuto(
-    [Runtime.InteropServices.Marshal]::SecureStringToBSTR($secure))
+# A scheduled run cannot answer a prompt: it uses CROSSTRADE_API_KEY from the Windows user environment if set there
+# (set it yourself; it lives on this PC only, never in the repo). Otherwise the key is asked for.
+$userKey = [Environment]::GetEnvironmentVariable("CROSSTRADE_API_KEY", "User")
+$keptUserKey = [bool]$userKey
+if ($keptUserKey) {
+    $env:CROSSTRADE_API_KEY = $userKey
+} else {
+    $secure = Read-Host "CrossTrade secret key (My Account > Security > Reveal)" -AsSecureString
+    $env:CROSSTRADE_API_KEY = [Runtime.InteropServices.Marshal]::PtrToStringAuto(
+        [Runtime.InteropServices.Marshal]::SecureStringToBSTR($secure))
+}
 $env:BRIDGE_BROKER = "crosstrade"
 $env:CROSSTRADE_ACCOUNT = $Account
 $env:CROSSTRADE_INSTRUMENT = $Instrument
