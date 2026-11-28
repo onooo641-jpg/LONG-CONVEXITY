@@ -393,7 +393,7 @@ def n13_aster_new(fetch, today, rows, health, out: Path):
     fl = out / "aster_listing_paper.parquet"
     oldl = pd.read_parquet(fl) if fl.exists() else pd.DataFrame(columns=["idea", "coin", "entry", "ret"])
     newl = pd.DataFrame(lrecs, columns=["idea", "coin", "entry", "ret"])
-    key = lambda d: d["idea"].astype(str) + d["coin"]  # noqa: E731
+    key = lambda d: d["idea"].astype(str) + "|" + d["coin"].astype(str)  # noqa: E731
     alll = pd.concat([oldl, newl[~key(newl).isin(key(oldl))]], ignore_index=True)
     alll.to_parquet(fl, index=False)
     for i in (541, 542):
