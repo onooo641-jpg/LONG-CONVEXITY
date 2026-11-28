@@ -62,3 +62,8 @@ paper log only if its Stage 2 t ≥ 2.5. With t ≥ 2 alone, about 1 in 3 runs o
 **Also reported:** fills, median, win rate, $/yr without the best day, and a per-venue table for #596/#597.
 
 **Script/output:** `scripts/batch_nf14_20261128.py` → `docs/jx_runs/batch_nf14_20261128.txt`, re-run identical.
+
+## Addendum 1 (2026-11-28, before any data arrived): #597 unit check
+A coin matched by name to HL counts only if the median of its daily close ratio (venue / HL) over all common days is between 0.95 and
+1.05. This drops wrong matches (same ticker, different asset) and unit mismatches (kPEPE vs 1000PEPE vs PEPE), which would otherwise
+show up as a permanent "discount". It is a data-validity rule written before any venue data was seen.
