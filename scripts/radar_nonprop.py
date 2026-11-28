@@ -271,7 +271,7 @@ def n10_n11_hyperliquid(fetch, today, rows, health, out: Path):
     live = [u["name"] for u in uni if not u.get("isDelisted")]
     day0 = pd.Timestamp(today, tz="UTC").normalize()
     start = day0 - pd.Timedelta(days=45)
-    recs = []
+    recs, recs520 = [], []
     for c in live:
         _, t = fetch(HL_INFO, post={"type": "candleSnapshot", "req": {"coin": c, "interval": "1d", "startTime": int(start.timestamp() * 1000),
                                                                         "endTime": int(day0.timestamp() * 1000)}}, tries=2)
@@ -289,12 +289,21 @@ def n10_n11_hyperliquid(fetch, today, rows, health, out: Path):
             _lead(rows, today, "N11", f"hl_new_{c}", "Hyperliquid", f"new perp {c} listed {first.date()} (check pre-launch: #385 forward log)",
                   None, "https://app.hyperliquid.xyz/trade/" + c)
         listed_long = first <= start + pd.Timedelta(days=1)
+        # #520 (docs/PREREG_WICK_FAMILY_20261128.md): distance = 4 x sigma of the previous 30 daily returns, clipped 5%..30%
+        sig30 = d["c"].pct_change().rolling(30).std().shift()
         for i in range(1, len(d)):
             r, p = d.iloc[i], d.iloc[i - 1]
             if r["day"] >= day0 or str(r["day"].date()) < WICK_START:
                 continue
             if not listed_long and r["day"] < first + pd.Timedelta(days=30):
                 continue
+            x520 = sig30.iloc[i]
+            if pd.notna(x520):
+                lv2 = p["c"] * (1 - min(max(4 * x520, 0.05), 0.30))
+                if r["l"] <= lv2 * (1 - WICK_THROUGH):
+                    px2 = min(lv2, r["o"])
+                    recs520.append({"coin": c, "day": str(r["day"].date()), "level": lv2, "fill": px2, "close": r["c"],
+                                    "ret": r["c"] / px2 - 1 - WICK_MAKER - WICK_TAKER, "size": min(WICK_CAP, WICK_VOL * p["v"] * p["c"])})
             lvl = p["c"] * (1 - WICK_X)
             if r["l"] > lvl * (1 - WICK_THROUGH):
                 continue
@@ -314,6 +323,13 @@ def n10_n11_hyperliquid(fetch, today, rows, health, out: Path):
                                               f"new today {len(allr) - len(old)}")
     else:
         health["N10 wick paper (#389 S2c)"] = f"0 fills since {WICK_START} ({len(live)} live perps checked)"
+    f2 = out / "wick520_paper.parquet"
+    old2 = pd.read_parquet(f2) if f2.exists() else pd.DataFrame(columns=["coin", "day", "level", "fill", "close", "ret", "size"])
+    new2 = pd.DataFrame(recs520, columns=old2.columns)
+    all2 = pd.concat([old2, new2[~(new2["coin"] + new2["day"]).isin(old2["coin"] + old2["day"])]], ignore_index=True)
+    all2.to_parquet(f2, index=False)
+    health["N10b wick paper (#520 S2c)"] = (f"{len(all2)} fills since {WICK_START}; mean net {all2['ret'].mean():.2%}" if len(all2)
+                                           else f"0 fills since {WICK_START}")
 
 
 def n12_korea(fetch, today, rows, health, out: Path):

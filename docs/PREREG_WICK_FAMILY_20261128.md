@@ -44,3 +44,10 @@ Two untested variants could improve it rather than only enlarge it:
   - Combining the two (union, or #520's distances replacing #389's) was not tested and needs its own pre-registration.
 - **#519** offers no hedge: its monthly P&L correlation with #389 is −0.32 (Stage 1) / +0.25 (Stage 2), and adding it worsens the
   worst month.
+
+## Addendum 1 (2026-11-28, before 2026-12-01): #520 joins the forward paper test
+- Radar N10 now also logs #520's paper fills (`wick520_paper.parquet`) alongside #389's (`wick_paper.parquet`).
+- It uses the same candles and costs. Size uses the previous day's volume, as N10 does, because the day's own volume is unknown
+  until it closes.
+- **#520 S2c PASS (fixed now):** 2026-12-01 → 2027-01-26, ≥ 40 fills and mean net per fill ≥ 1.0%. The bar is set above #389's 0.5%,
+  because #520's out-of-sample edge was ~3.9%.
