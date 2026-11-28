@@ -2771,3 +2771,52 @@ def job_ubatchnf11():
     p = pd.DataFrame(px, columns=["sym", "t", "close", "adj"])
     print(f"  yahoo prices for {p.sym.nunique()} of {th.sym.nunique() + 1} tickers", flush=True)
     save("batchnf11_px.parquet", p)
+
+
+def job_ubatchnf12():
+    """Batch NF12: Yahoo daily OHLCV + split events for TSE codes 1300-9999 (.T, EQUITY only) and 1306.T, 2015-01..2026-11."""
+    from concurrent.futures import ThreadPoolExecutor
+    p1, p2 = int(pd.Timestamp("2015-01-01", tz="UTC").timestamp()), int(pd.Timestamp("2026-11-28", tz="UTC").timestamp())
+
+    def one(code):
+        sym = f"{code}.T"
+        url = f"https://query1.finance.yahoo.com/v8/finance/chart/{sym}?period1={p1}&period2={p2}&interval=1d&events=split"
+        for k in range(4):
+            st, raw = _raw_get(url, timeout=30)
+            if st == 429 or st is None:
+                time.sleep(5 * (k + 1))
+                continue
+            break
+        time.sleep(0.2)
+        if st != 200 or not raw:
+            return sym, st, None, None, None
+        try:
+            r = json.loads(raw.decode())["chart"]["result"][0]
+            kind = (r.get("meta") or {}).get("instrumentType")
+            if kind != "EQUITY" and code != 1306:
+                return sym, st, kind, None, None
+            q = r["indicators"]["quote"][0]
+            rows = [(sym, int(t), o, h, l, c, v) for t, o, h, l, c, v in
+                    zip(r["timestamp"], q["open"], q["high"], q["low"], q["close"], q["volume"]) if None not in (o, h, l, c, v)]
+            sp = [(sym, int(e["date"]), float(e["numerator"]), float(e["denominator"]))
+                  for e in ((r.get("events") or {}).get("splits") or {}).values()]
+            return sym, st, kind, rows, sp
+        except Exception:  # noqa: BLE001
+            return sym, st, "parse_error", None, None
+    rows, sps, stat = [], [], {}
+    with ThreadPoolExecutor(6) as ex:
+        for sym, st, kind, rr, sp in ex.map(one, range(1300, 10000)):
+            stat[str(st)] = stat.get(str(st), 0) + 1
+            if rr:
+                rows += rr
+                sps += sp
+    print(f"  HTTP status counts: {stat}", flush=True)
+    df = pd.DataFrame(rows, columns=["sym", "t", "o", "h", "l", "c", "v"])
+    for c in ("o", "h", "l", "c", "v"):
+        df[c] = df[c].astype("float32")
+    df["t"] = df["t"].astype("int64")
+    print(f"  equities with prices: {df.sym.nunique()}; rows {len(df)}; split events {len(sps)}", flush=True)
+    first = df["sym"].str[0].astype(int)
+    for name, lo, hi in (("a", 1, 3), ("b", 4, 5), ("c", 6, 7), ("d", 8, 9)):
+        save(f"batchnf12_px_{name}.parquet", df[(first >= lo) & (first <= hi)].reset_index(drop=True))
+    save("batchnf12_splits.parquet", pd.DataFrame(sps, columns=["sym", "t", "num", "den"]))

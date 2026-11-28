@@ -1,2 +1,2 @@
-# Batch NF11 pull (workstream C)
-ubatchnf11
+# Batch NF12 pull (workstream C)
+ubatchnf12
