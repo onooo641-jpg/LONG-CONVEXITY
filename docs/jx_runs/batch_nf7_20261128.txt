@@ -1,0 +1,20 @@
+#560 Pump day -> short 7 d: 89 trades | short baseline 7 d: Stage 1 -0.21%, Stage 2 +0.95%
+   Stage 1 (< 2025): n 37, mean -6.82% (median +8.71%, t -0.87), sum without the 3 best -3.84
+   Stage 2 (2025-26): n 52, mean +7.42% (median +11.82%, t 3.48), sum without the 3 best +2.92
+   VERDICT KILL (Stage 1) | $/yr at $3,000 per trade: $6,097
+
+#561 Post-frenzy dry-up -> short 7 d: 1047 trades | short baseline 7 d: Stage 1 -0.21%, Stage 2 +0.95%
+   Stage 1 (< 2025): n 257, mean -1.28% (median +1.17%, t -1.48), sum without the 3 best -3.90
+   Stage 2 (2025-26): n 790, mean +0.64% (median +2.26%, t 1.51), sum without the 3 best +4.26
+   VERDICT KILL (Stage 1) | $/yr at $3,000 per trade: $7,963
+
+#562 Dump-day continuation -> short 3 d: 21 trades | short baseline 3 d: Stage 1 -0.15%, Stage 2 +0.33%
+   Stage 1 (< 2025): n 5, mean +7.54% (median +7.45%, t 2.23), sum without the 3 best +0.01
+   Stage 2 (2025-26): n 16, mean +0.76% (median +3.37%, t 0.19), sum without the 3 best -0.53
+   VERDICT FAIL (Stage 1 < 8: no kill possible) | $/yr at $3,000 per trade: $192
+
+#563 Persistent Korean premium (5 days >= +3%) -> short 7 d: 14 trades | short baseline 7 d: Stage 1 -0.21%, Stage 2 +0.95%
+   Stage 1 (< 2025): n 2, mean +0.68% (median +0.68%, t 0.03), sum without the 3 best +nan
+   Stage 2 (2025-26): n 12, mean -3.19% (median -0.10%, t -1.06), sum without the 3 best -0.59
+   VERDICT FAIL (Stage 1 < 8: no kill possible) | $/yr at $3,000 per trade: $-606
+

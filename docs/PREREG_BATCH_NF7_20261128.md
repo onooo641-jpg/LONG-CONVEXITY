@@ -28,3 +28,14 @@ Before 2025: −0.15% / −0.21%.
 **$/yr:** $3,000 per trade.
 
 **Script/output:** `scripts/batch_nf7_20261128.py` → `docs/jx_runs/batch_nf7_20261128.txt`, re-run identical.
+
+## Results (2026-11-28; `docs/jx_runs/batch_nf7_20261128.txt`, re-run identical): 0 of 4
+| # | Verdict | Stage 1 | Stage 2 |
+|---|---|---|---|
+| 560 pump day, 7-day hold | KILL | −6.82% (37) | +7.42% (52, t 3.48) |
+| 561 post-frenzy dry-up | KILL | −1.28% (257) | +0.64% (790) |
+| 562 dump-day continuation | FAIL | +7.54% (n 5) | +0.76% (16) |
+| 563 persistent Korean premium | FAIL | n 2 | −3.19% (12) |
+
+**#560 versus #555:** the 3-day pump-day short passed both periods, the 7-day did not (Stage 1 −6.8%). The give-back happens in the
+first 3 days; holding longer meets squeezes. #555's 3-day rule stays as registered.
