@@ -2869,3 +2869,200 @@ def job_ubatchnf13():
     for name, digs in (("a", "0"), ("b", "123"), ("c", "456789")):
         save(f"batchnf13_px_{name}.parquet", df[first.isin(list(digs))].reset_index(drop=True))
     save("batchnf13_events.parquet", pd.DataFrame(evs, columns=["sym", "t", "kind", "value"]))
+
+
+def job_ubatchnf14():
+    """Batch NF14: daily candles, every perp, full history, on Drift, Bluefin, Apex Omni, edgeX, Extended, Pacifica, Backpack.
+    Endpoints are tried in order; the first raw reply of each is kept in batchnf14_probe.json so a parse miss can be fixed."""
+    probe = {}
+    T0, T1 = int(pd.Timestamp("2023-01-01", tz="UTC").timestamp()), int(pd.Timestamp("2026-11-27", tz="UTC").timestamp())
+
+    def J(url, key=None):
+        st, raw = None, b""
+        for k in range(3):
+            st, raw = _raw_get(url, timeout=40, headers={"Accept": "application/json"})
+            if st == 429 or st is None:
+                time.sleep(5 * (k + 1))
+                continue
+            break
+        if key and key not in probe:
+            probe[key] = {"url": url, "status": st, "head": raw[:1500].decode("utf-8", "replace")}
+        try:
+            return json.loads(raw.decode()) if st == 200 else None
+        except Exception:  # noqa: BLE001
+            return None
+
+    def num(x):
+        try:
+            return float(x)
+        except Exception:  # noqa: BLE001
+            return None
+
+    def rows_from(items, f):
+        out = []
+        for it in items or []:
+            try:
+                r = f(it)
+            except Exception:  # noqa: BLE001
+                r = None
+            if r and None not in r:
+                out.append(r)
+        return out
+
+    def pick_list(d, *keys):
+        if isinstance(d, list):
+            return d
+        if isinstance(d, dict):
+            for k in keys:
+                v = d.get(k)
+                if isinstance(v, list):
+                    return v
+                if isinstance(v, dict):
+                    for kk in keys:
+                        if isinstance(v.get(kk), list):
+                            return v[kk]
+        return []
+
+    def ts_ms(x):
+        x = float(x)
+        return int(x * 1000) if x < 1e11 else int(x)
+
+    def generic(it):  # dict or list candle -> (t, o, h, l, c, v_usd)
+        if isinstance(it, (list, tuple)):
+            t, o, h, l, c = ts_ms(it[0]), num(it[1]), num(it[2]), num(it[3]), num(it[4])
+            v = num(it[7]) if len(it) > 7 and num(it[7]) else (num(it[5]) or 0) * (c or 0)
+            return (t, o, h, l, c, v)
+        g = lambda *ks: next((it[k] for k in ks if k in it and it[k] is not None), None)  # noqa: E731
+        t = g("t", "ts", "time", "start", "startTime", "start_time", "openTime", "timestamp", "klineTime", "T")
+        if isinstance(t, str) and not t.replace(".", "").isdigit():
+            t = pd.Timestamp(t).timestamp()
+        o, h, l, c = (num(g(*k)) for k in (("o", "open", "fillOpen", "oraclePriceOpen"), ("h", "high", "fillHigh", "oraclePriceHigh"),
+                                           ("l", "low", "fillLow", "oraclePriceLow"), ("c", "close", "fillClose", "oraclePriceClose")))
+        qv = num(g("quoteVolume", "quote_volume", "value", "turnover", "quoteAssetVolume", "volumeUsd", "quoteVolumeUsd", "q"))
+        bv = num(g("v", "volume", "baseVolume", "size", "baseAssetVolume", "baseVolumeAmount"))
+        v = qv if qv else (bv or 0) * (c or 0)
+        return (ts_ms(t), o, h, l, c, v)
+
+    def save_v(name, recs):
+        df = pd.DataFrame(recs, columns=["coin", "t", "o", "h", "l", "c", "v_usd"]).drop_duplicates(["coin", "t"])
+        print(f"  {name}: markets {df.coin.nunique() if len(df) else 0}, rows {len(df)}"
+              f"{', ' + str(pd.to_datetime(df.t.min(), unit='ms').date()) + '..' + str(pd.to_datetime(df.t.max(), unit='ms').date()) if len(df) else ''}", flush=True)
+        save(f"batchnf14_{name}_1d.parquet", df)
+
+    def paged(make_url, key, step_days, parse, max_pages=12):
+        out, end = [], T1
+        for p in range(max_pages):
+            d = J(make_url(max(T0, end - step_days * 86400), end), key if p == 0 else None)
+            rs = rows_from(parse(d), generic)
+            if not rs:
+                break
+            out += rs
+            first = min(r[0] for r in rs) // 1000
+            if first <= T0 or first >= end:
+                break
+            end = first - 1
+            time.sleep(0.15)
+        return out
+
+    # Drift
+    recs = []
+    c = J("https://data.api.drift.trade/contracts", "drift_contracts")
+    syms = sorted({x.get("ticker_id") for x in pick_list(c, "contracts", "data") if isinstance(x, dict)
+                   and str(x.get("product_type", "")).upper() in ("PERP", "PERPETUAL") and x.get("ticker_id")})
+    for s in syms:
+        rs = paged(lambda a, b, s=s: f"https://data.api.drift.trade/market/{s}/candles/D?startTs={a}&endTs={b}&limit=1000",
+                   "drift_candles", 999, lambda d: pick_list(d, "records", "data", "candles"))
+        recs += [(s,) + r for r in rs]
+    save_v("drift", recs)
+
+    # Bluefin (Pro API first, then the older dapi)
+    recs = []
+    info = J("https://api.sui-prod.bluefin.io/v1/exchange/info", "bluefin_info")
+    syms = [m.get("symbol") for m in pick_list(info, "markets", "data") if isinstance(m, dict) and m.get("symbol")]
+    if not syms:
+        md = J("https://dapi.api.sui-prod.bluefin.io/marketData", "bluefin_dapi_markets")
+        syms = [m.get("symbol") for m in pick_list(md, "data") if isinstance(m, dict) and m.get("symbol")]
+    for s in syms:
+        rs = paged(lambda a, b, s=s: f"https://api.sui-prod.bluefin.io/v1/exchange/candlesticks?symbol={s}&interval=1d&type=Last"
+                                    f"&startTimeAtMillis={a * 1000}&endTimeAtMillis={b * 1000}&limit=1000",
+                   "bluefin_candles", 999, lambda d: pick_list(d, "data", "candles"))
+        if not rs:
+            rs = rows_from(pick_list(J(f"https://dapi.api.sui-prod.bluefin.io/candlestickData?symbol={s}&interval=1d&limit=1000",
+                                       "bluefin_dapi_candles"), "data"), generic)
+        recs += [(s,) + r for r in rs]
+    save_v("bluefin", recs)
+
+    # Apex Omni
+    recs = []
+    sy = J("https://omni.apex.exchange/api/v3/symbols", "apex_symbols")
+    syms = []
+    if isinstance(sy, dict):
+        cc = ((sy.get("data") or {}).get("contractConfig") or {})
+        for k in ("perpetualContract", "prelaunchContract"):
+            syms += [x.get("crossSymbolName") or x.get("symbol") for x in (cc.get(k) or []) if isinstance(x, dict)]
+    syms = sorted({s.replace("-", "") for s in syms if s})
+    for s in syms:
+        def parse_apex(d, s=s):
+            if isinstance(d, dict) and isinstance(d.get("data"), dict):
+                v = d["data"].get(s) or next(iter(d["data"].values()), [])
+                return v if isinstance(v, list) else []
+            return pick_list(d, "data")
+        rs = paged(lambda a, b, s=s: f"https://omni.apex.exchange/api/v3/klines?symbol={s}&interval=D&start={a}&end={b}&limit=200",
+                   "apex_klines", 199, parse_apex)
+        recs += [(s,) + r for r in rs]
+    save_v("apex", recs)
+
+    # edgeX
+    recs = []
+    meta = J("https://pro.edgex.exchange/api/v1/public/meta/getMetaData", "edgex_meta")
+    cl = pick_list((meta or {}).get("data") if isinstance(meta, dict) else None, "contractList")
+    for x in cl:
+        cid, name = x.get("contractId"), x.get("contractName")
+        if not cid:
+            continue
+        d = J(f"https://pro.edgex.exchange/api/v1/public/quote/getKline?contractId={cid}&priceType=LAST_PRICE&klineType=DAY_1&size=1000",
+              "edgex_kline")
+        rs = rows_from(pick_list((d or {}).get("data") if isinstance(d, dict) else None, "dataList", "list"), generic)
+        recs += [(name,) + r for r in rs]
+        time.sleep(0.15)
+    save_v("edgex", recs)
+
+    # Extended
+    recs = []
+    mk = J("https://api.starknet.extended.exchange/api/v1/info/markets", "extended_markets")
+    names = [m.get("name") for m in pick_list(mk, "data") if isinstance(m, dict) and m.get("name")]
+    for s in names:
+        rs = []
+        for iv in ("P1D", "PT24H", "1d"):
+            d = J(f"https://api.starknet.extended.exchange/api/v1/info/candles/{s}/trades?interval={iv}&limit=1000", f"extended_candles_{iv}")
+            rs = rows_from(pick_list(d, "data"), generic)
+            if rs:
+                break
+        recs += [(s,) + r for r in rs]
+        time.sleep(0.15)
+    save_v("extended", recs)
+
+    # Pacifica
+    recs = []
+    inf = J("https://api.pacifica.fi/api/v1/info", "pacifica_info")
+    syms = [m.get("symbol") for m in pick_list(inf, "data") if isinstance(m, dict) and m.get("symbol")]
+    for s in syms:
+        rs = paged(lambda a, b, s=s: f"https://api.pacifica.fi/api/v1/kline?symbol={s}&interval=1d&start_time={a * 1000}&end_time={b * 1000}",
+                   "pacifica_kline", 999, lambda d: pick_list(d, "data"))
+        recs += [(s,) + r for r in rs]
+    save_v("pacifica", recs)
+
+    # Backpack
+    recs = []
+    mk = J("https://api.backpack.exchange/api/v1/markets", "backpack_markets")
+    syms = [m.get("symbol") for m in (mk if isinstance(mk, list) else []) if isinstance(m, dict)
+            and str(m.get("marketType", "")).upper() == "PERP" and m.get("symbol")]
+    for s in syms:
+        rs = paged(lambda a, b, s=s: f"https://api.backpack.exchange/api/v1/klines?symbol={s}&interval=1d&startTime={a}&endTime={b}",
+                   "backpack_klines", 999, lambda d: d if isinstance(d, list) else [])
+        recs += [(s,) + r for r in rs]
+    save_v("backpack", recs)
+
+    OUT.mkdir(parents=True, exist_ok=True)
+    (OUT / "batchnf14_probe.json").write_text(json.dumps(probe, indent=1))
+    print(f"  probe replies kept: {len(probe)}", flush=True)
