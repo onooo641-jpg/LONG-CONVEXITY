@@ -38,3 +38,14 @@
 **Multiple testing:** four tests on one venue's data. Only a pass with Stage 2 t ≥ 2.5 goes to the radar forward log.
 
 **Script/output:** `scripts/batch_nf24_20261128.py` → `docs/jx_runs/batch_nf24_20261128.txt`, re-run identical.
+
+## Result (2026-11-28; `docs/jx_runs/batch_nf24_20261128.txt`, re-run identical): **0 of 4**
+
+| # | Rule | Stage 1 | Stage 2 | Verdict |
+|---|---|---|---|---|
+| 639 | −3σ bounce | n 174, −0.07% | n 47, +0.46% (one hour later +0.28%) | KILL (Stage 1) |
+| 640 | +5σ fade | n 50, −0.17% | n 26, −0.95% | KILL (Stage 1) |
+| 641 | +3σ fade | n 175, −0.15% | n 45, −0.46% | KILL (Stage 1) |
+| 642 | 24-hour loser bounce | n 459, +0.10% | n 205, −0.05% | FAIL |
+
+**Reading:** even at zero fees, Paradex hourly and daily reversals have no edge. On this venue only the wick-bid fills (#636) carry one.

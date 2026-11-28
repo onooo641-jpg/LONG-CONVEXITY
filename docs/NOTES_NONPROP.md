@@ -526,3 +526,6 @@ Jx's free Coinalyze key gave daily OI and liquidations from 2020. The five OI an
 ## 2026-11-28 — Batch NF23 (#635–#638), zero-fee venues: #636 Paradex wick bids PASS (small)
 - #520 wick bids on Paradex at zero fees: Stage 2 +5.25%/fill (t 4.87, n 69); 61% of fills were in hours too thin for one $1,500 fill, but the executable subset still averages +5.72% (n 27). ~$1.6K/yr: real but tiny. Forward log radar N15 from 2026-12-01.
 - #569 on Paradex fails (Stage 2 −0.20%). Lighter candles refuse US servers (403): not testable.
+
+## 2026-11-28 — Batch NF24 (#639–#642), zero-fee Paradex reversals: 0 of 4
+- −3σ bounce, +5σ/+3σ fades and 24h loser bounce all fail even at zero fees (three Stage 1 KILLs; #642 Stage 2 −0.05%).

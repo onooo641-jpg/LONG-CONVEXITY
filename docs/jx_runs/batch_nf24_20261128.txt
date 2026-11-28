@@ -1,0 +1,32 @@
+Paradex markets 66, hours 96,648, 2026-03-01 00:00:00+00:00..2026-11-25 23:00:00+00:00
+
+#639 -3 sigma bounce (between -5 and -3 sigma), long, 4 hours
+   Stage 1 2026-03-01..2026-08-15: trades 174 | mean net -0.07% (t -0.53, win 56%) | $453/yr | sum without 3 best $18
+   Stage 2 2026-08-16..2026-11-25: trades 47 | mean net +0.46% (t 1.42, win 57%) | $517/yr | sum without 3 best $-50
+   costs x1.5 Stage 2 mean +0.39%
+   VERDICT KILL (Stage 1)
+
+   stale-print check, Stage 2 one hour later: n 40, mean +0.28% (t 1.26)
+
+#640 +5 sigma pump fade, short, 4 hours
+   Stage 1 2026-03-01..2026-08-15: trades 50 | mean net -0.17% (t -0.50, win 50%) | $-173/yr | sum without 3 best $-248
+   Stage 2 2026-08-16..2026-11-25: trades 26 | mean net -0.95% (t -1.00, win 54%) | $-473/yr | sum without 3 best $-258
+   costs x1.5 Stage 2 mean -1.02%
+   VERDICT KILL (Stage 1)
+
+   stale-print check, Stage 2 one hour later: n 23, mean -0.63% (t -0.80)
+
+#641 +3 sigma fade (between +3 and +5 sigma), short, 4 hours
+   Stage 1 2026-03-01..2026-08-15: trades 175 | mean net -0.15% (t -0.73, win 53%) | $186/yr | sum without 3 best $-178
+   Stage 2 2026-08-16..2026-11-25: trades 45 | mean net -0.46% (t -1.11, win 47%) | $-281/yr | sum without 3 best $-163
+   costs x1.5 Stage 2 mean -0.53%
+   VERDICT KILL (Stage 1)
+
+   stale-print check, Stage 2 one hour later: n 34, mean -0.07% (t -0.21)
+
+#642 24-hour loser bounce: at 00:00 UTC buy the 3 worst 24h returns (>= $500K 24h volume), exit 24h later
+   Stage 1 2026-03-01..2026-08-15: trades 459 | mean net +0.10% (t 0.77, win 49%) | $201/yr | sum without 3 best $-240
+   Stage 2 2026-08-16..2026-11-25: trades 205 | mean net -0.05% (t -0.22, win 53%) | $-170/yr | sum without 3 best $-352
+   costs x1.5 Stage 2 mean -0.12%
+   VERDICT FAIL
+
