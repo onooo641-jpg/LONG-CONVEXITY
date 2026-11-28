@@ -1,0 +1,62 @@
+{
+ "lighter_orderbooks": {
+  "url": "https://mainnet.zklighter.elliot.ai/api/v1/orderBooks",
+  "status": 200,
+  "head": "{\"code\": 200, \"order_books\": [{\"symbol\": \"VIRTUAL\", \"market_id\": 41, \"market_type\": \"perp\", \"base_asset_id\": 0, \"quote_asset_id\": 0, \"status\": \"active\", \"taker_fee\": \"0.0000\", \"is_taker_fee_enabled\": true, \"maker_fee\": \"0.0000\", \"is_maker_fee_enabled\": true, \"liquidation_fee\": \"1.0000\", \"min_base_amount\": \"9.0\", \"min_quote_amount\": \"10.000000\", \"order_quote_limit\": \"281474976.710655\", \"supported_size_decimals\": 1, \"supported_price_decimals\": 5, \"supported_quote_decimals\": 6, \"created_at\": \"1749842289899\", \"multiplier\": \"1.000000000000000000\", \"start_timestamp\": 0, \"end_timestamp\": 0, \"open_interest\": \"3.704712\", \"open_interest_limit\": \"200661637532.5\", \"open_interest_usd\": \"133036.207920\", \"outcome\": 0, \"operator_account_index\": 1, \"fee_collector_account_index\": 0, \"settlement_cap\": 0, \"settlement_type\": 0, \"settlement_price\": 0, \"default_price\": 0, \"is_frozen\": false, \"market_deployer\": \"lighter\"}, {\"symbol\": \"KAITO\", \"market_id\": 33, \"market_type\": \"perp\", \"base_asset_id\": 0, \"quote_asset_id\": 0, \"status\": \"active\", \"taker_fee\": \"0.0000\", \"is_taker_fee_enabled\": true, \"maker_fee\": \"0.0000\", \"is_maker_fee_enabled\": true, \"liquidation_fee\": \"1.0000\", \"min_base_amount\": \"20.0\", \"min"
+ },
+ "lighter_1d:1d:1": {
+  "url": "https://mainnet.zklighter.elliot.ai/api/v1/candlesticks?market_id=41&resolution=1d&start_timestamp=1704067200&end_timestamp=1795651200&count_back=2000",
+  "status": 403,
+  "head": "None"
+ },
+ "lighter_1d:1d:1000": {
+  "url": "https://mainnet.zklighter.elliot.ai/api/v1/candlesticks?market_id=41&resolution=1d&start_timestamp=1704067200000&end_timestamp=1795651200000&count_back=2000",
+  "status": 403,
+  "head": "None"
+ },
+ "lighter_1d:1440:1": {
+  "url": "https://mainnet.zklighter.elliot.ai/api/v1/candlesticks?market_id=41&resolution=1440&start_timestamp=1704067200&end_timestamp=1795651200&count_back=2000",
+  "status": 403,
+  "head": "None"
+ },
+ "lighter_1d:1440:1000": {
+  "url": "https://mainnet.zklighter.elliot.ai/api/v1/candlesticks?market_id=41&resolution=1440&start_timestamp=1704067200000&end_timestamp=1795651200000&count_back=2000",
+  "status": 403,
+  "head": "None"
+ },
+ "lighter_1h:1h:1": {
+  "url": "https://mainnet.zklighter.elliot.ai/api/v1/candlesticks?market_id=41&resolution=1h&start_timestamp=1788451200&end_timestamp=1795651200&count_back=2000",
+  "status": 403,
+  "head": "None"
+ },
+ "lighter_1h:1h:1000": {
+  "url": "https://mainnet.zklighter.elliot.ai/api/v1/candlesticks?market_id=41&resolution=1h&start_timestamp=1788451200000&end_timestamp=1795651200000&count_back=2000",
+  "status": 403,
+  "head": "None"
+ },
+ "lighter_1h:60:1": {
+  "url": "https://mainnet.zklighter.elliot.ai/api/v1/candlesticks?market_id=41&resolution=60&start_timestamp=1788451200&end_timestamp=1795651200&count_back=2000",
+  "status": 403,
+  "head": "None"
+ },
+ "lighter_1h:60:1000": {
+  "url": "https://mainnet.zklighter.elliot.ai/api/v1/candlesticks?market_id=41&resolution=60&start_timestamp=1788451200000&end_timestamp=1795651200000&count_back=2000",
+  "status": 403,
+  "head": "None"
+ },
+ "paradex_markets": {
+  "url": "https://api.prod.paradex.trade/v1/markets",
+  "status": 200,
+  "head": "{\"results\": [{\"symbol\": \"AAVE-USD-PERP\", \"base_currency\": \"AAVE\", \"quote_currency\": \"USD\", \"settlement_currency\": \"USDC\", \"order_size_increment\": \"0.01\", \"price_tick_size\": \"0.01\", \"min_notional\": \"10\", \"open_at\": 1727335800000, \"expiry_at\": 0, \"asset_kind\": \"PERP\", \"market_kind\": \"cross\", \"position_limit\": \"18000\", \"price_bands_width\": \"0.1\", \"max_slippage\": \"0.002\", \"max_open_orders\": 75, \"max_funding_rate\": \"0.05\", \"delta1_cross_margin_params\": {\"imf_base\": \"0.05\", \"imf_shift\": \"0\", \"imf_factor\": \"0\", \"mmf_factor\": \"0.5\"}, \"price_feed_id\": \"3wDLxH34Yz8tGjwHszQ2MfzHwRoaQgKA32uq2bRpjJBW\", \"oracle_ewma_factor\": \"0.06696700846319259\", \"max_order_size\": \"6000\", \"max_funding_rate_change\": \"0.0005\", \"max_tob_spread\": \"0.02\", \"interest_rate\": \"0.0001\", \"clamp_rate\": \"0.0005\", \"funding_period_hours\": 8, \"funding_multiplier\": 1, \"tags\": [\"DEFI\"], \"fee_config\": {\"interactive_fee\": {\"maker_fee\": {\"fee\": \"0\"}, \"taker_fee\": {\"fee\": \"0\"}}, \"api_fee\": {\"maker_fee\": {\"fee\": \"0\"}, \"taker_fee\": {\"fee\": \"0.0002\"}}, \"rpi_fee\": {\"maker_fee\": {\"fee\": \"0\"}, \"taker_fee\": {\"fee\": \"0.0002\"}}}, \"fee_provision_rate\": \"0.00045\", \"trading_mode\": \"STANDARD\"}, {\"symbol\": \"ADA-USD-PERP\", \"base_currency\": \"ADA\", "
+ },
+ "paradex_1d:klines": {
+  "url": "https://api.prod.paradex.trade/v1/markets/klines?symbol=AAVE-USD-PERP&resolution=1440&start_at=1709251200000&end_at=1795651200000",
+  "status": 400,
+  "head": "None"
+ },
+ "paradex_1h:klines": {
+  "url": "https://api.prod.paradex.trade/v1/markets/klines?symbol=AAVE-USD-PERP&resolution=60&start_at=1792051200000&end_at=1795651200000",
+  "status": 200,
+  "head": "{\"results\": [[1792108800000, 149.47, 160.56, 157.34, 157.34, 305], [1792180800000, 155.52, 155.52, 155.52, 155.52, 600], [1792260000000, 155.52, 152.47, 152.47, 152.47, 233], [1792350000000, 152.47, 146.48, 146.48, 146.48, 10], [1792396800000, 153.01, 153.01, 153.01, 153.01, 234], [1792616400000, 156.73, 156.73, 156.73, 156.73, 208], [1792627200000, 156.73, 155.54, 146.01, 154.44, 310], [1792656000000, 148.47, 148.47, 148.47, 148.47, 29], [1792681200000, 148.47, 146, 146, 146, 46], [1792695600000, 146, 146.68, 146.47, 146.68, 105], [1792699200000, 146.68, 146.04, 145.85, 146.04, 78], [1792702800000, 146.04, 146.33, 146.33, 146.33, 26], [1792713600000, 146.33, 160.67, 147.12, 148.19, 313], [1792792800000, 144.11, 144.11, 144.11, 144.11, 15], [1792972800000, 144.11, 136.24, 129.14, 130.06, 229], [1792976400000, 130.06, 134.96, 134.96, 134.96, 14], [1793059200000, 134.96, 148.7, 135.85, 147.86, 228], [1793062800000, 147.86, 134.96, 134.96, 134.96, 29], [1793221200000, 136.64, 136.64, 136.64, 136.64, 27], [1793239200000, 136.64, 129.32, 129.32, 129.32, 14], [1793304000000, 129.32, 125, 125, 125, 20], [1793419200000, 125, 116.68, 116.68, 116.68, 21], [1793444400000, 116.68, 146.33, 146."
+ }
+}

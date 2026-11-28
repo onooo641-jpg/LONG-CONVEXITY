@@ -1,0 +1,11 @@
+=== ubatchnf23
+  lighter_1d: markets 0, rows 0
+  wrote batchnf23_lighter_1d.parquet: 0 rows
+  lighter_1h: markets 0, rows 0
+  wrote batchnf23_lighter_1h.parquet: 0 rows
+  paradex_1d: markets 0, rows 0
+  wrote batchnf23_paradex_1d.parquet: 0 rows
+  paradex_1h: markets 66, rows 96648
+  wrote batchnf23_paradex_1h.parquet: 96648 rows
+  probe replies kept: 12
+=== ubatchnf23 done in 326s  ok 0 fail 0
