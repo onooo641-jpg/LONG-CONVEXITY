@@ -1,0 +1,12 @@
+coverage: UGA 2008-02-28..2026-11-25, UNG 2007-04-18..2026-11-25, USO 2006-04-10..2026-11-25
+
+#530 Spring refinery maintenance (long UGA, short USO, end-Jan -> end-Apr)
+   Stage 1 2009-2016: n 8, mean +1.71%, t 0.68
+   Stage 2 2017-2026: n 10, mean +2.97%, t 0.87
+   VERDICT FAIL | $/yr at $45K: $1,338
+
+#531 Natural-gas winter hedging premium (short UNG end-Nov -> end-Mar)
+   Stage 1 winters 2008-2015: n 8, mean +17.97%, t 1.88
+   Stage 2 winters 2016-2025: n 10, mean +13.35%, t 1.25
+   check: short UNG end-Apr -> end-Oct, 2016-2025 (reported only): n 10, mean -3.45%, t -0.37
+   VERDICT FAIL | $/yr at $45K: $6,007

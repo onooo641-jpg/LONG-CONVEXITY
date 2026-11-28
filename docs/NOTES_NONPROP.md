@@ -394,3 +394,8 @@ Jx's free Coinalyze key gave daily OI and liquidations from 2020. The five OI an
 - **Caveat:** 2025–26 has judged many wick variants. The forward paper test (2026-12-01 → 2027-01-26) is the real check, and its bars
   are fixed in the pre-registrations.
 - No more wick refinements until it reports.
+
+## 2026-11-28 — Batch W (#530–#531), energy hedging seasonals: 0 of 2
+- **Refinery maintenance spread:** nothing.
+- **Natural-gas winter premium** (short UNG Dec–Mar): +13% per winter out of sample, versus −3.5% for the April–October control, but
+  too variable (t 1.25) to pass. Watch it, don't fund it.

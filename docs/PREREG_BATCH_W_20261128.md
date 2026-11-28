@@ -18,3 +18,15 @@ winter premium. #483 tested the USO roll window, a different mechanism.
 Stage 1 only kills; nothing passes early.
 
 **Script/output:** `scripts/batch_w_20261128.py` → `docs/jx_runs/batch_w_20261128.txt`, re-run identical.
+
+## Results (2026-11-28; `docs/jx_runs/batch_w_20261128.txt`, re-run identical)
+| # | Verdict | Stage 1 | Stage 2 | $/yr |
+|---|---|---|---|---|
+| 530 spring refinery maintenance (UGA − USO) | FAIL | +1.71% (t 0.68, 8) | +2.97% (t 0.87, 10) | $1.3K |
+| 531 natural-gas winter premium (short UNG Dec–Mar) | FAIL (near miss) | +17.97% (t 1.88, 8) | **+13.35% (t 1.25, 10)** | $6.0K |
+
+**Batch W verdict: 0 of 2.**
+- #531 is real-looking: the winter short made +13% on average over 2016–25, while shorting UNG April–October lost (−3.45%), so it is
+  not just UNG's all-year decay.
+- But winters vary wildly (t 1.25 over 10 winters), so it does not clear the bar.
+- It is worth a forward look each winter, not money.
