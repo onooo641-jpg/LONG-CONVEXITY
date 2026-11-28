@@ -3819,3 +3819,40 @@ def job_ubatchnf25():
                 pass
     print(f"  status: {probe}", flush=True)
     save("batchnf25_dex_volume.parquet", pd.DataFrame(rows, columns=["slug", "name", "t", "volume"]))
+
+
+def job_ubatchnf27():
+    """Batch NF27: Aster funding history (all perps, 2025-01-01..) and 1-minute klines +-35 min around settlements with |rate| >= 0.10%."""
+    base = "https://fapi.asterdex.com/fapi/v1"
+    info = get(f"{base}/exchangeInfo", tries=3) or {}
+    syms = [s["symbol"] for s in info.get("symbols") or [] if s.get("contractType") == "PERPETUAL"]
+    t0 = int(pd.Timestamp("2025-01-01", tz="UTC").timestamp() * 1000)
+    t1 = int(pd.Timestamp("2026-11-26", tz="UTC").timestamp() * 1000)
+    fr = []
+    for s in syms:
+        st = t0
+        for _ in range(40):
+            d = get(f"{base}/fundingRate?symbol={s}&startTime={st}&endTime={t1}&limit=1000", tries=3) or []
+            if not d:
+                break
+            fr += [(s, int(x["fundingTime"]), float(x["fundingRate"])) for x in d if x.get("fundingRate") not in (None, "")]
+            if len(d) < 1000:
+                break
+            st = int(d[-1]["fundingTime"]) + 1
+            time.sleep(0.12)
+        time.sleep(0.12)
+    f = pd.DataFrame(fr, columns=["symbol", "t", "rate"]).drop_duplicates(["symbol", "t"])
+    print(f"  Aster perps {len(syms)}, funding rows {len(f)}", flush=True)
+    save("batchnf27_funding.parquet", f)
+    ev = f[f["rate"].abs() >= 0.001]
+    print(f"  settlements with |rate| >= 0.10%: {len(ev)}", flush=True)
+    rows, t_end = [], time.time() + 140 * 60
+    for s, t, _ in ev.itertuples(index=False):
+        if time.time() > t_end:
+            print("  time budget reached", flush=True)
+            break
+        m = (t // 60000) * 60000
+        k = get(f"{base}/klines?symbol={s}&interval=1m&startTime={m - 36 * 60000}&endTime={m + 36 * 60000}&limit=80", tries=2) or []
+        rows += [(s, int(t), int(x[0]), float(x[1]), float(x[2]), float(x[3]), float(x[4]), float(x[7])) for x in k]
+        time.sleep(0.08)
+    save("batchnf27_minutes.parquet", pd.DataFrame(rows, columns=["symbol", "settle_t", "t", "o", "h", "l", "c", "qv"]))

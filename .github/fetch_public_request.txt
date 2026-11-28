@@ -1,2 +1,2 @@
-# Batch NF25 volumes, retry (per-slug + HL stats)
-ubatchnf25
+# Batch NF27 pull (workstream C)
+ubatchnf27
