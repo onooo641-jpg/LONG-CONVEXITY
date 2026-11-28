@@ -1,2 +1,2 @@
-# Batch X pull (workstream C)
-ubatchx
+# Batch Z pull (workstream C)
+ubatchz

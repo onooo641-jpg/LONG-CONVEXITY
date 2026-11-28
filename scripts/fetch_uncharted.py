@@ -2614,3 +2614,67 @@ def job_ubatchx():
     df = pd.DataFrame(rows, columns=["kind", "sym", "t", "o", "h", "l", "c"])
     print("  " + ", ".join(f"{k} {g.sym.nunique()} symbols {len(g)} rows" for k, g in df.groupby("kind")), flush=True)
     save("batchx_ohlc_1d.parquet", df)
+
+
+BATCHZ_COINS = ["BTC", "ETH", "SOL", "XRP", "DOGE", "AVAX", "LINK", "SUI", "ARB", "OP", "LTC", "BNB"]
+
+
+def job_ubatchz():
+    """Batch Z (#534): Aster and Lighter funding history for #208's coins (docs/PREREG_BATCH_Z_20261128.md)."""
+    rows, t0 = [], 1704067200000  # 2024-01-01
+    for c in BATCHZ_COINS:
+        start, n = t0, 0
+        for _ in range(60):
+            st, raw = _raw_get(f"https://fapi.asterdex.com/fapi/v1/fundingRate?symbol={c}USDT&startTime={start}&limit=1000", timeout=30)
+            try:
+                d = json.loads(raw.decode()) if raw else []
+            except Exception:  # noqa: BLE001
+                d = []
+            if not isinstance(d, list) or not d:
+                if n == 0:
+                    print(f"  aster {c}: HTTP {st} {raw[:120] if raw else b''}", flush=True)
+                break
+            rows += [("aster", c, int(x["fundingTime"]) // 1000, float(x["fundingRate"])) for x in d]
+            n += len(d)
+            start = int(d[-1]["fundingTime"]) + 1
+            if len(d) < 1000:
+                break
+            time.sleep(0.3)
+        print(f"  aster {c}: {n} points", flush=True)
+    base = "https://mainnet.zklighter.elliot.ai/api/v1"
+    st, raw = _raw_get(base + "/orderBooks", timeout=30)
+    ids = {}
+    try:
+        for ob in json.loads(raw.decode()).get("order_books", []):
+            ids[str(ob.get("symbol", "")).upper()] = ob.get("market_id")
+    except Exception as e:  # noqa: BLE001
+        print(f"  lighter orderBooks HTTP {st} {e} {raw[:200] if raw else b''}", flush=True)
+    end = 1793491200
+    for c in BATCHZ_COINS:
+        mid = ids.get(c)
+        if mid is None:
+            print(f"  lighter {c}: no market id", flush=True)
+            continue
+        n, e = 0, end
+        for _ in range(40):
+            st, raw = _raw_get(f"{base}/fundings?market_id={mid}&resolution=1h&start_timestamp={e - 500 * 3600}&end_timestamp={e}&count_back=500", timeout=30)
+            try:
+                d = json.loads(raw.decode()).get("fundings", []) if raw else []
+            except Exception:  # noqa: BLE001
+                d = []
+            if not d:
+                if n == 0:
+                    print(f"  lighter {c}: HTTP {st} {raw[:160] if raw else b''}", flush=True)
+                break
+            for x in d:
+                ts = int(x.get("timestamp", 0))
+                ts = ts // 1000 if ts > 10**11 else ts
+                rate = float(x.get("rate", x.get("value", 0)) or 0)
+                sign = -1.0 if str(x.get("direction", "long")).lower() == "short" else 1.0
+                rows.append(("lighter", c, ts, sign * rate / 100.0 if abs(rate) > 0.05 else sign * rate))
+            n += len(d)
+            e -= 500 * 3600
+            time.sleep(0.3)
+        print(f"  lighter {c}: {n} points", flush=True)
+    df = pd.DataFrame(rows, columns=["venue", "coin", "t", "rate"]).drop_duplicates(["venue", "coin", "t"])
+    save("batchz_funding.parquet", df)
