@@ -211,7 +211,7 @@ Favorite 0/5
 New
 All Firms
 Firms 15 results
-Data updated 1 min ago
+Data updated just now
 Firm
 Rank / Reviews
 Country / Years
@@ -222,9 +222,9 @@ Promo
 Actions
 Th
 The5ers
-100695
+100697
 4.7
-1450
+1451
 reviews
 United Kingdom, years in operation: 10 10+
 FX, Indices, Metals, Energy, Crypto, Stocks FX
@@ -239,7 +239,7 @@ MATCH
 Firm
 FT
 FTMO
-44439
+44441
 4.5
 220
 reviews
@@ -255,7 +255,7 @@ $400K
 Firm
 Aq
 AquaFunded
-17255
+17256
 4.4
 347
 reviews
@@ -290,7 +290,7 @@ Firm
 5
 E8
 E8 Markets
-39333
+39334
 4.8
 498
 reviews
@@ -325,7 +325,7 @@ Firm
 7
 To
 Top One Trader
-30424
+30425
 4.4
 240
 reviews
@@ -377,7 +377,7 @@ Firm
 10
 Cr
 Crypto Fund Trader
-39922
+39925
 4.1
 114
 reviews
