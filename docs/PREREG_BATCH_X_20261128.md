@@ -38,3 +38,19 @@ desk-rejected in Batch I only as "same family as the wick"; family 1 still count
 **Script/output:** `scripts/batch_x_20261128.py` → `docs/jx_runs/batch_x_20261128.txt`, re-run identical.
 
 **Data job:** `ubatchx` (Yahoo chart API, daily OHLC + adjusted close; OHLC is scaled by adjclose/close for ETFs).
+
+## Results (2026-11-28; `docs/jx_runs/batch_x_20261128.txt`, re-run identical)
+| # | Verdict | Stage 1 2006–15 | Stage 2 2016–26 | Note |
+|---|---|---|---|---|
+| 532 US ETFs | FAIL | +0.64%/fill (t 3.87, 293 fills) | **−0.53%/fill** (t −4.92, 360), win 30% | ETF dips at 4σ keep falling into the close; next-day exit +0.21% (t 0.88) |
+| 533 FX pairs | FAIL (and **data artifact**) | +0.57% (t 8.1) | +0.87% (t 19.3, 83% win), $1.4K/yr at $5K/fill | See below |
+
+**#533 is not real.** Diagnostic run after the verdict, not part of the rule:
+- 97% of its 2016–26 fills are spike-only bars (open-to-close move < 0.2% with the low ≥ 4σ below). That is the signature of bad
+  prints in Yahoo's free FX daily data.
+- Examples fall on 2020-01-01 and 2024-01-01, when FX was closed.
+- The spikes coincide across JPY pairs because the feed glitches hit all of them at once (97% "corroborated", by the glitch itself).
+- **Lesson:** free daily FX lows cannot test resting-order ideas; tick or minute data is needed (Dukascopy is throttled, Batch I).
+
+**Batch X verdict: 0 of 2.** The wick mechanism does not carry over to liquid US ETFs. Its forced sellers sit in crypto's 24/7,
+highly leveraged perps.

@@ -1,0 +1,14 @@
+#532 US ETFs (34 instruments): bid at previous close x (1 - 4*sigma30, clipped 1%..30%), exit at the close
+   Stage 1 2006-2015: fills 293 | mean net +0.64% (t 3.87, win 46%) | $490/yr | without best day $405/yr
+   Stage 2 2016-2026: fills 360 | mean net -0.53% (t -4.92, win 30%) | $-284/yr | without best day $-323/yr
+   context: exit at next day's close, Stage 2: fills 360 | mean net +0.21% (t 0.88, win 56%) | $332/yr | without best day $165/yr
+   Stage 2 by year: 2016 n 45 -0.70%; 2017 n 28 +0.05%; 2018 n 56 -0.75%; 2019 n 30 -0.32%; 2020 n 71 -0.47%; 2021 n 26 +0.07%; 2022 n 8 -0.11%; 2023 n 6 -0.68%; 2024 n 17 +0.30%; 2025 n 45 -0.79%; 2026 n 28 -1.53%
+   VERDICT FAIL
+
+#533 FX pairs (14 instruments): bid at previous close x (1 - 4*sigma30, clipped 1%..30%), exit at the close
+   Stage 1 2006-2015: fills 234 | mean net +0.57% (t 8.09, win 74%) | $583/yr | without best day $531/yr
+   Stage 2 2016-2026: fills 467 | mean net +0.87% (t 19.34, win 83%) | $1,432/yr | without best day $1,359/yr
+   context: exit at next day's close, Stage 2: fills 467 | mean net +0.07% (t 1.29, win 48%) | $200/yr | without best day $107/yr
+   Stage 2 by year: 2016 n 54 +1.29%; 2017 n 15 +0.45%; 2018 n 34 +0.72%; 2019 n 35 +0.42%; 2020 n 59 +0.91%; 2021 n 26 +1.19%; 2022 n 55 +1.05%; 2023 n 37 +0.78%; 2024 n 52 +0.99%; 2025 n 33 +0.74%; 2026 n 67 +0.68%
+   VERDICT FAIL
+

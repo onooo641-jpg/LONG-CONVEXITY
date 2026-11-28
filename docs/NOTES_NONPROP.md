@@ -399,3 +399,9 @@ Jx's free Coinalyze key gave daily OI and liquidations from 2020. The five OI an
 - **Refinery maintenance spread:** nothing.
 - **Natural-gas winter premium** (short UNG Dec–Mar): +13% per winter out of sample, versus −3.5% for the April–October control, but
   too variable (t 1.25) to pass. Watch it, don't fund it.
+
+## 2026-11-28 — Batch X (#532–#533), wick mechanism on US ETFs and FX: 0 of 2
+- **US ETFs:** 4σ intraday dips keep falling into the close (−0.53%/fill out of sample).
+- **FX:** looked excellent but was a Yahoo bad-print artifact (97% spike-only bars; fills on closed-market 1 January dates). Free daily
+  FX lows cannot test resting-order ideas.
+- The wick edge lives in crypto's 24/7 leveraged perps, not in liquid TradFi.
