@@ -2731,3 +2731,43 @@ def job_ubatchnf6():
     df = pd.DataFrame(rows, columns=["venue", "coin", "t", "o", "h", "l", "c", "v"])
     print("  " + ", ".join(f"{v} {g.coin.nunique()} coins {len(g)} rows" for v, g in df.groupby("venue")), flush=True)
     save("batchnf6_local_1d.parquet", df)
+
+
+def job_ubatchnf11():
+    """Batch NF11: Nasdaq Reg SHO threshold files 2018-2026 and Yahoo daily adjusted closes for every ticker that appears."""
+    from concurrent.futures import ThreadPoolExecutor
+    days = pd.bdate_range("2018-01-02", "2026-11-25")
+
+    def one(d):
+        st, raw = _raw_get(f"https://www.nasdaqtrader.com/dynamic/symdir/regsho/nasdaqth{d.strftime('%Y%m%d')}.txt", timeout=30)
+        if st != 200 or not raw:
+            return d, None
+        syms = []
+        for ln in raw.decode("utf-8", "replace").splitlines()[1:]:
+            f = ln.split("|")
+            if len(f) > 1 and f[0] and not f[0].startswith("File Creation"):
+                syms.append(f[0].strip())
+        return d, syms
+    rows, ok = [], 0
+    with ThreadPoolExecutor(6) as ex:
+        for d, syms in ex.map(one, days):
+            if syms is not None:
+                ok += 1
+                rows += [(d.strftime("%Y-%m-%d"), s) for s in syms]
+    th = pd.DataFrame(rows, columns=["day", "sym"])
+    print(f"  threshold files found: {ok} of {len(days)} business days; rows {len(th)}; tickers {th.sym.nunique()}", flush=True)
+    save("batchnf11_threshold.parquet", th)
+    px = []
+    for sym in sorted(set(th["sym"]) | {"SPY"}):
+        st, raw = _raw_get(f"https://query1.finance.yahoo.com/v8/finance/chart/{urllib.parse.quote(sym)}?period1=1514764800&period2=1795651200&interval=1d&events=div,split", timeout=30)
+        try:
+            r = json.loads(raw.decode())["chart"]["result"][0]
+            q = r["indicators"]["quote"][0]
+            adj = (r["indicators"].get("adjclose") or [{}])[0].get("adjclose") or q["close"]
+            px += [(sym, int(t), c, a) for t, c, a in zip(r["timestamp"], q["close"], adj) if c is not None and a is not None]
+        except Exception:  # noqa: BLE001
+            pass
+        time.sleep(0.5)
+    p = pd.DataFrame(px, columns=["sym", "t", "close", "adj"])
+    print(f"  yahoo prices for {p.sym.nunique()} of {th.sym.nunique() + 1} tickers", flush=True)
+    save("batchnf11_px.parquet", p)
