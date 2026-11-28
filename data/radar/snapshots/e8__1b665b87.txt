@@ -14,8 +14,8 @@ Latest payouts Live
 11h ago $5,000 Classic Markets +$213
 12h ago $25,000 Classic Markets +$300
 13h ago $5,000 Classic Markets +$137
-13h ago $5,000 Perpetual +$185
-14h ago $100,000 Classic Markets +$2,000
+14h ago $5,000 Perpetual +$185
+15h ago $100,000 Classic Markets +$2,000
 15h ago $500,000 Classic Markets +$6,780
 15h ago $150,000 Futures +$2,400
 15h ago $100,000 Classic Markets +$1,378
@@ -44,8 +44,8 @@ Latest payouts Live
 11h ago $5,000 Classic Markets +$213
 12h ago $25,000 Classic Markets +$300
 13h ago $5,000 Classic Markets +$137
-13h ago $5,000 Perpetual +$185
-14h ago $100,000 Classic Markets +$2,000
+14h ago $5,000 Perpetual +$185
+15h ago $100,000 Classic Markets +$2,000
 15h ago $500,000 Classic Markets +$6,780
 15h ago $150,000 Futures +$2,400
 15h ago $100,000 Classic Markets +$1,378
@@ -82,8 +82,8 @@ Date Account size Market Amount
 11 hours ago $5,000 Classic Markets +$213 $5,000 account
 12 hours ago $25,000 Classic Markets +$300 $25,000 account
 13 hours ago $5,000 Classic Markets +$137 $5,000 account
-13 hours ago $5,000 Perpetual +$185 $5,000 account
-14 hours ago $100,000 Classic Markets +$2,000 $100,000 account
+14 hours ago $5,000 Perpetual +$185 $5,000 account
+15 hours ago $100,000 Classic Markets +$2,000 $100,000 account
 15 hours ago $500,000 Classic Markets +$6,780 $500,000 account
 15 hours ago $150,000 Futures +$2,400 $150,000 account
 Showing 1 to 8 of 30 payouts 1 / 4
