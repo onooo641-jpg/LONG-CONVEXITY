@@ -286,6 +286,7 @@ risk, 5m signals and 1m fills.
 | 655 | Batch NF28: oracle-lag trading on oracle-priced perps (Gains, Ostium, Avantis, HIP-3) | `docs/PREREG_BATCH_NF28_20261128.md` | Stage 0 KILL: pull oracles fill at a post-order price; Pyth history now needs an API key | — |
 | 656–659 | Batch NF29 (HyperEVM DEX pools vs Hyperliquid book: reachable arbitrage value for a newcomer, all / WHYPE / non-HYPE; incumbent concentration) | `docs/PREREG_BATCH_NF29_20261128.md` | registered; data `ubatchnf29` (Stage 1 pilot, kill only) | — |
 | 660–663 | Batch NF30 (Virtuals agent tokens on Base, VIRTUAL-hedged: 4-week momentum, reversal, new agents days 8–37, first-week drift) | `docs/PREREG_BATCH_NF30_20261128.md` | registered; data `ubatchnf30` | — |
+| 664–667 | Batch NF31 (Clanker tokens on Base, ETH-hedged: NF30 rules — momentum, reversal, new tokens, first-week drift) | `docs/PREREG_BATCH_NF31_20261128.md` | registered; data `ubatchnf31` | — |
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.

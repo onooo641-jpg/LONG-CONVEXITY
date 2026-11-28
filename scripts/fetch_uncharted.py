@@ -3996,3 +3996,44 @@ def job_ubatchnf30():
     save("batchnf30_ohlcv.parquet", pd.DataFrame(rows, columns=["lp", "symbol", "quote", "t", "o", "h", "l", "c", "v_usd"]))
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "batchnf30_probe.json").write_text(json.dumps(probe, indent=1))
+
+
+def job_ubatchnf31():
+    """Batch NF31: Clanker token list and GeckoTerminal daily OHLCV for each token's pool on Base (oldest first, time-budgeted)."""
+    probe, toks = {}, []
+    good = None
+    for u in ("https://www.clanker.world/api/tokens", "https://clanker.world/api/tokens"):
+        st, d = req(f"{u}?page=1&sort=asc", None, 60, {"Accept": "application/json"})
+        probe[u] = {"status": st, "head": json.dumps(d)[:1500] if isinstance(d, (dict, list)) else str(d)[:300]}
+        if st == 200 and isinstance(d, dict) and (d.get("data") or d.get("tokens")):
+            good = u
+            break
+    if good:
+        for page in range(1, 3000):
+            st, d = req(f"{good}?page={page}&sort=asc", None, 60, {"Accept": "application/json"})
+            items = ((d or {}).get("data") or (d or {}).get("tokens") or []) if isinstance(d, dict) else []
+            if not items:
+                break
+            for x in items:
+                toks.append({"symbol": x.get("symbol"), "token": x.get("contract_address") or x.get("address"),
+                             "pool": x.get("pool_address") or x.get("pool"), "created": x.get("created_at") or x.get("deployed_at"),
+                             "pair": x.get("pair") or x.get("paired_token"), "mcap": x.get("starting_market_cap") or x.get("market_cap")})
+            time.sleep(0.3)
+    print(f"  Clanker tokens {len(toks)} (API {good})", flush=True)
+    save("batchnf31_tokens.json", toks)
+    rows, t_end = [], time.time() + 150 * 60
+    pools = [t for t in toks if t.get("pool")]
+    for i, t in enumerate(pools):
+        if time.time() > t_end:
+            print(f"  time budget reached at {i} of {len(pools)} pools", flush=True)
+            break
+        d = get(f"{GT}/networks/base/pools/{t['pool']}/ohlcv/day?limit=1000&currency=token", tries=2, pause=5, headers=GT_H) or {}
+        if i == 0:
+            probe["gt_ohlcv"] = json.dumps(d)[:800]
+        lst = (((d.get("data") or {}).get("attributes") or {}).get("ohlcv_list")) or [] if isinstance(d, dict) else []
+        quote = (((d.get("meta") or {}).get("quote") or {}).get("symbol")) if isinstance(d, dict) else None
+        rows += [(t["pool"], t.get("symbol"), quote, int(x[0]), float(x[1]), float(x[2]), float(x[3]), float(x[4]), float(x[5])) for x in lst]
+        time.sleep(2.1)
+    save("batchnf31_ohlcv.parquet", pd.DataFrame(rows, columns=["lp", "symbol", "quote", "t", "o", "h", "l", "c", "v_usd"]))
+    OUT.mkdir(parents=True, exist_ok=True)
+    (OUT / "batchnf31_probe.json").write_text(json.dumps(probe, indent=1))
