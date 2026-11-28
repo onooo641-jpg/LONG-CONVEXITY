@@ -1,0 +1,31 @@
+Hyperliquid perps 235, 2023-04-01..2026-11-25
+
+#389 reference (resting bids, X 15%)
+   Stage 1 2023-06-01..2024-12-31: fills 1866 | mean net +4.32% (median +3.44%, t 18.44, win 69%) | $25,642/yr | without best day $23,590/yr
+   Stage 2 2025-01-01..2026-10-31: fills 2484 | mean net +1.33% (median +0.56%, t 5.67, win 54%) | $14,372/yr | without best day $12,315/yr
+
+#519 Resting asks above short-squeeze spikes
+  X 15% (primary)
+   Stage 1 2023-06-01..2024-12-31: fills 2610 | mean net -1.15% (median +0.07%, t -5.68, win 50%) | $-13,638/yr | without best day $-14,770/yr
+   Stage 2 2025-01-01..2026-10-31: fills 4120 | mean net -0.34% (median +0.75%, t -1.66, win 56%) | $9,259/yr | without best day $7,897/yr
+   VERDICT KILL (Stage 1)
+  X 10% (context)
+   Stage 1 2023-06-01..2024-12-31: fills 6046 | mean net -1.22% (median -0.35%, t -10.79, win 46%) | $-12,463/yr | without best day $-13,356/yr
+   Stage 2 2025-01-01..2026-10-31: fills 9486 | mean net -0.57% (median +0.13%, t -5.28, win 51%) | $18,423/yr | without best day $16,753/yr
+  X 20% (context)
+   Stage 1 2023-06-01..2024-12-31: fills 1322 | mean net -1.04% (median +0.08%, t -3.19, win 51%) | $-8,983/yr | without best day $-10,086/yr
+   Stage 2 2025-01-01..2026-10-31: fills 2126 | mean net +0.05% (median +1.61%, t 0.15, win 60%) | $8,571/yr | without best day $7,671/yr
+  X 30% (context)
+   Stage 1 2023-06-01..2024-12-31: fills 479 | mean net -0.38% (median +0.86%, t -0.59, win 54%) | $-1,767/yr | without best day $-2,524/yr
+   Stage 2 2025-01-01..2026-10-31: fills 811 | mean net +0.49% (median +2.96%, t 0.67, win 63%) | $3,592/yr | without best day $2,900/yr
+
+#520 Volatility-scaled bids (X = 4 x sigma30, clipped 5%..30%)
+   Stage 1 2023-06-01..2024-12-31: fills 930 | mean net +7.64% (median +6.31%, t 20.82, win 85%) | $15,771/yr | without best day $13,805/yr
+   Stage 2 2025-01-01..2026-10-31: fills 753 | mean net +3.92% (median +1.85%, t 6.60, win 60%) | $6,374/yr | without best day $3,787/yr
+   VERDICT PASS
+/home/user/LONG-CONVEXITY/scripts/wick_family_20261128.py:82: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  return f.groupby(f["day"].dt.to_period("M"))["pnl"].sum() if not f.empty else pd.Series(dtype=float)
+
+#389 + #519 (X 15%) Stage 1: monthly P&L correlation -0.32 | worst month #389 $-134, combined $-1,775 | $/yr #389 $25,642, combined $12,004
+
+#389 + #519 (X 15%) Stage 2: monthly P&L correlation +0.25 | worst month #389 $-1,089, combined $-4,417 | $/yr #389 $14,372, combined $23,631

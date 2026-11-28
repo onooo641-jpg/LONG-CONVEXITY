@@ -373,3 +373,10 @@ Jx's free Coinalyze key gave daily OI and liquidations from 2020. The five OI an
 ## 2026-11-27 — Batch P (#515–#518), government bonds outside the US: 0 of 4
 - **JGB auction concession** (1,925 auctions): faint before 2017, gone since.
 - **JGB, Bund and Gilt month-end index extension:** nothing out of sample.
+
+## 2026-11-28 — Wick family additions: #520 passes, #519 killed
+- **#520 volatility-scaled bids** (distance 4σ30, clipped 5–30%): +3.92% per fill out of sample (2025–26, t 6.6), ~3× #389's per-fill
+  edge in the same period, $6.4K/yr. Same family as #389.
+- **#519 resting asks above squeeze spikes:** loses (−1.15%/fill in development) and does not hedge #389.
+- **Next (needs its own pre-registration before use):** a combined #389/#520 rule, and adding #520 to the forward paper test that
+  starts 2026-12-01.

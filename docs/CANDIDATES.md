@@ -250,6 +250,7 @@ risk, 5m signals and 1m fills.
 | 509–511 | Batch N (#389 wick rule on new Hyperliquid universes; family 1): HIP-3 builder perps, HL spot tokens, first 30 days of new perps | `docs/PREREG_BATCH_N_20261127.md` | 0 of 3 pass: all strong in development, faded out of sample (#510 +0.92% t 0.88; #511 +0.75%); #389 itself decaying (2025 0.9%/fill) |
 | 512–514 | Batch O (commodity seasonals + currency peg): corn/soy post-harvest, wheat post-harvest, HKD peg weak side | `docs/PREREG_BATCH_O_20261127.md` | 0 of 3 (grain KILL at Stage 1; HKD +0.21%/trade, capped move, ~$1.8K/yr at $1.5M) |
 | 515–518 | Batch P (government bonds outside the US): JGB auction concession, JGB/Bund/Gilt month-end index extension | `docs/PREREG_BATCH_P_20261127.md` | 0 of 4 (JGB concession −0.25 bp OOS; extensions flat or negative) |
+| 519–520 | Wick family additions: #519 resting asks above short-squeeze spikes; #520 volatility-scaled wick bids (X = 4σ30, 5–30%) | `docs/PREREG_WICK_FAMILY_20261128.md` | #519 KILL (−1.15%/fill dev). **#520 PASS**: OOS 2025–26 +3.92%/fill (t 6.60, 753 fills), $6.4K/yr (family 1, below $10K; ~3× #389's per-fill edge) |
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.

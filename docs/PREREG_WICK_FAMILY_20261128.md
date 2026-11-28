@@ -29,3 +29,18 @@ Two untested variants could improve it rather than only enlarge it:
 - profit without the best day.
 
 **Script/output:** `scripts/wick_family_20261128.py` → `docs/jx_runs/wick_family_20261128.txt`, re-run identical.
+
+## Results (2026-11-28; `docs/jx_runs/wick_family_20261128.txt`, re-run identical)
+| | Stage 1 2023-06..2024-12 | Stage 2 2025-01..2026-10 | Verdict |
+|---|---|---|---|
+| #389 reference (X 15%) | +4.32%/fill (t 18.4, 1,866 fills), $25.6K/yr | +1.33%/fill (t 5.67, 2,484), $14.4K/yr | (reference) |
+| **#519 asks above squeeze spikes** (X 15%) | −1.15%/fill (t −5.68) | −0.34%/fill | **KILL**: squeezes keep running; no X level works in Stage 1 |
+| **#520 volatility-scaled bids** | +7.64%/fill (t 20.8, 930 fills, 85% win), $15.8K/yr | **+3.92%/fill (t 6.60, 753 fills, 60% win), $6.4K/yr** ($3.8K without the best day) | **PASS** |
+
+- **#520** is a better-quality version of #389 out of sample: about 3× the edge per fill, but fewer fills, so fewer dollars ($6.4K vs
+  $14.4K/yr).
+  - It is family 1 and below $10K/yr, so it does not count as a new family.
+  - It suggests that sizing the bid distance to each coin's volatility holds up better than the fixed 15%.
+  - Combining the two (union, or #520's distances replacing #389's) was not tested and needs its own pre-registration.
+- **#519** offers no hedge: its monthly P&L correlation with #389 is −0.32 (Stage 1) / +0.25 (Stage 2), and adding it worsens the
+  worst month.
