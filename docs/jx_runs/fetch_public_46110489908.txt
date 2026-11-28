@@ -1,0 +1,10 @@
+=== ubatchnf15
+  backpack: markets 98, rows 519882
+  wrote batchnf15_backpack_1h.parquet: 519882 rows
+  extended: markets 411, rows 1558187
+  wrote batchnf15_extended_1h.parquet: 1558187 rows
+  pacifica: markets 79, rows 378122
+  wrote batchnf15_pacifica_1h.parquet: 378122 rows
+  apex: markets 40, rows 259240
+  wrote batchnf15_apex_1h.parquet: 259240 rows
+=== ubatchnf15 done in 6666s  ok 0 fail 0
