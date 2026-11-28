@@ -1,0 +1,8 @@
+#603 events 93 (as registered)
+   cheap leg = thin book (reference = USDC book): n 52, mean +1.79%, median ref-leg volume $7,016,123, median cheap-leg volume $11,067
+   cheap leg = USDC book (reference = thin book): n 41, mean +1.56%, median ref-leg volume $2,016, median cheap-leg volume $4,018,162
+   delayed one hour (both legs traded at t+1): n 56 of 93; as registered +2.01% -> delayed +0.08% (t 0.16)
+      cheap leg thin: n 34, delayed mean +0.27%
+      cheap leg USDC: n 22, delayed mean -0.20%
+   gap at the next hour's closes: median -0.23%; share still <= -1%: 22%
+   by month: 2026-05 n 21 +1.95%; 2026-06 n 19 +1.18%; 2026-07 n 11 +1.63%; 2026-08 n 13 +2.30%; 2026-09 n 7 +1.71%; 2026-10 n 6 +3.28%; 2026-11 n 16 +0.88%

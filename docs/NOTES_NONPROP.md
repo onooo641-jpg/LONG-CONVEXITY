@@ -500,3 +500,7 @@ Jx's free Coinalyze key gave daily OI and liquidations from 2020. The five OI an
 ## 2026-11-28 — Batch NF14 (#589–#597), seven untested thin perp venues: 0 of 7 testable
 - #520 wick bids fail on Bluefin, Apex, Extended, Pacifica, Backpack; strong first months (Apex +16.6%) vanish once a venue matures.
 - #597 (venue discount vs HL) printed PASS but entries were stale no-trade prints (89% flat bars): invalid. Drift/edgeX not reachable.
+
+## 2026-11-28 — Batch NF16 (#603–#609), HL spot duplicate books and new venues: 0 of 5 testable valid
+- #603 (buy the cheap duplicate HL spot book, sell the other) printed PASS (+1.83%, t 5.24) but the gap is gone within an hour (delayed entry +0.08%) and half the reference prints were stale: invalid, and ~$1.8K/yr capacity anyway.
+- #604 stablecoin-book dips: KILL (one collapsed stable, USDUC, −58.8%). GRVT and Hibachi wick bids fail (GRVT Stage 2 −1.43%); Nado/Ethereal not reachable.

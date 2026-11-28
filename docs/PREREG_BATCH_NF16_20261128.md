@@ -73,3 +73,38 @@ for one market dominating. A PASS driven by such bars is recorded as invalid.
 **Multiple testing:** seven tests. Only a pass with Stage 2 t ≥ 2.5 goes to the radar forward log.
 
 **Script/output:** `scripts/batch_nf16_20261128.py` → `docs/jx_runs/batch_nf16_20261128.txt`, re-run identical.
+
+## Data note (2026-11-28, before the analysis was run)
+- **HL spot:** 32 books, 116,745 hours, 2026-05-03..2026-11-28.
+- **GRVT:** 184 perps, from 2024-12; prices plain, volume_q in USDT.
+- **Hibachi:** 15 perps, from 2024-10.
+- **Nado:** gateway and archive answered HTTP 403 to GitHub Actions. **Ethereal:** HTTP 503. Both are **not testable**, as registered.
+- Nothing was changed. One observation, from last closes only and not from returns: the USDUC book (@302) had collapsed to $0.0015.
+  #604 ran as registered, so that depeg counts.
+
+## Result (2026-11-28; `docs/jx_runs/batch_nf16_20261128.txt`, re-run identical): **0 of 5 testable valid**
+
+| # | Idea | Stage 1 | Stage 2 | Verdict |
+|---|---|---|---|---|
+| 603 | HL spot duplicate-book discount | n 51, +1.59% | n 40, **+1.83% (t 5.24)**, $1,815/yr | printed PASS → **invalid** (stale-print check below) |
+| 604 | HL spot stablecoin-book dip | n 41, −0.36% (USDUC −58.8%) | n 37, +1.12%, $275/yr | **KILL (Stage 1)** |
+| 605 | #520 wick bids, GRVT | n 150, +1.56% | n 185, −1.43% | FAIL |
+| 606 | #520, Nado | — | — | not testable (HTTP 403) |
+| 607 | #520, Ethereal | — | — | not testable (HTTP 503) |
+| 608 | #520, Hibachi | n 25, +1.69% | n 16, +0.91% | FAIL |
+| 609 | #536 pooled (GRVT, Hibachi) | n 130, +2.66% | n 21, −4.17% | FAIL |
+
+**#603 stale-print check** (`scripts/batch_nf16_diag_20261128.py` → `docs/jx_runs/batch_nf16_diag_20261128.txt`, re-run identical):
+- **41 of 93 trades:** the cheap leg was the deep USDC book. The "reference" was a thin book with a median $2,016 traded that hour, so
+  its close is a stale last trade, not an executable price.
+- **Entering one hour later** (both legs traded): +2.01% → **+0.08% (t 0.16)**. The gap is gone by the next hour's closes (median
+  −0.23%; 22% still ≤ −1%).
+- So the hourly-close result is not executable. Even if a live bot caught some of these gaps, capacity is about $1.2–1.8K/yr. Not
+  forward-logged.
+
+**Post-hoc sensitivity, not a verdict:** #604 without the collapsed USDUC book would have a Stage 1 mean of about +1.1%. That is still
+only about $275/yr in Stage 2, and the −58.8% trade is exactly the risk the rule carries.
+
+**Lessons:**
+- GRVT repeats NF14: the first months were good and the edge reversed once the venue matured.
+- Hourly closes in thin books are last trades. A cross-book gap must survive a one-hour delay before it counts.

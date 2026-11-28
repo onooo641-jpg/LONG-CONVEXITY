@@ -1,0 +1,48 @@
+HL spot books 32, hours 116,745, 2026-05-03 22:00:00+00:00..2026-11-28 06:00:00+00:00
+
+#603 Duplicate-book discount: cheap book <= 0.99 x reference (same hour), buy cheap / sell reference, 4 hours
+   events 93 on 10 books; median gap at entry -1.33%
+   Stage 1 2026-05-03..2026-08-15: trades 51 | mean net +1.59% (t 4.03, win 82%) | $1,230/yr | sum without 3 best $202
+   Stage 2 2026-08-16..2026-11-25: trades 40 | mean net +1.83% (t 5.24, win 92%) | $1,815/yr | sum without 3 best $335
+   costs x1.5 Stage 2 mean +1.69%
+   by book: @107 n 33 +1.24%; @255 n 29 +1.39%; @207 n 20 +2.17%; @335 n 4 +1.76%; @294 n 2 +4.19%; @182 n 1 +12.36%
+   VERDICT PASS (forward log after the stale-print check)
+
+#604 Stablecoin-book dip: USD stablecoin / USDC close <= 0.997 -> buy, exit at close >= 0.9995 or 168 hours
+   events 78 on 4 books; median hold 26 h; worst -58.77%
+   Stage 1 2026-05-03..2026-08-15: trades 41 | mean net -0.36% (t -0.24, win 93%) | $-204/yr | sum without 3 best $-88
+   Stage 2 2026-08-16..2026-11-25: trades 37 | mean net +1.12% (t 3.44, win 95%) | $275/yr | sum without 3 best $43
+   costs x1.5 Stage 2 mean +1.05%
+   by book: @153 n 41 +0.43%; @230 n 28 +1.29%; @180 n 8 +3.96%; @302 n 1 -58.77%
+   VERDICT KILL (Stage 1)
+
+Venue coverage:
+   grvt      markets  184, rows  56843, 2024-12-06..2026-11-25
+   nado      NO DATA (not testable)
+   ethereal  NO DATA (not testable)
+   hibachi   markets   15, rows   5941, 2024-10-01..2026-11-25
+
+#605 #520 wick bids on grvt
+   Stage 1 2024-12-06..2026-04-30: fills 150 | mean net +1.56% (median -0.64%, t 1.25, win 47%) | $2,031/yr | without best day $1,401/yr | sum without 3 best days $501
+   Stage 2 2026-05-01..2026-11-25: fills 185 | mean net -1.43% (median -0.85%, t -1.31, win 38%) | $-4,871/yr | without best day $-6,989/yr | sum without 3 best days $-5,529
+   costs x1.5 Stage 2 mean -1.47%
+   VERDICT FAIL
+
+#606 #520 wick bids on nado
+   not testable (no candles)
+
+#607 #520 wick bids on ethereal
+   not testable (no candles)
+
+#608 #520 wick bids on hibachi
+   Stage 1 2024-10-01..2026-04-30: fills 25 | mean net +1.69% (median +0.42%, t 1.05, win 52%) | $420/yr | without best day $202/yr | sum without 3 best days $-216
+   Stage 2 2026-05-01..2026-11-25: fills 16 | mean net +0.91% (median +0.81%, t 1.42, win 62%) | $173/yr | without best day $-87/yr | sum without 3 best days $-99
+   costs x1.5 Stage 2 mean +0.88%
+   VERDICT FAIL
+
+#609 #536 rule (first 30 days, X 15%) pooled on the four venues
+   Stage 1: fills 130 | mean net +2.66% (median +1.87%, t 2.09, win 58%) | $1,349/yr | without best day $-59/yr | sum without 3 best days $-885
+   Stage 2: fills 21 | mean net -4.17% (median -0.66%, t -1.09, win 43%) | $-2,283/yr | without best day $-2,653/yr | sum without 3 best days $-1,827
+   per venue (all): grvt n 150 +1.62%; hibachi n 1 +16.04%
+   VERDICT FAIL
+

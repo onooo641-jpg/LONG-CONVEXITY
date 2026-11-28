@@ -14,7 +14,7 @@
 | NF3 (#543–#546) | Binance events shorted on HL | 0/4 |
 | NF4 (#547–#551) | Korean retail flows (Upbit) on HL | 0/4; forward-only #551 |
 | NF17 (#610–#613) | thin-venue dislocations vs HL (listing gap, hourly gap, local pump fade, local funding spike) | registered, funding data requested |
-| NF16 (#603–#609) | HL spot duplicate thin books and stablecoin books; GRVT, Nado, Ethereal, Hibachi | registered, data requested |
+| NF16 (#603–#609) | HL spot duplicate thin books and stablecoin books; GRVT, Nado, Ethereal, Hibachi | done, 0/5 testable valid; #603 PASS invalid (gap closes within the hour) |
 | NF15 (#598–#602) | hourly cascades on Backpack/Extended/Pacifica/Apex; venue-local hedged cascade | registered, data fetching |
 | NF14 (#589–#597) | 7 untested thin perp venues | done, 0/7 testable; #597 printed PASS invalid (stale prints) |
 | NF12–NF13 (#580–#587) | Tokyo price limits; Hong Kong | withdrawn before data (G6: deep, popular markets; Jx) |
