@@ -1,0 +1,8 @@
+#611 events 170 (Stage 2 131), as registered: Stage 2 mean +1.67%
+   one hour later (venue traded at h+1): n 122 of 131; as registered +1.67% -> delayed -0.07% (t -0.57)
+   gap still >= 0.5% the same way at h+1: 42%; median |gap| at h 2.11% -> h+1 0.57%
+   venue USD volume in the entry hour: median $34,350
+      apex: n 48, as registered +1.07%, delayed +0.04%
+      backpack: n 28, as registered +1.61%, delayed -0.02%
+      extended: n 44, as registered +2.38%, delayed -0.24%
+      pacifica: n 2, as registered +1.57%, delayed +0.21%

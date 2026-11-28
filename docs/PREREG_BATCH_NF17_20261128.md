@@ -60,3 +60,23 @@ log.
 - venue failure.
 
 **Script/output:** `scripts/batch_nf17_20261128.py` → `docs/jx_runs/batch_nf17_20261128.txt`, re-run identical.
+
+## Result (2026-11-28; `docs/jx_runs/batch_nf17_20261128.txt`, re-run identical): **0 of 4 valid**
+- **Data:**
+  - Funding: 3,332,485 rows. Backpack, Extended and Pacifica settle hourly, and their base rate is 0.0000125 per hour, the same as HL.
+  - Unit check, BTC median per hour: HL 1.15e-5, Backpack 1.25e-5, Extended 1.30e-5, Pacifica 1.25e-5. No addendum was needed.
+  - HL: 142 coins; a few HTTP 502s.
+
+| # | Idea | Stage 1 | Stage 2 | Verdict |
+|---|---|---|---|---|
+| 610 | new-listing dislocation | no trades | n 1 | FAIL (too few) |
+| 611 | hourly gap convergence | n 39, +2.18% | n 131, **+1.67% (t 12.09)**, $4,619/yr | printed PASS → **invalid** (below) |
+| 612 | venue-local pump fade | n 6, +0.05% | n 9, +0.44% | FAIL (too few) |
+| 613 | venue-local funding spike | n 473, +0.04% | n 323, +0.04% | FAIL (gap received +0.12%; costs eat it) |
+
+**#611 stale-print check** (`scripts/batch_nf17_diag_20261128.py` → `docs/jx_runs/batch_nf17_diag_20261128.txt`, re-run identical):
+- **Entering one hour later** (the venue traded at h+1): +1.67% → **−0.07% (t −0.57)**, n 122 of 131. Every venue is about 0:
+  Apex +0.04%, Backpack −0.02%, Extended −0.24%.
+- **The gap closes within the hour:** median |gap| 2.11% → 0.57%; only 42% are still ≥ 0.5% the same way.
+- **Entry-hour volume:** median $34K, so these are traded bars, but the venue's hourly close is a stale last trade relative to HL's.
+- **Recorded invalid**, the same as NF16 #603 and NF19. These gaps cannot be captured with hourly data.

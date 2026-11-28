@@ -19,7 +19,7 @@
 | NF20 (#623–#626) | Bittensor dTAO subnet staking (protocol emissions pay), TAO hedged on HL | Stage 0 data probe running |
 | NF19 (#619–#622) | thin crypto copies: thin-venue-only coins, hyna vs HL main, HL spot vs perp, GRVT vs HL (one-hour-late entry) | done, 0/4; cross-copy gap family closed |
 | NF18 (#614–#618) | pre-IPO perps across HIP-3 dexes and GRVT | #614 FAIL (gaps persist, −0.34%); #615–#618 withdrawn (stocks too public, Jx) |
-| NF17 (#610–#613) | thin-venue dislocations vs HL (listing gap, hourly gap, local pump fade, local funding spike) | registered, funding data requested |
+| NF17 (#610–#613) | thin-venue dislocations vs HL (listing gap, hourly gap, local pump fade, local funding spike) | done, 0/4 valid (#611 PASS invalid after one-hour delay) |
 | NF16 (#603–#609) | HL spot duplicate thin books and stablecoin books; GRVT, Nado, Ethereal, Hibachi | done, 0/5 testable valid; #603 PASS invalid (gap closes within the hour) |
 | NF15 (#598–#602) | hourly cascades on Backpack/Extended/Pacifica/Apex; venue-local hedged cascade | done, 0/5 (edge gone Aug–Nov on all four; warning for #569) |
 | NF14 (#589–#597) | 7 untested thin perp venues | done, 0/7 testable; #597 printed PASS invalid (stale prints) |

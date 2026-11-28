@@ -1,0 +1,43 @@
+backpack: markets 98, matched to HL 75, kept by unit check 75
+extended: markets 411, matched to HL 132, kept by unit check 121
+pacifica: markets 79, matched to HL 53, kept by unit check 53
+apex: markets 40, matched to HL 38, kept by unit check 38
+
+#610 New-listing dislocation (first 72 hours, |gap| >= 2%), trade toward HL, 4 hours
+   new listings with HL coin: 65
+   Stage 1 2026-04-24..2026-08-15: no trades
+   Stage 2 2026-08-16..2026-11-25: trades 1 | mean net +6.70% (t nan, win 100%) | $50/yr | sum without 3 best $nan
+   costs x1.5 Stage 2 mean +6.63%
+   by venue: pacifica n 1 +6.70%
+   most events: pacifica:USELESS 1
+   VERDICT FAIL
+
+#611 Hourly gap convergence (|gap| >= 1.5%, outside first 72 hours), trade toward HL, 4 hours
+   Stage 1 2026-04-24..2026-08-15: trades 39 | mean net +2.18% (t 6.33, win 92%) | $2,456/yr | sum without 3 best $521
+   Stage 2 2026-08-16..2026-11-25: trades 131 | mean net +1.67% (t 12.09, win 88%) | $4,619/yr | sum without 3 best $1,102
+   costs x1.5 Stage 2 mean +1.60%
+   by venue: apex n 58 +1.16%; backpack n 38 +1.71%; extended n 70 +2.34%; pacifica n 4 +1.93%
+   most events: extended:USELESS-USD 17; apex:PUMPUSDT 13; apex:1000BONKUSDT 10
+   VERDICT PASS (forward log after the stale-print check)
+
+#612 Venue-local pump fade (venue >= +5 sigma, HL < +1.5 sigma), short venue / long HL, 4 hours
+   Stage 1 2026-04-24..2026-08-15: trades 6 | mean net +0.05% (t 0.22, win 17%) | $0/yr | sum without 3 best $-2
+   Stage 2 2026-08-16..2026-11-25: trades 9 | mean net +0.44% (t 1.89, win 78%) | $46/yr | sum without 3 best $1
+   costs x1.5 Stage 2 mean +0.37%
+   by venue: apex n 1 +0.18%; extended n 12 +0.36%; pacifica n 2 -0.13%
+   most events: extended:APE-USD 2; extended:SPX-USD 2; apex:PENDLEUSDT 1
+   VERDICT FAIL
+
+#613 Venue-local funding spike (|venue| >= 100%/yr and gap vs HL >= 100%/yr), receive on venue, hedge HL, 24 hours
+   units check hl: BTC median per hour 1.15e-05
+   units check backpack: BTC median per hour 1.25e-05
+   units check extended: BTC median per hour 1.30e-05
+   units check pacifica: BTC median per hour 1.25e-05
+   events 796; mean funding gap received +0.12%, price legs +0.06%
+   Stage 1 2026-04-24..2026-08-15: trades 473 | mean net +0.04% (t 2.22, win 55%) | $182/yr | sum without 3 best $2
+   Stage 2 2026-08-16..2026-11-25: trades 323 | mean net +0.04% (t 1.23, win 52%) | $165/yr | sum without 3 best $-42
+   costs x1.5 Stage 2 mean -0.03%
+   by venue: backpack n 561 +0.05%; extended n 197 +0.04%; pacifica n 38 -0.14%
+   most events: backpack:KAITO_USDC_PERP 44; backpack:MET_USDC_PERP 40; backpack:JTO_USDC_PERP 38
+   VERDICT FAIL
+

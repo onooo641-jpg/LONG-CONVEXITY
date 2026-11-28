@@ -505,6 +505,10 @@ Jx's free Coinalyze key gave daily OI and liquidations from 2020. The five OI an
 - #569's hourly bounce paid on Backpack/Extended/Apex until mid-August, then ≈ 0 on all four venues in Aug–Nov (Stage 2 −0.53% to +0.01%).
 - Warning for #569's forward test (from 2026-12-01): same mechanism, same window, nothing elsewhere. #602 (venue-local cascade) had 8 events.
 
+## 2026-11-28 — Batch NF17 (#610–#613), thin-venue dislocations vs HL: 0 of 4 valid
+- #611 (trade toward HL when a thin venue sits ≥ 1.5% away) printed PASS (+1.67%, t 12.1) but is gone one hour later (−0.07%): invalid, same as #603/NF19.
+- #613 venue-local funding spikes: the funding gap received (+0.12%/24h) is eaten by costs (+0.04% net, FAIL). #610/#612 too few events.
+
 ## 2026-11-28 — Batch NF16 (#603–#609), HL spot duplicate books and new venues: 0 of 5 testable valid
 - #603 (buy the cheap duplicate HL spot book, sell the other) printed PASS (+1.83%, t 5.24) but the gap is gone within an hour (delayed entry +0.08%) and half the reference prints were stale: invalid, and ~$1.8K/yr capacity anyway.
 - #604 stablecoin-book dips: KILL (one collapsed stable, USDUC, −58.8%). GRVT and Hibachi wick bids fail (GRVT Stage 2 −1.43%); Nado/Ethereal not reachable.
