@@ -277,7 +277,7 @@ risk, 5m signals and 1m fills.
 | 619–622 | Batch NF19 (gaps between thin crypto copies, entered one hour late: thin-venue-only coins, hyna vs HL main, HL spot vs perp, GRVT vs HL) | `docs/PREREG_BATCH_NF19_20261128.md` | 0 of 4: gaps gone after a one-hour delay (#621 +0.05%, #622 −0.18% t −6.58, #620 KILL, #619 too few); cross-copy gap family closed | batch_nf19_20261128.txt |
 | 623–626 | Batch NF20 (Bittensor dTAO subnet staking, TAO-hedged: top-10 emission, new subnets 90 days, top yield decile, largest-pool control) | `docs/PREREG_BATCH_NF20_20261128.md` | Stage 0 data probe running (`ubatchnf20`, archive node) | — |
 | 627–630 | Batch NF21 (signals in thin Bittensor subnet pools, NF20 model: momentum, reversal, TAO-inflow chase, low dilution) | `docs/PREREG_BATCH_NF21_20261128.md` | registered; uses NF20 data | — |
-| 631–634 | Batch NF22 (weekly signals across HL thin spot tokens, long-only, HYPE-hedged: reversal, momentum, volume shock, dormant awakening) | `docs/PREREG_BATCH_NF22_20261128.md` | registered; existing data | — |
+| 631–634 | Batch NF22 (weekly signals across HL thin spot tokens, long-only, HYPE-hedged: reversal, momentum, volume shock, dormant awakening) | `docs/PREREG_BATCH_NF22_20261128.md` | 0 of 4: Stage 2 weekly −2.94% / −3.90% / +1.71% (n 10) / −5.34%; ~30 liquid tokens, they bleed vs HYPE after costs | batch_nf22_20261128.txt |
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.

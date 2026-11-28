@@ -1,0 +1,30 @@
+HL spot USDC tokens 326, days 2024-04-16..2026-11-25; HYPE hedge days 721
+
+#631 Weekly reversal (bottom 10% by 7-day return)
+   Stage 1 2024-12..2025-06: weeks 30 (mean 3.0 tokens) | mean weekly net +1.87% (t 0.39, win 50%) | $-728/yr | sum without 3 best weeks -125.21%
+   Stage 2 2025-07..2026-11: weeks 72 (mean 3.0 tokens) | mean weekly net -2.94% (t -1.39, win 38%) | $-5,077/yr | sum without 3 best weeks -354.52%
+   costs x1.5 Stage 2 mean -3.55%
+   top token by $ profit: WAGMI/USDC 1,282 of -7,558 (nan% of profit)
+   VERDICT FAIL
+
+#632 4-week momentum skipping a week (top 10%)
+   Stage 1 2024-12..2025-06: weeks 30 (mean 3.0 tokens) | mean weekly net -6.40% (t -1.52, win 40%) | $-13,753/yr | sum without 3 best weeks -313.23%
+   Stage 2 2025-07..2026-11: weeks 72 (mean 3.0 tokens) | mean weekly net -3.90% (t -3.03, win 36%) | $-5,694/yr | sum without 3 best weeks -332.57%
+   costs x1.5 Stage 2 mean -4.52%
+   top token by $ profit: SPH/USDC 2,558 of -15,991 (nan% of profit)
+   VERDICT KILL (Stage 1)
+
+#633 Volume shock (7-day volume >= 5x, 7-day return >= 0)
+   Stage 1 2024-12..2025-06: weeks 5 (mean 3.0 tokens) | mean weekly net -29.42% (t -2.84, win 0%) | $-13,908/yr | sum without 3 best weeks -105.12%
+   Stage 2 2025-07..2026-11: weeks 10 (mean 1.4 tokens) | mean weekly net +1.71% (t 0.41, win 30%) | $-478/yr | sum without 3 best weeks -36.92%
+   costs x1.5 Stage 2 mean +1.10%
+   top token by $ profit: LIQD/USDC 571 of -8,749 (nan% of profit)
+   VERDICT FAIL
+
+#634 Dormant awakening (30-day median < $5K, 7-day volume >= $50K)
+   Stage 1 2024-12..2025-06: weeks 23 (mean 8.0 tokens) | mean weekly net +10.76% (t 0.58, win 30%) | $-48,076/yr | sum without 3 best weeks -258.32%
+   Stage 2 2025-07..2026-11: weeks 66 (mean 3.0 tokens) | mean weekly net -5.34% (t -2.78, win 30%) | $-4,727/yr | sum without 3 best weeks -467.03%
+   costs x1.5 Stage 2 mean -5.96%
+   top token by $ profit: VAPOR/USDC 7,152 of -34,567 (nan% of profit)
+   VERDICT FAIL
+

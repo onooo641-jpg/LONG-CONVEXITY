@@ -51,3 +51,17 @@
 **Multiple testing:** four tests. Only a pass with Stage 2 t ≥ 2.5 goes to the radar forward log.
 
 **Script/output:** `scripts/batch_nf22_20261128.py` → `docs/jx_runs/batch_nf22_20261128.txt`, re-run identical.
+
+## Result (2026-11-28; `docs/jx_runs/batch_nf22_20261128.txt`, re-run identical): **0 of 4**
+- **Universe:** 326 USDC-quoted HL spot tokens. Only about 30 trade ≥ $20K/day, so each 10% signal holds the minimum of 3 tokens.
+
+| # | Signal | Stage 1 weekly | Stage 2 weekly | Verdict |
+|---|---|---|---|---|
+| 631 | 7-day reversal | +1.87% (n 30) | −2.94% (n 72) | FAIL |
+| 632 | 4-week momentum | −6.40% | −3.90% (t −3.03) | KILL (Stage 1) |
+| 633 | volume shock | −29.4% (n 5) | +1.71% (n 10) | FAIL (too few weeks) |
+| 634 | dormant awakening | +10.8% (n 23) | −5.34% (t −2.78) | FAIL |
+
+**Reading:**
+- Against HYPE, thin HL spot tokens bleed after a 1.14% round-trip cost. No weekly signal beats that.
+- The awakening Stage 1 figure (+10.8%) is a few pumps; the sum without the 3 best weeks is −258%.

@@ -515,3 +515,6 @@ Jx's free Coinalyze key gave daily OI and liquidations from 2020. The five OI an
 ## 2026-11-28 — Batch NF19 (#619–#622), thin crypto copies entered one hour late: 0 of 4
 - hyna vs main, HL spot vs perp, GRVT vs HL, thin-venue-only coins: after a one-hour delay the gap is ~0 before costs (GRVT −0.18% net, t −6.58).
 - With NF16 #603 and NF18 #614: the cross-copy gap family is closed on hourly data.
+
+## 2026-11-28 — Batch NF22 (#631–#634), weekly signals on HL thin spot tokens: 0 of 4
+- Only ~30 HL spot tokens trade ≥ $20K/day; reversal, momentum, volume shock and dormant awakening all lose vs HYPE after 1.14% round-trip costs (Stage 2 −2.9% to −5.3%/week).
