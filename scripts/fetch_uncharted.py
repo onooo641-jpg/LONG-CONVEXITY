@@ -3425,3 +3425,77 @@ def job_ubatchnf17():
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "batchnf17_probe.json").write_text(json.dumps(probe, indent=1))
     print(f"  probe replies kept: {len(probe)}", flush=True)
+
+
+NF18_ALIAS = {"ANTHROPIC": "ANTHROPIC", "ANTH": "ANTHROPIC", "ANT": "ANTHROPIC", "OPENAI": "OPENAI", "OAI": "OPENAI",
+              "GOLD": "GOLD", "XAU": "GOLD", "XAUT": "GOLD", "SILVER": "SILVER", "XAG": "SILVER", "WTI": "WTI", "CL": "WTI",
+              "OIL": "WTI", "USOIL": "WTI", "BRENTOIL": "BRENT", "BZ": "BRENT", "US500": "SP500", "USA500": "SP500",
+              "USTECH": "NDX", "USA100": "NDX", "SMALL2000": "R2000", "GAS": "NATGAS", "NATGAS": "NATGAS", "PLATINUM": "PLATINUM",
+              "XPT": "PLATINUM", "PALLADIUM": "PALLADIUM", "XPD": "PALLADIUM", "TENCENT": "TENCENT", "TCNT": "TENCENT",
+              "SKHYNIX": "SKHYNIX", "SKHX": "SKHYNIX"}
+
+
+def nf18_key(name):
+    s = str(name).upper().split(":")[-1]
+    s = s[:-len("_USDT_PERP")] if s.endswith("_USDT_PERP") else s
+    return NF18_ALIAS.get(s, s)
+
+
+def job_ubatchnf18():
+    """Batch NF18: hourly candles (last 5,000 hours) for HIP-3 markets whose key appears on >= 2 venues (HIP-3 dexes + GRVT), and GRVT
+    hourly klines for the matching GRVT perps."""
+    now = int(time.time() * 1000)
+    start = now - 5000 * 3600 * 1000
+    main = {u["name"].upper() for u in (get(HL, {"type": "meta"}) or {}).get("universe") or []}
+    dexes = [d.get("name") for d in (get(HL, {"type": "perpDexs"}) or []) if isinstance(d, dict) and d.get("name")]
+    hip = []
+    for dx in dexes:
+        for u in (get(HL, {"type": "meta", "dex": dx}) or {}).get("universe") or []:
+            if not u.get("isDelisted"):
+                hip.append((dx, u["name"]))
+        time.sleep(0.5)
+    st, ins = req("https://market-data.grvt.io/full/v1/all_instruments", {"kind": ["PERPETUAL"], "is_active": True}, 40, {"Accept": "application/json"})
+    grvt = [x["instrument"] for x in ((ins or {}).get("result") or []) if isinstance(x, dict) and x.get("instrument")] if st == 200 else []
+    save("batchnf18_grvt_classes.json", {x["instrument"]: x.get("asset_class") for x in ((ins or {}).get("result") or [])
+                                          if isinstance(x, dict) and x.get("instrument")} if st == 200 else {})
+    save("batchnf18_main_perps.json", sorted(main))
+    venues_by_key = {}
+    for dx, n in hip:
+        venues_by_key.setdefault(nf18_key(n), set()).add(dx)
+    for s in grvt:
+        venues_by_key.setdefault(nf18_key(s), set()).add("grvt")
+    keys = {k for k, v in venues_by_key.items() if len(v) >= 2 and k not in main}
+    print(f"  HIP-3 dexes {len(dexes)}, markets {len(hip)}; GRVT {len(grvt)}; shared non-crypto keys {len(keys)}", flush=True)
+    rows = []
+    for dx, n in hip:
+        if nf18_key(n) not in keys:
+            continue
+        c = get(HL, {"type": "candleSnapshot", "req": {"coin": n, "interval": "1h", "startTime": start, "endTime": now}}) or []
+        rows += [(dx, n, nf18_key(n), int(x["t"]), float(x["o"]), float(x["h"]), float(x["l"]), float(x["c"]), float(x["v"]) * float(x["c"])) for x in c]
+        time.sleep(1.05)
+    cols = ["venue", "market", "key", "t", "o", "h", "l", "c", "v_usd"]
+    save("batchnf18_hip3_1h.parquet", pd.DataFrame(rows, columns=cols))
+    rows = []
+    for s in grvt:
+        if nf18_key(s) not in keys:
+            continue
+        end = now * 1_000_000
+        for _ in range(8):
+            st, d = req("https://market-data.grvt.io/full/v1/kline", {"instrument": s, "interval": "CI_1_H", "type": "TRADE",
+                        "start_time": str(start * 1_000_000), "end_time": str(end), "limit": 1000}, 40, {"Accept": "application/json"})
+            got = []
+            for x in ((d or {}).get("result") or []) if st == 200 else []:
+                try:
+                    got.append(("grvt", s, nf18_key(s), int(int(x["open_time"]) // 1_000_000), float(x["open"]), float(x["high"]),
+                                float(x["low"]), float(x["close"]), float(x.get("volume_q") or 0)))
+                except Exception:  # noqa: BLE001
+                    pass
+            if not got:
+                break
+            rows += got
+            first = min(g[3] for g in got)
+            if first <= start or first * 1_000_000 >= end:
+                break
+            end = first * 1_000_000 - 1
+            time.sleep(0.2)
+    save("batchnf18_grvt_1h.parquet", pd.DataFrame(rows, columns=cols).drop_duplicates(["market", "t"]))

@@ -13,6 +13,7 @@
 | NF2 (#537–#542) | Aster/dYdX listing fade, pump short, crash bounce, dying-listing bleed | 0/4; forward-only #541/#542 |
 | NF3 (#543–#546) | Binance events shorted on HL | 0/4 |
 | NF4 (#547–#551) | Korean retail flows (Upbit) on HL | 0/4; forward-only #551 |
+| NF18 (#614–#618) | same asset on several thin venues (HIP-3 dexes, GRVT): pre-IPO, equity off-hours / cash hours, commodity gaps; weekend fade | registered, data requested |
 | NF17 (#610–#613) | thin-venue dislocations vs HL (listing gap, hourly gap, local pump fade, local funding spike) | registered, funding data requested |
 | NF16 (#603–#609) | HL spot duplicate thin books and stablecoin books; GRVT, Nado, Ethereal, Hibachi | done, 0/5 testable valid; #603 PASS invalid (gap closes within the hour) |
 | NF15 (#598–#602) | hourly cascades on Backpack/Extended/Pacifica/Apex; venue-local hedged cascade | done, 0/5 (edge gone Aug–Nov on all four; warning for #569) |
