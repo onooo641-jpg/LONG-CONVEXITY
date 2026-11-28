@@ -1,0 +1,6 @@
+=== ubatchnf6
+  btcturk TRY pairs on HL: 108
+  indodax IDR pairs on HL: 143
+  btcturk 108 coins 122176 rows, indodax 140 coins 166801 rows
+  wrote batchnf6_local_1d.parquet: 288977 rows
+=== ubatchnf6 done in 338s  ok 0 fail 0
