@@ -1,2 +1,2 @@
-# Batch Z pull (workstream C)
+# Batch Z Lighter re-fetch, raw units (workstream C)
 ubatchz

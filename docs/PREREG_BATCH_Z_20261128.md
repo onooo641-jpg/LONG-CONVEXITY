@@ -35,3 +35,12 @@
 **Data job:** `ubatchz`, Aster `fapi/v1/fundingRate` and Lighter funding history, coins above.
 
 **Script/output:** `scripts/batch_z_20261128.py` → `docs/jx_runs/batch_z_20261128.txt`, re-run identical.
+
+## Addendum 1 (2026-11-28, after the first fetch, before any position or P&L was computed)
+- **Lighter units:** the first fetch stored Lighter rates with a size-dependent heuristic. A unit check (BTC median raw value 0.0012,
+  against Hyperliquid's 1.25e-5 per hour as a fraction) shows the API reports **percent per hour**.
+- Lighter is re-fetched raw (`batchz_lighter_raw.parquet`, with the API's `direction` field), with HTTP 429 backoff. Three coins
+  (ARB, LTC, BNB) were refused on the first run.
+- **Rule for the analysis:** Lighter rate = raw / 100 per hour; the sign follows `direction` (short = shorts pay longs = negative).
+- Aster: per-8-hour fraction (median 0.0001, the usual 0.01%), spread over its interval as registered.
+- Nothing else changes.
