@@ -41,3 +41,14 @@ short) use different triggers.
 **$/yr:** $3,000 per trade.
 
 **Script/output:** `scripts/batch_nf8_20261128.py` → `docs/jx_runs/batch_nf8_20261128.txt`, re-run identical.
+
+## Results (2026-11-28; `docs/jx_runs/batch_nf8_20261128.txt`, re-run identical): 0 of 4
+| # | Verdict | Stage 1 | Stage 2 |
+|---|---|---|---|
+| 564 silent leverage build-up short | KILL | −0.26% (38) | −0.10% (19) |
+| 565 deleveraging complete long | FAIL | +3.39% (62, t 2.01) | +0.51% (27) |
+| 566 HL funding capitulation long | FAIL | +3.51% (30) | +3.39% (11, median −1.2%) |
+| 567 short-squeeze fuel long | KILL | −0.90% (45) | +2.33% (63, t 1.38) |
+
+Binance leverage signals add nothing tradeable on HL. #565 worked before 2025 (+3.4%, t 2.0) and faded after, the same decay as most
+liquidation-reversal rules, except #389's resting-bid version.

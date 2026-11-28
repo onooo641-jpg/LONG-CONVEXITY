@@ -263,6 +263,7 @@ risk, 5m signals and 1m fills.
 | 552–555 | Batch NF5 (Korean flows on HL): interest collapse, dying Bithumb listing, Upbit panic-dump long, Upbit pump-day short | `docs/PREREG_BATCH_NF5_20261128.md` | **#555 PASS (small)**: OOS +4.54%/trade (t 2.49), +4.2 pts over the random-short baseline, ~$3.9K/yr; #552 fails the baseline after 2025; #553/#554 FAIL |
 | 556–559 | Batch NF6 (local-retail frenzies on BtcTurk/Indodax, shorted on HL) | `docs/PREREG_BATCH_NF6_20261128.md` | 0 of 4 (Indodax pump day closest: +6.25% / +2.71%, t 1.27); #555's Korean effect does not generalise |
 | 560–563 | Batch NF7 (Korean retail follow-ups on HL): pump day 7-d hold, post-frenzy dry-up, dump-day continuation, persistent premium | `docs/PREREG_BATCH_NF7_20261128.md` | 0 of 4 (#560 KILL at S1 −6.8%: #555's edge is in the first 3 days) |
+| 564–567 | Batch NF8 (Binance OI/liquidation and HL funding signals traded on HL) | `docs/PREREG_BATCH_NF8_20261128.md` | 0 of 4 (#565 deleveraging-complete long +3.4% before 2025, +0.5% after) |
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.
