@@ -46,3 +46,39 @@ goes to the radar forward log.
 
 **Output note:** the #637–#638 line labelled "costs x1.5" is NF15's printout. In this batch it is the 0.07% stress, because the script
 sets the base cost to 0.
+
+## Addendum 1 (2026-11-28, after the fetch, before any return was computed)
+- **Lighter:** `orderBooks` answers (200; fees listed as 0.0000), but `candlesticks` answers **HTTP 403** to GitHub's US servers on
+  every variant (s/ms, `1d`/`1440`/`1h`/`60`). This may be a regional block. No workaround is used. **#635 and #637 are not testable.**
+- **Paradex:**
+  - Hourly klines work: 66 perps, 2026-03-01..2026-11-25. Daily resolution 1440 is refused (HTTP 400); the API serves up to 60-minute
+    bars.
+  - **Volume unit fix:** the kline volume field is already USD. The job multiplied it by close: BTC came out at $280B/day; as USD it is
+    about $4.6M/day. So v_usd = stored value / close.
+  - **Bar convention:** a bar's open is the previous close; high/low/close come from trades. Bars exist only in hours with trades.
+  - **#636** uses daily bars built from the hourly ones: open = first open, high = max, low = min, close = last, v_usd = sum. Its
+    window is therefore 2026-03..2026-11, so the split is 2026-05-01, as registered for late-starting data.
+- Nothing else changes.
+
+## Result (2026-11-28; `docs/jx_runs/batch_nf23_20261128.txt`, re-run identical): **#636 PASS (small); #638 FAIL; #635/#637 not testable**
+
+| # | Venue / rule | Stage 1 | Stage 2 | Verdict |
+|---|---|---|---|---|
+| 635 | Lighter wick bids | — | — | not testable (HTTP 403) |
+| 636 | Paradex wick bids (daily from hourly) | n 3, +8.87% | n 69, **+5.25% (t 4.87)**, $1,581/yr; stress +5.18% | **PASS** |
+| 637 | Lighter #569 | — | — | not testable (HTTP 403) |
+| 638 | Paradex #569 | n 47, +0.74% (t 2.34) | n 22, −0.20% | FAIL |
+
+**#636 stale-print check** (`scripts/batch_nf23_diag_20261128.py` → `docs/jx_runs/batch_nf23_diag_20261128.txt`, re-run identical):
+- **Not executable at size:** in 61% of fills, the hour that made the low traded less than $1,500 (median $531). Those fills were too
+  thin to fill at the registered size.
+- **Executable at size:** the 27 fills whose low hour traded ≥ $1,500 average **+5.72%**.
+- **Against HL:** fills on days HL also fell ≥ 5% average +3.50% (n 32). Paradex-only wicks average +7.71% (n 23).
+- **Concentration:** TRX has 13 of 69 fills. No market dominates.
+- **Verdict stands:** the PASS is **not** driven by unexecutable prints. Capacity is tiny, though: about $1.6K/yr at the registered
+  size, less after capping each fill at the low hour's volume.
+- **Forward log:** radar **N15** from 2026-12-01 (`scripts/radar_nonprop.py: n15_paradex_wick`). Fills are capped at
+  min($1,500, 1% of day volume, USD volume of the low hour), and the zero-fee and 0.07% stress returns are both logged.
+- **Judged with the other forward tests on 2027-01-26 and 2027-03-31.** It needs positive mean and positive sum without the 3 best
+  fills, on the capped sizes.
+- **Not verified:** whether Paradex charges API orders zero fees.

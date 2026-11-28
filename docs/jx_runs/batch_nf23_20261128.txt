@@ -1,0 +1,20 @@
+#635 #520 wick bids on lighter (zero fees; stress at 0.02% + 0.05%)
+   not testable (no daily candles)
+
+#636 #520 wick bids on paradex (zero fees; stress at 0.02% + 0.05%)
+   markets 66, 2026-03-01..2026-11-25; split 2026-05-01
+   Stage 1 2026-03-01..2026-04-30: fills 3 | mean net +8.87% (median +12.12%, t 1.54, win 67%) | $1,572/yr | without best day $484/yr | sum without 3 best days $nan
+   Stage 2 2026-05-01..2026-11-25: fills 69 | mean net +5.25% (median +5.25%, t 4.87, win 67%) | $1,581/yr | without best day $1,144/yr | sum without 3 best days $447
+   stress (0.02% + 0.05%) Stage 2 mean +5.18%
+   VERDICT PASS (forward log)
+
+#637 #569 hourly cascade reversal on lighter (zero fees; stress at 0.07%)
+   not testable (no hourly candles)
+
+#638 #569 hourly cascade reversal on paradex (zero fees; stress at 0.07%)
+   markets 66, hours 96,648, 2026-03-01 00:00:00+00:00..2026-11-25 23:00:00+00:00
+   Stage 1 2026-03-01..2026-08-15: trades 47 | mean net +0.74% (t 2.34, win 64%) | $572/yr | sum without 3 best $116
+   Stage 2 2026-08-16..2026-11-25: trades 22 | mean net -0.20% (t -0.53, win 55%) | $-145/yr | sum without 3 best $-90
+   costs x1.5 Stage 2 mean -0.27%
+   VERDICT FAIL
+

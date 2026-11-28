@@ -518,3 +518,7 @@ Jx's free Coinalyze key gave daily OI and liquidations from 2020. The five OI an
 
 ## 2026-11-28 — Batch NF22 (#631–#634), weekly signals on HL thin spot tokens: 0 of 4
 - Only ~30 HL spot tokens trade ≥ $20K/day; reversal, momentum, volume shock and dormant awakening all lose vs HYPE after 1.14% round-trip costs (Stage 2 −2.9% to −5.3%/week).
+
+## 2026-11-28 — Batch NF23 (#635–#638), zero-fee venues: #636 Paradex wick bids PASS (small)
+- #520 wick bids on Paradex at zero fees: Stage 2 +5.25%/fill (t 4.87, n 69); 61% of fills were in hours too thin for one $1,500 fill, but the executable subset still averages +5.72% (n 27). ~$1.6K/yr: real but tiny. Forward log radar N15 from 2026-12-01.
+- #569 on Paradex fails (Stage 2 −0.20%). Lighter candles refuse US servers (403): not testable.

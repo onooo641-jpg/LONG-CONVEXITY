@@ -382,6 +382,56 @@ def n14_hourly_cascade(fetch, today, rows, health, out: Path):
                                                       if len(allr) else f"0 trades since {WICK_START}")
 
 
+# ------------------------------------------------------------------ N15: forward paper log for #636 (docs/PREREG_BATCH_NF23_20261128.md)
+PARADEX = "https://api.prod.paradex.trade/v1"
+
+
+def n15_paradex_wick(fetch, today, rows, health, out: Path):
+    """N15: #520 wick-bid paper fills on Paradex perps (daily bars built from hourly klines, volume field = USD), from 2026-12-01.
+    Fill size = min($1,500, 1% of the day's USD volume, USD volume of the hour that made the low) -- the NF23 executable cap."""
+    import json as _j
+    _, t = fetch(f"{PARADEX}/markets")
+    syms = [m["symbol"] for m in (_j.loads(t) if t else {}).get("results", []) if str(m.get("asset_kind")) == "PERP"]
+    day0 = pd.Timestamp(today, tz="UTC").normalize()
+    start = day0 - pd.Timedelta(days=45)
+    recs = []
+    for s in syms:
+        rows_h = []
+        for a, b in ((start, start + pd.Timedelta(days=30)), (start + pd.Timedelta(days=30), day0)):
+            _, kt = fetch(f"{PARADEX}/markets/klines?symbol={s}&resolution=60&start_at={int(a.timestamp() * 1000)}&end_at={int(b.timestamp() * 1000)}", tries=2)
+            rows_h += (_j.loads(kt) if kt else {}).get("results", []) or []
+            time.sleep(0.2)
+        if len(rows_h) < 50:
+            continue
+        h = pd.DataFrame([x[:6] for x in rows_h if isinstance(x, list) and len(x) >= 6], columns=["t", "o", "h", "l", "c", "v"]).astype(float)
+        h["ts"] = pd.to_datetime(h["t"], unit="ms", utc=True)
+        h = h.drop_duplicates("ts").sort_values("ts")
+        h["day"] = h["ts"].dt.normalize()
+        d = h.groupby("day").agg(o=("o", "first"), hh=("h", "max"), l=("l", "min"), c=("c", "last"), v=("v", "sum")).reset_index()
+        low_v = h.loc[h.groupby("day")["l"].idxmin()].set_index("day")["v"]
+        sig30 = d["c"].pct_change().rolling(30, min_periods=20).std().shift()
+        for i in range(1, len(d)):
+            r, p = d.iloc[i], d.iloc[i - 1]
+            if r["day"] >= day0 or str(r["day"].date()) < WICK_START or pd.isna(sig30.iloc[i]):
+                continue
+            lv = p["c"] * (1 - min(max(4 * sig30.iloc[i], 0.05), 0.30))
+            if r["l"] <= lv * (1 - WICK_THROUGH):
+                px = min(lv, r["o"])
+                recs.append({"coin": s, "day": str(r["day"].date()), "fill": px, "close": r["c"], "ret": r["c"] / px - 1,
+                             "ret_stress": r["c"] / px - 1 - 0.0007,
+                             "size": min(1500.0, 0.01 * r["v"], float(low_v.get(r["day"], 0.0)))})
+    f = out / "paradex_wick_paper.parquet"
+    cols = ["coin", "day", "fill", "close", "ret", "ret_stress", "size"]
+    old = pd.read_parquet(f) if f.exists() else pd.DataFrame(columns=cols)
+    new = pd.DataFrame(recs, columns=cols)
+    key = lambda x: x["coin"].astype(str) + "|" + x["day"].astype(str)  # noqa: E731
+    allr = pd.concat([old, new[~key(new).isin(key(old))]], ignore_index=True)
+    allr.to_parquet(f, index=False)
+    health["N15 Paradex wick paper (#636)"] = (f"{len(allr)} fills since {WICK_START}; mean net {allr['ret'].astype(float).mean():.2%}; "
+                                               f"paper P&L ${(allr['size'].astype(float) * allr['ret'].astype(float)).sum():,.0f}"
+                                               if len(allr) else f"0 fills since {WICK_START} ({len(syms)} Paradex perps)")
+
+
 # ------------------------------------------------------------------ N13: forward paper log for #536 (docs/PREREG_BATCH_NF_20261128.md)
 ASTER = "https://fapi.asterdex.com/fapi/v1"
 
@@ -514,6 +564,7 @@ def run(fetch, jget, today, out: Path, root: Path, changes_today):
                      ("N10/N11", lambda: n10_n11_hyperliquid(fetch, today, rows, health, out)),
                      ("N13", lambda: n13_aster_new(fetch, today, rows, health, out)),
                      ("N14", lambda: n14_hourly_cascade(fetch, today, rows, health, out)),
+                     ("N15", lambda: n15_paradex_wick(fetch, today, rows, health, out)),
                      ("N12", lambda: n12_korea(fetch, today, rows, health, out))):
         try:
             fn()

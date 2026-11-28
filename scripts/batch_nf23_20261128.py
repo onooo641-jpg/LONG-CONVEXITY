@@ -17,9 +17,23 @@ PUB = Path(__file__).resolve().parent.parent / "data" / "public"
 VENUES = [("lighter", "#635", "#637"), ("paradex", "#636", "#638")]
 
 
+def hourly_raw(v):
+    p = PUB / f"batchnf23_{v}_1h.parquet"
+    d = pd.read_parquet(p) if p.exists() else pd.DataFrame()
+    if len(d) and v == "paradex":  # addendum 1: kline volume is already USD
+        d = d.assign(v_usd=d["v_usd"] / d["c"])
+    return d
+
+
 def daily(v):
     p = PUB / f"batchnf23_{v}_1d.parquet"
     d = pd.read_parquet(p) if p.exists() else pd.DataFrame()
+    if d.empty and v == "paradex":  # addendum 1: daily bars built from the hourly ones
+        h = hourly_raw(v)
+        if len(h):
+            h = h.sort_values(["coin", "t"]).assign(day=pd.to_datetime(h["t"], unit="ms", utc=True).dt.normalize())
+            d = h.groupby(["coin", "day"]).agg(o=("o", "first"), h=("h", "max"), l=("l", "min"), c=("c", "last"), v_usd=("v_usd", "sum")).reset_index()
+            d["t"] = (d["day"] - pd.Timestamp(0, tz="UTC")) // pd.Timedelta("1ms")
     if d.empty:
         return d
     d["day"] = pd.to_datetime(d["t"], unit="ms", utc=True).dt.normalize()
@@ -50,8 +64,7 @@ def wick_test(num, v, d):
 
 def cascade_test(num, v):
     print(f"{num} #569 hourly cascade reversal on {v} (zero fees; stress at 0.07%)")
-    p = PUB / f"batchnf23_{v}_1h.parquet"
-    raw = pd.read_parquet(p) if p.exists() else pd.DataFrame()
+    raw = hourly_raw(v)
     if raw.empty:
         print("   not testable (no hourly candles)\n")
         return

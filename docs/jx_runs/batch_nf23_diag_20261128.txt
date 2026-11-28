@@ -1,0 +1,5 @@
+#636 Stage 2 fills 69, mean +5.25%
+   USD volume in the hour that made the low: median $531; share < $1,500 (smaller than one fill): 61%
+   fills whose low hour traded >= $1,500: n 27, mean +5.72%
+   matched to HL: 55; HL also fell >= 5% that day: n 32, mean +3.50%; Paradex-only wick: n 23, mean +7.71%
+   most fills: TRX n 13 +7.00%; TAO n 4 +16.89%; CL n 3 +5.94%; NG n 3 +6.49%; MORPHO n 3 +8.33%
