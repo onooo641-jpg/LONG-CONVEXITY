@@ -11,11 +11,11 @@ Baseline date: 2026-11-21
 - pages total: 1867
 - candidates surviving to ranking: 86
 - of which all five filter parts verified: 16
-- near-miss rows total: 14931
+- near-miss rows total: 15009
 
 ## Near-miss by stage/reason (top)
 
-- first_pass / below threshold: 13972
+- first_pass / below threshold: 14050
 - quality / DefiLlama outlier flag: 285
 - filter / F4 price exposure, needs hedge; F5 TVL < $1,000,000: 256
 - filter / F4 price exposure, needs hedge: 169
@@ -57,7 +57,7 @@ Baseline date: 2026-11-21
 | morpho-blue | Base | RE7VENICEUSDC nan reward tokens ['0xacfe6019ed1a7d | 797 | 3,884,152 | 7.5 | fail | fail | True | False | unverified-onchain |
 | bluefin-spot | Sui | USDSUI-USDC 0.01% reward tokens ['0x00000000000000 | 263 | 1,323,131 | 7.3 | pass | pass | True | False | unverified-onchain |
 | curve-llamalend | Ethereum | CRVUSD reusdsfrx collateral reward tokens ['0xD533 | 204 | 1,061,998 | 7.0 | fail | fail | True | True | unverified-onchain |
-| aave | Ethereum | LEND Supply RLUSD to the Aave V4 Sentora Hub | 18,022 | 93,971,011 | 7.0 | unverified | unverified | True | False | unverified-onchain |
+| aave | Ethereum | LEND Supply RLUSD to the Aave V4 Sentora Hub | 18,022 | 93,972,107 | 7.0 | unverified | unverified | True | False | unverified-onchain |
 | curve-dex | Ethereum | DOLA-SWANUSD nan reward tokens ['0xD533a949740bb33 | 523 | 2,773,129 | 6.9 | fail | fail | True | True | unverified-onchain |
 | morpho-blue | Stable | GPYUSDSE nan reward tokens ['0x28f1f38a9f7db1f769a | 15,234 | 84,388,234 | 6.6 | fail | fail | True | False | unverified-onchain |
 
@@ -65,7 +65,7 @@ Baseline date: 2026-11-21
 
 - ember (Sui) USDC Ember Concentrated Liquidity reward tokens ['0x00000000: 15.85%/yr over 90 d, TVL $1,306,433, pool 0a3c5663-73bd-4d8a-bdcc-5e529a8b741d
 - bluefin-spot (Sui) USDSUI-USDC 0.01% reward tokens ['0x000000000000000000000000: 14.56%/yr over 90 d, TVL $1,323,131, pool e3887972-24e6-45a9-8ef5-bcc22b6b5739
-- dolomite (Ethereum) USD1 nan reward tokens ['0xdA5e1988097297dCdc1f90D4dFE7909e8: 7.83%/yr over 90 d, TVL $39,102,210, pool 86e18974-35ca-4948-9c82-694facf9d082
+- dolomite (Ethereum) USD1 nan reward tokens ['0xdA5e1988097297dCdc1f90D4dFE7909e8: 7.82%/yr over 90 d, TVL $39,102,210, pool 86e18974-35ca-4948-9c82-694facf9d082
 
 ## Governance proposals mentioning incentives (last 45d, newest 25)
 
@@ -95,7 +95,7 @@ Baseline date: 2026-11-21
 - 1inch.eth: [closed] [1IP-107] Aqua LP Incentive Program — Season 2 https://snapshot.org/#/1inch.eth/proposal/0x6910f1e7fafaa4f1dd003503fd025752d0de4fbcc9a46c69cad59941bfd35b4d
 - stakedao.eth: [closed] (REPUSH) SDGP-69: Claim Deadline for sdPENDLE and sdBAL Voting-Power Rewards https://snapshot.org/#/stakedao.eth/proposal/0xe84f20a814602ed82a81a7d9365e4765930774595a69fc7d248f971f72b201a4
 
-## Prop-firm rule/price changes today: 443 pages
+## Prop-firm rule/price changes today: 461 pages
 
 - **Funded Futures Family** https://www.fundedfuturesfamily.com/: On TruTik until Monday at 3 PM PT: 60% off S2F, 55% off Prime and Premier+, Fast Pass at half price, and Velocity buy 1, get 1 free. / Prices shown are on TruTik with code FFONE . The sale ends Monday, November 30 at 3 PM PT. / $131.60 $329 one time for $25K
 - **E8 Markets** https://e8markets.com/: $81M+ in payouts processed since 2021, verified independently on PropFirmMatch, and PayoutJunction. Our Discord community of 42,601+ traders
@@ -203,8 +203,17 @@ Baseline date: 2026-11-21
 - **E8 Markets** https://e8markets.com/e8-traders-stories: 11h ago $50,000 Classic Markets +$505 / 12h ago $50,000 Classic Markets +$1,249 / 12h ago $25,000 Classic Markets +$262
 - **Traders Launch** https://traderslaunch.com/payout-rules: Payout Rules | Traders Launch
 - **MyFundedFutures** https://myfundedfutures.com/plans/signature/leaderboard: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
+- **MyFundedFutures** https://myfundedfutures.com/plans/signature: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
+- **MyFundedFutures** https://myfundedfutures.com/plans/rapid-eod: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
+- **MyFundedFutures** https://myfundedfutures.com/plans/pro: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
+- **Blue Guardian** https://www.blueguardian.com/payouts: $873.00 / $873.00 / $873.00
+- **FundedNext Futures** https://fundednext.com/privacy-policy: FundedNext Labs - Limited Slots. Real Experiments. / or get $1,000 extra / $ 306.9 $ 0.0 M+
+- **E8 Markets** https://e8markets.com/e8-traders-stories: 12h ago $10,000 Classic Markets +$200 / 12h ago $25,000 Classic Markets +$130 / 13h ago $25,000 Classic Markets +$100
+- **HyroTrader** https://hyrotrader.com/transparency/: 10 hours ago Solana 34UAZV…wgDyZN $541.86 Solscan / 10 hours ago Solana 3yC6NC…ZUVzXb $398.92 Solscan / 10 hours ago Solana jjd4pH…4kruZ4 $1,603.87 Solscan
+- **Traders Launch** https://traderslaunch.com/results: Results & Payouts | Traders Launch
+- **MyFundedFutures** https://myfundedfutures.com/plans/signature/leaderboard: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
 
-## Page changes today: 462
+## Page changes today: 481
 
 - Funded Futures Family (firm) https://www.fundedfuturesfamily.com/: +82 / -12 lines
 - The5ers (firm) https://the5ers.com/: +1 / -1 lines
@@ -260,12 +269,12 @@ Baseline date: 2026-11-21
 ### Source health
 - N1 stablecoins: 467
 - N2 Hyperliquid perps: 235
-- N3 CoW payouts (21d): 633 transfers, COW price 0.09879911799999999, $743,931 to 52 recipients
+- N3 CoW payouts (21d): 633 transfers, COW price 0.09925065, $747,331 to 52 recipients
 - N5 forums answering: 22/23
 - N4 Cantina item keys: allowedSeverities,cantinaTriaged,company,createdAt,currencyCode,entryFee,id,instructions,joined,kind,kycRequired,name,status,timeframe,totalFindings,totalRewardPot,url
 - N4 statuses: {'cantina:complete': 144, 'sherlock:FINISHED': 30, 'cantina:live': 1, 'cantina:escalations_ended': 1}
 - N4 contests listed: 30 Sherlock, 146 Cantina
-- N7 derivatives venues (CoinGecko): 100; BTC $59898.96
+- N7 derivatives venues (CoinGecko): 100; BTC $59948.661329999995
 - N10 wick paper (#389 S2c): 0 fills since 2026-12-01 (179 live perps checked)
 - N10b wick paper (#520 S2c): 0 fills since 2026-12-01
 - N13 Aster listing paper (#541): 0 trades

@@ -18,9 +18,9 @@ This continues until your trailing drawdown reaches the starting balance of your
 You can check your current maximum drawdown in R | Trader Pro's Trader Dashboard by looking at the Auto Liquidate Threshold Value column. It'll tell you exactly what balance your account is liquidated at.
 Traders who pass the Trader Career Path® or Gauntlet Mini™ challenges and go to a Live account will have to adhere to the trailing drawdown rule as described above. Traders who go to a LiveSim account will have to follow the EOD Drawdown rule, as described here .
 Related Articles
-What is the Maximum Drawdown on The Trader Career Path® and The Gauntlet Mini™ Challenges?
 How Does "End of Day Drawdown" Work?
 What Are the Evaluation Rules?
+What Happens When I Complete My Evaluation?
 Drawdown types
 What is a Fixed Drawdown?
 Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
