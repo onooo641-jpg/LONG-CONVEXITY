@@ -1,0 +1,8 @@
+=== ubatchnf19
+  wrote batchnf19_main_perps.json: 1405 bytes
+  wrote batchnf19_hyna_1h.parquet: 58682 rows
+  wrote batchnf19_hlspot_1h.parquet: 98943 rows
+  wrote batchnf19_grvt_1h.parquet: 338046 rows
+  main perps fetched 72
+  wrote batchnf19_hlmain_1h.parquet: 360000 rows
+=== ubatchnf19 done in 480s  ok 0 fail 0
