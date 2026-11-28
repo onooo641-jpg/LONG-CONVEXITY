@@ -3182,6 +3182,11 @@
 - AUTO: The Red Folder news restrictions in the General FAQ apply to this Challenge and Simulated Funded Account, including pending orders, stop-losses, take-profits and automatic profit-target closures.
 - COUNTRY: Restricted Countries: Belarus, Cuba, Iran, Myanmar, North Korea, Russia, Saint Lucia, Syria, Venezuela, and the Crimea (including Sevastopol), Donetsk, Kherson, Luhansk and Zaporizhzhia regions of Ukraine.
 
+## Maven Trading — https://maventrading.com/challenges/2-step
+- AUTO: After you complete the final phase and satisfy all requirements, your trades will automatically close, and your account will be disabled and placed under review.
+- AUTO: The Red Folder news restrictions in the General FAQ apply to this Challenge and Simulated Funded Account, including pending orders, stop-losses, take-profits and automatic profit-target closures.
+- COUNTRY: Restricted Countries: Belarus, Cuba, Iran, Myanmar, North Korea, Russia, Saint Lucia, Syria, Venezuela, and the Crimea (including Sevastopol), Donetsk, Kherson, Luhansk and Zaporizhzhia regions of Ukraine.
+
 ## Maven Trading — https://maventrading.com/challenges/instant
 - COUNTRY: Restricted Countries: Belarus, Cuba, Iran, Myanmar, North Korea, Russia, Saint Lucia, Syria, Venezuela, and the Crimea (including Sevastopol), Donetsk, Kherson, Luhansk and Zaporizhzhia regions of Ukraine.
 
@@ -4996,6 +5001,7 @@
 - AUTO: use any robot, spider, scraper or other automatic device, manual process or application or data mining, scraping or extraction tool to access, harvest, monitor, copy or use the Site without the express written permission of Tradeify;
 
 ## Traders Launch — https://traderslaunch.com/
+- AUTO: Email Address Notify Me You also agree to receive Traders Launch marketing emails, including drop alerts.
 - AUTO: Buffer account opens automatically.
 - AUTO: When You Pass Buffer account opens automatically
 - AUTO: If you haven't passed by day 60 but you're above 50% of your profit target, you get a free 30-day extension automatically, at no extra cost.
