@@ -1,0 +1,28 @@
+=== ubatchz
+  aster BTC: 3186 points
+  aster ETH: 3186 points
+  aster SOL: 3186 points
+  aster XRP: 3186 points
+  aster DOGE: 3186 points
+  aster AVAX: 3186 points
+  aster LINK: 3186 points
+  aster SUI: 3186 points
+  aster ARB: 3186 points
+  aster OP: 3186 points
+  aster LTC: 3186 points
+  aster BNB: 3186 points
+  lighter BTC: 15634 points
+  lighter ETH: 15634 points
+  lighter SOL: 15634 points
+  lighter XRP: 15634 points
+  lighter DOGE: 15634 points
+  lighter AVAX: 15634 points
+  lighter LINK: 15634 points
+  lighter SUI: 15285 points
+  lighter ARB: 11027 points
+  lighter OP: 11001 points
+  lighter LTC: 13948 points
+  lighter BNB: 14711 points
+  wrote batchz_lighter_raw.parquet: 175410 rows
+  wrote batchz_funding.parquet: 38232 rows
+=== ubatchz done in 314s  ok 0 fail 0
