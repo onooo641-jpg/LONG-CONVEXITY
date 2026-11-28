@@ -1,0 +1,20 @@
+#556 btcturk pump day -> short HL 3 d (108 local pairs on HL): 109 trades
+   Stage 1 (< 2025): n 38, mean -4.90% (median +4.90%, t -1.08), sum without the 3 best -2.57
+   Stage 2 (2025-26): n 71, mean +1.40% (median +4.62%, t 0.73), sum without the 3 best +0.25
+   VERDICT KILL (Stage 1) | $/yr at $3,000 per trade: $1,567
+
+#557 indodax pump day -> short HL 3 d (140 local pairs on HL): 190 trades
+   Stage 1 (< 2025): n 61, mean +6.25% (median +10.70%, t 2.29), sum without the 3 best +2.83
+   Stage 2 (2025-26): n 129, mean +2.71% (median +5.31%, t 1.27), sum without the 3 best +2.36
+   VERDICT FAIL | $/yr at $3,000 per trade: $5,531
+
+#558 btcturk frenzy -> short HL 3 d (108 local pairs on HL): 1453 trades
+   Stage 1 (< 2025): n 402, mean -2.27% (median +1.26%, t -2.66), sum without the 3 best -10.12
+   Stage 2 (2025-26): n 1051, mean +0.74% (median +2.27%, t 2.20), sum without the 3 best +6.87
+   VERDICT KILL (Stage 1) | $/yr at $3,000 per trade: $12,229
+
+#559 indodax frenzy -> short HL 3 d (140 local pairs on HL): 2571 trades
+   Stage 1 (< 2025): n 761, mean -0.52% (median +0.71%, t -1.13), sum without the 3 best -4.93
+   Stage 2 (2025-26): n 1810, mean +0.47% (median +1.60%, t 1.58), sum without the 3 best +7.39
+   VERDICT KILL (Stage 1) | $/yr at $3,000 per trade: $13,564
+

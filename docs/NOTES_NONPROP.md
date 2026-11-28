@@ -433,3 +433,6 @@ Jx's free Coinalyze key gave daily OI and liquidations from 2020. The five OI an
 
 ## 2026-11-28 — Batch NF5 (#552–#555): #555 passes (small)
 - Shorting HL perps on Upbit pump days (10x volume, +30%) gave +4.5%/trade out of sample, 4 points above the random alt-short baseline, positive in both periods. About $3.9K/yr; forward via N12b.
+
+## 2026-11-28 — Batch NF6 (#556–#559), Turkish/Indonesian retail frenzies: 0 of 4
+- The Korean pump-day effect (#555) does not carry over to BtcTurk or Indodax.

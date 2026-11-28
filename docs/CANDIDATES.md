@@ -261,6 +261,7 @@ risk, 5m signals and 1m fills.
 | 543–546 | Batch NF3 (Binance events shorted on Hyperliquid): seed-tag listings, earn/loan/margin adds, perp launches, pre-market launches | `docs/PREREG_BATCH_NF3_20261128.md` | 0 of 4 (medians win, squeeze tails decide; #544 OOS +11.1% t 2.14 but KILL at Stage 1) |
 | 547–551 | Batch NF4 (Korean retail flows traded on HL): Upbit frenzy fade, coin kimchi premium long / discount short, dying KRW listing; #551 forward-only | `docs/PREREG_BATCH_NF4_20261128.md` | 0 of 4 by rule (#547 KILL at S1 but OOS +2.28% t 3.17 vs random-short baseline +0.33% → forward-only #551 with a baseline bar) |
 | 552–555 | Batch NF5 (Korean flows on HL): interest collapse, dying Bithumb listing, Upbit panic-dump long, Upbit pump-day short | `docs/PREREG_BATCH_NF5_20261128.md` | **#555 PASS (small)**: OOS +4.54%/trade (t 2.49), +4.2 pts over the random-short baseline, ~$3.9K/yr; #552 fails the baseline after 2025; #553/#554 FAIL |
+| 556–559 | Batch NF6 (local-retail frenzies on BtcTurk/Indodax, shorted on HL) | `docs/PREREG_BATCH_NF6_20261128.md` | 0 of 4 (Indodax pump day closest: +6.25% / +2.71%, t 1.27); #555's Korean effect does not generalise |
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.

@@ -38,3 +38,15 @@ The baseline is a random HL alt short against BTC over 3 days: −0.15% before 2
 **$/yr:** $3,000 per trade.
 
 **Script/output:** `scripts/batch_nf6_20261128.py` → `docs/jx_runs/batch_nf6_20261128.txt`, re-run identical.
+
+## Results (2026-11-28; `docs/jx_runs/batch_nf6_20261128.txt`, re-run identical): 0 of 4
+| # | Verdict | Stage 1 | Stage 2 |
+|---|---|---|---|
+| 556 BtcTurk pump day | KILL | −4.90% (38) | +1.40% (71, t 0.73) |
+| 557 Indodax pump day | FAIL | +6.25% (61, t 2.29) | +2.71% (129, t 1.27): only 2.4 points over the baseline, t < 2 |
+| 558 BtcTurk frenzy | KILL | −2.27% (402) | +0.74% (1,051) |
+| 559 Indodax frenzy | KILL | −0.52% (761) | +0.47% (1,810) |
+
+#555's Korean result does not generalise to Turkey or Indonesia.
+- Indodax pump days come closest: positive in both periods, but too noisy.
+- Korean retail (Upbit) is the strongest local-retail payer, consistent with its size relative to global volume.
