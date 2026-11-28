@@ -105,3 +105,14 @@
   unchanged.
 - The fetch job runs as committed. The script reports #614 only.
 - The crypto-native replacements are in `docs/PREREG_BATCH_NF19_20261128.md`.
+
+## Result (2026-11-28; `docs/jx_runs/batch_nf18_20261128.txt`, re-run identical): #614 **FAIL**
+- **Data:**
+  - HIP-3: 10 dexes, 178 markets.
+  - GRVT: 184 perps.
+  - 81 shared non-crypto keys: equity 71, commodity/index 8, pre-IPO 2. SPACEX had no second market that passed the unit check.
+- **#614:** 117 events on 3 pairs, all from 2026-08 on; Stage 1 had no trades.
+  - Stage 2: n 113, **−0.34% (t −4.89)**, win 28%; OPENAI −0.43%, ANTHROPIC −0.27%.
+  - Median gap at the signal: −5.38%.
+- **Reading:** the copies sit about 5% apart and stay apart. Gaps do not close within 4–8 hours, so the trade pays two sets of fees for
+  nothing. #615–#618 were withdrawn before data (addendum 1) and were not run.

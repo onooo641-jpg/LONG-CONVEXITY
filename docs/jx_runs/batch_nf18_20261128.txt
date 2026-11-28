@@ -1,0 +1,14 @@
+markets 182 on 4 venues, keys 81, 2026-05-03 23:00:00+00:00..2026-11-28 07:00:00+00:00
+   keys by class: equity 71, comidx 8, preipo 2
+
+#615-#618 withdrawn before data (addendum 1: public underlying, Jx 2026-11-28); not run
+
+#614 Pre-IPO cross-venue gap >= 3%, enter h+1, exit >= h+5
+   events 117 on 3 pairs; median gap at signal -5.38%
+   Stage 1 2026-05-03..2026-08-15: no trades
+   Stage 2 2026-08-16..2026-11-25: trades 113 | mean net -0.34% (t -4.89, win 28%) | $-112/yr | sum without 3 best $-36
+   costs x1.5 Stage 2 mean -0.54%
+   by key: OPENAI n 59 -0.43%; ANTHROPIC n 58 -0.27%
+   smaller-leg USD volume, median: entry $7,642, exit $6,698
+   VERDICT FAIL
+
