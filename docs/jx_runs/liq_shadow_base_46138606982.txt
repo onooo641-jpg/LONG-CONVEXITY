@@ -1,0 +1,8 @@
+base: v2 start, head 63369874
+base: loaded 44248 cached positions
+base: recalibrated 650 cached positions
+base: positions ready: 44248 users, 12878 with debt
+base: reopened 240 recorded unhealthy episodes
+base: head 63371744 cycles 40 debtors 12878 cand 278 last_cycle 10976 ms rpc ok/err 408/1
+base: head 63373292 cycles 81 debtors 12880 cand 278 last_cycle 6802 ms rpc ok/err 741/1
+base: head 63374789 cycles 121 debtors 12879 cand 278 last_cycle 11151 ms rpc ok/err 1077/1
