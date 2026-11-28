@@ -380,3 +380,9 @@ Jx's free Coinalyze key gave daily OI and liquidations from 2020. The five OI an
 - **#519 resting asks above squeeze spikes:** loses (−1.15%/fill in development) and does not hedge #389.
 - **Next (needs its own pre-registration before use):** a combined #389/#520 rule, and adding #520 to the forward paper test that
   starts 2026-12-01.
+
+## 2026-11-28 — Batch WK (refine #520)
+- **#522 PASS:** holding #520's fills to the next day's close gives +3.97%/fill out of sample, $8.3K/yr (above #520's $6.4K).
+- **#525:** the same rule works on Binance (+2.45%/fill out of sample, t 6.5), so the forced-liquidation dip effect is not specific to
+  Hyperliquid.
+- **Failed:** closer bids (k = 2) are too thin; HIP-3 and HL spot fail even with volatility scaling.

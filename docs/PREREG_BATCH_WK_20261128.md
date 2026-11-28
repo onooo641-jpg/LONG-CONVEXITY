@@ -30,3 +30,22 @@ protocol (`docs/REFINEMENT_TRIAGE_20261122.md`):
 **Data (all in the repo):** `uncharted_385_candles`, `fivehigh_hip3_1d`, `fivehigh_hl_spot_1d`, `uncharted_389_binance_ohlc`.
 
 **Script/output:** `scripts/batch_wk_20261128.py` → `docs/jx_runs/batch_wk_20261128.txt`, re-run identical.
+
+## Results (2026-11-28; `docs/jx_runs/batch_wk_20261128.txt`, re-run identical)
+| # | Verdict | Stage 1 | Stage 2 | Note |
+|---|---|---|---|---|
+| 521 distance multiplier | FAIL | k = 2 chosen (highest $/yr, $20.2K) | +0.28%/fill with costs × 1.5 (t 2.54, 6,147 fills), $17.8K/yr | Just under the 0.3% bar. Closer bids mean many more, thinner fills, so the edge per fill is too small to trust |
+| **522 hold one more day** | **PASS** | +8.58%/fill (t 17.4) | **+3.97%/fill (t 5.89, 776 fills), $8.3K/yr** (vs #520's $6.4K) | The rebound continues into the next day: same entries, more profit |
+| 523 #520 on HIP-3 perps | FAIL | +1.28% (t 1.70, 63 fills) | −0.65% | Volatility scaling does not rescue HIP-3 |
+| 524 #520 on HL spot | FAIL | +27% (a few huge fills) | +2.86% (t 1.92, win 24%) | Typical fill still loses |
+| **525 #520 on Binance perps** | **MECHANISM CONFIRMED** | +6.11% (t 40.2) | +2.45% (t 6.47, 3,089 fills) | A second venue shows the same effect out of sample (evidence only; Binance is not usable from Malaysia) |
+
+**Batch WK verdict.**
+- **#522** improves #520: hold to the next day's close, about $8.3K/yr.
+- **#525** shows the effect is not specific to Hyperliquid.
+- #521, #523 and #524 add nothing.
+- #522 joins the forward paper test in the addendum below.
+
+## Addendum 1 (2026-11-28, before 2026-12-01): #522 in the forward paper test
+- Radar N10's #520 log also records `ret522`, the return to the next day's close for the same fills. It is filled in a day later.
+- **#522 S2c PASS (fixed now):** 2026-12-01 → 2027-01-26, ≥ 40 fills with a known `ret522` and mean ≥ 1.0%.

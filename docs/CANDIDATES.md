@@ -251,6 +251,7 @@ risk, 5m signals and 1m fills.
 | 512–514 | Batch O (commodity seasonals + currency peg): corn/soy post-harvest, wheat post-harvest, HKD peg weak side | `docs/PREREG_BATCH_O_20261127.md` | 0 of 3 (grain KILL at Stage 1; HKD +0.21%/trade, capped move, ~$1.8K/yr at $1.5M) |
 | 515–518 | Batch P (government bonds outside the US): JGB auction concession, JGB/Bund/Gilt month-end index extension | `docs/PREREG_BATCH_P_20261127.md` | 0 of 4 (JGB concession −0.25 bp OOS; extensions flat or negative) |
 | 519–520 | Wick family additions: #519 resting asks above short-squeeze spikes; #520 volatility-scaled wick bids (X = 4σ30, 5–30%) | `docs/PREREG_WICK_FAMILY_20261128.md` | #519 KILL (−1.15%/fill dev). **#520 PASS**: OOS 2025–26 +3.92%/fill (t 6.60, 753 fills), $6.4K/yr (family 1, below $10K; ~3× #389's per-fill edge) |
+| 521–525 | Batch WK (refine/stress-test #520): distance multiplier, hold one more day, #520 on HIP-3, on HL spot, on Binance | `docs/PREREG_BATCH_WK_20261128.md` | **#522 PASS** (+3.97%/fill OOS, $8.3K/yr, beats #520); **#525 mechanism confirmed on Binance** (+2.45%/fill OOS, t 6.5); #521 FAIL (+0.28% < 0.3%), #523/#524 FAIL |
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.

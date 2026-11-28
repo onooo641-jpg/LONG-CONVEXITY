@@ -302,8 +302,10 @@ def n10_n11_hyperliquid(fetch, today, rows, health, out: Path):
                 lv2 = p["c"] * (1 - min(max(4 * x520, 0.05), 0.30))
                 if r["l"] <= lv2 * (1 - WICK_THROUGH):
                     px2 = min(lv2, r["o"])
+                    nxt = d["c"].iloc[i + 1] if i + 1 < len(d) and d["day"].iloc[i + 1] < day0 else None  # #522: next day's close
                     recs520.append({"coin": c, "day": str(r["day"].date()), "level": lv2, "fill": px2, "close": r["c"],
-                                    "ret": r["c"] / px2 - 1 - WICK_MAKER - WICK_TAKER, "size": min(WICK_CAP, WICK_VOL * p["v"] * p["c"])})
+                                    "ret": r["c"] / px2 - 1 - WICK_MAKER - WICK_TAKER, "size": min(WICK_CAP, WICK_VOL * p["v"] * p["c"]),
+                                    "ret522": (nxt / px2 - 1 - WICK_MAKER - WICK_TAKER) if nxt is not None else None})
             lvl = p["c"] * (1 - WICK_X)
             if r["l"] > lvl * (1 - WICK_THROUGH):
                 continue
@@ -324,8 +326,15 @@ def n10_n11_hyperliquid(fetch, today, rows, health, out: Path):
     else:
         health["N10 wick paper (#389 S2c)"] = f"0 fills since {WICK_START} ({len(live)} live perps checked)"
     f2 = out / "wick520_paper.parquet"
-    old2 = pd.read_parquet(f2) if f2.exists() else pd.DataFrame(columns=["coin", "day", "level", "fill", "close", "ret", "size"])
-    new2 = pd.DataFrame(recs520, columns=old2.columns)
+    cols2 = ["coin", "day", "level", "fill", "close", "ret", "size", "ret522"]
+    old2 = pd.read_parquet(f2) if f2.exists() else pd.DataFrame(columns=cols2)
+    old2 = old2.reindex(columns=cols2)
+    new2 = pd.DataFrame(recs520, columns=cols2)
+    # a fill's next-day close is known only a day later: refresh ret522 for fills already logged
+    if len(old2) and len(new2):
+        upd = new2.set_index(old2.columns[0:1].tolist() + ["day"])["ret522"]
+        key = old2.set_index(["coin", "day"]).index
+        old2["ret522"] = [upd.get(k, v) if pd.isna(v) else v for k, v in zip(key, old2["ret522"])]
     all2 = pd.concat([old2, new2[~(new2["coin"] + new2["day"]).isin(old2["coin"] + old2["day"])]], ignore_index=True)
     all2.to_parquet(f2, index=False)
     health["N10b wick paper (#520 S2c)"] = (f"{len(all2)} fills since {WICK_START}; mean net {all2['ret'].mean():.2%}" if len(all2)

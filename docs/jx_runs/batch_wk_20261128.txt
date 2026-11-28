@@ -1,0 +1,30 @@
+Base #520 rule: bid at previous close x (1 - k*sigma30), clipped 5%..30%; exit at the close.
+
+#521 Distance multiplier (pick on Stage 1 among k = 2, 3, 5, 6; Stage 2 once with costs x 1.5)
+   k 2 Stage 1: fills 3988 | mean net +1.49% (t 12.87, win 60%) | $20,231/yr | without best day $18,575/yr
+   k 3 Stage 1: fills 1724 | mean net +4.24% (t 18.79, win 72%) | $15,645/yr | without best day $14,242/yr
+   k 5 Stage 1: fills 618 | mean net +10.73% (t 20.39, win 90%) | $17,714/yr | without best day $15,072/yr
+   k 6 Stage 1: fills 456 | mean net +12.90% (t 19.03, win 93%) | $18,125/yr | without best day $15,031/yr
+   chosen on Stage 1: k 2
+   k 2 Stage 2 (costs x 1.5): fills 6147 | mean net +0.28% (t 2.54, win 49%) | $17,833/yr | without best day $15,332/yr
+   VERDICT FAIL (must beat #520's Stage 2 $6,374/yr)
+
+#522 Hold one more day (#520 entries, exit at the next day's close)
+   Stage 1: fills 975 | mean net +8.58% (t 17.35, win 74%) | $16,427/yr | without best day $14,280/yr
+   Stage 2: fills 776 | mean net +3.97% (t 5.89, win 61%) | $8,269/yr | without best day $6,400/yr
+   VERDICT PASS
+
+#523 #520 on HIP-3 builder perps (271 markets)
+   Stage 1: fills 63 | mean net +1.28% (t 1.70, win 60%) | $1,715/yr | without best day $966/yr
+   Stage 2: fills 168 | mean net -0.65% (t -0.78, win 39%) | $-1,923/yr | without best day $-2,491/yr
+   VERDICT FAIL
+
+#524 #520 on Hyperliquid spot tokens (342 markets)
+   Stage 1: fills 2268 | mean net +27.23% (t 4.92, win 41%) | $144,551/yr | without best day $76,591/yr
+   Stage 2: fills 3121 | mean net +2.86% (t 1.92, win 24%) | $16,108/yr | without best day $14,083/yr
+   VERDICT FAIL
+
+#525 #520 on Binance USD-M perps (918 symbols; evidence only, not tradable from Malaysia)
+   Stage 1: fills 2364 | mean net +6.11% (t 40.24, win 84%) | $11,894/yr | without best day $10,791/yr
+   Stage 2: fills 3089 | mean net +2.45% (t 6.47, win 58%) | $7,259/yr | without best day $3,875/yr
+   VERDICT MECHANISM CONFIRMED on Binance
