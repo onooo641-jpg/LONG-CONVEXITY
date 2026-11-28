@@ -3856,3 +3856,98 @@ def job_ubatchnf27():
         rows += [(s, int(t), int(x[0]), float(x[1]), float(x[2]), float(x[3]), float(x[4]), float(x[7])) for x in k]
         time.sleep(0.08)
     save("batchnf27_minutes.parquet", pd.DataFrame(rows, columns=["symbol", "settle_t", "t", "o", "h", "l", "c", "qv"]))
+
+
+def job_ubatchnf29():
+    """Batch NF29: HyperEVM pool swaps (last 5,000 minutes) for pools whose base has an HL market, plus HL 1m candles."""
+    RPC = "https://rpc.hyperliquid.xyz/evm"
+    probe = {}
+    V3 = "0xc42079f94a6350d7e6235f29174924f928cc2ac818eb64fed8004e115fbcca67"
+    SYNC = "0x1c411e9a96e071241c2f21f7726b17ae89e3cab4c78be50e062b03a9fffbbad1"
+
+    def rpc(method, params, key=None):
+        st, d = None, None
+        for k in range(4):
+            st, d = req(RPC, {"jsonrpc": "2.0", "id": 1, "method": method, "params": params}, 60, {"Accept": "application/json"})
+            if st == 200 and isinstance(d, dict) and "result" in d:
+                break
+            time.sleep(2 * (k + 1))
+        if key and key not in probe:
+            probe[key] = {"status": st, "head": json.dumps(d)[:800] if d is not None and not isinstance(d, str) else str(d)[:800]}
+        return d.get("result") if isinstance(d, dict) else None
+
+    meta = (get(HL, {"type": "meta"}) or {}).get("universe") or []
+    hl = {u["name"].upper() for u in meta if not u.get("isDelisted")}
+    alias = {"WHYPE": "HYPE", "UBTC": "BTC", "UETH": "ETH", "USOL": "SOL", "UFART": "FARTCOIN", "UPUMP": "PUMP", "UXPL": "XPL"}
+    stables = {"USDT0", "USDC", "USDE", "USDH", "USD₮0", "FEUSD", "USDHL"}
+    pools = []
+    for page in range(1, 6):
+        d = get(f"{GT}/networks/hyperevm/pools?page={page}&include=base_token,quote_token,dex", tries=3, headers=GT_H) or {}
+        if page == 1:
+            probe["gt_pools"] = json.dumps(d)[:800]
+        inc = {x["id"]: x.get("attributes", {}) for x in d.get("included") or []}
+        for p in d.get("data") or []:
+            a, r = p.get("attributes", {}), p.get("relationships", {})
+            bt = inc.get(((r.get("base_token") or {}).get("data") or {}).get("id"), {})
+            qt = inc.get(((r.get("quote_token") or {}).get("data") or {}).get("id"), {})
+            bsym, qsym = str(bt.get("symbol", "")).upper(), str(qt.get("symbol", "")).upper()
+            base = alias.get(bsym, bsym)
+            if base in hl and qsym in stables:
+                pools.append({"address": a.get("address"), "name": a.get("name"), "reserve_usd": a.get("reserve_in_usd"),
+                              "dex": ((r.get("dex") or {}).get("data") or {}).get("id"), "base": base, "base_addr": bt.get("address"),
+                              "quote": qsym, "quote_addr": qt.get("address"), "base_dec": bt.get("decimals"), "quote_dec": qt.get("decimals")})
+        time.sleep(2.5)
+    for p in pools:  # on-chain token0 and fee tier
+        t0 = rpc("eth_call", [{"to": p["address"], "data": "0x0dfe1681"}, "latest"], "token0")
+        fee = rpc("eth_call", [{"to": p["address"], "data": "0xddca3f43"}, "latest"], "fee")
+        p["token0"] = ("0x" + t0[-40:]).lower() if isinstance(t0, str) and len(t0) >= 42 else None
+        p["fee"] = int(fee, 16) / 1e6 if isinstance(fee, str) and fee not in ("0x", "") else None
+    print(f"  pools kept {len(pools)}", flush=True)
+    save("batchnf29_pools.json", pools)
+    head = rpc("eth_blockNumber", [], "blocknumber")
+    head = int(head, 16) if isinstance(head, str) else None
+    if not head or not pools:
+        OUT.mkdir(parents=True, exist_ok=True)
+        (OUT / "batchnf29_probe.json").write_text(json.dumps(probe, indent=1))
+        return
+
+    def ts(b):
+        r = rpc("eth_getBlockByNumber", [hex(b), False], "block")
+        return int(r["timestamp"], 16) if isinstance(r, dict) and r.get("timestamp") else None
+
+    t_head = ts(head)
+    lo_t = t_head - 5000 * 60
+    b, step = head, 5000
+    marks = [(head, t_head)]
+    while marks[-1][1] and marks[-1][1] > lo_t and b > step:
+        b -= step
+        t = ts(b)
+        if t is None:
+            break
+        marks.append((b, t))
+    lo_b = marks[-1][0]
+    save("batchnf29_blocks.json", marks)
+    addrs = [p["address"] for p in pools]
+    rows, chunk, b0 = [], 1000, lo_b
+    while b0 <= head:
+        b1 = min(head, b0 + chunk - 1)
+        logs = rpc("eth_getLogs", [{"fromBlock": hex(b0), "toBlock": hex(b1), "address": addrs, "topics": [[V3, SYNC]]}], "getlogs")
+        if logs is None and chunk > 100:
+            chunk //= 2
+            continue
+        for x in logs or []:
+            rows.append((x["address"].lower(), int(x["blockNumber"], 16), int(x["logIndex"], 16), x["topics"][0],
+                         "|".join(x["topics"][1:]), x["data"], x["transactionHash"]))
+        b0 = b1 + 1
+        time.sleep(0.05)
+    print(f"  blocks {lo_b}..{head}, logs {len(rows)}", flush=True)
+    save("batchnf29_swaps.parquet", pd.DataFrame(rows, columns=["pool", "block", "log_index", "topic0", "topics", "data", "tx"]))
+    now = int(time.time() * 1000)
+    hrows = []
+    for base in sorted({p["base"] for p in pools}):
+        c = get(HL, {"type": "candleSnapshot", "req": {"coin": base, "interval": "1m", "startTime": now - 5000 * 60_000, "endTime": now}}) or []
+        hrows += [(base, int(x["t"]), float(x["c"]), float(x["v"])) for x in c]
+        time.sleep(1.05)
+    save("batchnf29_hl_1m.parquet", pd.DataFrame(hrows, columns=["base", "t", "c", "v"]))
+    OUT.mkdir(parents=True, exist_ok=True)
+    (OUT / "batchnf29_probe.json").write_text(json.dumps(probe, indent=1))
