@@ -1,0 +1,21 @@
+=== ubatchnf20
+  {"step": "install", "rc": 0, "tail": "+ cyscale==0.5.0\n + decorator==5.3.2\n + fastapi==0.165.0\n + frozenlist==1.8.0\n + h11==0.16.0\n + idna==3.20\n + msgpack==1.2.4\n + msgpack-numpy-opentensor==0.5.0\n + multidict==7.2.1\n + netaddr==1.3.0\n + opentelemetry-api==1.45.2\n + packaging==26.4\n + p
+  {"step": "connect", "network": "archive", "head": 9603881}
+  {"step": "first_ok", "day": "2025-03-01", "block": 5029032, "n": 71, "fields": ["alpha_in", "alpha_in_emission", "alpha_out", "alpha_out_emission", "blocks_since_last_step", "emission", "is_dynamic", "k", "last_step", "moving_price", "netuid", "network_registered_at", "owner_coldkey", "owner_hotkey"
+[34m2026-11-28 07:24:17.503[39m | [1m[33mWARNING [0m | Unable to fetch subnet prices for block 5029032: Runtime API Call 'SwapRuntimeApi.current_alpha_price' not found in registry
+[34m2026-11-28 07:24:19.415[39m | [1m[33mWARNING [0m | Unable to fetch subnet prices for block 5036232: Runtime API Call 'SwapRuntimeApi.current_alpha_price' not found in registry
+[34m2026-11-28 07:24:22.322[39m | [1m[33mWARNING [0m | Unable to fetch subnet prices for block 5043432: Runtime API Call 'SwapRuntimeApi.current_alpha_price' not found in registry
+[34m2026-11-28 07:24:23.959[39m | [1m[33mWARNING [0m | Unable to fetch subnet prices for block 5050632: Runtime API Call 'SwapRuntimeApi.current_alpha_price' not found in registry
+[34m2026-11-28 07:24:26.053[39m | [1m[33mWARNING [0m | Unable to fetch subnet prices for block 5057832: Runtime API Call 'SwapRuntimeApi.current_alpha_price' not found in registry
+[34m2026-11-28 07:24:28.954[39m | [1m[33mWARNING [0m | Unable to fetch subnet prices for block 5065032: Runtime API Call 'SwapRuntimeApi.current_alpha_price' not found in registry
+  {"step": "all_subnets", "day": "2025-03-07", "block": 5072232, "error": "SubstrateRequestException('Historical work rate limit exceeded')"}
+  {"step": "all_subnets", "day": "2025-03-08", "block": 5079432, "error": "SubstrateRequestException('Historical work rate limit exceeded')"}
+  {"step": "all_subnets", "day": "2025-03-09", "block": 5086632, "error": "SubstrateRequestException('Historical work rate limit exceeded')"}
+  {"step": "all_subnets", "day": "2025-03-10", "block": 5093832, "error": "SubstrateRequestException('Historical work rate limit exceeded')"}
+  {"step": "all_subnets", "day": "2025-03-11", "block": 5101032, "error": "SubstrateRequestException('Historical work rate limit exceeded')"}
+[34m2026-11-28 07:30:55.602[39m | [1m[33mWARNING [0m | Unable to fetch subnet prices for block 8666353: Historical work rate limit exceeded
+[34m2026-11-28 07:32:36.893[39m | [1m[33mWARNING [0m | Unable to fetch subnet prices for block 9328187: Historical work rate limit exceeded
+  wrote batchnf20_subnets_1d.parquet: 1333 rows
+  {"step": "summary", "rows": 2752, "fails": 611}
+  wrote batchnf20_subnets_1d.parquet: 2752 rows
+=== ubatchnf20 done in 595s  ok 0 fail 0
