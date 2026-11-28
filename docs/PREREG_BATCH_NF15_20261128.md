@@ -49,3 +49,20 @@
 **Multiple testing:** five tests of one family. Only a pass with Stage 2 t ≥ 2.5 goes to the radar forward log.
 
 **Script/output:** `scripts/batch_nf15_20261128.py` → `docs/jx_runs/batch_nf15_20261128.txt`, re-run identical.
+
+## Result (2026-11-28; `docs/jx_runs/batch_nf15_20261128.txt`, re-run identical): **0 of 5**
+- **Data:** Backpack 98 perps (519,882 hours), Extended 411 (1,558,187), Pacifica 79 (378,122), Apex 40 (259,240); 2026-03..2026-11-25.
+  BTC prices agree across venues ($60,352–60,497 last close).
+
+| # | Venue | Stage 1 | Stage 2 | Verdict |
+|---|---|---|---|---|
+| 598 | Backpack | n 194, +1.62% (t 2.35) | n 306, −0.02% | FAIL |
+| 599 | Extended | n 505, +0.52% (t 2.73) | n 398, +0.01% | FAIL |
+| 600 | Pacifica | n 150, +0.04% | n 125, −0.53% (t −2.38) | FAIL |
+| 601 | Apex (40 largest) | n 163, +0.88% (t 3.90) | n 114, −0.10% | FAIL |
+| 602 | Venue-local hedged cascade | n 3 | n 5, −0.41% | FAIL (8 events, all Extended: cascades hit HL in the same hour) |
+
+**Reading:**
+- The hourly cascade bounce paid on three thin venues through mid-August, then went to zero on all four in Aug–Nov 2026.
+- **Warning for #569** (forward test from 2026-12-01): its Stage 2 on HL passed, but the same mechanism found nothing on four other
+  venues in the same window. The forward test stays as planned. If its first month is ≤ 0, that strengthens the case to drop it.

@@ -1,0 +1,35 @@
+#598 #569 hourly cascade reversal on backpack
+   markets 98, hours 519,882, 2026-03-01 00:00:00+00:00..2026-11-25 23:00:00+00:00
+   Stage 1 2026-03-01..2026-08-15: trades 194 | mean net +1.62% (t 2.35, win 72%) | $6,356/yr | sum without 3 best $845
+   Stage 2 2026-08-16..2026-11-25: trades 306 | mean net -0.02% (t -0.11, win 50%) | $-2,005/yr | sum without 3 best $-1,045
+   costs x1.5 Stage 2 mean -0.06%
+   VERDICT FAIL
+
+#599 #569 hourly cascade reversal on extended
+   markets 411, hours 1,558,172, 2026-02-07 08:00:00+00:00..2026-11-25 23:00:00+00:00
+   Stage 1 2026-02-07..2026-08-15: trades 505 | mean net +0.52% (t 2.73, win 58%) | $5,341/yr | sum without 3 best $1,427
+   Stage 2 2026-08-16..2026-11-25: trades 398 | mean net +0.01% (t 0.04, win 47%) | $-5,271/yr | sum without 3 best $-1,933
+   costs x1.5 Stage 2 mean -0.03%
+   VERDICT FAIL
+
+#600 #569 hourly cascade reversal on pacifica
+   markets 79, hours 378,122, 2026-03-01 00:00:00+00:00..2026-11-26 00:00:00+00:00
+   Stage 1 2026-03-01..2026-08-15: trades 150 | mean net +0.04% (t 0.10, win 57%) | $654/yr | sum without 3 best $-135
+   Stage 2 2026-08-16..2026-11-25: trades 125 | mean net -0.53% (t -2.38, win 42%) | $-2,613/yr | sum without 3 best $-901
+   costs x1.5 Stage 2 mean -0.57%
+   VERDICT FAIL
+
+#601 #569 hourly cascade reversal on apex
+   markets 40, hours 259,240, 2026-03-01 00:00:00+00:00..2026-11-26 00:00:00+00:00
+   Stage 1 2026-03-01..2026-08-15: trades 163 | mean net +0.88% (t 3.90, win 67%) | $4,340/yr | sum without 3 best $1,672
+   Stage 2 2026-08-16..2026-11-25: trades 114 | mean net -0.10% (t -0.42, win 56%) | $-1,000/yr | sum without 3 best $-437
+   costs x1.5 Stage 2 mean -0.13%
+   VERDICT FAIL
+
+#602 Venue-local cascade (venue <= -5 sigma, HL > -1.5 sigma same hour), long venue / short HL, 4 hours
+   events by venue: extended 8
+   Stage 1 2026-04-24..2026-08-15: trades 3 | mean net +1.12% (t 0.87, win 33%) | $13/yr | sum without 3 best $nan
+   Stage 2 2026-08-16..2026-11-25: trades 5 | mean net -0.41% (t -2.45, win 0%) | $-66/yr | sum without 3 best $-12
+   costs x1.5 Stage 2 mean -0.48%
+   VERDICT FAIL
+
