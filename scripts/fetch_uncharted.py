@@ -3951,3 +3951,48 @@ def job_ubatchnf29():
     save("batchnf29_hl_1m.parquet", pd.DataFrame(hrows, columns=["base", "t", "c", "v"]))
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "batchnf29_probe.json").write_text(json.dumps(probe, indent=1))
+
+
+def job_ubatchnf30():
+    """Batch NF30: Virtuals agent list (all statuses) and GeckoTerminal daily OHLCV for each agent's LP pool on Base."""
+    probe, agents = {}, []
+    bases = ["https://api.virtuals.io/api/virtuals", "https://api2.virtuals.io/api/virtuals"]
+    good = None
+    for b in bases:
+        st, d = req(f"{b}?pagination[page]=1&pagination[pageSize]=100&sort[0]=createdAt:asc", None, 60, {"Accept": "application/json"})
+        probe[b] = {"status": st, "head": json.dumps(d)[:1500] if isinstance(d, (dict, list)) else str(d)[:300]}
+        if st == 200 and isinstance(d, dict) and d.get("data"):
+            good = b
+            break
+    if good:
+        for page in range(1, 400):
+            st, d = req(f"{good}?pagination[page]={page}&pagination[pageSize]=100&sort[0]=createdAt:asc", None, 60, {"Accept": "application/json"})
+            items = (d or {}).get("data") or [] if isinstance(d, dict) else []
+            if not items:
+                break
+            for x in items:
+                a = x.get("attributes", x) if isinstance(x, dict) else {}
+                agents.append({"id": x.get("id"), "name": a.get("name"), "symbol": a.get("symbol"), "status": a.get("status"),
+                               "token": a.get("tokenAddress"), "lp": a.get("lpAddress"), "created": a.get("createdAt"),
+                               "chain": a.get("chain")})
+            time.sleep(0.4)
+    print(f"  Virtuals agents {len(agents)} (API {good})", flush=True)
+    save("batchnf30_agents.json", agents)
+    rows = []
+    lps = [a for a in agents if a.get("lp") and str(a.get("chain") or "BASE").upper() == "BASE"]
+    t_end = time.time() + 150 * 60
+    for i, a in enumerate(lps):
+        if time.time() > t_end:
+            print(f"  time budget reached at {i} of {len(lps)} pools", flush=True)
+            break
+        d = get(f"{GT}/networks/base/pools/{a['lp']}/ohlcv/day?limit=1000&currency=token", tries=2, pause=5, headers=GT_H) or {}
+        if i == 0:
+            probe["gt_ohlcv"] = json.dumps(d)[:800]
+        lst = (((d.get("data") or {}).get("attributes") or {}).get("ohlcv_list")) or [] if isinstance(d, dict) else []
+        meta = (d.get("meta") or {}) if isinstance(d, dict) else {}
+        quote = ((meta.get("quote") or {}).get("symbol")) if isinstance(meta, dict) else None
+        rows += [(a["lp"], a.get("symbol"), quote, int(x[0]), float(x[1]), float(x[2]), float(x[3]), float(x[4]), float(x[5])) for x in lst]
+        time.sleep(2.1)
+    save("batchnf30_ohlcv.parquet", pd.DataFrame(rows, columns=["lp", "symbol", "quote", "t", "o", "h", "l", "c", "v_usd"]))
+    OUT.mkdir(parents=True, exist_ok=True)
+    (OUT / "batchnf30_probe.json").write_text(json.dumps(probe, indent=1))
