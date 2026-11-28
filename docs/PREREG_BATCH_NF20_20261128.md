@@ -59,3 +59,18 @@
 **Multiple testing:** four tests. Only a pass with Stage 2 t ≥ 2.5 goes to the radar forward log.
 
 **Script/output:** `scripts/batch_nf20_20261128.py` → `docs/jx_runs/batch_nf20_20261128.txt`, re-run identical.
+
+## Addendum 1 (2026-11-28, after the first probe, before any return was computed)
+- **Probe result:**
+  - The archive node decodes full subnet state: price, tao_in, alpha_in, alpha_out, alpha_out_emission, registration block and others.
+  - It then answered "Historical work rate limit exceeded" on 611 of 635 daily queries; 24 days came back.
+- **Mechanical changes, no rule changes:**
+  1. **Weekly snapshots** (every 7 days from 2025-03-01) instead of daily.
+  2. Back-off and retry on the rate limit, plus a pause between queries.
+  3. Re-runs keep rows already fetched, so the job can be repeated until coverage is complete.
+- **How the rules map to weekly data:**
+  - A monthly hold starts at the first snapshot on or after the 1st, and ends at the first snapshot on or after the next month's 1st.
+  - Accrued yield = the mean of the model daily yield over the snapshots in the hold × the hold's days.
+  - #624 starts at the first snapshot ≥ 7 days after registration.
+  - The 24 daily rows already fetched are kept for the sanity check only; the analysis uses the weekly grid.
+- **The Stage 0 bar is unchanged in substance:** ≥ 30 subnets and snapshots spanning ≥ 200 days (≥ 29 weekly snapshots).

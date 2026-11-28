@@ -3643,36 +3643,45 @@ def job_ubatchnf20():
     f = lambda x: float(getattr(x, "tao", x)) if x is not None else None  # noqa: E731
     cols = ["day", "block", "netuid", "tao_in", "alpha_in", "alpha_out", "alpha_out_emission", "tao_in_emission", "price",
             "registered_at", "name"]
-    rows, fails, b, t_end = [], 0, None, time.time() + 150 * 60
-    for i, day in enumerate(pd.date_range("2025-03-01", "2026-11-25", freq="D", tz="UTC")):
+    # addendum 1: weekly snapshots, back-off on the archive node's rate limit, resume from rows already saved
+    old = OUT / "batchnf20_subnets_1d.parquet"
+    prev = pd.read_parquet(old) if old.exists() else pd.DataFrame(columns=cols)
+    have = set(prev["day"].astype(str))
+    rows, fails, t_end = [tuple(r) for r in prev[cols].itertuples(index=False)], 0, time.time() + 150 * 60
+    days = list(pd.date_range("2025-03-01", "2026-11-25", freq="7D", tz="UTC"))
+    for i, day in enumerate(days):
+        if str(day.date()) in have:
+            continue
         if time.time() > t_end:
             note(step="time_budget_reached", day=str(day.date()))
             break
         ts = int(day.timestamp())
-        b = block_at(ts) if b is None else b + 7200
-        t = ts_of(b)
-        if t is not None and abs(t - ts) > 300:
-            b -= (t - ts) // 12
-        try:
-            subs = st.all_subnets(block=b) or []
-        except Exception as e:  # noqa: BLE001
-            fails += 1
-            if fails <= 5:
-                note(step="all_subnets", day=str(day.date()), block=b, error=repr(e)[:300])
-            if fails >= 40 and not rows:
+        b = head - (t_head - ts) // 12
+        subs, wait = None, 30
+        for k in range(7):
+            try:
+                t = ts_of(b)
+                if t is not None and abs(t - ts) > 300:
+                    b -= (t - ts) // 12
+                subs = st.all_subnets(block=b) or []
                 break
+            except Exception as e:  # noqa: BLE001
+                if k == 0 and fails < 5:
+                    note(step="all_subnets", day=str(day.date()), block=b, error=repr(e)[:200])
+                time.sleep(wait)
+                wait = min(wait * 2, 600)
+        if not subs:
+            fails += 1
             continue
-        if not rows:
-            s0 = subs[1] if len(subs) > 1 else subs[0]
-            note(step="first_ok", day=str(day.date()), block=b, n=len(subs), fields=sorted(k for k in vars(s0) if not k.startswith("_"))[:60])
         for s in subs:
             g = lambda k: getattr(s, k, None)  # noqa: E731
             rows.append((str(day.date()), b, int(g("netuid")), f(g("tao_in")), f(g("alpha_in")), f(g("alpha_out")),
                          f(g("alpha_out_emission")), f(g("tao_in_emission")), f(g("price")), g("network_registered_at"),
                          str(g("subnet_name") or "")))
-        if i % 60 == 59:
+        if i % 10 == 9:
             save("batchnf20_subnets_1d.parquet", pd.DataFrame(rows, columns=cols))
             done()
+        time.sleep(20)
     note(step="summary", rows=len(rows), fails=fails)
     save("batchnf20_subnets_1d.parquet", pd.DataFrame(rows, columns=cols))
     done()
