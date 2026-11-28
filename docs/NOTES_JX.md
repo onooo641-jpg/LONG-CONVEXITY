@@ -1058,3 +1058,21 @@ $38,034; bar: real ≥ $19,017, dip ≥ −$5,794.
     LucidFlex 25K ($80).
   - Prices are behind logins or on Jx's trackers, so Jx checking promos against this table is the fastest path to another qualifying
     product.
+
+## 2026-11-28 — Desk check: whose strategy, whose account (from captured official pages, `data/public/propverify/`)
+- **Topstep** (help centre, Prohibited Conduct): "Trading on behalf of others — including sharing incentives as part of any business
+  arrangement" is prohibited.
+  - Third-party tools and bots built by others are explicitly allowed ("If you use third-party tools built by others, no coding
+    required"; API access page).
+  - So **running the friend's bot in Jx's own account is allowed. Sharing that account's payouts with the friend as a business
+    arrangement, or the friend operating Jx's account, is not.**
+- **Lucid:** the captured pages contain no clause on third-party strategies or trading for others. They do contain "Hedging live
+  accounts is strictly prohibited ... includes any copytrader issues ... permanent ban". Unverified either way on profit-sharing; ask
+  support before going live.
+- **Others (research pass, third-party or official, see `reports/Grey area edges for small capital.md`):** FTMO, Blueberry, The5ers
+  and HyroTrader forbid trading another person's strategy. DayTraders bans "trading for other people".
+- **Implication for the plan:**
+  - Each account should be the holder's own: Jx's accounts run the bot for Jx alone; the friend's run on the friend's own computer and
+    account (already the standing rule).
+  - **Any profit split between Jx and the friend from one person's account is the risk.** Confirm in writing with each firm's support
+    before go-live.
