@@ -1,0 +1,4 @@
+#649 entry 0h after the signal: Stage 2 n 31, mean +0.43% (t 2.77); funding +0.48%
+#649 entry 1h after the signal: Stage 2 n 27, mean -0.02% (t -0.09); funding +0.39%
+#649 entry 2h after the signal: Stage 2 n 29, mean -0.11% (t -0.29); funding +0.38%
+   share of Stage 1+2 return sum from the top market: 238% (HL:AITO)

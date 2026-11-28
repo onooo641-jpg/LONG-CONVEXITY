@@ -529,3 +529,7 @@ Jx's free Coinalyze key gave daily OI and liquidations from 2020. The five OI an
 
 ## 2026-11-28 — Batch NF24 (#639–#642), zero-fee Paradex reversals: 0 of 4
 - −3σ bounce, +5σ/+3σ fades and 24h loser bounce all fail even at zero fees (three Stage 1 KILLs; #642 Stage 2 −0.05%).
+
+## 2026-11-28 — Batch NF26 (#647–#650), capped / extreme funding received hedged: 0 of 4 robust
+- Extreme funding pays the receiving side ~+0.4–0.5%/24h but the crowd unwind moves price as much; #649 (HL extreme, hedged on a thin venue) printed PASS but is −0.02% one hour later and rests on one market. Not logged.
+- Sybil wallets, self-referral, trial funds and oracle/liquidation pushing were declined (rule violations / manipulation).

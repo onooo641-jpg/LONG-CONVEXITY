@@ -36,3 +36,28 @@
 **Multiple testing:** four tests plus #613. Only a pass with t ≥ 2.5 goes to the radar forward log.
 
 **Script/output:** `scripts/batch_nf26_20261128.py` → `docs/jx_runs/batch_nf26_20261128.txt`, re-run identical.
+
+## Result (2026-11-28; `docs/jx_runs/batch_nf26_20261128.txt`, re-run identical): **0 of 4 robust**
+
+| # | Trigger | Stage 1 | Stage 2 | Verdict |
+|---|---|---|---|---|
+| 647 | venue ≥ 300%/yr | n 59, +0.11% | n 28, +0.04% | FAIL |
+| 648 | venue ≥ 1,000%/yr | n 4 | n 3 | FAIL (too few) |
+| 649 | HL ≥ 300%/yr, hedged on a thin venue | n 21, +0.17% | n 31, **+0.43% (t 2.77)**, $487/yr | printed PASS → **fragile, not forward-logged** |
+| 650 | 6-hour persistent spike | n 72, +0.09% | n 49, +0.16% | FAIL |
+
+**#649 check** (`scripts/batch_nf26_diag_20261128.py` → `docs/jx_runs/batch_nf26_diag_20261128.txt`, re-run identical):
+- **Entering 1 hour after the signal:** Stage 2 −0.02% (t −0.09). **After 2 hours:** −0.11%.
+- Funding received stays about +0.39%, but the price legs turn against the trade as the crowd unwinds.
+- **Concentration:** one market (AITO) supplies 238% of the summed return.
+- So the edge sits in the first hour and in one market. It is too fragile to log, and about $490/yr even as printed.
+
+**Reading:**
+- Funding caps do pay the receiving side (+0.4–0.5% per 24 hours at extremes), but the crowd's unwind moves prices by about as much.
+- Funding received as a hedged carry is no edge on these venues. This matches #613 and #323.
+
+**Not done, on purpose:**
+- Self-referral and sybil wallets are rule violations. Avoiding detection is outside the standing rules.
+- Exchange trial funds are not legally available here.
+- Pushing an oracle or liquidation price is manipulation.
+- Jx asked for these; they were declined, and the legitimate funding-cap version was tested instead.

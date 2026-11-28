@@ -37,7 +37,7 @@ def frames():
     return g, hg, hl_name
 
 
-def trades(g, F, hl_name, lo, thr, side="venue", persist=1):
+def trades(g, F, hl_name, lo, thr, side="venue", persist=1, delay=0):
     rows = []
     for (v, mkt), fv in F.items():
         if v == "hl":
@@ -57,12 +57,12 @@ def trades(g, F, hl_name, lo, thr, side="venue", persist=1):
         cond = ((a.abs() * YR >= thr) & (sgn * (a - b) * YR >= thr)).fillna(False)
         if persist > 1:
             cond = cond.astype(int).groupby((~cond).cumsum()).cumsum() >= persist
-        for ts in full[cond.to_numpy()]:
-            if ts not in gv.index:
+        for ts in full[cond.to_numpy()] + pd.Timedelta(hours=delay):
+            if ts not in gv.index or ts - pd.Timedelta(hours=delay) not in sgn.index:
                 continue
             x = gv.at[ts, "x24_ts"]
             hrs = pd.date_range(ts + M.H, x, freq="h")
-            s = float(sgn[ts])
+            s = float(sgn[ts - pd.Timedelta(hours=delay)])
             fund = s * float((a.reindex(hrs).fillna(0) - b.reindex(hrs).fillna(0)).sum())
             pos = -s  # position on the receiving venue: short if its funding is positive
             leg_v = (gv.at[ts, "x24_c"] / gv.at[ts, "c"] - 1)

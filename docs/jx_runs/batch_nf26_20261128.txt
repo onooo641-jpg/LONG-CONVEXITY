@@ -1,0 +1,36 @@
+#647 Venue funding >= 300%/yr, gap >= 300%/yr: receive on venue, hedge HL, 24h
+   events 87; mean funding gap received +0.14%, price legs +0.09%
+   Stage 1 2026-04-24..2026-08-15: trades 59 | mean net +0.11% (t 0.96, win 58%) | $58/yr | sum without 3 best $-51
+   Stage 2 2026-08-16..2026-11-25: trades 28 | mean net +0.04% (t 0.15, win 64%) | $-154/yr | sum without 3 best $-76
+   costs x1.5 Stage 2 mean -0.03%
+   by venue: backpack n 50 +0.29%; extended n 26 -0.20%; pacifica n 11 -0.13%
+   most events: backpack:SKR_USDC_PERP 10; backpack:KAITO_USDC_PERP 7; backpack:FOGO_USDC_PERP 4
+   VERDICT FAIL
+
+#648 Venue funding >= 1,000%/yr (cap level), gap >= 1,000%/yr
+   events 7; mean funding gap received +0.47%, price legs -0.37%
+   Stage 1 2026-04-24..2026-08-15: trades 4 | mean net -0.34% (t -0.48, win 25%) | $-79/yr | sum without 3 best $-22
+   Stage 2 2026-08-16..2026-11-25: trades 3 | mean net +0.37% (t 0.60, win 33%) | $39/yr | sum without 3 best $nan
+   costs x1.5 Stage 2 mean +0.30%
+   by venue: backpack n 6 -0.02%; pacifica n 1 -0.17%
+   most events: backpack:TRX_USDC_PERP 2; backpack:KAITO_USDC_PERP 1; backpack:SKR_USDC_PERP 1
+   VERDICT FAIL
+
+#649 HL funding >= 300%/yr, gap vs thin venue >= 300%/yr: receive on HL, hedge on venue
+   events 52; mean funding gap received +0.44%, price legs +0.02%
+   Stage 1 2026-04-24..2026-08-15: trades 21 | mean net +0.17% (t 0.55, win 33%) | $232/yr | sum without 3 best $-35
+   Stage 2 2026-08-16..2026-11-25: trades 31 | mean net +0.43% (t 2.77, win 68%) | $487/yr | sum without 3 best $60
+   costs x1.5 Stage 2 mean +0.36%
+   by venue: hl n 52 +0.32%
+   most events: hl:HL:SAGA 6; hl:HL:SAND 5; hl:HL:XMR 5
+   VERDICT PASS (forward log after the stale-print check)
+
+#650 #613 trigger (>= 100%/yr) held >= 6 consecutive hours: enter at the 6th hour
+   events 121; mean funding gap received +0.20%, price legs +0.06%
+   Stage 1 2026-04-24..2026-08-15: trades 72 | mean net +0.09% (t 1.80, win 67%) | $16/yr | sum without 3 best $-5
+   Stage 2 2026-08-16..2026-11-25: trades 49 | mean net +0.16% (t 1.28, win 53%) | $86/yr | sum without 3 best $3
+   costs x1.5 Stage 2 mean +0.09%
+   by venue: backpack n 102 +0.15%; extended n 18 -0.07%; pacifica n 1 -0.02%
+   most events: backpack:KAITO_USDC_PERP 12; backpack:MET_USDC_PERP 9; backpack:SKR_USDC_PERP 9
+   VERDICT FAIL
+
