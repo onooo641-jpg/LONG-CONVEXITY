@@ -1,0 +1,4 @@
+=== ubatchx
+  etf 34 symbols 179485 rows, fx 14 symbols 79357 rows
+  wrote batchx_ohlc_1d.parquet: 258842 rows
+=== ubatchx done in 60s  ok 0 fail 0
