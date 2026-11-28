@@ -2568,3 +2568,19 @@ def job_ubatchp():
         if raw:
             (OUT / name).write_bytes(raw)
         time.sleep(1)
+
+
+def job_ubatchw():
+    """Batch W: Yahoo UGA, USO, UNG daily adjusted (docs/PREREG_BATCH_W_20261128.md)."""
+    px = []
+    for sym in ("UGA", "USO", "UNG"):
+        st, raw = _raw_get(f"https://query1.finance.yahoo.com/v8/finance/chart/{sym}?period1=1136073600&period2=1795651200&interval=1d&events=div,split", timeout=40)
+        try:
+            r = json.loads(raw.decode())["chart"]["result"][0]
+            q = r["indicators"]["quote"][0]
+            adj = (r["indicators"].get("adjclose") or [{}])[0].get("adjclose") or q["close"]
+            px += [(sym, int(t), a) for t, a in zip(r["timestamp"], adj) if a is not None]
+        except Exception as e:  # noqa: BLE001
+            print(f"  yahoo {sym} FAIL HTTP {st} {e}", flush=True)
+        time.sleep(1)
+    save("batchw_etf_1d.parquet", pd.DataFrame(px, columns=["sym", "t", "adj"]))

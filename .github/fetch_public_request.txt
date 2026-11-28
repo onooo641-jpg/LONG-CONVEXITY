@@ -1,2 +1,2 @@
-# Batch P pull (workstream C)
-ubatchp
+# Batch W pull (workstream C)
+ubatchw
