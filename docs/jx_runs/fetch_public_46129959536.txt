@@ -1,0 +1,11 @@
+=== ubatchnf27
+  FAIL UnicodeEncodeError https://fapi.asterdex.com/fapi/v1/fundingRate?symbol=币安人生USDT&startTime=1735689600000&endTime=1795651200000&limit=1000
+  FAIL UnicodeEncodeError https://fapi.asterdex.com/fapi/v1/fundingRate?symbol=我踏马来了USDT&startTime=1735689600000&endTime=1795651200000&limit=1000
+  FAIL UnicodeEncodeError https://fapi.asterdex.com/fapi/v1/fundingRate?symbol=龙虾USDT&startTime=1735689600000&endTime=1795651200000&limit=1000
+  FAIL UnicodeEncodeError https://fapi.asterdex.com/fapi/v1/fundingRate?symbol=牛来USDT&startTime=1735689600000&endTime=1795651200000&limit=1000
+  FAIL UnicodeEncodeError https://fapi.asterdex.com/fapi/v1/fundingRate?symbol=哈基米USDT&startTime=1735689600000&endTime=1795651200000&limit=1000
+  Aster perps 641, funding rows 2219680
+  wrote batchnf27_funding.parquet: 2219680 rows
+  settlements with |rate| >= 0.10%: 25323
+  wrote batchnf27_minutes.parquet: 1834447 rows
+=== ubatchnf27 done in 7920s  ok 0 fail 0
