@@ -35,3 +35,15 @@ This batch keeps only events whose coin already trades on Hyperliquid (usable fr
 **$/yr** = mean × $3,000 × Stage-2 events per year.
 
 **Script/output:** `scripts/batch_nf3_20261128.py` → `docs/jx_runs/batch_nf3_20261128.txt`, re-run identical.
+
+## Results (2026-11-28; `docs/jx_runs/batch_nf3_20261128.txt`, re-run identical): 0 of 4
+| # | Verdict | Stage 1 | Stage 2 |
+|---|---|---|---|
+| 543 seed-tag listing short | KILL | −9.95% (n 19, median +11.4%) | +3.73% (n 15, t 0.38) |
+| 544 earn/loan/margin add short | KILL | −13.05% (n 11, median +10.7%) | +11.14% (n 36, t 2.14, positive without the top 3) |
+| 545 Binance perp launch, coin on HL | FAIL | n 2 | +5.99% (n 9, t 0.31) |
+| 546 Binance pre-market perp launch | FAIL | n 0 | −3.35% (n 15) |
+
+**Pattern:** shorting small coins after Binance events wins typically (medians +9% to +18%), but rare squeezes of +100% or more decide
+the mean. The same tail problem as NF2's pump shorts. No forward re-test is registered: #544's Stage 2 depends on a rule that lost
+before 2025, and unlike Aster there is no venue-regime reason to expect a change.

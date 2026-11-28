@@ -423,3 +423,6 @@ Jx's free Coinalyze key gave daily OI and liquidations from 2020. The five OI an
   - #540, shorting listings whose volume dies by day 7: +7.2%, t 3.70, positive without the best trades.
 - They are re-registered as forward-only tests #541/#542 (radar N13, from 2026-12-01, judged by 2027-03-31).
 - **Failed:** pump-exhaustion shorts and crash-bounce longs; both depend on a few trades.
+
+## 2026-11-28 — Batch NF3 (#543–#546), Binance events shorted on Hyperliquid: 0 of 4
+- Medians win, but squeeze tails decide the mean; G5 was solved, but the tail risk of shorting small coins remains.

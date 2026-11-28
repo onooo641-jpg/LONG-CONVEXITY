@@ -1,0 +1,20 @@
+#543 Seed-tag listing -> short on HL 7 d: 34 events with HL prices
+   Stage 1 (< 2025): n 19, mean excess -9.95% (median +11.41%, t -0.60), sum without the 3 best -3.22
+   Stage 2 (2025-26): n 15, mean excess +3.73% (median +11.87%, t 0.38), sum without the 3 best -0.70
+   VERDICT KILL (Stage 1) | $/yr at $3,000 per event: $885
+
+#544 Earn/loan/margin add -> short on HL 7 d: 47 events with HL prices
+   Stage 1 (< 2025): n 11, mean excess -13.05% (median +10.71%, t -0.48), sum without the 3 best -2.53
+   Stage 2 (2025-26): n 36, mean excess +11.14% (median +18.41%, t 2.14), sum without the 3 best +2.52
+   VERDICT KILL (Stage 1) | $/yr at $3,000 per event: $6,339
+
+#545 Binance perp launch (coin already on HL) -> short on HL 7 d: 11 events with HL prices
+   Stage 1 (< 2025): n 2, mean excess +33.84% (median +33.84%, t 5.77), sum without the 3 best +nan
+   Stage 2 (2025-26): n 9, mean excess +5.99% (median +21.52%, t 0.31), sum without the 3 best -0.80
+   VERDICT FAIL (Stage 1 < 8 events: no kill possible) | $/yr at $3,000 per event: $852
+
+#546 Binance pre-market perp launch -> short on HL 7 d: 15 events with HL prices
+   Stage 1 (< 2025): n 0, mean excess +nan% (median +nan%, t nan), sum without the 3 best +nan
+   Stage 2 (2025-26): n 15, mean excess -3.35% (median +8.98%, t -0.33), sum without the 3 best -1.54
+   VERDICT FAIL (Stage 1 < 8 events: no kill possible) | $/yr at $3,000 per event: $-794
+
