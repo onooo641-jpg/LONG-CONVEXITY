@@ -1,0 +1,27 @@
+#522 reference (vol-scaled bids, exit next day's close)
+   Stage 1: fills 975 | mean net +8.58% (t 17.35, win 74%) | $16,427/yr | worst month $-210
+   Stage 2: fills 776 | mean net +3.97% (t 5.89, win 61%) | $8,269/yr | worst month $-1,884
+
+#526 Hold length (pick h on Stage 1 from 2, 3, 5; Stage 2 once with costs x 1.5)
+   h 2 Stage 1: fills 975 | mean net +10.18% (t 19.33, win 79%) | $18,935/yr | worst month $-829
+   h 3 Stage 1: fills 975 | mean net +11.88% (t 17.74, win 76%) | $20,259/yr | worst month $-649
+   h 5 Stage 1: fills 974 | mean net +11.49% (t 11.66, win 69%) | $19,050/yr | worst month $-2,110
+   chosen h 3
+   h 3 Stage 2 (costs x 1.5): fills 772 | mean net +5.17% (t 6.65, win 67%) | $6,524/yr | worst month $-2,530
+   VERDICT FAIL (must beat #522's $8,269/yr)
+
+#527 Equal-risk sizing (size x clip(0.10 / X, 0.5, 2))
+   Stage 1: fills 975 | mean net +8.58% (t 17.35, win 74%) | $13,553/yr | worst month $-488
+   Stage 2: fills 776 | mean net +3.97% (t 5.89, win 61%) | $6,625/yr | worst month $-1,672
+   VERDICT FAIL
+
+#528 Skip systemic crash days (BTC low >= 5% below its previous close)
+   BTC crash days in the data: 76
+   Stage 1: fills 332 | mean net +7.01% (t 6.99, win 65%) | $7,698/yr | worst month $-875
+   Stage 2: fills 288 | mean net +4.46% (t 4.05, win 68%) | $6,172/yr | worst month $-918
+   VERDICT FAIL (needs $/yr >= $8,269 and worst month >= $-1,884)
+
+#529 #389 + #522 on one pot (a coin-day filled by both counts once, as #522)
+   Stage 1: fills 2047 | mean net +7.02% (t 24.79, win 75%) | $33,587/yr | worst month $-243
+   Stage 2: fills 2642 | mean net +2.66% (t 10.58, win 57%) | $26,680/yr | worst month $-417
+   VERDICT PASS (must beat $14,372/yr)

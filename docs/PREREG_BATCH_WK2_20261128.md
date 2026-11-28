@@ -20,3 +20,26 @@ forward paper test (2026-12-01 → 2027-01-26).
 **Script/output:** `scripts/batch_wk2_20261128.py` → `docs/jx_runs/batch_wk2_20261128.txt`, re-run identical.
 
 After this batch, no more wick refinements until the forward test reports.
+
+## Results (2026-11-28; `docs/jx_runs/batch_wk2_20261128.txt`, re-run identical)
+| # | Verdict | Stage 2 (2025-01..2026-10) | Note |
+|---|---|---|---|
+| 526 hold length (h 3 chosen) | FAIL | +5.17%/fill with costs × 1.5, $6,524/yr | More per fill, fewer dollars than #522 |
+| 527 equal-risk sizing | FAIL | $6,625/yr | Shifting size to calmer coins costs money |
+| 528 skip BTC crash days | FAIL | $6,172/yr, worst month −$918 | Smaller worst month, but crash days are where much of the profit is |
+| **529 #389 + #522 on one pot** | **PASS** | **+2.66%/fill (t 10.6, 2,642 fills), $26,680/yr, worst month −$417** | Beats #389 ($13.8K) and #522 ($8.3K) alone |
+
+**Why #529 beats the sum (checked by decomposition):**
+- On the 1,480 coin-days where both rules fill, #389's same-day exit tends to lose, while #522's next-day exit wins. Taking those
+  fills as #522 lifts the #389 part from $13.8K to $23.3K/yr.
+- Its worst month (−$417) is better than either rule alone (−$1,455 and −$1,884).
+- The $15,000 pot binds on 35 of 412 fill days.
+- **Caveat:** 2025–26 has now judged many wick variants, so the forward paper test decides.
+
+## Addendum 1 (before 2026-12-01): #529 in the forward paper test
+- #529 is computed from radar N10's two logs:
+  - #522 = the `ret522` column of `wick520_paper.parquet`;
+  - #389 = `wick_paper.parquet`, minus coin-days present in the #520 log.
+- **#529 S2c PASS (fixed now):** 2026-12-01 → 2027-01-26, ≥ 60 combined fills and mean ≥ 1.0%.
+
+No more wick refinements until the forward test reports (2027-01-26).

@@ -386,3 +386,11 @@ Jx's free Coinalyze key gave daily OI and liquidations from 2020. The five OI an
 - **#525:** the same rule works on Binance (+2.45%/fill out of sample, t 6.5), so the forced-liquidation dip effect is not specific to
   Hyperliquid.
 - **Failed:** closer bids (k = 2) are too thin; HIP-3 and HL spot fail even with volatility scaling.
+
+## 2026-11-28 — Batch WK2: #529 (#389 + #522 on one pot) is the best non-prop result, $26.7K/yr out of sample
+- **#529:** on coin-days where both fill, take #522's next-day exit instead of #389's same-day exit. 2025–26: $26,680/yr on a $15K
+  pot, worst month −$417.
+- **Failed:** longer holds, equal-risk sizing and skipping crash days.
+- **Caveat:** 2025–26 has judged many wick variants. The forward paper test (2026-12-01 → 2027-01-26) is the real check, and its bars
+  are fixed in the pre-registrations.
+- No more wick refinements until it reports.
