@@ -410,3 +410,9 @@ Jx's free Coinalyze key gave daily OI and liquidations from 2020. The five OI an
 - #208's funding-gap rule on Aster and Lighter: 14.6% → 4.1%/yr on capital (halves); the gaps closed in 2025–26.
 - **Plan O–Z is finished.** New areas: 0 passes. The wick refinements (#520/#522/#529) are the only progress; #529 is in the forward
   paper test from 2026-12-01.
+
+## 2026-11-28 — Batch NF (#535–#536), niche new markets
+- **#535, new HL spot tokens:** fail; profits are one-off pumps.
+- **#536, wick bids on new Aster/dYdX perps in their first 30 days:** passes the registered bar out of sample (+1.74%/fill, ~$15.4K/yr),
+  but 10 fills (memecoin pumps) make all the profit.
+- #536 is in the forward log (radar N13) from 2026-12-01, with a bar that requires profit without the 3 best fills.

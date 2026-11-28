@@ -1,0 +1,25 @@
+#535 New HL spot tokens, days 1-14 (342 pairs, 2024-04-16..2026-11-25)
+  X 20% (primary)
+   Stage 1 (first traded before 2025-07-01): fills 669 (149 markets) | mean net +4.79% (median -1.84%, t 2.50, win 46%) | $36,328/yr | without best day $29,140/yr
+   Stage 2 (2025-07-01 onward): fills 139 (61 markets) | mean net +32.73% (median +2.39%, t 1.23, win 54%) | $5,267/yr | without best day $710/yr
+   VERDICT FAIL
+  X 10% (context)
+   Stage 1 (first traded before 2025-07-01): fills 1070 (162 markets) | mean net +3.57% (median -2.99%, t 2.29, win 41%) | $52,433/yr | without best day $45,706/yr
+   Stage 2 (2025-07-01 onward): fills 338 (98 markets) | mean net +10.51% (median -0.70%, t 1.08, win 42%) | $1,673/yr | without best day $-2,356/yr
+  X 30% (context)
+   Stage 1 (first traded before 2025-07-01): fills 407 (132 markets) | mean net +9.45% (median -0.52%, t 3.38, win 47%) | $26,253/yr | without best day $23,003/yr
+   Stage 2 (2025-07-01 onward): fills 73 (39 markets) | mean net +66.65% (median -0.11%, t 1.16, win 47%) | $5,155/yr | without best day $-102/yr
+
+#536 New Aster/dYdX perps, days 1-30 (Aster 603 markets from 2022-10-18, dYdX 291 from 2023-11-13)
+  X 15% (primary)
+   Stage 1 (listed before 2025): fills 297 (114 markets) | mean net +15.93% (median -0.07%, t 2.33, win 48%) | $6,035/yr | without best day $4,994/yr
+   Stage 2 (listed 2025 onward): fills 1737 (422 markets) | mean net +1.74% (median -0.60%, t 2.29, win 46%) | $15,375/yr | without best day $10,730/yr
+      Stage 2 aster only: fills 1556 (355 markets) | mean net +1.38% (median -0.74%, t 2.03, win 47%) | $17,055/yr | without best day $11,411/yr
+      Stage 2 dydx only: fills 181 (67 markets) | mean net +4.80% (median -0.07%, t 1.11, win 39%) | $1,388/yr | without best day $311/yr
+   VERDICT PASS
+  X 10% (context)
+   Stage 1 (listed before 2025): fills 555 (148 markets) | mean net +8.13% (median -0.07%, t 2.21, win 44%) | $5,769/yr | without best day $4,779/yr
+   Stage 2 (listed 2025 onward): fills 3332 (539 markets) | mean net +0.53% (median -0.74%, t 1.24, win 44%) | $13,698/yr | without best day $9,830/yr
+  X 20% (context)
+   Stage 1 (listed before 2025): fills 180 (86 markets) | mean net +26.04% (median +0.55%, t 2.33, win 52%) | $5,211/yr | without best day $4,142/yr
+   Stage 2 (listed 2025 onward): fills 962 (311 markets) | mean net +2.11% (median -0.08%, t 1.97, win 49%) | $8,375/yr | without best day $5,741/yr

@@ -341,6 +341,47 @@ def n10_n11_hyperliquid(fetch, today, rows, health, out: Path):
                                            else f"0 fills since {WICK_START}")
 
 
+# ------------------------------------------------------------------ N13: forward paper log for #536 (docs/PREREG_BATCH_NF_20261128.md)
+ASTER = "https://fapi.asterdex.com/fapi/v1"
+
+
+def n13_aster_new(fetch, today, rows, health, out: Path):
+    """N13: #536 paper fills on Aster perps in their first 30 days (bid at previous close x 0.85, exit at the close), from 2026-12-01."""
+    import json as _j
+    _, t = fetch(f"{ASTER}/exchangeInfo")
+    syms = (_j.loads(t) if t else {}).get("symbols", [])
+    day0 = pd.Timestamp(today, tz="UTC").normalize()
+    recs = []
+    for sd in syms:
+        if sd.get("contractType") != "PERPETUAL" or not sd.get("onboardDate"):
+            continue
+        first = pd.Timestamp(int(sd["onboardDate"]), unit="ms", tz="UTC").normalize()
+        if first < day0 - pd.Timedelta(days=31):
+            continue
+        _, kt = fetch(f"{ASTER}/klines?symbol={sd['symbol']}&interval=1d&limit=40", tries=2)
+        k = _j.loads(kt) if kt else []
+        time.sleep(0.25)
+        for i in range(1, len(k)):
+            day = pd.Timestamp(int(k[i][0]), unit="ms", tz="UTC").normalize()
+            if day >= day0 or str(day.date()) < WICK_START or day >= first + pd.Timedelta(days=30):
+                continue
+            prev_c, o, low, c, qv = float(k[i - 1][4]), float(k[i][1]), float(k[i][3]), float(k[i][4]), float(k[i][7])
+            lvl = prev_c * 0.85
+            if low > lvl * (1 - WICK_THROUGH):
+                continue
+            px = min(lvl, o)
+            recs.append({"coin": sd["symbol"], "day": str(day.date()), "fill": px, "close": c,
+                         "ret": c / px - 1 - 0.0002 - 0.0005, "size": min(WICK_CAP, WICK_VOL * qv)})
+    f = out / "aster_new_paper.parquet"
+    cols = ["coin", "day", "fill", "close", "ret", "size"]
+    old = pd.read_parquet(f) if f.exists() else pd.DataFrame(columns=cols)
+    new = pd.DataFrame(recs, columns=cols)
+    allr = pd.concat([old, new[~(new["coin"] + new["day"]).isin(old["coin"] + old["day"])]], ignore_index=True)
+    allr.to_parquet(f, index=False)
+    health["N13 Aster new-perp wick paper (#536 S2c)"] = (f"{len(allr)} fills since {WICK_START}; mean net {allr['ret'].mean():.2%}"
+                                                          if len(allr) else f"0 fills since {WICK_START}")
+
+
 def n12_korea(fetch, today, rows, health, out: Path):
     """N12: new Upbit/Bithumb KRW markets -> paper short on Hyperliquid (#395 forward log)."""
     import json as _j
@@ -381,6 +422,7 @@ def run(fetch, jget, today, out: Path, root: Path, changes_today):
                      ("N4", lambda: n4_contests(jget, today, rows, health, out)), ("N7", lambda: n7_cg(jget, today, rows, health, out)),
                      ("N4/N8/N9", lambda: page_leads(changes_today, today, rows)),
                      ("N10/N11", lambda: n10_n11_hyperliquid(fetch, today, rows, health, out)),
+                     ("N13", lambda: n13_aster_new(fetch, today, rows, health, out)),
                      ("N12", lambda: n12_korea(fetch, today, rows, health, out))):
         try:
             fn()

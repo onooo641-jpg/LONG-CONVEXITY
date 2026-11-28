@@ -30,3 +30,22 @@ are not tested.
 **If either passes,** it is added to radar N10's forward paper log with a bar fixed before 2026-12-01.
 
 **Script/output:** `scripts/batch_nf_20261128.py` → `docs/jx_runs/batch_nf_20261128.txt`, re-run identical.
+
+## Results (2026-11-28; `docs/jx_runs/batch_nf_20261128.txt`, re-run identical)
+| # | Verdict | Stage 1 | Stage 2 | Note |
+|---|---|---|---|---|
+| 535 new HL spot tokens, days 1–14 (X 20%) | FAIL | +4.79%/fill (t 2.50, median −1.84%) | +32.7% (t 1.23, 139 fills), $5.3K/yr, **$710/yr without the best day** | One-off pumps; the typical fill loses |
+| **536 new Aster/dYdX perps, days 1–30 (X 15%)** | **PASS (fragile)** | +15.9% (t 2.33, 297 fills) | **+1.74%/fill (t 2.29, 1,737 fills), $15.4K/yr**; Aster +1.38% (t 2.03), dYdX +4.80% (t 1.11) | Median fill −0.60%, win 46%. Context rows: X 10% t 1.24, X 20% t 1.97 |
+
+**#536 diagnostics** (after the verdict, not part of the rule):
+- Only 2% of fills are spike-only bars, so these are not bad prints.
+- 53% of fills are at the $1,500 cap.
+- **The top 10 of 1,737 fills produce 109% of the profit:** new memecoin perps that dipped 15% and then exploded (BLESS +640% in a
+  day, LIGHT +299%). Without them the rule loses.
+- It is a tail bet on new-listing pumps more than a dependable dip rebound. Treat it as unproven until the forward log says otherwise.
+
+## Addendum 1 (2026-11-28, before 2026-12-01): #536 in the forward paper test
+- Radar N13 logs #536 paper fills on Aster perps in their first 30 days (`aster_new_paper.parquet`). dYdX is not logged; it supplied
+  10% of Stage-2 fills.
+- **S2c PASS (fixed now), 2026-12-01 → 2027-01-26:** ≥ 40 fills, mean net ≥ 1.0%, **and** net profit still positive after removing the
+  3 best fills. That last condition is the robustness check the backtest failed.
