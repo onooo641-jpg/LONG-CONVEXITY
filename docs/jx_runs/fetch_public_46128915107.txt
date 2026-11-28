@@ -1,0 +1,5 @@
+=== ubatchnf25
+  FAIL 402 https://api.llama.fi/overview/derivatives?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true
+  matched protocols: []
+  wrote batchnf25_dex_volume.parquet: 0 rows
+=== ubatchnf25 done in 12s  ok 0 fail 0
