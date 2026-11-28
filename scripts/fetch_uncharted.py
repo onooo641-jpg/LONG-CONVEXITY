@@ -3168,3 +3168,156 @@ def job_ubatchnf15():
                     pass
             time.sleep(0.1)
     save_v("apex", recs)
+
+
+def job_ubatchnf16():
+    """Batch NF16: HL spot duplicate and stablecoin books (hourly, last 5,000 hours); daily candles on GRVT, Nado, Ethereal, Hibachi.
+    Venue endpoints are unverified guesses; the first raw reply of each attempt is kept in batchnf16_probe.json."""
+    probe = {}
+
+    def keep(key, url, st, d):
+        if key not in probe:
+            probe[key] = {"url": url, "status": st, "head": (json.dumps(d) if not isinstance(d, str) else d)[:1500] if d is not None else None}
+
+    def P(url, body=None, key=None):
+        st, d = None, None
+        for k in range(3):
+            st, d = req(url, body, 40, {"Accept": "application/json"})
+            if st == 429 or not isinstance(st, int):
+                time.sleep(5 * (k + 1))
+                continue
+            break
+        if key:
+            keep(key, url + (" " + json.dumps(body) if body else ""), st, d)
+        return d if st == 200 else None
+
+    def f(x):
+        try:
+            return float(x)
+        except Exception:  # noqa: BLE001
+            return None
+
+    def ms(x):
+        x = float(x)
+        return int(x / 1e6) if x > 1e17 else int(x / 1e3) if x > 1e14 else int(x) if x > 1e11 else int(x * 1000)
+
+    def save_v(name, recs):
+        df = pd.DataFrame(recs, columns=["coin", "t", "o", "h", "l", "c", "v_usd"]).dropna().drop_duplicates(["coin", "t"])
+        print(f"  {name}: markets {df.coin.nunique() if len(df) else 0}, rows {len(df)}"
+              f"{', ' + str(pd.to_datetime(df.t.min(), unit='ms').date()) + '..' + str(pd.to_datetime(df.t.max(), unit='ms').date()) if len(df) else ''}", flush=True)
+        save(f"batchnf16_{name}_1d.parquet", df)
+
+    def lst(d, *keys):
+        if isinstance(d, list):
+            return d
+        if isinstance(d, dict):
+            for k in keys:
+                v = d.get(k)
+                if isinstance(v, list):
+                    return v
+                if isinstance(v, dict):
+                    r = lst(v, *keys)
+                    if r:
+                        return r
+        return []
+
+    def row(it, o="open", h="high", l="low", c="close", t=("open_time", "timestamp", "t", "time", "startTime"),
+            qv=("volume_q", "volumeNotional", "quoteVolume", "quote_volume", "turnover"), bv=("volume_b", "volume", "v"), scale=1.0):
+        tt = next((it[k] for k in t if it.get(k) is not None), None)
+        if isinstance(tt, str) and not tt.replace(".", "").isdigit():
+            tt = pd.Timestamp(tt).timestamp()
+        oo, hh, ll, cc = (f(it.get(k)) for k in (o, h, l, c))
+        if None in (tt, oo, hh, ll, cc):
+            return None
+        oo, hh, ll, cc = oo / scale, hh / scale, ll / scale, cc / scale
+        q = next((f(it[k]) for k in qv if f(it.get(k))), None)
+        b = next((f(it[k]) for k in bv if f(it.get(k)) is not None), 0.0)
+        return (ms(tt), oo, hh, ll, cc, q / scale if q and scale > 1 else q if q else (b / scale) * cc)
+
+    now = int(time.time() * 1000)
+    # --- Hyperliquid spot books
+    sm = get(HL, {"type": "spotMeta"}) or {}
+    toks = {t["index"]: t["name"] for t in sm.get("tokens") or []}
+    books = [(p["name"], toks.get(p["tokens"][0], "?"), toks.get(p["tokens"][1], "?")) for p in sm.get("universe") or [] if len(p.get("tokens", [])) == 2]
+    nb = pd.Series([b for _, b, _ in books]).value_counts()
+    stable = lambda s: "USD" in s.upper() or s.upper() == "USDT0"  # noqa: E731
+    want = [x for x in books if nb.get(x[1], 0) >= 2 or stable(x[1])]
+    rows = []
+    for name, base, quote in want:
+        c = get(HL, {"type": "candleSnapshot", "req": {"coin": name, "interval": "1h", "startTime": now - 5000 * 3600 * 1000, "endTime": now}}) or []
+        rows += [(name, base, quote, int(x["t"]), float(x["o"]), float(x["h"]), float(x["l"]), float(x["c"]), float(x["v"])) for x in c]
+        time.sleep(1.05)
+    print(f"  HL spot books {len(books)}, kept {len(want)}, hourly rows {len(rows)}", flush=True)
+    save("batchnf16_hlspot_1h.parquet", pd.DataFrame(rows, columns=["pair", "base", "quote", "t", "o", "h", "l", "c", "v"]))
+
+    T0n, T1n = int(pd.Timestamp("2024-06-01", tz="UTC").timestamp() * 1e9), now * 1_000_000
+    # --- GRVT
+    recs = []
+    ins = P("https://market-data.grvt.io/full/v1/all_instruments", {"kind": ["PERPETUAL"], "is_active": True}, "grvt_instruments")
+    syms = [x.get("instrument") for x in lst(ins, "result") if isinstance(x, dict) and x.get("instrument")]
+    for s in syms:
+        d = P("https://market-data.grvt.io/full/v1/kline", {"instrument": s, "interval": "CI_1_D", "type": "TRADE",
+              "start_time": str(T0n), "end_time": str(T1n), "limit": 1000}, "grvt_kline")
+        recs += [(s,) + r for r in (row(x) for x in lst(d, "result") if isinstance(x, dict)) if r]
+        time.sleep(0.2)
+    print(f"  GRVT instruments {len(syms)}", flush=True)
+    save_v("grvt", recs)
+
+    # --- Nado (Vertex-style gateway and archive, x18 fixed point)
+    recs, pids = [], {}
+    for u in ("https://gateway.prod.nado.xyz/v1/query?type=symbols", "https://gateway.prod.nado.xyz/v2/symbols"):
+        d = P(u, None, "nado_symbols:" + u)
+        src = (d or {}).get("data", d) if isinstance(d, dict) else d
+        src = (src or {}).get("symbols", src) if isinstance(src, dict) else src
+        items = src.values() if isinstance(src, dict) else src if isinstance(src, list) else []
+        for x in items:
+            if isinstance(x, dict) and x.get("product_id") is not None and str(x.get("type", "perp")).lower().startswith("perp"):
+                pids[int(x["product_id"])] = x.get("symbol") or f"pid{x['product_id']}"
+        if pids:
+            break
+    if not pids:
+        pids = {i: f"pid{i}" for i in range(1, 101)}
+    for pid, s in sorted(pids.items()):
+        d = P("https://archive.prod.nado.xyz/v1", {"candlesticks": {"product_id": pid, "granularity": 86400, "limit": 1000}}, "nado_candles")
+        recs += [(s,) + r for r in (row(x, "open_x18", "high_x18", "low_x18", "close_x18", qv=("quote_volume_x18",), bv=("volume",), scale=1e18)
+                                    for x in lst(d, "candlesticks") if isinstance(x, dict)) if r]
+        time.sleep(0.2)
+    print(f"  Nado products tried {len(pids)}", flush=True)
+    save_v("nado", recs)
+
+    # --- Ethereal (candle path unknown: several guesses, first that returns rows wins)
+    recs = []
+    pr = P("https://api.ethereal.trade/v1/product", None, "ethereal_products")
+    prods = [(x.get("id"), x.get("ticker") or x.get("displayTicker")) for x in lst(pr, "data") if isinstance(x, dict) and x.get("id")]
+    paths = ["https://api.ethereal.trade/v1/product/{id}/candles?resolution=1D&limit=1000",
+             "https://api.ethereal.trade/v1/candle?productId={id}&resolution=1D&limit=1000",
+             "https://api.ethereal.trade/v1/price/candles?productId={id}&resolution=1d&limit=1000",
+             "https://api.ethereal.trade/v1/market/candles?productId={id}&interval=1d&limit=1000"]
+    good = None
+    for pid, tk in prods:
+        for p in ([good] if good else paths):
+            d = P(p.format(id=pid), None, "ethereal_candles:" + p)
+            rs = [r for r in (row(x) for x in lst(d, "data", "candles", "result") if isinstance(x, dict)) if r]
+            if rs:
+                good = p
+                recs += [(tk or str(pid),) + r for r in rs]
+                break
+        time.sleep(0.2)
+    print(f"  Ethereal products {len(prods)}, candle path {good}", flush=True)
+    save_v("ethereal", recs)
+
+    # --- Hibachi
+    recs = []
+    ex = P("https://data-api.hibachi.xyz/market/exchange-info", None, "hibachi_info")
+    syms = [x.get("symbol") for x in lst(ex, "futureContracts", "contracts", "data") if isinstance(x, dict) and x.get("symbol")]
+    for s in syms:
+        q = urllib.parse.quote(s, safe="")
+        d = P(f"https://data-api.hibachi.xyz/market/data/klines?symbol={q}&interval=1d&fromMs={T0n // 1_000_000}&toMs={now}", None, "hibachi_klines")
+        recs += [(s,) + r for r in (row(x) for x in lst(d, "klines", "data") if isinstance(x, dict)) if r]
+        time.sleep(0.2)
+    print(f"  Hibachi contracts {len(syms)}", flush=True)
+    save_v("hibachi", recs)
+
+    OUT.mkdir(parents=True, exist_ok=True)
+    (OUT / "batchnf16_probe.json").write_text(json.dumps(probe, indent=1))
+    print(f"  probe replies kept: {len(probe)}", flush=True)
