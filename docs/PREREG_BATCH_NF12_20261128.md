@@ -57,3 +57,8 @@ return, not the excess over TOPIX (holds are 1–2 days; the TOPIX excess is pri
 **Context only (not verdicts):** #580 with exit at the next open; by-year means; share of events skipped for lot size.
 
 **Script/output:** `scripts/batch_nf12_20261128.py` → `docs/jx_runs/batch_nf12_20261128.txt`, re-run identical.
+
+## Withdrawn before any data was seen (2026-11-28, Jx)
+Jx: "trying out other countries ... way too general and popular". Fails G6 on reflection: deep, professional markets where the
+mechanism is published, unlike the thin crypto venues where #389/#520/#536 passed. Withdrawn with no data looked at (the NF12 Actions
+fetch was cancelled mid-run; NF13 was never fetched). No result; candidate numbers stay reserved and are not reused.

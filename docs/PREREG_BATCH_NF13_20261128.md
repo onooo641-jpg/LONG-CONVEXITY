@@ -46,3 +46,8 @@
 **Context only:** by-year means; #586 return of the same window when Shanghai was open (placebo: random HK days).
 
 **Script/output:** `scripts/batch_nf13_20261128.py` → `docs/jx_runs/batch_nf13_20261128.txt`, re-run identical.
+
+## Withdrawn before any data was seen (2026-11-28, Jx)
+Jx: "trying out other countries ... way too general and popular". Fails G6 on reflection: deep, professional markets where the
+mechanism is published, unlike the thin crypto venues where #389/#520/#536 passed. Withdrawn with no data looked at (the NF12 Actions
+fetch was cancelled mid-run; NF13 was never fetched). No result; candidate numbers stay reserved and are not reused.

@@ -1,6 +1,7 @@
 # Batch queue after O–Z (Jx 2026-11-28: "continue batching until I say so"; ≥ 4 ideas per batch; nicher areas)
 
 **Rules for every batch:**
+- **stay in thin, retail, permissionless venues** (where #389/#520/#536 passed); no national equity markets (Jx 2026-11-28);
 - desk checks G5/G6 (`docs/HANDOFF_NONPROP.md`);
 - pre-register before running; Stage 1 kill-only; Stage 2 unseen;
 - re-run identical; record in CANDIDATES, ledger and NOTES_NONPROP;
@@ -12,6 +13,7 @@
 | NF2 (#537–#542) | Aster/dYdX listing fade, pump short, crash bounce, dying-listing bleed | 0/4; forward-only #541/#542 |
 | NF3 (#543–#546) | Binance events shorted on HL | 0/4 |
 | NF4 (#547–#551) | Korean retail flows (Upbit) on HL | 0/4; forward-only #551 |
+| NF12–NF13 (#580–#587) | Tokyo price limits; Hong Kong | withdrawn before data (G6: deep, popular markets; Jx) |
 | NF11 (#576–#579) | Reg SHO threshold list (US) | done, 0/4 (stocks fall; short fails G5) |
 | NF10 (#572–#575) | hourly: Korean morning, #569 on Binance, intraday frenzy | done, 0/3; #574 invalid as run, post-hoc negative 2025–26 |
 | NF9 (#568–#571) | hourly forced flows on HL | done: #569 PASS (~$4.4K/yr), forward N14 |

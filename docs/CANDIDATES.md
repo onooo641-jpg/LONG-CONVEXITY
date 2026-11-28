@@ -267,6 +267,7 @@ risk, 5m signals and 1m fills.
 | 568–571 | Batch NF9 (forced flows within hours on HL): hourly wick bids, hourly cascade reversal, hourly squeeze give-back, market-wide hourly flush | `docs/PREREG_BATCH_NF9_20261128.md` | **#569 PASS** (OOS +0.34%/trade, t 2.74, 932 trades, ~$4.4K/yr; forward N14); others FAIL |
 | 572–575 | Batch NF10 (hourly structure): Korean morning buying/give-back, #569 on Binance, intraday frenzy pump | `docs/PREREG_BATCH_NF10_20261128.md` | 0 of 3 tradeable; #574 invalid as run (stale Binance hourly data); post-hoc clean re-run +0.35% (2023–24) / −0.32% (2025–26): warning for #569 |
 | 576–579 | Batch NF11 (Reg SHO threshold-list forced buy-ins, US small caps) | `docs/PREREG_BATCH_NF11_20261128.md` | 0 of 4: threshold stocks fall (addition long −7.5% vs SPY over 13 d in 2023–26); the short mirror fails G5 (borrow unavailable by construction) |
+| 580–587 | Batches NF12 (TSE price limits) and NF13 (Hong Kong) | `docs/PREREG_BATCH_NF12_20261128.md`, `docs/PREREG_BATCH_NF13_20261128.md` | **withdrawn before data** (Jx: deep, popular markets fail G6); numbers reserved |
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.
