@@ -1,2 +1,2 @@
-# Batch NF27 pull (workstream C)
-ubatchnf27
+# Batch NF20 data, continue (resume from saved rows; addendum 1)
+ubatchnf20
