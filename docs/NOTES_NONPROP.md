@@ -444,3 +444,6 @@ Jx's free Coinalyze key gave daily OI and liquidations from 2020. The five OI an
 
 ## 2026-11-28 — Batch NF9 (#568–#571): #569 hourly cascade reversal passes
 - Buying HL coins after a 5-sigma hourly drop and selling 4 hours later: +0.34%/trade out of sample (t 2.7), about $4.4K/yr. Forward via radar N14 from 2026-12-01.
+
+## 2026-11-28 — Batch NF10 (#572–#575): 0 tradeable passes; warning for #569
+- A clean Binance hourly re-run of the cascade reversal was positive in 2023–24 and negative in 2025–26. #569's forward test (N14) decides.

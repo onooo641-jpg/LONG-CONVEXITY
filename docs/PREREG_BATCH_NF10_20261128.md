@@ -31,3 +31,18 @@ One open trade per coin per idea (#572/#573: one basket trade per day).
 #574 is reported as "mechanism confirmed / not", not as a tradeable pass.
 
 **Script/output:** `scripts/batch_nf10_20261128.py` → `docs/jx_runs/batch_nf10_20261128.txt`, re-run identical.
+
+## Results (2026-11-28; `docs/jx_runs/batch_nf10_20261128.txt`, re-run identical): 0 of 3 tradeable; #574 invalid as run
+| # | Verdict | Stage 1 | Stage 2 |
+|---|---|---|---|
+| 572 Korean morning buying | KILL | −0.09% (107 days) | −0.11% (101) |
+| 573 Korean morning give-back | KILL | −0.11% | −0.10% |
+| 574 #569 on Binance | **invalid as run** | 16 of the 110 Binance symbols in `batchh2_unseen_1h` have > 50% flat (zero-return) hours, so σh ≈ 0 and they fire 80,000+ false signals (win 2–7%, median = −cost) | — |
+| 575 intraday frenzy pump | FAIL | +0.23% (t 1.14) | −0.05% |
+
+**#574, post-hoc data-quality re-run** (evidence only, labelled as post-hoc; `docs/jx_runs/batch_nf10_574_posthoc_20261128.txt`):
+- Only symbols with ≤ 10% flat hours are kept.
+- 2023–24: +0.35% (t 5.44, 2,548). 2025–26: **−0.32% (t −3.46, 2,072)**.
+- The hourly cascade reversal does **not** carry over to Binance in 2025–26. That is a warning sign for #569: its HL edge also shrank,
+  from +1.37% to +0.34%. The forward test (N14) decides.
+- #569's own HL data has 0% flat hours, so it is unaffected by the data problem.

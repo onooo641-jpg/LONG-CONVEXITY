@@ -265,6 +265,7 @@ risk, 5m signals and 1m fills.
 | 560–563 | Batch NF7 (Korean retail follow-ups on HL): pump day 7-d hold, post-frenzy dry-up, dump-day continuation, persistent premium | `docs/PREREG_BATCH_NF7_20261128.md` | 0 of 4 (#560 KILL at S1 −6.8%: #555's edge is in the first 3 days) |
 | 564–567 | Batch NF8 (Binance OI/liquidation and HL funding signals traded on HL) | `docs/PREREG_BATCH_NF8_20261128.md` | 0 of 4 (#565 deleveraging-complete long +3.4% before 2025, +0.5% after) |
 | 568–571 | Batch NF9 (forced flows within hours on HL): hourly wick bids, hourly cascade reversal, hourly squeeze give-back, market-wide hourly flush | `docs/PREREG_BATCH_NF9_20261128.md` | **#569 PASS** (OOS +0.34%/trade, t 2.74, 932 trades, ~$4.4K/yr; forward N14); others FAIL |
+| 572–575 | Batch NF10 (hourly structure): Korean morning buying/give-back, #569 on Binance, intraday frenzy pump | `docs/PREREG_BATCH_NF10_20261128.md` | 0 of 3 tradeable; #574 invalid as run (stale Binance hourly data); post-hoc clean re-run +0.35% (2023–24) / −0.32% (2025–26): warning for #569 |
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.
