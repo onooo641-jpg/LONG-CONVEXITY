@@ -272,6 +272,7 @@ risk, 5m signals and 1m fills.
 | 589–597 | Batch NF14 (thin perp venues never tested: Bluefin, Apex Omni, Extended, Pacifica, Backpack; Drift/edgeX not testable) | `docs/PREREG_BATCH_NF14_20261128.md` | 0 of 7 testable: #520 wick bids fail on every venue (Apex Stage 1 +16.6% → Stage 2 −1.7%); #596 new listings fail; #597 venue-discount printed PASS (t 2.74) but invalid (89% flat no-trade bars) | batch_nf14_20261128.txt, batch_nf14_diag_20261128.txt |
 | 598–602 | Batch NF15 (hourly #569 cascade reversal on Backpack, Extended, Pacifica, Apex; venue-local hedged cascade) | `docs/PREREG_BATCH_NF15_20261128.md` | registered; data `ubatchnf15` | — |
 | 603–609 | Batch NF16 (HL spot duplicate-book discount and stablecoin-book dips; #520 wick bids on GRVT, Nado, Ethereal, Hibachi; #536 pooled) | `docs/PREREG_BATCH_NF16_20261128.md` | registered; data `ubatchnf16` | — |
+| 610–613 | Batch NF17 (thin-venue dislocations vs HL, hourly, hedged: new-listing gap, hourly gap convergence, venue-local pump fade, venue-local funding spike) | `docs/PREREG_BATCH_NF17_20261128.md` | registered; data NF15 candles + `ubatchnf17` funding | — |
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.

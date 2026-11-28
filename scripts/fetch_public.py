@@ -1945,6 +1945,15 @@ def job_ubatchnf16():
 
 JOBS["ubatchnf16"] = job_ubatchnf16
 
+def job_ubatchnf17():
+    import sys as _s
+    _s.path.insert(0, str(Path(__file__).resolve().parent))
+    from fetch_uncharted import job_ubatchnf17 as _j
+    _j()
+
+
+JOBS["ubatchnf17"] = job_ubatchnf17
+
 
 
 

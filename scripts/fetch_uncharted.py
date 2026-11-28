@@ -3321,3 +3321,107 @@ def job_ubatchnf16():
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "batchnf16_probe.json").write_text(json.dumps(probe, indent=1))
     print(f"  probe replies kept: {len(probe)}", flush=True)
+
+
+def job_ubatchnf17():
+    """Batch NF17: funding history 2026-03-01..2026-11-26 on Backpack, Extended, Pacifica (every perp) and HL fundingHistory for HL
+    coins one of them lists. Raw rates are stored as returned (rate_raw, t ms); units are fixed in the analysis (addendum if needed).
+    Endpoints are unverified guesses; first raw replies are kept in batchnf17_probe.json."""
+    import re as _re
+    A, Z = int(pd.Timestamp("2026-03-01", tz="UTC").timestamp() * 1000), int(pd.Timestamp("2026-11-26", tz="UTC").timestamp() * 1000)
+    probe = {}
+
+    def J(url, key=None, body=None):
+        st, d = None, None
+        for k in range(3):
+            st, d = req(url, body, 40, {"Accept": "application/json"})
+            if st == 429 or not isinstance(st, int):
+                time.sleep(5 * (k + 1))
+                continue
+            break
+        if key and key not in probe:
+            probe[key] = {"url": url, "status": st, "head": json.dumps(d)[:1500] if d is not None and not isinstance(d, str) else str(d)[:1500]}
+        return d if st == 200 else None
+
+    def ms(x):
+        if isinstance(x, str) and not x.replace(".", "").isdigit():
+            return int(pd.Timestamp(x).timestamp() * 1000) if pd.Timestamp(x).tzinfo else int(pd.Timestamp(x, tz="UTC").timestamp() * 1000)
+        x = float(x)
+        return int(x / 1e6) if x > 1e17 else int(x / 1e3) if x > 1e14 else int(x) if x > 1e11 else int(x * 1000)
+
+    def norm(s):
+        s = str(s).upper()
+        s = _re.sub(r"(_USDC_PERP|-PERP|PERP|-USDT|USDT|-USDC|USDC|-USD|USD)$", "", s)
+        s = _re.sub(r"^(1000000|1000|K)(?=[A-Z])", "", s)
+        return s.strip("-_")
+
+    rows = []  # (venue, market, t_ms, rate_raw)
+    # Backpack
+    mk = J("https://api.backpack.exchange/api/v1/markets", "backpack_markets") or []
+    bp = [m["symbol"] for m in mk if isinstance(m, dict) and str(m.get("marketType", "")).upper() == "PERP"]
+    for s in bp:
+        for off in range(0, 20000, 1000):
+            d = J(f"https://api.backpack.exchange/api/v1/fundingRates?symbol={s}&limit=1000&offset={off}", "backpack_funding") or []
+            got = [(  "backpack", s, ms(x.get("intervalEndTimestamp") or x.get("timestamp")), float(x["fundingRate"]))
+                   for x in d if isinstance(x, dict) and x.get("fundingRate") is not None]
+            rows += [g for g in got if A <= g[2] <= Z]
+            if len(d) < 1000 or (got and min(g[2] for g in got) < A):
+                break
+            time.sleep(0.1)
+    print(f"  backpack perps {len(bp)}, rows so far {len(rows)}", flush=True)
+    # Extended
+    mk = J("https://api.starknet.extended.exchange/api/v1/info/markets", "extended_markets") or {}
+    ex = [m["name"] for m in (mk.get("data") or []) if isinstance(m, dict) and m.get("name") and m.get("active", True)]
+    n0 = len(rows)
+    for s in ex:
+        end = Z
+        for _ in range(12):
+            d = J(f"https://api.starknet.extended.exchange/api/v1/info/{s}/funding?startTime={A}&endTime={end}", "extended_funding") or {}
+            got = [("extended", s, ms(x.get("T") or x.get("t")), float(x["f"])) for x in (d.get("data") or [] if isinstance(d, dict) else [])
+                   if isinstance(x, dict) and x.get("f") is not None]
+            if not got:
+                break
+            rows += got
+            first = min(g[2] for g in got)
+            if first <= A or first >= end:
+                break
+            end = first - 1
+            time.sleep(0.1)
+    print(f"  extended markets {len(ex)}, rows {len(rows) - n0}", flush=True)
+    # Pacifica
+    inf = J("https://api.pacifica.fi/api/v1/info", "pacifica_info") or {}
+    pc = [m["symbol"] for m in (inf.get("data") or []) if isinstance(m, dict) and m.get("symbol")]
+    n0 = len(rows)
+    for s in pc:
+        cursor = None
+        for _ in range(20):
+            u = f"https://api.pacifica.fi/api/v1/funding_rate/history?symbol={s}&limit=4000" + (f"&cursor={cursor}" if cursor else "")
+            d = J(u, "pacifica_funding") or {}
+            items = d.get("data") or [] if isinstance(d, dict) else []
+            got = [("pacifica", s, ms(x.get("created_at") or x.get("t")), float(x["funding_rate"])) for x in items
+                   if isinstance(x, dict) and x.get("funding_rate") is not None]
+            rows += [g for g in got if A <= g[2] <= Z]
+            cursor = d.get("next_cursor") if isinstance(d, dict) else None
+            if not got or not cursor or not d.get("has_more", True) or min(g[2] for g in got) < A:
+                break
+            time.sleep(0.1)
+    print(f"  pacifica markets {len(pc)}, rows {len(rows) - n0}", flush=True)
+    # Hyperliquid, coins some venue lists
+    want = {norm(s) for s in bp + ex + pc}
+    hl = [u["name"] for u in (get(HL, {"type": "meta"}) or {}).get("universe") or [] if norm(u["name"]) in want]
+    n0 = len(rows)
+    for c in hl:
+        t = A
+        while t < Z:
+            f = get(HL, {"type": "fundingHistory", "coin": c, "startTime": t, "endTime": Z}) or []
+            rows += [("hl", c, int(x["time"]), float(x["fundingRate"])) for x in f]
+            if len(f) < 500:
+                break
+            t = int(f[-1]["time"]) + 1
+            time.sleep(1.05)
+        time.sleep(1.05)
+    print(f"  hl coins {len(hl)}, rows {len(rows) - n0}", flush=True)
+    save("batchnf17_funding.parquet", pd.DataFrame(rows, columns=["venue", "market", "t", "rate_raw"]).drop_duplicates(["venue", "market", "t"]))
+    OUT.mkdir(parents=True, exist_ok=True)
+    (OUT / "batchnf17_probe.json").write_text(json.dumps(probe, indent=1))
+    print(f"  probe replies kept: {len(probe)}", flush=True)
