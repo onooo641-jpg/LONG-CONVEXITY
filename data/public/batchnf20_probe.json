@@ -8,74 +8,256 @@
   {
    "step": "connect",
    "network": "archive",
-   "head": 9603881
-  },
-  {
-   "step": "first_ok",
-   "day": "2025-03-01",
-   "block": 5029032,
-   "n": 71,
-   "fields": [
-    "alpha_in",
-    "alpha_in_emission",
-    "alpha_out",
-    "alpha_out_emission",
-    "blocks_since_last_step",
-    "emission",
-    "is_dynamic",
-    "k",
-    "last_step",
-    "moving_price",
-    "netuid",
-    "network_registered_at",
-    "owner_coldkey",
-    "owner_hotkey",
-    "pending_alpha_emission",
-    "pending_root_emission",
-    "price",
-    "subnet_identity",
-    "subnet_name",
-    "subnet_volume",
-    "symbol",
-    "tao_in",
-    "tao_in_emission",
-    "tempo"
-   ]
+   "head": 9603940
   },
   {
    "step": "all_subnets",
-   "day": "2025-03-07",
-   "block": 5072232,
+   "day": "2025-03-29",
+   "block": 5230632,
    "error": "SubstrateRequestException('Historical work rate limit exceeded')"
   },
   {
    "step": "all_subnets",
-   "day": "2025-03-08",
-   "block": 5079432,
+   "day": "2025-04-05",
+   "block": 5267261,
    "error": "SubstrateRequestException('Historical work rate limit exceeded')"
   },
   {
    "step": "all_subnets",
-   "day": "2025-03-09",
-   "block": 5086632,
+   "day": "2025-04-12",
+   "block": 5331432,
    "error": "SubstrateRequestException('Historical work rate limit exceeded')"
   },
   {
    "step": "all_subnets",
-   "day": "2025-03-10",
-   "block": 5093832,
+   "day": "2025-04-19",
+   "block": 5368061,
    "error": "SubstrateRequestException('Historical work rate limit exceeded')"
   },
   {
    "step": "all_subnets",
-   "day": "2025-03-11",
-   "block": 5101032,
+   "day": "2025-04-26",
+   "block": 5418461,
    "error": "SubstrateRequestException('Historical work rate limit exceeded')"
+  },
+  {
+   "step": "all_subnets",
+   "day": "2025-05-03",
+   "block": 5468861,
+   "error": "SubstrateRequestException('Historical work rate limit exceeded')"
+  },
+  {
+   "step": "all_subnets",
+   "day": "2025-05-10",
+   "block": 5533032,
+   "error": "SubstrateRequestException('Historical work rate limit exceeded')"
+  },
+  {
+   "step": "all_subnets",
+   "day": "2025-05-17",
+   "block": 5569661,
+   "error": "SubstrateRequestException('Historical work rate limit exceeded')"
+  },
+  {
+   "step": "all_subnets",
+   "day": "2025-05-24",
+   "block": 5620061,
+   "error": "SubstrateRequestException('Historical work rate limit exceeded')"
+  },
+  {
+   "step": "all_subnets",
+   "day": "2025-05-31",
+   "block": 5670461,
+   "error": "SubstrateRequestException('Historical work rate limit exceeded')"
+  },
+  {
+   "step": "all_subnets",
+   "day": "2025-06-07",
+   "block": 5720861,
+   "error": "SubstrateRequestException('Historical work rate limit exceeded')"
+  },
+  {
+   "step": "all_subnets",
+   "day": "2025-06-14",
+   "block": 5775416,
+   "error": "SubstrateRequestException('Historical work rate limit exceeded')"
+  },
+  {
+   "step": "all_subnets",
+   "day": "2025-06-21",
+   "block": 5825813,
+   "error": "SubstrateRequestException('Historical work rate limit exceeded')"
+  },
+  {
+   "step": "all_subnets",
+   "day": "2025-06-28",
+   "block": 5872061,
+   "error": "SubstrateRequestException('Historical work rate limit exceeded')"
+  },
+  {
+   "step": "all_subnets",
+   "day": "2025-07-05",
+   "block": 5922461,
+   "error": "SubstrateRequestException('Historical work rate limit exceeded')"
+  },
+  {
+   "step": "all_subnets",
+   "day": "2025-07-12",
+   "block": 5977004,
+   "error": "SubstrateRequestException('Historical work rate limit exceeded')"
+  },
+  {
+   "step": "all_subnets",
+   "day": "2025-07-19",
+   "block": 6023261,
+   "error": "SubstrateRequestException('Historical work rate limit exceeded')"
+  },
+  {
+   "step": "all_subnets",
+   "day": "2025-07-26",
+   "block": 6073661,
+   "error": "SubstrateRequestException('Historical work rate limit exceeded')"
+  },
+  {
+   "step": "all_subnets",
+   "day": "2025-08-02",
+   "block": 6124061,
+   "error": "SubstrateRequestException('Historical work rate limit exceeded')"
+  },
+  {
+   "step": "all_subnets",
+   "day": "2025-08-09",
+   "block": 6174461,
+   "error": "SubstrateRequestException('Historical work rate limit exceeded')"
+  },
+  {
+   "step": "all_subnets",
+   "day": "2025-08-16",
+   "block": 6224861,
+   "error": "SubstrateRequestException('Historical work rate limit exceeded')"
+  },
+  {
+   "step": "all_subnets",
+   "day": "2025-08-23",
+   "block": 6275261,
+   "error": "SubstrateRequestException('Historical work rate limit exceeded')"
+  },
+  {
+   "step": "all_subnets",
+   "day": "2025-08-30",
+   "block": 6325661,
+   "error": "SubstrateRequestException('Historical work rate limit exceeded')"
+  },
+  {
+   "step": "all_subnets",
+   "day": "2025-09-06",
+   "block": 6376061,
+   "error": "SubstrateRequestException('Historical work rate limit exceeded')"
+  },
+  {
+   "step": "all_subnets",
+   "day": "2025-09-13",
+   "block": 6426461,
+   "error": "SubstrateRequestException('Historical work rate limit exceeded')"
+  },
+  {
+   "step": "all_subnets",
+   "day": "2025-09-20",
+   "block": 6476861,
+   "error": "SubstrateRequestException('Historical work rate limit exceeded')"
+  },
+  {
+   "step": "all_subnets",
+   "day": "2025-09-27",
+   "block": 6527261,
+   "error": "SubstrateRequestException('Historical work rate limit exceeded')"
+  },
+  {
+   "step": "all_subnets",
+   "day": "2025-10-04",
+   "block": 6577661,
+   "error": "SubstrateRequestException('Historical work rate limit exceeded')"
+  },
+  {
+   "step": "all_subnets",
+   "day": "2025-10-11",
+   "block": 6628061,
+   "error": "SubstrateRequestException('Historical work rate limit exceeded')"
+  },
+  {
+   "step": "all_subnets",
+   "day": "2025-10-18",
+   "block": 6678461,
+   "error": "SubstrateRequestException('Historical work rate limit exceeded')"
+  },
+  {
+   "step": "all_subnets",
+   "day": "2025-10-25",
+   "block": 6728861,
+   "error": "SubstrateRequestException('Historical work rate limit exceeded')"
+  },
+  {
+   "step": "all_subnets",
+   "day": "2025-11-01",
+   "block": 6779261,
+   "error": "SubstrateRequestException('Historical work rate limit exceeded')"
+  },
+  {
+   "step": "all_subnets",
+   "day": "2025-11-08",
+   "block": 6829661,
+   "error": "SubstrateRequestException('Historical work rate limit exceeded')"
+  },
+  {
+   "step": "all_subnets",
+   "day": "2025-11-15",
+   "block": 6880061,
+   "error": "SubstrateRequestException('Historical work rate limit exceeded')"
+  },
+  {
+   "step": "all_subnets",
+   "day": "2025-11-22",
+   "block": 6930461,
+   "error": "SubstrateRequestException('Historical work rate limit exceeded')"
+  },
+  {
+   "step": "all_subnets",
+   "day": "2025-11-29",
+   "block": 6980861,
+   "error": "SubstrateRequestException('Historical work rate limit exceeded')"
+  },
+  {
+   "step": "all_subnets",
+   "day": "2025-12-06",
+   "block": 7031261,
+   "error": "SubstrateRequestException('Historical work rate limit exceeded')"
+  },
+  {
+   "step": "all_subnets",
+   "day": "2025-12-13",
+   "block": 7081661,
+   "error": "SubstrateRequestException('Historical work rate limit exceeded')"
+  },
+  {
+   "step": "all_subnets",
+   "day": "2025-12-20",
+   "block": 7132061,
+   "error": "SubstrateRequestException('Historical work rate limit exceeded')"
+  },
+  {
+   "step": "all_subnets",
+   "day": "2025-12-27",
+   "block": 7182461,
+   "error": "SubstrateRequestException('Historical work rate limit exceeded')"
+  },
+  {
+   "step": "time_budget_reached",
+   "day": "2026-01-03"
   },
   {
    "step": "summary",
-   "rows": 2752,
-   "fails": 611
+   "rows": 7827,
+   "fails": 0
   }
  ]
 }
