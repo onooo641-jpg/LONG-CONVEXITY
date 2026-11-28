@@ -416,3 +416,10 @@ Jx's free Coinalyze key gave daily OI and liquidations from 2020. The five OI an
 - **#536, wick bids on new Aster/dYdX perps in their first 30 days:** passes the registered bar out of sample (+1.74%/fill, ~$15.4K/yr),
   but 10 fills (memecoin pumps) make all the profit.
 - #536 is in the forward log (radar N13) from 2026-12-01, with a bar that requires profit without the 3 best fills.
+
+## 2026-11-28 — Batch NF2 (#537–#540), new perps on Aster/dYdX: 0 of 4 by rule; two forward-only re-tests
+- **Killed by their pre-2025 history, but strong and robust in 2025–26:**
+  - #537, shorting new Aster listings for 14 days: +6.6%, t 2.84;
+  - #540, shorting listings whose volume dies by day 7: +7.2%, t 3.70, positive without the best trades.
+- They are re-registered as forward-only tests #541/#542 (radar N13, from 2026-12-01, judged by 2027-03-31).
+- **Failed:** pump-exhaustion shorts and crash-bounce longs; both depend on a few trades.

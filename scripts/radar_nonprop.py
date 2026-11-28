@@ -372,6 +372,33 @@ def n13_aster_new(fetch, today, rows, health, out: Path):
             px = min(lvl, o)
             recs.append({"coin": sd["symbol"], "day": str(day.date()), "fill": px, "close": c,
                          "ret": c / px - 1 - 0.0002 - 0.0005, "size": min(WICK_CAP, WICK_VOL * qv)})
+    # #541/#542 forward-only (docs/PREREG_BATCH_NF2_20261128.md addendum 1): listing fade and dying-listing bleed on Aster listings
+    # first traded on or after 2026-12-01; a trade is logged once its exit close is known.
+    lrecs = []
+    for sd in syms:
+        if sd.get("contractType") != "PERPETUAL" or not sd.get("onboardDate"):
+            continue
+        first = pd.Timestamp(int(sd["onboardDate"]), unit="ms", tz="UTC").normalize()
+        if str(first.date()) < WICK_START or first < day0 - pd.Timedelta(days=40):
+            continue
+        _, kt = fetch(f"{ASTER}/klines?symbol={sd['symbol']}&interval=1d&limit=40", tries=2)
+        k = [x for x in (_j.loads(kt) if kt else []) if pd.Timestamp(int(x[0]), unit="ms", tz="UTC") < day0]
+        time.sleep(0.25)
+        if len(k) > 14:
+            lrecs.append({"idea": 541, "coin": sd["symbol"], "entry": str(pd.Timestamp(int(k[0][0]), unit="ms").date()),
+                          "ret": -(float(k[14][4]) / float(k[0][4]) - 1) - 0.001})
+        if len(k) > 20 and float(k[0][7]) > 0 and float(k[6][7]) < 0.2 * float(k[0][7]):
+            lrecs.append({"idea": 542, "coin": sd["symbol"], "entry": str(pd.Timestamp(int(k[6][0]), unit="ms").date()),
+                          "ret": -(float(k[20][4]) / float(k[6][4]) - 1) - 0.001})
+    fl = out / "aster_listing_paper.parquet"
+    oldl = pd.read_parquet(fl) if fl.exists() else pd.DataFrame(columns=["idea", "coin", "entry", "ret"])
+    newl = pd.DataFrame(lrecs, columns=["idea", "coin", "entry", "ret"])
+    key = lambda d: d["idea"].astype(str) + d["coin"]  # noqa: E731
+    alll = pd.concat([oldl, newl[~key(newl).isin(key(oldl))]], ignore_index=True)
+    alll.to_parquet(fl, index=False)
+    for i in (541, 542):
+        x = alll[alll["idea"] == i]["ret"]
+        health[f"N13 Aster listing paper (#{i})"] = f"{len(x)} trades; mean net {x.mean():.2%}" if len(x) else "0 trades"
     f = out / "aster_new_paper.parquet"
     cols = ["coin", "day", "fill", "close", "ret", "size"]
     old = pd.read_parquet(f) if f.exists() else pd.DataFrame(columns=cols)

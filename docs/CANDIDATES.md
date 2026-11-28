@@ -257,6 +257,7 @@ risk, 5m signals and 1m fills.
 | 532–533 | Batch X (wick mechanism outside crypto): US ETFs, FX pairs | `docs/PREREG_BATCH_X_20261128.md` | 0 of 2: ETFs −0.53%/fill OOS; FX +0.87%/fill is a Yahoo bad-print artifact (97% spike-only bars, incl. closed-market 1 Jan dates) |
 | 534 | Batch Z: #208 funding-gap rule on points-farming venues (HL/Aster/Lighter) | `docs/PREREG_BATCH_Z_20261128.md` | FAIL: Stage 1 3.75%/yr (< 4%), halves 14.6% / 4.1% on capital; gaps closed in 2025–26 |
 | 535–536 | Batch NF (niche new markets): new HL spot tokens days 1–14; new Aster/dYdX perps days 1–30 | `docs/PREREG_BATCH_NF_20261128.md` | #535 FAIL ($710/yr without best day); **#536 PASS but fragile**: OOS +1.74%/fill (t 2.29), $15.4K/yr, yet top 10 fills = 109% of profit (memecoin pumps); forward log N13 with a must-survive-without-top-3 bar |
+| 537–542 | Batch NF2 (new perps on Aster/dYdX): post-listing fade, pump exhaustion, crash bounce, dying-listing bleed; #541/#542 forward-only re-tests | `docs/PREREG_BATCH_NF2_20261128.md` | 0 of 4 by rule (#537, #540 KILL at Stage 1 but strong 2025–26: Aster fade +6.6% t 2.84; bleed +7.2% t 3.70, robust) → forward-only #541/#542 from 2026-12-01 (radar N13) |
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.

@@ -39,3 +39,23 @@ usually have positive funding, which pays shorts, so this is roughly neutral to 
 **Families:** #537/#540 are listing-fade; #538 is the squeeze mirror; #539 is the liquidation family (cascade) on a new venue.
 
 **Script/output:** `scripts/batch_nf2_20261128.py` → `docs/jx_runs/batch_nf2_20261128.txt`, re-run identical.
+
+## Results (2026-11-28; `docs/jx_runs/batch_nf2_20261128.txt`, re-run identical): 0 of 4 under the registered rules
+| # | Verdict | Stage 1 (listed before 2025) | Stage 2 (listed 2025 onward) |
+|---|---|---|---|
+| 537 post-listing fade | KILL | −7.70% (t −2.07, 169) | +3.37% (t 0.90, 664); **Aster only +6.61% (t 2.84, median +10.9%)**; dYdX −14.5% |
+| 538 pump exhaustion | FAIL | +15.6% (t 3.01, 41) | +0.44% (t 0.08, 165); negative without the 3 best |
+| 539 crash bounce | FAIL | +17.0% (t 1.69, 47) | +4.03% (t 1.25, 213); ex-top-3 sum +0.35 |
+| 540 dying-listing bleed | KILL | −0.29% (t −0.09, 79) | **+7.18% (t 3.70, 187, 59% win), positive without the 3 best** (Aster +6.5%, dYdX +8.5%) |
+
+The kills stand. #537 (on Aster) and #540 are strong and robust in 2025–26 but not before.
+- The likely reason, stated as a hypothesis: Aster before 2025 was ApolloX, a different exchange and listing flow.
+- The 2025+ points-farming listing wave may be a new regime that the old history cannot judge.
+- The only fair judge is new data, so both are re-registered below as **forward-only** tests. They count as untested, not as passes.
+
+## Addendum 1 (2026-11-28, before 2026-12-01): forward-only tests #541 and #542
+- **#541 = #537 on Aster only, forward:** listings first traded on or after 2026-12-01; short at day 1's close, cover at day 15's.
+- **#542 = #540, forward, Aster:** same listings; if day 7's quote volume < 20% of day 1's, short at day 7's close, cover at day 21's.
+- **Costs:** 0.1% round trip; funding not modelled. Logged by radar N13 (`aster_listing_paper.parquet`) once each exit close is known.
+- **PASS, each, by 2027-03-31:** ≥ 30 trades for #541 (≥ 15 for #542); mean net ≥ 1.0%; net positive without the 3 best trades.
+- Fewer trades by then → extend to 2027-06-30, then judge.
