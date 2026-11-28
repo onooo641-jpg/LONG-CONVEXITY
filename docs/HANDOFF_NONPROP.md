@@ -166,3 +166,19 @@ Stopping early on a FAIL is safe; stopping early on a PASS, or changing the full
 Tested on 8 chains, 24 months (`docs/PREREG_LIQUIDATIONS_20261120.md`). PASS: 7 venues pass, main Aave v3 pools on Arbitrum, Base, Avalanche, Polygon, Optimism; top-3 share 9–41%.
 Median active small bot ~$30–$800/month per venue before unobserved costs. Verdict BUILD in simulate-only mode first. Unmeasured: BNB (needs Etherscan key), Solana, Compound forks.
 See `docs/NOTES_JX.md` "Liquidation test #100: verdict".
+
+### Gate additions (2026-11-28, after Jx asked whether the gate caught batch R's problem; it did not)
+Two Stage 0 desk checks added before any data is fetched. Neither the calibration gate (payer, free data, Malaysia venue, time split)
+nor the five-part filter asks them.
+- **G5, does the payment reach us?** Name who receives the payer's money, then check that a small outside account from Malaysia can be
+  that receiver. Trading near the flow is not enough.
+  - Fails: IPO and offering allocations; approved-solver and quoter programmes (CoW, UniswapX); shorts available only on exchanges
+    closed to Malaysia (#482, #502).
+  - Passes: liquidation wicks on Hyperliquid (#389/#522/#529); prop-firm rule structures.
+- **G6, is it a published anomaly with institutional money on it?** If the effect is in the academic or practitioner literature and
+  costs nothing to trade at scale, expect it to be gone after publication. Batch D (#443, #446), P (#515, #516) and M confirmed this.
+  - Such ideas are tested only with a stated reason why the crowd cannot take it: capacity too small, access barrier, or a
+    non-economic payer.
+
+Batch R (US capital raises) fails G5 (offering discounts go to allocated institutions) and G6 (well studied since the 1990s). It is
+skipped by judgment, not by test.

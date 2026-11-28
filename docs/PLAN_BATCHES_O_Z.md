@@ -15,7 +15,7 @@ done. If a session ends, the next one continues from the first unchecked line.
 | O | **Physical commodity seasonals + currency pegs** (grain harvest selling, HKD peg band) | done 2026-11-27, 0/3 |
 | P | Fixed income outside the US (sovereign auction concessions: Bund, Gilt, JGB; data from ECB/DMO/MOF) | done 2026-11-27, 0/4 (JGB auctions + JGB/Bund/Gilt month-end; Gilt auctions blocked by a captcha) |
 | Q | International index reviews (Hang Seng, Nikkei 225, KOSPI 200, FTSE 100 quarterly changes) | **blocked**: no free change-history source found (Nikkei news archive 404, HSI notices page moved; Actions render 2026-11-27). Revisit only if a list source turns up |
-| R | US corporate capital raises (follow-on offering discounts, convertible-issuance hedging; SEC EDGAR) | planned |
+| R | US corporate capital raises (follow-on offering discounts, convertible-issuance hedging; SEC EDGAR) | **skipped 2026-11-28** by the new desk checks G5 (discount goes to allocated institutions) and G6 (published, crowded); see `docs/HANDOFF_NONPROP.md` |
 | S | Volatility-targeting / risk-control fund de-leveraging after vol spikes (equity index ETFs) | **already tested** as #444 (Batch D) |
 | T | Crypto options and volatility (Deribit DVOL, expiry hedging), if a Malaysia-usable venue exists | **already covered**: DVOL/Deribit used in Batches 8, A, C, D, F |
 | U | DeFi protocol mechanics not yet covered (auction liquidations, redemption queues, rate-model kinks) | **mostly covered**: redemption queues (Sweep 4, Top 10), auctions (UniswapX), lending yields and incentive rotation (earlier batches); the rate-model kink is a variant of high-APR farming (failed) |
