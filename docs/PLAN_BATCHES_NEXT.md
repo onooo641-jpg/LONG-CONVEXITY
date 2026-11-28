@@ -13,6 +13,7 @@
 | NF2 (#537–#542) | Aster/dYdX listing fade, pump short, crash bounce, dying-listing bleed | 0/4; forward-only #541/#542 |
 | NF3 (#543–#546) | Binance events shorted on HL | 0/4 |
 | NF4 (#547–#551) | Korean retail flows (Upbit) on HL | 0/4; forward-only #551 |
+| NF21 (#627–#630) | subnet-pool signals: momentum, reversal, inflow chase, low dilution (NF20 data) | registered |
 | NF20 (#623–#626) | Bittensor dTAO subnet staking (protocol emissions pay), TAO hedged on HL | Stage 0 data probe running |
 | NF19 (#619–#622) | thin crypto copies: thin-venue-only coins, hyna vs HL main, HL spot vs perp, GRVT vs HL (one-hour-late entry) | done, 0/4; cross-copy gap family closed |
 | NF18 (#614–#618) | pre-IPO perps across HIP-3 dexes and GRVT | #614 FAIL (gaps persist, −0.34%); #615–#618 withdrawn (stocks too public, Jx) |
