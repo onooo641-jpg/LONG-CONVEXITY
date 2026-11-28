@@ -13,13 +13,13 @@ from playwright.sync_api import sync_playwright
 
 OUT = Path(__file__).resolve().parent.parent / "data" / "public" / "propverify"
 PAGES = [
-    # Batch Q probe (docs/PLAN_BATCHES_O_Z.md): where non-US index constituent-change histories live
-    "https://indexes.nikkei.co.jp/en/nkave/archives/news",
-    "https://indexes.nikkei.co.jp/en/nkave/index/profile?idx=nk225",
-    "https://www.hsi.com.hk/eng/newsroom/index-other-notices",
-    "https://www.hsi.com.hk/eng/indexes/all-indexes/hsi",
+    # Topstep news-window rule for Combine / Express Funded (open check, docs/NOTES_JX.md 2026-11-27 Starter entry)
+    "https://help.topstep.com/en/?q=tier%201%20news",
+    "https://help.topstep.com/en/?q=news%20events%20contract%20limits",
+    "https://help.topstep.com/en/articles/18466040-topstep-challenges",
 ]
-CRAWL = ("indexes.nikkei.co.jp/en/nkave/archives/news",)
+CRAWL = ("help.topstep.com/en/articles/",)
+MAX_PAGES = 45  # a help-centre crawl has no natural end
 TAB = re.compile(r"^\$?\s?(2\.5|5|10|25|50|75|100|150|200|250|300)\s?K$|^(Static|Trail|EOD|S2F|S2L|Instant|Live|1-Step|2-Step)$", re.I)
 
 
@@ -29,7 +29,7 @@ def main() -> None:
         br = p.chromium.launch()
         ctx = br.new_context(user_agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36 (research)")
         queue, seen = list(PAGES), set()
-        while queue and len(seen) < 120:
+        while queue and len(seen) < MAX_PAGES:
             url = queue.pop(0)
             if url in seen:
                 continue

@@ -1,2 +1,2 @@
-# Batch Q probe: index change histories (expand mode)
+# Topstep news-window rule for Combine/XFA (expand mode)
 expand
