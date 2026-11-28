@@ -2481,6 +2481,11 @@
 - AUTO: Is tick scalping legal?
 - COUNTRY: Are any countries restricted on FundedNext CFDs?
 
+## FundedNext Futures — https://fundednext.com/aml-policy
+- AUTO: In adherence to the legal obligations, a meticulous manual approval process is diligently undertaken for each transaction, employing the principles of due diligence.
+- AUTO: Within GrowthNext F.Z.E., a distinct and dedicated risk management unit exists, tasked with the meticulous manual examination of individual client profiles.
+- AUTO: conducts a meticulous manual review and approval of each transaction, applying the principles of due diligence.
+
 ## FundedNext Futures — https://fundednext.com/cfd-challenge-terms
 - AUTO: Risk Controls; Automatic Restrictions; Platform Integrity
 - AUTO: The Customer acknowledges that risk controls and enforcement measures may be applied automatically, including restricting trading and/or disabling functions when loss limits are reached.

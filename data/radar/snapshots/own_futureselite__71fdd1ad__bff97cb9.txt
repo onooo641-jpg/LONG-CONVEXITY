@@ -7,13 +7,13 @@ Trading rules
 Scalping rules
 Scalping rules
 When a trade counts as a scalp and what happens.
-October 18, 2026
+Updated today
 Table of contents
 A scalp is a trade held 10 seconds or less, or making a net profit of $20 or less per contract ($2 on micro contracts). Scalping is never a breach.
 Accounts
 Held
 Or moves
-Elite, Prime, New Instant
+Elite, Prime, Nitro, New Instant
 10 seconds or less
 Net profit of $20 or less per contract ($2 on micro contracts)
 Old Starter, Pro and Instant (bought before 24 Nov 2025)
@@ -24,9 +24,9 @@ Evaluation: if your scalp profit is more than 50% of the profit target, the upgr
 Funded: scalping is never a breach. Scalp profit is added to your payout target and removed from the withdrawable amount.
 New Instant: scalped profit doesn't count toward the payout profit goal.
 Related Articles
+Elite drawdown, daily loss limit and contracts
 Prime rules at a glance
 OLD Instant rules at a glance
-The Live Trading Program
 Instant rules at a glance
 Express Live: Rules and FAQs
 Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃

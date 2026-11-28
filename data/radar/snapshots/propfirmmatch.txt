@@ -147,11 +147,6 @@ Lark Funding
 4.5
 5% OFF
 MATCH
-RZ
-RZR Funded
-4.1
-50% OFF
-MATCHBF
 In
 Instant Funding
 4.0
@@ -174,11 +169,6 @@ Hola Prime
 4.4
 10% OFF
 MATCH10
-Th
-The Trading Pit
-4.1
-50% OFF
-MATCH
 Fu
 Funded Trading Plus
 4.4
@@ -211,7 +201,7 @@ Favorite 0/5
 New
 All Firms
 Firms 15 results
-Data updated 9 min ago
+Data updated 4 min ago
 Firm
 Rank / Reviews
 Country / Years
@@ -222,7 +212,7 @@ Promo
 Actions
 Th
 The5ers
-100689
+100695
 4.7
 1450
 reviews
@@ -239,7 +229,7 @@ MATCH
 Firm
 FT
 FTMO
-44436
+44439
 4.5
 220
 reviews
@@ -255,7 +245,7 @@ $400K
 Firm
 Aq
 AquaFunded
-17252
+17254
 4.4
 347
 reviews
@@ -290,7 +280,7 @@ Firm
 5
 E8
 E8 Markets
-39330
+39333
 4.8
 498
 reviews
@@ -325,7 +315,7 @@ Firm
 7
 To
 Top One Trader
-30423
+30424
 4.4
 240
 reviews
@@ -377,7 +367,7 @@ Firm
 10
 Cr
 Crypto Fund Trader
-39915
+39920
 4.1
 114
 reviews
@@ -430,7 +420,7 @@ Firm
 13
 Le
 Leveraged
-192
+193
 Less than
 20 reviews
 Saint Lucia, years in operation: 1 1

@@ -44,9 +44,9 @@ ii. For taking profit on longs, select Sell [quantity] limit:
 6. Keep in mind if you ever would like to close/flatten your position, you can press the X next to your order and it will cancel it.
 Explore MyFundedFutures Discounts
 Related Articles
-Navigating Your Dashboard
 Fair Play and Prohibited Trading Practices
 Overview of Supported Platforms at MFFU
+Understanding Evaluation Parameters at MyFundedFutures
 Trading 101 in Volumetrica
 Industry Leading Futures Prop Firm: Start Trading with MyFundedFutures
 Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
