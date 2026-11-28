@@ -1,0 +1,12 @@
+=== ubatchnf17
+  backpack perps 104, rows so far 525373
+  extended markets 413, rows 1549501
+  pacifica markets 81, rows 384383
+  FAIL 502 https://api.hyperliquid.xyz/info
+  FAIL 502 https://api.hyperliquid.xyz/info
+  FAIL 502 https://api.hyperliquid.xyz/info
+  FAIL 500 https://api.hyperliquid.xyz/info
+  hl coins 142, rows 873228
+  wrote batchnf17_funding.parquet: 3332485 rows
+  probe replies kept: 6
+=== ubatchnf17 done in 5098s  ok 0 fail 0
