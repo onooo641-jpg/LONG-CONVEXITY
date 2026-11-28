@@ -1,0 +1,6 @@
+=== ubatchnf11
+  threshold files found: 2322 of 2322 business days; rows 64966; tickers 2362
+  wrote batchnf11_threshold.parquet: 64966 rows
+  yahoo prices for 1413 of 2363 tickers
+  wrote batchnf11_px.parquet: 1897614 rows
+=== ubatchnf11 done in 1412s  ok 0 fail 0
