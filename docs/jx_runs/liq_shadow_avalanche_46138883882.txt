@@ -6,3 +6,8 @@ avalanche: reopened 56 recorded unhealthy episodes
 avalanche: head 101624609 cycles 211 debtors 2844 cand 82 last_cycle 3833 ms rpc ok/err 1083/54
 avalanche: head 101624896 cycles 440 debtors 2844 cand 82 last_cycle 3774 ms rpc ok/err 2233/104
 avalanche: head 101625239 cycles 629 debtors 2844 cand 82 last_cycle 3764 ms rpc ok/err 3226/160
+avalanche: head 101625576 cycles 836 debtors 2844 cand 82 last_cycle 4584 ms rpc ok/err 4287/214
+avalanche: head 101625881 cycles 1049 debtors 2844 cand 82 last_cycle 3803 ms rpc ok/err 5344/267
+avalanche: head 101626180 cycles 1271 debtors 2844 cand 82 last_cycle 3804 ms rpc ok/err 6468/318
+avalanche: head 101626499 cycles 1453 debtors 2844 cand 82 last_cycle 3725 ms rpc ok/err 7408/377
+avalanche: head 101626816 cycles 1684 debtors 2844 cand 82 last_cycle 4420 ms rpc ok/err 8570/427
