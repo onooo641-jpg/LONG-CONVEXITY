@@ -1,0 +1,107 @@
+How does my Reward Split work on my Funded Account? | BrightFunded CFD Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Discord 👾 Website 💻 English Deutsch Polski Português Español English
+Discord 👾 Website 💻 English Deutsch Polski Português Español English
+Search for articles...
+All Collections
+Billing and Payouts
+How does my Reward Split work on my Funded Account?
+How does my Reward Split work on my Funded Account?
+Updated this week
+Table of contents
+When can I request my Reward Split?
+The first payout and the payout cycle depend on your model.
+Model
+First payout
+Next payouts
+1-Step Daily
+Any day from your first funded trading day
+Any day
+2-Step Bright
+14 calendar days after your first funded trade
+Every 14 days. Every 7 days with the Weekly Payouts add-on
+Instant
+When all payout requirements are met
+When all payout requirements are met
+OLD plans (bought before 16 Nov 2026)
+30 days after your first funded trade
+Every 14 days. With an add-on, every 14 or 7 days from the first cycle
+Each payout cycle starts counting from your first trade of that cycle. For the full details of each model, see How can I request my payout?
+What is my profit split?
+Model
+Profit split
+With add-on
+1-Step Daily
+80%
+90% (+20%)
+2-Step Bright
+80%
+90% (+20%)
+Instant
+90% (included)
+100% (+20%)
+OLD plans
+80%
+90%
+The profit split can also be scaled up to 100/0 with our Scaling Plan.
+The add-ons are selected at checkout, when you buy the account.
+Which add-ons change my payouts?
+Add-on
+What it does
+Available on
+⚡️ 90% Profit Split
+Raises your split from 80% to 90%
+1-Step Daily, 2-Step Bright (already included on Instant)
+⚡️ 100% Profit Split
+Raises your split from 90% to 100%
+Instant
+⚡️ Weekly Payouts
+Payouts every 7 days instead of every 14
+2-Step Bright
+⚡️ 100% Account Fee Refund
+Your account fee is paid back with your first payout
+All models
+⚡️ Bi-weekly and Weekly (OLD)
+Payouts every 14 or 7 days from the first cycle
+OLD plans only
+How will my Reward be paid out and processed?
+Available Payout Methods:
+Crypto (USDC – ERC-20 Network)
+Bank Transfer
+Currency by Payment Method:
+Bank transfers are processed in Euros (€)
+Crypto payments are processed in USDC (ERC-20)
+Is there a minimum Reward?
+1-Step Daily and 2-Step Bright: there is no minimum payout. On 1-Step Daily, 1% of your closed balance stays in the account as a buffer.
+Instant: the minimum payout is 1% of your account size, and a 3% buffer must be built before your first payout.
+OLD plans: there is no minimum. You can request any amount.
+What are the extra requirements on Instant?
+Instant accounts have a few extra conditions to request a payout, including the 15% consistency rule, a minimum number of profitable days and a profit buffer. See How do payouts work on Instant? for the full list.
+How can I request my payout?
+You can easily request your payout from the Payout Section in the BrightFunded Dashboard . Close all your trades and pending orders first.
+Once your payment has been requested, it will take a maximum of 1 day to be processed by our finance team. It can take a little longer to be reflected in your wallet or bank, depending on the broker and your bank institution.
+15% Evaluation Reward
+A 15% bonus of your evaluation profits that is added to the starting balance of your next Funded Account once the conditions are met. It applies to 1-Step Daily, 2-Step Bright and the OLD plans. It does not apply to Instant , because Instant has no evaluation phase.
+How it works (step by step)
+Reach at least 10% growth on your Funded Account(s).
+You may combine growth across multiple funded accounts (e.g., 5% on the first + 5% on the second = 10%).
+Receive your payout for that performance.
+You are issued a new Funded Account whose initial balance includes the 15% bonus calculated from your evaluation profits.
+Example (illustrative)
+Account size: $100,000
+Suppose you earned $13,000 in total during the evaluation.
+Bonus: 15% of $13,000 = $1,950 .
+After you hit 10% growth on your funded account(s) and receive your payout, your new Funded Account starts at $101,950 .
+Can I withdraw the bonus?
+Yes. You can withdraw it with your next payout , whether you keep trading or simply wait to cash it out according to your profit split. (You need to place a single trade to activate the payout cycle.)
+For the full explanation, see 15% Evaluation Reward .
+GET FUNDED!
+Related Articles
+How does my Reward Split work on my Funded Account? (OLD)
+How the Account Merge Works?
+Add-ons by model
+How do payouts work on 2-Step Bright?
+How can I request my payout?
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

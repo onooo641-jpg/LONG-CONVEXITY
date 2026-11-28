@@ -1,0 +1,65 @@
+What is 1-Step Daily? | BrightFunded CFD Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Discord 👾 Website 💻 English Deutsch Polski Português Español English
+Discord 👾 Website 💻 English Deutsch Polski Português Español English
+Search for articles...
+All Collections
+BrightFunded Plans & Challenge Essentials
+BrightFunded Plans
+1-Step Daily
+What is 1-Step Daily?
+What is 1-Step Daily?
+One evaluation phase, no minimum days, payouts any day. Rules, drawdown and payouts at a glance.
+Updated this week
+Table of contents
+1-Step Daily is the fastest way to a funded account at BrightFunded. You pass one evaluation phase, with no minimum number of trading days, no time limit and no consistency rule. Once you are funded, you can request a payout any day.
+How it works
+Evaluation. Reach the 10% profit target without breaching the daily loss or the max loss.
+Verification. When you pass, complete your KYC from the Verification section of your dashboard. Once it is approved, your account goes through a Security Check by our Risk Team.
+Funded account. After the check, your Trader Contract is sent automatically and your Funded Account is activated as soon as you sign it.
+Payouts. Request a payout any day from your first funded trading day. After each payout you receive a new account.
+Rules at a glance
+Rule
+1-Step Daily
+Evaluation phases
+1
+Profit target
+10%
+Minimum trading days
+None
+Time limit
+None
+Daily loss
+3%
+Max loss
+6% trailing, in real time on equity. It stops moving at your starting balance
+Consistency rule
+None
+Hold overnight and over the weekend
+Allowed
+News trading
+Allowed in the evaluation. Restricted on the funded account
+Profit split
+80% (90% with the 90% Payout Split add-on)
+15% Evaluation Reward
+Yes
+Account sizes
+$5K, $10K, $25K, $50K, $100K, $200K
+Platforms
+MT5, cTrader, DXtrade
+How your two loss limits work
+Daily loss (3%). It is calculated on the higher value between your balance and equity at the start of the day. On a $100,000 account you start the day with $100,000, so your equity cannot drop below $97,000 that day. It resets every day at the rollover, between 11:30 PM and 11:59 PM CET.
+Max loss (6% trailing). The limit follows your highest equity in real time, including floating profit. It starts at $94,000 on a $100,000 account and moves up as your equity grows. When your equity reaches $106,000, the limit locks at $100,000 and stops moving.
+How payouts work
+You can request a payout any day from your first funded trading day. There is no minimum and no maximum amount. A 1% profit buffer stays in the account. On a $100,000 account at 80% with a balance of $103,000, the profit above the buffer is $2,000 and you receive $1,600.
+Add-ons
+You can add the 90% Payout Split, the 100% Account Fee Refund and Swap-Free when you buy the account.
+Related Articles
+What is 2-Step Bright?
+What is Instant?
+1-Step Daily: evaluation rules
+2-Step Bright: evaluation rules
+Instant: account rules
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

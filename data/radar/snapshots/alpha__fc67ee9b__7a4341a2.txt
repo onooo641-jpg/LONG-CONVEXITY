@@ -7,7 +7,7 @@ Reset
 Reset Evaluation or Qualified Account
 B
 Written by Benjamin Chaffee
-Updated over a month ago
+October 28, 2026
 A Reset allows you to return your trading account to the default settings. This includes starting Account Balance, Maximum Loss Limit, and Trading Days.
 Evaluation Reset
 Traders may purchase a Reset at any point during their Evaluation subscription. You can purchase Evaluation Resets directly on your dashboard.

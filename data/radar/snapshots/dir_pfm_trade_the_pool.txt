@@ -57,7 +57,7 @@ Leave a Review
 Buy
 Tr
 Trade The Pool
-1563
+1564
 CEO
 Michael Katz
 Country
@@ -70,7 +70,7 @@ Years in Operation
 4
 Tr
 Trade The Pool
-1563
+1564
 Israel
 Set as Favorite
 CEO
@@ -129,7 +129,7 @@ Trade The Pool - Futures Prop Firm Details
 Firm Overview Instruments and Assets Leverage Commissions Consistency Rules Firm Rules Challenges Payout Policy Restricted Countries
 AI Summary
 Trade The Pool Firm AI Summary
-Trade The Pool is an Israeli-based proprietary trading firm established in September 2022, offering a 1-step evaluation program focused on stocks trading. The firm provides account sizes ranging from $20,000 to $260,000, with profit targets from $1,800 to $12,000 and maximum total drawdown limits from $900 to $6,000 depending on the challenge selected. Traders can access over 12,000 stocks, including penny stocks and ETFs, through TradingView and TraderEvolution platforms. The firm holds a 4.8...
+Trade The Pool is a prop trading firm based in Israel, established in September 2022. The firm offers funded accounts for stock trading through a 1-step evaluation process, with account sizes ranging from $20,000 to $260,000. Traders can access over 12,000 stocks, including penny stocks and ETFs, using TradingView or TraderEvolution platforms. Profit targets scale from $1,800 to $12,000 depending on the challenge selected, while maximum total drawdown limits range from $900 to $6,000. The firm...
 Show More
 Firm Overview
 Broker :

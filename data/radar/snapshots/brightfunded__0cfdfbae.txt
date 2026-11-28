@@ -882,18 +882,42 @@ Join For Free
 Frequently
 Asked Questions
 Everything you need to know.
-Your Daily Loss Limit, Explained
-Your Daily Loss Limit, Explained
-Copy Trading: What's Allowed and What's Not
-Copy Trading: What's Allowed and What's Not
-Can You Trade With an EA?
-Can You Trade With an EA?
-How the Payouts Work
-How the Payouts Work
-Understanding Swap Fees
-Understanding Swap Fees
-Find the Right Plan for You
-Find the Right Plan for You
+What is BrightFunded?
+BrightFunded is a prop trading evaluation firm. You trade a simulated account with virtual capital, and if you follow the rules you receive a share of the simulated profit as a real reward. Your only cost is the one-time account fee, and BrightFunded covers any losses on the account. You can choose CFD accounts or Futures evaluations.
+Learn more
+What is BrightFunded?
+BrightFunded is a prop trading evaluation firm. You trade a simulated account with virtual capital, and if you follow the rules you receive a share of the simulated profit as a real reward. Your only cost is the one-time account fee, and BrightFunded covers any losses on the account. You can choose CFD accounts or Futures evaluations.
+Learn more
+Futures or CFD: what’s the difference?
+Futures trades CME futures on NinjaTrader, Tradovate and TradingView, with one phase, a 6% profit target, no daily loss limit and an auto close at 4:45 PM ET, so no overnight holding. CFD is a separate program on MT5, cTrader and DXtrade, with 1-Step Daily, 2-Step Bright and Instant accounts. You can hold accounts in both, and the rules of one never apply to the other.
+Learn more
+Futures or CFD: what’s the difference?
+Futures trades CME futures on NinjaTrader, Tradovate and TradingView, with one phase, a 6% profit target, no daily loss limit and an auto close at 4:45 PM ET, so no overnight holding. CFD is a separate program on MT5, cTrader and DXtrade, with 1-Step Daily, 2-Step Bright and Instant accounts. You can hold accounts in both, and the rules of one never apply to the other.
+Learn more
+Is the money on a BrightFunded account real?
+All accounts are simulated: you trade virtual capital in the evaluation and in the funded stage, and Futures accounts use real-time CME data with simulated execution. Your payouts are real money, paid in USDC (ERC-20) or by bank transfer.
+Learn more
+Is the money on a BrightFunded account real?
+All accounts are simulated: you trade virtual capital in the evaluation and in the funded stage, and Futures accounts use real-time CME data with simulated execution. Your payouts are real money, paid in USDC (ERC-20) or by bank transfer.
+Learn more
+How fast are payouts?
+CFD payouts are processed within 1 day; they can take a little longer to reach your wallet or bank. On 1-Step Daily you can request a payout any trading day, and BrightPlus Futures accounts pay daily. Payouts are paid in USDC (ERC-20) or by bank transfer.
+Learn more
+How fast are payouts?
+CFD payouts are processed within 1 day; they can take a little longer to reach your wallet or bank. On 1-Step Daily you can request a payout any trading day, and BrightPlus Futures accounts pay daily. Payouts are paid in USDC (ERC-20) or by bank transfer.
+Learn more
+Is BrightFunded a broker? Is it regulated?
+No. BrightFunded is not a broker and is not connected to one. Prices come from data feed providers that aggregate institutional prices, and you cannot trade live markets with BrightFunded. Under UAE law no license is needed, because BrightFunded gives no investment advice and manages no money for clients.
+Learn more
+Is BrightFunded a broker? Is it regulated?
+No. BrightFunded is not a broker and is not connected to one. Prices come from data feed providers that aggregate institutional prices, and you cannot trade live markets with BrightFunded. Under UAE law no license is needed, because BrightFunded gives no investment advice and manages no money for clients.
+Learn more
+Who can join BrightFunded?
+You must be at least 18. You can’t join if you are on a sanctions list, have a criminal record for financial crime or terrorism, or were banned before for breaking the agreement. Residents and nationals of restricted countries can’t register.
+Learn more
+Who can join BrightFunded?
+You must be at least 18. You can’t join if you are on a sanctions list, have a criminal record for financial crime or terrorism, or were banned before for breaking the agreement. Residents and nationals of restricted countries can’t register.
+Learn more
 Not finding what you need?
 Not finding what you need?
 View all FAQs

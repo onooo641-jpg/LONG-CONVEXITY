@@ -1,0 +1,217 @@
+What changes between Evaluation and SIM Funded? | BrightFunded-Futures Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Search for articles...
+All Collections
+Evaluation
+What changes between Evaluation and SIM Funded?
+What changes between Evaluation and SIM Funded?
+A side by side comparison of the Evaluation and SIM Funded stages: rules, Max Loss Limit, payouts, breaches and what to expect after you pass.
+Updated over 3 weeks ago
+Table of contents
+BrightFunded Futures has two stages you trade in: the Evaluation and the SIM Funded Account. In the Evaluation you work toward a profit target . In SIM Funded there is no profit target : you generate balance and request payouts . You keep the same account number , and your dashboard shows a new card for each stage . After SIM Funded, traders who reach the thresholds can be invited to a Live account with the Prime Program .
+Evaluation vs SIM Funded: side by side
+Topic
+Evaluation
+SIM Funded
+Goal
+Reach the profit target (6% of the account)
+No profit target. Generate balance and request payouts
+Balance
+Starting balance
+Back to the starting balance, all metrics start from zero
+Consistency Rule
+Yes: best day at most 50% (BrightPlus) or 40% (BrightCore) of your total net profit. It only delays the pass
+No
+Minimum Trade Duration
+Yes: more than 50% of your winning profit must come from trades held longer than 15 seconds. It blocks the pass
+Yes, same rule. It blocks the payout request. Only trades closed since your last approved payout count
+Max Loss Limit
+Keeps trailing, never locks
+Keeps trailing until it locks at start + $100
+Payouts
+Not available
+Available
+Daily loss limit
+None
+None
+News trading
+Allowed
+Allowed
+Hedging
+Not allowed
+Not allowed
+Auto close at 4:45 PM ET
+Yes, never a breach
+Yes, never a breach
+Inactivity
+At least 1 new trade every 30 calendar days
+At least 1 new trade every 7 trading days. Holidays do not count
+Number of accounts
+Unlimited Evaluations at the same time
+Max 5 active SIM Funded Accounts per household
+Next step
+SIM Funded Account
+Prime Program: eligibility for a Live account
+Max Loss Limit in each stage
+Both stages: if your live equity, including open trades, touches the floor at any moment, the account is breached right away.
+Evaluation: the floor keeps trailing and never locks , until you pass or breach.
+SIM Funded: the floor keeps trailing until it locks at your starting balance + $100 ($50,100 on $50K). After the lock it never moves again, and a balance or equity below the locked floor is a breach.
+Read When does my Max Loss Limit lock? to see when the lock happens on each plan.
+Payouts in SIM Funded
+Payouts are available only in SIM Funded , on both plans.
+The minimum request is $250 . The payout cap and the $250 minimum apply to the amount you request .
+The payout cap is the main limit on both plans. BrightCore only: you can also request at most 50% of the current profit of your account (your balance minus your starting balance). BrightPlus has no 50% limit.
+The maximum you can request is the lowest of your plan limits. BrightPlus: the balance minus the buffer, and the payout cap. BrightCore: the payout cap, 50% of the current profit, and the balance minus (starting balance + $100).
+You receive 80% of the amount you request, or 100% with the 100% Profit Split addon. The full requested amount comes off your balance.
+Payouts are paid in USDC (ERC-20) or by bank transfer .
+Payouts are processed instantly after you request them.
+Profit you do not withdraw stays in the account and can be requested in later payouts.
+BrightPlus: after each approved payout you need fresh profit of at least 1% of your starting balance before you can request again.
+Each payout starts a new cycle. The Minimum Trade Duration and the BrightCore winning days only count what happened after your last approved payout.
+Size
+Payout cap per request
+Payout cap with 2x Payout Cap addon
+$25K
+$1,000
+$2,000
+$50K
+$2,000
+$4,000
+$100K
+$3,000
+$6,000
+$150K
+$4,000
+$8,000
+Payouts: BrightPlus vs BrightCore
+​
+BrightPlus
+BrightCore
+What unlocks a payout
+First payout: balance above the buffer, available 24 hours after your first trade. No winning days needed
+5 winning days since your last approved payout (3 with the 3 Day Payout Cycle addon)
+Between payouts
+Fresh profit of at least 1% of your starting balance after each approved payout: $250 (25K), $500 (50K), $1,000 (100K), $1,500 (150K). It is measured on your balance (closed trades): your balance must be at least the balance right after your last approved payout + that amount. It only unlocks the next request
+5 winning days (3 with the 3 Day Payout Cycle addon)
+How often
+Daily payouts: max one approved payout per trading day, with 1% fresh profit of the starting balance after each payout
+After each approved payout the winning day count goes back to zero and starts again from the next full trading day
+Winning day
+Not used
+A trading day with net profit from closed trades of at least $100 (25K), $200 (50K), $300 (100K) or $300 (150K)
+Buffer
+Start + MLL + $100, the withdrawal floor: $26,100 (25K), $52,100 (50K), $103,100 (100K), $154,600 (150K). It reads your balance, not equity. If your balance falls below it later, payouts pause until it is back above. It is not a breach
+No buffer
+Max request
+Balance minus the buffer, up to the cap
+Up to the cap and up to 50% of your current profit (balance minus starting balance). Your balance must stay at or above starting balance + $100
+When the MLL locks
+When your equity reaches the buffer
+When your first payout is approved
+Example: $50K BrightPlus
+Your balance is $55,000 . The buffer is $52,100, so $2,900 is available.
+The cap is $2,000, so you request $2,000 and receive $1,600 . Your balance is now $53,000 .
+To request again you need fresh profit of 1% of $50,000, which is $500 . Your balance must reach $53,500 . Then you can request up to $1,400 (the balance minus the buffer).
+👉 With the 2x Payout Cap addon the cap is $4,000, so on the first request you could request the full $2,900 and receive $2,320 (or $2,900 with the 100% Profit Split addon too).
+Example: $50K BrightCore
+You completed 5 winning days and your balance is $53,000 . Your balance must stay at or above $50,100, so $2,900 is available. Your current profit is $3,000, so 50% is $1,500 .
+The cap is $2,000, but 50% of the current profit is lower. You request up to $1,500 and receive $1,200 (or $1,500 with the 100% Profit Split addon).
+👉 With the 2x Payout Cap addon the cap is $4,000, but the maximum is still $1,500 , because 50% of the current profit is the lowest limit.
+What a breach means in each stage
+Cause
+Evaluation
+SIM Funded
+Equity touches the floor
+Breached right away. You can reset the same account or buy a new account. The time left to reset is shown on your dashboard
+Breached right away. You can reset the same account or buy a new account. The time left to reset is shown on your dashboard
+Inactivity
+Hard breach: the account is deactivated. You can reset the same account or buy a new account
+Hard breach: the account is deactivated. You can reset the same account or buy a new account
+Hedging, 1st time
+Soft breach: warning email, the hedged positions are closed and their profit is removed. The account keeps trading
+Soft breach: warning email, the hedged positions are closed and their profit is removed. The account keeps trading
+Hedging, 2nd time
+Hard breach. The account is closed. You can reset the same account or buy a new account
+Hard breach. The account is closed. You can reset the same account or buy a new account
+Copying other traders or group trading
+Hard breach of the Terms and Conditions. The account is closed. You can reset the same account or buy a new account
+Hard breach of the Terms and Conditions. The account is closed. You can reset the same account or buy a new account
+✅ Never a breach: reaching the profit target, the Consistency Rule, the Minimum Trade Duration and the auto close at 4:45 PM ET.
+You get 1 soft breach in the Evaluation, and 1 soft breach for the whole life of the SIM Funded Account. It does not come back after payouts or after a reset.
+Resets after a breach
+The only requirement for a reset is that the account is already breached . It works the same whichever stage the account was in, Evaluation or SIM Funded.
+You have a limited time to reset the account at a discount. Check the time left on your dashboard .
+The reset price is 45% off the full list price of that account (plan, size and all its addons). The reset keeps the same addons.
+You keep the same account number , and the account you get after a reset is always a Challenge : you go through the Evaluation again, with balance and metrics starting from zero. This is also true after a SIM Funded breach.
+When the reset time ends, you can no longer reset that account. You can buy a new account.
+What to expect after you pass
+Get your KYC approved. Your identity verification with Sumsub must be approved. If it is not approved, the account stays on hold.
+Sign the Futures contract. It is sent in the flow after KYC.
+Your SIM Funded Account activates on the same account number. The balance goes back to the starting balance, all metrics start from zero, and your dashboard shows a new card for the SIM Funded stage.
+👉 The maximum is 5 active SIM Funded Accounts per household. If you already have 5, the pass is blocked: the account stays in the Evaluation with a reason on your dashboard, and our Support team is notified. A slot opens when one of your SIM Funded Accounts is breached or closed.
+Read I passed. What happens next? for the full steps.
+After SIM Funded: the Prime Program
+When you reach one threshold, you become eligible for the Prime Program : 5 payouts on one account, 10 payouts across all your accounts, or 20% profit on one account.
+Our Risk team decides, based on your consistency and discipline, and can invite you earlier.
+You then choose to Go Live or Cash out . A Live account trades real CME capital and starts at $0.
+On a Live account the Max Loss Limit is end-of-day trailing, the split is 80/20, there is no daily loss limit and there is no Consistency Rule.
+Read What is the Prime Program? for the full steps, and Your Live account and the Prime Ladder for the bonuses.
+Frequently asked questions
+Do I get a new account number in SIM Funded?
+No. You keep the same account number. Your dashboard shows a new card for each stage.
+​
+Is there a profit target in SIM Funded?
+No. In SIM Funded you generate balance and request payouts.
+​
+Does the Consistency Rule apply in SIM Funded?
+No. It applies in the Evaluation only: 50% on BrightPlus and 40% on BrightCore.
+​
+Does the Minimum Trade Duration still apply?
+Yes. In SIM Funded it blocks the payout request, and only trades closed since your last approved payout count. It never fails your account.
+​
+Does my Max Loss Limit still trail in SIM Funded?
+Yes, until it locks at your starting balance + $100.
+​
+What happens to my Evaluation profit?
+Your balance goes back to the starting balance and all metrics start from zero in SIM Funded.
+​
+What is the minimum payout request?
+$250. The payout cap and the $250 minimum apply to the amount you request.
+​
+Can I request my whole profit?
+No, on both plans. On BrightPlus you can request the balance above the buffer, up to the payout cap. On BrightCore you can request at most 50% of the current profit of your account (your balance minus your starting balance), up to the payout cap. The profit you do not withdraw stays in the account and can be requested in later payouts.
+​
+Is there a limit besides the payout cap?
+Yes, and it depends on the plan. On BrightPlus you can request only what is above the buffer. On BrightCore you can also request at most 50% of the current profit, and your balance must stay at or above your starting balance + $100. BrightPlus has no 50% limit. The maximum you can request is the lowest of the limits of your plan.
+​
+How do daily payouts work on BrightPlus?
+Daily payouts exist on BrightPlus only. You can have max one approved payout per trading day, and after each approved payout you need fresh profit of at least 1% of your starting balance before you can request again. It is measured on your balance (closed trades). BrightCore has no daily payouts: it uses winning days.
+​
+How long does a payout take to process?
+Payouts are paid in USDC (ERC-20) or by bank transfer. Payouts are processed instantly after you request them.
+​
+Can I reset a SIM Funded Account?
+Yes. Any breached account can be reset, whichever stage it was in. The account you get after a reset is always a Challenge, so you go through the Evaluation again. You have limited time to reset: check the time left on your dashboard.
+​
+Is inactivity stricter in SIM Funded?
+Yes. In the Evaluation you need at least 1 new trade every 30 calendar days. In SIM Funded you need at least 1 new trade every 7 trading days, and holidays do not count.
+​
+Can my SIM Funded Account become a Live account?
+You can become eligible. When you reach one threshold (5 payouts on one account, 10 payouts across all your accounts, or 20% profit on one account), our Risk team decides, and then you choose to Go Live or Cash out. A Live account starts at $0. Read How do I reach the Prime Program? for the details.
+Where to go next
+I passed. What happens next?
+When does my Max Loss Limit lock?
+How do payouts work?
+Why was my account breached?
+What is the Prime Program?
+​
+GET FUNDED!
+Related Articles
+What is BrightFunded Futures?
+BrightPlus: complete guide
+How do payouts work?
+I passed. What happens next?
+Why can't I request a payout?
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

@@ -1,0 +1,76 @@
+Futures vs CFD: which one is for me? | BrightFunded-Futures Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Search for articles...
+All Collections
+Getting Started
+Futures vs CFD: which one is for me?
+Futures vs CFD: which one is for me?
+A side-by-side comparison of BrightFunded Futures and BrightFunded CFD, and a quick way to choose.
+October 26, 2026
+Table of contents
+BrightFunded offers two separate programs: Futures and CFD . They use different markets, platforms and rules. This guide helps you choose the one that fits how you trade.
+Side by side
+Futures
+CFD
+Markets
+CME futures: equity indices, currencies, energy, metals and agriculture
+Forex, indices, commodities including metals, and cryptocurrencies
+Platforms
+NinjaTrader, Tradovate and TradingView
+MT5, cTrader and DXTrade (availability depends on your country)
+Programs
+BrightPlus and BrightCore, both with a one-phase Evaluation
+1-Step, 2-Step Bright and 2-Step Classic
+Profit target
+6% in one phase
+1-Step: 10%. 2-Step Bright: 8% then 5%. 2-Step Classic: 10% then 5%
+Daily loss limit
+None
+1-Step: 3%. 2-Step Bright: 4%. 2-Step Classic: 5%
+Maximum loss
+Max Loss Limit that trails your highest point (intraday on BrightPlus, end of day on BrightCore)
+1-Step: 6% trailing. 2-Step Bright: 8% static. 2-Step Classic: 10% static
+Holding overnight
+Not possible. All positions close automatically at 4:45 PM ET, Monday to Friday
+Allowed. Swap fees apply
+News trading
+Allowed, with no blackout
+Read the CFD article "Can I trade news?"
+Payouts
+In USDC (ERC-20 network) or by bank transfer. BrightPlus can request daily. BrightCore after 5 winning days, or 3 with the addon
+Read the CFD articles "How can I get paid?" and "How does my Reward Split work?"
+Evaluation time limit
+None
+None
+Which one fits you?
+Choose Futures if...
+You like trading CME futures such as ES, NQ or CL.
+You want no daily loss limit, with the Max Loss Limit as your only loss rule.
+You close your trades inside the session and are fine with the automatic close at 4:45 PM ET.
+You want to use NinjaTrader, Tradovate or TradingView.
+​
+Choose CFD if...
+You want to trade forex, indices, commodities or crypto.
+You want to hold positions overnight or over the weekend.
+You prefer MT5, cTrader or DXTrade.
+You want a choice between a one-step and a two-step evaluation.
+Frequently asked questions
+Can I have both?
+Yes. Futures and CFD are separate programs, and each one has its own accounts, rules and platforms.
+​
+Do the rules of one program apply to the other?
+No. Each program has its own rules. Always check the rules of the program of your account.
+​
+Where can I read more?
+For Futures, read What is BrightFunded Futures? and BrightPlus vs BrightCore: which plan is right for me? . For CFD, visit the BrightFunded CFD Help Center.
+Not sure which one to choose? Contact our Support team and tell us how you like to trade.
+GET FUNDED!
+Related Articles
+What is BrightFunded Futures?
+BrightPlus vs BrightCore: which plan is right for me?
+Max Loss Limit explained
+How to read your dashboard
+What changes between Evaluation and SIM Funded?
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

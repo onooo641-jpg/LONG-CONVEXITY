@@ -1,0 +1,37 @@
+What is Market Depth? | BrightFunded CFD Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Discord 👾 Website 💻 English Deutsch Polski Português Español English
+Discord 👾 Website 💻 English Deutsch Polski Português Español English
+Search for articles...
+All Collections
+Trading Basics
+What is Market Depth?
+What is Market Depth?
+May 20, 2026
+Table of contents
+Market depth refers to the order book's ability to fill orders at different price levels. Understanding how it works helps you anticipate how your order size affects the price you receive.
+How Orders Are Filled
+When you place a trade, it gets matched against existing orders in the order book:
+Small orders are matched quickly at the best available price, since there are usually enough counter-orders at that level to fill them instantly.
+Large orders may need to move through multiple price levels in the order book to be fully filled. This means part of your order fills at the best price, and the rest fills at progressively less favorable prices — a phenomenon known as slippage .
+How This Affects You on BrightFunded
+The most visible effect of market depth is on your spread . As you increase or decrease your lot size, you will notice the spread changing in real time. This is expected behavior — it reflects the depth available in the order book at that moment.
+Example:
+A 0.1 lot order on EUR/USD may fill at the best available spread.
+A 10 lot order on the same pair may result in a wider effective spread, as the order needs to consume multiple levels of liquidity to be fully filled.
+Why Does BrightFunded Use Market Depth?
+BrightFunded sources its data feed from top-tier market data providers that aggregate pricing from multiple institutional sources. To accurately reflect real market conditions, the trading environment on BrightFunded must mirror the depth available in live institutional accounts.
+This ensures that the conditions you trade in during your Challenge and Funded Star stages are consistent with real-world trading.
+Key Takeaways
+The spread you see may widen as you increase your lot size — this is market depth working as intended, not a platform issue.
+Smaller lot sizes are generally less affected by depth.
+Market depth applies to all asset classes available on BrightFunded.
+GET FUNDED!
+Related Articles
+What is BrightFunded?
+Which strategies are prohibited at BrightFunded?
+Where does BrightFunded's Data Feed come from?
+Understanding Spreads and Slippage: Key Factors in Trading
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

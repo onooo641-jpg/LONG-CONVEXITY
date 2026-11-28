@@ -1,0 +1,55 @@
+The most frequently asked general questions | BrightFunded CFD Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Discord 👾 Website 💻 English Deutsch Polski Português Español English
+Discord 👾 Website 💻 English Deutsch Polski Português Español English
+Search for articles...
+All Collections
+General FAQ
+The most frequently asked general questions
+The most frequently asked general questions
+Updated over a week ago
+Table of contents
+1. What is Minimum Holding Time?
+At BrightFunded, we do not enforce a minimum holding time on trades. However, tick scalping is not allowed. We also recommend avoiding the closure of too many trades in very short periods of time.
+2. What kind of DD Style BrightFunded offer?
+On 1-Step Daily, 2-Step Bright and Instant, the daily loss is calculated on the higher of your balance and equity at the start of the day. It resets between 11:30 PM and 11:59 PM CET, during the rollover. The max loss depends on your model: 1-Step Daily 6% trailing, 2-Step Bright 8% static, Instant 5% trailing. See the rules article of your model. Accounts bought before 16 Nov 2026 keep the rules they were bought with, see the OLD plans folder. More information
+3. Is Stop Loss mandatory?
+No, using a Stop Loss is not mandatory at BrightFunded. However, it is a highly recommended risk management tool that helps protect your capital by limiting potential losses.
+4. Can I use Copy Trading?
+Yes, copy trading is allowed only between accounts owned by the same person. This includes BrightFunded accounts, evaluation firm accounts, or retail brokerage accounts, as long as all accounts are under your name.
+5. Is my country restricted to buy a challenge?
+You are eligible to buy a challenge unless you reside in one of the following restricted countries: Cuba, Iran, North Korea, Pakistan, Syria, or Vietnam.
+6. How long does it take to receive a payout?
+Once requested, payouts are processed by our finance team within 1 day.
+7. How many challenges can I buy?
+There is no limit to the number of challenges you can purchase.
+However, please note that during the Funded Phase, the maximum total capital you can hold is $400,000. If you pass additional Phase 2 accounts that exceed this limit, those accounts will be placed on hold until one of your funded accounts is breached.
+8. What are Market Rollover Spreads?
+In the forex market, rollover time (usually between 11:00 PM and 12:00 AM CET) marks the end of one trading day and the beginning of the next.
+During this period, market liquidity drops significantly as major institutions reset their positions. As a result, spreads (the difference between the bid and ask prices) often widen sharply. These wider spreads can cause unexpected losses.
+9. Can I register as a company?
+Yes, at BrightFunded you can register as a company. To do so, simply complete your initial registration as an individual, using your company address. Once your account is created, you can add your business information in the Profile section.
+​
+​ Will the invoice be in the company name?
+Yes. Challenge payment invoices will be issued under your company name, provided you have added your company information to your profile. Make sure your company details are updated in your account settings before completing a purchase.
+Will payouts be made directly to the Company?
+Yes. Payouts can be sent directly to your company bank account, as long as it was previously registered in your profile. Please ensure your company account details are saved and verified before requesting a withdrawal.
+Is a KYB process required?
+No. KYB (Know Your Business) process is not required. We only conduct KYC (Know Your Customer) verification, which is mandatory for all users. There is no business entity verification process at this time.
+10. Can I use someone else's card to purchase an account?
+Yes, it is possible to use someone else’s card to purchase an account, as long as you have their explicit permission. However, the payment providers may reject the transaction if they detect that the buyer's name does not match the cardholder's. This is part of their security measures to prevent fraud.
+Still, if you have the cardholder’s consent, you can try to complete the purchase. In many cases, the transaction will be approved without any issues.
+11. Is there a consistency rule at BrightFunded?
+There is no consistency rule on 1-Step Daily and 2-Step Bright. On Instant, there is a 15% consistency rule: no single day can be more than 15% of your total profit in the cycle. It is one of the payout requirements and it resets when you request a payout. Accounts bought before 16 Nov 2026 have no consistency rule.
+12. Is there a profit cap at BrightFunded?
+BrightFunded does not have a profit cap : your earnings have no per-cycle withdrawal limit and are paid under our standard payout rules. More information
+GET FUNDED!
+Related Articles
+What are the current rules for the evaluation process? (OLD)
+BrightFunded 1-Step (OLD)
+BrightFunded 2-Step – Classic (OLD)
+Which model is right for me?
+What are the current rules for the evaluation process?
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

@@ -89,10 +89,10 @@ By using the copier, traders acknowledge that it is their responsibility to mana
 ​
 Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
 Related Articles
-Connecting Finamark to Rithmic
 Handling Technical Issues and Managing Positions in rTrader Pro
 Connect WealthCharts to Rithmic
-NinjaTrader Trade Copier – Complete Setup Guide
+Risk Management - Rithmic rTrader
+RTrader Pro Mobile App
 Supported Platforms
 On this page
 What is the rTrader Pro Copier?

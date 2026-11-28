@@ -1,4 +1,4 @@
-# Prop-firm automation / country sentences (2026-11-27)
+# Prop-firm automation / country sentences (2026-11-28)
 
 ## Alpha Capital Group — https://alphacapitalgroup.uk/
 - AUTO: Expert Advisors supported
@@ -1172,7 +1172,7 @@
 - AUTO: Your account upgrades to 'funded' automatically when you hit your target.
 
 ## Breakout — https://breakoutprop.com/bfcm-terms
-- AUTO: Offer B applies automatically and needs no code, including for an evaluation bought with an Offer A code.
+- AUTO: Offer B applies automatically and needs no code, including for an evaluation bought with an Offer A c
 
 ## Breakout — https://breakoutprop.com/blog/mastering-drawdown-a-guide-to-equity-limits-at-breakout/
 - AUTO: This is an objective, automated process to ensure fairness and transparency.
@@ -1223,13 +1223,11 @@
 - AUTO: The industry standard for technical analysis and powerful automated trading.
 - AUTO: The industry standard for technical analysis and powerful automated trading.
 - AUTO: The industry standard for technical analysis and powerful automated trading.
-- AUTO: Copy Trading: What's Allowed and What's Not
-- AUTO: Copy Trading: What's Allowed and What's Not
-- AUTO: Can You Trade With an EA?
-- AUTO: Can You Trade With an EA?
 - AUTO: We do not provide trading signals or strategies.
 - AUTO: We do not provide trading signals or strategies.
 - AUTO: We do not provide trading signals or strategies.
+- COUNTRY: Residents and nationals of restricted countries can’t register.
+- COUNTRY: Residents and nationals of restricted countries can’t register.
 - COUNTRY: Services related to the MetaTrader 5 platform and the associated information on this website are not intended for residents or citizens of the United States, the United Arab Emirates or other restricted countries.
 - COUNTRY: Services related to the MetaTrader 5 platform and the associated information on this website are not intended for residents or citizens of the United States, the United Arab Emirates or other restricted countries.
 - COUNTRY: Services related to the MetaTrader 5 platform and the associated information on this website are not intended for residents or citizens of the United States, the United Arab Emirates or other restricted countries.
@@ -1271,10 +1269,19 @@
 - AUTO: The industry standard for technical analysis and powerful automated trading.
 - AUTO: The industry standard for technical analysis and powerful automated trading.
 - AUTO: The industry standard for technical analysis and powerful automated trading.
-- AUTO: Copy Trading: What's Allowed and What's Not
-- AUTO: Copy Trading: What's Allowed and What's Not
-- AUTO: Can You Trade With an EA?
-- AUTO: Can You Trade With an EA?
+- AUTO: We do not provide trading signals or strategies.
+- AUTO: We do not provide trading signals or strategies.
+- AUTO: We do not provide trading signals or strategies.
+- COUNTRY: Residents and nationals of restricted countries can’t register.
+- COUNTRY: Residents and nationals of restricted countries can’t register.
+- COUNTRY: Services related to the MetaTrader 5 platform and the associated information on this website are not intended for residents or citizens of the United States, the United Arab Emirates or other restricted countries.
+- COUNTRY: Services related to the MetaTrader 5 platform and the associated information on this website are not intended for residents or citizens of the United States, the United Arab Emirates or other restricted countries.
+- COUNTRY: Services related to the MetaTrader 5 platform and the associated information on this website are not intended for residents or citizens of the United States, the United Arab Emirates or other restricted countries.
+
+## BrightFunded — https://brightfunded.com/futures
+- AUTO: The industry standard for technical analysis and powerful automated trading.
+- AUTO: Overnight and weekend holding isn’t possible: all positions close automatically at 4:45 PM ET, Monday to Friday, and that is never a breach.
+- AUTO: Overnight and weekend holding isn’t possible: all positions close automatically at 4:45 PM ET, Monday to Friday, and that is never a breach.
 - AUTO: We do not provide trading signals or strategies.
 - AUTO: We do not provide trading signals or strategies.
 - AUTO: We do not provide trading signals or strategies.
@@ -1315,9 +1322,44 @@
 - COUNTRY: Services related to the MetaTrader 5 platform and the associated information on this website are not intended for residents or citizens of the United States, the United Arab Emirates or other restricted countries.
 - COUNTRY: Services related to the MetaTrader 5 platform and the associated information on this website are not intended for residents or citizens of the United States, the United Arab Emirates or other restricted countries.
 
+## BrightFunded — https://futures-help.brightfunded.com/en/articles/17507316-brightplus-vs-brightcore-which-plan-is-right-for-me
+- AUTO: On both plans all positions close automatically at 4:45 PM ET.
+
+## BrightFunded — https://futures-help.brightfunded.com/en/articles/17666633-futures-vs-cfd-which-one-is-for-me
+- AUTO: All positions close automatically at 4:45 PM ET, Monday to Friday
+- AUTO: You close your trades inside the session and are fine with the automatic close at 4:45 PM ET.
+
+## BrightFunded — https://futures-help.brightfunded.com/en/collections/19779344-getting-started
+- COUNTRY: Who can join and restricted countries
+
 ## BrightFunded — https://help.brightfunded.com/en/articles/10855521-what-trading-platform-does-brightfunded-offer
 - COUNTRY: This also applies to restricted countries.
 - COUNTRY: This also applies to restricted countries.
+
+## BrightFunded — https://help.brightfunded.com/en/articles/12000749-the-most-frequently-asked-general-questions
+- AUTO: However, tick scalping is not allowed.
+- AUTO: Can I use Copy Trading?
+- AUTO: Yes, copy trading is allowed only between accounts owned by the same person.
+- COUNTRY: Is my country restricted to buy a challenge?
+- COUNTRY: You are eligible to buy a challenge unless you reside in one of the following restricted countries: Cuba, Iran, North Korea, Pakistan, Syria, or Vietnam.
+
+## BrightFunded — https://help.brightfunded.com/en/articles/18450308-what-is-1-step-daily
+- AUTO: After the check, your Trader Contract is sent automatically and your Funded Account is activated as soon as you sign it.
+
+## BrightFunded — https://help.brightfunded.com/en/articles/18450311-what-is-2-step-bright
+- AUTO: After the check, your Trader Contract is sent automatically and your Funded Account is activated as soon as you sign it.
+
+## BrightFunded — https://help.brightfunded.com/en/articles/8205805
+- COUNTRY: What countries are restricted at BrightFunded?
+
+## BrightFunded — https://help.brightfunded.com/en/articles/8205805-who-can-join-brightfunded
+- COUNTRY: What countries are restricted at BrightFunded?
+
+## BrightFunded — https://help.brightfunded.com/en/articles/9241621
+- COUNTRY: What countries are restricted at BrightFunded?
+
+## BrightFunded — https://help.brightfunded.com/en/articles/9241621-what-capital-will-i-trade-at-brightfunded
+- COUNTRY: What countries are restricted at BrightFunded?
 
 ## BrightFunded — https://help.brightfunded.com/en/articles/9241704-which-strategies-are-prohibited-at-brightfunded
 - AUTO: Use of Automated Software, AI, or High-Speed Trading Tools.
@@ -1327,11 +1369,44 @@
 - AUTO: Abusive Strategy Types: Grid Trading, Arbitrage, Tick Scalping, High-Frequency Trading (HFT).
 - AUTO: High-Frequency Trading (HFT)
 
+## BrightFunded — https://help.brightfunded.com/en/articles/9268774-how-to-scale-up-my-funded-star-account-infinitely
+- AUTO: Important : Please note that each trader is responsible for contacting the support team to request the scaling plan, as this process is not automatic.
+
+## BrightFunded — https://help.brightfunded.com/en/articles/9286630-what-countries-are-restricted-at-brightfunded
+- COUNTRY: What countries are restricted at BrightFunded?
+- COUNTRY: What countries are restricted at BrightFunded?
+- COUNTRY: What countries are restricted at BrightFunded?
+- COUNTRY: Restricted Country List
+
+## BrightFunded — https://help.brightfunded.com/en/articles/9662025-who-can-become-a-brightfunded-affiliate
+- COUNTRY: What countries are restricted at BrightFunded?
+
 ## BrightFunded — https://help.brightfunded.com/en/collections/5447117-about-brightfunded
 - COUNTRY: What countries are restricted at BrightFunded?
 
 ## BrightFunded — https://help.brightfunded.com/en/collections/9320061-trading-rules-guidelines
 - AUTO: Is copy-trading allowed?
+
+## BrightFunded — https://www.brightfunded.com/
+- AUTO: The industry standard for technical analysis and powerful automated trading.
+- AUTO: The industry standard for technical analysis and powerful automated trading.
+- AUTO: The industry standard for technical analysis and powerful automated trading.
+- AUTO: We do not provide trading signals or strategies.
+- AUTO: We do not provide trading signals or strategies.
+- AUTO: We do not provide trading signals or strategies.
+- COUNTRY: Residents and nationals of restricted countries can’t register.
+- COUNTRY: Residents and nationals of restricted countries can’t register.
+- COUNTRY: Services related to the MetaTrader 5 platform and the associated information on this website are not intended for residents or citizens of the United States, the United Arab Emirates or other restricted countries.
+- COUNTRY: Services related to the MetaTrader 5 platform and the associated information on this website are not intended for residents or citizens of the United States, the United Arab Emirates or other restricted countries.
+- COUNTRY: Services related to the MetaTrader 5 platform and the associated information on this website are not intended for residents or citizens of the United States, the United Arab Emirates or other restricted countries.
+
+## BrightFunded — https://www.brightfunded.com/payouts
+- AUTO: We do not provide trading signals or strategies.
+- AUTO: We do not provide trading signals or strategies.
+- AUTO: We do not provide trading signals or strategies.
+- COUNTRY: Services related to the MetaTrader 5 platform and the associated information on this website are not intended for residents or citizens of the United States, the United Arab Emirates or other restricted countries.
+- COUNTRY: Services related to the MetaTrader 5 platform and the associated information on this website are not intended for residents or citizens of the United States, the United Arab Emirates or other restricted countries.
+- COUNTRY: Services related to the MetaTrader 5 platform and the associated information on this website are not intended for residents or citizens of the United States, the United Arab Emirates or other restricted countries.
 
 ## Bulenox — https://bulenox.com/faq
 - AUTO: Can I use bots, algos or trade copiers?
@@ -2460,22 +2535,6 @@
 - AUTO: They should also avoid any activities that may cause financial or other harm to The Provider, such as over-leveraging, over-exposure, making one-sided bets, grid trading, tick scalping, or account rolling.
 - AUTO: 2.1.8 Engaging in copy trading, where trades mimic or replicate the trading activities of other traders or entities without prior authorization, is prohibited for the Provider.
 - AUTO: Should any ambiguity or question regarding intent or interpretation arise, it shall be resolved in a neutral manner and not automatically against the drafting party.
-
-## FundedNext Futures — https://fundednext.com/privacy-policy
-- AUTO: Automated Processing, Profiling and Significant Decisions
-- AUTO: 5.2 Automatically Through Your Use of the Services
-- AUTO: We collect certain technical, device, usage, behavioural, monitoring and activity data automatically when you access or use our website, systems, platform environment, dashboards, portals, communications interfaces or other parts of the Services.
-- AUTO: We process Personal Data to send service-related communications, account notices, legal notices, operational alerts, security messages, compliance-related requests and other communications necessary for the administration or protection of the Services and our relationship with you.
-- AUTO: 6.12 Phone-Based, SMS and Automated Outreach
-- AUTO: Where permitted by applicable law, we may use the telephone number or other communication details that you provide to us to contact you regarding service matters, account administration, security, support, operational matters, programme updates, marketing communications or related outreach, including through manual, automated or AI-assisted means.
-- AUTO: timing patterns, behavioural indicators and usage signals;
-- AUTO: suspicious, irregular, prohibited or escalated activity signals; and
-- AUTO: For the avoidance of doubt, FundedNext may analyse account activity, behavioural patterns, technical signals, device associations and related data to detect direct or indirect attempts to misuse the Services, circumvent our rules, exploit the platform environment unfairly, obtain benefits improperly or interfere with the lawful and intended operation of the Services.
-- AUTO: Automated Processing, Profiling and Significant Decisions
-- AUTO: Such processing may include profiling based on technical, behavioural, transactional, usage, verification, payout, account-linkage or payment-related signals.
-- AUTO: Where applicable data protection law grants you rights in relation to decisions based solely on automated processing that produce legal or similarly significant effects, FundedNext will implement such safeguards as are required by law, which may include review procedures and, where applicable, the opportunity to request human intervention.
-- AUTO: Nothing in this Notice shall be interpreted as limiting FundedNext's right to implement reasonable and proportionate automated or semi-automated controls designed to protect the Services, prevent fraud, preserve evidence, safeguard operational integrity, manage payment or security risks, or enforce contractual restrictions and platform rules.
-- AUTO: the right to request review in relation to certain automated decisions, where applicable law so provides; and
 
 ## FundedNext Futures — https://fundednext.com/terms-of-service
 - AUTO: Participation in one modality (for example, CFDs) does not automatically grant the right of access, eligibility, phase migration, benefits or Performance Rewards in another modality (for example, Futures), unless expressly indicated by the Provider.

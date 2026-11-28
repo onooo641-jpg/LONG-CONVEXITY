@@ -1,0 +1,50 @@
+How can I request my payout? | BrightFunded CFD Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Discord 👾 Website 💻 English Deutsch Polski Português Español English
+Discord 👾 Website 💻 English Deutsch Polski Português Español English
+Search for articles...
+All Collections
+Billing and Payouts
+How can I request my payout?
+How can I request my payout?
+PAYOUT REQUEST
+Updated today
+Request every payout from the Payout section of your dashboard: https://www.brightfunded.com/payouts . Close all your trades and pending orders first.
+Model
+First payout
+Next payouts
+Profit buffer
+Minimum payout
+1-Step Daily
+Any trading day from your first funded trading day
+Any trading day (one approved payout per trading day)
+1% stays in the account
+None
+2-Step Bright
+14 calendar days after your first funded trade
+Every 14 days. Every 7 with Weekly Payouts
+None
+None
+Instant
+When all requirements are met
+When all requirements are met
+3%, built before the first payout
+1% of account size
+OLD plans
+30 days after your first funded trade
+Every 14 days. With an add-on, every 14 or 7 from the first cycle
+None
+None
+Each payout cycle starts counting from your first trade of that cycle.
+1-Step Daily: Withdrawable = (Balance − Starting balance − 1% buffer) × Profit split. Only one payout can be approved per trading day. Each payout takes all the profit above the 1% buffer, and any new profit made later that day can be requested the next trading day.
+Instant: Withdrawable = (Closed balance − 103% of starting balance) × Profit split. Each payout takes everything above the 3% buffer, and your balance goes back to 103% of your starting balance.
+Once your payment has been requested, our finance team processes it in a maximum of 1 day . It can take a little longer to show in your wallet or bank, depending on the broker and your bank institution.
+GET FUNDED!
+Related Articles
+What is 1-Step Daily?
+How do payouts work on 1-Step Daily?
+What is 2-Step Bright?
+How do payouts work on 2-Step Bright?
+How does my Reward Split work on my Funded Account?
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃

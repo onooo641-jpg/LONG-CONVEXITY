@@ -7,13 +7,14 @@ Live accounts
 Live accounts: loss floor, cushion and reserve
 Live accounts: loss floor, cushion and reserve
 How a live account protects capital and pays you.
-October 18, 2026
+Updated today
 Table of contents
 Loss floor
 Every live account starts at $0 with a loss floor below it ($2,000 on a 50K).
-The floor moves only at the daily close, to sit one floor-width below your best close. Intraday dips below it are safe if the day closes above.
+The floor moves only at the daily close, to sit one floor-width below your best close.
+Your equity can never go below the floor, not even intraday. It is checked in real time, open trades included. If your equity touches or goes below the floor at any moment, the account is closed immediately, even if the market comes back before the close.
 Once it reaches $0 it stops there permanently.
-If a trading day closes below the floor, the account is lost, including any cushion it holds. There is no daily loss limit.
+When the account is closed for hitting the floor, it is lost, including any cushion it holds. There is no separate daily loss limit: the floor is the limit, and it always applies.
 Cushion
 Half the starting floor ($1,000 on a 50K). Your first profits fill it.
 Profit above the cushion is withdrawable from day one.
@@ -28,10 +29,10 @@ Getting paid
 Payouts are daily with a $200 minimum: live profit above the cushion plus any released Reserve. The split is 90%.
 Related Articles
 Elite drawdown, daily loss limit and contracts
-Maximum Daily Profit and going live
 The Live Trading Program
 Instant rules at a glance
 Instant Max Loss Limit and Daily Loss Limit
+Express Live: Rules and FAQs
 Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
 Table of contents
 FuturesElite FAQ

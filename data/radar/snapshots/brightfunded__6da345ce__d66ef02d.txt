@@ -1,0 +1,70 @@
+What is 2-Step Bright? | BrightFunded CFD Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Discord 👾 Website 💻 English Deutsch Polski Português Español English
+Discord 👾 Website 💻 English Deutsch Polski Português Español English
+Search for articles...
+All Collections
+BrightFunded Plans & Challenge Essentials
+BrightFunded Plans
+2-Step Bright
+What is 2-Step Bright?
+What is 2-Step Bright?
+Two phases with achievable targets, a static max loss and no time limit. Rules, drawdown and payouts at a glance.
+Updated this week
+Table of contents
+2-Step Bright is the model for traders who want more room to trade. You pass two evaluation phases with achievable targets, the max loss never moves, and there is no time limit and no consistency rule. Once you are funded, you can request a payout every 14 days.
+How it works
+Phase 1. Reach the 8% profit target and complete 3 profitable days.
+Phase 2. Reach the 5% profit target and complete 3 profitable days. A profitable day is a day you close with at least 0.5% net profit.
+Verification. When you pass Phase 2, complete your KYC from the Verification section of your dashboard. Once it is approved, your account goes through a Security Check by our Risk Team.
+Funded account. After the check, your Trader Contract is sent automatically and your Funded Account is activated as soon as you sign it.
+Payouts. Your first payout is available 14 calendar days after your first funded trade, and then every 14 days.
+Rules at a glance
+Rule
+2-Step Bright
+Evaluation phases
+2
+Profit target
+Phase 1: 8%. Phase 2: 5%
+Minimum trading days
+3 profitable days per phase (you must close trades on 3 separate days)
+Time limit
+None
+Daily loss
+4%
+Max loss
+8% static, fixed from your starting balance
+Consistency rule
+None
+Hold overnight and over the weekend
+Allowed
+News trading
+Allowed in the evaluation. Restricted on the funded account
+Profit buffer and minimum payout
+None
+Profit split
+80% (90% with the 90% Payout Split add-on)
+15% Evaluation Reward
+Yes
+Account sizes
+$5K, $10K, $25K, $50K, $100K, $200K
+Platforms
+MT5, cTrader, DXtrade
+How your two loss limits work
+Daily loss (4%). It is calculated on the higher value between your balance and equity at the start of the day. On a $100,000 account you start the day with $100,000, so your equity cannot drop below $96,000 that day. It resets every day at the rollover, between 11:30 PM and 11:59 PM CET.
+Max loss (8% static). It is fixed from your starting balance and it never moves. On a $100,000 account the absolute limit is $92,000, no matter how much your account grows.
+How payouts work
+Your first payout is available 14 calendar days after your first funded trade, and then you can request every 14 days. There is no profit buffer and no minimum amount. Each payout cycle starts counting from your first trade of that cycle. With the Weekly Payouts add-on you can request every 7 days.
+How fast can you pass?
+There is no time limit. The fastest possible pass takes 6 trading days: 3 profitable days in each phase.
+Add-ons
+You can add Weekly Payouts, No Min. Trading Days, the 90% Payout Split, the 100% Account Fee Refund and Swap-Free when you buy the account.
+Related Articles
+BrightFunded 2-Step – Bright (OLD)
+BrightFunded 2-Step – Classic (OLD)
+What is 1-Step Daily?
+What is Instant?
+2-Step Bright: evaluation rules
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

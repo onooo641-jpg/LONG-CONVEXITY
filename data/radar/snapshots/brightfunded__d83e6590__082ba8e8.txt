@@ -1,0 +1,119 @@
+What is BrightFunded Futures? | BrightFunded-Futures Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Search for articles...
+All Collections
+Getting Started
+What is BrightFunded Futures?
+What is BrightFunded Futures?
+How the program works from buying an Evaluation to getting paid, with all the key facts in one place.
+Updated over 3 weeks ago
+Table of contents
+BrightFunded Futures is our futures prop trading program. You buy an Evaluation , pass it by reaching a profit target without breaking the rules, and then trade a SIM Funded Account where you can request payouts , paid in USDC (ERC-20) or by bank transfer, from the balance you generate. One phase, no time limit, no daily loss limit and no monthly fees. Traders with a strong payout record can later be invited to a Live account with the Prime Program .
+How does it work?
+Step 1: Buy an Evaluation
+Choose a plan ( BrightPlus or BrightCore ) and an account size ( $25K, $50K, $100K or $150K ). You pay a one-time fee . There is no activation fee and no monthly subscription.
+Step 2: Pass the Evaluation
+You only need to pass one phase , with no time limit. You pass when all of these are true:
+You reached the profit target (6% of the account).
+The Consistency Rule is met.
+The Minimum Trade Duration rule is met.
+Your equity never touched the Max Loss Limit floor .
+Step 3: Get your SIM Funded Account and request payouts
+After you pass, your KYC must be approved and you sign the Futures contract . Your SIM Funded Account then activates on the same account number , with the balance back at the starting balance. From there you can request payouts from the balance you generate, paid in USDC (ERC-20) or by bank transfer .
+Step 4 (optional): Go Live with the Prime Program
+A Live account trades real CME capital and starts at $0 . You earn it: when you reach one of these thresholds, you become eligible for the Prime Program:
+5 payouts on one account.
+10 payouts across all your accounts.
+20% profit on one account (for example, $10K on a 50K account).
+Our Risk team decides, based on your consistency and discipline, and can invite you earlier. Then you choose to Go Live or Cash out . Read What is the Prime Program? for all the details.
+The program at a glance
+Topic
+What to know
+Type of accounts
+Evaluation and SIM Funded Accounts are simulated, using real-time CME market data. A Live account, earned through the Prime Program, trades real CME capital.
+Instruments
+CME futures: indices, currencies, energy, metals and agriculture
+Plans
+BrightPlus and BrightCore
+Account sizes
+$25K, $50K, $100K and $150K
+Fee
+One-time fee, $0 activation fee, no monthly subscription
+Phases
+One phase only
+Time limit
+None
+Daily loss limit
+None. The Max Loss Limit is the only loss rule.
+Platforms
+NinjaTrader, Tradovate and TradingView, all included free
+Evaluations at the same time
+Unlimited
+SIM Funded Accounts at the same time
+Up to 5 per household, any plan and size
+Maximum allocation
+$750,000 in total (Up to 5 per household, any plan and size)
+Operated by
+BrightFunded LLC (Wyoming, USA), separate from our CFD business
+Evaluation vs SIM Funded: what changes?
+Rule
+Evaluation
+SIM Funded
+Goal
+Reach the profit target
+Earn profits and request payouts
+Consistency Rule
+Yes (50% BrightPlus, 40% BrightCore)
+No
+Minimum Trade Duration
+Yes, blocks the pass
+Yes, blocks the payout
+Max Loss Limit
+Keeps trailing, never locks
+Trails until it locks at your starting balance + $100
+Inactivity
+1 new trade every 30 calendar days
+1 new trade every 7 trading days (holidays do not count)
+Number of accounts
+Unlimited
+Maximum 5 per household
+Rule Summary
+Profit target: 6% of the account
+Max Loss Limit: the only loss rule, trailing
+News trading: allowed
+Hedging: not allowed
+Auto close: 4:45 PM ET , Monday to Friday
+Payout split: 80% , or 100% with the addon
+Payout limit: the payout cap is the main limit on both plans. BrightCore only: you can also request at most 50% of the current profit of your account
+Frequently asked questions
+Are the accounts real?
+The Evaluation and SIM Funded Accounts are simulated , but the payouts are paid to you in USDC or by bank transfer , from the balance you generate on your SIM Funded Account. A Live account is different: it trades real CME capital and you earn it through the Prime Program.
+Do I have to pay every month?
+No. You pay a one-time fee when you buy the Evaluation.
+Is there a time limit to pass?
+No. You can take as long as you need, as long as you place at least 1 new trade every 30 calendar days and follow the rules.
+​
+Can I have more than one account?
+Yes. You can run unlimited Evaluations at the same time and have up to 5 active SIM Funded Accounts per household.
+Do I keep the same account number after I pass?
+Yes. You keep one account number per purchase through the Evaluation, SIM Funded and any reset. Your dashboard shows a new card for each stage.
+Can I request my whole profit?
+No. The payout cap is the main limit on both plans. On BrightCore you can also request at most 50% of the current profit of your account (your balance minus your starting balance). BrightPlus has no 50% limit, but you can request only what is above the buffer. The profit you do not withdraw stays in the account and can be requested in later payouts.
+How do I get a Live account?
+You earn it. Reach one threshold (5 payouts on one account, 10 payouts across all your accounts, or 20% profit on one account) and you become eligible for the Prime Program. Our Risk team decides, and then you choose to Go Live or Cash out. A Live account starts at $0.
+Where to go next
+Not sure which plan to pick? Read BrightPlus vs BrightCore: which plan is right for me?
+Want every rule of one plan on a single page? Read BrightPlus: complete guide or BrightCore: complete guide .
+Ready to start? Read How does the Evaluation work?
+Want to know how a Live account works? Read What is the Prime Program? .
+​
+GET FUNDED!
+Related Articles
+Consistency Rule
+I passed. What happens next?
+Is this a real account? How the simulated environment works
+What counts as a trading day?
+What changes between Evaluation and SIM Funded?
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

@@ -47,7 +47,7 @@ Token
 Foundation Institutional Docs IR Contact Buy IMU
 Explore Bounties Log in
 Explore: Bug Bounties
-Metrics are updated daily, with a 2-week delay after reports are resolved to maintain confidentiality. Last updated on Nov 26th 2026 at 16:00 UTC
+Metrics are updated daily, with a 2-week delay after reports are resolved to maintain confidentiality. Last updated on Nov 27th 2026 at 16:00 UTC
 Bounties Audit Competitions Competitions
 I'm feeling lucky Roll the dice
 All
@@ -74,7 +74,7 @@ Program Type
 Project Type
 Language
 Select to limit results
-Clear Filters View 151 Bounties
+Clear Filters View 152 Bounties
 Arbitration
 Immunefi Standard
 KYC Not Required
@@ -87,8 +87,8 @@ Primacy of Impact
 Safe Harbor
 Triaged by Immunefi
 Vaults
-Clear Filters View 151 Bounties
-Showing all 151 bounty programs
+Clear Filters View 152 Bounties
+Showing all 152 bounty programs
 NAME
 VAULT TVL
 MAX BOUNTY
@@ -96,7 +96,7 @@ TOTAL PAID
 MED. RESOLUTION TIME
 LAST UPDATED
 SSV Network
-$348.2k $250k Private
+$344.4k $250k Private
 Private
 24/11/2026 View bounty
 ENS Triaged by Immunefi
@@ -122,9 +122,9 @@ $11.5k $30k Private
 Private
 24/11/2026 View bounty
 DeXe Protocol
-$8.2k $500k Private
+$8.3k $500k Private
 Private
-24/11/2026 View bounty
+27/11/2026 View bounty
 Immunefi Triaged by Immunefi
 $7.2k $50k $76.2k 9 hours 24/11/2026 View bounty
 StackingDAO

@@ -1,0 +1,133 @@
+How to read your dashboard | BrightFunded-Futures Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Search for articles...
+All Collections
+Getting Started
+How to read your dashboard
+How to read your dashboard
+What each label on your Futures account card and account page means: balance, floor, Current, Trading Objectives and more.
+October 26, 2026
+Table of contents
+Your BrightFunded Futures dashboard shows every account as a card . Inside each account you see the numbers that matter most: your balance , your floor , how much room you have left and your progress on the Trading Objectives . This guide explains each label so you always know what you are looking at.
+Your accounts: one card for each stage
+You get one account number per purchase , and you keep it through every stage: Evaluation, SIM Funded and any reset. The dashboard shows a new card for each stage , and the stage badge on the card tells you where the account is: Evaluation or SIM Funded . After a breach, the time left to use a reset is shown on the dashboard.
+The left menu
+Dashboard
+Profile
+Accounts Overview
+Payouts
+Contracts
+Trading Platform
+Billing
+Contact Us
+The account card
+Each card gives you a quick summary of one account.
+Label on the card
+What it shows
+Plan and size
+Your plan and account size, for example "BrightPlus 150k".
+Account number
+Your account number, for example #BFPLUS... It stays the same through every stage.
+Active
+A badge that shows the account is active.
+Evaluation or SIM Funded
+The stage badge of the account.
+Account Balance
+Your balance. A new $150K account shows $150,000 / $150,000.
+Profit Target
+The goal of the Evaluation: 6% of the account.
+MLL Floor
+Your floor: the level your equity must never touch.
+Consistency Rule
+Evaluation only. Your best trading day can be at most 50% (BrightPlus) or 40% (BrightCore) of your total profit.
+Min. Trade Duration
+More than 50% of your winning profit must come from trades you held longer than 15 seconds.
+View Details
+Opens the details of that account.
+Inside your account
+When you open an account with View Details , you see the main numbers of the account, plus the Credentials and Trading Perks sections.
+Label
+What it shows
+Inactivity: 24d Left
+How much time you have left before you need to open a new trade, for example "24d Left". In the Evaluation you need at least 1 new trade every 30 calendar days. In SIM Funded you need at least 1 new trade every 7 trading days (holidays do not count). Missing it is always a hard breach. Only opening a new trade counts. Closing, editing or pending orders do not.
+Day Ending In
+The time left in the current trading day. A trading day is one CME session, from 6:00 PM ET to 5:00 PM ET the next day. It is not a calendar day.
+Account Balance
+Your balance. The balance counts closed trades only.
+Balance at Start of Day
+Your balance at the start of the trading day, shown with "Equity at start of the day". Equity is your balance plus the open profit or loss of your open trades.
+High Water Mark
+This is your highest point, the level your floor is calculated from. On BrightPlus it is your highest equity in real time, so open profit counts. On BrightCore it is your highest daily close, and it updates once a day, while the market is closed, between 4:45 PM and 5:59 PM ET.
+Your floor
+The red banner on your account is the most important number on the page.
+"Your floor: do not let your balance or equity go below $X"
+The floor is your highest point minus the MLL . If your equity touches the floor at any moment, including open trades, the account is breached right away.
+Room left: $Y shows how much room you have left before the floor.
+The floor only goes up, never down, until it locks in SIM Funded.
+How the highest point and the floor move depends on your plan.
+​
+BrightPlus
+BrightCore
+Highest point
+Your highest equity in real time, including open profit
+Your highest daily close
+When the floor moves up
+Instantly, every time equity makes a new high. This is the "Moves Up in Realtime" label.
+Once a day, while the market is closed, between 4:45 PM and 5:59 PM ET
+Breach check
+Runs all day on real-time equity
+Runs all day on real-time equity
+Example: BrightPlus 50K
+The MLL is $2,000 and the starting floor is $48,000.
+With an open trade, your equity reaches $51,500 . The floor moves up to $49,500 right away.
+You close the trade at $50,800. The floor stays at $49,500 .
+What Current means
+Current is your equity minus your highest point. It is always $0 or a negative number : $0 means you are at your highest point, and the lower it goes, the closer you are to the floor.
+​
+The account is breached when Current reaches the full MLL amount. In the BrightPlus 50K example above, your highest point is $51,500 and your equity is $50,800, so Current is -$700. The breach happens at -$2,000.
+Trading Objectives
+The Trading Objectives show your progress on the four rules of the account. Each one has a status, which reads Ongoing while it is in progress, and shows values such as Current , Target , Max or Min .
+Objective
+What it tracks
+Profit Target
+Your profit against the target of 6% of the account (Evaluation).
+Max Loss Limit
+The only loss rule. Your equity must never touch the floor. Compare Current with the MLL amount.
+Consistency Rule
+Your best trading day against your total profit (Evaluation only). It shows "Not eligible" until your total profit is positive. It never fails the account, it only delays the pass.
+Min Trade Duration
+The share of your winning profit that comes from trades held longer than 15 seconds. It shows N/A until you have a winning trade. It never fails the account.
+👉 If you reach the profit target but the Consistency Rule or the Min Trade Duration is not met yet, the account does not fail. It stays open and keeps trading until it is compliant, and you may see a status such as "Pending, Trade Duration Not Met".
+Frequently asked questions
+Why do I see more than one card for my account?
+The dashboard shows a new card for each stage. The account number stays the same in the Evaluation, in SIM Funded and after a reset.
+​
+Why is Current negative?
+Current is your equity minus your highest point, so it is $0 or a negative number. It is $0 when you are at your highest point.
+​
+Does my floor ever go down?
+No. The floor only goes up, until it locks in SIM Funded. After the lock it never moves again.
+​
+When does my BrightCore floor update?
+Once a day, while the market is closed, between 4:45 PM and 5:59 PM ET. It does not move during the trading day.
+​
+What is the difference between balance and equity?
+Balance counts closed trades only. Equity is your balance plus the open profit or loss of your open trades.
+​
+Can the Consistency Rule or the Min Trade Duration fail my account?
+No. Neither is ever a breach. In the Evaluation they can delay your pass, and in SIM Funded the Min Trade Duration can block a payout request.
+Where to go next
+Max Loss Limit explained
+Futures glossary
+Trading hours and auto close at 4:45 PM ET
+​
+GET FUNDED!
+Related Articles
+Max Loss Limit explained
+Futures glossary
+Pre-trade checklist: the most common reasons accounts breach
+BrightPlus: Max Loss Limit explained
+BrightCore: Max Loss Limit explained
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

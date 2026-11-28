@@ -1,0 +1,139 @@
+BrightPlus vs BrightCore: which plan is right for me? | BrightFunded-Futures Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Search for articles...
+All Collections
+Getting Started
+BrightPlus vs BrightCore: which plan is right for me?
+BrightPlus vs BrightCore: which plan is right for me?
+A side-by-side comparison of both plans, with prices, examples and a quick way to choose.
+October 26, 2026
+Table of contents
+Both plans give you the same profit target, the same Max Loss Limit amount, the same contracts and the same payout caps. The difference is how the drawdown moves and how payouts are unlocked . BrightPlus is the faster plan, with daily payouts . BrightCore is the best value plan, with an end-of-day drawdown.
+What is the same on both plans
+Profit target: 6% of the account
+Max Loss Limit (MLL) amount, contracts and payout cap for each size
+Minimum payout: $250 . Profit split: 80% , or 100% with the addon
+Minimum Trade Duration rule
+News trading allowed, no hedging, no daily loss limit, auto close at 4:45 PM ET
+NinjaTrader, Tradovate and TradingView included
+What is different
+​
+BrightPlus ⚡ Faster
+BrightCore ★ Best value
+Best for
+Active intraday traders who want fast payouts
+Traders who want more room inside the day
+Drawdown type
+Trailing, intraday, real time, based on equity
+Trailing, end of day, based on the daily close
+When the floor moves up
+Instantly, every time equity makes a new high (open profit counts)
+Once a day, while the market is closed, between 4:45 PM and 5:59 PM ET
+Consistency Rule (Evaluation only)
+Best day up to 50% of total profit
+Best day up to 40% of total profit
+Fastest possible pass
+2 trading days
+3 trading days
+Payout frequency
+Daily payouts: up to one approved payout per trading day, with 1% fresh profit of the starting balance after each payout
+No daily payouts. Every 5 winning days (3 with the 3 Day Payout Cycle addon)
+What unlocks a payout
+First payout: balance above the buffer (start + MLL + $100). After each payout: 1% fresh profit of the starting balance
+Winning days
+Withdrawal floor
+The buffer, for every payout
+Starting balance + $100
+Max request
+Balance minus the buffer, up to the cap. No 50% of profit limit
+Up to the cap, and at most 50% of your current profit (balance minus starting balance)
+When the MLL locks (SIM Funded)
+When equity reaches the buffer
+When your first payout is approved
+Addons available
+100% Profit Split, 2x Payout Cap
+100% Profit Split, 2x Payout Cap, 3 Day Payout Cycle
+👉 Daily payouts are available only on BrightPlus. BrightCore has no daily payouts: it unlocks payouts by winning days.
+Prices (one-time fee)
+Account size
+BrightPlus
+BrightCore
+$25K
+$120
+$130
+$50K
+$165
+$190
+$100K
+$280
+$340
+$150K
+$380
+$460
+BrightPlus is the lower price at every size. For the price with addons, read BrightPlus: prices and addons or BrightCore: prices and addons .
+The same day on both plans
+The biggest difference is how the floor moves. Here is one example on a $50K account, where the Max Loss Limit is $2,000 and the starting floor is $48,000.
+Scenario: open profit during the day
+You open a trade and your equity reaches $51,500 with open profit.
+You then close the trade and the day ends with a balance of $50,800 .
+​
+BrightPlus
+BrightCore
+Highest point
+$51,500 (highest equity, including open profit)
+$50,800 (highest daily close)
+Floor after the day
+$49,500
+$48,800
+👉 On BrightPlus the floor rose as soon as equity hit $51,500 and stayed there after the trade closed lower. On BrightCore the floor did not move during the day. It moved once, while the market was closed, between 4:45 PM and 5:59 PM ET.
+Which plan should I choose?
+If you...
+Consider
+Want daily payouts (BrightPlus)
+BrightPlus
+Want the lowest entry price
+BrightPlus
+Want the floor to move only once a day, so open profit does not raise it during the day
+BrightCore
+Prefer payouts unlocked by winning days instead of a buffer and fresh profit
+BrightCore
+Want a payout cycle of only 3 winning days
+BrightCore with the 3 Day Payout Cycle addon
+Frequently asked questions
+Is the profit target different?
+No. It is 6% of the account on both plans.
+​
+Is the Max Loss Limit amount different?
+No. The amount is the same for each size. What changes is how the floor moves. On BrightCore it updates once a day, while the market is closed, between 4:45 PM and 5:59 PM ET.
+​
+Which plan has daily payouts?
+Only BrightPlus. You can request up to one approved payout per trading day, and after each payout you need 1% fresh profit of the starting balance to request the next one. BrightCore has no daily payouts: it unlocks payouts by winning days.
+​
+Is the maximum payout request different on each plan?
+Yes. The payout cap is the same on both plans. On BrightPlus you can request the balance above the buffer, up to the cap, with no limit based on your profit. On BrightCore you can also request at most 50% of your current profit (your balance minus your starting balance), and your balance must stay at or above your starting balance + $100. The maximum you can request is the lowest of the limits of your plan.
+​
+Which plan has the stricter Consistency Rule?
+BrightCore. Your best day can be at most 40% of your total profit, against 50% on BrightPlus.
+​
+Can I pass faster on one plan?
+The fastest possible pass is 2 trading days on BrightPlus and 3 trading days on BrightCore.
+​
+Can I hold trades overnight on BrightCore?
+No. On both plans all positions close automatically at 4:45 PM ET.
+Where to go next
+BrightPlus: complete guide
+BrightCore: complete guide
+Max Loss Limit explained
+BrightPlus: prices and addons
+BrightCore: prices and addons
+​
+GET FUNDED!
+Related Articles
+How do payouts work?
+BrightCore: complete guide
+Why can't I request a payout?
+What changes between Evaluation and SIM Funded?
+Futures vs CFD: which one is for me?
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

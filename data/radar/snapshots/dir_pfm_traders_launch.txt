@@ -57,7 +57,7 @@ Leave a Review
 Buy
 Tr
 Traders Launch
-3272
+3279
 CEO
 Max Thomas
 Country
@@ -70,7 +70,7 @@ Years in Operation
 4
 Tr
 Traders Launch
-3272
+3279
 United States
 Set as Favorite
 CEO
@@ -104,7 +104,7 @@ Traders Launch - Futures Prop Firm Details
 Firm Overview Instruments and Assets Leverage Commissions Consistency Rules Firm Rules Challenges Payout Policy Restricted Countries
 AI Summary
 Traders Launch Firm AI Summary
-Traders Launch is a United States-based proprietary trading firm established in November 2022, led by CEO Max Thomas. The firm offers futures trading through a 1-step evaluation program, utilizing platforms including TradingView, Hyperprop, Quantower, and Volumetrica Trading, alongside a proprietary web platform, Interactive Brokers IBKR Pro, and Sterling Trader Pro. It partners with brokers such as Interactive Brokers and T3 Global. Account sizes range from $5,000 to $100,000, with profit...
+Traders Launch is a futures proprietary trading firm based in the United States, established in November 2022. The firm offers a 1 Step evaluation program with account sizes ranging from $5,000 to $100,000. Traders can access multiple platforms including TradingView, Hyperprop, Quantower, and Volumetrica Trading. The firm provides trading on all ETFs and approximately 300 highly liquid stocks, plus Index ETF equivalents such as SPY, QQQ, DIA, and GLD. Profit targets vary between 5-6% for...
 Show More
 Firm Overview
 Broker :

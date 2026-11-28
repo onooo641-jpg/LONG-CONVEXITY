@@ -1,0 +1,44 @@
+How do payouts work on 1-Step Daily? | BrightFunded CFD Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Discord 👾 Website 💻 English Deutsch Polski Português Español English
+Discord 👾 Website 💻 English Deutsch Polski Português Español English
+Search for articles...
+All Collections
+BrightFunded Plans & Challenge Essentials
+BrightFunded Plans
+1-Step Daily
+How do payouts work on 1-Step Daily?
+How do payouts work on 1-Step Daily?
+Request a payout any trading day. One approved payout per trading day, how much you can withdraw, the 1% buffer and what happens after.
+Updated over a week ago
+Table of contents
+On 1-Step Daily you can request a payout any trading day, starting from your first funded trading day. There is no minimum amount, no maximum amount and no waiting period, but only one payout can be approved per trading day .
+Each payout takes all the profit above the 1% buffer. If you make new profit later that same day, you can request it again the next trading day.
+How much can I withdraw?
+A 1% profit buffer stays in the account, measured on your closed balance. Everything above the buffer is yours to withdraw, multiplied by your profit split.
+Withdrawable = (Balance − Starting balance − 1% buffer) × Profit split
+Profit split
+Who gets it
+80%
+Default on 1-Step Daily
+90%
+With the 90% Payout Split add-on
+Example, $100K account at 80%. Your closed balance is $103,000. Profit is $3,000 and the 1% buffer is $1,000, so the profit above the buffer is $2,000. You receive $2,000 × 80% = $1,600, and the $1,000 buffer stays in the account.
+If you have the 100% Account Fee Refund add-on, the refund does not count toward the profit buffer.
+How do I request it?
+Close all your open trades and pending orders.
+Go to the Payout section of your dashboard.
+Choose your payment method and send the request.
+You can be paid in USDC (ERC-20) or by bank transfer in euros. Our finance team processes the payment in a maximum of 1 day. It can take a little longer to show in your wallet or bank.
+What happens after a payout?
+After a payout you get a new account. On cTrader the payout is deducted from your balance, but it is still treated as a new account. The trailing max loss restarts as on any new account.
+GET FUNDED!
+Related Articles
+What is 1-Step Daily?
+How do payouts work on 2-Step Bright?
+How do payouts work on Instant?
+1-Step Daily: evaluation rules
+How can I request my payout?
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

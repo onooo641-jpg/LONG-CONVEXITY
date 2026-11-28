@@ -7,7 +7,7 @@ Live accounts
 Express Live: Rules and FAQs
 Express Live: Rules and FAQs
 How Express Live works: rules, payouts and activation time.
-Updated yesterday
+Updated today
 Table of contents
 Express Live is an invite only account for traders moved to Live. Trading is simulated. Payouts are real money.
 Express Live or Real Live?
@@ -36,10 +36,10 @@ $4,500
 5
 50
 Max loss
-3% of your starting balance, based on end of day equity. It moves up with your highest end of day equity and locks at starting balance + $100.
-If your equity touches it, the account is closed.
+3% of your starting balance. The level is set on end of day equity: it moves up with your highest end of day equity and locks at starting balance + $100.
+Your equity can never go below the max loss, not even for a moment during the day. It is checked in real time, open trades included. If your equity touches or goes below it at any time, the account is closed immediately. No recovery, no exceptions.
 What is not required
-No daily loss limit
+No separate daily loss limit. The max loss always applies, intraday included.
 No consistency rule
 No profit buffer
 Profitable days
@@ -67,7 +67,7 @@ Demo accounts you already hold follow your transition terms.
 Moving to Real Live later
 Possible with Risk team approval. It isn't automatic.
 If you hit the max loss
-The account is closed. A 30 day cooldown starts, then the Risk team decides if you can buy new challenges.
+The account is closed immediately, even if it happens intraday and the market comes back later. A 30 day cooldown starts, then the Risk team decides if you can buy new challenges.
 Not allowed
 Account sharing or third party trading
 Hedging across accounts
@@ -79,8 +79,8 @@ Is it a real brokerage account?
 No. Trades are simulated. Payouts are real money paid by FuturesElite.
 Express Live is a simulated trading program. The balance is simulated capital, not a deposit. Payouts follow these rules and the terms you accept before activation.
 Related Articles
-Elite rules at a glance
-Elite checkout options
+Elite drawdown, daily loss limit and contracts
+Nitro rules at a glance
 Live accounts: loss floor, cushion and reserve
 Credits and pack rules
 Instant rules at a glance

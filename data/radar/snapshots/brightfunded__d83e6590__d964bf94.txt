@@ -1,0 +1,98 @@
+Max Loss Limit explained | BrightFunded-Futures Help Center Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. ( [email protected] ) with Reserved Font Name "Inter".
+This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content
+Search for articles...
+All Collections
+Trading Rules
+Max Loss Limit explained
+Max Loss Limit explained
+How the floor works on BrightPlus and BrightCore, with examples and the terms you see on the dashboard.
+October 26, 2026
+Table of contents
+The Max Loss Limit (MLL) is the only loss rule on BrightFunded Futures. It is how far your account can fall below its highest point . Your floor is your highest point minus the MLL. If your live equity, including open trades, touches the floor at any moment , the account is breached right away.
+The key terms
+Term
+Meaning
+MLL (Max Loss Limit)
+How far the account can fall below its highest point
+Floor
+Highest point minus the MLL. Touching it is a breach
+Highest point
+BrightCore: highest daily close. BrightPlus: highest equity, in real time
+Equity
+Balance plus open profit or loss
+Balance
+Closed trades only
+Current
+Equity minus highest point, shown on the dashboard
+The floor only goes up, never down , until it locks.
+It keeps trailing even above your starting balance .
+There is no daily loss limit . The MLL is the only loss rule.
+MLL by size
+Size
+Max Loss Limit
+Starting floor
+$25K
+$1,000
+$24,000
+$50K
+$2,000
+$48,000
+$100K
+$3,000
+$97,000
+$150K
+$4,500
+$145,500
+BrightCore: end of day trailing
+Your highest point is your highest daily close . The floor moves only once a day, while the market is closed, between 4:45 PM and 5:59 PM ET . The breach check still runs all day on your live equity.
+Example: $50K BrightCore
+You start at $50,000, so the floor is $48,000 .
+Day 1 closes at $51,200 , so the floor becomes $49,200 once it updates, while the market is closed.
+On day 2 your equity drops to $49,300 during the day. That is still OK.
+👉 If your equity touches $49,200 , the account is breached.
+BrightPlus: intraday trailing, real time
+Your highest point is the highest equity you ever reached, in real time, including open profit . The floor moves up the moment your equity makes a new high.
+Example: $50K BrightPlus
+With an open trade, your equity reaches $51,500 . The floor moves to $49,500 right away.
+You close the trade at $50,800 .
+👉 The floor stays at $49,500 .
+The lock (SIM Funded only)
+In SIM Funded, the floor stops trailing for good at your starting balance + $100 . In the Evaluation it never locks . Read When does my Max Loss Limit lock?
+Reading "Current" on your dashboard
+Current = equity minus highest point. It is $0 or a negative number. Your account breaches when Current reaches the full MLL amount .
+Example, $50K: your highest point is $51,500 and your equity is $50,500. Current is −$1,000. You breach when Current reaches −$2,000, which is equity $49,500.
+Rule Summary
+Floor: highest point − MLL
+BrightPlus highest point: highest equity, real time
+BrightCore highest point: highest daily close , and the floor updates once a day while the market is closed, between 4:45 PM and 5:59 PM ET
+Breach: live equity, including open trades, touches the floor
+Frequently asked questions
+Does open profit raise my floor?
+On BrightPlus, yes, instantly. On BrightCore, no. The floor only moves once a day, while the market is closed, between 4:45 PM and 5:59 PM ET.
+​
+When does my BrightCore floor update?
+Once a day, while the market is closed, between 4:45 PM and 5:59 PM ET. It is not updated during the trading day.
+​
+Can my floor go down?
+While it trails, no. On BrightCore, when your first payout is approved the floor locks at start + $100, which can be lower than where it had trailed.
+​
+Does the MLL apply to open trades?
+Yes. The breach check runs on live equity, including open trades.
+​
+Is there also a daily loss limit?
+No. The MLL is the only loss rule.
+Where to go next
+When does my Max Loss Limit lock?
+Why was my account breached?
+Is there a daily loss limit?
+​
+GET FUNDED!
+Related Articles
+When does my Max Loss Limit lock?
+BrightPlus: Max Loss Limit explained
+BrightPlus: when does my Max Loss Limit lock?
+BrightCore: Max Loss Limit explained
+BrightCore: when does my Max Loss Limit lock?
+Did this answer your question? Disappointed Reaction 😞 Neutral Reaction 😐 Smiley Reaction 😃
+Table of contents

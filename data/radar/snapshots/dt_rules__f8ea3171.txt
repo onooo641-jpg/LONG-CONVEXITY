@@ -46,7 +46,6 @@ Keeps growing until a win or the account fails
 Repeatedly doubling size on new trades after losses is Martingale, even if each trade stays within your max contracts.
 Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction
 Related Articles
-S2F Account
 No Martingale
 Contract Limits
 Glossary

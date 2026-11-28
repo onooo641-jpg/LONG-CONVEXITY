@@ -27,7 +27,7 @@ Affiliate Program
 Agreements and Disclaimers
 All Collections Trading Rules and Guidelines Contract Limits Contract Limits
 How max contracts work: your total open position across all instruments, with 10 micros counting as 1 mini.
-October 22, 2026
+Updated today
 Copy for LLM
 Your max contracts is the largest total open position you can hold at once, across all instruments combined.
 How it's counted
@@ -39,11 +39,11 @@ Max contracts by plan
 Plan
 Max contracts (minis)
 Trail
-25K: 6 · 50K: 10 · 150K: 20 · 300K: 40
+25K: 6 · 50K: 10 · 150K: 24 · 300K: 40
 Static
 25K: 4 · 50K: 6 · 100K: 8 · 150K: 8
 EOD
-25K: 6 · 50K: 10 · 150K: 12 · 300K: 40
+25K: 6 · 50K: 10 · 150K: 24 · 300K: 40
 S2F
 25K: 2 · 50K: 10 · 150K: 24
 S2L evaluation
