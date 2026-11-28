@@ -496,3 +496,7 @@ Jx's free Coinalyze key gave daily OI and liquidations from 2020. The five OI an
 
 ## 2026-11-28 — Batch NF11 (#576–#579), Reg SHO threshold list: 0 of 4
 - Forced buy-ins don't lift these stocks; they fall. Shorting them fails G5 (no borrow).
+
+## 2026-11-28 — Batch NF14 (#589–#597), seven untested thin perp venues: 0 of 7 testable
+- #520 wick bids fail on Bluefin, Apex, Extended, Pacifica, Backpack; strong first months (Apex +16.6%) vanish once a venue matures.
+- #597 (venue discount vs HL) printed PASS but entries were stale no-trade prints (89% flat bars): invalid. Drift/edgeX not reachable.

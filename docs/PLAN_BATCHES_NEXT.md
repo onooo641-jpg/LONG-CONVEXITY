@@ -13,6 +13,7 @@
 | NF2 (#537–#542) | Aster/dYdX listing fade, pump short, crash bounce, dying-listing bleed | 0/4; forward-only #541/#542 |
 | NF3 (#543–#546) | Binance events shorted on HL | 0/4 |
 | NF4 (#547–#551) | Korean retail flows (Upbit) on HL | 0/4; forward-only #551 |
+| NF14 (#589–#597) | 7 untested thin perp venues | done, 0/7 testable; #597 printed PASS invalid (stale prints) |
 | NF12–NF13 (#580–#587) | Tokyo price limits; Hong Kong | withdrawn before data (G6: deep, popular markets; Jx) |
 | NF11 (#576–#579) | Reg SHO threshold list (US) | done, 0/4 (stocks fall; short fails G5) |
 | NF10 (#572–#575) | hourly: Korean morning, #569 on Binance, intraday frenzy | done, 0/3; #574 invalid as run, post-hoc negative 2025–26 |

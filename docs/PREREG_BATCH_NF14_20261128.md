@@ -67,3 +67,42 @@ paper log only if its Stage 2 t ≥ 2.5. With t ≥ 2 alone, about 1 in 3 runs o
 A coin matched by name to HL counts only if the median of its daily close ratio (venue / HL) over all common days is between 0.95 and
 1.05. This drops wrong matches (same ticker, different asset) and unit mismatches (kPEPE vs 1000PEPE vs PEPE), which would otherwise
 show up as a permanent "discount". It is a data-validity rule written before any venue data was seen.
+
+## Addendum 2 (2026-11-28, after the fetch, before the analysis was run): data fixes
+- **Bluefin** candles are in 1e9 fixed point. The raw reply shows gold at 4416090000000, and quote volume 1.17e14 for 26.57 oz.
+  Prices and quote volume are divided by 1e9. This is a unit fix only.
+- **Drift:** no connection from the runner (status none). **edgeX:** the API path returned the web app's HTML. Both are
+  **not testable**, as registered; no substitute venue is used.
+- **Apex** daily bars give base volume `v` and turnover `tr`. The fetch used v × close as USD volume, which is close to `tr`, so it
+  is kept as is.
+
+## Results (2026-11-28; `docs/jx_runs/batch_nf14_20261128.txt`, re-run identical): 0 of 7 testable ideas (#597's printed PASS is invalid)
+**Data:** Bluefin 8 markets (from 2025-07), Apex 129 (from 2024-06), Extended 415 (from 2024-07), Pacifica 56 (from 2025-06),
+Backpack 101 (from 2025-01). Drift and edgeX are not testable (addendum 2).
+
+| # | Venue / idea | Stage 1 | Stage 2 | Verdict |
+|---|---|---|---|---|
+| 589 | Drift | — | — | not testable |
+| 590 | Bluefin | no fills | +2.37% (31, t 1.17), $286/yr, negative without the best day | FAIL |
+| 591 | Apex Omni | +16.6% (145, t 9.36) | **−1.72% (327, t −2.54)** | FAIL (huge Stage 1 collapsed) |
+| 592 | edgeX | — | — | not testable |
+| 593 | Extended | +4.47% (17) | +0.72% (541, t 1.22), $7.5K/yr | FAIL (t) |
+| 594 | Pacifica | no fills | +0.15% (121, t 0.27) | FAIL |
+| 595 | Backpack | +3.52% (6) | −1.43% (213, t −2.41) | FAIL |
+| 596 | #536 new listings, pooled | +2.30% (236, t 3.22) | −0.72% (522, t −1.28) | FAIL |
+| 597 | Venue discount to HL, hedged | +0.52% (203) | +0.53% (1,445, t 2.74), $2.5K/yr | **printed PASS, invalid** |
+
+**Why #597 is invalid** (`scripts/batch_nf14_diag_20261128.py` → `docs/jx_runs/batch_nf14_diag_20261128.txt`, post-hoc, re-run identical):
+- **The entry price was not tradable.** 89% of Stage 2 events are flat bars (high = low) and 91% had under $10K of volume that day:
+  dead markets showing a stale last trade, median 14% below HL.
+- Daily bars line up correctly with HL (same-day return correlation 0.99–1.00, about 0 at ±1 day), so this is not a clock offset.
+- **Traded bars with ≥ $100K volume** (n 99, t 5.06):
+  - the venue leg loses (−0.80%), so the discount does not converge;
+  - all the profit is the HL short leg (+3.23%);
+  - it is concentrated in pre-launch tokens (XPL 43 events, WLFI 15), whose prices are set differently on each venue.
+- That is not the registered mechanism, so it is not forward-logged.
+
+**Lesson recorded:**
+- The #520 rule's fat Stage 1 results on new venues (Apex +16.6%, #596 +2.3%) all collapse once the venue matures.
+- Thin, new venues give a one-time edge in their first months that is gone by the time anyone can test it.
+- Cross-venue checks must drop no-trade bars first.

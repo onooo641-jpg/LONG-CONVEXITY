@@ -31,6 +31,9 @@ def load(v):
     d = pd.read_parquet(p)
     if d.empty:
         return d
+    if v == "bluefin":  # addendum 2: 1e9 fixed point
+        for c in ("o", "h", "l", "c", "v_usd"):
+            d[c] = d[c] / 1e9
     d["day"] = pd.to_datetime(d["t"], unit="ms", utc=True).dt.normalize()
     d = d[(d["day"] <= END) & (d["c"] > 0) & (d["l"] > 0)].drop_duplicates(["coin", "day"]).sort_values(["coin", "day"])
     d["venue"] = v

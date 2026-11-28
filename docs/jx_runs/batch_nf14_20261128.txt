@@ -1,0 +1,64 @@
+Venue coverage:
+   drift     NO DATA (not testable)
+   bluefin   markets    8, rows   3603, 2025-07-18..2026-11-25
+   apex      markets  129, rows  85554, 2024-06-15..2026-11-25
+   edgex     NO DATA (not testable)
+   extended  markets  415, rows  93327, 2024-07-26..2026-11-25
+   pacifica  markets   56, rows  18740, 2025-06-03..2026-11-25
+   backpack  markets  101, rows  40746, 2025-01-04..2026-11-25
+
+#589 #520 wick bids on drift
+   not testable (no candles)
+
+#590 #520 wick bids on bluefin
+   Stage 1 2025-07-18..2025-06-30: no fills
+   Stage 2 2025-07-01..2026-11-25: fills 31 | mean net +2.37% (median +1.32%, t 1.17, win 58%) | $286/yr | without best day $-124/yr | sum without 3 best days $-799
+   costs x1.5 Stage 2 mean +2.33%
+   VERDICT FAIL
+
+#591 #520 wick bids on apex
+   Stage 1 2024-06-15..2025-06-30: fills 145 | mean net +16.58% (median +14.38%, t 9.36, win 84%) | $20,717/yr | without best day $16,380/yr | sum without 3 best days $13,888
+   Stage 2 2025-07-01..2026-11-25: fills 327 | mean net -1.72% (median -0.59%, t -2.54, win 46%) | $1,497/yr | without best day $830/yr | sum without 3 best days $-309
+   costs x1.5 Stage 2 mean -1.76%
+   VERDICT FAIL
+
+#592 #520 wick bids on edgex
+   not testable (no candles)
+
+#593 #520 wick bids on extended
+   Stage 1 2024-07-26..2025-06-30: fills 17 | mean net +4.47% (median +2.46%, t 3.15, win 88%) | $588/yr | without best day $243/yr | sum without 3 best days $77
+   Stage 2 2025-07-01..2026-11-25: fills 541 | mean net +0.72% (median +0.28%, t 1.22, win 53%) | $7,483/yr | without best day $6,086/yr | sum without 3 best days $6,900
+   costs x1.5 Stage 2 mean +0.69%
+   VERDICT FAIL
+
+#594 #520 wick bids on pacifica
+   Stage 1 2025-06-03..2025-06-30: no fills
+   Stage 2 2025-07-01..2026-11-25: fills 121 | mean net +0.15% (median -0.35%, t 0.27, win 49%) | $379/yr | without best day $-96/yr | sum without 3 best days $-970
+   costs x1.5 Stage 2 mean +0.12%
+   VERDICT FAIL
+
+#595 #520 wick bids on backpack
+   Stage 1 2025-01-04..2025-06-30: fills 6 | mean net +3.52% (median +1.54%, t 1.01, win 67%) | $651/yr | without best day $15/yr | sum without 3 best days $-41
+   Stage 2 2025-07-01..2026-11-25: fills 213 | mean net -1.43% (median -0.61%, t -2.41, win 44%) | $-440/yr | without best day $-1,036/yr | sum without 3 best days $-2,284
+   costs x1.5 Stage 2 mean -1.47%
+   VERDICT FAIL
+
+#589-#595 summary: 0 of 5 testable venues pass []; forward log only if Stage 2 t >= 2.5
+
+#596 #536 rule (first 30 days, X 15%) on all seven venues pooled
+   Stage 1: fills 236 | mean net +2.30% (median +0.62%, t 3.22, win 55%) | $7,191/yr | without best day $4,292/yr | sum without 3 best days $2,367
+   Stage 2: fills 522 | mean net -0.72% (median -0.26%, t -1.28, win 47%) | $47/yr | without best day $-1,704/yr | sum without 3 best days $-4,668
+   per venue (Stage 2): apex n 128 -0.14%; backpack n 104 -2.62%; bluefin n 1 +0.64%; extended n 239 -0.38%; pacifica n 50 +0.08%
+   VERDICT FAIL
+
+#597 Venue close >= 3% below HL close: long venue / short HL, exit next close
+   bluefin: 5 coins matched to HL, 5 kept after the unit check
+   apex: 107 coins matched to HL, 99 kept after the unit check
+   extended: 135 coins matched to HL, 128 kept after the unit check
+   pacifica: 39 coins matched to HL, 39 kept after the unit check
+   backpack: 76 coins matched to HL, 75 kept after the unit check
+   events 1648 across 4 venues, 110 coins
+   Stage 1: fills 203 | mean net +0.52% (median +1.28%, t 0.97, win 61%) | $1,027/yr | without best day $613/yr | sum without 3 best days $211
+   Stage 2: fills 1445 | mean net +0.53% (median +0.62%, t 2.74, win 58%) | $2,500/yr | without best day $2,279/yr | sum without 3 best days $2,613
+   per venue (all): apex n 866 +0.43%; backpack n 17 +2.77%; extended n 741 +0.56%; pacifica n 24 +1.73%
+   VERDICT PASS

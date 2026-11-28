@@ -269,6 +269,7 @@ risk, 5m signals and 1m fills.
 | 576–579 | Batch NF11 (Reg SHO threshold-list forced buy-ins, US small caps) | `docs/PREREG_BATCH_NF11_20261128.md` | 0 of 4: threshold stocks fall (addition long −7.5% vs SPY over 13 d in 2023–26); the short mirror fails G5 (borrow unavailable by construction) |
 | 580–587 | Batches NF12 (TSE price limits) and NF13 (Hong Kong) | `docs/PREREG_BATCH_NF12_20261128.md`, `docs/PREREG_BATCH_NF13_20261128.md` | **withdrawn before data** (Jx: deep, popular markets fail G6); numbers reserved |
 | 588 | Radar week 2: Ember USDC concentrated-liquidity vault (Sui), W1 template | `docs/PREREG_INCENTIVES_W2_20261128.md` | FAIL: Stage 2 half 1 10.9% < 12% (half 2 15.3%); $1.3K/yr on $10K | incentives_w2_20261128.txt |
+| 589–597 | Batch NF14 (thin perp venues never tested: Bluefin, Apex Omni, Extended, Pacifica, Backpack; Drift/edgeX not testable) | `docs/PREREG_BATCH_NF14_20261128.md` | 0 of 7 testable: #520 wick bids fail on every venue (Apex Stage 1 +16.6% → Stage 2 −1.7%); #596 new listings fail; #597 venue-discount printed PASS (t 2.74) but invalid (89% flat no-trade bars) | batch_nf14_20261128.txt, batch_nf14_diag_20261128.txt |
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.

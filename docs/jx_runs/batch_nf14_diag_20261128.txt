@@ -1,0 +1,16 @@
+#597 Stage 2 events by bar quality
+   all: n 1445 | mean net +0.53% (t 2.74) | venue leg +0.23%, HL short leg +0.44% | median discount -14.12%
+   flat bars (high == low) 89%; day volume < $10K 91%
+   flat bars only: n 1286 | mean net +0.34% (t 1.59) | venue leg +0.16%, HL short leg +0.32% | median discount -15.74%
+   traded bars (high > low): n 159 | mean net +2.11% (t 6.04) | venue leg +0.79%, HL short leg +1.46% | median discount -4.76%
+   traded bars with day volume >= $100K: n 99 | mean net +2.29% (t 5.06) | venue leg -0.80%, HL short leg +3.23% | median discount -7.17%
+     same, discount 3%..10% only: n 60 | mean net +2.23% (t 4.38) | venue leg -2.69%, HL short leg +5.07% | median discount -4.06%
+
+HL short leg alone on the same coins and days is the alt-short baseline in disguise when the venue leg is ~0.
+
+Bar alignment: median same-coin correlation of daily returns, venue vs HL shifted by L days
+   bluefin   L -1 +0.01 | L 0 +0.99 | L +1 +0.01
+   apex      L -1 -0.00 | L 0 +1.00 | L +1 +0.00
+   extended  L -1 +0.00 | L 0 +0.99 | L +1 +0.00
+   pacifica  L -1 -0.01 | L 0 +1.00 | L +1 -0.01
+   backpack  L -1 -0.00 | L 0 +1.00 | L +1 -0.00
