@@ -533,3 +533,6 @@ Jx's free Coinalyze key gave daily OI and liquidations from 2020. The five OI an
 ## 2026-11-28 — Batch NF26 (#647–#650), capped / extreme funding received hedged: 0 of 4 robust
 - Extreme funding pays the receiving side ~+0.4–0.5%/24h but the crowd unwind moves price as much; #649 (HL extreme, hedged on a thin venue) printed PASS but is −0.02% one hour later and rests on one market. Not logged.
 - Sybil wallets, self-referral, trial funds and oracle/liquidation pushing were declined (rule violations / manipulation).
+
+## 2026-11-28 — Batch NF27 (#651–#654), Aster funding snapshot: 0 of 4
+- Holding the receiving side for minutes across settlement collects +0.34–0.64% funding, but price moves against the receiver by about as much (−0.25% to −0.68%); every window loses after fees. Priced in.

@@ -51,3 +51,21 @@
 **Multiple testing:** four tests. Only a pass with Stage 2 t ≥ 2.5 goes to the radar forward log.
 
 **Script/output:** `scripts/batch_nf27_20261128.py` → `docs/jx_runs/batch_nf27_20261128.txt`, re-run identical.
+
+## Result (2026-11-28; `docs/jx_runs/batch_nf27_20261128.txt`, re-run identical): **0 of 4**
+- **Data:**
+  - Aster funding: 2,219,680 rows on 636 perps. One symbol with a non-ASCII name failed (UnicodeEncodeError).
+  - 25,323 settlements with \|rate\| ≥ 0.10%. 1-minute bars cover 8,790 of them; the job's time budget ended first. That is enough for
+    kill decisions.
+
+| # | Rule | Stage 1 (2025) | Stage 2 (2026) | Funding / price leg (Stage 2) | Verdict |
+|---|---|---|---|---|---|
+| 651 | ≥ 0.10%, ±1 min | n 2,483, −0.20% (t −7.37) | n 9,303, −0.09% | +0.34% / −0.25% | KILL (Stage 1) |
+| 652 | ≥ 0.25%, ±1 min | n 1,015, −0.21% | n 3,793, −0.12% | +0.60% / −0.54% | KILL (Stage 1) |
+| 653 | ≥ 0.10%, ±5 min | n 2,341, −0.25% | n 8,400, −0.44% | +0.34% / −0.61% | KILL (Stage 1) |
+| 654 | ≥ 0.10%, ±30 min | n 2,088, +0.13% (t 0.69) | n 6,783, −0.24% | +0.36% / −0.43% | FAIL |
+
+**Reading:**
+- The snapshot is priced. In the minutes around settlement the price moves against the receiving side by about the funding paid (it
+  scales with the rate: about −0.25% at 0.10%, about −0.54% at 0.25%).
+- After fees, every window loses. The loophole exists in the rules, but the market has already closed it.

@@ -13,7 +13,7 @@
 | NF2 (#537–#542) | Aster/dYdX listing fade, pump short, crash bounce, dying-listing bleed | 0/4; forward-only #541/#542 |
 | NF3 (#543–#546) | Binance events shorted on HL | 0/4 |
 | NF4 (#547–#551) | Korean retail flows (Upbit) on HL | 0/4; forward-only #551 |
-| NF27 (#651–#654) | Aster funding snapshot: collect a full interval's funding holding minutes across settlement | registered, data requested |
+| NF27 (#651–#654) | Aster funding snapshot: collect a full interval's funding holding minutes across settlement | done, 0/4 (snapshot priced in) |
 | NF26 (#647–#650) | capped / extreme funding received hedged | done, 0/4 robust (#649 fragile) |
 | NF25 (#643–#646) | zero-fee points farming yield per $1M volume | Stage 0 descriptive: Lighter ~$590/1M, Paradex ~$25–100/1M; volumes pending |
 | NF24 (#639–#642) | zero-fee Paradex hourly reversals (−3σ bounce, +5σ/+3σ fades, 24h losers) | done, 0/4 |
