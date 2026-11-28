@@ -1,0 +1,42 @@
+{
+ "grvt_instruments": {
+  "url": "https://market-data.grvt.io/full/v1/all_instruments {\"kind\": [\"PERPETUAL\"], \"is_active\": true}",
+  "status": 200,
+  "head": "{\"result\": [{\"instrument\": \"AAOI_USDT_Perp\", \"instrument_hash\": \"0x03b301\", \"base\": \"AAOI\", \"quote\": \"USDT\", \"kind\": \"PERPETUAL\", \"venues\": [\"ORDERBOOK\", \"RFQ\"], \"settlement_period\": \"PERPETUAL\", \"base_decimals\": 9, \"quote_decimals\": 6, \"tick_size\": \"0.01\", \"min_size\": \"0.01\", \"create_time\": \"1795158390045236628\", \"max_position_size\": \"20000.0\", \"funding_interval_hours\": 8, \"adjusted_funding_rate_cap\": \"2.0\", \"adjusted_funding_rate_floor\": \"-2.0\", \"min_notional\": \"5.0\", \"asset_class\": \"EQUITY\", \"status\": \"ACTIVE\"}, {\"instrument\": \"AAPL_USDT_Perp\", \"instrument_hash\": \"0x037701\", \"base\": \"AAPL\", \"quote\": \"USDT\", \"kind\": \"PERPETUAL\", \"venues\": [\"ORDERBOOK\", \"RFQ\"], \"settlement_period\": \"PERPETUAL\", \"base_decimals\": 9, \"quote_decimals\": 6, \"tick_size\": \"0.01\", \"min_size\": \"0.01\", \"create_time\": \"1795158390045237519\", \"max_position_size\": \"15375.0\", \"funding_interval_hours\": 8, \"adjusted_funding_rate_cap\": \"2.0\", \"adjusted_funding_rate_floor\": \"-2.0\", \"min_notional\": \"5.0\", \"asset_class\": \"EQUITY\", \"status\": \"ACTIVE\"}, {\"instrument\": \"AAVE_USDT_Perp\", \"instrument_hash\": \"0x032201\", \"base\": \"AAVE\", \"quote\": \"USDT\", \"kind\": \"PERPETUAL\", \"venues\": [\"ORDERBOOK\", \"RFQ\"], \"settlement_period\": \"PERPETUAL\", \"base_decimals\": 9, \"quote_decimals\": 6, \"tick_size\": \"0.01\", \"min_size\": \"0.1\", \"create_time\": \"1795158390045238109\", \"max_position_size\": \"7729.0\", \"funding_interval_hours\": 8, \"adjusted_funding_rate_cap\": \"0.75\", \"adjusted_funding_rate_floor\": \"-0.75\", \"min_notional\": \"5.0\", \"asset_"
+ },
+ "grvt_kline": {
+  "url": "https://market-data.grvt.io/full/v1/kline {\"instrument\": \"AAOI_USDT_Perp\", \"interval\": \"CI_1_D\", \"type\": \"TRADE\", \"start_time\": \"1717200000000000000\", \"end_time\": \"1795848738915000000\", \"limit\": 1000}",
+  "status": 200,
+  "head": "{\"result\": [{\"open_time\": \"1795824000000000000\", \"close_time\": \"1795848540000000000\", \"open\": \"40.88\", \"close\": \"40.89\", \"high\": \"41.13\", \"low\": \"40.75\", \"volume_b\": \"779.24\", \"volume_q\": \"31896.0255\", \"trades\": 74, \"instrument\": \"AAOI_USDT_Perp\"}, {\"open_time\": \"1795737600000000000\", \"close_time\": \"1795824000000000000\", \"open\": \"37.97\", \"close\": \"40.88\", \"high\": \"41.13\", \"low\": \"37.7\", \"volume_b\": \"3070.2\", \"volume_q\": \"121551.7833\", \"trades\": 340, \"instrument\": \"AAOI_USDT_Perp\"}, {\"open_time\": \"1795651200000000000\", \"close_time\": \"1795737600000000000\", \"open\": \"37.59\", \"close\": \"37.97\", \"high\": \"38.49\", \"low\": \"37.59\", \"volume_b\": \"2534.68\", \"volume_q\": \"96546.0452\", \"trades\": 370, \"instrument\": \"AAOI_USDT_Perp\"}, {\"open_time\": \"1795564800000000000\", \"close_time\": \"1795651200000000000\", \"open\": \"38.34\", \"close\": \"37.59\", \"high\": \"38.53\", \"low\": \"32.73\", \"volume_b\": \"10048.67\", \"volume_q\": \"363788.0457\", \"trades\": 583, \"instrument\": \"AAOI_USDT_Perp\"}, {\"open_time\": \"1795478400000000000\", \"close_time\": \"1795564800000000000\", \"open\": \"38.99\", \"close\": \"38.34\", \"high\": \"41.2\", \"low\": \"36.34\", \"volume_b\": \"8060.58\", \"volume_q\": \"311036.5637\", \"trades\": 496, \"instrument\": \"AAOI_USDT_Perp\"}, {\"open_time\": \"1795392000000000000\", \"close_time\": \"1795478400000000000\", \"open\": \"35.06\", \"close\": \"38.99\", \"high\": \"41.45\", \"low\": \"34.21\", \"volume_b\": \"1762.26\", \"volume_q\": \"68357.5645\", \"trades\": 433, \"instrument\": \"AAOI_USDT_Perp\"}, {\"open_time\": \"1795305600000000000\", \"close_time\": \"179"
+ },
+ "nado_symbols:https://gateway.prod.nado.xyz/v1/query?type=symbols": {
+  "url": "https://gateway.prod.nado.xyz/v1/query?type=symbols",
+  "status": 403,
+  "head": null
+ },
+ "nado_symbols:https://gateway.prod.nado.xyz/v2/symbols": {
+  "url": "https://gateway.prod.nado.xyz/v2/symbols",
+  "status": 404,
+  "head": null
+ },
+ "nado_candles": {
+  "url": "https://archive.prod.nado.xyz/v1 {\"candlesticks\": {\"product_id\": 1, \"granularity\": 86400, \"limit\": 1000}}",
+  "status": 403,
+  "head": null
+ },
+ "ethereal_products": {
+  "url": "https://api.ethereal.trade/v1/product",
+  "status": 503,
+  "head": null
+ },
+ "hibachi_info": {
+  "url": "https://data-api.hibachi.xyz/market/exchange-info",
+  "status": 200,
+  "head": "{\"feeConfig\": {\"depositFees\": \"0.004968\", \"instantWithdrawDstPublicKey\": \"a4fff986badd3b58ead09cc617a82ff1b5b77b98d560baa27fbcffa4c08610b6372f362f3e8e530291f24251f2c332d958bf776c88ae4370380eee943cddf859\", \"instantWithdrawalFees\": [[1000, 0.002], [100, 0.004], [50, 0.005], [20, 0.01], [5, 0.02]], \"tradeMakerFeeRate\": \"0.00000000\", \"tradeTakerFeeRate\": \"0.00045000\", \"transferFeeRate\": \"0.00010000\", \"withdrawalFees\": \"0.013248\"}, \"futureContracts\": [{\"category\": \"CRYPTO\", \"displayName\": \"ETH/USDT Perps\", \"id\": 1, \"initialMarginRate\": \"0.050000\", \"maintenanceMarginRate\": \"0.030000\", \"marketCloseTimestamp\": null, \"marketCreationTimestamp\": \"1727701319.73488\", \"marketOpenTimestamp\": null, \"minNotional\": \"1\", \"minOrderSize\": \"0.000000001\", \"nextCloseTimestamp\": null, \"nextOpenTimestamp\": null, \"orderbookGranularities\": [\"0.01\", \"0.1\", \"1\", \"10\"], \"settlementDecimals\": 6, \"settlementSymbol\": \"USDT\", \"status\": \"LIVE\", \"stepSize\": \"0.000000001\", \"symbol\": \"ETH/USDT-P\", \"symbolStatus\": \"OPEN\", \"tickSize\": \"0.01\", \"underlyingDecimals\": 9, \"underlyingSymbol\": \"ETH\"}, {\"category\": \"CRYPTO\", \"displayName\": \"BTC/USDT Perps\", \"id\": 2, \"initialMarginRate\": \"0.033333\", \"maintenanceMarginRate\": \"0.020000\", \"marketCloseTimestamp\": null, \"marketCreationTimestamp\": \"1727701319.73488\", \"marketOpenTimestamp\": null, \"minNotional\": \"1\", \"minOrderSize\": \"0.0000000001\", \"nextCloseTimestamp\": null, \"nextOpenTimestamp\": null, \"orderbookGranularities\": [\"0.1\", \"1\", \"10\", \"100\"], \"settlementDecimals\": 6, \"se"
+ },
+ "hibachi_klines": {
+  "url": "https://data-api.hibachi.xyz/market/data/klines?symbol=ETH%2FUSDT-P&interval=1d&fromMs=1717200000000&toMs=1795848738915",
+  "status": 200,
+  "head": "{\"klines\": [{\"close\": \"2496.270000\", \"high\": \"2496.270000\", \"interval\": \"1d\", \"low\": \"2496.270000\", \"open\": \"2496.270000\", \"timestamp\": 1727740800, \"volumeNotional\": \"1.000005\"}, {\"close\": \"2496.270000\", \"high\": \"2496.270000\", \"interval\": \"1d\", \"low\": \"2496.270000\", \"open\": \"2496.270000\", \"timestamp\": 1727827200, \"volumeNotional\": \"0.000000\"}, {\"close\": \"2496.270000\", \"high\": \"2496.270000\", \"interval\": \"1d\", \"low\": \"2496.270000\", \"open\": \"2496.270000\", \"timestamp\": 1727913600, \"volumeNotional\": \"0.000000\"}, {\"close\": \"2496.260000\", \"high\": \"2496.260000\", \"interval\": \"1d\", \"low\": \"2496.260000\", \"open\": \"2496.260000\", \"timestamp\": 1728000000, \"volumeNotional\": \"1.000001\"}, {\"close\": \"2496.260000\", \"high\": \"2496.260000\", \"interval\": \"1d\", \"low\": \"2496.260000\", \"open\": \"2496.260000\", \"timestamp\": 1728086400, \"volumeNotional\": \"0.000000\"}, {\"close\": \"2496.260000\", \"high\": \"2496.260000\", \"interval\": \"1d\", \"low\": \"2496.260000\", \"open\": \"2496.260000\", \"timestamp\": 1728172800, \"volumeNotional\": \"0.000000\"}, {\"close\": \"2390.000000\", \"high\": \"2390.000000\", \"interval\": \"1d\", \"low\": \"2350.000000\", \"open\": \"2374.610000\", \"timestamp\": 1728432000, \"volumeNotional\": \"66.093720\"}, {\"close\": \"2386.230000\", \"high\": \"2417.770000\", \"interval\": \"1d\", \"low\": \"2345.000000\", \"open\": \"2390.000000\", \"timestamp\": 1728518400, \"volumeNotional\": \"94.446530\"}, {\"close\": \"2437.900000\", \"high\": \"2460.060000\", \"interval\": \"1d\", \"low\": \"2386.230000\", \"open\": \"2386.230000\", \"timestamp\": 1728604800, \"volumeNotiona"
+ }
+}

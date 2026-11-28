@@ -1,0 +1,17 @@
+=== ubatchnf16
+  HL spot books 357, kept 32, hourly rows 116745
+  wrote batchnf16_hlspot_1h.parquet: 116745 rows
+  GRVT instruments 184
+  grvt: markets 184, rows 57395, 2024-12-06..2026-11-28
+  wrote batchnf16_grvt_1d.parquet: 57395 rows
+  Nado products tried 100
+  nado: markets 0, rows 0
+  wrote batchnf16_nado_1d.parquet: 0 rows
+  Ethereal products 0, candle path None
+  ethereal: markets 0, rows 0
+  wrote batchnf16_ethereal_1d.parquet: 0 rows
+  Hibachi contracts 15
+  hibachi: markets 15, rows 5979, 2024-10-01..2026-11-28
+  wrote batchnf16_hibachi_1d.parquet: 5979 rows
+  probe replies kept: 8
+=== ubatchnf16 done in 218s  ok 0 fail 0
