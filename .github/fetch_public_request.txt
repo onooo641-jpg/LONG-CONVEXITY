@@ -1,2 +1,2 @@
-# Batch Z Lighter re-fetch, raw units, after restoring fetch_uncharted.py (workstream C)
-ubatchz
+# Batch NF6 pull (workstream C)
+ubatchnf6

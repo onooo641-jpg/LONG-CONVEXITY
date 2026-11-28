@@ -2685,3 +2685,49 @@ def job_ubatchz():
     rows = [r for r in rows if r[0] != "lighter"]
     df = pd.DataFrame(rows, columns=["venue", "coin", "t", "rate"]).drop_duplicates(["venue", "coin", "t"])
     save("batchz_funding.parquet", df)
+
+
+def job_ubatchnf6():
+    """Batch NF6: daily candles from BtcTurk (TRY pairs) and Indodax (IDR pairs) for coins listed on Hyperliquid."""
+    import json as _json
+    hl = set(pd.read_parquet(OUT / "uncharted_385_candles.parquet")["coin"].str.replace(r"^k", "", regex=True).str.upper())
+    rows = []
+    st, raw = _raw_get("https://api.btcturk.com/api/v2/server/exchangeinfo", timeout=30)
+    try:
+        syms = [s for s in _json.loads(raw.decode())["data"]["symbols"] if s.get("denominator") == "TRY" and s.get("numerator") in hl]
+    except Exception as e:  # noqa: BLE001
+        syms = []
+        print(f"  btcturk exchangeinfo HTTP {st} {e} {raw[:150] if raw else b''}", flush=True)
+    print(f"  btcturk TRY pairs on HL: {len(syms)}", flush=True)
+    for s in syms:
+        sym = s["name"]
+        st, raw = _raw_get(f"https://graph-api.btcturk.com/v1/klines/history?symbol={sym}&resolution=1D&from=1546300800&to=1795651200", timeout=40)
+        try:
+            d = _json.loads(raw.decode())
+            for t, o, h, l, c, v in zip(d["t"], d["o"], d["h"], d["l"], d["c"], d["v"]):
+                rows.append(("btcturk", s["numerator"], int(t), float(o), float(h), float(l), float(c), float(v)))
+        except Exception as e:  # noqa: BLE001
+            print(f"  btcturk {sym} HTTP {st} {e} {raw[:120] if raw else b''}", flush=True)
+        time.sleep(0.4)
+    st, raw = _raw_get("https://indodax.com/api/pairs", timeout=30)
+    try:
+        pairs = [p for p in _json.loads(raw.decode()) if str(p.get("traded_currency", "")).upper() in hl and str(p.get("base_currency", "")).lower() == "idr"]
+    except Exception as e:  # noqa: BLE001
+        pairs = []
+        print(f"  indodax pairs HTTP {st} {e} {raw[:150] if raw else b''}", flush=True)
+    print(f"  indodax IDR pairs on HL: {len(pairs)}", flush=True)
+    for p in pairs:
+        sym = str(p.get("ticker_id") or p.get("id") or "").replace("_", "").upper()
+        st, raw = _raw_get(f"https://indodax.com/tradingview/history_v2?symbol={sym}&tf=1D&from=1546300800&to=1795651200", timeout=40)
+        try:
+            d = _json.loads(raw.decode())
+            items = d if isinstance(d, list) else d.get("data", [])
+            for x in items:
+                rows.append(("indodax", str(p["traded_currency"]).upper(), int(x["Time"]), float(x["Open"]), float(x["High"]), float(x["Low"]),
+                             float(x["Close"]), float(x.get("Volume", 0))))
+        except Exception as e:  # noqa: BLE001
+            print(f"  indodax {sym} HTTP {st} {e} {raw[:120] if raw else b''}", flush=True)
+        time.sleep(0.4)
+    df = pd.DataFrame(rows, columns=["venue", "coin", "t", "o", "h", "l", "c", "v"])
+    print("  " + ", ".join(f"{v} {g.coin.nunique()} coins {len(g)} rows" for v, g in df.groupby("venue")), flush=True)
+    save("batchnf6_local_1d.parquet", df)
