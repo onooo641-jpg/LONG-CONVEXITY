@@ -74,3 +74,12 @@
   - #624 starts at the first snapshot ≥ 7 days after registration.
   - The 24 daily rows already fetched are kept for the sanity check only; the analysis uses the weekly grid.
 - **The Stage 0 bar is unchanged in substance:** ≥ 30 subnets and snapshots spanning ≥ 200 days (≥ 29 weekly snapshots).
+
+## Addendum 2 (2026-11-28, before any return was computed)
+- **HL TAO funding:** the existing file covers 2026-07-28..2026-11-25 only. Holds before that day use the mean daily TAO funding
+  observed in it. That is small next to the 3%/month bar, and the mean is printed.
+- **Netuid re-use:** Bittensor re-assigns a deregistered subnet's netuid. A hold is followed only while `registered_at` is the same
+  as at entry. A subnet is **deregistered** if it is missing, or re-registered, at the hold's end snapshot. That snapshot must exist in
+  the data; a missing snapshot from the rate limit is not a deregistration. A deregistered hold counts as −100%, as registered
+  ("otherwise 0").
+- **Stage 1/2 boundaries** are by hold start date: Stage 1 2025-03-01..2025-12-31, Stage 2 2026-01-01..2026-10-31.
