@@ -255,6 +255,7 @@ risk, 5m signals and 1m fills.
 | 526–529 | Batch WK2 (last wick refinements): hold length, equal-risk sizing, skip BTC crash days, #389 + #522 combined | `docs/PREREG_BATCH_WK2_20261128.md` | **#529 PASS**: OOS 2025–26 $26,680/yr, +2.66%/fill (t 10.6), worst month −$417 (family 1; forward test decides); #526–#528 FAIL |
 | 530–531 | Batch W (energy hedging seasonals): spring refinery maintenance (UGA−USO), natural-gas winter premium (short UNG Dec–Mar) | `docs/PREREG_BATCH_W_20261128.md` | 0 of 2 (#531 near miss: +13.35%/winter OOS, t 1.25; Apr–Oct control −3.45%) |
 | 532–533 | Batch X (wick mechanism outside crypto): US ETFs, FX pairs | `docs/PREREG_BATCH_X_20261128.md` | 0 of 2: ETFs −0.53%/fill OOS; FX +0.87%/fill is a Yahoo bad-print artifact (97% spike-only bars, incl. closed-market 1 Jan dates) |
+| 534 | Batch Z: #208 funding-gap rule on points-farming venues (HL/Aster/Lighter) | `docs/PREREG_BATCH_Z_20261128.md` | FAIL: Stage 1 3.75%/yr (< 4%), halves 14.6% / 4.1% on capital; gaps closed in 2025–26 |
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.

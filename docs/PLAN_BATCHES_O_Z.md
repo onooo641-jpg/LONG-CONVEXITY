@@ -23,7 +23,7 @@ done. If a session ends, the next one continues from the first unchecked line.
 | W | Energy (natural gas storage season, gasoline summer-blend switch, refinery maintenance) | done 2026-11-28, 0/2 (#531 near miss) |
 | X | Asia-hours structural flows (Korean/Japanese retail and pension timing, HK Stock Connect quotas) | **replaced 2026-11-28** by the wick mechanism outside crypto (US ETFs, FX; passes G5/G6; no free Asia-flow history found) — done 2026-11-28, 0/2 (ETFs negative; FX result was a bad-print artifact) |
 | Y | Exchange programmes with published payouts (maker rebates, fee tiers, competitions), if backtestable | **already covered**: maker rebates and competitions in Nonprop 2, Batch E, radar N-sources; payouts not backtestable |
-| Z | Wildcard: whatever the radar or the batches above surfaced | in progress: #534 points-farming funding subsidies (Aster, Lighter) |
+| Z | Wildcard: whatever the radar or the batches above surfaced | done 2026-11-28: #534 points-farming funding subsidies FAIL (halves 14.6% / 4.1%) |
 
 Batches renumber candidates from #512 upward.
 
@@ -37,3 +37,9 @@ Batches renumber candidates from #512 upward.
   - X: Asia-hours flows. No free history found yet for Stock Connect flows.
   - Z: wildcard.
 - Jx's warning ("ideas will just get more sloppy") applies: the open areas are the thin ones.
+
+## Status 2026-11-28 (after X, W, WK, WK2, Z)
+- **Plan O–Z complete.**
+  - Passes: #520, #522 and #529, the wick-family refinements; #529 is $26.7K/yr out of sample and in the forward paper test.
+  - Every new-area batch: 0 passes.
+- **New desk checks G5/G6** (`docs/HANDOFF_NONPROP.md`) apply to any future batch.

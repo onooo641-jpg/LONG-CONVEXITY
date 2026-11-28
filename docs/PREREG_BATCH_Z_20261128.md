@@ -44,3 +44,18 @@
 - **Rule for the analysis:** Lighter rate = raw / 100 per hour; the sign follows `direction` (short = shorts pay longs = negative).
 - Aster: per-8-hour fraction (median 0.0001, the usual 0.01%), spread over its interval as registered.
 - Nothing else changes.
+
+## Result (2026-11-28; `docs/jx_runs/batch_z_20261128.txt`, re-run identical): **FAIL**
+- **Pooled HL/Aster/Lighter (window 2024-10-30..2026-10-31):**
+  - Stage 1 (last 3 months): 3.75%/yr, below the 4% kill line.
+  - Halves: 14.60% / **4.12%** on capital.
+  - Second half with fees × 1.5: −0.61%.
+  - About $3.7K/yr on $40K.
+- **Pairs, second half:** HL–Aster 1.52%, HL–Lighter −0.57%, Aster–Lighter 0.63%.
+- **Units check** as in addendum 1: Lighter BTC median 1.20e-05 per hour, against HL 1.25e-05.
+- **Conclusion:** the points-farming venues did not carry a lasting funding subsidy. Gaps were wide in 2024–25 and closed in 2025–26,
+  the same decay as #208's original pairs.
+
+**Process note:** a mis-scoped edit to `scripts/fetch_uncharted.py` (commit dede428f) deleted 1,576 lines. It was caught when the
+Actions job failed to import, restored from the previous commit in c634b1bd, and the change was re-applied inside `job_ubatchz` only.
+No other job ran in between.

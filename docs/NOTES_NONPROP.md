@@ -405,3 +405,8 @@ Jx's free Coinalyze key gave daily OI and liquidations from 2020. The five OI an
 - **FX:** looked excellent but was a Yahoo bad-print artifact (97% spike-only bars; fills on closed-market 1 January dates). Free daily
   FX lows cannot test resting-order ideas.
 - The wick edge lives in crypto's 24/7 leveraged perps, not in liquid TradFi.
+
+## 2026-11-28 — Batch Z (#534), points-farming funding subsidies: FAIL
+- #208's funding-gap rule on Aster and Lighter: 14.6% → 4.1%/yr on capital (halves); the gaps closed in 2025–26.
+- **Plan O–Z is finished.** New areas: 0 passes. The wick refinements (#520/#522/#529) are the only progress; #529 is in the forward
+  paper test from 2026-12-01.
