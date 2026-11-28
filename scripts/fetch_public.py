@@ -1936,6 +1936,15 @@ def job_ubatchnf15():
 
 JOBS["ubatchnf15"] = job_ubatchnf15
 
+def job_ubatchnf16():
+    import sys as _s
+    _s.path.insert(0, str(Path(__file__).resolve().parent))
+    from fetch_uncharted import job_ubatchnf16 as _j
+    _j()
+
+
+JOBS["ubatchnf16"] = job_ubatchnf16
+
 
 
 
@@ -2163,12 +2172,3 @@ def main(argv):
 
 if __name__ == "__main__":
     sys.exit(main(sys.argv[1:]))
-
-def job_ubatchnf16():
-    import sys as _s
-    _s.path.insert(0, str(Path(__file__).resolve().parent))
-    from fetch_uncharted import job_ubatchnf16 as _j
-    _j()
-
-
-JOBS["ubatchnf16"] = job_ubatchnf16

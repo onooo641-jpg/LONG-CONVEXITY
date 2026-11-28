@@ -1,2 +1,2 @@
-# Batch NF16 pull (workstream C)
+# Batch NF16 pull (workstream C), retry: job registered after the main block in d1d41219
 ubatchnf16
