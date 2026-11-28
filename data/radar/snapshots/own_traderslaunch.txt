@@ -14,7 +14,7 @@ Example Account $100,000
 Profit Target $2,000
 Max Drawdown $1,000 EOD
 60% or 80% profit split. Sizes $100K to $300K. No consistency rule once funded.
-Get Premium from $69.30
+Get Premium from $99
 For Traders Who Want Simple Rules
 A Loss Limit That Never Moves.
 Example Account $25,000
@@ -70,9 +70,8 @@ New Here? How to Choose Your Account 0:54
 Futures 100K
 80% Profit Split
 $100,000 starting capital
-$111.30
+$159
 One-Time Fee
-List price $159 30 % Off
 Get Funded Evaluation
 Profit Target $2,000
 Max Drawdown $1,000 EOD Locks at starting balance
@@ -88,9 +87,8 @@ Starts at 2 minis or 20 micros; that is your fixed limit.
 Futures 200K
 80% Profit Split
 $200,000 starting capital
-$209.30
+$299
 One-Time Fee
-List price $299 30 % Off
 Get Funded Evaluation
 Profit Target $4,000
 Max Drawdown $2,000 EOD Locks at starting balance
@@ -106,9 +104,8 @@ Starts at 4 minis or 40 micros; that is your fixed limit.
 Futures 300K
 80% Profit Split
 $300,000 starting capital
-$419.30
+$599
 One-Time Fee
-List price $599 30 % Off
 Get Funded Evaluation
 Profit Target $6,000
 Max Drawdown $3,000 EOD Locks at starting balance
@@ -123,7 +120,6 @@ Activation Fee None
 Starts at 6 minis or 60 micros; that is your fixed limit.
 Swipe to see all 3 sizes →
 Trading hours: 6:00pm – 4:00pm ET the following day. At least 1 trade in any 7 days, or the evaluation is breached.
-Have a creator or affiliate code? Enter it at checkout to support them. One code per order.
 No Consistency Rules Trade your way once funded
 Daily Payouts Request a payout any day you profit
 No Payout Caps Withdraw your profits in full
