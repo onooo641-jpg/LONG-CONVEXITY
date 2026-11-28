@@ -3499,3 +3499,85 @@ def job_ubatchnf18():
             end = first * 1_000_000 - 1
             time.sleep(0.2)
     save("batchnf18_grvt_1h.parquet", pd.DataFrame(rows, columns=cols).drop_duplicates(["market", "t"]))
+
+
+def job_ubatchnf19():
+    """Batch NF19: hourly candles (last 5,000 hours) for every hyna market, HL spot USDC books that map to a main perp, GRVT crypto perps
+    whose base is a main perp, and the HL main perps of all those coins."""
+    import re as _re
+
+    def norm(s):
+        s = str(s).upper().split(":")[-1]
+        s = _re.sub(r"(_USDT_PERP|_USDC_PERP|-PERP|PERP|-USDT|USDT|-USDC|USDC|-USD|USD)$", "", s)
+        s = _re.sub(r"^(1000000|1000|K)(?=[A-Z])", "", s)
+        return s.strip("-_")
+
+    now = int(time.time() * 1000)
+    start = now - 5000 * 3600 * 1000
+    cols = ["venue", "market", "key", "t", "o", "h", "l", "c", "v_usd"]
+    meta = (get(HL, {"type": "meta"}) or {}).get("universe") or []
+    main = {norm(u["name"]): u["name"] for u in meta if not u.get("isDelisted")}
+    save("batchnf19_main_perps.json", sorted(main))
+
+    def hl_candles(coin, venue, key):
+        c = get(HL, {"type": "candleSnapshot", "req": {"coin": coin, "interval": "1h", "startTime": start, "endTime": now}}) or []
+        time.sleep(1.05)
+        return [(venue, coin, key, int(x["t"]), float(x["o"]), float(x["h"]), float(x["l"]), float(x["c"]), float(x["v"]) * float(x["c"])) for x in c]
+
+    need = set()
+    rows = []
+    for u in (get(HL, {"type": "meta", "dex": "hyna"}) or {}).get("universe") or []:
+        k = norm(u["name"])
+        rows += hl_candles(u["name"], "hyna", k)
+        need.add(k)
+    save("batchnf19_hyna_1h.parquet", pd.DataFrame(rows, columns=cols))
+
+    sm = get(HL, {"type": "spotMeta"}) or {}
+    toks = {t["index"]: t["name"] for t in sm.get("tokens") or []}
+    rows = []
+    for p in sm.get("universe") or []:
+        tk = p.get("tokens") or []
+        if len(tk) != 2 or toks.get(tk[1]) != "USDC":
+            continue
+        nm = str(toks.get(tk[0], "")).upper()
+        k = nm[1:] if nm.startswith("U") and nm[1:] in main else nm if nm in main else None
+        if k:
+            rows += hl_candles(p["name"], "hlspot", k)
+            need.add(k)
+    save("batchnf19_hlspot_1h.parquet", pd.DataFrame(rows, columns=cols))
+
+    st, ins = req("https://market-data.grvt.io/full/v1/all_instruments", {"kind": ["PERPETUAL"], "is_active": True}, 40, {"Accept": "application/json"})
+    gl = [(x["instrument"], norm(x.get("base") or x["instrument"])) for x in ((ins or {}).get("result") or []) if st == 200 and isinstance(x, dict)
+          and x.get("instrument") and str(x.get("asset_class", "")).upper() == "CRYPTO"]
+    rows = []
+    for s, k in gl:
+        if k not in main:
+            continue
+        need.add(k)
+        end = now * 1_000_000
+        for _ in range(8):
+            st, d = req("https://market-data.grvt.io/full/v1/kline", {"instrument": s, "interval": "CI_1_H", "type": "TRADE",
+                        "start_time": str(start * 1_000_000), "end_time": str(end), "limit": 1000}, 40, {"Accept": "application/json"})
+            got = []
+            for x in ((d or {}).get("result") or []) if st == 200 else []:
+                try:
+                    got.append(("grvt", s, k, int(int(x["open_time"]) // 1_000_000), float(x["open"]), float(x["high"]), float(x["low"]),
+                                float(x["close"]), float(x.get("volume_q") or 0)))
+                except Exception:  # noqa: BLE001
+                    pass
+            if not got:
+                break
+            rows += got
+            first = min(g[3] for g in got)
+            if first <= start or first * 1_000_000 >= end:
+                break
+            end = first * 1_000_000 - 1
+            time.sleep(0.2)
+    save("batchnf19_grvt_1h.parquet", pd.DataFrame(rows, columns=cols).drop_duplicates(["market", "t"]))
+
+    rows = []
+    for k in sorted(need):
+        if k in main:
+            rows += hl_candles(main[k], "hlmain", k)
+    print(f"  main perps fetched {len({r[1] for r in rows})}", flush=True)
+    save("batchnf19_hlmain_1h.parquet", pd.DataFrame(rows, columns=cols))

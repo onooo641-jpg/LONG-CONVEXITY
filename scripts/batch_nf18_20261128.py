@@ -1,4 +1,4 @@
-"""Batch NF18 #614-#618: the same equity, pre-IPO or commodity perp on several thin venues (docs/PREREG_BATCH_NF18_20261128.md).
+"""Batch NF18 #614 (pre-IPO perps across HIP-3 dexes and GRVT; #615-#618 withdrawn) (docs/PREREG_BATCH_NF18_20261128.md).
 
     uv run python -m scripts.batch_nf18_20261128 | tee docs/jx_runs/batch_nf18_20261128.txt
 """
@@ -144,22 +144,12 @@ def main():
     lo = d["ts"].min()
     print(f"markets {d['id'].nunique()} on {d['venue'].nunique()} venues, keys {d['key'].nunique()}, {lo}..{d['ts'].max()}")
     print("   keys by class: " + ", ".join(f"{k} {n}" for k, n in d.drop_duplicates("key")["cls"].value_counts().items()) + "\n")
-    eq_all = gap_trades(d, "equity", 0.01)
-    specs = [("#614", "Pre-IPO cross-venue gap >= 3%, enter h+1, exit >= h+5", gap_trades(d, "preipo", 0.03), 20),
-             ("#615", "Equity cross-venue gap >= 1%, off-hours signal", eq_all[~cash_hour(eq_all["ts"])] if len(eq_all) else eq_all, 30),
-             ("#616", "Equity cross-venue gap >= 1%, US cash-hours signal", eq_all[cash_hour(eq_all["ts"])] if len(eq_all) else eq_all, 30),
-             ("#617", "Commodity/index cross-venue gap >= 1%", gap_trades(d, "comidx", 0.01), 30)]
-    for num, label, e, n in specs:
-        print(f"{num} {label}")
-        if len(e):
-            print(f"   events {len(e)} on {e['pair'].nunique()} pairs; median gap at signal {e['gap'].median():+.2%}")
-        verdict(e, lo, legs=2, min_n=n)
-    print("#618 Single-stock weekend fade (|Fri 20:00 -> Sun 22:00| >= 3%), exit Monday 16:00 UTC")
-    e = weekend(d)
+    print("#615-#618 withdrawn before data (addendum 1: public underlying, Jx 2026-11-28); not run\n")
+    e = gap_trades(d, "preipo", 0.03)
+    print("#614 Pre-IPO cross-venue gap >= 3%, enter h+1, exit >= h+5")
     if len(e):
-        print(f"   events {len(e)} on {e['key'].nunique()} stocks; median |move| {e['move'].abs().median():.2%}")
-    verdict(e, lo, legs=1, min_n=20)
-
+        print(f"   events {len(e)} on {e['pair'].nunique()} pairs; median gap at signal {e['gap'].median():+.2%}")
+    verdict(e, lo, legs=2, min_n=20)
 
 if __name__ == "__main__":
     main()

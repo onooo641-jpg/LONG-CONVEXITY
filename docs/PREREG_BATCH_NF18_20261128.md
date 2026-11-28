@@ -92,3 +92,16 @@
 - HIP-3 deployer risk (a deployer can halt a market).
 
 **Script/output:** `scripts/batch_nf18_20261128.py` → `docs/jx_runs/batch_nf18_20261128.txt`, re-run identical.
+
+## Addendum 1 (2026-11-28, before any NF18 data was fetched or looked at): #615–#618 withdrawn
+- **Jx (2026-11-28):** "Why is it all stocks? I feel like that's too public for an edge to exist."
+- **Withdrawn:**
+  - #615 and #616: equity cross-venue gaps;
+  - #617: commodity and index gaps;
+  - #618: single-stock weekend fade.
+- **Reason:** every one of these has a public underlying that re-anchors the copies each US session. HL arbitrage bots can watch all the
+  copies. That is the same G6 problem as NF12/NF13 (deep, popular markets).
+- **Kept:** #614, the pre-IPO gap. ANTHROPIC, OPENAI and SPACEX have no public price, so the copies only have each other. Its rules are
+  unchanged.
+- The fetch job runs as committed. The script reports #614 only.
+- The crypto-native replacements are in `docs/PREREG_BATCH_NF19_20261128.md`.
