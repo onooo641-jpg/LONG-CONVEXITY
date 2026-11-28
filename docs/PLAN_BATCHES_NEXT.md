@@ -12,6 +12,7 @@
 | NF2 (#537–#542) | Aster/dYdX listing fade, pump short, crash bounce, dying-listing bleed | 0/4; forward-only #541/#542 |
 | NF3 (#543–#546) | Binance events shorted on HL | 0/4 |
 | NF4 (#547–#551) | Korean retail flows (Upbit) on HL | 0/4; forward-only #551 |
+| NF9 (#568–#571) | hourly forced flows on HL | done: #569 PASS (~$4.4K/yr), forward N14 |
 | NF8 (#564–#567) | Binance leverage signals → HL | done, 0/4 |
 | NF7 (#560–#563) | Korean retail follow-ups | done, 0/4 |
 | NF6 (#556–#559) | BtcTurk/Indodax pump days and frenzies → short HL | done, 0/4 |

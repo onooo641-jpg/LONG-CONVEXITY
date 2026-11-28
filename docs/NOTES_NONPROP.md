@@ -441,3 +441,6 @@ Jx's free Coinalyze key gave daily OI and liquidations from 2020. The five OI an
 - #555's pump-day give-back is a 3-day effect; 7-day holds hit squeezes.
 
 ## 2026-11-28 — Batch NF8 (#564–#567), Binance leverage signals on HL: 0 of 4
+
+## 2026-11-28 — Batch NF9 (#568–#571): #569 hourly cascade reversal passes
+- Buying HL coins after a 5-sigma hourly drop and selling 4 hours later: +0.34%/trade out of sample (t 2.7), about $4.4K/yr. Forward via radar N14 from 2026-12-01.

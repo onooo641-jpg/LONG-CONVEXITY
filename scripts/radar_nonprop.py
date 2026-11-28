@@ -341,6 +341,47 @@ def n10_n11_hyperliquid(fetch, today, rows, health, out: Path):
                                            else f"0 fills since {WICK_START}")
 
 
+# ------------------------------------------------------------------ N14: forward paper log for #569 (docs/PREREG_BATCH_NF9_20261128.md)
+def n14_hourly_cascade(fetch, today, rows, health, out: Path):
+    """N14: #569 paper trades: a completed HL hour with return <= -5 sigma (168 h) -> buy at its close, sell 4 hours later."""
+    import json as _j
+    _, t = fetch(HL_INFO, post={"type": "meta"})
+    live = [u["name"] for u in (_j.loads(t) if t else {}).get("universe", []) if not u.get("isDelisted")]
+    day0 = pd.Timestamp(today, tz="UTC").normalize()
+    start = day0 - pd.Timedelta(days=10)
+    recs = []
+    for c in live:
+        _, kt = fetch(HL_INFO, post={"type": "candleSnapshot", "req": {"coin": c, "interval": "1h", "startTime": int(start.timestamp() * 1000),
+                                                                         "endTime": int(day0.timestamp() * 1000)}}, tries=2)
+        k = _j.loads(kt) if kt else []
+        time.sleep(0.2)
+        if len(k) < 180:
+            continue
+        g = pd.DataFrame(k)
+        g["ts"] = pd.to_datetime(g["t"], unit="ms", utc=True)
+        for col in ("c", "v"):
+            g[col] = g[col].astype(float)
+        g = g.drop_duplicates("ts").sort_values("ts").reset_index(drop=True)
+        r = g["c"].pct_change()
+        sig = r.rolling(168, min_periods=120).std().shift()
+        busy = -1
+        for i in range(170, len(g) - 4):
+            if i <= busy or str(g["ts"].iloc[i].date()) < WICK_START or not (r.iloc[i] <= -5 * sig.iloc[i]):
+                continue
+            recs.append({"coin": c, "ts": g["ts"].iloc[i].isoformat(), "ret": g["c"].iloc[i + 4] / g["c"].iloc[i] - 1 - 0.0009,
+                         "size": min(1500.0, 0.01 * g["v"].iloc[i] * g["c"].iloc[i])})
+            busy = i + 4
+    f = out / "hourly_cascade_paper.parquet"
+    cols = ["coin", "ts", "ret", "size"]
+    old = pd.read_parquet(f) if f.exists() else pd.DataFrame(columns=cols)
+    new = pd.DataFrame(recs, columns=cols)
+    key = lambda d: d["coin"].astype(str) + "|" + d["ts"].astype(str)  # noqa: E731
+    allr = pd.concat([old, new[~key(new).isin(key(old))]], ignore_index=True)
+    allr.to_parquet(f, index=False)
+    health["N14 hourly cascade paper (#569 S2c)"] = (f"{len(allr)} trades since {WICK_START}; mean net {allr['ret'].astype(float).mean():.2%}"
+                                                      if len(allr) else f"0 trades since {WICK_START}")
+
+
 # ------------------------------------------------------------------ N13: forward paper log for #536 (docs/PREREG_BATCH_NF_20261128.md)
 ASTER = "https://fapi.asterdex.com/fapi/v1"
 
@@ -472,6 +513,7 @@ def run(fetch, jget, today, out: Path, root: Path, changes_today):
                      ("N4/N8/N9", lambda: page_leads(changes_today, today, rows)),
                      ("N10/N11", lambda: n10_n11_hyperliquid(fetch, today, rows, health, out)),
                      ("N13", lambda: n13_aster_new(fetch, today, rows, health, out)),
+                     ("N14", lambda: n14_hourly_cascade(fetch, today, rows, health, out)),
                      ("N12", lambda: n12_korea(fetch, today, rows, health, out))):
         try:
             fn()
