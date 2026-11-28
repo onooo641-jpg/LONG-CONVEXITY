@@ -1,2 +1,2 @@
-# Batch NF23 pull (workstream C)
-ubatchnf23
+# Batch NF25 volumes (workstream C)
+ubatchnf25

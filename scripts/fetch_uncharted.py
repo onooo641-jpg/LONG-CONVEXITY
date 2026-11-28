@@ -3793,3 +3793,17 @@ def job_ubatchnf23():
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "batchnf23_probe.json").write_text(json.dumps(probe, indent=1))
     print(f"  probe replies kept: {len(probe)}", flush=True)
+
+
+def job_ubatchnf25():
+    """Batch NF25: DefiLlama daily derivatives volume for perp DEXes with completed or live points programmes."""
+    ov = get("https://api.llama.fi/overview/derivatives?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true", tries=3) or {}
+    want = ("hyperliquid", "aster", "lighter", "paradex", "aevo", "drift", "extended", "pacifica", "edgex", "backpack")
+    prots = [p for p in ov.get("protocols") or [] if any(w in str(p.get("slug", "")).lower() or w in str(p.get("name", "")).lower() for w in want)]
+    print(f"  matched protocols: {[p.get('slug') for p in prots]}", flush=True)
+    rows = []
+    for p in prots:
+        d = get(f"https://api.llama.fi/summary/derivatives/{p['slug']}?dataType=dailyVolume", tries=3) or {}
+        rows += [(p["slug"], p.get("name"), int(t), float(v)) for t, v in d.get("totalDataChart") or [] if v is not None]
+        time.sleep(0.5)
+    save("batchnf25_dex_volume.parquet", pd.DataFrame(rows, columns=["slug", "name", "t", "volume"]))
