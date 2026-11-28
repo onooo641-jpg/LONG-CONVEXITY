@@ -3066,3 +3066,105 @@ def job_ubatchnf14():
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "batchnf14_probe.json").write_text(json.dumps(probe, indent=1))
     print(f"  probe replies kept: {len(probe)}", flush=True)
+
+
+def job_ubatchnf15():
+    """Batch NF15: hourly candles 2026-03-01..2026-11-26 on Backpack, Extended, Pacifica and Apex (40 largest by NF14 volume)."""
+    A, Z = int(pd.Timestamp("2026-03-01", tz="UTC").timestamp()), int(pd.Timestamp("2026-11-26", tz="UTC").timestamp())
+
+    def J(url):
+        for k in range(3):
+            st, raw = _raw_get(url, timeout=40, headers={"Accept": "application/json"})
+            if st == 429 or st is None:
+                time.sleep(5 * (k + 1))
+                continue
+            try:
+                return json.loads(raw.decode()) if st == 200 else None
+            except Exception:  # noqa: BLE001
+                return None
+        return None
+
+    f = lambda x: float(x) if x not in (None, "") else None  # noqa: E731
+
+    def windows(span_h):
+        a = A
+        while a < Z:
+            yield a, min(Z, a + span_h * 3600)
+            a += span_h * 3600
+
+    def save_v(name, recs):
+        df = pd.DataFrame(recs, columns=["coin", "t", "o", "h", "l", "c", "v_usd"]).dropna().drop_duplicates(["coin", "t"])
+        print(f"  {name}: markets {df.coin.nunique() if len(df) else 0}, rows {len(df)}", flush=True)
+        save(f"batchnf15_{name}_1h.parquet", df)
+
+    recs = []
+    mk = J("https://api.backpack.exchange/api/v1/markets") or []
+    for s in [m["symbol"] for m in mk if isinstance(m, dict) and str(m.get("marketType", "")).upper() == "PERP"]:
+        for a, b in windows(900):
+            d = J(f"https://api.backpack.exchange/api/v1/klines?symbol={s}&interval=1h&startTime={a}&endTime={b}") or []
+            for x in d if isinstance(d, list) else []:
+                try:
+                    recs.append((s, int(pd.Timestamp(x["start"], tz="UTC").timestamp() * 1000), f(x["open"]), f(x["high"]), f(x["low"]),
+                                 f(x["close"]), f(x.get("quoteVolume"))))
+                except Exception:  # noqa: BLE001
+                    pass
+            time.sleep(0.1)
+    save_v("backpack", recs)
+
+    recs = []
+    mk = J("https://api.starknet.extended.exchange/api/v1/info/markets") or {}
+    names = [m["name"] for m in (mk.get("data") or []) if isinstance(m, dict) and m.get("name") and m.get("active", True)]
+    for s in names:
+        end = Z * 1000
+        for _ in range(8):
+            d = J(f"https://api.starknet.extended.exchange/api/v1/info/candles/{s}/trades?interval=PT1H&limit=1000&endTime={end}") or {}
+            rows = d.get("data") or [] if isinstance(d, dict) else []
+            got = []
+            for x in rows:
+                try:
+                    c = f(x["c"])
+                    got.append((s, int(x["T"]), f(x["o"]), f(x["h"]), f(x["l"]), c, (f(x.get("v")) or 0) * c))
+                except Exception:  # noqa: BLE001
+                    pass
+            if not got:
+                break
+            recs += got
+            first = min(g[1] for g in got)
+            if first >= end or first <= A * 1000:
+                break
+            end = first - 1
+            time.sleep(0.1)
+    save_v("extended", recs)
+
+    recs = []
+    inf = J("https://api.pacifica.fi/api/v1/info") or {}
+    for s in [m["symbol"] for m in (inf.get("data") or []) if isinstance(m, dict) and m.get("symbol")]:
+        for a, b in windows(720):
+            d = J(f"https://api.pacifica.fi/api/v1/kline?symbol={s}&interval=1h&start_time={a * 1000}&end_time={b * 1000}") or {}
+            for x in (d.get("data") or []) if isinstance(d, dict) else []:
+                try:
+                    c = f(x["c"])
+                    recs.append((s, int(x["t"]), f(x["o"]), f(x["h"]), f(x["l"]), c, (f(x.get("v")) or 0) * c))
+                except Exception:  # noqa: BLE001
+                    pass
+            time.sleep(0.1)
+    save_v("pacifica", recs)
+
+    recs = []
+    try:
+        dd = pd.read_parquet(OUT / "batchnf14_apex_1d.parquet")
+        top = dd.groupby("coin")["v_usd"].sum().sort_values(ascending=False).head(40).index.tolist()
+    except Exception:  # noqa: BLE001
+        top = []
+    for s in top:
+        for a, b in windows(199):
+            d = J(f"https://omni.apex.exchange/api/v3/klines?symbol={s}&interval=60&start={a}&end={b}&limit=200") or {}
+            v = (d.get("data") or {}) if isinstance(d, dict) else {}
+            rows = v.get(s) or (next(iter(v.values()), []) if isinstance(v, dict) and v else [])
+            for x in rows if isinstance(rows, list) else []:
+                try:
+                    recs.append((s, int(x["t"]), f(x["o"]), f(x["h"]), f(x["l"]), f(x["c"]), f(x.get("tr")) or (f(x["v"]) or 0) * f(x["c"])))
+                except Exception:  # noqa: BLE001
+                    pass
+            time.sleep(0.1)
+    save_v("apex", recs)
