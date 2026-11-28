@@ -447,3 +447,6 @@ Jx's free Coinalyze key gave daily OI and liquidations from 2020. The five OI an
 
 ## 2026-11-28 — Batch NF10 (#572–#575): 0 tradeable passes; warning for #569
 - A clean Binance hourly re-run of the cascade reversal was positive in 2023–24 and negative in 2025–26. #569's forward test (N14) decides.
+
+## 2026-11-28 — Batch NF11 (#576–#579), Reg SHO threshold list: 0 of 4
+- Forced buy-ins don't lift these stocks; they fall. Shorting them fails G5 (no borrow).

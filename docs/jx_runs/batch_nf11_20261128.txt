@@ -1,0 +1,22 @@
+threshold files 2322 (2018-01-02..2026-11-25), tickers 2362, priced tickers 1412
+
+#576 Close-out deadline: long day 11 -> 16: 1322 priced events of 1982 (67% with prices)
+   Stage 1 (< 2023): n 366, mean -1.17% (median -1.08%, t -1.03, win 42%), sum without the 3 best -9.16
+   Stage 2 (2023-26): n 956, mean -4.61% (median -5.09%, t -6.09, win 35%), sum without the 3 best -50.14
+   VERDICT KILL (Stage 1) | $/yr at $3,000 per event: $-33,934
+
+#577 Addition: long day 1 -> 13: 4567 priced events of 7328 (62% with prices)
+   Stage 1 (< 2023): n 1405, mean -3.10% (median -1.89%, t -4.60, win 37%), sum without the 3 best -51.00
+   Stage 2 (2023-26): n 3162, mean -7.52% (median -8.41%, t -5.68, win 31%), sum without the 3 best -292.08
+   VERDICT KILL (Stage 1) | $/yr at $3,000 per event: $-182,881
+
+#578 Removal: short 5 d: 969 priced events of 1448 (67% with prices)
+   Stage 1 (< 2023): n 264, mean +2.13% (median +0.96%, t 2.70, win 58%), sum without the 3 best +4.34
+   Stage 2 (2023-26): n 705, mean +0.98% (median +3.50%, t 0.81, win 63%), sum without the 3 best +4.92
+   VERDICT FAIL | $/yr at $3,000 per event: $5,327
+
+#579 Long stay: long day 20 -> 25: 395 priced events of 568 (70% with prices)
+   Stage 1 (< 2023): n 95, mean +0.43% (median -1.82%, t 0.15, win 38%), sum without the 3 best -2.87
+   Stage 2 (2023-26): n 300, mean -4.74% (median -5.17%, t -2.79, win 33%), sum without the 3 best -18.85
+   VERDICT FAIL | $/yr at $3,000 per event: $-10,946
+

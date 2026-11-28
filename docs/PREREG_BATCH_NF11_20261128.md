@@ -36,3 +36,18 @@ practical, and the worst bad-print risk).
 **$/yr:** $3,000 per event.
 
 **Script/output:** `scripts/batch_nf11_20261128.py` → `docs/jx_runs/batch_nf11_20261128.txt`, re-run identical.
+
+## Results (2026-11-28; `docs/jx_runs/batch_nf11_20261128.txt`, re-run identical): 0 of 4
+2,322 daily files (all business days 2018–2026), 2,362 tickers, 1,412 with Yahoo prices (62–70% of events priced).
+
+| # | Verdict | Stage 1 (2018–22) | Stage 2 (2023–26) |
+|---|---|---|---|
+| 576 close-out deadline long | KILL | −1.17% (366) | −4.61% (956, t −6.09) |
+| 577 addition long | KILL | −3.10% (1,405) | −7.52% (3,162, t −5.68) |
+| 578 removal short | FAIL | +2.13% (264, t 2.70) | +0.98% (705, t 0.81) |
+| 579 long-stay long | FAIL | +0.43% (95) | −4.74% (300) |
+
+**The forced buy-ins do not lift these stocks.** Threshold-list stocks underperform SPY strongly, even with survivorship bias
+favouring the longs, since delisted names are missing.
+- The obvious mirror, shorting at addition, fails G5 by construction. A security is on the list because shares cannot be delivered,
+  so borrow is scarce or unavailable. It is not registered as a test.
