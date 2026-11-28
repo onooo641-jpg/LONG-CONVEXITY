@@ -1,0 +1,4 @@
+=== ubatchnf25
+  status: {'hyperliquid': 402, 'hyperliquid-perps': 402, 'aster': 402, 'aster-perps': 402, 'lighter': 402, 'lighter-perps': 402, 'paradex': 402, 'aevo': 402, 'drift-trade': 402, 'extended': 402, 'pacifica': 402, 'edgex': 402, 'backpack': 402, 'https://stats-data.hyperliquid.xyz/Mainnet/daily_usd_volume': 403, 'https://stats-data.hyperliquid.xyz/Mainnet/total_volume': 403}
+  wrote batchnf25_dex_volume.parquet: 0 rows
+=== ubatchnf25 done in 7s  ok 0 fail 0
