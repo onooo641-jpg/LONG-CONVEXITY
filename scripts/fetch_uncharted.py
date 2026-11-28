@@ -3796,14 +3796,26 @@ def job_ubatchnf23():
 
 
 def job_ubatchnf25():
-    """Batch NF25: DefiLlama daily derivatives volume for perp DEXes with completed or live points programmes."""
-    ov = get("https://api.llama.fi/overview/derivatives?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true", tries=3) or {}
-    want = ("hyperliquid", "aster", "lighter", "paradex", "aevo", "drift", "extended", "pacifica", "edgex", "backpack")
-    prots = [p for p in ov.get("protocols") or [] if any(w in str(p.get("slug", "")).lower() or w in str(p.get("name", "")).lower() for w in want)]
-    print(f"  matched protocols: {[p.get('slug') for p in prots]}", flush=True)
-    rows = []
-    for p in prots:
-        d = get(f"https://api.llama.fi/summary/derivatives/{p['slug']}?dataType=dailyVolume", tries=3) or {}
-        rows += [(p["slug"], p.get("name"), int(t), float(v)) for t, v in d.get("totalDataChart") or [] if v is not None]
+    """Batch NF25: daily perp-DEX volume. DefiLlama overview answers 402 (paid), so per-slug summaries are tried directly,
+    plus Hyperliquid's own public stats file."""
+    rows, probe = [], {}
+    for slug in ("hyperliquid", "hyperliquid-perps", "aster", "aster-perps", "lighter", "lighter-perps", "paradex", "aevo", "drift-trade",
+                 "extended", "pacifica", "edgex", "backpack"):
+        st, d = req(f"https://api.llama.fi/summary/derivatives/{slug}?dataType=dailyVolume", None, 60)
+        probe[slug] = st
+        if st == 200 and isinstance(d, dict):
+            rows += [(slug, "llama", int(t), float(v)) for t, v in d.get("totalDataChart") or [] if v is not None]
         time.sleep(0.5)
+    for u in ("https://stats-data.hyperliquid.xyz/Mainnet/daily_usd_volume", "https://stats-data.hyperliquid.xyz/Mainnet/total_volume"):
+        st, d = req(u, None, 60)
+        probe[u] = st
+        items = d.get("chart_data") if isinstance(d, dict) else d if isinstance(d, list) else []
+        for x in items or []:
+            try:
+                t = int(pd.Timestamp(x.get("time")).timestamp())
+                v = float(x.get("daily_usd_volume") or x.get("total_volume") or 0)
+                rows.append(("hyperliquid", "hlstats:" + u.rsplit("/", 1)[-1], t, v))
+            except Exception:  # noqa: BLE001
+                pass
+    print(f"  status: {probe}", flush=True)
     save("batchnf25_dex_volume.parquet", pd.DataFrame(rows, columns=["slug", "name", "t", "volume"]))
