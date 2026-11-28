@@ -33,3 +33,9 @@
 **Command:**
 - `uv run python scripts/incentives_w2_20261128.py | tee docs/jx_runs/incentives_w2_20261128.txt`;
 - the script is the W1 script with this setup only.
+
+## Results (2026-11-28, `docs/jx_runs/incentives_w2_20261128.txt`, re-run identical): FAIL
+- **History:** 202 days from 2026-05-11. Mean base yield 7.48%, mean reward 6.37%. Worst 7-day TVL ratio 0.74 (no loss event).
+- **Stage 1** (last 60 days): 16.31%/yr, so the test continued.
+- **Stage 2: half 1 10.94%/yr, below the 12.0% bar; half 2 15.32%/yr.** Verdict FAIL.
+- **Context:** $1,313/yr on $10K, against $4,097/yr for one Topstep slot. Even a pass would not have been flagged.

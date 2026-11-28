@@ -1,0 +1,8 @@
+chart data through 2026-11-28; bar 12.0%/yr net (T-bill 4.0% assumed + 8), pilot kill < 8.0%
+
+  pool 0a3c5663-73bd-4d8a-bdcc-5e529a8b741d: 202 days from 2026-05-11, mean apyBase 7.48%, apyReward 6.37%, worst 7-day TVL ratio 0.74
+#588 Ember USDC concentrated-liquidity vault (Sui): Stage 1 pilot (last 60 days) mean net 16.31%/yr -> continue
+  Stage 2: history 201 days; half 1 10.94%/yr, half 2 15.32%/yr; loss-event proxy none; reward share of yield 47%
+  on $10K: $1,313/yr (Topstep 50K slot: $4,097/yr at ~$3.5K risk); at $50K mean net 12.95%/yr
+  VERDICT: FAIL (half 1 < 12.0%)
+

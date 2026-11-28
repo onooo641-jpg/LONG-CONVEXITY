@@ -5,6 +5,52 @@ Earlier non-prop entries (before 2026-11-21) are in `docs/NOTES_JX.md`; the liqu
 verdict sections ("Liquidation test #100: verdict", "Liquidation shadow test: …") stay there as registered.
 New non-prop write-ups start below.
 
+## Radar week 2 (2026-11-28)
+**Runs:** every radar run of the week succeeded (scheduled daily plus push-triggered; the scheduled ones fire around 11:00 UTC,
+not 02:41, because of GitHub's queue). No scanner bug needed fixing. The one code fix of the week (N13 empty-log key concat) was
+found by a synthetic test before go-live and is recorded with N13.
+
+**Counts (2026-11-28 run):**
+- 1,273 reward pools, 695 Merkl campaigns, 58 governance hits;
+- 1,822 of 1,867 pages fetched;
+- 86 candidates ranked, 16 with all five filter parts verified (week 1: 92 / 17);
+- near-miss table 14,931 rows (cumulative; 13,972 below threshold).
+- About 23 rows disappeared from their source during the week.
+
+**Top 10 by reward APR on competing capital** (all stablecoin, all Malaysia unverified-onchain):
+1. Curve BOLD-LUSD 24.2% (new; fails F1);
+2. Stake DAO BOLD-USDC 23.5% (new; fails F2);
+3. Curve BOLD-USDC 22.4% (passes F1/F2; $12.8M);
+4. Stake DAO PYUSD-crvUSD 20.2% (new);
+5. Mento AUSD-USDM (Monad) 14.4%;
+6. Convex frxUSD-msUSD 10.1%;
+7. Morpho Re7 coUSDC 10.0%;
+8. Convex frxUSD-dUSD 9.6%;
+9. Morpho BITMXN (Base) 9.3%;
+10. Stake DAO evaUSDT-evaUSDC 9.0%.
+
+**New this week:** the Liquity v2 BOLD pools on Curve/Stake DAO and the PYUSD-crvUSD gauge. Today's APRs only; addendum 3 ranks
+the queue by 90-day realised yield, which put none of them in the top 3.
+
+**Tests:**
+- **#588 Ember USDC vault (Sui), the only new queue item** (Bluefin #203 and Dolomite #202 were already tested): **FAIL**.
+  Half 1 10.9% < 12%, half 2 15.3%. $1.3K/yr on $10K (`docs/PREREG_INCENTIVES_W2_20261128.md`).
+- **Monthly near-miss review:** not due until the first full month (2026-12-21).
+
+**Prop-firm page diffs (automation wording):**
+- **Goat Funded Futures (2026-11-26):** bots allowed on EOD / 1-Day-Pass / Flex / Instant Classic only for "your own automated
+  strategies ... as long as they reflect your own trading". The new "GOAT Daily" plan (renamed from Daily Payouts) and Instant Lite
+  are manual only. Registry relabelled `full_bots_own_strategy` (usable only while the strategy owner holds the account). Rules are
+  unchanged, so no re-pricing (Goat Flex 50K was already below Topstep).
+- **BrightFunded** now advertises CME futures (one phase, 6% target, no daily loss limit). No automation sentence is readable, so it
+  stays `unclear` and unpriced.
+- **Other diffs** were Black Friday codes: Funded Futures Family 60% off S2F; TTP BF40 on Challenges and Instant Accounts ≥ $10K;
+  Blue Guardian 35% (BLACK); Alpha Futures and BrightFunded codes; MFFU now prints "39.2% of participants who reached the simulated
+  Funded Stage earned at least one payout". None names a product in `docs/radar/prop_breakeven.csv` at a price below its break-even.
+- TTP's consistency text changed only in how it is worded by account creation date (CFD products).
+
+**Flag to Jx: none.**
+
 ## Radar week 1 (2026-11-21)
 **Built** (`docs/PREREG_RADAR_20261121.md`, CANDIDATES #200): daily GitHub Actions job (`.github/workflows/radar.yml`, 02:41 UTC) running
 `scripts/radar.py`. The sandbox cannot reach any source; Actions (US servers) collects. Sources: DefiLlama pools + protocols, Merkl live
