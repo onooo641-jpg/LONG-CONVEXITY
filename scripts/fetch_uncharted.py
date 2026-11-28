@@ -3581,3 +3581,98 @@ def job_ubatchnf19():
             rows += hl_candles(main[k], "hlmain", k)
     print(f"  main perps fetched {len({r[1] for r in rows})}", flush=True)
     save("batchnf19_hlmain_1h.parquet", pd.DataFrame(rows, columns=cols))
+
+
+def job_ubatchnf20():
+    """Batch NF20 Stage 0 + data: daily dTAO subnet state from the public Bittensor archive node (2025-03-01..2026-11-25).
+    Installs the bittensor SDK at runtime (not a project dependency). Probe notes go to batchnf20_probe.json."""
+    import subprocess
+    import sys as _sys
+    probe = {"steps": []}
+
+    def note(**k):
+        probe["steps"].append(k)
+        print("  " + json.dumps(k)[:300], flush=True)
+
+    def done():
+        OUT.mkdir(parents=True, exist_ok=True)
+        (OUT / "batchnf20_probe.json").write_text(json.dumps(probe, indent=1, default=str))
+
+    r = subprocess.run(["uv", "pip", "install", "--python", _sys.executable, "bittensor>=9,<11"], capture_output=True, text=True)
+    note(step="install", rc=r.returncode, tail=(r.stdout + r.stderr)[-600:])
+    try:
+        import bittensor as bt  # noqa: PLC0415
+    except Exception as e:  # noqa: BLE001
+        note(step="import", error=repr(e))
+        done()
+        return
+    st = None
+    for net in ("archive", "wss://archive.chain.opentensor.ai:443"):
+        try:
+            st = bt.Subtensor(network=net)
+            note(step="connect", network=net, head=st.get_current_block())
+            break
+        except Exception as e:  # noqa: BLE001
+            note(step="connect", network=net, error=repr(e)[:300])
+    if st is None:
+        done()
+        return
+    head = st.get_current_block()
+
+    def ts_of(b):
+        try:
+            h = st.substrate.get_block_hash(b)
+            v = st.substrate.query("Timestamp", "Now", block_hash=h)
+            return int(getattr(v, "value", v)) // 1000
+        except Exception:  # noqa: BLE001
+            return None
+
+    t_head = ts_of(head) or int(time.time())
+
+    def block_at(ts):
+        b = head - (t_head - ts) // 12
+        for _ in range(4):  # correct the 12 s estimate
+            t = ts_of(b)
+            if t is None:
+                return b
+            b -= (t - ts) // 12
+            if abs(t - ts) < 120:
+                break
+        return int(b)
+
+    f = lambda x: float(getattr(x, "tao", x)) if x is not None else None  # noqa: E731
+    cols = ["day", "block", "netuid", "tao_in", "alpha_in", "alpha_out", "alpha_out_emission", "tao_in_emission", "price",
+            "registered_at", "name"]
+    rows, fails, b, t_end = [], 0, None, time.time() + 150 * 60
+    for i, day in enumerate(pd.date_range("2025-03-01", "2026-11-25", freq="D", tz="UTC")):
+        if time.time() > t_end:
+            note(step="time_budget_reached", day=str(day.date()))
+            break
+        ts = int(day.timestamp())
+        b = block_at(ts) if b is None else b + 7200
+        t = ts_of(b)
+        if t is not None and abs(t - ts) > 300:
+            b -= (t - ts) // 12
+        try:
+            subs = st.all_subnets(block=b) or []
+        except Exception as e:  # noqa: BLE001
+            fails += 1
+            if fails <= 5:
+                note(step="all_subnets", day=str(day.date()), block=b, error=repr(e)[:300])
+            if fails >= 40 and not rows:
+                break
+            continue
+        if not rows:
+            s0 = subs[1] if len(subs) > 1 else subs[0]
+            note(step="first_ok", day=str(day.date()), block=b, n=len(subs), fields=sorted(k for k in vars(s0) if not k.startswith("_"))[:60])
+        for s in subs:
+            g = lambda k: getattr(s, k, None)  # noqa: E731
+            rows.append((str(day.date()), b, int(g("netuid")), f(g("tao_in")), f(g("alpha_in")), f(g("alpha_out")),
+                         f(g("alpha_out_emission")), f(g("tao_in_emission")), f(g("price")), g("network_registered_at"),
+                         str(g("subnet_name") or "")))
+        if i % 60 == 59:
+            save("batchnf20_subnets_1d.parquet", pd.DataFrame(rows, columns=cols))
+            done()
+    note(step="summary", rows=len(rows), fails=fails)
+    save("batchnf20_subnets_1d.parquet", pd.DataFrame(rows, columns=cols))
+    done()

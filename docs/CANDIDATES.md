@@ -275,6 +275,7 @@ risk, 5m signals and 1m fills.
 | 610–613 | Batch NF17 (thin-venue dislocations vs HL, hourly, hedged: new-listing gap, hourly gap convergence, venue-local pump fade, venue-local funding spike) | `docs/PREREG_BATCH_NF17_20261128.md` | registered; data NF15 candles + `ubatchnf17` funding | — |
 | 614–618 | Batch NF18 (pre-IPO perps across HIP-3 dexes + GRVT, gaps entered one hour late) | `docs/PREREG_BATCH_NF18_20261128.md` | #614 FAIL (Stage 2 −0.34%, t −4.89; ~5% gaps persist); #615–#618 (equity, commodity, weekend-stock ideas) withdrawn before data (public underlying; Jx) | batch_nf18_20261128.txt |
 | 619–622 | Batch NF19 (gaps between thin crypto copies, entered one hour late: thin-venue-only coins, hyna vs HL main, HL spot vs perp, GRVT vs HL) | `docs/PREREG_BATCH_NF19_20261128.md` | 0 of 4: gaps gone after a one-hour delay (#621 +0.05%, #622 −0.18% t −6.58, #620 KILL, #619 too few); cross-copy gap family closed | batch_nf19_20261128.txt |
+| 623–626 | Batch NF20 (Bittensor dTAO subnet staking, TAO-hedged: top-10 emission, new subnets 90 days, top yield decile, largest-pool control) | `docs/PREREG_BATCH_NF20_20261128.md` | Stage 0 data probe running (`ubatchnf20`, archive node) | — |
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.

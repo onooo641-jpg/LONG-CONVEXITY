@@ -1,2 +1,2 @@
-# Batch NF19 pull (workstream C)
-ubatchnf19
+# Batch NF20 Stage 0 probe + data (workstream C)
+ubatchnf20

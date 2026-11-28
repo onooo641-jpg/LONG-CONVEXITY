@@ -1972,6 +1972,15 @@ def job_ubatchnf19():
 
 JOBS["ubatchnf19"] = job_ubatchnf19
 
+def job_ubatchnf20():
+    import sys as _s
+    _s.path.insert(0, str(Path(__file__).resolve().parent))
+    from fetch_uncharted import job_ubatchnf20 as _j
+    _j()
+
+
+JOBS["ubatchnf20"] = job_ubatchnf20
+
 
 
 
