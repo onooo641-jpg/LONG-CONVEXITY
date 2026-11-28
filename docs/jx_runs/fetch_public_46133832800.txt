@@ -1,0 +1,54 @@
+=== ubatchnf20
+  {"step": "install", "rc": 0, "tail": "+ cyscale==0.5.0\n + decorator==5.3.2\n + fastapi==0.165.0\n + frozenlist==1.8.0\n + h11==0.16.0\n + idna==3.20\n + msgpack==1.2.4\n + msgpack-numpy-opentensor==0.5.0\n + multidict==7.2.1\n + netaddr==1.3.0\n + opentelemetry-api==1.45.2\n + packaging==26.4\n + p
+  {"step": "connect", "network": "archive", "head": 9604712}
+[34m2026-11-28 10:13:03.851[39m | [1m[33mWARNING [0m | Unable to fetch subnet prices for block 7236671: Historical work rate limit exceeded
+  {"step": "all_subnets", "day": "2026-01-10", "block": 7283261, "error": "SubstrateRequestException('Historical work rate limit exceeded')"}
+[34m2026-11-28 10:17:08.996[39m | [1m[33mWARNING [0m | Unable to fetch subnet prices for block 7287048: Historical work rate limit exceeded
+  {"step": "all_subnets", "day": "2026-01-17", "block": 7333661, "error": "SubstrateRequestException('Historical work rate limit exceeded')"}
+[34m2026-11-28 10:21:05.133[39m | [1m[33mWARNING [0m | Unable to fetch subnet prices for block 7337431: Historical work rate limit exceeded
+  {"step": "all_subnets", "day": "2026-01-24", "block": 7384061, "error": "SubstrateRequestException('Historical work rate limit exceeded')"}
+[34m2026-11-28 10:25:04.260[39m | [1m[33mWARNING [0m | Unable to fetch subnet prices for block 7387789: Historical work rate limit exceeded
+  {"step": "all_subnets", "day": "2026-01-31", "block": 7434461, "error": "SubstrateRequestException('Historical work rate limit exceeded')"}
+[34m2026-11-28 10:29:10.157[39m | [1m[33mWARNING [0m | Unable to fetch subnet prices for block 7438156: Historical work rate limit exceeded
+  {"step": "all_subnets", "day": "2026-02-07", "block": 7484861, "error": "SubstrateRequestException('Historical work rate limit exceeded')"}
+[34m2026-11-28 10:33:17.471[39m | [1m[33mWARNING [0m | Unable to fetch subnet prices for block 7488066: Historical work rate limit exceeded
+  wrote batchnf20_subnets_1d.parquet: 8601 rows
+  {"step": "all_subnets", "day": "2026-02-14", "block": 7535261, "error": "SubstrateRequestException('Historical work rate limit exceeded')"}
+[34m2026-11-28 10:37:25.599[39m | [1m[33mWARNING [0m | Unable to fetch subnet prices for block 7538411: Historical work rate limit exceeded
+  {"step": "all_subnets", "day": "2026-02-21", "block": 7585661, "error": "SubstrateRequestException('Historical work rate limit exceeded')"}
+[34m2026-11-28 10:41:22.425[39m | [1m[33mWARNING [0m | Unable to fetch subnet prices for block 7588739: Historical work rate limit exceeded
+  {"step": "all_subnets", "day": "2026-02-28", "block": 7636061, "error": "SubstrateRequestException('Historical work rate limit exceeded')"}
+[34m2026-11-28 10:45:21.093[39m | [1m[33mWARNING [0m | Unable to fetch subnet prices for block 7639099: Historical work rate limit exceeded
+  {"step": "all_subnets", "day": "2026-03-07", "block": 7686461, "error": "SubstrateRequestException('Historical work rate limit exceeded')"}
+[34m2026-11-28 10:49:34.370[39m | [1m[33mWARNING [0m | Unable to fetch subnet prices for block 7689475: Historical work rate limit exceeded
+  {"step": "all_subnets", "day": "2026-03-14", "block": 7736861, "error": "SubstrateRequestException('Historical work rate limit exceeded')"}
+  {"step": "all_subnets", "day": "2026-03-21", "block": 7787261, "error": "SubstrateRequestException('Historical work rate limit exceeded')"}
+  {"step": "all_subnets", "day": "2026-03-28", "block": 7840597, "error": "SubstrateRequestException('Historical work rate limit exceeded')"}
+  {"step": "all_subnets", "day": "2026-04-04", "block": 7888061, "error": "SubstrateRequestException('Historical work rate limit exceeded')"}
+[34m2026-11-28 10:59:33.777[39m | [1m[33mWARNING [0m | Unable to fetch subnet prices for block 7890795: Historical work rate limit exceeded
+  {"step": "all_subnets", "day": "2026-04-11", "block": 7938461, "error": "SubstrateRequestException('Historical work rate limit exceeded')"}
+  {"step": "all_subnets", "day": "2026-04-18", "block": 7991580, "error": "SubstrateRequestException('Historical work rate limit exceeded')"}
+[34m2026-11-28 11:04:38.802[39m | [1m[33mWARNING [0m | Unable to fetch subnet prices for block 7991580: Historical work rate limit exceeded
+  wrote batchnf20_subnets_1d.parquet: 9893 rows
+  {"step": "all_subnets", "day": "2026-04-25", "block": 8039261, "error": "SubstrateRequestException('Historical work rate limit exceeded')"}
+  {"step": "all_subnets", "day": "2026-05-02", "block": 8092172, "error": "SubstrateRequestException('Historical work rate limit exceeded')"}
+  {"step": "all_subnets", "day": "2026-05-09", "block": 8142226, "error": "SubstrateRequestException('Historical work rate limit exceeded')"}
+[34m2026-11-28 11:12:28.991[39m | [1m[33mWARNING [0m | Unable to fetch subnet prices for block 8142226: Historical work rate limit exceeded
+  {"step": "all_subnets", "day": "2026-05-16", "block": 8190461, "error": "SubstrateRequestException('Historical work rate limit exceeded')"}
+  {"step": "all_subnets", "day": "2026-05-23", "block": 8243012, "error": "SubstrateRequestException('Historical work rate limit exceeded')"}
+[34m2026-11-28 11:17:27.087[39m | [1m[33mWARNING [0m | Unable to fetch subnet prices for block 8243012: Historical work rate limit exceeded
+  {"step": "all_subnets", "day": "2026-05-30", "block": 8291261, "error": "SubstrateRequestException('Historical work rate limit exceeded')"}
+  {"step": "all_subnets", "day": "2026-06-06", "block": 8343803, "error": "SubstrateRequestException('Historical work rate limit exceeded')"}
+  {"step": "all_subnets", "day": "2026-06-13", "block": 8392061, "error": "SubstrateRequestException('Historical work rate limit exceeded')"}
+  {"step": "all_subnets", "day": "2026-06-20", "block": 8444535, "error": "SubstrateRequestException('Historical work rate limit exceeded')"}
+  {"step": "all_subnets", "day": "2026-06-27", "block": 8494537, "error": "SubstrateRequestException('Historical work rate limit exceeded')"}
+  wrote batchnf20_subnets_1d.parquet: 11183 rows
+  {"step": "all_subnets", "day": "2026-07-04", "block": 8543973, "error": "SubstrateRequestException('Historical work rate limit exceeded')"}
+  {"step": "all_subnets", "day": "2026-07-11", "block": 8594355, "error": "SubstrateRequestException('Historical work rate limit exceeded')"}
+  wrote batchnf20_subnets_1d.parquet: 12473 rows
+  {"step": "all_subnets", "day": "2026-09-26", "block": 9148188, "error": "SubstrateRequestException('Historical work rate limit exceeded')"}
+  {"step": "all_subnets", "day": "2026-10-31", "block": 9400101, "error": "SubstrateRequestException('Historical work rate limit exceeded')"}
+  wrote batchnf20_subnets_1d.parquet: 13763 rows
+  {"step": "summary", "rows": 13763, "fails": 0}
+  wrote batchnf20_subnets_1d.parquet: 13763 rows
+=== ubatchnf20 done in 5580s  ok 0 fail 0
