@@ -15,10 +15,10 @@ Latest payouts Live
 12h ago $25,000 Classic Markets +$130
 12h ago $50,000 Classic Markets +$1,249
 12h ago $25,000 Classic Markets +$262
-12h ago $10,000 Classic Markets +$154
+13h ago $10,000 Classic Markets +$154
 13h ago $25,000 Classic Markets +$100
 13h ago $25,000 Classic Markets +$403
-13h ago $25,000 Classic Markets +$222
+14h ago $25,000 Classic Markets +$222
 14h ago $5,000 Classic Markets +$213
 14h ago $25,000 Classic Markets +$300
 15h ago $5,000 Classic Markets +$137
@@ -45,10 +45,10 @@ Latest payouts Live
 12h ago $25,000 Classic Markets +$130
 12h ago $50,000 Classic Markets +$1,249
 12h ago $25,000 Classic Markets +$262
-12h ago $10,000 Classic Markets +$154
+13h ago $10,000 Classic Markets +$154
 13h ago $25,000 Classic Markets +$100
 13h ago $25,000 Classic Markets +$403
-13h ago $25,000 Classic Markets +$222
+14h ago $25,000 Classic Markets +$222
 14h ago $5,000 Classic Markets +$213
 14h ago $25,000 Classic Markets +$300
 15h ago $5,000 Classic Markets +$137
@@ -83,7 +83,7 @@ Date Account size Market Amount
 12 hours ago $25,000 Classic Markets +$130 $25,000 account
 12 hours ago $50,000 Classic Markets +$1,249 $50,000 account
 12 hours ago $25,000 Classic Markets +$262 $25,000 account
-12 hours ago $10,000 Classic Markets +$154 $10,000 account
+13 hours ago $10,000 Classic Markets +$154 $10,000 account
 13 hours ago $25,000 Classic Markets +$100 $25,000 account
 13 hours ago $25,000 Classic Markets +$403 $25,000 account
 Showing 1 to 8 of 30 payouts 1 / 4

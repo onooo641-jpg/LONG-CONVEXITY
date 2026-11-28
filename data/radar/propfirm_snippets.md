@@ -2536,6 +2536,22 @@
 - AUTO: 2.1.8 Engaging in copy trading, where trades mimic or replicate the trading activities of other traders or entities without prior authorization, is prohibited for the Provider.
 - AUTO: Should any ambiguity or question regarding intent or interpretation arise, it shall be resolved in a neutral manner and not automatically against the drafting party.
 
+## FundedNext Futures — https://fundednext.com/privacy-policy
+- AUTO: Automated Processing, Profiling and Significant Decisions
+- AUTO: 5.2 Automatically Through Your Use of the Services
+- AUTO: We collect certain technical, device, usage, behavioural, monitoring and activity data automatically when you access or use our website, systems, platform environment, dashboards, portals, communications interfaces or other parts of the Services.
+- AUTO: We process Personal Data to send service-related communications, account notices, legal notices, operational alerts, security messages, compliance-related requests and other communications necessary for the administration or protection of the Services and our relationship with you.
+- AUTO: 6.12 Phone-Based, SMS and Automated Outreach
+- AUTO: Where permitted by applicable law, we may use the telephone number or other communication details that you provide to us to contact you regarding service matters, account administration, security, support, operational matters, programme updates, marketing communications or related outreach, including through manual, automated or AI-assisted means.
+- AUTO: timing patterns, behavioural indicators and usage signals;
+- AUTO: suspicious, irregular, prohibited or escalated activity signals; and
+- AUTO: For the avoidance of doubt, FundedNext may analyse account activity, behavioural patterns, technical signals, device associations and related data to detect direct or indirect attempts to misuse the Services, circumvent our rules, exploit the platform environment unfairly, obtain benefits improperly or interfere with the lawful and intended operation of the Services.
+- AUTO: Automated Processing, Profiling and Significant Decisions
+- AUTO: Such processing may include profiling based on technical, behavioural, transactional, usage, verification, payout, account-linkage or payment-related signals.
+- AUTO: Where applicable data protection law grants you rights in relation to decisions based solely on automated processing that produce legal or similarly significant effects, FundedNext will implement such safeguards as are required by law, which may include review procedures and, where applicable, the opportunity to request human intervention.
+- AUTO: Nothing in this Notice shall be interpreted as limiting FundedNext's right to implement reasonable and proportionate automated or semi-automated controls designed to protect the Services, prevent fraud, preserve evidence, safeguard operational integrity, manage payment or security risks, or enforce contractual restrictions and platform rules.
+- AUTO: the right to request review in relation to certain automated decisions, where applicable law so provides; and
+
 ## FundedNext Futures — https://fundednext.com/terms-of-service
 - AUTO: Participation in one modality (for example, CFDs) does not automatically grant the right of access, eligibility, phase migration, benefits or Performance Rewards in another modality (for example, Futures), unless expressly indicated by the Provider.
 - AUTO: The User may not allow third parties to operate the Account on their behalf, nor use account management services, credential sharing, third-party identities, bots, scripts or automated systems not expressly authorised by the Provider.
