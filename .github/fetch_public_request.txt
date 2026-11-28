@@ -1,2 +1,2 @@
-# Batch NF20 data, retry with back-off (addendum 1)
-ubatchnf20
+# Batch NF23 pull (workstream C)
+ubatchnf23

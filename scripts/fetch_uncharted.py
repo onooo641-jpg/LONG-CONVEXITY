@@ -3685,3 +3685,111 @@ def job_ubatchnf20():
     note(step="summary", rows=len(rows), fails=fails)
     save("batchnf20_subnets_1d.parquet", pd.DataFrame(rows, columns=cols))
     done()
+
+
+def job_ubatchnf23():
+    """Batch NF23: Lighter and Paradex daily (full) and hourly (2026-03-01..) candles; several parameter variants, raw probes kept."""
+    probe = {}
+    A, Z = int(pd.Timestamp("2026-03-01", tz="UTC").timestamp()), int(pd.Timestamp("2026-11-26", tz="UTC").timestamp())
+    D0 = int(pd.Timestamp("2024-01-01", tz="UTC").timestamp())
+
+    def J(url, key=None):
+        st, d = None, None
+        for k in range(3):
+            st, d = req(url, None, 40, {"Accept": "application/json"})
+            if st == 429 or not isinstance(st, int):
+                time.sleep(5 * (k + 1))
+                continue
+            break
+        if key and key not in probe:
+            probe[key] = {"url": url, "status": st, "head": json.dumps(d)[:1200] if d is not None and not isinstance(d, str) else str(d)[:1200]}
+        return d if st == 200 else None
+
+    def f(x):
+        try:
+            return float(x)
+        except Exception:  # noqa: BLE001
+            return None
+
+    def ms(x):
+        x = float(x)
+        return int(x) if x > 1e11 else int(x * 1000)
+
+    def save_v(name, recs):
+        df = pd.DataFrame(recs, columns=["coin", "t", "o", "h", "l", "c", "v_usd"]).dropna().drop_duplicates(["coin", "t"])
+        print(f"  {name}: markets {df.coin.nunique() if len(df) else 0}, rows {len(df)}", flush=True)
+        save(f"batchnf23_{name}.parquet", df)
+
+    def lrow(x):
+        if isinstance(x, dict):
+            t = x.get("timestamp") or x.get("t") or x.get("time")
+            o, h, l, c = (f(x.get(k)) for k in ("open", "high", "low", "close"))
+            q = f(x.get("volume1") or x.get("quote_volume") or x.get("volume_quote"))
+            b = f(x.get("volume0") or x.get("volume") or x.get("base_volume")) or 0.0
+            return (ms(t), o, h, l, c, q if q else b * (c or 0)) if t is not None and None not in (o, h, l, c) else None
+        if isinstance(x, list) and len(x) >= 5:
+            return (ms(x[0]), f(x[1]), f(x[2]), f(x[3]), f(x[4]), (f(x[5]) or 0) * (f(x[4]) or 0) if len(x) > 5 else 0.0)
+        return None
+
+    # --- Lighter
+    base = "https://mainnet.zklighter.elliot.ai/api/v1"
+    ob = J(f"{base}/orderBooks", "lighter_orderbooks") or {}
+    mk = [(m.get("market_id"), m.get("symbol")) for m in (ob.get("order_books") or []) if isinstance(m, dict) and m.get("market_id") is not None]
+    good = {}
+    for name, res_variants, lo, step in (("lighter_1d", ["1d", "1440"], D0, 86400), ("lighter_1h", ["1h", "60"], A, 3600)):
+        recs = []
+        for mid, sym in mk:
+            got_any = False
+            for res, unit in ([good[name]] if name in good else [(r, u) for r in res_variants for u in (1, 1000)]):
+                end = Z
+                rows = []
+                for _ in range(12):
+                    st0 = max(lo, end - 2000 * step)
+                    u = f"{base}/candlesticks?market_id={mid}&resolution={res}&start_timestamp={st0 * unit}&end_timestamp={end * unit}&count_back=2000"
+                    d = J(u, f"{name}:{res}:{unit}")
+                    items = (d or {}).get("candlesticks") or (d or {}).get("candles") or [] if isinstance(d, dict) else []
+                    rs = [r for r in (lrow(x) for x in items) if r]
+                    if not rs:
+                        break
+                    rows += rs
+                    first = min(r[0] for r in rs) // 1000
+                    if first <= lo or first >= end:
+                        break
+                    end = first - 1
+                    time.sleep(0.15)
+                if rows:
+                    good[name] = (res, unit)
+                    recs += [(sym,) + r for r in rows]
+                    got_any = True
+                    break
+            if not got_any and name not in good and mk.index((mid, sym)) >= 3:
+                break  # no variant works for the first markets: give up on this file
+        save_v(name, recs)
+
+    # --- Paradex
+    pb = "https://api.prod.paradex.trade/v1"
+    mm = J(f"{pb}/markets", "paradex_markets") or {}
+    syms = [m["symbol"] for m in (mm.get("results") or []) if isinstance(m, dict) and str(m.get("asset_kind")) == "PERP"]
+    for name, res, lo, step in (("paradex_1d", 1440, D0, 86400), ("paradex_1h", 60, A, 3600)):
+        recs = []
+        for s in syms:
+            end = Z
+            for _ in range(12):
+                st0 = max(lo, end - 1000 * step)
+                d = J(f"{pb}/markets/klines?symbol={s}&resolution={res}&start_at={st0 * 1000}&end_at={end * 1000}", f"{name}:klines")
+                items = (d or {}).get("results") or [] if isinstance(d, dict) else []
+                rs = [r for r in (lrow(x) for x in items) if r]
+                if not rs:
+                    break
+                recs += [(s.split("-")[0],) + r for r in rs]
+                first = min(r[0] for r in rs) // 1000
+                if first <= lo or first >= end:
+                    break
+                end = first - 1
+                time.sleep(0.15)
+            if not recs and syms.index(s) >= 3:
+                break
+        save_v(name, recs)
+    OUT.mkdir(parents=True, exist_ok=True)
+    (OUT / "batchnf23_probe.json").write_text(json.dumps(probe, indent=1))
+    print(f"  probe replies kept: {len(probe)}", flush=True)
