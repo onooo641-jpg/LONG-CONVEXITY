@@ -1047,3 +1047,14 @@ $38,034; bar: real ≥ $19,017, dip ≥ −$5,794.
     a strategy change; Jx decides.
 - **First nightly dry run (27 Nov):** already read 2026-11-27 (3 s order timing; 7-minute stale feed handled; dry-run gap fixed).
   No newer run yet; the next is Mon 30 Nov 22:25 Malaysia time.
+
+## 2026-11-28 — prop-firm search, round 4: new firms are saturated; watch prices instead
+- **New firms:** a fresh web search for 2026 futures prop firms (bots, EOD drawdown) surfaced only firms already priced in
+  `docs/radar/prop_firms.csv` (48 firms): Lucid, FundedNext, FTMO Futures, Tradeify, TradeDay, MFFU, Topstep, Apex, TTP, Alpha, E8,
+  Hola Prime, The5ers, Phidias. These are third-party review sites, not official pages.
+- **New:** `docs/radar/prop_breakeven.csv` lists every modelled product with its break-even price. Any checkout or promo price at
+  or below break-even makes that product qualify under the registered bar.
+  - Closest to flipping: FFN 50K ($89 promo vs $96 break-even, borderline); DayTraders Trail 50K (break-even $55, price unknown);
+    LucidFlex 25K ($80).
+  - Prices are behind logins or on Jx's trackers, so Jx checking promos against this table is the fastest path to another qualifying
+    product.

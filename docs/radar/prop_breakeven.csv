@@ -1,0 +1,13 @@
+product,breakeven_price_usd,last_known_price_usd,qualifies_now,source
+DayTraders 100K Static (eval; +$5 activation not included),90,75,yes,"docs/PREREG_PROP_SEARCH3_20261126.md part 2; price Jx tracker 2026-11-27"
+DayTraders 150K Static (eval; +$5 activation not included),93,90,yes,"docs/PREREG_PROP_SEARCH3_20261126.md part 2; price Jx tracker 2026-11-27"
+FFN Standard MAX 50K (activation waived),96,89,borderline (passes only if resets are also at the promo price),"docs/PREREG_PROP_SEARCH3_20261126.md; promo 50% per Jx 2026-11-27"
+FFN Standard MAX 100K (activation waived),154,,unknown price,"docs/PREREG_PROP_SEARCH3_20261126.md"
+FFN Standard MAX 150K (activation waived),149,,unknown price,"docs/PREREG_PROP_SEARCH3_20261126.md"
+DayTraders S2F 50K,251,342,no,"docs/PREREG_PROP_SEARCH3_20261126.md; price Jx 2026-11-27"
+LucidDirect 50K,303,,unknown price,"docs/PREREG_PROP_SEARCH3_20261126.md"
+Take Profit Trader Instant 50K,321,,unknown price,"docs/PREREG_PROP_SEARCH3_20261126.md"
+DayTraders Trail 50K,55,,unknown price,"docs/PREREG_PROP_SEARCH3_20261126.md"
+LucidFlex 25K,80,,unknown price,"docs/PREREG_PROP_SEARCH3_20261126.md"
+Topstep $3K Challenge (on sale: $199 / 50 micros / $1K MLL),89,199,no,"docs/PREREG_CHALLENGE_REPRICE_20261127.md (ledger CR1)"
+Topstep Labs Slasher ($500 MLL / 20 micros; target and payout assumed $3K),20,65,no,"docs/PREREG_CHALLENGE_REPRICE_20261127.md (ledger CR1)"
