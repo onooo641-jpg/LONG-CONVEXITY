@@ -1,0 +1,17 @@
+=== ubatchnf14
+  drift: markets 0, rows 0
+  wrote batchnf14_drift_1d.parquet: 0 rows
+  bluefin: markets 8, rows 3611, 2025-07-18..2026-11-26
+  wrote batchnf14_bluefin_1d.parquet: 3611 rows
+  apex: markets 129, rows 85812, 2024-06-15..2026-11-27
+  wrote batchnf14_apex_1d.parquet: 85812 rows
+  edgex: markets 0, rows 0
+  wrote batchnf14_edgex_1d.parquet: 0 rows
+  extended: markets 415, rows 94562, 2024-07-26..2026-11-28
+  wrote batchnf14_extended_1d.parquet: 94562 rows
+  pacifica: markets 56, rows 18852, 2025-06-03..2026-11-27
+  wrote batchnf14_pacifica_1d.parquet: 18852 rows
+  backpack: markets 101, rows 40847, 2025-01-04..2026-11-26
+  wrote batchnf14_backpack_1d.parquet: 40847 rows
+  probe replies kept: 14
+=== ubatchnf14 done in 1522s  ok 0 fail 0
