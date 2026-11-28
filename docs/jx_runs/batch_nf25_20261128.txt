@@ -1,0 +1,3 @@
+HL daily candles: 235 live perps, 2023-04-01..2026-11-25
+   points programme (1M points/week) 2023-11-01..2024-05-01: volume $162B on 143 perps -> $7,394 per $1M volume
+   programme start to TGE 2023-11-01..2024-11-29: volume $419B on 166 perps -> $2,867 per $1M volume

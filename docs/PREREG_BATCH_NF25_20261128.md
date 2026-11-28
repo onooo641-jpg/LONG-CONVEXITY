@@ -18,7 +18,7 @@
 
 | # | Programme | Airdrop | Qualifying window | Volume | ≈ $ per $1M volume |
 |---|---|---|---|---|---|
-| 643 | Hyperliquid | 310M HYPE (31%), ~$1.2B at TGE 2024-11-29 (The Block) | points 2023-11-01..2024-05-01 (1M points/week, per docs summaries) | DefiLlama, job `ubatchnf25` | to be measured |
+| 643 | Hyperliquid | 310M HYPE (31%), ~$1.2B at TGE 2024-11-29 (The Block) | points 2023-11-01..2024-05-01 (1M points/week, per docs summaries) | $162B (points window) / $419B (to TGE), from HL candles | **~$7,400** / **~$2,900** |
 | 644 | Aster | 704M ASTER (8.8% of supply) unlocked at TGE, claims from 2025-09-17 (Aster docs) | Stages 1–2 | "$37B+" in the earlier campaign (press release) | to be measured |
 | 645 | Lighter | 250M LIT (25%), ~$675M at TGE 2025-12-30 (Bubblemaps via Cointelegraph); 12.5M points → 20 LIT/point | S1 2025-01-23..09-30 (~$550B), S2 Oct–Dec | about $1.1T in total | **~$590** |
 | 646 | Paradex (zero fee) | 25% of DIME supply; FDV snapshots about $10–19M (CoinGecko, DropsTab), all-time high $0.10 (~$100M FDV) | pre-season..S2 end 2026-01-31 | "$250B+" cumulative | **~$25–100** |
@@ -38,3 +38,13 @@
 
 **Data job `ubatchnf25`:** DefiLlama daily derivatives volume for Hyperliquid, Aster, Lighter and Paradex, to fill the volume column.
 Output goes to `docs/jx_runs/batch_nf25_20261128.txt`.
+
+## Volume measurement (2026-11-28; `scripts/batch_nf25_20261128.py` → `docs/jx_runs/batch_nf25_20261128.txt`, re-run identical)
+- **Sources refused:** DefiLlama's derivatives volume API now answers **HTTP 402** (paid) for every protocol, and Hyperliquid's stats
+  file answers 403 to GitHub Actions.
+- **Hyperliquid volume rebuilt** from daily candles of the 235 perps still listed: $162B over 2023-11-01..2024-05-01, $419B to TGE.
+  - Airdrop ~$1.2B → **~$7,400 / ~$2,900 per $1M volume**. This is overstated, because delisted perps are missing.
+- **Aster:** no free volume series reachable. Left at "to be measured".
+- **Ranking:** Hyperliquid ~$3–7K, then Lighter ~$0.6K, then Paradex ~$25–100 per $1M. Each later zero/low-fee programme paid roughly
+  10× less than the one before. A new programme pays only if it is early and uncrowded, and that cannot be known in advance from free
+  data.
