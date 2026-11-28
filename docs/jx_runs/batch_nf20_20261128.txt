@@ -1,0 +1,33 @@
+weekly snapshots 91 (2025-03-01..2026-11-21, 630 days); subnets 130; HL TAO funding days 121 (mean +13.3%/yr, used before 2026-07-28)
+Stage 0 data bar (>= 29 weekly snapshots, >= 200 days, >= 30 subnets): met
+   sanity: SN1 model staker yield 33.0%/yr (simple) at 2026-11-21; compare with a published APY snapshot (recorded in the PREREG result)
+   sanity: SN64 model staker yield 24.7%/yr (simple) at 2026-11-21; compare with a published APY snapshot (recorded in the PREREG result)
+
+#623 Top-10 subnets by emission value (alpha_out_emission x price), monthly
+   holds with a deregistered subnet: 0
+   Stage 1 holds starting 2025-03..2025-12: holds 10 | mean net +8.83% (t 0.78, win 50%) | mean model yield in hold +14.57% | sum without 3 best -54.06%
+   Stage 2 holds starting 2026-01..2026-10: holds 10 | mean net +2.49% (t 1.01, win 70%) | mean model yield in hold +4.24% | sum without 3 best -9.16%
+   slippage x1.5 Stage 2 mean +2.47%
+   VERDICT FAIL
+
+#625 Highest model-yield decile (tao_in >= 1,000 TAO), monthly
+   holds with a deregistered subnet: 2
+   Stage 1 holds starting 2025-03..2025-12: holds 10 | mean net +13.08% (t 1.74, win 60%) | mean model yield in hold +23.01% | sum without 3 best +8.95%
+   Stage 2 holds starting 2026-01..2026-10: holds 10 | mean net +3.95% (t 0.46, win 70%) | mean model yield in hold +13.02% | sum without 3 best -50.20%
+   slippage x1.5 Stage 2 mean +3.59%
+   VERDICT FAIL
+
+#626 Control: 5 largest pools by tao_in, monthly
+   holds with a deregistered subnet: 0
+   Stage 1 holds starting 2025-03..2025-12: holds 10 | mean net +3.66% (t 0.46, win 50%) | mean model yield in hold +12.52% | sum without 3 best -61.32%
+   Stage 2 holds starting 2026-01..2026-10: holds 10 | mean net +4.12% (t 1.77, win 70%) | mean model yield in hold +2.86% | sum without 3 best +9.29%
+   slippage x1.5 Stage 2 mean +4.11%
+   VERDICT FAIL
+
+#624 New subnets: stake 7+ days after registration (tao_in >= 1,000 TAO), hold 90 days
+   new subnets with a 90-day hold: 58; deregistered during the hold: 4; registration field present for 130 subnets
+   Stage 1 holds starting 2025-03..2025-12: subnet holds 57 | mean net +49.54% (t 3.02, win 58%) | mean model yield in hold +38.99% | sum without 3 best +1592.13%
+   Stage 2 holds starting 2026-01..2026-10: subnet holds 1 | mean net -14.13% (t nan, win 0%) | mean model yield in hold +21.26% | sum without 3 best +nan%
+   slippage x1.5 Stage 2 mean -14.58%
+   VERDICT FAIL
+

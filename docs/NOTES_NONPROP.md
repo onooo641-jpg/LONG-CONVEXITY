@@ -536,3 +536,7 @@ Jx's free Coinalyze key gave daily OI and liquidations from 2020. The five OI an
 
 ## 2026-11-28 — Batch NF27 (#651–#654), Aster funding snapshot: 0 of 4
 - Holding the receiving side for minutes across settlement collects +0.34–0.64% funding, but price moves against the receiver by about as much (−0.25% to −0.68%); every window loses after fees. Priced in.
+
+## 2026-11-28 — Batches NF20–NF21 (#623–#630), Bittensor subnet pools: 0 of 8, one strong near-miss
+- #627 (monthly: buy the 10 subnet alphas with the best 4-week price change, TAO hedged) Stage 2 +6.93%/month, t 1.77, 70% of months up, positive without the 3 best months; fails only t ≥ 2 with 10 months. #626 largest pools +4.12%/month (t 1.77).
+- Both forward-only from 2026-12-01 via radar N16 (daily live subnet snapshots); judged 2027-03-31 and 2027-06-30. Before money: yield sanity check, TAO access from Malaysia, live hedge cost. Potential ~$1K/month on ~$15K if it holds (estimate).

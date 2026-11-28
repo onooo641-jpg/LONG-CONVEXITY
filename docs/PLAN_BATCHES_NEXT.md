@@ -19,8 +19,8 @@
 | NF24 (#639–#642) | zero-fee Paradex hourly reversals (−3σ bounce, +5σ/+3σ fades, 24h losers) | done, 0/4 |
 | NF23 (#635–#638) | zero-fee venues Lighter/Paradex: #520 wick bids, #569 cascades | done: #636 PASS small (~$1.6K/yr), forward N15; Lighter 403 |
 | NF22 (#631–#634) | HL thin spot tokens, weekly: reversal, momentum, volume shock, dormant awakening (HYPE-hedged) | done, 0/4 |
-| NF21 (#627–#630) | subnet-pool signals: momentum, reversal, inflow chase, low dilution (NF20 data) | registered |
-| NF20 (#623–#626) | Bittensor dTAO subnet staking (protocol emissions pay), TAO hedged on HL | Stage 0 data probe running |
+| NF21 (#627–#630) | subnet-pool signals: momentum, reversal, inflow chase, low dilution (NF20 data) | done, 0/4; #627 momentum near-miss (+6.9%/month, t 1.77) → forward N16 |
+| NF20 (#623–#626) | Bittensor dTAO subnet staking (protocol emissions pay), TAO hedged on HL | done, 0/4; #626 near-miss → forward N16 |
 | NF19 (#619–#622) | thin crypto copies: thin-venue-only coins, hyna vs HL main, HL spot vs perp, GRVT vs HL (one-hour-late entry) | done, 0/4; cross-copy gap family closed |
 | NF18 (#614–#618) | pre-IPO perps across HIP-3 dexes and GRVT | #614 FAIL (gaps persist, −0.34%); #615–#618 withdrawn (stocks too public, Jx) |
 | NF17 (#610–#613) | thin-venue dislocations vs HL (listing gap, hourly gap, local pump fade, local funding spike) | done, 0/4 valid (#611 PASS invalid after one-hour delay) |

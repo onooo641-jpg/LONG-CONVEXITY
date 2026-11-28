@@ -83,3 +83,15 @@
   the data; a missing snapshot from the rate limit is not a deregistration. A deregistered hold counts as −100%, as registered
   ("otherwise 0").
 - **Stage 1/2 boundaries** are by hold start date: Stage 1 2025-03-01..2025-12-31, Stage 2 2026-01-01..2026-10-31.
+
+## Result (2026-11-28; `docs/jx_runs/batch_nf20_20261128.txt`, re-run identical): **0 of 4**
+- **Data:** 91 of 91 weekly snapshots (2025-03-01..2026-11-21), 130 subnets.
+- **Yield-model sanity check:** SN1 33.0%/yr, SN64 24.7%/yr (simple). **Not yet compared** with a published APY snapshot (no fetchable
+  source today), so no PASS would have been possible anyway.
+
+| # | Portfolio | Stage 1 monthly / 90-day | Stage 2 | Verdict |
+|---|---|---|---|---|
+| 623 | top-10 by emission value | +8.83% (t 0.78) | +2.49% (t 1.01) | FAIL |
+| 624 | new subnets, 90 days | +49.5% per hold (t 3.02, n 57) | n 1, −14.1% | FAIL (only 1 new subnet qualified in 2026) |
+| 625 | top yield decile | +13.1% | +3.95% (t 0.46) | FAIL |
+| 626 | 5 largest pools (control) | +3.66% | **+4.12% (t 1.77, win 70%)** | FAIL (t < 2) |

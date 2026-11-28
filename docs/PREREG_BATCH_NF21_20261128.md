@@ -44,3 +44,29 @@
 **Multiple testing:** four tests on the same data as NF20's four. Only a pass with Stage 2 t ≥ 2.5 goes to the radar forward log.
 
 **Script/output:** `scripts/batch_nf21_20261128.py` → `docs/jx_runs/batch_nf21_20261128.txt`, re-run identical.
+
+## Result (2026-11-28; `docs/jx_runs/batch_nf21_20261128.txt`, re-run identical): **0 of 4; #627 is a near-miss**
+
+| # | Signal | Stage 1 monthly | Stage 2 monthly | Verdict |
+|---|---|---|---|---|
+| 627 | 4-week alpha momentum | +21.7% (t 1.82) | **+6.93% (t 1.77, win 70%)**; without the 3 best months +6.38%; slippage × 1.5 +6.82% | FAIL (t < 2 only) |
+| 628 | 4-week reversal | +14.5% | −8.94% (t −3.03) | FAIL |
+| 629 | TAO-inflow chase | +14.6% | +1.67% | FAIL |
+| 630 | low dilution | +15.4% | −1.47% | FAIL |
+
+## Addendum 1 (2026-11-28, after the result): forward-only tests for #627 and #626
+- #627 meets every Stage 2 bar except t ≥ 2. It is positive without its 3 best months and robust to slippage × 1.5. #626 (NF20) is
+  likewise t 1.77.
+- Following the repo's practice for strong near-misses (#541/#542), both are **re-registered as forward-only tests**. The rules are
+  NF20's and NF21's exactly, nothing is re-tuned, and the backtest verdict stays FAIL.
+- **Data:** radar **N16** (`scripts/radar_nonprop.py: n16_dtao_snapshot`) logs a live snapshot of every subnet daily from
+  2026-12-01 (current state, not the archive). The weekly grid is the Saturday snapshot.
+- **Judged:**
+  - first on 2027-03-31: at least 3 monthly holds, mean > 0 for both;
+  - finally on 2027-06-30: ≥ 6 holds, mean ≥ 3%/month, sum positive without the best month.
+- **Before any money:**
+  - the yield-model sanity check against a published APY;
+  - G5 (buying TAO from Malaysia; unverified);
+  - the HL TAO hedge's funding cost on live data.
+- **Size if it ever passes:** $1,500 × 10 subnets ≈ $15K deployed. At the backtest's +6.9%/month that would be about $1K/month. The
+  backtest window is short (10 Stage 2 months), so this is an estimate, not a forecast.

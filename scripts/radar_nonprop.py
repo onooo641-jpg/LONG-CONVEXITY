@@ -432,6 +432,37 @@ def n15_paradex_wick(fetch, today, rows, health, out: Path):
                                                if len(allr) else f"0 fills since {WICK_START} ({len(syms)} Paradex perps)")
 
 
+# ------------------------------------------------------------------ N16: forward log for #627 / #626 (docs/PREREG_BATCH_NF21_20261128.md addendum)
+def n16_dtao_snapshot(fetch, today, rows, health, out: Path):
+    """N16: daily snapshot of every Bittensor subnet's pool state (same fields as NF20), from 2026-12-01. The #627 momentum and #626
+    largest-pool portfolios are rebuilt from these snapshots at review time with the registered NF20/NF21 rules."""
+    if today < WICK_START:
+        health["N16 dTAO snapshots (#627/#626)"] = f"starts {WICK_START}"
+        return
+    import subprocess
+    import sys as _sys
+    f = out / "dtao_snapshots.parquet"
+    old = pd.read_parquet(f) if f.exists() else pd.DataFrame()
+    if len(old) and (old["day"].astype(str) == today).any():
+        health["N16 dTAO snapshots (#627/#626)"] = f"{old['day'].nunique()} days logged (today already done)"
+        return
+    subprocess.run(["uv", "pip", "install", "--python", _sys.executable, "bittensor>=9,<11"], capture_output=True, text=True, timeout=600)
+    import bittensor as bt  # noqa: PLC0415
+    st = bt.Subtensor(network="finney")
+    blk = st.get_current_block()
+    val = lambda x: float(getattr(x, "tao", x)) if x is not None else None  # noqa: E731
+    recs = []
+    for sn in st.all_subnets() or []:
+        g = lambda k, sn=sn: getattr(sn, k, None)  # noqa: E731
+        recs.append({"day": today, "block": blk, "netuid": int(g("netuid")), "tao_in": val(g("tao_in")), "alpha_in": val(g("alpha_in")),
+                     "alpha_out": val(g("alpha_out")), "alpha_out_emission": val(g("alpha_out_emission")),
+                     "tao_in_emission": val(g("tao_in_emission")), "price": val(g("price")), "registered_at": g("network_registered_at"),
+                     "name": str(g("subnet_name") or "")})
+    allr = pd.concat([old, pd.DataFrame(recs)], ignore_index=True)
+    allr.to_parquet(f, index=False)
+    health["N16 dTAO snapshots (#627/#626)"] = f"{allr['day'].nunique()} days logged; {len(recs)} subnets today (block {blk})"
+
+
 # ------------------------------------------------------------------ N13: forward paper log for #536 (docs/PREREG_BATCH_NF_20261128.md)
 ASTER = "https://fapi.asterdex.com/fapi/v1"
 
@@ -565,6 +596,7 @@ def run(fetch, jget, today, out: Path, root: Path, changes_today):
                      ("N13", lambda: n13_aster_new(fetch, today, rows, health, out)),
                      ("N14", lambda: n14_hourly_cascade(fetch, today, rows, health, out)),
                      ("N15", lambda: n15_paradex_wick(fetch, today, rows, health, out)),
+                     ("N16", lambda: n16_dtao_snapshot(fetch, today, rows, health, out)),
                      ("N12", lambda: n12_korea(fetch, today, rows, health, out))):
         try:
             fn()
