@@ -283,6 +283,7 @@ risk, 5m signals and 1m fills.
 | 643–646 | Batch NF25 (zero-fee points farming, hedged across venues: aggregate airdrop $ per $1M volume for Hyperliquid, Aster, Lighter, Paradex) | `docs/PREREG_BATCH_NF25_20261128.md` | Stage 0 (descriptive, not blind): Lighter ~$590/1M, Paradex ~$25–100/1M (below spread cost); Hyperliquid ~$2.9–7.4K/1M (volume from candles); ~10× decay per later programme; DefiLlama volume now paid (402) | batch_nf25_20261128.txt |
 | 647–650 | Batch NF26 (capped / extreme funding received hedged: venue ≥ 300%/yr, ≥ 1,000%/yr, HL-side ≥ 300%/yr, 6-hour persistence) | `docs/PREREG_BATCH_NF26_20261128.md` | 0 of 4 robust: #649 printed PASS (+0.43%, t 2.77, $487/yr) but −0.02% one hour later and one market = 238% of profit → not logged; #647/#650 FAIL; #648 too few | batch_nf26_20261128.txt, batch_nf26_diag_20261128.txt |
 | 651–654 | Batch NF27 (funding snapshot timing on Aster: hold the receiving side only across settlement, 1/5/30-minute windows) | `docs/PREREG_BATCH_NF27_20261128.md` | registered; data `ubatchnf27` | — |
+| 655 | Batch NF28: oracle-lag trading on oracle-priced perps (Gains, Ostium, Avantis, HIP-3) | `docs/PREREG_BATCH_NF28_20261128.md` | Stage 0 KILL: pull oracles fill at a post-order price; Pyth history now needs an API key | — |
 Earlier, superseded version of 13 (c21f67c): "11:00, cancel unfilled" 350 /
 +$16,409 OOS, 908 / −$10,150 dev, before confirming-bar fills were excluded.
 Not a separate idea, so not numbered.
