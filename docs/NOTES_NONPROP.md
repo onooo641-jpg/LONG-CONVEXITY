@@ -430,3 +430,6 @@ Jx's free Coinalyze key gave daily OI and liquidations from 2020. The five OI an
 ## 2026-11-28 — Batch NF4 (#547–#550), Korean retail flows: 0 of 4 by rule
 - **Upbit frenzy fade:** +2.28%/trade in 2025–26 (t 3.17), killed by its pre-2025 history.
 - **Key finding:** alts fell against BTC across 2025–26, so every alt short looks good then. A baseline bar is added to all forward alt-short tests (#541, #542, #551).
+
+## 2026-11-28 — Batch NF5 (#552–#555): #555 passes (small)
+- Shorting HL perps on Upbit pump days (10x volume, +30%) gave +4.5%/trade out of sample, 4 points above the random alt-short baseline, positive in both periods. About $3.9K/yr; forward via N12b.

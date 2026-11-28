@@ -452,10 +452,11 @@ def n12_korea(fetch, today, rows, health, out: Path):
             k = sorted(k, key=lambda x: x["candle_date_time_utc"])[:-1]  # drop today's unfinished KST day
             vals = [float(x["candle_acc_trade_price"]) for x in k]
             v, med = vals[-1], float(pd.Series(vals[-31:-1]).median())
-            if v >= 10 * med and v >= 5e10:
-                sig.append({"coin": c, "day": k[-1]["candle_date_time_utc"][:10], "krw_value": v, "median30": med})
+            chg = float(k[-1]["trade_price"]) / float(k[-2]["trade_price"]) - 1 if k[-2].get("trade_price") else float("nan")
+            if v >= 10 * med and v >= 5e10:  # #551 frenzy; #555 = the subset with chg >= +30% (filtered at evaluation)
+                sig.append({"coin": c, "day": k[-1]["candle_date_time_utc"][:10], "krw_value": v, "median30": med, "chg": chg})
         f2 = out / "upbit_frenzy_signals.parquet"
-        old2 = pd.read_parquet(f2) if f2.exists() else pd.DataFrame(columns=["coin", "day", "krw_value", "median30"])
+        old2 = pd.read_parquet(f2) if f2.exists() else pd.DataFrame(columns=["coin", "day", "krw_value", "median30", "chg"])
         new2 = pd.DataFrame(sig, columns=old2.columns)
         all2 = pd.concat([old2, new2[~(new2["coin"] + new2["day"]).isin(old2["coin"].astype(str) + old2["day"].astype(str))]], ignore_index=True)
         all2.to_parquet(f2, index=False)
