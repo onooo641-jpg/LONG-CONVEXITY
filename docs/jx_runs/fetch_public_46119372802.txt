@@ -1,0 +1,7 @@
+=== ubatchnf18
+  wrote batchnf18_grvt_classes.json: 5164 bytes
+  wrote batchnf18_main_perps.json: 1874 bytes
+  HIP-3 dexes 10, markets 178; GRVT 184; shared non-crypto keys 81
+  wrote batchnf18_hip3_1h.parquet: 376118 rows
+  wrote batchnf18_grvt_1h.parquet: 320021 rows
+=== ubatchnf18 done in 562s  ok 0 fail 0
