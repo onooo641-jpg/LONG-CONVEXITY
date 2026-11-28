@@ -2820,3 +2820,52 @@ def job_ubatchnf12():
     for name, lo, hi in (("a", 1, 3), ("b", 4, 5), ("c", 6, 7), ("d", 8, 9)):
         save(f"batchnf12_px_{name}.parquet", df[(first >= lo) & (first <= hi)].reset_index(drop=True))
     save("batchnf12_splits.parquet", pd.DataFrame(sps, columns=["sym", "t", "num", "den"]))
+
+
+def job_ubatchnf13():
+    """Batch NF13: Yahoo daily OHLCV + split/dividend events for HKEX codes 0001-9999 (.HK, EQUITY), 2800.HK, 000001.SS."""
+    from concurrent.futures import ThreadPoolExecutor
+    p1, p2 = int(pd.Timestamp("2015-01-01", tz="UTC").timestamp()), int(pd.Timestamp("2026-11-28", tz="UTC").timestamp())
+    keep_any = {"2800.HK", "000001.SS"}
+
+    def one(sym):
+        url = f"https://query1.finance.yahoo.com/v8/finance/chart/{sym}?period1={p1}&period2={p2}&interval=1d&events=div,split"
+        for k in range(4):
+            st, raw = _raw_get(url, timeout=30)
+            if st == 429 or st is None:
+                time.sleep(5 * (k + 1))
+                continue
+            break
+        time.sleep(0.2)
+        if st != 200 or not raw:
+            return sym, st, None, None
+        try:
+            r = json.loads(raw.decode())["chart"]["result"][0]
+            if (r.get("meta") or {}).get("instrumentType") != "EQUITY" and sym not in keep_any:
+                return sym, st, None, None
+            q = r["indicators"]["quote"][0]
+            rows = [(sym, int(t), o, h, l, c, v) for t, o, h, l, c, v in
+                    zip(r["timestamp"], q["open"], q["high"], q["low"], q["close"], q["volume"]) if None not in (o, h, l, c, v)]
+            ev = r.get("events") or {}
+            e = [(sym, int(x["date"]), "split", float(x["numerator"]) / float(x["denominator"])) for x in (ev.get("splits") or {}).values()]
+            e += [(sym, int(x["date"]), "div", float(x["amount"])) for x in (ev.get("dividends") or {}).values()]
+            return sym, st, rows, e
+        except Exception:  # noqa: BLE001
+            return sym, "parse_error", None, None
+    syms = [f"{i:04d}.HK" for i in range(1, 10000)] + ["000001.SS"]
+    rows, evs, stat = [], [], {}
+    with ThreadPoolExecutor(6) as ex:
+        for sym, st, rr, e in ex.map(one, syms):
+            stat[str(st)] = stat.get(str(st), 0) + 1
+            if rr:
+                rows += rr
+                evs += e
+    print(f"  HTTP status counts: {stat}", flush=True)
+    df = pd.DataFrame(rows, columns=["sym", "t", "o", "h", "l", "c", "v"])
+    for c in ("o", "h", "l", "c", "v"):
+        df[c] = df[c].astype("float32")
+    print(f"  instruments with prices: {df.sym.nunique()}; rows {len(df)}; events {len(evs)}", flush=True)
+    first = df["sym"].str[0]
+    for name, digs in (("a", "0"), ("b", "123"), ("c", "456789")):
+        save(f"batchnf13_px_{name}.parquet", df[first.isin(list(digs))].reset_index(drop=True))
+    save("batchnf13_events.parquet", pd.DataFrame(evs, columns=["sym", "t", "kind", "value"]))
