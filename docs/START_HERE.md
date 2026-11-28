@@ -60,7 +60,9 @@ customers only. It has 1 micro, a $100 static loss limit, 2 free resets and a fi
   1-micro trades, and the Payout Round has no resets. By the pre-registered rule (≥ 30%), **go straight to one Topstep 50K** as the
   payout test. Real cost is $24.50: the $10 fee plus a $14.50 TopstepX API month (official API page).
 - **Official, check for the 50K too:** in the Starter Challenge, MNQ goes to 0 contracts during Tier 1 news windows. FOMC is
-  12:55–13:05 and 13:25–13:35 CT, inside the bot's session. Whether the Combine has the same restriction is not yet read.
+  12:55–13:05 and 13:25–13:35 CT, inside the bot's session. **Checked 2026-11-28 (official 13613539):** the Combine/XFA has no
+  MNQ news restriction; only the Labs Challenges and the Starter Challenge do. Watch the prohibited-strategy rule on full max size
+  into major news: the bot hits the 50-micro cap on 26% of trades, so a 49-micro cap on FOMC days is an optional guard (`docs/NOTES_JX.md`).
 - Bots: the TopstepX API page (11187768) allows bots via the API; Challenges are not named explicitly.
 - The **$3K Challenge** is no longer a cheap option. The $49 version was a past Labs drop; the version on sale is $199 / 50 micros
   and fails (ledger CR1).

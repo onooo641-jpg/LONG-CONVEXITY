@@ -1029,3 +1029,21 @@ $38,034; bar: real ≥ $19,017, dip ≥ −$5,794.
 - **Dry-run gap, fixed:** the CrossTrade dry run ended the day at 11:12, right after recording its order. The order never reaches
   NT8, so the real account looked empty. `CrossTradeBroker.open_orders` now counts recorded entries as resting until cancelled,
   as `DryRunBroker` does, so later dry runs follow the day to the 15:30 cancel. Test added.
+
+## 2026-11-28 — Topstep news-window rule for the Trading Combine / Express Funded Account (official pages, Actions render)
+- **No MNQ restriction during Tier 1 news for the Combine/XFA.**
+  - help.topstep.com 13613539 "Risk Adjustments: High Risk/High Volatility" lists Combine/XFA restrictions only for energies,
+    metals and Micro Bitcoin.
+  - "Trading during Tier 1 News Events is restricted to 0" applies only to the Labs Challenges ($1.5K/$3K/$6K) and the Starter
+    Challenge.
+  - Undead and Slasher cap MNQ at 3 and 1 lots during the news.
+  - The Combine page (8284197) adds that limits "can tighten temporarily during high volatility and Tier 1 News Events".
+- **Prohibited strategy to watch** (10305426): "Purposefully trading your full Maximum Position Size directly into a scheduled major
+  news event."
+  - The bot sizes by risk, and **26% of its trades hit the 50-micro cap** (the maximum position).
+  - 4.5% of trades are open across 13:55–14:05 ET, the FOMC statement time. That means about 8 FOMC days a year, so roughly
+    one max-size position open into an FOMC statement every few years.
+  - It is not purposeful, but a one-micro-under-cap limit on FOMC days (49 micros) would remove the question. That is a guard, not
+    a strategy change; Jx decides.
+- **First nightly dry run (27 Nov):** already read 2026-11-27 (3 s order timing; 7-minute stale feed handled; dry-run gap fixed).
+  No newer run yet; the next is Mon 30 Nov 22:25 Malaysia time.
