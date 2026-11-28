@@ -7,15 +7,15 @@ Baseline date: 2026-11-21
 - S1 reward pools: 1273
 - S3 Merkl live: 695
 - S4 governance hits: 58
-- pages fetched ok: 1817
-- pages total: 1862
+- pages fetched ok: 1822
+- pages total: 1867
 - candidates surviving to ranking: 86
-- of which all five filter parts verified: 17
-- near-miss rows total: 14747
+- of which all five filter parts verified: 16
+- near-miss rows total: 14789
 
 ## Near-miss by stage/reason (top)
 
-- first_pass / below threshold: 13788
+- first_pass / below threshold: 13830
 - quality / DefiLlama outlier flag: 285
 - filter / F4 price exposure, needs hedge; F5 TVL < $1,000,000: 256
 - filter / F4 price exposure, needs hedge: 169
@@ -57,7 +57,7 @@ Baseline date: 2026-11-21
 | morpho-blue | Base | RE7VENICEUSDC nan reward tokens ['0xacfe6019ed1a7d | 797 | 3,884,152 | 7.5 | fail | fail | True | False | unverified-onchain |
 | bluefin-spot | Sui | USDSUI-USDC 0.01% reward tokens ['0x00000000000000 | 263 | 1,323,131 | 7.3 | pass | pass | True | False | unverified-onchain |
 | curve-llamalend | Ethereum | CRVUSD reusdsfrx collateral reward tokens ['0xD533 | 204 | 1,061,998 | 7.0 | fail | fail | True | True | unverified-onchain |
-| aave | Ethereum | LEND Supply RLUSD to the Aave V4 Sentora Hub | 17,943 | 93,562,400 | 7.0 | unverified | unverified | True | False | unverified-onchain |
+| aave | Ethereum | LEND Supply RLUSD to the Aave V4 Sentora Hub | 17,945 | 93,572,498 | 7.0 | unverified | unverified | True | False | unverified-onchain |
 | curve-dex | Ethereum | DOLA-SWANUSD nan reward tokens ['0xD533a949740bb33 | 523 | 2,773,129 | 6.9 | fail | fail | True | True | unverified-onchain |
 | morpho-blue | Stable | GPYUSDSE nan reward tokens ['0x28f1f38a9f7db1f769a | 15,234 | 84,388,234 | 6.6 | fail | fail | True | False | unverified-onchain |
 
@@ -95,7 +95,7 @@ Baseline date: 2026-11-21
 - 1inch.eth: [closed] [1IP-107] Aqua LP Incentive Program — Season 2 https://snapshot.org/#/1inch.eth/proposal/0x6910f1e7fafaa4f1dd003503fd025752d0de4fbcc9a46c69cad59941bfd35b4d
 - stakedao.eth: [closed] (REPUSH) SDGP-69: Claim Deadline for sdPENDLE and sdBAL Voting-Power Rewards https://snapshot.org/#/stakedao.eth/proposal/0xe84f20a814602ed82a81a7d9365e4765930774595a69fc7d248f971f72b201a4
 
-## Prop-firm rule/price changes today: 376 pages
+## Prop-firm rule/price changes today: 394 pages
 
 - **Funded Futures Family** https://www.fundedfuturesfamily.com/: On TruTik until Monday at 3 PM PT: 60% off S2F, 55% off Prime and Premier+, Fast Pass at half price, and Velocity buy 1, get 1 free. / Prices shown are on TruTik with code FFONE . The sale ends Monday, November 30 at 3 PM PT. / $131.60 $329 one time for $25K
 - **E8 Markets** https://e8markets.com/: $81M+ in payouts processed since 2021, verified independently on PropFirmMatch, and PayoutJunction. Our Discord community of 42,601+ traders
@@ -166,8 +166,18 @@ Baseline date: 2026-11-21
 - **HyroTrader** https://hyrotrader.com/transparency/: 9 hours ago Solana Zpbqv7…m6SZEW $1,598.93 Solscan / 9 hours ago Solana 42QZKX…UqTufe $214.34 Solscan / 9 hours ago Solana 3d7MhU…DhAAJ6 $500.65 Solscan
 - **MyFundedFutures** https://myfundedfutures.com/plans/signature/leaderboard: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
 - **MyFundedFutures** https://myfundedfutures.com/coupons: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
+- **Traders Launch** https://traderslaunch.com/: Premium $100K–$300K Static #1 on PropScore TL Drops On Sale Now / Get Premium from $69.30 / Example Account $25,000
+- **MyFundedFutures** https://myfundedfutures.com/plans/builder: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
+- **MyFundedFutures** https://myfundedfutures.com/plans/rapid: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
+- **MyFundedFutures** https://myfundedfutures.com/plans/rapid-eod: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
+- **MyFundedFutures** https://myfundedfutures.com/plans/pro: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
+- **Blue Guardian** https://www.blueguardian.com/payouts: $873.00 / $873.00 / $873.00
+- **E8 Markets** https://e8markets.com/e8-traders-stories: 12h ago $25,000 Classic Markets +$100 / 13h ago $25,000 Classic Markets +$222 / 12h ago $25,000 Classic Markets +$100
+- **HyroTrader** https://hyrotrader.com/transparency/: 9 hours ago Solana 34UAZV…wgDyZN $541.86 Solscan / 9 hours ago Solana 3yC6NC…ZUVzXb $398.92 Solscan / 9 hours ago Solana jjd4pH…4kruZ4 $1,603.87 Solscan
+- **MyFundedFutures** https://myfundedfutures.com/plans/signature/leaderboard: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
+- **MyFundedFutures** https://myfundedfutures.com/coupons: ² Payouts are based on simulated account profits and are subject to rules compliance, trading day requirements, and firm review. See program / Permitted Instruments: Participants may trade, within the simulated environment only, standardized futures contracts listed on regulated U.S / 39.2% of participants who reached the simulated Funded Stage earned at least one payout²;
 
-## Page changes today: 391
+## Page changes today: 410
 
 - Funded Futures Family (firm) https://www.fundedfuturesfamily.com/: +82 / -12 lines
 - The5ers (firm) https://the5ers.com/: +1 / -1 lines
@@ -223,12 +233,12 @@ Baseline date: 2026-11-21
 ### Source health
 - N1 stablecoins: 460
 - N2 Hyperliquid perps: 235
-- N3 CoW payouts (21d): 633 transfers, COW price 0.09899842249999999, $745,432 to 52 recipients
+- N3 CoW payouts (21d): 633 transfers, COW price 0.0988441235, $744,270 to 52 recipients
 - N5 forums answering: 22/23
 - N4 Cantina item keys: allowedSeverities,cantinaTriaged,company,createdAt,currencyCode,entryFee,id,instructions,joined,kind,kycRequired,name,status,timeframe,totalFindings,totalRewardPot,url
 - N4 statuses: {'cantina:complete': 144, 'sherlock:FINISHED': 30, 'cantina:live': 1, 'cantina:escalations_ended': 1}
 - N4 contests listed: 30 Sherlock, 146 Cantina
-- N7 derivatives venues (CoinGecko): 100; BTC $59876.52359220001
+- N7 derivatives venues (CoinGecko): 100; BTC $59902.73656499999
 - N10 wick paper (#389 S2c): 0 fills since 2026-12-01 (179 live perps checked)
 - N10b wick paper (#520 S2c): 0 fills since 2026-12-01
 - N13 Aster listing paper (#541): 0 trades

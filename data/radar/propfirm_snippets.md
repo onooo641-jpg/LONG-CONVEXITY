@@ -2579,6 +2579,61 @@
 - AUTO: Unless unequivocally proven otherwise, Formal Notices sent by e-mail shall be deemed received on the date and time of sending, according to the sender's electronic records, provided that no automatic permanent delivery failure message ("hard bounce") is generated.
 - COUNTRY: "Restricted Jurisdictions" means any country, territory, jurisdiction, locality or category of persons in respect of which the Provider does not offer or restricts access to one or more Services (including specifically CFDs and/or Futures products), for regulatory, compliance, sanctions, risk mitigation, Third Party requirements (including PSPs), or commercial decision reasons.
 
+## FundedNext Futures — https://fundednext.com/usa/aml-policy
+- AUTO: In adherence to the legal obligations, a meticulous manual approval process is diligently undertaken for each transaction, employing the principles of due diligence.
+- AUTO: Within GrowthNext F.Z.E., a distinct and dedicated risk management unit exists, tasked with the meticulous manual examination of individual client profiles.
+- AUTO: conducts a meticulous manual review and approval of each transaction, applying the principles of due diligence.
+
+## FundedNext Futures — https://fundednext.com/usa/cookie-policy
+- AUTO: Most browsers automatically accept cookies by default.
+- AUTO: Enabling these cookies is automatic and cannot be turned off, as they are necessary for the operation of the Website.
+- AUTO: In the case of automated processing based on your consent or performance of the contract, you have the right to receive the data in a structured, commonly used and machine-readable format and to have them transmitted by us to another personal data controller.
+- AUTO: Right not to be the subject of automated decision-making
+- AUTO: Except where processing is necessary for entering into, or performance of, a contract, where this is permitted by applicable law, or based on your express consent, you have the right not to be the subject of any decision which is based solely on automated processing, including profiling, which produces legal effects concerning you or similarly affects you to a significant extent.
+
+## FundedNext Futures — https://fundednext.com/usa/privacy-policy
+- AUTO: Automated Processing, Profiling and Significant Decisions
+- AUTO: 5.2 Automatically Through Your Use of the Services
+- AUTO: We collect certain technical, device, usage, behavioural, monitoring and activity data automatically when you access or use our website, systems, platform environment, dashboards, portals, communications interfaces or other parts of the Services.
+- AUTO: We process Personal Data to send service-related communications, account notices, legal notices, operational alerts, security messages, compliance-related requests and other communications necessary for the administration or protection of the Services and our relationship with you.
+- AUTO: 6.12 Phone-Based, SMS and Automated Outreach
+- AUTO: Where permitted by applicable law, we may use the telephone number or other communication details that you provide to us to contact you regarding service matters, account administration, security, support, operational matters, programme updates, marketing communications or related outreach, including through manual, automated or AI-assisted means.
+- AUTO: timing patterns, behavioural indicators and usage signals;
+- AUTO: suspicious, irregular, prohibited or escalated activity signals; and
+- AUTO: For the avoidance of doubt, FundedNext may analyse account activity, behavioural patterns, technical signals, device associations and related data to detect direct or indirect attempts to misuse the Services, circumvent our rules, exploit the platform environment unfairly, obtain benefits improperly or interfere with the lawful and intended operation of the Services.
+- AUTO: Automated Processing, Profiling and Significant Decisions
+- AUTO: Such processing may include profiling based on technical, behavioural, transactional, usage, verification, payout, account-linkage or payment-related signals.
+- AUTO: Where applicable data protection law grants you rights in relation to decisions based solely on automated processing that produce legal or similarly significant effects, FundedNext will implement such safeguards as are required by law, which may include review procedures and, where applicable, the opportunity to request human intervention.
+- AUTO: Nothing in this Notice shall be interpreted as limiting FundedNext's right to implement reasonable and proportionate automated or semi-automated controls designed to protect the Services, prevent fraud, preserve evidence, safeguard operational integrity, manage payment or security risks, or enforce contractual restrictions and platform rules.
+- AUTO: the right to request review in relation to certain automated decisions, where applicable law so provides; and
+
+## FundedNext Futures — https://fundednext.com/usa/terms-of-service
+- AUTO: Participation in one modality (for example, CFDs) does not automatically grant the right of access, eligibility, phase migration, benefits or Performance Rewards in another modality (for example, Futures), unless expressly indicated by the Provider.
+- AUTO: The User may not allow third parties to operate the Account on their behalf, nor use account management services, credential sharing, third-party identities, bots, scripts or automated systems not expressly authorised by the Provider.
+- AUTO: To preserve the integrity of the Services and prevent abuse, the Provider may impose limits on the number of Orders/Accounts that a User may purchase, maintain or operate, including on the basis of reasonable linkage indicators (for example, related accounts, common control, shared payment methods, same residence, IP address, device or other connection signals).
+- AUTO: The Provider may supplement, detail and clarify the Trading Rules through FAQs, guides, manuals, operational notices and communications on the Platform, provided that such supplements do not contradict the contractual core of the purchased product.
+- AUTO: (h) Copy Trading; Mirroring; Signal Following (Without Authorisation).
+- AUTO: Copy trading, mirroring, signal following, trade replication or any substantially similar activity (whether manual or automated) is prohibited unless expressly authorised in writing by the Provider and permitted under the applicable programme rules.
+- AUTO: For the avoidance of doubt, any replication of another person's trading activity, or systematic execution of trades based primarily on external signals, shared instructions, or third-party trade streams, may be treated as prohibited copying/mirroring.
+- AUTO: The User must not sell, assign, lease, sublicense, share credentials, grant remote access, permit use by third parties, or use account management services, unauthorised copy trading, "passing services", or any third-party management arrangement (whether paid or unpaid).
+- AUTO: This includes use of VPNs, proxies, emulators, device spoofing, automation intended to circumvent controls, or any similar method.
+- AUTO: (m) Unauthorised Automation; HFT; Mass-Order Behaviour; Platform Overload.
+- AUTO: The User must not use bots, scripts, algorithms, software, AI agents, or automated methods not expressly authorised by the Provider.
+- AUTO: Even where certain tools may be permitted under programme rules, the User must not use automation, high-frequency execution, mass-order behaviour, or mass data entry intended to manipulate platform behaviour, overload systems, interfere with monitoring, degrade performance, or create an unfair advantage.
+- AUTO: Without limitation, prohibited patterns may include excessive one-sided exposure, repeated "all-in" bets, grid trading, tick scalping, unrealistic order patterns, artificial trade fragmentation, account rolling, or any comparable pattern which the Provider reasonably determines to be inconsistent with the evaluation purpose and indicative of abuse, manipulation, or circumvention.
+- AUTO: The User must not interfere with, disrupt, probe, scan, test, or compromise the security, stability, or integrity of the Website, Platform, or any Provider or Third Party systems, and must not introduce malware, bots, harmful code, or perform any action that could impair or degrade operations.
+- AUTO: In making such determinations, the Provider may take into account, without limitation, trading records, account activity, device and access data, payment records, technical indicators, compliance findings, antifraud signals, account linkage analysis, behavioural patterns and any other information the Provider reasonably considers relevant.
+- AUTO: The mere achievement of numerical targets, performance parameters or positive results in Simulated Trading does not, in itself, create an automatic entitlement to any Performance Reward.
+- AUTO: (c) engaging in scraping, crawling, harvesting, data mining or using robots, scripts or automated systems to access the Website/Services, extract data, circumvent rules, test limits, exploit latencies or manipulate evaluations — except for the use of automation (EAs/algorithms) only when expressly permitted by the Trading Rules and within the authorised platform;
+- AUTO: Such changes shall not create an automatic right to indemnification, refund or compensation for the User, except where mandatory laws provide otherwise.
+- AUTO: (e) application of enforcement measures, automatic blocks, invalidations, restrictions, corrections or adjustments arising from breach of these Terms, the Trading Rules, the Programme Parameters, compliance policies or legal requirements;
+- AUTO: (e) exploitation of technical failures, latency, feed inconsistencies, prohibited automation, prohibited arbitrage or any Prohibited Conduct;
+- AUTO: The Provider may adopt cumulative and progressive measures, including partial suspension, automatic blocks, functional restrictions and permanent termination.
+- AUTO: Termination alone shall not create any automatic right to refund, compensation or Performance Reward payment, unless expressly provided in an applicable specific policy or required by mandatory law.
+- AUTO: The User understands and accepts that the Provider may use automated systems and tools incorporating artificial intelligence to support the operation, monitoring, and technical support of the Services.
+- AUTO: Unless unequivocally proven otherwise, Formal Notices sent by e-mail shall be deemed received on the date and time of sending, according to the sender's electronic records, provided that no automatic permanent delivery failure message ("hard bounce") is generated.
+- COUNTRY: "Restricted Jurisdictions" means any country, territory, jurisdiction, locality or category of persons in respect of which the Provider does not offer or restricts access to one or more Services (including specifically CFDs and/or Futures products), for regulatory, compliance, sanctions, risk mitigation, Third Party requirements (including PSPs), or commercial decision reasons.
+
 ## FundedNext Futures — https://helpfutures.fundednext.com/en/collections/19234504-fundednext-futures-trading-platform-faq
 - AUTO: How to use ATM (Automated Trading Module)?
 
@@ -5001,7 +5056,6 @@
 - AUTO: use any robot, spider, scraper or other automatic device, manual process or application or data mining, scraping or extraction tool to access, harvest, monitor, copy or use the Site without the express written permission of Tradeify;
 
 ## Traders Launch — https://traderslaunch.com/
-- AUTO: Email Address Notify Me You also agree to receive Traders Launch marketing emails, including drop alerts.
 - AUTO: Buffer account opens automatically.
 - AUTO: When You Pass Buffer account opens automatically
 - AUTO: If you haven't passed by day 60 but you're above 50% of your profit target, you get a free 30-day extension automatically, at no extra cost.
