@@ -5056,7 +5056,6 @@
 - AUTO: use any robot, spider, scraper or other automatic device, manual process or application or data mining, scraping or extraction tool to access, harvest, monitor, copy or use the Site without the express written permission of Tradeify;
 
 ## Traders Launch — https://traderslaunch.com/
-- AUTO: Email Address Notify Me You also agree to receive Traders Launch marketing emails, including drop alerts.
 - AUTO: Buffer account opens automatically.
 - AUTO: When You Pass Buffer account opens automatically
 - AUTO: If you haven't passed by day 60 but you're above 50% of your profit target, you get a free 30-day extension automatically, at no extra cost.
