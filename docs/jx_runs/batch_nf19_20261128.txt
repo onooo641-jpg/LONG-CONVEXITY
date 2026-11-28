@@ -1,0 +1,39 @@
+#619 Thin-venue-only coins (not on HL main): cross-venue gap >= 2%, enter h+1, exit >= h+5
+   keys on >= 2 thin venues and not on HL main: 15
+   Stage 1 2026-02-07..2026-08-15: trades 11 | mean net +1.17% (t 1.46, win 73%) | $91/yr | sum without 3 best $3
+   Stage 2 2026-08-16..2026-11-25: no trades
+   costs x1.5 Stage 2 mean +nan%
+   events 11 on 2 pairs; median gap at signal -2.77%
+   by key: BP n 9 +1.41%; EDGE n 2 +0.10%
+   smaller-leg USD volume, median: entry $9,479, exit $16,931
+   VERDICT FAIL
+
+HL/GRVT copies: markets 182, 2026-05-03 23:00:00+00:00..2026-11-28 07:00:00+00:00
+
+#620 hyna vs HL main: gap >= 1%, enter h+1, exit >= h+5
+   Stage 1 2026-05-03..2026-08-15: trades 35 | mean net -0.28% (t -1.85, win 29%) | $-53/yr | sum without 3 best $-34
+   Stage 2 2026-08-16..2026-11-25: trades 13 | mean net -0.23% (t -1.10, win 31%) | $-40/yr | sum without 3 best $-15
+   costs x1.5 Stage 2 mean -0.36%
+   events 48 on 14 pairs; median gap at signal -1.18%
+   by key: ZEC n 12 -0.16%; PUMP n 9 -0.40%; HYPE n 6 -0.17%; XMR n 4 -0.45%; XPL n 4 -0.20%; ENA n 3 +0.14%
+   smaller-leg USD volume, median: entry $22,052, exit $20,633
+   VERDICT KILL (Stage 1)
+
+#621 HL spot vs HL perp: gap >= 1%, enter h+1, exit >= h+5
+   Stage 1 2026-05-03..2026-08-15: trades 75 | mean net +0.07% (t 0.60, win 44%) | $559/yr | sum without 3 best $-8
+   Stage 2 2026-08-16..2026-11-25: trades 67 | mean net +0.05% (t 0.53, win 43%) | $237/yr | sum without 3 best $-32
+   costs x1.5 Stage 2 mean -0.06%
+   events 144 on 8 pairs; median gap at signal -1.20%
+   by key: PURR n 81 -0.09%; ZEC n 26 +0.61%; ENA n 16 -0.02%; MON n 10 +0.19%; XPL n 6 +0.03%; AVAX n 2 -0.56%
+   smaller-leg USD volume, median: entry $72,913, exit $50,620
+   VERDICT FAIL
+
+#622 GRVT crypto vs HL main: gap >= 1%, enter h+1, exit >= h+5
+   Stage 1 2026-05-03..2026-08-15: trades 193 | mean net -0.15% (t -4.62, win 29%) | $-486/yr | sum without 3 best $-174
+   Stage 2 2026-08-16..2026-11-25: trades 457 | mean net -0.18% (t -6.58, win 30%) | $-1,867/yr | sum without 3 best $-562
+   costs x1.5 Stage 2 mean -0.28%
+   events 659 on 57 pairs; median gap at signal -1.23%
+   by key: MON n 40 -0.00%; W n 36 -0.03%; MEGA n 31 -0.15%; CRV n 28 -0.23%; NEAR n 25 -0.22%; EIGEN n 23 -0.29%
+   smaller-leg USD volume, median: entry $32,348, exit $20,637
+   VERDICT KILL (Stage 1)
+

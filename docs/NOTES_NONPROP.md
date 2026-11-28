@@ -511,3 +511,7 @@ Jx's free Coinalyze key gave daily OI and liquidations from 2020. The five OI an
 
 ## 2026-11-28 — Batch NF18 (#614), pre-IPO perps across HIP-3 dexes and GRVT: FAIL
 - OPENAI/ANTHROPIC copies sit ~5% apart and do not converge within 4–8 hours (Stage 2 −0.34%, t −4.89). #615–#618 (stock-anchored) withdrawn before data per Jx.
+
+## 2026-11-28 — Batch NF19 (#619–#622), thin crypto copies entered one hour late: 0 of 4
+- hyna vs main, HL spot vs perp, GRVT vs HL, thin-venue-only coins: after a one-hour delay the gap is ~0 before costs (GRVT −0.18% net, t −6.58).
+- With NF16 #603 and NF18 #614: the cross-copy gap family is closed on hourly data.

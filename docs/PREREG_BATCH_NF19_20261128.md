@@ -71,3 +71,21 @@
 - transfers.
 
 **Script/output:** `scripts/batch_nf19_20261128.py` → `docs/jx_runs/batch_nf19_20261128.txt`, re-run identical.
+
+## Result (2026-11-28; `docs/jx_runs/batch_nf19_20261128.txt`, re-run identical): **0 of 4**
+- **Data:** hyna 22 markets, HL spot 20 USDC books, GRVT crypto 68 perps, HL main 72 perps; 2026-05-03..2026-11-28.
+  - BTC closes agree: spot $59,461, GRVT $59,495, main $59,608.
+  - hyna:BTC's last print, $76,888, is a stale book. It is excluded by the traded-hour filter.
+
+| # | Pairs | Stage 1 | Stage 2 | Verdict |
+|---|---|---|---|---|
+| 619 | thin-venue-only coins (15 keys) | n 11, +1.17% | no trades | FAIL (too few events) |
+| 620 | hyna vs HL main | n 35, −0.28% | n 13, −0.23% | KILL (Stage 1) |
+| 621 | HL spot vs HL perp | n 75, +0.07% | n 67, +0.05% | FAIL |
+| 622 | GRVT crypto vs HL main | n 193, −0.15% (t −4.62) | n 457, −0.18% (t −6.58) | KILL (Stage 1) |
+
+**Reading, with NF16 #603 and NF18 #614:**
+- Gaps between copies of one asset are either gone within an hour, or (pre-IPO) they persist and never close.
+- After a one-hour delay, what is left is about zero before costs.
+- The **cross-copy gap family is closed for hourly data.** A sub-hour live bot would compete with the venues' own market makers; it is
+  not backtestable with free data and is not pursued.
