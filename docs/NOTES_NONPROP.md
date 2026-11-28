@@ -426,3 +426,7 @@ Jx's free Coinalyze key gave daily OI and liquidations from 2020. The five OI an
 
 ## 2026-11-28 — Batch NF3 (#543–#546), Binance events shorted on Hyperliquid: 0 of 4
 - Medians win, but squeeze tails decide the mean; G5 was solved, but the tail risk of shorting small coins remains.
+
+## 2026-11-28 — Batch NF4 (#547–#550), Korean retail flows: 0 of 4 by rule
+- **Upbit frenzy fade:** +2.28%/trade in 2025–26 (t 3.17), killed by its pre-2025 history.
+- **Key finding:** alts fell against BTC across 2025–26, so every alt short looks good then. A baseline bar is added to all forward alt-short tests (#541, #542, #551).

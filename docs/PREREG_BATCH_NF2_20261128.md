@@ -59,3 +59,8 @@ The kills stand. #537 (on Aster) and #540 are strong and robust in 2025–26 but
 - **Costs:** 0.1% round trip; funding not modelled. Logged by radar N13 (`aster_listing_paper.parquet`) once each exit close is known.
 - **PASS, each, by 2027-03-31:** ≥ 30 trades for #541 (≥ 15 for #542); mean net ≥ 1.0%; net positive without the 3 best trades.
 - Fewer trades by then → extend to 2027-06-30, then judge.
+
+## Addendum 2 (2026-11-28, before 2026-12-01)
+- **Extra condition for #541/#542** (from the NF4 baseline check): each must also beat a random short of HL alts against BTC, over
+  the same window and hold, by ≥ 1.0 percentage point.
+- Reason: alts fell against BTC across 2025–26, which flatters any alt short.

@@ -439,6 +439,27 @@ def n12_korea(fetch, today, rows, health, out: Path):
         log = pd.concat([log, pd.DataFrame(add)], ignore_index=True)
         log.to_parquet(f, index=False)
     health["N12 Korea listings (#395)"] = f"{len(log)} logged since start, {int(log['on_hl'].sum()) if len(log) else 0} on Hyperliquid; new today {len(add)}"
+    # #551 forward-only (docs/PREREG_BATCH_NF4_20261128.md addendum 1): log Upbit frenzy signals (KRW value >= 10x its 30-day median
+    # and >= KRW 50bn) for coins on Hyperliquid; P&L vs the random-short baseline is computed at evaluation from HL candles.
+    if str(today) >= WICK_START:
+        sig = []
+        for c in sorted(up & {h.lstrip("k") for h in hl} - {"BTC", "USDT", "USDC"}):
+            _, ct = fetch(f"https://api.upbit.com/v1/candles/days?market=KRW-{c}&count=32", tries=2)
+            k = _j.loads(ct) if ct else []
+            time.sleep(0.12)
+            if not isinstance(k, list) or len(k) < 22:
+                continue
+            k = sorted(k, key=lambda x: x["candle_date_time_utc"])[:-1]  # drop today's unfinished KST day
+            vals = [float(x["candle_acc_trade_price"]) for x in k]
+            v, med = vals[-1], float(pd.Series(vals[-31:-1]).median())
+            if v >= 10 * med and v >= 5e10:
+                sig.append({"coin": c, "day": k[-1]["candle_date_time_utc"][:10], "krw_value": v, "median30": med})
+        f2 = out / "upbit_frenzy_signals.parquet"
+        old2 = pd.read_parquet(f2) if f2.exists() else pd.DataFrame(columns=["coin", "day", "krw_value", "median30"])
+        new2 = pd.DataFrame(sig, columns=old2.columns)
+        all2 = pd.concat([old2, new2[~(new2["coin"] + new2["day"]).isin(old2["coin"].astype(str) + old2["day"].astype(str))]], ignore_index=True)
+        all2.to_parquet(f2, index=False)
+        health["N12b Upbit frenzy signals (#551)"] = f"{len(all2)} signals since {WICK_START}; new today {len(all2) - len(old2)}"
 
 
 def run(fetch, jget, today, out: Path, root: Path, changes_today):

@@ -1,0 +1,20 @@
+#547 Upbit retail frenzy fade (short 3 d): 597 trades
+   Stage 1 (< 2025): n 274, mean excess -0.26% (median +2.44%, t -0.25, win 63%), sum without the 3 best -1.92
+   Stage 2 (2025-26): n 323, mean excess +2.28% (median +3.85%, t 3.17, win 67%), sum without the 3 best +6.26
+   VERDICT KILL (Stage 1) | $/yr at $3,000 per trade: $11,659
+
+#548 Coin kimchi premium >= +8% -> long HL 3 d: 35 trades
+   Stage 1 (< 2025): n 2, mean excess +34.76% (median +34.76%, t 2.08, win 100%), sum without the 3 best +nan
+   Stage 2 (2025-26): n 33, mean excess -1.15% (median -4.42%, t -0.66, win 45%), sum without the 3 best -0.97
+   VERDICT FAIL (Stage 1 < 8: no kill possible) | $/yr at $3,000 per trade: $-599
+
+#549 Coin kimchi discount <= -5% -> short HL 3 d: 3 trades
+   Stage 1 (< 2025): n 0, mean excess +nan% (median +nan%, t nan, win nan%), sum without the 3 best +nan
+   Stage 2 (2025-26): n 3, mean excess +2.68% (median +2.75%, t 3.36, win 100%), sum without the 3 best +nan
+   VERDICT FAIL (Stage 1 < 8: no kill possible) | $/yr at $3,000 per trade: $127
+
+#550 Dying Upbit KRW listing -> short HL day 7 -> 21: 64 trades
+   Stage 1 (< 2025): n 17, mean excess -10.30% (median +6.67%, t -1.43, win 53%), sum without the 3 best -2.31
+   Stage 2 (2025-26): n 47, mean excess +5.97% (median +6.34%, t 2.02, win 68%), sum without the 3 best +1.62
+   VERDICT KILL (Stage 1) | $/yr at $3,000 per trade: $4,440
+

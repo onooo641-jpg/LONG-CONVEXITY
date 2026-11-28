@@ -33,3 +33,26 @@
 **$/yr:** $3,000 per trade.
 
 **Script/output:** `scripts/batch_nf4_20261128.py` → `docs/jx_runs/batch_nf4_20261128.txt`, re-run identical.
+
+## Results (2026-11-28; `docs/jx_runs/batch_nf4_20261128.txt`, re-run identical): 0 of 4 by rule
+| # | Verdict | Stage 1 | Stage 2 |
+|---|---|---|---|
+| 547 Upbit frenzy fade | KILL | −0.26% (n 274, median +2.4%) | **+2.28% (n 323, t 3.17, win 67%, positive without the top 3)**, $11.7K/yr |
+| 548 coin kimchi premium → long | FAIL | n 2 | −1.15% (n 33) |
+| 549 coin kimchi discount → short | FAIL | n 0 | n 3 |
+| 550 dying Upbit listing short | KILL | −10.3% (n 17) | +5.97% (n 47, t 2.02) |
+
+**Baseline check** (diagnostic after the verdicts): a random short of any HL alt against BTC made +0.33% / +0.95% / +1.99% over
+3 / 7 / 14 days in 2025-01..2026-10, and −0.15% / −0.21% / −0.10% in 2023-06..2024-12.
+- Part of every "short small coins, works only in 2025–26" result is the market-wide fall of alts against BTC, not an edge.
+- #547 (+2.28% vs +0.33%), #540 (+7.18% vs +1.99%) and #544 (+11.1% vs +0.95%) still beat that baseline clearly.
+
+## Addendum 1 (2026-11-28, before 2026-12-01): forward-only #551; baseline bar added to #541/#542
+- **#551 = #547 forward:** radar N12 logs Upbit frenzy signals for HL coins from 2026-12-01 (`upbit_frenzy_signals.parquet`).
+  - Each is a short of the HL perp from that day's HL close for 3 days, excess vs BTC, − 0.09%.
+- **#551 PASS by 2027-03-31:**
+  - ≥ 30 signals;
+  - mean excess ≥ 1.0% **and** ≥ 1.0 percentage point above the random-short baseline over the same window and hold;
+  - sum positive without the 3 best.
+- **The same baseline condition is added to #541/#542** (`docs/PREREG_BATCH_NF2_20261128.md`): beat the random-short baseline of HL
+  alts over the same window and hold by ≥ 1.0 percentage point. Their other bars are unchanged.
