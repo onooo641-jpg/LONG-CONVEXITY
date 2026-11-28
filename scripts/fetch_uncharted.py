@@ -2584,3 +2584,33 @@ def job_ubatchw():
             print(f"  yahoo {sym} FAIL HTTP {st} {e}", flush=True)
         time.sleep(1)
     save("batchw_etf_1d.parquet", pd.DataFrame(px, columns=["sym", "t", "adj"]))
+
+
+BATCHX_ETF = "SPY QQQ IWM DIA XLE XLF XLK XLV XLY XLP XLI XLB XLU EEM EFA EWJ EWZ FXI GLD SLV USO UNG TLT HYG LQD VNQ SMH XBI KRE GDX ARKK TQQQ SOXL IBB".split()
+BATCHX_FX = {"USDJPY": "JPY=X", "AUDJPY": "AUDJPY=X", "EURJPY": "EURJPY=X", "GBPJPY": "GBPJPY=X", "NZDJPY": "NZDJPY=X",
+             "CADJPY": "CADJPY=X", "CHFJPY": "CHFJPY=X", "EURUSD": "EURUSD=X", "GBPUSD": "GBPUSD=X", "AUDUSD": "AUDUSD=X",
+             "NZDUSD": "NZDUSD=X", "USDCAD": "CAD=X", "USDCHF": "CHF=X", "USDMXN": "MXN=X"}
+
+
+def job_ubatchx():
+    """Batch X: Yahoo daily OHLC for 34 ETFs (scaled to adjusted close) and 14 FX pairs, 2005-2026 (docs/PREREG_BATCH_X_20261128.md)."""
+    rows = []
+    for kind, items in (("etf", [(s, s) for s in BATCHX_ETF]), ("fx", list(BATCHX_FX.items()))):
+        for name, ysym in items:
+            st, raw = _raw_get(f"https://query1.finance.yahoo.com/v8/finance/chart/{urllib.parse.quote(ysym)}?period1=1104537600&period2=1795651200&interval=1d&events=div,split", timeout=40)
+            try:
+                r = json.loads(raw.decode())["chart"]["result"][0]
+                q = r["indicators"]["quote"][0]
+                adj = (r["indicators"].get("adjclose") or [{}])[0].get("adjclose") if kind == "etf" else None
+                for i, t in enumerate(r["timestamp"]):
+                    o, h, l, c = q["open"][i], q["high"][i], q["low"][i], q["close"][i]
+                    if None in (o, h, l, c) or not c:
+                        continue
+                    k = (adj[i] / c) if (adj and adj[i]) else 1.0
+                    rows.append((kind, name, int(t), o * k, h * k, l * k, c * k))
+            except Exception as e:  # noqa: BLE001
+                print(f"  yahoo {ysym} FAIL HTTP {st} {e}", flush=True)
+            time.sleep(1)
+    df = pd.DataFrame(rows, columns=["kind", "sym", "t", "o", "h", "l", "c"])
+    print("  " + ", ".join(f"{k} {g.sym.nunique()} symbols {len(g)} rows" for k, g in df.groupby("kind")), flush=True)
+    save("batchx_ohlc_1d.parquet", df)

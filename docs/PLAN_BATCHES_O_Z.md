@@ -21,7 +21,7 @@ done. If a session ends, the next one continues from the first unchecked line.
 | U | DeFi protocol mechanics not yet covered (auction liquidations, redemption queues, rate-model kinks) | **mostly covered**: redemption queues (Sweep 4, Top 10), auctions (UniswapX), lending yields and incentive rotation (earlier batches); the rate-model kink is a variant of high-APR farming (failed) |
 | V | Dividend and ex-date flows outside Japan (run-up, capture, international ex-date clustering) | **already covered**: ex-date/dividend capture in Batch 10; Japan ETF dividends #484 |
 | W | Energy (natural gas storage season, gasoline summer-blend switch, refinery maintenance) | done 2026-11-28, 0/2 (#531 near miss) |
-| X | Asia-hours structural flows (Korean/Japanese retail and pension timing, HK Stock Connect quotas) | planned |
+| X | Asia-hours structural flows (Korean/Japanese retail and pension timing, HK Stock Connect quotas) | **replaced 2026-11-28** by the wick mechanism outside crypto (US ETFs, FX; passes G5/G6; no free Asia-flow history found) — in progress (#532–#533) |
 | Y | Exchange programmes with published payouts (maker rebates, fee tiers, competitions), if backtestable | **already covered**: maker rebates and competitions in Nonprop 2, Batch E, radar N-sources; payouts not backtestable |
 | Z | Wildcard: whatever the radar or the batches above surfaced | planned |
 
